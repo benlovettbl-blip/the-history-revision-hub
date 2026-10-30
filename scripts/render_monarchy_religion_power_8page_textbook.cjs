@@ -86,6 +86,45 @@ function loadUnitData() {
   return sandbox.module.exports.id ? sandbox.module.exports : sandbox.unitData;
 }
 
+// Canonical Stage Questions matching render_monarchy_religion_power_workbook.cjs
+const STAGE_QUESTIONS = {
+  1: [
+    'How did Martin Luther’s protest spark the Reformation across Europe?',
+    'Why did the royal marriage become an urgent dynastic crisis?',
+    'Why did Pope Clement VII refuse Henry’s annulment request?',
+    'How did Thomas Cromwell use Parliament to pressure the Church?',
+    'How did the Act of Supremacy legally consolidate royal sovereignty?',
+  ],
+  2: [
+    'Why was England religiously fractured when Elizabeth became Queen?',
+    'How did the Act of Supremacy restore royal control through compromise?',
+    'How did the Act of Uniformity establish the ‘Middle Way’ (Via Media)?',
+    'How did Mary Queen of Scots and the Papal Bull spark Catholic plots?',
+    'How did Walsingham’s spy network lead to Mary’s execution?',
+  ],
+  3: [
+    'What imperial and religious rivalries provoked Philip II’s invasion?',
+    'How did Drake’s raid on Cadiz delay the Spanish invasion?',
+    'How did the English fleet harry the Armada up the English Channel?',
+    'How did English fireships at Calais shatter the Spanish formation?',
+    'How did the Battle of Gravelines and severe storms destroy the fleet?',
+  ],
+  4: [
+    'Why did Charles I’s ‘Personal Rule’ without Parliament cause outrage?',
+    'How did the breakdown of trust lead to armed civil conflict?',
+    'How did the New Model Army defeat the King at the Battle of Naseby?',
+    'Why did Pride’s Purge and the High Court lead to regicide?',
+    'How did the Glorious Revolution permanently limit royal power?',
+  ],
+  5: [
+    'How did Henry VIII reshape sovereign authority in the Reformation?',
+    'How did the Elizabethan settlement forge a Protestant national state?',
+    'Why did Stuart claims of Divine Right provoke constitutional crisis?',
+    'Why was the trial and execution of Charles I a radical turning point?',
+    'How did the 1689 Bill of Rights finalize Parliamentary Supremacy?',
+  ],
+};
+
 // 12 Defining Chronological Milestones for Page 2
 const milestones = [
   {
@@ -736,10 +775,23 @@ function buildHtml() {
       line-height: 1.15;
     }
 
+    .block-workbook-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 8.2pt;
+      font-style: italic;
+      font-weight: 600;
+      color: #1e3a8a;
+      line-height: 1.28;
+      margin: 1px 0 3px 0;
+      padding: 0 0 1.5px 0;
+      border-bottom: 1px dashed #cbd5e1;
+      break-after: avoid;
+    }
+
     .block-prose {
       font-family: 'Lora', Georgia, serif;
-      font-size: 10.5pt;
-      line-height: 1.48;
+      font-size: 9.6pt;
+      line-height: 1.44;
       color: #1e293b;
       margin: 0;
     }
@@ -748,6 +800,13 @@ function buildHtml() {
       font-weight: 700;
       color: #0f172a;
     }
+
+    /* Calibrated base styling per enquiry */
+    .page-lesson-1 .block-prose { font-size: 9.5pt; line-height: 1.43; }
+    .page-lesson-2 .block-prose { font-size: 9.6pt; line-height: 1.44; }
+    .page-lesson-3 .block-prose { font-size: 9.55pt; line-height: 1.43; }
+    .page-lesson-4 .block-prose { font-size: 9.7pt; line-height: 1.45; }
+    .page-lesson-5 .block-prose { font-size: 9.35pt; line-height: 1.42; }
 
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -970,6 +1029,7 @@ function buildHtml() {
       const blocks = (lesson.narrative_blocks || []).filter(
         (b) => b.text && b.type !== 'photo_slider',
       );
+      const questions = STAGE_QUESTIONS[lIdx + 1] || [];
 
       return `
     <div class="page page-lesson page-lesson-${lIdx + 1}" id="page-${pageNum}" data-page="${pageNum}">
@@ -996,12 +1056,14 @@ function buildHtml() {
           ${blocks
             .map((block, bIdx) => {
               const prose = cleanProse(block.text);
+              const qText = questions[bIdx] || '';
               return `
               <div class="block-section">
                 <div class="block-header">
                   <span class="block-ref">[${lIdx + 1}.${bIdx + 1}]</span>
                   <span class="block-title">${block.title}</span>
                 </div>
+                ${qText ? `<div class="block-workbook-question">${qText}</div>` : ''}
                 <p class="block-prose">${prose}</p>
               </div>
             `;
@@ -1114,13 +1176,15 @@ async function run() {
       const sections = p.querySelectorAll('.block-section');
       if (proseEls.length === 0 || !footer) return;
 
-      let size = 10.6;
-      let lh = 1.49;
-      let secMargin = 6.0;
+      let size = 9.8;
+      let lh = 1.45;
+      let secMargin = 5.0;
 
       const getOverlap = () => {
         const fTop = footer.getBoundingClientRect().top;
-        const children = Array.from(p.querySelectorAll('.block-section, p, .block-header'));
+        const children = Array.from(
+          p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question'),
+        );
         const maxB = Math.max(...children.map((c) => c.getBoundingClientRect().bottom));
         return maxB - fTop;
       };

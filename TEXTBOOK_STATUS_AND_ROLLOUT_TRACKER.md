@@ -51,8 +51,8 @@ Every master companion textbook adheres strictly to the **Pure Narrative Archite
 | Unit ID | Year Group | Format | Pure Narrative | Workbook Questions Injected | Dynamic Auto-Calibration | Reprographics Audit (`npm run test:textbooks`) | Notes & Next Action |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | **`medieval_england`** | Year 7 | 8-Page | ✅ YES | ✅ **YES** (5/5 Lessons) | ✅ **ACTIVE** | ✅ **PASS (8/8, 0px)** | **100% COMPLETE & VERIFIED.** Gold Standard reference textbook; 25-Q retrieval back cover. |
-| **`great_war`** | Year 9 | 8-Page | ✅ YES | ⏳ PENDING | ⏳ READY | ✅ PASS (8/8, 0px) | Pure narrative verified; 25-Q recall back cover. Next: Inject domino stage questions. |
-| **`monarchy_religion_power`** | Year 8 | 8-Page | ✅ YES | ⏳ PENDING | ⏳ READY | ✅ PASS (8/8, 0px) | Pure narrative verified; 25-Q recall back cover. Next: Inject domino stage questions. |
+| **`great_war`** | Year 9 | 8-Page | ✅ YES | ✅ **YES** (25/25 Blocks) | ✅ **ACTIVE** | ✅ **PASS (8/8, 0px)** | **100% COMPLETE & VERIFIED.** 25 badge-free stage questions injected, 25-Q recall back cover; 0px overflow, 97% utilization. |
+| **`monarchy_religion_power`** | Year 8 | 8-Page | ✅ YES | ✅ **YES** (25/25 Blocks) | ✅ **ACTIVE** | ✅ **PASS (8/8, 0px)** | **100% COMPLETE & VERIFIED.** 25 badge-free stage questions injected, 25-Q recall back cover; 0px overflow, 97% utilization. |
 | **`first_british_empire`** | Year 8 | 8-Page | ✅ YES | ⏳ PENDING | ⏳ READY | ✅ PASS (8/8, 0px) | Pure narrative verified; 25-Q recall back cover. Next: Inject domino stage questions. |
 | **`australia`** | Year 8 | 8-Page | ✅ YES | ⏳ PENDING | ⏳ READY | ✅ PASS (8/8, 0px) | Pure narrative verified; 25-Q recall back cover. Next: Inject domino stage questions. |
 | **`post_war_britain`** | Year 9 | 8-Page | ✅ YES | ⏳ PENDING | ⏳ READY | ✅ PASS (8/8, 0px) | Pure narrative verified; 25-Q recall back cover. Next: Inject domino stage questions. |
@@ -61,7 +61,7 @@ Every master companion textbook adheres strictly to the **Pure Narrative Archite
 | **`the_shoah`** | Year 9 | 12-Page | ✅ YES | ⏳ PENDING | ⏳ READY | ✅ PASS (12/12, 0px) | Pure narrative verified; 35-Q recall back cover. Next: Inject domino stage questions. |
 | **`cold_war`** | Year 9 | 12-Page | ✅ YES | ⏳ PENDING | ⏳ READY | ✅ PASS (12/12, 0px) | Pure narrative verified; 35-Q recall back cover. Next: Inject domino stage questions. |
 | **`water_and_sanitation`** | Year 7 | 12-Page | ✅ YES | ✅ **YES** (35/35 Blocks) | ✅ **ACTIVE** | ✅ **PASS (12/12, 0px)** | **100% COMPLETE & VERIFIED.** Upgraded from legacy 14p boxed prototype to 12p saddle-stitch pure narrative standard. 35-Q recall back cover, 4 Hampshire fieldwork flashpoints, badge-free italic questions; 0px overflow, 97% utilization. |
-| **`industrialisation_and_empire`** | Year 8 | 12-Page | ⚠️ HYBRID | ⏳ PENDING | ⏳ READY | ⚠️ *Manual check* | Domestic 5-lesson unit (*The Industrial Revolution 1750–1900*). Empire content was split into `second_british_empire`. Legacy boxed textbook remains to be modernized to 12p pure narrative standard. |
+| **`industrialisation_and_empire`** | Year 8 | 12-Page | ✅ YES | ✅ **YES** (25/25 Blocks) | ✅ **ACTIVE** | ✅ **PASS (12/12, 0px)** | **100% COMPLETE & VERIFIED.** Upgraded to 12p pure narrative standard (*The Industrial Revolution 1750–1900*). *Coalbrookdale by Night* cover plate, 25 badge-free stage questions, 35-Q recall quiz back cover; 0px overflow, 97% utilization. |
 
 ---
 
@@ -111,5 +111,5 @@ Every master companion textbook adheres strictly to the **Pure Narrative Archite
 
 ### Phase 3: Legacy Unit Modernization
 1. **`water_and_sanitation`**: ✅ COMPLETE & VERIFIED. Modernized to 12-page pure narrative format; retired 14-page boxed prototype; integrated into `npm run test:textbooks`.
-2. **`industrialisation_and_empire` (The Industrial Revolution 1750–1900)**: Modernize legacy boxed textbook to 12-page pure narrative format (Note: `early_modern_world` was permanently decommissioned in commit `f1c89ecb` and superseded by `monarchy_religion_power`).
+2. **`industrialisation_and_empire` (The Industrial Revolution 1750–1900)**: ✅ COMPLETE & VERIFIED. Modernized to 12-page pure narrative format with *Coalbrookdale by Night* cover plate, 25 badge-free questions, and 35-Q quiz back cover; integrated into `npm run test:textbooks`.
 

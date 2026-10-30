@@ -83,6 +83,45 @@ function loadUnitData() {
     : sandbox.window?.UNIT_DATA || sandbox.great_war_data || sandbox.unitData;
 }
 
+// Canonical Stage Questions matching render_great_war_twopage_workbook.cjs
+const STAGE_QUESTIONS = {
+  1: [
+    'What enabled Prussia to overturn the 1815 balance of power?',
+    'How was the German Empire proclaimed at Versailles in 1871?',
+    'Why did the annexation of Alsace-Lorraine shatter peace?',
+    'In what ways did French "Revanche" shape patriotic culture?',
+    "Evaluate how Bismarck's diplomacy isolated the French Republic.",
+  ],
+  2: [
+    'Why did European empires carve up Africa in the 1880s Scramble?',
+    'Explain why Wilhelm II launched "Weltpolitik" in the 1890s.',
+    'What happened when the Kaiser landed at Tangier in 1905?',
+    'To what extent did the 1906 Algeciras Conference isolate Germany?',
+    'Why did the gunboat Panther at Agadir bring Europe close to war?',
+  ],
+  3: [
+    "Why was naval supremacy vital for Great Britain's survival?",
+    'How did Tirpitz\'s "Risk Theory" plan to challenge the Royal Navy?',
+    'Why did HMS Dreadnought reset naval supremacy to zero?',
+    'What triggered the 1909 British naval panic ("We want eight")?',
+    'Evaluate why the 1912 Haldane Mission failed to stop the arms race.',
+  ],
+  4: [
+    "How did Bismarck's Dual Alliance create a Central European bloc?",
+    'Explain why the 1894 Franco-Russian Alliance broke isolation.',
+    'Why was south-eastern Europe known as the "Balkan Powder Keg"?',
+    'What were the consequences of the 1908 Bosnian Annexation Crisis?',
+    'To what extent did the 1912–13 Balkan Wars embolden Serbia?',
+  ],
+  5: [
+    'What motivated the Black Hand to assassinate Franz Ferdinand in Sarajevo?',
+    'How did Germany\'s "Blank Cheque" escalate the regional crisis?',
+    'Explain why Austria’s Ten-Point Ultimatum made war inevitable.',
+    'In what ways did rigid railway mobilisation schedules trigger the domino effect?',
+    'What forced Great Britain to declare war following the invasion of Belgium?',
+  ],
+};
+
 // Canonical unit narrative synopsis
 const canonicalSynopsis =
   'Decades of imperial vanity, secret alliances, and dreadnought arms races wound the clockwork of European catastrophe. When a teenage assassin fired two fatal shots on the streets of Sarajevo in June 1914, thirty days of diplomatic brinkmanship sleepwalked an entire continent into ruin. Trace the geopolitical friction of European empires, the naval race, and the fatal railway timetables that sparked world war.';
@@ -796,10 +835,23 @@ function buildHtml() {
       line-height: 1.15;
     }
 
+    .block-workbook-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 8.2pt;
+      font-style: italic;
+      font-weight: 600;
+      color: #1e3a8a;
+      line-height: 1.28;
+      margin: 1px 0 3px 0;
+      padding: 0 0 1.5px 0;
+      border-bottom: 1px dashed #cbd5e1;
+      break-after: avoid;
+    }
+
     .block-prose {
       font-family: 'Lora', Georgia, serif;
-      font-size: 10.4pt;
-      line-height: 1.48;
+      font-size: 9.6pt;
+      line-height: 1.44;
       color: #1e293b;
       margin: 0;
     }
@@ -810,11 +862,11 @@ function buildHtml() {
     }
 
     /* Calibrated base styling per enquiry */
-    .page-lesson-1 .block-prose { font-size: 10.5pt; line-height: 1.48; }
-    .page-lesson-2 .block-prose { font-size: 10.6pt; line-height: 1.50; }
-    .page-lesson-3 .block-prose { font-size: 10.55pt; line-height: 1.49; }
-    .page-lesson-4 .block-prose { font-size: 10.75pt; line-height: 1.51; }
-    .page-lesson-5 .block-prose { font-size: 10.25pt; line-height: 1.45; }
+    .page-lesson-1 .block-prose { font-size: 9.5pt; line-height: 1.43; }
+    .page-lesson-2 .block-prose { font-size: 9.6pt; line-height: 1.44; }
+    .page-lesson-3 .block-prose { font-size: 9.55pt; line-height: 1.43; }
+    .page-lesson-4 .block-prose { font-size: 9.7pt; line-height: 1.45; }
+    .page-lesson-5 .block-prose { font-size: 9.35pt; line-height: 1.42; }
 
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -1049,6 +1101,7 @@ function buildHtml() {
       const blocks = (lesson.narrative_blocks || []).filter(
         (b) => b.text && b.text.trim().length > 0,
       );
+      const questions = STAGE_QUESTIONS[lessonNum] || [];
 
       return `
   <div class="page page-lesson page-lesson-${lessonNum}" id="page-${pageNum}" data-page="${pageNum}">
@@ -1072,17 +1125,19 @@ function buildHtml() {
     <div class="prose-body">
       <div class="prose-columns">
         ${blocks
-          .map(
-            (b, bi) => `
+          .map((b, bi) => {
+            const qText = questions[bi] || '';
+            return `
           <div class="block-section">
             <div class="block-header">
               <span class="block-ref">[${lessonNum}.${bi + 1}]</span>
               <span class="block-title">${b.title || `Act ${bi + 1}`}</span>
             </div>
+            ${qText ? `<div class="block-workbook-question">${qText}</div>` : ''}
             <p class="block-prose">${cleanProse(b.text)}</p>
           </div>
-        `,
-          )
+        `;
+          })
           .join('')}
       </div>
     </div>
@@ -1181,13 +1236,15 @@ async function run() {
       const sections = p.querySelectorAll('.block-section');
       if (proseEls.length === 0 || !footer) return;
 
-      let size = 10.5;
-      let lh = 1.48;
-      let secMargin = 6;
+      let size = 9.8;
+      let lh = 1.45;
+      let secMargin = 5;
 
       const getOverlap = () => {
         const fTop = footer.getBoundingClientRect().top;
-        const children = Array.from(p.querySelectorAll('.block-section, p, .block-header'));
+        const children = Array.from(
+          p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question'),
+        );
         const maxB = Math.max(...children.map((c) => c.getBoundingClientRect().bottom));
         return maxB - fTop;
       };

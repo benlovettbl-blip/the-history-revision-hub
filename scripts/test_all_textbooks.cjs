@@ -79,6 +79,12 @@ const SUITE = [
     html: 'public/units/second_british_empire/textbook.html',
   },
   {
+    id: 'industrialisation_and_empire',
+    name: 'The Industrial Revolution (1750–1900)',
+    pages: 12,
+    html: 'public/units/industrialisation_and_empire/textbook.html',
+  },
+  {
     id: 'the_shoah',
     name: 'The Holocaust / The Shoah',
     pages: 12,
@@ -179,7 +185,10 @@ async function runSuite() {
   const summary = [];
   let allPassed = true;
 
-  for (const item of SUITE) {
+  const filter = process.argv[2];
+  const suite = filter ? SUITE.filter((s) => s.id === filter || s.id.includes(filter)) : SUITE;
+
+  for (const item of suite) {
     const fullPath = path.join(ROOT_DIR, item.html);
     if (!fs.existsSync(fullPath)) {
       console.log(`⚠️ Missing HTML: ${item.html}`);
