@@ -153,11 +153,11 @@ const UNIT_HEALTH_DATA = [
     uid: 'water_and_sanitation',
     name: 'Water & Sanitation Through Time',
     workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
+    workbookText: '✅ 20-Page Gold Standard (7 Enquiries)',
     textbookStatus: 'optimal',
-    textbookText: '✅ 12-Page Master Textbook (Unified)',
+    textbookText: '✅ 12-Page Master Textbook',
     appStatus: 'synced',
-    appText: '✅ 100% Synced (6 L)',
+    appText: '✅ 100% Synced (7 L)',
     mapStatus: 'embedded',
     mapText: '✅ Broad Street & Roman Maps',
     workbookPdf: '/pdfs/water_and_sanitation_pupil_workbook.pdf',
@@ -353,7 +353,7 @@ const UNIT_HEALTH_DATA = [
     mapStatus: 'optimal',
     mapText: '✅ 1949 Line, Suez, 1967, 1973, Oslo',
     workbookPdf: '/pdfs/cme_new_pupil_workbook_KT1.pdf',
-    textbookPdf: '/pdfs/cme_new_textbook_UNIFIED.pdf',
+    textbookPdf: '/pdfs/cme_new_textbook.pdf',
   },
   {
     year: 'Year 10',
@@ -369,7 +369,7 @@ const UNIT_HEALTH_DATA = [
     mapStatus: 'embedded',
     mapText: '✅ Weimar Territory & Plebiscites',
     workbookPdf: '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf',
-    textbookPdf: '/pdfs/weimar_nazi_germany_textbook_UNIFIED.pdf',
+    textbookPdf: '/pdfs/weimar_nazi_germany_textbook.pdf',
   },
   {
     year: 'Year 11',
@@ -385,7 +385,7 @@ const UNIT_HEALTH_DATA = [
     mapStatus: 'embedded',
     mapText: '✅ Armada Route & Drake Circumnavigation',
     workbookPdf: '/pdfs/eee_pupil_workbook_KT1.pdf',
-    textbookPdf: '/pdfs/eee_textbook_UNIFIED.pdf',
+    textbookPdf: '/pdfs/eee_textbook.pdf',
   },
   {
     year: 'Year 11',
@@ -417,7 +417,7 @@ const UNIT_HEALTH_DATA = [
     mapStatus: 'embedded',
     mapText: '✅ Civil Rights Marches & Vietnam War',
     workbookPdf: '/pdfs/usa_pupil_workbook_KT1.pdf',
-    textbookPdf: '/pdfs/usa_textbook_UNIFIED.pdf',
+    textbookPdf: '/pdfs/usa_textbook.pdf',
   },
 ];
 

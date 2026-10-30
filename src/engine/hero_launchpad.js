@@ -192,8 +192,8 @@ export const CURRICULAR_PILLARS_CATALOG = {
       pdfUrl: '/pdfs/water_and_sanitation_textbook.pdf',
     },
     workbook: {
-      title: 'Water & Sanitation Pupil Workbook',
-      label: 'Pupil Workbook',
+      title: 'Water & Sanitation 20-Page Pupil Workbook',
+      label: 'Pupil Workbook (20 Pages)',
       htmlUrl: '/units/water_and_sanitation/pupil_workbook.html',
       pdfUrl: '/pdfs/water_and_sanitation_pupil_workbook.pdf',
     },
@@ -269,7 +269,7 @@ export const CURRICULAR_PILLARS_CATALOG = {
       title: 'Conflict in the Middle East (1945–1995) 28-Page Master Textbook',
       label: 'Master Textbook',
       htmlUrl: '/units/cme_new/textbook_UNIFIED.html',
-      pdfUrl: '/pdfs/cme_new_textbook_UNIFIED.pdf',
+      pdfUrl: '/pdfs/cme_new_textbook.pdf',
     },
     workbook: {
       title: 'Conflict in the Middle East Complete Mastery Exam Pack (36 Pages)',
@@ -290,7 +290,7 @@ export const CURRICULAR_PILLARS_CATALOG = {
       title: 'The USA, 1954–1975: Conflict at Home and Abroad 28-Page Master Textbook',
       label: 'Master Textbook',
       htmlUrl: '/units/usa/textbook_UNIFIED.html',
-      pdfUrl: '/pdfs/usa_textbook_UNIFIED.pdf',
+      pdfUrl: '/pdfs/usa_textbook.pdf',
     },
     workbook: {
       title:
@@ -332,7 +332,7 @@ export const CURRICULAR_PILLARS_CATALOG = {
       title: 'Weimar and Nazi Germany (1918–1939) 28-Page Master Textbook',
       label: 'Master Textbook',
       htmlUrl: '/units/weimar_nazi_germany/textbook_UNIFIED.html',
-      pdfUrl: '/pdfs/weimar_nazi_germany_textbook_UNIFIED.pdf',
+      pdfUrl: '/pdfs/weimar_nazi_germany_textbook.pdf',
     },
     workbook: {
       title: 'Weimar & Nazi Germany Pupil Workbook',
@@ -352,7 +352,7 @@ export const CURRICULAR_PILLARS_CATALOG = {
       title: 'Early Elizabethan England Master Textbook',
       label: 'Master Textbook',
       htmlUrl: '/units/eee/textbook_UNIFIED.html',
-      pdfUrl: '/pdfs/eee_textbook_UNIFIED.pdf',
+      pdfUrl: '/pdfs/eee_textbook.pdf',
     },
     workbook: {
       title: 'Early Elizabethan England Pupil Workbook',

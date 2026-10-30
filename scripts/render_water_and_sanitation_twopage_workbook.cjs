@@ -6,15 +6,17 @@
  * PDF:    public/pdfs/water_and_sanitation_pupil_workbook.pdf
  *
  * Gold Standard Publisher Architecture:
- * - 16-Page A4 Pupil Workbook Standard (Christine Counsell Gold Standard)
+ * - 20-Page A4 Pupil Workbook Standard (Christine Counsell Gold Standard)
  * - 100% Institutional Neutrality (Zero School / Teacher Name Identifiers)
  * - Page 1: Master Front Cover with photo frame, pupil info card, and syllabus overview
- * - Pages 2–3: Living Unit Timeline (6 Milestones across 2 pages with sketch challenges)
- * - Pages 4–15: 6 Double-Page Enquiry Spreads:
+ * - Pages 2–9: Enquiries 1–4 (4 Double-Page Spreads):
  *     Left Page (Verso): 5-Stage Chronological Inquiry Spine (44mm trigger spine with 3 Spec-Anchored Triad bullets + 6 ruled note-taking lines)
  *     Right Page (Recto): Part B Disciplinary Extended Writing (Tariff, Question Stem & Stimulus, 3-Column Evaluative Structure Strip,
- *                         Word Bank, Structural Analytical Connectives, Timeline Mission, 20-22 Ruled Handwriting Lines, Footer Strip)
- * - Page 16: Outside Back Cover (Student Assessment Record, WWW/EBI Feedback Lines, QR Revision Hub)
+ *                         Word Bank, Structural Analytical Connectives, Timeline Mission, 21 Ruled Handwriting Lines, Footer Strip)
+ * - Pages 10–11: Centrefold Panoramic Dual-Coding Living Timeline (6 Milestones across 2 pages laying flat at the saddle-stitch fold)
+ * - Pages 12–17: Enquiries 5–7 (3 Double-Page Spreads)
+ * - Pages 18–19: Scholar Exercise Notes Spread (Authentic British exercise book layout with 26mm margin rule and 32 full-width handwriting lines per page)
+ * - Page 20: Outside Back Cover (KS3 Assessment Pathways, Progress Tracking Ledger, WWW/EBI Feedback Lines, 7-Code QR Revision Hub)
  */
 
 const fs = require('fs');
@@ -36,7 +38,7 @@ const imported = require(dataPath);
 const unitData = imported.water_and_sanitation || imported.default || imported;
 
 const lessons = unitData.lessons || [];
-console.log(`Loaded ${lessons.length} Water & Sanitation lessons for 16-Page Pupil Workbook.`);
+console.log(`Loaded ${lessons.length} Water & Sanitation lessons for 20-Page Pupil Workbook.`);
 
 function getBase64Image(relPath) {
   if (!relPath) return '';
@@ -79,7 +81,7 @@ function generateQrSvg(url) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}" shape-rendering="crispEdges" style="width: 100%; height: 100%;"><path fill="#ffffff" d="M0,0h${size}v${size}H0z"/><path fill="#000000" d="${pathD.trim()}"/></svg>`;
 }
 
-// 6 Enquiry Configurations Aligned with the 5-Block Standard
+// 7 Enquiry Configurations Aligned with the 5-Block Standard
 const lessonConfigs = lessons.map((l, idx) => {
   const lessonNum = idx + 1;
   const wbStages = l.workbook_stages || [];
@@ -124,7 +126,7 @@ const lessonConfigs = lessons.map((l, idx) => {
         ? l.vocabulary.map((v) => v.term).join(' &bull; ')
         : 'Aqueduct &bull; Cloaca &bull; Thermae &bull; Miasma &bull; Cesspit',
       timelineMissionTitle: `Centrefold Sketch Challenge ${lessonNum}`,
-      timelineMission: `Turn to Pages 2–3 (Milestone ${lessonNum}). Complete the dual-coding sketch challenge in the timeline sketchpad.`,
+      timelineMission: `Turn to Centrefold &bull; Pages 10–11 (Milestone ${Math.min(lessonNum, 6)}). Complete the dual-coding sketch challenge in the timeline sketchpad.`,
     },
     leftPageQuip:
       l.did_you_know ||
@@ -134,38 +136,51 @@ const lessonConfigs = lessons.map((l, idx) => {
   };
 });
 
-// Refined quips
-lessonConfigs[0].leftPageQuip =
-  'Roman lead pipes at Fishbourne carried spring water under gravity pressure to garden fountains.';
-lessonConfigs[0].rightPageQuip =
-  'Victorian historians believed Romans built baths for health; modern historians emphasize imperial power.';
+// Refined quips per enquiry
+if (lessonConfigs[0]) {
+  lessonConfigs[0].leftPageQuip =
+    'Roman lead pipes at Fishbourne carried spring water under gravity pressure to garden fountains.';
+  lessonConfigs[0].rightPageQuip =
+    'Victorian historians believed Romans built baths for health; modern historians emphasize imperial power.';
+}
+if (lessonConfigs[1]) {
+  lessonConfigs[1].leftPageQuip =
+    'Medieval monks drank spring water filtered through five settling tanks while townspeople drank from rivers.';
+  lessonConfigs[1].rightPageQuip =
+    'The 1388 Statute of Cambridge banned dumping animal dung and offal into rivers under heavy royal fines.';
+}
+if (lessonConfigs[2]) {
+  lessonConfigs[2].leftPageQuip =
+    'Sir John Harington invented the flush toilet in 1596, but towns lacked running water mains to make it work.';
+  lessonConfigs[2].rightPageQuip =
+    'Samuel Pepys recorded stepping into his cellar in October 1660 to find his neighbour’s cesspit had leaked through.';
+}
+if (lessonConfigs[3]) {
+  lessonConfigs[3].leftPageQuip =
+    'Edwin Chadwick proved in 1842 that industrial labourers in Manchester died at an average age of just 17.';
+  lessonConfigs[3].rightPageQuip =
+    "Victorian ratepayers resisted taxes for sewers under the philosophy of laissez-faire ('leave alone').";
+}
+if (lessonConfigs[4]) {
+  lessonConfigs[4].leftPageQuip =
+    'Michael Faraday warned in 1855 that the Thames was an opaque, fermenting sewer of human waste.';
+  lessonConfigs[4].rightPageQuip =
+    'Joseph Bazalgette built 82 miles of brick intercepting sewers that still keep London healthy today.';
+}
+if (lessonConfigs[5]) {
+  lessonConfigs[5].leftPageQuip =
+    'Dr John Snow proved cholera was water-borne by mapping 616 deaths around the Broad Street pump in Soho.';
+  lessonConfigs[5].rightPageQuip =
+    'Robert Koch isolated the Vibrio cholerae bacterium under the microscope in 1884, confirming Snow’s theory.';
+}
+if (lessonConfigs[6]) {
+  lessonConfigs[6].leftPageQuip =
+    'The 1875 Public Health Act made it compulsory for every local council in Britain to provide clean water and sewers.';
+  lessonConfigs[6].rightPageQuip =
+    'By 1900, government legislation, civil engineering, and germ theory combined to conquer water-borne disease in Britain.';
+}
 
-lessonConfigs[1].leftPageQuip =
-  'Medieval monks drank spring water filtered through five settling tanks while townspeople drank from rivers.';
-lessonConfigs[1].rightPageQuip =
-  'The 1388 Statute of Cambridge banned dumping animal dung and offal into rivers under heavy royal fines.';
-
-lessonConfigs[2].leftPageQuip =
-  'Sir John Harington invented the flush toilet in 1596, but towns lacked running water mains to make it work.';
-lessonConfigs[2].rightPageQuip =
-  'Samuel Pepys recorded stepping into his cellar in October 1660 to find his neighbour’s cesspit had leaked through.';
-
-lessonConfigs[3].leftPageQuip =
-  'Edwin Chadwick proved in 1842 that industrial labourers in Manchester died at an average age of just 17.';
-lessonConfigs[3].rightPageQuip =
-  "Victorian ratepayers resisted taxes for sewers under the philosophy of laissez-faire ('leave alone').";
-
-lessonConfigs[4].leftPageQuip =
-  'Michael Faraday warned in 1855 that the Thames was an opaque, fermenting sewer of human waste.';
-lessonConfigs[4].rightPageQuip =
-  'Joseph Bazalgette built 82 miles of brick intercepting sewers that still keep London healthy today.';
-
-lessonConfigs[5].leftPageQuip =
-  'Dr John Snow proved cholera was water-borne by mapping 616 deaths around the Broad Street pump in Soho.';
-lessonConfigs[5].rightPageQuip =
-  'Robert Koch isolated the Vibrio cholerae bacterium under the microscope in 1884, confirming Snow’s theory.';
-
-function renderFooterStrip(pageNum, quip, totalPages = 16) {
+function renderFooterStrip(pageNum, quip, totalPages = 20) {
   const isEven = pageNum % 2 === 0;
   if (isEven) {
     return `
@@ -183,7 +198,7 @@ function renderFooterStrip(pageNum, quip, totalPages = 16) {
 }
 
 // LEFT PAGE: 5-Stage Chronological Inquiry Spine
-function renderSpinePage(cfg, pageNum) {
+function renderSpinePage(cfg, pageNum, totalPages = 20) {
   const stagesHtml = cfg.stages
     .map((st) => {
       const bulletsHtml = st.bullets
@@ -271,13 +286,13 @@ function renderSpinePage(cfg, pageNum) {
         </div>
       </div>
 
-      ${renderFooterStrip(pageNum, cfg.leftPageQuip, 16)}
+      ${renderFooterStrip(pageNum, cfg.leftPageQuip, totalPages)}
     </div>
   </div>`;
 }
 
 // RIGHT PAGE: Disciplinary Skills Extended Writing
-function renderRightPage(cfg, pageNum) {
+function renderRightPage(cfg, pageNum, totalPages = 20) {
   const rp = cfg.rightPage;
   const isEven = pageNum % 2 === 0;
   const pageClass = isEven ? 'verso-page' : 'recto-page';
@@ -354,14 +369,58 @@ function renderRightPage(cfg, pageNum) {
           .join('')}
       </div>
 
-      ${renderFooterStrip(pageNum, cfg.rightPageQuip, 16)}
+      ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
+    </div>
+  </div>`;
+}
+
+// Helper to render dedicated British Exercise Book Notes Spread (Pages 18 & 19 of 20-page workbook)
+function renderNotesPage(pageNum, quip, totalPages = 20) {
+  const isEven = pageNum % 2 === 0;
+  const pageClass = isEven ? 'verso-page' : 'recto-page';
+
+  // 32 ruled lines for standard ~8mm pitch filling the page perfectly
+  const numLines = 32;
+  let linesHtml = '';
+  for (let i = 0; i < numLines; i++) {
+    linesHtml += `<div class="exercise-ruled-line" style="flex: 1; border-bottom: 0.8px solid #94a3b8; min-height: 0; box-sizing: border-box;"></div>`;
+  }
+
+  return `
+  <!-- DEDICATED LINED NOTES SPREAD: PAGE ${pageNum} -->
+  <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
+    <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between;">
+      
+      <!-- Notes Header Strip -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
+            SCHOLAR EXERCISE &bull; EXTENDED NOTES &amp; ESSAY PORTFOLIO
+          </span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+            YEAR 7 &bull; WATER &amp; SANITATION THROUGH TIME (c.AD 43–PRESENT)
+          </span>
+        </div>
+      </div>
+
+      <!-- Authentic British Exercise Book Canvas with 26mm Margin Rule -->
+      <div class="exercise-sheet-wrapper" style="flex: 1; display: flex; flex-direction: column; border: 1.2px solid #000000; border-radius: 2px; background: #ffffff; position: relative; overflow: hidden; min-height: 0; margin-bottom: 2px;">
+        <!-- 26mm Vertical Red Margin Line -->
+        <div style="position: absolute; top: 0; bottom: 0; left: 26mm; width: 1.2px; background: #dc2626; z-index: 2;"></div>
+        
+        <!-- 32 Ruled Handwriting Lines -->
+        <div style="flex: 1; display: flex; flex-direction: column; min-height: 0;">
+          ${linesHtml}
+        </div>
+      </div>
+
+      ${renderFooterStrip(pageNum, quip, totalPages)}
     </div>
   </div>`;
 }
 
 // Master HTML Renderer
 function generateWorkbookHtml() {
-  const qrSvg = generateQrSvg('https://revision-hub.netlify.app/?unit=water_and_sanitation');
   const coverImageB64 = getBase64Image('/images/john_snow_cholera_map.jpg');
 
   let pagesHtml = '';
@@ -415,21 +474,30 @@ function generateWorkbookHtml() {
         </div>
       </div>
 
-      ${renderFooterStrip(1, 'The History Department &bull; Key Stage 3 History Revision Hub', 16)}
+      ${renderFooterStrip(1, 'The History Department &bull; Key Stage 3 History Revision Hub', 20)}
     </div>
   </div>`;
 
-  // PAGES 2–3: Living Unit Timeline Centrefold
+  // PAGES 2–9: Enquiries 1–4 (4 Double-Page Spreads)
+  for (let i = 0; i < 4; i++) {
+    const cfg = lessonConfigs[i];
+    const leftPageNum = 2 + i * 2;
+    const rightPageNum = leftPageNum + 1;
+    pagesHtml += renderSpinePage(cfg, leftPageNum, 20);
+    pagesHtml += renderRightPage(cfg, rightPageNum, 20);
+  }
+
+  // PAGES 10–11: Centrefold Panoramic Living Unit Timeline (Laying flat across saddle-stitch fold)
   pagesHtml += `
-  <!-- PAGES 2–3: LIVING TIMELINE (6 MILESTONES ACROSS SPREAD) -->
-  <div class="page page-container verso-page" id="page-2" style="padding: 4mm 6mm;">
+  <!-- PAGES 10–11: CENTREFOLD LIVING TIMELINE (6 MILESTONES ACROSS SPREAD) -->
+  <div class="page page-container verso-page" id="page-10" style="padding: 4mm 6mm;">
     <div class="page-body-full">
       <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: baseline;">
         <h2 style="font-family: 'Playfair Display', serif; font-size: 13pt; margin: 0; font-weight: 900; text-transform: uppercase;">
           Living Unit Timeline &bull; Part 1 (c.AD 43–1665)
         </h2>
         <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; background: #000000; color: #ffffff; padding: 1.5px 6px; border-radius: 2px;">
-          Chronology &bull; Dual-Coding
+          CENTREFOLD SPREAD &bull; DUAL-CODING
         </span>
       </div>
 
@@ -474,18 +542,18 @@ function generateWorkbookHtml() {
           .join('')}
       </div>
 
-      ${renderFooterStrip(2, 'Living Chronology: Track turning points and technological milestones', 16)}
+      ${renderFooterStrip(10, 'Living Chronology: Track turning points and technological milestones', 20)}
     </div>
   </div>
 
-  <div class="page page-container recto-page" id="page-3" style="padding: 4mm 6mm;">
+  <div class="page page-container recto-page" id="page-11" style="padding: 4mm 6mm;">
     <div class="page-body-full">
       <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: baseline;">
         <h2 style="font-family: 'Playfair Display', serif; font-size: 13pt; margin: 0; font-weight: 900; text-transform: uppercase;">
           Living Unit Timeline &bull; Part 2 (1831–Present)
         </h2>
         <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; background: #000000; color: #ffffff; padding: 1.5px 6px; border-radius: 2px;">
-          Chronology &bull; Dual-Coding
+          CENTREFOLD SPREAD &bull; DUAL-CODING
         </span>
       </div>
 
@@ -530,20 +598,72 @@ function generateWorkbookHtml() {
           .join('')}
       </div>
 
-      ${renderFooterStrip(3, 'From industrial squalor to modern microbiology and compulsory public health', 16)}
+      ${renderFooterStrip(11, 'From industrial squalor to modern microbiology and compulsory public health', 20)}
     </div>
   </div>`;
 
-  // PAGES 4–15: 6 Double-Page Enquiry Spreads
-  lessonConfigs.forEach((cfg, idx) => {
-    const leftPageNum = 4 + idx * 2;
+  // PAGES 12–17: Enquiries 5–7 (3 Double-Page Spreads)
+  for (let i = 4; i < 7; i++) {
+    const cfg = lessonConfigs[i];
+    const leftPageNum = 12 + (i - 4) * 2;
     const rightPageNum = leftPageNum + 1;
-    pagesHtml += renderSpinePage(cfg, leftPageNum);
-    pagesHtml += renderRightPage(cfg, rightPageNum);
-  });
+    pagesHtml += renderSpinePage(cfg, leftPageNum, 20);
+    pagesHtml += renderRightPage(cfg, rightPageNum, 20);
+  }
 
-  // PAGE 16: Standard Outside Back Cover
-  pagesHtml += renderKs3BackCover(16, qrSvg);
+  // PAGES 18–19: Scholar Exercise Notes Spread
+  pagesHtml += renderNotesPage(
+    18,
+    'Scholar Notes: Consolidate inquiry explanations and thematic essay arguments',
+    20,
+  );
+  pagesHtml += renderNotesPage(
+    19,
+    'Historical Writing: Structure balanced cause, consequence, and change over time',
+    20,
+  );
+
+  // PAGE 20: Standard Outside Back Cover
+  pagesHtml += renderKs3BackCover({
+    unitId: 'water_and_sanitation',
+    unitTitle: 'WATER & SANITATION THROUGH TIME (c.AD 43–PRESENT)',
+    yearGroup: 'Year 7',
+    trackerTitle: 'Progress & Assessment Record',
+    trackerSubtitle: 'Key Stage 3 Historical Studies • Termly Evidence Ledger',
+    lessons: lessonConfigs.map((cfg, i) => ({
+      num: i + 1,
+      title:
+        cfg.enquiryQuestion.replace(/^Enquiry\s*\d*:\s*/i, '').split(':')[0] || `Enquiry ${i + 1}`,
+      skill: 'Cause & Consequence',
+      doNowMax: 5,
+      taskMax: '12 Marks',
+      feedbackHint:
+        i === 0
+          ? 'Roman gravity aqueducts & imperial power'
+          : i === 1
+            ? 'Monastic conduits vs urban river filth'
+            : i === 2
+              ? 'Early modern cesspits & Harington WC'
+              : i === 3
+                ? 'Industrial back-to-backs & Chadwick 1842'
+                : i === 4
+                  ? 'Great Stink 1858 & Bazalgette interceptors'
+                  : i === 5
+                    ? 'Broad Street pump 1854 & Germ Theory'
+                    : '1875 Public Health Act & state intervention',
+    })),
+    qrLessons: lessonConfigs.map((cfg, i) => ({
+      num: i + 1,
+      label: `L${i + 1}`,
+      subLabel: `Enquiry ${i + 1}`,
+      url: `https://the-history-revision-hub.netlify.app/?unit=water_and_sanitation&quiz=lesson_${i + 1}`,
+      questionCount: 20,
+    })),
+    footerQuip: 'Water & Sanitation Through Time • 20-Page Gold Standard Pupil Workbook',
+    totalPageCount: 20,
+    pageHeight: '270mm',
+    renderFooterStrip: (pageNum, quip) => renderFooterStrip(pageNum, quip, 20),
+  });
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -611,9 +731,27 @@ function generateWorkbookHtml() {
       font-style: italic;
       color: #333333;
     }
+    .exercise-sheet-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      border: 1.2px solid #000000;
+      border-radius: 2px;
+      background: #ffffff;
+      position: relative;
+      overflow: hidden;
+      min-height: 0;
+    }
+    .exercise-ruled-line {
+      flex: 1;
+      border-bottom: 0.8px solid #94a3b8;
+      min-height: 0;
+      box-sizing: border-box;
+    }
     @media print {
       body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .page-container { page-break-after: always !important; }
+      .page-container:last-of-type { page-break-after: avoid !important; break-after: avoid !important; }
     }
   </style>
 </head>
@@ -640,18 +778,6 @@ ${pagesHtml}
     'public',
     'pdfs',
     'water_and_sanitation_pupil_workbook.pdf',
-  );
-  const v2PdfPath = path.join(
-    ROOT_DIR,
-    'public',
-    'pdfs',
-    'water_and_sanitation_pupil_workbook_V2.pdf',
-  );
-  const finalV17PdfPath = path.join(
-    ROOT_DIR,
-    'public',
-    'pdfs',
-    'water_and_sanitation_pupil_workbook_FINAL_V17.pdf',
   );
 
   fs.mkdirSync(path.dirname(publicHtmlPath), { recursive: true });
@@ -686,11 +812,5 @@ ${pagesHtml}
   });
   await browser.close();
 
-  // Mirror PDF aliases
-  fs.copyFileSync(canonicalPdfPath, v2PdfPath);
-  fs.copyFileSync(canonicalPdfPath, finalV17PdfPath);
   console.log(`[OK] Single canonical PDF compiled: ${canonicalPdfPath}`);
-  console.log(
-    `[OK] Mirrored to aliases: ${path.basename(v2PdfPath)}, ${path.basename(finalV17PdfPath)}`,
-  );
 })();

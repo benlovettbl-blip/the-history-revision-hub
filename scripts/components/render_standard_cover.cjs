@@ -381,7 +381,10 @@ function renderStandardFrontCover({
       const isLast = idx === specBox.subtopics.length - 1;
       const borderStyle = isLast ? '' : 'border-right: 1.2px solid #e2e8f0; padding-right: 10px;';
       const itemsHtml = (sub.items || [])
-        .map((item) => `<div style="margin-bottom: ${specItemMargin}; display: flex; align-items: flex-start; gap: 5px;"><span style="color: #000; font-weight: 900; line-height: 1.2;">&bull;</span><span style="flex: 1;">${item}</span></div>`)
+        .map(
+          (item) =>
+            `<div style="margin-bottom: ${specItemMargin}; display: flex; align-items: flex-start; gap: 5px;"><span style="color: #000; font-weight: 900; line-height: 1.2;">&bull;</span><span style="flex: 1;">${item}</span></div>`,
+        )
         .join('\n');
 
       return `
@@ -575,7 +578,8 @@ function renderStandardBackCover({
               <td style="padding: 5px 6px; text-align: center; font-size: 10.0pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.0pt; font-weight: 900;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 26</strong> ]</span></td>
             </tr>`,
         )
-        .join('\n') + `
+        .join('\n') +
+      `
             <tr style="border-bottom: 1.5px solid #000000; background: #f8fafc;">
               <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">★</td>
               <td style="padding: 5px 8px; border-right: 1px solid #000000; font-size: 8.4pt; line-height: 1.25;"><strong>Section B Capstone (pp. 20–23):</strong> Q3(a) [8m] &bull; Q3(b) [4m] &bull; Q3(c) [4m] &bull; Q3(d) [20m]</td>
@@ -1127,8 +1131,8 @@ function renderKs3FrontCover({
  * - Institutional Colophon & Reprographics Notice
  */
 function renderKs3BackCover({
-  unitId = 'early_modern_world',
-  unitTitle = 'THE EARLY MODERN WORLD (1450–1750)',
+  unitId = 'medieval_england',
+  unitTitle = 'MEDIEVAL ENGLAND (1066–1485)',
   yearGroup = 'Year 8',
   trackerTitle = 'Progress & Assessment Record',
   trackerSubtitle = 'Key Stage 3 Historical Studies • Termly Evidence Ledger',
