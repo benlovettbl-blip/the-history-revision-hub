@@ -61,8 +61,7 @@ Every master companion textbook adheres strictly to the **Pure Narrative Archite
 | **`the_shoah`** | Year 9 | 12-Page | ✅ YES | ⏳ PENDING | ⏳ READY | ✅ PASS (12/12, 0px) | Pure narrative verified; 35-Q recall back cover. Next: Inject domino stage questions. |
 | **`cold_war`** | Year 9 | 12-Page | ✅ YES | ⏳ PENDING | ⏳ READY | ✅ PASS (12/12, 0px) | Pure narrative verified; 35-Q recall back cover. Next: Inject domino stage questions. |
 | **`water_and_sanitation`** | Year 7 | 12-Page | ✅ YES | ✅ **YES** (35/35 Blocks) | ✅ **ACTIVE** | ✅ **PASS (12/12, 0px)** | **100% COMPLETE & VERIFIED.** Upgraded from legacy 14p boxed prototype to 12p saddle-stitch pure narrative standard. 35-Q recall back cover, 4 Hampshire fieldwork flashpoints, badge-free italic questions; 0px overflow, 97% utilization. |
-| **`industrialisation_and_empire`** | Year 8 | 12-Page | ⚠️ HYBRID | ⏳ PENDING | ⏳ READY | ⚠️ *Manual check* | Undergoing pure narrative alignment to 12-page saddle-stitch format. |
-| **`early_modern_world`** | Year 8 | 20-Page | ⚠️ HYBRID | ⏳ PENDING | ⏳ READY | ⚠️ *Manual check* | Undergoing pure narrative alignment to 16/20-page saddle-stitch format. |
+| **`industrialisation_and_empire`** | Year 8 | 12-Page | ⚠️ HYBRID | ⏳ PENDING | ⏳ READY | ⚠️ *Manual check* | Domestic 5-lesson unit (*The Industrial Revolution 1750–1900*). Empire content was split into `second_british_empire`. Legacy boxed textbook remains to be modernized to 12p pure narrative standard. |
 
 ---
 
@@ -112,5 +111,5 @@ Every master companion textbook adheres strictly to the **Pure Narrative Archite
 
 ### Phase 3: Legacy Unit Modernization
 1. **`water_and_sanitation`**: ✅ COMPLETE & VERIFIED. Modernized to 12-page pure narrative format; retired 14-page boxed prototype; integrated into `npm run test:textbooks`.
-2. **`industrialisation_and_empire`** & **`early_modern_world`**: Complete pure narrative alignment to 12/16-page saddle-stitch standard.
+2. **`industrialisation_and_empire` (The Industrial Revolution 1750–1900)**: Modernize legacy boxed textbook to 12-page pure narrative format (Note: `early_modern_world` was permanently decommissioned in commit `f1c89ecb` and superseded by `monarchy_religion_power`).
 
