@@ -100,13 +100,8 @@ function loadUnitData() {
   }
 
   const dataPath = path.join(ROOT_DIR, 'units', 'ks2_ww2', 'data.js');
-  let raw = fs.readFileSync(dataPath, 'utf8');
-  raw =
-    raw
-      .replace(/export\s+const\s+unitData\s*=/g, 'const unitData =')
-      .replace(/export\s+default\s+[^;]+;?/g, '')
-      .replace(/export\s*\{[^}]*\};?/g, '') + '; unitData;';
-  const data = vm.runInNewContext(raw);
+  const mod = require(dataPath);
+  const data = JSON.parse(JSON.stringify(mod.default || mod));
 
   if (jsonData && jsonData.lessons) {
     data.lessons.forEach((l, i) => {
@@ -1240,6 +1235,27 @@ function buildHtml() {
       letter-spacing: 0.02em;
     }
 
+    .block-workbook-question {
+      break-inside: avoid;
+      break-after: avoid;
+      background: #f8fafc;
+      border-left: 2.5px solid #1e3a8a;
+      padding: 1.5px 7px;
+      margin: 1.5px 0 3.5px 0;
+      border-radius: 0 2px 2px 0;
+      line-height: 1.25;
+    }
+
+    .block-workbook-question .bwq-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 7.6pt;
+      color: #1e3a8a;
+      line-height: 1.25;
+      display: block;
+    }
+
     .prose-p {
       font-family: 'Lora', Georgia, serif;
       font-size: 12.0pt;
@@ -1733,12 +1749,19 @@ function buildHtml() {
           .map((b, bIdx) => {
             const blockRef = `[${idx + 1}.${bIdx + 1}]`;
             const cleanText = cleanProse(b.text);
+            const stages = (lesson.causal_domino_spine && lesson.causal_domino_spine.stages) || [];
+            const st =
+              stages[bIdx] ||
+              stages.find((s) => s.para_ref && s.para_ref.includes('.' + (bIdx + 1)));
+            const rawQ = (st && (st.question || st.workbook_question)) || b.question || '';
+            const cleanQ = rawQ ? rawQ.replace(/^["'“\s]+|["'”\s]+$/g, '').trim() : '';
             return `
           <div class="block-section">
             <div class="block-header">
               <span class="block-ref">${blockRef}</span>
               <span class="block-title">${b.title || ''}</span>
             </div>
+            ${cleanQ ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${cleanQ}&rdquo;</span></div>` : ''}
             <p class="prose-p">${cleanText}</p>
           </div>`;
           })

@@ -42,7 +42,7 @@ Every master companion textbook adheres strictly to the **Pure Narrative Archite
 | **`eee`** | Pearson Edexcel Option B4 | 28-Page | ✅ YES | ✅ **YES** (60/60 Blocks) | ✅ **ACTIVE** | ✅ **PASS (28/28, 0px)** | **100% COMPLETE & VERIFIED.** All 60 narrative blocks cross-referenced to workbook; 0px overflow, 97%–98% utilization. |
 | **`weimar_nazi_germany`** | Pearson Edexcel Option 31 | 28-Page | ✅ YES | ✅ **YES** (48/48 Blocks) | ✅ **ACTIVE** | ✅ **PASS (28/28, 0px)** | **100% COMPLETE & VERIFIED.** All 12 enquiries cross-referenced to workbook with clean badge-free italic questions; 0px overflow, 96%–98% utilization. |
 | **`usa`** | Pearson Edexcel Option P4 / US | 28-Page | ✅ YES | ✅ **YES** (48/48 Blocks) | ✅ **ACTIVE** | ✅ **PASS (28/28, 0px)** | **100% COMPLETE & VERIFIED.** All 12 enquiries cross-referenced to workbook with clean badge-free italic questions; 0px overflow, 97%–98% utilization. |
-| **`edexcel_medicine`** | Pearson Edexcel Option 11 | 5x Era (64p) | ✅ YES | ⏳ PENDING | ⏳ READY | ✅ PASS (64/64, 0px) | Medieval (12p), Renaissance (12p), 18th/19th (12p), Modern (12p), Western Front (16p). |
+| **`edexcel_medicine`** | Pearson Edexcel Option 11 | 5x Era (64p) | ✅ YES | ✅ **YES** (130/130 Blocks) | ✅ **ACTIVE** | ✅ **PASS (64/64, 0px)** | **100% COMPLETE & VERIFIED.** All 130 narrative blocks across 5 eras cross-referenced to workbook; 0px overflow, 96%–98% utilization. |
 
 ---
 
@@ -69,7 +69,7 @@ Every master companion textbook adheres strictly to the **Pure Narrative Archite
 
 | Unit ID | Year Group | Format | Pure Narrative | Workbook Questions Injected | Dynamic Auto-Calibration | Reprographics Audit (`npm run test:textbooks`) | Notes & Next Action |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **`ks2_ww2`** | KS2 (Y5/6) | 16-Page | ✅ YES | ⏳ PENDING | ⏳ READY | ✅ **PASS (16/16, 0px)** | Verified narrative reader (Single Wide-Margin Column format). 0px overflow across all 16 pages. |
+| **`ks2_ww2`** | KS2 (Y5/6) | 16-Page | ✅ YES | ✅ **YES** (34/34 Blocks) | ✅ **ACTIVE** | ✅ **PASS (16/16, 0px)** | **100% COMPLETE & VERIFIED.** All 34 narrative blocks cross-referenced to workbook; 0px overflow, 97% space utilization. |
 
 ---
 

@@ -57,15 +57,6 @@ const unitPdfConfigs = {
       file: resolvePdfFile('cold_war_pupil_workbook.pdf', 'cold_war_pupil_workbook_FINAL_V17.pdf'),
     },
   ],
-  early_modern_world: [
-    {
-      booklet: 'Pupil Workbook',
-      file: resolvePdfFile(
-        'early_modern_world_pupil_workbook.pdf',
-        'early_modern_world_pupil_workbook_FINAL_V17.pdf',
-      ),
-    },
-  ],
   edexcel_medicine: [
     {
       booklet: 'Medieval Booklet',
@@ -223,47 +214,65 @@ const unitPdfConfigs = {
   usa: [
     {
       booklet: 'Key Topic 1 Booklet',
-      file: 'usa_pupil_workbook_KT1_FINAL_V17.pdf',
+      file: resolvePdfFile('usa_pupil_workbook_KT1.pdf', 'usa_pupil_workbook_KT1_FINAL_V17.pdf'),
       filter: (l, i) => i < 4,
     },
     {
       booklet: 'Key Topic 2 Booklet',
-      file: 'usa_pupil_workbook_KT2_FINAL_V17.pdf',
+      file: resolvePdfFile('usa_pupil_workbook_KT2.pdf', 'usa_pupil_workbook_KT2_FINAL_V17.pdf'),
       filter: (l, i) => i >= 4 && i < 8,
     },
     {
       booklet: 'Key Topic 3 Booklet',
-      file: 'usa_pupil_workbook_KT3_FINAL_V17.pdf',
+      file: resolvePdfFile('usa_pupil_workbook_KT3.pdf', 'usa_pupil_workbook_KT3_FINAL_V17.pdf'),
       filter: (l, i) => i >= 8 && i < 11,
     },
     {
       booklet: 'Key Topic 4 Booklet',
-      file: 'usa_pupil_workbook_KT4_FINAL_V17.pdf',
+      file: resolvePdfFile('usa_pupil_workbook_KT4.pdf', 'usa_pupil_workbook_KT4_FINAL_V17.pdf'),
       filter: (l, i) => i >= 11,
     },
   ],
   water_and_sanitation: [
-    { booklet: 'Pupil Workbook', file: 'water_and_sanitation_pupil_workbook_FINAL_V17.pdf' },
+    {
+      booklet: 'Pupil Workbook',
+      file: resolvePdfFile(
+        'water_and_sanitation_pupil_workbook.pdf',
+        'water_and_sanitation_pupil_workbook_FINAL_V17.pdf',
+      ),
+    },
   ],
   weimar_nazi_germany: [
     {
       booklet: 'Key Topic 1 Booklet',
-      file: 'weimar_nazi_germany_pupil_workbook_KT1_FINAL_V17.pdf',
+      file: resolvePdfFile(
+        'weimar_nazi_germany_pupil_workbook_KT1.pdf',
+        'weimar_nazi_germany_pupil_workbook_KT1_FINAL_V17.pdf',
+      ),
       filter: (l, i) => i < 4,
     },
     {
       booklet: 'Key Topic 2 Booklet',
-      file: 'weimar_nazi_germany_pupil_workbook_KT2_FINAL_V17.pdf',
+      file: resolvePdfFile(
+        'weimar_nazi_germany_pupil_workbook_KT2.pdf',
+        'weimar_nazi_germany_pupil_workbook_KT2_FINAL_V17.pdf',
+      ),
       filter: (l, i) => i >= 4 && i < 8,
     },
     {
       booklet: 'Key Topic 3 Booklet',
-      file: 'weimar_nazi_germany_pupil_workbook_KT3_FINAL_V17.pdf',
+      file: resolvePdfFile(
+        'weimar_nazi_germany_pupil_workbook_KT3.pdf',
+        'weimar_nazi_germany_pupil_workbook_KT3_FINAL_V17.pdf',
+      ),
       filter: (l, i) => i >= 8 && i < 12,
     },
     {
       booklet: 'Key Topic 4 Booklet',
-      file: 'weimar_nazi_germany_pupil_workbook_KT4_FINAL_V17.pdf',
+      file: resolvePdfFile(
+        'weimar_nazi_germany_pupil_workbook_KT4.pdf',
+        'weimar_nazi_germany_pupil_workbook_KT4_FINAL_V17.pdf',
+      ),
       filter: (l, i) => i >= 12,
     },
   ],

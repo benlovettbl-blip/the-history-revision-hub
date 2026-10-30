@@ -119,16 +119,15 @@ function cleanLessonTitle(title) {
 }
 
 // Load Medicine Unit Data from units/edexcel_medicine/data.js
-function loadMedicineData() {
+async function loadMedicineData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'edexcel_medicine', 'data.js');
   if (!fs.existsSync(dataPath)) {
     console.error('Data file not found:', dataPath);
     process.exit(1);
   }
-  const content = fs.readFileSync(dataPath, 'utf8');
-  const startIndex = content.indexOf('{');
-  const endIndex = content.lastIndexOf('}');
-  return eval('(' + content.substring(startIndex, endIndex + 1) + ')');
+  const fileUrl = 'file:///' + dataPath.replace(/\\/g, '/');
+  const mod = await import(fileUrl);
+  return mod.default || mod.edexcel_medicine_data || mod;
 }
 
 // Narrative Overview Synopses for each Era Cover
@@ -227,6 +226,21 @@ function generateEraHtml(eraKey, unitData) {
     const block4 = blocks[3] || {};
     const block5 = blocks[4] || {};
 
+    // Extract stage questions from causal domino spine
+    const stages = (lesson.causal_domino_spine && lesson.causal_domino_spine.stages) || [];
+    const getBlockQuestion = (b, bIdx) => {
+      const st =
+        stages[bIdx] || stages.find((s) => s.para_ref && s.para_ref.includes('.' + (bIdx + 1)));
+      const rawQ = (st && (st.question || st.workbook_question)) || b.question || '';
+      return rawQ ? rawQ.replace(/^["'“\s]+|["'”\s]+$/g, '').trim() : '';
+    };
+
+    const q1 = getBlockQuestion(block1, 0);
+    const q2 = getBlockQuestion(block2, 1);
+    const q3 = getBlockQuestion(block3, 2);
+    const q4 = getBlockQuestion(block4, 3);
+    const q5 = getBlockQuestion(block5, 4);
+
     // ----------------------------------------------------
     // VERSO PAGE (PART I)
     // ----------------------------------------------------
@@ -257,6 +271,7 @@ function generateEraHtml(eraKey, unitData) {
               ? `
           <div class="block-section">
             <h3 class="block-header">[${lIdx + 1}.1] ${cleanBlockTitle(block1.title)}</h3>
+            ${q1 ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${q1}&rdquo;</span></div>` : ''}
             ${formatBlockParas(block1, 1)}
           </div>`
               : ''
@@ -267,6 +282,7 @@ function generateEraHtml(eraKey, unitData) {
               ? `
           <div class="block-section">
             <h3 class="block-header">[${lIdx + 1}.2] ${cleanBlockTitle(block2.title)}</h3>
+            ${q2 ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${q2}&rdquo;</span></div>` : ''}
             ${formatBlockParas(block2, 2)}
           </div>`
               : ''
@@ -307,6 +323,7 @@ function generateEraHtml(eraKey, unitData) {
               ? `
           <div class="block-section">
             <h3 class="block-header">[${lIdx + 1}.3] ${cleanBlockTitle(block3.title)}</h3>
+            ${q3 ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${q3}&rdquo;</span></div>` : ''}
             ${formatBlockParas(block3, 3)}
           </div>`
               : ''
@@ -317,6 +334,7 @@ function generateEraHtml(eraKey, unitData) {
               ? `
           <div class="block-section">
             <h3 class="block-header">[${lIdx + 1}.4] ${cleanBlockTitle(block4.title)}</h3>
+            ${q4 ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${q4}&rdquo;</span></div>` : ''}
             ${formatBlockParas(block4, 4)}
           </div>`
               : ''
@@ -327,6 +345,7 @@ function generateEraHtml(eraKey, unitData) {
               ? `
           <div class="block-section">
             <h3 class="block-header">[${lIdx + 1}.5] ${cleanBlockTitle(block5.title)}</h3>
+            ${q5 ? `<div class="block-workbook-question"><span class="bwq-text">&ldquo;${q5}&rdquo;</span></div>` : ''}
             ${formatBlockParas(block5, 5)}
           </div>`
               : ''
@@ -1194,6 +1213,44 @@ function generateEraHtml(eraKey, unitData) {
       letter-spacing: 0.02em;
     }
 
+    .block-workbook-question {
+      break-inside: avoid;
+      break-after: avoid;
+      background: #f8fafc;
+      border-left: 2.5px solid #1e3a8a;
+      padding: 1.5px 6px;
+      margin: 1.5px 0 2.5px 0;
+      border-radius: 0 2px 2px 0;
+      line-height: 1.22;
+    }
+
+    .block-workbook-question .bwq-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 7.2pt;
+      color: #1e3a8a;
+      line-height: 1.2;
+      display: block;
+    }
+
+    .verso-page .block-workbook-question {
+      margin: 1.5px 0 3.0px 0;
+      padding: 1.5px 6px;
+    }
+    .verso-page .block-workbook-question .bwq-text {
+      font-size: 7.3pt;
+    }
+
+    .recto-page .block-workbook-question {
+      margin: 1.0px 0 2.0px 0;
+      padding: 1.0px 5px;
+    }
+    .recto-page .block-workbook-question .bwq-text {
+      font-size: 6.9pt;
+      line-height: 1.18;
+    }
+
     .prose-p {
       font-family: 'Lora', Georgia, serif;
       font-size: 11.2pt;
@@ -1596,6 +1653,7 @@ function generateEraHtml(eraKey, unitData) {
 
         const paras = Array.from(body.querySelectorAll('.prose-p'));
         const blocks = Array.from(body.querySelectorAll('.block-section'));
+        const qBoxes = Array.from(body.querySelectorAll('.block-workbook-question'));
         if (!paras.length) return;
 
         const isRecto = page.classList.contains('recto-page');
@@ -1607,7 +1665,7 @@ function generateEraHtml(eraKey, unitData) {
             const cBottom = cols.getBoundingClientRect().bottom;
             if (cBottom > maxBottom) maxBottom = cBottom;
           }
-          const allElements = body.querySelectorAll('.prose-p, .block-header, .block-section');
+          const allElements = body.querySelectorAll('.prose-p, .block-header, .block-section, .block-workbook-question');
           allElements.forEach(el => {
             const rects = el.getClientRects();
             for (let i = 0; i < rects.length; i++) {
@@ -1644,6 +1702,10 @@ function generateEraHtml(eraKey, unitData) {
           });
           blocks.forEach(b => {
             b.style.marginBottom = Math.max(2.0, currentMb * 0.9).toFixed(1) + 'px';
+          });
+          qBoxes.forEach(q => {
+            q.style.margin = '1px 0 2px 0';
+            q.style.padding = '1px 4px';
           });
           attempts++;
         }
@@ -1742,15 +1804,15 @@ async function renderEra(eraKey, unitData, browser) {
   const auditReport = await auditPageBudget(page);
   printSpaceAuditReport(auditReport);
 
-  // Compile PDF
-  const pdfPath = path.join(
+  // Compile PDF (Canonical single-PDF standard)
+  const canonicalPdfPath = path.join(
     ROOT_DIR,
     'public',
     'pdfs',
-    `edexcel_medicine_textbook_${eraKey}_FINAL_V17.pdf`,
+    `edexcel_medicine_textbook_${eraKey}.pdf`,
   );
   await page.pdf({
-    path: pdfPath,
+    path: canonicalPdfPath,
     format: 'A4',
     printBackground: true,
     preferCSSPageSize: true,
@@ -1762,39 +1824,16 @@ async function renderEra(eraKey, unitData, browser) {
     },
   });
 
-  const pdfStats = fs.statSync(pdfPath);
-  console.log(`[PDF] Generated: ${pdfPath} (${(pdfStats.size / 1024).toFixed(1)} KB)`);
-
-  // Sync to standard aliases
-  const legacyPdfPath = path.join(
-    ROOT_DIR,
-    'public',
-    'pdfs',
-    `edexcel_medicine_textbook_${eraKey}.pdf`,
-  );
-  const publisherPdfPath = path.join(
-    ROOT_DIR,
-    'public',
-    'pdfs',
-    `edexcel_medicine_textbook_${eraKey}_PUBLISHER.pdf`,
-  );
-  const publisherFinalV17PdfPath = path.join(
-    ROOT_DIR,
-    'public',
-    'pdfs',
-    `edexcel_medicine_textbook_${eraKey}_PUBLISHER_FINAL_V17.pdf`,
-  );
-  fs.copyFileSync(pdfPath, legacyPdfPath);
-  fs.copyFileSync(pdfPath, publisherPdfPath);
-  fs.copyFileSync(pdfPath, publisherFinalV17PdfPath);
+  const pdfStats = fs.statSync(canonicalPdfPath);
+  console.log(`[PDF] Generated: ${canonicalPdfPath} (${(pdfStats.size / 1024).toFixed(1)} KB)`);
 
   await page.close();
-  return { eraKey, pdfPath, auditReport };
+  return { eraKey, pdfPath: canonicalPdfPath, auditReport };
 }
 
 async function main() {
   const targetEra = process.argv[2] || 'medieval';
-  const unitData = loadMedicineData();
+  const unitData = await loadMedicineData();
 
   const chromePath =
     process.env.PUPPETEER_EXECUTABLE_PATH ||
