@@ -13,7 +13,7 @@
    - **Flagship 28-Page Thematic Master Companion** (`Medicine_Thematic_Study_Master_Knowledge_Retrieval_Companion.pdf`) and **12-Page Western Front Companion** (`Western_Front_Master_Knowledge_Retrieval_Companion.pdf`) are fully compiled with 272 dual-line retrieval questions, 750-year chronology flowchart, 4-era marking banks, 6-factor synoptic matrix, and 0px overflow across all 40 printed pages.
 2. **Edexcel GCSE Paper 2 (Conflict in the Middle East, 1945–1995 — `cme_new`):**  
    - **STATUS: COMPLETED (GREEN).**  
-   - Key Topic 1, 2, and 3 (15 enquiry lessons) are authored in 4-Act structure. Flagship 16-page double-page workbooks, 12-page publisher textbooks, and the **20-Page Master Knowledge Retrieval Companion** (`Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf` — 144 questions, 28-point domino flowchart, 4-page marking bank) are fully compiled with 0px overflow.
+   - Key Topic 1, 2, and 3 (15 enquiry lessons) are authored in canonical 5-Stage structure. Flagship 16-page double-page workbooks, 12-page publisher textbooks, and the **20-Page Master Knowledge Retrieval Companion** (`Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf` — 144 questions, 28-point domino flowchart, 4-page marking bank) are fully compiled with 0px overflow.
 3. **Edexcel GCSE Paper 2 (Early Elizabethan England, 1558–1588 — `eee`):**  
    - **STATUS: COMPLETED (GREEN).**  
    - All 3 Key Topics (12 enquiries) are authored in `data.js` with individual pupil workbooks, publisher textbooks, and the flagship **24-Page A4 Master Knowledge Retrieval & Homework Companion** (`Early_Elizabethan_England_Master_Knowledge_Retrieval_Companion.pdf` — 120 dual-line retrieval questions across 12 enquiries, Tudor Domino Chronology Flowchart, 3-page Department Marking Bank, and Paper 2 Section B Q1 Features [4m], Q2 Causation [12m], and Q3 Essay [16m] Exam Strategy Guides with 100% `✅ OPTIMAL` 0px overflow).
@@ -25,19 +25,14 @@
 
 ## 2. Departmental RAG Status Audit Table (All 16 Units)
 
-The following ledger tracks the departmental shift to **Christine Counsell 4-Act Lessons** and the **Double-Page Spread Booklet Architecture** across all Key Stage 3 and GCSE units.
-
-> [!IMPORTANT]
-> **🔔 REPROGRAPHICS REPRINT WINDOW REMINDER:**  
-> Three KS3 units are currently in daily classroom use in physical printed workbooks: Year 7 Sanitation, Year 8 Early Modern, and Year 9 Causes of the Great War.  
-> To guarantee 100% textbook-to-workbook parity for lessons and cover teachers, the active `data.js` files served to Netlify strictly match the printed workbooks. The modern Christine Counsell 4-Act architecture is preserved and staged in `data_v2_4act.js` and branch `feat/4act-v2-reprint`, ready to be promoted during the end-of-term reprographics reprint window!
+The following ledger tracks the departmental standard of the **5-Stage Chronological Inquiry Spine** and the **Double-Page Spread Booklet Architecture** across all Key Stage 3 and GCSE units.
 
 > [!TIP]
 > **🌟 SINGLE SOURCE OF TRUTH FOR ALL WORKBOOKS:**  
 > For the comprehensive, page-by-page audit, exact missing elements, and the step-by-step KS3 Rollout Ladder, see:  
 > 👉 **[`WORKBOOK_STATUS_AND_ROLLOUT_TRACKER.md`](./WORKBOOK_STATUS_AND_ROLLOUT_TRACKER.md)**
 
-| Unit ID | Key Stage / Year | Unit Title | 4-Act Lessons | Double-Page Workbook Architecture | Classroom Reprographics State | Priority & Next Action |
+| Unit ID | Key Stage / Year | Unit Title | 5-Stage Inquiry Spine | Double-Page Workbook Architecture | Classroom Reprographics State | Priority & Next Action |
 | :--- | :---: | :--- | :---: | :---: | :---: | :--- |
 | `medieval_england` | KS3 (Year 7) | Medieval England, 1066–1485 | 🟩 **GREEN**<br>(5 Core Enquiries) | 🌟 **GOLD STANDARD**<br>(16-Page Saddle-Stitch) | Production Ready (Term 2) | 🌟 **100% PERFECTED:** Color covers, 118mm Bayeux plate, pure `#000000` monochrome interior, ~8.0mm ruled lines, `[1.1]`–`[5.5]` para badges, 32-line notes spread, 100% `✅ OPTIMAL` audit. (Commit `d62781c2`). |
 | `monarchy_religion_power` | KS3 (Year 8) | Crown, Church, or Parliament (1517–1689) | 🟩 **GREEN**<br>(5 Enquiries Authored) | 🟡 **TIER 2: STAGED**<br>(16-Page Prototype) | Production Ready (Term 2) | 🎯 **PRIORITY #1 NEXT UP:** Upgrade to Gold Standard: remove interior navy `#0f284e`, calibrate lines to ~8.0mm, add P14–15 notes spread, enlarge typography. |

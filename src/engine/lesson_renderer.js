@@ -1760,101 +1760,103 @@ if (typeof window !== 'undefined') {
     }
   };
 
-  window.toggleAllCausalSpineDrawers = function (btn) {
-    const spine = document.getElementById('lesson-chronology-spine');
-    const drawers = spine
-      ? spine.querySelectorAll('.cme-causal-drawer')
-      : document.querySelectorAll('.cme-causal-drawer');
-    if (!drawers || drawers.length === 0) return;
-    const labelEl =
-      document.getElementById('toggle-causal-label') ||
-      (btn && btn.querySelector('.toggle-spine-text'));
-    const anyClosed = Array.from(drawers).some((d) => !d.open);
-    drawers.forEach((d) => {
-      d.open = anyClosed;
-    });
-    if (labelEl) {
-      labelEl.textContent = anyClosed ? 'Collapse All' : 'Expand All';
-    }
-  };
-  window.toggleAllSpineDrawers = window.toggleAllCausalSpineDrawers;
-
-  window.toggleCmeSpineQuizMode = function () {
+  function updateMasterSpineToggleState() {
     const spine = document.getElementById('lesson-chronology-spine');
     if (!spine) return;
-    const isQuiz = spine.classList.toggle('cme-quiz-active');
-    const btn = document.getElementById('btn-cme-quiz-mode');
-    const label = document.getElementById('cme-quiz-label');
-    const subbar = document.getElementById('cme-quiz-subbar');
-    const drawers = spine.querySelectorAll('.cme-causal-drawer');
-
-    if (isQuiz) {
-      // Auto-open all drawers so masked targets are visible for active recall
-      drawers.forEach((d) => {
-        d.open = true;
-      });
-      const toggleLabel = document.getElementById('toggle-causal-label');
-      if (toggleLabel) toggleLabel.textContent = 'Collapse Causal Analysis';
-
-      if (btn) {
-        btn.style.background = '#fef08a';
-        btn.style.color = '#713f12';
-        btn.style.borderColor = '#eab308';
-      }
-      if (label) {
-        label.innerHTML = '<i class="fa-solid fa-circle-check"></i> Quiz Mode Active';
-      }
-      if (subbar) {
-        subbar.style.display = 'flex';
-      }
-    } else {
-      if (btn) {
-        btn.style.background = '#fefce8';
-        btn.style.color = '#854d0e';
-        btn.style.borderColor = '#fef08a';
-      }
-      if (label) {
-        label.textContent = 'Self-Quiz Mode';
-      }
-      if (subbar) {
-        subbar.style.display = 'none';
-      }
-      // Reset all revealed targets
-      spine.querySelectorAll('.cme-quiz-target.revealed').forEach((el) => {
-        el.classList.remove('revealed');
-      });
-      const revealBtn = document.getElementById('btn-reveal-all-quiz');
-      if (revealBtn) {
-        revealBtn.innerHTML = '<i class="fa-solid fa-eye"></i> Reveal All';
-      }
+    const masterBtn =
+      spine.querySelector('.btn-toggle-all-stages') ||
+      spine.querySelector('.btn-toggle-all-consequences');
+    if (!masterBtn) return;
+    const bodies = spine.querySelectorAll('.spine-stage-body');
+    if (bodies.length === 0) return;
+    const allOpen = Array.from(bodies).every(
+      (b) => b.style.display === 'flex' || b.style.display === 'block',
+    );
+    const labelSpan =
+      masterBtn.querySelector('.toggle-stage-text') ||
+      masterBtn.querySelector('.toggle-consequence-text');
+    const icon = masterBtn.querySelector('i');
+    if (labelSpan) {
+      labelSpan.textContent = allOpen ? 'Collapse All Stages' : 'Reveal All Stages';
     }
+    if (icon) {
+      icon.className = allOpen ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye';
+    }
+  }
+
+  window.toggleCardSpineStage = function (btn) {
+    if (!btn) return;
+    const card = btn.closest('.universal-spine-card') || btn.parentElement;
+    if (!card) return;
+    const body = card.querySelector('.spine-stage-body');
+    const chevron = btn.querySelector('.stage-chevron');
+    const label = btn.querySelector('.stage-toggle-label');
+    if (!body) return;
+    const isClosed = body.style.display === 'none' || !body.style.display;
+    body.style.display = isClosed ? 'flex' : 'none';
+    btn.setAttribute('aria-expanded', isClosed ? 'true' : 'false');
+    btn.style.borderColor = isClosed ? '#0284c7' : '#cbd5e1';
+    btn.style.background = isClosed ? '#f0f9ff' : '#f8fafc';
+    if (chevron) {
+      chevron.style.transform = isClosed ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+    if (label) {
+      label.textContent = isClosed ? 'Hide' : 'Reveal';
+    }
+    updateMasterSpineToggleState();
   };
+  window.toggleCardConsequence = window.toggleCardSpineStage;
 
-  window.revealQuizTarget = function (el, event) {
-    if (event) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    const target = el && el.closest ? el.closest('.cme-quiz-target') || el : el;
-    if (target) {
-      target.classList.toggle('revealed');
-    }
-  };
-
-  window.revealAllCmeQuizBlanks = function () {
+  window.toggleAllSpineStages = function (btn) {
     const spine = document.getElementById('lesson-chronology-spine');
     if (!spine) return;
-    const targets = spine.querySelectorAll('.cme-quiz-target');
-    const anyUnrevealed = Array.from(targets).some((t) => !t.classList.contains('revealed'));
-    targets.forEach((t) => {
-      if (anyUnrevealed) t.classList.add('revealed');
-      else t.classList.remove('revealed');
+    const bodies = spine.querySelectorAll('.spine-stage-body');
+    const buttons = spine.querySelectorAll('.spine-question-toggle-card');
+    const anyClosed = Array.from(bodies).some(
+      (b) => b.style.display === 'none' || !b.style.display,
+    );
+    bodies.forEach((b) => {
+      b.style.display = anyClosed ? 'flex' : 'none';
     });
-    const btn = document.getElementById('btn-reveal-all-quiz');
-    if (btn) {
-      btn.innerHTML = anyUnrevealed
-        ? '<i class="fa-solid fa-eye-slash"></i> Hide All'
-        : '<i class="fa-solid fa-eye"></i> Reveal All';
+    buttons.forEach((btnEl) => {
+      btnEl.setAttribute('aria-expanded', anyClosed ? 'true' : 'false');
+      btnEl.style.borderColor = anyClosed ? '#0284c7' : '#cbd5e1';
+      btnEl.style.background = anyClosed ? '#f0f9ff' : '#f8fafc';
+      const chevron = btnEl.querySelector('.stage-chevron');
+      const label = btnEl.querySelector('.stage-toggle-label');
+      if (chevron) {
+        chevron.style.transform = anyClosed ? 'rotate(180deg)' : 'rotate(0deg)';
+      }
+      if (label) {
+        label.textContent = anyClosed ? 'Hide' : 'Reveal';
+      }
+    });
+    updateMasterSpineToggleState();
+  };
+  window.toggleAllSpineConsequences = window.toggleAllSpineStages;
+  window.toggleAllCausalSpineDrawers = window.toggleAllSpineStages;
+  window.toggleAllSpineDrawers = window.toggleAllSpineStages;
+
+  window.jumpToNarrativeBlock = function (stepNum, targetPara) {
+    const selector = targetPara
+      ? `#narrative-para-${targetPara.replace('.', '-')}`
+      : `[data-stage="${stepNum}"]`;
+    let target = document.querySelector(selector);
+    if (!target && targetPara) {
+      target = Array.from(
+        document.querySelectorAll('.narrative-paragraph, .narrative-exposition-block, h3, h4'),
+      ).find((el) => {
+        return el.textContent && el.textContent.includes(`[${stepNum}.`);
+      });
+    }
+    const chunk = target || document.querySelector(`.narrative-chunk:nth-of-type(${stepNum})`);
+    if (chunk) {
+      chunk.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      chunk.style.transition = 'all 0.4s ease';
+      chunk.style.boxShadow = '0 0 0 3px #0284c7, 0 6px 20px rgba(2,132,199,0.2)';
+      setTimeout(() => {
+        chunk.style.boxShadow = '';
+      }, 2000);
     }
   };
 
@@ -5145,306 +5147,81 @@ export function renderLesson(lesson) {
       });
     }
 
+    // --- UNIVERSAL TWO-BEAT CHRONOLOGY SPINE (KS2, KS3, GCSE) ---
+    let spineItems = [];
     if (
-      (isCme || unitId === 'great_war' || isKs3 || lesson.causal_domino_spine) &&
-      (lesson.timeline_anchor || lesson.causal_domino_spine)
+      lesson.causal_domino_spine &&
+      Array.isArray(lesson.causal_domino_spine.stages) &&
+      lesson.causal_domino_spine.stages.length > 0
     ) {
-      const stages =
-        lesson.causal_domino_spine && Array.isArray(lesson.causal_domino_spine.stages)
-          ? lesson.causal_domino_spine.stages
-          : [];
-      const anchors =
-        lesson.timeline_anchor && Array.isArray(lesson.timeline_anchor)
-          ? lesson.timeline_anchor
-          : [];
-
-      let spineItems = [];
-      if (stages.length > 0) {
-        spineItems = stages.map((s, i) => ({
+      spineItems = lesson.causal_domino_spine.stages.map((s, i) => {
+        let catalystText = s.trigger || s.desc || '';
+        if (s.because && !catalystText.includes(s.because)) {
+          if (catalystText && !/[.?!]$/.test(catalystText.trim())) {
+            catalystText = catalystText.trim() + '.';
+          }
+          catalystText = catalystText ? `${catalystText} ${s.because}` : s.because;
+        }
+        return {
           step: s.step || i + 1,
           date: s.date || '',
           title: s.title || '',
           desc: s.trigger || s.desc || '',
           actor: s.actor || '',
           tag: s.tag || '',
-          because: s.because || '',
-          therefore: s.therefore || '',
-          connective: s.connective || '',
+          catalyst: catalystText,
+          consequence: s.therefore || s.outcome || s.significance || '',
           question: s.question || s.workbook_question || '',
-          exam_link: s.exam_link || '',
           para_ref: s.para_ref || s.paraRef || '',
-        }));
-      } else if (anchors.length > 0) {
-        spineItems = anchors.map((a, i) => ({
-          step: i + 1,
-          date: a.date || '',
-          title: a.title || '',
-          desc: a.desc || '',
-          actor: '',
-          tag: '',
-          because: '',
-          therefore: '',
-          connective: '',
-          question: '',
-          exam_link: '',
-          para_ref: a.para_ref || a.paraRef || '',
-        }));
-      }
-
-      if (spineItems.length > 0) {
-        let lIdx = 0;
-        if (typeof unitData !== 'undefined' && unitData && Array.isArray(unitData.lessons)) {
-          lIdx = unitData.lessons.findIndex((l) =>
-            l.id && lesson.id ? l.id === lesson.id : l.title === lesson.title,
-          );
-          if (lIdx === -1) lIdx = 0;
+          connective: s.connective || '',
+        };
+      });
+    } else if (
+      lesson.workbook_stages &&
+      Array.isArray(lesson.workbook_stages) &&
+      lesson.workbook_stages.length > 0
+    ) {
+      spineItems = lesson.workbook_stages.map((st, i) => {
+        const bulletText = st.bullets && Array.isArray(st.bullets) ? st.bullets.join('. ') : '';
+        let catalystText = bulletText || st.desc || st.focus_clue || '';
+        if (st.focus_clue && !catalystText.includes(st.focus_clue)) {
+          catalystText = catalystText ? `${catalystText}. ${st.focus_clue}` : st.focus_clue;
         }
-        const pageAnchor = getWorkbookPageAnchor(unitId || window.currentUnitId, lesson, lIdx);
-
-        htmlSpineInner += `
-        <div id="lesson-chronology-spine" class="timeline-anchor-details cme-chronology-spine" style="background: #ffffff; border: 1.5px solid #cbd5e1; border-top: 4px solid #0284c7; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); overflow: hidden;">
-          <div style="padding: 12px 18px; font-weight: 700; color: #0f172a; display: flex; align-items: center; justify-content: space-between; user-select: none; background: #f8fafc; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 8px;">
-            <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-              <span style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 800; padding: 2.5px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Chronology Spine</span>
-              <span style="font-weight: 800; font-size: 0.98rem; color: #0f172a; font-family: 'Inter', sans-serif;">Key Turning Points &amp; Causal Dominoes</span>
-            </span>
-            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-              ${pageAnchor ? `<span style="font-size: 0.74rem; font-weight: 700; color: #0369a1; background: #f0f9ff; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 12px;"><i class="fa-solid fa-book-open" style="color: #0284c7; margin-right: 4px;"></i> Workbook: ${pageAnchor.label}</span>` : ''}
-              <button type="button" id="btn-toggle-all-causal" class="btn btn-toggle-all-spine-stages" onclick="event.stopPropagation(); window.toggleAllCausalSpineDrawers(this);" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; color: #0369a1; background: #ffffff; border: 1.2px solid #bae6fd; padding: 2px 10px; border-radius: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all 0.15s ease;" title="Expand or collapse all 5 stage drawers at once">
-                <i class="fa-solid fa-arrows-up-down" style="font-size: 0.65rem;"></i> <span id="toggle-causal-label" class="toggle-spine-text">Expand All</span>
-              </button>
-              <button type="button" class="btn btn-cme-quiz-mode" id="btn-cme-quiz-mode" onclick="event.stopPropagation(); window.toggleCmeSpineQuizMode();" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; color: #854d0e; background: #fefce8; border: 1.2px solid #fef08a; padding: 2px 10px; border-radius: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all 0.15s ease;" title="Test your memory: blank out motives &amp; results and click to reveal">
-                <i class="fa-solid fa-mask" style="font-size: 0.65rem;"></i> <span id="cme-quiz-label">Self-Quiz Mode</span>
-              </button>
-              <button type="button" class="btn btn-copy-spine-notes" onclick="event.stopPropagation(); window.copyDominoNotes();" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; color: #475569; background: #ffffff; border: 1.2px solid #cbd5e1; padding: 2px 10px; border-radius: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all 0.15s ease;" title="Copy all milestone notes to clipboard">
-                <i class="fa-solid fa-copy" style="font-size: 0.65rem;"></i> <span>Copy Notes</span>
-              </button>
-              <span style="font-size: 0.74rem; font-weight: 700; color: #475569; background: #e2e8f0; padding: 2px 8px; border-radius: 12px;">${spineItems.length} Milestones</span>
-            </div>
-          </div>
-
-          <!-- Active Recall Subbar -->
-          <div id="cme-quiz-subbar" style="display: none; background: #fefce8; border-bottom: 1px solid #fef08a; padding: 7px 18px; font-size: 0.8rem; font-weight: 700; color: #854d0e; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
-            <span style="display: flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-circle-question" style="color: #eab308;"></i> <strong>Active Recall Self-Quiz Mode Active:</strong> Motives and consequences are masked. Click any dashed box to test your recall!
-            </span>
-            <button type="button" id="btn-reveal-all-quiz" onclick="window.revealAllCmeQuizBlanks();" style="padding: 3px 10px; font-size: 0.72rem; font-weight: 800; background: #854d0e; color: #ffffff; border: none; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
-              <i class="fa-solid fa-eye"></i> Reveal All
-            </button>
-          </div>
-
-          <div class="cme-chronology-spine-grid" style="--spine-cols: ${spineItems.length};">
-            ${spineItems
-              .map((item, idx) => {
-                const isLast = idx === spineItems.length - 1;
-                const displayDate = item.date
-                  ? item.date.replace('October–November', 'Oct–Nov')
-                  : '';
-                return `
-              <div class="cme-spine-card" data-stage="${item.step}">
-                ${
-                  !isLast
-                    ? `
-                <div class="cme-domino-pipeline-node" title="Stage ${item.step} triggers Stage ${item.step + 1}${item.connective ? ': ' + item.connective : ''}">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>`
-                    : ''
-                }
-                
-                <!-- Baseline Narrative Zone (Row 1: Enquiry Focus) -->
-                <div class="cme-spine-narrative-zone">
-                  <div class="cme-spine-date-row">
-                    <span class="cme-spine-date-badge" title="${item.date}">${displayDate}</span>
-                  </div>
-
-                  ${
-                    item.tag || item.actor
-                      ? `
-                  <div class="cme-spine-subtitle" title="${item.tag || ''} • ${item.actor || ''}">
-                    ${item.tag ? `${item.tag} &bull; ` : ''}<strong style="color: #334155;">${item.actor || ''}</strong>
-                  </div>`
-                      : ''
-                  }
-
-                  <h5 class="cme-spine-title">
-                    ${item.title}
-                  </h5>
-
-                  ${
-                    item.question
-                      ? `
-                  <div class="cme-spine-question">
-                    <div class="cme-spine-question-label">
-                      <i class="fa-solid fa-book-open"></i> Workbook Enquiry:
-                    </div>
-                    <div class="cme-spine-question-text">
-                      "${item.question}"
-                    </div>
-                  </div>`
-                      : ''
-                  }
-                </div>
-
-                <!-- Stepped Causal Domino Cascade (Progressive Disclosure) -->
-                <div class="cme-spine-stepped-domino" style="display: flex; flex-direction: column; gap: 5px; margin: 4px 0 8px 0;">
-                  <!-- Step 1: Action / Trigger -->
-                  ${
-                    item.desc
-                      ? `
-                  <details class="cme-domino-step cme-step-action cme-causal-drawer">
-                    <summary>
-                      <span class="cme-step-summary-title">
-                        <i class="fa-solid fa-play" style="font-size: 0.55rem;"></i> 1. Action / Trigger
-                      </span>
-                      <i class="fa-solid fa-chevron-down drawer-chevron" style="font-size: 0.60rem;"></i>
-                    </summary>
-                    <div class="cme-domino-step-content cme-action-content">
-                      ${item.desc}
-                    </div>
-                  </details>`
-                      : ''
-                  }
-
-                  <!-- Step 2: Motive (Why they acted) -->
-                  ${
-                    item.because
-                      ? `
-                  <details class="cme-domino-step cme-step-motive cme-causal-drawer">
-                    <summary>
-                      <span class="cme-step-summary-title">
-                        <i class="fa-solid fa-lightbulb" style="font-size: 0.58rem;"></i> 2. Motive (Why?)
-                      </span>
-                      <i class="fa-solid fa-chevron-down drawer-chevron" style="font-size: 0.60rem;"></i>
-                    </summary>
-                    <div class="cme-domino-step-content cme-motive-content">
-                      <div class="cme-quiz-target" data-quiz-type="motive" onclick="window.revealQuizTarget(this, event)">
-                        <span class="cme-quiz-mask"><i class="fa-solid fa-eye"></i> Click to reveal Motive...</span>
-                        <span class="cme-quiz-content">${item.because}</span>
-                      </div>
-                    </div>
-                  </details>`
-                      : ''
-                  }
-
-                  <!-- Step 3: Consequence & Outcome -->
-                  ${
-                    item.therefore
-                      ? `
-                  <details class="cme-domino-step cme-step-outcome cme-causal-drawer">
-                    <summary>
-                      <span class="cme-step-summary-title">
-                        <i class="fa-solid fa-bolt" style="font-size: 0.58rem;"></i> 3. Outcome / Result
-                      </span>
-                      <i class="fa-solid fa-chevron-down drawer-chevron" style="font-size: 0.60rem;"></i>
-                    </summary>
-                    <div class="cme-domino-step-content cme-outcome-content">
-                      <div class="cme-quiz-target" data-quiz-type="result" onclick="window.revealQuizTarget(this, event)">
-                        <span class="cme-quiz-mask"><i class="fa-solid fa-eye"></i> Click to reveal Result...</span>
-                        <span class="cme-quiz-content">${item.therefore}</span>
-                      </div>
-                    </div>
-                  </details>`
-                      : ''
-                  }
-
-                  <!-- Step 4: Causal Domino Trigger -->
-                  ${
-                    item.connective && item.connective !== item.therefore
-                      ? `
-                  <details class="cme-domino-step cme-step-chain cme-causal-drawer">
-                    <summary>
-                      <span class="cme-step-summary-title">
-                        <i class="fa-solid fa-arrow-right" style="font-size: 0.58rem;"></i> 4. Domino Link &rarr;
-                      </span>
-                      <i class="fa-solid fa-chevron-down drawer-chevron" style="font-size: 0.60rem;"></i>
-                    </summary>
-                    <div class="cme-domino-step-content cme-chain-content">
-                      ${item.connective}
-                    </div>
-                  </details>`
-                      : ''
-                  }
-                </div>
-
-                <!-- Footer: Exam Link & Jump to Text -->
-                <div class="cme-spine-footer">
-                  ${
-                    item.exam_link
-                      ? `
-                  <div class="cme-spine-exam-link">
-                    <i class="fa-solid fa-bullseye" style="color: #dc2626; margin-top: 2px; flex-shrink: 0;"></i>
-                    <span>${item.exam_link}</span>
-                  </div>`
-                      : ''
-                  }
-                  <div style="display: flex; justify-content: flex-end; margin-top: 4px;">
-                    <button type="button" onclick="if(window.jumpToNarrativeBlock){window.jumpToNarrativeBlock(${item.step});}event.stopPropagation();" class="cme-spine-jump-btn" title="Scroll directly to Stage ${item.step} narrative reading [${item.step}.1]–[${item.step}.2]" style="background: #0284c7; color: #ffffff; border: none; padding: 4px 10px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease;">
-                      <i class="fa-solid fa-book-open" style="font-size: 0.65rem;"></i> Read Stage ${item.step} Text [${item.step}.1] &darr;
-                    </button>
-                  </div>
-                </div>
-              </div>
-              ${
-                !isLast
-                  ? `
-              <div class="cme-domino-vertical-connector" title="Stage ${item.step} triggers Stage ${item.step + 1}${item.connective ? ': ' + item.connective : ''}">
-                <div class="cme-connector-line"></div>
-                <div class="cme-connector-badge">
-                  <i class="fa-solid fa-arrow-down"></i>
-                  <span>${item.connective ? 'Causal Domino Trigger' : 'Next Stage'}</span>
-                </div>
-                <div class="cme-connector-line"></div>
-              </div>`
-                  : ''
-              }
-              `;
-              })
-              .join('')}
-          </div>
-        </div>
-        `;
-      }
+        return {
+          step: st.step || i + 1,
+          date: st.date || '',
+          title: st.heading || st.questionHeading || `Enquiry Stage ${i + 1}`,
+          desc: bulletText || st.desc || '',
+          actor: st.actor || '',
+          tag: '',
+          catalyst: catalystText,
+          consequence: st.therefore || st.outcome || st.significance || '',
+          question: st.question || st.prompt || '',
+          para_ref: st.para_ref || st.paraRef || '',
+          connective: st.connective || '',
+        };
+      });
     } else if (
       lesson.timeline_anchor &&
       Array.isArray(lesson.timeline_anchor) &&
       lesson.timeline_anchor.length > 0
     ) {
-      htmlSpineInner += `
-        <div class="timeline-anchor-details" style="background: #ffffff; border: 1px solid #cbd5e1; border-left: 4px solid #0284c7; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); overflow: hidden;">
-          <div style="padding: 12px 18px; font-weight: 700; color: #0f172a; display: flex; align-items: center; justify-content: space-between; user-select: none; background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
-            <span style="display: flex; align-items: center; gap: 10px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; color: #0369a1;">
-              <i class="fa-solid fa-clock-rotate-left" style="color: #0284c7;"></i> Chronology Spine &bull; Key Milestones
-            </span>
-            <span style="font-size: 0.8rem; font-weight: 600; color: #64748b;">${lesson.timeline_anchor.length} Milestones</span>
-          </div>
-          <div style="padding: 16px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; background: #fff;">
-            ${lesson.timeline_anchor
-              .map(
-                (anchor) => `
-              <div style="position: relative; border-left: 2px solid #e2e8f0; padding-left: 12px;">
-                <div style="position: absolute; left: -6px; top: 2px; width: 10px; height: 10px; border-radius: 50%; background: #0284c7;"></div>
-                <div style="font-size: 0.75rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.5px;">${anchor.date}</div>
-                <div style="font-weight: 700; font-size: 0.95rem; color: #1e293b; margin: 2px 0 4px 0;">${anchor.title}</div>
-                <div style="font-size: 0.82rem; color: #64748b; line-height: 1.4;">${anchor.desc}</div>
-              </div>
-            `,
-              )
-              .join('')}
-          </div>
-        </div>
-      `;
+      spineItems = lesson.timeline_anchor.map((a, i) => ({
+        step: i + 1,
+        date: a.date || '',
+        title: a.title || '',
+        desc: a.desc || '',
+        actor: '',
+        tag: '',
+        catalyst: a.desc || a.trigger || '',
+        consequence: a.therefore || a.outcome || a.significance || '',
+        question: a.question || '',
+        para_ref: a.para_ref || a.paraRef || '',
+        connective: '',
+      }));
     }
 
-    if (
-      lesson.workbook_stages &&
-      Array.isArray(lesson.workbook_stages) &&
-      lesson.workbook_stages.length > 0 &&
-      !(
-        lesson.causal_domino_spine &&
-        Array.isArray(lesson.causal_domino_spine.stages) &&
-        lesson.causal_domino_spine.stages.length > 0
-      )
-    ) {
+    if (spineItems.length > 0) {
       let lIdx = 0;
       if (typeof unitData !== 'undefined' && unitData && Array.isArray(unitData.lessons)) {
         lIdx = unitData.lessons.findIndex((l) =>
@@ -5452,65 +5229,165 @@ export function renderLesson(lesson) {
         );
         if (lIdx === -1) lIdx = 0;
       }
-      const pageAnchor = getWorkbookPageAnchor(unitId || window.currentUnitId, lesson, lIdx);
+      const pageAnchor = getWorkbookPageAnchor(
+        unitId || (typeof window !== 'undefined' ? window.currentUnitId : ''),
+        lesson,
+        lIdx,
+      );
+
       htmlSpineInner += `
-        <div id="lesson-workbook-stages-drawer" class="ks3-workbook-stages-drawer" style="background: #ffffff; border: 1.5px solid #0f284e; border-top: 4px solid #0f284e; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 3px 10px rgba(15, 40, 78, 0.08); overflow: hidden;">
-          <div style="padding: 12px 18px; font-weight: 700; color: #0f284e; display: flex; align-items: center; justify-content: space-between; user-select: none; background: #f0f4f9; border-bottom: 1.2px solid #cbd5e1; flex-wrap: wrap; gap: 8px;">
-            <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-              <span style="background: #0f284e; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; padding: 2.5px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Pupil Workbook Companion</span>
-              <span style="font-weight: 800; font-size: 0.98rem; color: #0f284e; font-family: 'Inter', sans-serif;">5-Stage Chronological Enquiry Spine &bull; Paragraph Anchors</span>
-            </span>
+        <div id="lesson-chronology-spine" class="timeline-anchor-details cme-chronology-spine universal-chronology-spine" style="background: #ffffff; border: 1.5px solid #cbd5e1; border-top: 4px solid #0284c7; border-radius: 8px; margin-bottom: 36px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); overflow: hidden;">
+          <!-- Master Header Bar -->
+          <div style="padding: 12px 18px; font-weight: 700; color: #0f172a; display: flex; align-items: center; justify-content: space-between; user-select: none; background: #f8fafc; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+              <span style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 800; padding: 2.5px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Chronology Spine</span>
+              <span style="font-weight: 800; font-size: 0.98rem; color: #0f172a; font-family: 'Inter', sans-serif;">Key Turning Points &amp; Causal Dominoes</span>
+            </div>
             <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-              ${pageAnchor ? `<span style="font-size: 0.76rem; font-weight: 700; color: #0f284e; background: #ffffff; border: 1px solid #93c5fd; padding: 2px 8px; border-radius: 12px;"><i class="fa-solid fa-book-open" style="color: #2563eb; margin-right: 4px;"></i> Workbook Spread: ${pageAnchor.label}</span>` : ''}
-              <span style="font-size: 0.74rem; font-weight: 700; color: #475569; background: #e2e8f0; padding: 2px 8px; border-radius: 12px;">${lesson.workbook_stages.length} Inquiry Stages</span>
+              ${pageAnchor ? `<span style="font-size: 0.74rem; font-weight: 700; color: #0369a1; background: #f0f9ff; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 12px;"><i class="fa-solid fa-book-open" style="color: #0284c7; margin-right: 4px;"></i> Workbook Spread: ${pageAnchor.label}</span>` : ''}
+              <button type="button" class="btn btn-toggle-all-stages btn-toggle-all-consequences" onclick="event.stopPropagation(); window.toggleAllSpineStages(this);" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; color: #0369a1; background: #ffffff; border: 1.2px solid #bae6fd; padding: 3px 12px; border-radius: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all 0.15s ease;" title="Expand or collapse all historical answer stages across all cards">
+                <i class="fa-solid fa-eye" style="font-size: 0.70rem;"></i> <span class="toggle-stage-text toggle-consequence-text">Reveal All Stages</span>
+              </button>
+              ${
+                unitId === 'cme_new' ||
+                (typeof window !== 'undefined' &&
+                  (window.currentUnitId === 'cme_new' ||
+                    window.currentUnitId === 'gcse_middle_east_1945_1995'))
+                  ? `
+              <button type="button" class="btn btn-timeline-jump" onclick="event.stopPropagation(); if(typeof window.switchView==='function'){window.switchView('timeline', 'cme_new');}else if(typeof window.navigateTo==='function'){window.navigateTo('timeline');}" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1.2px solid #bfdbfe; padding: 3px 12px; border-radius: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all 0.15s ease;" title="Jump to interactive chronological Living Timeline">
+                <i class="fa-solid fa-clock-rotate-left" style="color: #2563eb;"></i> Full Living Timeline &rarr;
+              </button>
+              `
+                  : ''
+              }
+              <span style="font-size: 0.74rem; font-weight: 700; color: #475569; background: #e2e8f0; padding: 2px 8px; border-radius: 12px;">${spineItems.length} Milestones</span>
             </div>
           </div>
-          <div class="ks3-stages-grid" style="padding: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; background: #ffffff;">
-            ${lesson.workbook_stages
-              .map((st) => {
-                const targetFirstPara =
-                  st.para_ref && st.para_ref.match(/\d+\.\d+/)
-                    ? st.para_ref.match(/\d+\.\d+/)[0]
-                    : '';
+
+          <!-- Dynamic Columns Grid -->
+          <div class="cme-chronology-spine-grid" style="--spine-cols: ${spineItems.length};">
+            ${spineItems
+              .map((item, idx) => {
+                const isLast = idx === spineItems.length - 1;
+                const displayDate = item.date
+                  ? item.date.replace('October–November', 'Oct–Nov')
+                  : '';
+                const hasConsequence = Boolean(
+                  item.consequence && item.consequence.trim().length > 0,
+                );
+                const cleanQ = item.question ? item.question.replace(/^"|"$/g, '').trim() : '';
+                const targetParaMatch = item.para_ref && item.para_ref.match(/\d+\.\d+/);
+                const targetFirstPara = targetParaMatch ? targetParaMatch[0] : `${item.step}.1`;
+                const dominoTooltip = item.connective
+                  ? item.connective
+                  : `Stage ${item.step} triggers Stage ${item.step + 1}`;
+
                 return `
-                <div class="ks3-stage-card" style="background: #f8fafc; border: 1.2px solid #cbd5e1; border-top: 3.5px solid #0f284e; border-radius: 6px; padding: 10px 11px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-                  <div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; margin-bottom: 6px; flex-wrap: wrap;">
-                      <div style="display: inline-flex; align-items: center; gap: 4px;">
-                        ${st.para_ref || st.paraRef ? `<span style="background: #1e3a8a; border: 0.8px solid #93c5fd; color: #ffffff; font-family: monospace; font-size: 0.65rem; font-weight: 800; padding: 1px 5px; border-radius: 3px;">Text ${st.para_ref || st.paraRef}</span>` : ''}
-                      </div>
-                      <span style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #2563eb;">${st.date}</span>
-                    </div>
-                    <h5 style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.88rem; font-weight: 800; color: #0f172a; margin: 0 0 6px 0; line-height: 1.3;">
-                      ${st.heading || st.questionHeading || ''}
-                    </h5>
-                    ${
-                      st.bullets && st.bullets.length > 0
-                        ? `
-                      <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px;">
-                        ${st.bullets.map((b) => `<span style="font-size: 0.68rem; font-weight: 700; color: #0f284e; background: #e0f2fe; padding: 1px 6px; border-radius: 3px;">&bull; ${b}</span>`).join('')}
-                      </div>
-                    `
-                        : ''
-                    }
-                    ${st.focus_clue || st.focusClue ? `<div style="font-size: 0.74rem; color: #475569; font-style: italic; line-height: 1.35; margin-bottom: 8px;">${st.focus_clue || st.focusClue}</div>` : ''}
-                  </div>
-                  <div style="margin-top: auto; padding-top: 6px; border-top: 1px dashed #cbd5e1; display: flex; justify-content: space-between; align-items: center;">
-                    <span style="font-size: 0.68rem; font-weight: 700; color: #64748b;">Workbook Left Page</span>
-                    <button type="button" onclick="
-                      const chunk = document.getElementById('para-${st.step}') || Array.from(document.querySelectorAll('.para-ref')).find(el => el.textContent.includes('${targetFirstPara}'))?.closest('.narrative-chunk') || Array.from(document.querySelectorAll('.para-ref')).find(el => el.textContent.includes('${targetFirstPara}'));
-                      if (chunk) {
-                        chunk.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        chunk.style.transition = 'all 0.4s ease';
-                        chunk.style.boxShadow = '0 0 0 4px #2563eb, 0 8px 24px rgba(37,99,235,0.25)';
-                        setTimeout(() => { chunk.style.boxShadow = ''; }, 2500);
-                      }
-                    " style="font-size: 0.68rem; font-weight: 700; background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; padding: 2px 7px; border-radius: 3px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
-                      <i class="fa-solid fa-arrow-down"></i> Jump to Text
+                <div class="cme-spine-card universal-spine-card" data-stage="${item.step}">
+                  ${
+                    !isLast
+                      ? `
+                  <div class="cme-domino-pipeline-node" title="${dominoTooltip}">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>`
+                      : ''
+                  }
+
+                  <!-- Dedicated Stage Top Bar: Stage Badge + Jump Pill -->
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; padding-bottom: 5px; border-bottom: 1px solid #f1f5f9;">
+                    <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; background: #0284c7; color: #ffffff; padding: 2px 7px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">
+                      Stage ${item.step}
+                    </span>
+                    <button type="button" class="spine-stage-jump-pill" onclick="event.stopPropagation(); window.jumpToNarrativeBlock(${item.step}, '${targetFirstPara}');" title="Jump to Stage ${item.step} text [${targetFirstPara}] in the lesson" style="background: #f0f9ff; border: 1px solid #bae6fd; color: #0284c7; font-family: monospace; font-size: 0.68rem; font-weight: 800; padding: 2px 7px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; transition: all 0.15s ease;">
+                      <span>Text [${targetFirstPara}]</span> <i class="fa-solid fa-arrow-down" style="font-size: 0.60rem;"></i>
                     </button>
                   </div>
+
+                  <!-- Date Row -->
+                  <div style="margin-bottom: 6px;">
+                    <span class="cme-spine-date-badge" style="display: inline-block; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 800; color: #0369a1; background: #e0f2fe; padding: 2px 8px; border-radius: 4px;" title="${item.date}">${displayDate}</span>
+                  </div>
+
+                  <!-- Historical Actor Pill -->
+                  ${
+                    item.actor
+                      ? `
+                  <div style="margin-bottom: 6px;">
+                    <span style="font-family: 'Inter', sans-serif; font-size: 0.66rem; font-weight: 700; color: #334155; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 2.5px 7px; border-radius: 4px; display: inline-flex; align-items: flex-start; gap: 5px; line-height: 1.25; max-width: 100%;" title="Historical Actor: ${item.actor}">
+                      <i class="fa-solid fa-users" style="color: #0284c7; font-size: 0.60rem; margin-top: 2px; flex-shrink: 0;"></i> <span>${item.actor}</span>
+                    </span>
+                  </div>`
+                      : ''
+                  }
+
+                  <!-- Milestone Title -->
+                  <h5 class="cme-spine-title" style="margin: 0 0 8px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 0.94rem; font-weight: 800; color: #0f172a; line-height: 1.30;">
+                    ${item.title}
+                  </h5>
+
+                  <!-- Interactive Enquiry Question Card (Click to Reveal Turning Point & Consequence) -->
+                  ${
+                    cleanQ
+                      ? `
+                  <button type="button" class="spine-question-toggle-card" onclick="event.stopPropagation(); window.toggleCardSpineStage(this);" aria-expanded="false" style="width: 100%; text-align: left; background: #f8fafc; border: 1.2px solid #cbd5e1; border-left: 4px solid #0284c7; padding: 8px 10px; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; margin-bottom: 8px; display: flex; flex-direction: column; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.03);" title="Click to test your memory and reveal the turning point &amp; consequence">
+                    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                      <span style="display: inline-flex; align-items: center; gap: 5px; font-family: 'Inter', sans-serif; font-size: 0.64rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.5px;">
+                        <i class="fa-solid fa-circle-question" style="font-size: 0.68rem;"></i>
+                        <span>Workbook Enquiry</span>
+                      </span>
+                      <span class="stage-toggle-indicator" style="font-size: 0.66rem; font-weight: 800; color: #0284c7; background: #e0f2fe; padding: 1.5px 6px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; transition: all 0.15s ease;">
+                        <span class="stage-toggle-label">Reveal</span> <i class="fa-solid fa-chevron-down stage-chevron" style="font-size: 0.58rem; transition: transform 0.2s ease;"></i>
+                      </span>
+                    </div>
+                    <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.83rem; color: #0f284e; line-height: 1.40; font-style: italic;">
+                      "${cleanQ}"
+                    </div>
+                  </button>`
+                      : ''
+                  }
+
+                  <!-- Collapsible Stage Answer Body (Action, Motive & Consequence) -->
+                  <div class="spine-stage-body" style="display: none; animation: spineSlideDown 0.22s ease-out; flex-direction: column; gap: 8px; margin-top: auto;">
+                    <!-- Beat 1: The Turning Point / Catalyst -->
+                    <div class="spine-catalyst-block" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 8px 10px;">
+                      <div style="font-family: 'Inter', sans-serif; font-size: 0.63rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; display: flex; align-items: center; gap: 4px;">
+                        <i class="fa-solid fa-play" style="color: #0284c7; font-size: 0.55rem;"></i> The Turning Point
+                      </div>
+                      <div style="font-size: 0.81rem; color: #334155; line-height: 1.46;">
+                        ${item.catalyst}
+                      </div>
+                    </div>
+
+                    <!-- Beat 2: Consequence & Significance (Amber Dual-Coding Identity) -->
+                    ${
+                      hasConsequence
+                        ? `
+                    <div class="spine-consequence-block" style="background: #fffdf5; border: 1px solid #fef3c7; border-left: 3.5px solid #d97706; border-radius: 6px; padding: 8px 10px;">
+                      <div style="font-family: 'Inter', sans-serif; font-size: 0.63rem; font-weight: 800; color: #b45309; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; display: flex; align-items: center; gap: 4px;">
+                        <i class="fa-solid fa-bolt" style="color: #d97706; font-size: 0.60rem;"></i> Consequence &amp; Significance
+                      </div>
+                      <div style="font-size: 0.81rem; color: #451a03; line-height: 1.45;">
+                        ${item.consequence}
+                      </div>
+                    </div>`
+                        : ''
+                    }
+                  </div>
                 </div>
-              `;
+                ${
+                  !isLast
+                    ? `
+                <div class="cme-domino-vertical-connector" title="${dominoTooltip}">
+                  <div class="cme-connector-line"></div>
+                  <div class="cme-connector-badge">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <span>Next Stage</span>
+                  </div>
+                  <div class="cme-connector-line"></div>
+                </div>`
+                    : ''
+                }
+                `;
               })
               .join('')}
           </div>
@@ -6380,18 +6257,7 @@ export function renderLesson(lesson) {
                <div style="${imgWrapperStyle}">
                  <img src="${getAssetUrl(block.image)}" alt="${block.image_alt || 'Narrative Image'}" style="max-width: 100%; max-height: 240px; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #cbd5e1; cursor: zoom-in; display: block; margin: 0 auto;" data-action="open-modal" data-src="${getAssetUrl(block.image)}">
                  ${block.caption || block.image_caption || block.image_alt ? `<div class="narrative-plate-caption" style="font-size: 0.82rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.45;">${block.source_letter ? `<strong>Source ${block.source_letter}:</strong> ` : ''}${block.caption || block.image_caption || block.image_alt}</div>` : ''}
-                  ${
-                    window.currentUnitId === 'cme_new' ||
-                    window.currentUnitId === 'gcse_middle_east_1945_1995'
-                      ? `
-                    <div style="margin-top: 6px; text-align: center;">
-                      <button class="cme-timeline-jump-badge" onclick="if(typeof window.switchView==='function'){window.switchView('timeline', 'cme_new');}else if(typeof window.navigateTo==='function'){window.navigateTo('timeline');}" style="background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.25); color: #1e3a8a; font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;" title="Jump to interactive chronological Living Timeline">
-                        <i class="fa-solid fa-clock-rotate-left"></i> Living Timeline Milestone &bull; View Chronology &rarr;
-                      </button>
-                    </div>
-                    `
-                      : ''
-                  }
+
                </div>
                ${contextHtml}
              </div>
@@ -6814,18 +6680,7 @@ export function renderLesson(lesson) {
                 </div>
                 ${examSpotlightBtn}
                 ${primaryProvenanceHtml}
-                ${
-                  window.currentUnitId === 'cme_new' ||
-                  window.currentUnitId === 'gcse_middle_east_1945_1995'
-                    ? `
-                  <div style="margin-top: 6px; text-align: center;">
-                    <button class="cme-timeline-jump-badge" onclick="if(typeof window.switchView==='function'){window.switchView('timeline', 'cme_new');}else if(typeof window.navigateTo==='function'){window.navigateTo('timeline');}" style="background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.25); color: #1e3a8a; font-size: 0.72rem; font-weight: 700; padding: 3px 9px; border-radius: 20px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease;" title="Jump to interactive chronological Living Timeline">
-                      <i class="fa-solid fa-clock-rotate-left"></i> Living Timeline Milestone &bull; View Chronology &rarr;
-                    </button>
-                  </div>
-                  `
-                    : ''
-                }
+
               </div>
             `;
           }

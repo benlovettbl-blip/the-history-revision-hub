@@ -1111,7 +1111,7 @@ const industrialisation_and_empire_data = {
               'In conclusion, Cort’s achievement was decisive because it combined chemical refinement with mechanical speed, securing British naval supremacy.',
             ],
             connective_bank: [
-              'To a large extent, it can be argued that...',
+              'One decisive reason was that...',
               'In particular, a decisive factor was...',
               'Furthermore, this created severe consequences because...',
               'On the other hand, an alternative perspective is that...',
@@ -2305,7 +2305,7 @@ const industrialisation_and_empire_data = {
               'A significant consequence was...',
               'For instance, this meant that...',
               'This directly led to...',
-              'Consequently, the overall outcome was...',
+              'As a direct result, ...',
             ],
             word_bank: [
               '1833 Factory Act',
@@ -3581,7 +3581,7 @@ const industrialisation_and_empire_data = {
               'A significant consequence was...',
               'For instance, this meant that...',
               'This directly led to...',
-              'Consequently, the overall outcome was...',
+              'As a direct result, ...',
             ],
             word_bank: [
               'Great Stink (1858)',
@@ -6238,7 +6238,7 @@ const industrialisation_and_empire_data = {
               'Conclusion & Historical Verdict: Synthesize both arguments. Conclude whether fear was the immediate trigger while aristocratic self-preservation determined the actual conservative architecture of the Act.',
             ],
             sentence_starters: [
-              'To a large extent, it can be argued that the 1832 Great Reform Act was conceded primarily because the ruling aristocracy feared an armed revolution...',
+              'One decisive reason was that the 1832 Great Reform Act was conceded primarily because the ruling aristocracy feared an armed revolution...',
               'In particular, when the Tory House of Lords rejected the Reform Bill in October 1831, widespread violence erupted across Britain...',
               'In Bristol, rioters sacked the Mansion House, burned the Bishop’s Palace, and destroyed three prisons...',
               'Furthermore, during the "Days of May" in 1832, radical leader Francis Place weaponized economic panic with the slogan "Stop the Duke, Go for Gold!", triggering...',
@@ -6249,7 +6249,7 @@ const industrialisation_and_empire_data = {
               'In conclusion, the decisive reason why the Act passed in 1832 was that imminent threat of revolution forced the Lords to yield, but the resulting legislation was designed to protect aristocratic power rather than advance democratic justice.',
             ],
             connective_bank: [
-              'To a large extent, it can be argued that...',
+              'One decisive reason was that...',
               'In particular, a decisive factor was...',
               'Furthermore, this created severe consequences because...',
               'On the other hand, an alternative perspective is that...',

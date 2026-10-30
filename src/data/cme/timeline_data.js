@@ -674,9 +674,9 @@ export const CME_ERAS = [
         date: '16–18 September 1982',
         title: 'The Sabra and Shatila Massacre & The Kahan Commission',
         specTag: 'Moral Crisis & Israeli Domestic Turmoil',
-        image: '/units/cme_new/assets/ariel_sharon.webp',
+        image: '/units/cme_new/assets/cme_eitan_yaron_beirut_1982.jpg',
         caption:
-          'Ariel Sharon was forced to resign following severe censure by Israel’s Kahan Commission.',
+          'IDF Chief of Staff Rafael Eitan conferring with Beirut commander Amos Yaron during the 1982 campaign; both senior commanders were formally censured alongside Sharon by the Kahan Commission.',
         trigger:
           'Assassination of newly elected Lebanese Christian President Bachir Gemayel by Syrian-backed agents.',
         action:
@@ -1251,9 +1251,9 @@ export const CME_TIMELINE_MILESTONES = [
     date: '16–18 September 1982',
     title: 'The Sabra and Shatila Massacre & The Kahan Commission',
     specTag: 'Moral Crisis & Israeli Domestic Turmoil',
-    image: '/units/cme_new/assets/ariel_sharon.webp',
+    image: '/units/cme_new/assets/cme_eitan_yaron_beirut_1982.jpg',
     caption:
-      'Ariel Sharon was forced to resign following severe censure by Israel’s Kahan Commission.',
+      'IDF Chief of Staff Rafael Eitan conferring with Beirut commander Amos Yaron during the 1982 campaign; both senior commanders were formally censured alongside Sharon by the Kahan Commission.',
     trigger:
       'Assassination of newly elected Lebanese Christian President Bachir Gemayel by Syrian-backed agents.',
     action:

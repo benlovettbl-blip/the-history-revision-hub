@@ -4516,7 +4516,7 @@
                     }
                   ],
                   "sentence_starters": [
-                    "To a large extent, it can be argued that...",
+                    "One decisive reason was that...",
                     "On the one hand, the discovery of gold transformed Australia because...",
                     "In particular, at the Eureka Stockade in 1854...",
                     "On the other hand, an alternative view emphasizes the earlier pastoral expansion, such as...",
@@ -4590,7 +4590,7 @@
                   "First Nations survival"
                 ]
               },
-              "model_answer": "To a large extent, it can be argued that the discovery of gold in 1851 and the Eureka Stockade in 1854 were the most transformative turning points in 19th-century Australian history [5.1, 5.2]. Prior to gold, Australia was an authoritarian, convict-dominated pastoral society ruled by wealthy British governors and squatter elites. When over 300,000 international diggers flooded the Victorian goldfields, they fiercely resented paying an exorbitant 30-shilling monthly licence fee without political representation. On 3 December 1854, diggers led by Peter Lalor swore an oath under the Southern Cross flag at the Eureka Stockade and clashed with British soldiers. Although the rebellion was brutally crushed, the political fallout was revolutionary: public outrage forced the colonial government to abolish the licence, introduce the Miner’s Right, grant universal male suffrage, and institute the world-first secret ballot (the \"Australian Ballot\"), laying the foundation for modern Australian democracy.\n\nDemographically and economically, the gold rush reshaped the nation’s global standing [5.3]. Australia’s non-Indigenous population trebled from 430,000 in 1851 to 1.1 million in 1860. Massive wealth poured into Melbourne, transforming it into \"Marvellous Melbourne\"—one of the richest cities in the world with grand Victorian architecture, universities, and railway infrastructure.\n\nOn the other hand, historians argue that the expansion of the pastoral wool industry and the Frontier Wars were far more consequential in shaping Australia’s territorial reality [5.4]. Millions of sheep introduced by squatter pastoralists consumed native grasslands, driving First Nations peoples off millions of acres of ancestral land. Massacres like Myall Creek (1838) and the Tasmanian Black War permanently cemented Indigenous dispossession under terra nullius—a reality that the gold rushes intensified rather than resolved.\n\nIn conclusion, while the pastoral boom established the economy, the discovery of gold and Eureka were the definitive turning points because they dismantled autocratic rule and created Australia’s democratic, multi-ethnic society.",
+              "model_answer": "One decisive reason was that the discovery of gold in 1851 and the Eureka Stockade in 1854 were the most transformative turning points in 19th-century Australian history [5.1, 5.2]. Prior to gold, Australia was an authoritarian, convict-dominated pastoral society ruled by wealthy British governors and squatter elites. When over 300,000 international diggers flooded the Victorian goldfields, they fiercely resented paying an exorbitant 30-shilling monthly licence fee without political representation. On 3 December 1854, diggers led by Peter Lalor swore an oath under the Southern Cross flag at the Eureka Stockade and clashed with British soldiers. Although the rebellion was brutally crushed, the political fallout was revolutionary: public outrage forced the colonial government to abolish the licence, introduce the Miner’s Right, grant universal male suffrage, and institute the world-first secret ballot (the \"Australian Ballot\"), laying the foundation for modern Australian democracy.\n\nDemographically and economically, the gold rush reshaped the nation’s global standing [5.3]. Australia’s non-Indigenous population trebled from 430,000 in 1851 to 1.1 million in 1860. Massive wealth poured into Melbourne, transforming it into \"Marvellous Melbourne\"—one of the richest cities in the world with grand Victorian architecture, universities, and railway infrastructure.\n\nOn the other hand, historians argue that the expansion of the pastoral wool industry and the Frontier Wars were far more consequential in shaping Australia’s territorial reality [5.4]. Millions of sheep introduced by squatter pastoralists consumed native grasslands, driving First Nations peoples off millions of acres of ancestral land. Massacres like Myall Creek (1838) and the Tasmanian Black War permanently cemented Indigenous dispossession under terra nullius—a reality that the gold rushes intensified rather than resolved.\n\nIn conclusion, while the pastoral boom established the economy, the discovery of gold and Eureka were the definitive turning points because they dismantled autocratic rule and created Australia’s democratic, multi-ethnic society.",
               "topic": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]"
             }
           ]
@@ -5088,10 +5088,10 @@
               "hinge_question": "How did Jerusalem's shared sacred geography make peaceful partition virtually impossible under British colonial administration?",
               "source_context": "Photographic record of Jerusalem under the British Mandate. Britain governed Palestine under a League of Nations Class A Mandate from 1923, tasked with the incompatible obligations of preparing the local Arab majority for self-rule while facilitating Jewish immigration. **Hinge Question:** How did Jerusalem's shared sacred geography make peaceful partition virtually impossible under British colonial administration?",
               "context": "Photographic record of Jerusalem under the British Mandate.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source D for understanding the deep religious and geopolitical tensions facing the British Mandate authorities in Palestine?",
-              "model_answer": "While Source D accurately depicts the monumental religious landscape of Jerusalem that made compromise impossible, as an official topographical record it masks the volatile intercommunal civil violence and economic boycotts brewing on the ground.",
+              "question_badge": "Historical Utility",
+              "question_type": "Historical Utility",
+              "enquiry_question": "How useful is Source D for an enquiry into religious tensions in Jerusalem under the British Mandate?",
+              "model_answer": "Source D is useful because it shows the close proximity of holy sites like the Western Wall and the Dome of the Rock, explaining why British authorities struggled to manage competing religious claims in Jerusalem.",
               "provenance_clues": {
                 "author": "American Colony Photo Department, professional Jerusalem documentary photographers.",
                 "audience": "International tourists, scholars, and British colonial administrators.",
@@ -5118,8 +5118,8 @@
               "context": "Portrait of Theodor Herzl, who formulated political Zionism in response to European anti-Semitism.",
               "question_badge": "Source Inference",
               "question_type": "Source Inference",
-              "enquiry_question": "What can you infer from Source E about the ideological foundations of modern political Zionism at the turn of the twentieth century?",
-              "model_answer": "Source E illustrates that political Zionism was framed as an urgent, modern national liberation movement driven by the realization that European anti-Semitism was structural and incurable through civic assimilation alone.",
+              "enquiry_question": "What can you infer from Source E about the main goal of modern political Zionism in the 1890s?",
+              "model_answer": "We can infer that Theodor Herzl believed European anti-Semitism could not be solved by assimilation, arguing that Jewish people needed their own sovereign homeland to be safe from persecution.",
               "provenance_clues": {
                 "author": "Official portraitist of the First Zionist Congress.",
                 "audience": "Delegates to the Basel Congress and European Jewish communities.",
@@ -5396,10 +5396,10 @@
                   "hinge_question": "How did Jerusalem's shared sacred geography make peaceful partition virtually impossible under British colonial administration?",
                   "source_context": "Photographic record of Jerusalem under the British Mandate. Britain governed Palestine under a League of Nations Class A Mandate from 1923, tasked with the incompatible obligations of preparing the local Arab majority for self-rule while facilitating Jewish immigration. **Hinge Question:** How did Jerusalem's shared sacred geography make peaceful partition virtually impossible under British colonial administration?",
                   "context": "Photographic record of Jerusalem under the British Mandate.",
-                  "question_badge": "Reliability & Provenance",
-                  "question_type": "Reliability & Provenance",
-                  "enquiry_question": "How reliable is Source D for understanding the deep religious and geopolitical tensions facing the British Mandate authorities in Palestine?",
-                  "model_answer": "While Source D accurately depicts the monumental religious landscape of Jerusalem that made compromise impossible, as an official topographical record it masks the volatile intercommunal civil violence and economic boycotts brewing on the ground.",
+                  "question_badge": "Historical Utility",
+                  "question_type": "Historical Utility",
+                  "enquiry_question": "How useful is Source D for an enquiry into religious tensions in Jerusalem under the British Mandate?",
+                  "model_answer": "Source D is useful because it shows the close proximity of holy sites like the Western Wall and the Dome of the Rock, explaining why British authorities struggled to manage competing religious claims in Jerusalem.",
                   "provenance_clues": {
                     "author": "American Colony Photo Department, professional Jerusalem documentary photographers.",
                     "audience": "International tourists, scholars, and British colonial administrators.",
@@ -5443,8 +5443,8 @@
                   "context": "Portrait of Theodor Herzl, who formulated political Zionism in response to European anti-Semitism.",
                   "question_badge": "Source Inference",
                   "question_type": "Source Inference",
-                  "enquiry_question": "What can you infer from Source E about the ideological foundations of modern political Zionism at the turn of the twentieth century?",
-                  "model_answer": "Source E illustrates that political Zionism was framed as an urgent, modern national liberation movement driven by the realization that European anti-Semitism was structural and incurable through civic assimilation alone.",
+                  "enquiry_question": "What can you infer from Source E about the main goal of modern political Zionism in the 1890s?",
+                  "model_answer": "We can infer that Theodor Herzl believed European anti-Semitism could not be solved by assimilation, arguing that Jewish people needed their own sovereign homeland to be safe from persecution.",
                   "provenance_clues": {
                     "author": "Official portraitist of the First Zionist Congress.",
                     "audience": "Delegates to the Basel Congress and European Jewish communities.",
@@ -6239,8 +6239,8 @@
               "context": "David Ben-Gurion read the Israeli Declaration of Independence on 14 May 1948.",
               "question_badge": "Author’s Purpose",
               "question_type": "Author’s Purpose",
-              "enquiry_question": "What was Ben-Gurion's central purpose in staging the public reading of the Declaration beneath Herzl's portrait in Source B?",
-              "model_answer": "Ben-Gurion deliberately staged the ceremony beneath Theodor Herzl's image to visually establish historical continuity, affirming that the new state was the legitimate culmination of fifty years of political Zionist struggle and divine national redemption.",
+              "enquiry_question": "What was Ben-Gurion's primary purpose in staging the reading of the Declaration beneath Theodor Herzl's portrait?",
+              "model_answer": "Ben-Gurion held the ceremony beneath Herzl's portrait to show that the new State of Israel was the official fulfilment of fifty years of political Zionist campaigning.",
               "provenance_clues": {
                 "author": "Rudi Weissenstein, accredited official photographer for the Jewish Agency.",
                 "audience": "The global Jewish diaspora, sovereign foreign governments, and the Israeli public.",
@@ -6617,8 +6617,8 @@
                   "context": "David Ben-Gurion read the Israeli Declaration of Independence on 14 May 1948.",
                   "question_badge": "Author’s Purpose",
                   "question_type": "Author’s Purpose",
-                  "enquiry_question": "What was Ben-Gurion's central purpose in staging the public reading of the Declaration beneath Herzl's portrait in Source B?",
-                  "model_answer": "Ben-Gurion deliberately staged the ceremony beneath Theodor Herzl's image to visually establish historical continuity, affirming that the new state was the legitimate culmination of fifty years of political Zionist struggle and divine national redemption.",
+                  "enquiry_question": "What was Ben-Gurion's primary purpose in staging the reading of the Declaration beneath Theodor Herzl's portrait?",
+                  "model_answer": "Ben-Gurion held the ceremony beneath Herzl's portrait to show that the new State of Israel was the official fulfilment of fifty years of political Zionist campaigning.",
                   "provenance_clues": {
                     "author": "Rudi Weissenstein, accredited official photographer for the Jewish Agency.",
                     "audience": "The global Jewish diaspora, sovereign foreign governments, and the Israeli public.",
@@ -7700,10 +7700,10 @@
                   "hinge_question": "Why did the UN reject the federal single-state model in favor of full partition in November 1947?",
                   "source_context": "In 1947, the UN considered two solutions: a majority plan proposing two independent states joined by economic union, and a minority plan proposing a single federal state with Jewish and Arab internal cantons. The federal model was rejected by both sides as unworkable given the intense nationalist animosity. **Hinge Question:** Why did the UN reject the federal single-state model in favor of full partition in November 1947?",
                   "context": "In 1947, the UN considered two solutions: full partition versus a single federal state.",
-                  "question_badge": "Reliability & Provenance",
-                  "question_type": "Reliability & Provenance",
-                  "enquiry_question": "How reliable is Source A for understanding the international diplomatic debate surrounding Palestine's constitutional future in 1947?",
-                  "model_answer": "Source A is extremely reliable as an official United Nations legal record showing the actual legislative alternatives debated by member states; it demonstrates that partition was chosen not because it was ideal, but because shared binational governance was judged completely unattainable.",
+                  "question_badge": "Historical Utility",
+                  "question_type": "Historical Utility",
+                  "enquiry_question": "How useful is Source A for an enquiry into the UN's decision to partition Palestine in 1947?",
+                  "model_answer": "Source A is useful because it shows that the UN officially considered both partition and a shared federal state, concluding that partition was the only realistic option as both communities refused to share power.",
                   "provenance_clues": {
                     "author": "UN Ad Hoc Secretariat cartographic drafting division.",
                     "audience": "UN General Assembly delegates and diplomatic legal advisors.",
@@ -7786,10 +7786,10 @@
                   "hinge_question": "Why did the 1949 armistice agreements fail to create permanent, recognized international borders?",
                   "source_context": "Following nineteen months of warfare, bilateral armistice agreements were signed in Rhodes between Israel and Egypt, Lebanon, Jordan, and Syria. The resulting Green Line granted Israel 22% more territory than the UN partition plan, while no independent Palestinian state was established. **Hinge Question:** Why did the 1949 armistice agreements fail to create permanent, recognized international borders?",
                   "context": "Bilateral armistice agreements were signed in Rhodes in 1949, establishing the Green Line.",
-                  "question_badge": "Reliability & Provenance",
-                  "question_type": "Reliability & Provenance",
-                  "enquiry_question": "How reliable is Source C for demonstrating the geopolitical outcome of the 1948–49 Arab-Israeli War?",
-                  "model_answer": "Source C is highly reliable because it records the precise military armistice lines negotiated under UN supervision; however, it reflects a temporary cessation of hostilities rather than a de jure peace treaty recognized by neighboring Arab states.",
+                  "question_badge": "Historical Utility",
+                  "question_type": "Historical Utility",
+                  "enquiry_question": "How useful is Source C for an enquiry into the outcome of the 1948–49 Arab-Israeli War?",
+                  "model_answer": "Source C is useful because it records the 1949 armistice lines (the Green Line), showing that Israel captured 78% of Mandatory Palestine—far more land than allocated under the 1947 UN plan.",
                   "provenance_clues": {
                     "author": "UNTSO military surveyors and diplomatic negotiators.",
                     "audience": "Signatory states (Israel, Egypt, Jordan, Syria, Lebanon) and UN Security Council.",
@@ -7829,8 +7829,8 @@
                   "context": "Between May 1948 and 1951, Israel doubled its Jewish population by absorbing nearly 700,000 immigrants.",
                   "question_badge": "Cross-Referencing",
                   "question_type": "Cross-Referencing",
-                  "enquiry_question": "How does Source D cross-reference with the Palestinian refugee experience shown in Source D to explain why the conflict became intractable?",
-                  "model_answer": "Source D demonstrates that as hundreds of thousands of Jewish refugees were resettled into vacant homes and lands across Israel, the physical reality on the ground was irrevocably altered, rendering the physical return of Palestinian refugees in Source D politically and demographically impossible for Israel.",
+                  "enquiry_question": "How does Source D support evidence that the Palestinian refugee crisis became impossible to resolve after 1949?",
+                  "model_answer": "Source D shows that hundreds of thousands of new Jewish immigrants were resettled into empty homes and villages across Israel, making the physical return of Palestinian refugees politically and practically impossible for Israel.",
                   "provenance_clues": {
                     "author": "Official photographer for the Ministry of Immigrant Absorption.",
                     "audience": "Israeli citizenry and the international Jewish diaspora fundraising campaigns.",
@@ -8281,10 +8281,10 @@
               "hinge_question": "Why did the UN reject the federal single-state model in favor of full partition in November 1947?",
               "source_context": "In 1947, the UN considered two solutions: a majority plan proposing two independent states joined by economic union, and a minority plan proposing a single federal state with Jewish and Arab internal cantons. The federal model was rejected by both sides as unworkable given the intense nationalist animosity. **Hinge Question:** Why did the UN reject the federal single-state model in favor of full partition in November 1947?",
               "context": "In 1947, the UN considered two solutions: full partition versus a single federal state.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source A for understanding the international diplomatic debate surrounding Palestine's constitutional future in 1947?",
-              "model_answer": "Source A is extremely reliable as an official United Nations legal record showing the actual legislative alternatives debated by member states; it demonstrates that partition was chosen not because it was ideal, but because shared binational governance was judged completely unattainable.",
+              "question_badge": "Historical Utility",
+              "question_type": "Historical Utility",
+              "enquiry_question": "How useful is Source A for an enquiry into the UN's decision to partition Palestine in 1947?",
+              "model_answer": "Source A is useful because it shows that the UN officially considered both partition and a shared federal state, concluding that partition was the only realistic option as both communities refused to share power.",
               "provenance_clues": {
                 "author": "UN Ad Hoc Secretariat cartographic drafting division.",
                 "audience": "UN General Assembly delegates and diplomatic legal advisors.",
@@ -8337,10 +8337,10 @@
               "hinge_question": "Why did the 1949 armistice agreements fail to create permanent, recognized international borders?",
               "source_context": "Following nineteen months of warfare, bilateral armistice agreements were signed in Rhodes between Israel and Egypt, Lebanon, Jordan, and Syria. The resulting Green Line granted Israel 22% more territory than the UN partition plan, while no independent Palestinian state was established. **Hinge Question:** Why did the 1949 armistice agreements fail to create permanent, recognized international borders?",
               "context": "Bilateral armistice agreements were signed in Rhodes in 1949, establishing the Green Line.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source C for demonstrating the geopolitical outcome of the 1948–49 Arab-Israeli War?",
-              "model_answer": "Source C is highly reliable because it records the precise military armistice lines negotiated under UN supervision; however, it reflects a temporary cessation of hostilities rather than a de jure peace treaty recognized by neighboring Arab states.",
+              "question_badge": "Historical Utility",
+              "question_type": "Historical Utility",
+              "enquiry_question": "How useful is Source C for an enquiry into the outcome of the 1948–49 Arab-Israeli War?",
+              "model_answer": "Source C is useful because it records the 1949 armistice lines (the Green Line), showing that Israel captured 78% of Mandatory Palestine—far more land than allocated under the 1947 UN plan.",
               "provenance_clues": {
                 "author": "UNTSO military surveyors and diplomatic negotiators.",
                 "audience": "Signatory states (Israel, Egypt, Jordan, Syria, Lebanon) and UN Security Council.",
@@ -8367,8 +8367,8 @@
               "context": "Between May 1948 and 1951, Israel doubled its Jewish population by absorbing nearly 700,000 immigrants.",
               "question_badge": "Cross-Referencing",
               "question_type": "Cross-Referencing",
-              "enquiry_question": "How does Source D cross-reference with the Palestinian refugee experience shown in Source D to explain why the conflict became intractable?",
-              "model_answer": "Source D demonstrates that as hundreds of thousands of Jewish refugees were resettled into vacant homes and lands across Israel, the physical reality on the ground was irrevocably altered, rendering the physical return of Palestinian refugees in Source D politically and demographically impossible for Israel.",
+              "enquiry_question": "How does Source D support evidence that the Palestinian refugee crisis became impossible to resolve after 1949?",
+              "model_answer": "Source D shows that hundreds of thousands of new Jewish immigrants were resettled into empty homes and villages across Israel, making the physical return of Palestinian refugees politically and practically impossible for Israel.",
               "provenance_clues": {
                 "author": "Official photographer for the Ministry of Immigrant Absorption.",
                 "audience": "Israeli citizenry and the international Jewish diaspora fundraising campaigns.",
@@ -9362,8 +9362,8 @@
                   "context": "On 26 July 1956, Nasser announced the nationalization of the Suez Canal Company to fund the Aswan High Dam.",
                   "question_badge": "Historical Utility",
                   "question_type": "Historical Utility",
-                  "enquiry_question": "How useful is Source C for an enquiry into Egyptian domestic attitudes toward the Suez Crisis in 1956?",
-                  "model_answer": "Source C is immensely useful because its triumphalist tone and celebratory headlines capture the immense nationalist pride felt by Egyptians, who viewed taking control of the canal as reclaiming their sovereign wealth from decades of imperial exploitation.",
+                  "enquiry_question": "How useful is Source C for an enquiry into Egyptian public attitudes towards the Suez Crisis in 1956?",
+                  "model_answer": "Source C is useful because its celebratory headlines show the immense nationalist pride felt by ordinary Egyptians, who viewed taking over the canal as reclaiming their national wealth from foreign imperial control.",
                   "provenance_clues": {
                     "author": "Egyptian editorial staff of Al-Ahram under state censorship.",
                     "audience": "The Egyptian public and pan-Arab readers across the Middle East.",
@@ -9446,10 +9446,10 @@
                   "hinge_question": "Why did the military success of the Anglo-French assault turn into a catastrophic political defeat?",
                   "source_context": "Under the secret Sèvres Agreement signed with Israel and France, Israeli forces invaded Sinai on 29 October, providing Britain and France the pretext to issue an ultimatum and land troops to 'separate the combatants'. However, US President Eisenhower threatened financial sanctions against sterling, forcing a humiliating British ceasefire within days. **Hinge Question:** Why did the military success of the Anglo-French assault turn into a catastrophic political defeat?",
                   "context": "British forces landed in Port Said under Operation Musketeer before being forced into an abrupt withdrawal by US pressure.",
-                  "question_badge": "Reliability & Provenance",
-                  "question_type": "Reliability & Provenance",
-                  "enquiry_question": "How reliable is Source E for demonstrating the nature of the British military operation in Egypt in 1956?",
-                  "model_answer": "Source E is highly reliable as an official photographic record of British mechanized firepower deployed in Egyptian urban centers; however, it obscures the reality that Britain was diplomatically isolated and economically powerless once Washington refused to back the pound.",
+                  "question_badge": "Historical Utility",
+                  "question_type": "Historical Utility",
+                  "enquiry_question": "How useful is Source E for an enquiry into British military actions during the Suez Crisis?",
+                  "model_answer": "Source E is useful because it shows British tanks occupying Port Said, providing clear visual evidence that Britain used heavy military force to seize the canal zone despite international opposition.",
                   "provenance_clues": {
                     "author": "British Army Official Film and Photographic Unit.",
                     "audience": "British War Office, Ministry of Defence, and domestic newsreels.",
@@ -9538,8 +9538,8 @@
               "context": "On 26 July 1956, Nasser announced the nationalization of the Suez Canal Company to fund the Aswan High Dam.",
               "question_badge": "Historical Utility",
               "question_type": "Historical Utility",
-              "enquiry_question": "How useful is Source C for an enquiry into Egyptian domestic attitudes toward the Suez Crisis in 1956?",
-              "model_answer": "Source C is immensely useful because its triumphalist tone and celebratory headlines capture the immense nationalist pride felt by Egyptians, who viewed taking control of the canal as reclaiming their sovereign wealth from decades of imperial exploitation.",
+              "enquiry_question": "How useful is Source C for an enquiry into Egyptian public attitudes towards the Suez Crisis in 1956?",
+              "model_answer": "Source C is useful because its celebratory headlines show the immense nationalist pride felt by ordinary Egyptians, who viewed taking over the canal as reclaiming their national wealth from foreign imperial control.",
               "provenance_clues": {
                 "author": "Egyptian editorial staff of Al-Ahram under state censorship.",
                 "audience": "The Egyptian public and pan-Arab readers across the Middle East.",
@@ -9592,10 +9592,10 @@
               "hinge_question": "Why did the military success of the Anglo-French assault turn into a catastrophic political defeat?",
               "source_context": "Under the secret Sèvres Agreement signed with Israel and France, Israeli forces invaded Sinai on 29 October, providing Britain and France the pretext to issue an ultimatum and land troops to 'separate the combatants'. However, US President Eisenhower threatened financial sanctions against sterling, forcing a humiliating British ceasefire within days. **Hinge Question:** Why did the military success of the Anglo-French assault turn into a catastrophic political defeat?",
               "context": "British forces landed in Port Said under Operation Musketeer before being forced into an abrupt withdrawal by US pressure.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source E for demonstrating the nature of the British military operation in Egypt in 1956?",
-              "model_answer": "Source E is highly reliable as an official photographic record of British mechanized firepower deployed in Egyptian urban centers; however, it obscures the reality that Britain was diplomatically isolated and economically powerless once Washington refused to back the pound.",
+              "question_badge": "Historical Utility",
+              "question_type": "Historical Utility",
+              "enquiry_question": "How useful is Source E for an enquiry into British military actions during the Suez Crisis?",
+              "model_answer": "Source E is useful because it shows British tanks occupying Port Said, providing clear visual evidence that Britain used heavy military force to seize the canal zone despite international opposition.",
               "provenance_clues": {
                 "author": "British Army Official Film and Photographic Unit.",
                 "audience": "British War Office, Ministry of Defence, and domestic newsreels.",
@@ -10288,8 +10288,8 @@
                   "context": "In 1964, Israel completed the National Water Carrier, pumping water from Lake Kinneret to the Negev.",
                   "question_badge": "Historical Utility",
                   "question_type": "Historical Utility",
-                  "enquiry_question": "How useful is Source B for an inquiry into the root causes of the rising border tensions between Israel and its Arab neighbours between 1964 and 1967?",
-                  "model_answer": "Source B is exceptionally useful because it illustrates the hydraulic geography of the conflict, proving that competition over scarce water resources was just as decisive in triggering military confrontation as political ideology and border skirmishes.",
+                  "enquiry_question": "How useful is Source B for an enquiry into the causes of rising tension between Israel and its neighbours before 1967?",
+                  "model_answer": "Source B is useful because it maps the Jordan River water system, showing how Israeli irrigation projects and Syrian water diversion schemes turned water resources into a major flashpoint for war.",
                   "provenance_clues": {
                     "author": "Mekorot civil engineers and Israeli water planning authority.",
                     "audience": "Israeli government ministries, agricultural kibbutz planners, and international engineers.",
@@ -10374,8 +10374,8 @@
                   "context": "The Arab League initiated a diversion project on the Banyas and Hasbani rivers, which Israel destroyed via airstrikes.",
                   "question_badge": "Cross-Referencing",
                   "question_type": "Cross-Referencing",
-                  "enquiry_question": "How does Source D cross-reference with Source D to explain why border clashes escalated into air combat over Damascus by April 1967?",
-                  "model_answer": "Source D demonstrates that Arab states attempted to physically cut off the water supply feeding the carrier in Source D, prompting Israel to retaliate with decisive military strikes that directly destroyed Syrian engineering machinery and set the stage for open war.",
+                  "enquiry_question": "How does Source D help explain why border clashes between Israel and Syria escalated into open warfare by 1967?",
+                  "model_answer": "Source D shows that when Syrian forces shelled Israeli tractors in the demilitarized zone, Israel responded with fighter-bomber strikes, creating a cycle of retaliation that drew Egypt into the crisis.",
                   "provenance_clues": {
                     "author": "Arab League water resources and military advisory commission.",
                     "audience": "Heads of Arab states and military chiefs of staff.",
@@ -10417,10 +10417,10 @@
                   "hinge_question": "Why did Nasser's public speeches to troops in the Sinai leave Israeli military planners convinced that an Arab invasion was imminent?",
                   "source_context": "On 22 May 1967, Nasser visited Egyptian air force forward bases in the Sinai, declaring to cheering troops that the Gulf of Aqaba was closed to Israeli shipping: 'If Israel threatens war, we say welcome to war.' His public brinkmanship trapped him in an escalatory spiral that made war inevitable. **Hinge Question:** Why did Nasser's public speeches to troops in the Sinai leave Israeli military planners convinced that an Arab invasion was imminent?",
                   "context": "The United Arab Republic merged Egypt and Syria, but collapsed in 1961 amidst factional disputes.",
-                  "question_badge": "Reliability & Provenance",
-                  "question_type": "Reliability & Provenance",
-                  "enquiry_question": "How reliable is Source E for understanding the genuine political strength and unity of the Arab coalition against Israel prior to 1967?",
-                  "model_answer": "Source E accurately reflects the militant rhetoric Nasser deployed to rally Arab public opinion; however, privately Egyptian commanders knew their armed forces were bogged down in Yemen and unprepared for full-scale war with Israel.",
+                  "question_badge": "Source Inference",
+                  "question_type": "Source Inference",
+                  "enquiry_question": "What does Source E reveal about Egyptian rhetoric towards Israel in the weeks leading up to June 1967?",
+                  "model_answer": "Source E reveals that President Nasser used aggressive public speeches to rally Arab nations, convincing Israeli leaders that an Egyptian invasion was imminent and that a preemptive strike was necessary.",
                   "provenance_clues": {
                     "author": "Egyptian state propaganda photographers.",
                     "audience": "Egyptian citizens and pan-Arab supporters throughout the Middle East.",
@@ -10479,8 +10479,8 @@
               "context": "In 1964, Israel completed the National Water Carrier, pumping water from Lake Kinneret to the Negev.",
               "question_badge": "Historical Utility",
               "question_type": "Historical Utility",
-              "enquiry_question": "How useful is Source B for an inquiry into the root causes of the rising border tensions between Israel and its Arab neighbours between 1964 and 1967?",
-              "model_answer": "Source B is exceptionally useful because it illustrates the hydraulic geography of the conflict, proving that competition over scarce water resources was just as decisive in triggering military confrontation as political ideology and border skirmishes.",
+              "enquiry_question": "How useful is Source B for an enquiry into the causes of rising tension between Israel and its neighbours before 1967?",
+              "model_answer": "Source B is useful because it maps the Jordan River water system, showing how Israeli irrigation projects and Syrian water diversion schemes turned water resources into a major flashpoint for war.",
               "provenance_clues": {
                 "author": "Mekorot civil engineers and Israeli water planning authority.",
                 "audience": "Israeli government ministries, agricultural kibbutz planners, and international engineers.",
@@ -10535,8 +10535,8 @@
               "context": "The Arab League initiated a diversion project on the Banyas and Hasbani rivers, which Israel destroyed via airstrikes.",
               "question_badge": "Cross-Referencing",
               "question_type": "Cross-Referencing",
-              "enquiry_question": "How does Source D cross-reference with Source D to explain why border clashes escalated into air combat over Damascus by April 1967?",
-              "model_answer": "Source D demonstrates that Arab states attempted to physically cut off the water supply feeding the carrier in Source D, prompting Israel to retaliate with decisive military strikes that directly destroyed Syrian engineering machinery and set the stage for open war.",
+              "enquiry_question": "How does Source D help explain why border clashes between Israel and Syria escalated into open warfare by 1967?",
+              "model_answer": "Source D shows that when Syrian forces shelled Israeli tractors in the demilitarized zone, Israel responded with fighter-bomber strikes, creating a cycle of retaliation that drew Egypt into the crisis.",
               "provenance_clues": {
                 "author": "Arab League water resources and military advisory commission.",
                 "audience": "Heads of Arab states and military chiefs of staff.",
@@ -10561,10 +10561,10 @@
               "hinge_question": "Why did Nasser's public speeches to troops in the Sinai leave Israeli military planners convinced that an Arab invasion was imminent?",
               "source_context": "On 22 May 1967, Nasser visited Egyptian air force forward bases in the Sinai, declaring to cheering troops that the Gulf of Aqaba was closed to Israeli shipping: 'If Israel threatens war, we say welcome to war.' His public brinkmanship trapped him in an escalatory spiral that made war inevitable. **Hinge Question:** Why did Nasser's public speeches to troops in the Sinai leave Israeli military planners convinced that an Arab invasion was imminent?",
               "context": "The United Arab Republic merged Egypt and Syria, but collapsed in 1961 amidst factional disputes.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source E for understanding the genuine political strength and unity of the Arab coalition against Israel prior to 1967?",
-              "model_answer": "Source E accurately reflects the militant rhetoric Nasser deployed to rally Arab public opinion; however, privately Egyptian commanders knew their armed forces were bogged down in Yemen and unprepared for full-scale war with Israel.",
+              "question_badge": "Source Inference",
+              "question_type": "Source Inference",
+              "enquiry_question": "What does Source E reveal about Egyptian rhetoric towards Israel in the weeks leading up to June 1967?",
+              "model_answer": "Source E reveals that President Nasser used aggressive public speeches to rally Arab nations, convincing Israeli leaders that an Egyptian invasion was imminent and that a preemptive strike was necessary.",
               "provenance_clues": {
                 "author": "Egyptian state propaganda photographers.",
                 "audience": "Egyptian citizens and pan-Arab supporters throughout the Middle East.",
@@ -11258,10 +11258,10 @@
                   "hinge_question": "How did Moshe Dayan's famous declaration at the Wall ('We have returned to our holiest site, never to part from it again') bind future Israeli governments?",
                   "source_context": "Moshe Dayan famously declared: 'We have reunited Jerusalem, the divided capital of Israel. We have returned to the holiest of our holy places, never to part from it again.' This dramatic entrance sealed Israeli administrative control over East Jerusalem. **Hinge Question:** How did Moshe Dayan's famous declaration at the Wall ('We have returned to our holiest site, never to part from it again') bind future Israeli governments?",
                   "context": "Defense Minister Moshe Dayan, Chief of Staff Yitzhak Rabin, and Uzi Narkiss entered the Old City through Lions' Gate.",
-                  "question_badge": "Reliability & Provenance",
-                  "question_type": "Reliability & Provenance",
-                  "enquiry_question": "How reliable is Source A for demonstrating the political and military authority of Moshe Dayan during the Six-Day War?",
-                  "model_answer": "Source A is extremely reliable as an official document of the triumphant moment of entry; however, it was carefully composed to project Dayan as the indispensable military hero of the nation, overshadowing the meticulous planning of Prime Minister Eshkol and Chief of Staff Rabin.",
+                  "question_badge": "Source Inference",
+                  "question_type": "Source Inference",
+                  "enquiry_question": "What can you infer from Source A about how Moshe Dayan was presented to the Israeli public during the Six-Day War?",
+                  "model_answer": "We can infer that Dayan was deliberately portrayed as the bold military hero of the nation, shown walking into the captured Old City alongside Chief of Staff Yitzhak Rabin.",
                   "provenance_clues": {
                     "author": "Ilan Bruner, official photographer for the Ministry of Defense.",
                     "audience": "World press, Israeli public, and domestic political rivals.",
@@ -11301,8 +11301,8 @@
                   "context": "President Nasser announced the closure of the Straits of Tiran on 22 May 1967, cutting off Israel's oil route.",
                   "question_badge": "Historical Utility",
                   "question_type": "Historical Utility",
-                  "enquiry_question": "How useful is Source B for an enquiry into why Israel considered the Egyptian naval blockade a decisive catalyst for the Six-Day War?",
-                  "model_answer": "Source B is profoundly useful because it visually demonstrates Israel's absolute geographic vulnerability at the southern entrance to the Gulf of Aqaba, proving that the closure of the straits severed Israel's primary commercial lifeline to Asia and the Persian Gulf.",
+                  "enquiry_question": "How useful is Source B for an enquiry into why Israel considered Egypt's naval blockade an act of war in 1967?",
+                  "model_answer": "Source B is useful because it maps the narrow Straits of Tiran, showing that Nasser's closure completely cut off Israel's southern port of Eilat and its vital oil supply from Iran.",
                   "provenance_clues": {
                     "author": "Israeli military and diplomatic cartographers.",
                     "audience": "Western diplomats, UN Security Council members, and the international press.",
@@ -11346,8 +11346,8 @@
                   "context": "Rabbi Shlomo Goren blew the shofar and recited blessings upon reaching the Western Wall.",
                   "question_badge": "Author’s Purpose",
                   "question_type": "Author’s Purpose",
-                  "enquiry_question": "What was the purpose of Rabbi Goren's ceremonial actions at the Western Wall depicted in Source C?",
-                  "model_answer": "Rabbi Goren sought to sacralize the military triumph by interpreting the capture of Jerusalem not merely as a defensive victory over Arab armies, but as the fulfillment of biblical prophecy and divine redemption for the Jewish people.",
+                  "enquiry_question": "What was the purpose of Rabbi Goren blowing the shofar at the Western Wall in Source C?",
+                  "model_answer": "Rabbi Goren blew the shofar to show that capturing the Western Wall was viewed as a sacred, historic moment for the Jewish people, not just an ordinary military victory.",
                   "provenance_clues": {
                     "author": "Military press photographer accompanying IDF chaplaincy.",
                     "audience": "Israeli soldiers, religious public, and global Jewry.",
@@ -11387,8 +11387,8 @@
                   "context": "Field Marshal Amer ordered an immediate general retreat, resulting in the encirclement of Egyptian forces.",
                   "question_badge": "Cross-Referencing",
                   "question_type": "Cross-Referencing",
-                  "enquiry_question": "How does Source D cross-reference with the opening airstrikes of the pre-emptive air strike to explain the speed of Israel's victory in Sinai?",
-                  "model_answer": "Source D demonstrates that because the pre-emptive air strike had wiped out Egyptian air defenses on the first morning, retreating Egyptian armored columns shown trapped in the Mitla and Giddi passes had zero protection from relentless Israeli close-air support, turning retreat into an outright massacre.",
+                  "enquiry_question": "How does Source D help explain the speed of Israel's military victory in Sinai in 1967?",
+                  "model_answer": "Source D shows that because Israeli airstrikes destroyed Egypt's air force on day one, retreating Egyptian armored columns had zero air defense and were trapped in the mountain passes.",
                   "provenance_clues": {
                     "author": "Military staff historians and intelligence analysts.",
                     "audience": "General staff commanders and war college tacticians.",
@@ -11462,10 +11462,10 @@
               "hinge_question": "How did Moshe Dayan's famous declaration at the Wall ('We have returned to our holiest site, never to part from it again') bind future Israeli governments?",
               "source_context": "Moshe Dayan famously declared: 'We have reunited Jerusalem, the divided capital of Israel. We have returned to the holiest of our holy places, never to part from it again.' This dramatic entrance sealed Israeli administrative control over East Jerusalem. **Hinge Question:** How did Moshe Dayan's famous declaration at the Wall ('We have returned to our holiest site, never to part from it again') bind future Israeli governments?",
               "context": "Defense Minister Moshe Dayan, Chief of Staff Yitzhak Rabin, and Uzi Narkiss entered the Old City through Lions' Gate.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source A for demonstrating the political and military authority of Moshe Dayan during the Six-Day War?",
-              "model_answer": "Source A is extremely reliable as an official document of the triumphant moment of entry; however, it was carefully composed to project Dayan as the indispensable military hero of the nation, overshadowing the meticulous planning of Prime Minister Eshkol and Chief of Staff Rabin.",
+              "question_badge": "Source Inference",
+              "question_type": "Source Inference",
+              "enquiry_question": "What can you infer from Source A about how Moshe Dayan was presented to the Israeli public during the Six-Day War?",
+              "model_answer": "We can infer that Dayan was deliberately portrayed as the bold military hero of the nation, shown walking into the captured Old City alongside Chief of Staff Yitzhak Rabin.",
               "provenance_clues": {
                 "author": "Ilan Bruner, official photographer for the Ministry of Defense.",
                 "audience": "World press, Israeli public, and domestic political rivals.",
@@ -11492,8 +11492,8 @@
               "context": "President Nasser announced the closure of the Straits of Tiran on 22 May 1967, cutting off Israel's oil route.",
               "question_badge": "Historical Utility",
               "question_type": "Historical Utility",
-              "enquiry_question": "How useful is Source B for an enquiry into why Israel considered the Egyptian naval blockade a decisive catalyst for the Six-Day War?",
-              "model_answer": "Source B is profoundly useful because it visually demonstrates Israel's absolute geographic vulnerability at the southern entrance to the Gulf of Aqaba, proving that the closure of the straits severed Israel's primary commercial lifeline to Asia and the Persian Gulf.",
+              "enquiry_question": "How useful is Source B for an enquiry into why Israel considered Egypt's naval blockade an act of war in 1967?",
+              "model_answer": "Source B is useful because it maps the narrow Straits of Tiran, showing that Nasser's closure completely cut off Israel's southern port of Eilat and its vital oil supply from Iran.",
               "provenance_clues": {
                 "author": "Israeli military and diplomatic cartographers.",
                 "audience": "Western diplomats, UN Security Council members, and the international press.",
@@ -11520,8 +11520,8 @@
               "context": "Rabbi Shlomo Goren blew the shofar and recited blessings upon reaching the Western Wall.",
               "question_badge": "Author’s Purpose",
               "question_type": "Author’s Purpose",
-              "enquiry_question": "What was the purpose of Rabbi Goren's ceremonial actions at the Western Wall depicted in Source C?",
-              "model_answer": "Rabbi Goren sought to sacralize the military triumph by interpreting the capture of Jerusalem not merely as a defensive victory over Arab armies, but as the fulfillment of biblical prophecy and divine redemption for the Jewish people.",
+              "enquiry_question": "What was the purpose of Rabbi Goren blowing the shofar at the Western Wall in Source C?",
+              "model_answer": "Rabbi Goren blew the shofar to show that capturing the Western Wall was viewed as a sacred, historic moment for the Jewish people, not just an ordinary military victory.",
               "provenance_clues": {
                 "author": "Military press photographer accompanying IDF chaplaincy.",
                 "audience": "Israeli soldiers, religious public, and global Jewry.",
@@ -11548,8 +11548,8 @@
               "context": "Field Marshal Amer ordered an immediate general retreat, resulting in the encirclement of Egyptian forces.",
               "question_badge": "Cross-Referencing",
               "question_type": "Cross-Referencing",
-              "enquiry_question": "How does Source D cross-reference with the opening airstrikes of the pre-emptive air strike to explain the speed of Israel's victory in Sinai?",
-              "model_answer": "Source D demonstrates that because the pre-emptive air strike had wiped out Egyptian air defenses on the first morning, retreating Egyptian armored columns shown trapped in the Mitla and Giddi passes had zero protection from relentless Israeli close-air support, turning retreat into an outright massacre.",
+              "enquiry_question": "How does Source D help explain the speed of Israel's military victory in Sinai in 1967?",
+              "model_answer": "Source D shows that because Israeli airstrikes destroyed Egypt's air force on day one, retreating Egyptian armored columns had zero air defense and were trapped in the mountain passes.",
               "provenance_clues": {
                 "author": "Military staff historians and intelligence analysts.",
                 "audience": "General staff commanders and war college tacticians.",
@@ -12357,8 +12357,8 @@
                   "context": "UN Resolution 242 established the fundamental 'Land for Peace' formula.",
                   "question_badge": "Author’s Purpose",
                   "question_type": "Author’s Purpose",
-                  "enquiry_question": "What was Lord Caradon's primary diplomatic objective in crafting the ambiguous wording of Resolution 242 in Source C?",
-                  "model_answer": "Lord Caradon deliberately crafted constructive ambiguity so that both Israel (which refused to return to indefensible 1967 borders) and Arab states (demanding total evacuation of sovereign land) could sign without formally conceding their core demands.",
+                  "enquiry_question": "What was Lord Caradon's primary diplomatic objective in drafting UN Resolution 242 in Source C?",
+                  "model_answer": "Lord Caradon used flexible phrasing ('withdrawal from territories' rather than 'all territories') so that both Israel and Arab states could sign the resolution without abandoning their fundamental demands.",
                   "provenance_clues": {
                     "author": "Lord Caradon, British Permanent Representative to the United Nations.",
                     "audience": "UN Security Council members, Israeli Cabinet, and Arab foreign ministries.",
@@ -12411,9 +12411,9 @@
                   }
                 }
               ],
-              "image": "/units/cme_new/assets/map_lesson4.png",
-              "image_alt": "Map showing strategic early Jewish settlement outposts established in the Jordan Valley under the Allon Plan framework",
-              "caption": "Settlement Geography: The inception of ideological and strategic Israeli settlements across the West Bank and Golan Heights to secure permanent border buffers.",
+              "image": "/images/cme_bar_lev_line_fortifications_1970.jpg",
+              "image_alt": "Archival photograph of Israeli Defense Forces constructing and fortifying the Bar-Lev Line on the eastern bank of the Suez Canal in November 1970, showing massive sand ramparts, reinforced bunkers, and armored vehicles.",
+              "caption": "Fortifying the Suez Canal: IDF soldiers and armored units constructing fortified bunker complexes (maozim) into the massive 20-metre sand ramparts of the Bar-Lev Line along the eastern bank of the Suez Canal (November 1970).",
               "isReversed": true
             },
             {
@@ -12441,10 +12441,10 @@
                   "hinge_question": "Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?",
                   "source_context": "Yigal Allon argued that Israel needed the Jordan Valley as a permanent military barrier against eastern invasion, but warned that annexing the heavily populated hill country of Judea and Samaria would destroy Israel's Jewish demographic majority. **Hinge Question:** Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?",
                   "context": "Yigal Allon proposed establishing agricultural settlements along the Jordan Valley as a strategic security barrier.",
-                  "question_badge": "Reliability & Provenance",
-                  "question_type": "Reliability & Provenance",
-                  "enquiry_question": "How reliable is Source E for understanding the official settlement policy of Israeli governments following the 1967 war?",
-                  "model_answer": "Source E is highly reliable for demonstrating the security-first mindset of early Labor leaders, but it fails to anticipate how the later Likud government and religious movements like Gush Emunim would discard strategic security buffers in favor of ideological settlement across the entire biblical heartland.",
+                  "question_badge": "Historical Utility",
+                  "question_type": "Historical Utility",
+                  "enquiry_question": "How useful is Source E for an enquiry into Israel's early settlement plans after the 1967 war?",
+                  "model_answer": "Source E is useful because it shows that the Israeli government initially planned to build settlements along the Jordan Valley as a military defensive barrier, while leaving Arab population centres under Jordanian control.",
                   "provenance_clues": {
                     "author": "Yigal Allon, Deputy Prime Minister and former Palmach commander.",
                     "audience": "Prime Minister Levi Eshkol and the Ministerial Committee on Defense.",
@@ -12531,8 +12531,8 @@
               "context": "UN Resolution 242 established the fundamental 'Land for Peace' formula.",
               "question_badge": "Author’s Purpose",
               "question_type": "Author’s Purpose",
-              "enquiry_question": "What was Lord Caradon's primary diplomatic objective in crafting the ambiguous wording of Resolution 242 in Source C?",
-              "model_answer": "Lord Caradon deliberately crafted constructive ambiguity so that both Israel (which refused to return to indefensible 1967 borders) and Arab states (demanding total evacuation of sovereign land) could sign without formally conceding their core demands.",
+              "enquiry_question": "What was Lord Caradon's primary diplomatic objective in drafting UN Resolution 242 in Source C?",
+              "model_answer": "Lord Caradon used flexible phrasing ('withdrawal from territories' rather than 'all territories') so that both Israel and Arab states could sign the resolution without abandoning their fundamental demands.",
               "provenance_clues": {
                 "author": "Lord Caradon, British Permanent Representative to the United Nations.",
                 "audience": "UN Security Council members, Israeli Cabinet, and Arab foreign ministries.",
@@ -12585,10 +12585,10 @@
               "hinge_question": "Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?",
               "source_context": "Yigal Allon argued that Israel needed the Jordan Valley as a permanent military barrier against eastern invasion, but warned that annexing the heavily populated hill country of Judea and Samaria would destroy Israel's Jewish demographic majority. **Hinge Question:** Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?",
               "context": "Yigal Allon proposed establishing agricultural settlements along the Jordan Valley as a strategic security barrier.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source E for understanding the official settlement policy of Israeli governments following the 1967 war?",
-              "model_answer": "Source E is highly reliable for demonstrating the security-first mindset of early Labor leaders, but it fails to anticipate how the later Likud government and religious movements like Gush Emunim would discard strategic security buffers in favor of ideological settlement across the entire biblical heartland.",
+              "question_badge": "Historical Utility",
+              "question_type": "Historical Utility",
+              "enquiry_question": "How useful is Source E for an enquiry into Israel's early settlement plans after the 1967 war?",
+              "model_answer": "Source E is useful because it shows that the Israeli government initially planned to build settlements along the Jordan Valley as a military defensive barrier, while leaving Arab population centres under Jordanian control.",
               "provenance_clues": {
                 "author": "Yigal Allon, Deputy Prime Minister and former Palmach commander.",
                 "audience": "Prime Minister Levi Eshkol and the Ministerial Committee on Defense.",
@@ -13405,10 +13405,10 @@
                   "hinge_question": "How did the 1969 Cairo Agreement between Lebanon and the PLO compromise Lebanese state sovereignty in the south?",
                   "source_context": "Under the 1969 Cairo Agreement brokered by Nasser, the weak Lebanese government granted the PLO autonomy to manage refugee camps and conduct armed operations against Israel from southern Lebanon. This created 'Fatahland', sparking regular cross-border Israeli artillery strikes and commando raids against Lebanese villages. **Hinge Question:** How did the 1969 Cairo Agreement between Lebanon and the PLO compromise Lebanese state sovereignty in the south?",
                   "context": "The PLO established a major armed base in southern Lebanon, launching cross-border attacks into northern Israel.",
-                  "question_badge": "Reliability & Provenance",
-                  "question_type": "Reliability & Provenance",
-                  "enquiry_question": "How reliable is Source D for demonstrating the military threat posed by the PLO along Israel's northern frontier in the early 1970s?",
-                  "model_answer": "Source D is highly reliable regarding IDF intelligence assessments of rocket launch corridors; however, because it was produced to justify Israeli cross-border incursions into Lebanon, it emphasizes guerrilla infrastructure while minimizing the heavy collateral casualties inflicted on Lebanese civilians.",
+                  "question_badge": "Historical Utility",
+                  "question_type": "Historical Utility",
+                  "enquiry_question": "How useful is Source D for an enquiry into why Israel launched military raids into southern Lebanon in the 1970s?",
+                  "model_answer": "Source D is useful because it maps PLO guerrilla bases and rocket sites along the Lebanese border, showing why Israel viewed southern Lebanon as an intolerable security threat.",
                   "provenance_clues": {
                     "author": "IDF Northern Command cartographic intelligence unit.",
                     "audience": "IDF Chief of Staff, Northern Command officers, and Ministry of Defense.",
@@ -13566,10 +13566,10 @@
               "hinge_question": "How did the 1969 Cairo Agreement between Lebanon and the PLO compromise Lebanese state sovereignty in the south?",
               "source_context": "Under the 1969 Cairo Agreement brokered by Nasser, the weak Lebanese government granted the PLO autonomy to manage refugee camps and conduct armed operations against Israel from southern Lebanon. This created 'Fatahland', sparking regular cross-border Israeli artillery strikes and commando raids against Lebanese villages. **Hinge Question:** How did the 1969 Cairo Agreement between Lebanon and the PLO compromise Lebanese state sovereignty in the south?",
               "context": "The PLO established a major armed base in southern Lebanon, launching cross-border attacks into northern Israel.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source D for demonstrating the military threat posed by the PLO along Israel's northern frontier in the early 1970s?",
-              "model_answer": "Source D is highly reliable regarding IDF intelligence assessments of rocket launch corridors; however, because it was produced to justify Israeli cross-border incursions into Lebanon, it emphasizes guerrilla infrastructure while minimizing the heavy collateral casualties inflicted on Lebanese civilians.",
+              "question_badge": "Historical Utility",
+              "question_type": "Historical Utility",
+              "enquiry_question": "How useful is Source D for an enquiry into why Israel launched military raids into southern Lebanon in the 1970s?",
+              "model_answer": "Source D is useful because it maps PLO guerrilla bases and rocket sites along the Lebanese border, showing why Israel viewed southern Lebanon as an intolerable security threat.",
               "provenance_clues": {
                 "author": "IDF Northern Command cartographic intelligence unit.",
                 "audience": "IDF Chief of Staff, Northern Command officers, and Ministry of Defense.",
@@ -14345,10 +14345,10 @@
                   "hinge_question": "How did Sadat's political objective differ from earlier Arab leaders who sought the total military destruction of Israel?",
                   "source_context": "Unlike Nasser, Sadat did not seek the military destruction of Israel, knowing it was militarily impossible. His goal was a limited war: to cross the canal, seize a 10-mile bridgehead in Sinai, shatter the diplomatic deadlock, and force the United States to intervene and pressure Israel into returning occupied Egyptian land. **Hinge Question:** How did Sadat's political objective differ from earlier Arab leaders who sought the total military destruction of Israel?",
                   "context": "President Sadat planned a limited war to break the diplomatic stalemate and restore Arab pride.",
-                  "question_badge": "Reliability & Provenance",
-                  "question_type": "Reliability & Provenance",
-                  "enquiry_question": "How reliable is Source B for understanding Anwar Sadat's wartime calculations during the 1973 conflict?",
-                  "model_answer": "Source B accurately reflects Sadat's wartime role as Supreme Commander; however, as an official state photograph, it obscures his later strategic blunder in ordering Egyptian armor out from under their SAM missile umbrella on 14 October, which led to disastrous tank losses.",
+                  "question_badge": "Source Inference",
+                  "question_type": "Source Inference",
+                  "enquiry_question": "What can you infer from Source B about Anwar Sadat's wartime leadership in October 1973?",
+                  "model_answer": "We can infer that Sadat wanted to project calm, supreme military command, photographed actively coordinating battle plans with his generals to restore Egyptian national pride.",
                   "provenance_clues": {
                     "author": "Official Egyptian presidential staff photographer.",
                     "audience": "The Egyptian public and military officer corps.",
@@ -14478,8 +14478,8 @@
                   "context": "Henry Kissinger conducted shuttle diplomacy to negotiate ceasefires and disengagement agreements.",
                   "question_badge": "Author’s Purpose",
                   "question_type": "Author’s Purpose",
-                  "enquiry_question": "What was Henry Kissinger's primary diplomatic objective during the negotiations shown in Source E?",
-                  "model_answer": "Kissinger sought to maintain a stalemate where neither side achieved total victory, thereby ending Soviet influence in Cairo, restoring American diplomatic hegemony, and nudging Sadat into bilateral negotiations with Washington and Israel.",
+                  "enquiry_question": "What was Henry Kissinger's primary diplomatic goal during the 1973 negotiations shown in Source E?",
+                  "model_answer": "Kissinger aimed to broker a ceasefire where neither side achieved total victory, allowing the US to replace Soviet influence in Cairo and guide Egypt toward direct negotiations with Israel.",
                   "provenance_clues": {
                     "author": "White House photojournalist accompanying the Secretary of State.",
                     "audience": "US executive branch leadership and international diplomatic press.",
@@ -14536,10 +14536,10 @@
               "hinge_question": "How did Sadat's political objective differ from earlier Arab leaders who sought the total military destruction of Israel?",
               "source_context": "Unlike Nasser, Sadat did not seek the military destruction of Israel, knowing it was militarily impossible. His goal was a limited war: to cross the canal, seize a 10-mile bridgehead in Sinai, shatter the diplomatic deadlock, and force the United States to intervene and pressure Israel into returning occupied Egyptian land. **Hinge Question:** How did Sadat's political objective differ from earlier Arab leaders who sought the total military destruction of Israel?",
               "context": "President Sadat planned a limited war to break the diplomatic stalemate and restore Arab pride.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source B for understanding Anwar Sadat's wartime calculations during the 1973 conflict?",
-              "model_answer": "Source B accurately reflects Sadat's wartime role as Supreme Commander; however, as an official state photograph, it obscures his later strategic blunder in ordering Egyptian armor out from under their SAM missile umbrella on 14 October, which led to disastrous tank losses.",
+              "question_badge": "Source Inference",
+              "question_type": "Source Inference",
+              "enquiry_question": "What can you infer from Source B about Anwar Sadat's wartime leadership in October 1973?",
+              "model_answer": "We can infer that Sadat wanted to project calm, supreme military command, photographed actively coordinating battle plans with his generals to restore Egyptian national pride.",
               "provenance_clues": {
                 "author": "Official Egyptian presidential staff photographer.",
                 "audience": "The Egyptian public and military officer corps.",
@@ -14622,8 +14622,8 @@
               "context": "Henry Kissinger conducted shuttle diplomacy to negotiate ceasefires and disengagement agreements.",
               "question_badge": "Author’s Purpose",
               "question_type": "Author’s Purpose",
-              "enquiry_question": "What was Henry Kissinger's primary diplomatic objective during the negotiations shown in Source E?",
-              "model_answer": "Kissinger sought to maintain a stalemate where neither side achieved total victory, thereby ending Soviet influence in Cairo, restoring American diplomatic hegemony, and nudging Sadat into bilateral negotiations with Washington and Israel.",
+              "enquiry_question": "What was Henry Kissinger's primary diplomatic goal during the 1973 negotiations shown in Source E?",
+              "model_answer": "Kissinger aimed to broker a ceasefire where neither side achieved total victory, allowing the US to replace Soviet influence in Cairo and guide Egypt toward direct negotiations with Israel.",
               "provenance_clues": {
                 "author": "White House photojournalist accompanying the Secretary of State.",
                 "audience": "US executive branch leadership and international diplomatic press.",
@@ -15759,10 +15759,10 @@
                   "hinge_question": "Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?",
                   "source_context": "The Camp David framework contained two parts: a detailed bilateral treaty between Egypt and Israel, and a vague outline for five years of interim Palestinian administrative self-government in the West Bank and Gaza. Because the framework granted no guarantee of an independent state and gave Israel veto power over return of refugees, Palestinian leaders completely rejected it as a sham. **Hinge Question:** Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?",
                   "context": "The Camp David Accords established a framework for Egyptian-Israeli peace and interim Palestinian autonomy.",
-                  "question_badge": "Reliability & Provenance",
-                  "question_type": "Reliability & Provenance",
-                  "enquiry_question": "How reliable is Source C for understanding the limitations of the Camp David Accords regarding the Palestinian issue?",
-                  "model_answer": "Source C is extremely reliable as an official primary legal text, demonstrating that while the bilateral treaty with Egypt was ironclad and binding, the Palestinian autonomy sections were deliberately vague, aspirational, and unenforceable without Palestinian representation.",
+                  "question_badge": "Historical Utility",
+                  "question_type": "Historical Utility",
+                  "enquiry_question": "How useful is Source C for an enquiry into why Palestinians rejected the 1978 Camp David Accords?",
+                  "model_answer": "Source C is useful because it shows that while Egypt and Israel made a binding peace treaty, the plan for Palestinian autonomy was vague, had no guarantee of statehood, and excluded Palestinian leaders.",
                   "provenance_clues": {
                     "author": "Legal counsel for the United States, Egypt, and Israel.",
                     "audience": "Signatory cabinets, the UN Security Council, and world governments.",
@@ -15935,10 +15935,10 @@
               "hinge_question": "Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?",
               "source_context": "The Camp David framework contained two parts: a detailed bilateral treaty between Egypt and Israel, and a vague outline for five years of interim Palestinian administrative self-government in the West Bank and Gaza. Because the framework granted no guarantee of an independent state and gave Israel veto power over return of refugees, Palestinian leaders completely rejected it as a sham. **Hinge Question:** Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?",
               "context": "The Camp David Accords established a framework for Egyptian-Israeli peace and interim Palestinian autonomy.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source C for understanding the limitations of the Camp David Accords regarding the Palestinian issue?",
-              "model_answer": "Source C is extremely reliable as an official primary legal text, demonstrating that while the bilateral treaty with Egypt was ironclad and binding, the Palestinian autonomy sections were deliberately vague, aspirational, and unenforceable without Palestinian representation.",
+              "question_badge": "Historical Utility",
+              "question_type": "Historical Utility",
+              "enquiry_question": "How useful is Source C for an enquiry into why Palestinians rejected the 1978 Camp David Accords?",
+              "model_answer": "Source C is useful because it shows that while Egypt and Israel made a binding peace treaty, the plan for Palestinian autonomy was vague, had no guarantee of statehood, and excluded Palestinian leaders.",
               "provenance_clues": {
                 "author": "Legal counsel for the United States, Egypt, and Israel.",
                 "audience": "Signatory cabinets, the UN Security Council, and world governments.",
@@ -17063,8 +17063,8 @@
                   "context": "Israel invaded Lebanon in June 1982, rapidly expanding the operation to besiege West Beirut.",
                   "question_badge": "Historical Utility",
                   "question_type": "Historical Utility",
-                  "enquiry_question": "How useful is Source A for an inquiry into why the 1982 Lebanon War became deeply controversial within Israeli society?",
-                  "model_answer": "Source A is highly useful because the operational arrows visually prove that the IDF advanced 100 kilometers directly into the capital city of an Arab state, revealing that the war was not a limited defensive operation but an aggressive political intervention.",
+                  "enquiry_question": "How useful is Source A for an enquiry into why the 1982 Lebanon War became controversial in Israel?",
+                  "model_answer": "Source A is useful because the map shows Israeli troops advancing 100 kilometres all the way to Beirut, proving the war went far beyond a limited 40-kilometre border defense operation.",
                   "provenance_clues": {
                     "author": "IDF General Staff operational cartographers.",
                     "audience": "Cabinet ministers, senior brigade commanders, and military censors.",
@@ -17190,8 +17190,8 @@
                   "context": "The Unified National Leadership of the Uprising (UNLU) coordinated the First Intifada through clandestine mimeographed circulars, enforcing general strikes and civic non-cooperation.",
                   "question_badge": "Cross-Referencing",
                   "question_type": "Cross-Referencing",
-                  "enquiry_question": "How does Source D cross-reference with Source D to explain why Defense Minister Yitzhak Rabin eventually concluded that the conflict required a political rather than military solution?",
-                  "model_answer": "Source D shows that the Intifada was organized as a disciplined, society-wide civil rebellion using underground mimeographed strike orders rather than conventional military forces; cross-referenced with the widespread street clashes in Source D, it demonstrates why Rabin realized that military force ('breaking bones') could not defeat a whole civilian population committed to total economic and civil non-cooperation.",
+                  "enquiry_question": "How does Source D help explain why Israel could not end the First Intifada through military force alone?",
+                  "model_answer": "Source D shows the uprising was organized by local committees through strike leaflets and civil disobedience, proving to Israeli leaders that conventional military tactics could not defeat a widespread popular rebellion.",
                   "provenance_clues": {
                     "author": "Underground cadres of the Unified National Leadership of the Uprising (UNLU) in the West Bank and Gaza.",
                     "audience": "Palestinian workers, merchants, transport drivers, and the wider civilian population.",
@@ -17267,8 +17267,8 @@
               "context": "Israel invaded Lebanon in June 1982, rapidly expanding the operation to besiege West Beirut.",
               "question_badge": "Historical Utility",
               "question_type": "Historical Utility",
-              "enquiry_question": "How useful is Source A for an inquiry into why the 1982 Lebanon War became deeply controversial within Israeli society?",
-              "model_answer": "Source A is highly useful because the operational arrows visually prove that the IDF advanced 100 kilometers directly into the capital city of an Arab state, revealing that the war was not a limited defensive operation but an aggressive political intervention.",
+              "enquiry_question": "How useful is Source A for an enquiry into why the 1982 Lebanon War became controversial in Israel?",
+              "model_answer": "Source A is useful because the map shows Israeli troops advancing 100 kilometres all the way to Beirut, proving the war went far beyond a limited 40-kilometre border defense operation.",
               "provenance_clues": {
                 "author": "IDF General Staff operational cartographers.",
                 "audience": "Cabinet ministers, senior brigade commanders, and military censors.",
@@ -17351,8 +17351,8 @@
               "context": "The Unified National Leadership of the Uprising (UNLU) coordinated the First Intifada through clandestine mimeographed circulars, enforcing general strikes and civic non-cooperation.",
               "question_badge": "Cross-Referencing",
               "question_type": "Cross-Referencing",
-              "enquiry_question": "How does Source D cross-reference with Source D to explain why Defense Minister Yitzhak Rabin eventually concluded that the conflict required a political rather than military solution?",
-              "model_answer": "Source D shows that the Intifada was organized as a disciplined, society-wide civil rebellion using underground mimeographed strike orders rather than conventional military forces; cross-referenced with the widespread street clashes in Source D, it demonstrates why Rabin realized that military force ('breaking bones') could not defeat a whole civilian population committed to total economic and civil non-cooperation.",
+              "enquiry_question": "How does Source D help explain why Israel could not end the First Intifada through military force alone?",
+              "model_answer": "Source D shows the uprising was organized by local committees through strike leaflets and civil disobedience, proving to Israeli leaders that conventional military tactics could not defeat a widespread popular rebellion.",
               "provenance_clues": {
                 "author": "Underground cadres of the Unified National Leadership of the Uprising (UNLU) in the West Bank and Gaza.",
                 "audience": "Palestinian workers, merchants, transport drivers, and the wider civilian population.",
@@ -18247,8 +18247,8 @@
                   "context": "Oslo II scheduled gradual Israeli redeployments while postponing core final-status issues.",
                   "question_badge": "Author’s Purpose",
                   "question_type": "Author’s Purpose",
-                  "enquiry_question": "What was the purpose of the gradual phased redeployment schedule depicted on the official map in Source B?",
-                  "model_answer": "Negotiators designed a multi-year phased redeployment to allow both societies to build mutual confidence through joint security coordination before tackling the existential questions of Jerusalem and Palestinian statehood.",
+                  "enquiry_question": "What was the purpose of creating a phased timetable for Israeli redeployment in Source B?",
+                  "model_answer": "Negotiators created a step-by-step timetable to build trust between Israelis and Palestinians through security cooperation before attempting to resolve sensitive issues like Jerusalem and final borders.",
                   "provenance_clues": {
                     "author": "Bilateral Israeli-Palestinian joint military mapping committee.",
                     "audience": "Israeli Cabinet, PLO Executive Committee, and American and Egyptian co-witnesses.",
@@ -18292,8 +18292,8 @@
                   "context": "On 13 September 1993, Israel and the PLO signed the Oslo Accord on the White House lawn.",
                   "question_badge": "Historical Utility",
                   "question_type": "Historical Utility",
-                  "enquiry_question": "How useful is Source C for an inquiry into the symbolic significance of the Oslo Accords in 1993?",
-                  "model_answer": "Source C is monumentally useful because it visually captures the historic paradigm shift whereby mortal enemies formally recognized each other's national existence, transforming the conflict from an existential zero-sum war into a negotiated bilateral peace process.",
+                  "enquiry_question": "How useful is Source C for an enquiry into the significance of the 1993 Oslo Accords?",
+                  "model_answer": "Source C is useful because it captures the historic handshake between Yitzhak Rabin and Yasser Arafat, showing that Israel and the PLO had officially agreed to recognize each other after decades of war.",
                   "provenance_clues": {
                     "author": "White House Chief Official Photographer.",
                     "audience": "Global media, American public, and Israeli and Palestinian populations.",
@@ -18333,8 +18333,8 @@
                   "context": "The 1995 Oslo II Agreement divided the West Bank into Areas A, B, and C.",
                   "question_badge": "Source Inference",
                   "question_type": "Source Inference",
-                  "enquiry_question": "What can you infer from Source D about why critics described the Oslo II territorial division as a 'cantonization' or 'Bantustan' system?",
-                  "model_answer": "Source D reveals that Palestinian administrative zones (Areas A and B) were cut into dozens of non-contiguous territorial islands completely encircled by Area C, ensuring that Israel retained absolute control over water, roads, airspace, and freedom of movement.",
+                  "enquiry_question": "What can you infer from Source D about why many Palestinians criticized the Oslo II territorial division?",
+                  "model_answer": "We can infer that Palestinians were frustrated because Areas A and B were divided into isolated islands surrounded by Israeli-controlled Area C, making travel, trade, and governance very difficult.",
                   "provenance_clues": {
                     "author": "UN humanitarian cartographers and boundary analysts.",
                     "audience": "International aid agencies, diplomats, and human rights monitoring bodies.",
@@ -18376,10 +18376,10 @@
                   "hinge_question": "How did right-wing rhetoric branding Rabin a 'traitor' and 'murderer' create the political climate that led to his assassination?",
                   "source_context": "In his final Knesset speech, Rabin declared his vision: a permanent solution where Israel would stand alongside a Palestinian entity that was 'less than a state', with a united Jerusalem under Israeli sovereignty and the Jordan Valley as a security border. Right-wing opposition parties led by Benjamin Netanyahu held fierce rallies portraying Rabin in Nazi SS uniform; weeks later, Jewish extremist Yigal Amir shot him dead. **Hinge Question:** How did right-wing rhetoric branding Rabin a 'traitor' and 'murderer' create the political climate that led to his assassination?",
                   "context": "Prime Minister Rabin defended the Oslo process in the Knesset, facing ferocious opposition from right-wing Israeli politicians.",
-                  "question_badge": "Reliability & Provenance",
-                  "question_type": "Reliability & Provenance",
-                  "enquiry_question": "How reliable is Source E for understanding Yitzhak Rabin's ultimate vision for Palestinian statehood in 1995?",
-                  "model_answer": "Source E is extremely reliable as an official parliamentary record showing that Rabin never envisioned a fully sovereign Palestinian state, but rather a demilitarized entity with limited powers, aiming to safeguard Israel's democratic and Jewish character without returning to 1967 borders.",
+                  "question_badge": "Source Inference",
+                  "question_type": "Source Inference",
+                  "enquiry_question": "What does Source E reveal about Yitzhak Rabin's plans for Palestinian self-government in 1995?",
+                  "model_answer": "Source E reveals that Rabin supported a Palestinian entity 'which is less than a state', showing he intended for Palestinians to have self-rule while Israel retained overall security control.",
                   "provenance_clues": {
                     "author": "Official photographer of the Knesset Press Bureau.",
                     "audience": "Members of the Knesset, Israeli electorate, and international allies.",
@@ -18875,8 +18875,8 @@
               "context": "Oslo II scheduled gradual Israeli redeployments while postponing core final-status issues.",
               "question_badge": "Author’s Purpose",
               "question_type": "Author’s Purpose",
-              "enquiry_question": "What was the purpose of the gradual phased redeployment schedule depicted on the official map in Source B?",
-              "model_answer": "Negotiators designed a multi-year phased redeployment to allow both societies to build mutual confidence through joint security coordination before tackling the existential questions of Jerusalem and Palestinian statehood.",
+              "enquiry_question": "What was the purpose of creating a phased timetable for Israeli redeployment in Source B?",
+              "model_answer": "Negotiators created a step-by-step timetable to build trust between Israelis and Palestinians through security cooperation before attempting to resolve sensitive issues like Jerusalem and final borders.",
               "provenance_clues": {
                 "author": "Bilateral Israeli-Palestinian joint military mapping committee.",
                 "audience": "Israeli Cabinet, PLO Executive Committee, and American and Egyptian co-witnesses.",
@@ -18903,8 +18903,8 @@
               "context": "On 13 September 1993, Israel and the PLO signed the Oslo Accord on the White House lawn.",
               "question_badge": "Historical Utility",
               "question_type": "Historical Utility",
-              "enquiry_question": "How useful is Source C for an inquiry into the symbolic significance of the Oslo Accords in 1993?",
-              "model_answer": "Source C is monumentally useful because it visually captures the historic paradigm shift whereby mortal enemies formally recognized each other's national existence, transforming the conflict from an existential zero-sum war into a negotiated bilateral peace process.",
+              "enquiry_question": "How useful is Source C for an enquiry into the significance of the 1993 Oslo Accords?",
+              "model_answer": "Source C is useful because it captures the historic handshake between Yitzhak Rabin and Yasser Arafat, showing that Israel and the PLO had officially agreed to recognize each other after decades of war.",
               "provenance_clues": {
                 "author": "White House Chief Official Photographer.",
                 "audience": "Global media, American public, and Israeli and Palestinian populations.",
@@ -18931,8 +18931,8 @@
               "context": "The 1995 Oslo II Agreement divided the West Bank into Areas A, B, and C.",
               "question_badge": "Source Inference",
               "question_type": "Source Inference",
-              "enquiry_question": "What can you infer from Source D about why critics described the Oslo II territorial division as a 'cantonization' or 'Bantustan' system?",
-              "model_answer": "Source D reveals that Palestinian administrative zones (Areas A and B) were cut into dozens of non-contiguous territorial islands completely encircled by Area C, ensuring that Israel retained absolute control over water, roads, airspace, and freedom of movement.",
+              "enquiry_question": "What can you infer from Source D about why many Palestinians criticized the Oslo II territorial division?",
+              "model_answer": "We can infer that Palestinians were frustrated because Areas A and B were divided into isolated islands surrounded by Israeli-controlled Area C, making travel, trade, and governance very difficult.",
               "provenance_clues": {
                 "author": "UN humanitarian cartographers and boundary analysts.",
                 "audience": "International aid agencies, diplomats, and human rights monitoring bodies.",
@@ -18957,10 +18957,10 @@
               "hinge_question": "How did right-wing rhetoric branding Rabin a 'traitor' and 'murderer' create the political climate that led to his assassination?",
               "source_context": "In his final Knesset speech, Rabin declared his vision: a permanent solution where Israel would stand alongside a Palestinian entity that was 'less than a state', with a united Jerusalem under Israeli sovereignty and the Jordan Valley as a security border. Right-wing opposition parties led by Benjamin Netanyahu held fierce rallies portraying Rabin in Nazi SS uniform; weeks later, Jewish extremist Yigal Amir shot him dead. **Hinge Question:** How did right-wing rhetoric branding Rabin a 'traitor' and 'murderer' create the political climate that led to his assassination?",
               "context": "Prime Minister Rabin defended the Oslo process in the Knesset, facing ferocious opposition from right-wing Israeli politicians.",
-              "question_badge": "Reliability & Provenance",
-              "question_type": "Reliability & Provenance",
-              "enquiry_question": "How reliable is Source E for understanding Yitzhak Rabin's ultimate vision for Palestinian statehood in 1995?",
-              "model_answer": "Source E is extremely reliable as an official parliamentary record showing that Rabin never envisioned a fully sovereign Palestinian state, but rather a demilitarized entity with limited powers, aiming to safeguard Israel's democratic and Jewish character without returning to 1967 borders.",
+              "question_badge": "Source Inference",
+              "question_type": "Source Inference",
+              "enquiry_question": "What does Source E reveal about Yitzhak Rabin's plans for Palestinian self-government in 1995?",
+              "model_answer": "Source E reveals that Rabin supported a Palestinian entity 'which is less than a state', showing he intended for Palestinians to have self-rule while Israel retained overall security control.",
               "provenance_clues": {
                 "author": "Official photographer of the Knesset Press Bureau.",
                 "audience": "Members of the Knesset, Israeli electorate, and international allies.",
@@ -38700,7 +38700,7 @@
               "title": "Open University: Mapping Health & Disease in the 19th Century",
               "duration": "28 mins 0 secs",
               "pathway": "Enquiry Evidence",
-              "teacher_guidance": "Scholarly exploration of how mid-19th-century epidemiological mapping connected microscopic pathology with urban sanitary infrastructure. Recommended Watch Window: 04:00–10:30 • Lesson Phase: Disciplinary Synthesis & High-Attainer Extension. Tone Alert: Academic Open University production with archival maps.",
+              "teacher_guidance": "Scholarly exploration of how mid-19th-century epidemiological mapping connected microscopic pathology with urban sanitary infrastructure. Recommended Watch Window: 04:00–10:30 • Lesson Phase: Historical Analysis & High-Attainer Extension. Tone Alert: Academic Open University production with archival maps.",
               "viewing_task": "<ol><li><strong>[05:10] Recall:</strong> What two environmental theories of disease causation dominated British medical debate prior to the universal acceptance of Germ Theory in the 1880s?</li><li><strong>[07:30] Explain:</strong> Explain why British medical officers of health initially rejected Pasteur's Germ Theory, arguing that filth and poverty were the direct chemical causes of fever.</li><li><strong>[09:45] Challenge:</strong> Evaluate why it took over 20 years for Pasteur's 1861 Germ Theory to be fully accepted and implemented by the British medical establishment.</li></ol>",
               "model_answer": "<ol><li><strong>Recall:</strong> Miasma theory (poisonous airborne effluvia) and Anti-contagionist sanitation theory (disease generated spontaneously by filth).</li><li><strong>Explain:</strong> Medical officers observed that outbreaks were concentrated in dirty, unpaved slums with open privies. They concluded that decomposing vegetable and animal refuse chemically poisoned the air, producing fever directly. Without seeing bacteria, they viewed microbes as harmless consequences of decay rather than its primary cause.</li><li><strong>Challenge:</strong> British medicine was dominated by practical sanitary reformers who believed cleaning the streets was sufficient. Influential figures like William Farr and Florence Nightingale distrusted laboratory microscopes, believing illness could be conquered simply by fresh air, clean water, and soap. It was not until Koch identified the precise bacteria for wound infections and cholera in the 1880s that the British establishment finally abandoned miasma.</li></ol>"
             },
@@ -49105,7 +49105,7 @@
                   "context": "Artillery was the greatest killer on the Western Front, responsible for 58% of all wounds and massive compound fractures deeply contaminated by Flemish mud.",
                   "question_badge": "Source Utility",
                   "question_type": "Source Utility",
-                  "enquiry_question": "How useful is Source A for an enquiry into the severity and infectious nature of wounds caused by artillery shrapnel on the Western Front?",
+                  "enquiry_question": "Study Source A. How useful is Source A for an enquiry into wounds caused by artillery shrapnel on the Western Front?",
                   "model_answer": "<p>Source A is highly useful because an RAMC consulting surgeon explains that irregular, jagged shrapnel fragments travelled at high velocity, shattering bone and forcing filthy uniform wool and manure deep into the wound track. As an official medical report, it provides clinical evidence explaining why Western Front surgeons faced an unprecedented epidemic of gas gangrene and sepsis that could not be treated by standard antiseptics alone.</p>",
                   "teacher_notes": {
                     "source_context": "Artillery was the greatest killer on the Western Front, responsible for 58% of all wounds and massive compound fractures deeply contaminated by Flemish mud. **Hinge Question:** Why did high explosive artillery shrapnel create far more dangerous and infectious wounds than rifle bullets?"
@@ -49261,7 +49261,7 @@
               "context": "Artillery was the greatest killer on the Western Front, responsible for 58% of all wounds and massive compound fractures deeply contaminated by Flemish mud.",
               "question_badge": "Source Utility",
               "question_type": "Source Utility",
-              "enquiry_question": "How useful is Source A for an enquiry into the severity and infectious nature of wounds caused by artillery shrapnel on the Western Front?",
+              "enquiry_question": "Study Source A. How useful is Source A for an enquiry into wounds caused by artillery shrapnel on the Western Front?",
               "model_answer": "<p>Source A is highly useful because an RAMC consulting surgeon explains that irregular, jagged shrapnel fragments travelled at high velocity, shattering bone and forcing filthy uniform wool and manure deep into the wound track. As an official medical report, it provides clinical evidence explaining why Western Front surgeons faced an unprecedented epidemic of gas gangrene and sepsis that could not be treated by standard antiseptics alone.</p>",
               "teacher_notes": {
                 "source_context": "Artillery was the greatest killer on the Western Front, responsible for 58% of all wounds and massive compound fractures deeply contaminated by Flemish mud. **Hinge Question:** Why did high explosive artillery shrapnel create far more dangerous and infectious wounds than rifle bullets?"
@@ -51930,7 +51930,7 @@
                   "context": "In 1914–1915, doctors discovered that adding sodium citrate prevented blood from clotting, allowing blood to be collected in bottles and stored away from donors.",
                   "question_badge": "Source Utility",
                   "question_type": "Source Utility",
-                  "enquiry_question": "How useful is Source A for an enquiry into the medical breakthrough of sodium citrate anticoagulation in treating haemorrhagic shock on the battlefield?",
+                  "enquiry_question": "Study Source A. How useful is Source A for an enquiry into the development of blood transfusions on the Western Front?",
                   "model_answer": "<p>Source A is highly useful because Dr. Lewisohn explains that adding 0.2% sodium citrate prevented blood from clotting, transforming blood transfusion from a dangerous direct vein-to-vein procedure into an indirect treatment using stored sterile flasks. As a clinical scientific paper, it explains the breakthrough that allowed military medics to treat acute haemorrhagic shock without requiring donor and recipient to lie together under artillery fire.</p>",
                   "teacher_notes": {
                     "source_context": "In 1914–1915, doctors discovered that adding sodium citrate prevented blood from clotting, allowing blood to be collected in bottles and stored away from donors. **Hinge Question:** How did sodium citrate solve the primary obstacle to frontline blood transfusions during the First World War?"
@@ -51966,7 +51966,7 @@
                   "context": "In 1916, Rous and Turner proved that adding glucose to citrated blood and chilling it allowed red blood cells to survive for up to 4 weeks, laying the scientific foundation for blood banks.",
                   "question_badge": "Source Utility",
                   "question_type": "Source Utility",
-                  "enquiry_question": "How useful is Source B for an enquiry into the development of citrate-glucose solutions and refrigeration for the long-term preservation of blood cells?",
+                  "enquiry_question": "Study Source B. How useful is Source B for an enquiry into methods of storing blood on the Western Front?",
                   "model_answer": "<p>Source B is highly useful because Rous and Turner prove that adding dextrose (glucose) and chilling blood prevented red blood cells from breaking down, allowing blood to be stored for up to four weeks without losing oxygen-carrying capacity. As a landmark laboratory study from the Rockefeller Institute, it explains the scientific mechanism that enabled Captain Oswald Robertson to establish the world’s first blood depot at Cambrai in 1917.</p>",
                   "teacher_notes": {
                     "source_context": "In 1916, Rous and Turner proved that adding glucose to citrated blood and chilling it allowed red blood cells to survive for up to 4 weeks, laying the scientific foundation for blood banks. **Hinge Question:** Why was the addition of glucose crucial for extending the viable storage life of donated blood?"
@@ -52087,7 +52087,7 @@
               "context": "In 1914–1915, doctors discovered that adding sodium citrate prevented blood from clotting, allowing blood to be collected in bottles and stored away from donors.",
               "question_badge": "Source Utility",
               "question_type": "Source Utility",
-              "enquiry_question": "How useful is Source A for an enquiry into the medical breakthrough of sodium citrate anticoagulation in treating haemorrhagic shock on the battlefield?",
+              "enquiry_question": "Study Source A. How useful is Source A for an enquiry into the development of blood transfusions on the Western Front?",
               "model_answer": "<p>Source A is highly useful because Dr. Lewisohn explains that adding 0.2% sodium citrate prevented blood from clotting, transforming blood transfusion from a dangerous direct vein-to-vein procedure into an indirect treatment using stored sterile flasks. As a clinical scientific paper, it explains the breakthrough that allowed military medics to treat acute haemorrhagic shock without requiring donor and recipient to lie together under artillery fire.</p>",
               "teacher_notes": {
                 "source_context": "In 1914–1915, doctors discovered that adding sodium citrate prevented blood from clotting, allowing blood to be collected in bottles and stored away from donors. **Hinge Question:** How did sodium citrate solve the primary obstacle to frontline blood transfusions during the First World War?"
@@ -52109,7 +52109,7 @@
               "context": "In 1916, Rous and Turner proved that adding glucose to citrated blood and chilling it allowed red blood cells to survive for up to 4 weeks, laying the scientific foundation for blood banks.",
               "question_badge": "Source Utility",
               "question_type": "Source Utility",
-              "enquiry_question": "How useful is Source B for an enquiry into the development of citrate-glucose solutions and refrigeration for the long-term preservation of blood cells?",
+              "enquiry_question": "Study Source B. How useful is Source B for an enquiry into methods of storing blood on the Western Front?",
               "model_answer": "<p>Source B is highly useful because Rous and Turner prove that adding dextrose (glucose) and chilling blood prevented red blood cells from breaking down, allowing blood to be stored for up to four weeks without losing oxygen-carrying capacity. As a landmark laboratory study from the Rockefeller Institute, it explains the scientific mechanism that enabled Captain Oswald Robertson to establish the world’s first blood depot at Cambrai in 1917.</p>",
               "teacher_notes": {
                 "source_context": "In 1916, Rous and Turner proved that adding glucose to citrated blood and chilling it allowed red blood cells to survive for up to 4 weeks, laying the scientific foundation for blood banks. **Hinge Question:** Why was the addition of glucose crucial for extending the viable storage life of donated blood?"
@@ -73017,7 +73017,7 @@
                   "Conclusion: Provide an evaluative judgment weighing which factor was truly decisive."
                 ],
                 "sentence_starters": [
-                  "To a large extent, it can be argued that French naval intervention was the decisive factor because...",
+                  "One decisive reason was that French naval intervention was the decisive factor because...",
                   "At the Siege of Yorktown in 1781, Admiral de Grasse’s fleet succeeded in...",
                   "On the other hand, American military persistence under George Washington was essential because...",
                   "Furthermore, the American victory at Saratoga (1777) was critical as it...",
@@ -73043,7 +73043,7 @@
                   "Treaty of Paris (1783)"
                 ]
               },
-              "model_answer": "To a large extent, it can be argued that French naval intervention was the decisive cause of British defeat in the American Revolutionary War [5.4]. Until France entered the war following the American victory at Saratoga in 1777, the Royal Navy held unchallenged command of the Atlantic, allowing Britain to move troops and supplies freely along the eastern seaboard. However, the arrival of the French fleet transformed a colonial rebellion into a global war. In September 1781, French Admiral de Grasse defeated the British fleet at the Battle of the Chesapeake, establishing a total naval blockade that trapped General Cornwallis’s army at Yorktown and made surrender unavoidable.\n\nOn the other hand, American military persistence and tactical strategy were indispensable in exhausting British resources [5.2, 5.3]. General George Washington recognized that the Continental Army did not need to win every battle; it only needed to survive. By adopting a war of attrition, evading major encirclements, and enduring brutal winters at Valley Forge, Washington denied the British a knockout blow. Furthermore, victory at Saratoga was achieved entirely by American forces under General Gates, demonstrating that colonial troops could defeat regular British redcoats in open battle.\n\nAdditionally, British strategic errors and immense logistical distances severely hindered imperial operations [5.1]. Supplying an army of 50,000 soldiers across 3,000 miles of stormy ocean took up to three months, and British commanders failed to mobilize loyalist support or secure the vast, hostile rural interior.\n\nIn conclusion, while Washington’s resilience kept the rebellion alive, it was French naval intervention at the Chesapeake that delivered the decisive strategic stroke by removing Britain’s naval lifeline at Yorktown.",
+              "model_answer": "One decisive reason was that French naval intervention was the decisive cause of British defeat in the American Revolutionary War [5.4]. Until France entered the war following the American victory at Saratoga in 1777, the Royal Navy held unchallenged command of the Atlantic, allowing Britain to move troops and supplies freely along the eastern seaboard. However, the arrival of the French fleet transformed a colonial rebellion into a global war. In September 1781, French Admiral de Grasse defeated the British fleet at the Battle of the Chesapeake, establishing a total naval blockade that trapped General Cornwallis’s army at Yorktown and made surrender unavoidable.\n\nOn the other hand, American military persistence and tactical strategy were indispensable in exhausting British resources [5.2, 5.3]. General George Washington recognized that the Continental Army did not need to win every battle; it only needed to survive. By adopting a war of attrition, evading major encirclements, and enduring brutal winters at Valley Forge, Washington denied the British a knockout blow. Furthermore, victory at Saratoga was achieved entirely by American forces under General Gates, demonstrating that colonial troops could defeat regular British redcoats in open battle.\n\nAdditionally, British strategic errors and immense logistical distances severely hindered imperial operations [5.1]. Supplying an army of 50,000 soldiers across 3,000 miles of stormy ocean took up to three months, and British commanders failed to mobilize loyalist support or secure the vast, hostile rural interior.\n\nIn conclusion, while Washington’s resilience kept the rebellion alive, it was French naval intervention at the Chesapeake that delivered the decisive strategic stroke by removing Britain’s naval lifeline at Yorktown.",
               "topic": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]"
             }
           ]
@@ -86415,7 +86415,7 @@
                   "In conclusion, Cort’s achievement was decisive because it combined chemical refinement with mechanical speed, securing British naval supremacy."
                 ],
                 "connective_bank": [
-                  "To a large extent, it can be argued that...",
+                  "One decisive reason was that...",
                   "In particular, a decisive factor was...",
                   "Furthermore, this created severe consequences because...",
                   "On the other hand, an alternative perspective is that...",
@@ -87383,7 +87383,7 @@
                   "A significant consequence was...",
                   "For instance, this meant that...",
                   "This directly led to...",
-                  "Consequently, the overall outcome was..."
+                  "As a direct result, ..."
                 ],
                 "word_bank": [
                   "1833 Factory Act",
@@ -88432,7 +88432,7 @@
                   "A significant consequence was...",
                   "For instance, this meant that...",
                   "This directly led to...",
-                  "Consequently, the overall outcome was..."
+                  "As a direct result, ..."
                 ],
                 "word_bank": [
                   "Great Stink (1858)",
@@ -90596,7 +90596,7 @@
                   "Conclusion & Historical Verdict: Synthesize both arguments. Conclude whether fear was the immediate trigger while aristocratic self-preservation determined the actual conservative architecture of the Act."
                 ],
                 "sentence_starters": [
-                  "To a large extent, it can be argued that the 1832 Great Reform Act was conceded primarily because the ruling aristocracy feared an armed revolution...",
+                  "One decisive reason was that the 1832 Great Reform Act was conceded primarily because the ruling aristocracy feared an armed revolution...",
                   "In particular, when the Tory House of Lords rejected the Reform Bill in October 1831, widespread violence erupted across Britain...",
                   "In Bristol, rioters sacked the Mansion House, burned the Bishop’s Palace, and destroyed three prisons...",
                   "Furthermore, during the \"Days of May\" in 1832, radical leader Francis Place weaponized economic panic with the slogan \"Stop the Duke, Go for Gold!\", triggering...",
@@ -90607,7 +90607,7 @@
                   "In conclusion, the decisive reason why the Act passed in 1832 was that imminent threat of revolution forced the Lords to yield, but the resulting legislation was designed to protect aristocratic power rather than advance democratic justice."
                 ],
                 "connective_bank": [
-                  "To a large extent, it can be argued that...",
+                  "One decisive reason was that...",
                   "In particular, a decisive factor was...",
                   "Furthermore, this created severe consequences because...",
                   "On the other hand, an alternative perspective is that...",
@@ -108217,7 +108217,7 @@
                   "Conclusion: Reach a verdict on whether civil defence was cynical psychological reassurance to sustain Britain’s nuclear deterrent."
                 ],
                 "sentence_starters": [
-                  "To a large extent, it can be argued that British civil defence preparations were a psychological illusion designed to maintain morale because...",
+                  "One decisive reason was that British civil defence preparations were a psychological illusion designed to maintain morale because...",
                   "Official publications such as the 1980 booklet Protect and Survive advised citizens to construct makeshift shelters using...",
                   "In reality, against multi-megaton hydrogen bombs that would create 100-mile firestorms, such advice was...",
                   "Furthermore, the government quietly invested millions in subterranean nuclear bunkers such as the York Bunker and Burlington, which were reserved exclusively for...",
@@ -108245,7 +108245,7 @@
                   "The War Game"
                 ]
               },
-              "model_answer": "To a large extent, it can be argued that civil defence preparations in Cold War Britain were a psychological exercise in public morale management rather than a viable strategy for civilian survival [5.3, 5.4]. With the advent of Soviet thermonuclear hydrogen bombs in the 1950s, a single weapon possessed the destructive power of a thousand Hiroshimas. In this context, official government guidance published in the 1980 booklet Protect and Survive—which advised families to remove doors, prop them against walls, and cover them with bags of earth to survive a nuclear attack—was scientifically absurd. The Four-Minute Warning siren system offered virtually no time to seek shelter, and Peter Watkins’s 1965 BBC documentary The War Game was deemed so terrifyingly realistic in depicting the total medical and social collapse of Britain that the government pressured the BBC to ban it for twenty years.\n\nFurthermore, actual government expenditure on physical survival was reserved exclusively for the political and military elite [5.2]. While ordinary citizens were told to paint their window panes white, the Crown constructed an underground bunker network—such as the massive Burlington bunker in Wiltshire and the regional York Cold War Bunker—equipped with independent air filtration, generators, and rations for regional commissioners to maintain authoritarian control after the population perished.\n\nConsequently, the transparent inadequacy of civilian defence fueled widespread public resistance led by the Campaign for Nuclear Disarmament (CND) [5.1, 5.5]. Founded in 1958 by philosopher Bertrand Russell and canon John Collins, CND organized annual 50-mile protest marches to the nuclear weapons research base at Aldermaston. In the 1980s, the Greenham Common Women’s Peace Camp established a non-violent blockade around the US cruise missile base, exposing the government’s claim that nuclear weapons kept the nation safe.\n\nIn conclusion, civil defence was fundamentally designed to provide an illusion of safety, ensuring the public did not panic or force the government to abandon Britain’s independent nuclear deterrent.",
+              "model_answer": "One decisive reason was that civil defence preparations in Cold War Britain were a psychological exercise in public morale management rather than a viable strategy for civilian survival [5.3, 5.4]. With the advent of Soviet thermonuclear hydrogen bombs in the 1950s, a single weapon possessed the destructive power of a thousand Hiroshimas. In this context, official government guidance published in the 1980 booklet Protect and Survive—which advised families to remove doors, prop them against walls, and cover them with bags of earth to survive a nuclear attack—was scientifically absurd. The Four-Minute Warning siren system offered virtually no time to seek shelter, and Peter Watkins’s 1965 BBC documentary The War Game was deemed so terrifyingly realistic in depicting the total medical and social collapse of Britain that the government pressured the BBC to ban it for twenty years.\n\nFurthermore, actual government expenditure on physical survival was reserved exclusively for the political and military elite [5.2]. While ordinary citizens were told to paint their window panes white, the Crown constructed an underground bunker network—such as the massive Burlington bunker in Wiltshire and the regional York Cold War Bunker—equipped with independent air filtration, generators, and rations for regional commissioners to maintain authoritarian control after the population perished.\n\nConsequently, the transparent inadequacy of civilian defence fueled widespread public resistance led by the Campaign for Nuclear Disarmament (CND) [5.1, 5.5]. Founded in 1958 by philosopher Bertrand Russell and canon John Collins, CND organized annual 50-mile protest marches to the nuclear weapons research base at Aldermaston. In the 1980s, the Greenham Common Women’s Peace Camp established a non-violent blockade around the US cruise missile base, exposing the government’s claim that nuclear weapons kept the nation safe.\n\nIn conclusion, civil defence was fundamentally designed to provide an illusion of safety, ensuring the public did not panic or force the government to abandon Britain’s independent nuclear deterrent.",
               "topic": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]"
             }
           ]
@@ -116184,7 +116184,7 @@
                   "Conclusion: Reach a definitive historical judgment on which moment represented the true point of no return."
                 ],
                 "sentence_starters": [
-                  "To a large extent, it can be argued that Operation Barbarossa in June 1941 was the decisive turning point because...",
+                  "One decisive reason was that Operation Barbarossa in June 1941 was the decisive turning point because...",
                   "Hitler framed the invasion of the Soviet Union as an ideological Vernichtungskrieg (\"war of annihilation\"), unleashing...",
                   "At sites like Babi Yar in September 1941, the Einsatzgruppen carried out...",
                   "However, an alternative perspective is that the decisive turning point occurred at the Wannsee Conference in January 1942, where...",
@@ -116192,7 +116192,7 @@
                   "In conclusion, Barbarossa was the primary turning point because it crossed the moral threshold from persecution to systematic physical annihilation."
                 ],
                 "connective_bank": [
-                  "To a large extent, it can be argued that...",
+                  "One decisive reason was that...",
                   "On the one hand, Operation Barbarossa was decisive because...",
                   "In particular, this meant that...",
                   "On the other hand, an alternative view is that...",
@@ -116211,7 +116211,7 @@
                   "Chełmno gas vans"
                 ]
               },
-              "model_answer": "To a large extent, it can be argued that the German invasion of the Soviet Union in June 1941 was the defining turning point in the development of the Holocaust [4.1, 4.2]. Prior to Operation Barbarossa, Nazi anti-Jewish policy centered on forced emigration, territorial expulsion, and confined ghettoisation. However, Hitler framed the Soviet invasion as a racial Vernichtungskrieg (\"war of annihilation\") against \"Judeo-Bolshevism.\" Four paramilitary Einsatzgruppen (mobile killing squads) followed directly behind the Wehrmacht, conducting systematic mass shootings across the Baltic states, Belarus, and Ukraine. In ravine massacres such as Babi Yar outside Kyiv, where 33,771 Jewish men, women, and children were murdered in just 48 hours in September 1941, the regime crossed the barrier into total physical genocide.\n\nOn the other hand, historians argue that the true structural turning point occurred with the transition to industrial factory-style extermination coordinated at the Wannsee Conference in January 1942 [4.4, 4.5]. Open-air mass shootings proved psychologically stressful for SS executioners and impossible to conceal. At Wannsee, Reinhard Heydrich and Adolf Eichmann brought together state ministries to organize the deportation of 11 million European Jews to purpose-built death camps under Operation Reinhard (Belzec, Sobibor, Treblinka) utilizing carbon monoxide and Zyklon B gas chambers.\n\nNevertheless, the decision to construct industrial death camps was a logistical adaptation born directly out of the killing methods initiated during Barbarossa. It was in the Soviet killing fields that the Nazi leadership realized mass murder was militarily and politically feasible.\n\nIn conclusion, while Wannsee institutionalized the continent-wide machinery of death, Operation Barbarossa was the fundamental turning point because it marked the ideological decision to transition from expulsion to total annihilation.",
+              "model_answer": "One decisive reason was that the German invasion of the Soviet Union in June 1941 was the defining turning point in the development of the Holocaust [4.1, 4.2]. Prior to Operation Barbarossa, Nazi anti-Jewish policy centered on forced emigration, territorial expulsion, and confined ghettoisation. However, Hitler framed the Soviet invasion as a racial Vernichtungskrieg (\"war of annihilation\") against \"Judeo-Bolshevism.\" Four paramilitary Einsatzgruppen (mobile killing squads) followed directly behind the Wehrmacht, conducting systematic mass shootings across the Baltic states, Belarus, and Ukraine. In ravine massacres such as Babi Yar outside Kyiv, where 33,771 Jewish men, women, and children were murdered in just 48 hours in September 1941, the regime crossed the barrier into total physical genocide.\n\nOn the other hand, historians argue that the true structural turning point occurred with the transition to industrial factory-style extermination coordinated at the Wannsee Conference in January 1942 [4.4, 4.5]. Open-air mass shootings proved psychologically stressful for SS executioners and impossible to conceal. At Wannsee, Reinhard Heydrich and Adolf Eichmann brought together state ministries to organize the deportation of 11 million European Jews to purpose-built death camps under Operation Reinhard (Belzec, Sobibor, Treblinka) utilizing carbon monoxide and Zyklon B gas chambers.\n\nNevertheless, the decision to construct industrial death camps was a logistical adaptation born directly out of the killing methods initiated during Barbarossa. It was in the Soviet killing fields that the Nazi leadership realized mass murder was militarily and politically feasible.\n\nIn conclusion, while Wannsee institutionalized the continent-wide machinery of death, Operation Barbarossa was the fundamental turning point because it marked the ideological decision to transition from expulsion to total annihilation.",
               "topic": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]"
             }
           ]
@@ -118217,7 +118217,7 @@
                   "In conclusion, liberation secured biological survival, but true suffering endured for decades because..."
                 ],
                 "connective_bank": [
-                  "To a large extent, it can be argued that...",
+                  "One decisive reason was that...",
                   "On the one hand, Allied liberation brought immediate deliverance from...",
                   "However, intense suffering endured because...",
                   "In particular, the geopolitical struggle over British Mandate Palestine meant that...",

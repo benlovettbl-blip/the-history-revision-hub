@@ -181,7 +181,8 @@ export function renderVerticalTimeline(container, timelineData, unitData) {
         .timeline-image {
             width: 150px;
             height: 150px;
-            object-fit: cover;
+            object-fit: contain;
+            background: #0f172a;
             border-radius: 8px;
             border: 2px solid #e2e8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);

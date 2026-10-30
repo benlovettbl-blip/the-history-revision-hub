@@ -140,6 +140,32 @@ async function runSync() {
     return false;
   }
 
+  // Step 2b: Audit GCSE Plain-English Language & Anti-Hindsight Guardrails
+  const GCSE_UNITS = [
+    'cme_new',
+    'edexcel_medicine',
+    'eee',
+    'usa',
+    'weimar_nazi_germany',
+    'cold_war',
+  ];
+  if (GCSE_UNITS.includes(unitId)) {
+    console.log(
+      `\n[Step 2b/6] 🗣️ Auditing GCSE plain-English language & anti-hindsight guardrails...`,
+    );
+    try {
+      execSync(`node scripts/audit_gcse_language.cjs ${unitId}`, {
+        stdio: 'inherit',
+        cwd: ROOT_DIR,
+      });
+    } catch (err) {
+      console.error(
+        `❌ Fatal: GCSE language & pedagogy linter failed for ${unitId}. Build aborted.`,
+      );
+      return false;
+    }
+  }
+
   // Step 3: Check if digital-only (trip_ypres) or physical PDF required
   if (unitId === 'trip_ypres') {
     console.log(`\n[Step 3/6] ⏭️ Unit ${unitId} is fully digital. Skipping PDF export.`);

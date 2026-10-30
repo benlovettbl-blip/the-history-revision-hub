@@ -482,7 +482,7 @@ export function renderFloatingCmeMapButton() {
   btn.className = 'cme-floating-theater-map-btn no-print';
   btn.setAttribute('aria-label', 'Open Middle East Regional Map');
   btn.style.cssText =
-    'position: fixed; bottom: 24px; right: 24px; z-index: 9990; background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: 1.5px solid #38bdf8; border-radius: 30px; padding: 9px 16px; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 14px rgba(2, 132, 199, 0.45); transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); user-select: none; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;';
+    'position: fixed; bottom: 12px; right: 16px; z-index: 9990; background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: 1.5px solid #38bdf8; border-radius: 20px; padding: 6px 12px; font-size: 0.76rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.40); transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); user-select: none; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;';
 
   btn.innerHTML = `
     <i class="fa-solid fa-map" style="font-size: 0.95rem;"></i>

@@ -24,7 +24,7 @@
 ## 📍 Active Unit Milestones & Immediate Focus
 
 1. **Edexcel Paper 1: Medicine in Britain (c1250–Present & Western Front):**
-   - **Status: 🟩 GREEN (COMPLETED).** All thematic eras and Section A are complete with 4-Act narratives, delivery plans, and unified 3-pillar packs.
+   - **Status: 🟩 GREEN (COMPLETED).** All thematic eras and Section A are complete with 5-Stage chronological narratives, delivery plans, and unified 3-pillar packs.
 2. **Edexcel Paper 2: Conflict in the Middle East (`cme_new`):**
    - **Key Topics 1, 2 & 3 (1945–1995): 🟩 GREEN (COMPLETED).** All 15 enquiry lessons complete; flagship 16-page double-page spread booklets (`pupil_workbook_KT1/2/3.html`), 12-page publisher textbooks (`cme_new_textbook_KT1/2/3_PUBLISHER.pdf`), and hard-coded Key Individual profile cards compiled with 0px overflow.
 3. **Year 8: Industrialisation, Empire & Power (`industrialisation_and_empire`):**
@@ -40,7 +40,7 @@
 
 ## 🗺️ 16-Unit Departmental Status Matrix (RAG Audit)
 
-| Unit ID | Year Group | Unit Title | 4-Act Christine Counsell Lessons | Double-Page Booklet Architecture | Classroom Reprographics State | Priority & Next Action |
+| Unit ID | Year Group | Unit Title | 5-Stage Chronological Inquiry Lessons | Double-Page Booklet Architecture | Classroom Reprographics State | Priority & Next Action |
 | :--- | :---: | :--- | :---: | :---: | :---: | :--- |
 | `edexcel_medicine` | GCSE | Medicine in Britain c1250–Present & Western Front | 🟩 **GREEN** (100% Complete) | 🟩 **GREEN** (3-Pillar Master Packs) | Production Ready / Active | **COMPLETE:** Maintenance only. |
 | `cme_new` (KT1–3) | GCSE | Conflict in the Middle East: Key Topics 1–3 (1945–1995) | 🟩 **GREEN** (100% Complete — 15 Enquiries) | 🟩 **GREEN** (16-Page Standard — KT1, 2, 3) | Production Ready / Active | **COMPLETE:** 16-page double-page workbooks & 12-page publisher textbooks compiled with 0px overflow. |
@@ -53,10 +53,10 @@
 | `eee` | GCSE | Early Elizabethan England, 1558–1588 | 🟩 **GREEN** (3 Key Topics / 12 Enquiries) | 🟩 **GREEN** (3x 16-Page Double-Page Booklets) | Production Ready / Active | **COMPLETE:** All 3 Key Topics feature 12-page publisher master textbooks grounded directly in Pearson specification prose with 0px overflow and synced to Department File. |
 | `usa` | GCSE | The USA, 1954–75: Conflict at Home & Abroad | 🟨 **AMBER** (Core Specification Complete) | 🟩 **GREEN** (16 Spreads, 4-4-4-4 Matrix) | Production Ready / Active | Master 3-pillar volumes compiled. Ongoing exam coaching. |
 | `weimar_nazi_germany` | GCSE | Weimar and Nazi Germany, 1918–1939 | 🟨 **AMBER** (24 Lessons Authored) | 🟥 **RED** (Split in 4 Separate Booklets) | Scheduled for GCSE Year 11 | 🚨 **PRIORITY #2 (GCSE):** Author 16-spread 4-4-4-4 Visual Revision Guide & 16-page double-page spread booklets. |
-| `the_shoah` | Year 9 | The Shoah (Holocaust Education) | 🟥 **RED** (Core Text Drafted) | 🟥 **RED** (Legacy Standalone Format) | Queued for Year 9 Term 2/3 | Scheduled for 4-Act refactoring. |
-| `cold_war` | Year 9 | The Cold War (1945–1991) | 🟥 **RED** (Prose Drafted) | 🟥 **RED** (Legacy Standalone Format) | Queued for Year 9 Term 3 | Scheduled for 4-Act refactoring. |
-| `post_war_britain` | Year 9 | Rights, Protest, and Post-War Britain | 🟥 **RED** (Prose Drafted) | 🟥 **RED** (Legacy Standalone Format) | Queued for Year 9 Term 3 | Scheduled for 4-Act refactoring. |
-| `australia` | Year 8/9 | History of Australia | 🟥 **RED** (Draft Modules) | 🟥 **RED** (Legacy Standalone Format) | Elective Depth Study | Queued for 4-Act refactoring. |
+| `the_shoah` | Year 9 | The Shoah (Holocaust Education) | 🟥 **RED** (Core Text Drafted) | 🟥 **RED** (Legacy Standalone Format) | Queued for Year 9 Term 2/3 | Scheduled for 5-Stage refactoring. |
+| `cold_war` | Year 9 | The Cold War (1945–1991) | 🟥 **RED** (Prose Drafted) | 🟥 **RED** (Legacy Standalone Format) | Queued for Year 9 Term 3 | Scheduled for 5-Stage refactoring. |
+| `post_war_britain` | Year 9 | Rights, Protest, and Post-War Britain | 🟥 **RED** (Prose Drafted) | 🟥 **RED** (Legacy Standalone Format) | Queued for Year 9 Term 3 | Scheduled for 5-Stage refactoring. |
+| `australia` | Year 8/9 | History of Australia | 🟥 **RED** (Draft Modules) | 🟥 **RED** (Legacy Standalone Format) | Elective Depth Study | Queued for 5-Stage refactoring. |
 | `trip_ypres` | GCSE | Battlefield Tour: Ypres & The Somme | 🟩 **GREEN** (14 Field Stops Complete) | 🟩 **GREEN** (Digital Companion Complete) | Live Interactive Field Web App | Digital field guide intentionally bypassed from print booklet pipeline. |
 
 ---

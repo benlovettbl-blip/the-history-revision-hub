@@ -14844,7 +14844,7 @@ const edexcel_medicine_data = {
           duration: '28 mins 0 secs',
           pathway: 'Enquiry Evidence',
           teacher_guidance:
-            'Scholarly exploration of how mid-19th-century epidemiological mapping connected microscopic pathology with urban sanitary infrastructure. Recommended Watch Window: 04:00–10:30 • Lesson Phase: Disciplinary Synthesis & High-Attainer Extension. Tone Alert: Academic Open University production with archival maps.',
+            'Scholarly exploration of how mid-19th-century epidemiological mapping connected microscopic pathology with urban sanitary infrastructure. Recommended Watch Window: 04:00–10:30 • Lesson Phase: Historical Analysis & High-Attainer Extension. Tone Alert: Academic Open University production with archival maps.',
           viewing_task:
             "<ol><li><strong>[05:10] Recall:</strong> What two environmental theories of disease causation dominated British medical debate prior to the universal acceptance of Germ Theory in the 1880s?</li><li><strong>[07:30] Explain:</strong> Explain why British medical officers of health initially rejected Pasteur's Germ Theory, arguing that filth and poverty were the direct chemical causes of fever.</li><li><strong>[09:45] Challenge:</strong> Evaluate why it took over 20 years for Pasteur's 1861 Germ Theory to be fully accepted and implemented by the British medical establishment.</li></ol>",
           model_answer:
@@ -27122,7 +27122,7 @@ const edexcel_medicine_data = {
               question_badge: 'Source Utility',
               question_type: 'Source Utility',
               enquiry_question:
-                'How useful is Source A for an enquiry into the severity and infectious nature of wounds caused by artillery shrapnel on the Western Front?',
+                'Study Source A. How useful is Source A for an enquiry into wounds caused by artillery shrapnel on the Western Front?',
               model_answer:
                 '<p>Source A is highly useful because an RAMC consulting surgeon explains that irregular, jagged shrapnel fragments travelled at high velocity, shattering bone and forcing filthy uniform wool and manure deep into the wound track. As an official medical report, it provides clinical evidence explaining why Western Front surgeons faced an unprecedented epidemic of gas gangrene and sepsis that could not be treated by standard antiseptics alone.</p>',
               teacher_notes: {
@@ -27330,7 +27330,7 @@ const edexcel_medicine_data = {
           question_badge: 'Source Utility',
           question_type: 'Source Utility',
           enquiry_question:
-            'How useful is Source A for an enquiry into the severity and infectious nature of wounds caused by artillery shrapnel on the Western Front?',
+            'Study Source A. How useful is Source A for an enquiry into wounds caused by artillery shrapnel on the Western Front?',
           model_answer:
             '<p>Source A is highly useful because an RAMC consulting surgeon explains that irregular, jagged shrapnel fragments travelled at high velocity, shattering bone and forcing filthy uniform wool and manure deep into the wound track. As an official medical report, it provides clinical evidence explaining why Western Front surgeons faced an unprecedented epidemic of gas gangrene and sepsis that could not be treated by standard antiseptics alone.</p>',
           teacher_notes: {
@@ -30662,7 +30662,7 @@ const edexcel_medicine_data = {
               question_badge: 'Source Utility',
               question_type: 'Source Utility',
               enquiry_question:
-                'How useful is Source A for an enquiry into the medical breakthrough of sodium citrate anticoagulation in treating haemorrhagic shock on the battlefield?',
+                'Study Source A. How useful is Source A for an enquiry into the development of blood transfusions on the Western Front?',
               model_answer:
                 '<p>Source A is highly useful because Dr. Lewisohn explains that adding 0.2% sodium citrate prevented blood from clotting, transforming blood transfusion from a dangerous direct vein-to-vein procedure into an indirect treatment using stored sterile flasks. As a clinical scientific paper, it explains the breakthrough that allowed military medics to treat acute haemorrhagic shock without requiring donor and recipient to lie together under artillery fire.</p>',
               teacher_notes: {
@@ -30712,7 +30712,7 @@ const edexcel_medicine_data = {
               question_badge: 'Source Utility',
               question_type: 'Source Utility',
               enquiry_question:
-                'How useful is Source B for an enquiry into the development of citrate-glucose solutions and refrigeration for the long-term preservation of blood cells?',
+                'Study Source B. How useful is Source B for an enquiry into methods of storing blood on the Western Front?',
               model_answer:
                 '<p>Source B is highly useful because Rous and Turner prove that adding dextrose (glucose) and chilling blood prevented red blood cells from breaking down, allowing blood to be stored for up to four weeks without losing oxygen-carrying capacity. As a landmark laboratory study from the Rockefeller Institute, it explains the scientific mechanism that enabled Captain Oswald Robertson to establish the world’s first blood depot at Cambrai in 1917.</p>',
               teacher_notes: {
@@ -30874,7 +30874,7 @@ const edexcel_medicine_data = {
           question_badge: 'Source Utility',
           question_type: 'Source Utility',
           enquiry_question:
-            'How useful is Source A for an enquiry into the medical breakthrough of sodium citrate anticoagulation in treating haemorrhagic shock on the battlefield?',
+            'Study Source A. How useful is Source A for an enquiry into the development of blood transfusions on the Western Front?',
           model_answer:
             '<p>Source A is highly useful because Dr. Lewisohn explains that adding 0.2% sodium citrate prevented blood from clotting, transforming blood transfusion from a dangerous direct vein-to-vein procedure into an indirect treatment using stored sterile flasks. As a clinical scientific paper, it explains the breakthrough that allowed military medics to treat acute haemorrhagic shock without requiring donor and recipient to lie together under artillery fire.</p>',
           teacher_notes: {
@@ -30907,7 +30907,7 @@ const edexcel_medicine_data = {
           question_badge: 'Source Utility',
           question_type: 'Source Utility',
           enquiry_question:
-            'How useful is Source B for an enquiry into the development of citrate-glucose solutions and refrigeration for the long-term preservation of blood cells?',
+            'Study Source B. How useful is Source B for an enquiry into methods of storing blood on the Western Front?',
           model_answer:
             '<p>Source B is highly useful because Rous and Turner prove that adding dextrose (glucose) and chilling blood prevented red blood cells from breaking down, allowing blood to be stored for up to four weeks without losing oxygen-carrying capacity. As a landmark laboratory study from the Rockefeller Institute, it explains the scientific mechanism that enabled Captain Oswald Robertson to establish the world’s first blood depot at Cambrai in 1917.</p>',
           teacher_notes: {

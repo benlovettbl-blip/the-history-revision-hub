@@ -3320,7 +3320,7 @@ const the_shoah_data = {
               'Conclusion: Reach a definitive historical judgment on which moment represented the true point of no return.',
             ],
             sentence_starters: [
-              'To a large extent, it can be argued that Operation Barbarossa in June 1941 was the decisive turning point because...',
+              'One decisive reason was that Operation Barbarossa in June 1941 was the decisive turning point because...',
               'Hitler framed the invasion of the Soviet Union as an ideological Vernichtungskrieg ("war of annihilation"), unleashing...',
               'At sites like Babi Yar in September 1941, the Einsatzgruppen carried out...',
               'However, an alternative perspective is that the decisive turning point occurred at the Wannsee Conference in January 1942, where...',
@@ -3328,7 +3328,7 @@ const the_shoah_data = {
               'In conclusion, Barbarossa was the primary turning point because it crossed the moral threshold from persecution to systematic physical annihilation.',
             ],
             connective_bank: [
-              'To a large extent, it can be argued that...',
+              'One decisive reason was that...',
               'On the one hand, Operation Barbarossa was decisive because...',
               'In particular, this meant that...',
               'On the other hand, an alternative view is that...',
@@ -3348,7 +3348,7 @@ const the_shoah_data = {
             ],
           },
           model_answer:
-            'To a large extent, it can be argued that the German invasion of the Soviet Union in June 1941 was the defining turning point in the development of the Holocaust [4.1, 4.2]. Prior to Operation Barbarossa, Nazi anti-Jewish policy centered on forced emigration, territorial expulsion, and confined ghettoisation. However, Hitler framed the Soviet invasion as a racial Vernichtungskrieg ("war of annihilation") against "Judeo-Bolshevism." Four paramilitary Einsatzgruppen (mobile killing squads) followed directly behind the Wehrmacht, conducting systematic mass shootings across the Baltic states, Belarus, and Ukraine. In ravine massacres such as Babi Yar outside Kyiv, where 33,771 Jewish men, women, and children were murdered in just 48 hours in September 1941, the regime crossed the barrier into total physical genocide.\n\nOn the other hand, historians argue that the true structural turning point occurred with the transition to industrial factory-style extermination coordinated at the Wannsee Conference in January 1942 [4.4, 4.5]. Open-air mass shootings proved psychologically stressful for SS executioners and impossible to conceal. At Wannsee, Reinhard Heydrich and Adolf Eichmann brought together state ministries to organize the deportation of 11 million European Jews to purpose-built death camps under Operation Reinhard (Belzec, Sobibor, Treblinka) utilizing carbon monoxide and Zyklon B gas chambers.\n\nNevertheless, the decision to construct industrial death camps was a logistical adaptation born directly out of the killing methods initiated during Barbarossa. It was in the Soviet killing fields that the Nazi leadership realized mass murder was militarily and politically feasible.\n\nIn conclusion, while Wannsee institutionalized the continent-wide machinery of death, Operation Barbarossa was the fundamental turning point because it marked the ideological decision to transition from expulsion to total annihilation.',
+            'One decisive reason was that the German invasion of the Soviet Union in June 1941 was the defining turning point in the development of the Holocaust [4.1, 4.2]. Prior to Operation Barbarossa, Nazi anti-Jewish policy centered on forced emigration, territorial expulsion, and confined ghettoisation. However, Hitler framed the Soviet invasion as a racial Vernichtungskrieg ("war of annihilation") against "Judeo-Bolshevism." Four paramilitary Einsatzgruppen (mobile killing squads) followed directly behind the Wehrmacht, conducting systematic mass shootings across the Baltic states, Belarus, and Ukraine. In ravine massacres such as Babi Yar outside Kyiv, where 33,771 Jewish men, women, and children were murdered in just 48 hours in September 1941, the regime crossed the barrier into total physical genocide.\n\nOn the other hand, historians argue that the true structural turning point occurred with the transition to industrial factory-style extermination coordinated at the Wannsee Conference in January 1942 [4.4, 4.5]. Open-air mass shootings proved psychologically stressful for SS executioners and impossible to conceal. At Wannsee, Reinhard Heydrich and Adolf Eichmann brought together state ministries to organize the deportation of 11 million European Jews to purpose-built death camps under Operation Reinhard (Belzec, Sobibor, Treblinka) utilizing carbon monoxide and Zyklon B gas chambers.\n\nNevertheless, the decision to construct industrial death camps was a logistical adaptation born directly out of the killing methods initiated during Barbarossa. It was in the Soviet killing fields that the Nazi leadership realized mass murder was militarily and politically feasible.\n\nIn conclusion, while Wannsee institutionalized the continent-wide machinery of death, Operation Barbarossa was the fundamental turning point because it marked the ideological decision to transition from expulsion to total annihilation.',
           topic: 'Question 4: Evaluative Statement Essay [12 marks • 15 mins]',
         },
       ],
@@ -5817,7 +5817,7 @@ const the_shoah_data = {
               'In conclusion, liberation secured biological survival, but true suffering endured for decades because...',
             ],
             connective_bank: [
-              'To a large extent, it can be argued that...',
+              'One decisive reason was that...',
               'On the one hand, Allied liberation brought immediate deliverance from...',
               'However, intense suffering endured because...',
               'In particular, the geopolitical struggle over British Mandate Palestine meant that...',

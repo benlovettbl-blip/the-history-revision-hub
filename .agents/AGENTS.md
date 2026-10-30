@@ -105,17 +105,6 @@ Act as an experienced app builder and an experienced history teacher. Maintain a
 4. **Milestones & Strategic Backlog:** Strategic milestones, reprint reminders, and pedagogical standards belong in `DEPARTMENT_MASTER_PLAN_AND_TRACKER.md` and `WORKBOOK_STATUS_AND_ROLLOUT_TRACKER.md`, not as per-response conversational boilerplate.
 5. **Strict Ban on 3-Recommendation Dumps (Single Next Step Standard):** Strictly ban dumping multi-paragraph 3-recommendation essay blocks at the end of turns. Conclude with a single, clear, actionable next step or decision in plain English.
 
-## Context-Triggered Reprographics Reprint Guardrail (Zero Spam, 100% Recall)
-To ensure the Christine Counsell 4-Act V2 workbooks (staged in `data_v2_4act.js` / branch `feat/4act-v2-reprint`) are never forgotten when the department prepares printing batches, you MUST proactively trigger this check:
-1. **Trigger Conditions:** Whenever the conversation or user mentions:
-   - Printing, reprographics, ordering workbooks, or compiling print PDFs.
-   - Modifying or exporting workbooks for **Year 7 Sanitation** (`water_and_sanitation`), **Year 8 Early Modern** (`early_modern_world`), or **Year 9 Causes of the Great War** (`great_war`).
-   - End-of-term preparations, vacation reprint cycles, or preparing materials for the upcoming term.
-2. **Mandatory Action:** You MUST proactively alert the user:
-   > 🔔 **Reprographics Reprint Window Check:** We have Christine Counsell 4-Act V2 double-page workbooks staged in `data_v2_4act.js` on branch `feat/4act-v2-reprint` for Year 7 Sanitation, Year 8 Early Modern, and Year 9 Great War. Before sending orders to reprographics, would you like to review and promote the V2 curriculum to live?
-3. **Zero Spam Policy:** If the conversation is NOT about printing, reprographics, term reprint, or these three frozen units, do NOT output this reminder.
-
-
 ## Strict Ban on In-Workbook "Do Now" Tasks & Standalone Vocab Fillers
 STRICT RULE: Modern Gold Standard printed pupil workbooks must NEVER contain "Do Now" retrieval starters or standalone vocabulary tasks (such as cloze summaries, vocabulary mapping, odd-one-out, or Frayer models).
 1. **Separation of Interactive Starters vs Printed Workbooks:** "Do Now" retrieval starter tasks belong strictly in the digital interactive web application or front-of-class starter slides. Printing them in workbooks wastes valuable physical page budget that must be dedicated to chronological note-taking and extended disciplinary writing.
@@ -360,7 +349,7 @@ Whenever authoring, enriching, or refactoring curriculum data (`data.js` or `dat
 
 ## Departmental Roadmap Tracking & Perpetual Reminder Protocol
 To ensure that large-scale curriculum improvements and delivery rollouts are never lost or forgotten across working sessions:
-1. **Central Progress Ledger:** The project maintains an official status tracker in `DEPARTMENTAL_ROADMAP.md` documenting the audit and implementation status of all 16 units across our core pedagogical pillars (4-Act Structure, Reading Age Calibration, `delivery_plan`, 2-Page Workbook, and SOW Sync).
+1. **Central Progress Ledger:** The project maintains an official status tracker in `DEPARTMENTAL_ROADMAP.md` documenting the audit and implementation status of all units across our core pedagogical pillars (5-Stage Chronological Spine, Reading Age Calibration, `delivery_plan`, 2-Page Workbook, and SOW Sync).
 2. **Mandatory Per-Turn Proactive Roadmap Prompt:** At the conclusion of EVERY agent turn (in your proactive recommendations), you MUST:
    - Inspect `DEPARTMENTAL_ROADMAP.md`.
    - Identify the current active unit and the exact next incomplete lesson or milestone in the rollout.
@@ -369,9 +358,9 @@ To ensure that large-scale curriculum improvements and delivery rollouts are nev
 ## Permanent Departmental Milestone Memory: Medicine & Middle East KT2 Completed
 STRICT DEPARTMENTAL RECORD & ACTIVE MEMORY:
 1. **Edexcel Paper 1 (Medicine in Britain & Western Front):**
-   - **Status: COMPLETED (GREEN).** All lessons across the thematic eras (Medieval, Renaissance, 18th/19th Century, Modern) and Section A Western Front are fully authored, enriched with 4-Act Christine Counsell narrative arcs, and compiled.
+   - **Status: COMPLETED (GREEN).** All lessons across the thematic eras (Medieval, Renaissance, 18th/19th Century, Modern) and Section A Western Front are fully authored, enriched with 5-Stage Chronological Inquiry Spines, and compiled.
 2. **Edexcel Paper 2 (Conflict in the Middle East, 1945–1995 - `cme_new`):**
-   - **Key Topic 2 (The Escalating Conflict, 1964–1973):** **COMPLETED (GREEN).** All 5 enquiry lessons (KT 2.1 to KT 2.5) are authored in 4-Act structure. The flagship **16-Page Double-Page Spread Pupil Workbook** (`pupil_workbook_KT2.html`) is 100% finalized, featuring the publisher-grade cover (108mm portrait photographic plate, docked 66mm editorial suite), 5 double-page enquiry spreads, living timeline, master knowledge organiser, Grade 9 masterclass, and assessment tracker.
+   - **Key Topic 2 (The Escalating Conflict, 1964–1973):** **COMPLETED (GREEN).** All 5 enquiry lessons (KT 2.1 to KT 2.5) are authored in canonical 5-Stage structure. The flagship **16-Page Double-Page Spread Pupil Workbook** (`pupil_workbook_KT2.html`) is 100% finalized, featuring the publisher-grade cover (108mm portrait photographic plate, docked 66mm editorial suite), 5 double-page enquiry spreads, living timeline, master knowledge organiser, Grade 9 masterclass, and assessment tracker.
    - **Key Topic 1 & Key Topic 3 (`cme_new`):** **PRIORITY #1 TO FINISH SOON (AMBER).** These units must be converted to this newly established 16-page double-page booklet template moving forward.
 
 ## Universal 16-Page Double-Page Pupil Workbook Standard

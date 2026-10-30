@@ -1970,6 +1970,22 @@
           "hinge_question": "Why did Sharon's decision to advance all the way to Beirut provoke fierce condemnation both internationally and within the Israeli government?"
         },
         {
+          "lesson_num": 11,
+          "lesson_title": "KT 3.2: The Palestinian Issue: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993",
+          "source_id": "Milestone 20",
+          "artifact_title": "Chief of Staff Rafael Eitan and Amos Yaron During the 1982 Lebanon Campaign",
+          "date": "June 1982",
+          "creator": "Michael Zarfati / Bamahane / IDF Spokesperson's Unit",
+          "repository": "IDF Archive / Wikimedia Israel (VRTS #2021020710002871)",
+          "accession_id": "IDF-1982-LB-02",
+          "rights_status": "Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)",
+          "commercial_use_permitted": true,
+          "source_url": "https://commons.wikimedia.org/wiki/File:1982_Lebanon_War_II.jpg",
+          "asset_path": "/units/cme_new/assets/cme_eitan_yaron_beirut_1982.jpg",
+          "caption": "IDF Chief of Staff Rafael Eitan conferring with Beirut commander Amos Yaron during the 1982 campaign; both commanders were formally censured by the Kahan Commission.",
+          "hinge_question": "Why did the Kahan Commission censure senior military officers like Chief of Staff Rafael Eitan and Amos Yaron alongside political leaders?"
+        },
+        {
           "lesson_num": 12,
           "lesson_title": "KT 3.3: Attempts at a Solution: From the Oslo Accords to Oslo II, 1988–1995",
           "source_id": "Source A",
@@ -2220,16 +2236,18 @@
         {
           "lesson_num": 7,
           "lesson_title": "KT 2.3 Enquiry: \"Land for Peace\" or Permanent Stalemate: How Did the 1967 Conquered Territories Transform the Conflict?",
-          "source_id": "Narrative Plate 3",
-          "artifact_title": "Settlement Geography",
-          "date": "c. 19th–20th Century",
-          "creator": "Official Archival Record / Contemporary Artist",
-          "repository": "Israel State Archives / UNRWA Archives / National Archives (UK)",
-          "accession_id": "ISA / UNRWA Photo Archive / FCO 93",
-          "rights_status": "Public Domain / Educational Fair Dealing (Section 29 CDPA 1988)",
+          "source_id": "Narrative Plate 2",
+          "artifact_title": "Fortifications Along the Suez Canal: The Bar-Lev Line (November 1970)",
+          "date": "20 November 1970",
+          "creator": "IDF Spokesperson's Unit / Israel Defense Forces",
+          "repository": "Israel Defense Forces Archives / Wikimedia Commons",
+          "accession_id": "IDF-PHOTO-1970-11-20-BL",
+          "rights_status": "Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)",
           "commercial_use_permitted": true,
-          "source_url": "https://www.archives.gov.il",
-          "asset_path": "/units/cme_new/assets/map_lesson4.png"
+          "source_url": "https://commons.wikimedia.org/wiki/File:Bar_Lev_Line,_November_1970.jpg",
+          "asset_path": "/images/cme_bar_lev_line_fortifications_1970.jpg",
+          "caption": "Fortifying the Suez Canal: IDF soldiers and armored units constructing fortified bunker complexes (maozim) into the massive 20-metre sand ramparts of the Bar-Lev Line along the eastern bank of the Suez Canal (November 1970).",
+          "hinge_question": "How did Israeli reliance on the massive physical ramparts of the Bar-Lev Line breed dangerous military complacency (the 'Conception') before 1973?"
         },
         {
           "lesson_num": 8,

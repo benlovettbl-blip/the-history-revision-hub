@@ -343,7 +343,7 @@ export function renderCmeLivingTimeline(container) {
           flex: 1;
         }
 
-        /* Image Box */
+        /* Image Box - Uncropped Authentic Archival Presentation */
         .cme-tl-thumb-box {
           position: relative;
           border-radius: 6px;
@@ -351,14 +351,20 @@ export function renderCmeLivingTimeline(container) {
           border: 1px solid #cbd5e1;
           background: #0f172a;
           cursor: pointer;
-          height: 140px;
+          height: 185px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .cme-tl-thumb-box img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+          max-width: 100%;
+          max-height: 100%;
+          width: auto;
+          height: auto;
+          object-fit: contain;
           display: block;
+          margin: 0 auto;
           transition: transform 0.3s ease;
         }
 
