@@ -248,6 +248,59 @@ const quizCards = [
   },
 ];
 
+// Canonical Stage Questions matching render_the_shoah_workbook.cjs
+const STAGE_QUESTIONS = {
+  1: [
+    'What made European Jewish life before 1939 so demographically diverse?',
+    'Why was Eastern Europe renowned as the heartland of Yiddish culture?',
+    'How does the First World War service of German Jews disprove Nazi stereotypes?',
+    'What distinguished the Sephardic Jewish experience in Southern Europe?',
+    'Why was the 19th-century invention of racial antisemitism so deadly?',
+  ],
+  2: [
+    'Why did the Nazi state begin persecution with economic boycotts and civil service purges?',
+    'How did the 1935 Nuremberg Laws legally codify racial discrimination into German law?',
+    'What does Victor Klemperer’s diary reveal about the psychological reality of "social death"?',
+    'Why was the November Pogrom (Kristallnacht) a violent turning point in state policy?',
+    'Why did the Evian Conference fail to resolve the desperate Jewish refugee crisis?',
+  ],
+  3: [
+    'How did the conquest of Poland fundamentally expand the scale of Nazi persecution?',
+    'Why was the mandatory Star of David armband such a devastating psychological weapon?',
+    'What physical and demographic conditions defined life inside the sealed Warsaw Ghetto?',
+    'How did Nazi food administrators use caloric rationing as a tool of slow mass murder?',
+    'Why was Emanuel Ringelblum’s Oneg Shabbat archive an act of extraordinary spiritual resistance?',
+  ],
+  4: [
+    'Why did the invasion of the Soviet Union mark a fundamental shift to ideological total war?',
+    'How did the Einsatzgruppen’s killing mandate expand from officials to entire communities?',
+    'What made the mass execution at Babi Yar such an unprecedented manifestation of murder?',
+    'What role did local auxiliary police play in massacres across Lithuania, Latvia, and Ukraine?',
+    'Why did the psychological strain on executioners drive the transition toward industrial gas vans?',
+  ],
+  5: [
+    'Why was the Wannsee Conference a meeting of bureaucratic coordination rather than policy creation?',
+    'What made the three Operation Reinhard camps fundamentally distinct from concentration camps?',
+    'How did the dual function of Auschwitz-Birkenau combine slave labour with industrial murder?',
+    'Why was the Warsaw Ghetto Uprising a monumental triumph of human courage and dignity?',
+    'How do armed uprisings inside the death camps disprove the myth of passive Jewish victimhood?',
+  ],
+  6: [
+    'How did ordinary civil servants and railway schedulers contribute to the machinery of murder?',
+    'Why was collaboration by foreign governments like Vichy France and Hungary indispensable?',
+    'To what extent did passive bystander indifference enable the perpetrators to succeed?',
+    'What unique factors enabled the people of Denmark to rescue over 95% of their Jewish population?',
+    'Why did the Allied powers decide against bombing the railway tracks leading to Auschwitz?',
+  ],
+  7: [
+    'Why did the SS force 250,000 starving prisoners onto death marches in the final winter of war?',
+    'How did the liberation of Bergen-Belsen shatter any remaining doubt about the scale of atrocities?',
+    'Why did post-war trauma and the struggle for British Mandate Palestine keep 250,000 survivors in DP camps?',
+    'How did Raphael Lemkin and the Nuremberg Trials fundamentally transform international law?',
+    'What was permanently lost in the Shoah, and what is our ethical responsibility to history?',
+  ],
+};
+
 function buildHtml() {
   const unitData = loadUnitData();
   const heroImageBase64 = getBase64Image(unitData.homepage_background || '/images/shoah_cover.jpg');
@@ -1021,6 +1074,20 @@ function buildHtml() {
       line-height: 1.15;
     }
 
+    .block-workbook-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 7.6pt;
+      font-style: italic;
+      font-weight: 600;
+      color: #1e3a8a;
+      background: #f1f5f9;
+      border-left: 2.5px solid #1e3a8a;
+      padding: 2px 5px;
+      margin-bottom: 3.5px;
+      border-radius: 0 2px 2px 0;
+      line-height: 1.2;
+    }
+
     .block-prose {
       font-family: 'Lora', Georgia, serif;
       color: #1e293b;
@@ -1033,26 +1100,26 @@ function buildHtml() {
     }
 
     /* Calibrated typography: fills down to footer with ~10-20px clearance, 0px overflow */
-    .page-lesson-1 .block-section { margin-bottom: 4.5px; }
-    .page-lesson-1 .block-prose { font-size: 10.15pt; line-height: 1.45; }
+    .page-lesson-1 .block-section { margin-bottom: 3.5px; }
+    .page-lesson-1 .block-prose { font-size: 9.35pt; line-height: 1.38; }
 
-    .page-lesson-2 .block-section { margin-bottom: 3.2px; }
-    .page-lesson-2 .block-prose { font-size: 9.42pt; line-height: 1.37; }
+    .page-lesson-2 .block-section { margin-bottom: 2.5px; }
+    .page-lesson-2 .block-prose { font-size: 8.85pt; line-height: 1.34; }
 
-    .page-lesson-3 .block-section { margin-bottom: 3.8px; }
-    .page-lesson-3 .block-prose { font-size: 9.85pt; line-height: 1.41; }
+    .page-lesson-3 .block-section { margin-bottom: 2.8px; }
+    .page-lesson-3 .block-prose { font-size: 9.15pt; line-height: 1.36; }
 
-    .page-lesson-4 .block-section { margin-bottom: 3.5px; }
-    .page-lesson-4 .block-prose { font-size: 9.60pt; line-height: 1.39; }
+    .page-lesson-4 .block-section { margin-bottom: 2.8px; }
+    .page-lesson-4 .block-prose { font-size: 8.95pt; line-height: 1.34; }
 
-    .page-lesson-5 .block-section { margin-bottom: 3.0px; }
-    .page-lesson-5 .block-prose { font-size: 9.22pt; line-height: 1.35; }
+    .page-lesson-5 .block-section { margin-bottom: 2.5px; }
+    .page-lesson-5 .block-prose { font-size: 8.75pt; line-height: 1.32; }
 
-    .page-lesson-6 .block-section { margin-bottom: 3.2px; }
-    .page-lesson-6 .block-prose { font-size: 9.32pt; line-height: 1.36; }
+    .page-lesson-6 .block-section { margin-bottom: 2.5px; }
+    .page-lesson-6 .block-prose { font-size: 8.80pt; line-height: 1.33; }
 
-    .page-lesson-7 .block-section { margin-bottom: 3.2px; }
-    .page-lesson-7 .block-prose { font-size: 9.35pt; line-height: 1.36; }
+    .page-lesson-7 .block-section { margin-bottom: 2.5px; }
+    .page-lesson-7 .block-prose { font-size: 8.85pt; line-height: 1.33; }
 
     /* ==========================================================================
        PAGE 11: DISCIPLINARY HISTORIOGRAPHY & MEMORY
@@ -1675,6 +1742,7 @@ function buildHtml() {
               <span class="block-ref">[${blockRef}]</span>
               <span class="block-title">${titleWithoutRef}</span>
             </div>
+            ${STAGE_QUESTIONS[enquiryNum] && STAGE_QUESTIONS[enquiryNum][bIdx] ? `<div class="block-workbook-question">${STAGE_QUESTIONS[enquiryNum][bIdx]}</div>` : ''}
             <p class="block-prose">
               ${cleanText}
             </p>
@@ -1863,6 +1931,62 @@ async function main() {
     const page = await browser.newPage();
     await page.setViewport({ width: 1200, height: 1600 });
     await page.setContent(html, { waitUntil: 'networkidle0', timeout: 120000 });
+
+    // Dynamic Auto-Balancing Typography Engine
+    console.log(
+      '\n[Auto-Balancer] Dynamically calibrating font metrics to guarantee 0px overflow & >= 95% fill...',
+    );
+    await page.evaluate(() => {
+      const lessonPages = document.querySelectorAll('[class*="page-lesson-"]');
+      lessonPages.forEach((p) => {
+        const footer = p.querySelector('.running-footer');
+        const proseEls = p.querySelectorAll('.block-prose');
+        const sections = p.querySelectorAll('.block-section');
+        if (proseEls.length === 0 || !footer) return;
+
+        const comp = window.getComputedStyle(proseEls[0]);
+        let size = parseFloat(comp.fontSize) * (72 / 96);
+        let lh = 1.36;
+        let secMargin = 3.5;
+
+        const getOverlap = () => {
+          const fTop = footer.getBoundingClientRect().top;
+          const children = Array.from(
+            p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question'),
+          );
+          const maxB = Math.max(...children.map((c) => c.getBoundingClientRect().bottom));
+          return maxB - fTop;
+        };
+
+        while (getOverlap() > -10 && size > 7.6) {
+          size -= 0.1;
+          lh = Math.max(1.28, lh - 0.01);
+          secMargin = Math.max(1.8, secMargin - 0.1);
+          proseEls.forEach((el) => {
+            el.style.fontSize = size.toFixed(2) + 'pt';
+            el.style.lineHeight = lh.toFixed(2);
+          });
+          sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
+        }
+
+        while (getOverlap() < -45 && size < 10.5) {
+          size += 0.1;
+          lh = Math.min(1.45, lh + 0.01);
+          secMargin = Math.min(5.0, secMargin + 0.1);
+          proseEls.forEach((el) => {
+            el.style.fontSize = size.toFixed(2) + 'pt';
+            el.style.lineHeight = lh.toFixed(2);
+          });
+          sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
+        }
+      });
+    });
+
+    const calibratedHtml = await page.content();
+    fs.writeFileSync(publicHtmlPath, calibratedHtml, 'utf8');
+    if (fs.existsSync(path.dirname(unitsHtmlPath))) {
+      fs.writeFileSync(unitsHtmlPath, calibratedHtml, 'utf8');
+    }
 
     // Run automated space budget audit
     console.log('\n🔍 Running Automated Space Budget Audit on 12-Page Textbook...');

@@ -86,6 +86,45 @@ function loadUnitData() {
   return sandbox.module.exports.id ? sandbox.module.exports : sandbox.unitData;
 }
 
+// Canonical Stage Questions matching render_first_british_empire_workbook.cjs
+const STAGE_QUESTIONS = {
+  1: [
+    'Why did Queen Elizabeth I grant a royal monopoly charter?',
+    'How did the Company establish fortified coastal factories in India?',
+    'Why did tensions erupt into crisis with Nawab Siraj ud-Daulah?',
+    'How did Robert Clive achieve victory at the Battle of Plassey?',
+    'How did the 1765 Diwani transform a company into a sovereign ruler?',
+  ],
+  2: [
+    'How did the Triangular Trade connect Britain, Africa, and the Americas?',
+    'How did royal monopolies and the Asiento expand British slaving?',
+    'What forensic conditions characterised the horrors of the Middle Passage?',
+    'How did the Zong massacre expose the dehumanising logic of chattel slavery?',
+    'How did the Brookes diagram and Equiano’s voice ignite abolitionism?',
+  ],
+  3: [
+    'How did Cromwell’s conquest of Jamaica birth the Maroon communities?',
+    'Why was sugar cultivation described as an agro-industrial death machine?',
+    'How did enslaved labourers engage in daily sabotage and cultural survival?',
+    'How did Queen Nanny lead the Windward Maroons to military victory?',
+    'Why was the 1739 Peace Treaty both a triumph and a painful compromise?',
+  ],
+  4: [
+    'Why did British victory in the Seven Years’ War create imperial conflict?',
+    'Why did the Stamp Act provoke the cry "No taxation without representation"?',
+    'How was the Boston Massacre transformed into revolutionary propaganda?',
+    'Why did the 1773 Tea Act provoke outrage even though it lowered tea prices?',
+    'How did the Boston Tea Party shatter relations between Britain and America?',
+  ],
+  5: [
+    'How did Lexington, Concord, and Dunmore’s Proclamation start the war?',
+    'What central moral paradox lay at the heart of the 1776 Declaration?',
+    'How did Saratoga and the French alliance turn the rebellion into a global war?',
+    'How did French naval power force General Cornwallis to surrender at Yorktown?',
+    'How did the Treaty of Paris and the Black Loyalists conclude the First Empire?',
+  ],
+};
+
 // 12 Defining Chronological Milestones for Page 2
 const milestones = [
   {
@@ -748,6 +787,27 @@ function buildHtml() {
       color: #0f172a;
     }
 
+    .block-workbook-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 8.4pt;
+      font-style: italic;
+      font-weight: 600;
+      color: #1e3a8a;
+      background: #f1f5f9;
+      border-left: 2.5px solid #1e3a8a;
+      padding: 3px 6px;
+      margin-bottom: 5px;
+      border-radius: 0 3px 3px 0;
+      line-height: 1.25;
+    }
+
+    /* Calibrated base styling per enquiry */
+    .page-lesson-1 .block-prose { font-size: 9.5pt; line-height: 1.43; }
+    .page-lesson-2 .block-prose { font-size: 9.55pt; line-height: 1.43; }
+    .page-lesson-3 .block-prose { font-size: 9.5pt; line-height: 1.43; }
+    .page-lesson-4 .block-prose { font-size: 9.6pt; line-height: 1.44; }
+    .page-lesson-5 .block-prose { font-size: 9.4pt; line-height: 1.42; }
+
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
        ========================================================================== */
@@ -969,6 +1029,7 @@ function buildHtml() {
       const blocks = (lesson.narrative_blocks || []).filter(
         (b) => b.text && b.type !== 'photo_slider',
       );
+      const questions = STAGE_QUESTIONS[lIdx + 1] || [];
 
       return `
     <div class="page page-lesson page-lesson-${lIdx + 1}" id="page-${pageNum}" data-page="${pageNum}">
@@ -995,12 +1056,14 @@ function buildHtml() {
           ${blocks
             .map((block, bIdx) => {
               const prose = cleanProse(block.text);
+              const qText = questions[bIdx] || '';
               return `
               <div class="block-section">
                 <div class="block-header">
                   <span class="block-ref">[${lIdx + 1}.${bIdx + 1}]</span>
                   <span class="block-title">${block.title}</span>
                 </div>
+                ${qText ? `<div class="block-workbook-question">${qText}</div>` : ''}
                 <p class="block-prose">${prose}</p>
               </div>
             `;
@@ -1113,8 +1176,8 @@ async function run() {
       const sections = p.querySelectorAll('.block-section');
       if (proseEls.length === 0 || !footer) return;
 
-      let size = 10.6;
-      let lh = 1.49;
+      let size = 9.8;
+      let lh = 1.45;
       let secMargin = 6.0;
 
       const getOverlap = () => {

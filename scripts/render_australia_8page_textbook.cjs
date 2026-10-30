@@ -72,14 +72,58 @@ function cleanProse(text) {
 function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'australia', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
-  raw = raw.replace(/export\s+const\s+([a-zA-Z0-9_$]+)\s*=/g, 'const $1 =')
-           .replace(/export\s*\{[^}]*\};?/g, '')
-           .replace(/export\s+default\s+[^;]+;?/g, '');
+  raw = raw
+    .replace(/export\s+const\s+([a-zA-Z0-9_$]+)\s*=/g, 'const $1 =')
+    .replace(/export\s*\{[^}]*\};?/g, '')
+    .replace(/export\s+default\s+[^;]+;?/g, '');
   const moduleObj = { exports: {} };
   const sandbox = { module: moduleObj, exports: moduleObj.exports, console, unitData: {} };
   vm.runInContext(raw, vm.createContext(sandbox));
-  return sandbox.module.exports.id ? sandbox.module.exports : (sandbox.unitData.id ? sandbox.unitData : sandbox.module.exports);
+  return sandbox.module.exports.id
+    ? sandbox.module.exports
+    : sandbox.unitData.id
+      ? sandbox.unitData
+      : sandbox.module.exports;
 }
+
+// Canonical Stage Questions matching render_australia_workbook.cjs
+const STAGE_QUESTIONS = {
+  1: [
+    'Why did the British Admiralty issue secret imperial instructions to Captain Cook?',
+    'How did Tupaia’s navigational mastery enable the Endeavour to reach New Zealand and Australia?',
+    'How did the Dharawal and Gweagal warriors defend their ancestral lands at Botany Bay?',
+    'Why did Captain Cook claim eastern Australia on Possession Island without a treaty?',
+    'How did the legal fiction of terra nullius justify British dispossession of First Nations peoples?',
+  ],
+  2: [
+    'Why did the loss of the American colonies force Britain to establish a penal colony in Australia?',
+    'How did Captain Arthur Phillip manage the 15,000-mile voyage of the First Fleet?',
+    'Why did Governor Phillip abandon Botany Bay and establish the settlement at Sydney Cove?',
+    'What factors pushed the early settlement at Sydney Cove to the brink of starvation?',
+    'How did the system of convict labour balance severe punishment with the prospect of freedom?',
+  ],
+  3: [
+    'How did First Nations peoples manage and govern their lands before 1788?',
+    'What was the impact of the 1789 smallpox epidemic on the Eora people of Sydney?',
+    'Why did Bennelong act as a cultural intermediary between the British and the Eora?',
+    'How did Pemulwuy lead Indigenous armed resistance against British expansion?',
+    'Why did the Hawkesbury River expansion lead to protracted frontier warfare?',
+  ],
+  4: [
+    'Why did the British settlement of Van Diemen’s Land trigger violent conflict with the Palawa people?',
+    'How did Governor Arthur’s martial law and the ‘Black Line’ escalate the Black War?',
+    'Why was the relocation of the Palawa to Wybalenna on Flinders Island catastrophic?',
+    'How did the Merino wool boom drive violent frontier expansion across the Australian interior?',
+    'Why was the 1838 Myall Creek trial an unprecedented turning point in colonial Australian law?',
+  ],
+  5: [
+    'How did the 1851 gold discoveries transform Australia from a penal colony into an economic powerhouse?',
+    'Why did the monthly miner’s licence fee provoke widespread outrage among the gold diggers?',
+    'What was the significance of the 1854 Eureka Stockade for the development of Australian democracy?',
+    'How did anti-Chinese hostility on the goldfields lead directly to the 1901 White Australia Policy?',
+    'How did the 1938 Day of Mourning and the 1992 Mabo Decision reshape modern Australian history?',
+  ],
+};
 
 // Canonical unit narrative overview for Front Cover
 const canonicalOverview = {
@@ -866,6 +910,27 @@ function buildHtml() {
       color: #0f172a;
     }
 
+    .block-workbook-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 8.4pt;
+      font-style: italic;
+      font-weight: 600;
+      color: #1e3a8a;
+      background: #f1f5f9;
+      border-left: 2.5px solid #1e3a8a;
+      padding: 3px 6px;
+      margin-bottom: 5px;
+      border-radius: 0 3px 3px 0;
+      line-height: 1.25;
+    }
+
+    /* Calibrated base styling per enquiry */
+    .page-lesson-1 .block-prose { font-size: 9.5pt; line-height: 1.43; }
+    .page-lesson-2 .block-prose { font-size: 9.5pt; line-height: 1.43; }
+    .page-lesson-3 .block-prose { font-size: 9.55pt; line-height: 1.43; }
+    .page-lesson-4 .block-prose { font-size: 9.45pt; line-height: 1.42; }
+    .page-lesson-5 .block-prose { font-size: 9.4pt; line-height: 1.42; }
+
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
        ========================================================================== */
@@ -1088,9 +1153,10 @@ function buildHtml() {
       const blocks = (lesson.narrative_blocks || []).filter(
         (b) => b.text && b.type !== 'photo_slider',
       );
+      const questions = STAGE_QUESTIONS[enquiryNum] || [];
 
       return `
-    <div class="page page-lesson" id="page-${pageNum}" data-page="${pageNum}">
+    <div class="page page-lesson page-lesson-${enquiryNum}" id="page-${pageNum}" data-page="${pageNum}">
       <div class="running-header">
         <span>THE HISTORY REVISION HUB &bull; KS3 HISTORY</span>
         <span class="sub-badge">Enquiry 0${enquiryNum} &bull; Page ${pageNum}</span>
@@ -1113,12 +1179,14 @@ function buildHtml() {
           ${blocks
             .map((b, bIdx) => {
               const cleaned = cleanProse(b.text);
+              const qText = questions[bIdx] || '';
               return `
               <div class="block-section">
                 <div class="block-header">
                   <span class="block-ref">[${enquiryNum}.${bIdx + 1}]</span>
                   <span class="block-title">${b.title || ''}</span>
                 </div>
+                ${qText ? `<div class="block-workbook-question">${qText}</div>` : ''}
                 <p class="block-prose">${cleaned}</p>
               </div>
             `;
@@ -1231,8 +1299,8 @@ async function run() {
       const sections = p.querySelectorAll('.block-section');
       if (proseEls.length === 0 || !footer) return;
 
-      let size = 10.6;
-      let lh = 1.49;
+      let size = 9.8;
+      let lh = 1.45;
       let secMargin = 6.0;
 
       const getOverlap = () => {

@@ -73,12 +73,51 @@ function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'great_war_part2', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
   raw =
-    raw
-      .replace(/export\s+const\s+unitData\s*=/g, 'const unitData =')
-      .replace(/export\s+default\s+unitData;?/g, '')
-      .replace(/export\s*\{[^}]*\};?/g, '') + '; unitData;';
+    raw.replace(/export\s+default\s+[^;]+;?/g, '').replace(/export\s*\{[^}]*\};?/g, '') +
+    '\n; great_war_part2_data;';
   return vm.runInNewContext(raw);
 }
+
+// ============================================================================
+// CANONICAL STAGE QUESTIONS (MATCHING render_great_war_part2_twopage_workbook.cjs)
+// ============================================================================
+const STAGE_QUESTIONS = {
+  1: [
+    'What forced Britain to launch Kitchener’s urgent call for 500,000 volunteers?',
+    'How did the invasion of Belgium spark genuine moral outrage and civic duty?',
+    'Why did workplace camaraderie and local pride drive the formation of Pals Battalions?',
+    'In what ways did poverty, adventure, and the King’s Shilling lure young recruits?',
+    'How did state propaganda and social coercion make refusal to enlist unbearable?',
+  ],
+  2: [
+    'What forced armies underground into a 400-mile line of industrial stalemate?',
+    'How was the three-tier trench system constructed, traversed, and defended?',
+    'What lethal physical and psychological trauma did infantry endure in the mud?',
+    'Why did the First Day of the Somme become the bloodiest disaster in British history?',
+    'Was Sir Douglas Haig a callous "butcher" or a commander learning total war?',
+  ],
+  3: [
+    'Why was Britain completely dependent on mobilising 4 million imperial subjects?',
+    'How crucially did 1.5 million Indian soldiers save the crumbling Allied line at Ypres?',
+    'Why did the catastrophe of Gallipoli forge national identity for Australia and New Zealand?',
+    'In what ways did the Chinese Labour Corps and African Pioneers sustain Allied logistics?',
+    'Why were non-white colonial soldiers denied equal pensions, medals, and remembrance?',
+  ],
+  4: [
+    'In what ways did DORA grant the British state unprecedented authoritarian control?',
+    'What forced David Lloyd George to nationalise munitions factories in 1915?',
+    'Why did catastrophic frontline casualties force Britain to impose conscription in 1916?',
+    'How did 1 million "Canary Girls" transform industrial production despite toxic hazards?',
+    'Why did unrestricted German submarine warfare push Britain to the brink of starvation?',
+  ],
+  5: [
+    'What forced the German military to concede defeat and accept the Armistice in 1918?',
+    'How did conflicting national motives divide Clemenceau, Lloyd George, and Wilson?',
+    'Why did Germans across all political parties denounce the Treaty terms as an unjust "Diktat"?',
+    'How did Article 231, Keynes’ warning, and Will Dyson’s cartoon predict future catastrophe?',
+    'The Historical Verdict: Was Versailles an impossibly harsh peace or an unenforced compromise?',
+  ],
+};
 
 // ============================================================================
 // 60 CANONICAL KNOWLEDGE RETRIEVAL QUESTIONS (10 PER BOX / PART)
@@ -221,6 +260,7 @@ function buildNarrativeTextbookHtml() {
               <span class="block-date">${b1.date || ''}</span>
               <h2 class="block-title">${b1.title || ''}</h2>
             </div>
+            ${STAGE_QUESTIONS[num] && STAGE_QUESTIONS[num][0] ? `<div class="block-workbook-question">${STAGE_QUESTIONS[num][0]}</div>` : ''}
             ${(b1.paras || [b1.text])
               .map(
                 (p) => `
@@ -236,6 +276,7 @@ function buildNarrativeTextbookHtml() {
               <span class="block-date">${b2.date || ''}</span>
               <h2 class="block-title">${b2.title || ''}</h2>
             </div>
+            ${STAGE_QUESTIONS[num] && STAGE_QUESTIONS[num][1] ? `<div class="block-workbook-question">${STAGE_QUESTIONS[num][1]}</div>` : ''}
             ${(b2.paras || [b2.text])
               .map(
                 (p) => `
@@ -283,6 +324,7 @@ function buildNarrativeTextbookHtml() {
               <span class="block-date">${b3.date || ''}</span>
               <h2 class="block-title">${b3.title || ''}</h2>
             </div>
+            ${STAGE_QUESTIONS[num] && STAGE_QUESTIONS[num][2] ? `<div class="block-workbook-question">${STAGE_QUESTIONS[num][2]}</div>` : ''}
             ${(b3.paras || [b3.text])
               .map(
                 (p) => `
@@ -298,6 +340,7 @@ function buildNarrativeTextbookHtml() {
               <span class="block-date">${b4.date || ''}</span>
               <h2 class="block-title">${b4.title || ''}</h2>
             </div>
+            ${STAGE_QUESTIONS[num] && STAGE_QUESTIONS[num][3] ? `<div class="block-workbook-question">${STAGE_QUESTIONS[num][3]}</div>` : ''}
             ${(b4.paras || [b4.text])
               .map(
                 (p) => `
@@ -313,6 +356,7 @@ function buildNarrativeTextbookHtml() {
               <span class="block-date">${b5.date || ''}</span>
               <h2 class="block-title">${b5.title || ''}</h2>
             </div>
+            ${STAGE_QUESTIONS[num] && STAGE_QUESTIONS[num][4] ? `<div class="block-workbook-question">${STAGE_QUESTIONS[num][4]}</div>` : ''}
             ${(b5.paras || [b5.text])
               .map(
                 (p) => `
@@ -1003,6 +1047,19 @@ function buildNarrativeTextbookHtml() {
       margin-top: 1px;
       line-height: 1.25;
     }
+    .block-workbook-question {
+      font-family: var(--font-display, 'Playfair Display', Georgia, serif);
+      font-size: 8.4pt;
+      font-style: italic;
+      font-weight: 600;
+      color: #8b0000;
+      background: #fdf2f2;
+      border-left: 2.5px solid #8b0000;
+      padding: 2.5px 6px;
+      margin: 2px 0 4.5px 0;
+      border-radius: 0 3px 3px 0;
+      line-height: 1.25;
+    }
     .prose-p {
       font-size: 11pt;
       line-height: 1.57;
@@ -1453,7 +1510,9 @@ async function run() {
       const getOverlap = () => {
         const fTop = footer.getBoundingClientRect().top;
         const allElements = Array.from(
-          p.querySelectorAll('.narrative-block, .prose-p, .block-header, h1, h2, span, p'),
+          p.querySelectorAll(
+            '.narrative-block, .prose-p, .block-header, .block-workbook-question, h1, h2, span, p',
+          ),
         );
         const maxB = Math.max(
           ...allElements
@@ -1464,7 +1523,7 @@ async function run() {
       };
 
       // Shrink until clearance is at least 6px above footer
-      while (getOverlap() > -6 && size > 9.2) {
+      while (getOverlap() > -6 && size > 8.5) {
         size -= 0.05;
         lh -= 0.007;
         pMargin = Math.max(3.0, pMargin - 0.05);
@@ -1539,7 +1598,9 @@ async function run() {
     preferCSSPageSize: true,
   });
 
-  console.log('Master 12-Page Textbook PDF compiled to:', pdfPath);
+  const canonicalPdfPath = path.join(pdfOutputDir, 'great_war_part2_textbook.pdf');
+  fs.copyFileSync(pdfPath, canonicalPdfPath);
+  console.log('Master 12-Page Textbook PDF compiled to:', pdfPath, 'and', canonicalPdfPath);
   await browser.close();
 
   console.log('Compilation completed successfully.');

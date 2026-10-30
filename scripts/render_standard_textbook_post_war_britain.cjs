@@ -80,12 +80,49 @@ function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'post_war_britain', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
   raw =
-    raw
-      .replace(/export\s+const\s+unitData\s*=/g, 'const unitData =')
-      .replace(/export\s+default\s+unitData;?/g, '')
-      .replace(/export\s*\{[^}]*\};?/g, '') + '; unitData;';
+    raw.replace(/export\s+default\s+[^;]+;?/g, '').replace(/export\s*\{[^}]*\};?/g, '') +
+    '\n; post_war_britain_data;';
   return vm.runInNewContext(raw);
 }
+
+// Canonical Stage Questions matching render_post_war_britain_twopage_workbook.cjs
+const STAGE_QUESTIONS = {
+  1: [
+    'What principles guided Millicent Fawcett and the NUWSS?',
+    'Why did Emmeline Pankhurst adopt "Deeds, not words" in 1903?',
+    'How did hunger strikes and the "Cat and Mouse Act" polarise Britain?',
+    'What was the historical impact of Emily Wilding Davison’s sacrifice?',
+    'How did total war mobilization secure the 1918 Act?',
+  ],
+  2: [
+    'How did evacuation and the Blitz alter British social attitudes?',
+    'Why did the 1942 Beveridge Report become a wartime sensation?',
+    'Why did Clement Attlee defeat Winston Churchill in 1945?',
+    'How did the 1946 and 1948 Acts create the welfare safety net?',
+    'How did Aneurin Bevan overcome doctors to launch the NHS?',
+  ],
+  3: [
+    'Why did post-war Britain face severe industrial labour shortages?',
+    'What rights were created by the British Nationality Act 1948?',
+    'What was the significance of HMT Empire Windrush docking at Tilbury?',
+    'What barriers did Caribbean arrivals encounter in housing and banks?',
+    'How did Claudia Jones respond to the 1958 Notting Hill riots?',
+  ],
+  4: [
+    'Why did the Bristol Omnibus Company enforce an open colour bar?',
+    'What happened when Guy Bailey applied for a conductor post?',
+    'How was the Bristol Bus Boycott organised and launched?',
+    'How did student marches and political pressure isolate the company?',
+    'How did victory lead directly to the 1965 and 1968 Race Relations Acts?',
+  ],
+  5: [
+    'Why did Britain build an independent nuclear deterrent?',
+    'How was the Campaign for Nuclear Disarmament (CND) formed?',
+    'What made the annual 52-mile Aldermaston Marches so impactful?',
+    'What was the secret purpose of the York Cold War Bunker?',
+    'Why did "Protect and Survive" spark public ridicule and protest?',
+  ],
+};
 
 // 12 Defining Turning Points & Causal Dominoes for Page 2
 const MILESTONE_SPINE = [
@@ -285,6 +322,7 @@ function buildHtml() {
       const pageNum = idx + 3;
       const enqNum = idx + 1;
       const blocks = l.narrative_blocks || [];
+      const questions = STAGE_QUESTIONS[enqNum] || [];
 
       const actsHtml = blocks
         .map((b, bIdx) => {
@@ -294,6 +332,7 @@ function buildHtml() {
             .split('<br><br>')
             .map((p) => cleanProse(p))
             .filter(Boolean);
+          const qText = questions[bIdx] || '';
 
           return `
         <div class="block-section">
@@ -301,6 +340,7 @@ function buildHtml() {
             <span class="block-ref">[${p1Num}]–[${p2Num}]</span>
             <span class="block-title">${b.title}</span>
           </div>
+          ${qText ? `<div class="block-workbook-question">${qText}</div>` : ''}
           <div class="block-prose">
             ${paras
               .map(
@@ -317,7 +357,7 @@ function buildHtml() {
 
       return `
       <!-- PAGE ${pageNum}: ENQUIRY 0${enqNum} -->
-      <div class="page page-lesson" id="page-${pageNum}" data-page="${pageNum}">
+      <div class="page page-lesson page-lesson-${enqNum}" id="page-${pageNum}" data-page="${pageNum}">
         <header class="running-header">
           <span>THE HISTORY REVISION HUB &bull; KS3 MASTER CLASSROOM ANTHOLOGY</span>
           <span class="sub-badge">ENQUIRY 0${enqNum} &bull; PAGE 0${pageNum}</span>
@@ -832,8 +872,8 @@ function buildHtml() {
     .enquiry-banner {
       background: #f8fafc;
       border: 1.5px solid #0f172a;
-      padding: 5px 8px;
-      margin-bottom: 7px;
+      padding: 3.5px 6px;
+      margin-bottom: 4px;
     }
 
     .enquiry-tag-row {
@@ -864,19 +904,19 @@ function buildHtml() {
 
     .enquiry-title {
       font-family: 'Cinzel', serif;
-      font-size: 11pt;
+      font-size: 10.5pt;
       font-weight: 800;
       line-height: 1.15;
       color: #0f172a;
-      margin-bottom: 3.5px;
+      margin-bottom: 2.5px;
     }
 
     .hinge-box {
       background: #eff6ff;
       border-left: 2.5px solid #2563eb;
-      padding: 2.5px 6px;
+      padding: 2px 5px;
       display: flex;
-      gap: 6px;
+      gap: 5px;
       align-items: baseline;
     }
 
@@ -893,10 +933,10 @@ function buildHtml() {
     }
 
     .hinge-text {
-      font-size: 6.8pt;
+      font-size: 6.6pt;
       font-style: italic;
       color: #1e3a8a;
-      line-height: 1.25;
+      line-height: 1.22;
     }
 
     .prose-body {
@@ -908,7 +948,7 @@ function buildHtml() {
 
     .prose-columns {
       column-count: 2;
-      column-gap: 20px;
+      column-gap: 16px;
       column-fill: balance;
       text-align: justify;
       text-justify: inter-word;
@@ -917,7 +957,7 @@ function buildHtml() {
 
     .block-section {
       break-inside: auto;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .block-header {
@@ -926,9 +966,9 @@ function buildHtml() {
       display: flex;
       align-items: baseline;
       gap: 5px;
-      margin-bottom: 2.5px;
+      margin-bottom: 2px;
       border-bottom: 1px solid #cbd5e1;
-      padding-bottom: 1.5px;
+      padding-bottom: 1px;
     }
 
     .block-ref {
@@ -944,7 +984,7 @@ function buildHtml() {
 
     .block-title {
       font-family: 'Inter', sans-serif;
-      font-size: 8.2pt;
+      font-size: 8pt;
       font-weight: 800;
       color: #0f172a;
       text-transform: uppercase;
@@ -954,19 +994,40 @@ function buildHtml() {
 
     .block-prose {
       font-family: 'Lora', Georgia, serif;
-      font-size: 10.4pt;
-      line-height: 1.48;
+      font-size: 9.2pt;
+      line-height: 1.40;
       color: #1e293b;
       margin: 0;
     }
 
     .prose-p {
-      margin-bottom: 5px;
+      margin-bottom: 3.5px;
     }
 
     .prose-p:last-child {
       margin-bottom: 0;
     }
+
+    .block-workbook-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 8pt;
+      font-style: italic;
+      font-weight: 600;
+      color: #1e3a8a;
+      background: #f1f5f9;
+      border-left: 2.5px solid #1e3a8a;
+      padding: 2.5px 5px;
+      margin-bottom: 3.5px;
+      border-radius: 0 3px 3px 0;
+      line-height: 1.22;
+    }
+
+    /* Calibrated base styling per enquiry */
+    .page-lesson-1 .block-prose { font-size: 8.6pt; line-height: 1.36; }
+    .page-lesson-2 .block-prose { font-size: 9.2pt; line-height: 1.40; }
+    .page-lesson-3 .block-prose { font-size: 9.2pt; line-height: 1.40; }
+    .page-lesson-4 .block-prose { font-size: 9.3pt; line-height: 1.42; }
+    .page-lesson-5 .block-prose { font-size: 8.6pt; line-height: 1.36; }
 
     /* PAGE 8: RETRIEVAL QUIZ BACK COVER */
     .quiz-page-header {
@@ -1249,21 +1310,25 @@ async function main() {
       const sections = p.querySelectorAll('.block-section');
       if (proseEls.length === 0 || !footer) return;
 
-      let size = 10.5;
-      let lh = 1.48;
-      let secMargin = 6.0;
+      // Extract initial font size from computed style
+      const comp = window.getComputedStyle(proseEls[0]);
+      let size = parseFloat(comp.fontSize) * (72 / 96); // px to pt
+      let lh = 1.38;
+      let secMargin = 4.0;
 
       const getOverlap = () => {
         const fTop = footer.getBoundingClientRect().top;
-        const children = Array.from(p.querySelectorAll('.block-section, p, .block-header'));
+        const children = Array.from(
+          p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question'),
+        );
         const maxB = Math.max(...children.map((c) => c.getBoundingClientRect().bottom));
         return maxB - fTop;
       };
 
-      while (getOverlap() > -15 && size > 8.5) {
+      while (getOverlap() > -12 && size > 7.6) {
         size -= 0.1;
-        lh -= 0.01;
-        secMargin = Math.max(3.0, secMargin - 0.1);
+        lh = Math.max(1.3, lh - 0.01);
+        secMargin = Math.max(1.8, secMargin - 0.1);
         proseEls.forEach((el) => {
           el.style.fontSize = size.toFixed(2) + 'pt';
           el.style.lineHeight = lh.toFixed(2);
@@ -1271,10 +1336,10 @@ async function main() {
         sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
       }
 
-      while (getOverlap() < -45 && size < 11.2) {
+      while (getOverlap() < -45 && size < 10.5) {
         size += 0.1;
-        lh += 0.01;
-        secMargin = Math.min(8.0, secMargin + 0.1);
+        lh = Math.min(1.48, lh + 0.01);
+        secMargin = Math.min(6.0, secMargin + 0.1);
         proseEls.forEach((el) => {
           el.style.fontSize = size.toFixed(2) + 'pt';
           el.style.lineHeight = lh.toFixed(2);
@@ -1367,10 +1432,12 @@ async function main() {
   });
   console.log(`[OK] Master 8-Page Textbook PDF compiled to: ${pdfPath}`);
 
-  // Duplicate to standard aliases
+  // Duplicate to canonical filename
+  const canonicalPdfPath = path.join(pdfOutputDir, 'post_war_britain_textbook.pdf');
+  fs.copyFileSync(pdfPath, canonicalPdfPath);
   const legacyPdfPath = path.join(pdfOutputDir, 'post_war_britain_textbook_FINAL.pdf');
   fs.copyFileSync(pdfPath, legacyPdfPath);
-  console.log(`[OK] Mirrored to: ${legacyPdfPath}`);
+  console.log(`[OK] Mirrored to: ${canonicalPdfPath} and ${legacyPdfPath}`);
 
   await browser.close();
   console.log('\n🎉 MASTERPIECE COMPILATION SUCCESSFUL: Post-War Britain 8-Page Textbook!');

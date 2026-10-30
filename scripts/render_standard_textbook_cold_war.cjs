@@ -80,10 +80,8 @@ function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'cold_war', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
   raw =
-    raw
-      .replace(/export\s+const\s+unitData\s*=/g, 'const unitData =')
-      .replace(/export\s+default\s+unitData;?/g, '')
-      .replace(/export\s*\{[^}]*\};?/g, '') + '; unitData;';
+    raw.replace(/export\s+default\s+[^;]+;?/g, '').replace(/export\s*\{[^}]*\};?/g, '') +
+    '\n; cold_war_data;';
   return vm.runInNewContext(raw);
 }
 
@@ -259,6 +257,59 @@ const quizCards = [
     ],
   },
 ];
+
+// Canonical Stage Questions matching render_cold_war_twopage_workbook.cjs
+const STAGE_QUESTIONS = {
+  1: [
+    'What made Capitalist democracy and Marxist Communism fundamentally incompatible?',
+    'How did Allied intervention in the Russian Civil War create lasting Soviet paranoia?',
+    'Why did Western appeasement drive Stalin into the cynical 1939 Nazi-Soviet Pact?',
+    'Why was the wartime Grand Alliance merely a marriage of pragmatic convenience?',
+    'How did the atomic bombing of Hiroshima transform the global balance of power?',
+  ],
+  2: [
+    'What crucial compromises were reached at the Yalta Summit in Crimea?',
+    'Why did the political fate of Poland shatter Allied consensus after Yalta?',
+    'How did the arrival of Harry Truman transform American policy toward Moscow?',
+    'How did the Trinity atomic test impact negotiations on the eve of Potsdam?',
+    'Why did the Potsdam Conference conclude with bitter deadlock over reparations?',
+  ],
+  3: [
+    'Why was Winston Churchill’s Fulton address a defining moment of the early Cold War?',
+    'How did the Truman Doctrine and Marshall Plan institutionalise containment?',
+    'How did Soviet "Salami Tactics" and Cominform enforce communist control in the East?',
+    'Why did Stalin impose the Berlin Blockade, and how did Operation Vittles defeat it?',
+    'How did the crisis permanently cement the military division of Europe into hostile blocs?',
+  ],
+  4: [
+    'How did Castro’s revolution and the Bay of Pigs turn Cuba into a Cold War tinderbox?',
+    'What did Major Heyser’s U-2 spy plane discover in the jungle of San Cristóbal?',
+    'Why did Kennedy choose a naval quarantine over immediate surgical airstrikes?',
+    'Why was "Black Saturday" the most dangerous single day in human history?',
+    'What secret compromises resolved the crisis, and what were the long-term results?',
+  ],
+  5: [
+    'How did the communist victory in China transform American Cold War strategy?',
+    'Why did the Korean War become a bloody military stalemate along the 38th Parallel?',
+    'How did French colonial collapse lead to deep American military entanglement in Vietnam?',
+    'Why did high-tech American firepower fail to defeat the Vietcong guerrilla army?',
+    'How did the 1968 Tet Offensive shatter American domestic support for the war?',
+  ],
+  6: [
+    'Why did the East German regime erect the Berlin Wall, and what did it symbolise?',
+    'How did the Afghan War and Reagan’s defense build-up bankrupt the Soviet economy?',
+    'Why did Mikhail Gorbachev introduce the revolutionary policies of Glasnost and Perestroika?',
+    'How did popular protest and a bureaucratic blunder bring down the Berlin Wall?',
+    'Why did the collapse of the Eastern European buffer zone lead to the dissolution of the USSR?',
+  ],
+  7: [
+    'Why is describing the Cold War as a period of "peace" an inherently Eurocentric myth?',
+    'What was the true human toll of superpower proxy conflicts across four continents?',
+    'How did covert intelligence operations wage an invisible global war in the shadows?',
+    'How did the Space Race and technological rivalry serve as peaceful substitutes for war?',
+    'What enduring geopolitical and military legacies did the Cold War leave behind for our world?',
+  ],
+};
 
 function buildHtml() {
   const unitData = loadUnitData();
@@ -1024,6 +1075,20 @@ function buildHtml() {
       line-height: 1.15;
     }
 
+    .block-workbook-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 7.6pt;
+      font-style: italic;
+      font-weight: 600;
+      color: #1e3a8a;
+      background: #f1f5f9;
+      border-left: 2.5px solid #1e3a8a;
+      padding: 2px 5px;
+      margin-bottom: 3.5px;
+      border-radius: 0 2px 2px 0;
+      line-height: 1.2;
+    }
+
     .block-prose {
       font-family: 'Lora', Georgia, serif;
       color: #1e293b;
@@ -1036,26 +1101,26 @@ function buildHtml() {
     }
 
     /* Calibrated typography per enquiry page */
-    .page-lesson-1 .block-section { margin-bottom: 3.5px; }
-    .page-lesson-1 .block-prose { font-size: 9.35pt; line-height: 1.36; }
+    .page-lesson-1 .block-section { margin-bottom: 2.8px; }
+    .page-lesson-1 .block-prose { font-size: 8.85pt; line-height: 1.34; }
 
-    .page-lesson-2 .block-section { margin-bottom: 4.2px; }
-    .page-lesson-2 .block-prose { font-size: 9.85pt; line-height: 1.41; }
+    .page-lesson-2 .block-section { margin-bottom: 3.2px; }
+    .page-lesson-2 .block-prose { font-size: 9.15pt; line-height: 1.36; }
 
-    .page-lesson-3 .block-section { margin-bottom: 3.8px; }
-    .page-lesson-3 .block-prose { font-size: 9.50pt; line-height: 1.38; }
+    .page-lesson-3 .block-section { margin-bottom: 2.8px; }
+    .page-lesson-3 .block-prose { font-size: 8.95pt; line-height: 1.34; }
 
-    .page-lesson-4 .block-section { margin-bottom: 3.5px; }
-    .page-lesson-4 .block-prose { font-size: 9.35pt; line-height: 1.36; }
+    .page-lesson-4 .block-section { margin-bottom: 2.8px; }
+    .page-lesson-4 .block-prose { font-size: 8.85pt; line-height: 1.34; }
 
-    .page-lesson-5 .block-section { margin-bottom: 3.8px; }
-    .page-lesson-5 .block-prose { font-size: 9.45pt; line-height: 1.37; }
+    .page-lesson-5 .block-section { margin-bottom: 3.0px; }
+    .page-lesson-5 .block-prose { font-size: 8.95pt; line-height: 1.34; }
 
-    .page-lesson-6 .block-section { margin-bottom: 3.5px; }
-    .page-lesson-6 .block-prose { font-size: 9.35pt; line-height: 1.36; }
+    .page-lesson-6 .block-section { margin-bottom: 2.8px; }
+    .page-lesson-6 .block-prose { font-size: 8.85pt; line-height: 1.34; }
 
-    .page-lesson-7 .block-section { margin-bottom: 4.2px; }
-    .page-lesson-7 .block-prose { font-size: 9.90pt; line-height: 1.42; }
+    .page-lesson-7 .block-section { margin-bottom: 3.2px; }
+    .page-lesson-7 .block-prose { font-size: 9.20pt; line-height: 1.36; }
 
     /* ==========================================================================
        PAGE 11: DISCIPLINARY HISTORIOGRAPHY & CONCEPTS
@@ -1689,6 +1754,7 @@ function buildHtml() {
                 <span class="block-ref">[${lIdx + 1}.${block.act || bIdx + 1}]</span>
                 <span class="block-title">${block.title}</span>
               </div>
+              ${STAGE_QUESTIONS[lIdx + 1] && STAGE_QUESTIONS[lIdx + 1][bIdx] ? `<div class="block-workbook-question">${STAGE_QUESTIONS[lIdx + 1][bIdx]}</div>` : ''}
               <p class="block-prose">${cleanProse(block.text)}</p>
             </div>`,
             )
@@ -1886,6 +1952,56 @@ async function main() {
     const page = await browser.newPage();
     await page.setViewport({ width: 1200, height: 1600 });
     await page.setContent(html, { waitUntil: 'networkidle0', timeout: 120000 });
+
+    // Dynamic Auto-Balancing Typography Engine
+    console.log(
+      '\n[Auto-Balancer] Dynamically calibrating font metrics to guarantee 0px overflow & >= 95% fill...',
+    );
+    await page.evaluate(() => {
+      const lessonPages = document.querySelectorAll('[class*="page-lesson-"]');
+      lessonPages.forEach((p) => {
+        const footer = p.querySelector('.running-footer');
+        const proseEls = p.querySelectorAll('.block-prose');
+        const sections = p.querySelectorAll('.block-section');
+        if (proseEls.length === 0 || !footer) return;
+
+        const comp = window.getComputedStyle(proseEls[0]);
+        let size = parseFloat(comp.fontSize) * (72 / 96);
+        let lh = 1.36;
+        let secMargin = 3.2;
+
+        const getOverlap = () => {
+          const fTop = footer.getBoundingClientRect().top;
+          const children = Array.from(
+            p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question'),
+          );
+          const maxB = Math.max(...children.map((c) => c.getBoundingClientRect().bottom));
+          return maxB - fTop;
+        };
+
+        while (getOverlap() > -10 && size > 7.6) {
+          size -= 0.1;
+          lh = Math.max(1.28, lh - 0.01);
+          secMargin = Math.max(1.8, secMargin - 0.1);
+          proseEls.forEach((el) => {
+            el.style.fontSize = size.toFixed(2) + 'pt';
+            el.style.lineHeight = lh.toFixed(2);
+          });
+          sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
+        }
+
+        while (getOverlap() < -45 && size < 10.5) {
+          size += 0.1;
+          lh = Math.min(1.45, lh + 0.01);
+          secMargin = Math.min(5.0, secMargin + 0.1);
+          proseEls.forEach((el) => {
+            el.style.fontSize = size.toFixed(2) + 'pt';
+            el.style.lineHeight = lh.toFixed(2);
+          });
+          sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
+        }
+      });
+    });
 
     // Optional dynamic in-memory calibration
     try {

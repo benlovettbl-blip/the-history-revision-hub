@@ -99,6 +99,45 @@ function loadUnitData() {
   return sandbox.module.exports.id ? sandbox.module.exports : sandbox.unitData;
 }
 
+// Canonical Stage Questions matching render_second_british_empire_workbook.cjs
+const STAGE_QUESTIONS = {
+  1: [
+    'Why did Britain rely on mercantilism and navigation laws?',
+    'How did naval dominance at Trafalgar secure Britain’s maritime supremacy?',
+    'Why was Portsmouth Royal Dockyard the industrial heart of global empire?',
+    'How did HMS Warrior render all wooden naval fleets obsolete overnight?',
+    'How did the Two-Power Standard doctrine formalize British naval dominance?',
+  ],
+  2: [
+    'Why was Mughal India the world’s leading textile workshop in 1700?',
+    'Why did the British Parliament pass the protectionist Calico Acts?',
+    'How did the Diwani of Bengal invert the financial flow between Britain and India?',
+    'How did steam machinery and rigged tariffs dismantle Indian handloom weaving?',
+    'Why did Governor-General Bentinck write that "the bones of weavers bleach the plains"?',
+  ],
+  3: [
+    'Why did Lord Dalhousie’s Doctrine of Lapse alienate Indian royal dynasties?',
+    'Why was the Enfield rifle cartridge the explosive catalyst for rebellion?',
+    'Why was the march from Meerut to Delhi a political masterstroke for the rebels?',
+    'How did Rani Lakshmibai of Jhansi become an enduring symbol of resistance?',
+    'How did the Government of India Act 1858 permanently reshape British governance?',
+  ],
+  4: [
+    'Why did European powers convene the 1884 Berlin West Africa Conference?',
+    'How did the principle of Effective Occupation accelerate military conquest?',
+    'How did the Maxim gun and quinine make conquest militarily irresistible?',
+    'How did Rudyard Kipling construct the moral myth of "The White Man\'s Burden"?',
+    'How did E. D. Morel’s "The Black Man\'s Burden" expose colonial capitalism?',
+  ],
+  5: [
+    'How did the 1851 Great Exhibition proclaim Britain the Workshop of the World?',
+    'What modern infrastructure did British colonial administration construct across India?',
+    'Why did catastrophic famines strike India while grain was exported to Britain?',
+    'How did Dadabhai Naoroji calculate the systematic "Drain of Wealth" from India?',
+    'How do "Optimist" and "Pessimist" historians evaluate the British Empire today?',
+  ],
+};
+
 function buildHtml() {
   const unitData = loadUnitData();
   const heroImageBase64 = getBase64Image(
@@ -555,6 +594,20 @@ function buildHtml() {
       line-height: 1.15;
     }
 
+    .block-workbook-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 8.2pt;
+      font-style: italic;
+      font-weight: 600;
+      color: #1e3a8a;
+      background: #f1f5f9;
+      border-left: 2.5px solid #1e3a8a;
+      padding: 2.5px 6px;
+      margin: 2px 0 4px 0;
+      border-radius: 0 3px 3px 0;
+      line-height: 1.25;
+    }
+
     .prose-p {
       font-family: 'Lora', Georgia, serif;
       font-size: 9.35pt;
@@ -768,7 +821,7 @@ function buildHtml() {
       );
 
       const versoBlocks = blocks.slice(0, 2);
-      const rectoBlocks = blocks.slice(2, 4);
+      const rectoBlocks = blocks.slice(2);
 
       return `
     <!-- VERSO: ENQUIRY ${num} PART I -->
@@ -802,6 +855,7 @@ function buildHtml() {
                   <span class="block-ref">[${lIdx + 1}.${bIdx + 1}]</span>
                   <span class="block-title">${b.title}</span>
                 </div>
+                ${STAGE_QUESTIONS[lIdx + 1] && STAGE_QUESTIONS[lIdx + 1][bIdx] ? `<div class="block-workbook-question">${STAGE_QUESTIONS[lIdx + 1][bIdx]}</div>` : ''}
                 ${formattedParas}
               </div>
             `;
@@ -848,6 +902,7 @@ function buildHtml() {
                   <span class="block-ref">[${lIdx + 1}.${bIdx + 3}]</span>
                   <span class="block-title">${b.title}</span>
                 </div>
+                ${STAGE_QUESTIONS[lIdx + 1] && STAGE_QUESTIONS[lIdx + 1][bIdx + 2] ? `<div class="block-workbook-question">${STAGE_QUESTIONS[lIdx + 1][bIdx + 2]}</div>` : ''}
                 ${formattedParas}
               </div>
             `;
@@ -894,7 +949,7 @@ function buildHtml() {
           <div class="quiz-card">
             <div class="quiz-card-head">
               <span class="quiz-card-title">Enquiry ${num}: ${l.title.replace(/^How did |^Why did |^Who truly |^How was /i, '').slice(0, 48)}</span>
-              <span class="quiz-card-ref">Pages ${pStart}&ndash;${pEnd} &bull; Ref [${cIdx + 1}.1]&ndash;[${cIdx + 1}.4]</span>
+              <span class="quiz-card-ref">Pages ${pStart}&ndash;${pEnd} &bull; Ref [${cIdx + 1}.1]&ndash;[${cIdx + 1}.5]</span>
             </div>
             <ol class="quiz-questions-list">
               ${qs.map((q) => `<li>${q.question}</li>`).join('')}
@@ -968,7 +1023,9 @@ async function run() {
 
       const getOverlap = () => {
         const fTop = footer.getBoundingClientRect().top;
-        const children = Array.from(p.querySelectorAll('.block-section, .prose-p, .block-header'));
+        const children = Array.from(
+          p.querySelectorAll('.block-section, .prose-p, .block-header, .block-workbook-question'),
+        );
         const maxB = Math.max(...children.map((c) => c.getBoundingClientRect().bottom));
         return maxB - fTop;
       };
