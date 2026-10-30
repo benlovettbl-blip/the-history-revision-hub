@@ -90,6 +90,12 @@ const SUITE = [
     pages: 12,
     html: 'public/units/cold_war/textbook.html',
   },
+  {
+    id: 'water_and_sanitation',
+    name: 'Water & Sanitation Through Time',
+    pages: 12,
+    html: 'public/units/water_and_sanitation/textbook.html',
+  },
 
   // GCSE / KS4
   {
@@ -205,7 +211,9 @@ async function runSuite() {
         if (footer) {
           const fTop = footer.getBoundingClientRect().top;
           const allEls = Array.from(p.querySelectorAll('div, p, h1, h2, section, table'));
-          const nonFooters = allEls.filter((c) => c !== footer && !footer.contains(c));
+          const nonFooters = allEls.filter(
+            (c) => c !== footer && !footer.contains(c) && !c.contains(footer),
+          );
           if (nonFooters.length > 0) {
             const maxB = Math.max(...nonFooters.map((c) => c.getBoundingClientRect().bottom));
             const cl = fTop - maxB;

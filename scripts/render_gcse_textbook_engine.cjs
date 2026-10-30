@@ -40,15 +40,7 @@ for (const arg of args) {
 }
 
 if (!dataFilePath && (unitId === 'cme_new' || unitId === 'cme_unified')) {
-  console.log(
-    `🚀 Delegating CME compilation to canonical 1:1 app-aligned compiler: scripts/render_standard_textbook_cme_unified.cjs`,
-  );
-  const { execSync } = require('child_process');
-  execSync(`node "${path.join(__dirname, 'render_standard_textbook_cme_unified.cjs')}"`, {
-    stdio: 'inherit',
-    cwd: ROOT_DIR,
-  });
-  process.exit(0);
+  dataFilePath = path.join(__dirname, 'cme_unified_textbook_data.cjs');
 }
 
 if (!dataFilePath) {
@@ -211,6 +203,14 @@ function buildHtml() {
               <span class="block-date">${enquiry.block1.date}</span>
               <h2 class="block-title">${enquiry.block1.title}</h2>
             </div>
+            ${
+              enquiry.block1.question
+                ? `
+            <div class="block-workbook-question">
+              <span class="bwq-text">&ldquo;${enquiry.block1.question}&rdquo;</span>
+            </div>`
+                : ''
+            }
             ${enquiry.block1.paras.map((p) => `<p class="prose-p">${formatMarkdown(p)}</p>`).join('')}
           </section>
 
@@ -220,6 +220,14 @@ function buildHtml() {
               <span class="block-date">${enquiry.block2.date}</span>
               <h2 class="block-title">${enquiry.block2.title}</h2>
             </div>
+            ${
+              enquiry.block2.question
+                ? `
+            <div class="block-workbook-question">
+              <span class="bwq-text">&ldquo;${enquiry.block2.question}&rdquo;</span>
+            </div>`
+                : ''
+            }
             ${enquiry.block2.paras.map((p) => `<p class="prose-p">${formatMarkdown(p)}</p>`).join('')}
           </section>
 
@@ -263,6 +271,14 @@ function buildHtml() {
               <span class="block-date">${enquiry.block3.date}</span>
               <h2 class="block-title">${enquiry.block3.title}</h2>
             </div>
+            ${
+              enquiry.block3.question
+                ? `
+            <div class="block-workbook-question">
+              <span class="bwq-text">&ldquo;${enquiry.block3.question}&rdquo;</span>
+            </div>`
+                : ''
+            }
             ${enquiry.block3.paras.map((p) => `<p class="prose-p">${formatMarkdown(p)}</p>`).join('')}
           </section>
 
@@ -272,6 +288,14 @@ function buildHtml() {
               <span class="block-date">${enquiry.block4.date}</span>
               <h2 class="block-title">${enquiry.block4.title}</h2>
             </div>
+            ${
+              enquiry.block4.question
+                ? `
+            <div class="block-workbook-question">
+              <span class="bwq-text">&ldquo;${enquiry.block4.question}&rdquo;</span>
+            </div>`
+                : ''
+            }
             ${enquiry.block4.paras.map((p) => `<p class="prose-p">${formatMarkdown(p)}</p>`).join('')}
           </section>
 
@@ -1107,6 +1131,25 @@ function buildHtml() {
       margin-top: 1px;
       line-height: 1.22;
     }
+    .block-workbook-question {
+      break-inside: avoid;
+      break-after: avoid;
+      background: #f8fafc;
+      border-left: 2.5px solid var(--navy-deep);
+      padding: 1.5px 6px;
+      margin: 1.5px 0 2.5px 0;
+      border-radius: 0 2px 2px 0;
+      line-height: 1.22;
+    }
+    .block-workbook-question .bwq-text {
+      font-family: var(--font-body);
+      font-style: italic;
+      font-weight: 600;
+      font-size: 7.2pt;
+      color: var(--navy-deep);
+      line-height: 1.2;
+      display: block;
+    }
     .prose-p {
       font-size: 11.5pt;
       line-height: 1.58;
@@ -1546,7 +1589,66 @@ async function run() {
   await page.evaluate(() => {
     if (window.autoFitCoverEnquiries) window.autoFitCoverEnquiries();
     if (window.autoFitPage3Flashpoints) window.autoFitPage3Flashpoints();
+
+    // Dynamic in-browser auto-calibration for pages 4 to 27 (eliminate phantom column spills & footer collisions)
+    const pages = Array.from(document.querySelectorAll('.a4-page'));
+    pages.forEach((p, idx) => {
+      const pageNum = idx + 1;
+      if (pageNum < 4 || pageNum > 27) return;
+
+      const prose = p.querySelector('.prose-two-column');
+      if (!prose) return;
+
+      const pRect = p.getBoundingClientRect();
+      const paras = Array.from(p.querySelectorAll('.prose-p'));
+      const blocks = Array.from(p.querySelectorAll('.narrative-block'));
+      const qBoxes = Array.from(p.querySelectorAll('.block-workbook-question'));
+      if (!paras.length) return;
+
+      let fs = 11.5;
+      let lh = 1.58;
+      let mb = 5.5;
+      let blockMb = 8.5;
+      let iterations = 0;
+
+      const hasSpill = () => {
+        if (p.scrollHeight > p.clientHeight + 2) return true;
+        const allChildren = Array.from(p.querySelectorAll('*'));
+        for (const el of allChildren) {
+          const r = el.getBoundingClientRect();
+          if (r.right > pRect.right + 4) return true;
+          if (r.bottom > pRect.bottom + 4) return true;
+        }
+        return false;
+      };
+
+      while (hasSpill() && fs > 9.8 && iterations < 50) {
+        iterations++;
+        fs -= 0.03;
+        lh = Math.max(1.48, lh - 0.004);
+        mb = Math.max(3.8, mb - 0.08);
+        blockMb = Math.max(5.5, blockMb - 0.1);
+
+        paras.forEach((el) => {
+          el.style.fontSize = fs.toFixed(2) + 'pt';
+          el.style.lineHeight = lh.toFixed(3);
+          el.style.marginBottom = mb.toFixed(1) + 'px';
+        });
+        blocks.forEach((b) => {
+          b.style.marginBottom = blockMb.toFixed(1) + 'px';
+        });
+        qBoxes.forEach((q) => {
+          q.style.margin = '1px 0 2px 0';
+          q.style.padding = '1px 4px';
+        });
+      }
+    });
   });
+
+  // Save the auto-calibrated HTML so that disk files reflect exact DOM layout
+  const calibratedHtml = await page.content();
+  fs.writeFileSync(publicHtmlPath, calibratedHtml, 'utf8');
+  fs.writeFileSync(rootHtmlPath, calibratedHtml, 'utf8');
 
   // Page Overflow Audit across all 28 pages
   const auditResults = await page.evaluate(() => {
@@ -1602,6 +1704,12 @@ async function run() {
   });
 
   console.log(`\nMaster 28-Page Textbook PDF compiled to: ${pdfPath}`);
+  const legacyPdfPath = path.join(ROOT_DIR, 'public', 'pdfs', `${unitId}_textbook.pdf`);
+  const unifiedPdfPath = path.join(ROOT_DIR, 'public', 'pdfs', `${unitId}_textbook_UNIFIED.pdf`);
+  try {
+    fs.copyFileSync(pdfPath, legacyPdfPath);
+    fs.copyFileSync(pdfPath, unifiedPdfPath);
+  } catch (e) {}
   await browser.close();
   return true;
 }

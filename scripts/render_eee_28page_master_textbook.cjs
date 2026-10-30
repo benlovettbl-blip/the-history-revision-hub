@@ -95,14 +95,22 @@ function formatMarkdown(text) {
   return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*(.*?)\*/g, '<em>$1</em>');
 }
 
-// Load canonical unit data from units/eee/data.js
+// Load canonical unit data from units/eee/data.js or database.json
 function loadEeeData() {
+  const dbPath = path.join(ROOT_DIR, 'public', 'database.json');
+  if (fs.existsSync(dbPath)) {
+    try {
+      const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
+      if (db.eee && db.eee.data) return db.eee.data;
+      if (db.eee && db.eee.lessons) return db.eee;
+    } catch (e) {}
+  }
   const dataPath = path.join(ROOT_DIR, 'units', 'eee', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
   raw =
     raw
       .replace(/export\s+const\s+unitData\s*=/g, 'const unitData =')
-      .replace(/export\s+default\s+unitData;?/g, '')
+      .replace(/export\s+default\s+[^;]+;?/g, '')
       .replace(/export\s*\{[^}]*\};?/g, '') + '; unitData;';
   return vm.runInNewContext(raw);
 }
@@ -735,11 +743,19 @@ function buildTextbookHtml(unitData) {
         .map((p) => p.trim())
         .filter((p) => p.length > 0);
 
+      const stages = (lesson.causal_domino_spine && lesson.causal_domino_spine.stages) || [];
+      const stage =
+        stages[bIdx] ||
+        stages.find((s) => s.para_ref && s.para_ref.includes('.' + (bIdx + 1))) ||
+        null;
+      const question = stage ? stage.question || stage.workbook_question : '';
+
       return {
         ref: `${num}.${bIdx + 1}`,
         date: date || '1558–1588',
         title: rawTitle,
         paras,
+        question,
       };
     });
 
@@ -753,10 +769,18 @@ function buildTextbookHtml(unitData) {
       return `
         <section class="narrative-block">
           <div class="block-header">
-            <span class="block-ref">Ref [${b.ref}]</span>
+            <span class="block-ref">[${b.ref}]</span>
             <span class="block-date">${b.date}</span>
             <h3 class="block-title">${b.title}</h3>
           </div>
+          ${
+            b.question
+              ? `
+          <div class="block-workbook-question">
+            <span class="bwq-text">&ldquo;${b.question}&rdquo;</span>
+          </div>`
+              : ''
+          }
           <div class="block-body">
             ${parasHtml}
           </div>
@@ -1647,6 +1671,27 @@ function buildTextbookHtml(unitData) {
       margin-top: 1px;
     }
 
+    .block-workbook-question {
+      break-inside: avoid;
+      break-after: avoid;
+      background: #f8fafc;
+      border-left: 2.5px solid #1e3a8a;
+      padding: 1.5px 6px;
+      margin: 1.5px 0 2.5px 0;
+      border-radius: 0 2px 2px 0;
+      line-height: 1.22;
+    }
+
+    .block-workbook-question .bwq-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 7.2pt;
+      color: #1e3a8a;
+      line-height: 1.2;
+      display: block;
+    }
+
     .block-body {
       display: block;
     }
@@ -2161,30 +2206,54 @@ function buildTextbookHtml(unitData) {
         const footer = page ? page.querySelector('.page-footer') : null;
         if (!page) return;
 
+        const pRect = page.getBoundingClientRect();
+        const paras = Array.from(body.querySelectorAll('.prose-p'));
+        const blocks = Array.from(body.querySelectorAll('.narrative-block'));
+        const qBoxes = Array.from(body.querySelectorAll('.block-workbook-question'));
+        if (!paras.length) return;
+
         let attempts = 0;
-        let pSize = 11.5;
-        let pLine = 1.58;
+        let pSize = page.classList.contains('recto-page') ? 11.8 : 11.5;
+        let pLine = page.classList.contains('recto-page') ? 1.62 : 1.58;
+        let mb = page.classList.contains('recto-page') ? 7.5 : 6.0;
+        let blockMb = 7.0;
 
         const checkOverflow = () => {
-          const bodyOverflow = body.scrollHeight > body.clientHeight + 3;
-          let footerOverlap = false;
+          if (page.scrollHeight > page.clientHeight + 2) return true;
+          if (body.scrollHeight > body.clientHeight + 2) return true;
           if (footer) {
             const bRect = body.getBoundingClientRect();
             const fRect = footer.getBoundingClientRect();
-            if (bRect.bottom > fRect.top - 2) footerOverlap = true;
+            if (bRect.bottom > fRect.top - 2) return true;
           }
-          return bodyOverflow || footerOverlap;
+          const allChildren = Array.from(body.querySelectorAll('*'));
+          for (const el of allChildren) {
+            const r = el.getBoundingClientRect();
+            if (r.right > pRect.right + 4) return true;
+            if (r.bottom > pRect.bottom + 4) return true;
+          }
+          return false;
         };
 
-        while (checkOverflow() && attempts < 25 && pSize > 8.8) {
-          pSize -= 0.15;
-          pLine = Math.max(1.36, pLine - 0.015);
-          body.querySelectorAll('.prose-p').forEach(p => {
-            p.style.fontSize = pSize + 'pt';
-            p.style.lineHeight = pLine;
-            p.style.marginBottom = Math.max(3, pSize * 0.35) + 'px';
-          });
+        while (checkOverflow() && attempts < 40 && pSize > 9.6) {
           attempts++;
+          pSize -= 0.03;
+          pLine = Math.max(1.44, pLine - 0.004);
+          mb = Math.max(2.8, mb - 0.08);
+          blockMb = Math.max(3.5, blockMb - 0.1);
+
+          paras.forEach(p => {
+            p.style.fontSize = pSize.toFixed(2) + 'pt';
+            p.style.lineHeight = pLine.toFixed(3);
+            p.style.marginBottom = mb.toFixed(1) + 'px';
+          });
+          blocks.forEach(b => {
+            b.style.marginBottom = blockMb.toFixed(1) + 'px';
+          });
+          qBoxes.forEach(q => {
+            q.style.margin = '1px 0 2px 0';
+            q.style.padding = '1px 4px';
+          });
         }
       });
     }
@@ -2263,6 +2332,11 @@ async function main() {
   // Allow auto-fit scripts to settle
   await new Promise((r) => setTimeout(r, 1200));
 
+  // Save calibrated HTML so that disk files reflect exact DOM layout
+  const calibratedHtml = await page.content();
+  fs.writeFileSync(htmlPath, calibratedHtml, 'utf8');
+  fs.writeFileSync(rootHtmlPath, calibratedHtml, 'utf8');
+
   console.log('4. Executing Reprographics Budget & Clutter Audit...');
   const auditResults = await auditPageBudget(page, {
     maxPages: 28,
@@ -2296,6 +2370,10 @@ async function main() {
   });
 
   fs.copyFileSync(pdfPath, pdfPathLegacy);
+  const canonicalPdfPath = path.join(pdfOutputDir, 'eee_textbook.pdf');
+  try {
+    fs.copyFileSync(pdfPath, canonicalPdfPath);
+  } catch (e) {}
   console.log(`   Compiled Master PDF: ${pdfPath}`);
 
   // Take preview screenshots for key milestone spreads

@@ -246,6 +246,7 @@ const ENQUIRIES = [
       'Why did British imperial diplomacy and contradictory wartime promises make conflict in Palestine unavoidable?',
     block1: {
       ref: '1.1',
+      question: 'Why was the secret Sykes-Picot Agreement viewed as an imperial betrayal?',
       date: '1914–1916',
       title: 'The Dismemberment of the Ottoman Empire & Sykes-Picot',
       paras: [
@@ -255,6 +256,8 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '1.2',
+      question:
+        'How did contradictory British pledges to Arabs and Jews create irreconcilable conflict?',
       date: '1915–1917',
       title: 'Contradictory Pledges: McMahon-Hussein vs The Balfour Declaration',
       paras: [
@@ -264,6 +267,7 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '1.3',
+      question: 'Why did rising Jewish immigration spark communal violence under the Mandate?',
       date: '1920–1936',
       title: 'Zionist Pioneers, Arab Dispossession & Communal Clashes',
       paras: [
@@ -273,6 +277,7 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '1.4',
+      question: 'Why did the 1939 White Paper turn Zionists against British rule?',
       date: '1936–1939',
       title: 'The Great Arab Revolt & The 1939 MacDonald White Paper',
       paras: [
@@ -295,6 +300,7 @@ const ENQUIRIES = [
       'How did the Zionist paramilitary insurgency break British will and secure the State of Israel in the 1948 War?',
     block1: {
       ref: '2.1',
+      question: 'Why did Bevin strictly enforce the 1,500 monthly refugee immigration limit?',
       date: '1945–1946',
       title: 'Holocaust Survivors, The White Paper & Zionist Insurgency',
       paras: [
@@ -304,6 +310,7 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '2.2',
+      question: 'Why did targeting the King David Hotel prove Palestine was ungovernable?',
       date: '1946–1947',
       title: 'The King David Hotel Bombing, Sergeants Affair & UN Handover',
       paras: [
@@ -313,6 +320,7 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '2.3',
+      question: 'Why did the UN partition resolution spark immediate civil war in Palestine?',
       date: '1947–1948',
       title: 'UN Resolution 181 (The Partition Plan) & Civil War',
       paras: [
@@ -322,6 +330,7 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '2.4',
+      question: 'How did the 1949 Green Line transform the territory allocated by the UN?',
       date: '1948–1949',
       title: 'The Proclamation of Israel, The Arab Invasion & The Green Line',
       paras: [
@@ -344,6 +353,7 @@ const ENQUIRIES = [
       'How did the 1948–49 War create the Palestinian refugee crisis and reshape Middle Eastern demographics?',
     block1: {
       ref: '3.1',
+      question: 'Why is the cause of the 1948 Palestinian refugee flight (Al-Nakba) contested?',
       date: '1948–1949',
       title: 'Al-Nakba (The Catastrophe) & The Palestinian Refugee Exodus',
       paras: [
@@ -353,6 +363,7 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '3.2',
+      question: 'Why did UN Resolution 194 fail to resolve the refugee right of return?',
       date: '1948–1950',
       title: 'UN Resolution 194 & The Right of Return Deadlock',
       paras: [
@@ -362,6 +373,7 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '3.3',
+      question: "How did the Law of Return transform Israel's demographics and economy by 1953?",
       date: '1950–1953',
       title: 'The Law of Return, IDF Creation & US Economic Aid',
       paras: [
@@ -371,6 +383,7 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '3.4',
+      question: "Why did cross-border infiltration trigger Sharon's Unit 101 raid on Qibya?",
       date: '1951–1955',
       title: 'Relations with Egypt: Fedayeen Border Raids & Unit 101 Reprisals',
       paras: [
@@ -393,6 +406,7 @@ const ENQUIRIES = [
       'How did the 1956 Suez Crisis destroy European imperial power and elevate Nasser to the hero of the Arab world?',
     block1: {
       ref: '4.1',
+      question: 'Why did the Czech arms deal alarm Britain, France, and Israel in 1955?',
       date: '1954–1955',
       title: 'Gamal Abdel Nasser, Pan-Arab Pride & The Czech Arms Deal',
       paras: [
@@ -402,6 +416,7 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '4.2',
+      question: 'Why did Britain and France view canal nationalisation as an intolerable threat?',
       date: '1956',
       title: 'The Aswan Dam Cancellation & Nationalisation of the Suez Canal',
       paras: [
@@ -411,6 +426,7 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '4.3',
+      question: 'How did the secret Sèvres Agreement orchestrate a pretext for invading Egypt?',
       date: 'Oct–Nov 1956',
       title: 'The Secret Sèvres Protocol & The Tripartite Invasion',
       paras: [
@@ -420,6 +436,8 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '4.4',
+      question:
+        'Why did the Suez Crisis end in political triumph for Nasser despite military defeat?',
       date: 'Nov 1956–1957',
       title: 'Eisenhower’s Ultimatum, Imperial Humiliation & Birth of UNEF',
       paras: [
@@ -442,6 +460,7 @@ const ENQUIRIES = [
       'How did clashes over the River Jordan water supply and Syrian border skirmishes push the Middle East to war by 1967?',
     block1: {
       ref: '5.1',
+      question: 'Why did Arab leaders meet in Cairo and create the PLO in 1964?',
       date: '1964',
       title: 'The 1964 Cairo Summit & Creation of the PLO',
       paras: [
@@ -451,6 +470,7 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '5.2',
+      question: 'How did the dispute over River Jordan water spark military conflict?',
       date: '1965–1966',
       title: "The Water Wars & The Syrian Ba'athist Coup",
       paras: [
@@ -460,6 +480,7 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '5.3',
+      question: 'What were the consequences of the Israeli reprisal raid on Samu?',
       date: 'Nov 1966',
       title: 'Operation Asad: The Destruction of the Samu Raid',
       paras: [
@@ -469,6 +490,7 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '5.4',
+      question: 'How did the 7 April dogfight escalate tensions toward all-out war?',
       date: 'April 1967',
       title: 'The 7 April 1967 Dogfight & Soviet Disinformation',
       paras: [
@@ -491,6 +513,7 @@ const ENQUIRIES = [
       'Why was the Six-Day War decided in three hours, and how did Israel conquer an empire in six days?',
     block1: {
       ref: '6.1',
+      question: 'Why was closing the Straits of Tiran treated by Israel as a casus belli?',
       date: 'May 1967',
       title: 'Nasser’s Brinkmanship: Evicting UNEF & Closing the Straits',
       paras: [
@@ -500,6 +523,7 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '6.2',
+      question: 'How did the pre-emptive air strike destroy Arab air power on the first morning?',
       date: '5 June 1967',
       title: 'Operation Focus (Mivtza Moked): The Dawn Airstrike',
       paras: [
@@ -509,6 +533,8 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '6.3',
+      question:
+        'How did Israeli armored columns capture the Sinai and East Jerusalem in three days?',
       date: '5–8 June 1967',
       title: 'Sinai Blitzkrieg & The Jerusalem Front',
       paras: [
@@ -518,6 +544,7 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '6.4',
+      question: 'What territories did Israel conquer during the six days of fighting?',
       date: '9–10 June 1967',
       title: 'Storming the Golan Heights & The New Middle East Map',
       paras: [
@@ -540,6 +567,7 @@ const ENQUIRIES = [
       'Why did the territorial conquests of 1967 entrench permanent stalemate instead of bringing peace?',
     block1: {
       ref: '7.1',
+      question: 'Why did the capture and annexation of East Jerusalem cause global outcry?',
       date: 'Summer 1967',
       title: 'The Military Administration of the Occupied Territories',
       paras: [
@@ -549,6 +577,7 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '7.2',
+      question: 'Why did the Arab League issue the "Three Noes" at the Khartoum Summit?',
       date: 'Sept 1967',
       title: 'The Khartoum Arab Summit & The "Three Noes"',
       paras: [
@@ -558,6 +587,7 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '7.3',
+      question: 'How did UN Resolution 242 establish the principle of "Land for Peace"?',
       date: 'Nov 1967',
       title: 'UN Resolution 242 & The "Land for Peace" Principle',
       paras: [
@@ -567,6 +597,7 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '7.4',
+      question: 'How did permanent Israeli settlements transform the occupied territories?',
       date: '1967–1972',
       title: 'The Allon Plan & The Genesis of Israeli Settlements',
       paras: [
@@ -589,6 +620,7 @@ const ENQUIRIES = [
       'How did Palestinian fedayeen transform from refugees into global armed revolutionaries between 1968 and 1972?',
     block1: {
       ref: '8.1',
+      question: 'How did the Battle of Karameh establish Yasser Arafat as leader of the PLO?',
       date: '1968–1969',
       title: 'The Battle of Karameh & Yasser Arafat Takes the PLO',
       paras: [
@@ -598,6 +630,7 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '8.2',
+      question: 'Why did King Hussein expel the PLO during Black September in 1970?',
       date: 'Sept 1970',
       title: "Dawson's Field & The Bloodbath of Black September",
       paras: [
@@ -607,6 +640,7 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '8.3',
+      question: 'What was the global impact of the Munich Olympics massacre in 1972?',
       date: 'Sept 1972',
       title: 'The Munich Olympic Games Massacre',
       paras: [
@@ -616,6 +650,7 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '8.4',
+      question: 'How did Israel retaliate through Operation Wrath of God covert strikes?',
       date: '1972–1974',
       title: 'Operation Wrath of God & Arafat\'s "Olive Branch" at the UN',
       paras: [
@@ -638,6 +673,7 @@ const ENQUIRIES = [
       'Why did the 1973 Yom Kippur War catch Israel unprepared, and how did it shatter the regional status quo?',
     block1: {
       ref: '9.1',
+      question: 'Why did Nasser launch the War of Attrition along the Suez Canal?',
       date: '1969–1972',
       title: 'The War of Attrition & Anwar Sadat’s Strategic Ambition',
       paras: [
@@ -647,6 +683,7 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '9.2',
+      question: 'How did Egyptian and Syrian forces achieve tactical surprise on Yom Kippur?',
       date: '6 October 1973',
       title: 'Operation Badr: The Holy Day Surprise Assault',
       paras: [
@@ -656,6 +693,7 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '9.3',
+      question: "How did the US airlift enable General Sharon's canal counter-crossing?",
       date: '7–15 October 1973',
       title: 'The Valley of Tears & Sharon’s Counter-Crossing',
       paras: [
@@ -665,6 +703,7 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '9.4',
+      question: 'How did the Arab OPEC oil embargo transform global superpower diplomacy?',
       date: 'Oct 1973–1974',
       title: 'The OPEC Oil Weapon, The Nuclear Alert & A New Diplomatic Order',
       paras: [
@@ -687,6 +726,7 @@ const ENQUIRIES = [
       'How did Anwar Sadat and Menachem Begin overcome thirty years of hostility to sign the Camp David Accords?',
     block1: {
       ref: '10.1',
+      question: "How did Kissinger's step-by-step shuttle diplomacy separate the frontline armies?",
       date: '1974–1975',
       title: 'Kissinger’s "Shuttle Diplomacy" & The Disengagement Agreements',
       paras: [
@@ -696,6 +736,8 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '10.2',
+      question:
+        "Why was Sadat's speech to the Israeli Knesset such a profound psychological breakthrough?",
       date: 'May–Nov 1977',
       title: 'The Likud "Mahapakh" & Sadat\'s Historic Flight to Jerusalem',
       paras: [
@@ -705,6 +747,7 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '10.3',
+      question: 'How did Jimmy Carter prevent the 13-day Camp David summit from collapsing?',
       date: 'Sept 1978',
       title: 'Thirteen Days at Camp David: Carter, Sadat & Begin',
       paras: [
@@ -714,6 +757,7 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '10.4',
+      question: 'Why did Egyptian Islamic Jihad assassinate Anwar Sadat in October 1981?',
       date: '1979–1981',
       title: 'The 1979 Peace Treaty & The Assassination of Anwar Sadat',
       paras: [
@@ -736,6 +780,7 @@ const ENQUIRIES = [
       'How did the 1982 invasion of Lebanon and the First Intifada reassert the Palestinian struggle on the global stage?',
     block1: {
       ref: '11.1',
+      question: "Why did Ariel Sharon expand the invasion far beyond the cabinet's 40km limit?",
       date: '1975–1982',
       title: 'The Lebanese Powder Keg & Operation Peace for Galilee',
       paras: [
@@ -745,6 +790,7 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '11.2',
+      question: 'Why was Israel held internationally accountable for the Phalangist massacre?',
       date: 'Aug–Sept 1982',
       title: 'The PLO Evacuation & The Sabra and Shatila Massacre',
       paras: [
@@ -754,6 +800,7 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '11.3',
+      question: 'Why did a traffic collision in the Gaza Strip spark the First Intifada?',
       date: 'Dec 1987',
       title: 'The Outbreak of the First Palestinian Intifada',
       paras: [
@@ -763,6 +810,7 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '11.4',
+      question: "Why was Arafat's 1988 Geneva speech a historic turning point for the PLO?",
       date: '1988–1989',
       title: 'Rabin’s "Iron Fist," The Rise of Hamas & The Geneva Declaration',
       paras: [
@@ -785,6 +833,8 @@ const ENQUIRIES = [
       'How close did the Oslo Accords come to achieving peace, and why did the peace process unravel by 1995?',
     block1: {
       ref: '12.1',
+      question:
+        'Why did the end of the Cold War and the Gulf War make the Madrid Conference possible?',
       date: '1990–1992',
       title: 'Changing Superpower Policies: End of the Cold War, Gulf War & Madrid',
       paras: [
@@ -794,6 +844,7 @@ const ENQUIRIES = [
     },
     block2: {
       ref: '12.2',
+      question: 'Why was strict secrecy essential for the Oslo negotiators in Norway?',
       date: 'Sept 1993',
       title: 'The Declaration of Principles & The White House Lawn Handshake',
       paras: [
@@ -803,6 +854,8 @@ const ENQUIRIES = [
     },
     block3: {
       ref: '12.3',
+      question:
+        'How did the division of the West Bank into Areas A, B, and C leave territory fragmented?',
       date: '1994–1995',
       title: 'The 1994 Jordan Peace Treaty & The Oslo II Accord (1995)',
       paras: [
@@ -812,6 +865,7 @@ const ENQUIRIES = [
     },
     block4: {
       ref: '12.4',
+      question: 'Why did Jewish extremist Yigal Amir assassinate Prime Minister Yitzhak Rabin?',
       date: '1994–1995',
       title: 'Extremist Backlash, Suicide Bombings & The Assassination of Rabin',
       paras: [

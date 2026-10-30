@@ -91,14 +91,21 @@ function formatMarkdown(text) {
   return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*(.*?)\*/g, '<em>$1</em>');
 }
 
-// Load canonical unit data from units/cme_new/data.js
+// Load canonical unit data from units/cme_new/data.js (or public/database.json)
 function loadCmeData() {
+  const dbPath = path.join(ROOT_DIR, 'public', 'database.json');
+  if (fs.existsSync(dbPath)) {
+    try {
+      const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
+      if (db.cme_new && db.cme_new.data) return db.cme_new.data;
+    } catch (e) {}
+  }
   const dataPath = path.join(ROOT_DIR, 'units', 'cme_new', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
   raw =
     raw
       .replace(/export\s+const\s+unitData\s*=/g, 'const unitData =')
-      .replace(/export\s+default\s+unitData;?/g, '')
+      .replace(/export\s+default\s+[^;]+;?/g, '')
       .replace(/export\s*\{[^}]*\};?/g, '') + '; unitData;';
   return vm.runInNewContext(raw);
 }
@@ -2268,112 +2275,8 @@ function buildCmeHtml() {
 
 // Main execution function
 async function main() {
-  console.log('================================================================');
-  console.log('🏛️ COMPILING UNIFIED 28-PAGE MASTER TEXTBOOK: CONFLICT IN THE MIDDLE EAST');
-  console.log('================================================================\n');
-
-  const unitData = loadCmeData();
-  console.log(`Loaded unit data: "${unitData.title}" (${unitData.lessons.length} lessons)`);
-
-  const htmlContent = buildCmeHtml();
-
-  const htmlOutputDir = path.join(ROOT_DIR, 'public', 'units', 'cme_new');
-  if (!fs.existsSync(htmlOutputDir)) fs.mkdirSync(htmlOutputDir, { recursive: true });
-
-  const htmlPath = path.join(htmlOutputDir, 'textbook_UNIFIED.html');
-  fs.writeFileSync(htmlPath, htmlContent, 'utf8');
-  console.log(
-    `Saved unified textbook HTML: ${htmlPath} (${Math.round(htmlContent.length / 1024)} KB)`,
-  );
-
-  // Mirror to root units folder
-  const rootUnitsDir = path.join(ROOT_DIR, 'units', 'cme_new');
-  if (fs.existsSync(rootUnitsDir)) {
-    fs.writeFileSync(path.join(rootUnitsDir, 'textbook_UNIFIED.html'), htmlContent, 'utf8');
-  }
-
-  console.log('\nLaunching Puppeteer for reprographic audit and PDF rendering...');
-  const chromePath =
-    process.env.PUPPETEER_EXECUTABLE_PATH ||
-    (fs.existsSync('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe')
-      ? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
-      : undefined);
-
-  const browser = await puppeteer.launch({
-    headless: 'new',
-    executablePath: chromePath,
-    args: ['--no-sandbox', '--disable-setuid-sandbox', '--allow-file-access-from-files'],
-  });
-
-  const page = await browser.newPage();
-  await page.setViewport({ width: 1200, height: 1600, deviceScaleFactor: 2 });
-
-  await page.goto(`file://${htmlPath}`, { waitUntil: ['load', 'networkidle0'] });
-  await page.evaluateHandle('document.fonts.ready');
-
-  // Trigger in-browser auto-fit functions
-  await page.evaluate(() => {
-    if (typeof autoFitCoverSynopsis === 'function') autoFitCoverSynopsis();
-    if (typeof autoFitCoverEnquiries === 'function') autoFitCoverEnquiries();
-    if (typeof autoFitInsideCoverDirectory === 'function') autoFitInsideCoverDirectory();
-    if (typeof autoFitPage3Milestones === 'function') autoFitPage3Milestones();
-    if (typeof autoFitSpreadTypography === 'function') autoFitSpreadTypography();
-  });
-
-  await new Promise((r) => setTimeout(r, 1000));
-
-  // Run the automated Reprographic Quality Audit
-  console.log('Running Reprographics & Page Budget Audit...');
-  const auditResults = await auditPageBudget(page, {
-    footerSelector: '.page-running-footer, .cover-footer-meta',
-    pageSelector: '.a4-page',
-    maxPageBudgetPx: 1122,
-    targetPages: 28,
-  });
-
-  printSpaceAuditReport(auditResults, 'cme_new/textbook_UNIFIED.html');
-
-  if (auditResults.hasErrors) {
-    console.warn('⚠️ Warning: Reprographic audit detected errors or page budget violations.');
-  } else {
-    console.log('✅ REPROGRAPHICS AUDIT PASSED: 100% compliant across all 28 pages.');
-  }
-
-  // Export PDF
-  const pdfOutputDir = path.join(ROOT_DIR, 'public', 'pdfs');
-  if (!fs.existsSync(pdfOutputDir)) fs.mkdirSync(pdfOutputDir, { recursive: true });
-
-  const pdfPath = path.join(pdfOutputDir, 'cme_new_textbook_UNIFIED_FINAL.pdf');
-  const legacyPdfPath = path.join(pdfOutputDir, 'cme_new_textbook.pdf');
-
-  await page.pdf({
-    path: pdfPath,
-    format: 'A4',
-    printBackground: true,
-    preferCSSPageSize: true,
-    displayHeaderFooter: false,
-    margin: { top: '0mm', right: '0mm', bottom: '0mm', left: '0mm' },
-  });
-  console.log(`\n🎉 Master 28-Page Textbook PDF compiled to:\n  -> ${pdfPath}`);
-
-  fs.copyFileSync(pdfPath, legacyPdfPath);
-
-  // Generate page preview snapshots
-  const previewsDir = path.join(htmlOutputDir, 'previews', 'unified');
-  if (!fs.existsSync(previewsDir)) fs.mkdirSync(previewsDir, { recursive: true });
-
-  const pagesToPreview = [1, 2, 3, 4, 5, 28];
-  for (const pNum of pagesToPreview) {
-    const pageEl = await page.$(`#page-${pNum}`);
-    if (pageEl) {
-      const snapPath = path.join(previewsDir, `page_${String(pNum).padStart(2, '0')}.png`);
-      await pageEl.screenshot({ path: snapPath });
-      console.log(`Saved preview: ${snapPath}`);
-    }
-  }
-
-  await browser.close();
-  console.log('\n✅ CONFLICT IN THE MIDDLE EAST 28-PAGE MASTER TEXTBOOK COMPILED SUCCESSFULLY!\n');
+  const { run } = require('./render_gcse_textbook_engine.cjs');
+  return run();
 }
 
 if (require.main === module) {

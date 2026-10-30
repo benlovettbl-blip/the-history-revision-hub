@@ -2,6 +2,9 @@
 **Comprehensive Multi-Stage Ledger for 16-Page KS3 Gold Standard Workbooks & GCSE Master Booklets**  
 *Single Source of Truth • Academic Year 2026–2027 • Maintained by Department AI Pair-Programmer*
 
+> [!NOTE]
+> For companion pure narrative classroom reading anthologies, see the companion ledger: **[`TEXTBOOK_STATUS_AND_ROLLOUT_TRACKER.md`](./TEXTBOOK_STATUS_AND_ROLLOUT_TRACKER.md)**.
+
 ---
 
 ## 🏛️ The Gold Standard Workbook Specification (The Benchmark)

@@ -96,8 +96,22 @@ function formatMarkdown(text) {
   return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*(.*?)\*/g, '<em>$1</em>');
 }
 
-// Load canonical unit data from units/usa/data.js
+// Load canonical unit data from public/database.json or units/usa/data.js
 function loadUsaData() {
+  const dbPath = path.join(ROOT_DIR, 'public', 'database.json');
+  if (fs.existsSync(dbPath)) {
+    try {
+      const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
+      if (db.usa && (db.usa.lessons || (db.usa.data && db.usa.data.lessons))) {
+        return {
+          title: db.usa.title || 'Conflict at Home and Abroad: the USA, 1954–75',
+          lessons: db.usa.lessons || db.usa.data.lessons,
+        };
+      }
+    } catch (e) {
+      console.warn('Failed to parse database.json, falling back to data.js:', e.message);
+    }
+  }
   const dataPath = path.join(ROOT_DIR, 'units', 'usa', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
   raw =
@@ -755,6 +769,12 @@ function buildUsaHtml() {
       // Single lesson maps directly: Act 1 & 2 -> Verso, Act 3 & 4 -> Recto
       const lesson = unitData.lessons[config.lessonSourceA];
       const blocks = (lesson.narrative_blocks || []).filter((b) => b.text && b.text.trim());
+      const stages = (lesson.causal_domino_spine && lesson.causal_domino_spine.stages) || [];
+
+      const q1 = stages[0] ? stages[0].question || stages[0].workbook_question : '';
+      const q2 = stages[1] ? stages[1].question || stages[1].workbook_question : '';
+      const q3 = stages[2] ? stages[2].question || stages[2].workbook_question : '';
+      const q4 = stages[3] ? stages[3].question || stages[3].workbook_question : '';
 
       versoBlocks = [
         {
@@ -769,6 +789,7 @@ function buildUsaHtml() {
                 .map((p) => p.trim())
                 .filter(Boolean)
             : [],
+          question: q1,
         },
         {
           ref: `${num}.2`,
@@ -782,6 +803,7 @@ function buildUsaHtml() {
                 .map((p) => p.trim())
                 .filter(Boolean)
             : [],
+          question: q2,
         },
       ];
 
@@ -798,6 +820,7 @@ function buildUsaHtml() {
                 .map((p) => p.trim())
                 .filter(Boolean)
             : [],
+          question: q3,
         },
         {
           ref: `${num}.4`,
@@ -811,6 +834,7 @@ function buildUsaHtml() {
                 .map((p) => p.trim())
                 .filter(Boolean)
             : [],
+          question: q4,
         },
       ];
     } else {
@@ -820,6 +844,14 @@ function buildUsaHtml() {
 
       const blocksA = (lessonA.narrative_blocks || []).filter((b) => b.text && b.text.trim());
       const blocksB = (lessonB.narrative_blocks || []).filter((b) => b.text && b.text.trim());
+
+      const stagesA = (lessonA.causal_domino_spine && lessonA.causal_domino_spine.stages) || [];
+      const stagesB = (lessonB.causal_domino_spine && lessonB.causal_domino_spine.stages) || [];
+
+      const q1 = stagesA[0] ? stagesA[0].question || stagesA[0].workbook_question : '';
+      const q2 = stagesA[1] ? stagesA[1].question || stagesA[1].workbook_question : '';
+      const q3 = stagesB[0] ? stagesB[0].question || stagesB[0].workbook_question : '';
+      const q4 = stagesB[1] ? stagesB[1].question || stagesB[1].workbook_question : '';
 
       versoBlocks = [
         {
@@ -834,6 +866,7 @@ function buildUsaHtml() {
                 .map((p) => p.trim())
                 .filter(Boolean)
             : [],
+          question: q1,
         },
         {
           ref: `${num}.2`,
@@ -845,6 +878,7 @@ function buildUsaHtml() {
                 .map((p) => p.trim())
                 .filter(Boolean)
             : [],
+          question: q2,
         },
       ];
 
@@ -861,6 +895,7 @@ function buildUsaHtml() {
                 .map((p) => p.trim())
                 .filter(Boolean)
             : [],
+          question: q3,
         },
         {
           ref: `${num}.4`,
@@ -874,6 +909,7 @@ function buildUsaHtml() {
                 .map((p) => p.trim())
                 .filter(Boolean)
             : [],
+          question: q4,
         },
       ];
     }
@@ -894,6 +930,14 @@ function buildUsaHtml() {
             <span class="block-date">${b.date}</span>
             <h3 class="block-title">${b.title}</h3>
           </div>
+          ${
+            b.question
+              ? `
+          <div class="block-workbook-question">
+            <span class="bwq-text">&ldquo;${b.question}&rdquo;</span>
+          </div>`
+              : ''
+          }
           ${parasHtml}
         </div>
       `;
@@ -1770,6 +1814,26 @@ function buildUsaHtml() {
       text-transform: uppercase;
       flex: 1;
     }
+    .block-workbook-question {
+      break-inside: avoid;
+      break-after: avoid;
+      background: #f8fafc;
+      border-left: 2.5px solid var(--navy-deep, #1e3a8a);
+      padding: 1.5px 6px;
+      margin: 1.5px 0 3px 0;
+      border-radius: 0 2px 2px 0;
+      line-height: 1.22;
+    }
+    .block-workbook-question .bwq-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 7.2pt;
+      color: var(--navy-deep, #1e3a8a);
+      line-height: 1.2;
+      text-transform: none;
+      display: block;
+    }
     .prose-p {
       font-family: var(--font-body);
       font-size: 11.6pt;
@@ -2303,27 +2367,46 @@ function buildUsaHtml() {
           if (!prose) return;
           const paragraphs = Array.from(page.querySelectorAll('.prose-p'));
           const blocks = Array.from(page.querySelectorAll('.narrative-block'));
+          const titles = Array.from(page.querySelectorAll('.block-title'));
+          const qBoxes = Array.from(page.querySelectorAll('.block-workbook-question .bwq-text'));
           if (!paragraphs.length) return;
 
           const footer = page.querySelector('.page-running-footer');
           const footerTop = footer ? footer.getBoundingClientRect().top : page.clientHeight - 30;
+
+          const checkOverflow = () => {
+            const pRect = page.getBoundingClientRect();
+            const proseRect = prose.getBoundingClientRect();
+            const footerOverlap = proseRect.bottom > footerTop - 6;
+            const pageOverflow = page.scrollHeight > page.clientHeight + 2;
+            const proseHoriz = prose.scrollWidth > prose.clientWidth + 2;
+            const childHoriz = Array.from(prose.children).some((ch) => {
+              const r = ch.getBoundingClientRect();
+              return r.right > pRect.right - 10;
+            });
+            return footerOverlap || pageOverflow || proseHoriz || childHoriz;
+          };
 
           // 1. Scale down if colliding or overflowing
           let currentFs = parseFloat(window.getComputedStyle(paragraphs[0]).fontSize) * 0.75;
           let currentMb = parseFloat(window.getComputedStyle(paragraphs[0]).marginBottom) || 6;
           let iterations = 0;
 
-          while ((prose.getBoundingClientRect().bottom > footerTop - 8 || page.scrollHeight > page.clientHeight || prose.scrollWidth > prose.clientWidth + 2) && currentFs > 8.8 && iterations < 40) {
-            currentFs -= 0.15;
-            currentMb = Math.max(2.5, currentMb - 0.25);
+          while (checkOverflow() && currentFs > 8.5 && iterations < 50) {
+            currentFs -= 0.05;
+            currentMb = Math.max(2.2, currentMb - 0.1);
             paragraphs.forEach(p => {
               p.style.fontSize = currentFs.toFixed(2) + 'pt';
               p.style.lineHeight = (currentFs * 0.130 + 0.06).toFixed(2);
               p.style.marginBottom = currentMb.toFixed(1) + 'px';
             });
             blocks.forEach(b => {
-              b.style.marginBottom = Math.max(3.5, currentMb * 1.1).toFixed(1) + 'px';
+              b.style.marginBottom = Math.max(3.0, currentMb * 1.05).toFixed(1) + 'px';
             });
+            if (currentFs < 10.0) {
+              titles.forEach(t => t.style.fontSize = '7.5pt');
+              qBoxes.forEach(q => q.style.fontSize = '6.8pt');
+            }
             iterations++;
           }
 
@@ -2331,11 +2414,11 @@ function buildUsaHtml() {
           let lowestBottom = prose.getBoundingClientRect().bottom;
           let clearance = footerTop - lowestBottom;
 
-          if (clearance > 30 && prose.getBoundingClientRect().bottom <= footerTop - 8) {
+          if (clearance > 30 && !checkOverflow()) {
             let bestUpFs = currentFs;
             let bestUpMb = currentMb;
 
-            for (let testFs = currentFs; testFs <= 13.8; testFs += 0.15) {
+            for (let testFs = currentFs + 0.05; testFs <= 13.8; testFs += 0.05) {
               const testLh = (1.50 + (testFs - 10.5) * 0.035).toFixed(2);
               const testMb = Math.min(15, currentMb + (testFs - currentFs) * 1.8);
               paragraphs.forEach(p => {
@@ -2350,7 +2433,7 @@ function buildUsaHtml() {
               const newBottom = prose.getBoundingClientRect().bottom;
               const newClearance = footerTop - newBottom;
 
-              if (newBottom <= footerTop - 8 && page.scrollHeight <= page.clientHeight && prose.scrollWidth <= prose.clientWidth + 2 && newClearance >= 8) {
+              if (!checkOverflow() && newClearance >= 8) {
                 bestUpFs = testFs;
                 bestUpMb = testMb;
               } else {
@@ -2428,6 +2511,13 @@ async function runUsaUnified() {
     if (window.autoFitPage3Milestones) window.autoFitPage3Milestones();
     if (window.autoFitSpreadTypography) window.autoFitSpreadTypography();
   });
+
+  await new Promise((r) => setTimeout(r, 1200));
+
+  // Save calibrated HTML so disk files match exact DOM layout
+  const calibratedHtml = await page.content();
+  fs.writeFileSync(publicHtmlPath, calibratedHtml, 'utf8');
+  fs.writeFileSync(rootHtmlPath, calibratedHtml, 'utf8');
 
   // Evaluate page heights & clearance
   const auditResults = await page.evaluate(() => {

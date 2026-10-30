@@ -103,8 +103,26 @@ function formatMarkdown(text) {
   return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*(.*?)\*/g, '<em>$1</em>');
 }
 
-// Load canonical unit data from units/weimar_nazi_germany/data.js
+// Load canonical unit data from public/database.json or units/weimar_nazi_germany/data.js
 function loadWeimarData() {
+  const dbPath = path.join(ROOT_DIR, 'public', 'database.json');
+  if (fs.existsSync(dbPath)) {
+    try {
+      const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
+      if (
+        db.weimar_nazi_germany &&
+        (db.weimar_nazi_germany.lessons ||
+          (db.weimar_nazi_germany.data && db.weimar_nazi_germany.data.lessons))
+      ) {
+        return {
+          title: db.weimar_nazi_germany.title || 'Weimar and Nazi Germany, 1918–1939',
+          lessons: db.weimar_nazi_germany.lessons || db.weimar_nazi_germany.data.lessons,
+        };
+      }
+    } catch (e) {
+      console.warn('Failed to parse database.json, falling back to data.js:', e.message);
+    }
+  }
   const jsonPath = path.join(ROOT_DIR, 'data', 'weimar_nazi_germany.json');
   if (fs.existsSync(jsonPath)) {
     return JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
@@ -112,9 +130,8 @@ function loadWeimarData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'weimar_nazi_germany', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
   raw =
-    raw
-      .replace(/export\s+default\s+[^;]+;?/g, '')
-      .replace(/export\s*\{[^}]*\};?/g, '') + '; (typeof weimar_data !== "undefined" ? weimar_data : unitData);';
+    raw.replace(/export\s+default\s+[^;]+;?/g, '').replace(/export\s*\{[^}]*\};?/g, '') +
+    '; (typeof weimar_data !== "undefined" ? weimar_data : unitData);';
   return vm.runInNewContext(raw);
 }
 
@@ -790,10 +807,23 @@ function generateTextbookHtml(unitData) {
 
     if (config.isPaired) {
       // Lesson A feeds Verso; Lesson B feeds Recto
-      const b1 = blocksA[config.versoBlockIndices[0]] || blocksA[0] || {};
-      const b2 = blocksA[config.versoBlockIndices[1]] || blocksA[1] || {};
-      const b3 = blocksB[config.rectoBlockIndices[0]] || blocksB[0] || {};
-      const b4 = blocksB[config.rectoBlockIndices[1]] || blocksB[1] || {};
+      const idx1 = config.versoBlockIndices[0];
+      const idx2 = config.versoBlockIndices[1];
+      const idx3 = config.rectoBlockIndices[0];
+      const idx4 = config.rectoBlockIndices[1];
+
+      const b1 = blocksA[idx1] || blocksA[0] || {};
+      const b2 = blocksA[idx2] || blocksA[1] || {};
+      const b3 = blocksB[idx3] || blocksB[0] || {};
+      const b4 = blocksB[idx4] || blocksB[1] || {};
+
+      const stagesA = (lessonA.causal_domino_spine && lessonA.causal_domino_spine.stages) || [];
+      const stagesB = (lessonB.causal_domino_spine && lessonB.causal_domino_spine.stages) || [];
+
+      const q1 = stagesA[idx1] ? stagesA[idx1].question || stagesA[idx1].workbook_question : '';
+      const q2 = stagesA[idx2] ? stagesA[idx2].question || stagesA[idx2].workbook_question : '';
+      const q3 = stagesB[idx3] ? stagesB[idx3].question || stagesB[idx3].workbook_question : '';
+      const q4 = stagesB[idx4] ? stagesB[idx4].question || stagesB[idx4].workbook_question : '';
 
       versoBlocks = [
         {
@@ -804,6 +834,7 @@ function generateTextbookHtml(unitData) {
             .split(/\n\s*\n|\n/)
             .map((p) => p.trim())
             .filter(Boolean),
+          question: q1,
         },
         {
           ref: `${num}.2`,
@@ -813,6 +844,7 @@ function generateTextbookHtml(unitData) {
             .split(/\n\s*\n|\n/)
             .map((p) => p.trim())
             .filter(Boolean),
+          question: q2,
         },
       ];
 
@@ -825,6 +857,7 @@ function generateTextbookHtml(unitData) {
             .split(/\n\s*\n|\n/)
             .map((p) => p.trim())
             .filter(Boolean),
+          question: q3,
         },
         {
           ref: `${num}.4`,
@@ -834,14 +867,27 @@ function generateTextbookHtml(unitData) {
             .split(/\n\s*\n|\n/)
             .map((p) => p.trim())
             .filter(Boolean),
+          question: q4,
         },
       ];
     } else {
       // Single lesson feeds both Verso and Recto
-      const b1 = blocksA[config.versoBlockIndices[0]] || blocksA[0] || {};
-      const b2 = blocksA[config.versoBlockIndices[1]] || blocksA[1] || {};
-      const b3 = blocksA[config.rectoBlockIndices[0]] || blocksA[2] || {};
-      const b4 = blocksA[config.rectoBlockIndices[1]] || blocksA[3] || {};
+      const idx1 = config.versoBlockIndices[0];
+      const idx2 = config.versoBlockIndices[1];
+      const idx3 = config.rectoBlockIndices[0];
+      const idx4 = config.rectoBlockIndices[1];
+
+      const b1 = blocksA[idx1] || blocksA[0] || {};
+      const b2 = blocksA[idx2] || blocksA[1] || {};
+      const b3 = blocksA[idx3] || blocksA[2] || {};
+      const b4 = blocksA[idx4] || blocksA[3] || {};
+
+      const stagesA = (lessonA.causal_domino_spine && lessonA.causal_domino_spine.stages) || [];
+
+      const q1 = stagesA[idx1] ? stagesA[idx1].question || stagesA[idx1].workbook_question : '';
+      const q2 = stagesA[idx2] ? stagesA[idx2].question || stagesA[idx2].workbook_question : '';
+      const q3 = stagesA[idx3] ? stagesA[idx3].question || stagesA[idx3].workbook_question : '';
+      const q4 = stagesA[idx4] ? stagesA[idx4].question || stagesA[idx4].workbook_question : '';
 
       versoBlocks = [
         {
@@ -852,6 +898,7 @@ function generateTextbookHtml(unitData) {
             .split(/\n\s*\n|\n/)
             .map((p) => p.trim())
             .filter(Boolean),
+          question: q1,
         },
         {
           ref: `${num}.2`,
@@ -861,6 +908,7 @@ function generateTextbookHtml(unitData) {
             .split(/\n\s*\n|\n/)
             .map((p) => p.trim())
             .filter(Boolean),
+          question: q2,
         },
       ];
 
@@ -873,6 +921,7 @@ function generateTextbookHtml(unitData) {
             .split(/\n\s*\n|\n/)
             .map((p) => p.trim())
             .filter(Boolean),
+          question: q3,
         },
         {
           ref: `${num}.4`,
@@ -882,6 +931,7 @@ function generateTextbookHtml(unitData) {
             .split(/\n\s*\n|\n/)
             .map((p) => p.trim())
             .filter(Boolean),
+          question: q4,
         },
       ];
     }
@@ -897,6 +947,14 @@ function generateTextbookHtml(unitData) {
             <span class="section-date-pill">${block.date}</span>
             <h3 class="section-title">${block.title}</h3>
           </div>
+          ${
+            block.question
+              ? `
+          <div class="block-workbook-question">
+            <span class="bwq-text">&ldquo;${block.question}&rdquo;</span>
+          </div>`
+              : ''
+          }
           <div class="section-body">
             ${parasHtml}
           </div>
@@ -1697,6 +1755,27 @@ function generateTextbookHtml(unitData) {
       flex: 1;
     }
 
+    .block-workbook-question {
+      break-inside: avoid;
+      break-after: avoid;
+      background: #f8fafc;
+      border-left: 2.5px solid #1e3a8a;
+      padding: 1.5px 6px;
+      margin: 1.5px 0 3px 0;
+      border-radius: 0 2px 2px 0;
+      line-height: 1.22;
+    }
+
+    .block-workbook-question .bwq-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 7.2pt;
+      color: #1e3a8a;
+      line-height: 1.2;
+      display: block;
+    }
+
     .section-body {
       display: flex;
       flex-direction: column;
@@ -2141,23 +2220,34 @@ function generateTextbookHtml(unitData) {
         let pLine = 1.58;
 
         const checkOverflow = () => {
-          const bodyOverflow = body.scrollHeight > body.clientHeight + 3;
+          const pageOverflow = page.scrollHeight > page.clientHeight + 2;
+          const bodyOverflow = body.scrollHeight > body.clientHeight + 2;
           let footerOverlap = false;
           if (footer) {
             const bRect = body.getBoundingClientRect();
             const fRect = footer.getBoundingClientRect();
             if (bRect.bottom > fRect.top - 2) footerOverlap = true;
           }
-          return bodyOverflow || footerOverlap;
+          let colOverflow = false;
+          body.querySelectorAll('.spread-column').forEach(col => {
+            if (col.scrollHeight > col.clientHeight + 2) colOverflow = true;
+          });
+          return pageOverflow || bodyOverflow || footerOverlap || colOverflow;
         };
 
-        while (checkOverflow() && attempts < 25 && pSize > 8.8) {
-          pSize -= 0.15;
-          pLine = Math.max(1.36, pLine - 0.015);
+        while (checkOverflow() && attempts < 40 && pSize > 8.5) {
+          pSize -= 0.05;
+          pLine = Math.max(1.30, pLine - 0.007);
           body.querySelectorAll('.prose-p').forEach(p => {
             p.style.fontSize = pSize + 'pt';
             p.style.lineHeight = pLine;
-            p.style.marginBottom = Math.max(3, pSize * 0.35) + 'px';
+            p.style.marginBottom = Math.max(2.5, pSize * 0.3) + 'px';
+          });
+          body.querySelectorAll('.section-title').forEach(t => {
+            if (pSize < 10.2) t.style.fontSize = '8.2pt';
+          });
+          body.querySelectorAll('.bwq-text').forEach(q => {
+            if (pSize < 10.0) q.style.fontSize = '6.8pt';
           });
           attempts++;
         }
@@ -2221,6 +2311,10 @@ async function main() {
 
   await new Promise((r) => setTimeout(r, 1200));
 
+  // Save calibrated HTML so that disk files reflect exact DOM layout
+  const calibratedHtml = await page.content();
+  fs.writeFileSync(htmlPath, calibratedHtml, 'utf8');
+
   // Reprographics Space Audit
   console.log('\nRunning Automated Reprographics Page Budget Audit...');
   const auditResults = await auditPageBudget(page, {
@@ -2246,18 +2340,24 @@ async function main() {
 
   const pdfPath = path.join(pdfOutputDir, 'weimar_nazi_germany_textbook_UNIFIED_FINAL.pdf');
   const pdfPathLegacy = path.join(pdfOutputDir, 'weimar_textbook_UNIFIED.pdf');
+  const canonicalPdfPath = path.join(pdfOutputDir, 'weimar_nazi_germany_textbook.pdf');
 
   await page.pdf({
     path: pdfPath,
     format: 'A4',
     printBackground: true,
+    preferCSSPageSize: true,
     margin: { top: 0, right: 0, bottom: 0, left: 0 },
   });
 
   fs.copyFileSync(pdfPath, pdfPathLegacy);
+  try {
+    fs.copyFileSync(pdfPath, canonicalPdfPath);
+  } catch (e) {}
 
   console.log(`\n📄 Generated PDF: ${pdfPath}`);
   console.log(`📄 Generated Legacy PDF: ${pdfPathLegacy}`);
+  console.log(`📄 Generated Canonical PDF: ${canonicalPdfPath}`);
 
   // Take previews of key pages for verification
   const previewDir = path.join(htmlOutputDir, 'previews', 'unified');

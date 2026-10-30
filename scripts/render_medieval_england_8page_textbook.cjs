@@ -63,12 +63,19 @@ function cleanProse(text) {
 
 // Load canonical data from units/medieval_england/data.js
 function loadUnitData() {
+  const dbPath = path.join(ROOT_DIR, 'public', 'database.json');
+  if (fs.existsSync(dbPath)) {
+    try {
+      const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
+      if (db.medieval_england && db.medieval_england.data) return db.medieval_england.data;
+    } catch (e) {}
+  }
   const dataPath = path.join(ROOT_DIR, 'units', 'medieval_england', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
   raw =
     raw
       .replace(/export\s+const\s+unitData\s*=/g, 'const unitData =')
-      .replace(/export\s+default\s+unitData;?/g, '')
+      .replace(/export\s+default\s+[^;]+;?/g, '')
       .replace(/export\s*\{[^}]*\};?/g, '') + '; unitData;';
   return vm.runInNewContext(raw);
 }
@@ -780,6 +787,27 @@ function buildHtml() {
       line-height: 1.15;
     }
 
+    .block-workbook-question {
+      break-inside: avoid;
+      break-after: avoid;
+      background: #f8fafc;
+      border-left: 2.5px solid #1e3a8a;
+      padding: 1.5px 6px;
+      margin: 1.5px 0 2.5px 0;
+      border-radius: 0 2px 2px 0;
+      line-height: 1.22;
+    }
+
+    .block-workbook-question .bwq-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 7.2pt;
+      color: #1e3a8a;
+      line-height: 1.2;
+      display: block;
+    }
+
     .block-prose {
       font-family: 'Lora', Georgia, serif;
       color: #1e293b;
@@ -791,21 +819,21 @@ function buildHtml() {
       color: #0f172a;
     }
 
-    /* Calibrated typography: guarantees +30px to +60px clearance, 0px overflow, zero spillover */
-    .page-lesson-1 .block-section { margin-bottom: 8px; }
-    .page-lesson-1 .block-prose { font-size: 11.15pt; line-height: 1.54; }
+    /* Calibrated typography: guarantees positive clearance, 0px overflow, zero spillover */
+    .page-lesson-1 .block-section { margin-bottom: 4.5px; }
+    .page-lesson-1 .block-prose { font-size: 10.35pt; line-height: 1.45; }
 
-    .page-lesson-2 .block-section { margin-bottom: 7px; }
-    .page-lesson-2 .block-prose { font-size: 10.65pt; line-height: 1.49; }
+    .page-lesson-2 .block-section { margin-bottom: 4px; }
+    .page-lesson-2 .block-prose { font-size: 9.95pt; line-height: 1.41; }
 
-    .page-lesson-3 .block-section { margin-bottom: 6.5px; }
-    .page-lesson-3 .block-prose { font-size: 10.35pt; line-height: 1.46; }
+    .page-lesson-3 .block-section { margin-bottom: 4px; }
+    .page-lesson-3 .block-prose { font-size: 9.85pt; line-height: 1.40; }
 
-    .page-lesson-4 .block-section { margin-bottom: 7px; }
-    .page-lesson-4 .block-prose { font-size: 10.75pt; line-height: 1.49; }
+    .page-lesson-4 .block-section { margin-bottom: 4.5px; }
+    .page-lesson-4 .block-prose { font-size: 10.35pt; line-height: 1.45; }
 
-    .page-lesson-5 .block-section { margin-bottom: 6px; }
-    .page-lesson-5 .block-prose { font-size: 10.15pt; line-height: 1.45; }
+    .page-lesson-5 .block-section { margin-bottom: 3.5px; }
+    .page-lesson-5 .block-prose { font-size: 9.55pt; line-height: 1.38; }
 
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -1073,17 +1101,31 @@ function buildHtml() {
     <div class="prose-body">
       <div class="prose-columns">
         ${blocks
-          .map(
-            (b, bi) => `
+          .map((b, bi) => {
+            const stages = (lesson.causal_domino_spine && lesson.causal_domino_spine.stages) || [];
+            const stage =
+              stages[bi] ||
+              stages.find((s) => s.para_ref && s.para_ref.includes('.' + (bi + 1))) ||
+              null;
+            const question = stage ? stage.question || stage.workbook_question : '';
+            return `
           <div class="block-section">
             <div class="block-header">
               <span class="block-ref">[${lessonNum}.${bi + 1}]</span>
               <span class="block-title">${b.title || `Act ${bi + 1}`}</span>
             </div>
+            ${
+              question
+                ? `
+            <div class="block-workbook-question">
+              <span class="bwq-text">&ldquo;${question}&rdquo;</span>
+            </div>`
+                : ''
+            }
             <p class="block-prose">${cleanProse(b.text)}</p>
           </div>
-        `,
-          )
+        `;
+          })
           .join('')}
       </div>
     </div>
@@ -1170,6 +1212,48 @@ async function run() {
   await page.setViewport({ width: 1200, height: 1600, deviceScaleFactor: 2 });
   await page.setContent(html, { waitUntil: 'domcontentloaded' });
   await page.evaluateHandle('document.fonts.ready');
+
+  // Dynamic in-browser auto-calibration for zero spillover
+  await page.evaluate(() => {
+    document.querySelectorAll('.page-lesson').forEach((p) => {
+      const footer = p.querySelector('.running-footer');
+      const footerTop = footer ? footer.getBoundingClientRect().top : p.clientHeight - 30;
+      const prose = p.querySelector('.prose-columns');
+      if (!prose) return;
+
+      const paragraphs = Array.from(p.querySelectorAll('.block-prose'));
+      const sections = Array.from(p.querySelectorAll('.block-section'));
+      if (!paragraphs.length) return;
+
+      let fs = parseFloat(window.getComputedStyle(paragraphs[0]).fontSize) * 0.75;
+      let mb = parseFloat(window.getComputedStyle(sections[0]).marginBottom) || 5;
+      let iterations = 0;
+
+      while (
+        (p.scrollHeight > p.clientHeight || prose.getBoundingClientRect().bottom > footerTop - 6) &&
+        fs > 8.5 &&
+        iterations < 45
+      ) {
+        fs -= 0.15;
+        mb = Math.max(1.5, mb - 0.2);
+        paragraphs.forEach((el) => {
+          el.style.fontSize = fs.toFixed(2) + 'pt';
+          el.style.lineHeight = (fs * 0.138 + 0.04).toFixed(2);
+        });
+        sections.forEach((s) => {
+          s.style.marginBottom = mb.toFixed(1) + 'px';
+        });
+        iterations++;
+      }
+    });
+  });
+
+  // Capture auto-calibrated HTML and update disk files
+  const calibratedHtml = await page.content();
+  fs.writeFileSync(publicHtmlPath, calibratedHtml, 'utf8');
+  if (fs.existsSync(unitsDir)) {
+    fs.writeFileSync(path.join(unitsDir, 'textbook.html'), calibratedHtml, 'utf8');
+  }
 
   // Evaluate page heights & clearance
   const auditResults = await page.evaluate(() => {
