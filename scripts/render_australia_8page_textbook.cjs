@@ -483,7 +483,7 @@ function buildHtml() {
 
     .cover-hero-wrap {
       width: 100%;
-      height: 104mm;
+      height: 96mm;
       border: 1.5px solid #0f172a;
       border-radius: 2px;
       overflow: hidden;
@@ -853,21 +853,24 @@ function buildHtml() {
       flex: 1;
       display: flex;
       flex-direction: column;
-      min-height: 0;
+      margin-bottom: 4px;
+      overflow: hidden;
     }
 
     .prose-columns {
       column-count: 2;
-      column-gap: 20px;
+      column-gap: 8mm;
       column-fill: balance;
       text-align: justify;
       text-justify: inter-word;
       hyphens: auto;
+      flex: 1;
     }
 
     .block-section {
       break-inside: auto;
-      margin-bottom: 6px;
+      page-break-inside: auto;
+      margin-bottom: 4px;
     }
 
     .block-header {
@@ -906,6 +909,15 @@ function buildHtml() {
       line-height: 1.48;
       color: #1e293b;
       margin: 0;
+    }
+
+    .block-prose p {
+      margin: 0 0 3px 0;
+      text-indent: 0;
+      break-inside: auto;
+      page-break-inside: auto;
+      orphans: 2;
+      widows: 2;
     }
 
     .block-prose strong {
@@ -1292,49 +1304,48 @@ async function run() {
 
   // Dynamic Auto-Balancing Typography Engine
   console.log(
-    '\n[Auto-Balancer] Dynamically calibrating font metrics to guarantee 0px overflow & >= 95% fill...',
+    '\n[Auto-Balancer] Dynamically maximizing typography to eliminate bottom voids & guarantee 0px overflow...',
   );
   await page.evaluate(() => {
     const lessonPages = document.querySelectorAll('.page-lesson');
     lessonPages.forEach((p) => {
       const footer = p.querySelector('.running-footer');
+      const body = p.querySelector('.prose-body');
+      const cols = p.querySelector('.prose-columns');
       const proseEls = p.querySelectorAll('.block-prose');
       const sections = p.querySelectorAll('.block-section');
-      if (proseEls.length === 0 || !footer) return;
+      if (proseEls.length === 0 || !footer || !body || !cols) return;
 
-      let size = 9.8;
-      let lh = 1.45;
-      let secMargin = 6.0;
+      let size = 11.0;
+      let lh = 1.48;
+      let margin = 4.5;
 
-      const getOverlap = () => {
-        const fTop = footer.getBoundingClientRect().top;
-        const children = Array.from(p.querySelectorAll('.block-section, p, .block-header'));
-        const maxB = Math.max(...children.map((c) => c.getBoundingClientRect().bottom));
-        return maxB - fTop;
+      proseEls.forEach((el) => {
+        el.style.fontSize = size.toFixed(2) + 'pt';
+        el.style.lineHeight = lh.toFixed(2);
+      });
+
+      const checkOverflow = () => {
+        const footerTop = footer.getBoundingClientRect().top;
+        const allChildren = Array.from(
+          p.querySelectorAll('p, .block-header, .block-workbook-question'),
+        );
+        const maxBottom = Math.max(...allChildren.map((el) => el.getBoundingClientRect().bottom));
+        const colOverflow =
+          cols.scrollHeight > body.clientHeight + 2 || cols.scrollWidth > cols.clientWidth + 5;
+        const footerCollision = maxBottom > footerTop - 8;
+        return colOverflow || footerCollision;
       };
 
-      // Shrink if overflowing or too close to footer
-      while (getOverlap() > -15 && size > 8.5) {
-        size -= 0.1;
-        lh -= 0.01;
-        secMargin = Math.max(3.0, secMargin - 0.1);
+      while (checkOverflow() && size > 6.5) {
+        size -= 0.05;
+        lh -= 0.005;
+        margin = Math.max(2.0, margin - 0.05);
         proseEls.forEach((el) => {
           el.style.fontSize = size.toFixed(2) + 'pt';
           el.style.lineHeight = lh.toFixed(2);
         });
-        sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
-      }
-
-      // Expand if underflowing (too much void above footer)
-      while (getOverlap() < -45 && size < 11.2) {
-        size += 0.1;
-        lh += 0.01;
-        secMargin = Math.min(8.0, secMargin + 0.1);
-        proseEls.forEach((el) => {
-          el.style.fontSize = size.toFixed(2) + 'pt';
-          el.style.lineHeight = lh.toFixed(2);
-        });
-        sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
+        sections.forEach((s) => (s.style.marginBottom = margin.toFixed(1) + 'px'));
       }
     });
   });

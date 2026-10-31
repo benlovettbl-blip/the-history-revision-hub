@@ -1132,31 +1132,49 @@ const cme_new_data = {
           term: 'Sykes-Picot Agreement',
           definition:
             'A secret 1916 pact between Britain and France dividing Ottoman Arab lands into European spheres of influence.',
+          syllables: 'Sykes-Pi-cot A-gree-ment',
+          phonetic: 'saɪks piːˈkəʊ əˈɡriːmənt',
+          tier: '3',
         },
         {
           term: 'Mandate',
           definition:
             'An authorization granted by the League of Nations to a European power to govern a former Ottoman territory until independence.',
+          syllables: 'man-date',
+          phonetic: 'ˈmændeɪt',
+          tier: '3',
         },
         {
           term: 'Balfour Declaration',
           definition:
             'A 1917 letter from British Foreign Secretary Arthur Balfour declaring support for a Jewish national home in Palestine.',
+          syllables: 'Bal-four Dec-la-ra-tion',
+          phonetic: 'ˈbælfɔː ˌdɛkləˈreɪʃən',
+          tier: '3',
         },
         {
           term: 'Zionism',
           definition:
             'The nationalist movement advocating for the re-establishment and protection of a Jewish nation state in their ancestral homeland.',
+          syllables: 'Zi-on-ism',
+          phonetic: 'ˈzaɪənɪzəm',
+          tier: '3',
         },
         {
           term: 'Arab Nationalism',
           definition:
             'A nationalist ideology celebrating the glorious heritage of the Arab world and demanding independence from imperial control.',
+          syllables: 'Ar-ab Na-tion-al-ism',
+          phonetic: 'ˈærəb ˈnæʃənəlɪzəm',
+          tier: '3',
         },
         {
           term: 'Chokepoint',
           definition:
             'A narrow, strategic maritime passage (like the Suez Canal or Straits of Tiran) whose closure can cripple trade and cause war.',
+          syllables: 'choke-point',
+          phonetic: 'ˈtʃəʊkˌpɔɪnt',
+          tier: '2',
         },
       ],
       vocab_cloze_text:
@@ -2059,31 +2077,49 @@ const cme_new_data = {
           term: 'Mandate',
           definition:
             'An authorization granted by the League of Nations to govern a territory until it was deemed ready for independence.',
+          syllables: 'man-date',
+          phonetic: 'ˈmændeɪt',
+          tier: '3',
         },
         {
           term: 'Zionism',
           definition:
             'A nationalist movement that emerged in the 19th century supporting the creation of a Jewish homeland in the territory defined as the Land of Israel.',
+          syllables: 'Zi-on-ism',
+          phonetic: 'ˈzaɪənɪzəm',
+          tier: '3',
         },
         {
           term: 'Irgun',
           definition:
             'A right-wing Zionist paramilitary organization that used militant tactics against British forces and Arab populations.',
+          syllables: 'Ir-gun',
+          phonetic: 'ˈɪərɡuːn',
+          tier: '3',
         },
         {
           term: 'Nakba',
           definition:
             'Meaning "The Catastrophe" in Arabic, referring to the permanent displacement and dispossession of over 700,000 Palestinians during the 1948 war.',
+          syllables: 'Nak-ba',
+          phonetic: 'ˈnækbə',
+          tier: '3',
         },
         {
           term: 'Dual Obligation',
           definition:
             "Britain's conflicting commitment under the Mandate to both establish a Jewish national home and protect the civil and religious rights of existing non-Jewish communities.",
+          syllables: 'du-al ob-li-ga-tion',
+          phonetic: 'ˈdjuːəl ˌɒblɪˈɡeɪʃən',
+          tier: '3',
         },
         {
           term: 'UN Resolution 181',
           definition:
             'The November 1947 UN Partition Plan proposing to divide Palestine into separate Jewish and Arab states, with Jerusalem under international control.',
+          syllables: 'U-N Res-o-lu-tion 181',
+          phonetic: 'juː ɛn ˌrɛzəˈluːʃən',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -3427,31 +3463,49 @@ const cme_new_data = {
           term: 'Green Line',
           definition:
             'The 1949 armistice borders drawn in green ink, giving Israel 79% of mandate Palestine.',
+          syllables: 'green line',
+          phonetic: 'ɡriːn laɪn',
+          tier: '3',
         },
         {
           term: 'UNRWA',
           definition:
             'United Nations agency created in 1949 to provide relief for Palestinian refugees.',
+          syllables: 'U-N-R-W-A',
+          phonetic: 'ˈjuːnrwə',
+          tier: '3',
         },
         {
           term: 'Law of Return',
           definition:
             '1950 Israeli law granting any Jew the right to immigrate to Israel and receive automatic citizenship.',
+          syllables: 'law of re-turn',
+          phonetic: 'lɔː ɒv rɪˈtɜːn',
+          tier: '3',
         },
         {
           term: 'Fedayeen',
           definition:
             'Palestinian guerrilla fighters who launched cross-border raids into Israel from the Gaza Strip.',
+          syllables: 'fe-da-yeen',
+          phonetic: 'ˌfɛdəˈjiːn',
+          tier: '3',
         },
         {
           term: 'Armistice Agreements',
           definition:
             '1949 bilateral agreements between Israel and Egypt, Lebanon, Jordan, and Syria formally ending the 1948 war hostilities.',
+          syllables: 'ar-mi-stice a-gree-ments',
+          phonetic: 'ˈɑːmɪstɪs əˈɡriːmənts',
+          tier: '3',
         },
         {
           term: 'Resolution 194',
           definition:
             '1948 UN General Assembly resolution asserting the right of Palestinian refugees to return to their homes or receive compensation.',
+          syllables: 'res-o-lu-tion 194',
+          phonetic: 'ˌrɛzəˈluːʃən',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -5335,31 +5389,49 @@ const cme_new_data = {
           term: 'Pan-Arabism',
           definition:
             'A political movement aimed at uniting all Arab nations to throw off Western colonial influence and secure Arab independence.',
+          syllables: 'pan-Ar-ab-ism',
+          phonetic: 'ˌpænˈærəbɪzəm',
+          tier: '3',
         },
         {
           term: 'Czech Arms Deal',
           definition:
             'A 1955 agreement where the Soviet bloc supplied Egypt with massive amounts of advanced weaponry, shocking the West.',
+          syllables: 'czech arms deal',
+          phonetic: 'tʃɛk ɑːmz diːl',
+          tier: '3',
         },
         {
           term: 'Nationalisation',
           definition:
             'The transfer of a major branch of industry or commerce from private to state ownership or control (e.g., the Suez Canal).',
+          syllables: 'na-tion-al-i-sa-tion',
+          phonetic: 'ˌnæʃənəlaɪˈzeɪʃən',
+          tier: '3',
         },
         {
           term: 'secret Sèvres agreement',
           definition:
             'A secret agreement in 1956 between Britain, France, and Israel to militarily invade Egypt and retake the Suez Canal.',
+          syllables: 'se-cret Sèv-res a-gree-ment',
+          phonetic: 'ˈsiːkrɪt ˈsɛvr əˈɡriːmənt',
+          tier: '3',
         },
         {
           term: 'UNEF',
           definition:
             'The United Nations Emergency Force, deployed in 1956 to act as a buffer between Israel and Egypt in the Sinai Desert.',
+          syllables: 'U-N-E-F',
+          phonetic: 'ˈjuːnɛf',
+          tier: '3',
         },
         {
           term: 'Straits of Tiran',
           definition:
             "A narrow maritime passage into the Gulf of Aqaba blockaded by Egypt, threatening Israel's southern port of Eilat.",
+          syllables: 'straits of ti-ran',
+          phonetic: 'streɪts ɒv tɪˈræn',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -6772,18 +6844,27 @@ const cme_new_data = {
             'A summit of Arab League heads of state held in Cairo in January 1964 that established the PLO and opposed Israeli water projects.',
           example:
             'Arab leaders met at the Cairo Conference to oppose Israel’s National Water Carrier.',
+          syllables: 'Cai-ro Co-nfe-re-nce (1964)',
+          phonetic: 'cairo conference (1964)',
+          tier: '2',
         },
         {
           term: 'PLO (Palestine Liberation Organisation)',
           definition:
             'An umbrella political organisation founded in 1964 to represent the Palestinian people and pursue their national rights.',
           example: 'The PLO was created in 1964 to unite Palestinian political factions.',
+          syllables: 'P-L-O (Pa-le-sti-ne Li-bera-tion O-rga-nisa-tion)',
+          phonetic: 'ˌpiː ɛl ˈəʊ (palestine liberation organisation)',
+          tier: '2',
         },
         {
           term: 'Fatah',
           definition:
             'A Palestinian nationalist guerrilla organisation founded by Yasser Arafat that launched armed cross-border raids into Israel.',
           example: 'Fatah guerrillas carried out sabotage raids from bases in Syria and Jordan.',
+          syllables: 'Fa-tah',
+          phonetic: 'ˈfætə',
+          tier: '3',
         },
         {
           term: 'National Water Carrier',
@@ -6791,12 +6872,18 @@ const cme_new_data = {
             'A major Israeli infrastructure network completed in 1964 to pump water from the Sea of Galilee across the country.',
           example:
             'Syria attempted to cut off the flow of water feeding Israel’s National Water Carrier.',
+          syllables: 'Na-tio-nal Wa-ter Ca-rrier',
+          phonetic: 'national water carrier',
+          tier: '2',
         },
         {
           term: 'Samu Raid (1966)',
           definition:
             'A large-scale Israeli military reprisal raid into the West Bank village of Samu in November 1966 following a landmine attack.',
           example: 'The Samu raid caused widespread anger in Jordan and humiliated King Hussein.',
+          syllables: 'Samu Raid (1966)',
+          phonetic: 'samu raid (1966)',
+          tier: '2',
         },
         {
           term: '7 April 1967 Dogfight',
@@ -6804,6 +6891,9 @@ const cme_new_data = {
             'A fierce aerial clash over the Golan Heights in which Israeli jet fighters shot down six Syrian MiG fighter aircraft.',
           example:
             'The defeat of six Syrian MiGs on 7 April 1967 put pressure on Egypt to defend Syria.',
+          syllables: '7 A-pril 1967 Do-gfight',
+          phonetic: '7 april 1967 dogfight',
+          tier: '2',
         },
       ],
       vocab_cloze_text:
@@ -7952,12 +8042,18 @@ const cme_new_data = {
             'The United Nations peacekeeping force stationed in the Sinai Peninsula from 1957 until expelled by Nasser in May 1967.',
           example:
             'Nasser demanded the immediate withdrawal of UNEF peacekeepers from the Sinai border.',
+          syllables: 'U-N-E-F (UN E-me-rgency Fo-rce)',
+          phonetic: 'ˈjuːnɛf (un emergency force)',
+          tier: '2',
         },
         {
           term: 'Straits of Tiran',
           definition:
             'The narrow sea passage connecting the Gulf of Aqaba to the Red Sea, vital for Israeli maritime trade through Eilat.',
           example: 'Egypt blockaded the Straits of Tiran, cutting off Israel’s oil imports.',
+          syllables: 'straits of ti-ran',
+          phonetic: 'streɪts ɒv tɪˈræn',
+          tier: '3',
         },
         {
           term: 'Pre-emptive Strike',
@@ -7965,6 +8061,9 @@ const cme_new_data = {
             'A surprise military attack launched in anticipation of an imminent enemy assault to neutralize the threat first.',
           example:
             'Israel launched a pre-emptive dawn air strike on 5 June 1967 to destroy Egyptian airfields.',
+          syllables: 'pre-emp-tive strike',
+          phonetic: 'priːˈɛmptɪv straɪk',
+          tier: '2',
         },
         {
           term: 'Air Supremacy',
@@ -7972,6 +8071,9 @@ const cme_new_data = {
             'Complete military control of the skies, preventing enemy aircraft from operating effectively.',
           example:
             'Total air supremacy allowed Israeli tanks to advance across the Sinai without fear of enemy bombing.',
+          syllables: 'Air Su-pre-macy',
+          phonetic: 'air supremacy',
+          tier: '2',
         },
         {
           term: 'West Bank',
@@ -7979,6 +8081,9 @@ const cme_new_data = {
             'The territory west of the River Jordan, administered by Jordan from 1948 until captured by Israel in June 1967.',
           example:
             'Israeli paratroopers captured the West Bank and East Jerusalem during the Six Day War.',
+          syllables: 'west bank',
+          phonetic: 'wɛst bæŋk',
+          tier: '3',
         },
         {
           term: 'Western Wall',
@@ -7986,6 +8091,9 @@ const cme_new_data = {
             'The holy Jewish prayer site in the Old City of Jerusalem, captured by Israeli paratroopers on 7 June 1967.',
           example:
             'Israeli soldiers wept with emotion as they reached the Western Wall on 7 June 1967.',
+          syllables: 'We-stern Wall',
+          phonetic: 'western wall',
+          tier: '2',
         },
       ],
       vocab_cloze_text:
@@ -9144,18 +9252,27 @@ const cme_new_data = {
             'The lands captured by Israel in June 1967: the West Bank, Gaza Strip, Sinai Peninsula, Golan Heights, and East Jerusalem.',
           example:
             'Israel placed the Occupied Territories under military administration after June 1967.',
+          syllables: 'oc-cu-pied ter-ri-to-ries',
+          phonetic: 'ˈɒkjʊpaɪd ˈtɛrɪtəriz',
+          tier: '3',
         },
         {
           term: 'Khartoum Conference',
           definition:
             'A summit of eight Arab heads of state held in Sudan in August–September 1967 that established official Arab policy.',
           example: 'Arab leaders adopted the famous "Three Noes" at the Khartoum Conference.',
+          syllables: 'Kha-rtoum Co-nfe-re-nce',
+          phonetic: 'khartoum conference',
+          tier: '2',
         },
         {
           term: 'The Three Noes',
           definition:
             'The Khartoum policy resolution: "no peace with Israel, no recognition of Israel, no negotiations with it."',
           example: 'The Three Noes rejected any direct peace treaties with the Israeli government.',
+          syllables: 'The Three Noes',
+          phonetic: 'the three noes',
+          tier: '2',
         },
         {
           term: 'UN Resolution 242',
@@ -9163,6 +9280,9 @@ const cme_new_data = {
             'A United Nations Security Council resolution passed on 22 November 1967 establishing the principle of "Land for Peace".',
           example:
             'UN Resolution 242 called for Israeli withdrawal in exchange for recognized boundaries.',
+          syllables: 'UN Re-solu-tion 242',
+          phonetic: 'un resolution 242',
+          tier: '2',
         },
         {
           term: 'Land for Peace',
@@ -9170,6 +9290,9 @@ const cme_new_data = {
             'The diplomatic formula requiring Israel to return occupied land in exchange for Arab recognition and permanent peace.',
           example:
             'The principle of Land for Peace became the foundation of all Middle East diplomacy.',
+          syllables: 'Land for Pea-ce',
+          phonetic: 'land for peace',
+          tier: '2',
         },
         {
           term: 'Israeli Settlements',
@@ -9177,6 +9300,9 @@ const cme_new_data = {
             'Civilian communities built by Israeli citizens in the Occupied Territories under Israeli military administration.',
           example:
             'The establishment of Israeli settlements in the West Bank became a major obstacle to peace.',
+          syllables: 'I-srae-li Se-ttle-ments',
+          phonetic: 'israeli settlements',
+          tier: '2',
         },
       ],
       vocab_cloze_text:
@@ -10330,6 +10456,9 @@ const cme_new_data = {
             'Arabic term meaning "those who sacrifice themselves"; used to describe Palestinian guerrilla fighters waging armed struggle against Israel.',
           example:
             'Palestinian fedayeen launched cross-border raids into Israel from bases in Jordan.',
+          syllables: 'fe-da-yeen',
+          phonetic: 'ˌfɛdəˈjiːn',
+          tier: '3',
         },
         {
           term: 'Battle of Karameh (1968)',
@@ -10337,6 +10466,9 @@ const cme_new_data = {
             'A battle in Jordan in March 1968 where Palestinian fighters resisted an Israeli armored raid, boosting Palestinian national pride.',
           example:
             'The Battle of Karameh made Yasser Arafat a national hero across the Arab world.',
+          syllables: 'Ba-ttle of Ka-rameh (1968)',
+          phonetic: 'battle of karameh (1968)',
+          tier: '3',
         },
         {
           term: 'PFLP',
@@ -10344,6 +10476,9 @@ const cme_new_data = {
             'Popular Front for the Liberation of Palestine; a radical Marxist Palestinian faction that pioneered international airplane hijackings.',
           example:
             'The PFLP hijacked passenger airliners to draw international attention to the Palestinian cause.',
+          syllables: 'PFLP',
+          phonetic: 'pflp',
+          tier: '3',
         },
         {
           term: "Dawson's Field (1970)",
@@ -10351,6 +10486,9 @@ const cme_new_data = {
             'A desert airstrip in Jordan where PFLP militants landed three hijacked passenger airliners and blew them up in front of media cameras.',
           example:
             "The explosions at Dawson's Field triggered the Black September crackdown in Jordan.",
+          syllables: "Da-wson's Field (1970)",
+          phonetic: "dawson's field (1970)",
+          tier: '2',
         },
         {
           term: 'Black September (1970)',
@@ -10358,6 +10496,9 @@ const cme_new_data = {
             "A civil conflict in Jordan in September 1970 in which King Hussein's army defeated Palestinian militias and expelled the PLO.",
           example:
             'After Black September, the PLO was expelled from Jordan and relocated to Lebanon.',
+          syllables: 'Black Se-ptember (1970)',
+          phonetic: 'black september (1970)',
+          tier: '3',
         },
         {
           term: 'Munich Olympics (1972)',
@@ -10365,6 +10506,9 @@ const cme_new_data = {
             'The hostage-taking and murder of eleven Israeli athletes and coaches by Palestinian militants at the 1972 Summer Olympic Games.',
           example:
             'The Munich Olympics massacre shocked global public opinion and led to Israeli targeted reprisals.',
+          syllables: 'Mu-nich O-ly-mpics (1972)',
+          phonetic: 'munich olympics (1972)',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -11538,6 +11682,9 @@ const cme_new_data = {
             'A static border conflict along the Suez Canal from 1969 to 1970 involving heavy artillery duels, commando raids, and air dogfights.',
           example:
             'The War of Attrition inflicted hundreds of casualties on Israeli troops along the Suez Canal.',
+          syllables: 'War of A-ttri-tion',
+          phonetic: 'war of attrition',
+          tier: '3',
         },
         {
           term: 'Bar-Lev Line',
@@ -11545,6 +11692,9 @@ const cme_new_data = {
             'A fortified chain of Israeli concrete bunkers and massive sixty-foot sand ramparts built along the eastern bank of the Suez Canal.',
           example:
             'Egyptian engineers used high-pressure water monitors to wash away the sand ramparts of the Bar-Lev Line.',
+          syllables: 'Bar-Lev Line',
+          phonetic: 'bar-lev line',
+          tier: '2',
         },
         {
           term: 'Anwar Sadat',
@@ -11552,6 +11702,9 @@ const cme_new_data = {
             'President of Egypt from 1970 to 1981 who launched the 1973 Yom Kippur War to break the diplomatic stalemate and regain the Sinai.',
           example:
             'Anwar Sadat planned the surprise attack to force the United States into serious peace negotiations.',
+          syllables: 'A-nwar Sa-dat',
+          phonetic: 'anwar sadat',
+          tier: '3',
         },
         {
           term: 'Yom Kippur',
@@ -11559,6 +11712,9 @@ const cme_new_data = {
             'The holiest day in the Jewish calendar (the Day of Atonement), observed with fasting and prayer, when Egypt and Syria attacked.',
           example:
             'Israel was caught off guard because the attack occurred on Yom Kippur when soldiers were at prayer.',
+          syllables: 'Yom Ki-ppur',
+          phonetic: 'yom kippur',
+          tier: '2',
         },
         {
           term: 'OPEC Oil Embargo',
@@ -11566,6 +11722,9 @@ const cme_new_data = {
             'The decision by Arab oil-exporting states in October 1973 to cut oil production and embargo nations supporting Israel, quadrupling prices.',
           example:
             'The OPEC oil embargo caused severe fuel shortages and queues at petrol stations across the West.',
+          syllables: 'O-P-E-C Oil E-mbargo',
+          phonetic: 'ˈəʊpɛk oil embargo',
+          tier: '2',
         },
         {
           term: 'Shuttle Diplomacy',
@@ -11573,6 +11732,9 @@ const cme_new_data = {
             'The diplomatic method pioneered by US Secretary of State Henry Kissinger in 1973–74, flying between capitals to broker peace.',
           example:
             'Kissinger’s shuttle diplomacy successfully negotiated disengagement agreements between Israel, Egypt, and Syria.',
+          syllables: 'shut-tle di-plo-ma-cy',
+          phonetic: 'ˈʃʌtl dɪˈpləʊməsi',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -13018,31 +13180,49 @@ const cme_new_data = {
           term: 'Stagflation',
           definition:
             'An economic crisis combining soaring inflation and stagnant growth, triggered across Western nations by the 1973 OPEC oil shock.',
+          syllables: 'Sta-gfla-tion',
+          phonetic: 'stagflation',
+          tier: '2',
         },
         {
           term: 'Shuttle Diplomacy',
           definition:
             "US Secretary of State Henry Kissinger's mediation technique of flying continuously between Cairo, Damascus, and Jerusalem to broker disengagement.",
+          syllables: 'shut-tle di-plo-ma-cy',
+          phonetic: 'ˈʃʌtl dɪˈpləʊməsi',
+          tier: '3',
         },
         {
           term: 'Sinai II Agreement',
           definition:
             'A 1975 diplomatic pact where Israel surrendered the strategic Gidi and Mitla passes and oil fields to Egypt in exchange for peaceful transit.',
+          syllables: 'Si-nai II A-gree-ment',
+          phonetic: 'sinai ii agreement',
+          tier: '3',
         },
         {
           term: 'Likud',
           definition:
             'The right-wing Israeli political coalition led by Menachem Begin that ended three decades of Labor dominance by winning the 1977 election.',
+          syllables: 'Li-kud',
+          phonetic: 'likud',
+          tier: '2',
         },
         {
           term: 'Camp David Accords',
           definition:
             'The landmark 1978 framework for Middle East peace negotiated by Carter, Sadat, and Begin during thirteen days of secluded summitry.',
+          syllables: 'Camp Da-vid ac-cords',
+          phonetic: 'kæmp ˈdeɪvɪd əˈkɔːdz',
+          tier: '3',
         },
         {
           term: 'Treaty of Washington',
           definition:
             'The historic March 1979 peace treaty where Israel withdrew completely from the Sinai Peninsula in exchange for Egyptian diplomatic recognition.',
+          syllables: 'Trea-ty of Wa-shington',
+          phonetic: 'treaty of washington',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -14727,31 +14907,49 @@ const cme_new_data = {
           term: 'UN Resolution 3236',
           definition:
             'A 1974 UN General Assembly resolution formally recognizing the inalienable rights of the Palestinian people to national self-determination.',
+          syllables: 'UN Re-solu-tion 3236',
+          phonetic: 'un resolution 3236',
+          tier: '2',
         },
         {
           term: 'Fatahland',
           definition:
             'The militarized semi-autonomous enclave established by the PLO in southern Lebanon used to launch cross-border attacks into northern Israel.',
+          syllables: 'Fa-ta-hland',
+          phonetic: 'fatahland',
+          tier: '2',
         },
         {
           term: 'Operation Peace for Galilee',
           definition:
             "The June 1982 full-scale Israeli military invasion of Lebanon commanded by Ariel Sharon to destroy the PLO's military infrastructure.",
+          syllables: 'O-pera-tion Pea-ce for Ga-lilee',
+          phonetic: 'operation peace for galilee',
+          tier: '2',
         },
         {
           term: 'Sabra and Shatila',
           definition:
             'Two Palestinian refugee camps in Beirut where Lebanese Christian Phalangist militias massacred hundreds of civilians in September 1982.',
+          syllables: 'Sa-bra and Sha-tila',
+          phonetic: 'sabra and shatila',
+          tier: '2',
         },
         {
           term: 'First Intifada',
           definition:
             'A sustained grassroots civilian uprising ("The Shaking Off") against Israeli military occupation that erupted in Gaza and the West Bank in December 1987.',
+          syllables: 'First in-ti-fa-da',
+          phonetic: 'first ˌɪntɪˈfɑːdə',
+          tier: '3',
         },
         {
           term: 'Iron Fist Policy',
           definition:
             'The Israeli military doctrine enacted by Defence Minister Yitzhak Rabin utilizing curfews, deportations, and physical force to suppress the Intifada.',
+          syllables: 'Iron Fist Po-licy',
+          phonetic: 'iron fist policy',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -16157,31 +16355,49 @@ const cme_new_data = {
           term: 'Two-State Solution',
           definition:
             'A diplomatic framework proposing the partition of historical Palestine into an independent Palestinian state alongside a secure State of Israel.',
+          syllables: 'Two-Sta-te So-lution',
+          phonetic: 'two-state solution',
+          tier: '2',
         },
         {
           term: 'Madrid Conference',
           definition:
             'A historic October 1991 international peace summit co-sponsored by the US and USSR that initiated direct face-to-face Arab-Israeli negotiations.',
+          syllables: 'Ma-drid Co-nfe-re-nce',
+          phonetic: 'madrid conference',
+          tier: '2',
         },
         {
           term: 'Oslo I Accords',
           definition:
             'The September 1993 Declaration of Principles creating the Palestinian National Authority and granting interim self-government in Gaza and Jericho.',
+          syllables: 'Oslo I A-ccords',
+          phonetic: 'oslo i accords',
+          tier: '2',
         },
         {
           term: 'Oslo II Accords',
           definition:
             'The September 1995 agreement expanding Palestinian interim self-rule and dividing the West Bank into three administrative zones.',
+          syllables: 'Oslo II A-ccords',
+          phonetic: 'oslo ii accords',
+          tier: '2',
         },
         {
           term: 'Area A, B, C',
           definition:
             'The tripartite division of the West Bank under Oslo II, dictating civil and security administration across zones.',
+          syllables: 'Area A, B, C',
+          phonetic: 'area a, b, c',
+          tier: '2',
         },
         {
           term: 'Yigal Amir',
           definition:
             'The radical right-wing Jewish extremist who assassinated Israeli Prime Minister Yitzhak Rabin on 4 November 1995 in Tel Aviv to halt the peace process.',
+          syllables: 'Yi-gal Amir',
+          phonetic: 'yigal amir',
+          tier: '2',
         },
       ],
       vocab_cloze_text:

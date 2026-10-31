@@ -3452,6 +3452,9 @@ export function renderLesson(lesson) {
     return formatBold(cleaned);
   };
   lesson = JSON.parse(JSON.stringify(lesson));
+  if (!lesson.vocab && lesson.vocabulary) {
+    lesson.vocab = lesson.vocabulary;
+  }
   assignQuestionNumbers(lesson, unitId);
 
   // Normalize do_now format

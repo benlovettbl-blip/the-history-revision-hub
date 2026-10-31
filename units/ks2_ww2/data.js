@@ -90,28 +90,40 @@ const ks2_ww2_data = {
           term: 'Air Raid Siren',
           definition:
             'A loud mechanical wailing siren that warned civilians that enemy bombers were approaching.',
+          syllables: 'Air Raid Si-ren',
+          phonetic: 'air raid siren',
+          tier: '3',
         },
         {
           term: 'Gas Mask',
           definition:
             'A protective rubber face respirator with a charcoal filter to protect against poisonous gases.',
+          syllables: 'Gas Mask',
+          phonetic: 'gas mask',
+          tier: '2',
         },
         {
           term: 'Blackout',
           definition:
             'Wartime regulation requiring all lights, streetlamps, and windows to be covered at night to avoid guiding bombers.',
+          syllables: 'Bla-ckout',
+          phonetic: 'blackout',
+          tier: '3',
         },
         {
           term: 'ARP Warden',
           definition:
             'Air Raid Precautions volunteer responsible for enforcing blackout rules, sounding sirens, and directing civilians to shelters.',
+          syllables: 'ARP Wa-rden',
+          phonetic: 'arp warden',
+          tier: '3',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Sunday Morning Wireless Broadcast (3 September 1939)',
-          text: '<span class="para-ref">[1.1]</span> On the quiet, sunny morning of Sunday 3 September 1939, millions of British families gathered around polished wooden radio sets in their living rooms. At exactly 11:15am, the grave, measured voice of Prime Minister <strong>Neville Chamberlain</strong> spoke to the nation: <em>"I am speaking to you from the Cabinet Room at 10 Downing Street... This country is at war with Germany."</em> Two days earlier, Adolf Hitler\'s German armies had invaded Poland, ignoring Britain\'s strict ultimatum to withdraw. For months, families had hoped that peace could be preserved, but now the dreaded announcement had arrived.<br><br><span class="para-ref">[1.2]</span> Within fifteen minutes of Chamberlain\'s speech ending, a terrifying sound rose over the rooftops of London: the loud, undulating mechanical wail of the <strong>air raid siren</strong>. Church congregations ran into the streets; parents grabbed their children and looked nervously at the clouds, expecting German bomber planes to appear immediately. It turned out to be a false alarm caused by an unidentified friendly aircraft, but it proved to every citizen that the Second World War had truly begun.',
+          text: '<span class="para-ref">[1.1]</span> On the quiet, sunny morning of Sunday 3 September 1939, millions of British families gathered around polished wooden radio sets in their living rooms. At exactly 11:15am, the grave, measured voice of Prime Minister **Neville Chamberlain** spoke to the nation: <em>"I am speaking to you from the Cabinet Room at 10 Downing Street... This country is at war with Germany."</em> Two days earlier, Adolf Hitler\'s German armies had invaded Poland, ignoring Britain\'s strict ultimatum to withdraw. For months, families had hoped that peace could be preserved, but now the dreaded announcement had arrived.<br><br><span class="para-ref">[1.2]</span> Within fifteen minutes of Chamberlain\'s speech ending, a terrifying sound rose over the rooftops of London: the loud, undulating mechanical wail of the **air raid siren**. Church congregations ran into the streets; parents grabbed their children and looked nervously at the clouds, expecting German bomber planes to appear immediately. It turned out to be a false alarm caused by an unidentified friendly aircraft, but it proved to every citizen that the Second World War had truly begun.',
           image: '/units/ks2_ww2/assets/neville_chamberlain_1939.jpg',
           image_alt: 'Official portrait of British Prime Minister Neville Chamberlain in 1939',
           caption:
@@ -178,7 +190,7 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: 'The Cardboard Box on a Shoulder String',
-          text: '<span class="para-ref">[1.3]</span> The most visible symbol of wartime Britain was a simple square brown cardboard box hanging from every person\'s shoulder by a piece of string. Inside lay a <strong>civilian gas mask</strong> made of black rubber, glass eyepieces, and a cylindrical charcoal canister filter. Remembering the horrific poison gas attacks of the First World War, the British government feared that enemy bombers would drop clouds of lethal mustard gas or chlorine over crowded cities. Over <strong>38 million gas masks</strong> were manufactured and distributed free of charge to every man, woman, and child.<br><br><span class="para-ref">[1.4]</span> Strict government regulations made it an offence to leave home without your gas mask. Schoolchildren could not enter their classrooms without showing their box to the teacher; conductors refused to let passengers onto red London buses if they had forgotten their box. For babies, special large steel and rubber enclosures were designed where mothers pumped air by hand, while toddlers received bright red-and-blue "Mickey Mouse" respirators with friendly round ears to make them less terrifying to wear.',
+          text: '<span class="para-ref">[1.3]</span> The most visible symbol of wartime Britain was a simple square brown cardboard box hanging from every person\'s shoulder by a piece of string. Inside lay a **civilian gas mask** made of black rubber, glass eyepieces, and a cylindrical charcoal canister filter. Remembering the horrific poison gas attacks of the First World War, the British government feared that enemy bombers would drop clouds of lethal mustard gas or chlorine over crowded cities. Over **38 million gas masks** were manufactured and distributed free of charge to every man, woman, and child.<br><br><span class="para-ref">[1.4]</span> Strict government regulations made it an offence to leave home without your gas mask. Schoolchildren could not enter their classrooms without showing their box to the teacher; conductors refused to let passengers onto red London buses if they had forgotten their box. For babies, special large steel and rubber enclosures were designed where mothers pumped air by hand, while toddlers received bright red-and-blue "Mickey Mouse" respirators with friendly round ears to make them less terrifying to wear.',
           sources: [
             {
               id: 'ks2_ww2_l1_src_b',
@@ -240,7 +252,7 @@ const ks2_ww2_data = {
         {
           act: 3,
           title: 'Pitch Black Nights & The Vigilant ARP Wardens',
-          text: '<span class="para-ref">[1.5]</span> On 1 September 1939, two days before war was officially declared, the British government introduced the nationwide <strong>Blackout</strong>. German bomber pilots navigated at night by looking down at the gleam of streetlights, illuminated shopfronts, and bright city rivers. To turn Britain into an invisible target from the air, all streetlamps were switched off, vehicle headlights were fitted with slotted metal hoods that directed light only onto the road, and railway station signs were unscrewed.<br><br><span class="para-ref">[1.6]</span> Every home was legally required to cover every single window with thick black curtains or black painted cardboard before sunset. Patrolling the darkened pavements were volunteer <strong>Air Raid Precautions (ARP) wardens</strong>, wearing steel helmets marked with a white "W". If a family let even a tiny chink of candlelight escape through an unpinned curtain, the warden\'s sharp whistle would blow, followed by the famous shout: <em>"Put that light out!"</em> In the complete darkness, ordinary people walked into lampposts, tripped over kerbs, and painted garden gateposts white so they could find their way home.',
+          text: '<span class="para-ref">[1.5]</span> On 1 September 1939, two days before war was officially declared, the British government introduced the nationwide **Blackout**. German bomber pilots navigated at night by looking down at the gleam of streetlights, illuminated shopfronts, and bright city rivers. To turn Britain into an invisible target from the air, all streetlamps were switched off, vehicle headlights were fitted with slotted metal hoods that directed light only onto the road, and railway station signs were unscrewed.<br><br><span class="para-ref">[1.6]</span> Every home was legally required to cover every single window with thick black curtains or black painted cardboard before sunset. Patrolling the darkened pavements were volunteer **Air Raid Precautions (ARP) wardens**, wearing steel helmets marked with a white "W". If a family let even a tiny chink of candlelight escape through an unpinned curtain, the warden\'s sharp whistle would blow, followed by the famous shout: <em>"Put that light out!"</em> In the complete darkness, ordinary people walked into lampposts, tripped over kerbs, and painted garden gateposts white so they could find their way home.',
           image: '/units/ks2_ww2/assets/blackout_kerb_precautions_london_1941.jpg',
           image_alt:
             'London street kerbs and lamp-posts painted with white reflective stripes for the wartime blackout',
@@ -816,28 +828,40 @@ const ks2_ww2_data = {
           term: 'Evacuee',
           definition:
             'A person, especially a child, moved from a dangerous city to a safer rural area during wartime.',
+          syllables: 'E-vacuee',
+          phonetic: 'evacuee',
+          tier: '3',
         },
         {
           term: 'Operation Pied Piper',
           definition:
             'The British government plan that moved over 1.5 million children and vulnerable civilians in September 1939.',
+          syllables: 'O-pera-tion Pied Pi-per',
+          phonetic: 'operation pied piper',
+          tier: '2',
         },
         {
           term: 'Billeting Officer',
           definition:
             'A local wartime official responsible for finding host families and rooms for arriving evacuees.',
+          syllables: 'Bi-lle-ting O-ffi-cer',
+          phonetic: 'billeting officer',
+          tier: '3',
         },
         {
           term: 'Host Family',
           definition:
             'A family living in the countryside who took in and cared for evacuated children in their homes.',
+          syllables: 'Host Fa-mily',
+          phonetic: 'host family',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Great Exodus: Operation Pied Piper (1 September 1939)',
-          text: '<span class="para-ref">[2.1]</span> On Friday 1 September 1939, two days before war was officially declared, the British government launched <strong>Operation Pied Piper</strong>. It was the largest mass movement of people in British history. Fearing that the German air force (the Luftwaffe) would bomb industrial cities like London, Manchester, Liverpool, and Birmingham, the government ordered the immediate evacuation of school pupils, pregnant mothers, and teachers into safe rural countryside areas.<br><br><span class="para-ref">[2.2]</span> Early in the morning, children gathered in school playgrounds carrying small cardboard suitcases, pillowcases filled with spare underwear and woollen jumpers, and their gas mask boxes slung across their shoulders. Attached to each child\'s coat lapel was an official cardboard <strong>identification label</strong> stamped with their name, school, home address, and billeting code. Teachers blew whistles and marched long columns of silent, nervous children through city streets to bustling railway stations, where steam trains waited to carry them away into the unknown.',
+          text: '<span class="para-ref">[2.1]</span> On Friday 1 September 1939, two days before war was officially declared, the British government launched **Operation Pied Piper**. It was the largest mass movement of people in British history. Fearing that the German air force (the Luftwaffe) would bomb industrial cities like London, Manchester, Liverpool, and Birmingham, the government ordered the immediate evacuation of school pupils, pregnant mothers, and teachers into safe rural countryside areas.<br><br><span class="para-ref">[2.2]</span> Early in the morning, children gathered in school playgrounds carrying small cardboard suitcases, pillowcases filled with spare underwear and woollen jumpers, and their gas mask boxes slung across their shoulders. Attached to each child\'s coat lapel was an official cardboard **identification label** stamped with their name, school, home address, and billeting code. Teachers blew whistles and marched long columns of silent, nervous children through city streets to bustling railway stations, where steam trains waited to carry them away into the unknown.',
           image: '/units/ks2_ww2/assets/evacuation_map_1939.jpg',
           image_alt:
             'Official British Government evacuation scheme planning map dividing Britain into three zones',
@@ -907,7 +931,7 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: 'The Billeting Hall: A Painful Lottery',
-          text: '<span class="para-ref">[2.3]</span> For many city children, the train journey was an exciting adventure; many had never travelled beyond their immediate neighbourhood or seen a green field. But when the steam trains finally hissed to a halt at quiet rural stations in Devon, Somerset, Wales, or Yorkshire, anxiety set in. Exhausted and hungry, the children were marched to local church halls, village schools, or cinemas to meet the local <strong>Billeting Officer</strong>.<br><br><span class="para-ref">[2.4]</span> What followed was often described by evacuees as a cattle market. Local village householders walked down the rows of children, inspecting them from head to toe. Strong, tidy boys who could help with farm chores and pretty, quiet girls were picked first with the phrase, <em>"I\'ll take that one."</em> Brothers and sisters were often separated if a household only had room for one child, and less neatly dressed children were left waiting until the very end. For those taken in by wealthy manor houses, life meant vast gardens and private bedrooms; for others, it meant strict rules and cold attic beds.',
+          text: '<span class="para-ref">[2.3]</span> For many city children, the train journey was an exciting adventure; many had never travelled beyond their immediate neighbourhood or seen a green field. But when the steam trains finally hissed to a halt at quiet rural stations in Devon, Somerset, Wales, or Yorkshire, anxiety set in. Exhausted and hungry, the children were marched to local church halls, village schools, or cinemas to meet the local **Billeting Officer**.<br><br><span class="para-ref">[2.4]</span> What followed was often described by evacuees as a cattle market. Local village householders walked down the rows of children, inspecting them from head to toe. Strong, tidy boys who could help with farm chores and pretty, quiet girls were picked first with the phrase, <em>"I\'ll take that one."</em> Brothers and sisters were often separated if a household only had room for one child, and less neatly dressed children were left waiting until the very end. For those taken in by wealthy manor houses, life meant vast gardens and private bedrooms; for others, it meant strict rules and cold attic beds.',
           sources: [
             {
               id: 'ks2_ww2_l2_src_b',
@@ -1554,28 +1578,40 @@ const ks2_ww2_data = {
           term: 'Kindertransport',
           definition:
             'The rescue mission that brought nearly 10,000 predominantly Jewish refugee children to Britain in 1938–1939.',
+          syllables: 'Ki-ndertra-nsport',
+          phonetic: 'kindertransport',
+          tier: '2',
         },
         {
           term: 'Refugee',
           definition:
             'A person forced to leave their country to escape danger, war, or persecution.',
+          syllables: 'Re-fugee',
+          phonetic: 'refugee',
+          tier: '3',
         },
         {
           term: 'Persecution',
           definition:
             'Treating people cruelly or unfairly because of their religion, race, or background.',
+          syllables: 'Pe-rse-cution',
+          phonetic: 'persecution',
+          tier: '2',
         },
         {
           term: 'Sponsor',
           definition:
             'A generous person or charity in Britain who paid £50 (worth thousands today) to guarantee care for a child refugee.',
+          syllables: 'Spo-nsor',
+          phonetic: 'sponsor',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Decision to Rescue: November 1938',
-          text: '<span class="para-ref">[3.1]</span> In November 1938, violent attacks erupted across Nazi Germany and Austria during what became known as the November Pogrom (Kristallnacht). Jewish synagogues were burnt, shops were destroyed, and thousands of innocent people were arrested. Terrified parents realized that their children were no longer safe. British humanitarian groups and religious leaders immediately petitioned Parliament, urging the government to offer refuge.<br><br><span class="para-ref">[3.2]</span> The British government agreed to allow an unlimited number of refugee children under the age of 17 into the country, but with two strict conditions: <strong>parents could not come with them</strong>, and every child needed a British <strong>sponsor</strong> who would pay a £50 guarantee (worth over £3,500 today) to ensure the child would not cost the British taxpayer anything. This historic rescue operation was known as the <strong>Kindertransport</strong> (Children\'s Transport). Between December 1938 and September 1939, nearly 10,000 children were brought to safety.',
+          text: '<span class="para-ref">[3.1]</span> In November 1938, violent attacks erupted across Nazi Germany and Austria during what became known as the November Pogrom (Kristallnacht). Jewish synagogues were burnt, shops were destroyed, and thousands of innocent people were arrested. Terrified parents realized that their children were no longer safe. British humanitarian groups and religious leaders immediately petitioned Parliament, urging the government to offer refuge.<br><br><span class="para-ref">[3.2]</span> The British government agreed to allow an unlimited number of refugee children under the age of 17 into the country, but with two strict conditions: **parents could not come with them**, and every child needed a British **sponsor** who would pay a £50 guarantee (worth over £3,500 today) to ensure the child would not cost the British taxpayer anything. This historic rescue operation was known as the **Kindertransport** (Children\'s Transport). Between December 1938 and September 1939, nearly 10,000 children were brought to safety.',
           image: '/units/ks2_ww2/assets/kindertransport_route_map.jpg',
           image_alt:
             'Historical route map of the Kindertransport rescue train journeys across Europe to Harwich port',
@@ -1646,7 +1682,7 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: "Vera's Small Suitcase & Her English Doll",
-          text: '<span class="para-ref">[3.3]</span> In Prague, Czechoslovakia, 9-year-old <strong>Vera Schaufeld</strong> lived a happy life with her parents. Her father was an English teacher and her mother was a lawyer. But in March 1939, German troops occupied Prague. Overnight, anti-Jewish laws were enforced. Desperate to protect their only daughter, Vera\'s parents secured a place for her on a rescue train organized by British volunteers.<br><br><span class="para-ref">[3.4]</span> Vera was allowed to pack just one small suitcase. Her mother packed practical clothes, woollen socks, family photographs, and an autograph book where friends wrote warm farewell messages. Her mother also packed a precious doll dressed in traditional Dutch lace—a doll made in England that her grandmother had bought for her. On the platform at Prague\'s Wilson Station in May 1939, Vera hugged her parents goodbye. Her mother smiled bravely and told her that they would join her in England very soon. Vera did not know that she would never see her parents again.',
+          text: '<span class="para-ref">[3.3]</span> In Prague, Czechoslovakia, 9-year-old **Vera Schaufeld** lived a happy life with her parents. Her father was an English teacher and her mother was a lawyer. But in March 1939, German troops occupied Prague. Overnight, anti-Jewish laws were enforced. Desperate to protect their only daughter, Vera\'s parents secured a place for her on a rescue train organized by British volunteers.<br><br><span class="para-ref">[3.4]</span> Vera was allowed to pack just one small suitcase. Her mother packed practical clothes, woollen socks, family photographs, and an autograph book where friends wrote warm farewell messages. Her mother also packed a precious doll dressed in traditional Dutch lace—a doll made in England that her grandmother had bought for her. On the platform at Prague\'s Wilson Station in May 1939, Vera hugged her parents goodbye. Her mother smiled bravely and told her that they would join her in England very soon. Vera did not know that she would never see her parents again.',
           image: '/units/ks2_ww2/assets/vera_portrait.jpg',
           image_alt:
             'Studio portrait photograph of nine-year-old Vera Löwyová in Prague before departure in May 1939',
@@ -1717,7 +1753,7 @@ const ks2_ww2_data = {
         {
           act: 3,
           title: 'Arrival at Liverpool Street: A New Life in England',
-          text: '<span class="para-ref">[3.5]</span> The journey was terrifying for young children. German soldiers boarded the trains at border crossings to inspect papers and search suitcases. After crossing Germany, the train reached the Hook of Holland, where Dutch volunteers greeted the frightened children with hot cocoa and white bread. They boarded a ferry across the North Sea to Harwich, then boarded the "Boat Train" to London\'s vast <strong>Liverpool Street Station</strong>.<br><br><span class="para-ref">[3.6]</span> Stepping onto the platform under the giant iron roof, the children waited with their numbered neck tags. Kind British foster parents, charities, and host families stepped forward to meet them. Vera was welcomed by a Christian foster family in Hampshire who cared for her with great love and ensured she continued her education. Vera grew up to become a beloved teacher in England and spent her life educating young people about tolerance and kindness.',
+          text: '<span class="para-ref">[3.5]</span> The journey was terrifying for young children. German soldiers boarded the trains at border crossings to inspect papers and search suitcases. After crossing Germany, the train reached the Hook of Holland, where Dutch volunteers greeted the frightened children with hot cocoa and white bread. They boarded a ferry across the North Sea to Harwich, then boarded the "Boat Train" to London\'s vast **Liverpool Street Station**.<br><br><span class="para-ref">[3.6]</span> Stepping onto the platform under the giant iron roof, the children waited with their numbered neck tags. Kind British foster parents, charities, and host families stepped forward to meet them. Vera was welcomed by a Christian foster family in Hampshire who cared for her with great love and ensured she continued her education. Vera grew up to become a beloved teacher in England and spent her life educating young people about tolerance and kindness.',
           sources: [
             {
               id: 'ks2_ww2_l3_src_c',
@@ -2296,28 +2332,40 @@ const ks2_ww2_data = {
           term: 'The Blitz',
           definition:
             'The intense German bombing offensive against British cities between September 1940 and May 1941.',
+          syllables: 'The Blitz',
+          phonetic: 'the blitz',
+          tier: '2',
         },
         {
           term: 'Anderson Shelter',
           definition:
             'A backyard shelter made from six corrugated curved steel sheets bolted together and buried under earth.',
+          syllables: 'A-nderson She-lter',
+          phonetic: 'anderson shelter',
+          tier: '2',
         },
         {
           term: 'Morrison Shelter',
           definition:
             'An indoor steel cage shelter shaped like a heavy dining table for homes without gardens.',
+          syllables: 'Mo-rri-son She-lter',
+          phonetic: 'morrison shelter',
+          tier: '2',
         },
         {
           term: 'Incendiary Bomb',
           definition:
             'A small magnesium bomb dropped in clusters designed to start intense fires rather than cause blast damage.',
+          syllables: 'I-ncendia-ry Bomb',
+          phonetic: 'incendiary bomb',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'Black Saturday & The 57 Nights of Fire (September 1940)',
-          text: '<span class="para-ref">[4.1]</span> On Saturday 7 September 1940, over 300 German bombers escorted by 600 fighter planes roared over the English Channel. Their target was the crowded docks, warehouses, and working-class streets of London\'s East End. This terrifying afternoon became known as "Black Saturday". Huge timber yards and rum warehouses along the River Thames caught fire, sending columns of black smoke thousands of feet into the sky. For the next <strong>57 consecutive nights</strong>, London was bombed every single night without pause.<br><br><span class="para-ref">[4.2]</span> The Blitz soon spread beyond the capital. German bombers struck major industrial ports and manufacturing cities including Coventry, Liverpool, Birmingham, Manchester, Belfast, and Glasgow. High-explosive bombs destroyed roads, blasted water mains, and collapsed entire streets of terraced houses, while thousands of small <strong>incendiary bombs</strong> showered roofs to spark unstoppable firestorms.',
+          text: '<span class="para-ref">[4.1]</span> On Saturday 7 September 1940, over 300 German bombers escorted by 600 fighter planes roared over the English Channel. Their target was the crowded docks, warehouses, and working-class streets of London\'s East End. This terrifying afternoon became known as "Black Saturday". Huge timber yards and rum warehouses along the River Thames caught fire, sending columns of black smoke thousands of feet into the sky. For the next **57 consecutive nights**, London was bombed every single night without pause.<br><br><span class="para-ref">[4.2]</span> The Blitz soon spread beyond the capital. German bombers struck major industrial ports and manufacturing cities including Coventry, Liverpool, Birmingham, Manchester, Belfast, and Glasgow. High-explosive bombs destroyed roads, blasted water mains, and collapsed entire streets of terraced houses, while thousands of small **incendiary bombs** showered roofs to spark unstoppable firestorms.',
           image: '/units/ks2_ww2/assets/st_pauls_survives_blitz_1940.jpg',
           image_alt:
             "St Paul's Cathedral standing defiant amidst rising smoke and flames during the London Blitz",
@@ -2386,7 +2434,7 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: 'Sheltering Under the Earth: Anderson & Morrison Shelters',
-          text: '<span class="para-ref">[4.3]</span> To protect families from lethal flying bomb splinters and falling masonry, the government distributed over two million <strong>Anderson shelters</strong>. Named after Sir John Anderson, these shelters consisted of six curved corrugated steel panels bolted together. Families dug a pit three feet deep in their garden, assembled the steel arch, and covered the top with at least fifteen inches of soil. Many families grew cabbages or marigolds on top to disguise the shelter from the air.<br><br><span class="para-ref">[4.4]</span> Anderson shelters saved thousands of lives, but they were often cold, damp, and prone to flooding in winter rain. For families living in apartments without gardens, the government introduced the <strong>Morrison shelter</strong> in 1941. Designed by Herbert Morrison, this was a heavy rectangular steel table with wire mesh sides placed in the living room. If a bomb collapsed the house, the solid steel roof could support the weight of falling ceilings and bricks, keeping the family safe inside.',
+          text: '<span class="para-ref">[4.3]</span> To protect families from lethal flying bomb splinters and falling masonry, the government distributed over two million **Anderson shelters**. Named after Sir John Anderson, these shelters consisted of six curved corrugated steel panels bolted together. Families dug a pit three feet deep in their garden, assembled the steel arch, and covered the top with at least fifteen inches of soil. Many families grew cabbages or marigolds on top to disguise the shelter from the air.<br><br><span class="para-ref">[4.4]</span> Anderson shelters saved thousands of lives, but they were often cold, damp, and prone to flooding in winter rain. For families living in apartments without gardens, the government introduced the **Morrison shelter** in 1941. Designed by Herbert Morrison, this was a heavy rectangular steel table with wire mesh sides placed in the living room. If a bomb collapsed the house, the solid steel roof could support the weight of falling ceilings and bricks, keeping the family safe inside.',
           image: '/units/ks2_ww2/assets/morrison_shelter_indoor_1941.jpg',
           image_alt:
             'A family sleeping safely inside a heavy steel Morrison indoor shelter inside their living room',
@@ -2455,7 +2503,7 @@ const ks2_ww2_data = {
         {
           act: 3,
           title: 'The Underground Platform Dormitories & The Fire Watchers',
-          text: '<span class="para-ref">[4.5]</span> In London, ordinary citizens took matters into their own hands. Although the government initially tried to ban it, over 150,000 people bought three-penny tube tickets every evening and camped overnight on the platforms of London Underground stations. Deep underground, away from the sound of explosions and falling masonry, people strung hammocks between rails, read books under electric lights, and shared tea and biscuits.<br><br><span class="para-ref">[4.6]</span> Above ground, courage was everywhere. The volunteer <strong>Auxiliary Fire Service (AFS)</strong> pumped water from the muddy Thames while bombs fell around them; ARP wardens crawled into smoking rubble to pull trapped survivors to safety; and volunteer firewatchers stood on rooftop perches with sandbags and stirrup pumps to extinguish incendiary bombs before they could ignite houses. The next morning, milkmen stepped over hoses and shattered glass to deliver milk to front doors, demonstrating unshakeable British resolve.',
+          text: '<span class="para-ref">[4.5]</span> In London, ordinary citizens took matters into their own hands. Although the government initially tried to ban it, over 150,000 people bought three-penny tube tickets every evening and camped overnight on the platforms of London Underground stations. Deep underground, away from the sound of explosions and falling masonry, people strung hammocks between rails, read books under electric lights, and shared tea and biscuits.<br><br><span class="para-ref">[4.6]</span> Above ground, courage was everywhere. The volunteer **Auxiliary Fire Service (AFS)** pumped water from the muddy Thames while bombs fell around them; ARP wardens crawled into smoking rubble to pull trapped survivors to safety; and volunteer firewatchers stood on rooftop perches with sandbags and stirrup pumps to extinguish incendiary bombs before they could ignite houses. The next morning, milkmen stepped over hoses and shattered glass to deliver milk to front doors, demonstrating unshakeable British resolve.',
           sources: [
             {
               id: 'ks2_ww2_l4_src_c',
@@ -3025,28 +3073,40 @@ const ks2_ww2_data = {
           term: 'Rationing',
           definition:
             'The controlled distribution of scarce resources, limiting each person to a fixed weekly amount of food, clothing, and fuel.',
+          syllables: 'Ra-tio-ning',
+          phonetic: 'rationing',
+          tier: '2',
         },
         {
           term: 'Coupon Points',
           definition:
             'Paper tokens in a ration book that shoppers had to surrender alongside money to buy restricted goods.',
+          syllables: 'Cou-pon Points',
+          phonetic: 'coupon points',
+          tier: '2',
         },
         {
           term: 'Dig for Victory',
           definition:
             'A national government campaign encouraging people to transform gardens, lawns, and public parks into allotments.',
+          syllables: 'Dig for Vi-cto-ry',
+          phonetic: 'dig for victory',
+          tier: '2',
         },
         {
           term: 'Black Market',
           definition:
             'The illegal buying and selling of rationed goods at high prices without using official coupons.',
+          syllables: 'Black Ma-rket',
+          phonetic: 'black market',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Atlantic Lifeline & The Threat of Starvation',
-          text: '<span class="para-ref">[5.1]</span> In 1939, Britain was an island that could not feed itself. Over <strong>70% of all food</strong> consumed in the country was imported from abroad, including bananas, sugar, wheat, meat, and tea. Hundreds of merchant ships sailed across the Atlantic Ocean every week carrying food from Canada, America, and the British Empire. But German submarine "wolf packs" of <strong>U-boats</strong> prowled the icy waters, firing torpedoes to sink supply ships. In the darkest months of the war, hundreds of thousands of tons of shipping were sunk every week.<br><br><span class="para-ref">[5.2]</span> If ships could not get through, Britain faced actual starvation. Prime Minister Winston Churchill later confessed that the only thing that ever truly frightened him during the war was the U-boat peril in the Battle of the Atlantic. To ensure the nation survived and ships could carry weapons instead of food, the government took total control of food supply.',
+          text: '<span class="para-ref">[5.1]</span> In 1939, Britain was an island that could not feed itself. Over **70% of all food** consumed in the country was imported from abroad, including bananas, sugar, wheat, meat, and tea. Hundreds of merchant ships sailed across the Atlantic Ocean every week carrying food from Canada, America, and the British Empire. But German submarine "wolf packs" of **U-boats** prowled the icy waters, firing torpedoes to sink supply ships. In the darkest months of the war, hundreds of thousands of tons of shipping were sunk every week.<br><br><span class="para-ref">[5.2]</span> If ships could not get through, Britain faced actual starvation. Prime Minister Winston Churchill later confessed that the only thing that ever truly frightened him during the war was the U-boat peril in the Battle of the Atlantic. To ensure the nation survived and ships could carry weapons instead of food, the government took total control of food supply.',
           sources: [
             {
               id: 'ks2_ww2_l5_src_a',
@@ -3109,7 +3169,7 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: 'The Little Paper Book: Fair Shares for All',
-          text: '<span class="para-ref">[5.3]</span> On 8 January 1940, the Ministry of Food introduced <strong>rationing</strong>. Every man, woman, and child was issued a small cardboard <strong>ration book</strong> containing grids of paper coupons. The system was designed around the principle of "fair shares": even if a millionaire had a pocket full of money, they could not buy a single egg, sausage, or pound of butter without surrendering the required coupons.<br><br><span class="para-ref">[5.4]</span> A typical adult\'s weekly ration was astonishingly small: one fresh egg per week, 2 ounces of butter, 4 ounces of bacon or ham, 2 ounces of tea, and 8 ounces of sugar. Sweets, chocolate, and soap were strictly rationed, while bananas and lemons disappeared from shops for years. Householders registered with local grocers and butchers, and shopkeepers carefully snipped out the tiny coupons with scissors before handing over the food.',
+          text: '<span class="para-ref">[5.3]</span> On 8 January 1940, the Ministry of Food introduced **rationing**. Every man, woman, and child was issued a small cardboard **ration book** containing grids of paper coupons. The system was designed around the principle of "fair shares": even if a millionaire had a pocket full of money, they could not buy a single egg, sausage, or pound of butter without surrendering the required coupons.<br><br><span class="para-ref">[5.4]</span> A typical adult\'s weekly ration was astonishingly small: one fresh egg per week, 2 ounces of butter, 4 ounces of bacon or ham, 2 ounces of tea, and 8 ounces of sugar. Sweets, chocolate, and soap were strictly rationed, while bananas and lemons disappeared from shops for years. Householders registered with local grocers and butchers, and shopkeepers carefully snipped out the tiny coupons with scissors before handing over the food.',
           image: '/units/ks2_ww2/assets/housewife_ration_book_grocer_1941.jpg',
           image_alt:
             'A British customer presenting her ration book coupons to a local grocer in 1941',
@@ -3177,7 +3237,7 @@ const ks2_ww2_data = {
         {
           act: 3,
           title: 'Dig for Victory: From Flower Beds to Allotments',
-          text: '<span class="para-ref">[5.5]</span> To make up for missing food imports, the government launched the famous <strong>Dig for Victory</strong> campaign. The message was clear: every spade turned in a garden was a blow against Hitler. Lawns, golf courses, flower gardens, and parks were dug up and planted with vegetables. The moat of the Tower of London became a massive vegetable allotment, while suburban families kept backyard chicken coops and formed "pig clubs" to feed pigs on household vegetable peelings.<br><br><span class="para-ref">[5.6]</span> The Ministry of Food broadcast daily cooking advice over the radio through "The Kitchen Front". Government recipes like <strong>Lord Woolton Pie</strong> (a pastry pie filled entirely with carrots, potatoes, parsnips, and turnips) became famous. Cartoon characters like "Potato Pete" and "Doctor Carrot" appeared on posters teaching children that eating carrots helped them see in the blackout. Surprisingly, because people ate less sugar and fat and far more fresh vegetables, the British population was healthier during the war than at almost any other time in history.',
+          text: '<span class="para-ref">[5.5]</span> To make up for missing food imports, the government launched the famous **Dig for Victory** campaign. The message was clear: every spade turned in a garden was a blow against Hitler. Lawns, golf courses, flower gardens, and parks were dug up and planted with vegetables. The moat of the Tower of London became a massive vegetable allotment, while suburban families kept backyard chicken coops and formed "pig clubs" to feed pigs on household vegetable peelings.<br><br><span class="para-ref">[5.6]</span> The Ministry of Food broadcast daily cooking advice over the radio through "The Kitchen Front". Government recipes like **Lord Woolton Pie** (a pastry pie filled entirely with carrots, potatoes, parsnips, and turnips) became famous. Cartoon characters like "Potato Pete" and "Doctor Carrot" appeared on posters teaching children that eating carrots helped them see in the blackout. Surprisingly, because people ate less sugar and fat and far more fresh vegetables, the British population was healthier during the war than at almost any other time in history.',
           image: '/units/ks2_ww2/assets/dig_for_victory_allotment_london_1942.jpg',
           image_alt:
             'Londoners digging vegetable allotments in Kensington Gardens near the Albert Memorial',
@@ -3749,28 +3809,40 @@ const ks2_ww2_data = {
           term: "Women's Land Army",
           definition:
             'A dedicated rural civilian force that maintained British agricultural harvests to replace farmhands called into the armed forces.',
+          syllables: "Wo-men's Land Army",
+          phonetic: "women's land army",
+          tier: '2',
         },
         {
           term: 'Munitions',
           definition:
             'Military weapons, ammunition, bombs, and artillery shells produced in industrial factories.',
+          syllables: 'Mu-nitions',
+          phonetic: 'munitions',
+          tier: '3',
         },
         {
           term: 'Mobilisation',
           definition:
             'The process of organizing civilians, industries, and resources for national wartime service.',
+          syllables: 'Mo-bili-sation',
+          phonetic: 'mobilisation',
+          tier: '3',
         },
         {
           term: 'ATA Ferry Pilots',
           definition:
             'Skilled civilian aviators who delivered newly built combat aircraft from assembly plants to front-line squadrons.',
+          syllables: 'ATA Fe-rry Pi-lots',
+          phonetic: 'ata ferry pilots',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Great Call-Up: Conscription for Women (December 1941)',
-          text: '<span class="para-ref">[6.1]</span> When the Second World War began, millions of British men were called up into the Royal Navy, Army, and Royal Air Force. Factories, farms, shipyards, and public transport suddenly had millions of empty jobs. In December 1941, the British government passed the National Service Act, making Britain the <strong>first country in the world to conscript women</strong> for war work.<br><br><span class="para-ref">[6.2]</span> Unmarried women aged between 20 and 30 were required to register at employment exchanges. They were given a choice: join the women\'s auxiliary military forces (the ATS, Wrens, or WAAF), work in a vital industrial <strong>munitions factory</strong>, or join the <strong>Women\'s Land Army</strong>. Within two years, over seven million British women were engaged in essential war work, transforming the home front forever.',
+          text: '<span class="para-ref">[6.1]</span> When the Second World War began, millions of British men were called up into the Royal Navy, Army, and Royal Air Force. Factories, farms, shipyards, and public transport suddenly had millions of empty jobs. In December 1941, the British government passed the National Service Act, making Britain the **first country in the world to conscript women** for war work.<br><br><span class="para-ref">[6.2]</span> Unmarried women aged between 20 and 30 were required to register at employment exchanges. They were given a choice: join the women\'s auxiliary military forces (the ATS, Wrens, or WAAF), work in a vital industrial **munitions factory**, or join the **Women\'s Land Army**. Within two years, over seven million British women were engaged in essential war work, transforming the home front forever.',
           image: '/units/ks2_ww2/assets/women_aircraft_workers_ww2.jpg',
           image_alt:
             'Female industrial workers assembling aircraft fuselage components in a British factory',
@@ -3835,7 +3907,7 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: 'The Land Girls: Breeches, Boots & Tractors',
-          text: '<span class="para-ref">[6.3]</span> The <strong>Women\'s Land Army (WLA)</strong>, affectionately known as the "Land Girls", had over 80,000 members. Most were young women from city offices, shops, and hairdressers who had never stepped foot on a farm. They traded their dresses and stockings for heavy corduroy breeches, knitted green jumpers, and rubber Wellington boots.<br><br><span class="para-ref">[6.4]</span> Their days started before 5:00am, milking cows by hand in freezing barns, ploughing rocky fields with heavy steel tractors, catching rats, and digging drainage ditches in winter mud. A special branch called the "Timber Jills" worked in dense forests felling trees with two-man saws to produce timber for pit props and rifle stocks. Without the tireless labour of the Land Girls, Britain would have collapsed from food shortages.',
+          text: '<span class="para-ref">[6.3]</span> The **Women\'s Land Army (WLA)**, affectionately known as the "Land Girls", had over 80,000 members. Most were young women from city offices, shops, and hairdressers who had never stepped foot on a farm. They traded their dresses and stockings for heavy corduroy breeches, knitted green jumpers, and rubber Wellington boots.<br><br><span class="para-ref">[6.4]</span> Their days started before 5:00am, milking cows by hand in freezing barns, ploughing rocky fields with heavy steel tractors, catching rats, and digging drainage ditches in winter mud. A special branch called the "Timber Jills" worked in dense forests felling trees with two-man saws to produce timber for pit props and rifle stocks. Without the tireless labour of the Land Girls, Britain would have collapsed from food shortages.',
           sources: [
             {
               id: 'ks2_ww2_l6_src_b',
@@ -3898,7 +3970,7 @@ const ks2_ww2_data = {
         {
           act: 3,
           title: 'Canary Girls & The Female Spitfire Ferry Pilots',
-          text: '<span class="para-ref">[6.5]</span> In industrial cities, hundreds of thousands of women worked exhausting twelve-hour shifts in munitions factories. They assembled bullets, loaded explosive shells, and welded the wings of Spitfire and Lancaster bomber aircraft. Working with toxic chemicals like cordite and TNT was dangerous: the chemicals stained the workers\' skin and hair bright yellow, leading them to be proudly called the <strong>Canary Girls</strong>. Despite the risk of explosions and chemical fumes, their productivity kept the British military equipped.<br><br><span class="para-ref">[6.6]</span> Some of the most extraordinary women served in the <strong>Air Transport Auxiliary (ATA)</strong>. These elite female pilots flew high-performance combat aircraft—including Spitfires, Hurricanes, and giant four-engine bombers—from aircraft manufacturing factories directly to front-line RAF squadrons. Flying without radios or weapons, in bad weather and through balloon barrage cables, they proved beyond doubt that women possessed equal technical skill, courage, and determination as male pilots.',
+          text: '<span class="para-ref">[6.5]</span> In industrial cities, hundreds of thousands of women worked exhausting twelve-hour shifts in munitions factories. They assembled bullets, loaded explosive shells, and welded the wings of Spitfire and Lancaster bomber aircraft. Working with toxic chemicals like cordite and TNT was dangerous: the chemicals stained the workers\' skin and hair bright yellow, leading them to be proudly called the **Canary Girls**. Despite the risk of explosions and chemical fumes, their productivity kept the British military equipped.<br><br><span class="para-ref">[6.6]</span> Some of the most extraordinary women served in the **Air Transport Auxiliary (ATA)**. These elite female pilots flew high-performance combat aircraft—including Spitfires, Hurricanes, and giant four-engine bombers—from aircraft manufacturing factories directly to front-line RAF squadrons. Flying without radios or weapons, in bad weather and through balloon barrage cables, they proved beyond doubt that women possessed equal technical skill, courage, and determination as male pilots.',
           image: '/units/ks2_ww2/assets/women_munitions_workers_inspecting_shells_1942.jpg',
           image_alt:
             'Female munitions workers carefully inspecting 25-pounder artillery shell casings',
@@ -4478,28 +4550,40 @@ const ks2_ww2_data = {
           term: 'Civil Rights',
           definition:
             'The fundamental legal rights and freedoms that every individual citizen is entitled to in a just society.',
+          syllables: 'Ci-vil Rights',
+          phonetic: 'civil rights',
+          tier: '2',
         },
         {
           term: 'Discrimination',
           definition:
             'Treating individuals or groups unfairly and unequally because of their background, race, or religion.',
+          syllables: 'Di-scri-mina-tion',
+          phonetic: 'discrimination',
+          tier: '2',
         },
         {
           term: 'Anti-Jewish Laws',
           definition:
             'A series of discriminatory decrees passed in Germany between 1933 and 1939 that systematically took away rights.',
+          syllables: 'Anti-Je-wish Laws',
+          phonetic: 'anti-jewish laws',
+          tier: '3',
         },
         {
           term: 'Community',
           definition:
             'A group of people sharing common traditions, customs, cultural identity, and mutual support.',
+          syllables: 'Co-mmu-nity',
+          phonetic: 'community',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'Vibrant Childhoods Across Europe Before 1939',
-          text: '<span class="para-ref">[7.1]</span> Before the Second World War, over nine million Jewish people lived across Europe. They lived in bustling cities like Berlin, Paris, Warsaw, and Prague, as well as in quiet rural market towns. Jewish families were an integral part of European society: they worked as doctors, shopkeepers, teachers, tailor apprentices, and artists. Jewish soldiers had fought bravely for their home nations in the First World War, earning medals for valour.<br><br><span class="para-ref">[7.2]</span> For Jewish boys and girls growing up in the 1920s and 1930s, childhood was filled with the same joys and hobbies as children everywhere. They played football in city squares, went on swimming holidays at the seaside, rode bicycles with friends, and belonged to scout groups. On their first day of primary school in Germany, children proudly posed for photographs holding large cardboard cones called <strong>Schultüte</strong>, filled to the brim with chocolates, sweets, and school pencils. They loved their homes and felt completely part of their communities.',
+          text: '<span class="para-ref">[7.1]</span> Before the Second World War, over nine million Jewish people lived across Europe. They lived in bustling cities like Berlin, Paris, Warsaw, and Prague, as well as in quiet rural market towns. Jewish families were an integral part of European society: they worked as doctors, shopkeepers, teachers, tailor apprentices, and artists. Jewish soldiers had fought bravely for their home nations in the First World War, earning medals for valour.<br><br><span class="para-ref">[7.2]</span> For Jewish boys and girls growing up in the 1920s and 1930s, childhood was filled with the same joys and hobbies as children everywhere. They played football in city squares, went on swimming holidays at the seaside, rode bicycles with friends, and belonged to scout groups. On their first day of primary school in Germany, children proudly posed for photographs holding large cardboard cones called **Schultüte**, filled to the brim with chocolates, sweets, and school pencils. They loved their homes and felt completely part of their communities.',
           isReversed: false,
           sources: [
             {
@@ -4562,7 +4646,7 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: 'The Gradual Loss of Rights: Step by Step (1933–1938)',
-          text: '<span class="para-ref">[7.3]</span> When Adolf Hitler and the Nazi Party took power in Germany in 1933, they did not take all rights away overnight. Instead, they used a slow, calculated process of passing discriminatory laws step-by-step over six years. This was designed to isolate Jewish people from their neighbours and make discrimination seem legal and normal.<br><br><span class="para-ref">[7.4]</span> First, Jewish doctors and lawyers were forbidden from treating non-Jewish patients. In 1935, the <strong>Nuremberg Laws</strong> stripped Jewish people of their German citizenship and passport rights. Next came cruel restrictions that targeted everyday childhood happiness: Jewish children were forbidden from playing on park swings and merry-go-rounds; park benches were painted with signs saying "Not for Jews"; families were forced to hand over their radios, bicycles, and even beloved pet dogs and cats. Step-by-step, their freedom was stolen away.',
+          text: '<span class="para-ref">[7.3]</span> When Adolf Hitler and the Nazi Party took power in Germany in 1933, they did not take all rights away overnight. Instead, they used a slow, calculated process of passing discriminatory laws step-by-step over six years. This was designed to isolate Jewish people from their neighbours and make discrimination seem legal and normal.<br><br><span class="para-ref">[7.4]</span> First, Jewish doctors and lawyers were forbidden from treating non-Jewish patients. In 1935, the **Nuremberg Laws** stripped Jewish people of their German citizenship and passport rights. Next came cruel restrictions that targeted everyday childhood happiness: Jewish children were forbidden from playing on park swings and merry-go-rounds; park benches were painted with signs saying "Not for Jews"; families were forced to hand over their radios, bicycles, and even beloved pet dogs and cats. Step-by-step, their freedom was stolen away.',
           image: '/units/ks2_ww2/assets/nazi_boycott_jewish_shops_berlin_1933.jpg',
           image_alt:
             'SA stormtroopers holding boycott placards outside Jewish-owned shops in Berlin on 1 April 1933',
@@ -4631,7 +4715,7 @@ const ks2_ww2_data = {
         {
           act: 3,
           title: 'Banned from the Classroom: November 1938',
-          text: '<span class="para-ref">[7.5]</span> The cruelest blow for young people occurred on <strong>15 November 1938</strong>. Following the violence of the November Pogrom, the Nazi Ministry of Education issued an official law decree: <em>"Jewish pupils are forbidden to attend German state schools."</em> Overnight, thousands of boys and girls were told they could not return to their classrooms.<br><br><span class="para-ref">[7.6]</span> For children, this was heartbreaking and bewildering. They had done nothing wrong, yet their teachers told them to pack their satchels and leave. Non-Jewish classmates with whom they had played football and shared sweets were told to stop speaking to them on the street. Denied the right to learn, play, and belong, families realized with growing panic that there was no future for their children under Nazi rule. It was this cruel exclusion from schools that led directly to the desperate scramble for rescue trains like the Kindertransport.',
+          text: '<span class="para-ref">[7.5]</span> The cruelest blow for young people occurred on **15 November 1938**. Following the violence of the November Pogrom, the Nazi Ministry of Education issued an official law decree: <em>"Jewish pupils are forbidden to attend German state schools."</em> Overnight, thousands of boys and girls were told they could not return to their classrooms.<br><br><span class="para-ref">[7.6]</span> For children, this was heartbreaking and bewildering. They had done nothing wrong, yet their teachers told them to pack their satchels and leave. Non-Jewish classmates with whom they had played football and shared sweets were told to stop speaking to them on the street. Denied the right to learn, play, and belong, families realized with growing panic that there was no future for their children under Nazi rule. It was this cruel exclusion from schools that led directly to the desperate scramble for rescue trains like the Kindertransport.',
           sources: [
             {
               id: 'ks2_ww2_l7_src_c',
@@ -5217,28 +5301,40 @@ const ks2_ww2_data = {
           term: 'Enigma Machine',
           definition:
             'An electro-mechanical cipher machine with rotating wheels that scrambled messages into complex secret codes.',
+          syllables: 'E-ni-gma Ma-chi-ne',
+          phonetic: 'enigma machine',
+          tier: '2',
         },
         {
           term: 'Cipher',
           definition:
             'A secret code system where letters are mathematically scrambled or substituted to hide their true meaning.',
+          syllables: 'Ci-pher',
+          phonetic: 'cipher',
+          tier: '2',
         },
         {
           term: 'Bletchley Park',
           definition:
             'The top-secret British government codebreaking headquarters in Buckinghamshire during World War II.',
+          syllables: 'Ble-tchley Park',
+          phonetic: 'bletchley park',
+          tier: '3',
         },
         {
           term: 'Bombe Machine',
           definition:
             'An electro-mechanical calculating machine designed by Alan Turing to test thousands of Enigma combinations simultaneously.',
+          syllables: 'Bo-mbe Ma-chi-ne',
+          phonetic: 'bombe machine',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Unbreakable German Machine: Enigma',
-          text: '<span class="para-ref">[8.1]</span> During the Second World War, the German army, navy, and air force communicated across Europe using radio waves. But because radio signals could be heard by anyone tuning in, they scrambled their messages into secret code using a portable machine called <strong>Enigma</strong>. Outwardly, Enigma resembled a heavy wooden typewriter with a keyboard, a lampboard of small bulbs, and three rotating brass wheels called <strong>rotors</strong>.<br><br><span class="para-ref">[8.2]</span> Inside, Enigma was an electrical marvel. Every time a telegraph operator pressed a key, an electrical current flowed through a plugboard and through three spinning rotors, illuminating a different letter on the lampboard. Because the rotors moved with every keystroke, pressing the letter "A" five times in a row might produce the letters "Q-R-M-X-L". With over <strong>158 million million million possible settings</strong>, German generals were completely convinced that no human brain could ever decipher their codes.',
+          text: '<span class="para-ref">[8.1]</span> During the Second World War, the German army, navy, and air force communicated across Europe using radio waves. But because radio signals could be heard by anyone tuning in, they scrambled their messages into secret code using a portable machine called **Enigma**. Outwardly, Enigma resembled a heavy wooden typewriter with a keyboard, a lampboard of small bulbs, and three rotating brass wheels called **rotors**.<br><br><span class="para-ref">[8.2]</span> Inside, Enigma was an electrical marvel. Every time a telegraph operator pressed a key, an electrical current flowed through a plugboard and through three spinning rotors, illuminating a different letter on the lampboard. Because the rotors moved with every keystroke, pressing the letter "A" five times in a row might produce the letters "Q-R-M-X-L". With over **158 million million million possible settings**, German generals were completely convinced that no human brain could ever decipher their codes.',
           sources: [
             {
               id: 'ks2_ww2_l8_src_a',
@@ -5297,7 +5393,7 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: 'Station X & The Genius of Alan Turing',
-          text: '<span class="para-ref">[8.3]</span> In the leafy Buckinghamshire countryside, fifty miles north of London, sat a Victorian mansion called <strong>Bletchley Park</strong>, codenamed "Station X". Here, the British government gathered an eccentric team of brilliant university mathematicians, chess champions, crossword puzzle masters, and linguists. Among them was a quiet Cambridge mathematician named <strong>Alan Turing</strong>, based in wooden Hut 8.<br><br><span class="para-ref">[8.4]</span> Turing realized that human codebreakers working with pencil and paper could never check millions of combinations before the German settings changed at midnight. He realized: <em>"Only a machine can defeat a machine."</em> Working with engineer Gordon Welchman, Turing designed the <strong>Bombe</strong>—a massive two-ton electro-mechanical machine containing rotating drums that simulated dozens of Enigma machines working at once. The Bombe clicked and whirred continuously, testing thousands of possible rotor positions and discarding impossible settings in minutes.',
+          text: '<span class="para-ref">[8.3]</span> In the leafy Buckinghamshire countryside, fifty miles north of London, sat a Victorian mansion called **Bletchley Park**, codenamed "Station X". Here, the British government gathered an eccentric team of brilliant university mathematicians, chess champions, crossword puzzle masters, and linguists. Among them was a quiet Cambridge mathematician named **Alan Turing**, based in wooden Hut 8.<br><br><span class="para-ref">[8.4]</span> Turing realized that human codebreakers working with pencil and paper could never check millions of combinations before the German settings changed at midnight. He realized: <em>"Only a machine can defeat a machine."</em> Working with engineer Gordon Welchman, Turing designed the **Bombe**—a massive two-ton electro-mechanical machine containing rotating drums that simulated dozens of Enigma machines working at once. The Bombe clicked and whirred continuously, testing thousands of possible rotor positions and discarding impossible settings in minutes.',
           image: '/units/ks2_ww2/assets/alan_turing_portrait.jpg',
           image_alt:
             'Official photographic portrait of British mathematician Alan Turing at Princeton in 1936',
@@ -5366,7 +5462,7 @@ const ks2_ww2_data = {
         {
           act: 3,
           title: 'The Silent Army of Women & The Secret That Shortened the War',
-          text: '<span class="para-ref">[8.5]</span> While Turing and Welchman designed the machines, over <strong>75% of the 10,000 workers at Bletchley Park were women</strong>. Many belonged to the Women\'s Royal Naval Service (the Wrens). Working in freezing, draughty wooden huts in shifts around the clock, they operated the noisy, oil-splattered Bombe machines, logged thousands of intercepted Morse code radio signals, and cross-referenced index cards in giant card catalogues.<br><br><span class="para-ref">[8.6]</span> The decoded intelligence, codenamed <strong>Ultra</strong>, provided British commanders with advance knowledge of German troop movements, U-boat locations in the Atlantic, and Luftwaffe targets. Every worker had to sign the Official Secrets Act, promising never to reveal what they did. Many went to their graves without telling their husbands, children, or parents. Historians estimate that the secret codebreakers at Bletchley Park shortened the Second World War by at least two years and saved millions of lives.',
+          text: '<span class="para-ref">[8.5]</span> While Turing and Welchman designed the machines, over **75% of the 10,000 workers at Bletchley Park were women**. Many belonged to the Women\'s Royal Naval Service (the Wrens). Working in freezing, draughty wooden huts in shifts around the clock, they operated the noisy, oil-splattered Bombe machines, logged thousands of intercepted Morse code radio signals, and cross-referenced index cards in giant card catalogues.<br><br><span class="para-ref">[8.6]</span> The decoded intelligence, codenamed **Ultra**, provided British commanders with advance knowledge of German troop movements, U-boat locations in the Atlantic, and Luftwaffe targets. Every worker had to sign the Official Secrets Act, promising never to reveal what they did. Many went to their graves without telling their husbands, children, or parents. Historians estimate that the secret codebreakers at Bletchley Park shortened the Second World War by at least two years and saved millions of lives.',
           image: '/units/ks2_ww2/assets/bletchley_park_hut_8_office.jpg',
           image_alt:
             'Inside Hut 8 at Bletchley Park showing desks where codebreakers analysed decrypted messages',
@@ -5934,28 +6030,40 @@ const ks2_ww2_data = {
           term: 'Upstander',
           definition:
             'A person who chooses to speak out and take action to help others who are being treated unfairly or are in danger.',
+          syllables: 'U-pstander',
+          phonetic: 'upstander',
+          tier: '3',
         },
         {
           term: 'Bystander',
           definition:
             'A person who observes injustice or danger occurring nearby but chooses not to get involved or help.',
+          syllables: 'by-stand-er',
+          phonetic: 'ˈbaɪˌstændər',
+          tier: '2',
         },
         {
           term: 'Rescue Chain',
           definition:
             'The collaborative network of organizers, train drivers, donors, and foster parents needed to bring refugees to safety.',
+          syllables: 'Re-scue Chain',
+          phonetic: 'rescue chain',
+          tier: '2',
         },
         {
           term: 'Sponsorship',
           definition:
             'A legal and financial commitment made by a British family to provide care, food, and education for a refugee child.',
+          syllables: 'Spo-nsorship',
+          phonetic: 'sponsorship',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Cancelled Skiing Holiday (December 1938)',
-          text: '<span class="para-ref">[9.1]</span> In December 1938, a 29-year-old London stockbroker named <strong>Nicholas Winton</strong> was packing his bags for a holiday skiing in Switzerland. Just before he left, his friend Martin Blake phoned him with an urgent plea: <em>"Cancel your holiday and come to Prague at once. I have a most interesting assignment and I need your help."</em><br><br><span class="para-ref">[9.2]</span> Winton travelled to Prague, the capital of Czechoslovakia. Following Hitler\'s annexation of the Sudetenland, tens of thousands of refugees—predominantly Jewish families who had fled Nazi Germany—were living in freezing, makeshift refugee camps in the snow. Seeing terrified parents who knew war was coming, Winton realized that while adults could not get visas, British law allowed unaccompanied children under 17 to enter if someone found them sponsors and paid a £50 deposit. Winton decided immediately that he could not simply stand by and watch.',
+          text: '<span class="para-ref">[9.1]</span> In December 1938, a 29-year-old London stockbroker named **Nicholas Winton** was packing his bags for a holiday skiing in Switzerland. Just before he left, his friend Martin Blake phoned him with an urgent plea: <em>"Cancel your holiday and come to Prague at once. I have a most interesting assignment and I need your help."</em><br><br><span class="para-ref">[9.2]</span> Winton travelled to Prague, the capital of Czechoslovakia. Following Hitler\'s annexation of the Sudetenland, tens of thousands of refugees—predominantly Jewish families who had fled Nazi Germany—were living in freezing, makeshift refugee camps in the snow. Seeing terrified parents who knew war was coming, Winton realized that while adults could not get visas, British law allowed unaccompanied children under 17 to enter if someone found them sponsors and paid a £50 deposit. Winton decided immediately that he could not simply stand by and watch.',
           image: '/units/ks2_ww2/assets/nicholas_winton_1938_portrait.jpg',
           image_alt: 'Portrait of 29-year-old London stockbroker Nicholas Winton in 1938',
           caption:
@@ -6022,7 +6130,7 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: 'The Team in Prague & London: The Rescue Chain',
-          text: '<span class="para-ref">[9.3]</span> Nicholas Winton knew he could not achieve this colossal rescue alone. A successful rescue required an unbroken <strong>rescue chain</strong>. In Prague, Winton set up a table in the Hotel Europa, where hundreds of desperate parents lined up day and night to register their children\'s names, ages, and medical details. Returning to London, Winton worked his normal banking job by day, and spent his evenings persuading the Home Office to issue entry visas, placing advertisements in British newspapers for foster families, and raising funds.<br><br><span class="para-ref">[9.4]</span> In Prague, another extraordinary Englishman took on the most dangerous work: <strong>Trevor Chadwick</strong>, a gentle schoolmaster from Swanage in Dorset. Chadwick stayed behind in Prague, facing interrogations by the Nazi Gestapo, forging documents when necessary, organizing railway carriages, and personally carrying crying toddlers onto the trains. Together with team members like Doreen Warriner, they arranged for eight trains to depart across Europe.',
+          text: '<span class="para-ref">[9.3]</span> Nicholas Winton knew he could not achieve this colossal rescue alone. A successful rescue required an unbroken **rescue chain**. In Prague, Winton set up a table in the Hotel Europa, where hundreds of desperate parents lined up day and night to register their children\'s names, ages, and medical details. Returning to London, Winton worked his normal banking job by day, and spent his evenings persuading the Home Office to issue entry visas, placing advertisements in British newspapers for foster families, and raising funds.<br><br><span class="para-ref">[9.4]</span> In Prague, another extraordinary Englishman took on the most dangerous work: **Trevor Chadwick**, a gentle schoolmaster from Swanage in Dorset. Chadwick stayed behind in Prague, facing interrogations by the Nazi Gestapo, forging documents when necessary, organizing railway carriages, and personally carrying crying toddlers onto the trains. Together with team members like Doreen Warriner, they arranged for eight trains to depart across Europe.',
           sources: [
             {
               id: 'ks2_ww2_l9_src_b',
@@ -6085,7 +6193,7 @@ const ks2_ww2_data = {
         {
           act: 3,
           title: '669 Children & The Secret Scrapbook',
-          text: '<span class="para-ref">[9.5]</span> Between March and August 1939, eight trains successfully carried <strong>669 children</strong> out of Prague, across Germany, and safely into Britain. Tragically, a ninth train—the largest of all, carrying 250 children—was sitting on the Prague platform on 1 September 1939. That morning, Germany invaded Poland; borders were slammed shut, and the train was never allowed to leave. Almost none of the children on that ninth train survived.<br><br><span class="para-ref">[9.6]</span> When the war began, Nicholas Winton returned to his normal life, serving in the RAF. He never told anyone what he had done. For fifty years, his leather-bound scrapbook containing the photographs and addresses of the 669 children lay forgotten in his attic. In 1988, his wife Grete found the notebook in a trunk and handed it to a historian. Winton was invited onto the BBC television programme <em>That\'s Life!</em>, where the presenter suddenly asked: <em>"Is there anyone in our audience tonight who owes their life to Nicholas Winton? If so, please stand up."</em> All around him, dozens of grown-up children rose to their feet. Winton was knighted by the Queen in 2003, having shown the world what one determined person can achieve.',
+          text: '<span class="para-ref">[9.5]</span> Between March and August 1939, eight trains successfully carried **669 children** out of Prague, across Germany, and safely into Britain. Tragically, a ninth train—the largest of all, carrying 250 children—was sitting on the Prague platform on 1 September 1939. That morning, Germany invaded Poland; borders were slammed shut, and the train was never allowed to leave. Almost none of the children on that ninth train survived.<br><br><span class="para-ref">[9.6]</span> When the war began, Nicholas Winton returned to his normal life, serving in the RAF. He never told anyone what he had done. For fifty years, his leather-bound scrapbook containing the photographs and addresses of the 669 children lay forgotten in his attic. In 1988, his wife Grete found the notebook in a trunk and handed it to a historian. Winton was invited onto the BBC television programme <em>That\'s Life!</em>, where the presenter suddenly asked: <em>"Is there anyone in our audience tonight who owes their life to Nicholas Winton? If so, please stand up."</em> All around him, dozens of grown-up children rose to their feet. Winton was knighted by the Queen in 2003, having shown the world what one determined person can achieve.',
           image: '/units/ks2_ww2/assets/nicholas_winton_memorial_prague_station.jpg',
           image_alt:
             'Bronze memorial statue of Sir Nicholas Winton with two refugee children at Prague Main Station',
@@ -6661,28 +6769,40 @@ const ks2_ww2_data = {
           term: 'VE Day',
           definition:
             'Victory in Europe Day, celebrated on 8 May 1945, marking the formal defeat of Nazi Germany.',
+          syllables: 'VE Day',
+          phonetic: 've day',
+          tier: '3',
         },
         {
           term: 'Commonwealth',
           definition:
             'A global association of nations, including India, Canada, Australia, and Caribbean lands, who contributed millions of troops.',
+          syllables: 'Co-mmonwealth',
+          phonetic: 'commonwealth',
+          tier: '2',
         },
         {
           term: 'Remembrance',
           definition:
             'The act of honouring and remembering the service, courage, and sacrifice of those who lived and died in conflict.',
+          syllables: 'Re-me-mbrance',
+          phonetic: 'remembrance',
+          tier: '3',
         },
         {
           term: 'Legacy',
           definition:
             'Something valuable, such as peace, freedom, or social reforms (like the NHS), passed down to future generations.',
+          syllables: 'Le-gacy',
+          phonetic: 'legacy',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Announcement & The Joyous Street Parties (8 May 1945)',
-          text: '<span class="para-ref">[10.1]</span> At 3:00pm on Tuesday <strong>8 May 1945</strong>, Prime Minister Winston Churchill spoke to the British people over the radio: <em>"The German war is at an end... Advance, Britannia! Long live the cause of freedom!"</em> After nearly six long years of bombing, separation, fear, and rationing, the war in Europe was finally over.<br><br><span class="para-ref">[10.2]</span> Across Britain, an explosion of joy erupted. Red, white, and blue bunting was strung between bomb-damaged houses; church bells that had been silent for years rang out; and bonfires were lit on street corners. Neighbours dragged wooden dining tables into the middle of the road, pooling their precious rationed sugar and butter to bake cakes for the children. Pianos were wheeled onto pavements for singing and dancing, and in London, huge crowds gathered outside Buckingham Palace chanting, <em>"We want the King!"</em> until King George VI and Winston Churchill appeared on the balcony.',
+          text: '<span class="para-ref">[10.1]</span> At 3:00pm on Tuesday **8 May 1945**, Prime Minister Winston Churchill spoke to the British people over the radio: <em>"The German war is at an end... Advance, Britannia! Long live the cause of freedom!"</em> After nearly six long years of bombing, separation, fear, and rationing, the war in Europe was finally over.<br><br><span class="para-ref">[10.2]</span> Across Britain, an explosion of joy erupted. Red, white, and blue bunting was strung between bomb-damaged houses; church bells that had been silent for years rang out; and bonfires were lit on street corners. Neighbours dragged wooden dining tables into the middle of the road, pooling their precious rationed sugar and butter to bake cakes for the children. Pianos were wheeled onto pavements for singing and dancing, and in London, huge crowds gathered outside Buckingham Palace chanting, <em>"We want the King!"</em> until King George VI and Winston Churchill appeared on the balcony.',
           image: '/units/ks2_ww2/assets/churchill_ve_day_whitehall_1945.jpg',
           image_alt:
             "Prime Minister Winston Churchill flashing his famous 'V for Victory' sign from the Whitehall balcony",
@@ -6746,7 +6866,7 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: 'The Tinge of Sorrow: Loss & Rebuilding',
-          text: '<span class="para-ref">[10.3]</span> Yet beneath the dancing and singing, VE Day was filled with profound sorrow. Over 450,000 British and Commonwealth soldiers and civilians had lost their lives. In almost every street, there were homes where a father, brother, or son would never return. For child refugees who had arrived on the Kindertransport, VE Day brought the agonizing discovery that their parents had been murdered in Europe.<br><br><span class="para-ref">[10.4]</span> Britain itself was physically and financially exhausted. Over two million homes had been destroyed by bombs, railway tracks were worn out, and rationing actually became stricter after the war ended, with bread being rationed for the first time in 1946. Returning soldiers faced the challenge of rebuilding their lives in damaged cities. Yet out of this destruction came a determination to build a fairer country, leading in 1948 to the founding of the <strong>National Health Service (NHS)</strong>, providing free medical care for every family.',
+          text: '<span class="para-ref">[10.3]</span> Yet beneath the dancing and singing, VE Day was filled with profound sorrow. Over 450,000 British and Commonwealth soldiers and civilians had lost their lives. In almost every street, there were homes where a father, brother, or son would never return. For child refugees who had arrived on the Kindertransport, VE Day brought the agonizing discovery that their parents had been murdered in Europe.<br><br><span class="para-ref">[10.4]</span> Britain itself was physically and financially exhausted. Over two million homes had been destroyed by bombs, railway tracks were worn out, and rationing actually became stricter after the war ended, with bread being rationed for the first time in 1946. Returning soldiers faced the challenge of rebuilding their lives in damaged cities. Yet out of this destruction came a determination to build a fairer country, leading in 1948 to the founding of the **National Health Service (NHS)**, providing free medical care for every family.',
           image: '/units/ks2_ww2/assets/ve_day_celebrations_london_1945.jpg',
           image_alt:
             'A mounted police officer gently moving through cheering crowds outside Buckingham Palace on VE Day',
@@ -6815,7 +6935,7 @@ const ks2_ww2_data = {
         {
           act: 3,
           title: 'The Duty of Remembrance: The Poppy & The Cenotaph',
-          text: '<span class="para-ref">[10.5]</span> Today, the generation that lived through the Second World War has almost entirely passed away. But their courage, sacrifices, and resilience have shaped the modern world in which we live. Every year on <strong>Remembrance Sunday</strong> in November, millions of people wear a small <strong>red poppy</strong>—a symbol inspired by the poppy fields of battlefields, representing hope, peace, and sacrifice.<br><br><span class="para-ref">[10.6]</span> At 11:00am on the eleventh day of the eleventh month, the nation observes a two-minute silence. We remember not only the brave soldiers, sailors, and pilots from Britain and the Commonwealth who fought for freedom, but also the brave civilians on the Home Front: the mothers who kept children safe in dark Anderson shelters, the Land Girls who harvested crops, the secret codebreakers at Bletchley Park, and the upstanders who saved innocent lives. Remembering their story ensures that their sacrifices were not in vain.',
+          text: '<span class="para-ref">[10.5]</span> Today, the generation that lived through the Second World War has almost entirely passed away. But their courage, sacrifices, and resilience have shaped the modern world in which we live. Every year on **Remembrance Sunday** in November, millions of people wear a small **red poppy**—a symbol inspired by the poppy fields of battlefields, representing hope, peace, and sacrifice.<br><br><span class="para-ref">[10.6]</span> At 11:00am on the eleventh day of the eleventh month, the nation observes a two-minute silence. We remember not only the brave soldiers, sailors, and pilots from Britain and the Commonwealth who fought for freedom, but also the brave civilians on the Home Front: the mothers who kept children safe in dark Anderson shelters, the Land Girls who harvested crops, the secret codebreakers at Bletchley Park, and the upstanders who saved innocent lives. Remembering their story ensures that their sacrifices were not in vain.',
           sources: [
             {
               id: 'ks2_ww2_l10_src_c',
@@ -7384,28 +7504,40 @@ const ks2_ww2_data = {
           term: 'The Windermere Children',
           definition:
             'A group of 300 Jewish child survivors of Nazi concentration camps brought to Cumbria in August 1945 to heal and rebuild their lives.',
+          syllables: 'The Wi-nderme-re Chi-ldren',
+          phonetic: 'the windermere children',
+          tier: '3',
         },
         {
           term: 'Calgarth Estate',
           definition:
             'A wartime housing community beside Lake Windermere originally built for aircraft workers, transformed in 1945 into a peaceful sanctuary for child survivors.',
+          syllables: 'Ca-lgarth E-sta-te',
+          phonetic: 'calgarth estate',
+          tier: '3',
         },
         {
           term: 'Oral History',
           definition:
             'Personal memories and first-hand testimonies spoken aloud by survivors of past events, recorded to preserve authentic historical evidence.',
+          syllables: 'Oral Hi-sto-ry',
+          phonetic: 'oral history',
+          tier: '2',
         },
         {
           term: 'Historical Fiction',
           definition:
             'A story set in a real historical time and place, using fictional characters to explore real events, feelings, and experiences.',
+          syllables: 'Hi-sto-rical Fi-ction',
+          phonetic: 'historical fiction',
+          tier: '3',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Trapped Children & The Mercy Airlift (August 1945)',
-          text: '<span class="para-ref">[11.1]</span> In Enquiries 3 and 9, we discovered how ten thousand refugee children were rescued on the Kindertransport before the war began in 1939. But what happened to the Jewish children across Europe who were unable to escape? When Nazi Germany invaded Poland on 1 September 1939, European borders were slammed shut. Trains could no longer leave. For nearly six terrifying years, approximately one and a half million Jewish children were trapped across Nazi-occupied Europe. Families were forced into crowded ghettos and deported to concentration camps such as Auschwitz-Birkenau. Tragically, fewer than one in ten of these children survived the war.<br><br><span class="para-ref">[11.2]</span> When Allied soldiers finally liberated the concentration camps in the spring of 1945, they uncovered thousands of surviving children who were starving, ill, and completely alone in the world, having lost their parents, brothers, sisters, and homes. The British government and Jewish charities, led by a humanitarian named Leonard Montefiore, organized an emergency mercy mission. On <strong>14 August 1945</strong>, ten giant Royal Air Force (RAF) Stirling bombers flew to Prague, gathered <strong>300 child survivors</strong>, and flew them across the North Sea to an airfield at Crosby-on-Eden near Carlisle. From there, fleets of buses drove the children deep into the green hills of Cumbria to begin a new chapter of their lives.',
+          text: '<span class="para-ref">[11.1]</span> In Enquiries 3 and 9, we discovered how ten thousand refugee children were rescued on the Kindertransport before the war began in 1939. But what happened to the Jewish children across Europe who were unable to escape? When Nazi Germany invaded Poland on 1 September 1939, European borders were slammed shut. Trains could no longer leave. For nearly six terrifying years, approximately one and a half million Jewish children were trapped across Nazi-occupied Europe. Families were forced into crowded ghettos and deported to concentration camps such as Auschwitz-Birkenau. Tragically, fewer than one in ten of these children survived the war.<br><br><span class="para-ref">[11.2]</span> When Allied soldiers finally liberated the concentration camps in the spring of 1945, they uncovered thousands of surviving children who were starving, ill, and completely alone in the world, having lost their parents, brothers, sisters, and homes. The British government and Jewish charities, led by a humanitarian named Leonard Montefiore, organized an emergency mercy mission. On **14 August 1945**, ten giant Royal Air Force (RAF) Stirling bombers flew to Prague, gathered **300 child survivors**, and flew them across the North Sea to an airfield at Crosby-on-Eden near Carlisle. From there, fleets of buses drove the children deep into the green hills of Cumbria to begin a new chapter of their lives.',
           sources: [
             {
               id: 'ks2_ww2_l11_src_a',
@@ -7468,7 +7600,7 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: 'Sanctuary at Calgarth: Bread Under Pillows & Red Bicycles',
-          text: '<span class="para-ref">[11.3]</span> The children were brought to the <strong>Calgarth Estate</strong>, a wartime housing village near Troutbeck Bridge on the eastern shore of Lake Windermere. The estate had originally been built during the war for civilian workers who constructed Short Sunderland flying boat aircraft on the lake. Now, its single-storey wooden chalets were converted into dormitories, classrooms, and clinics. However, helping children heal from severe trauma was not simple. When the children first saw staff wearing uniforms, or were led towards communal shower blocks, many panicked, fearing they were in another concentration camp. When hot soup and fresh bread were served, many children secretly hid loaves under their pillows, terrified that food would be taken away or that they would starve the next morning.<br><br><span class="para-ref">[11.4]</span> A remarkable team of carers, led by child psychologist <strong>Dr Oscar Friedman</strong> and art therapist <strong>Marie Paneth</strong>, treated the children with infinite patience and warmth. Rather than punishing them for hoarding bread, the carers gently reassured them that food would always be plentiful. Local residents and charities rallied round, donating clothes, books, and <strong>300 bright red bicycles</strong>. For the first time in years, the children had freedom. They pedalled along country lanes, swam in the cold, clear waters of Lake Windermere, played football matches, and learned to speak English. Slowly and tentatively, the children began to smile, trust adults, and form friendships that would last for the rest of their lives.',
+          text: '<span class="para-ref">[11.3]</span> The children were brought to the **Calgarth Estate**, a wartime housing village near Troutbeck Bridge on the eastern shore of Lake Windermere. The estate had originally been built during the war for civilian workers who constructed Short Sunderland flying boat aircraft on the lake. Now, its single-storey wooden chalets were converted into dormitories, classrooms, and clinics. However, helping children heal from severe trauma was not simple. When the children first saw staff wearing uniforms, or were led towards communal shower blocks, many panicked, fearing they were in another concentration camp. When hot soup and fresh bread were served, many children secretly hid loaves under their pillows, terrified that food would be taken away or that they would starve the next morning.<br><br><span class="para-ref">[11.4]</span> A remarkable team of carers, led by child psychologist **Dr Oscar Friedman** and art therapist **Marie Paneth**, treated the children with infinite patience and warmth. Rather than punishing them for hoarding bread, the carers gently reassured them that food would always be plentiful. Local residents and charities rallied round, donating clothes, books, and **300 bright red bicycles**. For the first time in years, the children had freedom. They pedalled along country lanes, swam in the cold, clear waters of Lake Windermere, played football matches, and learned to speak English. Slowly and tentatively, the children began to smile, trust adults, and form friendships that would last for the rest of their lives.',
           isReversed: false,
           sources: [
             {
@@ -7531,7 +7663,7 @@ const ks2_ww2_data = {
         {
           act: 3,
           title: "Tom Palmer's 'After the War': Real Survivors & Historical Fiction",
-          text: '<span class="para-ref">[11.5]</span> Decades later, award-winning children\'s author <strong>Tom Palmer</strong> was captivated by this extraordinary story of hope and healing. He decided to write a historical fiction novel entitled <em><strong>After the War: From Auschwitz to Ambleside</strong></em>, published by Barrington Stoke. Rather than inventing the story out of thin air, Tom Palmer carried out extensive historical research. He travelled to Cumbria, walked the shores of Lake Windermere, studied original building blueprints at the Windermere Library, and interviewed real living survivors who had lived at Calgarth as teenagers, including <strong>Arek Hersh MBE</strong> and <strong>Ike Alterman</strong>.<br><br><span class="para-ref">[11.6]</span> In the novel, Tom creates three fictional friends—Yossi, Leo, and Mordecai—whose experiences mirror those of the real Windermere Children: the sleepless nights haunted by nightmares, the wonder of biting into fresh white bread, and the joy of skimming stones across Lake Windermere. Through historical fiction, Tom Palmer helps modern school pupils walk in the shoes of child refugees and understand that history is made of real human hearts and courage.<br><br><div style="margin: 16px 0; padding: 18px 22px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;"><div style="max-width: 650px;"><strong style="color: #1e40af; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;"><i class="fa-solid fa-book-open-reader"></i> Official Author Website &amp; Free Chapter 1 Sampler</strong><p style="margin: 6px 0 0 0; font-size: 0.92rem; color: #1e3a8a; line-height: 1.5;">Explore author Tom Palmer\'s official website for <em>After the War</em>. You can read the opening chapter sample, view the author\'s historical research scrapbook, and explore photos of his visits to Lake Windermere and survivor meetings.</p></div><a href="https://tompalmer.co.uk/after-the-war/" target="_blank" rel="noopener noreferrer" style="background: #2563eb; color: #ffffff; text-decoration: none; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: all 0.2s;"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>Visit Tom Palmer\'s Website</span></a></div>',
+          text: '<span class="para-ref">[11.5]</span> Decades later, award-winning children\'s author **Tom Palmer** was captivated by this extraordinary story of hope and healing. He decided to write a historical fiction novel entitled <em>**After the War: From Auschwitz to Ambleside**</em>, published by Barrington Stoke. Rather than inventing the story out of thin air, Tom Palmer carried out extensive historical research. He travelled to Cumbria, walked the shores of Lake Windermere, studied original building blueprints at the Windermere Library, and interviewed real living survivors who had lived at Calgarth as teenagers, including **Arek Hersh MBE** and **Ike Alterman**.<br><br><span class="para-ref">[11.6]</span> In the novel, Tom creates three fictional friends—Yossi, Leo, and Mordecai—whose experiences mirror those of the real Windermere Children: the sleepless nights haunted by nightmares, the wonder of biting into fresh white bread, and the joy of skimming stones across Lake Windermere. Through historical fiction, Tom Palmer helps modern school pupils walk in the shoes of child refugees and understand that history is made of real human hearts and courage.<br><br><div style="margin: 16px 0; padding: 18px 22px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;"><div style="max-width: 650px;"><strong style="color: #1e40af; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;"><i class="fa-solid fa-book-open-reader"></i> Official Author Website &amp; Free Chapter 1 Sampler</strong><p style="margin: 6px 0 0 0; font-size: 0.92rem; color: #1e3a8a; line-height: 1.5;">Explore author Tom Palmer\'s official website for <em>After the War</em>. You can read the opening chapter sample, view the author\'s historical research scrapbook, and explore photos of his visits to Lake Windermere and survivor meetings.</p></div><a href="https://tompalmer.co.uk/after-the-war/" target="_blank" rel="noopener noreferrer" style="background: #2563eb; color: #ffffff; text-decoration: none; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: all 0.2s;"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>Visit Tom Palmer\'s Website</span></a></div>',
           image: '/units/ks2_ww2/assets/windermere_children_banner_chalets_1945.jpg',
           image_alt:
             'The Calgarth Estate wooden chalets at Troutbeck Bridge near Lake Windermere in 1945',
@@ -7600,7 +7732,7 @@ const ks2_ww2_data = {
         {
           act: 4,
           title: "The Living Legacy & The '45 Aid Society",
-          text: '<span class="para-ref">[11.7]</span> After four months of recuperation at Calgarth, the children were physically stronger, but the question remained: where could they go? Most had no surviving family to return to in Europe, and their hometowns had been destroyed. Many chose to make their permanent homes in Britain, moving to cities such as Manchester, Leeds, and London. They took on apprenticeships, learned trades, went to university, and became teachers, engineers, tailors, scientists, and dentists. They married and raised their own children and grandchildren, determined that Hitler had not succeeded in destroying their spirit.<br><br><span class="para-ref">[11.8]</span> The child survivors stayed closely bonded for the rest of their lives. In 1963, they founded the <strong>\'45 Aid Society</strong>, meeting every year to celebrate their survival, support charitable causes, and thank the country that welcomed them. In 2020, their story was brought to millions around the world through the award-winning BBC drama <em>The Windermere Children</em> and its accompanying documentary. Today, the Lake District Holocaust Project at Windermere Library preserves their memories. The story of the Windermere Children reminds us that even after the darkest chapters of history, human kindness, sanctuary, and community have the power to heal broken lives and restore hope.<br><br><div style="margin: 18px 0 6px 0; padding: 20px 24px; background: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 100%); border: 1.5px solid #d8b4fe; border-radius: 12px; box-shadow: 0 4px 14px rgba(168,85,247,0.08);"><div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; border-bottom: 1px solid #e9d5ff; padding-bottom: 10px;"><div style="display: flex; align-items: center; gap: 10px;"><span style="background: #7e22ce; color: #ffffff; padding: 4px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-graduation-cap"></i> ERA Broadcast Archive</span><span style="font-size: 0.82rem; color: #6b21a8; font-weight: 600;">Educational Recording Agency &bull; BBC Broadcast Streaming for UK Schools</span></div><span style="font-size: 0.78rem; color: #9333ea; font-style: italic;"><i class="fa-solid fa-shield-halved"></i> ERA School Licence Access</span></div><p style="margin: 0 0 14px 0; font-size: 0.93rem; color: #581c87; line-height: 1.5;">Teachers and pupils can stream both official BBC broadcasts directly via the <strong>Educational Recording Agency (ERA)</strong> platform, featuring the award-winning feature dramatisation and the authentic documentary with first-hand survivor testimony:</p><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;"><a href="https://era.org.uk/streaming-service-resource/the-windermere-children/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; background: #ffffff; border: 1.5px solid #e9d5ff; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.04);"><div style="width: 44px; height: 44px; border-radius: 8px; background: #7e22ce; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;"><i class="fa-solid fa-film"></i></div><div style="flex: 1; min-width: 0;"><div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 2px;"><strong style="font-size: 0.92rem; color: #581c87;">The Windermere Children</strong><span style="font-size: 0.74rem; background: #f3e8ff; color: #6b21a8; font-weight: 700; padding: 2px 7px; border-radius: 4px; white-space: nowrap;">1h 28m</span></div><p style="margin: 0 0 6px 0; font-size: 0.81rem; color: #4b5563; line-height: 1.4;">BBC Two (2020) &bull; Feature drama depicting the 300 child survivors arriving at Calgarth Estate and regaining their trust.</p><span style="font-size: 0.78rem; color: #7e22ce; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">Stream on ERA <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i></span></div></a><a href="https://era.org.uk/streaming-service-resource/the-windermere-children-in-their-own-words/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; background: #ffffff; border: 1.5px solid #e9d5ff; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.04);"><div style="width: 44px; height: 44px; border-radius: 8px; background: #6b21a8; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;"><i class="fa-solid fa-users"></i></div><div style="flex: 1; min-width: 0;"><div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 2px;"><strong style="font-size: 0.92rem; color: #581c87;">In Their Own Words</strong><span style="font-size: 0.74rem; background: #f3e8ff; color: #6b21a8; font-weight: 700; padding: 2px 7px; border-radius: 4px; white-space: nowrap;">59m</span></div><p style="margin: 0 0 6px 0; font-size: 0.81rem; color: #4b5563; line-height: 1.4;">BBC Four (2020) &bull; Authentic documentary featuring real survivor testimonies from Arek Hersh, Sir Ben Helfgott, and Harry Olmer.</p><span style="font-size: 0.78rem; color: #7e22ce; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">Stream on ERA <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i></span></div></a></div></div>',
+          text: '<span class="para-ref">[11.7]</span> After four months of recuperation at Calgarth, the children were physically stronger, but the question remained: where could they go? Most had no surviving family to return to in Europe, and their hometowns had been destroyed. Many chose to make their permanent homes in Britain, moving to cities such as Manchester, Leeds, and London. They took on apprenticeships, learned trades, went to university, and became teachers, engineers, tailors, scientists, and dentists. They married and raised their own children and grandchildren, determined that Hitler had not succeeded in destroying their spirit.<br><br><span class="para-ref">[11.8]</span> The child survivors stayed closely bonded for the rest of their lives. In 1963, they founded the **\'45 Aid Society**, meeting every year to celebrate their survival, support charitable causes, and thank the country that welcomed them. In 2020, their story was brought to millions around the world through the award-winning BBC drama <em>The Windermere Children</em> and its accompanying documentary. Today, the Lake District Holocaust Project at Windermere Library preserves their memories. The story of the Windermere Children reminds us that even after the darkest chapters of history, human kindness, sanctuary, and community have the power to heal broken lives and restore hope.<br><br><div style="margin: 18px 0 6px 0; padding: 20px 24px; background: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 100%); border: 1.5px solid #d8b4fe; border-radius: 12px; box-shadow: 0 4px 14px rgba(168,85,247,0.08);"><div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; border-bottom: 1px solid #e9d5ff; padding-bottom: 10px;"><div style="display: flex; align-items: center; gap: 10px;"><span style="background: #7e22ce; color: #ffffff; padding: 4px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-graduation-cap"></i> ERA Broadcast Archive</span><span style="font-size: 0.82rem; color: #6b21a8; font-weight: 600;">Educational Recording Agency &bull; BBC Broadcast Streaming for UK Schools</span></div><span style="font-size: 0.78rem; color: #9333ea; font-style: italic;"><i class="fa-solid fa-shield-halved"></i> ERA School Licence Access</span></div><p style="margin: 0 0 14px 0; font-size: 0.93rem; color: #581c87; line-height: 1.5;">Teachers and pupils can stream both official BBC broadcasts directly via the **Educational Recording Agency (ERA)** platform, featuring the award-winning feature dramatisation and the authentic documentary with first-hand survivor testimony:</p><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;"><a href="https://era.org.uk/streaming-service-resource/the-windermere-children/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; background: #ffffff; border: 1.5px solid #e9d5ff; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.04);"><div style="width: 44px; height: 44px; border-radius: 8px; background: #7e22ce; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;"><i class="fa-solid fa-film"></i></div><div style="flex: 1; min-width: 0;"><div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 2px;"><strong style="font-size: 0.92rem; color: #581c87;">The Windermere Children</strong><span style="font-size: 0.74rem; background: #f3e8ff; color: #6b21a8; font-weight: 700; padding: 2px 7px; border-radius: 4px; white-space: nowrap;">1h 28m</span></div><p style="margin: 0 0 6px 0; font-size: 0.81rem; color: #4b5563; line-height: 1.4;">BBC Two (2020) &bull; Feature drama depicting the 300 child survivors arriving at Calgarth Estate and regaining their trust.</p><span style="font-size: 0.78rem; color: #7e22ce; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">Stream on ERA <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i></span></div></a><a href="https://era.org.uk/streaming-service-resource/the-windermere-children-in-their-own-words/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; background: #ffffff; border: 1.5px solid #e9d5ff; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.04);"><div style="width: 44px; height: 44px; border-radius: 8px; background: #6b21a8; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;"><i class="fa-solid fa-users"></i></div><div style="flex: 1; min-width: 0;"><div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 2px;"><strong style="font-size: 0.92rem; color: #581c87;">In Their Own Words</strong><span style="font-size: 0.74rem; background: #f3e8ff; color: #6b21a8; font-weight: 700; padding: 2px 7px; border-radius: 4px; white-space: nowrap;">59m</span></div><p style="margin: 0 0 6px 0; font-size: 0.81rem; color: #4b5563; line-height: 1.4;">BBC Four (2020) &bull; Authentic documentary featuring real survivor testimonies from Arek Hersh, Sir Ben Helfgott, and Harry Olmer.</p><span style="font-size: 0.78rem; color: #7e22ce; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">Stream on ERA <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i></span></div></a></div></div>',
           sources: [
             {
               id: 'ks2_ww2_l11_src_d',

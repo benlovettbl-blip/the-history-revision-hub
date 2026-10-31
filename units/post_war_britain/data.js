@@ -226,12 +226,62 @@ const post_war_britain_data = {
           },
         ],
       },
+      vocab: [
+        {
+          term: 'Suffrage',
+          definition:
+            'The legal right of citizens to vote in national parliamentary and local government elections.',
+          syllables: 'suf-frage',
+          phonetic: 'ˈsʌfrɪdʒ',
+          tier: '3',
+        },
+        {
+          term: 'Militancy',
+          definition:
+            'The use of confrontational, aggressive, or physical protest tactics to achieve political objectives.',
+          syllables: 'mil-i-tan-cy',
+          phonetic: 'ˈmɪlɪtənsi',
+          tier: '2',
+        },
+        {
+          term: 'Civil Disobedience',
+          definition:
+            'The deliberate, peaceful refusal to obey specific laws or state demands as a moral protest against injustice.',
+          syllables: 'civ-il dis-o-be-di-ence',
+          phonetic: 'ˈsɪvəl ˌdɪsəˈbiːdiəns',
+          tier: '2',
+        },
+        {
+          term: 'Franchise',
+          definition:
+            'The constitutional privilege or legal authorization allowing a citizen to cast a ballot in elections.',
+          syllables: 'fran-chise',
+          phonetic: 'ˈfræntʃaɪz',
+          tier: '3',
+        },
+        {
+          term: 'Disenfranchisement',
+          definition:
+            'The state or legal process of being deprived of the right to vote or political representation.',
+          syllables: 'dis-en-fran-chise-ment',
+          phonetic: 'ˌdɪsɪnˈfræntʃaɪzmənt',
+          tier: '2',
+        },
+        {
+          term: 'Martyrdom',
+          definition:
+            'The suffering of death or persecution for refusing to renounce a deeply held political or religious cause.',
+          syllables: 'mar-tyr-dom',
+          phonetic: 'ˈmɑːtədəm',
+          tier: '2',
+        },
+      ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Constitutional Campaign: Millicent Fawcett & The NUWSS (1897–1903)',
           theme_heading: 'The Constitutional Campaign: Millicent Fawcett & The NUWSS (1897–1903)',
-          text: '<span class="para-ref">[1.1]</span> In 1897, seventeen regional women’s suffrage societies united under the leadership of <strong>Dame Millicent Garrett Fawcett</strong> to form the <strong>National Union of Women\'s Suffrage Societies (NUWSS)</strong>. Known as the <em>Suffragists</em>, the NUWSS was a peaceful, democratic federation that rapidly expanded to over 500 local branches and 50,000 members across Great Britain.<br><br><span class="para-ref">[1.2]</span> Fawcett believed passionately in constitutional campaigning, law-abiding methods, and patient persuasion. The Suffragists organized public lectures, collected mass petitions to Parliament, published their newspaper <em>The Common Cause</em>, and lobbied sympathetic Members of Parliament. Fawcett argued that women could never convince a skeptical male political establishment of their fitness for the vote by breaking the law, but must demonstrate moral superiority and democratic responsibility.<br><br><span class="para-ref">[1.3]</span> As Fawcett later reflected in 1918 (<strong>Source E</strong>), this slow, steady pressure laid the indispensable groundwork for enfranchisement. By converting trade unionists, local councillors, and moderate politicians to the justice of equal voting rights, the NUWSS ensured that women’s suffrage became a respectable, mainstream political demand rather than a marginal cause.',
+          text: '<span class="para-ref">[1.1]</span> In 1897, seventeen regional women’s suffrage societies united under the leadership of **Dame Millicent Garrett Fawcett** to form the **National Union of Women\'s Suffrage Societies (NUWSS)**. Known as the <em>Suffragists</em>, the NUWSS was a peaceful, democratic federation that rapidly expanded to over 500 local branches and 50,000 members across Great Britain.<br><br><span class="para-ref">[1.2]</span> Fawcett believed passionately in constitutional campaigning, law-abiding methods, and patient persuasion. The Suffragists organized public lectures, collected mass petitions to Parliament, published their newspaper <em>The Common Cause</em>, and lobbied sympathetic Members of Parliament. Fawcett argued that women could never convince a skeptical male political establishment of their fitness for the vote by breaking the law, but must demonstrate moral superiority and democratic responsibility.<br><br><span class="para-ref">[1.3]</span> As Fawcett later reflected in 1918 (**Source E**), this slow, steady pressure laid the indispensable groundwork for enfranchisement. By converting trade unionists, local councillors, and moderate politicians to the justice of equal voting rights, the NUWSS ensured that women’s suffrage became a respectable, mainstream political demand rather than a marginal cause.',
           image: '/images/post_war_britain/millicent_fawcett_portrait.jpg',
           image_alt: 'Dame Millicent Garrett Fawcett portrait',
           caption:
@@ -294,7 +344,7 @@ const post_war_britain_data = {
           act: 2,
           title: "'Deeds, Not Words': Emmeline Pankhurst & WSPU Direct Action (1903–1914)",
           theme_heading: "'Deeds, Not Words': Emmeline Pankhurst & WSPU Direct Action (1903–1914)",
-          text: '<span class="para-ref">[2.1]</span> Frustrated by decades of parliamentary delays and broken promises by Liberal and Conservative governments, <strong>Emmeline Pankhurst</strong> and her daughters Christabel and Sylvia founded the <strong>Women\'s Social and Political Union (WSPU)</strong> in Manchester in October 1903. Adopting the militant motto <em>\'Deeds, not words\'</em>, the WSPU members became universally known as the <strong>Suffragettes</strong>.<br><br><span class="para-ref">[2.2]</span> Unlike the democratic NUWSS, the WSPU operated as a disciplined military hierarchy. Suffragettes abandoned peaceful petitions in favor of high-profile civil disobedience: heckling Cabinet ministers at political rallies, chaining themselves to railings outside Parliament, and storming the House of Commons. They argued that only dramatic disruption would force the government to take the vote seriously.<br><br><span class="para-ref">[2.3]</span> The clash reached its climax in May 1914 when Emmeline Pankhurst led a deputation of women to present a petition to King George V outside Buckingham Palace. In the dramatic photograph in <strong>Source A</strong>, Superintendent Rolfe of the Metropolitan Police is captured physically lifting Pankhurst off her feet to arrest her, illustrating the state\'s determination to suppress public female protest.',
+          text: '<span class="para-ref">[2.1]</span> Frustrated by decades of parliamentary delays and broken promises by Liberal and Conservative governments, **Emmeline Pankhurst** and her daughters Christabel and Sylvia founded the **Women\'s Social and Political Union (WSPU)** in Manchester in October 1903. Adopting the militant motto <em>\'Deeds, not words\'</em>, the WSPU members became universally known as the **Suffragettes**.<br><br><span class="para-ref">[2.2]</span> Unlike the democratic NUWSS, the WSPU operated as a disciplined military hierarchy. Suffragettes abandoned peaceful petitions in favor of high-profile civil disobedience: heckling Cabinet ministers at political rallies, chaining themselves to railings outside Parliament, and storming the House of Commons. They argued that only dramatic disruption would force the government to take the vote seriously.<br><br><span class="para-ref">[2.3]</span> The clash reached its climax in May 1914 when Emmeline Pankhurst led a deputation of women to present a petition to King George V outside Buckingham Palace. In the dramatic photograph in **Source A**, Superintendent Rolfe of the Metropolitan Police is captured physically lifting Pankhurst off her feet to arrest her, illustrating the state\'s determination to suppress public female protest.',
           isReversed: true,
           sources: [
             {
@@ -353,7 +403,7 @@ const post_war_britain_data = {
           act: 3,
           title: 'Prison Brutality, Hunger Strikes & The Cat and Mouse Act (1909–1914)',
           theme_heading: 'Prison Brutality, Hunger Strikes & The Cat and Mouse Act (1909–1914)',
-          text: '<span class="para-ref">[3.1]</span> When imprisoned in Holloway and other jails, Suffragettes demanded to be treated as political prisoners rather than common criminals. In July 1909, Marion Wallace Dunlop initiated a revolutionary protest tactic by refusing all food. To prevent prisoners from dying and becoming martyrs, the Liberal government introduced <strong>compulsory force-feeding</strong>—a brutal and agonizing procedure where rubber tubes were shoved down prisoners\' nostrils or throats by wardresses and medical officers.<br><br><span class="para-ref">[3.2]</span> Public outrage at force-feeding compelled Home Secretary Reginald McKenna to pass the <strong>Prisoners (Temporary Discharge for Ill-Health) Act 1913</strong>, notoriously dubbed the <strong>\'Cat and Mouse Act\'</strong>. Under this law, hunger-striking Suffragettes were released on license when dangerously frail, allowed to recover at home, and then re-arrested by police to serve the remainder of their sentences.<br><br><span class="para-ref">[3.3]</span> The WSPU turned this state cruelty into a powerful propaganda weapon. As depicted in the famous 1914 WSPU poster in <strong>Source B</strong>, the government was satirized as a bloodthirsty feline toying with a helpless female prisoner. The WSPU awarded military-style silver <strong>Hunger Strike Medals</strong> (<strong>Source C</strong>) to survivors like Helen MacRae, honoring their physical sacrifice for the cause.',
+          text: '<span class="para-ref">[3.1]</span> When imprisoned in Holloway and other jails, Suffragettes demanded to be treated as political prisoners rather than common criminals. In July 1909, Marion Wallace Dunlop initiated a revolutionary protest tactic by refusing all food. To prevent prisoners from dying and becoming martyrs, the Liberal government introduced **compulsory force-feeding**—a brutal and agonizing procedure where rubber tubes were shoved down prisoners\' nostrils or throats by wardresses and medical officers.<br><br><span class="para-ref">[3.2]</span> Public outrage at force-feeding compelled Home Secretary Reginald McKenna to pass the **Prisoners (Temporary Discharge for Ill-Health) Act 1913**, notoriously dubbed the **\'Cat and Mouse Act\'**. Under this law, hunger-striking Suffragettes were released on license when dangerously frail, allowed to recover at home, and then re-arrested by police to serve the remainder of their sentences.<br><br><span class="para-ref">[3.3]</span> The WSPU turned this state cruelty into a powerful propaganda weapon. As depicted in the famous 1914 WSPU poster in **Source B**, the government was satirized as a bloodthirsty feline toying with a helpless female prisoner. The WSPU awarded military-style silver **Hunger Strike Medals** (**Source C**) to survivors like Helen MacRae, honoring their physical sacrifice for the cause.',
           isReversed: false,
           sources: [
             {
@@ -413,7 +463,7 @@ const post_war_britain_data = {
           title: 'The Suffragette Bodyguard: Edith Garrud & The Jiu-Jitsu Defense (1910–1914)',
           theme_heading:
             'The Suffragette Bodyguard: Edith Garrud & The Jiu-Jitsu Defense (1910–1914)',
-          text: '<span class="para-ref">[4.1]</span> As police tactics became increasingly aggressive—culminating in the sexual assault and physical violence of \'Black Friday\' in November 1910—the WSPU organized an elite, clandestine security unit known as <strong>\'The Bodyguard\'</strong>. Led by martial artist <strong>Edith Garrud</strong>, a group of thirty athletic women were trained in the Japanese martial art of <strong>jiu-jitsu</strong> to protect Emmeline Pankhurst from re-arrest under the Cat and Mouse Act.<br><br><span class="para-ref">[4.2]</span> Armed with wooden clubs concealed beneath their fashionable Edwardian dresses and hats, the Bodyguard engaged in hand-to-hand combat with plainclothes detectives and police officers during public meetings, using joint locks and throws to neutralize physically larger opponents. Contemporary press cartoonists were captivated; Arthur Wallis Mills’s famous 1910 cartoon in <em>Punch</em> (<strong>Source D</strong>) humorously depicted terrified policemen cowering behind railings before a martial-arts-trained Suffragette.<br><br><span class="para-ref">[4.3]</span> The escalation peaked in June 1913 when <strong>Emily Wilding Davison</strong> stepped onto the Epsom Derby racetrack in front of King George V’s horse, Anmer, sustaining fatal injuries. While militants hailed her as a supreme martyr for liberty, critics and anti-suffragists argued that WSPU militancy was verging on fanatical terrorism that alienated moderate voters.',
+          text: '<span class="para-ref">[4.1]</span> As police tactics became increasingly aggressive—culminating in the sexual assault and physical violence of \'Black Friday\' in November 1910—the WSPU organized an elite, clandestine security unit known as **\'The Bodyguard\'**. Led by martial artist **Edith Garrud**, a group of thirty athletic women were trained in the Japanese martial art of **jiu-jitsu** to protect Emmeline Pankhurst from re-arrest under the Cat and Mouse Act.<br><br><span class="para-ref">[4.2]</span> Armed with wooden clubs concealed beneath their fashionable Edwardian dresses and hats, the Bodyguard engaged in hand-to-hand combat with plainclothes detectives and police officers during public meetings, using joint locks and throws to neutralize physically larger opponents. Contemporary press cartoonists were captivated; Arthur Wallis Mills’s famous 1910 cartoon in <em>Punch</em> (**Source D**) humorously depicted terrified policemen cowering behind railings before a martial-arts-trained Suffragette.<br><br><span class="para-ref">[4.3]</span> The escalation peaked in June 1913 when **Emily Wilding Davison** stepped onto the Epsom Derby racetrack in front of King George V’s horse, Anmer, sustaining fatal injuries. While militants hailed her as a supreme martyr for liberty, critics and anti-suffragists argued that WSPU militancy was verging on fanatical terrorism that alienated moderate voters.',
           isReversed: true,
           sources: [
             {
@@ -472,7 +522,7 @@ const post_war_britain_data = {
           act: 5,
           title: 'Total War Mobilisation, Munitions Work & The 1918 Victory (1914–1918)',
           theme_heading: 'Total War Mobilisation, Munitions Work & The 1918 Victory (1914–1918)',
-          text: '<span class="para-ref">[5.1]</span> In August 1914, the outbreak of the First World War transformed the political landscape overnight. Emmeline Pankhurst suspended all militant campaigning and urged Suffragettes to support the national war effort. Meanwhile, Millicent Fawcett’s NUWSS continued constitutional lobbying while mobilising thousands of women into civilian and relief work.<br><br><span class="para-ref">[5.2]</span> As millions of British men enlisted to fight on the Western Front, over one million women entered the industrial workforce. Women served as postal workers, bus conductors, agricultural labourers in the Women’s Land Army, and high-explosive shell fillers in munitions factories. Known as \'Canary Girls\' because dangerous toxic chemicals turned their skin and hair bright yellow, these women proved their indispensable contribution to the survival of the nation.<br><br><span class="para-ref">[5.3]</span> In February 1918, Parliament passed the landmark <strong>Representation of the People Act 1918</strong>, enfranchising all women over the age of thirty who met property qualifications (representing 8.5 million women). Historians continue to debate whether the vote was won primarily by the peaceful persuasion of the Suffragists, the dramatic publicity of the Suffragettes, or women’s heroic contribution to wartime munitions production. Full equal suffrage on the same terms as men was finally achieved a decade later in 1928.',
+          text: '<span class="para-ref">[5.1]</span> In August 1914, the outbreak of the First World War transformed the political landscape overnight. Emmeline Pankhurst suspended all militant campaigning and urged Suffragettes to support the national war effort. Meanwhile, Millicent Fawcett’s NUWSS continued constitutional lobbying while mobilising thousands of women into civilian and relief work.<br><br><span class="para-ref">[5.2]</span> As millions of British men enlisted to fight on the Western Front, over one million women entered the industrial workforce. Women served as postal workers, bus conductors, agricultural labourers in the Women’s Land Army, and high-explosive shell fillers in munitions factories. Known as \'Canary Girls\' because dangerous toxic chemicals turned their skin and hair bright yellow, these women proved their indispensable contribution to the survival of the nation.<br><br><span class="para-ref">[5.3]</span> In February 1918, Parliament passed the landmark **Representation of the People Act 1918**, enfranchising all women over the age of thirty who met property qualifications (representing 8.5 million women). Historians continue to debate whether the vote was won primarily by the peaceful persuasion of the Suffragists, the dramatic publicity of the Suffragettes, or women’s heroic contribution to wartime munitions production. Full equal suffrage on the same terms as men was finally achieved a decade later in 1928.',
           image: '/images/post_war_britain/canary_girls_chilwell_1917.jpg',
           image_alt: 'Munitions workers Canary Girls at Chilwell',
           caption:
@@ -856,6 +906,56 @@ const post_war_britain_data = {
           },
         ],
       },
+      vocab: [
+        {
+          term: 'Welfare State',
+          definition:
+            'A system of government where the state undertakes to protect the health and well-being of all citizens through social security and healthcare.',
+          syllables: 'wel-fare state',
+          phonetic: 'ˈwɛlfeə steɪt',
+          tier: '3',
+        },
+        {
+          term: 'Beveridge Report',
+          definition:
+            'The influential 1942 blueprint published by William Beveridge proposing the eradication of the Five Giant Evils: Want, Disease, Ignorance, Squalor, and Idleness.',
+          syllables: 'bev-er-idge re-port',
+          phonetic: 'ˈbɛvərɪdʒ rɪˈpɔːt',
+          tier: '3',
+        },
+        {
+          term: 'Nationalisation',
+          definition:
+            'The transfer of private industry, coal mines, railways, or utilities into collective public ownership and state control.',
+          syllables: 'na-tion-al-i-sa-tion',
+          phonetic: 'ˌnæʃənəlaɪˈzeɪʃən',
+          tier: '3',
+        },
+        {
+          term: 'Universal Healthcare',
+          definition:
+            'A public healthcare system providing comprehensive medical services to all citizens free at the point of delivery.',
+          syllables: 'u-ni-ver-sal health-care',
+          phonetic: 'ˌjuːnɪˈvɜːsəl ˈhɛlθkeər',
+          tier: '2',
+        },
+        {
+          term: 'Social Security',
+          definition:
+            'State financial provision for people facing unemployment, sickness, disability, or old age through compulsory national insurance.',
+          syllables: 'so-cial se-cu-ri-ty',
+          phonetic: 'ˈsəʊʃəl sɪˈkjʊərɪti',
+          tier: '2',
+        },
+        {
+          term: 'Austerity',
+          definition:
+            'Strict economic conditions and rationing imposed by government to reduce public debt and rebuild national finances after war.',
+          syllables: 'aus-ter-i-ty',
+          phonetic: 'ɒˈstɛrɪti',
+          tier: '2',
+        },
+      ],
       narrative_blocks: [
         {
           act: 1,
@@ -933,7 +1033,7 @@ const post_war_britain_data = {
           title: 'Slaying the Five Giants: William Beveridge & The Blueprint for Welfare (1942)',
           theme_heading:
             'Slaying the Five Giants: William Beveridge & The Blueprint for Welfare (1942)',
-          text: '<span class="para-ref">[2.1]</span> In November 1942, in the darkest days of the war, senior civil servant and economist <strong>Sir William Beveridge</strong> published his revolutionary parliamentary report: <em>Social Insurance and Allied Services</em> (<strong>Source A</strong>). The Beveridge Report became an immediate publishing sensation, selling over 630,000 copies as citizens queued outside stationery offices in the rain to buy it.<br><br><span class="para-ref">[2.2]</span> Beveridge declared that post-war reconstruction must declare war upon <strong>\'Five Giant Evils\'</strong> blighting British society: <strong>Want</strong> (poverty), <strong>Disease</strong> (lack of healthcare), <strong>Ignorance</strong> (inadequate education), <strong>Squalor</strong> (bad housing), and <strong>Idleness</strong> (unemployment).<br><br><span class="para-ref">[2.3]</span> To slay these giants, Beveridge proposed a comprehensive, universal system of compulsory national insurance. Every working citizen would pay a single weekly contribution stamped in a booklet, guaranteeing state protection \'from the cradle to the grave\': unemployment pay, sick leave, maternity grants, retirement pensions, and crucially, a free, comprehensive national health service available to every man, woman, and child regardless of wealth.',
+          text: '<span class="para-ref">[2.1]</span> In November 1942, in the darkest days of the war, senior civil servant and economist **Sir William Beveridge** published his revolutionary parliamentary report: <em>Social Insurance and Allied Services</em> (**Source A**). The Beveridge Report became an immediate publishing sensation, selling over 630,000 copies as citizens queued outside stationery offices in the rain to buy it.<br><br><span class="para-ref">[2.2]</span> Beveridge declared that post-war reconstruction must declare war upon **\'Five Giant Evils\'** blighting British society: **Want** (poverty), **Disease** (lack of healthcare), **Ignorance** (inadequate education), **Squalor** (bad housing), and **Idleness** (unemployment).<br><br><span class="para-ref">[2.3]</span> To slay these giants, Beveridge proposed a comprehensive, universal system of compulsory national insurance. Every working citizen would pay a single weekly contribution stamped in a booklet, guaranteeing state protection \'from the cradle to the grave\': unemployment pay, sick leave, maternity grants, retirement pensions, and crucially, a free, comprehensive national health service available to every man, woman, and child regardless of wealth.',
           isReversed: true,
           sources: [
             {
@@ -993,7 +1093,7 @@ const post_war_britain_data = {
           title: "The 1945 Labour Landslide: Clement Attlee & 'The New Jerusalem' (July 1945)",
           theme_heading:
             "The 1945 Labour Landslide: Clement Attlee & 'The New Jerusalem' (July 1945)",
-          text: '<span class="para-ref">[3.1]</span> When the European war ended in May 1945, a general election was called in July. Conservative Prime Minister Winston Churchill was universally celebrated as Britain’s victorious wartime saviour. However, while voters revered Churchill as a war leader, they distrusted his Conservative Party on domestic policy, remembering the mass factory closures, means tests, and slums of the 1930s.<br><br><span class="para-ref">[3.2]</span> In contrast, the Labour Party, led by the mild-mannered former deputy prime minister <strong>Clement Attlee</strong> (<strong>Source B</strong>), campaigned on a radical, optimistic manifesto titled <em>\'Let Us Face the Future\'</em>. Labour pledged to implement the Beveridge Report in full, build 200,000 council houses a year, nationalize key coal, railway, and steel industries, and construct a socialist \'New Jerusalem\'.<br><br><span class="para-ref">[3.3]</span> The result was an astonishing landslide victory for Labour, winning 393 seats in Parliament and a 146-seat majority. Armed with this democratic mandate, the Attlee government embarked on the most sweeping program of social and economic reform in modern British history, laying the foundation of the modern Welfare State.',
+          text: '<span class="para-ref">[3.1]</span> When the European war ended in May 1945, a general election was called in July. Conservative Prime Minister Winston Churchill was universally celebrated as Britain’s victorious wartime saviour. However, while voters revered Churchill as a war leader, they distrusted his Conservative Party on domestic policy, remembering the mass factory closures, means tests, and slums of the 1930s.<br><br><span class="para-ref">[3.2]</span> In contrast, the Labour Party, led by the mild-mannered former deputy prime minister **Clement Attlee** (**Source B**), campaigned on a radical, optimistic manifesto titled <em>\'Let Us Face the Future\'</em>. Labour pledged to implement the Beveridge Report in full, build 200,000 council houses a year, nationalize key coal, railway, and steel industries, and construct a socialist \'New Jerusalem\'.<br><br><span class="para-ref">[3.3]</span> The result was an astonishing landslide victory for Labour, winning 393 seats in Parliament and a 146-seat majority. Armed with this democratic mandate, the Attlee government embarked on the most sweeping program of social and economic reform in modern British history, laying the foundation of the modern Welfare State.',
           isReversed: false,
           sources: [
             {
@@ -1052,7 +1152,7 @@ const post_war_britain_data = {
           act: 4,
           title: 'Aneurin Bevan & The NHS Act: Healthcare as a Human Right (1946–1947)',
           theme_heading: 'Aneurin Bevan & The NHS Act: Healthcare as a Human Right (1946–1947)',
-          text: '<span class="para-ref">[4.1]</span> The crown jewel of the new Welfare State was the creation of the <strong>National Health Service (NHS)</strong>. Attlee appointed fiery Welsh socialist <strong>Aneurin \'Nye\' Bevan</strong>—a former coal miner who had watched fellow miners die of tuberculosis without medical treatment—as Minister of Health and Housing.<br><br><span class="para-ref">[4.2]</span> Bevan drafted the <strong>National Health Service Act 1946</strong> based on three uncompromising socialist principles: 1. Healthcare must be comprehensive (covering doctors, surgeons, dentists, opticians, and prescriptions); 2. Universal (available to everyone residing in Britain); 3. Completely free at the point of clinical delivery, financed out of general taxation rather than private insurance.<br><br><span class="para-ref">[4.3]</span> In his speeches to Parliament (<strong>Source D</strong>), Bevan insisted that health was a fundamental human right, arguing: \'No society can legitimately call itself civilised if a sick person is denied medical aid because of lack of means.\' For the first time, poor families would never again fear the catastrophic doctor’s bill or delay treating serious illness.',
+          text: '<span class="para-ref">[4.1]</span> The crown jewel of the new Welfare State was the creation of the **National Health Service (NHS)**. Attlee appointed fiery Welsh socialist **Aneurin \'Nye\' Bevan**—a former coal miner who had watched fellow miners die of tuberculosis without medical treatment—as Minister of Health and Housing.<br><br><span class="para-ref">[4.2]</span> Bevan drafted the **National Health Service Act 1946** based on three uncompromising socialist principles: 1. Healthcare must be comprehensive (covering doctors, surgeons, dentists, opticians, and prescriptions); 2. Universal (available to everyone residing in Britain); 3. Completely free at the point of clinical delivery, financed out of general taxation rather than private insurance.<br><br><span class="para-ref">[4.3]</span> In his speeches to Parliament (**Source D**), Bevan insisted that health was a fundamental human right, arguing: \'No society can legitimately call itself civilised if a sick person is denied medical aid because of lack of means.\' For the first time, poor families would never again fear the catastrophic doctor’s bill or delay treating serious illness.',
           isReversed: true,
           sources: [
             {
@@ -1112,7 +1212,7 @@ const post_war_britain_data = {
           title: "'The Appointed Day': Overcoming the BMA & The Reality of Free Care (5 July 1948)",
           theme_heading:
             "'The Appointed Day': Overcoming the BMA & The Reality of Free Care (5 July 1948)",
-          text: '<span class="para-ref">[5.1]</span> Bevan’s vision met fierce resistance from the medical establishment. The <strong>British Medical Association (BMA)</strong>, led by Dr. Charles Hill, fiercely opposed the NHS (<strong>Source E</strong>), warning that state-salaried doctors would become \'bureaucratic civil servants\' and threatening a nationwide doctors’ strike.<br><br><span class="para-ref">[5.2]</span> With masterly political skill, Bevan neutralized opposition by allowing senior hospital consultants to treat lucrative private patients alongside NHS patients in state hospitals and paying family GPs per patient enrolled. As Bevan famously quipped: \'I stuffed their mouths with gold.\' By July 1948, over 90% of British doctors had enrolled.<br><br><span class="para-ref">[5.3]</span> On <strong>5 July 1948</strong>—\'The Appointed Day\'—Bevan visited Park Hospital in Davyhulme, Manchester, to symbolically receive the keys to Britain’s first nationalized hospital. Within months, millions of citizens flooded clinics to receive free eyeglasses (<strong>Source C</strong>), dental dentures, and surgical treatments they had gone without for decades. The NHS instantly became Britain’s most beloved national institution.',
+          text: '<span class="para-ref">[5.1]</span> Bevan’s vision met fierce resistance from the medical establishment. The **British Medical Association (BMA)**, led by Dr. Charles Hill, fiercely opposed the NHS (**Source E**), warning that state-salaried doctors would become \'bureaucratic civil servants\' and threatening a nationwide doctors’ strike.<br><br><span class="para-ref">[5.2]</span> With masterly political skill, Bevan neutralized opposition by allowing senior hospital consultants to treat lucrative private patients alongside NHS patients in state hospitals and paying family GPs per patient enrolled. As Bevan famously quipped: \'I stuffed their mouths with gold.\' By July 1948, over 90% of British doctors had enrolled.<br><br><span class="para-ref">[5.3]</span> On **5 July 1948**—\'The Appointed Day\'—Bevan visited Park Hospital in Davyhulme, Manchester, to symbolically receive the keys to Britain’s first nationalized hospital. Within months, millions of citizens flooded clinics to receive free eyeglasses (**Source C**), dental dentures, and surgical treatments they had gone without for decades. The NHS instantly became Britain’s most beloved national institution.',
           image: '/images/bevan_first_day_nhs_1948.jpg',
           image_alt: 'Aneurin Bevan visiting Park Hospital on the first day of the NHS',
           caption:
@@ -1494,6 +1594,56 @@ const post_war_britain_data = {
           },
         ],
       },
+      vocab: [
+        {
+          term: 'Commonwealth',
+          definition:
+            'A voluntary association of sovereign states comprising Great Britain and numerous former territories of the British Empire.',
+          syllables: 'com-mon-wealth',
+          phonetic: 'ˈkɒmənˌwɛlθ',
+          tier: '3',
+        },
+        {
+          term: 'British Nationality Act',
+          definition:
+            'The 1948 statute granting all citizens of the British Empire and Commonwealth full legal citizenship and the right to live and work in the UK.',
+          syllables: 'brit-ish na-tion-al-i-ty act',
+          phonetic: 'ˈbrɪtɪʃ ˌnæʃəˈnælɪti ækt',
+          tier: '3',
+        },
+        {
+          term: 'Colour Bar',
+          definition:
+            'Informal or institutional racial discrimination restricting Black and Asian people from housing, employment, and public venues.',
+          syllables: 'col-our bar',
+          phonetic: 'ˈkʌlər bɑːr',
+          tier: '3',
+        },
+        {
+          term: 'Migration',
+          definition:
+            'The physical movement of people from one region or nation to settle permanently or semi-permanently in another.',
+          syllables: 'mi-gra-tion',
+          phonetic: 'maɪˈɡreɪʃən',
+          tier: '2',
+        },
+        {
+          term: 'Assimilation',
+          definition:
+            'The social process by which immigrant groups are expected to adopt the cultural norms and language of the dominant society.',
+          syllables: 'as-sim-i-la-tion',
+          phonetic: 'əˌsɪmɪˈleɪʃən',
+          tier: '2',
+        },
+        {
+          term: 'Repatriation',
+          definition:
+            'The return of a person or group to their country of origin or ancestral citizenship, either voluntarily or by government coercion.',
+          syllables: 're-pa-tri-a-tion',
+          phonetic: 'riːˌpætrɪˈeɪʃən',
+          tier: '2',
+        },
+      ],
       narrative_blocks: [
         {
           act: 1,
@@ -1557,7 +1707,7 @@ const post_war_britain_data = {
           title: 'Imperial Citizens: The British Nationality Act 1948 & Statutory Rights (1948)',
           theme_heading:
             'Imperial Citizens: The British Nationality Act 1948 & Statutory Rights (1948)',
-          text: '<span class="para-ref">[2.1]</span> In 1948, the Attlee government passed the landmark <strong>British Nationality Act 1948</strong> (<strong>Source C</strong>). The Act created the official status of <strong>\'Citizen of the United Kingdom and Colonies\' (CUKC)</strong>, granting all 800 million subjects across the British Empire and Commonwealth equal British citizenship.<br><br><span class="para-ref">[2.2]</span> Crucially, the 1948 Act gave every Commonwealth citizen the unrestricted statutory right to enter, work, settle, and vote in the United Kingdom without requiring a visa or work permit. As British subjects who had sung the national anthem, learned British history in colonial classrooms, and fought for King and Empire during the Second World War, Caribbean people saw Britain as their motherland.<br><br><span class="para-ref">[2.3]</span> In the British Caribbean—where islands like Jamaica, Barbados, and Trinidad suffered from high unemployment, sugar cane price collapses, and hurricane destruction—advertisements in local newspapers offering cheap steamship passages to Britain sparked intense excitement among young veterans, tradesmen, and schoolteachers eager for new opportunities.',
+          text: '<span class="para-ref">[2.1]</span> In 1948, the Attlee government passed the landmark **British Nationality Act 1948** (**Source C**). The Act created the official status of **\'Citizen of the United Kingdom and Colonies\' (CUKC)**, granting all 800 million subjects across the British Empire and Commonwealth equal British citizenship.<br><br><span class="para-ref">[2.2]</span> Crucially, the 1948 Act gave every Commonwealth citizen the unrestricted statutory right to enter, work, settle, and vote in the United Kingdom without requiring a visa or work permit. As British subjects who had sung the national anthem, learned British history in colonial classrooms, and fought for King and Empire during the Second World War, Caribbean people saw Britain as their motherland.<br><br><span class="para-ref">[2.3]</span> In the British Caribbean—where islands like Jamaica, Barbados, and Trinidad suffered from high unemployment, sugar cane price collapses, and hurricane destruction—advertisements in local newspapers offering cheap steamship passages to Britain sparked intense excitement among young veterans, tradesmen, and schoolteachers eager for new opportunities.',
           isReversed: true,
           sources: [
             {
@@ -1616,7 +1766,7 @@ const post_war_britain_data = {
           act: 3,
           title: '22 June 1948: HMT Empire Windrush Docks at Tilbury (1948)',
           theme_heading: '22 June 1948: HMT Empire Windrush Docks at Tilbury (1948)',
-          text: '<span class="para-ref">[3.1]</span> On <strong>22 June 1948</strong>, the former German troopship <strong>HMT Empire Windrush</strong> docked at the Port of Tilbury on the River Thames, carrying 492 official passengers from Jamaica, Trinidad, and other Caribbean islands. The official passenger manifest (<strong>Source A</strong>) listed skilled welders, mechanics, carpenters, seamstresses, and RAF veterans in smart suits and fedora hats.<br><br><span class="para-ref">[3.2]</span> Among the arrivals was celebrated Trinidadian calypsonian <strong>Lord Kitchener</strong> (Aldwyn Roberts) (<strong>Source B</strong>), who stepped down the gangplank and sang his famous anthem <em>\'London Is the Place for Me\'</em> live on camera for Pathé News, capturing the optimism and dignity of these pioneering immigrants.<br><br><span class="para-ref">[3.3]</span> The arrival of the Empire Windrush marked the symbolic beginning of modern multicultural Britain. Over the next fifteen years—a wave known as the <strong>Windrush Generation</strong>—hundreds of thousands of Commonwealth citizens crossed the Atlantic to power Britain’s post-war economic boom.',
+          text: '<span class="para-ref">[3.1]</span> On **22 June 1948**, the former German troopship **HMT Empire Windrush** docked at the Port of Tilbury on the River Thames, carrying 492 official passengers from Jamaica, Trinidad, and other Caribbean islands. The official passenger manifest (**Source A**) listed skilled welders, mechanics, carpenters, seamstresses, and RAF veterans in smart suits and fedora hats.<br><br><span class="para-ref">[3.2]</span> Among the arrivals was celebrated Trinidadian calypsonian **Lord Kitchener** (Aldwyn Roberts) (**Source B**), who stepped down the gangplank and sang his famous anthem <em>\'London Is the Place for Me\'</em> live on camera for Pathé News, capturing the optimism and dignity of these pioneering immigrants.<br><br><span class="para-ref">[3.3]</span> The arrival of the Empire Windrush marked the symbolic beginning of modern multicultural Britain. Over the next fifteen years—a wave known as the **Windrush Generation**—hundreds of thousands of Commonwealth citizens crossed the Atlantic to power Britain’s post-war economic boom.',
           image: '/images/empire_windrush_1948.jpg',
           image_alt: 'HMT Empire Windrush docking at Tilbury in June 1948',
           caption:
@@ -1680,7 +1830,7 @@ const post_war_britain_data = {
           title: "'No Blacks, No Irish, No Dogs': The Informal Colour Bar & Exploitation (1950s)",
           theme_heading:
             "'No Blacks, No Irish, No Dogs': The Informal Colour Bar & Exploitation (1950s)",
-          text: '<span class="para-ref">[4.1]</span> Upon arriving in Britain, the Windrush pioneers were confronted by a cold, hostile social reality. Although Commonwealth arrivals were legally equal citizens under the 1948 Act, they encountered an entrenched, informal <strong>\'colour bar\'</strong> across British society that was completely legal, as no race discrimination laws existed.<br><br><span class="para-ref">[4.2]</span> In housing, Caribbean arrivals faced humiliating rejection. Boarding houses and rental flats openly displayed window signs reading <em>\'No Blacks, No Irish, No Dogs\'</em>. Banks refused to grant mortgages to Black applicants, forcing West Indian families to pool their money through traditional community credit schemes known as \'pardner\' systems to buy dilapidated properties.<br><br><span class="para-ref">[4.3]</span> In employment, highly educated Caribbean schoolteachers, engineers, and nurses were routinely denied skilled posts and forced into menial, low-wage shift work. Contemporary eyewitness testimonies (<strong>Source D</strong>) reveal how Black bus drivers and hospital orderlies endured daily racial insults from passengers and supervisors while working the graveyard shifts that white workers refused to do.',
+          text: '<span class="para-ref">[4.1]</span> Upon arriving in Britain, the Windrush pioneers were confronted by a cold, hostile social reality. Although Commonwealth arrivals were legally equal citizens under the 1948 Act, they encountered an entrenched, informal **\'colour bar\'** across British society that was completely legal, as no race discrimination laws existed.<br><br><span class="para-ref">[4.2]</span> In housing, Caribbean arrivals faced humiliating rejection. Boarding houses and rental flats openly displayed window signs reading <em>\'No Blacks, No Irish, No Dogs\'</em>. Banks refused to grant mortgages to Black applicants, forcing West Indian families to pool their money through traditional community credit schemes known as \'pardner\' systems to buy dilapidated properties.<br><br><span class="para-ref">[4.3]</span> In employment, highly educated Caribbean schoolteachers, engineers, and nurses were routinely denied skilled posts and forced into menial, low-wage shift work. Contemporary eyewitness testimonies (**Source D**) reveal how Black bus drivers and hospital orderlies endured daily racial insults from passengers and supervisors while working the graveyard shifts that white workers refused to do.',
           isReversed: true,
           sources: [
             {
@@ -1740,7 +1890,7 @@ const post_war_britain_data = {
           title: 'The 1958 Notting Hill Riots, Claudia Jones & The Caribbean Carnival (1958–1959)',
           theme_heading:
             'The 1958 Notting Hill Riots, Claudia Jones & The Caribbean Carnival (1958–1959)',
-          text: "<span class=\"para-ref\">[5.1]</span> In late August 1958, brewing racial tensions exploded in the <strong>Notting Hill Race Riots</strong> in West London. Mobilized by Oswald Mosley's fascist Union Movement and gangs of white youth known as 'Teddy Boys', mobs of hundreds of armed rioters attacked Black residents with iron bars, petrol bombs, and butcher knives for five consecutive nights while chanting 'Keep Britain White'.<br><br><span class=\"para-ref\">[5.2]</span> When local police failed to protect Black families, Caribbean residents organized self-defense patrols under leaders like Frank Crichlow. In response to the violence, Trinidadian feminist and communist journalist <strong>Claudia Jones</strong> (<strong>Source E</strong>) founded Britain’s first Black newspaper, the <em>West Indian Gazette</em>, using investigative journalism to combat institutional racism and unite the Black community.<br><br><span class=\"para-ref\">[5.3]</span> In January 1959, Jones organized an indoor Caribbean Carnival in St Pancras Town Hall to showcase Caribbean music, steel pans, and dance, famously declaring: 'A people's art is the genesis of their freedom.' This celebration grew into the outdoor <strong>Notting Hill Carnival</strong>, transforming a site of racist violence into the largest celebration of Afro-Caribbean culture in Europe.",
+          text: "<span class=\"para-ref\">[5.1]</span> In late August 1958, brewing racial tensions exploded in the **Notting Hill Race Riots** in West London. Mobilized by Oswald Mosley's fascist Union Movement and gangs of white youth known as 'Teddy Boys', mobs of hundreds of armed rioters attacked Black residents with iron bars, petrol bombs, and butcher knives for five consecutive nights while chanting 'Keep Britain White'.<br><br><span class=\"para-ref\">[5.2]</span> When local police failed to protect Black families, Caribbean residents organized self-defense patrols under leaders like Frank Crichlow. In response to the violence, Trinidadian feminist and communist journalist **Claudia Jones** (**Source E**) founded Britain’s first Black newspaper, the <em>West Indian Gazette</em>, using investigative journalism to combat institutional racism and unite the Black community.<br><br><span class=\"para-ref\">[5.3]</span> In January 1959, Jones organized an indoor Caribbean Carnival in St Pancras Town Hall to showcase Caribbean music, steel pans, and dance, famously declaring: 'A people's art is the genesis of their freedom.' This celebration grew into the outdoor **Notting Hill Carnival**, transforming a site of racist violence into the largest celebration of Afro-Caribbean culture in Europe.",
           image: '/images/post_war_britain/claudia_jones_portrait.jpg',
           image_alt: 'Claudia Jones portrait',
           caption:
@@ -2083,6 +2233,56 @@ const post_war_britain_data = {
           },
         ],
       },
+      vocab: [
+        {
+          term: 'Boycott',
+          definition:
+            'A coordinated campaign withdrawing commercial or social relations from an organization as an act of non-violent protest.',
+          syllables: 'boy-cott',
+          phonetic: 'ˈbɔɪkɒt',
+          tier: '2',
+        },
+        {
+          term: 'Direct Action',
+          definition:
+            'The use of public strikes, demonstrations, or boycotts to achieve political goals rather than relying solely on parliamentary lobbying.',
+          syllables: 'di-rect ac-tion',
+          phonetic: 'dɪˈrɛkt ˈækʃən',
+          tier: '2',
+        },
+        {
+          term: 'Race Relations Act',
+          definition:
+            'The landmark 1965 British statute outlawing racial discrimination in public places and establishing the Race Relations Board.',
+          syllables: 'race re-la-tions act',
+          phonetic: 'reɪs rɪˈleɪʃənz ækt',
+          tier: '3',
+        },
+        {
+          term: 'Discrimination',
+          definition:
+            'The unjust or prejudicial treatment of different categories of people, especially on the grounds of race, age, or sex.',
+          syllables: 'dis-crim-i-na-tion',
+          phonetic: 'dɪˌskrɪmɪˈneɪʃən',
+          tier: '2',
+        },
+        {
+          term: 'Segregation',
+          definition:
+            'The enforced physical and institutional separation of racial or ethnic groups in daily life and public facilities.',
+          syllables: 'seg-re-ga-tion',
+          phonetic: 'ˌsɛɡrɪˈɡeɪʃən',
+          tier: '3',
+        },
+        {
+          term: 'Prejudice',
+          definition:
+            'A preconceived opinion or hostile attitude towards an individual or group not based on reason or actual experience.',
+          syllables: 'prej-u-dice',
+          phonetic: 'ˈprɛdʒʊdɪs',
+          tier: '2',
+        },
+      ],
       narrative_blocks: [
         {
           act: 1,
@@ -2090,7 +2290,7 @@ const post_war_britain_data = {
             "The Bristol 'Colour Bar': The Omnibus Company & Trade Union Discrimination (1950s–1963)",
           theme_heading:
             "The Bristol 'Colour Bar': The Omnibus Company & Trade Union Discrimination (1950s–1963)",
-          text: '<span class="para-ref">[1.1]</span> By the early 1960s, Bristol had become home to a vibrant West Indian community of over 3,000 people, mostly living in the St Pauls district. However, like many British cities, Bristol was rigidly divided by racial discrimination. The largest employer in city transport—the state-owned <strong>Bristol Omnibus Company</strong>—enforced a strict, total \'colour bar\', refusing to employ a single Black or Asian bus driver or conductor.<br><br><span class="para-ref">[1.2]</span> Shamefully, this segregation was enforced with the active agreement of the local branch of the <strong>Transport and General Workers\' Union (TGWU)</strong>. In 1955, white union shop stewards had passed a secret resolution stating that if a single non-white driver was hired, the entire white bus fleet would walk out on strike.<br><br><span class="para-ref">[1.3]</span> As documented in <strong>Source D</strong>, company general manager Ian Patey brazenly defended the policy in public, claiming that hiring Black staff would cause racial friction, disgust white passengers, and cause white workers to quit. Because British law did not yet prohibit racial discrimination, the company acted with complete legal impunity.',
+          text: '<span class="para-ref">[1.1]</span> By the early 1960s, Bristol had become home to a vibrant West Indian community of over 3,000 people, mostly living in the St Pauls district. However, like many British cities, Bristol was rigidly divided by racial discrimination. The largest employer in city transport—the state-owned **Bristol Omnibus Company**—enforced a strict, total \'colour bar\', refusing to employ a single Black or Asian bus driver or conductor.<br><br><span class="para-ref">[1.2]</span> Shamefully, this segregation was enforced with the active agreement of the local branch of the **Transport and General Workers\' Union (TGWU)**. In 1955, white union shop stewards had passed a secret resolution stating that if a single non-white driver was hired, the entire white bus fleet would walk out on strike.<br><br><span class="para-ref">[1.3]</span> As documented in **Source D**, company general manager Ian Patey brazenly defended the policy in public, claiming that hiring Black staff would cause racial friction, disgust white passengers, and cause white workers to quit. Because British law did not yet prohibit racial discrimination, the company acted with complete legal impunity.',
           isReversed: false,
           sources: [
             {
@@ -2150,7 +2350,7 @@ const post_war_britain_data = {
           title: 'The Rejection of Guy Bailey & The West Indian Development Council (April 1963)',
           theme_heading:
             'The Rejection of Guy Bailey & The West Indian Development Council (April 1963)',
-          text: "<span class=\"para-ref\">[2.1]</span> In early 1963, youth worker <strong>Paul Stephenson</strong>, along with Caribbean community leaders Roy Hackett, Owen Henry, and Audley Evans, formed the <strong>West Indian Development Council (WIDC)</strong> to challenge systemic discrimination in Bristol.<br><br><span class=\"para-ref\">[2.2]</span> Stephenson decided to expose the company's color bar through a carefully planned 'sting'. He arranged a job interview for <strong>Guy Bailey</strong>, an eighteen-year-old Jamaican warehouseman and Boys' Brigade leader who had immaculate qualifications for a bus conductor post.<br><br><span class=\"para-ref\">[2.3]</span> When Bailey arrived at the bus company offices on 27 April 1963, the receptionist phoned the manager. Upon learning that Bailey was Black, the manager instructed the receptionist to tell Bailey: 'We don't take Black people.' Stephenson immediately notified the local press, creating an undeniable smoking gun of blatant institutional racism.",
+          text: "<span class=\"para-ref\">[2.1]</span> In early 1963, youth worker **Paul Stephenson**, along with Caribbean community leaders Roy Hackett, Owen Henry, and Audley Evans, formed the **West Indian Development Council (WIDC)** to challenge systemic discrimination in Bristol.<br><br><span class=\"para-ref\">[2.2]</span> Stephenson decided to expose the company's color bar through a carefully planned 'sting'. He arranged a job interview for **Guy Bailey**, an eighteen-year-old Jamaican warehouseman and Boys' Brigade leader who had immaculate qualifications for a bus conductor post.<br><br><span class=\"para-ref\">[2.3]</span> When Bailey arrived at the bus company offices on 27 April 1963, the receptionist phoned the manager. Upon learning that Bailey was Black, the manager instructed the receptionist to tell Bailey: 'We don't take Black people.' Stephenson immediately notified the local press, creating an undeniable smoking gun of blatant institutional racism.",
           isReversed: true,
           sources: [
             {
@@ -2218,7 +2418,7 @@ const post_war_britain_data = {
           title: 'Students, Churches & Community Solidarity: The Citywide Boycott (May 1963)',
           theme_heading:
             'Students, Churches & Community Solidarity: The Citywide Boycott (May 1963)',
-          text: '<span class="para-ref">[3.1]</span> Drawing direct inspiration from Dr. Martin Luther King Jr. and the 1955 Montgomery Bus Boycott in Alabama, Paul Stephenson called a press conference on 30 April 1963, announcing a total, citywide <strong>boycott of Bristol Omnibus Company buses</strong>. The WIDC urged Bristol\'s 3,000 West Indians and all sympathetic white residents to refuse to ride the buses until the color bar was revoked.<br><br><span class="para-ref">[3.2]</span> The boycott generated immediate cross-community solidarity. On 1 May 1963, hundreds of white students and lecturers from the <strong>University of Bristol</strong> staged a mass demonstration (<strong>Source A</strong>), marching through city streets and picketing the bus station carrying placards declaring \'End The Color Bar\' and \'Freedom to Work\'.<br><br><span class="para-ref">[3.3]</span> Local churches, trade unionists, and Bristol citizens walked miles to work in solidarity, refusing to board half-empty buses. The boycott paralyzed city public relations and transformed a local employment dispute into a national civil rights scandal.',
+          text: '<span class="para-ref">[3.1]</span> Drawing direct inspiration from Dr. Martin Luther King Jr. and the 1955 Montgomery Bus Boycott in Alabama, Paul Stephenson called a press conference on 30 April 1963, announcing a total, citywide **boycott of Bristol Omnibus Company buses**. The WIDC urged Bristol\'s 3,000 West Indians and all sympathetic white residents to refuse to ride the buses until the color bar was revoked.<br><br><span class="para-ref">[3.2]</span> The boycott generated immediate cross-community solidarity. On 1 May 1963, hundreds of white students and lecturers from the **University of Bristol** staged a mass demonstration (**Source A**), marching through city streets and picketing the bus station carrying placards declaring \'End The Color Bar\' and \'Freedom to Work\'.<br><br><span class="para-ref">[3.3]</span> Local churches, trade unionists, and Bristol citizens walked miles to work in solidarity, refusing to board half-empty buses. The boycott paralyzed city public relations and transformed a local employment dispute into a national civil rights scandal.',
           image: '/images/post_war_britain/bristol_bus_boycott_plaque.jpg',
           image_alt: 'Bristol Bus Boycott commemorative blue plaque',
           caption:
@@ -2283,7 +2483,7 @@ const post_war_britain_data = {
             "High-Level Political Intervention: Tony Benn & The Company's Surrender (August 1963)",
           theme_heading:
             "High-Level Political Intervention: Tony Benn & The Company's Surrender (August 1963)",
-          text: '<span class="para-ref">[4.1]</span> As the boycott entered its fourth month, high-level political pressure isolated the bus company. <strong>Tony Benn</strong>, the influential Member of Parliament for Bristol South East (<strong>Source B</strong>), gave his passionate support to the campaign, declaring that he would walk to his parliamentary meetings rather than ride a segregated bus.<br><br><span class="para-ref">[4.2]</span> Benn brought the dispute directly to the national leadership of the Labour Party. Opposition leader Harold Wilson declared that racial discrimination in employment was intolerable in modern Britain, while the High Commissioner of Trinidad and Tobago condemned the company at an international summit.<br><br><span class="para-ref">[4.3]</span> Faced with crashing revenues and national condemnation, the transport union held a mass meeting on 27 August 1963, voting to end the color bar. The following day, on <strong>28 August 1963</strong>—the very same day Martin Luther King delivered his \'I Have a Dream\' speech in Washington—the Bristol Omnibus Company officially announced that Black drivers would be employed, marking an historic civil rights triumph.',
+          text: '<span class="para-ref">[4.1]</span> As the boycott entered its fourth month, high-level political pressure isolated the bus company. **Tony Benn**, the influential Member of Parliament for Bristol South East (**Source B**), gave his passionate support to the campaign, declaring that he would walk to his parliamentary meetings rather than ride a segregated bus.<br><br><span class="para-ref">[4.2]</span> Benn brought the dispute directly to the national leadership of the Labour Party. Opposition leader Harold Wilson declared that racial discrimination in employment was intolerable in modern Britain, while the High Commissioner of Trinidad and Tobago condemned the company at an international summit.<br><br><span class="para-ref">[4.3]</span> Faced with crashing revenues and national condemnation, the transport union held a mass meeting on 27 August 1963, voting to end the color bar. The following day, on **28 August 1963**—the very same day Martin Luther King delivered his \'I Have a Dream\' speech in Washington—the Bristol Omnibus Company officially announced that Black drivers would be employed, marking an historic civil rights triumph.',
           isReversed: true,
           sources: [
             {
@@ -2343,7 +2543,7 @@ const post_war_britain_data = {
           title: 'Harold Wilson, The Race Relations Acts & British Civil Rights Legacy (1965–1968)',
           theme_heading:
             'Harold Wilson, The Race Relations Acts & British Civil Rights Legacy (1965–1968)',
-          text: '<span class="para-ref">[5.1]</span> On 17 September 1963, Raghbir Singh became Bristol’s first Asian bus conductor, followed shortly by Black drivers Norman Samuels and Audley Evans. However, civil rights campaigners recognized that winning a single local boycott did not protect minority workers across the rest of the country.<br><br><span class="para-ref">[5.2]</span> When Labour was elected in 1964, Prime Minister <strong>Harold Wilson</strong> (<strong>Source C</strong>) fulfilled his promise to Paul Stephenson and the Bristol campaigners. In 1965, Parliament passed Britain’s first <strong>Race Relations Act 1965</strong> (<strong>Source E</strong>), making racial discrimination in \'places of public resort\' (such as hotels, restaurants, and public transport) a civil offence and creating the Race Relations Board.<br><br><span class="para-ref">[5.3]</span> In 1968, the law was strengthened by the <strong>Race Relations Act 1968</strong>, which finally banned racial discrimination in employment and private housing. Today, a commemorative blue plaque in Bristol (<strong>Source D</strong>) honors the heroes of the Bristol Bus Boycott, whose grassroots courage forged modern British anti-discrimination legislation.',
+          text: '<span class="para-ref">[5.1]</span> On 17 September 1963, Raghbir Singh became Bristol’s first Asian bus conductor, followed shortly by Black drivers Norman Samuels and Audley Evans. However, civil rights campaigners recognized that winning a single local boycott did not protect minority workers across the rest of the country.<br><br><span class="para-ref">[5.2]</span> When Labour was elected in 1964, Prime Minister **Harold Wilson** (**Source C**) fulfilled his promise to Paul Stephenson and the Bristol campaigners. In 1965, Parliament passed Britain’s first **Race Relations Act 1965** (**Source E**), making racial discrimination in \'places of public resort\' (such as hotels, restaurants, and public transport) a civil offence and creating the Race Relations Board.<br><br><span class="para-ref">[5.3]</span> In 1968, the law was strengthened by the **Race Relations Act 1968**, which finally banned racial discrimination in employment and private housing. Today, a commemorative blue plaque in Bristol (**Source D**) honors the heroes of the Bristol Bus Boycott, whose grassroots courage forged modern British anti-discrimination legislation.',
           image: '/images/bristol_bus_boycott_mural.jpg',
           image_alt: 'Commemorative mural of the 1963 Bristol Bus Boycott in St Pauls, Bristol',
           caption:
@@ -2764,13 +2964,63 @@ const post_war_britain_data = {
           },
         ],
       },
+      vocab: [
+        {
+          term: 'Paranoia',
+          definition:
+            'Intense, irrational fear and suspicion of outside threats, conspiracy, or unseen surveillance.',
+          syllables: 'par-a-noi-a',
+          phonetic: 'ˌpærəˈnɔɪə',
+          tier: '2',
+        },
+        {
+          term: 'Civil Defence',
+          definition:
+            'State-organized non-military protective measures designed to safeguard civilian populations and infrastructure during wartime attack.',
+          syllables: 'civ-il de-fence',
+          phonetic: 'ˈsɪvəl dɪˈfɛns',
+          tier: '3',
+        },
+        {
+          term: 'Fallout Shelter',
+          definition:
+            'An enclosed, radiation-shielded underground bunker constructed to protect occupants from radioactive nuclear debris.',
+          syllables: 'fall-out shel-ter',
+          phonetic: 'ˈfɔːlaʊt ˈʃɛltər',
+          tier: '3',
+        },
+        {
+          term: 'Disarmament',
+          definition:
+            'The reduction, limitation, or total abolition of military armed forces, conventional weapons, or nuclear arsenals.',
+          syllables: 'dis-ar-ma-ment',
+          phonetic: 'dɪsˈɑːməmənt',
+          tier: '2',
+        },
+        {
+          term: 'Subversion',
+          definition:
+            'Clandestine attempts to undermine the authority, established constitution, or political integrity of a state.',
+          syllables: 'sub-ver-sion',
+          phonetic: 'səbˈvɜːʃən',
+          tier: '2',
+        },
+        {
+          term: 'Espionage',
+          definition:
+            'The secret practice of intelligence gathering and state surveillance to obtain political and nuclear technology secrets.',
+          syllables: 'es-pi-o-nage',
+          phonetic: 'ˈɛspɪənɑːʒ',
+          tier: '3',
+        },
+      ],
       narrative_blocks: [
         {
           act: 1,
           title: 'Under the Mushroom Cloud: British Deterrence & The Hydrogen Bomb (1952–1957)',
           theme_heading:
             'Under the Mushroom Cloud: British Deterrence & The Hydrogen Bomb (1952–1957)',
-          text: '<span class="para-ref">[1.1]</span> Following the devastation of Hiroshima and Nagasaki in August 1945, Great Britain was determined to remain a top-tier global superpower alongside the United States and the Soviet Union. In 1947, Prime Minister Clement Attlee secretly authorized the construction of an independent British atomic bomb, culminating in the successful \'Operation Hurricane\' nuclear test off the coast of Australia in October 1952.<br><br><span class="para-ref">[1.2]</span> However, the nature of the nuclear threat changed catastrophically in the mid-1950s with the development of the <strong>thermonuclear Hydrogen Bomb (H-bomb)</strong>. Unlike early fission bombs, a single hydrogen bomb possessed the explosive power of millions of tons of TNT (megatons)—enough to instantly incinerate central London and blanket entire counties in lethal radioactive fallout.<br><br><span class="para-ref">[1.3]</span> Britain’s geographic vulnerability was terrifying: a small, densely populated island hosting major American bomber bases, Britain was designated by Soviet military planners as target number one. Government calculations estimated that a Soviet surprise attack with just twelve H-bombs would kill over fifteen million Britons in the first hour and reduce national society to medieval barbarism.',
+          text: '<span class="para-ref">[1.1]</span> Following the devastation of Hiroshima and Nagasaki in August 1945, Great Britain was determined to remain a top-tier global superpower alongside the United States and the Soviet Union. In 1947, Prime Minister Clement Attlee secretly authorized the construction of an independent British atomic bomb, culminating in the successful \'Operation Hurricane\' nuclear test off the coast of Australia in October 1952.<br><br><span class="para-ref">[1.2]</span> However, the nature of the nuclear threat changed catastrophically in the mid-1950s with the development of the **thermonuclear Hydrogen Bomb (H-bomb)**. Unlike early fission bombs, a single hydrogen bomb possessed the explosive power of millions of tons of TNT (megatons)—enough to instantly incinerate central London and blanket entire counties in lethal radioactive fallout.<br><br><span class="para-ref">[1.3]</span> Britain’s geographic vulnerability was terrifying: a small, densely populated island hosting major American bomber bases, Britain was designated by Soviet military planners as target number one. Government calculations estimated that a Soviet surprise attack with just twelve H-bombs would kill over fifteen million Britons in the first hour and reduce national society to medieval barbarism.',
           isReversed: false,
           sources: [
             {
@@ -2838,7 +3088,7 @@ const post_war_britain_data = {
           title: 'The Peace Movement: Gerald Holtom, CND & The Aldermaston Marches (1958–1960)',
           theme_heading:
             'The Peace Movement: Gerald Holtom, CND & The Aldermaston Marches (1958–1960)',
-          text: '<span class="para-ref">[2.1]</span> Horrified by the terrifying prospect of nuclear annihilation, prominent British intellectuals, scientists, and church leaders—including philosopher Bertrand Russell, canon John Collins, and author J. B. Priestley—founded the <strong>Campaign for Nuclear Disarmament (CND)</strong> in London in February 1958. CND demanded that Britain unilaterally abandon its nuclear arsenal and expel all US nuclear weapons from British soil.<br><br><span class="para-ref">[2.2]</span> To represent the movement, commercial artist and conscientious objector <strong>Gerald Holtom</strong> designed an iconic logo in 1958 (<strong>Source A</strong>). Combining the naval semaphore flag signals for the letters <strong>N</strong> (Nuclear) and <strong>D</strong> (Disarmament) within a circular earth, Holtom created what became the universal international peace symbol.<br><br><span class="para-ref">[2.3]</span> Over Easter weekend in 1958, CND organized the first <strong>Aldermaston March</strong>—a 52-mile protest march from Trafalgar Square in London to the Atomic Weapons Research Establishment at Aldermaston in Berkshire. Tens of thousands of students, families, folk musicians, and religious pacifists walked for four days, creating Britain’s first modern mass protest movement and capturing the moral imagination of the youth generation.',
+          text: '<span class="para-ref">[2.1]</span> Horrified by the terrifying prospect of nuclear annihilation, prominent British intellectuals, scientists, and church leaders—including philosopher Bertrand Russell, canon John Collins, and author J. B. Priestley—founded the **Campaign for Nuclear Disarmament (CND)** in London in February 1958. CND demanded that Britain unilaterally abandon its nuclear arsenal and expel all US nuclear weapons from British soil.<br><br><span class="para-ref">[2.2]</span> To represent the movement, commercial artist and conscientious objector **Gerald Holtom** designed an iconic logo in 1958 (**Source A**). Combining the naval semaphore flag signals for the letters **N** (Nuclear) and **D** (Disarmament) within a circular earth, Holtom created what became the universal international peace symbol.<br><br><span class="para-ref">[2.3]</span> Over Easter weekend in 1958, CND organized the first **Aldermaston March**—a 52-mile protest march from Trafalgar Square in London to the Atomic Weapons Research Establishment at Aldermaston in Berkshire. Tens of thousands of students, families, folk musicians, and religious pacifists walked for four days, creating Britain’s first modern mass protest movement and capturing the moral imagination of the youth generation.',
           image: '/images/post_war_britain/aldermaston_cnd_demo.jpg',
           image_alt: 'Aldermaston CND march with banners (1958)',
           caption:
@@ -2903,7 +3153,7 @@ const post_war_britain_data = {
             'Secret Bunkers & Subterranean Watch: The Royal Observer Corps at York (1961–1970)',
           theme_heading:
             'Secret Bunkers & Subterranean Watch: The Royal Observer Corps at York (1961–1970)',
-          text: '<span class="para-ref">[3.1]</span> While ordinary citizens were given no physical shelter, the British state invested vast secret budgets in constructing an underground nuclear command infrastructure designed to preserve governance for the political and military elite. In the event of war, the Prime Minister and War Cabinet would retreat to \'Burlington\'—a colossal subterranean fortress carved into a Wiltshire limestone quarry, complete with 60 miles of roads, television studios, and rations for 4,000 elite personnel.<br><br><span class="para-ref">[3.2]</span> Across the provinces, the Home Office constructed twenty-nine semi-subterranean regional headquarters for the <strong>Royal Observer Corps (ROC)</strong>, including the fortified <strong>York Cold War Bunker</strong> built in 1961 (<strong>Source C</strong>). Encased behind two-foot-thick blast-proof reinforced concrete walls and decontamination airlocks, the bunker was designed to withstand a nearby nuclear explosion.<br><br><span class="para-ref">[3.3]</span> From inside the bunker, sixty volunteer ROC officers and regional government commissioners would monitor fallout levels and radioactive cloud trajectories using Geiger counters, blast gauges, and triangulation map boards. In the event of a strike, these officers had the grim duty of pressing the buzzer that triggered the infamous <strong>Four-Minute Warning</strong> siren across Yorkshire.',
+          text: '<span class="para-ref">[3.1]</span> While ordinary citizens were given no physical shelter, the British state invested vast secret budgets in constructing an underground nuclear command infrastructure designed to preserve governance for the political and military elite. In the event of war, the Prime Minister and War Cabinet would retreat to \'Burlington\'—a colossal subterranean fortress carved into a Wiltshire limestone quarry, complete with 60 miles of roads, television studios, and rations for 4,000 elite personnel.<br><br><span class="para-ref">[3.2]</span> Across the provinces, the Home Office constructed twenty-nine semi-subterranean regional headquarters for the **Royal Observer Corps (ROC)**, including the fortified **York Cold War Bunker** built in 1961 (**Source C**). Encased behind two-foot-thick blast-proof reinforced concrete walls and decontamination airlocks, the bunker was designed to withstand a nearby nuclear explosion.<br><br><span class="para-ref">[3.3]</span> From inside the bunker, sixty volunteer ROC officers and regional government commissioners would monitor fallout levels and radioactive cloud trajectories using Geiger counters, blast gauges, and triangulation map boards. In the event of a strike, these officers had the grim duty of pressing the buzzer that triggered the infamous **Four-Minute Warning** siren across Yorkshire.',
           isReversed: false,
           sources: [
             {
@@ -2963,7 +3213,7 @@ const post_war_britain_data = {
           title: "'Protect and Survive': The Home Office Whitewash & The Inner Core Shelter (1980)",
           theme_heading:
             "'Protect and Survive': The Home Office Whitewash & The Inner Core Shelter (1980)",
-          text: '<span class="para-ref">[4.1]</span> In the late 1970s and early 1980s, escalating Cold War tensions following the Soviet invasion of Afghanistan and the deployment of American Cruise missiles to Britain brought nuclear terror back to the center of British domestic life. In May 1980, the Thatcher government published a notorious 32-page public information booklet titled <strong>Protect and Survive</strong> (<strong>Source B</strong>).<br><br><span class="para-ref">[4.2]</span> The booklet offered grotesque, scientifically absurd advice on how ordinary families could survive a multi-megaton nuclear strike inside their suburban homes. Instructions directed citizens to unhinge internal wooden doors, lean them against a ground-floor wall at an angle, and pile them with heavy mattresses, sandbags, and luggage to build a makeshift <strong>\'Inner Core Shelter\'</strong> (<strong>Source D</strong>).<br><br><span class="para-ref">[4.3]</span> Families were advised to paint windowpanes with white emulsion paint to reflect nuclear flash thermal radiation, wrap dead family members in polythene bags, and remain confined in their cramped door-shelters for fourteen days. Rather than reassuring the nation, <em>Protect and Survive</em> sparked widespread public ridicule and horror, exposing the total bankruptcy of official civil defense policy.',
+          text: '<span class="para-ref">[4.1]</span> In the late 1970s and early 1980s, escalating Cold War tensions following the Soviet invasion of Afghanistan and the deployment of American Cruise missiles to Britain brought nuclear terror back to the center of British domestic life. In May 1980, the Thatcher government published a notorious 32-page public information booklet titled **Protect and Survive** (**Source B**).<br><br><span class="para-ref">[4.2]</span> The booklet offered grotesque, scientifically absurd advice on how ordinary families could survive a multi-megaton nuclear strike inside their suburban homes. Instructions directed citizens to unhinge internal wooden doors, lean them against a ground-floor wall at an angle, and pile them with heavy mattresses, sandbags, and luggage to build a makeshift **\'Inner Core Shelter\'** (**Source D**).<br><br><span class="para-ref">[4.3]</span> Families were advised to paint windowpanes with white emulsion paint to reflect nuclear flash thermal radiation, wrap dead family members in polythene bags, and remain confined in their cramped door-shelters for fourteen days. Rather than reassuring the nation, <em>Protect and Survive</em> sparked widespread public ridicule and horror, exposing the total bankruptcy of official civil defense policy.',
           isReversed: true,
           sources: [
             {
@@ -3024,7 +3274,7 @@ const post_war_britain_data = {
             "'Protest and Survive': E. P. Thompson, Nuclear Satire & Greenham Common (1980–1983)",
           theme_heading:
             "'Protest and Survive': E. P. Thompson, Nuclear Satire & Greenham Common (1980–1983)",
-          text: '<span class="para-ref">[5.1]</span> Official civil defense propaganda provoked an immediate, furious counter-reaction from British writers, artists, and peace activists. Celebrated historian <strong>E. P. Thompson</strong> published a scathing polemic titled <strong>Protest and Survive</strong> (<strong>Source E</strong>), selling hundreds of thousands of copies. Thompson tore apart the government’s claims, demonstrating that leaning wooden doors against a wall was useless against 3,000°C firestorms and lethal radiation, arguing that civil defense was a political deception designed to condition the public into accepting the inevitability of nuclear war.<br><br><span class="para-ref">[5.2]</span> The anti-nuclear movement experienced an explosive revival. In September 1981, a group of Welsh women walked 120 miles from Cardiff to RAF Greenham Common in Berkshire to protest the stationing of ninety-six US nuclear cruise missiles, founding the famous <strong>Greenham Common Women’s Peace Camp</strong>. In December 1982, over 30,000 women held hands to completely encircle the 9-mile perimeter fence of the military base in non-violent defiance.<br><br><span class="para-ref">[5.3]</span> Nuclear anxiety permeated British popular culture: from Peter Watkins’s terrifying, once-banned BBC film <em>The War Game</em> to Raymond Briggs’s poignant 1982 graphic novel <em>When the Wind Blows</em> and the 1984 BBC television drama <em>Threads</em>. By stripping away official illusions of survivability, popular culture and citizen protest forced the British state to confront the apocalyptic reality of thermonuclear war.',
+          text: '<span class="para-ref">[5.1]</span> Official civil defense propaganda provoked an immediate, furious counter-reaction from British writers, artists, and peace activists. Celebrated historian **E. P. Thompson** published a scathing polemic titled **Protest and Survive** (**Source E**), selling hundreds of thousands of copies. Thompson tore apart the government’s claims, demonstrating that leaning wooden doors against a wall was useless against 3,000°C firestorms and lethal radiation, arguing that civil defense was a political deception designed to condition the public into accepting the inevitability of nuclear war.<br><br><span class="para-ref">[5.2]</span> The anti-nuclear movement experienced an explosive revival. In September 1981, a group of Welsh women walked 120 miles from Cardiff to RAF Greenham Common in Berkshire to protest the stationing of ninety-six US nuclear cruise missiles, founding the famous **Greenham Common Women’s Peace Camp**. In December 1982, over 30,000 women held hands to completely encircle the 9-mile perimeter fence of the military base in non-violent defiance.<br><br><span class="para-ref">[5.3]</span> Nuclear anxiety permeated British popular culture: from Peter Watkins’s terrifying, once-banned BBC film <em>The War Game</em> to Raymond Briggs’s poignant 1982 graphic novel <em>When the Wind Blows</em> and the 1984 BBC television drama <em>Threads</em>. By stripping away official illusions of survivability, popular culture and citizen protest forced the British state to confront the apocalyptic reality of thermonuclear war.',
           image: '/images/post_war_britain/greenham_common_embracing_base_1982.jpg',
           image_alt:
             '30,000 women encircling Greenham Common RAF base perimeter fence (December 1982)',

@@ -315,33 +315,48 @@ const the_shoah_data = {
           term: 'Shtetl',
           definition:
             'A small Jewish town or village community in Central and Eastern Europe, characterised by Yiddish language, religious tradition, and close-knit family life.',
+          syllables: 'Shtetl',
+          phonetic: 'shtetl',
+          tier: '3',
         },
         {
           term: 'Yiddish',
           definition:
             'A historical language spoken by Ashkenazi Jews in Central and Eastern Europe, combining elements of German, Hebrew, and Slavic languages.',
+          syllables: 'Yi-ddish',
+          phonetic: 'yiddish',
+          tier: '3',
         },
         {
           term: 'Assimilation',
           definition:
             'The process whereby a minority group integrates into the wider society, adopting the dominant culture, language, and civic habits while retaining personal heritage.',
+          syllables: 'A-ssi-mila-tion',
+          phonetic: 'assimilation',
+          tier: '2',
         },
         {
           term: 'Sephardic Jews',
           definition:
             'Jewish communities with ancestral origins in the Iberian Peninsula (Spain and Portugal), who settled across the Mediterranean and spoke Ladino.',
+          syllables: 'Se-phardic Jews',
+          phonetic: 'sephardic jews',
+          tier: '2',
         },
         {
           term: 'Racial Antisemitism',
           definition:
             'A 19th-century pseudo-scientific doctrine asserting that Jewish identity was a fixed biological race rather than a religious or cultural choice.',
+          syllables: 'Ra-cial an-ti-sem-i-tism',
+          phonetic: 'racial ˌæntiˈsɛmɪtɪzəm',
+          tier: '3',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The European Mosaic: 9.5 Million Lives (c. 1930s)',
-          text: '<span class="para-ref">[1.1]</span> In the early 1930s, approximately <strong>9.5 million Jewish people</strong> lived in Europe, representing just under two percent of the continent’s total population. They did not live in a single country, nor did they share an identical way of life. Over sixty percent of European Jews lived in Central and Eastern Europe—predominantly within the borders of Poland, Romania, Lithuania, Hungary, and the western territories of the Soviet Union. In contrast, smaller communities lived in Western Europe: roughly 500,000 in Germany, 300,000 in Britain, and 250,000 in France. Depending on where they were born, a Jewish child in 1933 might grow up speaking Yiddish in a bustling Polish city, speaking German in an intellectual Berlin household, or speaking Ladino along the sunlit Mediterranean docks of Thessaloniki.',
+          text: '<span class="para-ref">[1.1]</span> In the early 1930s, approximately **9.5 million Jewish people** lived in Europe, representing just under two percent of the continent’s total population. They did not live in a single country, nor did they share an identical way of life. Over sixty percent of European Jews lived in Central and Eastern Europe—predominantly within the borders of Poland, Romania, Lithuania, Hungary, and the western territories of the Soviet Union. In contrast, smaller communities lived in Western Europe: roughly 500,000 in Germany, 300,000 in Britain, and 250,000 in France. Depending on where they were born, a Jewish child in 1933 might grow up speaking Yiddish in a bustling Polish city, speaking German in an intellectual Berlin household, or speaking Ladino along the sunlit Mediterranean docks of Thessaloniki.',
           source: {
             letter: 'A',
             type: 'visual',
@@ -385,7 +400,7 @@ const the_shoah_data = {
         {
           act: 2,
           title: 'Yiddishland: The Cultural Heartland of Eastern Europe',
-          text: '<span class="para-ref">[1.2]</span> Across the towns and countryside of Eastern Europe lay a distinct cultural world historians refer to as <em>Yiddishland</em>. In rural <strong>shtetls</strong> (small market towns) and expanding industrial centres like Warsaw, Łódź, and Kraków, millions of Jews spoke <strong>Yiddish</strong>—a language written in Hebrew characters combining medieval High German with Hebrew and Slavic vocabulary. In cities like <strong>Vilna</strong> (the capital of Lithuania), known affectionately as the <em>"Jerusalem of the North"</em>, Jewish life hummed with intellectual energy: world-renowned Talmudic academies existed alongside modern socialist political parties (such as the General Jewish Labour Bund), Zionist pioneering movements, Yiddish daily newspapers, and avant-garde art collectives. Jewish life in Eastern Europe was vibrant, fiercely debated, and deeply rooted.',
+          text: '<span class="para-ref">[1.2]</span> Across the towns and countryside of Eastern Europe lay a distinct cultural world historians refer to as <em>Yiddishland</em>. In rural **shtetls** (small market towns) and expanding industrial centres like Warsaw, Łódź, and Kraków, millions of Jews spoke **Yiddish**—a language written in Hebrew characters combining medieval High German with Hebrew and Slavic vocabulary. In cities like **Vilna** (the capital of Lithuania), known affectionately as the <em>"Jerusalem of the North"</em>, Jewish life hummed with intellectual energy: world-renowned Talmudic academies existed alongside modern socialist political parties (such as the General Jewish Labour Bund), Zionist pioneering movements, Yiddish daily newspapers, and avant-garde art collectives. Jewish life in Eastern Europe was vibrant, fiercely debated, and deeply rooted.',
           source: {
             letter: 'B',
             type: 'visual',
@@ -433,7 +448,7 @@ const the_shoah_data = {
         {
           act: 3,
           title: 'Integration, Patriotism, and Civic Life in Central Europe',
-          text: '<span class="para-ref">[1.3]</span> The experience of Jewish communities in Western and Central Europe was markedly different. In the German Empire and the Weimar Republic, Jews had achieved full legal emancipation by 1871. Most German Jews were thoroughly <strong>assimilated</strong>: they spoke German as their mother tongue, attended state universities, celebrated German literature and music, and intermarried across faiths. During the First World War (1914–1918), over <strong>100,000 German Jews served in the German imperial armed forces</strong>; approximately 12,000 gave their lives for the Fatherland, and 18,000 were awarded the Iron Cross for battlefield bravery. German Jews saw themselves not as foreigners, but as loyal, patriotic Germans who made monumental contributions to science (such as Albert Einstein), medicine, philosophy, industry, and the arts.',
+          text: '<span class="para-ref">[1.3]</span> The experience of Jewish communities in Western and Central Europe was markedly different. In the German Empire and the Weimar Republic, Jews had achieved full legal emancipation by 1871. Most German Jews were thoroughly **assimilated**: they spoke German as their mother tongue, attended state universities, celebrated German literature and music, and intermarried across faiths. During the First World War (1914–1918), over **100,000 German Jews served in the German imperial armed forces**; approximately 12,000 gave their lives for the Fatherland, and 18,000 were awarded the Iron Cross for battlefield bravery. German Jews saw themselves not as foreigners, but as loyal, patriotic Germans who made monumental contributions to science (such as Albert Einstein), medicine, philosophy, industry, and the arts.',
           source: {
             letter: 'C',
             type: 'visual',
@@ -477,7 +492,7 @@ const the_shoah_data = {
         {
           act: 4,
           title: 'The Sephardic World: Heritage of Southern Europe',
-          text: '<span class="para-ref">[1.4]</span> Further south, across Greece, the Balkans, and Turkey, lived Europe’s <strong>Sephardic Jewish communities</strong>, whose ancestors had been expelled from Spain and Portugal in the late fifteenth century. For centuries, the port city of <strong>Thessaloniki</strong> (Salonica) in northern Greece was known as the <em>"Mother of Israel"</em>, where over half the total population was Jewish. Sephardic Jews spoke <em>Ladino</em> (Judeo-Spanish), worked as dockers, merchants, customs officials, and academics, and observed the Sabbath so universally that the entire commercial port closed on Saturdays. Their heritage enriched the Mediterranean with centuries of distinctive music, philosophy, and culinary traditions that lived peacefully alongside Christian and Ottoman neighbours.',
+          text: '<span class="para-ref">[1.4]</span> Further south, across Greece, the Balkans, and Turkey, lived Europe’s **Sephardic Jewish communities**, whose ancestors had been expelled from Spain and Portugal in the late fifteenth century. For centuries, the port city of **Thessaloniki** (Salonica) in northern Greece was known as the <em>"Mother of Israel"</em>, where over half the total population was Jewish. Sephardic Jews spoke <em>Ladino</em> (Judeo-Spanish), worked as dockers, merchants, customs officials, and academics, and observed the Sabbath so universally that the entire commercial port closed on Saturdays. Their heritage enriched the Mediterranean with centuries of distinctive music, philosophy, and culinary traditions that lived peacefully alongside Christian and Ottoman neighbours.',
           source: {
             letter: 'D',
             type: 'visual',
@@ -520,7 +535,7 @@ const the_shoah_data = {
         {
           act: 5,
           title: 'The Dark Shift: From Religious Anti-Judaism to Racial Antisemitism',
-          text: '<span class="para-ref">[1.5]</span> While European Jews built rich lives, they had long contended with prejudice. For centuries, Christian Europe had harboured <strong>religious anti-Judaism</strong>—blaming Jews for the crucifixion of Jesus, barring them from owning land or joining craft guilds, and subjecting them to periodic violent expulsions and pogroms. However, in the late nineteenth century, a fatal ideological mutation occurred. Influenced by pseudo-scientific misinterpretations of Darwinian biology, European theorists (such as Wilhelm Marr, who coined the term <em>antisemitism</em> in 1879) argued that Jews were not a religious community, but a distinct biological "race". Under traditional anti-Judaism, a Jewish person could escape discrimination through Christian baptism. Under modern <strong>racial antisemitism</strong>, Jewish identity was treated as an unchangeable genetic infection passed through the blood. It was this pseudo-scientific racial hatred that Adolf Hitler and the Nazi Party adopted as the core of their totalitarian worldview.',
+          text: '<span class="para-ref">[1.5]</span> While European Jews built rich lives, they had long contended with prejudice. For centuries, Christian Europe had harboured **religious anti-Judaism**—blaming Jews for the crucifixion of Jesus, barring them from owning land or joining craft guilds, and subjecting them to periodic violent expulsions and pogroms. However, in the late nineteenth century, a fatal ideological mutation occurred. Influenced by pseudo-scientific misinterpretations of Darwinian biology, European theorists (such as Wilhelm Marr, who coined the term <em>antisemitism</em> in 1879) argued that Jews were not a religious community, but a distinct biological "race". Under traditional anti-Judaism, a Jewish person could escape discrimination through Christian baptism. Under modern **racial antisemitism**, Jewish identity was treated as an unchangeable genetic infection passed through the blood. It was this pseudo-scientific racial hatred that Adolf Hitler and the Nazi Party adopted as the core of their totalitarian worldview.',
           source: {
             letter: 'E',
             type: 'visual',
@@ -1133,33 +1148,48 @@ const the_shoah_data = {
           term: 'Nuremberg Laws',
           definition:
             'Two antisemitic laws enacted in September 1935 (the Reich Citizenship Law and the Blood Protection Law) that stripped Jews of citizenship and prohibited intermarriage.',
+          syllables: 'Nu-rem-berg laws',
+          phonetic: 'ˈnjʊərəmbɜːɡ lɔːz',
+          tier: '3',
         },
         {
           term: 'Kristallnacht (November Pogrom)',
           definition:
             'A violent, state-directed nationwide pogrom on 9–10 November 1938 targeting Jewish homes, businesses, and synagogues across Germany and Austria.',
+          syllables: 'Kris-tall-nacht (No-ve-mber Po-grom)',
+          phonetic: 'krɪˈstɑːlnaxt (november pogrom)',
+          tier: '2',
         },
         {
           term: 'Social Death',
           definition:
             'A sociological concept describing how a group is systematically ostracised, excluded from public life, and dehumanised by their fellow citizens.',
+          syllables: 'So-cial Death',
+          phonetic: 'social death',
+          tier: '2',
         },
         {
           term: 'Evian Conference',
           definition:
             'A 1938 international meeting of 32 nations convened in France to address the Jewish refugee crisis, which failed because countries refused to open their doors.',
+          syllables: 'E-vian Co-nfe-re-nce',
+          phonetic: 'evian conference',
+          tier: '2',
         },
         {
           term: 'Kindertransport',
           definition:
             'An emergency rescue operation between November 1938 and September 1939 that brought approximately 10,000 unaccompanied Jewish children from Nazi territory to the UK.',
+          syllables: 'Ki-ndertra-nsport',
+          phonetic: 'kindertransport',
+          tier: '3',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Boycott and the Civil Service Purge (1933)',
-          text: '<span class="para-ref">[2.1]</span> When Adolf Hitler became Chancellor on 30 January 1933, the Nazi state wasted no time putting antisemitic ideology into practice. On <strong>1 April 1933</strong>, the regime launched its first nationwide campaign: a boycott of Jewish-owned shops, department stores, doctors, and lawyers. Uniformed SA stormtroopers stood outside storefronts holding placards warning Germans not to buy from Jews, while yellow Stars of David and the word <em>"Jude"</em> were smeared across display windows. One week later, on 7 April 1933, the government passed the <strong>Law for the Restoration of the Professional Civil Service</strong>. This law purged any civil servant of "non-Aryan descent", summarily firing thousands of Jewish judges, civil servants, university professors, and school teachers. The aim was unambiguous: to drive Jews out of public and economic life.',
+          text: '<span class="para-ref">[2.1]</span> When Adolf Hitler became Chancellor on 30 January 1933, the Nazi state wasted no time putting antisemitic ideology into practice. On **1 April 1933**, the regime launched its first nationwide campaign: a boycott of Jewish-owned shops, department stores, doctors, and lawyers. Uniformed SA stormtroopers stood outside storefronts holding placards warning Germans not to buy from Jews, while yellow Stars of David and the word <em>"Jude"</em> were smeared across display windows. One week later, on 7 April 1933, the government passed the **Law for the Restoration of the Professional Civil Service**. This law purged any civil servant of "non-Aryan descent", summarily firing thousands of Jewish judges, civil servants, university professors, and school teachers. The aim was unambiguous: to drive Jews out of public and economic life.',
           source: {
             letter: 'A',
             type: 'visual',
@@ -1202,7 +1232,7 @@ const the_shoah_data = {
         {
           act: 2,
           title: 'The 1935 Nuremberg Laws: Redefining Citizenship',
-          text: '<span class="para-ref">[2.2]</span> In September 1935, during the annual Nazi Party rally, Hitler announced the <strong>Nuremberg Laws</strong>. These two decrees transformed racial ideology into binding German law. The first, the <strong>Reich Citizenship Law</strong>, decreed that only individuals of "German or related blood" could be citizens of the Reich; German Jews were stripped of their citizenship overnight and reclassified as second-class "state subjects" with no voting or civil rights. The second, the <strong>Law for the Protection of German Blood and German Honour</strong>, criminalised marriage and sexual relations between Jews and non-Jewish Germans. Crucially, the law defined a Jewish person not by their religious devotion, but by their lineage: anyone with three or four Jewish grandparents was legally classified as a full Jew, regardless of whether they were practicing Christians or atheists.',
+          text: '<span class="para-ref">[2.2]</span> In September 1935, during the annual Nazi Party rally, Hitler announced the **Nuremberg Laws**. These two decrees transformed racial ideology into binding German law. The first, the **Reich Citizenship Law**, decreed that only individuals of "German or related blood" could be citizens of the Reich; German Jews were stripped of their citizenship overnight and reclassified as second-class "state subjects" with no voting or civil rights. The second, the **Law for the Protection of German Blood and German Honour**, criminalised marriage and sexual relations between Jews and non-Jewish Germans. Crucially, the law defined a Jewish person not by their religious devotion, but by their lineage: anyone with three or four Jewish grandparents was legally classified as a full Jew, regardless of whether they were practicing Christians or atheists.',
           source: {
             letter: 'B',
             type: 'visual',
@@ -1251,7 +1281,7 @@ const the_shoah_data = {
         {
           act: 3,
           title: 'Daily Exclusion and "Social Death" (1935–1938)',
-          text: '<span class="para-ref">[2.3]</span> Between 1935 and 1938, the German state issued over <strong>400 individual anti-Jewish decrees</strong>. These laws invaded every sphere of everyday existence. Jewish children were expelled from state schools; Jewish doctors were forbidden from treating non-Jewish patients; Jewish veterinarians could not treat animals; Jews were banned from parks, municipal swimming pools, libraries, and public concerts. Yellow park benches painted with the words <em>"Nur für Juden"</em> (Only for Jews) were placed on pavements. In his secret diaries, <strong>Victor Klemperer</strong>, a decorated WWI veteran and professor of literature in Dresden, recorded the suffocating, gradual isolation: former colleagues crossed the street to avoid greeting him; tradesmen refused to serve him; his beloved cat and typewriter were eventually confiscated. Klemperer described this process as "social death"—being erased from human fellowship before a shot was fired.',
+          text: '<span class="para-ref">[2.3]</span> Between 1935 and 1938, the German state issued over **400 individual anti-Jewish decrees**. These laws invaded every sphere of everyday existence. Jewish children were expelled from state schools; Jewish doctors were forbidden from treating non-Jewish patients; Jewish veterinarians could not treat animals; Jews were banned from parks, municipal swimming pools, libraries, and public concerts. Yellow park benches painted with the words <em>"Nur für Juden"</em> (Only for Jews) were placed on pavements. In his secret diaries, **Victor Klemperer**, a decorated WWI veteran and professor of literature in Dresden, recorded the suffocating, gradual isolation: former colleagues crossed the street to avoid greeting him; tradesmen refused to serve him; his beloved cat and typewriter were eventually confiscated. Klemperer described this process as "social death"—being erased from human fellowship before a shot was fired.',
           source: {
             letter: 'C',
             type: 'visual',
@@ -1295,7 +1325,7 @@ const the_shoah_data = {
         {
           act: 4,
           title: 'The November Pogrom ("Kristallnacht", 9–10 November 1938)',
-          text: '<span class="para-ref">[2.4]</span> On the night of <strong>9–10 November 1938</strong>, the regime orchestrated a violent nationwide pogrom known as <strong>Kristallnacht</strong> (the "Night of Broken Glass", more accurately termed the <em>November Pogrom</em>). Following a speech by Propaganda Minister Joseph Goebbels, SA and SS men dressed in civilian clothes attacked Jewish communities across Germany, Austria, and the newly annexed Sudetenland. Over <strong>1,400 synagogues were torched</strong>, more than 7,500 Jewish businesses were vandalised, and at least 91 Jewish people were murdered in the streets. Police stood by with orders only to protect non-Jewish property, while fire brigades doused neighbouring German buildings and allowed historic synagogues to burn to the ground. In the immediate aftermath, the Gestapo arrested approximately <strong>30,000 Jewish men</strong> and interned them in Dachau, Buchenwald, and Sachsenhausen concentration camps. To compound the cruelty, the Nazi government blamed the Jews for the violence and imposed an extortionate <strong>one billion Reichsmark fine</strong> on the German Jewish community.',
+          text: '<span class="para-ref">[2.4]</span> On the night of **9–10 November 1938**, the regime orchestrated a violent nationwide pogrom known as **Kristallnacht** (the "Night of Broken Glass", more accurately termed the <em>November Pogrom</em>). Following a speech by Propaganda Minister Joseph Goebbels, SA and SS men dressed in civilian clothes attacked Jewish communities across Germany, Austria, and the newly annexed Sudetenland. Over **1,400 synagogues were torched**, more than 7,500 Jewish businesses were vandalised, and at least 91 Jewish people were murdered in the streets. Police stood by with orders only to protect non-Jewish property, while fire brigades doused neighbouring German buildings and allowed historic synagogues to burn to the ground. In the immediate aftermath, the Gestapo arrested approximately **30,000 Jewish men** and interned them in Dachau, Buchenwald, and Sachsenhausen concentration camps. To compound the cruelty, the Nazi government blamed the Jews for the violence and imposed an extortionate **one billion Reichsmark fine** on the German Jewish community.',
           source: {
             letter: 'D',
             type: 'visual',
@@ -1344,7 +1374,7 @@ const the_shoah_data = {
         {
           act: 5,
           title: 'The Refugee Crisis: Closed Doors and the Kindertransport',
-          text: '<span class="para-ref">[2.5]</span> Kristallnacht shattered any remaining illusion that Jews could survive under Nazi rule. Tens of thousands rushed to foreign consulates, desperately queuing for visas. However, the world’s doors were largely barred. In July 1938, delegates from thirty-two nations had gathered at the <strong>Evian Conference</strong> in France to discuss the Jewish refugee crisis; one by one, nations expressed sympathy but refused to alter their strict immigration quotas. In the wake of Kristallnacht, the British government agreed to a temporary humanitarian concession: the <strong>Kindertransport</strong>. Between December 1938 and September 1939, approximately <strong>10,000 unaccompanied Jewish children</strong> from Germany, Austria, and Czechoslovakia were brought to safety in Britain. While these children were saved, their parents remained trapped behind Nazi borders. When the Second World War broke out on 1 September 1939, hundreds of thousands of European Jews were trapped in a continent transformed into an inescapable prison.',
+          text: '<span class="para-ref">[2.5]</span> Kristallnacht shattered any remaining illusion that Jews could survive under Nazi rule. Tens of thousands rushed to foreign consulates, desperately queuing for visas. However, the world’s doors were largely barred. In July 1938, delegates from thirty-two nations had gathered at the **Evian Conference** in France to discuss the Jewish refugee crisis; one by one, nations expressed sympathy but refused to alter their strict immigration quotas. In the wake of Kristallnacht, the British government agreed to a temporary humanitarian concession: the **Kindertransport**. Between December 1938 and September 1939, approximately **10,000 unaccompanied Jewish children** from Germany, Austria, and Czechoslovakia were brought to safety in Britain. While these children were saved, their parents remained trapped behind Nazi borders. When the Second World War broke out on 1 September 1939, hundreds of thousands of European Jews were trapped in a continent transformed into an inescapable prison.',
           source: {
             letter: 'E',
             type: 'visual',
@@ -1946,33 +1976,48 @@ const the_shoah_data = {
           term: 'Ghetto',
           definition:
             'A walled, segregated section of an occupied city where Jewish families were forcibly concentrated under inhumanly crowded and unsanitary conditions.',
+          syllables: 'ghet-to',
+          phonetic: 'ˈɡɛtəʊ',
+          tier: '3',
         },
         {
           term: 'Schnellbrief',
           definition:
             'A confidential directive issued by Reinhard Heydrich on 21 September 1939 ordering Jews in Poland concentrated into larger cities near railway lines.',
+          syllables: 'Schne-llbrief',
+          phonetic: 'schnellbrief',
+          tier: '2',
         },
         {
           term: 'Judenrat',
           definition:
             'A Jewish Council established by Nazi authorities in each ghetto, coerced into administering German orders and managing everyday ghetto logistics under impossible moral strain.',
+          syllables: 'Ju-de-nrat',
+          phonetic: 'judenrat',
+          tier: '3',
         },
         {
           term: 'Oneg Shabbat',
           definition:
             'The clandestine code name (meaning "Sabbath Delight") for the secret archive founded by historian Emanuel Ringelblum to document ghetto life and Nazi atrocities.',
+          syllables: 'Oneg Sha-bbat',
+          phonetic: 'oneg shabbat',
+          tier: '3',
         },
         {
           term: 'Spiritual Resistance',
           definition:
             'Non-violent acts of defiance aimed at preserving human dignity, cultural identity, religious faith, and historical truth under extreme oppression.',
+          syllables: 'Spi-ritual re-sist-ance',
+          phonetic: 'spiritual rɪˈzɪstəns',
+          tier: '3',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Conquest of Poland and Heydrich’s Plan (1939)',
-          text: '<span class="para-ref">[3.1]</span> On <strong>1 September 1939</strong>, German Panzer divisions and Luftwaffe bombers invaded Poland, triggering the outbreak of the Second World War. Poland fell within five weeks, partitioned between Nazi Germany and the Soviet Union under the terms of the secret Nazi-Soviet Pact. This military triumph fundamentally altered the demographic scale of Nazi persecution: while the regime had spent six years harassing 500,000 German Jews, it now held more than <strong>two million Polish Jews</strong> under brutal military occupation. On 21 September 1939, SS security chief Reinhard Heydrich issued a top-secret directive known as the <strong>Schnellbrief</strong> ("Express Letter"). Heydrich ordered that rural Jewish communities across Poland be dissolved immediately and their populations concentrated into the largest cities situated along major railway lines. This concentration was the indispensable prelude to ghettoisation.',
+          text: '<span class="para-ref">[3.1]</span> On **1 September 1939**, German Panzer divisions and Luftwaffe bombers invaded Poland, triggering the outbreak of the Second World War. Poland fell within five weeks, partitioned between Nazi Germany and the Soviet Union under the terms of the secret Nazi-Soviet Pact. This military triumph fundamentally altered the demographic scale of Nazi persecution: while the regime had spent six years harassing 500,000 German Jews, it now held more than **two million Polish Jews** under brutal military occupation. On 21 September 1939, SS security chief Reinhard Heydrich issued a top-secret directive known as the **Schnellbrief** ("Express Letter"). Heydrich ordered that rural Jewish communities across Poland be dissolved immediately and their populations concentrated into the largest cities situated along major railway lines. This concentration was the indispensable prelude to ghettoisation.',
           source: {
             letter: 'A',
             type: 'visual',
@@ -2016,7 +2061,7 @@ const the_shoah_data = {
         {
           act: 2,
           title: 'Stigmatisation, Forced Labour, and the Yellow Star',
-          text: '<span class="para-ref">[3.2]</span> Long before physical walls were constructed, the occupation authorities set about stripping Polish Jews of their legal standing and human identity. In November 1939, Governor-General Hans Frank ordered all Jews aged ten and older in the General Government to wear a white armband bearing a blue <strong>Star of David</strong> (later standardized to a yellow Star of David). Jews were barred from public transport, parks, and restaurants; their bank accounts were frozen; their businesses were confiscated without compensation; and thousands of men were seized directly from the streets for forced labour clearing bomb rubble, digging drainage ditches, and building military fortifications. Anyone caught without their Star of David faced instant execution.',
+          text: '<span class="para-ref">[3.2]</span> Long before physical walls were constructed, the occupation authorities set about stripping Polish Jews of their legal standing and human identity. In November 1939, Governor-General Hans Frank ordered all Jews aged ten and older in the General Government to wear a white armband bearing a blue **Star of David** (later standardized to a yellow Star of David). Jews were barred from public transport, parks, and restaurants; their bank accounts were frozen; their businesses were confiscated without compensation; and thousands of men were seized directly from the streets for forced labour clearing bomb rubble, digging drainage ditches, and building military fortifications. Anyone caught without their Star of David faced instant execution.',
           source: {
             letter: 'B',
             type: 'visual',
@@ -2060,7 +2105,7 @@ const the_shoah_data = {
         {
           act: 3,
           title: 'The Walls Go Up: The Warsaw and Łódź Ghettos (1940)',
-          text: '<span class="para-ref">[3.3]</span> In 1940, the Nazi regime began enclosing Jewish populations into sealed <strong>ghettos</strong> across occupied Poland, including Łódź, Kraków, Lublin, and Warsaw. In October 1940, the German authorities ordered the establishment of the <strong>Warsaw Ghetto</strong>—the largest in occupied Europe. More than 100,000 Christian Poles were evicted from the designated district, while over 140,000 Jews from across Warsaw and surrounding towns were driven inside. In November 1940, a three-metre-high brick wall topped with barbed wire and shattered glass was officially sealed. Within a squalid district measuring barely 1.3 square miles, approximately <strong>450,000 human beings</strong> were imprisoned—accounting for nearly thirty percent of Warsaw’s population crammed into just 2.4 percent of its urban land, with an average of seven to nine people per room.',
+          text: '<span class="para-ref">[3.3]</span> In 1940, the Nazi regime began enclosing Jewish populations into sealed **ghettos** across occupied Poland, including Łódź, Kraków, Lublin, and Warsaw. In October 1940, the German authorities ordered the establishment of the **Warsaw Ghetto**—the largest in occupied Europe. More than 100,000 Christian Poles were evicted from the designated district, while over 140,000 Jews from across Warsaw and surrounding towns were driven inside. In November 1940, a three-metre-high brick wall topped with barbed wire and shattered glass was officially sealed. Within a squalid district measuring barely 1.3 square miles, approximately **450,000 human beings** were imprisoned—accounting for nearly thirty percent of Warsaw’s population crammed into just 2.4 percent of its urban land, with an average of seven to nine people per room.',
           source: {
             letter: 'C',
             type: 'visual',
@@ -2109,7 +2154,7 @@ const the_shoah_data = {
         {
           act: 4,
           title: 'Starvation, Typhus, and the Child Smugglers',
-          text: '<span class="para-ref">[3.4]</span> The Nazi administration weaponised disease and starvation to decimate the ghetto population. Official food rations provided to Jews were deliberately restricted to an average of just <strong>180 to 220 calories per day</strong>—roughly ten percent of the caloric energy needed to sustain a human life. Contaminated water and uncollected refuse sparked rampant epidemics of <strong>typhus</strong> and dysentery; between 1940 and mid-1942, more than <strong>80,000 people died of hunger and disease</strong> in the Warsaw Ghetto alone. What prevented the entire ghetto from perishing immediately was a heroic underground smuggling economy. Small Jewish children, exploiting their slight stature, wriggled through narrow drainage pipes and holes knocked into the brick wall, smuggling sacks of potatoes, bread, and medicine into the ghetto under threat of being shot on sight by German snipers.',
+          text: '<span class="para-ref">[3.4]</span> The Nazi administration weaponised disease and starvation to decimate the ghetto population. Official food rations provided to Jews were deliberately restricted to an average of just **180 to 220 calories per day**—roughly ten percent of the caloric energy needed to sustain a human life. Contaminated water and uncollected refuse sparked rampant epidemics of **typhus** and dysentery; between 1940 and mid-1942, more than **80,000 people died of hunger and disease** in the Warsaw Ghetto alone. What prevented the entire ghetto from perishing immediately was a heroic underground smuggling economy. Small Jewish children, exploiting their slight stature, wriggled through narrow drainage pipes and holes knocked into the brick wall, smuggling sacks of potatoes, bread, and medicine into the ghetto under threat of being shot on sight by German snipers.',
           source: {
             letter: 'D',
             type: 'visual',
@@ -2153,7 +2198,7 @@ const the_shoah_data = {
         {
           act: 5,
           title: 'Spiritual Resistance: The Secret Oneg Shabbat Archive',
-          text: '<span class="para-ref">[3.5]</span> Imprisoned within the ghetto, Jewish people refused to surrender their humanity. They organized clandestine kitchens feeding tens of thousands daily, secret schools held in basements, underground theatrical performances, and religious study groups. The most extraordinary act of spiritual resistance was led by historian <strong>Emanuel Ringelblum</strong>. In 1940, Ringelblum founded a secret organization code-named <strong>Oneg Shabbat</strong> ("Sabbath Delight"), consisting of writers, doctors, rabbis, and economists. They documented every aspect of ghetto existence: collecting personal diaries, underground newspapers, poetry, Nazi rationing decrees, and scientific reports on starvation. When deportations began in 1942, Ringelblum’s team sealed thousands of documents into ten metal boxes and two heavy aluminium <strong>milk cans</strong>, burying them deep beneath Warsaw basements. Unearthed after the war in 1946 and 1950, Ringelblum’s archive remains one of the most powerful, defiant testimonies of human truth ever preserved against tyranny.',
+          text: '<span class="para-ref">[3.5]</span> Imprisoned within the ghetto, Jewish people refused to surrender their humanity. They organized clandestine kitchens feeding tens of thousands daily, secret schools held in basements, underground theatrical performances, and religious study groups. The most extraordinary act of spiritual resistance was led by historian **Emanuel Ringelblum**. In 1940, Ringelblum founded a secret organization code-named **Oneg Shabbat** ("Sabbath Delight"), consisting of writers, doctors, rabbis, and economists. They documented every aspect of ghetto existence: collecting personal diaries, underground newspapers, poetry, Nazi rationing decrees, and scientific reports on starvation. When deportations began in 1942, Ringelblum’s team sealed thousands of documents into ten metal boxes and two heavy aluminium **milk cans**, burying them deep beneath Warsaw basements. Unearthed after the war in 1946 and 1950, Ringelblum’s archive remains one of the most powerful, defiant testimonies of human truth ever preserved against tyranny.',
           source: {
             letter: 'E',
             type: 'visual',
@@ -2752,33 +2797,48 @@ const the_shoah_data = {
           term: 'Operation Barbarossa',
           definition:
             'The code name for Nazi Germany’s massive military invasion of the Soviet Union on 22 June 1941, launching a war of ideological annihilation.',
+          syllables: 'O-pera-tion Ba-rba-ro-ssa',
+          phonetic: 'operation barbarossa',
+          tier: '3',
         },
         {
           term: 'Einsatzgruppen',
           definition:
             'Four mobile paramilitary killing squads (A, B, C, D) organized by the SS and police to murder Jews, communists, and Roma in occupied Soviet territory.',
+          syllables: 'Ein-satz-grup-pen',
+          phonetic: 'ˈaɪnzatsˌɡrʊpən',
+          tier: '3',
         },
         {
           term: 'Holocaust by Bullets',
           definition:
             'A historical term referring to the systematic murder of approximately 1.5 to 2 million Jewish people through mass shooting pits and ravines across Eastern Europe.',
+          syllables: 'hol-o-caust by Bu-llets',
+          phonetic: 'ˈhɒləkɔːst by bullets',
+          tier: '2',
         },
         {
           term: 'Babi Yar',
           definition:
             'A ravine outside Kyiv, Ukraine, where SS Sonderkommando 4a, German police, and local auxiliaries murdered 33,771 Jewish people on 29–30 September 1941.',
+          syllables: 'Babi Yar',
+          phonetic: 'babi yar',
+          tier: '2',
         },
         {
           term: 'Reserve Police Battalion 101',
           definition:
             'A unit of middle-aged German civilian conscripts studied by historian Christopher Browning, who became mass executioners despite having the option to decline.',
+          syllables: 'Re-se-rve Po-lice Ba-tta-lion 101',
+          phonetic: 'reserve police battalion 101',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'Operation Barbarossa: Ideological Annihilation (June 1941)',
-          text: '<span class="para-ref">[4.1]</span> On <strong>22 June 1941</strong>, Adolf Hitler launched <strong>Operation Barbarossa</strong>, sending over three million German and Axis troops across the Soviet border in the largest land invasion in human history. This invasion marked a radical and catastrophic rupture in European warfare. Hitler instructed his generals that this conflict was not a conventional war between nations, but an ideological and racial war of extermination (<em>Vernichtungskrieg</em>). Through the infamous <strong>Commissar Order</strong>, German soldiers were instructed to execute captured Soviet political commissars immediately without trial. In Hitler’s worldview, Soviet communism and European Jewry were inextricably fused into a single existential enemy he labelled <em>"Judeo-Bolshevism"</em>. The invasion of the Soviet Union was designed from its inception to eliminate entire populations to clear <em>Lebensraum</em> (living space) for German colonization.',
+          text: '<span class="para-ref">[4.1]</span> On **22 June 1941**, Adolf Hitler launched **Operation Barbarossa**, sending over three million German and Axis troops across the Soviet border in the largest land invasion in human history. This invasion marked a radical and catastrophic rupture in European warfare. Hitler instructed his generals that this conflict was not a conventional war between nations, but an ideological and racial war of extermination (<em>Vernichtungskrieg</em>). Through the infamous **Commissar Order**, German soldiers were instructed to execute captured Soviet political commissars immediately without trial. In Hitler’s worldview, Soviet communism and European Jewry were inextricably fused into a single existential enemy he labelled <em>"Judeo-Bolshevism"</em>. The invasion of the Soviet Union was designed from its inception to eliminate entire populations to clear <em>Lebensraum</em> (living space) for German colonization.',
           source: {
             letter: 'A',
             type: 'visual',
@@ -2822,7 +2882,7 @@ const the_shoah_data = {
         {
           act: 2,
           title: 'The Einsatzgruppen and Order Police Battalions',
-          text: '<span class="para-ref">[4.2]</span> Marching directly behind the front-line Wehrmacht combat divisions were four specialized, motorized SS death squads designated <strong>Einsatzgruppen</strong> (A, B, C, and D), numbering approximately 3,000 men in total, commanded by university-educated officers, lawyers, and civil servants. They were reinforced by thousands of regular German policemen organized into <strong>Order Police battalions</strong> (such as Reserve Police Battalion 101, famously analyzed by historian Christopher Browning in <em>Ordinary Men</em>). Initially, in June and July 1941, these units targeted adult Jewish men who held positions in government or the Communist Party. However, in late July and August 1941, following inspection visits by SS chief Heinrich Himmler, the mandate was radicalised into total extermination: the killing squads began murdering all Jewish men, women, children, and infants without exception.',
+          text: '<span class="para-ref">[4.2]</span> Marching directly behind the front-line Wehrmacht combat divisions were four specialized, motorized SS death squads designated **Einsatzgruppen** (A, B, C, and D), numbering approximately 3,000 men in total, commanded by university-educated officers, lawyers, and civil servants. They were reinforced by thousands of regular German policemen organized into **Order Police battalions** (such as Reserve Police Battalion 101, famously analyzed by historian Christopher Browning in <em>Ordinary Men</em>). Initially, in June and July 1941, these units targeted adult Jewish men who held positions in government or the Communist Party. However, in late July and August 1941, following inspection visits by SS chief Heinrich Himmler, the mandate was radicalised into total extermination: the killing squads began murdering all Jewish men, women, children, and infants without exception.',
           source: {
             letter: 'B',
             type: 'visual',
@@ -2871,7 +2931,7 @@ const the_shoah_data = {
         {
           act: 3,
           title: 'The Massacre at Babi Yar (Kyiv, September 1941)',
-          text: '<span class="para-ref">[4.3]</span> The most notorious massacre of this "Holocaust by Bullets" occurred on the outskirts of Kyiv, the capital of Soviet Ukraine. On 28 September 1941, notices were posted across the city ordering all Jews of Kyiv to assemble at a designated street corner the following morning, carrying warm clothes, money, and documents under the deceptive pretext of "resettlement". Over 30,000 people complied. They were marched in columns to the <strong>Babi Yar</strong> ravine outside the city, where German SS Sonderkommando 4a, Waffen-SS soldiers, and German police forced them to surrender their luggage, undress completely, and walk in small groups down into the deep ravine. There, victims were forced to lie face-down upon the bodies of those already shot before being executed by machine-gun fire to the back of the neck. Over just thirty-six hours on <strong>29–30 September 1941, exactly 33,771 Jewish people were murdered</strong> at Babi Yar.',
+          text: '<span class="para-ref">[4.3]</span> The most notorious massacre of this "Holocaust by Bullets" occurred on the outskirts of Kyiv, the capital of Soviet Ukraine. On 28 September 1941, notices were posted across the city ordering all Jews of Kyiv to assemble at a designated street corner the following morning, carrying warm clothes, money, and documents under the deceptive pretext of "resettlement". Over 30,000 people complied. They were marched in columns to the **Babi Yar** ravine outside the city, where German SS Sonderkommando 4a, Waffen-SS soldiers, and German police forced them to surrender their luggage, undress completely, and walk in small groups down into the deep ravine. There, victims were forced to lie face-down upon the bodies of those already shot before being executed by machine-gun fire to the back of the neck. Over just thirty-six hours on **29–30 September 1941, exactly 33,771 Jewish people were murdered** at Babi Yar.',
           source: {
             letter: 'C',
             type: 'visual',
@@ -2914,7 +2974,7 @@ const the_shoah_data = {
         {
           act: 4,
           title: 'Massacres Across the Baltics and Local Collaboration',
-          text: '<span class="para-ref">[4.4]</span> The slaughter was repeated across hundreds of towns in Lithuania, Latvia, Belarus, and Ukraine. In the wooded forest of <strong>Ponary</strong> outside Vilna, over 70,000 Jews were murdered in vast circular pits originally dug by the Soviet army for fuel storage tanks. At the Ninth Fort in Kaunas and the Rumbula forest outside Riga, entire communities were erased in days. Crucially, the small numbers of German SS personnel could never have achieved this catastrophic scale alone: they actively recruited, armed, and encouraged <strong>local auxiliary police</strong>—nationalist volunteers in Lithuania, Latvia, and Ukraine who harboured deep antisemitism and erroneously blamed Jews for Soviet occupation. In Lithuania, over ninety percent of the country’s 220,000 Jews were murdered before the end of 1941, predominantly through the active participation of local auxiliary execution squads.',
+          text: '<span class="para-ref">[4.4]</span> The slaughter was repeated across hundreds of towns in Lithuania, Latvia, Belarus, and Ukraine. In the wooded forest of **Ponary** outside Vilna, over 70,000 Jews were murdered in vast circular pits originally dug by the Soviet army for fuel storage tanks. At the Ninth Fort in Kaunas and the Rumbula forest outside Riga, entire communities were erased in days. Crucially, the small numbers of German SS personnel could never have achieved this catastrophic scale alone: they actively recruited, armed, and encouraged **local auxiliary police**—nationalist volunteers in Lithuania, Latvia, and Ukraine who harboured deep antisemitism and erroneously blamed Jews for Soviet occupation. In Lithuania, over ninety percent of the country’s 220,000 Jews were murdered before the end of 1941, predominantly through the active participation of local auxiliary execution squads.',
           source: {
             letter: 'D',
             type: 'visual',
@@ -2957,7 +3017,7 @@ const the_shoah_data = {
         {
           act: 5,
           title: 'Perpetrator Strain and the Shift toward Industrial Murder',
-          text: '<span class="para-ref">[4.5]</span> By the winter of 1941, the Einsatzgruppen and police battalions had shot over <strong>500,000 people</strong>. However, Nazi commanders confronted a logistical and psychological dilemma. Mass shooting required intimate, face-to-face murder of screaming mothers and infants in broad daylight. In August 1941, Heinrich Himmler visited Minsk and personally observed a mass shooting; visibly distressed as soil splattered his coat, Himmler worried about the severe psychological toll on his German troops, noting increased rates of alcoholism, nervous breakdowns, and suicides among executioners. SS technicians set to work finding an impersonal, mechanized method that would spare the executioners’ feelings while increasing the speed of extermination. This search led directly to the development of sealed <strong>gas vans</strong> using carbon monoxide exhaust fumes at <strong>Chełmno</strong> in December 1941—the lethal bridge leading directly to the industrial death camps.',
+          text: '<span class="para-ref">[4.5]</span> By the winter of 1941, the Einsatzgruppen and police battalions had shot over **500,000 people**. However, Nazi commanders confronted a logistical and psychological dilemma. Mass shooting required intimate, face-to-face murder of screaming mothers and infants in broad daylight. In August 1941, Heinrich Himmler visited Minsk and personally observed a mass shooting; visibly distressed as soil splattered his coat, Himmler worried about the severe psychological toll on his German troops, noting increased rates of alcoholism, nervous breakdowns, and suicides among executioners. SS technicians set to work finding an impersonal, mechanized method that would spare the executioners’ feelings while increasing the speed of extermination. This search led directly to the development of sealed **gas vans** using carbon monoxide exhaust fumes at **Chełmno** in December 1941—the lethal bridge leading directly to the industrial death camps.',
           source: {
             letter: 'E',
             type: 'visual',
@@ -3560,33 +3620,48 @@ const the_shoah_data = {
           term: 'Wannsee Conference',
           definition:
             'A meeting on 20 January 1942 in a Berlin villa where 15 senior Nazi officials coordinated the bureaucratic execution of the "Final Solution".',
+          syllables: 'Wann-see con-fer-ence',
+          phonetic: 'ˈvɑːnzeɪ ˈkɒnfərəns',
+          tier: '3',
         },
         {
           term: 'Operation Reinhard',
           definition:
             'The secret code name for the plan to murder all Polish Jews, resulting in the creation of three dedicated death camps: Bełżec, Sobibór, and Treblinka.',
+          syllables: 'O-pera-tion Rei-nhard',
+          phonetic: 'operation reinhard',
+          tier: '2',
         },
         {
           term: 'Extermination Camp',
           definition:
             'A purpose-built facility designed specifically for the industrial-scale murder of human beings using poison gas, with no selection for long-term labour.',
+          syllables: 'ex-ter-mi-na-tion camp',
+          phonetic: 'ɪkˌstɜːmɪˈneɪʃən kæmp',
+          tier: '3',
         },
         {
           term: 'ŻOB (Jewish Combat Organization)',
           definition:
             'The underground armed resistance group in the Warsaw Ghetto, commanded by 23-year-old Mordechai Anielewicz during the 1943 uprising.',
+          syllables: 'ŻOB (Je-wish Co-mbat O-rga-niza-tion)',
+          phonetic: 'żob (jewish combat organization)',
+          tier: '3',
         },
         {
           term: 'Sonderkommando',
           definition:
             'Groups of Jewish prisoners forced under threat of instant death to dispose of gas chamber victims and operate crematoria before being murdered themselves.',
+          syllables: 'So-nderko-mmando',
+          phonetic: 'sonderkommando',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Wannsee Conference: The Bureaucracy of Murder (1942)',
-          text: '<span class="para-ref">[5.1]</span> On <strong>20 January 1942</strong>, fifteen senior Nazi officials, SS generals, and government ministry directors gathered at a lakeside villa in the Berlin suburb of <strong>Wannsee</strong>. Convened by Reinhard Heydrich and recorded by Adolf Eichmann, the meeting lasted barely ninety minutes. Wannsee was not the moment when the decision to murder Europe’s Jews was made; that decision had already been taken by Hitler and Himmler in 1941. Instead, Wannsee was a logistical conference designed to secure the total coordination of the civilian state bureaucracy: the Foreign Office, the Ministry of Justice, the Interior Ministry, and the state railway (<em>Deutsche Reichsbahn</em>). Eichmann prepared a statistical chart detailing <strong>eleven million Jews across Europe</strong>—including those in neutral nations like Switzerland and Ireland, and unconquered Britain—who were to be combed from west to east and systematically eliminated.',
+          text: '<span class="para-ref">[5.1]</span> On **20 January 1942**, fifteen senior Nazi officials, SS generals, and government ministry directors gathered at a lakeside villa in the Berlin suburb of **Wannsee**. Convened by Reinhard Heydrich and recorded by Adolf Eichmann, the meeting lasted barely ninety minutes. Wannsee was not the moment when the decision to murder Europe’s Jews was made; that decision had already been taken by Hitler and Himmler in 1941. Instead, Wannsee was a logistical conference designed to secure the total coordination of the civilian state bureaucracy: the Foreign Office, the Ministry of Justice, the Interior Ministry, and the state railway (<em>Deutsche Reichsbahn</em>). Eichmann prepared a statistical chart detailing **eleven million Jews across Europe**—including those in neutral nations like Switzerland and Ireland, and unconquered Britain—who were to be combed from west to east and systematically eliminated.',
           source: {
             letter: 'A',
             type: 'visual',
@@ -3629,7 +3704,7 @@ const the_shoah_data = {
         {
           act: 2,
           title: 'Operation Reinhard: The Pure Death Camps (1942–1943)',
-          text: '<span class="para-ref">[5.2]</span> Following Wannsee, the SS launched <strong>Operation Reinhard</strong>—the top-secret code name for the extermination of all 2.2 million Jews living in the General Government of occupied Poland. Under the command of Odilo Globocnik, the SS constructed three dedicated death camps near railway lines deep in the eastern forests: <strong>Bełżec, Sobibór, and Treblinka</strong>. These were not concentration or labour camps; they had no factories, barracks for long-term prisoners, or work details. They were pure extermination centres. Victims arrived packed into suffocating, windowless cattle wagons without water or sanitation. Upon arrival, men, women, and children were forced to strip, surrender their valuables, and run through a camouflaged pathway dubbed "the Tube" straight into gas chambers powered by large tank diesel engines pumping lethal carbon monoxide. Within two hours of a train’s arrival, an entire transport of 5,000 human beings was dead. Between March 1942 and late 1943, <strong>over 1.7 million people were murdered</strong> in these three camps alone.',
+          text: '<span class="para-ref">[5.2]</span> Following Wannsee, the SS launched **Operation Reinhard**—the top-secret code name for the extermination of all 2.2 million Jews living in the General Government of occupied Poland. Under the command of Odilo Globocnik, the SS constructed three dedicated death camps near railway lines deep in the eastern forests: **Bełżec, Sobibór, and Treblinka**. These were not concentration or labour camps; they had no factories, barracks for long-term prisoners, or work details. They were pure extermination centres. Victims arrived packed into suffocating, windowless cattle wagons without water or sanitation. Upon arrival, men, women, and children were forced to strip, surrender their valuables, and run through a camouflaged pathway dubbed "the Tube" straight into gas chambers powered by large tank diesel engines pumping lethal carbon monoxide. Within two hours of a train’s arrival, an entire transport of 5,000 human beings was dead. Between March 1942 and late 1943, **over 1.7 million people were murdered** in these three camps alone.',
           source: {
             letter: 'B',
             type: 'visual',
@@ -3678,7 +3753,7 @@ const the_shoah_data = {
         {
           act: 3,
           title: 'Auschwitz-Birkenau: The Factory of Industrial Death',
-          text: '<span class="para-ref">[5.3]</span> The largest and most lethal centre was <strong>Auschwitz-Birkenau</strong> in southern Poland. Unlike Operation Reinhard, Auschwitz functioned as a dual-purpose complex: a brutal slave labour camp (Auschwitz I and III-Monowitz) combined with a vast extermination centre (Auschwitz II-Birkenau). Train transports arrived from across conquered Europe—France, the Netherlands, Greece, Italy, and Hungary. On the arrival ramp, SS doctors (such as Josef Mengele) conducted the <strong>"selection"</strong> with a flick of a thumb: roughly twenty percent of young, healthy adults were selected for slave labour, their arms tattooed with numbers; the remaining eighty percent—pregnant mothers, children, the elderly, and the sick—were sent immediately to the gas chambers disguised as disinfection showers. Technicians dropped pellets of <strong>Zyklon B</strong> (a cyanide-based pesticide) through roof vents, murdering up to 2,000 people in twenty minutes. Over <strong>1.1 million people</strong> were murdered at Auschwitz, including 960,000 Jewish men, women, and children.',
+          text: '<span class="para-ref">[5.3]</span> The largest and most lethal centre was **Auschwitz-Birkenau** in southern Poland. Unlike Operation Reinhard, Auschwitz functioned as a dual-purpose complex: a brutal slave labour camp (Auschwitz I and III-Monowitz) combined with a vast extermination centre (Auschwitz II-Birkenau). Train transports arrived from across conquered Europe—France, the Netherlands, Greece, Italy, and Hungary. On the arrival ramp, SS doctors (such as Josef Mengele) conducted the **"selection"** with a flick of a thumb: roughly twenty percent of young, healthy adults were selected for slave labour, their arms tattooed with numbers; the remaining eighty percent—pregnant mothers, children, the elderly, and the sick—were sent immediately to the gas chambers disguised as disinfection showers. Technicians dropped pellets of **Zyklon B** (a cyanide-based pesticide) through roof vents, murdering up to 2,000 people in twenty minutes. Over **1.1 million people** were murdered at Auschwitz, including 960,000 Jewish men, women, and children.',
           source: {
             letter: 'C',
             type: 'visual',
@@ -3747,7 +3822,7 @@ const the_shoah_data = {
         {
           act: 4,
           title: 'The Warsaw Ghetto Uprising (April–May 1943)',
-          text: '<span class="para-ref">[5.4]</span> Contrary to the offensive myth that victims went passively to their deaths, Jewish people mounted desperate armed resistance across Europe. In the summer of 1942, the SS deported 300,000 Jews from the Warsaw Ghetto to Treblinka. The remaining 60,000 residents formed the <strong>Jewish Combat Organization (ŻOB)</strong>, led by 23-year-old <strong>Mordechai Anielewicz</strong>. When SS troops marched in on 19 April 1943 to liquidate the ghetto, young Jewish men and women ambushed them with smuggled pistols, homemade Molotov cocktails, and a handful of rifles. For twenty-seven days, starving fighters held off heavily armed German forces equipped with artillery, tanks, and flamethrowers. General Jürgen Stroop was forced to burn the ghetto block by block to flush out defenders from underground bunkers. In his final letter, Anielewicz wrote: <em>"My life’s dream has come true; I have lived to see Jewish self-defence in the Warsaw Ghetto in all its greatness and glory."</em>',
+          text: '<span class="para-ref">[5.4]</span> Contrary to the offensive myth that victims went passively to their deaths, Jewish people mounted desperate armed resistance across Europe. In the summer of 1942, the SS deported 300,000 Jews from the Warsaw Ghetto to Treblinka. The remaining 60,000 residents formed the **Jewish Combat Organization (ŻOB)**, led by 23-year-old **Mordechai Anielewicz**. When SS troops marched in on 19 April 1943 to liquidate the ghetto, young Jewish men and women ambushed them with smuggled pistols, homemade Molotov cocktails, and a handful of rifles. For twenty-seven days, starving fighters held off heavily armed German forces equipped with artillery, tanks, and flamethrowers. General Jürgen Stroop was forced to burn the ghetto block by block to flush out defenders from underground bunkers. In his final letter, Anielewicz wrote: <em>"My life’s dream has come true; I have lived to see Jewish self-defence in the Warsaw Ghetto in all its greatness and glory."</em>',
           source: {
             letter: 'D',
             type: 'visual',
@@ -3790,7 +3865,7 @@ const the_shoah_data = {
         {
           act: 5,
           title: 'Revolts in the Death Camps and the Partisans',
-          text: '<span class="para-ref">[5.5]</span> Resistance did not end in Warsaw. In the very heart of the death camps, where survival was measured in hours, prisoners staged daring armed insurrections. On <strong>2 August 1943</strong>, prisoners at <strong>Treblinka</strong> stole grenades from the camp armoury, set storage barracks ablaze, and enabled 300 inmates to breach the perimeter wire. On <strong>14 October 1943</strong>, Jewish prisoners at <strong>Sobibór</strong>, led by Red Army prisoner-of-war Alexander Pechersky, killed eleven SS guards and staged a mass breakout, forcing the SS to dismantle and plough over the camp. On <strong>7 October 1944</strong>, the Jewish <strong>Sonderkommando at Auschwitz-Birkenau</strong>, utilizing gunpowder secretly smuggled in small matchboxes by young Jewish women working in a munitions factory (including Roza Robota), blew up Crematorium IV and killed three SS guards. Across the forests of Eastern Europe, thousands of Jewish fighters joined partisan detachments—such as the famous <strong>Bielski partisans</strong> in the Naliboki forest, who fought German forces while simultaneously safeguarding over 1,200 civilian women, children, and elderly.',
+          text: '<span class="para-ref">[5.5]</span> Resistance did not end in Warsaw. In the very heart of the death camps, where survival was measured in hours, prisoners staged daring armed insurrections. On **2 August 1943**, prisoners at **Treblinka** stole grenades from the camp armoury, set storage barracks ablaze, and enabled 300 inmates to breach the perimeter wire. On **14 October 1943**, Jewish prisoners at **Sobibór**, led by Red Army prisoner-of-war Alexander Pechersky, killed eleven SS guards and staged a mass breakout, forcing the SS to dismantle and plough over the camp. On **7 October 1944**, the Jewish **Sonderkommando at Auschwitz-Birkenau**, utilizing gunpowder secretly smuggled in small matchboxes by young Jewish women working in a munitions factory (including Roza Robota), blew up Crematorium IV and killed three SS guards. Across the forests of Eastern Europe, thousands of Jewish fighters joined partisan detachments—such as the famous **Bielski partisans** in the Naliboki forest, who fought German forces while simultaneously safeguarding over 1,200 civilian women, children, and elderly.',
           source: {
             letter: 'E',
             type: 'visual',
@@ -4437,33 +4512,48 @@ const the_shoah_data = {
           term: 'Complicity',
           definition:
             'Involvement with or participation in a wrongful act, crime, or state policy, either through direct action, bureaucratic assistance, or passive silence.',
+          syllables: 'Co-mpli-city',
+          phonetic: 'complicity',
+          tier: '3',
         },
         {
           term: 'Collaboration',
           definition:
             'Active cooperation with an enemy occupying power against the interests of one’s own citizens or persecuted minorities.',
+          syllables: 'Co-lla-bora-tion',
+          phonetic: 'collaboration',
+          tier: '3',
         },
         {
           term: 'Vel’ d’Hiv Roundup',
           definition:
             'A mass arrest in Paris on 16–17 July 1942 where 13,000 Jewish men, women, and children were rounded up by French police and deported to Auschwitz.',
+          syllables: 'Vel’ d’Hiv Rou-ndup',
+          phonetic: 'vel’ d’hiv roundup',
+          tier: '2',
         },
         {
           term: 'Righteous Among the Nations',
           definition:
             'An official honour bestowed by Yad Vashem on non-Jews who risked their lives to rescue Jews during the Holocaust without seeking financial gain.',
+          syllables: 'Ri-ghteous A-mong the Na-tions',
+          phonetic: 'righteous among the nations',
+          tier: '3',
         },
         {
           term: 'Jan Karski',
           definition:
             'A Polish underground courier who was smuggled into the Warsaw Ghetto and transit camps to deliver firsthand eyewitness testimony of the genocide to Allied leaders.',
+          syllables: 'Jan Ka-rski',
+          phonetic: 'jan karski',
+          tier: '3',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Bureaucracy of Destruction: Ordinary Professionals',
-          text: '<span class="para-ref">[6.1]</span> In his monumental study <em>The Destruction of the European Jews</em>, historian <strong>Raul Hilberg</strong> demonstrated that the Holocaust was not carried out solely by ideological fanatics or SS guards in death camps. It was organized and executed by the entire modern state machinery. Mass murder required <strong>university-educated civil servants</strong> to draft anti-Jewish decrees; tax officials to confiscate bank accounts; lawyers to strip citizenship; architects to blueprint high-capacity crematoria; and engineers to supply poison gas. Crucially, the transport of millions of human beings across Europe was managed by the <strong>Deutsche Reichsbahn</strong> (German State Railway). Ordinary railway clerks, switch operators, and train drivers scheduled hundreds of "special deportation trains", calculating billing tariffs per passenger kilometer and ensuring that death trains ran on time while German troops fought on the Eastern Front. Most of these professionals never shot an individual; yet their paperwork was lethal.',
+          text: '<span class="para-ref">[6.1]</span> In his monumental study <em>The Destruction of the European Jews</em>, historian **Raul Hilberg** demonstrated that the Holocaust was not carried out solely by ideological fanatics or SS guards in death camps. It was organized and executed by the entire modern state machinery. Mass murder required **university-educated civil servants** to draft anti-Jewish decrees; tax officials to confiscate bank accounts; lawyers to strip citizenship; architects to blueprint high-capacity crematoria; and engineers to supply poison gas. Crucially, the transport of millions of human beings across Europe was managed by the **Deutsche Reichsbahn** (German State Railway). Ordinary railway clerks, switch operators, and train drivers scheduled hundreds of "special deportation trains", calculating billing tariffs per passenger kilometer and ensuring that death trains ran on time while German troops fought on the Eastern Front. Most of these professionals never shot an individual; yet their paperwork was lethal.',
           source: {
             letter: 'A',
             type: 'visual',
@@ -4507,7 +4597,7 @@ const the_shoah_data = {
         {
           act: 2,
           title: 'European Collaboration: An All-European Catastrophe',
-          text: '<span class="para-ref">[6.2]</span> The Holocaust was not merely a German crime; it was an <strong>all-European catastrophe</strong> that relied heavily on foreign collaboration. In France, the collaborationist <strong>Vichy government</strong> led by Marshal Philippe Pétain enacted its own anti-Jewish laws without German compulsion. On <strong>16–17 July 1942</strong>, French police officers carried out the notorious <strong>Vel’ d’Hiv Roundup</strong> (<em>Rafle du Vélodrome d’Hiver</em>) in Paris, arresting over 13,000 Jewish men, women, and 4,000 children, confining them in a cycling stadium under suffocating heat before deporting them to Auschwitz. In Hungary, following the German occupation in March 1944, Hungarian gendarmerie and civil servants coordinated with Adolf Eichmann to deport <strong>437,000 Hungarian Jews in just fifty-six days</strong>. In Slovakia, Romania, and the Baltic States, local fascist movements and police auxiliaries actively assisted or initiated mass slaughter, motivated by rabid antisemitism, political opportunism, and greed for stolen Jewish property.',
+          text: '<span class="para-ref">[6.2]</span> The Holocaust was not merely a German crime; it was an **all-European catastrophe** that relied heavily on foreign collaboration. In France, the collaborationist **Vichy government** led by Marshal Philippe Pétain enacted its own anti-Jewish laws without German compulsion. On **16–17 July 1942**, French police officers carried out the notorious **Vel’ d’Hiv Roundup** (<em>Rafle du Vélodrome d’Hiver</em>) in Paris, arresting over 13,000 Jewish men, women, and 4,000 children, confining them in a cycling stadium under suffocating heat before deporting them to Auschwitz. In Hungary, following the German occupation in March 1944, Hungarian gendarmerie and civil servants coordinated with Adolf Eichmann to deport **437,000 Hungarian Jews in just fifty-six days**. In Slovakia, Romania, and the Baltic States, local fascist movements and police auxiliaries actively assisted or initiated mass slaughter, motivated by rabid antisemitism, political opportunism, and greed for stolen Jewish property.',
           source: {
             letter: 'B',
             type: 'visual',
@@ -4550,7 +4640,7 @@ const the_shoah_data = {
         {
           act: 3,
           title: 'The Bystanders: Silence, Fear, and Complicity',
-          text: '<span class="para-ref">[6.3]</span> The vast majority of people across Nazi-occupied Europe were neither active perpetrators nor heroic rescuers; they were <strong>bystanders</strong>. Millions of ordinary Europeans watched their Jewish neighbours being publicly humiliated, arrested, and marched through streets to railway stations. Many profited directly: purchasing furniture, clothing, and homes at state auctions of "abandoned" Jewish property for pennies on the pound. While fear of brutal Nazi retribution was real, widespread indifference, casual antisemitism, and the desire to protect one’s own family created a wall of silence. As historian Ian Kershaw observed, <em>"The road to Auschwitz was built by hatred, but paved with indifference."</em> By failing to protest or speak out, passive bystanders allowed the machinery of destruction to function unhindered.',
+          text: '<span class="para-ref">[6.3]</span> The vast majority of people across Nazi-occupied Europe were neither active perpetrators nor heroic rescuers; they were **bystanders**. Millions of ordinary Europeans watched their Jewish neighbours being publicly humiliated, arrested, and marched through streets to railway stations. Many profited directly: purchasing furniture, clothing, and homes at state auctions of "abandoned" Jewish property for pennies on the pound. While fear of brutal Nazi retribution was real, widespread indifference, casual antisemitism, and the desire to protect one’s own family created a wall of silence. As historian Ian Kershaw observed, <em>"The road to Auschwitz was built by hatred, but paved with indifference."</em> By failing to protest or speak out, passive bystanders allowed the machinery of destruction to function unhindered.',
           source: {
             letter: 'C',
             type: 'visual',
@@ -4594,7 +4684,7 @@ const the_shoah_data = {
         {
           act: 4,
           title: 'Righteous Among the Nations: Courage Defying Death',
-          text: '<span class="para-ref">[6.4]</span> In the face of overwhelming terror, a courageous minority chose to act. Today, the state of Israel’s Holocaust memorial, Yad Vashem, honours non-Jews who risked their lives to rescue Jewish people as <strong>"Righteous Among the Nations"</strong>. In occupied Poland, sheltering a Jewish person carried an automatic death penalty not only for the rescuer, but for their entire family. Despite this, rescuers hid children in secret cellars, false walls, and barns. In some rare cases, rescue was collective: in October 1943, when the German occupation authorities ordered the deportation of Danish Jews, ordinary <strong>Danish citizens</strong> spontaneously organized a flotilla of fishing boats, successfully smuggling over <strong>7,200 Jews across the sound to neutral Sweden</strong>, saving over ninety-five percent of Denmark’s Jewish community. In the French mountain village of <strong>Le Chambon-sur-Lignon</strong>, Protestant pastor André Trocmé led his entire community in providing safe haven, forged papers, and food to roughly 3,500 refugees. These examples proved that rescue was always possible when human beings chose moral courage over passive compliance.',
+          text: '<span class="para-ref">[6.4]</span> In the face of overwhelming terror, a courageous minority chose to act. Today, the state of Israel’s Holocaust memorial, Yad Vashem, honours non-Jews who risked their lives to rescue Jewish people as **"Righteous Among the Nations"**. In occupied Poland, sheltering a Jewish person carried an automatic death penalty not only for the rescuer, but for their entire family. Despite this, rescuers hid children in secret cellars, false walls, and barns. In some rare cases, rescue was collective: in October 1943, when the German occupation authorities ordered the deportation of Danish Jews, ordinary **Danish citizens** spontaneously organized a flotilla of fishing boats, successfully smuggling over **7,200 Jews across the sound to neutral Sweden**, saving over ninety-five percent of Denmark’s Jewish community. In the French mountain village of **Le Chambon-sur-Lignon**, Protestant pastor André Trocmé led his entire community in providing safe haven, forged papers, and food to roughly 3,500 refugees. These examples proved that rescue was always possible when human beings chose moral courage over passive compliance.',
           source: {
             letter: 'D',
             type: 'visual',
@@ -4643,7 +4733,7 @@ const the_shoah_data = {
         {
           act: 5,
           title: 'Allied Knowledge, Dilemmas, and the Question of Action',
-          text: '<span class="para-ref">[6.5]</span> What did the Allied powers know, and when did they know it? By mid-1942, detailed reports of mass shootings and gassings were reaching London and Washington through Polish underground couriers like <strong>Jan Karski</strong>. On <strong>17 December 1942</strong>, the British, American, and Soviet governments issued a formal Joint Declaration condemning Nazi Germany’s <em>"bestial policy of cold-blooded extermination"</em> and promising post-war retribution. However, military policy did not change. In 1943, delegates met at the Bermuda Conference but took no meaningful action to loosen immigration quotas. In 1944, Jewish leaders pleaded with the British and US air forces to bomb the railway lines leading to Auschwitz or the gas chambers themselves. Allied commanders repeatedly refused, arguing that diverted air resources would dilute the strategic bombing campaign and that the fastest way to rescue surviving prisoners was to achieve the complete military defeat of Nazi Germany as quickly as possible.',
+          text: '<span class="para-ref">[6.5]</span> What did the Allied powers know, and when did they know it? By mid-1942, detailed reports of mass shootings and gassings were reaching London and Washington through Polish underground couriers like **Jan Karski**. On **17 December 1942**, the British, American, and Soviet governments issued a formal Joint Declaration condemning Nazi Germany’s <em>"bestial policy of cold-blooded extermination"</em> and promising post-war retribution. However, military policy did not change. In 1943, delegates met at the Bermuda Conference but took no meaningful action to loosen immigration quotas. In 1944, Jewish leaders pleaded with the British and US air forces to bomb the railway lines leading to Auschwitz or the gas chambers themselves. Allied commanders repeatedly refused, arguing that diverted air resources would dilute the strategic bombing campaign and that the fastest way to rescue surviving prisoners was to achieve the complete military defeat of Nazi Germany as quickly as possible.',
           source: {
             letter: 'E',
             type: 'visual',
@@ -5241,33 +5331,48 @@ const the_shoah_data = {
           term: 'Death Marches',
           definition:
             'Forced, guarded evacuations of emaciated camp prisoners on foot over vast distances in freezing winter conditions in 1944–1945 as Soviet forces advanced.',
+          syllables: 'Death Ma-rches',
+          phonetic: 'death marches',
+          tier: '3',
         },
         {
           term: 'Displaced Persons (DP) Camps',
           definition:
             'Temporary refugee camps established by the Allied armies in Germany, Austria, and Italy to house hundreds of thousands of homeless survivors after 1945.',
+          syllables: 'Di-spla-ced Pe-rsons (DP) Camps',
+          phonetic: 'displaced persons (dp) camps',
+          tier: '2',
         },
         {
           term: 'Nuremberg Trials',
           definition:
             'A series of military tribunals held between 1945 and 1946 by the Allied powers in Nuremberg, Germany, prosecuting top Nazi leaders for war crimes and crimes against humanity.',
+          syllables: 'Nu-re-mberg Trials',
+          phonetic: 'nuremberg trials',
+          tier: '3',
         },
         {
           term: 'Genocide',
           definition:
             'A legal term coined in 1944 by Raphael Lemkin, defined as acts committed with intent to destroy, in whole or in part, a national, ethnical, racial, or religious group.',
+          syllables: 'Ge-noci-de',
+          phonetic: 'genocide',
+          tier: '3',
         },
         {
           term: 'Windermere Children',
           definition:
             'A group of approximately 300 orphaned child Holocaust survivors brought to the Lake District in Britain in August 1945 for physical recuperation and psychological recovery.',
+          syllables: 'Wi-nderme-re Chi-ldren',
+          phonetic: 'windermere children',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Death Marches: The Final Spasm of Terror (1944–1945)',
-          text: '<span class="para-ref">[7.1]</span> In the autumn and winter of 1944–1945, as the Soviet Red Army broke through German lines in the east and Western Allied armies crossed the Rhine, the Nazi leadership realized defeat was imminent. Rather than allowing camp inmates to be liberated, Heinrich Himmler ordered the desperate evacuation of camps. In freezing sub-zero temperatures, the SS forced hundreds of thousands of starving, skeletal prisoners onto brutal <strong>death marches</strong> toward the interior of Germany. Wearing thin cotton prisoner uniforms and wooden clogs, inmates marched for days across frozen roads without food or water. Anyone who collapsed from exhaustion, lagged behind, or stopped to relieve themselves was instantly shot by SS guards and left in roadside ditches. Between <strong>200,000 and 250,000 people died or were murdered</strong> on these death marches in the final five months of the war.',
+          text: '<span class="para-ref">[7.1]</span> In the autumn and winter of 1944–1945, as the Soviet Red Army broke through German lines in the east and Western Allied armies crossed the Rhine, the Nazi leadership realized defeat was imminent. Rather than allowing camp inmates to be liberated, Heinrich Himmler ordered the desperate evacuation of camps. In freezing sub-zero temperatures, the SS forced hundreds of thousands of starving, skeletal prisoners onto brutal **death marches** toward the interior of Germany. Wearing thin cotton prisoner uniforms and wooden clogs, inmates marched for days across frozen roads without food or water. Anyone who collapsed from exhaustion, lagged behind, or stopped to relieve themselves was instantly shot by SS guards and left in roadside ditches. Between **200,000 and 250,000 people died or were murdered** on these death marches in the final five months of the war.',
           source: {
             letter: 'A',
             type: 'visual',
@@ -5311,7 +5416,7 @@ const the_shoah_data = {
         {
           act: 2,
           title: 'Liberation: The World Confronts the Unimaginable',
-          text: '<span class="para-ref">[7.2]</span> Allied soldiers were completely unprepared for what they discovered. Soviet troops liberated Majdanek in July 1944 and Auschwitz on <strong>27 January 1945</strong> (a date now commemorated worldwide as <em>Holocaust Memorial Day</em>). In the west, American forces entered Buchenwald and Dachau in April 1945. On <strong>15 April 1945</strong>, the British 11th Armoured Division entered <strong>Bergen-Belsen</strong> in northern Germany. Expecting a prisoner-of-war camp, British soldiers found 60,000 starving, typhus-infected human beings living alongside 13,000 unburied corpses decaying in the open air. The BBC correspondent <strong>Richard Dimbleby</strong> entered with the troops and wept openly as he broadcast back to London: <em>"I passed through the barrier and found myself in a world of a nightmare... Here over an acre of ground lay dead and dying people. You could not see which was which."</em> British army bulldozers had to be used to bury thousands of bodies in mass graves to prevent a catastrophic outbreak of typhus.',
+          text: '<span class="para-ref">[7.2]</span> Allied soldiers were completely unprepared for what they discovered. Soviet troops liberated Majdanek in July 1944 and Auschwitz on **27 January 1945** (a date now commemorated worldwide as <em>Holocaust Memorial Day</em>). In the west, American forces entered Buchenwald and Dachau in April 1945. On **15 April 1945**, the British 11th Armoured Division entered **Bergen-Belsen** in northern Germany. Expecting a prisoner-of-war camp, British soldiers found 60,000 starving, typhus-infected human beings living alongside 13,000 unburied corpses decaying in the open air. The BBC correspondent **Richard Dimbleby** entered with the troops and wept openly as he broadcast back to London: <em>"I passed through the barrier and found myself in a world of a nightmare... Here over an acre of ground lay dead and dying people. You could not see which was which."</em> British army bulldozers had to be used to bury thousands of bodies in mass graves to prevent a catastrophic outbreak of typhus.',
           source: {
             letter: 'B',
             type: 'visual',
@@ -5355,7 +5460,7 @@ const the_shoah_data = {
         {
           act: 3,
           title: 'The Painful Aftermath: Displaced Persons and Windermere',
-          text: '<span class="para-ref">[7.3]</span> For the survivors, liberation did not bring sudden joy; it brought the agonizing reality of total loss. Many returned to their hometowns in Poland only to find their family homes occupied by neighbours who greeted them with hostility. In July 1946, a violent antisemitic pogrom erupted in <strong>Kielce, Poland</strong>, where forty-two Jewish survivors were murdered by local residents. Realising they had nowhere to go, over <strong>250,000 Jewish survivors</strong> were forced to live for years in <strong>Displaced Persons (DP) camps</strong> in Germany and Austria, often guarded by the very Allied soldiers who had defeated Germany. In August 1945, the British government permitted 300 orphaned child survivors—known as the <strong>Windermere Children</strong>—to travel to the Lake District in northern England. There, surrounded by clean air, lakes, and compassionate care, these traumatised young people began the painful, courageous process of healing and rebuilding their lives.',
+          text: '<span class="para-ref">[7.3]</span> For the survivors, liberation did not bring sudden joy; it brought the agonizing reality of total loss. Many returned to their hometowns in Poland only to find their family homes occupied by neighbours who greeted them with hostility. In July 1946, a violent antisemitic pogrom erupted in **Kielce, Poland**, where forty-two Jewish survivors were murdered by local residents. Realising they had nowhere to go, over **250,000 Jewish survivors** were forced to live for years in **Displaced Persons (DP) camps** in Germany and Austria, often guarded by the very Allied soldiers who had defeated Germany. In August 1945, the British government permitted 300 orphaned child survivors—known as the **Windermere Children**—to travel to the Lake District in northern England. There, surrounded by clean air, lakes, and compassionate care, these traumatised young people began the painful, courageous process of healing and rebuilding their lives.',
           source: {
             letter: 'C',
             type: 'visual',
@@ -5399,7 +5504,7 @@ const the_shoah_data = {
         {
           act: 4,
           title: 'Justice and International Law: Nuremberg and Lemkin',
-          text: '<span class="para-ref">[7.4]</span> In November 1945, the Allied powers convened the <strong>International Military Tribunal (IMT) at Nuremberg</strong>. In the very city where Hitler had enacted the 1935 racial laws, twenty-one senior Nazi leaders—including Hermann Göring and Rudolf Hess—sat in the dock. The tribunal established the revolutionary legal principle that "following orders" from a superior officer was no defence for committing state crimes. Twelve defendants were sentenced to death by hanging for war crimes and <strong>crimes against humanity</strong>. Meanwhile, a Polish-Jewish legal scholar named <strong>Raphael Lemkin</strong>, who had lost forty-nine members of his family in the Holocaust, campaigned tirelessly for the creation of a new international law. Lemkin coined the word <strong>"genocide"</strong> (combining the Greek <em>genos</em>, meaning race or tribe, with the Latin <em>cide</em>, meaning killing). In December 1948, the United Nations adopted the <strong>Genocide Convention</strong>, officially making the intentional destruction of a people a universal crime under international law.',
+          text: '<span class="para-ref">[7.4]</span> In November 1945, the Allied powers convened the **International Military Tribunal (IMT) at Nuremberg**. In the very city where Hitler had enacted the 1935 racial laws, twenty-one senior Nazi leaders—including Hermann Göring and Rudolf Hess—sat in the dock. The tribunal established the revolutionary legal principle that "following orders" from a superior officer was no defence for committing state crimes. Twelve defendants were sentenced to death by hanging for war crimes and **crimes against humanity**. Meanwhile, a Polish-Jewish legal scholar named **Raphael Lemkin**, who had lost forty-nine members of his family in the Holocaust, campaigned tirelessly for the creation of a new international law. Lemkin coined the word **"genocide"** (combining the Greek <em>genos</em>, meaning race or tribe, with the Latin <em>cide</em>, meaning killing). In December 1948, the United Nations adopted the **Genocide Convention**, officially making the intentional destruction of a people a universal crime under international law.',
           source: {
             letter: 'D',
             type: 'visual',
@@ -5443,7 +5548,7 @@ const the_shoah_data = {
         {
           act: 5,
           title: 'What Was Lost? The Imperative of Memory',
-          text: '<span class="para-ref">[7.5]</span> What was lost in the Shoah? <strong>Approximately six million Jewish people</strong>—two out of every three European Jews, including 1.5 million children—were murdered. Yet the loss cannot be measured in numbers alone. With them vanished an entire civilization: a millennium of Yiddish language, poetry, theatre, religious debate, and communal memory across Central and Eastern Europe. Entire family branches, centuries-old synagogues, and irreplaceable archives were erased from human existence. As the generation of eyewitness survivors passes away, the duty of bearing witness shifts to us. To remember the Shoah is not merely to mourn the dead; it is to understand how easily civilized societies can slide into barbarism, to challenge antisemitism and racism in our own communities, and to uphold the solemn promise inscribed on memorials across the globe: <em>Never Again</em>.',
+          text: '<span class="para-ref">[7.5]</span> What was lost in the Shoah? **Approximately six million Jewish people**—two out of every three European Jews, including 1.5 million children—were murdered. Yet the loss cannot be measured in numbers alone. With them vanished an entire civilization: a millennium of Yiddish language, poetry, theatre, religious debate, and communal memory across Central and Eastern Europe. Entire family branches, centuries-old synagogues, and irreplaceable archives were erased from human existence. As the generation of eyewitness survivors passes away, the duty of bearing witness shifts to us. To remember the Shoah is not merely to mourn the dead; it is to understand how easily civilized societies can slide into barbarism, to challenge antisemitism and racism in our own communities, and to uphold the solemn promise inscribed on memorials across the globe: <em>Never Again</em>.',
           source: {
             letter: 'E',
             type: 'visual',

@@ -27,8 +27,8 @@ const COMPANIONS_CATALOG = [
   // Key Stage 2 (4 Pages)
   {
     tier: 'KS2',
-    name: 'KS2: World War II Quiz Pack',
-    file: 'ks2_ww2_quiz_pack.pdf',
+    name: 'KS2: World War II Retrieval Companion',
+    file: 'KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf',
     expectedPages: 4,
     sheets: 1,
   },

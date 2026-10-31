@@ -155,7 +155,7 @@ In **every turn and recommendation**, regardless of the specific topic being wor
 | `cold_war` | Year 9 (KS3) | The Cold War (1945–1991) | 🌟 **100% COMPLETE** | 16-page double-page workbook + 8-page companion textbook + Master Retrieval Companion compiled and active. |
 | `the_shoah` | Year 9 (KS3) | The Shoah (Holocaust Education) | 🌟 **100% COMPLETE** | All 7 lessons (35 stages) 100% populated with Option 1 enquiry roadmap standard, decimal paragraph badges [1.1]–[7.5], dual-pathway living timeline missions, and companion narrative textbook. |
 | `post_war_britain` | Year 9 (KS3) | Post-War Britain (1945–1990s) | 🌟 **100% COMPLETE** | 16-page double-page workbook + 8-page companion textbook + 8-page Master Retrieval Companion compiled and active. |
-| `water_and_sanitation` | Year 7 (KS3) | Water & Sanitation Through Time | 🌟 **100% COMPLETE** | 20-page saddle-stitch double-page workbook + 8-page Master Knowledge Retrieval Companion active on `main`. |
+| `water_and_sanitation` | Year 7 (KS3) | Water & Sanitation Through Time | 🌟 **100% COMPLETE** | 16-page saddle-stitch double-page workbook + 8-page Master Classroom Narrative Textbook + November Assessment Masterclass backward-compatible routing. |
 | `edexcel_medicine` | GCSE (Y10–11) | Medicine in Britain c1250–Present | 🌟 **100% COMPLETE** | All 26 lessons (130 stages across KT1–KT5) 100% synchronized with Option 1 enquiry roadmap, causal domino spines, and master toggle. Full GCSE parity achieved! |
 
 ---

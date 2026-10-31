@@ -1083,7 +1083,7 @@ module.exports = function getGreatWarPart2Data(helpers = {}) {
     yearGroup: 'Year 9',
     subtitle: 'Voluntary Enlistment, Trench Warfare, Global Empire & The Peace of Versailles',
     overarchingEnquiry:
-      'How did a single spark in Sarajevo ignite a global conflict that transformed the modern world?',
+      'How did total industrialised war (1914–1919) shatter societies and transform the modern world?',
     dateRange: '1914–1919',
     heroImage: '/images/stubbington_memorial_1.jpg',
     heroCaption:

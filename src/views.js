@@ -1786,8 +1786,19 @@ export async function renderLessonsView() {
       targetIndex = lessonsList.findIndex(
         (l) =>
           l.id === requestedLesson ||
+          (l.alias_ids && l.alias_ids.includes(requestedLesson)) ||
           (l.title && l.title.toLowerCase().includes(requestedLesson.toLowerCase())),
       );
+    }
+    // Backward-compatibility alias: Water & Sanitation November Assessment was previously Lesson 7
+    if (
+      (unitId === 'water_and_sanitation' || window.currentUnitId === 'water_and_sanitation') &&
+      (parsed === 7 ||
+        requestedLesson === 'lesson_7' ||
+        requestedLesson === '7' ||
+        targetIndex >= lessonsList.length)
+    ) {
+      targetIndex = lessonsList.length - 1; // Seamlessly routes to November Assessment Masterclass (Lesson 6)
     }
     if (targetIndex >= 0 && targetIndex < lessonsList.length) {
       window.viewLessonDetail(targetIndex, null, true);

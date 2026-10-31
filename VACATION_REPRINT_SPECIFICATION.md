@@ -1,13 +1,13 @@
 # The History Revision Hub: Commercial Vacation Reprint & Procurement Specification (2026–2027)
 
 **Single Source of Truth Commercial Reprographics Manifest for Print Shops & Purchasing Institutions**  
-*Generated: 2026-10-30T23:31:20.488Z • 100% Institutional Neutrality Verified • Zero School Identifiers*
+*Generated: 2026-10-31T00:21:14.596Z • 100% Institutional Neutrality Verified • Zero School Identifiers*
 
 ---
 
 ## 🏛️ Executive Summary & Production Totals
 
-- **Total Canonical Publications:** 70 distinct master publications
+- **Total Canonical Publications:** 73 distinct master publications
 - **Total Physical Pages:** 1096 pages (100% multiple of 4, zero blank or overflow pages)
 - **Total Folded A3 Sheets:** 274 physical sheets (saddle-stitched)
 - **Reprographic Standard:** Zero 1px DOM/Skia overflow, high-legibility Lora/Inter typography, British exercise book handwriting pitch.
@@ -20,7 +20,7 @@
 | :--- | :---: | :---: | :--- | :--- | :--- | :--- |
 | **Master Textbook** | A4 (210mm x 297mm) | A3 (420mm x 297mm) | 130gsm Silk Paper | 250gsm Matt Art Card | 4/4 Full Colour throughout | Saddle-stitch (2 spine wire staples) |
 | **Pupil Workbook** | A4 (210mm x 297mm) | A3 (420mm x 297mm) | 100gsm Uncoated (Opaque, high ink absorption) | 250gsm Matt Art Card | 4/1 Colour Cover, Black & White Mono interior | Saddle-stitch (2 spine wire staples) |
-| **Retrieval Companion** | A5 (148mm x 210mm) | A4 (297mm x 210mm) | 100gsm Uncoated Paper | 250gsm Matt Art Card | 4/1 Colour Cover, Black & White Mono interior | Saddle-stitch (2 spine wire staples) |
+| **Retrieval Companion** | A4 (210mm x 297mm) | A3 (420mm x 297mm) | 100gsm Uncoated Paper | 250gsm Matt Art Card | 4/1 Colour Cover, Black & White Mono interior | Saddle-stitch (2 spine wire staples) |
 
 ---
 
@@ -65,7 +65,10 @@
 | **GCSE** | Workbook | Conflict in the Middle East: KT1 Booklet | `cme_new_pupil_workbook_KT1.pdf` | 24p | 6 sh | `7a0fc7b0357ac8d0...` |
 | **GCSE** | Workbook | Conflict in the Middle East: KT2 Booklet | `cme_new_pupil_workbook_KT2.pdf` | 24p | 6 sh | `c514794760634059...` |
 | **GCSE** | Workbook | Conflict in the Middle East: KT3 Booklet | `cme_new_pupil_workbook_KT3.pdf` | 24p | 6 sh | `f2cbcf615d7516d8...` |
-| **GCSE** | Workbook | USA 1954–1975 Master Compendium Workbook (48 Pages) | `usa_mastery_pack_FULL.pdf` | 48p | 12 sh | `2c773f61771aea39...` |
+| **GCSE** | Workbook | The USA, 1954–1975: KT1 Booklet (Civil Rights 1954–60) | `usa_pupil_workbook_KT1.pdf` | 12p | 3 sh | `5b821c5fbdb0789c...` |
+| **GCSE** | Workbook | The USA, 1954–1975: KT2 Booklet (Black Power 1960–75) | `usa_pupil_workbook_KT2.pdf` | 12p | 3 sh | `39741266e08d4e41...` |
+| **GCSE** | Workbook | The USA, 1954–1975: KT3 Booklet (Peace & Protest 1960–75) | `usa_pupil_workbook_KT3.pdf` | 12p | 3 sh | `7f635a28d78c4fbf...` |
+| **GCSE** | Workbook | The USA, 1954–1975: KT4 Booklet (Vietnam War 1954–75) | `usa_pupil_workbook_KT4.pdf` | 12p | 3 sh | `795f3682e0d7f01e...` |
 | **GCSE** | Workbook | Weimar & Nazi Germany: KT1 Booklet | `weimar_nazi_germany_pupil_workbook_KT1.pdf` | 20p | 5 sh | `977eb5b2d2fba7ba...` |
 | **GCSE** | Workbook | Weimar & Nazi Germany: KT2 Booklet | `weimar_nazi_germany_pupil_workbook_KT2.pdf` | 20p | 5 sh | `fc260f79065de6b3...` |
 | **GCSE** | Workbook | Weimar & Nazi Germany: KT3 Booklet | `weimar_nazi_germany_pupil_workbook_KT3.pdf` | 20p | 5 sh | `6623786dc5337423...` |
@@ -79,7 +82,7 @@
 | **GCSE** | Workbook | Medicine in Britain: Modern Medicine Workbook | `edexcel_medicine_pupil_workbook_modern.pdf` | 20p | 5 sh | `6ad1f97d29d97c5b...` |
 | **GCSE** | Workbook | Medicine in Britain: Western Front Historic Environment | `edexcel_medicine_pupil_workbook_western_front.pdf` | 28p | 7 sh | `8a93dafc0e68ecf7...` |
 | **GCSE** | Workbook | Cold War Full Unit Workbook | `cold_war_pupil_workbook.pdf` | 16p | 4 sh | `4b1d19ff8c20d2f6...` |
-| **KS2** | Retrieval | KS2: World War II Quiz Pack | `ks2_ww2_quiz_pack.pdf` | 4p | 1 sh | `f283d389d2a684f6...` |
+| **KS2** | Retrieval | KS2: World War II Retrieval Companion | `KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf` | 4p | 1 sh | `f283d389d2a684f6...` |
 | **KS3** | Retrieval | Causes of the Great War Retrieval Companion | `Causes_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf` | 8p | 2 sh | `080cc69c6edcd821...` |
 | **KS3** | Retrieval | The Course of the Great War Retrieval Companion | `The_Course_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf` | 8p | 2 sh | `a569915c892adf4c...` |
 | **KS3** | Retrieval | Medieval England Retrieval Companion | `Medieval_England_Master_Knowledge_Retrieval_Companion.pdf` | 8p | 2 sh | `4389258b47e98f84...` |

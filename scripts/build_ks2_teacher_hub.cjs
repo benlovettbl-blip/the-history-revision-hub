@@ -1154,8 +1154,8 @@ const htmlContent = `<!DOCTYPE html>
         <a href="ks2_ww2_scheme_of_work.html" class="btn btn-outline">
           <i class="fa-solid fa-list-check"></i> Scheme of Work
         </a>
-        <a href="/pdfs/ks2_ww2/ks2_ww2_quiz_pack.pdf" target="_blank" class="btn btn-outline">
-          <i class="fa-solid fa-award"></i> Quiz Booklet (PDF)
+        <a href="/pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf" target="_blank" class="btn btn-outline">
+          <i class="fa-solid fa-award"></i> Retrieval Companion (PDF)
         </a>
         <a href="/pdfs/ks2_ww2/ks2_ww2_source_bibliography.pdf" target="_blank" class="btn btn-outline">
           <i class="fa-solid fa-landmark"></i> Source Bibliography (PDF)

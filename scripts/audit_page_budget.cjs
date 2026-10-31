@@ -58,6 +58,56 @@ function lintCognitiveClutter(content) {
 }
 
 /**
+ * Audits bold term density in narrative blocks of a unit or lesson.
+ * Enforces a healthy pedagogical density of 1 to 4 bold Tier 3 terms per narrative block
+ * (avoiding 0-bold voids or excessive over-bolding that causes visual fatigue).
+ * @param {Array<{ text?: string, content?: string }>} blocks
+ * @returns {{ clean: boolean, warnings: string[], results: Array<{ blockIndex: number, boldCount: number, status: string, terms: string[] }> }}
+ */
+function auditNarrativeBoldDensity(blocks) {
+  if (!Array.isArray(blocks) || blocks.length === 0) {
+    return { clean: true, warnings: [], results: [] };
+  }
+
+  const warnings = [];
+  const results = [];
+
+  blocks.forEach((block, idx) => {
+    const text = block.text || block.content || '';
+    const bolds = (text.match(/\*\*([^*]+)\*\*/g) || []).concat(
+      text.match(/<strong(?:\s+[^>]*)?>([\s\S]*?)<\/strong>/gi) || [],
+    );
+    const count = bolds.length;
+
+    let status = 'OPTIMAL';
+    if (count === 0) {
+      status = 'EMPTY';
+      warnings.push(
+        `Block [${idx + 1}] has 0 bold terms (under-enriched; recommend 2-3 Tier 3 anchors).`,
+      );
+    } else if (count > 5) {
+      status = 'DENSE';
+      warnings.push(
+        `Block [${idx + 1}] has ${count} bold terms (risk of cognitive clutter; recommend <= 4).`,
+      );
+    }
+
+    results.push({
+      blockIndex: idx + 1,
+      boldCount: count,
+      status,
+      terms: bolds.map((b) => b.replace(/<[^>]+>|\*\*/g, '').trim()),
+    });
+  });
+
+  return {
+    clean: warnings.length === 0,
+    warnings,
+    results,
+  };
+}
+
+/**
  * Executes DOM budget & clutter audit inside a Puppeteer page
  * @param {import('puppeteer').Page} page
  * @param {Object} options
@@ -736,6 +786,7 @@ if (require.main === module) {
 module.exports = {
   BANNED_PUPIL_FLUFF,
   lintCognitiveClutter,
+  auditNarrativeBoldDensity,
   auditPageBudget,
   printSpaceAuditReport,
 };

@@ -1564,7 +1564,7 @@ async function run() {
 
   const publicHtmlPath = path.join(publicHtmlDir, 'textbook_UNIFIED.html');
   const rootHtmlPath = path.join(rootHtmlDir, 'textbook_UNIFIED.html');
-  const pdfPath = path.join(ROOT_DIR, 'public', 'pdfs', `${unitId}_textbook_UNIFIED_FINAL.pdf`);
+  const pdfPath = path.join(ROOT_DIR, 'public', 'pdfs', `${unitId}_textbook.pdf`);
 
   fs.writeFileSync(publicHtmlPath, html, 'utf8');
   fs.writeFileSync(rootHtmlPath, html, 'utf8');
@@ -1704,12 +1704,6 @@ async function run() {
   });
 
   console.log(`\nMaster 28-Page Textbook PDF compiled to: ${pdfPath}`);
-  const legacyPdfPath = path.join(ROOT_DIR, 'public', 'pdfs', `${unitId}_textbook.pdf`);
-  const unifiedPdfPath = path.join(ROOT_DIR, 'public', 'pdfs', `${unitId}_textbook_UNIFIED.pdf`);
-  try {
-    fs.copyFileSync(pdfPath, legacyPdfPath);
-    fs.copyFileSync(pdfPath, unifiedPdfPath);
-  } catch (e) {}
   await browser.close();
   return true;
 }

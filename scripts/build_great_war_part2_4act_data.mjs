@@ -1018,7 +1018,7 @@ const updatedUnitData = {
   id: 'great_war_part2',
   title: 'KS3: The Great War (1914–1919)',
   enquiry:
-    'How did a single spark in Sarajevo ignite a global conflict that transformed the modern world?',
+    'How did total industrialised war (1914–1919) shatter societies and transform the modern world?',
   homepage_background: '/images/bg_great_war_part2.jpg',
   cover_image: '/images/bg_great_war_part2.jpg',
   hero_image: '/images/stubbington_memorial_1.jpg',

@@ -36,8 +36,12 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
     if (url.includes('/units/ks2_ww2/')) {
       if (url.includes('pupil_workbook')) {
         resolvedPdfUrl = '/pdfs/ks2_ww2_pupil_workbook.pdf';
-      } else if (url.includes('quiz_pack')) {
-        resolvedPdfUrl = '/pdfs/ks2_ww2_quiz_pack.pdf';
+      } else if (
+        url.includes('quiz_pack') ||
+        url.includes('retrieval') ||
+        url.includes('companion')
+      ) {
+        resolvedPdfUrl = '/pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf';
       } else if (url.includes('textbook')) {
         resolvedPdfUrl = '/pdfs/ks2_ww2_textbook.pdf';
       } else if (url.includes('/worksheets/')) {
@@ -49,8 +53,12 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
     } else if (url.includes('/units/medieval_england/')) {
       if (url.includes('pupil_workbook')) {
         resolvedPdfUrl = '/pdfs/medieval_england_pupil_workbook.pdf';
-      } else if (url.includes('quiz_pack')) {
-        resolvedPdfUrl = '/pdfs/medieval_england_quiz_pack.pdf';
+      } else if (
+        url.includes('quiz_pack') ||
+        url.includes('retrieval_companion') ||
+        url.includes('companion')
+      ) {
+        resolvedPdfUrl = '/pdfs/Medieval_England_Master_Knowledge_Retrieval_Companion.pdf';
       } else {
         resolvedPdfUrl = '/pdfs/medieval_england_textbook.pdf';
       }
@@ -60,7 +68,7 @@ window.openInPagePreview = function (url, title, pdfUrl, options = {}) {
       if (url.includes('pupil_workbook')) {
         resolvedPdfUrl = '/pdfs/great_war_pupil_workbook.pdf';
       } else {
-        resolvedPdfUrl = '/pdfs/great_war_quiz_pack.pdf';
+        resolvedPdfUrl = '/pdfs/Causes_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf';
       }
     } else if (url.includes('/units/cme_new/')) {
       const clean = url.split('/').pop().replace('.html', '');
@@ -259,7 +267,7 @@ const UNIT_PUBLICATIONS = {
           pages: '28 Pages',
           desc: 'Complete 28-page pure narrative classroom textbook. 12 Enquiry Spreads, Chronological Milestone Spine, Dual Cartographic Perspectives & Master 60-Question Retrieval Quiz.',
           readUrl: '/units/cme_new/textbook_UNIFIED.html',
-          pdfUrl: '/pdfs/cme_new_textbook_UNIFIED.pdf',
+          pdfUrl: '/pdfs/cme_new_textbook.pdf',
         },
       ],
     },
@@ -374,7 +382,7 @@ const UNIT_PUBLICATIONS = {
           pages: '12 Pages',
           desc: '40 core factual questions across all enquiries with dual handwriting lines, front tracking ledger, and teacher marking bank.',
           readUrl: '/units/medieval_england/quiz_pack.html',
-          pdfUrl: '/pdfs/medieval_england_quiz_pack.pdf',
+          pdfUrl: '/pdfs/Medieval_England_Master_Knowledge_Retrieval_Companion.pdf',
         },
       ],
     },
@@ -394,7 +402,7 @@ const UNIT_PUBLICATIONS = {
           pages: '28 Pages',
           desc: 'Complete 28-page pure narrative classroom textbook. 12 Canonical Disciplinary Enquiries, Chronological Milestone Spine, Geopolitical Theater Atlas & 4 Strategic Flashpoints, and Master 60-Question Retrieval Quiz.',
           readUrl: '/units/usa/textbook_UNIFIED.html',
-          pdfUrl: '/pdfs/usa_textbook_UNIFIED.pdf',
+          pdfUrl: '/pdfs/usa_textbook.pdf',
         },
         {
           id: 'all',
@@ -626,7 +634,7 @@ const UNIT_PUBLICATIONS = {
           pages: '28 Pages',
           desc: '20 lessons × 10 Qs, 750-year chronology flowchart, 6-factor matrix, marking bank, and Q3–Q6 model answers.',
           readUrl: '/units/edexcel_medicine/med_recall_quiz_FULL.html',
-          pdfUrl: '/pdfs/Medicine_Thematic_Study_Master_Knowledge_Retrieval_Companion.pdf',
+          pdfUrl: '/pdfs/Medicine_Through_Time_Master_Knowledge_Retrieval_Companion.pdf',
         },
         {
           id: 'section_a',
@@ -655,7 +663,7 @@ const UNIT_PUBLICATIONS = {
           pages: '28 Pages',
           desc: 'Complete 28-page pure narrative classroom textbook. 12 Canonical Disciplinary Enquiries, Chronological Milestone Spine, Dual Cartographic Perspectives & 4 Strategic Flashpoints, and Master 60-Question Retrieval Quiz.',
           readUrl: '/units/eee/textbook_UNIFIED.html',
-          pdfUrl: '/pdfs/eee_textbook_UNIFIED.pdf',
+          pdfUrl: '/pdfs/eee_textbook.pdf',
         },
       ],
     },
@@ -725,7 +733,7 @@ const UNIT_PUBLICATIONS = {
           pages: '16 Pages',
           desc: 'Streamlined large-font retrieval pack across all 12 lessons with dual write-in lines, 0% bloat, and marking bank at the back.',
           readUrl: '/units/eee/quiz_pack.html',
-          pdfUrl: '/pdfs/Early_Elizabethan_England_Quiz_Pack.pdf',
+          pdfUrl: '/pdfs/Early_Elizabethan_England_Master_Knowledge_Retrieval_Companion.pdf',
         },
         {
           id: 'all',
@@ -754,7 +762,7 @@ const UNIT_PUBLICATIONS = {
           pages: '28 Pages',
           desc: 'Complete 28-page pure narrative classroom textbook. 12 Canonical Disciplinary Enquiries, Chronological Milestone Spine, Dual Cartographic Perspectives & 4 Strategic Flashpoints, and Master 60-Question Retrieval Quiz.',
           readUrl: '/units/weimar_nazi_germany/textbook_UNIFIED.html',
-          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_UNIFIED.pdf',
+          pdfUrl: '/pdfs/weimar_nazi_germany_textbook.pdf',
         },
         {
           id: 'all',
@@ -914,7 +922,7 @@ const UNIT_PUBLICATIONS = {
           pages: '12 Pages (A5 Booklet)',
           desc: '48 core factual questions across all 6 lessons with two handwriting lines, 1871–1914 domino flowchart, front tracking ledger, marking bank, and assessment architect.',
           readUrl: '/units/great_war/quiz_pack.html',
-          pdfUrl: '/pdfs/great_war_quiz_pack.pdf',
+          pdfUrl: '/pdfs/Causes_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf',
         },
       ],
     },
@@ -1076,7 +1084,7 @@ const UNIT_PUBLICATIONS = {
           pages: '4 Pages (40 Questions)',
           desc: 'Streamlined 4-page A4 companion (1 folded A3 sheet) covering all 10 enquiries. Features 40 recall checkpoints, student tracking ledger, complete Department Marking Bank, and teacher feedback rubric.',
           readUrl: '/units/ks2_ww2/quiz_pack.html',
-          pdfUrl: '/pdfs/ks2_ww2_quiz_pack.pdf',
+          pdfUrl: '/pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf',
         },
       ],
     },
@@ -1130,7 +1138,8 @@ const UNIT_PUBLICATIONS = {
           pages: '12 Pages',
           desc: 'Factual retrieval questions across all 7 enquiries with handwriting lines, chronology flowcharts, and marking banks.',
           readUrl: '/units/cold_war/quiz_pack.html',
-          pdfUrl: '/pdfs/cold_war_quiz_pack.pdf',
+          pdfUrl:
+            '/pdfs/Superpower_Relations_and_Cold_War_Master_Knowledge_Retrieval_Companion.pdf',
         },
       ],
     },

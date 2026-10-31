@@ -373,46 +373,70 @@ const water_and_sanitation_data = {
           a: 'AD 43.',
         },
       ],
-      vocabulary: [
+      vocab: [
         {
           term: 'Aqueduct',
           definition:
             'A monumental bridge or masonry channel engineered to convey fresh spring water over long distances using gravity.',
+          syllables: 'A-que-duct',
+          phonetic: 'aqueduct',
+          tier: '2',
         },
         {
           term: 'Thermae',
           definition:
             'Large, state-run public bathhouses equipped with heated pools, exercise yards, and social meeting spaces.',
+          syllables: 'The-rmae',
+          phonetic: 'thermae',
+          tier: '2',
         },
         {
           term: 'Hypocaust',
           definition:
             'An underground Roman central heating system where furnace heat and hot smoke circulated beneath suspended floors.',
+          syllables: 'Hy-pocaust',
+          phonetic: 'hypocaust',
+          tier: '2',
         },
         {
           term: 'Strigil',
           definition:
             'A curved bronze or iron scraping tool used with olive oil to remove sweat, grime, and dead skin from the body.',
+          syllables: 'Stri-gil',
+          phonetic: 'strigil',
+          tier: '2',
         },
         {
           term: 'Latrine',
           definition:
             'A communal multi-seater public toilet consisting of stone benches set over a deep running-water sewer ditch.',
+          syllables: 'La-tri-ne',
+          phonetic: 'latrine',
+          tier: '2',
         },
         {
           term: 'Tersorium',
           definition:
             'A natural sea sponge affixed to a wooden stick, used communally to clean oneself in Roman latrines.',
+          syllables: 'Te-rso-rium',
+          phonetic: 'tersorium',
+          tier: '2',
         },
         {
           term: 'Plumbism',
           definition:
             'Chronic, toxic lead poisoning caused by consuming water or wine conveyed through lead pipes and lead-lined cookware.',
+          syllables: 'Plu-mbism',
+          phonetic: 'plumbism',
+          tier: '3',
         },
         {
           term: 'Romanitas',
           definition:
             'The cultural, political, and technological ideals of Roman imperial civilization and power.',
+          syllables: 'Ro-mani-tas',
+          phonetic: 'romanitas',
+          tier: '2',
         },
       ],
       narrative_blocks: [
@@ -1782,46 +1806,70 @@ const water_and_sanitation_data = {
           a: 'The tersorium (a sea sponge on a stick rinsed in salt water).',
         },
       ],
-      vocabulary: [
+      vocab: [
         {
           term: 'Borough',
           definition:
             'A self-governing medieval town granted a royal charter with the right to hold regular markets and run local courts.',
+          syllables: 'Bo-rough',
+          phonetic: 'borough',
+          tier: '2',
         },
         {
           term: 'Gong Farmer',
           definition:
             'A nocturnal specialist labourer hired to dig out and remove raw human sewage from domestic cesspits.',
+          syllables: 'Gong Fa-rmer',
+          phonetic: 'gong farmer',
+          tier: '2',
         },
         {
           term: 'Cesspit',
           definition:
             'A deep pit lined with dry stone or timber, dug beneath or behind houses to collect household toilet waste.',
+          syllables: 'Ce-sspit',
+          phonetic: 'cesspit',
+          tier: '2',
         },
         {
           term: 'Miasma',
           definition:
             'The incorrect medical belief that infectious diseases were generated and transmitted by toxic, foul-smelling air.',
+          syllables: 'mi-as-ma',
+          phonetic: 'maɪˈæzmə',
+          tier: '3',
         },
         {
           term: 'Settling Tank',
           definition:
             'A stone reservoir designed to slow water flow so that suspended sand, silt, and mud sink to the bottom, purifying the water.',
+          syllables: 'Se-ttling Tank',
+          phonetic: 'settling tank',
+          tier: '2',
         },
         {
           term: 'Lavatorium',
           definition:
             'A dedicated stone washing trough or circular fountain located outside a monastic dining refectory for communal handwashing.',
+          syllables: 'La-vato-rium',
+          phonetic: 'lavatorium',
+          tier: '2',
         },
         {
           term: 'Black Death',
           definition:
             'The catastrophic pandemic of bubonic and pneumonic plague that struck Britain in 1348, killing up to half the population.',
+          syllables: 'Black Death',
+          phonetic: 'black death',
+          tier: '3',
         },
         {
           term: 'Statute of Cambridge',
           definition:
             'A 1388 parliamentary law passed under Richard II banning the disposal of animal dung, offal, and refuse into public rivers and ditches.',
+          syllables: 'Sta-tute of Ca-mbridge',
+          phonetic: 'statute of cambridge',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -3231,46 +3279,70 @@ const water_and_sanitation_data = {
           a: 'The Statute of Cambridge.',
         },
       ],
-      vocabulary: [
+      vocab: [
         {
           term: 'Metropolis',
           definition:
             'A very large, densely populated commercial and cultural capital city, such as seventeenth-century London.',
+          syllables: 'Me-tro-polis',
+          phonetic: 'metropolis',
+          tier: '2',
         },
         {
           term: 'Water Closet',
           definition:
             'An early flush toilet system that washed human excrement away through a drain pipe using water from a cistern.',
+          syllables: 'Wa-ter Clo-set',
+          phonetic: 'water closet',
+          tier: '2',
         },
         {
           term: 'Sir John Harington',
           definition:
             'Elizabethan courtier and godson to Elizabeth I who invented the first mechanical flush toilet in 1596.',
+          syllables: 'Sir John Ha-ri-ngton',
+          phonetic: 'sir john harington',
+          tier: '2',
         },
         {
           term: 'New River',
           definition:
             'A 38-mile man-made fresh water aqueduct canal opened in 1613 to bring drinking water from Hertfordshire to London.',
+          syllables: 'New Ri-ver',
+          phonetic: 'new river',
+          tier: '3',
         },
         {
           term: 'Samuel Pepys',
           definition:
             'Senior naval administrator whose celebrated 1660s diary vividly documented domestic sanitation, the Great Plague, and the Great Fire.',
+          syllables: 'Sa-muel Pe-pys',
+          phonetic: 'samuel pepys',
+          tier: '3',
         },
         {
           term: 'Searchers of the Dead',
           definition:
             'Elderly women appointed by parish authorities during plague outbreaks to inspect corpses and confirm causes of death.',
+          syllables: 'Sea-rchers of the Dead',
+          phonetic: 'searchers of the dead',
+          tier: '3',
         },
         {
           term: 'Nightsoil',
           definition:
             'Human feces collected at night from household cesspits and privies, used as agricultural manure.',
+          syllables: 'Ni-ghtsoil',
+          phonetic: 'nightsoil',
+          tier: '2',
         },
         {
           term: 'Bills of Mortality',
           definition:
             'Weekly published statistical mortality sheets in London recording numbers of burials and causes of death by parish.',
+          syllables: 'Bills of Mo-rta-lity',
+          phonetic: 'bills of mortality',
+          tier: '2',
         },
       ],
       narrative_blocks: [
@@ -4472,200 +4544,23 @@ const water_and_sanitation_data = {
     },
     {
       id: 'lesson_4',
-      title: 'How did the Industrial Revolution lead to a public health crisis?',
+      title:
+        "Enquiry 4: How did industrial growth and the 'Great Stink' force Britain to build modern sewers?",
+      short_title: 'Industrial Squalor & The Great Stink',
+      period: '1750–1858',
       enquiry:
-        "Was Victorian cholera spread by greedy factory owners building cheap slums, or by the government's refusal to interfere?",
+        'Was Victorian cholera conquered by civil engineering and fear of the Great Stink, or did politicians act out of genuine care for the poor?',
       subtitle:
-        'From boomtowns and back-to-backs to Asiatic cholera and Edwin Chadwick’s 1842 Report',
-      skill: 'Disciplinary Skill: Causation & Living Conditions',
-      card_image: '/images/victorian_slum.jpg',
-      card_position: 'center 30%',
-      banner: '/images/coalbrookdale_by_night.jpg',
-      cover_image: '/images/victorian_slum.jpg',
+        'Enquiry 04: Boomtown Squalor, Asiatic Cholera & Joseph Bazalgette’s Underground Revolution (1750–1858)',
+      skill: 'Causation & Significance',
+      card_image: '/images/court_for_king_cholera.png',
+      card_position: 'center',
+      banner: 'Enquiry 04 • Industrial Growth & The Great Stink (1750–1858)',
+      cover_image: '/images/father_thames_punch_1858.jpg',
       prologue:
-        'Between 1780 and 1850, the Industrial Revolution catapulted Britain into the modern age as the "workshop of the world". Steam-powered factories, ironworks, and textile mills drew millions of agricultural labourers into booming northern cities like Manchester, Leeds, and Sheffield. Speculative landlords threw up shoddy, back-to-back houses and unventilated cellars where entire families lived amidst raw sewage. When Asiatic Cholera made landfall in 1831, killing thousands in hours, Victorian society blamed bad air (miasma). Even when Edwin Chadwick published his landmark 1842 report proving filth caused disease and economic ruin, the entrenched dogma of "laissez-faire" blocked compulsory reform.',
-      margin_spine: [
-        {
-          year: '1780',
-          label: 'Boomtown Urbanisation',
-        },
-        {
-          year: '1831',
-          label: 'The Blue Death',
-        },
-        {
-          year: '1842',
-          label: 'Chadwick’s Report',
-        },
-        {
-          year: '1848',
-          label: 'The 1848 Act',
-        },
-        {
-          year: '1854',
-          label: 'Laissez-Faire Gridlock',
-        },
-      ],
-      causal_domino_spine: {
-        title: 'Industrial Urbanisation, Cholera Epidemics & Chadwick (1780–1850)',
-        subtitle: 'Key Turning Points & Causal Dominoes (5-Stage Framework)',
-        stages: [
-          {
-            step: 1,
-            para_ref: '[4.1]',
-            date: '1780–1830',
-            title: 'The Factory Shock: Boomtowns & Back-to-Backs',
-            actor: 'Mill Owners, Speculative Landlords & Factory Workers',
-            tag: '🏭 BOOMTOWN SQUALOR',
-            trigger:
-              'The rapid rise of steam-powered cotton mills caused cities like Manchester to explode tenfold, prompting landlords to throw up unventilated back-to-back slums.',
-            connective:
-              'Packed up to a hundred workers per shared privy midden, leaving courtyards knee-deep in overflowing sewage and uncollected factory refuse.',
-            question: 'How did industrial urbanisation create catastrophic living conditions?',
-          },
-          {
-            step: 2,
-            para_ref: '[4.2]',
-            date: 'c.1830',
-            title: 'Contaminated Water & Slum Squalor',
-            actor: 'Slum Families & Private Water Companies',
-            tag: '💧 CONTAMINATED WELLS',
-            trigger:
-              'Slum dwellers relied on intermittent standpipes or shallow wells contaminated by nearby leaking cesspools and industrial river waste.',
-            connective:
-              'Left working-class communities physically defenseless against microscopic water-borne pathogens, while water companies pumped unfiltered river water.',
-            question: 'Why was drinking water in industrial towns dangerously contaminated?',
-          },
-          {
-            step: 3,
-            para_ref: '[4.3]',
-            date: '1831–1832',
-            title: 'The Blue Death Arrives: Asiatic Cholera & Miasma',
-            actor: 'Asiatic Cholera & The General Board of Health',
-            tag: '🦠 ASIATIC CHOLERA',
-            trigger:
-              'In October 1831, Asiatic Cholera arrived in Sunderland, killing healthy victims within hours through violent dehydration that turned their skin blue.',
-            connective:
-              'Terrified the nation, yet authorities wasted time lighting tar bonfires and whitewashing alleys because physicians dogmatically blamed miasma.',
-            question: 'Why did the arrival of cholera in 1831 cause widespread national terror?',
-          },
-          {
-            step: 4,
-            para_ref: '[4.4]',
-            date: '1842',
-            title: 'Edwin Chadwick’s 1842 Sanitary Report',
-            actor: 'Edwin Chadwick & Poor Law Commissioners',
-            tag: '📊 1842 CHADWICK REPORT',
-            trigger:
-              'Edwin Chadwick published his landmark 400-page parliamentary report proving average life expectancy for Manchester labourers was just 17 years.',
-            connective:
-              'Persuaded MPs that filthy living conditions generated preventable poverty and widowed families, costing ratepayers far more than installing sewers.',
-            question: 'How did Edwin Chadwick prove that slum filth was costing Britain a fortune?',
-          },
-          {
-            step: 5,
-            para_ref: '[4.5]',
-            date: '1848–1854',
-            title: 'The 1848 Act & The Bastion of Laissez-Faire',
-            actor: 'Parliament, Ratepayers & General Board of Health',
-            tag: '⚖️ LAISSEZ-FAIRE BASTION',
-            trigger:
-              'A second cholera outbreak forced Parliament to pass the 1848 Public Health Act, creating a General Board of Health with permissive, optional powers.',
-            connective:
-              'Allowed tight-fisted ratepayers to block sewer construction, leading to Chadwick’s sacking in 1854 and proving laissez-faire remained deeply entrenched.',
-            question:
-              'Why did Victorian ideology fiercely resist compulsory government intervention?',
-          },
-        ],
-      },
-      workbook_stages: [
-        {
-          step: 1,
-          para_ref: '[4.1]',
-          paraRef: '[4.1]',
-          date: '1780–1830',
-          heading: 'How did industrial urbanisation create catastrophic living conditions?',
-          questionHeading: 'How did industrial urbanisation create catastrophic living conditions?',
-          bullets: [
-            'Steam-Powered Mill Towns',
-            'Back-to-Back Slum Rows',
-            '50 People Sharing One Privy',
-          ],
-          focus_clue:
-            'Why did speculative landlords construct unventilated back-to-back terraces without drains or water connections?',
-          focusClue:
-            'Why did speculative landlords construct unventilated back-to-back terraces without drains or water connections?',
-        },
-        {
-          step: 2,
-          para_ref: '[4.2]',
-          paraRef: '[4.2]',
-          date: 'c.1830',
-          heading: 'Why was drinking water in industrial towns dangerously contaminated?',
-          questionHeading: 'Why was drinking water in industrial towns dangerously contaminated?',
-          bullets: ['Shallow Garden Wells', 'Leaking Privy Cesspools', 'Intermittent Standpipes'],
-          focus_clue:
-            'How did untreated cesspool slurry seep directly into drinking wells and local rivers?',
-          focusClue:
-            'How did untreated cesspool slurry seep directly into drinking wells and local rivers?',
-        },
-        {
-          step: 3,
-          para_ref: '[4.3]',
-          paraRef: '[4.3]',
-          date: '1831–1832',
-          heading: 'Why did the arrival of cholera in 1831 cause widespread national terror?',
-          questionHeading:
-            'Why did the arrival of cholera in 1831 cause widespread national terror?',
-          bullets: [
-            'Sunderland Coal Port Arrival',
-            'Dehydration in Hours',
-            'Miasma Air Purification Fires',
-          ],
-          focus_clue:
-            'Why did burning tar barrels and spraying vinegar fail completely to stop cholera spreading?',
-          focusClue:
-            'Why did burning tar barrels and spraying vinegar fail completely to stop cholera spreading?',
-        },
-        {
-          step: 4,
-          para_ref: '[4.4]',
-          paraRef: '[4.4]',
-          date: '1842',
-          heading: 'How did Edwin Chadwick prove that slum filth was costing Britain a fortune?',
-          questionHeading:
-            'How did Edwin Chadwick prove that slum filth was costing Britain a fortune?',
-          bullets: [
-            '400-Page Parliamentary Audit',
-            'Working-Class Life Expectancy 17',
-            'Filth Causes Preventable Poverty',
-          ],
-          focus_clue:
-            'How did Chadwick use economic statistics to persuade MPs that clean water would lower poor relief taxes?',
-          focusClue:
-            'How did Chadwick use economic statistics to persuade MPs that clean water would lower poor relief taxes?',
-        },
-        {
-          step: 5,
-          para_ref: '[4.5]',
-          paraRef: '[4.5]',
-          date: '1848–1854',
-          heading: 'Why did Victorian ideology fiercely resist compulsory government intervention?',
-          questionHeading:
-            'Why did Victorian ideology fiercely resist compulsory government intervention?',
-          bullets: [
-            "Laissez-Faire ('Leave Alone')",
-            'Ratepayer Taxpayer Protests',
-            'Sacking Chadwick in 1854',
-          ],
-          focus_clue:
-            "Why did ratepayers view clean water laws as 'tyrannical government bullying' rather than basic healthcare?",
-          focusClue:
-            "Why did ratepayers view clean water laws as 'tyrannical government bullying' rather than basic healthcare?",
-        },
-      ],
+        'Between 1780 and 1858, the Industrial Revolution catapulted Britain into the modern era, but at a horrifying human cost. Millions of rural labourers flooded into factory boomtowns like Manchester, Leeds, and London, crammed into unventilated back-to-back slums where cesspools overflowed into drinking wells. When Asiatic cholera struck in 1831, the medical establishment was helpless, trapped by ancient miasma beliefs. Even when Edwin Chadwick proved in 1842 that filth caused disease and poverty, Victorian politicians clung to laissez-faire inaction. It took the terrifying heatwave of June 1858—the Great Stink—when the raw sewage of three million Londoners fermenting in the Thames threatened Parliament itself, to finally force the government to act and commission Sir Joseph Bazalgette’s brick revolution.',
       did_you_know:
-        'Cholera was nicknamed "The Blue Death" because as victims lost gallons of fluid through sudden, violent dehydration within just a few hours, their blood thickened into a dark sludge, causing their skin to turn a ghostly, shriveled blue-grey color before they died!',
+        'During the Great Stink of June 1858, Members of Parliament soaked their window curtains in chloride of lime to neutralize the river stench, but MPs still fled the committee rooms clutching handkerchiefs over their noses!',
       do_now: [
         {
           q: "Who invented the world's first flush toilet in 1596?",
@@ -4677,712 +4572,407 @@ const water_and_sanitation_data = {
         },
         {
           q: 'What happened in Samuel Pepys’ cellar on 20 October 1660?',
-          a: 'His neighbour’s cesspit cracked and leaked human sewage through the cellar wall.',
+          a: 'His neighbour’s cesspit fractured and leaked sewage into his cellar.',
         },
         {
-          q: 'What proportion of Londoners died during the Great Plague of 1665?',
-          a: 'Nearly 100,000 citizens (about 20% of the population).',
+          q: 'What dominant medical theory did doctors believe caused the Great Plague of 1665?',
+          a: 'Miasma (poisonous, bad-smelling air).',
         },
         {
-          q: 'Did 17th-century physicians know that bacteria transmitted plague and water diseases?',
-          a: 'No, they dogmatically believed in miasma (bad air) and the four humours.',
+          q: 'What was the forty-day isolation period enforced on plague-infected homes called?',
+          a: 'Quarantine.',
         },
       ],
-      vocabulary: [
+      vocab: [
         {
-          term: 'Urbanisation',
+          term: 'industrialisation',
           definition:
-            'The rapid, massive migration of people from rural countryside villages into expanding industrial manufacturing cities.',
+            'The rapid shift from agricultural craftwork to steam-powered factory mass production in cities.',
+          syllables: 'in-dus-tri-al-i-sa-tion',
+          phonetic: 'in-dus-tree-uh-ly-zay-shun',
+          tier: 'Tier 3',
         },
         {
-          term: 'Back-to-back housing',
+          term: 'cesspool',
           definition:
-            'Cheaply constructed terraced houses built sharing party walls on three sides, with windows on only one side and no through ventilation.',
+            'An underground brick pit or holding tank for untreated domestic sewage and human waste.',
+          syllables: 'cess-pool',
+          phonetic: 'sess-pool',
+          tier: 'Tier 3',
         },
         {
-          term: 'Privy Midden',
+          term: 'laissez-faire',
           definition:
-            'An outdoor toilet shed built over an open cesspit where household ash, animal manure, and human waste accumulated in heaps.',
+            'The political belief that government should not interfere in the economy, businesses, or public life.',
+          syllables: 'lais-sez-faire',
+          phonetic: 'lay-zay-fair',
+          tier: 'Tier 2',
         },
         {
-          term: 'Asiatic Cholera',
+          term: 'cholera',
           definition:
-            'A lethal, acute water-borne infectious disease caused by the bacterium Vibrio cholerae, causing fatal dehydration.',
+            'A lethal, waterborne bacterial disease causing rapid dehydration, diarrhea, and death within hours.',
+          syllables: 'chol-er-a',
+          phonetic: 'kol-er-uh',
+          tier: 'Tier 3',
         },
         {
-          term: 'Edwin Chadwick',
+          term: 'miasma',
           definition:
-            'A crusading Victorian lawyer and civil servant whose 1842 Sanitary Report exposed the catastrophic link between filth and early death.',
+            'The mistaken medical belief that diseases were caused by breathing poisonous bad-smelling air.',
+          syllables: 'mi-as-ma',
+          phonetic: 'my-az-muh',
+          tier: 'Tier 3',
         },
         {
-          term: 'Public Health Act 1848',
+          term: 'privy',
           definition:
-            'Britain’s first national public health law, which created the General Board of Health with permissive (optional) municipal powers.',
+            'An outdoor latrine shed situated above an open cesspool or collection bucket.',
+          syllables: 'priv-y',
+          phonetic: 'priv-ee',
+          tier: 'Tier 2',
         },
         {
-          term: 'Laissez-Faire',
+          term: 'intercepting sewer',
           definition:
-            'The dominant Victorian political philosophy of non-intervention: the belief that government should not interfere in business or taxation.',
+            'Large subterranean brick tunnels designed to catch sewage before it enters a river and carry it away.',
+          syllables: 'in-ter-cept-ing sew-er',
+          phonetic: 'in-ter-sep-ting soo-er',
+          tier: 'Tier 3',
         },
         {
-          term: 'Ratepayer',
+          term: 'civil engineering',
           definition:
-            'A property owner or business paying local municipal property taxes (rates), who frequently voted against public spending on sewers.',
+            'The design and construction of public infrastructure like bridges, tunnels, canals, and sewer systems.',
+          syllables: 'civ-il en-gi-neer-ing',
+          phonetic: 'siv-il en-ji-neer-ing',
+          tier: 'Tier 2',
         },
       ],
+      causal_domino_spine: {
+        title: 'Industrial Squalor, Asiatic Cholera & Bazalgette Sewers (1780–1865)',
+        subtitle: 'Key Turning Points & Causal Dominoes (5-Stage Framework)',
+        stages: [
+          {
+            step: 1,
+            para_ref: '[4.1]',
+            date: '1780–1840',
+            title: 'The Factory Shock: Boomtowns & Back-to-Backs',
+            actor: 'Mill Owners, Speculative Landlords & Factory Workers',
+            tag: '🏭 BOOMTOWN SQUALOR',
+            trigger:
+              'The rapid rise of steam-powered cotton mills caused cities like Manchester to explode tenfold, prompting landlords to throw up unventilated back-to-back slums with zero drainage.',
+            connective:
+              'Concentrated hundreds of thousands of labourers into unpaved courts with shared overflowing privies, creating deadly breeding grounds for typhus and cholera.',
+            question:
+              'How did rapid industrial urbanisation create unprecedented slum squalor in British factory boomtowns?',
+            workbook_question:
+              'How did rapid industrial urbanisation create unprecedented slum squalor in British factory boomtowns?',
+          },
+          {
+            step: 2,
+            para_ref: '[4.2]',
+            date: '1831–1832',
+            title: 'Asiatic Cholera Strikes: The Blue Death & Miasma Trap',
+            actor: 'Slum Dwellers, Doctors & The General Board of Health',
+            tag: '💀 THE BLUE DEATH',
+            trigger:
+              'A lethal waterborne epidemic arrived in Sunderland, killing 52,000 Britons in months while doctors burned pitch barrels believing bad smells caused the disease.',
+            connective:
+              'Terrorized the nation and exposed the utter failure of miasma theory, forcing authorities to confront the catastrophic filth of urban water supplies.',
+            question:
+              'Why did the arrival of Asiatic cholera in 1831 terrorize Victorian Britain and expose the failure of miasma theory?',
+            workbook_question:
+              'Why did the arrival of Asiatic cholera in 1831 terrorize Victorian Britain and expose the failure of miasma theory?',
+          },
+          {
+            step: 3,
+            para_ref: '[4.3]',
+            date: '1842–1848',
+            title: 'Chadwick’s Sanitary Report & The Permissive 1848 Act',
+            actor: 'Edwin Chadwick, Ratepayers & Parliament',
+            tag: '📋 THE SANITARY REPORT',
+            trigger:
+              'Edwin Chadwick proved scientifically that slum filth caused premature death and economic poverty, but his 1848 Public Health Act failed because it was permissive.',
+            connective:
+              'Proved that disease was economically ruinous, though ratepayer resistance and laissez-faire dogma prevented compulsory national sanitary reform.',
+            question:
+              'Why did Edwin Chadwick’s 1842 Report fail to clean up Britain despite proving that filth caused disease?',
+            workbook_question:
+              'Why did Edwin Chadwick’s 1842 Report fail to clean up Britain despite proving that filth caused disease?',
+          },
+          {
+            step: 4,
+            para_ref: '[4.4]',
+            date: 'June 1858',
+            title: 'The Great Stink: Summer Heatwave & Panic in Parliament',
+            actor: 'Members of Parliament, Londoners & The River Thames',
+            tag: '🌊 THE GREAT STINK',
+            trigger:
+              'A severe summer heatwave fermented 200,000 water closets of raw sewage in the tidal Thames, forcing MPs to flee Parliament and vote £3 million in 18 days.',
+            connective:
+              'Shattered parliamentary complacency and laissez-faire reluctance by directly threatening the lives of ruling politicians in Westminster.',
+            question:
+              "How did the environmental catastrophe of the 'Great Stink' finally shatter Victorian laissez-faire inertia?",
+            workbook_question:
+              "How did the environmental catastrophe of the 'Great Stink' finally shatter Victorian laissez-faire inertia?",
+          },
+          {
+            step: 5,
+            para_ref: '[4.5]',
+            date: '1858–1865',
+            title: 'Bazalgette’s Brick Revolution: 82 Miles of Intercepting Sewers',
+            actor: 'Sir Joseph Bazalgette, Navvies & Metropolitan Board of Works',
+            tag: '🧱 BAZALGETTE’S SEWERS',
+            trigger:
+              'Chief Engineer Joseph Bazalgette designed 82 miles of subterranean intercepting sewers using Portland cement, carrying 420 million gallons of sewage daily eastward out to sea.',
+            connective:
+              'Permanently removed cholera from London, created the Thames Embankments, and established modern civil engineering as the foundation of public health.',
+            question:
+              'Why was Sir Joseph Bazalgette’s intercepting sewer network considered the greatest engineering triumph of the Victorian age?',
+            workbook_question:
+              'Why was Sir Joseph Bazalgette’s intercepting sewer network considered the greatest engineering triumph of the Victorian age?',
+          },
+        ],
+      },
       narrative_blocks: [
         {
-          act: 1,
-          title: 'Boomtown Squalor: Back-to-Backs & Cellar Dwellings',
-          theme_heading: 'Boomtown Squalor: Back-to-Backs & Cellar Dwellings',
-          text: '<span class="para-ref">[4.1]</span> Between 1780 and 1850, the Industrial Revolution transformed Britain into the manufacturing "workshop of the world." The expansion of steam-powered cotton mills and coal mines triggered rapid urbanisation. Millions of rural labourers moved to northern boomtowns for factory work. Manchester’s population exploded from 25,000 in 1770 to over 300,000 by 1850, with Birmingham and Leeds growing equally fast.<br><br>Because towns had no building codes, speculative landlords rushed to maximize profits by building cramped "back-to-back" terraced housing (Source A). These houses shared party walls on three sides, with no through-ventilation. Rooms were dark, damp, and soot-choked. In districts like Manchester’s "Little Ireland", families lived in flooded cellar dwellings. Up to one hundred residents shared a single outdoor communal privy midden, where untreated waste piled up outside bedroom windows.',
-          sources: [
-            {
-              id: 'water_l4_src_a',
-              letter: 'A',
-              type: 'visual',
-              src: '/images/victorian_slum.jpg',
-              image: '/images/victorian_slum.jpg',
-              title: "Source A: Gustave Doré, 'Over London by Rail' (London: A Pilgrimage, 1872)",
-              caption:
-                'Wood engraving by Gustave Doré illustrating the labyrinth of back-to-back working-class housing, narrow walled yards, and dense smoke beneath a railway viaduct in industrial London (Wellcome Collection / British Museum).',
-              author: 'Gustave Doré & Blanchard Jerrold',
-              date: '1872',
-              question_badge: 'INDUSTRIAL OVERCROWDING & SLUM EPIDEMIOLOGY',
-              question:
-                'What does Gustave Doré’s depiction of Victorian housing in Source A reveal about why infectious disease spread so rapidly in industrial towns?',
-              model_answer:
-                'Source A illustrates hundreds of back-to-back brick tenements packed tightly together with tiny walled yards and almost no sunlight or ventilation. These cramped, unpaved conditions trapped sewage and coal smoke, creating an ideal environment for the rapid transmission of epidemic typhus and cholera.',
-              context:
-                'During the 19th-century Industrial Revolution, millions of agricultural labourers migrated to industrial cities. Speculative builders constructed thousands of back-to-back houses without drainage, damp-proof courses, or municipal sewer connections.',
-              hinge_question:
-                'Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-              provenance_clues: {
-                author: 'French artist Gustave Doré and British journalist Blanchard Jerrold.',
-                audience: 'The Victorian reading public and parliamentary reformers.',
-                motive:
-                  "Documenting the crushing physical reality of industrial London's working-class slums from an elevated railway vantage point.",
-                hinge_question:
-                  'Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-                source_context:
-                  'Gustave Doré’s 1872 engraving illustrates back-to-back brick tenements packed tightly together beneath a railway viaduct with zero drainage or ventilation. **Hinge Question:** Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-                provenance_breakdown: {
-                  author: 'French artist Gustave Doré and British journalist Blanchard Jerrold.',
-                  audience: 'The Victorian reading public and parliamentary reformers.',
-                  motive:
-                    "Documenting the crushing physical reality of industrial London's working-class slums from an elevated railway vantage point.",
-                },
-              },
-              source_context:
-                'Gustave Doré’s 1872 engraving illustrates back-to-back brick tenements packed tightly together beneath a railway viaduct with zero drainage or ventilation. **Hinge Question:** Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-            },
-          ],
-          isReversed: false,
-          source: {
-            id: 'water_l4_src_a',
-            letter: 'A',
-            type: 'visual',
-            src: '/images/victorian_slum.jpg',
-            image: '/images/victorian_slum.jpg',
-            title: "Source A: Gustave Doré, 'Over London by Rail' (London: A Pilgrimage, 1872)",
-            caption:
-              'Wood engraving by Gustave Doré illustrating the labyrinth of back-to-back working-class housing, narrow walled yards, and dense smoke beneath a railway viaduct in industrial London (Wellcome Collection / British Museum).',
-            author: 'Gustave Doré & Blanchard Jerrold',
-            date: '1872',
-            question_badge: 'INDUSTRIAL OVERCROWDING & SLUM EPIDEMIOLOGY',
-            question:
-              'What does Gustave Doré’s depiction of Victorian housing in Source A reveal about why infectious disease spread so rapidly in industrial towns?',
-            model_answer:
-              'Source A illustrates hundreds of back-to-back brick tenements packed tightly together with tiny walled yards and almost no sunlight or ventilation. These cramped, unpaved conditions trapped sewage and coal smoke, creating an ideal environment for the rapid transmission of epidemic typhus and cholera.',
-            context:
-              'During the 19th-century Industrial Revolution, millions of agricultural labourers migrated to industrial cities. Speculative builders constructed thousands of back-to-back houses without drainage, damp-proof courses, or municipal sewer connections.',
-            hinge_question:
-              'Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-            provenance_clues: {
-              author: 'French artist Gustave Doré and British journalist Blanchard Jerrold.',
-              audience: 'The Victorian reading public and parliamentary reformers.',
-              motive:
-                "Documenting the crushing physical reality of industrial London's working-class slums from an elevated railway vantage point.",
-              hinge_question:
-                'Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-              source_context:
-                'Gustave Doré’s 1872 engraving illustrates back-to-back brick tenements packed tightly together beneath a railway viaduct with zero drainage or ventilation. **Hinge Question:** Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-              provenance_breakdown: {
-                author: 'French artist Gustave Doré and British journalist Blanchard Jerrold.',
-                audience: 'The Victorian reading public and parliamentary reformers.',
-                motive:
-                  "Documenting the crushing physical reality of industrial London's working-class slums from an elevated railway vantage point.",
-              },
-            },
-            source_context:
-              'Gustave Doré’s 1872 engraving illustrates back-to-back brick tenements packed tightly together beneath a railway viaduct with zero drainage or ventilation. **Hinge Question:** Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-          },
+          ref: '[4.1]',
+          period: '1780–1840',
+          title: 'Boomtown Squalor: Back-to-Backs, Cellar Dwellings & Privy Middens',
+          image: '/images/victorian_slum.jpg',
+          image_alt:
+            'Gustave Doré wood engraving depicting crowded Victorian industrial back-to-backs and railway viaducts in London, 1872',
+          caption:
+            'Gustave Doré, Over London by Rail (1872). Industrial expansion packed millions of factory labourers into unventilated back-to-back brick tenements with zero municipal drainage.',
+          text: '<span class="para-ref">[4.1]</span> Between 1780 and 1850, the **Industrial Revolution** transformed Britain from an agricultural kingdom into the "workshop of the world." Steam power, coal mines, and mechanized textile factories drew millions of rural labourers into boomtowns like Manchester, Birmingham, Leeds, and Sheffield. Manchester exploded from 25,000 inhabitants in 1770 to over 300,000 by 1850. Yet municipal infrastructure was nonexistent. Speculative landlords built cheap, flimsy **back-to-back houses**—tenements sharing common party walls on three sides, with windows on only one wall, creating dark, damp, completely unventilated rooms. Entire families of eight or ten people crowded into single damp cellar rooms where sewage seeped through dirt floors. Between rows of houses lay narrow unpaved alleys where open **privy middens**—crude latrine pits shared by dozens of families—overflowed into streets where children played barefoot.',
         },
         {
-          act: 2,
-          title: 'Slum Squalor: Contaminated Wells & Privy Middens',
-          theme_heading: 'Slum Squalor: Contaminated Wells & Privy Middens',
-          text: '<span class="para-ref">[4.2]</span> The water supply in industrial boomtowns was dangerous and scarce. Towns owned no public water pipes. Instead, private companies operated for profit, piping water only to wealthy squares. In working-class slums, companies turned on street standpipes for only twenty minutes three days a week, sparking desperate scrambles for water.<br><br>Families unable to reach standpipes relied on shallow wells or took water from polluted rivers like the Irwell in Manchester or the Aire in Leeds. These rivers were black with chemical acids and human sewage from unlined cesspits. Liquid waste seeped through the porous earth directly into drinking wells. Cartoons like "A Court for King Cholera" (Source B) mocked these filthy courtyards as royal palaces where disease ruled over helpless families.',
-          source: {
-            id: 'water_l4_src_b',
-            letter: 'B',
-            type: 'visual',
-            src: '/images/court_for_king_cholera.png',
-            image: '/images/court_for_king_cholera.png',
-            title:
-              "Source B: 'A Court for King Cholera' by John Leech (Punch Magazine, September 1852)",
-            caption:
-              'Famous satirical wood engraving by John Leech illustrating an overcrowded London slum court overflowing with refuse, unpaved drainage, and dying children (Punch, Vol. XXIII, p. 139).',
-            author: 'John Leech, Illustrator for Punch Magazine',
-            date: 'September 1852',
-            question_badge: 'VICTORIAN SOCIAL SATIRE & CAMPAIGNING',
-            question:
-              'How does John Leech use imagery in Source B to criticize living conditions in working-class London?',
-            model_answer:
-              'Leech depicts children playing on piles of rotting dung, cesspool rubbish, and stagnant puddles in an overcrowded slum court. This criticizes landlords and authorities for leaving poor families to live in squalor where cholera thrived.',
-            context:
-              "Published after the 1848–49 cholera outbreak killed over 50,000 Britons, Leech's cartoon targeted the slum landlords of Bethnal Green and Whitechapel who charged exorbitant rents for unsewered, filthy housing.",
-            hinge_question:
-              'Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-            provenance_clues: {
-              author: 'John Leech, reformist satirical cartoonist for Punch.',
-              audience: 'Middle-class and parliamentary readers of Punch magazine.',
-              motive:
-                'Shaming landlords and the British government into clearing slum filth that caused recurring cholera outbreaks.',
-              hinge_question:
-                'Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-              source_context:
-                'Published after the 1848–49 cholera outbreak killed over 50,000 Britons, Leech’s cartoon shamed slum landlords into clearing filthy unpaved courtyards. **Hinge Question:** Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-              provenance_breakdown: {
-                author: 'John Leech, reformist satirical cartoonist for Punch.',
-                audience: 'Middle-class and parliamentary readers of Punch magazine.',
-                motive:
-                  'Shaming landlords and the British government into clearing slum filth that caused recurring cholera outbreaks.',
-              },
-            },
-            source_context:
-              'Published after the 1848–49 cholera outbreak killed over 50,000 Britons, Leech’s cartoon shamed slum landlords into clearing filthy unpaved courtyards. **Hinge Question:** Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-          },
-          sources: [
-            {
-              id: 'water_l4_src_b',
-              letter: 'B',
-              type: 'visual',
-              src: '/images/court_for_king_cholera.png',
-              image: '/images/court_for_king_cholera.png',
-              title:
-                "Source B: 'A Court for King Cholera' by John Leech (Punch Magazine, September 1852)",
-              caption:
-                'Famous satirical wood engraving by John Leech illustrating an overcrowded London slum court overflowing with refuse, unpaved drainage, and dying children (Punch, Vol. XXIII, p. 139).',
-              author: 'John Leech, Illustrator for Punch Magazine',
-              date: 'September 1852',
-              question_badge: 'VICTORIAN SOCIAL SATIRE & CAMPAIGNING',
-              question:
-                'How does John Leech use imagery in Source B to criticize living conditions in working-class London?',
-              model_answer:
-                'Leech depicts children playing on piles of rotting dung, cesspool rubbish, and stagnant puddles in an overcrowded slum court. This criticizes landlords and authorities for leaving poor families to live in squalor where cholera thrived.',
-              context:
-                "Published after the 1848–49 cholera outbreak killed over 50,000 Britons, Leech's cartoon targeted the slum landlords of Bethnal Green and Whitechapel who charged exorbitant rents for unsewered, filthy housing.",
-              hinge_question:
-                'Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-              provenance_clues: {
-                author: 'John Leech, reformist satirical cartoonist for Punch.',
-                audience: 'Middle-class and parliamentary readers of Punch magazine.',
-                motive:
-                  'Shaming landlords and the British government into clearing slum filth that caused recurring cholera outbreaks.',
-                hinge_question:
-                  'Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-                source_context:
-                  'Published after the 1848–49 cholera outbreak killed over 50,000 Britons, Leech’s cartoon shamed slum landlords into clearing filthy unpaved courtyards. **Hinge Question:** Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-                provenance_breakdown: {
-                  author: 'John Leech, reformist satirical cartoonist for Punch.',
-                  audience: 'Middle-class and parliamentary readers of Punch magazine.',
-                  motive:
-                    'Shaming landlords and the British government into clearing slum filth that caused recurring cholera outbreaks.',
-                },
-              },
-              source_context:
-                'Published after the 1848–49 cholera outbreak killed over 50,000 Britons, Leech’s cartoon shamed slum landlords into clearing filthy unpaved courtyards. **Hinge Question:** Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-            },
-          ],
+          ref: '[4.2]',
+          period: '1831–1832',
+          title: 'The Blue Death: Asiatic Cholera Strikes & The Miasma Trap',
+          text: '<span class="para-ref">[4.2]</span> In October 1831, a terrifying new disease arrived at the port of Sunderland from the Baltic: **Asiatic cholera**. Known as "The Blue Death," cholera struck with horrific speed. A healthy factory worker could wake in the morning, experience violent vomiting and watery diarrhea by midday, turn a ghostly blue from catastrophic dehydration, and die before nightfall. Over 52,000 Britons died in the 1831–32 epidemic. Yet doctors and politicians were utterly blind to its true cause. Steeped in ancient **miasma theory**, medical authorities believed cholera arose from foul air and toxic atmospheric gases released by rotting matter. In panic, town councils burned tar barrels in the streets, fired cannons to clear the air, and scrubbed gutters with lime, completely ignoring the fact that drinking water was drawn from shallow wells situated mere feet from leaking privy cesspools.',
         },
         {
-          act: 3,
-          title: 'The Blue Death: Asiatic Cholera & the Miasma Trap (1831)',
-          theme_heading: 'The Blue Death: Asiatic Cholera & the Miasma Trap (1831)',
-          text: '<span class="para-ref">[4.3]</span> In October 1831, Britain was struck by a terrifying new global epidemic: **Asiatic Cholera**. Arriving through the port of Sunderland from the Baltic Sea, cholera killed with horrific speed. Victims suffered violent vomiting and severe watery diarrhea ("rice-water stools"). Severe dehydration drained gallons of bodily fluid within hours, turning the skin a shriveled blue-grey color and killing healthy adults in less than a day. The 1831–1832 epidemic killed over 32,000 Britons.<br><br>Victorian doctors were helpless because they believed in **miasma** (Source C)—the false theory that disease spread through poisonous bad air from rotting matter. Local councils burned tar barrels in streets and whitewashed alleys with vinegar to clear the smell. These efforts failed completely: cholera was a waterborne bacterium (*Vibrio cholerae*) spread by drinking sewage-tainted water.',
-          sources: [
-            {
-              id: 'water_l4_src_c',
-              letter: 'C',
-              type: 'written',
-              src: '',
-              image: '',
-              title:
-                "Source C: Dr Thomas Southwood Smith, 'Treatise on Fever and Sanitation' (1844)",
-              caption:
-                'Extract from medical treatise by Dr Southwood Smith, physician to the London Fever Hospital, articulating the prevailing scientific consensus on miasmatic infection (Wellcome Collection).',
-              author: 'Dr Thomas Southwood Smith, Physician & Sanitarian',
-              date: '1844',
-              content:
-                'The room of a fever patient, in a small and badly-ventilated house, or in a confined court, is surrounded by an atmosphere filled with decomposing animal and vegetable matter... The poison generated by these filthy emanations is taken into the lungs, enters the blood, and instantly depresses the vital energies. The disease is produced directly by the atmospheric impurity.',
-              question_badge: 'THE MIASMA PARADIGM & MEDICAL CONSENSUS',
-              question:
-                'What does Source C show about why leading 19th-century doctors clung to the miasma theory?',
-              model_answer:
-                'Dr Southwood Smith explains that foul odours from rotting waste entered the lungs and poisoned the blood directly. This shows that doctors genuinely believed bad smells caused fever, using miasma theory to explain why disease was worst near stinking ditches.',
-              context:
-                'Before the discovery of bacteria, Victorian physicians believed diseases were spread through invisible toxic gases (miasmata) given off by decomposing rubbish, open cesspools, and stagnant ditches.',
-              hinge_question:
-                'Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-              provenance_clues: {
-                author: 'Dr Thomas Southwood Smith, leading medical sanitarian.',
-                audience:
-                  'Medical practitioners, Poor Law commissioners, and government officials.',
-                motive:
-                  'Arguing that urban ventilation and street cleansing were essential to prevent toxic miasma from causing epidemic fever.',
-                hinge_question:
-                  'Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-                source_context:
-                  'Dr Southwood Smith’s 1844 treatise shows how leading doctors genuinely believed bad smells directly poisoned the blood. **Hinge Question:** Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-                provenance_breakdown: {
-                  author: 'Dr Thomas Southwood Smith, leading medical sanitarian.',
-                  audience:
-                    'Medical practitioners, Poor Law commissioners, and government officials.',
-                  motive:
-                    'Arguing that urban ventilation and street cleansing were essential to prevent toxic miasma from causing epidemic fever.',
-                },
-              },
-              source_context:
-                'Dr Southwood Smith’s 1844 treatise shows how leading doctors genuinely believed bad smells directly poisoned the blood. **Hinge Question:** Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-            },
-          ],
-          isReversed: true,
-          source: {
-            id: 'water_l4_src_c',
-            letter: 'C',
-            type: 'written',
-            src: '',
-            image: '',
-            title: "Source C: Dr Thomas Southwood Smith, 'Treatise on Fever and Sanitation' (1844)",
-            caption:
-              'Extract from medical treatise by Dr Southwood Smith, physician to the London Fever Hospital, articulating the prevailing scientific consensus on miasmatic infection (Wellcome Collection).',
-            author: 'Dr Thomas Southwood Smith, Physician & Sanitarian',
-            date: '1844',
-            content:
-              'The room of a fever patient, in a small and badly-ventilated house, or in a confined court, is surrounded by an atmosphere filled with decomposing animal and vegetable matter... The poison generated by these filthy emanations is taken into the lungs, enters the blood, and instantly depresses the vital energies. The disease is produced directly by the atmospheric impurity.',
-            question_badge: 'THE MIASMA PARADIGM & MEDICAL CONSENSUS',
-            question:
-              'What does Source C show about why leading 19th-century doctors clung to the miasma theory?',
-            model_answer:
-              'Dr Southwood Smith explains that foul odours from rotting waste entered the lungs and poisoned the blood directly. This shows that doctors genuinely believed bad smells caused fever, using miasma theory to explain why disease was worst near stinking ditches.',
-            context:
-              'Before the discovery of bacteria, Victorian physicians believed diseases were spread through invisible toxic gases (miasmata) given off by decomposing rubbish, open cesspools, and stagnant ditches.',
-            hinge_question:
-              'Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-            provenance_clues: {
-              author: 'Dr Thomas Southwood Smith, leading medical sanitarian.',
-              audience: 'Medical practitioners, Poor Law commissioners, and government officials.',
-              motive:
-                'Arguing that urban ventilation and street cleansing were essential to prevent toxic miasma from causing epidemic fever.',
-              hinge_question:
-                'Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-              source_context:
-                'Dr Southwood Smith’s 1844 treatise shows how leading doctors genuinely believed bad smells directly poisoned the blood. **Hinge Question:** Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-              provenance_breakdown: {
-                author: 'Dr Thomas Southwood Smith, leading medical sanitarian.',
-                audience:
-                  'Medical practitioners, Poor Law commissioners, and government officials.',
-                motive:
-                  'Arguing that urban ventilation and street cleansing were essential to prevent toxic miasma from causing epidemic fever.',
-              },
-            },
-            source_context:
-              'Dr Southwood Smith’s 1844 treatise shows how leading doctors genuinely believed bad smells directly poisoned the blood. **Hinge Question:** Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-          },
+          ref: '[4.3]',
+          period: '1842–1848',
+          title: 'Edwin Chadwick’s Sanitary Report & The Permissive 1848 Act',
+          image: '/units/water_and_sanitation/assets/edwin_chadwick.jpg',
+          image_alt:
+            'Portrait photograph of social reformer and Poor Law commissioner Sir Edwin Chadwick',
+          caption:
+            'Sir Edwin Chadwick (1800–1890). His monumental 1842 Sanitary Report proved that disease caused poverty and sparked Britain’s first General Board of Health.',
+          text: '<span class="para-ref">[4.3]</span> The first systematic breakthrough in public health came not from a doctor, but from a driven civil servant: **Edwin Chadwick**. In 1842, Chadwick published his landmark Parliamentary investigation, *Report on the Sanitary Condition of the Labouring Population of Great Britain*. Using meticulous statistical data, Chadwick proved that working-class life expectancy in industrial cities had plummeted to just 17 years in Manchester, compared to 38 years in rural Rutland. Chadwick argued that filthy slums caused disease, which caused poverty, which forced widows and orphans onto municipal poor relief. Filth was economically ruinous. Chadwick advocated a national network of clean piped water, self-flushing glazed earthenware sewer pipes, and an end to cesspools. His report prompted the **Public Health Act of 1848**, which established a General Board of Health. However, the Act was fatally weakened: it was **permissive**, meaning local councils only had to take action if their death rate exceeded 23 per 1,000, and wealthy ratepayers fiercely resisted paying taxes for sewers under the banner of **laissez-faire**.',
         },
         {
-          act: 4,
-          title: 'Edwin Chadwick’s Sanitary Report & the Miasma Dilemma (1842)',
-          theme_heading: 'Edwin Chadwick’s Sanitary Report & the Miasma Dilemma (1842)',
-          text: '<span class="para-ref">[4.4]</span> In 1842, civil servant **Edwin Chadwick** published a landmark parliamentary report: the *Report on the Sanitary Condition of the Labouring Population* (Source D). Using detailed medical and economic statistics, Chadwick proved that the average life expectancy for a labourer in Manchester was just **seventeen years**—compared to thirty-eight years in rural Rutland.<br><br>Chadwick cleverly appealed to Victorian taxpayers. He argued that preventable filth killed working fathers in their prime, forcing thousands of widows and orphans onto poor-relief taxes paid by middle-class ratepayers. Chadwick showed that spending money on clean water mains and underground glazed ceramic sewers would remove filth, boost worker productivity, and save taxpayers millions of pounds in poor-relief rates.',
-          source: {
-            id: 'water_l4_src_d',
-            letter: 'D',
-            type: 'visual',
-            src: '/images/chadwick_sanitary_report_1842.jpg',
-            image: '/images/chadwick_sanitary_report_1842.jpg',
-            title:
-              "Source D: Edwin Chadwick's 'Report on the Sanitary Condition of the Labouring Population' (1842)",
-            caption:
-              "Original title page and statistical comparative mortality tables from Edwin Chadwick's landmark Poor Law Commission report on sanitary deprivation (Wellcome Collection EPB/B/15949).",
-            author: 'Edwin Chadwick, Secretary to the Poor Law Commission',
-            date: '1842',
-            question_badge: 'STATISTICAL EPIDEMIOLOGY & CLASS CONTRAST',
-            question:
-              "What did Chadwick's report prove about the dramatic difference in life expectancy between social classes?",
-            model_answer:
-              "Chadwick's statistical tables proved that wealthy gentry in Rutland lived on average to 52 years, while factory labourers in industrial Manchester died at an average age of just 17. This proved mathematically that slum environments killed workers.",
-            context:
-              'Chadwick surveyed doctors, guardians, and town councils across England, collating thousands of death certificates. His report demonstrated that squalor and filth trapped workers in early death and drove up poor relief taxes.',
-            hinge_question:
-              'How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-            provenance_clues: {
-              author: 'Edwin Chadwick, utilitarian social reformer.',
-              audience:
-                'British Parliament, Prime Minister Sir Robert Peel, and local authorities.',
-              motive:
-                'Proving with statistics that investing in clean water and sewers would reduce national spending on poor relief.',
-              hinge_question:
-                'How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-              source_context:
-                'Chadwick surveyed doctors, guardians, and town councils across England to prove mathematically that squalor killed workers. **Hinge Question:** How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-              provenance_breakdown: {
-                author: 'Edwin Chadwick, utilitarian social reformer.',
-                audience:
-                  'British Parliament, Prime Minister Sir Robert Peel, and local authorities.',
-                motive:
-                  'Proving with statistics that investing in clean water and sewers would reduce national spending on poor relief.',
-              },
-            },
-            source_context:
-              'Chadwick surveyed doctors, guardians, and town councils across England to prove mathematically that squalor killed workers. **Hinge Question:** How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-          },
-          sources: [
-            {
-              id: 'water_l4_src_d',
-              letter: 'D',
-              type: 'visual',
-              src: '/images/chadwick_sanitary_report_1842.jpg',
-              image: '/images/chadwick_sanitary_report_1842.jpg',
-              title:
-                "Source D: Edwin Chadwick's 'Report on the Sanitary Condition of the Labouring Population' (1842)",
-              caption:
-                "Original title page and statistical comparative mortality tables from Edwin Chadwick's landmark Poor Law Commission report on sanitary deprivation (Wellcome Collection EPB/B/15949).",
-              author: 'Edwin Chadwick, Secretary to the Poor Law Commission',
-              date: '1842',
-              question_badge: 'STATISTICAL EPIDEMIOLOGY & CLASS CONTRAST',
-              question:
-                "What did Chadwick's report prove about the dramatic difference in life expectancy between social classes?",
-              model_answer:
-                "Chadwick's statistical tables proved that wealthy gentry in Rutland lived on average to 52 years, while factory labourers in industrial Manchester died at an average age of just 17. This proved mathematically that slum environments killed workers.",
-              context:
-                'Chadwick surveyed doctors, guardians, and town councils across England, collating thousands of death certificates. His report demonstrated that squalor and filth trapped workers in early death and drove up poor relief taxes.',
-              hinge_question:
-                'How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-              provenance_clues: {
-                author: 'Edwin Chadwick, utilitarian social reformer.',
-                audience:
-                  'British Parliament, Prime Minister Sir Robert Peel, and local authorities.',
-                motive:
-                  'Proving with statistics that investing in clean water and sewers would reduce national spending on poor relief.',
-                hinge_question:
-                  'How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-                source_context:
-                  'Chadwick surveyed doctors, guardians, and town councils across England to prove mathematically that squalor killed workers. **Hinge Question:** How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-                provenance_breakdown: {
-                  author: 'Edwin Chadwick, utilitarian social reformer.',
-                  audience:
-                    'British Parliament, Prime Minister Sir Robert Peel, and local authorities.',
-                  motive:
-                    'Proving with statistics that investing in clean water and sewers would reduce national spending on poor relief.',
-                },
-              },
-              source_context:
-                'Chadwick surveyed doctors, guardians, and town councils across England to prove mathematically that squalor killed workers. **Hinge Question:** How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-            },
-          ],
+          ref: '[4.4]',
+          period: 'June 1858',
+          title: 'The Toxic Tide & The Great Stink of London',
+          text: '<span class="para-ref">[4.4]</span> By 1855, London was the commercial capital of the British Empire, home to nearly three million people. Ironically, a modern convenience made the city’s sanitation worse: the rapid adoption of Sir John Harington’s flushing water closet. Between 1830 and 1855, over 200,000 water closets were installed in wealthy London homes. But because the city had no integrated sewer system, these toilets simply washed millions of gallons of raw human excrement down old rainwater culverts directly into the tidal **River Thames**—the very river that supplied the capital’s drinking water. In June 1858, an unprecedented summer heatwave struck London, with temperatures exceeding 35°C in the shade. The sewage-choked Thames fermented into a thick, bubbling brown sludge of human waste. The unbearable stench became known as **The Great Stink**. The crisis reached the Palace of Westminster, which stood directly on the riverbank. Members of Parliament soaked their curtains in chloride of lime and clutched scented handkerchiefs, but the suffocating fumes made work impossible. Believing the foul miasma would kill them all, MPs panicked.',
         },
         {
-          act: 5,
-          title: 'The 1848 Public Health Act & Laissez-Faire Resistance',
-          theme_heading: 'The 1848 Public Health Act & Laissez-Faire Resistance',
-          text: '<span class="para-ref">[4.5]</span> Chadwick’s report prompted the **Public Health Act of 1848** (Source E), which set up Britain’s first General Board of Health. However, the law was crippled by the Victorian belief in **laissez-faire** ("leave alone")—the idea that national government should not interfere in private property or local taxation.<br><br>Parliament made the 1848 Act *permissive* (optional) rather than compulsory. Councils only had to form a health board if their death rate exceeded an extreme 23 per 1,000 residents. Wealthy landlords and property ratepayers fiercely opposed spending money on sewers, attacking Chadwick as a "sanitary dictator." Ratepayers formed associations to vote out reformist councillors. In 1854, the government gave in: Chadwick was sacked, the Board of Health was closed down, and slum squalor continued unchecked.',
-          sources: [
-            {
-              id: 'water_l4_src_e',
-              letter: 'E',
-              type: 'written',
-              src: '',
-              image: '',
-              title: 'Source E: The Public Health Act of 1848 (11 & 12 Vict. c. 63)',
-              caption:
-                "Extract from the landmark 1848 Public Health Act establishing Britain's first General Board of Health (The National Archives / UK Statute Law).",
-              author: 'British Parliament',
-              date: '1848',
-              content:
-                'An Act for promoting the Public Health. Be it enacted, that a General Board of Health be constituted... That upon the petition of not less than one tenth of the inhabitants rated to the relief of the poor of any city, town, or borough, the General Board may send an inspector to hold a public inquiry... And if the death rate exceed 23 per thousand, the Board may apply the provisions of this Act to establish a local board with power to pave, sewer, and supply water.',
-              question_badge: 'PERMISSIVE STATUTE & RATEPAYER RESISTANCE',
-              question:
-                'Why was the 1848 Public Health Act limited in its ability to force towns to clean up their streets?',
-              model_answer:
-                'The Act only set up local health boards if 10% of ratepayers petitioned for one, or if the death rate was extremely high. Because it was largely voluntary, stingy local taxpayers voted against health boards to avoid paying for expensive new sewers.',
-              context:
-                "Passed in panic as cholera returned to Britain in 1848, this law created a central Board of Health. However, it was 'permissive' (voluntary), and ratepayer associations fiercely fought against paying higher taxes for municipal sewers.",
-              hinge_question:
-                "Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-              provenance_clues: {
-                author: 'British Parliament under Prime Minister Lord John Russell.',
-                audience:
-                  'Town councils, ratepayer associations, and municipal authorities across Britain.',
-                motive:
-                  'Providing legal powers for towns to form local health boards to combat epidemic cholera.',
-                hinge_question:
-                  "Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-              },
-              teacher_notes: {
-                hinge_question:
-                  "Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-                source_context:
-                  "Passed in panic as cholera returned in 1848, this law created a central Board of Health. **Hinge Question:** Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-                provenance_breakdown: {
-                  author: 'British Parliament under Prime Minister Lord John Russell.',
-                  audience:
-                    'Town councils, ratepayer associations, and municipal authorities across Britain.',
-                  motive:
-                    'Providing legal powers for towns to form local health boards to combat epidemic cholera.',
-                },
-              },
-              source_context:
-                "Passed in panic as cholera returned in 1848, this law created a central Board of Health. **Hinge Question:** Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-            },
-          ],
-          source: {
-            id: 'water_l4_src_e',
-            letter: 'E',
-            type: 'written',
-            src: '',
-            image: '',
-            title: 'Source E: The Public Health Act of 1848 (11 & 12 Vict. c. 63)',
-            caption:
-              "Extract from the landmark 1848 Public Health Act establishing Britain's first General Board of Health (The National Archives / UK Statute Law).",
-            author: 'British Parliament',
-            date: '1848',
-            content:
-              'An Act for promoting the Public Health. Be it enacted, that a General Board of Health be constituted... That upon the petition of not less than one tenth of the inhabitants rated to the relief of the poor of any city, town, or borough, the General Board may send an inspector to hold a public inquiry... And if the death rate exceed 23 per thousand, the Board may apply the provisions of this Act to establish a local board with power to pave, sewer, and supply water.',
-            question_badge: 'PERMISSIVE STATUTE & RATEPAYER RESISTANCE',
-            question:
-              'Why was the 1848 Public Health Act limited in its ability to force towns to clean up their streets?',
-            model_answer:
-              'The Act only set up local health boards if 10% of ratepayers petitioned for one, or if the death rate was extremely high. Because it was largely voluntary, stingy local taxpayers voted against health boards to avoid paying for expensive new sewers.',
-            context:
-              "Passed in panic as cholera returned to Britain in 1848, this law created a central Board of Health. However, it was 'permissive' (voluntary), and ratepayer associations fiercely fought against paying higher taxes for municipal sewers.",
-            hinge_question:
-              "Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-            provenance_clues: {
-              author: 'British Parliament under Prime Minister Lord John Russell.',
-              audience:
-                'Town councils, ratepayer associations, and municipal authorities across Britain.',
-              motive:
-                'Providing legal powers for towns to form local health boards to combat epidemic cholera.',
-              hinge_question:
-                "Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-            },
-            teacher_notes: {
-              hinge_question:
-                "Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-              source_context:
-                "Passed in panic as cholera returned in 1848, this law created a central Board of Health. **Hinge Question:** Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-              provenance_breakdown: {
-                author: 'British Parliament under Prime Minister Lord John Russell.',
-                audience:
-                  'Town councils, ratepayer associations, and municipal authorities across Britain.',
-                motive:
-                  'Providing legal powers for towns to form local health boards to combat epidemic cholera.',
-              },
-            },
-            source_context:
-              "Passed in panic as cholera returned in 1848, this law created a central Board of Health. **Hinge Question:** Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-          },
+          ref: '[4.5]',
+          period: '1858–1865',
+          title: 'Sir Joseph Bazalgette’s Civil Engineering Triumph: 82 Miles of Sewers',
+          image: '/units/water_and_sanitation/assets/joseph_bazalgette.jpg',
+          image_alt:
+            'Portrait photograph of Sir Joseph Bazalgette, Chief Engineer of the Metropolitan Board of Works',
+          caption:
+            "Sir Joseph Bazalgette (1819–1891). Chief Engineer who directed the construction of London's 82-mile underground intercepting brick sewer network.",
+          text: '<span class="para-ref">[4.5]</span> Terrified for their own lives, Parliament abandoned **laissez-faire** inertia in just eighteen days. On 2 August 1858, MPs passed the Metropolis Local Management Act, granting the Metropolitan Board of Works £3 million to rebuild London’s drainage. Chief Engineer **Sir Joseph Bazalgette** was given total command. Bazalgette devised a breathtaking civil engineering masterplan: instead of letting sewers flow south and north into the Thames, he constructed **82 miles of subterranean intercepting sewers** running east-to-west, parallel to the river. Built using 318 million bricks and revolutionary waterproof Portland cement, these egg-shaped tunnels utilized natural gravity slopes of two feet per mile to carry 420 million gallons of wastewater daily past London to massive treatment reservoirs at Barking and Crossness. At low points, massive steam-powered beam engines—mirrored locally by the **Eastney Pumping Station in Portsmouth (1865)**—pumped effluent up into outfall tanks discharged into the estuary at high tide. Opened in 1865 by the Prince of Wales, Bazalgette’s brick revolution permanently eliminated cholera from London and created the Victoria and Albert Embankments, reclaiming 37 acres of river mud.',
+        },
+      ],
+      sources: [
+        {
+          id: 'water_l4_src_a',
+          letter: 'Source A',
+          type: 'visual',
+          title:
+            "'Father Thames Introducing His Offspring to the Fair City of London' (Punch, July 1858)",
+          caption:
+            'Father Thames Introducing His Offspring (Punch, 1858). Satirical cartoon personifying the Thames delivering Diphtheria, Scrofula, and Cholera to London.',
+          image: '/images/father_thames_punch_1858.jpg',
+          source_context:
+            'Published in Punch magazine at the peak of the Great Stink in July 1858. The cartoon personifies the River Thames as a decrepit, slime-covered old man presenting his deadly children—Diphtheria, Scrofula, and Cholera—to the female embodiment of the City of London.',
+          prompt:
+            'What can you infer from Source A about public attitudes toward the pollution of the River Thames in the summer of 1858?',
+          model_answer:
+            'Source A reveals deep public anger and disgust towards the toxic condition of the River Thames, portraying it as a lethal source of pestilence and preventable death. By depicting the river introducing diseases directly to London, Punch mocked the failure of government authorities to clean up the river until it threatened the entire metropolis.',
+        },
+        {
+          id: 'water_l4_src_b',
+          letter: 'Source B',
+          type: 'visual',
+          title: "'A Court for King Cholera' by John Leech (Punch Magazine, September 1852)",
+          caption:
+            'A Court for King Cholera (Punch, 1852). Satirical political cartoon showing personified pestilence, open cesspools, and poverty in an urban court.',
+          image: '/images/court_for_king_cholera.png',
+          source_context:
+            'Published by British satirist John Leech in the reformist middle-class magazine Punch following London’s second cholera pandemic of 1848–49. The cartoon depicts an unpaved slum court dominated by a coffin merchant, a child playing on a dungheap, and raw sewage seeping from broken privies.',
+          prompt:
+            "What is the cartoonist's main message in Source B regarding the relationship between urban squalor and the spread of epidemic disease?",
+          model_answer:
+            'The cartoonist is arguing that neglected slum courts filled with overflowing cesspools and raw sewage are direct breeding grounds for cholera. By personifying cholera as a king ruling over squalor, Punch criticized landlords and local councils for tolerating filthy conditions that invited preventable death.',
+        },
+        {
+          id: 'water_l4_src_c',
+          letter: 'Source C',
+          type: 'written',
+          title:
+            'Hansard Parliamentary Debates: The Great Stink in the House of Commons (18 June 1858)',
+          author: 'Benjamin Disraeli (Chancellor of the Exchequer)',
+          date: '18 June 1858',
+          text: '"The pestilence from the River Thames has now reached such an intolerable height that it is virtually impossible to transact public business in this House. A stench which is utterly abominable penetrates every corridor, and our committee rooms are vacated in horror. The noble river that should be the ornament of Europe has been transformed into an open sewer, spreading pestilential miasma among us all. We can no longer dally with local boards; Parliament must assume responsibility and vote the necessary funds to purify this great capital before plague strikes us down."',
+          source_context:
+            'Spoken on the floor of the House of Commons by Chancellor Benjamin Disraeli as temperatures soared past 35°C during the June 1858 heatwave. Disraeli was seeking emergency powers to fund the Metropolitan Board of Works and bypass parish ratepayer resistance.',
+          prompt:
+            'What does Source C reveal about why Victorian politicians finally agreed to spend public money on building London’s sewer system?',
+          model_answer:
+            'Source C reveals that politicians acted out of immediate self-preservation and personal panic rather than altruism for the poor, as the stench from the Thames penetrated Parliament itself and halted government business. Disraeli made clear that the threat of airborne plague striking down MPs forced Parliament to abandon its traditional laissez-faire reluctance to spend public money.',
+        },
+        {
+          id: 'water_l4_src_d',
+          letter: 'Source D',
+          type: 'visual',
+          title:
+            "Edwin Chadwick's 'Report on the Sanitary Condition of the Labouring Population' (1842)",
+          caption:
+            "Title page of Chadwick's pioneering 1842 Parliamentary Blue Book presenting the first nationwide statistical analysis of poverty and disease.",
+          image: '/images/chadwick_sanitary_report_1842.jpg',
+          source_context:
+            'Written by barrister and Poor Law commissioner Edwin Chadwick in 1842 after surveying over 2,000 local doctors across England, Wales, and Scotland. Chadwick compiled death rates, wage levels, and drainage conditions to show that filth caused premature death and cost taxpayers millions in poor relief.',
+          prompt:
+            'How did Edwin Chadwick use evidence in Source D to challenge traditional Victorian beliefs about poverty and public health?',
+          model_answer:
+            'Chadwick used rigorous statistical data to prove that disease was not caused by moral weakness or laziness, but was the direct physical result of living alongside raw human waste and filthy water. By linking squalor directly to high death rates and rising poor relief costs, Chadwick proved that state-funded sanitation would actually save taxpayers money.',
+        },
+        {
+          id: 'water_l4_src_e',
+          letter: 'Source E',
+          type: 'visual',
+          title:
+            'Construction of the Low-Level Intercepting Sewer (The Illustrated London News, 1862)',
+          caption:
+            "Wood engraving showing navvies constructing Sir Joseph Bazalgette's egg-shaped brick sewer tunnels beneath London, 1862.",
+          image: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
+          source_context:
+            "Published in The Illustrated London News during the peak construction of Bazalgette's 82-mile sewer system. Navvies excavated deep trenches through London streets, laying egg-shaped brick tunnels that used natural gravity gradients to carry waste away from the Thames.",
+          prompt:
+            'What does Source E demonstrate about the scale, engineering techniques, and materials used in Bazalgette’s sewer revolution?',
+          model_answer:
+            'Source E shows the immense industrial scale and precision of Victorian civil engineering, with teams of skilled bricklayers constructing massive egg-shaped tunnels using waterproof Portland cement. The curved profile allowed water to flow rapidly even at low volumes, preventing sludge buildup and ensuring self-cleansing drainage.',
         },
       ],
       tasks: [
         {
-          id: 'ws_l4_q4_explain_why',
+          id: 'ws_l4_q2_explain_why',
           type: 'extended_writing',
-          topic: 'Question 4: Explain Why [12 marks • 15 mins]',
-          title: 'Question 4: Explain Why [12 marks • 15 mins]',
+          topic: 'Question 2: Explain Why [12 marks • 15 mins]',
+          title: 'Question 2: Explain Why [12 marks • 15 mins]',
           question:
-            'Explain why public health in industrial towns deteriorated into a national crisis in the period 1800–1850. [12 marks]',
+            'Explain why living conditions and public health in British boomtowns worsened dramatically during the Industrial Revolution. [12 marks]',
           stimulus: [
-            'The rapid rate of urbanisation and construction of back-to-back housing',
-            'The Victorian political belief in laissez-faire and opposition from ratepayers',
+            'The rapid construction of unventilated back-to-back housing and shared privy middens',
+            'The arrival of Asiatic cholera in 1831 and the persistence of miasma theory',
           ],
           scaffolding: {
             guidance:
               'Write a structured 3-paragraph PEEL response. Use the exact words from the question stem in your Point and in your Link for every paragraph.',
             structure_strip: [
               {
-                col: '1. UNCONTROLLED URBANISATION & HOUSING',
+                col: '1. INDUSTRIAL URBANISATION & SQUALOR',
                 prompt:
-                  'Explain how rapid population migration created back-to-back housing, damp cellar dwellings, and overflowing privy middens without sewers [4.1, 4.2].',
+                  'Explain how steam-powered factories caused population explosion and flimsy back-to-back tenements with zero municipal drainage [4.1].',
                 starter:
-                  'A primary catalyst explaining why public health in industrial towns deteriorated into a national crisis was the unprecedented pace of urbanisation...',
+                  'A primary catalyst explaining why living conditions in British boomtowns worsened was rapid industrial urbanisation and speculative building...',
               },
               {
-                col: '2. WATER CONTAMINATION & CHOLERA',
+                col: '2. ASIATIC CHOLERA & MIASMA DOGMA',
                 prompt:
-                  'Explain how shallow wells contaminated with sewage collided with the 1831 arrival of Asiatic Cholera and miasma dogma [4.2, 4.3].',
+                  'Explain how the 1831 Asiatic cholera epidemic struck and why belief in airborne miasma delayed clean water interventions [4.2, 4.3].',
                 starter:
-                  'Furthermore, the crisis deepened into a national catastrophe because polluted water supplies collided with the lethal arrival of Asiatic Cholera...',
+                  'Furthermore, a decisive reason explaining why public health deteriorated was the terrifying arrival of Asiatic cholera in 1831...',
               },
               {
-                col: '3. LAISSEZ-FAIRE & POLITICAL GRIDLOCK',
+                col: '3. LAISSEZ-FAIRE INERTIA & VERDICT',
                 prompt:
-                  'Explain how the ideology of laissez-faire and ratepayer resistance crippled the 1848 Public Health Act [4.4, 4.5].',
+                  "Explain how ratepayer opposition and laissez-faire politics blocked Chadwick's 1848 Public Health Act until the 1858 Great Stink [4.3, 4.4].",
                 starter:
-                  'Ultimately, the underlying reason why the public health crisis persisted without remedy was the entrenched Victorian ideology of laissez-faire...',
+                  'Ultimately, the decisive underlying reason why squalor persisted was the prevailing government philosophy of laissez-faire...',
               },
             ],
+            sentence_starters: [
+              'A primary catalyst explaining why living conditions in British boomtowns worsened was...',
+              'Specifically, this meant that...',
+              'In particular, this was demonstrated when...',
+              'Consequently, this reveals that...',
+              'Ultimately, the decisive reason why public health deteriorated was... because...',
+            ],
+            model_answer:
+              "A primary catalyst explaining why living conditions in British boomtowns worsened was rapid industrial urbanisation and speculative building. Between 1780 and 1850, the Industrial Revolution concentrated millions of factory workers into northern cities like Manchester, which grew tenfold. Speculative landlords threw up unventilated back-to-back tenements sharing party walls on three sides, with raw sewage draining into unpaved streets from shared privy middens. Consequently, this explosive urban growth directly triggered lethal outbreaks of typhus and contaminated shallow drinking wells.\n\nFurthermore, a decisive reason explaining why public health deteriorated was the arrival of Asiatic cholera in 1831 combined with widespread medical ignorance. When cholera struck Sunderland in October 1831, killing over 52,000 Britons in months, doctors remained convinced that atmospheric miasma was the vector. Because authorities burned tar barrels rather than isolating water contamination, the disease spread unchecked through dense slums where privies leaked directly into drinking water sources.\n\nUltimately, the decisive underlying reason why squalor persisted was the prevailing government philosophy of laissez-faire. Although Edwin Chadwick's 1842 Report proved that filthy slums caused poverty and disease, wealthy ratepayers resisted paying municipal taxes for glazed sewer pipes. The resulting 1848 Public Health Act was permissive rather than compulsory, ensuring that until the 1858 Great Stink threatened Parliament directly, local councils refused to fund the infrastructure needed to save working-class lives.",
           },
-          hints: [
-            'Point: State your factor clearly using the exact words from the question stem.',
-            'Evidence: Deploy specific historical details: Manchester population surge, back-to-back houses, Asiatic Cholera (1831), Chadwick’s 1842 Report (life expectancy 17), 1848 Act, and laissez-faire [4.1–4.5].',
-            'Explanation: Connect the factors causally: show how permissive legislation allowed selfish ratepayers to block essential sewer taxes [4.5].',
-            'Link: Conclude with a sustained comparative judgment: evaluate whether economic greed or political ideology was the root driver [4.5].',
-          ],
           model_answer:
-            'A primary catalyst explaining why public health in industrial towns deteriorated into a national crisis was the unprecedented pace of urbanisation and the chaotic construction of back-to-back housing between 1800 and 1850. As steam-powered textile mills and ironworks expanded, millions of rural labourers flooded into northern boomtowns like Manchester, whose population exploded tenfold to over 300,000. Because towns possessed no building codes or town planning regulations, speculative landlords built cramped rows of back-to-back houses that shared party walls on three sides, entirely eliminating through-ventilation. Entire families were packed into damp, unpaved cellar dwellings, while up to one hundred workers shared a single outdoor privy midden. These open pits overflowed into courtyards, creating mountains of decomposing nightsoil that contaminated the soil and made urban living conditions utterly squalid.<br><br>Furthermore, the public health crisis deepened into a national catastrophe because polluted water supplies collided with the lethal arrival of Asiatic Cholera in 1831. Industrial towns lacked municipal piped water networks; private water companies operated for profit, turning on street standpipes for merely twenty minutes three days a week. As a consequence, working-class families drank from shallow wells that had absorbed liquid sewage leaking from neighbouring cesspools. When cholera arrived through Sunderland in October 1831, the pathogen spread with terrifying speed, killing over 32,000 people nationwide by inducing fatal dehydration within hours. Because the medical establishment dogmatically believed in miasma theory, local authorities wasted time lighting tar bonfires and whitewashing alleys rather than purifying drinking water. As Edwin Chadwick proved in his 1842 Sanitary Report, the average life expectancy for a factory labourer in Manchester collapsed to just seventeen years, demonstrating that water contamination had created an unprecedented humanitarian emergency.<br><br>Ultimately, the decisive underlying reason why the public health crisis persisted without remedy was the entrenched Victorian political ideology of laissez-faire and fierce resistance from middle-class ratepayers. Victorian politicians believed that the state should "leave alone" private enterprise and not interfere in property rights or impose taxes. When Parliament finally passed the 1848 Public Health Act during a second cholera panic, the law was fatally compromised by being made permissive (optional) rather than compulsory. Wealthy landlords and ratepayer associations furiously resisted paying taxes for underground sewers, denouncing health inspectors as tyrannical dictators. This taxpayer backlash culminated in the sacking of Edwin Chadwick in 1854 and the dismantling of the General Board of Health. Therefore, while urban density provided the physical conditions for disease, it was the stubborn refusal of the state to abandon laissez-faire that explains why public health deteriorated into an unresolved national crisis.',
+            "A primary catalyst explaining why living conditions in British boomtowns worsened was rapid industrial urbanisation and speculative building. Between 1780 and 1850, the Industrial Revolution concentrated millions of factory workers into northern cities like Manchester, which grew tenfold. Speculative landlords threw up unventilated back-to-back tenements sharing party walls on three sides, with raw sewage draining into unpaved streets from shared privy middens. Consequently, this explosive urban growth directly triggered lethal outbreaks of typhus and contaminated shallow drinking wells.\n\nFurthermore, a decisive reason explaining why public health deteriorated was the arrival of Asiatic cholera in 1831 combined with widespread medical ignorance. When cholera struck Sunderland in October 1831, killing over 52,000 Britons in months, doctors remained convinced that atmospheric miasma was the vector. Because authorities burned tar barrels rather than isolating water contamination, the disease spread unchecked through dense slums where privies leaked directly into drinking water sources.\n\nUltimately, the decisive underlying reason why squalor persisted was the prevailing government philosophy of laissez-faire. Although Edwin Chadwick's 1842 Report proved that filthy slums caused poverty and disease, wealthy ratepayers resisted paying municipal taxes for glazed sewer pipes. The resulting 1848 Public Health Act was permissive rather than compulsory, ensuring that until the 1858 Great Stink threatened Parliament directly, local councils refused to fund the infrastructure needed to save working-class lives.",
         },
       ],
       teacher_notes: {
         primer:
-          'This enquiry explores how the industrial shock overwhelmed traditional pre-modern sanitary methods. Guide pupils to understand why laissez-faire ideology prevented the Victorian state from intervening, even when Chadwick proved that filth was destroying thousands of lives.',
+          'This enquiry explores how industrialisation broke traditional sanitary arrangements and forced the Victorian state to abandon laissez-faire. Guide pupils to see that politicians only funded Bazalgette’s sewers when the Great Stink threatened their own lives in Parliament.',
         objectives: [
           {
             objective:
-              'Explain how industrial boomtowns created back-to-back housing and water squalor.',
+              'Explain how industrial boomtowns created back-to-back housing and cellar slums with zero drainage.',
             primer:
-              'Direct pupils to paragraphs [4.1] and [4.2]. Emphasise lack of planning codes and the privy midden.',
+              'Direct pupils to block [4.1] and the Doré engraving, highlighting the total lack of ventilation and shared privy middens.',
             question:
-              'Hinge Question: Why did speculative landlords build back-to-back houses rather than detached homes with gardens and drains?',
+              'Why were back-to-back houses and cellar dwellings so catastrophic for public health?',
           },
           {
-            objective: 'Evaluate why the 1848 Public Health Act failed to solve the crisis.',
+            objective:
+              'Analyze why the arrival of cholera in 1831 caused panic and exposed the limitations of miasma theory.',
             primer:
-              'Focus on paragraph [4.5]. Highlight the definition of laissez-faire and the permissive nature of the law.',
+              'Examine block [4.2] and Source B, emphasizing the speed of death and why burning tar barrels failed.',
             question:
-              'Hinge Question: If cholera was killing thousands, why did wealthy ratepayers celebrate when Edwin Chadwick was sacked in 1854?',
+              'Why did Victorian doctors believe bad smells caused cholera instead of contaminated water?',
+          },
+          {
+            objective:
+              "Evaluate Edwin Chadwick's 1842 Sanitary Report and the weaknesses of the permissive 1848 Public Health Act.",
+            primer:
+              "Compare Chadwick's economic argument in [4.3] with ratepayer resistance under laissez-faire.",
+            question:
+              'Why did wealthy ratepayers resist spending money on public health even after Chadwick proved filth caused disease?',
+          },
+          {
+            objective:
+              'Describe the environmental crisis of the Great Stink in June 1858 and its political impact.',
+            primer:
+              "Read Disraeli's speech in Source C and explore how the Thames became an open sewer in [4.4].",
+            question:
+              'How did the summer heatwave of 1858 force Parliament to act when twenty years of cholera reports had failed?',
+          },
+          {
+            objective:
+              "Assess Sir Joseph Bazalgette’s civil engineering achievements in building London's intercepting sewer network.",
+            primer:
+              'Review block [4.5] and Source E, focusing on the gravity gradient, Portland cement, and the 82-mile tunnel network.',
+            question:
+              "Why was Bazalgette's intercepting sewer system far more effective than simply dumping waste into the local river?",
           },
         ],
-        source_context: [
-          {
-            source: 'Source A (Doré, "Over London by Rail")',
-            context:
-              'Gustave Doré’s 1872 engraving illustrates back-to-back brick tenements packed tightly together beneath a railway viaduct with zero drainage or ventilation. Hinge Question: Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-          },
-          {
-            source: 'Source B ("A Court for King Cholera")',
-            context:
-              '1852 Punch cartoon showing cholera enthroned amidst slum filth and privies. Hinge Question: How does Source B use visual satire to blame greedy landlords and municipal inaction for cholera epidemics?',
-          },
-          {
-            source: 'Source C (Dr Southwood Smith, "Treatise on Fever")',
-            context:
-              'Dr Southwood Smith’s 1844 treatise shows how leading doctors genuinely believed bad smells directly poisoned the blood. Hinge Question: Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-          },
-          {
-            source: 'Source D (Chadwick’s 1842 Report)',
-            context:
-              'Statistical life expectancy tables showing Manchester labourers dying at age 17. Hinge Question: Was Chadwick motivated primarily by moral compassion for the poor, or by a desire to reduce poor-rate taxes for the wealthy middle class?',
-          },
-          {
-            source: 'Source E (The 1848 Public Health Act)',
-            context:
-              "Permissive legislation establishing the General Board of Health, crippled by ratepayer resistance. Hinge Question: Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-          },
-        ],
+        source_context: {
+          water_l4_src_a:
+            'Father Thames Delivering His Children to London captures public disgust during the Great Stink. Hinge Question: Why did the personification of the Thames as an old man carrying disease resonate so strongly with the Victorian public?',
+          water_l4_src_b:
+            'Leech’s Court for King Cholera personifies pestilence in an urban court. Hinge Question: Why did satirists accuse landlords of being the primary accomplices of cholera?',
+          water_l4_src_c:
+            'Disraeli’s Great Stink address in Hansard records parliamentary panic. Hinge Question: How does Disraeli’s speech reveal the exact moment laissez-faire ideology broke down?',
+          water_l4_src_d:
+            'Chadwick’s 1842 Report provided statistical evidence linking filth to mortality. Hinge Question: Why was economic self-interest Chadwick’s most persuasive argument to Victorian politicians?',
+          water_l4_src_e:
+            'The 1862 sewer excavation engraving illustrates Victorian civil engineering. Hinge Question: Why was the egg-shaped cross-section of the sewer tunnel crucial to its hydraulic success?',
+        },
       },
-      video: [
-        {
-          id: 'oHhqzoqFqew',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=oHhqzoqFqew',
-          title: 'The Growth of Industry & Factory Towns | BBC Bitesize',
-          duration: '4 mins 17 secs',
-          pathway: 'Starter Hook',
-          teacher_guidance:
-            'Recommended Watch Window: 00:15–03:45 | Lesson Phase: Lesson Hook | Tone Alert: Rapid overview of industrial urban migration, overcrowding, and life expectancy collapse.',
-          viewing_task:
-            '[01:00] Quick Check: In 1840s Manchester or Liverpool, what was the average life expectancy of a working-class factory labourer?\n[03:15] Hinge Question: Why did the rapid, unregulated growth of industrial cities create a far deadlier disease environment than medieval farming villages?',
-          model_answer:
-            'Quick Check: Approximately 17 to 19 years of age.\nHinge Question: Tens of thousands of workers were crammed into tiny spaces without sewers, clean piped water, or garbage collection; cesspools overflowed into cellars and seeped into drinking pumps, spreading cholera and typhoid.',
-        },
-        {
-          id: 'TT4Z1Ikf36w',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=TT4Z1Ikf36w',
-          title: 'Victorian Slums & The Public Health Crisis | Secondary History',
-          duration: '8 mins 30 secs',
-          pathway: 'Core Enquiry',
-          teacher_guidance:
-            'Recommended Watch Window: 00:30–07:45 | Lesson Phase: Forensic Evidence | Tone Alert: Investigates back-to-back courts, cellar dwellings, and privy pits.',
-          viewing_task:
-            '[01:45] Recall: What was a back-to-back house, and why did it provide virtually zero fresh air circulation?\n[04:00] Explain: How did water companies pump contaminated river water directly into communal standpipes for just two hours a day?\n[06:30] Challenge: In what ways did the laissez-faire economic philosophy of the Victorian government prevent state intervention to clean up slums?',
-          model_answer:
-            "Recall: Terraced houses joined together on three sides (back and both flanks) with windows only on the front, creating dark, damp, airless rooms.\nExplain: Private water companies drew water straight from rivers into which sewers emptied, turning standpipes on only briefly, forcing families to store polluted water in stagnant buckets.\nChallenge: Victorian politicians believed the government should not interfere in private property or business ('leave alone'); landlords fiercely resisted spending money on drains, and ratepayers refused to pay higher local taxes.",
-        },
-        {
-          id: 'Ry2ULl8osu4',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=Ry2ULl8osu4',
-          title: 'Oliver Twist (2005) | Victorian Slums & Workhouses Trailer',
-          duration: '2 mins 10 secs',
-          pathway: 'Cinematic',
-          teacher_guidance:
-            'Recommended Watch Window: 00:00–02:10 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Captures the visual grittiness, chimney smoke, and poverty of Victorian Britain.',
-          viewing_task:
-            '[01:05] Cinematic Discussion Focus: How does the cinematography use color, shadows, and claustrophobic framing to capture the unlivable environment of industrial slums?',
-          model_answer:
-            'Cinematic Discussion Focus: The film uses murky brownish-grey lighting, smoke-filled air, and narrow crowded streets to immerse the viewer in the grim sensory reality of Victorian urban poverty, illustrating why disease spread uncontrollably.',
-        },
-        {
-          id: 'MdNXDqCGv3M',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=MdNXDqCGv3M',
-          title: 'Edwin Chadwick & The 1848 Public Health Act | Secondary History',
-          duration: '6 mins 15 secs',
-          pathway: 'Documentary Depth',
-          teacher_guidance:
-            "Recommended Watch Window: 00:30–05:45 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Rigorous analysis of Chadwick's 1842 Sanitary Report and the 1848 legislation.",
-          viewing_task:
-            '[01:30] Recall: What statistical evidence did Edwin Chadwick present in his 1842 Report on the Sanitary Condition of the Labouring Population?\n[03:15] Explain: How did Chadwick use economic arguments to convince politicians that poor sanitation was costing taxpayers millions in Poor Law relief?\n[05:00] Challenge: Why was the 1848 Public Health Act largely ineffective (due to being non-compulsory and relying on optional local boards of health)?',
-          model_answer:
-            'Recall: He proved mathematically that life expectancy was drastically lower in industrial slums and that filthy living conditions, not laziness, caused disease.\nExplain: He argued that preventing disease by installing clean water and sewers was far cheaper than paying endless Poor Law relief to support widows and orphans of deceased breadwinners.\nChallenge: The Act was permissive rather than compulsory: town councils could choose whether or not to set up a board of health, and many refused because wealthy ratepayers refused to pay higher property taxes.',
-        },
-      ],
       quick_quiz: [
         {
           question:
@@ -5539,1165 +5129,419 @@ const water_and_sanitation_data = {
           answer: 'He was sacked and the General Board of Health was abolished',
         },
       ],
-      quiz: [
+      flashcards: [],
+      workbook_stages: [
         {
-          question:
-            'What transformation turned Britain into the "workshop of the world" between 1780 and 1850?',
-          options: [
-            'The Norman Conquest',
-            'The Reformation',
-            'The Industrial Revolution',
-            'The Great Plague',
+          step: 1,
+          para_ref: '[4.1]',
+          paraRef: '[4.1]',
+          date: '1780–1840',
+          heading:
+            'How did rapid industrial urbanisation create unprecedented slum squalor in British factory boomtowns?',
+          questionHeading:
+            'How did rapid industrial urbanisation create unprecedented slum squalor in British factory boomtowns?',
+          bullets: [
+            'Steam-Powered Factory Boomtowns',
+            'Unventilated Back-to-Back Slums',
+            'Shared Overflowing Privy Middens',
           ],
-          answer: 'The Industrial Revolution',
+          focus_clue:
+            'Why did industrial expansion and lack of municipal drainage pack millions into unventilated back-to-backs?',
+          focusClue:
+            'Why did industrial expansion and lack of municipal drainage pack millions into unventilated back-to-backs?',
         },
         {
-          question:
-            'What term describes the rapid movement of populations from countryside farms into industrial cities?',
-          options: ['Enclosure', 'Urbanisation', 'Colonisation', 'Reformation'],
-          answer: 'Urbanisation',
-        },
-        {
-          question:
-            'How much did the population of industrial Manchester grow between 1770 and 1850?',
-          options: [
-            'It exploded from 25,000 to over 300,000',
-            'It dropped from 50,000 to zero',
-            'It stayed at 10,000',
-            'It reached 10 million',
+          step: 2,
+          para_ref: '[4.2]',
+          paraRef: '[4.2]',
+          date: '1831–1832',
+          heading:
+            'Why did the arrival of Asiatic cholera in 1831 terrorize Victorian Britain and expose the failure of miasma theory?',
+          questionHeading:
+            'Why did the arrival of Asiatic cholera in 1831 terrorize Victorian Britain and expose the failure of miasma theory?',
+          bullets: [
+            'Sunderland Baltic Shipping Port',
+            '52,000 Dehydration Fatalities',
+            'Tar Barrels & Miasma Fallacy',
           ],
-          answer: 'It exploded from 25,000 to over 300,000',
+          focus_clue:
+            'Why did Victorian doctors burning tar barrels fail completely to stop waterborne Asiatic cholera?',
+          focusClue:
+            'Why did Victorian doctors burning tar barrels fail completely to stop waterborne Asiatic cholera?',
         },
         {
-          question: 'What were cheaply constructed houses sharing three party walls called?',
-          options: ['Roundhouses', 'Manor houses', 'Villas', 'Back-to-back houses'],
-          answer: 'Back-to-back houses',
-        },
-        {
-          question: 'Why were back-to-back houses notoriously unhealthy?',
-          options: [
-            'They were built of straw',
-            'They were painted black',
-            'They had no front doors',
-            'They shared three walls and had no through-ventilation',
+          step: 3,
+          para_ref: '[4.3]',
+          paraRef: '[4.3]',
+          date: '1842–1848',
+          heading:
+            'Why did Edwin Chadwick’s 1842 Report fail to clean up Britain despite proving that filth caused disease?',
+          questionHeading:
+            'Why did Edwin Chadwick’s 1842 Report fail to clean up Britain despite proving that filth caused disease?',
+          bullets: [
+            "Chadwick's Sanitary Report 1842",
+            'Poverty Caused by Slum Filth',
+            'Permissive 1848 Public Health Act',
           ],
-          answer: 'They shared three walls and had no through-ventilation',
+          focus_clue:
+            'Why did wealthy ratepayers resist spending money on public health under the banner of laissez-faire?',
+          focusClue:
+            'Why did wealthy ratepayers resist spending money on public health under the banner of laissez-faire?',
         },
         {
-          question: 'What was an outdoor toilet shed built over an open refuse pit called?',
-          options: ['An aqueduct', 'A privy midden', 'A thermae', 'A water closet'],
-          answer: 'A privy midden',
-        },
-        {
-          question:
-            'How often was piped water typically turned on at public standpipes in poor slums?',
-          options: [
-            '24 hours every day',
-            'Only on Christmas Day',
-            'For 20–30 minutes a few days a week',
-            'Never',
+          step: 4,
+          para_ref: '[4.4]',
+          paraRef: '[4.4]',
+          date: 'June 1858',
+          heading:
+            "How did the environmental catastrophe of the 'Great Stink' finally shatter Victorian laissez-faire inertia?",
+          questionHeading:
+            "How did the environmental catastrophe of the 'Great Stink' finally shatter Victorian laissez-faire inertia?",
+          bullets: [
+            '200,000 Flushing Water Closets',
+            'Fermenting Thames Sludge 35°C',
+            'Parliament Panic & £3m Grant',
           ],
-          answer: 'For 20–30 minutes a few days a week',
+          focus_clue:
+            'How did the Great Stink threaten MPs in Parliament and force emergency legislation in eighteen days?',
+          focusClue:
+            'How did the Great Stink threaten MPs in Parliament and force emergency legislation in eighteen days?',
         },
         {
-          question: 'In what year did Asiatic Cholera first make landfall in Britain?',
-          options: ['1831', '1348', '1665', '1914'],
-          answer: '1831',
-        },
-        {
-          question: 'At which northeastern coal port did cholera first enter Britain in 1831?',
-          options: ['Sunderland', 'London', 'Liverpool', 'Portsmouth'],
-          answer: 'Sunderland',
-        },
-        {
-          question: 'What was the nickname given to cholera because of its terrifying symptoms?',
-          options: [
-            '"The Red Plague"',
-            '"The Black Death"',
-            '"The Blue Death"',
-            '"The Yellow Fever"',
+          step: 5,
+          para_ref: '[4.5]',
+          paraRef: '[4.5]',
+          date: '1858–1865',
+          heading:
+            'Why was Sir Joseph Bazalgette’s intercepting sewer network considered the greatest engineering triumph of the Victorian age?',
+          questionHeading:
+            'Why was Sir Joseph Bazalgette’s intercepting sewer network considered the greatest engineering triumph of the Victorian age?',
+          bullets: [
+            '82 Miles Intercepting Sewers',
+            '318 Million Bricks & Portland Cement',
+            'Gravity Gradient & Eastney Pumping',
           ],
-          answer: '"The Blue Death"',
-        },
-        {
-          question: 'What microscopic pathogen causes cholera?',
-          options: ['Yersinia pestis', 'Influenza', 'Smallpox', 'Vibrio cholerae'],
-          answer: 'Vibrio cholerae',
-        },
-        {
-          question:
-            'What incorrect medical theory did doctors believe caused cholera in the 1830s?',
-          options: ['Genetics', 'Miasma theory (bad air)', 'Virus theory', 'Germ theory'],
-          answer: 'Miasma theory (bad air)',
-        },
-        {
-          question:
-            'Who published the landmark 1842 Report on the Sanitary Condition of the Labouring Population?',
-          options: ['Edwin Chadwick', 'Joseph Bazalgette', 'John Snow', 'Robert Koch'],
-          answer: 'Edwin Chadwick',
-        },
-        {
-          question:
-            'According to Chadwick’s 1842 report, what was the average life expectancy for a labourer in Manchester?',
-          options: ['75 years', '90 years', 'Just 17 years', '38 years'],
-          answer: 'Just 17 years',
-        },
-        {
-          question: 'What economic argument did Chadwick use to convince MPs to build sewers?',
-          options: [
-            'Sewers would produce gold',
-            'Preventable disease cost taxpayers more in poor-relief than building sewers',
-            'Sewers would attract French tourists',
-            'Sewers would end all wars',
-          ],
-          answer: 'Preventable disease cost taxpayers more in poor-relief than building sewers',
-        },
-        {
-          question: 'What national body was established by the landmark Public Health Act of 1848?',
-          options: [
-            'The World Health Organization',
-            'The Royal Navy',
-            'The National Health Service',
-            'The General Board of Health',
-          ],
-          answer: 'The General Board of Health',
-        },
-        {
-          question: 'Why was the 1848 Public Health Act largely ineffective in many areas?',
-          options: [
-            'It was permissive (optional) rather than compulsory',
-            'It was banned by the Queen',
-            'Sewers had not been invented yet',
-            'Nobody had any bricks',
-          ],
-          answer: 'It was permissive (optional) rather than compulsory',
-        },
-        {
-          question:
-            'What Victorian political philosophy believed government should not interfere in business or taxes?',
-          options: ['Socialism', 'Laissez-faire', 'Communism', 'Feudalism'],
-          answer: 'Laissez-faire',
-        },
-        {
-          question:
-            'Who were the local property owners that campaigned fiercely against paying sanitary taxes?',
-          options: ['Gong farmers', 'Monks', 'Mill workers', 'Ratepayers'],
-          answer: 'Ratepayers',
-        },
-        {
-          question: 'What happened to Edwin Chadwick in 1854 as a result of ratepayer backlash?',
-          options: [
-            'He moved to America',
-            'He was knighted by the Queen',
-            'He was sacked and the General Board of Health was abolished',
-            'He became Prime Minister',
-          ],
-          answer: 'He was sacked and the General Board of Health was abolished',
-        },
-      ],
-      sources: [
-        {
-          id: 'water_l4_src_a',
-          letter: 'A',
-          type: 'visual',
-          src: '/images/victorian_slum.jpg',
-          image: '/images/victorian_slum.jpg',
-          title: "Source A: Gustave Doré, 'Over London by Rail' (London: A Pilgrimage, 1872)",
-          caption:
-            'Wood engraving by Gustave Doré illustrating the labyrinth of back-to-back working-class housing, narrow walled yards, and dense smoke beneath a railway viaduct in industrial London (Wellcome Collection / British Museum).',
-          author: 'Gustave Doré & Blanchard Jerrold',
-          date: '1872',
-          question_badge: 'INDUSTRIAL OVERCROWDING & SLUM EPIDEMIOLOGY',
-          question:
-            'What does Gustave Doré’s depiction of Victorian housing in Source A reveal about why infectious disease spread so rapidly in industrial towns?',
-          model_answer:
-            'Source A illustrates hundreds of back-to-back brick tenements packed tightly together with tiny walled yards and almost no sunlight or ventilation. These cramped, unpaved conditions trapped sewage and coal smoke, creating an ideal environment for the rapid transmission of epidemic typhus and cholera.',
-          context:
-            'During the 19th-century Industrial Revolution, millions of agricultural labourers migrated to industrial cities. Speculative builders constructed thousands of back-to-back houses without drainage, damp-proof courses, or municipal sewer connections.',
-          hinge_question:
-            'Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-          provenance_clues: {
-            author: 'French artist Gustave Doré and British journalist Blanchard Jerrold.',
-            audience: 'The Victorian reading public and parliamentary reformers.',
-            motive:
-              "Documenting the crushing physical reality of industrial London's working-class slums from an elevated railway vantage point.",
-            hinge_question:
-              'Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-            source_context:
-              'Gustave Doré’s 1872 engraving illustrates back-to-back brick tenements packed tightly together beneath a railway viaduct with zero drainage or ventilation. **Hinge Question:** Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-            provenance_breakdown: {
-              author: 'French artist Gustave Doré and British journalist Blanchard Jerrold.',
-              audience: 'The Victorian reading public and parliamentary reformers.',
-              motive:
-                "Documenting the crushing physical reality of industrial London's working-class slums from an elevated railway vantage point.",
-            },
-          },
-          source_context:
-            'Gustave Doré’s 1872 engraving illustrates back-to-back brick tenements packed tightly together beneath a railway viaduct with zero drainage or ventilation. **Hinge Question:** Why were Victorian speculative landlords allowed to build back-to-back tenements with zero piped water, drainage, or ventilation?',
-        },
-        {
-          id: 'water_l4_src_b',
-          letter: 'B',
-          type: 'visual',
-          src: '/images/court_for_king_cholera.png',
-          image: '/images/court_for_king_cholera.png',
-          title:
-            "Source B: 'A Court for King Cholera' by John Leech (Punch Magazine, September 1852)",
-          caption:
-            'Famous satirical wood engraving by John Leech illustrating an overcrowded London slum court overflowing with refuse, unpaved drainage, and dying children (Punch, Vol. XXIII, p. 139).',
-          author: 'John Leech, Illustrator for Punch Magazine',
-          date: 'September 1852',
-          question_badge: 'VICTORIAN SOCIAL SATIRE & CAMPAIGNING',
-          question:
-            'How does John Leech use imagery in Source B to criticize living conditions in working-class London?',
-          model_answer:
-            'Leech depicts children playing on piles of rotting dung, cesspool rubbish, and stagnant puddles in an overcrowded slum court. This criticizes landlords and authorities for leaving poor families to live in squalor where cholera thrived.',
-          context:
-            "Published after the 1848–49 cholera outbreak killed over 50,000 Britons, Leech's cartoon targeted the slum landlords of Bethnal Green and Whitechapel who charged exorbitant rents for unsewered, filthy housing.",
-          hinge_question:
-            'Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-          provenance_clues: {
-            author: 'John Leech, reformist satirical cartoonist for Punch.',
-            audience: 'Middle-class and parliamentary readers of Punch magazine.',
-            motive:
-              'Shaming landlords and the British government into clearing slum filth that caused recurring cholera outbreaks.',
-            hinge_question:
-              'Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-            source_context:
-              'Published after the 1848–49 cholera outbreak killed over 50,000 Britons, Leech’s cartoon shamed slum landlords into clearing filthy unpaved courtyards. **Hinge Question:** Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-            provenance_breakdown: {
-              author: 'John Leech, reformist satirical cartoonist for Punch.',
-              audience: 'Middle-class and parliamentary readers of Punch magazine.',
-              motive:
-                'Shaming landlords and the British government into clearing slum filth that caused recurring cholera outbreaks.',
-            },
-          },
-          source_context:
-            'Published after the 1848–49 cholera outbreak killed over 50,000 Britons, Leech’s cartoon shamed slum landlords into clearing filthy unpaved courtyards. **Hinge Question:** Why did middle-class Victorian readers find this cartoon of child poverty both shocking and morally shaming?',
-        },
-        {
-          id: 'water_l4_src_c',
-          letter: 'C',
-          type: 'written',
-          src: '',
-          image: '',
-          title: "Source C: Dr Thomas Southwood Smith, 'Treatise on Fever and Sanitation' (1844)",
-          caption:
-            'Extract from medical treatise by Dr Southwood Smith, physician to the London Fever Hospital, articulating the prevailing scientific consensus on miasmatic infection (Wellcome Collection).',
-          author: 'Dr Thomas Southwood Smith, Physician & Sanitarian',
-          date: '1844',
-          content:
-            'The room of a fever patient, in a small and badly-ventilated house, or in a confined court, is surrounded by an atmosphere filled with decomposing animal and vegetable matter... The poison generated by these filthy emanations is taken into the lungs, enters the blood, and instantly depresses the vital energies. The disease is produced directly by the atmospheric impurity.',
-          question_badge: 'THE MIASMA PARADIGM & MEDICAL CONSENSUS',
-          question:
-            'What does Source C show about why leading 19th-century doctors clung to the miasma theory?',
-          model_answer:
-            'Dr Southwood Smith explains that foul odours from rotting waste entered the lungs and poisoned the blood directly. This shows that doctors genuinely believed bad smells caused fever, using miasma theory to explain why disease was worst near stinking ditches.',
-          context:
-            'Before the discovery of bacteria, Victorian physicians believed diseases were spread through invisible toxic gases (miasmata) given off by decomposing rubbish, open cesspools, and stagnant ditches.',
-          hinge_question:
-            'Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-          provenance_clues: {
-            author: 'Dr Thomas Southwood Smith, leading medical sanitarian.',
-            audience: 'Medical practitioners, Poor Law commissioners, and government officials.',
-            motive:
-              'Arguing that urban ventilation and street cleansing were essential to prevent toxic miasma from causing epidemic fever.',
-            hinge_question:
-              'Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-            source_context:
-              'Dr Southwood Smith’s 1844 treatise shows how leading doctors genuinely believed bad smells directly poisoned the blood. **Hinge Question:** Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-            provenance_breakdown: {
-              author: 'Dr Thomas Southwood Smith, leading medical sanitarian.',
-              audience: 'Medical practitioners, Poor Law commissioners, and government officials.',
-              motive:
-                'Arguing that urban ventilation and street cleansing were essential to prevent toxic miasma from causing epidemic fever.',
-            },
-          },
-          source_context:
-            'Dr Southwood Smith’s 1844 treatise shows how leading doctors genuinely believed bad smells directly poisoned the blood. **Hinge Question:** Why did the miasma theory actually result in cleaner streets, even though the medical science behind it was completely wrong?',
-        },
-        {
-          id: 'water_l4_src_d',
-          letter: 'D',
-          type: 'visual',
-          src: '/images/chadwick_sanitary_report_1842.jpg',
-          image: '/images/chadwick_sanitary_report_1842.jpg',
-          title:
-            "Source D: Edwin Chadwick's 'Report on the Sanitary Condition of the Labouring Population' (1842)",
-          caption:
-            "Original title page and statistical comparative mortality tables from Edwin Chadwick's landmark Poor Law Commission report on sanitary deprivation (Wellcome Collection EPB/B/15949).",
-          author: 'Edwin Chadwick, Secretary to the Poor Law Commission',
-          date: '1842',
-          question_badge: 'STATISTICAL EPIDEMIOLOGY & CLASS CONTRAST',
-          question:
-            "What did Chadwick's report prove about the dramatic difference in life expectancy between social classes?",
-          model_answer:
-            "Chadwick's statistical tables proved that wealthy gentry in Rutland lived on average to 52 years, while factory labourers in industrial Manchester died at an average age of just 17. This proved mathematically that slum environments killed workers.",
-          context:
-            'Chadwick surveyed doctors, guardians, and town councils across England, collating thousands of death certificates. His report demonstrated that squalor and filth trapped workers in early death and drove up poor relief taxes.',
-          hinge_question:
-            'How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-          provenance_clues: {
-            author: 'Edwin Chadwick, utilitarian social reformer.',
-            audience: 'British Parliament, Prime Minister Sir Robert Peel, and local authorities.',
-            motive:
-              'Proving with statistics that investing in clean water and sewers would reduce national spending on poor relief.',
-            hinge_question:
-              'How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-            source_context:
-              'Chadwick surveyed doctors, guardians, and town councils across England to prove mathematically that squalor killed workers. **Hinge Question:** How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-            provenance_breakdown: {
-              author: 'Edwin Chadwick, utilitarian social reformer.',
-              audience:
-                'British Parliament, Prime Minister Sir Robert Peel, and local authorities.',
-              motive:
-                'Proving with statistics that investing in clean water and sewers would reduce national spending on poor relief.',
-            },
-          },
-          source_context:
-            'Chadwick surveyed doctors, guardians, and town councils across England to prove mathematically that squalor killed workers. **Hinge Question:** How did Chadwick use economic arguments (e.g. sick workers cost taxpayers more in poor relief) to convince a reluctant Parliament to act?',
-        },
-        {
-          id: 'water_l4_src_e',
-          letter: 'E',
-          type: 'written',
-          src: '',
-          image: '',
-          title: 'Source E: The Public Health Act of 1848 (11 & 12 Vict. c. 63)',
-          caption:
-            "Extract from the landmark 1848 Public Health Act establishing Britain's first General Board of Health (The National Archives / UK Statute Law).",
-          author: 'British Parliament',
-          date: '1848',
-          content:
-            'An Act for promoting the Public Health. Be it enacted, that a General Board of Health be constituted... That upon the petition of not less than one tenth of the inhabitants rated to the relief of the poor of any city, town, or borough, the General Board may send an inspector to hold a public inquiry... And if the death rate exceed 23 per thousand, the Board may apply the provisions of this Act to establish a local board with power to pave, sewer, and supply water.',
-          question_badge: 'PERMISSIVE STATUTE & RATEPAYER RESISTANCE',
-          question:
-            'Why was the 1848 Public Health Act limited in its ability to force towns to clean up their streets?',
-          model_answer:
-            'The Act only set up local health boards if 10% of ratepayers petitioned for one, or if the death rate was extremely high. Because it was largely voluntary, stingy local taxpayers voted against health boards to avoid paying for expensive new sewers.',
-          context:
-            "Passed in panic as cholera returned to Britain in 1848, this law created a central Board of Health. However, it was 'permissive' (voluntary), and ratepayer associations fiercely fought against paying higher taxes for municipal sewers.",
-          hinge_question:
-            "Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-          provenance_clues: {
-            author: 'British Parliament under Prime Minister Lord John Russell.',
-            audience:
-              'Town councils, ratepayer associations, and municipal authorities across Britain.',
-            motive:
-              'Providing legal powers for towns to form local health boards to combat epidemic cholera.',
-            hinge_question:
-              "Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-          },
-          teacher_notes: {
-            hinge_question:
-              "Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-            source_context:
-              "Passed in panic as cholera returned in 1848, this law created a central Board of Health. **Hinge Question:** Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
-            provenance_breakdown: {
-              author: 'British Parliament under Prime Minister Lord John Russell.',
-              audience:
-                'Town councils, ratepayer associations, and municipal authorities across Britain.',
-              motive:
-                'Providing legal powers for towns to form local health boards to combat epidemic cholera.',
-            },
-          },
-          source_context:
-            "Passed in panic as cholera returned in 1848, this law created a central Board of Health. **Hinge Question:** Why did the Victorian belief in 'laissez-faire' (leaving things alone without government interference) delay public health reform?",
+          focus_clue:
+            "How did Bazalgette's 82 miles of subterranean sewers permanently separate drinking water from human waste?",
+          focusClue:
+            "How did Bazalgette's 82 miles of subterranean sewers permanently separate drinking water from human waste?",
         },
       ],
     },
     {
       id: 'lesson_5',
-      title: "Why did it take the 'Great Stink' to finally clean up Britain's streets?",
+      title:
+        'Enquiry 5: How did Dr John Snow, Germ Theory, and the 1875 Public Health Act conquer water-borne disease?',
+      short_title: 'Germ Theory, Dr Snow & The 1875 Revolution',
+      period: '1854–1900',
       enquiry:
-        'Did politicians clean up the Thames out of care for poor people, or out of pure panic for their own lives?',
+        'Was cholera defeated by scientific observation, laboratory discovery of bacteria, or the introduction of compulsory government legislation?',
       subtitle:
-        "From the boiling heatwave of 1858 and Bazalgette's intercepting sewers to Pasteur's Germ Theory and the 1875 Act",
-      skill: 'Disciplinary Skill: Causation & Turning Points',
-      card_image: '/images/bazalgette_sewer.jpg',
-      card_position: 'center 30%',
-      banner: '/units/water_and_sanitation/assets/was_cathedral_sanitation.png',
-      cover_image: '/images/bazalgette_sewer.jpg',
+        'Enquiry 05: The Broad Street Pump, Louis Pasteur’s Swan-Neck Flasks & The 1875 Sanitary Revolution (1854–1900)',
+      skill: 'Significance & Evidence',
+      card_image: '/images/john_snow_cholera_map.jpg',
+      card_position: 'center',
+      banner: 'Enquiry 05 • Germ Theory, Dr Snow & The 1875 Revolution (1854–1900)',
+      cover_image: '/images/john_snow.jpg',
       prologue:
-        'By 1858, London was the beating heart of the British Empire, yet its greatest landmark—the River Thames—had become an open, fermenting sewer. Decades of flushing middle-class water closets directly into old storm drains had turned the river into a thick, toxic soup of human waste. In June 1858, a scorching heatwave triggered the "Great Stink", driving MPs from the Houses of Parliament with lime-soaked curtains. In sheer self-preservation, Parliament granted engineer Joseph Bazalgette £3 million and absolute power to build 82 miles of underground intercepting brick sewers. When Louis Pasteur published his Germ Theory in 1861, proving bacteria caused disease, it dealt the fatal blow to miasma—paving the way for the compulsory 1875 Public Health Act and the death of laissez-faire.',
-      margin_spine: [
+        'Between 1854 and 1884, a scientific revolution shattered centuries of medical ignorance. In September 1854, when Asiatic cholera struck Soho, Dr John Snow mapped every death around the Broad Street pump, deducing that cholera was waterborne long before bacteria could be seen. Though the medical establishment stubbornly defended miasma dogma, French chemist Louis Pasteur proved in 1861 that microscopic germs caused fermentation and disease. German microbiologist Robert Koch isolated Vibrio cholerae in 1884, providing undeniable laboratory proof. Armed with scientific certainty and galvanized by expanding working-class voting power, Disraeli’s government passed the landmark Public Health Act of 1875—compelling local councils to provide clean water, covered drainage, and sanitary inspections, permanently defeating epidemic cholera in Britain.',
+      did_you_know:
+        'When Dr John Snow presented his Soho spot map to the St James Parish Guardians on 7 September 1854, they reluctantly agreed to remove the pump handle the next day. The outbreak plummeted almost immediately!',
+      do_now: [
         {
-          year: '1855',
-          label: 'Faraday’s Warning',
+          q: 'What lethal waterborne epidemic disease first struck Britain at Sunderland in October 1831?',
+          a: 'Asiatic cholera (known as "The Blue Death").',
         },
         {
-          year: '1858',
-          label: 'The Great Stink Panic',
+          q: 'Who published the landmark 1842 Report proving that filth caused premature disease and economic poverty?',
+          a: 'Edwin Chadwick.',
         },
         {
-          year: '1865',
-          label: 'Bazalgette’s Brick Sewers',
+          q: 'Why was the Public Health Act of 1848 largely ineffective across Britain?',
+          a: 'It was permissive (optional) rather than compulsory, allowing ratepayers to refuse funding.',
         },
         {
-          year: '1865',
-          label: 'Eastney Pumping Engine',
+          q: 'What environmental crisis occurred in June 1858 when summer heat fermented raw sewage in the Thames?',
+          a: 'The Great Stink.',
         },
         {
-          year: '1875',
-          label: 'Compulsory Public Health',
+          q: 'How many miles of underground intercepting brick sewers did Sir Joseph Bazalgette construct?',
+          a: '82 miles (using 318 million bricks and Portland cement).',
+        },
+      ],
+      vocab: [
+        {
+          term: 'epidemiology',
+          definition:
+            'The branch of medical science studying the spread, causes, and control of diseases in populations.',
+          syllables: 'ep-i-de-mi-ol-o-gy',
+          phonetic: 'ep-ih-dee-mee-ol-uh-jee',
+          tier: 'Tier 3',
+        },
+        {
+          term: 'spot map',
+          definition:
+            'A cartographic map that plots the exact locations of disease cases to identify a common outbreak source.',
+          syllables: 'spot map',
+          phonetic: 'spot map',
+          tier: 'Tier 2',
+        },
+        {
+          term: 'bacterium',
+          definition:
+            'A microscopic single-celled organism, some of which cause infectious diseases like cholera.',
+          syllables: 'bac-te-ri-um',
+          phonetic: 'bak-teer-ee-um',
+          tier: 'Tier 3',
+        },
+        {
+          term: 'germ theory',
+          definition:
+            'The scientific principle proven by Louis Pasteur that diseases are caused by microscopic living organisms.',
+          syllables: 'germ the-o-ry',
+          phonetic: 'jerm thee-uh-ree',
+          tier: 'Tier 3',
+        },
+        {
+          term: 'spontaneous generation',
+          definition:
+            'The disproven theory that living organisms could suddenly arise from non-living matter or rotting filth.',
+          syllables: 'spon-ta-ne-ous gen-er-a-tion',
+          phonetic: 'spon-tay-nee-us jen-er-ay-shun',
+          tier: 'Tier 3',
+        },
+        {
+          term: 'compulsory',
+          definition:
+            'Required by law; mandatory, leaving no choice or option to local authorities.',
+          syllables: 'com-pul-so-ry',
+          phonetic: 'kum-pul-suh-ree',
+          tier: 'Tier 2',
+        },
+        {
+          term: 'ratepayer',
+          definition:
+            'A local property owner who pays local taxes (rates) to fund municipal government services.',
+          syllables: 'rate-pay-er',
+          phonetic: 'rayt-pay-er',
+          tier: 'Tier 2',
+        },
+        {
+          term: 'medical officer of health',
+          definition:
+            'A legally mandated municipal doctor appointed by local councils to inspect and safeguard public health.',
+          syllables: 'med-i-cal of-fi-cer',
+          phonetic: 'med-ih-kul of-ih-ser',
+          tier: 'Tier 3',
         },
       ],
       causal_domino_spine: {
-        title: "The Great Stink, Bazalgette's Sewers & The 1875 Act (1855–1875)",
+        title: 'Germ Theory, Dr Snow & The 1875 Sanitary Revolution (1854–1900)',
         subtitle: 'Key Turning Points & Causal Dominoes (5-Stage Framework)',
         stages: [
           {
             step: 1,
             para_ref: '[5.1]',
-            date: '1850–1855',
-            title: 'The Toxic Tide: Water Closets & River Thames Squalor',
-            actor: 'London Middle Classes & Michael Faraday',
-            tag: '🌊 TOXIC THAMES',
+            date: '1854',
+            title: 'The Soho Cholera Outbreak & The Miasma Consensus',
+            actor: 'Soho Residents, Parochial Vestry & Dr John Snow',
+            tag: '⚠️ SOHO OUTBREAK',
             trigger:
-              'Widespread adoption of flush toilets connected directly to old rainwater drains turned the tidal River Thames into an opaque, fermenting sewer.',
+              'A sudden outbreak of cholera in Soho killed 616 people in ten days, while health authorities fruitlessly burned pitch barrels to purify bad air.',
             connective:
-              'Prompted scientist Michael Faraday to publish famous public warnings as raw human sludge accumulated along low-tide mudflats.',
+              'Exposed the lethal danger of relying on airborne miasma theories while citizens drank contaminated well water from communal pumps.',
             question:
-              'How did the invention of the water closet accidentally destroy the River Thames?',
+              'Why did the medical establishment refuse to consider water as the cause of the 1854 Soho outbreak?',
+            workbook_question:
+              'Why did the medical establishment refuse to consider water as the cause of the 1854 Soho outbreak?',
           },
           {
             step: 2,
             para_ref: '[5.2]',
-            date: 'June 1858',
-            title: 'The Heatwave of 1858 & Parliamentary Panic',
-            actor: 'Prime Minister Benjamin Disraeli & Members of Parliament',
-            tag: '🔥 THE GREAT STINK',
+            date: 'September 1854',
+            title: 'Dr John Snow’s Spot Map & The Lion Brewery Anomaly',
+            actor: 'Dr John Snow, Brewery Workers & Workhouse Inmates',
+            tag: '🗺️ THE SPOT MAP',
             trigger:
-              'A blistering 35°C heatwave in June 1858 cooked raw sewage on the Thames mudbanks, sending an intolerable stench into the Houses of Parliament.',
+              'Dr John Snow plotted 616 deaths on a street map, proving fatalities clustered around the Broad Street pump while exempt workers drank only beer.',
             connective:
-              'Overcame twenty years of political laissez-faire gridlock in just eighteen days as terrified politicians voted £3 million to save their own lives.',
-            question: 'How did the Great Stink of 1858 force Parliament to act in sheer panic?',
+              'Provided empirical spatial evidence that cholera was an ingested waterborne pathogen, laying the foundations of modern epidemiology.',
+            question:
+              'How did Dr John Snow use cartographic mapping and anomalous data to prove cholera was waterborne?',
+            workbook_question:
+              'How did Dr John Snow use cartographic mapping and anomalous data to prove cholera was waterborne?',
           },
           {
             step: 3,
             para_ref: '[5.3]',
-            date: '1859–1865',
-            title: 'Joseph Bazalgette’s Brick Revolution: Intercepting Sewers',
-            actor: 'Chief Engineer Joseph Bazalgette & Construction Armies',
-            tag: "🧱 BAZALGETTE'S SEWERS",
+            date: '1854–1855',
+            title: 'The Cesspool at 40 Broad Street & The Removed Pump Handle',
+            actor: 'Reverend Henry Whitehead, Sarah Lewis & St James Vestry',
+            tag: '🚰 THE PUMP HANDLE',
             trigger:
-              'Joseph Bazalgette engineered 82 miles of underground intercepting brick sewers using 318 million bricks and waterproof Portland cement.',
+              'Snow persuaded the vestry to remove the pump handle, and Rev. Whitehead uncovered a leaking cesspool at No. 40 Broad Street seeping into the pump well.',
             connective:
-              'Channeled billions of gallons of sewage eastward away from drinking intakes, ending water-borne cholera in the capital forever.',
+              'Proved the direct causal link between human sewage contamination and public drinking water, halting the localized Soho outbreak.',
             question:
-              'How did Joseph Bazalgette engineer the greatest sanitation system in the world?',
+              'What physical evidence finally proved how the Broad Street pump well had become contaminated?',
+            workbook_question:
+              'What physical evidence finally proved how the Broad Street pump well had become contaminated?',
           },
           {
             step: 4,
             para_ref: '[5.4]',
-            date: '1861–1865',
-            title: 'Scientific Confirmation: Pasteur’s Germ Theory & Eastney',
-            actor: 'Louis Pasteur & Coastal Municipal Engineers',
+            date: '1861–1884',
+            title: 'Pasteur’s Germ Theory & Robert Koch Isolates Vibrio Cholerae',
+            actor: 'Louis Pasteur, Robert Koch & Microbiologists',
             tag: '🔬 GERM THEORY',
             trigger:
-              'Louis Pasteur’s 1861 swan-neck flask experiments proved microscopic bacteria in water caused disease, inspiring facilities like Eastney Beam Engine House in 1865.',
+              'Louis Pasteur disproved spontaneous generation with swan-neck flasks in 1861, and Robert Koch isolated the comma-shaped Vibrio cholerae bacterium in 1884.',
             connective:
-              'Dealt the fatal scientific blow to miasma dogma, providing indisputable biological justification for enclosed public sewers nationwide.',
+              "Provided the microscopic biological proof needed to permanently defeat miasma dogma and validate John Snow's epidemiological conclusions.",
             question:
-              "How did Louis Pasteur's 1861 Germ Theory overturn centuries of miasma dogma?",
+              'Why was laboratory bacteriological proof necessary to finally overthrow the ancient miasma theory?',
+            workbook_question:
+              'Why was laboratory bacteriological proof necessary to finally overthrow the ancient miasma theory?',
           },
           {
             step: 5,
             para_ref: '[5.5]',
             date: '1875',
-            title: 'The 1875 Public Health Act & The Death of Laissez-Faire',
-            actor: 'Disraeli’s Conservative Government & Municipal Councils',
-            tag: '📜 1875 PUBLIC HEALTH ACT',
+            title: 'The Public Health Act of 1875: The Compulsory Sanitary State',
+            actor: 'Benjamin Disraeli, Parliament & Local Councils',
+            tag: '⚖️ COMPULSORY 1875 ACT',
             trigger:
-              'Parliament passed the landmark 1875 Public Health Act, making it compulsory for every town council to provide clean water and appointed medical officers.',
+              "Benjamin Disraeli’s government replaced laissez-faire permissive rules with Britain's first compulsory public health statute.",
             connective:
-              'Permanently ended the doctrine of laissez-faire in public health, establishing clean water and sanitation as fundamental legal duties of the state.',
+              'Forced all local councils to appoint Medical Officers of Health, supply clean piped water, and maintain sewers, conquering waterborne disease.',
             question:
-              'Why was the 1875 Public Health Act the decisive turning point in British sanitation?',
+              'Why did the 1875 Public Health Act mark the final death of laissez-faire in Britain?',
+            workbook_question:
+              'Why did the 1875 Public Health Act mark the final death of laissez-faire in Britain?',
           },
         ],
       },
-      workbook_stages: [
-        {
-          step: 1,
-          para_ref: '[5.1]',
-          paraRef: '[5.1]',
-          date: '1850–1855',
-          heading:
-            'How did the invention of the water closet accidentally destroy the River Thames?',
-          questionHeading:
-            'How did the invention of the water closet accidentally destroy the River Thames?',
-          bullets: [
-            'Flushing Toilets Direct to River',
-            "Michael Faraday's Opaque River Test",
-            'Fermenting Low-Tide Mudflats',
-          ],
-          focus_clue:
-            'Why did flushing toilets into old rainwater drains turn the tidal Thames into a concentrated river of human sewage?',
-          focusClue:
-            'Why did flushing toilets into old rainwater drains turn the tidal Thames into a concentrated river of human sewage?',
-        },
-        {
-          step: 2,
-          para_ref: '[5.2]',
-          paraRef: '[5.2]',
-          date: 'June 1858',
-          heading: 'How did the Great Stink of 1858 force Parliament to act in sheer panic?',
-          questionHeading:
-            'How did the Great Stink of 1858 force Parliament to act in sheer panic?',
-          bullets: [
-            '35°C Blistering Summer Heat',
-            'Curtains Soaked in Lime Chloride',
-            'MPs Fleeing River Committee Rooms',
-          ],
-          focus_clue:
-            'Why did Victorian MPs ignore cholera epidemics in slums for twenty years, but pass a sewer bill in eighteen days when the smell invaded Parliament?',
-          focusClue:
-            'Why did Victorian MPs ignore cholera epidemics in slums for twenty years, but pass a sewer bill in eighteen days when the smell invaded Parliament?',
-        },
-        {
-          step: 3,
-          para_ref: '[5.3]',
-          paraRef: '[5.3]',
-          date: '1859–1865',
-          heading:
-            'How did Joseph Bazalgette engineer the greatest sanitation system in the world?',
-          questionHeading:
-            'How did Joseph Bazalgette engineer the greatest sanitation system in the world?',
-          bullets: [
-            '318 Million Portland Cement Bricks',
-            'Oval Egg-Shaped Self-Flushing Sewers',
-            'Crossness & Abbey Mills Pumping',
-          ],
-          focus_clue:
-            "How did Bazalgette use gravity and steam-powered beam engines to transport London's sewage eastwards past Barking Creek?",
-          focusClue:
-            "How did Bazalgette use gravity and steam-powered beam engines to transport London's sewage eastwards past Barking Creek?",
-        },
-        {
-          step: 4,
-          para_ref: '[5.4]',
-          paraRef: '[5.4]',
-          date: '1861–1865',
-          heading: "How did Louis Pasteur's 1861 Germ Theory overturn centuries of miasma dogma?",
-          questionHeading:
-            "How did Louis Pasteur's 1861 Germ Theory overturn centuries of miasma dogma?",
-          bullets: [
-            'Boiled Broth in Curved Glass Flasks',
-            'Airborne Microbes Disprove Spontaneous Generation',
-            'Eastney Pumping Station (1865)',
-          ],
-          focus_clue:
-            "How did Pasteur's swan-neck experiment prove that living bacteria in water—not bad smells—caused disease and fermentation?",
-          focusClue:
-            "How did Pasteur's swan-neck experiment prove that living bacteria in water—not bad smells—caused disease and fermentation?",
-        },
-        {
-          step: 5,
-          para_ref: '[5.5]',
-          paraRef: '[5.5]',
-          date: '1875',
-          heading:
-            'Why was the 1875 Public Health Act the decisive turning point in British sanitation?',
-          questionHeading:
-            'Why was the 1875 Public Health Act the decisive turning point in British sanitation?',
-          bullets: [
-            'Compulsory Medical Officers of Health',
-            'Mandatory Street Lighting & Sewers',
-            'Final Death of Laissez-Faire',
-          ],
-          focus_clue:
-            "Why did shifting public health law from optional ('may') to compulsory ('must') permanently transform British towns?",
-          focusClue:
-            "Why did shifting public health law from optional ('may') to compulsory ('must') permanently transform British towns?",
-        },
-      ],
-      did_you_know:
-        "Joseph Bazalgette calculated the exact width and gradient of London's intercepting sewers to accommodate the city's population, then boldly declared: \"Well, we're only going to do this once, and there are always the unforeseen circumstances!\" He doubled the diameter of all underground pipes—an engineering decision that allows Bazalgette's brick sewers to carry London's sewage over 160 years later!",
-      do_now: [
-        {
-          q: 'What kind of unventilated housing was built back-to-back in industrial mill towns?',
-          a: 'Back-to-back terraced housing sharing three party walls.',
-        },
-        {
-          q: 'In what year did Asiatic Cholera first arrive in Britain through Sunderland?',
-          a: '1831.',
-        },
-        {
-          q: 'What was the average life expectancy for a factory labourer in Manchester according to Chadwick?',
-          a: 'Just 17 years.',
-        },
-        {
-          q: 'What Victorian political philosophy believed government should not interfere in business or taxes?',
-          a: 'Laissez-faire.',
-        },
-        {
-          q: 'Why was the 1848 Public Health Act ineffective in many towns?',
-          a: 'It was permissive (optional) rather than compulsory.',
-        },
-      ],
-      vocabulary: [
-        {
-          term: 'The Great Stink',
-          definition:
-            'The environmental crisis in June 1858 when extreme heat caused untreated sewage in the Thames to ferment, overwhelming Parliament with stench.',
-        },
-        {
-          term: 'Joseph Bazalgette',
-          definition:
-            'The brilliant civil engineer who designed and constructed London’s monumental underground intercepting sewer network between 1859 and 1865.',
-        },
-        {
-          term: 'Intercepting Sewer',
-          definition:
-            'A major underground brick sewer constructed parallel to the river to catch sewage before it can enter the Thames and carry it far downstream.',
-        },
-        {
-          term: 'Portland Cement',
-          definition:
-            'A breakthrough waterproof artificial cement that hardened even underwater, used to bind 318 million bricks in Bazalgette’s sewers.',
-        },
-        {
-          term: 'Beam Engine',
-          definition:
-            'A massive steam-powered pumping engine with a pivoting overhead beam used to raise sewage from low-lying sewers into outfall reservoirs.',
-        },
-        {
-          term: 'Louis Pasteur',
-          definition:
-            'The French chemist whose 1861 swan-neck flask experiments disproved spontaneous generation and established the revolutionary Germ Theory of disease.',
-        },
-        {
-          term: 'Germ Theory',
-          definition:
-            'The biological principle proven in 1861 that microscopic living organisms (microbes and bacteria) cause fermentation, decay, and infectious disease.',
-        },
-        {
-          term: 'Public Health Act 1875',
-          definition:
-            'A landmark compulsory British statute requiring all local councils to provide clean water, appointed medical officers, street paving, and sewers.',
-        },
-      ],
       narrative_blocks: [
         {
-          act: 1,
-          title: 'The Toxic Tide: Water Closets & the Polluted Thames',
-          theme_heading: 'The Toxic Tide: Water Closets & the Polluted Thames',
-          text: '<span class="para-ref">[5.1]</span> By 1855, London’s population reached nearly three million. However, the city faced an environmental crisis. In the 1830s and 1840s, thousands of middle-class homes installed modern flushing water closets. Because London had no separate sewage pipes, builders connected toilets directly into street rainwater drains that emptied straight into the River Thames.<br><br>The result was catastrophic. The Thames—the source of drinking water for much of London—became an open, fermenting sewer. In July 1855, scientist **Michael Faraday** wrote to *The Times* after taking a boat trip along the river. Dropping white cards into the water, he watched them vanish less than an inch below the surface: the Thames was an opaque soup of human faeces and industrial waste producing a nauseating stench.',
-          sources: [
-            {
-              id: 'water_l5_src_a',
-              letter: 'A',
-              type: 'visual',
-              src: '/images/father_thames_punch_1858.jpg',
-              image: '/images/father_thames_punch_1858.jpg',
-              title:
-                "Source A: 'Father Thames Introducing His Offspring to the Fair City of London' (Punch, July 1858)",
-              caption:
-                'Punch satirical cartoon by John Leech depicting Father Thames rising from liquid sewage to introduce three monstrous figures—Diphtheria, Scrofula, and Cholera—to London (Punch, Vol. XXXV, p. 5).',
-              author: 'John Leech for Punch Magazine',
-              date: 'July 1858',
-              question_badge: 'POLITICAL CARTOON & METROPOLITAN CRISIS',
-              question:
-                'What message was Punch communicating about the condition of the River Thames in the summer of 1858?',
-              model_answer:
-                "Source A portrays Father Thames as a foul monster offering the diseased children 'Cholera', 'Scrofula', and 'Diphtheria' to London. This warned the public that using the Thames as an open sewer turned Britain's most famous river into a deadly source of disease.",
-              context:
-                'During the heatwave of June–July 1858, the River Thames became a fermenting reservoir of raw sewage. The stench was so overwhelming that the curtains of the House of Commons had to be soaked in disinfectant.',
-              hinge_question:
-                'Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-              provenance_clues: {
-                author: 'John Leech, satirical illustrator for Punch.',
-                audience: 'British public, politicians, and London ratepayers.',
-                motive:
-                  'Humiliating Parliament into taking action to clean up the foul, disease-ridden River Thames.',
-                hinge_question:
-                  'Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-                source_context:
-                  'During the heatwave of June–July 1858, the Thames became a fermenting reservoir of sewage. **Hinge Question:** Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-                provenance_breakdown: {
-                  author: 'John Leech, satirical illustrator for Punch.',
-                  audience: 'British public, politicians, and London ratepayers.',
-                  motive:
-                    'Humiliating Parliament into taking action to clean up the foul, disease-ridden River Thames.',
-                },
-              },
-              source_context:
-                'During the heatwave of June–July 1858, the Thames became a fermenting reservoir of sewage. **Hinge Question:** Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-            },
-          ],
-          source: {
-            id: 'water_l5_src_a',
-            letter: 'A',
-            type: 'visual',
-            src: '/images/father_thames_punch_1858.jpg',
-            image: '/images/father_thames_punch_1858.jpg',
-            title:
-              "Source A: 'Father Thames Introducing His Offspring to the Fair City of London' (Punch, July 1858)",
-            caption:
-              'Punch satirical cartoon by John Leech depicting Father Thames rising from liquid sewage to introduce three monstrous figures—Diphtheria, Scrofula, and Cholera—to London (Punch, Vol. XXXV, p. 5).',
-            author: 'John Leech for Punch Magazine',
-            date: 'July 1858',
-            question_badge: 'POLITICAL CARTOON & METROPOLITAN CRISIS',
-            question:
-              'What message was Punch communicating about the condition of the River Thames in the summer of 1858?',
-            model_answer:
-              "Source A portrays Father Thames as a foul monster offering the diseased children 'Cholera', 'Scrofula', and 'Diphtheria' to London. This warned the public that using the Thames as an open sewer turned Britain's most famous river into a deadly source of disease.",
-            context:
-              'During the heatwave of June–July 1858, the River Thames became a fermenting reservoir of raw sewage. The stench was so overwhelming that the curtains of the House of Commons had to be soaked in disinfectant.',
-            hinge_question:
-              'Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-            provenance_clues: {
-              author: 'John Leech, satirical illustrator for Punch.',
-              audience: 'British public, politicians, and London ratepayers.',
-              motive:
-                'Humiliating Parliament into taking action to clean up the foul, disease-ridden River Thames.',
-              hinge_question:
-                'Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-              source_context:
-                'During the heatwave of June–July 1858, the Thames became a fermenting reservoir of sewage. **Hinge Question:** Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-              provenance_breakdown: {
-                author: 'John Leech, satirical illustrator for Punch.',
-                audience: 'British public, politicians, and London ratepayers.',
-                motive:
-                  'Humiliating Parliament into taking action to clean up the foul, disease-ridden River Thames.',
-              },
-            },
-            source_context:
-              'During the heatwave of June–July 1858, the Thames became a fermenting reservoir of sewage. **Hinge Question:** Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-          },
+          ref: '[5.1]',
+          period: '1854',
+          title: 'The Soho Cholera Outbreak & Miasma Dogma (1854)',
+          text: '<span class="para-ref">[5.1]</span> In late August 1854, a sudden cholera outbreak struck the crowded Soho district of central London. Within ten days, more than 500 people living within 250 yards of the junction between Broad Street and Cambridge Street were dead. Terrified residents fled the neighbourhood, leaving bodies unburied in stifling summer heat. The General Board of Health and leading medical journals immediately attributed the catastrophe to **miasma**—toxic, foul-smelling airborne vapours released from open gullies and nearby bone-boiling workshops. Parishes burned pitch in the streets and ordered residents to keep their windows closed, completely oblivious to the fact that their frantic countermeasures did nothing to halt the rising death toll.',
         },
         {
-          act: 2,
-          title: 'The Great Stink: Summer Heatwave & Panic in Parliament (1858)',
-          theme_heading: 'The Great Stink: Summer Heatwave & Panic in Parliament (1858)',
-          text: '<span class="para-ref">[5.2]</span> In June 1858, a severe heatwave struck London with temperatures over thirty-five degrees. The heat baked raw sewage along the exposed mudbanks of the Thames, unleashing **"The Great Stink"** (Source B). The stench was so overwhelming that life across central London halted; river boatmen collapsed and law courts shut down.<br><br>Crucially, the Houses of Parliament sat right on the riverbank. Foul fumes filled committee rooms, forcing MPs to flee with handkerchiefs over their faces. Staff soaked curtains in chloride of lime, but politicians still suffered nausea and dizziness. Convinced by miasma theory that the smell would give them fatal cholera, Parliament panicked. Overcoming fifty years of laissez-faire resistance in just eighteen days, MPs passed an emergency bill granting £3 million to build a new sewer system.',
-          source: {
-            id: 'water_l5_src_b',
-            letter: 'B',
-            type: 'written',
-            title:
-              'Source B: Hansard Parliamentary Debates: The Great Stink in the House of Commons (18 June 1858)',
-            caption:
-              'Official parliamentary transcript recording MPs debating the pestilential fumes invading the Houses of Parliament from the River Thames (Hansard Parliamentary Debates, 3rd series, Vol. 151).',
-            author: 'Honourable Members of Parliament, House of Commons',
-            date: '18 June 1858',
-            content:
-              "Mr Brady called the attention of the Government to the state of the River Thames in the immediate vicinity of the Houses of Parliament... It was impossible for honourable gentlemen to sit in the committee rooms overlooking the river without suffering nausea and headache. The smell was so pestilential that curtains soaked in chloride of lime had to be hung across the open windows. The Chancellor of the Exchequer, Mr Benjamin Disraeli, remarked that the river had become 'a Stygian pool, reeking with ineffable horror'.",
-            question_badge: 'PARLIAMENTARY CRISIS & EMPOWERMENT',
-            question:
-              'What does Source B show about why Parliament finally agreed to spend millions of pounds on London sewers in 1858?',
-            model_answer:
-              'Source B shows that MPs inside the House of Commons could not breathe or work without suffering headaches from the unbearable stench of the Thames. When their own health was threatened, politicians panicked and immediately passed the law granting Bazalgette £3 million for sewers.',
-            context:
-              "MPs attempted to soak curtains in lime chloride and even debated evacuating Parliament to Oxford or St Albans. Within 18 days of the crisis, Disraeli introduced the bill empowering the Metropolitan Board of Works to construct London's sewer system.",
-            hinge_question:
-              'Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-            provenance_clues: {
-              author: 'Official Hansard parliamentary reporters.',
-              audience: 'Parliament, the British public, and newspapers.',
-              motive:
-                "Recording verbatim the complaints of MPs and Disraeli's commitment to fund sewer construction.",
-              hinge_question:
-                'Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-              source_context:
-                'MPs attempted to soak curtains in lime chloride and debated moving Parliament. **Hinge Question:** Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-              provenance_breakdown: {
-                author: 'Official Hansard parliamentary reporters.',
-                audience: 'Parliament, the British public, and newspapers.',
-                motive:
-                  "Recording verbatim the complaints of MPs and Disraeli's commitment to fund sewer construction.",
-              },
-            },
-            source_context:
-              'MPs attempted to soak curtains in lime chloride and debated moving Parliament. **Hinge Question:** Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-            text: 'Hansard Parliamentary Debates (House of Commons, 18 June 1858):\nMr. Brady rose to direct the attention of the House to the pestilential state of the River Thames. Members were compelled to sit with handkerchiefs soaked in chloride of lime pressed to their noses. Committee rooms overlooking the river had to be abandoned because of the unbearable stench. It was a scandal that the greatest legislative body in the world was driven from its chambers by the foul effluvia of its own metropolitan river.',
-          },
-          sources: [
-            {
-              id: 'water_l5_src_b',
-              letter: 'B',
-              type: 'written',
-              title:
-                'Source B: Hansard Parliamentary Debates: The Great Stink in the House of Commons (18 June 1858)',
-              caption:
-                'Official parliamentary transcript recording MPs debating the pestilential fumes invading the Houses of Parliament from the River Thames (Hansard Parliamentary Debates, 3rd series, Vol. 151).',
-              author: 'Honourable Members of Parliament, House of Commons',
-              date: '18 June 1858',
-              content:
-                "Mr Brady called the attention of the Government to the state of the River Thames in the immediate vicinity of the Houses of Parliament... It was impossible for honourable gentlemen to sit in the committee rooms overlooking the river without suffering nausea and headache. The smell was so pestilential that curtains soaked in chloride of lime had to be hung across the open windows. The Chancellor of the Exchequer, Mr Benjamin Disraeli, remarked that the river had become 'a Stygian pool, reeking with ineffable horror'.",
-              question_badge: 'PARLIAMENTARY CRISIS & EMPOWERMENT',
-              question:
-                'What does Source B show about why Parliament finally agreed to spend millions of pounds on London sewers in 1858?',
-              model_answer:
-                'Source B shows that MPs inside the House of Commons could not breathe or work without suffering headaches from the unbearable stench of the Thames. When their own health was threatened, politicians panicked and immediately passed the law granting Bazalgette £3 million for sewers.',
-              context:
-                "MPs attempted to soak curtains in lime chloride and even debated evacuating Parliament to Oxford or St Albans. Within 18 days of the crisis, Disraeli introduced the bill empowering the Metropolitan Board of Works to construct London's sewer system.",
-              hinge_question:
-                'Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-              provenance_clues: {
-                author: 'Official Hansard parliamentary reporters.',
-                audience: 'Parliament, the British public, and newspapers.',
-                motive:
-                  "Recording verbatim the complaints of MPs and Disraeli's commitment to fund sewer construction.",
-                hinge_question:
-                  'Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-                source_context:
-                  'MPs attempted to soak curtains in lime chloride and debated moving Parliament. **Hinge Question:** Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-                provenance_breakdown: {
-                  author: 'Official Hansard parliamentary reporters.',
-                  audience: 'Parliament, the British public, and newspapers.',
-                  motive:
-                    "Recording verbatim the complaints of MPs and Disraeli's commitment to fund sewer construction.",
-                },
-              },
-              source_context:
-                'MPs attempted to soak curtains in lime chloride and debated moving Parliament. **Hinge Question:** Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-              text: 'Hansard Parliamentary Debates (House of Commons, 18 June 1858):\nMr. Brady rose to direct the attention of the House to the pestilential state of the River Thames. Members were compelled to sit with handkerchiefs soaked in chloride of lime pressed to their noses. Committee rooms overlooking the river had to be abandoned because of the unbearable stench. It was a scandal that the greatest legislative body in the world was driven from its chambers by the foul effluvia of its own metropolitan river.',
-            },
-          ],
-          image: '/images/faraday.jpg',
-          image_alt:
-            'Portrait plate of Professor Michael Faraday examining the turbid waters of the River Thames',
+          ref: '[5.2]',
+          period: '1854',
+          title: 'The Medical Detective: Dr John Snow & The Broad Street Investigation',
+          image: '/units/water_and_sanitation/assets/john_snow.jpg',
+          image_alt: 'Portrait photograph of Dr John Snow, pioneer epidemiologist and physician',
           caption:
-            "Professor Michael Faraday & The Thames: Faraday's 1855 open letter to The Times documented dropping white paper cards into the Thames, which vanished in just one inch of black filth.",
-          isReversed: false,
+            'Dr John Snow (1813–1858). Pioneer epidemiologist who rejected miasma theory and proved cholera was a waterborne infection using cartographic data.',
+          text: '<span class="para-ref">[5.2]</span> One London doctor rejected the miasma consensus: **Dr John Snow**, a leading physician who had administered chloroform to Queen Victoria during childbirth. Snow had observed cholera in the coal-mining communities of Newcastle in 1831 and reasoned logically that because cholera produced violent vomiting and watery diarrhea, the infective agent had to be ingested into the digestive tract through polluted drinking water, rather than inhaled into the lungs. When the Soho epidemic broke out, Snow began an intensive door-to-door epidemiological investigation. He created his famous **Cholera Spot Map** (Source A), meticulously marking every fatality with a thick black bar at the deceased person\'s street address. The visual evidence was staggering: deaths clustered densely around the municipal water pump on Broad Street, whereas streets surrounding neighboring pumps on Marlborough Street and Rupert Street had suffered virtually zero casualties.<br><br>Snow’s investigation was clinched by two remarkable statistical anomalies. First, in the **Lion Brewery** on Broad Street (Source B), situated mere yards from the pump, none of the 70 workers contracted cholera; the brewery owner explained that the men were given a free daily allowance of malt beer and never drank pump water. Second, at the Poland Street Workhouse, surrounded by cholera deaths, only 5 of 535 inmates died because the workhouse possessed its own private well.',
         },
         {
-          act: 3,
-          title: 'Joseph Bazalgette’s Brick Revolution: 82 Miles of Sewers',
-          theme_heading: 'Joseph Bazalgette’s Brick Revolution: 82 Miles of Sewers',
-          text: '<span class="para-ref">[5.3]</span> Chief Engineer **Joseph Bazalgette** was tasked with saving London. Instead of simply widening drains, he designed a system to intercept sewage before it reached the Thames. Between 1859 and 1865, thousands of navvies built **82 miles of underground intercepting brick sewers**, connected to over 1,000 miles of street drains (Source C). Bazalgette used 318 million bricks cemented with waterproof **Portland cement**.<br><br>The sewers used gravity to carry waste eastward past London to outfalls at Barking Creek and Crossness. Where pipes dipped below river level, Bazalgette built massive steam pumping stations like Abbey Mills and Crossness to lift sewage into reservoirs for discharge on the outgoing tide. Across Britain, towns copied this design to protect their rivers and coastlines.',
-          source: {
-            id: 'water_l5_src_c',
-            letter: 'C',
-            type: 'visual',
-            src: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-            image: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-            title: 'Source C: Construction of the Low-Level Intercepting Sewer (1862)',
-            caption:
-              'Engraving from The Illustrated London News showing bricklayers constructing the egg-shaped brick tunnels of the London main drainage system (Wellcome Collection 38481i).',
-            author: 'The Illustrated London News Special Artist',
-            date: '1862',
-            question_badge: 'EGG-SHAPED SEWER ENGINEERING',
-            question:
-              "Why was the egg-shaped cross-section of Bazalgette's sewers an engineering triumph?",
-            model_answer:
-              'The drawing shows that Bazalgette designed egg-shaped brick tunnels that were narrow at the bottom and wider at the top. The narrow base kept wastewater flowing fast even with small volumes of water, preventing solid sewage from settling and clogging the pipes.',
-            context:
-              'Bazalgette oversaw the laying of 318 million bricks, 82 miles of underground main intercepting sewers, and 1,100 miles of street sewers. The egg shape ensured self-scouring velocity even during dry spells.',
-            hinge_question:
-              'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-            provenance_clues: {
-              author: 'Illustrated London News staff artist.',
-              audience:
-                'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-              motive:
-                'Celebrating the unprecedented subterranean engineering works transforming London.',
-              hinge_question:
-                'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-              source_context:
-                'Bazalgette oversaw the laying of 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-              provenance_breakdown: {
-                author: 'Illustrated London News staff artist.',
-                audience:
-                  'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-                motive:
-                  'Celebrating the unprecedented subterranean engineering works transforming London.',
-              },
-            },
-            source_context:
-              'Bazalgette oversaw the laying of 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-          },
-          sources: [
-            {
-              id: 'water_l5_src_c',
-              letter: 'C',
-              type: 'visual',
-              src: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-              image: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-              title: 'Source C: Construction of the Low-Level Intercepting Sewer (1862)',
-              caption:
-                'Engraving from The Illustrated London News showing bricklayers constructing the egg-shaped brick tunnels of the London main drainage system (Wellcome Collection 38481i).',
-              author: 'The Illustrated London News Special Artist',
-              date: '1862',
-              question_badge: 'EGG-SHAPED SEWER ENGINEERING',
-              question:
-                "Why was the egg-shaped cross-section of Bazalgette's sewers an engineering triumph?",
-              model_answer:
-                'The drawing shows that Bazalgette designed egg-shaped brick tunnels that were narrow at the bottom and wider at the top. The narrow base kept wastewater flowing fast even with small volumes of water, preventing solid sewage from settling and clogging the pipes.',
-              context:
-                'Bazalgette oversaw the laying of 318 million bricks, 82 miles of underground main intercepting sewers, and 1,100 miles of street sewers. The egg shape ensured self-scouring velocity even during dry spells.',
-              hinge_question:
-                'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-              provenance_clues: {
-                author: 'Illustrated London News staff artist.',
-                audience:
-                  'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-                motive:
-                  'Celebrating the unprecedented subterranean engineering works transforming London.',
-                hinge_question:
-                  'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-                source_context:
-                  'Bazalgette oversaw the laying of 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-                provenance_breakdown: {
-                  author: 'Illustrated London News staff artist.',
-                  audience:
-                    'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-                  motive:
-                    'Celebrating the unprecedented subterranean engineering works transforming London.',
-                },
-              },
-              source_context:
-                'Bazalgette oversaw the laying of 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-            },
-          ],
-          image: '/units/water_and_sanitation/assets/joseph_bazalgette.jpg',
-          image_alt:
-            'Archival portrait of Sir Joseph Bazalgette, Chief Engineer of the Metropolitan Board of Works',
+          ref: '[5.3]',
+          period: '1854–1855',
+          title: 'The Cesspool Revelation: 40 Broad Street & The Removed Handle',
+          text: '<span class="para-ref">[5.3]</span> On the evening of Thursday 7 September 1854, Dr John Snow presented his spot map and statistical findings to the St James Parish Board of Guardians. Although deeply skeptical of his radical waterborne theory, the parish officials agreed to test his hypothesis: the following morning, Friday 8 September, the iron handle was unscrewed from the **Broad Street pump**. The epidemic collapsed almost immediately.<br><br>Subsequent investigations by local curate Reverend Henry Whitehead uncovered the precise physical origin of the contamination. At **40 Broad Street**, adjacent to the pump, a five-month-old infant named Frances Lewis had fallen ill with cholera in late August. Her mother had washed soiled cloth nappies in pails of warm water and emptied the effluent into a deteriorating brick cesspool located less than three feet from the public well. Surveyors excavating the site discovered that the decayed brickwork of the cesspool had fractured, allowing raw, cholera-infected sewage to percolate through the soil directly into the drinking water drawn by hundreds of local families.',
+        },
+        {
+          ref: '[5.4]',
+          period: '1861–1884',
+          title: 'Louis Pasteur’s Germ Theory (1861) & Robert Koch’s Cholera Bacterium (1884)',
+          image: '/units/water_and_sanitation/assets/louis_pasteur.jpg',
+          image_alt: 'Portrait photograph of French chemist and microbiologist Louis Pasteur',
           caption:
-            "Sir Joseph Bazalgette & The Subterranean Revolution: Portrait of the Chief Engineer to the Metropolitan Board of Works, who designed London's vast brick intercepting network diverting 420 million gallons of sewage daily.",
-          isReversed: true,
+            'Louis Pasteur (1822–1895). His 1861 Germ Theory proved diseases were caused by living micro-organisms, providing scientific backing for clean water engineering.',
+          text: '<span class="para-ref">[5.4]</span> Despite Dr Snow’s undeniable empirical proof, the medical establishment stubbornly rejected his findings. In 1855, the General Board of Health issued an official report dismissing his conclusions, declaring there was no reason to abandon miasma theory. Snow died in 1858, never living to see his theory vindicated. The breakthrough that finally destroyed miasma came from the laboratory of French chemist **Louis Pasteur**. In 1861, Pasteur published his revolutionary **Germ Theory of Disease**. Through his famous swan-neck flask experiments, Pasteur proved that sterilized broth stayed pure when curved glass necks trapped airborne dust, but quickly fermented when the neck was snapped, disproving the centuries-old dogma of **spontaneous generation**.<br><br>Pasteur demonstrated that decomposition and disease were caused by living microscopic organisms. Two decades later, in 1884, German microbiologist **Robert Koch** isolated the specific comma-shaped bacterium responsible for cholera: *Vibrio cholerae*. Koch’s laboratory discovery provided absolute visual and biological proof under the microscope, finally silencing miasma theorists forever and confirming that Dr John Snow had been correct all along.',
         },
         {
-          act: 4,
-          title: 'Scientific Confirmation: Pasteur’s Germ Theory & Eastney',
-          theme_heading: 'Scientific Confirmation: Pasteur’s Germ Theory & Eastney',
-          text: '<span class="para-ref">[5.4]</span> In 1861, French chemist **Louis Pasteur** published his groundbreaking **Germ Theory of Disease**. Through his famous swan-neck flask experiments, Pasteur proved that boiled broth stayed sterile in flasks with curved necks that trapped airborne dust. When the neck was broken, microbes entered and fermented the liquid, disproving the old belief in "spontaneous generation".<br><br>Pasteur proved that disease was caused by living microscopic germs, not by foul smells (miasma). This scientific discovery gave engineers and reformers the ultimate justification for their work: enclosed sewer systems and municipal steam pumping stations, such as Portsmouth\'s Eastney Pumping Station (Source D), were essential not just to remove bad odours, but to physically stop deadly bacteria from contaminating drinking water.',
-          source: {
-            id: 'water_l5_src_d',
-            letter: 'D',
-            type: 'visual',
-            src: '/images/water_local_eastney.jpg',
-            image: '/images/water_local_eastney.jpg',
-            title:
-              'Source D: Eastney Beam Engine House and Sewage Pumping Station (Portsmouth, 1865)',
-            caption:
-              'Victorian polychrome brick pumping station housing two colossal Boulton & Watt rotative beam engines engineered to pump sewage into storage tanks before sea discharge (Portsmouth Museums / IWM).',
-            author: 'Portsmouth Municipal Borough Engineering Team',
-            date: '1865',
-            question_badge: 'MUNICIPAL STEAM HYDRAULICS',
-            question:
-              'How does the Eastney pumping station show how coastal Victorian towns handled sewage disposal?',
-            model_answer:
-              'Source D shows massive Boulton & Watt steam beam engines housed in Victorian brick architecture. This proves that coastal municipalities invested in giant steam-powered pumps to push town sewage out to sea during outgoing tides, ending the open cesspit crisis.',
-            context:
-              'Opened in 1865, Eastney Pumping Station used two 60-horsepower steam beam engines to lift sewage from low-lying Portsmouth into covered storage tanks, discharging it into the Solent at high tide ebb.',
-            hinge_question:
-              'Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-            provenance_clues: {
-              author: 'Portsmouth borough civil engineering records team.',
-              audience:
-                'Citizens of Portsmouth, sanitary inspectors, and naval dockyard authorities.',
-              motive:
-                'Documenting the municipal steam pumping works constructed to drain the town.',
-              hinge_question:
-                'Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-              source_context:
-                'Opened in 1865, Eastney Pumping Station used two 60-horsepower steam beam engines. **Hinge Question:** Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-              provenance_breakdown: {
-                author: 'Portsmouth borough civil engineering records team.',
-                audience:
-                  'Citizens of Portsmouth, sanitary inspectors, and naval dockyard authorities.',
-                motive:
-                  'Documenting the municipal steam pumping works constructed to drain the town.',
-              },
-            },
-            source_context:
-              'Opened in 1865, Eastney Pumping Station used two 60-horsepower steam beam engines. **Hinge Question:** Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-          },
-          sources: [
-            {
-              id: 'water_l5_src_d',
-              letter: 'D',
-              type: 'visual',
-              src: '/images/water_local_eastney.jpg',
-              image: '/images/water_local_eastney.jpg',
-              title:
-                'Source D: Eastney Beam Engine House and Sewage Pumping Station (Portsmouth, 1865)',
-              caption:
-                'Victorian polychrome brick pumping station housing two colossal Boulton & Watt rotative beam engines engineered to pump sewage into storage tanks before sea discharge (Portsmouth Museums / IWM).',
-              author: 'Portsmouth Municipal Borough Engineering Team',
-              date: '1865',
-              question_badge: 'MUNICIPAL STEAM HYDRAULICS',
-              question:
-                'How does the Eastney pumping station show how coastal Victorian towns handled sewage disposal?',
-              model_answer:
-                'Source D shows massive Boulton & Watt steam beam engines housed in Victorian brick architecture. This proves that coastal municipalities invested in giant steam-powered pumps to push town sewage out to sea during outgoing tides, ending the open cesspit crisis.',
-              context:
-                'Opened in 1865, Eastney Pumping Station used two 60-horsepower steam beam engines to lift sewage from low-lying Portsmouth into covered storage tanks, discharging it into the Solent at high tide ebb.',
-              hinge_question:
-                'Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-              provenance_clues: {
-                author: 'Portsmouth borough civil engineering records team.',
-                audience:
-                  'Citizens of Portsmouth, sanitary inspectors, and naval dockyard authorities.',
-                motive:
-                  'Documenting the municipal steam pumping works constructed to drain the town.',
-                hinge_question:
-                  'Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-                source_context:
-                  'Opened in 1865, Eastney Pumping Station used two 60-horsepower steam beam engines. **Hinge Question:** Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-                provenance_breakdown: {
-                  author: 'Portsmouth borough civil engineering records team.',
-                  audience:
-                    'Citizens of Portsmouth, sanitary inspectors, and naval dockyard authorities.',
-                  motive:
-                    'Documenting the municipal steam pumping works constructed to drain the town.',
-                },
-              },
-              source_context:
-                'Opened in 1865, Eastney Pumping Station used two 60-horsepower steam beam engines. **Hinge Question:** Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-            },
-          ],
+          ref: '[5.5]',
+          period: '1875',
+          title: 'The Public Health Act of 1875 & The Fall of Laissez-Faire',
+          image: '/images/water_local_eastney_opt.jpg',
+          image_alt:
+            'Historic photograph of the Victorian Eastney Beam Engine House in Portsmouth, built 1865',
+          caption:
+            'Eastney Beam Engine House, Portsmouth (1865). Monumental steam pumping stations embodied the compulsory municipal sanitary revolution mandated by the 1875 Act.',
+          text: '<span class="para-ref">[5.5]</span> The convergence of scientific certainty, Bazalgette’s engineering success, and the expansion of the working-class vote under the 1867 Reform Act decisively shattered **laissez-faire** ideology. When cholera struck London again in 1866, deaths were confined strictly to the East End, which had not yet been connected to Bazalgette\'s intercepting sewers. The rest of the capital remained completely unharmed, providing undeniable statistical proof that civil engineering saved human lives.<br><br>In 1875, Prime Minister Benjamin Disraeli’s Conservative government passed the monumental **Public Health Act of 1875**. Unlike the permissive 1848 legislation, the 1875 Act was strictly **compulsory**. Every municipal authority and town council across Great Britain was legally required to appoint a qualified **Medical Officer of Health**, inspect food supplies, collect domestic refuse, pave and light streets, and supply clean, filtered drinking water alongside covered sewer networks. Massive steam pumping stations, such as Portsmouth’s **Eastney Beam Engine House (1865)**, were constructed across the country to pump wastewater away from human habitation. The 1875 Act established the modern sanitary state, establishing clean water and sanitation as basic legal rights guaranteed to every British citizen.',
+        },
+      ],
+      sources: [
+        {
+          id: 'water_l5_src_a',
+          letter: 'Source A',
+          type: 'visual',
+          title: "Dr John Snow's 1854 Cholera Spot Map of Soho (Broad Street Area)",
+          caption:
+            "Detail of Dr John Snow's landmark 1854 cartographic spot map showing cholera deaths (bars) clustering tightly around the Broad Street water pump.",
+          image: '/images/john_snow_cholera_map.jpg',
+          source_context:
+            'Drawn by Dr John Snow and lithographed by C.F. Cheffins for the second edition of Snow’s treatise On the Mode of Communication of Cholera (1855). Snow plotted 616 deaths across Soho, marking each address with stacked black lines indicating individual fatalities.',
+          prompt:
+            'What can you infer from the distribution of black bars on Source A regarding the cause and source of the 1854 Soho cholera outbreak?',
+          model_answer:
+            'Source A clearly indicates that the Broad Street pump was the epicentre of the outbreak, as the thick clusters of black bars are densely concentrated directly on Broad Street and thin out rapidly as distance from that specific pump increases. This cartographic evidence demonstrates that residents using the Broad Street pump were exposed to a common, localized source of infection.',
         },
         {
-          act: 5,
-          title: 'The 1875 Public Health Act & the Fall of Laissez-Faire',
-          theme_heading: 'The 1875 Public Health Act & the Fall of Laissez-Faire',
-          text: '<span class="para-ref">[5.5]</span> Bazalgette’s sewers, the Great Stink, and Germ Theory decisively ended laissez-faire. In 1866, cholera struck London again, but only the East End—which was not yet linked to Bazalgette\'s system—suffered deaths. The rest of London remained completely free of cholera, proving conclusively that modern sewers saved lives.<br><br>In 1875, Prime Minister Benjamin Disraeli’s government passed the **Public Health Act of 1875**. Unlike the optional 1848 law, the 1875 Act was strictly *compulsory*. Every local council was legally required to appoint a Medical Officer of Health, supply clean piped water, build covered sewers, collect rubbish, and inspect food. The 1875 Act ended laissez-faire in public health, making clean water and sanitation legal rights protected by the state.',
-          sources: [
-            {
-              id: 'water_l5_src_e',
-              letter: 'E',
-              type: 'written',
-              title: 'Source E: The Public Health Act of 1875 (38 & 39 Vict. c. 55)',
-              caption:
-                'Extract from the comprehensive 1875 Public Health Act passed under Prime Minister Benjamin Disraeli, codifying compulsory municipal sanitary obligations (The National Archives / UK Statute Law).',
-              author: 'British Parliament',
-              date: '1875',
-              content:
-                'Every local sanitary authority shall cause to be made such sewers as may be necessary for effectually draining their district... Every local authority shall provide that all sewers within their district are constructed, covered, ventilated, and kept so as not to be a nuisance or injurious to health... It shall be the duty of every local authority to appoint a legally qualified medical practitioner to be the Officer of Health... and to provide a constant supply of pure and wholesome water sufficient for the domestic use of the inhabitants.',
-              question_badge: 'MANDATORY SANITARY STATUTE & STATE POWER',
-              question:
-                'Why was the 1875 Public Health Act considered the decisive turning point in British public health history?',
-              model_answer:
-                "Unlike the voluntary 1848 Act, the 1875 Act made it compulsory for every town to provide clean water, build covered sewers, and appoint a Medical Officer of Health. This officially ended laissez-faire and proved that public health was the government's legal duty.",
-              context:
-                "Passed by Disraeli's Conservative government under the policy of 'Sanitas sanitatum, omnia sanitas' (Health of healths, all is health), the 1875 Act consolidated over 100 previous acts into one compulsory national sanitary code.",
-              hinge_question:
-                'Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?',
-              provenance_clues: {
-                author: "Disraeli's Conservative government and Parliament.",
-                audience:
-                  'Every municipal corporation, urban sanitary district, and ratepayer in England and Wales.',
-                motive:
-                  'Replacing voluntary public health measures with mandatory national standards for water, drainage, and medical inspection.',
-                hinge_question:
-                  'Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?',
-                source_context:
-                  "Passed under Disraeli's policy, the 1875 Act consolidated over 100 previous acts. **Hinge Question:** Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?",
-                provenance_breakdown: {
-                  author: "Disraeli's Conservative government and Parliament.",
-                  audience:
-                    'Every municipal corporation, urban sanitary district, and ratepayer in England and Wales.',
-                  motive:
-                    'Replacing voluntary public health measures with mandatory national standards for water, drainage, and medical inspection.',
-                },
-              },
-              source_context:
-                "Passed under Disraeli's policy, the 1875 Act consolidated over 100 previous acts. **Hinge Question:** Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?",
-              text: 'The Public Health Act 1875 (38 & 39 Vict. c. 55):\nSection 13: All existing and future sewers within the district of a local authority... shall vest in and be under the control of such local authority.\nSection 15: Every local authority shall keep in repair all sewers belonging to them, and shall cause to be made such sewers as may be necessary for effectually draining their district.\nSection 19: Every local authority shall cause the sewers belonging to them to be constructed, covered, ventilated and kept so as not to be a nuisance or injurious to health.',
-            },
-          ],
-          source: {
-            id: 'water_l5_src_e',
-            letter: 'E',
-            type: 'written',
-            title: 'Source E: The Public Health Act of 1875 (38 & 39 Vict. c. 55)',
-            caption:
-              'Extract from the comprehensive 1875 Public Health Act passed under Prime Minister Benjamin Disraeli, codifying compulsory municipal sanitary obligations (The National Archives / UK Statute Law).',
-            author: 'British Parliament',
-            date: '1875',
-            content:
-              'Every local sanitary authority shall cause to be made such sewers as may be necessary for effectually draining their district... Every local authority shall provide that all sewers within their district are constructed, covered, ventilated, and kept so as not to be a nuisance or injurious to health... It shall be the duty of every local authority to appoint a legally qualified medical practitioner to be the Officer of Health... and to provide a constant supply of pure and wholesome water sufficient for the domestic use of the inhabitants.',
-            question_badge: 'MANDATORY SANITARY STATUTE & STATE POWER',
-            question:
-              'Why was the 1875 Public Health Act considered the decisive turning point in British public health history?',
-            model_answer:
-              "Unlike the voluntary 1848 Act, the 1875 Act made it compulsory for every town to provide clean water, build covered sewers, and appoint a Medical Officer of Health. This officially ended laissez-faire and proved that public health was the government's legal duty.",
-            context:
-              "Passed by Disraeli's Conservative government under the policy of 'Sanitas sanitatum, omnia sanitas' (Health of healths, all is health), the 1875 Act consolidated over 100 previous acts into one compulsory national sanitary code.",
-            hinge_question:
-              'Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?',
-            provenance_clues: {
-              author: "Disraeli's Conservative government and Parliament.",
-              audience:
-                'Every municipal corporation, urban sanitary district, and ratepayer in England and Wales.',
-              motive:
-                'Replacing voluntary public health measures with mandatory national standards for water, drainage, and medical inspection.',
-              hinge_question:
-                'Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?',
-              source_context:
-                "Passed under Disraeli's policy, the 1875 Act consolidated over 100 previous acts. **Hinge Question:** Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?",
-              provenance_breakdown: {
-                author: "Disraeli's Conservative government and Parliament.",
-                audience:
-                  'Every municipal corporation, urban sanitary district, and ratepayer in England and Wales.',
-                motive:
-                  'Replacing voluntary public health measures with mandatory national standards for water, drainage, and medical inspection.',
-              },
-            },
-            source_context:
-              "Passed under Disraeli's policy, the 1875 Act consolidated over 100 previous acts. **Hinge Question:** Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?",
-            text: 'The Public Health Act 1875 (38 & 39 Vict. c. 55):\nSection 13: All existing and future sewers within the district of a local authority... shall vest in and be under the control of such local authority.\nSection 15: Every local authority shall keep in repair all sewers belonging to them, and shall cause to be made such sewers as may be necessary for effectually draining their district.\nSection 19: Every local authority shall cause the sewers belonging to them to be constructed, covered, ventilated and kept so as not to be a nuisance or injurious to health.',
-          },
+          id: 'water_l5_src_b',
+          letter: 'Source B',
+          type: 'visual',
+          title: "Dr John Snow's Published Case Study: The Lion Brewery Anomaly (1855)",
+          caption:
+            "Facsimile of page 42 from Dr John Snow's 1855 treatise detailing the total absence of cholera fatalities among workers at the Lion Brewery.",
+          image: '/images/snow_treatise_page_42_brewery.jpg',
+          source_context:
+            'Published by Dr John Snow in On the Mode of Communication of Cholera (London: John Churchill, 1855). Snow documented how 70 workers in the Lion Brewery on Broad Street escaped cholera entirely because their employer supplied them with free beer, preventing them from drinking water from the contaminated pump.',
+          prompt:
+            'How did Dr John Snow use the anomalous case of the Lion Brewery in Source B to test and confirm his waterborne hypothesis?',
+          model_answer:
+            'Snow used the brewery anomaly to disprove miasma theory by showing that people breathing the exact same foul Soho air survived completely unscathed if they did not swallow pump water. Because the 70 draymen and maltsters drank only fermented beer and possessed a private well on site, their total immunity provided positive proof that cholera was ingested through contaminated drinking water.',
+        },
+        {
+          id: 'water_l5_src_c',
+          letter: 'Source C',
+          type: 'visual',
+          title: "Louis Pasteur's Swan-Neck Flask Microbiology Experiment (1861)",
+          caption:
+            "Diagram illustrating Louis Pasteur's famous swan-neck flask experiments disproving spontaneous generation and demonstrating airborne microbial contamination.",
+          image: '/images/pasteur_swan_neck.jpg',
+          source_context:
+            "Published by French chemist Louis Pasteur in his 1861 treatise Mémoire sur les corpuscules organisés qui existent dans l'atmosphère. Pasteur demonstrated that nutrient broth remained sterile when curved flask necks trapped falling airborne dust particles, but fermented rapidly when the necks were broken.",
+          prompt:
+            'What does Source C demonstrate about how microscopic organisms cause fermentation and disease?',
+          model_answer:
+            'Source C demonstrates that living microbes enter liquids from external atmospheric dust rather than generating spontaneously from rotting matter. By showing that boiled broth remained sterile indefinitely inside unbroken curved flasks, Pasteur proved that specific biological micro-organisms—not bad smells—caused decomposition and disease.',
+        },
+        {
+          id: 'water_l5_src_d',
+          letter: 'Source D',
+          type: 'visual',
+          title: "Robert Koch's Microphotograph of the Cholera Bacterium (Vibrio cholerae, 1884)",
+          caption:
+            'Photomicrograph plate published by Robert Koch displaying the comma-shaped Vibrio cholerae bacteria isolated during the 1883–84 epidemics in Egypt and India.',
+          image: '/images/koch_bacteria.jpg',
+          source_context:
+            'Produced by German physician and bacteriologist Robert Koch in Berlin in 1884. Leading the German Cholera Commission to Alexandria and Calcutta, Koch isolated the comma-shaped bacillus from the intestines of deceased cholera victims and cultured it on agar plates, confirming Snow’s hypothesis thirty years after his death.',
+          prompt:
+            'Why was Robert Koch’s discovery in Source D decisive in defeating the miasma theory of public health?',
+          model_answer:
+            'Source D was decisive because it provided undeniable physical visual proof under the microscope that cholera was caused by a specific living bacterium, Vibrio cholerae. This laboratory isolation demolished the vague, ancient belief that disease was caused by foul-smelling air, forcing medical and political authorities to focus entirely on preventing water from being contaminated by biological pathogens.',
+        },
+        {
+          id: 'water_l5_src_e',
+          letter: 'Source E',
+          type: 'written',
+          title:
+            'The Public Health Act 1875 (38 & 39 Vict. c. 55): Compulsory Municipal Sanitary Provision',
+          author: 'Parliament of the United Kingdom (Prime Minister Benjamin Disraeli)',
+          date: '11 August 1875',
+          text: '"Every local authority shall within their district appertaining make provision for the proper cleansing of streets, the removal of house refuse, the regular paving and drainage of alleys, and the inspection of all slaughterhouses and common lodging-houses... Every local authority shall provide a supply of pure and wholesome water sufficient for the proper use of the inhabitants... and shall appoint a fit and proper person to be Medical Officer of Health, whose duty it shall be to inspect and report upon the sanitary condition of the district."',
+          source_context:
+            "Passed by Benjamin Disraeli's Conservative administration in 1875 to consolidate and replace over one hundred fragmented sanitary statutes. Unlike the 1848 Act, this statute was completely compulsory and legally binding on every town and rural district in England and Wales.",
+          prompt:
+            'What does Source E reveal about the fundamental shift in the British government’s approach to public health by 1875?',
+          model_answer:
+            'Source E reveals that the British state had completely abandoned its traditional laissez-faire policy of non-interference in favour of compulsory state intervention. By legally commanding every local authority to supply pure water, build drainage, and appoint a Medical Officer of Health, the 1875 Act established public health and sanitation as enforceable legal rights for all citizens.',
         },
       ],
       tasks: [
@@ -6707,1625 +5551,109 @@ const water_and_sanitation_data = {
           topic: 'Question 2: Explain Why [12 marks • 15 mins]',
           title: 'Question 2: Explain Why [12 marks • 15 mins]',
           question:
-            'Explain why the British government finally took decisive action to build London’s sewer network after 1858. [12 marks]',
+            'Explain why public health in Britain transformed dramatically between 1854 and 1900. [12 marks]',
           stimulus: [
-            'The Great Stink of June 1858 and its impact on politicians in Parliament',
-            'The engineering proposals of Joseph Bazalgette and fear of recurring cholera epidemics',
+            "Dr John Snow's Soho investigation and spot map (1854)",
+            "Louis Pasteur's Germ Theory and the 1875 Public Health Act",
           ],
           scaffolding: {
             guidance:
               'Write a structured 3-paragraph PEEL response. Use the exact words from the question stem in your Point and in your Link for every paragraph.',
             structure_strip: [
               {
-                col: '1. THE GREAT STINK & PARLIAMENTARY PANIC',
+                col: '1. SCIENTIFIC EPIDEMIOLOGY (SNOW)',
                 prompt:
-                  'Explain how the blistering June 1858 heatwave cooked Thames sewage, driving MPs from committee rooms and forcing an emergency sewer bill in 18 days [5.1, 5.2].',
+                  'Explain how Dr John Snow used spatial mapping around the Broad Street pump to prove cholera was an ingested waterborne poison [5.1, 5.2, 5.3].',
                 starter:
-                  'A decisive catalyst explaining why the British government finally took decisive action after 1858 was the immediate panic caused by the Great Stink...',
+                  "A primary catalyst explaining why public health transformed was Dr John Snow's epidemiological breakthrough during the 1854 Soho cholera outbreak...",
               },
               {
-                col: '2. BAZALGETTE’S BLUEPRINT & CHOLERA FEAR',
+                col: '2. BACTERIOLOGY (PASTEUR & KOCH)',
                 prompt:
-                  'Explain how Joseph Bazalgette’s ready-to-build plans and recurring cholera epidemics gave politicians a proven engineering solution [5.3].',
+                  "Explain how Pasteur's Germ Theory (1861) and Koch's isolation of Vibrio cholerae (1884) permanently destroyed miasma dogma [5.4].",
                 starter:
-                  'Furthermore, the government was able to act swiftly because Chief Engineer Joseph Bazalgette had already drawn up comprehensive engineering blueprints...',
+                  'Furthermore, a decisive scientific development explaining why progress occurred was the laboratory confirmation of Germ Theory by Louis Pasteur and Robert Koch...',
               },
               {
-                col: '3. COMPARATIVE VERDICT',
+                col: '3. COMPULSORY STATE REFORM (1875)',
                 prompt:
-                  'Weigh whether selfish fear of dying or long-term sanitary vision was more decisive in breaking the laissez-faire gridlock [5.2, 5.5].',
+                  'Explain how the compulsory 1875 Public Health Act ended laissez-faire and forced all councils to provide clean water and sewers [5.5].',
                 starter:
-                  'Ultimately, while Bazalgette’s engineering was essential, the decisive factor explaining why the government acted was raw political self-preservation...',
+                  'Ultimately, the decisive factor that transformed public health across Britain was the passage of the compulsory 1875 Public Health Act...',
               },
             ],
+            sentence_starters: [
+              'A primary catalyst explaining why public health transformed was...',
+              'Specifically, this meant that...',
+              'In particular, this was demonstrated when...',
+              'Consequently, this reveals that...',
+              'Ultimately, the decisive reason why public health improved was... because...',
+            ],
+            model_answer:
+              "A primary catalyst explaining why public health transformed was Dr John Snow's epidemiological breakthrough during the 1854 Soho cholera outbreak. By mapping 616 cholera deaths and identifying that fatalities clustered around the Broad Street pump while exempt brewery workers drank only beer, Snow proved that cholera was an ingested waterborne pathogen rather than an airborne miasma. Snow's persuaded removal of the pump handle on 8 September 1854 provided the first empirical demonstration that public health could be protected through targeted water intervention.\n\nFurthermore, a decisive scientific development explaining why progress occurred was the laboratory confirmation of Germ Theory by Louis Pasteur and Robert Koch. In 1861, Pasteur disproved spontaneous generation using swan-neck flasks, establishing that invisible living microbes caused decay. When Robert Koch isolated the comma-shaped Vibrio cholerae bacterium in 1884, he provided the indisputable microscopic proof needed to convince sceptical politicians and ratepayers that water sanitation was a biological necessity rather than an optional municipal luxury.\n\nUltimately, the decisive factor that transformed public health across Britain was the passage of the compulsory 1875 Public Health Act. Under Benjamin Disraeli's government, permissive laissez-faire legislation was replaced with mandatory duties: every local authority was compelled to appoint a Medical Officer of Health, inspect food, pave streets, and supply clean piped water and covered sewers. This combination of epidemiological observation, laboratory science, and compulsory state power permanently conquered waterborne epidemics in Britain by 1900.",
           },
-          hints: [
-            'Point: State your factor clearly using the exact words from the question stem.',
-            'Evidence: Deploy specific historical details: June 1858 heatwave (35°C), Michael Faraday, chloride of lime curtains, Joseph Bazalgette, 82 miles of sewers, £3 million loan [5.1–5.3].',
-            'Explanation: Contrast 20 years of inaction while poor people died against the 18-day rush when MPs smelled the river themselves [5.2].',
-            'Link: Conclude with a sustained comparative judgment: evaluate whether self-preservation or engineering readiness was the primary spark [5.5].',
-          ],
           model_answer:
-            'A decisive catalyst explaining why the British government finally took decisive action to build London’s sewer network after 1858 was the immediate terror and physical panic caused by the Great Stink. For over two decades, the River Thames had been turned into an open cesspool as hundreds of thousands of flushing water closets were plumbed into old storm drains. While cholera devastated working-class slums in 1831 and 1848, politicians clinging to laissez-faire refused to intervene. However, in June 1858, an unprecedented heatwave cooked the raw human excrement exposed on the tidal mudbanks of the river. The resulting stench was so suffocating that it penetrated the Houses of Parliament, forcing MPs and Prime Minister Benjamin Disraeli to flee committee rooms with handkerchiefs clamped to their mouths. Desperate attempts to soak library curtains in chloride of lime failed to block the fumes. Convinced by miasma theory that the foul vapors would strike them dead in their seats, Parliament shattered twenty years of political gridlock in just eighteen days, passing an emergency statute granting £3 million and absolute power to clean the Thames.<br><br>Furthermore, the government was able to act swiftly because Chief Engineer Joseph Bazalgette had already drawn up comprehensive, ready-to-build engineering blueprints that offered a definitive solution to recurring cholera epidemics. Appointed chief engineer to the Metropolitan Board of Works, Bazalgette recognized that widening street gutters was futile; instead, he planned an audacious 82-mile network of underground intercepting sewers running parallel to the Thames to catch sewage before it could touch the river. When terrified MPs demanded action, Bazalgette’s plans were immediately ready to execute. Between 1859 and 1865, Bazalgette directed thousands of navvies using 318 million bricks and waterproof Portland cement to create oval egg-shaped sewers that channeled sewage eastward to outfall reservoirs at Barking and Crossness. The persistent fear that another cholera epidemic would paralyze the capital gave the government the political willpower to fund Bazalgette’s massive engineering intervention.<br><br>Ultimately, while Bazalgette’s brilliant engineering made the solution possible, the decisive factor explaining why the government took action was raw political self-preservation among the ruling elite. For decades, Edwin Chadwick had provided indisputable statistical proof that slum filth killed thousands of factory workers, yet wealthy MPs dismissed sanitary reform as expensive tyranny. It was only when the lethal stench breached the walls of Parliament and directly threatened the lives of ministers themselves that politicians abandoned laissez-faire. As demonstrated in 1866 when London’s connected districts escaped a cholera outbreak entirely, Bazalgette’s sewers permanently conquered water-borne disease in the capital. Therefore, while engineering readiness provided the means, it was selfish aristocratic panic during the Great Stink of 1858 that provided the non-negotiable spark for government action.',
+            "A primary catalyst explaining why public health transformed was Dr John Snow's epidemiological breakthrough during the 1854 Soho cholera outbreak. By mapping 616 cholera deaths and identifying that fatalities clustered around the Broad Street pump while exempt brewery workers drank only beer, Snow proved that cholera was an ingested waterborne pathogen rather than an airborne miasma. Snow's persuaded removal of the pump handle on 8 September 1854 provided the first empirical demonstration that public health could be protected through targeted water intervention.\n\nFurthermore, a decisive scientific development explaining why progress occurred was the laboratory confirmation of Germ Theory by Louis Pasteur and Robert Koch. In 1861, Pasteur disproved spontaneous generation using swan-neck flasks, establishing that invisible living microbes caused decay. When Robert Koch isolated the comma-shaped Vibrio cholerae bacterium in 1884, he provided the indisputable microscopic proof needed to convince sceptical politicians and ratepayers that water sanitation was a biological necessity rather than an optional municipal luxury.\n\nUltimately, the decisive factor that transformed public health across Britain was the passage of the compulsory 1875 Public Health Act. Under Benjamin Disraeli's government, permissive laissez-faire legislation was replaced with mandatory duties: every local authority was compelled to appoint a Medical Officer of Health, inspect food, pave streets, and supply clean piped water and covered sewers. This combination of epidemiological observation, laboratory science, and compulsory state power permanently conquered waterborne epidemics in Britain by 1900.",
         },
       ],
       teacher_notes: {
         primer:
-          'This enquiry is the turning point of modern public health history. Guide Year 7 pupils to analyze political motivation: contrast twenty years of neglect toward slum cholera with the rapid eighteen-day passage of the sewer bill once MPs smelled the river themselves.',
+          'This enquiry guides pupils through the 19th-century scientific and legislative revolution that conquered waterborne disease. Contrast Dr John Snow’s meticulous spatial deduction with the stubborn dogma of miasma, before evaluating how Pasteur, Koch, and the compulsory 1875 Act permanently transformed British society.',
         objectives: [
           {
             objective:
-              'Explain how the Great Stink of 1858 overcame political laissez-faire in just eighteen days.',
+              'Explain the circumstances of the 1854 Soho cholera outbreak and the dominance of miasma theory.',
             primer:
-              'Focus on paragraphs [5.1] and [5.2]. Emphasise the geography of Parliament on the riverbank and miasma fear.',
+              'Direct pupils to block [5.1] and discuss why the authorities’ panic reactions (burning pitch barrels) failed to save lives.',
             question:
-              'Hinge Question: Why did Victorian MPs ignore cholera epidemics in slums for twenty years, but pass a sewer bill in eighteen days when the smell entered Parliament?',
+              'Why did Victorian medical authorities believe bad smells caused cholera even when cleaning the air failed to stop outbreaks?',
           },
           {
             objective:
-              'Evaluate the engineering achievements of Joseph Bazalgette and their long-term significance.',
+              'Analyze how Dr John Snow used the Soho spot map and brewery anomaly to prove cholera was waterborne.',
             primer:
-              'Direct pupils to paragraphs [5.3] and [5.5]. Highlight intercepting sewers, Portland cement, and the 1875 Act.',
+              'Examine Source A and Source B with pupils, tracing the distribution of deaths around the Broad Street pump versus the zero deaths at the brewery.',
             question:
-              'Hinge Question: Was the 1875 Public Health Act passed because politicians cared about the working class, or because Bazalgette and Pasteur made excuses impossible?',
-          },
-        ],
-        source_context: [
-          {
-            source: 'Source A (Father Thames Cartoon 1858)',
-            context:
-              'Punch cartoon showing Father Thames presenting Cholera, Scrofula, and Diphtheria to London during the Great Stink. Hinge Question: Does Source A show that Victorians understood the biological connection between sewage and cholera, or that they remained obsessed with foul air and miasma?',
-          },
-          {
-            source: 'Source B (Hansard Great Stink Parliamentary Debate 1858)',
-            context:
-              'Official transcript of House of Commons debates on 18 June 1858 describing MPs abandoning committee rooms and soaking window curtains in chloride of lime to block the intolerable stench of the Thames. Hinge Question: Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-          },
-          {
-            source: 'Source C (Low-Level Intercepting Sewer Construction 1862)',
-            context:
-              'Contemporary Illustrated London News engraving depicting the egg-shaped brick tunnels and Portland cement engineering of Bazalgette’s main drainage system. Hinge Question: Why was the egg-shaped cross-section of Bazalgette’s sewers an engineering triumph?',
-          },
-          {
-            source: 'Source D (Eastney Beam Engine House 1865)',
-            context:
-              'Built in 1865 following the Great Stink and regional cholera outbreaks, the Eastney Beam Engine House housed monumental Boulton & Watt steam engines pumping millions of gallons of sewage away from residential areas into holding tanks discharged at high tide. Hinge Question: Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-          },
-          {
-            source: 'Source E (The Public Health Act 1875)',
-            context:
-              'Official parliamentary statute codifying compulsory municipal sanitary obligations, making covered sewers and clean water supplies mandatory across all English local authorities. Hinge Question: Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?',
-          },
-        ],
-      },
-      video: [
-        {
-          id: 'ZmaoHB5fKB4',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=ZmaoHB5fKB4',
-          title: 'Louis Pasteur & Germ Theory | Secondary History',
-          duration: '4 mins 12 secs',
-          pathway: 'Starter Hook',
-          teacher_guidance:
-            'Recommended Watch Window: 00:15–03:45 | Lesson Phase: Scientific Revolution Hook | Tone Alert: Explores the swan-neck flask experiment and disproving Spontaneous Generation.',
-          viewing_task:
-            '[01:00] Quick Check: In what year did French chemist Louis Pasteur publish his Germ Theory of disease?\n[02:45] Hinge Question: Why did the medical establishment take nearly two decades to accept that invisible microscopic bacteria caused disease rather than bad smells (miasma)?',
-          model_answer:
-            'Quick Check: 1861.\nHinge Question: Doctors had believed in the ancient miasma theory for over two thousand years; it seemed absurd that invisible microbes floating in the air could kill an adult human until Robert Koch specifically identified anthrax, tuberculosis, and cholera bacteria.',
-        },
-        {
-          id: '5k8AnhNkN04',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=5k8AnhNkN04',
-          title: 'Bazalgette: Saviour of the Great Stink | Institution of Civil Engineers',
-          duration: '5 mins 14 secs',
-          pathway: 'Core Enquiry',
-          teacher_guidance:
-            "Recommended Watch Window: 00:20–04:45 | Lesson Phase: Engineering Triumph | Tone Alert: Technical analysis of Joseph Bazalgette's Victorian intercepting sewer network.",
-          viewing_task:
-            "[01:10] Recall: What occurred in the hot summer of 1858 that forced MPs in the Houses of Parliament to soak curtains in chloride of lime?\n[02:40] Explain: How did Joseph Bazalgette's network of 82 miles of underground brick intercepting sewers redirect 420 million gallons of sewage daily?\n[04:15] Challenge: How did Bazalgette's decision to double the diameter of his sewer pipes ('just in case') future-proof London's sanitation for over 150 years?",
-          model_answer:
-            "Recall: The 'Great Stink': the untreated sewage of 2 million people in the River Thames baked in extreme heat, producing an unbearable stench that disrupted Parliament.\nExplain: He built massive underground sewers parallel to the Thames that caught effluent before it reached the river, using gravity and steam pumping stations to carry it eastward to the Thames estuary.\nChallenge: He calculated the exact sewer capacity needed for London's population, said 'we're only going to do this once', and doubled pipe dimensions; his Victorian brick sewers still handle London's waste today.",
-        },
-        {
-          id: 'lOIp7pOMrkI',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=lOIp7pOMrkI',
-          title: "How The Victorians Ended London's Great Stink | History Documentaries",
-          duration: '12 mins 40 secs',
-          pathway: 'Cinematic',
-          teacher_guidance:
-            "Recommended Watch Window: 00:30–11:30 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Acclaimed historical documentary recreating Victorian London and Bazalgette's struggles.",
-          viewing_task:
-            "[01:30] Cinematic Discussion Focus: How does the documentary capture the dramatic moment when Parliament was forced to pass legislation in just 18 days because the stink threatened MPs' own lives?",
-          model_answer:
-            'Cinematic Discussion Focus: The documentary highlights the irony: for decades, thousands of poor workers died in slums while Parliament did nothing; but when the stench of their own waste wafted through the windows of the House of Commons, politicians panicked and immediately granted Bazalgette £3 million.',
-        },
-        {
-          id: 'era_sewer_king_bazalgette',
-          type: 'era',
-          url: 'https://eduvids.org/embed/sewer-king-seven-wonders',
-          title: 'The Sewer King: Seven Wonders of the Industrial World | BBC',
-          duration: '48 mins 36 secs',
-          pathway: 'Documentary Depth',
-          teacher_guidance:
-            'Recommended Watch Window: 10:00–35:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: BBC docudrama starring Michael Kitchen as Sir Joseph Bazalgette.',
-          viewing_task:
-            "[14:00] Recall: What innovative construction material (Portland cement) did Bazalgette rigorously test to ensure sewers would not dissolve in acidic effluent?\n[26:30] Explain: How did Bazalgette's construction work also create the Victoria, Albert, and Chelsea Embankments, reclaiming 52 acres of prime riverside land?\n[38:15] Challenge: How did Bazalgette's engineering triumph permanently eradicate waterborne cholera from London even though he believed in the flawed miasma theory?",
-          model_answer:
-            'Recall: Portland cement: he personally inspected every batch to ensure it had maximum tensile strength in water.\nExplain: The embankments encased the massive low-level intercepting sewer pipes, the District underground railway line, and gas mains, simultaneously beautifying London and preventing tidal floods.\nChallenge: He believed bad smells caused cholera, so his goal was to remove foul-smelling waste; by diverting sewage away from drinking water intakes, he accidentally eliminated the cholera bacterium, ending epidemics in London forever.',
-        },
-      ],
-      quick_quiz: [
-        {
-          question:
-            'What modern convenience caused the River Thames to become an open sewer by the 1850s?',
-          options: [
-            'The gas streetlamp',
-            'The flushing indoor water closet',
-            'The steam locomotive',
-            'The electric telegraph',
-          ],
-          answer: 'The flushing indoor water closet',
-        },
-        {
-          question: 'Where were domestic flushing water closets plumbed in early Victorian London?',
-          options: [
-            'Into modern water purification factories',
-            'Into deep coal mines',
-            'Into underground tanks in France',
-            'Directly into old storm-water drains emptying into the Thames',
-          ],
-          answer: 'Directly into old storm-water drains emptying into the Thames',
-        },
-        {
-          question:
-            'What famous scientist published a letter in 1855 warning that the Thames was an opaque fermenting sewer?',
-          options: ['Isaac Newton', 'Charles Darwin', 'Michael Faraday', 'Albert Einstein'],
-          answer: 'Michael Faraday',
-        },
-        {
-          question: 'In what year did the scorching heatwave cause the "Great Stink" in London?',
-          options: ['1858', '1875', '1831', '1848'],
-          answer: '1858',
-        },
-        {
-          question:
-            'What building stood directly on the riverbank and was overwhelmed by the Great Stink?',
-          options: [
-            'The Houses of Parliament (Palace of Westminster)',
-            'Buckingham Palace',
-            'The Tower of London',
-            'St Paul’s Cathedral',
-          ],
-          answer: 'The Houses of Parliament (Palace of Westminster)',
-        },
-        {
-          question:
-            'What chemical did officials soak the curtains of Parliament with to neutralize the smell?',
-          options: ['Vinegar', 'Sulfuric acid', 'Chloride of lime', 'Rose water'],
-          answer: 'Chloride of lime',
-        },
-        {
-          question:
-            'How quickly did Parliament pass the emergency bill to fund London’s new sewers?',
-          options: ['It took 50 years', 'In 6 months', 'It was never passed', 'In just 18 days'],
-          answer: 'In just 18 days',
-        },
-        {
-          question:
-            'Who was appointed Chief Engineer to design and build London’s underground sewer network?',
-          options: ['Edwin Chadwick', 'Joseph Bazalgette', 'John Snow', 'Isambard Kingdom Brunel'],
-          answer: 'Joseph Bazalgette',
-        },
-        {
-          question:
-            'How many miles of underground intercepting brick sewers did Bazalgette construct?',
-          options: ['82 miles', '5 miles', '500 miles', '1,000 miles'],
-          answer: '82 miles',
-        },
-        {
-          question:
-            'What revolutionary waterproof material was used to bind the 318 million bricks in the sewers?',
-          options: ['Plaster of Paris', 'Clay mud', 'Tar', 'Portland cement'],
-          answer: 'Portland cement',
-        },
-        {
-          question: 'Why were Bazalgette’s sewer pipes engineered in an oval, egg-like shape?',
-          options: [
-            'Because round pipes were banned',
-            'To look artistic',
-            'To keep water flowing fast even when water levels were low',
-            'To fit horses inside',
-          ],
-          answer: 'To keep water flowing fast even when water levels were low',
-        },
-        {
-          question:
-            'What natural force carried most of London’s sewage eastward along Bazalgette’s tunnels?',
-          options: ['Electric motors', 'Gravity', 'Compressed air', 'Nuclear power'],
-          answer: 'Gravity',
-        },
-        {
-          question:
-            'What massive steam pumping stations were built to lift sewage into outfall reservoirs?',
-          options: [
-            'Big Ben and Westminster',
-            'Abbey Mills and Crossness',
-            'Tower Bridge and London Eye',
-            'Soho and Waterloo',
-          ],
-          answer: 'Abbey Mills and Crossness',
-        },
-        {
-          question: 'What French scientist published the Germ Theory of Disease in 1861?',
-          options: ['Robert Koch', 'René Descartes', 'Marie Curie', 'Louis Pasteur'],
-          answer: 'Louis Pasteur',
-        },
-        {
-          question:
-            'What shape of glass flask did Louis Pasteur use to disprove spontaneous generation?',
-          options: [
-            'A square jar',
-            'A flat plate',
-            'A swan-neck (S-shaped) flask',
-            'A giant test tube',
-          ],
-          answer: 'A swan-neck (S-shaped) flask',
-        },
-        {
-          question:
-            'Which local Hampshire pumping station was built in 1865 using twin James Watt beam engines?',
-          options: [
-            'Eastney Beam Engine House',
-            'Titchfield Abbey',
-            'Portchester Fort',
-            'Southsea Castle',
-          ],
-          answer: 'Eastney Beam Engine House',
-        },
-        {
-          question: 'What happened during the 1866 cholera outbreak in London?',
-          options: [
-            'The whole city died',
-            'The sewers exploded',
-            'Areas connected to Bazalgette’s sewers had no cholera deaths',
-            'Cholera was worse than ever everywhere',
-          ],
-          answer: 'Areas connected to Bazalgette’s sewers had no cholera deaths',
-        },
-        {
-          question:
-            'In what year was the landmark compulsory Public Health Act passed by Disraeli’s government?',
-          options: ['1875', '1858', '1914', '1848'],
-          answer: '1875',
-        },
-        {
-          question:
-            'What made the 1875 Public Health Act fundamentally different from the 1848 Act?',
-          options: [
-            'It banned all doctors',
-            'It was compulsory (mandatory) for all councils, not optional',
-            'It only applied to Scotland',
-            'It was entirely voluntary',
-          ],
-          answer: 'It was compulsory (mandatory) for all councils, not optional',
-        },
-        {
-          question:
-            'What long-standing political philosophy finally ended with the passage of the 1875 Public Health Act?',
-          options: [
-            'Feudalism',
-            'Monarchy',
-            'Democracy',
-            'Laissez-faire (government non-interference)',
-          ],
-          answer: 'Laissez-faire (government non-interference)',
-        },
-      ],
-      quiz: [
-        {
-          question:
-            'What modern convenience caused the River Thames to become an open sewer by the 1850s?',
-          options: [
-            'The gas streetlamp',
-            'The steam locomotive',
-            'The electric telegraph',
-            'The flushing indoor water closet',
-          ],
-          answer: 'The flushing indoor water closet',
-        },
-        {
-          question: 'Where were domestic flushing water closets plumbed in early Victorian London?',
-          options: [
-            'Into modern water purification factories',
-            'Directly into old storm-water drains emptying into the Thames',
-            'Into deep coal mines',
-            'Into underground tanks in France',
-          ],
-          answer: 'Directly into old storm-water drains emptying into the Thames',
-        },
-        {
-          question:
-            'What famous scientist published a letter in 1855 warning that the Thames was an opaque fermenting sewer?',
-          options: ['Isaac Newton', 'Charles Darwin', 'Michael Faraday', 'Albert Einstein'],
-          answer: 'Michael Faraday',
-        },
-        {
-          question: 'In what year did the scorching heatwave cause the "Great Stink" in London?',
-          options: ['1858', '1875', '1831', '1848'],
-          answer: '1858',
-        },
-        {
-          question:
-            'What building stood directly on the riverbank and was overwhelmed by the Great Stink?',
-          options: [
-            'The Houses of Parliament (Palace of Westminster)',
-            'Buckingham Palace',
-            'The Tower of London',
-            'St Paul’s Cathedral',
-          ],
-          answer: 'The Houses of Parliament (Palace of Westminster)',
-        },
-        {
-          question:
-            'What chemical did officials soak the curtains of Parliament with to neutralize the smell?',
-          options: ['Vinegar', 'Sulfuric acid', 'Rose water', 'Chloride of lime'],
-          answer: 'Chloride of lime',
-        },
-        {
-          question:
-            'How quickly did Parliament pass the emergency bill to fund London’s new sewers?',
-          options: ['It took 50 years', 'In 6 months', 'In just 18 days', 'It was never passed'],
-          answer: 'In just 18 days',
-        },
-        {
-          question:
-            'Who was appointed Chief Engineer to design and build London’s underground sewer network?',
-          options: ['Edwin Chadwick', 'Joseph Bazalgette', 'John Snow', 'Isambard Kingdom Brunel'],
-          answer: 'Joseph Bazalgette',
-        },
-        {
-          question:
-            'How many miles of underground intercepting brick sewers did Bazalgette construct?',
-          options: ['5 miles', '500 miles', '82 miles', '1,000 miles'],
-          answer: '82 miles',
-        },
-        {
-          question:
-            'What revolutionary waterproof material was used to bind the 318 million bricks in the sewers?',
-          options: ['Portland cement', 'Plaster of Paris', 'Clay mud', 'Tar'],
-          answer: 'Portland cement',
-        },
-        {
-          question: 'Why were Bazalgette’s sewer pipes engineered in an oval, egg-like shape?',
-          options: [
-            'Because round pipes were banned',
-            'To look artistic',
-            'To fit horses inside',
-            'To keep water flowing fast even when water levels were low',
-          ],
-          answer: 'To keep water flowing fast even when water levels were low',
-        },
-        {
-          question:
-            'What natural force carried most of London’s sewage eastward along Bazalgette’s tunnels?',
-          options: ['Electric motors', 'Gravity', 'Compressed air', 'Nuclear power'],
-          answer: 'Gravity',
-        },
-        {
-          question:
-            'What massive steam pumping stations were built to lift sewage into outfall reservoirs?',
-          options: [
-            'Big Ben and Westminster',
-            'Abbey Mills and Crossness',
-            'Tower Bridge and London Eye',
-            'Soho and Waterloo',
-          ],
-          answer: 'Abbey Mills and Crossness',
-        },
-        {
-          question: 'What French scientist published the Germ Theory of Disease in 1861?',
-          options: ['Robert Koch', 'René Descartes', 'Marie Curie', 'Louis Pasteur'],
-          answer: 'Louis Pasteur',
-        },
-        {
-          question:
-            'What shape of glass flask did Louis Pasteur use to disprove spontaneous generation?',
-          options: [
-            'A swan-neck (S-shaped) flask',
-            'A square jar',
-            'A flat plate',
-            'A giant test tube',
-          ],
-          answer: 'A swan-neck (S-shaped) flask',
-        },
-        {
-          question:
-            'Which local Hampshire pumping station was built in 1865 using twin James Watt beam engines?',
-          options: [
-            'Titchfield Abbey',
-            'Portchester Fort',
-            'Eastney Beam Engine House',
-            'Southsea Castle',
-          ],
-          answer: 'Eastney Beam Engine House',
-        },
-        {
-          question: 'What happened during the 1866 cholera outbreak in London?',
-          options: [
-            'The whole city died',
-            'Areas connected to Bazalgette’s sewers had no cholera deaths',
-            'The sewers exploded',
-            'Cholera was worse than ever everywhere',
-          ],
-          answer: 'Areas connected to Bazalgette’s sewers had no cholera deaths',
-        },
-        {
-          question:
-            'In what year was the landmark compulsory Public Health Act passed by Disraeli’s government?',
-          options: ['1858', '1914', '1875', '1848'],
-          answer: '1875',
-        },
-        {
-          question:
-            'What made the 1875 Public Health Act fundamentally different from the 1848 Act?',
-          options: [
-            'It banned all doctors',
-            'It only applied to Scotland',
-            'It was entirely voluntary',
-            'It was compulsory (mandatory) for all councils, not optional',
-          ],
-          answer: 'It was compulsory (mandatory) for all councils, not optional',
-        },
-        {
-          question:
-            'What long-standing political philosophy finally ended with the passage of the 1875 Public Health Act?',
-          options: [
-            'Laissez-faire (government non-interference)',
-            'Feudalism',
-            'Monarchy',
-            'Democracy',
-          ],
-          answer: 'Laissez-faire (government non-interference)',
-        },
-      ],
-      sources: [
-        {
-          id: 'water_l5_src_a',
-          letter: 'A',
-          type: 'visual',
-          src: '/images/father_thames_punch_1858.jpg',
-          image: '/images/father_thames_punch_1858.jpg',
-          title:
-            "Source A: 'Father Thames Introducing His Offspring to the Fair City of London' (Punch, July 1858)",
-          caption:
-            'Punch satirical cartoon by John Leech depicting Father Thames rising from liquid sewage to introduce three monstrous figures—Diphtheria, Scrofula, and Cholera—to London (Punch, Vol. XXXV, p. 5).',
-          author: 'John Leech for Punch Magazine',
-          date: 'July 1858',
-          question_badge: 'POLITICAL CARTOON & METROPOLITAN CRISIS',
-          question:
-            'What message was Punch communicating about the condition of the River Thames in the summer of 1858?',
-          model_answer:
-            "Source A portrays Father Thames as a foul monster offering the diseased children 'Cholera', 'Scrofula', and 'Diphtheria' to London. This warned the public that using the Thames as an open sewer turned Britain's most famous river into a deadly source of disease.",
-          context:
-            'During the heatwave of June–July 1858, the River Thames became a fermenting reservoir of raw sewage. The stench was so overwhelming that the curtains of the House of Commons had to be soaked in disinfectant.',
-          hinge_question:
-            'Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-          provenance_clues: {
-            author: 'John Leech, satirical illustrator for Punch.',
-            audience: 'British public, politicians, and London ratepayers.',
-            motive:
-              'Humiliating Parliament into taking action to clean up the foul, disease-ridden River Thames.',
-            hinge_question:
-              'Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-            source_context:
-              'During the heatwave of June–July 1858, the Thames became a fermenting reservoir of sewage. **Hinge Question:** Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-            provenance_breakdown: {
-              author: 'John Leech, satirical illustrator for Punch.',
-              audience: 'British public, politicians, and London ratepayers.',
-              motive:
-                'Humiliating Parliament into taking action to clean up the foul, disease-ridden River Thames.',
-            },
-          },
-          source_context:
-            'During the heatwave of June–July 1858, the Thames became a fermenting reservoir of sewage. **Hinge Question:** Why did middle-class Victorians blame the river itself for disease, rather than the water supply piped into their own drinking cups?',
-        },
-        {
-          id: 'water_l5_src_b',
-          letter: 'B',
-          type: 'written',
-          title:
-            'Source B: Hansard Parliamentary Debates: The Great Stink in the House of Commons (18 June 1858)',
-          caption:
-            'Official parliamentary transcript recording MPs debating the pestilential fumes invading the Houses of Parliament from the River Thames (Hansard Parliamentary Debates, 3rd series, Vol. 151).',
-          author: 'Honourable Members of Parliament, House of Commons',
-          date: '18 June 1858',
-          content:
-            "Mr Brady called the attention of the Government to the state of the River Thames in the immediate vicinity of the Houses of Parliament... It was impossible for honourable gentlemen to sit in the committee rooms overlooking the river without suffering nausea and headache. The smell was so pestilential that curtains soaked in chloride of lime had to be hung across the open windows. The Chancellor of the Exchequer, Mr Benjamin Disraeli, remarked that the river had become 'a Stygian pool, reeking with ineffable horror'.",
-          question_badge: 'PARLIAMENTARY CRISIS & EMPOWERMENT',
-          question:
-            'What does Source B show about why Parliament finally agreed to spend millions of pounds on London sewers in 1858?',
-          model_answer:
-            'Source B shows that MPs inside the House of Commons could not breathe or work without suffering headaches from the unbearable stench of the Thames. When their own health was threatened, politicians panicked and immediately passed the law granting Bazalgette £3 million for sewers.',
-          context:
-            "MPs attempted to soak curtains in lime chloride and even debated evacuating Parliament to Oxford or St Albans. Within 18 days of the crisis, Disraeli introduced the bill empowering the Metropolitan Board of Works to construct London's sewer system.",
-          hinge_question:
-            'Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-          provenance_clues: {
-            author: 'Official Hansard parliamentary reporters.',
-            audience: 'Parliament, the British public, and newspapers.',
-            motive:
-              "Recording verbatim the complaints of MPs and Disraeli's commitment to fund sewer construction.",
-            hinge_question:
-              'Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-            source_context:
-              'MPs attempted to soak curtains in lime chloride and debated moving Parliament. **Hinge Question:** Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-            provenance_breakdown: {
-              author: 'Official Hansard parliamentary reporters.',
-              audience: 'Parliament, the British public, and newspapers.',
-              motive:
-                "Recording verbatim the complaints of MPs and Disraeli's commitment to fund sewer construction.",
-            },
-          },
-          source_context:
-            'MPs attempted to soak curtains in lime chloride and debated moving Parliament. **Hinge Question:** Why were wealthy politicians willing to ignore slum cholera for 25 years, but acted within 18 days when the stink reached their own chamber?',
-          text: 'Hansard Parliamentary Debates (House of Commons, 18 June 1858):\nMr. Brady rose to direct the attention of the House to the pestilential state of the River Thames. Members were compelled to sit with handkerchiefs soaked in chloride of lime pressed to their noses. Committee rooms overlooking the river had to be abandoned because of the unbearable stench. It was a scandal that the greatest legislative body in the world was driven from its chambers by the foul effluvia of its own metropolitan river.',
-        },
-        {
-          id: 'water_l5_src_c',
-          letter: 'C',
-          type: 'visual',
-          src: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-          image: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-          title: 'Source C: Construction of the Low-Level Intercepting Sewer (1862)',
-          caption:
-            'Engraving from The Illustrated London News showing bricklayers constructing the egg-shaped brick tunnels of the London main drainage system (Wellcome Collection 38481i).',
-          author: 'The Illustrated London News Special Artist',
-          date: '1862',
-          question_badge: 'EGG-SHAPED SEWER ENGINEERING',
-          question:
-            "Why was the egg-shaped cross-section of Bazalgette's sewers an engineering triumph?",
-          model_answer:
-            'The drawing shows that Bazalgette designed egg-shaped brick tunnels that were narrow at the bottom and wider at the top. The narrow base kept wastewater flowing fast even with small volumes of water, preventing solid sewage from settling and clogging the pipes.',
-          context:
-            'Bazalgette oversaw the laying of 318 million bricks, 82 miles of underground main intercepting sewers, and 1,100 miles of street sewers. The egg shape ensured self-scouring velocity even during dry spells.',
-          hinge_question:
-            'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-          provenance_clues: {
-            author: 'Illustrated London News staff artist.',
-            audience:
-              'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-            motive:
-              'Celebrating the unprecedented subterranean engineering works transforming London.',
-            hinge_question:
-              'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-            source_context:
-              'Bazalgette oversaw the laying of 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-            provenance_breakdown: {
-              author: 'Illustrated London News staff artist.',
-              audience:
-                'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-              motive:
-                'Celebrating the unprecedented subterranean engineering works transforming London.',
-            },
-          },
-          source_context:
-            'Bazalgette oversaw the laying of 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-        },
-        {
-          id: 'water_l5_src_d',
-          letter: 'D',
-          type: 'visual',
-          src: '/images/water_local_eastney.jpg',
-          image: '/images/water_local_eastney.jpg',
-          title:
-            'Source D: Eastney Beam Engine House and Sewage Pumping Station (Portsmouth, 1865)',
-          caption:
-            'Victorian polychrome brick pumping station housing two colossal Boulton & Watt rotative beam engines engineered to pump sewage into storage tanks before sea discharge (Portsmouth Museums / IWM).',
-          author: 'Portsmouth Municipal Borough Engineering Team',
-          date: '1865',
-          question_badge: 'MUNICIPAL STEAM HYDRAULICS',
-          question:
-            'How does the Eastney pumping station show how coastal Victorian towns handled sewage disposal?',
-          model_answer:
-            'Source D shows massive Boulton & Watt steam beam engines housed in Victorian brick architecture. This proves that coastal municipalities invested in giant steam-powered pumps to push town sewage out to sea during outgoing tides, ending the open cesspit crisis.',
-          context:
-            'Opened in 1865, Eastney Pumping Station used two 60-horsepower steam beam engines to lift sewage from low-lying Portsmouth into covered storage tanks, discharging it into the Solent at high tide ebb.',
-          hinge_question:
-            'Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-          provenance_clues: {
-            author: 'Portsmouth borough civil engineering records team.',
-            audience:
-              'Citizens of Portsmouth, sanitary inspectors, and naval dockyard authorities.',
-            motive: 'Documenting the municipal steam pumping works constructed to drain the town.',
-            hinge_question:
-              'Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-            source_context:
-              'Opened in 1865, Eastney Pumping Station used two 60-horsepower steam beam engines. **Hinge Question:** Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-            provenance_breakdown: {
-              author: 'Portsmouth borough civil engineering records team.',
-              audience:
-                'Citizens of Portsmouth, sanitary inspectors, and naval dockyard authorities.',
-              motive:
-                'Documenting the municipal steam pumping works constructed to drain the town.',
-            },
-          },
-          source_context:
-            'Opened in 1865, Eastney Pumping Station used two 60-horsepower steam beam engines. **Hinge Question:** Did pumping raw sewage directly into the sea solve the health problem or simply move the pollution somewhere else?',
-        },
-        {
-          id: 'water_l5_src_e',
-          letter: 'E',
-          type: 'written',
-          title: 'Source E: The Public Health Act of 1875 (38 & 39 Vict. c. 55)',
-          caption:
-            'Extract from the comprehensive 1875 Public Health Act passed under Prime Minister Benjamin Disraeli, codifying compulsory municipal sanitary obligations (The National Archives / UK Statute Law).',
-          author: 'British Parliament',
-          date: '1875',
-          content:
-            'Every local sanitary authority shall cause to be made such sewers as may be necessary for effectually draining their district... Every local authority shall provide that all sewers within their district are constructed, covered, ventilated, and kept so as not to be a nuisance or injurious to health... It shall be the duty of every local authority to appoint a legally qualified medical practitioner to be the Officer of Health... and to provide a constant supply of pure and wholesome water sufficient for the domestic use of the inhabitants.',
-          question_badge: 'MANDATORY SANITARY STATUTE & STATE POWER',
-          question:
-            'Why was the 1875 Public Health Act considered the decisive turning point in British public health history?',
-          model_answer:
-            "Unlike the voluntary 1848 Act, the 1875 Act made it compulsory for every town to provide clean water, build covered sewers, and appoint a Medical Officer of Health. This officially ended laissez-faire and proved that public health was the government's legal duty.",
-          context:
-            "Passed by Disraeli's Conservative government under the policy of 'Sanitas sanitatum, omnia sanitas' (Health of healths, all is health), the 1875 Act consolidated over 100 previous acts into one compulsory national sanitary code.",
-          hinge_question:
-            'Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?',
-          provenance_clues: {
-            author: "Disraeli's Conservative government and Parliament.",
-            audience:
-              'Every municipal corporation, urban sanitary district, and ratepayer in England and Wales.',
-            motive:
-              'Replacing voluntary public health measures with mandatory national standards for water, drainage, and medical inspection.',
-            hinge_question:
-              'Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?',
-            source_context:
-              "Passed under Disraeli's policy, the 1875 Act consolidated over 100 previous acts. **Hinge Question:** Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?",
-            provenance_breakdown: {
-              author: "Disraeli's Conservative government and Parliament.",
-              audience:
-                'Every municipal corporation, urban sanitary district, and ratepayer in England and Wales.',
-              motive:
-                'Replacing voluntary public health measures with mandatory national standards for water, drainage, and medical inspection.',
-            },
-          },
-          source_context:
-            "Passed under Disraeli's policy, the 1875 Act consolidated over 100 previous acts. **Hinge Question:** Why is the 1875 Act considered the final death blow to the Victorian philosophy of laissez-faire?",
-          text: 'The Public Health Act 1875 (38 & 39 Vict. c. 55):\nSection 13: All existing and future sewers within the district of a local authority... shall vest in and be under the control of such local authority.\nSection 15: Every local authority shall keep in repair all sewers belonging to them, and shall cause to be made such sewers as may be necessary for effectually draining their district.\nSection 19: Every local authority shall cause the sewers belonging to them to be constructed, covered, ventilated and kept so as not to be a nuisance or injurious to health.',
-        },
-      ],
-    },
-    {
-      id: 'lesson_6',
-      title:
-        'Why did it take the scientific revolution of Germ Theory to finally conquer water-borne disease?',
-      enquiry:
-        'Did John Snow end cholera through medical authority, or through meticulous geographical detective work?',
-      subtitle:
-        'From the Broad Street pump and Soho spot map to Robert Koch and modern epidemiology',
-      skill: 'Disciplinary Skill: Historical Investigation & Epidemiological Evidence',
-      card_image: '/images/john_snow_cholera_map.jpg',
-      card_position: 'center 30%',
-      banner: '/images/pasteur_laboratory.jpg',
-      cover_image: '/images/john_snow_cholera_map.jpg',
-      prologue:
-        'In late August 1854, a sudden and devastating cholera epidemic struck the Soho district of central London, killing over five hundred people in ten days within two hundred and fifty yards of Broad Street. While the medical establishment insisted that miasma from foul sewers was poisoning the atmosphere, an anesthetist named Dr John Snow conducted a revolution in medical detective work. By plotting every death on a spot map, Snow pinpointed the Broad Street water pump as the lethal epicenter. When the pump handle was removed, the outbreak collapsed. Yet decades passed before medical authorities surrendered miasma dogma to the undeniable truth of Germ Theory.',
-      margin_spine: [
-        {
-          year: '1854',
-          label: 'Soho Epidemic Strikes',
-        },
-        {
-          year: '1854',
-          label: 'Snow’s Water Theory',
-        },
-        {
-          year: '1854',
-          label: 'Broad Street Spot Map',
-        },
-        {
-          year: '1855',
-          label: 'Infant Diaper Cesspool',
-        },
-        {
-          year: '1884',
-          label: 'Koch Isolates Cholera',
-        },
-      ],
-      causal_domino_spine: {
-        title: 'John Snow, The Soho Outbreak & Germ Theory (1854–1884)',
-        subtitle: 'Key Turning Points & Causal Dominoes (5-Stage Framework)',
-        stages: [
-          {
-            step: 1,
-            para_ref: '[6.1]',
-            date: 'August 1854',
-            title: 'The Soho Outbreak: 500 Dead in 10 Days',
-            actor: 'Soho Residents, General Board of Health & Miasma Doctors',
-            tag: '⚡ SOHO OUTBREAK',
-            trigger:
-              'In late August 1854, an explosive cholera epidemic broke out in Soho, London, killing over 500 people in ten days near Broad Street.',
-            connective:
-              'The medical establishment blamed sewer gases, blinding doctors to the physical source of infection in local drinking water.',
-            question:
-              'How did the sudden cholera outbreak of August 1854 plunge Soho into catastrophe?',
-          },
-          {
-            step: 2,
-            para_ref: '[6.2]',
-            date: 'September 1854',
-            title: 'Dr John Snow: The Water-Borne Hypothesis',
-            actor: 'Dr John Snow (Royal Anesthetist)',
-            tag: '🩺 WATER-BORNE THEORY',
-            trigger:
-              'Dr John Snow reasoned that because cholera attacked the digestive tract rather than the lungs, the lethal poison had to be swallowed via drinking water.',
-            connective:
-              'Led him to investigate the popular local water pump on Broad Street, whose sparkling, cold water was praised by local residents.',
-            question: 'Why did Dr John Snow suspect water rather than foul air?',
-          },
-          {
-            step: 3,
-            para_ref: '[6.3]',
-            date: 'September 1854',
-            title: 'The Spot Map & The Brewery Anomaly',
-            actor: 'Dr John Snow & St James Parish Vestry',
-            tag: '🗺️ THE SPOT MAP',
-            trigger:
-              'Snow plotted 616 deaths on a street map, proving a heavy cluster around the pump, while 70 brewery workers drinking malt beer suffered zero deaths.',
-            connective:
-              'Convinced parish authorities on 8 September 1854 to remove the pump handle, causing the lethal local epidemic to collapse immediately.',
-            question:
-              'How did John Snow use scientific detective work and mapping to prove his case?',
-          },
-          {
-            step: 4,
-            para_ref: '[6.4]',
-            date: '1854–1855',
-            title: 'The Cesspool Revelation: Baby Lewis & The Well',
-            actor: 'Surveyor York, Baby Lewis & St James Vestry',
-            tag: '🕳️ LEAKING CESSPOOL',
-            trigger:
-              'Excavation of the Broad Street well revealed that at No. 40, a mother had washed the soiled diapers of her cholera-stricken infant (Baby Lewis) into a cracked cesspool.',
-            connective:
-              'Proved liquid sewage had seeped through two feet of porous soil directly into the pump water, providing undeniable mechanical proof of contamination.',
-            question: 'What microscopic contamination was finally discovered beneath the pump?',
-          },
-          {
-            step: 5,
-            para_ref: '[6.5]',
-            date: '1855–1884',
-            title: 'Robert Koch & The Triumph of Epidemiology',
-            actor: 'General Board of Health & Robert Koch',
-            tag: '🔬 BACTERIAL VINDICATION',
-            trigger:
-              'Though the Board of Health rejected Snow’s findings in 1855, German scientist Robert Koch isolated the Vibrio cholerae bacterium in 1884.',
-            connective:
-              'Vindicated Snow’s detective work posthumously, establishing modern epidemiology and cementing clean water as a non-negotiable human right.',
-            question: 'Why did medical authorities resist John Snow’s findings for decades?',
-          },
-        ],
-      },
-      workbook_stages: [
-        {
-          step: 1,
-          para_ref: '[6.1]',
-          paraRef: '[6.1]',
-          date: 'August 1854',
-          heading:
-            'How did the sudden cholera outbreak of August 1854 plunge Soho into catastrophe?',
-          questionHeading:
-            'How did the sudden cholera outbreak of August 1854 plunge Soho into catastrophe?',
-          bullets: [
-            'Broad Street Intersection',
-            '500 Fatalities in Ten Days',
-            'Medical Establishment Miasma Dogma',
-          ],
-          focus_clue:
-            'Why were doctors convinced that bad smells from unwashed gutters were causing the Soho outbreak?',
-          focusClue:
-            'Why were doctors convinced that bad smells from unwashed gutters were causing the Soho outbreak?',
-        },
-        {
-          step: 2,
-          para_ref: '[6.2]',
-          paraRef: '[6.2]',
-          date: 'September 1854',
-          heading: 'Why did Dr John Snow suspect water rather than foul air?',
-          questionHeading: 'Why did Dr John Snow suspect water rather than foul air?',
-          bullets: [
-            'Royal Anesthetist to Queen Victoria',
-            'Gut-First Symptoms Rather than Lungs',
-            'Drinking Supply Theory',
-          ],
-          focus_clue:
-            'Why did cholera symptoms affecting the digestive tract rather than lungs convince Snow that the poison was ingested?',
-          focusClue:
-            'Why did cholera symptoms affecting the digestive tract rather than lungs convince Snow that the poison was ingested?',
-        },
-        {
-          step: 3,
-          para_ref: '[6.3]',
-          paraRef: '[6.3]',
-          date: 'September 1854',
-          heading: 'How did John Snow use scientific detective work and mapping to prove his case?',
-          questionHeading:
-            'How did John Snow use scientific detective work and mapping to prove his case?',
-          bullets: [
-            '616 Cholera Death Bars Plotted',
-            'Brewery Workers Drinking Malt Beer',
-            'Removing the Broad Street Pump Handle',
-          ],
-          focus_clue:
-            'How did the 70 brewery workers who suffered zero cholera deaths provide the crucial negative proof Snow needed?',
-          focusClue:
-            'How did the 70 brewery workers who suffered zero cholera deaths provide the crucial negative proof Snow needed?',
-        },
-        {
-          step: 4,
-          para_ref: '[6.4]',
-          paraRef: '[6.4]',
-          date: '1854–1855',
-          heading: 'What microscopic contamination was finally discovered beneath the pump?',
-          questionHeading:
-            'What microscopic contamination was finally discovered beneath the pump?',
-          bullets: [
-            "Baby Lewis's Soiled Diaper",
-            'Cracked Brickwork in 40 Broad Street',
-            'Cesspool Sewage Leaking into Well',
-          ],
-          focus_clue:
-            'How did surveyor inspection prove that fecal matter was seeping directly through porous soil into drinking water?',
-          focusClue:
-            'How did surveyor inspection prove that fecal matter was seeping directly through porous soil into drinking water?',
-        },
-        {
-          step: 5,
-          para_ref: '[6.5]',
-          paraRef: '[6.5]',
-          date: '1855–1884',
-          heading: 'Why did medical authorities resist John Snow’s findings for decades?',
-          questionHeading: 'Why did medical authorities resist John Snow’s findings for decades?',
-          bullets: [
-            'General Board of Health Rejection',
-            'Robert Koch Isolates Vibrio Cholerae (1884)',
-            'Clean Water as a Human Right',
-          ],
-          focus_clue:
-            "Why did the Board of Health reject Snow's report in 1855, and what finally forced them to accept the truth?",
-          focusClue:
-            "Why did the Board of Health reject Snow's report in 1855, and what finally forced them to accept the truth?",
-        },
-      ],
-      did_you_know:
-        'When Dr John Snow investigated the 1854 Broad Street outbreak, he was baffled to discover that a wealthy widow named Susanna Eley died of cholera in healthy, elevated Hampstead—five miles away from Soho! Snow solved the mystery by interviewing her son: Mrs Eley liked the taste of Broad Street well water so much that she paid a carter to bring a large bottle up to Hampstead every single day!',
-      do_now: [
-        {
-          q: 'In what year did the Great Stink overwhelm the Houses of Parliament?',
-          a: '1858.',
-        },
-        {
-          q: 'Who engineered London’s 82-mile underground intercepting sewer network?',
-          a: 'Joseph Bazalgette.',
-        },
-        {
-          q: 'What 1848 reform created the first General Board of Health, though setting up local boards was voluntary?',
-          a: 'The Public Health Act 1848.',
-        },
-        {
-          q: 'Which local Hampshire pumping station was built in 1865 using steam beam engines?',
-          a: 'Eastney Beam Engine House.',
-        },
-        {
-          q: 'What medical theory, believed since ancient times, wrongly claimed that diseases were spread by foul smells and poisonous air?',
-          a: 'Miasma theory.',
-        },
-      ],
-      vocabulary: [
-        {
-          term: 'Epidemiology',
-          definition:
-            'The branch of medical science that investigates the distribution, incidence, causes, and control of disease in populations.',
-        },
-        {
-          term: 'Dr John Snow',
-          definition:
-            'The brilliant London physician and anesthetist who demonstrated through cartographic evidence that cholera was transmitted by drinking water.',
-        },
-        {
-          term: 'Broad Street Pump',
-          definition:
-            'The municipal water pump in Soho, London, identified by Dr John Snow as the central point source of the lethal 1854 cholera outbreak.',
-        },
-        {
-          term: 'Spot Map',
-          definition:
-            'A cartographic epidemiological technique where individual disease deaths are plotted as bars on a street plan to reveal geographic clusters.',
-        },
-        {
-          term: 'Brewery Anomaly',
-          definition:
-            'The crucial negative evidence in Snow’s investigation: 70 workers at the Lion Brewery on Broad Street drank only malt liquor and suffered zero deaths.',
-        },
-        {
-          term: 'Baby Lewis',
-          definition:
-            'The five-month-old infant at 40 Broad Street whose cholera-infected diapers were washed into a leaking cesspool, contaminating the pump well.',
-        },
-        {
-          term: 'Robert Koch',
-          definition:
-            'The pioneering German microbiologist who isolated the Vibrio cholerae bacterium under the microscope in 1884, confirming Snow’s theory.',
-        },
-        {
-          term: 'Point Source Epidemic',
-          definition:
-            'An outbreak where affected individuals are exposed to a single, common contaminated source, such as a polluted water well.',
-        },
-      ],
-      narrative_blocks: [
-        {
-          act: 1,
-          title: 'The Soho Cholera Outbreak & Miasma Dogma (1854)',
-          theme_heading: 'The Soho Cholera Outbreak & Miasma Dogma (1854)',
-          text: '<span class="para-ref">[6.1]</span> In late August 1854, a sudden cholera outbreak struck the crowded Soho district of central London. Within ten days, over five hundred people living near Broad Street died in agonizing pain. Soho was thrown into chaos as coffins lined the streets and terrified families fled the area.<br><br>The medical establishment blamed **miasma**—foul air rising from unwashed drains, cesspools, and rotting gutters. Doctors believed hot weather had caused a cloud of poisonous gas to settle over Soho. They told residents to shut their windows, light camphor lamps, and pour vinegar in the street. These measures achieved nothing because doctors looked at the air rather than the water.',
-          sources: [
-            {
-              id: 'water_l6_src_a',
-              letter: 'A',
-              type: 'visual',
-              src: '/images/john_snow_cholera_map.jpg',
-              image: '/images/john_snow_cholera_map.jpg',
-              title: "Source A: Dr John Snow's 1854 Cholera Spot Map of Soho (Broad Street Area)",
-              caption:
-                "Original lithographic spot map from Dr John Snow's 'On the Mode of Communication of Cholera' (1855), showing individual cholera deaths marked as black bars clustered around the Broad Street pump (Wellcome Collection 38485i).",
-              author: 'Dr John Snow, Pioneer Epidemiologist',
-              date: '1854–1855',
-              question_badge: 'EPIDEMIOLOGICAL CARTOGRAPHY & EVIDENCE',
-              question:
-                "What did Dr John Snow's spot map prove about the source of the 1854 cholera outbreak?",
-              model_answer:
-                "Snow's map shows dark bars representing cholera deaths heavily concentrated around the Broad Street public water pump, with deaths fading away further down other streets. This proved visually that the pump water was the central source of infection.",
-              context:
-                'In August–September 1854, over 600 people died of cholera in Soho within ten days. Snow investigated house by house, marking every death with a stacked black bar on a street map.',
-              hinge_question:
-                "How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
-              provenance_clues: {
-                author: 'Dr John Snow, investigating the Soho cholera epidemic.',
-                audience:
-                  'Medical profession, Epidemiological Society of London, and parliamentary sanitary authorities.',
-                motive:
-                  'Providing visual epidemiological proof that cholera was water-borne rather than airborne miasma.',
-                hinge_question:
-                  "How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
-              },
-              teacher_notes: {
-                hinge_question:
-                  "How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
-                source_context:
-                  "In August–September 1854, over 600 people died in Soho within ten days. **Hinge Question:** How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
-                provenance_breakdown: {
-                  author: 'Dr John Snow, investigating the Soho cholera epidemic.',
-                  audience:
-                    'Medical profession, Epidemiological Society of London, and parliamentary sanitary authorities.',
-                  motive:
-                    'Providing visual epidemiological proof that cholera was water-borne rather than airborne miasma.',
-                },
-              },
-              source_context:
-                "In August–September 1854, over 600 people died in Soho within ten days. **Hinge Question:** How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
-            },
-          ],
-          source: {
-            id: 'water_l6_src_a',
-            letter: 'A',
-            type: 'visual',
-            src: '/images/john_snow_cholera_map.jpg',
-            image: '/images/john_snow_cholera_map.jpg',
-            title: "Source A: Dr John Snow's 1854 Cholera Spot Map of Soho (Broad Street Area)",
-            caption:
-              "Original lithographic spot map from Dr John Snow's 'On the Mode of Communication of Cholera' (1855), showing individual cholera deaths marked as black bars clustered around the Broad Street pump (Wellcome Collection 38485i).",
-            author: 'Dr John Snow, Pioneer Epidemiologist',
-            date: '1854–1855',
-            question_badge: 'EPIDEMIOLOGICAL CARTOGRAPHY & EVIDENCE',
-            question:
-              "What did Dr John Snow's spot map prove about the source of the 1854 cholera outbreak?",
-            model_answer:
-              "Snow's map shows dark bars representing cholera deaths heavily concentrated around the Broad Street public water pump, with deaths fading away further down other streets. This proved visually that the pump water was the central source of infection.",
-            context:
-              'In August–September 1854, over 600 people died of cholera in Soho within ten days. Snow investigated house by house, marking every death with a stacked black bar on a street map.',
-            hinge_question:
-              "How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
-            provenance_clues: {
-              author: 'Dr John Snow, investigating the Soho cholera epidemic.',
-              audience:
-                'Medical profession, Epidemiological Society of London, and parliamentary sanitary authorities.',
-              motive:
-                'Providing visual epidemiological proof that cholera was water-borne rather than airborne miasma.',
-              hinge_question:
-                "How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
-            },
-            teacher_notes: {
-              hinge_question:
-                "How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
-              source_context:
-                "In August–September 1854, over 600 people died in Soho within ten days. **Hinge Question:** How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
-              provenance_breakdown: {
-                author: 'Dr John Snow, investigating the Soho cholera epidemic.',
-                audience:
-                  'Medical profession, Epidemiological Society of London, and parliamentary sanitary authorities.',
-                motive:
-                  'Providing visual epidemiological proof that cholera was water-borne rather than airborne miasma.',
-              },
-            },
-            source_context:
-              "In August–September 1854, over 600 people died in Soho within ten days. **Hinge Question:** How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
-          },
-        },
-        {
-          act: 2,
-          title: 'The Medical Detective: Dr John Snow at Broad Street',
-          theme_heading: 'The Medical Detective: Dr John Snow at Broad Street',
-          text: '<span class="para-ref">[6.2]</span> One London doctor rejected the miasma consensus: **Dr John Snow**, a leading physician who had administered chloroform to Queen Victoria in 1853. Snow used clinical logic: if cholera was inhaled from bad air, it would attack the lungs and throat. Instead, patients suffered violent vomiting and diarrhea, proving the disease attacked the digestive system and had to be swallowed in contaminated food or drinking water.<br><br>Snow investigated the popular public water pump at the corner of Broad Street and Cambridge Street. The pump drew water from an underground gravel well twenty-eight feet deep. Local residents praised its water as cold and sparkling, unaware it was fatally contaminated.',
-          sources: [
-            {
-              id: 'water_l6_src_b',
-              letter: 'B',
-              type: 'written',
-              src: '/images/snow_treatise_page_42_brewery.jpg',
-              image: '/images/snow_treatise_page_42_brewery.jpg',
-              title: "Source B: Dr John Snow's Case Study: The Lion Brewery Anomaly (1854)",
-              caption:
-                "Facsimile of page 42 from Snow's 1855 treatise detailing his on-site investigation of the Huggins Lion Brewery in Broad Street (Wellcome Collection).",
-              author: 'Dr John Snow, MD',
-              date: '1855',
-              content:
-                'There is a brewery in Broad Street, near to the pump, and on perceiving that no case of cholera had occurred there, I called on Mr. Huggins, the proprietor. He informed me that there were seventy workmen employed in the brewery, and that none of them had suffered from cholera... The men were allowed a certain quantity of malt liquor, and Mr. Huggins believes they never drank water from the pump at all; they had a deep well on the premises, in addition to the London water supply.',
-              question_badge: 'SCIENTIFIC ANOMALY & CONTROL GROUP',
-              question:
-                "Why was the Lion Brewery evidence vital to proving Snow's hypothesis about the Broad Street pump?",
-              model_answer:
-                "Snow showed that 70 men working right next to the pump never caught cholera because they drank only free beer and deep well water. This provided a natural scientific control group, proving that proximity to the smell didn't cause cholera, but drinking the pump water did.",
-              context:
-                'The brewery stood directly opposite the dying neighborhood in Broad Street, breathing the exact same air. Yet not one of the 70 workers contracted cholera because boiling water during brewing destroyed the cholera vibrio.',
-              hinge_question:
-                "Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
-              provenance_clues: {
-                author: 'Dr John Snow recording eyewitness interviews.',
-                audience:
-                  'Medical colleagues, parish vestrymen of St James, and sanitary commissioners.',
-                motive:
-                  'Explaining why a business surrounded by cholera deaths had zero casualties, proving water was the sole transmission route.',
-                hinge_question:
-                  "Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
-              },
-              teacher_notes: {
-                hinge_question:
-                  "Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
-                source_context:
-                  "The brewery stood directly opposite the dying neighborhood in Broad Street. **Hinge Question:** Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
-                provenance_breakdown: {
-                  author: 'Dr John Snow recording eyewitness interviews.',
-                  audience:
-                    'Medical colleagues, parish vestrymen of St James, and sanitary commissioners.',
-                  motive:
-                    'Explaining why a business surrounded by cholera deaths had zero casualties, proving water was the sole transmission route.',
-                },
-              },
-              source_context:
-                "The brewery stood directly opposite the dying neighborhood in Broad Street. **Hinge Question:** Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
-            },
-          ],
-          image: '/images/snow_mode_of_communication_title_1855.jpg',
-          image_alt:
-            "Title page of John Snow's 1855 treatise On the Mode of Communication of Cholera",
-          caption:
-            "Dr John Snow's Treatise (1855): The title page of his expanded study presenting forensic data from the Broad Street pump and the Southwark & Vauxhall water company investigation.",
-          isReversed: false,
-          source: {
-            id: 'water_l6_src_b',
-            letter: 'B',
-            type: 'written',
-            src: '/images/snow_treatise_page_42_brewery.jpg',
-            image: '/images/snow_treatise_page_42_brewery.jpg',
-            title: "Source B: Dr John Snow's Case Study: The Lion Brewery Anomaly (1854)",
-            caption:
-              "Facsimile of page 42 from Snow's 1855 treatise detailing his on-site investigation of the Huggins Lion Brewery in Broad Street (Wellcome Collection).",
-            author: 'Dr John Snow, MD',
-            date: '1855',
-            content:
-              'There is a brewery in Broad Street, near to the pump, and on perceiving that no case of cholera had occurred there, I called on Mr. Huggins, the proprietor. He informed me that there were seventy workmen employed in the brewery, and that none of them had suffered from cholera... The men were allowed a certain quantity of malt liquor, and Mr. Huggins believes they never drank water from the pump at all; they had a deep well on the premises, in addition to the London water supply.',
-            question_badge: 'SCIENTIFIC ANOMALY & CONTROL GROUP',
-            question:
-              "Why was the Lion Brewery evidence vital to proving Snow's hypothesis about the Broad Street pump?",
-            model_answer:
-              "Snow showed that 70 men working right next to the pump never caught cholera because they drank only free beer and deep well water. This provided a natural scientific control group, proving that proximity to the smell didn't cause cholera, but drinking the pump water did.",
-            context:
-              'The brewery stood directly opposite the dying neighborhood in Broad Street, breathing the exact same air. Yet not one of the 70 workers contracted cholera because boiling water during brewing destroyed the cholera vibrio.',
-            hinge_question:
-              "Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
-            provenance_clues: {
-              author: 'Dr John Snow recording eyewitness interviews.',
-              audience:
-                'Medical colleagues, parish vestrymen of St James, and sanitary commissioners.',
-              motive:
-                'Explaining why a business surrounded by cholera deaths had zero casualties, proving water was the sole transmission route.',
-              hinge_question:
-                "Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
-            },
-            teacher_notes: {
-              hinge_question:
-                "Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
-              source_context:
-                "The brewery stood directly opposite the dying neighborhood in Broad Street. **Hinge Question:** Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
-              provenance_breakdown: {
-                author: 'Dr John Snow recording eyewitness interviews.',
-                audience:
-                  'Medical colleagues, parish vestrymen of St James, and sanitary commissioners.',
-                motive:
-                  'Explaining why a business surrounded by cholera deaths had zero casualties, proving water was the sole transmission route.',
-              },
-            },
-            source_context:
-              "The brewery stood directly opposite the dying neighborhood in Broad Street. **Hinge Question:** Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
-          },
-        },
-        {
-          act: 3,
-          title: 'Spot Map Evidence & the Lion Brewery Anomaly (1854)',
-          theme_heading: 'Spot Map Evidence & the Lion Brewery Anomaly (1854)',
-          text: '<span class="para-ref">[6.3]</span> Snow created his famous **1854 Cholera Spot Map** (Source A) to prove his water theory. By plotting 616 cholera deaths as black bars outside each victim’s house, Snow revealed that deaths clustered directly around the Broad Street pump.<br><br>Crucially, Snow investigated anomalies. At the nearby Lion Brewery, seventy workers drank only free malt beer and suffered zero cholera deaths. In contrast, a widow living miles away in Hampstead died after having Broad Street water delivered to her in a bottle. On 7 September 1854, Snow convinced local parish officials to remove the handle from the Broad Street pump. The epidemic collapsed immediately, proving cholera was waterborne.',
-          source: {
-            id: 'water_l6_src_c',
-            letter: 'C',
-            type: 'visual',
-            src: '/images/snow_grand_experiment_table_1854.jpg',
-            image: '/images/snow_grand_experiment_table_1854.jpg',
-            title:
-              "Source C: Dr John Snow's 'Grand Experiment' Comparative Water Company Table (1854)",
-            caption:
-              'Original statistical data table comparing cholera mortality between customers of the Southwark & Vauxhall Company and the Lambeth Company in south London (Snow, 1855, p. 86).',
-            author: 'Dr John Snow',
-            date: '1854–1855',
-            question_badge: 'COMPARATIVE STATISTICAL EPIDEMIOLOGY',
-            question:
-              "What did Snow's comparison between the Southwark & Vauxhall and Lambeth water companies demonstrate?",
-            model_answer:
-              "Snow's table proved that households drinking Southwark & Vauxhall water (taken from sewage-polluted central London) suffered 315 deaths per 10,000 houses, while those drinking Lambeth water (pumped from upstream Thames) had only 37 deaths. It proved contaminated water caused disease.",
-            context:
-              'In 1852, the Lambeth Company moved its water intake 22 miles upstream past Teddington Lock, while Southwark & Vauxhall continued drawing water from the city centre. Two companies supplied houses on the exact same streets.',
-            hinge_question:
-              "Why did Snow describe this situation as an experiment 'on the grandest scale'?",
-            provenance_clues: {
-              author: 'Dr John Snow compiling Registrar-General death returns.',
-              audience: 'Epidemiological Society, Royal College of Physicians, and Parliament.',
-              motive:
-                'Demonstrating that water source alone explained the fourteen-fold difference in cholera mortality in identical streets.',
-              hinge_question:
-                "Why did Snow describe this situation as an experiment 'on the grandest scale'?",
-            },
-            teacher_notes: {
-              hinge_question:
-                "Why did Snow describe this situation as an experiment 'on the grandest scale'?",
-              source_context:
-                "In 1852, Lambeth moved its intake upstream while Southwark & Vauxhall did not. **Hinge Question:** Why did Snow describe this situation as an experiment 'on the grandest scale'?",
-              provenance_breakdown: {
-                author: 'Dr John Snow compiling Registrar-General death returns.',
-                audience: 'Epidemiological Society, Royal College of Physicians, and Parliament.',
-                motive:
-                  'Demonstrating that water source alone explained the fourteen-fold difference in cholera mortality in identical streets.',
-              },
-            },
-            source_context:
-              "In 1852, Lambeth moved its intake upstream while Southwark & Vauxhall did not. **Hinge Question:** Why did Snow describe this situation as an experiment 'on the grandest scale'?",
-          },
-          sources: [
-            {
-              id: 'water_l6_src_c',
-              letter: 'C',
-              type: 'visual',
-              src: '/images/snow_grand_experiment_table_1854.jpg',
-              image: '/images/snow_grand_experiment_table_1854.jpg',
-              title:
-                "Source C: Dr John Snow's 'Grand Experiment' Comparative Water Company Table (1854)",
-              caption:
-                'Original statistical data table comparing cholera mortality between customers of the Southwark & Vauxhall Company and the Lambeth Company in south London (Snow, 1855, p. 86).',
-              author: 'Dr John Snow',
-              date: '1854–1855',
-              question_badge: 'COMPARATIVE STATISTICAL EPIDEMIOLOGY',
-              question:
-                "What did Snow's comparison between the Southwark & Vauxhall and Lambeth water companies demonstrate?",
-              model_answer:
-                "Snow's table proved that households drinking Southwark & Vauxhall water (taken from sewage-polluted central London) suffered 315 deaths per 10,000 houses, while those drinking Lambeth water (pumped from upstream Thames) had only 37 deaths. It proved contaminated water caused disease.",
-              context:
-                'In 1852, the Lambeth Company moved its water intake 22 miles upstream past Teddington Lock, while Southwark & Vauxhall continued drawing water from the city centre. Two companies supplied houses on the exact same streets.',
-              hinge_question:
-                "Why did Snow describe this situation as an experiment 'on the grandest scale'?",
-              provenance_clues: {
-                author: 'Dr John Snow compiling Registrar-General death returns.',
-                audience: 'Epidemiological Society, Royal College of Physicians, and Parliament.',
-                motive:
-                  'Demonstrating that water source alone explained the fourteen-fold difference in cholera mortality in identical streets.',
-                hinge_question:
-                  "Why did Snow describe this situation as an experiment 'on the grandest scale'?",
-              },
-              teacher_notes: {
-                hinge_question:
-                  "Why did Snow describe this situation as an experiment 'on the grandest scale'?",
-                source_context:
-                  "In 1852, Lambeth moved its intake upstream while Southwark & Vauxhall did not. **Hinge Question:** Why did Snow describe this situation as an experiment 'on the grandest scale'?",
-                provenance_breakdown: {
-                  author: 'Dr John Snow compiling Registrar-General death returns.',
-                  audience: 'Epidemiological Society, Royal College of Physicians, and Parliament.',
-                  motive:
-                    'Demonstrating that water source alone explained the fourteen-fold difference in cholera mortality in identical streets.',
-                },
-              },
-              source_context:
-                "In 1852, Lambeth moved its intake upstream while Southwark & Vauxhall did not. **Hinge Question:** Why did Snow describe this situation as an experiment 'on the grandest scale'?",
-            },
-          ],
-        },
-        {
-          act: 4,
-          title: 'The Cesspool Revelation: 40 Broad Street & the Leaking Well',
-          theme_heading: 'The Cesspool Revelation: 40 Broad Street & the Leaking Well',
-          text: '<span class="para-ref">[6.4]</span> Snow then proved how the water became poisoned. Working with Reverend Henry Whitehead, Snow traced the outbreak to its first case: five-month-old **Baby Lewis** at 40 Broad Street. His mother had washed his cholera-infected diapers and emptied the water into a basement cesspool.<br><br>When surveyor Peter York excavated the site, he found that the brick lining of the cesspool was cracked. Liquid sewage had seeped through less than three feet of soil directly into the fractured stone wall of the Broad Street drinking well. Contaminated sewage filled with cholera bacteria was being pumped directly into residents\' drinking cups.',
-          source: {
-            id: 'water_l6_src_d',
-            letter: 'D',
-            type: 'visual',
-            src: '/images/pasteur_swan_neck.jpg',
-            image: '/images/pasteur_swan_neck.jpg',
-            title: "Source D: Louis Pasteur's Swan-Neck Flask Microbiology Experiment (1861)",
-            caption:
-              "Diagrammatic illustration of Louis Pasteur's swan-necked glass flask experiments presented to the French Academy of Sciences, demonstrating that airborne microbes cause decomposition (Institut Pasteur / Wellcome Collection).",
-            author: 'Louis Pasteur, French Chemist & Microbiologist',
-            date: '1861',
-            question_badge: 'EXPERIMENTAL MICROBIOLOGY & GERM THEORY',
-            question:
-              "How did Pasteur's swan-neck flask experiment disprove the old belief in 'spontaneous generation'?",
-            model_answer:
-              'Pasteur boiled broth in a glass flask with a curved S-shaped neck; air entered freely, but gravity trapped airborne dust and microbes in the bend, leaving the liquid sterile for months. It proved living germs come from the air, not generated out of thin air.',
-            context:
-              'For centuries, natural philosophers believed living organisms spontaneously appeared from rotting matter. Pasteur proved that unboiled air carried living microorganisms that caused decay and disease.',
-            hinge_question:
-              'How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
-            provenance_clues: {
-              author: 'Louis Pasteur presenting experimental evidence.',
-              audience: 'French Academy of Sciences and international scientific community.',
-              motive:
-                'Disproving spontaneous generation and establishing Germ Theory as the scientific basis of fermentation and disease.',
-              hinge_question:
-                'How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
-              source_context:
-                'For centuries, natural philosophers believed living organisms spontaneously appeared from rotting matter. **Hinge Question:** How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
-              provenance_breakdown: {
-                author: 'Louis Pasteur presenting experimental evidence.',
-                audience: 'French Academy of Sciences and international scientific community.',
-                motive:
-                  'Disproving spontaneous generation and establishing Germ Theory as the scientific basis of fermentation and disease.',
-              },
-            },
-            source_context:
-              'For centuries, natural philosophers believed living organisms spontaneously appeared from rotting matter. **Hinge Question:** How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
-          },
-          sources: [
-            {
-              id: 'water_l6_src_d',
-              letter: 'D',
-              type: 'visual',
-              src: '/images/pasteur_swan_neck.jpg',
-              image: '/images/pasteur_swan_neck.jpg',
-              title: "Source D: Louis Pasteur's Swan-Neck Flask Microbiology Experiment (1861)",
-              caption:
-                "Diagrammatic illustration of Louis Pasteur's swan-necked glass flask experiments presented to the French Academy of Sciences, demonstrating that airborne microbes cause decomposition (Institut Pasteur / Wellcome Collection).",
-              author: 'Louis Pasteur, French Chemist & Microbiologist',
-              date: '1861',
-              question_badge: 'EXPERIMENTAL MICROBIOLOGY & GERM THEORY',
-              question:
-                "How did Pasteur's swan-neck flask experiment disprove the old belief in 'spontaneous generation'?",
-              model_answer:
-                'Pasteur boiled broth in a glass flask with a curved S-shaped neck; air entered freely, but gravity trapped airborne dust and microbes in the bend, leaving the liquid sterile for months. It proved living germs come from the air, not generated out of thin air.',
-              context:
-                'For centuries, natural philosophers believed living organisms spontaneously appeared from rotting matter. Pasteur proved that unboiled air carried living microorganisms that caused decay and disease.',
-              hinge_question:
-                'How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
-              provenance_clues: {
-                author: 'Louis Pasteur presenting experimental evidence.',
-                audience: 'French Academy of Sciences and international scientific community.',
-                motive:
-                  'Disproving spontaneous generation and establishing Germ Theory as the scientific basis of fermentation and disease.',
-                hinge_question:
-                  'How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
-                source_context:
-                  'For centuries, natural philosophers believed living organisms spontaneously appeared from rotting matter. **Hinge Question:** How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
-                provenance_breakdown: {
-                  author: 'Louis Pasteur presenting experimental evidence.',
-                  audience: 'French Academy of Sciences and international scientific community.',
-                  motive:
-                    'Disproving spontaneous generation and establishing Germ Theory as the scientific basis of fermentation and disease.',
-                },
-              },
-              source_context:
-                'For centuries, natural philosophers believed living organisms spontaneously appeared from rotting matter. **Hinge Question:** How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
-            },
-          ],
-        },
-        {
-          act: 5,
-          title: 'Medical Dogma Overturned: Germ Theory & Robert Koch (1884)',
-          theme_heading: 'Medical Dogma Overturned: Germ Theory & Robert Koch (1884)',
-          text: '<span class="para-ref">[6.5]</span> Despite Snow’s proof, the General Board of Health rejected his findings in 1855, stubbornly clinging to miasma theory because Snow could not show bacteria under a microscope. Snow tragically died of a stroke in 1858, aged forty-five, before his genius was officially recognized.<br><br>Snow was fully vindicated thirty years later. In 1884, German scientist **Robert Koch** isolated the *Vibrio cholerae* bacterium under the microscope, proving cholera was spread through sewage-tainted water. Today, Dr John Snow is celebrated as the father of modern epidemiology, proving that clean water is a non-negotiable human right.',
-          sources: [
-            {
-              id: 'water_l6_src_e',
-              letter: 'E',
-              type: 'visual',
-              src: '/images/koch_bacteria.jpg',
-              image: '/images/koch_bacteria.jpg',
-              title:
-                "Source E: Robert Koch's Microphotograph of the Cholera Bacterium (Vibrio cholerae, 1884)",
-              caption:
-                'High-magnification laboratory microphotograph prepared by Dr Robert Koch during the German Cholera Commission expedition to Egypt and India, showing stained comma-shaped Vibrio cholerae bacteria (Imperial Health Office Berlin / Wellcome Collection).',
-              author: 'Dr Robert Koch, Pioneer German Bacteriologist',
-              date: '1884',
-              question_badge: 'BACTERIOLOGICAL DISCOVERY & VISUAL PROOF',
-              question:
-                "Why was Robert Koch's identification of the cholera microbe in 1884 the ultimate victory for Snow's theory?",
-              model_answer:
-                'Koch used chemical aniline dyes and high-power photography to isolate and photograph the comma-shaped Vibrio cholerae bacterium in contaminated Egyptian and Indian water supplies. It provided physical visual proof of the exact germ Snow had predicted 30 years earlier.',
-              context:
-                'Koch led a medical expedition to Alexandria and Calcutta, identifying the specific comma-shaped bacterium that lived in human intestines and multiplied in contaminated water supplies.',
-              hinge_question:
-                "Why did British medical officials in India resist Koch's discovery for years after 1884?",
-              provenance_clues: {
-                author: 'Dr Robert Koch, Imperial Health Office, Berlin.',
-                audience: 'International medical congresses and public health authorities.',
-                motive:
-                  'Isolating the specific microbiological pathogen responsible for cholera epidemics.',
-                hinge_question:
-                  "Why did British medical officials in India resist Koch's discovery for years after 1884?",
-              },
-              teacher_notes: {
-                hinge_question:
-                  "Why did British medical officials in India resist Koch's discovery for years after 1884?",
-                source_context:
-                  "Koch led a medical expedition to Alexandria and Calcutta. **Hinge Question:** Why did British medical officials in India resist Koch's discovery for years after 1884?",
-                provenance_breakdown: {
-                  author: 'Dr Robert Koch, Imperial Health Office, Berlin.',
-                  audience: 'International medical congresses and public health authorities.',
-                  motive:
-                    'Isolating the specific microbiological pathogen responsible for cholera epidemics.',
-                },
-              },
-              source_context:
-                "Koch led a medical expedition to Alexandria and Calcutta. **Hinge Question:** Why did British medical officials in India resist Koch's discovery for years after 1884?",
-            },
-          ],
-          image: '/images/robert_koch_laboratory.jpg',
-          image_alt:
-            'Dr Robert Koch working in his bacteriological laboratory with microscope and cultures',
-          caption:
-            'Bacteriological Revolution: Dr Robert Koch at work in his Berlin laboratory, where he perfected solid agar culture mediums and discovered the cholera bacterium Vibrio cholerae in 1884.',
-          isReversed: true,
-          source: {
-            id: 'water_l6_src_e',
-            letter: 'E',
-            type: 'visual',
-            src: '/images/koch_bacteria.jpg',
-            image: '/images/koch_bacteria.jpg',
-            title:
-              "Source E: Robert Koch's Microphotograph of the Cholera Bacterium (Vibrio cholerae, 1884)",
-            caption:
-              'High-magnification laboratory microphotograph prepared by Dr Robert Koch during the German Cholera Commission expedition to Egypt and India, showing stained comma-shaped Vibrio cholerae bacteria (Imperial Health Office Berlin / Wellcome Collection).',
-            author: 'Dr Robert Koch, Pioneer German Bacteriologist',
-            date: '1884',
-            question_badge: 'BACTERIOLOGICAL DISCOVERY & VISUAL PROOF',
-            question:
-              "Why was Robert Koch's identification of the cholera microbe in 1884 the ultimate victory for Snow's theory?",
-            model_answer:
-              'Koch used chemical aniline dyes and high-power photography to isolate and photograph the comma-shaped Vibrio cholerae bacterium in contaminated Egyptian and Indian water supplies. It provided physical visual proof of the exact germ Snow had predicted 30 years earlier.',
-            context:
-              'Koch led a medical expedition to Alexandria and Calcutta, identifying the specific comma-shaped bacterium that lived in human intestines and multiplied in contaminated water supplies.',
-            hinge_question:
-              "Why did British medical officials in India resist Koch's discovery for years after 1884?",
-            provenance_clues: {
-              author: 'Dr Robert Koch, Imperial Health Office, Berlin.',
-              audience: 'International medical congresses and public health authorities.',
-              motive:
-                'Isolating the specific microbiological pathogen responsible for cholera epidemics.',
-              hinge_question:
-                "Why did British medical officials in India resist Koch's discovery for years after 1884?",
-            },
-            teacher_notes: {
-              hinge_question:
-                "Why did British medical officials in India resist Koch's discovery for years after 1884?",
-              source_context:
-                "Koch led a medical expedition to Alexandria and Calcutta. **Hinge Question:** Why did British medical officials in India resist Koch's discovery for years after 1884?",
-              provenance_breakdown: {
-                author: 'Dr Robert Koch, Imperial Health Office, Berlin.',
-                audience: 'International medical congresses and public health authorities.',
-                motive:
-                  'Isolating the specific microbiological pathogen responsible for cholera epidemics.',
-              },
-            },
-            source_context:
-              "Koch led a medical expedition to Alexandria and Calcutta. **Hinge Question:** Why did British medical officials in India resist Koch's discovery for years after 1884?",
-          },
-        },
-      ],
-      tasks: [
-        {
-          id: 'ws_l6_q5_disciplinary_evaluation',
-          type: 'extended_writing',
-          topic: 'Question 5: Disciplinary Evaluation [12 marks • 15 mins]',
-          title: 'Question 5: Disciplinary Evaluation [12 marks • 15 mins]',
-          question:
-            'Explain why Dr John Snow’s investigation of the 1854 Broad Street cholera epidemic was a decisive turning point in medicine. [12 marks]',
-          stimulus: [
-            'The cartographic and geographical evidence of the 1854 Cholera Spot Map',
-            'The persistence of miasma theory and delayed acceptance by the Board of Health',
-          ],
-          scaffolding: {
-            guidance:
-              'Write a structured 3-paragraph PEEL response. Use the exact words from the question stem in your Point and in your Link for every paragraph.',
-            structure_strip: [
-              {
-                col: '1. SCIENTIFIC METHODOLOGY & MAPPING',
-                prompt:
-                  'Explain how Snow used clinical logic, the 1854 Spot Map, the brewery anomaly, and removing the pump handle to pioneer modern epidemiology [6.2, 6.3].',
-                starter:
-                  'A decisive reason explaining why Dr John Snow’s investigation was a major turning point was his revolutionary use of scientific detective work and mapping...',
-              },
-              {
-                col: '2. DISPROVING MIASMA & REVEALING SEWAGE',
-                prompt:
-                  'Explain how uncovering Baby Lewis’s diaper and the leaking cesspool at No. 40 proved that water-borne bacteria, not bad air, caused cholera [6.4].',
-                starter:
-                  'Furthermore, Snow’s investigation was a decisive turning point because it provided physical proof that cholera was caused by sewage-tainted water rather than miasma...',
-              },
-              {
-                col: '3. COMPARATIVE VERDICT & LONG-TERM IMPACT',
-                prompt:
-                  'Weigh the immediate rejection by the Board of Health against the ultimate vindication by Robert Koch in 1884 [6.5].',
-                starter:
-                  'Ultimately, while the Board of Health initially resisted his findings, Snow’s work was a profound turning point because it established modern epidemiology...',
-              },
-            ],
-          },
-          hints: [
-            'Point: State your factor clearly using the exact words from the question stem.',
-            'Evidence: Deploy specific historical details: Broad Street pump, 1854 Spot Map (616 deaths), Lion Brewery (70 workers unharmed), Susanna Eley (Hampstead), Baby Lewis, Peter York’s excavation, and Robert Koch (1884) [6.2–6.5].',
-            'Explanation: Connect the factors causally: show how Snow’s methodology proved water transmission decades before bacteria could be isolated under microscopes [6.3, 6.5].',
-            'Link: Conclude with a sustained comparative judgment: evaluate the immediate short-term impact in Soho versus long-term global significance [6.5].',
-          ],
-          model_answer:
-            'A decisive reason explaining why Dr John Snow’s investigation was a major turning point in medicine was his revolutionary use of scientific detective work, clinical logic, and geographical mapping to pioneer the discipline of epidemiology. While the medical establishment insisted that the sudden August 1854 Soho outbreak was caused by foul sewer gases, Snow deduced that because cholera caused sudden vomiting and violent diarrhea rather than respiratory failure, the poison had to be ingested through water. Snow substantiated this hypothesis by creating his famous 1854 Cholera Spot Map, plotting all 616 deaths as black bars stacked outside houses around the Broad Street pump. Furthermore, Snow tested his theory by investigating anomalies: he proved that seventy workers at the local Lion Brewery suffered zero fatalities because they drank free malt liquor instead of water, while a widow in distant Hampstead (Susanna Eley) died after having Broad Street water delivered to her home. By persuading the St James parish vestry to remove the pump handle on 8 September 1854, Snow caused the epidemic to collapse, demonstrating for the first time that spatial data could identify and halt an infectious disease.<br><br>Furthermore, Snow’s investigation was a decisive turning point because it uncovered the physical mechanism of water-borne contamination, striking a fatal blow against the ancient doctrine of miasma. In collaboration with Reverend Henry Whitehead, Snow traced the outbreak back to its index case: five-month-old Baby Lewis at No. 40 Broad Street. His mother had washed his cholera-stained diapers in warm water and dumped the waste into a basement cesspool. When surveyor Peter York excavated the ground beneath the street, he discovered that the brick lining of the cesspool was cracked, allowing liquid sewage to seep through two feet and eight inches of porous gravel directly into the drinking water well of the pump. This forensic excavation provided undeniable physical proof that cholera was transmitted by human waste contaminating drinking water, paving the way for the biological revolution of Germ Theory.<br><br>Ultimately, while the General Board of Health stubbornly rejected Snow’s findings in 1855 due to entrenched miasma dogma, Snow’s work was a decisive turning point because it laid the empirical foundation for modern public health. Although Snow died tragically in 1858 before achieving full recognition, his hypothesis was conclusively validated in 1884 when German microbiologist Robert Koch isolated the comma-shaped Vibrio cholerae bacterium under the microscope. Snow’s investigation proved that municipal authorities had to separate drinking water from human sewage, directly inspiring the compulsory regulations of the 1875 Public Health Act. Therefore, Dr John Snow’s investigation transformed medicine by replacing centuries of superstitious miasma theory with rigorous scientific epidemiology, establishing clean water as a non-negotiable human right.',
-        },
-      ],
-      teacher_notes: {
-        primer:
-          'This final enquiry celebrates the birth of modern epidemiology. Guide Year 7 pupils to trace Snow’s detective process: from symptom observation (gut vs lungs) to cartographic data (the spot map) and anomaly verification (the brewery workers and the Hampstead widow).',
-        objectives: [
-          {
-            objective:
-              'Explain how Dr John Snow used scientific detective work and his 1854 spot map to locate the source of cholera.',
-            primer:
-              'Focus on paragraphs [6.2] and [6.3]. Emphasise the Lion Brewery anomaly and Susanna Eley in Hampstead.',
-            question:
-              'Hinge Question: Why was the survival of seventy brewery workers drinking malt beer the most convincing proof of Snow’s water-borne theory?',
+              'Why was the survival of the Lion Brewery workers the most critical piece of evidence in Snow’s investigation?',
           },
           {
             objective:
-              'Assess why medical authorities resisted Snow’s findings, and how Germ Theory finally vindicated him.',
+              'Describe how the cesspool at 40 Broad Street contaminated the pump well and why removing the handle was significant.',
             primer:
-              'Examine paragraphs [6.4] and [6.5]. Highlight Baby Lewis’s diaper, Board of Health scepticism, and Robert Koch (1884).',
+              'Review block [5.3] and discuss Rev. Whitehead’s discovery of the leaking cesspool and Frances Lewis’s nappy wash water.',
             question:
-              'Hinge Question: Why did the General Board of Health reject Snow’s report in 1855, and what finally forced them to accept the truth?',
-          },
-        ],
-        source_context: [
-          {
-            source: 'Source A (John Snow’s Spot Map)',
-            context:
-              'Dr John Snow’s 1854 spot map plotting cholera deaths around the Broad Street pump. Hinge Question: Does Snow’s map prove that water was the cause of cholera, or did it merely show correlation that miasma believers could explain away?',
+              'How did physical excavation prove the exact mechanism of contamination between the cesspool and the public well?',
           },
           {
-            source: 'Source B (Brewery & Susanna Eley)',
-            context:
-              "Case studies of Lion Brewery workers (zero deaths) and Susanna Eley in Hampstead (died after drinking bottled Soho water). Hinge Question: Why was the death of Susanna Eley in healthy, elevated Hampstead the definitive piece of evidence confirming Snow's theory?",
+            objective:
+              'Evaluate the contributions of Louis Pasteur and Robert Koch in overthrowing spontaneous generation and proving Germ Theory.',
+            primer:
+              'Connect Pasteur’s swan-neck flasks in Source C with Koch’s microphotograph in Source D to demonstrate laboratory validation.',
+            question:
+              'Why did the medical establishment take nearly thirty years after Snow’s death to fully accept that cholera was waterborne?',
+          },
+          {
+            objective:
+              'Assess why the Public Health Act of 1875 was a watershed moment in the development of the British welfare state.',
+            primer:
+              'Read Source E and emphasize the word "shall" versus "may," contrasting the compulsory 1875 Act with the failed permissive 1848 Act.',
+            question:
+              'What made the Public Health Act of 1875 fundamentally more effective than any previous sanitary legislation?',
           },
         ],
+        source_context: {
+          water_l5_src_a:
+            'Snow’s Soho spot map provides spatial proof of waterborne disease. Hinge Question: How does this map demonstrate the power of epidemiological data over medical dogma?',
+          water_l5_src_b:
+            'Snow’s Lion Brewery case study exemplifies negative correlation in scientific inquiry. Hinge Question: Why was an anomaly where people DID NOT get sick more informative than where they did?',
+          water_l5_src_c:
+            'Pasteur’s swan-neck flask experiment overthrew spontaneous generation. Hinge Question: How did trapping atmospheric dust in curved glass prove that germs were external biological invaders?',
+          water_l5_src_d:
+            'Koch’s 1884 microphotograph isolated Vibrio cholerae. Hinge Question: Why was visual proof under the microscope necessary to finally bury miasma theory?',
+          water_l5_src_e:
+            "The Public Health Act 1875 codified compulsory municipal public health. Hinge Question: Why did the word 'shall' represent the death knell of Victorian laissez-faire?",
+        },
       },
-      video: [
-        {
-          id: 'VJ86D_DtyWg',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=VJ86D_DtyWg',
-          title: 'The 1850s Map That Changed How We Fight Outbreaks | Vox',
-          duration: '5 mins 12 secs',
-          pathway: 'Starter Hook',
-          teacher_guidance:
-            "Recommended Watch Window: 00:00–05:12 | Lesson Phase: Lesson Hook | Tone Alert: Visually stunning spatial data visualization exploring Dr John Snow's 'Ghost Map'.",
-          viewing_task:
-            "[01:15] Quick Check: What neighborhood in Soho, London, suffered a devastating cholera outbreak killing 616 people in September 1854?\n[03:30] Hinge Question: How did Dr John Snow's revolutionary spatial map prove that cholera was transmitted through drinking water rather than miasma?",
-          model_answer:
-            'Quick Check: Broad Street (modern-day Broadwick Street) in Soho.\nHinge Question: Snow marked every cholera death with a black bar on a street map, showing that deaths clustered tightly around the Broad Street water pump; nearby workers at the brewery who drank only beer were completely unaffected.',
-        },
-        {
-          id: 'lNjrAXGRda4',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=lNjrAXGRda4',
-          title: 'John Snow and the 1854 Broad Street Cholera Outbreak | Harvard Online',
-          duration: '4 mins 45 secs',
-          pathway: 'Core Enquiry',
-          teacher_guidance:
-            "Recommended Watch Window: 00:20–04:20 | Lesson Phase: Epidemiological Breakthrough | Tone Alert: Harvard public health lecture exploring the source: an infant's dirty diaper leaking into the well.",
-          viewing_task:
-            "[01:00] Recall: What action did Dr John Snow persuade the local St James Parish board of guardians to take on 8 September 1854?\n[02:30] Explain: How did Reverend Whitehead uncover the origin of the outbreak (a cracked cesspool at 40 Broad Street where a sick infant's diaper water seeped into the well)?\n[04:00] Challenge: Why did the Board of Health reject Snow's waterborne theory in their official 1855 report despite overwhelming statistical evidence?",
-          model_answer:
-            "Recall: He persuaded them to remove the wooden handle of the Broad Street water pump, cutting off access to the contaminated water.\nExplain: Whitehead interviewed residents and discovered that a mother washed soiled diapers into a leaky brick cesspool situated just three feet from the pump well.\nChallenge: Chief medical officer Sir John Simon and Edwin Chadwick were dogmatic miasmatists; accepting Snow's waterborne theory meant admitting that spending millions flushing sewers into the Thames had actually worsened cholera epidemics.",
-        },
-        {
-          id: 'Ftkmhs8BEms',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=Ftkmhs8BEms',
-          title: 'The Painted Veil (2006) | Official Movie Trailer (Edward Norton / Naomi Watts)',
-          duration: '2 mins 25 secs',
-          pathway: 'Cinematic',
-          teacher_guidance:
-            'Recommended Watch Window: 00:00–02:25 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Acclaimed period drama depicting an epidemiological bacteriologist fighting a cholera epidemic.',
-          viewing_task:
-            "[01:15] Cinematic Discussion Focus: How does the film depict the bacteriologist's scientific struggle to enforce quarantine, boil drinking water, and bury corpses to halt a lethal cholera epidemic?",
-          model_answer:
-            "Cinematic Discussion Focus: The trailer dramatises the desperate race between scientific epidemiology and cholera: Edward Norton's character fights to purify the water supply and prevent contaminated irrigation, demonstrating how clean water engineering is the true cure for waterborne disease.",
-        },
-        {
-          id: 'TLpzHHbFrHY',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=TLpzHHbFrHY',
-          title: 'England: The Broad Street Pump | Extra History (Part 1)',
-          duration: '10 mins 15 secs',
-          pathway: 'Documentary Depth',
-          teacher_guidance:
-            "Recommended Watch Window: 01:00–09:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Compelling animated deep dive into Dr John Snow's life and the birth of modern epidemiology.",
-          viewing_task:
-            "[02:30] Recall: How did Snow's earlier work as an anaesthetist studying respiratory gases (chloroform for Queen Victoria) lead him to doubt that cholera was inhaled as miasma?\n[05:45] Explain: What was Snow's 'Grand Experiment' comparing Southwark & Vauxhall water company (intake downstream of sewage) with Lambeth water company (intake upstream)?\n[08:50] Challenge: How did the combination of John Snow's epidemiology and Robert Koch's 1883 microscopic isolation of the Vibrio cholerae bacterium finally conquer cholera globally?",
-          model_answer:
-            'Recall: Snow reasoned that if poison was inhaled into the lungs, initial symptoms would be respiratory; cholera symptoms were purely gastrointestinal (vomiting and diarrhoea), proving the poison must be swallowed.\nExplain: Customers living on the same streets with identical air had radically different mortality rates: households drinking sewage-polluted water died at 8 times the rate of those drinking clean upstream water.\nChallenge: Snow provided epidemiological proof that water carried the pathogen, and Koch provided microscopic proof of the specific comma-shaped bacterium, giving municipal governments the scientific certainty needed to mandate universal water filtration.',
-        },
-      ],
       quick_quiz: [
         {
           question:
@@ -8501,179 +5829,338 @@ const water_and_sanitation_data = {
           answer: 'Modern epidemiology (tracking disease patterns)',
         },
       ],
-      quiz: [
+      flashcards: [],
+      workbook_stages: [
         {
-          question:
-            'In what central London neighborhood did a devastating cholera epidemic break out in August 1854?',
-          options: ['Whitechapel', 'Westminster', 'Soho', 'Kensington'],
-          answer: 'Soho',
-        },
-        {
-          question: 'How many people died in Soho within ten days near Broad Street in 1854?',
-          options: ['Ten people', '50,000 people', 'Nobody died', 'Over 500 people'],
-          answer: 'Over 500 people',
-        },
-        {
-          question:
-            'What did the medical establishment and Board of Health blame for the 1854 Soho outbreak?',
-          options: [
-            'Contaminated water',
-            'Foul miasma (poisonous sewer gas)',
-            'Poisoned bread',
-            'Alien invasion',
+          step: 1,
+          para_ref: '[5.1]',
+          paraRef: '[5.1]',
+          date: '1854',
+          heading:
+            'Why did the medical establishment refuse to consider water as the cause of the 1854 Soho outbreak?',
+          questionHeading:
+            'Why did the medical establishment refuse to consider water as the cause of the 1854 Soho outbreak?',
+          bullets: [
+            'Soho Broad Street Epicentre',
+            'Over 500 Deaths in Ten Days',
+            'Entrenched Miasma Medical Dogma',
           ],
-          answer: 'Foul miasma (poisonous sewer gas)',
+          focus_clue:
+            'Why did health authorities burn pitch barrels in the street instead of investigating municipal drinking pumps?',
+          focusClue:
+            'Why did health authorities burn pitch barrels in the street instead of investigating municipal drinking pumps?',
         },
         {
-          question: 'What was Dr John Snow’s medical specialty before investigating cholera?',
-          options: [
-            'Anesthetist (administering chloroform)',
-            'Eye doctor',
-            'Dentist',
-            'Brain surgeon',
+          step: 2,
+          para_ref: '[5.2]',
+          paraRef: '[5.2]',
+          date: 'September 1854',
+          heading:
+            'How did Dr John Snow use cartographic mapping and anomalous data to prove cholera was waterborne?',
+          questionHeading:
+            'How did Dr John Snow use cartographic mapping and anomalous data to prove cholera was waterborne?',
+          bullets: [
+            'Empirical Cholera Spot Map',
+            'Broad Street Pump Clustering',
+            'Lion Brewery Zero Fatalities',
           ],
-          answer: 'Anesthetist (administering chloroform)',
+          focus_clue:
+            'Why was the total survival of 70 workers drinking beer at the Lion Brewery decisive evidence?',
+          focusClue:
+            'Why was the total survival of 70 workers drinking beer at the Lion Brewery decisive evidence?',
         },
         {
-          question:
-            'What famous monarch did Dr John Snow administer chloroform to during childbirth in 1853?',
-          options: ['Queen Elizabeth I', 'Queen Anne', 'Queen Victoria', 'Queen Mary'],
-          answer: 'Queen Victoria',
-        },
-        {
-          question:
-            'Why did John Snow believe cholera was swallowed in water rather than inhaled from air?',
-          options: [
-            'He had a microscope showing bacteria',
-            'He saw cholera in the clouds',
-            'A fortune teller told him',
-            'Symptoms attacked the digestive tract and stomach first, not the lungs',
+          step: 3,
+          para_ref: '[5.3]',
+          paraRef: '[5.3]',
+          date: '1854–1855',
+          heading:
+            'What physical evidence finally proved how the Broad Street pump well had become contaminated?',
+          questionHeading:
+            'What physical evidence finally proved how the Broad Street pump well had become contaminated?',
+          bullets: [
+            'Removed Broad Street Pump Handle',
+            'Infant Frances Lewis at No. 40',
+            'Fractured Brickwork & Leaking Cesspool',
           ],
-          answer: 'Symptoms attacked the digestive tract and stomach first, not the lungs',
+          focus_clue:
+            'How did excavating the fractured cesspool at 40 Broad Street prove sewage seeped into the pump well?',
+          focusClue:
+            'How did excavating the fractured cesspool at 40 Broad Street prove sewage seeped into the pump well?',
         },
         {
-          question: 'What street was the contaminated municipal water pump located on in Soho?',
-          options: ['Oxford Street', 'Broad Street', 'Baker Street', 'Fleet Street'],
-          answer: 'Broad Street',
-        },
-        {
-          question: 'Why did local residents love the water from the Broad Street pump?',
-          options: [
-            'It was cold, sparkling, and tasted fresh compared to river water',
-            'It was flavored with lemon',
-            'It was boiling hot',
-            'It was free beer',
+          step: 4,
+          para_ref: '[5.4]',
+          paraRef: '[5.4]',
+          date: '1861–1884',
+          heading:
+            'Why was laboratory bacteriological proof necessary to finally overthrow the ancient miasma theory?',
+          questionHeading:
+            'Why was laboratory bacteriological proof necessary to finally overthrow the ancient miasma theory?',
+          bullets: [
+            "Pasteur's Swan-Neck Flask Experiments",
+            'Germ Theory of Disease 1861',
+            'Koch Isolates Vibrio Cholerae 1884',
           ],
-          answer: 'It was cold, sparkling, and tasted fresh compared to river water',
+          focus_clue:
+            'How did Pasteur disproving spontaneous generation provide scientific foundation for Koch’s discovery?',
+          focusClue:
+            'How did Pasteur disproving spontaneous generation provide scientific foundation for Koch’s discovery?',
         },
         {
-          question:
-            'What famous visual tool did John Snow create to prove cholera clustered around the pump?',
-          options: [
-            'The 1854 Cholera Spot Map',
-            'A pie chart',
-            'A bronze statue',
-            'A painted oil portrait',
+          step: 5,
+          para_ref: '[5.5]',
+          paraRef: '[5.5]',
+          date: '1875',
+          heading:
+            'Why did the compulsory nature of the 1875 Public Health Act mark the definitive end of laissez-faire in Britain?',
+          questionHeading:
+            'Why did the compulsory nature of the 1875 Public Health Act mark the definitive end of laissez-faire in Britain?',
+          bullets: [
+            'Public Health Act 1875',
+            'Compulsory Municipal Officers & Water',
+            'End of Laissez-Faire Ideology',
           ],
-          answer: 'The 1854 Cholera Spot Map',
+          focus_clue:
+            'Why was the legal mandate of "shall" rather than "may" the ultimate triumph of 19th-century public health?',
+          focusClue:
+            'Why was the legal mandate of "shall" rather than "may" the ultimate triumph of 19th-century public health?',
+        },
+      ],
+    },
+    {
+      id: 'lesson_6',
+      alias_ids: ['lesson_7'],
+      title: 'November Assessment Masterclass: Rapid Progress in Public Health (1800–1900)',
+      short_title: 'November Assessment Masterclass',
+      period: '1800–1900',
+      enquiry:
+        'Why was there rapid progress in Public Health between 1800 and 1900? [12 marks • 30 mins]',
+      subtitle:
+        'Step-by-step PEEL Planning & Revision Workshop: John Snow, Joseph Bazalgette, Louis Pasteur, and the 1875 Public Health Act',
+      skill: 'Historical Explanation & Evaluation',
+      card_image: '/images/water_local_eastney_opt.jpg',
+      card_position: 'center',
+      banner: '/images/water_local_eastney_opt.jpg',
+      cover_image: '/images/water_local_eastney_opt.jpg',
+      prologue:
+        'Welcome to your November Assessment Masterclass! In this workshop, you will prepare for your 30-minute formal assessment: "Explain why there was rapid progress in Public Health 1800–1900?". You will write three developed PEEL paragraphs explaining how scientific investigation (Dr John Snow), civil engineering (Sir Joseph Bazalgette), laboratory microbiology (Louis Pasteur), and compulsory government legislation (the 1875 Public Health Act) transformed British public health from deadly squalor into modern sanitary safety. Over half term, you are permitted to prepare ONE single sheet of A4 lined paper containing bullet points, mind maps, statistics, and dates to bring directly into the assessment room!',
+      did_you_know:
+        'The 1875 Public Health Act was 150 pages long and contained 343 individual sections, establishing the framework for modern environmental health that still protects Britain today!',
+      assessment_notice: {
+        title: 'Year 7 November Formal Assessment Timetable & Rules',
+        groups: [
+          {
+            set: 'Set 7Y',
+            date: 'Tuesday 10th November',
+            period: 'Period 2 (30 mins)',
+          },
+          {
+            set: 'Set 7X',
+            date: 'Tuesday 10th November',
+            period: 'Period 4 (30 mins)',
+          },
+        ],
+        rules: [
+          'You are permitted to bring ONE sheet of A4 lined paper with revision notes into the assessment.',
+          'Notes MUST be in bullet points, timelines, or mind maps — strictly NO full sentences or pre-written paragraphs.',
+          'Write 3 developed PEEL paragraphs choosing from the 4 key historical catalysts.',
+          'Total assessment time: 30 minutes (12 marks).',
+        ],
+      },
+      do_now: [
+        {
+          q: 'Who mapped cholera deaths around the Broad Street pump in Soho in 1854?',
+          a: 'Dr John Snow.',
         },
         {
-          question: 'How did John Snow represent each cholera death on his 1854 spot map?',
-          options: [
-            'With a red circle',
-            'With a yellow cross',
-            'With a blue dot',
-            'As a black bar stacked outside the victim’s address',
-          ],
-          answer: 'As a black bar stacked outside the victim’s address',
+          q: 'Why did none of the 70 workers at the Lion Brewery contract cholera in 1854?',
+          a: 'They drank only beer and had their own private well.',
         },
         {
-          question:
-            'Why was the Lion Brewery on Broad Street so important to Snow’s investigation?',
-          options: [
-            'It was where cholera was invented',
-            'Its 70 workers drank free malt beer and none of them died of cholera',
-            'The workers died first',
-            'It was used as a hospital',
-          ],
-          answer: 'Its 70 workers drank free malt beer and none of them died of cholera',
+          q: 'Who proved Germ Theory using swan-neck flasks in 1861?',
+          a: 'Louis Pasteur.',
         },
         {
-          question: 'Who was Susanna Eley in Hampstead, and why was her death significant?',
-          options: [
-            'She was the Queen’s sister',
-            'She invented chloroform',
-            'She died in healthy Hampstead because she had Broad Street water delivered in a bottle',
-            'She owned the Broad Street pump',
-          ],
-          answer:
-            'She died in healthy Hampstead because she had Broad Street water delivered in a bottle',
+          q: 'Which German scientist isolated the cholera bacterium (Vibrio cholerae) under the microscope in 1884?',
+          a: 'Robert Koch.',
         },
         {
-          question:
-            'What decisive action did John Snow persuade the parish vestry to take on 8 September 1854?',
-          options: [
-            'Remove the handle from the Broad Street pump',
-            'Dump lime into the Thames',
-            'Burn down Soho',
-            'Lock all citizens inside',
-          ],
-          answer: 'Remove the handle from the Broad Street pump',
+          q: 'What made the Public Health Act of 1875 far more effective than the 1848 Act?',
+          a: 'It was strictly compulsory rather than permissive.',
+        },
+      ],
+      vocab: [
+        {
+          term: 'Epidemiology',
+          definition:
+            'The branch of medicine and public health studying the distribution, patterns, and determinants of health and disease in populations.',
+          syllables: 'ep-i-de-mi-ol-o-gy',
+          phonetic: 'ˌɛpɪˌdiːmɪˈɒlədʒi',
+          tier: '3',
         },
         {
-          question:
-            'Who was the five-month-old infant identified as the "index case" of the Soho outbreak?',
-          options: ['Baby Victoria', 'Baby John', 'Baby Lewis', 'Baby Charles'],
-          answer: 'Baby Lewis',
+          term: 'Laissez-Faire',
+          definition:
+            'The political and economic philosophy advocating minimal government regulation and state intervention in municipal public health.',
+          syllables: 'lais-sez-faire',
+          phonetic: 'ˌleɪseɪˈfɛər',
+          tier: '3',
         },
         {
-          question: 'How did Baby Lewis’s illness contaminate the Broad Street pump well?',
-          options: [
-            'He fell into the well',
-            'His mother washed his cholera diapers into a cracked cesspool that leaked into the well',
-            'His father poisoned the water',
-            'A flood washed sewage from the Thames',
-          ],
-          answer:
-            'His mother washed his cholera diapers into a cracked cesspool that leaked into the well',
+          term: 'Compulsory State',
+          definition:
+            'The statutory legal principle that national government possesses constitutional authority to mandate local council sanitation standards.',
+          syllables: 'com-pul-so-ry state',
+          phonetic: 'kəmˈpʌlsəri steɪt',
+          tier: '3',
         },
         {
-          question:
-            'What distance separated the cracked cesspool at No. 40 Broad Street from the drinking well?',
-          options: ['Ten miles', '500 yards', '50 feet', 'Just 2 feet and 8 inches'],
-          answer: 'Just 2 feet and 8 inches',
+          term: 'Germ Theory',
+          definition:
+            'Louis Pasteur’s scientific discovery proving that specific microscopic pathogens cause infectious disease and organic decomposition.',
+          syllables: 'germ the-o-ry',
+          phonetic: 'dʒɜːm ˈθɪəri',
+          tier: '3',
         },
         {
-          question:
-            'Did the General Board of Health immediately accept John Snow’s findings in 1855?',
-          options: [
-            'No, they stubbornly rejected his water theory and clung to miasma',
-            'Yes, they banned all water',
-            'Yes, they knighted him immediately',
-            'Yes, they tore down all pumps',
-          ],
-          answer: 'No, they stubbornly rejected his water theory and clung to miasma',
+          term: 'Miasma Theory',
+          definition:
+            'The ancient belief that epidemic infectious diseases were caused by breathing poisonous bad air and foul environmental smells.',
+          syllables: 'mi-as-ma the-o-ry',
+          phonetic: 'maɪˈæzmə ˈθɪəri',
+          tier: '3',
         },
         {
-          question: 'In what year did Dr John Snow die, before his theories were fully accepted?',
-          options: ['1831', '1875', '1901', '1858'],
-          answer: '1858',
+          term: 'Sanitation',
+          definition:
+            'Public health conditions, clean water supply, and civil engineering infrastructure for the safe disposal of human waste.',
+          syllables: 'san-i-ta-tion',
+          phonetic: 'ˌsænɪˈteɪʃən',
+          tier: '2',
+        },
+      ],
+      causal_domino_spine: {
+        title: 'November Assessment Revision Framework (1800–1900)',
+        subtitle: 'Key Turning Points & Causal Dominoes (5-Stage Framework)',
+        stages: [
+          {
+            step: 1,
+            para_ref: '[6.1]',
+            date: '1800–1900',
+            title: 'Deconstructing the Assessment Question',
+            actor: 'Year 7 Historian',
+            tag: '🎯 EXAM STRATEGY',
+            trigger:
+              "Understand the command word 'Explain why' and balance 3 distinct catalysts across science, technology, and government law.",
+            connective:
+              'Equips pupils with the precise disciplinary structure needed to balance competing historical catalysts and reach a sustained comparative verdict.',
+            question:
+              'How do you structure a 12-mark PEEL response in 30 minutes with sustained evaluation?',
+            workbook_question:
+              'How do you structure a 12-mark PEEL response in 30 minutes with sustained evaluation?',
+          },
+          {
+            step: 2,
+            para_ref: '[6.2]',
+            date: '1854',
+            title: 'Factor 1: Dr John Snow & Scientific Epidemiology',
+            actor: 'Dr John Snow & St James Vestry',
+            tag: '🗺️ SCIENCE & DATA',
+            trigger:
+              'Dr Snow mapped Soho fatalities, identified the Broad Street pump, and proved cholera was waterborne before germs could be seen.',
+            connective:
+              'Demonstrated that disease was an ingested waterborne poison rather than airborne miasma, laying the empirical groundwork for sanitary engineering.',
+            question:
+              'Why was Dr John Snow’s 1854 investigation a foundational reason for 19th-century public health progress?',
+            workbook_question:
+              'Why was Dr John Snow’s 1854 investigation a foundational reason for 19th-century public health progress?',
+          },
+          {
+            step: 3,
+            para_ref: '[6.3]',
+            date: '1858–1865',
+            title: 'Factor 2: Sir Joseph Bazalgette & Civil Engineering',
+            actor: 'Sir Joseph Bazalgette & Navvies',
+            tag: '🧱 ENGINEERING',
+            trigger:
+              "Triggered by the Great Stink, Bazalgette built 82 miles of brick intercepting sewers, permanently purifying London's drinking water.",
+            connective:
+              'Provided the vast physical infrastructure required to transport billions of gallons of raw sewage safely away from densely populated metropolitan areas.',
+            question:
+              'How did Bazalgette’s intercepting sewer network transform municipal engineering into life-saving disease prevention?',
+            workbook_question:
+              'How did Bazalgette’s intercepting sewer network transform municipal engineering into life-saving disease prevention?',
+          },
+          {
+            step: 4,
+            para_ref: '[6.4]',
+            date: '1861',
+            title: 'Factor 3: Louis Pasteur & The Germ Theory',
+            actor: 'Louis Pasteur & Robert Koch',
+            tag: '🔬 BACTERIOLOGY',
+            trigger:
+              'Pasteur proved microbes cause disease, giving scientific legitimacy to sanitation and destroying centuries of miasma dogma.',
+            connective:
+              'Provided the indisputable microscopic proof required to overcome ratepayer resistance and convince the state to fund municipal sanitary works.',
+            question:
+              'Why was laboratory confirmation of Germ Theory essential for overcoming ratepayer resistance to clean water?',
+            workbook_question:
+              'Why was laboratory confirmation of Germ Theory essential for overcoming ratepayer resistance to clean water?',
+          },
+          {
+            step: 5,
+            para_ref: '[6.5]',
+            date: '1875',
+            title: 'Factor 4: Government Legislation & The 1875 Act',
+            actor: 'Benjamin Disraeli & Parliament',
+            tag: '⚖️ COMPULSORY LAW',
+            trigger:
+              'Disraeli’s government passed the compulsory 1875 Act, forcing local councils to guarantee clean water, sewers, and food checks.',
+            connective:
+              'Transformed isolated engineering and scientific triumphs into universal, compulsory protections that eradicated waterborne epidemics across Britain.',
+            question:
+              'Why was compulsory parliamentary legislation the ultimate catalyst that turned scientific and engineering triumphs into nationwide reality?',
+            workbook_question:
+              'Why was compulsory parliamentary legislation the ultimate catalyst that turned scientific and engineering triumphs into nationwide reality?',
+          },
+        ],
+      },
+      narrative_blocks: [
+        {
+          ref: '[6.1]',
+          period: '1800–1900',
+          title: 'Deconstructing the Question: The 19th-Century Transformation (1800–1900)',
+          text: '<span class="para-ref">[6.1]</span> In this formal assessment, you are asked: **"Explain why there was rapid progress in Public Health between 1800 and 1900."** (12 marks • 30 mins). In history, "progress" means positive, lasting improvement in human conditions. In 1800, British cities were death traps: infant mortality was over 50%, sewage flooded cellars, and water was thick with filth. By 1900, epidemic cholera had been conquered, life expectancy was climbing, and every city in Britain possessed clean piped water and covered sewers. To achieve top marks, you must write **three developed PEEL paragraphs** choosing three of the four major historical catalysts, followed by a sustained **evaluative conclusion** that weighs which factor was the true master spark.',
         },
         {
-          question:
-            'What German scientist isolated the Vibrio cholerae bacterium under a microscope in 1884?',
-          options: ['Louis Pasteur', 'Robert Koch', 'Edwin Chadwick', 'Joseph Bazalgette'],
-          answer: 'Robert Koch',
+          ref: '[6.2]',
+          period: '1854',
+          title: 'Reason 1: Dr John Snow & Scientific Epidemiology (1854)',
+          text: '<span class="para-ref">[6.2]</span> The first decisive breakthrough was scientific observation and data analysis led by **Dr John Snow**. In 1854, the medical establishment stubbornly insisted that cholera was spread by **miasma** (poisonous air). Snow challenged this dogma through rigorous forensic detective work during the Soho cholera outbreak. By plotting 616 deaths on a **spot map**, Snow proved that fatalities clustered tightly around the **Broad Street water pump**. He uncovered crucial negative anomalies—such as the Lion Brewery, where workers drank only beer and suffered zero deaths—and persuaded the local vestry to remove the pump handle. Snow proved that cholera was a water-borne disease swallowed through contaminated water, fundamentally shifting public health from purifying air to purifying water.',
         },
         {
-          question: 'What branch of medicine is Dr John Snow celebrated for founding?',
-          options: [
-            'Cardiology',
-            'Brain surgery',
-            'Modern epidemiology (tracking disease patterns)',
-            'Orthopedics',
-          ],
-          answer: 'Modern epidemiology (tracking disease patterns)',
+          ref: '[6.3]',
+          period: '1858–1865',
+          title: 'Reason 2: Sir Joseph Bazalgette & Civil Engineering (1858–1865)',
+          image: '/units/water_and_sanitation/assets/joseph_bazalgette.jpg',
+          image_alt:
+            'Portrait photograph of Sir Joseph Bazalgette, Chief Engineer of the Metropolitan Board of Works',
+          caption:
+            'Sir Joseph Bazalgette (1819–1891). Chief Engineer whose 82-mile intercepting sewer network permanently eradicated cholera epidemics from London.',
+          text: '<span class="para-ref">[6.3]</span> The second vital factor was large-scale technological and civil engineering, spearheaded by **Sir Joseph Bazalgette**. Following the installation of 200,000 flushing water closets, the tidal River Thames was turned into a giant open sewer. In June 1858, an intense heatwave triggered **The Great Stink**, which overwhelmed the Houses of Parliament with suffocating stench. Terrified for their own lives, politicians abandoned **laissez-faire** inertia and granted £3 million for London’s drainage. Between 1859 and 1865, Bazalgette directed navvies to build **82 miles of brick intercepting sewers** using 318 million bricks and waterproof Portland cement. By transporting 420 million gallons of sewage daily eastward past the capital, Bazalgette permanently separated drinking water from human waste, eradicating cholera from London forever.',
+        },
+        {
+          ref: '[6.4]',
+          period: '1861',
+          title: 'Reason 3: Louis Pasteur & The Germ Theory (1861)',
+          text: '<span class="para-ref">[6.4]</span> The third crucial factor was microbiological laboratory science, led by French chemist **Louis Pasteur**. Before Pasteur, politicians and ratepayers resisted spending money on expensive sewers because they believed disease arose mysteriously from decaying matter (**spontaneous generation**). In 1861, Pasteur published his **Germ Theory of Disease**. Using curved swan-neck flasks, Pasteur proved that sterilized broth stayed pure until microbes from airborne dust entered the liquid. Pasteur demonstrated that living micro-organisms caused decay and disease. When German scientist **Robert Koch** isolated the cholera bacterium (*Vibrio cholerae*) under the microscope in 1884, he provided undeniable laboratory proof that Snow was correct, giving engineers and reformers the ultimate scientific backing to demand sanitary reform.',
+        },
+        {
+          ref: '[6.5]',
+          period: '1875',
+          title: 'Reason 4: Government Legislation & The 1875 Public Health Act',
+          text: '<span class="para-ref">[6.5]</span> The fourth indispensable catalyst was political legislation, culminating in the **Public Health Act of 1875** under Prime Minister Benjamin Disraeli. Earlier legislation, such as Edwin Chadwick’s 1848 Act, had failed because setting up health boards was *permissive* (optional), allowing wealthy ratepayers to block spending. However, the extension of the vote to working-class men in the 1867 Reform Act forced politicians to prioritize working-class living conditions. The 1875 Act made public health **compulsory**: for the first time, every local council in Britain was legally commanded to appoint a Medical Officer of Health, pave and light streets, collect refuse, and supply clean piped water and covered drainage. This ended laissez-faire and ensured that scientific and engineering triumphs protected every citizen nationwide.',
         },
       ],
       sources: [
@@ -8681,240 +6168,283 @@ const water_and_sanitation_data = {
           id: 'water_l6_src_a',
           letter: 'A',
           type: 'visual',
-          src: '/images/john_snow_cholera_map.jpg',
-          image: '/images/john_snow_cholera_map.jpg',
-          title: "Source A: Dr John Snow's 1854 Cholera Spot Map of Soho (Broad Street Area)",
+          src: '/units/water_and_sanitation/assets/edwin_chadwick.jpg',
+          image: '/units/water_and_sanitation/assets/edwin_chadwick.jpg',
+          title: 'Source A: Portrait and Sanitary Campaign of Edwin Chadwick (1800–1890)',
           caption:
-            "Original lithographic spot map from Dr John Snow's 'On the Mode of Communication of Cholera' (1855), showing individual cholera deaths marked as black bars clustered around the Broad Street pump (Wellcome Collection 38485i).",
-          author: 'Dr John Snow, Pioneer Epidemiologist',
-          date: '1854–1855',
-          question_badge: 'EPIDEMIOLOGICAL CARTOGRAPHY & EVIDENCE',
+            'Formal portrait photograph of Sir Edwin Chadwick, utilitarian reformer whose 1842 report forced the British state to confront the relationship between urban squalor and mortality (National Portrait Gallery NPG x12882).',
+          author: 'Victorian Portrait Studio',
+          date: 'c. 1860',
+          question_badge: 'THE 19TH-CENTURY CRISIS & CHADWICK',
           question:
-            "What did Dr John Snow's spot map prove about the source of the 1854 cholera outbreak?",
+            'What role did Edwin Chadwick play in initiating the 19th-century public health campaign?',
           model_answer:
-            "Snow's map shows dark bars representing cholera deaths heavily concentrated around the Broad Street public water pump, with deaths fading away further down other streets. This proved visually that the pump water was the central source of infection.",
+            'Source A represents Edwin Chadwick, whose 1842 report forced politicians to confront the terrible sanitary conditions of the working class. His energetic campaigning laid the foundation for government intervention and the first Public Health Acts.',
           context:
-            'In August–September 1854, over 600 people died of cholera in Soho within ten days. Snow investigated house by house, marking every death with a stacked black bar on a street map.',
+            'Chadwick was a dogmatic, determined social reformer. He believed that filthy living conditions caused pauperism, and that cleaning cities was the most efficient way to reduce welfare costs for taxpayers.',
           hinge_question:
-            "How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
+            'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
           provenance_clues: {
-            author: 'Dr John Snow, investigating the Soho cholera epidemic.',
-            audience:
-              'Medical profession, Epidemiological Society of London, and parliamentary sanitary authorities.',
-            motive:
-              'Providing visual epidemiological proof that cholera was water-borne rather than airborne miasma.',
+            author: 'Victorian studio portrait photographer.',
+            audience: 'Victorian society, parliamentary reformers, and posterity.',
+            motive: 'Documenting the influential architect of the English public health movement.',
             hinge_question:
-              "How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
+              'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
           },
           teacher_notes: {
             hinge_question:
-              "How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
+              'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
             source_context:
-              "In August–September 1854, over 600 people died in Soho within ten days. **Hinge Question:** How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
+              'Chadwick was a dogmatic social reformer who proved filthy living conditions caused pauperism. **Hinge Question:** Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
             provenance_breakdown: {
-              author: 'Dr John Snow, investigating the Soho cholera epidemic.',
-              audience:
-                'Medical profession, Epidemiological Society of London, and parliamentary sanitary authorities.',
+              author: 'Victorian studio portrait photographer.',
+              audience: 'Victorian society, parliamentary reformers, and posterity.',
               motive:
-                'Providing visual epidemiological proof that cholera was water-borne rather than airborne miasma.',
+                'Documenting the influential architect of the English public health movement.',
             },
           },
           source_context:
-            "In August–September 1854, over 600 people died in Soho within ten days. **Hinge Question:** How did Snow's map use geography and mathematics to disprove the theory that cholera was carried on the wind (miasma)?",
+            'Chadwick was a dogmatic social reformer who proved filthy living conditions caused pauperism. **Hinge Question:** Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
         },
         {
           id: 'water_l6_src_b',
           letter: 'B',
-          type: 'written',
-          src: '/images/snow_treatise_page_42_brewery.jpg',
-          image: '/images/snow_treatise_page_42_brewery.jpg',
-          title: "Source B: Dr John Snow's Case Study: The Lion Brewery Anomaly (1854)",
+          type: 'visual',
+          src: '/images/broad_street_pump_water_microscope_1854.jpg',
+          image: '/images/broad_street_pump_water_microscope_1854.jpg',
+          title:
+            'Source B: Microscopic Examination of Broad Street Pump Water by Dr Arthur Hill Hassall (1854)',
           caption:
-            "Facsimile of page 42 from Snow's 1855 treatise detailing his on-site investigation of the Huggins Lion Brewery in Broad Street (Wellcome Collection).",
-          author: 'Dr John Snow, MD',
-          date: '1855',
-          content:
-            'There is a brewery in Broad Street, near to the pump, and on perceiving that no case of cholera had occurred there, I called on Mr. Huggins, the proprietor. He informed me that there were seventy workmen employed in the brewery, and that none of them had suffered from cholera... The men were allowed a certain quantity of malt liquor, and Mr. Huggins believes they never drank water from the pump at all; they had a deep well on the premises, in addition to the London water supply.',
-          question_badge: 'SCIENTIFIC ANOMALY & CONTROL GROUP',
+            'Contemporary botanical and microscopic drawing showing organic matter, hair, fungal spores, and sewage sediment found in water drawn from the Broad Street pump during the 1854 epidemic (General Board of Health Report).',
+          author: 'Dr Arthur Hill Hassall, Public Analyst',
+          date: '1854',
+          question_badge: 'REASON 1: SCIENTIFIC EPIDEMIOLOGY & MICROSCOPY',
           question:
-            "Why was the Lion Brewery evidence vital to proving Snow's hypothesis about the Broad Street pump?",
+            "What does Dr Hassall's microscopic drawing reveal about the water Soho residents were drinking?",
           model_answer:
-            "Snow showed that 70 men working right next to the pump never caught cholera because they drank only free beer and deep well water. This provided a natural scientific control group, proving that proximity to the smell didn't cause cholera, but drinking the pump water did.",
+            'Source B reveals decaying organic filaments, hair, dead skin, and sewage sediment floating in water taken from the Broad Street pump. This proved that a nearby leaking cesspool had broken into the well shaft, poisoning drinking water with human waste.',
           context:
-            'The brewery stood directly opposite the dying neighborhood in Broad Street, breathing the exact same air. Yet not one of the 70 workers contracted cholera because boiling water during brewing destroyed the cholera vibrio.',
+            'Dr Arthur Hill Hassall was commissioned to analyse water samples from Soho during the outbreak. His microscope revealed that Soho residents were drinking diluted sewage from a cesspit four feet from the well.',
           hinge_question:
-            "Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
+            "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
           provenance_clues: {
-            author: 'Dr John Snow recording eyewitness interviews.',
-            audience:
-              'Medical colleagues, parish vestrymen of St James, and sanitary commissioners.',
+            author: 'Dr Arthur Hill Hassall, pioneer of food and water microscopy.',
+            audience: 'General Board of Health and London magistrates.',
             motive:
-              'Explaining why a business surrounded by cholera deaths had zero casualties, proving water was the sole transmission route.',
+              'Providing visual scientific proof of gross fecal contamination in Broad Street pump water.',
             hinge_question:
-              "Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
+              "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
           },
           teacher_notes: {
             hinge_question:
-              "Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
+              "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
             source_context:
-              "The brewery stood directly opposite the dying neighborhood in Broad Street. **Hinge Question:** Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
+              "Dr Arthur Hill Hassall analysed water samples from Soho during the outbreak. **Hinge Question:** Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
             provenance_breakdown: {
-              author: 'Dr John Snow recording eyewitness interviews.',
-              audience:
-                'Medical colleagues, parish vestrymen of St James, and sanitary commissioners.',
+              author: 'Dr Arthur Hill Hassall, pioneer of food and water microscopy.',
+              audience: 'General Board of Health and London magistrates.',
               motive:
-                'Explaining why a business surrounded by cholera deaths had zero casualties, proving water was the sole transmission route.',
+                'Providing visual scientific proof of gross fecal contamination in Broad Street pump water.',
             },
           },
           source_context:
-            "The brewery stood directly opposite the dying neighborhood in Broad Street. **Hinge Question:** Why did the Board of Health refuse to believe Snow's brewery evidence in 1854, insisting cholera must still be caused by miasma?",
+            "Dr Arthur Hill Hassall analysed water samples from Soho during the outbreak. **Hinge Question:** Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
         },
         {
           id: 'water_l6_src_c',
           letter: 'C',
           type: 'visual',
-          src: '/images/snow_grand_experiment_table_1854.jpg',
-          image: '/images/snow_grand_experiment_table_1854.jpg',
-          title:
-            "Source C: Dr John Snow's 'Grand Experiment' Comparative Water Company Table (1854)",
+          src: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
+          image: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
+          title: 'Source C: Construction of the Low-Level Intercepting Sewer (1862)',
           caption:
-            'Original statistical data table comparing cholera mortality between customers of the Southwark & Vauxhall Company and the Lambeth Company in south London (Snow, 1855, p. 86).',
-          author: 'Dr John Snow',
-          date: '1854–1855',
-          question_badge: 'COMPARATIVE STATISTICAL EPIDEMIOLOGY',
+            'Engraving from The Illustrated London News showing bricklayers constructing the egg-shaped brick tunnels of the London main drainage system (Wellcome Collection 38481i).',
+          author: 'The Illustrated London News Special Artist',
+          date: '1862',
+          question_badge: 'REASON 2: CIVIL ENGINEERING & MAIN DRAINAGE',
           question:
-            "What did Snow's comparison between the Southwark & Vauxhall and Lambeth water companies demonstrate?",
+            "Why was the construction of Bazalgette's intercepting sewers an engineering triumph?",
           model_answer:
-            "Snow's table proved that households drinking Southwark & Vauxhall water (taken from sewage-polluted central London) suffered 315 deaths per 10,000 houses, while those drinking Lambeth water (pumped from upstream Thames) had only 37 deaths. It proved contaminated water caused disease.",
+            'Source C shows bricklayers constructing massive egg-shaped subterranean brick tunnels. This engineering masterpiece diverted hundreds of millions of gallons of sewage eastward away from London, permanently ending water-borne cholera epidemics in the capital.',
           context:
-            'In 1852, the Lambeth Company moved its water intake 22 miles upstream past Teddington Lock, while Southwark & Vauxhall continued drawing water from the city centre. Two companies supplied houses on the exact same streets.',
+            'Bazalgette oversaw the laying of 318 million bricks, 82 miles of underground main intercepting sewers, and 1,100 miles of street sewers. The egg shape ensured self-scouring velocity even during dry spells.',
           hinge_question:
-            "Why did Snow describe this situation as an experiment 'on the grandest scale'?",
+            'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
           provenance_clues: {
-            author: 'Dr John Snow compiling Registrar-General death returns.',
-            audience: 'Epidemiological Society, Royal College of Physicians, and Parliament.',
+            author: 'Illustrated London News staff artist.',
+            audience:
+              'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
             motive:
-              'Demonstrating that water source alone explained the fourteen-fold difference in cholera mortality in identical streets.',
+              'Celebrating the unprecedented subterranean engineering works transforming London.',
             hinge_question:
-              "Why did Snow describe this situation as an experiment 'on the grandest scale'?",
+              'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
           },
           teacher_notes: {
             hinge_question:
-              "Why did Snow describe this situation as an experiment 'on the grandest scale'?",
+              'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
             source_context:
-              "In 1852, Lambeth moved its intake upstream while Southwark & Vauxhall did not. **Hinge Question:** Why did Snow describe this situation as an experiment 'on the grandest scale'?",
+              'Bazalgette oversaw the construction of 82 miles of underground intercepting sewers using 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
             provenance_breakdown: {
-              author: 'Dr John Snow compiling Registrar-General death returns.',
-              audience: 'Epidemiological Society, Royal College of Physicians, and Parliament.',
+              author: 'Illustrated London News staff artist.',
+              audience:
+                'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
               motive:
-                'Demonstrating that water source alone explained the fourteen-fold difference in cholera mortality in identical streets.',
+                'Celebrating the unprecedented subterranean engineering works transforming London.',
             },
           },
           source_context:
-            "In 1852, Lambeth moved its intake upstream while Southwark & Vauxhall did not. **Hinge Question:** Why did Snow describe this situation as an experiment 'on the grandest scale'?",
+            'Bazalgette oversaw the construction of 82 miles of underground intercepting sewers using 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
         },
         {
           id: 'water_l6_src_d',
           letter: 'D',
           type: 'visual',
-          src: '/images/pasteur_swan_neck.jpg',
-          image: '/images/pasteur_swan_neck.jpg',
-          title: "Source D: Louis Pasteur's Swan-Neck Flask Microbiology Experiment (1861)",
+          src: '/images/pasteur_actual_flask.jpg',
+          image: '/images/pasteur_actual_flask.jpg',
+          title:
+            "Source D: Louis Pasteur's Original Glass Swan-Neck Flask (Institut Pasteur, Paris)",
           caption:
-            "Diagrammatic illustration of Louis Pasteur's swan-necked glass flask experiments presented to the French Academy of Sciences, demonstrating that airborne microbes cause decomposition (Institut Pasteur / Wellcome Collection).",
-          author: 'Louis Pasteur, French Chemist & Microbiologist',
-          date: '1861',
-          question_badge: 'EXPERIMENTAL MICROBIOLOGY & GERM THEORY',
+            'Photograph of the preserved glass swan-neck flask used by Louis Pasteur in his 1861 experiments, in which broth remains sterile and uncontaminated over 160 years later (Institut Pasteur Museum, Paris).',
+          author: 'Institut Pasteur Museum Curators',
+          date: '1861 / Modern Photograph',
+          question_badge: 'REASON 3: LABORATORY MICROBIOLOGY & GERM THEORY',
           question:
-            "How did Pasteur's swan-neck flask experiment disprove the old belief in 'spontaneous generation'?",
+            "Why did Pasteur's laboratory discovery provide the essential foundation for all modern public health regulations?",
           model_answer:
-            'Pasteur boiled broth in a glass flask with a curved S-shaped neck; air entered freely, but gravity trapped airborne dust and microbes in the bend, leaving the liquid sterile for months. It proved living germs come from the air, not generated out of thin air.',
+            'Source D shows the actual glass apparatus that proved microbes exist in air and water. This provided the undeniable scientific proof governments needed to justify spending public tax money on water filtration and hygiene laws.',
           context:
-            'For centuries, natural philosophers believed living organisms spontaneously appeared from rotting matter. Pasteur proved that unboiled air carried living microorganisms that caused decay and disease.',
+            "Pasteur's flasks proved that microbes do not generate spontaneously from nothing. By proving that living germs cause fermentation and putrefaction, Pasteur established the biological basis for antiseptic surgery and water purification.",
           hinge_question:
-            'How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
+            'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
           provenance_clues: {
-            author: 'Louis Pasteur presenting experimental evidence.',
-            audience: 'French Academy of Sciences and international scientific community.',
-            motive:
-              'Disproving spontaneous generation and establishing Germ Theory as the scientific basis of fermentation and disease.',
+            author: 'Institut Pasteur Museum photography.',
+            audience: 'Historians, scientists, and students worldwide.',
+            motive: 'Preserving the original physical glassware that founded modern microbiology.',
             hinge_question:
-              'How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
+              'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
           },
           teacher_notes: {
             hinge_question:
-              'How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
+              'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
             source_context:
-              'For centuries, natural philosophers believed living organisms spontaneously appeared from rotting matter. **Hinge Question:** How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
+              "Pasteur's flasks proved microbes do not generate spontaneously. **Hinge Question:** How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?",
             provenance_breakdown: {
-              author: 'Louis Pasteur presenting experimental evidence.',
-              audience: 'French Academy of Sciences and international scientific community.',
+              author: 'Institut Pasteur Museum photography.',
+              audience: 'Historians, scientists, and students worldwide.',
               motive:
-                'Disproving spontaneous generation and establishing Germ Theory as the scientific basis of fermentation and disease.',
+                'Preserving the original physical glassware that founded modern microbiology.',
             },
           },
           source_context:
-            'For centuries, natural philosophers believed living organisms spontaneously appeared from rotting matter. **Hinge Question:** How did proving that microscopic germs exist in the air revolutionize hospital hygiene and water purification?',
+            "Pasteur's flasks proved microbes do not generate spontaneously. **Hinge Question:** How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?",
         },
         {
           id: 'water_l6_src_e',
           letter: 'E',
-          type: 'visual',
-          src: '/images/koch_bacteria.jpg',
-          image: '/images/koch_bacteria.jpg',
+          type: 'written',
+          src: '',
+          image: '',
           title:
-            "Source E: Robert Koch's Microphotograph of the Cholera Bacterium (Vibrio cholerae, 1884)",
+            'Source E: The Public Health Act 1875 (38 & 39 Vict. c. 55): Compulsory Municipal Sanitary Provision',
           caption:
-            'High-magnification laboratory microphotograph prepared by Dr Robert Koch during the German Cholera Commission expedition to Egypt and India, showing stained comma-shaped Vibrio cholerae bacteria (Imperial Health Office Berlin / Wellcome Collection).',
-          author: 'Dr Robert Koch, Pioneer German Bacteriologist',
-          date: '1884',
-          question_badge: 'BACTERIOLOGICAL DISCOVERY & VISUAL PROOF',
+            'Extract from the landmark 1875 Public Health Act which abolished laissez-faire and made clean water supply and sewer construction compulsory for every local council in Britain (The National Archives / UK Statute Law).',
+          author: 'British Parliament under Prime Minister Benjamin Disraeli',
+          date: '1875',
+          content:
+            'Every urban authority shall provide and keep in their waterworks a supply of pure and wholesome water, and where any house within their district is without a proper supply of water the local authority shall require the owner to obtain such supply... and it shall be the duty of every local authority to cause to be made such sewers as may be necessary for effectually draining their district for the purposes of this Act... and every local authority shall from time to time appoint a fit and proper person to be Medical Officer of Health.',
+          question_badge: 'REASON 4: COMPULSORY STATUTE & THE 1875 ACT',
           question:
-            "Why was Robert Koch's identification of the cholera microbe in 1884 the ultimate victory for Snow's theory?",
+            "Why was the 1875 Public Health Act far more effective than earlier health legislation in transforming Britain's towns?",
           model_answer:
-            'Koch used chemical aniline dyes and high-power photography to isolate and photograph the comma-shaped Vibrio cholerae bacterium in contaminated Egyptian and Indian water supplies. It provided physical visual proof of the exact germ Snow had predicted 30 years earlier.',
+            'The 1875 Act made public health duties strictly compulsory rather than optional. For the first time, every local authority across Britain was legally compelled to supply pure water, build covered sewers, and appoint a qualified Medical Officer of Health, ending decades of ratepayer evasion.',
           context:
-            'Koch led a medical expedition to Alexandria and Calcutta, identifying the specific comma-shaped bacterium that lived in human intestines and multiplied in contaminated water supplies.',
+            "Passed by Disraeli's government under the slogan 'Sanitas sanitatum', the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties.",
           hinge_question:
-            "Why did British medical officials in India resist Koch's discovery for years after 1884?",
+            'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
           provenance_clues: {
-            author: 'Dr Robert Koch, Imperial Health Office, Berlin.',
-            audience: 'International medical congresses and public health authorities.',
+            author: 'British Parliament under Prime Minister Benjamin Disraeli.',
+            audience:
+              'Municipal corporations, town councils, and local sanitary authorities nationwide.',
             motive:
-              'Isolating the specific microbiological pathogen responsible for cholera epidemics.',
+              'Establishing a universal, compulsory statutory framework for sanitation and clean water across Britain.',
             hinge_question:
-              "Why did British medical officials in India resist Koch's discovery for years after 1884?",
+              'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
           },
           teacher_notes: {
             hinge_question:
-              "Why did British medical officials in India resist Koch's discovery for years after 1884?",
+              'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
             source_context:
-              "Koch led a medical expedition to Alexandria and Calcutta. **Hinge Question:** Why did British medical officials in India resist Koch's discovery for years after 1884?",
+              "Passed by Disraeli's government, the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties. **Hinge Question:** Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?",
             provenance_breakdown: {
-              author: 'Dr Robert Koch, Imperial Health Office, Berlin.',
-              audience: 'International medical congresses and public health authorities.',
+              author: 'British Parliament under Prime Minister Benjamin Disraeli.',
+              audience:
+                'Municipal corporations, town councils, and local sanitary authorities nationwide.',
               motive:
-                'Isolating the specific microbiological pathogen responsible for cholera epidemics.',
+                'Establishing a universal, compulsory statutory framework for sanitation and clean water across Britain.',
             },
           },
           source_context:
-            "Koch led a medical expedition to Alexandria and Calcutta. **Hinge Question:** Why did British medical officials in India resist Koch's discovery for years after 1884?",
+            "Passed by Disraeli's government, the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties. **Hinge Question:** Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?",
         },
       ],
-    },
-    {
-      id: 'lesson_7',
-      title: 'November Assessment Masterclass: Rapid Progress in Public Health (1800–1900)',
-      enquiry: 'Why was there rapid progress in Public Health between 1800 and 1900?',
-      subtitle:
-        'Step-by-step PEEL Planning & Revision Workshop: John Snow, Joseph Bazalgette, Louis Pasteur, and the 1875 Public Health Act',
-      skill: 'Disciplinary Skill: Causal Explanation & Structured PEEL Synthesis',
-      card_image: '/images/water_local_eastney_opt.jpg',
-      card_position: 'center 40%',
-      banner: '/images/water_local_eastney_opt.jpg',
-      cover_image: '/images/water_local_eastney_opt.jpg',
-      prologue:
-        'Welcome to your November Assessment Masterclass! In this workshop, you will prepare for your 30-minute formal assessment: "Explain why there was rapid progress in Public Health 1800–1900?". You will write three developed PEEL paragraphs explaining how scientific investigation (Dr John Snow), civil engineering (Sir Joseph Bazalgette), laboratory microbiology (Louis Pasteur), and compulsory government legislation (the 1875 Public Health Act) transformed British public health from deadly squalor into modern sanitary safety. Over half term, you are permitted to prepare ONE single sheet of A4 lined paper containing bullet points, mind maps, statistics, and dates to bring directly into the assessment room!',
+      tasks: [
+        {
+          id: 'ws_l6_q2_explain_why',
+          type: 'extended_writing',
+          topic: 'November Assessment: Explain Why [12 marks • 30 mins]',
+          title: 'November Assessment: Explain Why [12 marks • 30 mins]',
+          question:
+            'Explain why there was rapid progress in Public Health between 1800 and 1900. [12 marks • 30 mins]',
+          stimulus: [
+            'Dr John Snow and the Broad Street pump investigation (1854)',
+            'Joseph Bazalgette and the London intercepting sewer network (1858–1865)',
+            'Louis Pasteur and the Germ Theory of disease (1861)',
+            'The 1875 Public Health Act and compulsory government legislation',
+          ],
+          scaffolding: {
+            guidance:
+              'Write a structured 3-paragraph PEEL response choosing 3 of the 4 factors above, followed by a sustained evaluative conclusion. Use your 1 sheet of A4 revision notes to deploy precise facts, statistics, and dates.',
+            structure_strip: [
+              {
+                col: '1. PARAGRAPH 1 (FACTOR 1)',
+                prompt:
+                  'Deploy your first chosen factor (e.g. Dr John Snow & the 1854 Broad Street investigation). State your point clearly, explain the evidence (spot map, pump handle), and link directly to why it caused rapid progress [6.2].',
+                starter:
+                  'A primary catalyst explaining why there was rapid progress in public health was Dr John Snow’s scientific breakthrough during the 1854 Soho cholera outbreak...',
+              },
+              {
+                col: '2. PARAGRAPH 2 (FACTOR 2)',
+                prompt:
+                  'Deploy your second chosen factor (e.g. Sir Joseph Bazalgette & the Great Stink of 1858). Detail the 82 miles of brick intercepting sewers, Portland cement, and eliminating Thames pollution [6.3].',
+                starter:
+                  'Furthermore, a decisive engineering factor explaining why rapid progress occurred was Sir Joseph Bazalgette’s construction of London’s underground sewer network...',
+              },
+              {
+                col: '3. PARAGRAPH 3 (FACTOR 3)',
+                prompt:
+                  'Deploy your third chosen factor (e.g. Louis Pasteur’s Germ Theory in 1861 OR the compulsory 1875 Public Health Act). Explain how biological proof or legal force destroyed laissez-faire [6.4, 6.5].',
+                starter:
+                  'Additionally, a fundamental reason explaining why public health advanced rapidly was the passage of the landmark 1875 Public Health Act...',
+              },
+              {
+                col: '4. CONCLUSION / EVALUATIVE LINK',
+                prompt:
+                  'Weigh which factor was the true master catalyst. Explain how science, engineering, and government law combined to conquer water-borne disease.',
+                starter:
+                  'In conclusion, while John Snow identified the cause and Bazalgette built the engineering solution, the most decisive factor was...',
+              },
+            ],
+          },
+          hints: [
+            'Point: State your factor clearly using the exact wording from the question stem ("A primary factor explaining why there was rapid progress in public health was...").',
+            'Evidence: Include specific names, dates, and numbers: 1854, Broad Street pump, Soho spot map, 1858 Great Stink, 82 miles of sewers, 318 million bricks, 1861 Germ Theory, swan-neck flasks, 1875 Public Health Act.',
+            'Explain: Explain the cause-and-effect mechanism: show HOW the factor defeated miasma or forced politicians to abandon laissez-faire.',
+            'Link: Always conclude the paragraph by reinforcing how this specific factor drove rapid public health progress across the century.',
+          ],
+          model_answer:
+            'A primary catalyst explaining why there was rapid progress in public health between 1800 and 1900 was Dr John Snow’s pioneering epidemiological investigation during the 1854 Soho cholera outbreak. For decades, the medical establishment clung to the unproven miasma theory, believing disease was inhaled from foul vapours. Snow challenged this orthodoxy by reasoning that because cholera attacked the digestive tract with violent sickness and diarrhea, the poison had to be swallowed through drinking water. When cholera killed over five hundred people in Soho in August 1854, Snow plotted each fatality on a detailed spot map, proving that deaths clustered directly around the Broad Street water pump. By discovering that brewery workers drinking beer were unharmed, Snow convinced the local vestry to remove the pump handle, causing the epidemic to collapse. This was a critical reason for rapid progress because Snow provided empirical proof that cholera was a water-borne infection, directing public health away from purifying air toward the vital necessity of securing pure drinking water.<br><br>Furthermore, a decisive technological factor explaining why rapid progress occurred was Sir Joseph Bazalgette’s construction of London’s monumental underground sewer network between 1859 and 1865. The invention of flushing water closets had accidentally transformed the River Thames into a fermenting open sewer. In the sweltering heatwave of June 1858, the resulting "Great Stink" became so unbearable that MPs in the Houses of Parliament fled river committee rooms in panic. Terrified for their own lives, Parliament abandoned its traditional laissez-faire principles and passed emergency legislation in just eighteen days to grant £3 million for London’s drainage. As Chief Engineer, Bazalgette constructed 82 miles of underground brick intercepting sewers using 318 million bricks and newly invented waterproof Portland cement. Using gravity and steam pumping stations at Crossness and Abbey Mills, Bazalgette transported 420 million gallons of sewage daily eastward past the capital, safely away from drinking intakes. This engineering triumph was a fundamental reason for progress because it permanently separated clean water from human waste, eradicating cholera epidemics from London forever.<br><br>Additionally, the decisive legal factor explaining why public health improved nationwide was the passage of the landmark 1875 Public Health Act under Prime Minister Benjamin Disraeli. Earlier legislation, such as Edwin Chadwick’s 1848 Public Health Act, had largely failed because forming health boards was permissive (optional), allowing penny-pinching ratepayers to block sanitation spending. However, following Louis Pasteur’s 1861 Germ Theory—which disproved spontaneous generation and proved living microbes caused disease—the government had scientific proof that sanitation was a biological imperative. The 1875 Act made public health compulsory: for the first time, every local council in Britain was legally forced to appoint a Medical Officer of Health, inspect market food, pave streets, and guarantee clean piped water and covered sewers to all households. This legislation was essential because it forced even the poorest rural and industrial towns to implement sanitary engineering, ending laissez-faire and ensuring that scientific breakthroughs protected every citizen.<br><br>In conclusion, while John Snow provided the scientific diagnosis and Louis Pasteur proved microbial pathology, the most decisive factor driving rapid progress was the combination of Bazalgette’s civil engineering and the 1875 Public Health Act. Without Bazalgette’s sewers, Snow’s discovery would have remained an unused theory; without the compulsory 1875 Act, modern sanitation would have remained confined to wealthy districts of London. Therefore, rapid progress occurred because parliamentary law transformed engineering and medical science into a compulsory national reality.',
+        },
+      ],
       teacher_notes: {
         primer:
           'This masterclass synthesizes 19th-century public health progress across four key causal factors: scientific epidemiology (Snow), civil engineering (Bazalgette), laboratory microbiology (Pasteur), and state intervention (the 1875 Public Health Act). Guides Year 7 pupils to structure high-calibre PEEL paragraphs with explicit causal link sentences.',
@@ -8966,805 +6496,6 @@ const water_and_sanitation_data = {
           },
         ],
       },
-      assessment_notice: {
-        title: 'Year 7 November Formal Assessment Timetable & Rules',
-        groups: [
-          {
-            set: 'Set 7Y',
-            date: 'Tuesday 10th November',
-            period: 'Period 2 (30 mins)',
-          },
-          {
-            set: 'Set 7X',
-            date: 'Tuesday 10th November',
-            period: 'Period 4 (30 mins)',
-          },
-        ],
-        rules: [
-          'You are permitted to bring ONE sheet of A4 lined paper with revision notes into the assessment.',
-          'Notes MUST be in bullet points, timelines, or mind maps — strictly NO full sentences or pre-written paragraphs.',
-          'Write 3 developed PEEL paragraphs choosing from the 4 key historical catalysts.',
-          'Total assessment time: 30 minutes (12 marks).',
-        ],
-      },
-      margin_spine: [
-        {
-          year: '1800–1850',
-          label: 'Laissez-Faire Context',
-        },
-        {
-          year: '1854',
-          label: 'Reason 1: Dr John Snow',
-        },
-        {
-          year: '1858–1865',
-          label: 'Reason 2: Joseph Bazalgette',
-        },
-        {
-          year: '1861',
-          label: 'Reason 3: Louis Pasteur',
-        },
-        {
-          year: '1875',
-          label: 'Reason 4: 1875 Health Act',
-        },
-      ],
-      causal_domino_spine: {
-        title: 'The Catalysts of 19th-Century Public Health Progress (1800–1900)',
-        subtitle: 'How 4 Interconnected Breakthroughs Conquered Epidemic Disease',
-        stages: [
-          {
-            step: 1,
-            para_ref: '[7.1]',
-            date: '1800–1850',
-            title: 'The Crisis: Slum Squalor & Laissez-Faire Inertia',
-            actor: 'British Industrial Towns & Laissez-Faire Parliament',
-            tag: '🏭 SLUM CRISIS',
-            trigger:
-              'Explosive urban migration crammed millions into unventilated back-to-back slums with overflowing cesspools and cholera epidemics.',
-            connective:
-              'Proved that leaving public health to private landlords and optional local boards had failed, creating an urgent crisis.',
-            question: 'Why did Britain make almost no public health progress in the early 1800s?',
-          },
-          {
-            step: 2,
-            para_ref: '[7.2]',
-            date: '1854',
-            title: 'Reason 1: Dr John Snow & Scientific Detective Work',
-            actor: 'Dr John Snow (Royal Physician & Epidemiologist)',
-            tag: '🩺 SCIENCE & MAPS',
-            trigger:
-              'Snow investigated the Soho cholera outbreak, plotted deaths on a spot map, and proved the Broad Street pump contaminated with sewage caused cholera.',
-            connective:
-              'Shattered the age-old medical dogma of miasma and pinpointed clean drinking water as the true frontline of disease prevention.',
-            question: 'How did John Snow prove that cholera was transmitted by drinking water?',
-          },
-          {
-            step: 3,
-            para_ref: '[7.3]',
-            date: '1858–1865',
-            title: 'Reason 2: Joseph Bazalgette & Massive Civil Engineering',
-            actor: 'Sir Joseph Bazalgette & The Metropolitan Board of Works',
-            tag: '🧱 SEWER NETWORK',
-            trigger:
-              'The Great Stink of 1858 terrorized Parliament into funding Bazalgette to build 82 miles of brick intercepting sewers using Portland cement.',
-            connective:
-              'Diverted 420 million gallons of sewage daily eastward away from London drinking supplies, eliminating water-borne epidemics.',
-            question:
-              'Why did the Great Stink finally force the government to build London’s sewers?',
-          },
-          {
-            step: 4,
-            para_ref: '[7.4]',
-            date: '1861',
-            title: 'Reason 3: Louis Pasteur & The Germ Theory Revolution',
-            actor: 'Louis Pasteur (French Microbiologist)',
-            tag: '🔬 GERM THEORY',
-            trigger:
-              'Pasteur boiled broth in curved swan-neck flasks, disproving spontaneous generation and proving microscopic airborne bacteria caused decay.',
-            connective:
-              'Provided undeniable scientific proof that living bacteria—not bad smells—caused disease, forcing doctors to accept water sanitation.',
-            question: 'How did Louis Pasteur’s Germ Theory destroy the miasma orthodoxy?',
-          },
-          {
-            step: 5,
-            para_ref: '[7.5]',
-            date: '1875',
-            title: 'Reason 4: Government Legislation & The 1875 Public Health Act',
-            actor: 'Benjamin Disraeli’s Conservative Government & Municipal Councils',
-            tag: '⚖️ COMPULSORY LAW',
-            trigger:
-              'Parliament passed the landmark 1875 Public Health Act, replacing permissive advice with mandatory duties for every local council.',
-            connective:
-              'Every town was legally forced to provide clean piped water, sewage disposal, street lighting, and Medical Officers of Health.',
-            question: 'Why was the 1875 Public Health Act the decisive legal turning point?',
-          },
-        ],
-      },
-      key_terms: [
-        {
-          term: 'Laissez-Faire',
-          definition:
-            'The political belief ("leave alone") that government should not interfere in citizens’ lives, business, or public health spending.',
-        },
-        {
-          term: 'Epidemiology',
-          definition:
-            'The scientific study and mapping of how diseases spread through human populations, pioneered by Dr John Snow.',
-        },
-        {
-          term: 'Germ Theory',
-          definition:
-            'Louis Pasteur’s 1861 discovery that microscopic living organisms (bacteria/microbes) cause decay and infectious diseases.',
-        },
-        {
-          term: 'Miasma',
-          definition:
-            'The centuries-old false medical belief that diseases were generated by poisonous clouds of bad air rising from rotting matter.',
-        },
-        {
-          term: 'Intercepting Sewers',
-          definition:
-            'Bazalgette’s network of underground tunnels built parallel to the Thames to capture sewage before it could reach the river.',
-        },
-        {
-          term: 'Compulsory Legislation',
-          definition:
-            'Laws that require citizens or councils to obey ("must") rather than giving optional permission ("may"), seen in the 1875 Act.',
-        },
-      ],
-      workbook_stages: [
-        {
-          step: 1,
-          para_ref: '[7.1]',
-          paraRef: '[7.1]',
-          date: '1800–1850',
-          heading:
-            'How did the failure of laissez-faire create the urgent need for rapid public health reform?',
-          questionHeading:
-            'How did the failure of laissez-faire create the urgent need for rapid public health reform?',
-          bullets: [
-            'Cramped Back-to-Back Slums',
-            'Optional 1848 Public Health Act',
-            'Laissez-Faire Ratepayer Inaction',
-          ],
-          focus_clue:
-            'Why did towns refuse to clean streets or build sewers until lethal cholera epidemics and political panic forced action?',
-          focusClue:
-            'Why did towns refuse to clean streets or build sewers until lethal cholera epidemics and political panic forced action?',
-        },
-        {
-          step: 2,
-          para_ref: '[7.2]',
-          paraRef: '[7.2]',
-          date: '1854',
-          heading:
-            'How did Dr John Snow’s Broad Street investigation prove cholera was water-borne?',
-          questionHeading:
-            'How did Dr John Snow’s Broad Street investigation prove cholera was water-borne?',
-          bullets: [
-            'Door-to-Door Mortality Inquiries',
-            'Soho Spot Map Cartography',
-            'Removal of the Pump Handle',
-          ],
-          focus_clue:
-            'Why was Snow’s geographical mapping of pump deaths more convincing than doctors’ theories about miasma bad air?',
-          focusClue:
-            'Why was Snow’s geographical mapping of pump deaths more convincing than doctors’ theories about miasma bad air?',
-        },
-        {
-          step: 3,
-          para_ref: '[7.3]',
-          paraRef: '[7.3]',
-          date: '1858–1865',
-          heading:
-            'Why did the Great Stink force Parliament to fund Bazalgette’s massive sewer network?',
-          questionHeading:
-            'Why did the Great Stink force Parliament to fund Bazalgette’s massive sewer network?',
-          bullets: [
-            'Boiling Thames Outside Parliament',
-            '£3 Million Emergency Legislation',
-            '82 Miles of Intercepting Sewers',
-          ],
-          focus_clue:
-            'How did Joseph Bazalgette use gravity, oval brick tunnels, and steam pumping stations to permanently clean London?',
-          focusClue:
-            'How did Joseph Bazalgette use gravity, oval brick tunnels, and steam pumping stations to permanently clean London?',
-        },
-        {
-          step: 4,
-          para_ref: '[7.4]',
-          paraRef: '[7.4]',
-          date: '1861',
-          heading:
-            'How did Louis Pasteur’s Germ Theory provide the scientific proof for clean water?',
-          questionHeading:
-            'How did Louis Pasteur’s Germ Theory provide the scientific proof for clean water?',
-          bullets: [
-            'Boiled Broth Swan-Neck Flasks',
-            'Airborne Microbes Disproved Spontaneous Generation',
-            'Microbial Contamination in Water',
-          ],
-          focus_clue:
-            'How did proving bacteria existed convince governments that filtering water was a matter of life and death?',
-          focusClue:
-            'How did proving bacteria existed convince governments that filtering water was a matter of life and death?',
-        },
-        {
-          step: 5,
-          para_ref: '[7.5]',
-          paraRef: '[7.5]',
-          date: '1875',
-          heading:
-            'Why was the 1875 Public Health Act the decisive legal turning point across Britain?',
-          questionHeading:
-            'Why was the 1875 Public Health Act the decisive legal turning point across Britain?',
-          bullets: [
-            'From "May" to Mandatory "Must"',
-            'Compulsory Clean Water & Sewers',
-            'Permanent Death of Laissez-Faire',
-          ],
-          focus_clue:
-            'Why could individual towns no longer refuse to spend money on public health after the landmark 1875 Act?',
-          focusClue:
-            'Why could individual towns no longer refuse to spend money on public health after the landmark 1875 Act?',
-        },
-      ],
-      narrative_blocks: [
-        {
-          act: 1,
-          title: 'Deconstructing the Question: The 19th-Century Transformation (1800–1900)',
-          theme_heading: 'Deconstructing the Question: The 19th-Century Transformation (1800–1900)',
-          text: '<span class="para-ref">[7.1]</span> Between 1800 and 1850, the Industrial Revolution triggered rapid, chaotic urbanisation across Britain. Millions moved from rural villages into industrial cities like Manchester and Leeds to work in factories. Speculative landlords built cramped "back-to-back" terraced slums with no building codes. Up to one hundred residents shared a single outdoor privy, and shallow drinking wells were contaminated by leaking cesspools.<br><br>The British government took no action due to **laissez-faire** ("leave alone")—the belief that the state should not interfere in private life or raise taxes. Although Edwin Chadwick\'s 1842 Report (Source A) proved filth caused disease, the 1848 Public Health Act was merely **permissive** (optional). Most local councils refused to spend tax money on clean water or sewers. Consequently, nationwide cholera epidemics in 1831, 1848, and 1853 killed over 130,000 Britons. Progress was impossible until three breakthroughs occurred: scientific epidemiology, civil engineering, and compulsory government legislation.<br><br><div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;"><div><span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateway</span><strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise Industrial Slum Squalor & Early Cholera?</strong></div><a href="/?view=lessons&unit=water_and_sanitation&lesson=4" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 4: Boomtown Squalor & Asiatic Cholera</a></div>',
-          sources: [
-            {
-              id: 'water_l7_src_a',
-              letter: 'A',
-              type: 'visual',
-              src: '/units/water_and_sanitation/assets/edwin_chadwick.jpg',
-              image: '/units/water_and_sanitation/assets/edwin_chadwick.jpg',
-              title: 'Source A: Portrait and Sanitary Campaign of Edwin Chadwick (1800–1890)',
-              caption:
-                'Formal portrait photograph of Sir Edwin Chadwick, utilitarian reformer whose 1842 report forced the British state to confront the relationship between urban squalor and mortality (National Portrait Gallery NPG x12882).',
-              author: 'Victorian Portrait Studio',
-              date: 'c. 1860',
-              question_badge: 'THE 19TH-CENTURY CRISIS & CHADWICK',
-              question:
-                'What role did Edwin Chadwick play in initiating the 19th-century public health campaign?',
-              model_answer:
-                'Source A represents Edwin Chadwick, whose 1842 report forced politicians to confront the terrible sanitary conditions of the working class. His energetic campaigning laid the foundation for government intervention and the first Public Health Acts.',
-              context:
-                'Chadwick was a dogmatic, determined social reformer. He believed that filthy living conditions caused pauperism, and that cleaning cities was the most efficient way to reduce welfare costs for taxpayers.',
-              hinge_question:
-                'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-              provenance_clues: {
-                author: 'Victorian studio portrait photographer.',
-                audience: 'Victorian society, parliamentary reformers, and posterity.',
-                motive:
-                  'Documenting the influential architect of the English public health movement.',
-                hinge_question:
-                  'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-                source_context:
-                  'Chadwick was a dogmatic social reformer who proved filthy living conditions caused pauperism. **Hinge Question:** Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-                provenance_breakdown: {
-                  author: 'Victorian studio portrait photographer.',
-                  audience: 'Victorian society, parliamentary reformers, and posterity.',
-                  motive:
-                    'Documenting the influential architect of the English public health movement.',
-                },
-              },
-              source_context:
-                'Chadwick was a dogmatic social reformer who proved filthy living conditions caused pauperism. **Hinge Question:** Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-            },
-          ],
-          isReversed: false,
-          source: {
-            id: 'water_l7_src_a',
-            letter: 'A',
-            type: 'visual',
-            src: '/units/water_and_sanitation/assets/edwin_chadwick.jpg',
-            image: '/units/water_and_sanitation/assets/edwin_chadwick.jpg',
-            title: 'Source A: Portrait and Sanitary Campaign of Edwin Chadwick (1800–1890)',
-            caption:
-              'Formal portrait photograph of Sir Edwin Chadwick, utilitarian reformer whose 1842 report forced the British state to confront the relationship between urban squalor and mortality (National Portrait Gallery NPG x12882).',
-            author: 'Victorian Portrait Studio',
-            date: 'c. 1860',
-            question_badge: 'THE 19TH-CENTURY CRISIS & CHADWICK',
-            question:
-              'What role did Edwin Chadwick play in initiating the 19th-century public health campaign?',
-            model_answer:
-              'Source A represents Edwin Chadwick, whose 1842 report forced politicians to confront the terrible sanitary conditions of the working class. His energetic campaigning laid the foundation for government intervention and the first Public Health Acts.',
-            context:
-              'Chadwick was a dogmatic, determined social reformer. He believed that filthy living conditions caused pauperism, and that cleaning cities was the most efficient way to reduce welfare costs for taxpayers.',
-            hinge_question:
-              'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-            provenance_clues: {
-              author: 'Victorian studio portrait photographer.',
-              audience: 'Victorian society, parliamentary reformers, and posterity.',
-              motive:
-                'Documenting the influential architect of the English public health movement.',
-              hinge_question:
-                'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-              source_context:
-                'Chadwick was a dogmatic social reformer who proved filthy living conditions caused pauperism. **Hinge Question:** Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-              provenance_breakdown: {
-                author: 'Victorian studio portrait photographer.',
-                audience: 'Victorian society, parliamentary reformers, and posterity.',
-                motive:
-                  'Documenting the influential architect of the English public health movement.',
-              },
-            },
-            source_context:
-              'Chadwick was a dogmatic social reformer who proved filthy living conditions caused pauperism. **Hinge Question:** Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-          },
-        },
-        {
-          act: 2,
-          title: 'Reason 1: Dr John Snow & Scientific Epidemiology (1854)',
-          theme_heading: 'Reason 1: Dr John Snow & Scientific Epidemiology (1854)',
-          text: '<span class="para-ref">[7.2]</span> The first breakthrough came from **Dr John Snow** during the 1854 cholera outbreak in Soho, London. Most doctors believed in **miasma**—the idea that bad smells caused disease. However, Snow noticed cholera attacked the stomach and bowels, not the lungs, proving the poison had to be swallowed in food or water.<br><br>When cholera killed over five hundred people in Soho in ten days, Snow mapped every death as a black bar on a street map. Dr Arthur Hill Hassall\'s microscopic examination (Source B) revealed decaying organic matter and sewage sediment floating in water taken from the Broad Street pump. Snow proved that workers at the local Lion Brewery drank only beer and stayed healthy, while a woman in Hampstead died after having Broad Street water delivered to her. Snow convinced the parish vestry to remove the pump handle, and the outbreak stopped. Snow proved cholera was waterborne, showing that cleaning drinking water was the real key to saving lives.<br><br><div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;"><div><span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateway</span><strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise John Snow’s investigation & the Spot Map?</strong></div><a href="/?view=lessons&unit=water_and_sanitation&lesson=6" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 6: Dr John Snow & Broad Street</a></div>',
-          source: {
-            id: 'water_l7_src_b',
-            letter: 'B',
-            type: 'visual',
-            src: '/images/broad_street_pump_water_microscope_1854.jpg',
-            image: '/images/broad_street_pump_water_microscope_1854.jpg',
-            title:
-              'Source B: Microscopic Examination of Broad Street Pump Water by Dr Arthur Hill Hassall (1854)',
-            caption:
-              'Contemporary botanical and microscopic drawing showing organic matter, hair, fungal spores, and sewage sediment found in water drawn from the Broad Street pump during the 1854 epidemic (General Board of Health Report).',
-            author: 'Dr Arthur Hill Hassall, Public Analyst',
-            date: '1854',
-            question_badge: 'REASON 1: SCIENTIFIC EPIDEMIOLOGY & MICROSCOPY',
-            question:
-              "What does Dr Hassall's microscopic drawing reveal about the water Soho residents were drinking?",
-            model_answer:
-              'Source B reveals decaying organic filaments, hair, dead skin, and sewage sediment floating in water taken from the Broad Street pump. This proved that a nearby leaking cesspool had broken into the well shaft, poisoning drinking water with human waste.',
-            context:
-              'Dr Arthur Hill Hassall was commissioned to analyse water samples from Soho during the outbreak. His microscope revealed that Soho residents were drinking diluted sewage from a cesspit four feet from the well.',
-            hinge_question:
-              "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-            provenance_clues: {
-              author: 'Dr Arthur Hill Hassall, pioneer of food and water microscopy.',
-              audience: 'General Board of Health and London magistrates.',
-              motive:
-                'Providing visual scientific proof of gross fecal contamination in Broad Street pump water.',
-              hinge_question:
-                "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-            },
-            teacher_notes: {
-              hinge_question:
-                "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-              source_context:
-                "Dr Arthur Hill Hassall analysed water samples from Soho during the outbreak. **Hinge Question:** Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-              provenance_breakdown: {
-                author: 'Dr Arthur Hill Hassall, pioneer of food and water microscopy.',
-                audience: 'General Board of Health and London magistrates.',
-                motive:
-                  'Providing visual scientific proof of gross fecal contamination in Broad Street pump water.',
-              },
-            },
-            source_context:
-              "Dr Arthur Hill Hassall analysed water samples from Soho during the outbreak. **Hinge Question:** Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-          },
-          sources: [
-            {
-              id: 'water_l7_src_b',
-              letter: 'B',
-              type: 'visual',
-              src: '/images/broad_street_pump_water_microscope_1854.jpg',
-              image: '/images/broad_street_pump_water_microscope_1854.jpg',
-              title:
-                'Source B: Microscopic Examination of Broad Street Pump Water by Dr Arthur Hill Hassall (1854)',
-              caption:
-                'Contemporary botanical and microscopic drawing showing organic matter, hair, fungal spores, and sewage sediment found in water drawn from the Broad Street pump during the 1854 epidemic (General Board of Health Report).',
-              author: 'Dr Arthur Hill Hassall, Public Analyst',
-              date: '1854',
-              question_badge: 'REASON 1: SCIENTIFIC EPIDEMIOLOGY & MICROSCOPY',
-              question:
-                "What does Dr Hassall's microscopic drawing reveal about the water Soho residents were drinking?",
-              model_answer:
-                'Source B reveals decaying organic filaments, hair, dead skin, and sewage sediment floating in water taken from the Broad Street pump. This proved that a nearby leaking cesspool had broken into the well shaft, poisoning drinking water with human waste.',
-              context:
-                'Dr Arthur Hill Hassall was commissioned to analyse water samples from Soho during the outbreak. His microscope revealed that Soho residents were drinking diluted sewage from a cesspit four feet from the well.',
-              hinge_question:
-                "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-              provenance_clues: {
-                author: 'Dr Arthur Hill Hassall, pioneer of food and water microscopy.',
-                audience: 'General Board of Health and London magistrates.',
-                motive:
-                  'Providing visual scientific proof of gross fecal contamination in Broad Street pump water.',
-                hinge_question:
-                  "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-              },
-              teacher_notes: {
-                hinge_question:
-                  "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-                source_context:
-                  "Dr Arthur Hill Hassall analysed water samples from Soho during the outbreak. **Hinge Question:** Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-                provenance_breakdown: {
-                  author: 'Dr Arthur Hill Hassall, pioneer of food and water microscopy.',
-                  audience: 'General Board of Health and London magistrates.',
-                  motive:
-                    'Providing visual scientific proof of gross fecal contamination in Broad Street pump water.',
-                },
-              },
-              source_context:
-                "Dr Arthur Hill Hassall analysed water samples from Soho during the outbreak. **Hinge Question:** Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-            },
-          ],
-        },
-        {
-          act: 3,
-          title: 'Reason 2: Sir Joseph Bazalgette & Civil Engineering (1858–1865)',
-          theme_heading: 'Reason 2: Sir Joseph Bazalgette & Civil Engineering (1858–1865)',
-          text: '<span class="para-ref">[7.3]</span> While Snow showed water caused cholera, **Sir Joseph Bazalgette** engineered the permanent solution. In the 1850s, flushing toilets emptied raw sewage into street drains that flowed into the River Thames, turning London\'s drinking river into an open sewer. In June 1858, extreme summer heat created **The Great Stink**.<br><br>MPs fled the riverbank Parliament in terror, fearing miasma would kill them. In just eighteen days, Parliament dropped laissez-faire and granted £3 million for new sewers. Chief Engineer Bazalgette built **82 miles of underground intercepting brick sewers** parallel to the Thames, using 318 million bricks and waterproof Portland cement (Source C). Massive steam pumping stations (Abbey Mills and Crossness) lifted waste to flow out to the sea. Finished in 1865, Bazalgette’s sewers permanently separated drinking water from human sewage, ending cholera in London forever.<br><br><div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;"><div><span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateway</span><strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise The Great Stink & Bazalgette’s Sewers?</strong></div><a href="/?view=lessons&unit=water_and_sanitation&lesson=5" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 5: The Great Stink & Bazalgette</a></div>',
-          source: {
-            id: 'water_l7_src_c',
-            letter: 'C',
-            type: 'visual',
-            src: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-            image: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-            title: 'Source C: Construction of the Low-Level Intercepting Sewer (1862)',
-            caption:
-              'Engraving from The Illustrated London News showing bricklayers constructing the egg-shaped brick tunnels of the London main drainage system (Wellcome Collection 38481i).',
-            author: 'The Illustrated London News Special Artist',
-            date: '1862',
-            question_badge: 'REASON 2: CIVIL ENGINEERING & MAIN DRAINAGE',
-            question:
-              "Why was the construction of Bazalgette's intercepting sewers an engineering triumph?",
-            model_answer:
-              'Source C shows bricklayers constructing massive egg-shaped subterranean brick tunnels. This engineering masterpiece diverted hundreds of millions of gallons of sewage eastward away from London, permanently ending water-borne cholera epidemics in the capital.',
-            context:
-              'Bazalgette oversaw the laying of 318 million bricks, 82 miles of underground main intercepting sewers, and 1,100 miles of street sewers. The egg shape ensured self-scouring velocity even during dry spells.',
-            hinge_question:
-              'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-            provenance_clues: {
-              author: 'Illustrated London News staff artist.',
-              audience:
-                'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-              motive:
-                'Celebrating the unprecedented subterranean engineering works transforming London.',
-              hinge_question:
-                'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-              source_context:
-                'Bazalgette oversaw the construction of 82 miles of underground intercepting sewers using 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-              provenance_breakdown: {
-                author: 'Illustrated London News staff artist.',
-                audience:
-                  'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-                motive:
-                  'Celebrating the unprecedented subterranean engineering works transforming London.',
-              },
-            },
-            source_context:
-              'Bazalgette oversaw the construction of 82 miles of underground intercepting sewers using 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-          },
-          sources: [
-            {
-              id: 'water_l7_src_c',
-              letter: 'C',
-              type: 'visual',
-              src: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-              image: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-              title: 'Source C: Construction of the Low-Level Intercepting Sewer (1862)',
-              caption:
-                'Engraving from The Illustrated London News showing bricklayers constructing the egg-shaped brick tunnels of the London main drainage system (Wellcome Collection 38481i).',
-              author: 'The Illustrated London News Special Artist',
-              date: '1862',
-              question_badge: 'REASON 2: CIVIL ENGINEERING & MAIN DRAINAGE',
-              question:
-                "Why was the construction of Bazalgette's intercepting sewers an engineering triumph?",
-              model_answer:
-                'Source C shows bricklayers constructing massive egg-shaped subterranean brick tunnels. This engineering masterpiece diverted hundreds of millions of gallons of sewage eastward away from London, permanently ending water-borne cholera epidemics in the capital.',
-              context:
-                'Bazalgette oversaw the laying of 318 million bricks, 82 miles of underground main intercepting sewers, and 1,100 miles of street sewers. The egg shape ensured self-scouring velocity even during dry spells.',
-              hinge_question:
-                'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-              provenance_clues: {
-                author: 'Illustrated London News staff artist.',
-                audience:
-                  'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-                motive:
-                  'Celebrating the unprecedented subterranean engineering works transforming London.',
-                hinge_question:
-                  'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-                source_context:
-                  'Bazalgette oversaw the construction of 82 miles of underground intercepting sewers using 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-                provenance_breakdown: {
-                  author: 'Illustrated London News staff artist.',
-                  audience:
-                    'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-                  motive:
-                    'Celebrating the unprecedented subterranean engineering works transforming London.',
-                },
-              },
-              source_context:
-                'Bazalgette oversaw the construction of 82 miles of underground intercepting sewers using 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-            },
-          ],
-          image: '/units/water_and_sanitation/assets/joseph_bazalgette.jpg',
-          image_alt:
-            'Portrait of Sir Joseph Bazalgette, Chief Engineer of the Metropolitan Board of Works',
-          caption:
-            "Sir Joseph Bazalgette (1819–1891): His civil engineering masterpiece saved hundreds of thousands of lives by permanently removing toxic waste from Britain's capital city.",
-          isReversed: true,
-        },
-        {
-          act: 4,
-          title: 'Reason 3: Louis Pasteur & The Germ Theory (1861)',
-          theme_heading: 'Reason 3: Louis Pasteur & The Germ Theory (1861)',
-          text: '<span class="para-ref">[7.4]</span> The third catalyst was the 1861 scientific breakthrough of French chemist **Louis Pasteur**. For centuries, doctors believed in spontaneous generation—the idea that rotting matter created disease out of nothing. This allowed doctors to ignore Snow’s water theory, because nobody could see germs.<br><br>Pasteur disproved spontaneous generation with his **swan-neck flask experiments** (Source D). Boiled broth stayed clear in curved glass flasks that trapped airborne dust; only when the neck was broken did airborne microbes enter and spoil the liquid. In 1861, Pasteur published **Germ Theory**, proving living microscopic bacteria cause decay and disease. In 1884, German scientist Robert Koch isolated the exact cholera bacterium (*Vibrio cholerae*). Germ Theory destroyed miasma forever: clean water was now proven by science to be vital to stop lethal bacteria.',
-          source: {
-            id: 'water_l7_src_d',
-            letter: 'D',
-            type: 'visual',
-            src: '/images/pasteur_actual_flask.jpg',
-            image: '/images/pasteur_actual_flask.jpg',
-            title:
-              "Source D: Louis Pasteur's Original Glass Swan-Neck Flask (Institut Pasteur, Paris)",
-            caption:
-              'Photograph of the preserved glass swan-neck flask used by Louis Pasteur in his 1861 experiments, in which broth remains sterile and uncontaminated over 160 years later (Institut Pasteur Museum, Paris).',
-            author: 'Institut Pasteur Museum Curators',
-            date: '1861 / Modern Photograph',
-            question_badge: 'REASON 3: LABORATORY MICROBIOLOGY & GERM THEORY',
-            question:
-              "Why did Pasteur's laboratory discovery provide the essential foundation for all modern public health regulations?",
-            model_answer:
-              'Source D shows the actual glass apparatus that proved microbes exist in air and water. This provided the undeniable scientific proof governments needed to justify spending public tax money on water filtration and hygiene laws.',
-            context:
-              "Pasteur's flasks proved that microbes do not generate spontaneously from nothing. By proving that living germs cause fermentation and putrefaction, Pasteur established the biological basis for antiseptic surgery and water purification.",
-            hinge_question:
-              'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
-            provenance_clues: {
-              author: 'Institut Pasteur Museum photography.',
-              audience: 'Historians, scientists, and students worldwide.',
-              motive:
-                'Preserving the original physical glassware that founded modern microbiology.',
-              hinge_question:
-                'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
-              source_context:
-                "Pasteur's flasks proved microbes do not generate spontaneously. **Hinge Question:** How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?",
-              provenance_breakdown: {
-                author: 'Institut Pasteur Museum photography.',
-                audience: 'Historians, scientists, and students worldwide.',
-                motive:
-                  'Preserving the original physical glassware that founded modern microbiology.',
-              },
-            },
-            source_context:
-              "Pasteur's flasks proved microbes do not generate spontaneously. **Hinge Question:** How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?",
-          },
-          sources: [
-            {
-              id: 'water_l7_src_d',
-              letter: 'D',
-              type: 'visual',
-              src: '/images/pasteur_actual_flask.jpg',
-              image: '/images/pasteur_actual_flask.jpg',
-              title:
-                "Source D: Louis Pasteur's Original Glass Swan-Neck Flask (Institut Pasteur, Paris)",
-              caption:
-                'Photograph of the preserved glass swan-neck flask used by Louis Pasteur in his 1861 experiments, in which broth remains sterile and uncontaminated over 160 years later (Institut Pasteur Museum, Paris).',
-              author: 'Institut Pasteur Museum Curators',
-              date: '1861 / Modern Photograph',
-              question_badge: 'REASON 3: LABORATORY MICROBIOLOGY & GERM THEORY',
-              question:
-                "Why did Pasteur's laboratory discovery provide the essential foundation for all modern public health regulations?",
-              model_answer:
-                'Source D shows the actual glass apparatus that proved microbes exist in air and water. This provided the undeniable scientific proof governments needed to justify spending public tax money on water filtration and hygiene laws.',
-              context:
-                "Pasteur's flasks proved that microbes do not generate spontaneously from nothing. By proving that living germs cause fermentation and putrefaction, Pasteur established the biological basis for antiseptic surgery and water purification.",
-              hinge_question:
-                'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
-              provenance_clues: {
-                author: 'Institut Pasteur Museum photography.',
-                audience: 'Historians, scientists, and students worldwide.',
-                motive:
-                  'Preserving the original physical glassware that founded modern microbiology.',
-                hinge_question:
-                  'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
-                source_context:
-                  "Pasteur's flasks proved microbes do not generate spontaneously. **Hinge Question:** How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?",
-                provenance_breakdown: {
-                  author: 'Institut Pasteur Museum photography.',
-                  audience: 'Historians, scientists, and students worldwide.',
-                  motive:
-                    'Preserving the original physical glassware that founded modern microbiology.',
-                },
-              },
-              source_context:
-                "Pasteur's flasks proved microbes do not generate spontaneously. **Hinge Question:** How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?",
-            },
-          ],
-        },
-        {
-          act: 5,
-          title: 'Reason 4: Government Legislation & The 1875 Public Health Act',
-          theme_heading: 'Reason 4: Government Legislation & The 1875 Public Health Act',
-          text: '<span class="para-ref">[7.5]</span> Scientific discoveries and engineering marvels only succeeded nationwide when backed by compulsory law. The 1848 Public Health Act failed because it was permissive (optional); selfish ratepayers refused to spend taxes on sewers.<br><br>The turning point came in 1875 under Prime Minister Benjamin Disraeli. Armed with proof from Snow, Bazalgette, and Pasteur, Parliament passed the **1875 Public Health Act** (Source E). This law was **compulsory** ("must do"): every council had to appoint a Medical Officer of Health, provide clean piped drinking water, build covered sewers, collect household rubbish, and inspect butcher shops. The 1875 Act permanently ended laissez-faire, ensuring every town in Britain gained clean water and sanitation, causing national death rates to tumble into the twentieth century.<br><br><div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;"><div><span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateway</span><strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise the 1875 Public Health Act & Laissez-Faire?</strong></div><a href="/?view=lessons&unit=water_and_sanitation&lesson=5" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 5: The 1875 Act & Modern Sanitation</a></div>',
-          sources: [
-            {
-              id: 'water_l7_src_e',
-              letter: 'E',
-              type: 'written',
-              src: '',
-              image: '',
-              title:
-                'Source E: The Public Health Act 1875 (38 & 39 Vict. c. 55): Compulsory Municipal Sanitary Provision',
-              caption:
-                'Extract from the landmark 1875 Public Health Act which abolished laissez-faire and made clean water supply and sewer construction compulsory for every local council in Britain (The National Archives / UK Statute Law).',
-              author: 'British Parliament under Prime Minister Benjamin Disraeli',
-              date: '1875',
-              content:
-                'Every urban authority shall provide and keep in their waterworks a supply of pure and wholesome water, and where any house within their district is without a proper supply of water the local authority shall require the owner to obtain such supply... and it shall be the duty of every local authority to cause to be made such sewers as may be necessary for effectually draining their district for the purposes of this Act... and every local authority shall from time to time appoint a fit and proper person to be Medical Officer of Health.',
-              question_badge: 'REASON 4: COMPULSORY STATUTE & THE 1875 ACT',
-              question:
-                "Why was the 1875 Public Health Act far more effective than earlier health legislation in transforming Britain's towns?",
-              model_answer:
-                'The 1875 Act made public health duties strictly compulsory rather than optional. For the first time, every local authority across Britain was legally compelled to supply pure water, build covered sewers, and appoint a qualified Medical Officer of Health, ending decades of ratepayer evasion.',
-              context:
-                "Passed by Disraeli's government under the slogan 'Sanitas sanitatum', the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties.",
-              hinge_question:
-                'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
-              provenance_clues: {
-                author: 'British Parliament under Prime Minister Benjamin Disraeli.',
-                audience:
-                  'Municipal corporations, town councils, and local sanitary authorities nationwide.',
-                motive:
-                  'Establishing a universal, compulsory statutory framework for sanitation and clean water across Britain.',
-                hinge_question:
-                  'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
-              },
-              teacher_notes: {
-                hinge_question:
-                  'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
-                source_context:
-                  "Passed by Disraeli's government, the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties. **Hinge Question:** Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?",
-                provenance_breakdown: {
-                  author: 'British Parliament under Prime Minister Benjamin Disraeli.',
-                  audience:
-                    'Municipal corporations, town councils, and local sanitary authorities nationwide.',
-                  motive:
-                    'Establishing a universal, compulsory statutory framework for sanitation and clean water across Britain.',
-                },
-              },
-              source_context:
-                "Passed by Disraeli's government, the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties. **Hinge Question:** Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?",
-            },
-          ],
-          source: {
-            id: 'water_l7_src_e',
-            letter: 'E',
-            type: 'written',
-            src: '',
-            image: '',
-            title:
-              'Source E: The Public Health Act 1875 (38 & 39 Vict. c. 55): Compulsory Municipal Sanitary Provision',
-            caption:
-              'Extract from the landmark 1875 Public Health Act which abolished laissez-faire and made clean water supply and sewer construction compulsory for every local council in Britain (The National Archives / UK Statute Law).',
-            author: 'British Parliament under Prime Minister Benjamin Disraeli',
-            date: '1875',
-            content:
-              'Every urban authority shall provide and keep in their waterworks a supply of pure and wholesome water, and where any house within their district is without a proper supply of water the local authority shall require the owner to obtain such supply... and it shall be the duty of every local authority to cause to be made such sewers as may be necessary for effectually draining their district for the purposes of this Act... and every local authority shall from time to time appoint a fit and proper person to be Medical Officer of Health.',
-            question_badge: 'REASON 4: COMPULSORY STATUTE & THE 1875 ACT',
-            question:
-              "Why was the 1875 Public Health Act far more effective than earlier health legislation in transforming Britain's towns?",
-            model_answer:
-              'The 1875 Act made public health duties strictly compulsory rather than optional. For the first time, every local authority across Britain was legally compelled to supply pure water, build covered sewers, and appoint a qualified Medical Officer of Health, ending decades of ratepayer evasion.',
-            context:
-              "Passed by Disraeli's government under the slogan 'Sanitas sanitatum', the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties.",
-            hinge_question:
-              'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
-            provenance_clues: {
-              author: 'British Parliament under Prime Minister Benjamin Disraeli.',
-              audience:
-                'Municipal corporations, town councils, and local sanitary authorities nationwide.',
-              motive:
-                'Establishing a universal, compulsory statutory framework for sanitation and clean water across Britain.',
-              hinge_question:
-                'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
-            },
-            teacher_notes: {
-              hinge_question:
-                'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
-              source_context:
-                "Passed by Disraeli's government, the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties. **Hinge Question:** Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?",
-              provenance_breakdown: {
-                author: 'British Parliament under Prime Minister Benjamin Disraeli.',
-                audience:
-                  'Municipal corporations, town councils, and local sanitary authorities nationwide.',
-                motive:
-                  'Establishing a universal, compulsory statutory framework for sanitation and clean water across Britain.',
-              },
-            },
-            source_context:
-              "Passed by Disraeli's government, the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties. **Hinge Question:** Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?",
-          },
-        },
-      ],
-      tasks: [
-        {
-          id: 'ws_l7_q2_explain_why',
-          type: 'extended_writing',
-          topic: 'November Assessment: Explain Why [12 marks • 30 mins]',
-          title: 'November Assessment: Explain Why [12 marks • 30 mins]',
-          question:
-            'Explain why there was rapid progress in Public Health between 1800 and 1900. [12 marks • 30 mins]',
-          stimulus: [
-            'Dr John Snow and the Broad Street pump investigation (1854)',
-            'Joseph Bazalgette and the London intercepting sewer network (1858–1865)',
-            'Louis Pasteur and the Germ Theory of disease (1861)',
-            'The 1875 Public Health Act and compulsory government legislation',
-          ],
-          scaffolding: {
-            guidance:
-              'Write a structured 3-paragraph PEEL response choosing 3 of the 4 factors above, followed by a sustained evaluative conclusion. Use your 1 sheet of A4 revision notes to deploy precise facts, statistics, and dates.',
-            structure_strip: [
-              {
-                col: '1. PARAGRAPH 1 (FACTOR 1)',
-                prompt:
-                  'Deploy your first chosen factor (e.g. Dr John Snow & the 1854 Broad Street investigation). State your point clearly, explain the evidence (spot map, pump handle), and link directly to why it caused rapid progress [7.2].',
-                starter:
-                  'A primary catalyst explaining why there was rapid progress in public health was Dr John Snow’s scientific breakthrough during the 1854 Soho cholera outbreak...',
-              },
-              {
-                col: '2. PARAGRAPH 2 (FACTOR 2)',
-                prompt:
-                  'Deploy your second chosen factor (e.g. Sir Joseph Bazalgette & the Great Stink of 1858). Detail the 82 miles of brick intercepting sewers, Portland cement, and eliminating Thames pollution [7.3].',
-                starter:
-                  'Furthermore, a decisive engineering factor explaining why rapid progress occurred was Sir Joseph Bazalgette’s construction of London’s underground sewer network...',
-              },
-              {
-                col: '3. PARAGRAPH 3 (FACTOR 3)',
-                prompt:
-                  'Deploy your third chosen factor (e.g. Louis Pasteur’s Germ Theory in 1861 OR the compulsory 1875 Public Health Act). Explain how biological proof or legal force destroyed laissez-faire [7.4, 7.5].',
-                starter:
-                  'Additionally, a fundamental reason explaining why public health advanced rapidly was the passage of the landmark 1875 Public Health Act...',
-              },
-              {
-                col: '4. CONCLUSION / EVALUATIVE LINK',
-                prompt:
-                  'Weigh which factor was the true master catalyst. Explain how science, engineering, and government law combined to conquer water-borne disease.',
-                starter:
-                  'In conclusion, while John Snow identified the cause and Bazalgette built the engineering solution, the most decisive factor was...',
-              },
-            ],
-          },
-          hints: [
-            'Point: State your factor clearly using the exact wording from the question stem ("A primary factor explaining why there was rapid progress in public health was...").',
-            'Evidence: Include specific names, dates, and numbers: 1854, Broad Street pump, Soho spot map, 1858 Great Stink, 82 miles of sewers, 318 million bricks, 1861 Germ Theory, swan-neck flasks, 1875 Public Health Act.',
-            'Explain: Explain the cause-and-effect mechanism: show HOW the factor defeated miasma or forced politicians to abandon laissez-faire.',
-            'Link: Always conclude the paragraph by reinforcing how this specific factor drove rapid public health progress across the century.',
-          ],
-          model_answer:
-            'A primary catalyst explaining why there was rapid progress in public health between 1800 and 1900 was Dr John Snow’s pioneering epidemiological investigation during the 1854 Soho cholera outbreak. For decades, the medical establishment clung to the unproven miasma theory, believing disease was inhaled from foul vapours. Snow challenged this orthodoxy by reasoning that because cholera attacked the digestive tract with violent sickness and diarrhea, the poison had to be swallowed through drinking water. When cholera killed over five hundred people in Soho in August 1854, Snow plotted each fatality on a detailed spot map, proving that deaths clustered directly around the Broad Street water pump. By discovering that brewery workers drinking beer were unharmed, Snow convinced the local vestry to remove the pump handle, causing the epidemic to collapse. This was a critical reason for rapid progress because Snow provided empirical proof that cholera was a water-borne infection, directing public health away from purifying air toward the vital necessity of securing pure drinking water.<br><br>Furthermore, a decisive technological factor explaining why rapid progress occurred was Sir Joseph Bazalgette’s construction of London’s monumental underground sewer network between 1859 and 1865. The invention of flushing water closets had accidentally transformed the River Thames into a fermenting open sewer. In the sweltering heatwave of June 1858, the resulting "Great Stink" became so unbearable that MPs in the Houses of Parliament fled river committee rooms in panic. Terrified for their own lives, Parliament abandoned its traditional laissez-faire principles and passed emergency legislation in just eighteen days to grant £3 million for London’s drainage. As Chief Engineer, Bazalgette constructed 82 miles of underground brick intercepting sewers using 318 million bricks and newly invented waterproof Portland cement. Using gravity and steam pumping stations at Crossness and Abbey Mills, Bazalgette transported 420 million gallons of sewage daily eastward past the capital, safely away from drinking intakes. This engineering triumph was a fundamental reason for progress because it permanently separated clean water from human waste, eradicating cholera epidemics from London forever.<br><br>Additionally, the decisive legal factor explaining why public health improved nationwide was the passage of the landmark 1875 Public Health Act under Prime Minister Benjamin Disraeli. Earlier legislation, such as Edwin Chadwick’s 1848 Public Health Act, had largely failed because forming health boards was permissive (optional), allowing penny-pinching ratepayers to block sanitation spending. However, following Louis Pasteur’s 1861 Germ Theory—which disproved spontaneous generation and proved living microbes caused disease—the government had scientific proof that sanitation was a biological imperative. The 1875 Act made public health compulsory: for the first time, every local council in Britain was legally forced to appoint a Medical Officer of Health, inspect market food, pave streets, and guarantee clean piped water and covered sewers to all households. This legislation was essential because it forced even the poorest rural and industrial towns to implement sanitary engineering, ending laissez-faire and ensuring that scientific breakthroughs protected every citizen.<br><br>In conclusion, while John Snow provided the scientific diagnosis and Louis Pasteur proved microbial pathology, the most decisive factor driving rapid progress was the combination of Bazalgette’s civil engineering and the 1875 Public Health Act. Without Bazalgette’s sewers, Snow’s discovery would have remained an unused theory; without the compulsory 1875 Act, modern sanitation would have remained confined to wealthy districts of London. Therefore, rapid progress occurred because parliamentary law transformed engineering and medical science into a compulsory national reality.',
-        },
-      ],
       quick_quiz: [
         {
           question:
@@ -9891,390 +6622,6 @@ const water_and_sanitation_data = {
         {
           q: 'What are the rules for your 1 sheet of A4 revision notes in the assessment?',
           a: 'Bullet points, mind maps, statistics, and dates only. NO full continuous sentences or pre-written paragraphs allowed.',
-        },
-      ],
-      quiz: [
-        {
-          question:
-            'What political philosophy ("leave alone") stopped early Victorian governments from spending taxes on sewers?',
-          options: ['Imperialism', 'Laissez-faire', 'Socialism', 'Feudalism'],
-          answer: 'Laissez-faire',
-          explanation:
-            'Laissez-faire was the belief that government should not interfere in private business or citizens’ lives.',
-        },
-        {
-          question:
-            'In what year did Dr John Snow map cholera deaths around the Broad Street pump in Soho?',
-          options: ['1831', '1848', '1854', '1875'],
-          answer: '1854',
-          explanation:
-            'John Snow carried out his famous Broad Street investigation in August 1854.',
-        },
-        {
-          question:
-            'What famous item did Dr John Snow persuade parish vestrymen to remove in Soho?',
-          options: [
-            'The Broad Street pump handle',
-            'The water pipes from the river',
-            'The church bells',
-            'The hospital curtains',
-          ],
-          answer: 'The Broad Street pump handle',
-          explanation:
-            'Removing the iron pump handle stopped residents from drinking contaminated water.',
-        },
-        {
-          question:
-            'What historic environmental crisis in June 1858 finally terrified Parliament into funding London’s sewers?',
-          options: [
-            'The Great Fire of London',
-            'The Great Stink',
-            'The Black Death',
-            'The Peasants’ Revolt',
-          ],
-          answer: 'The Great Stink',
-          explanation:
-            'The unbearable stench from the boiling Thames forced MPs to fund Bazalgette’s sewers.',
-        },
-        {
-          question:
-            'How many miles of brick intercepting sewers did Sir Joseph Bazalgette build across London?',
-          options: ['15 miles', '300 miles', '500 miles', '82 miles'],
-          answer: '82 miles',
-          explanation:
-            'Bazalgette built 82 miles of underground intercepting sewers using 318 million bricks.',
-        },
-        {
-          question:
-            'What newly invented waterproof building material did Bazalgette rigorously test for his sewer tunnels?',
-          options: ['Cast iron', 'Terracotta clay', 'Portland cement', 'Lead sheeting'],
-          answer: 'Portland cement',
-          explanation:
-            'Portland cement set rock-hard underwater and resisted acidic sewage corrosion.',
-        },
-        {
-          question:
-            'Which French scientist published the revolutionary Germ Theory of Disease in 1861?',
-          options: ['Edward Jenner', 'Thomas Sydenham', 'Robert Koch', 'Louis Pasteur'],
-          answer: 'Louis Pasteur',
-          explanation:
-            'Louis Pasteur proved that microscopic living organisms caused fermentation and disease.',
-        },
-        {
-          question:
-            'What shape of glass flask did Louis Pasteur use to disprove spontaneous generation in his broth experiments?',
-          options: ['Square bottle', 'Open beaker', 'Swan-neck (S-shaped) flask', 'Test tube'],
-          answer: 'Swan-neck (S-shaped) flask',
-          explanation:
-            'The downward curve trapped dust and microbes, keeping the boiled broth sterile.',
-        },
-        {
-          question:
-            'What was the crucial legal difference between the 1848 Public Health Act and the 1875 Public Health Act?',
-          options: [
-            'The 1875 Act banned flushing toilets',
-            'The 1848 Act was optional ("may"), while the 1875 Act was compulsory ("must")',
-            'The 1848 Act only applied to Scotland',
-            'The 1875 Act made all medicine free',
-          ],
-          answer: 'The 1848 Act was optional ("may"), while the 1875 Act was compulsory ("must")',
-          explanation:
-            'The 1875 Act legally forced every council in Britain to provide clean water and sewers.',
-        },
-        {
-          question:
-            'What official was every local council legally required to appoint under the 1875 Public Health Act?',
-          options: [
-            'Medical Officer of Health',
-            'Gong Farmer',
-            'Sanitary Police Officer',
-            'Town Crier',
-          ],
-          answer: 'Medical Officer of Health',
-          explanation:
-            'Every district had to employ a qualified Medical Officer to inspect housing and track disease.',
-        },
-      ],
-      video: [
-        {
-          id: 'js_Kab5C2xI',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=js_Kab5C2xI',
-          title: 'Public Health & Social Reform in Victorian Britain | UK Parliament',
-          duration: '3 mins 30 secs',
-          pathway: 'Starter Hook',
-          teacher_guidance:
-            'Recommended Watch Window: 00:15–03:15 | Lesson Phase: Synoptic Review Hook | Tone Alert: Compares the voluntary 1848 Public Health Act with the compulsory 1875 Act.',
-          viewing_task:
-            '[01:00] Quick Check: What major constitutional change transformed the 1875 Public Health Act from an optional recommendation into a compulsory legal duty?\n[02:45] Hinge Question: Why did the extension of the vote to urban working-class men in the 1867 Reform Act compel politicians to finally pass compulsory public health laws?',
-          model_answer:
-            'Quick Check: It made it mandatory for every local authority to appoint medical officers of health, provide clean water, build sewers, and inspect food.\nHinge Question: For the first time, working-class men in industrial towns had the vote; MPs could no longer ignore slum conditions if they wanted to win elections, ending the era of laissez-faire inaction.',
-        },
-        {
-          id: 'XoS68K916eo',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=XoS68K916eo',
-          title: 'Government Action & The Public Health Act 1875 | Key Stage 3 History',
-          duration: '3 mins 24 secs',
-          pathway: 'Core Enquiry',
-          teacher_guidance:
-            "Recommended Watch Window: 00:20–03:10 | Lesson Phase: Landmark Legislation | Tone Alert: Examines Disraeli's Tory social reforms ('Sanitas sanitatum, omnia sanitas').",
-          viewing_task:
-            "[00:50] Recall: What specific requirements were mandated by Benjamin Disraeli's 1875 Public Health Act?\n[01:45] Explain: How did the 1875 Act work alongside the Artisan's Dwellings Act to empower councils to demolish insanitary slums?\n[02:40] Challenge: In evaluating public health progress between 1800 and 1900, which factor was most decisive: scientific breakthroughs (Pasteur/Koch), engineering feats (Bazalgette), or government legislation?",
-          model_answer:
-            'Recall: Councils were legally required to provide clean water, maintain covered sewers, appoint sanitary inspectors, collect rubbish, and regulate food adulteration.\nExplain: It allowed local authorities to compulsorily purchase and tear down overcrowded, disease-ridden tenements and rebuild planned housing.\nChallenge: A holistic historical judgement: engineering (Bazalgette) created the physical infrastructure, science (Pasteur/Snow) proved why water sanitation worked, but compulsory government legislation (1875) was essential to force reluctant ratepayers to fund it nationwide.',
-        },
-        {
-          id: 'Dj5h1kKjVYc',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=Dj5h1kKjVYc',
-          title: 'Victorian Urban Reality & Social Reform | Cinematic Trailer',
-          duration: '2 mins 24 secs',
-          pathway: 'Cinematic',
-          teacher_guidance:
-            'Recommended Watch Window: 00:00–02:24 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Dramatises the human struggle of working-class citizens in industrial Britain.',
-          viewing_task:
-            '[01:10] Cinematic Discussion Focus: How does the cinematography capture the transition from despairing working-class poverty toward organized political demand for dignity, health, and representation?',
-          model_answer:
-            'Cinematic Discussion Focus: The trailer shows how working people united to demand basic human rights—including clean air, potable water, and decent housing—proving that political democracy and public health progress were inextricably linked.',
-        },
-        {
-          id: 'lOIp7pOMrkI',
-          type: 'youtube',
-          url: 'https://www.youtube.com/watch?v=lOIp7pOMrkI',
-          title: "How The Victorians Ended London's Great Stink | Masterclass Archive",
-          duration: '12 mins 40 secs',
-          pathway: 'Documentary Depth',
-          teacher_guidance:
-            'Recommended Watch Window: 01:00–12:00 | Lesson Phase: Synoptic Synthesis | Tone Alert: Comprehensive documentary exploring the culmination of 19th-century public health progress.',
-          viewing_task:
-            '[02:30] Recall: How did life expectancy in British cities change between 1850 and 1900 as a result of clean water infrastructure?\n[06:45] Explain: How did the eradication of waterborne cholera and typhoid pave the way for modern 20th-century welfare and healthcare systems?\n[11:00] Challenge: What lessons from 19th-century water sanitation apply to developing nations today where over 2 billion people still lack safely managed drinking water?',
-          model_answer:
-            'Recall: Infant mortality plummeted and average urban life expectancy rose from under 20 to nearly 50 by the early 20th century.\nExplain: Proving that government could successfully eliminate diseases through environmental hygiene laid the foundation for the 1911 National Insurance Act and the 1948 National Health Service (NHS).\nChallenge: The Victorian experience demonstrates that modern medicine alone cannot conquer disease without basic municipal infrastructure: clean tap water and subterranean sewage disposal remain the single greatest public health intervention in human history.',
-        },
-      ],
-      sources: [
-        {
-          id: 'water_l7_src_a',
-          letter: 'A',
-          type: 'visual',
-          src: '/units/water_and_sanitation/assets/edwin_chadwick.jpg',
-          image: '/units/water_and_sanitation/assets/edwin_chadwick.jpg',
-          title: 'Source A: Portrait and Sanitary Campaign of Edwin Chadwick (1800–1890)',
-          caption:
-            'Formal portrait photograph of Sir Edwin Chadwick, utilitarian reformer whose 1842 report forced the British state to confront the relationship between urban squalor and mortality (National Portrait Gallery NPG x12882).',
-          author: 'Victorian Portrait Studio',
-          date: 'c. 1860',
-          question_badge: 'THE 19TH-CENTURY CRISIS & CHADWICK',
-          question:
-            'What role did Edwin Chadwick play in initiating the 19th-century public health campaign?',
-          model_answer:
-            'Source A represents Edwin Chadwick, whose 1842 report forced politicians to confront the terrible sanitary conditions of the working class. His energetic campaigning laid the foundation for government intervention and the first Public Health Acts.',
-          context:
-            'Chadwick was a dogmatic, determined social reformer. He believed that filthy living conditions caused pauperism, and that cleaning cities was the most efficient way to reduce welfare costs for taxpayers.',
-          hinge_question:
-            'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-          provenance_clues: {
-            author: 'Victorian studio portrait photographer.',
-            audience: 'Victorian society, parliamentary reformers, and posterity.',
-            motive: 'Documenting the influential architect of the English public health movement.',
-            hinge_question:
-              'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-            source_context:
-              'Chadwick was a dogmatic social reformer who proved filthy living conditions caused pauperism. **Hinge Question:** Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-            provenance_breakdown: {
-              author: 'Victorian studio portrait photographer.',
-              audience: 'Victorian society, parliamentary reformers, and posterity.',
-              motive:
-                'Documenting the influential architect of the English public health movement.',
-            },
-          },
-          source_context:
-            'Chadwick was a dogmatic social reformer who proved filthy living conditions caused pauperism. **Hinge Question:** Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?',
-        },
-        {
-          id: 'water_l7_src_b',
-          letter: 'B',
-          type: 'visual',
-          src: '/images/broad_street_pump_water_microscope_1854.jpg',
-          image: '/images/broad_street_pump_water_microscope_1854.jpg',
-          title:
-            'Source B: Microscopic Examination of Broad Street Pump Water by Dr Arthur Hill Hassall (1854)',
-          caption:
-            'Contemporary botanical and microscopic drawing showing organic matter, hair, fungal spores, and sewage sediment found in water drawn from the Broad Street pump during the 1854 epidemic (General Board of Health Report).',
-          author: 'Dr Arthur Hill Hassall, Public Analyst',
-          date: '1854',
-          question_badge: 'REASON 1: SCIENTIFIC EPIDEMIOLOGY & MICROSCOPY',
-          question:
-            "What does Dr Hassall's microscopic drawing reveal about the water Soho residents were drinking?",
-          model_answer:
-            'Source B reveals decaying organic filaments, hair, dead skin, and sewage sediment floating in water taken from the Broad Street pump. This proved that a nearby leaking cesspool had broken into the well shaft, poisoning drinking water with human waste.',
-          context:
-            'Dr Arthur Hill Hassall was commissioned to analyse water samples from Soho during the outbreak. His microscope revealed that Soho residents were drinking diluted sewage from a cesspit four feet from the well.',
-          hinge_question:
-            "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-          provenance_clues: {
-            author: 'Dr Arthur Hill Hassall, pioneer of food and water microscopy.',
-            audience: 'General Board of Health and London magistrates.',
-            motive:
-              'Providing visual scientific proof of gross fecal contamination in Broad Street pump water.',
-            hinge_question:
-              "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-          },
-          teacher_notes: {
-            hinge_question:
-              "Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-            source_context:
-              "Dr Arthur Hill Hassall analysed water samples from Soho during the outbreak. **Hinge Question:** Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-            provenance_breakdown: {
-              author: 'Dr Arthur Hill Hassall, pioneer of food and water microscopy.',
-              audience: 'General Board of Health and London magistrates.',
-              motive:
-                'Providing visual scientific proof of gross fecal contamination in Broad Street pump water.',
-            },
-          },
-          source_context:
-            "Dr Arthur Hill Hassall analysed water samples from Soho during the outbreak. **Hinge Question:** Why did Victorian officials initially dismiss microscopic particles in drinking water as 'harmless vegetable matter'?",
-        },
-        {
-          id: 'water_l7_src_c',
-          letter: 'C',
-          type: 'visual',
-          src: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-          image: '/units/water_and_sanitation/assets/bazalgette_sewer.jpg',
-          title: 'Source C: Construction of the Low-Level Intercepting Sewer (1862)',
-          caption:
-            'Engraving from The Illustrated London News showing bricklayers constructing the egg-shaped brick tunnels of the London main drainage system (Wellcome Collection 38481i).',
-          author: 'The Illustrated London News Special Artist',
-          date: '1862',
-          question_badge: 'REASON 2: CIVIL ENGINEERING & MAIN DRAINAGE',
-          question:
-            "Why was the construction of Bazalgette's intercepting sewers an engineering triumph?",
-          model_answer:
-            'Source C shows bricklayers constructing massive egg-shaped subterranean brick tunnels. This engineering masterpiece diverted hundreds of millions of gallons of sewage eastward away from London, permanently ending water-borne cholera epidemics in the capital.',
-          context:
-            'Bazalgette oversaw the laying of 318 million bricks, 82 miles of underground main intercepting sewers, and 1,100 miles of street sewers. The egg shape ensured self-scouring velocity even during dry spells.',
-          hinge_question:
-            'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-          provenance_clues: {
-            author: 'Illustrated London News staff artist.',
-            audience:
-              'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-            motive:
-              'Celebrating the unprecedented subterranean engineering works transforming London.',
-            hinge_question:
-              'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-            source_context:
-              'Bazalgette oversaw the construction of 82 miles of underground intercepting sewers using 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-            provenance_breakdown: {
-              author: 'Illustrated London News staff artist.',
-              audience:
-                'Victorian reading public fascinated by British industrial and civil engineering triumphs.',
-              motive:
-                'Celebrating the unprecedented subterranean engineering works transforming London.',
-            },
-          },
-          source_context:
-            'Bazalgette oversaw the construction of 82 miles of underground intercepting sewers using 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?',
-        },
-        {
-          id: 'water_l7_src_d',
-          letter: 'D',
-          type: 'visual',
-          src: '/images/pasteur_actual_flask.jpg',
-          image: '/images/pasteur_actual_flask.jpg',
-          title:
-            "Source D: Louis Pasteur's Original Glass Swan-Neck Flask (Institut Pasteur, Paris)",
-          caption:
-            'Photograph of the preserved glass swan-neck flask used by Louis Pasteur in his 1861 experiments, in which broth remains sterile and uncontaminated over 160 years later (Institut Pasteur Museum, Paris).',
-          author: 'Institut Pasteur Museum Curators',
-          date: '1861 / Modern Photograph',
-          question_badge: 'REASON 3: LABORATORY MICROBIOLOGY & GERM THEORY',
-          question:
-            "Why did Pasteur's laboratory discovery provide the essential foundation for all modern public health regulations?",
-          model_answer:
-            'Source D shows the actual glass apparatus that proved microbes exist in air and water. This provided the undeniable scientific proof governments needed to justify spending public tax money on water filtration and hygiene laws.',
-          context:
-            "Pasteur's flasks proved that microbes do not generate spontaneously from nothing. By proving that living germs cause fermentation and putrefaction, Pasteur established the biological basis for antiseptic surgery and water purification.",
-          hinge_question:
-            'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
-          provenance_clues: {
-            author: 'Institut Pasteur Museum photography.',
-            audience: 'Historians, scientists, and students worldwide.',
-            motive: 'Preserving the original physical glassware that founded modern microbiology.',
-            hinge_question:
-              'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?',
-            source_context:
-              "Pasteur's flasks proved microbes do not generate spontaneously. **Hinge Question:** How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?",
-            provenance_breakdown: {
-              author: 'Institut Pasteur Museum photography.',
-              audience: 'Historians, scientists, and students worldwide.',
-              motive:
-                'Preserving the original physical glassware that founded modern microbiology.',
-            },
-          },
-          source_context:
-            "Pasteur's flasks proved microbes do not generate spontaneously. **Hinge Question:** How did Germ Theory change the focus of public health from cleaning bad smells to destroying invisible microscopic organisms?",
-        },
-        {
-          id: 'water_l7_src_e',
-          letter: 'E',
-          type: 'written',
-          src: '',
-          image: '',
-          title:
-            'Source E: The Public Health Act 1875 (38 & 39 Vict. c. 55): Compulsory Municipal Sanitary Provision',
-          caption:
-            'Extract from the landmark 1875 Public Health Act which abolished laissez-faire and made clean water supply and sewer construction compulsory for every local council in Britain (The National Archives / UK Statute Law).',
-          author: 'British Parliament under Prime Minister Benjamin Disraeli',
-          date: '1875',
-          content:
-            'Every urban authority shall provide and keep in their waterworks a supply of pure and wholesome water, and where any house within their district is without a proper supply of water the local authority shall require the owner to obtain such supply... and it shall be the duty of every local authority to cause to be made such sewers as may be necessary for effectually draining their district for the purposes of this Act... and every local authority shall from time to time appoint a fit and proper person to be Medical Officer of Health.',
-          question_badge: 'REASON 4: COMPULSORY STATUTE & THE 1875 ACT',
-          question:
-            "Why was the 1875 Public Health Act far more effective than earlier health legislation in transforming Britain's towns?",
-          model_answer:
-            'The 1875 Act made public health duties strictly compulsory rather than optional. For the first time, every local authority across Britain was legally compelled to supply pure water, build covered sewers, and appoint a qualified Medical Officer of Health, ending decades of ratepayer evasion.',
-          context:
-            "Passed by Disraeli's government under the slogan 'Sanitas sanitatum', the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties.",
-          hinge_question:
-            'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
-          provenance_clues: {
-            author: 'British Parliament under Prime Minister Benjamin Disraeli.',
-            audience:
-              'Municipal corporations, town councils, and local sanitary authorities nationwide.',
-            motive:
-              'Establishing a universal, compulsory statutory framework for sanitation and clean water across Britain.',
-            hinge_question:
-              'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
-          },
-          teacher_notes: {
-            hinge_question:
-              'Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?',
-            source_context:
-              "Passed by Disraeli's government, the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties. **Hinge Question:** Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?",
-            provenance_breakdown: {
-              author: 'British Parliament under Prime Minister Benjamin Disraeli.',
-              audience:
-                'Municipal corporations, town councils, and local sanitary authorities nationwide.',
-              motive:
-                'Establishing a universal, compulsory statutory framework for sanitation and clean water across Britain.',
-            },
-          },
-          source_context:
-            "Passed by Disraeli's government, the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties. **Hinge Question:** Looking across the entire 19th century, which factor was most decisive in transforming public health: science, engineering, or government laws?",
         },
       ],
     },

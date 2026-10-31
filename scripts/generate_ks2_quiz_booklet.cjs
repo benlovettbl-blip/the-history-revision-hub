@@ -103,7 +103,7 @@ const QUIZ_DATA = [
     enquiry: 2,
     title: '2. Operation Pied Piper & British Evacuation',
     shortTitle: 'The Evacuation Experience',
-    narrative: "Operation Pied Piper • Railway Luggage Labels • Billeting Officers",
+    narrative: 'Operation Pied Piper • Railway Luggage Labels • Billeting Officers',
     pageRef: 'p. 2 • Q5–8',
     items: [
       {
@@ -140,7 +140,7 @@ const QUIZ_DATA = [
     enquiry: 3,
     title: "3. Vera's Journey & The Kindertransport",
     shortTitle: 'The Kindertransport Rescue',
-    narrative: "Kristallnacht (1938) • 10,000 Refugee Children • One Small Suitcase",
+    narrative: 'Kristallnacht (1938) • 10,000 Refugee Children • One Small Suitcase',
     pageRef: 'p. 2 • Q9–12',
     items: [
       {
@@ -177,7 +177,7 @@ const QUIZ_DATA = [
     enquiry: 4,
     title: '4. The Blitz & Air Raid Shelters',
     shortTitle: 'The Blitz & Shelters',
-    narrative: "57 Nights of the Blitz • Anderson Garden Shelters • Tube Station Platforms",
+    narrative: '57 Nights of the Blitz • Anderson Garden Shelters • Tube Station Platforms',
     pageRef: 'p. 2 • Q13–16',
     items: [
       {
@@ -325,7 +325,7 @@ const QUIZ_DATA = [
     enquiry: 8,
     title: '8. Pre-War Everyday Life & Rights Lost',
     shortTitle: 'Pre-War Life & Lost Rights',
-    narrative: "Pre-War Jewish Life • Nuremberg Anti-Jewish Laws • Rights & Freedom Stripped",
+    narrative: 'Pre-War Jewish Life • Nuremberg Anti-Jewish Laws • Rights & Freedom Stripped',
     pageRef: 'p. 3 • Q29–32',
     items: [
       {
@@ -399,7 +399,7 @@ const QUIZ_DATA = [
     enquiry: 10,
     title: '10. Rescuers, VE Day & Remembrance',
     shortTitle: 'Rescuers, VE Day & Legacy',
-    narrative: "Sir Nicholas Winton • Upstanders vs Bystanders • VE Day Street Celebrations",
+    narrative: 'Sir Nicholas Winton • Upstanders vs Bystanders • VE Day Street Celebrations',
     pageRef: 'p. 3 • Q37–40',
     items: [
       {
@@ -1396,7 +1396,9 @@ async function compileQuizBookletHtml() {
 }
 
 async function run() {
-  console.log('🚀 Compiling 4-Page KS2 WWII Knowledge Retrieval Companion (No RAG, Accessible Standard)...');
+  console.log(
+    '🚀 Compiling 4-Page KS2 WWII Knowledge Retrieval Companion (No RAG, Accessible Standard)...',
+  );
   const html = await compileQuizBookletHtml();
 
   const PUB_HTML = path.join(UNIT_DIR, 'quiz_pack.html');
@@ -1436,23 +1438,25 @@ async function run() {
     }
   });
 
-  const PDF_FINAL_V17 = path.join(PDFS_DIR, 'ks2_ww2_quiz_pack_FINAL_V17.pdf');
-  const PDF_ROOT = path.join(PDFS_DIR, 'ks2_ww2_quiz_pack.pdf');
-  const PDF_SUBDIR = path.join(KS2_PDFS_DIR, 'ks2_ww2_quiz_pack.pdf');
+  const CANONICAL_PDF = path.join(
+    PDFS_DIR,
+    'KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf',
+  );
+  const PDF_SUBDIR = path.join(
+    KS2_PDFS_DIR,
+    'KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf',
+  );
 
   await page.pdf({
-    path: PDF_FINAL_V17,
+    path: CANONICAL_PDF,
     format: 'A4',
     printBackground: true,
     margin: { top: '0mm', right: '0mm', bottom: '0mm', left: '0mm' },
   });
 
-  fs.copyFileSync(PDF_FINAL_V17, PDF_ROOT);
-  fs.copyFileSync(PDF_FINAL_V17, PDF_SUBDIR);
+  fs.copyFileSync(CANONICAL_PDF, PDF_SUBDIR);
 
-  console.log(`🖨️ Successfully generated 4-page Retrieval Companion PDF: ${PDF_FINAL_V17}`);
-  console.log(`🖨️ Copied to: ${PDF_ROOT}`);
-  console.log(`🖨️ Copied to: ${PDF_SUBDIR}`);
+  console.log(`🖨️ Successfully generated 4-page Retrieval Companion PDF: ${CANONICAL_PDF}`);
 
   // Capture preview screenshots of all 4 pages for visual inspection
   for (let i = 1; i <= 4; i++) {

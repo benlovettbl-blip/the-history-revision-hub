@@ -163,45 +163,72 @@ const weimar_nazi_germany_data = {
           term: 'Reichstag',
           definition:
             'The main house of the German state parliament where elected politicians met to pass laws.',
+          syllables: 'Reichs-tag',
+          phonetic: 'ˈraɪçstɑːk',
+          tier: '3',
         },
         {
           term: 'Reichsrat',
           definition:
             "The second (upper) house of parliament, made up of representatives from Germany's 18 local regions (Länder).",
+          syllables: 'Rei-chsrat',
+          phonetic: 'reichsrat',
+          tier: '3',
         },
         {
           term: 'Armistice',
           definition: 'A formal agreement to end hostilities in a war (Signed 11 November 1918).',
+          syllables: 'ar-mi-stice',
+          phonetic: 'ˈɑːmɪstɪs',
+          tier: '3',
         },
         {
           term: 'Constitution',
           definition:
             'A set of written rules and laws that sets out exactly how a country is governed.',
+          syllables: 'Co-nsti-tution',
+          phonetic: 'constitution',
+          tier: '3',
         },
         {
           term: 'Dolchstoßlegende',
           definition:
             'The toxic right-wing myth that the German army was not defeated on the battlefield but betrayed by politicians at home.',
+          syllables: 'Do-lchstoßle-ge-nde',
+          phonetic: 'dolchstoßlegende',
+          tier: '3',
         },
         {
           term: 'November Criminals',
           definition:
             'The insulting nickname given by right-wing nationalists to the democratic politicians who accepted the Armistice.',
+          syllables: 'No-ve-mber Cri-minals',
+          phonetic: 'november criminals',
+          tier: '2',
         },
         {
           term: 'Proportional Representation (PR)',
           definition:
             'An electoral method where the proportion of seats a party gains is exactly equal to its share of the vote.',
+          syllables: 'Pro-po-rtio-nal Re-pre-se-nta-tion (PR)',
+          phonetic: 'proportional representation (pr)',
+          tier: '3',
         },
         {
           term: 'Coalition Government',
           definition:
             'A government formed of two or more political parties joining together when no single party wins a majority.',
+          syllables: 'co-a-li-tion Go-ve-rnment',
+          phonetic: 'ˌkəʊəˈlɪʃən government',
+          tier: '2',
         },
         {
           term: 'Article 48',
           definition:
             'A constitutional emergency clause allowing the President to rule by decree, bypassing the Reichstag.',
+          syllables: 'Ar-ti-cle 48',
+          phonetic: 'ˈɑːtɪkl',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -256,9 +283,9 @@ const weimar_nazi_germany_data = {
         {
           title: "Mutiny on the High Seas: The Kiel Sailors' Revolt and Imperial Collapse (1918)",
           act: 1,
-          text: '<p><span class="para-ref">[1.1]</span> By autumn 1918, Imperial Germany was facing total military defeat. Four years of Allied naval blockade had caused over 763,000 civilian starvation deaths, while the army suffered 2 million battlefield dead. With defeat imminent, naval commanders at Wilhelmshaven ordered the High Seas Fleet on 28 October 1918 on a suicidal final sortie against the British Royal Navy. Refusing to sacrifice their lives for naval honour, sailors extinguished ship boilers and mutinied.</p>\n\n<p><span class="para-ref">[1.2]</span> By 3 November 1918, the revolt engulfed Kiel, where 40,000 armed sailors and workers formed revolutionary councils (<strong>Räte</strong>), raising red flags over warships (<strong>Source A</strong>). The rebellion spread rapidly across Hamburg, Bremen, and Munich. The mutiny proved military commanders had lost control, transforming frontline collapse into an unstoppable revolution that shattered imperial authority within days.</p>',
+          text: '<p><span class="para-ref">[1.1]</span> By autumn 1918, Imperial Germany was facing total military defeat. Four years of Allied naval blockade had caused over 763,000 civilian starvation deaths, while the army suffered 2 million battlefield dead. With defeat imminent, naval commanders at Wilhelmshaven ordered the High Seas Fleet on 28 October 1918 on a suicidal final sortie against the British Royal Navy. Refusing to sacrifice their lives for naval honour, sailors extinguished ship boilers and mutinied.</p>\n\n<p><span class="para-ref">[1.2]</span> By 3 November 1918, the revolt engulfed Kiel, where 40,000 armed sailors and workers formed revolutionary councils (**Räte**), raising red flags over warships (**Source A**). The rebellion spread rapidly across Hamburg, Bremen, and Munich. The mutiny proved military commanders had lost control, transforming frontline collapse into an unstoppable revolution that shattered imperial authority within days.</p>',
           content:
-            '<p><span class="para-ref">[1.1]</span> By autumn 1918, Imperial Germany was facing total military defeat. Four years of Allied naval blockade had caused over 763,000 civilian starvation deaths, while the army suffered 2 million battlefield dead. With defeat imminent, naval commanders at Wilhelmshaven ordered the High Seas Fleet on 28 October 1918 on a suicidal final sortie against the British Royal Navy. Refusing to sacrifice their lives for naval honour, sailors extinguished ship boilers and mutinied.</p>\n\n<p><span class="para-ref">[1.2]</span> By 3 November 1918, the revolt engulfed Kiel, where 40,000 armed sailors and workers formed revolutionary councils (<strong>Räte</strong>), raising red flags over warships (<strong>Source A</strong>). The rebellion spread rapidly across Hamburg, Bremen, and Munich. The mutiny proved military commanders had lost control, transforming frontline collapse into an unstoppable revolution that shattered imperial authority within days.</p>',
+            '<p><span class="para-ref">[1.1]</span> By autumn 1918, Imperial Germany was facing total military defeat. Four years of Allied naval blockade had caused over 763,000 civilian starvation deaths, while the army suffered 2 million battlefield dead. With defeat imminent, naval commanders at Wilhelmshaven ordered the High Seas Fleet on 28 October 1918 on a suicidal final sortie against the British Royal Navy. Refusing to sacrifice their lives for naval honour, sailors extinguished ship boilers and mutinied.</p>\n\n<p><span class="para-ref">[1.2]</span> By 3 November 1918, the revolt engulfed Kiel, where 40,000 armed sailors and workers formed revolutionary councils (**Räte**), raising red flags over warships (**Source A**). The rebellion spread rapidly across Hamburg, Bremen, and Munich. The mutiny proved military commanders had lost control, transforming frontline collapse into an unstoppable revolution that shattered imperial authority within days.</p>',
           sources: [
             {
               id: 'weimar_l1_source_b',
@@ -340,9 +367,9 @@ const weimar_nazi_germany_data = {
           title:
             'Flight to the Border: The Abdication of Kaiser Wilhelm II and the Birth of the Republic (9 Nov 1918)',
           act: 2,
-          text: '<p><span class="para-ref">[2.1]</span> On Saturday, 9 November 1918, central Berlin ground to a halt as hundreds of thousands of striking workers surrounded government buildings. Imperial Chancellor Prince Max of Baden unconstitutionally announced Kaiser Wilhelm II’s abdication before the monarch consented. Wilhelm, isolated at army headquarters in Spa, Belgium, was warned by Field Marshal Hindenburg that frontline troops would no longer fight for him. The Kaiser fled into exile in Holland, ending five centuries of Hohenzollern rule.</p>\n\n<p><span class="para-ref">[2.2]</span> Prince Max handed the chancellorship to <strong>Friedrich Ebert</strong>, leader of the moderate Social Democratic Party (SPD). To preempt communist leader Karl Liebknecht from declaring a Soviet republic, SPD politician <strong>Philipp Scheidemann</strong> leaned from a Reichstag window and spontaneously proclaimed the German Republic to cheering crowds. Ebert was furious at the unauthorized proclamation, but assumed leadership of a provisional Council of People’s Commissars.</p>',
+          text: '<p><span class="para-ref">[2.1]</span> On Saturday, 9 November 1918, central Berlin ground to a halt as hundreds of thousands of striking workers surrounded government buildings. Imperial Chancellor Prince Max of Baden unconstitutionally announced Kaiser Wilhelm II’s abdication before the monarch consented. Wilhelm, isolated at army headquarters in Spa, Belgium, was warned by Field Marshal Hindenburg that frontline troops would no longer fight for him. The Kaiser fled into exile in Holland, ending five centuries of Hohenzollern rule.</p>\n\n<p><span class="para-ref">[2.2]</span> Prince Max handed the chancellorship to **Friedrich Ebert**, leader of the moderate Social Democratic Party (SPD). To preempt communist leader Karl Liebknecht from declaring a Soviet republic, SPD politician **Philipp Scheidemann** leaned from a Reichstag window and spontaneously proclaimed the German Republic to cheering crowds. Ebert was furious at the unauthorized proclamation, but assumed leadership of a provisional Council of People’s Commissars.</p>',
           content:
-            '<p><span class="para-ref">[2.1]</span> On Saturday, 9 November 1918, central Berlin ground to a halt as hundreds of thousands of striking workers surrounded government buildings. Imperial Chancellor Prince Max of Baden unconstitutionally announced Kaiser Wilhelm II’s abdication before the monarch consented. Wilhelm, isolated at army headquarters in Spa, Belgium, was warned by Field Marshal Hindenburg that frontline troops would no longer fight for him. The Kaiser fled into exile in Holland, ending five centuries of Hohenzollern rule.</p>\n\n<p><span class="para-ref">[2.2]</span> Prince Max handed the chancellorship to <strong>Friedrich Ebert</strong>, leader of the moderate Social Democratic Party (SPD). To preempt communist leader Karl Liebknecht from declaring a Soviet republic, SPD politician <strong>Philipp Scheidemann</strong> leaned from a Reichstag window and spontaneously proclaimed the German Republic to cheering crowds. Ebert was furious at the unauthorized proclamation, but assumed leadership of a provisional Council of People’s Commissars.</p>',
+            '<p><span class="para-ref">[2.1]</span> On Saturday, 9 November 1918, central Berlin ground to a halt as hundreds of thousands of striking workers surrounded government buildings. Imperial Chancellor Prince Max of Baden unconstitutionally announced Kaiser Wilhelm II’s abdication before the monarch consented. Wilhelm, isolated at army headquarters in Spa, Belgium, was warned by Field Marshal Hindenburg that frontline troops would no longer fight for him. The Kaiser fled into exile in Holland, ending five centuries of Hohenzollern rule.</p>\n\n<p><span class="para-ref">[2.2]</span> Prince Max handed the chancellorship to **Friedrich Ebert**, leader of the moderate Social Democratic Party (SPD). To preempt communist leader Karl Liebknecht from declaring a Soviet republic, SPD politician **Philipp Scheidemann** leaned from a Reichstag window and spontaneously proclaimed the German Republic to cheering crowds. Ebert was furious at the unauthorized proclamation, but assumed leadership of a provisional Council of People’s Commissars.</p>',
           sources: [
             {
               id: 'weimar_l1_source_d',
@@ -419,9 +446,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Armistice & The Ebert-Groener Pact: Forging a Secret Alliance with the Old Army (Nov 1918)',
           act: 3,
-          text: '<p><span class="para-ref">[3.1]</span> On 11 November 1918 at 5:00 AM, civilian politician <strong>Matthias Erzberger</strong> signed the armistice inside a railway carriage in the Compiègne Forest, ending fighting at 11:00 AM. Germany surrendered heavy artillery, submarines, and locomotives, while Allied troops occupied the Rhineland. Crucially, military chiefs like Hindenburg and Ludendorff refused to sign, cynically shifting the stigma of defeat onto civilian politicians later branded the "November Criminals."</p>\n\n<p><span class="para-ref">[3.2]</span> Seeking to prevent communist revolution, Ebert concluded the secret <strong>Ebert-Groener Pact</strong> with General Wilhelm Groener on 10 November. The army agreed to maintain public order and suppress left-wing uprisings (<strong>Source B</strong>); in return, Ebert guaranteed the army’s autonomy and preserved the traditional imperial officer corps. This compromise secured the Republic’s immediate survival, but left an anti-democratic military elite embedded at the heart of the state.</p>',
+          text: '<p><span class="para-ref">[3.1]</span> On 11 November 1918 at 5:00 AM, civilian politician **Matthias Erzberger** signed the armistice inside a railway carriage in the Compiègne Forest, ending fighting at 11:00 AM. Germany surrendered heavy artillery, submarines, and locomotives, while Allied troops occupied the Rhineland. Crucially, military chiefs like Hindenburg and Ludendorff refused to sign, cynically shifting the stigma of defeat onto civilian politicians later branded the "November Criminals."</p>\n\n<p><span class="para-ref">[3.2]</span> Seeking to prevent communist revolution, Ebert concluded the secret **Ebert-Groener Pact** with General Wilhelm Groener on 10 November. The army agreed to maintain public order and suppress left-wing uprisings (**Source B**); in return, Ebert guaranteed the army’s autonomy and preserved the traditional imperial officer corps. This compromise secured the Republic’s immediate survival, but left an anti-democratic military elite embedded at the heart of the state.</p>',
           content:
-            '<p><span class="para-ref">[3.1]</span> On 11 November 1918 at 5:00 AM, civilian politician <strong>Matthias Erzberger</strong> signed the armistice inside a railway carriage in the Compiègne Forest, ending fighting at 11:00 AM. Germany surrendered heavy artillery, submarines, and locomotives, while Allied troops occupied the Rhineland. Crucially, military chiefs like Hindenburg and Ludendorff refused to sign, cynically shifting the stigma of defeat onto civilian politicians later branded the "November Criminals."</p>\n\n<p><span class="para-ref">[3.2]</span> Seeking to prevent communist revolution, Ebert concluded the secret <strong>Ebert-Groener Pact</strong> with General Wilhelm Groener on 10 November. The army agreed to maintain public order and suppress left-wing uprisings (<strong>Source B</strong>); in return, Ebert guaranteed the army’s autonomy and preserved the traditional imperial officer corps. This compromise secured the Republic’s immediate survival, but left an anti-democratic military elite embedded at the heart of the state.</p>',
+            '<p><span class="para-ref">[3.1]</span> On 11 November 1918 at 5:00 AM, civilian politician **Matthias Erzberger** signed the armistice inside a railway carriage in the Compiègne Forest, ending fighting at 11:00 AM. Germany surrendered heavy artillery, submarines, and locomotives, while Allied troops occupied the Rhineland. Crucially, military chiefs like Hindenburg and Ludendorff refused to sign, cynically shifting the stigma of defeat onto civilian politicians later branded the "November Criminals."</p>\n\n<p><span class="para-ref">[3.2]</span> Seeking to prevent communist revolution, Ebert concluded the secret **Ebert-Groener Pact** with General Wilhelm Groener on 10 November. The army agreed to maintain public order and suppress left-wing uprisings (**Source B**); in return, Ebert guaranteed the army’s autonomy and preserved the traditional imperial officer corps. This compromise secured the Republic’s immediate survival, but left an anti-democratic military elite embedded at the heart of the state.</p>',
           sources: [
             {
               id: 'weimar_l1_source_a',
@@ -496,9 +523,9 @@ const weimar_nazi_germany_data = {
         {
           title: 'Flight from Berlin: The National Assembly Convened in Weimar (Jan–Feb 1919)',
           act: 4,
-          text: '<p><span class="para-ref">[4.1]</span> In January 1919, Ebert’s government held nationwide elections for a National Assembly under full universal suffrage for men and women aged twenty and above. With an impressive 82% turnout, the moderate "Weimar Coalition" (SPD, Centre Party, DDP) secured 76% of seats, establishing a strong democratic mandate. Ebert was elected the Republic’s first President.</p>\n\n<p><span class="para-ref">[4.2]</span> Because Berlin was paralyzed by the violent Spartacist Uprising, delegates could not safely convene in the capital. The Assembly gathered 150 miles south in the cultural town of Weimar on 6 February 1919, meeting in the <em>Deutsches Nationaltheater</em> (<strong>Source C</strong>). Moving to Weimar protected delegates from urban violence and invoked the humanist legacy of Goethe and Schiller, signaling to the victorious Allies that Germany had rejected Prussian militarism.</p>',
+          text: '<p><span class="para-ref">[4.1]</span> In January 1919, Ebert’s government held nationwide elections for a National Assembly under full universal suffrage for men and women aged twenty and above. With an impressive 82% turnout, the moderate "Weimar Coalition" (SPD, Centre Party, DDP) secured 76% of seats, establishing a strong democratic mandate. Ebert was elected the Republic’s first President.</p>\n\n<p><span class="para-ref">[4.2]</span> Because Berlin was paralyzed by the violent Spartacist Uprising, delegates could not safely convene in the capital. The Assembly gathered 150 miles south in the cultural town of Weimar on 6 February 1919, meeting in the <em>Deutsches Nationaltheater</em> (**Source C**). Moving to Weimar protected delegates from urban violence and invoked the humanist legacy of Goethe and Schiller, signaling to the victorious Allies that Germany had rejected Prussian militarism.</p>',
           content:
-            '<p><span class="para-ref">[4.1]</span> In January 1919, Ebert’s government held nationwide elections for a National Assembly under full universal suffrage for men and women aged twenty and above. With an impressive 82% turnout, the moderate "Weimar Coalition" (SPD, Centre Party, DDP) secured 76% of seats, establishing a strong democratic mandate. Ebert was elected the Republic’s first President.</p>\n\n<p><span class="para-ref">[4.2]</span> Because Berlin was paralyzed by the violent Spartacist Uprising, delegates could not safely convene in the capital. The Assembly gathered 150 miles south in the cultural town of Weimar on 6 February 1919, meeting in the <em>Deutsches Nationaltheater</em> (<strong>Source C</strong>). Moving to Weimar protected delegates from urban violence and invoked the humanist legacy of Goethe and Schiller, signaling to the victorious Allies that Germany had rejected Prussian militarism.</p>',
+            '<p><span class="para-ref">[4.1]</span> In January 1919, Ebert’s government held nationwide elections for a National Assembly under full universal suffrage for men and women aged twenty and above. With an impressive 82% turnout, the moderate "Weimar Coalition" (SPD, Centre Party, DDP) secured 76% of seats, establishing a strong democratic mandate. Ebert was elected the Republic’s first President.</p>\n\n<p><span class="para-ref">[4.2]</span> Because Berlin was paralyzed by the violent Spartacist Uprising, delegates could not safely convene in the capital. The Assembly gathered 150 miles south in the cultural town of Weimar on 6 February 1919, meeting in the <em>Deutsches Nationaltheater</em> (**Source C**). Moving to Weimar protected delegates from urban violence and invoked the humanist legacy of Goethe and Schiller, signaling to the victorious Allies that Germany had rejected Prussian militarism.</p>',
           sources: [
             {
               id: 'weimar_l1_source_e',
@@ -582,9 +609,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Weimar Constitution: Progressive Universal Suffrage and Fatal Emergency Powers (Aug 1919)',
           act: 5,
-          text: '<p><span class="para-ref">[5.1]</span> Promulgated on 11 August 1919, the <strong>Weimar Constitution</strong> established a remarkably progressive democracy. It guaranteed freedom of speech, assembly, and religion, alongside universal suffrage for citizens aged twenty and over (Article 22). The national parliament (<strong>Reichstag</strong>) was elected every four years using <strong>Proportional Representation (PR)</strong>, while the <strong>Reichsrat</strong> represented Germany\'s eighteen federal states.</p>\n\n<p><span class="para-ref">[5.2]</span> However, the constitution contained fatal vulnerabilities. Proportional representation allocated seats based on exact vote shares, allowing splinter extremist parties to enter the Reichstag and making single-party majorities impossible; every government was a fragile, short-lived coalition. Furthermore, <strong>Article 48</strong> empowered the President to suspend civil rights and rule by emergency decree without parliamentary approval—a dictatorial loophole that future anti-democrats would ruthlessly exploit.</p>',
+          text: '<p><span class="para-ref">[5.1]</span> Promulgated on 11 August 1919, the **Weimar Constitution** established a remarkably progressive democracy. It guaranteed freedom of speech, assembly, and religion, alongside universal suffrage for citizens aged twenty and over (Article 22). The national parliament (**Reichstag**) was elected every four years using **Proportional Representation (PR)**, while the **Reichsrat** represented Germany\'s eighteen federal states.</p>\n\n<p><span class="para-ref">[5.2]</span> However, the constitution contained fatal vulnerabilities. Proportional representation allocated seats based on exact vote shares, allowing splinter extremist parties to enter the Reichstag and making single-party majorities impossible; every government was a fragile, short-lived coalition. Furthermore, **Article 48** empowered the President to suspend civil rights and rule by emergency decree without parliamentary approval—a dictatorial loophole that future anti-democrats would ruthlessly exploit.</p>',
           content:
-            '<p><span class="para-ref">[5.1]</span> Promulgated on 11 August 1919, the <strong>Weimar Constitution</strong> established a remarkably progressive democracy. It guaranteed freedom of speech, assembly, and religion, alongside universal suffrage for citizens aged twenty and over (Article 22). The national parliament (<strong>Reichstag</strong>) was elected every four years using <strong>Proportional Representation (PR)</strong>, while the <strong>Reichsrat</strong> represented Germany\'s eighteen federal states.</p>\n\n<p><span class="para-ref">[5.2]</span> However, the constitution contained fatal vulnerabilities. Proportional representation allocated seats based on exact vote shares, allowing splinter extremist parties to enter the Reichstag and making single-party majorities impossible; every government was a fragile, short-lived coalition. Furthermore, <strong>Article 48</strong> empowered the President to suspend civil rights and rule by emergency decree without parliamentary approval—a dictatorial loophole that future anti-democrats would ruthlessly exploit.</p>',
+            '<p><span class="para-ref">[5.1]</span> Promulgated on 11 August 1919, the **Weimar Constitution** established a remarkably progressive democracy. It guaranteed freedom of speech, assembly, and religion, alongside universal suffrage for citizens aged twenty and over (Article 22). The national parliament (**Reichstag**) was elected every four years using **Proportional Representation (PR)**, while the **Reichsrat** represented Germany\'s eighteen federal states.</p>\n\n<p><span class="para-ref">[5.2]</span> However, the constitution contained fatal vulnerabilities. Proportional representation allocated seats based on exact vote shares, allowing splinter extremist parties to enter the Reichstag and making single-party majorities impossible; every government was a fragile, short-lived coalition. Furthermore, **Article 48** empowered the President to suspend civil rights and rule by emergency decree without parliamentary approval—a dictatorial loophole that future anti-democrats would ruthlessly exploit.</p>',
           sources: [
             {
               id: 'weimar_l1_source_c',
@@ -1542,35 +1569,56 @@ const weimar_nazi_germany_data = {
           term: 'Diktat',
           definition:
             'A dictated peace; the bitter German view of the Treaty of Versailles because they were not allowed to negotiate its terms.',
+          syllables: 'dik-tat',
+          phonetic: 'dɪkˈtæt',
+          tier: '3',
         },
         {
           term: 'Reparations',
           definition:
             'Massive compensation payments demanded by the victorious Allies to pay for war damage.',
+          syllables: 'rep-a-ra-tions',
+          phonetic: 'ˌrɛpəˈreɪʃənz',
+          tier: '3',
         },
         {
           term: 'Spartacist League',
           definition:
             'An extreme left-wing (communist) group led by Rosa Luxemburg and Karl Liebknecht.',
+          syllables: 'Spa-rta-cist Lea-gue',
+          phonetic: 'spartacist league',
+          tier: '2',
         },
         {
           term: 'Freikorps',
           definition:
             'Right-wing, anti-communist private armies made up of fiercely nationalistic, demobilised ex-soldiers.',
+          syllables: 'Frei-korps',
+          phonetic: 'ˈfraɪˌkɔːr',
+          tier: '3',
         },
         {
           term: 'Putsch',
           definition: 'A violent, armed attempt to overthrow the government.',
+          syllables: 'Putsch',
+          phonetic: 'putsch',
+          tier: '2',
         },
         {
           term: 'Passive Resistance',
           definition:
             'A non-violent refusal to work or cooperate, used by German workers against the French in the Ruhr in 1923.',
+          syllables: 'Pa-ssi-ve re-sist-ance',
+          phonetic: 'passive rɪˈzɪstəns',
+          tier: '2',
         },
         {
           term: 'Hyperinflation',
           definition:
             'A catastrophic economic crisis where the value of money plummets uncontrollably, leading to massive, rapid price rises.',
+          syllables: 'hy-per-in-fla-tion',
+          phonetic: 'ˌhaɪpərɪnˈfleɪʃən',
+          tier: '3',
         },
       ],
       flashcards: [
@@ -1614,9 +1662,9 @@ const weimar_nazi_germany_data = {
           title:
             'Red Flags in Berlin: The Spartacist Uprising and the Freikorps Bloodbath (Jan 1919)',
           act: 1,
-          text: '<p><span class="para-ref">[1.1]</span> The fragile Republic was immediately assaulted by armed political extremists. In January 1919, the communist <strong>Spartacist League</strong>, led by <strong>Rosa Luxemburg</strong> and <strong>Karl Liebknecht</strong>, attempted to overthrow Ebert’s government and establish a Soviet-style dictatorship. Over 100,000 armed industrial workers staged mass strikes in central Berlin, seizing railway stations and major newspaper offices.</p>\n\n<p><span class="para-ref">[1.2]</span> Lacking loyal police, Defense Minister Gustav Noske unleashed the <strong>Freikorps</strong>—volunteer paramilitary units of demobilized imperial soldiers who were violently anti-communist. Armed with machine guns and artillery, 4,000 Freikorps troops brutally crushed the uprising within a week, killing over 100 workers. On 15 January, Luxemburg and Liebknecht were arrested, beaten, and murdered without trial. This bloodshed created an unbridgeable rift between the SPD and Communists, preventing future working-class unity against Nazism.</p>',
+          text: '<p><span class="para-ref">[1.1]</span> The fragile Republic was immediately assaulted by armed political extremists. In January 1919, the communist **Spartacist League**, led by **Rosa Luxemburg** and **Karl Liebknecht**, attempted to overthrow Ebert’s government and establish a Soviet-style dictatorship. Over 100,000 armed industrial workers staged mass strikes in central Berlin, seizing railway stations and major newspaper offices.</p>\n\n<p><span class="para-ref">[1.2]</span> Lacking loyal police, Defense Minister Gustav Noske unleashed the **Freikorps**—volunteer paramilitary units of demobilized imperial soldiers who were violently anti-communist. Armed with machine guns and artillery, 4,000 Freikorps troops brutally crushed the uprising within a week, killing over 100 workers. On 15 January, Luxemburg and Liebknecht were arrested, beaten, and murdered without trial. This bloodshed created an unbridgeable rift between the SPD and Communists, preventing future working-class unity against Nazism.</p>',
           content:
-            '<p><span class="para-ref">[1.1]</span> The fragile Republic was immediately assaulted by armed political extremists. In January 1919, the communist <strong>Spartacist League</strong>, led by <strong>Rosa Luxemburg</strong> and <strong>Karl Liebknecht</strong>, attempted to overthrow Ebert’s government and establish a Soviet-style dictatorship. Over 100,000 armed industrial workers staged mass strikes in central Berlin, seizing railway stations and major newspaper offices.</p>\n\n<p><span class="para-ref">[1.2]</span> Lacking loyal police, Defense Minister Gustav Noske unleashed the <strong>Freikorps</strong>—volunteer paramilitary units of demobilized imperial soldiers who were violently anti-communist. Armed with machine guns and artillery, 4,000 Freikorps troops brutally crushed the uprising within a week, killing over 100 workers. On 15 January, Luxemburg and Liebknecht were arrested, beaten, and murdered without trial. This bloodshed created an unbridgeable rift between the SPD and Communists, preventing future working-class unity against Nazism.</p>',
+            '<p><span class="para-ref">[1.1]</span> The fragile Republic was immediately assaulted by armed political extremists. In January 1919, the communist **Spartacist League**, led by **Rosa Luxemburg** and **Karl Liebknecht**, attempted to overthrow Ebert’s government and establish a Soviet-style dictatorship. Over 100,000 armed industrial workers staged mass strikes in central Berlin, seizing railway stations and major newspaper offices.</p>\n\n<p><span class="para-ref">[1.2]</span> Lacking loyal police, Defense Minister Gustav Noske unleashed the **Freikorps**—volunteer paramilitary units of demobilized imperial soldiers who were violently anti-communist. Armed with machine guns and artillery, 4,000 Freikorps troops brutally crushed the uprising within a week, killing over 100 workers. On 15 January, Luxemburg and Liebknecht were arrested, beaten, and murdered without trial. This bloodshed created an unbridgeable rift between the SPD and Communists, preventing future working-class unity against Nazism.</p>',
           sources: [
             {
               id: 'weimar_l2_source_e',
@@ -1692,9 +1740,9 @@ const weimar_nazi_germany_data = {
           title:
             "The Diktat of Versailles: War Guilt, Reparations and the 'Stab in the Back' Legend (Jun 1919)",
           act: 2,
-          text: '<p><span class="para-ref">[2.1]</span> On 28 June 1919, German delegates were forced to sign the Treaty of Versailles in the Hall of Mirrors. Denounced across Germany as an intolerable <strong>Diktat</strong> (dictated peace), the treaty imposed crushing terms. Under <strong>Article 231 (War Guilt Clause)</strong>, Germany accepted sole responsibility for causing the war, justifying reparations fixed in 1921 at 132 billion gold marks (£6.6 billion). Germany lost 13% of its European territory, including Alsace-Lorraine to France and West Prussia to Poland to create the Polish Corridor, stripping 10% of its population and 16% of its coalfields.</p>\n\n<p><span class="para-ref">[2.2]</span> Military clauses capped the German army at 100,000 volunteers, banned conscription, tanks, submarines, and an air force, and demilitarised the Rhineland. Because censorship had hidden the army’s retreat and Allied troops never occupied German soil, right-wing nationalists propagated the <strong>Dolchstoßlegende</strong> ("stab in the back" myth) (<strong>Source A</strong>). They falsely claimed the undefeated army was betrayed at home by socialist and Jewish politicians, permanently tarring the Republic with humiliation.</p>',
+          text: '<p><span class="para-ref">[2.1]</span> On 28 June 1919, German delegates were forced to sign the Treaty of Versailles in the Hall of Mirrors. Denounced across Germany as an intolerable **Diktat** (dictated peace), the treaty imposed crushing terms. Under **Article 231 (War Guilt Clause)**, Germany accepted sole responsibility for causing the war, justifying reparations fixed in 1921 at 132 billion gold marks (£6.6 billion). Germany lost 13% of its European territory, including Alsace-Lorraine to France and West Prussia to Poland to create the Polish Corridor, stripping 10% of its population and 16% of its coalfields.</p>\n\n<p><span class="para-ref">[2.2]</span> Military clauses capped the German army at 100,000 volunteers, banned conscription, tanks, submarines, and an air force, and demilitarised the Rhineland. Because censorship had hidden the army’s retreat and Allied troops never occupied German soil, right-wing nationalists propagated the **Dolchstoßlegende** ("stab in the back" myth) (**Source A**). They falsely claimed the undefeated army was betrayed at home by socialist and Jewish politicians, permanently tarring the Republic with humiliation.</p>',
           content:
-            '<p><span class="para-ref">[2.1]</span> On 28 June 1919, German delegates were forced to sign the Treaty of Versailles in the Hall of Mirrors. Denounced across Germany as an intolerable <strong>Diktat</strong> (dictated peace), the treaty imposed crushing terms. Under <strong>Article 231 (War Guilt Clause)</strong>, Germany accepted sole responsibility for causing the war, justifying reparations fixed in 1921 at 132 billion gold marks (£6.6 billion). Germany lost 13% of its European territory, including Alsace-Lorraine to France and West Prussia to Poland to create the Polish Corridor, stripping 10% of its population and 16% of its coalfields.</p>\n\n<p><span class="para-ref">[2.2]</span> Military clauses capped the German army at 100,000 volunteers, banned conscription, tanks, submarines, and an air force, and demilitarised the Rhineland. Because censorship had hidden the army’s retreat and Allied troops never occupied German soil, right-wing nationalists propagated the <strong>Dolchstoßlegende</strong> ("stab in the back" myth) (<strong>Source A</strong>). They falsely claimed the undefeated army was betrayed at home by socialist and Jewish politicians, permanently tarring the Republic with humiliation.</p>',
+            '<p><span class="para-ref">[2.1]</span> On 28 June 1919, German delegates were forced to sign the Treaty of Versailles in the Hall of Mirrors. Denounced across Germany as an intolerable **Diktat** (dictated peace), the treaty imposed crushing terms. Under **Article 231 (War Guilt Clause)**, Germany accepted sole responsibility for causing the war, justifying reparations fixed in 1921 at 132 billion gold marks (£6.6 billion). Germany lost 13% of its European territory, including Alsace-Lorraine to France and West Prussia to Poland to create the Polish Corridor, stripping 10% of its population and 16% of its coalfields.</p>\n\n<p><span class="para-ref">[2.2]</span> Military clauses capped the German army at 100,000 volunteers, banned conscription, tanks, submarines, and an air force, and demilitarised the Rhineland. Because censorship had hidden the army’s retreat and Allied troops never occupied German soil, right-wing nationalists propagated the **Dolchstoßlegende** ("stab in the back" myth) (**Source A**). They falsely claimed the undefeated army was betrayed at home by socialist and Jewish politicians, permanently tarring the Republic with humiliation.</p>',
           sources: [
             {
               id: 'weimar_l2_source_a',
@@ -1777,9 +1825,9 @@ const weimar_nazi_germany_data = {
         {
           title: 'The Ehrhardt Brigade Marches: The Kapp Putsch and the General Strike (Mar 1920)',
           act: 3,
-          text: '<p><span class="para-ref">[3.1]</span> The threat from the extreme right erupted in March 1920 when the government attempted to disband the 5,000-strong Freikorps Marinebrigade Ehrhardt to comply with Versailles troop limits. Led by General Walther von Lüttwitz and civil servant <strong>Wolfgang Kapp</strong>, the brigade marched into Berlin with swastikas painted on their helmets (<strong>Source B</strong>), seizing government ministries and forcing Ebert’s cabinet to flee.</p>\n\n<p><span class="para-ref">[3.2]</span> When Ebert appealed to army chief General Hans von Seeckt to order regular troops to crush the putsch, Seeckt flatly refused, declaring <em>"Reichswehr does not fire upon Reichswehr."</em> In response, the SPD called an immediate <strong>General Strike</strong>. Over 12 million workers shut down gas, water, electricity, and transport across Berlin. Paralyzed and unable to govern, the Kapp Putsch collapsed in four days, proving that organized labor could defend democracy when the military refused.</p>',
+          text: '<p><span class="para-ref">[3.1]</span> The threat from the extreme right erupted in March 1920 when the government attempted to disband the 5,000-strong Freikorps Marinebrigade Ehrhardt to comply with Versailles troop limits. Led by General Walther von Lüttwitz and civil servant **Wolfgang Kapp**, the brigade marched into Berlin with swastikas painted on their helmets (**Source B**), seizing government ministries and forcing Ebert’s cabinet to flee.</p>\n\n<p><span class="para-ref">[3.2]</span> When Ebert appealed to army chief General Hans von Seeckt to order regular troops to crush the putsch, Seeckt flatly refused, declaring <em>"Reichswehr does not fire upon Reichswehr."</em> In response, the SPD called an immediate **General Strike**. Over 12 million workers shut down gas, water, electricity, and transport across Berlin. Paralyzed and unable to govern, the Kapp Putsch collapsed in four days, proving that organized labor could defend democracy when the military refused.</p>',
           content:
-            '<p><span class="para-ref">[3.1]</span> The threat from the extreme right erupted in March 1920 when the government attempted to disband the 5,000-strong Freikorps Marinebrigade Ehrhardt to comply with Versailles troop limits. Led by General Walther von Lüttwitz and civil servant <strong>Wolfgang Kapp</strong>, the brigade marched into Berlin with swastikas painted on their helmets (<strong>Source B</strong>), seizing government ministries and forcing Ebert’s cabinet to flee.</p>\n\n<p><span class="para-ref">[3.2]</span> When Ebert appealed to army chief General Hans von Seeckt to order regular troops to crush the putsch, Seeckt flatly refused, declaring <em>"Reichswehr does not fire upon Reichswehr."</em> In response, the SPD called an immediate <strong>General Strike</strong>. Over 12 million workers shut down gas, water, electricity, and transport across Berlin. Paralyzed and unable to govern, the Kapp Putsch collapsed in four days, proving that organized labor could defend democracy when the military refused.</p>',
+            '<p><span class="para-ref">[3.1]</span> The threat from the extreme right erupted in March 1920 when the government attempted to disband the 5,000-strong Freikorps Marinebrigade Ehrhardt to comply with Versailles troop limits. Led by General Walther von Lüttwitz and civil servant **Wolfgang Kapp**, the brigade marched into Berlin with swastikas painted on their helmets (**Source B**), seizing government ministries and forcing Ebert’s cabinet to flee.</p>\n\n<p><span class="para-ref">[3.2]</span> When Ebert appealed to army chief General Hans von Seeckt to order regular troops to crush the putsch, Seeckt flatly refused, declaring <em>"Reichswehr does not fire upon Reichswehr."</em> In response, the SPD called an immediate **General Strike**. Over 12 million workers shut down gas, water, electricity, and transport across Berlin. Paralyzed and unable to govern, the Kapp Putsch collapsed in four days, proving that organized labor could defend democracy when the military refused.</p>',
           sources: [
             {
               id: 'weimar_l2_source_b',
@@ -1855,9 +1903,9 @@ const weimar_nazi_germany_data = {
           title:
             'Bullets from the Shadows: The Assassinations of Erzberger and Rathenau (1921–1922)',
           act: 4,
-          text: '<p><span class="para-ref">[4.1]</span> Between 1919 and 1922, ultra-nationalist assassination syndicates like <strong>Organisation Consul</strong> waged a ruthless campaign of political murder against republican leaders. In total, 376 political assassinations occurred, 354 committed by right-wing nationalists. In August 1921, assassins shot dead <strong>Matthias Erzberger</strong>, who had signed the 1918 armistice, while he walked in the Black Forest.</p>\n\n<p><span class="para-ref">[4.2]</span> In June 1922, gunmen assassinated Foreign Minister <strong>Walther Rathenau</strong>, a prominent Jewish industrialist and statesman who had signed the Rapallo Treaty with Soviet Russia. Over a million Germans marched in protest against right-wing terrorism. However, the conservative judiciary treated right-wing murderers leniently: their prison sentences averaged just four months, while left-wing offenders were frequently executed, revealing deep institutional hostility toward the Republic.</p>',
+          text: '<p><span class="para-ref">[4.1]</span> Between 1919 and 1922, ultra-nationalist assassination syndicates like **Organisation Consul** waged a ruthless campaign of political murder against republican leaders. In total, 376 political assassinations occurred, 354 committed by right-wing nationalists. In August 1921, assassins shot dead **Matthias Erzberger**, who had signed the 1918 armistice, while he walked in the Black Forest.</p>\n\n<p><span class="para-ref">[4.2]</span> In June 1922, gunmen assassinated Foreign Minister **Walther Rathenau**, a prominent Jewish industrialist and statesman who had signed the Rapallo Treaty with Soviet Russia. Over a million Germans marched in protest against right-wing terrorism. However, the conservative judiciary treated right-wing murderers leniently: their prison sentences averaged just four months, while left-wing offenders were frequently executed, revealing deep institutional hostility toward the Republic.</p>',
           content:
-            '<p><span class="para-ref">[4.1]</span> Between 1919 and 1922, ultra-nationalist assassination syndicates like <strong>Organisation Consul</strong> waged a ruthless campaign of political murder against republican leaders. In total, 376 political assassinations occurred, 354 committed by right-wing nationalists. In August 1921, assassins shot dead <strong>Matthias Erzberger</strong>, who had signed the 1918 armistice, while he walked in the Black Forest.</p>\n\n<p><span class="para-ref">[4.2]</span> In June 1922, gunmen assassinated Foreign Minister <strong>Walther Rathenau</strong>, a prominent Jewish industrialist and statesman who had signed the Rapallo Treaty with Soviet Russia. Over a million Germans marched in protest against right-wing terrorism. However, the conservative judiciary treated right-wing murderers leniently: their prison sentences averaged just four months, while left-wing offenders were frequently executed, revealing deep institutional hostility toward the Republic.</p>',
+            '<p><span class="para-ref">[4.1]</span> Between 1919 and 1922, ultra-nationalist assassination syndicates like **Organisation Consul** waged a ruthless campaign of political murder against republican leaders. In total, 376 political assassinations occurred, 354 committed by right-wing nationalists. In August 1921, assassins shot dead **Matthias Erzberger**, who had signed the 1918 armistice, while he walked in the Black Forest.</p>\n\n<p><span class="para-ref">[4.2]</span> In June 1922, gunmen assassinated Foreign Minister **Walther Rathenau**, a prominent Jewish industrialist and statesman who had signed the Rapallo Treaty with Soviet Russia. Over a million Germans marched in protest against right-wing terrorism. However, the conservative judiciary treated right-wing murderers leniently: their prison sentences averaged just four months, while left-wing offenders were frequently executed, revealing deep institutional hostility toward the Republic.</p>',
           sources: [
             {
               id: 'weimar_l2_source_rathenau',
@@ -1937,9 +1985,9 @@ const weimar_nazi_germany_data = {
           title:
             'French Troops in the Ruhr & The Mark Collapses: The Nightmare of Hyperinflation (1923)',
           act: 5,
-          text: '<p><span class="para-ref">[5.1]</span> In January 1923, Germany defaulted on coal deliveries, prompting 60,000 French and Belgian troops to invade the <strong>Ruhr Valley</strong>—the industrial heartland producing 80% of German coal and steel. Chancellor Wilhelm Cuno ordered <strong>passive resistance</strong>: miners and railwaymen struck, refusing to collaborate. The occupying forces placed the Ruhr under harsh martial law, arresting 150,000 civilians and shooting over 130 striking workers.</p>\n\n<p><span class="para-ref">[5.2]</span> To pay striking Ruhr workers and replace lost tax revenues, the government printed astronomical sums of unbacked paper banknotes, triggering catastrophic <strong>hyperinflation</strong>. By November 1923, a US dollar equaled 4.2 trillion marks, and a loaf of bread cost 201 billion marks. The Reichsbank issued one-trillion-mark banknotes (<strong>Source C</strong>), and workers carried wages in wheelbarrows. While debtors easily cleared debts, middle-class savings, pensions, and war bonds were totally destroyed, permanently shattering faith in the Republic.</p>',
+          text: '<p><span class="para-ref">[5.1]</span> In January 1923, Germany defaulted on coal deliveries, prompting 60,000 French and Belgian troops to invade the **Ruhr Valley**—the industrial heartland producing 80% of German coal and steel. Chancellor Wilhelm Cuno ordered **passive resistance**: miners and railwaymen struck, refusing to collaborate. The occupying forces placed the Ruhr under harsh martial law, arresting 150,000 civilians and shooting over 130 striking workers.</p>\n\n<p><span class="para-ref">[5.2]</span> To pay striking Ruhr workers and replace lost tax revenues, the government printed astronomical sums of unbacked paper banknotes, triggering catastrophic **hyperinflation**. By November 1923, a US dollar equaled 4.2 trillion marks, and a loaf of bread cost 201 billion marks. The Reichsbank issued one-trillion-mark banknotes (**Source C**), and workers carried wages in wheelbarrows. While debtors easily cleared debts, middle-class savings, pensions, and war bonds were totally destroyed, permanently shattering faith in the Republic.</p>',
           content:
-            '<p><span class="para-ref">[5.1]</span> In January 1923, Germany defaulted on coal deliveries, prompting 60,000 French and Belgian troops to invade the <strong>Ruhr Valley</strong>—the industrial heartland producing 80% of German coal and steel. Chancellor Wilhelm Cuno ordered <strong>passive resistance</strong>: miners and railwaymen struck, refusing to collaborate. The occupying forces placed the Ruhr under harsh martial law, arresting 150,000 civilians and shooting over 130 striking workers.</p>\n\n<p><span class="para-ref">[5.2]</span> To pay striking Ruhr workers and replace lost tax revenues, the government printed astronomical sums of unbacked paper banknotes, triggering catastrophic <strong>hyperinflation</strong>. By November 1923, a US dollar equaled 4.2 trillion marks, and a loaf of bread cost 201 billion marks. The Reichsbank issued one-trillion-mark banknotes (<strong>Source C</strong>), and workers carried wages in wheelbarrows. While debtors easily cleared debts, middle-class savings, pensions, and war bonds were totally destroyed, permanently shattering faith in the Republic.</p>',
+            '<p><span class="para-ref">[5.1]</span> In January 1923, Germany defaulted on coal deliveries, prompting 60,000 French and Belgian troops to invade the **Ruhr Valley**—the industrial heartland producing 80% of German coal and steel. Chancellor Wilhelm Cuno ordered **passive resistance**: miners and railwaymen struck, refusing to collaborate. The occupying forces placed the Ruhr under harsh martial law, arresting 150,000 civilians and shooting over 130 striking workers.</p>\n\n<p><span class="para-ref">[5.2]</span> To pay striking Ruhr workers and replace lost tax revenues, the government printed astronomical sums of unbacked paper banknotes, triggering catastrophic **hyperinflation**. By November 1923, a US dollar equaled 4.2 trillion marks, and a loaf of bread cost 201 billion marks. The Reichsbank issued one-trillion-mark banknotes (**Source C**), and workers carried wages in wheelbarrows. While debtors easily cleared debts, middle-class savings, pensions, and war bonds were totally destroyed, permanently shattering faith in the Republic.</p>',
           sources: [
             {
               id: 'weimar_l2_source_c',
@@ -2795,36 +2843,57 @@ const weimar_nazi_germany_data = {
           term: 'Rentenmark',
           definition:
             'The temporary currency introduced by Stresemann in November 1923 to end hyperinflation, based on property and land values.',
+          syllables: 'Ren-ten-mark',
+          phonetic: 'ˈrɛntənˌmɑːrk',
+          tier: '3',
         },
         {
           term: 'Reichsmark',
           definition:
             'The permanent, stable new German currency introduced in 1924, backed by gold reserves.',
+          syllables: 'Rei-chsmark',
+          phonetic: 'reichsmark',
+          tier: '2',
         },
         {
           term: 'Dawes Plan (1924)',
           definition:
             'An economic agreement where the USA lent Germany 800 million gold marks to rebuild its industry and restructured reparation payments.',
+          syllables: 'Da-wes Plan (1924)',
+          phonetic: 'dawes plan (1924)',
+          tier: '2',
         },
         {
           term: 'Young Plan (1929)',
           definition:
             'A renegotiation of the Treaty of Versailles that reduced total reparations from £6.6 billion to £2 billion and gave Germany 59 extra years to pay.',
+          syllables: 'Young Plan (1929)',
+          phonetic: 'young plan (1929)',
+          tier: '3',
         },
         {
           term: 'Locarno Pact (1925)',
           definition:
             'A diplomatic treaty between Germany, Britain, France, Italy, and Belgium where Germany agreed to accept its western borders.',
+          syllables: 'Lo-ca-rno Pact (1925)',
+          phonetic: 'locarno pact (1925)',
+          tier: '3',
         },
         {
           term: 'League of Nations',
           definition:
             "The international peacekeeping organization; Germany was admitted in 1926, restoring its status as a trusted 'great power'.",
+          syllables: 'Lea-gue of Na-tions',
+          phonetic: 'league of nations',
+          tier: '2',
         },
         {
           term: 'Kellogg-Briand Pact (1928)',
           definition:
             'An international agreement signed by 65 countries, including Germany, promising to resolve conflicts peacefully rather than using war.',
+          syllables: 'Ke-llogg-Briand Pact (1928)',
+          phonetic: 'kellogg-briand pact (1928)',
+          tier: '3',
         },
       ],
       flashcards: [
@@ -2869,9 +2938,9 @@ const weimar_nazi_germany_data = {
           title:
             'Burning the Trillion-Mark Notes: Stresemann and the Miracle of the Rentenmark (Nov 1923)',
           act: 1,
-          text: '<p><span class="para-ref">[1.1]</span> In August 1923, at the peak of the Ruhr crisis, <strong>Gustav Stresemann</strong> was appointed Chancellor and Foreign Minister. Acting decisively, Stresemann ended passive resistance in September 1923 despite nationalist fury, halting the ruinous state subsidies paid to striking workers. This courageously reopened diplomatic dialogue with France and Britain, paving the way for international economic recovery.</p>\n\n<p><span class="para-ref">[1.2]</span> In November 1923, currency commissioner <strong>Hjalmar Schacht</strong> introduced the <strong>Rentenmark</strong>, an emergency currency backed not by gold, but by mortgages on Germany\'s industrial and agricultural land (<strong>Source A</strong>). One Rentenmark replaced one trillion old paper marks. In August 1924, it became the permanent <strong>Reichsmark</strong> backed by gold reserves, instantly halting hyperinflation and restoring business confidence.</p>',
+          text: '<p><span class="para-ref">[1.1]</span> In August 1923, at the peak of the Ruhr crisis, **Gustav Stresemann** was appointed Chancellor and Foreign Minister. Acting decisively, Stresemann ended passive resistance in September 1923 despite nationalist fury, halting the ruinous state subsidies paid to striking workers. This courageously reopened diplomatic dialogue with France and Britain, paving the way for international economic recovery.</p>\n\n<p><span class="para-ref">[1.2]</span> In November 1923, currency commissioner **Hjalmar Schacht** introduced the **Rentenmark**, an emergency currency backed not by gold, but by mortgages on Germany\'s industrial and agricultural land (**Source A**). One Rentenmark replaced one trillion old paper marks. In August 1924, it became the permanent **Reichsmark** backed by gold reserves, instantly halting hyperinflation and restoring business confidence.</p>',
           content:
-            '<p><span class="para-ref">[1.1]</span> In August 1923, at the peak of the Ruhr crisis, <strong>Gustav Stresemann</strong> was appointed Chancellor and Foreign Minister. Acting decisively, Stresemann ended passive resistance in September 1923 despite nationalist fury, halting the ruinous state subsidies paid to striking workers. This courageously reopened diplomatic dialogue with France and Britain, paving the way for international economic recovery.</p>\n\n<p><span class="para-ref">[1.2]</span> In November 1923, currency commissioner <strong>Hjalmar Schacht</strong> introduced the <strong>Rentenmark</strong>, an emergency currency backed not by gold, but by mortgages on Germany\'s industrial and agricultural land (<strong>Source A</strong>). One Rentenmark replaced one trillion old paper marks. In August 1924, it became the permanent <strong>Reichsmark</strong> backed by gold reserves, instantly halting hyperinflation and restoring business confidence.</p>',
+            '<p><span class="para-ref">[1.1]</span> In August 1923, at the peak of the Ruhr crisis, **Gustav Stresemann** was appointed Chancellor and Foreign Minister. Acting decisively, Stresemann ended passive resistance in September 1923 despite nationalist fury, halting the ruinous state subsidies paid to striking workers. This courageously reopened diplomatic dialogue with France and Britain, paving the way for international economic recovery.</p>\n\n<p><span class="para-ref">[1.2]</span> In November 1923, currency commissioner **Hjalmar Schacht** introduced the **Rentenmark**, an emergency currency backed not by gold, but by mortgages on Germany\'s industrial and agricultural land (**Source A**). One Rentenmark replaced one trillion old paper marks. In August 1924, it became the permanent **Reichsmark** backed by gold reserves, instantly halting hyperinflation and restoring business confidence.</p>',
           sources: [
             {
               id: 'weimar_l3_source_rentenmark',
@@ -2952,9 +3021,9 @@ const weimar_nazi_germany_data = {
         {
           title: 'Wall Street Gold: The Dawes Plan and the Influx of American Loans (1924)',
           act: 2,
-          text: '<p><span class="para-ref">[2.1]</span> With the currency stabilized, Stresemann resolved the reparations impasse through the <strong>Dawes Plan</strong> in April 1924, chaired by American banker Charles G. Dawes. The plan restructured reparations to match Germany’s ability to pay: annual instalments started at a manageable 1 billion marks, gradually rising to 2.5 billion marks over five years.</p>\n\n<p><span class="para-ref">[2.2]</span> The plan secured an immediate loan of 800 million gold marks ($200 million) from Wall Street banks to bolster the Reichsbank, while French troops evacuated the Ruhr. Over the next five years, American banks injected 25 billion marks into German factories, transport networks, and municipal utilities, fueling an industrial boom that saw output exceed pre-war 1913 levels by 1928.</p>',
+          text: '<p><span class="para-ref">[2.1]</span> With the currency stabilized, Stresemann resolved the reparations impasse through the **Dawes Plan** in April 1924, chaired by American banker Charles G. Dawes. The plan restructured reparations to match Germany’s ability to pay: annual instalments started at a manageable 1 billion marks, gradually rising to 2.5 billion marks over five years.</p>\n\n<p><span class="para-ref">[2.2]</span> The plan secured an immediate loan of 800 million gold marks ($200 million) from Wall Street banks to bolster the Reichsbank, while French troops evacuated the Ruhr. Over the next five years, American banks injected 25 billion marks into German factories, transport networks, and municipal utilities, fueling an industrial boom that saw output exceed pre-war 1913 levels by 1928.</p>',
           content:
-            '<p><span class="para-ref">[2.1]</span> With the currency stabilized, Stresemann resolved the reparations impasse through the <strong>Dawes Plan</strong> in April 1924, chaired by American banker Charles G. Dawes. The plan restructured reparations to match Germany’s ability to pay: annual instalments started at a manageable 1 billion marks, gradually rising to 2.5 billion marks over five years.</p>\n\n<p><span class="para-ref">[2.2]</span> The plan secured an immediate loan of 800 million gold marks ($200 million) from Wall Street banks to bolster the Reichsbank, while French troops evacuated the Ruhr. Over the next five years, American banks injected 25 billion marks into German factories, transport networks, and municipal utilities, fueling an industrial boom that saw output exceed pre-war 1913 levels by 1928.</p>',
+            '<p><span class="para-ref">[2.1]</span> With the currency stabilized, Stresemann resolved the reparations impasse through the **Dawes Plan** in April 1924, chaired by American banker Charles G. Dawes. The plan restructured reparations to match Germany’s ability to pay: annual instalments started at a manageable 1 billion marks, gradually rising to 2.5 billion marks over five years.</p>\n\n<p><span class="para-ref">[2.2]</span> The plan secured an immediate loan of 800 million gold marks ($200 million) from Wall Street banks to bolster the Reichsbank, while French troops evacuated the Ruhr. Over the next five years, American banks injected 25 billion marks into German factories, transport networks, and municipal utilities, fueling an industrial boom that saw output exceed pre-war 1913 levels by 1928.</p>',
           sources: [
             {
               id: 'weimar_l3_source_b',
@@ -3030,9 +3099,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Spirit of Reconciliation: The Locarno Treaties and Demilitarising the Rhineland (1925)',
           act: 3,
-          text: '<p><span class="para-ref">[3.1]</span> Stresemann pursued a pragmatic policy of <em>Erfüllungspolitik</em> (fulfillment), restoring Germany\'s standing through peaceful diplomacy. In October 1925, he signed the <strong>Locarno Treaties</strong> in Switzerland alongside Britain, France, Italy, and Belgium (<strong>Source B</strong>). For the first time since 1918, Germany was treated as an equal sovereign partner rather than a defeated pariah.</p>\n\n<p><span class="para-ref">[3.2]</span> Under Locarno, Germany voluntarily accepted its western borders with France and Belgium, renouncing claims to Alsace-Lorraine and accepting the demilitarisation of the Rhineland. In return, France pledged never to invade Germany again. Crucially, Stresemann left eastern borders open to peaceful arbitration, winning the 1926 Nobel Peace Prize alongside Aristide Briand.</p>',
+          text: '<p><span class="para-ref">[3.1]</span> Stresemann pursued a pragmatic policy of <em>Erfüllungspolitik</em> (fulfillment), restoring Germany\'s standing through peaceful diplomacy. In October 1925, he signed the **Locarno Treaties** in Switzerland alongside Britain, France, Italy, and Belgium (**Source B**). For the first time since 1918, Germany was treated as an equal sovereign partner rather than a defeated pariah.</p>\n\n<p><span class="para-ref">[3.2]</span> Under Locarno, Germany voluntarily accepted its western borders with France and Belgium, renouncing claims to Alsace-Lorraine and accepting the demilitarisation of the Rhineland. In return, France pledged never to invade Germany again. Crucially, Stresemann left eastern borders open to peaceful arbitration, winning the 1926 Nobel Peace Prize alongside Aristide Briand.</p>',
           content:
-            '<p><span class="para-ref">[3.1]</span> Stresemann pursued a pragmatic policy of <em>Erfüllungspolitik</em> (fulfillment), restoring Germany\'s standing through peaceful diplomacy. In October 1925, he signed the <strong>Locarno Treaties</strong> in Switzerland alongside Britain, France, Italy, and Belgium (<strong>Source B</strong>). For the first time since 1918, Germany was treated as an equal sovereign partner rather than a defeated pariah.</p>\n\n<p><span class="para-ref">[3.2]</span> Under Locarno, Germany voluntarily accepted its western borders with France and Belgium, renouncing claims to Alsace-Lorraine and accepting the demilitarisation of the Rhineland. In return, France pledged never to invade Germany again. Crucially, Stresemann left eastern borders open to peaceful arbitration, winning the 1926 Nobel Peace Prize alongside Aristide Briand.</p>',
+            '<p><span class="para-ref">[3.1]</span> Stresemann pursued a pragmatic policy of <em>Erfüllungspolitik</em> (fulfillment), restoring Germany\'s standing through peaceful diplomacy. In October 1925, he signed the **Locarno Treaties** in Switzerland alongside Britain, France, Italy, and Belgium (**Source B**). For the first time since 1918, Germany was treated as an equal sovereign partner rather than a defeated pariah.</p>\n\n<p><span class="para-ref">[3.2]</span> Under Locarno, Germany voluntarily accepted its western borders with France and Belgium, renouncing claims to Alsace-Lorraine and accepting the demilitarisation of the Rhineland. In return, France pledged never to invade Germany again. Crucially, Stresemann left eastern borders open to peaceful arbitration, winning the 1926 Nobel Peace Prize alongside Aristide Briand.</p>',
           sources: [
             {
               id: 'weimar_l3_source_e',
@@ -3111,9 +3180,9 @@ const weimar_nazi_germany_data = {
         {
           title: 'Return to the World Stage: Germany Joins the League of Nations (Sep 1926)',
           act: 4,
-          text: '<p><span class="para-ref">[4.1]</span> In September 1926, the diplomatic momentum of Locarno culminated in Germany’s admission into the <strong>League of Nations</strong> (<strong>Source C</strong>). Germany was awarded a permanent seat on the prestigious League Council alongside Britain and France, marking its formal rehabilitation among the world\'s leading great powers.</p>\n\n<p><span class="para-ref">[4.2]</span> Council membership allowed Germany to champion the rights of German minorities across Central Europe. Germany further demonstrated its peaceful intentions by signing the <strong>Kellogg-Briand Pact</strong> in 1928 with sixty-two nations, renouncing war as an instrument of policy. These diplomatic successes boosted the Republic\'s prestige and undermined extremist parties throughout the mid-1920s.</p>',
+          text: '<p><span class="para-ref">[4.1]</span> In September 1926, the diplomatic momentum of Locarno culminated in Germany’s admission into the **League of Nations** (**Source C**). Germany was awarded a permanent seat on the prestigious League Council alongside Britain and France, marking its formal rehabilitation among the world\'s leading great powers.</p>\n\n<p><span class="para-ref">[4.2]</span> Council membership allowed Germany to champion the rights of German minorities across Central Europe. Germany further demonstrated its peaceful intentions by signing the **Kellogg-Briand Pact** in 1928 with sixty-two nations, renouncing war as an instrument of policy. These diplomatic successes boosted the Republic\'s prestige and undermined extremist parties throughout the mid-1920s.</p>',
           content:
-            '<p><span class="para-ref">[4.1]</span> In September 1926, the diplomatic momentum of Locarno culminated in Germany’s admission into the <strong>League of Nations</strong> (<strong>Source C</strong>). Germany was awarded a permanent seat on the prestigious League Council alongside Britain and France, marking its formal rehabilitation among the world\'s leading great powers.</p>\n\n<p><span class="para-ref">[4.2]</span> Council membership allowed Germany to champion the rights of German minorities across Central Europe. Germany further demonstrated its peaceful intentions by signing the <strong>Kellogg-Briand Pact</strong> in 1928 with sixty-two nations, renouncing war as an instrument of policy. These diplomatic successes boosted the Republic\'s prestige and undermined extremist parties throughout the mid-1920s.</p>',
+            '<p><span class="para-ref">[4.1]</span> In September 1926, the diplomatic momentum of Locarno culminated in Germany’s admission into the **League of Nations** (**Source C**). Germany was awarded a permanent seat on the prestigious League Council alongside Britain and France, marking its formal rehabilitation among the world\'s leading great powers.</p>\n\n<p><span class="para-ref">[4.2]</span> Council membership allowed Germany to champion the rights of German minorities across Central Europe. Germany further demonstrated its peaceful intentions by signing the **Kellogg-Briand Pact** in 1928 with sixty-two nations, renouncing war as an instrument of policy. These diplomatic successes boosted the Republic\'s prestige and undermined extremist parties throughout the mid-1920s.</p>',
           sources: [
             {
               id: 'weimar_l3_source_geneva',
@@ -3199,9 +3268,9 @@ const weimar_nazi_germany_data = {
           title:
             'Dancing on a Volcano: The Kellogg-Briand Pact, the Young Plan and Hidden Vulnerabilities (1928–1929)',
           act: 5,
-          text: '<p><span class="para-ref">[5.1]</span> In 1929, Stresemann negotiated the <strong>Young Plan</strong>, chaired by Owen D. Young. The agreement slashed Germany’s total reparations from £6.6 billion to £2 billion—a 20% reduction—with payments spread over fifty-nine years until 1988. In exchange, Allied occupation troops withdrew from the Rhineland in June 1930, five years ahead of schedule.</p>\n\n<p><span class="para-ref">[5.2]</span> Despite these gains, German prosperity rested on dangerous foundations, heavily reliant on short-term US loans that could be recalled at any moment. Stresemann warned in 1928 that Germany was <em>"dancing on a volcano."</em> Tragically, Stresemann died of a stroke on 3 October 1929; just weeks later, the Wall Street Crash struck, pulling the plug on American credit and shattering the Weimar economy.</p>',
+          text: '<p><span class="para-ref">[5.1]</span> In 1929, Stresemann negotiated the **Young Plan**, chaired by Owen D. Young. The agreement slashed Germany’s total reparations from £6.6 billion to £2 billion—a 20% reduction—with payments spread over fifty-nine years until 1988. In exchange, Allied occupation troops withdrew from the Rhineland in June 1930, five years ahead of schedule.</p>\n\n<p><span class="para-ref">[5.2]</span> Despite these gains, German prosperity rested on dangerous foundations, heavily reliant on short-term US loans that could be recalled at any moment. Stresemann warned in 1928 that Germany was <em>"dancing on a volcano."</em> Tragically, Stresemann died of a stroke on 3 October 1929; just weeks later, the Wall Street Crash struck, pulling the plug on American credit and shattering the Weimar economy.</p>',
           content:
-            '<p><span class="para-ref">[5.1]</span> In 1929, Stresemann negotiated the <strong>Young Plan</strong>, chaired by Owen D. Young. The agreement slashed Germany’s total reparations from £6.6 billion to £2 billion—a 20% reduction—with payments spread over fifty-nine years until 1988. In exchange, Allied occupation troops withdrew from the Rhineland in June 1930, five years ahead of schedule.</p>\n\n<p><span class="para-ref">[5.2]</span> Despite these gains, German prosperity rested on dangerous foundations, heavily reliant on short-term US loans that could be recalled at any moment. Stresemann warned in 1928 that Germany was <em>"dancing on a volcano."</em> Tragically, Stresemann died of a stroke on 3 October 1929; just weeks later, the Wall Street Crash struck, pulling the plug on American credit and shattering the Weimar economy.</p>',
+            '<p><span class="para-ref">[5.1]</span> In 1929, Stresemann negotiated the **Young Plan**, chaired by Owen D. Young. The agreement slashed Germany’s total reparations from £6.6 billion to £2 billion—a 20% reduction—with payments spread over fifty-nine years until 1988. In exchange, Allied occupation troops withdrew from the Rhineland in June 1930, five years ahead of schedule.</p>\n\n<p><span class="para-ref">[5.2]</span> Despite these gains, German prosperity rested on dangerous foundations, heavily reliant on short-term US loans that could be recalled at any moment. Stresemann warned in 1928 that Germany was <em>"dancing on a volcano."</em> Tragically, Stresemann died of a stroke on 3 October 1929; just weeks later, the Wall Street Crash struck, pulling the plug on American credit and shattering the Weimar economy.</p>',
           sources: [
             {
               id: 'weimar_l3_source_d',
@@ -4148,35 +4217,56 @@ const weimar_nazi_germany_data = {
           term: 'Standard of Living',
           definition:
             'The level of wealth, comfort, and material goods available to a certain socioeconomic class.',
+          syllables: 'Sta-ndard of Li-ving',
+          phonetic: 'standard of living',
+          tier: '2',
         },
         {
           term: 'Unemployment Insurance Act (1927)',
           definition:
             'A national scheme requiring workers and employers to contribute to a central fund, which provided benefits to the unemployed and sick.',
+          syllables: 'U-ne-mploy-ment I-nsu-ra-nce Act (1927)',
+          phonetic: 'unemployment insurance act (1927)',
+          tier: '3',
         },
         {
           term: 'New Woman (Neue Frau)',
           definition:
             "The media's term for the liberated, independent, and fashion-conscious young women of 1920s city life.",
+          syllables: 'New Wo-man (Neue Frau)',
+          phonetic: 'new woman (neue frau)',
+          tier: '2',
         },
         {
           term: 'Article 109',
           definition:
             'The clause in the Weimar Constitution that legally guaranteed women equal rights with men.',
+          syllables: 'A-rticle 109',
+          phonetic: 'article 109',
+          tier: '2',
         },
         {
           term: 'Avant-garde',
           definition: 'New, experimental, and radical ideas in art and culture.',
+          syllables: 'A-vant-ga-rde',
+          phonetic: 'avant-garde',
+          tier: '2',
         },
         {
           term: 'New Objectivity (Neue Sachlichkeit)',
           definition:
             'An artistic movement that rejected romanticism and instead painted the harsh, gritty, and often ugly reality of everyday German society.',
+          syllables: 'New O-bjecti-vity (Neue Sa-chlichkeit)',
+          phonetic: 'new objectivity (neue sachlichkeit)',
+          tier: '2',
         },
         {
           term: 'Bauhaus',
           definition:
             'A revolutionary school of architecture and design, founded by Walter Gropius, that focused on simplicity, modern materials, and functionality.',
+          syllables: 'Bau-haus',
+          phonetic: 'bauhaus',
+          tier: '2',
         },
       ],
       flashcards: [
@@ -4220,9 +4310,9 @@ const weimar_nazi_germany_data = {
           title:
             'Wages, Tenements and Pensions: Standard of Living and Unemployment Insurance in the Twenties (1924–1928)',
           act: 1,
-          text: '<p><span class="para-ref">[1.1]</span> The Golden Twenties delivered real social improvements for German workers. Real wages rose steadily, increasing 9% in 1927 and 12% in 1928, making German industrial workers among the best paid in Europe. In 1927, the Reichstag enacted the landmark <strong>Unemployment Insurance Act</strong>, providing a national safety net funded by worker and employer contributions that protected 17 million workers from destitution.</p>\n\n<p><span class="para-ref">[1.2]</span> The state also funded extensive public housing, constructing over 2 million modern homes between 1924 and 1931, which slashed homelessness by 60%. War pensions supported 750,000 disabled veterans, 400,000 widows, and 900,000 orphans. However, this expansive welfare state was costly, creating high tax burdens that deeply alienated industrialists and the conservative middle class.</p>',
+          text: '<p><span class="para-ref">[1.1]</span> The Golden Twenties delivered real social improvements for German workers. Real wages rose steadily, increasing 9% in 1927 and 12% in 1928, making German industrial workers among the best paid in Europe. In 1927, the Reichstag enacted the landmark **Unemployment Insurance Act**, providing a national safety net funded by worker and employer contributions that protected 17 million workers from destitution.</p>\n\n<p><span class="para-ref">[1.2]</span> The state also funded extensive public housing, constructing over 2 million modern homes between 1924 and 1931, which slashed homelessness by 60%. War pensions supported 750,000 disabled veterans, 400,000 widows, and 900,000 orphans. However, this expansive welfare state was costly, creating high tax burdens that deeply alienated industrialists and the conservative middle class.</p>',
           content:
-            '<p><span class="para-ref">[1.1]</span> The Golden Twenties delivered real social improvements for German workers. Real wages rose steadily, increasing 9% in 1927 and 12% in 1928, making German industrial workers among the best paid in Europe. In 1927, the Reichstag enacted the landmark <strong>Unemployment Insurance Act</strong>, providing a national safety net funded by worker and employer contributions that protected 17 million workers from destitution.</p>\n\n<p><span class="para-ref">[1.2]</span> The state also funded extensive public housing, constructing over 2 million modern homes between 1924 and 1931, which slashed homelessness by 60%. War pensions supported 750,000 disabled veterans, 400,000 widows, and 900,000 orphans. However, this expansive welfare state was costly, creating high tax burdens that deeply alienated industrialists and the conservative middle class.</p>',
+            '<p><span class="para-ref">[1.1]</span> The Golden Twenties delivered real social improvements for German workers. Real wages rose steadily, increasing 9% in 1927 and 12% in 1928, making German industrial workers among the best paid in Europe. In 1927, the Reichstag enacted the landmark **Unemployment Insurance Act**, providing a national safety net funded by worker and employer contributions that protected 17 million workers from destitution.</p>\n\n<p><span class="para-ref">[1.2]</span> The state also funded extensive public housing, constructing over 2 million modern homes between 1924 and 1931, which slashed homelessness by 60%. War pensions supported 750,000 disabled veterans, 400,000 widows, and 900,000 orphans. However, this expansive welfare state was costly, creating high tax burdens that deeply alienated industrialists and the conservative middle class.</p>',
           sources: [
             {
               id: 'weimar_l4_source_d',
@@ -4300,9 +4390,9 @@ const weimar_nazi_germany_data = {
           title:
             "The Bubikopf and the Vote: The Emancipation and Clashes of the 'New Woman' (1924–1929)",
           act: 2,
-          text: '<p><span class="para-ref">[2.1]</span> The Weimar Constitution granted women equal voting rights at age twenty, achieving a 90% female turnout in national elections; 112 female deputies served in the Reichstag between 1919 and 1932. Female employment surged, with 1.7 million women working in retail, offices, teaching, and nursing across German cities.</p>\n\n<p><span class="para-ref">[2.2]</span> In major cities like Berlin, financial independence gave rise to the <strong>"New Woman"</strong> (<em>Neue Frau</em>) (<strong>Source A</strong>). Sporting cropped "Bubikopf" haircuts, short skirts, and cigarettes, they challenged traditional patriarchy. However, traditionalists, the Catholic Church, and right-wing groups condemned this freedom as immoral, demanding that women return to the domestic sphere of <em>Kinder, Küche, Kirche</em> (Children, Kitchen, Church).</p>',
+          text: '<p><span class="para-ref">[2.1]</span> The Weimar Constitution granted women equal voting rights at age twenty, achieving a 90% female turnout in national elections; 112 female deputies served in the Reichstag between 1919 and 1932. Female employment surged, with 1.7 million women working in retail, offices, teaching, and nursing across German cities.</p>\n\n<p><span class="para-ref">[2.2]</span> In major cities like Berlin, financial independence gave rise to the **"New Woman"** (<em>Neue Frau</em>) (**Source A**). Sporting cropped "Bubikopf" haircuts, short skirts, and cigarettes, they challenged traditional patriarchy. However, traditionalists, the Catholic Church, and right-wing groups condemned this freedom as immoral, demanding that women return to the domestic sphere of <em>Kinder, Küche, Kirche</em> (Children, Kitchen, Church).</p>',
           content:
-            '<p><span class="para-ref">[2.1]</span> The Weimar Constitution granted women equal voting rights at age twenty, achieving a 90% female turnout in national elections; 112 female deputies served in the Reichstag between 1919 and 1932. Female employment surged, with 1.7 million women working in retail, offices, teaching, and nursing across German cities.</p>\n\n<p><span class="para-ref">[2.2]</span> In major cities like Berlin, financial independence gave rise to the <strong>"New Woman"</strong> (<em>Neue Frau</em>) (<strong>Source A</strong>). Sporting cropped "Bubikopf" haircuts, short skirts, and cigarettes, they challenged traditional patriarchy. However, traditionalists, the Catholic Church, and right-wing groups condemned this freedom as immoral, demanding that women return to the domestic sphere of <em>Kinder, Küche, Kirche</em> (Children, Kitchen, Church).</p>',
+            '<p><span class="para-ref">[2.1]</span> The Weimar Constitution granted women equal voting rights at age twenty, achieving a 90% female turnout in national elections; 112 female deputies served in the Reichstag between 1919 and 1932. Female employment surged, with 1.7 million women working in retail, offices, teaching, and nursing across German cities.</p>\n\n<p><span class="para-ref">[2.2]</span> In major cities like Berlin, financial independence gave rise to the **"New Woman"** (<em>Neue Frau</em>) (**Source A**). Sporting cropped "Bubikopf" haircuts, short skirts, and cigarettes, they challenged traditional patriarchy. However, traditionalists, the Catholic Church, and right-wing groups condemned this freedom as immoral, demanding that women return to the domestic sphere of <em>Kinder, Küche, Kirche</em> (Children, Kitchen, Church).</p>',
           sources: [
             {
               id: 'weimar_l4_source_b',
@@ -4386,9 +4476,9 @@ const weimar_nazi_germany_data = {
           title:
             'Glass, Steel and Functional Design: Walter Gropius and the Bauhaus Revolution (1925–1929)',
           act: 3,
-          text: '<p><span class="para-ref">[3.1]</span> The Golden Twenties saw a revolutionary explosion of artistic creativity. In 1919, architect <strong>Walter Gropius</strong> founded the <strong>Bauhaus</strong> design school in Weimar, moving to purpose-built headquarters in Dessau in 1925 (<strong>Source B</strong>). Bauhaus championed a functionalist philosophy: <em>"form follows function"</em> and <em>"art into industry,"</em> replacing ornate imperial architecture with clean geometric lines, steel frames, and expansive glass curtain walls.</p>\n\n<p><span class="para-ref">[3.2]</span> Masters like Mies van der Rohe and Marcel Breuer designed affordable tubular steel chairs, minimalist lamps, and functional municipal housing blocks. Bauhaus achieved global fame as the peak of modernist design, symbolizing Weimar\'s progressive spirit, while infuriating traditionalists who denounced its flat roofs and austere forms as "un-German."</p>',
+          text: '<p><span class="para-ref">[3.1]</span> The Golden Twenties saw a revolutionary explosion of artistic creativity. In 1919, architect **Walter Gropius** founded the **Bauhaus** design school in Weimar, moving to purpose-built headquarters in Dessau in 1925 (**Source B**). Bauhaus championed a functionalist philosophy: <em>"form follows function"</em> and <em>"art into industry,"</em> replacing ornate imperial architecture with clean geometric lines, steel frames, and expansive glass curtain walls.</p>\n\n<p><span class="para-ref">[3.2]</span> Masters like Mies van der Rohe and Marcel Breuer designed affordable tubular steel chairs, minimalist lamps, and functional municipal housing blocks. Bauhaus achieved global fame as the peak of modernist design, symbolizing Weimar\'s progressive spirit, while infuriating traditionalists who denounced its flat roofs and austere forms as "un-German."</p>',
           content:
-            '<p><span class="para-ref">[3.1]</span> The Golden Twenties saw a revolutionary explosion of artistic creativity. In 1919, architect <strong>Walter Gropius</strong> founded the <strong>Bauhaus</strong> design school in Weimar, moving to purpose-built headquarters in Dessau in 1925 (<strong>Source B</strong>). Bauhaus championed a functionalist philosophy: <em>"form follows function"</em> and <em>"art into industry,"</em> replacing ornate imperial architecture with clean geometric lines, steel frames, and expansive glass curtain walls.</p>\n\n<p><span class="para-ref">[3.2]</span> Masters like Mies van der Rohe and Marcel Breuer designed affordable tubular steel chairs, minimalist lamps, and functional municipal housing blocks. Bauhaus achieved global fame as the peak of modernist design, symbolizing Weimar\'s progressive spirit, while infuriating traditionalists who denounced its flat roofs and austere forms as "un-German."</p>',
+            '<p><span class="para-ref">[3.1]</span> The Golden Twenties saw a revolutionary explosion of artistic creativity. In 1919, architect **Walter Gropius** founded the **Bauhaus** design school in Weimar, moving to purpose-built headquarters in Dessau in 1925 (**Source B**). Bauhaus championed a functionalist philosophy: <em>"form follows function"</em> and <em>"art into industry,"</em> replacing ornate imperial architecture with clean geometric lines, steel frames, and expansive glass curtain walls.</p>\n\n<p><span class="para-ref">[3.2]</span> Masters like Mies van der Rohe and Marcel Breuer designed affordable tubular steel chairs, minimalist lamps, and functional municipal housing blocks. Bauhaus achieved global fame as the peak of modernist design, symbolizing Weimar\'s progressive spirit, while infuriating traditionalists who denounced its flat roofs and austere forms as "un-German."</p>',
           sources: [
             {
               id: 'weimar_l4_source_bauhaus',
@@ -4471,9 +4561,9 @@ const weimar_nazi_germany_data = {
           title:
             'Neue Sachlichkeit & Weimar Cinema: Otto Dix, The Cabinet of Dr. Caligari and Modernist Irony (1924–1929)',
           act: 4,
-          text: '<p><span class="para-ref">[4.1]</span> In visual art, painters abandoned romanticism for <strong>Neue Sachlichkeit</strong> (New Objectivity), capturing Weimar society with unsparing realism. Artists like <strong>Otto Dix</strong> and <strong>George Grosz</strong> used biting satire to expose corruption, contrasting grotesque war profiteers and nightclub cabarets with maimed, limbless war veterans begging in Berlin streets.</p>\n\n<p><span class="para-ref">[4.2]</span> German cinema at Babelsberg led the world in expressionist filmmaking, producing classics like Robert Wiene’s <em>The Cabinet of Dr. Caligari</em> (1920) and Fritz Lang’s sci-fi masterpiece <em>Metropolis</em> (1927). Berlin became Europe\'s cultural capital, famous for over 900 avant-garde cabarets and jazz clubs (<strong>Source C</strong>), celebrating complete artistic and personal liberation.</p>',
+          text: '<p><span class="para-ref">[4.1]</span> In visual art, painters abandoned romanticism for **Neue Sachlichkeit** (New Objectivity), capturing Weimar society with unsparing realism. Artists like **Otto Dix** and **George Grosz** used biting satire to expose corruption, contrasting grotesque war profiteers and nightclub cabarets with maimed, limbless war veterans begging in Berlin streets.</p>\n\n<p><span class="para-ref">[4.2]</span> German cinema at Babelsberg led the world in expressionist filmmaking, producing classics like Robert Wiene’s <em>The Cabinet of Dr. Caligari</em> (1920) and Fritz Lang’s sci-fi masterpiece <em>Metropolis</em> (1927). Berlin became Europe\'s cultural capital, famous for over 900 avant-garde cabarets and jazz clubs (**Source C**), celebrating complete artistic and personal liberation.</p>',
           content:
-            '<p><span class="para-ref">[4.1]</span> In visual art, painters abandoned romanticism for <strong>Neue Sachlichkeit</strong> (New Objectivity), capturing Weimar society with unsparing realism. Artists like <strong>Otto Dix</strong> and <strong>George Grosz</strong> used biting satire to expose corruption, contrasting grotesque war profiteers and nightclub cabarets with maimed, limbless war veterans begging in Berlin streets.</p>\n\n<p><span class="para-ref">[4.2]</span> German cinema at Babelsberg led the world in expressionist filmmaking, producing classics like Robert Wiene’s <em>The Cabinet of Dr. Caligari</em> (1920) and Fritz Lang’s sci-fi masterpiece <em>Metropolis</em> (1927). Berlin became Europe\'s cultural capital, famous for over 900 avant-garde cabarets and jazz clubs (<strong>Source C</strong>), celebrating complete artistic and personal liberation.</p>',
+            '<p><span class="para-ref">[4.1]</span> In visual art, painters abandoned romanticism for **Neue Sachlichkeit** (New Objectivity), capturing Weimar society with unsparing realism. Artists like **Otto Dix** and **George Grosz** used biting satire to expose corruption, contrasting grotesque war profiteers and nightclub cabarets with maimed, limbless war veterans begging in Berlin streets.</p>\n\n<p><span class="para-ref">[4.2]</span> German cinema at Babelsberg led the world in expressionist filmmaking, producing classics like Robert Wiene’s <em>The Cabinet of Dr. Caligari</em> (1920) and Fritz Lang’s sci-fi masterpiece <em>Metropolis</em> (1927). Berlin became Europe\'s cultural capital, famous for over 900 avant-garde cabarets and jazz clubs (**Source C**), celebrating complete artistic and personal liberation.</p>',
           sources: [
             {
               id: 'weimar_l4_source_a',
@@ -4547,9 +4637,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Conservative Backlash: Degeneracy Accusations and the Cultural Fault Lines of the Republic (1924–1929)',
           act: 5,
-          text: '<p><span class="para-ref">[5.1]</span> This modernist renaissance provoked a venomous backlash among traditional Germans. To the provincial middle classes, rural farming communities, and religious conservatives, Berlin appeared as a decadent, immoral Babylon that subverted traditional values. They were scandalized by provocative cabaret satire, female liberation, and visible gay and trans culture in the capital.</p>\n\n<p><span class="para-ref">[5.2]</span> Right-wing nationalists and the rising Nazi Party weaponized this resentment, labeling modern art and architecture <strong>"Kulturbolschewismus"</strong> (Cultural Bolshevism) and blaming a Jewish conspiracy for corrupting Germany. This deep cultural division fractured Weimar society: while cosmopolitan urbanites embraced cultural freedom, millions of rural and conservative Germans felt alienated from democracy, preparing the ground for Hitler’s authoritarian appeal.</p>',
+          text: '<p><span class="para-ref">[5.1]</span> This modernist renaissance provoked a venomous backlash among traditional Germans. To the provincial middle classes, rural farming communities, and religious conservatives, Berlin appeared as a decadent, immoral Babylon that subverted traditional values. They were scandalized by provocative cabaret satire, female liberation, and visible gay and trans culture in the capital.</p>\n\n<p><span class="para-ref">[5.2]</span> Right-wing nationalists and the rising Nazi Party weaponized this resentment, labeling modern art and architecture **"Kulturbolschewismus"** (Cultural Bolshevism) and blaming a Jewish conspiracy for corrupting Germany. This deep cultural division fractured Weimar society: while cosmopolitan urbanites embraced cultural freedom, millions of rural and conservative Germans felt alienated from democracy, preparing the ground for Hitler’s authoritarian appeal.</p>',
           content:
-            '<p><span class="para-ref">[5.1]</span> This modernist renaissance provoked a venomous backlash among traditional Germans. To the provincial middle classes, rural farming communities, and religious conservatives, Berlin appeared as a decadent, immoral Babylon that subverted traditional values. They were scandalized by provocative cabaret satire, female liberation, and visible gay and trans culture in the capital.</p>\n\n<p><span class="para-ref">[5.2]</span> Right-wing nationalists and the rising Nazi Party weaponized this resentment, labeling modern art and architecture <strong>"Kulturbolschewismus"</strong> (Cultural Bolshevism) and blaming a Jewish conspiracy for corrupting Germany. This deep cultural division fractured Weimar society: while cosmopolitan urbanites embraced cultural freedom, millions of rural and conservative Germans felt alienated from democracy, preparing the ground for Hitler’s authoritarian appeal.</p>',
+            '<p><span class="para-ref">[5.1]</span> This modernist renaissance provoked a venomous backlash among traditional Germans. To the provincial middle classes, rural farming communities, and religious conservatives, Berlin appeared as a decadent, immoral Babylon that subverted traditional values. They were scandalized by provocative cabaret satire, female liberation, and visible gay and trans culture in the capital.</p>\n\n<p><span class="para-ref">[5.2]</span> Right-wing nationalists and the rising Nazi Party weaponized this resentment, labeling modern art and architecture **"Kulturbolschewismus"** (Cultural Bolshevism) and blaming a Jewish conspiracy for corrupting Germany. This deep cultural division fractured Weimar society: while cosmopolitan urbanites embraced cultural freedom, millions of rural and conservative Germans felt alienated from democracy, preparing the ground for Hitler’s authoritarian appeal.</p>',
           sources: [
             {
               id: 'weimar_l4_source_e',
@@ -5362,40 +5452,64 @@ const weimar_nazi_germany_data = {
         {
           term: "DAP (German Workers' Party)",
           definition: 'The original, tiny political party founded by Anton Drexler in 1919.',
+          syllables: "DAP (Ge-rman Wo-rkers' Pa-rty)",
+          phonetic: "dap (german workers' party)",
+          tier: '2',
         },
         {
           term: "NSDAP (National Socialist German Workers' Party)",
           definition: "The new name given to the DAP by Hitler in 1920 (abbreviated to 'Nazi').",
+          syllables: "NSDAP (Na-tio-nal So-cia-list Ge-rman Wo-rkers' Pa-rty)",
+          phonetic: "nsdap (national socialist german workers' party)",
+          tier: '3',
         },
         {
           term: '25-Point Programme',
           definition:
             'The foundational manifesto of the Nazi Party, written in 1920, containing their core political demands.',
+          syllables: '25-Point Pro-gramme',
+          phonetic: '25-point programme',
+          tier: '3',
         },
         {
           term: 'Nationalism',
           definition:
             "A fierce, devoted love of one's country, often coupled with the belief that it is superior to others and must be kept militarily strong.",
+          syllables: 'na-tion-al-ism',
+          phonetic: 'ˈnæʃənəlɪzəm',
+          tier: '3',
         },
         {
           term: 'Socialism',
           definition:
             'A political idea where wealth and property are shared more equally among the working people, and large corporations are controlled by the state.',
+          syllables: 'So-cia-lism',
+          phonetic: 'socialism',
+          tier: '3',
         },
         {
           term: 'SA (Sturmabteilung)',
           definition:
             "The private army of the Nazi Party, also known as the 'Brownshirts', set up in 1921 and commanded by Ernst Röhm.",
+          syllables: 'S-A (Stu-rmabtei-lung)',
+          phonetic: 'ˌɛs ˈeɪ (sturmabteilung)',
+          tier: '3',
         },
         {
           term: 'Stosstrupp (Shock Troop)',
           definition:
             "An elite, highly trusted unit selected from the SA to act as Hitler's personal bodyguard.",
+          syllables: 'Sto-sstrupp (Shock Troop)',
+          phonetic: 'stosstrupp (shock troop)',
+          tier: '3',
         },
         {
           term: 'Völkischer Beobachter',
           definition:
             'The official newspaper of the Nazi Party, purchased in 1920 to spread their propaganda.',
+          syllables: 'Völki-scher Beo-ba-chter',
+          phonetic: 'völkischer beobachter',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -5405,9 +5519,9 @@ const weimar_nazi_germany_data = {
           title:
             "The Furrier's Son in the Sterneckerbräu: Anton Drexler and the German Workers’ Party (Sep 1919)",
           act: 1,
-          text: '<p><span class="para-ref">[1.1]</span> In September 1919, Corporal Adolf Hitler was working as an undercover intelligence agent (<em>V-Mann</em>) for the Bavarian army, tasked with spying on subversive political groups in Munich. On 12 September, he was dispatched to a dimly lit beer hall, the <em>Sterneckerbräu</em>, to monitor the <strong>German Workers\' Party (DAP)</strong>. Founded in January 1919 by Munich railway locksmith <strong>Anton Drexler</strong> (<strong>Source A</strong>), the party was an obscure, penniless nationalist group of just fifty members with no printing press, no manifesto, and total funds of seven marks.</p>\n\n<p><span class="para-ref">[1.2]</span> When a speaker advocated that Bavaria should break away from Germany and ally with Austria, Hitler leaped to his feet and delivered a furious, twenty-minute nationalist rebuttal. Astonished by Hitler\'s raw, hypnotic rhetorical power, Drexler handed him a pamphlet and invited him to join. Hitler accepted, joining as party member number 555 (falsified from 55 to exaggerate party strength). He was promptly put in charge of party propaganda, discovering his innate talent for captivating and radicalizing mass audiences.</p>',
+          text: '<p><span class="para-ref">[1.1]</span> In September 1919, Corporal Adolf Hitler was working as an undercover intelligence agent (<em>V-Mann</em>) for the Bavarian army, tasked with spying on subversive political groups in Munich. On 12 September, he was dispatched to a dimly lit beer hall, the <em>Sterneckerbräu</em>, to monitor the **German Workers\' Party (DAP)**. Founded in January 1919 by Munich railway locksmith **Anton Drexler** (**Source A**), the party was an obscure, penniless nationalist group of just fifty members with no printing press, no manifesto, and total funds of seven marks.</p>\n\n<p><span class="para-ref">[1.2]</span> When a speaker advocated that Bavaria should break away from Germany and ally with Austria, Hitler leaped to his feet and delivered a furious, twenty-minute nationalist rebuttal. Astonished by Hitler\'s raw, hypnotic rhetorical power, Drexler handed him a pamphlet and invited him to join. Hitler accepted, joining as party member number 555 (falsified from 55 to exaggerate party strength). He was promptly put in charge of party propaganda, discovering his innate talent for captivating and radicalizing mass audiences.</p>',
           content:
-            '<p><span class="para-ref">[1.1]</span> In September 1919, Corporal Adolf Hitler was working as an undercover intelligence agent (<em>V-Mann</em>) for the Bavarian army, tasked with spying on subversive political groups in Munich. On 12 September, he was dispatched to a dimly lit beer hall, the <em>Sterneckerbräu</em>, to monitor the <strong>German Workers\' Party (DAP)</strong>. Founded in January 1919 by Munich railway locksmith <strong>Anton Drexler</strong> (<strong>Source A</strong>), the party was an obscure, penniless nationalist group of just fifty members with no printing press, no manifesto, and total funds of seven marks.</p>\n\n<p><span class="para-ref">[1.2]</span> When a speaker advocated that Bavaria should break away from Germany and ally with Austria, Hitler leaped to his feet and delivered a furious, twenty-minute nationalist rebuttal. Astonished by Hitler\'s raw, hypnotic rhetorical power, Drexler handed him a pamphlet and invited him to join. Hitler accepted, joining as party member number 555 (falsified from 55 to exaggerate party strength). He was promptly put in charge of party propaganda, discovering his innate talent for captivating and radicalizing mass audiences.</p>',
+            '<p><span class="para-ref">[1.1]</span> In September 1919, Corporal Adolf Hitler was working as an undercover intelligence agent (<em>V-Mann</em>) for the Bavarian army, tasked with spying on subversive political groups in Munich. On 12 September, he was dispatched to a dimly lit beer hall, the <em>Sterneckerbräu</em>, to monitor the **German Workers\' Party (DAP)**. Founded in January 1919 by Munich railway locksmith **Anton Drexler** (**Source A**), the party was an obscure, penniless nationalist group of just fifty members with no printing press, no manifesto, and total funds of seven marks.</p>\n\n<p><span class="para-ref">[1.2]</span> When a speaker advocated that Bavaria should break away from Germany and ally with Austria, Hitler leaped to his feet and delivered a furious, twenty-minute nationalist rebuttal. Astonished by Hitler\'s raw, hypnotic rhetorical power, Drexler handed him a pamphlet and invited him to join. Hitler accepted, joining as party member number 555 (falsified from 55 to exaggerate party strength). He was promptly put in charge of party propaganda, discovering his innate talent for captivating and radicalizing mass audiences.</p>',
           sources: [
             {
               id: 'weimar_l5_source_drexler',
@@ -5493,9 +5607,9 @@ const weimar_nazi_germany_data = {
           title:
             'The 25-Point Programme: Anti-Versailles Grievances and Populist Rhetoric (Feb 1920)',
           act: 2,
-          text: '<p><span class="para-ref">[2.1]</span> On 24 February 1920, Hitler and Drexler presented the party\'s official manifesto, the <strong>25-Point Programme</strong>, to a boisterous crowd of 2,000 in Munich’s <em>Hofbräuhaus</em> (<strong>Source B</strong>). The manifesto cleverly synthesized radical pan-German nationalism with populist socialist appeals designed to lure industrial workers away from Marxism. Key points demanded the immediate scrapping of the Treaty of Versailles and Saint-Germain, the creation of a <em>Großdeutschland</em> (Greater Germany) uniting all German-speakers, and the confiscation of wartime corporate war profits.</p>\n\n<p><span class="para-ref">[2.2]</span> Crucially, the 25-Point Programme codified violent anti-Semitism as fundamental party doctrine. Point 4 declared that <em>"None but those of German blood... may be members of the nation. No Jew, therefore, may be a member."</em> Other points demanded that non-citizens be expelled if Germany could not feed its population, and that all Jewish immigration be halted immediately. This toxic combination of nationalist victimhood and racial scapegoating became the enduring foundation of Nazi ideology.</p>',
+          text: '<p><span class="para-ref">[2.1]</span> On 24 February 1920, Hitler and Drexler presented the party\'s official manifesto, the **25-Point Programme**, to a boisterous crowd of 2,000 in Munich’s <em>Hofbräuhaus</em> (**Source B**). The manifesto cleverly synthesized radical pan-German nationalism with populist socialist appeals designed to lure industrial workers away from Marxism. Key points demanded the immediate scrapping of the Treaty of Versailles and Saint-Germain, the creation of a <em>Großdeutschland</em> (Greater Germany) uniting all German-speakers, and the confiscation of wartime corporate war profits.</p>\n\n<p><span class="para-ref">[2.2]</span> Crucially, the 25-Point Programme codified violent anti-Semitism as fundamental party doctrine. Point 4 declared that <em>"None but those of German blood... may be members of the nation. No Jew, therefore, may be a member."</em> Other points demanded that non-citizens be expelled if Germany could not feed its population, and that all Jewish immigration be halted immediately. This toxic combination of nationalist victimhood and racial scapegoating became the enduring foundation of Nazi ideology.</p>',
           content:
-            '<p><span class="para-ref">[2.1]</span> On 24 February 1920, Hitler and Drexler presented the party\'s official manifesto, the <strong>25-Point Programme</strong>, to a boisterous crowd of 2,000 in Munich’s <em>Hofbräuhaus</em> (<strong>Source B</strong>). The manifesto cleverly synthesized radical pan-German nationalism with populist socialist appeals designed to lure industrial workers away from Marxism. Key points demanded the immediate scrapping of the Treaty of Versailles and Saint-Germain, the creation of a <em>Großdeutschland</em> (Greater Germany) uniting all German-speakers, and the confiscation of wartime corporate war profits.</p>\n\n<p><span class="para-ref">[2.2]</span> Crucially, the 25-Point Programme codified violent anti-Semitism as fundamental party doctrine. Point 4 declared that <em>"None but those of German blood... may be members of the nation. No Jew, therefore, may be a member."</em> Other points demanded that non-citizens be expelled if Germany could not feed its population, and that all Jewish immigration be halted immediately. This toxic combination of nationalist victimhood and racial scapegoating became the enduring foundation of Nazi ideology.</p>',
+            '<p><span class="para-ref">[2.1]</span> On 24 February 1920, Hitler and Drexler presented the party\'s official manifesto, the **25-Point Programme**, to a boisterous crowd of 2,000 in Munich’s <em>Hofbräuhaus</em> (**Source B**). The manifesto cleverly synthesized radical pan-German nationalism with populist socialist appeals designed to lure industrial workers away from Marxism. Key points demanded the immediate scrapping of the Treaty of Versailles and Saint-Germain, the creation of a <em>Großdeutschland</em> (Greater Germany) uniting all German-speakers, and the confiscation of wartime corporate war profits.</p>\n\n<p><span class="para-ref">[2.2]</span> Crucially, the 25-Point Programme codified violent anti-Semitism as fundamental party doctrine. Point 4 declared that <em>"None but those of German blood... may be members of the nation. No Jew, therefore, may be a member."</em> Other points demanded that non-citizens be expelled if Germany could not feed its population, and that all Jewish immigration be halted immediately. This toxic combination of nationalist victimhood and racial scapegoating became the enduring foundation of Nazi ideology.</p>',
           sources: [
             {
               id: 'weimar_l5_source_a',
@@ -5571,9 +5685,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Hooked Cross: Rebranding the NSDAP, the Völkischer Beobachter and the Swastika Standard (1920–1921)',
           act: 3,
-          text: '<p><span class="para-ref">[3.1]</span> In 1920, Hitler oversaw the complete rebranding of the movement, renaming it the <strong>National Socialist German Workers\' Party (NSDAP)</strong>, commonly abbreviated as the Nazi Party. Recognizing that mass politics required striking visual theater, Hitler personally designed the party\'s emblem: a dynamic black hooked cross (<strong>swastika</strong>) tilted inside a white circle against a blazing red banner. This color scheme deliberately hijacked the imperial colors of pre-war Germany while brazenly mimicking socialist iconography to provoke left-wing rivals.</p>\n\n<p><span class="para-ref">[3.2]</span> In December 1920, the party acquired its own newspaper, the <em>Völkischer Beobachter</em> (People\'s Observer), funded by wealthy nationalist patrons and army funds. With an initial circulation of 11,000, the newspaper provided Hitler with an aggressive propaganda mouthpiece to broadcast anti-Semitic conspiracy theories and attacks on the Weimar Republic across Bavaria. By late 1920, Hitler’s charismatic rallies regularly drew thousands of paying attendees to Munich beer halls (<strong>Source C</strong>), establishing him as the party’s indispensable driving force.</p>',
+          text: '<p><span class="para-ref">[3.1]</span> In 1920, Hitler oversaw the complete rebranding of the movement, renaming it the **National Socialist German Workers\' Party (NSDAP)**, commonly abbreviated as the Nazi Party. Recognizing that mass politics required striking visual theater, Hitler personally designed the party\'s emblem: a dynamic black hooked cross (**swastika**) tilted inside a white circle against a blazing red banner. This color scheme deliberately hijacked the imperial colors of pre-war Germany while brazenly mimicking socialist iconography to provoke left-wing rivals.</p>\n\n<p><span class="para-ref">[3.2]</span> In December 1920, the party acquired its own newspaper, the <em>Völkischer Beobachter</em> (People\'s Observer), funded by wealthy nationalist patrons and army funds. With an initial circulation of 11,000, the newspaper provided Hitler with an aggressive propaganda mouthpiece to broadcast anti-Semitic conspiracy theories and attacks on the Weimar Republic across Bavaria. By late 1920, Hitler’s charismatic rallies regularly drew thousands of paying attendees to Munich beer halls (**Source C**), establishing him as the party’s indispensable driving force.</p>',
           content:
-            '<p><span class="para-ref">[3.1]</span> In 1920, Hitler oversaw the complete rebranding of the movement, renaming it the <strong>National Socialist German Workers\' Party (NSDAP)</strong>, commonly abbreviated as the Nazi Party. Recognizing that mass politics required striking visual theater, Hitler personally designed the party\'s emblem: a dynamic black hooked cross (<strong>swastika</strong>) tilted inside a white circle against a blazing red banner. This color scheme deliberately hijacked the imperial colors of pre-war Germany while brazenly mimicking socialist iconography to provoke left-wing rivals.</p>\n\n<p><span class="para-ref">[3.2]</span> In December 1920, the party acquired its own newspaper, the <em>Völkischer Beobachter</em> (People\'s Observer), funded by wealthy nationalist patrons and army funds. With an initial circulation of 11,000, the newspaper provided Hitler with an aggressive propaganda mouthpiece to broadcast anti-Semitic conspiracy theories and attacks on the Weimar Republic across Bavaria. By late 1920, Hitler’s charismatic rallies regularly drew thousands of paying attendees to Munich beer halls (<strong>Source C</strong>), establishing him as the party’s indispensable driving force.</p>',
+            '<p><span class="para-ref">[3.1]</span> In 1920, Hitler oversaw the complete rebranding of the movement, renaming it the **National Socialist German Workers\' Party (NSDAP)**, commonly abbreviated as the Nazi Party. Recognizing that mass politics required striking visual theater, Hitler personally designed the party\'s emblem: a dynamic black hooked cross (**swastika**) tilted inside a white circle against a blazing red banner. This color scheme deliberately hijacked the imperial colors of pre-war Germany while brazenly mimicking socialist iconography to provoke left-wing rivals.</p>\n\n<p><span class="para-ref">[3.2]</span> In December 1920, the party acquired its own newspaper, the <em>Völkischer Beobachter</em> (People\'s Observer), funded by wealthy nationalist patrons and army funds. With an initial circulation of 11,000, the newspaper provided Hitler with an aggressive propaganda mouthpiece to broadcast anti-Semitic conspiracy theories and attacks on the Weimar Republic across Bavaria. By late 1920, Hitler’s charismatic rallies regularly drew thousands of paying attendees to Munich beer halls (**Source C**), establishing him as the party’s indispensable driving force.</p>',
           image: '/images/weimar_sa_rohm_munich_1924.jpg',
           image_alt: 'Captain Ernst Röhm in Freikorps and early SA military uniform in Munich',
           caption:
@@ -5654,9 +5768,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Autocratic Dictator: Hitler Seizes the Führerprinzip and Ousts Drexler (Jul 1921)',
           act: 4,
-          text: '<p><span class="para-ref">[4.1]</span> By the summer of 1921, fierce tensions erupted between Hitler and the DAP’s founding executive committee. While Hitler was in Berlin seeking funding from nationalist politicians, Drexler and the Munich committee attempted to merge the NSDAP with a rival socialist group to dilute Hitler\'s growing influence. Furious at what he viewed as betrayal, Hitler immediately returned to Munich and submitted his resignation on 11 July 1921, issuing an ultimatum that threw the party into panic.</p>\n\n<p><span class="para-ref">[4.2]</span> Realizing that without Hitler\'s magnetic speaking ability the party would collapse into bankruptcy, the committee surrendered unconditionally. On 29 July 1921, a special party congress voted 543 to 1 to grant Hitler absolute, dictatorial authority as party chairman. Drexler was shunted into the honorary role of \'honorary president\'. This milestone established the <strong>Führerprinzip</strong> (Leader Principle) within the Nazi movement: the party abandoned democratic voting, replacing it with unconditional obedience to Hitler’s will.</p>',
+          text: '<p><span class="para-ref">[4.1]</span> By the summer of 1921, fierce tensions erupted between Hitler and the DAP’s founding executive committee. While Hitler was in Berlin seeking funding from nationalist politicians, Drexler and the Munich committee attempted to merge the NSDAP with a rival socialist group to dilute Hitler\'s growing influence. Furious at what he viewed as betrayal, Hitler immediately returned to Munich and submitted his resignation on 11 July 1921, issuing an ultimatum that threw the party into panic.</p>\n\n<p><span class="para-ref">[4.2]</span> Realizing that without Hitler\'s magnetic speaking ability the party would collapse into bankruptcy, the committee surrendered unconditionally. On 29 July 1921, a special party congress voted 543 to 1 to grant Hitler absolute, dictatorial authority as party chairman. Drexler was shunted into the honorary role of \'honorary president\'. This milestone established the **Führerprinzip** (Leader Principle) within the Nazi movement: the party abandoned democratic voting, replacing it with unconditional obedience to Hitler’s will.</p>',
           content:
-            '<p><span class="para-ref">[4.1]</span> By the summer of 1921, fierce tensions erupted between Hitler and the DAP’s founding executive committee. While Hitler was in Berlin seeking funding from nationalist politicians, Drexler and the Munich committee attempted to merge the NSDAP with a rival socialist group to dilute Hitler\'s growing influence. Furious at what he viewed as betrayal, Hitler immediately returned to Munich and submitted his resignation on 11 July 1921, issuing an ultimatum that threw the party into panic.</p>\n\n<p><span class="para-ref">[4.2]</span> Realizing that without Hitler\'s magnetic speaking ability the party would collapse into bankruptcy, the committee surrendered unconditionally. On 29 July 1921, a special party congress voted 543 to 1 to grant Hitler absolute, dictatorial authority as party chairman. Drexler was shunted into the honorary role of \'honorary president\'. This milestone established the <strong>Führerprinzip</strong> (Leader Principle) within the Nazi movement: the party abandoned democratic voting, replacing it with unconditional obedience to Hitler’s will.</p>',
+            '<p><span class="para-ref">[4.1]</span> By the summer of 1921, fierce tensions erupted between Hitler and the DAP’s founding executive committee. While Hitler was in Berlin seeking funding from nationalist politicians, Drexler and the Munich committee attempted to merge the NSDAP with a rival socialist group to dilute Hitler\'s growing influence. Furious at what he viewed as betrayal, Hitler immediately returned to Munich and submitted his resignation on 11 July 1921, issuing an ultimatum that threw the party into panic.</p>\n\n<p><span class="para-ref">[4.2]</span> Realizing that without Hitler\'s magnetic speaking ability the party would collapse into bankruptcy, the committee surrendered unconditionally. On 29 July 1921, a special party congress voted 543 to 1 to grant Hitler absolute, dictatorial authority as party chairman. Drexler was shunted into the honorary role of \'honorary president\'. This milestone established the **Führerprinzip** (Leader Principle) within the Nazi movement: the party abandoned democratic voting, replacing it with unconditional obedience to Hitler’s will.</p>',
           sources: [
             {
               id: 'weimar_l5_source_e',
@@ -5734,9 +5848,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Brownshirt Brawlers: Ernst Röhm and the Formation of the Sturmabteilung (Aug 1921)',
           act: 5,
-          text: '<p><span class="para-ref">[5.1]</span> As Nazi meetings grew larger, they faced violent disruption from communist and social democratic counter-protesters. In August 1921, Hitler organized a squad of hardened ex-soldiers and Freikorps street fighters into the <em>Turn- und Sportabteilung</em> (Gymnastics and Sports Division). In October 1921, this paramilitary force was formally renamed the <strong>Sturmabteilung (SA)</strong>, popularly known as the "Brownshirts" or Stormtroopers.</p>\n\n<p><span class="para-ref">[5.2]</span> Under the leadership of Captain <strong>Ernst Röhm</strong>, a battle-scarred Bavarian army officer with access to military weapons caches, the SA expanded rapidly. Dressed in surplus colonial brown shirts, the SA had a dual role: protecting Nazi speakers at rallies and violently intimidating political opponents in street brawls. By 1922, the SA numbered over 6,000 men, providing Hitler with a disciplined private army that gave the Nazi Party a lethal, militaristic presence in Bavarian politics.</p>',
+          text: '<p><span class="para-ref">[5.1]</span> As Nazi meetings grew larger, they faced violent disruption from communist and social democratic counter-protesters. In August 1921, Hitler organized a squad of hardened ex-soldiers and Freikorps street fighters into the <em>Turn- und Sportabteilung</em> (Gymnastics and Sports Division). In October 1921, this paramilitary force was formally renamed the **Sturmabteilung (SA)**, popularly known as the "Brownshirts" or Stormtroopers.</p>\n\n<p><span class="para-ref">[5.2]</span> Under the leadership of Captain **Ernst Röhm**, a battle-scarred Bavarian army officer with access to military weapons caches, the SA expanded rapidly. Dressed in surplus colonial brown shirts, the SA had a dual role: protecting Nazi speakers at rallies and violently intimidating political opponents in street brawls. By 1922, the SA numbered over 6,000 men, providing Hitler with a disciplined private army that gave the Nazi Party a lethal, militaristic presence in Bavarian politics.</p>',
           content:
-            '<p><span class="para-ref">[5.1]</span> As Nazi meetings grew larger, they faced violent disruption from communist and social democratic counter-protesters. In August 1921, Hitler organized a squad of hardened ex-soldiers and Freikorps street fighters into the <em>Turn- und Sportabteilung</em> (Gymnastics and Sports Division). In October 1921, this paramilitary force was formally renamed the <strong>Sturmabteilung (SA)</strong>, popularly known as the "Brownshirts" or Stormtroopers.</p>\n\n<p><span class="para-ref">[5.2]</span> Under the leadership of Captain <strong>Ernst Röhm</strong>, a battle-scarred Bavarian army officer with access to military weapons caches, the SA expanded rapidly. Dressed in surplus colonial brown shirts, the SA had a dual role: protecting Nazi speakers at rallies and violently intimidating political opponents in street brawls. By 1922, the SA numbered over 6,000 men, providing Hitler with a disciplined private army that gave the Nazi Party a lethal, militaristic presence in Bavarian politics.</p>',
+            '<p><span class="para-ref">[5.1]</span> As Nazi meetings grew larger, they faced violent disruption from communist and social democratic counter-protesters. In August 1921, Hitler organized a squad of hardened ex-soldiers and Freikorps street fighters into the <em>Turn- und Sportabteilung</em> (Gymnastics and Sports Division). In October 1921, this paramilitary force was formally renamed the **Sturmabteilung (SA)**, popularly known as the "Brownshirts" or Stormtroopers.</p>\n\n<p><span class="para-ref">[5.2]</span> Under the leadership of Captain **Ernst Röhm**, a battle-scarred Bavarian army officer with access to military weapons caches, the SA expanded rapidly. Dressed in surplus colonial brown shirts, the SA had a dual role: protecting Nazi speakers at rallies and violently intimidating political opponents in street brawls. By 1922, the SA numbered over 6,000 men, providing Hitler with a disciplined private army that gave the Nazi Party a lethal, militaristic presence in Bavarian politics.</p>',
           sources: [
             {
               id: 'weimar_l5_source_b',
@@ -6700,34 +6814,58 @@ const weimar_nazi_germany_data = {
         {
           term: 'The Bavarian Triumvirate',
           def: 'The three men who ruled the region of Bavaria in 1923: Gustav von Kahr, Otto von Lossow, and Hans von Seisser.',
+          syllables: 'The Ba-varian Triu-mvi-rate',
+          phonetic: 'the bavarian triumvirate',
+          tier: '2',
         },
         {
           term: 'Treason',
           def: "The crime of betraying one's country or attempting to overthrow the government.",
+          syllables: 'Trea-son',
+          phonetic: 'treason',
+          tier: '2',
         },
         {
           term: 'Landsberg Prison',
           def: 'The castle fortress where Hitler was imprisoned after the Munich Putsch.',
+          syllables: 'La-ndsberg Pri-son',
+          phonetic: 'landsberg prison',
+          tier: '2',
         },
         {
           term: "Mein Kampf ('My Struggle')",
           def: "Hitler's autobiography and political manifesto, dictated while he was in prison.",
+          syllables: "Mein Kampf ('My Stru-ggle')",
+          phonetic: "mein kampf ('my struggle')",
+          tier: '2',
         },
         {
           term: 'Führerprinzip (The Leadership Principle)',
           def: 'The core Nazi belief that the party (and later Germany) must be run by one dictator with absolute, unquestionable power.',
+          syllables: 'Führe-rprinzip (The Lea-de-rship Pri-nciple)',
+          phonetic: 'führerprinzip (the leadership principle)',
+          tier: '2',
         },
         {
           term: 'Gauleiter',
           def: 'A regional leader of the Nazi Party, appointed by Hitler to run a specific local area (a Gau) of Germany.',
+          syllables: 'Gau-lei-ter',
+          phonetic: 'gauleiter',
+          tier: '2',
         },
         {
           term: 'SS (Schutzstaffel)',
           def: 'A ruthless and fiercely loyal private bodyguard unit created in 1925, completely separate from the SA.',
+          syllables: 'S-S (Schu-tzstaffel)',
+          phonetic: 'ˌɛs ˈɛs (schutzstaffel)',
+          tier: '2',
         },
         {
           term: 'Aryan',
           def: "The Nazi term for what they considered the 'master race' of Germanic/Nordic peoples.",
+          syllables: 'A-ryan',
+          phonetic: 'aryan',
+          tier: '2',
         },
       ],
       vocab_cloze_text:
@@ -7070,9 +7208,9 @@ const weimar_nazi_germany_data = {
           title:
             'Pistol Shots in the Bürgerbräukeller: Von Kahr Held at Gunpoint in the Munich Putsch (8 Nov 1923)',
           act: 1,
-          text: '<p><span class="para-ref">[1.1]</span> By November 1923, hyperinflation had reached its peak, and Chancellor Stresemann\'s decision to call off passive resistance in the Ruhr sparked outrage among right-wing Bavarian nationalists. Hitler believed the Weimar Republic was on the verge of collapse and resolved to seize power. Inspired by Benito Mussolini\'s successful "March on Rome" in 1922, Hitler allied with wartime hero General <strong>Erich Ludendorff</strong> to launch a national revolution from Bavaria.</p>\n\n<p><span class="para-ref">[1.2]</span> On the evening of 8 November 1923, Bavarian State Commissioner Gustav von Kahr was addressing 3,000 business leaders inside the <em>Bürgerbräukeller</em> in Munich. At 8:30 PM, 600 armed SA men surrounded the hall. Hitler burst through the doors, leaped onto a chair, fired a pistol shot into the ceiling, and declared: <em>"The national revolution has broken out! The Bavarian and Berlin governments are deposed!"</em> In a side room, Hitler pressured Kahr, army commander Otto von Lossow, and police chief Hans von Seisser at gunpoint to support his march on Berlin.</p>',
+          text: '<p><span class="para-ref">[1.1]</span> By November 1923, hyperinflation had reached its peak, and Chancellor Stresemann\'s decision to call off passive resistance in the Ruhr sparked outrage among right-wing Bavarian nationalists. Hitler believed the Weimar Republic was on the verge of collapse and resolved to seize power. Inspired by Benito Mussolini\'s successful "March on Rome" in 1922, Hitler allied with wartime hero General **Erich Ludendorff** to launch a national revolution from Bavaria.</p>\n\n<p><span class="para-ref">[1.2]</span> On the evening of 8 November 1923, Bavarian State Commissioner Gustav von Kahr was addressing 3,000 business leaders inside the <em>Bürgerbräukeller</em> in Munich. At 8:30 PM, 600 armed SA men surrounded the hall. Hitler burst through the doors, leaped onto a chair, fired a pistol shot into the ceiling, and declared: <em>"The national revolution has broken out! The Bavarian and Berlin governments are deposed!"</em> In a side room, Hitler pressured Kahr, army commander Otto von Lossow, and police chief Hans von Seisser at gunpoint to support his march on Berlin.</p>',
           content:
-            '<p><span class="para-ref">[1.1]</span> By November 1923, hyperinflation had reached its peak, and Chancellor Stresemann\'s decision to call off passive resistance in the Ruhr sparked outrage among right-wing Bavarian nationalists. Hitler believed the Weimar Republic was on the verge of collapse and resolved to seize power. Inspired by Benito Mussolini\'s successful "March on Rome" in 1922, Hitler allied with wartime hero General <strong>Erich Ludendorff</strong> to launch a national revolution from Bavaria.</p>\n\n<p><span class="para-ref">[1.2]</span> On the evening of 8 November 1923, Bavarian State Commissioner Gustav von Kahr was addressing 3,000 business leaders inside the <em>Bürgerbräukeller</em> in Munich. At 8:30 PM, 600 armed SA men surrounded the hall. Hitler burst through the doors, leaped onto a chair, fired a pistol shot into the ceiling, and declared: <em>"The national revolution has broken out! The Bavarian and Berlin governments are deposed!"</em> In a side room, Hitler pressured Kahr, army commander Otto von Lossow, and police chief Hans von Seisser at gunpoint to support his march on Berlin.</p>',
+            '<p><span class="para-ref">[1.1]</span> By November 1923, hyperinflation had reached its peak, and Chancellor Stresemann\'s decision to call off passive resistance in the Ruhr sparked outrage among right-wing Bavarian nationalists. Hitler believed the Weimar Republic was on the verge of collapse and resolved to seize power. Inspired by Benito Mussolini\'s successful "March on Rome" in 1922, Hitler allied with wartime hero General **Erich Ludendorff** to launch a national revolution from Bavaria.</p>\n\n<p><span class="para-ref">[1.2]</span> On the evening of 8 November 1923, Bavarian State Commissioner Gustav von Kahr was addressing 3,000 business leaders inside the <em>Bürgerbräukeller</em> in Munich. At 8:30 PM, 600 armed SA men surrounded the hall. Hitler burst through the doors, leaped onto a chair, fired a pistol shot into the ceiling, and declared: <em>"The national revolution has broken out! The Bavarian and Berlin governments are deposed!"</em> In a side room, Hitler pressured Kahr, army commander Otto von Lossow, and police chief Hans von Seisser at gunpoint to support his march on Berlin.</p>',
           image: '/images/munich_putsch_defendants.jpg',
           image_alt:
             'Adolf Hitler, General Erich Ludendorff, and co-defendants on trial for high treason in Munich in 1924',
@@ -7233,9 +7371,9 @@ const weimar_nazi_germany_data = {
           title:
             'A Treason Trial as a Stage: Sympathetic Judges, Landsberg Fortress and Mein Kampf (1924)',
           act: 3,
-          text: '<p><span class="para-ref">[3.1]</span> In February 1924, Hitler and Ludendorff went on trial for high treason in Munich (<strong>Source A</strong>). Legally facing the death penalty or life imprisonment, Hitler turned the trial into a sensational political triumph. Sympathetic right-wing judges granted him unrestricted speaking time. Hitler boldly admitted his actions, portraying himself as a selfless patriot who had sought to overthrow the "November Criminals" and restore German greatness, winning nationwide newspaper headlines.</p>\n\n<p><span class="para-ref">[3.2]</span> Ludendorff was acquitted, while Hitler received the minimum sentence of five years\' fortress imprisonment with early parole eligibility. Confined in comfortable surroundings at Landsberg Fortress, Hitler served just nine months. During his imprisonment, he dictated <strong>Mein Kampf</strong> (My Struggle) to deputy Rudolf Hess (<strong>Source B</strong>), setting out his core ideological obsessions: Aryan racial supremacy, virulent anti-Semitism, anti-communism, and <strong>Lebensraum</strong> (living space in Eastern Europe). Most importantly, the failed putsch convinced Hitler that the road to power lay not through armed revolt, but through legal, democratic elections.</p>',
+          text: '<p><span class="para-ref">[3.1]</span> In February 1924, Hitler and Ludendorff went on trial for high treason in Munich (**Source A**). Legally facing the death penalty or life imprisonment, Hitler turned the trial into a sensational political triumph. Sympathetic right-wing judges granted him unrestricted speaking time. Hitler boldly admitted his actions, portraying himself as a selfless patriot who had sought to overthrow the "November Criminals" and restore German greatness, winning nationwide newspaper headlines.</p>\n\n<p><span class="para-ref">[3.2]</span> Ludendorff was acquitted, while Hitler received the minimum sentence of five years\' fortress imprisonment with early parole eligibility. Confined in comfortable surroundings at Landsberg Fortress, Hitler served just nine months. During his imprisonment, he dictated **Mein Kampf** (My Struggle) to deputy Rudolf Hess (**Source B**), setting out his core ideological obsessions: Aryan racial supremacy, virulent anti-Semitism, anti-communism, and **Lebensraum** (living space in Eastern Europe). Most importantly, the failed putsch convinced Hitler that the road to power lay not through armed revolt, but through legal, democratic elections.</p>',
           content:
-            '<p><span class="para-ref">[3.1]</span> In February 1924, Hitler and Ludendorff went on trial for high treason in Munich (<strong>Source A</strong>). Legally facing the death penalty or life imprisonment, Hitler turned the trial into a sensational political triumph. Sympathetic right-wing judges granted him unrestricted speaking time. Hitler boldly admitted his actions, portraying himself as a selfless patriot who had sought to overthrow the "November Criminals" and restore German greatness, winning nationwide newspaper headlines.</p>\n\n<p><span class="para-ref">[3.2]</span> Ludendorff was acquitted, while Hitler received the minimum sentence of five years\' fortress imprisonment with early parole eligibility. Confined in comfortable surroundings at Landsberg Fortress, Hitler served just nine months. During his imprisonment, he dictated <strong>Mein Kampf</strong> (My Struggle) to deputy Rudolf Hess (<strong>Source B</strong>), setting out his core ideological obsessions: Aryan racial supremacy, virulent anti-Semitism, anti-communism, and <strong>Lebensraum</strong> (living space in Eastern Europe). Most importantly, the failed putsch convinced Hitler that the road to power lay not through armed revolt, but through legal, democratic elections.</p>',
+            '<p><span class="para-ref">[3.1]</span> In February 1924, Hitler and Ludendorff went on trial for high treason in Munich (**Source A**). Legally facing the death penalty or life imprisonment, Hitler turned the trial into a sensational political triumph. Sympathetic right-wing judges granted him unrestricted speaking time. Hitler boldly admitted his actions, portraying himself as a selfless patriot who had sought to overthrow the "November Criminals" and restore German greatness, winning nationwide newspaper headlines.</p>\n\n<p><span class="para-ref">[3.2]</span> Ludendorff was acquitted, while Hitler received the minimum sentence of five years\' fortress imprisonment with early parole eligibility. Confined in comfortable surroundings at Landsberg Fortress, Hitler served just nine months. During his imprisonment, he dictated **Mein Kampf** (My Struggle) to deputy Rudolf Hess (**Source B**), setting out his core ideological obsessions: Aryan racial supremacy, virulent anti-Semitism, anti-communism, and **Lebensraum** (living space in Eastern Europe). Most importantly, the failed putsch convinced Hitler that the road to power lay not through armed revolt, but through legal, democratic elections.</p>',
           sources: [
             {
               id: 'weimar_l6_source_a',
@@ -7318,9 +7456,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Bamberg Conference: Crushing Strasser’s Left Wing and Pledging the Legal Path to Power (1925–1926)',
           act: 4,
-          text: '<p><span class="para-ref">[4.1]</span> Released from Landsberg in December 1924, Hitler found the Nazi Party banned, fragmented, and leaderless. In February 1925, he successfully persuaded the Bavarian Prime Minister to lift the party ban, promising strict adherence to constitutional legality. Hitler then set about reorganizing the party from the ground up, establishing central departments for youth, women, students, and teachers, alongside regional party branches (<em>Gaue</em>) headed by loyal <em>Gauleiter</em>.</p>\n\n<p><span class="para-ref">[4.2]</span> In February 1926, Hitler convened the <strong>Bamberg Conference</strong> in northern Bavaria to resolve a dangerous ideological split. The northern party wing, led by Gregor Strasser and Joseph Goebbels, advocated radical anti-capitalist, socialist policies that alarmed southern business donors. In an impassioned five-hour address, Hitler crushed the socialist wing, winning Goebbels to his side and reaffirming the 25-Point Programme as unalterable. The conference firmly established Hitler’s undisputed personal supremacy under the <em>Führerprinzip</em> across all of Germany.</p>',
+          text: '<p><span class="para-ref">[4.1]</span> Released from Landsberg in December 1924, Hitler found the Nazi Party banned, fragmented, and leaderless. In February 1925, he successfully persuaded the Bavarian Prime Minister to lift the party ban, promising strict adherence to constitutional legality. Hitler then set about reorganizing the party from the ground up, establishing central departments for youth, women, students, and teachers, alongside regional party branches (<em>Gaue</em>) headed by loyal <em>Gauleiter</em>.</p>\n\n<p><span class="para-ref">[4.2]</span> In February 1926, Hitler convened the **Bamberg Conference** in northern Bavaria to resolve a dangerous ideological split. The northern party wing, led by Gregor Strasser and Joseph Goebbels, advocated radical anti-capitalist, socialist policies that alarmed southern business donors. In an impassioned five-hour address, Hitler crushed the socialist wing, winning Goebbels to his side and reaffirming the 25-Point Programme as unalterable. The conference firmly established Hitler’s undisputed personal supremacy under the <em>Führerprinzip</em> across all of Germany.</p>',
           content:
-            '<p><span class="para-ref">[4.1]</span> Released from Landsberg in December 1924, Hitler found the Nazi Party banned, fragmented, and leaderless. In February 1925, he successfully persuaded the Bavarian Prime Minister to lift the party ban, promising strict adherence to constitutional legality. Hitler then set about reorganizing the party from the ground up, establishing central departments for youth, women, students, and teachers, alongside regional party branches (<em>Gaue</em>) headed by loyal <em>Gauleiter</em>.</p>\n\n<p><span class="para-ref">[4.2]</span> In February 1926, Hitler convened the <strong>Bamberg Conference</strong> in northern Bavaria to resolve a dangerous ideological split. The northern party wing, led by Gregor Strasser and Joseph Goebbels, advocated radical anti-capitalist, socialist policies that alarmed southern business donors. In an impassioned five-hour address, Hitler crushed the socialist wing, winning Goebbels to his side and reaffirming the 25-Point Programme as unalterable. The conference firmly established Hitler’s undisputed personal supremacy under the <em>Führerprinzip</em> across all of Germany.</p>',
+            '<p><span class="para-ref">[4.1]</span> Released from Landsberg in December 1924, Hitler found the Nazi Party banned, fragmented, and leaderless. In February 1925, he successfully persuaded the Bavarian Prime Minister to lift the party ban, promising strict adherence to constitutional legality. Hitler then set about reorganizing the party from the ground up, establishing central departments for youth, women, students, and teachers, alongside regional party branches (<em>Gaue</em>) headed by loyal <em>Gauleiter</em>.</p>\n\n<p><span class="para-ref">[4.2]</span> In February 1926, Hitler convened the **Bamberg Conference** in northern Bavaria to resolve a dangerous ideological split. The northern party wing, led by Gregor Strasser and Joseph Goebbels, advocated radical anti-capitalist, socialist policies that alarmed southern business donors. In an impassioned five-hour address, Hitler crushed the socialist wing, winning Goebbels to his side and reaffirming the 25-Point Programme as unalterable. The conference firmly established Hitler’s undisputed personal supremacy under the <em>Führerprinzip</em> across all of Germany.</p>',
           sources: [
             {
               id: 'weimar_l6_source_bamberg',
@@ -7400,9 +7538,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Electoral Wilderness: 2.6% of the Reichstag Vote in the Golden Twenties (May 1928)',
           act: 5,
-          text: '<p><span class="para-ref">[5.1]</span> Despite structural reforms, the mid-1920s became the <strong>"Lean Years"</strong> for the Nazi Party. Stresemann\'s economic miracle, the Rentenmark, and the influx of American Dawes loans restored prosperity and stabilized Weimar society. Working-class families enjoyed higher real wages and unemployment insurance, while international diplomatic successes at Locarno restored national pride. In an atmosphere of peace and economic stability, extremist messages found little resonance with ordinary German voters.</p>\n\n<p><span class="para-ref">[5.2]</span> In the May 1928 Reichstag election, the Nazi Party suffered a crushing humiliation, polling a meager <strong>2.6% of the national vote</strong> and winning just twelve seats. Yet beneath this electoral failure lay crucial organizational groundwork. Hitler had established a disciplined nationwide apparatus of 100,000 committed members, trained public speakers, and created the elite <strong>Schutzstaffel (SS)</strong> bodyguard. When the economic hurricane of 1929 struck, Hitler had a perfectly engineered political weapon ready to exploit national panic.</p>',
+          text: '<p><span class="para-ref">[5.1]</span> Despite structural reforms, the mid-1920s became the **"Lean Years"** for the Nazi Party. Stresemann\'s economic miracle, the Rentenmark, and the influx of American Dawes loans restored prosperity and stabilized Weimar society. Working-class families enjoyed higher real wages and unemployment insurance, while international diplomatic successes at Locarno restored national pride. In an atmosphere of peace and economic stability, extremist messages found little resonance with ordinary German voters.</p>\n\n<p><span class="para-ref">[5.2]</span> In the May 1928 Reichstag election, the Nazi Party suffered a crushing humiliation, polling a meager **2.6% of the national vote** and winning just twelve seats. Yet beneath this electoral failure lay crucial organizational groundwork. Hitler had established a disciplined nationwide apparatus of 100,000 committed members, trained public speakers, and created the elite **Schutzstaffel (SS)** bodyguard. When the economic hurricane of 1929 struck, Hitler had a perfectly engineered political weapon ready to exploit national panic.</p>',
           content:
-            '<p><span class="para-ref">[5.1]</span> Despite structural reforms, the mid-1920s became the <strong>"Lean Years"</strong> for the Nazi Party. Stresemann\'s economic miracle, the Rentenmark, and the influx of American Dawes loans restored prosperity and stabilized Weimar society. Working-class families enjoyed higher real wages and unemployment insurance, while international diplomatic successes at Locarno restored national pride. In an atmosphere of peace and economic stability, extremist messages found little resonance with ordinary German voters.</p>\n\n<p><span class="para-ref">[5.2]</span> In the May 1928 Reichstag election, the Nazi Party suffered a crushing humiliation, polling a meager <strong>2.6% of the national vote</strong> and winning just twelve seats. Yet beneath this electoral failure lay crucial organizational groundwork. Hitler had established a disciplined nationwide apparatus of 100,000 committed members, trained public speakers, and created the elite <strong>Schutzstaffel (SS)</strong> bodyguard. When the economic hurricane of 1929 struck, Hitler had a perfectly engineered political weapon ready to exploit national panic.</p>',
+            '<p><span class="para-ref">[5.1]</span> Despite structural reforms, the mid-1920s became the **"Lean Years"** for the Nazi Party. Stresemann\'s economic miracle, the Rentenmark, and the influx of American Dawes loans restored prosperity and stabilized Weimar society. Working-class families enjoyed higher real wages and unemployment insurance, while international diplomatic successes at Locarno restored national pride. In an atmosphere of peace and economic stability, extremist messages found little resonance with ordinary German voters.</p>\n\n<p><span class="para-ref">[5.2]</span> In the May 1928 Reichstag election, the Nazi Party suffered a crushing humiliation, polling a meager **2.6% of the national vote** and winning just twelve seats. Yet beneath this electoral failure lay crucial organizational groundwork. Hitler had established a disciplined nationwide apparatus of 100,000 committed members, trained public speakers, and created the elite **Schutzstaffel (SS)** bodyguard. When the economic hurricane of 1929 struck, Hitler had a perfectly engineered political weapon ready to exploit national panic.</p>',
           sources: [
             {
               id: 'weimar_l6_source_election1928',
@@ -8211,30 +8349,51 @@ const weimar_nazi_germany_data = {
         {
           term: 'The Wall Street Crash',
           def: 'The catastrophic collapse of the US stock market in October 1929 that triggered a global economic depression.',
+          syllables: 'The Wall Street Crash',
+          phonetic: 'the wall street crash',
+          tier: '2',
         },
         {
           term: 'KPD (Communist Party of Germany)',
           def: 'The extreme left-wing party that wanted a Russian-style revolution; their support surged among unemployed workers.',
+          syllables: 'KPD (Co-mmu-nist Pa-rty of Ge-rma-ny)',
+          phonetic: 'kpd (communist party of germany)',
+          tier: '2',
         },
         {
           term: 'Hermann Müller',
           def: "The Weimar Chancellor whose 'Grand Coalition' collapsed in 1930 because politicians could not agree on how to handle the economic crisis.",
+          syllables: 'He-rmann Müller',
+          phonetic: 'hermann müller',
+          tier: '2',
         },
         {
           term: 'Heinrich Brüning',
           def: "The Weimar Chancellor (1930–1932) whose harsh economic policies earned him the nickname the 'Hunger Chancellor'.",
+          syllables: 'Hei-nrich Brüning',
+          phonetic: 'heinrich brüning',
+          tier: '2',
         },
         {
           term: 'Article 48',
           def: 'The emergency decree clause in the constitution, heavily overused by President Hindenburg after 1930, bypassing the democratic Reichstag.',
+          syllables: 'Ar-ti-cle 48',
+          phonetic: 'ˈɑːtɪkl',
+          tier: '3',
         },
         {
           term: 'Negative Cohesion',
           def: 'The idea that people supported the Nazis not because they shared Nazi beliefs, but because they shared the same fears and hatreds (e.g., a shared terror of communism).',
+          syllables: 'Ne-gati-ve Co-hesion',
+          phonetic: 'negative cohesion',
+          tier: '2',
         },
         {
           term: "Rotfrontkämpferbund (Red Front Fighters' League)",
           def: 'The violent paramilitary wing of the Communist Party.',
+          syllables: "Ro-tfrontkämpfe-rbund (Red Front Fi-ghters' Lea-gue)",
+          phonetic: "rotfrontkämpferbund (red front fighters' league)",
+          tier: '2',
         },
       ],
       vocab_cloze_text:
@@ -8596,9 +8755,9 @@ const weimar_nazi_germany_data = {
           title:
             'Black Thursday in New York: The Wall Street Crash and the Recall of American Loans (Oct 1929)',
           act: 1,
-          text: '<p><span class="para-ref">[1.1]</span> On 29 October 1929—just twenty-six days after the death of Gustav Stresemann—the New York Stock Exchange collapsed in the catastrophic <strong>Wall Street Crash</strong>. The crash instantly detonated a worldwide economic depression. Because Germany’s Golden Twenties prosperity had been artificially financed by short-term American credits under the Dawes Plan, Germany was hit harder than any other European nation.</p>\n\n<p><span class="para-ref">[1.2]</span> Desperate to rescue their domestic liquidity, Wall Street banks abruptly called in short-term loans worth billions of gold marks. Deprived of credit, German factories and industrial giants collapsed overnight: exports fell by 61%, industrial production plunged by 40%, and major financial institutions like the <em>Darmstädter Bank</em> went bankrupt. Stresemann’s prophetic warning that Germany was "dancing on a volcano" had become a terrifying reality.</p>',
+          text: '<p><span class="para-ref">[1.1]</span> On 29 October 1929—just twenty-six days after the death of Gustav Stresemann—the New York Stock Exchange collapsed in the catastrophic **Wall Street Crash**. The crash instantly detonated a worldwide economic depression. Because Germany’s Golden Twenties prosperity had been artificially financed by short-term American credits under the Dawes Plan, Germany was hit harder than any other European nation.</p>\n\n<p><span class="para-ref">[1.2]</span> Desperate to rescue their domestic liquidity, Wall Street banks abruptly called in short-term loans worth billions of gold marks. Deprived of credit, German factories and industrial giants collapsed overnight: exports fell by 61%, industrial production plunged by 40%, and major financial institutions like the <em>Darmstädter Bank</em> went bankrupt. Stresemann’s prophetic warning that Germany was "dancing on a volcano" had become a terrifying reality.</p>',
           content:
-            '<p><span class="para-ref">[1.1]</span> On 29 October 1929—just twenty-six days after the death of Gustav Stresemann—the New York Stock Exchange collapsed in the catastrophic <strong>Wall Street Crash</strong>. The crash instantly detonated a worldwide economic depression. Because Germany’s Golden Twenties prosperity had been artificially financed by short-term American credits under the Dawes Plan, Germany was hit harder than any other European nation.</p>\n\n<p><span class="para-ref">[1.2]</span> Desperate to rescue their domestic liquidity, Wall Street banks abruptly called in short-term loans worth billions of gold marks. Deprived of credit, German factories and industrial giants collapsed overnight: exports fell by 61%, industrial production plunged by 40%, and major financial institutions like the <em>Darmstädter Bank</em> went bankrupt. Stresemann’s prophetic warning that Germany was "dancing on a volcano" had become a terrifying reality.</p>',
+            '<p><span class="para-ref">[1.1]</span> On 29 October 1929—just twenty-six days after the death of Gustav Stresemann—the New York Stock Exchange collapsed in the catastrophic **Wall Street Crash**. The crash instantly detonated a worldwide economic depression. Because Germany’s Golden Twenties prosperity had been artificially financed by short-term American credits under the Dawes Plan, Germany was hit harder than any other European nation.</p>\n\n<p><span class="para-ref">[1.2]</span> Desperate to rescue their domestic liquidity, Wall Street banks abruptly called in short-term loans worth billions of gold marks. Deprived of credit, German factories and industrial giants collapsed overnight: exports fell by 61%, industrial production plunged by 40%, and major financial institutions like the <em>Darmstädter Bank</em> went bankrupt. Stresemann’s prophetic warning that Germany was "dancing on a volcano" had become a terrifying reality.</p>',
           image: '/images/unemployment_berlin_1930.jpg',
           image_alt:
             'Queue of hundreds of unemployed German men waiting outside a municipal welfare office in Berlin during the Great Depression in 1930',
@@ -8684,9 +8843,9 @@ const weimar_nazi_germany_data = {
           title:
             "The 'Hunger Chancellor': Heinrich Brüning, Article 48 and Six Million Jobless (1930–1932)",
           act: 2,
-          text: '<p><span class="para-ref">[2.1]</span> By the winter of 1932, German unemployment exploded to astronomical levels, with over <strong>6 million registered jobless</strong>—equivalent to one in three German workers (<strong>Source A</strong>). Millions of desperate men queued outside municipal labour exchanges (<em>Arbeitsämter</em>) or slept in homeless shelters, while families sold furniture to buy soup. In March 1930, the moderate coalition government collapsed over whether to increase unemployment contributions, ending democratic parliamentary government in the Weimar Republic.</p>\n\n<p><span class="para-ref">[2.2]</span> President Hindenburg appointed Centre Party politician <strong>Heinrich Brüning</strong> as Chancellor. Lacking a majority in the Reichstag, Brüning pursued harsh deflationary policies: slashing civil servant wages, cutting pensions, and reducing unemployment relief, earning him the despised moniker of the <strong>"Hunger Chancellor."</strong> When the Reichstag rejected his budget, Brüning dissolved parliament and governed entirely through presidential emergency decrees under <strong>Article 48</strong>, setting a fatal precedent that normalized authoritarian rule without parliamentary consent.</p>',
+          text: '<p><span class="para-ref">[2.1]</span> By the winter of 1932, German unemployment exploded to astronomical levels, with over **6 million registered jobless**—equivalent to one in three German workers (**Source A**). Millions of desperate men queued outside municipal labour exchanges (<em>Arbeitsämter</em>) or slept in homeless shelters, while families sold furniture to buy soup. In March 1930, the moderate coalition government collapsed over whether to increase unemployment contributions, ending democratic parliamentary government in the Weimar Republic.</p>\n\n<p><span class="para-ref">[2.2]</span> President Hindenburg appointed Centre Party politician **Heinrich Brüning** as Chancellor. Lacking a majority in the Reichstag, Brüning pursued harsh deflationary policies: slashing civil servant wages, cutting pensions, and reducing unemployment relief, earning him the despised moniker of the **"Hunger Chancellor."** When the Reichstag rejected his budget, Brüning dissolved parliament and governed entirely through presidential emergency decrees under **Article 48**, setting a fatal precedent that normalized authoritarian rule without parliamentary consent.</p>',
           content:
-            '<p><span class="para-ref">[2.1]</span> By the winter of 1932, German unemployment exploded to astronomical levels, with over <strong>6 million registered jobless</strong>—equivalent to one in three German workers (<strong>Source A</strong>). Millions of desperate men queued outside municipal labour exchanges (<em>Arbeitsämter</em>) or slept in homeless shelters, while families sold furniture to buy soup. In March 1930, the moderate coalition government collapsed over whether to increase unemployment contributions, ending democratic parliamentary government in the Weimar Republic.</p>\n\n<p><span class="para-ref">[2.2]</span> President Hindenburg appointed Centre Party politician <strong>Heinrich Brüning</strong> as Chancellor. Lacking a majority in the Reichstag, Brüning pursued harsh deflationary policies: slashing civil servant wages, cutting pensions, and reducing unemployment relief, earning him the despised moniker of the <strong>"Hunger Chancellor."</strong> When the Reichstag rejected his budget, Brüning dissolved parliament and governed entirely through presidential emergency decrees under <strong>Article 48</strong>, setting a fatal precedent that normalized authoritarian rule without parliamentary consent.</p>',
+            '<p><span class="para-ref">[2.1]</span> By the winter of 1932, German unemployment exploded to astronomical levels, with over **6 million registered jobless**—equivalent to one in three German workers (**Source A**). Millions of desperate men queued outside municipal labour exchanges (<em>Arbeitsämter</em>) or slept in homeless shelters, while families sold furniture to buy soup. In March 1930, the moderate coalition government collapsed over whether to increase unemployment contributions, ending democratic parliamentary government in the Weimar Republic.</p>\n\n<p><span class="para-ref">[2.2]</span> President Hindenburg appointed Centre Party politician **Heinrich Brüning** as Chancellor. Lacking a majority in the Reichstag, Brüning pursued harsh deflationary policies: slashing civil servant wages, cutting pensions, and reducing unemployment relief, earning him the despised moniker of the **"Hunger Chancellor."** When the Reichstag rejected his budget, Brüning dissolved parliament and governed entirely through presidential emergency decrees under **Article 48**, setting a fatal precedent that normalized authoritarian rule without parliamentary consent.</p>',
           sources: [
             {
               id: 'weimar_l7_source_b',
@@ -8766,9 +8925,9 @@ const weimar_nazi_germany_data = {
           title:
             'Street Warfare and the Red Threat: The KPD Surge and Middle-Class Panic (1930–1932)',
           act: 3,
-          text: '<p><span class="para-ref">[3.1]</span> The economic catastrophe radicalized German politics, tearing society into polarized extremes. As desperate industrial workers abandoned the moderate SPD, electoral support for the <strong>German Communist Party (KPD)</strong> surged, reaching 100 seats and 17% of the vote by late 1932. Paramilitary street fighting between the Communist <em>Rotfrontkämpferbund</em> and the Nazi SA erupted into daily bloodshed across German industrial cities.</p>\n\n<p><span class="para-ref">[3.2]</span> The prospect of a Bolshevik revolution terrified the German middle classes (<em>Mittelstand</em>), small business owners, and conservative landowners (Junkers). Haunted by memories of the 1917 Russian Revolution and hyperinflation in 1923, they feared communists would seize private property and abolish religion. Hitler skillfully exploited this terror, presenting the disciplined Nazi stormtroopers as Germany’s only reliable defense against communist anarchy, driving millions of terrified conservative voters into the Nazi camp.</p>',
+          text: '<p><span class="para-ref">[3.1]</span> The economic catastrophe radicalized German politics, tearing society into polarized extremes. As desperate industrial workers abandoned the moderate SPD, electoral support for the **German Communist Party (KPD)** surged, reaching 100 seats and 17% of the vote by late 1932. Paramilitary street fighting between the Communist <em>Rotfrontkämpferbund</em> and the Nazi SA erupted into daily bloodshed across German industrial cities.</p>\n\n<p><span class="para-ref">[3.2]</span> The prospect of a Bolshevik revolution terrified the German middle classes (<em>Mittelstand</em>), small business owners, and conservative landowners (Junkers). Haunted by memories of the 1917 Russian Revolution and hyperinflation in 1923, they feared communists would seize private property and abolish religion. Hitler skillfully exploited this terror, presenting the disciplined Nazi stormtroopers as Germany’s only reliable defense against communist anarchy, driving millions of terrified conservative voters into the Nazi camp.</p>',
           content:
-            '<p><span class="para-ref">[3.1]</span> The economic catastrophe radicalized German politics, tearing society into polarized extremes. As desperate industrial workers abandoned the moderate SPD, electoral support for the <strong>German Communist Party (KPD)</strong> surged, reaching 100 seats and 17% of the vote by late 1932. Paramilitary street fighting between the Communist <em>Rotfrontkämpferbund</em> and the Nazi SA erupted into daily bloodshed across German industrial cities.</p>\n\n<p><span class="para-ref">[3.2]</span> The prospect of a Bolshevik revolution terrified the German middle classes (<em>Mittelstand</em>), small business owners, and conservative landowners (Junkers). Haunted by memories of the 1917 Russian Revolution and hyperinflation in 1923, they feared communists would seize private property and abolish religion. Hitler skillfully exploited this terror, presenting the disciplined Nazi stormtroopers as Germany’s only reliable defense against communist anarchy, driving millions of terrified conservative voters into the Nazi camp.</p>',
+            '<p><span class="para-ref">[3.1]</span> The economic catastrophe radicalized German politics, tearing society into polarized extremes. As desperate industrial workers abandoned the moderate SPD, electoral support for the **German Communist Party (KPD)** surged, reaching 100 seats and 17% of the vote by late 1932. Paramilitary street fighting between the Communist <em>Rotfrontkämpferbund</em> and the Nazi SA erupted into daily bloodshed across German industrial cities.</p>\n\n<p><span class="para-ref">[3.2]</span> The prospect of a Bolshevik revolution terrified the German middle classes (<em>Mittelstand</em>), small business owners, and conservative landowners (Junkers). Haunted by memories of the 1917 Russian Revolution and hyperinflation in 1923, they feared communists would seize private property and abolish religion. Hitler skillfully exploited this terror, presenting the disciplined Nazi stormtroopers as Germany’s only reliable defense against communist anarchy, driving millions of terrified conservative voters into the Nazi camp.</p>',
           image: '/images/weimar_unemployed_sa_men_1932.jpg',
           image_alt:
             'Unemployed SA stormtroopers in Berlin gathered at a party soup kitchen in 1932',
@@ -8848,9 +9007,9 @@ const weimar_nazi_germany_data = {
           title:
             'Propaganda by Air and Loudspeaker: Joseph Goebbels Packages the Hitler Cult (1930–1932)',
           act: 4,
-          text: '<p><span class="para-ref">[4.1]</span> Under the direction of propaganda chief <strong>Joseph Goebbels</strong>, the Nazi Party pioneered revolutionary electioneering techniques that outclassed all traditional political rivals. Goebbels recognized that in times of crisis, emotional slogans resonated far more powerfully than complex economic manifestos. Nazi election campaigns flooded German cities with uniform visual imagery, radio broadcasts, synchronized loudspeaker trucks, and powerful posters promising "Work and Bread" (<em>Arbeit und Brot</em>).</p>\n\n<p><span class="para-ref">[4.2]</span> Goebbels deliberately tailored distinct promises to specific social groups: farmers were promised high tariff protections; small shopkeepers were promised curbs on Jewish-owned department stores; and the unemployed were promised massive public works. Above all, Goebbels manufactured the charismatic <strong>"Hitler Cult"</strong>, portraying Hitler as a messianic, classless savior sent by destiny to restore German greatness (<strong>Source B</strong>). In 1932, Hitler chartered modern passenger planes for his "Hitler Over Germany" campaign, speaking in up to five cities in a single day.</p>',
+          text: '<p><span class="para-ref">[4.1]</span> Under the direction of propaganda chief **Joseph Goebbels**, the Nazi Party pioneered revolutionary electioneering techniques that outclassed all traditional political rivals. Goebbels recognized that in times of crisis, emotional slogans resonated far more powerfully than complex economic manifestos. Nazi election campaigns flooded German cities with uniform visual imagery, radio broadcasts, synchronized loudspeaker trucks, and powerful posters promising "Work and Bread" (<em>Arbeit und Brot</em>).</p>\n\n<p><span class="para-ref">[4.2]</span> Goebbels deliberately tailored distinct promises to specific social groups: farmers were promised high tariff protections; small shopkeepers were promised curbs on Jewish-owned department stores; and the unemployed were promised massive public works. Above all, Goebbels manufactured the charismatic **"Hitler Cult"**, portraying Hitler as a messianic, classless savior sent by destiny to restore German greatness (**Source B**). In 1932, Hitler chartered modern passenger planes for his "Hitler Over Germany" campaign, speaking in up to five cities in a single day.</p>',
           content:
-            '<p><span class="para-ref">[4.1]</span> Under the direction of propaganda chief <strong>Joseph Goebbels</strong>, the Nazi Party pioneered revolutionary electioneering techniques that outclassed all traditional political rivals. Goebbels recognized that in times of crisis, emotional slogans resonated far more powerfully than complex economic manifestos. Nazi election campaigns flooded German cities with uniform visual imagery, radio broadcasts, synchronized loudspeaker trucks, and powerful posters promising "Work and Bread" (<em>Arbeit und Brot</em>).</p>\n\n<p><span class="para-ref">[4.2]</span> Goebbels deliberately tailored distinct promises to specific social groups: farmers were promised high tariff protections; small shopkeepers were promised curbs on Jewish-owned department stores; and the unemployed were promised massive public works. Above all, Goebbels manufactured the charismatic <strong>"Hitler Cult"</strong>, portraying Hitler as a messianic, classless savior sent by destiny to restore German greatness (<strong>Source B</strong>). In 1932, Hitler chartered modern passenger planes for his "Hitler Over Germany" campaign, speaking in up to five cities in a single day.</p>',
+            '<p><span class="para-ref">[4.1]</span> Under the direction of propaganda chief **Joseph Goebbels**, the Nazi Party pioneered revolutionary electioneering techniques that outclassed all traditional political rivals. Goebbels recognized that in times of crisis, emotional slogans resonated far more powerfully than complex economic manifestos. Nazi election campaigns flooded German cities with uniform visual imagery, radio broadcasts, synchronized loudspeaker trucks, and powerful posters promising "Work and Bread" (<em>Arbeit und Brot</em>).</p>\n\n<p><span class="para-ref">[4.2]</span> Goebbels deliberately tailored distinct promises to specific social groups: farmers were promised high tariff protections; small shopkeepers were promised curbs on Jewish-owned department stores; and the unemployed were promised massive public works. Above all, Goebbels manufactured the charismatic **"Hitler Cult"**, portraying Hitler as a messianic, classless savior sent by destiny to restore German greatness (**Source B**). In 1932, Hitler chartered modern passenger planes for his "Hitler Over Germany" campaign, speaking in up to five cities in a single day.</p>',
           sources: [
             {
               id: 'weimar_l7_source_a',
@@ -8926,9 +9085,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Electoral Breakthrough: 230 Seats and the Largest Party in the Reichstag (Jul 1932)',
           act: 5,
-          text: '<p><span class="para-ref">[5.1]</span> This sophisticated propaganda machine delivered stunning electoral dividends. In the September 1930 Reichstag election, the Nazi Party leaped from 12 seats to 107 seats (18.3% of the vote), shocking Germany and the international community. In the spring 1932 Presidential election, Hitler challenged the eighty-four-year-old war hero Field Marshal Paul von Hindenburg, winning an astonishing 13.4 million votes (36.8%) and cementing his status as the undisputed leader of the nationalist right.</p>\n\n<p><span class="para-ref">[5.2]</span> The climax came in the <strong>July 1932 Reichstag election</strong>, when the Nazis won <strong>230 seats (37.3% of the vote)</strong>, becoming by far the largest political party in the Reichstag. When Hitler demanded the Chancellorship, President Hindenburg bluntly refused, privately dismissing him as a "vulgar Bohemian corporal." Yet with the Nazis and Communists holding a combined anti-democratic majority in the Reichstag, stable democratic government was mathematically impossible: Weimar democracy was paralyzed.</p>',
+          text: '<p><span class="para-ref">[5.1]</span> This sophisticated propaganda machine delivered stunning electoral dividends. In the September 1930 Reichstag election, the Nazi Party leaped from 12 seats to 107 seats (18.3% of the vote), shocking Germany and the international community. In the spring 1932 Presidential election, Hitler challenged the eighty-four-year-old war hero Field Marshal Paul von Hindenburg, winning an astonishing 13.4 million votes (36.8%) and cementing his status as the undisputed leader of the nationalist right.</p>\n\n<p><span class="para-ref">[5.2]</span> The climax came in the **July 1932 Reichstag election**, when the Nazis won **230 seats (37.3% of the vote)**, becoming by far the largest political party in the Reichstag. When Hitler demanded the Chancellorship, President Hindenburg bluntly refused, privately dismissing him as a "vulgar Bohemian corporal." Yet with the Nazis and Communists holding a combined anti-democratic majority in the Reichstag, stable democratic government was mathematically impossible: Weimar democracy was paralyzed.</p>',
           content:
-            '<p><span class="para-ref">[5.1]</span> This sophisticated propaganda machine delivered stunning electoral dividends. In the September 1930 Reichstag election, the Nazi Party leaped from 12 seats to 107 seats (18.3% of the vote), shocking Germany and the international community. In the spring 1932 Presidential election, Hitler challenged the eighty-four-year-old war hero Field Marshal Paul von Hindenburg, winning an astonishing 13.4 million votes (36.8%) and cementing his status as the undisputed leader of the nationalist right.</p>\n\n<p><span class="para-ref">[5.2]</span> The climax came in the <strong>July 1932 Reichstag election</strong>, when the Nazis won <strong>230 seats (37.3% of the vote)</strong>, becoming by far the largest political party in the Reichstag. When Hitler demanded the Chancellorship, President Hindenburg bluntly refused, privately dismissing him as a "vulgar Bohemian corporal." Yet with the Nazis and Communists holding a combined anti-democratic majority in the Reichstag, stable democratic government was mathematically impossible: Weimar democracy was paralyzed.</p>',
+            '<p><span class="para-ref">[5.1]</span> This sophisticated propaganda machine delivered stunning electoral dividends. In the September 1930 Reichstag election, the Nazi Party leaped from 12 seats to 107 seats (18.3% of the vote), shocking Germany and the international community. In the spring 1932 Presidential election, Hitler challenged the eighty-four-year-old war hero Field Marshal Paul von Hindenburg, winning an astonishing 13.4 million votes (36.8%) and cementing his status as the undisputed leader of the nationalist right.</p>\n\n<p><span class="para-ref">[5.2]</span> The climax came in the **July 1932 Reichstag election**, when the Nazis won **230 seats (37.3% of the vote)**, becoming by far the largest political party in the Reichstag. When Hitler demanded the Chancellorship, President Hindenburg bluntly refused, privately dismissing him as a "vulgar Bohemian corporal." Yet with the Nazis and Communists holding a combined anti-democratic majority in the Reichstag, stable democratic government was mathematically impossible: Weimar democracy was paralyzed.</p>',
           sources: [
             {
               id: 'weimar_l7_source_e',
@@ -9727,26 +9886,44 @@ const weimar_nazi_germany_data = {
         {
           term: 'Paul von Hindenburg',
           def: 'The 84-year-old conservative President of the Weimar Republic and former WW1 military hero.',
+          syllables: 'Paul von Hi-ndenburg',
+          phonetic: 'paul von hindenburg',
+          tier: '2',
         },
         {
           term: 'The Camarilla',
           def: 'The small, powerful inner circle of advisors who heavily influenced President Hindenburg (including his son, Oskar, and Otto von Meissner).',
+          syllables: 'The Ca-mari-lla',
+          phonetic: 'the camarilla',
+          tier: '2',
         },
         {
           term: 'Franz von Papen',
           def: 'A wealthy, conservative nobleman and Chancellor (1932) who plotted to put Hitler in power so he could control him.',
+          syllables: 'Franz von Pa-pen',
+          phonetic: 'franz von papen',
+          tier: '2',
         },
         {
           term: 'Kurt von Schleicher',
           def: 'An influential army general and Chancellor (1932–1933) who warned against a Nazi government but was ultimately betrayed by Papen.',
+          syllables: 'Kurt von Schlei-cher',
+          phonetic: 'kurt von schleicher',
+          tier: '2',
         },
         {
           term: 'Backstairs Intrigue',
           def: 'Secret political deal-making done behind closed doors by a small group of elites, ignoring the democratic process.',
+          syllables: 'Ba-ckstairs I-ntri-gue',
+          phonetic: 'backstairs intrigue',
+          tier: '2',
         },
         {
           term: 'Cabinet',
           def: 'The committee of senior government ministers who help the Chancellor run the country.',
+          syllables: 'Ca-binet',
+          phonetic: 'cabinet',
+          tier: '2',
         },
       ],
       vocab_cloze_text:
@@ -10128,9 +10305,9 @@ const weimar_nazi_germany_data = {
           title:
             "Cracks in the Brown Front: Strasser's Mutiny, Lost Seats and Party Bankruptcy (Nov 1932)",
           act: 1,
-          text: '<p><span class="para-ref">[1.1]</span> Following his triumph in July 1932, Hitler’s high-stakes gamble to hold out for complete executive power began to backfire disastrously. In the new Reichstag elections of <strong>November 1932</strong>, the German electorate showed growing weariness with persistent political stalemate and street violence. The Nazi Party lost 2 million votes and 34 seats, falling to 196 deputies (33.1%).</p>\n\n<p><span class="para-ref">[1.2]</span> The electoral reversal plunged the NSDAP into an acute existential crisis. After running five national election campaigns in eight months, the party treasury was completely bankrupt, leaving the SA unpaid and mutinous. When party organizer <strong>Gregor Strasser</strong> urged the party to enter a coalition and negotiated behind Hitler\'s back, Hitler wept in fury, accusing Strasser of treason. Strasser resigned on 8 December, and Goebbels wrote despairingly in his diary that 1932 had ended in absolute ruin; Hitler\'s political momentum appeared broken.</p>',
+          text: '<p><span class="para-ref">[1.1]</span> Following his triumph in July 1932, Hitler’s high-stakes gamble to hold out for complete executive power began to backfire disastrously. In the new Reichstag elections of **November 1932**, the German electorate showed growing weariness with persistent political stalemate and street violence. The Nazi Party lost 2 million votes and 34 seats, falling to 196 deputies (33.1%).</p>\n\n<p><span class="para-ref">[1.2]</span> The electoral reversal plunged the NSDAP into an acute existential crisis. After running five national election campaigns in eight months, the party treasury was completely bankrupt, leaving the SA unpaid and mutinous. When party organizer **Gregor Strasser** urged the party to enter a coalition and negotiated behind Hitler\'s back, Hitler wept in fury, accusing Strasser of treason. Strasser resigned on 8 December, and Goebbels wrote despairingly in his diary that 1932 had ended in absolute ruin; Hitler\'s political momentum appeared broken.</p>',
           content:
-            '<p><span class="para-ref">[1.1]</span> Following his triumph in July 1932, Hitler’s high-stakes gamble to hold out for complete executive power began to backfire disastrously. In the new Reichstag elections of <strong>November 1932</strong>, the German electorate showed growing weariness with persistent political stalemate and street violence. The Nazi Party lost 2 million votes and 34 seats, falling to 196 deputies (33.1%).</p>\n\n<p><span class="para-ref">[1.2]</span> The electoral reversal plunged the NSDAP into an acute existential crisis. After running five national election campaigns in eight months, the party treasury was completely bankrupt, leaving the SA unpaid and mutinous. When party organizer <strong>Gregor Strasser</strong> urged the party to enter a coalition and negotiated behind Hitler\'s back, Hitler wept in fury, accusing Strasser of treason. Strasser resigned on 8 December, and Goebbels wrote despairingly in his diary that 1932 had ended in absolute ruin; Hitler\'s political momentum appeared broken.</p>',
+            '<p><span class="para-ref">[1.1]</span> Following his triumph in July 1932, Hitler’s high-stakes gamble to hold out for complete executive power began to backfire disastrously. In the new Reichstag elections of **November 1932**, the German electorate showed growing weariness with persistent political stalemate and street violence. The Nazi Party lost 2 million votes and 34 seats, falling to 196 deputies (33.1%).</p>\n\n<p><span class="para-ref">[1.2]</span> The electoral reversal plunged the NSDAP into an acute existential crisis. After running five national election campaigns in eight months, the party treasury was completely bankrupt, leaving the SA unpaid and mutinous. When party organizer **Gregor Strasser** urged the party to enter a coalition and negotiated behind Hitler\'s back, Hitler wept in fury, accusing Strasser of treason. Strasser resigned on 8 December, and Goebbels wrote despairingly in his diary that 1932 had ended in absolute ruin; Hitler\'s political momentum appeared broken.</p>',
           image: '/images/weimar_individuals/gregor_strasser.jpg',
           image_alt:
             'Gregor Strasser, head of the NSDAP political organisation who resigned in December 1932',
@@ -10216,9 +10393,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Failed Political General: Kurt von Schleicher’s Divisive Chancellor Gamble (Dec 1932)',
           act: 2,
-          text: '<p><span class="para-ref">[2.1]</span> As the Nazis faltered, power shifted to conservative court intrigues surrounding the aging President Hindenburg. In May 1932, Hindenburg had dismissed Brüning and appointed aristocratic monarchist <strong>Franz von Papen</strong> as Chancellor. Leading a cabinet of noblemen mockingly dubbed the "Cabinet of Barons," Papen had virtually no parliamentary support. In December 1932, army powerbroker General <strong>Kurt von Schleicher</strong> betrayed Papen, warning Hindenburg that the army could not control civil unrest, forcing Papen’s resignation.</p>\n\n<p><span class="para-ref">[2.2]</span> Schleicher was appointed Chancellor on 2 December 1932, attempting to govern through a policy of the "Third Way" (<em>Querfront</em>). He tried to split the Nazi Party by offering the Vice-Chancellorship to Gregor Strasser, while proposing to carve up bankrupt bankrupt aristocratic Prussian estates for unemployed peasants. This populist scheme alienated both the Nazi leadership and conservative Prussian landowners (Junkers)—including Hindenburg’s own aristocratic circle—who denounced Schleicher as an "agrarian Bolshevik."</p>',
+          text: '<p><span class="para-ref">[2.1]</span> As the Nazis faltered, power shifted to conservative court intrigues surrounding the aging President Hindenburg. In May 1932, Hindenburg had dismissed Brüning and appointed aristocratic monarchist **Franz von Papen** as Chancellor. Leading a cabinet of noblemen mockingly dubbed the "Cabinet of Barons," Papen had virtually no parliamentary support. In December 1932, army powerbroker General **Kurt von Schleicher** betrayed Papen, warning Hindenburg that the army could not control civil unrest, forcing Papen’s resignation.</p>\n\n<p><span class="para-ref">[2.2]</span> Schleicher was appointed Chancellor on 2 December 1932, attempting to govern through a policy of the "Third Way" (<em>Querfront</em>). He tried to split the Nazi Party by offering the Vice-Chancellorship to Gregor Strasser, while proposing to carve up bankrupt bankrupt aristocratic Prussian estates for unemployed peasants. This populist scheme alienated both the Nazi leadership and conservative Prussian landowners (Junkers)—including Hindenburg’s own aristocratic circle—who denounced Schleicher as an "agrarian Bolshevik."</p>',
           content:
-            '<p><span class="para-ref">[2.1]</span> As the Nazis faltered, power shifted to conservative court intrigues surrounding the aging President Hindenburg. In May 1932, Hindenburg had dismissed Brüning and appointed aristocratic monarchist <strong>Franz von Papen</strong> as Chancellor. Leading a cabinet of noblemen mockingly dubbed the "Cabinet of Barons," Papen had virtually no parliamentary support. In December 1932, army powerbroker General <strong>Kurt von Schleicher</strong> betrayed Papen, warning Hindenburg that the army could not control civil unrest, forcing Papen’s resignation.</p>\n\n<p><span class="para-ref">[2.2]</span> Schleicher was appointed Chancellor on 2 December 1932, attempting to govern through a policy of the "Third Way" (<em>Querfront</em>). He tried to split the Nazi Party by offering the Vice-Chancellorship to Gregor Strasser, while proposing to carve up bankrupt bankrupt aristocratic Prussian estates for unemployed peasants. This populist scheme alienated both the Nazi leadership and conservative Prussian landowners (Junkers)—including Hindenburg’s own aristocratic circle—who denounced Schleicher as an "agrarian Bolshevik."</p>',
+            '<p><span class="para-ref">[2.1]</span> As the Nazis faltered, power shifted to conservative court intrigues surrounding the aging President Hindenburg. In May 1932, Hindenburg had dismissed Brüning and appointed aristocratic monarchist **Franz von Papen** as Chancellor. Leading a cabinet of noblemen mockingly dubbed the "Cabinet of Barons," Papen had virtually no parliamentary support. In December 1932, army powerbroker General **Kurt von Schleicher** betrayed Papen, warning Hindenburg that the army could not control civil unrest, forcing Papen’s resignation.</p>\n\n<p><span class="para-ref">[2.2]</span> Schleicher was appointed Chancellor on 2 December 1932, attempting to govern through a policy of the "Third Way" (<em>Querfront</em>). He tried to split the Nazi Party by offering the Vice-Chancellorship to Gregor Strasser, while proposing to carve up bankrupt bankrupt aristocratic Prussian estates for unemployed peasants. This populist scheme alienated both the Nazi leadership and conservative Prussian landowners (Junkers)—including Hindenburg’s own aristocratic circle—who denounced Schleicher as an "agrarian Bolshevik."</p>',
           sources: [
             {
               id: 'weimar_l8_source_d',
@@ -10294,9 +10471,9 @@ const weimar_nazi_germany_data = {
           title:
             "A Secret Meeting at Banker Schröder's Villa: Franz von Papen Plots His Revenge (Jan 1933)",
           act: 3,
-          text: '<p><span class="para-ref">[3.1]</span> Furious at Schleicher’s betrayal, Franz von Papen sought revenge by scheming to regain political power through an alliance with Adolf Hitler. On 4 January 1933, the two men held a clandestine meeting at the Cologne villa of wealthy private banker <strong>Kurt von Schröder</strong>. Papen offered a tempting bargain: he would convince President Hindenburg to dismiss Schleicher and appoint Hitler as Chancellor, on the condition that Papen was appointed Vice-Chancellor and head of the Prussian government.</p>\n\n<p><span class="para-ref">[3.2]</span> The Schröder villa meeting solved Hitler\'s most urgent crisis. Crucially, Schröder and his network of heavy industrial financiers, representing Krupp steel and IG Farben, agreed to clear the Nazi Party\'s massive campaign debts. In exchange, Hitler promised conservative elites that he would destroy the Communist Party, end trade union influence, and launch massive rearmament. Papen now had the financial and political backing to persuade Hindenburg that Hitler was a manageable asset.</p>',
+          text: '<p><span class="para-ref">[3.1]</span> Furious at Schleicher’s betrayal, Franz von Papen sought revenge by scheming to regain political power through an alliance with Adolf Hitler. On 4 January 1933, the two men held a clandestine meeting at the Cologne villa of wealthy private banker **Kurt von Schröder**. Papen offered a tempting bargain: he would convince President Hindenburg to dismiss Schleicher and appoint Hitler as Chancellor, on the condition that Papen was appointed Vice-Chancellor and head of the Prussian government.</p>\n\n<p><span class="para-ref">[3.2]</span> The Schröder villa meeting solved Hitler\'s most urgent crisis. Crucially, Schröder and his network of heavy industrial financiers, representing Krupp steel and IG Farben, agreed to clear the Nazi Party\'s massive campaign debts. In exchange, Hitler promised conservative elites that he would destroy the Communist Party, end trade union influence, and launch massive rearmament. Papen now had the financial and political backing to persuade Hindenburg that Hitler was a manageable asset.</p>',
           content:
-            '<p><span class="para-ref">[3.1]</span> Furious at Schleicher’s betrayal, Franz von Papen sought revenge by scheming to regain political power through an alliance with Adolf Hitler. On 4 January 1933, the two men held a clandestine meeting at the Cologne villa of wealthy private banker <strong>Kurt von Schröder</strong>. Papen offered a tempting bargain: he would convince President Hindenburg to dismiss Schleicher and appoint Hitler as Chancellor, on the condition that Papen was appointed Vice-Chancellor and head of the Prussian government.</p>\n\n<p><span class="para-ref">[3.2]</span> The Schröder villa meeting solved Hitler\'s most urgent crisis. Crucially, Schröder and his network of heavy industrial financiers, representing Krupp steel and IG Farben, agreed to clear the Nazi Party\'s massive campaign debts. In exchange, Hitler promised conservative elites that he would destroy the Communist Party, end trade union influence, and launch massive rearmament. Papen now had the financial and political backing to persuade Hindenburg that Hitler was a manageable asset.</p>',
+            '<p><span class="para-ref">[3.1]</span> Furious at Schleicher’s betrayal, Franz von Papen sought revenge by scheming to regain political power through an alliance with Adolf Hitler. On 4 January 1933, the two men held a clandestine meeting at the Cologne villa of wealthy private banker **Kurt von Schröder**. Papen offered a tempting bargain: he would convince President Hindenburg to dismiss Schleicher and appoint Hitler as Chancellor, on the condition that Papen was appointed Vice-Chancellor and head of the Prussian government.</p>\n\n<p><span class="para-ref">[3.2]</span> The Schröder villa meeting solved Hitler\'s most urgent crisis. Crucially, Schröder and his network of heavy industrial financiers, representing Krupp steel and IG Farben, agreed to clear the Nazi Party\'s massive campaign debts. In exchange, Hitler promised conservative elites that he would destroy the Communist Party, end trade union influence, and launch massive rearmament. Papen now had the financial and political backing to persuade Hindenburg that Hitler was a manageable asset.</p>',
           image: '/images/weimar_torchlight_parade_30jan1933.jpg',
           image_alt:
             'Tens of thousands of SA stormtroopers marching with flaming torches through the Brandenburg Gate in Berlin on the night of 30 January 1933',
@@ -10380,9 +10557,9 @@ const weimar_nazi_germany_data = {
           title:
             'The Backstairs Conspiracy: Tricking President Hindenburg into Squeezing Hitler into a Corner (Jan 1933)',
           act: 4,
-          text: '<p><span class="para-ref">[4.1]</span> Over the final weeks of January 1933, Papen executed a masterclass in political intrigue inside the Presidential Palace. Hindenburg initially resisted appointing Hitler, whom he intensely distrusted. However, Papen allied with the President\'s influential son, Major <strong>Oskar von Hindenburg</strong>, and presidential secretary Otto Meissner, convincing the senile Field Marshal that an alliance with Hitler was the only way to avoid military dictatorship or civil war.</p>\n\n<p><span class="para-ref">[4.2]</span> Papen assured Hindenburg that Hitler would be completely neutralized within the cabinet: <em>"Within two months, we will have pushed Hitler so far into a corner that he\'ll squeak!"</em> (<strong>Source A</strong>). The proposed cabinet contained eleven ministers, but only three Nazis: Hitler as Chancellor, Wilhelm Frick as Interior Minister, and Hermann Göring as Minister without Portfolio. With Papen holding the right to attend every meeting between Hitler and Hindenburg, the traditional conservative elite believed they had safely "boxed Hitler in."</p>',
+          text: '<p><span class="para-ref">[4.1]</span> Over the final weeks of January 1933, Papen executed a masterclass in political intrigue inside the Presidential Palace. Hindenburg initially resisted appointing Hitler, whom he intensely distrusted. However, Papen allied with the President\'s influential son, Major **Oskar von Hindenburg**, and presidential secretary Otto Meissner, convincing the senile Field Marshal that an alliance with Hitler was the only way to avoid military dictatorship or civil war.</p>\n\n<p><span class="para-ref">[4.2]</span> Papen assured Hindenburg that Hitler would be completely neutralized within the cabinet: <em>"Within two months, we will have pushed Hitler so far into a corner that he\'ll squeak!"</em> (**Source A**). The proposed cabinet contained eleven ministers, but only three Nazis: Hitler as Chancellor, Wilhelm Frick as Interior Minister, and Hermann Göring as Minister without Portfolio. With Papen holding the right to attend every meeting between Hitler and Hindenburg, the traditional conservative elite believed they had safely "boxed Hitler in."</p>',
           content:
-            '<p><span class="para-ref">[4.1]</span> Over the final weeks of January 1933, Papen executed a masterclass in political intrigue inside the Presidential Palace. Hindenburg initially resisted appointing Hitler, whom he intensely distrusted. However, Papen allied with the President\'s influential son, Major <strong>Oskar von Hindenburg</strong>, and presidential secretary Otto Meissner, convincing the senile Field Marshal that an alliance with Hitler was the only way to avoid military dictatorship or civil war.</p>\n\n<p><span class="para-ref">[4.2]</span> Papen assured Hindenburg that Hitler would be completely neutralized within the cabinet: <em>"Within two months, we will have pushed Hitler so far into a corner that he\'ll squeak!"</em> (<strong>Source A</strong>). The proposed cabinet contained eleven ministers, but only three Nazis: Hitler as Chancellor, Wilhelm Frick as Interior Minister, and Hermann Göring as Minister without Portfolio. With Papen holding the right to attend every meeting between Hitler and Hindenburg, the traditional conservative elite believed they had safely "boxed Hitler in."</p>',
+            '<p><span class="para-ref">[4.1]</span> Over the final weeks of January 1933, Papen executed a masterclass in political intrigue inside the Presidential Palace. Hindenburg initially resisted appointing Hitler, whom he intensely distrusted. However, Papen allied with the President\'s influential son, Major **Oskar von Hindenburg**, and presidential secretary Otto Meissner, convincing the senile Field Marshal that an alliance with Hitler was the only way to avoid military dictatorship or civil war.</p>\n\n<p><span class="para-ref">[4.2]</span> Papen assured Hindenburg that Hitler would be completely neutralized within the cabinet: <em>"Within two months, we will have pushed Hitler so far into a corner that he\'ll squeak!"</em> (**Source A**). The proposed cabinet contained eleven ministers, but only three Nazis: Hitler as Chancellor, Wilhelm Frick as Interior Minister, and Hermann Göring as Minister without Portfolio. With Papen holding the right to attend every meeting between Hitler and Hindenburg, the traditional conservative elite believed they had safely "boxed Hitler in."</p>',
           sources: [
             {
               id: 'weimar_l8_source_a',
@@ -10460,9 +10637,9 @@ const weimar_nazi_germany_data = {
           title:
             'Torches Through the Brandenburg Gate: Adolf Hitler Appointed Chancellor (30 Jan 1933)',
           act: 5,
-          text: '<p><span class="para-ref">[5.1]</span> On the morning of Monday, 30 January 1933, Adolf Hitler entered the presidential Chancellery in Berlin and formally swore the constitutional oath as Chancellor of the Weimar Republic before President Hindenburg (<strong>Source B</strong>). Hitler had achieved his supreme goal strictly through constitutional legality, without firing a shot. The conservative elites congratulated themselves on having tamed the revolutionary agitator to serve their own nationalist agenda.</p>\n\n<p><span class="para-ref">[5.2]</span> That night, the triumphant reality became terrifyingly clear. Over 25,000 uniformed SA Stormtroopers and SS men marched in a massive, synchronized torchlight procession through the Brandenburg Gate, singing martial anthems as Hitler gazed down from the Chancellery window. From Munich, retired General Ludendorff sent a chilling telegram to his old comrade Hindenburg: <em>"I solemnly prophesy that this accursed man will cast our Reich into the abyss and bring our nation to inconceivable misery. Future generations will damn you in your grave for what you have done."</em></p>',
+          text: '<p><span class="para-ref">[5.1]</span> On the morning of Monday, 30 January 1933, Adolf Hitler entered the presidential Chancellery in Berlin and formally swore the constitutional oath as Chancellor of the Weimar Republic before President Hindenburg (**Source B**). Hitler had achieved his supreme goal strictly through constitutional legality, without firing a shot. The conservative elites congratulated themselves on having tamed the revolutionary agitator to serve their own nationalist agenda.</p>\n\n<p><span class="para-ref">[5.2]</span> That night, the triumphant reality became terrifyingly clear. Over 25,000 uniformed SA Stormtroopers and SS men marched in a massive, synchronized torchlight procession through the Brandenburg Gate, singing martial anthems as Hitler gazed down from the Chancellery window. From Munich, retired General Ludendorff sent a chilling telegram to his old comrade Hindenburg: <em>"I solemnly prophesy that this accursed man will cast our Reich into the abyss and bring our nation to inconceivable misery. Future generations will damn you in your grave for what you have done."</em></p>',
           content:
-            '<p><span class="para-ref">[5.1]</span> On the morning of Monday, 30 January 1933, Adolf Hitler entered the presidential Chancellery in Berlin and formally swore the constitutional oath as Chancellor of the Weimar Republic before President Hindenburg (<strong>Source B</strong>). Hitler had achieved his supreme goal strictly through constitutional legality, without firing a shot. The conservative elites congratulated themselves on having tamed the revolutionary agitator to serve their own nationalist agenda.</p>\n\n<p><span class="para-ref">[5.2]</span> That night, the triumphant reality became terrifyingly clear. Over 25,000 uniformed SA Stormtroopers and SS men marched in a massive, synchronized torchlight procession through the Brandenburg Gate, singing martial anthems as Hitler gazed down from the Chancellery window. From Munich, retired General Ludendorff sent a chilling telegram to his old comrade Hindenburg: <em>"I solemnly prophesy that this accursed man will cast our Reich into the abyss and bring our nation to inconceivable misery. Future generations will damn you in your grave for what you have done."</em></p>',
+            '<p><span class="para-ref">[5.1]</span> On the morning of Monday, 30 January 1933, Adolf Hitler entered the presidential Chancellery in Berlin and formally swore the constitutional oath as Chancellor of the Weimar Republic before President Hindenburg (**Source B**). Hitler had achieved his supreme goal strictly through constitutional legality, without firing a shot. The conservative elites congratulated themselves on having tamed the revolutionary agitator to serve their own nationalist agenda.</p>\n\n<p><span class="para-ref">[5.2]</span> That night, the triumphant reality became terrifyingly clear. Over 25,000 uniformed SA Stormtroopers and SS men marched in a massive, synchronized torchlight procession through the Brandenburg Gate, singing martial anthems as Hitler gazed down from the Chancellery window. From Munich, retired General Ludendorff sent a chilling telegram to his old comrade Hindenburg: <em>"I solemnly prophesy that this accursed man will cast our Reich into the abyss and bring our nation to inconceivable misery. Future generations will damn you in your grave for what you have done."</em></p>',
           sources: [
             {
               id: 'weimar_l8_source_e',
@@ -11581,31 +11758,49 @@ const weimar_nazi_germany_data = {
           term: 'The Reichstag Fire',
           definition:
             'The arson attack on the German parliament building in February 1933, blamed on communists and used to suspend civil liberties.',
+          syllables: 'The Reichs-tag Fire',
+          phonetic: 'the ˈraɪçstɑːk fire',
+          tier: '3',
         },
         {
           term: 'The Enabling Act (1933)',
           definition:
             'Emergency legislation passed in March 1933 that granted Hitler dictatorial power to enact laws without the Reichstag.',
+          syllables: 'The E-na-bling Act (1933)',
+          phonetic: 'the enabling act (1933)',
+          tier: '3',
         },
         {
           term: 'Gleichschaltung',
           definition:
             "The Nazi policy of 'coordination'—bringing every aspect of German society, institutions, and government under total Nazi control.",
+          syllables: 'Gleich-schal-tung',
+          phonetic: 'ˈɡlaɪçˌʃaltʊŋ',
+          tier: '3',
         },
         {
           term: 'Trade Unions',
           definition:
             "Workers' organisations banned and destroyed by the Nazis in May 1933 to prevent strikes and control industrial labour.",
+          syllables: 'Tra-de U-nions',
+          phonetic: 'trade unions',
+          tier: '3',
         },
         {
           term: 'The Night of the Long Knives (1934)',
           definition:
             "Hitler's bloody purge in June 1934 where the SS murdered Ernst Röhm and senior SA leaders to secure army loyalty.",
+          syllables: 'The Night of the Long Kni-ves (1934)',
+          phonetic: 'the night of the long knives (1934)',
+          tier: '2',
         },
         {
           term: 'Führer',
           definition:
             "The supreme title ('Leader') assumed by Adolf Hitler in August 1934 when he merged the roles of Chancellor and President.",
+          syllables: 'Füh-rer',
+          phonetic: 'ˈfjʊərər',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -12742,35 +12937,56 @@ const weimar_nazi_germany_data = {
           term: 'SS (Schutzstaffel)',
           definition:
             'Originally Hitler’s private bodyguards, they became the most powerful armed force in Germany, running the police state and concentration camps under Heinrich Himmler.',
+          syllables: 'S-S (Schu-tzstaffel)',
+          phonetic: 'ˌɛs ˈɛs (schutzstaffel)',
+          tier: '2',
         },
         {
           term: 'SD (Sicherheitsdienst)',
           definition:
             'The intelligence and security agency of the Nazi Party, commanded by Reinhard Heydrich. They spied on opponents.',
+          syllables: 'SD (Si-cherhei-tsdienst)',
+          phonetic: 'sd (sicherheitsdienst)',
+          tier: '3',
         },
         {
           term: 'Gestapo',
           definition:
             'The official non-uniformed Secret State Police. Their primary job was to identify, arrest, and interrogate political opponents.',
+          syllables: 'Ge-sta-po',
+          phonetic: 'ɡəˈstɑːpəʊ',
+          tier: '3',
         },
         {
           term: 'Schutzhaft (Protective Custody)',
           definition:
             "A Nazi legal loophole that allowed the Gestapo to arrest and imprison anyone indefinitely without a trial or judge's permission.",
+          syllables: 'Schu-tzhaft (Pro-te-cti-ve Cu-sto-dy)',
+          phonetic: 'schutzhaft (protective custody)',
+          tier: '3',
         },
         {
           term: 'The Concordat (1933)',
           definition: 'A formal treaty signed between the Nazi government and the Catholic Pope.',
+          syllables: 'The con-cor-dat (1933)',
+          phonetic: 'the kənˈkɔːdæt (1933)',
+          tier: '3',
         },
         {
           term: 'Reich Church',
           definition:
             'A Nazified version of the Protestant Church, which merged traditional Christianity with Nazi racial ideas.',
+          syllables: 'Reich Church',
+          phonetic: 'reich church',
+          tier: '3',
         },
         {
           term: 'Confessional Church',
           definition:
             "An illegal, breakaway Protestant church set up in direct opposition to the Nazis' interference in religion.",
+          syllables: 'Co-nfessio-nal Church',
+          phonetic: 'confessional church',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -14093,31 +14309,49 @@ const weimar_nazi_germany_data = {
           term: 'Censorship',
           definition:
             'The government banning or hiding information, preventing the public from seeing anything critical of the regime.',
+          syllables: 'Ce-nsorship',
+          phonetic: 'censorship',
+          tier: '2',
         },
         {
           term: 'Propaganda',
           definition:
             'Spreading highly biased, one-sided information to manipulate how people think and behave.',
+          syllables: 'prop-a-gan-da',
+          phonetic: 'ˌprɒpəˈɡændə',
+          tier: '2',
         },
         {
           term: 'Ministry of Public Enlightenment and Propaganda',
           definition:
             'The government department created in 1933, led by Dr Joseph Goebbels, to control the media.',
+          syllables: 'Mi-ni-stry of Pu-blic E-nlighte-nment and prop-a-gan-da',
+          phonetic: 'ministry of public enlightenment and ˌprɒpəˈɡændə',
+          tier: '2',
         },
         {
           term: 'Volksempfänger (People’s Receiver)',
           definition:
             "A cheap, mass-produced radio designed so that ordinary Germans could afford to listen to Hitler's speeches.",
+          syllables: 'Vo-lksempfänger (Peo-ple’s Re-cei-ver)',
+          phonetic: 'volksempfänger (people’s receiver)',
+          tier: '2',
         },
         {
           term: 'Reich Chamber of Culture',
           definition:
             'A state-run organisation that controlled all the arts; you could not work as an artist or musician unless you were a member.',
+          syllables: 'Reich Cha-mber of Cu-ltu-re',
+          phonetic: 'reich chamber of culture',
+          tier: '2',
         },
         {
           term: 'Entartete Kunst (Degenerate Art)',
           definition:
             "The Nazi term for modern, abstract, or expressionist art, which they banned for being 'un-German'.",
+          syllables: 'E-ntarte-te Kunst (De-gene-rate Art)',
+          phonetic: 'entartete kunst (degenerate art)',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -15400,31 +15634,49 @@ const weimar_nazi_germany_data = {
           term: 'Conformity',
           definition:
             'Obeying Nazi rules and blending into the crowd in public to avoid drawing the attention of the Gestapo.',
+          syllables: 'Co-nformi-ty',
+          phonetic: 'conformity',
+          tier: '3',
         },
         {
           term: 'Passive Resistance',
           definition:
             'Low-level, non-violent opposition, such as refusing to give the Nazi salute or circulating anti-Nazi jokes.',
+          syllables: 'Pa-ssi-ve re-sist-ance',
+          phonetic: 'passive rɪˈzɪstəns',
+          tier: '3',
         },
         {
           term: 'Active Resistance',
           definition:
             'Dangerous, direct actions aimed at overthrowing the regime, including sabotage, assassinations, and anti-Nazi leaflets.',
+          syllables: 'A-cti-ve re-sist-ance',
+          phonetic: 'active rɪˈzɪstəns',
+          tier: '3',
         },
         {
           term: 'Sopade Reports',
           definition:
             'Secret intelligence reports gathered by the banned Social Democratic Party (SPD) to track the genuine mood of German citizens.',
+          syllables: 'So-pade Re-ports',
+          phonetic: 'sopade reports',
+          tier: '2',
         },
         {
           term: 'Edelweiss Pirates',
           definition:
             'A working-class youth opposition movement that rejected the regimentation of the Hitler Youth and ambushed Nazi patrols.',
+          syllables: 'E-de-lweiss Pi-rates',
+          phonetic: 'edelweiss pirates',
+          tier: '3',
         },
         {
           term: 'Swing Youth',
           definition:
             'Middle-class teenagers who defied Nazi cultural controls by listening to banned American jazz music and wearing Western clothes.',
+          syllables: 'Swing Youth',
+          phonetic: 'swing youth',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -16794,35 +17046,56 @@ const weimar_nazi_germany_data = {
           term: 'Kinder, Küche, Kirche',
           definition:
             '"Children, Kitchen, Church" – the traditional slogan that summarised the Nazi ideal for women.',
+          syllables: 'Ki-nder, Küche, Ki-rche',
+          phonetic: 'kinder, küche, kirche',
+          tier: '3',
         },
         {
           term: 'Law for the Encouragement of Marriage (1933)',
           definition:
             'A law providing government loans to young couples, provided the wife left her job.',
+          syllables: 'Law for the E-ncou-rage-ment of Ma-rria-ge (1933)',
+          phonetic: 'law for the encouragement of marriage (1933)',
+          tier: '2',
         },
         {
           term: 'The Mother’s Cross (Mutterkreuz)',
           definition:
             'An award given to women who had large numbers of children, treated like a military medal.',
+          syllables: 'The Mo-ther’s Cross (Mu-tterkreuz)',
+          phonetic: 'the mother’s cross (mutterkreuz)',
+          tier: '3',
         },
         {
           term: 'Lebensborn (Spring of Life)',
           definition:
             "A program started by Heinrich Himmler in 1935 to breed 'racially pure' Aryan children.",
+          syllables: 'Le-be-nsborn (Spring of Li-fe)',
+          phonetic: 'lebensborn (spring of life)',
+          tier: '2',
         },
         {
           term: 'NS-Frauenschaft (NSF)',
           definition: "The elite National Socialist Women's League.",
+          syllables: 'NS-Fraue-nschaft (NSF)',
+          phonetic: 'ns-frauenschaft (nsf)',
+          tier: '2',
         },
         {
           term: 'Deutsches Frauenwerk (DFW)',
           definition:
             "The massive German Women's Enterprise, overseen by the NSF, designed to educate women on domestic duties.",
+          syllables: 'Deu-tsches Fraue-nwerk (DFW)',
+          phonetic: 'deutsches frauenwerk (dfw)',
+          tier: '2',
         },
         {
           term: 'Gertrud Scholtz-Klink',
           definition:
             "The Reich Women's Leader, appointed by Hitler to oversee all women's organisations.",
+          syllables: 'Ge-rtrud Scholtz-Klink',
+          phonetic: 'gertrud scholtz-klink',
+          tier: '2',
         },
       ],
       vocab_cloze_text:
@@ -18063,32 +18336,53 @@ const weimar_nazi_germany_data = {
         {
           term: 'Indoctrination',
           definition: 'Brainwashing people to accept a set of beliefs without question.',
+          syllables: 'I-ndoctri-nation',
+          phonetic: 'indoctrination',
+          tier: '2',
         },
         {
           term: "National Socialist Teachers' League (NSLB)",
           definition: 'The compulsory Nazi union for all teachers.',
+          syllables: "Na-tio-nal So-cia-list Tea-chers' Lea-gue (NSLB)",
+          phonetic: "national socialist teachers' league (nslb)",
+          tier: '3',
         },
         {
           term: 'Bernhard Rust',
           definition: 'The Nazi Minister of Science, Education and National Culture.',
+          syllables: 'Be-rnhard Rust',
+          phonetic: 'bernhard rust',
+          tier: '3',
         },
         {
           term: 'Eugenics (Race Studies)',
           definition:
             "The pseudo-science of selective breeding to improve the 'Aryan' race, taught as a compulsory subject.",
+          syllables: 'Eu-genics (Ra-ce Stu-dies)',
+          phonetic: 'eugenics (race studies)',
+          tier: '2',
         },
         {
           term: 'Hitlerjugend (HJ)',
           definition: 'The Hitler Youth (for boys aged 14–18).',
+          syllables: 'Hi-tlerju-gend (HJ)',
+          phonetic: 'hitlerjugend (hj)',
+          tier: '2',
         },
         {
           term: 'Bund Deutscher Mädel (BDM)',
           definition: 'The League of German Maidens (for girls aged 14–18).',
+          syllables: 'Bund Deu-tscher Mädel (BDM)',
+          phonetic: 'bund deutscher mädel (bdm)',
+          tier: '2',
         },
         {
           term: 'Faith and Beauty Society',
           definition:
             'A Nazi organisation for women aged 17–21, designed to bridge the gap between the BDM and adult life.',
+          syllables: 'Faith and Beau-ty So-cie-ty',
+          phonetic: 'faith and beauty society',
+          tier: '3',
         },
       ],
       vocab_cloze_text:
@@ -19389,40 +19683,64 @@ const weimar_nazi_germany_data = {
           term: 'Invisible Unemployment',
           definition:
             'The Nazi practice of manipulating statistics to hide the true number of people out of work.',
+          syllables: 'I-nvi-si-ble U-ne-mploy-ment',
+          phonetic: 'invisible unemployment',
+          tier: '3',
         },
         {
           term: 'Autarky',
           definition:
             'The economic policy of self-sufficiency; trying to produce everything Germany needed so it would not rely on imports during a war.',
+          syllables: 'au-tar-ky',
+          phonetic: 'ˈɔːtɑːki',
+          tier: '3',
         },
         {
           term: 'Ersatz',
           definition:
             'Artificial substitute goods developed to help achieve Autarky (e.g., making rubber from coal).',
+          syllables: 'E-rsatz',
+          phonetic: 'ersatz',
+          tier: '3',
         },
         {
           term: 'Hermann Goering',
           definition:
             "The Nazi minister put in charge of the 'Four Year Plan' in 1936 to prepare the economy for war.",
+          syllables: 'He-rmann Goe-ring',
+          phonetic: 'hermann goering',
+          tier: '3',
         },
         {
           term: 'National Labour Service (RAD)',
           definition:
             'A scheme providing manual work for the unemployed, made compulsory for young men in 1935.',
+          syllables: 'Na-tio-nal La-bour Se-rvi-ce (RAD)',
+          phonetic: 'national labour service (rad)',
+          tier: '2',
         },
         {
           term: 'German Labour Front (DAF)',
           definition: 'The Nazi organisation that replaced trade unions, led by Robert Ley.',
+          syllables: 'Ge-rman La-bour Front (DAF)',
+          phonetic: 'german labour front (daf)',
+          tier: '3',
         },
         {
           term: 'Strength Through Joy (KdF)',
           definition:
             'A subdivision of the DAF that provided cheap leisure activities to bribe workers into compliance.',
+          syllables: 'Strength Through Joy (KdF)',
+          phonetic: 'strength through joy (kdf)',
+          tier: '3',
         },
         {
           term: 'Beauty of Labour (SdA)',
           definition:
             'A subdivision of the DAF aimed at improving workplace conditions (like canteens and lighting).',
+          syllables: 'Beau-ty of La-bour (SdA)',
+          phonetic: 'beauty of labour (sda)',
+          tier: '2',
         },
       ],
       vocab_cloze_text:
@@ -20748,34 +21066,55 @@ const weimar_nazi_germany_data = {
           term: 'Volksgemeinschaft',
           definition:
             "The 'People's Community'—the Nazi ideal of a pure, strong, and united Aryan society.",
+          syllables: 'Vo-lksge-mei-nschaft',
+          phonetic: 'volksgemeinschaft',
+          tier: '3',
         },
         {
           term: 'Social Darwinism',
           definition:
             "The twisted Nazi belief that human races evolve like animals, and the 'strong' (Aryans) must destroy the 'weak' to survive.",
+          syllables: 'So-cial Da-rwi-nism',
+          phonetic: 'social darwinism',
+          tier: '3',
         },
         {
           term: 'Untermenschen',
           definition:
             "'Sub-humans'—groups the Nazis believed were biologically inferior (Jews, Roma/Sinti, Slavs).",
+          syllables: 'U-nterme-nschen',
+          phonetic: 'untermenschen',
+          tier: '3',
         },
         {
           term: 'Asocials',
           definition:
             'People who did not fit the Nazi social ideal of the Volksgemeinschaft (e.g., homosexuals, vagrants, alcoholics).',
+          syllables: 'A-socials',
+          phonetic: 'asocials',
+          tier: '3',
         },
         {
           term: 'Anti-Semitism',
           definition: 'Hatred or discrimination against Jewish people.',
+          syllables: 'Anti-Se-mitism',
+          phonetic: 'anti-semitism',
+          tier: '2',
         },
         {
           term: 'Eugenics',
           definition: "The pseudo-science of selective breeding to 'purify' the human race.",
+          syllables: 'Eu-genics',
+          phonetic: 'eugenics',
+          tier: '2',
         },
         {
           term: 'Aryanisation',
           definition:
             'The forced transfer of Jewish-owned businesses and property to Aryans at a fraction of their value.',
+          syllables: 'A-rya-nisa-tion',
+          phonetic: 'aryanisation',
+          tier: '3',
         },
       ],
       vocab_cloze_text:

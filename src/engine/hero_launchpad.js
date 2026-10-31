@@ -40,7 +40,7 @@ export const CURRICULAR_PILLARS_CATALOG = {
       title: 'World War II & The Home Front Knowledge Retrieval Companion',
       label: 'Retrieval Companion (40 Qs)',
       htmlUrl: '/units/ks2_ww2/quiz_pack.html',
-      pdfUrl: '/pdfs/ks2_ww2_quiz_pack.pdf',
+      pdfUrl: '/pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf',
     },
   },
   great_war: {

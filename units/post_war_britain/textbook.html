@@ -520,25 +520,29 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      min-height: 0;
+      margin-bottom: 4px;
+      overflow: hidden;
     }
 
     .prose-columns {
       column-count: 2;
-      column-gap: 16px;
+      column-gap: 8mm;
       column-fill: balance;
       text-align: justify;
       text-justify: inter-word;
       hyphens: auto;
+      flex: 1;
     }
 
     .block-section {
       break-inside: auto;
+      page-break-inside: auto;
       margin-bottom: 4px;
     }
 
     .block-header {
       break-after: avoid;
+      page-break-after: avoid;
       break-inside: avoid;
       display: flex;
       align-items: baseline;
@@ -579,6 +583,10 @@
 
     .prose-p {
       margin-bottom: 3.5px;
+      break-inside: auto;
+      page-break-inside: auto;
+      orphans: 2;
+      widows: 2;
     }
 
     .prose-p:last-child {
@@ -997,13 +1005,13 @@
         <main class="prose-body">
           <div class="prose-columns">
             
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2px;">
           <div class="block-header">
             <span class="block-ref">[1.1]–[1.2]</span>
             <span class="block-title">The Constitutional Campaign: Millicent Fawcett &amp; The NUWSS (1897–1903)</span>
           </div>
           <div class="block-workbook-question">What principles guided Millicent Fawcett and the NUWSS?</div>
-          <div class="block-prose" style="font-size: 7.9pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.2pt; line-height: 1.2;">
             
               <p class="prose-p">In 1897, seventeen regional women’s suffrage societies united under the leadership of <strong>Dame Millicent Garrett Fawcett</strong> to form the <strong>National Union of Women's Suffrage Societies (NUWSS)</strong>. Known as the <em>Suffragists</em>, the NUWSS was a peaceful, democratic federation that rapidly expanded to over 500 local branches and 50,000 members across Great Britain.</p>
             
@@ -1014,13 +1022,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2px;">
           <div class="block-header">
             <span class="block-ref">[1.3]–[1.4]</span>
             <span class="block-title">'Deeds, Not Words': Emmeline Pankhurst &amp; WSPU Direct Action (1903–1914)</span>
           </div>
           <div class="block-workbook-question">Why did Emmeline Pankhurst adopt "Deeds, not words" in 1903?</div>
-          <div class="block-prose" style="font-size: 7.9pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.2pt; line-height: 1.2;">
             
               <p class="prose-p">Frustrated by decades of parliamentary delays and broken promises by Liberal and Conservative governments, <strong>Emmeline Pankhurst</strong> and her daughters Christabel and Sylvia founded the <strong>Women's Social and Political Union (WSPU)</strong> in Manchester in October 1903. Adopting the militant motto <em>'Deeds, not words'</em>, the WSPU members became universally known as the <strong>Suffragettes</strong>.</p>
             
@@ -1031,13 +1039,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2px;">
           <div class="block-header">
             <span class="block-ref">[1.5]–[1.6]</span>
             <span class="block-title">Prison Brutality, Hunger Strikes &amp; The Cat and Mouse Act (1909–1914)</span>
           </div>
           <div class="block-workbook-question">How did hunger strikes and the "Cat and Mouse Act" polarise Britain?</div>
-          <div class="block-prose" style="font-size: 7.9pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.2pt; line-height: 1.2;">
             
               <p class="prose-p">When imprisoned in Holloway and other jails, Suffragettes demanded to be treated as political prisoners rather than common criminals. In July 1909, Marion Wallace Dunlop initiated a revolutionary protest tactic by refusing all food. To prevent prisoners from dying and becoming martyrs, the Liberal government introduced <strong>compulsory force-feeding</strong>—a brutal and agonizing procedure where rubber tubes were shoved down prisoners' nostrils or throats by wardresses and medical officers.</p>
             
@@ -1048,13 +1056,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2px;">
           <div class="block-header">
             <span class="block-ref">[1.7]–[1.8]</span>
             <span class="block-title">The Suffragette Bodyguard: Edith Garrud &amp; The Jiu-Jitsu Defense (1910–1914)</span>
           </div>
           <div class="block-workbook-question">What was the historical impact of Emily Wilding Davison’s sacrifice?</div>
-          <div class="block-prose" style="font-size: 7.9pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.2pt; line-height: 1.2;">
             
               <p class="prose-p">As police tactics became increasingly aggressive—culminating in the sexual assault and physical violence of 'Black Friday' in November 1910—the WSPU organized an elite, clandestine security unit known as <strong>'The Bodyguard'</strong>. Led by martial artist <strong>Edith Garrud</strong>, a group of thirty athletic women were trained in the Japanese martial art of <strong>jiu-jitsu</strong> to protect Emmeline Pankhurst from re-arrest under the Cat and Mouse Act.</p>
             
@@ -1065,13 +1073,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2px;">
           <div class="block-header">
             <span class="block-ref">[1.9]–[1.10]</span>
             <span class="block-title">Total War Mobilisation, Munitions Work &amp; The 1918 Victory (1914–1918)</span>
           </div>
           <div class="block-workbook-question">How did total war mobilization secure the 1918 Act?</div>
-          <div class="block-prose" style="font-size: 7.9pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.2pt; line-height: 1.2;">
             
               <p class="prose-p">In August 1914, the outbreak of the First World War transformed the political landscape overnight. Emmeline Pankhurst suspended all militant campaigning and urged Suffragettes to support the national war effort. Meanwhile, Millicent Fawcett’s NUWSS continued constitutional lobbying while mobilising thousands of women into civilian and relief work.</p>
             
@@ -1113,13 +1121,13 @@
         <main class="prose-body">
           <div class="prose-columns">
             
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2.2px;">
           <div class="block-header">
             <span class="block-ref">[2.1]–[2.2]</span>
             <span class="block-title">Total War, Evacuation &amp; Shared Social Transformation (1940–1942)</span>
           </div>
           <div class="block-workbook-question">How did evacuation and the Blitz alter British social attitudes?</div>
-          <div class="block-prose" style="font-size: 8.5pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.7pt; line-height: 1.25;">
             
               <p class="prose-p">Between 1939 and 1945, the experience of total warfare shattered the rigid class distinctions and laissez-faire assumptions that had dominated pre-war Britain. When the government evacuated 1.5 million school children from inner-city slums in London, Liverpool, and Manchester to affluent rural counties in September 1939, wealthy middle-class host families were deeply shocked to discover child poverty, malnutrition, rickets, and skin infections in modern Britain.</p>
             
@@ -1130,13 +1138,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2.2px;">
           <div class="block-header">
             <span class="block-ref">[2.3]–[2.4]</span>
             <span class="block-title">Slaying the Five Giants: William Beveridge &amp; The Blueprint for Welfare (1942)</span>
           </div>
           <div class="block-workbook-question">Why did the 1942 Beveridge Report become a wartime sensation?</div>
-          <div class="block-prose" style="font-size: 8.5pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.7pt; line-height: 1.25;">
             
               <p class="prose-p">In November 1942, in the darkest days of the war, senior civil servant and economist <strong>Sir William Beveridge</strong> published his revolutionary parliamentary report: <em>Social Insurance and Allied Services</em> (<strong>Source A</strong>). The Beveridge Report became an immediate publishing sensation, selling over 630,000 copies as citizens queued outside stationery offices in the rain to buy it.</p>
             
@@ -1147,13 +1155,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2.2px;">
           <div class="block-header">
             <span class="block-ref">[2.5]–[2.6]</span>
             <span class="block-title">The 1945 Labour Landslide: Clement Attlee &amp; 'The New Jerusalem' (July 1945)</span>
           </div>
           <div class="block-workbook-question">Why did Clement Attlee defeat Winston Churchill in 1945?</div>
-          <div class="block-prose" style="font-size: 8.5pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.7pt; line-height: 1.25;">
             
               <p class="prose-p">When the European war ended in May 1945, a general election was called in July. Conservative Prime Minister Winston Churchill was universally celebrated as Britain’s victorious wartime saviour. However, while voters revered Churchill as a war leader, they distrusted his Conservative Party on domestic policy, remembering the mass factory closures, means tests, and slums of the 1930s.</p>
             
@@ -1164,13 +1172,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2.2px;">
           <div class="block-header">
             <span class="block-ref">[2.7]–[2.8]</span>
             <span class="block-title">Aneurin Bevan &amp; The NHS Act: Healthcare as a Human Right (1946–1947)</span>
           </div>
           <div class="block-workbook-question">How did the 1946 and 1948 Acts create the welfare safety net?</div>
-          <div class="block-prose" style="font-size: 8.5pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.7pt; line-height: 1.25;">
             
               <p class="prose-p">The crown jewel of the new Welfare State was the creation of the <strong>National Health Service (NHS)</strong>. Attlee appointed fiery Welsh socialist <strong>Aneurin 'Nye' Bevan</strong>—a former coal miner who had watched fellow miners die of tuberculosis without medical treatment—as Minister of Health and Housing.</p>
             
@@ -1181,13 +1189,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2.2px;">
           <div class="block-header">
             <span class="block-ref">[2.9]–[2.10]</span>
             <span class="block-title">'The Appointed Day': Overcoming the BMA &amp; The Reality of Free Care (5 July 1948)</span>
           </div>
           <div class="block-workbook-question">How did Aneurin Bevan overcome doctors to launch the NHS?</div>
-          <div class="block-prose" style="font-size: 8.5pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.7pt; line-height: 1.25;">
             
               <p class="prose-p">Bevan’s vision met fierce resistance from the medical establishment. The <strong>British Medical Association (BMA)</strong>, led by Dr. Charles Hill, fiercely opposed the NHS (<strong>Source E</strong>), warning that state-salaried doctors would become 'bureaucratic civil servants' and threatening a nationwide doctors’ strike.</p>
             
@@ -1229,13 +1237,13 @@
         <main class="prose-body">
           <div class="prose-columns">
             
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2.2px;">
           <div class="block-header">
             <span class="block-ref">[3.1]–[3.2]</span>
             <span class="block-title">Post-War Reconstruction &amp; Industrial Labour Shortages (1945–1948)</span>
           </div>
           <div class="block-workbook-question">Why did post-war Britain face severe industrial labour shortages?</div>
-          <div class="block-prose" style="font-size: 8.5pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.65pt; line-height: 1.25;">
             
               <p class="prose-p">In the aftermath of the Second World War, Great Britain faced an acute economic and industrial crisis. Hundreds of thousands of homes, factories, and schools had been destroyed by German bombing, while the wartime economy had drained national financial reserves. At the same time, over 300,000 British servicemen had lost their lives, leaving the country with desperate labor shortages.</p>
             
@@ -1246,13 +1254,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2.2px;">
           <div class="block-header">
             <span class="block-ref">[3.3]–[3.4]</span>
             <span class="block-title">Imperial Citizens: The British Nationality Act 1948 &amp; Statutory Rights (1948)</span>
           </div>
           <div class="block-workbook-question">What rights were created by the British Nationality Act 1948?</div>
-          <div class="block-prose" style="font-size: 8.5pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.65pt; line-height: 1.25;">
             
               <p class="prose-p">In 1948, the Attlee government passed the landmark <strong>British Nationality Act 1948</strong> (<strong>Source C</strong>). The Act created the official status of <strong>'Citizen of the United Kingdom and Colonies' (CUKC)</strong>, granting all 800 million subjects across the British Empire and Commonwealth equal British citizenship.</p>
             
@@ -1263,13 +1271,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2.2px;">
           <div class="block-header">
             <span class="block-ref">[3.5]–[3.6]</span>
             <span class="block-title">22 June 1948: HMT Empire Windrush Docks at Tilbury (1948)</span>
           </div>
           <div class="block-workbook-question">What was the significance of HMT Empire Windrush docking at Tilbury?</div>
-          <div class="block-prose" style="font-size: 8.5pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.65pt; line-height: 1.25;">
             
               <p class="prose-p">On <strong>22 June 1948</strong>, the former German troopship <strong>HMT Empire Windrush</strong> docked at the Port of Tilbury on the River Thames, carrying 492 official passengers from Jamaica, Trinidad, and other Caribbean islands. The official passenger manifest (<strong>Source A</strong>) listed skilled welders, mechanics, carpenters, seamstresses, and RAF veterans in smart suits and fedora hats.</p>
             
@@ -1280,13 +1288,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2.2px;">
           <div class="block-header">
             <span class="block-ref">[3.7]–[3.8]</span>
             <span class="block-title">'No Blacks, No Irish, No Dogs': The Informal Colour Bar &amp; Exploitation (1950s)</span>
           </div>
           <div class="block-workbook-question">What barriers did Caribbean arrivals encounter in housing and banks?</div>
-          <div class="block-prose" style="font-size: 8.5pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.65pt; line-height: 1.25;">
             
               <p class="prose-p">Upon arriving in Britain, the Windrush pioneers were confronted by a cold, hostile social reality. Although Commonwealth arrivals were legally equal citizens under the 1948 Act, they encountered an entrenched, informal <strong>'colour bar'</strong> across British society that was completely legal, as no race discrimination laws existed.</p>
             
@@ -1297,13 +1305,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2.2px;">
           <div class="block-header">
             <span class="block-ref">[3.9]–[3.10]</span>
             <span class="block-title">The 1958 Notting Hill Riots, Claudia Jones &amp; The Caribbean Carnival (1958–1959)</span>
           </div>
           <div class="block-workbook-question">How did Claudia Jones respond to the 1958 Notting Hill riots?</div>
-          <div class="block-prose" style="font-size: 8.5pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.65pt; line-height: 1.25;">
             
               <p class="prose-p">In late August 1958, brewing racial tensions exploded in the <strong>Notting Hill Race Riots</strong> in West London. Mobilized by Oswald Mosley's fascist Union Movement and gangs of white youth known as 'Teddy Boys', mobs of hundreds of armed rioters attacked Black residents with iron bars, petrol bombs, and butcher knives for five consecutive nights while chanting 'Keep Britain White'.</p>
             
@@ -1345,13 +1353,13 @@
         <main class="prose-body">
           <div class="prose-columns">
             
-        <div class="block-section" style="margin-bottom: 3.5px;">
+        <div class="block-section" style="margin-bottom: 2.4px;">
           <div class="block-header">
             <span class="block-ref">[4.1]–[4.2]</span>
             <span class="block-title">The Bristol 'Colour Bar': The Omnibus Company &amp; Trade Union Discrimination (1950s–1963)</span>
           </div>
           <div class="block-workbook-question">Why did the Bristol Omnibus Company enforce an open colour bar?</div>
-          <div class="block-prose" style="font-size: 8.8pt; line-height: 1.33;">
+          <div class="block-prose" style="font-size: 8.9pt; line-height: 1.27;">
             
               <p class="prose-p">By the early 1960s, Bristol had become home to a vibrant West Indian community of over 3,000 people, mostly living in the St Pauls district. However, like many British cities, Bristol was rigidly divided by racial discrimination. The largest employer in city transport—the state-owned <strong>Bristol Omnibus Company</strong>—enforced a strict, total 'colour bar', refusing to employ a single Black or Asian bus driver or conductor.</p>
             
@@ -1362,13 +1370,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.5px;">
+        <div class="block-section" style="margin-bottom: 2.4px;">
           <div class="block-header">
             <span class="block-ref">[4.3]–[4.4]</span>
             <span class="block-title">The Rejection of Guy Bailey &amp; The West Indian Development Council (April 1963)</span>
           </div>
           <div class="block-workbook-question">What happened when Guy Bailey applied for a conductor post?</div>
-          <div class="block-prose" style="font-size: 8.8pt; line-height: 1.33;">
+          <div class="block-prose" style="font-size: 8.9pt; line-height: 1.27;">
             
               <p class="prose-p">In early 1963, youth worker <strong>Paul Stephenson</strong>, along with Caribbean community leaders Roy Hackett, Owen Henry, and Audley Evans, formed the <strong>West Indian Development Council (WIDC)</strong> to challenge systemic discrimination in Bristol.</p>
             
@@ -1379,13 +1387,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.5px;">
+        <div class="block-section" style="margin-bottom: 2.4px;">
           <div class="block-header">
             <span class="block-ref">[4.5]–[4.6]</span>
             <span class="block-title">Students, Churches &amp; Community Solidarity: The Citywide Boycott (May 1963)</span>
           </div>
           <div class="block-workbook-question">How was the Bristol Bus Boycott organised and launched?</div>
-          <div class="block-prose" style="font-size: 8.8pt; line-height: 1.33;">
+          <div class="block-prose" style="font-size: 8.9pt; line-height: 1.27;">
             
               <p class="prose-p">Drawing direct inspiration from Dr. Martin Luther King Jr. and the 1955 Montgomery Bus Boycott in Alabama, Paul Stephenson called a press conference on 30 April 1963, announcing a total, citywide <strong>boycott of Bristol Omnibus Company buses</strong>. The WIDC urged Bristol's 3,000 West Indians and all sympathetic white residents to refuse to ride the buses until the color bar was revoked.</p>
             
@@ -1396,13 +1404,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.5px;">
+        <div class="block-section" style="margin-bottom: 2.4px;">
           <div class="block-header">
             <span class="block-ref">[4.7]–[4.8]</span>
             <span class="block-title">High-Level Political Intervention: Tony Benn &amp; The Company's Surrender (August 1963)</span>
           </div>
           <div class="block-workbook-question">How did student marches and political pressure isolate the company?</div>
-          <div class="block-prose" style="font-size: 8.8pt; line-height: 1.33;">
+          <div class="block-prose" style="font-size: 8.9pt; line-height: 1.27;">
             
               <p class="prose-p">As the boycott entered its fourth month, high-level political pressure isolated the bus company. <strong>Tony Benn</strong>, the influential Member of Parliament for Bristol South East (<strong>Source B</strong>), gave his passionate support to the campaign, declaring that he would walk to his parliamentary meetings rather than ride a segregated bus.</p>
             
@@ -1413,13 +1421,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.5px;">
+        <div class="block-section" style="margin-bottom: 2.4px;">
           <div class="block-header">
             <span class="block-ref">[4.9]–[4.10]</span>
             <span class="block-title">Harold Wilson, The Race Relations Acts &amp; British Civil Rights Legacy (1965–1968)</span>
           </div>
           <div class="block-workbook-question">How did victory lead directly to the 1965 and 1968 Race Relations Acts?</div>
-          <div class="block-prose" style="font-size: 8.8pt; line-height: 1.33;">
+          <div class="block-prose" style="font-size: 8.9pt; line-height: 1.27;">
             
               <p class="prose-p">On 17 September 1963, Raghbir Singh became Bristol’s first Asian bus conductor, followed shortly by Black drivers Norman Samuels and Audley Evans. However, civil rights campaigners recognized that winning a single local boycott did not protect minority workers across the rest of the country.</p>
             
@@ -1461,13 +1469,13 @@
         <main class="prose-body">
           <div class="prose-columns">
             
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2px;">
           <div class="block-header">
             <span class="block-ref">[5.1]–[5.2]</span>
             <span class="block-title">Under the Mushroom Cloud: British Deterrence &amp; The Hydrogen Bomb (1952–1957)</span>
           </div>
           <div class="block-workbook-question">Why did Britain build an independent nuclear deterrent?</div>
-          <div class="block-prose" style="font-size: 7.9pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.1pt; line-height: 1.19;">
             
               <p class="prose-p">Following the devastation of Hiroshima and Nagasaki in August 1945, Great Britain was determined to remain a top-tier global superpower alongside the United States and the Soviet Union. In 1947, Prime Minister Clement Attlee secretly authorized the construction of an independent British atomic bomb, culminating in the successful 'Operation Hurricane' nuclear test off the coast of Australia in October 1952.</p>
             
@@ -1478,13 +1486,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2px;">
           <div class="block-header">
             <span class="block-ref">[5.3]–[5.4]</span>
             <span class="block-title">The Peace Movement: Gerald Holtom, CND &amp; The Aldermaston Marches (1958–1960)</span>
           </div>
           <div class="block-workbook-question">How was the Campaign for Nuclear Disarmament (CND) formed?</div>
-          <div class="block-prose" style="font-size: 7.9pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.1pt; line-height: 1.19;">
             
               <p class="prose-p">Horrified by the terrifying prospect of nuclear annihilation, prominent British intellectuals, scientists, and church leaders—including philosopher Bertrand Russell, canon John Collins, and author J. B. Priestley—founded the <strong>Campaign for Nuclear Disarmament (CND)</strong> in London in February 1958. CND demanded that Britain unilaterally abandon its nuclear arsenal and expel all US nuclear weapons from British soil.</p>
             
@@ -1495,13 +1503,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2px;">
           <div class="block-header">
             <span class="block-ref">[5.5]–[5.6]</span>
             <span class="block-title">Secret Bunkers &amp; Subterranean Watch: The Royal Observer Corps at York (1961–1970)</span>
           </div>
           <div class="block-workbook-question">What made the annual 52-mile Aldermaston Marches so impactful?</div>
-          <div class="block-prose" style="font-size: 7.9pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.1pt; line-height: 1.19;">
             
               <p class="prose-p">While ordinary citizens were given no physical shelter, the British state invested vast secret budgets in constructing an underground nuclear command infrastructure designed to preserve governance for the political and military elite. In the event of war, the Prime Minister and War Cabinet would retreat to 'Burlington'—a colossal subterranean fortress carved into a Wiltshire limestone quarry, complete with 60 miles of roads, television studios, and rations for 4,000 elite personnel.</p>
             
@@ -1512,13 +1520,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2px;">
           <div class="block-header">
             <span class="block-ref">[5.7]–[5.8]</span>
             <span class="block-title">'Protect and Survive': The Home Office Whitewash &amp; The Inner Core Shelter (1980)</span>
           </div>
           <div class="block-workbook-question">What was the secret purpose of the York Cold War Bunker?</div>
-          <div class="block-prose" style="font-size: 7.9pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.1pt; line-height: 1.19;">
             
               <p class="prose-p">In the late 1970s and early 1980s, escalating Cold War tensions following the Soviet invasion of Afghanistan and the deployment of American Cruise missiles to Britain brought nuclear terror back to the center of British domestic life. In May 1980, the Thatcher government published a notorious 32-page public information booklet titled <strong>Protect and Survive</strong> (<strong>Source B</strong>).</p>
             
@@ -1529,13 +1537,13 @@
           </div>
         </div>
       
-        <div class="block-section" style="margin-bottom: 3.3px;">
+        <div class="block-section" style="margin-bottom: 2px;">
           <div class="block-header">
             <span class="block-ref">[5.9]–[5.10]</span>
             <span class="block-title">'Protest and Survive': E. P. Thompson, Nuclear Satire &amp; Greenham Common (1980–1983)</span>
           </div>
           <div class="block-workbook-question">Why did "Protect and Survive" spark public ridicule and protest?</div>
-          <div class="block-prose" style="font-size: 7.9pt; line-height: 1.31;">
+          <div class="block-prose" style="font-size: 8.1pt; line-height: 1.19;">
             
               <p class="prose-p">Official civil defense propaganda provoked an immediate, furious counter-reaction from British writers, artists, and peace activists. Celebrated historian <strong>E. P. Thompson</strong> published a scathing polemic titled <strong>Protest and Survive</strong> (<strong>Source E</strong>), selling hundreds of thousands of copies. Thompson tore apart the government’s claims, demonstrating that leaning wooden doors against a wall was useless against 3,000°C firestorms and lethal radiation, arguing that civil defense was a political deception designed to condition the public into accepting the inevitability of nuclear war.</p>
             

@@ -1215,12 +1215,18 @@ async function run() {
 
       const checkOverflow = () => {
         const footerTop = footer.getBoundingClientRect().top;
-        const allChildren = Array.from(
-          p.querySelectorAll('p, .block-header, .block-workbook-question'),
+        const allContentElements = Array.from(p.querySelectorAll('*')).filter(
+          (el) =>
+            el !== footer &&
+            !footer.contains(el) &&
+            !['SCRIPT', 'STYLE', 'LINK'].includes(el.tagName),
         );
-        const maxBottom = Math.max(...allChildren.map((el) => el.getBoundingClientRect().bottom));
-        const colOverflow =
-          cols.scrollHeight > body.clientHeight + 2 || cols.scrollWidth > cols.clientWidth + 5;
+        const maxBottom = Math.max(
+          ...allContentElements.map((el) => el.getBoundingClientRect().bottom),
+        );
+        const bodyDiff = body.scrollHeight - body.clientHeight;
+        const colDiff = cols.scrollHeight - cols.clientHeight;
+        const colOverflow = bodyDiff > 0 || colDiff > 0 || cols.scrollWidth > cols.clientWidth + 2;
         const footerCollision = maxBottom > footerTop - 8;
         return colOverflow || footerCollision;
       };

@@ -368,8 +368,35 @@ const PRODUCTION_CATALOG = [
     tier: 'GCSE',
     pillar: 'Workbook',
     unit: 'usa',
-    title: 'USA 1954–1975 Master Compendium Workbook (48 Pages)',
-    file: 'usa_mastery_pack_FULL.pdf',
+    title: 'The USA, 1954–1975: KT1 Booklet (Civil Rights 1954–60)',
+    file: 'usa_pupil_workbook_KT1.pdf',
+    stock: '100gsm Uncoated Handwriting Inner • 250gsm Matt Cover',
+    color: '4/1 Colour Cover / Mono Interior',
+  },
+  {
+    tier: 'GCSE',
+    pillar: 'Workbook',
+    unit: 'usa',
+    title: 'The USA, 1954–1975: KT2 Booklet (Black Power 1960–75)',
+    file: 'usa_pupil_workbook_KT2.pdf',
+    stock: '100gsm Uncoated Handwriting Inner • 250gsm Matt Cover',
+    color: '4/1 Colour Cover / Mono Interior',
+  },
+  {
+    tier: 'GCSE',
+    pillar: 'Workbook',
+    unit: 'usa',
+    title: 'The USA, 1954–1975: KT3 Booklet (Peace & Protest 1960–75)',
+    file: 'usa_pupil_workbook_KT3.pdf',
+    stock: '100gsm Uncoated Handwriting Inner • 250gsm Matt Cover',
+    color: '4/1 Colour Cover / Mono Interior',
+  },
+  {
+    tier: 'GCSE',
+    pillar: 'Workbook',
+    unit: 'usa',
+    title: 'The USA, 1954–1975: KT4 Booklet (Vietnam War 1954–75)',
+    file: 'usa_pupil_workbook_KT4.pdf',
     stock: '100gsm Uncoated Handwriting Inner • 250gsm Matt Cover',
     color: '4/1 Colour Cover / Mono Interior',
   },
@@ -498,8 +525,8 @@ const PRODUCTION_CATALOG = [
     tier: 'KS2',
     pillar: 'Retrieval',
     unit: 'ks2_ww2',
-    title: 'KS2: World War II Quiz Pack',
-    file: 'ks2_ww2_quiz_pack.pdf',
+    title: 'KS2: World War II Retrieval Companion',
+    file: 'KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf',
     stock: '100gsm Uncoated Inner • 250gsm Matt Cover',
     color: '4/1 Colour Cover / Mono Interior',
   },
@@ -776,7 +803,7 @@ async function compileManifest() {
   md += `| :--- | :---: | :---: | :--- | :--- | :--- | :--- |\n`;
   md += `| **Master Textbook** | A4 (${'210mm x 297mm'}) | A3 (${'420mm x 297mm'}) | 130gsm Silk Paper | 250gsm Matt Art Card | 4/4 Full Colour throughout | Saddle-stitch (2 spine wire staples) |\n`;
   md += `| **Pupil Workbook** | A4 (${'210mm x 297mm'}) | A3 (${'420mm x 297mm'}) | 100gsm Uncoated (Opaque, high ink absorption) | 250gsm Matt Art Card | 4/1 Colour Cover, Black & White Mono interior | Saddle-stitch (2 spine wire staples) |\n`;
-  md += `| **Retrieval Companion** | A5 (${'148mm x 210mm'}) | A4 (${'297mm x 210mm'}) | 100gsm Uncoated Paper | 250gsm Matt Art Card | 4/1 Colour Cover, Black & White Mono interior | Saddle-stitch (2 spine wire staples) |\n\n`;
+  md += `| **Retrieval Companion** | A4 (${'210mm x 297mm'}) | A3 (${'420mm x 297mm'}) | 100gsm Uncoated Paper | 250gsm Matt Art Card | 4/1 Colour Cover, Black & White Mono interior | Saddle-stitch (2 spine wire staples) |\n\n`;
   md += `---\n\n`;
   md += `## 📦 Complete Publication Inventory & Checksum Ledger\n\n`;
   md += `| Tier | Pillar | Title | Filename | Pages | Sheets | SHA-256 Checksum (First 16 chars) |\n`;

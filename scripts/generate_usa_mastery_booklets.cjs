@@ -143,7 +143,7 @@ const KT_DATA = {
         stem: 'How far do you agree with Interpretation 2 about the reasons for the success of the Montgomery Bus Boycott (1955–56)?',
         marks: 20,
         subMarks: '16 marks for essay + 4 marks for SPaG',
-        linesPage7: 26,
+        linesPage7: 24,
         linesPage8: 28,
         criteria: [
           'Grassroots economic mobilization (WPC, 300-car pool, walking 381 days, 70% revenue loss)',
@@ -159,7 +159,7 @@ const KT_DATA = {
         stem: 'Explain why the Brown v. Board of Education decision (1954) met with intense resistance in the Southern states.',
         marks: 12,
         stimulus: ['The Southern Manifesto (1956)', 'Orval Faubus at Little Rock (1957)'],
-        lines: 26,
+        lines: 24,
         vocabBank: [
           'Earl Warren unanimous 9-0 ruling',
           '"Separate is inherently unequal"',
@@ -445,7 +445,7 @@ const KT_DATA = {
         stem: 'How far do you agree with Interpretation 2 about the causes of the riots in northern and western cities between 1965 and 1967?',
         marks: 20,
         subMarks: '16 marks for essay + 4 marks for SPaG',
-        linesPage7: 26,
+        linesPage7: 24,
         linesPage8: 28,
         criteria: [
           'Socio-economic deprivation (Watts, ghetto slums, bank redlining, 30%+ youth unemployment)',
@@ -461,7 +461,7 @@ const KT_DATA = {
         stem: 'Explain why the Black Panther Party was formed in Oakland, California, in 1966.',
         marks: 12,
         stimulus: ['Bobby Seale and Huey Newton', 'Police brutality in Black neighbourhoods'],
-        lines: 26,
+        lines: 24,
         vocabBank: [
           'Oakland, California (Oct 1966)',
           'Ten-Point Programme',
@@ -763,7 +763,7 @@ const KT_DATA = {
         stem: 'Explain why the Vietcong and North Vietnamese Army were able to launch the Tet Offensive in January 1968.',
         marks: 12,
         stimulus: ['The Ho Chi Minh Trail', 'The siege at Khe Sanh'],
-        lines: 26,
+        lines: 23,
         vocabBank: [
           'Tet Lunar New Year holiday',
           '31 January 1968 assault',
@@ -3737,8 +3737,15 @@ function renderBookletHtml(ktKey, meta) {
 
     // Launch Puppeteer
     console.log('\n🖨️ Launching Puppeteer to compile print-perfect PDFs...');
+    const chromePath =
+      process.env.PUPPETEER_EXECUTABLE_PATH ||
+      (fs.existsSync('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe')
+        ? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+        : undefined);
+
     const browser = await puppeteer.launch({
       headless: 'new',
+      executablePath: chromePath,
       args: [
         '--allow-file-access-from-files',
         '--disable-web-security',
@@ -3797,37 +3804,22 @@ function renderBookletHtml(ktKey, meta) {
     };
 
     // =========================================================================
-    // MASTER COMPENDIUM PDF ONLY (STRICT THREE PILLARS STANDARD)
+    // 1. DISCRETE KEY TOPIC PUPIL WORKBOOKS (MATCHING WEIMAR & CME STANDARD)
+    // =========================================================================
+    for (const [ktKey, htmlPath] of Object.entries(generatedHtmlFiles)) {
+      const ktPdfPath = path.join(pdfsDir, `usa_pupil_workbook_${ktKey}.pdf`);
+      await renderPdf(htmlPath, ktPdfPath, `usa_pupil_workbook_${ktKey}.pdf (12 Pages)`);
+      fs.copyFileSync(ktPdfPath, path.join(globalPdfsDir, `usa_pupil_workbook_${ktKey}.pdf`));
+    }
+
+    // =========================================================================
+    // 2. COMBINED MASTER COMPENDIUM EXAM PACK (48 PAGES)
     // =========================================================================
     const fullPdfPath = path.join(pdfsDir, 'usa_mastery_pack_FULL.pdf');
-    await renderPdf(fullHtmlPath, fullPdfPath, 'usa_mastery_pack_FULL.pdf');
-
-    // Sync to public/pdfs/ root (Single Source of Truth)
+    await renderPdf(fullHtmlPath, fullPdfPath, 'usa_mastery_pack_FULL.pdf (48 Pages)');
     fs.copyFileSync(fullPdfPath, path.join(globalPdfsDir, 'usa_mastery_pack_FULL.pdf'));
 
-    // Clean up any old duplicate or split KT PDFs in pdfsDir and globalPdfsDir
-    [
-      'usa_pupil_workbook.pdf',
-      'usa_mastery_pack_KT1.pdf',
-      'usa_mastery_pack_KT2.pdf',
-      'usa_mastery_pack_KT3.pdf',
-      'usa_mastery_pack_KT4.pdf',
-    ].forEach((splitFile) => {
-      const p1 = path.join(pdfsDir, splitFile);
-      const p2 = path.join(globalPdfsDir, splitFile);
-      if (fs.existsSync(p1)) {
-        try {
-          fs.unlinkSync(p1);
-        } catch (e) {}
-      }
-      if (fs.existsSync(p2)) {
-        try {
-          fs.unlinkSync(p2);
-        } catch (e) {}
-      }
-    });
-
-    console.log(`   📋 Synced master PDF (usa_mastery_pack_FULL.pdf) to public/pdfs/ root`);
+    console.log(`   📋 Synced all 4 USA KT workbooks and master compendium to public/pdfs/ root`);
 
     await browser.close();
 

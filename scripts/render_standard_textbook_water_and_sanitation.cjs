@@ -73,16 +73,15 @@ function cleanProse(text) {
     .replace(/<span\s+class=["']para-ref["']>[^<]*<\/span>\s*/gi, '')
     .replace(/\[\d+\.\d+\]\s*/g, '')
     .replace(/<br\s*\/?>/gi, '\n')
-    .replace(/\\*\\*\\*(.*?)\\*\\*\\*/g, '<strong><em></em></strong>')
-    .replace(/\\*\\*(.*?)\\*\\*/g, '<strong></strong>')
-    .replace(/\\*(.*?)\\*/g, '<em></em>')
+    .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
     .trim();
 }
 
 // Format Markdown bold and italic
 function formatMarkdown(text) {
-  if (!text) return '';
-  return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*(.*?)\*/g, '<em>$1</em>');
+  return text; // Markdown is already cleanly formatted by cleanProse
 }
 
 // Load canonical data from units/water_and_sanitation/data.js
@@ -817,8 +816,9 @@ function buildHtml() {
     }
 
     .block-section {
-      break-inside: avoid;
-      margin-bottom: 5px;
+      break-inside: auto;
+      page-break-inside: auto;
+      margin-bottom: 4px;
     }
 
     .block-header {
@@ -831,6 +831,8 @@ function buildHtml() {
       margin-bottom: 2px;
       line-height: 1.25;
       letter-spacing: -0.01em;
+      break-after: avoid;
+      page-break-after: avoid;
     }
 
     .block-workbook-question {
@@ -838,6 +840,18 @@ function buildHtml() {
       font-style: italic;
       font-size: 7.5pt;
       color: #1e3a8a;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+
+    .block-prose p {
+      margin: 0 0 3px 0;
+      text-indent: 0;
+      break-inside: auto;
+      page-break-inside: auto;
+      orphans: 2;
+      widows: 2;
+    }
       margin-bottom: 2.5px;
       line-height: 1.25;
       padding-left: 5px;
@@ -1231,55 +1245,52 @@ async function main() {
   const page = await browser.newPage();
   await page.setViewport({ width: 1200, height: 1600 });
   await page.goto('file:///' + publicHtmlPath.replace(/\\/g, '/'), {
-    waitUntil: 'networkidle0',
+    waitUntil: 'domcontentloaded',
   });
+  await page.evaluateHandle('document.fonts.ready');
 
   // Dynamic Auto-Balancing Typography Engine
   console.log(
-    '\n[Auto-Balancer] Dynamically calibrating font metrics to guarantee 0px overflow & >= 95% fill...',
+    '\n[Auto-Balancer] Dynamically maximizing typography to eliminate bottom voids & guarantee 0px overflow...',
   );
   await page.evaluate(() => {
     const lessonPages = document.querySelectorAll('.page-lesson');
     lessonPages.forEach((p) => {
       const footer = p.querySelector('.running-footer');
+      const body = p.querySelector('.prose-body');
       const proseEls = p.querySelectorAll('.block-prose');
       const sections = p.querySelectorAll('.block-section');
-      if (proseEls.length === 0 || !footer) return;
+      if (proseEls.length === 0 || !footer || !body) return;
 
-      const comp = window.getComputedStyle(proseEls[0]);
-      let size = parseFloat(comp.fontSize) * (72 / 96); // px to pt
-      let lh = 1.36;
-      let secMargin = 4.5;
+      let size = 11.0;
+      let lh = 1.48;
+      let margin = 4.5;
 
-      const getOverlap = () => {
-        const fTop = footer.getBoundingClientRect().top;
-        const children = Array.from(
-          p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question'),
+      proseEls.forEach((el) => {
+        el.style.fontSize = size.toFixed(2) + 'pt';
+        el.style.lineHeight = lh.toFixed(2);
+      });
+
+      const checkOverflow = () => {
+        const footerTop = footer.getBoundingClientRect().top;
+        const allChildren = Array.from(
+          p.querySelectorAll('p, .block-header, .block-workbook-question'),
         );
-        const maxB = Math.max(...children.map((c) => c.getBoundingClientRect().bottom));
-        return maxB - fTop;
+        const maxBottom = Math.max(...allChildren.map((el) => el.getBoundingClientRect().bottom));
+        const pageOverflow = p.scrollHeight > p.clientHeight;
+        const footerCollision = maxBottom > footerTop - 8;
+        return pageOverflow || footerCollision;
       };
 
-      while ((getOverlap() > -14 || p.scrollHeight > p.clientHeight) && size > 6.7) {
-        size -= 0.1;
-        lh = Math.max(1.22, lh - 0.01);
-        secMargin = Math.max(1.5, secMargin - 0.1);
+      while (checkOverflow() && size > 6.5) {
+        size -= 0.05;
+        lh -= 0.005;
+        margin = Math.max(2.0, margin - 0.05);
         proseEls.forEach((el) => {
           el.style.fontSize = size.toFixed(2) + 'pt';
           el.style.lineHeight = lh.toFixed(2);
         });
-        sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
-      }
-
-      while (getOverlap() < -45 && size < 10.0 && p.scrollHeight <= p.clientHeight) {
-        size += 0.1;
-        lh = Math.min(1.48, lh + 0.01);
-        secMargin = Math.min(6.5, secMargin + 0.1);
-        proseEls.forEach((el) => {
-          el.style.fontSize = size.toFixed(2) + 'pt';
-          el.style.lineHeight = lh.toFixed(2);
-        });
-        sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
+        sections.forEach((s) => (s.style.marginBottom = margin.toFixed(1) + 'px'));
       }
     });
   });

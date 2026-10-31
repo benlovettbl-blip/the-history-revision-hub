@@ -252,33 +252,48 @@ const great_war_data = {
           term: 'Realpolitik',
           definition:
             'Ruthless, practical statecraft based on national self-interest, industrial power, and military force rather than moral ideals.',
+          syllables: 'Rea-lpo-litik',
+          phonetic: 'realpolitik',
+          tier: '3',
         },
         {
           term: 'Revanche',
           definition:
             'The deep-seated French national desire for vengeance against Germany and the recovery of Alsace-Lorraine following the 1871 defeat.',
+          syllables: 'Re-va-nche',
+          phonetic: 'revanche',
+          tier: '2',
         },
         {
           term: 'Zollverein',
           definition:
             'The Prussian-led customs union formed in 1834 that created economic unity among German states while excluding Austria.',
+          syllables: 'Zo-llve-rein',
+          phonetic: 'zollverein',
+          tier: '2',
         },
         {
           term: 'Alsace-Lorraine',
           definition:
             'Mineral-rich French border provinces containing major iron-ore deposits and textile industries annexed by Germany in 1871.',
+          syllables: 'A-lsa-ce-Lo-rrai-ne',
+          phonetic: 'alsace-lorraine',
+          tier: '2',
         },
         {
           term: 'Reinsurance Treaty',
           definition:
             'A secret 1887 defensive agreement between Germany and Russia pledging benevolent neutrality if either faced war, preventing encirclement.',
+          syllables: 'Rei-nsu-ra-nce Trea-ty',
+          phonetic: 'reinsurance treaty',
+          tier: '3',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Fragmented Chessboard, Zollverein & Prussian Power (1862–1866)',
-          text: '<span class="para-ref">[1.1]</span> Before 1871, Central Europe was deeply divided. In 1815, the Congress of Vienna organized the region into <strong>thirty-nine independent states (39 independent states)</strong>. Two rival powers competed for control. Catholic Austria ruled a vast, multinational empire. In contrast, Protestant <strong>Prussia</strong> was a disciplined military powerhouse, rich in coal, railways, and Krupp steel.<br><br><span class="para-ref">[1.2]</span> In 1834, Prussia launched the <strong>Zollverein</strong> (Customs Union). This agreement removed internal taxes between German states while deliberately locking out Austria. German trade boomed on Prussian railways. In 1862, <strong>Otto von Bismarck</strong> became Prussian Minister-President. Bismarck bypassed parliament and declared his ruthless philosophy: <em>"The great questions of the day will not be decided by speeches and majority votes... but by iron and blood."</em> Practicing pure <em>Realpolitik</em>, Bismarck led Prussia to swift military victories over Denmark in 1864 and Austria in 1866.',
+          text: '<span class="para-ref">[1.1]</span> Before 1871, Central Europe was deeply divided. In 1815, the Congress of Vienna organized the region into **thirty-nine independent states (39 independent states)**. Two rival powers competed for control. Catholic Austria ruled a vast, multinational empire. In contrast, Protestant **Prussia** was a disciplined military powerhouse, rich in coal, railways, and Krupp steel.<br><br><span class="para-ref">[1.2]</span> In 1834, Prussia launched the **Zollverein** (Customs Union). This agreement removed internal taxes between German states while deliberately locking out Austria. German trade boomed on Prussian railways. In 1862, **Otto von Bismarck** became Prussian Minister-President. Bismarck bypassed parliament and declared his ruthless philosophy: <em>"The great questions of the day will not be decided by speeches and majority votes... but by iron and blood."</em> Practicing pure <em>Realpolitik</em>, Bismarck led Prussia to swift military victories over Denmark in 1864 and Austria in 1866.',
           image: '/images/otto_von_bismarck_portrait.jpg',
           image_alt:
             'Archival oil portrait of Prince Otto von Bismarck, architect of German unification',
@@ -358,7 +373,7 @@ const great_war_data = {
         {
           act: 2,
           title: 'The Sedan Debacle & Proclamation at Versailles (1870–1871)',
-          text: '<span class="para-ref">[1.2]</span> To unite the southern German states with Prussia, Bismarck needed a common enemy. In July 1870, he edited the famous <strong>Ems Telegram</strong> to make it look like King Wilhelm I had insulted the French ambassador. Furious, Emperor Napoleon III declared war. France was completely unprepared. Prussian railways and heavy Krupp artillery crushed French defenses. On 1 September 1870, German forces encircled the French army at the <strong>Battle of Sedan</strong>, capturing Napoleon III and 104,000 soldiers.<br><br><span class="para-ref">[1.3]</span> The French government refused to surrender, triggering the brutal <strong>Siege of Paris</strong>. Starving citizens survived by eating horses and zoo animals. On <strong>18 January 1871</strong>, Bismarck delivered the ultimate humiliation. Inside the famous <strong>Hall of Mirrors at the Palace of Versailles</strong>, German princes proclaimed King Wilhelm I the first German Emperor (Kaiser). The German Empire was forged through war.',
+          text: '<span class="para-ref">[1.2]</span> To unite the southern German states with Prussia, Bismarck needed a common enemy. In July 1870, he edited the famous **Ems Telegram** to make it look like King Wilhelm I had insulted the French ambassador. Furious, Emperor Napoleon III declared war. France was completely unprepared. Prussian railways and heavy Krupp artillery crushed French defenses. On 1 September 1870, German forces encircled the French army at the **Battle of Sedan**, capturing Napoleon III and 104,000 soldiers.<br><br><span class="para-ref">[1.3]</span> The French government refused to surrender, triggering the brutal **Siege of Paris**. Starving citizens survived by eating horses and zoo animals. On **18 January 1871**, Bismarck delivered the ultimate humiliation. Inside the famous **Hall of Mirrors at the Palace of Versailles**, German princes proclaimed King Wilhelm I the first German Emperor (Kaiser). The German Empire was forged through war.',
           source: {
             letter: 'B',
             type: 'visual',
@@ -437,7 +452,7 @@ const great_war_data = {
         {
           act: 3,
           title: 'The Treaty of Frankfurt & Annexation of Alsace-Lorraine (May 1871)',
-          text: '<span class="para-ref">[1.3]</span> In May 1871, the two nations signed the <strong>Treaty of Frankfurt</strong>. German leaders designed the treaty to crush French military power. France had to pay a massive fine of <strong>five billion gold francs (5 billion gold francs)</strong>. German occupation troops remained on French soil until every centime was paid. Even worse was the territorial loss: Germany seized the border provinces of <strong>Alsace</strong> and <strong>Lorraine</strong>.<br><br><span class="para-ref">[1.4]</span> This annexation tore away 1.6 million French citizens and vital iron-ore basins. The ancient fortress city of Metz and the cathedral city of Strasbourg became fortified German strongholds. Overnight, forty-one million people and the Krupp arms foundries merged into a giant military empire. A united Germany now stood at the heart of Europe.',
+          text: '<span class="para-ref">[1.3]</span> In May 1871, the two nations signed the **Treaty of Frankfurt**. German leaders designed the treaty to crush French military power. France had to pay a massive fine of **five billion gold francs (5 billion gold francs)**. German occupation troops remained on French soil until every centime was paid. Even worse was the territorial loss: Germany seized the border provinces of **Alsace** and **Lorraine**.<br><br><span class="para-ref">[1.4]</span> This annexation tore away 1.6 million French citizens and vital iron-ore basins. The ancient fortress city of Metz and the cathedral city of Strasbourg became fortified German strongholds. Overnight, forty-one million people and the Krupp arms foundries merged into a giant military empire. A united Germany now stood at the heart of Europe.',
           source: {
             letter: 'C',
             type: 'written',
@@ -515,7 +530,7 @@ const great_war_data = {
         {
           act: 4,
           title: 'French Revanche & The Cult of the Lost Provinces (1871–1889)',
-          text: '<span class="para-ref">[1.4]</span> Losing Alsace-Lorraine deeply scarred the French nation for over forty years. In Paris, the statue of Strasbourg on the Place de la Concorde was draped in black mourning cloth. French schools taught generations of boys that their greatest duty was <strong>Revanche</strong> (revenge)—the recovery of their lost land.<br><br><span class="para-ref">[1.5]</span> In classrooms, wall maps showed Alsace-Lorraine shaded pitch-black as the <em>"tache noire"</em> (black spot). France introduced compulsory military training, and children practiced military marching in school drills. As French statesman Léon Gambetta declared: <em>"Think of it always; speak of it never."</em> No French politician could ever make peace with Berlin while German troops occupied Strasbourg and Metz.',
+          text: '<span class="para-ref">[1.4]</span> Losing Alsace-Lorraine deeply scarred the French nation for over forty years. In Paris, the statue of Strasbourg on the Place de la Concorde was draped in black mourning cloth. French schools taught generations of boys that their greatest duty was **Revanche** (revenge)—the recovery of their lost land.<br><br><span class="para-ref">[1.5]</span> In classrooms, wall maps showed Alsace-Lorraine shaded pitch-black as the <em>"tache noire"</em> (black spot). France introduced compulsory military training, and children practiced military marching in school drills. As French statesman Léon Gambetta declared: <em>"Think of it always; speak of it never."</em> No French politician could ever make peace with Berlin while German troops occupied Strasbourg and Metz.',
           image: '/units/great_war/assets/alsace_lorraine_1871_map.png',
           image_alt:
             'Archival cartographic map detailing the German annexation of Alsace and Lorraine in 1871',
@@ -597,7 +612,7 @@ const great_war_data = {
         {
           act: 5,
           title: 'Bismarckian Isolation, The Reinsurance Treaty & Two-Front Dread (1871–1890)',
-          text: '<span class="para-ref">[1.5]</span> British statesman <strong>Benjamin Disraeli</strong> warned Parliament that German unification had destroyed the balance of power. Bismarck knew France would never forgive its defeat. For the next twenty years, Bismarck had one central goal: <strong>keep France diplomatically isolated to protect German peace</strong>.<br><br><span class="para-ref">[1.6]</span> Germany dreaded a <strong>war on two fronts (encirclement)</strong>, attacked by France from the west and Russia from the east. To prevent this, Bismarck built a network of defensive alliances. His masterpiece was the secret 1887 <strong>Reinsurance Treaty</strong> with Russia, promising neutrality if either empire faced war. Bismarck\'s diplomacy kept Europe peaceful. However, in 1888, the impetuous young <strong>Kaiser Wilhelm II</strong> took power. In 1890, Wilhelm fired Bismarck and let the Russian treaty lapse. Germany had stepped onto the path toward dangerous two-front encirclement.',
+          text: '<span class="para-ref">[1.5]</span> British statesman **Benjamin Disraeli** warned Parliament that German unification had destroyed the balance of power. Bismarck knew France would never forgive its defeat. For the next twenty years, Bismarck had one central goal: **keep France diplomatically isolated to protect German peace**.<br><br><span class="para-ref">[1.6]</span> Germany dreaded a **war on two fronts (encirclement)**, attacked by France from the west and Russia from the east. To prevent this, Bismarck built a network of defensive alliances. His masterpiece was the secret 1887 **Reinsurance Treaty** with Russia, promising neutrality if either empire faced war. Bismarck\'s diplomacy kept Europe peaceful. However, in 1888, the impetuous young **Kaiser Wilhelm II** took power. In 1890, Wilhelm fired Bismarck and let the Russian treaty lapse. Germany had stepped onto the path toward dangerous two-front encirclement.',
           source: {
             letter: 'E',
             type: 'written',
@@ -1369,33 +1384,48 @@ const great_war_data = {
           term: 'Weltpolitik',
           definition:
             'Kaiser Wilhelm II’s aggressive "World Policy" aiming to transform Germany into a global superpower with overseas colonies and a battlefleet.',
+          syllables: 'We-ltpo-litik',
+          phonetic: 'weltpolitik',
+          tier: '3',
         },
         {
           term: 'Gunboat Diplomacy',
           definition:
             'The pursuit of foreign policy objectives through conspicuous displays of naval military force to intimidate rivals.',
+          syllables: 'Gu-nboat Di-plo-macy',
+          phonetic: 'gunboat diplomacy',
+          tier: '2',
         },
         {
           term: 'Entente Cordiale',
           definition:
             'The 1904 diplomatic agreement between Great Britain and France resolving colonial disputes and inaugurating diplomatic cooperation.',
+          syllables: 'E-ntente Co-rdia-le',
+          phonetic: 'entente cordiale',
+          tier: '2',
         },
         {
           term: 'Algeciras Conference',
           definition:
             'The 1906 international summit where twelve nations backed France in Morocco, leaving Germany diplomatically isolated.',
+          syllables: 'A-lge-ciras Co-nfe-re-nce',
+          phonetic: 'algeciras conference',
+          tier: '2',
         },
         {
           term: 'Mansion House Speech',
           definition:
             'A 1911 public speech by British Chancellor David Lloyd George warning Germany that Britain would not allow France to be bullied.',
+          syllables: 'Ma-nsion Hou-se Speech',
+          phonetic: 'mansion house speech',
+          tier: '3',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Scramble for Africa & The Berlin Conference (1884–1885)',
-          text: '<span class="para-ref">[2.1]</span> Between 1881 and 1914, European powers raced to conquer Africa in the <strong>Scramble for Africa</strong>. Factories in Europe demanded cheap raw materials—rubber, copper, cotton, and palm oil. Rulers also wanted new trade markets and imperial prestige. In 1870, Europeans controlled under ten percent of Africa; by 1914, they ruled ninety percent.<br><br><span class="para-ref">[2.2]</span> To avoid war among European powers, Bismarck organized the <strong>Berlin Conference (1884–1885)</strong>. Fourteen nations met to agree rules for carving up the continent. They agreed the rule of <strong>effective occupation</strong>: countries had to set up physical offices, soldiers, and administration before claiming land. European diplomats drew straight borders across maps, completely ignoring African languages, cultures, and historic tribal kingdoms.',
+          text: '<span class="para-ref">[2.1]</span> Between 1881 and 1914, European powers raced to conquer Africa in the **Scramble for Africa**. Factories in Europe demanded cheap raw materials—rubber, copper, cotton, and palm oil. Rulers also wanted new trade markets and imperial prestige. In 1870, Europeans controlled under ten percent of Africa; by 1914, they ruled ninety percent.<br><br><span class="para-ref">[2.2]</span> To avoid war among European powers, Bismarck organized the **Berlin Conference (1884–1885)**. Fourteen nations met to agree rules for carving up the continent. They agreed the rule of **effective occupation**: countries had to set up physical offices, soldiers, and administration before claiming land. European diplomats drew straight borders across maps, completely ignoring African languages, cultures, and historic tribal kingdoms.',
           image: '/units/great_war/assets/map_africa_1914.png',
           image_alt:
             'Archival geopolitical map showing the partition of Africa among European imperial powers by 1914',
@@ -1479,7 +1509,7 @@ const great_war_data = {
         {
           act: 2,
           title: 'Kaiser Wilhelm II,"Weltpolitik" & "A Place in the Sun" (1890–1897)',
-          text: '<span class="para-ref">[2.2]</span> Bismarck insisted Germany was a satisfied European power with no need for distant colonies. Pointing to a map, he declared: <em>"Here lies Russia, and here lies France, and we are in the middle; that is my map of Africa."</em> But in 1888, the young, ambitious <strong>Kaiser Wilhelm II</strong> took the German throne. Wilhelm wanted personal glory and dismissed Bismarck in 1890, an event dubbed "Dropping the Pilot."<br><br><span class="para-ref">[2.3]</span> The Kaiser demanded that Germany become a global superpower. In 1897, Bernhard von Bülow announced that Germany demanded its <strong>"place in the sun" (Platz an der Sonne)</strong>. This aggressive imperial policy was called <strong>Weltpolitik</strong> ("World Policy"). Because Britain and France already owned the richest territories, Wilhelm decided to build a mighty battlefleet, putting Germany on a direct collision course with Britain.',
+          text: '<span class="para-ref">[2.2]</span> Bismarck insisted Germany was a satisfied European power with no need for distant colonies. Pointing to a map, he declared: <em>"Here lies Russia, and here lies France, and we are in the middle; that is my map of Africa."</em> But in 1888, the young, ambitious **Kaiser Wilhelm II** took the German throne. Wilhelm wanted personal glory and dismissed Bismarck in 1890, an event dubbed "Dropping the Pilot."<br><br><span class="para-ref">[2.3]</span> The Kaiser demanded that Germany become a global superpower. In 1897, Bernhard von Bülow announced that Germany demanded its **"place in the sun" (Platz an der Sonne)**. This aggressive imperial policy was called **Weltpolitik** ("World Policy"). Because Britain and France already owned the richest territories, Wilhelm decided to build a mighty battlefleet, putting Germany on a direct collision course with Britain.',
           source: {
             letter: 'B',
             type: 'written',
@@ -1558,7 +1588,7 @@ const great_war_data = {
         {
           act: 3,
           title: 'The First Moroccan Crisis & The Landing at Tangier (March 1905)',
-          text: '<span class="para-ref">[2.3]</span> In April 1904, alarmed by rising German power, Britain and France signed the <strong>Entente Cordiale</strong> ("Friendly Understanding"). This was a colonial pact rather than a military alliance. France accepted British control of Egypt, while Britain accepted French influence over the Sultanate of <strong>Morocco</strong>. German leaders feared this new friendship would surround them.<br><br><span class="para-ref">[2.4]</span> On 31 March 1905, Kaiser Wilhelm II triggered the <strong>First Moroccan Crisis</strong>. Arriving in the Moroccan port of <strong>Tangier</strong> on a white horse, Wilhelm announced his support for the Sultan\'s independence. He challenged French control and demanded equal German trading rights. The Kaiser gambled that France would back down and that Britain would not support Paris. His gamble failed completely.',
+          text: '<span class="para-ref">[2.3]</span> In April 1904, alarmed by rising German power, Britain and France signed the **Entente Cordiale** ("Friendly Understanding"). This was a colonial pact rather than a military alliance. France accepted British control of Egypt, while Britain accepted French influence over the Sultanate of **Morocco**. German leaders feared this new friendship would surround them.<br><br><span class="para-ref">[2.4]</span> On 31 March 1905, Kaiser Wilhelm II triggered the **First Moroccan Crisis**. Arriving in the Moroccan port of **Tangier** on a white horse, Wilhelm announced his support for the Sultan\'s independence. He challenged French control and demanded equal German trading rights. The Kaiser gambled that France would back down and that Britain would not support Paris. His gamble failed completely.',
           source: {
             letter: 'C',
             type: 'visual',
@@ -1635,7 +1665,7 @@ const great_war_data = {
         {
           act: 4,
           title: 'The Algeciras Conference & German Diplomatic Isolation (1906)',
-          text: '<span class="para-ref">[2.4]</span> To resolve the Moroccan standoff, Germany demanded an international conference, expecting global support. In January 1906, diplomats met at the <strong>Algeciras Conference</strong> in southern Spain. The meeting ended in complete humiliation for Germany.<br><br><span class="para-ref">[2.5]</span> Instead of splitting Britain and France, German pressure pushed them closer together. British Foreign Secretary Sir Edward Grey firmly backed France. Russia, Italy, Spain, and the United States all voted to give France control over Moroccan police and banking. Only Austria-Hungary voted alongside Germany. Kaiser Wilhelm II left Algeciras furious. He was now convinced that the Great Powers were conspiring to encircle Germany, a paranoid fear known as <strong>Einkreisung</strong> (encirclement).',
+          text: '<span class="para-ref">[2.4]</span> To resolve the Moroccan standoff, Germany demanded an international conference, expecting global support. In January 1906, diplomats met at the **Algeciras Conference** in southern Spain. The meeting ended in complete humiliation for Germany.<br><br><span class="para-ref">[2.5]</span> Instead of splitting Britain and France, German pressure pushed them closer together. British Foreign Secretary Sir Edward Grey firmly backed France. Russia, Italy, Spain, and the United States all voted to give France control over Moroccan police and banking. Only Austria-Hungary voted alongside Germany. Kaiser Wilhelm II left Algeciras furious. He was now convinced that the Great Powers were conspiring to encircle Germany, a paranoid fear known as **Einkreisung** (encirclement).',
           image: '/units/great_war/assets/sms_panther_agadir_1911.jpg',
           image_alt:
             'Archival photograph of the German Imperial Navy gunboat SMS Panther deployed to Agadir harbour in July 1911',
@@ -1719,7 +1749,7 @@ const great_war_data = {
         {
           act: 5,
           title: 'The Second Moroccan Crisis: The Panther at Agadir & Mansion House (July 1911)',
-          text: '<span class="para-ref">[2.5]</span> In spring 1911, Moroccan tribes rebelled against the Sultan in Fez. France sent troops to restore order. Accusing France of breaking the Algeciras agreement, Germany used <strong>gunboat diplomacy</strong>. On <strong>1 July 1911</strong>, Germany sent the gunboat <strong>SMS Panther</strong> to the Atlantic port of <strong>Agadir</strong>, trying to force France into handing over the French Congo.<br><br><span class="para-ref">[2.6]</span> The gunboat provoked outrage in London because Agadir lay near vital British shipping routes. On 21 July 1911, British Chancellor <strong>David Lloyd George</strong> gave his famous <strong>Mansion House Speech</strong>. He warned that Britain would fight rather than accept peace through national humiliation. Germany backed down and accepted a small piece of the Congo. The crisis backfired on Germany: Britain and France were pushed into secret joint military talks to defend against a German invasion.',
+          text: '<span class="para-ref">[2.5]</span> In spring 1911, Moroccan tribes rebelled against the Sultan in Fez. France sent troops to restore order. Accusing France of breaking the Algeciras agreement, Germany used **gunboat diplomacy**. On **1 July 1911**, Germany sent the gunboat **SMS Panther** to the Atlantic port of **Agadir**, trying to force France into handing over the French Congo.<br><br><span class="para-ref">[2.6]</span> The gunboat provoked outrage in London because Agadir lay near vital British shipping routes. On 21 July 1911, British Chancellor **David Lloyd George** gave his famous **Mansion House Speech**. He warned that Britain would fight rather than accept peace through national humiliation. Germany backed down and accepted a small piece of the Congo. The crisis backfired on Germany: Britain and France were pushed into secret joint military talks to defend against a German invasion.',
           source: {
             letter: 'E',
             type: 'written',
@@ -2505,33 +2535,48 @@ const great_war_data = {
           term: 'Two-Power Standard',
           definition:
             'The official British naval doctrine established in 1889 requiring the Royal Navy to maintain a battleship fleet equal to the next two largest navies combined.',
+          syllables: 'Two-Po-wer Sta-ndard',
+          phonetic: 'two-power standard',
+          tier: '3',
         },
         {
           term: 'Risk Theory (Risikotheorie)',
           definition:
             'Admiral von Tirpitz’s strategic calculation that building a formidable German battlefleet in the North Sea would deter Britain from risking war.',
+          syllables: 'Risk Theo-ry (Ri-siko-theo-rie)',
+          phonetic: 'risk theory (risikotheorie)',
+          tier: '3',
         },
         {
           term: 'Dreadnought',
           definition:
             'A revolutionary class of battleship introduced by Britain in 1906, powered by steam turbines and armed exclusively with heavy 12-inch guns.',
+          syllables: 'dread-nought',
+          phonetic: 'ˈdrɛdnɔːt',
+          tier: '3',
         },
         {
           term: 'Naval Laws',
           definition:
             'A series of German parliamentary statutes passed in 1898 and 1900 authorizing the massive construction of the High Seas Fleet.',
+          syllables: 'Na-val Laws',
+          phonetic: 'naval laws',
+          tier: '3',
         },
         {
           term: 'Haldane Mission',
           definition:
             'A failed 1912 diplomatic mission to Berlin by British War Secretary Lord Haldane seeking a naval building truce.',
+          syllables: 'Ha-lda-ne Mi-ssion',
+          phonetic: 'haldane mission',
+          tier: '3',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Two-Power Standard & British Maritime Survival (1889–1897)',
-          text: '<span class="para-ref">[3.1]</span> For Great Britain, naval supremacy was essential for national survival. As an island nation, Britain could not feed its people without ocean imports. By 1900, Britain imported four-fifths of its wheat and meat on merchant ships. If enemy battleships cut these supply routes, Britain would starve within six weeks. The Royal Navy also defended a global empire of four hundred million subjects.<br><br><span class="para-ref">[3.2]</span> In the <strong>Naval Defence Act of 1889</strong>, Britain established the <strong>Two-Power Standard</strong>. This law required the Royal Navy to be as large as the world\'s next two biggest navies combined (then France and Russia). British leaders believed that unmatched sea power was the best way to prevent continental wars.',
+          text: '<span class="para-ref">[3.1]</span> For Great Britain, naval supremacy was essential for national survival. As an island nation, Britain could not feed its people without ocean imports. By 1900, Britain imported four-fifths of its wheat and meat on merchant ships. If enemy battleships cut these supply routes, Britain would starve within six weeks. The Royal Navy also defended a global empire of four hundred million subjects.<br><br><span class="para-ref">[3.2]</span> In the **Naval Defence Act of 1889**, Britain established the **Two-Power Standard**. This law required the Royal Navy to be as large as the world\'s next two biggest navies combined (then France and Russia). British leaders believed that unmatched sea power was the best way to prevent continental wars.',
           source: {
             letter: 'A',
             id: 'gw_l3_src_a',
@@ -2596,7 +2641,7 @@ const great_war_data = {
         {
           act: 2,
           title: 'Admiral von Tirpitz, German Naval Laws & "Risk Theory" (1898–1900)',
-          text: '<span class="para-ref">[3.2]</span> In 1897, Kaiser Wilhelm II appointed <strong>Admiral Alfred von Tirpitz</strong> to run the Imperial Navy. Tirpitz believed Germany could not become a world empire without a powerful battlefleet. In 1898 and 1900, Tirpitz passed the famous <strong>German Naval Laws</strong> through the Reichstag, funding dozens of battleships for the new <strong>High Seas Fleet</strong>.<br><br><span class="para-ref">[3.3]</span> Tirpitz justified this cost using his <strong>Risk Theory (Risikotheorie)</strong>. Britain\'s navy was scattered around the globe protecting colonies. Germany would instead concentrate its fleet across the North Sea in ports like Wilhelmshaven and Kiel. Tirpitz argued that Britain would not risk a battle because heavy losses would ruin its naval supremacy over rivals. Tirpitz expected Britain to give in to German colonial demands. It was a disastrous miscalculation.',
+          text: '<span class="para-ref">[3.2]</span> In 1897, Kaiser Wilhelm II appointed **Admiral Alfred von Tirpitz** to run the Imperial Navy. Tirpitz believed Germany could not become a world empire without a powerful battlefleet. In 1898 and 1900, Tirpitz passed the famous **German Naval Laws** through the Reichstag, funding dozens of battleships for the new **High Seas Fleet**.<br><br><span class="para-ref">[3.3]</span> Tirpitz justified this cost using his **Risk Theory (Risikotheorie)**. Britain\'s navy was scattered around the globe protecting colonies. Germany would instead concentrate its fleet across the North Sea in ports like Wilhelmshaven and Kiel. Tirpitz argued that Britain would not risk a battle because heavy losses would ruin its naval supremacy over rivals. Tirpitz expected Britain to give in to German colonial demands. It was a disastrous miscalculation.',
           image: '/units/great_war/assets/was_dreadnought_blueprint.png',
           image_alt: 'Technical blueprint and cross-section schematic of HMS Dreadnought (1906)',
           caption:
@@ -2678,7 +2723,7 @@ const great_war_data = {
         {
           act: 3,
           title: 'The Dreadnought Revolution: All-Big-Gun Technology (February 1906)',
-          text: '<span class="para-ref">[3.3]</span> Britain met the German challenge under First Sea Lord <strong>Admiral Sir John "Jackie" Fisher</strong>. Fisher recognized that older warships with mixed gun sizes were outdated. Building in secret at Portsmouth Dockyard, Fisher launched <strong>HMS Dreadnought</strong> in February 1906.<br><br><span class="para-ref">[3.4]</span> <em>Dreadnought</em> transformed naval warfare. It was the world\'s first "all-big-gun" battleship, armed with ten 12-inch heavy guns that fired 850-pound shells over eight miles. Powered by modern steam turbines, it cruised at 21 knots, faster than any battleship afloat. However, <em>Dreadnought</em> created a serious problem for Britain. By making older ships obsolete, it erased Britain\'s big lead of fifty pre-dreadnoughts to Germany\'s twenty. The naval race was reset to zero: <strong>Britain 1, Germany 0</strong>. Germany could now build dreadnoughts of its own.',
+          text: '<span class="para-ref">[3.3]</span> Britain met the German challenge under First Sea Lord **Admiral Sir John "Jackie" Fisher**. Fisher recognized that older warships with mixed gun sizes were outdated. Building in secret at Portsmouth Dockyard, Fisher launched **HMS Dreadnought** in February 1906.<br><br><span class="para-ref">[3.4]</span> <em>Dreadnought</em> transformed naval warfare. It was the world\'s first "all-big-gun" battleship, armed with ten 12-inch heavy guns that fired 850-pound shells over eight miles. Powered by modern steam turbines, it cruised at 21 knots, faster than any battleship afloat. However, <em>Dreadnought</em> created a serious problem for Britain. By making older ships obsolete, it erased Britain\'s big lead of fifty pre-dreadnoughts to Germany\'s twenty. The naval race was reset to zero: **Britain 1, Germany 0**. Germany could now build dreadnoughts of its own.',
           source: {
             letter: 'C',
             type: 'written',
@@ -2755,7 +2800,7 @@ const great_war_data = {
         {
           act: 4,
           title: 'The 1909 Naval Panic: "We Want Eight and We Won\'t Wait!" (1909)',
-          text: '<span class="para-ref">[3.4]</span> Between 1906 and 1908, Germany accelerated naval building, constructing four dreadnoughts each year. In late 1908, British intelligence discovered German shipyards were secretly stockpiling steel to build even faster. In January 1909, public alarm erupted in the <strong>1909 Naval Panic</strong>.<br><br><span class="para-ref">[3.5]</span> Prime Minister H.H. Asquith and Chancellor David Lloyd George had hoped to spend money on social reforms like pensions. However, newspapers, the public, and politicians launched a fierce campaign demanding more warships: <em>"We want eight and we won\'t wait!"</em> The government yielded to public pressure. Parliament voted to build eight super-dreadnoughts in a single year, comfortably out-building Germany but placing massive tax burdens on both countries.',
+          text: '<span class="para-ref">[3.4]</span> Between 1906 and 1908, Germany accelerated naval building, constructing four dreadnoughts each year. In late 1908, British intelligence discovered German shipyards were secretly stockpiling steel to build even faster. In January 1909, public alarm erupted in the **1909 Naval Panic**.<br><br><span class="para-ref">[3.5]</span> Prime Minister H.H. Asquith and Chancellor David Lloyd George had hoped to spend money on social reforms like pensions. However, newspapers, the public, and politicians launched a fierce campaign demanding more warships: <em>"We want eight and we won\'t wait!"</em> The government yielded to public pressure. Parliament voted to build eight super-dreadnoughts in a single year, comfortably out-building Germany but placing massive tax burdens on both countries.',
           image: '/images/hms_dreadnought_1906.jpg',
           image_alt:
             'Archival photograph of the Royal Navy battleship HMS Dreadnought underway at sea (1906)',
@@ -2839,7 +2884,7 @@ const great_war_data = {
         {
           act: 5,
           title: 'The Haldane Mission Failure & Strategic Redeployment (1912–1914)',
-          text: '<span class="para-ref">[3.5]</span> By 1912, the crushing cost of the naval race led Britain to seek a truce. British War Secretary <strong>Lord Haldane</strong> traveled to Berlin to propose a "naval holiday." Haldane offered to slow down dreadnought construction if Germany restricted its fleet. However, the Kaiser insisted that <strong>Britain must pledge strict neutrality in any future European war</strong>.<br><br><span class="para-ref">[3.6]</span> Britain refused because this pledge would allow Germany to crush France. The mission collapsed. In response, First Lord of the Admiralty <strong>Winston Churchill</strong> reorganized British naval defense. Britain pulled its main battleships from the Mediterranean Sea and placed sixty percent of the Royal Navy in the North Sea. Under a new agreement, the French navy guarded the Mediterranean, while Britain guarded the French coast. Germany had lost the naval race, but the rivalry permanently wrecked relations between London and Berlin.',
+          text: '<span class="para-ref">[3.5]</span> By 1912, the crushing cost of the naval race led Britain to seek a truce. British War Secretary **Lord Haldane** traveled to Berlin to propose a "naval holiday." Haldane offered to slow down dreadnought construction if Germany restricted its fleet. However, the Kaiser insisted that **Britain must pledge strict neutrality in any future European war**.<br><br><span class="para-ref">[3.6]</span> Britain refused because this pledge would allow Germany to crush France. The mission collapsed. In response, First Lord of the Admiralty **Winston Churchill** reorganized British naval defense. Britain pulled its main battleships from the Mediterranean Sea and placed sixty percent of the Royal Navy in the North Sea. Under a new agreement, the French navy guarded the Mediterranean, while Britain guarded the French coast. Germany had lost the naval race, but the rivalry permanently wrecked relations between London and Berlin.',
           source: {
             letter: 'E',
             type: 'written',
@@ -3616,33 +3661,48 @@ const great_war_data = {
           term: 'Triple Alliance',
           definition:
             'The defensive military treaty signed in 1882 uniting Germany, Austria-Hungary, and Italy against rival Great Powers.',
+          syllables: 'tri-ple al-li-ance',
+          phonetic: 'ˈtrɪpl əˈlaɪəns',
+          tier: '3',
         },
         {
           term: 'Triple Entente',
           definition:
             'The diplomatic alignment of Great Britain, France, and Russia completed in 1907 to counterbalance the Triple Alliance.',
+          syllables: 'tri-ple en-tente',
+          phonetic: 'ˈtrɪpl ɒnˈtɒnt',
+          tier: '3',
         },
         {
           term: 'Balkan Powder Keg',
           definition:
             'The volatile south-eastern region of Europe where collapsing Ottoman authority and competing nationalisms created constant threat of war.',
+          syllables: 'Ba-lkan Po-wder Keg',
+          phonetic: 'balkan powder keg',
+          tier: '3',
         },
         {
           term: 'Pan-Slavism',
           definition:
             'A nationalist movement aiming to unite all Slavic peoples of eastern and south-eastern Europe under Russian protection.',
+          syllables: 'Pan-Sla-vism',
+          phonetic: 'pan-slavism',
+          tier: '2',
         },
         {
           term: 'Annexation',
           definition:
             'The formal, unilateral seizure and incorporation of a foreign territory into a sovereign state without the consent of its population.',
+          syllables: 'A-nne-xation',
+          phonetic: 'annexation',
+          tier: '2',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Central European Bloc: Dual Alliance & Triple Alliance (1879–1882)',
-          text: '<span class="para-ref">[4.1]</span> In October 1879, Chancellor Otto von Bismarck acted to prevent a hostile coalition between France and Russia. He negotiated the <strong>Dual Alliance</strong> with Austria-Hungary. Both empires promised mutual military support if attacked by Russia, and neutrality if attacked by another power. In 1882, Italy joined after losing Tunisia to France, creating the <strong>Triple Alliance</strong>.<br><br><span class="para-ref">[4.2]</span> Bismarck designed the alliance to defend Central Europe and deter foreign attacks. However, it had a dangerous flaw. The treaty tied Germany\'s military power to the weak, multi-ethnic Austro-Hungarian Empire. Ruled by the aging Emperor Franz Joseph, Austria-Hungary was fracturing under intense nationalist unrest.',
+          text: '<span class="para-ref">[4.1]</span> In October 1879, Chancellor Otto von Bismarck acted to prevent a hostile coalition between France and Russia. He negotiated the **Dual Alliance** with Austria-Hungary. Both empires promised mutual military support if attacked by Russia, and neutrality if attacked by another power. In 1882, Italy joined after losing Tunisia to France, creating the **Triple Alliance**.<br><br><span class="para-ref">[4.2]</span> Bismarck designed the alliance to defend Central Europe and deter foreign attacks. However, it had a dangerous flaw. The treaty tied Germany\'s military power to the weak, multi-ethnic Austro-Hungarian Empire. Ruled by the aging Emperor Franz Joseph, Austria-Hungary was fracturing under intense nationalist unrest.',
           source: {
             letter: 'A',
             type: 'written',
@@ -3719,7 +3779,7 @@ const great_war_data = {
         {
           act: 2,
           title: 'The Counter-Alliance: Franco-Russian Alliance & Triple Entente (1894–1907)',
-          text: '<span class="para-ref">[4.2]</span> In 1890, Kaiser Wilhelm II allowed Germany\'s secret Reinsurance Treaty with Russia to lapse. Needing money to build the Trans-Siberian Railway, Russia turned to France. In 1894, the two nations signed the <strong>Franco-Russian Military Alliance</strong>, promising mutual defense against Germany. Bismarck\'s worst fear—a two-front encirclement—had come true.<br><br><span class="para-ref">[4.3]</span> Alarmed by German naval expansion, Britain abandoned its traditional "Splendid Isolation." Britain settled colonial disputes with France in the 1904 <strong>Entente Cordiale</strong>, and with Russia in the 1907 <strong>Anglo-Russian Convention</strong>. Together, Britain, France, and Russia formed the <strong>Triple Entente</strong>. Europe was now split into two hostile armed camps. Like a chain of dynamite, a quarrel between any two powers threatened to drag all six into war.',
+          text: '<span class="para-ref">[4.2]</span> In 1890, Kaiser Wilhelm II allowed Germany\'s secret Reinsurance Treaty with Russia to lapse. Needing money to build the Trans-Siberian Railway, Russia turned to France. In 1894, the two nations signed the **Franco-Russian Military Alliance**, promising mutual defense against Germany. Bismarck\'s worst fear—a two-front encirclement—had come true.<br><br><span class="para-ref">[4.3]</span> Alarmed by German naval expansion, Britain abandoned its traditional "Splendid Isolation." Britain settled colonial disputes with France in the 1904 **Entente Cordiale**, and with Russia in the 1907 **Anglo-Russian Convention**. Together, Britain, France, and Russia formed the **Triple Entente**. Europe was now split into two hostile armed camps. Like a chain of dynamite, a quarrel between any two powers threatened to drag all six into war.',
           image: '/units/great_war/assets/was_military_matrix.png',
           image_alt:
             "Primary political cartoon titled 'A Chain of Friendship' (July 1914) illustrating the alliance chain reaction",
@@ -3803,7 +3863,7 @@ const great_war_data = {
         {
           act: 3,
           title: 'The "Balkan Powder Keg", Ottoman Decline & Pan-Slavism (1900–1908)',
-          text: '<span class="para-ref">[4.3]</span> For centuries, the <strong>Ottoman Empire</strong> ruled the Balkan peninsula. By 1900, Ottoman power was fading rapidly, earning the nickname the "Sick Man of Europe." As Turkish rule collapsed, new independent nations—Greece, Bulgaria, Romania, and <strong>Serbia</strong>—broke away. This unstable power vacuum became known as the <strong>"Balkan Powder Keg."</strong><br><br><span class="para-ref">[4.4]</span> Two rival empires competed for influence in the Balkans. Russia supported fellow Slavs and Orthodox Christians under the banner of <strong>Pan-Slavism</strong>, seeking warm-water sea routes to the Mediterranean. In contrast, Austria-Hungary feared that Slavic nationalism would tear its empire apart. Independent Serbia wanted to unite all South Slavs into a "Greater Serbia," making it Austria\'s fiercest rival.',
+          text: '<span class="para-ref">[4.3]</span> For centuries, the **Ottoman Empire** ruled the Balkan peninsula. By 1900, Ottoman power was fading rapidly, earning the nickname the "Sick Man of Europe." As Turkish rule collapsed, new independent nations—Greece, Bulgaria, Romania, and **Serbia**—broke away. This unstable power vacuum became known as the **"Balkan Powder Keg."**<br><br><span class="para-ref">[4.4]</span> Two rival empires competed for influence in the Balkans. Russia supported fellow Slavs and Orthodox Christians under the banner of **Pan-Slavism**, seeking warm-water sea routes to the Mediterranean. In contrast, Austria-Hungary feared that Slavic nationalism would tear its empire apart. Independent Serbia wanted to unite all South Slavs into a "Greater Serbia," making it Austria\'s fiercest rival.',
           source: {
             letter: 'C',
             id: 'gw_l4_src_c',
@@ -3868,7 +3928,7 @@ const great_war_data = {
         {
           act: 4,
           title: 'The 1908 Bosnian Annexation Crisis & Russian Humiliation (October 1908)',
-          text: '<span class="para-ref">[4.4]</span> In October 1908, the powder keg nearly exploded. Taking advantage of chaos in the Ottoman Empire, Austria-Hungary <strong>annexed the provinces of Bosnia and Herzegovina</strong>. This annexation outraged Serbia, which considered Bosnia its rightful territory. Serbian crowds protested in Belgrade, demanding war.<br><br><span class="para-ref">[4.5]</span> Russia supported Serbia and prepared its army. However, German Chancellor Bernhard von Bülow intervened. In March 1909, Germany delivered an ultimatum: Russia must accept the annexation, or face war with Germany and Austria. Still recovering from its 1905 defeat by Japan, Russia could not fight. Tsar Nicholas II backed down and forced Serbia to accept Austrian rule. The humiliation was painful: Russia began rapid military rearmament and resolved never to surrender in the Balkans again.',
+          text: '<span class="para-ref">[4.4]</span> In October 1908, the powder keg nearly exploded. Taking advantage of chaos in the Ottoman Empire, Austria-Hungary **annexed the provinces of Bosnia and Herzegovina**. This annexation outraged Serbia, which considered Bosnia its rightful territory. Serbian crowds protested in Belgrade, demanding war.<br><br><span class="para-ref">[4.5]</span> Russia supported Serbia and prepared its army. However, German Chancellor Bernhard von Bülow intervened. In March 1909, Germany delivered an ultimatum: Russia must accept the annexation, or face war with Germany and Austria. Still recovering from its 1905 defeat by Japan, Russia could not fight. Tsar Nicholas II backed down and forced Serbia to accept Austrian rule. The humiliation was painful: Russia began rapid military rearmament and resolved never to surrender in the Balkans again.',
           image: '/units/great_war/assets/balkans_1914_simple_map.png',
           image_alt:
             'Cartographic survey of the Balkan Peninsula showing territorial changes following the Balkan Wars of 1912–1913',
@@ -3949,7 +4009,7 @@ const great_war_data = {
         {
           act: 5,
           title: 'The 1912–1913 Balkan Wars & The Pre-emptive War Urge (1912–1913)',
-          text: '<span class="para-ref">[4.5]</span> In October 1912, the <strong>First Balkan War</strong> broke out. Serbia, Greece, Bulgaria, and Montenegro (the Balkan League) attacked the Ottoman Empire, expelling Turkish forces from Europe within six weeks. In 1913, the allies turned on each other in the <strong>Second Balkan War</strong>, where Serbia defeated Bulgaria.<br><br><span class="para-ref">[4.6]</span> These wars transformed Serbia into a formidable regional power. Serbia expanded its territory by eighty percent, and its population jumped from three to 4.5 million. Armed with modern French artillery, Serbian nationalists intensified secret agitation inside Austria-Hungary. In Vienna, Austrian General <strong>Franz Conrad von Hötzendorf</strong> demanded a <strong>pre-emptive war</strong> to crush Serbia before it grew even stronger: Conrad urged war over twenty times in 1913 alone. Europe stood on the edge of catastrophe.',
+          text: '<span class="para-ref">[4.5]</span> In October 1912, the **First Balkan War** broke out. Serbia, Greece, Bulgaria, and Montenegro (the Balkan League) attacked the Ottoman Empire, expelling Turkish forces from Europe within six weeks. In 1913, the allies turned on each other in the **Second Balkan War**, where Serbia defeated Bulgaria.<br><br><span class="para-ref">[4.6]</span> These wars transformed Serbia into a formidable regional power. Serbia expanded its territory by eighty percent, and its population jumped from three to 4.5 million. Armed with modern French artillery, Serbian nationalists intensified secret agitation inside Austria-Hungary. In Vienna, Austrian General **Franz Conrad von Hötzendorf** demanded a **pre-emptive war** to crush Serbia before it grew even stronger: Conrad urged war over twenty times in 1913 alone. Europe stood on the edge of catastrophe.',
           source: {
             letter: 'E',
             type: 'visual',
@@ -4794,33 +4854,48 @@ const great_war_data = {
           term: 'Black Hand (Crna Ruka)',
           definition:
             'A secret Serbian nationalist military terrorist society dedicated to creating a "Greater Serbia" by liberating South Slavs from Austria-Hungary.',
+          syllables: 'Black Hand (Crna Ru-ka)',
+          phonetic: 'black hand (crna ruka)',
+          tier: '2',
         },
         {
           term: 'Blank Cheque (Blankovollmacht)',
           definition:
             'Kaiser Wilhelm II’s unconditional guarantee of total German military backing given to Austria-Hungary on 5 July 1914.',
+          syllables: 'Blank Che-que (Bla-nko-vo-llmacht)',
+          phonetic: 'blank cheque (blankovollmacht)',
+          tier: '3',
         },
         {
           term: 'Ultimatum',
           definition:
             'A final set of non-negotiable diplomatic demands with a rigid deadline, the rejection of which will result in an immediate declaration of war.',
+          syllables: 'U-lti-matum',
+          phonetic: 'ultimatum',
+          tier: '3',
         },
         {
           term: 'Mobilisation',
           definition:
             'The rapid assembly and organization of a nation’s military reserves, troops, and railway supplies for active combat.',
+          syllables: 'Mo-bili-sation',
+          phonetic: 'mobilisation',
+          tier: '3',
         },
         {
           term: 'Schlieffen Plan',
           definition:
             'Germany’s strategic war plan drafted by Count von Schlieffen to rapidly conquer France in 42 days via neutral Belgium before pivoting to defeat Russia.',
+          syllables: 'Schlief-fen plan',
+          phonetic: 'ˈʃliːfən plæn',
+          tier: '3',
         },
       ],
       narrative_blocks: [
         {
           act: 1,
           title: 'The Assassination of Franz Ferdinand in Sarajevo (28 June 1914)',
-          text: '<span class="para-ref">[5.1]</span> On Sunday, 28 June 1914, <strong>Archduke Franz Ferdinand</strong>, heir to the Austro-Hungarian throne, visited <strong>Sarajevo</strong> with his wife Sophie. The date was <em>Vidovdan</em> (St Vitus Day), a sacred Serbian national holiday. Six young assassins from <strong>Young Bosnia</strong> waited along the Appel Quay. They were armed with pistols and bombs supplied by the Serbian secret society, the <strong>Black Hand</strong>, led by Colonel Dragutin Dimitrijević ("Apis").<br><br><span class="para-ref">[5.2]</span> The first attack failed when a bomb bounced off the car, injuring bystanders. After a City Hall reception, Franz Ferdinand decided to visit the wounded in hospital. However, his driver took a wrong turn onto Franz Josef Street outside <strong>Schiller\'s Delicatessen</strong> near the <strong>Latin Bridge</strong>. When ordered to reverse, the car stalled. Standing nearby was nineteen-year-old student <strong>Gavrilo Princip</strong>. Princip stepped forward and fired two shots at close range, killing Sophie and Franz Ferdinand within minutes.',
+          text: '<span class="para-ref">[5.1]</span> On Sunday, 28 June 1914, **Archduke Franz Ferdinand**, heir to the Austro-Hungarian throne, visited **Sarajevo** with his wife Sophie. The date was <em>Vidovdan</em> (St Vitus Day), a sacred Serbian national holiday. Six young assassins from **Young Bosnia** waited along the Appel Quay. They were armed with pistols and bombs supplied by the Serbian secret society, the **Black Hand**, led by Colonel Dragutin Dimitrijević ("Apis").<br><br><span class="para-ref">[5.2]</span> The first attack failed when a bomb bounced off the car, injuring bystanders. After a City Hall reception, Franz Ferdinand decided to visit the wounded in hospital. However, his driver took a wrong turn onto Franz Josef Street outside **Schiller\'s Delicatessen** near the **Latin Bridge**. When ordered to reverse, the car stalled. Standing nearby was nineteen-year-old student **Gavrilo Princip**. Princip stepped forward and fired two shots at close range, killing Sophie and Franz Ferdinand within minutes.',
           image: '/units/great_war/assets/archduke_sarajevo_car_1914.jpg',
           image_alt:
             'Archival photograph of Archduke Franz Ferdinand and Sophie in their open-top motorcar in Sarajevo, 28 June 1914',
@@ -4902,7 +4977,7 @@ const great_war_data = {
         {
           act: 2,
           title: 'The "Blank Cheque" & The Escalation of the Crisis (5 July 1914)',
-          text: '<span class="para-ref">[5.2]</span> The assassination caused shock and outrage across Europe. Austrian leaders decided to use the murders as an excuse to destroy the Serbian threat forever. However, attacking Serbia risked a war with Russia. On 5 July 1914, Austrian envoy Count Alexander Hoyos traveled to Berlin to secure German support.<br><br><span class="para-ref">[5.3]</span> Kaiser Wilhelm II and Chancellor Theobald von Bethmann-Hollweg made a fateful decision. They issued the famous <strong>"Blank Cheque" (Blankovollmacht)</strong>, promising unconditional German military backing to Austria-Hungary. Germany urged Vienna to strike quickly while international sympathy was high. German leaders gambled that Russia was not ready to fight and that Britain would remain neutral. Strengthened by German promises, Austrian leaders prepared for war.',
+          text: '<span class="para-ref">[5.2]</span> The assassination caused shock and outrage across Europe. Austrian leaders decided to use the murders as an excuse to destroy the Serbian threat forever. However, attacking Serbia risked a war with Russia. On 5 July 1914, Austrian envoy Count Alexander Hoyos traveled to Berlin to secure German support.<br><br><span class="para-ref">[5.3]</span> Kaiser Wilhelm II and Chancellor Theobald von Bethmann-Hollweg made a fateful decision. They issued the famous **"Blank Cheque" (Blankovollmacht)**, promising unconditional German military backing to Austria-Hungary. Germany urged Vienna to strike quickly while international sympathy was high. German leaders gambled that Russia was not ready to fight and that Britain would remain neutral. Strengthened by German promises, Austrian leaders prepared for war.',
           source: {
             letter: 'B',
             type: 'written',
@@ -4981,7 +5056,7 @@ const great_war_data = {
         {
           act: 3,
           title: 'The Ten-Point Ultimatum & Declaration of War on Serbia (23–28 July 1914)',
-          text: '<span class="para-ref">[5.3]</span> On 23 July 1914, Austria-Hungary sent a harsh <strong>Ten-Point Ultimatum</strong> to Serbia, demanding an answer within forty-eight hours. The terms were deliberately designed to be impossible to accept. Austria demanded that Serbia ban anti-Austrian newspapers, dismiss hostile officers, and allow Austro-Hungarian police onto Serbian soil.<br><br><span class="para-ref">[5.4]</span> Allowing foreign police on sovereign soil would destroy Serbian independence. However, advised by Russia to show restraint, Serbia accepted eight demands and offered international arbitration for the other two. British Foreign Secretary Sir Edward Grey praised Serbia\'s peaceful reply. Nevertheless, Austria-Hungary was determined to fight. On <strong>28 July 1914</strong>, Austria declared war on Serbia. That night, Austrian gunboats shelled Belgrade from the Danube River. The July Crisis had turned into war.',
+          text: '<span class="para-ref">[5.3]</span> On 23 July 1914, Austria-Hungary sent a harsh **Ten-Point Ultimatum** to Serbia, demanding an answer within forty-eight hours. The terms were deliberately designed to be impossible to accept. Austria demanded that Serbia ban anti-Austrian newspapers, dismiss hostile officers, and allow Austro-Hungarian police onto Serbian soil.<br><br><span class="para-ref">[5.4]</span> Allowing foreign police on sovereign soil would destroy Serbian independence. However, advised by Russia to show restraint, Serbia accepted eight demands and offered international arbitration for the other two. British Foreign Secretary Sir Edward Grey praised Serbia\'s peaceful reply. Nevertheless, Austria-Hungary was determined to fight. On **28 July 1914**, Austria declared war on Serbia. That night, Austrian gunboats shelled Belgrade from the Danube River. The July Crisis had turned into war.',
           source: {
             letter: 'C',
             type: 'written',
@@ -5060,7 +5135,7 @@ const great_war_data = {
         {
           act: 4,
           title: 'Railway Mobilisation Schedules & The Domino Effect (29–31 July 1914)',
-          text: '<span class="para-ref">[5.4]</span> The shelling of Belgrade set off the alliance system like dominoes. Russian commanders warned Tsar Nicholas II that if Russia failed to act, Austria would conquer the Balkans. Because Russia was vast with few railways, its army took six weeks to assemble. Delaying mobilization would leave Russia defenseless. On <strong>30 July 1914</strong>, the Tsar ordered <strong>general mobilization</strong>.<br><br><span class="para-ref">[5.5]</span> Russian mobilization triggered rigid military plans across Europe, a process historian A.J.P. Taylor called <strong>"War by Timetable."</strong> In 1914, mobilization was treated as an act of war involving millions of troops and inflexible train schedules. German Chief of Staff <strong>Helmuth von Moltke the Younger</strong> warned that war could no longer be stopped. Germany ordered Russia to halt mobilization, and demanded that France promise neutrality. Both refused. On 1 August, Germany declared war on Russia; on 3 August, Germany declared war on France.',
+          text: '<span class="para-ref">[5.4]</span> The shelling of Belgrade set off the alliance system like dominoes. Russian commanders warned Tsar Nicholas II that if Russia failed to act, Austria would conquer the Balkans. Because Russia was vast with few railways, its army took six weeks to assemble. Delaying mobilization would leave Russia defenseless. On **30 July 1914**, the Tsar ordered **general mobilization**.<br><br><span class="para-ref">[5.5]</span> Russian mobilization triggered rigid military plans across Europe, a process historian A.J.P. Taylor called **"War by Timetable."** In 1914, mobilization was treated as an act of war involving millions of troops and inflexible train schedules. German Chief of Staff **Helmuth von Moltke the Younger** warned that war could no longer be stopped. Germany ordered Russia to halt mobilization, and demanded that France promise neutrality. Both refused. On 1 August, Germany declared war on Russia; on 3 August, Germany declared war on France.',
           image: '/units/great_war/assets/sarajevo_assassination_beltrame_1914.jpg',
           image_alt:
             'Illustration by Achille Beltrame depicting the assassination of Franz Ferdinand by Gavrilo Princip at the Latin Bridge',
@@ -5130,7 +5205,7 @@ const great_war_data = {
         {
           act: 5,
           title: 'The Schlieffen Plan, Belgian Neutrality & British Entry (1–4 August 1914)',
-          text: '<span class="para-ref">[5.5]</span> Germany\'s strategy was dictated by the <strong>Schlieffen Plan</strong>, designed by Count Alfred von Schlieffen to prevent a two-front war. The plan assumed Russia would take six weeks to mobilize. During those six weeks, Germany would send ninety percent of its army through neutral <strong>Belgium</strong> to encircle Paris and knock France out in forty-two days, before turning east to fight Russia.<br><br><span class="para-ref">[5.6]</span> On 2 August, Germany demanded free passage through Belgium. King Albert refused, declaring: <em>"Belgium is a nation, not a road."</em> On <strong>3 August 1914</strong>, German armies invaded Belgium. This invasion brought Great Britain into the war. Britain had promised to protect Belgian neutrality in the <strong>1839 Treaty of London</strong>, and could not allow a hostile power to control Channel ports. When Germany dismissed the treaty as a <em>"scrap of paper,"</em> Britain declared war at 11:00 PM on <strong>4 August 1914</strong>. Watching London\'s street lamps, Sir Edward Grey remarked: <em>"The lamps are going out all over Europe; we shall not see them lit again in our lifetime."</em>',
+          text: '<span class="para-ref">[5.5]</span> Germany\'s strategy was dictated by the **Schlieffen Plan**, designed by Count Alfred von Schlieffen to prevent a two-front war. The plan assumed Russia would take six weeks to mobilize. During those six weeks, Germany would send ninety percent of its army through neutral **Belgium** to encircle Paris and knock France out in forty-two days, before turning east to fight Russia.<br><br><span class="para-ref">[5.6]</span> On 2 August, Germany demanded free passage through Belgium. King Albert refused, declaring: <em>"Belgium is a nation, not a road."</em> On **3 August 1914**, German armies invaded Belgium. This invasion brought Great Britain into the war. Britain had promised to protect Belgian neutrality in the **1839 Treaty of London**, and could not allow a hostile power to control Channel ports. When Germany dismissed the treaty as a <em>"scrap of paper,"</em> Britain declared war at 11:00 PM on **4 August 1914**. Watching London\'s street lamps, Sir Edward Grey remarked: <em>"The lamps are going out all over Europe; we shall not see them lit again in our lifetime."</em>',
           source: {
             letter: 'E',
             type: 'visual',
@@ -5854,51 +5929,81 @@ const great_war_data = {
           term: 'PEEL Technique',
           definition:
             'A 4-step paragraph structure for historical explanation: Point (topic factor), Evidence (precise facts & dates), Explain (cause-and-effect mechanism), Link (tie back to 1914).',
+          syllables: 'PEEL Te-chni-que',
+          phonetic: 'peel technique',
+          tier: '3',
         },
         {
           term: 'M-A-I-N Causes',
           definition:
             'The four deep long-term causes of the First World War: Militarism, Alliances, Imperialism, and Nationalism.',
+          syllables: 'M-A-I-N Cau-ses',
+          phonetic: 'm-a-i-n causes',
+          tier: '3',
         },
         {
           term: 'Alsace-Lorraine',
           definition:
             'Mineral-rich French border province containing coal and iron ore, annexed by Germany in 1871, fueling French "Revanche".',
+          syllables: 'A-lsa-ce-Lo-rrai-ne',
+          phonetic: 'alsace-lorraine',
+          tier: '2',
         },
         {
           term: 'Revanche',
           definition:
             'The deep French national desire for revenge against Germany and the liberation of the lost provinces of Alsace and Lorraine.',
+          syllables: 'Re-va-nche',
+          phonetic: 'revanche',
+          tier: '2',
         },
         {
           term: 'Weltpolitik',
           definition:
             'Kaiser Wilhelm II’s aggressive "world policy" launched in the 1890s, demanding a massive navy and a global empire ("a place in the sun").',
+          syllables: 'We-ltpo-litik',
+          phonetic: 'weltpolitik',
+          tier: '3',
         },
         {
           term: 'Two-Power Standard',
           definition:
             'Britain’s official naval rule (Naval Defence Act 1889) that the Royal Navy must equal the combined strength of the next two largest navies.',
+          syllables: 'Two-Po-wer Sta-ndard',
+          phonetic: 'two-power standard',
+          tier: '3',
         },
         {
           term: 'HMS Dreadnought',
           definition:
             'Britain’s revolutionary 1906 battleship featuring ten 12-inch heavy guns and steam turbines, which made all previous battleships instantly obsolete.',
+          syllables: 'HMS dread-nought',
+          phonetic: 'hms ˈdrɛdnɔːt',
+          tier: '3',
         },
         {
           term: 'Triple Alliance',
           definition:
             'The defensive military pact formed in 1882 between Germany, Austria-Hungary, and Italy.',
+          syllables: 'tri-ple al-li-ance',
+          phonetic: 'ˈtrɪpl əˈlaɪəns',
+          tier: '3',
         },
         {
           term: 'Triple Entente',
           definition:
             'The diplomatic coalition formed in 1907 between Great Britain, France, and Tsarist Russia to counterbalance the Triple Alliance.',
+          syllables: 'tri-ple en-tente',
+          phonetic: 'ˈtrɪpl ɒnˈtɒnt',
+          tier: '3',
         },
         {
           term: 'Blank Cheque',
           definition:
             'Kaiser Wilhelm II’s promise of unconditional German military support to Austria-Hungary in July 1914, emboldening Austria to declare war on Serbia.',
+          syllables: 'Blank Che-que',
+          phonetic: 'blank cheque',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -5906,7 +6011,7 @@ const great_war_data = {
           act: 1,
           title: 'Deconstructing the Question: "Why Did War Break Out in 1914?"',
           theme_heading: 'Deconstructing the Question: "Why Did War Break Out in 1914?"',
-          text: '<span class="para-ref">[6.1]</span> In your formal November assessment, you will answer the central historical question: <strong>"Why did war break out in 1914?"</strong> [12 marks • 30 mins].<br><br>\n      To score full marks, you need to write <strong>strictly three developed PEEL paragraphs</strong> choosing 3 of the 4 key historical factors below. <strong>NO conclusion is required!</strong><br>\n      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0;">\n        <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-left: 4px solid #ef4444; border-radius: 8px; padding: 12px 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">\n          <strong style="color: #991b1b; display: block; font-size: 0.95rem; margin-bottom: 4px;">1. German Unification (1871)</strong>\n          <span style="font-size: 0.84rem; color: #475569; line-height: 1.4;">Bismarck unites Germany, crowns Kaiser at Versailles, takes Alsace-Lorraine; French <em>Revanche</em>.</span>\n        </div>\n        <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 12px 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">\n          <strong style="color: #92400e; display: block; font-size: 0.95rem; margin-bottom: 4px;">2. Imperial Rivalry &amp; Africa (1884–1911)</strong>\n          <span style="font-size: 0.84rem; color: #475569; line-height: 1.4;">Scramble for Africa, Wilhelm II\'s <em>Weltpolitik</em> ("place in the sun"), Moroccan Crises (1905, 1911).</span>\n        </div>\n        <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 12px 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">\n          <strong style="color: #1e40af; display: block; font-size: 0.95rem; margin-bottom: 4px;">3. Naval Arms Race (1898–1914)</strong>\n          <span style="font-size: 0.84rem; color: #475569; line-height: 1.4;">British Two-Power Standard, German Naval Laws, launch of HMS Dreadnought (1906).</span>\n        </div>\n        <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-left: 4px solid #10b981; border-radius: 8px; padding: 12px 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">\n          <strong style="color: #065f46; display: block; font-size: 0.95rem; margin-bottom: 4px;">4. Alliances &amp; Sarajevo (1879–1914)</strong>\n          <span style="font-size: 0.84rem; color: #475569; line-height: 1.4;">Triple Alliance vs Triple Entente, Gavrilo Princip shoots Franz Ferdinand, Blank Cheque.</span>\n        </div>\n      </div>\n      <br><strong>The 30-Minute Timing Strategy (3 Paragraphs • No Conclusion):</strong><br>\n      • <strong>0–3 mins:</strong> Check your 1 sheet of A4 notes. Choose your 3 best factors.<br>\n      • <strong>3–12 mins (9 mins):</strong> Write Paragraph 1 using PEEL.<br>\n      • <strong>12–21 mins (9 mins):</strong> Write Paragraph 2 using PEEL.<br>\n      • <strong>21–30 mins (9 mins):</strong> Write Paragraph 3 using PEEL. Use final minute to check facts and spelling.<br><br>\n      <div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">\n        <div>\n          <span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Assessment Gateway</span>\n          <strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise the complete 1871–1914 Timeline?</strong>\n        </div>\n        <a href="/?view=lessons&unit=great_war" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Causes of the Great War Unit Homepage\n        </a>\n      </div>',
+          text: '<span class="para-ref">[6.1]</span> In your formal November assessment, you will answer the central historical question: **"Why did war break out in 1914?"** [12 marks • 30 mins].<br><br>\n      To score full marks, you need to write **strictly three developed PEEL paragraphs** choosing 3 of the 4 key historical factors below. **NO conclusion is required!**<br>\n      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0;">\n        <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-left: 4px solid #ef4444; border-radius: 8px; padding: 12px 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">\n          <strong style="color: #991b1b; display: block; font-size: 0.95rem; margin-bottom: 4px;">1. German Unification (1871)</strong>\n          <span style="font-size: 0.84rem; color: #475569; line-height: 1.4;">Bismarck unites Germany, crowns Kaiser at Versailles, takes Alsace-Lorraine; French <em>Revanche</em>.</span>\n        </div>\n        <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 12px 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">\n          <strong style="color: #92400e; display: block; font-size: 0.95rem; margin-bottom: 4px;">2. Imperial Rivalry &amp; Africa (1884–1911)</strong>\n          <span style="font-size: 0.84rem; color: #475569; line-height: 1.4;">Scramble for Africa, Wilhelm II\'s <em>Weltpolitik</em> ("place in the sun"), Moroccan Crises (1905, 1911).</span>\n        </div>\n        <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 12px 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">\n          <strong style="color: #1e40af; display: block; font-size: 0.95rem; margin-bottom: 4px;">3. Naval Arms Race (1898–1914)</strong>\n          <span style="font-size: 0.84rem; color: #475569; line-height: 1.4;">British Two-Power Standard, German Naval Laws, launch of HMS Dreadnought (1906).</span>\n        </div>\n        <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-left: 4px solid #10b981; border-radius: 8px; padding: 12px 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">\n          <strong style="color: #065f46; display: block; font-size: 0.95rem; margin-bottom: 4px;">4. Alliances &amp; Sarajevo (1879–1914)</strong>\n          <span style="font-size: 0.84rem; color: #475569; line-height: 1.4;">Triple Alliance vs Triple Entente, Gavrilo Princip shoots Franz Ferdinand, Blank Cheque.</span>\n        </div>\n      </div>\n      <br>**The 30-Minute Timing Strategy (3 Paragraphs • No Conclusion):**<br>\n      • **0–3 mins:** Check your 1 sheet of A4 notes. Choose your 3 best factors.<br>\n      • **3–12 mins (9 mins):** Write Paragraph 1 using PEEL.<br>\n      • **12–21 mins (9 mins):** Write Paragraph 2 using PEEL.<br>\n      • **21–30 mins (9 mins):** Write Paragraph 3 using PEEL. Use final minute to check facts and spelling.<br><br>\n      <div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">\n        <div>\n          <span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Assessment Gateway</span>\n          <strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise the complete 1871–1914 Timeline?</strong>\n        </div>\n        <a href="/?view=lessons&unit=great_war" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Causes of the Great War Unit Homepage\n        </a>\n      </div>',
           image: '/units/great_war/assets/clark_cover.png',
           image_alt:
             "Cover of Christopher Clark's masterwork The Sleepwalkers: How Europe Went to War in 1914",
@@ -5991,7 +6096,7 @@ const great_war_data = {
           act: 2,
           title: 'Reason 1: German Unification, Bismarck & French Revanche (1871)',
           theme_heading: 'Reason 1: German Unification, Bismarck & French Revanche (1871)',
-          text: '<span class="para-ref">[6.2]</span> In 1871, Prussian Minister-President <strong>Otto von Bismarck</strong> united thirty-nine independent German states into the German Empire after defeating France in the Franco-Prussian War. King Wilhelm I was crowned Kaiser in the French palace at Versailles. Under the 1871 <strong>Treaty of Frankfurt</strong>, Germany annexed the mineral-rich border province of <strong>Alsace-Lorraine</strong>.<br><br>\n      This caused war in 1914 because it created permanent French <strong>"Revanche"</strong> (revenge) and created a massive new military and industrial superpower in Central Europe, leaving Germany terrified of encirclement by France and Russia.<br><br>\n      <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 5px solid #ef4444; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">\n        <span style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; background: #fee2e2; color: #991b1b; padding: 2px 8px; border-radius: 4px;">Ready-to-Copy A4 Revision Notes • Reason 1</span>\n        <h4 style="margin: 8px 0 6px 0; color: #0f172a; font-size: 1rem;">Put these 4 bullet points on your 1 sheet of A4 paper:</h4>\n        <ul style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #334155; line-height: 1.6;">\n          <li><strong>1871 Unification:</strong> Bismarck used "blood and iron" to unite 39 states into the German Empire under Kaiser Wilhelm I.</li>\n          <li><strong>Treaty of Frankfurt:</strong> Germany seized mineral-rich <strong>Alsace-Lorraine</strong> and demanded 5 billion gold francs from France.</li>\n          <li><strong>Balance of Power:</strong> Germany instantly became the dominant military and steel superpower in Central Europe.</li>\n          <li><strong>French Revanche:</strong> France swore permanent revenge to reclaim Alsace-Lorraine, making lasting peace impossible.</li>\n        </ul>\n      </div>\n      <div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">\n        <div>\n          <span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateway</span>\n          <strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise German Unification &amp; Alsace-Lorraine?</strong>\n        </div>\n        <a href="/?view=lessons&unit=great_war&lesson=1" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 1: German Unification (1871–1890)\n        </a>\n      </div>',
+          text: '<span class="para-ref">[6.2]</span> In 1871, Prussian Minister-President **Otto von Bismarck** united thirty-nine independent German states into the German Empire after defeating France in the Franco-Prussian War. King Wilhelm I was crowned Kaiser in the French palace at Versailles. Under the 1871 **Treaty of Frankfurt**, Germany annexed the mineral-rich border province of **Alsace-Lorraine**.<br><br>\n      This caused war in 1914 because it created permanent French **"Revanche"** (revenge) and created a massive new military and industrial superpower in Central Europe, leaving Germany terrified of encirclement by France and Russia.<br><br>\n      <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 5px solid #ef4444; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">\n        <span style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; background: #fee2e2; color: #991b1b; padding: 2px 8px; border-radius: 4px;">Ready-to-Copy A4 Revision Notes • Reason 1</span>\n        <h4 style="margin: 8px 0 6px 0; color: #0f172a; font-size: 1rem;">Put these 4 bullet points on your 1 sheet of A4 paper:</h4>\n        <ul style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #334155; line-height: 1.6;">\n          <li>**1871 Unification:** Bismarck used "blood and iron" to unite 39 states into the German Empire under Kaiser Wilhelm I.</li>\n          <li>**Treaty of Frankfurt:** Germany seized mineral-rich **Alsace-Lorraine** and demanded 5 billion gold francs from France.</li>\n          <li>**Balance of Power:** Germany instantly became the dominant military and steel superpower in Central Europe.</li>\n          <li>**French Revanche:** France swore permanent revenge to reclaim Alsace-Lorraine, making lasting peace impossible.</li>\n        </ul>\n      </div>\n      <div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">\n        <div>\n          <span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateway</span>\n          <strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise German Unification &amp; Alsace-Lorraine?</strong>\n        </div>\n        <a href="/?view=lessons&unit=great_war&lesson=1" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 1: German Unification (1871–1890)\n        </a>\n      </div>',
           source: {
             letter: 'B',
             type: 'written',
@@ -6071,7 +6176,7 @@ const great_war_data = {
           act: 3,
           title: 'Reason 2: Imperial Rivalry & The Scramble for Africa (1884–1911)',
           theme_heading: 'Reason 2: Imperial Rivalry & The Scramble for Africa (1884–1911)',
-          text: '<span class="para-ref">[6.3]</span> In the 1880s, European powers competed to conquer overseas colonies during the <strong>Scramble for Africa</strong> (carved up at the 1884 Berlin Conference). In 1890, Kaiser Wilhelm II launched <strong>Weltpolitik</strong> ("World Policy"), aggressively demanding Germany\'s overseas <strong>"place in the sun"</strong> equal to Britain and France.<br><br>\n      This caused war in 1914 because Germany provoked two dangerous flashpoints in Morocco (landing at <strong>Tangier</strong> in 1905 and sending the gunboat <strong>SMS Panther</strong> to Agadir in 1911). Rather than dividing Britain and France, German aggression drove the two powers into secret military talks and a firm defensive alliance.<br><br>\n      <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 5px solid #f59e0b; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">\n        <span style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 4px;">Ready-to-Copy A4 Revision Notes • Reason 2</span>\n        <h4 style="margin: 8px 0 6px 0; color: #0f172a; font-size: 1rem;">Put these 4 bullet points on your 1 sheet of A4 paper:</h4>\n        <ul style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #334155; line-height: 1.6;">\n          <li><strong>Scramble for Africa (1884):</strong> 1884 Berlin Conference partitioned Africa; Britain and France took the richest colonies.</li>\n          <li><strong>Weltpolitik:</strong> Kaiser Wilhelm II demanded Germany\'s "place in the sun" through aggressive overseas empire building.</li>\n          <li><strong>Moroccan Crises:</strong> Germany challenged French control at Tangier (1905) and sent the gunboat <em>SMS Panther</em> to Agadir (1911).</li>\n          <li><strong>Strengthened Entente:</strong> German bullying backfired, uniting Britain and France into a firm defensive military partnership.</li>\n        </ul>\n      </div>\n      <div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">\n        <div>\n          <span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateway</span>\n          <strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise Imperial Rivalry &amp; Morocco?</strong>\n        </div>\n        <a href="/?view=lessons&unit=great_war&lesson=2" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 2: Imperialism &amp; Moroccan Crises (1884–1911)\n        </a>\n      </div>',
+          text: '<span class="para-ref">[6.3]</span> In the 1880s, European powers competed to conquer overseas colonies during the **Scramble for Africa** (carved up at the 1884 Berlin Conference). In 1890, Kaiser Wilhelm II launched **Weltpolitik** ("World Policy"), aggressively demanding Germany\'s overseas **"place in the sun"** equal to Britain and France.<br><br>\n      This caused war in 1914 because Germany provoked two dangerous flashpoints in Morocco (landing at **Tangier** in 1905 and sending the gunboat **SMS Panther** to Agadir in 1911). Rather than dividing Britain and France, German aggression drove the two powers into secret military talks and a firm defensive alliance.<br><br>\n      <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 5px solid #f59e0b; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">\n        <span style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 4px;">Ready-to-Copy A4 Revision Notes • Reason 2</span>\n        <h4 style="margin: 8px 0 6px 0; color: #0f172a; font-size: 1rem;">Put these 4 bullet points on your 1 sheet of A4 paper:</h4>\n        <ul style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #334155; line-height: 1.6;">\n          <li>**Scramble for Africa (1884):** 1884 Berlin Conference partitioned Africa; Britain and France took the richest colonies.</li>\n          <li>**Weltpolitik:** Kaiser Wilhelm II demanded Germany\'s "place in the sun" through aggressive overseas empire building.</li>\n          <li>**Moroccan Crises:** Germany challenged French control at Tangier (1905) and sent the gunboat <em>SMS Panther</em> to Agadir (1911).</li>\n          <li>**Strengthened Entente:** German bullying backfired, uniting Britain and France into a firm defensive military partnership.</li>\n        </ul>\n      </div>\n      <div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">\n        <div>\n          <span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateway</span>\n          <strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise Imperial Rivalry &amp; Morocco?</strong>\n        </div>\n        <a href="/?view=lessons&unit=great_war&lesson=2" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 2: Imperialism &amp; Moroccan Crises (1884–1911)\n        </a>\n      </div>',
           source: {
             letter: 'C',
             type: 'written',
@@ -6151,7 +6256,7 @@ const great_war_data = {
           act: 4,
           title: 'Reason 3: The Anglo-German Naval Arms Race & HMS Dreadnought (1898–1914)',
           theme_heading: 'Reason 3: The Anglo-German Naval Arms Race & HMS Dreadnought (1898–1914)',
-          text: '<span class="para-ref">[6.4]</span> As an island nation, Great Britain relied on absolute naval mastery for trade and survival, enforcing the <strong>Two-Power Standard</strong> (the Royal Navy must equal the next two biggest navies combined). In 1898, Admiral Alfred von Tirpitz passed the German Naval Laws to build 38 battleships directly facing Britain across the North Sea.<br><br>\n      In 1906, Britain launched <strong>HMS Dreadnought</strong>, an all-big-gun battleship that made all older warships obsolete and reset the race to zero. Although Britain won the race (29 dreadnoughts to 17 by 1914), the building contest convinced Britain that Germany was a deadly threat to British survival.<br><br>\n      <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 5px solid #3b82f6; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">\n        <span style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; background: #dbeafe; color: #1e40af; padding: 2px 8px; border-radius: 4px;">Ready-to-Copy A4 Revision Notes • Reason 3</span>\n        <h4 style="margin: 8px 0 6px 0; color: #0f172a; font-size: 1rem;">Put these 4 bullet points on your 1 sheet of A4 paper:</h4>\n        <ul style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #334155; line-height: 1.6;">\n          <li><strong>Two-Power Standard:</strong> Britain’s 1889 rule that the Royal Navy must equal the next two biggest navies combined.</li>\n          <li><strong>German Naval Laws (1898):</strong> Admiral Tirpitz built 38 battleships directly opposite Britain to challenge British naval supremacy.</li>\n          <li><strong>HMS Dreadnought (1906):</strong> Revolutionary all-big-gun warship (10 x 12-inch guns) that reset the battleship race to zero.</li>\n          <li><strong>Naval Panic &amp; Tension:</strong> Public chanted "We want eight and we won\'t wait!"; permanently destroyed friendly Anglo-German relations.</li>\n        </ul>\n      </div>\n      <div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">\n        <div>\n          <span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateway</span>\n          <strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise the Naval Race &amp; Dreadnought?</strong>\n        </div>\n        <a href="/?view=lessons&unit=great_war&lesson=3" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 3: Naval Arms Race &amp; HMS Dreadnought (1898–1914)\n        </a>\n      </div>',
+          text: '<span class="para-ref">[6.4]</span> As an island nation, Great Britain relied on absolute naval mastery for trade and survival, enforcing the **Two-Power Standard** (the Royal Navy must equal the next two biggest navies combined). In 1898, Admiral Alfred von Tirpitz passed the German Naval Laws to build 38 battleships directly facing Britain across the North Sea.<br><br>\n      In 1906, Britain launched **HMS Dreadnought**, an all-big-gun battleship that made all older warships obsolete and reset the race to zero. Although Britain won the race (29 dreadnoughts to 17 by 1914), the building contest convinced Britain that Germany was a deadly threat to British survival.<br><br>\n      <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 5px solid #3b82f6; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">\n        <span style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; background: #dbeafe; color: #1e40af; padding: 2px 8px; border-radius: 4px;">Ready-to-Copy A4 Revision Notes • Reason 3</span>\n        <h4 style="margin: 8px 0 6px 0; color: #0f172a; font-size: 1rem;">Put these 4 bullet points on your 1 sheet of A4 paper:</h4>\n        <ul style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #334155; line-height: 1.6;">\n          <li>**Two-Power Standard:** Britain’s 1889 rule that the Royal Navy must equal the next two biggest navies combined.</li>\n          <li>**German Naval Laws (1898):** Admiral Tirpitz built 38 battleships directly opposite Britain to challenge British naval supremacy.</li>\n          <li>**HMS Dreadnought (1906):** Revolutionary all-big-gun warship (10 x 12-inch guns) that reset the battleship race to zero.</li>\n          <li>**Naval Panic &amp; Tension:** Public chanted "We want eight and we won\'t wait!"; permanently destroyed friendly Anglo-German relations.</li>\n        </ul>\n      </div>\n      <div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">\n        <div>\n          <span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateway</span>\n          <strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise the Naval Race &amp; Dreadnought?</strong>\n        </div>\n        <a href="/?view=lessons&unit=great_war&lesson=3" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 3: Naval Arms Race &amp; HMS Dreadnought (1898–1914)\n        </a>\n      </div>',
           image: '/units/great_war/assets/tuchman_cover.png',
           image_alt: "Cover of Barbara Tuchman's classic study The Guns of August",
           caption:
@@ -6235,7 +6340,7 @@ const great_war_data = {
           act: 5,
           title: 'Reason 4: Rival Alliances & The Sarajevo Assassination (1879–1914)',
           theme_heading: 'Reason 4: Rival Alliances & The Sarajevo Assassination (1879–1914)',
-          text: '<span class="para-ref">[6.5]</span> By 1914, Europe was split into two hostile armed camps: the <strong>Triple Alliance</strong> (Germany, Austria-Hungary, Italy) and the <strong>Triple Entente</strong> (Britain, France, Russia). While designed to deter attack, the alliances created a lethal trap where an attack on one ally dragged all six into war.<br><br>\n      On <strong>28 June 1914</strong>, Serbian nationalist <strong>Gavrilo Princip</strong> (Black Hand) assassinated Austrian Archduke <strong>Franz Ferdinand</strong> in Sarajevo. Germany gave Austria an unconditional <strong>"Blank Cheque"</strong> (5 July), causing Austria\'s attack on Serbia to trigger Russian, German, French, and British entry within six weeks.<br><br>\n      <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 5px solid #10b981; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">\n        <span style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; background: #d1fae5; color: #065f46; padding: 2px 8px; border-radius: 4px;">Ready-to-Copy A4 Revision Notes • Reason 4</span>\n        <h4 style="margin: 8px 0 6px 0; color: #0f172a; font-size: 1rem;">Put these 4 bullet points on your 1 sheet of A4 paper:</h4>\n        <ul style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #334155; line-height: 1.6;">\n          <li><strong>Two Armed Camps:</strong> Triple Alliance (Germany, Austria, Italy) vs Triple Entente (Britain, France, Russia) created a domino trap.</li>\n          <li><strong>Sarajevo (28 June 1914):</strong> Gavrilo Princip (Black Hand) shot Archduke Franz Ferdinand and wife Sophie in Sarajevo.</li>\n          <li><strong>German Blank Cheque (5 July):</strong> Kaiser promised unconditional backing to Austria-Hungary, leading Austria to invade Serbia.</li>\n          <li><strong>Chain Reaction (Aug 1914):</strong> Russia mobilized; Germany enacted Schlieffen Plan through Belgium; Britain declared war (4 Aug).</li>\n        </ul>\n      </div>\n      <div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">\n        <div>\n          <span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateways</span>\n          <strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise Alliances or the July Crisis?</strong>\n        </div>\n        <div style="display: flex; gap: 8px; flex-wrap: wrap;">\n          <a href="/?view=lessons&unit=great_war&lesson=4" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 4: Alliances &amp; Balkans\n          </a>\n          <a href="/?view=lessons&unit=great_war&lesson=5" target="_blank" style="padding: 7px 15px; background: #1e40af; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 5: Sarajevo &amp; July Crisis\n          </a>\n        </div>\n      </div>',
+          text: '<span class="para-ref">[6.5]</span> By 1914, Europe was split into two hostile armed camps: the **Triple Alliance** (Germany, Austria-Hungary, Italy) and the **Triple Entente** (Britain, France, Russia). While designed to deter attack, the alliances created a lethal trap where an attack on one ally dragged all six into war.<br><br>\n      On **28 June 1914**, Serbian nationalist **Gavrilo Princip** (Black Hand) assassinated Austrian Archduke **Franz Ferdinand** in Sarajevo. Germany gave Austria an unconditional **"Blank Cheque"** (5 July), causing Austria\'s attack on Serbia to trigger Russian, German, French, and British entry within six weeks.<br><br>\n      <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 5px solid #10b981; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">\n        <span style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; background: #d1fae5; color: #065f46; padding: 2px 8px; border-radius: 4px;">Ready-to-Copy A4 Revision Notes • Reason 4</span>\n        <h4 style="margin: 8px 0 6px 0; color: #0f172a; font-size: 1rem;">Put these 4 bullet points on your 1 sheet of A4 paper:</h4>\n        <ul style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #334155; line-height: 1.6;">\n          <li>**Two Armed Camps:** Triple Alliance (Germany, Austria, Italy) vs Triple Entente (Britain, France, Russia) created a domino trap.</li>\n          <li>**Sarajevo (28 June 1914):** Gavrilo Princip (Black Hand) shot Archduke Franz Ferdinand and wife Sophie in Sarajevo.</li>\n          <li>**German Blank Cheque (5 July):** Kaiser promised unconditional backing to Austria-Hungary, leading Austria to invade Serbia.</li>\n          <li>**Chain Reaction (Aug 1914):** Russia mobilized; Germany enacted Schlieffen Plan through Belgium; Britain declared war (4 Aug).</li>\n        </ul>\n      </div>\n      <div style="margin: 16px 0; padding: 14px 18px; background: #eff6ff; border: 1.5px solid #93c5fd; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">\n        <div>\n          <span style="background: #1e40af; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Revision Gateways</span>\n          <strong style="margin-left: 8px; color: #1e3a8a; font-size: 0.95rem;">Need to revise Alliances or the July Crisis?</strong>\n        </div>\n        <div style="display: flex; gap: 8px; flex-wrap: wrap;">\n          <a href="/?view=lessons&unit=great_war&lesson=4" target="_blank" style="padding: 7px 15px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 4: Alliances &amp; Balkans\n          </a>\n          <a href="/?view=lessons&unit=great_war&lesson=5" target="_blank" style="padding: 7px 15px; background: #1e40af; color: white; border-radius: 6px; text-decoration: none; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">\n            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Lesson 5: Sarajevo &amp; July Crisis\n          </a>\n        </div>\n      </div>',
           source: {
             letter: 'E',
             type: 'visual',

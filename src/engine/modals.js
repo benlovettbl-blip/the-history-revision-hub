@@ -2888,8 +2888,12 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
     if (htmlUrl.includes('/units/ks2_ww2/')) {
       if (htmlUrl.includes('pupil_workbook')) {
         pdfUrl = '/pdfs/ks2_ww2_pupil_workbook.pdf';
-      } else if (htmlUrl.includes('quiz_pack')) {
-        pdfUrl = '/pdfs/ks2_ww2_quiz_pack.pdf';
+      } else if (
+        htmlUrl.includes('quiz_pack') ||
+        htmlUrl.includes('retrieval') ||
+        htmlUrl.includes('companion')
+      ) {
+        pdfUrl = '/pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf';
       } else if (htmlUrl.includes('textbook')) {
         pdfUrl = '/pdfs/ks2_ww2_textbook.pdf';
       } else if (htmlUrl.includes('/worksheets/')) {
@@ -2901,8 +2905,12 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
     } else if (htmlUrl.includes('/units/medieval_england/')) {
       if (htmlUrl.includes('pupil_workbook')) {
         pdfUrl = '/pdfs/medieval_england_pupil_workbook.pdf';
-      } else if (htmlUrl.includes('quiz_pack')) {
-        pdfUrl = '/pdfs/medieval_england_quiz_pack.pdf';
+      } else if (
+        htmlUrl.includes('quiz_pack') ||
+        htmlUrl.includes('retrieval') ||
+        htmlUrl.includes('companion')
+      ) {
+        pdfUrl = '/pdfs/Medieval_England_Master_Knowledge_Retrieval_Companion.pdf';
       } else {
         pdfUrl = '/pdfs/medieval_england_textbook.pdf';
       }
@@ -2912,7 +2920,7 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
       if (htmlUrl.includes('pupil_workbook')) {
         pdfUrl = '/pdfs/great_war_pupil_workbook.pdf';
       } else {
-        pdfUrl = '/pdfs/great_war_quiz_pack.pdf';
+        pdfUrl = '/pdfs/Causes_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf';
       }
     } else if (htmlUrl.includes('/units/cme_new/')) {
       const pdfBase = fileBaseName

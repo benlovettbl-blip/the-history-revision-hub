@@ -721,30 +721,45 @@ const usa_data = {
           def: 'State and local statutory laws in the American South mandating racial segregation in all public facilities, schools, and transportation.',
           definition:
             'State and local statutory laws in the American South mandating racial segregation in all public facilities, schools, and transportation.',
+          syllables: 'Jim Crow Laws',
+          phonetic: 'jim crow laws',
+          tier: '2',
         },
         {
           term: 'Plessy v. Ferguson',
           def: "The 1896 Supreme Court ruling establishing the 'separate but equal' legal doctrine justifying racial segregation.",
           definition:
             "The 1896 Supreme Court ruling establishing the 'separate but equal' legal doctrine justifying racial segregation.",
+          syllables: 'Ple-ssy v. Fe-rgu-son',
+          phonetic: 'plessy v. ferguson',
+          tier: '3',
         },
         {
           term: 'NAACP',
           def: 'The National Association for the Advancement of Colored People, founded in 1909 to dismantle segregation through federal court challenges.',
           definition:
             'The National Association for the Advancement of Colored People, founded in 1909 to dismantle segregation through federal court challenges.',
+          syllables: 'N-A-A-C-P',
+          phonetic: 'ˌɛn eɪ eɪ siː ˈpiː',
+          tier: '3',
         },
         {
           term: 'CORE',
           def: 'Congress of Racial Equality, an interracial civil rights group formed in 1942 that pioneered non-violent direct action and sit-ins.',
           definition:
             'Congress of Racial Equality, an interracial civil rights group formed in 1942 that pioneered non-violent direct action and sit-ins.',
+          syllables: 'C-O-R-E',
+          phonetic: 'kɔːr',
+          tier: '3',
         },
         {
           term: 'Disenfranchisement',
           def: 'The systematic denial of voting rights to Black citizens through poll taxes, literacy tests, and violent intimidation.',
           definition:
             'The systematic denial of voting rights to Black citizens through poll taxes, literacy tests, and violent intimidation.',
+          syllables: 'Di-se-nfranchi-sement',
+          phonetic: 'disenfranchisement',
+          tier: '2',
         },
       ],
       narrative_blocks: [
@@ -1943,30 +1958,45 @@ const usa_data = {
           def: 'The landmark 1954 Supreme Court decision ruling unanimously that segregated public schools were inherently unequal and unconstitutional.',
           definition:
             'The landmark 1954 Supreme Court decision ruling unanimously that segregated public schools were inherently unequal and unconstitutional.',
+          syllables: 'Brown v. Board of E-duca-tion',
+          phonetic: 'brown v. board of education',
+          tier: '2',
         },
         {
           term: 'Earl Warren',
           def: 'The progressive US Supreme Court Chief Justice who orchestrated the unanimous 9-0 ruling striking down school segregation.',
           definition:
             'The progressive US Supreme Court Chief Justice who orchestrated the unanimous 9-0 ruling striking down school segregation.',
+          syllables: 'Earl Wa-rren',
+          phonetic: 'earl warren',
+          tier: '3',
         },
         {
           term: 'Orval Faubus',
           def: 'The segregationist Governor of Arkansas who deployed the state National Guard to block nine Black students from Central High School.',
           definition:
             'The segregationist Governor of Arkansas who deployed the state National Guard to block nine Black students from Central High School.',
+          syllables: 'O-rval Fau-bus',
+          phonetic: 'orval faubus',
+          tier: '2',
         },
         {
           term: '101st Airborne Division',
           def: 'Elite US Army paratroopers deployed by President Eisenhower to Little Rock to escort the Little Rock Nine and enforce federal court orders.',
           definition:
             'Elite US Army paratroopers deployed by President Eisenhower to Little Rock to escort the Little Rock Nine and enforce federal court orders.',
+          syllables: '101st Ai-rborne Di-vision',
+          phonetic: '101st airborne division',
+          tier: '2',
         },
         {
           term: 'The Lost Year',
           def: 'The 1958–59 school year when Governor Faubus closed all Little Rock public high schools to prevent court-ordered desegregation.',
           definition:
             'The 1958–59 school year when Governor Faubus closed all Little Rock public high schools to prevent court-ordered desegregation.',
+          syllables: 'The Lost Year',
+          phonetic: 'the lost year',
+          tier: '2',
         },
       ],
       narrative_blocks: [
@@ -3160,30 +3190,45 @@ const usa_data = {
           def: 'NAACP secretary whose refusal to give up her bus seat to a white man in Montgomery, Alabama sparked the Montgomery Bus Boycott.',
           definition:
             'NAACP secretary whose refusal to give up her bus seat to a white man in Montgomery, Alabama sparked the Montgomery Bus Boycott.',
+          syllables: 'Rosa Parks',
+          phonetic: 'rosa parks',
+          tier: '2',
         },
         {
           term: 'Montgomery Improvement Association',
           def: 'The grassroots organization formed by Black community leaders and ministers to organize and direct the Montgomery Bus Boycott.',
           definition:
             'The grassroots organization formed by Black community leaders and ministers to organize and direct the Montgomery Bus Boycott.',
+          syllables: 'Mo-ntgo-mery I-mpro-vement A-sso-cia-tion',
+          phonetic: 'montgomery improvement association',
+          tier: '2',
         },
         {
           term: 'Martin Luther King Jr.',
           def: 'The charismatic 26-year-old Baptist minister elected leader of the MIA, who championed non-violent civil disobedience and Christian love.',
           definition:
             'The charismatic 26-year-old Baptist minister elected leader of the MIA, who championed non-violent civil disobedience and Christian love.',
+          syllables: 'Ma-rtin Lu-ther King Jr.',
+          phonetic: 'martin luther king jr.',
+          tier: '3',
         },
         {
           term: '381 Days',
           def: 'The remarkable duration of the Montgomery Bus Boycott from 5 December 1955 to 20 December 1956, sustained by 40,000 Black citizens.',
           definition:
             'The remarkable duration of the Montgomery Bus Boycott from 5 December 1955 to 20 December 1956, sustained by 40,000 Black citizens.',
+          syllables: '381 Days',
+          phonetic: '381 days',
+          tier: '2',
         },
         {
           term: 'Browder v. Gayle',
           def: 'The landmark 1956 Supreme Court ruling declaring that segregated seating on municipal public buses was unconstitutional.',
           definition:
             'The landmark 1956 Supreme Court ruling declaring that segregated seating on municipal public buses was unconstitutional.',
+          syllables: 'Bro-wder v. Gay-le',
+          phonetic: 'browder v. gayle',
+          tier: '2',
         },
       ],
       narrative_blocks: [
@@ -4346,30 +4391,45 @@ const usa_data = {
           def: "A 1956 resolution signed by 101 Southern congressmen pledging 'massive resistance' against federal school integration rulings.",
           definition:
             "A 1956 resolution signed by 101 Southern congressmen pledging 'massive resistance' against federal school integration rulings.",
+          syllables: 'The Sou-thern Ma-nife-sto',
+          phonetic: 'the southern manifesto',
+          tier: '2',
         },
         {
           term: "White Citizens' Councils",
           def: 'Networks of white business and professional elites formed in 1954 to wage economic warfare and intimidation against civil rights supporters.',
           definition:
             'Networks of white business and professional elites formed in 1954 to wage economic warfare and intimidation against civil rights supporters.',
+          syllables: "Whi-te Ci-tizens' Cou-ncils",
+          phonetic: "white citizens' councils",
+          tier: '3',
         },
         {
           term: 'Ku Klux Klan',
           def: 'A violent white supremacist terrorist organization that revived in the 1950s, using bombings, lynchings, and arson to terrorize activists.',
           definition:
             'A violent white supremacist terrorist organization that revived in the 1950s, using bombings, lynchings, and arson to terrorize activists.',
+          syllables: 'Ku Klux Klan',
+          phonetic: 'ku klux klan',
+          tier: '3',
         },
         {
           term: 'Dixiecrats',
           def: 'Conservative Southern Democrats who used their congressional seniority and filibusters to block federal civil rights legislation.',
           definition:
             'Conservative Southern Democrats who used their congressional seniority and filibusters to block federal civil rights legislation.',
+          syllables: 'Di-xie-crats',
+          phonetic: 'dixiecrats',
+          tier: '2',
         },
         {
           term: 'Civil Rights Act of 1957',
           def: 'The first federal civil rights statute passed since 1875, creating a Civil Rights Division in the Justice Department with modest powers.',
           definition:
             'The first federal civil rights statute passed since 1875, creating a Civil Rights Division in the Justice Department with modest powers.',
+          syllables: 'Ci-vil Rights Act of 1957',
+          phonetic: 'civil rights act of 1957',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -5544,30 +5604,45 @@ const usa_data = {
           def: "The historic February 1960 lunch-counter sit-ins at Woolworth's in North Carolina that ignited a wave of student direct action across the South.",
           definition:
             "The historic February 1960 lunch-counter sit-ins at Woolworth's in North Carolina that ignited a wave of student direct action across the South.",
+          syllables: 'Gree-nsbo-ro Sit-Ins',
+          phonetic: 'greensboro sit-ins',
+          tier: '3',
         },
         {
           term: 'SNCC',
           def: 'The Student Nonviolent Coordinating Committee, founded in April 1960 by student activists to organize frontline non-violent direct action.',
           definition:
             'The Student Nonviolent Coordinating Committee, founded in April 1960 by student activists to organize frontline non-violent direct action.',
+          syllables: 'S-N-C-C',
+          phonetic: 'snɪk',
+          tier: '3',
         },
         {
           term: 'Freedom Rides',
           def: 'The 1961 integrated bus journeys organized by CORE through the Deep South to enforce federal desegregation of interstate travel.',
           definition:
             'The 1961 integrated bus journeys organized by CORE through the Deep South to enforce federal desegregation of interstate travel.',
+          syllables: 'free-dom rides',
+          phonetic: 'ˈfriːdəm raɪdz',
+          tier: '3',
         },
         {
           term: 'Anniston Bus Bombing',
           def: "The Mother's Day 1961 attack in Anniston, Alabama, where a white mob firebombed a Freedom Rider bus and beat escaping passengers.",
           definition:
             "The Mother's Day 1961 attack in Anniston, Alabama, where a white mob firebombed a Freedom Rider bus and beat escaping passengers.",
+          syllables: 'A-nniston Bus Bo-mbing',
+          phonetic: 'anniston bus bombing',
+          tier: '2',
         },
         {
           term: 'James Meredith',
           def: 'Air Force veteran who became the first Black student admitted to the University of Mississippi in 1962, requiring federal military intervention.',
           definition:
             'Air Force veteran who became the first Black student admitted to the University of Mississippi in 1962, requiring federal military intervention.',
+          syllables: 'Ja-mes Me-redith',
+          phonetic: 'james meredith',
+          tier: '2',
         },
       ],
       narrative_blocks: [
@@ -6727,30 +6802,45 @@ const usa_data = {
           def: 'The aggressive segregationist Birmingham Public Safety Commissioner who deployed attack dogs and high-pressure firehoses against peaceful marchers.',
           definition:
             'The aggressive segregationist Birmingham Public Safety Commissioner who deployed attack dogs and high-pressure firehoses against peaceful marchers.',
+          syllables: "Eu-gene 'Bull' Co-nnor",
+          phonetic: "eugene 'bull' connor",
+          tier: '2',
         },
         {
           term: "Children's Crusade",
           def: 'The pivotal May 1963 marches in Birmingham where hundreds of school children marched peacefully and were arrested and attacked by police.',
           definition:
             'The pivotal May 1963 marches in Birmingham where hundreds of school children marched peacefully and were arrested and attacked by police.',
+          syllables: "Chi-ldren's Cru-sade",
+          phonetic: "children's crusade",
+          tier: '2',
         },
         {
           term: 'March on Washington',
           def: 'The historic 28 August 1963 demonstration where 250,000 Americans gathered at the Lincoln Memorial to demand federal civil rights legislation.',
           definition:
             'The historic 28 August 1963 demonstration where 250,000 Americans gathered at the Lincoln Memorial to demand federal civil rights legislation.',
+          syllables: 'march on Wash-ing-ton',
+          phonetic: 'mɑːtʃ ɒn ˈwɒʃɪŋtən',
+          tier: '3',
         },
         {
           term: '16th Street Baptist Church',
           def: 'The Birmingham church bombed by the KKK on 15 September 1963, killing four young Black girls and galvanizing national outrage.',
           definition:
             'The Birmingham church bombed by the KKK on 15 September 1963, killing four young Black girls and galvanizing national outrage.',
+          syllables: '16th Street Ba-ptist Church',
+          phonetic: '16th street baptist church',
+          tier: '3',
         },
         {
           term: 'Letter from Birmingham Jail',
           def: "Martin Luther King Jr.'s eloquent moral manifesto defending non-violent direct action and civil disobedience against unjust laws.",
           definition:
             "Martin Luther King Jr.'s eloquent moral manifesto defending non-violent direct action and civil disobedience against unjust laws.",
+          syllables: 'Le-tter from Bi-rmingham Jail',
+          phonetic: 'letter from birmingham jail',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -7949,30 +8039,45 @@ const usa_data = {
           def: 'The 1964 campaign that mobilized over 1,000 student volunteers to register Black voters and open Freedom Schools in Mississippi.',
           definition:
             'The 1964 campaign that mobilized over 1,000 student volunteers to register Black voters and open Freedom Schools in Mississippi.',
+          syllables: 'Free-dom Su-mmer',
+          phonetic: 'freedom summer',
+          tier: '2',
         },
         {
           term: 'Mississippi Burning Case',
           def: 'The June 1964 murder of civil rights workers James Chaney, Andrew Goodman, and Michael Schwerner by the KKK and deputy sheriffs.',
           definition:
             'The June 1964 murder of civil rights workers James Chaney, Andrew Goodman, and Michael Schwerner by the KKK and deputy sheriffs.',
+          syllables: 'Mi-ssissi-ppi Bu-rning Case',
+          phonetic: 'mississippi burning case',
+          tier: '2',
         },
         {
           term: 'Fannie Lou Hamer',
           def: 'MFDP leader whose impassioned televised testimony at the 1964 Democratic National Convention exposed the violent terror used to disenfranchise Black Mississippians.',
           definition:
             'MFDP leader whose impassioned televised testimony at the 1964 Democratic National Convention exposed the violent terror used to disenfranchise Black Mississippians.',
+          syllables: 'Fa-nnie Lou Ha-mer',
+          phonetic: 'fannie lou hamer',
+          tier: '2',
         },
         {
           term: 'Edmund Pettus Bridge',
           def: "The bridge in Selma, Alabama where state troopers brutally attacked 600 voting rights marchers with clubs and tear gas on 'Bloody Sunday'.",
           definition:
             "The bridge in Selma, Alabama where state troopers brutally attacked 600 voting rights marchers with clubs and tear gas on 'Bloody Sunday'.",
+          syllables: 'E-dmund Pe-ttus Bri-dge',
+          phonetic: 'edmund pettus bridge',
+          tier: '2',
         },
         {
           term: 'Voting Rights Act of 1965',
           def: 'Landmark federal legislation that suspended literacy tests and authorized federal examiners to register Southern voters directly.',
           definition:
             'Landmark federal legislation that suspended literacy tests and authorized federal examiners to register Southern voters directly.',
+          syllables: 'Vo-ting Rights Act of 1965',
+          phonetic: 'voting rights act of 1965',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -9182,30 +9287,45 @@ const usa_data = {
           def: 'Sweeping federal legislation signed by LBJ prohibiting discrimination in public facilities, housing federal integration enforcement, and establishing the EEOC.',
           definition:
             'Sweeping federal legislation signed by LBJ prohibiting discrimination in public facilities, housing federal integration enforcement, and establishing the EEOC.',
+          syllables: 'Ci-vil Rights Act of 1964',
+          phonetic: 'civil rights act of 1964',
+          tier: '3',
         },
         {
           term: 'EEOC',
           def: 'The Equal Employment Opportunity Commission, created under Title VII to investigate and eliminate racial and sex discrimination in employment.',
           definition:
             'The Equal Employment Opportunity Commission, created under Title VII to investigate and eliminate racial and sex discrimination in employment.',
+          syllables: 'EEOC',
+          phonetic: 'eeoc',
+          tier: '2',
         },
         {
           term: '24th Amendment',
           def: 'Constitutional amendment ratified in January 1964 outlawing the use of poll taxes in federal elections.',
           definition:
             'Constitutional amendment ratified in January 1964 outlawing the use of poll taxes in federal elections.',
+          syllables: '24th A-me-ndment',
+          phonetic: '24th amendment',
+          tier: '2',
         },
         {
           term: 'The Great Society',
           def: "President Lyndon B. Johnson's comprehensive domestic reform agenda aimed at eradicating poverty, extending healthcare, and expanding racial equality.",
           definition:
             "President Lyndon B. Johnson's comprehensive domestic reform agenda aimed at eradicating poverty, extending healthcare, and expanding racial equality.",
+          syllables: 'The Great So-cie-ty',
+          phonetic: 'the great society',
+          tier: '2',
         },
         {
           term: 'Fair Housing Act',
           def: "The Civil Rights Act of 1968 passed days after MLK's assassination, prohibiting racial and religious discrimination in the sale or rental of housing.",
           definition:
             "The Civil Rights Act of 1968 passed days after MLK's assassination, prohibiting racial and religious discrimination in the sale or rental of housing.",
+          syllables: 'Fair Hou-sing Act',
+          phonetic: 'fair housing act',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -10373,30 +10493,45 @@ const usa_data = {
           def: 'Charismatic Black nationalist leader who rejected non-violence and racial integration, advocating Black pride and armed self-defense.',
           definition:
             'Charismatic Black nationalist leader who rejected non-violence and racial integration, advocating Black pride and armed self-defense.',
+          syllables: 'Mal-colm X',
+          phonetic: 'ˈmælkəm ɛks',
+          tier: '3',
         },
         {
           term: 'Nation of Islam',
           def: 'A Black nationalist religious organization led by Elijah Muhammad advocating racial separatism and self-sufficiency.',
           definition:
             'A Black nationalist religious organization led by Elijah Muhammad advocating racial separatism and self-sufficiency.',
+          syllables: 'Na-tion of I-slam',
+          phonetic: 'nation of islam',
+          tier: '2',
         },
         {
           term: 'Black Nationalism',
           def: 'The political and cultural ideology asserting that African Americans must establish their own economic, political, and cultural institutions independent of white society.',
           definition:
             'The political and cultural ideology asserting that African Americans must establish their own economic, political, and cultural institutions independent of white society.',
+          syllables: 'Black na-tion-al-ism',
+          phonetic: 'black ˈnæʃənəlɪzəm',
+          tier: '2',
         },
         {
           term: 'By Any Means Necessary',
           def: "Malcolm X's famous doctrine asserting that African Americans have the moral right to defend themselves against racist violence using whatever methods are required.",
           definition:
             "Malcolm X's famous doctrine asserting that African Americans have the moral right to defend themselves against racist violence using whatever methods are required.",
+          syllables: 'By Any Means Ne-ce-ssa-ry',
+          phonetic: 'by any means necessary',
+          tier: '3',
         },
         {
           term: 'Hajj to Mecca',
           def: "Malcolm X's transformative April 1964 pilgrimage where seeing Muslims of all races worshipping together led him to reject racial separatism.",
           definition:
             "Malcolm X's transformative April 1964 pilgrimage where seeing Muslims of all races worshipping together led him to reject racial separatism.",
+          syllables: 'Hajj to Me-cca',
+          phonetic: 'hajj to mecca',
+          tier: '2',
         },
       ],
       narrative_blocks: [
@@ -11568,30 +11703,45 @@ const usa_data = {
           def: 'A militant slogan and movement coined by Stokely Carmichael in 1966 demanding Black political independence, cultural pride, and community control.',
           definition:
             'A militant slogan and movement coined by Stokely Carmichael in 1966 demanding Black political independence, cultural pride, and community control.',
+          syllables: 'black pow-er',
+          phonetic: 'blæk ˈpaʊər',
+          tier: '3',
         },
         {
           term: 'Stokely Carmichael',
           def: "Elected chairman of SNCC in 1966 who popularized the 'Black Power' cry and expelled white members to foster Black leadership.",
           definition:
             "Elected chairman of SNCC in 1966 who popularized the 'Black Power' cry and expelled white members to foster Black leadership.",
+          syllables: 'Sto-kely Ca-rmichael',
+          phonetic: 'stokely carmichael',
+          tier: '2',
         },
         {
           term: 'Black Panther Party',
           def: 'A revolutionary socialist organization founded in Oakland in 1966 by Huey Newton and Bobby Seale to fight police brutality and operate community programs.',
           definition:
             'A revolutionary socialist organization founded in Oakland in 1966 by Huey Newton and Bobby Seale to fight police brutality and operate community programs.',
+          syllables: 'Black Pa-nther Pa-rty',
+          phonetic: 'black panther party',
+          tier: '2',
         },
         {
           term: 'Ten-Point Program',
           def: 'The founding manifesto of the Black Panthers demanding employment, decent housing, education, and an end to police brutality.',
           definition:
             'The founding manifesto of the Black Panthers demanding employment, decent housing, education, and an end to police brutality.',
+          syllables: 'Ten-Point Pro-gram',
+          phonetic: 'ten-point program',
+          tier: '2',
         },
         {
           term: '1968 Olympic Salute',
           def: 'The silent protest at the Mexico City Olympics where US sprinters Tommie Smith and John Carlos raised black-gloved fists on the medal podium.',
           definition:
             'The silent protest at the Mexico City Olympics where US sprinters Tommie Smith and John Carlos raised black-gloved fists on the medal podium.',
+          syllables: '1968 O-ly-mpic Sa-lute',
+          phonetic: '1968 olympic salute',
+          tier: '2',
         },
       ],
       narrative_blocks: [
@@ -12778,30 +12928,45 @@ const usa_data = {
           def: 'The six days of violent urban rebellion in Los Angeles in August 1965 sparked by police mistreatment, killing 34 and causing $40 million in destruction.',
           definition:
             'The six days of violent urban rebellion in Los Angeles in August 1965 sparked by police mistreatment, killing 34 and causing $40 million in destruction.',
+          syllables: 'Watts Riots',
+          phonetic: 'watts riots',
+          tier: '3',
         },
         {
           term: 'Long, Hot Summers',
           def: 'The wave of over 150 race riots that swept northern and western industrial cities between 1965 and 1967, including Newark and Detroit.',
           definition:
             'The wave of over 150 race riots that swept northern and western industrial cities between 1965 and 1967, including Newark and Detroit.',
+          syllables: 'Long, Hot Su-mmers',
+          phonetic: 'long, hot summers',
+          tier: '3',
         },
         {
           term: 'Kerner Commission',
           def: 'The presidential commission appointed by LBJ that concluded white racism and ghetto neglect were the root causes of the 1960s urban riots.',
           definition:
             'The presidential commission appointed by LBJ that concluded white racism and ghetto neglect were the root causes of the 1960s urban riots.',
+          syllables: 'Ke-rner Co-mmission',
+          phonetic: 'kerner commission',
+          tier: '2',
         },
         {
           term: 'De Facto Segregation',
           def: 'Racial segregation maintained by custom, economic inequality, residential redlining, and private discrimination rather than statutory law.',
           definition:
             'Racial segregation maintained by custom, economic inequality, residential redlining, and private discrimination rather than statutory law.',
+          syllables: 'De Fa-cto seg-re-ga-tion',
+          phonetic: 'de facto ˌsɛɡrɪˈɡeɪʃən',
+          tier: '3',
         },
         {
           term: 'White Backlash',
           def: "The conservative political reaction among white voters against urban riots and civil rights protests, leading to 'law and order' victories in 1968.",
           definition:
             "The conservative political reaction among white voters against urban riots and civil rights protests, leading to 'law and order' victories in 1968.",
+          syllables: 'Whi-te Ba-cklash',
+          phonetic: 'white backlash',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -13960,30 +14125,45 @@ const usa_data = {
           def: "Martin Luther King Jr.'s 1968 multiracial crusade demanding an Economic Bill of Rights, living wages, and federal anti-poverty legislation.",
           definition:
             "Martin Luther King Jr.'s 1968 multiracial crusade demanding an Economic Bill of Rights, living wages, and federal anti-poverty legislation.",
+          syllables: "Poor Peo-ple's Ca-mpaign",
+          phonetic: "poor people's campaign",
+          tier: '3',
         },
         {
           term: 'Memphis Sanitation Strike',
           def: "The early 1968 strike by 1,300 Black sanitation workers carrying 'I AM A MAN' placards that brought Dr. King to Memphis.",
           definition:
             "The early 1968 strike by 1,300 Black sanitation workers carrying 'I AM A MAN' placards that brought Dr. King to Memphis.",
+          syllables: 'Me-mphis Sa-nita-tion Stri-ke',
+          phonetic: 'memphis sanitation strike',
+          tier: '3',
         },
         {
           term: 'James Earl Ray',
           def: 'The escaped white convict and racist who assassinated Dr. Martin Luther King Jr. at the Lorraine Motel on 4 April 1968.',
           definition:
             'The escaped white convict and racist who assassinated Dr. Martin Luther King Jr. at the Lorraine Motel on 4 April 1968.',
+          syllables: 'Ja-mes Earl Ray',
+          phonetic: 'james earl ray',
+          tier: '3',
         },
         {
           term: '1968 Holy Week Uprisings',
           def: "The immediate wave of violent unrest that erupted in over 100 American cities following Dr. King's murder, requiring 45,000 federal soldiers.",
           definition:
             "The immediate wave of violent unrest that erupted in over 100 American cities following Dr. King's murder, requiring 45,000 federal soldiers.",
+          syllables: '1968 Holy Week U-pri-sings',
+          phonetic: '1968 holy week uprisings',
+          tier: '3',
         },
         {
           term: 'Movement Fragmentation',
           def: 'The fracturing of the civil rights coalition after 1968 between moderate legalists, non-violent pastors, and armed Black Power separatists.',
           definition:
             'The fracturing of the civil rights coalition after 1968 between moderate legalists, non-violent pastors, and armed Black Power separatists.',
+          syllables: 'Mo-vement Fra-gmenta-tion',
+          phonetic: 'movement fragmentation',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -15167,30 +15347,45 @@ const usa_data = {
           def: "President Eisenhower's foreign policy doctrine postulating that if South Vietnam fell to communism, neighboring Southeast Asian nations would topple like dominoes.",
           definition:
             "President Eisenhower's foreign policy doctrine postulating that if South Vietnam fell to communism, neighboring Southeast Asian nations would topple like dominoes.",
+          syllables: 'Do-mino Theo-ry',
+          phonetic: 'domino theory',
+          tier: '3',
         },
         {
           term: 'Geneva Accords',
           def: 'The 1954 treaty that temporarily partitioned Vietnam at the 17th Parallel and scheduled nationwide reunification elections for 1956.',
           definition:
             'The 1954 treaty that temporarily partitioned Vietnam at the 17th Parallel and scheduled nationwide reunification elections for 1956.',
+          syllables: 'Ge-neva A-ccords',
+          phonetic: 'geneva accords',
+          tier: '3',
         },
         {
           term: 'Ngo Dinh Diem',
           def: 'The autocratic Catholic, anti-communist leader of South Vietnam backed by the US who refused to hold reunification elections in 1956.',
           definition:
             'The autocratic Catholic, anti-communist leader of South Vietnam backed by the US who refused to hold reunification elections in 1956.',
+          syllables: 'Ngo Dinh Diem',
+          phonetic: 'ngo dinh diem',
+          tier: '2',
         },
         {
           term: 'Vietcong (NLF)',
           def: 'The communist guerrilla movement formed in 1960 in South Vietnam to overthrow Diem and unify the nation under Ho Chi Minh.',
           definition:
             'The communist guerrilla movement formed in 1960 in South Vietnam to overthrow Diem and unify the nation under Ho Chi Minh.',
+          syllables: 'Vie-tcong (NLF)',
+          phonetic: 'vietcong (nlf)',
+          tier: '2',
         },
         {
           term: 'Strategic Hamlet Program',
           def: 'The joint US-South Vietnamese initiative that forcibly relocated rural peasants into barbed-wire stockade villages, alienating the countryside.',
           definition:
             'The joint US-South Vietnamese initiative that forcibly relocated rural peasants into barbed-wire stockade villages, alienating the countryside.',
+          syllables: 'Stra-tegic Ha-mlet Pro-gram',
+          phonetic: 'strategic hamlet program',
+          tier: '2',
         },
       ],
       narrative_blocks: [
@@ -16380,30 +16575,45 @@ const usa_data = {
           def: "The August 1964 congressional act authorising President Johnson to 'take all necessary measures' in Vietnam, effectively a blank check for war.",
           definition:
             "The August 1964 congressional act authorising President Johnson to 'take all necessary measures' in Vietnam, effectively a blank check for war.",
+          syllables: 'Gulf of To-nkin Re-solu-tion',
+          phonetic: 'gulf of tonkin resolution',
+          tier: '3',
         },
         {
           term: 'Operation Rolling Thunder',
           def: 'The sustained, three-year US aerial bombardment campaign against North Vietnam from 1965 to 1968.',
           definition:
             'The sustained, three-year US aerial bombardment campaign against North Vietnam from 1965 to 1968.',
+          syllables: 'O-pera-tion Ro-lling Thu-nder',
+          phonetic: 'operation rolling thunder',
+          tier: '2',
         },
         {
           term: 'Da Nang Landing',
           def: 'The arrival of 3,500 US Marines at Da Nang on 8 March 1965, marking the introduction of US direct ground combat troops.',
           definition:
             'The arrival of 3,500 US Marines at Da Nang on 8 March 1965, marking the introduction of US direct ground combat troops.',
+          syllables: 'Da Nang La-nding',
+          phonetic: 'da nang landing',
+          tier: '3',
         },
         {
           term: 'General William Westmoreland',
           def: 'The supreme commander of US forces in Vietnam who implemented a strategy of attrition based on superior firepower and enemy body counts.',
           definition:
             'The supreme commander of US forces in Vietnam who implemented a strategy of attrition based on superior firepower and enemy body counts.',
+          syllables: 'Ge-neral Wi-lliam We-stmo-reland',
+          phonetic: 'general william westmoreland',
+          tier: '2',
         },
         {
           term: 'The Military Draft',
           def: 'The conscription system that drafted hundreds of thousands of young American men (average age 19) into combat, sparking anti-war resistance.',
           definition:
             'The conscription system that drafted hundreds of thousands of young American men (average age 19) into combat, sparking anti-war resistance.',
+          syllables: 'The Mi-lita-ry Draft',
+          phonetic: 'the military draft',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -17591,30 +17801,45 @@ const usa_data = {
           def: 'A toxic chemical defoliant containing dioxin sprayed over millions of acres of jungle to strip forest canopy and destroy food crops.',
           definition:
             'A toxic chemical defoliant containing dioxin sprayed over millions of acres of jungle to strip forest canopy and destroy food crops.',
+          syllables: 'A-gent O-ra-nge',
+          phonetic: 'agent orange',
+          tier: '2',
         },
         {
           term: 'Ho Chi Minh Trail',
           def: 'The 16,000-kilometer logistical supply network through Laos and Cambodia funnelling weapons, munitions, and troops from North to South Vietnam.',
           definition:
             'The 16,000-kilometer logistical supply network through Laos and Cambodia funnelling weapons, munitions, and troops from North to South Vietnam.',
+          syllables: 'Ho Chi Minh Trail',
+          phonetic: 'ho chi minh trail',
+          tier: '2',
         },
         {
           term: 'Napalm',
           def: 'A highly flammable jellied petroleum bomb that clung to human skin and surfaces, creating catastrophic, incinerating fires.',
           definition:
             'A highly flammable jellied petroleum bomb that clung to human skin and surfaces, creating catastrophic, incinerating fires.',
+          syllables: 'Na-palm',
+          phonetic: 'napalm',
+          tier: '2',
         },
         {
           term: 'Search and Destroy',
           def: 'US combat doctrine where helicopter-borne platoons raided villages to locate Vietcong, burn settlements, and count enemy dead.',
           definition:
             'US combat doctrine where helicopter-borne platoons raided villages to locate Vietcong, burn settlements, and count enemy dead.',
+          syllables: 'Search and De-stroy',
+          phonetic: 'search and destroy',
+          tier: '3',
         },
         {
           term: 'Cu Chi Tunnels',
           def: 'An extensive 250-kilometer multi-level underground tunnel complex that sheltered Vietcong fighters from US air strikes and artillery.',
           definition:
             'An extensive 250-kilometer multi-level underground tunnel complex that sheltered Vietcong fighters from US air strikes and artillery.',
+          syllables: 'Cu Chi Tu-nnels',
+          phonetic: 'cu chi tunnels',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -18798,30 +19023,45 @@ const usa_data = {
           def: 'The massive January 1968 surprise assault by 84,000 communist troops striking over 100 South Vietnamese towns, cities, and the US Embassy.',
           definition:
             'The massive January 1968 surprise assault by 84,000 communist troops striking over 100 South Vietnamese towns, cities, and the US Embassy.',
+          syllables: 'Tet O-ffensi-ve',
+          phonetic: 'tet offensive',
+          tier: '3',
         },
         {
           term: 'Credibility Gap',
           def: 'The chasm between optimistic official government claims of imminent victory and the bleak reality of brutal stalemate seen on television.',
           definition:
             'The chasm between optimistic official government claims of imminent victory and the bleak reality of brutal stalemate seen on television.',
+          syllables: 'Cre-dibi-lity Gap',
+          phonetic: 'credibility gap',
+          tier: '2',
         },
         {
           term: 'My Lai Massacre',
           def: 'The March 1968 war crime where Charlie Company soldiers under Lieutenant William Calley slaughtered over 500 unarmed Vietnamese civilians.',
           definition:
             'The March 1968 war crime where Charlie Company soldiers under Lieutenant William Calley slaughtered over 500 unarmed Vietnamese civilians.',
+          syllables: 'My Lai Ma-ssacre',
+          phonetic: 'my lai massacre',
+          tier: '3',
         },
         {
           term: 'Vietnamization',
           def: "President Richard Nixon's policy announced in 1969 to withdraw US combat ground forces and train South Vietnamese (ARVN) troops to fight alone.",
           definition:
             "President Richard Nixon's policy announced in 1969 to withdraw US combat ground forces and train South Vietnamese (ARVN) troops to fight alone.",
+          syllables: 'Vie-tna-miza-tion',
+          phonetic: 'vietnamization',
+          tier: '2',
         },
         {
           term: 'Fall of Saigon',
           def: 'The capture of the South Vietnamese capital by North Vietnamese tanks on 30 April 1975, ending the war and unifying Vietnam under communism.',
           definition:
             'The capture of the South Vietnamese capital by North Vietnamese tanks on 30 April 1975, ending the war and unifying Vietnam under communism.',
+          syllables: 'Fall of Sai-gon',
+          phonetic: 'fall of saigon',
+          tier: '3',
         },
       ],
       narrative_blocks: [

@@ -1433,7 +1433,7 @@ const UNIT_REGISTRY = {
       subtitle: 'Voluntary Enlistment, Trench Warfare, Global Empire & The Peace of Versailles',
       dateRange: '1914–1919',
       overarchingEnquiry:
-        'How did a single spark in Sarajevo ignite a global conflict that transformed the modern world?',
+        'How did total industrialised war (1914–1919) shatter societies and transform the modern world?',
       coverImage: 'images/stubbington_memorial_1.jpg',
       coverPlate: {
         tag: 'Local Archival Primary Record • Memorialisation (1922)',
