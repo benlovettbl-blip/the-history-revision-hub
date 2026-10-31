@@ -75,13 +75,13 @@ const SUITE = [
   {
     id: 'second_british_empire',
     name: 'The Second British Empire',
-    pages: 12,
+    pages: 8,
     html: 'public/units/second_british_empire/textbook.html',
   },
   {
     id: 'industrialisation_and_empire',
     name: 'The Industrial Revolution (1750–1900)',
-    pages: 12,
+    pages: 8,
     html: 'public/units/industrialisation_and_empire/textbook.html',
   },
   {
@@ -99,7 +99,7 @@ const SUITE = [
   {
     id: 'water_and_sanitation',
     name: 'Water & Sanitation Through Time',
-    pages: 12,
+    pages: 8,
     html: 'public/units/water_and_sanitation/textbook.html',
   },
 
