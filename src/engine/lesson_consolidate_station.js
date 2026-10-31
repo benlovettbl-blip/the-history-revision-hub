@@ -534,6 +534,38 @@ function extractChronologyMilestones(lesson) {
   return [];
 }
 
+function shuffleDominoMilestones(milestones) {
+  if (!milestones || milestones.length <= 1) return [...(milestones || [])];
+  const copy = [...milestones];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  // Guarantee milestones do not start in exact pre-solved chronological order
+  if (copy.length >= 2 && copy.every((m, idx) => m.originalIndex === idx)) {
+    const tmp = copy[0];
+    copy[0] = copy[1];
+    copy[1] = tmp;
+  }
+  return copy;
+}
+
+function getDominoDisplayTitle(title, showDates) {
+  if (!title) return '';
+  if (showDates) return title;
+  const stripped = title
+    // Strip parenthetical dates like (1949), (June 1967), (1978–1979)
+    .replace(/\(\s*(?:(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s*)?(?:18|19|20)\d{2}(?:\s*[\u2013\u2014\-]\s*(?:(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s*)?(?:18|19|20)?\d{2})?\s*\)/gi, '')
+    // Strip date ranges like 1948–1949
+    .replace(/\b(?:18|19|20)\d{2}\s*[\u2013\u2014\-]\s*(?:18|19|20)\d{2}\b/g, '')
+    // Strip standalone 4-digit years with leading or trailing space
+    .replace(/\b(?:18|19|20)\d{2}\s+/g, '')
+    .replace(/\s+\b(?:18|19|20)\d{2}\b/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  return stripped.length >= 3 ? stripped : title;
+}
+
 function extractLivingTimelineMilestone(lesson, lessonIndex = 0) {
   if (!lesson) return null;
 
@@ -843,7 +875,7 @@ export function initConsolidateStation(lesson) {
 
   const allQuestions = normalizeQuestions(rawQuiz);
   const allVocab = normalizeVocab(rawVocab);
-  const shuffledMilestones = [...milestones].sort(() => Math.random() - 0.5);
+  const shuffledMilestones = shuffleDominoMilestones(milestones);
 
   // Living Timeline is the DEFAULT tab (pedagogical pen-in-hand transition)
   let initialMode = livingTimeline ? 'timeline' : (allQuestions.length > 0 ? 'quiz' : 'vocab');
@@ -899,6 +931,7 @@ export function initConsolidateStation(lesson) {
     domino: {
       correctOrder: milestones,
       currentOrder: shuffledMilestones,
+      showDateHints: false,
       isSubmitted: false,
       isCorrect: false
     },
@@ -1373,6 +1406,9 @@ function renderChronologyDominoView(state, bodyEl) {
     if (item.originalIndex === idx) correctCount++;
   });
   const allCorrect = correctCount === total;
+  const showHints = Boolean(domino.showDateHints && !domino.isSubmitted);
+  const showFullDates = Boolean(domino.isSubmitted);
+  const showAnyDates = showHints || showFullDates;
 
   bodyEl.innerHTML = `
     <div style="max-width: 820px; margin: 0 auto;">
@@ -1426,6 +1462,15 @@ function renderChronologyDominoView(state, bodyEl) {
             statusBadge = `<span style="background: #f59e0b; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800;"><i class="fa-solid fa-arrows-rotate"></i> Swap</span>`;
           }
 
+          let dateBadge = '';
+          if (showHints) {
+            dateBadge = `<span style="background: #fef3c7; color: #92400e; border: 1.5px solid #fde68a; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 800; display: inline-flex; align-items: center; gap: 4px; animation: fadeIn 0.2s ease;"><i class="fa-solid fa-lightbulb" style="color: #d97706;"></i> Hint: ${item.date}</span>`;
+          } else if (showFullDates) {
+            dateBadge = `<span style="background: #e2e8f0; color: #334155; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">${item.date}</span>`;
+          }
+
+          const cardTitle = getDominoDisplayTitle(item.title, showAnyDates);
+
           return `
             <div style="background: ${cardBg}; border: 1.5px solid ${cardBorder}; border-radius: 12px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.03); transition: all 0.2s ease;">
               <div style="display: flex; align-items: center; gap: 14px; flex: 1;">
@@ -1434,8 +1479,8 @@ function renderChronologyDominoView(state, bodyEl) {
                 </div>
                 <div style="flex: 1;">
                   <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <strong style="color: #0f172a; font-size: 0.98rem;">${item.title}</strong>
-                    ${domino.isSubmitted || allCorrect ? `<span style="background: #e2e8f0; color: #334155; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">${item.date}</span>` : ''}
+                    <strong style="color: #0f172a; font-size: 0.98rem;">${cardTitle}</strong>
+                    ${dateBadge}
                     ${statusBadge}
                   </div>
                   ${item.detail ? `
@@ -1462,11 +1507,16 @@ function renderChronologyDominoView(state, bodyEl) {
 
       <!-- Domino Control Buttons -->
       <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
-        <button type="button" onclick="window.shuffleStationDomino('${state.lessonId}')" style="background: #f8fafc; border: 1.5px solid #cbd5e1; color: #1e293b; padding: 8px 16px; border-radius: 8px; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-          <i class="fa-solid fa-shuffle"></i> Reshuffle
-        </button>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button type="button" onclick="window.shuffleStationDomino('${state.lessonId}')" style="background: #f8fafc; border: 1.5px solid #cbd5e1; color: #1e293b; padding: 8px 16px; border-radius: 8px; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-shuffle"></i> Reshuffle
+          </button>
+          <button type="button" onclick="window.toggleStationDominoHints('${state.lessonId}')" style="background: ${domino.showDateHints ? '#fef3c7' : '#ffffff'}; border: 1.5px solid ${domino.showDateHints ? '#f59e0b' : '#cbd5e1'}; color: ${domino.showDateHints ? '#92400e' : '#334155'}; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
+            <i class="fa-solid fa-lightbulb" style="color: ${domino.showDateHints ? '#d97706' : '#94a3b8'};"></i> ${domino.showDateHints ? 'Hide Date Hints' : 'Show Date Hints'}
+          </button>
+        </div>
 
-        <div style="display: flex; gap: 8px;">
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
           <button type="button" onclick="window.revealStationDomino('${state.lessonId}')" style="background: #ffffff; border: 1.5px solid #8b5cf6; color: #6d28d9; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
             <i class="fa-solid fa-eye"></i> Show Correct Sequence
           </button>
@@ -2313,6 +2363,13 @@ window.shuffleStationVocab = function (lessonId) {
 };
 
 // Chrono Domino handlers
+window.toggleStationDominoHints = function (lessonId) {
+  const state = window.consolidateStations[lessonId];
+  if (!state || !state.domino) return;
+  state.domino.showDateHints = !state.domino.showDateHints;
+  renderStationContent(lessonId);
+};
+
 window.moveStationDominoCard = function (lessonId, fromIdx, toIdx) {
   const state = window.consolidateStations[lessonId];
   if (!state || !state.domino) return;
@@ -2335,8 +2392,9 @@ window.checkStationDomino = function (lessonId) {
 window.shuffleStationDomino = function (lessonId) {
   const state = window.consolidateStations[lessonId];
   if (!state || !state.domino) return;
-  state.domino.currentOrder = [...state.domino.correctOrder].sort(() => Math.random() - 0.5);
+  state.domino.currentOrder = shuffleDominoMilestones(state.domino.correctOrder);
   state.domino.isSubmitted = false;
+  state.domino.showDateHints = false;
   renderStationContent(lessonId);
 };
 
