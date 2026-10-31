@@ -14,6 +14,7 @@
 
 import { appStore } from './store.js';
 import { WORKBOOK_TIMELINE_DATA } from './workbook_timeline_data.js';
+import { getArenaStandoffPair } from './arena_standoff_registry.js';
 
 // Global registry of active station states keyed by lessonId
 window.consolidateStations = window.consolidateStations || {};
@@ -224,7 +225,7 @@ function playArenaSound(type) {
   } catch (e) {}
 }
 
-function extractClassroomArenaData(lesson, currentIdx, lessonsList) {
+function extractClassroomArenaData(lesson, currentIdx, lessonsList, unitId) {
   // 1. Hot Seat Cumulative Vocabulary
   const cumulativeDeck = [];
   const todayDeck = [];
@@ -365,41 +366,9 @@ function extractClassroomArenaData(lesson, currentIdx, lessonsList) {
     ];
   }
 
-  // 3. 60s Standoff
-  const actorsFound = stages.map(s => s.actor).filter(Boolean);
-  let standoffPair = null;
-
-  if (actorsFound.length >= 2) {
-    standoffPair = {
-      roleA: {
-        name: actorsFound[0],
-        title: stages[0].title || 'Primary Actor',
-        objective: `Defend your actions and prove why your decisions were necessary for victory and survival.`,
-        starter: `&ldquo;My actions were entirely justified because...&rdquo;`
-      },
-      roleB: {
-        name: actorsFound[1],
-        title: stages[1].title || 'Opposing / Affected Party',
-        objective: `Challenge the authority of ${actorsFound[0]} and demonstrate the heavy cost or injustice of their policy.`,
-        starter: `&ldquo;Your claim collapses when you consider that...&rdquo;`
-      }
-    };
-  } else {
-    standoffPair = {
-      roleA: {
-        name: 'The Sovereign / Authority',
-        title: 'State Control & Order',
-        objective: 'Argue that ruthless order and strategic necessity were essential to prevent chaos and maintain control.',
-        starter: '&ldquo;Without decisive and unbending authority, the realm would have collapsed because...&rdquo;'
-      },
-      roleB: {
-        name: 'The Witness / Opposition',
-        title: 'Popular Impact & Injustice',
-        objective: 'Expose the human suffering, economic devastation, and long-term resentment caused by this regime.',
-        starter: '&ldquo;History will judge your rule not by its strength, but by the destruction it inflicted, because...&rdquo;'
-      }
-    };
-  }
+  // 3. 60s Standoff — High-Impact Historical Shoulder-Partner Duel
+  // Driven by curated ARENA_STANDOFF_REGISTRY (or academic causal/historiographical fallback)
+  const standoffPair = getArenaStandoffPair(unitId, lesson.id, lesson);
 
   // 4. Quick Facts Lifeline for Lightning Chain
   const quickFacts = [];
@@ -862,6 +831,7 @@ export function renderConsolidateStationHTML(lesson) {
   const lessonsList = (activeUnit && (activeUnit.lessons || activeUnit.subtopics)) || [];
   const lessonIndex = lessonsList.findIndex((l) => l.id === lesson.id);
   const currentIdx = lessonIndex >= 0 ? lessonIndex : 0;
+  const unitId = (activeUnit && activeUnit.id) || (typeof window !== 'undefined' && window.currentUnitId) || '';
 
   const livingTimeline = extractLivingTimelineMilestone(lesson, currentIdx);
   const exitTicket = extractExitTicket(lesson, currentIdx);
@@ -959,6 +929,7 @@ export function initConsolidateStation(lesson) {
   const lessonsList = (activeUnit && (activeUnit.lessons || activeUnit.subtopics)) || [];
   const lessonIndex = lessonsList.findIndex((l) => l.id === lesson.id);
   const currentIdx = lessonIndex >= 0 ? lessonIndex : 0;
+  const unitId = (activeUnit && activeUnit.id) || (typeof window !== 'undefined' && window.currentUnitId) || '';
 
   const livingTimeline = extractLivingTimelineMilestone(lesson, currentIdx);
   const exitTicket = extractExitTicket(lesson, currentIdx);
@@ -1063,7 +1034,7 @@ export function initConsolidateStation(lesson) {
       targetStudents: savedClassSize,
       showLifeline: false
     },
-    arenaData: extractClassroomArenaData(lesson, currentIdx, lessonsList)
+    arenaData: extractClassroomArenaData(lesson, currentIdx, lessonsList, unitId)
   };
 
   window.consolidateStations[lesson.id] = state;
@@ -2052,6 +2023,29 @@ function renderArenaStandoffView(state, arenaData, isWhiteboard) {
   }
 
   const isRoleA = a.standoffPhase === 'roleA';
+  const isHistoriographical = pair.category === 'historiographical';
+
+  const mastheadBadgeText = isHistoriographical
+    ? 'HISTORIOGRAPHICAL SHOULDER-PARTNER DUEL &bull; 30s INTERPRETATION 1 &bull; 30s INTERPRETATION 2'
+    : 'HISTORICAL SHOULDER-PARTNER DUEL &bull; 30s DEFENSE &bull; 30s REBUTTAL';
+
+  const teacherProtocolText = isHistoriographical
+    ? 'Shoulder partners analyze opposing historical arguments. Partner A presents Interpretation 1 using evidence for 30s. At the chime, Partner B presents Interpretation 2 using counter-evidence!'
+    : 'Shoulder partners turn to face each other. Partner A has 30 seconds uninterrupted to argue their stance. At the chime (30s mark), Partner B immediately launches their 30-second rebuttal using opposing historical evidence!';
+
+  const keyTermsA = pair.roleA.keyTerms && pair.roleA.keyTerms.length > 0 ? `
+    <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed ${isWhiteboard ? '#334155' : '#cbd5e1'}; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+      <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.04em;">Key Evidence:</span>
+      ${pair.roleA.keyTerms.map(t => `<span style="background: ${isWhiteboard ? '#0f172a' : '#eff6ff'}; border: 1px solid #93c5fd; color: #1e40af; font-size: 0.74rem; font-weight: 700; padding: 2px 7px; border-radius: 4px;">${t}</span>`).join('')}
+    </div>
+  ` : '';
+
+  const keyTermsB = pair.roleB.keyTerms && pair.roleB.keyTerms.length > 0 ? `
+    <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed ${isWhiteboard ? '#334155' : '#cbd5e1'}; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+      <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.04em;">Key Evidence:</span>
+      ${pair.roleB.keyTerms.map(t => `<span style="background: ${isWhiteboard ? '#0f172a' : '#fef2f2'}; border: 1px solid #fca5a5; color: #b91c1c; font-size: 0.74rem; font-weight: 700; padding: 2px 7px; border-radius: 4px;">${t}</span>`).join('')}
+    </div>
+  ` : '';
 
   return `
     <div style="display: flex; flex-direction: column; gap: 16px;">
@@ -2059,13 +2053,14 @@ function renderArenaStandoffView(state, arenaData, isWhiteboard) {
       <div style="background: linear-gradient(135deg, ${isWhiteboard ? '#1e293b 0%, #0f172a 100%' : '#f8fafc 0%, #f1f5f9 100%'}); border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; border-radius: 12px; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
         <div>
           <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 800; color: #8b5cf6; letter-spacing: 0.05em; margin-bottom: 4px;">
-            HISTORICAL SHOULDER-PARTNER DUEL &bull; 30s DEFENSE &bull; 30s REBUTTAL
+            ${mastheadBadgeText}
           </div>
           <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: ${isWhiteboard ? '1.25rem' : '1.15rem'}; font-weight: 700; color: ${isWhiteboard ? '#f8fafc' : '#0f172a'};">
             ${pair.roleA.name} vs. ${pair.roleB.name}
           </h3>
+          ${pair.subtitle ? `<div style="font-size: 0.82rem; font-weight: 700; color: #8b5cf6; margin-top: 3px;">${pair.subtitle}</div>` : ''}
           <p style="margin: 3px 0 0 0; font-size: 0.82rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'};">
-            Face your shoulder partner. Partner A defends their actions for 30s. At the chime, Partner B rebuts with evidence!
+            ${isHistoriographical ? 'Face your shoulder partner. Partner A defends Interpretation 1 for 30s. At the chime, Partner B counter-argues with Interpretation 2!' : 'Face your shoulder partner. Partner A defends their actions for 30s. At the chime, Partner B rebuts with evidence!'}
           </p>
         </div>
 
@@ -2073,8 +2068,8 @@ function renderArenaStandoffView(state, arenaData, isWhiteboard) {
         <div style="display: flex; align-items: center; gap: 10px;">
           <div id="standoff-phase-badge-${state.lessonId}">
             ${isRoleA
-              ? '<span style="background: #2563eb; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.82rem;"><i class="fa-solid fa-shield"></i> PHASE 1: Partner A Defending (30s)</span>'
-              : '<span style="background: #dc2626; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.82rem;"><i class="fa-solid fa-swords"></i> PHASE 2: Partner B Rebutting (30s)</span>'}
+              ? `<span style="background: #2563eb; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.82rem;"><i class="fa-solid fa-shield"></i> PHASE 1: Partner A ${isHistoriographical ? 'Interpretation' : 'Defending'} (30s)</span>`
+              : `<span style="background: #dc2626; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.82rem;"><i class="fa-solid fa-swords"></i> PHASE 2: Partner B ${isHistoriographical ? 'Counter-View' : 'Rebutting'} (30s)</span>`}
           </div>
 
           <div style="display: flex; align-items: center; gap: 6px; background: ${isWhiteboard ? '#0f172a' : '#ffffff'}; border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 4px 10px; border-radius: 8px;">
@@ -2110,6 +2105,7 @@ function renderArenaStandoffView(state, arenaData, isWhiteboard) {
           <div style="background: ${isWhiteboard ? '#0f172a' : '#f1f5f9'}; border-left: 4px solid #2563eb; padding: 10px 14px; border-radius: 6px; font-size: 0.88rem; color: ${isWhiteboard ? '#93c5fd' : '#1e40af'}; font-style: italic;">
             ${pair.roleA.starter}
           </div>
+          ${keyTermsA}
         </div>
 
         <!-- Partner B Card (Crimson) -->
@@ -2129,12 +2125,13 @@ function renderArenaStandoffView(state, arenaData, isWhiteboard) {
           <div style="background: ${isWhiteboard ? '#0f172a' : '#fef2f2'}; border-left: 4px solid #dc2626; padding: 10px 14px; border-radius: 6px; font-size: 0.88rem; color: ${isWhiteboard ? '#fca5a5' : '#b91c1c'}; font-style: italic;">
             ${pair.roleB.starter}
           </div>
+          ${keyTermsB}
         </div>
       </div>
 
       <!-- Classroom Teacher Protocol Note -->
       <div style="background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border: 1px solid ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; border-radius: 8px; padding: 10px 14px; font-size: 0.8rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; line-height: 1.45;">
-        <strong style="color: #f59e0b;"><i class="fa-solid fa-chalkboard-user"></i> Teacher Protocol:</strong> Shoulder partners turn to face each other. Partner A has 30 seconds uninterrupted to argue their stance. At the chime (30s mark), Partner B immediately launches their 30-second rebuttal using opposing historical evidence!
+        <strong style="color: #f59e0b;"><i class="fa-solid fa-chalkboard-user"></i> Teacher Protocol:</strong> ${teacherProtocolText}
       </div>
     </div>
   `;
