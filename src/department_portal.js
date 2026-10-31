@@ -480,13 +480,22 @@ export async function renderDepartmentPortal(targetTab = 'curriculum') {
           </p>
         </div>
 
-        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
-          <a href="/history_revision_hub_guidance/Guide_01_The_Tripartite_Curriculum_Model.pdf" target="_blank" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; text-decoration: none; border: 1.5px solid #1e3a8a; color: #1e3a8a; background: #fff;">
-            <i class="fa-solid fa-book-open"></i> Tripartite Blueprint
+        <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+          <button type="button" onclick="window.switchView('curriculum')" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; border: 1.5px solid #1e3a8a; color: #1e3a8a; background: #fff; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#eff6ff'" onmouseout="this.style.background='#fff'">
+            <i class="fa-solid fa-table-columns"></i> Curriculum Map
+          </button>
+          <a href="/source_visual_verification_gallery.html" target="_blank" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1.5px solid #0284c7; color: #0284c7; background: #fff; transition: all 0.15s ease;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='#fff'">
+            <i class="fa-solid fa-camera-retro"></i> Visual Source Studio
           </a>
-          <a href="/history_revision_hub_guidance/Guide_04_Disciplinary_Pedagogy_and_Research_Evidence.pdf" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; text-decoration: none; background: #1e3a8a; color: #fff; border: 1.5px solid #1e3a8a; box-shadow: 0 2px 6px rgba(30, 58, 138, 0.2);">
-            <i class="fa-solid fa-microscope"></i> Pedagogy Evidence (PDF)
+          <a href="/master_rights_register.html" target="_blank" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1.5px solid #059669; color: #059669; background: #fff; transition: all 0.15s ease;" onmouseover="this.style.background='#ecfdf5'" onmouseout="this.style.background='#fff'">
+            <i class="fa-solid fa-scale-balanced"></i> Rights Register
           </a>
+          <a href="/units/ks2_ww2/index.html" target="_blank" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1.5px solid #6366f1; color: #6366f1; background: #fff; transition: all 0.15s ease;" onmouseover="this.style.background='#eef2ff'" onmouseout="this.style.background='#fff'">
+            <i class="fa-solid fa-chalkboard-user"></i> KS2 Hub
+          </a>
+          <button type="button" onclick="window.openEmergencyCoverModal && window.openEmergencyCoverModal()" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; background: #b45309; color: #fff; border: 1.5px solid #b45309; cursor: pointer; box-shadow: 0 2px 5px rgba(180, 83, 9, 0.25);">
+            <i class="fa-solid fa-envelope-open-text"></i> Cover Generator
+          </button>
         </div>
       </div>
 
@@ -716,6 +725,115 @@ function renderGovernanceTab(container) {
       </div>
       <div style="font-size: 0.85rem; color: #64748b; font-weight: 600;">
         Showing ${filteredManuals.length + filteredPolicies.length} Governance &amp; Operational Documents
+      </div>
+    </div>
+
+    <!-- Faculty Operations & Digital Studios Launchpad -->
+    <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 14px; padding: 24px 28px; margin-bottom: 36px; color: #ffffff; border: 1.5px solid #334155; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 12px;">
+        <div>
+          <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #60a5fa; background: rgba(96,165,250,0.15); padding: 3px 10px; border-radius: 4px; border: 1px solid rgba(96,165,250,0.3);">
+            Staff Command Hub
+          </span>
+          <h3 style="margin: 6px 0 0 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem; color: #ffffff; font-weight: 800;">
+            Faculty Operations, Publishing &amp; Digital Studios
+          </h3>
+        </div>
+        <div style="font-size: 0.82rem; color: #94a3b8;">
+          Centralised access to curriculum architecture, legal registers, primary studios, and emergency tools.
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+        <!-- Card 1: Curriculum Map -->
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(59,130,246,0.2); color: #60a5fa; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">
+                <i class="fa-solid fa-table-columns"></i>
+              </div>
+              <h4 style="margin: 0; font-size: 0.95rem; font-weight: 800; color: #ffffff;">Curriculum Map</h4>
+            </div>
+            <p style="margin: 0 0 14px 0; font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
+              Interactive Years 7–11 progression matrix, Counsell 4-act enquiry sequencing, and printable PDF overviews.
+            </p>
+          </div>
+          <button type="button" onclick="window.switchView('curriculum')" style="width: 100%; padding: 8px 12px; background: #2563eb; color: #ffffff; border: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
+            <i class="fa-solid fa-arrow-right"></i> Open Curriculum Map
+          </button>
+        </div>
+
+        <!-- Card 2: Visual Source Studio -->
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(14,165,233,0.2); color: #38bdf8; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">
+                <i class="fa-solid fa-camera-retro"></i>
+              </div>
+              <h4 style="margin: 0; font-size: 0.95rem; font-weight: 800; color: #ffffff;">Visual Source Studio</h4>
+            </div>
+            <p style="margin: 0 0 14px 0; font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
+              Full-screen visual verification studio to audit authentic archival plates, image alt text, and captions.
+            </p>
+          </div>
+          <a href="/source_visual_verification_gallery.html" target="_blank" style="width: 100%; padding: 8px 12px; background: #0284c7; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-sizing: border-box;">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Visual Studio
+          </a>
+        </div>
+
+        <!-- Card 3: Rights Register -->
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(16,185,129,0.2); color: #34d399; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <h4 style="margin: 0; font-size: 0.95rem; font-weight: 800; color: #ffffff;">Rights Register</h4>
+            </div>
+            <p style="margin: 0 0 14px 0; font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
+              Master repository database linking archival accession numbers (IWM, Yad Vashem, TNA) and legal rights tiers.
+            </p>
+          </div>
+          <a href="/master_rights_register.html" target="_blank" style="width: 100%; padding: 8px 12px; background: #059669; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-sizing: border-box;">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Rights Register
+          </a>
+        </div>
+
+        <!-- Card 4: KS2 Primary Hub -->
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(99,102,241,0.2); color: #818cf8; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <h4 style="margin: 0; font-size: 0.95rem; font-weight: 800; color: #ffffff;">KS2 Teacher Hub</h4>
+            </div>
+            <p style="margin: 0 0 14px 0; font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
+              Primary phase companion hub: WWII Home Front 10-enquiry unit, Kindertransport atlas, and KS2 pupil workbooks.
+            </p>
+          </div>
+          <a href="/units/ks2_ww2/index.html" target="_blank" style="width: 100%; padding: 8px 12px; background: #4f46e5; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-sizing: border-box;">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch KS2 Hub
+          </a>
+        </div>
+
+        <!-- Card 5: Cover Lesson Generator -->
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(245,158,11,0.2); color: #fbbf24; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <h4 style="margin: 0; font-size: 0.95rem; font-weight: 800; color: #ffffff;">Cover Generator</h4>
+            </div>
+            <p style="margin: 0 0 14px 0; font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
+              One-click emergency cover builder generating structured, printable or digital lesson tasks for supply teachers.
+            </p>
+          </div>
+          <button type="button" onclick="window.openEmergencyCoverModal && window.openEmergencyCoverModal()" style="width: 100%; padding: 8px 12px; background: #d97706; color: #ffffff; border: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
+            <i class="fa-solid fa-bolt"></i> Generate Cover Lesson
+          </button>
+        </div>
       </div>
     </div>
 
@@ -1144,6 +1262,9 @@ function renderCurriculumTab(container) {
             <a href="${currentUnit.workbookPdf}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: #1e3a8a; color: #ffffff; border: 1.5px solid #1e3a8a; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; box-shadow: 0 2px 6px rgba(30,58,138,0.2);">
               <i class="fa-solid fa-file-pen"></i> Pupil Workbook (PDF)
             </a>
+            <button type="button" onclick="window.switchView('curriculum')" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #eff6ff; color: #1e40af; border: 1.5px solid #bfdbfe; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: background 0.15s ease;">
+              <i class="fa-solid fa-table-columns"></i> Whole-School Progression Map &rarr;
+            </button>
           </div>
         </div>
       </div>
