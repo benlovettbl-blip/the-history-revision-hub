@@ -15,6 +15,7 @@
 import { appStore } from './store.js';
 import { WORKBOOK_TIMELINE_DATA } from './workbook_timeline_data.js';
 import { getArenaStandoffPair } from './arena_standoff_registry.js';
+import { getArenaCornersData } from './arena_corners_registry.js';
 
 // Global registry of active station states keyed by lessonId
 window.consolidateStations = window.consolidateStations || {};
@@ -263,114 +264,18 @@ function extractClassroomArenaData(lesson, currentIdx, lessonsList, unitId) {
     });
   }
 
-  // 2. Four Corners
-  const enquiry = lesson.enquiryQuestion || lesson.enquiry_question || lesson.enquiry || lesson.title || '';
-  const cleanEnquiry = enquiry.replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '').trim();
-
-  const stages = lesson.causal_domino_spine?.stages || [];
-  let cornerItems = [];
-
-  if (stages.length >= 4) {
-    cornerItems = [
-      {
-        corner: 'Corner 1',
-        location: 'Front Left',
-        color: '#dc2626',
-        bg: '#fef2f2',
-        border: '#fca5a5',
-        badgeBg: '#fee2e2',
-        label: stages[0].tag || 'Immediate Trigger',
-        title: stages[0].title || 'Decisive Outbreak',
-        detail: extractCleanSentence(stages[0].trigger || stages[0].therefore || '', 180)
-      },
-      {
-        corner: 'Corner 2',
-        location: 'Front Right',
-        color: '#2563eb',
-        bg: '#eff6ff',
-        border: '#93c5fd',
-        badgeBg: '#dbeafe',
-        label: stages[1].tag || stages[2]?.tag || 'Strategic & Military Power',
-        title: stages[1].title || 'Coercion & Force',
-        detail: extractCleanSentence(stages[1].trigger || stages[1].therefore || '', 180)
-      },
-      {
-        corner: 'Corner 3',
-        location: 'Back Left',
-        color: '#d97706',
-        bg: '#fffbeb',
-        border: '#fcd34d',
-        badgeBg: '#fef3c7',
-        label: stages[2]?.tag || stages[3]?.tag || 'Institutional & State Control',
-        title: stages[2]?.title || stages[3]?.title || 'Administrative Order',
-        detail: extractCleanSentence(stages[2]?.trigger || stages[3]?.trigger || '', 180)
-      },
-      {
-        corner: 'Corner 4',
-        location: 'Back Right',
-        color: '#059669',
-        bg: '#f0fdf4',
-        border: '#86efac',
-        badgeBg: '#dcfce7',
-        label: stages[stages.length - 1].tag || 'Long-Term Structural Legacy',
-        title: stages[stages.length - 1].title || 'Systemic Transformation',
-        detail: extractCleanSentence(stages[stages.length - 1].trigger || stages[stages.length - 1].therefore || '', 180)
-      }
-    ];
-  } else {
-    cornerItems = [
-      {
-        corner: 'Corner 1',
-        location: 'Front Left',
-        color: '#dc2626',
-        bg: '#fef2f2',
-        border: '#fca5a5',
-        badgeBg: '#fee2e2',
-        label: 'Military & Coercive Force',
-        title: 'Decisive Physical Action',
-        detail: 'The outcome was decided above all by armed supremacy, physical subjugation, and military dominance.'
-      },
-      {
-        corner: 'Corner 2',
-        location: 'Front Right',
-        color: '#2563eb',
-        bg: '#eff6ff',
-        border: '#93c5fd',
-        badgeBg: '#dbeafe',
-        label: 'Economic & Fiscal Control',
-        title: 'Financial & Resource Power',
-        detail: 'Control over land, revenue, taxation, and economic wealth formed the true foundation of long-term control.'
-      },
-      {
-        corner: 'Corner 3',
-        location: 'Back Left',
-        color: '#d97706',
-        bg: '#fffbeb',
-        border: '#fcd34d',
-        badgeBg: '#fef3c7',
-        label: 'Administrative & Legal Systems',
-        title: 'Institutional Bureaucracy',
-        detail: 'Systematic audits, legal charters, and official administrative institutions cemented power over populations.'
-      },
-      {
-        corner: 'Corner 4',
-        location: 'Back Right',
-        color: '#059669',
-        bg: '#f0fdf4',
-        border: '#86efac',
-        badgeBg: '#dcfce7',
-        label: 'Ideological & Moral Legitimacy',
-        title: 'Authority & Propaganda',
-        detail: 'Beliefs, public propaganda, religious sanctions, and moral legitimacy shaped actions and persuaded followers.'
-      }
-    ];
-  }
+  // 2. Four Corners — Evaluative Enquiry Debate
+  // Uses curated registry or smart causal engine to ensure a genuine question and competing causal claims
+  const cornersData = getArenaCornersData(unitId, lesson.id, lesson);
+  const cleanEnquiry = cornersData.enquiry;
+  const cornerItems = cornersData.cornerItems;
 
   // 3. 60s Standoff — High-Impact Historical Shoulder-Partner Duel
   // Driven by curated ARENA_STANDOFF_REGISTRY (or academic causal/historiographical fallback)
   const standoffPair = getArenaStandoffPair(unitId, lesson.id, lesson);
 
   // 4. Quick Facts Lifeline for Lightning Chain
+  const stages = lesson.causal_domino_spine?.stages || [];
   const quickFacts = [];
   stages.forEach(s => {
     if (s.date && s.title) quickFacts.push(`${s.date}: ${s.title}`);
@@ -1970,6 +1875,11 @@ function renderArenaCornersView(state, arenaData, isWhiteboard) {
                 <p style="margin: 0; font-size: 0.85rem; color: ${isWhiteboard ? '#cbd5e1' : '#475569'}; line-height: 1.45;">
                   ${c.detail}
                 </p>
+                ${c.starter ? `
+                  <div style="margin-top: 10px; background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border-left: 3.5px solid ${c.color}; padding: 7px 10px; border-radius: 4px; font-size: 0.8rem; color: ${isWhiteboard ? '#94a3b8' : '#334155'}; font-style: italic; line-height: 1.4;">
+                    ${c.starter}
+                  </div>
+                ` : ''}
               </div>
               <div style="margin-top: 12px; padding-top: 8px; border-top: 1px solid ${isWhiteboard ? '#1e293b' : '#f1f5f9'}; display: flex; justify-content: space-between; align-items: center; font-size: 0.72rem; color: #94a3b8;">
                 <span>Click to spotlight corner</span>
@@ -1989,11 +1899,16 @@ function renderArenaCornersView(state, arenaData, isWhiteboard) {
             </div>
             <div>
               <div style="font-weight: 800; font-size: 0.88rem; color: #92400e;">
-                SPOTLIGHT: ${corners[selectedIdx].corner} (${corners[selectedIdx].location})
+                SPOTLIGHT: ${corners[selectedIdx].corner} (${corners[selectedIdx].location}) &bull; ${corners[selectedIdx].title}
               </div>
               <div style="font-size: 0.82rem; color: #78350f;">
                 Spokesperson: You have 30 seconds to defend why <strong>${corners[selectedIdx].title}</strong> was the decisive historical turning point!
               </div>
+              ${corners[selectedIdx].starter ? `
+                <div style="margin-top: 4px; font-size: 0.8rem; font-style: italic; color: #b45309;">
+                  Defense Stance: ${corners[selectedIdx].starter}
+                </div>
+              ` : ''}
             </div>
           </div>
           <button type="button" onclick="window.selectArenaCorner('${state.lessonId}', ${selectedIdx})" style="background: #ffffff; border: 1px solid #d97706; color: #92400e; padding: 4px 10px; border-radius: 6px; font-weight: 700; font-size: 0.75rem; cursor: pointer;">
