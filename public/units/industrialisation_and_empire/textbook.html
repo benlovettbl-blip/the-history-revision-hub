@@ -443,37 +443,42 @@
        PAGES 3–7: ENQUIRY FULL PAGES (1 PAGE PER ENQUIRY)
        ========================================================================== */
     .page-lesson {
+      padding: 9mm 14mm 8mm 14mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
+    .page-lesson .running-header {
+      margin-bottom: 4px;
+    }
+
     .enquiry-banner {
-      border-bottom: 2px solid #0f172a;
-      padding-bottom: 4px;
-      margin-bottom: 6px;
+      border-bottom: 1.5px solid #0f172a;
+      padding-bottom: 3.5px;
+      margin-bottom: 4px;
     }
 
     .enquiry-meta-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }
 
     .enquiry-pill {
-      font-size: 7.5pt;
+      font-size: 6.8pt;
       font-weight: 800;
       background: #1e3a8a;
       color: #ffffff;
-      padding: 1.5px 7px;
+      padding: 1px 8px;
       border-radius: 2px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
     .enquiry-canon-tag {
-      font-size: 7pt;
+      font-size: 6.8pt;
       font-weight: 700;
       color: #64748b;
       letter-spacing: 0.05em;
@@ -481,54 +486,57 @@
 
     .enquiry-title {
       font-family: 'Cinzel', serif;
-      font-size: 13.0pt;
+      font-size: 12pt;
       font-weight: 800;
       color: #0f172a;
-      line-height: 1.15;
-      margin: 2px 0 3px 0;
+      line-height: 1.1;
+      margin: 1.5px 0 1.5px 0;
       letter-spacing: 0.02em;
     }
 
     .enquiry-core-question {
       background: #f8fafc;
       border-left: 3px solid #1e3a8a;
-      padding: 2.5px 8px;
+      padding: 2px 7px;
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
-      font-size: 8.5pt;
-      color: #334155;
-      line-height: 1.32;
+      font-size: 7.8pt;
+      color: #1e3a8a;
+      line-height: 1.25;
+      margin-top: 1.5px;
     }
 
     .enquiry-core-question .label {
       font-family: 'Inter', sans-serif;
       font-style: normal;
-      font-size: 6.8pt;
+      font-size: 6.4pt;
       font-weight: 800;
-      color: #1e3a8a;
+      color: #64748b;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      margin-right: 5px;
+      margin-right: 4px;
     }
 
     .prose-body {
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      margin-top: 2px;
+      margin-bottom: 4px;
+      overflow: hidden;
     }
 
     .prose-columns {
       column-count: 2;
-      column-gap: 16px;
-      column-rule: 1px solid #e2e8f0;
+      column-gap: 8mm;
+      column-fill: balance;
       text-align: justify;
+      flex: 1;
     }
 
     .block-section {
-      break-inside: avoid;
-      margin-bottom: 5.5px;
+      break-inside: auto;
+      page-break-inside: auto;
+      margin-bottom: 4px;
     }
 
     .block-header {
@@ -536,23 +544,21 @@
       align-items: baseline;
       gap: 5px;
       margin-bottom: 2px;
-      border-bottom: 1px solid #e2e8f0;
+      border-bottom: 1px solid #cbd5e1;
       padding-bottom: 1.5px;
+      break-after: avoid;
+      page-break-after: avoid;
     }
 
     .block-ref {
       font-size: 7.2pt;
-      font-weight: 800;
+      font-weight: 900;
       color: #1e3a8a;
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      padding: 0.5px 4px;
-      border-radius: 2px;
-      white-space: nowrap;
+      letter-spacing: 0.02em;
     }
 
     .block-title {
-      font-size: 8.2pt;
+      font-size: 7.6pt;
       font-weight: 800;
       color: #0f172a;
       letter-spacing: 0.02em;
@@ -564,8 +570,12 @@
     }
 
     .block-prose p {
-      margin: 0 0 4px 0;
+      margin: 0 0 3px 0;
       text-indent: 0;
+      break-inside: auto;
+      page-break-inside: auto;
+      orphans: 2;
+      widows: 2;
     }
 
     .block-prose p:last-child {
@@ -580,22 +590,17 @@
     .block-workbook-question {
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
-      font-size: 7.6pt;
+      font-size: 7.2pt;
       color: #1e3a8a;
-      margin-bottom: 2.5px;
+      margin-bottom: 2px;
       padding-left: 5px;
       border-left: 2px solid #3b82f6;
       background: #f8fafc;
       border-radius: 0 3px 3px 0;
-      line-height: 1.25;
+      line-height: 1.2;
+      break-after: avoid;
+      page-break-after: avoid;
     }
-
-    /* Calibrated base styling per enquiry */
-    .page-lesson-1 .block-prose { font-size: 9.8pt; line-height: 1.45; }
-    .page-lesson-2 .block-prose { font-size: 10.3pt; line-height: 1.50; }
-    .page-lesson-3 .block-prose { font-size: 10.1pt; line-height: 1.48; }
-    .page-lesson-4 .block-prose { font-size: 9.5pt; line-height: 1.42; }
-    .page-lesson-5 .block-prose { font-size: 10.1pt; line-height: 1.48; }
 
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -987,57 +992,57 @@
       <div class="prose-body">
         <div class="prose-columns">
           
-              <div class="block-section" style="margin-bottom: 4.7px;">
+              <div class="block-section" style="margin-bottom: 3.8px;">
                 <div class="block-header">
                   <span class="block-ref">[1.1]</span>
                   <span class="block-title">The Charcoal Bottleneck &amp; Pig Iron Crisis (1750–1770)</span>
                 </div>
                 <div class="block-workbook-question">Why was Britain’s early iron industry crippled by charcoal and timber shortages?</div>
-                <div class="block-prose" style="font-size: 9.1pt; line-height: 1.35;">
+                <div class="block-prose" style="font-size: 10.3pt; line-height: 1.41;">
                   <p class="prose-p">Before the mid-eighteenth century, British industry was held hostage by an acute energy crisis. For generations, ironmasters used timber to <strong>smelt</strong> iron ore in <strong>blast furnaces</strong>. However, centuries of deforestation had exhausted England's ancient oak forests. When ironmasters turned to abundant pit coal, they struck a chemical disaster: British coal was choked with yellow sulphur, which contaminated the molten metal. The resulting <strong>pig iron</strong> (crude, brittle iron poured into sand moulds) was as brittle as glass. Strike a bar of British pig iron with a hammer, and it shattered into lethal shards. To build tough anchors and ship bolts for the Royal Navy, Britain was forced to import over 50,000 tons of premium <strong>wrought iron</strong> every year from Sweden and Russia across the vulnerable Baltic Sea.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 4.7px;">
+              <div class="block-section" style="margin-bottom: 3.8px;">
                 <div class="block-header">
                   <span class="block-ref">[1.2]</span>
                   <span class="block-title">James Watt &amp; The Rotary Steam Revolution (1769–1781)</span>
                 </div>
                 <div class="block-workbook-question">How did James Watt’s rotary steam engine revolutionise heavy industrial manufacturing?</div>
-                <div class="block-prose" style="font-size: 9.1pt; line-height: 1.35;">
+                <div class="block-prose" style="font-size: 10.3pt; line-height: 1.41;">
                   <p class="prose-p">While iron production floundered, a revolutionary power source erupted. In cramped cottages under the <strong>domestic system</strong> (craft goods produced by hand in workers' homes), spinning and weaving were limited by human muscle and waterwheels that froze in winter or dried up in summer. In 1769, Scottish instrument maker <strong>James Watt</strong> patented his separate condenser, vastly improving early steam engines. Partnering with industrialist Matthew Boulton in Birmingham, Watt adapted his engine to produce continuous <strong>rotary motion</strong>. By converting the thermal energy of coal into mechanical power, Watt liberated factories from remote river valleys. Massive textile mills, deep mine pumps, and heavy iron hammers could now operate relentlessly anywhere coal was shipped.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 4.7px;">
+              <div class="block-section" style="margin-bottom: 3.8px;">
                 <div class="block-header">
                   <span class="block-ref">[1.3]</span>
                   <span class="block-title">Henry Cort’s Puddling Breakthrough at Funtley (1775–1784)</span>
                 </div>
                 <div class="block-workbook-question">How did Henry Cort’s puddling furnace at Funtley chemically refine molten iron?</div>
-                <div class="block-prose" style="font-size: 9.1pt; line-height: 1.35;">
+                <div class="block-prose" style="font-size: 10.3pt; line-height: 1.41;">
                   <p class="prose-p">Yet steam engines required durable metal. In 1775, former naval agent <strong>Henry Cort</strong> leased an old corn mill at Funtley on the River Meon near Fareham, just fifteen miles from Portsmouth Dockyard. In 1783, Cort patented the <strong>reverberatory puddling furnace</strong> (a furnace deflecting heat from an arched roof without fuel touching the metal). Cort separated the coal firebox from the molten metal hearth with a brick bridge wall. The curved masonry roof deflected clean, blistering 1,200°C radiant heat down onto the iron, burning away impurities while keeping destructive coal sulphur away. Skilled <strong>puddlers</strong> stirred the boiling metal through a porthole with long iron paddles, burning off carbon until pure wrought iron thickened into glowing spongy balls.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 4.7px;">
+              <div class="block-section" style="margin-bottom: 3.8px;">
                 <div class="block-header">
                   <span class="block-ref">[1.4]</span>
                   <span class="block-title">Grooved Rollers &amp; The Hampshire Archaeology (1783–1784)</span>
                 </div>
                 <div class="block-workbook-question">Why were Cort’s patented grooved rollers fifteen times faster than traditional trip hammers?</div>
-                <div class="block-prose" style="font-size: 9.1pt; line-height: 1.35;">
+                <div class="block-prose" style="font-size: 10.3pt; line-height: 1.41;">
                   <p class="prose-p">Instead of having teams of exhausted blacksmiths slowly hammer hot iron blooms by hand, Cort patented water-powered <strong>grooved rollers</strong> in 1784. Driven by the surging River Meon waterwheel, these grooved cylinders squeezed out trapped <strong>slag</strong> impurities and compressed the metal into uniform naval bars at fifteen times the speed of traditional forge hammers. The physical archaeology of this triumph remains etched in the Hampshire landscape today. At <strong>Funtley Ironworks</strong>, the original stone weir and circular waterwheel housing survive beside the river. Nearby stands Fontley House, with its Georgian red-brick Fareham "Tallboy" chimneys, and an intact dry-stone wall constructed entirely from tons of dark, glassy puddling slag excavated from Cort's ironworks.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 4.7px;">
+              <div class="block-section" style="margin-bottom: 3.8px;">
                 <div class="block-header">
                   <span class="block-ref">[1.5]</span>
                   <span class="block-title">The Portsmouth Dockyard Trials &amp; Naval Supremacy (1787–1800)</span>
                 </div>
                 <div class="block-workbook-question">Why did Admiralty master smiths declare Funtley iron superior to the finest Swedish imports for His Majesty’s Fleet?</div>
-                <div class="block-prose" style="font-size: 9.1pt; line-height: 1.35;">
+                <div class="block-prose" style="font-size: 10.3pt; line-height: 1.41;">
                   <p class="prose-p">In March 1787, Cort invited the <strong>Navy Board</strong> to <strong>Portsmouth Royal Dockyard</strong> for decisive stress tests. In front of skeptical Admiralty commissioners, master smiths bent Funtley iron double, twisted bars into cold corkscrews, and pounded anchor rings with twenty-pound sledgehammers. The iron did not crack. The official <strong>Admiralty</strong> minutes declared Funtley iron superior to any British metal and fully equal to top-grade Swedish Orgrounds iron. Domestic iron production surged 400%, armoring the Royal Navy on the eve of the Napoleonic Wars and forging the anchors of <em>HMS Victory</em>. Cort was hailed as the "father of the iron trade," though the embezzlement of naval funds by his financial partner Adam Jellicoe tragically stripped Cort of his patents, plunging him into bankruptcy before his death in 1800.</p>
                 </div>
               </div>
@@ -1074,57 +1079,57 @@
       <div class="prose-body">
         <div class="prose-columns">
           
-              <div class="block-section" style="margin-bottom: 5.4px;">
+              <div class="block-section">
                 <div class="block-header">
                   <span class="block-ref">[2.1]</span>
                   <span class="block-title">The Death of Domestic Crafts &amp; Rise of the Mill (1780–1820)</span>
                 </div>
                 <div class="block-workbook-question">How did the factory system displace traditional domestic craft production?</div>
-                <div class="block-prose" style="font-size: 9.8pt; line-height: 1.42;">
+                <div class="block-prose" style="font-size: 11pt; line-height: 1.48;">
                   <p class="prose-p">Before industrialisation, most British goods were crafted under the <strong>domestic system</strong> in family cottages. Weavers worked on handlooms, pacing their labour to seasonal daylight and resting on "Saint Monday." The invention of mechanized <strong>spinning mules</strong> and steam <strong>powerlooms</strong> obliterated this ancient autonomy. Capitalist mill owners built colossal multi-storey brick factories housing hundreds of machines. Handloom weavers could not compete against the torrent of cheap, uniform cloth pouring from steam mills. Driven by destitution, thousands of rural families abandoned their cottages to seek wage labour in booming northern textile hubs like Manchester and Leeds.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.4px;">
+              <div class="block-section">
                 <div class="block-header">
                   <span class="block-ref">[2.2]</span>
                   <span class="block-title">The Tyranny of the Factory Clock &amp; Draconian Fines (1800–1830)</span>
                 </div>
                 <div class="block-workbook-question">How did the factory clock and draconian fines enforce strict industrial discipline?</div>
-                <div class="block-prose" style="font-size: 9.8pt; line-height: 1.42;">
+                <div class="block-prose" style="font-size: 11pt; line-height: 1.48;">
                   <p class="prose-p">Inside the mills, natural rhythms were replaced by the tyranny of the <strong>factory clock</strong>. Operatives worked grueling fourteen- to sixteen-hour shifts, six days a week, surrounded by whirling unguarded iron belts and deafening machinery. Mill masters enforced military-style obedience through draconian rulebooks. Workers were fined two pence—a large fraction of daily wages—by strict <strong>overlookers</strong> for arriving minutes late, opening a window to breathe amidst choking cotton lint, or speaking to a workmate. Mill gates were locked from the outside; anyone pausing from exhaustion faced immediate dismissal or <strong>corporal punishment</strong>.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.4px;">
+              <div class="block-section">
                 <div class="block-header">
                   <span class="block-ref">[2.3]</span>
                   <span class="block-title">Pauper Apprentices &amp; Northern Textile Exploitation (1810–1832)</span>
                 </div>
                 <div class="block-workbook-question">Why were pauper apprentice children systematically exploited in northern textile mills?</div>
-                <div class="block-prose" style="font-size: 9.8pt; line-height: 1.42;">
+                <div class="block-prose" style="font-size: 11pt; line-height: 1.48;">
                   <p class="prose-p">Mill owners discovered that children made the cheapest, most compliant workforce. Thousands of orphan <strong>pauper apprentices</strong> (destitute children legally bound by workhouses to factory owners) were carted from London workhouses to remote northern mills. Employed as <strong>scavengers</strong> and <strong>piecers</strong>, children crawled underneath moving spinning mules to sweep flyaway cotton while machinery roared inches above their heads. Horrific accidents were routine: fingers were crushed in gears, and girls were scalped when long hair caught in whirling drive shafts. Children slept in shifts in crowded apprentice dormitories, surviving on thin oatmeal porridge.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.4px;">
+              <div class="block-section">
                 <div class="block-header">
                   <span class="block-ref">[2.4]</span>
                   <span class="block-title">The Sadler Committee &amp; Matthew Crabtree’s Testimony (1832)</span>
                 </div>
                 <div class="block-workbook-question">What shocking physical abuses did Matthew Crabtree reveal to the Sadler Committee?</div>
-                <div class="block-prose" style="font-size: 9.8pt; line-height: 1.42;">
+                <div class="block-prose" style="font-size: 11pt; line-height: 1.48;">
                   <p class="prose-p">Outrage over factory conditions culminated in the landmark 1832 Parliamentary <strong>Sadler Committee</strong> investigation. Twenty-two-year-old former child worker <strong>Matthew Crabtree</strong> gave harrowing evidence. He recounted starting in a blanket factory at age eight, working from 6:00 AM to 9:00 PM with only forty minutes for dinner. Overlookers patrolled the aisles with heavy <strong>leather straps</strong>, brutally beating exhausted children who lagged behind. Crabtree testified that extreme fatigue caused him to drop asleep on the floor without eating, leaving his legs permanently bowed and his spine stunted by unceasing toil.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.4px;">
+              <div class="block-section">
                 <div class="block-header">
                   <span class="block-ref">[2.5]</span>
                   <span class="block-title">Lord Shaftesbury &amp; The 1833 Factory Act (1833)</span>
                 </div>
                 <div class="block-workbook-question">How did the 1833 Factory Act introduce the first legal regulation of child labour?</div>
-                <div class="block-prose" style="font-size: 9.8pt; line-height: 1.42;">
+                <div class="block-prose" style="font-size: 11pt; line-height: 1.48;">
                   <p class="prose-p">Shocked by Sadler’s revelations, humanitarian reformers led by <strong>Lord Shaftesbury</strong> (Lord Ashley) pressured Parliament into passing the historic <strong>1833 Factory Act</strong>. Defying capitalist owners who warned that state interference would ruin Britain’s economy, the Act banned textile work for children under nine, capped working hours at eight hours daily for children aged 9–13, and required two hours of compulsory schooling. Crucially, Parliament appointed the first four statutory <strong>factory inspectors</strong> to enforce the law. While mill masters often forged birth certificates, the Act set a vital constitutional precedent: the state possessed the legal right to protect vulnerable workers from unbridled industrial exploitation.</p>
                 </div>
               </div>
@@ -1161,57 +1166,57 @@
       <div class="prose-body">
         <div class="prose-columns">
           
-              <div class="block-section" style="margin-bottom: 5.1px;">
+              <div class="block-section" style="margin-bottom: 4.2px;">
                 <div class="block-header">
                   <span class="block-ref">[3.1]</span>
                   <span class="block-title">The Slum Explosion: Back-to-Back Courts &amp; Cellars (1800–1830)</span>
                 </div>
                 <div class="block-workbook-question">How did explosive urban population growth create deadly back-to-back slums?</div>
-                <div class="block-prose" style="font-size: 9.5pt; line-height: 1.39;">
+                <div class="block-prose" style="font-size: 10.7pt; line-height: 1.45;">
                   <p class="prose-p">Between 1801 and 1851, the population of industrial cities like Manchester, Birmingham, and Leeds quadrupled in rapid <strong>urbanisation</strong>. Speculative builders threw up thousands of cramped <strong>back-to-back houses</strong> (terraced brick slums sharing rear and side party walls) with zero municipal building regulations. These houses had no through-ventilation, no indoor plumbing, and shared thin walls that seeped dampness. In damp, unpaved courts, entire families crowded into single windowless earthen <strong>cellar dwellings</strong> beneath street level. In cities like Liverpool, up to 20,000 destitute Irish immigrants and mill hands lived packed twelve to a cellar, where stagnant sewage pooled on earthen floors.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.1px;">
+              <div class="block-section" style="margin-bottom: 4.2px;">
                 <div class="block-header">
                   <span class="block-ref">[3.2]</span>
                   <span class="block-title">Cesspools, Privies &amp; Contaminated Pumps (1830–1840)</span>
                 </div>
                 <div class="block-workbook-question">Why did primitive sanitation turn working-class courts into festering cesspools?</div>
-                <div class="block-prose" style="font-size: 9.5pt; line-height: 1.39;">
+                <div class="block-prose" style="font-size: 10.7pt; line-height: 1.45;">
                   <p class="prose-p">Urban sanitation was almost medieval. A single wooden outdoor <strong>privy</strong> often served forty or more families in a crowded courtyard. Without municipal sewer pipes, human waste drained into porous underground <strong>cesspools</strong> that overflowed into gutters and streets. Towering mounds of decaying <strong>nightsoil</strong> accumulated in alleyways for months until sold to rural farmers as manure. Worse still, private water companies supplied water only two or three times a week for a few hours through shared public standpipes. Cesspool liquids seeped directly through the porous soil into shallow groundwater wells, contaminating the drinking water of entire neighbourhoods.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.1px;">
+              <div class="block-section" style="margin-bottom: 4.2px;">
                 <div class="block-header">
                   <span class="block-ref">[3.3]</span>
                   <span class="block-title">The Blue Terror: Cholera &amp; The Collapse of Laissez-Faire (1831–1848)</span>
                 </div>
                 <div class="block-workbook-question">Why did terrifying cholera epidemics shatter complacent beliefs in laissez-faire?</div>
-                <div class="block-prose" style="font-size: 9.5pt; line-height: 1.39;">
+                <div class="block-prose" style="font-size: 10.7pt; line-height: 1.45;">
                   <p class="prose-p">In 1831, a terrifying new global pandemic landed on British shores: Asiatic <strong>cholera</strong>. Spread through water contaminated with fecal bacteria, cholera struck victims with violent vomiting and diarrhea, causing extreme dehydration that turned skin a ghostly blue and killed healthy adults within twelve hours. Victorians, mistakenly believing in the <strong>miasma theory</strong> (the false belief that epidemic disease was caused by breathing foul smells and toxic air), burned barrels of pitch in the streets. When cholera killed over 50,000 people in 1848, the terror of wealthy elites shattered their devotion to <strong>laissez-faire</strong> (the political philosophy that government should never interfere in economic or civic life).</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.1px;">
+              <div class="block-section" style="margin-bottom: 4.2px;">
                 <div class="block-header">
                   <span class="block-ref">[3.4]</span>
                   <span class="block-title">Edwin Chadwick &amp; The 1842 Sanitary Report (1842)</span>
                 </div>
                 <div class="block-workbook-question">How did Edwin Chadwick’s 1842 Report prove that filth caused disease and premature death?</div>
-                <div class="block-prose" style="font-size: 9.5pt; line-height: 1.39;">
+                <div class="block-prose" style="font-size: 10.7pt; line-height: 1.45;">
                   <p class="prose-p">In 1842, reformer <strong>Edwin Chadwick</strong> published his revolutionary <em>Report on the Sanitary Condition of the Labouring Population</em>. Using groundbreaking statistical data, Chadwick proved that epidemic typhus and cholera were directly bred by environmental filth and lack of clean water. His findings were horrifying: in industrial Manchester, average working-class life expectancy had plummeted to just 17–19 years, compared to 38 years in rural Rutlandshire. Chadwick argued that building clean arterial water mains and self-flushing glazed sewers would save taxpayers money by reducing orphanhood and Poor Law relief, inspiring the landmark <strong>1848 Public Health Act</strong>.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.1px;">
+              <div class="block-section" style="margin-bottom: 4.2px;">
                 <div class="block-header">
                   <span class="block-ref">[3.5]</span>
                   <span class="block-title">The Great Stink &amp; Bazalgette’s Sewer Triumph (1858–1865)</span>
                 </div>
                 <div class="block-workbook-question">How did the 1858 Great Stink compel Parliament to fund Joseph Bazalgette’s sewers?</div>
-                <div class="block-prose" style="font-size: 9.5pt; line-height: 1.39;">
+                <div class="block-prose" style="font-size: 10.7pt; line-height: 1.45;">
                   <p class="prose-p">The turning point arrived in the stifling midsummer of 1858 with the <strong>Great Stink</strong>. The untreated sewage of three million Londoners fermenting in the Thames produced a reek so toxic that Parliament could barely function. Terrified MPs passed emergency legislation in eighteen days, granting civil engineer <strong>Joseph Bazalgette</strong> £3 million to rebuild the capital’s sanitation. Between 1859 and 1865, Bazalgette constructed 1,100 miles of street sewers and 82 miles of colossal underground brick <strong>interceptor sewers</strong>, using 318 million bricks and waterproof Portland cement. Bazalgette’s subterranean cathedrals permanently diverted 420 million gallons of sewage away from London, ending epidemic cholera forever and establishing the blueprint for the modern livable city.</p>
                 </div>
               </div>
@@ -1248,57 +1253,57 @@
       <div class="prose-body">
         <div class="prose-columns">
           
-              <div class="block-section" style="margin-bottom: 4.2px;">
+              <div class="block-section" style="margin-bottom: 3.2px;">
                 <div class="block-header">
                   <span class="block-ref">[4.1]</span>
                   <span class="block-title">The Sledgehammer of General Ludd (1811–1816)</span>
                 </div>
                 <div class="block-workbook-question">Why did textile croppers and knitters turn to nocturnal machine-breaking under "General Ludd"?</div>
-                <div class="block-prose" style="font-size: 8.6pt; line-height: 1.3;">
+                <div class="block-prose" style="font-size: 9.65pt; line-height: 1.35;">
                   <p class="prose-p">In the manufacturing valleys of Nottinghamshire, Yorkshire, and Lancashire, industrialisation threatened skilled artisan workers with wage collapse and deskilling. In 1811, textile hand-workers organized a clandestine guerilla campaign known as the <strong>Luddites</strong> under the mythical figurehead <strong>General Ned Ludd</strong>. Armed with heavy sledgehammers nicknamed "Great Enoch", nocturnal raiding parties blackened their faces, marched across moors, and broke into mills to smash the newly introduced wide-frame stocking looms and steam shearing frames that undercut artisan craft wages. The British ruling class reacted with existential panic: in 1812, Parliament passed the <strong>Frame Breaking Act</strong>, making machine destruction a capital crime punishable by public hanging, and deployed over 12,000 regular troops to the industrial North—a military force larger than the army the Duke of Wellington commanded against Napoleon in Spain.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 4.2px;">
+              <div class="block-section" style="margin-bottom: 3.2px;">
                 <div class="block-header">
                   <span class="block-ref">[4.2]</span>
                   <span class="block-title">The Peterloo Massacre: Sabres at St Peter’s Field (August 1819)</span>
                 </div>
                 <div class="block-workbook-question">Why did the Peterloo Massacre ignite widespread working-class fury against the state?</div>
-                <div class="block-prose" style="font-size: 8.6pt; line-height: 1.3;">
+                <div class="block-prose" style="font-size: 9.65pt; line-height: 1.35;">
                   <p class="prose-p">With direct industrial sabotage brutally suppressed by military force, working people turned toward constitutional political reform to demand parliamentary representation. On 16 August 1819, over 60,000 unarmed men, women, and children assembled peacefully in Sunday clothes at St Peter’s Field in Manchester. Led by the celebrated orator Henry "Orator" Hunt, the disciplined crowd carried banners demanding "Universal Suffrage" and "Vote by Ballot". Panicked local magistrates, watching from a nearby window, branded the peaceful assembly treasonous and ordered the Manchester and Salford Yeomanry to charge the hustings. The resulting <strong>Peterloo Massacre</strong> saw mounted cavalry hack through the densely packed throng with drawn sabres, killing eighteen peaceful citizens and wounding over 650. The government of Lord Liverpool congratulated the magistrates and passed the draconian <strong>Six Acts</strong>, banning unauthorized political meetings and heavily taxing radical newspapers.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 4.2px;">
+              <div class="block-section" style="margin-bottom: 3.2px;">
                 <div class="block-header">
                   <span class="block-ref">[4.3]</span>
                   <span class="block-title">Captain Swing &amp; The Hampshire Harvest Riots (November 1830)</span>
                 </div>
                 <div class="block-workbook-question">How did the "Captain Swing" riots sweep through Hampshire and the Meon Valley?</div>
-                <div class="block-prose" style="font-size: 8.6pt; line-height: 1.3;">
+                <div class="block-prose" style="font-size: 9.65pt; line-height: 1.35;">
                   <p class="prose-p">A decade after Peterloo, agrarian rebellion exploded across southern England under the mysterious signature of <strong>Captain Swing</strong>. In Hampshire and the Meon Valley, rural farm labourers faced winter starvation as newly invented horse-powered <strong>threshing machines</strong> stole their only winter wage. Desperate farm workers marched from farm to farm across downland parishes during the <strong>Swing Riots</strong>, smashing cast-iron threshing drums with sledgehammers, burning hayricks and wheat ricks under cover of night, and demanding a living wage of two shillings a day. At Selborne and Headley, mobilised crowds of over 200 labourers sacked the hated parish workhouses, dismantling punitive iron cages and burning parish pauper registers. In Fordingbridge, workers attacked the machinery at East Mills. Landowners and magistrates slept with loaded pistols, terrified that agricultural revolution was engulfing the kingdom.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 4.2px;">
+              <div class="block-section" style="margin-bottom: 3.2px;">
                 <div class="block-header">
                   <span class="block-ref">[4.4]</span>
                   <span class="block-title">The Winchester Special Assizes &amp; State Vengeance (December 1830)</span>
                 </div>
                 <div class="block-workbook-question">How brutally did the Winchester Special Assizes punish Hampshire machine-breakers?</div>
-                <div class="block-prose" style="font-size: 8.6pt; line-height: 1.3;">
+                <div class="block-prose" style="font-size: 9.65pt; line-height: 1.35;">
                   <p class="prose-p">The ruling aristocracy reacted to the Swing Riots with pitiless vengeance. In December 1830, Home Secretary Lord Melbourne dispatched a Special Commission of judges to hold extraordinary trials known as the <strong>Winchester Special Assizes</strong> in the Great Hall of Winchester Castle. Over 300 Hampshire agricultural labourers—many illiterate young men—were dragged from village lock-ups before the judges. Six men were sentenced to death; among them was nineteen-year-old ploughboy <strong>Henry Cook</strong> of Micheldever, convicted of knocking off the hat of magistrate William Bingham Baring. Despite Baring himself begging the judges for mercy, the Crown hanged Cook at Winchester Prison on 24 January 1831 to intimidate rural labourers. A further 101 Hampshire men and boys were sentenced to <strong>penal transportation</strong>, torn from their families, and shipped in disease-ridden convict hulks to Van Diemen’s Land (Tasmania).</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 4.2px;">
+              <div class="block-section" style="margin-bottom: 3.2px;">
                 <div class="block-header">
                   <span class="block-ref">[4.5]</span>
                   <span class="block-title">The Tolpuddle Martyrs &amp; The Right to Combine (1834)</span>
                 </div>
                 <div class="block-workbook-question">Why did the harsh punishment of the Tolpuddle Martyrs provoke a national outcry?</div>
-                <div class="block-prose" style="font-size: 8.6pt; line-height: 1.3;">
+                <div class="block-prose" style="font-size: 9.65pt; line-height: 1.35;">
                   <p class="prose-p">Terrified by the memory of the Swing Riots, landowners and the state treated any working-class solidarity as treason. In 1833, six agricultural labourers in the Dorset village of Tolpuddle, led by Methodist lay preacher <strong>George Loveless</strong>, founded the <strong>Friendly Society of Agricultural Labourers</strong> to resist wage cuts from nine shillings to six shillings a week. Although trade unions had been decriminalized in 1824, local magistrate James Frampton conspired with Home Secretary Melbourne to prosecute the men under an obscure 1797 statute designed to suppress naval mutinies: administering "unlawful secret oaths". At Dorchester Assizes in March 1834, the judge sentenced all six <strong>Tolpuddle Martyrs</strong> to seven years’ penal transportation to Australia. Rather than crushing unionism, the injustice ignited national fury: over 100,000 trade unionists marched peacefully across London to present a mammoth petition of 250,000 signatures, compelling the government to grant full royal pardons within two years.</p>
                 </div>
               </div>
@@ -1335,57 +1340,57 @@
       <div class="prose-body">
         <div class="prose-columns">
           
-              <div class="block-section" style="margin-bottom: 5.2px;">
+              <div class="block-section" style="margin-bottom: 4.3px;">
                 <div class="block-header">
                   <span class="block-ref">[5.1]</span>
                   <span class="block-title">The Rotten Oligarchy: Old Sarum &amp; The Unrepresented Cities (1800–1830)</span>
                 </div>
                 <div class="block-workbook-question">Why was Britain’s unreformed parliamentary system condemned as a corrupt oligarchy?</div>
-                <div class="block-prose" style="font-size: 9.6pt; line-height: 1.4;">
+                <div class="block-prose" style="font-size: 10.75pt; line-height: 1.46;">
                   <p class="prose-p">In 1830, Britain claimed to be the cradle of parliamentary liberty, but less than 5% of adult males possessed the <strong>parliamentary franchise</strong>. Parliamentary seats were frozen in a medieval time warp. Dozens of <strong>rotten boroughs</strong> (depopulated boroughs controlled by wealthy aristocratic patrons) sent two MPs to Westminster: <strong>Old Sarum</strong> in Wiltshire was a deserted grass mound with three houses and seven voters, while Dunwich had eroded into the North Sea. In contrast, colossal industrial powerhouses like Manchester, Birmingham, and Leeds, home to over a million combined factory workers and merchants, did not have a single Member of Parliament.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.2px;">
+              <div class="block-section" style="margin-bottom: 4.3px;">
                 <div class="block-header">
                   <span class="block-ref">[5.2]</span>
                   <span class="block-title">Bristol in Flames &amp; The Days of May (1831–1832)</span>
                 </div>
                 <div class="block-workbook-question">How did public rebellion and economic panic force the passage of the 1832 Great Reform Act?</div>
-                <div class="block-prose" style="font-size: 9.6pt; line-height: 1.4;">
+                <div class="block-prose" style="font-size: 10.75pt; line-height: 1.46;">
                   <p class="prose-p">When the unelected House of Lords rejected the Whig government's Reform Bill in October 1831, revolutionary rioting engulfed the country. In Bristol, a furious crowd burned the Bishop's Palace, the Mansion House, and three gaols to ashes. During the tense <strong>"Days of May"</strong> in 1832, radical reformer <strong>Francis Place</strong> coordinated a financial strike, distributing posters reading <em>"To stop the Duke, go for gold!"</em> Panic-stricken citizens withdrew £1.6 million in gold sovereigns from the Bank of England in days. Faced with imminent economic paralysis and armed uprising, King William IV agreed to flood the House of Lords with pro-reform peers, forcing the Tories to surrender and pass the Bill.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.2px;">
+              <div class="block-section" style="margin-bottom: 4.3px;">
                 <div class="block-header">
                   <span class="block-ref">[5.3]</span>
                   <span class="block-title">The 1832 Great Reform Act: Triumph or"Great Betrayal"? (1832)</span>
                 </div>
                 <div class="block-workbook-question">Which industrial cities were granted MPs, and why did workers call the Act the "Great Betrayal"?</div>
-                <div class="block-prose" style="font-size: 9.6pt; line-height: 1.4;">
+                <div class="block-prose" style="font-size: 10.75pt; line-height: 1.46;">
                   <p class="prose-p">The landmark <strong>1832 Great Reform Act</strong> disenfranchised 56 rotten boroughs and redistributed 143 parliamentary seats to booming industrial cities like Manchester, Sheffield, and Newcastle. It expanded the electorate by 50% to roughly 800,000 men. However, the vote was strictly restricted by a <strong>£10 property qualification</strong> to men occupying property worth £10 or more in rent annually. This deliberately enfranchised the prosperous middle-class factory owners while completely excluding the working class whose street protests had secured the victory. Bitterly betrayed, mill workers and handloom weavers denounced the Act as the <strong>"Great Betrayal"</strong>, realizing that power had merely shifted from feudal landowners to capitalist mill owners.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.2px;">
+              <div class="block-section" style="margin-bottom: 4.3px;">
                 <div class="block-header">
                   <span class="block-ref">[5.4]</span>
                   <span class="block-title">The People’s Charter: Six Points for Working-Class Power (1838–1848)</span>
                 </div>
                 <div class="block-workbook-question">How did the Chartist movement unite millions of workers behind the Six Points?</div>
-                <div class="block-prose" style="font-size: 9.6pt; line-height: 1.4;">
+                <div class="block-prose" style="font-size: 10.75pt; line-height: 1.46;">
                   <p class="prose-p">Outraged by exclusion, cabinetmaker William Lovett and radical reformers drafted the <strong>People’s Charter of 1838</strong>, igniting the massive <strong>Chartist movement</strong>. Chartists demanded the famous <strong>Six Points</strong>: universal male suffrage, the secret ballot, no property qualifications for MPs, salaries for MPs, equal constituencies, and annual parliaments. In 1839, 1842, and 1848, Chartists presented colossal monster petitions to Parliament, culminating in the historic 1848 Kennington Common mass demonstration (<span class="archival-meta-tag">Source D</span>). Although Parliament contemptuously rejected every petition and arrested leaders, Chartism created Britain’s first unified mass working-class political identity.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 5.2px;">
+              <div class="block-section" style="margin-bottom: 4.3px;">
                 <div class="block-header">
                   <span class="block-ref">[5.5]</span>
                   <span class="block-title">The Secret Ballot Act: The Death of Landlord Coercion (1872)</span>
                 </div>
                 <div class="block-workbook-question">How did the 1872 Secret Ballot Act at Pontefract destroy landlord political coercion?</div>
-                <div class="block-prose" style="font-size: 9.6pt; line-height: 1.4;">
+                <div class="block-prose" style="font-size: 10.75pt; line-height: 1.46;">
                   <p class="prose-p">Under the unreformed system, voting took place on open wooden platforms called <strong>hustings</strong>. Voters stood before shouting crowds, publicly declaring their choice to election clerks. Landlords and factory bosses routinely evicted tenants or fired workers who voted against the master's favoured candidate, while drunken mobs were paid in gin to intimidate rivals. In 1872, Gladstone's Liberal government passed the historic <strong>Secret Ballot Act</strong>. Tested at the <strong>Pontefract by-election</strong> in August 1872, voters cast confidential paper ballots stamped in private wooden booths and sealed with liquorice wax (<span class="archival-meta-tag">Source E</span>). By liberating electors from employer intimidation, the secret ballot laid the true foundation of modern British democracy.</p>
                 </div>
               </div>

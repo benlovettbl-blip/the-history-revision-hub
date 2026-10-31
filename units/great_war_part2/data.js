@@ -178,31 +178,49 @@ const great_war_part2_data = {
           term: 'British Expeditionary Force',
           definition:
             'The small, highly trained professional British army sent to France and Belgium in August 1914, comprising approximately 120,000 men.',
+          syllables: 'Bri-tish E-xpe-ditio-nary Fo-rce',
+          phonetic: 'british expeditionary force',
+          tier: '2',
         },
         {
           term: 'Lord Kitchener',
           definition:
             'The British Secretary of State for War in 1914 who foresaw a long war and launched the famous "Your Country Needs You" recruitment drive.',
+          syllables: 'Lord Ki-tche-ner',
+          phonetic: 'lord kitchener',
+          tier: '3',
         },
         {
           term: 'Pals Battalions',
           definition:
             'Specially formed British army units composed of friends, neighbours, and work colleagues who enlisted and served together.',
+          syllables: 'Pals Ba-tta-lions',
+          phonetic: 'pals battalions',
+          tier: '2',
         },
         {
           term: 'White Feather',
           definition:
             'A traditional symbol of cowardice handed out by civilian women to young men out of uniform to shame them into enlisting.',
+          syllables: 'Whi-te Fea-ther',
+          phonetic: 'white feather',
+          tier: '3',
         },
         {
           term: 'Pragmatism',
           definition:
             'Making choices based on practical material benefits—such as guaranteed wages, hot food, and boots—rather than romantic ideals.',
+          syllables: 'Pra-gma-tism',
+          phonetic: 'pragmatism',
+          tier: '3',
         },
         {
           term: 'Jingoism',
           definition:
             'Extreme, aggressive patriotism characterized by enthusiastic support for war and imperial prestige.',
+          syllables: 'Ji-ngoism',
+          phonetic: 'jingoism',
+          tier: '3',
         },
       ],
       do_now: {
@@ -1515,41 +1533,65 @@ const great_war_part2_data = {
           term: 'Stalemate',
           definition:
             'A deadlocked military situation where neither army can advance, maneuver, or achieve a decisive breakthrough.',
+          syllables: 'stale-mate',
+          phonetic: 'ˈsteɪlmeɪt',
+          tier: '2',
         },
         {
           term: "No Man's Land",
           definition:
             'The desolate, shell-blasted terrain lying between the forward firing trenches of opposing armies.',
+          syllables: "No Man's Land",
+          phonetic: "no man's land",
+          tier: '3',
         },
         {
           term: 'Artillery',
           definition:
             'Heavy long-range guns, howitzers, and mortar batteries that caused approximately 60% of all battlefield casualties.',
+          syllables: 'ar-til-ler-y',
+          phonetic: 'ɑːˈtɪləri',
+          tier: '3',
         },
         {
           term: 'Attrition',
           definition:
             'A military strategy of wearing down an enemy through continuous, sustained loss of personnel and material.',
+          syllables: 'A-ttri-tion',
+          phonetic: 'attrition',
+          tier: '2',
         },
         {
           term: 'Trench Foot',
           definition:
             'A painful, necrotic fungal condition caused by prolonged standing in freezing water and mud, risking amputation.',
+          syllables: 'Trench Foot',
+          phonetic: 'trench foot',
+          tier: '3',
         },
         {
           term: 'Shell Shock',
           definition:
             'Severe psychological and neurological trauma caused by relentless, concussive artillery bombardment (PTSD).',
+          syllables: 'Shell Shock',
+          phonetic: 'shell shock',
+          tier: '2',
         },
         {
           term: 'Field Marshal Douglas Haig',
           definition:
             'Commander-in-Chief of the British forces on the Western Front, controversially dubbed "The Butcher of the Somme".',
+          syllables: 'Field Ma-rshal Dou-glas Haig',
+          phonetic: 'field marshal douglas haig',
+          tier: '2',
         },
         {
           term: 'Creeping Barrage',
           definition:
             'A coordinated artillery tactic where a moving wall of falling shells advances just ahead of charging infantry.',
+          syllables: 'Cree-ping Ba-rra-ge',
+          phonetic: 'creeping barrage',
+          tier: '3',
         },
       ],
       do_now: {
@@ -2976,40 +3018,64 @@ const great_war_part2_data = {
           term: 'British Empire',
           definition:
             'The global network of colonies, dominions, and protectorates ruled by Great Britain, containing over 400 million people in 1914.',
+          syllables: 'Bri-tish E-mpi-re',
+          phonetic: 'british empire',
+          tier: '3',
         },
         {
           term: 'Sepoy',
           definition: 'An Indian infantry soldier serving within the British Indian Army.',
+          syllables: 'Se-poy',
+          phonetic: 'sepoy',
+          tier: '2',
         },
         {
           term: 'Victoria Cross',
           definition:
             'Britain’s highest and most prestigious military medal for valor in the face of the enemy, first awarded to an Indian soldier in 1914.',
+          syllables: 'Vi-cto-ria Cross',
+          phonetic: 'victoria cross',
+          tier: '3',
         },
         {
           term: 'Chinese Labour Corps',
           definition:
             'A force of ~140,000 Chinese civilian workers recruited by Britain and France to perform essential military logistics on the Western Front.',
+          syllables: 'Chi-nese La-bour Corps',
+          phonetic: 'chinese labour corps',
+          tier: '2',
         },
         {
           term: 'British West Indies Regiment',
           definition:
             'A colonial military unit of over 16,000 Caribbean volunteers, largely restricted by racial segregation to hazardous manual labour.',
+          syllables: 'Bri-tish West I-ndies Re-giment',
+          phonetic: 'british west indies regiment',
+          tier: '2',
         },
         {
           term: 'Royal Pavilion, Brighton',
           definition:
             'A flamboyant royal palace converted into a specialized military hospital for wounded Indian soldiers in 1914–1916.',
+          syllables: 'Royal Pa-vilion, Bri-ghton',
+          phonetic: 'royal pavilion, brighton',
+          tier: '2',
         },
         {
           term: 'Imperial Censorship',
           definition:
             'The systematic reading, intercepting, and suppression of letters sent by colonial troops to prevent anti-war sentiment.',
+          syllables: 'I-mpe-rial Ce-nsorship',
+          phonetic: 'imperial censorship',
+          tier: '3',
         },
         {
           term: 'Self-Determination',
           definition:
             'The political principle that nations and colonized peoples have the right to choose their own government and sovereignty.',
+          syllables: 'Self-De-te-rmi-nation',
+          phonetic: 'self-determination',
+          tier: '2',
         },
       ],
       do_now: {
@@ -4389,41 +4455,65 @@ const great_war_part2_data = {
           term: 'Home Front',
           definition:
             'The civilian population and domestic activities of a nation whose armed forces are engaged in war abroad.',
+          syllables: 'Home Front',
+          phonetic: 'home front',
+          tier: '3',
         },
         {
           term: 'DORA',
           definition:
             'The Defence of the Realm Act (August 1914), emergency legislation granting the British government sweeping control over civilian life.',
+          syllables: 'DORA',
+          phonetic: 'dora',
+          tier: '3',
         },
         {
           term: 'Conscription',
           definition:
             'Compulsory military enlistment of citizens enforced by law, introduced in Britain via the Military Service Act of January 1916.',
+          syllables: 'con-scrip-tion',
+          phonetic: 'kənˈskrɪpʃən',
+          tier: '3',
         },
         {
           term: 'Conscientious Objector',
           definition:
             'An individual who claims the legal right to refuse military service on grounds of religious, moral, or political conscience.',
+          syllables: 'Co-nscie-ntious O-bjector',
+          phonetic: 'conscientious objector',
+          tier: '2',
         },
         {
           term: 'Munitionettes',
           definition:
             'The hundreds of thousands of British women who worked in heavy arms factories manufacturing shells and weapons.',
+          syllables: 'Mu-nitio-ne-ttes',
+          phonetic: 'munitionettes',
+          tier: '3',
         },
         {
           term: 'Canary Girls',
           definition:
             'Female munitions workers whose skin, hair, and eyes turned bright yellow due to toxic chemical exposure while handling TNT explosives.',
+          syllables: 'Ca-nary Girls',
+          phonetic: 'canary girls',
+          tier: '2',
         },
         {
           term: 'Compulsory Rationing',
           definition:
             'The legal restriction of food and essential goods (sugar, butter, meat, tea) introduced in early 1918 to combat U-boat shortages.',
+          syllables: 'Co-mpulso-ry Ra-tio-ning',
+          phonetic: 'compulsory rationing',
+          tier: '2',
         },
         {
           term: 'Representation of the People Act',
           definition:
             'The landmark 1918 legislation granting the parliamentary vote to all men over 21 and property-owning women over 30.',
+          syllables: 'Re-pre-se-nta-tion of the Peo-ple Act',
+          phonetic: 'representation of the people act',
+          tier: '3',
         },
       ],
       do_now: {
@@ -5824,41 +5914,65 @@ const great_war_part2_data = {
           term: 'The Big Three',
           definition:
             'The primary Allied leaders who negotiated the Treaty of Versailles: Georges Clemenceau (France), David Lloyd George (Britain), and Woodrow Wilson (USA).',
+          syllables: 'The Big Three',
+          phonetic: 'the big three',
+          tier: '3',
         },
         {
           term: 'Georges Clemenceau',
           definition:
             'Prime Minister of France ("The Tiger"), who demanded severe reparations, territorial dismemberment, and military restrictions to permanently weaken Germany.',
+          syllables: 'Geo-rges Cle-me-nceau',
+          phonetic: 'georges clemenceau',
+          tier: '2',
         },
         {
           term: 'Woodrow Wilson',
           definition:
             'President of the United States who proposed the idealistic Fourteen Points, championing self-determination and the League of Nations.',
+          syllables: 'Woo-drow Wi-lson',
+          phonetic: 'woodrow wilson',
+          tier: '2',
         },
         {
           term: 'Diktat',
           definition:
             'The German term for the "dictated peace", reflecting outrage that Germany was excluded from negotiations and forced to sign under threat of invasion.',
+          syllables: 'dik-tat',
+          phonetic: 'dɪkˈtæt',
+          tier: '3',
         },
         {
           term: 'Article 231',
           definition:
             'The "War Guilt Clause" of the Treaty of Versailles, forcing Germany to accept sole moral and legal responsibility for causing the war.',
+          syllables: 'A-rticle 231',
+          phonetic: 'article 231',
+          tier: '3',
         },
         {
           term: 'Reparations',
           definition:
             'Compulsory financial compensation paid by a defeated nation; fixed for Germany at £6.6 billion ($33 billion) in 1921.',
+          syllables: 'rep-a-ra-tions',
+          phonetic: 'ˌrɛpəˈreɪʃənz',
+          tier: '3',
         },
         {
           term: 'Demilitarized Zone',
           definition:
             'An area where military forces, fortifications, and weapons are legally prohibited, imposed on the German Rhineland in 1919.',
+          syllables: 'De-mili-tari-zed Zone',
+          phonetic: 'demilitarized zone',
+          tier: '2',
         },
         {
           term: 'League of Nations',
           definition:
             'An international organization founded in 1920 to maintain global peace through collective security, which Germany was initially barred from joining.',
+          syllables: 'Lea-gue of Na-tions',
+          phonetic: 'league of nations',
+          tier: '2',
         },
       ],
       do_now: {

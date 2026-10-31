@@ -439,22 +439,27 @@
        PAGES 3–7: FIVE CANONICAL ENQUIRIES (1 PAGE PER ENQUIRY)
        ========================================================================== */
     .page-lesson {
+      padding: 9mm 14mm 8mm 14mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
+    .page-lesson .running-header {
+      margin-bottom: 4px;
+    }
+
     .enquiry-banner {
       border-bottom: 1.5px solid #0f172a;
-      padding-bottom: 4px;
-      margin-bottom: 6px;
+      padding-bottom: 3.5px;
+      margin-bottom: 4px;
     }
 
     .enquiry-meta-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }
 
     .enquiry-pill {
@@ -478,24 +483,24 @@
 
     .enquiry-title {
       font-family: 'Cinzel', serif;
-      font-size: 13pt;
+      font-size: 12pt;
       font-weight: 900;
       line-height: 1.1;
       color: #0f172a;
-      margin: 2px 0 2px 0;
+      margin: 1.5px 0 1.5px 0;
     }
 
     .enquiry-core-question {
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
-      font-size: 8.2pt;
+      font-size: 7.8pt;
       line-height: 1.25;
       color: #1e3a8a;
       background: #f8fafc;
       border-left: 3px solid #1e3a8a;
-      padding: 2.5px 8px;
+      padding: 2px 7px;
       border-radius: 0 2px 2px 0;
-      margin-top: 2px;
+      margin-top: 1.5px;
     }
 
     .enquiry-core-question .label {
@@ -527,9 +532,9 @@
     }
 
     .block-section {
-      break-inside: avoid;
-      page-break-inside: avoid;
-      margin-bottom: 5px;
+      break-inside: auto;
+      page-break-inside: auto;
+      margin-bottom: 4px;
     }
 
     .block-header {
@@ -539,6 +544,8 @@
       border-bottom: 1px solid #cbd5e1;
       padding-bottom: 1.5px;
       margin-bottom: 2px;
+      break-after: avoid;
+      page-break-after: avoid;
     }
 
     .block-ref {
@@ -563,6 +570,10 @@
     .block-prose p {
       margin: 0 0 3px 0;
       text-indent: 0;
+      break-inside: auto;
+      page-break-inside: auto;
+      orphans: 2;
+      widows: 2;
     }
 
     .block-prose p:last-child {
@@ -585,14 +596,9 @@
       background: #f8fafc;
       border-radius: 0 3px 3px 0;
       line-height: 1.2;
+      break-after: avoid;
+      page-break-after: avoid;
     }
-
-    /* Calibrated base styling per enquiry */
-    .page-lesson-1 .block-prose { font-size: 8.2pt; line-height: 1.28; }
-    .page-lesson-2 .block-prose { font-size: 8.4pt; line-height: 1.30; }
-    .page-lesson-3 .block-prose { font-size: 9.0pt; line-height: 1.36; }
-    .page-lesson-4 .block-prose { font-size: 8.9pt; line-height: 1.35; }
-    .page-lesson-5 .block-prose { font-size: 9.0pt; line-height: 1.36; }
 
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -970,57 +976,57 @@
       <div class="prose-body">
         <div class="prose-columns">
           
-              <div class="block-section" style="margin-bottom: 3.5px;">
+              <div class="block-section" style="margin-bottom: 2px;">
                 <div class="block-header">
                   <span class="block-ref">[1.1]</span>
                   <span class="block-title">Mercantilism, The Navigation Acts &amp; Global Trade Monopolies (1783–1805)</span>
                 </div>
                 <div class="block-workbook-question">Why did Britain rely on mercantilism and navigation laws?</div>
-                <div class="block-prose" style="font-size: 7.2pt; line-height: 1.18;">
+                <div class="block-prose" style="font-size: 7.95pt; line-height: 1.18;">
                   <p class="prose-p">By the late eighteenth century, Great Britain was rapidly constructing the largest commercial empire in world history. This global expansion was governed by the economic doctrine of <strong>mercantilism</strong>—the belief that the wealth of nations was finite, measured in gold and silver, and that colonies existed solely to enrich the mother country. Under the strict <strong>Navigation Acts</strong>, foreign merchant ships were banned from trading directly with British colonies. All colonial goods had to be transported exclusively aboard British-built ships manned by majority-British crews, routing all imperial profits directly into the port cities of London, Bristol, and Liverpool.<br><br>Under this closed imperial trading circuit, colonies were prohibited from developing their own competing manufacturing industries. Instead, colonial economies were restricted to extracting cheap agricultural commodities and raw materials—such as Caribbean sugar, American and Indian raw cotton, and Canadian timber. These raw goods were shipped to domestic industrial mills in Lancashire and Glasgow, where British factories transformed them into high-value manufactured products to be re-exported globally at huge profit.<br><br>This mercantilist system was vividly celebrated in contemporary imperial culture. As depicted in <strong>Source A</strong> (Walter Crane’s famous 1886 Imperial Federation Map), British cartographers placed Greenwich and the British Isles at the physical center of the world. Shading British possessions across five continents in vibrant imperial pink, the map visually reinforced the belief that Britain was the natural hub of global commerce, civilization, and maritime law.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.5px;">
+              <div class="block-section" style="margin-bottom: 2px;">
                 <div class="block-header">
                   <span class="block-ref">[1.2]</span>
                   <span class="block-title">The Portsmouth Naval Complex, Trafalgar &amp; Steam Supremacy (1805–1860)</span>
                 </div>
                 <div class="block-workbook-question">How did naval dominance at Trafalgar secure Britain’s maritime supremacy?</div>
-                <div class="block-prose" style="font-size: 7.2pt; line-height: 1.18;">
+                <div class="block-prose" style="font-size: 7.95pt; line-height: 1.18;">
                   <p class="prose-p">Britain’s mercantilist trade empire was completely dependent upon absolute maritime supremacy. Following Admiral Lord Nelson’s decisive victory over the combined French and Spanish fleets at the <strong>Battle of Trafalgar (1805)</strong>, the Royal Navy established uncontested command of the world's oceans. Operating from fortified overseas naval bases—including Gibraltar, Malta, the Cape of Good Hope, and Singapore—British warships protected vital merchant convoys against piracy and rival European fleets, establishing a century of global peace known as the <strong>Pax Britannica</strong>.<br><br>The industrial powerhouse that sustained this maritime supremacy was the <strong>Portsmouth Royal Dockyard</strong>. Employing over ten thousand skilled dockyard smiths, shipwrights, and engineers, Portsmouth became the largest industrial manufacturing complex in the world. Portsmouth pioneered steam-powered mass production: Marc Brunel’s revolutionary Block Mills automated the manufacturing of 130,000 wooden rigging blocks annually, cutting production costs and enabling the Admiralty to maintain and repair warships faster than any rival power.<br><br>When steam power and explosive naval shells rendered traditional wooden sailing ships vulnerable, Portsmouth dockyards led the industrial transition. In 1860, Britain launched <strong>HMS Warrior</strong> (<strong>Source B</strong>)—the world's first iron-hulled, armor-plated steam battleship. Powered by massive steam engines driving a single propeller, carrying 4.5 inches of wrought-iron armor and revolutionary breech-loading guns, Warrior rendered every wooden fleet on earth obsolete overnight, guaranteeing Britain's naval deterrence for decades.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.5px;">
+              <div class="block-section" style="margin-bottom: 2px;">
                 <div class="block-header">
                   <span class="block-ref">[1.3]</span>
                   <span class="block-title">The Corporate Balance Sheet: Clive, the EIC &amp; The Diwani Surplus (1765–1790)</span>
                 </div>
                 <div class="block-workbook-question">Why was Portsmouth Royal Dockyard the industrial heart of global empire?</div>
-                <div class="block-prose" style="font-size: 7.2pt; line-height: 1.18;">
+                <div class="block-prose" style="font-size: 7.95pt; line-height: 1.18;">
                   <p class="prose-p">While the Royal Navy dominated the seas, British expansion in Asia was spearheaded not by the British Crown, but by a private corporation: the <strong>Honourable East India Company (EIC)</strong>. Chartered by Queen Elizabeth I in 1600, the EIC evolved over two centuries from a commercial trading venture into a sovereign militarized corporate empire. Backed by its own private army of more than 200,000 native Indian soldiers (sepoys) led by British officers, the Company systematically subjugated regional Indian rulers.<br><br>The turning point in corporate conquest came at the Battle of Plassey (1757) and the Battle of Buxar (1764). In the resulting <strong>Treaty of Allahabad (1765)</strong>, the defeated Mughal Emperor Shah Alam II was forced to grant Lord Clive the <strong>Diwani</strong>—the sole legal right to collect all land revenues and customs taxes from the wealthy province of Bengal, home to twenty million people.<br><br>As revealed in Robert Clive’s private letter to the EIC Court of Directors (<strong>Source C</strong>), Clive calculated that the tax revenues of Bengal would yield a clear annual surplus of over £2 million sterling to enrich Company shareholders in London. Rather than providing governance or public welfare, the Company treated an entire subcontinent as a commercial balance sheet, extracting vast revenues to finance further territorial conquests.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.5px;">
+              <div class="block-section" style="margin-bottom: 2px;">
                 <div class="block-header">
                   <span class="block-ref">[1.4]</span>
                   <span class="block-title">Industrial Ruin: The Destruction of the Bengal Textile Weavers (1790–1840)</span>
                 </div>
                 <div class="block-workbook-question">How did HMS Warrior render all wooden naval fleets obsolete overnight?</div>
-                <div class="block-prose" style="font-size: 7.2pt; line-height: 1.18;">
+                <div class="block-prose" style="font-size: 7.95pt; line-height: 1.18;">
                   <p class="prose-p">For centuries prior to British conquest, India had been the textile workshop of the world, renowned for producing exquisite, handwoven muslins and calicoes that were traded throughout Europe, Africa, and Asia. However, as Britain industrialized, British cotton manufacturers in Manchester viewed Indian handloom textiles as dangerous competition. Parliament intervened by imposing punitive import tariffs of 70% to 80% on Indian textiles entering Britain, while forcing India to accept machine-spun British cotton cloth with virtually no import duties.<br><br>The economic consequences for Bengal were catastrophic. Millions of skilled Indian handloom weavers, spinners, and dyers were stripped of their livelihoods as cheap Lancashire factory cotton flooded domestic Indian markets. Prosperous weaving metropolises like Dhaka and Murshidabad were economically decimated, causing Governor-General Lord William Bentinck to report to Parliament that 'the bones of the cotton weavers are bleaching the plains of India'.<br><br>The 1840 Parliamentary Select Committee report on East India Affairs (<strong>Source D</strong>) documented how British customs policy had systematically inverted the Indian economy: transforming India from the world's leading exporter of manufactured finished cloth into an impoverished supplier of cheap raw cotton to feed British industrial factories.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.5px;">
+              <div class="block-section" style="margin-bottom: 2px;">
                 <div class="block-header">
                   <span class="block-ref">[1.5]</span>
                   <span class="block-title">East India House, London Capital &amp; Commercial Hegemony (1800–1889)</span>
                 </div>
                 <div class="block-workbook-question">How did the Two-Power Standard doctrine formalize British naval dominance?</div>
-                <div class="block-prose" style="font-size: 7.2pt; line-height: 1.18;">
+                <div class="block-prose" style="font-size: 7.95pt; line-height: 1.18;">
                   <p class="prose-p">The wealth extracted from colonial territories flowed directly into the financial center of London. From its neoclassical headquarters at <strong>East India House</strong> on Leadenhall Street (<strong>Source E</strong>), a small committee of private corporate directors governed an empire of over 100 million subjects. City of London banks, insurance firms like Lloyd’s, and shipping merchants reinvested colonial revenues into railways, docks, and telegraph cables, binding the British Empire into a unified global web of capital.<br><br>This economic supremacy was reinforced through <strong>gunboat diplomacy</strong>. Whenever foreign rulers resisted British commercial terms or attempted to protect domestic industries, the Royal Navy deployed iron warships to bombard coastal ports, forcing the signature of 'unequal treaties' that opened foreign markets to British goods. From the Opium Wars in China to naval interventions in Latin America, British free-trade rhetoric was backed by coercive naval firepower.<br><br>To ensure permanent deterrence, Parliament passed the <strong>Naval Defence Act of 1889</strong>, codifying the famous <strong>Two-Power Standard</strong>: a statutory requirement that the Royal Navy must equal or exceed the combined naval strength of the world's next two largest navies combined (France and Russia). This guaranteed that British commercial dominance remained impregnable throughout the Victorian era.</p>
                 </div>
               </div>
@@ -1057,57 +1063,57 @@
       <div class="prose-body">
         <div class="prose-columns">
           
-              <div class="block-section" style="margin-bottom: 3.2px;">
+              <div class="block-section" style="margin-bottom: 2px;">
                 <div class="block-header">
                   <span class="block-ref">[2.1]</span>
                   <span class="block-title">Corporate Conquerors: Plassey, The Bengal Diwani &amp; Plunder (1757–1765)</span>
                 </div>
                 <div class="block-workbook-question">Why was Mughal India the world’s leading textile workshop in 1700?</div>
-                <div class="block-prose" style="font-size: 7.1pt; line-height: 1.17;">
+                <div class="block-prose" style="font-size: 8.15pt; line-height: 1.2;">
                   <p class="prose-p">The conquest of India began not as a state invasion by the British Crown, but as an aggressive corporate takeover by the <strong>East India Company (EIC)</strong>. In 1757, Robert Clive defeated the Nawab of Bengal at the <strong>Battle of Plassey</strong> through bribery, political conspiracy, and military force. Clive installed a puppet ruler, demanding massive cash reparations that personally enriched Company officials and created an era of unchecked corporate plunder.<br><br>Following the Battle of Buxar (1764), Clive secured the ultimate corporate prize: the <strong>Grant of the Diwani (1765)</strong> from the Mughal Emperor Shah Alam II. As illustrated in Benjamin West’s ceremonial painting (<strong>Source A</strong>), the Emperor formally handed over the sole legal right to assess and collect all land taxes across Bengal, Bihar, and Orissa. The Company transformed overnight from a commercial tenant into the de facto sovereign ruler of twenty million people.<br><br>Company rule brought devastating economic extraction. EIC tax collectors tripled agricultural levies and forced Indian peasants to cultivate cash crops like opium and indigo instead of staple food grains. When monsoon rains failed in 1769–1770, the Company refused to lower tax demands or open grain reserves, causing the <strong>Great Bengal Famine of 1770</strong> in which an estimated ten million people perished while Company profits soared.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.2px;">
+              <div class="block-section" style="margin-bottom: 2px;">
                 <div class="block-header">
                   <span class="block-ref">[2.2]</span>
                   <span class="block-title">The Doctrine of Lapse, Annexation &amp; Rani Lakshmibai of Jhansi (1848–1856)</span>
                 </div>
                 <div class="block-workbook-question">Why did the British Parliament pass the protectionist Calico Acts?</div>
-                <div class="block-prose" style="font-size: 7.1pt; line-height: 1.17;">
+                <div class="block-prose" style="font-size: 8.15pt; line-height: 1.2;">
                   <p class="prose-p">In the 1840s and 1850s, Governor-General Lord Dalhousie accelerated territorial expansion through the aggressive legal mechanism known as the <strong>Doctrine of Lapse</strong>. Under this policy, any autonomous Indian princely state whose ruler died without a direct biological male heir was declared to have 'lapsed' and was automatically annexed by the East India Company, refusing to recognize ancient Hindu adoption customs.<br><br>Under the Doctrine of Lapse, Dalhousie annexed major princely states including Satara, Sambalpur, Nagpur, and in 1853, the kingdom of <strong>Jhansi</strong>. When the Maharaja of Jhansi died, Dalhousie rejected his adopted son and annexed the kingdom, seizing state jewels and reducing his widow, <strong>Rani Lakshmibai</strong> (<strong>Source B</strong>), to a small pension. Rani Lakshmibai fiercely petitioned the British Crown, declaring 'I shall not surrender my Jhansi', but her appeals were arrogantly dismissed.<br><br>In 1856, Dalhousie seized the ancient Kingdom of <strong>Awadh (Oudh)</strong> under the pretext of 'misgovernance', deposing the Nawab. This proved disastrous: over 75,000 high-caste Hindu and Muslim sepoys in the Company's Bengal Army were recruited from Awadh. Sepoys saw their homeland annexed, their families burdened with new British land taxes, and their traditional royal court dismantled, creating explosive anti-British resentment across northern India.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.2px;">
+              <div class="block-section" style="margin-bottom: 2px;">
                 <div class="block-header">
                   <span class="block-ref">[2.3]</span>
                   <span class="block-title">The Spark at Meerut: Enfield Cartridges &amp; The Azamgarh Manifesto (May 1857)</span>
                 </div>
                 <div class="block-workbook-question">How did the Diwani of Bengal invert the financial flow between Britain and India?</div>
-                <div class="block-prose" style="font-size: 7.1pt; line-height: 1.17;">
+                <div class="block-prose" style="font-size: 8.15pt; line-height: 1.2;">
                   <p class="prose-p">By 1857, the Bengal Army was a powder keg of religious and cultural grievances. In early 1857, the British introduced the new <strong>Pattern 1853 Enfield rifle</strong>. To load the weapon, soldiers had to bite open paper cartridges greased with animal fat. Rumors spread rapidly that the grease was a mixture of beef fat (sacred to Hindus) and pork lard (forbidden to Muslims). Indian soldiers feared this was a deliberate plot by British military chaplains to destroy their caste and forcibly convert them to Christianity.<br><br>When eighty-five sepoys at <strong>Meerut</strong> refused to load the cartridges on 9 May 1857, they were stripped of their uniforms, shackled in irons, and sentenced to ten years' hard labor. The following day, their comrades mutinied, killed their British officers, broke open the jail, and marched thirty miles to Delhi, capturing the historic imperial capital and proclaiming the elderly Mughal Emperor Bahadur Shah Zafar as the supreme leader of India.<br><br>The rebellion quickly evolved from a military mutiny into a nationwide war of independence uniting Hindus and Muslims. In August 1857, rebel leaders published the <strong>Azamgarh Proclamation</strong> (<strong>Source C</strong>), outlining the comprehensive grievances of Indian society: zamindars (landlords) ruined by extortionate taxes, merchants stripped of trade monopolies, artisans starved by British imports, and religious scholars threatened by missionary interference.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.2px;">
+              <div class="block-section" style="margin-bottom: 2px;">
                 <div class="block-header">
                   <span class="block-ref">[2.4]</span>
                   <span class="block-title">The Defense of Jhansi, Siege of Delhi &amp; The Campaign Map (1857–1858)</span>
                 </div>
                 <div class="block-workbook-question">How did steam machinery and rigged tariffs dismantle Indian handloom weaving?</div>
-                <div class="block-prose" style="font-size: 7.1pt; line-height: 1.17;">
+                <div class="block-prose" style="font-size: 8.15pt; line-height: 1.2;">
                   <p class="prose-p">The rebellion ignited across the entire Gangetic plain of northern India, as mapped in <strong>Source E</strong> (Military Campaign Map of the 1857–1858 Rebellion). Key regional power centers—including Delhi, Kanpur, Lucknow, and Jhansi—rose in coordinated revolt. At Kanpur, rebel forces led by Nana Sahib besieged British garrisons; at Lucknow, British forces were trapped inside the Residency for five months before relief columns arrived.<br><br>In central India, Rani Lakshmibai assumed military command of Jhansi, rallying 14,000 rebel troops. Dressed in warrior's armor and leading cavalry charges from the front, she defended Jhansi Fort for weeks against Sir Hugh Rose’s British army. Even British commanders praised her military brilliance, with Rose later recording that she was 'the bravest, best, and most dangerous rebel leader'.<br><br>The British response was ruthlessly brutal. Reinforced by loyal Sikh, Gurkha, and Punjabi regiments who had no loyalty to the Mughal court, British forces recaptured Delhi in September 1857. British columns carried out indiscriminate retaliatory massacres, summarily hanging villagers and tying captured sepoys to the mouths of cannons to be blown to pieces in public spectacles of colonial terror.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.2px;">
+              <div class="block-section" style="margin-bottom: 2px;">
                 <div class="block-header">
                   <span class="block-ref">[2.5]</span>
                   <span class="block-title">Retribution, The Fall of the Company &amp; Queen Victoria's Proclamation (1858)</span>
                 </div>
                 <div class="block-workbook-question">Why did Governor-General Bentinck write that "the bones of weavers bleach the plains"?</div>
-                <div class="block-prose" style="font-size: 7.1pt; line-height: 1.17;">
+                <div class="block-prose" style="font-size: 8.15pt; line-height: 1.2;">
                   <p class="prose-p">The catastrophe of the 1857 Rebellion proved that a private commercial corporation could no longer be trusted to govern a subcontinent of 200 million people. In August 1858, the British Parliament passed the <strong>Government of India Act 1858</strong>, abolishing the East India Company's governing powers, dissolving its private mercenary army, and transferring all sovereign authority directly to the British Crown.<br><br>On 1 November 1858, Queen Victoria issued her historic <strong>Royal Proclamation</strong> (<strong>Source D</strong>), read aloud at durbars across India. The Proclamation promised that the British Crown would respect native religions, cease aggressive territorial annexations under the Doctrine of Lapse, and guarantee equal protection under imperial law to all Indian subjects regardless of race or creed.<br><br>However, while Victoria’s Proclamation promised equality, the reality of the newly established <strong>British Raj</strong> was characterized by deep racial segregation and military caution. The ratio of British to Indian troops in the army was permanently doubled, sepoys were denied modern artillery, and senior administrative positions remained the exclusive preserve of white British elites, entrenching British colonial control until independence in 1947.</p>
                 </div>
               </div>
@@ -1144,57 +1150,57 @@
       <div class="prose-body">
         <div class="prose-columns">
           
-              <div class="block-section" style="margin-bottom: 3.1px;">
+              <div class="block-section" style="margin-bottom: 2.2px;">
                 <div class="block-header">
                   <span class="block-ref">[3.1]</span>
                   <span class="block-title">The Portsmouth Spithead Departure &amp; The Convict Crisis (1787)</span>
                 </div>
                 <div class="block-workbook-question">Why did Lord Dalhousie’s Doctrine of Lapse alienate Indian royal dynasties?</div>
-                <div class="block-prose" style="font-size: 7.6pt; line-height: 1.22;">
+                <div class="block-prose" style="font-size: 8.65pt; line-height: 1.25;">
                   <p class="prose-p">Following the loss of the Thirteen American Colonies in the American War of Independence (1775–1783), Great Britain faced a catastrophic penal crisis. Previously, Britain had transported over 50,000 convicted felons to Maryland and Virginia. With American ports closed, English prisons overflowed, forcing authorities to house prisoners in horrific, disease-ridden prison hulks—decommissioned wooden warships anchored along the River Thames and Portsmouth harbour.<br><br>Seeking a permanent solution and an imperial base in the Pacific to counter French exploration, Prime Minister William Pitt authorized the colonisation of New South Wales, charted by Captain James Cook in 1770. On 13 May 1787, the <strong>First Fleet</strong>—commanded by Captain Arthur Phillip—set sail from the naval anchorage at Spithead off Portsmouth (<strong>Source A</strong>).<br><br>The fleet comprised eleven wooden sailing vessels carrying 1,480 people, including 775 convicts (many convicted of petty theft like stealing bread or clothes), marine guards, and naval officers. The perilous eight-month voyage covered 15,000 nautical miles across uncharted southern oceans without losing a single ship, marking the birth of modern settler colonialism in Australia.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.1px;">
+              <div class="block-section" style="margin-bottom: 2.2px;">
                 <div class="block-header">
                   <span class="block-ref">[3.2]</span>
                   <span class="block-title">The Legal Fiction of Terra Nullius &amp; Botany Bay Settlement (January 1788)</span>
                 </div>
                 <div class="block-workbook-question">Why was the Enfield rifle cartridge the explosive catalyst for rebellion?</div>
-                <div class="block-prose" style="font-size: 7.6pt; line-height: 1.22;">
+                <div class="block-prose" style="font-size: 8.65pt; line-height: 1.25;">
                   <p class="prose-p">On 18 January 1788, the First Fleet anchored in Botany Bay (<strong>Source B</strong>), before moving to the superior natural harbour of Port Jackson (Sydney Cove). On 26 January 1788, Captain Phillip hoisted the British Union Flag, formally proclaiming British sovereignty over eastern Australia.<br><br>This imperial annexation was legally justified through the doctrine of <strong>Terra Nullius</strong>—the convenient legal fiction that the Australian continent was 'nobody’s land'. Because Aboriginal Australians lived nomadic lifestyles based on spiritual connection to the land rather than European-style fenced farming, stone houses, or written property deeds, British jurists declared that the continent had no legal owners.<br><br>In reality, Australia had been continuously inhabited and stewarded for over 65,000 years by more than 250 distinct Aboriginal nations with sophisticated legal codes, songlines, and land-management practices. By declaring Terra Nullius, the British Crown bypassed the legal requirement to sign treaties or purchase land, establishing settler colonialism through immediate dispossession.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.1px;">
+              <div class="block-section" style="margin-bottom: 2.2px;">
                 <div class="block-header">
                   <span class="block-ref">[3.3]</span>
                   <span class="block-title">Frontier Warfare, Dispossession &amp; Pemulwuy's Resistance (1790–1810)</span>
                 </div>
                 <div class="block-workbook-question">Why was the march from Meerut to Delhi a political masterstroke for the rebels?</div>
-                <div class="block-prose" style="font-size: 7.6pt; line-height: 1.22;">
+                <div class="block-prose" style="font-size: 8.65pt; line-height: 1.25;">
                   <p class="prose-p">British colonisation triggered catastrophic demographic and military conflict for the First Nations. Within fifteen months of the fleet's arrival, a devastating smallpox epidemic swept through the Eora people around Sydney Cove, killing over 50% of the indigenous population and shattering family kin networks.<br><br>As British settlers expanded inland along the fertile Hawkesbury and Parramatta rivers, clear-felling bushland for cattle and sheep, Aboriginal nations organized fierce armed resistance in the <strong>Frontier Wars</strong>. Led by the Bidjigal warrior <strong>Pemulwuy</strong>, indigenous resistance fighters launched guerrilla raids on British homesteads, burning crop stores and spearing livestock.<br><br>Captain Watkin Tench’s contemporary journals (<strong>Source C</strong>) document the escalating cycle of frontier violence. Governor Phillip dispatched military punitive expeditions with orders to shoot armed warriors and display decapitated heads to terrorize resistance fighters, proving that settler occupation was enforced through armed military coercion.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.1px;">
+              <div class="block-section" style="margin-bottom: 2.2px;">
                 <div class="block-header">
                   <span class="block-ref">[3.4]</span>
                   <span class="block-title">Van Diemen's Land: The Black War &amp; Governor Arthur's Proclamations (1824–1835)</span>
                 </div>
                 <div class="block-workbook-question">How did Rani Lakshmibai of Jhansi become an enduring symbol of resistance?</div>
-                <div class="block-prose" style="font-size: 7.6pt; line-height: 1.22;">
+                <div class="block-prose" style="font-size: 8.65pt; line-height: 1.25;">
                   <p class="prose-p">In Van Diemen’s Land (Tasmania), British pastoral expansion ignited the brutal <strong>Black War</strong> (1824–1831). Armed British pastoralists and convict stockmen cleared land for sheep grazing, hunting indigenous Palawa people and kidnapping Aboriginal women and children.<br><br>In a bizarre attempt to explain British law to non-literate Aboriginal people, Lieutenant-Governor George Arthur ordered pictorial <strong>Proclamation Boards</strong> (<strong>Source E</strong>) to be painted and tied to trees throughout the bush. The boards depicted European and Aboriginal people shaking hands in friendship, followed by parallel panels showing equal punishment: an Aboriginal man hung for killing a white settler, and a white settler hung for killing an Aboriginal man.<br><br>In reality, this pictorial promise of judicial equality was complete propaganda. Governor Arthur declared martial law in 1828 and mobilized the 'Black Line'—a cordon of 2,200 soldiers and armed settlers who swept the island to capture or exterminate all remaining Aboriginal people, leading to the near-total destruction and forced exile of the Palawa nation to Flinders Island.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.1px;">
+              <div class="block-section" style="margin-bottom: 2.2px;">
                 <div class="block-header">
                   <span class="block-ref">[3.5]</span>
                   <span class="block-title">The 1851 Gold Rush, Mining Licences &amp; The Eureka Stockade (1851–1854)</span>
                 </div>
                 <div class="block-workbook-question">How did the Government of India Act 1858 permanently reshape British governance?</div>
-                <div class="block-prose" style="font-size: 7.6pt; line-height: 1.22;">
+                <div class="block-prose" style="font-size: 8.65pt; line-height: 1.25;">
                   <p class="prose-p">In 1851, the discovery of massive gold deposits in Victoria (Ballarat and Bendigo) revolutionized the Australian colonial economy. Hundreds of thousands of free immigrants from Britain, Ireland, America, and China flooded the goldfields, rapidly outnumbering the convict population and transforming Melbourne into one of the wealthiest cities in the British Empire.<br><br>However, autocratic British colonial authorities imposed a tyrannical monthly <strong>Gold Mining Licence Fee</strong> of 30 shillings, which miners had to pay regardless of whether they found gold. Corrupt colonial police conducted daily, armed 'digger hunts', harassing miners and denying them the right to vote or own land.<br><br>On 1 December 1854, over 10,000 miners gathered at Bakery Hill under the leadership of Irish immigrant Peter Lalor. Swearing the <strong>Eureka Oath</strong> (<strong>Source D</strong>) under the iconic Southern Cross flag, they built a timber stockade to resist colonial tyranny. Though British troops stormed the Eureka Stockade on 3 December, killing thirty miners, the rebellion forced Britain to grant democratic voting rights, land access, and self-government to Australian colonies.</p>
                 </div>
               </div>
@@ -1231,57 +1237,57 @@
       <div class="prose-body">
         <div class="prose-columns">
           
-              <div class="block-section" style="margin-bottom: 3.3px;">
+              <div class="block-section" style="margin-bottom: 2.2px;">
                 <div class="block-header">
                   <span class="block-ref">[4.1]</span>
                   <span class="block-title">Carving Up a Continent: The Berlin West Africa Conference (1884–1885)</span>
                 </div>
                 <div class="block-workbook-question">Why did European powers convene the 1884 Berlin West Africa Conference?</div>
-                <div class="block-prose" style="font-size: 7.7pt; line-height: 1.23;">
+                <div class="block-prose" style="font-size: 8.7pt; line-height: 1.25;">
                   <p class="prose-p">In 1870, less than 10% of the African continent was under formal European colonial control, largely limited to coastal trading enclaves and the Cape Colony. By 1914, European powers had annexed more than 90% of Africa in a rapid, predatory land grab known as the <strong>Scramble for Africa</strong>.<br><br>To prevent escalating colonial rivalries from triggering war between European states, German Chancellor Otto von Bismarck convened the <strong>Berlin Conference (1884–1885)</strong>, attended by fourteen European nations and the United States (<strong>Source A</strong>). Notably, not a single African monarch, chieftain, or representative was invited or consulted.<br><br>The conference established the doctrine of <strong>'Effective Occupation'</strong>: to claim African territory, European powers had to prove physical administrative control through military garrisons, treaties with local chiefs, or commercial chartered companies. European diplomats drew arbitrary geometric borders across vast maps, carving through ancient ethnic boundaries and kingdoms to carve out imperial spheres of influence.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.3px;">
+              <div class="block-section" style="margin-bottom: 2.2px;">
                 <div class="block-header">
                   <span class="block-ref">[4.2]</span>
                   <span class="block-title">The Industrial Technology of Conquest: Maxim Guns &amp; Quinine (1880–1900)</span>
                 </div>
                 <div class="block-workbook-question">How did the principle of Effective Occupation accelerate military conquest?</div>
-                <div class="block-prose" style="font-size: 7.7pt; line-height: 1.23;">
+                <div class="block-prose" style="font-size: 8.7pt; line-height: 1.25;">
                   <p class="prose-p">For centuries, European penetration into the interior of tropical Africa had been barred by disease and formidable African kingdoms. What made the Scramble for Africa possible in the late nineteenth century was a deadly trio of industrial technologies: medical advances, steam transport, and revolutionary automatic weapons.<br><br>The discovery that <strong>quinine</strong> extracted from South American cinchona bark protected Europeans from deadly malaria allowed British soldiers and explorers to penetrate equatorial river valleys. Meanwhile, shallow-draft steam gunboats gave British forces the ability to navigate African waterways and shell recalcitrant kingdoms with total impunity.<br><br>Most decisive of all was the invention of the <strong>Maxim machine gun</strong> in 1884 (<strong>Source B</strong>)—the world's first fully automatic, recoil-operated gun, capable of firing 600 rounds per minute. British colonial forces deployed Maxim guns with devastating lethality against indigenous armies armed only with spears and obsolete muskets, giving rise to Hilaire Belloc's cynical rhyme: 'Whatever happens, we have got / The Maxim Gun, and they have not.'</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.3px;">
+              <div class="block-section" style="margin-bottom: 2.2px;">
                 <div class="block-header">
                   <span class="block-ref">[4.3]</span>
                   <span class="block-title">Imperial Ideology &amp; The 'Civilising Mission': Kipling’s White Man’s Burden (1899)</span>
                 </div>
                 <div class="block-workbook-question">How did the Maxim gun and quinine make conquest militarily irresistible?</div>
-                <div class="block-prose" style="font-size: 7.7pt; line-height: 1.23;">
+                <div class="block-prose" style="font-size: 8.7pt; line-height: 1.25;">
                   <p class="prose-p">To justify violent territorial conquest to a domestic British public that prided itself on Christian morality, imperialists constructed an elaborate racial ideology: the <strong>'Civilising Mission'</strong> (<em>Mission Civilisatrice</em>). Influenced by distorted theories of <strong>Social Darwinism</strong>, Victorians argued that white Anglo-Saxons represented the apex of human biological and cultural evolution.<br><br>This ideology claimed that ruling colonized peoples was not self-interested exploitation, but a moral and paternal duty to bring Christianity, Western education, sanitation, and the rule of law to 'backward' societies. This paternalistic doctrine was immortalized in Rudyard Kipling’s 1899 poem <strong>The White Man’s Burden</strong> (<strong>Source C</strong>), which urged Western empires to sacrifice blood and treasure to civilize 'half-devil and half-child' colonial subjects.<br><br>Commercial advertisers quickly capitalized on this racial ideology. Famous Victorian advertising campaigns—such as Pears' Soap—openly equated soap with British racial supremacy, claiming that cleansing the dark corners of the globe was the foremost obligation of the British imperial mission.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.3px;">
+              <div class="block-section" style="margin-bottom: 2.2px;">
                 <div class="block-header">
                   <span class="block-ref">[4.4]</span>
                   <span class="block-title">The Anti-Imperialist Exposé: E. D. Morel &amp; The Black Man’s Burden (1900–1920)</span>
                 </div>
                 <div class="block-workbook-question">How did Rudyard Kipling construct the moral myth of "The White Man's Burden"?</div>
-                <div class="block-prose" style="font-size: 7.7pt; line-height: 1.23;">
+                <div class="block-prose" style="font-size: 8.7pt; line-height: 1.25;">
                   <p class="prose-p">The hypocritical rhetoric of the 'civilising mission' was fiercely challenged by contemporary investigative journalists and humanitarian reformers. Foremost among them was Anglo-French shipping clerk and journalist <strong>E. D. Morel</strong>. While working at the port of Antwerp, Morel noticed a chilling discrepancy: ships arriving from King Leopold II's Congo Free State were loaded with millions of pounds of ivory and wild rubber, but returned carrying only rifles, handcuffs, and ammunition.<br><br>Morel realized that Leopold's regime was not engaged in legitimate commerce, but was operating a colossal system of state-sponsored slave labor. Morel founded the <strong>Congo Reform Association</strong>, documenting how colonial authorities held women hostage and amputated the hands and feet of African rubber tappers who failed to meet impossible collection quotas, causing the deaths of an estimated ten million Congolese people.<br><br>In his 1920 book <strong>The Black Man’s Burden</strong> (<strong>Source D</strong>), Morel directly rebutted Kipling’s imperial propaganda. Morel argued that it was not the white man who bore the burden of empire, but the African people, whose land, labor, cultural autonomy, and physical bodies had been ground down by the unbridled greed of European industrial capitalism.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.3px;">
+              <div class="block-section" style="margin-bottom: 2.2px;">
                 <div class="block-header">
                   <span class="block-ref">[4.5]</span>
                   <span class="block-title">African Sovereign Resistance &amp; Deception: King Lobengula’s Defiance (1888–1893)</span>
                 </div>
                 <div class="block-workbook-question">How did E. D. Morel’s "The Black Man's Burden" expose colonial capitalism?</div>
-                <div class="block-prose" style="font-size: 7.7pt; line-height: 1.23;">
+                <div class="block-prose" style="font-size: 8.7pt; line-height: 1.25;">
                   <p class="prose-p">Throughout the Scramble for Africa, African rulers did not accept European domination passively; they fought back through diplomatic statecraft, armed resistance, and legal appeals. In southern Africa, <strong>King Lobengula</strong> of the Ndebele (Matabele) nation governed a powerful, militarized kingdom across modern-day Zimbabwe.<br><br>In 1888, agents representing diamond magnate <strong>Cecil Rhodes</strong> duped Lobengula into signing the <strong>Rudd Concession</strong>. Rhodes’s translators verbally assured Lobengula that only ten white men would dig for gold, but the English legal text granted Rhodes's British South Africa Company total mineral rights and the power to seize land across his entire kingdom.<br><br>When Lobengula discovered the deception, he dispatched envoys directly to London with a letter of protest to Queen Victoria (<strong>Source E</strong>), warning: 'A king gives away a thing to his people, not to foreigners. A chameleon eats a fly by walking slowly and darting its tongue.' When Rhodes's armed mercenaries invaded with Maxim guns in 1893, Lobengula led his warriors in fierce resistance until his death, demonstrating how corporate deception and machine guns crushed African sovereignty.</p>
                 </div>
               </div>
@@ -1318,57 +1324,57 @@
       <div class="prose-body">
         <div class="prose-columns">
           
-              <div class="block-section" style="margin-bottom: 3.2px;">
+              <div class="block-section" style="margin-bottom: 2.1px;">
                 <div class="block-header">
                   <span class="block-ref">[5.1]</span>
                   <span class="block-title">The Optimist Case: Industrial Triumph &amp; Rising Prosperity (1815–1880)</span>
                 </div>
                 <div class="block-workbook-question">How did the 1851 Great Exhibition proclaim Britain the Workshop of the World?</div>
-                <div class="block-prose" style="font-size: 7.7pt; line-height: 1.23;">
+                <div class="block-prose" style="font-size: 8.6pt; line-height: 1.24;">
                   <p class="prose-p">By the mid-nineteenth century, Great Britain was celebrated as the 'Workshop of the World'. Imperial optimists argued that the British Empire was the primary engine of unparalleled economic growth and technological progress, generating vast wealth that transformed Britain from an agrarian island into the financial and industrial capital of the planet.<br><br>Historical economic data on real wages and consumption (<strong>Source A</strong>) demonstrates that by the 1870s and 1880s, real wages for British industrial workers had risen by nearly 50% compared to Napoleonic levels. Cheap imported food—including Canadian wheat, New Zealand refrigerated lamb, and Caribbean sugar—dramatically lowered the cost of living for working-class families, who could now purchase exotic commodities like tea, cocoa, and tobacco previously reserved for the aristocracy.<br><br>This triumph of free-trade industrialism was spectacularly showcased at the <strong>Great Exhibition of 1851</strong> in London's Crystal Palace. Over six million visitors marvelled at locomotive engines, cotton looms, and raw treasures from India and Canada, solidifying the national conviction that imperial trade was synonymous with universal human progress.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.2px;">
+              <div class="block-section" style="margin-bottom: 2.1px;">
                 <div class="block-header">
                   <span class="block-ref">[5.2]</span>
                   <span class="block-title">The Domestic Reality: Friedrich Engels &amp; The Working-Class Slums (1845)</span>
                 </div>
                 <div class="block-workbook-question">What modern infrastructure did British colonial administration construct across India?</div>
-                <div class="block-prose" style="font-size: 7.7pt; line-height: 1.23;">
+                <div class="block-prose" style="font-size: 8.6pt; line-height: 1.24;">
                   <p class="prose-p">In stark contrast to the glittering displays of the Crystal Palace, imperial pessimists argued that the wealth of empire was concentrated in the pockets of a tiny aristocratic and financial elite, while the British working classes bore the brutal human costs of early industrialisation.<br><br>In his scathing 1845 exposé <strong>The Condition of the Working Class in England</strong> (<strong>Source B</strong>), German socialist <strong>Friedrich Engels</strong> documented the squalid reality of Manchester and Liverpool slums. While factory owners imported cheap colonial cotton and amassed private fortunes, factory workers labored sixteen hours a day in air thick with cotton dust, living in damp cellars without sanitation, running water, or medical care.<br><br>Life expectancy in industrial textile cities plunged to under twenty years for working-class children. Engels argued that the British bourgeoisie was guilty of 'social murder'—sacrificing the health and lives of domestic workers to fuel an imperial manufacturing machine that enriched only mill owners and City of London financiers.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.2px;">
+              <div class="block-section" style="margin-bottom: 2.1px;">
                 <div class="block-header">
                   <span class="block-ref">[5.3]</span>
                   <span class="block-title">Punch, Class Divide &amp; 'Capital and Labour' (1843)</span>
                 </div>
                 <div class="block-workbook-question">Why did catastrophic famines strike India while grain was exported to Britain?</div>
-                <div class="block-prose" style="font-size: 7.7pt; line-height: 1.23;">
+                <div class="block-prose" style="font-size: 8.6pt; line-height: 1.24;">
                   <p class="prose-p">The grotesque disparity between imperial wealth and domestic poverty was vividly captured in Victorian popular satire. In 1843, the satirical magazine <em>Punch</em> published John Leech's famous cartoon <strong>Capital and Labour</strong> (<strong>Source D</strong>), dividing Victorian society into two separate, irreconcilable worlds.<br><br>The upper panel depicted 'Capital'—an opulent drawing room where wealthy industrialists, bankers, and ladies in silk gowns rested upon velvet cushions, surrounded by loyal servants, crystal chandeliers, and bags of gold. The lower panel depicted 'Labour'—a dark, suffocating coal mine and sweatshop where emaciated men, half-naked women, and child seamstresses endured backbreaking toil to produce the luxuries enjoyed above.<br><br>The cartoon exposed the central contradiction of the Second British Empire: that the unprecedented wealth extracted from overseas colonies and domestic industrial mills did not trickle down to the laborers whose sweat created it, but instead widened the social chasm between the ultra-rich and the destitute.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.2px;">
+              <div class="block-section" style="margin-bottom: 2.1px;">
                 <div class="block-header">
                   <span class="block-ref">[5.4]</span>
                   <span class="block-title">The Colonial Extraction: Dadabhai Naoroji &amp; The 'Drain of Wealth' (1870–1901)</span>
                 </div>
                 <div class="block-workbook-question">How did Dadabhai Naoroji calculate the systematic "Drain of Wealth" from India?</div>
-                <div class="block-prose" style="font-size: 7.7pt; line-height: 1.23;">
+                <div class="block-prose" style="font-size: 8.6pt; line-height: 1.24;">
                   <p class="prose-p">For the colonized peoples of India and Africa, the imperial balance sheet was unequivocally destructive. In 1901, Indian scholar and first Asian British Member of Parliament <strong>Dadabhai Naoroji</strong> published his landmark treatise <strong>Poverty and Un-British Rule in India</strong> (<strong>Source C</strong>), formulating the famous economic theory of the <strong>'Drain of Wealth'</strong>.<br><br>Naoroji calculated that Britain systematically drained between £20 million and £30 million sterling every year out of India through 'Home Charges'—forcing the Indian taxpayer to pay for the British civil administration, British military campaigns in Burma and Afghanistan, and pensions for retired British officers residing in England, with zero economic return for India.<br><br>While British administrators bragged that they had built thousands of miles of railways, Naoroji pointed out that these railways were strategically designed to extract raw agricultural commodities to coastal ports and transport British troops to suppress dissent, leaving rural India vulnerable to recurring, catastrophic famines that killed millions under the Raj.</p>
                 </div>
               </div>
             
-              <div class="block-section" style="margin-bottom: 3.2px;">
+              <div class="block-section" style="margin-bottom: 2.1px;">
                 <div class="block-header">
                   <span class="block-ref">[5.5]</span>
                   <span class="block-title">The Imperial Defense &amp; Historical Verdict: Lord Curzon vs The Global Toll (1901)</span>
                 </div>
                 <div class="block-workbook-question">How do "Optimist" and "Pessimist" historians evaluate the British Empire today?</div>
-                <div class="block-prose" style="font-size: 7.7pt; line-height: 1.23;">
+                <div class="block-prose" style="font-size: 8.6pt; line-height: 1.24;">
                   <p class="prose-p">At the dawn of the twentieth century, British imperialists maintained a defiant defense of the empire's moral mission. In a celebrated 1901 speech, Viceroy of India <strong>Lord Curzon</strong> (<strong>Source E</strong>) declared that the British Empire was 'under Providence, the greatest instrument for good that the world has ever seen', claiming it had established impartial justice, abolished endemic warfare, and introduced modern legal institutions.<br><br>However, modern historical consensus recognizes that the benefits of the Second British Empire were deeply unequal and extractive. While British consumers gained access to cheap commodities and City of London financiers accumulated global capital, the empire was sustained through structural violence, the crushing of indigenous industries, and the suppression of native sovereignty from Bengal to Ballarat and the Transvaal.<br><br>In the final historical verdict, the British Empire was neither purely a philanthropic 'civilising mission' nor merely random military conquest: it was an aggressively organized, state-backed commercial empire that enriched British metropolitan elites at colossal human, economic, and cultural expense to millions of colonized subjects worldwide.</p>
                 </div>
               </div>

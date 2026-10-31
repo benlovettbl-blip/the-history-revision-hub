@@ -686,37 +686,42 @@ function buildHtml() {
        PAGES 3–7: ENQUIRY FULL PAGES (1 PAGE PER ENQUIRY)
        ========================================================================== */
     .page-lesson {
+      padding: 9mm 14mm 8mm 14mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
+    .page-lesson .running-header {
+      margin-bottom: 4px;
+    }
+
     .enquiry-banner {
-      border-bottom: 2px solid #0f172a;
-      padding-bottom: 4px;
-      margin-bottom: 6px;
+      border-bottom: 1.5px solid #0f172a;
+      padding-bottom: 3.5px;
+      margin-bottom: 4px;
     }
 
     .enquiry-meta-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }
 
     .enquiry-pill {
-      font-size: 7.5pt;
+      font-size: 6.8pt;
       font-weight: 800;
       background: #1e3a8a;
       color: #ffffff;
-      padding: 1.5px 7px;
+      padding: 1px 8px;
       border-radius: 2px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
     .enquiry-canon-tag {
-      font-size: 7pt;
+      font-size: 6.8pt;
       font-weight: 700;
       color: #64748b;
       letter-spacing: 0.05em;
@@ -724,54 +729,57 @@ function buildHtml() {
 
     .enquiry-title {
       font-family: 'Cinzel', serif;
-      font-size: 13.0pt;
+      font-size: 12pt;
       font-weight: 800;
       color: #0f172a;
-      line-height: 1.15;
-      margin: 2px 0 3px 0;
+      line-height: 1.1;
+      margin: 1.5px 0 1.5px 0;
       letter-spacing: 0.02em;
     }
 
     .enquiry-core-question {
       background: #f8fafc;
       border-left: 3px solid #1e3a8a;
-      padding: 2.5px 8px;
+      padding: 2px 7px;
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
-      font-size: 8.5pt;
-      color: #334155;
-      line-height: 1.32;
+      font-size: 7.8pt;
+      color: #1e3a8a;
+      line-height: 1.25;
+      margin-top: 1.5px;
     }
 
     .enquiry-core-question .label {
       font-family: 'Inter', sans-serif;
       font-style: normal;
-      font-size: 6.8pt;
+      font-size: 6.4pt;
       font-weight: 800;
-      color: #1e3a8a;
+      color: #64748b;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      margin-right: 5px;
+      margin-right: 4px;
     }
 
     .prose-body {
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      margin-top: 2px;
+      margin-bottom: 4px;
+      overflow: hidden;
     }
 
     .prose-columns {
       column-count: 2;
-      column-gap: 16px;
-      column-rule: 1px solid #e2e8f0;
+      column-gap: 8mm;
+      column-fill: balance;
       text-align: justify;
+      flex: 1;
     }
 
     .block-section {
-      break-inside: avoid;
-      margin-bottom: 5.5px;
+      break-inside: auto;
+      page-break-inside: auto;
+      margin-bottom: 4px;
     }
 
     .block-header {
@@ -779,23 +787,21 @@ function buildHtml() {
       align-items: baseline;
       gap: 5px;
       margin-bottom: 2px;
-      border-bottom: 1px solid #e2e8f0;
+      border-bottom: 1px solid #cbd5e1;
       padding-bottom: 1.5px;
+      break-after: avoid;
+      page-break-after: avoid;
     }
 
     .block-ref {
       font-size: 7.2pt;
-      font-weight: 800;
+      font-weight: 900;
       color: #1e3a8a;
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      padding: 0.5px 4px;
-      border-radius: 2px;
-      white-space: nowrap;
+      letter-spacing: 0.02em;
     }
 
     .block-title {
-      font-size: 8.2pt;
+      font-size: 7.6pt;
       font-weight: 800;
       color: #0f172a;
       letter-spacing: 0.02em;
@@ -807,8 +813,12 @@ function buildHtml() {
     }
 
     .block-prose p {
-      margin: 0 0 4px 0;
+      margin: 0 0 3px 0;
       text-indent: 0;
+      break-inside: auto;
+      page-break-inside: auto;
+      orphans: 2;
+      widows: 2;
     }
 
     .block-prose p:last-child {
@@ -823,22 +833,17 @@ function buildHtml() {
     .block-workbook-question {
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
-      font-size: 7.6pt;
+      font-size: 7.2pt;
       color: #1e3a8a;
-      margin-bottom: 2.5px;
+      margin-bottom: 2px;
       padding-left: 5px;
       border-left: 2px solid #3b82f6;
       background: #f8fafc;
       border-radius: 0 3px 3px 0;
-      line-height: 1.25;
+      line-height: 1.2;
+      break-after: avoid;
+      page-break-after: avoid;
     }
-
-    /* Calibrated base styling per enquiry */
-    .page-lesson-1 .block-prose { font-size: 9.8pt; line-height: 1.45; }
-    .page-lesson-2 .block-prose { font-size: 10.3pt; line-height: 1.50; }
-    .page-lesson-3 .block-prose { font-size: 10.1pt; line-height: 1.48; }
-    .page-lesson-4 .block-prose { font-size: 9.5pt; line-height: 1.42; }
-    .page-lesson-5 .block-prose { font-size: 10.1pt; line-height: 1.48; }
 
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -1218,38 +1223,48 @@ async function run() {
 
   // Dynamic Auto-Balancing Typography Engine
   console.log(
-    '\n[Auto-Balancer] Dynamically calibrating font metrics to guarantee 0px overflow & >= 95% fill...',
+    '\n[Auto-Balancer] Dynamically maximizing typography to eliminate bottom voids & guarantee 0px overflow...',
   );
   await page.evaluate(() => {
     const lessonPages = document.querySelectorAll('.page-lesson');
     lessonPages.forEach((p) => {
       const footer = p.querySelector('.running-footer');
+      const body = p.querySelector('.prose-body');
+      const cols = p.querySelector('.prose-columns');
       const proseEls = p.querySelectorAll('.block-prose');
       const sections = p.querySelectorAll('.block-section');
-      if (proseEls.length === 0 || !footer) return;
+      if (proseEls.length === 0 || !footer || !body || !cols) return;
 
-      let size = 10.4;
+      let size = 11.0;
       let lh = 1.48;
-      let secMargin = 6.0;
+      let margin = 4.5;
 
-      const getOverlap = () => {
-        const fTop = footer.getBoundingClientRect().top;
-        const children = Array.from(
-          p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question'),
+      proseEls.forEach((el) => {
+        el.style.fontSize = size.toFixed(2) + 'pt';
+        el.style.lineHeight = lh.toFixed(2);
+      });
+
+      const checkOverflow = () => {
+        const footerTop = footer.getBoundingClientRect().top;
+        const allChildren = Array.from(
+          p.querySelectorAll('p, .block-header, .block-workbook-question'),
         );
-        const maxB = Math.max(...children.map((c) => c.getBoundingClientRect().bottom));
-        return maxB - fTop;
+        const maxBottom = Math.max(...allChildren.map((el) => el.getBoundingClientRect().bottom));
+        const colOverflow =
+          cols.scrollHeight > body.clientHeight + 2 || cols.scrollWidth > cols.clientWidth + 5;
+        const footerCollision = maxBottom > footerTop - 8;
+        return colOverflow || footerCollision;
       };
 
-      while (getOverlap() > -15 && size > 8.5) {
-        size -= 0.1;
-        lh -= 0.01;
-        secMargin = Math.max(3, secMargin - 0.1);
+      while (checkOverflow() && size > 6.5) {
+        size -= 0.05;
+        lh -= 0.005;
+        margin = Math.max(2.0, margin - 0.05);
         proseEls.forEach((el) => {
           el.style.fontSize = size.toFixed(2) + 'pt';
           el.style.lineHeight = lh.toFixed(2);
         });
-        sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
+        sections.forEach((s) => (s.style.marginBottom = margin.toFixed(1) + 'px'));
       }
     });
   });

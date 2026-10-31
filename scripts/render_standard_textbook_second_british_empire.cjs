@@ -676,22 +676,27 @@ function buildHtml() {
        PAGES 3–7: FIVE CANONICAL ENQUIRIES (1 PAGE PER ENQUIRY)
        ========================================================================== */
     .page-lesson {
+      padding: 9mm 14mm 8mm 14mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
+    .page-lesson .running-header {
+      margin-bottom: 4px;
+    }
+
     .enquiry-banner {
       border-bottom: 1.5px solid #0f172a;
-      padding-bottom: 4px;
-      margin-bottom: 6px;
+      padding-bottom: 3.5px;
+      margin-bottom: 4px;
     }
 
     .enquiry-meta-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }
 
     .enquiry-pill {
@@ -715,24 +720,24 @@ function buildHtml() {
 
     .enquiry-title {
       font-family: 'Cinzel', serif;
-      font-size: 13pt;
+      font-size: 12pt;
       font-weight: 900;
       line-height: 1.1;
       color: #0f172a;
-      margin: 2px 0 2px 0;
+      margin: 1.5px 0 1.5px 0;
     }
 
     .enquiry-core-question {
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
-      font-size: 8.2pt;
+      font-size: 7.8pt;
       line-height: 1.25;
       color: #1e3a8a;
       background: #f8fafc;
       border-left: 3px solid #1e3a8a;
-      padding: 2.5px 8px;
+      padding: 2px 7px;
       border-radius: 0 2px 2px 0;
-      margin-top: 2px;
+      margin-top: 1.5px;
     }
 
     .enquiry-core-question .label {
@@ -764,9 +769,9 @@ function buildHtml() {
     }
 
     .block-section {
-      break-inside: avoid;
-      page-break-inside: avoid;
-      margin-bottom: 5px;
+      break-inside: auto;
+      page-break-inside: auto;
+      margin-bottom: 4px;
     }
 
     .block-header {
@@ -776,6 +781,8 @@ function buildHtml() {
       border-bottom: 1px solid #cbd5e1;
       padding-bottom: 1.5px;
       margin-bottom: 2px;
+      break-after: avoid;
+      page-break-after: avoid;
     }
 
     .block-ref {
@@ -800,6 +807,10 @@ function buildHtml() {
     .block-prose p {
       margin: 0 0 3px 0;
       text-indent: 0;
+      break-inside: auto;
+      page-break-inside: auto;
+      orphans: 2;
+      widows: 2;
     }
 
     .block-prose p:last-child {
@@ -822,14 +833,9 @@ function buildHtml() {
       background: #f8fafc;
       border-radius: 0 3px 3px 0;
       line-height: 1.2;
+      break-after: avoid;
+      page-break-after: avoid;
     }
-
-    /* Calibrated base styling per enquiry */
-    .page-lesson-1 .block-prose { font-size: 8.2pt; line-height: 1.28; }
-    .page-lesson-2 .block-prose { font-size: 8.4pt; line-height: 1.30; }
-    .page-lesson-3 .block-prose { font-size: 9.0pt; line-height: 1.36; }
-    .page-lesson-4 .block-prose { font-size: 8.9pt; line-height: 1.35; }
-    .page-lesson-5 .block-prose { font-size: 9.0pt; line-height: 1.36; }
 
     /* ==========================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -1191,40 +1197,48 @@ async function run() {
 
   // Dynamically calibrate fonts to ensure 0px overflow and positive clearance
   console.log(
-    '\n[Auto-Balancer] Dynamically calibrating font metrics to guarantee 0px overflow & >= 95% fill...',
+    '\n[Auto-Balancer] Dynamically maximizing typography to eliminate bottom voids & guarantee 0px overflow...',
   );
   await page.evaluate(() => {
     const lessonPages = document.querySelectorAll('.page-lesson');
     lessonPages.forEach((p) => {
       const footer = p.querySelector('.running-footer');
+      const body = p.querySelector('.prose-body');
+      const cols = p.querySelector('.prose-columns');
       const proseEls = p.querySelectorAll('.block-prose');
       const sections = p.querySelectorAll('.block-section');
-      if (proseEls.length === 0 || !footer) return;
+      if (proseEls.length === 0 || !footer || !body || !cols) return;
 
-      const firstProse = proseEls[0];
-      const style = window.getComputedStyle(firstProse);
-      let size = parseFloat(style.fontSize) * (72 / 96);
-      let lh = parseFloat(style.lineHeight) / parseFloat(style.fontSize);
-      let secMargin = 4.5;
+      let size = 11.0;
+      let lh = 1.48;
+      let margin = 4.5;
 
-      const getOverlap = () => {
-        const fTop = footer.getBoundingClientRect().top;
-        const children = Array.from(
-          p.querySelectorAll('.block-section, p, .block-header, .block-workbook-question'),
+      proseEls.forEach((el) => {
+        el.style.fontSize = size.toFixed(2) + 'pt';
+        el.style.lineHeight = lh.toFixed(2);
+      });
+
+      const checkOverflow = () => {
+        const footerTop = footer.getBoundingClientRect().top;
+        const allChildren = Array.from(
+          p.querySelectorAll('p, .block-header, .block-workbook-question'),
         );
-        const maxB = Math.max(...children.map((c) => c.getBoundingClientRect().bottom));
-        return maxB - fTop;
+        const maxBottom = Math.max(...allChildren.map((el) => el.getBoundingClientRect().bottom));
+        const colOverflow =
+          cols.scrollHeight > body.clientHeight + 2 || cols.scrollWidth > cols.clientWidth + 5;
+        const footerCollision = maxBottom > footerTop - 8;
+        return colOverflow || footerCollision;
       };
 
-      while (getOverlap() > -10 && size > 6.8) {
-        size -= 0.1;
-        lh -= 0.01;
-        secMargin = Math.max(2.0, secMargin - 0.1);
+      while (checkOverflow() && size > 6.5) {
+        size -= 0.05;
+        lh -= 0.005;
+        margin = Math.max(2.0, margin - 0.05);
         proseEls.forEach((el) => {
           el.style.fontSize = size.toFixed(2) + 'pt';
           el.style.lineHeight = lh.toFixed(2);
         });
-        sections.forEach((s) => (s.style.marginBottom = secMargin.toFixed(1) + 'px'));
+        sections.forEach((s) => (s.style.marginBottom = margin.toFixed(1) + 'px'));
       }
     });
   });
