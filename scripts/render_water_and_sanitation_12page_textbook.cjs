@@ -103,6 +103,9 @@ function cleanProse(text) {
     .replace(/([a-zA-Z])"([a-zA-Z])/g, '$1" $2')
     .replace(/\s*\(\s*\)/g, '')
     .replace(/\s{2,}/g, ' ')
+    .replace(/\\*\\*\\*(.*?)\\*\\*\\*/g, '<strong><em></em></strong>')
+    .replace(/\\*\\*(.*?)\\*\\*/g, '<strong></strong>')
+    .replace(/\\*(.*?)\\*/g, '<em></em>')
     .trim();
 }
 
@@ -2363,22 +2366,16 @@ async function main() {
   if (!fs.existsSync(pdfOutputDir)) fs.mkdirSync(pdfOutputDir, { recursive: true });
 
   const pdfPath = path.join(pdfOutputDir, 'water_and_sanitation_textbook.pdf');
-  const pdfUnifiedPath = path.join(pdfOutputDir, 'water_and_sanitation_textbook_UNIFIED.pdf');
-  const pdfFinalPath = path.join(pdfOutputDir, 'water_and_sanitation_textbook_FINAL.pdf');
 
   await page.pdf({
-    path: pdfPath,
     format: 'A4',
-    printBackground: true,
+    margin: { bottom: 0, left: 0, right: 0, top: 0 },
+    path: pdfPath,
     preferCSSPageSize: true,
-    margin: { top: 0, right: 0, bottom: 0, left: 0 },
+    printBackground: true,
   });
 
-  fs.copyFileSync(pdfPath, pdfUnifiedPath);
-  fs.copyFileSync(pdfPath, pdfFinalPath);
-
   console.log(`\n📄 Generated Canonical PDF: ${pdfPath}`);
-  console.log(`📄 Generated Mirror PDF: ${pdfUnifiedPath}`);
 
   // Take previews of key pages for verification
   const previewDir = path.join(htmlOutputDir, 'previews', 'unified');

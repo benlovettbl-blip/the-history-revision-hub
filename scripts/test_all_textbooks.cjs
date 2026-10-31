@@ -69,7 +69,7 @@ const SUITE = [
   {
     id: 'great_war_part2',
     name: 'The Great War (Part 2)',
-    pages: 12,
+    pages: 8,
     html: 'public/units/great_war_part2/textbook.html',
   },
   {

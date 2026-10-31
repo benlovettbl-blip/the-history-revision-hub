@@ -237,7 +237,7 @@ async function runSync() {
       }
       if (unitId === 'great_war_part2') {
         console.log(
-          `\n📚 Compiling 14-page publisher-grade textbook & 16-page workbook for [great_war_part2]...`,
+          `\n📚 Compiling 8-page pure narrative master textbook & 16-page workbook for [great_war_part2]...`,
         );
         execSync(`node scripts/render_standard_textbook_great_war_part2.cjs`, {
           stdio: 'inherit',

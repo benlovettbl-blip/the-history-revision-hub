@@ -90,6 +90,9 @@ function cleanProse(text) {
     .replace(/\(\s*,\s*/g, '(')
     .replace(/\(\s*\)/g, '')
     .replace(/\s{2,}/g, ' ')
+    .replace(/\\*\\*\\*(.*?)\\*\\*\\*/g, '<strong><em></em></strong>')
+    .replace(/\\*\\*(.*?)\\*\\*/g, '<strong></strong>')
+    .replace(/\\*(.*?)\\*/g, '<em></em>')
     .trim();
 }
 

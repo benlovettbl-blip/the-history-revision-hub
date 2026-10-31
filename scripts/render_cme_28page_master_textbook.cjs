@@ -82,6 +82,9 @@ function cleanProse(text) {
     .replace(/[^\S\r\n]{2,}/g, ' ')
     .replace(/\r\n/g, '\n')
     .replace(/\n{3,}/g, '\n\n')
+    .replace(/\\*\\*\\*(.*?)\\*\\*\\*/g, '<strong><em></em></strong>')
+    .replace(/\\*\\*(.*?)\\*\\*/g, '<strong></strong>')
+    .replace(/\\*(.*?)\\*/g, '<em></em>')
     .trim();
 }
 
