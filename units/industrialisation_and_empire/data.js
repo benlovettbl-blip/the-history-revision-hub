@@ -410,7 +410,7 @@ const industrialisation_and_empire_data = {
           act: 1,
           title: 'The Charcoal Bottleneck & Pig Iron Crisis (1750–1770)',
           theme_heading: 'The Charcoal Bottleneck & Pig Iron Crisis (1750–1770)',
-          text: '<span class="para-ref">[1.1]</span> Before the mid-eighteenth century, British industry was held hostage by an acute energy crisis. For generations, ironmasters used timber to smelt iron ore in blast furnaces. However, centuries of deforestation had exhausted England\'s ancient oak forests. When ironmasters turned to abundant pit coal, they struck a chemical disaster: British coal was choked with yellow sulphur, which contaminated the molten metal. The resulting <strong class="vocab-highlight">pig iron</strong> <small class="vocab-gloss">(crude, brittle iron poured into sand moulds)</small> was as brittle as glass. Strike a bar of British pig iron with a hammer, and it shattered into lethal shards. To build tough anchors and ship bolts for the Royal Navy, Britain was forced to import over 50,000 tons of premium wrought iron every year from Sweden and Russia across the vulnerable Baltic Sea.',
+          text: '<span class="para-ref">[1.1]</span> Before the mid-eighteenth century, British industry was held hostage by an acute energy crisis. For generations, ironmasters used timber to **smelt** iron ore in **blast furnaces**. However, centuries of deforestation had exhausted England\'s ancient oak forests. When ironmasters turned to abundant pit coal, they struck a chemical disaster: British coal was choked with yellow sulphur, which contaminated the molten metal. The resulting **pig iron** (crude, brittle iron poured into sand moulds) was as brittle as glass. Strike a bar of British pig iron with a hammer, and it shattered into lethal shards. To build tough anchors and ship bolts for the Royal Navy, Britain was forced to import over 50,000 tons of premium **wrought iron** every year from Sweden and Russia across the vulnerable Baltic Sea.',
           source: {
             letter: 'A',
             title:
@@ -474,7 +474,7 @@ const industrialisation_and_empire_data = {
           act: 2,
           title: 'James Watt & The Rotary Steam Revolution (1769–1781)',
           theme_heading: 'James Watt & The Rotary Steam Revolution (1769–1781)',
-          text: '<span class="para-ref">[1.2]</span> While iron production floundered, a revolutionary power source erupted. In cramped cottages under the <strong class="vocab-highlight">domestic system</strong> <small class="vocab-gloss">(craft goods produced by hand in workers\' homes)</small>, spinning and weaving were limited by human muscle and waterwheels that froze in winter or dried up in summer. In 1769, Scottish instrument maker <strong class="vocab-highlight">James Watt</strong> patented his separate condenser, vastly improving early steam engines. Partnering with industrialist Matthew Boulton in Birmingham, Watt adapted his engine to produce continuous rotary motion. By converting the thermal energy of coal into mechanical power, Watt liberated factories from remote river valleys. Massive textile mills, deep mine pumps, and heavy iron hammers could now operate relentlessly anywhere coal was shipped.',
+          text: '<span class="para-ref">[1.2]</span> While iron production floundered, a revolutionary power source erupted. In cramped cottages under the **domestic system** (craft goods produced by hand in workers\' homes), spinning and weaving were limited by human muscle and waterwheels that froze in winter or dried up in summer. In 1769, Scottish instrument maker **James Watt** patented his separate condenser, vastly improving early steam engines. Partnering with industrialist Matthew Boulton in Birmingham, Watt adapted his engine to produce continuous **rotary motion**. By converting the thermal energy of coal into mechanical power, Watt liberated factories from remote river valleys. Massive textile mills, deep mine pumps, and heavy iron hammers could now operate relentlessly anywhere coal was shipped.',
           source: {
             letter: 'B',
             id: 'iae_l1_src_b',
@@ -542,7 +542,7 @@ const industrialisation_and_empire_data = {
           act: 3,
           title: 'Henry Cort’s Puddling Breakthrough at Funtley (1775–1784)',
           theme_heading: 'Henry Cort’s Puddling Breakthrough at Funtley (1775–1784)',
-          text: '<span class="para-ref">[1.3]</span> Yet steam engines required durable metal. In 1775, former naval agent <strong class="vocab-highlight">Henry Cort</strong> leased an old corn mill at Funtley on the River Meon near Fareham, just fifteen miles from Portsmouth Dockyard. In 1783, Cort patented the <strong class="vocab-highlight">reverberatory puddling furnace</strong> <small class="vocab-gloss">(a furnace deflecting heat from an arched roof without fuel touching the metal)</small>. Cort separated the coal firebox from the molten metal hearth with a brick bridge wall. The curved masonry roof deflected clean, blistering 1,200°C radiant heat down onto the iron, burning away impurities while keeping destructive coal sulphur away. Skilled "puddlers" stirred the boiling metal through a porthole with long iron paddles, burning off carbon until pure wrought iron thickened into glowing spongy balls.',
+          text: '<span class="para-ref">[1.3]</span> Yet steam engines required durable metal. In 1775, former naval agent **Henry Cort** leased an old corn mill at Funtley on the River Meon near Fareham, just fifteen miles from Portsmouth Dockyard. In 1783, Cort patented the **reverberatory puddling furnace** (a furnace deflecting heat from an arched roof without fuel touching the metal). Cort separated the coal firebox from the molten metal hearth with a brick bridge wall. The curved masonry roof deflected clean, blistering 1,200°C radiant heat down onto the iron, burning away impurities while keeping destructive coal sulphur away. Skilled **puddlers** stirred the boiling metal through a porthole with long iron paddles, burning off carbon until pure wrought iron thickened into glowing spongy balls.',
           source: {
             letter: 'C',
             title:
@@ -616,7 +616,7 @@ const industrialisation_and_empire_data = {
           act: 4,
           title: 'Grooved Rollers & The Hampshire Archaeology (1783–1784)',
           theme_heading: 'Grooved Rollers & The Hampshire Archaeology (1783–1784)',
-          text: '<span class="para-ref">[1.4]</span> Instead of having teams of exhausted blacksmiths slowly hammer hot iron blooms by hand, Cort patented water-powered <strong class="vocab-highlight">grooved rollers</strong> in 1784. Driven by the surging River Meon waterwheel, these grooved cylinders squeezed out trapped slag impurities and compressed the metal into uniform naval bars at fifteen times the speed of traditional forge hammers. The physical archaeology of this triumph remains etched in the Hampshire landscape today. At Funtley, the original stone weir and circular waterwheel housing survive beside the river. Nearby stands Fontley House, with its Georgian red-brick Fareham "Tallboy" chimneys, and an intact dry-stone wall constructed entirely from tons of dark, glassy puddling slag excavated from Cort\'s ironworks.',
+          text: '<span class="para-ref">[1.4]</span> Instead of having teams of exhausted blacksmiths slowly hammer hot iron blooms by hand, Cort patented water-powered **grooved rollers** in 1784. Driven by the surging River Meon waterwheel, these grooved cylinders squeezed out trapped **slag** impurities and compressed the metal into uniform naval bars at fifteen times the speed of traditional forge hammers. The physical archaeology of this triumph remains etched in the Hampshire landscape today. At **Funtley Ironworks**, the original stone weir and circular waterwheel housing survive beside the river. Nearby stands Fontley House, with its Georgian red-brick Fareham "Tallboy" chimneys, and an intact dry-stone wall constructed entirely from tons of dark, glassy puddling slag excavated from Cort\'s ironworks.',
           image: '/images/isambard_kingdom_brunel.jpg',
           image_alt:
             'Iconic photograph of engineer Isambard Kingdom Brunel standing before the launching chains of the SS Great Eastern',
@@ -697,7 +697,7 @@ const industrialisation_and_empire_data = {
           act: 5,
           title: 'The Portsmouth Dockyard Trials & Naval Supremacy (1787–1800)',
           theme_heading: 'The Portsmouth Dockyard Trials & Naval Supremacy (1787–1800)',
-          text: '<span class="para-ref">[1.5]</span> In March 1787, Cort invited the Navy Board to Portsmouth Royal Dockyard for decisive stress tests. In front of skeptical Admiralty commissioners, master smiths bent Funtley iron double, twisted bars into cold corkscrews, and pounded anchor rings with twenty-pound sledgehammers. The iron did not crack. The official Admiralty minutes declared Funtley iron superior to any British metal and fully equal to top-grade Swedish Orgrounds iron. Domestic iron production surged 400%, armoring the Royal Navy on the eve of the Napoleonic Wars and forging the anchors of <em>HMS Victory</em>. Cort was hailed as the "father of the iron trade," though the embezzlement of naval funds by his financial partner Adam Jellicoe tragically stripped Cort of his patents, plunging him into bankruptcy before his death in 1800.',
+          text: '<span class="para-ref">[1.5]</span> In March 1787, Cort invited the **Navy Board** to **Portsmouth Royal Dockyard** for decisive stress tests. In front of skeptical Admiralty commissioners, master smiths bent Funtley iron double, twisted bars into cold corkscrews, and pounded anchor rings with twenty-pound sledgehammers. The iron did not crack. The official **Admiralty** minutes declared Funtley iron superior to any British metal and fully equal to top-grade Swedish Orgrounds iron. Domestic iron production surged 400%, armoring the Royal Navy on the eve of the Napoleonic Wars and forging the anchors of <em>HMS Victory</em>. Cort was hailed as the "father of the iron trade," though the embezzlement of naval funds by his financial partner Adam Jellicoe tragically stripped Cort of his patents, plunging him into bankruptcy before his death in 1800.',
           source: {
             letter: 'E',
             title:
@@ -825,71 +825,113 @@ const industrialisation_and_empire_data = {
           term: 'Industrial Revolution',
           definition:
             'The rapid transformation of manufacturing, transportation, and daily life driven by coal, steam, and iron from 1750.',
+          syllables: 'I-ndustrial Re-volu-tion',
+          phonetic: 'industrial revolution',
+          tier: '3',
         },
         {
           term: 'Domestic System',
           definition:
             'The traditional method of handcrafting textiles and goods at home using muscle, wind, or seasonal water power.',
+          syllables: 'Do-me-stic Sy-stem',
+          phonetic: 'domestic system',
+          tier: '2',
         },
         {
           term: 'Henry Cort',
           definition:
             'The Hampshire naval agent and ironmaster from Fareham whose patented inventions at Funtley revolutionized world metallurgy.',
+          syllables: 'He-nry Cort',
+          phonetic: 'henry cort',
+          tier: '2',
         },
         {
           term: 'Pig Iron',
           definition:
             'Crude, brittle iron straight from a blast furnace containing excessive carbon and sulphur impurities that snapped under pressure.',
+          syllables: 'Pig Iron',
+          phonetic: 'pig iron',
+          tier: '2',
         },
         {
           term: 'Wrought Iron',
           definition:
             'Tough, malleable iron with low carbon content that could bend, stretch, and endure heavy shock without shattering.',
+          syllables: 'Wrought Iron',
+          phonetic: 'wrought iron',
+          tier: '2',
         },
         {
           term: 'Puddling Process',
           definition:
             "Cort's 1783 method of melting pig iron in a reverberatory furnace and stirring it to burn away carbon impurities without coal contact.",
+          syllables: 'Pu-ddling Pro-cess',
+          phonetic: 'puddling process',
+          tier: '3',
         },
         {
           term: 'Grooved Rolling Mill',
           definition:
             "Cort's 1784 mechanized grooved rollers that squeezed out slag and formed iron bars fifteen times faster than forge hammers.",
+          syllables: 'Groo-ved Ro-lling Mill',
+          phonetic: 'grooved rolling mill',
+          tier: '2',
         },
         {
           term: 'Portsmouth Dockyard',
           definition:
             "The royal naval complex on the Solent that served as the world's largest industrial site and primary customer for Cort's iron.",
+          syllables: 'Po-rtsmouth Do-ckyard',
+          phonetic: 'portsmouth dockyard',
+          tier: '2',
         },
         {
           term: 'Iron Slag',
           definition:
             'The heavy, glassy silicate waste residue squeezed out of molten iron during puddling and rolling.',
+          syllables: 'Iron Slag',
+          phonetic: 'iron slag',
+          tier: '2',
         },
         {
           term: 'Mill Race & Weir',
           definition:
             'A channel and masonry barrier designed to direct fast-flowing river water onto a waterwheel to generate mechanical horsepower.',
+          syllables: 'Mill Race & Weir',
+          phonetic: 'mill race & weir',
+          tier: '2',
         },
         {
           term: 'Fareham Tallboys',
           definition:
             'Distinctive tall terracotta chimney pots crafted from local Fareham Red clay featuring a crimped white slip collar.',
+          syllables: 'Fa-reham Ta-llboys',
+          phonetic: 'fareham tallboys',
+          tier: '2',
         },
         {
           term: 'Reverberatory Furnace',
           definition:
             'A specialised furnace where burning coal is kept separate from molten metal, deflecting heat downward from an arched brick ceiling to prevent chemical contamination.',
+          syllables: 'Re-ve-rbe-rato-ry Fu-rna-ce',
+          phonetic: 'reverberatory furnace',
+          tier: '3',
         },
         {
           term: 'Orgrounds Iron',
           definition:
             'The highest quality Swedish charcoal-smelted wrought iron, long regarded as the global gold standard for Royal Navy warship construction.',
+          syllables: 'O-rgrounds Iron',
+          phonetic: 'orgrounds iron',
+          tier: '3',
         },
         {
           term: 'Baltic Bottleneck',
           definition:
             'Britain’s dangerous wartime dependence on importing over 50,000 tons of malleable iron annually from Sweden and Russia across vulnerable sea lanes.',
+          syllables: 'Ba-ltic Bo-ttle-neck',
+          phonetic: 'baltic bottleneck',
+          tier: '3',
         },
       ],
       quiz: [
@@ -1669,7 +1711,7 @@ const industrialisation_and_empire_data = {
           act: 1,
           title: 'The Death of Domestic Crafts & Rise of the Mill (1780–1820)',
           theme_heading: 'The Death of Domestic Crafts & Rise of the Mill (1780–1820)',
-          text: '<span class="para-ref">[2.1]</span> Before industrialisation, most British goods were crafted under the <strong class="vocab-highlight">domestic system</strong> in family cottages. Weavers worked on handlooms, pacing their labour to seasonal daylight and resting on "Saint Monday." The invention of mechanized spinning mules and steam powerlooms obliterated this ancient autonomy. Capitalist mill owners built colossal multi-storey brick factories housing hundreds of machines. Handloom weavers could not compete against the torrent of cheap, uniform cloth pouring from steam mills. Driven by destitution, thousands of rural families abandoned their cottages to seek wage labour in booming northern textile hubs like Manchester and Leeds.',
+          text: '<span class="para-ref">[2.1]</span> Before industrialisation, most British goods were crafted under the **domestic system** in family cottages. Weavers worked on handlooms, pacing their labour to seasonal daylight and resting on "Saint Monday." The invention of mechanized **spinning mules** and steam **powerlooms** obliterated this ancient autonomy. Capitalist mill owners built colossal multi-storey brick factories housing hundreds of machines. Handloom weavers could not compete against the torrent of cheap, uniform cloth pouring from steam mills. Driven by destitution, thousands of rural families abandoned their cottages to seek wage labour in booming northern textile hubs like Manchester and Leeds.',
           source: {
             letter: 'A',
             title: 'Source A (Visual Record): Powerloom Weaving in a Lancashire Cotton Mill (1835)',
@@ -1732,7 +1774,7 @@ const industrialisation_and_empire_data = {
           act: 2,
           title: 'The Tyranny of the Factory Clock & Draconian Fines (1800–1830)',
           theme_heading: 'The Tyranny of the Factory Clock & Draconian Fines (1800–1830)',
-          text: '<span class="para-ref">[2.2]</span> Inside the mills, natural rhythms were replaced by the tyranny of the <strong class="vocab-highlight">factory clock</strong>. Operatives worked grueling fourteen- to sixteen-hour shifts, six days a week, surrounded by whirling unguarded iron belts and deafening machinery. Mill masters enforced military-style obedience through draconian rulebooks. Workers were fined two pence—a large fraction of daily wages—for arriving minutes late, opening a window to breathe amidst choking cotton lint, or speaking to a workmate. Mill gates were locked from the outside; anyone pausing from exhaustion faced immediate dismissal or corporal punishment.',
+          text: '<span class="para-ref">[2.2]</span> Inside the mills, natural rhythms were replaced by the tyranny of the **factory clock**. Operatives worked grueling fourteen- to sixteen-hour shifts, six days a week, surrounded by whirling unguarded iron belts and deafening machinery. Mill masters enforced military-style obedience through draconian rulebooks. Workers were fined two pence—a large fraction of daily wages—by strict **overlookers** for arriving minutes late, opening a window to breathe amidst choking cotton lint, or speaking to a workmate. Mill gates were locked from the outside; anyone pausing from exhaustion faced immediate dismissal or **corporal punishment**.',
           source: {
             letter: 'B',
             title:
@@ -1802,7 +1844,7 @@ const industrialisation_and_empire_data = {
           act: 3,
           title: 'Pauper Apprentices & Northern Textile Exploitation (1810–1832)',
           theme_heading: 'Pauper Apprentices & Northern Textile Exploitation (1810–1832)',
-          text: '<span class="para-ref">[2.3]</span> Mill owners discovered that children made the cheapest, most compliant workforce. Thousands of orphan <strong class="vocab-highlight">pauper apprentices</strong> <small class="vocab-gloss">(destitute children legally bound by workhouses to factory owners)</small> were carted from London workhouses to remote northern mills. Employed as "scavengers" and "piecers," children crawled underneath moving spinning mules to sweep flyaway cotton while machinery roared inches above their heads. Horrific accidents were routine: fingers were crushed in gears, and girls were scalped when long hair caught in whirling drive shafts. Children slept in shifts in crowded apprentice dormitories, surviving on thin oatmeal porridge.',
+          text: '<span class="para-ref">[2.3]</span> Mill owners discovered that children made the cheapest, most compliant workforce. Thousands of orphan **pauper apprentices** (destitute children legally bound by workhouses to factory owners) were carted from London workhouses to remote northern mills. Employed as **scavengers** and **piecers**, children crawled underneath moving spinning mules to sweep flyaway cotton while machinery roared inches above their heads. Horrific accidents were routine: fingers were crushed in gears, and girls were scalped when long hair caught in whirling drive shafts. Children slept in shifts in crowded apprentice dormitories, surviving on thin oatmeal porridge.',
           source: {
             letter: 'C',
             title:
@@ -1866,7 +1908,7 @@ const industrialisation_and_empire_data = {
           act: 4,
           title: 'The Sadler Committee & Matthew Crabtree’s Testimony (1832)',
           theme_heading: 'The Sadler Committee & Matthew Crabtree’s Testimony (1832)',
-          text: '<span class="para-ref">[2.4]</span> Outrage over factory conditions culminated in the landmark 1832 Parliamentary <strong class="vocab-highlight">Sadler Committee</strong> investigation. Twenty-two-year-old former child worker Matthew Crabtree gave harrowing evidence. He recounted starting in a blanket factory at age eight, working from 6:00 AM to 9:00 PM with only forty minutes for dinner. Overlookers patrolled the aisles with heavy leather straps, brutally beating exhausted children who lagged behind. Crabtree testified that extreme fatigue caused him to drop asleep on the floor without eating, leaving his legs permanently bowed and his spine stunted by unceasing toil.',
+          text: '<span class="para-ref">[2.4]</span> Outrage over factory conditions culminated in the landmark 1832 Parliamentary **Sadler Committee** investigation. Twenty-two-year-old former child worker **Matthew Crabtree** gave harrowing evidence. He recounted starting in a blanket factory at age eight, working from 6:00 AM to 9:00 PM with only forty minutes for dinner. Overlookers patrolled the aisles with heavy **leather straps**, brutally beating exhausted children who lagged behind. Crabtree testified that extreme fatigue caused him to drop asleep on the floor without eating, leaving his legs permanently bowed and his spine stunted by unceasing toil.',
           source: {
             letter: 'D',
             title: 'Source D (Parliamentary Inquiry): Parliamentary Sadler Committee Report (1832)',
@@ -1931,7 +1973,7 @@ const industrialisation_and_empire_data = {
           act: 5,
           title: 'Lord Shaftesbury & The 1833 Factory Act (1833)',
           theme_heading: 'Lord Shaftesbury & The 1833 Factory Act (1833)',
-          text: '<span class="para-ref">[2.5]</span> Shocked by Sadler’s revelations, humanitarian reformers led by <strong class="vocab-highlight">Lord Shaftesbury</strong> pressured Parliament into passing the historic <strong>1833 Factory Act</strong>. Defying capitalist owners who warned that state interference would ruin Britain’s economy, the Act banned textile work for children under nine, capped working hours at eight hours daily for children aged 9–13, and required two hours of compulsory schooling. Crucially, Parliament appointed the first four statutory factory inspectors to enforce the law. While mill masters often forged birth certificates, the Act set a vital constitutional precedent: the state possessed the legal right to protect vulnerable workers from unbridled industrial exploitation.',
+          text: '<span class="para-ref">[2.5]</span> Shocked by Sadler’s revelations, humanitarian reformers led by **Lord Shaftesbury** (Lord Ashley) pressured Parliament into passing the historic **1833 Factory Act**. Defying capitalist owners who warned that state interference would ruin Britain’s economy, the Act banned textile work for children under nine, capped working hours at eight hours daily for children aged 9–13, and required two hours of compulsory schooling. Crucially, Parliament appointed the first four statutory **factory inspectors** to enforce the law. While mill masters often forged birth certificates, the Act set a vital constitutional precedent: the state possessed the legal right to protect vulnerable workers from unbridled industrial exploitation.',
           source: {
             letter: 'E',
             title: 'Source E (Statute Law): The Factory Act 1833 (3 & 4 Will. IV, c. 103)',
@@ -2223,31 +2265,49 @@ const industrialisation_and_empire_data = {
           term: 'Fareham Reds',
           definition:
             'Famous, durable red clay bricks manufactured in Fareham and used in buildings across the Victorian Empire, including the Royal Albert Hall.',
+          syllables: 'Fa-reham Reds',
+          phonetic: 'fareham reds',
+          tier: '3',
         },
         {
           term: 'Pug Mill',
           definition:
             'A horse- or steam-driven machine with rotating blades used to grind and mix raw clay with water.',
+          syllables: 'Pug Mill',
+          phonetic: 'pug mill',
+          tier: '2',
         },
         {
           term: 'Child Labour',
           definition:
             'The widespread employment of young children in hazardous mines, brickfields, and textile mills.',
+          syllables: 'Child La-bour',
+          phonetic: 'child labour',
+          tier: '2',
         },
         {
           term: 'Factory Acts',
           definition:
             'A series of parliamentary laws passed from 1833 onwards to regulate working hours and age limits for child workers.',
+          syllables: 'Fa-cto-ry Acts',
+          phonetic: 'factory acts',
+          tier: '3',
         },
         {
           term: 'Textile Mill',
           definition:
             'Large steam-powered factories where cotton and wool were spun and woven into cloth by industrial machines.',
+          syllables: 'Te-xti-le Mill',
+          phonetic: 'textile mill',
+          tier: '3',
         },
         {
           term: 'Workhouse',
           definition:
             'Grim institutions established under the Poor Law where the destitute endured harsh labor in exchange for food.',
+          syllables: 'Wo-rkhou-se',
+          phonetic: 'workhouse',
+          tier: '2',
         },
       ],
       hook_text:
@@ -2958,31 +3018,49 @@ const industrialisation_and_empire_data = {
           term: 'Urbanisation',
           definition:
             'The rapid migration of rural populations into towns and cities, creating vast, overcrowded industrial metropolitan centers.',
+          syllables: 'U-rba-nisa-tion',
+          phonetic: 'urbanisation',
+          tier: '2',
         },
         {
           term: 'Laissez-faire',
           definition:
             'The political and economic doctrine that governments should not interfere in business, private housing, or municipal sanitation.',
+          syllables: 'Lai-ssez-fai-re',
+          phonetic: 'laissez-faire',
+          tier: '3',
         },
         {
           term: 'Miasma Theory',
           definition:
             'The mistaken medical belief that epidemic diseases like cholera and typhus were caused by breathing poisonous stenches rising from rotting waste.',
+          syllables: 'mi-as-ma Theo-ry',
+          phonetic: 'maɪˈæzmə theory',
+          tier: '2',
         },
         {
           term: 'Cholera',
           definition:
             'A deadly, waterborne bacterial disease causing catastrophic dehydration, which swept through crowded Victorian slums in repeated epidemics.',
+          syllables: 'Cho-lera',
+          phonetic: 'cholera',
+          tier: '3',
         },
         {
           term: 'Cesspool',
           definition:
             'An underground, unlined pit beneath tenements used to collect human sewage, which frequently seeped into shallow communal drinking wells.',
+          syllables: 'Ce-sspool',
+          phonetic: 'cesspool',
+          tier: '3',
         },
         {
           term: 'Public Health',
           definition:
             'Government measures, legislation, and civil engineering infrastructure aimed at providing clean water, sewage removal, and disease control.',
+          syllables: 'Pu-blic Health',
+          phonetic: 'public health',
+          tier: '2',
         },
       ],
       narrative_blocks: [
@@ -2990,7 +3068,7 @@ const industrialisation_and_empire_data = {
           act: 1,
           title: 'The Slum Explosion: Back-to-Back Courts & Cellars (1800–1830)',
           theme_heading: 'The Slum Explosion: Back-to-Back Courts & Cellars (1800–1830)',
-          text: '<span class="para-ref">[3.1]</span> Between 1801 and 1851, the population of industrial cities like Manchester, Birmingham, and Leeds quadrupled. Speculative builders threw up thousands of cramped <strong class="vocab-highlight">back-to-back houses</strong> <small class="vocab-gloss">(terraced brick slums sharing rear and side party walls)</small> with zero municipal building regulations. These houses had no through-ventilation, no indoor plumbing, and shared thin walls that seeped dampness. In damp, unpaved courts, entire families crowded into single windowless earthen cellars beneath street level. In cities like Liverpool, up to 20,000 destitute Irish immigrants and mill hands lived packed twelve to a cellar, where stagnant sewage pooled on earthen floors.',
+          text: '<span class="para-ref">[3.1]</span> Between 1801 and 1851, the population of industrial cities like Manchester, Birmingham, and Leeds quadrupled in rapid **urbanisation**. Speculative builders threw up thousands of cramped **back-to-back houses** (terraced brick slums sharing rear and side party walls) with zero municipal building regulations. These houses had no through-ventilation, no indoor plumbing, and shared thin walls that seeped dampness. In damp, unpaved courts, entire families crowded into single windowless earthen **cellar dwellings** beneath street level. In cities like Liverpool, up to 20,000 destitute Irish immigrants and mill hands lived packed twelve to a cellar, where stagnant sewage pooled on earthen floors.',
           source: {
             letter: 'A',
             title: 'Source A (Visual Record): Gustave Doré, Over London by Rail (1872)',
@@ -3052,7 +3130,7 @@ const industrialisation_and_empire_data = {
           act: 2,
           title: 'Cesspools, Privies & Contaminated Pumps (1830–1840)',
           theme_heading: 'Cesspools, Privies & Contaminated Pumps (1830–1840)',
-          text: '<span class="para-ref">[3.2]</span> Urban sanitation was almost medieval. A single wooden outdoor privy often served forty or more families in a crowded courtyard. Without municipal sewer pipes, human waste drained into porous underground cesspools that overflowed into gutters and streets. Towering mounds of decaying nightsoil accumulated in alleyways for months until sold to rural farmers as manure. Worse still, private water companies supplied water only two or three times a week for a few hours through shared public standpipes. Cesspool liquids seeped directly through the porous soil into shallow groundwater wells, contaminating the drinking water of entire neighbourhoods.',
+          text: '<span class="para-ref">[3.2]</span> Urban sanitation was almost medieval. A single wooden outdoor **privy** often served forty or more families in a crowded courtyard. Without municipal sewer pipes, human waste drained into porous underground **cesspools** that overflowed into gutters and streets. Towering mounds of decaying **nightsoil** accumulated in alleyways for months until sold to rural farmers as manure. Worse still, private water companies supplied water only two or three times a week for a few hours through shared public standpipes. Cesspool liquids seeped directly through the porous soil into shallow groundwater wells, contaminating the drinking water of entire neighbourhoods.',
           source: {
             letter: 'B',
             title:
@@ -3116,7 +3194,7 @@ const industrialisation_and_empire_data = {
           act: 3,
           title: 'The Blue Terror: Cholera & The Collapse of Laissez-Faire (1831–1848)',
           theme_heading: 'The Blue Terror: Cholera & The Collapse of Laissez-Faire (1831–1848)',
-          text: '<span class="para-ref">[3.3]</span> In 1831, a terrifying new global pandemic landed on British shores: Asiatic <strong class="vocab-highlight">cholera</strong>. Spread through water contaminated with fecal bacteria, cholera struck victims with violent vomiting and diarrhea, causing extreme dehydration that turned skin a ghostly blue and killed healthy adults within twelve hours. Victorians, mistakenly believing in the <strong class="vocab-highlight">miasma theory</strong> <small class="vocab-gloss">(the false belief that epidemic disease was caused by breathing foul smells and toxic air)</small>, burned barrels of pitch in the streets. When cholera killed over 50,000 people in 1848, the terror of wealthy elites shattered their devotion to <strong class="vocab-highlight">laissez-faire</strong> <small class="vocab-gloss">(the political philosophy that government should never interfere in economic or civic life)</small>.',
+          text: '<span class="para-ref">[3.3]</span> In 1831, a terrifying new global pandemic landed on British shores: Asiatic **cholera**. Spread through water contaminated with fecal bacteria, cholera struck victims with violent vomiting and diarrhea, causing extreme dehydration that turned skin a ghostly blue and killed healthy adults within twelve hours. Victorians, mistakenly believing in the **miasma theory** (the false belief that epidemic disease was caused by breathing foul smells and toxic air), burned barrels of pitch in the streets. When cholera killed over 50,000 people in 1848, the terror of wealthy elites shattered their devotion to **laissez-faire** (the political philosophy that government should never interfere in economic or civic life).',
           source: {
             letter: 'C',
             title:
@@ -3187,7 +3265,7 @@ const industrialisation_and_empire_data = {
           act: 4,
           title: 'Edwin Chadwick & The 1842 Sanitary Report (1842)',
           theme_heading: 'Edwin Chadwick & The 1842 Sanitary Report (1842)',
-          text: '<span class="para-ref">[3.4]</span> In 1842, reformer <strong class="vocab-highlight">Edwin Chadwick</strong> published his revolutionary <em>Report on the Sanitary Condition of the Labouring Population</em>. Using groundbreaking statistical data, Chadwick proved that epidemic typhus and cholera were directly bred by environmental filth and lack of clean water. His findings were horrifying: in industrial Manchester, average working-class life expectancy had plummeted to just 17–19 years, compared to 38 years in rural Rutlandshire. Chadwick argued that building clean arterial water mains and self-flushing glazed sewers would save taxpayers money by reducing orphanhood and Poor Law relief, inspiring the landmark Public Health Act of 1848.',
+          text: '<span class="para-ref">[3.4]</span> In 1842, reformer **Edwin Chadwick** published his revolutionary *Report on the Sanitary Condition of the Labouring Population*. Using groundbreaking statistical data, Chadwick proved that epidemic typhus and cholera were directly bred by environmental filth and lack of clean water. His findings were horrifying: in industrial Manchester, average working-class life expectancy had plummeted to just 17–19 years, compared to 38 years in rural Rutlandshire. Chadwick argued that building clean arterial water mains and self-flushing glazed sewers would save taxpayers money by reducing orphanhood and Poor Law relief, inspiring the landmark **1848 Public Health Act**.',
           image: '/images/chadwick.jpg',
           image_alt: 'Portrait of social reformer Sir Edwin Chadwick',
           caption:
@@ -3265,7 +3343,7 @@ const industrialisation_and_empire_data = {
           act: 5,
           title: 'The Great Stink & Bazalgette’s Sewer Triumph (1858–1865)',
           theme_heading: 'The Great Stink & Bazalgette’s Sewer Triumph (1858–1865)',
-          text: '<span class="para-ref">[3.5]</span> The turning point arrived in the stifling midsummer of 1858 with the <strong>"Great Stink"</strong>. The untreated sewage of three million Londoners fermenting in the Thames produced a reek so toxic that Parliament could barely function. Terrified MPs passed emergency legislation in eighteen days, granting civil engineer <strong class="vocab-highlight">Joseph Bazalgette</strong> £3 million to rebuild the capital’s sanitation. Between 1859 and 1865, Bazalgette constructed 1,100 miles of street sewers and 82 miles of colossal underground brick interceptor tunnels, using 318 million bricks and waterproof Portland cement. Bazalgette’s subterranean cathedrals permanently diverted 420 million gallons of sewage away from London, ending epidemic cholera forever and establishing the blueprint for the modern livable city.',
+          text: '<span class="para-ref">[3.5]</span> The turning point arrived in the stifling midsummer of 1858 with the **Great Stink**. The untreated sewage of three million Londoners fermenting in the Thames produced a reek so toxic that Parliament could barely function. Terrified MPs passed emergency legislation in eighteen days, granting civil engineer **Joseph Bazalgette** £3 million to rebuild the capital’s sanitation. Between 1859 and 1865, Bazalgette constructed 1,100 miles of street sewers and 82 miles of colossal underground brick **interceptor sewers**, using 318 million bricks and waterproof Portland cement. Bazalgette’s subterranean cathedrals permanently diverted 420 million gallons of sewage away from London, ending epidemic cholera forever and establishing the blueprint for the modern livable city.',
           source: {
             letter: 'E',
             title:
@@ -4235,31 +4313,49 @@ const industrialisation_and_empire_data = {
           term: 'Franchise',
           definition:
             'The constitutional right to cast a vote in parliamentary or municipal elections.',
+          syllables: 'Fra-nchi-se',
+          phonetic: 'franchise',
+          tier: '3',
         },
         {
           term: 'Peterloo Massacre',
           definition:
             'The violent cavalry charge into a peaceful crowd of 60,000 reform demonstrators at St Peter’s Field, Manchester, on 16 August 1819.',
+          syllables: 'Pe-te-rloo Ma-ssacre',
+          phonetic: 'peterloo massacre',
+          tier: '2',
         },
         {
           term: 'Swing Riots',
           definition:
             'A widespread wave of rural agricultural rebellion across southern England in 1830 involving the smashing of threshing machines and burning of hayricks.',
+          syllables: 'Swing Riots',
+          phonetic: 'swing riots',
+          tier: '3',
         },
         {
           term: 'Tolpuddle Martyrs',
           definition:
             'Six Dorset agricultural labourers sentenced to seven years’ penal transportation to Australia in 1834 for swearing a secret trade union oath.',
+          syllables: 'To-lpuddle Ma-rtyrs',
+          phonetic: 'tolpuddle martyrs',
+          tier: '2',
         },
         {
           term: 'Chartism',
           definition:
             'A nationwide working-class political movement between 1838 and 1848 demanding the six points of the People’s Charter, including universal male suffrage.',
+          syllables: 'Cha-rtism',
+          phonetic: 'chartism',
+          tier: '3',
         },
         {
           term: 'Moral vs Physical Force',
           definition:
             'The strategic divide within Chartism between those advocating peaceful petitions (William Lovett) and those advocating armed uprising (Feargus O’Connor).',
+          syllables: 'Mo-ral vs Phy-sical Fo-rce',
+          phonetic: 'moral vs physical force',
+          tier: '2',
         },
       ],
       narrative_blocks: [
@@ -4267,7 +4363,7 @@ const industrialisation_and_empire_data = {
           act: 1,
           title: 'The Sledgehammer of General Ludd (1811–1816)',
           theme_heading: 'The Sledgehammer of General Ludd (1811–1816)',
-          text: '<span class="para-ref">[4.1]</span> In the manufacturing valleys of Nottinghamshire, Yorkshire, and Lancashire, industrialisation threatened skilled artisan workers with wage collapse and deskilling. In 1811, textile hand-workers organized a clandestine guerilla campaign under the mythical figurehead <strong class="vocab-highlight">General Ned Ludd</strong>. Armed with heavy sledgehammers nicknamed "Great Enoch", nocturnal raiding parties blackened their faces, marched across moors, and broke into mills to smash the newly introduced wide-frame stocking looms and steam shearing frames that undercut artisan craft wages. The British ruling class reacted with existential panic: in 1812, Parliament passed the Frame Breaking Act, making machine destruction a capital crime punishable by public hanging, and deployed over 12,000 regular troops to the industrial North—a military force larger than the army the Duke of Wellington commanded against Napoleon in Spain.',
+          text: '<span class="para-ref">[4.1]</span> In the manufacturing valleys of Nottinghamshire, Yorkshire, and Lancashire, industrialisation threatened skilled artisan workers with wage collapse and deskilling. In 1811, textile hand-workers organized a clandestine guerilla campaign known as the **Luddites** under the mythical figurehead **General Ned Ludd**. Armed with heavy sledgehammers nicknamed "Great Enoch", nocturnal raiding parties blackened their faces, marched across moors, and broke into mills to smash the newly introduced wide-frame stocking looms and steam shearing frames that undercut artisan craft wages. The British ruling class reacted with existential panic: in 1812, Parliament passed the **Frame Breaking Act**, making machine destruction a capital crime punishable by public hanging, and deployed over 12,000 regular troops to the industrial North—a military force larger than the army the Duke of Wellington commanded against Napoleon in Spain.',
           source: {
             letter: 'A',
             title:
@@ -4338,7 +4434,7 @@ const industrialisation_and_empire_data = {
           act: 2,
           title: 'The Peterloo Massacre: Sabres at St Peter’s Field (August 1819)',
           theme_heading: 'The Peterloo Massacre: Sabres at St Peter’s Field (August 1819)',
-          text: '<span class="para-ref">[4.2]</span> With direct industrial sabotage brutally suppressed by military force, working people turned toward constitutional political reform to demand parliamentary representation. On 16 August 1819, over 60,000 unarmed men, women, and children assembled peacefully in Sunday clothes at St Peter’s Field in Manchester. Led by the celebrated orator Henry "Orator" Hunt, the disciplined crowd carried banners demanding "Universal Suffrage" and "Vote by Ballot". Panicked local magistrates, watching from a nearby window, branded the peaceful assembly treasonous and ordered the Manchester and Salford Yeomanry—an untrained volunteer cavalry composed of wealthy cotton merchants and publicans—to charge the hustings. With drawn sabres, the mounted cavalry hacked through the densely packed throng, killing eighteen peaceful citizens and wounding over 650. The government of Lord Liverpool congratulated the magistrates and passed the draconian <strong class="vocab-highlight">Six Acts</strong>, banning unauthorized political meetings and heavily taxing radical newspapers.',
+          text: '<span class="para-ref">[4.2]</span> With direct industrial sabotage brutally suppressed by military force, working people turned toward constitutional political reform to demand parliamentary representation. On 16 August 1819, over 60,000 unarmed men, women, and children assembled peacefully in Sunday clothes at St Peter’s Field in Manchester. Led by the celebrated orator Henry "Orator" Hunt, the disciplined crowd carried banners demanding "Universal Suffrage" and "Vote by Ballot". Panicked local magistrates, watching from a nearby window, branded the peaceful assembly treasonous and ordered the Manchester and Salford Yeomanry to charge the hustings. The resulting **Peterloo Massacre** saw mounted cavalry hack through the densely packed throng with drawn sabres, killing eighteen peaceful citizens and wounding over 650. The government of Lord Liverpool congratulated the magistrates and passed the draconian **Six Acts**, banning unauthorized political meetings and heavily taxing radical newspapers.',
           source: {
             letter: 'B',
             title: 'Source B (Satirical Print): George Cruikshank, The Massacre of Peterloo (1819)',
@@ -4405,7 +4501,7 @@ const industrialisation_and_empire_data = {
           act: 3,
           title: 'Captain Swing & The Hampshire Harvest Riots (November 1830)',
           theme_heading: 'Captain Swing & The Hampshire Harvest Riots (November 1830)',
-          text: '<span class="para-ref">[4.3]</span> A decade after Peterloo, agrarian rebellion exploded across southern England under the mysterious signature of <strong class="vocab-highlight">Captain Swing</strong>. In Hampshire and the Meon Valley, rural farm labourers faced winter starvation as newly invented horse-powered threshing machines stole their only winter wage. Desperate farm workers marched from farm to farm across downland parishes, smashing cast-iron threshing drums with sledgehammers, burning hayricks and wheat ricks under cover of night, and demanding a living wage of two shillings a day. At Selborne and Headley, mobilised crowds of over 200 labourers sacked the hated parish workhouses, dismantling punitive iron cages and burning parish pauper registers. In Fordingbridge, workers attacked the machinery at East Mills. Landowners and magistrates slept with loaded pistols, terrified that agricultural revolution was engulfing the kingdom.',
+          text: '<span class="para-ref">[4.3]</span> A decade after Peterloo, agrarian rebellion exploded across southern England under the mysterious signature of **Captain Swing**. In Hampshire and the Meon Valley, rural farm labourers faced winter starvation as newly invented horse-powered **threshing machines** stole their only winter wage. Desperate farm workers marched from farm to farm across downland parishes during the **Swing Riots**, smashing cast-iron threshing drums with sledgehammers, burning hayricks and wheat ricks under cover of night, and demanding a living wage of two shillings a day. At Selborne and Headley, mobilised crowds of over 200 labourers sacked the hated parish workhouses, dismantling punitive iron cages and burning parish pauper registers. In Fordingbridge, workers attacked the machinery at East Mills. Landowners and magistrates slept with loaded pistols, terrified that agricultural revolution was engulfing the kingdom.',
           source: {
             letter: 'C',
             title:
@@ -4554,7 +4650,7 @@ const industrialisation_and_empire_data = {
           act: 4,
           title: 'The Winchester Special Assizes & State Vengeance (December 1830)',
           theme_heading: 'The Winchester Special Assizes & State Vengeance (December 1830)',
-          text: '<span class="para-ref">[4.4]</span> The ruling aristocracy reacted to the Swing Riots with pitiless vengeance. In December 1830, Home Secretary Lord Melbourne dispatched a Special Commission of judges to hold extraordinary trials in the Great Hall of Winchester Castle. Over 300 Hampshire agricultural labourers—many illiterate young men—were dragged from village lock-ups before the judges. Six men were sentenced to death; among them was nineteen-year-old ploughboy <strong class="vocab-highlight">Henry Cook</strong> of Micheldever, convicted of knocking off the hat of magistrate William Bingham Baring. Despite Baring himself begging the judges for mercy, the Crown hanged Cook at Winchester Prison on 24 January 1831 to intimidate rural labourers. A further 101 Hampshire men and boys were sentenced to transportation, torn from their families, and shipped in disease-ridden convict hulks to penal servitude in Van Diemen’s Land (Tasmania).',
+          text: '<span class="para-ref">[4.4]</span> The ruling aristocracy reacted to the Swing Riots with pitiless vengeance. In December 1830, Home Secretary Lord Melbourne dispatched a Special Commission of judges to hold extraordinary trials known as the **Winchester Special Assizes** in the Great Hall of Winchester Castle. Over 300 Hampshire agricultural labourers—many illiterate young men—were dragged from village lock-ups before the judges. Six men were sentenced to death; among them was nineteen-year-old ploughboy **Henry Cook** of Micheldever, convicted of knocking off the hat of magistrate William Bingham Baring. Despite Baring himself begging the judges for mercy, the Crown hanged Cook at Winchester Prison on 24 January 1831 to intimidate rural labourers. A further 101 Hampshire men and boys were sentenced to **penal transportation**, torn from their families, and shipped in disease-ridden convict hulks to Van Diemen’s Land (Tasmania).',
           source: {
             letter: 'D',
             title:
@@ -4620,7 +4716,7 @@ const industrialisation_and_empire_data = {
           act: 5,
           title: 'The Tolpuddle Martyrs & The Right to Combine (1834)',
           theme_heading: 'The Tolpuddle Martyrs & The Right to Combine (1834)',
-          text: '<span class="para-ref">[4.5]</span> Terrified by the memory of the Swing Riots, landowners and the state treated any working-class solidarity as treason. In 1833, six agricultural labourers in the Dorset village of Tolpuddle, led by Methodist lay preacher <strong class="vocab-highlight">George Loveless</strong>, founded the Friendly Society of Agricultural Labourers to resist wage cuts from nine shillings to six shillings a week. Although trade unions had been decriminalized in 1824, local magistrate James Frampton conspired with Home Secretary Melbourne to prosecute the men under an obscure 1797 statute designed to suppress naval mutinies: administering "unlawful secret oaths". At Dorchester Assizes in March 1834, the judge sentenced all six labourers to seven years’ penal transportation to Australia. Rather than crushing unionism, the injustice ignited national fury: over 100,000 trade unionists marched peacefully across London to present a mammoth petition of 250,000 signatures, compelling the government to grant full royal pardons within two years.',
+          text: '<span class="para-ref">[4.5]</span> Terrified by the memory of the Swing Riots, landowners and the state treated any working-class solidarity as treason. In 1833, six agricultural labourers in the Dorset village of Tolpuddle, led by Methodist lay preacher **George Loveless**, founded the **Friendly Society of Agricultural Labourers** to resist wage cuts from nine shillings to six shillings a week. Although trade unions had been decriminalized in 1824, local magistrate James Frampton conspired with Home Secretary Melbourne to prosecute the men under an obscure 1797 statute designed to suppress naval mutinies: administering "unlawful secret oaths". At Dorchester Assizes in March 1834, the judge sentenced all six **Tolpuddle Martyrs** to seven years’ penal transportation to Australia. Rather than crushing unionism, the injustice ignited national fury: over 100,000 trade unionists marched peacefully across London to present a mammoth petition of 250,000 signatures, compelling the government to grant full royal pardons within two years.',
           source: {
             letter: 'E',
             title:
@@ -5633,31 +5729,49 @@ const industrialisation_and_empire_data = {
           term: 'Rotten Borough',
           definition:
             'An ancient electoral constituency with a tiny handful of voters (or none at all) that still returned two Members of Parliament to the House of Commons.',
+          syllables: 'Ro-tten Bo-rough',
+          phonetic: 'rotten borough',
+          tier: '3',
         },
         {
           term: 'Pocket Borough',
           definition:
             'A parliamentary seat completely controlled ("in the pocket of") a single aristocratic patron who dictated who won the election.',
+          syllables: 'Po-cket Bo-rough',
+          phonetic: 'pocket borough',
+          tier: '3',
         },
         {
           term: '1832 Great Reform Act',
           definition:
             'The landmark legislation that abolished 56 rotten boroughs, redistributed seats to industrial cities, and lowered property voting qualifications.',
+          syllables: '1832 Great Re-form Act',
+          phonetic: '1832 great reform act',
+          tier: '3',
         },
         {
           term: 'Secret Ballot Act 1872',
           definition:
             'The law requiring all parliamentary votes to be cast privately in voting booths on printed ballot papers, eliminating open-air bribery and coercion.',
+          syllables: 'Se-cret Ba-llot Act 1872',
+          phonetic: 'secret ballot act 1872',
+          tier: '3',
         },
         {
           term: 'Hustings',
           definition:
             'The open-air wooden platforms where parliamentary candidates were nominated and voters declared their votes publicly before cheering or jeering crowds.',
+          syllables: 'Hu-stings',
+          phonetic: 'hustings',
+          tier: '3',
         },
         {
           term: 'Franchise Expansion',
           definition:
             'The gradual parliamentary extension of voting rights from wealthy landowners (pre-1832) to urban workers (1867) and agricultural laborers (1884).',
+          syllables: 'Fra-nchi-se E-xpansion',
+          phonetic: 'franchise expansion',
+          tier: '3',
         },
       ],
       narrative_blocks: [
@@ -5665,7 +5779,7 @@ const industrialisation_and_empire_data = {
           act: 1,
           title: 'The Rotten Oligarchy: Old Sarum & The Unrepresented Cities (1800–1830)',
           theme_heading: 'The Rotten Oligarchy: Old Sarum & The Unrepresented Cities (1800–1830)',
-          text: '<span class="para-ref">[5.1]</span> In 1830, Britain claimed to be the cradle of parliamentary liberty, but less than 5% of adult males could vote. Parliamentary seats were frozen in a medieval time warp. Dozens of <strong class="vocab-highlight">rotten boroughs</strong> <small class="vocab-gloss">(depopulated boroughs controlled by wealthy aristocratic patrons)</small> sent two MPs to Westminster: Old Sarum in Wiltshire was a deserted grass mound with three houses and seven voters, while Dunwich had eroded into the North Sea. In contrast, colossal industrial powerhouses like Manchester, Birmingham, and Leeds, home to over a million combined factory workers and merchants, did not have a single Member of Parliament.',
+          text: '<span class="para-ref">[5.1]</span> In 1830, Britain claimed to be the cradle of parliamentary liberty, but less than 5% of adult males possessed the **parliamentary franchise**. Parliamentary seats were frozen in a medieval time warp. Dozens of **rotten boroughs** (depopulated boroughs controlled by wealthy aristocratic patrons) sent two MPs to Westminster: **Old Sarum** in Wiltshire was a deserted grass mound with three houses and seven voters, while Dunwich had eroded into the North Sea. In contrast, colossal industrial powerhouses like Manchester, Birmingham, and Leeds, home to over a million combined factory workers and merchants, did not have a single Member of Parliament.',
           source: {
             letter: 'A',
             title:
@@ -5729,7 +5843,7 @@ const industrialisation_and_empire_data = {
           act: 2,
           title: 'Bristol in Flames & The Days of May (1831–1832)',
           theme_heading: 'Bristol in Flames & The Days of May (1831–1832)',
-          text: '<span class="para-ref">[5.2]</span> When the unelected House of Lords rejected the Whig government\'s Reform Bill in October 1831, revolutionary rioting engulfed the country. In Bristol, a furious crowd burned the Bishop\'s Palace, the Mansion House, and three gaols to ashes. During the tense <strong>"Days of May"</strong> in 1832, radical reformer Francis Place coordinated a financial strike, distributing posters reading <em>"To stop the Duke, go for gold!"</em> Panic-stricken citizens withdrew £1.6 million in gold sovereigns from the Bank of England in days. Faced with imminent economic paralysis and armed uprising, King William IV agreed to flood the House of Lords with pro-reform peers, forcing the Tories to surrender and pass the Bill.',
+          text: '<span class="para-ref">[5.2]</span> When the unelected House of Lords rejected the Whig government\'s Reform Bill in October 1831, revolutionary rioting engulfed the country. In Bristol, a furious crowd burned the Bishop\'s Palace, the Mansion House, and three gaols to ashes. During the tense **"Days of May"** in 1832, radical reformer **Francis Place** coordinated a financial strike, distributing posters reading *"To stop the Duke, go for gold!"* Panic-stricken citizens withdrew £1.6 million in gold sovereigns from the Bank of England in days. Faced with imminent economic paralysis and armed uprising, King William IV agreed to flood the House of Lords with pro-reform peers, forcing the Tories to surrender and pass the Bill.',
           source: {
             letter: 'B',
             title:
@@ -5793,7 +5907,7 @@ const industrialisation_and_empire_data = {
           act: 3,
           title: 'The 1832 Great Reform Act: Triumph or"Great Betrayal"? (1832)',
           theme_heading: 'The 1832 Great Reform Act: Triumph or"Great Betrayal"? (1832)',
-          text: '<span class="para-ref">[5.3]</span> The landmark <strong>1832 Great Reform Act</strong> disenfranchised 56 rotten boroughs and redistributed 143 parliamentary seats to booming industrial cities like Manchester, Sheffield, and Newcastle. It expanded the electorate by 50% to roughly 800,000 men. However, the vote was strictly restricted to men occupying property worth £10 or more in rent annually. This deliberately enfranchised the prosperous middle-class factory owners while completely excluding the working class whose street protests had secured the victory. Bitterly betrayed, mill workers and handloom weavers denounced the Act as the "Great Betrayal," realizing that power had merely shifted from feudal landowners to capitalist mill owners.',
+          text: '<span class="para-ref">[5.3]</span> The landmark **1832 Great Reform Act** disenfranchised 56 rotten boroughs and redistributed 143 parliamentary seats to booming industrial cities like Manchester, Sheffield, and Newcastle. It expanded the electorate by 50% to roughly 800,000 men. However, the vote was strictly restricted by a **£10 property qualification** to men occupying property worth £10 or more in rent annually. This deliberately enfranchised the prosperous middle-class factory owners while completely excluding the working class whose street protests had secured the victory. Bitterly betrayed, mill workers and handloom weavers denounced the Act as the **"Great Betrayal"**, realizing that power had merely shifted from feudal landowners to capitalist mill owners.',
           source: {
             letter: 'C',
             id: 'iae_l5_src_c',
@@ -5863,7 +5977,7 @@ const industrialisation_and_empire_data = {
           act: 4,
           title: 'The People’s Charter: Six Points for Working-Class Power (1838–1848)',
           theme_heading: 'The People’s Charter: Six Points for Working-Class Power (1838–1848)',
-          text: '<span class="para-ref">[5.4]</span> Outraged by exclusion, cabinetmaker William Lovett and radical reformers drafted the <strong>People’s Charter of 1838</strong>, igniting the massive <strong class="vocab-highlight">Chartist movement</strong>. Chartists demanded the famous <strong>Six Points</strong>: universal male suffrage, the secret ballot, no property qualifications for MPs, salaries for MPs, equal constituencies, and annual parliaments. In 1839, 1842, and 1848, Chartists presented colossal monster petitions to Parliament, culminating in the historic 1848 Kennington Common mass demonstration (<span class="archival-meta-tag">Source D</span>). Although Parliament contemptuously rejected every petition and arrested leaders, Chartism created Britain’s first unified mass working-class political identity.',
+          text: '<span class="para-ref">[5.4]</span> Outraged by exclusion, cabinetmaker William Lovett and radical reformers drafted the **People’s Charter of 1838**, igniting the massive **Chartist movement**. Chartists demanded the famous **Six Points**: universal male suffrage, the secret ballot, no property qualifications for MPs, salaries for MPs, equal constituencies, and annual parliaments. In 1839, 1842, and 1848, Chartists presented colossal monster petitions to Parliament, culminating in the historic 1848 Kennington Common mass demonstration (<span class="archival-meta-tag">Source D</span>). Although Parliament contemptuously rejected every petition and arrested leaders, Chartism created Britain’s first unified mass working-class political identity.',
           source: {
             letter: 'D',
             title:
@@ -5931,7 +6045,7 @@ const industrialisation_and_empire_data = {
           act: 5,
           title: 'The Secret Ballot Act: The Death of Landlord Coercion (1872)',
           theme_heading: 'The Secret Ballot Act: The Death of Landlord Coercion (1872)',
-          text: '<span class="para-ref">[5.5]</span> Under the unreformed system, voting took place on open wooden platforms called "hustings." Voters stood before shouting crowds, publicly declaring their choice to election clerks. Landlords and factory bosses routinely evicted tenants or fired workers who voted against the master\'s favoured candidate, while drunken mobs were paid in gin to intimidate rivals. In 1872, Gladstone\'s Liberal government passed the historic <strong>Secret Ballot Act</strong>. Tested at the Pontefract by-election in August 1872, voters cast confidential paper ballots stamped in private wooden booths and sealed with liquorice wax (<span class="archival-meta-tag">Source E</span>). By liberating electors from employer intimidation, the secret ballot laid the true foundation of modern British democracy.',
+          text: '<span class="para-ref">[5.5]</span> Under the unreformed system, voting took place on open wooden platforms called **hustings**. Voters stood before shouting crowds, publicly declaring their choice to election clerks. Landlords and factory bosses routinely evicted tenants or fired workers who voted against the master\'s favoured candidate, while drunken mobs were paid in gin to intimidate rivals. In 1872, Gladstone\'s Liberal government passed the historic **Secret Ballot Act**. Tested at the **Pontefract by-election** in August 1872, voters cast confidential paper ballots stamped in private wooden booths and sealed with liquorice wax (<span class="archival-meta-tag">Source E</span>). By liberating electors from employer intimidation, the secret ballot laid the true foundation of modern British democracy.',
           source: {
             letter: 'E',
             title:
