@@ -990,6 +990,16 @@ export function initConsolidateStation(lesson) {
     timelinePathway = localStorage.getItem('timeline_pathway_' + lesson.id) || 'sketch';
   } catch (e) {}
 
+  // Load saved class size for Classroom Arena
+  let savedClassSize = 30;
+  try {
+    const s = localStorage.getItem('history_arena_class_size');
+    if (s) {
+      const parsed = parseInt(s, 10);
+      if (!isNaN(parsed) && parsed > 0) savedClassSize = parsed;
+    }
+  } catch (e) {}
+
   const state = {
     lessonId: lesson.id,
     mode: initialMode, // 'timeline' | 'quiz' | 'vocab' | 'domino' | 'exit' | 'arena'
@@ -1050,7 +1060,7 @@ export function initConsolidateStation(lesson) {
       lightningTimerRunning: false,
       lightningTimerInterval: null,
       seatedCount: 0,
-      targetStudents: 30,
+      targetStudents: savedClassSize,
       showLifeline: false
     },
     arenaData: extractClassroomArenaData(lesson, currentIdx, lessonsList)
@@ -2175,11 +2185,25 @@ function renderArenaLightningView(state, arenaData, isWhiteboard) {
 
         <!-- Class Size Preset Selector & Seated Counter -->
         <div style="background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border: 1.5px solid ${isWhiteboard ? '#334155' : '#e2e8f0'}; border-radius: 12px; padding: 18px 20px; max-width: 600px; margin: 0 auto 16px auto;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-            <span style="font-size: 0.8rem; font-weight: 800; color: #64748b; text-transform: uppercase;">Class Target Size:</span>
-            <div style="display: flex; gap: 4px;">
-              ${[15, 20, 25, 30, 32].map(sz => `
-                <button type="button" onclick="window.setArenaClassSize('${state.lessonId}', ${sz})" style="padding: 3px 8px; border-radius: 5px; border: 1px solid ${target === sz ? '#3b82f6' : (isWhiteboard ? '#334155' : '#cbd5e1')}; background: ${target === sz ? '#3b82f6' : 'transparent'}; color: ${target === sz ? '#ffffff' : (isWhiteboard ? '#94a3b8' : '#64748b')}; font-size: 0.75rem; font-weight: 700; cursor: pointer;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; padding-bottom: 12px;">
+            <!-- Manual Input & Steppers -->
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 0.8rem; font-weight: 800; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; text-transform: uppercase; letter-spacing: 0.04em;">
+                <i class="fa-solid fa-users"></i> Class Size:
+              </span>
+              <div style="display: flex; align-items: center; gap: 3px; background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 1.5px solid ${isWhiteboard ? '#38bdf8' : '#3b82f6'}; border-radius: 8px; padding: 2px 4px;">
+                <button type="button" onclick="window.adjustArenaClassSize('${state.lessonId}', -1)" title="Decrease class size" style="width: 24px; height: 24px; border: none; background: transparent; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; font-weight: 800; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">-</button>
+                <input type="number" id="class-size-manual-${state.lessonId}" min="1" max="99" value="${target}" onchange="window.setArenaClassSize('${state.lessonId}', this.value)" onkeydown="if(event.key==='Enter'){this.blur();}" style="width: 44px; border: none; background: transparent; font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; font-weight: 800; text-align: center; color: ${isWhiteboard ? '#38bdf8' : '#1d4ed8'}; outline: none;" />
+                <button type="button" onclick="window.adjustArenaClassSize('${state.lessonId}', 1)" title="Increase class size" style="width: 24px; height: 24px; border: none; background: transparent; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; font-weight: 800; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">+</button>
+              </div>
+              <span style="font-size: 0.78rem; font-weight: 600; color: #94a3b8;">pupils</span>
+            </div>
+
+            <!-- Quick Presets -->
+            <div style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+              <span style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: #94a3b8; margin-right: 2px;">Presets:</span>
+              ${[15, 20, 25, 28, 30, 32].map(sz => `
+                <button type="button" onclick="window.setArenaClassSize('${state.lessonId}', ${sz})" style="padding: 3px 8px; border-radius: 5px; border: 1px solid ${target === sz ? '#3b82f6' : (isWhiteboard ? '#334155' : '#cbd5e1')}; background: ${target === sz ? '#3b82f6' : 'transparent'}; color: ${target === sz ? '#ffffff' : (isWhiteboard ? '#94a3b8' : '#64748b')}; font-size: 0.75rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">
                   ${sz}
                 </button>
               `).join('')}
@@ -2601,11 +2625,23 @@ window.adjustArenaSeated = function (lessonId, delta) {
 window.setArenaClassSize = function (lessonId, size) {
   const state = window.consolidateStations[lessonId];
   if (!state || !state.arena) return;
-  state.arena.targetStudents = size;
-  if ((state.arena.seatedCount || 0) > size) {
-    state.arena.seatedCount = size;
+  const parsed = parseInt(size, 10);
+  if (isNaN(parsed) || parsed < 1) return;
+  state.arena.targetStudents = parsed;
+  try {
+    localStorage.setItem('history_arena_class_size', parsed.toString());
+  } catch (e) {}
+  if ((state.arena.seatedCount || 0) > parsed) {
+    state.arena.seatedCount = parsed;
   }
   renderStationContent(lessonId);
+};
+
+window.adjustArenaClassSize = function (lessonId, delta) {
+  const state = window.consolidateStations[lessonId];
+  if (!state || !state.arena) return;
+  const current = state.arena.targetStudents || 30;
+  window.setArenaClassSize(lessonId, Math.max(1, Math.min(99, current + delta)));
 };
 
 window.toggleArenaLifeline = function (lessonId) {
