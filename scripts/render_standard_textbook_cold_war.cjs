@@ -55,7 +55,7 @@ function getBase64Image(relativePath) {
   }
 }
 
-// Clean in-prose paragraph ref pills (e.g. <span class="para-ref">[1.1]</span>) and bracketed tags
+// Clean in-prose paragraph ref pills (e.g. <span class="para-ref">[1.1]</span>) and bracketed tags, and format markdown
 function cleanProse(text) {
   if (!text) return '';
   return text
@@ -71,6 +71,9 @@ function cleanProse(text) {
     )
     .replace(/([a-zA-Z])"([a-zA-Z])/g, '$1" $2')
     .replace(/\s*\(\s*\)/g, '')
+    .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
     .replace(/\s{2,}/g, ' ')
     .trim();
 }

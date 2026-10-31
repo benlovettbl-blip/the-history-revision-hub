@@ -66,12 +66,15 @@ function getBase64Image(relativePath) {
   }
 }
 
-// Clean in-prose paragraph ref pills (e.g. <span class="para-ref">[1.1]</span>)
+// Clean in-prose paragraph ref pills and format markdown
 function cleanProse(text) {
   if (!text) return '';
   return text
     .replace(/<span\s+class=["']para-ref["']>[^<]*<\/span>\s*/gi, '')
     .replace(/\[\d+\.\d+\]\s*/g, '')
+    .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
     .trim();
 }
 
