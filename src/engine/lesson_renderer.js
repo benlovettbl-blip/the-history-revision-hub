@@ -3831,9 +3831,9 @@ export function renderLesson(lesson) {
     : `${unitBadgeTitle} &bull; ${isGCSE ? 'Lesson ' + (currentIndex + 1) : 'Enquiry ' + (currentIndex + 1)}`;
 
   html += `
-      <div class="lesson-hero${heroExtraClass}" style="position: relative; width: calc(100% + 8rem); margin-left: -4rem; margin-top: -1rem; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-glass); box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+      <div class="lesson-hero${heroExtraClass}" style="position: relative; width: calc(100% + 8rem); margin-left: -4rem; margin-top: 0; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border-glass); box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
         <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.85) 45%, rgba(15,23,42,0.96) 100%); backdrop-filter: blur(1px);"></div>
-        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1.25rem 4rem;">
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1rem 4rem;">
           <span style="color: #cbd5e1; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.78rem;">${heroEyebrow}</span>
           <h2 style="font-family: 'Playfair Display', serif; color: white; font-size: 1.6rem; margin: 0.2rem 0 0 0; line-height: 1.2; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">${cleanLessonHeading}</h2>
           ${enquirySubtitle}
@@ -3843,7 +3843,7 @@ export function renderLesson(lesson) {
     `;
 
   html += `
-      <div id="progress-container" style="background: rgba(226,232,240,0.5); height: 6px; width: 100%; margin-bottom: 20px; border-radius: 3px; overflow: hidden; backdrop-filter: blur(5px);">
+      <div id="progress-container" style="background: rgba(226,232,240,0.5); height: 4px; width: 100%; margin-bottom: 12px; border-radius: 2px; overflow: hidden; backdrop-filter: blur(5px);">
         <div id="progress-bar" style="background: #10b981; height: 100%; width: 0%; transition: width 0.3s;"></div>
       </div>
     `;
