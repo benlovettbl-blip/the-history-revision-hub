@@ -1063,21 +1063,6 @@ html {
   }
 }
 
-/* Quick Resume Strip */
-.dashboard-resume-strip {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  border: 1px solid #334155;
-  border-radius: 10px;
-  padding: 9px 16px;
-  margin-bottom: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;

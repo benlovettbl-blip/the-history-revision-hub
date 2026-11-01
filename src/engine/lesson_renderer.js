@@ -3422,6 +3422,7 @@ export function renderLesson(lesson) {
   const isKs2 = checkIsKs2(unitId, activeUnit);
   const isKs3 = checkIsKs3(unitId, activeUnit);
   const isGCSE = checkIsGCSE(unitId, activeUnit);
+
   const hasInlineNarrativeSources =
     (Array.isArray(lesson.narrative_blocks) &&
       lesson.narrative_blocks.some((b) => b && (b.source || b.sources))) ||
@@ -6038,6 +6039,13 @@ export function renderLesson(lesson) {
         /src=["'](\.\/)?assets\//g,
         'src="/units/' + window.currentUnitId + '/assets/',
       );
+      // Strip leading in-prose paragraph reference ([X.Y] or <span class="para-ref">...</span>) to avoid numbering duplicates
+      contentStr = contentStr.replace(
+        /^\s*<span\s+class=["']para-ref["']>\s*\[\s*[\d\.]+\s*\]\s*<\/span>\s*/i,
+        '',
+      );
+      contentStr = contentStr.replace(/^\s*\[\s*\d+\.\d+\s*\]\s*/i, '');
+
       let styledContent = contentStr;
       if (contentStr.trim().startsWith('<strong>')) {
         styledContent = contentStr.replace(/^<strong>(.*?)<\/strong>\s*/i, (match, headingText) => {
@@ -6070,6 +6078,12 @@ export function renderLesson(lesson) {
           : highlightGlossary(l4ContentStr);
 
         l4ContentStr = formatBold(l4ContentStr);
+        // Strip leading in-prose paragraph reference ([X.Y] or <span class="para-ref">...</span>) to avoid numbering duplicates
+        l4ContentStr = l4ContentStr.replace(
+          /^\s*<span\s+class=["']para-ref["']>\s*\[\s*[\d\.]+\s*\]\s*<\/span>\s*/i,
+          '',
+        );
+        l4ContentStr = l4ContentStr.replace(/^\s*\[\s*\d+\.\d+\s*\]\s*/i, '');
         l4StyledContent = l4ContentStr;
         if (l4ContentStr.trim().startsWith('<strong>')) {
           l4StyledContent = l4ContentStr.replace(
@@ -6083,6 +6097,15 @@ export function renderLesson(lesson) {
 
       let themeHeadingHtml = '';
       const rawHeading = block.theme_heading || block.theme || block.title;
+      let stageDateVal =
+        (lesson &&
+          lesson.causal_domino_spine &&
+          Array.isArray(lesson.causal_domino_spine.stages) &&
+          lesson.causal_domino_spine.stages[index] &&
+          lesson.causal_domino_spine.stages[index].date) ||
+        '';
+      let cleanHeadingTitle = '';
+
       if (rawHeading) {
         let displayHeading = rawHeading;
         if (/^Act\s*\d+/i.test(rawHeading)) {
@@ -6096,11 +6119,22 @@ export function renderLesson(lesson) {
               .trim();
           }
         }
-        const headingId = displayHeading
+
+        // Date deduplication: If stageDateVal is present or heading ends with parenthesised date
+        cleanHeadingTitle = displayHeading;
+        const trailingDateMatch = displayHeading.match(/\s*\(([^)]*\d{2,4}[^)]*)\)\s*$/);
+        if (stageDateVal) {
+          cleanHeadingTitle = cleanHeadingTitle.replace(/\s*\([^)]*\d{2,4}[^)]*\)\s*$/, '').trim();
+        } else if (trailingDateMatch) {
+          stageDateVal = trailingDateMatch[1].trim();
+          cleanHeadingTitle = cleanHeadingTitle.replace(/\s*\([^)]*\d{2,4}[^)]*\)\s*$/, '').trim();
+        }
+
+        const headingId = cleanHeadingTitle
           .toLowerCase()
           .replace(/[^a-z0-9]+/g, '-')
           .replace(/(^-|-$)/g, '');
-        themeHeadingHtml = `<h4 class="narrative-heading" id="${headingId}" style="margin: 0; color: #1e3a8a; font-size: 1.12rem; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;"><i class="fa-solid fa-bookmark" style="color: #64748b; font-size: 0.95rem;"></i><span>${displayHeading}</span></h4>`;
+        themeHeadingHtml = `<h4 class="narrative-heading" id="${headingId}" style="margin: 0; color: #1e3a8a; font-size: 1.10rem; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;"><i class="fa-solid fa-bookmark" style="color: #64748b; font-size: 0.92rem;"></i><span>${cleanHeadingTitle}</span></h4>`;
       }
 
       let imageHtml = '';
@@ -6790,7 +6824,7 @@ export function renderLesson(lesson) {
             : rawSource.caption || 'Archival Primary Record';
 
           return `
-            <details class="cme-source-drawer medicine-source-drawer eee-source-drawer weimar-source-drawer archival-drawer gcse-source-container archival-source-box" ${bCardIdAttr} style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
+            <details class="cme-source-drawer medicine-source-drawer eee-source-drawer weimar-source-drawer archival-drawer gcse-source-container archival-source-box" ${bCardIdAttr} style="margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
               <summary style="padding: 7px 12px; min-height: 40px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
                 <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                   <span class="archival-meta-tag" style="background: #1e40af; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2;">${sLetter ? `SOURCE ${sLetter}` : 'ARCHIVAL EVIDENCE'}</span>
@@ -6880,6 +6914,22 @@ export function renderLesson(lesson) {
         !(block.title && block.title.toLowerCase().includes('lesson reflection')),
       );
 
+      let decimalRef = '';
+      const rawTextForMatch = block.text || block.content || '';
+      const paraMatch = rawTextForMatch.match(/\[\s*(\d+\.\d+)\s*\]/);
+      if (paraMatch) {
+        decimalRef = paraMatch[1];
+      } else {
+        let lNum = 1;
+        if (lesson && lesson.id && lesson.id.startsWith('lesson_')) {
+          const parsed = parseInt(lesson.id.split('_')[1], 10);
+          if (!isNaN(parsed)) lNum = parsed;
+        } else if (lesson && typeof lesson.lesson_number === 'number') {
+          lNum = lesson.lesson_number;
+        }
+        decimalRef = `${lNum}.${index + 1}`;
+      }
+
       const isSourceAfter =
         window.currentUnitId === 'monarchy_religion_power' ||
         unitId === 'monarchy_religion_power' ||
@@ -6889,67 +6939,77 @@ export function renderLesson(lesson) {
       const hasPureVisual = Boolean(block.image && !block.image_context);
       const isReversed = hasPureVisual ? visualPlateCounter++ % 2 === 1 : index % 2 === 1;
 
-      let stageBannerHtml = '';
-      if (
+      const stageObj =
         lesson.causal_domino_spine &&
         Array.isArray(lesson.causal_domino_spine.stages) &&
-        lesson.causal_domino_spine.stages[index]
-      ) {
-        const stageObj = lesson.causal_domino_spine.stages[index];
-        const stageNum = stageObj.step || index + 1;
-        const stageDate = stageObj.date || '';
-        const stageQ = stageObj.question || '';
+        lesson.causal_domino_spine.stages[index];
+      const stageNum = stageObj ? (stageObj.step || index + 1) : index + 1;
+      const stageQ = stageObj ? (stageObj.question || '') : '';
+      const matchingLetter = ['A', 'B', 'C', 'D', 'E'][index];
+      const isFiveBlockUnit = [
+        'cme_new',
+        'usa',
+        'weimar_nazi_germany',
+        'eee',
+        'cold_war',
+        'edexcel_medicine',
+      ].includes(window.currentUnitId || unitId);
 
-        if (stageQ) {
-          const matchingLetter = ['A', 'B', 'C', 'D', 'E'][index];
-          const isFiveBlockUnit = [
-            'cme_new',
-            'usa',
-            'weimar_nazi_germany',
-            'eee',
-            'cold_war',
-            'edexcel_medicine',
-          ].includes(window.currentUnitId || unitId);
-
-          stageBannerHtml = `
-            <div class="workbook-stage-question-banner" id="stage-banner-${stageNum}" onclick="if(window.jumpToSpineCard){window.jumpToSpineCard(${stageNum});}" title="Click to view Stage ${stageNum} causal dominoes in Chronology Spine above" style="margin-bottom: 12px; background: #0f172a; border: 1.5px solid #334155; border-left: 4px solid #0284c7; border-radius: 6px; padding: 10px 14px; color: #ffffff; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 2px 5px rgba(15,23,42,0.15);">
-              <div style="display: flex; align-items: center; justify-content: space-between; gap: 7px; margin-bottom: 4px; flex-wrap: wrap;">
-                <div style="display: flex; align-items: center; gap: 7px; flex-wrap: wrap;">
-                  <span class="stage-pill-badge" style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; padding: 2px 7px; border-radius: 3px; letter-spacing: 0.5px; text-transform: uppercase;">
-                    <i class="fa-solid fa-book-open" style="margin-right: 4px;"></i> Stage ${stageNum} Workbook Enquiry
-                  </span>
-                  ${stageDate ? `<span style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #f59e0b; background: rgba(245,158,11,0.12); padding: 2px 7px; border-radius: 3px; border: 1px solid rgba(245,158,11,0.25);">${stageDate}</span>` : ''}
-                </div>
+      let headerBlockHtml = '';
+      if (stageQ) {
+        headerBlockHtml = `
+          <div class="workbook-stage-question-banner unified-stage-header-card" id="stage-banner-${stageNum}" style="margin-bottom: 14px; background: #0f172a; border: 1px solid #334155; border-left: 4px solid #0284c7; border-radius: 8px; padding: 12px 16px; color: #ffffff; box-shadow: 0 2px 6px rgba(15,23,42,0.12);">
+            <div class="stage-header-top-bar" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
+              <div class="stage-header-meta" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0;">
+                <span class="stage-decimal-pill" style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">
+                  ${decimalRef}
+                </span>
+                ${themeHeadingHtml}
+                ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.18); border: 1px solid rgba(245,158,11,0.35); padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
+              </div>
+              <div class="narrative-chunk-audio" style="margin-left: auto; flex-shrink: 0;">
+                ${renderAudioPlaybackBar('Read Aloud Paragraph')}
+              </div>
+            </div>
+            <div class="stage-enquiry-subcard" onclick="if(window.jumpToSpineCard){window.jumpToSpineCard(${stageNum});}" title="Click to view Stage ${stageNum} causal dominoes in Chronology Spine above" style="padding-top: 10px; border-top: 1px solid rgba(148, 163, 184, 0.2); cursor: pointer;">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 5px; flex-wrap: wrap;">
+                <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; color: #38bdf8; letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 5px;">
+                  <i class="fa-solid fa-book-open"></i> Stage ${stageNum} Workbook Enquiry
+                </span>
                 ${
                   matchingLetter && isFiveBlockUnit
                     ? `
-                  <button type="button" class="stage-source-jump-btn" onclick="event.stopPropagation(); if(window.jumpToSourceDrawer){window.jumpToSourceDrawer('${matchingLetter}');}" style="background: rgba(2, 132, 199, 0.22); border: 1px solid rgba(56, 189, 248, 0.45); color: #7dd3fc; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 3px 9px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;" title="Jump directly to Source ${matchingLetter} Evidence Drawer below">
+                  <button type="button" class="stage-source-jump-btn" onclick="event.stopPropagation(); if(window.jumpToSourceDrawer){window.jumpToSourceDrawer('${matchingLetter}');}" style="background: rgba(2, 132, 199, 0.22); border: 1px solid rgba(56, 189, 248, 0.45); color: #7dd3fc; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease;" title="Jump directly to Source ${matchingLetter} Evidence Drawer below">
                     <i class="fa-solid fa-scroll" style="color: #38bdf8;"></i> Jump to Source ${matchingLetter}
                   </button>
                 `
                     : ''
                 }
               </div>
-              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 700; color: #f8fafc; line-height: 1.35; margin-top: 2px;">
+              <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 700; color: #f8fafc; line-height: 1.35;">
                 &ldquo;${stageQ}&rdquo;
               </div>
             </div>
-          `;
-        }
+          </div>
+        `;
+      } else {
+        headerBlockHtml = `
+          <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap;">
+            <div class="narrative-chunk-meta" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0;">
+              ${showParaNumber ? `<span class="stage-decimal-pill" style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">${decimalRef}</span>` : ''}
+              ${themeHeadingHtml}
+              ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
+            </div>
+            <div class="narrative-chunk-audio" style="margin-left: auto; flex-shrink: 0;">
+              ${renderAudioPlaybackBar('Read Aloud Paragraph')}
+            </div>
+          </div>
+        `;
       }
 
       const narrativeChunkHtml = `
-              <div id="para-${index + 1}" class="narrative-chunk" style="display: flex; flex-direction: column; margin-bottom: ${hasPureVisual ? '0' : '15px'}; padding: 16px 18px; background: ${bg}; border-radius: 6px; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.05); flex: 1 1 58%; min-width: 0;">
-                <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: ${themeHeadingHtml || showParaNumber ? '10px' : '4px'}; flex-wrap: wrap;">
-                  <div class="narrative-chunk-meta" style="display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; min-width: 0;">
-                    ${showParaNumber ? '<div class="para-number" style="margin-right: 0;">' + (index + 1) + '</div>' : ''}
-                    ${themeHeadingHtml}
-                  </div>
-                  <div class="narrative-chunk-audio" style="margin-left: auto; flex-shrink: 0;">
-                    ${renderAudioPlaybackBar('Read Aloud Paragraph')}
-                  </div>
-                </div>
-                ${stageBannerHtml}
+              <div id="para-${index + 1}" class="narrative-chunk" style="display: flex; flex-direction: column; margin-bottom: ${hasPureVisual ? '0' : '15px'}; padding: 16px 18px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: 1 1 58%; min-width: 0;">
+                ${headerBlockHtml}
                 <div class="narrative-text" style="width: 100%; line-height: 1.65; color: #1e293b; font-size: 1.05rem;">${styledContent}</div>
               </div>
       `;
@@ -6986,11 +7046,12 @@ export function renderLesson(lesson) {
       if (block.level_4) {
         extrasHtml += `
             <div class="level4-narrative-container" style="display: none;">
-              <div id="para-l4-${index + 1}" class="narrative-chunk" style="display: flex; flex-direction: column; margin-bottom: 15px; padding: 16px 18px; background: ${bg}; border-radius: 6px; border-left: 4px solid #10b981; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
-                  <div class="narrative-chunk-meta" style="display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; min-width: 0;">
-                    <div class="para-number" style="background:#ecfdf5; color:#047857; margin-right: 0;">${index + 1}</div>
-                    ${themeHeadingHtml}
+              <div id="para-l4-${index + 1}" class="narrative-chunk" style="display: flex; flex-direction: column; margin-bottom: 15px; padding: 16px 18px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #10b981; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04);">
+                <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap;">
+                  <div class="narrative-chunk-meta" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0;">
+                    <span class="stage-decimal-pill" style="background:#ecfdf5; color:#047857; border: 1px solid #a7f3d0; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">${decimalRef}</span>
+                    <h4 class="narrative-heading" style="margin: 0; color: #065f46; font-size: 1.05rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-bookmark" style="color: #10b981; font-size: 0.88rem;"></i><span>${cleanHeadingTitle}</span></h4>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 800; background: #d1fae5; color: #047857; padding: 2px 6px; border-radius: 3px; text-transform: uppercase;">Extension Tier</span>
                   </div>
                   <div class="narrative-chunk-audio" style="margin-left: auto; flex-shrink: 0;">
                     ${renderAudioPlaybackBar('Read Aloud Paragraph (Level 4)')}

@@ -54,36 +54,6 @@ export function renderDashboard() {
 
   const units = getUnits();
 
-  const unitCanonicalTitles = {
-    ks2_ww2: 'World War II & The Home Front (1939–1945)',
-    water_and_sanitation: 'Water & Sanitation (1250–Present)',
-    medieval_england: 'Medieval England (1066–1485)',
-    early_modern_world: 'Early Modern World (1450–1750)',
-    monarchy_religion_power: 'Crown, Church & Parliament (1517–1689)',
-    first_british_empire: 'The First British Empire (1600–1783)',
-    industrialisation_and_empire: 'The Industrial Revolution (1750–1900)',
-    second_british_empire: 'The Second British Empire (1783–1914)',
-    australia: 'Invasion & Survival in Australia',
-    great_war: 'Causes of the Great War (1890–1914)',
-    great_war_part2: 'The Great War (1914–1919)',
-    the_shoah: 'The Shoah (1933–1948)',
-    cold_war: 'The Cold War (1945–1991)',
-    second_world_war: 'The Second World War',
-    post_war_britain: 'Rights, Protest & Post-War Britain',
-    cme_new: 'Conflict in the Middle East (1945–1995)',
-    weimar_nazi_germany: 'Weimar & Nazi Germany (1918–1939)',
-    edexcel_medicine: 'Medicine Through Time (c.1250–Present)',
-    eee: 'Early Elizabethan England (1558–1588)',
-    usa: 'USA: Conflict at Home & Abroad (1954–1975)',
-  };
-
-  const lastUnitId =
-    (typeof localStorage !== 'undefined' && localStorage.getItem('history_hub_last_unit')) || '';
-  const lastLessonTitle =
-    (typeof localStorage !== 'undefined' && localStorage.getItem('history_hub_last_lesson_title')) || '';
-  const resumeUnitTitle =
-    unitCanonicalTitles[lastUnitId] || (lastUnitId ? units.find((u) => u.id === lastUnitId)?.title : '') || '';
-
   let html = `
     <div class="homepage-dashboard-container" style="max-width: 1240px; margin: 0 auto; padding: 0 20px 60px 20px;">
       
@@ -111,44 +81,6 @@ export function renderDashboard() {
         </nav>
       </div>
   `;
-
-  // Quick Resume Strip
-  if (lastUnitId && resumeUnitTitle) {
-    html += `
-      <div class="dashboard-resume-strip" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1px solid #334155; border-radius: 10px; padding: 9px 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
-        <div style="display: flex; align-items: center; gap: 10px; min-width: 260px;">
-          <span style="background: rgba(59, 130, 246, 0.22); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.35); border-radius: 6px; padding: 3px 8px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 5px;">
-            <i class="fa-solid fa-clock-rotate-left"></i> Resume Learning
-          </span>
-          <span style="font-size: 0.84rem; color: #f8fafc; font-weight: 600;">
-            ${resumeUnitTitle}
-            ${lastLessonTitle ? `<span style="color: #94a3b8; font-weight: 400; margin-left: 6px;">&bull; ${lastLessonTitle}</span>` : ''}
-          </span>
-        </div>
-        <button type="button" class="btn" onclick="window.launchSubApp('${lastUnitId}')" style="background: #2563eb; color: #ffffff; border: none; border-radius: 6px; padding: 6px 14px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.15s ease;" onmouseover="this.style.background='#1d4ed8'" onmouseout="this.style.background='#2563eb'">
-          <span>Continue Lesson</span>
-          <i class="fa-solid fa-arrow-right" style="font-size: 0.7rem;"></i>
-        </button>
-      </div>
-    `;
-  } else {
-    html += `
-      <div class="dashboard-resume-strip" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1px solid #334155; border-radius: 10px; padding: 9px 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
-        <div style="display: flex; align-items: center; gap: 10px; min-width: 260px;">
-          <span style="background: rgba(16, 185, 129, 0.22); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.35); border-radius: 6px; padding: 3px 8px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 5px;">
-            <i class="fa-solid fa-compass"></i> Featured
-          </span>
-          <span style="font-size: 0.84rem; color: #f8fafc; font-weight: 600;">
-            Medieval England (1066–1485) &bull; <span style="color: #94a3b8; font-weight: 400;">Explore the chronological enquiry spine</span>
-          </span>
-        </div>
-        <button type="button" class="btn" onclick="window.launchSubApp('medieval_england')" style="background: #2563eb; color: #ffffff; border: none; border-radius: 6px; padding: 6px 14px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.15s ease;" onmouseover="this.style.background='#1d4ed8'" onmouseout="this.style.background='#2563eb'">
-          <span>Explore Unit</span>
-          <i class="fa-solid fa-arrow-right" style="font-size: 0.7rem;"></i>
-        </button>
-      </div>
-    `;
-  }
 
   // Key Stage 2 Grouping
   const ks2Order = ['ks2_ww2'];
@@ -891,10 +823,6 @@ window.launchSubApp = function (subAppName) {
     if (subAppName === 'gcse_usa_1954_1975') mappedName = 'usa';
     if (subAppName === 'gcse_elizabethan_england') mappedName = 'eee';
     if (subAppName === 'great_war_v2') mappedName = 'great_war';
-
-    try {
-      localStorage.setItem('history_hub_last_unit', mappedName);
-    } catch (e) {}
 
     if (window.switchView) {
       await window.switchView('lessons', mappedName);
