@@ -69929,6 +69929,10 @@
               "type": "narrative",
               "title": "Humanism & The Hornbook: The Printing Press, Illiteracy and the Protestant Drive for Reading",
               "theme_heading": "Humanism & The Hornbook: The Printing Press, Illiteracy and the Protestant Drive for Reading",
+              "image": "/images/renaissance_printing_house_stradanus.jpg",
+              "image_alt": "Johannes Stradanus engraving Impressio Librorum showing a Renaissance printing workshop",
+              "caption": "Johannes Stradanus, Impressio Librorum (c. 1580). Renaissance engraving depicting moveable-type compositors, inkers, and screw presses that drove the Tudor literacy revolution.",
+              "isReversed": false,
               "text": "<span class=\"para-ref\">[1.1]</span> Education in Elizabethan England was shaped by the Renaissance revival of learning known as **Humanism**, which argued that education should develop civilized citizens capable of governing the realm. However, schooling was strictly governed by the **Great Chain of Being**: education was intended to prepare children for their ordained station in life, not to encourage social climbing.<br><br><span class=\"para-ref\">[1.2]</span> Literacy rates rose steadily, with male literacy increasing from 20% to roughly **30% of men** by 1600, while female literacy remained below **10%**. Young children of the middling sort began their education in **Petty Schools** (or Dame Schools for girls), run by local women or clergy, learning basic English reading, writing, and arithmetic before progressing to grammar school or domestic work.",
               "level_4": "Influenced by Humanism, Elizabethan education expanded, raising male literacy to about 30%. However, schooling was restricted by social class, preparing pupils only for their assigned social station.",
               "sources": [
@@ -70105,6 +70109,10 @@
               "type": "narrative",
               "title": "The Elizabethan Playhouse: Commercial Theatres, Groundlings and Puritan Opposition",
               "theme_heading": "The Elizabethan Playhouse: Commercial Theatres, Groundlings and Puritan Opposition",
+              "image": "/images/theatre.jpg",
+              "image_alt": "The Chandos portrait of William Shakespeare wearing an earring and white collar",
+              "caption": "Attributed to John Taylor, The Chandos Portrait of William Shakespeare (c. 1600–1610, NPG 1). Playwright whose works for the Lord Chamberlain's Men defined the booming commercial Elizabethan stage.",
+              "isReversed": true,
               "text": "<span class=\"para-ref\">[5.1]</span> The Elizabethan era saw the birth of secular commercial drama, evolving from wandering troupes of actors performing in inn-yards to purpose-built permanent playhouses. In 1576, James Burbage erected the first permanent theatre, **The Theatre**, in Shoreditch, outside the City of London's jurisdiction, followed by **The Curtain (1577) and The Rose (1587)**.<br><br><span class=\"para-ref\">[5.2]</span> Playhouses accommodated up to 3,000 spectators and were unique social melting pots: common **groundlings paid one penny** to stand in the open yard, while wealthy gentry paid up to sixpence for cushioned upper galleries. However, the theatre provoked fierce opposition from **Puritan ministers and London authorities**, who condemned plays as sinful breeding grounds for plague, prostitution, and public disorder.",
               "level_4": "Permanent playhouses like 'The Theatre' (1576) emerged outside London, attracting thousands from penny groundlings to nobles. Puritans and magistrates opposed theatres due to fears of plague and immorality.",
               "tasks": [
@@ -71113,6 +71121,10 @@
               "type": "narrative",
               "title": "The Hungry Generation: Population Explosion, Harvest Failures and Soaring Bread Prices",
               "theme_heading": "The Hungry Generation: Population Explosion, Harvest Failures and Soaring Bread Prices",
+              "image": "/images/sir_william_cecil_lord_burghley.jpg",
+              "image_alt": "Marcus Gheeraerts portrait of Sir William Cecil, 1st Baron Burghley with white beard and wand of office",
+              "caption": "Marcus Gheeraerts the Elder, Sir William Cecil, 1st Baron Burghley (c. 1585, NPG 362). Queen Elizabeth's chief minister whose parliamentary memoranda closely tracked rising grain prices and harvest crises.",
+              "isReversed": false,
               "text": "<span class=\"para-ref\">[1.1]</span> The fundamental driver of Elizabethan poverty was a massive demographic explosion. England’s population surged from 3 million in 1558 to over **4.2 million by 1600**, driven by falling death rates and higher fertility. Agricultural food production failed to keep pace with this rapid growth, resulting in severe food shortages and spiralling inflation, particularly when compounded by consecutive **bad harvests in the 1570s and 1580s**.<br><br><span class=\"para-ref\">[1.2]</span> The price of basic bread grain escalated far faster than income, causing **real wages to collapse by 50%**. Ordinary labourers, tenant farmers, and urban apprentices were pushed below subsistence levels, sparking a widespread crisis of poverty and hunger across the realm.",
               "level_4": "England's population grew from 3m to over 4m, causing demand for food to outstrip supply. Bad harvests drove up food prices while real wages fell, plunging thousands into desperate poverty.",
               "sources": [
@@ -71252,6 +71264,10 @@
               "type": "narrative",
               "title": "Raw Wool and the House of Correction: The 1576 Act and the Foundations of Modern Welfare",
               "theme_heading": "Raw Wool and the House of Correction: The 1576 Act and the Foundations of Modern Welfare",
+              "image": "/images/edward_vi_bridewell_hospital_charter.jpg",
+              "image_alt": "George Vertue engraving showing King Edward VI granting the charter of Bridewell Palace to the City of London",
+              "caption": "George Vertue after Hans Holbein, The Charter of Bridewell Hospital (1750). The institutional prototype adopted nationwide under the 1576 Poor Act to put the able-bodied poor to work in county Houses of Correction.",
+              "isReversed": true,
               "text": "<span class=\"para-ref\">[5.1]</span> Recognizing that physical punishment alone could not solve systemic unemployment, Parliament enacted the **1576 Act for the Relief of the Poor**. This statute established a new principle: local government had a duty to provide work for the able-bodied unemployed.<br><br><span class=\"para-ref\">[5.2]</span> Justices of the Peace in every county were directed to purchase a communal stock of **raw materials—such as wool, hemp, flax, and iron**—for the unemployed to spin and process in exchange for wages. Furthermore, each town was required to construct a **House of Correction (known as a Bridewell)**, where persistent idle vagrants were compelled to perform hard manual labour under strict discipline, laying the foundation for the landmark 1601 Poor Law.",
               "level_4": "The 1576 Act ordered JPs to provide raw wool and hemp so the able-bodied poor could earn wages. It established Houses of Correction (Bridewells) to force persistent vagrants into hard labor.",
               "tasks": [
@@ -139649,6 +139665,10 @@
             {
               "act": 2,
               "title": "Liberation: The World Confronts the Unimaginable",
+              "image": "/images/buchenwald_liberation_1945.jpg",
+              "image_alt": "US Army Signal Corps photograph of emaciated survivors in wooden barracks bunks at Buchenwald camp",
+              "caption": "US Army Signal Corps / Private Harry Miller (16 April 1945). Emaciated survivors in wooden bunk tiers at Buchenwald, including 16-year-old Elie Wiesel (second row, seventh from left), author of Night.",
+              "isReversed": false,
               "text": "<span class=\"para-ref\">[7.2]</span> Allied soldiers were completely unprepared for what they discovered. Soviet troops liberated Majdanek in July 1944 and Auschwitz on **27 January 1945** (a date now commemorated worldwide as <em>Holocaust Memorial Day</em>). In the west, American forces entered Buchenwald and Dachau in April 1945. On **15 April 1945**, the British 11th Armoured Division entered **Bergen-Belsen** in northern Germany. Expecting a prisoner-of-war camp, British soldiers found 60,000 starving, typhus-infected human beings living alongside 13,000 unburied corpses decaying in the open air. The BBC correspondent **Richard Dimbleby** entered with the troops and wept openly as he broadcast back to London: <em>\"I passed through the barrier and found myself in a world of a nightmare... Here over an acre of ground lay dead and dying people. You could not see which was which.\"</em> British army bulldozers had to be used to bury thousands of bodies in mass graves to prevent a catastrophic outbreak of typhus.",
               "source": {
                 "letter": "B",
@@ -139757,6 +139777,10 @@
             {
               "act": 5,
               "title": "What Was Lost? The Imperative of Memory",
+              "image": "/images/shoah_memorial_berlin.jpg",
+              "image_alt": "Peter Eisenman Memorial to the Murdered Jews of Europe in Berlin showing grid of concrete stelae",
+              "caption": "Peter Eisenman, Memorial to the Murdered Jews of Europe (Berlin, 2005). Field of 2,711 concrete stelae commemorating the six million Jewish victims of Nazi extermination.",
+              "isReversed": true,
               "text": "<span class=\"para-ref\">[7.5]</span> What was lost in the Shoah? **Approximately six million Jewish people**—two out of every three European Jews, including 1.5 million children—were murdered. Yet the loss cannot be measured in numbers alone. With them vanished an entire civilization: a millennium of Yiddish language, poetry, theatre, religious debate, and communal memory across Central and Eastern Europe. Entire family branches, centuries-old synagogues, and irreplaceable archives were erased from human existence. As the generation of eyewitness survivors passes away, the duty of bearing witness shifts to us. To remember the Shoah is not merely to mourn the dead; it is to understand how easily civilized societies can slide into barbarism, to challenge antisemitism and racism in our own communities, and to uphold the solemn promise inscribed on memorials across the globe: <em>Never Again</em>.",
               "source": {
                 "letter": "E",
@@ -143364,6 +143388,10 @@
               "act_title": "Stage 1: The Arrest of Rosa Parks — Why was Rosa Parks' deliberate refusal to give up her seat the ideal catalyst to spark a citywide bus boycott?",
               "title": "The Arrest of Rosa Parks",
               "theme_heading": "The Arrest of Rosa Parks",
+              "image": "/units/usa/assets/sources/portraits/rosa_parks.jpg",
+              "image_alt": "Black and white portrait photograph of civil rights activist Rosa Parks",
+              "caption": "Rosa Parks (1913–2005). Montgomery seamstress and NAACP secretary whose refusal to surrender her seat on 1 December 1955 sparked the 381-day Montgomery Bus Boycott.",
+              "isReversed": false,
               "text": "<span class=\"para-ref\">[1.1]</span> **The Degradation of the Montgomery Bus Lines:** In Montgomery, Alabama, municipal bus segregation was a source of constant daily humiliation for Black residents, who made up over 70% of transit ridership. City ordinances required Black passengers to pay their fare at the front, exit, and re-enter through the rear door. The first four rows of seats were reserved exclusively for whites; if white seats filled up, Black passengers seated in the middle \"coloured section\" were legally required to vacate entire rows so no white passenger had to sit near a Black person. Bus drivers carried firearms, routinely abusing Black women with racial profanities.\n\n<span class=\"para-ref\">[1.2]</span> **The Arrest of Rosa Parks and the WPC Leaflet Blitz:** On 1 December 1955, seamstress Rosa Parks, a respected NAACP officer trained at the Highlander Folk School, refused a driver's command to surrender her seat to a white man. Her arrest provided the NAACP with the morally impeccable test case it had been waiting for. Overnight, Jo Ann Robinson and the Women’s Political Council (WPC) duplicated 35,000 protest leaflets on a college mimeograph machine. Mobilizing churches and social clubs, they called for a one-day boycott of all municipal buses on Monday, 5 December—the day of Parks' trial.",
               "paragraphs": [
                 "<span class=\"para-ref\">[1.1]</span> **The Degradation of the Montgomery Bus Lines:** In Montgomery, Alabama, municipal bus segregation was a source of constant daily humiliation for Black residents, who made up over 70% of transit ridership. City ordinances required Black passengers to pay their fare at the front, exit, and re-enter through the rear door. The first four rows of seats were reserved exclusively for whites; if white seats filled up, Black passengers seated in the middle \"coloured section\" were legally required to vacate entire rows so no white passenger had to sit near a Black person. Bus drivers carried firearms, routinely abusing Black women with racial profanities.",
@@ -143396,14 +143424,17 @@
                   "src": "/units/usa/assets/sources/rosa-parks-fingerprint.jpg",
                   "source": "/units/usa/assets/sources/rosa-parks-fingerprint.jpg"
                 }
-              ],
-              "isReversed": false
+              ]
             },
             {
               "act": 2,
               "act_title": "Stage 2: Founding of the MIA & Boycott Launch — How did the formation of the Montgomery Improvement Association (MIA) unite the local Black community behind sustained protest?",
               "title": "Founding of the MIA & Boycott Launch",
               "theme_heading": "Founding of the MIA & Boycott Launch",
+              "image": "/units/usa/assets/sources/portraits/mlk.jpg",
+              "image_alt": "Marion S. Trikosko portrait photograph of Dr Martin Luther King Jr with clasped hands",
+              "caption": "Dr Martin Luther King Jr. (1929–1968). Chosen at age 26 to lead the newly formed Montgomery Improvement Association (MIA), launching his national civil rights leadership.",
+              "isReversed": true,
               "text": "<span class=\"para-ref\">[2.1]</span> **The Formation of the MIA and the Rise of Martin Luther King Jr.:** The one-day boycott was an astonishing 90% effective, with buses running completely empty through Black neighbourhoods. That afternoon, community leaders founded the Montgomery Improvement Association (MIA) to direct the campaign. Seeking a leader uncompromised by local political factions, they elected 26-year-old Baptist minister Dr Martin Luther King Jr. as president. That evening, addressing 5,000 citizens at Holt Street Baptist Church, King combined the Christian doctrine of redemptive love with the US Constitution, igniting a disciplined 381-day mass movement.",
               "paragraphs": [
                 "<span class=\"para-ref\">[2.1]</span> **The Formation of the MIA and the Rise of Martin Luther King Jr.:** The one-day boycott was an astonishing 90% effective, with buses running completely empty through Black neighbourhoods. That afternoon, community leaders founded the Montgomery Improvement Association (MIA) to direct the campaign. Seeking a leader uncompromised by local political factions, they elected 26-year-old Baptist minister Dr Martin Luther King Jr. as president. That evening, addressing 5,000 citizens at Holt Street Baptist Church, King combined the Christian doctrine of redemptive love with the US Constitution, igniting a disciplined 381-day mass movement."
@@ -143435,8 +143466,7 @@
                   "src": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg",
                   "source": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg"
                 }
-              ],
-              "isReversed": true
+              ]
             },
             {
               "act": 3,
@@ -143479,6 +143509,10 @@
               "act_title": "Stage 4: Browder v. Gayle Supreme Court Ruling — Why was the Browder v. Gayle Supreme Court ruling decisive in ending segregated public transit in Montgomery?",
               "title": "Browder v. Gayle Supreme Court Ruling",
               "theme_heading": "Browder v. Gayle Supreme Court Ruling",
+              "image": "/units/usa/assets/sources/warren-court-1954.jpg",
+              "image_alt": "Official group photograph of the United States Supreme Court justices under Chief Justice Earl Warren",
+              "caption": "The Warren Court (c. 1954). The US Supreme Court that decisively affirmed the Browder v. Gayle ruling on 13 November 1956, outlawing racial segregation on municipal buses as unconstitutional.",
+              "isReversed": true,
               "text": "<span class=\"para-ref\">[4.1]</span> **White Retaliation and Judicial Victory:** As the bus company suffered catastrophic financial losses, municipal authorities retaliated ruthlessly. King's home was firebombed with his wife and infant daughter inside; eighty-nine boycott leaders were indicted under an archaic 1921 anti-conspiracy statute; and police issued thousands of bogus traffic tickets. Refusing to yield to violence, attorney Fred Gray bypassed state courts to file *Browder v. Gayle* in federal district court. On 13 November 1956, the US Supreme Court affirmed that Alabama's state and local bus segregation laws violated the 14th Amendment.\n\n<span class=\"para-ref\">[4.2]</span> **Founding the Southern Christian Leadership Conference (SCLC):** On 21 December 1956, Montgomery's buses were officially integrated, ending the boycott in complete victory. Building on this triumph, King convened a conference of sixty Black ministers in Atlanta in January 1957, establishing the Southern Christian Leadership Conference (SCLC). Adopting the motto *\"To save the soul of America\"*, the SCLC unified Black churches across the South into a coordinated regional vehicle for non-violent mass direct action, establishing King as the undisputed moral voice of the freedom struggle.",
               "paragraphs": [
                 "<span class=\"para-ref\">[4.1]</span> **White Retaliation and Judicial Victory:** As the bus company suffered catastrophic financial losses, municipal authorities retaliated ruthlessly. King's home was firebombed with his wife and infant daughter inside; eighty-nine boycott leaders were indicted under an archaic 1921 anti-conspiracy statute; and police issued thousands of bogus traffic tickets. Refusing to yield to violence, attorney Fred Gray bypassed state courts to file *Browder v. Gayle* in federal district court. On 13 November 1956, the US Supreme Court affirmed that Alabama's state and local bus segregation laws violated the 14th Amendment.",
@@ -143508,8 +143542,7 @@
                   "source_context": "Civil Rights Documentation Project, Moorland-Spingarn Research Center, Howard University. Reverend B.J. Simms, director of the Montgomery Improvement Association's transport committee for Oral historians and researchers studying non-violent logistics with the objective: To record the intricate daily operational mechanics required to transport thousands of daily commuters without public transit.. **Hinge Question:** What does the success of the carpool network reveal about the class solidarity of Montgomery's Black community?",
                   "text": "We had over three hundred cars running every morning from five o'clock until nine, and from four in the afternoon until eight at night. We established forty-eight dispatch stations all over Montgomery. The white police commissioner tried to break the car pools by arresting our drivers for carrying more passengers than insurance allowed, and insurance companies cancelled policies on church vehicles. But we kept rollin'."
                 }
-              ],
-              "isReversed": true
+              ]
             },
             {
               "act": 5,
@@ -148387,6 +148420,10 @@
               "act_title": "Stage 2: Dr King's Chicago Freedom Movement — What did Dr King's campaign in Chicago reveal about the entrenched nature of northern de facto segregation?",
               "title": "Dr King's Chicago Freedom Movement",
               "theme_heading": "Dr King's Chicago Freedom Movement",
+              "image": "/units/usa/assets/sources/portraits/mlk.jpg",
+              "image_alt": "Portrait photograph of Dr Martin Luther King Jr",
+              "caption": "Dr Martin Luther King Jr. (1929–1968). In 1966, King launched the Chicago Freedom Movement, shifting SCLC's strategy north to confront ghetto slum housing, tenant exploitation, and de facto segregation.",
+              "isReversed": true,
               "text": "<span class=\"para-ref\">[2.1]</span> **The Cataclysm of 1967: Newark and Detroit:** The urban crisis reached its terrifying zenith during the \"Long Hot Summer\" of 1967. In Newark, New Jersey, twenty-six people died following days of street battles. Two weeks later, Detroit exploded in the bloodiest civil disorder in modern US history. Sparked by a police raid on a blind pig (after-hours drinking club), five days of rebellion resulted in 43 deaths, 7,000 arrests, and the destruction of over 2,000 buildings. President Johnson was forced to deploy thousands of armed federal paratroopers of the 82nd and 101st Airborne Divisions, backed by tanks and armoured personnel carriers, to retake American city streets.\n\n<span class=\"para-ref\">[2.2]</span> **Confronting Northern De Facto Segregation:** Shaken by the urban conflagrations, Dr Martin Luther King Jr. resolved to take the non-violent crusade into Northern cities. In January 1966, King launched the Chicago Freedom Movement, moving his family into a dilapidated, unheated third-floor tenement in the West Side slum of North Lawndale. King sought to challenge systemic economic apartheid: discriminatory bank mortgage redlining, extortionate slum slumlords, and racially segregated schools orchestrated by powerful Democratic Mayor Richard J. Daley.",
               "paragraphs": [
                 "<span class=\"para-ref\">[2.1]</span> **The Cataclysm of 1967: Newark and Detroit:** The urban crisis reached its terrifying zenith during the \"Long Hot Summer\" of 1967. In Newark, New Jersey, twenty-six people died following days of street battles. Two weeks later, Detroit exploded in the bloodiest civil disorder in modern US history. Sparked by a police raid on a blind pig (after-hours drinking club), five days of rebellion resulted in 43 deaths, 7,000 arrests, and the destruction of over 2,000 buildings. President Johnson was forced to deploy thousands of armed federal paratroopers of the 82nd and 101st Airborne Divisions, backed by tanks and armoured personnel carriers, to retake American city streets.",
@@ -148419,8 +148456,7 @@
                   "src": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
                   "source": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg"
                 }
-              ],
-              "isReversed": true
+              ]
             },
             {
               "act": 3,
@@ -148505,6 +148541,10 @@
               "act_title": "Stage 5: King's Assassination & The 1968 Civil Rights Act — How did the assassination of Dr Martin Luther King Jr. and the passage of the 1968 Fair Housing Act reshape the movement?",
               "title": "King's Assassination & The 1968 Civil Rights Act",
               "theme_heading": "King's Assassination & The 1968 Civil Rights Act",
+              "image": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
+              "image_alt": "President Lyndon B. Johnson signing civil rights legislation surrounded by leaders including Martin Luther King Jr",
+              "caption": "President Lyndon B. Johnson with Dr Martin Luther King Jr. Six days after King's assassination in April 1968, Johnson signed the Civil Rights Act of 1968 (Fair Housing Act) into federal law.",
+              "isReversed": false,
               "text": "<span class=\"para-ref\">[5.1]</span> **The Assassination of Dr King (4 April 1968):** In the spring of 1968, King traveled to Memphis, Tennessee, to support striking Black sanitation workers and organize a national Poor People's Campaign. On the evening of 4 April 1968, while standing on the balcony of the Lorraine Motel, King was assassinated by white supremacist James Earl Ray. King's murder unleashed the largest nationwide wave of social unrest in American history: uprisings erupted in over 125 cities, leaving 46 dead and requiring 45,000 troops to quell. In Washington, D.C., fires burned within sight of the White House. A week later, Congress rushed to pass the Civil Rights Act of 1968 (the Fair Housing Act), banning housing discrimination.\n\n<span class=\"para-ref\">[5.2]</span> **A Transformed Political Landscape:** By 1975, the civil rights movement had fundamentally transformed the American South. The blatant barbarism of de jure segregation was extinct, and millions of enfranchised Black citizens wielded decisive political power, electing thousands of Black municipal officials, sheriffs, and members of Congress. In major cities, Black mayors took office in Cleveland, Gary, Newark, Detroit, Los Angeles, and Atlanta. Affirmative action programs opened the doors of universities, corporations, and federal civil service to a growing Black middle class.\n\n<span class=\"para-ref\">[5.3]</span> **The Unfinished Revolution of Economic Justice:** Yet the promise of full racial equality remained tragically unfulfilled. As legal barriers fell, white Americans retreated into suburban enclaves (\"white flight\"), leaving inner-city schools and neighbourhoods more economically segregated than before. Dr King's ultimate crusade—the eradication of systemic poverty, urban ghettoization, and militarism—remained unfinished. The heroic era of 1954–75 had destroyed the legal pillars of racial apartheid, but it left the deeper structural inequalities of American capitalism and society unresolved.",
               "paragraphs": [
                 "<span class=\"para-ref\">[5.1]</span> **The Assassination of Dr King (4 April 1968):** In the spring of 1968, King traveled to Memphis, Tennessee, to support striking Black sanitation workers and organize a national Poor People's Campaign. On the evening of 4 April 1968, while standing on the balcony of the Lorraine Motel, King was assassinated by white supremacist James Earl Ray. King's murder unleashed the largest nationwide wave of social unrest in American history: uprisings erupted in over 125 cities, leaving 46 dead and requiring 45,000 troops to quell. In Washington, D.C., fires burned within sight of the White House. A week later, Congress rushed to pass the Civil Rights Act of 1968 (the Fair Housing Act), banning housing discrimination.",
@@ -148538,8 +148578,7 @@
                   "src": "/units/usa/assets/sources/poor-peoples-campaign-1968.jpg",
                   "source": "/units/usa/assets/sources/poor-peoples-campaign-1968.jpg"
                 }
-              ],
-              "isReversed": false
+              ]
             }
           ],
           "primary_source": null,
@@ -151346,6 +151385,10 @@
               "act_title": "Stage 1: Vietcong Asymmetric Guerrilla Tactics — How did the Vietcong tactic of 'hanging onto the belts' neutralize superior American firepower and technology?",
               "title": "Vietcong Asymmetric Guerrilla Tactics",
               "theme_heading": "Vietcong Asymmetric Guerrilla Tactics",
+              "image": "/units/usa/assets/sources/portraits/general_giap.jpg",
+              "image_alt": "Portrait photograph of North Vietnamese General Vo Nguyen Giap in military uniform with medals",
+              "caption": "General Vo Nguyen Giap (1911–2013). Mastermind of the North Vietnamese and Vietcong asymmetric guerrilla strategy that neutralized conventional US military superiority.",
+              "isReversed": false,
               "text": "<span class=\"para-ref\">[1.1]</span> **Asymmetric Guerrilla Tactics:** Confronting the overwhelming conventional firepower of the US military, the Vietcong and North Vietnamese Army (PAVN) adopted classic asymmetric guerrilla warfare. Guided by General Vo Nguyen Giap, communist fighters avoided pitched, large-scale set-piece battles where American artillery and tactical air strikes could annihilate them. Instead, they moved in small squads, operating under cover of darkness or bad weather, striking isolated outposts or ambushing American patrols before melting back into the jungle or vanishing among ordinary village peasants.",
               "paragraphs": [
                 "<span class=\"para-ref\">[1.1]</span> **Asymmetric Guerrilla Tactics:** Confronting the overwhelming conventional firepower of the US military, the Vietcong and North Vietnamese Army (PAVN) adopted classic asymmetric guerrilla warfare. Guided by General Vo Nguyen Giap, communist fighters avoided pitched, large-scale set-piece battles where American artillery and tactical air strikes could annihilate them. Instead, they moved in small squads, operating under cover of darkness or bad weather, striking isolated outposts or ambushing American patrols before melting back into the jungle or vanishing among ordinary village peasants."
@@ -151377,8 +151420,7 @@
                   "src": "/units/usa/assets/sources/cu-chi-tunnel-rats-1967.jpg",
                   "source": "/units/usa/assets/sources/cu-chi-tunnel-rats-1967.jpg"
                 }
-              ],
-              "isReversed": false
+              ]
             },
             {
               "act": 2,
@@ -151461,6 +151503,10 @@
               "act_title": "Stage 4: Chemical Defoliation & Napalm Warfare — Why did the use of chemical defoliants like Agent Orange and napalm prove counterproductive for US military objectives?",
               "title": "Chemical Defoliation & Napalm Warfare",
               "theme_heading": "Chemical Defoliation & Napalm Warfare",
+              "image": "/units/usa/assets/sources/agent-orange-spraying-c123.jpg",
+              "image_alt": "US Air Force UC-123 aircraft spraying chemical defoliant over South Vietnamese jungle canopy",
+              "caption": "Operation Ranch Hand (c. 1966). US Air Force UC-123 Provider aircraft spraying chemical defoliant Agent Orange across South Vietnamese jungle canopy to strip Vietcong cover.",
+              "isReversed": true,
               "text": "<span class=\"para-ref\">[4.1]</span> **Westmoreland's War of Attrition:** General William Westmoreland adopted a strategy of attrition, believing American technological power could kill Vietcong fighters faster than Hanoi could replace them (the \"crossover point\"). American combat operations took the form of \"Search and Destroy\" missions: heavily armed infantry platoons were ferried by Bell UH-1 \"Huey\" helicopters into suspected enemy strongholds to locate the enemy, direct artillery and airstrikes, and count the dead (\"body count\"). Frustrated by their inability to find the enemy, American soldiers frequently burned suspected villages to the ground in notorious \"Zippo raids\".\n\n<span class=\"para-ref\">[4.2]</span> **Chemical Weapons and Environmental Devastation:** To strip away dense jungle canopy and destroy food crops that sustained the guerrillas, the US military launched Operation Ranch Hand (1961–1971). Specially modified C-123 cargo aircraft sprayed over 20 million gallons of toxic herbicides across South Vietnam, primarily Agent Orange, which was heavily contaminated with deadly dioxin. Furthermore, the US dropped nearly 400,000 tons of napalm: jellied petroleum that clung to human skin and burned at over 1,000°C. These brutal chemical weapons disfigured tens of thousands of civilians and poisoned ecosystems for generations.",
               "paragraphs": [
                 "<span class=\"para-ref\">[4.1]</span> **Westmoreland's War of Attrition:** General William Westmoreland adopted a strategy of attrition, believing American technological power could kill Vietcong fighters faster than Hanoi could replace them (the \"crossover point\"). American combat operations took the form of \"Search and Destroy\" missions: heavily armed infantry platoons were ferried by Bell UH-1 \"Huey\" helicopters into suspected enemy strongholds to locate the enemy, direct artillery and airstrikes, and count the dead (\"body count\"). Frustrated by their inability to find the enemy, American soldiers frequently burned suspected villages to the ground in notorious \"Zippo raids\".",
@@ -151493,8 +151539,7 @@
                   "src": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg",
                   "source": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg"
                 }
-              ],
-              "isReversed": true
+              ]
             },
             {
               "act": 5,
@@ -158947,6 +158992,10 @@
               "act": 2,
               "title": "Municipal Waste Battles: Rakers, Gong Farmers & Court Leet Fines",
               "theme_heading": "Municipal Waste Battles: Rakers, Gong Farmers & Court Leet Fines",
+              "image": "/images/medieval_court_roll_manuscript.png",
+              "image_alt": "Archival photograph of a medieval rolled parchment court roll manuscript with Latin script",
+              "caption": "Manorial Court Roll (c. 14th Century). Municipal courts and local Leets met regularly to levy heavy fines on townspeople dumping offal, nightsoil, and refuse into public streets.",
+              "isReversed": false,
               "text": "<span class=\"para-ref\">[2.2]</span> Contrary to the myth that medieval people happily wallowed in filth, town corporations fought an active, organized battle against street squalor. Householders dug back-garden cesspits to collect privy waste. In cramped boroughs, however, cesspits frequently cracked and seeped into neighbour cellars or drinking wells. To fight this danger, town councils hired street sweepers called **rakers** to clear public markets and strictly banned wandering pigs from churning up alleys.<br><br>The dirtiest work fell to **gong farmers** (nightmen). Because sewage stench was feared as poisonous, gong farmers were legally allowed to work only between 9:00 PM and 5:00 AM under cover of darkness. Armed with shovels and tubs, they dug out overflowing cesspits and carted human manure outside city walls to sell to farmers. Borough court rolls (Source A) prove that citizens who dumped animal entrails into streets or neglected cesspits were prosecuted and fined at local Court Leet inquests.",
               "source": {
                 "id": "water_l2_src_b",
@@ -159091,6 +159140,10 @@
               "act": 4,
               "title": "The Black Death Catastrophe: Bubonic Plague & Miasma Dogma (1348)",
               "theme_heading": "The Black Death Catastrophe: Bubonic Plague & Miasma Dogma (1348)",
+              "image": "/images/plague_burial.jpg",
+              "image_alt": "Josse Lieferinxe painting Saint Sebastian Interceding for the Plague Stricken showing plague victims buried outside city walls",
+              "caption": "Josse Lieferinxe, Saint Sebastian Interceding for the Plague Stricken (1497–1499). Medieval depiction of shrouded plague victims being carried to graves outside the city gates as panicked citizens pray.",
+              "isReversed": true,
               "text": "<span class=\"para-ref\">[2.4]</span> In the summer of 1348, an unprecedented catastrophe struck Britain: the **Black Death**. Caused by the bacterium *Yersinia pestis* carried on flea-infested black rats, the plague caused agonizing egg-sized swellings (**buboes**) in the groin and armpits, dark skin blotches, and violent coughing of blood. Between 1348 and 1350, the pandemic wiped out between 40% and 50% of the entire English population, emptying whole villages.<br><br>Medieval medicine was powerless. Physicians believed the plague was caused by divine wrath and poisonous bad air (**miasma**) rising from rotting filth. To ward off bad air, people burned aromatic herbs and barrels of tar in streets, carried sweet-smelling posies, and enforced port quarantines (*quarantena*—forty days). Councils ordered streets swept and closed public bathhouses (*bagnios*), fearing hot steam opened skin pores to miasma. Possessing no knowledge of microscopic germs or flea vectors, their desperate remedies could not halt the epidemic.",
               "sources": [
                 {
@@ -159126,7 +159179,6 @@
                   "source_context": "Medieval medical theory believed the body contained four humours. **Hinge Question:** Why did medieval doctors believe foul-smelling air (miasma) was the primary cause of plague rather than fleas and rats?"
                 }
               ],
-              "isReversed": true,
               "source": {
                 "id": "water_l2_src_d",
                 "letter": "D",
@@ -160246,6 +160298,10 @@
               "act": 2,
               "title": "The Royal Novelty: Sir John Harington’s Flush Toilet (1596)",
               "theme_heading": "The Royal Novelty: Sir John Harington’s Flush Toilet (1596)",
+              "image": "/images/queen_elizabeth_i.jpg",
+              "image_alt": "Nicholas Hilliard portrait of Queen Elizabeth I in ornate embroidered gown and ruff",
+              "caption": "Nicholas Hilliard, Queen Elizabeth I (The Phoenix Portrait, c. 1575, NPG 190). Godmother to Sir John Harington and early royal adopter of his 1596 water closet installed at Richmond Palace.",
+              "isReversed": false,
               "text": "<span class=\"para-ref\">[3.2]</span> In 1596, Queen Elizabeth I’s godson, **Sir John Harington**, invented the world’s first valve-operated flushing water closet (Source B). In his treatise *The Metamorphosis of Ajax*, Harington designed an indoor toilet with an overhead water cistern, a brass valve, and a release lever that unleashed 7.5 gallons of water to flush waste down a lead pipe into an outdoor pit.<br><br>Harington built models at his Kelston manor and Queen Elizabeth’s palace at Richmond. However, the invention failed to transform public health. The barrier was infrastructure: flush toilets required pressurized running water mains and municipal sewer pipes. Because 99% of British homes had neither, Harington’s flush toilet remained a royal novelty, and Britons relied on privy sheds and cesspools for two more centuries.",
               "source": {
                 "id": "water_l3_src_b",
@@ -160312,8 +160368,7 @@
                   },
                   "source_context": "Harington described his water closet in a satirical pamphlet. **Hinge Question:** Why did Harington's flush toilet fail to catch on widely across Britain for nearly 200 years after 1596?"
                 }
-              ],
-              "isReversed": false
+              ]
             },
             {
               "act": 3,
@@ -160391,6 +160446,10 @@
               "act": 4,
               "title": "Nightsoil and Leaking Cesspits: The Misery of Samuel Pepys’ Cellar (1660)",
               "theme_heading": "Nightsoil and Leaking Cesspits: The Misery of Samuel Pepys’ Cellar (1660)",
+              "image": "/images/pepys.jpg",
+              "image_alt": "John Hayls oil portrait of Samuel Pepys holding a sheet of music",
+              "caption": "John Hayls, Samuel Pepys (1666, NPG 211). The famous naval administrator whose diary laid bare the sanitary squalor of Restoration London when his neighbour's cracked cesspit flooded his cellar.",
+              "isReversed": true,
               "text": "<span class=\"para-ref\">[3.4]</span> The reality of seventeenth-century domestic sanitation is captured in the private diary of naval administrator **Samuel Pepys**. On 20 October 1660, Pepys went down to his cellar and stepped into a nightmare: *“Going down to my cellar... I put my foot into a great heap of turds, by which I find that Sir Thomas Penn’s house of office is fallen into my cellar, which do trouble me.”* (Source D). His neighbour’s brick cesspit had fractured, leaking sewage through the cellar wall.<br><br>Pepys’ diary proves that even wealthy officials lived atop sanitary hazards. London basements were honeycombed with leaking cesspools that contaminated surrounding drinking wells. The city depended entirely on nightsoil men who arrived with wooden barrels after midnight to shovel out waste, often spilling slurry on doorways.",
               "source": {
                 "id": "water_l3_src_d",
@@ -160465,6 +160524,10 @@
               "act": 5,
               "title": "Historical Verdict: The Great Plague of 1665 & The Limits of Science",
               "theme_heading": "Historical Verdict: The Great Plague of 1665 & The Limits of Science",
+              "image": "/images/great_plague_1665_broadside.jpg",
+              "image_alt": "John Dunstall 9-panel pictorial broadside illustrating the Great Plague of London in 1665",
+              "caption": "John Dunstall, London's Dreadful Visitation (1665). Contemporary 9-panel broadside documenting overhanging wooden houses, red-crossed quarantined doors, and mass burial trenches.",
+              "isReversed": true,
               "text": "<span class=\"para-ref\">[3.5]</span> The Early Modern era presents a striking paradox. While the Scientific Revolution made breakthroughs in physics and anatomy (William Harvey, Isaac Newton), public health in 1665 was virtually unchanged from the Black Death of 1348. When the **Great Plague of 1665** struck London, killing nearly 100,000 people (Source E), medical practice relied on ancient superstition.<br><br>Doctors prescribed burning pitch in streets, holding pomanders to noses, and smoking tobacco to ward off poisonous **miasma**. Parish watchmen padlocked infected families in their homes under forty-day quarantine, painting red crosses on doors with *\"Lord Have Mercy Upon Us\"*. King Charles II and wealthy doctors fled to the country, leaving poor slum dwellers to die. Despite early inventions like Harington’s toilet and the New River, rapid population growth had outpaced sanitation science, leaving ordinary Britons more vulnerable than ever.",
               "source": {
                 "id": "water_l3_src_e",
@@ -160533,8 +160596,7 @@
                   },
                   "source_context": "London Bills of Mortality were compiled weekly from parish church wardens. **Hinge Question:** Why were mortality rates so much higher in crowded out-parishes like Whitechapel and Stepney than inside the city walls?"
                 }
-              ],
-              "isReversed": true
+              ]
             }
           ],
           "tasks": [

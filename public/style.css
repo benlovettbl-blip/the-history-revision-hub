@@ -10035,6 +10035,12 @@ body.search-modal-open {
   line-height: 1.68;
 }
 
+.historical-setting-question {
+  font-style: italic;
+  font-weight: 600;
+  color: #0f172a;
+}
+
 [data-theme='dark'] .historical-editorial-lede,
 .dark-mode .historical-editorial-lede {
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.85) 100%);

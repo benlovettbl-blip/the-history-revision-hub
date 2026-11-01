@@ -7056,11 +7056,25 @@
           "asset_path": "/images/sir_francis_drake_portrait.jpg",
           "caption": "Sir Francis Drake: 1591 portrait by Marcus Gheeraerts the Younger commemorating his 1577–1580 circumnavigation and triumph over the Spanish Armada.",
           "hinge_question": "Why did Elizabeth knight Francis Drake aboard the Golden Hind despite Spanish ambassador Mendoza demanding his execution as a pirate?"
+        },
+        {
+          "lesson_num": 10,
+          "lesson_title": "KT 3.2: The Problem of the Poor and Vagrancy, 1558–1588",
+          "source_id": "Narrative Plate 10.2",
+          "artifact_title": "King Edward VI Granting the Charter of Bridewell Hospital to the City of London",
+          "date": "1750 (after c. 1553 original)",
+          "creator": "George Vertue (1684–1756) after Hans Holbein",
+          "repository": "British Museum / Royal Collection Trust",
+          "accession_id": "BM-1850-1014-912",
+          "rights_status": "Public Domain (Author Life + 70 Years expired)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.britishmuseum.org/",
+          "asset_path": "/images/edward_vi_bridewell_hospital_charter.jpg"
         }
       ],
       "total_registered": 82,
       "last_synchronized": "2026-10-26T08:47:06.554Z",
-      "total_sources": 82,
+      "total_sources": 83,
       "unit_id": "eee"
     },
     "usa": {
@@ -9608,9 +9622,37 @@
           "commercial_use_permitted": true,
           "source_url": "https://www.ushmm.org/collections",
           "asset_path": "/images/sophie_scholl_gestapo.jpg"
+        },
+        {
+          "lesson_num": 7,
+          "lesson_title": "Enquiry 7: What was lost, and what does survivor testimony teach us?",
+          "source_id": "Narrative Plate 7.1",
+          "artifact_title": "Survivors in Buchenwald Barracks 56 including Elie Wiesel upon Liberation",
+          "date": "16 April 1945",
+          "creator": "Private Harry Miller / US Army Signal Corps",
+          "repository": "United States Holocaust Memorial Museum / US National Archives",
+          "accession_id": "NARA 111-SC-203461 / USHMM Photograph 74607",
+          "rights_status": "Public Domain (US Federal Government Work / 17 U.S.C. § 105)",
+          "commercial_use_permitted": true,
+          "source_url": "https://collections.ushmm.org/search/catalog/pa74607",
+          "asset_path": "/images/buchenwald_liberation_1945.jpg"
+        },
+        {
+          "lesson_num": 7,
+          "lesson_title": "Enquiry 7: What was lost, and what does survivor testimony teach us?",
+          "source_id": "Narrative Plate 7.2",
+          "artifact_title": "Field of Stelae at the Memorial to the Murdered Jews of Europe, Berlin",
+          "date": "Inaugurated 2005",
+          "creator": "Peter Eisenman (Architect) / Stiftung Denkmal für die ermordeten Juden Europas",
+          "repository": "Stiftung Denkmal für die ermordeten Juden Europas, Berlin",
+          "accession_id": "BER-MEM-2005-STELAE",
+          "rights_status": "Educational Fair Dealing / CDPA 1988 & Panoramafreiheit (§ 59 UrhG)",
+          "commercial_use_permitted": false,
+          "source_url": "https://www.stiftung-denkmal.de/",
+          "asset_path": "/images/shoah_memorial_berlin.jpg"
         }
       ],
-      "total_sources": 43
+      "total_sources": 45
     },
     "cold_war": {
       "unit_id": "cold_war",
@@ -10753,12 +10795,26 @@
     },
     "great_war_part2": {
       "unit_id": "great_war_part2",
-      "unit_title": "The Great War (1914–1919): Total War, Industrial Slaughter & The Fragile Peace",
+      "unit_title": "The Great War: Apocalypse & Aftermath (1914–1919)",
       "key_stage": "Key Stage 3 (Year 9)",
       "exam_board": "National Curriculum for England (KS3 History)",
       "total_lessons": 5,
-      "total_sources": 27,
+      "total_sources": 28,
       "sources": [
+        {
+          "lesson_num": 0,
+          "lesson_title": "Master Classroom Textbook Front Cover Plate",
+          "source_id": "Textbook Cover Plate",
+          "artifact_title": "Gassed (1919) by John Singer Sargent",
+          "date": "1919",
+          "creator": "John Singer Sargent (1856–1925)",
+          "repository": "Imperial War Museums, London",
+          "accession_id": "IWM Art.IWM ART 1460",
+          "rights_status": "Public Domain (Official British War Memorials Committee Commission)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.iwm.org.uk/collections/item/object/205193980",
+          "asset_path": "/images/sargent_gassed_1919.jpg"
+        },
         {
           "lesson_num": 0,
           "lesson_title": "Unit Overview & Local War Memorial",
@@ -11659,7 +11715,7 @@
       "key_stage": "Key Stage 3 (Year 7)",
       "exam_board": "KS3 National Curriculum / Edexcel GCSE Thematic Thematic Foundation",
       "total_lessons": 7,
-      "total_sources": 44,
+      "total_sources": 48,
       "sources": [
         {
           "lesson_num": 1,
@@ -12290,6 +12346,48 @@
           "commercial_use_permitted": true,
           "source_url": "https://commons.wikimedia.org",
           "asset_path": "/units/water_and_sanitation/assets/was_cathedral_sanitation.png"
+        },
+        {
+          "lesson_num": 2,
+          "lesson_title": "Why did public health decline during the Middle Ages?",
+          "source_id": "Narrative Plate 2.1",
+          "artifact_title": "Medieval Parchment Court Roll Recording Manorial Presentments and Public Nuisance Fines",
+          "date": "c. 14th Century",
+          "creator": "Manorial / Borough Court Clerks",
+          "repository": "The National Archives (UK) / British Library",
+          "accession_id": "TNA / Court Rolls Collection",
+          "rights_status": "Public Domain (Author Life + 70 Years expired / Pre-1900 Crown Record)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.nationalarchives.gov.uk/",
+          "asset_path": "/images/medieval_court_roll_manuscript.png"
+        },
+        {
+          "lesson_num": 3,
+          "lesson_title": "To what extent did towns become filthier during the Early Modern period?",
+          "source_id": "Narrative Plate 3.1",
+          "artifact_title": "Queen Elizabeth I (The Phoenix Portrait)",
+          "date": "c. 1575",
+          "creator": "Nicholas Hilliard (1547–1619)",
+          "repository": "National Portrait Gallery, London",
+          "accession_id": "NPG 190",
+          "rights_status": "Public Domain (Author Life + 70 Years expired)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.npg.org.uk/collections/search/portrait/mw02074",
+          "asset_path": "/images/queen_elizabeth_i.jpg"
+        },
+        {
+          "lesson_num": 3,
+          "lesson_title": "To what extent did towns become filthier during the Early Modern period?",
+          "source_id": "Narrative Plate 3.2",
+          "artifact_title": "Portrait of Samuel Pepys holding 'Beauty Retire'",
+          "date": "1666",
+          "creator": "John Hayls (1600–1679)",
+          "repository": "National Portrait Gallery, London",
+          "accession_id": "NPG 211",
+          "rights_status": "Public Domain (Author Life + 70 Years expired)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.npg.org.uk/collections/search/portrait/mw04948",
+          "asset_path": "/images/pepys.jpg"
         }
       ]
     },
@@ -14844,8 +14942,8 @@
     }
   },
   "total_units": 19,
-  "total_sources": 991,
+  "total_sources": 1014,
   "total_lessons": 159,
-  "total_registered_sources": 871,
+  "total_registered_sources": 1014,
   "last_audit": "2026-10-29T19:43:04.169Z"
 }

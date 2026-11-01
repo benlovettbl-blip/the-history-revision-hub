@@ -1125,8 +1125,8 @@ const water_and_sanitation_data = {
         },
         {
           question: 'What was the central water distribution tower in a Roman city called?',
-          options: ['Castellum', 'Basilica', 'Forum', 'Colosseum'],
-          answer: 'Castellum',
+          options: ['Castella (distribution towers)', 'Basilica', 'Forum', 'Colosseum'],
+          answer: 'Castella (distribution towers)',
         },
         {
           question: 'Which users received first priority for fresh water from Roman castella?',
@@ -1196,8 +1196,8 @@ const water_and_sanitation_data = {
         },
         {
           question: 'What microscopic organisms were Romans completely unaware of?',
-          options: ['Bacteria and microbes', 'Insects', 'Fleas and lice', 'Earthworms'],
-          answer: 'Bacteria and microbes',
+          options: ['Bacteria', 'Insects', 'Fleas and lice', 'Earthworms'],
+          answer: 'Bacteria',
         },
         {
           question:
@@ -1266,8 +1266,8 @@ const water_and_sanitation_data = {
         },
         {
           question: 'What was the central water distribution tower in a Roman city called?',
-          options: ['Basilica', 'Forum', 'Castellum', 'Colosseum'],
-          answer: 'Castellum',
+          options: ['Basilica', 'Forum', 'Castella (distribution towers)', 'Colosseum'],
+          answer: 'Castella (distribution towers)',
         },
         {
           question: 'Which users received first priority for fresh water from Roman castella?',
@@ -1337,8 +1337,8 @@ const water_and_sanitation_data = {
         },
         {
           question: 'What microscopic organisms were Romans completely unaware of?',
-          options: ['Insects', 'Bacteria and microbes', 'Fleas and lice', 'Earthworms'],
-          answer: 'Bacteria and microbes',
+          options: ['Insects', 'Bacteria', 'Fleas and lice', 'Earthworms'],
+          answer: 'Bacteria',
         },
         {
           question:
@@ -1976,6 +1976,10 @@ const water_and_sanitation_data = {
           act: 2,
           title: 'Municipal Waste Battles: Rakers, Gong Farmers & Court Leet Fines',
           theme_heading: 'Municipal Waste Battles: Rakers, Gong Farmers & Court Leet Fines',
+          image: '/images/medieval_court_roll_manuscript.png',
+          image_alt: 'Archival photograph of a medieval rolled parchment court roll manuscript with Latin script',
+          caption: 'Manorial Court Roll (c. 14th Century). Municipal courts and local Leets met regularly to levy heavy fines on townspeople dumping offal, nightsoil, and refuse into public streets.',
+          isReversed: false,
           text: '<span class="para-ref">[2.2]</span> Contrary to the myth that medieval people happily wallowed in filth, town corporations fought an active, organized battle against street squalor. Householders dug back-garden cesspits to collect privy waste. In cramped boroughs, however, cesspits frequently cracked and seeped into neighbour cellars or drinking wells. To fight this danger, town councils hired street sweepers called **rakers** to clear public markets and strictly banned wandering pigs from churning up alleys.<br><br>The dirtiest work fell to **gong farmers** (nightmen). Because sewage stench was feared as poisonous, gong farmers were legally allowed to work only between 9:00 PM and 5:00 AM under cover of darkness. Armed with shovels and tubs, they dug out overflowing cesspits and carted human manure outside city walls to sell to farmers. Borough court rolls (Source A) prove that citizens who dumped animal entrails into streets or neglected cesspits were prosecuted and fined at local Court Leet inquests.',
           source: {
             id: 'water_l2_src_b',
@@ -2168,6 +2172,10 @@ const water_and_sanitation_data = {
           act: 4,
           title: 'The Black Death Catastrophe: Bubonic Plague & Miasma Dogma (1348)',
           theme_heading: 'The Black Death Catastrophe: Bubonic Plague & Miasma Dogma (1348)',
+          image: '/images/plague_burial.jpg',
+          image_alt: 'Josse Lieferinxe painting Saint Sebastian Interceding for the Plague Stricken showing plague victims buried outside city walls',
+          caption: 'Josse Lieferinxe, Saint Sebastian Interceding for the Plague Stricken (1497–1499). Medieval depiction of shrouded plague victims being carried to graves outside the city gates as panicked citizens pray.',
+          isReversed: true,
           text: '<span class="para-ref">[2.4]</span> In the summer of 1348, an unprecedented catastrophe struck Britain: the **Black Death**. Caused by the bacterium *Yersinia pestis* carried on flea-infested black rats, the plague caused agonizing egg-sized swellings (**buboes**) in the groin and armpits, dark skin blotches, and violent coughing of blood. Between 1348 and 1350, the pandemic wiped out between 40% and 50% of the entire English population, emptying whole villages.<br><br>Medieval medicine was powerless. Physicians believed the plague was caused by divine wrath and poisonous bad air (**miasma**) rising from rotting filth. To ward off bad air, people burned aromatic herbs and barrels of tar in streets, carried sweet-smelling posies, and enforced port quarantines (*quarantena*—forty days). Councils ordered streets swept and closed public bathhouses (*bagnios*), fearing hot steam opened skin pores to miasma. Possessing no knowledge of microscopic germs or flea vectors, their desperate remedies could not halt the epidemic.',
           sources: [
             {
@@ -2508,12 +2516,12 @@ const water_and_sanitation_data = {
         {
           question: 'What happened to Roman water systems in Britain after AD 410?',
           options: [
+            'Aqueducts collapsed and lead pipes were melted down into weapons',
             'They were expanded across every village',
             'They were sold to France',
-            'They fell into disrepair as central taxes and engineers vanished',
             'They were completely destroyed by volcanoes',
           ],
-          answer: 'They fell into disrepair as central taxes and engineers vanished',
+          answer: 'Aqueducts collapsed and lead pipes were melted down into weapons',
         },
         {
           question: 'What was a self-governing medieval town granted a royal charter called?',
@@ -2551,11 +2559,11 @@ const water_and_sanitation_data = {
           question: 'What was done with the waste shoveled out of town cesspits?',
           options: [
             'Dumped in the town church',
-            'Sold to suburban farmers as agricultural fertilizer',
+            'Carted outside city walls to sell to farmers as manure',
             'Burned in public bonfires',
             'Thrown onto house roofs',
           ],
-          answer: 'Sold to suburban farmers as agricultural fertilizer',
+          answer: 'Carted outside city walls to sell to farmers as manure',
         },
         {
           question:
@@ -2627,14 +2635,14 @@ const water_and_sanitation_data = {
           answer: 'Yersinia pestis',
         },
         {
-          question: 'How was the Black Death primarily transmitted between humans and rats?',
+          question: 'What bacterium caused the Black Death and what creature carried it?',
           options: [
             'Breathing cold wind',
             'Contaminated water pipes',
             'Eating bad meat',
-            'Bites from rat fleas',
+            'The bacterium Yersinia pestis carried on flea-infested black rats',
           ],
-          answer: 'Bites from rat fleas',
+          answer: 'The bacterium Yersinia pestis carried on flea-infested black rats',
         },
         {
           question:
@@ -2672,10 +2680,10 @@ const water_and_sanitation_data = {
           options: [
             'They were expanded across every village',
             'They were sold to France',
-            'They fell into disrepair as central taxes and engineers vanished',
+            'Aqueducts collapsed and lead pipes were melted down into weapons',
             'They were completely destroyed by volcanoes',
           ],
-          answer: 'They fell into disrepair as central taxes and engineers vanished',
+          answer: 'Aqueducts collapsed and lead pipes were melted down into weapons',
         },
         {
           question: 'What was a self-governing medieval town granted a royal charter called?',
@@ -2712,12 +2720,12 @@ const water_and_sanitation_data = {
         {
           question: 'What was done with the waste shoveled out of town cesspits?',
           options: [
-            'Sold to suburban farmers as agricultural fertilizer',
+            'Carted outside city walls to sell to farmers as manure',
             'Dumped in the town church',
             'Burned in public bonfires',
             'Thrown onto house roofs',
           ],
-          answer: 'Sold to suburban farmers as agricultural fertilizer',
+          answer: 'Carted outside city walls to sell to farmers as manure',
         },
         {
           question:
@@ -2789,14 +2797,14 @@ const water_and_sanitation_data = {
           answer: 'Yersinia pestis',
         },
         {
-          question: 'How was the Black Death primarily transmitted between humans and rats?',
+          question: 'What bacterium caused the Black Death and what creature carried it?',
           options: [
-            'Bites from rat fleas',
+            'The bacterium Yersinia pestis carried on flea-infested black rats',
             'Breathing cold wind',
             'Contaminated water pipes',
             'Eating bad meat',
           ],
-          answer: 'Bites from rat fleas',
+          answer: 'The bacterium Yersinia pestis carried on flea-infested black rats',
         },
         {
           question:
@@ -3446,6 +3454,10 @@ const water_and_sanitation_data = {
           act: 2,
           title: 'The Royal Novelty: Sir John Harington’s Flush Toilet (1596)',
           theme_heading: 'The Royal Novelty: Sir John Harington’s Flush Toilet (1596)',
+          image: '/images/queen_elizabeth_i.jpg',
+          image_alt: 'Nicholas Hilliard portrait of Queen Elizabeth I in ornate embroidered gown and ruff',
+          caption: "Nicholas Hilliard, Queen Elizabeth I (The Phoenix Portrait, c. 1575, NPG 190). Godmother to Sir John Harington and early royal adopter of his 1596 water closet installed at Richmond Palace.",
+          isReversed: false,
           text: '<span class="para-ref">[3.2]</span> In 1596, Queen Elizabeth I’s godson, **Sir John Harington**, invented the world’s first valve-operated flushing water closet (Source B). In his treatise *The Metamorphosis of Ajax*, Harington designed an indoor toilet with an overhead water cistern, a brass valve, and a release lever that unleashed 7.5 gallons of water to flush waste down a lead pipe into an outdoor pit.<br><br>Harington built models at his Kelston manor and Queen Elizabeth’s palace at Richmond. However, the invention failed to transform public health. The barrier was infrastructure: flush toilets required pressurized running water mains and municipal sewer pipes. Because 99% of British homes had neither, Harington’s flush toilet remained a royal novelty, and Britons relied on privy sheds and cesspools for two more centuries.',
           source: {
             id: 'water_l3_src_b',
@@ -3640,6 +3652,10 @@ const water_and_sanitation_data = {
           title: 'Nightsoil and Leaking Cesspits: The Misery of Samuel Pepys’ Cellar (1660)',
           theme_heading:
             'Nightsoil and Leaking Cesspits: The Misery of Samuel Pepys’ Cellar (1660)',
+          image: '/images/pepys.jpg',
+          image_alt: 'John Hayls oil portrait of Samuel Pepys holding a sheet of music',
+          caption: "John Hayls, Samuel Pepys (1666, NPG 211). The famous naval administrator whose diary laid bare the sanitary squalor of Restoration London when his neighbour's cracked cesspit flooded his cellar.",
+          isReversed: true,
           text: '<span class="para-ref">[3.4]</span> The reality of seventeenth-century domestic sanitation is captured in the private diary of naval administrator **Samuel Pepys**. On 20 October 1660, Pepys went down to his cellar and stepped into a nightmare: *“Going down to my cellar... I put my foot into a great heap of turds, by which I find that Sir Thomas Penn’s house of office is fallen into my cellar, which do trouble me.”* (Source D). His neighbour’s brick cesspit had fractured, leaking sewage through the cellar wall.<br><br>Pepys’ diary proves that even wealthy officials lived atop sanitary hazards. London basements were honeycombed with leaking cesspools that contaminated surrounding drinking wells. The city depended entirely on nightsoil men who arrived with wooden barrels after midnight to shovel out waste, often spilling slurry on doorways.',
           source: {
             id: 'water_l3_src_d',
@@ -3734,6 +3750,10 @@ const water_and_sanitation_data = {
           act: 5,
           title: 'Historical Verdict: The Great Plague of 1665 & The Limits of Science',
           theme_heading: 'Historical Verdict: The Great Plague of 1665 & The Limits of Science',
+          image: '/images/great_plague_1665_broadside.jpg',
+          image_alt: 'John Dunstall 9-panel pictorial broadside illustrating the Great Plague of London in 1665',
+          caption: "John Dunstall, London's Dreadful Visitation (1665). Contemporary 9-panel broadside documenting overhanging wooden houses, red-crossed quarantined doors, and mass burial trenches.",
+          isReversed: false,
           text: '<span class="para-ref">[3.5]</span> The Early Modern era presents a striking paradox. While the Scientific Revolution made breakthroughs in physics and anatomy (William Harvey, Isaac Newton), public health in 1665 was virtually unchanged from the Black Death of 1348. When the **Great Plague of 1665** struck London, killing nearly 100,000 people (Source E), medical practice relied on ancient superstition.<br><br>Doctors prescribed burning pitch in streets, holding pomanders to noses, and smoking tobacco to ward off poisonous **miasma**. Parish watchmen padlocked infected families in their homes under forty-day quarantine, painting red crosses on doors with *"Lord Have Mercy Upon Us"*. King Charles II and wealthy doctors fled to the country, leaving poor slum dwellers to die. Despite early inventions like Harington’s toilet and the New River, rapid population growth had outpaced sanitation science, leaving ordinary Britons more vulnerable than ever.',
           source: {
             id: 'water_l3_src_e',
@@ -4987,9 +5007,9 @@ const water_and_sanitation_data = {
         },
         {
           question:
-            'What term describes the rapid movement of populations from countryside farms into industrial cities?',
-          options: ['Enclosure', 'Colonisation', 'Reformation', 'Urbanisation'],
-          answer: 'Urbanisation',
+            'What type of cheap, unventilated tenements sharing party walls on three sides were built for boomtown workers?',
+          options: ['Enclosure villas', 'Colonisation halls', 'Reformation homes', 'Back-to-back houses'],
+          answer: 'Back-to-back houses',
         },
         {
           question:
@@ -5024,14 +5044,14 @@ const water_and_sanitation_data = {
         },
         {
           question:
-            'How often was piped water typically turned on at public standpipes in poor slums?',
+            'What was working-class life expectancy in Manchester according to Edwin Chadwick’s 1842 report?',
           options: [
-            'For 20–30 minutes a few days a week',
-            '24 hours every day',
-            'Only on Christmas Day',
-            'Never',
+            'Just 17 years in Manchester compared to 38 years in rural Rutland',
+            'Over 75 years across all industrial towns',
+            'Exactly 50 years for factory workers',
+            'Under five years for all citizens',
           ],
-          answer: 'For 20–30 minutes a few days a week',
+          answer: 'Just 17 years in Manchester compared to 38 years in rural Rutland',
         },
         {
           question: 'In what year did Asiatic Cholera first make landfall in Britain?',
@@ -5054,9 +5074,9 @@ const water_and_sanitation_data = {
           answer: '"The Blue Death"',
         },
         {
-          question: 'What microscopic pathogen causes cholera?',
-          options: ['Yersinia pestis', 'Vibrio cholerae', 'Influenza', 'Smallpox'],
-          answer: 'Vibrio cholerae',
+          question: 'What terrifying epidemic arrived at the port of Sunderland in October 1831, nicknamed \'The Blue Death\'?',
+          options: ['Yersinia pestis', 'Asiatic cholera', 'Influenza', 'Smallpox'],
+          answer: 'Asiatic cholera',
         },
         {
           question:
@@ -5080,11 +5100,11 @@ const water_and_sanitation_data = {
           question: 'What economic argument did Chadwick use to convince MPs to build sewers?',
           options: [
             'Sewers would produce gold',
-            'Preventable disease cost taxpayers more in poor-relief than building sewers',
+            'Filthy slums caused disease and poverty, forcing widows onto municipal poor relief',
             'Sewers would attract French tourists',
             'Sewers would end all wars',
           ],
-          answer: 'Preventable disease cost taxpayers more in poor-relief than building sewers',
+          answer: 'Filthy slums caused disease and poverty, forcing widows onto municipal poor relief',
         },
         {
           question: 'What national body was established by the landmark Public Health Act of 1848?',
@@ -5100,11 +5120,11 @@ const water_and_sanitation_data = {
           question: 'Why was the 1848 Public Health Act largely ineffective in many areas?',
           options: [
             'It was banned by the Queen',
-            'It was permissive (optional) rather than compulsory',
+            'It was permissive and wealthy ratepayers resisted paying taxes under laissez-faire',
             'Sewers had not been invented yet',
             'Nobody had any bricks',
           ],
-          answer: 'It was permissive (optional) rather than compulsory',
+          answer: 'It was permissive and wealthy ratepayers resisted paying taxes under laissez-faire',
         },
         {
           question:
@@ -5678,14 +5698,14 @@ const water_and_sanitation_data = {
           answer: 'Foul miasma (poisonous sewer gas)',
         },
         {
-          question: 'What was Dr John Snow’s medical specialty before investigating cholera?',
+          question: 'What had Dr John Snow done before investigating the Soho cholera outbreak?',
           options: [
             'Eye doctor',
             'Dentist',
             'Brain surgeon',
-            'Anesthetist (administering chloroform)',
+            'Administered chloroform to Queen Victoria during childbirth',
           ],
-          answer: 'Anesthetist (administering chloroform)',
+          answer: 'Administered chloroform to Queen Victoria during childbirth',
         },
         {
           question:
@@ -5697,12 +5717,12 @@ const water_and_sanitation_data = {
           question:
             'Why did John Snow believe cholera was swallowed in water rather than inhaled from air?',
           options: [
-            'Symptoms attacked the digestive tract and stomach first, not the lungs',
+            'Because cholera produced violent vomiting and watery diarrhea, the infective agent was ingested into the digestive tract',
             'He had a microscope showing bacteria',
             'He saw cholera in the clouds',
             'A fortune teller told him',
           ],
-          answer: 'Symptoms attacked the digestive tract and stomach first, not the lungs',
+          answer: 'Because cholera produced violent vomiting and watery diarrhea, the infective agent was ingested into the digestive tract',
         },
         {
           question: 'What street was the contaminated municipal water pump located on in Soho?',
@@ -5710,14 +5730,14 @@ const water_and_sanitation_data = {
           answer: 'Broad Street',
         },
         {
-          question: 'Why did local residents love the water from the Broad Street pump?',
+          question: 'Why did none of the 70 workers at the Lion Brewery on Broad Street contract cholera?',
           options: [
             'It was flavored with lemon',
             'It was boiling hot',
-            'It was cold, sparkling, and tasted fresh compared to river water',
+            'They were given a free daily allowance of malt beer and never drank pump water',
             'It was free beer',
           ],
-          answer: 'It was cold, sparkling, and tasted fresh compared to river water',
+          answer: 'They were given a free daily allowance of malt beer and never drank pump water',
         },
         {
           question:
@@ -5752,15 +5772,14 @@ const water_and_sanitation_data = {
           answer: 'Its 70 workers drank free malt beer and none of them died of cholera',
         },
         {
-          question: 'Who was Susanna Eley in Hampstead, and why was her death significant?',
+          question: 'Why did only 5 of 535 inmates die of cholera at the Poland Street Workhouse?',
           options: [
             'She was the Queen’s sister',
             'She invented chloroform',
-            'She died in healthy Hampstead because she had Broad Street water delivered in a bottle',
+            'The workhouse possessed its own private well',
             'She owned the Broad Street pump',
           ],
-          answer:
-            'She died in healthy Hampstead because she had Broad Street water delivered in a bottle',
+          answer: 'The workhouse possessed its own private well',
         },
         {
           question:
@@ -5775,9 +5794,9 @@ const water_and_sanitation_data = {
         },
         {
           question:
-            'Who was the five-month-old infant identified as the "index case" of the Soho outbreak?',
-          options: ['Baby Lewis', 'Baby Victoria', 'Baby John', 'Baby Charles'],
-          answer: 'Baby Lewis',
+            'Who was the five-month-old infant whose illness triggered the Soho pump contamination?',
+          options: ['Frances Lewis', 'Victoria Lewis', 'John Lewis', 'Charles Lewis'],
+          answer: 'Frances Lewis',
         },
         {
           question: 'How did Baby Lewis’s illness contaminate the Broad Street pump well?',
@@ -5792,9 +5811,9 @@ const water_and_sanitation_data = {
         },
         {
           question:
-            'What distance separated the cracked cesspool at No. 40 Broad Street from the drinking well?',
-          options: ['Ten miles', '500 yards', '50 feet', 'Just 2 feet and 8 inches'],
-          answer: 'Just 2 feet and 8 inches',
+            'How close was the cracked cesspool at No. 40 Broad Street to the public well?',
+          options: ['Ten miles', '500 yards', '50 feet', 'Less than three feet'],
+          answer: 'Less than three feet',
         },
         {
           question:

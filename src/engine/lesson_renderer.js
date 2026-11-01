@@ -5148,8 +5148,12 @@ export function renderLesson(lesson) {
         <div class="phase-card">
       `;
 
-    const prologueText = lesson.prologue || lesson.hook_text || lesson.blurb;
-    if (prologueText) {
+    const rawPrologue = lesson.prologue || lesson.hook_text || lesson.blurb;
+    if (rawPrologue) {
+      const prologueText = rawPrologue.trim().replace(/(^|[.!?\n]\s*)([A-Z0-9"“'‘][^.!?\r\n]*?\?)/g, (fullMatch, prefix, q) => {
+        if (q.includes('<em>') || q.includes('<i>')) return fullMatch;
+        return `${prefix}<em class="historical-setting-question">${q}</em>`;
+      });
       htmlNarrative += `
         <div class="historical-editorial-lede">
           <div class="lede-eyebrow">
