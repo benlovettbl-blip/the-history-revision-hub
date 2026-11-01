@@ -8858,7 +8858,7 @@ export function renderLesson(lesson) {
             </div>
             <span style="background: rgba(255, 255, 255, 0.2); color: #ffffff; font-size: 0.78rem; font-weight: 800; padding: 4px 10px; border-radius: 20px;">Target: Level 4 (13–16 Marks)</span>
           </div>
-          
+
           <div style="padding: 20px;">
             <div style="background: #f8fafc; border-left: 4px solid #2563eb; border-radius: 0 6px 6px 0; padding: 12px 16px; margin-bottom: 18px;">
               <div style="font-size: 0.75rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">Statement to Evaluate:</div>
