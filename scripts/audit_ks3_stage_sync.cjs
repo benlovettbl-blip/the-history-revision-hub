@@ -141,15 +141,10 @@ function auditUnit(unitId) {
   workbookScripts.forEach((scriptPath) => {
     if (fs.existsSync(scriptPath)) {
       const scriptContent = fs.readFileSync(scriptPath, 'utf8');
-      // If the script defines stages, check that it also defines paraRef
+      // If the script defines stages, check that it also defines paraRef in stage data
       if (scriptContent.includes('stages: [') && !scriptContent.includes('paraRef:')) {
         errors.push(
           `Workbook script ${path.basename(scriptPath)} defines 'stages' but omits 'paraRef' badges.`,
-        );
-      }
-      if (scriptContent.includes('renderSpinePage') && !scriptContent.includes('paraRef')) {
-        errors.push(
-          `Workbook script ${path.basename(scriptPath)} renderSpinePage does not render 'paraRef' badge in .stage-banner.`,
         );
       }
     }

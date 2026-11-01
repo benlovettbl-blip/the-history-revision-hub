@@ -638,12 +638,11 @@ function renderSpinePage(cfg, pageNum) {
               <span style="background: #ffffff; color: #0f284e; font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap;">
                 Stage ${st.step}
               </span>
-              ${st.paraRef ? `<span style="background: #1e3a8a; border: 0.8px solid #93c5fd; color: #ffffff; font-family: 'Inter', monospace; font-size: 6.8pt; font-weight: 800; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">Text ${st.paraRef}</span>` : ''}
               <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; color: #93c5fd; white-space: nowrap;">
                 ${st.date}
               </span>
               <span style="color: #60a5fa; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="font-family: 'Playfair Display', serif; font-size: ${st.questionHeading && st.questionHeading.length > 75 ? '8.3pt' : '8.8pt'}; font-weight: 800; color: #ffffff; white-space: nowrap;">
                 ${st.questionHeading}
               </span>
             </div>

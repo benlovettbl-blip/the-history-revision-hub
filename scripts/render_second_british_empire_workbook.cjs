@@ -588,12 +588,11 @@ function renderSpinePage(cfg, pageNum) {
               <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; padding: 0.6px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 ${st.step}
               </span>
-              ${st.paraRef ? `<span style="background: #222222; color: #ffffff; border: 1px solid #ffffff; font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 800; padding: 0.5px 4px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">${st.paraRef}</span>` : ''}
               <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 800; color: #ffffff; white-space: nowrap; flex-shrink: 0;">
                 ${st.date}
               </span>
               <span style="color: #ffffff; font-size: 7.5pt; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 9.2pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; letter-spacing: -0.1px;">
+              <span style="font-family: 'Inter', sans-serif; font-size: ${st.questionHeading && st.questionHeading.length > 75 ? '8.4pt' : '8.9pt'}; font-weight: 800; color: #ffffff; white-space: nowrap; letter-spacing: -0.12px;">
                 ${st.questionHeading}
               </span>
             </div>
