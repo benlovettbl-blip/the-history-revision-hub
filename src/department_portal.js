@@ -26,34 +26,34 @@ const FIELD_MANUALS = [
     id: 'guide_01',
     num: '01',
     title: 'The Tripartite Curriculum Model',
-    subtitle: 'Architecture & Separation of Concerns: Textbooks, Workbooks & The Digital App',
+    subtitle: 'Architecture & Separation of Concerns: Textbooks, Workbooks & Interactive Learning',
     category: 'Curriculum Architecture',
     badgeClass: 'badge-blue',
     summary:
-      'Explains the fundamental separation between the permanent classroom textbook (timeless reading), the 16-page consumable workbook (student writing), and the digital app. Details how state separation eliminated the September question numbering desynchronization crisis.',
+      'Establishes how permanent classroom narrative textbooks, consumable pupil workbooks, and digital retrieval tools work together seamlessly in the classroom to build long-term retention and historical thinking.',
     pdfUrl: '/history_revision_hub_guidance/Guide_01_The_Tripartite_Curriculum_Model.pdf',
     htmlUrl: '/history_revision_hub_guidance/Guide_01_The_Tripartite_Curriculum_Model.html',
     keyPoints: [
-      'Textbooks NEVER contain question numbers; indexed strictly by [Act.Paragraph] and Source letters.',
-      'Workbooks are the sole consumable location for student handwriting and exam practice (/26 marks).',
-      'Digital App synchronizes real-time feedback with canonical workbook question IDs.',
+      'Master Textbooks: High-legibility classroom anthologies focusing 100% on narrative exposition and authentic source reading.',
+      'Pupil Workbooks: Structured consumable companions for chronological note-taking, disciplinary writing, and formal assessment (/26 marks).',
+      'Interactive Platform: Front-of-class starter slides, spaced retrieval quizzes, and multimedia primary source exploration.',
     ],
   },
   {
     id: 'guide_02',
     num: '02',
-    title: 'The Master Cover Engine & Commercial Customizer',
-    subtitle: 'Standardized Cover Architecture, Specification Grid & Multi-School Branding',
-    category: 'Design Systems',
+    title: 'Pupil Workbook Standards & Assessment Ledgers',
+    subtitle: 'Standardized Booklet Structure, Writing Scaffolding & Progress Ledgers',
+    category: 'Curriculum & Assessment',
     badgeClass: 'badge-purple',
     summary:
-      'Technical and design documentation for renderStandardFrontCover and renderStandardBackCover. Details the 120mm landscape archival hero photo, the Pearson 3-column specification grid, and the commercial school branding customizer pattern.',
+      'Pedagogical blueprint for Key Stage 3 and GCSE printed pupil workbooks, featuring the 5-Stage Chronological Inquiry Spine, calibrated handwriting lines, structured writing frames, and formal progress tracking.',
     pdfUrl: '/history_revision_hub_guidance/Guide_02_The_Master_Cover_Engine_and_Customizer.pdf',
     htmlUrl: '/history_revision_hub_guidance/Guide_02_The_Master_Cover_Engine_and_Customizer.html',
     keyPoints: [
-      'data-department-name="The History Department" guarantees 100% institutional neutrality.',
-      'Purchasing schools customize covers seamlessly via browser query params (?school=Name), CLI flags, or CSS.',
-      'Back cover features /26 marks enquiry progress ledger, WWW/EBI handwriting lines, and 5 interactive QR codes.',
+      '5-Stage Chronological Inquiry Spine on left-hand verso pages for structured lecture note-taking.',
+      'Calibrated ~8mm handwriting pitch and analytical connectives on right-hand recto pages for extended writing.',
+      'Back-cover progress ledger with /26 mark criteria and interactive retrieval quiz QR codes.',
     ],
   },
   {
@@ -132,290 +132,236 @@ const DEPARTMENT_POLICIES = [
 
 const UNIT_HEALTH_DATA = [
   {
-    year: 'KS2',
-    ks: 'KS2',
+    year: 'Key Stage 2',
+    ks: 'Primary KS2',
     uid: 'ks2_ww2',
     name: 'WWII & The Home Front (1939–1945)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ 24-Page Pupil Workbook (10 L)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 24-Page Master Textbook (10 Enquiries)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (10 L)',
-    mapStatus: 'optimal',
-    mapText: '✅ Evacuation & Kindertransport Atlas',
+    enquiries: '10 Enquiries',
+    hours: '16 Hours',
+    workbookText: '24-Page Pupil Workbook',
+    textbookText: '24-Page Master Textbook',
+    mapText: 'Evacuation & Kindertransport Atlas',
     workbookPdf: '/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf',
     textbookPdf: '/pdfs/ks2_ww2_textbook.pdf',
   },
   {
-    year: 'Year 7',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'water_and_sanitation',
-    name: 'Water & Sanitation Through Time',
-    workbookStatus: 'optimal',
-    workbookText: '✅ 20-Page Gold Standard (7 Enquiries)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 12-Page Master Textbook',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (7 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Broad Street & Roman Maps',
+    name: 'Water & Sanitation Through Time (c1250–Present)',
+    enquiries: '7 Enquiries',
+    hours: '14 Hours',
+    workbookText: '20-Page Pupil Workbook',
+    textbookText: '12-Page Master Textbook',
+    mapText: 'Broad Street & Roman Aqueducts',
     workbookPdf: '/pdfs/water_and_sanitation_pupil_workbook.pdf',
     textbookPdf: '/pdfs/water_and_sanitation_textbook.pdf',
   },
   {
-    year: 'Year 7',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'medieval_england',
     name: 'Medieval England (1066–1485)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 12-Page Master Textbook (1066–1381)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (9 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Battle of Hastings & Castles',
+    enquiries: '8 Enquiries',
+    hours: '16 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '12-Page Master Textbook',
+    mapText: 'Battle of Hastings & Norman Castles',
     workbookPdf: '/pdfs/medieval_england_pupil_workbook.pdf',
     textbookPdf: '/pdfs/medieval_england_textbook.pdf',
   },
   {
-    year: 'Year 8',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'monarchy_religion_power',
-    name: 'Crown, Church & Parliament (1517–1689)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 8-Page Master Textbook (Unified)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (5 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Tudor Reformation & Civil War Campaigns',
+    name: 'Crown, Church & Parliament (1509–1745)',
+    enquiries: '8 Enquiries',
+    hours: '16 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '8-Page Master Textbook',
+    mapText: 'Tudor Reformation & Civil War Campaigns',
     workbookPdf: '/pdfs/monarchy_religion_power_pupil_workbook.pdf',
     textbookPdf: '/pdfs/monarchy_religion_power_textbook.pdf',
   },
   {
-    year: 'Year 8',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'first_british_empire',
-    name: 'The First British Empire (1600–1783)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 8-Page Master Textbook (Unified)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (5 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Atlantic Triangular Trade & Mughal Bengal',
+    name: 'The First British Empire (1585–1807)',
+    enquiries: '8 Enquiries',
+    hours: '16 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '8-Page Master Textbook',
+    mapText: 'Atlantic Triangular Trade & Mughal Bengal',
     workbookPdf: '/pdfs/first_british_empire_pupil_workbook.pdf',
     textbookPdf: '/pdfs/first_british_empire_textbook.pdf',
   },
   {
-    year: 'Year 8',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'industrialisation_and_empire',
-    name: 'The Industrial Revolution (1750–1900)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 12-Page Master Textbook (Unified)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (5 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Canals, Coalfields & Industrial Britain',
+    name: 'The Industrial Revolution (1750–1901)',
+    enquiries: '8 Enquiries',
+    hours: '16 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '12-Page Master Textbook',
+    mapText: 'Canals, Coalfields & Industrial Britain',
     workbookPdf: '/pdfs/industrialisation_and_empire_pupil_workbook.pdf',
     textbookPdf: '/pdfs/industrialisation_and_empire_textbook.pdf',
   },
   {
-    year: 'Year 8',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'second_british_empire',
-    name: 'The Second British Empire (1783–1914)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 12-Page Master Textbook (Unified)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (5 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Imperial Federation & Coaling Stations',
+    name: 'The Second British Empire (1783–1947)',
+    enquiries: '8 Enquiries',
+    hours: '16 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '12-Page Master Textbook',
+    mapText: 'Imperial Federation & Coaling Stations',
     workbookPdf: '/pdfs/second_british_empire_pupil_workbook.pdf',
     textbookPdf: '/pdfs/second_british_empire_textbook.pdf',
   },
   {
-    year: 'Year 8',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'australia',
-    name: 'Invasion & Survival in Australia (1770–1901)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 8-Page Master Textbook (Unified)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (5 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ First Fleet & Indigenous Territories',
+    name: 'First Nations & Colonial Australia (1788–1901)',
+    enquiries: '8 Enquiries',
+    hours: '16 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '8-Page Master Textbook',
+    mapText: 'First Fleet & Indigenous Nations',
     workbookPdf: '/pdfs/australia_pupil_workbook.pdf',
     textbookPdf: '/pdfs/australia_textbook.pdf',
   },
   {
-    year: 'Year 9',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'great_war',
-    name: 'The Great War 1914–1918 (Part 1)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 8-Page Master Anthology',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (6 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Western Front & Schlieffen Plan',
+    name: 'The Great War 1914–1918 (Part 1: Origins & Outbreak)',
+    enquiries: '6 Enquiries',
+    hours: '12 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '8-Page Master Textbook',
+    mapText: 'Western Front & Schlieffen Plan',
     workbookPdf: '/pdfs/great_war_pupil_workbook.pdf',
     textbookPdf: '/pdfs/great_war_textbook.pdf',
   },
   {
-    year: 'Year 9',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'great_war_part2',
     name: 'The Great War 1914–1918 (Part 2: Somme & Armistice)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 12-Page Master Saddle-Stitch',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (7 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Somme & Ypres Battlegrounds',
+    enquiries: '7 Enquiries',
+    hours: '14 Hours',
+    workbookText: '20-Page Pupil Workbook',
+    textbookText: '12-Page Master Textbook',
+    mapText: 'Somme & Ypres Salient Battlefields',
     workbookPdf: '/pdfs/great_war_part2_pupil_workbook.pdf',
     textbookPdf: '/pdfs/great_war_part2_textbook.pdf',
   },
   {
-    year: 'Year 9',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'the_shoah',
-    name: 'The Shoah (Holocaust Education)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 12-Page Master Saddle-Stitch',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (7 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Camp Network & Resistance',
+    name: 'The Shoah (1933–1948)',
+    enquiries: '7 Enquiries',
+    hours: '14 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '12-Page Master Textbook',
+    mapText: 'Camp Network & Underground Resistance',
     workbookPdf: '/pdfs/the_shoah_pupil_workbook.pdf',
     textbookPdf: '/pdfs/the_shoah_textbook.pdf',
   },
   {
-    year: 'Year 9',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'post_war_britain',
-    name: 'Post-War Britain (1945–1990s)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 12-Page Master Saddle-Stitch',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (6 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Windrush Routes & NHS Districts',
+    name: 'Post-War Britain: Windrush & Welfare State (1945–1979)',
+    enquiries: '6 Enquiries',
+    hours: '12 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '12-Page Master Textbook',
+    mapText: 'Windrush Routes & NHS Districts',
     workbookPdf: '/pdfs/post_war_britain_pupil_workbook.pdf',
     textbookPdf: '/pdfs/post_war_britain_textbook.pdf',
   },
   {
-    year: 'Year 9',
-    ks: 'KS3',
+    year: 'Key Stage 3',
+    ks: 'KS3 Core',
     uid: 'cold_war',
-    name: 'Superpower Relations & The Cold War',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (99% Budget)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 12-Page Master Textbook (Unified)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (7 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Divided Berlin & NATO/Warsaw',
+    name: 'Superpower Relations & The Cold War (1945–1991)',
+    enquiries: '7 Enquiries',
+    hours: '14 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '12-Page Master Textbook',
+    mapText: 'Divided Berlin & NATO/Warsaw Blocs',
     workbookPdf: '/pdfs/cold_war_pupil_workbook.pdf',
     textbookPdf: '/pdfs/cold_war_textbook.pdf',
   },
   {
-    year: 'Year 10',
-    ks: 'GCSE Paper 2',
-    uid: 'cme_new',
-    name: 'Conflict in the Middle East (1945–1995)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Master Covers & Atlas (KT1–3)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 28-Page Master Textbook (Unified)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (12 L)',
-    mapStatus: 'optimal',
-    mapText: '✅ 1949 Line, Suez, 1967, 1973, Oslo',
-    workbookPdf: '/pdfs/cme_new_pupil_workbook_KT1.pdf',
-    textbookPdf: '/pdfs/cme_new_textbook.pdf',
-  },
-  {
-    year: 'Year 10',
-    ks: 'GCSE Paper 3',
-    uid: 'weimar_nazi_germany',
-    name: 'Weimar & Nazi Germany (1918–1939)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (16 L, KT1–4)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 28-Page Master Textbook (Unified)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (16 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Weimar Territory & Plebiscites',
-    workbookPdf: '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf',
-    textbookPdf: '/pdfs/weimar_nazi_germany_textbook.pdf',
-  },
-  {
-    year: 'Year 11',
-    ks: 'GCSE Paper 2',
-    uid: 'eee',
-    name: 'Early Elizabethan England (1558–1588)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (KT1–3)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 28-Page Master Textbook (Unified)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (12 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Armada Route & Drake Circumnavigation',
-    workbookPdf: '/pdfs/eee_pupil_workbook_KT1.pdf',
-    textbookPdf: '/pdfs/eee_textbook.pdf',
-  },
-  {
-    year: 'Year 11',
-    ks: 'GCSE Paper 1',
+    year: 'GCSE (9–1)',
+    ks: 'Edexcel Paper 1',
     uid: 'edexcel_medicine',
-    name: 'Medicine in Britain (c1250–present) & Western Front',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (26 L, Medieval to Modern)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 5x Master Era Editions (62 Pages)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (26 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Western Front Casualty Evacuation',
+    name: 'Medicine in Britain (c1250–Present) & The Western Front',
+    enquiries: '26 Lessons',
+    hours: '36 Hours',
+    workbookText: 'Consumable Pupil Workbook',
+    textbookText: '5-Era Master Anthology',
+    mapText: 'Western Front Casualty Evacuation Chain',
     workbookPdf: '/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf',
     textbookPdf: '/pdfs/edexcel_medicine_textbook_medieval.pdf',
   },
   {
-    year: 'Year 11',
-    ks: 'GCSE Paper 3',
+    year: 'GCSE (9–1)',
+    ks: 'Edexcel Paper 2',
+    uid: 'eee',
+    name: 'Early Elizabethan England (1558–1588)',
+    enquiries: '12 Lessons',
+    hours: '24 Hours',
+    workbookText: 'Consumable Pupil Workbook (KT1–3)',
+    textbookText: '28-Page Master Textbook',
+    mapText: 'Spanish Armada Route & Circumnavigation',
+    workbookPdf: '/pdfs/eee_pupil_workbook_KT1.pdf',
+    textbookPdf: '/pdfs/eee_textbook.pdf',
+  },
+  {
+    year: 'GCSE (9–1)',
+    ks: 'Edexcel Paper 3',
+    uid: 'weimar_nazi_germany',
+    name: 'Weimar & Nazi Germany (1918–1939)',
+    enquiries: '16 Lessons',
+    hours: '28 Hours',
+    workbookText: 'Consumable Pupil Workbook (KT1–4)',
+    textbookText: '28-Page Master Textbook',
+    mapText: 'Weimar Border Plebiscites & Rhineland',
+    workbookPdf: '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf',
+    textbookPdf: '/pdfs/weimar_nazi_germany_textbook.pdf',
+  },
+  {
+    year: 'GCSE (9–1)',
+    ks: 'Edexcel Paper 3',
+    uid: 'cme_new',
+    name: 'Conflict in the Middle East (1945–1995)',
+    enquiries: '12 Lessons',
+    hours: '24 Hours',
+    workbookText: 'Consumable Pupil Workbook (KT1–3)',
+    textbookText: '28-Page Master Textbook',
+    mapText: '1949 Green Line, Sinai, Golan & West Bank',
+    workbookPdf: '/pdfs/cme_new_pupil_workbook_KT1.pdf',
+    textbookPdf: '/pdfs/cme_new_textbook.pdf',
+  },
+  {
+    year: 'GCSE (9–1)',
+    ks: 'Edexcel Paper 3',
     uid: 'usa',
     name: 'USA: Conflict at Home & Abroad (1954–1975)',
-    workbookStatus: 'optimal',
-    workbookText: '✅ V17 Optimal (KT1–4)',
-    textbookStatus: 'optimal',
-    textbookText: '✅ 28-Page Master Textbook (Unified)',
-    appStatus: 'synced',
-    appText: '✅ 100% Synced (16 L)',
-    mapStatus: 'embedded',
-    mapText: '✅ Civil Rights Marches & Vietnam War',
+    enquiries: '16 Lessons',
+    hours: '28 Hours',
+    workbookText: 'Consumable Pupil Workbook (KT1–4)',
+    textbookText: '28-Page Master Textbook',
+    mapText: 'Civil Rights Movement & Vietnam Theater',
     workbookPdf: '/pdfs/usa_pupil_workbook_KT1.pdf',
     textbookPdf: '/pdfs/usa_textbook.pdf',
   },
@@ -466,50 +412,47 @@ export async function renderDepartmentPortal(targetTab = 'curriculum') {
 
     <div class="department-portal-wrapper" style="padding: 24px 32px; max-width: 1400px; margin: 0 auto;">
       
-      <!-- Top Command Header -->
+      <!-- Top Department Header -->
       <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; flex-wrap: wrap; gap: 16px; border-bottom: 2px solid var(--border-color, #e2e8f0); padding-bottom: 18px;">
         <div>
           <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.25); color: #1e3a8a; padding: 4px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">
-            <i class="fa-solid fa-landmark"></i> Department Command Center
+            <i class="fa-solid fa-landmark"></i> The History Department
           </div>
           <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 2.1rem; color: var(--text-primary, #0f172a); margin: 0 0 6px 0; font-weight: 800;">
-            Department Portal &amp; Disciplinary Field Manual
+            Department Handbook &amp; Curriculum Portal
           </h1>
           <p style="margin: 0; color: var(--text-muted, #64748b); font-size: 0.95rem; line-height: 1.5;">
-            Operational masterplans, curriculum health monitoring, research-informed pedagogy, and print publication standards.
+            Whole-school curriculum intent, schemes of work, teaching routines, assessment policies, and pedagogical standards.
           </p>
         </div>
 
         <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
           <button type="button" onclick="window.switchView('curriculum')" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; border: 1.5px solid #1e3a8a; color: #1e3a8a; background: #fff; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#eff6ff'" onmouseout="this.style.background='#fff'">
-            <i class="fa-solid fa-table-columns"></i> Curriculum Map
+            <i class="fa-solid fa-table-columns"></i> 5-Year Curriculum Map
           </button>
-          <a href="/source_visual_verification_gallery.html" target="_blank" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1.5px solid #0284c7; color: #0284c7; background: #fff; transition: all 0.15s ease;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='#fff'">
-            <i class="fa-solid fa-camera-retro"></i> Visual Source Studio
+          <a href="/pdfs/history_marking_and_feedback_policy_v2.pdf" target="_blank" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1.5px solid #0284c7; color: #0284c7; background: #fff; transition: all 0.15s ease;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='#fff'">
+            <i class="fa-solid fa-file-signature"></i> Marking Policy (PDF)
           </a>
-          <a href="/master_rights_register.html" target="_blank" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1.5px solid #059669; color: #059669; background: #fff; transition: all 0.15s ease;" onmouseover="this.style.background='#ecfdf5'" onmouseout="this.style.background='#fff'">
-            <i class="fa-solid fa-scale-balanced"></i> Rights Register
-          </a>
-          <a href="/units/ks2_ww2/index.html" target="_blank" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1.5px solid #6366f1; color: #6366f1; background: #fff; transition: all 0.15s ease;" onmouseover="this.style.background='#eef2ff'" onmouseout="this.style.background='#fff'">
-            <i class="fa-solid fa-chalkboard-user"></i> KS2 Hub
+          <a href="/history_revision_hub_guidance/Guide_03_Reprographics_and_Print_Handbook.pdf" target="_blank" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1.5px solid #059669; color: #059669; background: #fff; transition: all 0.15s ease;" onmouseover="this.style.background='#ecfdf5'" onmouseout="this.style.background='#fff'">
+            <i class="fa-solid fa-print"></i> Reprographics Guide (PDF)
           </a>
           <button type="button" onclick="window.openEmergencyCoverModal && window.openEmergencyCoverModal()" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; background: #b45309; color: #fff; border: 1.5px solid #b45309; cursor: pointer; box-shadow: 0 2px 5px rgba(180, 83, 9, 0.25);">
-            <i class="fa-solid fa-envelope-open-text"></i> Cover Generator
+            <i class="fa-solid fa-envelope-open-text"></i> Emergency Cover
           </button>
         </div>
       </div>
 
-      <!-- High-Level KPI Summary Metrics -->
+      <!-- High-Level Department Pillars Metrics -->
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 28px;">
         <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
           <div style="font-size: 0.75rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px;">
-            Total Curriculum Scope
+            Curriculum Scope
           </div>
           <div style="font-size: 1.85rem; font-weight: 900; color: #0f172a; font-family: 'Inter', sans-serif;">
-            14 Units <span style="font-size: 0.95rem; font-weight: 600; color: #1e3a8a;">(Years 7–11)</span>
+            18 Units <span style="font-size: 0.88rem; font-weight: 600; color: #1e3a8a;">(KS3 &bull; GCSE &bull; KS2)</span>
           </div>
           <div style="font-size: 0.82rem; color: #10b981; margin-top: 4px; font-weight: 700;">
-            <i class="fa-solid fa-check-circle"></i> 100% Specification Mapped
+            <i class="fa-solid fa-check-circle"></i> Chronological Breadth c.1066–Present
           </div>
         </div>
 
@@ -521,31 +464,31 @@ export async function renderDepartmentPortal(targetTab = 'curriculum') {
             136 Lessons
           </div>
           <div style="font-size: 0.82rem; color: #10b981; margin-top: 4px; font-weight: 700;">
-            <i class="fa-solid fa-check-circle"></i> Christine Counsell 4-Act Framework
+            <i class="fa-solid fa-check-circle"></i> Christine Counsell Disciplinary Model
           </div>
         </div>
 
         <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
           <div style="font-size: 0.75rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px;">
-            Dual-Numbering QA Gate
+            Disciplinary Vocabulary
           </div>
           <div style="font-size: 1.85rem; font-weight: 900; color: #0f172a; font-family: 'Inter', sans-serif;">
-            732 Questions
+            850+ Terms
           </div>
           <div style="font-size: 0.82rem; color: #10b981; margin-top: 4px; font-weight: 700;">
-            <i class="fa-solid fa-check-double"></i> 100% Print-to-App Synchronized
+            <i class="fa-solid fa-spell-check"></i> Alex Quigley Tier 2 &amp; Tier 3 Lexicon
           </div>
         </div>
 
         <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
           <div style="font-size: 0.75rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px;">
-            Cognitive Space Budget
+            Learning Publications
           </div>
-          <div style="font-size: 1.85rem; font-weight: 900; color: #059669; font-family: 'Inter', sans-serif;">
-            0px Overflow
+          <div style="font-size: 1.45rem; font-weight: 900; color: #059669; font-family: 'Inter', sans-serif; line-height: 1.25; margin-top: 4px;">
+            Dual Anthologies
           </div>
           <div style="font-size: 0.82rem; color: #059669; margin-top: 4px; font-weight: 700;">
-            <i class="fa-solid fa-shield-halved"></i> 99% Space Budget Enforced
+            <i class="fa-solid fa-book-bookmark"></i> Saddle-Stitch Workbooks &amp; Textbooks
           </div>
         </div>
       </div>
@@ -555,14 +498,14 @@ export async function renderDepartmentPortal(targetTab = 'curriculum') {
         <button type="button" data-tab="curriculum" class="portal-nav-tab ${activePortalTab === 'curriculum' ? 'active' : ''}" onclick="window.switchPortalTab('curriculum')">
           <i class="fa-solid fa-map-location-dot"></i> 1. Curriculum Intent &amp; SOWs
         </button>
-        <button type="button" data-tab="pedagogy" class="portal-nav-tab ${activePortalTab === 'pedagogy' ? 'active' : ''}" onclick="window.switchPortalTab('pedagogy')">
-          <i class="fa-solid fa-microscope"></i> 2. Disciplinary Pedagogy &amp; Evidence
-        </button>
         <button type="button" data-tab="tracker" class="portal-nav-tab ${activePortalTab === 'tracker' ? 'active' : ''}" onclick="window.switchPortalTab('tracker')">
-          <i class="fa-solid fa-chart-line"></i> 3. Curriculum Coverage &amp; Standards
+          <i class="fa-solid fa-book-open"></i> 2. Curriculum Directory &amp; Print Bank
+        </button>
+        <button type="button" data-tab="pedagogy" class="portal-nav-tab ${activePortalTab === 'pedagogy' ? 'active' : ''}" onclick="window.switchPortalTab('pedagogy')">
+          <i class="fa-solid fa-brain"></i> 3. Disciplinary Pedagogy &amp; Evidence
         </button>
         <button type="button" data-tab="governance" class="portal-nav-tab ${activePortalTab === 'governance' ? 'active' : ''}" onclick="window.switchPortalTab('governance')">
-          <i class="fa-solid fa-book-bookmark"></i> 4. Department Governance &amp; Field Manuals
+          <i class="fa-solid fa-file-shield"></i> 4. Department Handbook &amp; Policies
         </button>
       </div>
 
@@ -594,29 +537,29 @@ function renderActivePortalTab() {
 }
 
 // -------------------------------------------------------------
-// TAB 1: MASTERPLAN HEALTH TRACKER TABLE
+// TAB 2: CURRICULUM DIRECTORY & RESOURCE BANK
 // -------------------------------------------------------------
 function renderTrackerTab(container) {
   container.innerHTML = `
     <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
       <div style="padding: 18px 24px; background: #f8fafc; border-bottom: 1.5px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
         <div>
-          <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: #0f172a;">
-            Curriculum Unit Architecture &amp; Production Status Tracker
+          <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: #0f172a; font-family: 'Playfair Display', Georgia, serif;">
+            Curriculum Units &amp; Learning Publications Directory
           </h3>
           <p style="margin: 4px 0 0 0; font-size: 0.88rem; color: #64748b;">
-            Visual audit across the 14 core units. Green indicates V17 master compliance; amber flags legacy continuous-flow text.
+            Official syllabus alignment, curriculum hours, and direct print-ready publication downloads across Key Stage 3 and GCSE (9–1).
           </p>
         </div>
-        <div style="display: flex; gap: 12px; align-items: center;">
-          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 700; color: #059669;">
-            <span style="width: 10px; height: 10px; border-radius: 50%; background: #10b981;"></span> Optimal / V17
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; padding: 4px 10px; border-radius: 6px;">
+            <i class="fa-solid fa-graduation-cap"></i> KS3 Core (12 Units)
           </span>
-          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 700; color: #d97706;">
-            <span style="width: 10px; height: 10px; border-radius: 50%; background: #f59e0b;"></span> Legacy / Target
+          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; color: #0369a1; background: #f0f9ff; border: 1px solid #bae6fd; padding: 4px 10px; border-radius: 6px;">
+            <i class="fa-solid fa-award"></i> GCSE 9–1 (5 Papers)
           </span>
-          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 700; color: #2563eb;">
-            <span style="width: 10px; height: 10px; border-radius: 50%; background: #3b82f6;"></span> Active Priority
+          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; color: #15803d; background: #f0fdf4; border: 1px solid #bbf7d0; padding: 4px 10px; border-radius: 6px;">
+            <i class="fa-solid fa-child-reaching"></i> Primary KS2 (1 Unit)
           </span>
         </div>
       </div>
@@ -625,13 +568,13 @@ function renderTrackerTab(container) {
         <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.88rem;">
           <thead>
             <tr style="background: #0f172a; color: #ffffff; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.08em;">
-              <th style="padding: 12px 18px; border: none;">Year / Keystage</th>
-              <th style="padding: 12px 18px; border: none;">Unit Title</th>
-              <th style="padding: 12px 18px; border: none;">16-Page Pupil Workbook</th>
-              <th style="padding: 12px 18px; border: none;">Companion Textbook</th>
-              <th style="padding: 12px 18px; border: none;">Digital App Quizzing</th>
-              <th style="padding: 12px 18px; border: none;">Cartographic Atlas</th>
-              <th style="padding: 12px 18px; border: none; text-align: right;">Quick Actions</th>
+              <th style="padding: 12px 18px; border: none;">Key Stage &amp; Paper</th>
+              <th style="padding: 12px 18px; border: none;">Curriculum Unit Title</th>
+              <th style="padding: 12px 18px; border: none;">Teaching Scale</th>
+              <th style="padding: 12px 18px; border: none;">Pupil Workbook (Print)</th>
+              <th style="padding: 12px 18px; border: none;">Classroom Textbook</th>
+              <th style="padding: 12px 18px; border: none;">Cartographic Map</th>
+              <th style="padding: 12px 18px; border: none; text-align: right;">Classroom Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -640,36 +583,36 @@ function renderTrackerTab(container) {
               return `
                 <tr style="background: ${bg}; border-bottom: 1px solid #e2e8f0; transition: background 0.15s ease;" onmouseover="this.style.background='#f1f5f9'" onmouseout="this.style.background='${bg}'">
                   <td style="padding: 14px 18px; font-weight: 700; color: #1e3a8a; white-space: nowrap;">
-                    ${u.year} <span style="font-size: 0.75rem; font-weight: 600; color: #64748b; display: block;">${u.ks}</span>
+                    ${u.year}
+                    <span style="font-size: 0.75rem; font-weight: 600; color: #64748b; display: block;">${u.ks}</span>
                   </td>
                   <td style="padding: 14px 18px; font-weight: 700; color: #0f172a;">
                     ${u.name}
                   </td>
-                  <td style="padding: 14px 18px;">
-                    <span style="font-size: 0.8rem; font-weight: 700; color: #065f46; background: #ecfdf5; border: 1px solid #a7f3d0; padding: 4px 8px; border-radius: 6px; display: inline-block;">
-                      ${u.workbookText}
-                    </span>
+                  <td style="padding: 14px 18px; color: #475569; font-size: 0.84rem; white-space: nowrap;">
+                    <span style="font-weight: 700; color: #0f172a;">${u.enquiries}</span>
+                    <span style="display: block; font-size: 0.75rem; color: #64748b;">${u.hours}</span>
                   </td>
                   <td style="padding: 14px 18px;">
-                    <span style="font-size: 0.8rem; font-weight: 700; color: ${u.textbookStatus === 'optimal' ? '#065f46' : u.textbookStatus === 'pilot' ? '#1e40af' : '#92400e'}; background: ${u.textbookStatus === 'optimal' ? '#ecfdf5' : u.textbookStatus === 'pilot' ? '#eff6ff' : '#fef3c7'}; border: 1px solid ${u.textbookStatus === 'optimal' ? '#a7f3d0' : u.textbookStatus === 'pilot' ? '#bfdbfe' : '#fde68a'}; padding: 4px 8px; border-radius: 6px; display: inline-block;">
-                      ${u.textbookText}
-                    </span>
+                    <a href="${u.workbookPdf}" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; padding: 5px 10px; border-radius: 6px; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='#dbeafe'" onmouseout="this.style.background='#eff6ff'">
+                      <i class="fa-solid fa-file-pen" style="color: #2563eb;"></i> ${u.workbookText}
+                    </a>
                   </td>
                   <td style="padding: 14px 18px;">
-                    <span style="font-size: 0.8rem; font-weight: 700; color: #065f46;">
-                      ${u.appText}
-                    </span>
+                    <a href="${u.textbookPdf}" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 700; color: #0f172a; background: #f8fafc; border: 1px solid #cbd5e1; padding: 5px 10px; border-radius: 6px; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='#f1f5f9'" onmouseout="this.style.background='#f8fafc'">
+                      <i class="fa-solid fa-book-open" style="color: #475569;"></i> ${u.textbookText}
+                    </a>
                   </td>
                   <td style="padding: 14px 18px; color: #334155; font-size: 0.82rem;">
-                    ${u.mapText}
+                    <i class="fa-solid fa-map-location-dot" style="color: #059669; margin-right: 4px;"></i> ${u.mapText}
                   </td>
                   <td style="padding: 14px 18px; text-align: right; white-space: nowrap;">
                     <div style="display: inline-flex; gap: 6px;">
-                      <a href="${u.workbookPdf}" target="_blank" title="View Workbook" style="padding: 6px 10px; background: #1e3a8a; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
-                        <i class="fa-solid fa-book"></i> WB
+                      <a href="${u.workbookPdf}" target="_blank" title="Download Pupil Workbook (PDF)" style="padding: 6px 10px; background: #1e3a8a; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
+                        <i class="fa-solid fa-file-pen"></i> WB
                       </a>
-                      <a href="${u.textbookPdf}" target="_blank" title="View Textbook" style="padding: 6px 10px; background: #475569; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
-                        <i class="fa-solid fa-file-lines"></i> TB
+                      <a href="${u.textbookPdf}" target="_blank" title="Download Master Textbook (PDF)" style="padding: 6px 10px; background: #475569; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
+                        <i class="fa-solid fa-book-open"></i> TB
                       </a>
                       <button type="button" onclick="window.switchView('lessons', '${u.uid}')" title="Launch Interactive Unit" style="padding: 6px 10px; background: #059669; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.75rem; font-weight: 700;">
                         <i class="fa-solid fa-play"></i>
@@ -733,14 +676,14 @@ function renderGovernanceTab(container) {
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 12px;">
         <div>
           <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #60a5fa; background: rgba(96,165,250,0.15); padding: 3px 10px; border-radius: 4px; border: 1px solid rgba(96,165,250,0.3);">
-            Staff Command Hub
+            Staff Handbooks &amp; Operations
           </span>
           <h3 style="margin: 6px 0 0 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem; color: #ffffff; font-weight: 800;">
-            Faculty Operations, Publishing &amp; Digital Studios
+            Department Policies, Operational Guides &amp; Handbooks
           </h3>
         </div>
         <div style="font-size: 0.82rem; color: #94a3b8;">
-          Centralised access to curriculum architecture, legal registers, primary studios, and emergency tools.
+          Centralised access to curriculum architecture, assessment policies, reprographics guides, and emergency cover tools.
         </div>
       </div>
 
@@ -1224,7 +1167,7 @@ function renderCurriculumTab(container) {
                 <button type="button" 
                   onclick="window.selectSowUnit('${u.unitId}')"
                   style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 8px; font-size: 0.84rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease; border: 1.5px solid ${isActive ? '#1e3a8a' : '#cbd5e1'}; background: ${isActive ? '#1e3a8a' : '#ffffff'}; color: ${isActive ? '#ffffff' : '#334155'}; box-shadow: ${isActive ? '0 2px 6px rgba(30,58,138,0.25)' : 'none'};">
-                  <span>${u.yearGroup}: ${u.title.split('&')[0].trim()}</span>
+                  <span>${u.keyStage ? u.keyStage + ': ' : ''}${u.title.split('&')[0].trim()}</span>
                   ${isActive ? '<i class="fa-solid fa-circle-check" style="font-size: 0.75rem;"></i>' : ''}
                 </button>
               `;
@@ -1238,7 +1181,7 @@ function renderCurriculumTab(container) {
           <div style="flex: 1; min-width: 300px;">
             <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 6px;">
               <span style="font-size: 0.75rem; font-weight: 800; color: #059669; background: #ecfdf5; border: 1px solid #a7f3d0; padding: 2px 8px; border-radius: 4px;">
-                ${currentUnit.yearGroup} &bull; ${currentUnit.keyStage}
+                ${currentUnit.keyStage || 'Key Stage 3'} &bull; Core Syllabus
               </span>
               <span style="font-size: 0.75rem; font-weight: 700; color: #64748b;">
                 8 Enquiries &bull; 16 Hours Curriculum Time
