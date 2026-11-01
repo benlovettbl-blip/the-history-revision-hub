@@ -223,15 +223,10 @@ export function renderDashboard() {
   if (ks2Units.length > 0) {
     html += `
       <div class="dashboard-curriculum-block stage-block-ks2" id="block-ks2">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
-          <h3 class="section-title" id="ks2-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin: 0; display: flex; align-items: center; gap: 8px;">
-            <span style="background: #e0e7ff; color: #3730a3; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Key Stage 2</span>
-            World War II &amp; The Home Front (1939–1945)
-          </h3>
-          <a href="/units/ks2_ww2/index.html" target="_blank" style="background: #1e3a8a; color: #ffffff; padding: 6px 14px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(30,58,138,0.25); transition: background 0.15s ease;" onmouseover="this.style.background='#1d4ed8'" onmouseout="this.style.background='#1e3a8a'">
-            <i class="fa-solid fa-chalkboard-user"></i> Open KS2 Teacher Command Centre &amp; Showcase <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.68rem;"></i>
-          </a>
-        </div>
+        <h3 class="section-title" id="ks2-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+          <span style="background: #e0e7ff; color: #3730a3; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Key Stage 2</span>
+          World War II &amp; The Home Front (1939–1945)
+        </h3>
         <div class="modules-grid" style="margin-bottom: 2rem;">
     `;
     ks2Units.forEach(renderUnitCard);
@@ -831,37 +826,11 @@ export function extractUnitSelfQuizCards(unitData, topicFilter = 'all') {
           if (!seen.has(key)) {
             seen.add(key);
             cards.push({
-              q: `Historical definition: "${term}"`,
+              q: `Define: "${term}"`,
               a: def,
               topic: topicLabel,
               lessonId: l.id,
               type: 'vocab',
-            });
-          }
-        }
-      });
-    }
-
-    // 3. Quiz Questions
-    const qList = l.quiz || l.quick_quiz || l.quiz_questions || [];
-    if (Array.isArray(qList)) {
-      qList.forEach((item) => {
-        const q = item.q || item.question;
-        let a = item.a || item.answer;
-        if (typeof a === 'number' && item.options && item.options[a]) {
-          a = item.options[a];
-        }
-        if (q && a) {
-          const key = q.trim().toLowerCase();
-          if (!seen.has(key)) {
-            seen.add(key);
-            const explanation = item.explanation ? ` — ${item.explanation}` : '';
-            cards.push({
-              q,
-              a: `${a}${explanation}`,
-              topic: topicLabel,
-              lessonId: l.id,
-              type: 'quiz',
             });
           }
         }
@@ -1098,8 +1067,8 @@ export function renderInteractiveQuiz() {
         <!-- Mode Toggle Pills -->
         <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
           <button id="btn-mode-flashcards" type="button" class="self-quiz-mode-pill active" onclick="window.selfQuizSetMode('flashcards')">
-            <i class="fa-solid fa-bolt-lightning" style="color: #fef08a;"></i>
-            <span>Flashcard Deck</span>
+            <i class="fa-solid fa-layer-group" style="color: #6ee7b7;"></i>
+            <span>Vocab Cards</span>
             <span id="deck-card-count" style="background: rgba(255,255,255,0.25); color: #fff; font-size: 0.74rem; font-weight: 800; padding: 2px 7px; border-radius: 999px; margin-left: 2px;">
               ${allCards.length}
             </span>
@@ -1151,8 +1120,8 @@ export function renderInteractiveQuiz() {
             <div class="self-quiz-face self-quiz-front">
               <div>
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px;">
-                  <span style="background: #eef2ff; color: #4338ca; border: 1px solid #c7d2fe; font-size: 0.72rem; font-weight: 800; padding: 3px 9px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
-                    <i class="fa-regular fa-circle-question"></i> Question / Key Term
+                  <span style="background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; font-size: 0.72rem; font-weight: 800; padding: 3px 9px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
+                    <i class="fa-solid fa-book-bookmark"></i> Key Vocabulary &amp; Concept
                   </span>
                   <span style="font-size: 0.74rem; font-weight: 600; color: #94a3b8;">
                     Click to flip
@@ -1165,10 +1134,10 @@ export function renderInteractiveQuiz() {
 
               <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #f1f5f9; padding-top: 12px; margin-top: 14px;">
                 <span style="color: #64748b; font-size: 0.78rem;">
-                  <i class="fa-solid fa-arrows-rotate" style="color: #4f46e5; margin-right: 5px;"></i> Click card or press <strong>Space</strong> to reveal answer
+                  <i class="fa-solid fa-arrows-rotate" style="color: #059669; margin-right: 5px;"></i> Click card or press <strong>Space</strong> to reveal definition
                 </span>
-                <span id="fc-type-badge" style="font-size: 0.72rem; color: #94a3b8; font-weight: 600; text-transform: uppercase;">
-                  ${allCards[0]?.type || 'core'}
+                <span id="fc-type-badge" style="font-size: 0.72rem; color: #059669; font-weight: 700; text-transform: uppercase; background: #ecfdf5; padding: 2px 6px; border-radius: 4px;">
+                  ${allCards[0]?.type || 'vocab'}
                 </span>
               </div>
             </div>
@@ -1177,8 +1146,8 @@ export function renderInteractiveQuiz() {
             <div class="self-quiz-face self-quiz-back">
               <div>
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px;">
-                  <span style="background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; font-size: 0.72rem; font-weight: 800; padding: 3px 9px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
-                    <i class="fa-regular fa-circle-check"></i> Verified Answer &amp; Key Facts
+                  <span style="background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; font-size: 0.72rem; font-weight: 800; padding: 3px 9px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
+                    <i class="fa-solid fa-circle-check"></i> Definition &amp; Context
                   </span>
                   <span style="font-size: 0.74rem; font-weight: 600; color: #64748b;">
                     Click to flip back
@@ -1191,7 +1160,7 @@ export function renderInteractiveQuiz() {
 
               <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #e0e7ff; padding-top: 12px; margin-top: 14px;">
                 <span style="color: #4338ca; font-size: 0.78rem; font-weight: 600;">
-                  <i class="fa-solid fa-check" style="margin-right: 5px;"></i> Core Historical Knowledge
+                  <i class="fa-solid fa-book-open" style="margin-right: 5px;"></i> Curriculum Key Vocabulary
                 </span>
                 <span style="color: #64748b; font-size: 0.78rem;">
                   Rate your recall below ↓
