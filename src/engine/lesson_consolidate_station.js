@@ -696,6 +696,75 @@ function extractExitTicket(lesson, lessonIndex = 0) {
   }
 
   const vocabList = (lesson.vocab || []).slice(0, 3).map((v) => v.term).join(', ') || 'today\'s key terms';
+
+  const activeUnit = appStore?.state?.activeUnitData;
+  const activeUnitId = (activeUnit && activeUnit.id) || (typeof window !== 'undefined' && window.currentUnitId) || '';
+  const isKs2 = activeUnitId === 'ks2_ww2' || (activeUnit && activeUnit.stage === 'ks2') || Boolean(lesson && lesson.is_ks2);
+
+  // Dedicated KS2 Primary Exit Ticket Engine (Under-10 Accessible: Zero Adult Fallacy Jargon)
+  if (isKs2) {
+    const ks2Style = lessonIndex % 4;
+    if (ks2Style === 0) {
+      // KS2 Style 0: Sentence Builder with Word Bank
+      return {
+        title: 'Exit Ticket · Sentence Builder Challenge',
+        type_label: 'Exit Ticket · Sentence Builder',
+        prompt: `Finish this sentence in your own words to explain what you discovered today about <strong>${cleanEnquiry}</strong>:<br><div style="margin-top: 10px; padding: 12px 16px; background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 6px; font-size: 1.05rem; font-weight: 700; color: #1e3a8a;">&ldquo;Life for people in wartime Britain changed because...&rdquo;</div>`,
+        options: [
+          `Word Helper: Try to use at least one key word from today (e.g. ${vocabList}).`,
+          'Detail: Give one clear reason or true fact from the lesson.',
+          'Challenge: Explain how ordinary families or children felt about this change.'
+        ],
+        guidance: 'Write 1–2 clear sentences using your best handwriting and punctuation.',
+        model: `Sentence Starter: "Today I discovered that life on the Home Front changed because families had to adapt to new rules like the blackout and carrying gas masks everywhere to stay safe."`,
+        placeholder: 'Finish the sentence: Life for people in wartime Britain changed because...'
+      };
+    } else if (ks2Style === 1) {
+      // KS2 Style 1: Fact Detective (Myth Buster)
+      return {
+        title: 'Exit Ticket · Fact Detective',
+        type_label: 'Exit Ticket · Fact Detective',
+        prompt: `A classmate said: <em>&ldquo;During the war, ordinary people didn't need to do anything because soldiers fought the war all by themselves.&rdquo;</em><br><br>Be a <strong>History Detective</strong>! Why is this claim a <strong>MYTH</strong>?`,
+        options: [
+          'Fact Check: Explain what ordinary people had to do on the Home Front (e.g. volunteers, farmers, wardens, families).',
+          'Evidence: Give one real example from today\'s lesson proving how everyday people helped the country.'
+        ],
+        guidance: 'Write 1–2 sentences explaining why ordinary people were so important.',
+        model: `Detective Note: "This is a myth because millions of ordinary people volunteered as ARP wardens, joined the Land Army to grow food, or opened their homes to care for young evacuees."`,
+        placeholder: 'Explain why this is a myth using facts from today...'
+      };
+    } else if (ks2Style === 2) {
+      // KS2 Style 2: The 3-2-1 History Quick Check
+      return {
+        title: 'Exit Ticket · 3-2-1 History Check',
+        type_label: 'Exit Ticket · 3-2-1 Recall',
+        prompt: `Before you pack up your books, complete this quick 3-2-1 check for today's lesson on <strong>${cleanEnquiry}</strong>:`,
+        options: [
+          '3 Facts: Name three interesting facts you discovered today.',
+          `2 Words: Write down two historical words you used (e.g. ${vocabList}).`,
+          '1 Question: Write one question you would like to ask a child who lived through this time.'
+        ],
+        guidance: 'You can write in short sentences or bullet points.',
+        model: `1. Three facts: Gas masks came in cardboard boxes, streetlights were turned off, and families put up blackout curtains.\n2. Key words: Blackout and ARP Warden.\n3. My question: How did children feel when the air raid sirens started to wail?`,
+        placeholder: '1. Three facts I learned:\n2. Two key words:\n3. One question I still have:'
+      };
+    } else {
+      // KS2 Style 3: Postcard from the Past (Historical Voice)
+      return {
+        title: 'Exit Ticket · Postcard from the Past',
+        type_label: 'Exit Ticket · Historical Voice',
+        prompt: `Imagine you are living in Britain during the Second World War. Write a 2-sentence note in your diary or on a postcard to family about today's events: <strong>${cleanEnquiry}</strong>.`,
+        options: [
+          'What happened: Describe one real thing you saw, wore, or had to do today.',
+          'How you feel: Explain how you and your community are staying brave and helping out.'
+        ],
+        guidance: 'Write 2 sentences from the perspective of someone living through the war.',
+        model: `Postcard Message: "Today we had another gas mask drill at school and practised walking home safely under the blackout rules. Everyone is keeping calm and doing their bit to help the Home Front."`,
+        placeholder: 'Dear family, Today was unusual because...'
+      };
+    }
+  }
+
   const styleType = lessonIndex % 4;
 
   if (styleType === 0) {
@@ -769,14 +838,15 @@ export function renderConsolidateStationHTML(lesson) {
   const lessonIndex = lessonsList.findIndex((l) => l.id === lesson.id);
   const currentIdx = lessonIndex >= 0 ? lessonIndex : 0;
   const unitId = (activeUnit && activeUnit.id) || (typeof window !== 'undefined' && window.currentUnitId) || '';
+  const isKs2 = unitId === 'ks2_ww2' || (activeUnit && activeUnit.stage === 'ks2') || Boolean(lesson && lesson.is_ks2);
 
-  const livingTimeline = extractLivingTimelineMilestone(lesson, currentIdx);
+  const livingTimeline = isKs2 ? null : extractLivingTimelineMilestone(lesson, currentIdx);
   const exitTicket = extractExitTicket(lesson, currentIdx);
 
   const quizCount = rawQuiz.length;
   const vocabCount = rawVocab.length;
   const dominoCount = milestones.length;
-  const hasTimeline = Boolean(livingTimeline);
+  const hasTimeline = !isKs2 && Boolean(livingTimeline);
   const hasExitTicket = Boolean(exitTicket);
   const hasArena = (vocabCount > 0 || (lesson.causal_domino_spine && lesson.causal_domino_spine.stages && lesson.causal_domino_spine.stages.length > 0));
 
@@ -810,7 +880,9 @@ export function renderConsolidateStationHTML(lesson) {
               ${savedScoreBadge}
             </div>
             <p style="margin: 3px 0 0 0; color: #64748b; font-size: 0.85rem;">
-              Centrefold Timeline &bull; Retrieval Quiz &bull; Vocabulary Cards &bull; Chrono Domino &bull; Exit Ticket &bull; Classroom Arena
+              ${isKs2 
+                ? 'Lesson Quiz &bull; Vocabulary Cards &bull; Chrono Domino &bull; Primary Exit Ticket &bull; Classroom Arena'
+                : 'Centrefold Timeline &bull; Retrieval Quiz &bull; Vocabulary Cards &bull; Chrono Domino &bull; Exit Ticket &bull; Classroom Arena'}
             </p>
           </div>
         </div>
@@ -867,8 +939,9 @@ export function initConsolidateStation(lesson) {
   const lessonIndex = lessonsList.findIndex((l) => l.id === lesson.id);
   const currentIdx = lessonIndex >= 0 ? lessonIndex : 0;
   const unitId = (activeUnit && activeUnit.id) || (typeof window !== 'undefined' && window.currentUnitId) || '';
+  const isKs2 = unitId === 'ks2_ww2' || (activeUnit && activeUnit.stage === 'ks2') || Boolean(lesson && lesson.is_ks2);
 
-  const livingTimeline = extractLivingTimelineMilestone(lesson, currentIdx);
+  const livingTimeline = isKs2 ? null : extractLivingTimelineMilestone(lesson, currentIdx);
   const exitTicket = extractExitTicket(lesson, currentIdx);
 
   if (rawQuiz.length === 0 && rawVocab.length === 0 && milestones.length === 0 && !livingTimeline && !exitTicket) return;
@@ -877,8 +950,8 @@ export function initConsolidateStation(lesson) {
   const allVocab = normalizeVocab(rawVocab);
   const shuffledMilestones = shuffleDominoMilestones(milestones);
 
-  // Living Timeline is the DEFAULT tab (pedagogical pen-in-hand transition)
-  let initialMode = livingTimeline ? 'timeline' : (allQuestions.length > 0 ? 'quiz' : 'vocab');
+  // Living Timeline is the DEFAULT tab for KS3/GCSE, but KS2 defaults to Lesson Quiz (or Domino)
+  let initialMode = livingTimeline ? 'timeline' : (allQuestions.length > 0 ? 'quiz' : (milestones.length > 0 ? 'domino' : 'vocab'));
 
   // Load saved exit ticket text
   let savedExitText = '';
@@ -910,6 +983,7 @@ export function initConsolidateStation(lesson) {
 
   const state = {
     lessonId: lesson.id,
+    isKs2,
     mode: initialMode, // 'timeline' | 'quiz' | 'vocab' | 'domino' | 'exit' | 'arena'
     totalLessons: lessonsList.length || 5,
     allQuestions,
@@ -1595,7 +1669,7 @@ function renderExitTicketView(state, bodyEl) {
             ${counts.sentences} sentence${counts.sentences === 1 ? '' : 's'} &bull; ${counts.words} words
           </span>
         </div>
-        <textarea id="exit-ticket-input-${state.lessonId}" oninput="window.handleExitTicketInput('${state.lessonId}', this.value)" placeholder="Type your 1–2 sentence historical verdict here before packing up..." style="width: 100%; min-height: 105px; padding: 12px 14px; border: 1.5px solid ${state.exitSubmitted ? '#86efac' : '#cbd5e1'}; border-radius: 10px; font-family: 'Inter', sans-serif; font-size: 0.95rem; line-height: 1.55; box-sizing: border-box; background: ${state.exitSubmitted ? '#f0fdf4' : '#ffffff'}; color: #0f172a; resize: vertical;">${state.exitResponse || ''}</textarea>
+        <textarea id="exit-ticket-input-${state.lessonId}" oninput="window.handleExitTicketInput('${state.lessonId}', this.value)" placeholder="${et.placeholder || (state.isKs2 ? 'Write your answer here...' : 'Type your 1–2 sentence historical verdict here before packing up...')}" style="width: 100%; min-height: 105px; padding: 12px 14px; border: 1.5px solid ${state.exitSubmitted ? '#86efac' : '#cbd5e1'}; border-radius: 10px; font-family: 'Inter', sans-serif; font-size: 0.95rem; line-height: 1.55; box-sizing: border-box; background: ${state.exitSubmitted ? '#f0fdf4' : '#ffffff'}; color: #0f172a; resize: vertical;">${state.exitResponse || ''}</textarea>
       </div>
 
       <!-- Action Bar with Compare with Model Verdict Toggle -->
@@ -1606,7 +1680,7 @@ function renderExitTicketView(state, bodyEl) {
           </button>
           ${state.exitSubmitted ? `
             <button type="button" onclick="window.toggleStationExitModel('${state.lessonId}')" style="background: #ffffff; border: 1.5px solid #059669; color: #047857; font-weight: 700; font-size: 0.88rem; padding: 9px 16px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;">
-              <i class="fa-solid fa-award"></i> ${state.showExitModel ? 'Hide Model Verdict' : 'Compare with Model Verdict'}
+              <i class="fa-solid fa-award"></i> ${state.showExitModel ? (state.isKs2 ? 'Hide Model Answer' : 'Hide Model Verdict') : (state.isKs2 ? 'Compare with Model Answer' : 'Compare with Model Verdict')}
             </button>
           ` : ''}
         </div>
@@ -1622,7 +1696,7 @@ function renderExitTicketView(state, bodyEl) {
       ${state.showExitModel && et.model ? `
         <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 10px; padding: 16px 20px; animation: fadeIn 0.25s ease;">
           <div style="font-size: 0.8rem; text-transform: uppercase; font-weight: 800; color: #166534; letter-spacing: 0.05em; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-graduation-cap"></i> Historian's Model Verdict &amp; Criteria:
+            <i class="fa-solid fa-graduation-cap"></i> ${state.isKs2 ? "Teacher's Model Answer & Example:" : "Historian's Model Verdict & Criteria:"}
           </div>
           <p style="margin: 0; color: #14532d; font-size: 0.95rem; line-height: 1.6; font-family: 'Inter', sans-serif;">
             ${formatMarkdown(et.model)}

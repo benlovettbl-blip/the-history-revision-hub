@@ -101906,35 +101906,35 @@
               {
                 "step": 1,
                 "para_ref": "[1.1]",
-                "date": "3 September 1939",
-                "title": "The Sunday Wireless Broadcast",
-                "actor": "Neville Chamberlain",
-                "tag": "📻 OUTBREAK",
-                "trigger": "Prime Minister Neville Chamberlain announced over the BBC wireless radio that Britain was at war with Germany following Hitler's invasion of Poland.",
-                "connective": "Triggered immediate nationwide civil defence preparations, sounding air raid sirens across London within minutes of the broadcast.",
-                "question": "How did Chamberlain's radio broadcast transform ordinary family life on a quiet Sunday morning?"
-              },
-              {
-                "step": 2,
-                "para_ref": "[1.3]",
-                "date": "Autumn 1939",
-                "title": "The Cardboard Gas Mask Box",
+                "date": "Summer 1939",
+                "title": "Preparing for Danger: 38 Million Gas Masks Distributed",
                 "actor": "British Civilians & Children",
-                "tag": "📦 PROTECTION",
-                "trigger": "The government issued over 38 million civilian gas masks in cardboard boxes slung over shoulders, fearing devastating aerial gas attacks.",
+                "tag": "📦 PREPARATION",
+                "trigger": "Before war was declared, the government handed out 38 million civilian gas masks in cardboard boxes slung over shoulders, fearing deadly poison gas attacks.",
                 "connective": "Carrying the box everywhere became mandatory for school attendance and travel, visibly transforming British children into wartime citizens.",
                 "question": "Why was carrying a cardboard gas mask box an inescapable daily reminder of war?"
               },
               {
+                "step": 2,
+                "para_ref": "[1.3]",
+                "date": "3 September 1939",
+                "title": "War Declared: Chamberlain's Sunday Radio Broadcast",
+                "actor": "Neville Chamberlain",
+                "tag": "📻 OUTBREAK",
+                "trigger": "Prime Minister Neville Chamberlain broadcast to the nation at 11:15am that Britain was now at war with Germany following Hitler's invasion of Poland.",
+                "connective": "Triggered immediate nationwide civil defence preparations, sounding air raid sirens across London within minutes of the broadcast.",
+                "question": "How did Chamberlain's radio broadcast transform ordinary family life on a quiet Sunday morning?"
+              },
+              {
                 "step": 3,
                 "para_ref": "[1.5]",
-                "date": "September 1939 onwards",
-                "title": "The Total Blackout & ARP Wardens",
+                "date": "Winter 1939–1940",
+                "title": "The Pitch-Black Streets & ARP Patrols",
                 "actor": "ARP Wardens & Householders",
                 "tag": "🚨 BLACKOUT",
-                "trigger": "Thick blackout curtains, car headlight hoods, and extinguished street lamps plunged Britain into total darkness every night.",
-                "connective": "Required 1.4 million civilian Air Raid Precautions (ARP) wardens to patrol streets, ensuring no light betrayed towns to German bombers.",
-                "question": "What challenges did ordinary families face living in pitch-black streets every night?"
+                "trigger": "Strict blackout rules forced every family to cover windows with black curtains, while 1.4 million ARP wardens patrolled the dark streets to hide towns from night bombers.",
+                "connective": "Transformed everyday evening routines and forced millions to navigate pitch-black streets using dimmed torches and white-painted kerbs.",
+                "question": "How did total darkness test community discipline and mutual trust during wartime nights?"
               }
             ]
           },
@@ -102493,41 +102493,41 @@
             }
           ],
           "causal_domino_spine": {
-            "title": "Operation Pied Piper Spine",
-            "subtitle": "The Colossal Journey of 1.5 Million Children from City Slums to Country Farms",
+            "title": "Operation Pied Piper Causal Spine",
+            "subtitle": "From City Departure to Rural Billeting and Cultural Transformation",
             "stages": [
               {
                 "step": 1,
                 "para_ref": "[2.1]",
                 "date": "1 September 1939",
-                "title": "The Great Station Exodus",
-                "actor": "1.5 Million Schoolchildren & Teachers",
+                "title": "The Great Station Exodus: Operation Pied Piper Begins",
+                "actor": "British Schoolchildren & Teachers",
                 "tag": "🚂 DEPARTURE",
-                "trigger": "The British government launched Operation Pied Piper, gathering thousands of children with brown luggage labels at city railway stations.",
-                "connective": "Emptied urban classrooms in three days, sending trains of bewildered youngsters away from parents into the countryside for safety.",
-                "question": "Why did the British government feel it was essential to separate children from their parents?"
+                "trigger": "Over 1.5 million children and mothers with luggage tags pinned to their coats boarded steam trains from crowded city stations to escape feared bombing.",
+                "connective": "Carried urban working-class children into remote countryside villages they had never imagined or visited before.",
+                "question": "Why did the government move children out of cities before a single bomb had fallen?"
               },
               {
                 "step": 2,
                 "para_ref": "[2.3]",
-                "date": "September 1939",
-                "title": "The Billeting Hall Lottery",
+                "date": "Autumn 1939",
+                "title": "The Village Hall Billeting Selection",
                 "actor": "Host Families & Billeting Officers",
                 "tag": "🏷️ SELECTION",
-                "trigger": "Weary evacuees arrived in village halls where local residents inspected them and chose which children to take into their homes.",
-                "connective": "Created an emotionally fraught lottery where siblings were sometimes separated and children faced anxious uncertainty.",
-                "question": "Why was the billeting hall experience often the most traumatic moment of evacuation for young children?"
+                "trigger": "Tired evacuees lined up in rural village halls where local householders inspected them and chose which children they would take home.",
+                "connective": "Determined children’s living conditions, separating brothers and sisters and creating profound emotional anxiety.",
+                "question": "What made the billeting hall experience feel humiliating and frightening for young evacuees?"
               },
               {
                 "step": 3,
                 "para_ref": "[2.5]",
-                "date": "1939–1940",
-                "title": "Culture Shock & Rural Discoveries",
-                "actor": "Evacuees & Countryside Communities",
-                "tag": "🌾 CULTURE SHOCK",
-                "trigger": "City children from industrial cobbled streets encountered indoor bathrooms, apple orchards, live cows, and fresh milk for the first time.",
-                "connective": "Exposed deep social divides between city poverty and rural wealth, permanently changing attitudes and fostering lasting bonds.",
-                "question": "How did evacuation open the eyes of British society to the realities of urban poverty?"
+                "date": "1940 Onwards",
+                "title": "Settling into Rural Life: Farms & Green Fields",
+                "actor": "Evacuees & Country Communities",
+                "tag": "🌾 INTEGRATION",
+                "trigger": "City children adapted to farm life, tasting fresh cow milk, wearing wellington boots, and learning rural routines far from home.",
+                "connective": "Exposed stark inequalities between urban and rural Britain, creating lasting social understanding across social classes.",
+                "question": "How did living on farms reshape urban children’s understanding of Britain?"
               }
             ]
           },
@@ -103087,41 +103087,41 @@
             }
           ],
           "causal_domino_spine": {
-            "title": "The Kindertransport Spine",
-            "subtitle": "The Rescue of 10,000 Jewish Children to Safety in Britain (1938–1939)",
+            "title": "Kindertransport Rescue Spine",
+            "subtitle": "From the November Pogrom to Prague Departure and London Sanctuary",
             "stages": [
               {
                 "step": 1,
                 "para_ref": "[3.1]",
                 "date": "November 1938",
-                "title": "The Decision to Open Britain's Doors",
-                "actor": "British Parliament & Jewish Relief Agencies",
-                "tag": "🏛️ RESCUE CHARTER",
-                "trigger": "Following the violence of Kristallnacht in November 1938, the British parliament agreed to admit unaccompanied child refugees under 17.",
-                "connective": "Created an urgent humanitarian lifeline allowing refugee charities to raise £50 per child and arrange emergency transport.",
-                "question": "What prompted the British government to change its immigration rules for child refugees after November 1938?"
+                "title": "Britain Opens Its Doors to 10,000 Child Refugees",
+                "actor": "British Parliament & Volunteers",
+                "tag": "🕊️ RESCUE",
+                "trigger": "Following the violence of Kristallnacht, the British Parliament agreed to permit 10,000 unaccompanied refugee children to seek sanctuary in Britain.",
+                "connective": "Enabled rescue networks to organise special charter trains before Nazi borders sealed completely.",
+                "question": "Why did the British government agree to rescue refugee children but exclude their parents?"
               },
               {
                 "step": 2,
                 "para_ref": "[3.3]",
                 "date": "May 1939",
-                "title": "Vera's Small Suitcase in Prague",
-                "actor": "Vera Schaufeld & Her Parents",
+                "title": "Vera Packs One Small Suitcase in Prague",
+                "actor": "Vera Schaufeld & Parents",
                 "tag": "🧳 FAREWELL",
-                "trigger": "In Prague, nine-year-old Vera Schaufeld packed a small suitcase with her English doll and family photos as her parents made the heartbreaking sacrifice to send her away.",
-                "connective": "Demanded an agonizing parting from parents who sent their children into the unknown, promising they would reunite once the danger passed.",
-                "question": "What does Vera's small suitcase reveal about the agonizing choices Jewish families were forced to make?"
+                "trigger": "Ten-year-old Vera Schaufeld packed a single small suitcase, said goodbye to her parents at Prague station, and boarded the rescue train.",
+                "connective": "Preserved her life while representing the final, heartbreaking parting from parents she would never see again.",
+                "question": "How did packing just one suitcase symbolise both salvation and profound loss?"
               },
               {
                 "step": 3,
                 "para_ref": "[3.5]",
                 "date": "Summer 1939",
                 "title": "Arrival at Liverpool Street Station",
-                "actor": "Kindertransport Children & British Foster Families",
-                "tag": "🚉 NEW LIFE",
-                "trigger": "After crossing borders under armed Nazi inspection and boarding North Sea ferries, ten thousand children arrived at London's Liverpool Street Station.",
-                "connective": "Gave sanctuary to children who grew up to contribute immensely to British life, though the vast majority never saw their parents again.",
-                "question": "Why is the arrival at Liverpool Street remembered as both a moment of salvation and deep loneliness?"
+                "actor": "Refugee Children & Foster Guardians",
+                "tag": "🇬🇧 SANCTUARY",
+                "trigger": "Exhausted children arrived at London Liverpool Street Station, wearing luggage tags around their necks to meet their foster families.",
+                "connective": "Secured the survival of nearly 10,000 children while leaving them to rebuild their identities in a foreign land.",
+                "question": "What challenges did refugee children face in adapting to life in wartime Britain?"
               }
             ]
           },
@@ -103681,41 +103681,41 @@
             }
           ],
           "causal_domino_spine": {
-            "title": "The Blitz Chronological Spine",
-            "subtitle": "57 Nights of Fire, Anderson Shelters, and the Underground Platform Dormitories",
+            "title": "The Blitz & Air Raids Spine",
+            "subtitle": "From Garden Anderson Shelters to 57 Nights of Fire and Tube Sanctuary",
             "stages": [
               {
                 "step": 1,
                 "para_ref": "[4.1]",
-                "date": "7 September 1940",
-                "title": "Black Saturday & 57 Nights of Fire",
-                "actor": "German Luftwaffe & London Civilians",
-                "tag": "🔥 BOMBARDMENT",
-                "trigger": "Over 300 German bombers escorted by 600 fighter planes attacked London's East End docks, beginning 57 consecutive nights of bombing known as The Blitz.",
-                "connective": "Tested the endurance of ordinary civilians as homes, schools, and factories were reduced to rubble across industrial cities nationwide.",
-                "question": "Why did the German Luftwaffe shift from attacking RAF airfields to bombing civilian cities?"
+                "date": "1939",
+                "title": "Backyard Anderson Shelters Installed",
+                "actor": "British Householders & Municipal Engineers",
+                "tag": "🛠️ SHELTER",
+                "trigger": "The government distributed over 1.5 million corrugated steel Anderson shelters, which families dug into garden soil and covered with earth for protection.",
+                "connective": "Provided immediate protection against flying shrapnel and blast waves right in family back gardens.",
+                "question": "Why was the Anderson shelter designed for self-assembly in family gardens?"
               },
               {
                 "step": 2,
                 "para_ref": "[4.3]",
-                "date": "Autumn 1940",
-                "title": "Anderson & Morrison Backyard Shelters",
-                "actor": "British Families",
-                "tag": "🛡️ SHELTER",
-                "trigger": "Millions of families erected corrugated steel Anderson shelters in garden soil, or assembled steel-caged Morrison tables inside their homes.",
-                "connective": "Provided essential protection against flying shrapnel and falling masonry, saving tens of thousands of lives despite freezing conditions.",
-                "question": "How did domestic shelters allow ordinary families to survive night after night of aerial bombardment?"
+                "date": "September 1940",
+                "title": "The Blitz Hits London: 57 Consecutive Nights of Bombing",
+                "actor": "Luftwaffe Bomber Fleets",
+                "tag": "🔥 ATTACK",
+                "trigger": "On 7 September 1940 ('Black Saturday'), hundreds of German bombers attacked London docks, starting 57 straight nights of relentless air raids.",
+                "connective": "Tested civilian endurance to its limit and destroyed over a million homes across British industrial cities.",
+                "question": "How did civilian morale withstand 57 consecutive nights of bombardment?"
               },
               {
                 "step": 3,
                 "para_ref": "[4.5]",
                 "date": "Winter 1940–1941",
-                "title": "Underground Platforms & Volunteer Fire Watchers",
-                "actor": "London Commuters & Civilian Volunteers",
-                "tag": "🚇 BLITZ SPIRIT",
-                "trigger": "Over 175,000 Londoners bought tickets each night to sleep on deep Underground tube platforms, while fire watchers patrolled rooftops extinguishing bombs.",
-                "connective": "Forged the legendary 'Blitz Spirit' of mutual solidarity, defying Hitler's strategic goal of breaking civilian morale through terror.",
-                "question": "In what ways did sheltering on Underground platforms foster community spirit during the Blitz?"
+                "title": "Sheltering on Underground Platforms & Rooftop Fire Watching",
+                "actor": "London Underground Shelters & Fire Watchers",
+                "tag": "🚇 ENDURANCE",
+                "trigger": "Over 150,000 Londoners slept on tube station platforms every night, while brave fire watchers patrolled rooftops with sandbags to put out incendiary bombs.",
+                "connective": "Forged the iconic Blitz Spirit, proving that civilian solidarity could overcome industrial air warfare.",
+                "question": "Why did the Underground platforms become symbols of collective civilian resilience?"
               }
             ]
           },
@@ -104275,41 +104275,41 @@
             }
           ],
           "causal_domino_spine": {
-            "title": "Food & Farming Home Front Spine",
-            "subtitle": "The Atlantic Lifeline, Ration Books, and Allotment Gardening",
+            "title": "Rationing & Dig for Victory Spine",
+            "subtitle": "From U-Boat Blockades to Ration Books and Allotment Cultivation",
             "stages": [
               {
                 "step": 1,
                 "para_ref": "[5.1]",
                 "date": "Autumn 1939",
-                "title": "The Atlantic Supply Lifeline Under Siege",
-                "actor": "German U-Boats & Merchant Navy",
-                "tag": "🚢 SUPPLY THREAT",
-                "trigger": "Nazi U-boats attacked Allied merchant convoys crossing the Atlantic, threatening to starve an island nation that imported 70% of its food.",
-                "connective": "Forced the British government to take unprecedented total control over the national food supply, agriculture, and dietary consumption.",
-                "question": "Why was Britain uniquely vulnerable to maritime blockades in 1939?"
+                "title": "Danger on the Atlantic: U-Boats Threaten Merchant Ships",
+                "actor": "German U-Boat Wolfpacks",
+                "tag": "⚓ BLOCKADE",
+                "trigger": "German submarines attacked merchant shipping crossing the Atlantic, threatening Britain with starvation because the country imported 70% of its food.",
+                "connective": "Forced the government to take total control over domestic food distribution, agriculture, and civilian diets.",
+                "question": "Why was Atlantic merchant shipping considered Britain’s most vulnerable lifeline?"
               },
               {
                 "step": 2,
                 "para_ref": "[5.3]",
-                "date": "8 January 1940",
-                "title": "Ration Books: Fair Shares for All",
-                "actor": "Ministry of Food & British Households",
-                "tag": "📖 RATION BOOK",
-                "trigger": "The Ministry of Food introduced coupons for butter, sugar, bacon, meat, and eggs, guaranteeing that wealth could not buy extra basic food.",
-                "connective": "Equalized British nutrition so that working-class children in poor neighbourhoods actually ate healthier diets during wartime than in the 1930s.",
-                "question": "How did the ration book ensure fairness and improve the basic health of British children?"
+                "date": "January 1940",
+                "title": "Ration Books Arrive: Fair Shares for All",
+                "actor": "Ministry of Food & Civilians",
+                "tag": "📖 EQUALITY",
+                "trigger": "The government introduced food rationing coupon books, strictly limiting bacon, butter, and sugar so every family received an equal fair share.",
+                "connective": "Prevented wealthy families from hoarding food, dramatically improving baseline nutrition among Britain’s poorest children.",
+                "question": "How did the rationing coupon system create a sense of national equality on the Home Front?"
               },
               {
                 "step": 3,
                 "para_ref": "[5.5]",
-                "date": "1940–1945",
-                "title": "Dig for Victory: Turning Lawns into Allotments",
-                "actor": "British Gardeners & Allotment Holders",
-                "tag": "🌱 ALLOTMENTS",
-                "trigger": "Millions of citizens dug up domestic flowerbeds, parks, railway embankments, and the Tower of London moat to grow potatoes, carrots, and cabbages.",
-                "connective": "Produced millions of tons of homegrown vegetables, defeating the U-boat blockade and freeing precious cargo ships to carry war munitions.",
-                "question": "How did the 'Dig for Victory' campaign empower ordinary children and families to fight the war in their own gardens?"
+                "date": "1941–1945",
+                "title": "Dig for Victory! Lawns and Parks Turned into Allotments",
+                "actor": "Civilians, Schools & Gardeners",
+                "tag": "🥕 SELF-RELIANCE",
+                "trigger": "Millions of families dug up flowerbeds, lawns, and sports pitches to grow carrots, potatoes, and cabbages to feed the nation.",
+                "connective": "Turned every garden into an agricultural weapon and made civilians active participants in winning the war.",
+                "question": "How did \"Dig for Victory\" make children and families feel like active defenders of Britain?"
               }
             ]
           },
@@ -104869,41 +104869,41 @@
             }
           ],
           "causal_domino_spine": {
-            "title": "Women's Mobilisation Spine",
-            "subtitle": "The National Call-Up, Women's Land Army, and Munitions Factories",
+            "title": "Women's Wartime Mobilisation Spine",
+            "subtitle": "From Land Army Volunteers to Aircraft Production and Conscription",
             "stages": [
               {
                 "step": 1,
                 "para_ref": "[6.1]",
-                "date": "December 1941",
-                "title": "The National Service Act: Conscription of Women",
-                "actor": "British Parliament & Unmarried Women",
-                "tag": "📜 CONSCRIPTION",
-                "trigger": "Britain became the first democracy in history to conscript women into national service, calling up unmarried women aged 20 to 30.",
-                "connective": "Mobilised over 7 million women into military auxiliary units, farm labour, civil defence, and manufacturing, keeping the nation functioning.",
-                "question": "Why was the conscription of women in 1941 a revolutionary milestone in British history?"
+                "date": "1939",
+                "title": "The Women's Land Army Formed: Feeding the Nation",
+                "actor": "Women's Land Army ('Land Girls')",
+                "tag": "🌾 HARVEST",
+                "trigger": "Over 80,000 young women volunteered for the Women's Land Army, leaving cities to milk cows, drive tractors, and harvest crops on British farms.",
+                "connective": "Prevented national starvation and challenged traditional perceptions of rural agricultural work.",
+                "question": "How did Land Girls prove their resilience in demanding agricultural jobs?"
               },
               {
                 "step": 2,
                 "para_ref": "[6.3]",
-                "date": "1939–1945",
-                "title": "The Women's Land Army: Feeding the Nation",
-                "actor": "80,000 Land Girls",
-                "tag": "🚜 LAND ARMY",
-                "trigger": "Eighty thousand young women joined the Women's Land Army, swapping city clothes for corduroy breeches, woollen jumpers, and heavy boots to work farm fields.",
-                "connective": "Drove tractors, milked herds, cleared ditches, and harvested crops, ensuring British agriculture produced record grain yields without male farmhands.",
-                "question": "What challenges did urban women face when adapting to exhausting physical labour in the countryside?"
+                "date": "1940",
+                "title": "Canary Girls & Ferry Pilots: Building and Flying Planes",
+                "actor": "Factory Workers & Air Transport Auxiliary Pilots",
+                "tag": "✈️ PRODUCTION",
+                "trigger": "Women built shells and Lancaster bombers in factories, while brave pilots of the Air Transport Auxiliary ferried Spitfires from assembly lines to airfields.",
+                "connective": "Proved women could master complex mechanical and aviation roles previously reserved solely for men.",
+                "question": "Why were female ferry pilots and munitions workers vital to RAF air superiority?"
               },
               {
                 "step": 3,
                 "para_ref": "[6.5]",
-                "date": "1940–1945",
-                "title": "Canary Girls & Spitfire Ferry Pilots",
-                "actor": "Munitions Workers & ATA Pilots",
-                "tag": "✈️ FACTORY & FLIGHT",
-                "trigger": "Hundreds of thousands of women filled shells with toxic cordite (turning their skin bright yellow as 'Canary Girls') or flew unarmed Spitfires with the ATA.",
-                "connective": "Directly supplied the frontline armed forces with weapons, aircraft, and ammunition, permanently shattering sexist assumptions about women's capability.",
-                "question": "How did the dangerous work of 'Canary Girls' and ATA pilots alter societal perceptions of women?"
+                "date": "December 1941",
+                "title": "The National Service Act: Conscription of Women",
+                "actor": "British Coalition Government",
+                "tag": "📜 CONSCRIPTION",
+                "trigger": "For the first time in British history, the government conscripted unmarried women aged 20 to 30 into war work, anti-aircraft radar units, and factories.",
+                "connective": "Mobilised 90% of single women into war service, transforming gender roles and female workplace equality permanently.",
+                "question": "Why was conscripting women a revolutionary turning point in British social history?"
               }
             ]
           },
@@ -105464,41 +105464,41 @@
             }
           ],
           "causal_domino_spine": {
-            "title": "Erosion of Civil Rights Spine",
-            "subtitle": "Vibrant Jewish Communities, the Nuremberg Laws, and Segregated Classrooms",
+            "title": "Pre-War Life & Persecution Spine",
+            "subtitle": "From Thriving Communities to Systematic Marginalisation and School Expulsion",
             "stages": [
               {
                 "step": 1,
                 "para_ref": "[7.1]",
                 "date": "Pre-1933",
-                "title": "Vibrant European Jewish Communities",
-                "actor": "European Jewish Families",
-                "tag": "🌍 DIVERSITY",
-                "trigger": "Over nine million Jewish citizens lived across Europe as integrated neighbours, attending school, playing sports, writing books, and practicing their traditions.",
-                "connective": "Sustained centuries of intellectual, artistic, and community achievements across major capitals and countryside towns.",
-                "question": "What does pre-war family photography teach us about Jewish life in Europe before Nazi rule?"
+                "title": "Thriving Communities Across Europe",
+                "actor": "European Jewish Families & Children",
+                "tag": "✡️ COMMUNITY",
+                "trigger": "Before Nazi rule, over nine million Jewish people lived across Europe as doctors, shopkeepers, teachers, and schoolchildren deeply rooted in their communities.",
+                "connective": "Demonstrated the rich cultural, educational, and civic fabric of Jewish European life before totalitarian destruction.",
+                "question": "Why is it essential to learn about Jewish life and culture before the outbreak of persecution?"
               },
               {
                 "step": 2,
                 "para_ref": "[7.3]",
-                "date": "1933–1938",
-                "title": "The Step-by-Step Stripping of Rights",
-                "actor": "Nazi State Authorities",
-                "tag": "⚖️ DISCRIMINATION",
-                "trigger": "Through over 400 discriminatory decrees, including the 1935 Nuremberg Laws, the Nazi regime systematically stripped German Jews of citizenship and careers.",
-                "connective": "Banned Jews from parks, benches, swimming pools, and professions, socially isolating families before total physical persecution began.",
-                "question": "Why did the Nazi regime strip Jewish rights gradually in small steps rather than all at once?"
+                "date": "1935–1938",
+                "title": "Rights Stripped Away by Nazi Decrees",
+                "actor": "Nazi State Bureaucracy",
+                "tag": "⚠️ PERSECUTION",
+                "trigger": "Step-by-step Nazi laws banned Jewish families from parks, swimming pools, owning radios, and carrying out professional jobs.",
+                "connective": "Gradually isolated Jewish families from their neighbours, normalising discrimination long before physical deportations began.",
+                "question": "How did gradual, legalised discrimination make resistance increasingly difficult for ordinary families?"
               },
               {
                 "step": 3,
                 "para_ref": "[7.5]",
-                "date": "15 November 1938",
-                "title": "Expelled from the Classroom",
-                "actor": "Jewish Schoolchildren & Teachers",
-                "tag": "🎒 EXCLUSION",
-                "trigger": "Following Kristallnacht, the Nazi government officially expelled every Jewish pupil from German state schools and universities.",
-                "connective": "Severed childhood friendships overnight and forced Jewish children into segregated classrooms, leaving them vulnerable to deportation.",
-                "question": "How did exclusion from schools and sports clubs affect the daily lives of Jewish young people?"
+                "date": "November 1938",
+                "title": "Expelled from Classrooms: Jewish Children Banned from School",
+                "actor": "Ministry of Education Decrees",
+                "tag": "🚫 EXCLUSION",
+                "trigger": "On 15 November 1938, a brutal decree banned all Jewish children from attending state schools, cutting them off from their classmates and teachers.",
+                "connective": "Shattered children’s friendships and daily security, signalling the total expulsion of Jewish people from German public life.",
+                "question": "Why was banning children from schools particularly devastating for young people’s identities?"
               }
             ]
           },
@@ -106058,40 +106058,40 @@
           ],
           "causal_domino_spine": {
             "title": "Bletchley Park Codebreaking Spine",
-            "subtitle": "The Enigma Machine, Alan Turing's Bombe, and the Wrens of Station X",
+            "subtitle": "From the Enigma Challenge to Alan Turing’s Bombe and the Secret Army of Wrens",
             "stages": [
               {
                 "step": 1,
                 "para_ref": "[8.1]",
                 "date": "1939",
-                "title": "The Enigma Machine: 158 Million Million Settings",
-                "actor": "German Military Signal Corps",
-                "tag": "⚙️ CIPHER",
-                "trigger": "The German armed forces relied on the electro-mechanical Enigma machine to scramble military signals into billions of changing combinations.",
-                "connective": "Convinced German high commanders that their top-secret tactical plans, submarine coordinates, and orders were completely unbreakable.",
-                "question": "Why did German military commanders believe the Enigma cipher was impossible to break?"
+                "title": "The German Enigma Machine: 158 Million Million Settings",
+                "actor": "German Military Command",
+                "tag": "🔐 CIPHER",
+                "trigger": "The German military used typewriter-like Enigma machines to scramble secret battle orders with 158 million million possible daily settings.",
+                "connective": "Convinced German commanders their battle plans were mathematically unbreakable, creating a false sense of security.",
+                "question": "Why did the German military believe the Enigma cipher was impossible for enemies to decode?"
               },
               {
                 "step": 2,
                 "para_ref": "[8.3]",
                 "date": "1940",
-                "title": "Station X & Alan Turing's Electro-Mechanical Bombe",
-                "actor": "Alan Turing & Gordon Welchman",
-                "tag": "💡 GENIUS",
-                "trigger": "Mathematician Alan Turing set up Hut 8 at Bletchley Park, designing the 'Bombe' machine to test thousands of Enigma rotor combinations in minutes.",
-                "connective": "Decrypted top-secret German naval messages (codenamed Ultra), revealing U-boat positions and safeguarding vital Atlantic food and troop convoys.",
-                "question": "How did Alan Turing's mechanical Bombe revolutionize the speed of codebreaking?"
+                "title": "Alan Turing's Bombe Machine Decodes Ciphers at Station X",
+                "actor": "Alan Turing & Station X Cryptanalysts",
+                "tag": "⚙️ DECODER",
+                "trigger": "Mathematician Alan Turing and Gordon Welchman built the electro-mechanical Bombe machine at Bletchley Park, cracking the naval code.",
+                "connective": "Allowed British intelligence to intercept secret U-boat coordinates, transforming the course of the Battle of the Atlantic.",
+                "question": "How did Turing’s Bombe machine replace human mathematical guesswork with mechanical speed?"
               },
               {
                 "step": 3,
                 "para_ref": "[8.5]",
                 "date": "1941–1945",
-                "title": "The Secret Army of Women: 75% of Bletchley's Workforce",
-                "actor": "Wrens & Civilian Cryptanalysts",
-                "tag": "🤫 ULTRA SECRET",
-                "trigger": "Over 7,500 women operated the deafening Bombe machines, transcribed Morse code intercepted from radio towers, and cross-referenced card index archives.",
-                "connective": "Kept the codebreaking secret for thirty years after the war, directly shortening World War II by an estimated two to four years.",
-                "question": "Why was the total secrecy maintained by Bletchley's female workforce crucial to Allied victory?"
+                "title": "The Secret Army of Wrens: 75% of Bletchley’s Workforce",
+                "actor": "Women's Royal Naval Service (Wrens) & Cryptanalysts",
+                "tag": "🤫 SECRECY",
+                "trigger": "Over 8,000 women (Wrens and civilians) worked in secret wooden huts day and night operating machines, shortening the war by an estimated two years.",
+                "connective": "Saved hundreds of thousands of lives while strictly keeping their top-secret contribution concealed for over thirty years.",
+                "question": "Why was the absolute secrecy of Bletchley Park workers vital to Allied victory?"
               }
             ]
           },
@@ -106651,41 +106651,41 @@
             }
           ],
           "causal_domino_spine": {
-            "title": "Prague Rescue Chain Spine",
-            "subtitle": "Nicholas Winton, Trevor Chadwick, and the Secret Scrapbook of 669 Children",
+            "title": "Rescuers & Nicholas Winton Spine",
+            "subtitle": "From Prague Refugee Camps to the Rescue Trains and BBC That’s Life Reunion",
             "stages": [
               {
                 "step": 1,
                 "para_ref": "[9.1]",
                 "date": "December 1938",
-                "title": "The Cancelled Skiing Holiday",
+                "title": "A Skiing Holiday Cancelled: Travelling to Prague",
                 "actor": "Nicholas Winton",
-                "tag": "⛷️ DECISION",
-                "trigger": "Twenty-nine-year-old London stockbroker Nicholas Winton cancelled his Swiss skiing holiday to visit Prague refugee camps at the request of friend Martin Blake.",
-                "connective": "Confronted thousands of desperate refugee families living in frozen tents, prompting Winton to open an unofficial rescue bureau in his Prague hotel room.",
-                "question": "What motivated Nicholas Winton to abandon his holiday and commit to saving refugee children?"
+                "tag": "❄️ COMPASSION",
+                "trigger": "Young British stockbroker Nicholas Winton cancelled his Swiss skiing holiday to travel to refugee camps in Prague after seeing the danger facing children.",
+                "connective": "Turned a vacation into an urgent rescue mission to save innocent lives from oncoming Nazi occupation.",
+                "question": "What prompted an ordinary British young man to take personal responsibility for saving hundreds of stranger children?"
               },
               {
                 "step": 2,
                 "para_ref": "[9.3]",
                 "date": "Spring 1939",
-                "title": "The Prague-to-London Rescue Chain",
-                "actor": "Trevor Chadwick & Doreen Warriner",
-                "tag": "🔗 RESCUE CHAIN",
-                "trigger": "In Prague, schoolteacher Trevor Chadwick secured Gestapo exit permits under constant danger, while Winton persuaded the British Home Office and found foster families in London.",
-                "connective": "Coordinated eight train journeys carrying 669 predominantly Jewish children across Nazi-occupied Europe to safety in Britain.",
-                "question": "Why did saving 669 children require an interconnected chain of brave people across multiple countries?"
+                "title": "The Prague-to-London Rescue Train Chain",
+                "actor": "Trevor Chadwick, Doreen Warriner & Volunteers",
+                "tag": "🚂 RESCUE",
+                "trigger": "Winton and volunteers organised eight trains, finding £50 guarantees and British foster families to rescue 669 predominantly Jewish children.",
+                "connective": "Snatched 669 children from mortal peril just months before European borders snapped shut on 1 September 1939.",
+                "question": "Why did the rescue operation require enormous administrative courage and financial organisation?"
               },
               {
                 "step": 3,
                 "para_ref": "[9.5]",
-                "date": "1939 & 1988",
-                "title": "The Secret Scrapbook & That's Life!",
-                "actor": "Nicholas Winton & Grete Winton",
-                "tag": "📖 THAT'S LIFE",
-                "trigger": "Winton never spoke of the rescue for fifty years until his wife Grete found his leatherbound scrapbook of names and photographs in their attic.",
-                "connective": "Reunited Winton with dozens of grown evacuees on BBC television's That's Life! in 1988, inspiring generations with the power of individual courage.",
-                "question": "Why did Nicholas Winton keep his wartime rescue operation a secret for fifty years?"
+                "date": "1988",
+                "title": "The Secret Scrapbook Revealed on 'That’s Life!'",
+                "actor": "Grete Winton, Esther Rantzen & Rescued Children",
+                "tag": "📺 REUNION",
+                "trigger": "After keeping his rescue work secret for 50 years, Winton's wife found his notebook, leading to an emotional reunion on BBC television with the children he saved.",
+                "connective": "Inspired global audiences with the power of individual moral courage and restored the forgotten history of child survivors.",
+                "question": "Why did Nicholas Winton never speak about his heroic rescue achievements for half a century?"
               }
             ]
           },
@@ -107246,40 +107246,40 @@
           ],
           "causal_domino_spine": {
             "title": "VE Day & Remembrance Spine",
-            "subtitle": "The Joyous Street Parties of 8 May 1945, Deep Grief, and the Duty to Remember",
+            "subtitle": "From Street Celebrations to Post-War Reconstruction and Living Memorials",
             "stages": [
               {
                 "step": 1,
                 "para_ref": "[10.1]",
                 "date": "8 May 1945",
-                "title": "Victory in Europe Day: The Streets Erupt in Song",
-                "actor": "British Public & Winston Churchill",
-                "tag": "🎉 VE DAY",
-                "trigger": "Prime Minister Winston Churchill announced Germany's unconditional surrender at 3:00pm, declaring an official public holiday across Britain.",
-                "connective": "Spurred millions into joyous street parties with red-white-and-blue bunting, tea tables, bonfires, and dancing around Buckingham Palace.",
-                "question": "How did communities across Britain celebrate the announcement that the war in Europe was over?"
+                "title": "Victory in Europe Day: Celebrations in the Streets",
+                "actor": "Winston Churchill & Jubilant Crowds",
+                "tag": "🎉 VICTORY",
+                "trigger": "Prime Minister Winston Churchill announced Germany's surrender, sparking joyful street parties, singing, and dancing across Britain.",
+                "connective": "Ended nearly six years of catastrophic conflict, fear, blackout, and nightly air bombardment.",
+                "question": "Why did victory provoke both uncontainable jubilation and quiet sorrow among British families?"
               },
               {
                 "step": 2,
                 "para_ref": "[10.3]",
-                "date": "Summer 1945",
-                "title": "The Tinge of Sorrow: Loss & Rebuilding",
-                "actor": "Bereaved Families & Returning Troops",
-                "tag": "🕯️ REMEMBRANCE",
-                "trigger": "Amidst the cheers, millions mourned fallen relatives, faced bombed-out homes, and waited anxiously for news of prisoners of war in Asia.",
-                "connective": "Tempered jubilant celebrations with quiet grief, beginning the monumental collective task of clearing rubble and building post-war homes and schools.",
-                "question": "Why was VE Day an emotionally complicated day of both celebration and sorrow for many families?"
+                "date": "1945–1950",
+                "title": "Clearing the Rubble & Rebuilding Communities",
+                "actor": "British Post-War Communities",
+                "tag": "🧱 REBUILDING",
+                "trigger": "Families faced the sad realization of lost loved ones while clearing millions of tons of bomb rubble and rebuilding shattered cities.",
+                "connective": "Led directly to the foundation of the National Health Service and post-war welfare state to create a fairer society.",
+                "question": "How did the collective sacrifice of the war inspire the creation of a fairer society in Britain?"
               },
               {
                 "step": 3,
                 "para_ref": "[10.5]",
-                "date": "Post-War to Present",
-                "title": "The Poppy & The Duty to Remember",
-                "actor": "Future Generations & The Royal British Legion",
-                "tag": "🌺 RED POPPY",
-                "trigger": "Every November, communities gather at village war memorials and the Cenotaph in London, observing two minutes of silence and wearing the red poppy.",
-                "connective": "Connects modern school pupils directly to the sacrifices of wartime generations, fulfilling the solemn national promise: 'We will remember them.'",
-                "question": "Why do we continue to observe two minutes of silence at the Cenotaph eighty years after World War II?"
+                "date": "Present Day",
+                "title": "The Red Poppy & The Duty to Remember",
+                "actor": "Generations of Citizens",
+                "tag": "🌺 REMEMBRANCE",
+                "trigger": "Every November, wearing red poppies and observing a two-minute silence ensures future generations never forget the sacrifices made for peace.",
+                "connective": "Transforms historical memory into an active moral commitment to oppose tyranny and protect human dignity.",
+                "question": "Why is remembrance an ongoing duty for future generations rather than just an exercise in nostalgia?"
               }
             ]
           },
@@ -107923,51 +107923,40 @@
           ],
           "causal_domino_spine": {
             "title": "The Windermere Sanctuary Spine",
-            "subtitle": "From Auschwitz to Ambleside: Recuperation, Tom Palmer's Novel, and the '45 Aid Society",
+            "subtitle": "From the RAF Prague Airlift to Calgarth Lake Recovery and the 45 Aid Society",
             "stages": [
               {
                 "step": 1,
                 "para_ref": "[11.1]",
                 "date": "August 1945",
-                "title": "The RAF Mercy Airlift from Prague",
-                "actor": "300 Child Survivors & RAF Lancaster Crews",
+                "title": "The RAF Mercy Airlift: Flying 300 Children to Cumbria",
+                "actor": "Ten RAF Bomber Crews & 300 Child Survivors",
                 "tag": "✈️ AIRLIFT",
-                "trigger": "The British government and Jewish relief charities arranged for ten RAF Stirling and Lancaster bombers to fly 300 liberated child survivors from Prague to Carlisle.",
-                "connective": "Rescued deeply traumatised orphan survivors from the ashes of concentration camps, bringing them to the serene Lake District.",
-                "question": "What were the physical and psychological conditions of the child survivors when the RAF airlifted them to Britain?"
+                "trigger": "Ten RAF Lancaster bombers flew 300 malnourished child Holocaust survivors from Prague to an airfield in Cumbria to begin new lives.",
+                "connective": "Marked the children’s first experience of human warmth, kindness, and safety after years of concentration camp horrors.",
+                "question": "Why was the RAF airlift an essential first step in helping the children feel safe again?"
               },
               {
                 "step": 2,
                 "para_ref": "[11.3]",
                 "date": "Autumn 1945",
-                "title": "Sanctuary at Calgarth: Bread Under Pillows & Red Bicycles",
-                "actor": "Windermere Children & Carers",
-                "tag": "🍞 HEALING",
-                "trigger": "Accommodated in wooden wartime factory chalets at Calgarth Estate by Lake Windermere, children received warm beds, clean clothes, and compassionate medical care.",
-                "connective": "Allowed starved children who initially hid bread under their pillows to swim in the lake, ride red bicycles, laugh again, and forge lifelong adoptive families.",
-                "question": "How did simple acts of kindness—such as plentiful food and bicycles—help the Windermere children begin to heal?"
+                "title": "Sanctuary at Lake Windermere: Calgarth Estate",
+                "actor": "Caring Staff, Doctors & The Windermere Boys and Girls",
+                "tag": "🌲 HEALING",
+                "trigger": "At Calgarth Estate, children were given their own beds, fresh food, clean clothes, and red bicycles, swimming in Lake Windermere to heal from war.",
+                "connective": "Allowed traumatised youngsters to rediscover childhood, learn English, and form lifelong bonds like brothers and sisters.",
+                "question": "How did fresh air, bicycles, and Lake Windermere help the children overcome deep trauma?"
               },
               {
                 "step": 3,
                 "para_ref": "[11.5]",
-                "date": "Modern Day",
-                "title": "Tom Palmer's 'After the War': Grounded in Real Survivor Testimony",
-                "actor": "Author Tom Palmer & Survivors Arek Hersh & Ike Alterman",
-                "tag": "📚 LITERATURE",
-                "trigger": "Children's author Tom Palmer interviewed Windermere survivors Arek Hersh, Ike Alterman, and Sam Laskier to write his award-winning novel After the War.",
-                "connective": "Brought authentic historical eyewitness memories of survival and recovery alive for modern Key Stage 2 readers through sensitive storytelling.",
-                "question": "How does historical fiction like Tom Palmer's 'After the War' preserve authentic survivor memories for future generations?"
-              },
-              {
-                "step": 4,
-                "para_ref": "[11.7]",
                 "date": "1963 to Present",
-                "title": "The '45 Aid Society: Giving Back to Britain",
-                "actor": "Windermere Survivors & Families",
-                "tag": "🤝 GIVING BACK",
-                "trigger": "In 1963, the Windermere 'boys and girls' founded the '45 Aid Society to support each other and raise funds for British charitable causes.",
-                "connective": "Completed an inspiring journey from destitute refugees to proud British citizens who gave back to the nation that offered them sanctuary.",
-                "question": "Why did the Windermere survivors feel a profound lifelong duty to support humanitarian charities across Britain?"
+                "title": "The 45 Aid Society: Giving Back to Britain",
+                "actor": "Windermere Survivors & Their Families",
+                "tag": "🤝 GENEROSITY",
+                "trigger": "As adults, the Windermere survivors formed the 45 Aid Society, raising millions of pounds for British hospitals, schools, and children in need.",
+                "connective": "Repaid Britain’s sanctuary with immense philanthropic generosity and shared their testimonies to educate school students against hatred.",
+                "question": "How did the Windermere children turn their tragic survival into a lifelong legacy of helping others?"
               }
             ]
           },
