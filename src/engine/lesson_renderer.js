@@ -7456,10 +7456,15 @@ export function renderLesson(lesson) {
                   </h5>
                   <p style="font-size: 0.92rem; color: #78350f; font-weight: 600; margin: 0 0 10px 0;">${synthesisPrompt}</p>
                   
-                  <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; align-items: center;">
-                    <span style="font-size: 0.78rem; font-weight: 700; color: #92400e; text-transform: uppercase;">Analytical Connectives (Click to Insert):</span>
-                    ${connectives.map((c) => `<button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #fde68a; color: #b45309; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>`).join('')}
-                  </div>
+                  <details class="support-connectives-drawer no-print" style="margin-bottom: 12px; background: #ffffff; border: 1px solid #fde68a; border-radius: 6px; padding: 6px 12px;" closed>
+                    <summary style="cursor: pointer; font-size: 0.8rem; font-weight: 700; color: #92400e; display: flex; align-items: center; justify-content: space-between; user-select: none;">
+                      <span><i class="fa-solid fa-lightbulb"></i> Analytical Connectives (Click to Expand)</span>
+                      <span style="font-size: 0.72rem; color: #b45309;"><i class="fa-solid fa-chevron-down"></i> Expand</span>
+                    </summary>
+                    <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;">
+                      ${connectives.map((c) => `<button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #fffbeb; border: 1px solid #fde68a; color: #b45309; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>`).join('')}
+                    </div>
+                  </details>
 
                   <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 90px; padding: 10px; border: 1px solid #fde68a; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical;" placeholder="${isKs3 ? 'Combine the evidence and counter-evidence above to write your complex, balanced analytical paragraph...' : isKs2 ? 'Write your historian answer using the evidence above...' : 'Combine the evidence and counter-evidence above to write your complex, balanced GCSE exam paragraph...'}"></textarea>
 
@@ -8302,10 +8307,15 @@ export function renderLesson(lesson) {
                   </h5>
                   <p style="font-size: 0.92rem; color: #78350f; font-weight: 600; margin: 0 0 10px 0;">${synthesisPrompt}</p>
                   
-                  <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; align-items: center;">
-                    <span style="font-size: 0.78rem; font-weight: 700; color: #92400e; text-transform: uppercase;">Analytical Connectives (Click to Insert):</span>
-                    ${connectives.map((c) => `<button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #fde68a; color: #b45309; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>`).join('')}
-                  </div>
+                  <details class="support-connectives-drawer no-print" style="margin-bottom: 12px; background: #ffffff; border: 1px solid #fde68a; border-radius: 6px; padding: 6px 12px;" closed>
+                    <summary style="cursor: pointer; font-size: 0.8rem; font-weight: 700; color: #92400e; display: flex; align-items: center; justify-content: space-between; user-select: none;">
+                      <span><i class="fa-solid fa-lightbulb"></i> Analytical Connectives (Click to Expand)</span>
+                      <span style="font-size: 0.72rem; color: #b45309;"><i class="fa-solid fa-chevron-down"></i> Expand</span>
+                    </summary>
+                    <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;">
+                      ${connectives.map((c) => `<button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #fffbeb; border: 1px solid #fde68a; color: #b45309; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>`).join('')}
+                    </div>
+                  </details>
 
                   <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 90px; padding: 10px; border: 1px solid #fde68a; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical;" placeholder="${placeholderText}"></textarea>
 
@@ -8453,6 +8463,26 @@ export function renderLesson(lesson) {
                     'In conclusion, the decisive reason why...',
                   ]);
 
+            const taskScaf = task.scaffolding || {};
+            const structureStrip = Array.isArray(taskScaf.structure_strip) ? taskScaf.structure_strip : [];
+            const sentenceStarters = Array.isArray(taskScaf.sentence_starters) ? taskScaf.sentence_starters : [];
+            const wordBank = Array.isArray(taskScaf.word_bank) ? taskScaf.word_bank : [];
+            const criteria = Array.isArray(taskScaf.evaluative_criteria) ? taskScaf.evaluative_criteria : [];
+            const stimulusList = Array.isArray(task.stimulus) ? task.stimulus : [];
+
+            let stimulusHtml = '';
+            if (stimulusList.length > 0) {
+              stimulusHtml = `
+                <div style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed #bae6fd; font-size: 0.88rem; color: #0c4a6e;">
+                  <strong style="text-transform: uppercase; font-size: 0.74rem; letter-spacing: 0.5px; color: #0284c7; display: block; margin-bottom: 5px;">You may use the following in your answer:</strong>
+                  <ul style="margin: 0; padding-left: 20px; line-height: 1.5;">
+                    ${stimulusList.map((st) => `<li>${formatBold ? formatBold(st) : st}</li>`).join('')}
+                  </ul>
+                  <span style="display: block; font-size: 0.78rem; font-style: italic; color: #64748b; margin-top: 4px;">(You must also use information of your own.)</span>
+                </div>
+              `;
+            }
+
             let peelHtml = '';
             if (hints.length > 0) {
               const isNarrative = task.type === 'narrative_account';
@@ -8534,6 +8564,121 @@ export function renderLesson(lesson) {
               `;
             }
 
+            let scaffoldingItemsHtml = '';
+
+            // 1. Structure Strip or PEEL Hints
+            if (structureStrip.length > 0) {
+              scaffoldingItemsHtml += `
+                <div>
+                  <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: #0284c7; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                    <i class="fa-solid fa-layer-group"></i> Analytical Structure Strip (Paragraph Progression)
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 7px;">
+                    ${structureStrip
+                      .map((step) => {
+                        const stepText = typeof step === 'string' ? step : (step.prompt || step.text || '');
+                        return `
+                        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #0284c7; border-radius: 4px; padding: 8px 12px; font-size: 0.86rem; color: #1e293b; line-height: 1.5;">
+                          ${formatBold ? formatBold(stepText) : stepText}
+                        </div>
+                      `;
+                      })
+                      .join('')}
+                  </div>
+                </div>
+              `;
+            } else if (peelHtml) {
+              scaffoldingItemsHtml += `
+                <div>
+                  <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: #0284c7; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                    <i class="fa-solid fa-layer-group"></i> ${isKs2 ? 'Historian Writing Scaffolds' : task.type === 'narrative_account' ? 'Chronological Narrative Sequence (Beginning, Middle, End)' : 'PEEL Analytical Writing Steps'}
+                  </div>
+                  ${peelHtml}
+                </div>
+              `;
+            }
+
+            // 2. Evaluative Criteria & Evidence Checklist (if present)
+            if (criteria.length > 0) {
+              scaffoldingItemsHtml += `
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px 14px;">
+                  <strong style="display: block; font-size: 0.78rem; text-transform: uppercase; color: #475569; letter-spacing: 0.5px; margin-bottom: 6px;">
+                    <i class="fa-solid fa-scale-balanced" style="color: #0284c7; margin-right: 6px;"></i> Evaluative Criteria &amp; Evidence Checklist
+                  </strong>
+                  <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: #334155; line-height: 1.5;">
+                    ${criteria.map((c) => `<li style="margin-bottom: 4px;">${formatBold ? formatBold(c) : c}</li>`).join('')}
+                  </ul>
+                </div>
+              `;
+            }
+
+            // 3. Sentence Starters Bank (if present)
+            if (sentenceStarters.length > 0) {
+              scaffoldingItemsHtml += `
+                <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 10px 14px;">
+                  <strong style="display: block; font-size: 0.78rem; text-transform: uppercase; color: #1d4ed8; letter-spacing: 0.5px; margin-bottom: 6px;">
+                    <i class="fa-solid fa-pen-fancy" style="margin-right: 6px;"></i> Sentence Starters Bank (${sentenceStarters.length} prompts)
+                  </strong>
+                  <ul style="margin: 0; padding-left: 18px; font-size: 0.86rem; color: #1e40af; line-height: 1.55;">
+                    ${sentenceStarters.map((s) => `<li style="margin-bottom: 4px;">${formatBold ? formatBold(s) : s}</li>`).join('')}
+                  </ul>
+                </div>
+              `;
+            }
+
+            // 4. Analytical Connectives Bank (Click to Insert)
+            if (essayConnectives.length > 0) {
+              scaffoldingItemsHtml += `
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px 14px;">
+                  <div style="font-size: 0.78rem; font-weight: 700; color: #0369a1; text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i> ${isKs2 ? 'Helpful Sentence Starters (Click to Insert):' : task.type === 'narrative_account' ? 'Chronological &amp; Causal Connectives (Click to Insert):' : 'Analytical Connectives (Click to Insert):'}
+                  </div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    ${essayConnectives.map((c) => `<button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #bfdbfe; color: #1e40af; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>`).join('')}
+                  </div>
+                </div>
+              `;
+            }
+
+            // 5. Key Vocabulary Word Bank (if present)
+            if (wordBank.length > 0) {
+              scaffoldingItemsHtml += `
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px 14px;">
+                  <strong style="display: block; font-size: 0.78rem; text-transform: uppercase; color: #475569; letter-spacing: 0.5px; margin-bottom: 6px;">
+                    <i class="fa-solid fa-book-bookmark" style="color: #0284c7; margin-right: 6px;"></i> ${isKs2 ? 'Historian Word Bank' : isLocalKs3 ? 'Core Disciplinary Vocabulary Bank' : 'GCSE Key Vocabulary Bank'}
+                  </strong>
+                  <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+                    ${wordBank.map((w) => `<span style="background: #e2e8f0; color: #1e293b; font-size: 0.76rem; font-weight: 600; padding: 2.5px 8px; border-radius: 4px;">${w}</span>`).join('')}
+                  </div>
+                </div>
+              `;
+            }
+
+            const scaffoldingDrawerHtml = scaffoldingItemsHtml
+              ? `
+              <details class="peel-scaffolding-drawer no-print" style="margin-bottom: 16px; background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; overflow: hidden;" closed>
+                <summary style="padding: 10px 14px; cursor: pointer; font-size: 0.88rem; font-weight: 800; color: #0369a1; background: #f1f5f9; display: flex; align-items: center; justify-content: space-between; user-select: none; transition: background 0.15s ease;">
+                  <span style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-lightbulb" style="color: #0284c7;"></i>
+                    <span>Writing Support &amp; Scaffolding &bull; Sentence Starters, Connectives &amp; Structure Guide</span>
+                  </span>
+                  <span style="font-size: 0.75rem; font-weight: 700; background: #e0f2fe; color: #0369a1; padding: 3px 9px; border-radius: 4px; display: inline-flex; align-items: center; gap: 5px;">
+                    <i class="fa-solid fa-chevron-down"></i> Expand Support (Optional)
+                  </span>
+                </summary>
+                <div style="padding: 14px; background: #ffffff; display: flex; flex-direction: column; gap: 12px;">
+                  ${scaffoldingItemsHtml}
+                </div>
+              </details>
+            `
+              : '';
+
+            const customPlaceholder = isKs2
+              ? 'Write your historian answer using the clues and key words above...'
+              : task.type === 'narrative_account'
+                ? 'Write your 3-paragraph narrative account following the chronological sequence (Beginning: Peterloo ➔ Middle: Swing Riots ➔ End: Tolpuddle)...'
+                : 'Compose your analytical argument here. Expand the Writing Support & Scaffolding drawer above if you need sentence starters or connectives...';
+
             htmlTasks += `
               <div class="task-box extended-writing-task-card" style="margin-bottom: 25px; background: #ffffff; padding: 22px; border-radius: 10px; border: 2px solid #0284c7; box-shadow: 0 4px 14px rgba(2, 132, 199, 0.1);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 2px solid #e0f2fe; padding-bottom: 12px;">
@@ -8554,46 +8699,23 @@ export function renderLesson(lesson) {
                     ? `
                   <div class="extended-writing-prompt" style="font-size: 1.08rem; font-weight: 700; color: #0f172a; margin-bottom: 16px; line-height: 1.5; background: #f0f9ff; padding: 14px 18px; border-left: 4px solid #0284c7; border-radius: 0 6px 6px 0;">
                     <span style="display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; color: #0284c7; margin-bottom: 4px; font-weight: 800;">Enquiry Question:</span>
-                    ${questionPrompt}
+                    <div>${formatBold ? formatBold(questionPrompt) : questionPrompt}</div>
+                    ${stimulusHtml}
                   </div>
                 `
                     : ''
                 }
 
-                ${
-                  peelHtml
-                    ? `
-                  <details class="peel-scaffolding-drawer no-print" style="margin-bottom: 16px; background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; overflow: hidden;" closed>
-                    <summary style="padding: 10px 14px; cursor: pointer; font-size: 0.88rem; font-weight: 800; color: #0369a1; background: #f1f5f9; display: flex; align-items: center; justify-content: space-between; user-select: none;">
-                      <span style="display: flex; align-items: center; gap: 8px;">
-                        <i class="${task.type === 'narrative_account' ? 'fa-solid fa-arrow-down-wide-short' : 'fa-solid fa-chalkboard-user'}" style="color: #0284c7;"></i>
-                        <span>${isKs2 ? 'Historian Writing Scaffolds &bull; Helpful Sentence Starters' : task.type === 'narrative_account' ? 'Chronological Narrative Scaffolding &bull; 3-Stage Sequence (Beginning, Middle, End)' : 'PEEL Analytical Writing Scaffolds &bull; Sentence Stems'}</span>
-                      </span>
-                      <span style="font-size: 0.75rem; font-weight: 700; background: #e0f2fe; color: #0369a1; padding: 3px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;">
-                        <i class="fa-solid fa-eye"></i> Click to Reveal Scaffolding
-                      </span>
-                    </summary>
-                    <div style="padding: 14px; background: #ffffff;">
-                      ${peelHtml}
-                    </div>
-                  </details>
-                `
-                    : ''
-                }
+                ${scaffoldingDrawerHtml}
 
-                <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 14px; margin-top: 12px;">
-                  <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; align-items: center;">
-                    <span style="font-size: 0.78rem; font-weight: 700; color: #0369a1; text-transform: uppercase;">${isKs2 ? 'Helpful Sentence Starters (Click to Insert):' : task.type === 'narrative_account' ? 'Chronological & Causal Connectives (Click to Insert):' : 'Analytical Connectives (Click to Insert):'}</span>
-                    ${essayConnectives.map((c) => `<button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #bfdbfe; color: #1e40af; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>`).join('')}
-                  </div>
-
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 14px;">
                   <label style="display: block; font-size: 0.85rem; font-weight: 700; color: #1e293b; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">${isKs2 ? 'Your Historian Response:' : task.type === 'narrative_account' ? 'Student Response &bull; Chronological 3-Paragraph Narrative Account (Beginning, Middle, End):' : 'Student Response &bull; Structured Historical Argument:'}</label>
-                  <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 140px; padding: 12px; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; font-family: inherit; resize: vertical;" placeholder="${isKs2 ? 'Write your historian answer using the clues and key words above...' : task.type === 'narrative_account' ? 'Write your 3-paragraph narrative account following the chronological sequence (Beginning: Peterloo ➔ Middle: Swing Riots ➔ End: Tolpuddle)...' : 'Using the PEEL structure and historical evidence above, write your analytical essay paragraph...'}" oninput="window.updateProgress()"></textarea>
+                  <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 140px; padding: 12px; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; font-family: inherit; resize: vertical;" placeholder="${customPlaceholder}" oninput="window.updateProgress()"></textarea>
 
                   ${
                     modelAnswer
                       ? `
-                    <details class="model-paragraph-reveal" style="margin-top: 14px; border: 1px dashed #0284c7; border-radius: 8px; padding: 10px 14px; background: #ffffff;">
+                    <details class="model-paragraph-reveal" style="margin-top: 14px; border: 1px dashed #0284c7; border-radius: 8px; padding: 10px 14px; background: #ffffff;" closed>
                       <summary style="cursor: pointer; color: #0369a1; font-weight: 700; font-size: 0.9rem; outline: none; display: flex; align-items: center; gap: 8px;">
                         <i class="fa-solid fa-eye"></i> ${isKs2 ? '[ Show Model Historian Answer ]' : isLocalKs3 ? '[ Show Model Analytical Response ]' : '[ Show Examiner-Grade Model Response ]'}
                       </summary>
