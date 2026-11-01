@@ -2356,11 +2356,26 @@ img::after {
     display: none !important;
   }
 
+  .app-header {
+    padding: 0 8px !important;
+    gap: 6px !important;
+  }
+
+  .header-left {
+    gap: 6px !important;
+    min-width: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
   .header-mobile-brand {
-    font-size: 0.95rem !important;
+    font-size: 0.88rem !important;
+    gap: 6px !important;
     white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
   }
 
   /* Hide header mobile brand when back button is active so icons don't collide */
