@@ -114,7 +114,7 @@ function extractSketchIdeas(lesson, date) {
 // CLASSROOM ARENA: CONSTANTS, VOCAB EXTRACTION & AUDIO ENGINE
 // =============================================================
 const ARENA_STOPWORDS = new Set([
-  'the', 'a', 'an', 'and', 'or', 'of', 'to', 'in', 'is', 'was', 'for', 'by', 'with', 
+  'the', 'a', 'an', 'and', 'or', 'of', 'to', 'in', 'is', 'was', 'for', 'by', 'with',
   'that', 'this', 'as', 'at', 'from', 'it', 'on', 'which', 'be', 'are', 'were', 'been',
   'into', 'through', 'over', 'after', 'under', 'between', 'during', 'their', 'them',
   'his', 'her', 'its', 'they', 'he', 'she', 'who', 'whom', 'whose', 'where', 'when',
@@ -223,7 +223,7 @@ function playArenaSound(type) {
         noteOsc.stop(now + idx * 0.09 + 0.4);
       });
     }
-  } catch (e) {}
+  } catch (e) { }
 }
 
 function extractClassroomArenaData(lesson, currentIdx, lessonsList, unitId) {
@@ -317,7 +317,7 @@ function tickArenaTimer(lessonId, gameKey, totalDuration) {
 
   if (a[timeKey] > 0) {
     a[timeKey]--;
-    
+
     // Play tick in final 5 seconds
     if (a.soundEnabled && a[timeKey] <= 5 && a[timeKey] > 0) {
       playArenaSound('tick');
@@ -862,12 +862,12 @@ export function renderConsolidateStationHTML(lesson) {
       const s = JSON.parse(saved);
       savedScoreBadge = `<span class="station-score-pill" title="Previous Best Score" style="background: #e0f2fe; color: #0369a1; padding: 3px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700;"><i class="fa-solid fa-circle-check"></i> Best: ${s.score}/${s.total} (${s.pct}%)</span>`;
     }
-  } catch (e) {}
+  } catch (e) { }
 
   return `
-    <div class="phase-card no-print consolidate-station" id="consolidate-station-${lesson.id}" style="margin: 35px 0 30px 0; background: #ffffff; border: 2px solid #cbd5e1; border-radius: 16px; box-shadow: 0 6px 22px rgba(15, 23, 42, 0.06); overflow: hidden;">
+    <div class="phase-card no-print consolidate-station" id="consolidate-station-${lesson.id}" style="margin: 35px 0 30px 0; background: #ffffff; border: 2px solid #cbd5e1; border-radius: 16px; box-shadow: 0 6px 22px rgba(15, 23, 42, 0.06); overflow: hidden; max-width: 100%; box-sizing: border-box;">
       <!-- Masthead & Tab Controller -->
-      <div style="background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-bottom: 2px solid #e2e8f0; padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
+      <div style="background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-bottom: 2px solid #e2e8f0; padding: clamp(12px, 3.5vw, 18px) clamp(14px, 4vw, 24px); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
         <div style="display: flex; align-items: center; gap: 14px;">
           <div style="width: 44px; height: 44px; border-radius: 12px; background: #eff6ff; border: 1.5px solid #bfdbfe; display: flex; align-items: center; justify-content: center; font-size: 1.35rem; color: #2563eb; flex-shrink: 0; box-shadow: 0 2px 8px rgba(37,99,235,0.12);">
             🎯
@@ -880,9 +880,9 @@ export function renderConsolidateStationHTML(lesson) {
               ${savedScoreBadge}
             </div>
             <p style="margin: 3px 0 0 0; color: #64748b; font-size: 0.85rem;">
-              ${isKs2 
-                ? 'Lesson Quiz &bull; Vocabulary Cards &bull; Chrono Domino &bull; Primary Exit Ticket &bull; Classroom Arena'
-                : 'Centrefold Timeline &bull; Retrieval Quiz &bull; Vocabulary Cards &bull; Chrono Domino &bull; Exit Ticket &bull; Classroom Arena'}
+              ${isKs2
+      ? 'Lesson Quiz &bull; Vocabulary Cards &bull; Chrono Domino &bull; Primary Exit Ticket &bull; Classroom Arena'
+      : 'Centrefold Timeline &bull; Retrieval Quiz &bull; Vocabulary Cards &bull; Chrono Domino &bull; Exit Ticket &bull; Classroom Arena'}
             </p>
           </div>
         </div>
@@ -921,7 +921,7 @@ export function renderConsolidateStationHTML(lesson) {
       </div>
 
       <!-- Main Interactive Viewport -->
-      <div id="station-body-${lesson.id}" style="padding: 24px; min-height: 270px; background: #ffffff;">
+      <div id="station-body-${lesson.id}" class="station-body-container" style="padding: clamp(12px, 3.5vw, 24px); min-height: 270px; background: #ffffff; box-sizing: border-box; overflow-x: hidden; max-width: 100%;">
         <!-- Injected via JavaScript controller -->
       </div>
     </div>
@@ -957,19 +957,19 @@ export function initConsolidateStation(lesson) {
   let savedExitText = '';
   try {
     savedExitText = localStorage.getItem('exit_ticket_' + lesson.id) || '';
-  } catch (e) {}
+  } catch (e) { }
 
   // Load timeline completion status
   let timelineDone = false;
   try {
     timelineDone = localStorage.getItem('timeline_done_' + lesson.id) === 'true';
-  } catch (e) {}
+  } catch (e) { }
 
   // Load saved pathway choice ('sketch' | 'map')
   let timelinePathway = 'sketch';
   try {
     timelinePathway = localStorage.getItem('timeline_pathway_' + lesson.id) || 'sketch';
-  } catch (e) {}
+  } catch (e) { }
 
   // Load saved class size for Classroom Arena
   let savedClassSize = 30;
@@ -979,7 +979,7 @@ export function initConsolidateStation(lesson) {
       const parsed = parseInt(s, 10);
       if (!isNaN(parsed) && parsed > 0) savedClassSize = parsed;
     }
-  } catch (e) {}
+  } catch (e) { }
 
   const state = {
     lessonId: lesson.id,
@@ -1155,9 +1155,9 @@ function renderLivingTimelineView(state, bodyEl) {
                 <strong style="color: #92400e; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
                   <i class="fa-solid fa-paintbrush" style="color: #d97706;"></i> Pathway A: Dual-Coding Sketch
                 </strong>
-                ${state.timelinePathway === 'sketch' 
-                  ? '<span style="background: #f59e0b; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 12px;"><i class="fa-solid fa-check"></i> Selected</span>' 
-                  : '<span style="background: #fef3c7; color: #92400e; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">Sketch & Date</span>'}
+                ${state.timelinePathway === 'sketch'
+      ? '<span style="background: #f59e0b; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 12px;"><i class="fa-solid fa-check"></i> Selected</span>'
+      : '<span style="background: #fef3c7; color: #92400e; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">Sketch & Date</span>'}
               </div>
               
               <p style="font-size: 0.88rem; color: #475569; line-height: 1.45; margin: 0 0 12px 0;">
@@ -1192,9 +1192,9 @@ function renderLivingTimelineView(state, bodyEl) {
                 <strong style="color: #0369a1; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
                   <i class="fa-solid fa-diagram-project" style="color: #0284c7;"></i> Pathway B: 3-Branch Concept Map
                 </strong>
-                ${state.timelinePathway === 'map' 
-                  ? '<span style="background: #0284c7; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 12px;"><i class="fa-solid fa-check"></i> Selected</span>' 
-                  : '<span style="background: #e0f2fe; color: #0369a1; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">Concept Nodes</span>'}
+                ${state.timelinePathway === 'map'
+      ? '<span style="background: #0284c7; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 12px;"><i class="fa-solid fa-check"></i> Selected</span>'
+      : '<span style="background: #e0f2fe; color: #0369a1; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">Concept Nodes</span>'}
               </div>
 
               <p style="font-size: 0.88rem; color: #475569; line-height: 1.45; margin: 0 0 12px 0;">
@@ -1204,14 +1204,14 @@ function renderLivingTimelineView(state, bodyEl) {
               <!-- 3 Structured Concept Nodes -->
               <div style="display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px;">
                 ${lt.branches.map((b) => {
-                  const label = (typeof b === 'object' && b.label) ? b.label.trim() : '';
-                  const val = typeof b === 'object' ? (b.value || '') : b;
-                  return `
+        const label = (typeof b === 'object' && b.label) ? b.label.trim() : '';
+        const val = typeof b === 'object' ? (b.value || '') : b;
+        return `
                   <div style="padding: 7px 11px; background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3.5px solid #0284c7; border-radius: 6px; font-size: 0.84rem; color: #1e293b; line-height: 1.4;">
                     ${label ? `<span style="font-weight: 800; color: #0369a1;">${label}: </span>` : `<span style="color: #0284c7; font-weight: 800; margin-right: 4px;">&bull;</span> `}${val}
                   </div>
                 `;
-                }).join('')}
+      }).join('')}
               </div>
             </div>
 
@@ -1277,31 +1277,31 @@ function renderQuestionView(state, bodyEl) {
       <!-- Options Grid -->
       <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;">
         ${q.options.map((opt, idx) => {
-          let btnStyle = 'background: #ffffff; border: 1.5px solid #cbd5e1; color: #1e293b;';
-          let iconHtml = `<span style="width: 26px; height: 26px; border-radius: 6px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.82rem; color: #475569; flex-shrink: 0;">${letters[idx] || (idx + 1)}</span>`;
+    let btnStyle = 'background: #ffffff; border: 1.5px solid #cbd5e1; color: #1e293b;';
+    let iconHtml = `<span style="width: 26px; height: 26px; border-radius: 6px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.82rem; color: #475569; flex-shrink: 0;">${letters[idx] || (idx + 1)}</span>`;
 
-          if (state.answered) {
-            const isCorrect = idx === q.answer;
-            const isSelected = idx === state.selectedOption;
+    if (state.answered) {
+      const isCorrect = idx === q.answer;
+      const isSelected = idx === state.selectedOption;
 
-            if (isCorrect) {
-              btnStyle = 'background: #f0fdf4; border: 2px solid #22c55e; color: #15803d; font-weight: 700;';
-              iconHtml = `<span style="width: 26px; height: 26px; border-radius: 6px; background: #22c55e; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: #ffffff; flex-shrink: 0;"><i class="fa-solid fa-check"></i></span>`;
-            } else if (isSelected) {
-              btnStyle = 'background: #fef2f2; border: 2px solid #ef4444; color: #b91c1c; font-weight: 700;';
-              iconHtml = `<span style="width: 26px; height: 26px; border-radius: 6px; background: #ef4444; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: #ffffff; flex-shrink: 0;"><i class="fa-solid fa-xmark"></i></span>`;
-            } else {
-              btnStyle = 'background: #f8fafc; border: 1px solid #e2e8f0; color: #94a3b8; opacity: 0.6;';
-            }
-          }
+      if (isCorrect) {
+        btnStyle = 'background: #f0fdf4; border: 2px solid #22c55e; color: #15803d; font-weight: 700;';
+        iconHtml = `<span style="width: 26px; height: 26px; border-radius: 6px; background: #22c55e; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: #ffffff; flex-shrink: 0;"><i class="fa-solid fa-check"></i></span>`;
+      } else if (isSelected) {
+        btnStyle = 'background: #fef2f2; border: 2px solid #ef4444; color: #b91c1c; font-weight: 700;';
+        iconHtml = `<span style="width: 26px; height: 26px; border-radius: 6px; background: #ef4444; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: #ffffff; flex-shrink: 0;"><i class="fa-solid fa-xmark"></i></span>`;
+      } else {
+        btnStyle = 'background: #f8fafc; border: 1px solid #e2e8f0; color: #94a3b8; opacity: 0.6;';
+      }
+    }
 
-          return `
+    return `
             <button type="button" class="station-opt-btn" onclick="window.answerStationQuestion('${state.lessonId}', ${idx})" ${state.answered ? 'disabled' : ''} style="${btnStyle} text-align: left; padding: 12px 16px; border-radius: 10px; cursor: ${state.answered ? 'default' : 'pointer'}; display: flex; align-items: center; gap: 14px; font-size: 0.95rem; line-height: 1.4; transition: all 0.15s ease;">
               ${iconHtml}
               <span style="flex-grow: 1;">${opt}</span>
             </button>
           `;
-        }).join('')}
+  }).join('')}
       </div>
 
       <!-- Feedback / Explanation Box (revealed upon answering) -->
@@ -1335,7 +1335,7 @@ function renderQuizResultsView(state, bodyEl) {
   try {
     const record = { score, total, pct, date: Date.now() };
     localStorage.setItem('history_quiz_' + state.lessonId, JSON.stringify(record));
-  } catch (e) {}
+  } catch (e) { }
 
   let trophy = '🏆';
   let badgeText = 'Outstanding Recall &bull; Mastery Achieved';
@@ -1540,33 +1540,33 @@ function renderChronologyDominoView(state, bodyEl) {
       <!-- Interactive Milestone Cards Stack -->
       <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px;">
         ${items.map((item, idx) => {
-          const isPosCorrect = domino.isSubmitted && item.originalIndex === idx;
-          const isPosWrong = domino.isSubmitted && item.originalIndex !== idx;
+    const isPosCorrect = domino.isSubmitted && item.originalIndex === idx;
+    const isPosWrong = domino.isSubmitted && item.originalIndex !== idx;
 
-          let cardBorder = '#cbd5e1';
-          let cardBg = '#ffffff';
-          let statusBadge = '';
+    let cardBorder = '#cbd5e1';
+    let cardBg = '#ffffff';
+    let statusBadge = '';
 
-          if (isPosCorrect) {
-            cardBorder = '#22c55e';
-            cardBg = '#f0fdf4';
-            statusBadge = `<span style="background: #22c55e; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800;"><i class="fa-solid fa-check"></i> Correct</span>`;
-          } else if (isPosWrong) {
-            cardBorder = '#f59e0b';
-            cardBg = '#fffdf7';
-            statusBadge = `<span style="background: #f59e0b; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800;"><i class="fa-solid fa-arrows-rotate"></i> Swap</span>`;
-          }
+    if (isPosCorrect) {
+      cardBorder = '#22c55e';
+      cardBg = '#f0fdf4';
+      statusBadge = `<span style="background: #22c55e; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800;"><i class="fa-solid fa-check"></i> Correct</span>`;
+    } else if (isPosWrong) {
+      cardBorder = '#f59e0b';
+      cardBg = '#fffdf7';
+      statusBadge = `<span style="background: #f59e0b; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800;"><i class="fa-solid fa-arrows-rotate"></i> Swap</span>`;
+    }
 
-          let dateBadge = '';
-          if (showHints) {
-            dateBadge = `<span style="background: #fef3c7; color: #92400e; border: 1.5px solid #fde68a; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 800; display: inline-flex; align-items: center; gap: 4px; animation: fadeIn 0.2s ease;"><i class="fa-solid fa-lightbulb" style="color: #d97706;"></i> Hint: ${item.date}</span>`;
-          } else if (showFullDates) {
-            dateBadge = `<span style="background: #e2e8f0; color: #334155; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">${item.date}</span>`;
-          }
+    let dateBadge = '';
+    if (showHints) {
+      dateBadge = `<span style="background: #fef3c7; color: #92400e; border: 1.5px solid #fde68a; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 800; display: inline-flex; align-items: center; gap: 4px; animation: fadeIn 0.2s ease;"><i class="fa-solid fa-lightbulb" style="color: #d97706;"></i> Hint: ${item.date}</span>`;
+    } else if (showFullDates) {
+      dateBadge = `<span style="background: #e2e8f0; color: #334155; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">${item.date}</span>`;
+    }
 
-          const cardTitle = getDominoDisplayTitle(item.title, showAnyDates);
+    const cardTitle = getDominoDisplayTitle(item.title, showAnyDates);
 
-          return `
+    return `
             <div style="background: ${cardBg}; border: 1.5px solid ${cardBorder}; border-radius: 12px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.03); transition: all 0.2s ease;">
               <div style="display: flex; align-items: center; gap: 14px; flex: 1;">
                 <div style="width: 32px; height: 32px; border-radius: 8px; background: ${isPosCorrect ? '#22c55e' : '#ede9fe'}; color: ${isPosCorrect ? '#ffffff' : '#6d28d9'}; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; flex-shrink: 0;">
@@ -1597,7 +1597,7 @@ function renderChronologyDominoView(state, bodyEl) {
               </div>
             </div>
           `;
-        }).join('')}
+  }).join('')}
       </div>
 
       <!-- Domino Control Buttons -->
@@ -1763,19 +1763,19 @@ function renderClassroomArenaView(state, bodyEl) {
 
   // Sub-navigation bar inside Classroom Arena
   const navHtml = `
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; border-bottom: 1.5px solid ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; padding-bottom: 14px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; border-bottom: 1.5px solid ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; padding-bottom: 14px; max-width: 100%; box-sizing: border-box;">
       <!-- 4 Game Switcher Buttons -->
-      <div style="display: flex; gap: 6px; background: ${isWhiteboard ? '#1e293b' : '#f1f5f9'}; padding: 4px; border-radius: 10px; flex-wrap: wrap;">
-        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'taboo')" style="padding: 7px 14px; border-radius: 7px; border: none; font-size: 0.85rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; ${a.gameMode === 'taboo' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
+      <div style="display: flex; gap: 6px; background: ${isWhiteboard ? '#1e293b' : '#f1f5f9'}; padding: 4px; border-radius: 10px; flex-wrap: wrap; flex: 1 1 auto; max-width: 100%; box-sizing: border-box;">
+        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'taboo')" style="padding: 7px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; flex: 1 1 auto; min-width: 120px; transition: all 0.2s ease; ${a.gameMode === 'taboo' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
           <span>🔥</span> Hot Seat (Taboo)
         </button>
-        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'corners')" style="padding: 7px 14px; border-radius: 7px; border: none; font-size: 0.85rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; ${a.gameMode === 'corners' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
+        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'corners')" style="padding: 7px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; flex: 1 1 auto; min-width: 120px; transition: all 0.2s ease; ${a.gameMode === 'corners' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
           <span>🏃</span> Four Corners
         </button>
-        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'standoff')" style="padding: 7px 14px; border-radius: 7px; border: none; font-size: 0.85rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; ${a.gameMode === 'standoff' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
+        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'standoff')" style="padding: 7px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; flex: 1 1 auto; min-width: 120px; transition: all 0.2s ease; ${a.gameMode === 'standoff' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
           <span>⚔️</span> 60s Standoff
         </button>
-        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'lightning')" style="padding: 7px 14px; border-radius: 7px; border: none; font-size: 0.85rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; ${a.gameMode === 'lightning' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
+        <button type="button" onclick="window.switchArenaGame('${state.lessonId}', 'lightning')" style="padding: 7px 12px; border-radius: 7px; border: none; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; flex: 1 1 auto; min-width: 120px; transition: all 0.2s ease; ${a.gameMode === 'lightning' ? (isWhiteboard ? 'background: #3b82f6; color: #ffffff;' : 'background: #ffffff; color: #0f172a; box-shadow: 0 1px 4px rgba(0,0,0,0.1);') : (isWhiteboard ? 'background: transparent; color: #94a3b8;' : 'background: transparent; color: #64748b;')}">
           <span>⚡</span> Lightning Chain
         </button>
       </div>
@@ -1999,11 +1999,11 @@ function renderArenaCornersView(state, arenaData, isWhiteboard) {
       </div>
 
       <!-- 4 Corners 2x2 Interactive Grid -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 14px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 14px; max-width: 100%; box-sizing: border-box;">
         ${corners.map((c, idx) => {
-          const isSelected = selectedIdx === idx;
-          return `
-            <div onclick="window.selectArenaCorner('${state.lessonId}', ${idx})" style="background: ${isWhiteboard ? (isSelected ? '#1e293b' : '#0f172a') : (isSelected ? '#f8fafc' : '#ffffff')}; border: ${isSelected ? '2.5px solid #f59e0b' : `1.5px solid ${isWhiteboard ? '#334155' : c.border}`}; border-left: 5px solid ${c.color}; border-radius: 12px; padding: 16px 18px; cursor: pointer; transition: all 0.2s ease; box-shadow: ${isSelected ? '0 0 0 3px rgba(245,158,11,0.25)' : '0 2px 8px rgba(0,0,0,0.04)'}; display: flex; flex-direction: column; justify-content: space-between;">
+    const isSelected = selectedIdx === idx;
+    return `
+            <div onclick="window.selectArenaCorner('${state.lessonId}', ${idx})" style="background: ${isWhiteboard ? (isSelected ? '#1e293b' : '#0f172a') : (isSelected ? '#f8fafc' : '#ffffff')}; border: ${isSelected ? '2.5px solid #f59e0b' : `1.5px solid ${isWhiteboard ? '#334155' : c.border}`}; border-left: 5px solid ${c.color}; border-radius: 12px; padding: clamp(12px, 3vw, 18px); cursor: pointer; transition: all 0.2s ease; box-shadow: ${isSelected ? '0 0 0 3px rgba(245,158,11,0.25)' : '0 2px 8px rgba(0,0,0,0.04)'}; display: flex; flex-direction: column; justify-content: space-between; min-width: 0; box-sizing: border-box; overflow-wrap: break-word; word-break: break-word;">
               <div>
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                   <span style="background: ${isWhiteboard ? '#1e293b' : c.badgeBg}; color: ${c.color}; padding: 2px 8px; border-radius: 6px; font-weight: 800; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em;">
@@ -2032,7 +2032,7 @@ function renderArenaCornersView(state, arenaData, isWhiteboard) {
               </div>
             </div>
           `;
-        }).join('')}
+  }).join('')}
       </div>
 
       <!-- Spotlight Banner (If a corner is selected) -->
@@ -2125,18 +2125,18 @@ function renderArenaStandoffView(state, arenaData, isWhiteboard) {
         </div>
 
         <!-- Standoff Dual Timer & Active Phase Badge -->
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <div id="standoff-phase-badge-${state.lessonId}">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; width: 100%; box-sizing: border-box;">
+          <div id="standoff-phase-badge-${state.lessonId}" style="flex: 1 1 auto; min-width: 0; max-width: 100%;">
             ${isRoleA
-              ? `<span style="background: #2563eb; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.82rem;"><i class="fa-solid fa-shield"></i> PHASE 1: Partner A ${isHistoriographical ? 'Interpretation' : 'Defending'} (30s)</span>`
-              : `<span style="background: #dc2626; color: #ffffff; padding: 4px 14px; border-radius: 999px; font-weight: 800; font-size: 0.82rem;"><i class="fa-solid fa-swords"></i> PHASE 2: Partner B ${isHistoriographical ? 'Counter-View' : 'Rebutting'} (30s)</span>`}
+      ? `<span style="background: #2563eb; color: #ffffff; padding: 5px 12px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.35;"><i class="fa-solid fa-shield"></i> PHASE 1: Partner A ${isHistoriographical ? 'Interpretation' : 'Defending'} (30s)</span>`
+      : `<span style="background: #dc2626; color: #ffffff; padding: 5px 12px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.35;"><i class="fa-solid fa-swords"></i> PHASE 2: Partner B ${isHistoriographical ? 'Counter-View' : 'Rebutting'} (30s)</span>`}
           </div>
 
-          <div style="display: flex; align-items: center; gap: 6px; background: ${isWhiteboard ? '#0f172a' : '#ffffff'}; border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 4px 10px; border-radius: 8px;">
-            <span id="arena-timer-val-standoff-${state.lessonId}" style="font-family: monospace; font-size: 1.25rem; font-weight: 800; color: ${isWhiteboard ? '#f8fafc' : '#0f172a'}; min-width: 50px; text-align: center;">
+          <div style="display: inline-flex; align-items: center; gap: 6px; background: ${isWhiteboard ? '#0f172a' : '#ffffff'}; border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 4px 10px; border-radius: 8px; flex-shrink: 0; white-space: nowrap;">
+            <span id="arena-timer-val-standoff-${state.lessonId}" style="font-family: monospace; font-size: 1.25rem; font-weight: 800; color: ${isWhiteboard ? '#f8fafc' : '#0f172a'}; min-width: 50px; text-align: center; white-space: nowrap; font-variant-numeric: tabular-nums;">
               ${timeStr}
             </span>
-            <button type="button" id="arena-timer-start-standoff-${state.lessonId}" onclick="window.${a.standoffTimerRunning ? 'pauseArenaTimer' : 'startArenaTimer'}('${state.lessonId}', 'standoff', 60)" style="background: ${a.standoffTimerRunning ? '#f59e0b' : '#10b981'}; color: #ffffff; border: none; padding: 4px 10px; border-radius: 5px; font-weight: 700; font-size: 0.72rem; cursor: pointer;">
+            <button type="button" id="arena-timer-start-standoff-${state.lessonId}" onclick="window.${a.standoffTimerRunning ? 'pauseArenaTimer' : 'startArenaTimer'}('${state.lessonId}', 'standoff', 60)" style="background: ${a.standoffTimerRunning ? '#f59e0b' : '#10b981'}; color: #ffffff; border: none; padding: 4px 10px; border-radius: 5px; font-weight: 700; font-size: 0.72rem; cursor: pointer; white-space: nowrap;">
               <i class="fa-solid ${a.standoffTimerRunning ? 'fa-pause' : 'fa-play'}"></i> ${a.standoffTimerRunning ? 'Pause' : 'Start'}
             </button>
             <button type="button" onclick="window.resetArenaTimer('${state.lessonId}', 'standoff', 60)" title="Reset duel" style="background: transparent; color: #64748b; border: none; padding: 4px; cursor: pointer;">
@@ -2147,11 +2147,11 @@ function renderArenaStandoffView(state, arenaData, isWhiteboard) {
       </div>
 
       <!-- Side-by-Side Facing Dual Cards -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; max-width: 100%; box-sizing: border-box;">
         <!-- Partner A Card (Blue) -->
-        <div id="standoff-card-a-${state.lessonId}" style="background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 2.5px solid ${isRoleA ? '#2563eb' : (isWhiteboard ? '#334155' : '#cbd5e1')}; border-radius: 14px; padding: 20px; box-shadow: ${isRoleA ? '0 0 0 3px rgba(37,99,235,0.3)' : 'none'}; opacity: ${isRoleA ? '1' : '0.7'}; transition: all 0.25s ease;">
+        <div id="standoff-card-a-${state.lessonId}" style="background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 2.5px solid ${isRoleA ? '#2563eb' : (isWhiteboard ? '#334155' : '#cbd5e1')}; border-radius: 14px; padding: clamp(14px, 3.5vw, 20px); box-shadow: ${isRoleA ? '0 0 0 3px rgba(37,99,235,0.3)' : 'none'}; opacity: ${isRoleA ? '1' : '0.7'}; transition: all 0.25s ease; min-width: 0; box-sizing: border-box; overflow-wrap: break-word; word-break: break-word;">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
-            <span style="background: #2563eb; color: #ffffff; padding: 3px 10px; border-radius: 6px; font-weight: 800; font-size: 0.78rem; text-transform: uppercase;">
+            <span style="background: #2563eb; color: #ffffff; padding: 4px 10px; border-radius: 6px; font-weight: 800; font-size: 0.78rem; text-transform: uppercase; max-width: 100%; line-height: 1.35; overflow-wrap: break-word; word-break: break-word;">
               🛡️ PARTNER A: ${pair.roleA.name}
             </span>
             <span style="font-size: 0.75rem; font-weight: 700; color: #3b82f6;">First 30 Seconds</span>
@@ -2169,9 +2169,9 @@ function renderArenaStandoffView(state, arenaData, isWhiteboard) {
         </div>
 
         <!-- Partner B Card (Crimson) -->
-        <div id="standoff-card-b-${state.lessonId}" style="background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 2.5px solid ${!isRoleA ? '#dc2626' : (isWhiteboard ? '#334155' : '#cbd5e1')}; border-radius: 14px; padding: 20px; box-shadow: ${!isRoleA ? '0 0 0 3px rgba(220,38,38,0.3)' : 'none'}; opacity: ${!isRoleA ? '1' : '0.7'}; transition: all 0.25s ease;">
+        <div id="standoff-card-b-${state.lessonId}" style="background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 2.5px solid ${!isRoleA ? '#dc2626' : (isWhiteboard ? '#334155' : '#cbd5e1')}; border-radius: 14px; padding: clamp(14px, 3.5vw, 20px); box-shadow: ${!isRoleA ? '0 0 0 3px rgba(220,38,38,0.3)' : 'none'}; opacity: ${!isRoleA ? '1' : '0.7'}; transition: all 0.25s ease; min-width: 0; box-sizing: border-box; overflow-wrap: break-word; word-break: break-word;">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
-            <span style="background: #dc2626; color: #ffffff; padding: 3px 10px; border-radius: 6px; font-weight: 800; font-size: 0.78rem; text-transform: uppercase;">
+            <span style="background: #dc2626; color: #ffffff; padding: 4px 10px; border-radius: 6px; font-weight: 800; font-size: 0.78rem; text-transform: uppercase; max-width: 100%; line-height: 1.35; overflow-wrap: break-word; word-break: break-word;">
               ⚔️ PARTNER B: ${pair.roleB.name}
             </span>
             <span style="font-size: 0.75rem; font-weight: 700; color: #ef4444;">Second 30 Seconds</span>
@@ -2385,7 +2385,7 @@ window.toggleStationTimelineDone = function (lessonId, checked) {
   state.timelineDone = checked;
   try {
     localStorage.setItem('timeline_done_' + lessonId, checked ? 'true' : 'false');
-  } catch (e) {}
+  } catch (e) { }
   renderStationContent(lessonId);
 };
 
@@ -2395,7 +2395,7 @@ window.selectStationTimelinePathway = function (lessonId, pathway) {
   state.timelinePathway = pathway;
   try {
     localStorage.setItem('timeline_pathway_' + lessonId, pathway);
-  } catch (e) {}
+  } catch (e) { }
   renderStationContent(lessonId);
 };
 
@@ -2509,7 +2509,7 @@ window.handleExitTicketInput = function (lessonId, text) {
 
   try {
     localStorage.setItem('exit_ticket_' + lessonId, text);
-  } catch (e) {}
+  } catch (e) { }
 
   const counterEl = document.getElementById(`exit-counter-${lessonId}`);
   if (counterEl) {
@@ -2526,7 +2526,7 @@ window.submitStationExitTicket = function (lessonId) {
     state.exitResponse = input.value;
     try {
       localStorage.setItem('exit_ticket_' + lessonId, input.value);
-    } catch (e) {}
+    } catch (e) { }
   }
   state.exitSubmitted = true;
   state.showExitModel = true; // Auto-reveal model on submit
@@ -2695,7 +2695,7 @@ window.setArenaClassSize = function (lessonId, size) {
   state.arena.targetStudents = parsed;
   try {
     localStorage.setItem('history_arena_class_size', parsed.toString());
-  } catch (e) {}
+  } catch (e) { }
   if ((state.arena.seatedCount || 0) > parsed) {
     state.arena.seatedCount = parsed;
   }

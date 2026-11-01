@@ -171,9 +171,9 @@ export function ensureCmeTheaterMapModalInDOM() {
       </div>
 
       <!-- Bottom Hint Bar -->
-      <div style="padding: 6px 18px; background: #070d19; border-top: 1px solid #1e293b; font-size: 0.72rem; color: #94a3b8; display: flex; align-items: center; justify-content: space-between;">
-        <span id="cme-bottom-hint"><strong>Tip:</strong> Click and drag to pan across the Sinai, Golan, West Bank, Suez, and surrounding borders. Use mouse wheel or <kbd style="background: #1e293b; padding: 1px 4px; border-radius: 3px; color: #e2e8f0;">+</kbd>/<kbd style="background: #1e293b; padding: 1px 4px; border-radius: 3px; color: #e2e8f0;">−</kbd> to inspect fine topographical and border details.</span>
-        <span style="color: #38bdf8; font-weight: 700;">Press <kbd style="background: #1e293b; padding: 1px 4px; border-radius: 3px; color: #38bdf8; border: 1px solid #334155;">Esc</kbd> or <kbd style="background: #1e293b; padding: 1px 4px; border-radius: 3px; color: #38bdf8; border: 1px solid #334155;">M</kbd> to return to lesson</span>
+      <div class="cme-map-modal-footer" style="padding: 8px 18px; background: #070d19; border-top: 1px solid #1e293b; font-size: 0.72rem; color: #94a3b8; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+        <span id="cme-bottom-hint"><strong>Tip:</strong> Drag to pan &bull; Pinch, wheel or tap +/− to zoom</span>
+        <span class="cme-desktop-shortcuts" style="color: #38bdf8; font-weight: 700;">Press <kbd style="background: #1e293b; padding: 1px 4px; border-radius: 3px; color: #38bdf8; border: 1px solid #334155;">Esc</kbd> or <kbd style="background: #1e293b; padding: 1px 4px; border-radius: 3px; color: #38bdf8; border: 1px solid #334155;">M</kbd> to return</span>
       </div>
     </div>
   `;
@@ -221,6 +221,61 @@ function initMapDragAndZoomEvents(modal) {
       if (vp) vp.style.cursor = 'grab';
     }
   });
+
+  // Touch Drag-to-Pan & Multi-Touch Pinch-to-Zoom for Mobile Devices
+  let touchStartDist = 0;
+  let initialZoom = 1;
+
+  viewport.addEventListener(
+    'touchstart',
+    (e) => {
+      if (e.touches.length === 1) {
+        isDragging = true;
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        startPanX = panX;
+        startPanY = panY;
+      } else if (e.touches.length === 2) {
+        isDragging = false;
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchStartDist = Math.hypot(dx, dy);
+        initialZoom = currentZoom;
+      }
+    },
+    { passive: true },
+  );
+
+  window.addEventListener(
+    'touchmove',
+    (e) => {
+      if (isDragging && e.touches.length === 1) {
+        panX = startPanX + (e.touches[0].clientX - startX);
+        panY = startPanY + (e.touches[0].clientY - startY);
+        updateMapTransform();
+      } else if (e.touches.length === 2 && touchStartDist > 0) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const dist = Math.hypot(dx, dy);
+        const scale = dist / touchStartDist;
+        const nextZoom = Math.min(Math.max(0.6, initialZoom * scale), 4.0);
+        currentZoom = parseFloat(nextZoom.toFixed(2));
+        updateMapTransform();
+      }
+    },
+    { passive: true },
+  );
+
+  window.addEventListener(
+    'touchend',
+    (e) => {
+      if (e.touches.length === 0) {
+        isDragging = false;
+        touchStartDist = 0;
+      }
+    },
+    { passive: true },
+  );
 
   viewport.addEventListener(
     'wheel',

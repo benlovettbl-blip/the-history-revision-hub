@@ -8123,26 +8123,26 @@ export function renderLesson(lesson) {
 
         htmlTasks += `
             <details class="lesson-tasks-accordion phase-card" open style="margin-top: 32px; border: 1.5px solid #cbd5e1; border-radius: 12px; background: #ffffff; overflow: hidden; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); padding: 0;">
-              <summary style="cursor: pointer; padding: 16px 22px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); display: flex; justify-content: space-between; align-items: center; user-select: none; border-bottom: 1px solid #e2e8f0; list-style: none; outline: none; transition: background 0.15s ease;">
-                <div style="display: flex; align-items: center; gap: 14px;">
+              <summary class="lesson-tasks-summary" style="cursor: pointer; padding: clamp(12px, 3vw, 16px) clamp(14px, 3.5vw, 22px); background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; user-select: none; border-bottom: 1px solid #e2e8f0; list-style: none; outline: none; transition: background 0.15s ease;">
+                <div style="display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1 1 auto;">
                   <div style="width: 38px; height: 38px; border-radius: 8px; background: ${iconBg}; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; flex-shrink: 0; box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);">
                     <i class="fa-solid fa-book-open"></i>
                   </div>
-                  <div>
-                    <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #1e40af; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
+                  <div style="min-width: 0;">
+                    <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #1e40af; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
                       ${tasksCategoryBadge}
                       <span style="color: #94a3b8;">&bull;</span>
                       <span>${tasksSecondaryBadge}</span>
                     </div>
-                    <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; font-weight: 700; color: #0f172a;">${tasksHeading}</div>
+                    <div style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(0.95rem, 3.5vw, 1.15rem); font-weight: 700; color: #0f172a; word-break: break-word;">${tasksHeading}</div>
                   </div>
                 </div>
-                <div style="display: flex; align-items: center; gap: 12px;">
-                  <span style="font-size: 0.78rem; font-weight: 700; background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 14px; display: inline-flex; align-items: center; gap: 5px;">
+                <div class="lesson-tasks-summary-actions" style="display: flex; align-items: center; gap: 10px; flex-shrink: 0;">
+                  <span style="font-size: 0.78rem; font-weight: 700; background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 14px; display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;">
                     <i class="fa-solid fa-layer-group"></i> ${tasksCountLabel}
                   </span>
-                  <span style="font-size: 0.85rem; font-weight: 700; color: #64748b; display: inline-flex; align-items: center; gap: 6px;">
-                    <span>Click to Collapse/Expand</span>
+                  <span style="font-size: 0.85rem; font-weight: 700; color: #64748b; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;">
+                    <span class="accordion-expand-hint">Click to Collapse/Expand</span>
                     <i class="fa-solid fa-chevron-down accordion-arrow" style="transition: transform 0.2s ease;"></i>
                   </span>
                 </div>

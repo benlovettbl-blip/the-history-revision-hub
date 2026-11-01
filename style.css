@@ -2244,19 +2244,36 @@ img::after {
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 1000 !important;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 2500 !important;
+    box-shadow: none !important;
+    visibility: hidden;
+    pointer-events: none;
+    padding-bottom: calc(85px + env(safe-area-inset-bottom, 20px)) !important;
   }
 
   .app-sidebar.mobile-open,
   .sidebar.mobile-open {
     transform: translateX(0);
+    visibility: visible !important;
+    pointer-events: auto !important;
+    box-shadow: 4px 0 30px rgba(0, 0, 0, 0.5) !important;
   }
 
   /* Sidebar Mobile Close Button */
   .sidebar-close-btn {
     display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
   }
 
   .content-area,
@@ -2294,8 +2311,9 @@ img::after {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 2400;
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -2345,6 +2363,12 @@ img::after {
     text-overflow: ellipsis !important;
   }
 
+  /* Hide header mobile brand when back button is active so icons don't collide */
+  .app-header.has-back-btn .header-mobile-brand,
+  .header-left:has(.back-btn:not([style*="display: none"])) .header-mobile-brand {
+    display: none !important;
+  }
+
   .back-btn {
     padding: 5px 10px !important;
     font-size: 0.78rem !important;
@@ -2358,6 +2382,63 @@ img::after {
     gap: 5px !important;
     margin: 0 !important;
     flex-shrink: 0 !important;
+  }
+
+  /* Mobile Ergonomics for Launchpad, Accordions, Portals, and Quizzing */
+  .launchpad-bar {
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    scroll-snap-type: x proximity !important;
+  }
+
+  .launchpad-bar::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .launchpad-tab-btn {
+    scroll-snap-align: start !important;
+  }
+
+  .lesson-tasks-summary,
+  .lesson-tasks-accordion summary {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .accordion-expand-hint {
+    display: none !important;
+  }
+
+  .department-portal-wrapper {
+    padding: 12px 8px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  #fc-topic-chip {
+    max-width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  .search-modal-filters {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  .search-modal-filters::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .search-modal-stage-filters {
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .search-footer-shortcuts,
+  .cme-desktop-shortcuts {
+    display: none !important;
   }
 
   /* Make header tool buttons ultra-compact on mobile: icons only, minimal padding */
@@ -7421,6 +7502,72 @@ details.spotlight-drawer[open] summary i.fa-chevron-down {
   min-height: 0;
 }
 
+.cme-spine-date-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.cme-spine-date-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #0284c7;
+  line-height: 1.25;
+}
+
+.cme-spine-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.63rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 4px;
+  line-height: 1.35;
+}
+
+.cme-spine-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+  line-height: 1.25;
+}
+
+.cme-spine-question {
+  background: #f0f9ff;
+  border-left: 3px solid #0284c7;
+  padding: 5px 8px;
+  border-radius: 0 4px 4px 0;
+  margin: 4px 0 8px 0;
+  box-sizing: border-box;
+}
+
+.cme-spine-question-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: #0369a1;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cme-spine-question-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.32;
+  font-style: italic;
+}
+
 .cme-spine-causal-drawer[open] .drawer-chevron,
 .cme-domino-step[open] > summary .drawer-chevron {
   transform: rotate(180deg);
@@ -10375,45 +10522,4 @@ details.source-enquiry-reveal .reveal-arrow {
 .archival-source-details-col .archival-source-inline-enquiry {
   width: 100%;
   margin-top: 4px;
-}
-
-/* --- Embedded Check & Consolidate Station --- */
-.consolidate-station {
-  transition: all 0.2s ease;
-}
-.station-opt-btn:not([disabled]):hover {
-  border-color: #3b82f6 !important;
-  background-color: #f0f9ff !important;
-  transform: translateX(4px);
-}
-.station-tab-btn.active {
-  background: #ffffff !important;
-  color: #0f172a !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-.station-score-pill {
-  background: #f0fdf4;
-  color: #166534;
-  border: 1.5px solid #86efac;
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-weight: 700;
-  font-size: 0.78rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-}
-[data-theme='space'] .consolidate-station,
-[data-theme='desert'] .consolidate-station {
-  background: var(--bg-card) !important;
-  border-color: var(--border-color) !important;
-}
-[data-theme='space'] .station-opt-btn:not([disabled]) {
-  background: rgba(30, 41, 59, 0.7) !important;
-  color: #f8fafc !important;
-  border-color: #334155 !important;
-}
-[data-theme='space'] .station-opt-btn:not([disabled]):hover {
-  background: rgba(59, 130, 246, 0.2) !important;
-  border-color: #60a5fa !important;
 }

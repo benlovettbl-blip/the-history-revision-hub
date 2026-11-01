@@ -26,11 +26,19 @@ export function initNavigationUI() {
   appStore.subscribe('currentView', (viewName) => {
     // Manage Back Button (suppressed on dashboard and lessons view where breadcrumbs handle navigation)
     const backBtn = document.getElementById('header-back-btn');
+    const mobileBrand = document.getElementById('header-mobile-brand');
+    const appHeader = document.querySelector('.app-header');
     if (backBtn) {
       if (viewName === 'dashboard' || viewName === 'lessons') {
         backBtn.style.display = 'none';
+        if (appHeader) appHeader.classList.remove('has-back-btn');
+        if (mobileBrand) mobileBrand.style.display = '';
       } else {
         backBtn.style.display = 'flex';
+        if (appHeader) appHeader.classList.add('has-back-btn');
+        if (mobileBrand && window.innerWidth <= 768) {
+          mobileBrand.style.display = 'none';
+        }
       }
     }
 

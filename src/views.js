@@ -1218,11 +1218,11 @@ export function renderInteractiveQuiz() {
         
         <!-- Flashcard Deck Header Bar -->
         <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 10px 16px; margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <span id="fc-progress-badge" style="background: #4f46e5; color: white; font-size: 0.76rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; letter-spacing: 0.5px;">
+          <div style="display: flex; align-items: center; gap: 8px; flex: 1 1 auto; min-width: 0; overflow: hidden;">
+            <span id="fc-progress-badge" style="background: #4f46e5; color: white; font-size: 0.76rem; font-weight: 800; padding: 4px 8px; border-radius: 6px; letter-spacing: 0.5px; flex-shrink: 0; white-space: nowrap;">
               Card 1 of ${allCards.length}
             </span>
-            <span id="fc-topic-chip" style="color: #334155; font-size: 0.82rem; font-weight: 700; max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+            <span id="fc-topic-chip" style="color: #334155; font-size: 0.82rem; font-weight: 700; flex: 1 1 auto; min-width: 0; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
               ${allCards[0]?.topic || 'Core Knowledge'}
             </span>
           </div>
