@@ -326,39 +326,18 @@ export function getSpeechRate() {
 }
 
 /**
- * Generates the compact HTML playback bar containing speed pills, voice toggle,
- * and read-aloud / stop buttons.
+ * Generates the clean, minimalist single-button HTML playback trigger.
+ * Eliminates redundant speed and voice cockpit clutter from paragraph headers.
+ * Full speed and voice controls remain easily accessible in the floating player when playing,
+ * and voice toggle is also available in the application header.
  */
 export function renderAudioPlaybackBar(buttonTitle = 'Read Aloud', customClass = '') {
-  const rate = getSpeechRate();
-  const rates = [0.85, 1.0, 1.15];
-  const pillHtml = rates
-    .map((r) => {
-      const isSelected = Math.abs(rate - r) < 0.05;
-      return `<button type="button" class="speech-speed-opt ${isSelected ? 'active' : ''}" data-action="change-speech-rate" data-rate="${r}" title="Playback speed ${r}x">${r}x</button>`;
-    })
-    .join('');
-
-  const gender = getVoiceGender();
-  const voiceIcon =
-    gender === 'male' ? '<i class="fa-solid fa-mars"></i>' : '<i class="fa-solid fa-venus"></i>';
-  const voiceTitle =
-    gender === 'male'
-      ? 'Voice: Natural UK Male (Click to switch to Female)'
-      : 'Voice: Natural UK Female (Click to switch to Male)';
-
   return `
     <div class="read-aloud-playback-bar no-print ${customClass}" role="region" aria-label="Audio Controls">
-      <div class="speech-speed-pill" role="group" aria-label="Playback Speed">
-        ${pillHtml}
-      </div>
-      <button type="button" class="speech-voice-opt ${gender === 'male' ? 'voice-male' : 'voice-female'}" data-action="toggle-speech-voice-gender" title="${voiceTitle}" aria-label="Toggle voice gender">
-        ${voiceIcon}
-      </button>
-      <button type="button" class="btn btn-secondary read-aloud-btn" data-action="read-aloud" title="${buttonTitle}">
+      <button type="button" class="btn read-aloud-btn" data-action="read-aloud" title="${buttonTitle}" aria-label="${buttonTitle}">
         <i class="fa-solid fa-volume-high"></i>
       </button>
-      <button type="button" class="read-aloud-stop-btn" data-action="stop-speech" title="Stop Reading" style="display: none;">
+      <button type="button" class="read-aloud-stop-btn" data-action="stop-speech" title="Stop Reading" aria-label="Stop Reading" style="display: none;">
         <i class="fa-solid fa-stop"></i>
       </button>
     </div>
@@ -476,15 +455,22 @@ let floatingAudioObserver = null;
 function updateFloatingAudioPlayerState() {
   if (!floatingAudioPlayerEl) return;
   const pauseBtn = floatingAudioPlayerEl.querySelector('#sfp-pause-btn');
-  const speedLabel = floatingAudioPlayerEl.querySelector('.sfp-speed-label');
+  const speedBtn = floatingAudioPlayerEl.querySelector('#sfp-speed-btn');
+  const voiceBtn = floatingAudioPlayerEl.querySelector('#sfp-voice-btn');
   if (pauseBtn) {
     pauseBtn.innerHTML = isPaused
       ? '<i class="fa-solid fa-play"></i>'
       : '<i class="fa-solid fa-pause"></i>';
     pauseBtn.title = isPaused ? 'Resume Reading' : 'Pause Reading';
   }
-  if (speedLabel) {
-    speedLabel.textContent = `${currentSpeechRate}x ${currentVoiceGender === 'male' ? '♂' : '♀'}`;
+  if (speedBtn) {
+    speedBtn.textContent = `${currentSpeechRate}x`;
+    speedBtn.title = `Playback speed: ${currentSpeechRate}x (Click to cycle 0.85x, 1x, 1.15x)`;
+  }
+  if (voiceBtn) {
+    const isMale = currentVoiceGender === 'male';
+    voiceBtn.innerHTML = isMale ? '<i class="fa-solid fa-mars"></i> UK ♂' : '<i class="fa-solid fa-venus"></i> UK ♀';
+    voiceBtn.title = `Voice: ${isMale ? 'Natural UK Male' : 'Natural UK Female'} (Click to switch)`;
   }
 }
 
@@ -496,10 +482,16 @@ function showFloatingAudioPlayer() {
     floatingAudioPlayerEl.className = 'speech-floating-player no-print';
     floatingAudioPlayerEl.setAttribute('role', 'region');
     floatingAudioPlayerEl.setAttribute('aria-label', 'Floating Audio Playback Controller');
+    const isMale = currentVoiceGender === 'male';
     floatingAudioPlayerEl.innerHTML = `
       <div class="sfp-content">
-        <span class="sfp-indicator"><i class="fa-solid fa-volume-high fa-beat-fade"></i> <span class="sfp-label">Reading Aloud</span></span>
-        <span class="sfp-speed-label">${currentSpeechRate}x ${currentVoiceGender === 'male' ? '♂' : '♀'}</span>
+        <span class="sfp-indicator"><i class="fa-solid fa-volume-high fa-beat-fade"></i> <span class="sfp-label">Reading</span></span>
+        <button type="button" class="sfp-btn sfp-speed-toggle" id="sfp-speed-btn" title="Playback speed: ${currentSpeechRate}x (Click to cycle 0.85x, 1x, 1.15x)">
+          ${currentSpeechRate}x
+        </button>
+        <button type="button" class="sfp-btn sfp-voice-toggle" id="sfp-voice-btn" title="Voice: ${isMale ? 'Natural UK Male' : 'Natural UK Female'} (Click to switch)">
+          ${isMale ? '<i class="fa-solid fa-mars"></i> UK ♂' : '<i class="fa-solid fa-venus"></i> UK ♀'}
+        </button>
         <button type="button" class="sfp-btn sfp-pause-btn" id="sfp-pause-btn" title="Pause Reading">
           <i class="fa-solid fa-pause"></i>
         </button>
@@ -509,6 +501,21 @@ function showFloatingAudioPlayer() {
       </div>
     `;
     document.body.appendChild(floatingAudioPlayerEl);
+
+    floatingAudioPlayerEl.querySelector('#sfp-speed-btn')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const speeds = [0.85, 1.0, 1.15];
+      const curIdx = speeds.findIndex((s) => Math.abs(s - currentSpeechRate) < 0.05);
+      const nextIdx = (curIdx + 1) % speeds.length;
+      setSpeechRate(speeds[nextIdx]);
+      updateFloatingAudioPlayerState();
+    });
+
+    floatingAudioPlayerEl.querySelector('#sfp-voice-btn')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleVoiceGender();
+      updateFloatingAudioPlayerState();
+    });
 
     floatingAudioPlayerEl.querySelector('#sfp-pause-btn')?.addEventListener('click', (e) => {
       e.stopPropagation();

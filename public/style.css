@@ -3846,117 +3846,96 @@ body.sen-mode .narrative-chunk.reading-highlight {
   opacity: 0.95;
 }
 
-/* In-Lesson Audio Playback Bar & Speed Pill */
+/* In-Lesson Audio Playback Bar (Clean Minimalist Single-Button Standard) */
 .read-aloud-playback-bar {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: var(--bg-card, #ffffff);
-  border: 1px solid var(--border-glass, #e2e8f0);
-  border-radius: 20px;
-  padding: 3px 4px 3px 7px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
   flex-shrink: 0;
   margin-left: 10px;
   vertical-align: middle;
 }
 
-.speech-speed-pill {
-  display: inline-flex;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
-  padding: 1px;
-  gap: 1px;
-}
-
-.speech-speed-opt {
-  border: none;
-  background: transparent;
-  color: var(--text-muted, #64748b);
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 2px 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  line-height: 1.2;
-  user-select: none;
-}
-
-.speech-speed-opt:hover {
-  color: var(--text-main, #0f172a);
-  background: rgba(0, 0, 0, 0.06);
-}
-
-.speech-speed-opt.active {
-  background: var(--primary, #2563eb);
-  color: #ffffff !important;
-  box-shadow: 0 1px 2px rgba(37, 99, 235, 0.3);
-}
-
-.read-aloud-playback-bar .speech-voice-opt {
-  border: none;
-  background: rgba(0, 0, 0, 0.05);
-  color: var(--text-muted, #64748b);
-  font-size: 0.76rem;
-  font-weight: 700;
-  padding: 3px 6px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  line-height: 1.2;
-  user-select: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 2px;
-}
-
-.read-aloud-playback-bar .speech-voice-opt:hover {
-  color: var(--text-main, #0f172a);
-  background: rgba(0, 0, 0, 0.08);
-}
-
-.read-aloud-playback-bar .speech-voice-opt.voice-female {
-  color: #db2777;
-}
-
-.read-aloud-playback-bar .speech-voice-opt.voice-male {
-  color: #2563eb;
-}
-
 .read-aloud-playback-bar .read-aloud-btn {
-  padding: 5px 8px !important;
-  font-size: 0.82rem !important;
+  width: 30px;
+  height: 30px;
   border-radius: 50% !important;
-  width: 28px;
-  height: 28px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 1px !important;
-  border: none !important;
-  background: #f1f5f9;
+  background: rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.15) !important;
   color: #334155;
   cursor: pointer;
   transition: all 0.2s ease;
+  font-size: 0.82rem !important;
+  padding: 0 !important;
 }
 
 .read-aloud-playback-bar .read-aloud-btn:hover {
-  background: #e2e8f0;
-  color: #0f172a;
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7 !important;
+  transform: scale(1.06);
 }
 
 .read-aloud-playback-bar .read-aloud-btn.reading-active {
-  background: #2563eb !important;
+  background: #0284c7 !important;
   color: #ffffff !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.45);
 }
 
 .read-aloud-playback-bar .read-aloud-btn.reading-paused {
   background: #f59e0b !important;
   color: #ffffff !important;
   animation: pulse-pause 1.8s infinite;
+}
+
+.read-aloud-playback-bar .read-aloud-stop-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50% !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fee2e2;
+  border: 1px solid #fca5a5 !important;
+  color: #dc2626;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.78rem !important;
+  padding: 0 !important;
+}
+
+.read-aloud-playback-bar .read-aloud-stop-btn:hover {
+  background: #ef4444;
+  color: #ffffff;
+  transform: scale(1.06);
+}
+
+/* Subtle Dark Integration in Unified Stage Header Cards */
+.unified-stage-header-card .read-aloud-playback-bar .read-aloud-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #cbd5e1;
+}
+
+.unified-stage-header-card .read-aloud-playback-bar .read-aloud-btn:hover {
+  background: rgba(56, 189, 248, 0.28);
+  border-color: #38bdf8 !important;
+  color: #ffffff;
+}
+
+.unified-stage-header-card .read-aloud-playback-bar .read-aloud-btn.reading-active {
+  background: #0284c7 !important;
+  border-color: #38bdf8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
 }
 
 @keyframes pulse-pause {
@@ -4120,7 +4099,7 @@ body.sen-mode .read-aloud-playback-bar .read-aloud-btn.reading-paused {
 
 .sfp-btn {
   background: rgba(255, 255, 255, 0.12);
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: #ffffff;
   width: 30px;
   height: 30px;
@@ -4131,6 +4110,16 @@ body.sen-mode .read-aloud-playback-bar .read-aloud-btn.reading-paused {
   font-size: 0.82rem;
   cursor: pointer;
   transition: all 0.15s ease;
+}
+
+.sfp-btn.sfp-speed-toggle,
+.sfp-btn.sfp-voice-toggle {
+  width: auto;
+  border-radius: 12px;
+  padding: 3px 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  gap: 4px;
 }
 
 .sfp-btn:hover {
