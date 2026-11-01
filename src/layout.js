@@ -433,75 +433,34 @@ export function bindEvents() {
       if (titleSpan) titleSpan.textContent = 'Units of Study';
     }
 
-    const underConstructionIds = [];
-    const year7Units = getOrderedUnits(['water_and_sanitation', 'medieval_england']);
-    const year8Units = getOrderedUnits([
+    const ks3Units = getOrderedUnits([
+      'water_and_sanitation',
+      'medieval_england',
       'monarchy_religion_power',
       'first_british_empire',
       'industrialisation_and_empire',
       'second_british_empire',
       'australia',
-    ]);
-    const year9Units = getOrderedUnits([
       'great_war',
       'great_war_part2',
       'the_shoah',
       'cold_war',
       'post_war_britain',
     ]);
-    const year10Units = getOrderedUnits(['cme_new', 'weimar_nazi_germany']);
-    const year11Units = getOrderedUnits(['edexcel_medicine', 'eee', 'usa']);
+    const gcseUnits = getOrderedUnits([
+      'edexcel_medicine',
+      'eee',
+      'weimar_nazi_germany',
+      'cme_new',
+      'usa',
+    ]);
+    const ks2Units = getOrderedUnits(['ks2_ww2']);
 
-    renderAccordionGroup('Year 7', year7Units, false);
-    renderAccordionGroup('Year 8', year8Units, false);
-
-    // Year 9: show accordion even when only coming-soon units exist
-    const header9 = document.createElement('div');
-    header9.innerHTML = `<span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); font-weight: 600; display: flex; align-items: center; justify-content: space-between;"><span style="flex-grow: 1;">Year 9</span><i class="fa-solid fa-chevron-down" style="transition: transform 0.2s; font-size: 0.7rem;"></i></span>`;
-    header9.style.margin = '10px 16px 8px';
-    header9.style.cursor = 'pointer';
-    const content9 = document.createElement('div');
-    content9.className = 'accordion-content';
-    content9.style.display = 'none';
-    header9.addEventListener('click', () => {
-      const isOpen = content9.style.display === 'block';
-      content9.style.display = isOpen ? 'none' : 'block';
-      const icon = header9.querySelector('i');
-      icon.classList.toggle('fa-chevron-up', !isOpen);
-      icon.classList.toggle('fa-chevron-down', isOpen);
-    });
-    if (year9Units.length > 0) {
-      year9Units.forEach((unit) => {
-        const link = document.createElement('div');
-        link.className = 'nav-item';
-        link.setAttribute('data-unit-id', unit.id);
-        link.style.cssText =
-          'cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 16px;border-radius:6px;margin:0 8px 4px 8px;color:rgba(255,255,255,0.85);';
-        link.addEventListener('mouseenter', () => {
-          if (!link.classList.contains('active-unit-tree-item')) {
-            link.style.background = 'rgba(255,255,255,0.1)';
-            link.style.color = '#fff';
-          }
-        });
-        link.addEventListener('mouseleave', () => {
-          if (!link.classList.contains('active-unit-tree-item')) {
-            link.style.background = 'transparent';
-            link.style.color = 'rgba(255,255,255,0.85)';
-          }
-        });
-        link.innerHTML = `<i class="fa-solid fa-book" style="opacity: 0.7; width: 20px; text-align: center;"></i> <span style="font-size: 0.85rem; line-height: 1.2;">${unit.title || 'Untitled Unit'}</span>`;
-        link.addEventListener('click', () => {
-          if (window.launchSubApp) window.launchSubApp(unit.id);
-        });
-        content9.appendChild(link);
-      });
+    renderAccordionGroup('Key Stage 3 (KS3)', ks3Units, false);
+    renderAccordionGroup('GCSE (9–1)', gcseUnits, false);
+    if (ks2Units.length > 0) {
+      renderAccordionGroup('Key Stage 2 (Primary)', ks2Units, false);
     }
-
-    sidebarUnitsContainer.appendChild(header9);
-    sidebarUnitsContainer.appendChild(content9);
-
-    renderAccordionGroup('Year 10 (GCSE)', year10Units, false);
-    renderAccordionGroup('Year 11 (GCSE)', year11Units, false);
   }
 }
 

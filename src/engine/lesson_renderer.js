@@ -3682,15 +3682,19 @@ export function renderLesson(lesson) {
     stickyCountLabel = lesson.title || '';
   }
 
-  const stickyAnchorText = isTrip
-    ? `${lessonPrefix}: ${lesson.title.split('(')[0].trim()}`
-    : `<span class="sticky-lesson-prefix" style="color: #1e3a8a; font-weight: 800; font-family: 'Inter', sans-serif; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">${lessonPrefix}</span> <span style="color: #94a3b8; margin: 0 4px;">&bull;</span> <span class="sticky-lesson-enquiry-count" style="color: #475569; font-weight: 600; font-family: 'Inter', sans-serif; font-size: 0.92rem;">${stickyCountLabel}</span>`;
+  let stickyAnchorText = '';
+  if (isTrip) {
+    stickyAnchorText = `${lessonPrefix}: ${lesson.title.split('(')[0].trim()}`;
+  } else if (isGCSEUnit && ktMatch) {
+    stickyAnchorText = `<span class="sticky-lesson-prefix" style="color: #1e3a8a; font-weight: 800; font-family: 'Inter', sans-serif; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">${lessonPrefix}</span> <span style="color: #94a3b8; margin: 0 4px;">&bull;</span> <span class="sticky-lesson-enquiry-count" style="color: #475569; font-weight: 600; font-family: 'Inter', sans-serif; font-size: 0.92rem;">Lesson ${currentIndex + 1} of ${allUnitLessons.length}</span>`;
+  } else {
+    stickyAnchorText = `<span class="sticky-lesson-enquiry-count" style="color: #1e3a8a; font-weight: 800; font-family: 'Inter', sans-serif; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">${stickyCountLabel}</span>`;
+  }
 
   html += `
       <div class="sticky-lesson-header">
           <h4 class="sticky-lesson-title" title="${(lesson.title || '').replace(/"/g, '&quot;')}">
             ${stickyAnchorText}
-            <span class="edition-badge" title="Curriculum Edition" style="display: inline-block; font-size: 0.72rem; font-weight: 600; vertical-align: middle; margin-left: 8px; padding: 2px 7px; border-radius: 10px; background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; letter-spacing: 0.5px; font-family: 'Inter', sans-serif;">Edition ${activeUnit.edition || '2026.1'}</span>
           </h4>
           <div class="sticky-lesson-actions">
           ${
@@ -3799,23 +3803,38 @@ export function renderLesson(lesson) {
 
   // Full-Bleed Hero Image (Calibrated Height: 185px for KS2, 140px for Secondary/GCSE)
   const heroBannerHeight = isKs2 ? '185px' : '140px';
-  const enquiryText =
-    lesson.enquiryQuestion || lesson.enquiry_question || lesson.inquiry_question || '';
-  const enquirySubtitle = enquiryText
-    ? `<p class="lesson-hero-enquiry-sub" style="font-family: 'Lora', Georgia, serif; font-style: italic; color: #fef08a; font-size: 0.95rem; margin: 0.35rem 0 0 0; line-height: 1.35; text-shadow: 0 1px 3px rgba(0,0,0,0.8);"><i class="fa-solid fa-circle-question" style="color: #fde047; font-size: 0.82rem; margin-right: 6px;"></i>Key Enquiry: &ldquo;${enquiryText}&rdquo;</p>`
-    : lesson.subtitle
-      ? `<p class="lesson-hero-subtitle" style="font-family: 'Inter', sans-serif; color: #e2e8f0; font-size: 0.88rem; margin: 0.3rem 0 0 0; line-height: 1.3; text-shadow: 0 1px 3px rgba(0,0,0,0.8);">${lesson.subtitle}</p>`
-      : '';
-
   const cleanLessonHeading = (lesson.title || '')
     .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
     .trim();
 
+  const isHeadingAQuestion =
+    /\?\s*$/.test(cleanLessonHeading) ||
+    /^(?:How|Why|Who|What|Where|When|Was|Were|To what extent)\b/i.test(cleanLessonHeading);
+
+  const enquiryText =
+    lesson.enquiryQuestion || lesson.enquiry_question || lesson.inquiry_question || '';
+
+  let enquirySubtitle = '';
+  if (isHeadingAQuestion && lesson.subtitle) {
+    enquirySubtitle = `<p class="lesson-hero-subtitle" style="font-family: 'Inter', sans-serif; color: #f1f5f9; font-size: 0.9rem; font-weight: 500; margin: 0.35rem 0 0 0; line-height: 1.35; text-shadow: 0 1px 4px rgba(0,0,0,0.8);"><i class="fa-solid fa-compass" style="color: #60a5fa; font-size: 0.8rem; margin-right: 6px;"></i>${lesson.subtitle}</p>`;
+  } else if (enquiryText && enquiryText !== cleanLessonHeading && !isHeadingAQuestion) {
+    enquirySubtitle = `<p class="lesson-hero-enquiry-sub" style="font-family: 'Lora', Georgia, serif; font-style: italic; color: #fef08a; font-size: 0.95rem; margin: 0.35rem 0 0 0; line-height: 1.35; text-shadow: 0 1px 3px rgba(0,0,0,0.8);"><i class="fa-solid fa-circle-question" style="color: #fde047; font-size: 0.82rem; margin-right: 6px;"></i>Key Enquiry: &ldquo;${enquiryText}&rdquo;</p>`;
+  } else if (lesson.subtitle) {
+    enquirySubtitle = `<p class="lesson-hero-subtitle" style="font-family: 'Inter', sans-serif; color: #e2e8f0; font-size: 0.88rem; margin: 0.3rem 0 0 0; line-height: 1.3; text-shadow: 0 1px 3px rgba(0,0,0,0.8);">${lesson.subtitle}</p>`;
+  }
+
+  const unitBadgeTitle = activeUnit?.title
+    ? activeUnit.title.replace(/\s*\([\d–\-]+\)/, '').trim()
+    : 'Curriculum Unit';
+  const heroEyebrow = isTrip
+    ? lessonPrefix
+    : `${unitBadgeTitle} &bull; ${isGCSE ? 'Lesson ' + (currentIndex + 1) : 'Enquiry ' + (currentIndex + 1)}`;
+
   html += `
       <div class="lesson-hero${heroExtraClass}" style="position: relative; width: calc(100% + 8rem); margin-left: -4rem; margin-top: -1rem; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-glass); box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
-        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.25), rgba(15,23,42,0.85));"></div>
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.85) 45%, rgba(15,23,42,0.96) 100%); backdrop-filter: blur(1px);"></div>
         <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1.25rem 4rem;">
-          <span style="color: #cbd5e1; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.82rem;">${lessonPrefix}</span>
+          <span style="color: #cbd5e1; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.78rem;">${heroEyebrow}</span>
           <h2 style="font-family: 'Playfair Display', serif; color: white; font-size: 1.6rem; margin: 0.2rem 0 0 0; line-height: 1.2; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">${cleanLessonHeading}</h2>
           ${enquirySubtitle}
         </div>
@@ -5137,8 +5156,8 @@ export function renderLesson(lesson) {
             <i class="fa-solid fa-compass"></i>
             <span>The Historical Setting</span>
           </div>
-          <p style="margin: 0;">
-            "${prologueText}"
+          <p class="historical-editorial-lede-text">
+            ${prologueText}
           </p>
         </div>
       `;
