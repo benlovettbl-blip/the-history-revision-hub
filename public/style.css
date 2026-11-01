@@ -948,29 +948,48 @@ html {
 
 .modules-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1200px) {
+  .modules-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .modules-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .modules-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .module-card {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1.5px solid var(--border-glass, #e2e8f0);
-  border-radius: 12px;
-  padding: 14px;
+  border-radius: 10px;
+  padding: 12px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
-  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+  gap: 8px;
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
+  position: relative;
 }
 
 .module-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px -4px rgba(15, 23, 42, 0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px -3px rgba(15, 23, 42, 0.1);
   border-color: #cbd5e1;
 }
 
@@ -987,12 +1006,76 @@ html {
 }
 
 .module-card-img {
-  height: 120px;
+  height: 94px;
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  margin: -14px -14px 10px -14px;
+  margin: -12px -12px 8px -12px;
   border-bottom: 1px solid var(--border-glass, #e2e8f0);
+  position: relative;
+}
+
+/* KS2 Transition Feature Showcase */
+.ks2-feature-banner {
+  background: linear-gradient(135deg, #1e1b4b 0%, #2e1065 50%, #312e81 100%);
+  border-radius: 12px;
+  border: 1.5px solid rgba(199, 210, 254, 0.35);
+  box-shadow: 0 8px 24px -4px rgba(49, 46, 129, 0.2);
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  margin-bottom: 24px;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ks2-feature-banner:hover {
+  box-shadow: 0 12px 28px -4px rgba(49, 46, 129, 0.3);
+}
+
+.ks2-hero-img-col {
+  flex: 0 0 260px;
+  min-height: 180px;
+  background-size: cover;
+  background-position: center 20%;
+  position: relative;
+}
+
+.ks2-hero-content-col {
+  flex: 1;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .ks2-feature-banner {
+    flex-direction: column;
+  }
+  .ks2-hero-img-col {
+    flex: 0 0 140px;
+    width: 100%;
+  }
+  .ks2-hero-content-col {
+    padding: 16px;
+  }
+}
+
+/* Quick Resume Strip */
+.dashboard-resume-strip {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 9px 16px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 @keyframes fadeInUp {
@@ -3311,7 +3394,7 @@ img::after {
   border-left: 4px solid #002855;
   padding: 15px 20px;
   margin-bottom: 18px;
-  border-radius: 0 6px 6px 0;
+  border-radius: 8px;
   line-height: 1.8;
   font-size: 1.05rem;
   scroll-margin-top: 85px;
@@ -3707,6 +3790,75 @@ body.sen-mode .narrative-chunk.reading-highlight {
   line-height: 1.68;
   color: #1e293b;
   font-size: 1.06rem;
+}
+
+/* Unified Stage Header Banner & Decimal Ref Badges */
+.stage-decimal-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.74rem;
+  font-weight: 900;
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.3px;
+  flex-shrink: 0;
+  line-height: 1.2;
+}
+
+.stage-date-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  letter-spacing: 0.2px;
+  line-height: 1.2;
+}
+
+.unified-stage-header-card {
+  margin-bottom: 14px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-left: 4px solid #0284c7;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12);
+  transition: all 0.2s ease;
+}
+
+.unified-stage-header-card .narrative-heading {
+  color: #f8fafc !important;
+  font-size: 1.05rem !important;
+}
+
+.unified-stage-header-card .narrative-heading i {
+  color: #94a3b8 !important;
+}
+
+.unified-stage-header-card:hover {
+  background: #1e293b;
+  border-color: #38bdf8;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+}
+
+.stage-enquiry-subcard {
+  padding-top: 10px;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.stage-enquiry-subcard:hover {
+  opacity: 0.95;
 }
 
 /* In-Lesson Audio Playback Bar & Speed Pill */

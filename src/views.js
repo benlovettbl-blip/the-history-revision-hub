@@ -52,11 +52,43 @@ export function renderDashboard() {
   const contentArea = document.getElementById('content-area');
   if (contentArea) contentArea.style.paddingTop = '1.75rem';
 
+  const units = getUnits();
+
+  const unitCanonicalTitles = {
+    ks2_ww2: 'World War II & The Home Front (1939–1945)',
+    water_and_sanitation: 'Water & Sanitation (1250–Present)',
+    medieval_england: 'Medieval England (1066–1485)',
+    early_modern_world: 'Early Modern World (1450–1750)',
+    monarchy_religion_power: 'Crown, Church & Parliament (1517–1689)',
+    first_british_empire: 'The First British Empire (1600–1783)',
+    industrialisation_and_empire: 'The Industrial Revolution (1750–1900)',
+    second_british_empire: 'The Second British Empire (1783–1914)',
+    australia: 'Invasion & Survival in Australia',
+    great_war: 'Causes of the Great War (1890–1914)',
+    great_war_part2: 'The Great War (1914–1919)',
+    the_shoah: 'The Shoah (1933–1948)',
+    cold_war: 'The Cold War (1945–1991)',
+    second_world_war: 'The Second World War',
+    post_war_britain: 'Rights, Protest & Post-War Britain',
+    cme_new: 'Conflict in the Middle East (1945–1995)',
+    weimar_nazi_germany: 'Weimar & Nazi Germany (1918–1939)',
+    edexcel_medicine: 'Medicine Through Time (c.1250–Present)',
+    eee: 'Early Elizabethan England (1558–1588)',
+    usa: 'USA: Conflict at Home & Abroad (1954–1975)',
+  };
+
+  const lastUnitId =
+    (typeof localStorage !== 'undefined' && localStorage.getItem('history_hub_last_unit')) || '';
+  const lastLessonTitle =
+    (typeof localStorage !== 'undefined' && localStorage.getItem('history_hub_last_lesson_title')) || '';
+  const resumeUnitTitle =
+    unitCanonicalTitles[lastUnitId] || (lastUnitId ? units.find((u) => u.id === lastUnitId)?.title : '') || '';
+
   let html = `
-    <div style="max-width: 1180px; margin: 0 auto; padding: 0 20px 60px 20px;">
+    <div class="homepage-dashboard-container" style="max-width: 1240px; margin: 0 auto; padding: 0 20px 60px 20px;">
       
       <!-- Unified Curriculum Navigation & Filter Toolbar -->
-      <div class="homepage-nav-toolbar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; background: var(--bg-card, #ffffff); border: 1.5px solid var(--border-glass, #e2e8f0); border-radius: 12px; padding: 8px 14px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+      <div class="homepage-nav-toolbar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; background: var(--bg-card, #ffffff); border: 1.5px solid var(--border-glass, #e2e8f0); border-radius: 12px; padding: 8px 14px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
         
         <!-- Stage Filters -->
         <div class="stage-filter-group" style="display: inline-flex; align-items: center; gap: 4px; background: #f1f5f9; border-radius: 8px; padding: 3px;">
@@ -69,17 +101,54 @@ export function renderDashboard() {
         <!-- Fast Year Jump Chips -->
         <nav id="year-quick-jump-nav" aria-label="Jump to year group" style="display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap;">
           <span style="font-size: 0.7rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 2px;">Jump:</span>
-          <a href="#ks2-section" class="jump-chip jump-ks2" onclick="event.preventDefault(); window.scrollToSection('ks2-section');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; cursor: pointer; transition: all 0.15s;">KS2</a>
-          <a href="#year7-section" class="jump-chip jump-ks3" onclick="event.preventDefault(); window.scrollToSection('year7-section');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; cursor: pointer; transition: all 0.15s;">Year 7</a>
-          <a href="#year8-section" class="jump-chip jump-ks3" onclick="event.preventDefault(); window.scrollToSection('year8-section');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; cursor: pointer; transition: all 0.15s;">Year 8</a>
-          <a href="#year9-section" class="jump-chip jump-ks3" onclick="event.preventDefault(); window.scrollToSection('year9-section');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; cursor: pointer; transition: all 0.15s;">Year 9</a>
-          <a href="#year10-section" class="jump-chip jump-gcse" onclick="event.preventDefault(); window.scrollToSection('year10-section');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; cursor: pointer; transition: all 0.15s;">Year 10</a>
-          <a href="#year11-section" class="jump-chip jump-gcse" onclick="event.preventDefault(); window.scrollToSection('year11-section');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; cursor: pointer; transition: all 0.15s;">Year 11</a>
+          <a href="#ks2-section" class="jump-chip jump-ks2" onclick="event.preventDefault(); window.quickFilterYear('ks2', 'all');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; cursor: pointer; transition: all 0.15s;">KS2</a>
+          <a href="#year7-section" class="jump-chip jump-ks3" onclick="event.preventDefault(); window.quickFilterYear('ks3', '7');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; cursor: pointer; transition: all 0.15s;">Year 7</a>
+          <a href="#year8-section" class="jump-chip jump-ks3" onclick="event.preventDefault(); window.quickFilterYear('ks3', '8');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; cursor: pointer; transition: all 0.15s;">Year 8</a>
+          <a href="#year9-section" class="jump-chip jump-ks3" onclick="event.preventDefault(); window.quickFilterYear('ks3', '9');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; cursor: pointer; transition: all 0.15s;">Year 9</a>
+          <a href="#gcse-section" class="jump-chip jump-gcse" onclick="event.preventDefault(); window.quickFilterPaper('1');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; cursor: pointer; transition: all 0.15s;">Paper 1</a>
+          <a href="#gcse-section" class="jump-chip jump-gcse" onclick="event.preventDefault(); window.quickFilterPaper('2');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; cursor: pointer; transition: all 0.15s;">Paper 2</a>
+          <a href="#gcse-section" class="jump-chip jump-gcse" onclick="event.preventDefault(); window.quickFilterPaper('3');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; cursor: pointer; transition: all 0.15s;">Paper 3</a>
         </nav>
       </div>
   `;
 
-  const units = getUnits();
+  // Quick Resume Strip
+  if (lastUnitId && resumeUnitTitle) {
+    html += `
+      <div class="dashboard-resume-strip" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1px solid #334155; border-radius: 10px; padding: 9px 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+        <div style="display: flex; align-items: center; gap: 10px; min-width: 260px;">
+          <span style="background: rgba(59, 130, 246, 0.22); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.35); border-radius: 6px; padding: 3px 8px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 5px;">
+            <i class="fa-solid fa-clock-rotate-left"></i> Resume Learning
+          </span>
+          <span style="font-size: 0.84rem; color: #f8fafc; font-weight: 600;">
+            ${resumeUnitTitle}
+            ${lastLessonTitle ? `<span style="color: #94a3b8; font-weight: 400; margin-left: 6px;">&bull; ${lastLessonTitle}</span>` : ''}
+          </span>
+        </div>
+        <button type="button" class="btn" onclick="window.launchSubApp('${lastUnitId}')" style="background: #2563eb; color: #ffffff; border: none; border-radius: 6px; padding: 6px 14px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.15s ease;" onmouseover="this.style.background='#1d4ed8'" onmouseout="this.style.background='#2563eb'">
+          <span>Continue Lesson</span>
+          <i class="fa-solid fa-arrow-right" style="font-size: 0.7rem;"></i>
+        </button>
+      </div>
+    `;
+  } else {
+    html += `
+      <div class="dashboard-resume-strip" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1px solid #334155; border-radius: 10px; padding: 9px 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+        <div style="display: flex; align-items: center; gap: 10px; min-width: 260px;">
+          <span style="background: rgba(16, 185, 129, 0.22); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.35); border-radius: 6px; padding: 3px 8px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 5px;">
+            <i class="fa-solid fa-compass"></i> Featured
+          </span>
+          <span style="font-size: 0.84rem; color: #f8fafc; font-weight: 600;">
+            Medieval England (1066–1485) &bull; <span style="color: #94a3b8; font-weight: 400;">Explore the chronological enquiry spine</span>
+          </span>
+        </div>
+        <button type="button" class="btn" onclick="window.launchSubApp('medieval_england')" style="background: #2563eb; color: #ffffff; border: none; border-radius: 6px; padding: 6px 14px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.15s ease;" onmouseover="this.style.background='#1d4ed8'" onmouseout="this.style.background='#2563eb'">
+          <span>Explore Unit</span>
+          <i class="fa-solid fa-arrow-right" style="font-size: 0.7rem;"></i>
+        </button>
+      </div>
+    `;
+  }
 
   // Key Stage 2 Grouping
   const ks2Order = ['ks2_ww2'];
@@ -87,74 +156,43 @@ export function renderDashboard() {
     .filter((u) => ks2Order.includes(u.id))
     .sort((a, b) => ks2Order.indexOf(a.id) - ks2Order.indexOf(b.id));
 
-  // Year 7 Grouping
-  const year7Order = ['water_and_sanitation', 'medieval_england'];
-  const year7Units = units
-    .filter((u) => year7Order.includes(u.id))
-    .sort((a, b) => year7Order.indexOf(a.id) - year7Order.indexOf(b.id));
+  // KS3 Grouping (All 12 Units: Year 7, Year 8, Year 9)
+  const ks3Meta = {
+    water_and_sanitation: { year: 7, stage: 'ks3', stageLabel: 'Year 7 • KS3' },
+    medieval_england: { year: 7, stage: 'ks3', stageLabel: 'Year 7 • KS3' },
+    monarchy_religion_power: { year: 8, stage: 'ks3', stageLabel: 'Year 8 • KS3' },
+    first_british_empire: { year: 8, stage: 'ks3', stageLabel: 'Year 8 • KS3' },
+    industrialisation_and_empire: { year: 8, stage: 'ks3', stageLabel: 'Year 8 • KS3' },
+    second_british_empire: { year: 8, stage: 'ks3', stageLabel: 'Year 8 • KS3' },
+    australia: { year: 8, stage: 'ks3', stageLabel: 'Year 8 • KS3' },
+    great_war: { year: 9, stage: 'ks3', stageLabel: 'Year 9 • KS3' },
+    great_war_part2: { year: 9, stage: 'ks3', stageLabel: 'Year 9 • KS3' },
+    the_shoah: { year: 9, stage: 'ks3', stageLabel: 'Year 9 • KS3' },
+    cold_war: { year: 9, stage: 'ks3', stageLabel: 'Year 9 • KS3' },
+    post_war_britain: { year: 9, stage: 'ks3', stageLabel: 'Year 9 • KS3' },
+  };
+  const ks3Order = Object.keys(ks3Meta);
+  const ks3Units = units
+    .filter((u) => ks3Order.includes(u.id))
+    .sort((a, b) => ks3Order.indexOf(a.id) - ks3Order.indexOf(b.id));
 
-  // Year 8 Grouping
-  const year8Order = [
-    'monarchy_religion_power',
-    'first_british_empire',
-    'industrialisation_and_empire',
-    'second_british_empire',
-    'australia',
-  ];
-  const year8Units = units
-    .filter((u) => year8Order.includes(u.id))
-    .sort((a, b) => year8Order.indexOf(a.id) - year8Order.indexOf(b.id));
+  // GCSE Grouping (In official Edexcel Paper Order: Paper 1, Paper 2, Paper 3)
+  const gcseMeta = {
+    edexcel_medicine: { paper: '1', paperNumber: 1, stage: 'gcse', paperBadge: 'Paper 1', stageLabel: 'Edexcel Paper 1' },
+    eee: { paper: '2', paperNumber: 2, stage: 'gcse', paperBadge: 'Paper 2', stageLabel: 'Edexcel Paper 2' },
+    weimar_nazi_germany: { paper: '3', paperNumber: 3, stage: 'gcse', paperBadge: 'Paper 3', stageLabel: 'Edexcel Paper 3' },
+    cme_new: { paper: '3', paperNumber: 3, stage: 'gcse', paperBadge: 'Paper 3', stageLabel: 'Edexcel Paper 3' },
+    usa: { paper: '3', paperNumber: 3, stage: 'gcse', paperBadge: 'Paper 3', stageLabel: 'Edexcel Paper 3' },
+  };
+  const gcseOrder = Object.keys(gcseMeta);
+  const gcseUnits = units
+    .filter((u) => gcseOrder.includes(u.id))
+    .sort((a, b) => gcseOrder.indexOf(a.id) - gcseOrder.indexOf(b.id));
 
-  // Year 9 Grouping
-  const underConstructionIds = [];
-  const year9Order = ['great_war', 'great_war_part2', 'the_shoah', 'cold_war', 'post_war_britain'];
-  const year9Units = units
-    .filter((u) => year9Order.includes(u.id))
-    .sort((a, b) => year9Order.indexOf(a.id) - year9Order.indexOf(b.id));
-  const comingSoonNames = [];
-
-  // Year 10 Grouping
-  const year10Order = ['cme_new', 'weimar_nazi_germany'];
-  const year10Units = units
-    .filter((u) => year10Order.includes(u.id))
-    .sort((a, b) => year10Order.indexOf(a.id) - year10Order.indexOf(b.id));
-
-  // Year 11 Grouping
-  const year11Order = ['edexcel_medicine', 'eee', 'usa'];
-  const year11Units = units
-    .filter((u) => year11Order.includes(u.id))
-    .sort((a, b) => year11Order.indexOf(a.id) - year11Order.indexOf(b.id));
-
-  // Trips & Tours Grouping (Decommissioned)
-  const tripUnits = [];
-
-  const renderUnitCard = (unit, index) => {
+  const renderUnitCard = (unit, index, meta) => {
     const isUnlocked = true;
     const rawTitle = unit.title || unit.id;
     const imageUrl = unit.homepage_background || unit.cover_image || '';
-
-    const unitCanonicalTitles = {
-      ks2_ww2: 'World War II & The Home Front (1939–1945)',
-      water_and_sanitation: 'Water & Sanitation (1250–Present)',
-      medieval_england: 'Medieval England (1066–1485)',
-      early_modern_world: 'Early Modern World (1450–1750)',
-      monarchy_religion_power: 'Crown, Church & Parliament (1517–1689)',
-      first_british_empire: 'The First British Empire (1600–1783)',
-      industrialisation_and_empire: 'The Industrial Revolution (1750–1900)',
-      second_british_empire: 'The Second British Empire (1783–1914)',
-      australia: 'Invasion & Survival in Australia',
-      great_war: 'Causes of the Great War (1890–1914)',
-      great_war_part2: 'The Great War (1914–1919)',
-      the_shoah: 'The Shoah (1933–1948)',
-      cold_war: 'The Cold War (1945–1991)',
-      second_world_war: 'The Second World War',
-      post_war_britain: 'Rights, Protest & Post-War Britain',
-      cme_new: 'Conflict in the Middle East (1945–1995)',
-      weimar_nazi_germany: 'Weimar & Nazi Germany (1918–1939)',
-      edexcel_medicine: 'Medicine Through Time (c.1250–Present)',
-      eee: 'Early Elizabethan England (1558–1588)',
-      usa: 'USA: Conflict at Home & Abroad (1954–1975)',
-    };
 
     const displayTitle =
       unitCanonicalTitles[unit.id] || rawTitle.replace(/^(KS3:\s*|Paper\s*\d+:\s*)/i, '').trim();
@@ -163,7 +201,7 @@ export function renderDashboard() {
       unit.enquiry_question ||
       unit.enquiry ||
       unit.desc ||
-      'Key disciplinary knowledge and enquiry.';
+      'Key disciplinary knowledge and historical enquiry.';
     if (displayEnquiry === rawTitle || displayEnquiry.toLowerCase() === rawTitle.toLowerCase()) {
       displayEnquiry = 'Key concepts, primary source analysis, and historical enquiry.';
     }
@@ -185,143 +223,171 @@ export function renderDashboard() {
     };
     const bgPos = unit.cover_image_position || positionFallbacks[unit.id] || 'center';
 
-    const gcseUnitIds = ['cme_new', 'weimar_nazi_germany', 'edexcel_medicine', 'eee', 'usa'];
-    const isGcse = gcseUnitIds.includes(unit.id);
-    const isKs2 = unit.is_ks2 || unit.id === 'ks2_ww2';
-    const gcseBadge = isGcse
-      ? `<span style="position:absolute; top:8px; left:8px; z-index:10; background:#f59e0b; color:#fff; font-size:0.62rem; font-weight:800; letter-spacing:0.06em; text-transform:uppercase; padding:2px 8px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.25);">GCSE</span>`
-      : '';
-    const ks2Badge = isKs2
-      ? `<span style="position:absolute; top:8px; left:8px; z-index:10; background:#3730a3; color:#fff; font-size:0.62rem; font-weight:800; letter-spacing:0.06em; text-transform:uppercase; padding:2px 8px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.25);">KS2</span>`
-      : '';
+    const isGcse = meta.stage === 'gcse';
+    const badgeText = isGcse
+      ? (meta.paperBadge || 'Edexcel Paper')
+      : `Year ${meta.year}`;
 
-    html += `
-      <div class="module-card ${isUnlocked ? '' : 'locked'}" style="animation-delay: ${index * 0.05}s; cursor: pointer; position: relative; ${isGcse ? 'border-top: 3px solid #f59e0b;' : isKs2 ? 'border-top: 3px solid #3730a3;' : ''}" data-action="launch-subapp" data-unit="${unit.id}">
-        ${gcseBadge || ks2Badge}
+    return `
+      <div class="module-card ${isUnlocked ? '' : 'locked'}" data-year="${meta.year || ''}" data-paper="${meta.paper || ''}" data-stage="${meta.stage}" style="animation-delay: ${index * 0.04}s; cursor: pointer; position: relative; ${isGcse ? 'border-top: 3.5px solid #f59e0b;' : 'border-top: 3.5px solid #2563eb;'}" data-action="launch-subapp" data-unit="${unit.id}">
+        <span style="position: absolute; top: 7px; left: 7px; z-index: 10; background: ${isGcse ? 'rgba(180, 83, 9, 0.92)' : 'rgba(30, 58, 138, 0.92)'}; color: #ffffff; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.25); backdrop-filter: blur(4px);">
+          ${badgeText}
+        </span>
         ${imageUrl ? `<div class="module-card-img" style="background-image: url('${imageUrl}'); background-position: ${bgPos}; background-size: cover;"></div>` : `<div class="module-card-img" style="background: var(--primary);"></div>`}
         <div style="position: relative; z-index: 2; padding: 0; flex-grow: 1; display: flex; flex-direction: column;">
           <div style="flex-grow: 1; min-width: 0;">
-            <h4 style="margin: 0 0 6px 0; font-size: 0.98rem; font-weight: 700; line-height: 1.3; color: var(--text-main, #0f172a); font-family: 'Playfair Display', serif;">${displayTitle}</h4>
-            <p style="margin: 0; font-size: 0.8rem; line-height: 1.45; color: var(--text-muted, #64748b); font-style: italic; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;">"${displayEnquiry}"</p>
+            <h4 style="margin: 0 0 5px 0; font-size: 0.94rem; font-weight: 700; line-height: 1.25; color: var(--text-main, #0f172a); font-family: 'Playfair Display', serif; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; min-height: 2.5em;" title="${displayTitle}">${displayTitle}</h4>
+            <p style="margin: 0; font-size: 0.77rem; line-height: 1.38; color: var(--text-muted, #64748b); font-style: italic; min-height: 4.15em;" title="${displayEnquiry}">"${displayEnquiry}"</p>
           </div>
         </div>
         
-        <div class="module-card-footer" style="margin-top: auto; padding-top: 10px; border-top: 1px solid var(--border-glass, #e2e8f0); display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem; position: relative; z-index: 2;">
-          <span style="font-weight: 700; color: ${isGcse ? '#92400e' : isKs2 ? '#3730a3' : '#1d4ed8'}; background: ${isGcse ? '#fef3c7' : isKs2 ? '#e0e7ff' : '#eff6ff'}; border: 1px solid ${isGcse ? '#fde68a' : isKs2 ? '#c7d2fe' : '#bfdbfe'}; padding: 2px 7px; border-radius: 4px; font-size: 0.66rem; letter-spacing: 0.04em; text-transform: uppercase;">
-            ${isGcse ? 'Edexcel GCSE' : isKs2 ? 'Key Stage 2' : 'Key Stage 3'}
+        <div class="module-card-footer" style="margin-top: auto; padding-top: 8px; border-top: 1px solid var(--border-glass, #e2e8f0); display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; position: relative; z-index: 2;">
+          <span style="color: var(--text-muted, #64748b); font-size: 0.72rem; font-weight: 600;">
+            ${(unit.lessons && unit.lessons.length) ? `${unit.lessons.length} Lessons` : 'Enquiry Unit'}
           </span>
-          <span class="module-launch-link" style="font-weight: 700; color: #2563eb; display: inline-flex; align-items: center; gap: 4px; font-size: 0.76rem;">
+          <span class="module-launch-link" style="font-weight: 700; color: #2563eb; display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem;">
             <span>Explore</span>
-            <i class="fa-solid fa-arrow-right" style="font-size: 0.68rem;"></i>
+            <i class="fa-solid fa-arrow-right" style="font-size: 0.66rem;"></i>
           </span>
         </div>
       </div>
     `;
   };
 
-  // Key Stage 2 Section
+  // Key Stage 2 Section (Horizontal Primary Transition Showcase Feature Banner)
   if (ks2Units.length > 0) {
+    const ks2Unit = ks2Units[0];
+    const ks2Cover =
+      ks2Unit.homepage_background ||
+      ks2Unit.cover_image ||
+      '/units/ks2_ww2/assets/kindertransport_prague_airport_1939.jpg';
     html += `
-      <div class="dashboard-curriculum-block stage-block-ks2" id="block-ks2">
-        <h3 class="section-title" id="ks2-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
-          <span style="background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Key Stage 2</span>
-          <span>World War II &amp; The Home Front (1939–1945)</span>
-        </h3>
-        <div class="modules-grid" style="margin-bottom: 2rem;">
-    `;
-    ks2Units.forEach(renderUnitCard);
-    html += `</div></div>`;
-  }
+      <div class="dashboard-curriculum-block stage-block-ks2" id="block-ks2" style="margin-bottom: 24px;">
+        <div id="ks2-section" style="position: relative; top: -14px;"></div>
+        <div class="curriculum-stage-header" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1.5px solid var(--border-glass, #e2e8f0);">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; padding: 3px 10px; border-radius: 6px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">Key Stage 2</span>
+            <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.22rem; font-weight: 700; color: var(--text-main, #0f172a);">
+              World War II &amp; The Home Front (1939–1945)
+            </h3>
+          </div>
+          <span style="font-size: 0.78rem; font-weight: 600; color: #64748b;">Key Stage 2 History</span>
+        </div>
 
-  // Year 7 Section
-  if (year7Units.length > 0) {
-    html += `
-      <div class="dashboard-curriculum-block stage-block-ks3" id="block-year7">
-        <h3 class="section-title" id="year7-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
-          <span style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Key Stage 3</span>
-          <span>Year 7: Medieval Realms &amp; Foundations</span>
-        </h3>
-        <div class="modules-grid" style="margin-bottom: 2rem;">
-    `;
-    year7Units.forEach(renderUnitCard);
-    html += `</div></div>`;
-  }
+        <div class="ks2-feature-banner" style="background: linear-gradient(135deg, #1e1b4b 0%, #2e1065 50%, #312e81 100%); border-radius: 12px; border: 1.5px solid rgba(199, 210, 254, 0.35); box-shadow: 0 8px 24px -4px rgba(49, 46, 129, 0.2); display: flex; align-items: stretch; overflow: hidden; position: relative;">
+          <!-- Left Hero Image Column -->
+          <div class="ks2-hero-img-col" style="flex: 0 0 280px; min-height: 190px; background-image: url('${ks2Cover}'); background-size: cover; background-position: center 20%; position: relative;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(30, 27, 75, 0.05) 0%, rgba(30, 27, 75, 0.8) 100%);"></div>
+            <span style="position: absolute; top: 12px; left: 12px; z-index: 2; background: #4f46e5; color: #ffffff; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 10px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">
+              Key Stage 2 Primary
+            </span>
+          </div>
 
-  // Year 8 Section
-  if (year8Units.length > 0) {
-    html += `
-      <div class="dashboard-curriculum-block stage-block-ks3" id="block-year8">
-        <h3 class="section-title" id="year8-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
-          <span style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Key Stage 3</span>
-          <span>Year 8: Early Modern Transitions &amp; Empire</span>
-        </h3>
-        <div class="modules-grid" style="margin-bottom: 2rem;">
-    `;
-    year8Units.forEach(renderUnitCard);
-    html += `</div></div>`;
-  }
+          <!-- Right Content Column -->
+          <div class="ks2-hero-content-col" style="flex: 1; padding: 18px 24px; display: flex; flex-direction: column; justify-content: space-between; z-index: 1;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px;">
+                <span style="background: rgba(224, 231, 255, 0.2); color: #c7d2fe; border: 1px solid rgba(199, 210, 254, 0.4); padding: 2px 8px; border-radius: 4px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">
+                  <i class="fa-solid fa-landmark"></i> Key Stage 2 History
+                </span>
+                <span style="color: #cbd5e1; font-size: 0.74rem;">&bull; 7 Core Lessons &bull; Archival Sources &bull; Primary Evidence</span>
+              </div>
+              <h3 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem; font-weight: 800; color: #ffffff; line-height: 1.25;">
+                World War II &amp; The Home Front (1939–1945)
+              </h3>
+              <p style="margin: 0 0 8px 0; color: #e0e7ff; font-size: 0.84rem; font-style: italic; line-height: 1.4;">
+                "How did World War II transform children's lives in Britain and Europe?"
+              </p>
+              <p style="margin: 0 0 12px 0; color: #cbd5e1; font-size: 0.82rem; line-height: 1.45; max-width: 760px;">
+                A comprehensive Key Stage 2 history curriculum exploring wartime evacuation, the Blitz, rationing, wartime diversity, codebreaking at Bletchley Park, the Holocaust, and Victory in Europe through interactive primary evidence and historical enquiries.
+              </p>
+            </div>
 
-  // Year 9 Section
-  html += `
-    <div class="dashboard-curriculum-block stage-block-ks3" id="block-year9">
-      <h3 class="section-title" id="year9-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
-        <span style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Key Stage 3</span>
-        <span>Year 9: The Modern World &amp; Global Conflict</span>
-      </h3>
-  `;
-  if (year9Units.length > 0) {
-    html += `<div class="modules-grid" style="margin-bottom: 1rem;">`;
-    year9Units.forEach(renderUnitCard);
-    html += `</div>`;
-  }
-
-  // Coming-soon strip for Year 9 units
-  if (comingSoonNames.length > 0) {
-    const pills = comingSoonNames
-      .map(
-        (name) =>
-          `<span style="background:#f1f5f9;border:1px solid #e2e8f0;color:#64748b;padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:600;white-space:nowrap;"><i class="fa-solid fa-hammer" style="margin-right:5px;color:#94a3b8;"></i>${name}</span>`,
-      )
-      .join('');
-    html += `
-      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 18px;background:#f8fafc;border:1.5px dashed #cbd5e1;border-radius:10px;margin-bottom:2rem;">
-        <span style="font-size:0.8rem;font-weight:700;color:#94a3b8;white-space:nowrap;"><i class="fa-solid fa-circle-info"></i> In Development:</span>
-        ${pills}
+            <div style="display: flex; align-items: center; justify-content: flex-end; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.15);">
+              <button type="button" class="btn" onclick="window.launchSubApp('ks2_ww2')" style="background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); color: #ffffff; border: none; padding: 8px 18px; border-radius: 6px; font-weight: 700; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4); transition: transform 0.15s ease;" onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
+                <span>Explore KS2 Unit</span>
+                <i class="fa-solid fa-arrow-right" style="font-size: 0.74rem;"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     `;
   }
-  html += `</div>`;
 
-  // Year 10 Section
-  if (year10Units.length > 0) {
+  // Key Stage 3 Section (Continuous 12-Unit Grid with Instant Year Filters)
+  if (ks3Units.length > 0) {
     html += `
-      <div class="dashboard-curriculum-block stage-block-gcse" id="block-year10">
-        <h3 class="section-title" id="year10-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
-          <span style="background: #fef3c7; color: #92400e; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">GCSE (9–1)</span>
-          <span>Year 10: Edexcel GCSE History</span>
-        </h3>
-        <div class="modules-grid" style="margin-bottom: 2rem;">
+      <div class="dashboard-curriculum-block stage-block-ks3" id="block-ks3" style="margin-bottom: 24px;">
+        <div id="ks3-section" style="position: relative; top: -14px;"></div>
+        <div id="year7-section" style="position: relative; top: -14px;"></div>
+        <div id="year8-section" style="position: relative; top: -14px;"></div>
+        <div id="year9-section" style="position: relative; top: -14px;"></div>
+
+        <div class="curriculum-stage-header" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1.5px solid var(--border-glass, #e2e8f0);">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 3px 10px; border-radius: 6px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">Key Stage 3</span>
+            <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.22rem; font-weight: 700; color: var(--text-main, #0f172a);">
+              Medieval to Modern World (Years 7–9)
+            </h3>
+          </div>
+
+          <!-- KS3 Year Sub-Filter Chips -->
+          <div class="ks3-subfilter-chips" style="display: inline-flex; align-items: center; gap: 4px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 3px;">
+            <button class="ks3-filter-btn active" data-year="all" style="background: #1e3a8a; color: #ffffff; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">All KS3 (12)</button>
+            <button class="ks3-filter-btn" data-year="7" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Year 7 (2)</button>
+            <button class="ks3-filter-btn" data-year="8" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Year 8 (5)</button>
+            <button class="ks3-filter-btn" data-year="9" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Year 9 (5)</button>
+          </div>
+        </div>
+
+        <div class="modules-grid ks3-modules-grid" style="margin-bottom: 1.5rem;">
     `;
-    year10Units.forEach(renderUnitCard);
+    ks3Units.forEach((u, idx) => {
+      const meta = ks3Meta[u.id] || { year: 7, stage: 'ks3', stageLabel: 'KS3' };
+      html += renderUnitCard(u, idx, meta);
+    });
     html += `</div></div>`;
   }
 
-  // Year 11 Section
-  if (year11Units.length > 0) {
+  // GCSE Section (Continuous 5-Unit Grid + GCSE Spec Tracker Showcase)
+  if (gcseUnits.length > 0) {
     html += `
-      <div class="dashboard-curriculum-block stage-block-gcse" id="block-year11">
-        <h3 class="section-title" id="year11-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
-          <span style="background: #fef3c7; color: #92400e; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">GCSE (9–1)</span>
-          <span>Year 11: Edexcel GCSE History</span>
-        </h3>
+      <div class="dashboard-curriculum-block stage-block-gcse" id="block-gcse" style="margin-bottom: 24px;">
+        <div id="gcse-section" style="position: relative; top: -14px;"></div>
+        <div id="year10-section" style="position: relative; top: -14px;"></div>
+        <div id="year11-section" style="position: relative; top: -14px;"></div>
+        <div id="paper1-section" style="position: relative; top: -14px;"></div>
+        <div id="paper2-section" style="position: relative; top: -14px;"></div>
+        <div id="paper3-section" style="position: relative; top: -14px;"></div>
 
-        <div class="modules-grid" style="margin-bottom: 1.5rem;">
+        <div class="curriculum-stage-header" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1.5px solid var(--border-glass, #e2e8f0);">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="background: #fef3c7; color: #92400e; border: 1px solid #fde68a; padding: 3px 10px; border-radius: 6px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">GCSE (9–1)</span>
+            <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.22rem; font-weight: 700; color: var(--text-main, #0f172a);">
+              Edexcel GCSE History (Papers 1–3)
+            </h3>
+          </div>
+
+          <!-- GCSE Paper Sub-Filter Chips -->
+          <div class="gcse-subfilter-chips" style="display: inline-flex; align-items: center; gap: 4px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 3px;">
+            <button class="gcse-filter-btn active" data-paper="all" style="background: #92400e; color: #ffffff; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">All Papers (5)</button>
+            <button class="gcse-filter-btn" data-paper="1" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 1 (1)</button>
+            <button class="gcse-filter-btn" data-paper="2" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 2 (1)</button>
+            <button class="gcse-filter-btn" data-paper="3" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 3 (3)</button>
+          </div>
+        </div>
+
+        <div class="modules-grid gcse-modules-grid" style="margin-bottom: 1.5rem;">
     `;
-    year11Units.forEach(renderUnitCard);
+    gcseUnits.forEach((u, idx) => {
+      const meta = gcseMeta[u.id] || { paper: '3', stage: 'gcse', paperBadge: 'Paper 3', stageLabel: 'Edexcel Paper 3' };
+      html += renderUnitCard(u, idx, meta);
+    });
     html += `
         </div>
 
-        <!-- Year 11 Specification Tracker & Revision Engine Hero Showcase (Positioned Beneath Year 11 Modules) -->
+        <!-- GCSE Specification Tracker & Revision Engine Hero Showcase -->
         <div class="year11-spec-tracker-banner" style="margin-bottom: 2rem; background: linear-gradient(135deg, #091e3a 0%, #1e3a8a 60%, #172554 100%); border-radius: 14px; padding: 22px 26px; color: #ffffff; box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.4); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; border: 1.5px solid rgba(255,255,255,0.18); position: relative; overflow: hidden;">
           <div style="position: absolute; right: -20px; top: -30px; font-size: 11rem; color: rgba(255, 255, 255, 0.03); pointer-events: none; z-index: 0;">
             <i class="fa-solid fa-list-check"></i>
@@ -333,14 +399,9 @@ export function renderDashboard() {
             <h3 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.55rem; font-weight: 800; color: #ffffff; line-height: 1.25;">
               GCSE Specification Tracker &amp; Revision Builder
             </h3>
-            <p style="margin: 0 0 14px 0; color: #cbd5e1; font-size: 0.92rem; line-height: 1.45; max-width: 700px;">
+            <p style="margin: 0; color: #cbd5e1; font-size: 0.92rem; line-height: 1.45; max-width: 700px;">
               Your complete terminal revision roadmap: live Red-Amber-Green self-audit matrix covering verbatim Pearson Issue 6 targets, direct lesson bridges, printable A4 checklist, 12-mark causation generator, and rapid diagnostic retrieval sprints.
             </p>
-            <div style="display: flex; gap: 8px; flex-wrap: wrap; font-size: 0.76rem;">
-              <span style="background: rgba(255,255,255,0.12); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.18);"><i class="fa-solid fa-circle-check" style="color: #34d399;"></i> 4 Active Papers</span>
-              <span style="background: rgba(255,255,255,0.12); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.18);"><i class="fa-solid fa-file-pdf" style="color: #f87171;"></i> Printable A4 Checklist</span>
-              <span style="background: rgba(255,255,255,0.12); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.18);"><i class="fa-solid fa-bullseye" style="color: #fbbf24;"></i> 12-Mark Causation Strips</span>
-            </div>
           </div>
           <div style="display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; position: relative; z-index: 1;">
             <button type="button" class="btn" onclick="window.switchView('gcse-tracker', 'audit')" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: #ffffff; padding: 11px 22px; border-radius: 8px; font-weight: 700; font-size: 0.92rem; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='none';">
@@ -451,6 +512,64 @@ function attachDashboardStageFilter(container) {
     portalParam === 'ks2' ||
     (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('hh_portal') === 'ks2');
 
+  const ks2Blocks = container.querySelectorAll('.stage-block-ks2');
+  const ks3Blocks = container.querySelectorAll('.stage-block-ks3');
+  const gcseBlocks = container.querySelectorAll('.stage-block-gcse');
+  const jumpKs2 = container.querySelectorAll('.jump-ks2');
+  const jumpKs3 = container.querySelectorAll('.jump-ks3');
+  const jumpGcse = container.querySelectorAll('.jump-gcse');
+
+  // Sub-filter KS3 buttons & cards
+  const ks3FilterBtns = container.querySelectorAll('.ks3-filter-btn');
+  const ks3Cards = container.querySelectorAll('.ks3-modules-grid .module-card');
+  ks3FilterBtns.forEach((btn) => {
+    btn.onclick = () => {
+      const year = btn.dataset.year;
+      ks3FilterBtns.forEach((b) => {
+        b.classList.remove('active');
+        b.style.background = 'transparent';
+        b.style.color = '#475569';
+      });
+      btn.classList.add('active');
+      btn.style.background = '#1e3a8a';
+      btn.style.color = '#ffffff';
+
+      ks3Cards.forEach((card) => {
+        if (year === 'all' || card.dataset.year === year) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    };
+  });
+
+  // Sub-filter GCSE buttons & cards by Paper
+  const gcseFilterBtns = container.querySelectorAll('.gcse-filter-btn');
+  const gcseCards = container.querySelectorAll('.gcse-modules-grid .module-card');
+  gcseFilterBtns.forEach((btn) => {
+    btn.onclick = () => {
+      const paper = btn.dataset.paper;
+      gcseFilterBtns.forEach((b) => {
+        b.classList.remove('active');
+        b.style.background = 'transparent';
+        b.style.color = '#475569';
+      });
+      btn.classList.add('active');
+      btn.style.background = '#92400e';
+      btn.style.color = '#ffffff';
+
+      gcseCards.forEach((card) => {
+        if (paper === 'all' || card.dataset.paper === paper) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    };
+  });
+
+  // Stage Filter Buttons (All Syllabuses, Key Stage 2, Key Stage 3, GCSE)
   filterBtns.forEach((btn) => {
     btn.onclick = () => {
       const stage = btn.dataset.stage;
@@ -465,13 +584,6 @@ function attachDashboardStageFilter(container) {
       btn.style.color = '#ffffff';
       btn.style.boxShadow = 'none';
 
-      const ks2Blocks = container.querySelectorAll('.stage-block-ks2');
-      const ks3Blocks = container.querySelectorAll('.stage-block-ks3');
-      const gcseBlocks = container.querySelectorAll('.stage-block-gcse');
-      const jumpKs2 = container.querySelectorAll('.jump-ks2');
-      const jumpKs3 = container.querySelectorAll('.jump-ks3');
-      const jumpGcse = container.querySelectorAll('.jump-gcse');
-
       if (stage === 'all') {
         ks2Blocks.forEach((el) => (el.style.display = ''));
         ks3Blocks.forEach((el) => (el.style.display = ''));
@@ -479,6 +591,12 @@ function attachDashboardStageFilter(container) {
         jumpKs2.forEach((el) => (el.style.display = ''));
         jumpKs3.forEach((el) => (el.style.display = ''));
         jumpGcse.forEach((el) => (el.style.display = ''));
+
+        // Reset sub-filters to 'all'
+        const allKs3Btn = container.querySelector('.ks3-filter-btn[data-year="all"]');
+        if (allKs3Btn) allKs3Btn.click();
+        const allGcseBtn = container.querySelector('.gcse-filter-btn[data-paper="all"]');
+        if (allGcseBtn) allGcseBtn.click();
       } else if (stage === 'ks2') {
         ks2Blocks.forEach((el) => (el.style.display = ''));
         ks3Blocks.forEach((el) => (el.style.display = 'none'));
@@ -493,6 +611,9 @@ function attachDashboardStageFilter(container) {
         jumpKs2.forEach((el) => (el.style.display = 'none'));
         jumpKs3.forEach((el) => (el.style.display = ''));
         jumpGcse.forEach((el) => (el.style.display = 'none'));
+
+        const allKs3Btn = container.querySelector('.ks3-filter-btn[data-year="all"]');
+        if (allKs3Btn) allKs3Btn.click();
       } else if (stage === 'gcse') {
         ks2Blocks.forEach((el) => (el.style.display = 'none'));
         ks3Blocks.forEach((el) => (el.style.display = 'none'));
@@ -500,9 +621,52 @@ function attachDashboardStageFilter(container) {
         jumpKs2.forEach((el) => (el.style.display = 'none'));
         jumpKs3.forEach((el) => (el.style.display = 'none'));
         jumpGcse.forEach((el) => (el.style.display = ''));
+
+        const allGcseBtn = container.querySelector('.gcse-filter-btn[data-paper="all"]');
+        if (allGcseBtn) allGcseBtn.click();
       }
     };
   });
+
+  // Global helper for fast jump chips
+  window.quickFilterPaper = function (paper) {
+    // Switch stage filter if currently hiding GCSE
+    const activeStageBtn = container.querySelector('.stage-filter-btn.active');
+    const activeStage = activeStageBtn ? activeStageBtn.dataset.stage : 'all';
+    if (activeStage !== 'all' && activeStage !== 'gcse') {
+      const gcseStageBtn = container.querySelector('.stage-filter-btn[data-stage="gcse"]');
+      if (gcseStageBtn) gcseStageBtn.click();
+    }
+
+    const paperBtn = container.querySelector(`.gcse-filter-btn[data-paper="${paper}"]`);
+    if (paperBtn) paperBtn.click();
+    window.scrollToSection('block-gcse');
+  };
+
+  window.quickFilterYear = function (stage, year) {
+    if (stage === 'ks2') {
+      const ks2Btn = container.querySelector('.stage-filter-btn[data-stage="ks2"]');
+      if (ks2Btn) ks2Btn.click();
+      window.scrollToSection('block-ks2');
+      return;
+    }
+
+    // Switch stage filter if currently hiding the target stage
+    const activeStageBtn = container.querySelector('.stage-filter-btn.active');
+    const activeStage = activeStageBtn ? activeStageBtn.dataset.stage : 'all';
+    if (activeStage !== 'all' && activeStage !== stage) {
+      const stageBtn = container.querySelector(`.stage-filter-btn[data-stage="${stage}"]`);
+      if (stageBtn) stageBtn.click();
+    }
+
+    if (stage === 'ks3') {
+      const yearBtn = container.querySelector(`.ks3-filter-btn[data-year="${year}"]`);
+      if (yearBtn) yearBtn.click();
+      window.scrollToSection('block-ks3');
+    } else if (stage === 'gcse') {
+      window.quickFilterPaper(year);
+    }
+  };
 
   if (isKs2Portal) {
     const ks2Btn = container.querySelector('.stage-filter-btn[data-stage="ks2"]');
@@ -727,6 +891,10 @@ window.launchSubApp = function (subAppName) {
     if (subAppName === 'gcse_usa_1954_1975') mappedName = 'usa';
     if (subAppName === 'gcse_elizabethan_england') mappedName = 'eee';
     if (subAppName === 'great_war_v2') mappedName = 'great_war';
+
+    try {
+      localStorage.setItem('history_hub_last_unit', mappedName);
+    } catch (e) {}
 
     if (window.switchView) {
       await window.switchView('lessons', mappedName);
