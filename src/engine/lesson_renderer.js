@@ -13,6 +13,7 @@ import {
   formatInteractiveTimestamps,
 } from './video_utils.js';
 import './ks2_guidance.js';
+import { renderConsolidateStationHTML, initConsolidateStation } from './lesson_consolidate_station.js';
 
 // Canonical Key Stage Taxonomy Constants
 export const KS2_CANONICAL_UNITS = ['ks2_ww2'];
@@ -3503,7 +3504,7 @@ export function renderLesson(lesson) {
       }
     });
   }
-  if (lesson.tasks) {
+  if (!isKs3 && lesson.tasks) {
     const eTasks = lesson.tasks.filter(
       (t) => !isSpecialTaskType(t) && (t.text || t.question || '').includes('marks)'),
     );
@@ -8820,7 +8821,10 @@ export function renderLesson(lesson) {
       `;
   }
 
-  if (lesson.exam_practice) {
+  // In KS3 units, lesson.tasks already renders the canonical Pupil Workbook Activity (Recto) accordion.
+  // We only render htmlExamPractice for KS3 if lesson.tasks is absent or empty as a fallback.
+  const hasRenderableTasks = Array.isArray(lesson.tasks) && lesson.tasks.length > 0;
+  if (lesson.exam_practice && (!isKs3 || !hasRenderableTasks)) {
     let epQuestions = [];
     let epStimulus = [];
     if (Array.isArray(lesson.exam_practice)) {
@@ -9931,43 +9935,9 @@ export function renderLesson(lesson) {
     }
   }
 
-  let deck = null;
-  if (lesson.vocab && lesson.vocab.length > 0) {
-    deck = lesson.vocab;
-  } else if (lesson.key_vocabulary && lesson.key_vocabulary.length > 0) {
-    deck = lesson.key_vocabulary;
-  } else if (lesson.flashcards && lesson.flashcards.length > 0) {
-    if (lesson.flashcards[0].term || lesson.flashcards[0].word) {
-      deck = lesson.flashcards;
-    }
-  }
-
-  if (deck) {
-    htmlVocabDeck += `
-        <div class="phase-card">
-          <div class="phase-title">Consolidation & Recall</div>
-          <p style="color: #666; margin-bottom: 20px;">Tap a card to flip it and reveal the definition.</p>
-          <div class="flashcard-deck">
-      `;
-    deck.forEach((fc) => {
-      let t = fc.term || fc.word || fc.title || '';
-      let d = fc.definition || fc.meaning || fc.desc || '';
-      htmlVocabDeck += `
-          <div class="flashcard-wrapper" data-action="flip-card-wrapper">
-            <div class="flashcard-inner">
-              <div class="flashcard-face flashcard-front">
-                <h4>${t}</h4>
-                <p>Tap to reveal</p>
-              </div>
-              <div class="flashcard-face flashcard-back">
-                ${d}
-              </div>
-            </div>
-          </div>
-        `;
-    });
-    htmlVocabDeck += `</div></div>`;
-  }
+  // Note: Legacy static "Consolidation & Recall" vocabulary grid removed.
+  // End-of-lesson vocabulary consolidation is now handled cleanly by the unified
+  // Consolidate Station terminal (renderConsolidateStationHTML -> Vocab Cards tab).
 
   if (lesson.extended || lesson.debate_prep) {
     let extHtml = `
@@ -10124,7 +10094,6 @@ export function renderLesson(lesson) {
       htmlSources1 +
       htmlPairShare +
       htmlExamPractice +
-      htmlVocabDeck +
       htmlExtended +
       htmlHistorian;
   } else if (
@@ -10146,7 +10115,6 @@ export function renderLesson(lesson) {
       (typeof isGCSE !== 'undefined' && isGCSE ? '' : htmlSources1) +
       htmlExamPractice +
       htmlTasks +
-      htmlVocabDeck +
       htmlExtended +
       htmlPairShare +
       htmlHistorian;
@@ -10164,7 +10132,6 @@ export function renderLesson(lesson) {
       htmlExamPractice +
       htmlDominoSpine +
       htmlTasks +
-      htmlVocabDeck +
       htmlExtended +
       htmlPairShare +
       htmlHistorian;
@@ -10885,89 +10852,12 @@ export function renderLesson(lesson) {
     `;
   }
 
-  // --- PLENARY RETRIEVAL QUIZ LAUNCHER (Compact ~80px card immediately above Exit Ticket) ---
-  const rawLessonQuiz = lesson.quiz || lesson.quick_quiz || lesson.quiz_questions;
-  if (rawLessonQuiz && rawLessonQuiz.length > 0 && appStore.state.activeUnitData.type !== 'trip') {
-    let savedScoreBadge = '';
-    try {
-      const savedRaw = localStorage.getItem('history_quiz_' + lesson.id);
-      if (savedRaw) {
-        const s = JSON.parse(savedRaw);
-        savedScoreBadge = `
-          <span class="quiz-score-pill" style="background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-circle-check"></i> Score: ${s.score}/${s.total} (${s.pct}%)
-          </span>
-          <button class="btn btn-secondary" onclick="window.startQuiz('${lesson.id}')" style="padding: 7px 14px; font-size: 0.85rem; font-weight: 600; margin-left: 8px;">
-            <i class="fa-solid fa-rotate-right"></i> Re-take
-          </button>
-        `;
-      }
-    } catch (e) {}
-
-    html += `
-        <div class="phase-card no-print plenary-launcher-card" id="plenary-launcher-${lesson.id}" style="padding: 18px 24px; margin-bottom: 25px; background: #ffffff; border: 1.5px solid #cbd5e1; border-left: 5px solid #2563eb; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.03); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; min-height: 80px;">
-          <div style="display: flex; align-items: center; gap: 14px;">
-            <div style="width: 44px; height: 44px; border-radius: 12px; background: #eff6ff; display: flex; align-items: center; justify-content: center; font-size: 1.35rem; color: #2563eb; border: 1.5px solid #bfdbfe; flex-shrink: 0;">
-              🎯
-            </div>
-            <div>
-              <h3 style="margin: 0; color: #0f172a; font-size: 1.15rem; font-family: 'Playfair Display', Georgia, serif;">Plenary Retrieval Quiz</h3>
-              <p style="margin: 3px 0 0 0; color: #64748b; font-size: 0.88rem;">Rapid closed-book recall &bull; <strong>${rawLessonQuiz.length} Questions</strong></p>
-            </div>
-          </div>
-          <div id="quiz-status-badge-${lesson.id}" style="display: flex; align-items: center;">
-            ${
-              savedScoreBadge
-                ? savedScoreBadge
-                : `
-              <button class="btn-pedagogy-primary" onclick="window.startQuiz('${lesson.id}')" style="padding: 10px 22px; font-size: 0.95rem; font-weight: 700; border-radius: 8px; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.22); cursor: pointer;">
-                <i class="fa-solid fa-rocket"></i> Launch Plenary Quiz
-              </button>
-            `
-            }
-          </div>
-        </div>
-      `;
+  // --- EMBEDDED CHECK & CONSOLIDATE STATION (Quick Check 5 Qs / Deep Challenge 20 Qs / Vocab Flip Cards) ---
+  if (appStore.state.activeUnitData.type !== 'trip') {
+    html += renderConsolidateStationHTML(lesson);
   }
 
-  // --- EXIT TICKET / LESSON CLOSURE ---
-  if (lesson.exit_ticket) {
-    const et = lesson.exit_ticket;
-    html += `
-      <div class="phase-card exit-ticket-card no-print" style="padding: 25px; background: #f8fafc; border: 2px solid #3b82f6; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 16px;">
-          <h3 style="margin: 0; color: #1e3a8a; font-size: 1.35rem; display: flex; align-items: center; gap: 10px; font-family: 'Playfair Display', serif;">
-            <i class="fa-solid fa-ticket" style="color: #2563eb;"></i> ${et.title || 'Exit Ticket · Lesson Closure'}
-          </h3>
-          <span style="background: #dbeafe; color: #1e40af; font-size: 0.85rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">${et.type_label || 'Exit Ticket'}</span>
-        </div>
-        <p style="color: #1e293b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 15px;">
-          ${window.formatBold(et.prompt)}
-        </p>
-        ${
-          et.options && et.options.length > 0
-            ? `
-          <div style="background: white; border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
-            ${et.options.map((opt) => `<div style="padding: 8px 12px; margin-bottom: 6px; background: #f8fafc; border-radius: 6px; font-size: 1rem; color: #334155; border-left: 3px solid #94a3b8;">${window.formatBold(opt)}</div>`).join('')}
-          </div>
-        `
-            : ''
-        }
-        ${
-          et.guidance
-            ? `
-          <div style="font-size: 0.95rem; color: #64748b; font-style: italic; margin-bottom: 12px;">
-            <strong>Teacher Guidance:</strong> ${window.formatBold(et.guidance)}
-          </div>
-        `
-            : ''
-        }
-        <div style="margin-top: 15px;">
-          <textarea class="form-control" placeholder="Write your exit ticket response here before leaving class..." style="width: 100%; min-height: 90px; border-radius: 8px; border: 1px solid #cbd5e1; padding: 12px; font-size: 1rem; line-height: 1.5;"></textarea>
-        </div>
-      </div>
-    `;
-  }
+  // Note: Exit Ticket is now unified directly into the Consolidate Station terminal above.
 
   // --- LESSON REFLECTION / DIRT PROMPT ---
   // Renders a visual prompt at the end of the final lesson,
@@ -11068,6 +10958,12 @@ export function renderLesson(lesson) {
   html += `</div>`; // End lesson-content wrapper
 
   contentArea.innerHTML = html;
+
+  try {
+    initConsolidateStation(lesson);
+  } catch (err) {
+    console.error('Failed to initialize consolidate station:', err);
+  }
 
   window.vocabMatchesFound = 0;
   if (window.resetVocabSelection) window.resetVocabSelection();
