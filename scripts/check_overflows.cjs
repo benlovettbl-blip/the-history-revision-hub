@@ -65,7 +65,7 @@ const { auditPageBudget, printSpaceAuditReport } = require('./audit_page_budget.
     if (fs.existsSync(unitFolder)) {
       const candidates = fs.readdirSync(unitFolder).filter((f) => f.endsWith('.html'));
       const priorityPrefixes = ['pupil_workbook', 'quiz_pack', 'mastery_pack', 'textbook'];
-      let matched = candidates.filter((f) => priorityPrefixes.some((p) => f.startsWith(p)));
+      let matched = candidates.filter((f) => priorityPrefixes.some((p) => f.startsWith(p)) && !f.includes('prototype'));
       // Exclude legacy continuous files if modern publisher/V2 exists
       if (candidates.includes('pupil_workbook_v2.html')) {
         matched = matched.filter(

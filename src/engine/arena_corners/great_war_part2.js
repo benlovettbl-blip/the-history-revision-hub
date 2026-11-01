@@ -176,3 +176,4 @@ GREAT_WAR_PART2_CORNERS.lesson_2 = GREAT_WAR_PART2_CORNERS.lesson_2_trenches_hai
 GREAT_WAR_PART2_CORNERS.lesson_3 = GREAT_WAR_PART2_CORNERS.lesson_3_empire_troops;
 GREAT_WAR_PART2_CORNERS.lesson_4 = GREAT_WAR_PART2_CORNERS.lesson_4_home_front_dora;
 GREAT_WAR_PART2_CORNERS.lesson_5 = GREAT_WAR_PART2_CORNERS.lesson_5_versailles;
+

@@ -1,1298 +1,1298 @@
 // Auto-generated mapping of curriculum units and lessons to physical printed workbook page numbers
 export const WORKBOOK_PAGE_MAP = {
-  australia: {
-    lesson_1: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'australia',
-      lessonIndex: 0,
+  "australia": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "australia",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'australia',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "australia",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 6,
-      endPage: 7,
-      spread: 'pp. 6–7',
-      booklet: 'Pupil Workbook',
-      unitId: 'australia',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "australia",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 10,
-      endPage: 11,
-      spread: 'pp. 10–11',
-      booklet: 'Pupil Workbook',
-      unitId: 'australia',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "australia",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'australia',
-      lessonIndex: 4,
-    },
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "australia",
+      "lessonIndex": 4
+    }
   },
-  cme_new: {
-    lesson_1: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 0,
+  "cme_new": {
+    "lesson_1": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 8,
-      endPage: 8,
-      spread: 'Page 8',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 8,
+      "endPage": 8,
+      "spread": "Page 8",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 12,
-      endPage: 12,
-      spread: 'Page 12',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 12,
+      "endPage": 12,
+      "spread": "Page 12",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 16,
-      endPage: 16,
-      spread: 'Page 16',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 16,
+      "endPage": 16,
+      "spread": "Page 16",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 3
     },
-    lesson_6: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 4,
+    "lesson_6": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 4
     },
-    lesson_7: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 5,
+    "lesson_7": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 5
     },
-    lesson_8: {
-      page: 12,
-      endPage: 12,
-      spread: 'Page 12',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 6,
+    "lesson_8": {
+      "page": 12,
+      "endPage": 12,
+      "spread": "Page 12",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 6
     },
-    lesson_9: {
-      page: 16,
-      endPage: 16,
-      spread: 'Page 16',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 7,
+    "lesson_9": {
+      "page": 16,
+      "endPage": 16,
+      "spread": "Page 16",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 7
     },
-    lesson_10: {
-      page: 20,
-      endPage: 20,
-      spread: 'Page 20',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 8,
+    "lesson_10": {
+      "page": 20,
+      "endPage": 20,
+      "spread": "Page 20",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 8
     },
-    lesson_11: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 9,
+    "lesson_11": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 9
     },
-    lesson_12: {
-      page: 8,
-      endPage: 8,
-      spread: 'Page 8',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 10,
+    "lesson_12": {
+      "page": 8,
+      "endPage": 8,
+      "spread": "Page 8",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 10
     },
-    lesson_13: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'cme_new',
-      lessonIndex: 11,
-    },
+    "lesson_13": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "cme_new",
+      "lessonIndex": 11
+    }
   },
-  cold_war: {
-    lesson_1: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Pupil Workbook',
-      unitId: 'cold_war',
-      lessonIndex: 0,
+  "cold_war": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Pupil Workbook",
+      "unitId": "cold_war",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Pupil Workbook',
-      unitId: 'cold_war',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Pupil Workbook",
+      "unitId": "cold_war",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 6,
-      endPage: 6,
-      spread: 'Page 6',
-      booklet: 'Pupil Workbook',
-      unitId: 'cold_war',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 6,
+      "endPage": 6,
+      "spread": "Page 6",
+      "booklet": "Pupil Workbook",
+      "unitId": "cold_war",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 10,
-      endPage: 10,
-      spread: 'Page 10',
-      booklet: 'Pupil Workbook',
-      unitId: 'cold_war',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 10,
+      "endPage": 10,
+      "spread": "Page 10",
+      "booklet": "Pupil Workbook",
+      "unitId": "cold_war",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 12,
-      endPage: 12,
-      spread: 'Page 12',
-      booklet: 'Pupil Workbook',
-      unitId: 'cold_war',
-      lessonIndex: 4,
+    "lesson_5": {
+      "page": 12,
+      "endPage": 12,
+      "spread": "Page 12",
+      "booklet": "Pupil Workbook",
+      "unitId": "cold_war",
+      "lessonIndex": 4
     },
-    lesson_6: {
-      page: 14,
-      endPage: 14,
-      spread: 'Page 14',
-      booklet: 'Pupil Workbook',
-      unitId: 'cold_war',
-      lessonIndex: 5,
+    "lesson_6": {
+      "page": 14,
+      "endPage": 14,
+      "spread": "Page 14",
+      "booklet": "Pupil Workbook",
+      "unitId": "cold_war",
+      "lessonIndex": 5
     },
-    lesson_7: {
-      page: 39,
-      endPage: 39,
-      spread: 'Page 39',
-      booklet: 'Pupil Workbook',
-      unitId: 'cold_war',
-      lessonIndex: 6,
-    },
+    "lesson_7": {
+      "page": 39,
+      "endPage": 39,
+      "spread": "Page 39",
+      "booklet": "Pupil Workbook",
+      "unitId": "cold_war",
+      "lessonIndex": 6
+    }
   },
-  early_modern_world: {
-    lesson_1: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'early_modern_world',
-      lessonIndex: 0,
+  "early_modern_world": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "early_modern_world",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'early_modern_world',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "early_modern_world",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 8,
-      endPage: 9,
-      spread: 'pp. 8–9',
-      booklet: 'Pupil Workbook',
-      unitId: 'early_modern_world',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 8,
+      "endPage": 9,
+      "spread": "pp. 8–9",
+      "booklet": "Pupil Workbook",
+      "unitId": "early_modern_world",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 8,
-      endPage: 9,
-      spread: 'pp. 8–9',
-      booklet: 'Pupil Workbook',
-      unitId: 'early_modern_world',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 8,
+      "endPage": 9,
+      "spread": "pp. 8–9",
+      "booklet": "Pupil Workbook",
+      "unitId": "early_modern_world",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 10,
-      endPage: 11,
-      spread: 'pp. 10–11',
-      booklet: 'Pupil Workbook',
-      unitId: 'early_modern_world',
-      lessonIndex: 4,
+    "lesson_5": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "early_modern_world",
+      "lessonIndex": 4
     },
-    lesson_6: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'early_modern_world',
-      lessonIndex: 5,
+    "lesson_6": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "early_modern_world",
+      "lessonIndex": 5
     },
-    lesson_7: {
-      page: 14,
-      endPage: 15,
-      spread: 'pp. 14–15',
-      booklet: 'Pupil Workbook',
-      unitId: 'early_modern_world',
-      lessonIndex: 6,
+    "lesson_7": {
+      "page": 14,
+      "endPage": 15,
+      "spread": "pp. 14–15",
+      "booklet": "Pupil Workbook",
+      "unitId": "early_modern_world",
+      "lessonIndex": 6
     },
-    lesson_8: {
-      page: 18,
-      endPage: 19,
-      spread: 'pp. 18–19',
-      booklet: 'Pupil Workbook',
-      unitId: 'early_modern_world',
-      lessonIndex: 7,
+    "lesson_8": {
+      "page": 18,
+      "endPage": 19,
+      "spread": "pp. 18–19",
+      "booklet": "Pupil Workbook",
+      "unitId": "early_modern_world",
+      "lessonIndex": 7
     },
-    lesson_9: {
-      page: 18,
-      endPage: 19,
-      spread: 'pp. 18–19',
-      booklet: 'Pupil Workbook',
-      unitId: 'early_modern_world',
-      lessonIndex: 8,
-    },
+    "lesson_9": {
+      "page": 18,
+      "endPage": 19,
+      "spread": "pp. 18–19",
+      "booklet": "Pupil Workbook",
+      "unitId": "early_modern_world",
+      "lessonIndex": 8
+    }
   },
-  edexcel_medicine: {
-    lesson_1_1: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Medieval Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 0,
+  "edexcel_medicine": {
+    "lesson_1_1": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Medieval Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 0
     },
-    lesson_1_2: {
-      page: 7,
-      endPage: 7,
-      spread: 'Page 7',
-      booklet: 'Medieval Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 1,
+    "lesson_1_2": {
+      "page": 7,
+      "endPage": 7,
+      "spread": "Page 7",
+      "booklet": "Medieval Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 1
     },
-    lesson_1_3: {
-      page: 10,
-      endPage: 10,
-      spread: 'Page 10',
-      booklet: 'Medieval Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 2,
+    "lesson_1_3": {
+      "page": 10,
+      "endPage": 10,
+      "spread": "Page 10",
+      "booklet": "Medieval Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 2
     },
-    lesson_1_4: {
-      page: 13,
-      endPage: 13,
-      spread: 'Page 13',
-      booklet: 'Medieval Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 3,
+    "lesson_1_4": {
+      "page": 13,
+      "endPage": 13,
+      "spread": "Page 13",
+      "booklet": "Medieval Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 3
     },
-    lesson_1_5: {
-      page: 16,
-      endPage: 16,
-      spread: 'Page 16',
-      booklet: 'Medieval Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 4,
+    "lesson_1_5": {
+      "page": 16,
+      "endPage": 16,
+      "spread": "Page 16",
+      "booklet": "Medieval Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 4
     },
-    lesson_2_1: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Renaissance Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 5,
+    "lesson_2_1": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Renaissance Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 5
     },
-    lesson_2_2: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Renaissance Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 6,
+    "lesson_2_2": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Renaissance Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 6
     },
-    lesson_2_3: {
-      page: 10,
-      endPage: 10,
-      spread: 'Page 10',
-      booklet: 'Renaissance Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 7,
+    "lesson_2_3": {
+      "page": 10,
+      "endPage": 10,
+      "spread": "Page 10",
+      "booklet": "Renaissance Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 7
     },
-    lesson_2_4: {
-      page: 13,
-      endPage: 13,
-      spread: 'Page 13',
-      booklet: 'Renaissance Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 8,
+    "lesson_2_4": {
+      "page": 13,
+      "endPage": 13,
+      "spread": "Page 13",
+      "booklet": "Renaissance Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 8
     },
-    lesson_2_5: {
-      page: 16,
-      endPage: 16,
-      spread: 'Page 16',
-      booklet: 'Renaissance Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 9,
+    "lesson_2_5": {
+      "page": 16,
+      "endPage": 16,
+      "spread": "Page 16",
+      "booklet": "Renaissance Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 9
     },
-    lesson_3_1: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: '18th & 19th C Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 10,
+    "lesson_3_1": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "18th & 19th C Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 10
     },
-    lesson_3_2: {
-      page: 7,
-      endPage: 7,
-      spread: 'Page 7',
-      booklet: '18th & 19th C Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 11,
+    "lesson_3_2": {
+      "page": 7,
+      "endPage": 7,
+      "spread": "Page 7",
+      "booklet": "18th & 19th C Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 11
     },
-    lesson_3_3: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: '18th & 19th C Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 12,
+    "lesson_3_3": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "18th & 19th C Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 12
     },
-    lesson_3_4: {
-      page: 13,
-      endPage: 13,
-      spread: 'Page 13',
-      booklet: '18th & 19th C Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 13,
+    "lesson_3_4": {
+      "page": 13,
+      "endPage": 13,
+      "spread": "Page 13",
+      "booklet": "18th & 19th C Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 13
     },
-    lesson_3_5: {
-      page: 16,
-      endPage: 16,
-      spread: 'Page 16',
-      booklet: '18th & 19th C Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 14,
+    "lesson_3_5": {
+      "page": 16,
+      "endPage": 16,
+      "spread": "Page 16",
+      "booklet": "18th & 19th C Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 14
     },
-    lesson_4_1: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Modern Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 15,
+    "lesson_4_1": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Modern Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 15
     },
-    lesson_4_2: {
-      page: 7,
-      endPage: 7,
-      spread: 'Page 7',
-      booklet: 'Modern Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 16,
+    "lesson_4_2": {
+      "page": 7,
+      "endPage": 7,
+      "spread": "Page 7",
+      "booklet": "Modern Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 16
     },
-    lesson_4_3: {
-      page: 10,
-      endPage: 10,
-      spread: 'Page 10',
-      booklet: 'Modern Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 17,
+    "lesson_4_3": {
+      "page": 10,
+      "endPage": 10,
+      "spread": "Page 10",
+      "booklet": "Modern Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 17
     },
-    lesson_4_4: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Modern Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 18,
+    "lesson_4_4": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Modern Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 18
     },
-    lesson_4_5: {
-      page: 16,
-      endPage: 16,
-      spread: 'Page 16',
-      booklet: 'Modern Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 19,
+    "lesson_4_5": {
+      "page": 16,
+      "endPage": 16,
+      "spread": "Page 16",
+      "booklet": "Modern Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 19
     },
-    lesson_5_1: {
-      page: 6,
-      endPage: 6,
-      spread: 'Page 6',
-      booklet: 'Western Front Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 20,
+    "lesson_5_1": {
+      "page": 6,
+      "endPage": 6,
+      "spread": "Page 6",
+      "booklet": "Western Front Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 20
     },
-    lesson_5_2: {
-      page: 10,
-      endPage: 10,
-      spread: 'Page 10',
-      booklet: 'Western Front Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 21,
+    "lesson_5_2": {
+      "page": 10,
+      "endPage": 10,
+      "spread": "Page 10",
+      "booklet": "Western Front Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 21
     },
-    lesson_5_3: {
-      page: 14,
-      endPage: 14,
-      spread: 'Page 14',
-      booklet: 'Western Front Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 22,
+    "lesson_5_3": {
+      "page": 14,
+      "endPage": 14,
+      "spread": "Page 14",
+      "booklet": "Western Front Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 22
     },
-    lesson_5_4: {
-      page: 18,
-      endPage: 18,
-      spread: 'Page 18',
-      booklet: 'Western Front Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 23,
+    "lesson_5_4": {
+      "page": 18,
+      "endPage": 18,
+      "spread": "Page 18",
+      "booklet": "Western Front Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 23
     },
-    lesson_5_5: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Western Front Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 24,
+    "lesson_5_5": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Western Front Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 24
     },
-    lesson_5_6: {
-      page: 26,
-      endPage: 26,
-      spread: 'Page 26',
-      booklet: 'Western Front Booklet',
-      unitId: 'edexcel_medicine',
-      lessonIndex: 25,
-    },
+    "lesson_5_6": {
+      "page": 26,
+      "endPage": 26,
+      "spread": "Page 26",
+      "booklet": "Western Front Booklet",
+      "unitId": "edexcel_medicine",
+      "lessonIndex": 25
+    }
   },
-  eee: {
-    lesson_1_1: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'eee',
-      lessonIndex: 0,
+  "eee": {
+    "lesson_1_1": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 0
     },
-    lesson_1_2: {
-      page: 7,
-      endPage: 7,
-      spread: 'Page 7',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'eee',
-      lessonIndex: 1,
+    "lesson_1_2": {
+      "page": 7,
+      "endPage": 7,
+      "spread": "Page 7",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 1
     },
-    lesson_1_3: {
-      page: 10,
-      endPage: 10,
-      spread: 'Page 10',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'eee',
-      lessonIndex: 2,
+    "lesson_1_3": {
+      "page": 10,
+      "endPage": 10,
+      "spread": "Page 10",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 2
     },
-    lesson_1_4: {
-      page: 13,
-      endPage: 13,
-      spread: 'Page 13',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'eee',
-      lessonIndex: 3,
+    "lesson_1_4": {
+      "page": 13,
+      "endPage": 13,
+      "spread": "Page 13",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 3
     },
-    lesson_2_1: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'eee',
-      lessonIndex: 4,
+    "lesson_2_1": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 4
     },
-    lesson_2_2: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'eee',
-      lessonIndex: 5,
+    "lesson_2_2": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 5
     },
-    lesson_2_3: {
-      page: 10,
-      endPage: 10,
-      spread: 'Page 10',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'eee',
-      lessonIndex: 6,
+    "lesson_2_3": {
+      "page": 10,
+      "endPage": 10,
+      "spread": "Page 10",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 6
     },
-    lesson_2_4: {
-      page: 13,
-      endPage: 13,
-      spread: 'Page 13',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'eee',
-      lessonIndex: 7,
+    "lesson_2_4": {
+      "page": 13,
+      "endPage": 13,
+      "spread": "Page 13",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 7
     },
-    lesson_3_1: {
-      page: 4,
-      endPage: 4,
-      spread: 'Page 4',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'eee',
-      lessonIndex: 8,
+    "lesson_3_1": {
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 8
     },
-    lesson_3_2: {
-      page: 7,
-      endPage: 7,
-      spread: 'Page 7',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'eee',
-      lessonIndex: 9,
+    "lesson_3_2": {
+      "page": 7,
+      "endPage": 7,
+      "spread": "Page 7",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 9
     },
-    lesson_3_3: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'eee',
-      lessonIndex: 10,
+    "lesson_3_3": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 10
     },
-    lesson_3_4: {
-      page: 13,
-      endPage: 13,
-      spread: 'Page 13',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'eee',
-      lessonIndex: 11,
-    },
+    "lesson_3_4": {
+      "page": 13,
+      "endPage": 13,
+      "spread": "Page 13",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "eee",
+      "lessonIndex": 11
+    }
   },
-  great_war: {
-    lesson_1: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'great_war',
-      lessonIndex: 0,
+  "great_war": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "great_war",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'great_war',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "great_war",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 6,
-      endPage: 7,
-      spread: 'pp. 6–7',
-      booklet: 'Pupil Workbook',
-      unitId: 'great_war',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "great_war",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 10,
-      endPage: 11,
-      spread: 'pp. 10–11',
-      booklet: 'Pupil Workbook',
-      unitId: 'great_war',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "great_war",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'great_war',
-      lessonIndex: 4,
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "great_war",
+      "lessonIndex": 4
     },
-    lesson_6: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'great_war',
-      lessonIndex: 5,
-    },
+    "lesson_6": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "great_war",
+      "lessonIndex": 5
+    }
   },
-  great_war_part2: {
-    lesson_1_enlistment: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'great_war_part2',
-      lessonIndex: 0,
+  "great_war_part2": {
+    "lesson_1_enlistment": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "great_war_part2",
+      "lessonIndex": 0
     },
-    lesson_2_trenches_haig: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'great_war_part2',
-      lessonIndex: 1,
+    "lesson_2_trenches_haig": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "great_war_part2",
+      "lessonIndex": 1
     },
-    lesson_3_empire_troops: {
-      page: 6,
-      endPage: 7,
-      spread: 'pp. 6–7',
-      booklet: 'Pupil Workbook',
-      unitId: 'great_war_part2',
-      lessonIndex: 2,
+    "lesson_3_empire_troops": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "great_war_part2",
+      "lessonIndex": 2
     },
-    lesson_4_home_front_dora: {
-      page: 10,
-      endPage: 11,
-      spread: 'pp. 10–11',
-      booklet: 'Pupil Workbook',
-      unitId: 'great_war_part2',
-      lessonIndex: 3,
+    "lesson_4_home_front_dora": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "great_war_part2",
+      "lessonIndex": 3
     },
-    lesson_5_versailles: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'great_war_part2',
-      lessonIndex: 4,
-    },
+    "lesson_5_versailles": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "great_war_part2",
+      "lessonIndex": 4
+    }
   },
-  industrialisation_and_empire: {
-    lesson_1: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'industrialisation_and_empire',
-      lessonIndex: 0,
+  "industrialisation_and_empire": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "industrialisation_and_empire",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'industrialisation_and_empire',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "industrialisation_and_empire",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 6,
-      endPage: 7,
-      spread: 'pp. 6–7',
-      booklet: 'Pupil Workbook',
-      unitId: 'industrialisation_and_empire',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "industrialisation_and_empire",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 10,
-      endPage: 11,
-      spread: 'pp. 10–11',
-      booklet: 'Pupil Workbook',
-      unitId: 'industrialisation_and_empire',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "industrialisation_and_empire",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'industrialisation_and_empire',
-      lessonIndex: 4,
-    },
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "industrialisation_and_empire",
+      "lessonIndex": 4
+    }
   },
-  medieval_england: {
-    lesson_1: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'medieval_england',
-      lessonIndex: 0,
+  "medieval_england": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "medieval_england",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'medieval_england',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "medieval_england",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 6,
-      endPage: 7,
-      spread: 'pp. 6–7',
-      booklet: 'Pupil Workbook',
-      unitId: 'medieval_england',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "medieval_england",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 10,
-      endPage: 11,
-      spread: 'pp. 10–11',
-      booklet: 'Pupil Workbook',
-      unitId: 'medieval_england',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "medieval_england",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'medieval_england',
-      lessonIndex: 4,
-    },
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "medieval_england",
+      "lessonIndex": 4
+    }
   },
-  post_war_britain: {
-    lesson_1: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'post_war_britain',
-      lessonIndex: 0,
+  "post_war_britain": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "post_war_britain",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'post_war_britain',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "post_war_britain",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 6,
-      endPage: 7,
-      spread: 'pp. 6–7',
-      booklet: 'Pupil Workbook',
-      unitId: 'post_war_britain',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "post_war_britain",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 10,
-      endPage: 11,
-      spread: 'pp. 10–11',
-      booklet: 'Pupil Workbook',
-      unitId: 'post_war_britain',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "post_war_britain",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'post_war_britain',
-      lessonIndex: 4,
-    },
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "post_war_britain",
+      "lessonIndex": 4
+    }
   },
-  the_shoah: {
-    lesson_1: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'the_shoah',
-      lessonIndex: 0,
+  "the_shoah": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "the_shoah",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'the_shoah',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "the_shoah",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 6,
-      endPage: 7,
-      spread: 'pp. 6–7',
-      booklet: 'Pupil Workbook',
-      unitId: 'the_shoah',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "the_shoah",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 8,
-      endPage: 9,
-      spread: 'pp. 8–9',
-      booklet: 'Pupil Workbook',
-      unitId: 'the_shoah',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 8,
+      "endPage": 9,
+      "spread": "pp. 8–9",
+      "booklet": "Pupil Workbook",
+      "unitId": "the_shoah",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'the_shoah',
-      lessonIndex: 4,
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "the_shoah",
+      "lessonIndex": 4
     },
-    lesson_6: {
-      page: 14,
-      endPage: 15,
-      spread: 'pp. 14–15',
-      booklet: 'Pupil Workbook',
-      unitId: 'the_shoah',
-      lessonIndex: 5,
+    "lesson_6": {
+      "page": 14,
+      "endPage": 15,
+      "spread": "pp. 14–15",
+      "booklet": "Pupil Workbook",
+      "unitId": "the_shoah",
+      "lessonIndex": 5
     },
-    lesson_7: {
-      page: 16,
-      endPage: 17,
-      spread: 'pp. 16–17',
-      booklet: 'Pupil Workbook',
-      unitId: 'the_shoah',
-      lessonIndex: 6,
-    },
+    "lesson_7": {
+      "page": 16,
+      "endPage": 17,
+      "spread": "pp. 16–17",
+      "booklet": "Pupil Workbook",
+      "unitId": "the_shoah",
+      "lessonIndex": 6
+    }
   },
-  trip_ypres: {},
-  usa: {
-    lesson_1_1: {
-      page: 3,
-      endPage: 3,
-      spread: 'Page 3',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'usa',
-      lessonIndex: 0,
+  "trip_ypres": {},
+  "usa": {
+    "lesson_1_1": {
+      "page": 3,
+      "endPage": 3,
+      "spread": "Page 3",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 0
     },
-    lesson_1_2: {
-      page: 9,
-      endPage: 9,
-      spread: 'Page 9',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'usa',
-      lessonIndex: 1,
+    "lesson_1_2": {
+      "page": 9,
+      "endPage": 9,
+      "spread": "Page 9",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 1
     },
-    lesson_1_3: {
-      page: 15,
-      endPage: 15,
-      spread: 'Page 15',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'usa',
-      lessonIndex: 2,
+    "lesson_1_3": {
+      "page": 15,
+      "endPage": 15,
+      "spread": "Page 15",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 2
     },
-    lesson_1_4: {
-      page: 21,
-      endPage: 21,
-      spread: 'Page 21',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'usa',
-      lessonIndex: 3,
+    "lesson_1_4": {
+      "page": 21,
+      "endPage": 21,
+      "spread": "Page 21",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 3
     },
-    lesson_2_1: {
-      page: 3,
-      endPage: 3,
-      spread: 'Page 3',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'usa',
-      lessonIndex: 4,
+    "lesson_2_1": {
+      "page": 3,
+      "endPage": 3,
+      "spread": "Page 3",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 4
     },
-    lesson_2_2: {
-      page: 9,
-      endPage: 9,
-      spread: 'Page 9',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'usa',
-      lessonIndex: 5,
+    "lesson_2_2": {
+      "page": 9,
+      "endPage": 9,
+      "spread": "Page 9",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 5
     },
-    lesson_2_3: {
-      page: 15,
-      endPage: 15,
-      spread: 'Page 15',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'usa',
-      lessonIndex: 6,
+    "lesson_2_3": {
+      "page": 15,
+      "endPage": 15,
+      "spread": "Page 15",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 6
     },
-    lesson_2_4: {
-      page: 21,
-      endPage: 21,
-      spread: 'Page 21',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'usa',
-      lessonIndex: 7,
+    "lesson_2_4": {
+      "page": 21,
+      "endPage": 21,
+      "spread": "Page 21",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 7
     },
-    lesson_3_1: {
-      page: 3,
-      endPage: 3,
-      spread: 'Page 3',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'usa',
-      lessonIndex: 8,
+    "lesson_3_1": {
+      "page": 3,
+      "endPage": 3,
+      "spread": "Page 3",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 8
     },
-    lesson_3_2: {
-      page: 9,
-      endPage: 9,
-      spread: 'Page 9',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'usa',
-      lessonIndex: 9,
+    "lesson_3_2": {
+      "page": 9,
+      "endPage": 9,
+      "spread": "Page 9",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 9
     },
-    lesson_3_3: {
-      page: 15,
-      endPage: 15,
-      spread: 'Page 15',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'usa',
-      lessonIndex: 10,
+    "lesson_3_3": {
+      "page": 15,
+      "endPage": 15,
+      "spread": "Page 15",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 10
     },
-    lesson_3_4: {
-      page: 3,
-      endPage: 3,
-      spread: 'Page 3',
-      booklet: 'Key Topic 4 Booklet',
-      unitId: 'usa',
-      lessonIndex: 11,
+    "lesson_3_4": {
+      "page": 3,
+      "endPage": 3,
+      "spread": "Page 3",
+      "booklet": "Key Topic 4 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 11
     },
-    lesson_4_1: {
-      page: 9,
-      endPage: 9,
-      spread: 'Page 9',
-      booklet: 'Key Topic 4 Booklet',
-      unitId: 'usa',
-      lessonIndex: 12,
+    "lesson_4_1": {
+      "page": 9,
+      "endPage": 9,
+      "spread": "Page 9",
+      "booklet": "Key Topic 4 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 12
     },
-    lesson_4_2: {
-      page: 15,
-      endPage: 15,
-      spread: 'Page 15',
-      booklet: 'Key Topic 4 Booklet',
-      unitId: 'usa',
-      lessonIndex: 13,
+    "lesson_4_2": {
+      "page": 15,
+      "endPage": 15,
+      "spread": "Page 15",
+      "booklet": "Key Topic 4 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 13
     },
-    lesson_4_3: {
-      page: 21,
-      endPage: 21,
-      spread: 'Page 21',
-      booklet: 'Key Topic 4 Booklet',
-      unitId: 'usa',
-      lessonIndex: 14,
+    "lesson_4_3": {
+      "page": 21,
+      "endPage": 21,
+      "spread": "Page 21",
+      "booklet": "Key Topic 4 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 14
     },
-    lesson_4_4: {
-      page: 27,
-      endPage: 27,
-      spread: 'Page 27',
-      booklet: 'Key Topic 4 Booklet',
-      unitId: 'usa',
-      lessonIndex: 15,
-    },
+    "lesson_4_4": {
+      "page": 27,
+      "endPage": 27,
+      "spread": "Page 27",
+      "booklet": "Key Topic 4 Booklet",
+      "unitId": "usa",
+      "lessonIndex": 15
+    }
   },
-  water_and_sanitation: {
-    lesson_1: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'water_and_sanitation',
-      lessonIndex: 0,
+  "water_and_sanitation": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "water_and_sanitation",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'water_and_sanitation',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "water_and_sanitation",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 6,
-      endPage: 7,
-      spread: 'pp. 6–7',
-      booklet: 'Pupil Workbook',
-      unitId: 'water_and_sanitation',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "water_and_sanitation",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 10,
-      endPage: 11,
-      spread: 'pp. 10–11',
-      booklet: 'Pupil Workbook',
-      unitId: 'water_and_sanitation',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "water_and_sanitation",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'water_and_sanitation',
-      lessonIndex: 4,
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "water_and_sanitation",
+      "lessonIndex": 4
     },
-    lesson_6: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'water_and_sanitation',
-      lessonIndex: 5,
-    },
+    "lesson_6": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "water_and_sanitation",
+      "lessonIndex": 5
+    }
   },
-  weimar_nazi_germany: {
-    lesson_1_1: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 0,
+  "weimar_nazi_germany": {
+    "lesson_1_1": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 0
     },
-    lesson_1_2: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 1,
+    "lesson_1_2": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 1
     },
-    lesson_1_3: {
-      page: 3,
-      endPage: 3,
-      spread: 'Page 3',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 2,
+    "lesson_1_3": {
+      "page": 3,
+      "endPage": 3,
+      "spread": "Page 3",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 2
     },
-    lesson_1_4: {
-      page: 13,
-      endPage: 13,
-      spread: 'Page 13',
-      booklet: 'Key Topic 1 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 3,
+    "lesson_1_4": {
+      "page": 13,
+      "endPage": 13,
+      "spread": "Page 13",
+      "booklet": "Key Topic 1 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 3
     },
-    lesson_2_1: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 4,
+    "lesson_2_1": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 4
     },
-    lesson_2_2: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 5,
+    "lesson_2_2": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 5
     },
-    lesson_2_3: {
-      page: 3,
-      endPage: 3,
-      spread: 'Page 3',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 6,
+    "lesson_2_3": {
+      "page": 3,
+      "endPage": 3,
+      "spread": "Page 3",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 6
     },
-    lesson_2_4: {
-      page: 3,
-      endPage: 3,
-      spread: 'Page 3',
-      booklet: 'Key Topic 2 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 7,
+    "lesson_2_4": {
+      "page": 3,
+      "endPage": 3,
+      "spread": "Page 3",
+      "booklet": "Key Topic 2 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 7
     },
-    lesson_3_1: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 8,
+    "lesson_3_1": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 8
     },
-    lesson_3_2: {
-      page: 3,
-      endPage: 3,
-      spread: 'Page 3',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 9,
+    "lesson_3_2": {
+      "page": 3,
+      "endPage": 3,
+      "spread": "Page 3",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 9
     },
-    lesson_3_3: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 10,
+    "lesson_3_3": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 10
     },
-    lesson_3_4: {
-      page: 13,
-      endPage: 13,
-      spread: 'Page 13',
-      booklet: 'Key Topic 3 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 11,
+    "lesson_3_4": {
+      "page": 13,
+      "endPage": 13,
+      "spread": "Page 13",
+      "booklet": "Key Topic 3 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 11
     },
-    lesson_4_1: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 4 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 12,
+    "lesson_4_1": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 4 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 12
     },
-    lesson_4_2: {
-      page: 3,
-      endPage: 3,
-      spread: 'Page 3',
-      booklet: 'Key Topic 4 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 13,
+    "lesson_4_2": {
+      "page": 3,
+      "endPage": 3,
+      "spread": "Page 3",
+      "booklet": "Key Topic 4 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 13
     },
-    lesson_4_3: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 4 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 14,
+    "lesson_4_3": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 4 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 14
     },
-    lesson_4_4: {
-      page: 2,
-      endPage: 2,
-      spread: 'Page 2',
-      booklet: 'Key Topic 4 Booklet',
-      unitId: 'weimar_nazi_germany',
-      lessonIndex: 15,
-    },
+    "lesson_4_4": {
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
+      "booklet": "Key Topic 4 Booklet",
+      "unitId": "weimar_nazi_germany",
+      "lessonIndex": 15
+    }
   },
-  first_british_empire: {
-    lesson_1: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'first_british_empire',
-      lessonIndex: 0,
+  "first_british_empire": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "first_british_empire",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'first_british_empire',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "first_british_empire",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 6,
-      endPage: 7,
-      spread: 'pp. 6–7',
-      booklet: 'Pupil Workbook',
-      unitId: 'first_british_empire',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "first_british_empire",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 10,
-      endPage: 11,
-      spread: 'pp. 10–11',
-      booklet: 'Pupil Workbook',
-      unitId: 'first_british_empire',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "first_british_empire",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'first_british_empire',
-      lessonIndex: 4,
-    },
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "first_british_empire",
+      "lessonIndex": 4
+    }
   },
-  monarchy_religion_power: {
-    lesson_1: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'monarchy_religion_power',
-      lessonIndex: 0,
+  "monarchy_religion_power": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "monarchy_religion_power",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'monarchy_religion_power',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "monarchy_religion_power",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 6,
-      endPage: 7,
-      spread: 'pp. 6–7',
-      booklet: 'Pupil Workbook',
-      unitId: 'monarchy_religion_power',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "monarchy_religion_power",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 10,
-      endPage: 11,
-      spread: 'pp. 10–11',
-      booklet: 'Pupil Workbook',
-      unitId: 'monarchy_religion_power',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "monarchy_religion_power",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'monarchy_religion_power',
-      lessonIndex: 4,
-    },
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "monarchy_religion_power",
+      "lessonIndex": 4
+    }
   },
-  second_british_empire: {
-    lesson_1: {
-      page: 2,
-      endPage: 3,
-      spread: 'pp. 2–3',
-      booklet: 'Pupil Workbook',
-      unitId: 'second_british_empire',
-      lessonIndex: 0,
+  "second_british_empire": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "second_british_empire",
+      "lessonIndex": 0
     },
-    lesson_2: {
-      page: 4,
-      endPage: 5,
-      spread: 'pp. 4–5',
-      booklet: 'Pupil Workbook',
-      unitId: 'second_british_empire',
-      lessonIndex: 1,
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "second_british_empire",
+      "lessonIndex": 1
     },
-    lesson_3: {
-      page: 6,
-      endPage: 7,
-      spread: 'pp. 6–7',
-      booklet: 'Pupil Workbook',
-      unitId: 'second_british_empire',
-      lessonIndex: 2,
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "second_british_empire",
+      "lessonIndex": 2
     },
-    lesson_4: {
-      page: 10,
-      endPage: 11,
-      spread: 'pp. 10–11',
-      booklet: 'Pupil Workbook',
-      unitId: 'second_british_empire',
-      lessonIndex: 3,
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "second_british_empire",
+      "lessonIndex": 3
     },
-    lesson_5: {
-      page: 12,
-      endPage: 13,
-      spread: 'pp. 12–13',
-      booklet: 'Pupil Workbook',
-      unitId: 'second_british_empire',
-      lessonIndex: 4,
-    },
-  },
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "second_british_empire",
+      "lessonIndex": 4
+    }
+  }
 };
 
 export function getWorkbookPageAnchor(unitId, lessonOrId, fallbackIdx = 0) {
@@ -1317,18 +1317,8 @@ export function getWorkbookPageAnchor(unitId, lessonOrId, fallbackIdx = 0) {
 
   if (!entry) return null;
 
-  const isMultiBooklet = [
-    'cme_new',
-    'edexcel_medicine',
-    'eee',
-    'usa',
-    'weimar_nazi_germany',
-  ].includes(unitId);
-  const spreadLabel =
-    entry.spread ||
-    (entry.endPage && entry.endPage !== entry.page
-      ? `pp. ${entry.page}–${entry.endPage}`
-      : `Page ${entry.page}`);
+  const isMultiBooklet = ['cme_new', 'edexcel_medicine', 'eee', 'usa', 'weimar_nazi_germany'].includes(unitId);
+  const spreadLabel = entry.spread || (entry.endPage && entry.endPage !== entry.page ? `pp. ${entry.page}–${entry.endPage}` : `Page ${entry.page}`);
 
   if (isMultiBooklet && entry.booklet) {
     return {
@@ -1337,7 +1327,7 @@ export function getWorkbookPageAnchor(unitId, lessonOrId, fallbackIdx = 0) {
       spread: spreadLabel,
       booklet: entry.booklet,
       label: `${spreadLabel} (${entry.booklet})`,
-      shortLabel: spreadLabel,
+      shortLabel: spreadLabel
     };
   }
   return {
@@ -1346,6 +1336,6 @@ export function getWorkbookPageAnchor(unitId, lessonOrId, fallbackIdx = 0) {
     spread: spreadLabel,
     booklet: 'Workbook',
     label: spreadLabel,
-    shortLabel: spreadLabel,
+    shortLabel: spreadLabel
   };
 }

@@ -82,11 +82,11 @@ function cleanProse(text) {
 function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'first_british_empire', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
-  raw = raw.replace(/export\s+default\s+[^;]+;?/g, '').replace(/export\s*\{[^}]*\};?/g, '');
-  const sandbox = { module: { exports: {} } };
-  vm.createContext(sandbox);
-  vm.runInContext(raw, sandbox);
-  return sandbox.module.exports.id ? sandbox.module.exports : sandbox.unitData;
+  raw = raw.replace(/export\s+default[\s\S]*$/, '');
+  raw = raw.replace('const first_british_empire_data =', 'first_british_empire_data =');
+  const sandbox = {};
+  vm.runInNewContext(raw, sandbox);
+  return sandbox.first_british_empire_data;
 }
 
 // Canonical Stage Questions matching render_first_british_empire_workbook.cjs
@@ -378,7 +378,7 @@ function buildHtml() {
 
     .cover-hero-wrap {
       width: 100%;
-      height: 86mm;
+      height: 103mm;
       border: 1.5px solid #0f172a;
       position: relative;
       background: #0f172a;
@@ -951,13 +951,13 @@ function buildHtml() {
       <table class="cover-directory-table">
         <tbody>
           ${unitData.lessons
-            .slice(0, 5)
-            .map((lesson, idx) => {
-              const num = String(idx + 1).padStart(2, '0');
-              const cleanTitle = lesson.title.replace(/\s*\(\d+–\d+\)/, '');
-              const enquiryQ = lesson.enquiry || '';
-              const pageNum = idx + 3;
-              return `
+      .slice(0, 5)
+      .map((lesson, idx) => {
+        const num = String(idx + 1).padStart(2, '0');
+        const cleanTitle = lesson.title.replace(/\s*\(\d+–\d+\)/, '');
+        const enquiryQ = lesson.enquiry || '';
+        const pageNum = idx + 3;
+        return `
               <tr>
                 <td class="col-num">Enquiry ${num}</td>
                 <td class="col-title">${cleanTitle}</td>
@@ -965,8 +965,8 @@ function buildHtml() {
                 <td class="col-page">Page ${pageNum}</td>
               </tr>
             `;
-            })
-            .join('')}
+      })
+      .join('')}
         </tbody>
       </table>
     </div>
@@ -999,8 +999,8 @@ function buildHtml() {
 
     <div class="milestone-timeline">
       ${milestones
-        .map(
-          (m) => `
+      .map(
+        (m) => `
         <div class="milestone-item">
           <div class="milestone-date-box">${m.date}</div>
           <div class="milestone-node"></div>
@@ -1013,8 +1013,8 @@ function buildHtml() {
           </div>
         </div>
       `,
-        )
-        .join('')}
+      )
+      .join('')}
     </div>
 
     <div class="running-footer">
@@ -1026,15 +1026,15 @@ function buildHtml() {
 
   <!-- PAGES 3–7: 5 CANONICAL ENQUIRIES -->
   ${unitData.lessons
-    .map((lesson, lIdx) => {
-      const pageNum = lIdx + 3;
-      const enquiryNum = String(lIdx + 1).padStart(2, '0');
-      const blocks = (lesson.narrative_blocks || []).filter(
-        (b) => b.text && b.type !== 'photo_slider',
-      );
-      const questions = STAGE_QUESTIONS[lIdx + 1] || [];
+      .map((lesson, lIdx) => {
+        const pageNum = lIdx + 3;
+        const enquiryNum = String(lIdx + 1).padStart(2, '0');
+        const blocks = (lesson.narrative_blocks || []).filter(
+          (b) => b.text && b.type !== 'photo_slider',
+        );
+        const questions = STAGE_QUESTIONS[lIdx + 1] || [];
 
-      return `
+        return `
     <div class="page page-lesson page-lesson-${lIdx + 1}" id="page-${pageNum}" data-page="${pageNum}">
       <div class="running-header">
         <span>THE HISTORY REVISION HUB &bull; KS3 HISTORY</span>
@@ -1082,8 +1082,8 @@ function buildHtml() {
       </div>
     </div>
     `;
-    })
-    .join('')}
+      })
+      .join('')}
 
   <!-- PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER -->
   <div class="page" id="page-8" data-page="8">
@@ -1104,10 +1104,10 @@ function buildHtml() {
 
     <div class="quiz-cards-grid">
       ${quizCards
-        .map((card, cIdx) => {
-          const pageRef = cIdx + 3;
-          const questions = card.questions || [];
-          return `
+      .map((card, cIdx) => {
+        const pageRef = cIdx + 3;
+        const questions = card.questions || [];
+        return `
           <div class="quiz-card">
             <div class="quiz-card-head">
               <span class="quiz-card-title">${card.title.replace(/^Lesson\s*\d+\s*Retrieval:\s*/i, 'Enquiry ' + (cIdx + 1) + ': ')}</span>
@@ -1118,8 +1118,8 @@ function buildHtml() {
             </ol>
           </div>
         `;
-        })
-        .join('')}
+      })
+      .join('')}
     </div>
 
     <div class="running-footer">

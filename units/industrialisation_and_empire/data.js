@@ -937,182 +937,203 @@ const industrialisation_and_empire_data = {
       quiz: [
         {
           question:
-            "Who was the Fareham ironmaster who patented the 'puddling and rolling' process in 1783-1784?",
-          options: ['Isambard Kingdom Brunel', 'Henry Cort', 'James Watt', 'Abraham Darby'],
-          answer: 'Henry Cort',
-        },
-        {
-          question: 'Where did Henry Cort establish his revolutionary iron mill in Hampshire?',
-          options: [
-            'Fontley (near Fareham)',
-            'Winchester High Street',
-            'Portsmouth Dockyard',
-            'Southampton Common',
-          ],
-          answer: 'Fontley (near Fareham)',
+            "Who was hailed as the 'father of the iron trade' for patenting puddling and grooved rollers in 1783–1784?",
+          q: "Who was hailed as the 'father of the iron trade' for patenting puddling and grooved rollers in 1783–1784?",
+          options: ["Henry Cort","James Watt","Matthew Boulton","Thomas Newcomen"],
+          answer: "Henry Cort",
+          a: "Henry Cort",
+          explanation:
+            "Former naval agent Henry Cort leased an old corn mill at Funtley near Fareham, patenting puddling in 1783 and grooved rollers in 1784.",
         },
         {
           question:
-            'What major fuel replaced wood and charcoal to power blast furnaces during the Industrial Revolution?',
-          options: ['Natural gas', 'Peat', 'Coal (coke)', 'Petroleum'],
-          answer: 'Coal (coke)',
+            "Where did Henry Cort establish his revolutionary iron mill along the River Meon in Hampshire?",
+          q: "Where did Henry Cort establish his revolutionary iron mill along the River Meon in Hampshire?",
+          options: ["Funtley Ironworks","Portsmouth Naval Barracks","Winchester Castle","Southampton Docks"],
+          answer: "Funtley Ironworks",
+          a: "Funtley Ironworks",
+          explanation:
+            "Cort established the Funtley Ironworks on the River Meon, utilizing water power and coal-fired reverberatory furnaces.",
         },
         {
           question:
-            "How did Henry Cort's 'puddling' process revolutionize British iron production?",
-          options: [
-            'It replaced human ironworkers entirely with steam-powered robots',
-            'It completely eliminated the need for coal in smelting iron',
-            'It imported all iron ore directly from Swedish mines',
-            'It allowed pig iron to be converted into high-grade wrought iron rapidly and cheaply using grooved rollers',
-          ],
-          answer:
-            'It allowed pig iron to be converted into high-grade wrought iron rapidly and cheaply using grooved rollers',
+            "What abundant British mineral fuel replaced scarce timber to smelt iron ore in blast furnaces?",
+          q: "What abundant British mineral fuel replaced scarce timber to smelt iron ore in blast furnaces?",
+          options: ["pit coal","charcoal","peat","natural gas"],
+          answer: "pit coal",
+          a: "pit coal",
+          explanation:
+            "Britain's rich seams of pit coal liberated ironworks and blast furnaces from reliance on depleted timber forests.",
         },
         {
           question:
-            'Which Scottish engineer dramatically improved the efficiency of the Newcomen steam engine by adding a separate condenser?',
-          options: ['James Watt', 'Thomas Newcomen', 'George Stephenson', 'Richard Trevithick'],
-          answer: 'James Watt',
+            "In Cort's reverberatory puddling furnace, how did puddlers burn off impurities from the boiling metal?",
+          q: "In Cort's reverberatory puddling furnace, how did puddlers burn off impurities from the boiling metal?",
+          options: ["long iron paddles","steam-powered fans","chemical acid baths","high-pressure water hoses"],
+          answer: "long iron paddles",
+          a: "long iron paddles",
+          explanation:
+            "Skilled puddlers stirred the boiling metal through a porthole with long iron paddles, burning off carbon until pure wrought iron formed.",
         },
         {
           question:
-            'Who was the Birmingham entrepreneur who partnered with James Watt to manufacture commercial steam engines?',
-          options: ['Josiah Wedgwood', 'John Wilkinson', 'Matthew Boulton', 'Robert Owen'],
-          answer: 'Matthew Boulton',
+            "Which Scottish instrument maker patented the separate condenser in 1769 to improve steam engines?",
+          q: "Which Scottish instrument maker patented the separate condenser in 1769 to improve steam engines?",
+          options: ["James Watt","Thomas Newcomen","George Stephenson","Richard Trevithick"],
+          answer: "James Watt",
+          a: "James Watt",
+          explanation:
+            "In 1769, Scottish instrument maker James Watt patented his separate condenser, vastly improving early steam engines.",
         },
         {
           question:
-            'Before the widespread adoption of steam power, what was the primary natural power source used to drive early textile factories?',
-          options: [
-            'Windmills',
-            'Solar reflectors',
-            'Horse-drawn capstans',
-            'Waterwheels placed on fast-flowing rivers',
-          ],
-          answer: 'Waterwheels placed on fast-flowing rivers',
+            "Which Birmingham industrialist partnered with James Watt to adapt steam engines for rotary motion?",
+          q: "Which Birmingham industrialist partnered with James Watt to adapt steam engines for rotary motion?",
+          options: ["Matthew Boulton","Josiah Wedgwood","John Wilkinson","Robert Owen"],
+          answer: "Matthew Boulton",
+          a: "Matthew Boulton",
+          explanation:
+            "Partnering with industrialist Matthew Boulton in Birmingham, Watt adapted his engine to produce continuous rotary motion.",
         },
         {
           question:
-            'Why was iron production so vital to the growth of the British Empire and navy?',
-          options: [
-            'It was used exclusively for decorative coins and royal statues',
-            'It was required to build cannons, anchors, steam boilers, and later ironclad naval warships',
-            'It was used to pave all major roads across Britain',
-            'It was exported exclusively to rival nations like France and Spain',
-          ],
-          answer:
-            'It was required to build cannons, anchors, steam boilers, and later ironclad naval warships',
+            "What term describes the pre-industrial method of producing craft goods by hand in workers' homes?",
+          q: "What term describes the pre-industrial method of producing craft goods by hand in workers' homes?",
+          options: ["domestic system","factory system","assembly line","manorial estate"],
+          answer: "domestic system",
+          a: "domestic system",
+          explanation:
+            "In cramped cottages under the domestic system, spinning and weaving were limited by human muscle and seasonal waterwheels.",
         },
         {
           question:
-            "What happened to Britain's iron industry by 1800 as a direct result of Henry Cort's innovations?",
-          options: [
-            "Britain transformed from an iron importer into the world's leading exporter of wrought iron",
-            'The British government banned all private manufacture of iron',
-            'Iron was completely replaced by aluminium in all construction',
-            'The British iron industry collapsed due to foreign competition',
-          ],
-          answer:
-            "Britain transformed from an iron importer into the world's leading exporter of wrought iron",
+            "What brittle, crude metal produced by early coal blast furnaces shattered into lethal shards under a hammer?",
+          q: "What brittle, crude metal produced by early coal blast furnaces shattered into lethal shards under a hammer?",
+          options: ["pig iron","wrought iron","cast bronze","rolled steel"],
+          answer: "pig iron",
+          a: "pig iron",
+          explanation:
+            "Crude blast furnace iron contaminated with sulphur was known as pig iron, which was as brittle as glass.",
         },
         {
           question:
-            'Which transport innovation allowed heavy raw materials like coal and iron ore to be moved cheaply before railways?',
-          options: ['Horse-drawn carriages', 'Toll highways', 'Steam tractors', 'Canal networks'],
-          answer: 'Canal networks',
+            "Before Cort's innovations, which two foreign countries did Britain import over 50,000 tons of wrought iron from each year?",
+          q: "Before Cort's innovations, which two foreign countries did Britain import over 50,000 tons of wrought iron from each year?",
+          options: ["Sweden and Russia","France and Spain","America and Canada","Germany and Italy"],
+          answer: "Sweden and Russia",
+          a: "Sweden and Russia",
+          explanation:
+            "Britain was forced to import over 50,000 tons of premium wrought iron every year from Sweden and Russia across the Baltic Sea.",
         },
         {
           question:
-            'What tragic scandal ruined Henry Cort financially despite the immense national success of his iron patents?',
-          options: [
-            'He was accused of high treason by King George III',
-            'The French navy captured him during a trade voyage to Paris',
-            "His partner Adam Jellicoe embezzled Royal Navy funds, causing the government to confiscate Cort's patents",
-            'His Fontley iron mill was destroyed by a volcanic eruption',
-          ],
-          answer:
-            "His partner Adam Jellicoe embezzled Royal Navy funds, causing the government to confiscate Cort's patents",
+            "In Cort's reverberatory puddling furnace, what separated the coal firebox from the molten metal hearth?",
+          q: "In Cort's reverberatory puddling furnace, what separated the coal firebox from the molten metal hearth?",
+          options: ["brick bridge wall","cast-iron grate","sheet of glass","wooden partition"],
+          answer: "brick bridge wall",
+          a: "brick bridge wall",
+          explanation:
+            "Cort separated the coal firebox from the molten metal hearth with a brick bridge wall to keep sulphur away from the iron.",
         },
         {
           question:
-            "What phrase was commonly used to describe Britain's dominant global manufacturing status in the 19th century?",
-          options: [
-            'The Island of Inventors',
-            'The Workshop of the World',
-            'The Breadbasket of Europe',
-            'The Golden Empire',
-          ],
-          answer: 'The Workshop of the World',
+            "What water-powered invention patented by Cort in 1784 compressed iron fifteen times faster than forge hammers?",
+          q: "What water-powered invention patented by Cort in 1784 compressed iron fifteen times faster than forge hammers?",
+          options: ["grooved rollers","steam hammers","hydraulic presses","blast fans"],
+          answer: "grooved rollers",
+          a: "grooved rollers",
+          explanation:
+            "Cort patented water-powered grooved rollers in 1784 to squeeze out slag and compress metal into uniform naval bars.",
         },
         {
           question:
-            'What was the name of the famous locomotive built by George and Robert Stephenson that won the 1829 Rainhill Trials?',
-          options: ['The Flying Scotsman', 'The Rocket', 'The Puffing Billy', 'The Iron Duke'],
-          answer: 'The Rocket',
+            "What surviving Hampshire architectural feature near Fontley House was constructed from Cort's ironworks waste?",
+          q: "What surviving Hampshire architectural feature near Fontley House was constructed from Cort's ironworks waste?",
+          options: ["puddling slag","red clay bricks","granite boulders","carved marble"],
+          answer: "puddling slag",
+          a: "puddling slag",
+          explanation:
+            "An intact dry-stone wall constructed entirely from tons of dark, glassy puddling slag excavated from Cort's ironworks survives today.",
         },
         {
           question:
-            "Which British city was dubbed 'Cottonopolis' due to its vast concentration of steam-powered cotton textile mills?",
-          options: ['Birmingham', 'Newcastle', 'Bristol', 'Manchester'],
-          answer: 'Manchester',
-        },
-        {
-          question: 'Why was steam power superior to water power for factory owners?',
-          options: [
-            'Factories could be built anywhere near coal fields and transport links, not just next to swift rivers',
-            'Steam engines did not require coal or water to operate',
-            'Steam engines were completely silent and produced zero smoke',
-            'Steam power was legally mandated by Parliament for all industries',
-          ],
-          answer:
-            'Factories could be built anywhere near coal fields and transport links, not just next to swift rivers',
+            "Where did Cort invite the Navy Board in March 1787 to carry out decisive stress tests on his iron?",
+          q: "Where did Cort invite the Navy Board in March 1787 to carry out decisive stress tests on his iron?",
+          options: ["Portsmouth Royal Dockyard","Chatham Naval Yard","Plymouth Sound","Deptford Wharves"],
+          answer: "Portsmouth Royal Dockyard",
+          a: "Portsmouth Royal Dockyard",
+          explanation:
+            "In March 1787, Cort invited the Navy Board to Portsmouth Royal Dockyard for decisive stress tests in front of Admiralty commissioners.",
         },
         {
           question:
-            'Which safety lamp, invented in 1815, reduced fatal explosions caused by firedamp gas in coal mines?',
-          options: ['The Faraday Lantern', 'The Edison Bulb', 'The Davy Lamp', 'The Cort Burner'],
-          answer: 'The Davy Lamp',
-        },
-        {
-          question: 'What was the initial source of iron ore used in early British blast furnaces?',
-          options: [
-            'Deep-sea mineral nodules',
-            'Locally mined ironstone found near coal seams',
-            'Imported Australian red clay',
-            'Melted Roman coins found in ruins',
-          ],
-          answer: 'Locally mined ironstone found near coal seams',
+            "Which famous Royal Navy flagship on the eve of the Napoleonic Wars had its anchors forged from Funtley iron?",
+          q: "Which famous Royal Navy flagship on the eve of the Napoleonic Wars had its anchors forged from Funtley iron?",
+          options: ["HMS Victory","HMS Warrior","HMS Dreadnought","The Mary Rose"],
+          answer: "HMS Victory",
+          a: "HMS Victory",
+          explanation:
+            "Domestic iron production surged 400%, armoring the Royal Navy on the eve of the Napoleonic Wars and forging the anchors of HMS Victory.",
         },
         {
           question:
-            "What did Henry Cort's grooved rolling process achieve compared to traditional blacksmith hammering?",
-          options: [
-            'It painted the iron red to protect it from rust',
-            'It made the iron brittle so it could be easily shattered',
-            'It rolled malleable iron into standard bars and plates fifteen times faster than manual hammers',
-            'It reduced the weight of iron by over 90%',
-          ],
-          answer:
-            'It rolled malleable iron into standard bars and plates fifteen times faster than manual hammers',
+            "What financial partner of Henry Cort embezzled naval funds, resulting in the Crown seizing Cort's patents?",
+          q: "What financial partner of Henry Cort embezzled naval funds, resulting in the Crown seizing Cort's patents?",
+          options: ["Adam Jellicoe","Matthew Boulton","James Frampton","Michael Sadler"],
+          answer: "Adam Jellicoe",
+          a: "Adam Jellicoe",
+          explanation:
+            "The embezzlement of naval funds by his financial partner Adam Jellicoe tragically stripped Cort of his patents, plunging him into bankruptcy.",
         },
         {
           question:
-            "Which Shropshire town is home to the world's first cast-iron bridge, built by Abraham Darby III in 1779?",
-          options: ['Ironbridge (Coalbrookdale)', 'Wolverhampton', 'Telford', 'Shrewsbury'],
-          answer: 'Ironbridge (Coalbrookdale)',
+            "Which 1801 painting by Philip James de Loutherbourg depicted the fiery night-time blast furnaces of the Industrial Revolution?",
+          q: "Which 1801 painting by Philip James de Loutherbourg depicted the fiery night-time blast furnaces of the Industrial Revolution?",
+          options: ["Coalbrookdale by Night","Over London by Rail","A Court for King Cholera","The Peterloo Massacre"],
+          answer: "Coalbrookdale by Night",
+          a: "Coalbrookdale by Night",
+          explanation:
+            "Philip James de Loutherbourg's 1801 masterpiece Coalbrookdale by Night captured the dramatic, sublime glow of industrial blast furnaces.",
         },
         {
           question:
-            'How did the expansion of British coal mining and iron manufacturing directly drive 19th-century railway construction?',
-          options: [
-            'The government banned horse transport entirely across the country',
-            'Iron production declined so heavily that railways were used to store surplus tracks',
-            'Railways were built purely for royal pleasure journeys',
-            'Railways were needed to move massive tonnages of coal and iron, while tracks and locomotives themselves required thousands of tons of iron',
-          ],
-          answer:
-            'Railways were needed to move massive tonnages of coal and iron, while tracks and locomotives themselves required thousands of tons of iron',
+            "What top grade of Swedish imported iron did Admiralty commissioners declare Funtley metal fully equal to?",
+          q: "What top grade of Swedish imported iron did Admiralty commissioners declare Funtley metal fully equal to?",
+          options: ["Swedish Orgrounds iron","Prussian Krupp steel","Russian Baltic alloy","Toledo iron"],
+          answer: "Swedish Orgrounds iron",
+          a: "Swedish Orgrounds iron",
+          explanation:
+            "The official Admiralty minutes declared Funtley iron superior to any British metal and fully equal to top-grade Swedish Orgrounds iron.",
+        },
+        {
+          question:
+            "What natural watercourse supplied the waterwheel power for Henry Cort's ironworks at Funtley?",
+          q: "What natural watercourse supplied the waterwheel power for Henry Cort's ironworks at Funtley?",
+          options: ["River Meon","River Thames","River Avon","River Itchen"],
+          answer: "River Meon",
+          a: "River Meon",
+          explanation:
+            "Driven by the surging River Meon waterwheel, Cort's grooved rollers squeezed out trapped slag impurities.",
+        },
+        {
+          question:
+            "By what percentage did British domestic iron production surge following the adoption of Cort's processes?",
+          q: "By what percentage did British domestic iron production surge following the adoption of Cort's processes?",
+          options: ["400%","50%","20%","1,000%"],
+          answer: "400%",
+          a: "400%",
+          explanation:
+            "Domestic iron production surged 400%, armoring the Royal Navy on the eve of the Napoleonic Wars.",
+        },
+        {
+          question:
+            "What continuous mechanical movement did James Watt adapt his steam engine to produce in 1781?",
+          q: "What continuous mechanical movement did James Watt adapt his steam engine to produce in 1781?",
+          options: ["rotary motion","pumping motion","vibrating motion","hand-cranked motion"],
+          answer: "rotary motion",
+          a: "rotary motion",
+          explanation:
+            "Partnering with industrialist Matthew Boulton in Birmingham, Watt adapted his engine to produce continuous rotary motion.",
         },
       ],
       hook_text:
@@ -2051,213 +2072,203 @@ const industrialisation_and_empire_data = {
       quiz: [
         {
           question:
-            'Who invented the water frame in 1769, establishing the modern factory system at Cromford Mill?',
-          options: [
-            'Richard Arkwright',
-            'Samuel Crompton',
-            'Edmund Cartwright',
-            'James Hargreaves',
-          ],
-          answer: 'Richard Arkwright',
+            "What pre-industrial system of home-based spinning and weaving was obliterated by powerlooms and steam mills?",
+          q: "What pre-industrial system of home-based spinning and weaving was obliterated by powerlooms and steam mills?",
+          options: ["domestic system","manorial estate","assembly line","guild system"],
+          answer: "domestic system",
+          a: "domestic system",
+          explanation:
+            "Before industrialisation, most British goods were crafted under the domestic system in family cottages.",
         },
         {
           question:
-            'What hazardous job in textile mills required young children to crawl under operating machinery to sweep up loose cotton fibres?',
-          options: ['Hurrier', 'Piecer', 'Trapper', 'Scavenger'],
-          answer: 'Scavenger',
-        },
-        {
-          question: "What was the task of a 'piecer' in a 19th-century cotton spinning factory?",
-          options: [
-            'To sew finished clothing for export',
-            'To lean over moving spinning frames and tie together broken threads without stopping the machines',
-            'To lubricate the main steam engine flywheel',
-            'To shovel coal into the furnace boilers',
-          ],
-          answer:
-            'To lean over moving spinning frames and tie together broken threads without stopping the machines',
+            "What strict device regulated the grueling fourteen- to sixteen-hour shifts of Victorian factory workers?",
+          q: "What strict device regulated the grueling fourteen- to sixteen-hour shifts of Victorian factory workers?",
+          options: ["factory clock","church bell","sundial","town crier"],
+          answer: "factory clock",
+          a: "factory clock",
+          explanation:
+            "Inside the mills, natural rhythms were replaced by the tyranny of the factory clock, governing shifts of fourteen to sixteen hours.",
         },
         {
           question:
-            'Why did factory owners prefer to employ children and women over adult men in early textile mills?',
-          options: [
-            'Adult men were legally forbidden from entering factory buildings',
-            'Children were legally required to work by the British Monarchy',
-            'They could pay them significantly lower wages and they were perceived as easier to discipline',
-            'Women and children possessed supernatural weaving abilities',
-          ],
-          answer:
-            'They could pay them significantly lower wages and they were perceived as easier to discipline',
+            "What term described destitute workhouse children legally bound to factory owners to work as unpaid mill hands?",
+          q: "What term described destitute workhouse children legally bound to factory owners to work as unpaid mill hands?",
+          options: ["pauper apprentices","skilled artisans","free yeomen","navvies"],
+          answer: "pauper apprentices",
+          a: "pauper apprentices",
+          explanation:
+            "Thousands of orphan pauper apprentices were carted from London workhouses to remote northern mills.",
         },
         {
           question:
-            'What was the standard working day for most factory workers and child apprentices during the early Industrial Revolution?',
-          options: [
-            '12 to 16 hours per day, six days a week',
-            '8 hours per day, Monday to Friday',
-            '4 hours in the morning only',
-            '6 hours per day with paid holidays',
-          ],
-          answer: '12 to 16 hours per day, six days a week',
+            "Which 1832 parliamentary investigation gathered harrowing eyewitness testimony from former child factory workers?",
+          q: "Which 1832 parliamentary investigation gathered harrowing eyewitness testimony from former child factory workers?",
+          options: ["Sadler Committee","Chadwick Commission","Privy Council","Board of Trade"],
+          answer: "Sadler Committee",
+          a: "Sadler Committee",
+          explanation:
+            "Outrage over factory conditions culminated in the landmark 1832 Parliamentary Sadler Committee investigation.",
         },
         {
           question:
-            'What common physical deformity frequently afflicted young children who stood on hard factory floors for up to 14 hours a day?',
-          options: [
-            'Permanent blindness from sunlight',
-            'Rickets and bent/bowed legs from bone softening and constant pressure',
-            'Loss of hearing from loud church bells',
-            'Scurvy from lack of fruit',
-          ],
-          answer: 'Rickets and bent/bowed legs from bone softening and constant pressure',
+            "What historic statute banned textile factory labour for children under nine and created the first four factory inspectors?",
+          q: "What historic statute banned textile factory labour for children under nine and created the first four factory inspectors?",
+          options: ["1833 Factory Act","Great Reform Act","Poor Law Amendment Act","Ten Hours Act"],
+          answer: "1833 Factory Act",
+          a: "1833 Factory Act",
+          explanation:
+            "Lord Shaftesbury pressured Parliament into passing the historic 1833 Factory Act, banning textile work for children under nine.",
         },
         {
           question:
-            'How did factory overseers enforce strict discipline and punctuality among workers?',
-          options: [
-            'By sending workers on university training courses',
-            'By offering generous bonuses and extra days off',
-            'By reducing the working hours of tired employees',
-            "Through harsh financial fines, beatings ('strapping'), and locking factory gates",
-          ],
-          answer:
-            "Through harsh financial fines, beatings ('strapping'), and locking factory gates",
+            "What dangerous job required children to crawl underneath moving spinning mules to sweep flyaway cotton?",
+          q: "What dangerous job required children to crawl underneath moving spinning mules to sweep flyaway cotton?",
+          options: ["scavengers","piecers","overlookers","puddlers"],
+          answer: "scavengers",
+          a: "scavengers",
+          explanation:
+            "Employed as scavengers and piecers, children crawled underneath moving spinning mules to sweep flyaway cotton.",
         },
         {
           question:
-            'What key restriction did the landmark 1833 Factory Act introduce regarding child labour in textile mills?',
-          options: [
-            'It forced all children to work until age twenty-one',
-            'It doubled the wages of all child workers',
-            'It banned all work for children under nine years old and limited 9-13 year-olds to eight hours per day',
-            'It completely abolished child labour across all British industries',
-          ],
-          answer:
-            'It banned all work for children under nine years old and limited 9-13 year-olds to eight hours per day',
+            "What factory task required children to stand for hours splicing snapped cotton threads on moving frames?",
+          q: "What factory task required children to stand for hours splicing snapped cotton threads on moving frames?",
+          options: ["piecers","scavengers","stokers","doffers"],
+          answer: "piecers",
+          a: "piecers",
+          explanation:
+            "Child piecers leaned over moving spinning frames to swiftly splice broken threads without halting machinery.",
         },
         {
           question:
-            'What famous building in London was constructed using over 6 million Fareham Red bricks?',
-          options: [
-            'The Royal Albert Hall',
-            'The Tower of London',
-            'Buckingham Palace',
-            'The Houses of Parliament',
-          ],
-          answer: 'The Royal Albert Hall',
+            "What brutal weapon did strict overlookers use to beat fatigued children who lagged behind at their machines?",
+          q: "What brutal weapon did strict overlookers use to beat fatigued children who lagged behind at their machines?",
+          options: ["leather straps","iron rods","wooden rulers","rope ends"],
+          answer: "leather straps",
+          a: "leather straps",
+          explanation:
+            "Overlookers patrolled the aisles with heavy leather straps, brutally beating exhausted children who lagged behind.",
         },
         {
           question:
-            'What machine was used in Hampshire brickfields to crush and mix raw clay with water?',
-          options: ['A blast furnace', 'A spinning jenny', 'A pug mill', 'A puddling hearth'],
-          answer: 'A pug mill',
-        },
-        {
-          question: 'What was the role of a "pug boy" in the Funtley and Fareham clay pits?',
-          options: [
-            'To deliver hot tea to the managers',
-            'To dig coal from deep underground mines',
-            'To load finished bricks onto railway freight wagons',
-            'To drive horses in circles to turn the pug mill and mix heavy clay',
-          ],
-          answer: 'To drive horses in circles to turn the pug mill and mix heavy clay',
+            "Which twenty-two-year-old former child worker gave harrowing evidence of bone deformities to the Sadler Committee?",
+          q: "Which twenty-two-year-old former child worker gave harrowing evidence of bone deformities to the Sadler Committee?",
+          options: ["Matthew Crabtree","Henry Cook","George Loveless","Francis Place"],
+          answer: "Matthew Crabtree",
+          a: "Matthew Crabtree",
+          explanation:
+            "Twenty-two-year-old former child worker Matthew Crabtree testified that unceasing labour left his legs permanently bowed.",
         },
         {
           question:
-            'Why were "Fareham Reds" so highly prized by Victorian architects across the British Empire?',
-          options: [
-            'They were painted with gold leaf',
-            'They were exceptionally dense, durable, and weather-resistant with a vibrant crimson color',
-            'They were the only bricks legally permitted by Parliament',
-            'They were made entirely of lightweight dried straw',
-          ],
-          answer:
-            'They were exceptionally dense, durable, and weather-resistant with a vibrant crimson color',
+            "What minor action inside the mill was penalized with a two-pence fine under the Tyldesley Cotton Mill rulebook?",
+          q: "What minor action inside the mill was penalized with a two-pence fine under the Tyldesley Cotton Mill rulebook?",
+          options: ["opening a window","drinking cold water","wearing woollen socks","sitting on a bench"],
+          answer: "opening a window",
+          a: "opening a window",
+          explanation:
+            "Workers were fined two pence by strict overlookers for arriving minutes late or opening a window to breathe amidst cotton lint.",
         },
         {
           question:
-            'What transport network allowed millions of Fareham bricks to be moved cheaply to London after 1841?',
-          options: [
-            'Motorway highways',
-            'The London & South Western Railway',
-            'Supersonic air transport',
-            'Horse trails through the New Forest',
-          ],
-          answer: 'The London & South Western Railway',
+            "What humanitarian reformer led the campaign in Parliament for factory legislation and the protection of child workers?",
+          q: "What humanitarian reformer led the campaign in Parliament for factory legislation and the protection of child workers?",
+          options: ["Lord Shaftesbury","Robert Peel","William Lovett","The Duke of Wellington"],
+          answer: "Lord Shaftesbury",
+          a: "Lord Shaftesbury",
+          explanation:
+            "Humanitarian reformers led by Lord Shaftesbury (Lord Ashley) pressured Parliament into passing the historic 1833 Factory Act.",
         },
         {
           question:
-            'Which parliamentary committee gathered harrowing eyewitness testimony about child labour in 1832?',
-          options: [
-            'The Beveridge Commission',
-            'The Cort Inquiry',
-            'The Gladstone Report',
-            'The Sadler Committee',
-          ],
-          answer: 'The Sadler Committee',
+            "Under the 1833 Factory Act, how many hours of compulsory daily schooling were children aged 9 to 13 guaranteed?",
+          q: "Under the 1833 Factory Act, how many hours of compulsory daily schooling were children aged 9 to 13 guaranteed?",
+          options: ["two hours","four hours","six hours","zero hours"],
+          answer: "two hours",
+          a: "two hours",
+          explanation:
+            "The 1833 Act capped working hours at eight hours daily for children aged 9–13, and required two hours of compulsory schooling.",
         },
         {
           question:
-            'What historical document from 1881 proves that young children were working in the Fareham clay pits?',
-          options: [
-            'The 1881 Fareham Census return',
-            'The Magna Carta',
-            'The Treaty of Versailles',
-            'The Domesday Book',
-          ],
-          answer: 'The 1881 Fareham Census return',
+            "How many statutory factory inspectors did Parliament appoint in 1833 to enforce the new child labour regulations nationwide?",
+          q: "How many statutory factory inspectors did Parliament appoint in 1833 to enforce the new child labour regulations nationwide?",
+          options: ["four","forty","one hundred","twelve"],
+          answer: "four",
+          a: "four",
+          explanation:
+            "Parliament appointed the first four statutory factory inspectors to enforce the law across all British textile mills.",
         },
         {
           question:
-            'What do "Pessimist" historians (like E.P. Thompson) argue about the Industrial Revolution?',
-          options: [
-            'That it was a golden age of peace and relaxation for workers',
-            'That machines had zero impact on British society',
-            'That it was a social catastrophe that punished workers and exploited children for profit',
-            'That the domestic system was worse than modern factories in every way',
-          ],
-          answer:
-            'That it was a social catastrophe that punished workers and exploited children for profit',
+            "What traditional artisan rest day was taken by handloom weavers on Mondays before the factory clock was introduced?",
+          q: "What traditional artisan rest day was taken by handloom weavers on Mondays before the factory clock was introduced?",
+          options: ["Saint Monday","Weavers Sabbath","Harvest Holiday","Guild Monday"],
+          answer: "Saint Monday",
+          a: "Saint Monday",
+          explanation:
+            "Weavers worked on handlooms, pacing their labour to seasonal daylight and resting on 'Saint Monday'.",
         },
         {
           question:
-            'What do "Optimist" historians (like R.M. Hartwell) argue about the long-term impact of industrialisation?',
-          options: [
-            'That Britain should have remained entirely agricultural',
-            'That the factory system created modern wealth, higher living standards, and medical advances',
-            'That child labour should never have been abolished',
-            'That steam power was an economic failure',
-          ],
-          answer:
-            'That the factory system created modern wealth, higher living standards, and medical advances',
+            "What food was fed to pauper apprentices in crowded factory dormitories?",
+          q: "What food was fed to pauper apprentices in crowded factory dormitories?",
+          options: ["thin oatmeal porridge","roast beef and potatoes","bread and cheese","salted herring"],
+          answer: "thin oatmeal porridge",
+          a: "thin oatmeal porridge",
+          explanation:
+            "Children slept in shifts in crowded apprentice dormitories, surviving on thin oatmeal porridge.",
         },
         {
           question:
-            'What practice did domestic handloom weavers celebrate on Mondays before the factory clock was introduced?',
-          options: [
-            'The Monday Shift',
-            'The Clock Bell',
-            'The Steam Festival',
-            'Saint Monday (taking the day off)',
-          ],
-          answer: 'Saint Monday (taking the day off)',
+            "What northern manufacturing cities experienced a massive influx of destitute families seeking textile wage labour?",
+          q: "What northern manufacturing cities experienced a massive influx of destitute families seeking textile wage labour?",
+          options: ["Manchester and Leeds","Bristol and Bath","Oxford and Cambridge","Southampton and Portsmouth"],
+          answer: "Manchester and Leeds",
+          a: "Manchester and Leeds",
+          explanation:
+            "Thousands of rural families abandoned their cottages to seek wage labour in booming northern textile hubs like Manchester and Leeds.",
         },
         {
           question:
-            'What lung disease commonly afflicted cotton textile mill workers due to inhaling airborne fibres?',
-          options: ['Scurvy', 'Rickets', 'Byssinosis (brown lung)', 'Cholera'],
-          answer: 'Byssinosis (brown lung)',
+            "What severe injury was caused when girls' long hair was caught in unshielded factory drive shafts?",
+          q: "What severe injury was caused when girls' long hair was caught in unshielded factory drive shafts?",
+          options: ["girls were scalped","broken ribs","loss of hearing","shattered kneecaps"],
+          answer: "girls were scalped",
+          a: "girls were scalped",
+          explanation:
+            "Fingers were crushed in gears, and girls were scalped when long hair caught in whirling drive shafts.",
         },
         {
           question:
-            'What was the age limit below which children were legally banned from working in textile mills by the 1833 Factory Act?',
-          options: [
-            'Under nine years old',
-            'Under six years old',
-            'Under twenty-one years old',
-            'Under sixteen years old',
-          ],
-          answer: 'Under nine years old',
+            "What was the daily maximum shift permitted for children aged 9 to 13 under the 1833 Factory Act?",
+          q: "What was the daily maximum shift permitted for children aged 9 to 13 under the 1833 Factory Act?",
+          options: ["eight hours daily","twelve hours daily","six hours daily","fourteen hours daily"],
+          answer: "eight hours daily",
+          a: "eight hours daily",
+          explanation:
+            "The Act capped working hours at eight hours daily for children aged 9–13.",
+        },
+        {
+          question:
+            "At what early age did witness Matthew Crabtree begin working in a Yorkshire blanket factory?",
+          q: "At what early age did witness Matthew Crabtree begin working in a Yorkshire blanket factory?",
+          options: ["eight","fourteen","ten","twelve"],
+          answer: "eight",
+          a: "eight",
+          explanation:
+            "Crabtree recounted starting in a blanket factory at age eight, working from 6:00 AM to 9:00 PM.",
+        },
+        {
+          question:
+            "What supervisors enforced military-style obedience and levied fines inside 19th-century textile mills?",
+          q: "What supervisors enforced military-style obedience and levied fines inside 19th-century textile mills?",
+          options: ["overlookers","magistrates","constables","beadles"],
+          answer: "overlookers",
+          a: "overlookers",
+          explanation:
+            "Workers were fined two pence by strict overlookers for arriving minutes late or opening a window.",
         },
       ],
       vocab: [
@@ -3407,200 +3418,203 @@ const industrialisation_and_empire_data = {
       quiz: [
         {
           question:
-            'What term describes the massive migration of millions of people from rural villages to industrial cities during the 19th century?',
-          options: ['Urbanisation', 'Enclosure', 'Colonisation', 'Emancipation'],
-          answer: 'Urbanisation',
+            "What rapid demographic process saw city populations like Manchester, Birmingham, and Leeds quadruple?",
+          q: "What rapid demographic process saw city populations like Manchester, Birmingham, and Leeds quadruple?",
+          options: ["urbanisation","colonisation","suburbanisation","transportation"],
+          answer: "urbanisation",
+          a: "urbanisation",
+          explanation:
+            "Between 1801 and 1851, the population of industrial cities like Manchester, Birmingham, and Leeds quadrupled in rapid urbanisation.",
         },
         {
           question:
-            'What cheaply constructed, overcrowded housing style was built in industrial cities to pack the maximum number of families into minimal land?',
-          options: [
-            'Country cottages',
-            'Detached Victorian villas',
-            'Back-to-back terraced houses',
-            'Baroque garden estates',
-          ],
-          answer: 'Back-to-back terraced houses',
+            "What cramped, unventilated terraced slums sharing rear and side party walls housed factory workers?",
+          q: "What cramped, unventilated terraced slums sharing rear and side party walls housed factory workers?",
+          options: ["back-to-back houses","detached suburban villas","council flats","thatched cottages"],
+          answer: "back-to-back houses",
+          a: "back-to-back houses",
+          explanation:
+            "Speculative builders threw up thousands of cramped back-to-back houses sharing rear and side party walls with zero building regulations.",
         },
         {
           question:
-            'Why were cellar dwellings in 19th-century industrial slums particularly dangerous for human health?',
-          options: [
-            'They had excessively high heating bills',
-            'They were located too far away from the factory gates',
-            'They were built entirely out of inflammable timber',
-            'They were damp, unventilated, perpetually dark, and frequently flooded with raw sewage from nearby cesspools',
-          ],
-          answer:
-            'They were damp, unventilated, perpetually dark, and frequently flooded with raw sewage from nearby cesspools',
+            "What terrifying waterborne bacterial disease first struck Britain in October 1831, killing victims within hours?",
+          q: "What terrifying waterborne bacterial disease first struck Britain in October 1831, killing victims within hours?",
+          options: ["Asiatic cholera","smallpox","bubonic plague","influenza"],
+          answer: "Asiatic cholera",
+          a: "Asiatic cholera",
+          explanation:
+            "In October 1831, Asiatic cholera first struck Britain; known as the 'Blue Terror', it killed healthy victims within hours.",
         },
         {
           question:
-            'In what year did Asiatic cholera first strike Great Britain, causing widespread terror due to its rapid and gruesome mortality?',
-          options: ['1914', '1831', '1805', '1789'],
-          answer: '1831',
+            "Which public health reformer published the landmark 1842 report proving that disease was directly caused by filth and damp?",
+          q: "Which public health reformer published the landmark 1842 report proving that disease was directly caused by filth and damp?",
+          options: ["Edwin Chadwick","Lord Shaftesbury","Dr John Snow","Michael Sadler"],
+          answer: "Edwin Chadwick",
+          a: "Edwin Chadwick",
+          explanation:
+            "Edwin Chadwick published his landmark 1842 Report on the Sanitary Condition of the Labouring Population, proving filth caused disease.",
         },
         {
           question:
-            'What waterborne bacterial disease caused victims to dehydrate rapidly through violent diarrhea and vomiting, turning their skin blue?',
-          options: ['Influenza', 'Cholera', 'Scurvy', 'Tuberculosis'],
-          answer: 'Cholera',
+            "What crisis in the hot midsummer of 1858 forced Parliament to fund Joseph Bazalgette's London sewer network?",
+          q: "What crisis in the hot midsummer of 1858 forced Parliament to fund Joseph Bazalgette's London sewer network?",
+          options: ["Great Stink","Great Plague","Great Fire","Peterloo Outbreak"],
+          answer: "Great Stink",
+          a: "Great Stink",
+          explanation:
+            "The turning point arrived in the stifling midsummer of 1858 with the Great Stink, when the Thames produced a reek so toxic Parliament could barely function.",
         },
         {
           question:
-            'What dominant medical theory before the 1860s falsely claimed that epidemic diseases were spread by foul-smelling airborne vapours?',
-          options: [
-            'The Miasma theory',
-            'The Spontaneous Generation theory',
-            'The Four Humours theory',
-            'The Germ theory',
-          ],
-          answer: 'The Miasma theory',
+            "What mistaken medical theory claimed that epidemic diseases were spread by foul airborne vapours from rotting filth?",
+          q: "What mistaken medical theory claimed that epidemic diseases were spread by foul airborne vapours from rotting filth?",
+          options: ["miasma theory","germ theory","humoral theory","cell theory"],
+          answer: "miasma theory",
+          a: "miasma theory",
+          explanation:
+            "Doctors and health officials clung to the miasma theory, believing that pestilence was generated by foul airborne vapours from rotting filth.",
         },
         {
           question:
-            "Who was the social reformer whose 1842 'Report on the Sanitary Conditions of the Labouring Population' proved that disease was caused by filth and poverty?",
-          options: ['Robert Peel', 'Charles Dickens', 'Edwin Chadwick', 'Lord Shaftesbury'],
-          answer: 'Edwin Chadwick',
+            "Where did human waste drain in crowded industrial slum courts before municipal sewers were constructed?",
+          q: "Where did human waste drain in crowded industrial slum courts before municipal sewers were constructed?",
+          options: ["cesspools","flush toilets","water tanks","sealed metal vaults"],
+          answer: "cesspools",
+          a: "cesspools",
+          explanation:
+            "Without municipal sewer pipes, human waste drained into porous underground cesspools that overflowed into gutters and streets.",
         },
         {
           question:
-            "What landmark legislation was passed in 1848 establishing Britain's first General Board of Health?",
-          options: [
-            'The Factory Act 1848',
-            'The Reform Act 1848',
-            'The Poor Law Amendment Act 1848',
-            'The Public Health Act 1848',
-          ],
-          answer: 'The Public Health Act 1848',
+            "What political doctrine of non-interference made town councils and wealthy ratepayers resist spending money on sanitation?",
+          q: "What political doctrine of non-interference made town councils and wealthy ratepayers resist spending money on sanitation?",
+          options: ["laissez-faire","socialism","chartism","mercantilism"],
+          answer: "laissez-faire",
+          a: "laissez-faire",
+          explanation:
+            "Town councils dominated by ratepayer property owners clung to laissez-faire, fiercely resisting tax expenditures on clean water or sewers.",
         },
         {
           question:
-            "What political philosophy held by wealthy taxpayers and town councils ('laissez-faire') delayed public health improvements in the early 19th century?",
-          options: [
-            'The policy of forcing all citizens to move into rural farm communes',
-            "The belief that government should not interfere in the economy or spend taxpayers' money on clean water and sewers",
-            'The belief that disease could only be cured by royal prayer',
-            'The demand that all private property should be taken over by the State',
-          ],
-          answer:
-            "The belief that government should not interfere in the economy or spend taxpayers' money on clean water and sewers",
+            "What chief civil engineer designed London's vast underground intercepting sewer network between 1859 and 1865?",
+          q: "What chief civil engineer designed London's vast underground intercepting sewer network between 1859 and 1865?",
+          options: ["Joseph Bazalgette","Isambard Kingdom Brunel","Thomas Telford","Robert Stephenson"],
+          answer: "Joseph Bazalgette",
+          a: "Joseph Bazalgette",
+          explanation:
+            "Parliament granted civil engineer Joseph Bazalgette £3 million to rebuild the capital’s sanitation with 82 miles of interceptor sewers.",
         },
         {
           question:
-            'Which doctor investigated the 1854 cholera outbreak in Soho, London, proving the disease was spread through contaminated water?',
-          options: ['Dr Joseph Lister', 'Dr William Harvey', 'Dr John Snow', 'Dr Edward Jenner'],
-          answer: 'Dr John Snow',
+            "What was the shocking average age at death for a working-class labourer in squalid 1840s Liverpool cellars?",
+          q: "What was the shocking average age at death for a working-class labourer in squalid 1840s Liverpool cellars?",
+          options: ["just 17 years","around 45 years","over 60 years","around 35 years"],
+          answer: "just 17 years",
+          a: "just 17 years",
+          explanation:
+            "Chadwick revealed that in squalid Liverpool cellars, the average age at death for a working-class labourer had plunged to just 17 years.",
         },
         {
           question:
-            'What physical action did Dr John Snow take in September 1854 to halt the Soho cholera epidemic?',
-          options: [
-            'He burned down the entire Soho neighbourhood',
-            'He sprayed carbolic acid into the Soho drinking water',
-            'He vaccinated every citizen in London against smallpox',
-            'He removed the handle of the Broad Street water pump, forcing residents to fetch clean water elsewhere',
-          ],
-          answer:
-            'He removed the handle of the Broad Street water pump, forcing residents to fetch clean water elsewhere',
+            "What 1852 political cartoon in Punch by John Leech depicted children playing in filthy slum cesspools?",
+          q: "What 1852 political cartoon in Punch by John Leech depicted children playing in filthy slum cesspools?",
+          options: ["A Court for King Cholera","The Great Stink","Over London by Rail","The School of Reform"],
+          answer: "A Court for King Cholera",
+          a: "A Court for King Cholera",
+          explanation:
+            "John Leech's celebrated cartoon A Court for King Cholera illustrated squalid slum courts, overflowing dung heaps, and diseased children.",
         },
         {
           question:
-            'What environmental crisis in the hot summer of 1858 finally forced Parliament to fund a comprehensive sewer system for London?',
-          options: [
-            'The Great Stink (the overwhelming stench from the polluted River Thames outside the Houses of Parliament)',
-            'A tidal wave hitting the Tower of London',
-            'The Great Fire of London',
-            'A massive frost fair on the frozen Thames',
-          ],
-          answer:
-            'The Great Stink (the overwhelming stench from the polluted River Thames outside the Houses of Parliament)',
+            "What 1848 statute established Britain's first General Board of Health?",
+          q: "What 1848 statute established Britain's first General Board of Health?",
+          options: ["Public Health Act of 1848","Poor Law of 1834","Factory Act of 1833","Municipal Act of 1835"],
+          answer: "Public Health Act of 1848",
+          a: "Public Health Act of 1848",
+          explanation:
+            "Alarmed by Chadwick's report and cholera, Parliament passed the Public Health Act of 1848, creating the General Board of Health.",
         },
         {
           question:
-            "Who was the chief civil engineer of the Metropolitan Board of Works who designed London's vast underground intercepting sewer network?",
-          options: [
-            'Joseph Bazalgette',
-            'Isambard Kingdom Brunel',
-            'George Stephenson',
-            'Thomas Telford',
-          ],
-          answer: 'Joseph Bazalgette',
-        },
-        {
-          question: "How did Joseph Bazalgette's sewer system solve London's contamination crisis?",
-          options: [
-            'It stored all sewage in massive open vats in central London parks',
-            'It boiled all Thames river water before pumping it to homes',
-            'It intercepted raw sewage before it could flow into the Thames and transported it downstream to the Thames estuary',
-            'It dumped all sewage into the London Underground tunnels',
-          ],
-          answer:
-            'It intercepted raw sewage before it could flow into the Thames and transported it downstream to the Thames estuary',
+            "What French illustrator created the dark 1872 engraving 'Over London by Rail', depicting cramped tenements and rail viaducts?",
+          q: "What French illustrator created the dark 1872 engraving 'Over London by Rail', depicting cramped tenements and rail viaducts?",
+          options: ["Gustave Doré","Philip de Loutherbourg","Thomas Allom","George Cruikshank"],
+          answer: "Gustave Doré",
+          a: "Gustave Doré",
+          explanation:
+            "French illustrator Gustave Doré's Over London by Rail depicted the bleak, soot-blackened back-to-backs framed by railway arches.",
         },
         {
           question:
-            'What was the average life expectancy of a working-class labourer in industrial cities like Manchester and Liverpool during the 1840s?',
-          options: [
-            'Over 75 years old',
-            'Around 45 years old',
-            'Around 65 years old',
-            'Under 20 years old',
-          ],
-          answer: 'Under 20 years old',
+            "What was the endemic 'White Plague' of industrial Britain that thrived in damp, sunless back-to-backs?",
+          q: "What was the endemic 'White Plague' of industrial Britain that thrived in damp, sunless back-to-backs?",
+          options: ["tuberculosis","cholera","typhoid","malaria"],
+          answer: "tuberculosis",
+          a: "tuberculosis",
+          explanation:
+            "Tuberculosis (consumption) was the endemic White Plague of industrial Britain, thriving in sunless, unventilated back-to-backs.",
         },
         {
           question:
-            'Why was clean drinking water so scarce for working-class families in 1840s industrial slums?',
-          options: [
-            'Water was banned by local magistrates to stop drunken riots',
-            'Water was supplied by private commercial companies through street standpipes for only a few hours a week, often drawn directly from contaminated rivers',
-            'Families only drank beer and refused to consume water under any circumstances',
-            'All rainfall in Britain ceased completely between 1840 and 1850',
-          ],
-          answer:
-            'Water was supplied by private commercial companies through street standpipes for only a few hours a week, often drawn directly from contaminated rivers',
-        },
-        {
-          question: "What was a 'cesspool' in an early 19th-century town?",
-          options: [
-            'A storage reservoir for clean distilled water',
-            'An underground pit or chamber for collecting household waste and sewage, which frequently seeped into nearby groundwater and drinking wells',
-            'A public swimming bath for factory workers',
-            'A holding pen for farm animals before market',
-          ],
-          answer:
-            'An underground pit or chamber for collecting household waste and sewage, which frequently seeped into nearby groundwater and drinking wells',
+            "How was drinking water supplied to working-class families before clean municipal waterworks?",
+          q: "How was drinking water supplied to working-class families before clean municipal waterworks?",
+          options: ["shared public standpipes","individual kitchen taps","clean glass bottles","rooftop rainwater pipes"],
+          answer: "shared public standpipes",
+          a: "shared public standpipes",
+          explanation:
+            "Private water companies supplied water only two or three times a week for a few hours through shared public standpipes.",
         },
         {
           question:
-            'What compulsory requirement was introduced in the Public Health Act of 1875 under Prime Minister Benjamin Disraeli?',
-          options: [
-            'Local town councils were legally required to provide clean water, build proper sewers, collect rubbish, and appoint medical officers of health',
-            'All citizens were forced to bathe twice daily in public rivers',
-            'All industrial factories had to be demolished and moved to Scotland',
-            'Doctors were banned from charging fees to wealthy patients',
-          ],
-          answer:
-            'Local town councils were legally required to provide clean water, build proper sewers, collect rubbish, and appoint medical officers of health',
+            "What chemical did parliamentary officials soak window curtains in during the Great Stink of 1858?",
+          q: "What chemical did parliamentary officials soak window curtains in during the Great Stink of 1858?",
+          options: ["chloride of lime","sulfuric acid","vinegar","ammonia"],
+          answer: "chloride of lime",
+          a: "chloride of lime",
+          explanation:
+            "Parliamentary staff soaked curtains in chloride of lime to neutralize the overpowering stench rising from the Thames.",
         },
         {
           question:
-            "What devastating chronic pulmonary disease, nicknamed 'the White Plague', was the single biggest killer in 19th-century British slums?",
-          options: ['Polio', 'Yellow fever', 'Measles', 'Tuberculosis (consumption)'],
-          answer: 'Tuberculosis (consumption)',
+            "How many miles of colossal underground brick interceptor sewers did Joseph Bazalgette construct across London?",
+          q: "How many miles of colossal underground brick interceptor sewers did Joseph Bazalgette construct across London?",
+          options: ["82 miles","500 miles","10 miles","250 miles"],
+          answer: "82 miles",
+          a: "82 miles",
+          explanation:
+            "Bazalgette constructed 1,100 miles of street sewers and 82 miles of colossal underground brick interceptor sewers.",
         },
         {
           question:
-            'How did the 1854 Broad Street investigation challenge traditional medical understanding of disease transmission?',
-          options: [
-            'It proved that diseases were caused by planetary alignments',
-            'It showed that boiling water made it poisonous',
-            'It provided empirical, mapped epidemiological evidence that disease spread via contaminated water ingested into the digestive tract, not through airborne miasma',
-            'It proved that poor people were biologically immune to cholera',
-          ],
-          answer:
-            'It provided empirical, mapped epidemiological evidence that disease spread via contaminated water ingested into the digestive tract, not through airborne miasma',
+            "What waterproof building material did Bazalgette use to ensure London's interceptor sewers would endure for centuries?",
+          q: "What waterproof building material did Bazalgette use to ensure London's interceptor sewers would endure for centuries?",
+          options: ["Portland cement","tar paper","cast-iron sheets","soft lime mortar"],
+          answer: "Portland cement",
+          a: "Portland cement",
+          explanation:
+            "Bazalgette constructed sewers using 318 million bricks and waterproof Portland cement to create durable subterranean cathedrals.",
+        },
+        {
+          question:
+            "What dark, windowless homes beneath street level housed up to 20,000 destitute people in Liverpool?",
+          q: "What dark, windowless homes beneath street level housed up to 20,000 destitute people in Liverpool?",
+          options: ["cellar dwellings","attic garrets","barn lofts","suburban cottages"],
+          answer: "cellar dwellings",
+          a: "cellar dwellings",
+          explanation:
+            "In damp, unpaved courts, entire families crowded into single windowless earthen cellar dwellings beneath street level.",
+        },
+        {
+          question:
+            "How many gallons of sewage did Bazalgette's system permanently divert away from central London each day?",
+          q: "How many gallons of sewage did Bazalgette's system permanently divert away from central London each day?",
+          options: ["420 million gallons","50 million gallons","10 million gallons","1 billion gallons"],
+          answer: "420 million gallons",
+          a: "420 million gallons",
+          explanation:
+            "Bazalgette’s subterranean cathedrals permanently diverted 420 million gallons of sewage away from London, ending epidemic cholera forever.",
         },
       ],
       hook_text:
@@ -4782,223 +4796,203 @@ const industrialisation_and_empire_data = {
       quiz: [
         {
           question:
-            "What repressive legislation, known as the 'Six Acts', did Parliament pass in response to the 1819 Peterloo Massacre?",
-          q: "What repressive legislation, known as the 'Six Acts', did Parliament pass in response to the 1819 Peterloo Massacre?",
-          options: [
-            'A statute legalizing trade unions across northern manufacturing towns.',
-            'Laws banning unauthorized military drilling, taxing radical pamphlets, and prohibiting large meetings.',
-            'A law extending the right to vote to all urban factory workers.',
-            'An act abolishing the traditional property tax for rural peasants.',
-          ],
-          answer:
-            'Laws banning unauthorized military drilling, taxing radical pamphlets, and prohibiting large meetings.',
-          a: 'Laws banning unauthorized military drilling, taxing radical pamphlets, and prohibiting large meetings.',
+            "What mythical folklore leader was invoked by 1811–1816 textile craftsmen who smashed industrial shearing frames?",
+          q: "What mythical folklore leader was invoked by 1811–1816 textile craftsmen who smashed industrial shearing frames?",
+          options: ["General Ned Ludd","Captain Swing","John Bull","Oliver Cromwell"],
+          answer: "General Ned Ludd",
+          a: "General Ned Ludd",
           explanation:
-            "Fearing a French-style revolution, Lord Liverpool's government enacted the Six Acts (1819) to suppress political dissent, criminalize mass assemblies, and censor radical newspapers.",
+            "Textile artisans broke into factories at night, smashing wide knitting frames in the name of mythical folk hero 'General Ned Ludd'.",
         },
         {
           question:
-            "Who was the radical orator whose speech on parliamentary reform at St Peter's Field in 1819 was interrupted by the Manchester Yeomanry charge?",
-          q: "Who was the radical orator whose speech on parliamentary reform at St Peter's Field in 1819 was interrupted by the Manchester Yeomanry charge?",
-          options: ['Robert Owen', 'William Lovett', "Feargus O'Connor", "Henry 'Orator' Hunt"],
-          answer: "Henry 'Orator' Hunt",
-          a: "Henry 'Orator' Hunt",
+            "What August 1819 atrocity in Manchester saw cavalry charge a peaceful crowd of 60,000 citizens demanding reform?",
+          q: "What August 1819 atrocity in Manchester saw cavalry charge a peaceful crowd of 60,000 citizens demanding reform?",
+          options: ["Peterloo Massacre","Newport Rising","Swing Riots","Pentrich Rebellion"],
+          answer: "Peterloo Massacre",
+          a: "Peterloo Massacre",
           explanation:
-            "Henry Hunt was Britain's most famous radical speaker, known for his signature white top hat and fiery speeches demanding universal suffrage and the repeal of the Corn Laws.",
+            "At St Peter's Field in Manchester, magistrates unleashed the cavalry on peaceful reform protesters, killing 18 and injuring over 650.",
         },
         {
           question:
-            "Which London cabinet-maker and radical activist drafted the six points of the 'People's Charter' in 1838?",
-          q: "Which London cabinet-maker and radical activist drafted the six points of the 'People's Charter' in 1838?",
-          options: ['William Lovett', 'George Loveless', 'Edwin Chadwick', 'Arthur Wellesley'],
-          answer: 'William Lovett',
-          a: 'William Lovett',
+            "What pseudonym was signed on threatening letters sent to Hampshire farmers during the 1830 agricultural riots?",
+          q: "What pseudonym was signed on threatening letters sent to Hampshire farmers during the 1830 agricultural riots?",
+          options: ["Captain Swing","General Ludd","The Black Hand","Robin Hood"],
+          answer: "Captain Swing",
+          a: "Captain Swing",
           explanation:
-            "William Lovett co-founded the London Working Men's Association and authored the 1838 People's Charter, advocating moral force and peaceful constitutional petitions to secure working-class voting rights.",
-        },
-        {
-          question: 'In the early 19th century, who completely controlled the British Parliament?',
-          options: [
-            'The working class',
-            'Trade Union leaders',
-            'Wealthy landowners',
-            'The middle-class factory workers',
-          ],
-          answer: 'Wealthy landowners',
+            "Desperate farm labourers smashed threshing machines and torched hayricks, signing their warning letters with the alias 'Captain Swing'.",
         },
         {
           question:
-            "What did the 60,000 peaceful protestors at St Peter's Field in Manchester demand in August 1819?",
-          options: [
-            'Parliamentary reform and affordable food.',
-            'Higher wages and shorter working hours.',
-            'The destruction of all mechanical threshing machines.',
-            'The abolition of the East India Company.',
-          ],
-          answer: 'Parliamentary reform and affordable food.',
+            "Where were over 300 Hampshire Swing Rioters tried in December 1830, resulting in executions and mass transportation?",
+          q: "Where were over 300 Hampshire Swing Rioters tried in December 1830, resulting in executions and mass transportation?",
+          options: ["Winchester Special Assizes","Old Bailey","Portsmouth Guildhall","Southampton Castle"],
+          answer: "Winchester Special Assizes",
+          a: "Winchester Special Assizes",
+          explanation:
+            "A Special Commission of judges sat at Winchester Great Hall, sentencing six men to hang and transporting over 100 agricultural labourers to Australia.",
         },
         {
           question:
-            "How did the state respond to the peaceful gathering at St Peter's Field in 1819?",
-          options: [
-            'They agreed to pass a new Reform Act immediately.',
-            'They ignored the protestors until they went home.',
-            'Local magistrates panicked and ordered cavalry to charge into the crowd with sabers.',
-            'They arrested the leaders but allowed the crowd to continue protesting.',
-          ],
-          answer:
-            'Local magistrates panicked and ordered cavalry to charge into the crowd with sabers.',
+            "What group of six Dorset farm labourers led by George Loveless was sentenced to seven years' transportation in 1834?",
+          q: "What group of six Dorset farm labourers led by George Loveless was sentenced to seven years' transportation in 1834?",
+          options: ["Tolpuddle Martyrs","Hampshire Rebels","Luddite Six","Manchester Martyrs"],
+          answer: "Tolpuddle Martyrs",
+          a: "Tolpuddle Martyrs",
+          explanation:
+            "Led by Methodist preacher George Loveless, the six labourers formed a friendly society to resist wage cuts and were convicted under an obscure oath law.",
         },
         {
           question:
-            "Why did radicals ironically name the tragic 1819 event the 'Peterloo Massacre'?",
-          options: [
-            'Because it took place near a famous waterloo station in Manchester.',
-            'To compare the violent slaughter of citizens to the famous military victory at Waterloo.',
-            'Because the leader of the protest was named Peter.',
-            "Because it occurred on St Peter's Day during a heavy rainstorm.",
-          ],
-          answer:
-            'To compare the violent slaughter of citizens to the famous military victory at Waterloo.',
+            "Why did 19th-century Luddites break into factories at night to smash wide knitting frames?",
+          q: "Why did 19th-century Luddites break into factories at night to smash wide knitting frames?",
+          options: ["wide knitting frames","steam locomotive boilers","cast-iron anchor chains","stone grinding wheels"],
+          answer: "wide knitting frames",
+          a: "wide knitting frames",
+          explanation:
+            "Skilled hand framework knitters smashed wide knitting frames that flooded the market with cheap, shoddy hosiery.",
         },
         {
           question:
-            'What technological change caused winter unemployment and starvation for agricultural laborers in 1830?',
-          options: [
-            'The invention of the steam train.',
-            'The widespread use of chemical fertilizers.',
-            'The shift from farming to factory work in the cities.',
-            'The introduction of mechanical threshing machines.',
-          ],
-          answer: 'The introduction of mechanical threshing machines.',
+            "What 1812 capital statute made the destruction of industrial textile machinery punishable by hanging?",
+          q: "What 1812 capital statute made the destruction of industrial textile machinery punishable by hanging?",
+          options: ["Frame Breaking Act","Riot Act","Six Acts","Combinations Act"],
+          answer: "Frame Breaking Act",
+          a: "Frame Breaking Act",
+          explanation:
+            "Parliament enacted the 1812 Frame Breaking Act, making machine breaking a capital offence punishable by public hanging.",
         },
         {
           question:
-            'What was the name of the violent agrarian uprising in southern England in 1830?',
-          options: [
-            'The Swing Riots',
-            'The Luddite Rebellion',
-            'The Peterloo Riots',
-            'The Tolpuddle Uprising',
-          ],
-          answer: 'The Swing Riots',
-        },
-        {
-          question: "Who was 'Captain Swing'?",
-          options: [
-            'A real military officer who led the agricultural rebellion.',
-            'The wealthy landowner who invented the threshing machine.',
-            'A mythical, pseudonymous leader used by rioters to send anonymous threats.',
-            'The judge who sentenced the rioters at Winchester Castle.',
-          ],
-          answer: 'A mythical, pseudonymous leader used by rioters to send anonymous threats.',
+            "What radical orator wearing a white top hat was addressing the crowd at St Peter's Field when the cavalry attacked?",
+          q: "What radical orator wearing a white top hat was addressing the crowd at St Peter's Field when the cavalry attacked?",
+          options: ["Henry Hunt","William Lovett","Feargus O'Connor","Thomas Paine"],
+          answer: "Henry Hunt",
+          a: "Henry Hunt",
+          explanation:
+            "Radical orator Henry Hunt was addressing the orderly crowd on parliamentary reform when yeomanry cavalry charged.",
         },
         {
           question:
-            'How did the government punish the Hampshire workers involved in the 1830 riots?',
-          options: [
-            'They were all given a small fine and warned not to do it again.',
-            'They were forced to rebuild the threshing machines.',
-            'They were sent to work in the factories of northern England.',
-            'Over 100 were tried at Winchester, 6 were executed, and hundreds were transported to Australia.',
-          ],
-          answer:
-            'Over 100 were tried at Winchester, 6 were executed, and hundreds were transported to Australia.',
+            "What repressive legislation did Lord Liverpool's government pass immediately following the Peterloo Massacre in 1819?",
+          q: "What repressive legislation did Lord Liverpool's government pass immediately following the Peterloo Massacre in 1819?",
+          options: ["Six Acts","Ten Hours Act","Great Reform Act","Factory Act"],
+          answer: "Six Acts",
+          a: "Six Acts",
+          explanation:
+            "The government cracked down with the repressive Six Acts, banning unauthorised gatherings of over fifty people and taxing radical journals.",
         },
         {
           question:
-            'What strategy did working-class men explore after realizing violent property destruction resulted in execution or exile?',
-          options: [
-            'They decided to stop protesting entirely and accept low wages.',
-            'They began exploring collective bargaining through Trade Unions.',
-            'They started breaking machines exclusively during the daytime.',
-            'They all moved to America to find better farming jobs.',
-          ],
-          answer: 'They began exploring collective bargaining through Trade Unions.',
+            "What farm machinery deprived agricultural labourers of winter threshing wages, sparking the Captain Swing riots?",
+          q: "What farm machinery deprived agricultural labourers of winter threshing wages, sparking the Captain Swing riots?",
+          options: ["threshing machines","seed drills","steam tractors","iron ploughs"],
+          answer: "threshing machines",
+          a: "threshing machines",
+          explanation:
+            "The introduction of horse- and water-powered mechanical threshing machines eliminated vital winter work for labourers.",
         },
         {
           question:
-            'Why did the six agricultural laborers in Tolpuddle form a friendly society in 1834?',
-          options: [
-            'To overthrow the King.',
-            'To protest a wage cut and force employers to pay fair wages.',
-            'To build their own threshing machines.',
-            'To raise money to travel to London.',
-          ],
-          answer: 'To protest a wage cut and force employers to pay fair wages.',
-        },
-        {
-          question: 'What obscure 1797 law did the government use to arrest the Tolpuddle Martyrs?',
-          options: [
-            'A law banning unlawful secret oaths.',
-            'A law banning the destruction of farm equipment.',
-            'A law banning all forms of public gatherings.',
-            'A law banning workers from leaving their village without permission.',
-          ],
-          answer: 'A law banning unlawful secret oaths.',
-        },
-        {
-          question: 'What was the initial sentence given to the Tolpuddle Martyrs?',
-          options: [
-            'Execution by hanging.',
-            'Life in a British prison.',
-            'A large financial fine.',
-            "Seven years' transportation to Australia.",
-          ],
-          answer: "Seven years' transportation to Australia.",
+            "In which Hampshire rural parish did a crowd of 300 agricultural labourers dismantle a parish workhouse in November 1830?",
+          q: "In which Hampshire rural parish did a crowd of 300 agricultural labourers dismantle a parish workhouse in November 1830?",
+          options: ["Headley","Fareham","Winchester","Portsmouth"],
+          answer: "Headley",
+          a: "Headley",
+          explanation:
+            "At Headley, a crowd of 300 labourers systematically dismantled the harsh parish workhouse, demanding a living wage.",
         },
         {
           question:
-            'By 1838, what did working-class leaders realize was the only way to permanently change factory conditions and low wages?',
-          options: [
-            'Continuing to burn down hayricks and break machines.',
-            'Asking the King to personally intervene on their behalf.',
-            'Achieving structural constitutional reform so working-class men could sit in Parliament.',
-            'Moving out of the cities and back to the countryside.',
-          ],
-          answer:
-            'Achieving structural constitutional reform so working-class men could sit in Parliament.',
+            "What nineteen-year-old Micheldever ploughboy was executed at Winchester in 1831 for striking Bingham Baring?",
+          q: "What nineteen-year-old Micheldever ploughboy was executed at Winchester in 1831 for striking Bingham Baring?",
+          options: ["Henry Cook","George Loveless","Matthew Crabtree","Ned Ludd"],
+          answer: "Henry Cook",
+          a: "Henry Cook",
+          explanation:
+            "Nineteen-year-old Micheldever ploughboy Henry Cook was hanged at Winchester Gaol for striking wealthy magistrate Bingham Baring.",
         },
         {
           question:
-            'What was the name of the first mass working-class democratic movement in British history launched in 1838?',
-          options: ['The Suffragettes', 'The Luddites', 'Chartism', 'The Trade Union Congress'],
-          answer: 'Chartism',
+            "Under what obscure 1797 statute were the Tolpuddle Martyrs convicted for forming their friendly society?",
+          q: "Under what obscure 1797 statute were the Tolpuddle Martyrs convicted for forming their friendly society?",
+          options: ["unlawful secret oaths","armed treason","industrial sabotage","vagrancy and trespass"],
+          answer: "unlawful secret oaths",
+          a: "unlawful secret oaths",
+          explanation:
+            "Magistrates prosecuted the men under an obscure 1797 statute designed to suppress naval mutinies: administering 'unlawful secret oaths'.",
         },
         {
           question:
-            "Which of the following was NOT one of the six core demands of the People's Charter?",
-          options: [
-            'Universal male suffrage (the right to vote).',
-            'Secret ballots to stop voter intimidation.',
-            'Salaries for MPs so poor men could run for office.',
-            'Equal pay for men and women.',
-          ],
-          answer: 'Equal pay for men and women.',
+            "Where were the six Tolpuddle Martyrs sentenced to serve seven years' hard penal labour?",
+          q: "Where were the six Tolpuddle Martyrs sentenced to serve seven years' hard penal labour?",
+          options: ["Australia","Canada","Bermuda","Gibraltar"],
+          answer: "Australia",
+          a: "Australia",
+          explanation:
+            "At Dorchester Assizes in March 1834, the judge sentenced all six Tolpuddle Martyrs to seven years’ penal transportation to Australia.",
         },
         {
           question:
-            'What action did the Chartists take to pressure Parliament into accepting their demands?',
-          options: [
-            'They gathered millions of signatures on three mammoth petitions in 1839, 1842, and 1848.',
-            'They kidnapped several wealthy Members of Parliament.',
-            'They set fire to the Houses of Parliament.',
-            'They bought all the threshing machines in England and destroyed them.',
-          ],
-          answer:
-            'They gathered millions of signatures on three mammoth petitions in 1839, 1842, and 1848.',
+            "What was the name of the agricultural trade union established by George Loveless in Dorset in 1833?",
+          q: "What was the name of the agricultural trade union established by George Loveless in Dorset in 1833?",
+          options: ["Friendly Society of Agricultural Labourers","Grand National Trade Union","National Union of Miners","Chartist Association"],
+          answer: "Friendly Society of Agricultural Labourers",
+          a: "Friendly Society of Agricultural Labourers",
+          explanation:
+            "Six agricultural labourers in Tolpuddle founded the Friendly Society of Agricultural Labourers to resist wage cuts.",
         },
         {
           question:
-            "Although Parliament rejected all the Chartist petitions at the time, what was the movement's long-term legacy?",
-          options: [
-            'It proved that working-class people could never organize effectively.',
-            'By 1928, five of its six democratic demands had slowly become the law of the land.',
-            'It caused the government to ban all political parties permanently.',
-            'It forced the British establishment to immediately hand over power in 1848.',
-          ],
-          answer:
-            'By 1928, five of its six democratic demands had slowly become the law of the land.',
+            "How many trade unionists marched peacefully across London to present a 250,000-signature petition for the Tolpuddle Martyrs?",
+          q: "How many trade unionists marched peacefully across London to present a 250,000-signature petition for the Tolpuddle Martyrs?",
+          options: ["over 100,000","5,000","20,000","500"],
+          answer: "over 100,000",
+          a: "over 100,000",
+          explanation:
+            "Over 100,000 trade unionists marched peacefully across London to present a mammoth petition of 250,000 signatures, securing royal pardons.",
+        },
+        {
+          question:
+            "What weapon did magistrates unleash against unarmed men, women, and children at St Peter's Field in Manchester?",
+          q: "What weapon did magistrates unleash against unarmed men, women, and children at St Peter's Field in Manchester?",
+          options: ["cavalry sabres","musket volleys","water cannons","tear gas"],
+          answer: "cavalry sabres",
+          a: "cavalry sabres",
+          explanation:
+            "The Manchester Yeomanry cavalry drew sabres and charged galloping into the dense gathering, cutting down peaceful citizens.",
+        },
+        {
+          question:
+            "How many peaceful demonstrators were killed during the Peterloo Massacre in August 1819?",
+          q: "How many peaceful demonstrators were killed during the Peterloo Massacre in August 1819?",
+          options: ["eighteen","two","five hundred","fifty"],
+          answer: "eighteen",
+          a: "eighteen",
+          explanation:
+            "Eighteen peaceful reformers were slaughtered and over 650 sustained horrific sabre wounds and trampling injuries.",
+        },
+        {
+          question:
+            "What wage cut provoked George Loveless and the Tolpuddle labourers to form their friendly society?",
+          q: "What wage cut provoked George Loveless and the Tolpuddle labourers to form their friendly society?",
+          options: ["wage cuts from nine shillings to six shillings","a reduction of fifty percent in food rations","the loss of free cottage housing","refusal of overtime pay on Sundays"],
+          answer: "wage cuts from nine shillings to six shillings",
+          a: "wage cuts from nine shillings to six shillings",
+          explanation:
+            "The labourers founded the Friendly Society of Agricultural Labourers to resist wage cuts from nine shillings to six shillings a week.",
+        },
+        {
+          question:
+            "What local Dorset magistrate conspired with the Home Secretary to arrest and prosecute the Tolpuddle labourers?",
+          q: "What local Dorset magistrate conspired with the Home Secretary to arrest and prosecute the Tolpuddle labourers?",
+          options: ["James Frampton","Bingham Baring","Michael Sadler","Francis Place"],
+          answer: "James Frampton",
+          a: "James Frampton",
+          explanation:
+            "Local magistrate James Frampton conspired with Home Secretary Melbourne to prosecute the men under the 1797 statute.",
         },
       ],
       hook_text:
@@ -6109,220 +6103,203 @@ const industrialisation_and_empire_data = {
       quiz: [
         {
           question:
-            'Which Whig Prime Minister led the parliamentary battle to pass the landmark 1832 Great Reform Act?',
-          q: 'Which Whig Prime Minister led the parliamentary battle to pass the landmark 1832 Great Reform Act?',
-          options: ['Benjamin Disraeli', 'Robert Peel', 'Earl Grey', 'The Duke of Wellington'],
-          answer: 'Earl Grey',
-          a: 'Earl Grey',
+            "What percentage of adult men possessed the parliamentary franchise in Britain before the 1832 Great Reform Act?",
+          q: "What percentage of adult men possessed the parliamentary franchise in Britain before the 1832 Great Reform Act?",
+          options: ["less than 5%","roughly 50%","over 80%","exactly 25%"],
+          answer: "less than 5%",
+          a: "less than 5%",
           explanation:
-            'Charles Grey, 2nd Earl Grey, recognized that the aristocracy had to reform parliament or face violent revolution, pushing the 1832 Reform Act through intense House of Lords opposition.',
+            "In 1830, Britain claimed to be the cradle of parliamentary liberty, but less than 5% of adult males possessed the parliamentary franchise.",
         },
         {
           question:
-            'Which major industrial cities, completely unrepresented before 1832, were finally granted parliamentary MPs under the Great Reform Act?',
-          q: 'Which major industrial cities, completely unrepresented before 1832, were finally granted parliamentary MPs under the Great Reform Act?',
-          options: [
-            'Oxford and Cambridge',
-            'Old Sarum and Dunwich',
-            'Portsmouth and Southampton',
-            'Manchester, Birmingham, and Leeds',
-          ],
-          answer: 'Manchester, Birmingham, and Leeds',
-          a: 'Manchester, Birmingham, and Leeds',
+            "What notorious rotten borough in Wiltshire was an uninhabited grass mound with three houses that returned two MPs?",
+          q: "What notorious rotten borough in Wiltshire was an uninhabited grass mound with three houses that returned two MPs?",
+          options: ["Old Sarum","Manchester","Birmingham","Pontefract"],
+          answer: "Old Sarum",
+          a: "Old Sarum",
           explanation:
-            "The 1832 Reform Act disenfranchised corrupt 'rotten boroughs' and transferred their parliamentary seats to rapidly growing industrial powerhouses like Manchester and Birmingham.",
+            "Old Sarum in Wiltshire was a deserted grass mound with three houses and seven voters, while returning two MPs to Westminster.",
         },
         {
           question:
-            'Which 1872 statute finally eliminated public bribery and landlord intimidation during elections by introducing private voting booths?',
-          q: 'Which 1872 statute finally eliminated public bribery and landlord intimidation during elections by introducing private voting booths?',
-          options: [
-            'The Secret Ballot Act',
-            'The Representation of the People Act',
-            'The Great Reform Act',
-            'The Public Health Act',
-          ],
-          answer: 'The Secret Ballot Act',
-          a: 'The Secret Ballot Act',
+            "Which Whig Prime Minister led the parliamentary struggle to pass the historic 1832 Great Reform Act?",
+          q: "Which Whig Prime Minister led the parliamentary struggle to pass the historic 1832 Great Reform Act?",
+          options: ["Earl Grey","The Duke of Wellington","Benjamin Disraeli","William Gladstone"],
+          answer: "Earl Grey",
+          a: "Earl Grey",
           explanation:
-            'The Ballot Act of 1872 ended the tradition of public voting on open hustings, enabling working men and tenants to vote without fear of being evicted by their landlords or fired by factory bosses.',
-        },
-        {
-          question: 'Before 1832, who was allowed to vote in British elections?',
-          options: [
-            'All adult men.',
-            'Only a tiny minority of wealthy male property owners.',
-            'Both men and women over the age of 21.',
-            'Anyone who could prove they could read and write.',
-          ],
-          answer: 'Only a tiny minority of wealthy male property owners.',
-        },
-        {
-          question: "What was a 'Rotten Borough' before 1832?",
-          options: [
-            'An abandoned medieval village that had almost no people but still sent two MPs to Parliament.',
-            'A massive industrial city like Manchester with no MPs.',
-            'A district where all the voters were secretly corrupt and took bribes from the King.',
-            'A poor slum area in a major city that was not allowed to vote.',
-          ],
-          answer:
-            'An abandoned medieval village that had almost no people but still sent two MPs to Parliament.',
-        },
-        {
-          question: 'What was Newtown on the Isle of Wight a famous example of before 1832?',
-          options: [
-            'A massive industrial city.',
-            'A Rotten Borough with only 14 houses that still sent two MPs to London.',
-            'The first town in Britain to give working-class men the vote.',
-            'The site of a violent Chartist uprising.',
-          ],
-          answer: 'A Rotten Borough with only 14 houses that still sent two MPs to London.',
-        },
-        {
-          question: "What was a 'Pocket Borough'?",
-          options: [
-            "A voting district where people could vote secretly in a small box or 'pocket'.",
-            'A borough small enough to fit inside a single town hall.',
-            'A constituency set up especially for poor working men.',
-            'A seat in Parliament completely controlled by a wealthy local landowner.',
-          ],
-          answer: 'A seat in Parliament completely controlled by a wealthy local landowner.',
-        },
-        {
-          question: 'Why did the government finally pass the Great Reform Act in 1832?',
-          options: [
-            'Because they believed that democracy was the only fair system of government.',
-            'Because Queen Victoria ordered them to change the law.',
-            'Because they feared a violent revolution similar to the Swing Riots and the French Revolution.',
-            "Because the working classes had peacefully asked for it in the People's Charter.",
-          ],
-          answer:
-            'Because they feared a violent revolution similar to the Swing Riots and the French Revolution.',
-        },
-        {
-          question: 'Which of the following was a key change made by the 1832 Great Reform Act?',
-          options: [
-            'It gave the vote to all working-class men.',
-            'It abolished 56 Rotten Boroughs and created new constituencies for industrial cities.',
-            'It introduced the secret ballot.',
-            'It gave women the right to vote for the first time.',
-          ],
-          answer:
-            'It abolished 56 Rotten Boroughs and created new constituencies for industrial cities.',
-        },
-        {
-          question: 'Who was granted the right to vote by the 1832 Great Reform Act?',
-          options: [
-            'Middle-class men who owned property worth £10 a year.',
-            'All men over the age of 21.',
-            'Only the nobility and the wealthiest landowners.',
-            'Everyone who worked in an industrial factory.',
-          ],
-          answer: 'Middle-class men who owned property worth £10 a year.',
-        },
-        {
-          question: 'How did the working classes react to the 1832 Great Reform Act?',
-          options: [
-            'They celebrated because they finally had a voice in Parliament.',
-            'They ignored it because they did not care about politics.',
-            'They felt bitterly betrayed because they were deliberately excluded from voting.',
-            'They started a war with France to unite the country.',
-          ],
-          answer:
-            'They felt bitterly betrayed because they were deliberately excluded from voting.',
-        },
-        {
-          question: 'Before 1872, how did a man cast his vote in an election?',
-          options: [
-            'By placing a piece of paper in a locked ballot box.',
-            'By sending a letter through the Royal Mail.',
-            'By raising his hand in a silent, private room.',
-            "By standing on a public platform (the 'hustings') and shouting out the name of the candidate.",
-          ],
-          answer:
-            "By standing on a public platform (the 'hustings') and shouting out the name of the candidate.",
+            "Prime Minister Earl Grey led the Whig government through violent civil unrest to pass the landmark 1832 Great Reform Act.",
         },
         {
           question:
-            'Why was the system of public voting before 1872 so unfair to working-class men?',
-          options: [
-            'Because they were often too shy to speak in public.',
-            'Because they had to pay a large fee every time they shouted their vote.',
-            "Because only the rich were allowed to stand on the 'hustings'.",
-            'Because landlords and factory owners could intimidate them into voting a certain way under threat of being fired or evicted.',
-          ],
-          answer:
-            'Because landlords and factory owners could intimidate them into voting a certain way under threat of being fired or evicted.',
-        },
-        {
-          question: 'What did the 1872 Secret Ballot Act require voters to do?',
-          options: [
-            'Swear a secret oath to the King before voting.',
-            'Hide their faces with masks while standing on the public platform.',
-            'Vote in a private wooden booth using a printed paper dropped into a locked box.',
-            'Vote for only one candidate in complete silence.',
-          ],
-          answer: 'Vote in a private wooden booth using a printed paper dropped into a locked box.',
-        },
-        {
-          question: 'What was the immediate consequence of the 1872 Secret Ballot Act?',
-          options: [
-            'The power of elite bribery and intimidation collapsed almost overnight.',
-            'Voter turnout dropped dramatically because people found the paper confusing.',
-            'The working classes rioted because they wanted to vote in public.',
-            'The King cancelled all future elections.',
-          ],
-          answer: 'The power of elite bribery and intimidation collapsed almost overnight.',
-        },
-        {
-          question: 'Which group of people was given the vote by the 1867 Second Reform Act?',
-          options: [
-            'All women over the age of 30.',
-            'Skilled working-class men in urban towns and cities.',
-            'Agricultural laborers and miners in the countryside.',
-            'Only the wealthiest merchants in London.',
-          ],
-          answer: 'Skilled working-class men in urban towns and cities.',
-        },
-        {
-          question: 'What did the 1884 Third Reform Act achieve?',
-          options: [
-            'It gave the vote to women for the first time.',
-            'It extended the vote to agricultural laborers and miners in the countryside.',
-            'It took the vote away from the working classes.',
-            'It introduced the secret ballot across the entire British Empire.',
-          ],
-          answer: 'It extended the vote to agricultural laborers and miners in the countryside.',
+            "What foundational 1838 document drafted by William Lovett set out six democratic demands for the working class?",
+          q: "What foundational 1838 document drafted by William Lovett set out six democratic demands for the working class?",
+          options: ["People’s Charter","Magna Carta","Bill of Rights","Declaration of Rights"],
+          answer: "People’s Charter",
+          a: "People’s Charter",
+          explanation:
+            "Cabinetmaker William Lovett and radical reformers drafted the People’s Charter of 1838, igniting the massive Chartist movement.",
         },
         {
           question:
-            'Why did Conservative politicians like Benjamin Disraeli eventually expand the vote to the working classes in 1867?',
-          options: [
-            'Because they genuinely believed every man deserved an equal voice.',
-            'Because they were forced to by the French government.',
-            'Because they hoped the newly enfranchised workers would be grateful and vote for the Conservative party.',
-            'Because they had run out of wealthy landowners to vote for them.',
-          ],
-          answer:
-            'Because they hoped the newly enfranchised workers would be grateful and vote for the Conservative party.',
+            "What 1872 statute abolished open public voting on the hustings, introducing private booths to stop landlord coercion?",
+          q: "What 1872 statute abolished open public voting on the hustings, introducing private booths to stop landlord coercion?",
+          options: ["Secret Ballot Act","Great Reform Act","Representation of the People Act","Municipal Act"],
+          answer: "Secret Ballot Act",
+          a: "Secret Ballot Act",
+          explanation:
+            "In 1872, Gladstone's Liberal government passed the historic Secret Ballot Act, introducing confidential paper voting in private booths.",
         },
         {
           question:
-            "Based on MP Robert Lowe's 1866 speech, what was the underlying fear that wealthy elites had about expanding democracy?",
-          options: [
-            "They feared the 'ignorant and violent' working classes would vote to tax the wealthy and destroy their privileged institutions.",
-            'They feared that elections would become too expensive to run.',
-            'They feared that foreign spies would infiltrate the voting booths.',
-            'They feared that giving men the vote would lead to women demanding the vote too.',
-          ],
-          answer:
-            "They feared the 'ignorant and violent' working classes would vote to tax the wealthy and destroy their privileged institutions.",
+            "Which colossal industrial manufacturing powerhouses had zero dedicated MPs in Parliament before 1832?",
+          q: "Which colossal industrial manufacturing powerhouses had zero dedicated MPs in Parliament before 1832?",
+          options: ["Manchester, Birmingham, and Leeds","London and Bristol","Winchester and Salisbury","Oxford and Cambridge"],
+          answer: "Manchester, Birmingham, and Leeds",
+          a: "Manchester, Birmingham, and Leeds",
+          explanation:
+            "Colossal industrial powerhouses like Manchester, Birmingham, and Leeds, home to over a million people, had zero MPs.",
         },
         {
           question:
-            'By 1884, approximately what percentage of adult men in Britain had a secure, private vote?',
-          options: ['10%', '30%', '100%', '60%'],
-          answer: '60%',
+            "What term described depopulated boroughs controlled by wealthy aristocratic patrons who sent MPs to Westminster?",
+          q: "What term described depopulated boroughs controlled by wealthy aristocratic patrons who sent MPs to Westminster?",
+          options: ["rotten boroughs","county shires","freeholder seats","royal burgages"],
+          answer: "rotten boroughs",
+          a: "rotten boroughs",
+          explanation:
+            "Dozens of rotten boroughs (depopulated boroughs controlled by wealthy aristocratic patrons) sent two MPs to Westminster.",
+        },
+        {
+          question:
+            "What radical reformer coordinated a financial strike in May 1832 with posters reading 'To stop the Duke, go for gold!'?",
+          q: "What radical reformer coordinated a financial strike in May 1832 with posters reading 'To stop the Duke, go for gold!'?",
+          options: ["Francis Place","William Lovett","Henry Hunt","Feargus O'Connor"],
+          answer: "Francis Place",
+          a: "Francis Place",
+          explanation:
+            "During the tense 'Days of May' in 1832, radical reformer Francis Place coordinated a run of £1.6 million in gold sovereigns on the Bank of England.",
+        },
+        {
+          question:
+            "How many corrupt rotten boroughs were completely disenfranchised by the landmark 1832 Great Reform Act?",
+          q: "How many corrupt rotten boroughs were completely disenfranchised by the landmark 1832 Great Reform Act?",
+          options: ["56 rotten boroughs","12 rotten boroughs","200 rotten boroughs","zero rotten boroughs"],
+          answer: "56 rotten boroughs",
+          a: "56 rotten boroughs",
+          explanation:
+            "The landmark 1832 Great Reform Act disenfranchised 56 rotten boroughs and redistributed 143 parliamentary seats to booming industrial cities.",
+        },
+        {
+          question:
+            "What property requirement restricted voting rights to middle-class men under the 1832 Great Reform Act?",
+          q: "What property requirement restricted voting rights to middle-class men under the 1832 Great Reform Act?",
+          options: ["£10 property qualification","£100 land title","ownership of a factory","freehold estate only"],
+          answer: "£10 property qualification",
+          a: "£10 property qualification",
+          explanation:
+            "The vote was strictly restricted by a £10 property qualification to men occupying property worth £10 or more in rent annually.",
+        },
+        {
+          question:
+            "Why did working-class reformers bitterly denounce the 1832 Great Reform Act as the 'Great Betrayal'?",
+          q: "Why did working-class reformers bitterly denounce the 1832 Great Reform Act as the 'Great Betrayal'?",
+          options: ["completely excluding the working class","raising taxes on textile mills","dissolving the House of Commons","outlawing all friendly societies"],
+          answer: "completely excluding the working class",
+          a: "completely excluding the working class",
+          explanation:
+            "Working-class reformers denounced the Act as the 'Great Betrayal', realizing it enfranchised middle-class factory owners while completely excluding workers.",
+        },
+        {
+          question:
+            "Which of the following was NOT one of the Six Points set out in the 1838 People's Charter?",
+          q: "Which of the following was NOT one of the Six Points set out in the 1838 People's Charter?",
+          options: ["equal voting rights for women","universal male suffrage","the secret ballot","salaries for MPs"],
+          answer: "equal voting rights for women",
+          a: "equal voting rights for women",
+          explanation:
+            "The Charter demanded universal male suffrage, the secret ballot, no property qualifications, MP salaries, equal constituencies, and annual parliaments.",
+        },
+        {
+          question:
+            "Where was the massive Chartist demonstration held on 10 April 1848 to present the Third National Petition?",
+          q: "Where was the massive Chartist demonstration held on 10 April 1848 to present the Third National Petition?",
+          options: ["Kennington Common","Hyde Park","Trafalgar Square","St Peter's Field"],
+          answer: "Kennington Common",
+          a: "Kennington Common",
+          explanation:
+            "In 1848, Chartists presented colossal monster petitions to Parliament, culminating in the historic 1848 Kennington Common mass demonstration.",
+        },
+        {
+          question:
+            "On what open wooden platforms did voters declare their choice before screaming crowds prior to 1872?",
+          q: "On what open wooden platforms did voters declare their choice before screaming crowds prior to 1872?",
+          options: ["hustings","pulpits","scaffolds","daises"],
+          answer: "hustings",
+          a: "hustings",
+          explanation:
+            "Under the unreformed system, voting took place on open wooden platforms called hustings, exposing voters to landlord intimidation.",
+        },
+        {
+          question:
+            "Where was the United Kingdom's first secret ballot election tested in August 1872 using liquorice wax seals?",
+          q: "Where was the United Kingdom's first secret ballot election tested in August 1872 using liquorice wax seals?",
+          options: ["Pontefract by-election","Manchester Central","Westminster","Portsmouth Borough"],
+          answer: "Pontefract by-election",
+          a: "Pontefract by-election",
+          explanation:
+            "Tested at the Pontefract by-election in August 1872, voters cast confidential paper ballots stamped in private wooden booths.",
+        },
+        {
+          question:
+            "What public buildings were burned to ashes by furious crowds in Bristol in October 1831 after peers rejected the Reform Bill?",
+          q: "What public buildings were burned to ashes by furious crowds in Bristol in October 1831 after peers rejected the Reform Bill?",
+          options: ["the Bishop's Palace, the Mansion House, and three gaols","the royal naval dockyards","the Bank of England","the university colleges"],
+          answer: "the Bishop's Palace, the Mansion House, and three gaols",
+          a: "the Bishop's Palace, the Mansion House, and three gaols",
+          explanation:
+            "In Bristol, a furious crowd burned the Bishop's Palace, the Mansion House, and three gaols to ashes.",
+        },
+        {
+          question:
+            "What amount of gold sovereigns did citizens withdraw from the Bank of England in days during the 'Days of May'?",
+          q: "What amount of gold sovereigns did citizens withdraw from the Bank of England in days during the 'Days of May'?",
+          options: ["£1.6 million","£50,000","£10 million","£500,000"],
+          answer: "£1.6 million",
+          a: "£1.6 million",
+          explanation:
+            "Panic-stricken citizens withdrew £1.6 million in gold sovereigns from the Bank of England in days, forcing the Tories to pass the bill.",
+        },
+        {
+          question:
+            "What London cabinetmaker drafted the People's Charter of 1838 alongside radical reformers?",
+          q: "What London cabinetmaker drafted the People's Charter of 1838 alongside radical reformers?",
+          options: ["William Lovett","Francis Place","Henry Hunt","George Loveless"],
+          answer: "William Lovett",
+          a: "William Lovett",
+          explanation:
+            "Cabinetmaker William Lovett and radical reformers drafted the People’s Charter of 1838, igniting the massive Chartist movement.",
+        },
+        {
+          question:
+            "Why did Chartists demand annual parliaments and salaries for MPs?",
+          q: "Why did Chartists demand annual parliaments and salaries for MPs?",
+          options: ["salaries for MPs","state pensions for aristocrats","free houses for mayors","tax exemptions for landlords"],
+          answer: "salaries for MPs",
+          a: "salaries for MPs",
+          explanation:
+            "Chartists demanded salaries for MPs so that working men without private wealth could afford to serve in Parliament.",
+        },
+        {
+          question:
+            "What monarch agreed to flood the House of Lords with pro-reform peers in 1832 to force through the Reform Bill?",
+          q: "What monarch agreed to flood the House of Lords with pro-reform peers in 1832 to force through the Reform Bill?",
+          options: ["King William IV","King George III","King George IV","Queen Victoria"],
+          answer: "King William IV",
+          a: "King William IV",
+          explanation:
+            "King William IV agreed to flood the House of Lords with pro-reform peers, forcing the Tories to surrender and pass the Bill.",
         },
       ],
       hook_text:

@@ -221,7 +221,7 @@ const milestones = [
 
 function buildHtml() {
   const unitData = loadUnitData();
-  const heroImageBase64 = getBase64Image(unitData.cover_image || '/images/bg_great_war_part2.jpg');
+  const heroImageBase64 = getBase64Image(unitData.cover_image || '/images/sargent_gassed_1919.jpg');
 
   const canonicalSynopsis =
     'In the summer of 1914, millions of young men marched eagerly to war, swept up in patriotic fever and promised they would return home victorious before Christmas. None foresaw the industrial nightmare awaiting them: rapid-firing machine guns, heavy artillery, and poison gas obliterated the old world of cavalry charges, trapping an entire generation in the mud, blood, and barbed wire of the Western Front. From the catastrophic slaughter of the Somme to the forgotten heroism of four million imperial troops of colour, the courage of female munition workers on the Home Front, and the bitter peace dictated in the Hall of Mirrors at Versailles, this anthology tells the dramatic story of five cataclysmic years that shattered empires and reshaped human history forever.';
@@ -405,7 +405,7 @@ function buildHtml() {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 30%;
+      object-position: center 42%;
       display: block;
     }
 
@@ -944,18 +944,18 @@ function buildHtml() {
     <div class="cover-title-group">
       <span class="cover-date-pill">1914 &ndash; 1919</span>
       <h1 class="cover-main-title">THE GREAT WAR</h1>
-      <div class="cover-subtitle">Total War, Industrial Slaughter &amp; The Fragile Peace (Part 2)</div>
+      <div class="cover-subtitle">Apocalypse &amp; Aftermath: From the Rush to the Colours to the Hall of Mirrors</div>
     </div>
 
     <div class="cover-hero-wrap">
       ${
         heroImageBase64
-          ? `<img src="${heroImageBase64}" class="cover-hero-img" alt="The Signing of Peace in the Hall of Mirrors, Versailles (1919) by Sir William Orpen">`
-          : '<div style="color:#64748b;padding:20px;text-align:center;">The Signing of Peace in the Hall of Mirrors, Versailles (1919) by Sir William Orpen</div>'
+          ? `<img src="${heroImageBase64}" class="cover-hero-img" alt="Gassed (1919) by John Singer Sargent">`
+          : '<div style="color:#64748b;padding:20px;text-align:center;">Gassed (1919) by John Singer Sargent</div>'
       }
     </div>
     <div class="cover-hero-caption">
-      Primary Archival Record: Sir William Orpen &bull; The Signing of Peace in the Hall of Mirrors, Versailles (28 June 1919), concluding the First World War. Imperial War Museums (Art.IWM ART 2856).
+      Primary Archival Record: John Singer Sargent &bull; <em>Gassed</em> (1919). Blinded soldiers led along duckboards toward an advanced dressing station following a mustard gas attack. Imperial War Museums (Art.IWM ART 1460).
     </div>
 
     <div class="cover-overview-box">
@@ -1242,6 +1242,38 @@ async function run() {
         sections.forEach((s) => (s.style.marginBottom = margin.toFixed(1) + 'px'));
       }
     });
+
+    // Auto-balance Page 8 Quiz Back Cover if needed
+    const quizPage = document.querySelector('.page:last-child');
+    if (quizPage) {
+      const footer = quizPage.querySelector('.running-footer');
+      const grid = quizPage.querySelector('.quiz-cards-grid');
+      const qLists = quizPage.querySelectorAll('.quiz-questions-list');
+      const cards = quizPage.querySelectorAll('.quiz-card');
+      if (footer && grid && qLists.length > 0) {
+        let qSize = 8.4;
+        let qLh = 1.34;
+        let cardPad = 6.0;
+        const checkQuizOverflow = () => {
+          const footerTop = footer.getBoundingClientRect().top;
+          const gridBottom = grid.getBoundingClientRect().bottom;
+          return gridBottom > footerTop - 6 || quizPage.scrollHeight > quizPage.clientHeight + 2;
+        };
+        while (checkQuizOverflow() && qSize > 6.8) {
+          qSize -= 0.1;
+          qLh -= 0.015;
+          cardPad = Math.max(3.0, cardPad - 0.25);
+          qLists.forEach((ql) => {
+            ql.style.fontSize = qSize.toFixed(2) + 'pt';
+            ql.style.lineHeight = qLh.toFixed(2);
+          });
+          cards.forEach((c) => {
+            c.style.padding = cardPad.toFixed(1) + 'px 8px';
+            c.style.marginBottom = Math.max(2.0, cardPad - 1.0).toFixed(1) + 'px';
+          });
+        }
+      }
+    }
   });
 
   // Re-save balanced HTML

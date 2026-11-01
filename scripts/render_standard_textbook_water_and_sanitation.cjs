@@ -73,15 +73,13 @@ function cleanProse(text) {
     .replace(/<span\s+class=["']para-ref["']>[^<]*<\/span>\s*/gi, '')
     .replace(/\[\d+\.\d+\]\s*/g, '')
     .replace(/<br\s*\/?>/gi, '\n')
-    .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.*?)\*/g, '<em>$1</em>')
     .trim();
 }
 
 // Format Markdown bold and italic
 function formatMarkdown(text) {
-  return text; // Markdown is already cleanly formatted by cleanProse
+  if (!text) return '';
+  return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*(.*?)\*/g, '<em>$1</em>');
 }
 
 // Load canonical data from units/water_and_sanitation/data.js
@@ -1042,8 +1040,8 @@ function buildHtml() {
       <table class="cover-directory-table">
         <tbody>
           ${canonicalEnquiries
-            .map(
-              (enq) => `
+      .map(
+        (enq) => `
             <tr>
               <td class="col-num">Enquiry ${enq.num}</td>
               <td class="col-title">${enq.title} (${enq.period})</td>
@@ -1051,8 +1049,8 @@ function buildHtml() {
               <td class="col-page">${enq.page}</td>
             </tr>
           `,
-            )
-            .join('')}
+      )
+      .join('')}
         </tbody>
       </table>
     </div>
@@ -1107,18 +1105,18 @@ function buildHtml() {
        PAGES 3–7: FIVE CANONICAL ENQUIRIES (1 Page per Enquiry)
        ======================================================================= -->
   ${lessons
-    .map((lesson, idx) => {
-      const pageNum = idx + 3;
-      const enqNum = `0${idx + 1}`;
-      const isVerso = pageNum % 2 === 0;
+      .map((lesson, idx) => {
+        const pageNum = idx + 3;
+        const enqNum = `0${idx + 1}`;
+        const isVerso = pageNum % 2 === 0;
 
-      // Extract blocks
-      const blocks = lesson.narrative_blocks || [];
+        // Extract blocks
+        const blocks = lesson.narrative_blocks || [];
 
-      // Extract stage questions
-      const stages = (lesson.causal_domino_spine && lesson.causal_domino_spine.stages) || [];
+        // Extract stage questions
+        const stages = (lesson.causal_domino_spine && lesson.causal_domino_spine.stages) || [];
 
-      return `
+        return `
     <div class="page page-lesson page-lesson-${idx + 1}" id="page-${pageNum}">
       <div class="running-header">
         <span>${isVerso ? `Water &amp; Sanitation Through Time &bull; Enquiry ${enqNum}` : `The History Revision Hub &bull; KS3 Companion Textbook`}</span>
@@ -1159,8 +1157,8 @@ function buildHtml() {
       </div>
     </div>
     `;
-    })
-    .join('')}
+      })
+      .join('')}
 
   <!-- =======================================================================
        PAGE 8: MASTER KNOWLEDGE RETRIEVAL QUIZ BACK COVER
@@ -1177,8 +1175,8 @@ function buildHtml() {
 
     <div class="quiz-cards-grid">
       ${Object.values(RETRIEVAL_QUIZ)
-        .map(
-          (card, cIdx) => `
+      .map(
+        (card, cIdx) => `
         <div class="quiz-card">
           <div class="quiz-card-header">
             <span class="quiz-card-title">${card.title}</span>
@@ -1186,20 +1184,20 @@ function buildHtml() {
           </div>
           <div class="quiz-card-body">
             ${card.questions
-              .map(
-                (q, qIdx) => `
+            .map(
+              (q, qIdx) => `
               <div class="quiz-q-item">
                 <span class="quiz-q-num">Q${cIdx * 5 + qIdx + 1}.</span>
                 <span class="quiz-q-text">${q}</span>
               </div>
             `,
-              )
-              .join('')}
+            )
+            .join('')}
           </div>
         </div>
       `,
-        )
-        .join('')}
+      )
+      .join('')}
     </div>
 
     <div class="running-footer" style="padding: 3mm 0 0 0; margin-top: 4px;">
@@ -1235,19 +1233,24 @@ async function main() {
   // Launch Puppeteer with auto-balancing typography engine
   const chromePath =
     process.env.PUPPETEER_EXECUTABLE_PATH ||
-    'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+    (fs.existsSync('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe')
+      ? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+      : undefined);
   const browser = await puppeteer.launch({
     headless: 'new',
-    executablePath: fs.existsSync(chromePath) ? chromePath : undefined,
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    executablePath: chromePath,
+    protocolTimeout: 600000,
+    timeout: 300000,
+    args: ['--allow-file-access-from-files', '--disable-web-security', '--no-sandbox'],
   });
 
   const page = await browser.newPage();
   await page.setViewport({ width: 1200, height: 1600 });
-  await page.goto('file:///' + publicHtmlPath.replace(/\\/g, '/'), {
-    waitUntil: 'domcontentloaded',
+  page.setDefaultNavigationTimeout(120000);
+  await page.goto(require('url').pathToFileURL(publicHtmlPath).href, {
+    waitUntil: 'load',
+    timeout: 60000,
   });
-  await page.evaluateHandle('document.fonts.ready');
 
   // Dynamic Auto-Balancing Typography Engine
   console.log(

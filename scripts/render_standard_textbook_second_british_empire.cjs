@@ -398,7 +398,7 @@ function buildHtml() {
 
     .cover-hero-wrap {
       width: 100%;
-      height: 88mm;
+      height: 94mm;
       border: 1.5px solid #0f172a;
       border-radius: 3px;
       overflow: hidden;
@@ -500,7 +500,7 @@ function buildHtml() {
     }
 
     .cover-directory-table td {
-      padding: 4.5px 8px;
+      padding: 6px 8px;
       vertical-align: middle;
     }
 
@@ -1050,7 +1050,7 @@ function buildHtml() {
       const pageNum = lIdx + 3;
       const num = String(lIdx + 1).padStart(2, '0');
       const blocks = lesson.blocks || lesson.narrative_blocks || [];
-      const questions = STAGE_QUESTIONS[lIdx + 1] || [];
+      const questions = (lesson.quiz && lesson.quiz.length >= 5) ? lesson.quiz.slice(0, 5).map(q => q.question) : (STAGE_QUESTIONS[lIdx + 1] || []);
 
       return `
     <div class="page page-lesson page-lesson-${lIdx + 1}" id="page-${pageNum}" data-page="${pageNum}">
@@ -1126,7 +1126,7 @@ function buildHtml() {
       ${lessons
         .map((lesson, idx) => {
           const num = String(idx + 1).padStart(2, '0');
-          const questions = STAGE_QUESTIONS[idx + 1] || [];
+          const questions = (lesson.quiz && lesson.quiz.length >= 5) ? lesson.quiz.slice(0, 5).map(q => q.question) : (STAGE_QUESTIONS[idx + 1] || []);
           const startQ = idx * 5 + 1;
           const pageRef = idx + 3;
 
@@ -1247,6 +1247,38 @@ async function run() {
         sections.forEach((s) => (s.style.marginBottom = margin.toFixed(1) + 'px'));
       }
     });
+
+    // Auto-balance Page 8 Quiz Back Cover if needed
+    const quizPage = document.querySelector('.page:last-child');
+    if (quizPage) {
+      const footer = quizPage.querySelector('.running-footer');
+      const grid = quizPage.querySelector('.quiz-cards-grid');
+      const qLists = quizPage.querySelectorAll('.quiz-questions-list');
+      const cards = quizPage.querySelectorAll('.quiz-card');
+      if (footer && grid && qLists.length > 0) {
+        let qSize = 8.4;
+        let qLh = 1.34;
+        let cardPad = 6.0;
+        const checkQuizOverflow = () => {
+          const footerTop = footer.getBoundingClientRect().top;
+          const gridBottom = grid.getBoundingClientRect().bottom;
+          return gridBottom > footerTop - 6 || quizPage.scrollHeight > quizPage.clientHeight + 2;
+        };
+        while (checkQuizOverflow() && qSize > 6.8) {
+          qSize -= 0.1;
+          qLh -= 0.015;
+          cardPad = Math.max(3.0, cardPad - 0.25);
+          qLists.forEach((ql) => {
+            ql.style.fontSize = qSize.toFixed(2) + 'pt';
+            ql.style.lineHeight = qLh.toFixed(2);
+          });
+          cards.forEach((c) => {
+            c.style.padding = cardPad.toFixed(1) + 'px 8px';
+            c.style.marginBottom = Math.max(2.0, cardPad - 1.0).toFixed(1) + 'px';
+          });
+        }
+      }
+    }
   });
 
   // Re-save balanced HTML

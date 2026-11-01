@@ -103,9 +103,9 @@ function cleanProse(text) {
     .replace(/([a-zA-Z])"([a-zA-Z])/g, '$1" $2')
     .replace(/\s*\(\s*\)/g, '')
     .replace(/\s{2,}/g, ' ')
-    .replace(/\\*\\*\\*(.*?)\\*\\*\\*/g, '<strong><em></em></strong>')
-    .replace(/\\*\\*(.*?)\\*\\*/g, '<strong></strong>')
-    .replace(/\\*(.*?)\\*/g, '<em></em>')
+    .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
     .trim();
 }
 
@@ -2313,13 +2313,14 @@ async function main() {
   const browser = await puppeteer.launch({
     headless: 'new',
     executablePath: chromePath,
-    args: ['--no-sandbox', '--disable-setuid-sandbox', '--allow-file-access-from-files'],
+    protocolTimeout: 600000,
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--allow-file-access-from-files', '--disable-dev-shm-usage'],
   });
 
   const page = await browser.newPage();
   await page.setViewport({ width: 1200, height: 1697, deviceScaleFactor: 2 });
 
-  await page.setContent(htmlContent, { waitUntil: 'domcontentloaded' });
+  await page.goto(`file://${htmlPath.replace(/\\/g, '/')}`, { waitUntil: 'domcontentloaded' });
   await page.evaluateHandle('document.fonts.ready');
 
   // Run in-browser calibrators

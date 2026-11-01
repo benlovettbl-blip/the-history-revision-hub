@@ -169,3 +169,4 @@ export const MONARCHY_RELIGION_POWER_CORNERS = {
     ]
   }
 };
+

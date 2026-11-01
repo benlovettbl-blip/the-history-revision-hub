@@ -379,9 +379,7 @@ function buildHtml() {
         </div>
 
         <main class="prose-body">
-          <div class="prose-columns">
-            ${actsHtml}
-          </div>
+          ${actsHtml}
         </main>
 
         <footer class="running-footer">
@@ -593,7 +591,7 @@ function buildHtml() {
 
     .cover-hero-wrap {
       width: 100%;
-      height: 84mm;
+      height: 116mm;
       border: 1.5px solid #0f172a;
       position: relative;
       background: #0f172a;
@@ -622,8 +620,8 @@ function buildHtml() {
       border: 1.5px solid #e2d9cc;
       border-left: 4.5px solid #1e3a8a;
       border-radius: 4px;
-      padding: 9px 12px;
-      margin: 3px 0 5px 0;
+      padding: 12px 12px;
+      margin: 6px 0 7px 0;
     }
 
     .cover-overview-header {
@@ -943,21 +941,14 @@ function buildHtml() {
     }
 
     .prose-body {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 4px;
-      overflow: hidden;
-    }
-
-    .prose-columns {
       column-count: 2;
       column-gap: 8mm;
       column-fill: balance;
+      flex-grow: 1;
       text-align: justify;
       text-justify: inter-word;
       hyphens: auto;
-      flex: 1;
+      margin-bottom: 4px;
     }
 
     .block-section {
@@ -1318,10 +1309,9 @@ async function main() {
     lessonPages.forEach((p) => {
       const footer = p.querySelector('.running-footer');
       const body = p.querySelector('.prose-body');
-      const cols = p.querySelector('.prose-columns');
       const proseEls = p.querySelectorAll('.block-prose');
-      const sections = p.querySelectorAll('.block-section');
-      if (proseEls.length === 0 || !footer || !body || !cols) return;
+      const sections = p.querySelectorAll('.block-section, .narrative-act');
+      if (proseEls.length === 0 || !footer || !body) return;
 
       let size = 11.0;
       let lh = 1.48;
@@ -1334,20 +1324,13 @@ async function main() {
 
       const checkOverflow = () => {
         const footerTop = footer.getBoundingClientRect().top;
-        const allContentElements = Array.from(p.querySelectorAll('*')).filter(
-          (el) =>
-            el !== footer &&
-            !footer.contains(el) &&
-            !['SCRIPT', 'STYLE', 'LINK'].includes(el.tagName),
+        const allChildren = Array.from(
+          p.querySelectorAll('p, .act-header, .block-header, .block-workbook-question, .narrative-act'),
         );
-        const maxBottom = Math.max(
-          ...allContentElements.map((el) => el.getBoundingClientRect().bottom),
-        );
-        const bodyDiff = body.scrollHeight - body.clientHeight;
-        const colDiff = cols.scrollHeight - cols.clientHeight;
-        const colOverflow = bodyDiff > 0 || colDiff > 0 || cols.scrollWidth > cols.clientWidth + 2;
+        const maxBottom = Math.max(...allChildren.map((el) => el.getBoundingClientRect().bottom));
+        const pageOverflow = p.scrollHeight > p.clientHeight;
         const footerCollision = maxBottom > footerTop - 8;
-        return colOverflow || footerCollision;
+        return pageOverflow || footerCollision;
       };
 
       while (checkOverflow() && size > 6.5) {
