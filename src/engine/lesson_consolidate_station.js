@@ -1120,6 +1120,22 @@ function renderLivingTimelineView(state, bodyEl) {
         </p>
       </div>
 
+      ${lt.fullMissionText ? `
+      <!-- Printed Workbook Task Prompt (100% Verbatim Synchronicity with Physical Print) -->
+      <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-left: 4.5px solid #0284c7; border-radius: 12px; padding: 14px 18px; margin-bottom: 22px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 6px;">
+          <span style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; color: #0369a1; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-book-open"></i> Printed Workbook Task &bull; ${lt.pageRef || 'Centrefold'}
+          </span>
+          <span style="font-size: 0.70rem; font-weight: 700; color: #166534; background: #dcfce7; border: 1px solid #bbf7d0; padding: 2px 8px; border-radius: 10px; display: inline-flex; align-items: center; gap: 4px;">
+            <i class="fa-solid fa-circle-check"></i> 100% Identical to Printed Workbook
+          </span>
+        </div>
+        <p style="margin: 0; font-family: 'Georgia', serif; font-size: 0.90rem; color: #1e293b; line-height: 1.52;">
+          ${lt.fullMissionText}
+        </p>
+      </div>` : ''}
+
       <!-- Dual-Pathway Living Timeline Choices -->
       <div style="margin-bottom: 22px;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
@@ -1149,6 +1165,7 @@ function renderLivingTimelineView(state, bodyEl) {
               </p>
 
               <!-- Specific Visual Sketch Ideas -->
+              ${lt.sketchIdeas && lt.sketchIdeas.length > 0 ? `
               <div style="background: #fffbeb; border: 1.5px solid #fef3c7; border-radius: 10px; padding: 12px; margin-bottom: 14px;">
                 <div style="font-size: 0.74rem; text-transform: uppercase; font-weight: 800; color: #92400e; letter-spacing: 0.05em; margin-bottom: 8px;">
                   Suggested Historical Symbols:
@@ -1160,7 +1177,7 @@ function renderLivingTimelineView(state, bodyEl) {
                     </div>
                   `).join('')}
                 </div>
-              </div>
+              </div>` : ''}
             </div>
 
             <div style="background: #fefce8; border: 1px dashed #fde047; border-radius: 8px; padding: 9px 12px; font-size: 0.8rem; color: #854d0e; line-height: 1.4;">
@@ -1186,11 +1203,15 @@ function renderLivingTimelineView(state, bodyEl) {
 
               <!-- 3 Structured Concept Nodes -->
               <div style="display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px;">
-                ${lt.branches.map((b) => `
+                ${lt.branches.map((b) => {
+                  const label = (typeof b === 'object' && b.label) ? b.label.trim() : '';
+                  const val = typeof b === 'object' ? (b.value || '') : b;
+                  return `
                   <div style="padding: 7px 11px; background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3.5px solid #0284c7; border-radius: 6px; font-size: 0.84rem; color: #1e293b; line-height: 1.4;">
-                    <span style="font-weight: 800; color: #0369a1;">${b.label}:</span> ${b.value}
+                    ${label ? `<span style="font-weight: 800; color: #0369a1;">${label}: </span>` : `<span style="color: #0284c7; font-weight: 800; margin-right: 4px;">&bull;</span> `}${val}
                   </div>
-                `).join('')}
+                `;
+                }).join('')}
               </div>
             </div>
 

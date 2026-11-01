@@ -18,25 +18,26 @@ export const WORKBOOK_TIMELINE_DATA = {
       "desc": "Following victory over Vikings at Stamford Bridge, Harold’s exhausted army forms a shield wall atop Senlac Hill; Norman cavalry feigned retreats shatter the line, Harold is killed, and Duke William seizes the crown.",
       "sketchPrompt": "Saxon shield wall atop Senlac Hill vs charging Norman cavalry",
       "sketchIdeas": [
-        "🛡️ Saxon locked shield wall",
-        "🐎 Charging Norman heavy cavalry",
-        "🏹 Norman archers & Senlac Hill"
+        "🛡️ shield wall",
+        "🐎 Norman cavalry",
+        "🏹 archers"
       ],
       "conceptTitle": "Hastings Conquest",
       "branches": [
         {
-          "label": "Causal Factor 1",
-          "value": "Stamford Bridge exhaustion (200-mile march)"
+          "label": "",
+          "value": "Stamford Bridge exhaustion"
         },
         {
-          "label": "Causal Factor 2",
-          "value": "Senlac Hill locked shield wall"
+          "label": "",
+          "value": "Senlac Hill shield wall"
         },
         {
-          "label": "Tactical Pivot",
-          "value": "Feigned retreat cavalry deception"
+          "label": "",
+          "value": "feigned retreat tactics"
         }
-      ]
+      ],
+      "fullMissionText": "Milestone 1 (1066): Choose (A) Creative Sketch: Saxon shield wall atop Senlac Hill vs charging Norman cavalry [🛡️ shield wall • 🐎 Norman cavalry • 🏹 archers] • OR • (B) Mind Map: \"Hastings Conquest\" (Stamford Bridge exhaustion, Senlac Hill shield wall, feigned retreat tactics)"
     },
     {
       "lessonIndex": 1,
@@ -48,25 +49,26 @@ export const WORKBOOK_TIMELINE_DATA = {
       "desc": "William crushes Anglo-Saxon resistance by systematically burning crops, salting fields, and slaughtering livestock across Yorkshire, starving over 100,000 people while erecting 500 timber motte castles and commissioning the exhaustive Domesday tax audit.",
       "sketchPrompt": "Motte castle overlooking salted Yorkshire fields, or Domesday ledger before Portchester keep",
       "sketchIdeas": [
-        "🏰 Motte-and-bailey timber castle",
-        "🔥 Harrying scorched-earth famine",
-        "📖 Domesday royal tax audit ledger"
+        "🏰 motte castle",
+        "🔥 Harrying famine",
+        "📖 Domesday ledger"
       ],
       "conceptTitle": "Norman Subjugation",
       "branches": [
         {
-          "label": "State Terror",
-          "value": "Harrying of the North (100,000 starved)"
+          "label": "",
+          "value": "Harrying of the North"
         },
         {
-          "label": "Military Dominance",
-          "value": "500 motte-and-bailey castles blitz"
+          "label": "",
+          "value": "500 motte castles blitz"
         },
         {
-          "label": "Administrative Grip",
-          "value": "1086 Domesday Book exhaustive tax audit"
+          "label": "",
+          "value": "1086 Domesday tax audit"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 2 & 3 (1069–1086): Choose (A) Creative Sketch: Motte castle overlooking salted Yorkshire fields, or Domesday ledger before Portchester keep [🏰 motte castle • 🔥 Harrying famine • 📖 Domesday ledger] • OR • (B) Mind Map: \"Norman Subjugation\" (Harrying of the North, 500 motte castles blitz, 1086 Domesday tax audit)"
     },
     {
       "lessonIndex": 2,
@@ -78,25 +80,26 @@ export const WORKBOOK_TIMELINE_DATA = {
       "desc": "Following a bitter clash over whether royal courts or church courts could try criminal priests, four of Henry II’s knights butcher Archbishop Becket on the cathedral altar steps; Becket’s shrine becomes Christendom’s greatest pilgrimage.",
       "sketchPrompt": "Archbishop Becket confronting four armed Norman knights before Canterbury altar steps",
       "sketchIdeas": [
-        "⛪ Canterbury cathedral arch",
-        "🗡️ Four drawn Norman swords",
-        "🕊️ Archbishop martyr cross"
+        "⛪ cathedral arch",
+        "🗡️ four drawn swords",
+        "🕊️ martyr cross"
       ],
       "conceptTitle": "Church vs Crown",
       "branches": [
         {
-          "label": "Legal Friction",
-          "value": "1164 Constitutions of Clarendon"
+          "label": "",
+          "value": "Clarendon constitutions"
         },
         {
-          "label": "Clerical Immunity",
-          "value": "Criminous clerks double jurisdiction"
+          "label": "",
+          "value": "criminous clerks dispute"
         },
         {
-          "label": "Altar Regicide",
-          "value": "29 Dec 1170 Becket martyrdom at Canterbury"
+          "label": "",
+          "value": "1170 Canterbury altar murder"
         }
-      ]
+      ],
+      "fullMissionText": "Milestone 4 (1170): Choose (A) Creative Sketch: Archbishop Becket confronting four armed Norman knights before Canterbury altar steps [⛪ cathedral arch • 🗡️ four drawn swords • 🕊️ martyr cross] • OR • (B) Mind Map: \"Church vs Crown\" (Clarendon constitutions, criminous clerks dispute, 1170 Canterbury altar murder)"
     },
     {
       "lessonIndex": 3,
@@ -108,25 +111,26 @@ export const WORKBOOK_TIMELINE_DATA = {
       "desc": "Bankrupted by military defeat at Bouvines, King John is forced by rebel barons at Runnymede to seal Magna Carta; Clause 39 guarantees that no free man can be imprisoned without lawful trial, leading to Simon de Montfort summoning the first elected Commons.",
       "sketchPrompt": "King John sealing Magna Carta at Runnymede, or elected burgesses gathering at Westminster",
       "sketchIdeas": [
-        "📜 Magna Carta wax seal",
-        "🛡️ Armed rebel baronial coalition",
-        "🏛️ de Montfort 1265 Parliament"
+        "📜 Magna Carta seal",
+        "🛡️ armed rebel barons",
+        "🏛️ de Montfort Commons"
       ],
-      "conceptTitle": "Crown vs Barons",
+      "conceptTitle": "Limiting Crown Power",
       "branches": [
         {
-          "label": "Fiscal Crisis",
-          "value": "Loss of Normandy & Bouvines disaster"
+          "label": "",
+          "value": "Clause 39 habeas corpus"
         },
         {
-          "label": "Charter Rights",
-          "value": "1215 Runnymede Clause 39 lawful trial rights"
+          "label": "",
+          "value": "1215 Runnymede charter"
         },
         {
-          "label": "Parliamentary Seed",
-          "value": "1265 Simon de Montfort elected Commons"
+          "label": "",
+          "value": "1265 Commons parliament"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 5 & 6 (1215–1265): Choose (A) Creative Sketch: King John sealing Magna Carta at Runnymede, or elected burgesses gathering at Westminster [📜 Magna Carta seal • 🛡️ armed rebel barons • 🏛️ de Montfort Commons] • OR • (B) Mind Map: \"Limiting Crown Power\" (Clause 39 habeas corpus, 1215 Runnymede charter, 1265 Commons parliament)"
     },
     {
       "lessonIndex": 4,
@@ -135,28 +139,29 @@ export const WORKBOOK_TIMELINE_DATA = {
       "date": "1348–1381",
       "title": "The Black Death & The Peasants’ Revolt",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "The Black Death eliminates up to 50% of England’s population, creating severe agricultural labour shortages; when lords attempt to cap wages with the Statute of Labourers, peasants march on London under Wat Tyler demanding an end to serfdom.",
+      "desc": "The Black Death wipes out nearly half of England’s population, triggering a severe labour shortage that empowers peasants to demand higher cash wages; Parliament’s oppressive Poll Tax sparks the 1381 Peasants’ Revolt.",
       "sketchPrompt": "Plague cottage marked with red cross, or young Richard II facing Wat Tyler at Smithfield",
       "sketchIdeas": [
-        "💀 Black Death 50% mortality",
-        "🌾 Peasant wage & freedom demands",
-        "🚩 1381 Peasants’ Revolt march"
+        "💀 Black Death mortality",
+        "🌾 wage demand",
+        "🚩 1381 Peasants' Revolt"
       ],
-      "conceptTitle": "Crisis of Feudalism",
+      "conceptTitle": "Shattering of Serfdom",
       "branches": [
         {
-          "label": "Demographic Shock",
-          "value": "1348 Black Death catastrophic mortality"
+          "label": "",
+          "value": "1348 demographic collapse"
         },
         {
-          "label": "Wage Capping",
-          "value": "1351 Statute of Labourers repression"
+          "label": "",
+          "value": "labour shortage & cash wages"
         },
         {
-          "label": "Armed Insurrection",
-          "value": "1381 Poll Tax rebellion & march on London"
+          "label": "",
+          "value": "1381 Poll Tax rebellion"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 7 & 8 (1348–1381): Choose (A) Creative Sketch: Plague cottage marked with red cross, or young Richard II facing Wat Tyler at Smithfield [💀 Black Death mortality • 🌾 wage demand • 🚩 1381 Peasants' Revolt] • OR • (B) Mind Map: \"Shattering of Serfdom\" (1348 demographic collapse, labour shortage & cash wages, 1381 Poll Tax rebellion)"
     }
   ],
   "monarchy_religion_power": [
@@ -170,146 +175,151 @@ export const WORKBOOK_TIMELINE_DATA = {
       "desc": "Martin Luther sparks the European Reformation against church corruption; King Henry VIII breaks with Rome over his annulment, declaring himself Supreme Head of the Church of England and dissolving 800 monasteries.",
       "sketchPrompt": "Luther nailing 95 Theses to Wittenberg door, or Henry VIII severing papal ties while Cromwell melts abbey lead",
       "sketchIdeas": [
-        "🔨 Luther’s reform hammer",
-        "📜 95 Theses nailed to door",
-        "✂️ Royal shears severing Rome",
-        "🛒 Melted abbey lead"
+        "🔨 hammer",
+        "📜 95 Theses",
+        "✂️ royal shears",
+        "🛒 melted lead"
       ],
       "conceptTitle": "Reformation & Royal Supremacy",
       "branches": [
         {
-          "label": "Indulgence Protest",
-          "value": "Corrupt indulgence trade & 95 Theses"
+          "label": "",
+          "value": "corrupt indulgence trade"
         },
         {
-          "label": "Royal Supremacy",
-          "value": "1534 Act of Supremacy (King is Supreme Head)"
+          "label": "",
+          "value": "1534 Act of Supremacy"
         },
         {
-          "label": "Monastic Wealth",
-          "value": "Dissolution of 800 monasteries"
+          "label": "",
+          "value": "dissolution of 800 monasteries"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 1 & 2 (1517–1540): Choose (A) Creative Sketch: Luther nailing 95 Theses to Wittenberg door, or Henry VIII severing papal ties while Cromwell melts abbey lead [🔨 hammer • 📜 95 Theses • ✂️ royal shears • 🛒 melted lead] • OR • (B) Mind Map: \"Reformation & Royal Supremacy\" (corrupt indulgence trade, 1534 Act of Supremacy, dissolution of 800 monasteries)"
     },
     {
       "lessonIndex": 1,
       "lessonId": "lesson_2",
       "milestoneBadge": "Milestone 3 (1559)",
       "date": "1559",
-      "title": "The Elizabethan Religious Settlement (Via Media)",
+      "title": "The Elizabethan Middle Way",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Queen Elizabeth I navigates between Catholic traditionalists and radical Puritans, establishing the Middle Way: English Protestant liturgy with moderate traditional ceremonies, enforced through the Act of Uniformity and recusancy fines.",
-      "sketchPrompt": "Queen Elizabeth balancing on a tightrope labelled ‘Via Media’, holding English Bible and crucifix",
+      "desc": "Queen Elizabeth I establishes the Elizabethan Religious Settlement via the 1559 Act of Supremacy and Uniformity, navigating a middle way ('via media') between Protestant reform and Catholic tradition.",
+      "sketchPrompt": "Queen Elizabeth balancing on a tightrope labelled 'Via Media', holding English Bible and crucifix",
       "sketchIdeas": [
-        "🎪 Tightrope walker over religious abyss",
-        "📖 English Book of Common Prayer",
-        "✝️ Traditional ceremonial crucifix"
+        "🎪 tightrope walker",
+        "📖 English Bible",
+        "⚖️ crucifix balance"
       ],
       "conceptTitle": "Elizabethan Middle Way",
       "branches": [
         {
-          "label": "Royal Compromise",
-          "value": "1559 Act of Supremacy (Supreme Governor)"
+          "label": "",
+          "value": "1559 Act of Supremacy"
         },
         {
-          "label": "Uniform Worship",
-          "value": "1559 Book of Common Prayer"
+          "label": "",
+          "value": "Book of Common Prayer uniformity"
         },
         {
-          "label": "Financial Penalty",
-          "value": "1-shilling weekly recusancy fines"
+          "label": "",
+          "value": "recusancy fines"
         }
-      ]
+      ],
+      "fullMissionText": "Milestone 3 (1559): Choose (A) Creative Sketch: Queen Elizabeth balancing on a tightrope labelled 'Via Media', holding English Bible and crucifix [🎪 tightrope walker • 📖 English Bible • ⚖️ crucifix balance] • OR • (B) Mind Map: \"Elizabethan Middle Way\" (1559 Act of Supremacy, Book of Common Prayer uniformity, recusancy fines)"
     },
     {
       "lessonIndex": 2,
       "lessonId": "lesson_3",
       "milestoneBadge": "Milestone 4 (1588)",
       "date": "1588",
-      "title": "The Defeat of the Spanish Armada",
+      "title": "The Spanish Armada & Standoff",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Philip II dispatches 130 warships to invade England; English commanders launch eight blazing fireships into the Spanish crescent at Calais at midnight, scattering the Armada before storms drive the galleons into shipwreck.",
+      "desc": "Philip II launches the 130-ship Spanish Armada to restore Catholicism to England; English fireships at Calais scatter the crescent fleet, followed by the decisive battle of Gravelines and the Protestant Wind.",
       "sketchPrompt": "Eight blazing English fireships crashing into anchored Spanish Armada at Calais at midnight",
       "sketchIdeas": [
-        "🔥 Eight blazing fireships",
-        "⚓ Severed anchor cables",
-        "⛵ Scattering Spanish galleons"
+        "🔥 blazing sails",
+        "⚓ cut anchor cables",
+        "⛵ scattering galleons"
       ],
       "conceptTitle": "Defeat of the Armada",
       "branches": [
         {
-          "label": "Midnight Panic",
-          "value": "Calais Roads fireship attack"
+          "label": "",
+          "value": "Calais fireships panic"
         },
         {
-          "label": "Gunnery Standoff",
-          "value": "Battle of Gravelines close-range broadsides"
+          "label": "",
+          "value": "Gravelines standoff broadsides"
         },
         {
-          "label": "Providential Storms",
-          "value": "Protestant Wind shipwrecks in Scotland & Ireland"
+          "label": "",
+          "value": "Protestant Wind storms"
         }
-      ]
+      ],
+      "fullMissionText": "Milestone 4 (1588): Choose (A) Creative Sketch: Eight blazing English fireships crashing into anchored Spanish Armada at Calais at midnight [🔥 blazing sails • ⚓ cut anchor cables • ⛵ scattering galleons] • OR • (B) Mind Map: \"Defeat of the Armada\" (Calais fireships panic, Gravelines standoff broadsides, Protestant Wind storms)"
     },
     {
       "lessonIndex": 3,
       "lessonId": "lesson_4",
       "milestoneBadge": "Milestones 5 & 6 (1629–1649)",
       "date": "1629–1649",
-      "title": "Personal Rule, Civil War & Regicide",
+      "title": "Road to Regicide & Civil War",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Charles I rules without Parliament for eleven years, extracting illegal Ship Money taxes; escalating clashes spark the English Civil War, culminating in the victory of Cromwell’s New Model Army and the public execution of the King.",
-      "sketchPrompt": "Royal sheriff demanding Ship Money in an inland field, or executioner’s chopping block outside Whitehall",
+      "desc": "Charles I's eleven years of Personal Rule and religious innovations trigger the English Civil War, culminating in Cromwell's New Model Army victory at Naseby and the public execution of the King.",
+      "sketchPrompt": "Royal sheriff demanding Ship Money in an inland field, or executioner's chopping block outside Whitehall",
       "sketchIdeas": [
-        "💰 Inland Ship Money tax collection",
-        "🪓 Executioner’s chopping block",
-        "👑 Fallen crown on black scaffold"
+        "💰 inland Ship Money",
+        "🪓 chopping block",
+        "👑 fallen crown"
       ],
       "conceptTitle": "Road to Regicide",
       "branches": [
         {
-          "label": "Personal Rule",
-          "value": "11 Years Personal Rule (1629–1640)"
+          "label": "",
+          "value": "11 years Personal Rule"
         },
         {
-          "label": "Civil War Decider",
-          "value": "New Model Army victory at Naseby (1645)"
+          "label": "",
+          "value": "Battle of Naseby New Model Army"
         },
         {
-          "label": "Public Regicide",
-          "value": "30 Jan 1649 Charles I beheading at Whitehall"
+          "label": "",
+          "value": "30 Jan 1649 Charles I execution"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 5 & 6 (1629–1649): Choose (A) Creative Sketch: Royal sheriff demanding Ship Money in an inland field, or executioner's chopping block outside Whitehall [💰 inland Ship Money • 🪓 chopping block • 👑 fallen crown] • OR • (B) Mind Map: \"Road to Regicide\" (11 years Personal Rule, Battle of Naseby New Model Army, 30 Jan 1649 Charles I execution)"
     },
     {
       "lessonIndex": 4,
       "lessonId": "lesson_5",
       "milestoneBadge": "Milestones 7 & 8 (1688–1689)",
       "date": "1688–1689",
-      "title": "The Glorious Revolution & The Bill of Rights",
+      "title": "The Glorious Revolution & Constitutional Monarchy",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Fearing a permanent Catholic dynasty under James II, Parliament invites William of Orange to invade; James flees, and Parliament establishes constitutional monarchy by making William and Mary sign the 1689 Bill of Rights.",
+      "desc": "Fearing a Catholic dynasty under James II, the Immortal Seven invite William of Orange to stage a Dutch invasion; Parliament presents the 1689 Bill of Rights, establishing constitutional monarchy.",
       "sketchPrompt": "James II throwing the Great Seal into the foggy Thames, or Parliament presenting clipped crown to William and Mary",
       "sketchIdeas": [
-        "🚣 Rowboat in nighttime Thames fog",
-        "🌊 Sinking Great Seal in river",
-        "📜 1689 Bill of Rights contract"
+        "🚣 rowboat in fog",
+        "🌊 sinking Great Seal",
+        "📜 Bill of Rights contract"
       ],
       "conceptTitle": "Constitutional Monarchy",
       "branches": [
         {
-          "label": "Dynastic Panic",
-          "value": "Birth of James II’s Catholic heir (1688)"
+          "label": "",
+          "value": "fears of Catholic dynasty"
         },
         {
-          "label": "Dutch Landing",
-          "value": "William of Orange invasion at Torbay"
+          "label": "",
+          "value": "1688 Dutch invasion"
         },
         {
-          "label": "Crown Constraints",
-          "value": "1689 Bill of Rights (Parliamentary supremacy)"
+          "label": "",
+          "value": "1689 Bill of Rights constraints"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 7 & 8 (1688–1689): Choose (A) Creative Sketch: James II throwing the Great Seal into the foggy Thames, or Parliament presenting clipped crown to William and Mary [🚣 rowboat in fog • 🌊 sinking Great Seal • 📜 Bill of Rights contract] • OR • (B) Mind Map: \"Constitutional Monarchy\" (fears of Catholic dynasty, 1688 Dutch invasion, 1689 Bill of Rights constraints)"
     }
   ],
   "great_war_part2": [
@@ -318,152 +328,157 @@ export const WORKBOOK_TIMELINE_DATA = {
       "lessonId": "lesson_1",
       "milestoneBadge": "Milestone 1 (August 1914)",
       "date": "August 1914",
-      "title": "Recruitment & Voluntary Mobilisation",
+      "title": "Kitchener’s Call & Pals Battalions",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Lord Kitchener issues his iconic recruiting appeal, drawing over 750,000 volunteers in eight weeks as young men enlist in local Pals Battalions amid patriotic fervor and social pressure.",
+      "desc": "Lord Kitchener’s iconic finger-pointing poster mobilises 750,000 volunteers in eight weeks; men enlist together in civic Pals Battalions (including the Pompey Pals), driven by patriotism and social pressure.",
       "sketchPrompt": "Lord Kitchener pointing finger and voluntary recruitment queues outside town halls",
       "sketchIdeas": [
-        "👉 Kitchener pointing finger",
-        "📜 Enlistment papers & King’s Shilling",
-        "🚶‍♂️ Civic queue of volunteers"
+        "👉 pointing finger",
+        "📜 enlistment papers",
+        "🚶‍♂️ queue of volunteers"
       ],
-      "conceptTitle": "Voluntary Mobilisation",
+      "conceptTitle": "1914 Voluntary Mobilisation",
       "branches": [
         {
-          "label": "Recruitment Wave",
-          "value": "750,000 recruits in first 8 weeks"
+          "label": "",
+          "value": "750,000 recruits in 8 weeks"
         },
         {
-          "label": "Civic Bonds",
-          "value": "Pals Battalions (e.g. Pompey Pals)"
+          "label": "",
+          "value": "civic Pals Battalions e.g. Pompey Pals"
         },
         {
-          "label": "Social Coercion",
-          "value": "White feather shaming & peer pressure"
+          "label": "",
+          "value": "King’s Shilling & white feather pressure"
         }
-      ]
+      ],
+      "fullMissionText": "Milestone 1 (August 1914): Choose (A) Creative Sketch: Lord Kitchener pointing finger and voluntary recruitment queues outside town halls [👉 pointing finger • 📜 enlistment papers • 🚶‍♂️ queue of volunteers] • OR • (B) Mind Map: \"1914 Voluntary Mobilisation\" (750,000 recruits in 8 weeks, civic Pals Battalions e.g. Pompey Pals, King’s Shilling & white feather pressure)"
     },
     {
       "lessonIndex": 1,
       "lessonId": "lesson_2",
       "milestoneBadge": "Milestones 3 & 4 (1916)",
       "date": "1916",
-      "title": "The Battle of the Somme & Armoured Warfare",
+      "title": "The Somme Offensive & The First Tanks",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "On 1 July 1916, the British Army suffers 57,470 casualties on the worst day in its history after artillery fails to destroy German deep dugouts; in September, tanks make their world debut at Flers-Courcelette.",
+      "desc": "On 1 July 1916, Britain suffers 57,470 casualties on the first day of the Somme after artillery fails to cut German barbed wire; in September at Flers-Courcelette, Britain deploys the rhomboid Mark I tank to break trench deadlock.",
       "sketchPrompt": "German Maxim machine-gun redoubt firing across uncut wire, or rhomboid Mark I tank crushing trenches",
       "sketchIdeas": [
-        "🧱 Concrete bunker & uncut wire",
-        "⚙️ Spandau Maxim machine gun",
-        "🚜 Rhomboid Mark I British tank"
+        "🧱 concrete bunker",
+        "⚙️ Maxim gun",
+        "🚜 rhomboid tank"
       ],
       "conceptTitle": "Somme & Armoured Breakthrough",
       "branches": [
         {
-          "label": "Opening Bloodbath",
-          "value": "1 July 1916: 57,470 British casualties"
+          "label": "",
+          "value": "1 July 57,470 casualties"
         },
         {
-          "label": "Bombardment Failure",
-          "value": "Artillery failed to cut barbed wire or shelters"
+          "label": "",
+          "value": "failure of 7-day bombardment"
         },
         {
-          "label": "Armoured Innovation",
-          "value": "Sept 1916 first tank deployment at Flers"
+          "label": "",
+          "value": "September 1916 first tank deployment at Flers-Courcelette"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 3 & 4 (1916): Choose (A) Creative Sketch: German Maxim machine-gun redoubt firing across uncut wire, or rhomboid Mark I tank crushing trenches [🧱 concrete bunker • ⚙️ Maxim gun • 🚜 rhomboid tank] • OR • (B) Mind Map: \"Somme & Armoured Breakthrough\" (1 July 57,470 casualties, failure of 7-day bombardment, September 1916 first tank deployment at Flers-Courcelette)"
     },
     {
       "lessonIndex": 2,
       "lessonId": "lesson_3",
       "milestoneBadge": "Milestones 2 & 6 (1915 & 1917–18)",
       "date": "1915 & 1917–18",
-      "title": "Empire Contribution & Global Mobilisation",
+      "title": "Empire Soldiers on the Western Front & Gallipoli",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Over four million non-white and Dominion soldiers serve the British Empire, including 1.5 million Indian troops fighting in Flanders and Mesopotamia, while ANZAC forces forge national identity on the cliffs of Gallipoli.",
+      "desc": "Over 1.5 million Indian soldiers and ANZAC troops fight across Flanders and Gallipoli; colonial regiments endure lethal conditions, earning Victoria Crosses while securing critical imperial supply lines.",
       "sketchPrompt": "Indian cavalry and ANZAC troops landing on steep cliffs under fire, or troopships crossing oceans with Victoria Cross",
       "sketchIdeas": [
-        "🌊 Wooden landing craft under fire",
-        "⛰️ Gallipoli steep coastal cliffs",
+        "🌊 landing boat",
+        "⛰️ Gallipoli cliffs",
         "👳‍♂️ Indian turban & slouch hat",
-        "🏅 Victoria Cross medal"
+        "🎖️ Victoria Cross"
       ],
       "conceptTitle": "Global Empire Mobilisation",
       "branches": [
         {
-          "label": "Indian Army Service",
-          "value": "1.5 million soldiers in Europe & Middle East"
+          "label": "",
+          "value": "1.5 million Indian soldiers in Flanders/Mesopotamia"
         },
         {
-          "label": "ANZAC Sacrifice",
-          "value": "Gallipoli forge of Australian/NZ nationhood"
+          "label": "",
+          "value": "ANZAC Gallipoli forge"
         },
         {
-          "label": "Global Logistical Edge",
-          "value": "4 million non-white troops & Chinese Labour Corps"
+          "label": "",
+          "value": "4 million non-white troops/labourers"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 2 & 6 (1915 & 1917–18): Choose (A) Creative Sketch: Indian cavalry and ANZAC troops landing on steep cliffs under fire, or troopships crossing oceans with Victoria Cross [🌊 landing boat • ⛰️ Gallipoli cliffs • 👳‍♂️ Indian turban & slouch hat • 🎖️ Victoria Cross] • OR • (B) Mind Map: \"Global Empire Mobilisation\" (1.5 million Indian soldiers in Flanders/Mesopotamia, ANZAC Gallipoli forge, 4 million non-white troops/labourers)"
     },
     {
       "lessonIndex": 3,
       "lessonId": "lesson_4",
       "milestoneBadge": "Milestone 5 (1916–1917)",
       "date": "1916–1917",
-      "title": "The Home Front & Total War",
+      "title": "The Home Front: Munitionettes & Conscription",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Total war transforms civilian life: Parliament introduces conscription in 1916, one million female munitions workers produce 80% of British shells, and German submarine blockades force nationwide food rationing.",
-      "sketchPrompt": "‘Canary Girls’ loading heavy artillery shells beside a queue holding ration books",
+      "desc": "Over one million women enter munitions factories as \"Canary Girls\", handling toxic TNT to manufacture 80% of British shells; German U-boat blockades force strict national rationing while Parliament introduces conscription.",
+      "sketchPrompt": "\"Canary Girls\" loading heavy artillery shells beside a queue holding ration books",
       "sketchIdeas": [
-        "🏭 Munitions factory smokestacks",
-        "💣 Heavy artillery shell (Canary workers)",
-        "🎫 Civilian wartime ration book"
+        "🏭 munitions factory",
+        "💣 artillery shell",
+        "📕 ration book"
       ],
       "conceptTitle": "Home Front & Total War",
       "branches": [
         {
-          "label": "Compulsory Service",
+          "label": "",
           "value": "1916 Military Service Act conscription"
         },
         {
-          "label": "Munitions Labour",
-          "value": "1 million women producing 80% of shells"
+          "label": "",
+          "value": "1 million female munitions workers producing 80% shells"
         },
         {
-          "label": "U-Boat Blockade",
-          "value": "German submarine warfare & food rationing"
+          "label": "",
+          "value": "German U-boat blockade rationing"
         }
-      ]
+      ],
+      "fullMissionText": "Milestone 5 (1916–1917): Choose (A) Creative Sketch: \"Canary Girls\" loading heavy artillery shells beside a queue holding ration books [🏭 munitions factory • 💣 artillery shell • 📕 ration book] • OR • (B) Mind Map: \"Home Front & Total War\" (1916 Military Service Act conscription, 1 million female munitions workers producing 80% shells, German U-boat blockade rationing)"
     },
     {
       "lessonIndex": 4,
       "lessonId": "lesson_5",
       "milestoneBadge": "Milestones 7 & 8 (1918 & 1919)",
       "date": "1918 & 1919",
-      "title": "The Armistice & The Treaty of Versailles",
+      "title": "The Hundred Days, Armistice & Versailles",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Allied combined arms break the Hindenburg Line, forcing Germany to sign the Armistice at 11:00 am on 11 November 1918; the 1919 Treaty of Versailles imposes Article 231 War Guilt and £6.6 billion reparations.",
+      "desc": "Allied combined-arms tactics breach the Hindenburg Line in the Hundred Days Offensive, forcing Germany to sign the Armistice in Foch’s railway carriage on 11 November 1918 before signing the punitive Treaty of Versailles.",
       "sketchPrompt": "Foch’s railway carriage at 11:00 am, or signing the treaty under arched mirrors in the Hall of Mirrors",
       "sketchIdeas": [
-        "🚂 Compiègne railway carriage",
-        "⏰ 11:00 am Armistice clock",
-        "🏛️ Versailles Hall of Mirrors",
-        "📜 Article 231 War Guilt clause"
+        "🚂 railway carriage",
+        "⏰ 11:00 am",
+        "🏛️ Hall of Mirrors",
+        "📜 Article 231"
       ],
-      "conceptTitle": "Armistice & Versailles",
+      "conceptTitle": "Armistice & Treaty of Versailles",
       "branches": [
         {
-          "label": "Combined Arms Breakthrough",
-          "value": "Hundred Days Offensive & Hindenburg Line"
+          "label": "",
+          "value": "11 Nov 1918 Hundred Days & Hindenburg Line"
         },
         {
-          "label": "War Guilt Stigma",
-          "value": "Article 231 assigning total moral blame"
+          "label": "",
+          "value": "Article 231 War Guilt & £6.6bn reparations"
         },
         {
-          "label": "Economic Sanctions",
-          "value": "£6.6 billion reparations & 13% territory loss"
+          "label": "",
+          "value": "Keynes \"Carthaginian Peace\" warning"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 7 & 8 (1918 & 1919): Choose (A) Creative Sketch: Foch’s railway carriage at 11:00 am, or signing the treaty under arched mirrors in the Hall of Mirrors [🚂 railway carriage • ⏰ 11:00 am • 🏛️ Hall of Mirrors • 📜 Article 231] • OR • (B) Mind Map: \"Armistice & Treaty of Versailles\" (11 Nov 1918 Hundred Days & Hindenburg Line, Article 231 War Guilt & £6.6bn reparations, Keynes \"Carthaginian Peace\" warning)"
     }
   ],
   "australia": [
@@ -472,60 +487,54 @@ export const WORKBOOK_TIMELINE_DATA = {
       "lessonId": "lesson_1",
       "milestoneBadge": "Milestones 1 & 2 (1770–1788)",
       "date": "1770–1788",
-      "title": "Cook’s Voyage & The First Fleet Invasion",
+      "title": "First Nations Sovereignty & The First Fleet",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "James Cook charts Botany Bay in 1770, claiming the continent under the legal fiction of terra nullius; in 1788, the First Fleet lands 11 ships carrying over 700 convicts to found Sydney penal colony.",
-      "sketchPrompt": "Ship anchor crossed with Aboriginal hardwood shield / Union Jack beside convict leg-shackles",
-      "sketchIdeas": [
-        "⚓ Ship anchor & hardwood shield",
-        "🇬🇧 Union Jack flag planted",
-        "⛓️ Convict iron leg-shackles"
-      ],
+      "desc": "Captain James Cook claims the eastern coast under the legal fiction of terra nullius; in 1788, Governor Arthur Phillip lands the First Fleet at Sydney Cove, dispossessing the Eora people and establishing a penal colony.",
+      "sketchPrompt": "draw ship anchor crossed with Aboriginal hardwood shield / Union Jack beside convict leg-shackles;",
+      "sketchIdeas": [],
       "conceptTitle": "Imperial Invasion",
       "branches": [
         {
-          "label": "Maritime Voyage",
-          "value": "Cook & Tupaia 1770 voyage on Endeavour"
+          "label": "",
+          "value": "Cook/Tupaia 1770"
         },
         {
-          "label": "Penal Colony",
-          "value": "1788 First Fleet arrival at Sydney Cove"
+          "label": "",
+          "value": "First Fleet 1788"
         },
         {
-          "label": "Legal Fiction",
-          "value": "Terra nullius doctrine of uninhabited land"
+          "label": "",
+          "value": "terra nullius legal fiction"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 1 & 2 (1770–1788): Choose (A) Creative Sketch: draw ship anchor crossed with Aboriginal hardwood shield / Union Jack beside convict leg-shackles; • OR • (B) Mind Map: \"Imperial Invasion\" (Cook/Tupaia 1770, First Fleet 1788, terra nullius legal fiction)."
     },
     {
       "lessonIndex": 1,
       "lessonId": "lesson_2",
       "milestoneBadge": "Milestone 3 (1789)",
       "date": "1789",
-      "title": "The Gal-Galla Smallpox Epidemic",
+      "title": "The 1789 Smallpox Catastrophe",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "In April 1789, a catastrophic smallpox epidemic (gal-galla) sweeps through the Eora clans around Sydney Harbour, killing 50–70% of the Indigenous population and shattering ancient oral kinship structures.",
-      "sketchPrompt": "Empty bark canoe drifting on water beneath a weeping eucalyptus branch",
-      "sketchIdeas": [
-        "🛶 Empty bark canoe drifting",
-        "🌿 Weeping eucalyptus branches",
-        "💀 Deserted coastal beach camps"
-      ],
+      "desc": "In 1789, a catastrophic outbreak of smallpox (gal-galla) decimates the Eora population around Sydney, killing 50–70% of Indigenous people and shattering traditional leadership, spiritual lore, and clan structures.",
+      "sketchPrompt": "draw an empty bark canoe drifting on water beneath a weeping eucalyptus branch;",
+      "sketchIdeas": [],
       "conceptTitle": "Biological Catastrophe",
       "branches": [
         {
-          "label": "Epidemic Outbreak",
-          "value": "April 1789 gal-galla smallpox virus"
+          "label": "",
+          "value": "gal-galla smallpox epidemic"
         },
         {
-          "label": "Catastrophic Loss",
-          "value": "50% to 70% Eora population mortality"
+          "label": "",
+          "value": "50–70% Eora mortality"
         },
         {
-          "label": "Oral Trauma",
-          "value": "Loss of songline elders & kinship links"
+          "label": "",
+          "value": "loss of law-keepers/elders"
         }
-      ]
+      ],
+      "fullMissionText": "Milestone 3 (1789): Choose (A) Creative Sketch: draw an empty bark canoe drifting on water beneath a weeping eucalyptus branch; • OR • (B) Mind Map: \"Biological Catastrophe\" (gal-galla smallpox epidemic, 50–70% Eora mortality, loss of law-keepers/elders)."
     },
     {
       "lessonIndex": 2,
@@ -534,28 +543,25 @@ export const WORKBOOK_TIMELINE_DATA = {
       "date": "1797",
       "title": "Pemulwuy’s Bidjigal Frontier Resistance",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Bidjigal warrior Pemulwuy leads a twelve-year guerrilla resistance campaign against British pastoral expansion, burning colonial crops and leading 100 warriors in the armed 1797 Battle of Parramatta.",
-      "sketchPrompt": "Barbed hunting spear crossed with a burning colonial wheat sheaf and shield",
-      "sketchIdeas": [
-        "🗡️ Barbed hardwood hunting spear",
-        "🔥 Burning colonial wheat sheaf",
-        "🛡️ Ochre-painted warrior shield"
-      ],
-      "conceptTitle": "Pemulwuy’s Resistance",
+      "desc": "Bidjigal warrior Pemulwuy leads a twelve-year guerrilla resistance campaign against British colonial expansion across the Hawkesbury and Parramatta, burning colonial crops and defying musket fire until his betrayal in 1802.",
+      "sketchPrompt": "draw a barbed hunting spear crossed with a burning colonial wheat sheaf and shield;",
+      "sketchIdeas": [],
+      "conceptTitle": "Pemulwuy's Resistance",
       "branches": [
         {
-          "label": "Guerrilla Campaign",
-          "value": "Bidjigal 12-year resistance campaign"
+          "label": "",
+          "value": "Bidjigal guerrilla war"
         },
         {
-          "label": "Pastoral Sabotage",
-          "value": "Burning crops & driving off livestock"
+          "label": "",
+          "value": "burning crops/flocks"
         },
         {
-          "label": "Armed Stand",
-          "value": "1797 Battle of Parramatta confrontation"
+          "label": "",
+          "value": "1797 Battle of Parramatta"
         }
-      ]
+      ],
+      "fullMissionText": "Milestone 4 (1797): Choose (A) Creative Sketch: draw a barbed hunting spear crossed with a burning colonial wheat sheaf and shield; • OR • (B) Mind Map: \"Pemulwuy's Resistance\" (Bidjigal guerrilla war, burning crops/flocks, 1797 Battle of Parramatta)."
     },
     {
       "lessonIndex": 3,
@@ -564,28 +570,25 @@ export const WORKBOOK_TIMELINE_DATA = {
       "date": "1828–1838",
       "title": "The Black War & The Myall Creek Massacre",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Governor Arthur declares martial law in Van Diemen’s Land during the Black War; in 1838, eleven stockmen slaughter 28 unarmed Indigenous people at Myall Creek, leading to seven perpetrators being hanged.",
-      "sketchPrompt": "Proclamation board pinned to gum tree / magistrate’s gavel on tethering rope",
-      "sketchIdeas": [
-        "📜 Proclamation board on gum tree",
-        "⚖️ Royal judicial gavel & noose",
-        "🐎 Stockmen riders with tethering rope"
-      ],
+      "desc": "In Van Diemen’s Land, Governor Arthur declares martial law and orders the 1830 Black Line; in New South Wales, the 1838 Myall Creek Massacre results in the unprecedented trial and execution of white stockmen for murdering Indigenous people.",
+      "sketchPrompt": "draw proclamation board pinned to gum tree / magistrate's gavel on tethering rope;",
+      "sketchIdeas": [],
       "conceptTitle": "Frontier Warfare",
       "branches": [
         {
-          "label": "Van Diemen’s Land Conflict",
-          "value": "1828 Martial Law & 1830 Black Line"
+          "label": "",
+          "value": "Tasmanian martial law 1828"
         },
         {
-          "label": "Myall Creek Atrocity",
-          "value": "1838 massacre of 28 unarmed Wirrayaraay"
+          "label": "",
+          "value": "1830 Black Line"
         },
         {
-          "label": "Judicial Precedent",
-          "value": "First execution of white stockmen for murder"
+          "label": "",
+          "value": "1838 Myall Creek hanging of stockmen"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 5 & 6 (1828–1838): Choose (A) Creative Sketch: draw proclamation board pinned to gum tree / magistrate's gavel on tethering rope; • OR • (B) Mind Map: \"Frontier Warfare\" (Tasmanian martial law 1828, 1830 Black Line, 1838 Myall Creek hanging of stockmen)."
     },
     {
       "lessonIndex": 4,
@@ -594,29 +597,25 @@ export const WORKBOOK_TIMELINE_DATA = {
       "date": "1851–1854",
       "title": "The Gold Rush & The Eureka Stockade",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Gold discoveries in Ballarat draw 500,000 migrants to Victoria; oppressive 30-shilling monthly licence taxes provoke diggers to swear allegiance to the Southern Cross and fight the 1854 Eureka Stockade uprising.",
-      "sketchPrompt": "Miner’s pickaxe crossed with gold wash pan / Eureka Southern Cross flag flying over wooden stockade",
-      "sketchIdeas": [
-        "⛏️ Crossed miner’s pickaxes",
-        "🪙 Gold wash pan with nuggets",
-        "⭐ Eureka Southern Cross blue flag",
-        "🪵 Wooden defensive stockade"
-      ],
+      "desc": "The 1851 gold rush transforms the Australian economy; oppressive monthly mining licence fees spark the 1854 Eureka Stockade rebellion in Ballarat, leading directly to the introduction of the secret ballot and democratic reform.",
+      "sketchPrompt": "draw miner’s pickaxe crossed with gold wash pan / Eureka Southern Cross flag flying over wooden stockade;",
+      "sketchIdeas": [],
       "conceptTitle": "Gold & Democracy",
       "branches": [
         {
-          "label": "Demographic Boom",
-          "value": "1851 Ballarat rush & 500,000 diggers"
+          "label": "",
+          "value": "1851 Ballarat rush"
         },
         {
-          "label": "Licence Tax Hunt",
-          "value": "Oppressive 30-shilling monthly fee"
+          "label": "",
+          "value": "30-shilling licence tax"
         },
         {
-          "label": "Democratic Spark",
-          "value": "1854 Eureka Stockade & secret ballot"
+          "label": "",
+          "value": "1854 Eureka armed uprising & ballot"
         }
-      ]
+      ],
+      "fullMissionText": "Milestones 7 & 8 (1851–1854): Choose (A) Creative Sketch: draw miner’s pickaxe crossed with gold wash pan / Eureka Southern Cross flag flying over wooden stockade; • OR • (B) Mind Map: \"Gold & Democracy\" (1851 Ballarat rush, 30-shilling licence tax, 1854 Eureka armed uprising & ballot)."
     }
   ],
   "second_british_empire": [
@@ -637,15 +636,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Pax Britannica & Naval Power",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Portsmouth Royal Dockyard factory base"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "1860 HMS Warrior ironclad revolution"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "1889 Two-Power Standard"
         }
       ],
@@ -668,15 +667,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "De-industrialisation of India",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "25% pre-colonial world textile share"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "British protective Calico tariffs"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "1834 Bentinck report on weavers bleaching plains"
         }
       ],
@@ -699,15 +698,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "1857 Rebellion & The British Raj",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Enfield cow/pig fat crisis"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Rani Lakshmibai at Jhansi/Gwalior"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "1858 Government of India Act dissolving Company"
         }
       ],
@@ -730,15 +729,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Scramble for Africa",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "1884–85 Berlin Conference Effective Occupation"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Maxim gun & quinine military edge"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Morel \"Black Man’s Burden\" resource theft"
         }
       ],
@@ -761,15 +760,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Workshop vs Exploitation",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "1851 Crystal Palace industrial supremacy"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "25,000 miles colonial railways"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Naoroji Drain of Wealth & Victorian famines"
         }
       ],
@@ -790,15 +789,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Pre-War Life",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "9.5M Jews"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Yiddish culture"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "WWI service"
         }
       ],
@@ -817,15 +816,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Nazi Persecution",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Boycott"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Nuremberg Laws"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Kristallnacht"
         }
       ],
@@ -844,15 +843,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "The Warsaw Ghetto",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Walls"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Starvation"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Oneg Shabbat"
         }
       ],
@@ -871,15 +870,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Holocaust by Bullets",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Barbarossa"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Einsatzgruppen"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Babi Yar"
         }
       ],
@@ -898,15 +897,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Death Camps & Resistance",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Wannsee"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Treblinka"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Warsaw Uprising"
         }
       ],
@@ -925,15 +924,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Rescue & Resistance",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Danish boats"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Sugihara visas"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "White Rose"
         }
       ],
@@ -952,15 +951,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Liberation & Justice",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Camp liberation"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "DP camps"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Nuremberg Trials"
         }
       ],
@@ -986,15 +985,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "EIC Corporate Expansion",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "1600 Elizabeth I charter monopoly"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "1757 Battle of Plassey"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "1765 Diwani Bengal tax extraction"
         }
       ],
@@ -1008,7 +1007,7 @@ export const WORKBOOK_TIMELINE_DATA = {
       "title": "The Royal African Company & The Middle Passage",
       "pageRef": "Workbook Centrefold • pp. 8–9",
       "desc": "King Charles II establishes the Royal African Company with a royal monopoly over the transatlantic trade in enslaved human beings, brutally forcibly transporting millions across the Middle Passage aboard horrific slave ships.",
-      "sketchPrompt": "Royal African Company branding iron \\'RAC\\' and slave ship Brookes deck cross-section",
+      "sketchPrompt": "Royal African Company branding iron 'RAC' and slave ship Brookes deck cross-section",
       "sketchIdeas": [
         "🔥 branding iron",
         "🚢 slave ship",
@@ -1017,19 +1016,19 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Royal African Company & Middle Passage",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "1672 Crown trade monopoly"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "1713 Spanish Asiento"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "1781 Zong massacre insurance claim"
         }
       ],
-      "fullMissionText": "Milestone 2 (1672): Choose (A) Creative Sketch: Royal African Company branding iron \\'RAC\\' and slave ship Brookes deck cross-section [🔥 branding iron • 🚢 slave ship • ⛓️ iron shackles] • OR • (B) Mind Map: \"Royal African Company & Middle Passage\" (1672 Crown trade monopoly, 1713 Spanish Asiento, 1781 Zong massacre insurance claim)"
+      "fullMissionText": "Milestone 2 (1672): Choose (A) Creative Sketch: Royal African Company branding iron 'RAC' and slave ship Brookes deck cross-section [🔥 branding iron • 🚢 slave ship • ⛓️ iron shackles] • OR • (B) Mind Map: \"Royal African Company & Middle Passage\" (1672 Crown trade monopoly, 1713 Spanish Asiento, 1781 Zong massacre insurance claim)"
     },
     {
       "lessonIndex": 2,
@@ -1048,15 +1047,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Maroon Resistance & Sovereignty",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Cromwell 1655 conquest"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Blue Mountains guerrilla warfare"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "1739 treaty granting 1,500 sovereign acres"
         }
       ],
@@ -1081,19 +1080,19 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Road to American Revolution",
       "branches": [
         {
-          "label": "Core Mechanism 1",
-          "value": "1765 Stamp Act \\'No taxation without representation\\'"
+          "label": "",
+          "value": "1765 Stamp Act 'No taxation without representation'"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "1770 Boston Massacre"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "1773 Boston Tea Party & Coercive Acts"
         }
       ],
-      "fullMissionText": "Milestones 5 & 6 (1765 & 1773): Choose (A) Creative Sketch: Bostonians hanging a stamp tax collector effigy from the Liberty Tree, or Sons of Liberty dumping 342 tea chests into Boston harbour [🌳 Liberty Tree • 🪢 effigy • 🪓 tomahawk axe • 📦 tea chest • 🌊 harbour] • OR • (B) Mind Map: \"Road to American Revolution\" (1765 Stamp Act \\'No taxation without representation\\', 1770 Boston Massacre, 1773 Boston Tea Party & Coercive Acts)"
+      "fullMissionText": "Milestones 5 & 6 (1765 & 1773): Choose (A) Creative Sketch: Bostonians hanging a stamp tax collector effigy from the Liberty Tree, or Sons of Liberty dumping 342 tea chests into Boston harbour [🌳 Liberty Tree • 🪢 effigy • 🪓 tomahawk axe • 📦 tea chest • 🌊 harbour] • OR • (B) Mind Map: \"Road to American Revolution\" (1765 Stamp Act 'No taxation without representation', 1770 Boston Massacre, 1773 Boston Tea Party & Coercive Acts)"
     },
     {
       "lessonIndex": 4,
@@ -1113,15 +1112,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "American Independence & Black Loyalists",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "1776 Declaration moral paradox"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "1781 Yorktown surrender"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "1783 evacuation of 3,000 Black Loyalists to Nova Scotia"
         }
       ],
@@ -1146,15 +1145,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Iron Revolution at Funtley",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "1784 Cort puddling furnace & grooved rollers"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Portsmouth Dockyard trials"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "domestic wrought iron self-sufficiency"
         }
       ],
@@ -1177,15 +1176,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Factory Work & Child Labour",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "14-hour workdays & mill discipline"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "1832 Sadler Committee evidence"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "1833 Factory Act establishing state inspection"
         }
       ],
@@ -1208,15 +1207,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Slums, Cholera & Sewers",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "deadly back-to-back housing cesspools"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Chadwick 1842 report & John Snow 1854 pump"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "1858 Great Stink & 82 miles of Bazalgette sewers"
         }
       ],
@@ -1239,15 +1238,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Radical Protest & Repression",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "1819 Peterloo Massacre & Six Acts"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "1830 Hampshire Swing Riots across Meon Valley"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Winchester Assizes 101 transported"
         }
       ],
@@ -1270,15 +1269,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Road to Democracy",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "1832 Great Reform Act abolishing 56 rotten boroughs"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Chartist People’s Charter petitions"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "1872 Secret Ballot Act at Pontefract"
         }
       ],
@@ -1315,7 +1314,8 @@ export const WORKBOOK_TIMELINE_DATA = {
           "label": "War Mobilisation",
           "value": "1918 Representation of the People Act voting rights"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold (Pages 8–9). Complete Milestone 1 (1897 NUWSS) and Milestone 3 (1918 Representation of the People Act) using dual-coding symbols and dates."
     },
     {
       "lessonIndex": 1,
@@ -1324,44 +1324,45 @@ export const WORKBOOK_TIMELINE_DATA = {
       "date": "1942 & 1948",
       "title": "The Beveridge Report & The Foundation of the NHS",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Sir William Beveridge publishes his 1942 blueprint to conquer the Five Giants (Want, Disease, Ignorance, Squalor, Idleness); on 5 July 1948, Health Minister Aneurin Bevan launches the National Health Service, providing free medical treatment for all.",
-      "sketchPrompt": "Shield slaying the Five Giants or Bevan presenting free prescription spectacles to an elderly patient",
+      "desc": "William Beveridge’s landmark 1942 social insurance report identifies the Five Giant Evils; in July 1948, Health Minister Aneurin Bevan overcomes fierce BMA opposition to inaugurate the National Health Service.",
+      "sketchPrompt": "Aneurin Bevan holding NHS charter beside a hospital bed and 5 Giant Evils shield",
       "sketchIdeas": [
-        "🛡️ Beveridge shield slaying 5 Giants",
-        "🏥 NHS 5 July 1948 banner",
-        "🩺 Stethoscope & free prescription",
-        "📜 1942 Beveridge Social Insurance report"
+        "🏥 NHS hospital foundation",
+        "🛡️ Five Giant Evils shield",
+        "📜 1942 Beveridge blueprint",
+        "💉 Free healthcare for all"
       ],
-      "conceptTitle": "Post-War Welfare State",
+      "conceptTitle": "The Welfare Settlement",
       "branches": [
         {
           "label": "Social Blueprint",
-          "value": "1942 Beveridge Report conquering Five Giants"
+          "value": "1942 William Beveridge report against Five Giant Evils"
         },
         {
-          "label": "Cradle to Grave",
-          "value": "Universal Social Security & National Insurance"
+          "label": " Bevan’s Triumph",
+          "value": "Overcoming BMA opposition to establish free care"
         },
         {
-          "label": "Healthcare Equality",
-          "value": "5 July 1948 Aneurin Bevan founds the free NHS"
+          "label": "Universal Healthcare",
+          "value": "5 July 1948 Manchester Park Hospital inaugural launch"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold (Pages 8–9). Complete Milestone 4 (1942 Beveridge Report) and Milestone 5 (5 July 1948 NHS Foundation) using dual-coding sketches and dates."
     },
     {
       "lessonIndex": 2,
       "lessonId": "lesson_3",
-      "milestoneBadge": "Milestone 6 (22 June 1948)",
-      "date": "22 June 1948",
-      "title": "HMT Empire Windrush & Caribbean Migration",
+      "milestoneBadge": "Milestone 6 (1948)",
+      "date": "1948",
+      "title": "Empire Windrush & Post-War Commonwealth Migration",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "HMT Empire Windrush arrives at Tilbury Docks carrying 492 passengers from Jamaica and Trinidad; invited as British citizens to rebuild war-torn Britain, Caribbean migrants establish multicultural Britain despite facing widespread colour bars in housing and employment.",
-      "sketchPrompt": "Troopship Empire Windrush docking at Tilbury Docks with passengers carrying suitcases and calypso records",
+      "desc": "HMT Empire Windrush arrives at Tilbury Docks carrying 492 Jamaican passengers exercising their legal rights under the 1948 British Nationality Act, revitalising London Transport and the newly formed NHS despite colour bar hostility.",
+      "sketchPrompt": "HMT Empire Windrush troopship docking at Tilbury beside British Nationality Act ledger",
       "sketchIdeas": [
-        "🚢 HMT Empire Windrush bow",
-        "🧳 Cardboard migration suitcase",
-        "📜 1948 British Nationality Act passport",
-        "🚫 'No Coloureds' racist lodging sign"
+        "🚢 HMT Empire Windrush troopship",
+        "📜 1948 British Nationality Act",
+        "⚓ Tilbury Docks gangway",
+        "🚌 London Transport bus badge"
       ],
       "conceptTitle": "Windrush Generation",
       "branches": [
@@ -1370,14 +1371,15 @@ export const WORKBOOK_TIMELINE_DATA = {
           "value": "1948 British Nationality Act citizenship rights"
         },
         {
-          "label": "Post-War Reconstruction",
-          "value": "Vital labour in London Transport, NHS, & railways"
+          "label": "Labour Rebuilding",
+          "value": "Vital recruitment into NHS, London Transport & railways"
         },
         {
-          "label": "Colour Bar Resistance",
-          "value": "Community mutual aid & anti-discrimination solidarity"
+          "label": "Colour Bar Friction",
+          "value": "Housing discrimination and 1958 Notting Hill unrest"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold (Pages 8–9). Complete Milestone 6 (22 June 1948 Windrush Arrival) using dual-coding symbols, troopship, and Tilbury Docks."
     },
     {
       "lessonIndex": 3,
@@ -1386,217 +1388,224 @@ export const WORKBOOK_TIMELINE_DATA = {
       "date": "1963",
       "title": "The Bristol Bus Boycott & The Race Relations Acts",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Led by Paul Stephenson and the West Indian Development Council, Bristol citizens stage a four-month boycott of the Bristol Omnibus Company over its racist ban on non-white crews, forcing management to capitulate and inspiring the 1965 Race Relations Act.",
-      "sketchPrompt": "Double-decker Bristol bus with boycott placards and civil rights marchers",
+      "desc": "Paul Stephenson and Roy Hackett lead a four-month peaceful boycott against the Bristol Omnibus Company’s discriminatory colour bar; victory forces the company to capitulate, leading directly to the 1965 Race Relations Act.",
+      "sketchPrompt": "Bristol green double-decker bus blocked by peaceful protestors holding equality placards",
       "sketchIdeas": [
-        "🚌 Bristol double-decker bus",
-        "✊ Stephenson boycott placard",
-        "⚖️ 1965 Race Relations Act ledger",
-        "🛑 Overturned colour bar rule"
+        "🚌 Bristol Omnibus double-decker",
+        "🚫 Colour bar boycott placard",
+        "📜 1965 Race Relations Act",
+        "✊ Paul Stephenson civil rights"
       ],
       "conceptTitle": "Civil Rights in Britain",
       "branches": [
         {
-          "label": "Colour Bar Exposure",
-          "value": "Bristol Omnibus Company racist hiring policy"
+          "label": "Direct Boycott",
+          "value": "Paul Stephenson & Roy Hackett lead 4-month bus blockade"
         },
         {
-          "label": "Direct Action Boycott",
-          "value": "Paul Stephenson & 4-month community boycott"
+          "label": "Corporate Surrender",
+          "value": "28 August 1963 company overturns racist hiring ban"
         },
         {
-          "label": "Legislative Milestone",
-          "value": "Harold Wilson passes 1965 & 1968 Race Relations Acts"
+          "label": "Legal Landmark",
+          "value": "Harold Wilson government passes 1965 Race Relations Act"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold (Pages 8–9). Complete Milestone 7 (1963 Bristol Bus Boycott) using dual-coding symbols, Bristol bus, and equality banners."
     },
     {
       "lessonIndex": 4,
       "lessonId": "lesson_5",
       "milestoneBadge": "Milestone 8 (1958–1982)",
       "date": "1958–1982",
-      "title": "CND, The Aldermaston Marches & Greenham Common",
+      "title": "Anti-Nuclear Protest: Aldermaston & Greenham Common",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "The Campaign for Nuclear Disarmament (CND) designs the iconic peace symbol and mobilises thousands on the annual Aldermaston Marches; in 1981, women establish the Greenham Common Peace Camp, encircling the perimeter fence with children’s photos and yarn to protest US cruise missiles.",
-      "sketchPrompt": "Gerald Holtom’s CND peace symbol superimposed over Aldermaston marchers or Greenham Common perimeter fence weaving",
+      "desc": "Gerald Holtom designs the international nuclear disarmament symbol for the 1958 Aldermaston March; in 1981, 30,000 women establish the Greenham Common Women’s Peace Camp, embracing the perimeter fence against US Cruise missiles.",
+      "sketchPrompt": "Gerald Holtom peace symbol woven into Greenham Common wire fence with protest banners",
       "sketchIdeas": [
-        "☮️ Gerald Holtom CND peace symbol",
-        "🚶‍♀️ Aldermaston 52-mile protest march",
-        "🧶 Greenham Common barbed-wire yarn",
-        "🚀 US Cruise missile silhouette"
+        "☮️ Holtom CND peace symbol",
+        "🚧 Greenham Common wire fence",
+        "🚀 US Cruise missile silhouette",
+        "🕊️ 30,000 women embrace the base"
       ],
-      "conceptTitle": "Nuclear Protest & Peace Movement",
+      "conceptTitle": "Nuclear Disarmament Protest",
       "branches": [
         {
-          "label": "Anti-Nuclear Mobilisation",
-          "value": "1958 CND founding & Aldermaston peace marches"
+          "label": "Symbol of Defiance",
+          "value": "1958 Gerald Holtom creates international CND symbol"
         },
         {
-          "label": "Visual Iconography",
-          "value": "Holtom semaphore symbol (N+D for Nuclear Disarmament)"
+          "label": "Direct Women's Action",
+          "value": "30,000 women link hands around Greenham airbase"
         },
         {
-          "label": "Greenham Common Camp",
-          "value": "1981–1982 30,000 women embrace the base fence"
+          "label": "Global Pressure",
+          "value": "Grassroots resistance forces 1987 INF nuclear treaty"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold (Pages 8–9). Complete Milestone 8 (1958–1982 CND & Greenham Common) using dual-coding symbols, peace symbol, and perimeter fence."
     }
   ],
   "great_war": [
     {
       "lessonIndex": 0,
       "lessonId": "lesson_1",
-      "milestoneBadge": "Milestones 1 & 2 (1871)",
+      "milestoneBadge": "Milestone 1 (1871)",
       "date": "1871",
       "title": "German Unification, Hall of Mirrors & Alsace-Lorraine",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Inside the Hall of Mirrors at Versailles, Prussian King Wilhelm I is proclaimed German Emperor; France is forced to surrender mineral-rich Alsace-Lorraine and pay 5 billion francs, permanently cementing French revanchism and upsetting the European balance of power.",
-      "sketchPrompt": "Wilhelm I crowned beneath Versailles chandeliers or mourning France looking across the lost Vosges border",
+      "desc": "Inside the Hall of Mirrors at Versailles, Prussian King Wilhelm I is crowned German Emperor. Bismarck unites 39 states into a dominant military giant, permanently shattering the 1815 balance of power and seizing Alsace-Lorraine.",
+      "sketchPrompt": "Wilhelm I crowned German Emperor in Hall of Mirrors, or border posts marking Alsace-Lorraine",
       "sketchIdeas": [
-        "👑 Prussian Imperial Pickelhaube",
-        "🏛️ Versailles Hall of Mirrors",
-        "🗺️ Alsace-Lorraine border map",
-        "🇫🇷 French mourning black veil"
+        "👑 Imperial German crown",
+        "🪞 Hall of Mirrors at Versailles",
+        "🗺️ Alsace-Lorraine border stone",
+        "⚔️ Franco-Prussian victory"
       ],
-      "conceptTitle": "German Unification & French Revanchism",
+      "conceptTitle": "German Unification",
       "branches": [
         {
-          "label": "Power Transformation",
-          "value": "1871 Bismarck unites 39 German states into military powerhouse"
+          "label": "Imperial Proclamation",
+          "value": "18 Jan 1871 Wilhelm I crowned German Emperor"
         },
         {
-          "label": "Treaty of Frankfurt",
-          "value": "France loses Alsace-Lorraine and pays 5 billion francs"
+          "label": "Territorial Annexation",
+          "value": "Treaty of Frankfurt seizes mineral-rich Alsace-Lorraine"
         },
         {
-          "label": "Revanchism Fuel",
-          "value": "Generations of French schoolbooks pledge revenge"
+          "label": "French Revanchism",
+          "value": "Permanent French vow to reclaim lost eastern provinces"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold (Pages 8–9). Complete Milestone 1 (1871 Proclamation of the German Empire at Versailles) using dual-coding symbols and key dates."
     },
     {
       "lessonIndex": 1,
       "lessonId": "lesson_2",
       "milestoneBadge": "Milestones 3 & 7 (1884 & 1911)",
       "date": "1884 & 1911",
-      "title": "The Scramble for Africa & The Panther at Agadir",
+      "title": "Imperial Rivalry: Scramble for Africa & Agadir Crisis",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Bismarck convenes the 1884 Berlin Conference to carve up Africa under rules of \"effective occupation\"; in 1911, Kaiser Wilhelm II sends the gunboat SMS Panther to Agadir, provoking Lloyd George’s Mansion House speech and forging close Anglo-French naval cooperation.",
-      "sketchPrompt": "Imperial diplomats carving up African map cake or German gunboat Panther anchored in Moroccan bay under British warning",
+      "desc": "At the 1884 Berlin Conference, European powers partition the African continent; in 1911, Kaiser Wilhelm II dispatches the gunboat SMS Panther to Agadir, testing the Anglo-French Entente Cordiale.",
+      "sketchPrompt": "German gunboat SMS Panther anchoring off Agadir, or Berlin Conference map partition",
       "sketchIdeas": [
-        "🗺️ Berlin Conference African map",
-        "🚢 Gunboat SMS Panther anchored at Agadir",
-        "🦁 British roaring lion warning",
-        "🤝 Anglo-French secret naval pact"
+        "🚢 SMS Panther gunboat",
+        "🗺️ Berlin Conference Africa map",
+        "🤝 Anglo-French Entente handshake",
+        "⚓ Moroccan coastal fort"
       ],
-      "conceptTitle": "Imperial Rivalry & Moroccan Crises",
+      "conceptTitle": "Imperial Rivalry",
       "branches": [
         {
-          "label": "Imperial Carve-Up",
-          "value": "1884 Berlin Conference triggers Scramble for Africa"
+          "label": "Continental Partition",
+          "value": "1884 Berlin Conference rules of effective occupation"
         },
         {
           "label": "Weltpolitik Challenge",
-          "value": "1905 & 1911 Moroccan Crises test Entente Cordiale"
+          "value": "Wilhelm II demands \"a place in the sun\" for Germany"
         },
         {
-          "label": "Entente Solidified",
-          "value": "Britain and France agree joint naval defense coordination"
+          "label": "Agadir Backfire",
+          "value": "Panther gunboat cements Anglo-French military coordination"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold (Pages 8–9). Complete Milestone 3 (The Berlin Conference) and Milestone 7 (The Panther at Agadir) using dual-coding sketches and dates."
     },
     {
       "lessonIndex": 2,
       "lessonId": "lesson_3",
       "milestoneBadge": "Milestone 6 (1906)",
       "date": "1906",
-      "title": "HMS Dreadnought & The Anglo-German Naval Race",
+      "title": "The Anglo-German Naval Arms Race & HMS Dreadnought",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "The Royal Navy launches HMS Dreadnought, armed with ten 12-inch guns and revolutionary steam turbines; making all previous battleships obsolete, it sparks a ferocious naval arms race between Admiral Fisher and Admiral von Tirpitz in the North Sea.",
-      "sketchPrompt": "HMS Dreadnought firing broadside or British and German shipyards racing with stopwatch and rivet hammers",
+      "desc": "The Royal Navy launches HMS Dreadnought with ten 12-inch guns and revolutionary steam turbines, rendering all previous battleships obsolete and sparking an intense naval race with Admiral Tirpitz’s High Seas Fleet.",
+      "sketchPrompt": "HMS Dreadnought steaming with all-big-gun turrets, or Tirpitz naval expansion laws",
       "sketchIdeas": [
         "🚢 HMS Dreadnought all-big-gun battleship",
-        "🎯 Ten 12-inch rotating gun turrets",
-        "⏱️ \"We want eight and we won’t wait!\" stopwatch",
-        "🌊 North Sea battleship deployment"
+        "⚙️ Steam turbine funnels",
+        "🎯 Ten 12-inch rotating turrets",
+        "⚓ Royal Navy two-power standard"
       ],
-      "conceptTitle": "Anglo-German Naval Arms Race",
+      "conceptTitle": "Naval Arms Race",
       "branches": [
         {
-          "label": "Naval Revolution",
-          "value": "1906 HMS Dreadnought makes all existing fleets obsolete"
+          "label": "Technological Revolution",
+          "value": "1906 HMS Dreadnought renders all existing battleships obsolete"
         },
         {
-          "label": "Tirpitz Naval Laws",
-          "value": "German risk fleet threatens British sea communications"
+          "label": "Tirpitz Fleet Laws",
+          "value": "German Risk Theory fleet designed to challenge Royal Navy"
         },
         {
-          "label": "British Commitment",
-          "value": "Royal Navy retains 29 dreadnoughts to Germany’s 17"
+          "label": "British Supremacy",
+          "value": "Britain outbuilds Germany 29 to 17 in dreadnought capital ships"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold (Pages 8–9). Complete Milestone 6 (1906 Launch of HMS Dreadnought) using dual-coding symbols, gun turrets, and turbine funnels."
     },
     {
       "lessonIndex": 3,
       "lessonId": "lesson_4",
       "milestoneBadge": "Milestones 4 & 7 (1890 & 1908)",
       "date": "1890 & 1908",
-      "title": "Dropping the Pilot & The Bosnian Crisis",
+      "title": "The Web of Alliances & The Bosnian Annexation Crisis",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Kaiser Wilhelm II dismisses Bismarck in 1890 and lets the Reinsurance Treaty lapse, driving Russia into the arms of France; in 1908, Austria-Hungary annexes Bosnia-Herzegovina, enraging Serbia and humiliating Russia.",
-      "sketchPrompt": "Bismarck descending ship gangway as Kaiser looks on from bridge or Austro-Hungarian double eagle grasping Bosnia",
+      "desc": "Kaiser Wilhelm II drops Bismarck in 1890 and lets the Reinsurance Treaty lapse, driving France and Russia into alliance; in 1908, Austria-Hungary’s annexation of Bosnia enrages Serbia and Russia.",
+      "sketchPrompt": "Triple Entente flags interlocking against Triple Alliance, or Austria annexing Bosnia",
       "sketchIdeas": [
-        "⚓ Bismarck walking ship gangway",
-        "🦅 Austro-Hungarian two-headed eagle",
-        "🇷🇸 Serbian nationalist protest rally",
-        "💣 Balkan Powder Keg fuse"
+        "⛓️ Interlocking alliance chains",
+        "🦅 Habsburg double-headed eagle",
+        "🇷🇺 Russian bear protecting Serbia",
+        "📜 Dropping the pilot cartoon"
       ],
-      "conceptTitle": "Alliance Entanglement & Balkan Powder Keg",
+      "conceptTitle": "The Web of Alliances",
       "branches": [
         {
-          "label": "Diplomatic Collapse",
-          "value": "1890 Bismarck dismissed; Franco-Russian alliance signed 1894"
+          "label": "Bismarck Dismissed",
+          "value": "1890 Franco-Russian defensive alliance forms"
         },
         {
-          "label": "Triple Entente",
-          "value": "1907 Britain, France and Russia align against Central Powers"
+          "label": "Two Armed Camps",
+          "value": "Triple Alliance vs Triple Entente creates domino trap"
         },
         {
           "label": "Bosnian Annexation",
           "value": "1908 Austrian annexation humiliates Russia and enrages Serbia"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold (Pages 8–9). Complete Milestone 4 (Bismarck Dismissed) and Milestone 7 (Bosnian Crisis) using dual-coding symbols and dates."
     },
     {
       "lessonIndex": 4,
       "lessonId": "lesson_5",
       "milestoneBadge": "Milestone 8 (28 June 1914)",
       "date": "28 June 1914",
-      "title": "The Sarajevo Assassination & The Outbreak of War",
+      "title": "The Sarajevo Assassination & The July Crisis Dominoes",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Nineteen-year-old Gavrilo Princip shoots Archduke Franz Ferdinand and Sophie beside the Latin Bridge in Sarajevo; Austria issues the July Ultimatum with a German \"blank cheque\", dragging the interlocking alliance system into World War I.",
-      "sketchPrompt": "Gavrilo Princip aiming pistol at Archduke’s open-top Gräf & Stift motorcar at the Latin Bridge",
+      "desc": "Gavrilo Princip of the Black Hand fires two pistol shots into Archduke Franz Ferdinand’s open-topped car at the Latin Bridge in Sarajevo; Germany issues the \"Blank Cheque\", triggering the alliance dominoes into world war.",
+      "sketchPrompt": "Gavrilo Princip firing pistol at Franz Ferdinand’s Graf & Stift car beside Latin Bridge",
       "sketchIdeas": [
-        "🚗 Open-top Austrian royal motorcar",
-        "🔫 Princip Browning automatic pistol",
-        "🌉 Sarajevo Latin Bridge & Miljacka River",
-        "📜 German \"Blank Cheque\" telegram"
+        "🚗 Archduke's Graf & Stift motorcar",
+        "🔫 Princip’s Browning FN 1910 pistol",
+        "🌉 Latin Bridge in Sarajevo",
+        "📜 German Blank Cheque telegram"
       ],
-      "conceptTitle": "July Crisis & Spark of World War I",
+      "conceptTitle": "The July Crisis Dominoes",
       "branches": [
         {
-          "label": "Fatal Trigger",
-          "value": "28 June 1914 Black Hand assassination in Sarajevo"
+          "label": "Sarajevo Catalyst",
+          "value": "28 June 1914 Black Hand assassinate Austrian heir"
         },
         {
           "label": "German Blank Cheque",
-          "value": "Kaiser Wilhelm promises unconditional backing to Vienna"
+          "value": "Kaiser promises unconditional military support to Vienna"
         },
         {
-          "label": "Domino Mobilisation",
-          "value": "Russia mobilises; Schlieffen Plan invades Belgium, bringing Britain in"
+          "label": "Alliance Dominoes",
+          "value": "Mobilisation timetables plunge Europe into total war in August"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold (Pages 8–9). Complete Milestone 8 (28 June 1914 Sarajevo Assassination) using dual-coding symbols, motorcar, and Latin Bridge."
     }
   ],
   "water_and_sanitation": [
@@ -1628,7 +1637,8 @@ export const WORKBOOK_TIMELINE_DATA = {
           "label": "Public Hygiene",
           "value": "Public thermae baths and continuous flush latrines"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold • Pages 8–9 (Milestone 1). Complete the dual-coding sketch challenge in the timeline sketchpad: Draw stone aqueduct arches with water flowing into lead pipes."
     },
     {
       "lessonIndex": 1,
@@ -1637,28 +1647,29 @@ export const WORKBOOK_TIMELINE_DATA = {
       "date": "c.1165",
       "title": "Canterbury Monastic Conduits & Settling Tanks",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Monk Wibert designs five settling tanks and lead conduits to bring filtered spring water to Christ Church Priory, keeping monks healthy while townspeople drink contaminated river water.",
+      "desc": "Monk Wibert designs five settling tanks and subterranean lead conduits to bring filtered spring water to Christ Church Priory, prioritising monastic ritual cleanliness.",
       "sketchPrompt": "Draw five settling tanks filtering mud and sand from spring water",
       "sketchIdeas": [
-        "⛪ Canterbury Priory conduit tower",
-        "🧪 Five sand settling tanks",
-        "⛲ Monastic cloister lavatorium fountain"
+        "⛪ Canterbury Cathedral cloister",
+        "🧪 Five tiered settling tanks",
+        "💧 Clean filtered spring water conduit"
       ],
-      "conceptTitle": "Medieval Monastic Sanitation",
+      "conceptTitle": "Medieval Monastic Cleanliness",
       "branches": [
         {
-          "label": "Spring Conduit",
-          "value": "Clean water piped from hills outside city"
+          "label": "Pioneering Filtration",
+          "value": "Five subterranean settling tanks remove grit and silt"
         },
         {
-          "label": "Sequential Filtration",
-          "value": "Five tanks settling sediment and grit"
+          "label": "Prior Wibert Blueprint",
+          "value": "Octagonal water tower supplies cloister lavatorium"
         },
         {
-          "label": "Health Privilege",
-          "value": "Monasteries insulated from urban cholera and dysentery"
+          "label": "Religious Cleanliness",
+          "value": "Monasteries insulated from filthy open town cesspits"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold • Pages 8–9 (Milestone 2). Complete the dual-coding sketch challenge in the timeline sketchpad: Draw five settling tanks filtering mud and sand."
     },
     {
       "lessonIndex": 2,
@@ -1667,89 +1678,91 @@ export const WORKBOOK_TIMELINE_DATA = {
       "date": "1596",
       "title": "Sir John Harington: The Flush Toilet",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Elizabeth I’s godson invents the world’s first valve-operated flushing water closet, though lack of running water mains and sewers prevents wide adoption.",
+      "desc": "Elizabeth I’s godson invents the world’s first valve-operated flushing water closet (the Ajax), though the lack of domestic running water prevents wide adoption for centuries.",
       "sketchPrompt": "Draw an overhead cistern with a pull lever flushing into a pan",
       "sketchIdeas": [
-        "🚽 Harington overhead cistern toilet",
-        "🪣 Hand-filled water barrel",
-        "📜 The Metamorphosis of Ajax treatise"
+        "🚽 The Ajax flushing valve water closet",
+        "💧 Overhead water cistern",
+        "👑 Queen Elizabeth I royal patent"
       ],
       "conceptTitle": "Early Modern Innovation",
       "branches": [
         {
-          "label": "Mechanical Flushing",
-          "value": "Valve releases water to wash away waste"
+          "label": "The Ajax Invention",
+          "value": "First valve-operated flushing water closet design"
         },
         {
-          "label": "Infrastructural Deficit",
-          "value": "No running municipal water mains"
+          "label": "Infrastructure Void",
+          "value": "Lack of mains running water prevents mass adoption"
         },
         {
-          "label": "Cesspool Persistence",
-          "value": "Towns continue relying on leaking street cesspits"
+          "label": "Night Soil Persistence",
+          "value": "Towns remain reliant on cesspools and nightsoil men"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold • Pages 8–9 (Milestone 3). Complete the dual-coding sketch challenge in the timeline sketchpad: Draw an overhead cistern with a pull lever flushing into a pan."
     },
     {
       "lessonIndex": 3,
       "lessonId": "lesson_4",
-      "milestoneBadge": "Milestone 4 (1831–1842)",
-      "date": "1831–1842",
-      "title": "Asiatic Cholera & Chadwick’s 1842 Report",
+      "milestoneBadge": "Milestone 4 (1842 & 1854)",
+      "date": "1842 & 1854",
+      "title": "Chadwick’s Sanitary Report & Snow’s Broad Street Pump",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Cholera sweeps through industrial boomtowns killing thousands; Edwin Chadwick proves that squalor and contaminated privies cause preventable disease and economic poverty.",
-      "sketchPrompt": "Draw back-to-back terraced houses with an overflowing shared privy midden",
+      "desc": "Edwin Chadwick proves filth causes disease; in 1854, Dr John Snow maps cholera deaths around Soho, removing the Broad Street pump handle and disproving the miasma theory.",
+      "sketchPrompt": "Draw the Broad Street water pump handle removed beside a death map",
       "sketchIdeas": [
-        "🏘️ Squalid back-to-back slum terraces",
-        "🪣 Overflowing outdoor cesspool privy",
-        "📋 1842 Chadwick Sanitary Report"
+        "🚰 Broad Street pump with removed handle",
+        "🗺️ Dr John Snow Soho cholera spot map",
+        "🦠 Waterborne Vibrio cholerae bacteria"
       ],
-      "conceptTitle": "Industrial Squalor & Sanitary Reform",
+      "conceptTitle": "Epidemiological Revolution",
       "branches": [
         {
-          "label": "Epidemic Terror",
-          "value": "1831 Asiatic cholera kills 50,000 in Britain"
-        },
-        {
           "label": "Statistical Proof",
-          "value": "Chadwick proves Manchester labourers die at average age 17"
+          "value": "Chadwick proves Manchester labourers die at age 17"
         },
         {
-          "label": "State Awakening",
-          "value": "1848 Public Health Act establishes General Board of Health"
+          "label": "Empirical Mapping",
+          "value": "Snow pinpoints 616 deaths to contaminated Broad St pump"
+        },
+        {
+          "label": "Miasma Overthrown",
+          "value": "Proves cholera is waterborne, not airborne bad air"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold • Pages 8–9 (Milestone 4). Complete the dual-coding sketch challenge in the timeline sketchpad: Draw the Broad Street water pump handle removed beside a death map."
     },
     {
       "lessonIndex": 4,
       "lessonId": "lesson_5",
-      "milestoneBadge": "Milestones 5 & 6 (1854–1884)",
-      "date": "1854–1884",
-      "title": "Snow’s Pump, The Great Stink & Bazalgette’s Sewers",
+      "milestoneBadge": "Milestone 5 (1858–1875)",
+      "date": "1858–1875",
+      "title": "The Great Stink & Bazalgette’s Sewer Network",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Dr John Snow removes the Broad Street pump handle in 1854; the 1858 Great Stink forces Parliament to fund Joseph Bazalgette’s 82 miles of subterranean brick sewers, conquering water-borne disease.",
-      "sketchPrompt": "Draw a street pump with handle removed beside an egg-shaped brick underground sewer tunnel",
+      "desc": "Following the 1858 Great Stink that closed Parliament, Joseph Bazalgette constructs 82 miles of brick intercepting sewers, driving typhus and cholera out of London.",
+      "sketchPrompt": "Draw subterranean egg-shaped brick sewers beneath the Thames embankment",
       "sketchIdeas": [
-        "🚰 Broad Street pump with removed handle",
-        "🗺️ John Snow Soho cholera spot map",
-        "🧱 Bazalgette arched brick sewer tunnels",
-        "🏛️ Westminster curtains soaked in chloride of lime"
+        "🧱 Egg-shaped brick intercepting sewer",
+        "👃 The 1858 Great Stink chloride curtains",
+        "🌊 Thames Embankment engineering"
       ],
-      "conceptTitle": "Engineering & Epidemiological Triumph",
+      "conceptTitle": "Victorian Sanitary Engineering",
       "branches": [
         {
-          "label": "Water-Borne Proof",
-          "value": "1854 John Snow proves cholera is transmitted in water"
-        },
-        {
           "label": "The Great Stink",
-          "value": "1858 heatwave drives MPs to fund Bazalgette’s sewer network"
+          "value": "Heatwave forces Parliament to soak curtains in chloride of lime"
         },
         {
-          "label": "Compulsory Hygiene",
-          "value": "1875 Public Health Act mandates clean water nationwide"
+          "label": "Bazalgette Masterpiece",
+          "value": "82 miles of subterranean brick sewers redirect 420m gallons"
+        },
+        {
+          "label": "Public Health Acts",
+          "value": "1875 Act mandates clean water supply and sewer connections"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Centrefold • Pages 8–9 (Milestone 5). Complete the dual-coding sketch challenge in the timeline sketchpad: Draw subterranean egg-shaped brick sewers beneath the Thames embankment."
     }
   ],
   "cme_new": [
@@ -1758,360 +1771,466 @@ export const WORKBOOK_TIMELINE_DATA = {
       "lessonId": "lesson_1",
       "milestoneBadge": "Milestone 1 (1915–1917)",
       "date": "1915–1917",
-      "title": "Conflicting Promises & Imperial Mandates",
+      "title": "The Contradictory British Pledges",
       "pageRef": "Workbook Pages 2–3 • Key Topic 1.1",
-      "desc": "Britain issues contradictory pledges: the McMahon-Hussein Correspondence promising Arab independence, the secret Sykes-Picot Agreement dividing the Levant with France, and the Balfour Declaration supporting a Jewish national home.",
-      "sketchPrompt": "Contradictory British pledges and the imperial boundary line separating British and French mandate zones",
+      "desc": "Britain issues contradictory wartime pledges: the McMahon-Hussein Correspondence promises Arab independence, the Sykes-Picot Agreement secretly partitions the Ottoman Empire with France, and the Balfour Declaration promises a Jewish national home.",
+      "sketchPrompt": "Sketch the three contradictory pledges and imperial partition border",
       "sketchIdeas": [
-        "📜 Balfour Declaration letter",
-        "🗺️ Sykes-Picot ruler boundary line",
-        "👑 McMahon-Hussein correspondence"
+        "📜 Balfour Declaration parchment",
+        "🗺️ Sykes-Picot partition map",
+        "👑 McMahon-Hussein letter"
       ],
-      "conceptTitle": "Conflicting Pledges",
+      "conceptTitle": "Contradictory Pledges",
       "branches": [
         {
-          "label": "Arab Alliance",
-          "value": "McMahon-Hussein promises Arab sovereignty"
+          "label": "Arab Pledge",
+          "value": "1915 McMahon-Hussein promise of independence for Arab revolt"
         },
         {
-          "label": "Imperial Partition",
-          "value": "Sykes-Picot divides Middle East into spheres"
+          "label": "Secret Partition",
+          "value": "1916 Sykes-Picot carve-up between Britain and France"
         },
         {
-          "label": "Zionist Commitment",
-          "value": "1917 Balfour Declaration backs Jewish homeland"
+          "label": "Zionist Pledge",
+          "value": "1917 Balfour Declaration backs Jewish national home"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 1.1). In Milestone 1, sketch the contradictory British pledges and the imperial boundary line separating British and French mandate zones."
     },
     {
       "lessonIndex": 1,
       "lessonId": "lesson_2",
-      "milestoneBadge": "Milestone 2 (1946–1947)",
-      "date": "1946–1947",
-      "title": "The End of the British Mandate & King David Hotel",
+      "milestoneBadge": "Milestone 2 (1946)",
+      "date": "July 1946",
+      "title": "The King David Hotel Bombing",
       "pageRef": "Workbook Pages 2–3 • Key Topic 1.2",
-      "desc": "Holocaust survivors seek refuge in Palestine as Jewish paramilitary groups target British rule; the Irgun bombs the King David Hotel in July 1946, prompting exhausted Britain to refer Palestine to the United Nations.",
-      "sketchPrompt": "Shattered south-west wing of the King David Hotel and the barbed wire perimeter around British administrative zones",
+      "desc": "The Irgun bombs the British military and administrative headquarters in the King David Hotel, killing 91 people and breaking Britain’s political will to maintain the Palestine Mandate.",
+      "sketchPrompt": "Sketch the shattered wing of King David Hotel and barbed wire security zones",
       "sketchIdeas": [
-        "🏨 King David Hotel shattered wing",
-        "🚢 Exodus 1947 refugee ship",
-        "🌐 UN badge & mandate handover"
+        "💥 Shattered south-west hotel wing",
+        "🏨 King David Hotel facade",
+        "🚧 British barbed wire security checkpoint"
       ],
-      "conceptTitle": "Collapse of British Mandate",
+      "conceptTitle": "Mandate Crisis",
       "branches": [
         {
-          "label": "Refugee Crisis",
-          "value": "Post-Holocaust migration and British blockades"
+          "label": "Irgun Attack",
+          "value": "22 July 1946 bomb concealed in milk churns kills 91"
         },
         {
-          "label": "Armed Insurgency",
-          "value": "Irgun bombing of British military HQ"
+          "label": "Operation Agatha",
+          "value": "Retaliation for British mass arrest of Zionist leaders"
         },
         {
-          "label": "UN Referral",
-          "value": "Britain relinquishes mandate to United Nations"
+          "label": "British Exit",
+          "value": "Exhausted Britain refers Palestine problem to United Nations"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 1.2). In Milestone 2, sketch the shattered south-west wing of the King David Hotel and the barbed wire perimeter around British administrative zones."
     },
     {
       "lessonIndex": 2,
       "lessonId": "lesson_3",
-      "milestoneBadge": "Milestones 3 & 4 (1947–1949)",
-      "date": "1947–1949",
-      "title": "UN Partition & The 1948–49 Arab-Israeli War",
+      "milestoneBadge": "Milestones 3 & 4 (1947–1948)",
+      "date": "1947–1948",
+      "title": "UN Partition Plan & 1948 War of Independence",
       "pageRef": "Workbook Pages 2–3 • Key Topic 1.3",
-      "desc": "The UN passes Resolution 181 partitioning Palestine; on 14 May 1948 Ben-Gurion proclaims Israel’s independence. Five Arab armies invade, but Israeli forces prevail, expanding territory by 21% beyond the partition lines.",
-      "sketchPrompt": "UN Partition map divisions and the five Arab invasion routes crossing Israel’s borders",
+      "desc": "UN Resolution 181 partitions Palestine into Arab and Jewish states; David Ben-Gurion proclaims Israel’s independence on 14 May 1948, triggering an immediate five-nation Arab invasion.",
+      "sketchPrompt": "Sketch UN partition map divisions and five Arab invasion routes",
       "sketchIdeas": [
-        "🗺️ 1947 UN Partition map",
-        "⭐ Israeli declaration of independence scroll",
-        "⚔️ Five Arab army invasion vectors"
+        "🗺️ UN Resolution 181 partition map",
+        "📜 Ben-Gurion declaration of independence",
+        "⚔️ Five Arab army invasion arrows"
       ],
-      "conceptTitle": "1948 War of Independence",
+      "conceptTitle": "Partition & Independence War",
       "branches": [
         {
-          "label": "UN Resolution 181",
-          "value": "Partition plan rejected by Arab leadership"
+          "label": "UN Partition",
+          "value": "Nov 1947 Resolution 181 awards 56% land to Jewish state"
         },
         {
-          "label": "Statehood Declaration",
-          "value": "Ben-Gurion proclaims State of Israel"
+          "label": "Statehood Proclaimed",
+          "value": "14 May 1948 Ben-Gurion declares State of Israel"
         },
         {
-          "label": "1949 Armistice",
-          "value": "Green Line established with 21% territorial gain"
+          "label": "Arab-Israeli War",
+          "value": "Five Arab armies invade; Israel captures 78% by 1949"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 1.3). In Milestones 3 & 4, sketch the UN Partition map divisions and the five Arab invasion routes crossing Israel’s borders."
     },
     {
       "lessonIndex": 3,
       "lessonId": "lesson_4",
       "milestoneBadge": "Milestone 5 (1948–1950)",
       "date": "1948–1950",
-      "title": "The Palestinian Refugee Crisis (Al-Nakba)",
+      "title": "The Palestinian Catastrophe (Nakba) & Law of Return",
       "pageRef": "Workbook Pages 2–3 • Key Topic 1.4",
-      "desc": "Over 700,000 Palestinian Arabs flee or are expelled from their homes during the 1948 war (Al-Nakba), becoming stateless refugees in UNRWA camps across Gaza, the West Bank, Jordan, Syria, and Lebanon.",
-      "sketchPrompt": "Overcrowded UNRWA refugee tents alongside the cargo ships arriving in Haifa with Jewish immigrants",
+      "desc": "Over 700,000 Palestinian Arabs flee or are expelled from their homes during the 1948 war, becoming permanent refugees; meanwhile, Israel passes the 1950 Law of Return, welcoming 687,000 Jewish immigrants.",
+      "sketchPrompt": "Sketch UNRWA refugee tents alongside cargo ships bringing immigrants to Haifa",
       "sketchIdeas": [
-        "⛺ UNRWA canvas refugee tent",
-        "🔑 Palestinian home key (Right of Return)",
-        "🚢 Immigration cargo ships arriving at Haifa"
+        "⛺ UNRWA refugee camp tent",
+        "🚢 Immigrant cargo ship entering Haifa",
+        "📜 1950 Israeli Law of Return"
       ],
-      "conceptTitle": "Nakba & Refugee Catastrophe",
+      "conceptTitle": "Refugee Catastrophe & Aliyah",
       "branches": [
         {
-          "label": "Mass Displacement",
-          "value": "700,000 Palestinians become stateless refugees"
+          "label": "The Nakba",
+          "value": "700,000+ Palestinians displaced into Gaza, West Bank & Jordan"
         },
         {
-          "label": "UNRWA Camps",
-          "value": "Permanent tent cities in Gaza and West Bank"
+          "label": "UNRWA Relief",
+          "value": "UN agency established to provide basic food and shelter"
         },
         {
-          "label": "Jewish Influx",
-          "value": "Law of Return doubles Israeli population"
+          "label": "Jewish Immigration",
+          "value": "Law of Return doubles Israel’s population within three years"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 1.4). In Milestone 5, sketch the overcrowded UNRWA refugee tents alongside the cargo ships arriving in Haifa with Jewish immigrants."
     },
     {
       "lessonIndex": 4,
-      "lessonId": "lesson_6",
+      "lessonId": "lesson_5",
       "milestoneBadge": "Milestone 6 (1956)",
       "date": "1956",
       "title": "Nasser & The Suez Crisis",
       "pageRef": "Workbook Pages 2–3 • Key Topic 1.5",
-      "desc": "President Nasser nationalises the Suez Canal; Britain, France, and Israel hatch the secret Sèvres Protocol to invade Egypt, but US President Eisenhower forces an immediate humiliating British and French withdrawal.",
-      "sketchPrompt": "Nationalised Suez Canal waterway and the British paratroopers landing at Port Said under US diplomatic pressure",
+      "desc": "President Gamal Abdel Nasser nationalises the Suez Canal; Britain, France, and Israel hatch the secret Sèvres Protocol to invade Egypt, but US financial pressure forces a humiliating Anglo-French retreat.",
+      "sketchPrompt": "Sketch nationalised Suez Canal waterway and British paratroopers at Port Said",
       "sketchIdeas": [
         "🌊 Suez Canal waterway",
-        "🪖 British paratroopers landing at Port Said",
-        "🦅 US dollar pressure forcing withdrawal"
+        "🪂 British paratrooper drop at Port Said",
+        "📜 Secret Sèvres Protocol treaty",
+        "🇺🇸 Eisenhower financial veto"
       ],
-      "conceptTitle": "Suez Crisis of 1956",
+      "conceptTitle": "Suez Standoff",
       "branches": [
         {
-          "label": "Canal Nationalisation",
-          "value": "Nasser seizes canal to fund Aswan Dam"
+          "label": "Canal Nationalised",
+          "value": "26 July 1956 Nasser seizes canal to fund Aswan Dam"
         },
         {
           "label": "Protocol of Sèvres",
-          "value": "Secret Anglo-French-Israeli collusion"
+          "value": "Collusion between Britain, France, and Israel"
         },
         {
-          "label": "Superpower Halt",
-          "value": "Eisenhower halts invasion; imperial prestige ruined"
+          "label": "Superpower Veto",
+          "value": "Eisenhower threatens sterling collapse; imperial retreat"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 1.5). In Milestone 6, sketch the nationalised Suez Canal waterway and the British paratroopers landing at Port Said under US diplomatic pressure."
     },
     {
       "lessonIndex": 5,
-      "lessonId": "lesson_7",
-      "milestoneBadge": "Milestones 1 & 2 (1964–1967)",
-      "date": "1964–1967",
-      "title": "Escalation to the Six-Day War & Straits of Tiran",
+      "lessonId": "lesson_6",
+      "milestoneBadge": "Milestones 1 & 2 (Jan–May 1967)",
+      "date": "Jan–May 1967",
+      "title": "The Road to War: Arab Summits & Tiran Blockade",
       "pageRef": "Workbook Pages 2–3 • Key Topic 2.1",
-      "desc": "Border clashes over water diversion on the Syrian border and the creation of the PLO escalate; in May 1967, Nasser expels UNEF peacekeepers and blockades the Straits of Tiran to Israeli shipping.",
-      "sketchPrompt": "Cairo Arab Summit symbol and the naval blockade of the Straits of Tiran at Sharm el-Sheikh",
+      "desc": "Nasser convenes Arab summits, demands the withdrawal of UNEF peacekeepers from Sinai, and closes the Straits of Tiran to Israeli shipping at Sharm el-Sheikh, providing Israel with a clear casus belli.",
+      "sketchPrompt": "Sketch Cairo Arab Summit emblem and naval blockade of Straits of Tiran",
       "sketchIdeas": [
-        "⚓ Straits of Tiran blockade",
-        "📢 Arab summit rhetoric",
-        "🪖 UNEF blue helmets ordered out of Sinai"
+        "⚓ Blockade of Straits of Tiran",
+        "🛡️ UNEF peacekeeper evacuation",
+        "📢 Cairo Arab Summit podium"
       ],
-      "conceptTitle": "Road to Six-Day War",
+      "conceptTitle": "Escalation to War",
       "branches": [
         {
-          "label": "Water Disputes",
-          "value": "Headwater diversion clashes on Golan border"
+          "label": "Arab Coalitions",
+          "value": "1964 Cairo Summit creates Unified Arab Military Command"
         },
         {
-          "label": "UNEF Eviction",
-          "value": "Nasser orders UN troops out of Sinai buffer"
+          "label": "UNEF Evicted",
+          "value": "Nasser forces UN peacekeepers out of Sinai border zone"
         },
         {
-          "label": "Naval Blockade",
-          "value": "Closing Straits of Tiran acts as casus belli"
+          "label": "Tiran Blockade",
+          "value": "Closure of Straits of Tiran chokes Israeli port of Eilat"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 2.1). In Milestones 1 and 2, sketch the Cairo Arab Summit symbol and annotate the blockade of the Straits of Tiran at Sharm el-Sheikh."
     },
     {
       "lessonIndex": 6,
-      "lessonId": "lesson_8",
+      "lessonId": "lesson_7",
       "milestoneBadge": "Milestone 3 (5–10 June 1967)",
       "date": "5–10 June 1967",
       "title": "Operation Focus & The Six-Day War Blitzkrieg",
       "pageRef": "Workbook Pages 2–3 • Key Topic 2.2",
-      "desc": "Israel launches preemptive airstrike Operation Focus, destroying Egypt’s air force on the tarmac in under three hours; ground forces seize the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and the Golan Heights.",
-      "sketchPrompt": "Israeli Centurion tanks advancing through the desert and label the Golan Heights, West Bank, and Sinai",
+      "desc": "Israel launches preemptive air strikes in Operation Focus, obliterating the Egyptian air force on the runways within three hours; IDF armour seizes the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and Golan Heights.",
+      "sketchPrompt": "Sketch Israeli Centurion tanks advancing through Sinai and label conquered zones",
       "sketchIdeas": [
-        "✈️ IAF Mirage jet striking Egyptian airfields",
-        "🚜 Centurion tank advancing in Sinai",
-        "🗺️ Conquered territories map (Sinai, West Bank, Golan)"
+        "✈️ IAF Mirage preemptive runway strike",
+        "🛡️ Centurion tanks in Sinai desert",
+        "🗺️ Conquered territories map"
       ],
-      "conceptTitle": "Six-Day War Triumph",
+      "conceptTitle": "Six-Day War Blitzkrieg",
       "branches": [
         {
           "label": "Operation Focus",
-          "value": "Preemptive airstrike destroys 400 Arab combat aircraft"
-        },
-        {
-          "label": "Rapid Blitzkrieg",
-          "value": "IDF takes Sinai, West Bank, and Golan Heights in 6 days"
+          "value": "Preemptive strike destroys 300+ Egyptian aircraft in 3 hours"
         },
         {
           "label": "Territorial Tripling",
-          "value": "Israel controls territory three times its pre-1967 size"
+          "value": "Sinai, West Bank, Gaza, and Golan Heights captured"
+        },
+        {
+          "label": "Strategic Depth",
+          "value": "Israel gains defensible borders but absorbs 1M Palestinians"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 2.2). In Milestone 3, sketch Israeli Centurion tanks advancing through the desert and label the Golan Heights, West Bank, and Sinai."
     },
     {
       "lessonIndex": 7,
-      "lessonId": "lesson_9",
+      "lessonId": "lesson_8",
       "milestoneBadge": "Milestone 4 (Nov 1967)",
       "date": "Nov 1967",
-      "title": "UN Resolution 242 & The Khartoum \"Three Noes\"",
+      "title": "Resolution 242 & The Khartoum Three Noes",
       "pageRef": "Workbook Pages 2–3 • Key Topic 2.3",
-      "desc": "The UN Security Council passes Resolution 242 establishing the \"land for peace\" formula; Arab leaders meet at Khartoum issuing the \"Three Noes\" (no peace, no recognition, no negotiations with Israel).",
-      "sketchPrompt": "UN Security Council emblem and the three banners of the Khartoum \"Three Noes\"",
+      "desc": "Arab leaders at the Khartoum Summit declare \"No peace, no recognition, no negotiations\" with Israel; the UN Security Council passes Resolution 242, establishing the ambiguous \"land for peace\" formula.",
+      "sketchPrompt": "Sketch UN Resolution 242 emblem and Khartoum Three Noes banners",
       "sketchIdeas": [
-        "🌐 UN Resolution 242 \"Land for Peace\" balance scale",
-        "📜 Khartoum Summit Three Noes banner",
-        "🧱 Israeli settlements in occupied West Bank"
+        "📜 UN Security Council Resolution 242",
+        "🚫 Khartoum Three Noes banner",
+        "🕊️ Land for Peace scales of justice"
       ],
-      "conceptTitle": "Resolution 242 & Stalemate",
+      "conceptTitle": "Diplomatic Deadlock",
       "branches": [
         {
-          "label": "Land for Peace",
-          "value": "UN 242 withdrawal from territories for secure borders"
-        },
-        {
           "label": "Khartoum Summit",
-          "value": "Arab League pledges \"No peace, no recognition, no negotiation\""
+          "value": "Arab League adopts the defiant \"Three Noes\" formula"
         },
         {
-          "label": "Settlement Movement",
-          "value": "Beginning of Israeli civilian settlement in West Bank"
+          "label": "UN Resolution 242",
+          "value": "Ambiguous English text: \"withdrawal from territories occupied\""
+        },
+        {
+          "label": "Settlement Beginnings",
+          "value": "First Israeli civilian outposts established in West Bank"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 2.3). In Milestone 4, sketch the UN Security Council emblem and write out the three banners of the Khartoum \"Three Noes\"."
     },
     {
       "lessonIndex": 8,
-      "lessonId": "lesson_10",
-      "milestoneBadge": "Milestone 5 (1968–1972)",
-      "date": "1968–1972",
-      "title": "The Rise of the PLO, Black September & Munich",
+      "lessonId": "lesson_9",
+      "milestoneBadge": "Milestone 5 (1970)",
+      "date": "Sept 1970",
+      "title": "Black September & The Dawson’s Field Hijackings",
       "pageRef": "Workbook Pages 2–3 • Key Topic 2.4",
-      "desc": "Yasser Arafat’s PLO adopts armed fedayeen struggle following the Battle of Karameh; expelled from Jordan during Black September in 1970, militants assassinate 11 Israeli athletes at the 1972 Munich Olympics.",
-      "sketchPrompt": "Dawson’s Field aircraft explosion and trace the PLO exile route from Jordan to southern Lebanon",
+      "desc": "The PFLP hijacks four Western airliners to Dawson’s Field in Jordan and blows them up; King Hussein’s army expels PLO guerrilla commandos in bloody urban combat during Black September, forcing Arafat into Lebanon.",
+      "sketchPrompt": "Sketch Dawson’s Field aircraft explosion and PLO exile route to Lebanon",
       "sketchIdeas": [
-        "✈️ Dawson’s Field hijacked aircraft",
-        "🚩 Black September crossed rifles",
-        "🏅 Munich 1972 Olympic memorial rings"
+        "✈️ Blown-up airliner fuselage at Dawson's Field",
+        "👑 King Hussein royal military beret",
+        "🗺️ PLO exile route from Amman to Beirut"
       ],
-      "conceptTitle": "Armed Resistance & Global Shock",
+      "conceptTitle": "Black September Crisis",
       "branches": [
         {
-          "label": "Fedayeen Emergence",
-          "value": "Arafat leads PLO as sole legitimate representative"
+          "label": "Air Piracy",
+          "value": "PFLP blows up hijacked airliners in front of world media"
         },
         {
-          "label": "Black September",
-          "value": "King Hussein expels PLO militias to Lebanon"
+          "label": "Hussein Strike",
+          "value": "Jordanian Army crushes armed Palestinian state-within-a-state"
         },
         {
-          "label": "Munich Olympics Terror",
-          "value": "11 Israeli athletes killed by Black September"
+          "label": "Exile to Lebanon",
+          "value": "PLO relocated to southern Lebanon, sowing seeds of 1982 invasion"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 2.4). In Milestone 5, sketch the Dawson’s Field aircraft explosion and trace the PLO exile route from Jordan to southern Lebanon."
     },
     {
       "lessonIndex": 9,
-      "lessonId": "lesson_11",
-      "milestoneBadge": "Milestone 6 (October 1973)",
-      "date": "October 1973",
-      "title": "Operation Badr, The Yom Kippur War & OPEC Embargo",
+      "lessonId": "lesson_10",
+      "milestoneBadge": "Milestone 6 (Oct 1973)",
+      "date": "6 Oct 1973",
+      "title": "Operation Badr & The Yom Kippur War",
       "pageRef": "Workbook Pages 2–3 • Key Topic 2.5",
-      "desc": "Egypt and Syria launch a surprise assault on Yom Kippur, breaching the Bar-Lev Line with high-pressure water monitors; Arab OPEC members impose an oil embargo on Western supporters, quadrupling global oil prices.",
-      "sketchPrompt": "Water-monitor breach of the Bar-Lev Line and the OPEC oil pipeline embargo valve",
+      "desc": "Egypt and Syria launch a devastating surprise attack on Yom Kippur, breaching the Bar-Lev Line with high-pressure water cannons; Arab OPEC states deploy the oil embargo weapon, quadrupling crude prices worldwide.",
+      "sketchPrompt": "Sketch water-monitor breach of Bar-Lev Line and OPEC oil pipeline embargo valve",
       "sketchIdeas": [
-        "🌊 High-pressure water monitors breaching sand wall",
-        "🛢️ OPEC oil barrel embargo valve",
-        "🕊️ UN ceasefire line & shuttle diplomacy"
+        "🌊 High-pressure water cannon breaching sand wall",
+        "🛢️ OPEC oil embargo valve & barrel",
+        "✡️ Yom Kippur prayer shawl & tank"
       ],
-      "conceptTitle": "1973 War & Energy Shock",
+      "conceptTitle": "October War & Oil Shock",
       "branches": [
         {
           "label": "Operation Badr",
-          "value": "Egyptian forces cross Suez and shatter Bar-Lev Line"
+          "value": "Egyptian water monitors blast 60 gaps through Bar-Lev sand rampart"
         },
         {
-          "label": "IDF Counter-Offensive",
-          "value": "Sharon crosses canal; 3rd Army surrounded"
+          "label": "Aman Failure",
+          "value": "Israeli intelligence misjudges Egyptian troop movements as exercises"
         },
         {
           "label": "OPEC Oil Weapon",
-          "value": "Oil prices quadruple, shocking Western economies"
+          "value": "Arab embargo triggers global fuel shortages and quadriples prices"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 2.5). In Milestone 6, sketch the water-monitor breach of the Bar-Lev Line and the OPEC oil pipeline embargo valve."
     },
     {
       "lessonIndex": 10,
-      "lessonId": "lesson_12",
-      "milestoneBadge": "Milestones 1 & 2 (1977–1979)",
-      "date": "1977–1979",
-      "title": "Sadat in Jerusalem & The Camp David Accords",
+      "lessonId": "lesson_11",
+      "milestoneBadge": "Milestone 1 (Nov 1977)",
+      "date": "Nov 1977",
+      "title": "Sadat’s Historic Address to the Knesset",
       "pageRef": "Workbook Pages 2–3 • Key Topic 3.1",
-      "desc": "Anwar Sadat makes an unprecedented journey to address the Israeli Knesset; mediated by Jimmy Carter at Camp David, Egypt and Israel sign a historic peace treaty returning the Sinai Peninsula to Egypt.",
-      "sketchPrompt": "Sadat addressing the Knesset chamber and the three-way handshake on the White House lawn",
+      "desc": "President Anwar Sadat stuns the world by flying to Jerusalem and addressing the Israeli Knesset in person, proclaiming \"No more war, no more bloodshed!\" and breaking three decades of Arab psychological taboo.",
+      "sketchPrompt": "Sketch Sadat addressing the Knesset chamber with olive branch",
       "sketchIdeas": [
-        "🏛️ Sadat addressing Israeli Knesset podium",
-        "🤝 Carter, Sadat & Begin three-way handshake",
-        "🗺️ Sinai Peninsula returned to Egyptian sovereignty"
+        "🎙️ Anwar Sadat at Knesset podium",
+        "🕊️ Olive branch of peace",
+        "🇮🇱 Israeli Knesset chamber emblem"
       ],
-      "conceptTitle": "Camp David Peace Treaty",
+      "conceptTitle": "Sadat’s Jerusalem Peace Leap",
       "branches": [
         {
-          "label": "Knesset Address",
-          "value": "Sadat declares \"No more war, no more bloodshed\""
+          "label": "Historic Flight",
+          "value": "19 Nov 1977 Sadat lands at Ben Gurion airport in Tel Aviv"
         },
         {
-          "label": "Camp David Summit",
-          "value": "13 days of negotiation mediated by Jimmy Carter"
+          "label": "Knesset Speech",
+          "value": "Direct appeal to Israeli people: \"No more war, no more bloodshed\""
         },
         {
-          "label": "Historic Treaty",
-          "value": "First Arab-Israeli peace treaty signed in 1979"
+          "label": "Arab Backlash",
+          "value": "Arab states sever diplomatic ties and expel Egypt from Arab League"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 3.1). In Milestone 1, sketch Sadat addressing the Knesset chamber and annotate his historic declaration: \"No more war, no more bloodshed!\""
     },
     {
       "lessonIndex": 11,
-      "lessonId": "lesson_13",
-      "milestoneBadge": "Milestones 4, 5 & 6 (1982–1995)",
-      "date": "1982–1995",
-      "title": "Lebanon, The First Intifada & The Oslo Accords",
+      "lessonId": "lesson_12",
+      "milestoneBadge": "Milestones 2 & 3 (1978–1979)",
+      "date": "1978–1979",
+      "title": "The Camp David Accords & Washington Peace Treaty",
       "pageRef": "Workbook Pages 2–3 • Key Topic 3.2",
-      "desc": "Israel invades Lebanon in 1982; grassroots stone-throwing youth spark the 1987 First Intifada. In 1993, Yitzhak Rabin and Yasser Arafat shake hands at the White House on the Oslo Accords before Rabin is assassinated.",
-      "sketchPrompt": "Stone-throwing youth facing an IDF tank, Rabin-Arafat handshake, and memorial flame in Tel Aviv",
+      "desc": "Jimmy Carter brokers thirteen days of intense negotiations at Camp David between Sadat and Menachem Begin; on 26 March 1979, Egypt and Israel sign a formal peace treaty, returning the Sinai Peninsula to Egyptian sovereignty.",
+      "sketchPrompt": "Sketch three-way handshake on White House lawn and return of Sinai Peninsula",
       "sketchIdeas": [
-        "🪨 Stone-throwing youth facing Merkava tank",
-        "🤝 Rabin and Arafat White House handshake",
-        "🕯️ Memorial flame for Yitzhak Rabin"
+        "🤝 Carter-Sadat-Begin White House lawn handshake",
+        "🗺️ Sinai Peninsula handover border",
+        "📜 1979 Washington Peace Treaty"
       ],
-      "conceptTitle": "Intifada to Oslo Accords",
+      "conceptTitle": "Camp David Accords",
       "branches": [
         {
-          "label": "First Intifada",
-          "value": "1987 popular uprising in Gaza and West Bank"
+          "label": "Thirteen Days",
+          "value": "Carter shuttles between isolated cabins to forge compromise"
         },
         {
-          "label": "Oslo Accords",
-          "value": "Mutual recognition and Palestinian Authority created"
+          "label": "Sinai Handover",
+          "value": "Israel evacuates Yamit settlements and returns full Sinai"
         },
         {
-          "label": "Rabin Assassination",
-          "value": "Peace process derailed by extremist violence"
+          "label": "Sadat Martyrdom",
+          "value": "6 Oct 1981 Sadat assassinated by Islamist militants in Cairo"
         }
-      ]
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 3.2). In Milestones 2 and 3, sketch the three-way handshake on the White House lawn and annotate the return of the Sinai Peninsula to Egypt."
+    },
+    {
+      "lessonIndex": 12,
+      "lessonId": "lesson_13",
+      "milestoneBadge": "Milestone 4 (1982)",
+      "date": "June–Sept 1982",
+      "title": "Operation Peace for Galilee & The Invasion of Lebanon",
+      "pageRef": "Workbook Pages 2–3 • Key Topic 3.3",
+      "desc": "Defense Minister Ariel Sharon orders Operation Peace for Galilee, advancing 40km into Lebanon all the way to Beirut; Christian Phalangist militiamen butcher hundreds of Palestinians in Sabra and Shatila refugee camps.",
+      "sketchPrompt": "Sketch IDF tank columns advancing toward Beirut and Kahan Commission ledger",
+      "sketchIdeas": [
+        "🛡️ Israeli Merkava tank column in Beirut",
+        "⛺ Sabra and Shatila camp silhouette",
+        "⚖️ Kahan Commission judicial report"
+      ],
+      "conceptTitle": "Lebanon Invasion & Aftermath",
+      "branches": [
+        {
+          "label": "Operation Peace for Galilee",
+          "value": "Sharon invades Lebanon to expel PLO and install friendly government"
+        },
+        {
+          "label": "Sabra & Shatila",
+          "value": "Phalangist massacres spark 400,000-strong protest in Tel Aviv"
+        },
+        {
+          "label": "Kahan Commission",
+          "value": "Judicial inquiry finds Sharon personally responsible; forces resignation"
+        }
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 3.3). In Milestone 4, sketch the IDF tank columns entering Beirut and annotate the Kahan Commission finding of \"personal responsibility\" against Sharon."
+    },
+    {
+      "lessonIndex": 13,
+      "lessonId": "lesson_14",
+      "milestoneBadge": "Milestone 5 (1987–1988)",
+      "date": "1987–1988",
+      "title": "The First Intifada & The 1988 Geneva Renunciation",
+      "pageRef": "Workbook Pages 2–3 • Key Topic 3.4",
+      "desc": "A traffic collision in Jabalia sparks the First Intifada across Gaza and the West Bank; youth armed with stones confront armed IDF patrols; in December 1988 in Geneva, Yasser Arafat formally recognises Israel and renounces terrorism.",
+      "sketchPrompt": "Sketch Palestinian youth facing an Israeli tank and Arafat Geneva speech",
+      "sketchIdeas": [
+        "🪨 Palestinian stone-thrower facing armored vehicle",
+        "🎙️ Arafat at UN General Assembly in Geneva",
+        "📜 Renunciation of terrorism charter"
+      ],
+      "conceptTitle": "First Intifada & Recognition",
+      "branches": [
+        {
+          "label": "Spontaneous Revolt",
+          "value": "Jabalia camp incident ignites strikes, boycotts, and civil defiance"
+        },
+        {
+          "label": "Iron Fist Policy",
+          "value": "Rabin orders military force to break bones, drawing world criticism"
+        },
+        {
+          "label": "Geneva Breakthrough",
+          "value": "Dec 1988 Arafat recognises Israel and opens dialogue with US"
+        }
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 3.4). In Milestone 5, sketch the stone-throwing youth facing an Israeli tank and annotate Arafat’s 1988 Geneva renunciation of terrorism."
+    },
+    {
+      "lessonIndex": 14,
+      "lessonId": "lesson_15",
+      "milestoneBadge": "Milestone 6 (1993–1995)",
+      "date": "1993–1995",
+      "title": "The Oslo Accords & The Assassination of Rabin",
+      "pageRef": "Workbook Pages 2–3 • Key Topic 3.5",
+      "desc": "Secret Norwegian negotiations produce the 1993 Oslo Accords and the historic Rabin-Arafat White House handshake; on 4 November 1995, Prime Minister Yitzhak Rabin is assassinated at a peace rally in Tel Aviv by a right-wing Israeli extremist.",
+      "sketchPrompt": "Sketch Oslo partition map of Areas A, B, and C and Rabin memorial flame",
+      "sketchIdeas": [
+        "🤝 Rabin-Arafat-Clinton White House handshake",
+        "🗺️ West Bank map of Areas A, B, and C",
+        "🕯️ Rabin memorial candle flame in Tel Aviv"
+      ],
+      "conceptTitle": "Oslo Peace & Rabin Assassination",
+      "branches": [
+        {
+          "label": "Oslo I Declaration",
+          "value": "13 Sept 1993 White House signing creates Palestinian Authority"
+        },
+        {
+          "label": "Oslo II Division",
+          "value": "West Bank partitioned into Areas A (civil/security PA), B, and C"
+        },
+        {
+          "label": "Rabin Assassinated",
+          "value": "4 Nov 1995 Yigal Amir fires three bullets, shattering peace momentum"
+        }
+      ],
+      "fullMissionText": "Turn to Pages 2–3 (Key Topic 3.5). In Milestone 6, sketch the map division of Areas A, B, and C and annotate the memorial flame for Yitzhak Rabin in Kings of Israel Square."
     }
   ],
   "cold_war": [
@@ -2128,11 +2247,11 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Ideological Clash",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Free Market vs State Planning"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Democracy vs Dictatorship"
         }
       ],
@@ -2151,15 +2270,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Yalta to Potsdam",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Zone division"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Polish dispute"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Atomic leverage"
         }
       ],
@@ -2178,19 +2297,19 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Berlin Crisis",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Currency reform"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Blockade"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Airlift"
         },
         {
-          "label": "Core Mechanism 4",
+          "label": "",
           "value": "NATO"
         }
       ],
@@ -2209,19 +2328,19 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Cuban Missile Crisis",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "U-2 discovery"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Quarantine"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Black Saturday"
         },
         {
-          "label": "Core Mechanism 4",
+          "label": "",
           "value": "Secret swap"
         }
       ],
@@ -2240,15 +2359,15 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Asian Proxy Wars",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Korea 38th Parallel"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Vietnam Indochina"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Guerrilla warfare"
         }
       ],
@@ -2267,19 +2386,19 @@ export const WORKBOOK_TIMELINE_DATA = {
       "conceptTitle": "Fall of the USSR",
       "branches": [
         {
-          "label": "Core Mechanism 1",
+          "label": "",
           "value": "Reagan pressure"
         },
         {
-          "label": "Core Mechanism 2",
+          "label": "",
           "value": "Glasnost/Perestroika"
         },
         {
-          "label": "Core Mechanism 3",
+          "label": "",
           "value": "Wall falls"
         },
         {
-          "label": "Core Mechanism 4",
+          "label": "",
           "value": "1991 dissolution"
         }
       ],
@@ -2295,7 +2414,7 @@ export const WORKBOOK_TIMELINE_DATA = {
       "desc": "Across nearly five decades, direct superpower armed conflict was deterred by Mutually Assured Destruction (MAD), but proxy conflicts, arms races, and political repression claimed millions of lives globally.",
       "sketchPrompt": "",
       "sketchIdeas": [],
-      "conceptTitle": "",
+      "conceptTitle": "Living Timeline Synthesis: Was the Cold War Truly Cold?",
       "branches": [],
       "fullMissionText": "Full Living Timeline Synthesis (1945–1991): Turn to Pages 10–11. Review all 10 Milestones. Ensure your dual-coding sketches and mind maps are complete across both pages."
     }
