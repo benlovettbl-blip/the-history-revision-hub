@@ -121,6 +121,29 @@ export function renderDashboard() {
     .filter((u) => gcseOrder.includes(u.id))
     .sort((a, b) => gcseOrder.indexOf(a.id) - gcseOrder.indexOf(b.id));
 
+  const unitCanonicalTitles = {
+    ks2_ww2: 'World War II & The Home Front (1939–1945)',
+    water_and_sanitation: 'Water & Sanitation (1250–Present)',
+    medieval_england: 'Medieval England (1066–1485)',
+    early_modern_world: 'Early Modern World (1450–1750)',
+    monarchy_religion_power: 'Crown, Church & Parliament (1517–1689)',
+    first_british_empire: 'The First British Empire (1600–1783)',
+    industrialisation_and_empire: 'The Industrial Revolution (1750–1900)',
+    second_british_empire: 'The Second British Empire (1783–1914)',
+    australia: 'Invasion & Survival in Australia',
+    great_war: 'Causes of the Great War (1890–1914)',
+    great_war_part2: 'The Great War (1914–1919)',
+    the_shoah: 'The Shoah (1933–1948)',
+    cold_war: 'The Cold War (1945–1991)',
+    second_world_war: 'The Second World War',
+    post_war_britain: 'Rights, Protest & Post-War Britain',
+    cme_new: 'Conflict in the Middle East (1945–1995)',
+    weimar_nazi_germany: 'Weimar & Nazi Germany (1918–1939)',
+    edexcel_medicine: 'Medicine Through Time (c.1250–Present)',
+    eee: 'Early Elizabethan England (1558–1588)',
+    usa: 'USA: Conflict at Home & Abroad (1954–1975)',
+  };
+
   const renderUnitCard = (unit, index, meta) => {
     const isUnlocked = true;
     const rawTitle = unit.title || unit.id;
