@@ -1112,7 +1112,14 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
     }
 
     if (typeof window.updateBreadcrumbs === 'function') {
-      const lessonTitle = lesson.title || `Lesson ${index + 1}`;
+      const rawTitle = lesson.title || `Lesson ${index + 1}`;
+      let shortLabel = rawTitle;
+      const matchPrefix = rawTitle.match(/^(Enquiry\s+\d+|Lesson\s+\d+|Stage\s+\d+)/i);
+      if (matchPrefix) {
+        shortLabel = matchPrefix[1];
+      } else if (rawTitle.length > 25) {
+        shortLabel = `Lesson ${index + 1}`;
+      }
       const activeUnit = appStore.state.activeUnitData || window.currentUnitData || {};
       let unitTitle = activeUnit.title
         ? activeUnit.title.replace(/^(?:Paper \d+:?|KS3:?|GCSE[^:]*:?)\s*/i, '').trim()
@@ -1120,7 +1127,7 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
       window.updateBreadcrumbs([
         { label: 'Dashboard', view: 'dashboard' },
         { label: unitTitle, view: 'lessons', unit: unitId },
-        { label: lessonTitle },
+        { label: shortLabel, tooltip: rawTitle },
       ]);
     }
 

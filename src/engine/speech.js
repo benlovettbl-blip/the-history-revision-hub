@@ -955,40 +955,11 @@ export function initSpeech() {
     }
   }
 
-  // Proactively ensure Voice Toggle button exists in #header-accessibility-bar
   if (typeof document !== 'undefined') {
-    const attachHeaderVoiceBtn = () => {
-      const headerBar = document.getElementById('header-accessibility-bar');
-      if (headerBar && !document.getElementById('btn-voice-toggle')) {
-        const dyslexiaBtn = document.getElementById('btn-dyslexia');
-        const voiceBtn = document.createElement('button');
-        voiceBtn.id = 'btn-voice-toggle';
-        voiceBtn.className = 'header-tool-btn';
-        voiceBtn.dataset.action = 'toggle-speech-voice-gender';
-        const isMale = currentVoiceGender === 'male';
-        voiceBtn.title = isMale
-          ? 'Voice: Natural UK Male (Click to switch to Female)'
-          : 'Voice: Natural UK Female (Click to switch to Male)';
-        voiceBtn.setAttribute('aria-label', 'Toggle Natural Read Aloud Voice');
-        voiceBtn.innerHTML = `
-          <i class="fa-solid fa-volume-high"></i>
-          <span class="btn-text" id="voice-toggle-label">${isMale ? 'Voice: UK ♂' : 'Voice: UK ♀'}</span>
-        `;
-
-        if (dyslexiaBtn && dyslexiaBtn.nextSibling) {
-          headerBar.insertBefore(voiceBtn, dyslexiaBtn.nextSibling);
-        } else {
-          headerBar.appendChild(voiceBtn);
-        }
-      }
-      updateVoiceUI();
-    };
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', attachHeaderVoiceBtn);
-    } else {
-      attachHeaderVoiceBtn();
-    }
+    // Remove legacy top header voice button if present to prevent toolbar overcrowding
+    const existingVoiceBtn = document.getElementById('btn-voice-toggle');
+    if (existingVoiceBtn) existingVoiceBtn.remove();
+    updateVoiceUI();
 
     // Auto-suspend speech when any modal dialog or interactive overlay opens (Recommendation 4)
     document.addEventListener('click', (e) => {

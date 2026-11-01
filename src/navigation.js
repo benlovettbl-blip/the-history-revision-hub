@@ -270,7 +270,7 @@ export function updateBreadcrumbs(customTrail = null) {
       html += `<span class="breadcrumb-separator"><i class="fa-solid fa-chevron-right"></i></span>`;
     }
     if (isLast) {
-      html += `<span class="breadcrumb-item active breadcrumb-lesson-active" title="${item.label}">${item.label}</span>`;
+      html += `<span class="breadcrumb-item active breadcrumb-lesson-active" title="${item.tooltip || item.label}">${item.label}</span>`;
     } else if (isRoot) {
       const rootIcon = `<i class="fa-solid fa-house" style="font-size: 0.8rem; margin-right: 4px;"></i>`;
       const rootText = `<span class="breadcrumb-root-text">${item.label}</span>`;

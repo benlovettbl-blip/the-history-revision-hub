@@ -680,8 +680,9 @@ details.lesson-tasks-accordion[open] > summary .accordion-arrow {
 }
 
 .breadcrumb-unit-item {
-  max-width: 220px;
-  flex-shrink: 1;
+  max-width: none;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .breadcrumb-item.active {
@@ -689,8 +690,8 @@ details.lesson-tasks-accordion[open] > summary .accordion-arrow {
   font-weight: 700;
   cursor: default;
   max-width: none;
-  flex: 1 1 auto;
-  min-width: 80px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .breadcrumb-separator {
@@ -706,12 +707,14 @@ body.in-lesson-active .breadcrumb-root-text {
 }
 
 body.in-lesson-active .breadcrumb-unit-item {
-  max-width: 160px;
+  max-width: none;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 body.in-lesson-active .breadcrumb-item.active {
-  flex: 1 1 auto;
-  min-width: 120px;
+  flex-shrink: 0;
+  white-space: nowrap;
   color: var(--text-main, #0f172a);
 }
 
@@ -5741,21 +5744,36 @@ body.sen-mode .speech-word.speaking-word-highlight {
   flex-shrink: 0;
 }
 
-/* SEN / Dyslexia Button */
-.header-tool-btn.btn-dyslexia {
-  background: var(--bg-card, #f8fafc);
+/* Header Universal Tool Button Standard */
+.header-tool-btn {
+  background: var(--bg-card, #ffffff);
   border: 1.5px solid var(--border-glass, #e2e8f0);
   border-radius: 8px;
-  padding: 6px 10px;
+  padding: 5px 11px;
+  height: 32px;
+  box-sizing: border-box;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
   color: var(--text-primary, #1e293b);
   transition: all 0.2s ease;
   user-select: none;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.header-tool-btn:hover {
+  border-color: var(--primary, #1e3a8a);
+  background: var(--bg-card-hover, #f1f5f9);
+  color: var(--primary-dark, #0f172a);
+}
+
+/* SEN / Dyslexia Button */
+.header-tool-btn.btn-dyslexia {
+  background: var(--bg-card, #f8fafc);
 }
 
 .header-tool-btn.btn-dyslexia:hover {

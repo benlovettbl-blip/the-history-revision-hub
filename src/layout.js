@@ -123,7 +123,7 @@ export function bindEvents() {
       const popover = document.getElementById('theme-popover');
       if (popover) popover.style.display = 'none';
       const label = document.getElementById('theme-toggle-label');
-      const names = { primary: 'History Hub', desert: 'Sand', space: 'Deep Space', coral: 'Coral' };
+      const names = { primary: 'Theme', desert: 'Sand', space: 'Space', coral: 'Coral' };
       if (label) label.textContent = names[themeName] || 'Theme';
     });
   });
@@ -144,7 +144,7 @@ export function bindEvents() {
     });
     // Set initial label based on saved theme
     const savedTheme = localStorage.getItem('history_theme') || 'primary';
-    const names = { primary: 'History Hub', desert: 'Sand', space: 'Deep Space', coral: 'Coral' };
+    const names = { primary: 'Theme', desert: 'Sand', space: 'Space', coral: 'Coral' };
     const label = document.getElementById('theme-toggle-label');
     if (label) label.textContent = names[savedTheme] || 'Theme';
   }

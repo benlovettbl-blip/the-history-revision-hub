@@ -1794,7 +1794,14 @@ export async function renderLessonsView() {
 
     // Update breadcrumbs to show Dashboard > Unit > Lesson Title
     if (typeof window.updateBreadcrumbs === 'function') {
-      const lessonTitle = sub.title || `Lesson ${index + 1}`;
+      const rawTitle = sub.title || `Lesson ${index + 1}`;
+      let shortLabel = rawTitle;
+      const matchPrefix = rawTitle.match(/^(Enquiry\s+\d+|Lesson\s+\d+|Stage\s+\d+)/i);
+      if (matchPrefix) {
+        shortLabel = matchPrefix[1];
+      } else if (rawTitle.length > 25) {
+        shortLabel = `Lesson ${index + 1}`;
+      }
       let unitTitle = data.title
         ? data.title.replace(/^(?:Paper \d+:?|KS3:?|GCSE[^:]*:?)\s*/i, '').trim()
         : 'Unit';
@@ -1805,7 +1812,7 @@ export async function renderLessonsView() {
           view: 'lessons',
           unit: unitId,
         },
-        { label: lessonTitle },
+        { label: shortLabel, tooltip: rawTitle },
       ]);
     }
 
