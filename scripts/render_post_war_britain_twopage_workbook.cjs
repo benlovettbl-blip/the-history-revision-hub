@@ -633,16 +633,16 @@ function renderSpinePage(cfg, pageNum) {
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #0f284e; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
           <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #0f284e; color: #ffffff; padding: 2px 7px; display: flex; align-items: center; border-bottom: 1.2px solid #0f284e;">
-            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #0f284e; font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap;">
-                Stage ${st.step}
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
+            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+                ${st.step}
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; color: #93c5fd; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 ${st.date}
               </span>
-              <span style="color: #60a5fa; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: ${st.questionHeading && st.questionHeading.length > 75 ? '8.3pt' : '8.8pt'}; font-weight: 800; color: #ffffff; white-space: nowrap;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: ${st.questionHeading && st.questionHeading.length > 75 ? '8.6pt' : '9.1pt'}; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
                 ${st.questionHeading}
               </span>
             </div>
