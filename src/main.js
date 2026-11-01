@@ -205,7 +205,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   if (view === 'usa' || view === 'gcse_usa' || view === 'gcse_usa_1954_1975') {
     view = 'lessons';
     unit = 'usa';
-  } else if (view === 'quiz' || view === 'interactive_quiz') {
+  } else if (view === 'quiz' || view === 'interactive_quiz' || view === 'retrieval') {
     view = 'interactive';
     unit = unit || 'edexcel_medicine';
   } else if (
@@ -222,6 +222,19 @@ window.addEventListener('DOMContentLoaded', async () => {
     unit = 'edexcel_medicine';
   } else if (view === 'trend-radar' || view === 'matrix' || view === 'exam-matrix') {
     view = 'mock-exams';
+  } else if (view === 'department' || view === 'department_portal' || view === 'portal') {
+    view = 'department-portal';
+  } else if (view === 'curriculum_map') {
+    view = 'curriculum';
+  } else if (view === 'arena' || view === 'competitions_zone') {
+    view = 'competitions';
+  } else if (
+    view === 'revision_guides' ||
+    view === 'revision-guides' ||
+    view === 'exam_technique' ||
+    view === 'exam-technique'
+  ) {
+    view = 'curriculum';
   } else if (!view && unit) {
     view = 'lessons';
   } else if (!view) {
@@ -407,12 +420,38 @@ window.addEventListener('DOMContentLoaded', async () => {
     if (targetView === 'usa' || targetView === 'gcse_usa' || targetView === 'gcse_usa_1954_1975') {
       targetView = 'lessons';
       targetUnit = 'usa';
+    } else if (targetView === 'quiz' || targetView === 'interactive_quiz' || targetView === 'retrieval') {
+      targetView = 'interactive';
+      targetUnit = targetUnit || 'edexcel_medicine';
+    } else if (
+      targetView === 'booklets' ||
+      targetView === 'workbooks' ||
+      targetView === 'workbook' ||
+      targetView === 'pdf' ||
+      targetView === 'pdfs' ||
+      targetView === 'textbook' ||
+      targetView === 'textbooks'
+    ) {
+      targetView = 'booklet';
     } else if (
       targetView === 'trend-radar' ||
       targetView === 'matrix' ||
       targetView === 'exam-matrix'
     ) {
       targetView = 'mock-exams';
+    } else if (targetView === 'department' || targetView === 'department_portal' || targetView === 'portal') {
+      targetView = 'department-portal';
+    } else if (targetView === 'curriculum_map') {
+      targetView = 'curriculum';
+    } else if (targetView === 'arena' || targetView === 'competitions_zone') {
+      targetView = 'competitions';
+    } else if (
+      targetView === 'revision_guides' ||
+      targetView === 'revision-guides' ||
+      targetView === 'exam_technique' ||
+      targetView === 'exam-technique'
+    ) {
+      targetView = 'curriculum';
     } else if (!targetView && targetUnit) {
       targetView = 'lessons';
     } else if (!targetView) {

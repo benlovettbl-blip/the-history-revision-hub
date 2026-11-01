@@ -506,7 +506,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   if (viewName === 'usa' || viewName === 'gcse_usa' || viewName === 'gcse_usa_1954_1975') {
     viewName = 'lessons';
     param = 'usa';
-  } else if (viewName === 'quiz' || viewName === 'interactive_quiz') {
+  } else if (viewName === 'quiz' || viewName === 'interactive_quiz' || viewName === 'retrieval') {
     viewName = 'interactive';
     param = param || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
   } else if (
@@ -519,6 +519,18 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName === 'textbooks'
   ) {
     viewName = 'booklet';
+  } else if (viewName === 'department' || viewName === 'department_portal' || viewName === 'portal') {
+    viewName = 'department-portal';
+  } else if (viewName === 'arena' || viewName === 'competitions_zone') {
+    viewName = 'competitions';
+  } else if (
+    viewName === 'curriculum_map' ||
+    viewName === 'revision_guides' ||
+    viewName === 'revision-guides' ||
+    viewName === 'exam_technique' ||
+    viewName === 'exam-technique'
+  ) {
+    viewName = 'curriculum';
   }
 
   // Handle view rendering
@@ -586,6 +598,10 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   ) {
     const { renderGcseSpecTracker } = await import('./gcse_spec_tracker.js');
     await renderGcseSpecTracker(param || 'audit');
+  } else {
+    console.warn(`[Router] Unrecognized view '${viewName}', gracefully falling back to dashboard.`);
+    appStore.state.currentView = 'dashboard';
+    renderDashboard();
   }
 
   // Update dynamic breadcrumbs

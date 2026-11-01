@@ -1103,7 +1103,7 @@
       "key_stage": "GCSE (Key Stage 4)",
       "unit_title": "Paper 2: Conflict in the Middle East, 1945-1995",
       "total_lessons": 12,
-      "total_sources": 89,
+      "total_sources": 90,
       "sources": [
         {
           "lesson_num": 1,
@@ -7082,7 +7082,7 @@
       "key_stage": "GCSE (Edexcel Paper 3)",
       "unit_title": "The USA, 1954–1975: Conflict at Home and Abroad (Civil Rights and Vietnam)",
       "total_lessons": 16,
-      "total_sources": 103,
+      "total_sources": 114,
       "exam_board": "Pearson Edexcel GCSE (9–1) Option 33",
       "sources": [
         {
@@ -8637,6 +8637,36 @@
           "commercial_use_permitted": true,
           "source_url": "https://archives.gov.vn/",
           "asset_path": "/units/usa/assets/sources/portraits/ho_chi_minh.jpg"
+        },
+        {
+          "unit": "usa",
+          "lesson_num": 5,
+          "lesson_title": "KT 2.1: Sit-Ins and Freedom Rides",
+          "source_id": "Plate 2.1c (James Meredith)",
+          "artifact_title": "James Meredith Walking on University of Mississippi Campus Escorted by US Marshals",
+          "date": "October 1962",
+          "creator": "Marion S. Trikosko, US News & World Report",
+          "repository": "Library of Congress Prints and Photographs Division",
+          "accession_id": "LC-U9- 8614-11",
+          "rights_status": "Public Domain",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.loc.gov/item/2004676834/",
+          "asset_path": "/units/usa/assets/sources/portraits/james_meredith.jpg"
+        },
+        {
+          "unit": "usa",
+          "lesson_num": 15,
+          "lesson_title": "KT 4.3: How did the US exit Vietnam, and why did South Vietnam fall so quickly in 1975?",
+          "source_id": "Plate 4.3a (Fall of Saigon Evacuation)",
+          "artifact_title": "Operation Frequent Wind: Evacuation of American Personnel and South Vietnamese Refugees, Saigon",
+          "date": "29–30 April 1975",
+          "creator": "US Navy / US Marine Corps",
+          "repository": "Naval History and Heritage Command",
+          "accession_id": "NHHC-USN-1163456",
+          "rights_status": "Public Domain",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.history.navy.mil/",
+          "asset_path": "/units/usa/assets/scenes/saigon_evacuation.png"
         }
       ]
     },
@@ -9650,9 +9680,54 @@
           "commercial_use_permitted": false,
           "source_url": "https://www.stiftung-denkmal.de/",
           "asset_path": "/images/shoah_memorial_berlin.jpg"
+        },
+        {
+          "unit": "the_shoah",
+          "lesson_num": 1,
+          "lesson_title": "Who were the Jews of Europe before the Second World War?",
+          "source_id": "Plate 1.1 (Demographic Map)",
+          "artifact_title": "Map of Jewish Population in Europe, 1933 (USHMM Demographic Survey)",
+          "date": "1933 (compilation)",
+          "creator": "United States Holocaust Memorial Museum",
+          "repository": "United States Holocaust Memorial Museum, Washington D.C.",
+          "accession_id": "USHMM-MAP-1933-EUR",
+          "rights_status": "Educational Fair Dealing (CDPA 1988)",
+          "commercial_use_permitted": true,
+          "source_url": "https://encyclopedia.ushmm.org/",
+          "asset_path": "/images/jewish_population_europe_1933_map.jpg"
+        },
+        {
+          "unit": "the_shoah",
+          "lesson_num": 3,
+          "lesson_title": "How did the outbreak of WWII transform Nazi anti-Jewish policy (1939–1941)?",
+          "source_id": "Plate 3.1 (Heydrich Portrait)",
+          "artifact_title": "Official Uniform Portrait of SS-Obergruppenführer Reinhard Heydrich, Chief of RSHA",
+          "date": "c. 1940",
+          "creator": "Heinrich Hoffmann / Bundesarchiv",
+          "repository": "Bundesarchiv (German Federal Archives), Koblenz",
+          "accession_id": "BArch Bild 146-1969-054-16",
+          "rights_status": "Public Domain / CC-BY-SA 3.0 DE",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.bild.bundesarchiv.de/",
+          "asset_path": "/images/weimar_individuals/reinhard_heydrich.jpg"
+        },
+        {
+          "unit": "the_shoah",
+          "lesson_num": 5,
+          "lesson_title": "How did the \"Final Solution\" operate, and how did Jews resist?",
+          "source_id": "Plate 5.1 (Continental Deportation Network)",
+          "artifact_title": "Map of the European Railway Deportation Network to Extermination Camps (1942–1944)",
+          "date": "1942–1944 (compilation)",
+          "creator": "United States Holocaust Memorial Museum (USHMM)",
+          "repository": "United States Holocaust Memorial Museum, Washington D.C.",
+          "accession_id": "USHMM-MAP-DEPORT-RAILWAYS",
+          "rights_status": "Educational Fair Dealing (CDPA 1988)",
+          "commercial_use_permitted": true,
+          "source_url": "https://encyclopedia.ushmm.org/",
+          "asset_path": "/images/holocaust_railway_deportation_europe_map.png"
         }
       ],
-      "total_sources": 45
+      "total_sources": 48
     },
     "cold_war": {
       "unit_id": "cold_war",
@@ -10389,7 +10464,8 @@
           "source_url": "https://www.cambridge.org/core/books/global-cold-war/6D9F36EB8F0328906B8F77BA8BA37F02",
           "asset_path": "/images/cold_war/cold_war_global_alliances_map_1980.svg"
         }
-      ]
+      ],
+      "total_sources": 52
     },
     "great_war": {
       "unit_id": "great_war",
@@ -13714,7 +13790,8 @@
           "source_url": "https://www.tmag.tas.gov.au/collections/indigenous_cultures/proclamation_board",
           "asset_path": "/images/governor_arthur_proclamation_board_1829.jpg"
         }
-      ]
+      ],
+      "total_sources": 22
     },
     "industrialisation_and_empire": {
       "unit_id": "industrialisation_and_empire",
@@ -14942,8 +15019,8 @@
     }
   },
   "total_units": 19,
-  "total_sources": 1014,
+  "total_sources": 1019,
   "total_lessons": 159,
-  "total_registered_sources": 1014,
+  "total_registered_sources": 1019,
   "last_audit": "2026-10-29T19:43:04.169Z"
 }

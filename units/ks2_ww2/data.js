@@ -1090,13 +1090,13 @@ const ks2_ww2_data = {
           options: ['1 September 1939', '3 September 1939', '10 May 1940', '8 May 1945'],
         },
         {
-          q: 'Why were mothers forbidden from accompanying school-age children onto railway platforms?',
-          a: 'To avoid chaotic crowds and emotional scenes that could delay trains',
+          q: 'What was attached to each child\'s coat lapel before boarding the evacuation trains?',
+          a: 'An official cardboard identification label',
           options: [
-            'Because there were no tickets left',
-            'To avoid chaotic crowds and emotional scenes that could delay trains',
-            'Because mothers were fighting in the army',
-            'To keep the destination secret from parents',
+            'A gold medal',
+            'An official cardboard identification label',
+            'A photo of the King',
+            'A train ticket to Scotland',
           ],
         },
         {
@@ -2607,11 +2607,11 @@ const ks2_ww2_data = {
           ],
         },
         {
-          q: 'What tool did volunteer firewatchers use to extinguish burning incendiary bombs?',
-          a: 'Buckets of sand and stirrup pumps',
+          q: 'What did volunteer firewatchers use on rooftop perches to extinguish burning incendiary bombs?',
+          a: 'Sandbags and stirrup pumps',
           options: [
-            'Buckets of sand and stirrup pumps',
-            'Large blankets',
+            'Sandbags and stirrup pumps',
+            'Large wet blankets',
             'Wooden shovels',
             'Fire hoses connected to rivers',
           ],
@@ -3344,11 +3344,11 @@ const ks2_ww2_data = {
           ],
         },
         {
-          q: 'Why did the overall health of British children improve during the wartime rationing period?',
-          a: 'A wholesome diet rich in seasonal garden produce with minimal refined fats and sugars',
+          q: 'Why was the British population healthier during the war than at almost any other time?',
+          a: 'People ate less sugar and fat and far more fresh vegetables',
           options: [
             'They ate more imported sweets and chocolate',
-            'A wholesome diet rich in seasonal garden produce with minimal refined fats and sugars',
+            'People ate less sugar and fat and far more fresh vegetables',
             'They stopped drinking fresh milk',
             'They only ate canned corned beef',
           ],
@@ -4065,10 +4065,10 @@ const ks2_ww2_data = {
         },
         {
           q: 'Why were female munitions factory workers nicknamed "Canary Girls"?',
-          a: 'Handling sulfurous explosive powder temporarily discoloured their complexions and hair',
+          a: 'Chemicals like cordite and TNT stained their skin and hair bright yellow',
           options: [
-            'They sang while working',
-            'Handling sulfurous explosive powder temporarily discoloured their complexions and hair',
+            'They sang while working in the factory',
+            'Chemicals like cordite and TNT stained their skin and hair bright yellow',
             'They wore bright yellow uniforms',
             'They kept birds in the factory',
           ],
@@ -4715,6 +4715,12 @@ const ks2_ww2_data = {
         {
           act: 3,
           title: 'Banned from the Classroom: November 1938',
+          image: '/units/ks2_ww2/assets/anti_jewish_laws_card_1938.jpg',
+          image_alt:
+            'Educational source card displaying anti-Jewish discriminatory laws and school bans in Nazi Germany',
+          caption:
+            'Anti-Jewish Laws and School Bans (1938): Chronological evidence card documenting the systematic exclusion of Jewish children from public classrooms and civic life.',
+          isReversed: true,
           text: '<span class="para-ref">[7.5]</span> The cruelest blow for young people occurred on **15 November 1938**. Following the violence of the November Pogrom, the Nazi Ministry of Education issued an official law decree: <em>"Jewish pupils are forbidden to attend German state schools."</em> Overnight, thousands of boys and girls were told they could not return to their classrooms.<br><br><span class="para-ref">[7.6]</span> For children, this was heartbreaking and bewildering. They had done nothing wrong, yet their teachers told them to pack their satchels and leave. Non-Jewish classmates with whom they had played football and shared sweets were told to stop speaking to them on the street. Denied the right to learn, play, and belong, families realized with growing panic that there was no future for their children under Nazi rule. It was this cruel exclusion from schools that led directly to the desperate scramble for rescue trains like the Kindertransport.',
           sources: [
             {
@@ -7600,6 +7606,11 @@ const ks2_ww2_data = {
         {
           act: 2,
           title: 'Sanctuary at Calgarth: Bread Under Pillows & Red Bicycles',
+          image: '/units/ks2_ww2/assets/windermere_children_calgarth_1945.jpg',
+          image_alt:
+            'Archival photograph of child Holocaust survivors arriving at the Calgarth Estate by Lake Windermere',
+          caption:
+            'Arrival at Calgarth Estate (August 1945): Child survivors stepping into their new sanctuary by Lake Windermere, where care, nutrition, and psychological support helped rebuild their shattered childhoods.',
           text: '<span class="para-ref">[11.3]</span> The children were brought to the **Calgarth Estate**, a wartime housing village near Troutbeck Bridge on the eastern shore of Lake Windermere. The estate had originally been built during the war for civilian workers who constructed Short Sunderland flying boat aircraft on the lake. Now, its single-storey wooden chalets were converted into dormitories, classrooms, and clinics. However, helping children heal from severe trauma was not simple. When the children first saw staff wearing uniforms, or were led towards communal shower blocks, many panicked, fearing they were in another concentration camp. When hot soup and fresh bread were served, many children secretly hid loaves under their pillows, terrified that food would be taken away or that they would starve the next morning.<br><br><span class="para-ref">[11.4]</span> A remarkable team of carers, led by child psychologist **Dr Oscar Friedman** and art therapist **Marie Paneth**, treated the children with infinite patience and warmth. Rather than punishing them for hoarding bread, the carers gently reassured them that food would always be plentiful. Local residents and charities rallied round, donating clothes, books, and **300 bright red bicycles**. For the first time in years, the children had freedom. They pedalled along country lanes, swam in the cold, clear waters of Lake Windermere, played football matches, and learned to speak English. Slowly and tentatively, the children began to smile, trust adults, and form friendships that would last for the rest of their lives.',
           isReversed: false,
           sources: [

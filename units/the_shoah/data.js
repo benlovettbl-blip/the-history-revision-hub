@@ -301,6 +301,9 @@ const the_shoah_data = {
         {
           "act": 1,
           "title": "The European Mosaic: 9.5 Million Lives (c. 1930s)",
+          "image": "/images/jewish_population_europe_1933_map.jpg",
+          "image_alt": "Archival map of Jewish population distribution across Europe in 1933",
+          "caption": "Demographic Map of European Jewish Life (1933, USHMM): Prior to the Holocaust, 9.5 million Jewish people lived across Europe, over half in Poland and the western Soviet Union.",
           "text": "<span class=\"para-ref\">[1.1]</span> In the early 1930s, approximately **9.5 million Jewish people** lived in Europe, representing just under two percent of the continent’s total population. They did not live in a single country, nor did they share an identical way of life. Over sixty percent of European Jews lived in Central and Eastern Europe—predominantly within the borders of Poland, Romania, Lithuania, Hungary, and the western territories of the Soviet Union. In contrast, smaller communities lived in Western Europe: roughly 500,000 in Germany, 300,000 in Britain, and 250,000 in France. Depending on where they were born, a Jewish child in 1933 might grow up speaking Yiddish in a bustling Polish city, speaking German in an intellectual Berlin household, or speaking Ladino along the sunlit Mediterranean docks of Thessaloniki.",
           "source": {
             "letter": "A",
@@ -2708,6 +2711,9 @@ const the_shoah_data = {
         {
           "act": 1,
           "title": "The Conquest of Poland and Heydrich’s Plan (1939)",
+          "image": "/images/weimar_individuals/reinhard_heydrich.jpg",
+          "image_alt": "Official uniform portrait of SS-Obergruppenführer Reinhard Heydrich, Chief of the RSHA",
+          "caption": "Reinhard Heydrich (1904–1942). Chief of the Reich Security Main Office (RSHA) whose 21 September 1939 Schnellbrief ordered the mass concentration of Polish Jews into urban ghettos.",
           "text": "<span class=\"para-ref\">[3.1]</span> On **1 September 1939**, German Panzer divisions and Luftwaffe bombers invaded Poland, triggering the outbreak of the Second World War. Poland fell within five weeks, partitioned between Nazi Germany and the Soviet Union under the terms of the secret Nazi-Soviet Pact. This military triumph fundamentally altered the demographic scale of Nazi persecution: while the regime had spent six years harassing 500,000 German Jews, it now held more than **two million Polish Jews** under brutal military occupation. On 21 September 1939, SS security chief Reinhard Heydrich issued a top-secret directive known as the **Schnellbrief** (\"Express Letter\"). Heydrich ordered that rural Jewish communities across Poland be dissolved immediately and their populations concentrated into the largest cities situated along major railway lines. This concentration was the indispensable prelude to ghettoisation.",
           "source": {
             "letter": "A",
@@ -4048,6 +4054,10 @@ const the_shoah_data = {
         {
           "act": 5,
           "title": "Perpetrator Strain and the Shift toward Industrial Murder",
+          "image": "/images/wannsee_heydrich_endlosung_directive_1941.jpg",
+          "image_alt": "Facsimile of Hermann Göring’s 31 July 1941 directive authorizing Reinhard Heydrich to prepare a total solution of the Jewish question",
+          "caption": "Göring's Endlösung Directive (31 July 1941): Document authorizing the RSHA to coordinate organizational, technical, and material preparations for a continent-wide 'total solution'.",
+          "isReversed": true,
           "text": "<span class=\"para-ref\">[4.5]</span> By the winter of 1941, the Einsatzgruppen and police battalions had shot over **500,000 people**. However, Nazi commanders confronted a logistical and psychological dilemma. Mass shooting required intimate, face-to-face murder of screaming mothers and infants in broad daylight. In August 1941, Heinrich Himmler visited Minsk and personally observed a mass shooting; visibly distressed as soil splattered his coat, Himmler worried about the severe psychological toll on his German troops, noting increased rates of alcoholism, nervous breakdowns, and suicides among executioners. SS technicians set to work finding an impersonal, mechanized method that would spare the executioners’ feelings while increasing the speed of extermination. This search led directly to the development of sealed **gas vans** using carbon monoxide exhaust fumes at **Chełmno** in December 1941—the lethal bridge leading directly to the industrial death camps.",
           "source": {
             "letter": "E",
@@ -5103,6 +5113,9 @@ const the_shoah_data = {
         {
           "act": 1,
           "title": "The Wannsee Conference: The Bureaucracy of Murder (1942)",
+          "image": "/images/holocaust_railway_deportation_europe_map.png",
+          "image_alt": "Map showing the continental Deutsche Reichsbahn railway network used for deportations to extermination camps across occupied Europe",
+          "caption": "The Continental Deportation Railway Network (1942–1944): Map illustrating how the German state railway coordinated deportations from across conquered Europe to the death camps.",
           "text": "<span class=\"para-ref\">[5.1]</span> On **20 January 1942**, fifteen senior Nazi officials, SS generals, and government ministry directors gathered at a lakeside villa in the Berlin suburb of **Wannsee**. Convened by Reinhard Heydrich and recorded by Adolf Eichmann, the meeting lasted barely ninety minutes. Wannsee was not the moment when the decision to murder Europe’s Jews was made; that decision had already been taken by Hitler and Himmler in 1941. Instead, Wannsee was a logistical conference designed to secure the total coordination of the civilian state bureaucracy: the Foreign Office, the Ministry of Justice, the Interior Ministry, and the state railway (<em>Deutsche Reichsbahn</em>). Eichmann prepared a statistical chart detailing **eleven million Jews across Europe**—including those in neutral nations like Switzerland and Ireland, and unconquered Britain—who were to be combed from west to east and systematically eliminated.",
           "source": {
             "letter": "A",
@@ -6352,6 +6365,9 @@ const the_shoah_data = {
         {
           "act": 1,
           "title": "The Bureaucracy of Destruction: Ordinary Professionals",
+          "image": "/images/nuremberg_trial_defendants_dock_1945.jpg",
+          "image_alt": "The defendants dock at the International Military Tribunal in Nuremberg, 1945–1946",
+          "caption": "The Dock at the Nuremberg Trials (November 1945): Leading Nazi perpetrators, ministers, and military commanders on trial before the International Military Tribunal.",
           "text": "<span class=\"para-ref\">[6.1]</span> In his monumental study <em>The Destruction of the European Jews</em>, historian **Raul Hilberg** demonstrated that the Holocaust was not carried out solely by ideological fanatics or SS guards in death camps. It was organized and executed by the entire modern state machinery. Mass murder required **university-educated civil servants** to draft anti-Jewish decrees; tax officials to confiscate bank accounts; lawyers to strip citizenship; architects to blueprint high-capacity crematoria; and engineers to supply poison gas. Crucially, the transport of millions of human beings across Europe was managed by the **Deutsche Reichsbahn** (German State Railway). Ordinary railway clerks, switch operators, and train drivers scheduled hundreds of \"special deportation trains\", calculating billing tariffs per passenger kilometer and ensuring that death trains ran on time while German troops fought on the Eastern Front. Most of these professionals never shot an individual; yet their paperwork was lethal.",
           "source": {
             "letter": "A",

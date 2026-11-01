@@ -4575,7 +4575,7 @@ const water_and_sanitation_data = {
       skill: 'Causation & Significance',
       card_image: '/images/court_for_king_cholera.png',
       card_position: 'center',
-      banner: 'Enquiry 04 • Industrial Growth & The Great Stink (1750–1858)',
+      banner: '/images/father_thames_punch_1858.jpg',
       cover_image: '/images/father_thames_punch_1858.jpg',
       prologue:
         'Between 1780 and 1858, the Industrial Revolution catapulted Britain into the modern era, but at a horrifying human cost. Millions of rural labourers flooded into factory boomtowns like Manchester, Leeds, and London, crammed into unventilated back-to-back slums where cesspools overflowed into drinking wells. When Asiatic cholera struck in 1831, the medical establishment was helpless, trapped by ancient miasma beliefs. Even when Edwin Chadwick proved in 1842 that filth caused disease and poverty, Victorian politicians clung to laissez-faire inaction. It took the terrifying heatwave of June 1858—the Great Stink—when the raw sewage of three million Londoners fermenting in the Thames threatened Parliament itself, to finally force the government to act and commission Sir Joseph Bazalgette’s brick revolution.',
@@ -5261,7 +5261,7 @@ const water_and_sanitation_data = {
       skill: 'Significance & Evidence',
       card_image: '/images/john_snow_cholera_map.jpg',
       card_position: 'center',
-      banner: 'Enquiry 05 • Germ Theory, Dr Snow & The 1875 Revolution (1854–1900)',
+      banner: '/images/john_snow_cholera_map.jpg',
       cover_image: '/images/john_snow.jpg',
       prologue:
         'Between 1854 and 1884, a scientific revolution shattered centuries of medical ignorance. In September 1854, when Asiatic cholera struck Soho, Dr John Snow mapped every death around the Broad Street pump, deducing that cholera was waterborne long before bacteria could be seen. Though the medical establishment stubbornly defended miasma dogma, French chemist Louis Pasteur proved in 1861 that microscopic germs caused fermentation and disease. German microbiologist Robert Koch isolated Vibrio cholerae in 1884, providing undeniable laboratory proof. Armed with scientific certainty and galvanized by expanding working-class voting power, Disraeli’s government passed the landmark Public Health Act of 1875—compelling local councils to provide clean water, covered drainage, and sanitary inspections, permanently defeating epidemic cholera in Britain.',
@@ -6156,6 +6156,11 @@ const water_and_sanitation_data = {
           ref: '[6.2]',
           period: '1854',
           title: 'Reason 1: Dr John Snow & Scientific Epidemiology (1854)',
+          image: '/units/water_and_sanitation/assets/john_snow.jpg',
+          image_alt:
+            'Portrait engraving of Dr John Snow, pioneer of epidemiology and the 1854 Broad Street investigation',
+          caption:
+            'Dr John Snow (1813–1858). The London physician whose 1854 Soho spot-map deduced cholera was a waterborne poison swallowed from contaminated water.',
           text: '<span class="para-ref">[6.2]</span> The first decisive breakthrough was scientific observation and data analysis led by **Dr John Snow**. In 1854, the medical establishment stubbornly insisted that cholera was spread by **miasma** (poisonous air). Snow challenged this dogma through rigorous forensic detective work during the Soho cholera outbreak. By plotting 616 deaths on a **spot map**, Snow proved that fatalities clustered tightly around the **Broad Street water pump**. He uncovered crucial negative anomalies—such as the Lion Brewery, where workers drank only beer and suffered zero deaths—and persuaded the local vestry to remove the pump handle. Snow proved that cholera was a water-borne disease swallowed through contaminated water, fundamentally shifting public health from purifying air to purifying water.',
         },
         {
@@ -6173,6 +6178,11 @@ const water_and_sanitation_data = {
           ref: '[6.4]',
           period: '1861',
           title: 'Reason 3: Louis Pasteur & The Germ Theory (1861)',
+          image: '/units/water_and_sanitation/assets/louis_pasteur.jpg',
+          image_alt:
+            'Portrait photograph of French microbiologist Louis Pasteur in his laboratory',
+          caption:
+            'Louis Pasteur (1822–1895). French chemist whose 1861 Germ Theory proved microscopic organisms cause decay and disease.',
           text: '<span class="para-ref">[6.4]</span> The third crucial factor was microbiological laboratory science, led by French chemist **Louis Pasteur**. Before Pasteur, politicians and ratepayers resisted spending money on expensive sewers because they believed disease arose mysteriously from decaying matter (**spontaneous generation**). In 1861, Pasteur published his **Germ Theory of Disease**. Using curved swan-neck flasks, Pasteur proved that sterilized broth stayed pure until microbes from airborne dust entered the liquid. Pasteur demonstrated that living micro-organisms caused decay and disease. When German scientist **Robert Koch** isolated the cholera bacterium (*Vibrio cholerae*) under the microscope in 1884, he provided undeniable laboratory proof that Snow was correct, giving engineers and reformers the ultimate scientific backing to demand sanitary reform.',
         },
         {
