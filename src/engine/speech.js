@@ -469,7 +469,7 @@ function updateFloatingAudioPlayerState() {
   }
   if (voiceBtn) {
     const isMale = currentVoiceGender === 'male';
-    voiceBtn.innerHTML = isMale ? '<i class="fa-solid fa-mars"></i> UK ♂' : '<i class="fa-solid fa-venus"></i> UK ♀';
+    voiceBtn.innerHTML = isMale ? '<i class="fa-solid fa-mars"></i> <span class="sfp-voice-text">UK ♂</span>' : '<i class="fa-solid fa-venus"></i> <span class="sfp-voice-text">UK ♀</span>';
     voiceBtn.title = `Voice: ${isMale ? 'Natural UK Male' : 'Natural UK Female'} (Click to switch)`;
   }
 }
@@ -490,7 +490,7 @@ function showFloatingAudioPlayer() {
           ${currentSpeechRate}x
         </button>
         <button type="button" class="sfp-btn sfp-voice-toggle" id="sfp-voice-btn" title="Voice: ${isMale ? 'Natural UK Male' : 'Natural UK Female'} (Click to switch)">
-          ${isMale ? '<i class="fa-solid fa-mars"></i> UK ♂' : '<i class="fa-solid fa-venus"></i> UK ♀'}
+          ${isMale ? '<i class="fa-solid fa-mars"></i> <span class="sfp-voice-text">UK ♂</span>' : '<i class="fa-solid fa-venus"></i> <span class="sfp-voice-text">UK ♀</span>'}
         </button>
         <button type="button" class="sfp-btn sfp-pause-btn" id="sfp-pause-btn" title="Pause Reading">
           <i class="fa-solid fa-pause"></i>
@@ -956,9 +956,6 @@ export function initSpeech() {
   }
 
   if (typeof document !== 'undefined') {
-    // Remove legacy top header voice button if present to prevent toolbar overcrowding
-    const existingVoiceBtn = document.getElementById('btn-voice-toggle');
-    if (existingVoiceBtn) existingVoiceBtn.remove();
     updateVoiceUI();
 
     // Auto-suspend speech when any modal dialog or interactive overlay opens (Recommendation 4)

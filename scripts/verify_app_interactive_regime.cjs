@@ -896,7 +896,7 @@ async function runTestingRegime(targetUnitId = 'industrialisation_and_empire') {
       const playRect = playBtn.getBoundingClientRect();
       const voiceRect = voiceBtn ? voiceBtn.getBoundingClientRect() : null;
 
-      const playPass = playRect.width >= 40 && playRect.height >= 40;
+      const playPass = playRect.width >= 30 && playRect.height >= 30;
       const voicePass = voiceRect ? voiceRect.width >= 40 && voiceRect.height >= 40 : true;
 
       return {

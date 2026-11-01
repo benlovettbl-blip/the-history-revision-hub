@@ -6395,7 +6395,7 @@ export function renderLesson(lesson) {
 
         const sourceHeaderHtml = sourceTitle
           ? `
-            <div class="archival-source-header" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 8px; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0;">
+            <div class="archival-source-header" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; padding-bottom: 8px; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0;">
               <h4 class="archival-source-title" style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.12rem; font-weight: 700; color: #0f172a;">${sourceTitle}</h4>
               ${sourceAudioBtnHtml}
             </div>
@@ -6952,15 +6952,15 @@ export function renderLesson(lesson) {
       if (stageQ) {
         headerBlockHtml = `
           <div class="workbook-stage-question-banner unified-stage-header-card" id="stage-banner-${stageNum}" style="margin-bottom: 14px; background: #0f172a; border: 1px solid #334155; border-left: 4px solid #0284c7; border-radius: 8px; padding: 12px 16px; color: #ffffff; box-shadow: 0 2px 6px rgba(15,23,42,0.12);">
-            <div class="stage-header-top-bar" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
-              <div class="stage-header-meta" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0;">
+            <div class="stage-header-top-bar" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 8px;">
+              <div class="stage-header-meta" style="flex: 1 1 auto; min-width: 0; display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                 <span class="stage-decimal-pill" style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">
                   ${decimalRef}
                 </span>
                 ${themeHeadingHtml}
                 ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.18); border: 1px solid rgba(245,158,11,0.35); padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
               </div>
-              <div class="narrative-chunk-audio" style="margin-left: auto; flex-shrink: 0;">
+              <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px;">
                 ${renderAudioPlaybackBar('Read Aloud Paragraph')}
               </div>
             </div>
@@ -6987,13 +6987,13 @@ export function renderLesson(lesson) {
         `;
       } else {
         headerBlockHtml = `
-          <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap;">
-            <div class="narrative-chunk-meta" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0;">
+          <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 10px;">
+            <div class="narrative-chunk-meta" style="flex: 1 1 auto; min-width: 0; display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
               ${showParaNumber ? `<span class="stage-decimal-pill" style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">${decimalRef}</span>` : ''}
               ${themeHeadingHtml}
               ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
             </div>
-            <div class="narrative-chunk-audio" style="margin-left: auto; flex-shrink: 0;">
+            <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px;">
               ${renderAudioPlaybackBar('Read Aloud Paragraph')}
             </div>
           </div>
@@ -7042,13 +7042,13 @@ export function renderLesson(lesson) {
         extrasHtml += `
             <div class="level4-narrative-container" style="display: none;">
               <div id="para-l4-${index + 1}" class="narrative-chunk" style="display: flex; flex-direction: column; margin-bottom: 15px; padding: 16px 18px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #10b981; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04);">
-                <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap;">
-                  <div class="narrative-chunk-meta" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0;">
+                <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 10px;">
+                  <div class="narrative-chunk-meta" style="flex: 1 1 auto; min-width: 0; display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                     <span class="stage-decimal-pill" style="background:#ecfdf5; color:#047857; border: 1px solid #a7f3d0; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">${decimalRef}</span>
                     <h4 class="narrative-heading" style="margin: 0; color: #065f46; font-size: 1.05rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-bookmark" style="color: #10b981; font-size: 0.88rem;"></i><span>${cleanHeadingTitle}</span></h4>
                     <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 800; background: #d1fae5; color: #047857; padding: 2px 6px; border-radius: 3px; text-transform: uppercase;">Extension Tier</span>
                   </div>
-                  <div class="narrative-chunk-audio" style="margin-left: auto; flex-shrink: 0;">
+                  <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px;">
                     ${renderAudioPlaybackBar('Read Aloud Paragraph (Level 4)')}
                   </div>
                 </div>
