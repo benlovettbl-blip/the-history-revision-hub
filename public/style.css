@@ -543,15 +543,7 @@ details.lesson-tasks-accordion[open] > summary .accordion-arrow {
   min-width: 0;
   max-width: 100%;
   overflow-x: hidden;
-  background: linear-gradient(
-    -45deg,
-    var(--bg-app),
-    var(--bg-card),
-    var(--bg-sidebar),
-    var(--bg-app)
-  );
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  background-color: var(--bg-app, #f8fafc);
 }
 
 .content-container {
@@ -934,9 +926,15 @@ html {
 
 /* --- Modules grid --- */
 .section-title {
-  font-size: 1.4rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  color: var(--text-main, #0f172a);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .modules-grid {

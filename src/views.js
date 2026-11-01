@@ -223,9 +223,9 @@ export function renderDashboard() {
   if (ks2Units.length > 0) {
     html += `
       <div class="dashboard-curriculum-block stage-block-ks2" id="block-ks2">
-        <h3 class="section-title" id="ks2-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-          <span style="background: #e0e7ff; color: #3730a3; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Key Stage 2</span>
-          World War II &amp; The Home Front (1939–1945)
+        <h3 class="section-title" id="ks2-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
+          <span style="background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Key Stage 2</span>
+          <span>World War II &amp; The Home Front (1939–1945)</span>
         </h3>
         <div class="modules-grid" style="margin-bottom: 2rem;">
     `;
@@ -237,7 +237,10 @@ export function renderDashboard() {
   if (year7Units.length > 0) {
     html += `
       <div class="dashboard-curriculum-block stage-block-ks3" id="block-year7">
-        <h3 class="section-title" id="year7-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px;">Year 7: Medieval Realms &amp; Foundations</h3>
+        <h3 class="section-title" id="year7-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
+          <span style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Key Stage 3</span>
+          <span>Year 7: Medieval Realms &amp; Foundations</span>
+        </h3>
         <div class="modules-grid" style="margin-bottom: 2rem;">
     `;
     year7Units.forEach(renderUnitCard);
@@ -248,7 +251,10 @@ export function renderDashboard() {
   if (year8Units.length > 0) {
     html += `
       <div class="dashboard-curriculum-block stage-block-ks3" id="block-year8">
-        <h3 class="section-title" id="year8-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px;">Year 8: Early Modern Transitions &amp; Empire</h3>
+        <h3 class="section-title" id="year8-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
+          <span style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Key Stage 3</span>
+          <span>Year 8: Early Modern Transitions &amp; Empire</span>
+        </h3>
         <div class="modules-grid" style="margin-bottom: 2rem;">
     `;
     year8Units.forEach(renderUnitCard);
@@ -258,7 +264,10 @@ export function renderDashboard() {
   // Year 9 Section
   html += `
     <div class="dashboard-curriculum-block stage-block-ks3" id="block-year9">
-      <h3 class="section-title" id="year9-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px;">Year 9: The Modern World &amp; Global Conflict</h3>
+      <h3 class="section-title" id="year9-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
+        <span style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Key Stage 3</span>
+        <span>Year 9: The Modern World &amp; Global Conflict</span>
+      </h3>
   `;
   if (year9Units.length > 0) {
     html += `<div class="modules-grid" style="margin-bottom: 1rem;">`;
@@ -287,9 +296,9 @@ export function renderDashboard() {
   if (year10Units.length > 0) {
     html += `
       <div class="dashboard-curriculum-block stage-block-gcse" id="block-year10">
-        <h3 class="section-title" id="year10-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px;">
-          Year 10: Edexcel GCSE History (9–1)
-          <span style="font-size:0.68em;font-weight:700;background:#fef3c7;color:#92400e;border:1px solid #fde68a;padding:2px 10px;border-radius:12px;vertical-align:middle;margin-left:8px;">GCSE</span>
+        <h3 class="section-title" id="year10-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
+          <span style="background: #fef3c7; color: #92400e; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">GCSE (9–1)</span>
+          <span>Year 10: Edexcel GCSE History</span>
         </h3>
         <div class="modules-grid" style="margin-bottom: 2rem;">
     `;
@@ -301,9 +310,9 @@ export function renderDashboard() {
   if (year11Units.length > 0) {
     html += `
       <div class="dashboard-curriculum-block stage-block-gcse" id="block-year11">
-        <h3 class="section-title" id="year11-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px;">
-          Year 11: Edexcel GCSE History (9–1)
-          <span style="font-size:0.68em;font-weight:700;background:#fef3c7;color:#92400e;border:1px solid #fde68a;padding:2px 10px;border-radius:12px;vertical-align:middle;margin-left:8px;">GCSE</span>
+        <h3 class="section-title" id="year11-section" style="font-family: 'Playfair Display', serif; font-size: 1.18rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; color: var(--text-main, #0f172a);">
+          <span style="background: #fef3c7; color: #92400e; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">GCSE (9–1)</span>
+          <span>Year 11: Edexcel GCSE History</span>
         </h3>
 
         <div class="modules-grid" style="margin-bottom: 1.5rem;">
