@@ -6803,44 +6803,7 @@ export function renderLesson(lesson) {
           `;
         }
 
-        const isAccordionUnit =
-          isKs2 ||
-          window.currentUnitId === 'ks2_ww2' ||
-          unitId === 'ks2_ww2' ||
-          window.currentUnitId === 'cme_new' ||
-          unitId === 'cme_new' ||
-          window.currentUnitId === 'edexcel_medicine' ||
-          unitId === 'edexcel_medicine' ||
-          window.currentUnitId === 'eee' ||
-          unitId === 'eee' ||
-          window.currentUnitId === 'weimar_nazi_germany' ||
-          unitId === 'weimar_nazi_germany' ||
-          window.currentUnitId === 'monarchy_religion_power' ||
-          unitId === 'monarchy_religion_power' ||
-          window.currentUnitId === 'first_british_empire' ||
-          unitId === 'first_british_empire' ||
-          window.currentUnitId === 'medieval_england' ||
-          unitId === 'medieval_england' ||
-          window.currentUnitId === 'industrialisation_and_empire' ||
-          unitId === 'industrialisation_and_empire' ||
-          window.currentUnitId === 'great_war' ||
-          unitId === 'great_war' ||
-          window.currentUnitId === 'great_war_part2' ||
-          unitId === 'great_war_part2' ||
-          window.currentUnitId === 'early_modern_world' ||
-          unitId === 'early_modern_world' ||
-          window.currentUnitId === 'water_and_sanitation' ||
-          unitId === 'water_and_sanitation' ||
-          window.currentUnitId === 'cold_war' ||
-          unitId === 'cold_war' ||
-          window.currentUnitId === 'the_shoah' ||
-          unitId === 'the_shoah' ||
-          window.currentUnitId === 'post_war_britain' ||
-          unitId === 'post_war_britain' ||
-          window.currentUnitId === 'australia' ||
-          unitId === 'australia' ||
-          window.currentUnitId === 'usa' ||
-          unitId === 'usa';
+        const isAccordionUnit = true;
 
         if (isAccordionUnit) {
           const sLetterMatch = (rawSource.title || '').match(/Source\s+([A-Z0-9]+)/i);
@@ -7035,7 +6998,7 @@ export function renderLesson(lesson) {
 
       const narrativeChunkHtml = `
               <div id="para-${index + 1}" class="narrative-chunk" style="display: flex; flex-direction: column; margin-bottom: ${hasPureVisual ? '0' : '15px'}; padding: 16px 18px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: 1 1 58%; min-width: 0;">
-                ${headerBlockHtml}
+                ${stageQ ? '' : headerBlockHtml}
                 <div class="narrative-text" style="width: 100%; line-height: 1.65; color: #1e293b; font-size: 1.05rem;">${styledContent}</div>
               </div>
       `;
@@ -7049,6 +7012,7 @@ export function renderLesson(lesson) {
           </div>
         `;
         topNarrativeHtml = `
+          ${stageQ ? headerBlockHtml : ''}
           <div class="narrative-visual-row ${isReversed ? 'row-reversed' : ''}" style="display: flex; gap: 20px; align-items: stretch; margin-bottom: 16px; ${isReversed ? 'flex-direction: row-reverse;' : ''}">
             ${narrativeChunkHtml}
             ${visualPlateHtml}
@@ -7056,6 +7020,7 @@ export function renderLesson(lesson) {
         `;
       } else {
         topNarrativeHtml = `
+          ${stageQ ? headerBlockHtml : ''}
           ${narrativeChunkHtml}
           ${imageHtml}
         `;

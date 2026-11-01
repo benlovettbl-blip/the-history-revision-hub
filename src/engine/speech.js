@@ -887,7 +887,7 @@ export function readAloudText(btnElement) {
   // Find parent container (narrative chunk, source box, or card)
   const chunk =
     btnElement.closest(
-      '.narrative-chunk, .archival-source-box, .gcse-source-container, .card, .content-section',
+      '.narrative-chunk, .archival-source-box, .gcse-source-container, .standard-narrative-container, .card, .content-section',
     ) || btnElement.parentElement;
   if (!chunk) return;
 
