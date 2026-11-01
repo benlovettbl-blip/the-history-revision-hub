@@ -5,6 +5,7 @@
   --bg-app: #fefae0;
   --bg-sidebar: #faedcd;
   --bg-card: #ffffff;
+  --bg-canvas-gradient: linear-gradient(-45deg, #faedcd, #fefae0, #f5ebe0, #faedcd);
   --text-main: #333d29;
   --text-muted: #606c38;
   --border-glass: rgba(212, 163, 115, 0.15);
@@ -22,6 +23,7 @@
   --bg-app: #0f172a;
   --bg-sidebar: #1e293b;
   --bg-card: #1e293b90;
+  --bg-canvas-gradient: linear-gradient(-45deg, #0f172a, #1e293b, #1e1b4b, #0f172a);
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --border-glass: rgba(99, 102, 241, 0.2);
@@ -39,6 +41,7 @@
   --bg-app: #fff1f2;
   --bg-sidebar: #ffe4e6;
   --bg-card: #ffffff;
+  --bg-canvas-gradient: linear-gradient(-45deg, #ffe4e6, #fff1f2, #fecdd3, #ffe4e6);
   --text-main: #4c0519;
   --text-muted: #9f1239;
   --border-glass: rgba(244, 63, 94, 0.15);
@@ -56,6 +59,7 @@
   --bg-app: #f1f5f9;
   --bg-sidebar: #0c2340;
   --bg-card: #ffffff;
+  --bg-canvas-gradient: linear-gradient(-45deg, #dbe4ef, #edf3fa, #e2e8f0, #d9e3f0, #eef4f9);
   --text-main: #0c2340;
   --text-muted: #475569;
   --border-glass: rgba(12, 35, 64, 0.08);
@@ -543,7 +547,12 @@ details.lesson-tasks-accordion[open] > summary .accordion-arrow {
   min-width: 0;
   max-width: 100%;
   overflow-x: hidden;
-  background-color: var(--bg-app, #f8fafc);
+  background: var(
+    --bg-canvas-gradient,
+    linear-gradient(-45deg, #dbe4ef, #edf3fa, #e2e8f0, #d9e3f0, #eef4f9)
+  );
+  background-size: 300% 300%;
+  animation: gradientBG 22s ease infinite;
 }
 
 .content-container {
