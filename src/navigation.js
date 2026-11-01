@@ -1052,16 +1052,8 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     navTimeline.style.display = 'none';
   }
 
-  const hasMasteryRecall = !isTrip;
-  if (navInteractive && hasMasteryRecall) {
-    navInteractive.style.display = 'flex';
-    navInteractive.dataset.action = 'switch-view';
-    navInteractive.dataset.view = 'interactive';
-    navInteractive.dataset.unit = unitId;
-    navInteractive.innerHTML =
-      '<i class="fa-solid fa-brain" style="color: #f59e0b;"></i><span>Interactive Quizzing &amp; Flashcards</span>';
-    navInteractive.onclick = () => switchView('interactive', unitId);
-  } else if (navInteractive) {
+  // Interactive Quizzing & Flashcards - DECOMMISSIONED from sidebar in favour of Hero Curricular Launchpad & In-Lesson Consolidation Station
+  if (navInteractive) {
     navInteractive.style.display = 'none';
   }
 
