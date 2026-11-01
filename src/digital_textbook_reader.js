@@ -29,7 +29,7 @@ export const TEXTBOOK_CATALOG = {
         shortTitle: 'KT1: Creation of Israel',
         period: '1945–1956',
         htmlUrl: '/units/cme_new/textbook_KT1_PUBLISHER.html',
-        pdfUrl: '/pdfs/cme_new_textbook_KT1_PUBLISHER.pdf',
+        pdfUrl: '/pdfs/cme_new_textbook_KT1.pdf',
         spreads: [
           {
             index: 0,
@@ -90,7 +90,7 @@ export const TEXTBOOK_CATALOG = {
         shortTitle: 'KT2: Escalating Conflict',
         period: '1964–1973',
         htmlUrl: '/units/cme_new/textbook_KT2_PUBLISHER.html',
-        pdfUrl: '/pdfs/cme_new_textbook_KT2_PUBLISHER.pdf',
+        pdfUrl: '/pdfs/cme_new_textbook_KT2.pdf',
         spreads: [
           {
             index: 0,
@@ -154,7 +154,7 @@ export const TEXTBOOK_CATALOG = {
         shortTitle: 'KT3: Search for Peace',
         period: '1974–1995',
         htmlUrl: '/units/cme_new/textbook_KT3_PUBLISHER.html',
-        pdfUrl: '/pdfs/cme_new_textbook_KT3_PUBLISHER.pdf',
+        pdfUrl: '/pdfs/cme_new_textbook_KT3.pdf',
         spreads: [
           {
             index: 0,

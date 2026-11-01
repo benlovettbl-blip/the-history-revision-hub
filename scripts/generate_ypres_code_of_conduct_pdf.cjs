@@ -472,8 +472,10 @@ async function generatePDF() {
   const localPdfPath = path.join(publicPdfDir, 'Ypres trip 2026 Code of Conduct.pdf');
 
   // Launch Puppeteer
+  const chromePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
   const browser = await puppeteer.launch({
     headless: 'new',
+    executablePath: fs.existsSync(chromePath) ? chromePath : undefined,
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   });
 

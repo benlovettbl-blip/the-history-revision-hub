@@ -1263,8 +1263,10 @@ async function generateOpenEveningSheet() {
 
   // Launch Puppeteer to render exact pixel-perfect A3 PDF
   console.log('🖨️ Launching Puppeteer to compile A3 Landscape PDF (420mm x 297mm)...');
+  const chromePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
   const browser = await puppeteer.launch({
     headless: 'new',
+    executablePath: fs.existsSync(chromePath) ? chromePath : undefined,
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   });
 

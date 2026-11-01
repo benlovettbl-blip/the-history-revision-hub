@@ -324,8 +324,10 @@ async function generateScriptPdf() {
 </html>
   `;
 
+  const chromePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
   const browser = await puppeteer.launch({
     headless: 'new',
+    executablePath: fs.existsSync(chromePath) ? chromePath : undefined,
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   });
 
