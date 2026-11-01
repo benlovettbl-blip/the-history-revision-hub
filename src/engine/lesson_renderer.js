@@ -6954,10 +6954,12 @@ export function renderLesson(lesson) {
           <div class="workbook-stage-question-banner unified-stage-header-card" id="stage-banner-${stageNum}" style="margin-bottom: 14px; background: #0f172a; border: 1px solid #334155; border-left: 4px solid #0284c7; border-radius: 8px; padding: 12px 16px; color: #ffffff; box-shadow: 0 2px 6px rgba(15,23,42,0.12);">
             <div class="stage-header-top-bar" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 8px;">
               <div class="stage-header-meta" style="flex: 1 1 auto; min-width: 0; display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                <span class="stage-decimal-pill" style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">
-                  ${decimalRef}
+                <span class="stage-header-title-row" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span class="stage-decimal-pill" style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">
+                    ${decimalRef}
+                  </span>
+                  ${themeHeadingHtml}
                 </span>
-                ${themeHeadingHtml}
                 ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.18); border: 1px solid rgba(245,158,11,0.35); padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
               </div>
               <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px;">
@@ -6989,8 +6991,10 @@ export function renderLesson(lesson) {
         headerBlockHtml = `
           <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 10px;">
             <div class="narrative-chunk-meta" style="flex: 1 1 auto; min-width: 0; display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-              ${showParaNumber ? `<span class="stage-decimal-pill" style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">${decimalRef}</span>` : ''}
-              ${themeHeadingHtml}
+              <span class="stage-header-title-row" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                ${showParaNumber ? `<span class="stage-decimal-pill" style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">${decimalRef}</span>` : ''}
+                ${themeHeadingHtml}
+              </span>
               ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
             </div>
             <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px;">

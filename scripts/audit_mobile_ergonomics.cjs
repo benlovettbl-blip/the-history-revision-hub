@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const { spawn } = require('child_process');
+const path = require('path');
 
 const VIEWPORTS = [
   { name: 'iPhone SE', width: 375, height: 667 },
@@ -28,7 +29,8 @@ async function runMobileAudit() {
   console.log('🚀 Spawning Vite test server on port 3005...');
   const viteProcess = spawn('npx', ['vite', '--port', '3005'], {
     shell: true,
-    stdio: 'pipe'
+    stdio: 'pipe',
+    cwd: path.resolve(__dirname, '..')
   });
 
   await new Promise((resolve) => {
