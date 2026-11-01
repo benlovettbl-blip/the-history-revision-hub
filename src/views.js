@@ -112,8 +112,8 @@ export function renderDashboard() {
   const gcseMeta = {
     edexcel_medicine: { paper: '1', paperNumber: 1, stage: 'gcse', paperBadge: 'Paper 1', stageLabel: 'Edexcel Paper 1' },
     eee: { paper: '2', paperNumber: 2, stage: 'gcse', paperBadge: 'Paper 2', stageLabel: 'Edexcel Paper 2' },
+    cme_new: { paper: '2', paperNumber: 2, stage: 'gcse', paperBadge: 'Paper 2', stageLabel: 'Edexcel Paper 2' },
     weimar_nazi_germany: { paper: '3', paperNumber: 3, stage: 'gcse', paperBadge: 'Paper 3', stageLabel: 'Edexcel Paper 3' },
-    cme_new: { paper: '3', paperNumber: 3, stage: 'gcse', paperBadge: 'Paper 3', stageLabel: 'Edexcel Paper 3' },
     usa: { paper: '3', paperNumber: 3, stage: 'gcse', paperBadge: 'Paper 3', stageLabel: 'Edexcel Paper 3' },
   };
   const gcseOrder = Object.keys(gcseMeta);
@@ -326,10 +326,10 @@ export function renderDashboard() {
 
           <!-- GCSE Paper Sub-Filter Chips -->
           <div class="gcse-subfilter-chips" style="display: inline-flex; align-items: center; gap: 4px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 3px;">
-            <button class="gcse-filter-btn active" data-paper="all" style="background: #92400e; color: #ffffff; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">All Papers (5)</button>
-            <button class="gcse-filter-btn" data-paper="1" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 1 (1)</button>
-            <button class="gcse-filter-btn" data-paper="2" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 2 (1)</button>
-            <button class="gcse-filter-btn" data-paper="3" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 3 (3)</button>
+            <button class="gcse-filter-btn active" data-paper="all" style="background: #92400e; color: #ffffff; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">All Papers (${gcseUnits.length})</button>
+            <button class="gcse-filter-btn" data-paper="1" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 1 (${gcseUnits.filter((u) => (gcseMeta[u.id] || {}).paper === '1').length})</button>
+            <button class="gcse-filter-btn" data-paper="2" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 2 (${gcseUnits.filter((u) => (gcseMeta[u.id] || {}).paper === '2').length})</button>
+            <button class="gcse-filter-btn" data-paper="3" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 3 (${gcseUnits.filter((u) => (gcseMeta[u.id] || {}).paper === '3').length})</button>
           </div>
         </div>
 
