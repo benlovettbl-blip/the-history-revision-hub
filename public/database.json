@@ -87324,6 +87324,10 @@
           },
           "margin_spine": [
             {
+              "year": "Strategy",
+              "label": "Assessment Strategy: 3 PEEL Paragraphs"
+            },
+            {
               "year": "1871",
               "label": "Reason 1: German Unification"
             },
@@ -87336,12 +87340,8 @@
               "label": "Reason 3: Naval Arms Race"
             },
             {
-              "year": "1879–1907",
-              "label": "Reason 4a: Alliance Blocs"
-            },
-            {
-              "year": "June 1914",
-              "label": "Reason 4b: Sarajevo Assassination"
+              "year": "1879–1914",
+              "label": "Reason 4: Alliances & Sarajevo"
             }
           ],
           "causal_domino_spine": {
@@ -87351,8 +87351,19 @@
               {
                 "step": 1,
                 "para_ref": "[6.1]",
+                "date": "30 Mins • 12 Marks",
+                "title": "Assessment Strategy: 3 Developed PEEL Paragraphs",
+                "actor": "Year 9 Historians",
+                "tag": "📝 EXAM STRATEGY",
+                "trigger": "Pupils plan a 30-minute formal assessment selecting 3 of the 4 core historical catalysts (Nationalism, Imperialism, Militarism, Alliances).",
+                "connective": "Structuring each paragraph with Point, Evidence, Explanation, and Link ensures full marks with no conclusion needed.",
+                "question": "How do you structure a 12-mark causal explanation on why war broke out in 1914?"
+              },
+              {
+                "step": 2,
+                "para_ref": "[6.2]",
                 "date": "1871",
-                "title": "Reason 1: German Unification & Alsace-Lorraine Seized",
+                "title": "Reason 1: German Unification, Bismarck & French Revanche",
                 "actor": "Chancellor Otto von Bismarck & Kaiser Wilhelm I",
                 "tag": "🚩 NATIONALISM",
                 "trigger": "Prussia unites 39 independent states into the German Empire at Versailles and annexes Alsace-Lorraine from France.",
@@ -87360,8 +87371,8 @@
                 "question": "Why did German unification in 1871 permanently destabilise the European balance of power?"
               },
               {
-                "step": 2,
-                "para_ref": "[6.2]",
+                "step": 3,
+                "para_ref": "[6.3]",
                 "date": "1884–1911",
                 "title": "Reason 2: Imperial Rivalry & The Scramble for Africa",
                 "actor": "Kaiser Wilhelm II & European Imperial Powers",
@@ -87371,8 +87382,8 @@
                 "question": "How did imperial ambitions in Africa poison diplomatic relations between Germany, France, and Britain?"
               },
               {
-                "step": 3,
-                "para_ref": "[6.3]",
+                "step": 4,
+                "para_ref": "[6.4]",
                 "date": "1898–1906",
                 "title": "Reason 3: Anglo-German Naval Race & HMS Dreadnought",
                 "actor": "Admiral Tirpitz & Admiral Jackie Fisher",
@@ -87382,26 +87393,15 @@
                 "question": "Why did the launch of HMS Dreadnought turn naval competition into an existential crisis?"
               },
               {
-                "step": 4,
-                "para_ref": "[6.4]",
-                "date": "1879–1907",
-                "title": "Reason 4a: Division of Europe into Rival Armed Camps",
-                "actor": "The Great Powers of Europe",
-                "tag": "🤝 ALLIANCES",
-                "trigger": "Europe split into two opposing blocs: Triple Alliance (Germany, Austria-Hungary, Italy) and Triple Entente (Britain, France, Russia).",
-                "connective": "Created an inflexible chain-reaction trap where any regional conflict would automatically drag all major powers into war.",
-                "question": "How did the alliance system ensure that a small dispute would escalate into a continent-wide war?"
-              },
-              {
                 "step": 5,
                 "para_ref": "[6.5]",
-                "date": "28 June 1914",
-                "title": "Reason 4b: The Spark: Sarajevo Assassination & July Crisis",
+                "date": "1879–1914",
+                "title": "Reason 4: Alliances, The Spark in Sarajevo & The July Crisis",
                 "actor": "Gavrilo Princip, Franz Ferdinand & Kaiser Wilhelm II",
-                "tag": "⚡ THE SPARK",
-                "trigger": "Serbian nationalist Gavrilo Princip shoots Archduke Franz Ferdinand; Germany gives Austria a \"Blank Cheque\", triggering mobilisations.",
-                "connective": "Rigid railway timetables and alliance obligations turned a local Balkan murder into an unstoppable world war within 37 days.",
-                "question": "Why did the assassination in Sarajevo trigger the immediate domino fall into global war?"
+                "tag": "🤝 ALLIANCES & THE SPARK",
+                "trigger": "Europe split into opposing armed blocs (Triple Alliance vs Triple Entente); Gavrilo Princip shot Franz Ferdinand, triggering Germany’s \"Blank Cheque\" and domino mobilisations.",
+                "connective": "Interlocking alliance obligations turned a local Balkan murder into an unstoppable world war within six weeks.",
+                "question": "How did the alliance system and the Sarajevo assassination trigger an unstoppable chain reaction into world war?"
               }
             ]
           },

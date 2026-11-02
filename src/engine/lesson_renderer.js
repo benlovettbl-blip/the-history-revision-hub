@@ -6127,13 +6127,40 @@ export function renderLesson(lesson) {
 
       let themeHeadingHtml = '';
       const rawHeading = block.theme_heading || block.theme || block.title;
-      let stageDateVal =
+
+      const rawTextForMatch = block.text || block.content || '';
+      const paraMatch = rawTextForMatch.match(/\[\s*(\d+\.\d+)\s*\]/);
+      let decimalRef = '';
+      if (paraMatch) {
+        decimalRef = paraMatch[1];
+      } else {
+        let lNum = 1;
+        if (lesson && lesson.id && lesson.id.startsWith('lesson_')) {
+          const parsed = parseInt(lesson.id.split('_')[1], 10);
+          if (!isNaN(parsed)) lNum = parsed;
+        } else if (lesson && typeof lesson.lesson_number === 'number') {
+          lNum = lesson.lesson_number;
+        }
+        decimalRef = `${lNum}.${index + 1}`;
+      }
+
+      const stagesList =
         (lesson &&
           lesson.causal_domino_spine &&
           Array.isArray(lesson.causal_domino_spine.stages) &&
-          lesson.causal_domino_spine.stages[index] &&
-          lesson.causal_domino_spine.stages[index].date) ||
-        '';
+          lesson.causal_domino_spine.stages) ||
+        [];
+      const matchedStage =
+        (decimalRef &&
+          stagesList.find(
+            (s) =>
+              (s.para_ref && s.para_ref.includes(decimalRef)) ||
+              (s.paraRef && s.paraRef.includes(decimalRef)),
+          )) ||
+        stagesList[index] ||
+        null;
+
+      let stageDateVal = (matchedStage && matchedStage.date) || '';
       let cleanHeadingTitle = '';
 
       if (rawHeading) {
@@ -6907,22 +6934,6 @@ export function renderLesson(lesson) {
         !(block.title && block.title.toLowerCase().includes('lesson reflection')),
       );
 
-      let decimalRef = '';
-      const rawTextForMatch = block.text || block.content || '';
-      const paraMatch = rawTextForMatch.match(/\[\s*(\d+\.\d+)\s*\]/);
-      if (paraMatch) {
-        decimalRef = paraMatch[1];
-      } else {
-        let lNum = 1;
-        if (lesson && lesson.id && lesson.id.startsWith('lesson_')) {
-          const parsed = parseInt(lesson.id.split('_')[1], 10);
-          if (!isNaN(parsed)) lNum = parsed;
-        } else if (lesson && typeof lesson.lesson_number === 'number') {
-          lNum = lesson.lesson_number;
-        }
-        decimalRef = `${lNum}.${index + 1}`;
-      }
-
       const isSourceAfter =
         window.currentUnitId === 'monarchy_religion_power' ||
         unitId === 'monarchy_religion_power' ||
@@ -6932,10 +6943,7 @@ export function renderLesson(lesson) {
       const hasPureVisual = Boolean(block.image && !block.image_context);
       const isReversed = hasPureVisual ? visualPlateCounter++ % 2 === 1 : index % 2 === 1;
 
-      const stageObj =
-        lesson.causal_domino_spine &&
-        Array.isArray(lesson.causal_domino_spine.stages) &&
-        lesson.causal_domino_spine.stages[index];
+      const stageObj = matchedStage;
       const stageNum = stageObj ? (stageObj.step || index + 1) : index + 1;
       const stageQ = stageObj ? (stageObj.question || '') : '';
       const matchingLetter = ['A', 'B', 'C', 'D', 'E'][index];
