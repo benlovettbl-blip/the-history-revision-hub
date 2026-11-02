@@ -153,47 +153,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=niPNzy6X6os",
-          "id": "niPNzy6X6os",
-          "title": "Simple History: Accession of Elizabeth I (1558) – Problems Facing the New Queen",
-          "duration": "3 mins 15 secs",
+          "id": "dfgeLdXA87I",
+          "url": "https://www.youtube.com/watch?v=dfgeLdXA87I",
+          "title": "Elizabeth I (1533-1603) Queen of England | Simple History",
+          "duration": "4 mins 00 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:00–03:15 | Lesson Phase: Lesson Hook | Tone Alert: Animated overview of £300,000 royal debt, French invasion threats, and religious turmoil.",
-          "viewing_task": "[01:00] Quick Check: How much crown debt did Elizabeth I inherit from Mary I upon her accession in November 1558?\n[02:30] Hinge Question: Why was Elizabeth's gender and marital status viewed as an existential threat by 16th-century male European monarchs?",
-          "model_answer": "Quick Check: £300,000 (an astronomical debt in Tudor currency).\nHinge Question: European custom held that women were physically and intellectually incapable of ruling or commanding armies; monarchs assumed Elizabeth must marry quickly, risking handing England's sovereignty to a foreign prince."
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:00 | Lesson Phase: Starter Hook | Tone Alert: Animated overview of Elizabeth's early life, imprisonment in the Tower under Mary I, and accession in November 1558.",
+          "viewing_task": "[01:15] Context: Why was Elizabeth imprisoned in the Tower of London during the reign of her half-sister Mary I?\n[03:10] Analysis: What immediate domestic and foreign challenges faced Elizabeth when she inherited the English throne in November 1558?",
+          "model_answer": "Mary I suspected Elizabeth of involvement in Wyatt's Rebellion (1554), leading to her imprisonment in the Tower. Upon accession in 1558, Elizabeth faced massive national debt (£300,000), war with France, a divided religious nation, and doubts over her legitimacy and ability to rule as a female monarch."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=OOeal_k4bmE",
-          "id": "OOeal_k4bmE",
-          "title": "BBC / David Starkey: Elizabeth I – From Hatfield House to The Tudor Throne",
-          "duration": "5 mins 40 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:30–05:15 | Lesson Phase: Royal Succession | Tone Alert: Explores Elizabeth's survival under Mary I and appointment of William Cecil.",
-          "viewing_task": "[01:15] Recall: Where was Elizabeth sitting beneath an oak tree when informed she was Queen of England?\n[03:00] Explain: Why did Elizabeth appoint William Cecil as her Secretary of State and keep him in power for 40 years?\n[04:45] Challenge: How did the French victory capturing Calais in January 1558 leave England geographically vulnerable to invasion?",
-          "model_answer": "Recall: Hatfield House in Hertfordshire, reading the Bible.\nExplain: Cecil was politically astute, religiously moderate, completely loyal, and skilled at administrative finance, becoming the chief architect of Elizabethan government.\nChallenge: Calais was England's last territorial foothold on continental Europe; losing it meant France controlled both sides of the English Channel and could easily stage an invasion."
+          "id": "6QQiBA7fUUA",
+          "url": "https://www.youtube.com/watch?v=6QQiBA7fUUA",
+          "title": "Early Elizabethan England: The Problem of Elizabeth's Legitimacy | The History Teacher",
+          "duration": "9 mins 56 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Enquiry Depth | Tone Alert: Analytical examination of Henry VIII's annulment, papal authority, and why Catholics viewed Elizabeth as illegitimate.",
+          "viewing_task": "[01:45] Disciplinary Focus: Why did English and European Catholics refuse to recognize Henry VIII's marriage to Anne Boleyn as lawful?\n[04:20] Historical Significance: How did Elizabeth's perceived illegitimacy heighten the political threat posed by Mary, Queen of Scots?",
+          "model_answer": "Catholics believed Henry VIII's first marriage to Catherine of Aragon was valid before God and could not be annulled by the King; therefore, Anne Boleyn was never Henry's lawful wife, making Elizabeth illegitimate. Under Catholic succession rules, Henry's great-niece, Mary, Queen of Scots, was regarded as the rightful legitimate heir to the English crown."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=sI9e_xRrhVw",
-          "id": "sI9e_xRrhVw",
-          "title": "Elizabeth (1998) | Official Feature Trailer (Cate Blanchett / Geoffrey Rush)",
-          "duration": "2 mins 15 secs",
+          "id": "niPNzy6X6os",
+          "url": "https://www.youtube.com/watch?v=niPNzy6X6os",
+          "title": "GCSE History Rapid Revision: Elizabeth I - The Virgin Queen | MrClokeHistory",
+          "duration": "10 mins 17 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Shekhar Kapur's cinematic masterpiece capturing the dangerous Tudor court and assassination plots.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film capture the deadly political atmosphere of the Tudor court, where a young female queen must outmaneuver scheming bishops and dukes?",
-          "model_answer": "Cinematic Discussion Focus: The trailer visually captures the shadowy paranoia, candlelit conspiracies, and religious fanaticism surrounding Elizabeth, illustrating how she transformed from a vulnerable princess into the steely, white-faced 'Virgin Queen'."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=5Cc4LaSRiSc",
-          "id": "5Cc4LaSRiSc",
-          "title": "The Court of Elizabeth I & Royal Patronage | BBC Documentary",
-          "duration": "12 mins 30 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–11:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Detailed breakdown of the Privy Council, Parliament, and Royal Progresses.",
-          "viewing_task": "[02:30] Recall: What was the primary role of the Privy Council (roughly 19 trusted noble advisers)?\n[06:00] Explain: How did Elizabeth use royal progresses (summer tours staying at noble stately homes) to maintain public loyalty without cost to the royal treasury?\n[09:30] Challenge: How did Elizabeth balance parliamentary requests for taxation with her royal prerogative to forbid debate on marriage, religion, and foreign policy?",
-          "model_answer": "Recall: Meeting almost daily to advise the Queen on state policy, enforce laws, and manage royal finances.\nExplain: She traveled with her court across the country, showing herself to common subjects and bankrupting ambitious nobles who spent thousands entertaining her, ensuring their financial subservience.\nChallenge: She summoned Parliament only 13 times in 44 years, primarily to vote war taxes; whenever MPs attempted to debate her marriage or Church settlement, she sent royal messages ordering them to cease under threat of arrest."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Synoptic Synthesis | Tone Alert: Focused examination of Elizabeth's royal court, Privy Council, the royal prerogative, and patronage system.",
+          "viewing_task": "[01:30] Recall: What was the primary constitutional difference between the Privy Council and Parliament in Tudor governance?\n[03:50] Structural Analysis: How did Elizabeth use patronage and monopolies to ensure loyalty among nobility and prevent factional rebellion?",
+          "model_answer": "The Privy Council was an advisory body of 19 trusted ministers who managed daily government, while Parliament was called occasionally to grant extraordinary taxation and pass statutes. Elizabeth distributed titles, offices, land leases, and lucrative commercial monopolies (patronage) to bind ambitious noble factions directly to her favour."
         }
       ],
       "teacher_notes": {
@@ -1377,47 +1366,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=-GbkZ_Y1AeQ",
           "id": "-GbkZ_Y1AeQ",
-          "title": "GCSE History: The Religious Settlement of 1559 – Elizabeth's 'Middle Way'",
-          "duration": "4 mins 10 secs",
+          "url": "https://www.youtube.com/watch?v=-GbkZ_Y1AeQ",
+          "title": "Early Elizabethan England: The Religious Settlement of 1559 | The History Teacher",
+          "duration": "5 mins 48 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:15–03:45 | Lesson Phase: Lesson Hook | Tone Alert: Clear breakdown of the Act of Supremacy, Act of Uniformity, and Royal Injunctions.",
-          "viewing_task": "[01:00] Quick Check: What official title did Elizabeth take in the 1559 Act of Supremacy instead of 'Supreme Head'?\n[02:45] Hinge Question: Why did Elizabeth choose the title 'Supreme Governor' of the Church of England rather than 'Supreme Head'?",
-          "model_answer": "Quick Check: Supreme Governor of the Church of England.\nHinge Question: It was a deliberate compromise: Catholics believed only the Pope could be head of the Church, while strict Protestants believed only Jesus Christ held headship, and many men opposed a female 'head'."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:48 | Lesson Phase: Starter Hook | Tone Alert: Step-by-step breakdown of the Act of Supremacy, Act of Uniformity, and Royal Injunctions establishing the Elizabethan 'Via Media'.",
+          "viewing_task": "[01:50] Recall: Why did Elizabeth adopt the title 'Supreme Governor' rather than 'Supreme Head' of the Church of England in the Act of Supremacy?\n[03:40] Detail: What compromises were included in the 1559 Act of Uniformity to appease both Catholic and Protestant subjects?",
+          "model_answer": "Elizabeth took the title 'Supreme Governor' to placate Catholics who believed only the Pope was Christ's vicar on earth, and Puritans who believed only Christ was head of the church. The Act of Uniformity compromised by enforcing Cranmer's Book of Common Prayer in English, while allowing priests to wear vestments and wording communion to accept both Catholic real presence and Protestant commemoration."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=1o8oIELbNxE",
-          "id": "1o8oIELbNxE",
-          "title": "The Act of Uniformity & Common Prayer | BBC Bitesize",
-          "duration": "5 mins 05 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:20–04:40 | Lesson Phase: Legal Breakdown | Tone Alert: Explores the 1559 Book of Common Prayer and deliberately ambiguous communion wording.",
-          "viewing_task": "[01:10] Recall: What fine was imposed under the 1559 Act of Uniformity for failing to attend Sunday church ('recusancy')?\n[02:40] Explain: How did the 1559 communion wording deliberately combine Protestant commemoration with Catholic belief in transubstantiation?\n[04:00] Challenge: Why did Elizabeth famously state through Francis Bacon that she had 'no desire to make windows into men's souls'?",
-          "model_answer": "Recall: One shilling (roughly a week's wages for a skilled labourer).\nExplain: Priests recited both Protestant wording ('take and eat this in remembrance') and Catholic phrasing ('preserve thy body and soul'), allowing both sides to interpret communion according to their own conscience.\nChallenge: She prioritized outward political loyalty and public church attendance over private theological belief, seeking to avoid the bloody religious massacres devastating France."
+          "id": "J4luTCHc-tc",
+          "url": "https://www.youtube.com/watch?v=J4luTCHc-tc",
+          "title": "GCSE History Rapid Revision: The Elizabethan Religious Settlement | MrClokeHistory",
+          "duration": "12 mins 18 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–06:00 | Lesson Phase: Enquiry Depth | Tone Alert: Deep dive into the Royal Injunctions, Church Courts, and visitation enforcement across English parishes.",
+          "viewing_task": "[02:20] Mechanism: How did the 1559 Royal Injunctions regulate parish church practices regarding pilgrimages, images, and licensing of preachers?\n[04:45] Consequence: What penalties did recusants face for refusing to attend weekly Sunday Anglican services?",
+          "model_answer": "The Royal Injunctions ordered parishes to possess an English Bible, banned pilgrimages and fake monuments of idolatry, and required preachers to hold royal licences. Recusants who refused Sunday church attendance were fined one shilling (twelve pence) per week, which fell heavily on ordinary citizens while wealthier gentry could initially afford to pay."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=sI9e_xRrhVw",
-          "id": "sI9e_xRrhVw",
-          "title": "Elizabeth (1998) | Passing the Act of Uniformity in Parliament Scene",
-          "duration": "2 mins 15 secs",
+          "id": "cjoSqVyqBnM",
+          "url": "https://www.youtube.com/watch?v=cjoSqVyqBnM",
+          "title": "The Tudors: Elizabeth I - The Religious Settlement 1559 | I'm Stuck Revision",
+          "duration": "4 mins 30 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Dramatic parliamentary confrontation between Protestant reformers and Catholic bishops.",
-          "viewing_task": "[01:05] Cinematic Discussion Focus: How does the film dramatise the intense parliamentary resistance from Catholic bishops in the House of Lords against the 1559 Uniformity Bill?",
-          "model_answer": "Cinematic Discussion Focus: The scene shows Lord Burghley (Cecil) and Walsingham maneuvering behind the scenes, locking away opposing bishops to pass the bill by a knife-edge margin of three votes, capturing the precarious birth of the Elizabethan Church."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=FhGGjRjvq7w",
-          "id": "FhGGjRjvq7w",
-          "title": "The Religious Settlement in the Shires | History Explainer",
-          "duration": "9 mins 30 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–08:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Examines how Church visitations, the Royal Injunctions, and crucifixes operated in practice.",
-          "viewing_task": "[02:00] Recall: What happened to Catholic Marian bishops when they refused to swear the Oath of Supremacy in 1559?\n[05:15] Explain: How did ordinary parish churches in conservative northern England slowly adopt Protestant whitewashing while secretly hiding Catholic chalices?\n[08:00] Challenge: Why did the 1559 Settlement ultimately satisfy neither hardline Puritans nor loyal Catholics in the long run?",
-          "model_answer": "Recall: All Marian bishops except one (the Bishop of Llandaff) refused the oath and were stripped of their bishoprics and placed under house arrest.\nExplain: Priests conformed outwardly to avoid fines while hiding statues, rosaries, and altar stones under floorboards in case England returned to Catholicism.\nChallenge: Puritans condemned organ music, stained glass, and wedding rings as 'popish rags', while devout Catholics felt compelled by the Pope to reject an illegitimate Protestant sovereign."
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:30 | Lesson Phase: Disciplinary Review | Tone Alert: Fast-paced revision summary tracking the legislative battle in the House of Lords and Bishop opposition.",
+          "viewing_task": "[01:10] Context: Why did the Catholic Marian Bishops in the House of Lords attempt to vote down Elizabeth's settlement bills in early 1559?\n[03:00] Evaluation: How successful was Elizabeth's 'Middle Way' in maintaining religious peace across England during the 1560s?",
+          "model_answer": "Marian Catholic bishops held a voting majority in the House of Lords and fiercely defended papal supremacy and Catholic liturgy against Protestant reform. Elizabeth arrested two dissenting bishops and gained a narrow majority; the settlement achieved outward conformity and political stability for a decade until the papal bull of 1570."
         }
       ],
       "exam_practice": {
@@ -2547,47 +2525,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=_tD3KvqCc8g",
           "id": "_tD3KvqCc8g",
-          "title": "GCSE History: Threats to Elizabeth's Religious Settlement – Puritans & Catholics",
-          "duration": "4 mins 20 secs",
+          "url": "https://www.youtube.com/watch?v=_tD3KvqCc8g",
+          "title": "Early Elizabethan England: Threats to Elizabeth's Religious Settlement | The History Teacher",
+          "duration": "6 mins 12 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:15–04:00 | Lesson Phase: Comparative Hook | Tone Alert: Compares the Puritan Vestments Controversy with the Catholic Papal Bull.",
-          "viewing_task": "[01:00] Quick Check: What clerical garment provoked the 1566 Vestments Controversy among Puritan clergy in London?\n[02:45] Hinge Question: Which group posed the greater immediate threat to Elizabeth in 1570: Puritan MPs demanding Church reform or Catholic nobles backed by the Pope?",
-          "model_answer": "Quick Check: The white linen surplice (which Puritans viewed as a Catholic vestment not mandated in the Bible).\nHinge Question: Catholic nobles posed the far deadlier existential threat: while Puritans challenged Church ritual but remained passionately anti-Spanish and loyal to the Queen, Catholic nobles possessed private armies and papal authorization to assassinate her."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Starter Hook | Tone Alert: Explores the dual challenge from Puritan zealots (vestments controversy, crucifix debate) and Catholic recusants.",
+          "viewing_task": "[01:40] Puritan Challenge: Why did Puritans object so furiously to clerical vestments and crucifixes in parish churches?\n[03:30] Royal Response: How did Archbishop Matthew Parker's 'Book of Advertisements' (1566) enforce clerical uniformity?",
+          "model_answer": "Puritans viewed ornate vestments (the surplice) and crucifixes as 'popish rags' and unscriptural idols linking the Church of England back to Rome. Parker's 1566 Book of Advertisements commanded all clergy to wear proper vestments or face expulsion, leading 37 London Puritan clergy to be dismissed from their livings."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=XvlZZeTMjK0",
-          "id": "XvlZZeTMjK0",
-          "title": "BBC / Bitesize: The Catholic Threat – Counter-Reformation, Seminary Priests & Jesuits",
-          "duration": "5 mins 10 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:20–04:45 | Lesson Phase: Jesuit Networks | Tone Alert: Explores William Allen's seminary at Douai, Edmund Campion, and priest holes.",
-          "viewing_task": "[01:15] Recall: What decree did Pope Pius V issue in 1570 in the papal bull Regnans in Excelsis?\n[02:50] Explain: How did seminary priests and Jesuits (like Edmund Campion) operate clandestinely in English manor houses using priest holes?\n[04:20] Challenge: How did the 1581 Act of Retain the Queen's Majesty transform Catholic missionary activity into high treason?",
-          "model_answer": "Recall: He excommunicated Elizabeth, declared her an illegitimate heretic, and ordered all Catholic subjects to disobey her under pain of damnation.\nExplain: Trained in European colleges, they entered England disguised as merchants or tutors, secretly celebrating Latin Mass in hidden architectural priest holes built by Nicholas Owen.\nChallenge: The Act raised recusancy fines to £20 a month (bankrupting wealthy gentry) and declared that converting anyone to Catholicism was an act of high treason punishable by hanging, drawing, and quartering."
+          "id": "2E6nHk-Ovd8",
+          "url": "https://www.youtube.com/watch?v=2E6nHk-Ovd8",
+          "title": "Edexcel GCSE History: Puritan Challenge to the Religious Settlement | The EverLearner",
+          "duration": "12 mins 12 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–06:30 | Lesson Phase: Enquiry Depth | Tone Alert: Detailed breakdown of the Presbyterian movement, prophesyings, and Elizabeth's clash with Archbishop Grindal.",
+          "viewing_task": "[02:30] Presbyterians: How did Thomas Cartwright and John Field challenge the hierarchical structure of bishops in the Church of England?\n[05:15] Monarchical Authority: Why did Elizabeth suspend Archbishop Edmund Grindal in 1577 over the issue of 'prophesyings'?",
+          "model_answer": "Presbyterians sought to abolish bishops and church hierarchy altogether, proposing governance by local elders (presbyters) elected by congregations, which Elizabeth viewed as a direct assault on her royal supremacy. Grindal refused Elizabeth's direct order to suppress Puritan prayer meetings ('prophesyings'), leading Elizabeth to place him under house arrest."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=r5X1vyCPA-U",
-          "id": "r5X1vyCPA-U",
-          "title": "Priest Hunters & Catholic Persecution | Cinematic Trailer",
-          "duration": "2 mins 15 secs",
+          "id": "OHB36Y4LncQ",
+          "url": "https://www.youtube.com/watch?v=OHB36Y4LncQ",
+          "title": "From Oxford Scholar to Hunted Priest: The Story of Edmund Campion | Foederis Arca",
+          "duration": "3 mins 45 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Depicts royal pursuivants smashing into country houses searching for secret priests.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the footage depict the psychological terror of secret Catholic families living under Walsingham's surveillance network?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows pursuivants knocking on walls with hammers to locate hollow cavities, measuring room dimensions, and threatening servants, illustrating the terrifying reach of the Elizabethan state security apparatus."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=6niBsMeNToo",
-          "id": "6niBsMeNToo",
-          "title": "The Trial and Execution of Edmund Campion (1581) | Document Archive",
-          "duration": "11 mins 45 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–10:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Examines Campion's 'Brag' and his famous interrogation on the rack in the Tower.",
-          "viewing_task": "[02:30] Recall: What was Edmund Campion's 'Challenge' ('Campion's Brag') distributed across London in 1580?\n[05:45] Explain: How did government prosecutors use the 'Bloody Questions' to force captured priests to choose between loyalty to the Pope or Queen?\n[09:00] Challenge: Why did Campion pray for Queen Elizabeth on the scaffold at Tyburn even as he was executed for high treason?",
-          "model_answer": "Recall: A written manifesto declaring he came purely for spiritual salvation of souls, not for political conspiracy, and challenging royal theologians to open debate.\nExplain: Prosecutors asked: 'If the Pope invades England, which side will you fight for?'; any answer condemning the Queen was treason, while condemning the Pope was heresy to Catholics.\nChallenge: Campion maintained to the end that he was a loyal Englishman who recognized Elizabeth as his rightful earthly monarch, demonstrating the tragic moral divide imposed by the Counter-Reformation."
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:45 | Lesson Phase: Clandestine Resistance | Tone Alert: Cinematic narrative tracing the secret Jesuit mission to England, priest holes, and Campion's capture.",
+          "viewing_task": "[01:15] Investigation: What was the primary objective of seminary priests and Jesuits trained at Douai when sneaking into Elizabethan England?\n[02:50] Significance: How did the 1581 Act against Jesuits and Seminary Priests transform the legal definition of Catholic missionary work into high treason?",
+          "model_answer": "Jesuits and seminary priests sought to administer sacraments, celebrate illegal Latin masses, and keep English Catholic recusants loyal to Rome. The 1581 Act declared that attempting to convert any English subject from Anglicanism to Roman Catholicism was an act of high treason punishable by death."
         }
       ],
       "exam_practice": {
@@ -3721,47 +3688,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=LIZtyIgtVio",
           "id": "LIZtyIgtVio",
-          "title": "Simple History: The Problem of Mary Queen of Scots – Flight to England & Captivity",
-          "duration": "3 mins 18 secs",
+          "url": "https://www.youtube.com/watch?v=LIZtyIgtVio",
+          "title": "The Problem of Mary Queen of Scots: Early Elizabethan England | The History Teacher",
+          "duration": "6 mins 05 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:00–03:18 | Lesson Phase: Lesson Hook | Tone Alert: Fast-paced animated overview of the murder of Darnley, Bothwell, and Mary's flight across the Solway Firth.",
-          "viewing_task": "[01:00] Quick Check: Why did Mary, Queen of Scots flee to England in May 1568 in an open fishing boat?\n[02:30] Hinge Question: Why did Mary's arrival in England present Elizabeth with an impossible political dilemma?",
-          "model_answer": "Quick Check: Scottish Protestant lords rebelled and forced her to abdicate after her husband Lord Darnley was murdered and she married the chief suspect, the Earl of Bothwell.\nHinge Question: If Elizabeth helped Mary reclaim the Scottish throne, she would overthrow a friendly Protestant government; if she executed a fellow anointed queen, she would invite European Catholic invasion; if she let her go free, Mary would lead a Catholic rebellion."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Starter Hook | Tone Alert: Examines Mary Stuart's arrival in Cumberland in 1568 following her abdication and flight from Scotland.",
+          "viewing_task": "[01:30] Scottish Crisis: Why was Mary forced to abdicate the Scottish throne in 1567, and why did she seek sanctuary in England?\n[03:45] Elizabeth's Dilemma: What were the three potential courses of action available to Elizabeth regarding Mary in 1568, and why was each dangerous?",
+          "model_answer": "Mary was forced to abdicate following the murder of Lord Darnley and her rapid marriage to the suspected killer, the Earl of Bothwell, sparking rebellion among Protestant Scottish lords. Elizabeth faced a dilemma: executing Mary would violate the divine right of anointed monarchs; restoring her to Scotland risked French intervention; and keeping her in England made her a figurehead for Catholic plots."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=vZRq1fuD4pE",
-          "id": "vZRq1fuD4pE",
-          "title": "BBC / David Starkey: Mary Queen of Scots – The Casket Letters & House Arrest",
-          "duration": "5 mins 40 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:30–05:15 | Lesson Phase: Legal Investigation | Tone Alert: Investigates the York Inquiry and the contested silver casket love letters.",
-          "viewing_task": "[01:15] Recall: What were the 'Casket Letters' presented by the Scottish Regent Moray at the York Inquiry in 1568?\n[03:00] Explain: Why did the English inquiry deliberately reach an inconclusive verdict (finding Mary neither guilty nor innocent)?\n[04:45] Challenge: How did keeping Mary under luxurious house arrest for 19 years turn her into an inevitable magnet for Catholic assassination plots?",
-          "model_answer": "Recall: Eight letters and sonnets allegedly written by Mary to Bothwell proving she plotted Darnley's gunpowder murder at Kirk o'Field.\nExplain: A guilty verdict would require Elizabeth to hand an anointed queen back to rebels, while an innocent verdict would require restoring a hostile Catholic monarch; the fudge allowed Elizabeth to keep Mary detained indefinitely.\nChallenge: As Henry VIII's great-niece with a legitimate claim to the English throne, every Catholic plot—from the Northern Earls to Babington—centered on assassinating Elizabeth to place Mary on the throne."
+          "id": "j8oF4ALOGXo",
+          "url": "https://www.youtube.com/watch?v=j8oF4ALOGXo",
+          "title": "EDEXCEL GCSE History: The Threat of Mary Queen of Scots | History Revision",
+          "duration": "7 mins 15 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Enquiry Depth | Tone Alert: Detailed analysis of the York and Hampton Court conferences (1568–69) and the Duke of Norfolk marriage conspiracy.",
+          "viewing_task": "[02:15] Analysis: Why was the Duke of Norfolk drawn into the plan to marry Mary Queen of Scots, and how did Elizabeth react?\n[04:30] Historical Consequence: Why was Mary placed under permanent, heavily guarded house arrest under the Earl of Shrewsbury?",
+          "model_answer": "The Duke of Norfolk, England's premier Catholic peer, believed marrying Mary would secure the English royal succession and restore noble influence at court; Elizabeth forbade the marriage, viewing it as treasonous. To prevent Mary from rallying Catholic rebels or escaping abroad, Elizabeth confined her to remote inland castles under George Talbot, Earl of Shrewsbury."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=wnqjSgQK03M",
-          "id": "wnqjSgQK03M",
-          "title": "Mary Queen of Scots (2018) | Official Feature Trailer (Saoirse Ronan / Margot Robbie)",
-          "duration": "2 mins 25 secs",
+          "id": "qk5HmIJNa_Y",
+          "url": "https://www.youtube.com/watch?v=qk5HmIJNa_Y",
+          "title": "Mary Queen of Scots and the Casket Letters | Mickey Mayhew",
+          "duration": "5 mins 12 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:25 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Intense drama depicting the personal and ideological clash between the two cousin queens.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film depict the contrast between Mary Stuart's emotional, romantic Catholic sovereignty and Elizabeth's calculated, pragmatic realpolitik?",
-          "model_answer": "Cinematic Discussion Focus: The trailer contrasts Mary's passionate claims to hereditary birthright in the Scottish highlands with Elizabeth's isolated, smallpox-scarred isolation in London, illustrating how patriarchal politics forced two queens into mortal rivalry."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=6niBsMeNToo",
-          "id": "6niBsMeNToo",
-          "title": "Mary Stuart in Captivity: Tutbury, Sheffield & Fotheringhay | Archive",
-          "duration": "10 mins 15 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–09:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Detailed historical examination of Mary's custody under the Earl of Shrewsbury.",
-          "viewing_task": "[02:00] Recall: Why did Elizabeth entrust Mary's custody to George Talbot, 6th Earl of Shrewsbury, and Bess of Hardwick?\n[05:00] Explain: How did Mary spend her long years of captivity creating intricate symbolic tapestries (such as the Oxburgh Hangings)?\n[08:15] Challenge: How did the French ambassador and Scottish diplomats continuously smuggle secret letters in and out of Mary's captivity?",
-          "model_answer": "Recall: Shrewsbury was one of the wealthiest, most reliable nobles in England, possessing multiple fortified castles far from the coast in the Midlands.\nExplain: She worked with Bess of Hardwick on embroidered panels packed with hidden political allegories, portraying herself as a captured bird or crowned dolphin awaiting restoration.\nChallenge: Despite strict surveillance, loyal Catholic servants, laundry women, and sympathetic local gentry carried encrypted cipher letters concealed in barrels and shoe soles to European embassies."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:12 | Lesson Phase: Forensic Evidence | Tone Alert: Explores the famous silver casket containing love sonnets and letters used to implicate Mary in Darnley's murder.",
+          "viewing_task": "[01:40] Evidence: What were the 'Casket Letters', and who produced them at the York inquiry in 1568?\n[03:30] Historiography: Why did the English inquiry deliver a 'not proven' verdict regarding the authenticity of the casket letters?",
+          "model_answer": "The Casket Letters were eight unsigned letters and love poems produced by the Scottish Protestant Regent, the Earl of Moray, allegedly proving Mary conspired with Bothwell to murder Darnley. Elizabeth used the ambiguous 'not proven' verdict politically to avoid either declaring Mary guilty (which would justify overthrowing an anointed queen) or declaring her innocent (which would require restoring her to the Scottish throne)."
         }
       ],
       "exam_practice": {
@@ -4865,47 +4821,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=XvlZZeTMjK0",
-          "id": "XvlZZeTMjK0",
-          "title": "Simple History: The Catholic Plots Against Elizabeth – Ridolfi, Throckmorton & Babington",
-          "duration": "3 mins 40 secs",
+          "id": "qLuPzcEON6s",
+          "url": "https://www.youtube.com/watch?v=qLuPzcEON6s",
+          "title": "GCSE History Rapid Revision: Revolt of the Northern Earls & Plots | MrClokeHistory",
+          "duration": "7 mins 20 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:00–03:40 | Lesson Phase: Lesson Hook | Tone Alert: Rapid-fire overview of the 1569 Revolt of the Northern Earls, 1571 Ridolfi, 1583 Throckmorton, and 1586 Babington plots.",
-          "viewing_task": "[01:00] Quick Check: What Catholic mass did the Earls of Northumberland and Westmorland celebrate in Durham Cathedral in November 1569?\n[02:45] Hinge Question: Why did all four major Catholic plots rely fundamentally on promises of foreign military invasion from Spain or France?",
-          "model_answer": "Quick Check: The traditional Latin Catholic Mass, tearing down the Protestant communion table and burning English Bibles.\nHinge Question: English Catholic nobles lacked the military strength to overthrow the Tudor state alone; they required Spanish troops from the Netherlands or French armies to defeat Elizabeth's royal forces."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Starter Hook | Tone Alert: Fast-paced narrative covering the Northern Earls (1569), Ridolfi (1571), Throckmorton (1583), and Babington (1586) plots.",
+          "viewing_task": "[01:45] Northern Earls: Why did the Earls of Northumberland and Westmorland march on Durham Cathedral in November 1569?\n[04:10] Papal Escalation: How did Pope Pius V's 1570 papal bull 'Regnans in Excelsis' change the loyalty of English Catholics?",
+          "model_answer": "The northern Catholic earls sought to re-establish the Catholic mass, rescue Mary Queen of Scots, and remove William Cecil from power; they celebrated Catholic mass in Durham Cathedral and tore up English prayer books. In 1570, Pius V's bull excommunicated Elizabeth and released English Catholics from allegiance to her, meaning Catholics could no longer be loyal both to their Queen and to their faith."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=PbXbn1ppTm0",
-          "id": "PbXbn1ppTm0",
-          "title": "Elizabeth: The Golden Age (2007) | The Babington Plot Scene",
-          "duration": "2 mins 15 secs",
+          "id": "WWlX79zUEq0",
+          "url": "https://www.youtube.com/watch?v=WWlX79zUEq0",
+          "title": "The Cipher Trap That Saved Queen Elizabeth I | ScienceLocker",
+          "duration": "4 mins 30 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:30 | Lesson Phase: Cryptography & Espionage | Tone Alert: Technical breakdown of the substitution cipher used by Anthony Babington, Walsingham's codebreaker Thomas Phelippes, and the forged postscript.",
+          "viewing_task": "[01:30] Secret Comm: How did Mary Queen of Scots smuggle encrypted letters in and out of Chartley Manor?\n[03:15] Codebreaking: How did Thomas Phelippes decipher the code and forge a postscript to implicate all co-conspirators?",
+          "model_answer": "Mary's letters were smuggled inside waterproof leather beer barrels by a brewer working as a double agent for Francis Walsingham. Thomas Phelippes deciphered Mary's substitution cipher and forged a postscript with a gallows mark asking Babington for the names of all conspirators, providing indisputable evidence of Mary's approval of Elizabeth's assassination."
+        },
+        {
+          "type": "youtube",
+          "id": "pQMXqmuj2Zw",
+          "url": "https://www.youtube.com/watch?v=pQMXqmuj2Zw",
+          "title": "Francis Walsingham: Elizabethan Spymaster | Extra History",
+          "duration": "8 mins 10 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Dramatic thriller depicting the discovery of Babington's beer-barrel cipher letters.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film dramatise Walsingham's trap: allowing the plot to mature so Mary would personally sign her own death warrant in cipher?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows Walsingham watching the cipher letters pass through the brewer's beer barrels, waiting with cold precision until Mary endorsed the assassination of Elizabeth, giving him the legal proof required to execute her."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=OOeal_k4bmE",
-          "id": "OOeal_k4bmE",
-          "title": "Sir Francis Walsingham: Elizabeth's Spymaster Network | BBC Two",
-          "duration": "6 mins 15 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:30–05:45 | Lesson Phase: Intelligence Network | Tone Alert: Explores codebreaking, Thomas Phelippes' deciphering, and forgery.",
-          "viewing_task": "[01:20] Recall: What was the 1584 Bond of Association signed by thousands of English Protestants?\n[03:15] Explain: How did codebreaker Thomas Phelippes decipher Mary's substitution cipher and draw a gallows symbol on the deciphered sheet?\n[05:00] Challenge: Why was Elizabeth so terrified to sign Mary's death warrant, delaying for four months after the trial verdict?",
-          "model_answer": "Recall: An oath pledging that if Elizabeth was assassinated, anyone who benefited from the plot (specifically Mary) would be executed, regardless of complicity.\nExplain: Phelippes mastered mathematical cryptanalysis; he decoded Mary's letter agreeing to the assassination and forged a postscript asking for the names of the six conspirators.\nChallenge: Executing an anointed monarch set a dangerous precedent that subjects could legally kill an appointed sovereign, and Elizabeth feared bloody revenge from Mary's son James VI and Philip II of Spain."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=65oCIxobwVs",
-          "id": "65oCIxobwVs",
-          "title": "The Execution of Mary, Queen of Scots at Fotheringhay (1587) | Documentary",
-          "duration": "10 mins 30 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–09:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Forensic chronicle of 8 February 1587 in the Great Hall of Fotheringhay Castle.",
-          "viewing_task": "[02:15] Recall: What dramatic act of martyrdom did Mary perform on the scaffold when her black dress was removed?\n[05:30] Explain: How did the executioner bungle the beheading, requiring multiple blows of the axe?\n[08:15] Challenge: How did King Philip II of Spain use Mary's execution as the ultimate religious justification to launch the Spanish Armada?",
-          "model_answer": "Recall: She wore an undergown of liturgical crimson red—the colour of Catholic martyrdom—deliberately staging her execution as a holy sacrifice.\nExplain: The first blow missed her neck, striking the back of her head; the second severed the neck except for a sinew; when he picked up the severed head by the hair, her wig came off in his hand, leaving a grey, cropped head rolling on the boards.\nChallenge: Mary had bequeathed her claim to the English crown to Philip in her will; her death transformed his planned invasion from a punitive raid into a sacred holy crusade to avenge a Catholic martyr."
+          "teacher_guidance": "Recommended Watch Window: 00:00–06:00 | Lesson Phase: Intelligence Network | Tone Alert: Animated character study of Sir Francis Walsingham, his trauma during the St. Bartholomew's Day Massacre, and his clandestine spy ring.",
+          "viewing_task": "[02:10] Motive: How did witnessing the 1572 St. Bartholomew's Day Massacre in Paris shape Walsingham's fanatical determination to protect Elizabeth?\n[05:00] Execution: Why was Elizabeth so reluctant to sign the death warrant for Mary Queen of Scots in February 1587?",
+          "model_answer": "Walsingham was English ambassador in Paris during the 1572 massacre where thousands of Huguenots were slaughtered, convincing him of an international Catholic conspiracy to exterminate Protestantism. Elizabeth delayed signing Mary's death warrant for months because executing an anointed monarch set a dangerous precedent, outraged Scotland and France, and gave Philip II of Spain religious justification to invade England."
         }
       ],
       "teacher_notes": {
@@ -6092,47 +6037,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=ldZYD51Ohjo",
           "id": "ldZYD51Ohjo",
-          "title": "GCSE History: Spain and England – Political, Religious & Commercial Rivalry",
-          "duration": "4 mins 15 secs",
+          "url": "https://www.youtube.com/watch?v=ldZYD51Ohjo",
+          "title": "Early Elizabethan England: Spain: Political and Religious Rivalry | The History Teacher",
+          "duration": "5 mins 10 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:15–03:50 | Lesson Phase: Geopolitical Hook | Tone Alert: Explores the Dutch Revolt, religious conflict, and privateering.",
-          "viewing_task": "[01:00] Quick Check: Why was the Spanish Netherlands of vital commercial importance to English merchants?\n[02:45] Hinge Question: Why did Elizabeth pursue a policy of plausible deniability with Francis Drake's privateering raids rather than declaring open war on Spain?",
-          "model_answer": "Quick Check: Antwerp was the primary European cloth market, purchasing three-quarters of all English wool textile exports.\nHinge Question: Spain was the richest superpower in the world with Europe's most feared army; Elizabeth could not afford a formal war, so she secretly funded Drake to plunder Spanish bullion while claiming to Philip she had no control over pirates."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:10 | Lesson Phase: Starter Hook | Tone Alert: Overview of the three core drivers of conflict: religious divergence, commercial rivalry in the New World, and the Dutch Revolt.",
+          "viewing_task": "[01:40] Imperial Trade: Why did Philip II forbid English merchant ships from trading directly with Spanish colonies in the Caribbean and Americas?\n[03:30] Dutch Revolt: Why did Elizabeth covertly assist the Dutch Sea Beggars and Protestant rebels fighting the Duke of Alba?",
+          "model_answer": "Spain enforced a strict mercantilist monopoly prohibiting foreign vessels from trading in the New World without a Spanish royal licence, which was rarely granted. Elizabeth harboured Dutch 'Sea Beggars' in English ports and allowed English volunteers to fight in the Netherlands because Spanish control of the Low Countries directly threatened the English Channel and London's vital wool trade."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=xPAKnqCOl_Q",
-          "id": "xPAKnqCOl_Q",
-          "title": "Early Elizabethan England: Sir Francis Drake – Privateering on the Spanish Main",
-          "duration": "5 mins 30 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:20–05:00 | Lesson Phase: Maritime Raids | Tone Alert: Explores the 1572 Nombre de Dios raid and the Cacafuego treasure ship.",
-          "viewing_task": "[01:15] Recall: What treasure ship did Drake capture off South America in 1579 (Nuestra Señora de la Concepción / Cacafuego)?\n[03:00] Explain: How did Drake's 1577–1580 circumnavigation of the globe return an astounding 4,700% profit to Elizabeth and investors?\n[04:30] Challenge: Why was Elizabeth's public knighting of Drake aboard the Golden Hind at Deptford in April 1581 seen by Philip II as a direct act of war?",
-          "model_answer": "Recall: A Spanish galleon carrying 26 tons of silver bullion, 80 pounds of gold, and thirteen chests of royal coins.\nExplain: He plundered unprotected Spanish ports along the Pacific coast of South America, sailing home via Indonesia and the Cape of Good Hope with £400,000 in treasure, enough to pay off England's entire national debt.\nChallenge: Philip had demanded Drake be hanged as a common pirate; by knighting him on the deck of his ship in front of the French ambassador, Elizabeth openly endorsed piracy and spat in the King of Spain's face."
+          "id": "zSXrGr3H4K4",
+          "url": "https://www.youtube.com/watch?v=zSXrGr3H4K4",
+          "title": "Pirate Massacre at San Juan de Ulúa: Francis Drake | Past Historical Events",
+          "duration": "5 mins 15 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:15 | Lesson Phase: Maritime Flashpoint | Tone Alert: Dramatic documentary recounting the 1568 Spanish surprise attack on John Hawkins and Francis Drake at San Juan de Ulúa (Mexico).",
+          "viewing_task": "[01:50] Treachery: How did Spanish Viceroy Martín Enríquez violate a pledged truce with Hawkins at San Juan de Ulúa in September 1568?\n[04:00] Vengeance: How did the escape of the Judith transform Francis Drake's personal vendetta against the Spanish Empire?",
+          "model_answer": "Hawkins entered the Mexican harbour under a peace agreement to repair storm damage, but the Spanish viceroy launched a surprise ambush with hidden gunboats, destroying four English ships and slaughtering dozens of sailors. Drake escaped aboard the tiny Judith and vowed personal revenge against Philip II, dedicating the rest of his life to plundering Spanish treasure fleets across the Atlantic and Pacific."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=6WuoiR0I8Es",
-          "id": "6WuoiR0I8Es",
-          "title": "The Sea Hawk & Privateers: Elizabeth's Sea Dogs | Classic Trailer",
-          "duration": "2 mins 20 secs",
+          "id": "S78nvATXBf0",
+          "url": "https://www.youtube.com/watch?v=S78nvATXBf0",
+          "title": "GCSE History Rapid Revision: Elizabethan England - War with Spain | MrClokeHistory",
+          "duration": "6 mins 45 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:20 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Classic Hollywood swashbuckler depicting English privateers battling Spanish galleons.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does cinema romanticize English 'Sea Dogs' (Drake, Hawkins, Raleigh) as dashing patriotic adventurers rather than ruthless commercial privateers?",
-          "model_answer": "Cinematic Discussion Focus: Films frame privateers as noble defenders of English Protestant liberty, glossing over their participation in the transatlantic slave trade, plundering of civilian coastal towns, and violent greed."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=j1-OxNSjmh0",
-          "id": "j1-OxNSjmh0",
-          "title": "Empire of the Seas: The Tudor Navy & The Dutch Crisis | BBC Two",
-          "duration": "14 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–12:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Dan Snow explores naval shipwright John Hawkins and race-built galleons.",
-          "viewing_task": "[02:30] Recall: What occurred during the 1576 'Spanish Fury' in Antwerp when mutinous Spanish troops sacked the city?\n[06:15] Explain: How did the assassination of Dutch leader William the Silent in July 1584 threaten to hand the Netherlands entirely to Spain?\n[10:00] Challenge: How did the 1584 Treaty of Joinville between France and Spain eliminate Elizabeth's diplomatic buffer and make war inevitable?",
-          "model_answer": "Recall: Unpaid Spanish soldiers murdered 7,000 citizens, burned 1,000 houses, and destroyed Antwerp's commercial supremacy over three days of looting.\nExplain: William was the unifying leader of the Protestant Dutch rebellion; his assassination left the Dutch on the brink of collapse against the Duke of Parma's professional army.\nChallenge: The Catholic French Guise faction united with Philip II against Protestantism; Elizabeth could no longer play France off against Spain, facing an isolated England surrounded by a Catholic coalition."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Chronological Turning Point | Tone Alert: Detailed breakdown of the assassination of William the Silent (1584), Treaty of Joinville, and Treaty of Nonsuch (1585).",
+          "viewing_task": "[02:00] Treaty of Joinville: Why did the secret 1584 pact between Spain and the French Catholic League terrify the English Privy Council?\n[04:15] Treaty of Nonsuch: What terms did Elizabeth agree to in August 1585 that effectively marked the declaration of open war with Spain?",
+          "model_answer": "The 1584 Treaty of Joinville allied Philip II with the French Catholic Guise family, removing the traditional rivalry between France and Spain and raising the nightmare scenario of a united Catholic invasion of England. In August 1585, Elizabeth signed the Treaty of Nonsuch, pledging to finance and send 7,400 English soldiers under Robert Dudley to aid the Dutch rebels, turning covert conflict into open war."
         }
       ],
       "extra_videos": [],
@@ -7265,47 +7199,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=33zs4b3iyyw",
           "id": "33zs4b3iyyw",
-          "title": "GCSE History: The Outbreak of War with Spain – The Netherlands & Cadiz",
-          "duration": "4 mins 10 secs",
+          "url": "https://www.youtube.com/watch?v=33zs4b3iyyw",
+          "title": "Early Elizabethan England: The Netherlands and Cadiz | The History Teacher",
+          "duration": "6 mins 10 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:15–03:50 | Lesson Phase: Lesson Hook | Tone Alert: Explores the 1585 Treaty of Nonsuch, Leicester's expedition, and the 1587 Cadiz raid.",
-          "viewing_task": "[01:00] Quick Check: How many English soldiers did Elizabeth agree to send to the Netherlands under the 1585 Treaty of Nonsuch?\n[02:30] Hinge Question: Why did Drake refer to his April 1587 raid on Cadiz harbour as 'singeing the King of Spain's beard'?",
-          "model_answer": "Quick Check: 7,400 troops (under the command of Robert Dudley, Earl of Leicester).\nHinge Question: He sailed boldly into Spain's chief naval base, destroyed over 30 Spanish warships and supply vessels, and delayed the sailing of the Armada by over a year, mocking Philip II's imperial power."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Starter Hook | Tone Alert: Focuses on Robert Dudley's Dutch campaign (1585–87) and Drake's daring amphibious raid on Cádiz (1587).",
+          "viewing_task": "[01:30] Leicester's Campaign: Why did Robert Dudley's acceptance of the title 'Governor-General of the United Provinces' infuriate Queen Elizabeth?\n[03:45] Drake's Raid: What was the military significance of Drake's raid on Cádiz harbour in April 1587 ('Singeing the King of Spain's Beard')?",
+          "model_answer": "Elizabeth was furious because Dudley's title implied that she was deposing Philip II and seizing sovereign control over the Netherlands, which she had explicitly promised not to do. Drake sailed directly into Cádiz harbour, sank or captured over 30 Spanish warships and supply vessels, and seized vital seasoned barrel staves, delaying the sailing of the Armada by over twelve months."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=RR-XqmhV1Oc",
-          "id": "RR-XqmhV1Oc",
-          "title": "Elizabeth: The Golden Age | King Philip II & The Escorial Scene",
-          "duration": "2 mins 15 secs",
+          "id": "N-GS5WjdVQk",
+          "url": "https://www.youtube.com/watch?v=N-GS5WjdVQk",
+          "title": "29th April 1587: Singeing the King of Spain's Beard | HistoryPod",
+          "duration": "2 mins 45 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:45 | Lesson Phase: Tactical Micro-Study | Tone Alert: High-density chronological overview of Drake's raid on Cádiz and the destruction of barrel staves.",
+          "viewing_task": "[00:50] Tactical Maneuver: How did Drake utilize English galleon maneuverability inside the crowded harbour of Cádiz?\n[02:05] Strategic Impact: Why did the destruction of thousands of seasoned oak barrel staves prove catastrophic for Spanish sailors in 1588?",
+          "model_answer": "Drake boldly sailed into the narrow bay of Cádiz, outgunning Spanish galleys whose fixed forward guns could not pivot against fast-tacking English race-built galleons. The burning of seasoned oak barrel staves forced the Spanish to construct barrels from unseasoned green wood for the 1588 Armada; the green barrels leaked drinking water and spoiled salted food, causing mass dysentery and disease before the fleet even fought."
+        },
+        {
+          "type": "youtube",
+          "id": "W1TwWKXjUII",
+          "url": "https://www.youtube.com/watch?v=W1TwWKXjUII",
+          "title": "Early Elizabethan England: KT 2.3 Outbreak of War with Spain | VHS History",
+          "duration": "8 mins 30 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Portrays King Philip II praying in the gloomy stone corridors of the Escorial palace.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film contrast King Philip's sombre, religious fanaticism with Elizabeth's vibrant, theatrical court?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows Philip clutching rosaries amid towering stone crucifixes, framing the planned invasion of England as God's divine mandate to cleanse heresy, illustrating the religious certainty that drove the Armada."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=YqNYrYUiMfg",
-          "id": "YqNYrYUiMfg",
-          "title": "The Cadiz Raid (1587) & The Destruction of Seasoned Barrel Staves | BBC",
-          "duration": "5 mins 45 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:30–05:00 | Lesson Phase: Tactical Raids | Tone Alert: Detailed breakdown of the logistical damage caused by Drake at Cadiz.",
-          "viewing_task": "[01:15] Recall: What critical food preservation supplies did Drake burn at Cadiz (thousands of seasoned wooden barrel staves)?\n[03:00] Explain: Why did the destruction of seasoned oak barrels cause catastrophic food spoilage and water contamination during the 1588 Armada campaign?\n[04:30] Challenge: Why was Leicester's military campaign in the Netherlands (1585–1587) such an expensive, disastrous failure?",
-          "model_answer": "Recall: Thousands of seasoned barrel staves and hooping iron used to build watertight storage casks.\nExplain: Spain was forced to build barrels from unseasoned green wood, which shrank, leaked, and rotted; barrels of beer and fresh water spoiled within weeks of setting sail, leaving Spanish crews sick with dysentery.\nChallenge: Leicester quarrelled with Dutch leaders, accepted the title of Governor-General without Elizabeth's permission (enraging the Queen), and his troops were underpaid and poorly supplied, failing to capture any major ports."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=era_armada_battlefield",
-          "id": "era_armada_battlefield",
-          "title": "Battlefield Britain: The Spanish Armada Strategic Build-Up | BBC Two",
-          "duration": "12 mins 15 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–11:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Peter & Dan Snow analyze the Duke of Medina Sidonia and Parma's invasion army.",
-          "viewing_task": "[02:30] Recall: What was Philip II's grand invasion strategy (sailing 130 ships to the Netherlands to ferry Parma's 30,000 veterans across the Channel)?\n[06:00] Explain: What fatal flaw undermined the plan (Medina Sidonia had no deep-water port in the Netherlands and no way to communicate with Parma in real time)?\n[09:45] Challenge: Why did the Duke of Medina Sidonia repeatedly beg Philip II to cancel the expedition, stating he was prone to seasickness and unqualified to lead a fleet?",
-          "model_answer": "Recall: The Armada would sweep the English Channel, anchor off Flanders, protect Parma's barges crossing to Margate, and march on London.\nExplain: Dutch shallow-water flyboats blockaded Parma's canals; the Armada could not enter shallow Flemish waters to protect him, and messages sent overland by horse took days to arrive.\nChallenge: Medina Sidonia had never commanded a naval fleet and knew logistical preparations were chaotic; Philip ignored his warnings, believing God would provide miraculous victory for Catholic Spain."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Strategic Assessment | Tone Alert: Examines Philip II's master invasion strategy combining the Medina-Sidonia naval fleet with Parma's army in the Netherlands.",
+          "viewing_task": "[01:45] Spanish Plan: What was Philip II's grand strategic plan for the Enterprise of England in 1588?\n[04:20] Fatal Flaw: What critical communication and coordination flaw existed between the Duke of Medina-Sidonia and the Duke of Parma?",
+          "model_answer": "Philip planned for the Armada of 130 ships to sail up the English Channel, anchor off the Flemish coast, and convoy the Duke of Parma's veteran army of 30,000 soldiers across in flat-bottomed barges to invade Kent. The fatal flaw was that Parma possessed no deep-water port in the Netherlands; Dutch flyboats blockaded Parma's shallow canals, and communications by horseback took over 48 hours, leaving Medina-Sidonia stranded without cover."
         }
       ],
       "learning_objectives": {
@@ -8430,47 +8353,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=3b94RZcxQnE",
-          "id": "3b94RZcxQnE",
-          "title": "Simple History: The Spanish Armada (1588) – Crescent Formation, Fireships & Gravelines",
-          "duration": "3 mins 30 secs",
-          "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:00–03:30 | Lesson Phase: Lesson Hook | Tone Alert: Clear animated tactical map showing the Channel battles, Calais fireships, and the retreat around Scotland.",
-          "viewing_task": "[01:00] Quick Check: What defensive naval formation did the Spanish Armada maintain sailing up the English Channel?\n[02:15] Hinge Question: Was the defeat of the Spanish Armada primarily achieved by English naval tactical superiority or by the catastrophic Atlantic storms ('the Protestant Wind')?",
-          "model_answer": "Quick Check: An unbroken, crescent-shaped defensive formation with powerful heavy galleons on the flanks protecting transport ships in the center.\nHinge Question: While fireships and superior gunnery broke the Armada's formation at Gravelines, catastrophic north-westerly gales wrecked dozens of ships along the rocky coasts of Scotland and Ireland, turning tactical defeat into total annihilation."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=kYv_3cZzU4I",
-          "id": "kYv_3cZzU4I",
-          "title": "BBC Two / Dan Snow: Armada – 12 Days to Save England (The Battle of Gravelines)",
+          "id": "F29glmRlDx0",
+          "url": "https://www.youtube.com/watch?v=F29glmRlDx0",
+          "title": "The Battle of Gravelines: How the Spanish Armada Lost Its Chance | Whys & Wows",
           "duration": "5 mins 45 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:30–05:15 | Lesson Phase: Tactical Breakthrough | Tone Alert: Explores the eight midnight fireships off Calais and rapid-reloading gun carriages.",
-          "viewing_task": "[01:20] Recall: Why did Spanish captains cut their iron anchor cables at midnight off Calais on 7 August 1588?\n[03:10] Explain: How did English four-wheeled naval gun carriages allow English gunners to fire three times as many cannonballs as the Spanish?\n[04:45] Challenge: How did the loss of their primary anchors make it impossible for Spanish ships to survive the ferocious storms off the Irish coast?",
-          "model_answer": "Recall: Eight blazing fireships drifted toward them; captains cut cables to escape being incinerated in the dark, scattering the fleet.\nExplain: English cannons recoiled inside the ship on rope tackles and were reloaded inboard by trained gun crews; Spanish guns were mounted on clumsy two-wheeled field carriages and could barely be reloaded in heavy seas.\nChallenge: Without anchors, damaged galleons caught in Atlantic gales could not ride out storms in sheltered bays and were driven directly onto the rocky cliffs of Donegal, Sligo, and the Hebrides."
+          "pathway": "Starter Hook",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:45 | Lesson Phase: Starter Hook | Tone Alert: Animated tactical breakdown of the Armada's crescent formation, the fireship attack at Calais, and the climactic cannon engagement at Gravelines.",
+          "viewing_task": "[01:30] Calais Fireships: Why did the launch of eight burning fireships off Calais on the night of 7 August 1588 cause utter panic among the Spanish fleet?\n[03:45] Battle of Gravelines: How did English race-built galleons under Drake and Howard defeat the dispersed Spanish ships on 8 August?",
+          "model_answer": "The Spanish captains feared the fireships were 'hellburners' packed with explosives like those used in Antwerp; they panicked, cut their anchor cables, and scattered blindly into the North Sea, permanently shattering their protective crescent formation. At Gravelines, English galleons used superior maneuverability and quick-reloading long-range culverin cannon to batter Spanish hulls without coming within range of Spanish grappling hooks or boarding parties."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=RR-XqmhV1Oc",
-          "id": "RR-XqmhV1Oc",
-          "title": "Elizabeth: The Golden Age (2007) | Armada Defeat & The Tilbury Speech",
+          "id": "O3JvGI4IqHY",
+          "url": "https://www.youtube.com/watch?v=O3JvGI4IqHY",
+          "title": "Queen Elizabeth I Speech at Tilbury - Spanish Armada | Screen Tell",
+          "duration": "3 mins 10 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:10 | Lesson Phase: Royal Oratory | Tone Alert: Archival recital of Elizabeth's historic Tilbury address to the English land forces assembled in Essex.",
+          "viewing_task": "[01:15] Analysis: Identify the famous rhetoric Elizabeth used to reconcile her gender with monarchical military command.\n[02:40] Disciplinary Significance: Why was the Tilbury speech delivered on 9 August 1588, after the Battle of Gravelines had already been fought?",
+          "model_answer": "Elizabeth famously declared: 'I know I have the body of a weak and feeble woman; but I have the heart and stomach of a king, and of a king of England too.' Although Gravelines had been won on 8 August, news travelled slowly and the government feared the Duke of Parma might still attempt a crossing from Flanders; the speech rallied morale and permanently mythologized Elizabeth as Protestant England's divine protector."
+        },
+        {
+          "type": "youtube",
+          "id": "-W4iFmJQfQw",
+          "url": "https://www.youtube.com/watch?v=-W4iFmJQfQw",
+          "title": "Elizabeth: The Golden Age (2007) - The Queen's Speech Scene | Movieclips",
           "duration": "2 mins 15 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Cate Blanchett delivers the famous Speech to the Troops at Tilbury in silver armor.",
-          "viewing_task": "[01:05] Cinematic Discussion Focus: How does the film frame Elizabeth's Tilbury speech: 'I know I have the body of a weak and feeble woman, but I have the heart and stomach of a king, and of a king of England too'?",
-          "model_answer": "Cinematic Discussion Focus: The scene visually elevates Elizabeth from a frail mortal into an indomitable warrior-monarch riding a white steed, uniting her subjects and transforming the Armada victory into an enduring national myth of Protestant English triumph."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=era_armada_battlefield",
-          "id": "era_armada_battlefield",
-          "title": "The Spanish Armada: Complete Historiographical Documentary | BBC Archive",
-          "duration": "45 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 15:00–38:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Deep critical assessment of the Armada's failure and its psychological impact on Europe.",
-          "viewing_task": "[18:00] Recall: How many of the 130 Spanish ships successfully made it back to Spain (barely 67 battered vessels)?\n[28:30] Explain: What commemorative medal did Elizabeth order struck proclaiming: 'God blew and they were scattered' ('Flavit et dissipati sunt')?\n[36:00] Challenge: Why did the war with Spain continue for another 16 years until 1604 despite the celebrated Armada victory?",
-          "model_answer": "Recall: Over 60 ships were destroyed, sunk, or wrecked, with over 15,000 Spanish sailors and soldiers perishing.\nExplain: The medal attributed victory to divine Protestant weather rather than human pride, reinforcing the religious belief that God favored England.\nChallenge: Philip rebuilt his naval fleets; English counter-armadas (such as Drake's 1589 Lisbon expedition) were disastrous failures, and the war dragged on, bankrupting the Crown until James I signed the 1604 Treaty of London."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Cinematic Dramatization | Tone Alert: Cate Blanchett's dramatic interpretation of Elizabeth riding on horseback in silver breastplate at Tilbury.",
+          "viewing_task": "[00:45] Visual Analysis: How does the cinematography present Elizabeth as both divine sovereign and warrior queen?\n[01:50] Evaluation: How did Protestant propaganda portray the stormy weather ('Protestant Wind') that destroyed Spanish ships off Ireland and Scotland?",
+          "model_answer": "The film uses low-angle heroic tracking shots of Elizabeth in gleaming armour on a white steed, holding a sword while addressing thousands of cheering troops. Protestant propagandists struck commemorative medals declaring 'He blew with his winds, and they were scattered' (Afflavit Deus et dissipati sunt), claiming that God had directly intervened with storms to destroy the Catholic invaders."
         }
       ],
       "teacher_notes": {
@@ -10469,47 +10381,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=ZdHP5b4Uwbw",
           "id": "ZdHP5b4Uwbw",
-          "title": "GCSE History: Elizabethan Education & Leisure – Grammar Schools, Sports & Pastimes",
-          "duration": "4 mins 15 secs",
+          "url": "https://www.youtube.com/watch?v=ZdHP5b4Uwbw",
+          "title": "Elizabethan Education: Early Elizabethan England | The History Teacher",
+          "duration": "5 mins 35 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:15–03:45 | Lesson Phase: Lesson Hook | Tone Alert: Compares noble leisure (hunting, hawking, tennis) with working-class bear-baiting and football.",
-          "viewing_task": "[01:00] Quick Check: What Latin school books and classical subjects formed the core curriculum of Elizabethan grammar schools?\n[02:45] Hinge Question: Did the growth of grammar schools promote genuine social mobility or simply reinforce existing class and gender hierarchies?",
-          "model_answer": "Quick Check: Latin grammar, classical literature (Ovid, Virgil, Cicero), and religious catechism.\nHinge Question: While a small number of talented middle-class boys (like William Shakespeare) gained an education, fees excluded poor labourers, and girls were almost completely barred from formal schooling."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Starter Hook | Tone Alert: Examines Petty schools, Grammar schools, universities, and social class stratification in Tudor schooling.",
+          "viewing_task": "[01:30] Social Divide: What was the primary curriculum in Elizabethan Grammar schools, and which social class attended them?\n[03:45] Gender: How did educational opportunities differ dramatically between boys and girls of the Tudor gentry and yeomanry?",
+          "model_answer": "Grammar schools taught boys from the gentry, professional, and wealthy merchant classes, focusing heavily on Latin grammar, classical literature, Greek, rhetoric, and arithmetic. Girls from wealthy families were educated at home by private governesses in domestic needlework, music, French, and household management, while lower-class girls received no formal schooling."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=eKyCtKwXBMI",
-          "id": "eKyCtKwXBMI",
-          "title": "BBC / Bitesize: Elizabethan Society – Literacy, Grammar Schools & Bankside Spectacles",
-          "duration": "5 mins 10 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:20–04:40 | Lesson Phase: Social Structure | Tone Alert: Explores the Great Chain of Being and Bankside entertainment.",
-          "viewing_task": "[01:15] Recall: What violent bloodsports were popular on Bankside alongside theatres (bear-baiting, bull-baiting, cockfighting)?\n[02:50] Explain: Why did Puritan city authorities in London fiercely oppose playhouses, calling them 'nests of the devil'?\n[04:10] Challenge: How did the physical architecture of public amphitheatres like The Globe mirror the social hierarchy of Elizabethan England?",
-          "model_answer": "Recall: Spectators bet on dogs attacking chained bears or roosters fighting to the death in wooden pits.\nExplain: Puritans believed theatres encouraged sinful idleness, drunkenness, and sexual immorality, and warned that large crowds spread the plague.\nChallenge: Common labourers paid one penny to stand in the open yard as 'groundlings' exposed to rain and mud, while wealthy merchants and nobles paid more for cushioned, roofed gallery seats and lords' boxes."
+          "id": "D1rbtHchv1g",
+          "url": "https://www.youtube.com/watch?v=D1rbtHchv1g",
+          "title": "Shakespeare's Theatre: The Globe & Bankside Spectacles | BBC Teach",
+          "duration": "4 mins 50 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:50 | Lesson Phase: Cultural Geography | Tone Alert: Explores the commercial theatre boom on London's Southwark Bankside, outside City jurisdiction.",
+          "viewing_task": "[01:20] Bankside: Why were commercial theatres like The Theatre, The Curtain, and The Rose built outside the City of London walls?\n[03:30] Audience: How did the architecture of public playhouses reflect Elizabethan social hierarchy (Groundlings vs Galleries)?",
+          "model_answer": "The Puritan-dominated City of London authorities banned theatres within city walls, viewing them as centres of disease, petty crime, prostitution, and sinful distraction from church. The architecture accommodated all social strata: ordinary labourers ('groundlings') paid 1 penny to stand in the open pit exposed to rain, while wealthier merchants and nobles paid 2 to 3 pence for covered seats in the galleries."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=4FqV2nU-GqA",
-          "id": "4FqV2nU-GqA",
-          "title": "Shakespeare in Love (1998) | Bankside Theatres, Groundlings & Censorship Trailer",
-          "duration": "2 mins 20 secs",
+          "id": "ppK3whoRMDY",
+          "url": "https://www.youtube.com/watch?v=ppK3whoRMDY",
+          "title": "Sport, Pastimes, and Theatre in Elizabethan England | The History Teacher",
+          "duration": "6 mins 25 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:20 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Oscar-winning depiction of Elizabethan theatre, actors, and the Master of the Revels.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film capture the bustling, commercial energy of Elizabethan London theatre, where acting companies competed for paying audiences?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows open-air stages, groundlings cheering and throwing fruit, and the Master of the Revels threatening to close theatres, capturing the precarious commercial world of Tudor entertainment."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=qo0wACaFcaM",
-          "id": "qo0wACaFcaM",
-          "title": "The Golden Age of Tudor Literature & The English Renaissance | BBC Archive",
-          "duration": "11 mins 30 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–10:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Examines printing presses, poetry (Spenser, Marlowe), and national identity.",
-          "viewing_task": "[02:30] Recall: What literacy rates existed in Elizabethan England (roughly 30% for men, under 10% for women)?\n[05:45] Explain: How did Christopher Marlowe and William Shakespeare create a rich, flexible English vernacular that rivalled classical Latin and Greek?\n[09:00] Challenge: In evaluating whether Elizabethan England experienced a 'Golden Age', to what extent did this cultural flowering benefit only the wealthy elite?",
-          "model_answer": "Recall: Literacy was restricted largely to merchants, yeoman farmers, and gentry; agricultural labourers remained almost entirely illiterate.\nExplain: They invented thousands of new words, embraced iambic pentameter, and addressed universal human dilemmas, giving England a proud national literary voice.\nChallenge: For the 40% of the population living in grinding poverty and food insecurity, there was no golden age; the cultural renaissance was an aristocratic and middle-class luxury."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Popular Culture | Tone Alert: Explores violent sports (bear baiting, cock fighting, folk football) alongside aristocratic hunting and court masques.",
+          "viewing_task": "[01:45] Popular Blood Sports: Why were spectacles like bear-baiting and bull-baiting so intensely popular across all social classes in Tudor England?\n[04:00] Class Distinction: How did elite leisure pursuits (hunting, hawking, archery) serve to display status and martial readiness?",
+          "model_answer": "Blood sports were popular because audiences enjoyed visceral violence, gambling on animal fights was common, and royal figures like Queen Elizabeth actively patronised bear pits at Southwark. Elite pursuits like hawking and hunting required vast private enclosed parklands, expensive pedigree animals, and mastery of horsemanship, serving as exclusive displays of wealth, nobility, and military prowess."
         }
       ],
       "enquiry_task": {
@@ -11571,47 +11472,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=l_XAxCQvWZQ",
-          "id": "l_XAxCQvWZQ",
-          "title": "GCSE History: Poverty and Vagrancy – Causes, Enclosure & The Idle Poor",
-          "duration": "4 mins 10 secs",
+          "id": "VZJCIOmwJUg",
+          "url": "https://www.youtube.com/watch?v=VZJCIOmwJUg",
+          "title": "Revision Video: Causes of Poverty in Elizabethan England | Tracy Borman",
+          "duration": "6 mins 40 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:15–03:45 | Lesson Phase: Economic Causes | Tone Alert: Explores population growth (surging to 4 million), inflation, bad harvests, and sheep enclosure.",
-          "viewing_task": "[01:00] Quick Check: How did sheep farming and the enclosure of common land reduce rural agricultural employment?\n[02:45] Hinge Question: Why were Elizabethan authorities so terrified of wandering 'sturdy beggars' (vagabonds)?",
-          "model_answer": "Quick Check: Sheep farming required vast pastures but only one or two shepherds, leaving dozens of arable farm labourers unemployed and landless.\nHinge Question: Authorities feared roaming bands of unemployed men would form criminal gangs, spread infectious diseases like the plague, and ignite peasant rebellions against the social order."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Starter Hook | Tone Alert: Explores the demographic explosion, bad harvests, debasement of currency, and the collapse of the Antwerp cloth trade.",
+          "viewing_task": "[01:30] Demographics: Why did population growth from 2.8 million to over 4 million cause severe inflation and wage depression?\n[03:45] Agriculture: How did sheep farming and land enclosure accelerate the eviction of tenant farmers and rural unemployment?",
+          "model_answer": "Rapid population growth caused food demand to outstrip supply, driving up bread prices while creating an oversupply of rural labourers that suppressed wages. Landowners discovered that sheep farming for the wool trade was far more profitable than arable farming; they enclosed common lands with hedges and evicted tenant farming families, leaving thousands of displaced peasants landless and unemployed."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=2gWiGuQvPsY",
-          "id": "2gWiGuQvPsY",
-          "title": "BBC Bitesize: The Elizabethan Poor Laws – Punishment to Parish Relief (1572 & 1576)",
+          "id": "Odvchz9EVbI",
+          "url": "https://www.youtube.com/watch?v=Odvchz9EVbI",
+          "title": "The 1601 Elizabethan Poor Law Explained | Door of the Past",
           "duration": "5 mins 05 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:20–04:40 | Lesson Phase: Legislative Evolution | Tone Alert: Explores the categorization into 'Deserving Poor' and 'Idle Poor'.",
-          "viewing_task": "[01:10] Recall: What harsh punishments were inflicted on unlicensed vagrants under the 1572 Vagabonds Act (whipping, boring an ear with hot iron)?\n[02:40] Explain: How did the 1576 Act 'for the Relief of the Poor' require towns to provide raw materials (wool, hemp, iron) for the able-bodied poor to work?\n[04:00] Challenge: How did the landmark 1601 Elizabethan Poor Law establish a nationwide parish-based system of poor relief that survived for over two centuries?",
-          "model_answer": "Recall: Whipping until bloody, boring a hole through the right ear with a hot iron, and execution for third-time offenders.\nExplain: It recognized for the first time that some people could not find work through no fault of their own, creating Houses of Correction to put them to work.\nChallenge: The 1601 Act mandated local property taxes (poor rates), appointed Overseers of the Poor in every parish, built almshouses for the elderly and sick, and apprenticed pauper children, creating the first state-administered welfare system in Europe."
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:05 | Lesson Phase: Legislative Evolution | Tone Alert: Examines the moral distinction between the 'deserving' (impotent) poor and the 'undeserving' (idle) poor across the 1572, 1576, and 1601 acts.",
+          "viewing_task": "[01:40] Categorisation: How did Tudor legislation distinguish between the 'impotent poor' and the 'idle vagabond'?\n[03:30] Solutions: What practical relief mechanisms did the 1576 Act for the Relief of the Poor introduce to put the able-bodied to work?",
+          "model_answer": "The impotent poor (the elderly, sick, orphans, disabled) were recognized as poor through no fault of their own, whereas idle vagabonds were viewed as criminal fraudsters who chose not to work. The 1576 Act ordered town authorities to provide a collective stock of raw materials (wool, hemp, iron) so the able-bodied unemployed could work in Houses of Correction rather than wander the highways."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Ry2ULl8osu4",
-          "id": "Ry2ULl8osu4",
-          "title": "Vagabonds, Ruffs & The Tudor Underworld | Dramatic Reconstruction",
-          "duration": "2 mins 15 secs",
+          "id": "l_XAxCQvWZQ",
+          "url": "https://www.youtube.com/watch?v=l_XAxCQvWZQ",
+          "title": "Poverty: Causes and Changes - Early Elizabethan England | The History Teacher",
+          "duration": "7 mins 10 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Depicts Elizabethan confidence tricksters: counterfeit cranks, clapper dudgeons, and hookers.",
-          "viewing_task": "[01:05] Cinematic Discussion Focus: How does the dramatisation depict the sensationalized Tudor pamphlets (such as Thomas Harman's Caveat for Common Cursitors) that stoked moral panic about vagrants?",
-          "model_answer": "Cinematic Discussion Focus: The dramatisation illustrates how popular literature exaggerated the threat of clever, disguised beggars foaming at the mouth with soap, creating a hysterical public moral panic that justified brutal state whippings."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=SrrXUN7S_Ys",
-          "id": "SrrXUN7S_Ys",
-          "title": "The Crisis of the 1590s: Famine, War & Social Breakdown | Archive",
-          "duration": "10 mins 45 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–09:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Detailed historical examination of four consecutive bad harvests and food riots.",
-          "viewing_task": "[02:30] Recall: What catastrophic weather struck England in the 1590s causing the worst food crisis of the century?\n[05:45] Explain: How did the cost of wheat surge by over 200%, sparking grain riots in Kent, London, and Oxfordshire?\n[08:45] Challenge: How did the desperation of the 1590s force Elizabeth's government to abandon purely punitive measures and construct the comprehensive 1601 Poor Law?",
-          "model_answer": "Recall: Torrential, ceaseless summer rains that rotted wheat crops in the fields across four successive years.\nExplain: Hoarding by grain merchants drove bread prices to unaffordable heights; starving families seized grain carts and rioted in marketplaces.\nChallenge: Confronted with food riots and the threat of general peasant rebellion, the government recognized that whipping starving people would provoke revolution; state-organized relief was essential to maintain public order."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Social Control & Enforcement | Tone Alert: Explores severe corporal punishments (whipping, ear-boring, hanging) and the introduction of local poor rates.",
+          "viewing_task": "[02:10] Punishments: What gruesome punishments did the 1572 Vagrancy Act prescribe for convicted beggars caught without a licence?\n[04:30] Taxation: Why was the introduction of a compulsory parish poor rate a revolutionary development in English local government?",
+          "model_answer": "Under the 1572 Act, vagabonds over fourteen were publicly whipped and burned through the gristle of the right ear with a hot iron for a first offence; repeated offences carried the death penalty by hanging. Compulsory poor rates marked the historic transition from voluntary church charity to statutory local taxation, establishing that the State held legal responsibility for funding welfare support for impoverished citizens."
         }
       ],
       "enquiry_task": {
@@ -12761,47 +12651,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=VzWOmz0oZbE",
-          "id": "VzWOmz0oZbE",
-          "title": "GCSE History: Francis Drake & Elizabethan Exploration – New Navigational Tech",
-          "duration": "4 mins 10 secs",
+          "id": "3GkImOV1iaM",
+          "url": "https://www.youtube.com/watch?v=3GkImOV1iaM",
+          "title": "13th December 1577: Francis Drake departs Plymouth on his Circumnavigation | HistoryPod",
+          "duration": "2 mins 37 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:15–03:50 | Lesson Phase: Lesson Hook | Tone Alert: Explores astrolabes, magnetic compasses, Mercator projection maps, and galleon design.",
-          "viewing_task": "[01:00] Quick Check: What navigational instruments enabled Elizabethan sailors to calculate latitude by measuring the angle of the sun or Pole Star?\n[02:45] Hinge Question: Were Elizabethan voyages of exploration driven primarily by scientific curiosity or ruthless commercial greed and plunder?",
-          "model_answer": "Quick Check: The astrolabe, cross-staff, and quadrant.\nHinge Question: While navigators mapped ocean currents, the overwhelming driver was commercial profit: merchants invested fortunes to break Spanish and Portuguese monopolies and seize trade in spices, silks, and gold."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:37 | Lesson Phase: Starter Hook | Tone Alert: Crisp chronological breakdown of Drake sailing from Plymouth aboard the Pelican (Golden Hind).",
+          "viewing_task": "[00:50] Voyage Objectives: What official public purpose and secret royal mission was Drake given when leaving Plymouth in 1577?\n[01:55] Route: Which perilous maritime passage did Drake navigate to enter the Pacific Ocean?",
+          "model_answer": "Publicly, Drake was sent to explore trade routes to the Nile and South America; privately, Queen Elizabeth and her investors tasked him with plundering unprotected Spanish ports and silver ships along the Pacific coast of South America. Drake navigated the treacherous Straits of Magellan at the southern tip of South America, renaming his flagship the Golden Hind upon entering the Pacific."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=0lAzq1hM5xE",
-          "id": "0lAzq1hM5xE",
-          "title": "BBC / British Library: The Tudor Age of Discovery – Trade Monopolies & Global Routes",
-          "duration": "5 mins 30 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:20–05:00 | Lesson Phase: Chartered Trade | Tone Alert: Explores the Muscovy Company, Levant Company, and search for the Northwest Passage.",
-          "viewing_task": "[01:15] Recall: What elusive maritime route to China and India did Martin Frobisher and John Davis search for in the frozen Arctic (the Northwest Passage)?\n[03:00] Explain: How did chartered trading companies (Muscovy Company trading with Russia, Levant Company with the Ottoman Empire) expand English markets?\n[04:30] Challenge: In what ways did John Hawkins' voyages in the 1560s establish England's direct participation in the transatlantic slave trade?",
-          "model_answer": "Recall: The Northwest Passage around the northern coast of Canada to reach Asian spice markets.\nExplain: Chartered companies were granted royal monopolies to open diplomatic trade with distant rulers (like Tsar Ivan the Terrible), bypassing European middlemen.\nChallenge: Hawkins kidnapped hundreds of Africans in Sierra Leone, transported them across the Atlantic, and sold them to Spanish plantations in the Caribbean, laying the foundations for Britain's triangular slave trade."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=BDepKiFIt5A",
-          "id": "BDepKiFIt5A",
-          "title": "Voyages into the Unknown: Navigating the Southern Oceans | Cinematic Trailer",
-          "duration": "2 mins 15 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Epic sea drama capturing wooden sailing ships battling uncharted oceans and scurvy.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the cinematography capture the terrifying isolation, sickness, and mortal danger faced by Elizabethan sailors crossing unknown oceans?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows towering ocean swells, rotten rations, and sailors dying of scurvy in cramped wooden berths, illustrating that more men died of malnutrition and disease than enemy cannon fire."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=j1-OxNSjmh0",
-          "id": "j1-OxNSjmh0",
-          "title": "Drake's Circumnavigation of the Globe (1577–1580) | BBC Landmark Archive",
+          "id": "WiwEwSdKh0c",
+          "url": "https://www.youtube.com/watch?v=WiwEwSdKh0c",
+          "title": "Francis Drake Sails Around the World | Epic History",
           "duration": "14 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–12:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Traces the Pelican (Golden Hind) through the Strait of Magellan to California and the Spice Islands.",
-          "viewing_task": "[02:30] Recall: What execution did Drake carry out at Port St Julian in Patagonia (executing his second-in-command Thomas Doughty for mutiny)?\n[06:15] Explain: How did Drake claim 'Nova Albion' (Northern California) for Queen Elizabeth in June 1579?\n[10:30] Challenge: How did Drake's successful circumnavigation fundamentally shatter Spanish and Portuguese claims that the oceans were their private imperial preserves?",
-          "model_answer": "Recall: Drake tried and beheaded Doughty, establishing that the captain held absolute authority over both gentlemen and common sailors ('I must have the gentleman to haul and draw with the mariner').\nExplain: He repaired his ship near modern San Francisco, nailed a brass plaque to a post claiming the land for Elizabeth, and traded peaceably with the local Coast Miwok people.\nChallenge: It proved English ships could penetrate Spain's most secret Pacific waters, trade directly in the Moluccas, and return home with astronomical wealth, inspiring an explosion of English colonial ambition."
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–06:30 | Lesson Phase: Enquiry Depth | Tone Alert: Masterpiece cartographic and documentary exploration of the capture of the Cacafuego, exploration of Nova Albion (California), and return across the Indian Ocean.",
+          "viewing_task": "[02:30] Treasure Raid: What vast treasure did Drake seize from the Spanish galleon Nuestra Señora de la Concepción (Cacafuego) off Ecuador?\n[05:15] Geopolitical Return: When Drake returned to Deptford in 1580, how did Elizabeth's decision to knight him aboard the Golden Hind provoke King Philip II?",
+          "model_answer": "Drake seized 26 tons of silver, 80 pounds of gold, and thirteen chests of coins and jewels worth over £400,000—more than England's entire annual crown revenue. Philip II demanded Drake's extradition and execution as an illegal pirate; Elizabeth openly defied Spain by boarding the Golden Hind at Deptford and knighting Drake, legitimizing his plunder and sharing in the colossal profits."
+        },
+        {
+          "type": "youtube",
+          "id": "YnZ1GaPo3Wk",
+          "url": "https://www.youtube.com/watch?v=YnZ1GaPo3Wk",
+          "title": "Exploration in the Elizabethan Age: Technology & New Trade Routes | Scott Thomas",
+          "duration": "5 mins 30 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Technological Revolution | Tone Alert: Explores navigational advances: Mercator projections, astrolabes, cross-staffs, magnetic compasses, and race-built galleons.",
+          "viewing_task": "[01:30] Navigation Tech: How did instruments like the astrolabe, cross-staff, and quadrant enable oceanic navigators to calculate latitude?\n[03:45] Ship Architecture: How did English 'race-built' galleons designed by John Hawkins differ from bulky Spanish carracks?",
+          "model_answer": "Navigators used the astrolabe and quadrant to measure the exact angular altitude of the North Star or midday sun above the horizon, allowing accurate calculation of their north-south latitude at sea. John Hawkins stripped away towering fore- and aft-castles, lowered the ship's profile in the water, and increased length-to-beam ratio, creating faster, more maneuverable race-built galleons capable of tacking close to the wind."
         }
       ],
       "enquiry_task": {
@@ -13961,47 +13840,36 @@ const eee_data = {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=IpVLfwhvbeU",
-          "id": "IpVLfwhvbeU",
-          "title": "GCSE History: Walter Raleigh & The Colonisation of Virginia (1584–1590)",
-          "duration": "4 mins 20 secs",
-          "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:15–03:50 | Lesson Phase: Lesson Hook | Tone Alert: Explores Sir Walter Raleigh's royal patent, Richard Hakluyt, and naming Virginia after the Virgin Queen.",
-          "viewing_task": "[01:00] Quick Check: Why did Sir Walter Raleigh never actually set foot in Virginia himself despite organizing the colonisation attempts?\n[02:45] Hinge Question: Why did the early English attempts to establish a permanent colony on Roanoke Island end in total failure?",
-          "model_answer": "Quick Check: Elizabeth refused to allow her favorite courtier to leave England, so Raleigh financed and managed the expeditions from London.\nHinge Question: The colonists were gentleman adventurers who refused to farm, lacked basic survival skills, arrived too late in the season to plant crops, and alienated the local Indigenous population who fed them."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=pNmO9wEqxqU",
           "id": "pNmO9wEqxqU",
-          "title": "GCSE History: Sir Walter Raleigh & The Mystery of The Lost Colony of Roanoke (1587)",
+          "url": "https://www.youtube.com/watch?v=pNmO9wEqxqU",
+          "title": "Sir Walter Raleigh & the Failure of Roanoke | The History Teacher",
           "duration": "5 mins 15 secs",
-          "pathway": "Core Enquiry",
-          "teacher_guidance": "Recommended Watch Window: 00:20–04:45 | Lesson Phase: The Lost Colony | Tone Alert: Investigates Governor John White, Virginia Dare, and the 1590 return.",
-          "viewing_task": "[01:15] Recall: Who was Virginia Dare, born on Roanoke Island in August 1587?\n[03:00] Explain: Why was Governor John White delayed in England for three years when he returned to get supplies in 1587?\n[04:20] Challenge: When White finally returned in August 1590, what clues did he find carved into the palisade post, and what most likely happened to the 115 missing settlers?",
-          "model_answer": "Recall: The first English child born in the Americas (granddaughter of Governor John White).\nExplain: The threat of the Spanish Armada meant all English ships were requisitioned by royal decree for national defence; no vessels were permitted to sail to America until 1590.\nChallenge: He found the word 'CROATOAN' carved into a tree; archaeological evidence suggests the starving settlers were absorbed into friendly local Algonquian tribes on nearby Hatteras Island."
+          "pathway": "Starter Hook",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:15 | Lesson Phase: Starter Hook | Tone Alert: Comprehensive examination of Walter Raleigh's patent, Amadas and Barlowe expedition (1584), and Richard Grenville's 1585 voyage.",
+          "viewing_task": "[01:45] Royal Patent: What royal privileges did Elizabeth grant Sir Walter Raleigh in March 1584 to establish English settlements in North America?\n[03:50] Colony Location: Why did Raleigh choose Roanoke Island off the coast of modern North Carolina for the first settlement?",
+          "model_answer": "Elizabeth granted Raleigh a royal patent giving him exclusive proprietary rights to explore, settle, and govern any lands not possessed by Christian princes, with one-fifth of all gold and silver reserved for the Crown. Roanoke Island was chosen because the barrier islands offered natural concealment from roving Spanish naval patrols while providing access to fertile soil and friendly indigenous tribes reported by early scouts."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=i2LdlqW26zc",
-          "id": "i2LdlqW26zc",
-          "title": "The New World (2005) | Jamestown & The Virginia Wilderness Trailer",
-          "duration": "2 mins 25 secs",
+          "id": "mpL0n5WlNDA",
+          "url": "https://www.youtube.com/watch?v=mpL0n5WlNDA",
+          "title": "GCSE History Rapid Revision: The Virginia Project - Why Did It Fail? | MrClokeHistory",
+          "duration": "4 mins 20 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:20 | Lesson Phase: Causal Analysis | Tone Alert: Structured breakdown of the failure of the 1585 and 1587 Roanoke voyages (poor leadership, supplies, conflict with Chief Wingina).",
+          "viewing_task": "[01:30] Logistical Crisis: Why did the loss of the supply ship Tiger ruin the 1585 expedition before the settlers even landed?\n[03:10] Indigenous Conflict: How did Ralph Lane's aggressive paranoia lead to the murder of Algonquian Chief Wingina in 1586?",
+          "model_answer": "The flagship Tiger ran aground on shallow shoals, flooding its cargo hold and spoiling virtually all the expedition's seed wheat, food provisions, and livestock, forcing the colonists to depend entirely on local tribes for survival. Ralph Lane suspected the local Secotan tribe planned to starve the colonists; he launched a preemptive strike, ambush-murdering Chief Wingina and decapitating him, making peaceful co-existence impossible."
+        },
+        {
+          "type": "youtube",
+          "id": "sckzQiXapk8",
+          "url": "https://www.youtube.com/watch?v=sckzQiXapk8",
+          "title": "The Colony of Roanoke’s Mysterious Disappearance | The UnXplained (HISTORY)",
+          "duration": "4 mins 35 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:25 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Depicts the fragile wooden fortresses and untamed American coast.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film portray the harsh, unforgiving environmental reality that destroyed early English colonial ambitions?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows English settlers trapped inside wooden palisades dying of fever and hunger while looking out into dense forests, highlighting the fatal naivety of early Tudor colonizers."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=5Cc4LaSRiSc",
-          "id": "5Cc4LaSRiSc",
-          "title": "The Legacy of Elizabethan Colonisation: Foundations of Empire | Archive",
-          "duration": "12 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–10:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Synthesizes the failure of Roanoke with the successful founding of Jamestown in 1607.",
-          "viewing_task": "[02:30] Recall: What economic products (tobacco, sassafras, timber) did Raleigh and Hakluyt believe Virginia would supply to England?\n[06:00] Explain: How did Richard Hakluyt's 'Discourse on Western Planting' provide the philosophical and imperial blueprint for British colonisation?\n[09:30] Challenge: Although Raleigh's Roanoke venture failed completely in Elizabeth's reign, why was it vital for the eventual success of the British Empire?",
-          "model_answer": "Recall: Timber and pitch for the navy, minerals, and valuable cash crops like tobacco and sugar that currently had to be bought from Spain.\nExplain: Hakluyt argued colonisation would spread Protestantism, provide employment for England's 'idle poor', and challenge Spanish dominance in the Americas.\nChallenge: Roanoke taught hard, essential lessons: future ventures abandoned aristocratic privateering in favor of joint-stock corporate investment, family settlement, and cash-crop agriculture, enabling the survival of Jamestown in 1607."
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:35 | Lesson Phase: Archival Mystery | Tone Alert: Investigates the 1587 'Lost Colony' under John White and the cryptic carving 'CROATOAN' found in 1590.",
+          "viewing_task": "[01:20] Delayed Relief: Why was John White unable to return with relief supplies to Roanoke between 1587 and 1590?\n[03:30] The Clue: What clues did White discover carved into the palisade post upon finally reaching the deserted settlement in August 1590?",
+          "model_answer": "White was trapped in England because Queen Elizabeth requisitioned all seaworthy vessels to defend the realm against the imminent Spanish Armada in 1588. When White finally returned in 1590, the settlement was deserted with no signs of struggle; carved on a wooden post was the word 'CROATOAN' and on a tree 'CRO', indicating the surviving settlers had relocated peacefully to live with the nearby Croatoan tribe on Hatteras Island."
         }
       ],
       "enquiry_task": {

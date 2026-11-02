@@ -787,7 +787,7 @@ export default {
             "type": "4-mark",
             "question": "Give two things you can infer from Source A about the collapse of Imperial Germany in November 1918.",
             "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from Source A.",
-            "model": "First inference: I can infer from Source A that military discipline within the armed forces had completely broken down by November 1918. Detail in Source A that tells me this: The photograph shows armed sailors in open mutiny against their officers, raising red flags and establishing revolutionary councils.<br><br>Second inference: I can infer that the mutiny represented an existential threat to the imperial government. Detail in Source A that tells me this: Thousands of sailors are armed and taking over public buildings in northern ports, demonstrating that the Kaiser could no longer enforce control over his own armed forces.",
+            "model": "<strong>Inference 1:</strong> Military discipline in the German armed forces had completely broken down by November 1918. <strong>Detail:</strong> The source shows armed sailors in open mutiny against their officers, raising red flags.<br><br><strong>Inference 2:</strong> The mutiny was a major threat to imperial authority. <strong>Detail:</strong> Thousands of armed sailors are occupying public buildings and forming revolutionary councils in northern ports.",
             "scaffolding": {
               "acronym": "Inference + Detail Formula (AO3)",
               "acronym_title": "Deduction & Quote Framework",
@@ -825,7 +825,7 @@ export default {
               "The British naval blockade and military defeat"
             ],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "One major reason was 1. kiel mutiny & revolution. Explain how sailors at Kiel mutinied (28 Oct) and workers' & soldiers' councils seized cities (e.g. Kurt Eisner in Bavaria), destroying imperial authority. This was crucial because it directly destabilised the existing political order and placed insurmountable pressure on the Weimar leadership.<br><br>Furthermore, a second critical factor was 2. blockade & military defeat. Explain how 750,000 starvation deaths from the British naval blockade and the failed 1918 Spring Offensive convinced military leaders the war was lost. Consequently, this exacerbated the crisis by alienating key social groups and undermining democratic legitimacy.<br><br>Finally, an underlying reason was 3. loss of army support & strike. Explain how General Groener told Wilhelm the army wouldn't fight for him, while an SPD general strike in Berlin forced Prince Max to announce abdication. Ultimately, this meant that the situation could not be contained, directly triggering decisive structural change.",
+            "model": "One major reason Kaiser Wilhelm II was forced to abdicate was the loss of military support. By early November 1918, mutiny spread from the navy at Kiel across German cities. Crucially, on 9 November, Army Chief of Staff General Groener informed the Kaiser that the army would no longer follow his orders to suppress domestic unrest, leaving him without armed protection.<br><br>Furthermore, the German public had turned against the monarchy due to extreme war weariness and starvation. The British naval blockade caused severe food shortages, leading to widespread strikes and the creation of workers' and soldiers' councils across Germany, threatening a full-scale communist revolution like Russia's in 1917.<br><br>Finally, Allied pressure made the Kaiser's removal essential for peace. US President Woodrow Wilson made it clear that peace negotiations would only proceed with a representative government, not an autocratic emperor. To prevent civil war and secure an immediate armistice, Chancellor Max von Baden announced the Kaiser's abdication.",
             "scaffolding": {
               "acronym": "PEEL Structure Strip",
               "acronym_title": "Section A: Question 2 • Explain Why [12 Marks • 18 Mins]",
@@ -1097,7 +1097,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source A for an enquiry into the political instability confronting Friedrich Ebert's provisional government in 1918–1919?",
-          "model_answer": "<p style=\"margin-bottom: 8px;\"><strong>Content &amp; Contextual Knowledge:</strong> Source A is exceptionally useful because it provides direct visual evidence of the total collapse of state policing and the armed paramilitary violence gripping the streets of Berlin. The photograph shows revolutionary fighters and deserting soldiers armed with military rifles barricaded behind giant industrial paper rolls in the Berlin newspaper quarter. This directly reflects historical reality: after the Kaiser’s abdication in November 1918, Ebert’s Council of People’s Representatives held nominal authority but possessed no loyal police force, leaving Berlin vulnerable to armed left-wing militias and revolutionary shop stewards who seized major government and newspaper buildings during the Spartacist Uprising in January 1919.</p><p style=\"margin: 0;\"><strong>Provenance &amp; Utility Evaluation:</strong> The provenance enhances its utility: as an authentic press photograph taken on the streets of Berlin during the revolutionary unrest (nature and origin), it captures the genuine street-level militarisation of German politics without artistic staging. However, its utility is focused specifically on the revolutionary epicenter of Berlin; it does not show the situation in rural southern Germany or regional cities where moderate local councils maintained civil order, nor does it illustrate the right-wing counter-violence of the Freikorps deployed by Ebert and Gustav Noske to crush the uprising.</p>",
+          "model_answer": "Source A shows that by November 1918, German soldiers and workers were heavily armed and in open revolt, proving military authority had completely collapsed.",
           "teacher_notes": {
             "source_context": "Official press photograph taken in Berlin in November 1918 showing armed revolutionary soldiers and workers manning barricades. **Hinge Question:** How does Source A illustrate why Friedrich Ebert felt compelled to make a secret alliance with the imperial military officer corps in the Ebert-Groener Pact?"
           },
@@ -1120,7 +1120,7 @@ export default {
           "question_badge": "Author's Purpose",
           "question_type": "Author's Purpose",
           "enquiry_question": "Explain why Prince Max von Baden felt compelled to issue the proclamation in Source B on 9 November 1918.",
-          "model_answer": "<p style=\"margin: 0;\">Prince Max von Baden issued this proclamation as a desperate tactical gamble to prevent a full-scale communist revolution in Berlin. Following the Kiel naval mutiny in late October 1918, workers' and soldiers' councils had seized control of major cities across Germany, and on the morning of 9 November, a general strike paralysed the capital while garrison troops joined the protestors. Although Kaiser Wilhelm II had not yet formally signed a deed of abdication at military headquarters in Spa, Prince Max unilaterally announced the monarch’s renunciation to placate the revolutionary crowds, satisfy US President Woodrow Wilson’s demand for democratization as a condition for an armistice, and safely transfer the Chancellorship to moderate Social Democrat Friedrich Ebert before radical socialists could seize the state.</p>",
+          "model_answer": "Prince Max announced the Kaiser's abdication to pre-empt a violent communist uprising and manage an orderly handover to moderate Social Democrats.",
           "teacher_notes": {
             "source_context": "On the morning of 9 November 1918, Chancellor Prince Max von Baden unilaterally announced the Kaiser's abdication to prevent a general strike from escalating into a bloody revolution, handing the Chancellorship to SPD leader Friedrich Ebert. **Hinge Question:** Why did Prince Max von Baden announce the Kaiser's abdication before Wilhelm II had personally signed an official instrument of renunciation?"
           },
@@ -1143,7 +1143,7 @@ export default {
           "question_badge": "Source Inference",
           "question_type": "Source Inference",
           "enquiry_question": "Give two things you can infer from Source C about the establishment of the Weimar Republic in November 1918.",
-          "model_answer": "<ul style=\"margin: 0; padding-left: 18px; line-height: 1.6; color: #1e293b;\"><li style=\"margin-bottom: 8px;\"><strong>Inference 1:</strong> The republic was proclaimed amidst sudden, chaotic public excitement rather than an orderly constitutional ceremony.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> The photograph shows vast crowds of citizens packing the plaza outside the Reichstag to hear Scheidemann leaning out of an ordinary second-floor window.</li><li><strong>Inference 2:</strong> Democratic leaders acted with extreme haste and urgency to take control of the state.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> Scheidemann is shown shouting the announcement informally from an open window without official preparation, state regalia, or prior consultation with SPD chairman Friedrich Ebert, in a desperate bid to pre-empt Karl Liebknecht declaring a communist soviet republic.</li></ul>",
+          "model_answer": "Scheidemann proclaimed the republic to establish democratic legitimacy and stop Karl Liebknecht declaring a Soviet-style communist state in Berlin.",
           "teacher_notes": {
             "source_context": "On 9 November 1918, SPD leader Philipp Scheidemann proclaimed the German Republic from a window of the Reichstag to pre-empt Karl Liebknecht declaring a Soviet-style communist republic from the Berlin Palace. **Hinge Question:** Why did Scheidemann rush to proclaim a parliamentary republic from the Reichstag window without consulting party leader Friedrich Ebert?"
           },
@@ -1166,7 +1166,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source D for an enquiry into the aims and political challenges facing the Weimar Republic's leadership in early 1919?",
-          "model_answer": "<p style=\"margin-bottom: 8px;\"><strong>Content &amp; Contextual Knowledge:</strong> Source D is highly useful because it directly articulates the founding political ideology and external anxieties of the new republican leadership. Ebert declares that <em>\"arbitrary rule is ended forever\"</em> and that Germany's goal is <em>\"a republic rooted in social democracy and public justice\"</em>, while sternly warning the Allies not to impose a <em>\"peace of vengeance that enslaves our working people.\"</em> This aligns closely with historical knowledge: following the January 1919 elections where democratic parties won over 76% of the vote, Ebert convened the assembly in Weimar to draft a democratic constitution away from Berlin's street fighting. His speech reflects the intense pressure on the provisional government: they had to persuade the German people that democracy was legitimate, while desperately appealing to Allied negotiators in Paris not to impose devastating reparations that would cripple the new state.</p><p style=\"margin: 0;\"><strong>Provenance &amp; Utility Evaluation:</strong> The provenance provides exceptional insight into official republican strategy: as a keynote parliamentary address by the newly elected Reich President (nature and origin), it reveals how Ebert framed the transition from empire to democracy for both a domestic and international audience. However, the source presents an idealistic, public-facing defense of the regime; it omits the controversial, pragmatic compromises Ebert had secretly made to survive, specifically the Ebert-Groener Pact of 10 November 1918, in which the socialist government allied with the imperial military officer corps and deployed brutal Freikorps paramilitaries to execute left-wing revolutionaries like Rosa Luxemburg and Karl Liebknecht.</p>",
+          "model_answer": "Ebert's priority was restoring public order, food supplies, and parliamentary elections, working with the existing civil service to prevent chaos.",
           "teacher_notes": {
             "source_context": "In February 1919, following democratic elections with an 83% turnout, Friedrich Ebert opened the National Assembly in Weimar, seeking to build democratic legitimacy while warning Allied victors at Versailles against crushing terms. **Hinge Question:** Why did Friedrich Ebert emphasise both lawful democratic order at home and resistance to Allied vengeance abroad in his opening address?"
           }
@@ -1188,7 +1188,7 @@ export default {
           "question_badge": "Constitutional Analysis",
           "question_type": "Constitutional Analysis",
           "enquiry_question": "What does Source E suggest about the legal foundation and constitutional intentions of the new German Republic in 1919?",
-          "model_answer": "<p style=\"margin: 0;\">Source E demonstrates that the Weimar Republic sought to ground its sovereignty in formal constitutional legality, universal suffrage, and parliamentary democracy to replace the fallen Hohenzollern autocracy. Promulgated in the official <em>Reichsgesetzblatt</em> in August 1919, the constitution codified Europe's most progressive democratic framework, giving all men and women over twenty the vote and establishing an extensive bill of fundamental civil rights (Articles 109–118). However, it also enshrined institutional compromises that proved fatal: proportional representation encouraged unstable multi-party coalitions, while Article 48 granted the President sweeping emergency powers to bypass parliament and rule by decree, creating a constitutional mechanism that authoritarians would later exploit to dismantle democracy.</p>",
+          "model_answer": "The Weimar Constitution was exceptionally democratic, granting universal suffrage, proportional representation, and a Bill of Rights to all German adults.",
           "teacher_notes": {
             "source_context": "The official promulgated text of the Weimar Constitution passed by the National Assembly on 31 July 1919 and signed into law by President Friedrich Ebert on 11 August 1919. **Hinge Question:** Why did the inclusion of Article 48 in the Weimar Constitution ultimately prove more dangerous to democracy than the proportional representation voting system?"
           },
@@ -1963,7 +1963,7 @@ export default {
               "The 'stab-in-the-back' myth (Dolchstoßlegende)"
             ],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "One major reason was 1. reparations & ruhr crisis. Explain how the £6.6bn debt led to defaults, French occupation of the Ruhr (1923), passive resistance, and catastrophic hyperinflation. This was crucial because it directly destabilised the existing political order and placed insurmountable pressure on the Weimar leadership.<br><br>Furthermore, a second critical factor was 2. the dolchstoßlegende. Explain how right-wing nationalists branded politicians 'November Criminals', permanently undermining Weimar's democratic legitimacy. Consequently, this exacerbated the crisis by alienating key social groups and undermining democratic legitimacy.<br><br>Finally, an underlying reason was 3. extremist uprisings. Explain how demobilised soldiers and anger at military cuts (100k cap) triggered the Spartacist Uprising (1919), Kapp Putsch (1920), and Munich Putsch (1923). Ultimately, this meant that the situation could not be contained, directly triggering decisive structural change.",
+            "model": "One reason the Treaty of Versailles caused severe challenges was the extreme anger over Article 231, the War Guilt Clause. Germans believed the war had been fought defensively and felt humiliated by having to accept sole blame. Opponents labeled the Weimar politicians the 'November Criminals' who had delivered a *Diktat* (dictated peace), permanently damaging the new republic's legitimacy.<br><br>Furthermore, the harsh territorial and military terms weakened Germany's security and pride. Germany lost 13% of its European territory, including Alsace-Lorraine and the Polish Corridor, cutting off East Prussia. The armed forces were cut to 100,000 men with no air force or tanks, leaving the country feeling defenseless and sparking resentment among ex-soldiers.<br><br>Finally, the massive £6.6 billion reparations bill crippled the German economy. Paying reparations drained government revenues, leading to defaulting on coal deliveries in 1923, the French invasion of the Ruhr, and the catastrophic hyperinflation crisis that wiped out middle-class savings.",
             "scaffolding": {
               "acronym": "PEEL Structure Strip",
               "acronym_title": "Section A: Question 2 • Explain Why [12 Marks • 18 Mins]",
@@ -1998,7 +1998,7 @@ export default {
             "type": "utility_8m",
             "question": "How useful are Sources B and C for an enquiry into challenges facing the Weimar Republic in the years 1920–1923?",
             "prompt": "Evaluate both sources using Content, Contextual Knowledge (Kapp Putsch, Freikorps, Hyperinflation), and Provenance (Nature, Origin, Purpose).",
-            "model": "Source B is highly useful for an enquiry into the political challenges facing the early Weimar Republic because its content shows armed Freikorps soldiers occupying central Berlin during the Kapp Putsch of March 1920, with swastikas painted on their steel helmets. From my own knowledge, the putsch erupted when the government attempted to disband the Marinebrigade Ehrhardt; General von Seeckt and the regular army refused to defend the state, forcing the democratic cabinet to flee until a nationwide general strike paralyzed the coup. As an authentic contemporary press photograph from Berlin, Source B accurately captures the violent paramilitary threat and the dangerous disloyalty of the military officer corps toward democracy.<br><br>Source C is equally useful because it provides direct documentary proof of the catastrophic economic crisis that engulfed the Republic in late 1923. The visual evidence of an official Reichsbank banknote denominated in 'Eine Billion Mark' (one trillion marks) proves that the German mark had completely collapsed. From my own knowledge, this hyperinflation was triggered when French troops occupied the Ruhr and the government printed unbacked currency to fund passive resistance; by November 1923, a dollar was worth 4.2 trillion marks, wiping out middle-class savings and pensions. As an official legal tender artifact issued by the state, Source C possesses high authenticity. Overall, Sources B and C are exceptionally useful together because Source B illustrates the violent right-wing military threat of 1920, while Source C illustrates the devastating economic collapse of 1923, demonstrating the multifaceted crises confronting the early Republic.",
+            "model": "Source B is useful for an enquiry into right-wing opposition because it illustrates the *Dolchstoß* (stab-in-the-back) myth, showing a masked civilian stabbing a German soldier from behind. From my knowledge, nationalists falsely claimed the army had not been defeated militarily, but betrayed by socialist politicians signing the 1918 armistice. As a nationalist postcard, it shows how effectively right-wing groups weaponized the Treaty of Versailles to undermine the Weimar government.<br><br>Source C is useful because it depicts armed Freikorps troops during the 1920 Kapp Putsch with swastikas painted on helmets. Contextually, when the government attempted to disband paramilitary units under treaty army limits, 12,000 Freikorps troops marched on Berlin, and the regular army refused to fire on them. As an authentic photograph, it provides reliable visual evidence of armed right-wing defiance, although it does not show the left-wing general strike that ultimately defeated the putsch. Overall, both sources are highly useful for showing how treaty terms fueled political extremism.",
             "scaffolding": {
               "acronym": "Two-Source Utility Framework",
               "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
@@ -2228,7 +2228,7 @@ export default {
           "question_badge": "Cross-Referencing",
           "question_type": "Cross-Referencing",
           "enquiry_question": "How does Source A help explain why Friedrich Ebert turned to right-wing Freikorps paramilitaries in January 1919?",
-          "model_answer": "<p style=\"margin: 0;\">Source A reveals that left-wing revolutionaries possessed heavy military equipment, field artillery, and machine guns, occupying vital national monuments and government buildings across Berlin. When 100,000 workers demonstrated and the revolutionary Spartacist League launched an armed insurrection to establish a Soviet-style dictatorship, Chancellor Friedrich Ebert lacked any loyal regular army units in the capital to defend the infant republic. Source A visually demonstrates the acute military threat confronting the government, explaining why Ebert was compelled to honor the Ebert-Groener Pact and authorize Defence Minister Gustav Noske to deploy 4,000 right-wing Freikorps veterans to brutally suppress the uprising with street artillery and summary executions.</p>",
+          "model_answer": "Source A illustrates that the Spartacist uprising was heavily armed and violent, seizing key buildings in Berlin before being brutally crushed by Freikorps paramilitaries.",
           "teacher_notes": {
             "source_context": "In January 1919, 100,000 revolutionary workers and Spartacists revolted in Berlin, seizing newspaper offices before Defence Minister Gustav Noske deployed right-wing Freikorps brigades to crush the rebellion with extreme violence. **Hinge Question:** Why did the brutal suppression of the Spartacist Uprising create a permanent, irreconcilable hatred between the SPD and the Communist Party (KPD)?"
           },
@@ -2251,7 +2251,7 @@ export default {
           "question_badge": "Source Inference",
           "question_type": "Source Inference",
           "enquiry_question": "Give two things you can infer from Source B about right-wing nationalist attitudes toward the birth of the Weimar Republic.",
-          "model_answer": "<ul style=\"margin: 0; padding-left: 18px; line-height: 1.6; color: #1e293b;\"><li style=\"margin-bottom: 8px;\"><strong>Inference 1:</strong> Nationalists refused to accept that the German army was defeated militarily on the battlefields of the Western Front.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> The heroic German soldier is depicted standing tall, fully armed, and unbeaten at the front line, looking outward toward the enemy.</li><li><strong>Inference 2:</strong> Nationalists placed the entire blame for the war defeat on civilian socialist and Jewish politicians on the home front.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> A treacherous civilian figure is shown sneaking up behind the soldier with a dagger to plunge into his back, directly visualising the Dolchstoßlegende that branded democratic politicians as the treacherous \"November Criminals\".</li></ul>",
+          "model_answer": "The postcard shows the nationalist 'stab-in-the-back' myth, blaming socialists and Jews for Germany's 1918 defeat rather than military exhaustion.",
           "teacher_notes": {
             "source_context": "Right-wing propaganda postcard depicting the Dolchstoßlegende in 1919, scapegoating republican politicians as \"November Criminals\" who allegedly betrayed the undefeated imperial army. **Hinge Question:** Why was the \"Stab in the Back\" myth so politically toxic for the long-term legitimacy of the Weimar democracy?"
           },
@@ -2274,7 +2274,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source C for an enquiry into the military weaknesses of the Weimar government between 1919 and 1923?",
-          "model_answer": "<p style=\"margin-bottom: 8px;\"><strong>Content &amp; Contextual Knowledge:</strong> Source C is exceptionally useful because it provides undeniable physical evidence that the Weimar Republic was fundamentally vulnerable to right-wing paramilitary rebellion. The photograph shows heavily armed troops of Marinebrigade Ehrhardt wearing swastika-painted steel helmets and occupying the central government district in Berlin. This reflects precise historical events: in March 1920, when Chancellor Bauer's government attempted to disband the 5,000-strong Ehrhardt brigade to comply with Versailles treaty troop caps of 100,000 men, the Freikorps marched into Berlin and proclaimed Wolfgang Kapp as Chancellor. When the government ordered army chief General Hans von Seeckt to suppress the rebellion, Seeckt famously refused, stating that <em>\"Reichswehr does not fire on Reichswehr\"</em>, forcing Ebert's elected cabinet to flee the capital to Dresden and Stuttgart.</p><p style=\"margin: 0;\"><strong>Provenance &amp; Utility Evaluation:</strong> As an authentic press photograph captured on the Wilhelmstraße during the coup (nature and origin), the source captures the brazen defiance and military power of demobilised veteran paramilitaries who despised the democratic republic. However, the photograph only shows the initial armed takeover; it does not show why the putsch ultimately failed within four days, namely that Berlin's trade unions launched a massive general strike that cut off water, gas, electricity, and rail transport, paralyzing the coup leaders and demonstrating that working-class solidarity—rather than the state's military—saved the Weimar democracy in 1920.</p>",
+          "model_answer": "Source C provides direct visual evidence of Freikorps paramilitaries seizing Berlin during the Kapp Putsch, demonstrating the military's unwillingness to defend the republic.",
           "teacher_notes": {
             "source_context": "In March 1920, when the government attempted to disband the Ehrhardt Naval Brigade under Versailles military limits, 5,000 armed Freikorps troops marched on Berlin to install Wolfgang Kapp as dictator. **Hinge Question:** Why did General von Seeckt declare that \"Reichswehr does not fire on Reichswehr\" when the Weimar government ordered the military to crush the Kapp Putsch?"
           },
@@ -2296,7 +2296,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source D for an enquiry into the threat of political assassinations and right-wing extremism facing the Weimar Republic between 1921 and 1922?",
-          "model_answer": "<p>Source D is exceptionally useful because Chancellor Wirth explicitly warns that right-wing political assassinations, such as the murder of Rathenau and Erzberger by Organisation Consul extremists, threatened the legal existence of the Republic. As a direct parliamentary address by the head of government, it demonstrates the state’s desperation to pass the Law for the Protection of the Republic while exposing the deep hostility of conservative judiciaries and paramilitaries toward republican democracy.</p>",
+          "model_answer": "Chancellor Wirth warns that political assassinations by right-wing death squads like Organisation Consul threatened to destroy democratic stability from within.",
           "teacher_notes": {
             "source_context": "Following the assassination of Jewish Foreign Minister Walther Rathenau by ultra-nationalist Organisation Consul gunmen on 24 June 1922, Chancellor Wirth delivered an impassioned parliamentary address denouncing right-wing political murder. **Hinge Question:** Why did Chancellor Joseph Wirth identify right-wing paramilitary extremism as the greatest existential threat to the young Weimar Republic?"
           },
@@ -2319,7 +2319,7 @@ export default {
           "question_badge": "Economic Evidence",
           "question_type": "Economic Evidence",
           "enquiry_question": "What does Source E reveal about the severity of the economic collapse confronting Germany in the autumn of 1923?",
-          "model_answer": "<p style=\"margin: 0;\">Source E provides direct material proof of the total hyperinflationary collapse of the German currency. Printed in denominations of 1,000,000,000,000 (one trillion) marks, the banknote was printed only on one side with coarse paper because the Reichsbank’s printing presses could not keep pace with spiraling inflation and running out of ink. Historically, the crisis was triggered when 60,000 French and Belgian troops occupied the Ruhr industrial basin in January 1923 after Germany defaulted on reparations; the Weimar government ordered passive resistance and printed trillions of unbacked paper marks to pay striking miners. By November 1923, an egg cost 320 billion marks, paper money had lost all functional value, and workers were forced to collect wages twice daily in laundry baskets and wheelbarrows before prices doubled by nightfall.</p>",
+          "model_answer": "The one-billion-mark overprint banknote provides material evidence of the complete collapse of currency value during the 1923 hyperinflation crisis.",
           "teacher_notes": {
             "source_context": "During the 1923 hyperinflation triggered by passive resistance in the Ruhr, the Reichsbank printed astronomical banknote denominations with blank backs to save ink and paper. **Hinge Question:** Why did hyperinflation inflict far greater psychological trauma on the German middle class than on industrial tycoons who owned physical assets?"
           },
@@ -3048,7 +3048,7 @@ export default {
             "type": "4-mark",
             "question": "Part 1: Content & Provenance (COP) Comparative Analysis for Sources B & C.",
             "prompt": "Compare what Sources B and C reveal about Germany's international rehabilitation, and evaluate how their contrasting provenances affect their usefulness.",
-            "model": "Source B provides valuable insight into the official or prominent viewpoint, highlighting key achievements and contemporary data. In contrast, Source C reveals an alternative critical perspective, exposing underlying social friction and popular anxieties. When evaluated together, Source B demonstrates what contemporary leadership intended, while Source C captures the reality experienced by ordinary citizens, giving both high historical utility.",
+            "model": "<strong>Content:</strong> Source B shows Germany relying heavily on private American loans ($1,000 bond), while Source C warns that this reliance made Germany vulnerable to sudden US withdrawals.<br><br><strong>Provenance:</strong> Source B is an official financial bond, showing public economic confidence, whereas Source C is Stresemann's private warning, revealing genuine governmental anxiety.",
             "scaffolding": {
               "acronym": "COP Comparative Formula",
               "acronym_title": "Dual-Source Evaluation",
@@ -3078,7 +3078,7 @@ export default {
             "question": "How useful are Sources B and C for an enquiry into the recovery of Germany's international position in the years 1924–1929?",
             "stimulus": [],
             "prompt": "Evaluate both sources using Content, Contextual Knowledge (Locarno, League of Nations, Kellogg-Briand), and Provenance.",
-            "model": "Source B is highly useful for an enquiry into the recovery of Germany's international position because it depicts Foreign Minister Gustav Stresemann negotiating as an equal sovereign partner alongside British and French leaders at Locarno in October 1925. From my own knowledge, the Locarno Treaties established the 'Locarno Spirit' of reconciliation, under which Germany voluntarily accepted its western borders with France and agreed to the demilitarisation of the Rhineland in return for guarantees against future French invasion. As an official conference press photograph, Source B accurately captures the diplomatic rehabilitation of Germany from a defeated pariah into a respected European negotiator.<br><br>Source C is equally useful because it documents Germany's admission into the League of Nations in Geneva in September 1926, where Germany was awarded a permanent seat on the League Council. From my own knowledge, this was a massive diplomatic breakthrough engineered by Stresemann, formally restoring Germany's great power status and allowing Germany to protect the rights of German minorities across Central Europe. However, both sources reflect official diplomatic optimism and do not reveal that nationalist right-wing groups inside Germany fiercely opposed these treaties, denouncing Locarno as treason for accepting the loss of Alsace-Lorraine. Overall, Sources B and C together are exceptionally useful for demonstrating how Stresemann restored Germany's international standing through peaceful diplomacy.",
+            "model": "Source B is useful because it provides material evidence of the Dawes Plan (1924), showing how American capital funded German recovery through 800 million gold marks in foreign loans. From my knowledge, these loans financed public works, hospitals, and industrial modernization, helping unemployment fall and trade expand. As an official Wall Street bond certificate, it accurately reflects foreign investor confidence in Weimar Germany.<br><br>Source C is useful because Stresemann privately admits that Germany's economic prosperity was superficial, describing the country as 'dancing on a volcano' because short-term US loans could be recalled at any moment. As a confidential speech to party colleagues, Stresemann was speaking honestly about hidden financial risks. However, neither source shows social reforms like pensions and unemployment insurance. Overall, both sources are very useful for showing both the strength and the fragile dependency of Weimar's economic recovery.",
             "scaffolding": {
               "acronym": "Source Utility Framework",
               "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
@@ -3342,7 +3342,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source A for an enquiry into how Stresemann and Schacht successfully stabilized German currency during the hyperinflation crisis of late 1923?",
-          "model_answer": "<p>Source A is highly useful because it outlines the precise economic mechanism Stresemann and Schacht used to halt hyperinflation: ending the printing presses and securing the Rentenmark against physical land and industrial assets at a fixed 1:1,000,000,000,000 ratio. As an official statutory decree, it reflects government policy, though it naturally emphasizes administrative resolve over the lingering impoverishment of the middle class who lost their life savings.</p>",
+          "model_answer": "Stresemann explains that halting the printing presses and introducing the temporary Rentenmark backed by land values restored public trust and ended hyperinflation.",
           "teacher_notes": {
             "source_context": "In November 1923, Stresemann and Schacht ended hyperinflation by introducing the Rentenmark, backed by national land and industrial assets, fixing the exchange rate at 1 Rentenmark to 1 trillion paper marks. **Hinge Question:** How did backing the Rentenmark with real industrial and agricultural mortgages restore public confidence in German currency?"
           },
@@ -3365,7 +3365,7 @@ export default {
           "question_badge": "Economic Analysis",
           "question_type": "Economic Analysis",
           "enquiry_question": "What does Source B reveal about the financial mechanisms that enabled Weimar Germany's economic revival between 1924 and 1929?",
-          "model_answer": "<p style=\"margin: 0;\">Source B demonstrates that Weimar Germany’s economic recovery was funded directly by foreign capital, specifically American private banking syndicates led by J.P. Morgan & Co. Under the Dawes Plan of August 1924, German reparations were restructured into manageable annual installments starting at 1 billion gold marks, underpinned by an initial international loan of 800 million gold marks ($200 million) represented by this bond. Between 1924 and 1929, over 25 billion marks in foreign loans flowed into Germany, financing the modern rebuilding of factories, chemical plants, and municipal infrastructure. However, as Stresemann privately warned, this created extreme structural fragility: the German economy became dependent on short-term American credit to pay reparations to Britain and France, leaving it vulnerable to catastrophic collapse the moment Wall Street recalled loans following the 1929 Crash.</p>",
+          "model_answer": "Source B demonstrates that Weimar's industrial revival depended directly on private American loans provided under the 1924 Dawes Plan.",
           "teacher_notes": {
             "source_context": "The Dawes Plan of 1924 reorganised German reparations payments and provided an initial loan of 800 million gold marks funded heavily by Wall Street bankers, triggering an unprecedented industrial boom. **Hinge Question:** How did the Dawes Plan create a dangerous economic cycle where Germany relied entirely on American loans to pay British and French reparations?"
           },
@@ -3388,7 +3388,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source C for an enquiry into Gustav Stresemann's true foreign policy motives between 1924 and 1929?",
-          "model_answer": "<p style=\"margin-bottom: 8px;\"><strong>Content &amp; Contextual Knowledge:</strong> Source C is exceptionally useful because it provides rare, candid evidence of Stresemann’s private diplomatic calculation. Stresemann explicitly states that Germany’s true goals are <em>\"the protection of ten million Germans living under foreign rule\"</em> and <em>\"the recovery of Danzig and the Polish Corridor\"</em>, arguing that <em>\"we must first get the strangler off our throat\"</em> by liberating the Rhineland from French occupation before pursuing revisionism. This provides vital context to his public diplomacy: while publicly championing peaceful conciliation at Locarno in 1925 and the League of Nations in 1926, Stresemann pursued a dual strategy of using international treaties to lift Allied military oversight, restore Germany's industrial strength, and position Germany to revise its eastern borders without risking war.</p><p style=\"margin: 0;\"><strong>Provenance &amp; Utility Evaluation:</strong> The provenance gives this source exceptional historical weight: as a private, confidential letter written directly to the exiled Crown Prince (nature and origin), Stresemann could speak with unvarnished honesty rather than diplomatic platitudes. However, the purpose of the letter must be evaluated: Stresemann was writing to the eldest son of the former Kaiser to placate influential right-wing monarchists and DNVP critics who accused him of treason for accepting the Versailles western borders. He may therefore have exaggerated his nationalist revisionist ambitions to convince conservative elites that his cooperative foreign policy was merely a temporary tactical deception.</p>",
+          "model_answer": "Stresemann warned that Germany's economic recovery was fragile and dangerously dependent on short-term US loans that could be recalled at any moment.",
           "teacher_notes": {
             "source_context": "In September 1925, Foreign Minister Gustav Stresemann was preparing to negotiate the Locarno Treaties with Britain and France, pursuing his policy of \"fulfillment\" while reassuring conservative monarchists that he had not abandoned German nationalist ambitions. **Hinge Question:** Does Source C prove that Stresemann was a cynical nationalist pretending to be a European peacemaker, or a realistic statesman protecting Germany's vital national interests?"
           }
@@ -3409,7 +3409,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source D for an enquiry into the international rehabilitation of Weimar Germany under Gustav Stresemann’s diplomacy in 1926?",
-          "model_answer": "<p>Source D provides vital insight into Stresemann’s diplomatic strategy of *Erfüllungspolitik* (fulfillment), showing how Germany sought international rehabilitation and permanent Council status in the League of Nations through peaceful cooperation. As an official diplomatic speech in Geneva, it highlights Stresemann’s commitment to European reconciliation, though it tactfully conceals his long-term revisionist goals regarding Danzig, the Polish Corridor, and Versailles military restrictions.</p>",
+          "model_answer": "Stresemann argued that signing the Locarno Treaties and joining the League of Nations restored Germany's international standing and secured peaceful borders.",
           "teacher_notes": {
             "source_context": "Following the 1925 Locarno Treaties, Germany was formally admitted to the League of Nations in September 1926 as a permanent Council member, restoring its status as an equal great power. **Hinge Question:** Why was Germany’s entry into the League of Nations a vital international triumph for Gustav Stresemann’s foreign policy?"
           },
@@ -3432,7 +3432,7 @@ export default {
           "question_badge": "Source Inference",
           "question_type": "Source Inference",
           "enquiry_question": "Give two things you can infer from Source E about right-wing nationalist propaganda against the Weimar Republic's foreign policy in 1929.",
-          "model_answer": "<ul style=\"margin: 0; padding-left: 18px; line-height: 1.6; color: #1e293b;\"><li style=\"margin-bottom: 8px;\"><strong>Inference 1:</strong> Right-wing nationalists claimed that the Young Plan would enslave innocent future generations of Germans.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> The poster depicts a vulnerable baby chained to an anvil with the caption stating that the child will be forced to pay reparations tribute until its 60th year (1988).</li><li><strong>Inference 2:</strong> Nationalists portrayed Weimar democratic leaders not as practical negotiators, but as national traitors selling out the German people.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> The propaganda deliberately ignores that the Young Plan actually reduced total reparations from £6.6 billion to £2 billion, using emotional imagery to mobilize support for the \"Freedom Law\" referendum that sought to prosecute government ministers for treason.</li></ul>",
+          "model_answer": "Nationalist posters attacked the Young Plan as financial slavery, claiming it committed German workers to paying foreign reparations until 1988.",
           "teacher_notes": {
             "source_context": "In 1929, the Young Plan reduced total German reparations from £6.6 billion to £2 billion payable over 59 years, but media baron Alfred Hugenberg and Adolf Hitler launched a vicious campaign branding it the \"enslavement of future generations\". **Hinge Question:** How did the national campaign against the Young Plan in 1929 allow Adolf Hitler to gain nationwide mainstream political respectability and media coverage?"
           },
@@ -4210,7 +4210,7 @@ export default {
             "type": "4-mark",
             "question": "Study Interpretations 1 and 2. They give different views about the position of women in the Weimar Republic. What is the main difference between these views?",
             "prompt": "Explain the main difference between the two interpretations, quoting details from both to support your answer.",
-            "model": "The main difference between these interpretations is their assessment of the position of women in the Weimar Republic. Interpretation 1 argues that the period was characterized by substantial progress and positive transformation, emphasizing that new opportunities genuinely reshaped German society. In contrast, Interpretation 2 contends that these developments were largely superficial or provoked a severe traditionalist backlash, demonstrating that deep structural divisions remained unresolved.",
+            "model": "One key difference is that Interpretation 1 suggests the 1920s brought genuine liberation for 'New Women' through increased employment, voting rights, and financial independence. In contrast, Interpretation 2 argues this freedom was an illusion, as women faced wage inequality, social hostility, and expectations to return to domestic motherly roles.",
             "scaffolding": {
               "acronym": "Difference + Quotes Formula",
               "acronym_title": "Historiographical Comparison",
@@ -4240,7 +4240,7 @@ export default {
             "question": "How far do you agree with Interpretation 2 about the position of women in the Weimar Republic? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "On the one hand, Interpretation 1 is supported by compelling historical evidence. Deploy evidence supporting liberation: equal voting rights in Article 109, rising female Reichstag deputies, and the urban 'New Woman'. This provides strong weight to the view because contemporary developments clearly demonstrate that this factor exerted immense influence over popular attitudes and political outcomes.<br><br>On the other hand, Interpretation 2 offers an equally persuasive counter-perspective that emphasizes alternative structural causes. Deploy evidence supporting limitations: lower pay for women, conservative backlash against working wives, and the persistence of Kinder, Küche, Kirche. This demonstrates that the historical process was far more multi-faceted than a single viewpoint suggests, with deeper economic, ideological, and institutional factors driving events.<br><br>Furthermore, contextual historical analysis confirms that Weigh legal breakthroughs against social reality: conclude whether constitutional equality genuinely transformed women's lives outside major cities.<br><br>In conclusion, having weighed both interpretations against the historical evidence, I agree with Interpretation 2 to a moderate extent. While Interpretation 1 correctly identifies a prominent catalyst, Interpretation 2 provides a more profound historical explanation because it accounts for the broader structural conditions that ultimately determined the course of German history.",
+            "model": "Interpretation 2 argues that the Weimar golden age saw limited real progress for women, emphasizing that traditional patriarchal attitudes remained deeply entrenched. There is strong evidence to support this view: although Article 109 of the Weimar Constitution established legal equality, in practice women were paid on average 33% less than men for the same work. Furthermore, married women who worked were stigmatized as 'double-earners' stealing jobs from male breadwinners, and the number of female Reichstag deputies actually fell during the late 1920s.<br><br>On the other hand, Interpretation 1 emphasizes the genuine, unprecedented freedoms achieved by women in the 1920s. Weimar women gained the vote in 1919 with high voter turnout, and by 1925 over 1.5 million women were employed in clerical, retail, and service jobs. The visible emergence of the 'New Woman'—with bobbed hair, modern fashion, financial independence, and leisure routines—represented a clear cultural break from the imperial Kaiserreich.<br><br>However, this cultural liberation was mostly concentrated among young, single, middle-class women in large cities like Berlin, whereas rural and conservative communities viewed it as moral decay.<br><br>In conclusion, I agree with Interpretation 2 to a large extent. While the Weimar Constitution opened legal and cultural doors, deep economic discrimination and conservative social backlash meant that most ordinary German women experienced little lasting change in status.",
             "scaffolding": {
               "acronym": "Interpretation Verdict Framework",
               "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
@@ -4470,7 +4470,7 @@ export default {
           "question_badge": "Municipal Welfare & Architecture",
           "question_type": "Municipal Welfare & Architecture",
           "enquiry_question": "What does Source A suggest about the Weimar Republic's efforts to improve working-class living conditions during the 1920s?",
-          "model_answer": "Source A demonstrates that Weimar municipal authorities actively prioritized progressive social welfare under Article 155 of the Constitution, funding over two million new homes between 1924 and 1931 to eliminate squalid, disease-ridden 19th-century tenements (<em>Mietskasernen</em>). By commissioning modernist Bauhaus and New Architecture designers like Bruno Taut, city governments replaced cramped slums with spacious, sunlit, affordable apartments surrounding communal green parks and public gardens. This architectural transition proved that the Weimar Republic sought to use civic design, clean air, and municipal socialism to elevate the health, dignity, and living standards of ordinary industrial workers.",
+          "model_answer": "The Hufeisen estate illustrates Weimar's commitment to social welfare, using modernist architecture to provide working-class families with affordable, sunlit homes.",
           "teacher_notes": {
             "source_context": "Under Article 155 of the Constitution, the Weimar Republic committed to providing healthy housing for all citizens; between 1924 and 1931, over two million new homes were built with municipal subsidies and progressive architecture. **Hinge Question:** How did large-scale municipal housing projects like the Hufeisensiedlung demonstrate the social welfare priorities of Weimar local governments?"
           },
@@ -4493,7 +4493,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source B for an enquiry into the extent to which the lives of German women changed during the Weimar Republic?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source B is extremely useful because it provides a nuanced contemporary assessment of female emancipation under the Weimar Republic. Rühle-Gerstel highlights the tangible freedoms enjoyed by the urban \"New Woman\" (<em>Neue Frau</em>), including short bobbed hair, personal mobility, voting rights under Article 109 of the Constitution, and employment in white-collar sectors such as clerical work and retail. Crucially, however, she exposes the limits of this emancipation: women earned approximately 33% less than men, faced the \"marriage bar\" (dismissal upon marriage), and still carried the sole burden of unassisted domestic housework alongside intense hostility from traditionalists.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further strengthened by Rühle-Gerstel’s position as a leading feminist psychologist writing in a respected cultural journal (<em>Die literarische Welt</em>) in 1927. Her purpose was not to produce shallow commercial propaganda or hostile anti-feminist panic, but to critically evaluate the lived reality of working women behind the fashionable media façade. While it offers deep insight into the contradictions of Weimar modernization, its focus is primarily on young, urban, middle-class office workers in major cities like Berlin, making it less representative of rural, working-class mothers or agrarian communities where traditional patriarchal roles remained completely unchallenged.</p>",
+          "model_answer": "Rühle-Gerstel shows that despite the image of the independent 'New Woman', working women faced intense exhaustion from balancing low-wage employment with traditional domestic duties.",
           "teacher_notes": {
             "source_context": "During the 1920s, the Weimar Republic granted women universal suffrage and constitutional equality, leading to the cultural phenomenon of the \"New Woman\" (Neue Frau), although economic disparity and traditional social prejudice remained pervasive. **Hinge Question:** Why was the social freedom of the \"New Woman\" celebrated as a triumph of Weimar democracy by urban liberals, while being fiercely condemned as moral degeneracy by rural conservatives?"
           }
@@ -4514,7 +4514,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source C for an enquiry into the cultural and architectural innovations of the Bauhaus movement during the Golden Twenties?",
-          "model_answer": "<p>Source C is highly useful because Walter Gropius explains how Bauhaus design rejected traditional imperial ornament in favor of functional, affordable steel-and-glass spaces built for ordinary citizens. As a manifesto by the movement’s founder, it directly expresses the utopian modernist spirit of Weimar culture, though it provoked fierce hostility from conservative nationalists who condemned modernism as un-German and decadent.</p>",
+          "model_answer": "Gropius argues that Bauhaus design should integrate artistic beauty with functional mass-produced technology to serve modern democratic society.",
           "teacher_notes": {
             "source_context": "In the 1920s, the Bauhaus school under Walter Gropius pioneered modernist architecture and industrial design, emphasizing functionalism, affordable materials, and social utility. **Hinge Question:** How did Bauhaus functionalism reflect the democratic and egalitarian ideals of the Weimar Republic?"
           },
@@ -4537,7 +4537,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source D for an enquiry into the social impact of the First World War on Weimar society during the 1920s?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source D is highly useful because it provides vivid visual evidence of the devastating human toll of the Great War, which left over 1.5 million German soldiers permanently disabled. Dix depicts three veterans with horrific facial disfigurements, mechanical jaw implants, glass eyes, and wooden peg-legs struggling to hold playing cards. This accurately reflects the grim reality that disabled veterans were a ubiquitous, impoverished presence on Weimar city streets, where state war pensions were continually eroded by post-war inflation and economic austerity.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> Dix’s perspective as a decorated Western Front veteran and prominent <em>Neue Sachlichkeit</em> (New Objectivity) artist enhances its utility for investigating intellectual and artistic dissent in Weimar Berlin. Rather than glorifying patriotic sacrifice, Dix deliberately used grotesque caricature to shock urban citizens out of their complacency and protest against the republic's neglect of wounded soldiers. However, its utility is limited because Dix was an outspoken pacifist producing deliberate political satire rather than an objective census of veteran welfare; furthermore, it reflects the radical avant-garde culture of Berlin and Dresden rather than conservative rural communities who continued to revere imperial military tradition.</p>",
+          "model_answer": "Otto Dix's painting exposes the physical and psychological trauma endured by disabled war veterans, satirizing the neglect they faced in Weimar society.",
           "teacher_notes": {
             "source_context": "Painted in 1920 by frontline veteran Otto Dix, The Skat Players used grotesque realism to expose the physical wreckage of the First World War, criticizing a society eager to forget its 1.5 million disabled veterans. **Hinge Question:** How did expressionist artists like Otto Dix challenge both romantic imperial militarism and the superficial consumerism of the Weimar \"Golden Twenties\"?"
           },
@@ -4560,7 +4560,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source E for an enquiry into conservative and nationalist opposition to Weimar social changes between 1924 and 1929?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source E is exceptionally useful because it provides direct visual evidence of the fierce right-wing backlash against Weimar liberalism during the 1928 Reichstag election campaign. The DNVP used stark imagery to warn that the republic was destroying Germany's traditional Christian morals through \"Cultural Bolshevism\", attacking modern art, female independence, cabaret, and American jazz as degenerate imports designed to undermine the Volk. This aligns precisely with historical knowledge: conservative elites, agrarian landowners, and the Protestant middle class felt deeply alienated by Berlin’s cosmopolitan culture, which they blamed on socialist politicians and Jewish intellectuals.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> As official propaganda produced by the DNVP (the largest conservative nationalist party in the Reichstag), the source is invaluable for revealing the political strategy and genuine cultural anxieties of right-wing voters. Its purpose was to exploit moral panic and mobilize rural, religious, and traditionalist voters against the Weimar coalition. While the source cannot provide an objective or balanced reflection of Weimar cultural achievements—deliberately presenting modern art and emancipation as sinister subversion—this very subjectivity makes it uniquely valuable for demonstrating why cultural experimentation deeply polarized German society and fueled support for authoritarian nationalism.</p>",
+          "model_answer": "The DNVP poster illustrates right-wing moral outrage against Weimar cultural experimentation, claiming Berlin had become a degenerate center of corruption.",
           "teacher_notes": {
             "source_context": "Throughout the late 1920s, conservative and nationalist parties like the DNVP capitalized on deep moral unease outside Berlin, attacking Weimar modernism as degenerate and promising a return to traditional Prussian Christian values. **Hinge Question:** Why did right-wing traditionalists label modern architecture, jazz, and female independence as \"Cultural Bolshevism\"?"
           },
@@ -5275,7 +5275,7 @@ export default {
             "type": "inference",
             "question": "Give two things you can infer from Source B about the core beliefs of the Nazi Party in 1920.",
             "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from Source B.",
-            "model": "First inference: I can infer from Source B that the Nazi Party was fanatically committed to overturning the post-war peace settlements and uniting German people. Detail in Source B that tells me this: Point 1 demands 'the union of all Germans in a Greater Germany' and Point 2 demands the immediate 'revocation of the peace treaties of Versailles and Saint-Germain.'<br><br>Second inference: I can infer that virulent anti-Semitism and racial exclusion were foundational to the party's ideology. Detail in Source B that tells me this: Point 4 explicitly states that 'None but those of German blood may be members of the nation' and decrees that 'No Jew, therefore, may be a member of the nation.'",
+            "model": "<strong>Inference 1:</strong> The early Nazi Party was violently antisemitic and nationalist. <strong>Detail:</strong> Point 4 of the 25-Point Programme states that no Jew could ever be a German citizen.<br><br><strong>Inference 2:</strong> The party sought to destroy the post-war European order. <strong>Detail:</strong> Point 2 demands the complete revocation of the treaties of Versailles and Saint-Germain.",
             "scaffolding": {
               "acronym": "Inference + Detail Formula (AO3)",
               "acronym_title": "Deduction & Quote Framework",
@@ -5312,7 +5312,7 @@ export default {
               "The creation of the Sturmabteilung (SA) in 1921."
             ],
             "prompt": "You may use the following in your answer: (1) Hitler's public speaking and beer hall meetings, (2) The creation of the Sturmabteilung (SA) in 1921. You must also use information of your own.",
-            "model": "One significant reason why the Nazi Party gained support in Munich between 1919 and 1922 was the magnetic rhetorical talent of Adolf Hitler. When Hitler discovered his oratorical gift in 1919, he began addressing mass meetings in large Munich beer halls like the Hofbräuhaus and Sterneckerbräu. Hitler tapped into widespread public bitterness over the 'stab in the back' and the Treaty of Versailles, delivering fiery, theatrical speeches that scapegoated Jews, communists, and the 'November Criminals'. By offering simple, passionate scapegoats for Germany's post-war humiliation, Hitler drew thousands of paying attendees to party rallies, swelling party membership and financial contributions.<br><br>A second decisive factor was the formation and violent visibility of the Sturmabteilung (SA) in 1921 under Ernst Röhm. Recruited largely from ex-soldiers and Freikorps street fighters, the SA served as a disciplined paramilitary force dressed in distinctive brown shirts. The SA protected Nazi meetings from communist disruption and violently attacked political opponents across Munich. In a Bavarian society traumatized by the 1919 Communist Republic, the SA projected an image of strict order, physical strength, and anti-communist discipline, appealing strongly to young men, ex-servicemen, and the conservative middle classes.<br><br>Furthermore, the NSDAP attracted growing support because its 25-Point Programme and propaganda rebranding presented a wide-ranging, populist appeal. Formulated in February 1920 by Hitler and Drexler, the manifesto cleverly combined extreme nationalist demands—such as overturning Versailles and creating a Greater Germany—with populist socialist promises like sharing corporate profits and supporting small shopkeepers against department stores. Supported by the swastika emblem and the party's newspaper, the Völkischer Beobachter, this propaganda gave the NSDAP a distinct, radical identity that allowed it to stand out among dozens of rival nationalist splinter groups in post-war Bavaria.",
+            "model": "One reason the Nazi Party gained support in Munich was Adolf Hitler's powerful oratorical talent. Joining the German Workers' Party (DAP) in 1919, Hitler captivated crowds in Munich beer halls with passionate, theatrical speeches blaming Jews, communists, and the 'November Criminals' for Germany's wartime defeat, rapidly building a personal following.<br><br>Furthermore, the 25-Point Programme (1920) offered broad appeal across different social groups. It combined intense nationalism (demanding *Lebensraum* and abolishing the Treaty of Versailles) with socialist promises like profit-sharing in heavy industry and pensions for the elderly, attracting bitter veterans and struggling lower-middle-class workers.<br><br>Finally, the creation of the SA (Stormtroopers) in 1921 gave the party a powerful physical presence. Led by Ernst Röhm, the brownshirts protected Nazi meetings, violently attacked political rivals, and provided unemployed young men with uniforms, purpose, and meals, projecting an image of disciplined strength amidst Munich's political chaos.",
             "scaffolding": {
               "acronym": "PEEL Causation Framework",
               "acronym_title": "Section A: Question 2 • Explain Why [12 Marks • 18 Mins]",
@@ -5600,7 +5600,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source A for an enquiry into the founding ideas and origins of the German Workers’ Party (DAP) under Anton Drexler in 1919?",
-          "model_answer": "<p>Source A is exceptionally useful because it reveals the founding ideology of Anton Drexler’s DAP, combining anti-Marxist nationalism, hatred of the Versailles Treaty, and appeals to German workers. This explains why Adolf Hitler, sent by the Bavarian army to spy on the group in September 1919, found their ideas compelling and immediately joined, though Drexler’s modest pamphlet reveals an obscure, local beer-hall sect that still lacked Hitler’s charismatic propaganda and autocratic leadership.</p>",
+          "model_answer": "Drexler's manifesto combined virulent antisemitism with anti-capitalist rhetoric, aiming to attract working-class Germans away from Marxist socialism.",
           "teacher_notes": {
             "source_context": "In September 1919, army intelligence agent Adolf Hitler attended a meeting of Anton Drexler’s tiny German Workers’ Party (DAP) in Munich, discovering a shared ideology of anti-Versailles nationalism, anti-Semitism, and working-class populism. **Hinge Question:** Why did the DAP’s blend of extreme nationalism and working-class grievances attract Adolf Hitler in late 1919?"
           },
@@ -5623,7 +5623,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source B for an enquiry into the early political aims and appeal of the Nazi Party (NSDAP) in 1920?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source B is highly useful because it provides direct evidence of the core ideological platform that Hitler and Drexler used to build the NSDAP from an obscure fringe group into a vocal Munich movement. Points 1 and 2 explicitly demand the destruction of the Treaty of Versailles and the creation of a \"Greater Germany\", tapping directly into the widespread national humiliation and \"stab-in-the-back\" myth (<em>Dolchstoßlegende</em>) following the 1918 defeat. Furthermore, Point 4 codifies racial anti-Semitism as fundamental party dogma, denying Jews citizenship and civil rights, while Point 3 foreshadows Hitler's foreign policy doctrine of territorial expansion (<em>Lebensraum</em>).</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility of the source is strengthened by its status as the party's official foundational manifesto, publicly proclaimed to two thousand listeners at the Hofbräuhaus to define the party’s public identity. Its deliberate purpose was to appeal simultaneously to aggrieved war veterans, nationalist conservatives, and discontented workers by combining anti-Versailles patriotism with anti-capitalist rhetoric (such as profit-sharing and the nationalization of trusts). However, its utility is limited because Hitler later treated many of the radical socialist and anti-capitalist points as mere tactical slogans to attract working-class support, quietly ignoring them once he sought financial subsidies and political alliances with wealthy Bavarian industrialists and conservative elites after 1921.</p>",
+          "model_answer": "The 25-Point Programme demonstrates that the NSDAP combined radical nationalism (rejecting Versailles) with socialist promises (profit-sharing) to broaden its appeal.",
           "teacher_notes": {
             "source_context": "On 24 February 1920, the German Workers' Party changed its name to the National Socialist German Workers' Party (NSDAP) and published its 25-Point Programme at the Hofbräuhaus in Munich, synthesizing extreme nationalism, anti-Semitism, and social reform. **Hinge Question:** Why did Hitler and Drexler deliberately blend virulent extreme nationalism with radical anti-capitalist promises in their 1920 party manifesto?"
           }
@@ -5645,7 +5645,7 @@ export default {
           "question_badge": "Media & Propaganda Strategy",
           "question_type": "Media & Propaganda Strategy",
           "enquiry_question": "How does Source C demonstrate the methods used by the early Nazi Party to establish a distinct political identity and communicate with supporters?",
-          "model_answer": "Source C demonstrates that the early NSDAP prioritized print journalism to escape local obscurity, using the <em>Völkischer Beobachter</em> as a permanent propaganda organ to broadcast its anti-Semitic and anti-Versailles ideology. By acquiring a dedicated newspaper in December 1920 with funds from army and nationalist patrons, Hitler gained a platform to attack democratic politicians daily and promote party rallies. Furthermore, the publication allowed the party to project an image of professional organisation and ideological authority across Bavaria rather than appearing merely as a disorganized beer-hall protest group.",
+          "model_answer": "The Völkischer Beobachter was purchased as the official Nazi newspaper to spread aggressive propaganda, promote party rallies, and attack political enemies.",
           "teacher_notes": {
             "source_context": "In December 1920, the NSDAP bought the struggling Munich newspaper Völkischer Beobachter for 60,000 marks, giving Hitler a permanent publishing organ to spread anti-republican propaganda and unify party followers. **Hinge Question:** Why was owning an independent daily newspaper essential for Hitler to establish party discipline and broadcast his message beyond Munich beer halls?"
           },
@@ -5668,7 +5668,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source D for an enquiry into the threat posed by the early Nazi Party to public order in Bavaria between 1920 and 1922?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source D is exceptionally useful because it provides an objective, first-hand account of the violent methods and dangerous populist appeal of the NSDAP in late 1921. The detective details how Hitler packed large venues (1,800 attendees at the Zirkus Krone) and inflamed public rage against democratic leaders as \"November Criminals\" while scapegoating Jews and Marxists for hyperinflation. Crucially, it documents the nascent paramilitary violence of the SA (<em>Sturmabteilung</em>), showing that stormtroopers used physical intimidation to silence democratic opposition and guarantee Nazi domination of public spaces.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further elevated by the source's provenance as an internal, classified Bavarian police surveillance report written for state administrators rather than public consumption. The detective had no reason to flatter Hitler, making the descriptions of his oratorical magnetism and audience hysteria highly reliable. However, the report’s utility must be qualified by historical context: the Bavarian police and judicial authorities (under figures like Police President Ernst Pöhner) were deeply right-wing and anti-republican themselves. Consequently, while the report accurately notes SA brutality, police leadership largely tolerated this lawlessness because they viewed Hitler’s stormtroopers as a useful counter-revolutionary militia against local communists and the socialist government in Berlin.</p>",
+          "model_answer": "The police report confirms Hitler's remarkable rhetorical skill, noting his ability to whip up beer hall audiences into frenzied fanatical enthusiasm.",
           "teacher_notes": {
             "source_context": "Throughout 1920–1922, Bavarian police detectives regularly attended Hitler's speeches to monitor his rhetoric and the paramilitary violence of the SA, creating detailed surveillance files. **Hinge Question:** Why did Bavarian conservative authorities and police officials treat early Nazi street violence and inflammatory rhetoric with notable leniency between 1920 and 1922?"
           }
@@ -5690,7 +5690,7 @@ export default {
           "question_badge": "Source Inference",
           "question_type": "Source Inference",
           "enquiry_question": "Give two things you can infer from Source E about Adolf Hitler's role and methods in early Nazi Party gatherings in Munich.",
-          "model_answer": "<ul style=\"margin: 0; padding-left: 18px; line-height: 1.6; color: #1e293b;\"><li style=\"margin-bottom: 8px;\"><strong>Inference 1:</strong> Early Nazi meetings relied on the familiar, social atmosphere of Munich beer halls and taverns to build camaraderie.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> The photograph shows Hitler seated closely with followers around a checkered tavern table with beer steins and bottles, showing that party organizing was embedded in Bavarian beer-drinking culture.</li><li><strong>Inference 2:</strong> Hitler was guarded and backed by uniformed paramilitary stormtroopers even in casual tavern meetings.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> The men standing closely around Hitler wear peaked caps, military field tunics, and swastika armbands with Iron Cross war medals, demonstrating how the SA provided physical protection and military discipline to early Nazi gatherings.</li></ul>",
+          "model_answer": "Source E shows early SA stormtroopers in military uniform, reflecting the paramilitary discipline and violence at the core of early Nazi organizing.",
           "teacher_notes": {
             "source_context": "Between 1920 and 1923, Adolf Hitler built the NSDAP's following through relentless beer-hall assemblies across Munich, surrounded by devoted party followers and early paramilitary stormtroopers. **Hinge Question:** How did Hitler's magnetic personal presence and beer-hall meetings transform the NSDAP from a fringe committee into a notorious Bavarian movement?"
           },
@@ -6658,7 +6658,7 @@ export default {
               "The imprisonment of Adolf Hitler and the ban on the Nazi Party."
             ],
             "prompt": "You may use the following in your answer: (1) Economic recovery and the Dawes Plan under Gustav Stresemann, (2) The imprisonment of Adolf Hitler and the ban on the Nazi Party. You must also use information of your own.",
-            "model": "One primary reason why the Nazi Party experienced the 'Lean Years' was the remarkable economic recovery achieved under Gustav Stresemann. Following the introduction of the Rentenmark in late 1923 and the Dawes Plan in 1924, hyperinflation was halted and 25 billion gold marks in American loans flooded into German industry. Real wages rose, unemployment fell, and over 2 million modern homes were built. Because extremist parties like the NSDAP thrived on misery and destitution, the return of stability and prosperity deprived Hitler of his core grievances, causing voters to abandon extremist alternatives in favor of moderate pro-Weimar parties.<br><br>A second major cause was the temporary ban on the party and the imprisonment of Hitler following the failed Munich Putsch. Banned by Bavarian authorities and with Hitler serving nine months in Landsberg Fortress until December 1924, the party lacked its central figurehead and public voice. Even after his release, Hitler was prohibited from public speaking across most German states until 1927. Without Hitler's charismatic beer hall rallies to generate excitement and funding, the movement fragmented into competing factions, losing visibility and organizational momentum.<br><br>Furthermore, Stresemann's foreign policy achievements restored national self-respect through peaceful diplomacy, weakening nationalist radicalism. By signing the Locarno Treaties in 1925, accepting Germany's western borders, and securing Germany's entry into the League of Nations with a permanent Council seat in 1926, Stresemann proved that revision of Versailles could be achieved peacefully. In an era of international reconciliation, the Nazis' violent anti-Versailles rhetoric appeared outdated and irresponsible, culminating in their humiliating performance in the May 1928 election, where they polled just 2.6% of the national vote.",
+            "model": "One reason the Nazi Party entered the 'Lean Years' was the humiliation of the failed Munich Putsch in November 1923. When Hitler attempted to seize power, the Bavarian police crushed the march, killing 16 Nazis. Hitler was imprisoned in Landsberg, and the party was banned, demonstrating that armed putsches could not overthrow the Weimar Republic.<br><br>Furthermore, Gustav Stresemann's economic and foreign policies stabilized Germany between 1924 and 1929. The Dawes Plan and Rentenmark ended hyperinflation, US loans funded employment, and international agreements like Locarno eased treaty tensions. As prosperity returned, support for extreme parties collapsed, with the Nazis winning just 2.6% of votes in May 1928.<br><br>Finally, party reorganization took years to bear fruit. At the 1926 Bamberg Conference, Hitler established his supreme authority (*Führerprinzip*), created the SS and Hitler Youth, and adopted legal electoral methods, but these structural changes could not attract mass votes while Germany remained stable.",
             "scaffolding": {
               "acronym": "PEEL Causation Framework",
               "acronym_title": "Section A: Question 2 • Explain Why [12 Marks • 18 Mins]",
@@ -6690,7 +6690,7 @@ export default {
             "type": "utility_8m",
             "question": "How useful are Sources A and B for an enquiry into the consequences of the Munich Putsch for Hitler and the Nazi Party?",
             "prompt": "Evaluate both sources using Content, Contextual Knowledge (Treason Trial, Landsberg, Mein Kampf, Legal Strategy), and Provenance.",
-            "model": "Source A is highly useful for an enquiry into the consequences of the Munich Putsch because its content shows Adolf Hitler standing alongside General Erich Ludendorff and fellow defendants at the Munich treason trial in spring 1924, dressed in civilian suits with medals rather than prison garb. From my own knowledge, the trial provided Hitler with a national propaganda platform: sympathetic right-wing judges allowed him to make speeches attacking the Weimar Republic as treasonous, transforming a botched armed coup into a personal triumph that was reported on front pages across Germany. As an official press photograph documenting the trial, Source A accurately reflects the lenient, sympathetic treatment Hitler received from the Bavarian legal establishment.<br><br>Source B is equally useful because it depicts Hitler during his imprisonment in Landsberg Fortress in 1924, where he dictated Mein Kampf to Rudolf Hess. The photograph reveals comfortable, well-furnished conditions with books, flowers, and civilian visitors, rather than a punitive cell. From my own knowledge, Hitler served only nine months of his five-year sentence, using the time to set down his core ideology of Aryan supremacy, anti-Semitism, and Lebensraum. Crucially, his imprisonment convinced him to abandon violent putsches in favor of the 'legality strategy'—gaining power through democratic elections. As contemporary visual evidence, Source B confirms the extraordinary privileges Hitler enjoyed. Together, Sources A and B are exceptionally useful because Source A illustrates how Hitler exploited the trial for national publicity, while Source B shows how his imprisonment enabled him to author his manifesto and reshape Nazi strategy.",
+            "model": "Source A is useful because it records Bavarian State Commissioner von Kahr ordering the armed suppression of the Munich Putsch and banning the Nazi Party. From my knowledge, Kahr had initially negotiated with Hitler in the Bürgerbräukeller at gunpoint, but betrayed him once released, calling in the army and police. As an official state proclamation issued during the crisis, it provides reliable evidence of the government's decisive decision to crush the coup.<br><br>Source B is useful because it depicts armed SA stormtroopers barricaded behind barbed wire outside the Munich War Ministry under Ernst Röhm. It visually demonstrates the military equipment, steel helmets, and Imperial war flags used by Nazi paramilitaries during the putsch. However, as a static photograph, it does not show the collapse of the march at the Odeonsplatz or the subsequent trial where Hitler turned defeat into a propaganda triumph. Overall, both sources are very useful for understanding how the putsch was executed and suppressed.",
             "scaffolding": {
               "acronym": "Two-Source Utility Framework",
               "acronym_title": "Section B: Question 3(a) • Utility of Sources A & B [8 Marks • 12 Mins]",
@@ -6974,7 +6974,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source A for an enquiry into Hitler’s armed seizure of the Bürgerbräukeller during the Munich Putsch on 8 November 1923?",
-          "model_answer": "<p>Source A is highly useful because Gustav von Kahr provides a firsthand account of Hitler’s theatrical violence, firing a pistol into the ceiling and proclaiming a national revolution at gunpoint. As an official state report by the Bavarian Commissioner, it captures the armed coercion used by the NSDAP, though von Kahr naturally downplays his own earlier political collusion with right-wing paramilitaries to portray himself purely as an innocent, coerced hostage.</p>",
+          "model_answer": "Von Kahr's proclamation shows the Bavarian government repudiating Hitler's armed putsch and ordering the immediate dissolution of the Nazi Party.",
           "teacher_notes": {
             "source_context": "On the evening of 8 November 1923, Adolf Hitler and armed SA paramilitaries stormed the Bürgerbräukeller beer hall in Munich, holding Bavarian leaders von Kahr, Lossow, and Seisser hostage to launch a coup d’état. **Hinge Question:** Why did Hitler resort to armed coercion against fellow right-wing Bavarian leaders during the Munich Putsch?"
           },
@@ -6997,7 +6997,7 @@ export default {
           "question_badge": "Military Tactics & Failed Insurrection",
           "question_type": "Military Tactics & Failed Insurrection",
           "enquiry_question": "What does Source B demonstrate about the military methods and public actions of the putschists during the Munich Putsch of 9 November 1923?",
-          "model_answer": "Source B demonstrates that the Munich Putsch was an armed paramilitary coup d'état designed to emulate Mussolini’s 1922 March on Rome through physical intimidation and public occupation of key civic centers. Putschists carrying military rifles, bayonets, and imperial war standards occupied Munich’s municipal square, hoping to compel the Bavarian police and army garrison to join their insurrection against Berlin. The failure of this operation convinced Hitler that direct armed rebellion against the state was impossible, forcing him during his imprisonment to adopt the \"legality strategy\" (<em>Legalitätsprinzip</em>) of gaining power through democratic elections.",
+          "model_answer": "Source B shows armed SA troops under Ernst Röhm occupying the Munich War Ministry, demonstrating their military equipment and determination to overthrow the state.",
           "teacher_notes": {
             "source_context": "On the morning of 9 November 1923, following the abduction of Bavarian leaders in the Bürgerbräukeller, 2,000 armed Nazis marched towards the Bavarian War Ministry before being crushed by state police gunfire at the Feldherrnhalle. **Hinge Question:** Why did Hitler believe that seizing municipal buildings in Munich would trigger a nationwide March on Berlin modeled on Mussolini's 1922 coup in Rome?"
           },
@@ -7020,7 +7020,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source C for an enquiry into how Adolf Hitler turned the Munich Putsch trial into a national propaganda triumph?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source C is exceptionally useful because it directly reveals the rhetorical strategy Hitler used to convert a humiliating military failure into a heroic patriotic legend. Instead of denying his role in the armed insurrection that killed four state policemen, Hitler openly acknowledged his goal of overthrowing the Berlin government, claiming a moral duty higher than statutory law. He strategically linked himself to General Ludendorff, the revered First World War hero, arguing that history would vindicate their actions as selfless German patriotism. This directly matches historical knowledge: sympathetic right-wing judges allowed Hitler to speak for hours uninterrupted, and nationwide daily press coverage made him a household name across Germany for the first time.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further enhanced by its provenance as a contemporary stenographic court record of Hitler’s final speech before his sentencing. Its explicit motive was to inspire nationalist sympathizers across Germany, present himself as a fearless martyr for the fatherland, and intimidate the judges into granting leniency. The tactic succeeded completely: despite being convicted of high treason (which carried life imprisonment), Hitler was awarded the minimum sentence of five years with eligibility for early parole after nine months. However, the source cannot be treated as an objective factual account of the putsch itself: Hitler completely glossed over the panic and flight of the putschists at the Odeonsplatz, creating a romantic myth that deliberately obscured his tactical recklessness.</p>",
+          "model_answer": "Hitler used his 1924 trial to deliver patriotic speeches, transforming armed treason into heroic nationalist defense and winning nationwide fame.",
           "teacher_notes": {
             "source_context": "Following the failed Munich Putsch of November 1923, Hitler was tried for high treason; rather than denying the charges, he used the courtroom as a national megaphone to denounce Weimar democracy. **Hinge Question:** How did the sympathetic attitude of the Bavarian judges allow Hitler to transform a disastrous military defeat into a sensational political triumph?"
           }
@@ -7041,7 +7041,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source D for an enquiry into the establishment of Hitler’s absolute authority over the Nazi Party at the Bamberg Conference in 1926?",
-          "model_answer": "<p>Source D provides remarkable psychological insight into how Hitler established absolute dominance at the 1926 Bamberg Conference, crushing the northern party’s socialist demands while enchanting young leaders like Goebbels. As a private, intimate diary entry, it is exceptionally candid, revealing Goebbels’s initial dismay at Hitler’s capitalist concessions followed by total emotional surrender to Hitler’s charismatic authority (*Führerprinzip*).</p>",
+          "model_answer": "Goebbels' diary reveals the intense relief and euphoria among party leaders when Hitler re-established unchallenged authority at the 1926 Bamberg Conference.",
           "teacher_notes": {
             "source_context": "At the Bamberg Conference in February 1926, Hitler decisively defeated Gregor Strasser and the northern socialist wing of the Nazi Party, establishing absolute personal authority (Führerprinzip) and winning over Goebbels. **Hinge Question:** How does Goebbels’s diary entry illustrate the emotional power of the Führerprinzip over the Nazi leadership?"
           },
@@ -7063,7 +7063,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source E for an enquiry into the electoral weakness of the Nazi Party during the Weimar Republic’s years of recovery (1924–1928)?",
-          "model_answer": "<p>Source E is highly useful because official election data proves that during the Golden Twenties, the Nazi Party was politically marginalized, securing just 12 seats (2.6% of the vote) compared to the SPD’s 153. As objective government electoral data, it demonstrates that economic prosperity and foreign policy stability under Stresemann deprived extremist movements of working-class and middle-class protest votes.</p>",
+          "model_answer": "The 1928 election data illustrates the 'Lean Years', showing the Nazis polled only 2.6% of votes while the Weimar economy remained prosperous.",
           "teacher_notes": {
             "source_context": "In the May 1928 elections, during the height of Stresemann’s economic recovery, democratic pro-republican parties won over 70% of seats, leaving the Nazi Party in the political wilderness with just 2.6% of the vote. **Hinge Question:** Why did the economic stability of the Golden Twenties push extremist parties like the NSDAP to the margins of German politics?"
           },
@@ -8025,7 +8025,7 @@ export default {
             "type": "utility_comp_4m",
             "question": "Part 1: Content & Provenance (COP) Comparative Analysis for Sources A & B.",
             "prompt": "Compare what Sources A and B reveal about the crisis of 1929–1932, and evaluate how their contrasting provenances affect their usefulness for an enquiry into the growth of Nazi support.",
-            "model": "Source A reveals the direct human misery of the Great Depression, showing hundreds of unemployed men queuing outside a Berlin labour exchange, proving that economic destitution affected millions. In contrast, Source B reveals how the Nazi Party exploited this despair through targeted propaganda, presenting Hitler as a messianic figure with the slogan 'Our Last Hope'. While Source A is an authentic press photograph capturing genuine socio-economic reality, Source B is an official Nazi election poster designed to persuade voters. Together, they show how mass suffering created the fertile ground that Nazi propaganda ruthlessly exploited.",
+            "model": "<strong>Content:</strong> Source B reveals Chancellor Brüning cutting public spending and welfare to manage the financial crisis, while Source D shows the Nazis exploiting this desperation by promising 'Work and Bread'.<br><br><strong>Provenance:</strong> Source B is an official government emergency decree showing administrative paralysis, whereas Source D is a propaganda election poster designed to convert economic misery into votes.",
             "scaffolding": {
               "acronym": "Comparative Analysis Framework",
               "acronym_title": "Content & Provenance Comparison [4 Marks • 6 Mins]",
@@ -8048,7 +8048,7 @@ export default {
             "type": "utility_8m",
             "question": "How useful are Sources A and B for an enquiry into the reasons for the growth of Nazi support in the years 1929–1932?",
             "prompt": "Evaluate both sources using Content, Contextual Knowledge (Wall Street Crash, 6 million unemployed, Brüning, Goebbels, Hitler Cult), and Provenance.",
-            "model": "Source A is highly useful for an enquiry into the growth of Nazi support because its content documents the devastating human reality of the Great Depression in Germany. The photograph shows long, demoralized queues of unemployed workers waiting outside the Berlin labour exchange (Arbeitsamt). From my own knowledge, following the October 1929 Wall Street Crash and the sudden recall of American loans, German industrial production collapsed by 40% and unemployment soared to over 6 million by 1932. Chancellor Brüning's harsh austerity measures and welfare cuts further alienated the public, driving desperate citizens away from moderate democratic parties toward political extremes. As an authentic contemporary press photograph, Source A provides valuable, unvarnished evidence of the economic despair that discredited the Weimar Republic.<br><br>Source B is equally useful because it shows how the Nazi propaganda machine exploited this crisis to build mass appeal. The 1932 campaign poster features the slogan 'Our Last Hope: Hitler' above the somber, strained faces of ordinary German men and women. From my own knowledge, propaganda chief Joseph Goebbels expertly tailored Nazi messaging to different social groups, promising jobs to workers, protection to shopkeepers, and security to the middle classes who terrified of a communist revolution. Goebbels built a powerful 'Hitler Cult', presenting Hitler as a superhuman leader who stood above party politics. As an official NSDAP election poster from the decisive 1932 campaigns, Source B provides direct evidence of Nazi electoral strategy. Overall, Sources A and B together are exceptionally useful: Source A reveals the economic conditions that created mass desperation, while Source B demonstrates the sophisticated propaganda that channeled that desperation into 230 Reichstag seats for Hitler in July 1932.",
+            "model": "Source A is useful for an enquiry into the impact of the Great Depression because it records Berlin police reports on rising political violence, poverty, and communist agitation among the unemployed. From my knowledge, the 1929 Wall Street Crash caused American banks to recall loans, pushing German unemployment to 6 million by 1932. As an official police intelligence report, it gives an objective assessment of growing urban unrest.<br><br>Source B is useful because Chancellor Brüning explains his deflationary policy of cutting civil service wages, unemployment benefits, and raising taxes. Because the Reichstag rejected these unpopular cuts, Brüning ruled through President Hindenburg's Article 48 emergency decrees, bypassing democracy. As an official government defense, it reveals the government's inability to solve the crisis. However, it does not show how this failure drove millions of voters toward the Nazis. Overall, both sources are highly useful for showing the economic and political collapse of Weimar.",
             "scaffolding": {
               "acronym": "Two-Source Utility Framework",
               "acronym_title": "Section B: Question 3(a) • Utility of Sources A & B [8 Marks • 12 Mins]",
@@ -8329,7 +8329,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source A for an enquiry into the social and economic impact of the Great Depression on ordinary Germans between 1929 and 1931?",
-          "model_answer": "<p>Source A is highly useful because it documents the immediate human fallout of the Wall Street Crash: industrial collapse, mass evictions, and desperate queues at labour exchanges across Berlin. As an official police intelligence report, it provides a reliable, contemporary administrative assessment of social breakdown, explaining why millions of disillusioned citizens abandoned moderate democratic parties for extremist paramilitary movements.</p>",
+          "model_answer": "The police report documents how the Great Depression triggered surging communist recruitment and violent street clashes among desperate unemployed workers in Berlin.",
           "teacher_notes": {
             "source_context": "Following the October 1929 Wall Street Crash, American banks abruptly recalled short-term loans from Germany, triggering massive industrial bankruptcies, factory closures, and rising unemployment. **Hinge Question:** How did the economic shock of the Wall Street Crash destroy social stability and fuel political radicalism in Weimar Germany?"
           },
@@ -8352,7 +8352,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source B for an enquiry into the economic policies of Chancellor Heinrich Brüning and their impact on public faith in Weimar democracy?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source B is extremely useful because it provides documentary proof of the deflationary austerity policies that alienated millions of Germans from the Weimar Republic between 1930 and 1932. Brüning slashed civil service pay, war pensions, and unemployment benefits by 9% to 12% at the very moment when winter poverty was at its absolute worst. This aligns with contextual knowledge: Brüning pursued this harsh policy partly to demonstrate to Britain and France that Germany was completely incapable of paying reparations (which were indeed cancelled at Lausanne in 1932), but the domestic consequence was catastrophic, driving millions of impoverished workers and lower-middle-class families into the arms of the political extremes (KPD and NSDAP).</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is reinforced by its status as an official state statute published in the <em>Reichsgesetzblatt</em>, enacted under Article 48 by presidential signature rather than parliamentary debate. This provenance directly illustrates the erosion of German parliamentary democracy: because the Reichstag coalition had collapsed in March 1930 over unemployment contributions, Brüning governed entirely through authoritarian decrees. However, the legal decree cannot show the emotional fury, breadlines, or street protests that erupted across German cities in response, making it essential to cross-reference with personal memoirs and election results to assess the full political backlash.</p>",
+          "model_answer": "Brüning's decree illustrates his hated deflationary policy: cutting unemployment benefits and wages by emergency decree, which earned him the nickname 'Hunger Chancellor'.",
           "teacher_notes": {
             "source_context": "Between 1930 and 1932, Centre Party Chancellor Heinrich Brüning bypassed the deadlocked Reichstag, using Hindenburg's Article 48 emergency powers to slash state spending, unemployment benefits, and public sector salaries. **Hinge Question:** Why did Chancellor Brüning's ruthless austerity measures earn him the hated title of the \"Hunger Chancellor\" (Hungerkanzler)?"
           }
@@ -8374,7 +8374,7 @@ export default {
           "question_badge": "Source Inference",
           "question_type": "Source Inference",
           "enquiry_question": "Give two things you can infer from Source C about the methods and visibility of the SA (Sturmabteilung) in German cities during the 1932 election campaigns.",
-          "model_answer": "<ul style=\"margin: 0; padding-left: 18px; line-height: 1.6; color: #1e293b;\"><li style=\"margin-bottom: 8px;\"><strong>Inference 1:</strong> The SA operated as an overt, highly disciplined military army openly asserting control over urban streets.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> The photograph shows thousands of stormtroopers marching in rigid, multi-ranked military columns wearing identical brown uniforms, kepi caps, and swastika armbands, led by officers on horseback.</li><li><strong>Inference 2:</strong> The Nazi Party used overwhelming physical presence to intimidate political opponents in major metropolitan areas.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> The endless column fills the entire width of the city boulevard, carrying large regimented swastika standards to visually dominate the civilian neighborhood and project irresistible power.</li></ul>",
+          "model_answer": "The photograph demonstrates how the SA projected order and strength through disciplined mass parades, contrasting with the chaotic paralysis of the Weimar government.",
           "teacher_notes": {
             "source_context": "By 1932, the SA had grown to over 400,000 men, marching through working-class neighbourhoods to intimidate communist opponents and demonstrate that the Nazi Party possessed the physical power to restore order. **Hinge Question:** How did the SA's military parades and street battles with Communist Red Front fighters project an impression of order and discipline to fearful middle-class Germans?"
           },
@@ -8397,7 +8397,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source D for an enquiry into how the Nazi Party appealed to desperate voters during the Great Depression in 1932?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source D is exceptionally useful because it illustrates the psychological and emotional core of Nazi electoral propaganda during the peak of the Great Depression. The artist depicts a crowd of grim, exhausted German men, women, and mothers with sunken eyes and threadbare clothes gazing upward toward the bold slogan \"Our Last Hope: Hitler\" (<em>Unsere letzte Hoffnung: Hitler</em>). This reflects historical conditions perfectly: with six million unemployed, thousands of small businesses bankrupt, and soup kitchens overwhelmed, the Nazi Party capitalized on the utter despair of ordinary citizens by portraying Hitler not as a conventional politician, but as a superhuman, providential saviour who stood above corrupt party politics.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further strengthened by its origin as official campaign material produced by the NSDAP Propaganda Directorate (headed by Joseph Goebbels) for the 1932 elections. Its deliberate motive was to manufacture mass emotional devotion and unite divided social classes (unemployed workers, ruined shopkeepers, and impoverished farmers) under one charismatic figurehead without committing to detailed, divisive economic policies. While the poster cannot provide objective evidence of what Nazi economic policies would actually achieve in practice, it is invaluable for demonstrating why millions of disillusioned voters turned to Hitler as the only leader offering strong, decisive rescue from national ruin.</p>",
+          "model_answer": "The famous 'Work and Bread' poster illustrates how Nazi propaganda targeted working-class and peasant voters by promising jobs and economic rescue.",
           "teacher_notes": {
             "source_context": "Created by Goebbels' top artist Mjölnir for the 1932 presidential and Reichstag campaigns, \"Our Last Hope: Hitler\" became the definitive visual image of Nazi appeal during the Great Depression. **Hinge Question:** Why did Nazi propaganda deliberately present Hitler as a messianic, classless saviour rather than outlining specific economic policies in 1932?"
           },
@@ -8420,7 +8420,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source E for an enquiry into why middle-class Germans were attracted to National Socialism during the Great Depression?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source E is exceptionally useful because it provides an authentic, psychological explanation of why respectable middle-class Germans (<em>Mittelstand</em>) abandoned traditional conservative parties for Hitler in 1931–1932. Maschmann vividly highlights the overriding dread of a violent Bolshevik revolution, fuelled by daily street clashes between Communists and the SA in residential Berlin. Furthermore, she reveals how the middle class felt economically humiliated by the Depression and disgusted by the perceived cowardice of democratic politicians, making Hitler’s uncompromising message of national discipline, anti-communism, and patriotic renewal overwhelmingly attractive to young people.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further enriched by Maschmann's position as an educated contemporary participant who lived through the radicalization of Berlin first-hand and subsequently joined the Nazi youth movement. Writing in retrospect to honestly explain how ordinary, decent Germans were seduced by fascism, her testimony provides rare emotional insight into the moral vacuum of late Weimar Germany. However, its utility is limited because it is an autobiographical memoir written decades later, which may unconsciously exaggerate her family's idealism to soften their complicity in supporting a violent regime; nonetheless, it remains invaluable for showing how anti-Marxist fear and charismatic populism converged to create Hitler's mass electoral base.</p>",
+          "model_answer": "Maschmann recalls how Nazi rallies provided disillusioned youth with a sense of purpose, national unity, and exciting escape from the bleak misery of the Depression.",
           "teacher_notes": {
             "source_context": "Written by a middle-class Berlin teenager who joined the Hitler Youth movement in 1932, Maschmann's memoir provides deep insight into why respectable German families turned to Hitler out of dread of Communism and economic ruin. **Hinge Question:** Why was the intense fear of a Communist revolution the primary factor that drove Germany's middle class (Mittelstand) to support Adolf Hitler?"
           }
@@ -9375,7 +9375,7 @@ export default {
             "type": "4-mark",
             "question": "Study Interpretations 1 and 2. They give different views about how Hitler became Chancellor in 1932–33. What is the main difference between these views?",
             "prompt": "Explain the main difference between the two interpretations, quoting details from both to support your answer.",
-            "model": "The main difference between the two interpretations is whether Hitler became Chancellor primarily due to the unavoidable collapse of Weimar democracy and the irresistible force of mass popular support, or due to backstairs political intrigue and elite miscalculation. Interpretation 1 argues that Hitler's rise was 'the inevitable result of the collapse of the Weimar democratic system' driven by the Great Depression, meaning conservative elites 'had to hand power to Hitler because his party was the largest in the parliament.' In contrast, Interpretation 2 contends that Hitler's appointment 'was not inevitable' and occurred because of 'secret political scheming and backstairs intrigue' by Franz von Papen and Hindenburg, who made a 'fatal, cynical miscalculation' to exploit Hitler just as the Nazi vote was declining in late 1932.",
+            "model": "One main difference is that Interpretation 1 suggests Hitler came to power primarily through backroom political intrigue by conservative elites like Franz von Papen. In contrast, Interpretation 2 argues that Hitler's appointment was driven by the massive democratic mandate won by the Nazi Party in free elections.",
             "scaffolding": {
               "acronym": "Difference + Quotes Formula (AO4)",
               "acronym_title": "Historiographical Comparison [4 Marks • 6 Mins]",
@@ -9405,7 +9405,7 @@ export default {
             "question": "How far do you agree with Interpretation 2 about how Hitler became Chancellor in 1932–33? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Interpretation 2 argues that Hitler became Chancellor not through inevitability or unstoppable democratic ascent, but through cynical political intrigue and the miscalculations of conservative elites. There is strong historical evidence to support this view. By November 1932, the Nazi electoral surge was actually waning: the party lost 2 million votes and 34 Reichstag seats, dropping from 230 to 196, while party funds were exhausted by relentless campaigning. Hitler had repeatedly refused Hindenburg's offer to serve as Vice-Chancellor under Franz von Papen, and his political strategy seemed deadlocked. Hitler was rescued solely by the backstairs intrigue orchestrated by Papen and General Kurt von Schleicher. Papen, determined to oust Schleicher after Schleicher failed to form a governing coalition, met secretly with Hitler at banker Kurt von Schröder's villa in Cologne on 4 January 1933. Papen convinced President Hindenburg—who had previously dismissed Hitler as an uncouth 'Bohemian corporal'—to appoint Hitler as Chancellor of a coalition government on 30 January 1933. Papen boasted that conservative elites would control Hitler, declaring, 'Within two months we will have pushed Hitler into a corner until he squeals,' reserving nine of the twelve cabinet seats for non-Nazis. This proves Interpretation 2's claim that elite scheming and political miscalculation were the direct, immediate mechanism that handed Hitler the chancellorship.<br><br>On the other hand, Interpretation 1 offers a persuasive alternative argument, emphasizing that the collapse of Weimar democracy and the sheer scale of Nazi popular support made Hitler's appointment inevitable. Contextual knowledge confirms that the Great Depression was the fundamental catalyst: by 1932, over six million Germans were unemployed and industrial output had halved. The democratic Reichstag was completely paralyzed, forcing Chancellor Brüning to rule almost exclusively via Article 48 emergency presidential decrees (used 66 times in 1932 compared to only 5 parliamentary laws passed), effectively destroying the credibility of constitutional democracy before Papen even conspired. Furthermore, the Nazis were the largest political party in Germany, winning 37.3% of the vote (230 seats) in July 1932. With the 400,000-strong SA dominating the streets, conservative elites knew that Germany could not be governed without the Nazi movement unless they risked open civil war against both the Nazis and the Communist KPD (which won 100 seats in November 1932). As Interpretation 1 asserts, democracy was already broken, and elites were forced to turn to Hitler because mass popularity gave him unique political leverage that no conservative aristocrat possessed.<br><br>Overall, I agree with Interpretation 2 to a large extent. While Interpretation 1 correctly identifies that the economic catastrophe and Nazi mass popularity provided the indispensable preconditions for Hitler's rise, mass popularity alone did not make Hitler Chancellor. Indeed, in November 1932, the Nazi electoral momentum was receding, and Hitler had no constitutional path to power. It was the specific, fatal miscalculation of Papen, Oskar von Hindenburg, and the conservative camarilla—believing they could 'tame' and manipulate Hitler—that actively opened the door of the Reich Chancellery on 30 January 1933.",
+            "model": "Interpretation 1 argues that Hitler was appointed Chancellor in January 1933 primarily because of political intrigue among conservative elites. There is strong evidence for this: in November 1932, Nazi electoral support had actually dropped from 37% to 33%, and the party was running out of funds. Hitler was only rescued because Franz von Papen, furious at being ousted by Kurt von Schleicher, convinced President Hindenburg to appoint Hitler Chancellor with Papen as Vice-Chancellor, boasting they could 'box Hitler in' and control him in a cabinet with only two other Nazis.<br><br>On the other hand, Interpretation 2 emphasizes that Hitler could never have been considered for the chancellorship without the Nazi Party's overwhelming electoral success. Following the Wall Street Crash, the Nazis became the largest party in the Reichstag, winning 230 seats in July 1932. Hitler consistently refused ministerial posts under other chancellors, insisting on the top job because of his millions of voters and the street power of 400,000 SA stormtroopers.<br><br>Furthermore, Hindenburg's reliance on Article 48 emergency decrees had already destroyed parliamentary democracy between 1930 and 1932, creating a constitutional vacuum that paved the way for an authoritarian leader.<br><br>In conclusion, I agree with Interpretation 1 to a greater extent. While mass votes made Hitler a candidate, it was Papen's fateful miscalculation and conservative scheming that actually handed Hitler power when his electoral support was declining.",
             "scaffolding": {
               "acronym": "Interpretation Verdict Framework (AO4)",
               "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
@@ -9689,7 +9689,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source A for an enquiry into the political crisis and electoral decline of the Nazi Party in late 1932?",
-          "model_answer": "<p>Source A is highly useful because it demonstrates through official statistics that the Nazi electoral surge had peaked by November 1932, with the NSDAP losing 34 seats while the Communists surged to 100. This numerical shift was critical: it terrified wealthy industrialists and conservative aristocrats into believing only a right-wing coalition including Hitler could block a Bolshevik revolution, while convincing von Papen that Hitler was sufficiently weakened to be controlled.</p>",
+          "model_answer": "The election data proves that while the Nazis remained the largest party in November 1932, their vote dropped by 2 million, showing their momentum was slowing.",
           "teacher_notes": {
             "source_context": "In November 1932, the Nazi Party suffered a major electoral setback, losing 2 million votes and 34 seats, while the KPD surged to 100 seats, convincing conservative elites that Hitler was fading and could be safely manipulated. **Hinge Question:** Why did the Nazi Party’s electoral decline in November 1932 paradoxically encourage conservative elites to invite Hitler into government?"
           },
@@ -9712,7 +9712,7 @@ export default {
           "question_badge": "Political Instability & Army Intrigue",
           "question_type": "Political Instability & Army Intrigue",
           "enquiry_question": "How does Source B and its historical context explain why General von Schleicher was unable to sustain his chancellorship in January 1933?",
-          "model_answer": "Source B highlights the central role of military intrigue and political miscalculation in the death of Weimar democracy. As an army general and master behind-the-scenes intriguer, Schleicher attempted to govern without a Reichstag majority by proposing social reforms and splitting the Nazi Party through an alliance with Gregor Strasser. When Hitler ruthlessly purged Strasser, Schleicher’s strategy collapsed; his proposal to break up bankrupt East Prussian aristocratic estates (the Osthilfe scandal) deeply outraged President Hindenburg and Junker landowners, driving Papen to orchestrate Schleicher’s dismissal and Hitler’s appointment.",
+          "model_answer": "Schleicher's failed attempt to split the Nazi Party by offering Gregor Strasser the vice-chancellorship alienated both Hitler and conservative industrialists.",
           "teacher_notes": {
             "source_context": "General Kurt von Schleicher served as Chancellor for just 57 days; his failure to build a parliamentary majority and his alienation of wealthy Prussian landowners led directly to Hindenburg turning to Hitler. **Hinge Question:** Why did General von Schleicher's attempt to split the Nazi Party by offering the Vice-Chancellorship to Gregor Strasser end in complete disaster?"
           },
@@ -9735,7 +9735,7 @@ export default {
           "question_badge": "Author’s Motive & Miscalculation",
           "question_type": "Author’s Motive & Miscalculation",
           "enquiry_question": "What does Source C reveal about the motives and assumptions of conservative aristocratic politicians when appointing Adolf Hitler as Chancellor?",
-          "model_answer": "Source C reveals the staggering complacency, cynicism, and arrogance of Germany's conservative aristocracy, who believed they could exploit Hitler's mass popular following while safely neutralizing his radicalism. Papen assumed that confining the Nazis to three cabinet seats and retaining key economic and military portfolios would leave Hitler powerless. This was a fatal blunder: Papen failed to recognize that Wilhelm Frick in the Reich Interior Ministry and Hermann Göring as Prussian Interior Minister controlled the police forces of Germany, which Hitler immediately mobilized to terrorize political rivals and dismantle the constitution within weeks.",
+          "model_answer": "Papen's arrogant boast reveals that conservative elites fatally believed they could 'box Hitler into a corner' and use him as a puppet.",
           "teacher_notes": {
             "source_context": "In late January 1933, Franz von Papen brushed aside warnings from conservative allies, insisting that his aristocratic cabinet majority and personal bond with Hindenburg would reduce Hitler to an obedient puppet. **Hinge Question:** Why did Papen fail to realize that controlling the Prussian police under Hermann Göring gave the Nazis total physical domination over the capital?"
           }
@@ -9757,7 +9757,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source D for an enquiry into the conservative establishment's miscalculation in appointing Adolf Hitler as Chancellor in January 1933?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source D is exceptionally useful because it directly exposes the fatal miscalculation and cynical maneuvering of Germany's conservative elite. Bernard Partridge depicts President Hindenburg and Vice-Chancellor Franz von Papen physically carrying Hitler aloft on their shoulders, pretending to celebrate him (\"For he's a jolly good fellow\") while privately muttering \"Confound him!\". This mirrors historical reality: Papen persuaded Hindenburg to appoint Hitler on 30 January 1933 by promising that a cabinet containing only three Nazis out of eleven ministers would keep Hitler \"boxed in\" and subordinated to conservative control. The cartoon captured the reality that rather than controlling Hitler, Hindenburg and Papen were actually elevating him to supreme authority while Hitler firmly gripped their heads from above.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further enhanced by its provenance as a contemporary British cartoon published in <em>Punch</em> on 8 February 1933, only nine days after Hitler took office. It proves that international observers immediately perceived the absurdity and instability of this \"Temporary Triangle\"—an unnatural coalition between traditional Prussian monarchists and revolutionary fascists. However, the cartoon simplifies the political crisis: it depicts Papen and Hindenburg as reluctant partners caught in the trap, downplaying Papen's active backstairs intrigue to destroy General von Schleicher's government and Hitler's own ruthless exploitation of the SA (visible cheering in the background). Nevertheless, it provides outstanding insight into contemporary perceptions of the establishment's foolish gamble.</p>",
+          "model_answer": "The cartoon satirizes Hindenburg and Papen lifting Hitler onto the horse of power, warning that they were recklessly creating a monster they could not control.",
           "teacher_notes": {
             "source_context": "Published in Punch on 8 February 1933, days after Adolf Hitler was appointed Reich Chancellor. Vice-Chancellor Franz von Papen and 85-year-old President Paul von Hindenburg are depicted reluctantly hoisting Hitler onto their shoulders while cheering SA stormtroopers march past. **Hinge Question:** Why did conservative aristocrats like Franz von Papen believe they could safely \"carry\" Hitler into power without being overthrown by him?"
           },
@@ -9780,7 +9780,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source E for an enquiry into how conservative politicians attempted to control and constrain Adolf Hitler upon his appointment as Chancellor on 30 January 1933?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source E is exceptionally useful because it provides indisputable visual evidence of the coalition structure that conservative elites established to box in Adolf Hitler on 30 January 1933. In the official cabinet photograph, Hitler stands surrounded by seasoned aristocratic conservatives: Vice-Chancellor Franz von Papen, DNVP leader Alfred Hugenberg (Economics and Agriculture), and General Werner von Blomberg (Defence). Crucially, only two other Nazis are present in the twelve-man cabinet: Wilhelm Frick (Interior) and Hermann Göring (Minister without Portfolio). This visually confirms Papen's strategy: conservative elites believed they had successfully harnessed Hitler's mass movement while monopolizing foreign affairs, finance, and the military.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further enhanced by its status as an official state press photograph issued by the Reich Chancellery on the day of appointment. Its purpose was to reassure conservative civil servants, foreign ambassadors, and nervous army generals that the new administration was a respectable, constitutional national coalition rather than a violent Nazi dictatorship. However, its utility is limited because the visual surface is deeply deceptive: while conservatives held a numerical majority, the two Nazi ministerial posts gave Hitler command over the police. Within four weeks, following the Reichstag Fire, Hitler used this police power to eliminate civil liberties, ban opposition parties, and utterly subordinate his conservative coalition partners.</p>",
+          "model_answer": "The cabinet photograph shows that only three of eleven ministers were Nazis, illustrating Papen's initial plan to keep the radical NSDAP heavily outnumbered.",
           "teacher_notes": {
             "source_context": "On 30 January 1933, the new coalition cabinet was photographed in the Reich Chancellery: out of twelve ministers, only three were National Socialists (Hitler, Frick, Göring), giving conservatives the illusion of control. **Hinge Question:** How did the photograph of the conservative-dominated cabinet deceive foreign diplomats and moderate Germans into believing Hitler would be restrained?"
           },
@@ -9889,43 +9889,43 @@ export default {
         "instructions": "Answer these questions in full sentences from prior learning.",
         "items": [
           {
-            "question": "Who appointed Adolf Hitler as Chancellor of Germany on 30 January 1933? (Last Lesson)",
+            "question": "Who appointed Adolf Hitler as Chancellor of Germany on 30 January 1933?",
             "answer": "Reich President Paul von Hindenburg, advised by Franz von Papen."
           },
           {
-            "question": "Why did Franz von Papen believe he could control Hitler in the January 1933 cabinet? (Last Lesson)",
+            "question": "Why did Franz von Papen believe he could control Hitler in the January 1933 cabinet?",
             "answer": "Because conservatives held eight out of eleven cabinet seats, leaving Hitler with only two Nazi ministers (Frick and Göring)."
           },
           {
-            "question": "What percentage of the vote did the NSDAP win in the July 1932 Reichstag election? (Last Week)",
+            "question": "What percentage of the vote did the NSDAP win in the July 1932 Reichstag election?",
             "answer": "37.3%, making the Nazis the largest political party in the Reichstag with 230 seats."
           },
           {
-            "question": "How did Chancellor Heinrich Brüning govern Germany after March 1930? (Last Week)",
+            "question": "How did Chancellor Heinrich Brüning govern Germany after March 1930?",
             "answer": "He bypassed the Reichstag and ruled almost exclusively through emergency presidential decrees under Article 48."
           },
           {
-            "question": "What catastrophic economic event in October 1929 triggered mass unemployment in Germany? (Prior Topic)",
+            "question": "What catastrophic economic event in October 1929 triggered mass unemployment in Germany?",
             "answer": "The Wall Street Crash, which caused American banks to recall their short-term loans under the Dawes Plan."
           },
           {
-            "question": "What armed coup did Adolf Hitler attempt in Bavaria in November 1923? (Prior Topic)",
+            "question": "What armed coup did Adolf Hitler attempt in Bavaria in November 1923?",
             "answer": "The Munich Beer Hall Putsch, which was crushed by the Bavarian state police at the Odeonsplatz."
           },
           {
-            "question": "What political book did Hitler write while imprisoned at Landsberg Fortress? (Prior Topic)",
+            "question": "What political book did Hitler write while imprisoned at Landsberg Fortress?",
             "answer": "Mein Kampf ('My Struggle'), setting out his doctrines of Lebensraum and the Führerprinzip."
           },
           {
-            "question": "What emergency constitutional power allowed the Reich President to suspend civil liberties? (Prior Topic)",
+            "question": "What emergency constitutional power allowed the Reich President to suspend civil liberties?",
             "answer": "Article 48 of the Weimar Constitution."
           },
           {
-            "question": "What 1919 treaty imposed Article 231 (War Guilt) and £6.6 billion reparations on the Weimar Republic? (Prior Topic)",
+            "question": "What 1919 treaty imposed Article 231 (War Guilt) and £6.6 billion reparations on the Weimar Republic?",
             "answer": "The Treaty of Versailles."
           },
           {
-            "question": "Who was the moderate German foreign minister who negotiated the 1924 Dawes Plan and 1925 Locarno Treaties? (Prior Topic)",
+            "question": "Who was the moderate German foreign minister who negotiated the 1924 Dawes Plan and 1925 Locarno Treaties?",
             "answer": "Gustav Stresemann."
           }
         ]
@@ -10719,7 +10719,7 @@ export default {
             "type": "inference",
             "question": "Give two things you can infer from Source A about how the Nazi government used the Reichstag Fire.",
             "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from Source A.",
-            "model": "First inference: I can infer from Source A that the Nazi government used the destruction of the Reichstag to present Germany as being under imminent threat of violent communist revolution. Detail in Source A that tells me this: The photograph shows the catastrophic, total destruction of the plenary debating chamber, which the government cited as physical proof that left-wing revolutionaries were attempting to destroy the state.<br><br>Second inference: I can infer that the fire was exploited as a pretext to declare a state of emergency and crush political opposition. Detail in Source A that tells me this: The gutted parliamentary building symbolizes the end of constitutional debate, which Hitler used immediately the following morning to persuade President Hindenburg to sign the emergency Decree for the Protection of People and State, suspending civil liberties and arresting thousands of communists.",
+            "model": "<strong>Inference 1:</strong> The Nazi regime used the Reichstag fire to immediately strip citizens of basic civil liberties. <strong>Detail:</strong> The decree suspended freedom of speech, assembly, and the press.<br><br><strong>Inference 2:</strong> The state granted police unlimited powers of arbitrary arrest. <strong>Detail:</strong> Police were legally empowered to search homes and detain political suspects without trial.",
             "scaffolding": {
               "acronym": "Inference + Detail Formula (AO3)",
               "acronym_title": "Deduction & Quote Framework [4 Marks • 6 Mins]",
@@ -10756,7 +10756,7 @@ export default {
               "The Enabling Act (23 March 1933)"
             ],
             "prompt": "You may use the following in your answer: (1) The Reichstag Fire Decree (28 February 1933), (2) The Enabling Act (23 March 1933). You must also use information of your own.",
-            "model": "One primary reason why Hitler was able to establish a dictatorship was his ruthless exploitation of the Reichstag Fire in February 1933. By blaming the arson on the Dutch communist Marinus van der Lubbe and claiming it was the signal for a violent uprising, Hitler terrified President Hindenburg into issuing the Decree for the Protection of People and State under Article 48. This emergency decree permanently suspended basic constitutional civil liberties, including freedom of speech, assembly, and protection from arrest without warrant. Hermann Göring's police and 50,000 auxiliary SA brownshirts arrested over 4,000 Communist Party (KPD) officials, shutting down opposition printing presses. By legally neutralizing his most formidable left-wing opponents before the March 1933 election, Hitler removed the primary barrier to authoritarian control.<br><br>A second decisive factor was the passage of the Enabling Act on 23 March 1933. Recognizing that the March election gave the Nazis only 43.9% of the vote, Hitler convened the Reichstag in the Kroll Opera House surrounded by armed SS and SA stormtroopers who intimidated arriving deputies. By barring 81 Communist deputies and making false promises to the Catholic Centre Party, Hitler secured the necessary two-thirds majority, passing the act by 444 votes to 94. The Enabling Act was the legal cornerstone of the dictatorship because it granted Hitler's cabinet the power to pass laws without parliamentary debate or presidential approval for four years, allowing him to carry out Gleichschaltung—banning trade unions in May 1933 and outlawing all rival political parties by July 1933.<br><br>Furthermore, Hitler secured absolute power by eliminating internal party rivals in the Night of the Long Knives and securing the army's loyalty. In June 1934, Ernst Röhm's three-million-strong SA demanded a 'second revolution' and the absorption of the regular army (Reichswehr), alarming conservative generals. Prompted by Himmler and Göring, Hitler used SS execution squads to murder Röhm, senior SA leaders, and conservative critics like General Schleicher without trial. This purge satisfied the aristocratic officer corps; consequently, when the 86-year-old President Hindenburg died in August 1934, the military willingly swore a revolutionary personal oath of unconditional obedience to Adolf Hitler as supreme Führer und Reichskanzler, permanently locking the armed forces into the totalitarian state.",
+            "model": "One reason Hitler was able to establish a dictatorship was the Reichstag Fire in February 1933. Blaming a communist conspiracy, Hitler persuaded President Hindenburg to sign the Emergency Decree 'For the Protection of People and State'. This suspended basic civil liberties and allowed the SA and police to arrest 4,000 communists, crushing political opposition before the March election.<br><br>Furthermore, the Enabling Act (March 1933) gave Hitler full dictatorial powers. Intimidating the Reichstag with armed SS and SA troops and securing the Centre Party's support, Hitler passed the law allowing him to make laws without Reichstag or presidential approval for four years, legally dismantling the Weimar Constitution.<br><br>Finally, the Night of the Long Knives (June 1934) eliminated internal rivals. Fearing Ernst Röhm's 2-million-strong SA and needing the army's support, Hitler had Röhm and hundreds of SA leaders executed. When Hindenburg died in August 1934, the army swore an oath of personal loyalty to Hitler as *Führer*, completing the dictatorship.",
             "scaffolding": {
               "acronym": "PEEL Causation Framework",
               "acronym_title": "Section A: Question 2 • Explain Why [12 Marks • 18 Mins]",
@@ -11046,7 +11046,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source A for an enquiry into how the Nazi Party consolidated political power immediately following the Reichstag Fire in February 1933?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source A is exceptionally useful because it reveals the legal mechanism Hitler exploited to dismantle constitutional protections within weeks of becoming Chancellor. § 1 explicitly suspends fundamental Weimar rights—including personal liberty, freedom of speech, assembly, and privacy of communications—giving the regime unlimited legal cover to arrest over 4,000 political opponents, predominantly German Communist Party (KPD) deputies and Social Democrats. Furthermore, § 2 gave the central government the power to overthrow federal state administrations (such as Bavaria and Saxony), effectively destroying the federal balance of the Weimar Constitution before the 5 March 1933 election.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The source's utility is elevated by its official legal provenance as a statute published in the <em>Reichsgesetzblatt</em> and signed by President von Hindenburg under Article 48. This demonstrates that the initial destruction of German democracy was achieved using constitutional emergency powers rather than an overt armed coup, conferring vital legal legitimacy that prevented the army and civil service from resisting. However, the source is limited in explaining <em>why</em> the decree succeeded so rapidly: it does not record how the Nazis manufactured mass hysteria by presenting the lone actions of Dutch communist Marinus van der Lubbe as an imminent Bolshevik insurrection, nor does it capture the ruthless street terror simultaneously unleashed by Hermann Göring's auxiliary police force.</p>",
+          "model_answer": "The Reichstag Fire Decree suspended all fundamental civil liberties, allowing the Nazi regime to legally detain thousands of communist rivals without charge.",
           "teacher_notes": {
             "source_context": "Promulgated fewer than 24 hours after the Reichstag burned, this emergency decree suspended fundamental constitutional civil liberties indefinitely, enabling the regime to arrest over 4,000 communists and silence opposition press ahead of the March election. **Hinge Question:** Why was the suspension of constitutional civil rights under Article 48 far more devastating to Weimar democracy than the physical destruction of the parliament building?"
           }
@@ -11068,7 +11068,7 @@ export default {
           "question_badge": "Author’s Purpose",
           "question_type": "Author’s Purpose",
           "enquiry_question": "What was the primary purpose of Otto Wels' speech in the Kroll Opera House, given that the passage of the Enabling Act was virtually guaranteed?",
-          "model_answer": "Otto Wels' primary purpose was to place on the historical record an uncompromising moral rejection of Hitler's dictatorship on behalf of German democracy, even while knowing that the vote was already lost due to Nazi intimidation and the Catholic Centre Party's capitulation. Recognizing that the 94 SPD deputies faced imminent arrest or execution by the armed stormtroopers packing the hall, Wels deliberately invoked the SPD's historical survival under Bismarck to inspire future clandestine resistance and assert that genuine constitutional legitimacy could never be destroyed by coerced legislation.",
+          "model_answer": "Otto Wels' courageous speech in the Kroll Opera House marked the final democratic defiance against the Enabling Act before the SPD was outlawed.",
           "teacher_notes": {
             "source_context": "Speaking before an assembly surrounded by armed SA and SS men chanting threats of execution, Otto Wels led the 94 SPD deputies present in voting against the Enabling Act, preserving the party's democratic honour. **Hinge Question:** Why did the SPD stand alone in voting against the Enabling Act while the Catholic Centre Party voted in favour?"
           }
@@ -11089,7 +11089,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source C for an enquiry into the process of Gleichschaltung and the establishment of a one-party totalitarian state in 1933?",
-          "model_answer": "<p>Source C is exceptionally useful because it provides the exact legal statute by which the Nazi regime criminalized all opposition parties, punishing anyone attempting to maintain an alternative party with imprisonment. As an official statutory law passed by Hitler’s cabinet under the Enabling Act, it proves that totalitarian control was achieved through legalistic decrees that eradicated multi-party democracy within six months of taking power.</p>",
+          "model_answer": "The July 1933 decree officially established the one-party state, declaring the NSDAP the only legal political party in Germany and banning all opposition.",
           "teacher_notes": {
             "source_context": "Between March and July 1933, through *Gleichschaltung* (coordination), Hitler banned the KPD and SPD, forced the Catholic Centre and nationalist DNVP to dissolve, and outlawed all political parties except the NSDAP. **Hinge Question:** How did the Law of 14 July 1933 legally dismantle multi-party democracy in Germany?"
           },
@@ -11112,7 +11112,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source D for an enquiry into the consequences of the Night of the Long Knives for Hitler's authority in Germany?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source D is extremely useful because it provides direct evidence of Hitler's complete overthrow of the legal order following the June 1934 purge. Hitler's boast that he acted as the \"supreme judge\" (<em>Oberster Gerichtsherr</em>) illustrates that extrajudicial political murder was officially elevated above statutory law and the judicial courts. Contextually, the purge eliminated both the radical internal challenge from Röhm's 3-million-strong SA and dangerous conservative rivals like former Chancellor Kurt von Schleicher, securing the unconditional loyalty of the regular army (Reichswehr), which swore a personal oath to Hitler upon Hindenburg's death three weeks later.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further reinforced by the source's provenance as Hitler's public address to the coordinated Reichstag, broadcast nationwide by Goebbels to justify the slaughter to the German public. Rather than concealing the extrajudicial killings, Hitler openly advertised them to terrorize potential opponents and establish an aura of unchallengeable personal decisiveness. However, the source's utility is limited regarding the real motivations of the purge: Hitler falsely portrays the killings as a pre-emptive strike against an imminent, armed \"Röhm revolt\", fabricating evidence of treason to justify what was in reality a calculated political massacre designed to appease traditional military and industrial elites.</p>",
+          "model_answer": "Hitler's speech justified the Night of the Long Knives murders by claiming he acted as the 'supreme judge' of the nation to avert treason.",
           "teacher_notes": {
             "source_context": "On the Night of the Long Knives (30 June 1934), the SS murdered over 80 SA leaders, conservative politicians, and critics; in this speech, Hitler openly declared himself the \"supreme judge\" whose will superseded all written laws. **Hinge Question:** How did Hitler's self-proclamation as the \"Supreme Judge\" (Oberster Gerichtsherr) fundamentally subvert the rule of law in Germany?"
           }
@@ -11133,7 +11133,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source E for an enquiry into how Adolf Hitler secured total personal control over the German military following Hindenburg’s death in August 1934?",
-          "model_answer": "<p>Source E is critically useful because it reveals how Hitler bound the entire military directly to his person: soldiers swore *\"unconditional obedience to the Führer of the German Reich and People, Adolf Hitler\"* rather than to the constitution or the nation. As an official statute enacted upon Hindenburg’s death, it highlights why Prussian officers, bound by traditional codes of honour, felt unable to rebel against Hitler’s aggressive expansionism and criminal orders.</p>",
+          "model_answer": "The soldier's oath bound the entire German military personally to Adolf Hitler as Supreme Commander, eliminating the armed forces as an independent check on his power.",
           "teacher_notes": {
             "source_context": "On 2 August 1934, following President Hindenburg’s death, Hitler merged the offices of Chancellor and President into \"Führer and Reich Chancellor\", requiring all military personnel to swear a personal oath of loyalty to him. **Hinge Question:** Why was making soldiers swear an oath to Hitler personally—rather than to the state or constitution—decisive in securing army obedience?"
           },
@@ -11243,43 +11243,43 @@ export default {
         "instructions": "Answer these questions in full sentences from prior learning.",
         "items": [
           {
-            "question": "What emergency decree was passed on 28 February 1933 suspending civil liberties? (Last Lesson)",
+            "question": "What emergency decree was passed on 28 February 1933 suspending civil liberties?",
             "answer": "The Reichstag Fire Emergency Decree (Decree for the Protection of the People and State)."
           },
           {
-            "question": "What landmark law did the Reichstag pass on 23 March 1933 giving Hitler power to rule by decree? (Last Lesson)",
+            "question": "What landmark law did the Reichstag pass on 23 March 1933 giving Hitler power to rule by decree?",
             "answer": "The Enabling Act (Law to Remedy the Distress of the People and the Reich)."
           },
           {
-            "question": "What term describes the process of coordinating all German institutions under Nazi control? (Last Lesson)",
+            "question": "What term describes the process of coordinating all German institutions under Nazi control?",
             "answer": "Gleichschaltung."
           },
           {
-            "question": "What bloody purge took place on 30 June 1934 to eliminate the SA leadership? (Last Lesson)",
+            "question": "What bloody purge took place on 30 June 1934 to eliminate the SA leadership?",
             "answer": "The Night of the Long Knives, in which Ernst Röhm and other rivals were executed."
           },
           {
-            "question": "What did German army soldiers do on 2 August 1934 following President Hindenburg's death? (Last Lesson)",
+            "question": "What did German army soldiers do on 2 August 1934 following President Hindenburg's death?",
             "answer": "They swore a personal oath of unconditional loyalty to Adolf Hitler as Führer."
           },
           {
-            "question": "Who appointed Adolf Hitler as Chancellor on 30 January 1933? (Last Week)",
+            "question": "Who appointed Adolf Hitler as Chancellor on 30 January 1933?",
             "answer": "President Paul von Hindenburg."
           },
           {
-            "question": "Which Dutch communist was blamed and executed for setting fire to the Reichstag? (Last Week)",
+            "question": "Which Dutch communist was blamed and executed for setting fire to the Reichstag?",
             "answer": "Marinus van der Lubbe."
           },
           {
-            "question": "Which paramilitary organization was led by Ernst Röhm before 1934? (Prior Topic)",
+            "question": "Which paramilitary organization was led by Ernst Röhm before 1934?",
             "answer": "The SA (Sturmabteilung, or Brownshirts)."
           },
           {
-            "question": "What was the 'stab-in-the-back' myth (Dolchstoßlegende) propagated by German military leaders like Ludendorff? (Prior Topic)",
+            "question": "What was the 'stab-in-the-back' myth (Dolchstoßlegende) propagated by German military leaders like Ludendorff?",
             "answer": "The false conspiracy theory that the German army was undefeated in the field and betrayed from within by socialists, communists, and Jews."
           },
           {
-            "question": "What 1928 international pact signed by 62 nations renounced war as an instrument of national policy? (Prior Topic)",
+            "question": "What 1928 international pact signed by 62 nations renounced war as an instrument of national policy?",
             "answer": "The Kellogg-Briand Pact."
           }
         ]
@@ -11881,7 +11881,7 @@ export default {
               "Informers and Block Wardens (Blockleiter)"
             ],
             "prompt": "You may use the following in your answer: (1) The role of the SS and Gestapo, (2) Informers and Block Wardens (Blockleiter). You must also use information of your own.",
-            "model": "One decisive reason why the Nazi police state maintained control was the atmosphere of terror created by the SS and the Gestapo. Following the consolidation of police powers under Heinrich Himmler and Reinhard Heydrich in 1934, the Schutzstaffel (SS) expanded into an elite racial army that operated entirely above the law, controlling the concentration camp network like Dachau and Sachsenhausen. Alongside them, the Geheime Staatspolizei (Gestapo) operated in plain clothes with sweeping powers to tap phones, open mail, and arrest suspects indefinitely under protective custody (Schutzhaft). Crucially, the 1936 Basic Decree placed the Gestapo above judicial review, meaning no court could overturn their arrests. The knowledge that any political dissent could result in torture at Prinz-Albrecht-Straße or indefinite imprisonment in a concentration camp terrified the public into passive obedience.<br><br>A second vital factor was the widespread system of civilian surveillance and informers, coordinated by local Block Wardens (Blockleiter). Although popular imagination viewed the Gestapo as an all-powerful spy apparatus, it was actually surprisingly small, employing fewer than 30,000 officers nationwide. Instead, the police state relied heavily on voluntary denunciations submitted by ordinary citizens settling personal grudges, workplace rivalries, or family disputes. Every street and apartment building was monitored by a Blockleiter who checked whether families flew swastika flags, gave the Nazi salute, or listened to foreign radio stations. This pervasive surveillance created an environment of universal suspicion where neighbors distrusted neighbors and even family members feared speaking candidly, compelling Germans to police themselves.<br><br>Furthermore, the police state maintained control by dismantling judicial independence and nazifying the legal system. All judges and lawyers were forced to join the National Socialist League for the Maintenance of the Law (BSRB), swearing an oath of direct loyalty to Hitler. Judges wore swastikas on their robes and were instructed to base verdicts on 'sound popular sentiment' (gesundes Volksempfinden) rather than written legal precedent. In 1934, Hitler established the People's Court (Volksgerichtshof) under fanatical figures like Roland Freisler to try political crimes and treason in secret without juries or independent defense counsel. By transforming the courtroom from a protector of citizens' rights into an instrument of state terror, the regime ensured that political opponents had no legal recourse whatsoever.",
+            "model": "One reason the Nazi police state maintained control was the terror created by the SS (Schutzstaffel) and Gestapo. Led by Heinrich Himmler, the SS ran the concentration camps (starting with Dachau in 1933) where political opponents were tortured. The Gestapo (Secret State Police) used wiretaps and arbitrary arrest, operating above the law so that anyone suspected of disloyalty disappeared into 'protective custody'.<br><br>Furthermore, the regime relied heavily on civilian informers and denunciations. Contrary to myth, the Gestapo was small (only 28 officers in Frankfurt), but ordinary citizens regularly denounced neighbors, colleagues, and family members to settle personal grudges or display loyalty, creating an atmosphere of paranoia where people self-censored.<br><br>Finally, the Nazis placed the legal system under total political control. Judges had to join the National Socialist League for the Maintenance of the Law, swearing loyalty to Hitler. In 1934, Hitler created the People's Court (*Volksgerichtshof*) to try treason cases without juries, ensuring guilty verdicts and frequent death sentences for dissidents.",
             "scaffolding": {
               "acronym": "PEEL Causation Framework",
               "acronym_title": "Section A: Question 2 • Explain Why [12 Marks • 18 Mins]",
@@ -11913,7 +11913,7 @@ export default {
             "type": "utility_8m",
             "question": "How useful are Sources A and B for an enquiry into methods used by the Nazi regime to control German society between 1933 and 1939?",
             "prompt": "Evaluate both sources using Content, Contextual Knowledge (SS, Dachau, Concentration Camps, Reichskonkordat, Catholic Church), and Provenance (Nature, Origin, Purpose).",
-            "model": "Source A is highly useful for an enquiry into Nazi methods of social control because its content reveals the terrifying role of state terror and concentration camps in silencing political opponents. The photograph shows hundreds of political prisoners standing at rigid attention during a roll call at Dachau in 1933, guarded by armed SS guards. From my own knowledge, Dachau was established near Munich in March 1933 by Heinrich Himmler specifically to incarcerate communists, Social Democrats, and trade unionists under 'protective custody' (Schutzhaft) without judicial trial. Supervised by Theodor Eicke's brutal SS-Totenkopfverbände, Dachau established the standard penal model of forced labour, starvation, and physical beatings designed to break resistance. As an authentic early documentary photograph from the camp, Source A provides unvarnished visual evidence of how physical terror and the fear of indefinite detention terrorized the population into obedience.<br><br>Source B is equally useful because it illustrates a contrasting method of control: diplomatic compromise and legal co-optation to neutralize potential institutional resistance. The photograph captures Vice-Chancellor Franz von Papen and Cardinal Pacelli signing the Reichskonkordat at the Vatican in July 1933. From my own knowledge, Hitler sought this concordat to gain international respectability and neutralize Germany's 22 million Catholics. In return for the Catholic Church withdrawing priests from active politics and dissolving the Catholic Centre Party, Hitler promised to safeguard Catholic schools, youth organizations, and religious worship. Although Hitler violated the agreement almost immediately by arresting priests and banning Catholic youth groups—provoking Pope Pius XI's 1937 encyclical Mit Brennender Sorge—the concordat successfully eliminated organized political Catholicism in 1933. As an official diplomatic photograph, Source B documents the regime's early tactic of using formal legal treaties to divide and disarm traditional institutions. Together, Sources A and B are exceptionally useful because Source A demonstrates violent physical terror through the SS concentration camp system, while Source B reveals political-religious diplomacy used to co-opt major national institutions.",
+            "model": "Source A is useful for an enquiry into police state methods because it records Himmler's official announcement of Dachau concentration camp in March 1933, stating it would hold 5,000 communist and socialist political prisoners. From my knowledge, Dachau was the first camp built to isolate left-wing opponents and intimidate the public. As an official press release, it shows how openly the regime publicized concentration camps as a deterrent against resistance.<br><br>Source B is useful because it is a Gestapo interrogation dossier documenting an ordinary citizen denounced by a neighbor for telling an anti-Hitler joke. Contextually, the Gestapo relied on voluntary public denunciations to police society, generating widespread fear. As a secret internal police file, it provides highly reliable, unfiltered evidence of surveillance methods. However, it does not reveal the wider role of the SS or People's Court. Overall, both sources are very useful for showing how state terror and public denunciations enforced obedience.",
             "scaffolding": {
               "acronym": "Two-Source Utility Framework",
               "acronym_title": "Section B: Question 3(a) • Utility of Sources A & B [8 Marks • 12 Mins]",
@@ -12197,7 +12197,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source A for an enquiry into the establishment of the concentration camp system and SS control under Heinrich Himmler in 1933?",
-          "model_answer": "<p>Source A is highly useful because Himmler openly justifies the establishment of Dachau before the press as a necessary measure to detain political rivals without trial in the name of *\"state security.\"* As a public statement by the head of the Bavarian police and SS, it illustrates how early terror was normalized under the guise of public safety, although it tactfully hid the horrific torture and brutal murders that were already taking place behind the barbed wire.</p>",
+          "model_answer": "Himmler's announcement of Dachau demonstrates that early concentration camps were openly publicized to terrify the public and neutralize political opposition.",
           "teacher_notes": {
             "source_context": "In March 1933, Heinrich Himmler established Dachau outside Munich, placing it under SS administration to detain political prisoners without trial under protective custody (*Schutzhaft*). **Hinge Question:** How did Heinrich Himmler publicly justify the creation of concentration camps like Dachau in early 1933?"
           },
@@ -12220,7 +12220,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source B for an enquiry into the methods used by the Gestapo to enforce obedience and eliminate dissent in Nazi Germany?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source B is extremely useful because it exposes the practical mechanics of everyday policing and civilian surveillance under the Third Reich. It demonstrates that the Gestapo's terror apparatus did not depend on ubiquitous secret agents, but was activated by ordinary citizens voluntarily denouncing their neighbours over minor non-conformities, such as failing to fly the swastika flag or grumbling about butter shortages. Contextually, the document illustrates the arbitrary power of \"protective custody\" (<em>Schutzhaft</em>), which allowed the Gestapo to bypass judicial courts and send suspects indefinitely to concentration camps without formal trial, creating an atmosphere of pervasive paranoia.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further elevated by the source's provenance as an internal, classified Gestapo bureaucratic case file compiled for administrative record-keeping rather than public propaganda. The officer had no motive to distort the procedure, making its description of denunciations and administrative imprisonment exceptionally authentic. However, the source's utility is limited because it represents a localized case in Düsseldorf involving low-level economic discontent; it does not illuminate how the Gestapo operated against sophisticated underground political networks, such as communist resistance cells or religious dissidents, where advanced surveillance, torture, and intercepted communications were deployed.</p>",
+          "model_answer": "The Gestapo file shows that ordinary civilian denunciations, rather than massive secret police numbers, were the primary driver of everyday surveillance.",
           "teacher_notes": {
             "source_context": "Contrary to post-war mythology of an omnipresent spy on every corner, the Gestapo was a tiny bureaucracy with fewer than 30,000 officers that relied primarily on voluntary denunciations by ordinary citizens settling personal grudges. **Hinge Question:** Why did the willingness of ordinary citizens to denounce their neighbours prove far more potent in sustaining the Nazi terror apparatus than the actual manpower of the Gestapo?"
           }
@@ -12242,7 +12242,7 @@ export default {
           "question_badge": "Cross-Referencing",
           "question_type": "Cross-Referencing",
           "enquiry_question": "How does Source C support the view that the legal system in Nazi Germany was entirely subordinated to totalitarian political control?",
-          "model_answer": "Source C directly supports the view that the legal system was subordinated to totalitarian control by revealing how the regime dismantled judicial independence. Article 2 institutionalized political control by packing the bench with SS and SA party assessors alongside handpicked judges appointed directly by Hitler. Furthermore, Article 3 stripped defendants of fundamental legal protections: trials had no juries, appeals were legally forbidden, and defendants could only select counsel approved by the court itself, ensuring that trials functioned as theatrical political condemnations rather than impartial legal hearings.",
+          "model_answer": "The People's Court law abolished independent trials, ensuring that political dissenters were tried by fanatical Nazi judges with no right of appeal.",
           "teacher_notes": {
             "source_context": "Enraged by the traditional Supreme Court's acquittal of three communist leaders in the Reichstag fire trial, Hitler established the People's Court with fanatical Nazi assessors, where death sentences became standard for political dissent. **Hinge Question:** Why did Hitler insist on creating a parallel political court system rather than relying exclusively on the existing German judiciary?"
           }
@@ -12264,7 +12264,7 @@ export default {
           "question_badge": "Author’s Purpose",
           "question_type": "Author’s Purpose",
           "enquiry_question": "What was the primary purpose of Pope Pius XI in issuing and clandestinely distributing 'Mit Brennender Sorge' across Germany in March 1937?",
-          "model_answer": "Pope Pius XI's primary purpose was to embolden Germany's 20 million Roman Catholics against the regime's ideological encroachment and publicly condemn Hitler for betraying the 1933 Concordat. By deliberately phrasing the encyclical in German rather than traditional ecclesiastical Latin and smuggling copies across dioceses to bypass Gestapo censors, the Pope aimed to refute the false Nazi doctrine of racial idolatry and protect Catholic schools and youth associations from compulsory Nazification, while defending the Church's moral authority without directly demanding the armed overthrow of the state.",
+          "model_answer": "Pope Pius XI's encyclical *Mit brennender Sorge* publicly condemned the Nazi regime for violating the 1933 Concordat and promoting idolatrous racial paganism.",
           "teacher_notes": {
             "source_context": "After Hitler repeatedly violated the 1933 Concordat by shutting Catholic youth groups and arresting priests on fabricated currency and immorality charges, Pope Pius XI issued this scathing encyclical, sparking ferocious Gestapo retaliation. **Hinge Question:** Why did the Catholic Church issue a public theological condemnation of Nazi racial idolatry yet avoid directly calling for political rebellion against Hitler?"
           }
@@ -12286,7 +12286,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source E for an enquiry into the nature and limits of Protestant religious opposition to the Nazi regime in the 1930s?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source E is highly useful because it illustrates the precise ideological battle lines drawn by dissident Protestant pastors against Nazi Gleichschaltung. Points 1 and 2 explicitly repudiate the totalitarian state's claim to absolute authority over human conscience, rejecting Ludwig Müller's Nazi-dominated \"German Christians\" (<em>Deutsche Christen</em>) who sought to merge Christian theology with Aryan racial purity. Contextually, the declaration led directly to the formation of the Confessing Church (<em>Bekennende Kirche</em>), rallying over 6,000 pastors led by Martin Niemöller to defend church autonomy against state co-ordination.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further strengthened by its provenance as the foundational doctrinal manifesto ratified by 139 Protestant delegates at the Barmen Synod, representing authentic, courageous institutional defiance in May 1934. However, the source's utility is crucially limited in revealing the boundaries of religious protest: the declaration was an internal theological protest defending doctrinal purity against state control, not a political defense of democracy or persecuted minorities. The Confessing Church pastors did not condemn the destruction of the trade unions, the concentration camps, or the persecution of the Jewish population, and many maintained traditional conservative patriotism, demonstrating the strictly confined scope of Protestant resistance.</p>",
+          "model_answer": "The Barmen Declaration shows the Confessing Church rejecting Nazi control and opposing the state-backed 'German Christians' who tried to Nazify Protestant theology.",
           "teacher_notes": {
             "source_context": "Formed in reaction to Ludwig Müller's Nazi-controlled \"German Christians\" who attempted to remove the Old Testament and exclude baptized Jews, the Confessing Church asserted that the Church answered only to Christ, not the totalitarian Führer. **Hinge Question:** Why was the Confessing Church able to resist Nazi control over church doctrine without actively challenging the regime's political atrocities or anti-Semitism?"
           }
@@ -12395,43 +12395,43 @@ export default {
         "instructions": "Answer these questions in full sentences from prior learning.",
         "items": [
           {
-            "question": "Who was appointed Reichsführer-SS and Chief of the German Police in the 1930s? (Last Lesson)",
+            "question": "Who was appointed Reichsführer-SS and Chief of the German Police in the 1930s?",
             "answer": "Heinrich Himmler."
           },
           {
-            "question": "What was the Gestapo and what was its primary role in Nazi Germany? (Last Lesson)",
+            "question": "What was the Gestapo and what was its primary role in Nazi Germany?",
             "answer": "The Secret State Police (Geheime Staatspolizei), responsible for rooting out political dissent and enemies of the state."
           },
           {
-            "question": "Where was the first Nazi concentration camp opened in March 1933 for political prisoners? (Last Lesson)",
+            "question": "Where was the first Nazi concentration camp opened in March 1933 for political prisoners?",
             "answer": "Dachau, near Munich."
           },
           {
-            "question": "What special court was set up in 1934 to try political treason cases without juries? (Last Lesson)",
+            "question": "What special court was set up in 1934 to try political treason cases without juries?",
             "answer": "The People's Court (Volksgerichtshof)."
           },
           {
-            "question": "What agreement did Hitler sign with the Vatican in July 1933? (Last Lesson)",
+            "question": "What agreement did Hitler sign with the Vatican in July 1933?",
             "answer": "The Concordat (Reichskonkordat), promising religious freedom for Catholics in return for political neutrality."
           },
           {
-            "question": "Which Protestant pastor led the Confessing Church in opposition to the Nazi Reich Church? (Last Lesson)",
+            "question": "Which Protestant pastor led the Confessing Church in opposition to the Nazi Reich Church?",
             "answer": "Pastor Martin Niemöller."
           },
           {
-            "question": "What law gave Hitler dictatorial powers to enact laws without the Reichstag in March 1933? (Last Week)",
+            "question": "What law gave Hitler dictatorial powers to enact laws without the Reichstag in March 1933?",
             "answer": "The Enabling Act."
           },
           {
-            "question": "What violent purge took place in June 1934 against Ernst Röhm and the SA? (Last Week)",
+            "question": "What violent purge took place in June 1934 against Ernst Röhm and the SA?",
             "answer": "The Night of the Long Knives."
           },
           {
-            "question": "What paramilitary group, nicknamed the 'Brownshirts' and led by Ernst Röhm, protected Nazi meetings and attacked opponents? (Prior Topic)",
+            "question": "What paramilitary group, nicknamed the 'Brownshirts' and led by Ernst Röhm, protected Nazi meetings and attacked opponents?",
             "answer": "The SA (Sturmabteilung / Stormtroopers)."
           },
           {
-            "question": "How did the 1923 hyperinflation crisis affect Germany's middle classes? (Prior Topic)",
+            "question": "How did the 1923 hyperinflation crisis affect Germany's middle classes?",
             "answer": "It wiped out their life savings, bank deposits, and war pensions, permanently alienating them from the Weimar democracy."
           }
         ]
@@ -13017,7 +13017,7 @@ export default {
             "type": "utility_comp_4m",
             "question": "Part 1: Content & Provenance (COP) Comparative Analysis for Sources B & C.",
             "prompt": "Compare what Sources B and C reveal about Nazi methods of controlling and projecting public attitudes, and evaluate how their contrasting provenances affect their usefulness.",
-            "model": "Source B reveals the domestic use of monumental, choreographed spectacles to demand total visual conformity and elevate the Hitler Cult, using Speer's 'Cathedral of Light' to evoke religious awe. In contrast, Source C reveals how an international propaganda event—the 1936 Berlin Olympics—designed to showcase Aryan racial supremacy was visibly undermined when African American athlete Jesse Owens won gold before a German crowd. While Source B is an official domestic party propaganda photograph demonstrating totalitarian control over German citizens, Source C is an international press photograph capturing an unscripted sports triumph that challenged Nazi racial ideology. Together, they demonstrate the contrast between tightly controlled domestic rallies and the volatile reality of global spectacles.",
+            "model": "<strong>Content:</strong> Source B illustrates how cheap radios (the *Volksempfänger*) were mass-produced to bring Nazi propaganda directly into living rooms, while Source C describes the intense emotional power of mass rallies.<br><br><strong>Provenance:</strong> Source B is an official commercial artifact promoting cheap technology, whereas Source C is an American journalist's critical eyewitness account of crowd hypnosis in Nuremberg.",
             "scaffolding": {
               "acronym": "Comparative Analysis Framework",
               "acronym_title": "Content & Provenance Comparison [4 Marks • 6 Mins]",
@@ -13040,7 +13040,7 @@ export default {
             "type": "utility_8m",
             "question": "How useful are Sources B and C for an enquiry into Nazi methods of controlling and influencing attitudes in the years 1933–1939?",
             "prompt": "Evaluate both sources using Content, Contextual Knowledge (Goebbels, Nuremberg Rallies, Albert Speer, Berlin Olympics, Jesse Owens), and Provenance.",
-            "model": "Source B is exceptionally useful for an enquiry into Nazi methods of influencing attitudes because its content demonstrates how the regime used colossal, theatrical rallies to overwhelm individuality and foster fanatical devotion to Hitler. The photograph captures the Nuremberg Party Rally at the Zeppelin Field, where hundreds of thousands of uniformed stormtroopers and party officials stood in rigid geometric formations beneath Albert Speer's 'Cathedral of Light'—formed by 152 anti-aircraft searchlights shining 25,000 feet into the night sky. From my own knowledge, Joseph Goebbels and the RMVP used these annual September rallies to cultivate the 'Hitler Cult' (Führerkult), presenting Hitler as an infallible, godlike leader who restored national order. Leni Riefenstahl's film Triumph of the Will broadcast these images across the nation's cinemas, making citizens feel like small parts of a mighty, unified racial community. As an official propaganda photograph documenting the centerpiece of Nazi public pageantry, Source B provides direct evidence of how emotional mass psychology was engineered.<br><br>Source C is equally useful because it illustrates the regime's efforts to influence international attitudes through modern sporting spectacles, while simultaneously exposing the limits of its propaganda. The photograph shows African American track star Jesse Owens standing proudly atop the Olympic podium in Berlin in August 1936, having won the long jump ahead of Germany's Luz Long. From my own knowledge, Goebbels invested heavily in the 1936 Berlin Olympics, building a 100,000-seat stadium and pioneering live television broadcasts to present Nazi Germany as a modern, peaceful, and technologically advanced society, even temporarily removing anti-Semitic signs and halting street violence to deceive foreign tourists. However, Owens' historic haul of four gold medals completely contradicted Hitler's core ideological claims of Aryan racial supremacy, proving that international events could not be completely scripted. As an authentic contemporary sports photograph taken at the stadium, Source C provides valuable objective evidence of this ideological embarrassment. Overall, Sources B and C together are highly useful: Source B reveals the flawless domestic staging of totalitarian conformity, while Source C demonstrates how international propaganda was complicated by genuine athletic reality.",
+            "model": "Source B is useful for an enquiry into propaganda methods because it shows the *Volksempfänger* (People's Receiver), an affordable radio manufactured to broadcast Hitler's speeches into every household. From my knowledge, Joseph Goebbels ensured radios had short wavelengths so Germans could not listen to foreign broadcasts like the BBC, increasing radio ownership to 70% by 1939. As an authentic material artifact, it provides physical evidence of technological indoctrination.<br><br>Source C is useful because American journalist William Shirer describes the 1934 Nuremberg Rally, capturing the theatrical manipulation of searchlights, banners, and synchronized marching to create religious devotion to Hitler. As an independent foreign eyewitness, Shirer had no motive to produce Nazi propaganda, giving an objective record of psychological conditioning. However, neither source shows newspaper censorship or cinema films like *Triumph of the Will*. Overall, both sources are highly useful for showing technological and theatrical propaganda.",
             "scaffolding": {
               "acronym": "Two-Source Utility Framework",
               "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
@@ -13321,7 +13321,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source A for an enquiry into the methods and ideological objectives of Joseph Goebbels and the Propaganda Ministry in 1933?",
-          "model_answer": "<p>Source A is exceptionally useful because Goebbels explicitly states the totalitarian purpose of Nazi propaganda: not merely passive tolerance, but active emotional surrender and mental mobilization until the people and the regime are *\"one single unity.\"* As an official statement by the Propaganda Minister, it demonstrates the regime’s ambition to control all public communication, although it presents an idealized picture of ideological harmony that concealed widespread private grumbling and state censorship.</p>",
+          "model_answer": "Goebbels explains that the Propaganda Ministry aimed to unite the entire German population behind Hitler's policies through total control of culture.",
           "teacher_notes": {
             "source_context": "In March 1933, Hitler appointed Joseph Goebbels to head the newly created Ministry for Public Enlightenment and Propaganda, controlling press, radio, cinema, theatre, music, and art. **Hinge Question:** What did Goebbels mean by stating that the whole people must become \"one single unity\" with the government?"
           },
@@ -13344,7 +13344,7 @@ export default {
           "question_badge": "Source Inference",
           "question_type": "Source Inference",
           "enquiry_question": "Give two things you can infer from Source B about how the Nazi regime designed and distributed radio technology to influence the German public.",
-          "model_answer": "<ul style=\"margin: 0; padding-left: 18px; line-height: 1.6; color: #1e293b;\"><li style=\"margin-bottom: 8px;\"><strong>Inference 1:</strong> Radios were deliberately engineered as standardized, utilitarian consumer goods accessible to working-class households.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> The set has a simple molded Bakelite brown casing with only two control knobs and a circular speaker, reflecting cheap mass production designed to make receivers affordable across society.</li><li><strong>Inference 2:</strong> State and party ideology was stamped directly into the everyday material fabric of the household device.<br><span style=\"color: #047857; font-weight: 600;\">Detail from source:</span> The front tuning panel features the official Reich eagle emblem holding a swastika between the control dials, reminding the listener of party control whenever the radio was switched on.</li></ul>",
+          "model_answer": "The Volksempfänger brought state propaganda directly into millions of homes at an affordable price, with short-range tuning preventing foreign radio listening.",
           "teacher_notes": {
             "source_context": "Priced at just 76 Reichsmarks (roughly half the price of ordinary radios) and designed with limited shortwave range to block foreign broadcasts, the Volksempfänger brought Hitler's speeches directly into over 7 million German living rooms by 1939. **Hinge Question:** Why did Joseph Goebbels describe radio as the \"eighth great power\" and prioritize subsidising cheap receivers above all other media?"
           },
@@ -13367,7 +13367,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source C for an enquiry into the psychological appeal and effectiveness of Nazi mass rallies in the 1930s?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source C is exceptionally useful because it provides an astute contemporary analysis of the psychological mechanisms underpinning Nazi mass spectacle. Shirer observes that the rallies succeeded not through logical persuasion, but by tapping into a quasi-religious desire for redemption following the trauma of the 1918 defeat and the Great Depression. His description of Speer's \"cathedral of light\" and the acoustic hypnosis created by 100,000 voices chanting in unison corroborates how the regime deliberately overwhelmed individual critical reason to produce collective hysteria and unconditional obedience.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further elevated by the source's provenance as the private diary of an experienced, politically independent American foreign correspondent living in Berlin. Unlike official Nazi newsreels directed by Leni Riefenstahl, Shirer had no obligation to glorify Hitler, and his admission that even an outsider felt the \"magnetic pull of the herd\" testifies to the genuine sensory power of the staging. However, its utility must be qualified by recognising that Shirer was observing a handpicked audience of fanatical party loyalists assembled in Nuremberg; his impressions cannot be generalised to prove that all ordinary Germans, particularly sceptical industrial workers or religious dissenters listening on the radio at home, shared this uncritical adulation.</p>",
+          "model_answer": "Shirer's diary captures how Nuremberg rallies created quasi-religious fanaticism, using massive parades and spotlights to overwhelm individual critical thought.",
           "teacher_notes": {
             "source_context": "Staged annually each September at Albert Speer's colossal stadium complex, the Nuremberg Rallies brought together over 500,000 participants in highly choreographed displays of military power, torchlight processions, and emotional veneration of the Führer. **Hinge Question:** To what extent were Nazi mass rallies designed to intimidate domestic and foreign observers rather than merely entertain party loyalists?"
           }
@@ -13388,7 +13388,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source D for an enquiry into how the 1936 Berlin Olympic Games were used by the Nazi regime as an international propaganda showcase?",
-          "model_answer": "<p>Source D is highly useful because an American correspondent explains how the regime deliberately sanitized Berlin—removing anti-Semitic signs and hiding *Der Stürmer*—to dazzle foreign visitors with athletic grandeur and efficiency. As an independent eyewitness report, it astutely unmasks the contrast between the friendly public facade and the continuing reality of the police state, showing how the Olympics were exploited to gain international respectability.</p>",
+          "model_answer": "The report reveals how strict Reich Press Chamber guidelines dictated exact headlines and banned independent journalism, ensuring uniform pro-Nazi news.",
           "teacher_notes": {
             "source_context": "In August 1936, Nazi Germany hosted the Summer Olympics in Berlin, utilizing the spectacle to showcase national rejuvenation and deceive international visitors, while African-American Jesse Owens won four gold medals. **Hinge Question:** Why did the Nazi regime temporarily moderate its anti-Semitic street signs during the 1936 Berlin Olympics?"
           },
@@ -13411,7 +13411,7 @@ export default {
           "question_badge": "Cultural Censorship & Ideology",
           "question_type": "Cultural Censorship & Ideology",
           "enquiry_question": "How does Source E reflect the ideological principles and racial prejudices underlying Nazi cultural policy in the 1930s?",
-          "model_answer": "Source E reflects the core Nazi ideological principle that art, music, and culture were direct biological expressions of racial purity that required aggressive state censorship. By caricaturing an African American jazz saxophonist wearing a Star of David button on his lapel, the poster synthesizes anti-Black racism with virulent anti-Semitism, branding swing and jazz as \"Judeo-Bolshevik decadence\" designed to corrupt German youth. It proves that Goebbels' cultural policy was not simply about promoting traditional art, but about actively purging any modernist, cosmopolitan, or international cultural expressions that contradicted the regime's totalitarian Aryan racial mythology.",
+          "model_answer": "The 'Degenerate Music' exhibition poster demonstrates how the regime banned jazz and modern music, labeling cultural diversity as racial poisoning.",
           "teacher_notes": {
             "source_context": "Following the notorious 1937 'Degenerate Art' exhibition in Munich, Goebbels and the Reich Chamber of Music mounted the 'Degenerate Music' exhibition in Düsseldorf to denounce jazz, atonal music, and Jewish composers like Mendelssohn and Mahler as racial poison. **Hinge Question:** Why did the Nazi regime expend so much state energy persecuting modernist painters and jazz musicians when economic and military rearmament were underway?"
           },
@@ -13523,43 +13523,43 @@ export default {
         "instructions": "Answer these questions in full sentences from prior learning.",
         "items": [
           {
-            "question": "Who was the Minister of Public Enlightenment and Propaganda in Nazi Germany? (Last Lesson)",
+            "question": "Who was the Minister of Public Enlightenment and Propaganda in Nazi Germany?",
             "answer": "Dr Joseph Goebbels."
           },
           {
-            "question": "What cheap, standardized radio was mass-produced to broadcast Nazi propaganda into homes? (Last Lesson)",
+            "question": "What cheap, standardized radio was mass-produced to broadcast Nazi propaganda into homes?",
             "answer": "The Volksempfänger VE301 (People's Receiver)."
           },
           {
-            "question": "Where did the Nazi Party hold its colossal annual propaganda rallies in September? (Last Lesson)",
+            "question": "Where did the Nazi Party hold its colossal annual propaganda rallies in September?",
             "answer": "Nuremberg (at the Zeppelin Field complex designed by Albert Speer)."
           },
           {
-            "question": "Which African American athlete won four gold medals at the 1936 Berlin Olympics? (Last Lesson)",
+            "question": "Which African American athlete won four gold medals at the 1936 Berlin Olympics?",
             "answer": "Jesse Owens."
           },
           {
-            "question": "What term did the Nazis apply to modern art and jazz that they banned and purged? (Last Lesson)",
+            "question": "What term did the Nazis apply to modern art and jazz that they banned and purged?",
             "answer": "'Degenerate Art' (Entartete Kunst) and 'Degenerate Music' (Entartete Musik)."
           },
           {
-            "question": "What was the secret state police force led by Reinhard Heydrich and Heinrich Himmler? (Last Week)",
+            "question": "What was the secret state police force led by Reinhard Heydrich and Heinrich Himmler?",
             "answer": "The Gestapo (Geheime Staatspolizei)."
           },
           {
-            "question": "What was the name of the Protestant group led by Martin Niemöller that opposed the Nazi Reich Church? (Last Week)",
+            "question": "What was the name of the Protestant group led by Martin Niemöller that opposed the Nazi Reich Church?",
             "answer": "The Confessing Church (Bekennende Kirche)."
           },
           {
-            "question": "What was the legal decree passed after the February 1933 fire that suspended civil liberties? (Prior Topic)",
+            "question": "What was the legal decree passed after the February 1933 fire that suspended civil liberties?",
             "answer": "The Reichstag Fire Emergency Decree."
           },
           {
-            "question": "What major financial pact in 1929 reduced German reparations to £2 billion and extended payment over 59 years? (Prior Topic)",
+            "question": "What major financial pact in 1929 reduced German reparations to £2 billion and extended payment over 59 years?",
             "answer": "The Young Plan."
           },
           {
-            "question": "In what city was the 1919 constitution for the new German democratic republic drafted and approved? (Prior Topic)",
+            "question": "In what city was the 1919 constitution for the new German democratic republic drafted and approved?",
             "answer": "Weimar (giving the republic its popular historical name)."
           }
         ]
@@ -14152,7 +14152,7 @@ export default {
             "type": "4-mark",
             "question": "Study Interpretations 1 and 2. They give different views about religious opposition to the Nazi regime. What is the main difference between these views?",
             "prompt": "Explain the main difference between the two interpretations, quoting details from both to support your answer.",
-            "model": "The main difference between the two interpretations is whether the Christian churches offered effective, principled resistance that successfully blocked totalitarian Nazification, or whether their opposition was timid, narrow, and marked by overwhelming conformity. Interpretation 1 argues that the churches 'were largely successful in resisting the Nazi regime's attempts to achieve total control' and that institutions like the Confessing Church 'successfully defended theological independence', proving religion was a 'powerful barrier'. In contrast, Interpretation 2 contends that church opposition 'was extremely limited, narrow, and ultimately failed to challenge the wider atrocities', arguing that the majority of leaders conformed out of anti-communism and 'remained entirely silent during the persecution of minorities and the destruction of democracy.'",
+            "model": "One key difference is that Interpretation 1 argues that religious opposition to the Nazis was widespread, heroic, and organized through institutions like the Confessing Church. In contrast, Interpretation 2 suggests religious opposition was timid, fragmented, and mostly limited to defending church autonomy rather than defending Jewish victims or overthrowing the regime.",
             "scaffolding": {
               "acronym": "Difference + Quotes Formula (AO4)",
               "acronym_title": "Historiographical Comparison [4 Marks • 6 Mins]",
@@ -14182,7 +14182,7 @@ export default {
             "question": "How far do you agree with Interpretation 2 about religious opposition to the Nazi regime? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Interpretation 2 argues that Christian opposition to the Nazi regime was narrow, institutional, and largely compliant, failing to resist the wider moral atrocities of the totalitarian state. There is compelling historical evidence to support this critical perspective. When Hitler assumed power in 1933, both major Christian denominations sought accommodation rather than confrontation. The Catholic Church signed the Reichskonkordat in July 1933, agreeing to withdraw Catholic priests from political life and dissolve the Catholic Centre Party in exchange for institutional protections. Similarly, millions of Protestants welcomed the regime as a bulwark against godless Marxism, and many joined the pro-Nazi 'German Christians' (Deutsche Christen) led by Ludwig Müller, who placed swastikas on church altars and praised Hitler as a divine savior. Crucially, when church leaders did protest, their objections were almost exclusively institutional—such as resisting the removal of crucifixes from classrooms or defending Church budgets. With few exceptions, church hierarchies remained conspicuously silent during the destruction of trade unions, the introduction of the 1935 Nuremberg Laws, and the violent pogrom of Kristallnacht in November 1938, demonstrating that most clergy prioritized self-preservation over moral solidarity with persecuted minorities.<br><br>On the other hand, Interpretation 1 offers a persuasive counter-argument by emphasizing that brave religious leaders and ordinary believers mounted significant, principled resistance that successfully prevented the regime from achieving total spiritual control. Contextual knowledge confirms that when Ludwig Müller attempted to subvert Protestant theology, Pastor Martin Niemöller and Dietrich Bonhoeffer formed the Pastors' Emergency League, which grew into the Confessing Church with over 6,000 pastors adhering to the 1934 Barmen Declaration. Niemöller openly defied state control, declaring 'we must obey God rather than man', resulting in his arrest and eight years of imprisonment in Sachsenhausen and Dachau. In the Catholic Church, Pope Pius XI smuggled the encyclical Mit Brennender Sorge ('With Burning Concern') into Germany in March 1937, which was read from every Catholic pulpit condemning Nazi racial idolatry. Furthermore, Bishop Clemens August Graf von Galen ('The Lion of Münster') openly denounced Gestapo brutality and the seizure of Church property, commanding such widespread popular loyalty that Hitler dared not execute him during the war. These courageous acts demonstrate that religious conviction was one of the few institutional forces capable of openly defying totalitarian authority.<br><br>In conclusion, I agree with Interpretation 2 to a large extent. While Interpretation 1 correctly highlights the extraordinary personal heroism of figures like Niemöller, Bonhoeffer, and Galen who defended their faith at immense personal cost, their resistance remained institutional rather than political. The vast majority of the 40 million Protestants and 22 million Catholics conformed to Nazi rule, paid their church taxes, and supported Hitler's foreign and economic policies. Because the mainstream churches fought to protect their own administrative independence rather than organizing active resistance against the regime's murderous racial dictatorship, Interpretation 2 provides a more accurate historical assessment of the overall role of the churches in Nazi Germany.",
+            "model": "Interpretation 1 emphasizes that Christian churches mounted courageous resistance to Nazi totalitarianism. Notable figures like Protestant pastor Martin Niemöller and Dietrich Bonhoeffer established the Confessing Church in 1934, with over 6,000 pastors refusing to join the state-backed 'German Christians'. Furthermore, Catholic Bishop Galen gave fiery sermons in 1941 exposing the secret T4 euthanasia programme, which forced Hitler to suspend public killings. These actions prove that individuals took immense moral risks to defy Nazi policies.<br><br>On the other hand, Interpretation 2 provides a more realistic assessment: church leaders largely cooperated with the regime to protect their own privileges. In 1933, the Catholic Church signed the Reichskonkordat with Hitler, agreeing that priests would stay out of politics in return for protected Catholic schools. When the regime began persecuting Jews, passing the Nuremberg Laws, and launching *Kristallnacht*, church hierarchies remained largely silent, offering no collective protest.<br><br>Furthermore, the vast majority of German Christians complied with the state, welcoming Hitler’s anti-communism and restoration of national pride, meaning active religious opposition remained an exceptional minority.<br><br>In conclusion, I agree with Interpretation 2 to a greater extent. While brave individuals like Bonhoeffer and Galen resisted, both the Catholic and Protestant leadership chose institutional self-preservation over moral confrontation, failing to offer broad resistance.",
             "scaffolding": {
               "acronym": "Interpretation Verdict Framework (AO4)",
               "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
@@ -14467,7 +14467,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source A for an enquiry into the reasons why open working-class resistance to the Nazi regime remained limited between 1933 and 1939?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source A is exceptionally useful because it penetrates beneath the regime's propaganda facade of a joyful \"People's Community\" (<em>Volksgemeinschaft</em>), revealing widespread grumbling among factory workers over wage freezes, compulsory DAF deductions, and falling living standards. Crucially, it explains why this economic anger never transformed into active revolt: the total destruction of trade unions in May 1933 and the omnipresence of workplace informers left workers isolated and terrified, knowing that any strike meant immediate arrest by the Gestapo and dispatch to a concentration camp.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is greatly elevated by the source's provenance as a clandestine intelligence report compiled by the exiled SPD (Sopade) based on authentic reports from trusted shop-floor couriers. Unlike foreign tourists or Nazi officials, these socialist contacts had direct, intimate access to working-class sentiments. However, an historian must account for the SPD's political motive: the exiled leaders in Prague were eager to find evidence of lingering socialist loyalty among the proletariat. While the report accurately captures widespread economic dissatisfaction, it may understate the extent to which other segments of the working class genuinely supported Hitler due to the elimination of mass unemployment and his popular foreign policy successes.",
+          "model_answer": "The underground Sopade report documents persistent working-class resistance, showing trade unionists secretly distributing anti-Nazi newsletters in factory districts.",
           "teacher_notes": {
             "source_context": "Smuggled across the Czech border to the exiled SPD leadership, the Sopade reports provided the most comprehensive, realistic intelligence on the mood of ordinary German workers, recording quiet resentment tempered by paralyzing fear of the Gestapo. **Hinge Question:** Why did widespread economic grumbling and workplace dissatisfaction rarely translate into active political resistance against Hitler's dictatorship?"
           }
@@ -14489,7 +14489,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source B for an enquiry into the methods used by underground political opponents to circulate anti-Nazi material between 1933 and 1939?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source B is exceptionally useful because it provides direct physical evidence of the ingenious clandestine methods required to bypass totalitarian censorship after the Reichstag Fire Decree suspended privacy of mail and freedom of the press. Contextually, following the outlawing of the KPD and SPD in 1933, socialist couriers smuggled millions of miniature anti-Nazi pamphlets across the Czech and Swiss frontiers disguised as popular fiction, seed catalogues, or classical academic texts like Reclam's Universal-Bibliothek. Once inside Germany, these booklets were circulated secretly in factory washrooms and railway stations to sustain underground worker solidarity.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is elevated because this is an authentic surviving primary artifact from 1935 preserved in the Reclam-Museum. Its visual design demonstrates the extreme danger faced by dissidents: the cover had to be indistinguishable from a legitimate publication so that an ordinary citizen or courier caught carrying it could claim ignorance during a snap Gestapo inspection. However, the source's utility is focused specifically on underground propaganda; it does not demonstrate how many German workers were persuaded to risk their lives by reading it, nor could written leaflets overthrow a heavily armed police state.</p>",
+          "model_answer": "The camouflaged leaflet demonstrates the dangerous methods used by underground socialists, disguising anti-regime propaganda as innocent shampoo adverts.",
           "teacher_notes": {
             "source_context": "Following the suspension of civil liberties and total ban on opposition parties in 1933, socialist and communist couriers smuggled millions of tiny anti-fascist booklets across the border, disguised as innocent literary classics, cooking guides, or seed packets to evade Gestapo searches. **Hinge Question:** Why did underground political resisters invest immense resources into producing camouflaged literature when possession of such booklets carried the death penalty or concentration camp internment?"
           },
@@ -14512,7 +14512,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source C for an enquiry into the nature and threat posed by the Edelweiss Pirates to Nazi control in the late 1930s?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source C is extremely useful because it details the specific methods and cultural symbols of youth non-conformity that challenged Nazi totalitarian control. The report documents how working-class teenagers rejected compulsory Hitler Youth regimentation, adopting distinct counter-cultural attire (checked shirts and edelweiss lapel pins) and carrying guitars to mock state discipline. Contextually, the document proves that the Pirates were not merely passive dropouts, but actively engaged in physical street brawls with Hitler Youth patrols and scrawled subversive graffiti, demonstrating localized resistance to ideological coordination (<em>Gleichschaltung</em>).</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is further strengthened by the source's provenance as an internal, classified Gestapo intelligence dossier compiled for state security officials. Because the report was meant for internal police analysis rather than public propaganda, the detective had every reason to provide an accurate description of the Pirates' numbers, dress, and hostility. However, the source is limited in assessing the broader threat to Hitler's regime: the Gestapo officer exaggerates the political danger of the Pirates, who, while rebellious and defiant of local authorities, possessed no coherent political ideology, centralized leadership, or plan to overthrow the Nazi state.</p>",
+          "model_answer": "The Gestapo report reveals growing official concern over youth rebellion, noting the Edelweiss Pirates refused to join the Hitler Youth and beat up Nazi officials.",
           "teacher_notes": {
             "source_context": "Emerging in working-class industrial cities like Cologne, Essen, and Düsseldorf, the Edelweiss Pirates rejected the militarism of the Hitler Youth, using street brawls and anti-Nazi graffiti to express generational defiance. **Hinge Question:** Why did the Nazi regime view teenage subcultures like the Edelweiss Pirates as dangerous political threats rather than harmless juvenile rebellion?"
           }
@@ -14534,7 +14534,7 @@ export default {
           "question_badge": "Author’s Purpose",
           "question_type": "Author’s Purpose",
           "enquiry_question": "What was the purpose of the SS Security Service (SD) in compiling detailed surveillance reports on the musical tastes and social gatherings of the Swing Youth?",
-          "model_answer": "The primary purpose of the SD was to document and categorize what Nazi ideologues viewed as dangerous cultural subversion among the future ruling class of Germany. By detailing their obsession with \"degenerate\" American jazz, English dress, and refusal to participate in the Winter Relief charity, the report aimed to alert Heinrich Himmler and Reinhard Heydrich to an ideological infection that could not be solved by ordinary school discipline, paving the way for the Gestapo to shut down jazz clubs and deport repeat offenders to youth concentration camps (such as Moringen) for compulsory re-education.",
+          "model_answer": "The SD report shows that while passive grumbling over food shortages was widespread, it rarely developed into organized political resistance against the state.",
           "teacher_notes": {
             "source_context": "Unlike the working-class Edelweiss Pirates, the Swing Youth were wealthy, middle-class teenagers in cities like Hamburg, Berlin, and Frankfurt who expressed defiance through prohibited American jazz, English fashions, and uninhibited dancing. **Hinge Question:** How did the social background and methods of the Swing Youth differ from those of the working-class Edelweiss Pirates?"
           }
@@ -14556,7 +14556,7 @@ export default {
           "question_badge": "Reliability & Provenance",
           "question_type": "Reliability & Provenance",
           "enquiry_question": "How does the background and career of Dietrich Bonhoeffer assist an historian investigating the ethical dilemmas faced by Christian opponents of the Third Reich?",
-          "model_answer": "Bonhoeffer's background as a leading Protestant theologian who moved from academic pacifism to underground conspiracy provides profound insight into the moral agony of Christian resistance. As the founder of the illegal Finkenwalde seminary, his writings reveal the intense struggle to reconcile the Christian duty of obedience to worldly rulers (Romans 13) with the moral imperative to destroy an evil regime. His eventual recruitment into Admiral Canaris' military intelligence (Abwehr) conspiracy to assassinate Hitler proves that the most principled religious resisters ultimately concluded that peaceful protest was futile and that tyrannicide was a religious necessity.",
+          "model_answer": "Bonhoeffer's clandestine theological seminary represents deep Christian resistance, training pastors to reject Nazi racial ideology and state control.",
           "teacher_notes": {
             "source_context": "Banned from teaching by the Gestapo in 1936, Bonhoeffer trained clandestine pastors at Finkenwalde, arguing that Christians could not merely bandage the victims under the wheel of state injustice, but were morally obligated to jam a spoke into the wheel itself. **Hinge Question:** Why did Bonhoeffer argue that Christian duty under a criminal regime required active political resistance rather than passive spiritual non-cooperation?"
           },
@@ -14695,43 +14695,43 @@ export default {
         "instructions": "Answer these questions in full sentences from prior learning.",
         "items": [
           {
-            "question": "Name one youth group that actively resisted the Nazi regime in the late 1930s. (Last Lesson)",
+            "question": "Name one youth group that actively resisted the Nazi regime in the late 1930s.",
             "answer": "The Edelweiss Pirates (working-class youth) or the Swing Youth (middle-class jazz enthusiasts)."
           },
           {
-            "question": "Which Catholic Bishop delivered famous sermons in Münster condemning Gestapo terror and euthanasia? (Last Lesson)",
+            "question": "Which Catholic Bishop delivered famous sermons in Münster condemning Gestapo terror and euthanasia?",
             "answer": "Bishop Clemens August Graf von Galen."
           },
           {
-            "question": "Which Protestant pastor co-founded the Confessing Church in opposition to the Nazi Reich Church? (Last Lesson)",
+            "question": "Which Protestant pastor co-founded the Confessing Church in opposition to the Nazi Reich Church?",
             "answer": "Pastor Martin Niemöller (or Dietrich Bonhoeffer)."
           },
           {
-            "question": "Who was appointed Reich Minister of Public Enlightenment and Propaganda in March 1933? (Last Week)",
+            "question": "Who was appointed Reich Minister of Public Enlightenment and Propaganda in March 1933?",
             "answer": "Dr Joseph Goebbels."
           },
           {
-            "question": "What cheap mass-produced radio did Goebbels introduce to broadcast Nazi propaganda directly into homes? (Last Week)",
+            "question": "What cheap mass-produced radio did Goebbels introduce to broadcast Nazi propaganda directly into homes?",
             "answer": "The Volksempfänger (VE301 \"People's Receiver\")."
           },
           {
-            "question": "Who headed the SS and transformed it into the primary terror organization of the Third Reich? (Last Week)",
+            "question": "Who headed the SS and transformed it into the primary terror organization of the Third Reich?",
             "answer": "Reichsführer-SS Heinrich Himmler."
           },
           {
-            "question": "What law passed in March 1933 gave Adolf Hitler the power to enact laws without the Reichstag? (Prior Topic)",
+            "question": "What law passed in March 1933 gave Adolf Hitler the power to enact laws without the Reichstag?",
             "answer": "The Enabling Act (Gesetz zur Behebung der Not von Volk und Reich)."
           },
           {
-            "question": "What catastrophic economic event in October 1929 plunged Germany into mass unemployment? (Prior Topic)",
+            "question": "What catastrophic economic event in October 1929 plunged Germany into mass unemployment?",
             "answer": "The Wall Street Crash in the United States."
           },
           {
-            "question": "What emergency decree did Hindenburg sign after the Reichstag Fire in February 1933, suspending civil liberties? (Prior Topic)",
+            "question": "What emergency decree did Hindenburg sign after the Reichstag Fire in February 1933, suspending civil liberties?",
             "answer": "The Decree for the Protection of People and State (Reichstag Fire Decree)."
           },
           {
-            "question": "What law passed in March 1933 gave Hitler dictatorial power to enact legislation without the Reichstag? (Prior Topic)",
+            "question": "What law passed in March 1933 gave Hitler dictatorial power to enact legislation without the Reichstag?",
             "answer": "The Enabling Act (Gesetz zur Behebung der Not von Volk und Reich)."
           }
         ]
@@ -15314,7 +15314,7 @@ export default {
             "type": "inference",
             "question": "Give two things you can infer from Source A about Nazi views on the role of women.",
             "prompt": "Give two separate inferences. For each inference, provide a clear deduction and support it with a direct quote or detail from Source A.",
-            "model": "First inference: I can infer from Source A that the Nazi regime believed a woman's sphere of life should be strictly confined to domestic family life and motherhood. Detail in Source A that tells me this: Hitler explicitly states, 'For her world is her husband, her family, her children and her home' and insists that the worlds of men and women must remain entirely separate.<br><br>Second inference: I can infer that the regime viewed childbearing as an essential biological duty for national survival. Detail in Source A that tells me this: Hitler compares childbirth directly to military combat, declaring that 'Every child that a woman brings into the world is a battle, a battle waged for the existence of her people.'",
+            "model": "<strong>Inference 1:</strong> The Nazi regime viewed women's role as strictly domestic and motherly. <strong>Detail:</strong> Goebbels stated that a woman's highest mission was to give children to the nation.<br><br><strong>Inference 2:</strong> Women were deliberately excluded from public and professional life. <strong>Detail:</strong> Goebbels insisted politics and leadership belonged entirely to men.",
             "scaffolding": {
               "acronym": "Inference + Detail Formula (AO3)",
               "acronym_title": "Deduction & Quote Framework [4 Marks • 6 Mins]",
@@ -15351,7 +15351,7 @@ export default {
               "Nazi ideological beliefs about the family"
             ],
             "prompt": "You may use the following in your answer: (1) Falling German birth rates, (2) Nazi ideological beliefs about the family. You must also use information of your own.",
-            "model": "One primary reason why Nazi policies towards women were implemented was the urgent need to reverse Germany's severe demographic decline. During the Weimar Republic, annual births had plummeted from over two million in 1900 to under one million by 1933. Hitler believed that a shrinking population threatened Germany's imperial ambitions and military power. To stimulate reproduction, the regime introduced the Law for the Encouragement of Marriage in June 1933, offering interest-free state loans of 1,000 marks to Aryan newlyweds, with 25 percent of the debt permanently cancelled for every child born. Furthermore, the regime awarded the Cross of Honour of the German Mother (Mutterkreuz) from 1938 to glorify large families and restricted abortion and contraception, using state policy to artificially engineer population growth.<br><br>A second decisive factor was the Nazi party's deeply reactionary ideological beliefs about traditional gender roles and the family. National Socialist doctrine rejected the Weimar 'New Woman' and constitutional gender equality under Article 109 as degenerate symptoms of democracy. Instead, the party promoted the patriarchal slogan Kinder, Küche, Kirche (Children, Kitchen, Church). Gertrud Scholtz-Klink, Reich Women's Leader, organized women into the National Socialist Women's League (NS-Frauenschaft) to teach domestic skills, infant care, and eugenic partner selection at Reich Bride Schools. The regime aimed to restore the traditional nuclear family as the primary unit of ideological indoctrination and racial reproduction for the national community (Volksgemeinschaft).<br><br>Furthermore, policies towards women were implemented to manipulate national unemployment statistics and fulfill the economic demands of the state. In 1933, the regime purged married women from the civil service, teaching, and legal professions under the Law for the Restoration of the Professional Civil Service. By removing hundreds of thousands of female wage earners from the workforce, Hitler artificially reduced male unemployment registers, fulfilling his campaign pledge of 'Work and Bread'. However, by 1937, as Hermann Göring's Four-Year Plan created acute labour shortages for military rearmament, the regime reversed course, lifting employment restrictions on married women and introducing a compulsory 'Duty Year' in 1938, demonstrating that policies were flexibly tailored to serve the regime's economic and military priorities.",
+            "model": "One reason Nazi policies towards women were implemented was to reverse the sharp decline in Germany's birth rate. During the 1920s, births fell to under one million per year, which threatened Hitler’s military ambitions. To boost births, the regime offered Marriage Loans of 1,000 marks, deducting 25% for each child born, and awarded the Honour Cross of the German Mother (bronze for 4, gold for 8) to reward large families.<br><br>Furthermore, the regime wanted to remove women from employment to reduce male unemployment. Under the policy of *Kinder, Küche, Kirche* (Children, Kitchen, Church), women were dismissed from civil service, legal, and medical professions. Banning female doctors and judges freed up professional jobs for men, fulfilling Nazi ideological beliefs about gender roles.<br><br>Finally, racial eugenics shaped policies toward women. Under the Law for the Prevention of Hereditarily Diseased Offspring (1933), over 300,000 women deemed 'genetically unfit' or racially inferior were forcibly sterilized to ensure only 'pure Aryan' children were born.",
             "scaffolding": {
               "acronym": "PEEL Causation Framework",
               "acronym_title": "Section A: Question 2 • Explain Why [12 Marks • 18 Mins]",
@@ -15604,7 +15604,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source A for an enquiry into Nazi ideological attitudes and expectations towards women after coming to power in 1933?",
-          "model_answer": "<p>Source A is highly useful because Joseph Goebbels explicitly defines the Nazi ideal: rejecting Weimar female emancipation as unnatural and defining woman’s sole biological role as mother, homemaker, and preserver of the race (*Kinder, Küche, Kirche*). As a major policy speech by the Propaganda Minister, it reveals the regime’s official doctrine, although it deliberately ignored how the regime would later be forced to conscript women back into war production by 1939.</p>",
+          "model_answer": "Goebbels asserts that woman's natural role is motherhood and domestic devotion, arguing that politics and statecraft belong exclusively to men.",
           "teacher_notes": {
             "source_context": "In March 1933, the newly installed Nazi regime launched its ideological campaign to reverse the Weimar emancipation of women, promoting the traditional ideal of *Kinder, Küche, Kirche* (Children, Kitchen, Church). **Hinge Question:** How did Nazi propaganda contrast its domestic ideal of womanhood with the emancipated \"New Woman\" of the Weimar Republic?"
           },
@@ -15627,7 +15627,7 @@ export default {
           "question_badge": "Policy Mechanism & Impact",
           "question_type": "Policy Mechanism & Impact",
           "enquiry_question": "Explain how the regulations set out in Source B served both economic and demographic goals for the Nazi regime.",
-          "model_answer": "<p>Source B served an immediate economic goal by requiring the bride to renounce permanent employment (§ 3), which removed hundreds of thousands of women from the workforce, vacated jobs for unemployed men, and artificially lowered official unemployment statistics. Simultaneously, it served a vital demographic goal through § 5, which cancelled 25% of the 1,000-mark debt for each child born (\"quartering out\"), directly incentivizing couples to produce four or more racially pure children to reverse Germany’s falling birth rate and supply future soldiers.</p>",
+          "model_answer": "The Marriage Loan law provided financial incentives for couples to marry and have children, deducting 25% of the debt per newborn infant.",
           "teacher_notes": {
             "source_context": "Enacted within four months of Hitler taking power, this statute offered 1,000-mark interest-free vouchers to newlyweds, forgiving 25% of the debt per child while requiring brides to leave the workforce. **Hinge Question:** Did the marriage loan scheme succeed more as an employment measure or as an instrument of demographic engineering?"
           }
@@ -15649,7 +15649,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source C for an enquiry into the ideological aims of the Nazi government towards German women?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source C is exceptionally useful because it articulates the regime’s official doctrine of <em>Kinder, Küche, Kirche</em> directly from the Third Reich’s highest female official. Scholtz-Klink explicitly rejects Weimar female emancipation, declaring that women should not \"envy men their roles in the military or the government\" and that their \"battlefield is the nursery.\" This matches regime policy from 1933: female civil servants and judges were dismissed, female university enrollment was capped at 10%, and women were barred from Reichstag candidacy. Furthermore, her emphasis on bearing \"pure-blooded children\" reflects the biological eugenics that underpinned the 1933 Law for the Encouragement of Marriage and racial health screening.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is enhanced by its provenance as a major keynote address at the annual Nuremberg Party Congress before thousands of female delegates. As Reich Women’s Leader, Scholtz-Klink was Hitler’s chief instrument for mobilizing female compliance. However, its utility is limited because it represents staged party propaganda rather than the genuine reality of German women's experiences. It completely conceals the widespread coercion used to enforce domesticity—such as forced dismissals—and omits the fact that within two years, Hermann Göring’s Four-Year Plan (1936) forced the regime to reverse this domestic ideal and recall millions of women to armaments factories.</p>",
+          "model_answer": "Scholtz-Klink's speech emphasizes that German women should serve the state through domestic self-sacrifice, cooking frugally and raising patriotic soldiers.",
           "teacher_notes": {
             "source_context": "Delivered at the mass Nuremberg Party Rally by the Third Reich's highest-ranking female official, this speech explicitly articulated the official party doctrine that women's primary duty was racial reproduction and domestic sacrifice. **Hinge Question:** Why did the Nazi leadership use female leaders like Scholtz-Klink to persuade women to surrender their political and economic independence?"
           }
@@ -15671,7 +15671,7 @@ export default {
           "question_badge": "Author’s Purpose & Ideology",
           "question_type": "Author’s Purpose & Ideology",
           "enquiry_question": "What does Source D reveal about the boundaries of Nazi policy towards women and biological reproduction?",
-          "model_answer": "<p>Source D reveals that Nazi pro-natalist encouragement of motherhood was strictly limited to women deemed racially pure and biologically healthy. For women diagnosed with alleged mental, physical, or behavioral disorders by Hereditary Health Courts, the state asserted absolute, coercive ownership over their bodies, mandating forced surgical sterilization under police escort (§ 12). This demonstrated that Nazi policy was fundamentally driven by eugenic \"racial hygiene\" rather than general humanitarian welfare.</p>",
+          "model_answer": "The 1933 Sterilization Law demonstrates the brutal eugenic core of Nazi policy, forcing sterilization on hundreds of thousands judged 'hereditarily diseased'.",
           "teacher_notes": {
             "source_context": "This eugenic statute empowered Genetic Health Courts to order compulsory surgical sterilization, leading to the forced sterilization of over 300,000 German women and men deemed biologically 'unworthy' to reproduce. **Hinge Question:** How did the sterilization laws expose the fundamental divide in Nazi policy between racially favored Aryan mothers and citizens deemed biologically inferior?"
           }
@@ -15693,7 +15693,7 @@ export default {
           "question_badge": "Reliability & Contradiction",
           "question_type": "Reliability & Contradiction",
           "enquiry_question": "How far does Source E demonstrate that Nazi policy towards women had collapsed into contradiction by 1938?",
-          "model_answer": "<p>Source E highlights the total collapse of Nazi ideological consistency, showing how the domestic doctrine of <em>Kinder, Küche, Kirche</em> was subordinated to the urgent demands of rearmament under Göring’s Four-Year Plan. Faced with an acute deficit of male industrial labor caused by military conscription, the regime introduced the compulsory \"Duty Year\" and coerced women back into heavy armaments factories. While Sopade reports were compiled by political opponents eager to highlight regime hypocrisies, official economic data confirms that by 1939, over 14 million German women were employed—surpassing Weimar levels.</p>",
+          "model_answer": "The Sopade report reveals growing friction after 1937, as the regime hypocritically forced women back into rearmament factories to meet labor shortages.",
           "teacher_notes": {
             "source_context": "Compiled from clandestine underground reports across industrial Germany, this exiled Social Democratic intelligence dispatch documents the complete reversal of Nazi female labor policy under the pressure of rearmament. **Hinge Question:** Why was the Nazi regime compelled to abandon its core domestic ideology for women when preparing for total war?"
           }
@@ -15796,43 +15796,43 @@ export default {
         "instructions": "Answer these questions in full sentences from prior learning.",
         "items": [
           {
-            "question": "What three German words summarized the traditional Nazi domestic slogan for women? (Last Lesson)",
+            "question": "What three German words summarized the traditional Nazi domestic slogan for women?",
             "answer": "Kinder, Küche, Kirche (Children, Kitchen, Church)."
           },
           {
-            "question": "What financial incentive did the 1933 Law for the Encouragement of Marriage provide to newlyweds? (Last Lesson)",
+            "question": "What financial incentive did the 1933 Law for the Encouragement of Marriage provide to newlyweds?",
             "answer": "An interest-free loan of up to 1,000 marks in vouchers, reduced by 25% for each child born."
           },
           {
-            "question": "What medal was awarded to German mothers for bearing four, six, or eight children? (Last Lesson)",
+            "question": "What medal was awarded to German mothers for bearing four, six, or eight children?",
             "answer": "The Cross of Honour of the German Mother (Mutterkreuz) in Bronze, Silver, or Gold."
           },
           {
-            "question": "What compulsory policy was introduced in 1938 requiring unmarried women to complete manual labor? (Last Lesson)",
+            "question": "What compulsory policy was introduced in 1938 requiring unmarried women to complete manual labor?",
             "answer": "The Duty Year (Pflichtjahr) on farms or in domestic service."
           },
           {
-            "question": "Which Nazi leader was appointed Reich Women's Leader (Reichsfrauenführerin) in 1934? (Last Week)",
+            "question": "Which Nazi leader was appointed Reich Women's Leader (Reichsfrauenführerin) in 1934?",
             "answer": "Gertrud Scholtz-Klink."
           },
           {
-            "question": "What was the secret state police force established by Hermann Göring and led by Heinrich Himmler? (Last Week)",
+            "question": "What was the secret state police force established by Hermann Göring and led by Heinrich Himmler?",
             "answer": "The Gestapo (Geheime Staatspolizei)."
           },
           {
-            "question": "What purge in June 1934 eliminated Ernst Röhm and the senior leadership of the SA? (Prior Topic)",
+            "question": "What purge in June 1934 eliminated Ernst Röhm and the senior leadership of the SA?",
             "answer": "The Night of the Long Knives (Operation Hummingbird)."
           },
           {
-            "question": "Which Weimar Foreign Minister negotiated the Locarno Treaties (1925) and entry into the League of Nations? (Prior Topic)",
+            "question": "Which Weimar Foreign Minister negotiated the Locarno Treaties (1925) and entry into the League of Nations?",
             "answer": "Gustav Stresemann."
           },
           {
-            "question": "What violent purge took place between 30 June and 2 July 1934 to eliminate Ernst Röhm and the SA leadership? (Prior Topic)",
+            "question": "What violent purge took place between 30 June and 2 July 1934 to eliminate Ernst Röhm and the SA leadership?",
             "answer": "The Night of the Long Knives (Operation Hummingbird)."
           },
           {
-            "question": "What oath did all German armed forces take on 2 August 1934 following President Hindenburg's death? (Prior Topic)",
+            "question": "What oath did all German armed forces take on 2 August 1934 following President Hindenburg's death?",
             "answer": "A personal oath of unconditional loyalty and obedience to Adolf Hitler as Führer and Supreme Commander."
           }
         ]
@@ -16437,7 +16437,7 @@ export default {
               "Changes to the school curriculum"
             ],
             "prompt": "You may use the following in your answer: (1) The Hitler Youth (Hitlerjugend), (2) Changes to the school curriculum. You must also use information of your own.",
-            "model": "One primary reason why the Nazi regime prioritized controlling youth groups was to bypass the traditional influence of the family and Christian churches, ensuring total political indoctrination. Adolf Hitler recognized that securing a 'Thousand-Year Reich' required capturing the unquestioning devotion of the next generation. Under Baldur von Schirach, the Hitler Youth (HJ) for boys and the League of German Girls (BDM) for girls systematically replaced independent organizations like the Boy Scouts and Catholic youth leagues. Through weekly meetings, weekend camping, and political songs, youth leaders instilled absolute personal loyalty to the Führer and encouraged teenagers to challenge parental authority, even reporting unpatriotic conversations to the Gestapo. By making membership compulsory under the 1939 Youth Service Decree, the regime ensured that no young German escaped ideological conformity.<br><br>A second decisive factor was the urgent necessity of preparing German youth physically and psychologically for future military conquest and racial motherhood. In education, Reich Minister Bernhard Rust transformed schools into instruments of totalitarian training. Physical education was expanded to encompass 15 percent of school timetables to harden pupils for combat. In the Hitler Youth, boys engaged in small-bore rifle shooting, bayonet practice, and military maneuvers, funneled into specialized branches like the Flieger-HJ (glider aviation) and Marine-HJ (naval warfare) to provide pre-trained recruits for the expanding Wehrmacht. Simultaneously, girls in the BDM practiced gymnastics and domestic nursing to build healthy bodies capable of bearing racially pure children, directly serving Hitler's long-term military and demographic ambitions.<br><br>Furthermore, the regime sought to enforce biological racism and anti-Semitism by rewriting the academic school curriculum. Teachers were subjected to strict ideological vetting, forced to join the National Socialist Teachers' League (NSLB) and swear a personal oath of loyalty to Hitler. In the classroom, traditional academic subjects were replaced with Nazi propaganda: biology became 'racial science' (Rassenkunde), teaching children to categorize races by skull measurements and denigrate Jews as subhuman parasites; history lessons glorified Germanic military triumphs and blamed Weimar politicians for the 1918 'stab-in-the-back'. By indoctrinating children from the age of six, the regime normalized violent racial hatred, ensuring that when these young people reached adulthood, they willingly carried out aggressive warfare and racial persecution without moral hesitation.",
+            "model": "One reason the Nazi regime prioritized controlling the young was to ensure the long-term survival of the 'Thousand-Year Reich'. Hitler understood that adults who grew up under the Weimar Republic might hold democratic loyalties, whereas children could be conditioned from infancy to accept Nazi ideology without questioning authority.<br><br>Furthermore, controlling youth was essential for preparing boys for military conquest. In the Hitler Youth (*Hitlerjugend*), made compulsory in 1939, boys engaged in military drills, map-reading, shooting practice, and grueling marches, turning them into obedient, physically hardened soldiers ready for war.<br><br>Finally, the regime reorganized school curricula to brainwash young minds. History was rewritten to praise Germanic victories, Biology focused on Nazi racial purity and eugenics, and PE occupied 15% of timetables. Girls in the BDM (League of German Girls) were trained in hygiene, cooking, and child-rearing to become mothers of future soldiers.",
             "scaffolding": {
               "acronym": "PEEL Causation Framework",
               "acronym_title": "Section A: Question 2 • Explain Why [12 Marks • 18 Mins]",
@@ -16469,7 +16469,7 @@ export default {
             "type": "utility_8m",
             "question": "How useful are Sources A and B for an enquiry into the methods used by the Nazi regime to control and train young people between 1933 and 1939?",
             "prompt": "Evaluate both sources using Content, Contextual Knowledge (Hitler Youth, BDM, militarism, physical fitness, indoctrination), and Provenance (Nature, Origin, Purpose).",
-            "model": "Source A is highly useful for an enquiry into methods used to control and train young people because it provides direct visual evidence of the militarization and discipline instilled in German boys. The photograph captures a large troop of Hitler Youth members marching through a town in disciplined, uniform ranks, carrying ceremonial drums and swastika banners. From my own knowledge, the Hitler Youth (HJ), led by Baldur von Schirach, was organized along strict military lines to prepare adolescent boys for future service in the Wehrmacht. Members engaged in strenuous cross-country route marches, rifle shooting, bayonet drills, and map reading. The 1936 Law for the Hitler Youth and the 1939 Youth Service Decree eliminated rival groups and made membership compulsory. As an authentic contemporary photograph, Source A provides valuable insight into how the regime utilized uniforms, martial ceremony, and peer camaraderie to instill obedience, physical toughness, and fanatical loyalty to Hitler.<br><br>Source B is equally useful because it illustrates the contrasting methods used by the regime to train and condition German girls. The photograph depicts hundreds of members of the League of German Girls (BDM) performing synchronized callisthenics drills in matching white athletic attire at a Nuremberg rally. From my own knowledge, the BDM focused on physical fitness not for military combat, but to develop robust bodies capable of bearing healthy Aryan children. The curriculum combined gymnastics, choral singing, and home-economics training with domestic harvest service (Landdienst) to reinforce the ideal of motherhood. As a photograph from the official Nuremberg party rally, Source B documents how the regime used mass synchronized displays to submerge individuality into the collective national community (Volksgemeinschaft). Together, Sources A and B are exceptionally useful because Source A illustrates the aggressive militarization of boys to prepare future soldiers, while Source B demonstrates the physical conditioning of girls to prepare future mothers.",
+            "model": "Source A is useful for an enquiry into youth indoctrination because it details the 1936 Hitler Youth Law, making membership compulsory and stating that all German youth would be educated 'physically, intellectually, and morally in the spirit of National Socialism'. Contextually, the law forced non-Nazi clubs like Catholic and scouting groups to close. As an official state decree, it gives exact legal evidence of the regime's total control over young people.<br><br>Source B is useful because it depicts Hitler addressing 54,000 disciplined Hitler Youth members at the 1938 Nuremberg Rally. The vast, uniformed stadium visualizes the scale of militarization and hero-worship directed at the *Führer*. However, as official propaganda, it hides the growing dissatisfaction of young rebels like the Edelweiss Pirates and Swing Youth who avoided meetings. Overall, both sources are highly useful for showing the legal compulsion and propaganda spectacles used to control youth.",
             "scaffolding": {
               "acronym": "Two-Source Utility Framework",
               "acronym_title": "Section B: Question 3(a) • Utility of Sources A & B [8 Marks • 12 Mins]",
@@ -16754,7 +16754,7 @@ export default {
           "question_badge": "State Control & Legal Coercion",
           "question_type": "State Control & Legal Coercion",
           "enquiry_question": "Explain why the Nazi regime felt compelled to introduce severe criminal penalties for parents who failed to register their children in the Hitler Youth by 1939.",
-          "model_answer": "<p>The regime felt compelled to introduce harsh penalties—including fines and up to five years’ imprisonment (§ 9)—because voluntary persuasion had failed to secure total control over German adolescents. Despite intense propaganda and the 1936 law declaring the HJ a state agency, millions of parents and teenagers (especially from Catholic and socialist backgrounds) continued to avoid meetings. By criminalizing parental non-compliance, the regime sought to break family autonomy completely and enforce 100% participation ahead of imminent war.</p>",
+          "model_answer": "The 1936 decree made Hitler Youth membership compulsory, giving the state legal authority over children's education outside of school and family.",
           "teacher_notes": {
             "source_context": "Following the initial 1936 Hitler Youth Law, this 1939 executive decree made youth membership strictly compulsory under pain of heavy fines and prison sentences for non-compliant parents. **Hinge Question:** Does the regime’s use of criminal penalties in Source A indicate the success or the failure of voluntary Nazi youth recruitment?"
           }
@@ -16776,7 +16776,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source B for an enquiry into the aims of the Nazi regime for German youth?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source B is extremely useful because it provides an authoritative statement of the regime’s fundamental aims for German boys directly from Hitler himself. His famous slogan that boys must be \"swift as a greyhound, tough as leather, and hard as Krupp steel\" demonstrates that education was subordinated to military preparation and physical endurance rather than intellectual scholarship. This was enacted in practice: Education Minister Bernhard Rust allocated 15% of all school timetables to PE, while the Hitler Youth focused on compass reading, trench digging, rifle firing, and weekend route marches to prepare boys for military conscription after 1935.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is heightened by its provenance as a live rally speech delivered to 54,000 uniformed adolescents at Nuremberg. This shows how mass theatrical spectacles were used to create emotional fanaticism and demand \"unconditional obedience\" to the Führer. However, its utility is limited because it portrays an idealized propaganda image of total devotion. It does not reflect the growing boredom, exhaustion, and alienation felt by many boys as the 1930s progressed, nor does it acknowledge the emergence of active youth resistance groups like the Edelweiss Pirates who rejected this militarism.</p>",
+          "model_answer": "The rally photograph captures how massive pageantry was used to make boys feel like proud, uniformed members of an invincible military army.",
           "teacher_notes": {
             "source_context": "Delivered directly to a vast stadium of Hitler Youth boys at the annual Nuremberg rally, this speech set out the regime's uncompromising vision of turning children into hardened, unthinking soldiers ready for total warfare. **Hinge Question:** Why did Hitler place far greater emphasis on physical hardness and absolute obedience than on academic intelligence?"
           }
@@ -16799,7 +16799,7 @@ export default {
           "question_badge": "Source Inference (Paper 3 Q1)",
           "question_type": "Source Inference (Paper 3 Q1)",
           "enquiry_question": "Give two things you can infer from Source C about the training of girls in the Bund Deutscher Mädel (BDM).",
-          "model_answer": "<p><strong>Inference 1:</strong> The BDM prioritized collective physical conformity and bodily conditioning over individual academic or intellectual expression.<br><strong>Detail from Source:</strong> Dozens of teenage girls in identical white athletic tunics execute synchronized marching and gymnastic movements in perfect unison across the display grounds.</p><p><strong>Inference 2:</strong> Physical conditioning in the BDM was designed to build healthy, resilient bodies for future motherhood.<br><strong>Detail from Source:</strong> The vigorous outdoor athletic exercises demonstrate the regime’s emphasis on physical stamina and bodily health to prepare girls biologically for bearing healthy children for the Reich.</p>",
+          "model_answer": "The BDM pamphlet shows girls participating in calisthenics, designed to build healthy, fit bodies capable of bearing strong Aryan children.",
           "teacher_notes": {
             "source_context": "This authentic photograph depicts the mass gymnastics displays that formed a central pillar of BDM physical training, conditioning girls' bodies for future motherhood while enforcing collective conformity and discipline. **Hinge Question:** How did physical training in the BDM serve the broader demographic and ideological goals of the Nazi state?"
           }
@@ -16821,7 +16821,7 @@ export default {
           "question_badge": "Curricular Subversion & Ideology",
           "question_type": "Curricular Subversion & Ideology",
           "enquiry_question": "What does Source D reveal about how academic subjects were subverted to instill Nazi racial and military ideology in schoolchildren?",
-          "model_answer": "<p>Source D reveals that under Education Minister Bernhard Rust, even neutral, abstract subjects like mathematics were completely subverted to serve state propaganda. Problems 95 and 96 framed mentally ill and disabled individuals as parasitic financial burdens on the German nation, systematically preparing schoolchildren to accept forced sterilization and future euthanasia. Simultaneously, Problem 104 militarized the classroom by training children to calculate flight times and destructive blast areas for aerial bombing, normalizing aggressive military conquest as everyday mathematics.</p>",
+          "model_answer": "The school mathematics problem shows how antisemitic propaganda was injected into ordinary subjects, calculating the cost of caring for the disabled.",
           "teacher_notes": {
             "source_context": "Under Education Minister Bernhard Rust, everyday academic subjects were weaponized to condition pupils into accepting eugenic sterilisation, euthanasia, and aggressive military bombing as normal, scientific facts. **Hinge Question:** What made the incorporation of eugenics into basic math problems more insidious than political speeches?"
           }
@@ -16843,7 +16843,7 @@ export default {
           "question_badge": "Conformity vs Disillusionment",
           "question_type": "Conformity vs Disillusionment",
           "enquiry_question": "How far does Source E provide a reliable counter-perspective to official Nazi claims of universal youthful devotion?",
-          "model_answer": "<p>Source E provides a vital, credible counter-perspective by detailing the widespread \"drill fatigue\", absenteeism, and resentment that official propaganda concealed. When membership became compulsory, early attractions like camping trips were replaced by monotonous military drills and arrogant teenage squad leaders, driving attendance down to barely a third in industrial areas. Although the Sopade had an interest in documenting dissatisfaction, their reports are corroborated by internal Gestapo files, which noted rising absenteeism and the rapid growth of illegal opposition groups like the Edelweiss Pirates.</p>",
+          "model_answer": "The Sopade report documents that teenagers increasingly resented boring military drill and endless propaganda in the compulsory Hitler Youth.",
           "teacher_notes": {
             "source_context": "Smuggled out of the industrial Rhineland, this covert intelligence report reveals the widespread 'drill fatigue', absenteeism, and generational friction created by compulsory Hitler Youth militarism. **Hinge Question:** Why did the transformation of the Hitler Youth from a voluntary adventure club into a compulsory military drill unit alienate so many German teenagers?"
           }
@@ -16946,43 +16946,43 @@ export default {
         "instructions": "Answer these questions in full sentences from prior learning.",
         "items": [
           {
-            "question": "Who was appointed Reich Minister of Science, Education and National Culture in 1934? (Last Lesson)",
+            "question": "Who was appointed Reich Minister of Science, Education and National Culture in 1934?",
             "answer": "Bernhard Rust."
           },
           {
-            "question": "What percentage of school timetable hours did Bernhard Rust allocate to physical education? (Last Lesson)",
+            "question": "What percentage of school timetable hours did Bernhard Rust allocate to physical education?",
             "answer": "15 percent (roughly two to three hours every day)."
           },
           {
-            "question": "What law passed in March 1939 made membership of the Hitler Youth legally compulsory for all 10–18 year olds? (Last Lesson)",
+            "question": "What law passed in March 1939 made membership of the Hitler Youth legally compulsory for all 10–18 year olds?",
             "answer": "The First Decree for the Implementation of the Law on the Hitler Youth."
           },
           {
-            "question": "What domestic slogan summarized the Nazi ideal for women in the home? (Last Week)",
+            "question": "What domestic slogan summarized the Nazi ideal for women in the home?",
             "answer": "Kinder, Küche, Kirche (Children, Kitchen, Church)."
           },
           {
-            "question": "What state award was conferred on mothers who had four, six, or eight children? (Last Week)",
+            "question": "What state award was conferred on mothers who had four, six, or eight children?",
             "answer": "The Cross of Honour of the German Mother (Mutterkreuz)."
           },
           {
-            "question": "What law passed in July 1933 authorized compulsory sterilization for hereditary illnesses? (Last Week)",
+            "question": "What law passed in July 1933 authorized compulsory sterilization for hereditary illnesses?",
             "answer": "The Law for the Prevention of Hereditarily Diseased Offspring."
           },
           {
-            "question": "What purge in June 1934 destroyed the leadership of the SA and secured army loyalty for Hitler? (Prior Topic)",
+            "question": "What purge in June 1934 destroyed the leadership of the SA and secured army loyalty for Hitler?",
             "answer": "The Night of the Long Knives."
           },
           {
-            "question": "What Dutch communist was executed for setting fire to the Reichstag building in February 1933? (Prior Topic)",
+            "question": "What Dutch communist was executed for setting fire to the Reichstag building in February 1933?",
             "answer": "Marinus van der Lubbe."
           },
           {
-            "question": "Who was appointed Minister of Public Enlightenment and Propaganda in March 1933? (Prior Topic)",
+            "question": "Who was appointed Minister of Public Enlightenment and Propaganda in March 1933?",
             "answer": "Dr Joseph Goebbels."
           },
           {
-            "question": "What secret state police force, created by Hermann Göring and later commanded by Heinrich Himmler, operated above the law? (Prior Topic)",
+            "question": "What secret state police force, created by Hermann Göring and later commanded by Heinrich Himmler, operated above the law?",
             "answer": "The Gestapo (Geheime Staatspolizei)."
           }
         ]
@@ -17632,7 +17632,7 @@ export default {
             "type": "utility_comp_4m",
             "question": "Part 1: Content & Provenance (COP) Comparative Analysis",
             "prompt": "Compare the content and provenance of Sources B and C, highlighting contrasting perspectives on workers' living standards.",
-            "model": "Source B emphasizes the harsh economic reality and loss of liberty endured by industrial workers, noting that 54-hour working weeks and heavy compulsory wage deductions for the Labour Front and Winter Relief significantly eroded take-home pay, while workers were legally bound to their employers like 'conscripted soldiers'. In contrast, Source C highlights how the regime used leisure and entertainment through 'Strength Through Joy' (KdF) to pacify younger workers, compensating for frozen wages and food shortages. While Source B provides an authentic first-hand personal account from an active industrial worker in the Ruhr Valley, Source C offers an analytical overview compiled by the underground Social Democratic opposition (SOPADE), providing valuable insight into how discontent was divided along generational lines.",
+            "model": "<strong>Content:</strong> Source B highlights Dr. Todt praising the Autobahn as a triumph of employment and engineering, while Source C provides statistical evidence of unemployment dropping from 6 million to under 500,000.<br><br><strong>Provenance:</strong> Source B is an official propaganda speech celebrating state achievements, whereas Source C contains official statistical records that hide women and Jews to make recovery look miraculous.",
             "scaffolding": {
               "acronym": "COP Comparative Framework",
               "acronym_title": "Source Comparison [4 Marks • 6 Mins]",
@@ -17660,7 +17660,7 @@ export default {
             "type": "utility_8m",
             "question": "How useful are Sources B and C for an enquiry into the effects of Nazi economic policies on German workers between 1933 and 1939?",
             "prompt": "Evaluate both sources using Content, Contextual Knowledge (DAF, RAD, KdF, Beauty of Labour, wages, hours), and Provenance (Nature, Origin, Purpose).",
-            "model": "Source B is highly useful for an enquiry into the effects of Nazi economic policies on German workers because its content exposes the reality of workplace regimentation and eroded living standards. The worker in Essen explains that although employment is guaranteed, weekly working hours have surged to 54 hours, while compulsory deductions for Robert Ley's German Labour Front (DAF) and Winter Relief consume nearly a quarter of gross wages. From my own knowledge, following the destruction of independent trade unions in May 1933, the DAF banned strikes and collective bargaining, freezing wages at 1932 depression levels while average weekly hours rose from 43 to 49 across industry. Furthermore, the 1935 Employment Record Book (Arbeitsbuch) legally tied workers to their employers, preventing them from leaving for higher wages elsewhere. As a private, contemporary letter written by an industrial worker in the heart of the Ruhr armaments basin, Source B provides authentic, unvarnished eyewitness testimony of working-class exploitation beneath official propaganda.<br><br>Source C is equally useful because it offers a nuanced evaluation of how the regime maintained social peace through leisure subsidies. The SOPADE report explains that while older workers resented food price inflation, poor quality substitute goods (Ersatz), and the loss of union rights, younger workers were genuinely enthusiastic about subsidized theater tickets and excursions provided by 'Strength Through Joy' (Kraft durch Freude, or KdF). From my own knowledge, KdF was heavily subsidized by the DAF, operating luxury cruise liners like the Wilhelm Gustloff and offering cheap holidays and theater outings to compensate for frozen wages. As a secret report compiled by the exiled Social Democratic Party using clandestine contacts inside Germany, Source C has high utility because it provides an objective political assessment of working-class opinion, avoiding both Nazi propaganda and exaggerated anti-regime claims. Together, Sources B and C are exceptionally useful: Source B documents the physical strain of longer hours and lost trade union freedoms, while Source C demonstrates how paternalistic KdF leisure successfully neutralized widespread working-class resistance.",
+            "model": "Source B is useful for an enquiry into living standards because it shows Dr. Fritz Todt celebrating the construction of the Autobahn highway network, claiming it provided thousands of jobs and restored national dignity. From my knowledge, public works and rearmament significantly reduced unemployment. As an official speech, it reflects how the regime promoted public works to convince workers of economic recovery.<br><br>Source C is useful because it provides official government statistics showing unemployment plunging from 6 million in 1933 to under 500,000 by 1938. However, contextual knowledge reveals these figures were distorted through 'invisible unemployment': Jews, married women, and men in compulsory Reich Labour Service (RAD) or conscripted into the army were excluded from figures. Furthermore, independent trade unions were abolished and replaced by the German Labour Front (DAF), which lengthened working hours. Overall, both sources are very useful for showing how the regime achieved and publicized economic recovery.",
             "scaffolding": {
               "acronym": "Two-Source Utility Framework",
               "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
@@ -17942,7 +17942,7 @@ export default {
           "question_badge": "Labour Coercion & Work Creation",
           "question_type": "Labour Coercion & Work Creation",
           "enquiry_question": "Explain how the Reich Labour Service law served both military preparation and economic unemployment reduction.",
-          "model_answer": "<p>The Reich Labour Service law served an economic purpose by obliging young men to complete six months of manual public utility works (§ 3), which immediately absorbed over 400,000 men from the unemployment register, artificially depressing official jobless figures. Simultaneously, it served military preparation by requiring men to live in regimented military-style barracks, perform spade drill, and endure physical exhaustion, directly conditioning them for Wehrmacht conscription upon completion (§ 8).</p>",
+          "model_answer": "The RAD law made six months of hard manual labor compulsory for young men, keeping them off the unemployment register while building public works.",
           "teacher_notes": {
             "source_context": "The RAD conscripted hundreds of thousands of young men into barracks-based manual labor camps, paying mere pocket money while removing them completely from official unemployment counts. **Hinge Question:** Was the Reich Labour Service primarily an economic public works program or a paramilitary conditioning camp?"
           }
@@ -17963,7 +17963,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source B for an enquiry into the role of public works and Autobahn construction in reducing unemployment and preparing Germany for war?",
-          "model_answer": "<p>Source B is highly useful because Fritz Todt provides direct figures showing how Autobahn construction stimulated heavy industry—cement, steel, and machinery—and directly employed over 120,000 workers. As an official government report by the Inspector General of Roadways, it reflects the regime’s pride in public works propaganda, though it conveniently obscures poor working conditions in isolated camps and the roads’ ultimate military utility for rapid troop movements.</p>",
+          "model_answer": "Todt's speech celebrates the Autobahns as an engineering triumph, masking their strategic military value for rapidly moving troops across Germany.",
           "teacher_notes": {
             "source_context": "From 1933 onwards, the Nazi regime invested heavily in public works, especially the 7,000-kilometre Autobahn network overseen by Fritz Todt, creating construction jobs while preparing logistics for military mobilization. **Hinge Question:** How did public works projects like the Autobahnen serve both economic recovery and military readiness?"
           },
@@ -17986,7 +17986,7 @@ export default {
           "question_badge": "Statistical Scrutiny & Economic Reality",
           "question_type": "Statistical Scrutiny & Economic Reality",
           "enquiry_question": "To what extent was Hitler's celebrated 'unemployment miracle' an illusion created through statistical manipulation and conscription?",
-          "model_answer": "<p>Source C demonstrates that Hitler’s dramatic reduction of unemployment from six million to 300,000 was largely an artificial illusion achieved through coercive exclusions. Over 1.4 million men were absorbed by military conscription, 400,000 were placed into mandatory manual labor in the RAD, and hundreds of thousands of Jews, married women, and political prisoners were purged from registries without being provided real jobs. While rearmament did create genuine manufacturing demand, the \"miracle\" was constructed on unsustainable deficit spending and statistical concealment.</p>",
+          "model_answer": "Official unemployment charts showed dramatic drops, but excluded women, Jews, and conscripts to create an exaggerated impression of economic miracle.",
           "teacher_notes": {
             "source_context": "While official propaganda boasted that Hitler eliminated unemployment, economic historians emphasize that 'invisible unemployment' hid up to 2 million potential workers via conscription, forced labor, and racial purges. **Hinge Question:** If millions were merely hidden by conscription and racial exclusion, how genuinely healthy was the pre-war German economy?"
           }
@@ -18008,7 +18008,7 @@ export default {
           "question_badge": "How Useful (Paper 3 Q3a)",
           "question_type": "How Useful (Paper 3 Q3a)",
           "enquiry_question": "How useful is Source D for an enquiry into how the Nazi regime established control over the industrial working class in 1933?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source D is highly useful because it demonstrates how the Nazi regime used deceptive propaganda to dismantle working-class institutions. Ley claims that workers’ rights are \"sacred and inviolable\", but in reality, 2 May 1933 marked the violent destruction of free trade unions: SA and SS units raided union offices, arrested leaders like Otto Wels, confiscated assets, and permanently abolished the right to strike and collective wage bargaining. In their place, the monolithic German Labour Front (DAF) was imposed, enrolling 22 million workers and freezing wages under state-appointed \"Trustees of Labour.\"</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is enhanced by its provenance as an official proclamation published by Robert Ley in the party newspaper <em>Völkischer Beobachter</em> on the very day of the union raids. This reveals the regime’s deliberate psychological strategy: appeasing workers by staging a lavish \"Day of National Labour\" holiday on 1 May before crushing union autonomy the following morning. However, its utility is limited because as pure propaganda, it completely conceals the coercive violence involved—including beatings and indefinite concentration camp detentions—and falsely presents total state subjugation as working-class liberation.</p>",
+          "model_answer": "Ley's proclamation outlawed independent trade unions, forcing all German workers into the Nazi DAF where strikes were banned and wages capped.",
           "teacher_notes": {
             "source_context": "Issued immediately after the SA raided and ransacked free trade union offices across Germany, Ley’s proclamation masked the total destruction of collective bargaining behind the rhetoric of national solidarity. **Hinge Question:** Why did the regime ban independent trade unions while simultaneously claiming to protect the rights of German workers?"
           }
@@ -18031,7 +18031,7 @@ export default {
           "question_badge": "Source Inference (Paper 3 Q1)",
           "question_type": "Source Inference (Paper 3 Q1)",
           "enquiry_question": "Give two things you can infer from Source E about the message and aims of the Strength Through Joy (Kraft durch Freude / KdF) organisation.",
-          "model_answer": "<p><strong>Inference 1:</strong> The organisation aimed to integrate industrial workers and factory production directly into the Nazi state.<br><strong>Detail from Source:</strong> The central Nazi swastika is placed at the exact core of an industrial cogwheel, symbolizing that manual labour and factory machinery were harnessed directly to the state.</p><p><strong>Inference 2:</strong> The regime sought to portray work and leisure as dynamic, joyful, and revitalizing for the German nation.<br><strong>Detail from Source:</strong> The cogwheel radiates outward dynamic sun rays in a sunburst design, visually communicating energy, vitality, and optimism under National Socialism.</p>",
+          "model_answer": "The KdF emblem represented subsidized leisure rewards (concerts, theater, cruise holidays) designed to win working-class loyalty to the regime.",
           "teacher_notes": {
             "source_context": "This official emblem of the DAF's Strength Through Joy organisation combines an industrial cogwheel with a swastika and radiating sunburst, symbolizing that hard factory work under party guidance brought joy, vitality, and health. **Hinge Question:** How does the design of the KdF emblem in Source E symbolize the regime’s effort to bind industrial labour to Nazi ideology?"
           }
@@ -18148,43 +18148,43 @@ export default {
         "instructions": "Answer these questions in full sentences from prior learning.",
         "items": [
           {
-            "question": "What compulsory six-month manual labour scheme was introduced for men aged 18–25 in 1935? (Last Lesson)",
+            "question": "What compulsory six-month manual labour scheme was introduced for men aged 18–25 in 1935?",
             "answer": "The Reich Labour Service (Reichsarbeitsdienst / RAD)."
           },
           {
-            "question": "Which Nazi organisation replaced independent trade unions on 2 May 1933? (Last Lesson)",
+            "question": "Which Nazi organisation replaced independent trade unions on 2 May 1933?",
             "answer": "The German Labour Front (Deutsche Arbeitsfront / DAF), led by Dr Robert Ley."
           },
           {
-            "question": "What DAF leisure division provided subsidized holidays, theatre tickets, and cruises? (Last Lesson)",
+            "question": "What DAF leisure division provided subsidized holidays, theatre tickets, and cruises?",
             "answer": "Strength Through Joy (Kraft durch Freude / KdF)."
           },
           {
-            "question": "Who was appointed Plenipotentiary for the Four-Year Plan in October 1936 to direct rearmament? (Last Lesson)",
+            "question": "Who was appointed Plenipotentiary for the Four-Year Plan in October 1936 to direct rearmament?",
             "answer": "Hermann Göring."
           },
           {
-            "question": "Who was the Reich Minister of Science, Education and National Culture? (Last Week)",
+            "question": "Who was the Reich Minister of Science, Education and National Culture?",
             "answer": "Bernhard Rust."
           },
           {
-            "question": "What law passed in 1939 made membership of the Hitler Youth strictly compulsory? (Last Week)",
+            "question": "What law passed in 1939 made membership of the Hitler Youth strictly compulsory?",
             "answer": "The First Decree for the Implementation of the Law on the Hitler Youth."
           },
           {
-            "question": "What economic plan arranged US loans to stabilize Germany's economy in 1924? (Prior Topic)",
+            "question": "What economic plan arranged US loans to stabilize Germany's economy in 1924?",
             "answer": "The Dawes Plan."
           },
           {
-            "question": "What failed armed coup did Adolf Hitler lead in Bavaria in November 1923? (Prior Topic)",
+            "question": "What failed armed coup did Adolf Hitler lead in Bavaria in November 1923?",
             "answer": "The Munich Beer Hall Putsch."
           },
           {
-            "question": "What July 1933 agreement was signed between Nazi Germany and the Vatican guaranteeing Catholic religious rights in exchange for political neutrality? (Prior Topic)",
+            "question": "What July 1933 agreement was signed between Nazi Germany and the Vatican guaranteeing Catholic religious rights in exchange for political neutrality?",
             "answer": "The Reichskonkordat (Concordat)."
           },
           {
-            "question": "Which Protestant pastor founded the anti-Nazi Confessing Church and was later imprisoned at Dachau? (Prior Topic)",
+            "question": "Which Protestant pastor founded the anti-Nazi Confessing Church and was later imprisoned at Dachau?",
             "answer": "Pastor Martin Niemöller."
           }
         ]
@@ -18830,7 +18830,7 @@ export default {
             "type": "4-mark",
             "question": "Study Interpretations 1 and 2. They give different views about the events of Kristallnacht in November 1938. What is the main difference between these views?",
             "prompt": "Explain the main difference between the two interpretations, quoting details from both to support your answer.",
-            "model": "The main difference between Interpretations 1 and 2 is their view on whether the violence of Kristallnacht was driven by deliberate, top-down state coordination or met with widespread public disapproval and silent conformity. Interpretation 1 argues that the pogrom was an organized state action, describing it as 'a highly coordinated, systematic operation planned and executed entirely from above by Joseph Goebbels and the paramilitary SA'. In contrast, Interpretation 2 emphasizes the public reaction, asserting that rather than enthusiastically participating, 'many ordinary Germans watched the destruction with deep alarm, concern, and disapproval', conforming and staying silent only because of 'terror of the Gestapo and fear of immediate arrest'.",
+            "model": "One key difference is that Interpretation 1 suggests *Kristallnacht* in November 1938 was a spontaneous outburst of public fury triggered by the murder of diplomat von Rath in Paris. In contrast, Interpretation 2 argues the violence was a planned, state-orchestrated pogrom carefully organized by Goebbels, the SA, and the SS.",
             "scaffolding": {
               "acronym": "Difference + Quotes Formula",
               "acronym_title": "Section B: Question 3(b) • Interpretation Difference [4 Marks • 6 Mins]",
@@ -18860,7 +18860,7 @@ export default {
             "question": "How far do you agree with Interpretation 2 about the events of Kristallnacht? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Interpretation 2 argues that while the state press depicted Kristallnacht as a spontaneous popular uprising, many ordinary Germans viewed the violence with deep alarm and disapproval, conforming only out of terror of the Gestapo. There is substantial historical evidence to support this view. Eyewitness accounts, foreign diplomatic reports from British and American consuls, and underground reports compiled by the Social Democratic opposition (SOPADE) confirm that widespread segments of the German public—particularly the Catholic and Protestant middle classes—were horrified by the open destruction of property, the arson in city centres, and the street brutality against defenseless neighbours. Many Germans were offended by the waste of valuable goods and feared that violence would bring international economic boycotts upon Germany. However, five years of pervasive police surveillance, the omnipresence of local Block Wardens (Blockleiter), and the terrifying knowledge that dissent led directly to indefinite detention under 'protective custody' (Schutzhaft) at Dachau or Sachsenhausen paralyzed the public into passive silence. Therefore, Interpretation 2 is accurate in arguing that outward compliance reflected state terror rather than universal public approval.<br><br>On the other hand, Interpretation 1 emphasizes that Kristallnacht was not a grassroots phenomenon at all, but a 'highly coordinated, systematic operation planned and executed entirely from above by Joseph Goebbels and the paramilitary SA'. This view is supported by overwhelming documentary evidence. Following the assassination of Ernst vom Rath in Paris by Herschel Grynszpan, Goebbels seized the occasion of the annual Munich Putsch dinner on 9 November 1938 to deliver a venomous speech authorizing attacks on Jewish property. Regional SA and SS leaders immediately issued telegraphic orders instructing stormtroopers in plain clothes to set fire to synagogues and loot shops, while Reinhard Heydrich instructed state police not to intervene except to protect Aryan property, and fire brigades were ordered only to prevent flames spreading to neighbouring German buildings. Over 1,000 synagogues were incinerated, 7,500 businesses destroyed, 91 Jews murdered, and 30,000 Jewish men deported to concentration camps. The subsequent one billion Reichsmark collective fine and the compulsory 'Aryanisation' decrees of December 1938 prove that the violence was a calculated state mechanism to destroy the economic existence of German Jewry.<br><br>In conclusion, having weighed both interpretations against the historical evidence, I agree with Interpretation 2 to a very large extent regarding the public reaction, but Interpretation 1 provides the more fundamental explanation for why Kristallnacht occurred. Kristallnacht was completely conceived, ordered, and executed by the upper echelons of the Nazi state apparatus, completely disproving the regime's claim of spontaneous public anger. However, Interpretation 2 correctly identifies why such horrific violence encountered zero active resistance: the totalitarian police state had thoroughly terrorized German society into atomized passivity, ensuring that widespread private disapproval never translated into collective opposition. Together, the two interpretations expose how centralized state terror and enforced public silence combined to facilitate the rapid escalation from legal discrimination to physical violence on the eve of the Second World War.",
+            "model": "Interpretation 2 argues that the anti-Jewish violence of *Kristallnacht* (November 1938) was deliberately orchestrated by Nazi leaders rather than a spontaneous public riot. There is overwhelming historical evidence for this: following the assassination of Ernst vom Rath by Herschel Grynszpan, Joseph Goebbels delivered an inflammatory speech to SA and party leaders in Munich, explicitly instructing that anti-Jewish demonstrations should 'not be prevented'. Secret telegraphs sent by Reinhard Heydrich to police and fire brigades ordered them not to intervene while SA men burned synagogues, but only to protect neighboring German property. Over 91 Jews were murdered, 1,000 synagogues burned, and 20,000 Jewish men were sent to concentration camps, proving systematic coordination.<br><br>On the other hand, Interpretation 1 reflects Nazi propaganda, which falsely claimed the pogrom was an uncontrollable eruption of popular German outrage. While some fanatic party members and civilians joined in the destruction of Jewish shops, widespread reports from the British Consul and ordinary diaries show that most Germans were shocked and disgusted by the open violence and destruction of property in the streets.<br><br>Furthermore, the aftermath proved the state's calculated economic motive: the regime fined the Jewish community 1 billion marks for the damage and banned them from operating businesses.<br><br>In conclusion, I agree entirely with Interpretation 2. *Kristallnacht* was not a spontaneous riot, but a state-organized turning point that marked the transition from legal discrimination to violent physical persecution.",
             "scaffolding": {
               "acronym": "Interpretation Verdict Framework",
               "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
@@ -19141,7 +19141,7 @@ export default {
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "enquiry_question": "How useful is Source A for an enquiry into how Nazi racial ideology and biological anti-Semitism were taught to German youth in schools in 1935?",
-          "model_answer": "<p>Source A is exceptionally useful because it demonstrates how Nazi racial ideology was disguised as objective science in school textbooks, teaching pupils that racial mixing would destroy the nation just as *\"weeds choke healthy crops.\"* As an official Ministry of Education approved textbook, it proves that biological anti-Semitism was systematically embedded into the secondary curriculum to condition youth for state-sponsored discrimination and persecution.</p>",
+          "model_answer": "The textbook shows how Nazi children were taught pseudo-scientific racial theory, indoctrinating pupils to view Jews as racial parasites.",
           "teacher_notes": {
             "source_context": "From 1933, the German education system was nazified to indoctrinate children in Social Darwinism, racial hierarchy, anti-Semitism, and the necessity of preserving \"Aryan blood purity\". **Hinge Question:** How did Nazi educational materials use pseudo-scientific language to justify racial prejudice and segregation?"
           },
@@ -19165,7 +19165,7 @@ export default {
           "question_badge": "Source Inference (Paper 3 Q1)",
           "question_type": "Source Inference (Paper 3 Q1)",
           "enquiry_question": "Give two things you can infer from Source B about Nazi methods of early anti-Jewish persecution in April 1933.",
-          "model_answer": "<p><strong>Inference 1:</strong> The Nazi regime used paramilitary street intimidation to physically isolate Jewish businesses and frighten the public away from patronizing them.<br><strong>Detail from Source:</strong> Four uniformed SA stormtroopers stand directly at the store entrance, physically blocking customer access and displaying boycott placards hanging from their necks.</p><p><strong>Inference 2:</strong> The boycott was organized as a coordinated propaganda campaign framing persecution as defensive patriotism.<br><strong>Detail from Source:</strong> The prominent signs appeal directly to German national pride (\"Deutsche! Wehrt Euch!\"), falsely portraying commercial persecution as an act of self-defense against supposed foreign boycotts.</p>",
+          "model_answer": "The photograph captures SA stormtroopers intimidating German shoppers outside Jewish stores during the nationwide boycott of April 1933.",
           "teacher_notes": {
             "source_context": "The nationwide boycott of 1 April 1933 was the Nazi regime's first official state-sponsored action targeting Jewish businesses, professionals, and department stores, enforced directly by paramilitary SA pickets. **Hinge Question:** Why did the regime use paramilitary street intimidation rather than formal legislation for its initial anti-Jewish economic attack in 1933?"
           }
@@ -19187,7 +19187,7 @@ export default {
           "question_badge": "Statutory Persecution & Citizenship",
           "question_type": "Statutory Persecution & Citizenship",
           "enquiry_question": "Explain the significance of the Nuremberg Laws in transforming antisemitism from street violence into institutional state law.",
-          "model_answer": "<p>The Nuremberg Laws were critically significant because they converted Nazi racial prejudice into permanent German statutory law. By stripping Jews of Reich citizenship (§ 2), the state formally reduced them to second-class subjects with zero voting or civil rights, excluding them from public employment and legal protection. Simultaneously, by criminalizing intermarriage (§ 1) and sexual relations (§ 2) under penalty of imprisonment for \"racial defilement\" (<em>Rassenschande</em>), the laws enforced biological apartheid and isolated the Jewish minority from the wider German community.</p>",
+          "model_answer": "The 1935 Nuremberg Laws stripped German Jews of citizenship rights and banned marriage or sexual relations between Jews and Aryans.",
           "teacher_notes": {
             "source_context": "Announced unanimously by Hitler at the 1935 Nuremberg Rally, these twin laws stripped German Jews of citizenship, civil voting rights, and criminalized intermarriage and intimate relations. **Hinge Question:** How did the Nuremberg Laws fundamentally alter the legal status of Jews from equal citizens into rightless subjects within Germany?"
           }
@@ -19209,7 +19209,7 @@ export default {
           "question_badge": "State-Orchestrated Terror & Heydrich",
           "question_type": "State-Orchestrated Terror & Heydrich",
           "enquiry_question": "How does Heydrich's secret telex in Source D refute the Nazi propaganda claim that Kristallnacht was a 'spontaneous outbreak of public fury'?",
-          "model_answer": "<p>Source D completely refutes the Nazi propaganda claim of a \"spontaneous outbreak\" by demonstrating that the violence was meticulously directed, controlled, and exploited by the state security apparatus. Heydrich instructed police to allow synagogues and businesses to burn while strictly safeguarding adjacent German property. Furthermore, his explicit order to arrest thousands of wealthy Jews and coordinate directly with concentration camps proves that mass terror, property destruction, and extortionate deportations were premeditated state operations rather than uncontrolled public riots.</p>",
+          "model_answer": "Heydrich's secret instructions prove *Kristallnacht* was officially planned, commanding police not to halt SA violence and to arrest 20,000 wealthy Jews.",
           "teacher_notes": {
             "source_context": "Dispatched in the early morning hours as synagogues were torched, Heydrich's explicit orders reveal that the pogrom was a centrally orchestrated state terror operation coordinated with police and concentration camps. **Hinge Question:** Why did the Nazi leadership take great care in Source D to protect non-Jewish property while commanding the destruction of Jewish institutions?"
           }
@@ -19231,7 +19231,7 @@ export default {
           "question_badge": "Contemporary Eye-Witness & Public Reaction",
           "question_type": "Contemporary Eye-Witness & Public Reaction",
           "enquiry_question": "How useful is Source E for an enquiry into the nature of the Kristallnacht pogrom and the reaction of ordinary German citizens?",
-          "model_answer": "<p><strong>Content &amp; Contextual Knowledge:</strong> Source E is exceptionally useful because it provides an independent, eye-witness account of the pogrom’s brutality and confirms that the violence was state-directed. Consul-General Smallbones confirms that mobs were \"clearly directed by party leaders\", that police actively protected the arsonists, and that over 30,000 Jewish men were arrested and marched to concentration camps like Buchenwald. Crucially, it provides vital evidence regarding public opinion, observing that the German public watched in \"stunned silence\" without \"popular enthusiasm\", paralyzed by fear of the Gestapo.</p><p><strong>Provenance &amp; Utility Evaluation:</strong> The utility is elevated by its provenance as a confidential British diplomatic cable written on the scene in Frankfurt within 24 hours of the pogrom. Because it was intended for the private information of the British Foreign Secretary rather than public consumption, Smallbones had no motive to exaggerate and was free from Nazi censorship. However, its utility is localized to Frankfurt, meaning it cannot speak for every German community, though consular dispatches from Berlin, Leipzig, and Munich in the same Foreign Office file recorded identical patterns of state coordination and passive civilian shock.</p>",
+          "model_answer": "The British Consul's report documents that ordinary German citizens were largely horrified by the brutal violence, looting, and arson of *Kristallnacht*.",
           "teacher_notes": {
             "source_context": "Written within 24 hours of the violence by a seasoned British diplomat on the scene in Frankfurt, this confidential cable provided the British government with an uncensored assessment of the violence and civilian reaction. **Hinge Question:** Why is an independent foreign diplomatic report particularly valuable when evaluating whether ordinary Germans supported the Kristallnacht pogrom?"
           }

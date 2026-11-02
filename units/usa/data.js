@@ -1289,7 +1289,7 @@ export default {
             "question": "1. Give two things you can infer from Source A about racial segregation in the American South in the early 1950s. [4 marks]",
             "stimulus": "Source A: A segregated railway waiting room sign in Jacksonville, Florida, early 1950s reading 'Colored Waiting Room'.",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that racial segregation was strictly enforced by law and physical barriers in public transport facilities.<br><strong>Details in the source that tell me this:</strong><br>A prominent, permanent metal sign suspended above the doorway explicitly designates the room for 'Colored' passengers only.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that Black Americans were systematically treated as second-class citizens with inferior, segregated public accommodations.<br><strong>Details in the source that tell me this:</strong><br>The separate, isolated entrance reflects the Jim Crow legal doctrine of 'separate but equal', which in practice enforced racial humiliation and public subjugation.</p>",
+            "model": "<strong>Inference 1:</strong> Racial segregation was strictly enforced in public transport facilities. <strong>Detail:</strong> The sign clearly indicates separate waiting rooms and ticket counters for 'Coloured' passengers.<br><br><strong>Inference 2:</strong> Segregation humiliated Black citizens daily. <strong>Detail:</strong> Black passengers were forced into physically separated, inferior facilities regardless of destination.",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -1556,47 +1556,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "rYynBR7heVQ",
           "url": "https://www.youtube.com/watch?v=rYynBR7heVQ",
           "title": "Jim Crow Laws and the Segregated South | Daily Dose Documentary",
           "duration": "3 mins 09 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Concise documentary examining state-sanctioned racial apartheid in the Deep South, tracing Jim Crow statutes and the 1896 Plessy v. Ferguson doctrine. Recommended Watch Window: 00:00–02:45 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast, accessible documentary surveying statutory racial segregation and disenfranchisement.",
-          "viewing_task": "<ol><li><strong>[00:45] Quick Check:</strong> Which 1896 US Supreme Court legal ruling established the doctrine of \"separate but equal\", providing constitutional legitimacy for Jim Crow segregation across Southern states?</li><li><strong>[02:10] Hinge Question:</strong> How did Southern state authorities systematically disenfranchise Black citizens through voter registration devices like literacy tests and poll taxes, despite the guarantees of the 15th Amendment?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> <em>Plessy v. Ferguson</em> (1896).</li><li><strong>Hinge Question:</strong> Southern state registrars administered subjective, impossibly confusing literacy tests designed to fail Black applicants regardless of education, while charging cumulative poll taxes that impoverished Black sharecroppers could not afford. Furthermore, \"grandfather clauses\" exempted poor illiterate white citizens whose ancestors could vote prior to the Civil War, ensuring near-total political exclusion backed by Ku Klux Klan vigilante terror.</li></ol>",
-          "id": "rYynBR7heVQ"
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:09 | Lesson Phase: Starter Hook | Tone Alert: Archival footage examining Plessy v Ferguson (1896) 'Separate but Equal' doctrine, disenfranchisement through poll taxes and literacy tests, and violent enforcement by the KKK.",
+          "viewing_task": "[01:00] Recall: What legal doctrine was established by Plessy v Ferguson in 1896, and how did Southern states use it?\n[02:15] Mechanism: Identify two voting restrictions used in Mississippi and Alabama to disenfranchise Black citizens.",
+          "model_answer": "Plessy v Ferguson established the 'Separate but Equal' doctrine, giving constitutional protection for state-mandated racial segregation across public facilities. Southern states used racially discriminatory literacy tests administered arbitrarily by white registrars and regressive poll taxes to strip Black Americans of their 15th Amendment voting rights."
         },
         {
           "type": "youtube",
+          "id": "SYiI7j6GW68",
           "url": "https://www.youtube.com/watch?v=SYiI7j6GW68",
           "title": "Emmett Till, Age 14, Abducted and Murdered | Voices of the Civil Rights Movement",
           "duration": "3 mins 33 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Archival testimony and historical overview of the August 1955 lynching of 14-year-old Emmett Till in Money, Mississippi, his mother Mamie Till Mobley's open-casket decision, and the sham trial. Recommended Watch Window: 00:30–03:20 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Solemn, documentary oral history detailing racially motivated murder and Southern courtroom corruption.",
-          "viewing_task": "<ol><li><strong>[01:05] Recall:</strong> Where was 14-year-old Emmett Till visiting from when he was abducted in Money, Mississippi in August 1955, and what was he accused of doing in Bryant's Grocery store?</li><li><strong>[02:15] Explain:</strong> Why did Mamie Till-Mobley insist upon an open-casket funeral in Chicago, and how did photographs published in <em>Jet</em> magazine transform public outrage across the Northern states?</li><li><strong>[03:00] Challenge:</strong> Evaluate why the acquittal of Roy Bryant and J.W. Milam by an all-white, all-male jury—and their subsequent paid confession in <em>Look</em> magazine—exposed the complete breakdown of the rule of law in Mississippi.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Till was visiting from Chicago, Illinois; he was accused of whistling at or flirting with Carolyn Bryant, a white shopkeeper.</li><li><strong>Explain:</strong> Mamie Till-Mobley declared that \"the whole world must see what they did to my boy.\" The horrific photographs of Till's mutilated body printed in <em>Jet</em> magazine and shown to over 50,000 funeral mourners shattered Northern complacency, visually exposing the barbaric reality of Southern white supremacist violence and mobilizing national civil rights activism.</li><li><strong>Challenge:</strong> The jury deliberated for barely 67 minutes (saying they took time out only to drink soda pop) before acquitting both men despite overwhelming eyewitness testimony. Because the US Double Jeopardy clause prevented retrial, Bryant and Milam sold their confession to journalist William Bradford Huie for $4,000 without fear of prosecution, proving to the nation that the Southern state judicial apparatus actively shielded white murderers against Black citizens.</li></ol>",
-          "id": "SYiI7j6GW68"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:33 | Lesson Phase: Enquiry Depth | Tone Alert: Explores the abduction and lynching of Emmett Till in Money, Mississippi (August 1955), the all-white jury acquittal, and Mamie Till-Mobley's open-casket decision.",
+          "viewing_task": "[01:10] Evidence: Why did Mamie Till-Mobley insist on holding an open-casket funeral in Chicago for her murdered son?\n[02:45] Historical Significance: How did the acquittal of Roy Bryant and J.W. Milam galvanise the national Civil Rights movement?",
+          "model_answer": "Mamie Till-Mobley insisted on an open-casket funeral so the world could witness the horrifying brutality of Southern white supremacist lynching, drawing 50,000 mourners and global press coverage. The rapid acquittal of Till's self-confessed killers by an all-white male jury exposed the complete lack of justice in Southern courts, inspiring a new generation of activists to demand federal intervention."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=rkQi6GBwmSA",
           "id": "rkQi6GBwmSA",
-          "title": "Till (2022) | Official Trailer (MGM Studios / Chinonye Chukwu)",
+          "url": "https://www.youtube.com/watch?v=rkQi6GBwmSA",
+          "title": "Till (2022) | Official Trailer | MGM Studios",
           "duration": "2 mins 30 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Heart-wrenching cinematic portrayal of Mamie Till-Mobley's courage following Emmett Till's murder.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film capture Mamie Till-Mobley's transformation from grieving mother into an unyielding civil rights activist?",
-          "model_answer": "Cinematic Discussion Focus: The trailer dramatises how Mamie Till-Mobley refused to hide her son's mutilated body, using visual truth to force white America to witness the savage horror of Southern lynching."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=YdGGYtO7wJs",
-          "id": "YdGGYtO7wJs",
-          "title": "Eyes on the Prize: Awakenings (1954–1956) | PBS Landmark Series",
-          "duration": "55 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 15:00–40:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: The definitive documentary on the Emmett Till trial and the birth of the movement.",
-          "viewing_task": "[18:00] Recall: What eyewitness testimony did Emmett Till's 64-year-old great-uncle Moses Wright bravely deliver in the segregated Mississippi courtroom?\n[28:30] Explain: How did Southern white politicians and newspapers close ranks to defend Roy Bryant and J.W. Milam despite national disgust?\n[38:15] Challenge: How did Emmett Till's murder ignite a generational determination among young Black Americans to destroy Jim Crow?",
-          "model_answer": "Recall: Wright stood up, pointed his finger directly at the white defendants, and said: 'There he is', risking his life by accusing white men in open court.\nExplain: White Southern newspapers claimed Northern civil rights groups were exaggerating the crime to attack Southern states' rights, raising defense funds for the killers.\nChallenge: Till was the same age as thousands of future activists (like John Lewis and Muhammad Ali); his murder proved that accommodation was fatal and that direct, non-violent mass resistance was essential."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Cinematic Dramatization | Tone Alert: Powerful cinematic trailer focusing on Mamie Till-Mobley's transformation into an international civil rights advocate.",
+          "viewing_task": "[00:50] Perspective: How does the film portray the stark contrast between Black life in Chicago versus the dangers of Jim Crow Mississippi?\n[01:45] Disciplinary Question: How did media publicity become a vital tactical weapon for civil rights leaders in the 1950s?",
+          "model_answer": "The film contrasts the relative freedom of Chicago with the deadly racial terror and required subservience in rural Mississippi. Civil rights leaders realized that Northern white public opinion could only be swayed when visual evidence of Southern racist violence was broadcast directly into American living rooms via national television and photojournalism."
         }
       ],
       "banner": "/units/usa/assets/sources/colored-waiting-room-sign.jpg",
@@ -1965,7 +1954,8 @@ export default {
           "qNum": 1,
           "question": "Explain why desegregation in education faced severe resistance in the years 1954–57. (12 marks)",
           "starter": "“One reason why desegregation in education faced severe resistance in the years 1954–57 was that Southern politicians organized systematic legal and political blockades.",
-          "model": "“One reason why desegregation in education faced severe resistance in the years 1954–57 was that Southern politicians organized systematic legal and political blockades.” Southern senators signed the [[Southern Manifesto]] in 1956, pledging to resist integration. State governors like [[Orval Faubus]] of Arkansas used state forces like the [[National Guard]] at Little Rock to directly defy federal court orders. {{Therefore, political obstruction by Southern leaders was a major reason why desegregation in education faced severe resistance in the years 1954–57 because it validated local white opposition and delayed federal enforcement.}}\n\n“A second reason why desegregation in education faced severe resistance in the years 1954–57 was the aggressive social backlash and vigilante terror from grassroots segregationist groups.” [[White Citizens' Councils]] were formed to apply economic pressure, firing Black workers who supported integration. The [[Ku Klux Klan]] revived, using bombings, threats, and mob violence at school gates to intimidate the [[Little Rock Nine]]. {{Therefore, grassroots white resistance and vigilante terror were key reasons why desegregation in education faced severe resistance in the years 1954–57 because they made attending integrated schools physically dangerous for Black students.}}\n\n“A third reason why desegregation in education faced severe resistance in the years 1954–57 was the reluctance of the federal government to enforce Supreme Court rulings, which emboldened segregationists.” President Eisenhower initially refused to publicly endorse the [[Brown v. Board of Education]] decision, and only sent the [[101st Airborne Division]] to Little Rock when the governor openly defied federal law. The school board then closed Little Rock high schools in 1958 to avoid integration. {{Therefore, weak federal enforcement and local school board closures were critical reasons why desegregation in education faced severe resistance in the years 1954–57 because they allowed Southern states to evade integration orders for years.}}"
+          "model": "A primary reason was the formation of organized white political resistance. Following the 1954 Brown v. Board ruling, Southern politicians issued the 'Southern Manifesto' (1956), denouncing the Supreme Court and pledging to resist integration by all lawful means. Across the South, White Citizens' Councils organized boycotts, closed integrated schools, and funded private white academies to prevent Black pupils from enrolling.<br><br>Furthermore, state governors actively used state power to block integration. In September 1957, Arkansas Governor Orval Faubus deployed the state National Guard to prevent nine Black students from entering Little Rock Central High School, directly defying federal court orders. He openly sided with violent white mobs surrounding the school to score political points with segregationist voters.<br><br>Ultimately, resistance was driven by deep-rooted racial hatred and fear of social change. Integration challenged the centuries-old doctrine of white supremacy. It required President Eisenhower to deploy the 101st Airborne Division to escort the Little Rock Nine, demonstrating that only federal military intervention could overcome Southern defiance.",
+          "model_answer": "A primary reason was the formation of organized white political resistance. Following the 1954 Brown v. Board ruling, Southern politicians issued the 'Southern Manifesto' (1956), denouncing the Supreme Court and pledging to resist integration by all lawful means. Across the South, White Citizens' Councils organized boycotts, closed integrated schools, and funded private white academies to prevent Black pupils from enrolling.<br><br>Furthermore, state governors actively used state power to block integration. In September 1957, Arkansas Governor Orval Faubus deployed the state National Guard to prevent nine Black students from entering Little Rock Central High School, directly defying federal court orders. He openly sided with violent white mobs surrounding the school to score political points with segregationist voters.<br><br>Ultimately, resistance was driven by deep-rooted racial hatred and fear of social change. Integration challenged the centuries-old doctrine of white supremacy. It required President Eisenhower to deploy the 101st Airborne Division to escort the Little Rock Nine, demonstrating that only federal military intervention could overcome Southern defiance."
         },
         {
           "qNum": 2,
@@ -2291,7 +2281,7 @@ export default {
               "Ku Klux Klan (KKK)"
             ],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "One major reason why it was exceptionally difficult for Black Americans to register to vote was the institutional use of deliberately biased <strong>literacy tests and poll taxes</strong> by white state officials. Southern registrars exercised total discretion over grading these tests, routinely giving Black applicants impossibly complex constitutional questions while exempting illiterate white voters under 'grandfather clauses'. Furthermore, impoverished Black sharecroppers could rarely afford the cumulative poll taxes required before voting, legally barring hundreds of thousands from the ballot box.<br><br>A second decisive reason was the pervasive threat of physical terror and extralegal violence orchestrated by white supremacist groups like the <strong>Ku Klux Klan (KKK)</strong> and local police forces. Black citizens who attempted to register faced beatings, arson, and lynching, while their names were published in local newspapers. Consequently, white employers immediately fired Black workers and landlords evicted tenant farmers who attempted to exercise their constitutional rights, creating an atmosphere of overwhelming terror.<br><br>Finally, an underlying barrier was the absolute <strong>lack of federal intervention or legal protection</strong>. Southern courts, judges, juries, and law enforcement officers were exclusively white and committed to upholding white supremacy. Without federal marshals or voting rights legislation to enforce the 15th Amendment, Black citizens had no legal recourse when local officials illegally denied them the right to vote.",
+            "model": "A primary reason was the widespread use of discriminatory legal obstacles. Southern registrar boards forced Black applicants to complete impossible literacy tests, where officials asked arbitrary constitutional questions designed to fail them. Additionally, poll taxes created a deliberate financial barrier for impoverished Black sharecroppers, systematically denying them the ballot.<br><br>Furthermore, pervasive economic intimidation prevented registration. Because voting lists were published publicly, Black citizens who attempted to register faced immediate retaliation from white employers and landlords. Sharecroppers were evicted from their land, workers were fired, and local banks refused farm loans. Consequently, the threat of destitution deterred the majority of Black families from exercising their rights.<br><br>Ultimately, the most decisive factor was violent terrorism by white supremacists. The Ku Klux Klan and White Citizens' Councils used lynchings, beatings, and firebombings against civil rights activists. Because Southern police and all-white juries protected perpetrators, Black citizens had no legal protection, leaving only 20% registered to vote across the South.",
             "scaffolding": {
               "acronym": "PEEL Structure Strip",
               "acronym_title": "3-Paragraph Causal Analysis (PEEL)",
@@ -2567,47 +2557,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "auATIIhUXVU",
           "url": "https://www.youtube.com/watch?v=auATIIhUXVU",
-          "title": "Civil Rights Movement: The Little Rock Nine | GCSE History | Homeschool History",
+          "title": "Civil Rights Movement: The Little Rock Nine | Homeschool History",
           "duration": "1 min 43 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Fast-paced GCSE revision hook illustrating the September 1957 Little Rock Central High crisis, Governor Orval Faubus' armed obstruction, and President Eisenhower's federal troop deployment. Recommended Watch Window: 00:00–01:40 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Concise GCSE exam breakdown with primary newsreel footage.",
-          "viewing_task": "<ol><li><strong>[00:35] Quick Check:</strong> Which Arkansas Governor deployed the state National Guard to physically block nine Black students from entering Central High School in Little Rock in September 1957?</li><li><strong>[01:15] Hinge Question:</strong> Why was President Dwight D. Eisenhower—a cautious president who preferred gradualism—constitutionally compelled to send the 101st Airborne Division to Little Rock?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Governor Orval Faubus.</li><li><strong>Hinge Question:</strong> Faubus was directly defying a federal district court order and challenging the supremacy of the US Constitution over state sovereignty. If a state governor could nullify Supreme Court rulings with armed state troops while white mobs violently assaulted students on global television, federal authority and the Rule of Law in the United States would collapse.</li></ol>",
-          "id": "auATIIhUXVU"
+          "teacher_guidance": "Recommended Watch Window: 00:00–01:43 | Lesson Phase: Starter Hook | Tone Alert: Concise animated summary of the 1957 crisis at Central High School in Little Rock, Arkansas.",
+          "viewing_task": "[00:40] Conflict: Why did Arkansas Governor Orval Faubus deploy the state National Guard to Central High School in September 1957?\n[01:15] Constitutional Power: How did President Dwight D. Eisenhower intervene to enforce federal court desegregation orders?",
+          "model_answer": "Governor Faubus used the Arkansas National Guard to block nine Black students from entering Central High, defying federal court orders to win re-election votes from segregationists. President Eisenhower federalized the Arkansas National Guard and dispatched 1,000 troops of the 101st Airborne Division to escort and protect the Little Rock Nine, demonstrating that states could not defy federal law."
         },
         {
           "type": "youtube",
+          "id": "jRYK4RWyUAo",
           "url": "https://www.youtube.com/watch?v=jRYK4RWyUAo",
           "title": "Brown v. Board of Education Explained | Landmark Cases in a Nutshell",
           "duration": "3 mins 46 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Constitutional breakdown of Chief Justice Earl Warren's unanimous 1954 ruling, Thurgood Marshall's NAACP legal strategy, and the structural weakness of the \"all deliberate speed\" formula. Recommended Watch Window: 00:30–03:30 • Lesson Phase: Guided Instruction & Legal Analysis. Tone Alert: Analytical constitutional history exploring Supreme Court jurisprudence.",
-          "viewing_task": "<ol><li><strong>[01:10] Recall:</strong> Which constitutional amendment and specific clause did NAACP chief counsel Thurgood Marshall successfully argue was violated by racial segregation in public schools?</li><li><strong>[02:15] Explain:</strong> How did Kenneth and Mamie Clark's psychological \"doll test\" provide crucial scientific evidence to prove that segregation generated feelings of inferiority in Black children?</li><li><strong>[03:10] Challenge:</strong> Analyze the tactical compromise in the 1955 <em>Brown II</em> follow-up ruling (\"with all deliberate speed\"): why did this vague wording invite Southern \"Massive Resistance\"?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The 14th Amendment's Equal Protection Clause.</li><li><strong>Explain:</strong> The Clarks presented Black children with identical black and white plastic dolls; the majority assigned positive traits to the white doll and negative traits to the black doll. This demonstrated empirically to Chief Justice Earl Warren that state-mandated segregation inflicted lasting psychological harm by internalizing racial inferiority, proving that \"separate educational facilities are inherently unequal.\"</li><li><strong>Challenge:</strong> Chief Justice Warren wanted a unanimous 9–0 decision to present a united front to the South, which required compromising with conservative justices who feared immediate enforcement would cause civil war. By ordering desegregation to proceed with \"all deliberate speed\" rather than setting a strict statutory deadline, the Supreme Court gave Southern school boards and segregationist politicians legal leeway to delay integration for over a decade.</li></ol>",
-          "id": "jRYK4RWyUAo"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:46 | Lesson Phase: Legal History | Tone Alert: Analytical breakdown of the NAACP's legal strategy led by Thurgood Marshall and Chief Justice Earl Warren's unanimous 1954 ruling.",
+          "viewing_task": "[01:30] Legal Argument: What psychological and sociological evidence did Thurgood Marshall present to prove segregation harmed Black children?\n[02:50] The Ruling: What was Earl Warren's core constitutional declaration regarding separate educational facilities?",
+          "model_answer": "Marshall cited the 'doll tests' by psychologists Kenneth and Mamie Clark, proving that state-enforced segregation generated a permanent sense of inferiority in Black children that violated the 14th Amendment's Equal Protection Clause. Chief Justice Earl Warren declared unanimously that 'in the field of public education, the doctrine of separate but equal has no place; separate educational facilities are inherently unequal.'"
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Y4jBXQM7mIk",
           "id": "Y4jBXQM7mIk",
+          "url": "https://www.youtube.com/watch?v=Y4jBXQM7mIk",
           "title": "Separate But Equal: The Little Rock Nine | Dramatic Recreation",
           "duration": "2 mins 40 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:40 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Dramatises 15-year-old Elizabeth Eckford walking alone through an enraged white mob at Central High.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the visual contrast between a calm teenage schoolgirl holding her notebook and hundreds of screaming adults capture the moral courage of the Little Rock Nine?",
-          "model_answer": "Cinematic Discussion Focus: The footage emphasizes Elizabeth Eckford's solitary dignity, wearing her clean starched dress and sunglasses, contrasted with the venomous hatred of white adults screaming behind her, creating an indelible image of moral superiority."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=1lMWxwn-E0A",
-          "id": "1lMWxwn-E0A",
-          "title": "Eyes on the Prize: Fighting Back (1957–1962) | PBS",
-          "duration": "55 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 10:00–35:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Rigorous documentary covering Governor Orval Faubus and Eisenhower's deployment of the 101st Airborne.",
-          "viewing_task": "[14:00] Recall: Why did Arkansas Governor Orval Faubus deploy the state National Guard to block nine Black students from entering Central High in September 1957?\n[24:00] Explain: Why was President Dwight D. Eisenhower—personally lukewarm on integration—compelled to send federal paratroopers of the 101st Airborne Division to Little Rock?\n[34:30] Challenge: What did Governor Faubus do the following year ('The Lost Year' 1958–59) to defy federal integration orders?",
-          "model_answer": "Recall: Faubus was facing a tough re-election campaign and sought to win racist white segregationist votes by defying the federal court.\nExplain: Faubus defied a direct order from a federal judge; Eisenhower had to assert the constitutional supremacy of the federal government over states' rights or see the rule of law collapse.\nChallenge: Rather than integrate, Faubus closed all four public high schools in Little Rock for the entire academic year, depriving 3,000 students of education in a spiteful attempt to preserve segregation."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:40 | Lesson Phase: Eye-Witness Drama | Tone Alert: Dramatic reconstruction of Elizabeth Eckford walking alone through an abusive, screaming mob outside Central High.",
+          "viewing_task": "[01:00] Emotional Context: What dangers faced Elizabeth Eckford when she arrived alone at Central High on 4 September 1957?\n[02:10] Consequence: How did Governor Faubus react in 1958 during the 'Lost Year' to resist integrated schooling?",
+          "model_answer": "Eckford did not receive the phone call coordinating the group arrival and walked into an enraged mob of hundreds of white adults spitting, shouting lynch threats, and barring her path. In 1958, rather than integrate, Faubus closed all four Little Rock public high schools for an entire academic year (the 'Lost Year'), forcing families to seek private or correspondence tuition."
         }
       ],
       "banner": "/units/usa/assets/sources/airborne-little-rock-patrol.jpg",
@@ -2780,8 +2759,7 @@ export default {
               "src": "/units/usa/assets/sources/rosa-parks-fingerprint.jpg",
               "source": "/units/usa/assets/sources/rosa-parks-fingerprint.jpg"
             }
-          ],
-          "isReversed": false
+          ]
         },
         {
           "act": 2,
@@ -2823,8 +2801,7 @@ export default {
               "src": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg",
               "source": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg"
             }
-          ],
-          "isReversed": true
+          ]
         },
         {
           "act": 3,
@@ -2870,7 +2847,7 @@ export default {
           "image": "/units/usa/assets/sources/warren-court-1954.jpg",
           "image_alt": "Official group photograph of the United States Supreme Court justices under Chief Justice Earl Warren",
           "caption": "The Warren Court (c. 1954). The US Supreme Court that decisively affirmed the Browder v. Gayle ruling on 13 November 1956, outlawing racial segregation on municipal buses as unconstitutional.",
-          "isReversed": false,
+          "isReversed": true,
           "text": "<span class=\"para-ref\">[4.1]</span> **White Retaliation and Judicial Victory:** As the bus company suffered catastrophic financial losses, municipal authorities retaliated ruthlessly. King's home was firebombed with his wife and infant daughter inside; eighty-nine boycott leaders were indicted under an archaic 1921 anti-conspiracy statute; and police issued thousands of bogus traffic tickets. Refusing to yield to violence, attorney Fred Gray bypassed state courts to file *Browder v. Gayle* in federal district court. On 13 November 1956, the US Supreme Court affirmed that Alabama's state and local bus segregation laws violated the 14th Amendment.\n\n<span class=\"para-ref\">[4.2]</span> **Founding the Southern Christian Leadership Conference (SCLC):** On 21 December 1956, Montgomery's buses were officially integrated, ending the boycott in complete victory. Building on this triumph, King convened a conference of sixty Black ministers in Atlanta in January 1957, establishing the Southern Christian Leadership Conference (SCLC). Adopting the motto *\"To save the soul of America\"*, the SCLC unified Black churches across the South into a coordinated regional vehicle for non-violent mass direct action, establishing King as the undisputed moral voice of the freedom struggle.",
           "paragraphs": [
             "<span class=\"para-ref\">[4.1]</span> **White Retaliation and Judicial Victory:** As the bus company suffered catastrophic financial losses, municipal authorities retaliated ruthlessly. King's home was firebombed with his wife and infant daughter inside; eighty-nine boycott leaders were indicted under an archaic 1921 anti-conspiracy statute; and police issued thousands of bogus traffic tickets. Refusing to yield to violence, attorney Fred Gray bypassed state courts to file *Browder v. Gayle* in federal district court. On 13 November 1956, the US Supreme Court affirmed that Alabama's state and local bus segregation laws violated the 14th Amendment.",
@@ -2900,8 +2877,7 @@ export default {
               "source_context": "Civil Rights Documentation Project, Moorland-Spingarn Research Center, Howard University. Reverend B.J. Simms, director of the Montgomery Improvement Association's transport committee for Oral historians and researchers studying non-violent logistics with the objective: To record the intricate daily operational mechanics required to transport thousands of daily commuters without public transit.. **Hinge Question:** What does the success of the carpool network reveal about the class solidarity of Montgomery's Black community?",
               "text": "We had over three hundred cars running every morning from five o'clock until nine, and from four in the afternoon until eight at night. We established forty-eight dispatch stations all over Montgomery. The white police commissioner tried to break the car pools by arresting our drivers for carrying more passengers than insurance allowed, and insurance companies cancelled policies on church vehicles. But we kept rollin'."
             }
-          ],
-          "isReversed": true
+          ]
         },
         {
           "act": 5,
@@ -3298,7 +3274,7 @@ export default {
             "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the reasons for the success of the Montgomery Bus Boycott (1955–56)? [8 marks]",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is useful for an enquiry into the success of the boycott because it demonstrates the critical role played by grassroots community organisation and alternative transport networks. From my own knowledge, I know that the Montgomery Improvement Association (MIA), led by Martin Luther King Jr., organised an elaborate carpool system involving over 300 private cars and church station wagons to transport 40,000 boycotters daily. The provenance of Source B makes it particularly valuable because, as a contemporary account by an active participant, it reveals the exceptional solidarity, planning, and discipline of the local Black community.<br><br>Source C is useful because it highlights the vital contribution of economic pressure and legal action in securing the boycott's victory. From my own knowledge, I know that Black citizens accounted for over 70% of bus ridership, depriving the Montgomery bus company of over 60% of its revenue, while NAACP lawyers fought the case to the Supreme Court in Browder v. Gayle (1956), which ruled segregated busing unconstitutional. The provenance of Source C adds strong historical value because it provides an analytical record of how local economic boycotts combined with federal judicial rulings to force municipal compliance. Combined, both sources provide high historical utility for understanding both the grassroots mobilization and the constitutional mechanisms that ensured victory.",
+            "model": "Source B is useful for an enquiry into the Montgomery Bus Boycott because it highlights the vital role of grassroots community organization. From my knowledge, when 40,000 Black commuters refused to use city buses following Rosa Parks' arrest, the Montgomery Improvement Association (led by Martin Luther King Jr.) organized a fleet of private carpools, volunteer church station wagons, and Black taxi drivers charging reduced fares to sustain the 381-day protest. As an eyewitness report by a local organizer, it provides authentic evidence of the community's discipline.<br><br>Source C is useful because it records the extreme economic pressure on the bus company and downtown white merchants, who lost thousands of dollars daily. However, as an interview with a white official, it tries to minimize the boycott's moral legitimacy. Overall, both sources are highly useful for showing how non-violent solidarity and economic pressure achieved the desegregation of Montgomery buses.",
             "scaffolding": {
               "acronym": "Source Utility Framework",
               "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
@@ -3565,47 +3541,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "_omQ841ZAWg",
           "url": "https://www.youtube.com/watch?v=_omQ841ZAWg",
           "title": "The Montgomery Bus Boycott of 1955 | Black American Heroes | HISTORY",
           "duration": "5 mins 33 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Explores the tactical discipline of the Montgomery Improvement Association (MIA), Rosa Parks' arrest, and the coordinated non-violent carpool network. Recommended Watch Window: 00:30–04:15 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Uplifting educational documentary with archival photographs and interviews.",
-          "viewing_task": "<ol><li><strong>[01:10] Quick Check:</strong> On what date in December 1955 was Rosa Parks arrested for refusing to surrender her seat in the \"colored section\" to a standing white passenger in Montgomery, Alabama?</li><li><strong>[03:20] Hinge Question:</strong> How did the Black community of Montgomery sustain the boycott for an extraordinary 381 days despite police harassment, bombings, and lost wages?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> 1 December 1955.</li><li><strong>Hinge Question:</strong> Through meticulous logistical organization by the Montgomery Improvement Association (led by Dr. Martin Luther King Jr.) and the Women's Political Council. They organized an intricate private carpool system with 300 cars operating out of 40 designated dispatch stations, negotiated reduced 10-cent fares with Black taxi drivers, and walked miles in solidarity, while Black churches provided essential financial and moral resilience.</li></ol>",
-          "id": "_omQ841ZAWg"
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Starter Hook | Tone Alert: Comprehensive documentary tracking Rosa Parks' arrest on 1 December 1955 and the 381-day community boycott.",
+          "viewing_task": "[01:15] Action: Why was Rosa Parks' refusal to surrender her seat on a Montgomery bus a planned act of defiance rather than mere physical tiredness?\n[03:40] Logistics: How did the Montgomery Improvement Association (MIA) organize transportation to sustain the 381-day boycott?",
+          "model_answer": "Rosa Parks was an experienced NAACP secretary who had attended training at the Highlander Folk School; she and local leaders deliberately chose her arrest as an unblemished test case to challenge bus segregation in federal courts. The MIA organized a sophisticated church-funded carpool system with over 300 private vehicles and 40 pickup stations, while Black-owned taxi companies offered reduced 10-cent fares."
         },
         {
           "type": "youtube",
+          "id": "ylOpide9dus",
           "url": "https://www.youtube.com/watch?v=ylOpide9dus",
           "title": "The Montgomery Bus Boycott: Crash Course Black American History #35 | CrashCourse",
           "duration": "12 mins 44 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Clint Smith provides critical historiographical deconstruction of the boycott: Rosa Parks' long-standing NAACP training, Claudette Colvin's prior arrest, and the decisive Browder v. Gayle Supreme Court ruling. Recommended Watch Window: 01:15–07:30 • Lesson Phase: Core Enquiry & Historiographical Deconstruction. Tone Alert: Energetic, academically rigorous lecture challenging simplified historical myths.",
-          "viewing_task": "<ol><li><strong>[02:30] Recall:</strong> Name the 15-year-old student arrested nine months before Rosa Parks for refusing to give up her bus seat, and explain why civil rights leaders chose not to build their boycott test case around her.</li><li><strong>[04:45] Explain:</strong> Explain why Rosa Parks was an ideal figurehead for the NAACP's campaign: what professional and activist credentials made her resilient against character assassination?</li><li><strong>[06:50] Challenge:</strong> Evaluate the dual factors that delivered final victory in Montgomery: did economic pressure on bus revenues or federal litigation in <em>Browder v. Gayle</em> (1956) play the decisive role?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Claudette Colvin. Civil rights leaders considered her too vulnerable because she was an unmarried, pregnant teenager whose situation Southern newspapers would exploit to discredit the moral authority of the movement.</li><li><strong>Explain:</strong> Rosa Parks was a respected, devout 42-year-old secretary of the local Montgomery NAACP chapter who had undergone activist training at the Highlander Folk School. Her impeccable personal reputation, quiet dignity, and professional stature made it impossible for segregationist authorities to dismiss her as a radical or criminal agitator.</li><li><strong>Challenge:</strong> While the 381-day economic boycott bankrupted the city bus company (depriving it of 75% of its passengers) and demonstrated mass Black collective solidarity, the city commission refused to surrender. Ultimate legal victory was achieved only when the federal courts in <em>Browder v. Gayle</em> ruled that bus segregation violated the 14th Amendment, forcing federal desegregation on 20 December 1956.</li></ol>",
-          "id": "ylOpide9dus"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–06:00 | Lesson Phase: Enquiry Depth | Tone Alert: Analytical evaluation of Jo Ann Robinson, the Women's Political Council, Martin Luther King Jr's non-violent philosophy, and Browder v Gayle.",
+          "viewing_task": "[02:20] Leadership: How did Jo Ann Robinson and the Women's Political Council initiate the boycott within 24 hours of Parks' arrest?\n[05:10] Legal Victory: What was the Supreme Court's ruling in Browder v Gayle (November 1956)?",
+          "model_answer": "Robinson and university volunteers mimeographed 35,000 leaflets overnight distributing them to Black schools and churches, calling for a one-day strike that proved 90% effective and launched the sustained boycott. In Browder v Gayle, the Supreme Court affirmed that segregation on state and municipal public buses was unconstitutional under the 14th Amendment, forcing Montgomery to desegregate on 20 December 1956."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=5y8DZUShVis",
           "id": "5y8DZUShVis",
-          "title": "Boycott (2001) | HBO Dramatic Trailer (Jeffrey Wright as Martin Luther King Jr)",
+          "url": "https://www.youtube.com/watch?v=5y8DZUShVis",
+          "title": "Boycott (2001) | HBO Dramatic Trailer",
           "duration": "2 mins 15 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Powerful drama chronicling the 381-day Montgomery carpool network.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film portray the immense logistical organisation—from church dispatchers to private taxi fleets—required to sustain the boycott for over a year?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows that the boycott was not spontaneous magic, but a meticulously organized military-style operation with dozens of volunteer drivers, dispatch hubs, and shoes resoled to keep 40,000 citizens walking."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=YdGGYtO7wJs",
-          "id": "YdGGYtO7wJs",
-          "title": "Eyes on the Prize: The Montgomery Bus Boycott | PBS Master Archive",
-          "duration": "55 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 32:00–53:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Original interviews with Rosa Parks, Coretta Scott King, and E.D. Nixon.",
-          "viewing_task": "[35:00] Recall: Who was Claudette Colvin, and why did civil rights leaders choose Rosa Parks rather than Colvin as the public face of the legal challenge?\n[42:30] Explain: How did the Women's Political Council, led by Jo Ann Robinson, mimeograph 35,000 boycott leaflets overnight following Parks' arrest?\n[49:00] Challenge: How did the Supreme Court ruling in Browder v. Gayle (1956) ultimately vindicate the non-violent economic boycott?",
-          "model_answer": "Recall: A 15-year-old student who refused to surrender her seat nine months before Parks; leaders feared an unmarried pregnant teenager would be smeared by Southern white press.\nExplain: Robinson and two students worked secretly through the night in Alabama State College's mimeograph room, organizing school teachers and church groups to distribute leaflets across Black neighborhoods.\nChallenge: The court struck down municipal bus segregation as a violation of the 14th Amendment's Equal Protection Clause, proving that non-violent collective protest combined with federal litigation could dismantle statutory segregation."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Leadership Study | Tone Alert: Jeffrey Wright's portrayal of a 26-year-old Martin Luther King Jr emerging as leader of the MIA.",
+          "viewing_task": "[00:50] Character Focus: Why was young newcomer MLK chosen to lead the Montgomery Improvement Association?\n[01:40] Philosophy: What core Christian and Gandhian principles guided King's doctrine of non-violent direct action?",
+          "model_answer": "King was chosen because as a newly arrived 26-year-old pastor at Dexter Avenue Baptist Church, he had not been compromised by existing political rivalries among Montgomery's veteran Black leadership. King blended Christian agape love ('turn the other cheek') with Mahatma Gandhi's satyagraha (soul-force), teaching that moral non-violence would shame oppressors and win national sympathy."
         }
       ],
       "banner": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
@@ -4550,47 +4515,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "2vxRVCj9Unc",
           "url": "https://www.youtube.com/watch?v=2vxRVCj9Unc",
           "title": "The Civil Rights Act of 1957: Support, Filibuster and Opposition | Wise Society",
           "duration": "7 mins 24 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Analyzes the legislative battle over the 1957 Civil Rights Act, Senator Strom Thurmond's record-breaking filibuster, and Lyndon B. Johnson's political maneuvering. Recommended Watch Window: 00:30–04:45 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Parliamentary and legislative documentary detailing Southern obstructionism.",
-          "viewing_task": "<ol><li><strong>[01:30] Quick Check:</strong> Which South Carolina Senator staged a continuous 24-hour and 18-minute filibuster in August 1957 to prevent the passage of the Civil Rights Act?</li><li><strong>[03:50] Hinge Question:</strong> Why was the Civil Rights Act of 1957 celebrated as the first federal civil rights legislation since Reconstruction, even though Southern amendments rendered its voting protections largely toothless?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Senator Strom Thurmond.</li><li><strong>Hinge Question:</strong> Symbolically and politically, it broke an 82-year drought of federal legislative paralysis on civil rights, establishing a Civil Rights Commission and a dedicated Civil Rights Division within the Department of Justice. However, Southern senators stripped out Part III (which would have authorized federal enforcement of school desegregation) and required jury trials for voting violations—guaranteeing all-white Southern juries would never convict voter suppression registrars.</li></ol>",
-          "id": "2vxRVCj9Unc"
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Starter Hook | Tone Alert: Explores the passage of the first civil rights legislation since Reconstruction and Strom Thurmond's 24-hour filibuster.",
+          "viewing_task": "[01:45] Congressional Obstruction: How did Southern 'Dixiecrat' senators use the Senate filibuster to delay and dilute the 1957 Civil Rights Bill?\n[04:10] Assessment: Why was the 1957 Act considered largely toothless in practice despite its symbolic significance?",
+          "model_answer": "Senator Strom Thurmond staged a record-breaking 24-hour, 18-minute filibuster, and Southern senators forced amendments requiring all-white Southern juries to try election officials accused of voter denial. The Act proved largely ineffective because white registrars easily bypassed federal voting monitors, adding only 3% more Black registered voters across the South by 1960."
         },
         {
           "type": "youtube",
+          "id": "S64zRnnn4Po",
           "url": "https://www.youtube.com/watch?v=S64zRnnn4Po",
           "title": "Civil Rights and the 1950s: Crash Course US History #39 | CrashCourse",
           "duration": "11 mins 58 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "John Green traces the Southern segregationist counter-offensive: the 1956 Southern Manifesto, White Citizens' Councils, state funding cuts, and KKK violence. Recommended Watch Window: 02:00–08:15 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Rapid, analytical survey of political resistance and white supremacist backlash.",
-          "viewing_task": "<ol><li><strong>[03:15] Recall:</strong> What document was signed in March 1956 by 101 Southern congressmen and senators, denouncing <em>Brown v. Board</em> as a \"clear abuse of judicial power\"?</li><li><strong>[05:30] Explain:</strong> Contrast the tactics of the White Citizens' Councils with the Ku Klux Klan: how did the Councils use economic coercion rather than nocturnal violence to suppress Black civil rights?</li><li><strong>[07:45] Challenge:</strong> Analyze the strategy of \"Massive Resistance\" declared by Senator Harry F. Byrd of Virginia: why did closing entire public school systems ultimately backfire on Southern white leaders?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The Southern Manifesto (officially the <em>Declaration of Constitutional Principles</em>).</li><li><strong>Explain:</strong> While the KKK relied on physical terror, church bombings, cross burnings, and beatings, the White Citizens' Councils comprised prominent white bankers, lawyers, and businessmen who waged economic warfare. They fired Black activists from their jobs, foreclosed on farm mortgages, cancelled business credit, evicted tenant farmers, and boycotted white merchants who favored integration.</li><li><strong>Challenge:</strong> Virginia enacted laws cutting off state funding and shutting down any public school that integrated under federal order (such as in Prince Edward County, which closed its schools for five years). This extreme strategy alienated white middle-class parents whose children were denied schooling, deterred Northern corporate investment in the South, and forced federal courts to strike down the shutdown laws as unconstitutional.</li></ol>",
-          "id": "S64zRnnn4Po"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–06:30 | Lesson Phase: Disciplinary Analysis | Tone Alert: High-level overview of the 'Southern Manifesto' (1956), White Citizens' Councils, and economic intimidation.",
+          "viewing_task": "[02:30] Southern Manifesto: What declaration did 101 Southern congressmen sign in 1956 pledging resistance to Supreme Court desegregation rulings?\n[05:20] Economic Retaliation: How did White Citizens' Councils use financial weapons against Black civil rights activists?",
+          "model_answer": "In the 1956 Southern Manifesto, 101 Southern congressmen denounced the Brown ruling as a 'clear abuse of judicial power' and pledged to use 'all lawful means' to resist integration. White Citizens' Councils used economic terrorism: firing Black employees who signed school petitions, evicting tenant farmers, calling in bank mortgages, and cutting off credit lines for Black businesses."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=6WuoiR0I8Es",
           "id": "6WuoiR0I8Es",
-          "title": "Mississippi Burning (1988) | Official Feature Trailer (Gene Hackman)",
+          "url": "https://www.youtube.com/watch?v=6WuoiR0I8Es",
+          "title": "Mississippi Burning (1988) | Official Feature Trailer",
           "duration": "2 mins 20 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:20 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Gripping Oscar-winning thriller depicting the 1964 KKK murder of three civil rights workers in Neshoba County.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film capture the pervasive climate of terror, police complicity, and the code of silence enforced by the Ku Klux Klan in the Jim Crow South?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows how the local sheriff's department, judges, and town elites were active Klansmen, illustrating that Black citizens faced an entire apparatus of state terror where the law offered no protection."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=1lMWxwn-E0A",
-          "id": "1lMWxwn-E0A",
-          "title": "The White Citizens' Councils & Massive Resistance | Civil Rights Archive",
-          "duration": "10 mins 15 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 00:30–09:30 | Lesson Phase: Structural Analysis | Tone Alert: Examines the 'uptown Klan' and economic retaliation against civil rights activists.",
-          "viewing_task": "[02:00] Recall: What was the 'Southern Manifesto' signed by 101 Southern congressmen in 1956?\n[05:15] Explain: How did White Citizens' Councils deploy economic strangulation (firing workers, evicting sharecroppers, foreclosing mortgages) against anyone joining the NAACP?\n[08:00] Challenge: How did the Civil Rights Act of 1957 expose the limits of federal legislation when Southern white registrars faced no criminal penalties for blocking Black voters?",
-          "model_answer": "Recall: A declaration condemning Brown v. Board as a 'clear abuse of judicial power' and pledging to use all lawful means to resist integration.\nExplain: Unlike the violent midnight Klan, Councils were composed of respectable bankers, doctors, and merchants who used financial power to ruin Black activists without wearing robes.\nChallenge: Strom Thurmond filibustered the bill for 24 hours, and compromise amendments gutted enforcement provisions, resulting in fewer than 3% more Black voters being registered across the Deep South by 1960."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:20 | Lesson Phase: Racial Terror in the Deep South | Tone Alert: Dramatic thriller examining the violent grip of the Ku Klux Klan and local law enforcement complicity.",
+          "viewing_task": "[00:50] Tone & Setting: How does the film capture the code of silence and intimidation surrounding Klan violence in rural Mississippi?\n[01:40] Law Enforcement: Why were federal FBI agents required to intervene against local sheriffs and police deputies?",
+          "model_answer": "The film illustrates how the Ku Klux Klan operated with complete impunity through terrifying cross-burnings, beatings, and murders protected by a wall of white silence. Local law enforcement officers and sheriffs were often active Klan members or sympathizers, making local prosecution of racial terror crimes impossible without federal intervention."
         }
       ],
       "banner": "/units/usa/assets/sources/little-rock-protest-1957.jpg",
@@ -4878,8 +4832,7 @@ export default {
               "source_context": "Bettmann Archive / Getty Images. Wire service press photographer embedded with the riders for National news readership with the objective: To document the militarized escort required to allow interstate buses to transit southern highways.. **Hinge Question:** Was Robert F. Kennedy's primary motive during the Freedom Rides civil rights justice or maintaining federal law and order?",
               "text": "When the Trailways bus pulled into the Birmingham terminal on Mother's Day, not a single police officer was in sight. Within seconds, a mob of forty men carrying iron pipes, lead clubs, and baseball bats stormed the waiting room. Before I could say a word, six men pounced on me, clubbing me over the head. I fell forward onto the concrete floor, bleeding profusely, and they kicked me repeatedly in the ribs. The police department under Bull Connor had agreed to give the Ku Klux Klan fifteen minutes to beat the Freedom Riders before dispatching a single squad car."
             }
-          ],
-          "isReversed": true
+          ]
         },
         {
           "act": 5,
@@ -5282,7 +5235,7 @@ export default {
             "question": "1. Give two things you can infer from Source A about the methods used by Southern police against civil rights demonstrators in Birmingham, Alabama (1963). [4 marks]",
             "stimulus": "Source A: Photograph of police dogs and high-pressure fire hoses deployed against young demonstrators in Birmingham, May 1963.",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that Southern police forces used extreme, disproportionate physical brutality against peaceful protesters.<br><strong>Details in the source that tell me this:</strong><br>Police under Eugene 'Bull' Connor deployed high-pressure fire hoses capable of tearing clothes and knocking demonstrators off their feet.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that authorities were determined to intimidate civil rights activists regardless of their age.<br><strong>Details in the source that tell me this:</strong><br>Attack dogs and aggressive police lines were unleashed directly against young student marchers participating in the Children's Crusade.</p>",
+            "model": "<strong>Inference 1:</strong> Southern police forces used extreme physical brutality against peaceful protesters. <strong>Detail:</strong> Police under Bull Connor turned high-pressure fire hoses and attack dogs on young demonstrators.<br><br><strong>Inference 2:</strong> Protesters deliberately maintained non-violent discipline despite state violence. <strong>Detail:</strong> Civil rights marchers knelt in prayer while being assaulted, provoking national outrage.",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -5549,47 +5502,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "1zBY6gkpbTg",
           "url": "https://www.youtube.com/watch?v=1zBY6gkpbTg",
           "title": "The Freedom Riders History | Smithsonian Magazine",
           "duration": "2 mins 13 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Archival newsreels and survivor testimony from the May 1961 CORE and SNCC Freedom Rides, testing Supreme Court desegregation of interstate bus terminals. Recommended Watch Window: 00:00–02:10 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast, dramatic archival footage showing white supremacist mob violence.",
-          "viewing_task": "<ol><li><strong>[00:40] Quick Check:</strong> In which Alabama town was a Greyhound bus carrying integrated Freedom Riders firebombed by a Ku Klux Klan mob on Mother's Day, 14 May 1961?</li><li><strong>[01:30] Hinge Question:</strong> Why did the Freedom Riders deliberately provoke arrests and endure violent beatings across the Deep South rather than relying solely on gradual courtroom litigation?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Anniston, Alabama.</li><li><strong>Hinge Question:</strong> The riders (led by James Farmer and John Lewis) understood that Southern state authorities were openly flouting the 1960 <em>Boynton v. Virginia</em> Supreme Court ruling banning terminal segregation. By physically placing their bodies in harm's way and filling Southern jails, they forced national television networks to broadcast white police and mob brutality into Northern living rooms, compelling Attorney General Robert F. Kennedy and the Interstate Commerce Commission (ICC) to strictly enforce federal desegregation.</li></ol>",
-          "id": "1zBY6gkpbTg"
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:13 | Lesson Phase: Starter Hook | Tone Alert: Overview of the May 1961 CORE bus rides testing the desegregation of interstate travel.",
+          "viewing_task": "[00:45] Strategic Aim: What Supreme Court ruling (Boynton v Virginia, 1960) did CORE Freedom Riders travel South to test?\n[01:30] Federal Action: How did Attorney General Robert F. Kennedy eventually respond to protect the riders?",
+          "model_answer": "The Freedom Riders sought to test whether Southern states were obeying the Supreme Court's Boynton v Virginia ruling, which banned racial segregation in interstate buses and terminal facilities. Attorney General Robert Kennedy dispatched 400 federal marshals to protect the riders and petitioned the Interstate Commerce Commission (ICC) to enforce complete desegregation on all interstate bus lines by November 1961."
         },
         {
           "type": "youtube",
+          "id": "F624q1jBd0Y",
           "url": "https://www.youtube.com/watch?v=F624q1jBd0Y",
           "title": "Student Civil Rights Activism: Crash Course Black American History #37 | CrashCourse",
           "duration": "11 mins 53 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Clint Smith analyzes the transition from legalism to mass direct-action youth protest: the Greensboro Four, Diane Nash, the Nashville workshops on non-violent direct action, and the founding of SNCC. Recommended Watch Window: 01:10–07:45 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Engaging, analytically deep examination of non-violent tactical discipline.",
-          "viewing_task": "<ol><li><strong>[02:00] Recall:</strong> Name the department store lunch counter in Greensboro, North Carolina where four Black college students staged the first famous sit-in on 1 February 1960.</li><li><strong>[04:30] Explain:</strong> Describe the rigorous non-violent direct-action training developed by James Lawson in Nashville: why were students trained to endure physical assault and insults without retaliating?</li><li><strong>[07:15] Challenge:</strong> Evaluate how the creation of the Student Nonviolent Coordinating Committee (SNCC) in April 1960 marked a decisive generational shift away from the traditional NAACP and SCLC leadership styles.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> F.W. Woolworth store in Greensboro.</li><li><strong>Explain:</strong> Rev. James Lawson organized workshops where students role-played being spat upon, shoved, having hot coffee poured on them, and hearing racial slurs. This psychological hardening ensured that during actual sit-ins, students remained totally peaceful, dignified, and silent. Televised contrasts between well-dressed, polite Black students studying at counters and vicious white mobs beating them stripped segregation of any moral defense.</li><li><strong>Challenge:</strong> Under the guidance of Ella Baker, SNCC rejected the hierarchical, preacher-dominated top-down model of Martin Luther King Jr.'s SCLC and the slow legalism of Roy Wilkins' NAACP. SNCC championed grassroots \"group-centered leadership\", empowering youth and local rural Southern communities to organize their own voter registration drives, despite extreme danger.</li></ol>",
-          "id": "F624q1jBd0Y"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–06:00 | Lesson Phase: Youth Mobilization | Tone Alert: Detailed breakdown of the Greensboro lunch counter sit-ins (February 1960) and the creation of SNCC.",
+          "viewing_task": "[01:50] Greensboro Four: How did four North Carolina A&T college students ignite a nationwide sit-in movement on 1 February 1960?\n[04:30] SNCC: What role did activist Ella Baker play in establishing the Student Nonviolent Coordinating Committee (SNCC)?",
+          "model_answer": "Four Black students sat at Woolworth's whites-only lunch counter and politely refused to leave after being denied service; within days, hundreds of students joined the sit-in, spreading to 55 cities in 13 states. Ella Baker organized the Raleigh conference for student demonstrators, advising them to remain independent from older groups like the SCLC to form SNCC and maintain radical, frontline grassroots protest."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=yFPydEXeCus",
-          "id": "yFPydEXeCus",
-          "title": "Freedom Riders: The Brutal Attack in Anniston | Feature Recreation",
-          "duration": "2 mins 45 secs",
+          "id": "r1EDOL9II0s",
+          "url": "https://www.youtube.com/watch?v=r1EDOL9II0s",
+          "title": "AMERICAN EXPERIENCE: Freedom Riders: The Young Witness | PBS",
+          "duration": "5 mins 00 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:45 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Visceral dramatisation of the firebombing of the Greyhound bus outside Anniston, Alabama, on Mother's Day 1961.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the dramatisation depict the willingness of young student activists to endure lethal violence to expose federal inaction?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows Klansmen slashing tires and hurling a firebomb through the window while holding the bus doors shut, capturing the terrifying physical courage of multiracial students testing federal law."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Fym2q-Jajnc",
-          "id": "Fym2q-Jajnc",
-          "title": "Eyes on the Prize: Ain't Scared of Your Jails (1960–1961) | PBS",
-          "duration": "55 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 10:00–35:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Definitive documentary on the student sit-ins and Freedom Rides.",
-          "viewing_task": "[14:00] Recall: What pledge did SNCC students take when sitting at segregated lunch counters in Greensboro?\n[26:30] Explain: How did CORE's Freedom Rides test the enforcement of the Supreme Court's Boynton v. Virginia ruling?\n[38:00] Challenge: How did televised footage of firebombed buses outside Anniston force Attorney General Robert Kennedy to dispatch 400 federal marshals to Alabama?",
-          "model_answer": "Recall: To remain peaceful, polite, quiet, and not strike back when assaulted, verbally abused, or covered in hot coffee.\nExplain: Boynton outlawed segregation in interstate transit terminals, but Southern states ignored it; multiracial riders deliberately rode buses to force federal intervention.\nChallenge: Front-page newspaper photos of the burning bus shocked the world; Kennedy realized local police had abandoned riders to KKK mobs and sent federal marshals to restore order."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Eye-Witness Testimony | Tone Alert: Chilling eye-witness account of the Mother's Day firebombing of the Greyhound bus outside Anniston, Alabama (14 May 1961).",
+          "viewing_task": "[01:30] Anniston Ambush: What happened when the Greyhound bus arrived outside Anniston, Alabama on 14 May 1961?\n[03:45] Personal Testimony: How does eyewitness Janie Forsyth McKinney describe bringing water to the choking, bloodied passengers?",
+          "model_answer": "A Ku Klux Klan mob armed with iron pipes and axes slashed the bus tyres, chased it outside town, smashed its windows, and threw an incendiary firebomb inside while barricading the doors to burn the riders alive. Twelve-year-old Janie Forsyth McKinney bravely walked into the violent mob with a pitcher of water and cups to wash the burning eyes and wounds of the escaping, choking passengers."
         }
       ],
       "banner": "/units/usa/assets/sources/greensboro-sit-in-counter.jpg",
@@ -5958,7 +5900,8 @@ export default {
           "qNum": 1,
           "question": "Explain why civil rights legislation was passed in the years 1964–65. (12 marks)",
           "starter": "“One reason why civil rights legislation was passed in the years 1964–65 was that non-violent direct action campaigns provoked violent responses that shocked the national public.",
-          "model": "“One reason why civil rights legislation was passed in the years 1964–65 was that non-violent direct action campaigns provoked violent responses that shocked the national public.” Campaigns in Birmingham (1963) and Selma (1965) were met with police dogs, water cannons under [[Bull Connor]], and state trooper attacks on [[Bloody Sunday]]. Televised media coverage of this brutality generated massive public sympathy and demand for reform. {{Therefore, the public outrage generated by media coverage of white violence was a primary reason why civil rights legislation was passed in the years 1964–65 because it made federal inaction politically impossible.}}\n\n“A second reason why civil rights legislation was passed in the years 1964–65 was the strong legislative leadership and political skill of President Lyndon B. Johnson.” Johnson used the national tragedy of [[John F. Kennedy's assassination]] to lobby congressmen, passing the [[Civil Rights Act of 1964]]. He broke a record-breaking Southern filibuster and pushed through the [[Voting Rights Act of 1965]] after Selma. {{Therefore, President Johnson's political pressure and commitment were crucial reasons why civil rights legislation was passed in the years 1964–65 because they bypassed Southern obstruction in Congress.}}\n\n“A third reason why civil rights legislation was passed in the years 1964–65 was the growing pressure from mass protests and the threat of civil unrest if voting rights were denied.” The 1963 [[March on Washington]] mobilized 250,000 people, showing widespread support. In Selma, the complete exclusion of Black voters from registrars highlighted the failure of local democracy, forcing the federal government to intervene. {{Therefore, the escalation of mass protests and local voting blockades were vital reasons why civil rights legislation was passed in the years 1964–65 because they forced the federal government to establish national voting safeguards.}}"
+          "model": "A primary catalyst was the national shock caused by Southern police brutality during peaceful demonstrations. In 1963, Bull Connor's brutal suppression of student marchers in Birmingham, followed by the violent attacks on voting rights marchers at the Edmund Pettus Bridge on 'Bloody Sunday' in Selma (March 1965), outraged television viewers nationwide and generated irresistible moral momentum for reform.<br><br>Furthermore, non-violent mass mobilization proved the unstoppable demand for civil rights. The 1963 March on Washington demonstrated massive multiracial solidarity, while grassroots campaigns by SCLC and SNCC exposed the violent disenfranchisement of Black citizens, making federal inaction politically impossible.<br><br>Ultimately, the legislative driving force was President Lyndon B. Johnson. Utilizing the national grief over President Kennedy's assassination and his own parliamentary skill, Johnson persuaded Congress to break Southern filibusters. Consequently, he signed the landmark Civil Rights Act (1964), outlawing segregation in public facilities, and the Voting Rights Act (1965), ending literacy tests and guaranteeing Black suffrage.",
+          "model_answer": "A primary catalyst was the national shock caused by Southern police brutality during peaceful demonstrations. In 1963, Bull Connor's brutal suppression of student marchers in Birmingham, followed by the violent attacks on voting rights marchers at the Edmund Pettus Bridge on 'Bloody Sunday' in Selma (March 1965), outraged television viewers nationwide and generated irresistible moral momentum for reform.<br><br>Furthermore, non-violent mass mobilization proved the unstoppable demand for civil rights. The 1963 March on Washington demonstrated massive multiracial solidarity, while grassroots campaigns by SCLC and SNCC exposed the violent disenfranchisement of Black citizens, making federal inaction politically impossible.<br><br>Ultimately, the legislative driving force was President Lyndon B. Johnson. Utilizing the national grief over President Kennedy's assassination and his own parliamentary skill, Johnson persuaded Congress to break Southern filibusters. Consequently, he signed the landmark Civil Rights Act (1964), outlawing segregation in public facilities, and the Voting Rights Act (1965), ending literacy tests and guaranteeing Black suffrage."
         },
         {
           "qNum": 2,
@@ -6289,7 +6232,7 @@ export default {
               "The assassination of President Kennedy (November 1963)"
             ],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "One major reason why the Civil Rights Act was passed was the national and international outrage generated by the <strong>Birmingham Campaign of May 1963</strong>. Televised images of Bull Connor’s police dogs attacking unarmed Black children and fire hoses tearing into demonstrators shocked the American public and deeply embarrassed the US government on the global Cold War stage. President Kennedy went on national television the following month declaring civil rights a 'moral issue', directly compelling the executive branch to draft comprehensive federal desegregation legislation.<br><br>A second decisive factor was the <strong>assassination of President John F. Kennedy in November 1963</strong> and the political skill of President Lyndon B. Johnson. Johnson used the immense wave of national grief to frame the passage of civil rights legislation as a sacred memorial to the fallen president, urging Congress not to let Kennedy's legacy fail. Furthermore, Johnson expertly leveraged his decades of congressional experience to break a record 54-day filibuster by Southern Democrats in the Senate.<br><br>Finally, the massive mobilization of over 250,000 peaceful citizens at the <strong>March on Washington in August 1963</strong> demonstrated unprecedented multiracial support for federal action. Martin Luther King Jr.'s iconic 'I Have a Dream' speech crystallized national moral sentiment, proving to wavering congressional moderates that civil rights could no longer be postponed without triggering catastrophic social unrest.",
+            "model": "A primary factor was the public outrage generated by police violence during the 1963 Birmingham campaign. When Police Chief Bull Connor turned high-pressure fire hoses and snarling attack dogs on teenage protesters, television broadcasts shocked the national conscience. This widespread moral revulsion convinced President John F. Kennedy that racial injustice could no longer be ignored, prompting him to introduce civil rights legislation in June 1963.<br><br>Furthermore, the non-violent momentum of the civil rights movement built overwhelming political pressure. The August 1963 March on Washington brought 250,000 demonstrators to the Lincoln Memorial, where Martin Luther King Jr. delivered his iconic 'I Have a Dream' speech. This dignified demonstration proved that racial equality enjoyed broad multi-racial support across Northern and Western states.<br><br>Ultimately, the decisive political catalyst was President Lyndon B. Johnson's legislative mastery following Kennedy's assassination. Johnson framed the bill as a sacred national memorial to the fallen president. By overcoming a 54-day filibuster by Southern senators, Johnson signed the Civil Rights Act in July 1964, legally ending Jim Crow segregation.",
             "scaffolding": {
               "acronym": "PEEL Structure Strip",
               "acronym_title": "3-Paragraph Causal Analysis (PEEL)",
@@ -6565,47 +6508,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=x6t7vVTxaic",
-          "title": "Selma (2014, dir. Ava DuVernay) Theatrical Trailer | Paramount Pictures",
-          "duration": "2 mins 32 secs",
-          "pathway": "Cinematic Focus",
-          "teacher_guidance": "Hollywood historical dramatization of the 1965 Selma-to-Montgomery voting rights campaign, starring David Oyelowo as Martin Luther King Jr., illustrating the standoff at Edmund Pettus Bridge and White House pressure on LBJ. Recommended Watch Window: 00:00–02:30 • Lesson Phase: Cinematic Starter Hook (0–3m). Tone Alert: Powerful, cinematic dramatization capturing voter disenfranchisement, moral confrontation, and political negotiation.",
-          "viewing_task": "<strong>Cinematic Discussion Focus:</strong> How does Ava DuVernay's portrayal of the Selma campaign depict the strategic friction between Dr. Martin Luther King Jr.'s non-violent moral confrontation and President Lyndon B. Johnson's political reluctance to pass a voting rights bill before resolving other domestic issues?",
-          "model_answer": "The trailer and film dramatically contrast King's insistence that voting is the foundational right without which Black Americans remain helpless against police violence and poverty, against LBJ's initial desire to delay voting rights legislation to focus on his \"War on Poverty.\" King's strategy is depicted not simply as moral prayer, but as calculated political theatre designed to provoke Selma Sheriff Jim Clark into public violence on television, thereby creating an unstoppable moral crisis that forces the federal government into legislative action.",
-          "id": "x6t7vVTxaic"
-        },
-        {
-          "type": "youtube",
+          "id": "TLberHUJgHY",
           "url": "https://www.youtube.com/watch?v=TLberHUJgHY",
           "title": "The Fight Against Segregation in Birmingham | Black American Heroes | HISTORY",
           "duration": "3 mins 47 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Traces Project C (Confrontation) in Birmingham, Alabama (April–May 1963), the Children's Crusade, Bull Connor's high-pressure fire hoses and attack dogs, and the 16th Street Baptist Church bombing. Recommended Watch Window: 00:30–03:30 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Graphic historical footage of state police violence against young demonstrators.",
-          "viewing_task": "<ol><li><strong>[01:15] Quick Check:</strong> Which notorious Birmingham Commissioner of Public Safety ordered police attack dogs and high-pressure fire hoses to be turned on marching school children during the May 1963 Children's Crusade?</li><li><strong>[02:45] Hinge Question:</strong> How did televised imagery of Bull Connor's brutality directly compel President John F. Kennedy to introduce the landmark Civil Rights Act on national television in June 1963?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Eugene \"Bull\" Connor.</li><li><strong>Hinge Question:</strong> The international broadcast of 100-pound water pressure tearing the clothes off Black teenagers and German Shepherds biting children sickened the American public and deeply embarrassed the Kennedy administration on the Cold War world stage (Soviet propaganda weaponized Birmingham to mock US claims of leading the \"free world\"). JFK delivered a historic address stating that civil rights was a moral issue as old as the scriptures, committing his presidency to a comprehensive federal civil rights bill.</li></ol>",
-          "id": "TLberHUJgHY"
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:47 | Lesson Phase: Starter Hook | Tone Alert: Explores Project C (Confrontation) in Birmingham, Alabama (May 1963) and Eugene 'Bull' Connor's violent response.",
+          "viewing_task": "[01:10] Project C: Why did King and the SCLC choose Birmingham, Alabama as the target for non-violent direct action in spring 1963?\n[02:40] Bull Connor: What brutal methods did Police Commissioner Bull Connor unleash against student marchers in the Children's Crusade?",
+          "model_answer": "Birmingham was recognized as America's most thoroughly segregated and violent city ('Bombingham'); King knew that challenging the notorious segregationist Bull Connor would provoke dramatic media confrontations. Connor unleashed snarling police attack dogs and directed high-pressure 100-pound firehoses capable of ripping bark off trees directly at singing schoolchildren, horrifying international audiences."
         },
         {
           "type": "youtube",
+          "id": "Vd6D64Ai49I",
           "url": "https://www.youtube.com/watch?v=Vd6D64Ai49I",
           "title": "The Story of Bloody Sunday | Black American Heroes | HISTORY",
           "duration": "4 mins 14 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Archival analysis of the 7 March 1965 \"Bloody Sunday\" march across the Edmund Pettus Bridge in Selma, Alabama, Alabama State Troopers' tear gas attack, and the passage of the Voting Rights Act. Recommended Watch Window: 00:30–03:50 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Compelling archival narrative detailing the brutal repression of non-violent voting rights marchers.",
-          "viewing_task": "<ol><li><strong>[01:10] Recall:</strong> What was the bridge named in Selma, Alabama, where 600 civil rights marchers led by John Lewis and Hosea Williams were ambushed by mounted state troopers on 7 March 1965?</li><li><strong>[02:30] Explain:</strong> Explain the key enforcement mechanisms introduced by the Voting Rights Act of 1965 that permanently dismantled Southern voter suppression.</li><li><strong>[03:30] Challenge:</strong> Evaluate why Selma was the political catalyst for the Voting Rights Act: why was legislative action on voting rights impossible to delay after ABC interrupted its movie broadcast to show the footage?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The Edmund Pettus Bridge (named after a Confederate general and Grand Dragon of the Alabama Ku Klux Klan).</li><li><strong>Explain:</strong> The 1965 Act outlawed all discriminatory literacy tests and voter comprehension devices across the United States. Crucially, Section 5 empowered federal examiners to travel into Southern counties where registration was below 50% to directly register Black voters under federal protection, while requiring Southern states with histories of discrimination to obtain federal \"preclearance\" before changing any voting laws.</li><li><strong>Challenge:</strong> ABC interrupted its prime-time national broadcast of the film <em>Judgment at Nuremberg</em> (about Nazi war crimes) to air raw footage of Alabama troopers beating peaceful American citizens with nightsticks and tear gas. The moral shock of seeing Nazi atrocities juxtaposed with American state violence sparked nationwide protests, giving President Lyndon B. Johnson the political capital to address a joint session of Congress with the words \"And we shall overcome\", passing the act within five months.</li></ol>",
-          "id": "Vd6D64Ai49I"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:14 | Lesson Phase: Enquiry Depth | Tone Alert: Focuses on the 7 March 1965 march from Selma to Montgomery and the assault on the Edmund Pettus Bridge.",
+          "viewing_task": "[01:15] Selma Voting: Why were only 383 Black citizens registered to vote out of 15,000 eligible adults in Dallas County, Alabama in 1965?\n[02:50] Edmund Pettus Bridge: What happened when 600 peaceful marchers crossed the bridge on 'Bloody Sunday'?",
+          "model_answer": "Local registrars required Black applicants to answer absurdly impossible constitutional questions and operated registration offices for only two days a month under Sheriff Jim Clark's intimidation. On 'Bloody Sunday', Alabama State Troopers on horseback and possemen armed with tear gas, billy clubs, and bullwhips brutally charged and beat the peaceful marchers on live television, fracturing John Lewis's skull."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=5EI_VNORoe8",
-          "id": "5EI_VNORoe8",
-          "title": "Eyes on the Prize: No Easy Walk (1961–1963) | PBS Landmark Series",
-          "duration": "55 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 18:00–45:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Bull Connor, the Children's Crusade, and the March on Washington.",
-          "viewing_task": "[22:00] Recall: Why did Martin Luther King Jr and SCLC target Birmingham, Alabama ('Bombingham') for Project C in May 1963?\n[32:30] Explain: How did Bull Connor's deployment of high-pressure firehoses and snarling German Shepherd dogs against teenage school marchers shock the world?\n[41:15] Challenge: How did the Birmingham campaign directly compel President John F. Kennedy to introduce the landmark Civil Rights Act on national television on 11 June 1963?",
-          "model_answer": "Recall: Because Commissioner of Public Safety Bull Connor was notoriously volatile and guaranteed to provide dramatic televised violence that would provoke national intervention.\nExplain: Firehoses tore bark off trees and stripped clothes off children; evening network news broadcast the horrific images into millions of living rooms, galvanizing international outrage.\nChallenge: Kennedy realized racial apartheid had become an urgent moral crisis and national security embarrassment; he announced sweeping civil rights legislation outlawing public segregation."
+          "id": "x6t7vVTxaic",
+          "url": "https://www.youtube.com/watch?v=x6t7vVTxaic",
+          "title": "Selma (2014, dir. Ava DuVernay) Theatrical Trailer | Paramount Pictures",
+          "duration": "2 mins 32 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:32 | Lesson Phase: Cinematic Turning Point | Tone Alert: Academy Award-winning portrayal of MLK's political maneuvering with President Lyndon B. Johnson leading to the Voting Rights Act of 1965.",
+          "viewing_task": "[00:55] Political Pressure: How did the national outrage over Selma force President Lyndon B. Johnson to address Congress in March 1965?\n[01:50] Legislative Milestone: What core protections did the Voting Rights Act of 1965 establish for minority voters?",
+          "model_answer": "President Johnson delivered a historic televised joint session address adopting the movement's slogan 'And we shall overcome' and demanding immediate voting legislation. The Voting Rights Act of 1965 outlawed all literacy tests, authorized federal examiners to register voters in recalcitrant Southern counties, and required states with histories of discrimination to obtain federal preclearance before changing voting laws."
         }
       ],
       "banner": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
@@ -7294,7 +7226,7 @@ export default {
             "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the causes of the riots in northern and western cities between 1965 and 1967? [8 marks]",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is useful for an enquiry into the urban riots because it illustrates the profound economic deprivation, de facto segregation, and police brutality experienced by Black Americans in northern ghettos like Watts, Los Angeles. From my own knowledge, I know that while the Civil Rights Act had dismantled legal Jim Crow in the South, it did nothing to resolve northern unemployment (often double the white rate), substandard tenement housing, and aggressive police profiling. The provenance of Source B makes it particularly valuable because, as a contemporary testimony from an inner-city resident, it reveals the deep sense of systemic hopelessness that erupted into spontaneous rebellion.<br><br>Source C is useful because it provides official, data-driven analysis of the structural causes of urban unrest. From my own knowledge, I know that the 1968 Kerner Commission concluded that the riots were caused by white racism, warning that America was 'moving toward two societies, one black, one white—separate and unequal'. The provenance of Source C is valuable because, as an independent federal investigation commissioned by President Johnson, it offers an authoritative, objective assessment of how governmental neglect and institutional discrimination sparked nationwide urban upheaval. Together, both sources provide high historical utility for understanding both the lived frustration on the streets and the macroeconomic failures that caused the riots.",
+            "model": "Source B is useful for an enquiry into the urban race riots (1964–67) because it illustrates the severe economic deprivation, slum housing, and police harassment experienced by Black Americans in northern cities like Detroit and Watts. From my knowledge, the 1968 Kerner Commission concluded that riots were triggered by systemic poverty and police brutality, famously warning of 'two societies, separate and unequal'. As a contemporary resident's account, it gives genuine insight into ghetto frustration.<br><br>Source C is useful because it shows President Johnson expressing dismay that civil rights laws had not ended urban violence. Contextually, while the Civil Rights Act (1964) and Voting Rights Act (1965) ended legal segregation in the South, they did not solve northern poverty or job discrimination. Overall, both sources are very useful for explaining why riots erupted despite legislative progress.",
             "scaffolding": {
               "acronym": "Source Utility Framework",
               "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
@@ -7567,47 +7499,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "6UBOl5Yq-ms",
           "url": "https://www.youtube.com/watch?v=6UBOl5Yq-ms",
-          "title": "The Birth of the Black Panthers | Black History in Two Minutes or so",
+          "title": "The Birth of the Black Panthers | Black History in Two Minutes",
           "duration": "2 mins 54 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Concise overview of the founding of the Black Panther Party for Self-Defense in Oakland, California (1966) by Huey Newton and Bobby Seale, exploring armed patrols and community survival programs. Recommended Watch Window: 00:00–02:40 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast, accessible breakdown distinguishing armed self-defense from offensive violence.",
-          "viewing_task": "<ol><li><strong>[00:45] Quick Check:</strong> In which California city was the Black Panther Party for Self-Defense founded in October 1966 by Huey P. Newton and Bobby Seale?</li><li><strong>[01:45] Hinge Question:</strong> Why did the Black Panthers choose the black panther as their symbol, and how did their armed neighborhood patrols differ from the non-violent philosophy of Dr. Martin Luther King Jr.?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Oakland, California.</li><li><strong>Hinge Question:</strong> The black panther was chosen because it never attacks first, but if cornered, it defends itself fiercely. Unlike MLK's philosophy of Christian non-violent passive resistance, the Panthers asserted the constitutional Second Amendment right to carry firearms openly to protect Black neighborhoods from systematic police brutality, monitoring police stops with law books and loaded shotguns while rejecting integration into a capitalist system they deemed inherently exploitative.</li></ol>",
-          "id": "6UBOl5Yq-ms"
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:54 | Lesson Phase: Starter Hook | Tone Alert: Explores Huey P. Newton and Bobby Seale founding the Black Panther Party for Self-Defense in Oakland, California (1966).",
+          "viewing_task": "[00:50] Armed Self-Defense: What was the primary motivation behind Huey Newton and Bobby Seale carrying loaded shotguns to monitor Oakland police patrols?\n[01:45] Survival Programs: What community services did the Black Panthers provide beyond their militant public image?",
+          "model_answer": "The Panthers armed themselves under California open-carry law to follow police cars and protect Black citizens from chronic police brutality and unlawful harassment. Beyond their military uniforms, the Panthers ran over 60 community survival programs, most famously the Free Breakfast for Children Program which fed tens of thousands of impoverished urban youth daily."
         },
         {
           "type": "youtube",
+          "id": "8woU9Rq0cPI",
           "url": "https://www.youtube.com/watch?v=8woU9Rq0cPI",
           "title": "Malcolm X and the Rise of Black Power: Crash Course Black American History #38 | CrashCourse",
           "duration": "12 mins 17 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Clint Smith examines Malcolm X's Nation of Islam ideology, his 1964 pilgrimage to Mecca, the phrase \"Black Power\" popularized by Stokely Carmichael in 1966, and the Panther Ten-Point Program. Recommended Watch Window: 01:30–08:00 • Lesson Phase: Core Enquiry & Historiographical Comparison. Tone Alert: Intellectually rigorous biographical and ideological analysis.",
-          "viewing_task": "<ol><li><strong>[02:45] Recall:</strong> Which civil rights leader popularized the slogan \"Black Power\" during the June 1966 March Against Fear in Greenwood, Mississippi, after James Meredith was shot?</li><li><strong>[05:10] Explain:</strong> Describe two positive community survival programs operated by the Black Panther Party, and explain why the FBI under J. Edgar Hoover branded the Panthers the \"greatest threat to internal security\".</li><li><strong>[07:20] Challenge:</strong> Compare the philosophical approaches of Malcolm X and Martin Luther King Jr. prior to 1964: why did Malcolm reject King's emphasis on non-violence as \"unrealistic and disarming\"?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Stokely Carmichael (later Kwame Ture), newly elected chairman of SNCC.</li><li><strong>Explain:</strong> The Panthers ran Free Breakfast for School Children Programs (feeding tens of thousands daily), free health clinics, sickle-cell anemia screening, and elder transport. J. Edgar Hoover's FBI COINTELPRO targeted them because their combination of revolutionary socialist ideology, armed discipline, community popularity, and potential to unite urban Black youth threatened the established racial and socio-economic order.</li><li><strong>Challenge:</strong> Malcolm X argued that non-violence in the face of violent white supremacy was asking Black people to be defenseless victims, famously stating freedom must be secured \"by any means necessary.\" He contended that integration was an illusion that taught Black people to despise their own heritage, advocating instead for Black nationalism, cultural pride, and economic self-sufficiency until his 1964 break with Elijah Muhammad expanded his views to universal brotherhood.</li></ol>",
-          "id": "8woU9Rq0cPI"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–06:00 | Lesson Phase: Ideological Divergence | Tone Alert: Contrasts Malcolm X's philosophy of Black nationalism and self-defense ('by any means necessary') with King's non-violent integrationism.",
+          "viewing_task": "[02:15] Nation of Islam: What core religious and separatist beliefs did Malcolm X preach as spokesman for the Nation of Islam?\n[05:10] Slogan 'Black Power': How did Stokely Carmichael's declaration of 'Black Power' in Greenwood, Mississippi (June 1966) fracture the civil rights alliance?",
+          "model_answer": "Malcolm X preached Black pride, economic self-sufficiency, and racial separation, rejecting integration into what he described as a corrupt, white supremacist society and asserting the constitutional right to self-defense against violence. Carmichael's cry of 'Black Power' rejected King's non-violent moral pleading, expelling white members from SNCC and advocating Black political and economic self-determination, alienating moderate white allies."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=sx4sEvhYeVE",
           "id": "sx4sEvhYeVE",
-          "title": "Malcolm X (1992) | Official Movie Trailer (Spike Lee / Denzel Washington)",
+          "url": "https://www.youtube.com/watch?v=sx4sEvhYeVE",
+          "title": "Malcolm X (1992) | Official Movie Trailer | Spike Lee / Denzel Washington",
           "duration": "2 mins 45 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:45 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Epic biographical drama exploring Malcolm X's intellectual evolution and fiery rhetoric.",
-          "viewing_task": "[01:20] Cinematic Discussion Focus: How does Denzel Washington capture Malcolm X's rejection of non-violent turn-the-other-cheek philosophy in favor of self-defense ('by any means necessary')?",
-          "model_answer": "Cinematic Discussion Focus: The trailer highlights Malcolm's sharp analytical brilliance, commanding presence, and refusal to beg white America for freedom, articulating Black pride, self-reliance, and the constitutional right to armed self-defence."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=R__WpXZnCng",
-          "id": "R__WpXZnCng",
-          "title": "The Rise of Black Power: SNCC, Carmichael & The Panthers | Documentary",
-          "duration": "14 mins 20 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–12:30 | Lesson Phase: Ideological Evolution | Tone Alert: Examines the 1966 Meredith March, Stokely Carmichael, and the Black Panther 10-Point Program.",
-          "viewing_task": "[02:30] Recall: What chant did Stokely Carmichael lead in Greenwood, Mississippi in June 1966, breaking with SCLC's 'Freedom Now'?\n[06:45] Explain: What community social programs (Free Breakfast for Children, health clinics, sickle-cell testing) did the Black Panther Party organize alongside armed patrols?\n[10:15] Challenge: How did FBI Director J. Edgar Hoover's COINTELPRO covert operation infiltrate and neutralize Black Power organizations through illegal surveillance and assassinations?",
-          "model_answer": "Recall: 'We want Black Power!'\nExplain: Beyond leather jackets and berets, the Panthers served breakfast to tens of thousands of impoverished children daily and ran free community medical clinics, filling gaps left by state neglect.\nChallenge: Hoover declared the Free Breakfast Program the greatest internal threat to national security; COINTELPRO forged factional letters, planted informants, and orchestrated the December 1969 police assassination of Chicago Panther leader Fred Hampton."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:45 | Lesson Phase: Character Study | Tone Alert: Dramatic portrayal of Malcolm X's intellectual transformation following his 1964 pilgrimage to Mecca (Hajj).",
+          "viewing_task": "[01:00] Transformation: How did Malcolm X's pilgrimage to Mecca alter his perspective on race and universal human rights?\n[02:10] Legacy: How did the 1968 Mexico City Olympic protest by Tommie Smith and John Carlos reflect the global impact of Black Power?",
+          "model_answer": "In Mecca, Malcolm prayed alongside white-skinned, blue-eyed Muslims, realizing that orthodox Islam fostered genuine racial brotherhood; he broke with Elijah Muhammad and embraced universal human rights before his 1965 assassination. At the 1968 Olympics, Smith and Carlos raised black-gloved fists on the medal podium during the US anthem, creating an enduring international symbol of Black Power against racial injustice and poverty."
         }
       ],
       "banner": "/units/usa/assets/sources/olympics-black-power-1968.jpg",
@@ -7786,7 +7707,7 @@ export default {
           "image": "/units/usa/assets/sources/portraits/mlk.jpg",
           "image_alt": "Portrait photograph of Dr Martin Luther King Jr",
           "caption": "Dr Martin Luther King Jr. (1929–1968). In 1966, King launched the Chicago Freedom Movement, shifting SCLC's strategy north to confront ghetto slum housing, tenant exploitation, and de facto segregation.",
-          "isReversed": false,
+          "isReversed": true,
           "text": "<span class=\"para-ref\">[2.1]</span> **The Cataclysm of 1967: Newark and Detroit:** The urban crisis reached its terrifying zenith during the \"Long Hot Summer\" of 1967. In Newark, New Jersey, twenty-six people died following days of street battles. Two weeks later, Detroit exploded in the bloodiest civil disorder in modern US history. Sparked by a police raid on a blind pig (after-hours drinking club), five days of rebellion resulted in 43 deaths, 7,000 arrests, and the destruction of over 2,000 buildings. President Johnson was forced to deploy thousands of armed federal paratroopers of the 82nd and 101st Airborne Divisions, backed by tanks and armoured personnel carriers, to retake American city streets.\n\n<span class=\"para-ref\">[2.2]</span> **Confronting Northern De Facto Segregation:** Shaken by the urban conflagrations, Dr Martin Luther King Jr. resolved to take the non-violent crusade into Northern cities. In January 1966, King launched the Chicago Freedom Movement, moving his family into a dilapidated, unheated third-floor tenement in the West Side slum of North Lawndale. King sought to challenge systemic economic apartheid: discriminatory bank mortgage redlining, extortionate slum slumlords, and racially segregated schools orchestrated by powerful Democratic Mayor Richard J. Daley.",
           "paragraphs": [
             "<span class=\"para-ref\">[2.1]</span> **The Cataclysm of 1967: Newark and Detroit:** The urban crisis reached its terrifying zenith during the \"Long Hot Summer\" of 1967. In Newark, New Jersey, twenty-six people died following days of street battles. Two weeks later, Detroit exploded in the bloodiest civil disorder in modern US history. Sparked by a police raid on a blind pig (after-hours drinking club), five days of rebellion resulted in 43 deaths, 7,000 arrests, and the destruction of over 2,000 buildings. President Johnson was forced to deploy thousands of armed federal paratroopers of the 82nd and 101st Airborne Divisions, backed by tanks and armoured personnel carriers, to retake American city streets.",
@@ -7819,8 +7740,7 @@ export default {
               "src": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
               "source": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg"
             }
-          ],
-          "isReversed": true
+          ]
         },
         {
           "act": 3,
@@ -7908,7 +7828,7 @@ export default {
           "image": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
           "image_alt": "President Lyndon B. Johnson signing civil rights legislation surrounded by leaders including Martin Luther King Jr",
           "caption": "President Lyndon B. Johnson with Dr Martin Luther King Jr. Six days after King's assassination in April 1968, Johnson signed the Civil Rights Act of 1968 (Fair Housing Act) into federal law.",
-          "isReversed": true,
+          "isReversed": false,
           "text": "<span class=\"para-ref\">[5.1]</span> **The Assassination of Dr King (4 April 1968):** In the spring of 1968, King traveled to Memphis, Tennessee, to support striking Black sanitation workers and organize a national Poor People's Campaign. On the evening of 4 April 1968, while standing on the balcony of the Lorraine Motel, King was assassinated by white supremacist James Earl Ray. King's murder unleashed the largest nationwide wave of social unrest in American history: uprisings erupted in over 125 cities, leaving 46 dead and requiring 45,000 troops to quell. In Washington, D.C., fires burned within sight of the White House. A week later, Congress rushed to pass the Civil Rights Act of 1968 (the Fair Housing Act), banning housing discrimination.\n\n<span class=\"para-ref\">[5.2]</span> **A Transformed Political Landscape:** By 1975, the civil rights movement had fundamentally transformed the American South. The blatant barbarism of de jure segregation was extinct, and millions of enfranchised Black citizens wielded decisive political power, electing thousands of Black municipal officials, sheriffs, and members of Congress. In major cities, Black mayors took office in Cleveland, Gary, Newark, Detroit, Los Angeles, and Atlanta. Affirmative action programs opened the doors of universities, corporations, and federal civil service to a growing Black middle class.\n\n<span class=\"para-ref\">[5.3]</span> **The Unfinished Revolution of Economic Justice:** Yet the promise of full racial equality remained tragically unfulfilled. As legal barriers fell, white Americans retreated into suburban enclaves (\"white flight\"), leaving inner-city schools and neighbourhoods more economically segregated than before. Dr King's ultimate crusade—the eradication of systemic poverty, urban ghettoization, and militarism—remained unfinished. The heroic era of 1954–75 had destroyed the legal pillars of racial apartheid, but it left the deeper structural inequalities of American capitalism and society unresolved.",
           "paragraphs": [
             "<span class=\"para-ref\">[5.1]</span> **The Assassination of Dr King (4 April 1968):** In the spring of 1968, King traveled to Memphis, Tennessee, to support striking Black sanitation workers and organize a national Poor People's Campaign. On the evening of 4 April 1968, while standing on the balcony of the Lorraine Motel, King was assassinated by white supremacist James Earl Ray. King's murder unleashed the largest nationwide wave of social unrest in American history: uprisings erupted in over 125 cities, leaving 46 dead and requiring 45,000 troops to quell. In Washington, D.C., fires burned within sight of the White House. A week later, Congress rushed to pass the Civil Rights Act of 1968 (the Fair Housing Act), banning housing discrimination.",
@@ -7942,8 +7862,7 @@ export default {
               "src": "/units/usa/assets/sources/poor-peoples-campaign-1968.jpg",
               "source": "/units/usa/assets/sources/poor-peoples-campaign-1968.jpg"
             }
-          ],
-          "isReversed": false
+          ]
         }
       ],
       "primary_source": null,
@@ -8556,47 +8475,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "6dlmBco7zsc",
           "url": "https://www.youtube.com/watch?v=6dlmBco7zsc",
           "title": "The Watts Riots | Voices of the Civil Rights Movement",
           "duration": "3 mins 11 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Investigates the explosive August 1965 Watts rebellion in Los Angeles, triggered by the traffic arrest of Marquette Frye, exposing Northern and Western de facto segregation. Recommended Watch Window: 00:00–02:50 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Raw archival footage and eyewitness accounts of urban uprising.",
-          "viewing_task": "<ol><li><strong>[00:50] Quick Check:</strong> In which Los Angeles neighborhood did six days of massive urban unrest erupt in August 1965, resulting in 34 deaths, over 1,000 injuries, and $40 million in property damage?</li><li><strong>[01:50] Hinge Question:</strong> Why were civil rights leaders like Martin Luther King Jr. shocked by the Watts riots, which took place barely five days after President Johnson signed the Voting Rights Act?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Watts, Los Angeles.</li><li><strong>Hinge Question:</strong> The legislative victories of 1964 and 1965 targeted Southern <em>de jure</em> segregation (Jim Crow laws and voting barriers), but did nothing to solve the grinding <em>de facto</em> economic despair, ghettoization, substandard housing, predatory white-owned stores, and brutal police harassment experienced by Black communities in Northern and Western cities. King realized that winning civil rights was meaningless without economic justice.</li></ol>",
-          "id": "6dlmBco7zsc"
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:11 | Lesson Phase: Starter Hook | Tone Alert: Archival footage of the six-day uprising in Los Angeles in August 1965 sparked by the roadside arrest of Marquette Frye.",
+          "viewing_task": "[00:55] Trigger: What traffic stop incident sparked the explosion of unrest in the Watts neighbourhood of Los Angeles on 11 August 1965?\n[02:10] Human Cost: What was the toll of the six days of rioting in terms of casualties, arrests, and property damage?",
+          "model_answer": "The riot was sparked when white California Highway Patrol officers violently arrested 21-year-old Marquette Frye for suspected drunk driving in front of a growing, angry crowd on a sweltering summer evening. The six days of unrest resulted in 34 deaths, over 1,000 injuries, nearly 4,000 arrests, and over $40 million in property destruction, requiring 14,000 National Guardsmen to quell."
         },
         {
           "type": "youtube",
+          "id": "OX33xb8kbpA",
           "url": "https://www.youtube.com/watch?v=OX33xb8kbpA",
-          "title": "Excerpt: MP886 Detroit Riots & Kerner Commission | TheLBJLibrary",
+          "title": "Detroit Riots & Kerner Commission | TheLBJLibrary",
           "duration": "4 mins 20 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Official LBJ Presidential Library archival newsreel detailing the July 1967 Detroit rebellion (12th Street Riot), federal paratrooper intervention, and President Johnson establishing the Kerner Commission. Recommended Watch Window: 00:30–03:45 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Authoritative presidential archive examining urban crisis and structural racism.",
-          "viewing_task": "<ol><li><strong>[01:15] Recall:</strong> What specific police raid on 23 July 1967 sparked the Detroit rebellion on 12th Street, and how many US Army paratroopers did President Johnson deploy to restore order?</li><li><strong>[02:30] Explain:</strong> What famous conclusion did the 1968 National Advisory Commission on Civil Disorders (the Kerner Commission) reach regarding the racial divide in America?</li><li><strong>[03:20] Challenge:</strong> Evaluate why President Johnson largely ignored the policy recommendations of the Kerner Commission, despite appointing its commissioners.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> A police raid on an unlicensed after-hours drinking club (\"blind pig\") celebrating the return of two Black Vietnam veterans; Johnson dispatched nearly 5,000 paratroopers from the 82nd and 101st Airborne Divisions.</li><li><strong>Explain:</strong> The Kerner Commission famously declared: \"Our nation is moving toward two societies, one black, one white—separate and unequal.\" It identified pervasive white institutional racism as the root cause of urban uprisings, rejecting allegations of communist conspiracy and calling for massive federal investment in housing, education, and jobs.</li><li><strong>Challenge:</strong> The Commission's recommendations carried a staggering $30 billion price tag at a moment when federal budgets were being completely swallowed by the escalating costs of the Vietnam War. Furthermore, with the 1968 election approaching, white suburban voters reacted against urban riots with a conservative \"law and order\" backlash, leading LBJ to shelve the report to avoid further political alienation.</li></ol>",
-          "id": "OX33xb8kbpA"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:20 | Lesson Phase: Official Inquiry | Tone Alert: Examines President Johnson dispatching the 82nd and 101st Airborne Divisions to Detroit (July 1967) and establishing the Kerner Commission.",
+          "viewing_task": "[01:30] Detroit Crisis: Why did the police raid on an unlicensed after-hours drinking club ('blind pig') trigger the deadliest urban riot of the 1960s?\n[03:15] Kerner Finding: What was the famous warning issued by the Kerner Commission regarding American society in 1968?",
+          "model_answer": "The raid on a party celebrating the return of two Black Vietnam veterans sparked fury among residents suffering from decades of police brutality, job discrimination, and slum housing; 43 people died as tanks rolled through Detroit streets. The Kerner Commission famously concluded that 'our nation is moving toward two societies, one black, one white—separate and unequal,' identifying pervasive white racism and ghetto poverty as the root cause."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=HFeWsDpy9y0",
           "id": "HFeWsDpy9y0",
-          "title": "Detroit (2017) | Official Movie Trailer (Kathryn Bigelow / John Boyega)",
+          "url": "https://www.youtube.com/watch?v=HFeWsDpy9y0",
+          "title": "Detroit (2017) | Official Movie Trailer | Kathryn Bigelow",
           "duration": "2 mins 25 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:25 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Harrowing dramatisation of the 1967 12th Street Riot and the Algiers Motel incident.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film portray systemic police brutality and racism as the underlying spark that ignited urban rebellions across northern industrial cities?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows how police raids on an unlicensed bar in a sweltering July sparked long-suppressed rage over joblessness, ghetto housing, and routine police abuse, demonstrating that northern segregation was as oppressive as the Jim Crow South."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=R__WpXZnCng",
-          "id": "R__WpXZnCng",
-          "title": "The Kerner Commission & Urban Riots: Two Societies | Civil Rights Archive",
-          "duration": "11 mins 30 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 00:30–10:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Analysis of the landmark 1968 report ordered by President Lyndon B. Johnson.",
-          "viewing_task": "[02:00] Recall: What famous warning did the 1968 Kerner Commission issue: 'Our nation is moving toward two societies...'\n[05:30] Explain: What root causes (white racism, job discrimination, slum housing, segregated schools) did the commission identify for riots in Watts, Newark, and Detroit?\n[08:45] Challenge: Why did President Johnson largely ignore the Kerner Commission's call for massive federal investment in inner-city jobs and housing?",
-          "model_answer": "Recall: '...one black, one white—separate and unequal.'\nExplain: The report concluded that white institutions created the ghetto, white institutions maintained it, and white society condoned it; riots were protests against systematic economic exclusion.\nChallenge: The escalating cost of the Vietnam War ($30 billion annually) was draining the federal budget, while white suburban voters reacted with a conservative 'law and order' backlash against urban violence."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:25 | Lesson Phase: Cinematic Trauma | Tone Alert: Visceral recreation of the Algiers Motel incident during the 1967 Detroit riot, showing rogue police interrogating unarmed Black youths.",
+          "viewing_task": "[01:00] Police Abuse: How does the trailer convey the lawless terror inflicted by rogue officers during the Algiers Motel incident?\n[01:50] King Assassination: How did the assassination of Martin Luther King Jr on 4 April 1968 ignite riots in over 100 American cities?",
+          "model_answer": "The film recreates how Detroit police officers and guardsmen subjected innocent Black guests to mock executions and brutal beatings, ultimately murdering three unarmed teenagers. King's assassination in Memphis shattered faith in non-violence; within hours, despairing Black communities erupted in violent rebellions across 125 cities, including Washington D.C., Baltimore, and Chicago."
         }
       ],
       "banner": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
@@ -9293,7 +9201,7 @@ export default {
             "question": "1. Give two things you can infer from Source A about the conditions faced by US infantry patrols fighting in South Vietnam (1965–68). [4 marks]",
             "stimulus": "Source A: A soldier's account describing the intense heat, hidden booby traps, and unseen enemy snipers in the jungle.",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that American soldiers operated in an intensely hazardous, unfamiliar jungle environment where lethal danger was omnipresent.<br><strong>Details in the source that tell me this:</strong><br>The extract highlights soldiers constantly looking down for concealed punji-stick booby traps and tripping wires hidden beneath dense foliage.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that US troops experienced extreme psychological terror because they rarely saw the enemy directly.<br><strong>Details in the source that tell me this:</strong><br>The account describes sudden sniper fire from invisible tree lines, followed by the immediate disappearance of Vietcong fighters into underground tunnel networks.</p>",
+            "model": "<strong>Inference 1:</strong> American soldiers faced an invisible, highly dangerous enemy in the jungle. <strong>Detail:</strong> Soldiers describe walking into hidden booby traps and punji stakes without ever seeing Vietcong combatants.<br><br><strong>Inference 2:</strong> The environment caused severe physical and mental exhaustion. <strong>Detail:</strong> Troops endured continuous tropical rain, heat, and fear of sudden ambush.",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -9566,47 +9474,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "44cnzhzcYjs",
           "url": "https://www.youtube.com/watch?v=44cnzhzcYjs",
           "title": "Drawn History: What is Domino Theory? | HISTORY",
           "duration": "2 mins 38 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Fast animated explanation of President Eisenhower's 1954 \"Domino Theory\" press conference, illustrating why US policymakers viewed Indochina as vital to preventing communist expansion across Southeast Asia. Recommended Watch Window: 00:00–02:25 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Clear, conceptual animation explaining Cold War geopolitical containment.",
-          "viewing_task": "<ol><li><strong>[00:40] Quick Check:</strong> Which US President coined the phrase \"falling domino principle\" in an April 1954 news conference following the French defeat at Dien Bien Phu?</li><li><strong>[01:40] Hinge Question:</strong> How did the Domino Theory blind US policymakers to the reality that the Viet Minh struggle was fundamentally a nationalist anti-colonial independence movement rather than a Soviet plot?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> President Dwight D. Eisenhower.</li><li><strong>Hinge Question:</strong> American policymakers viewed global events strictly through the binary lens of the Cold War. By assuming Ho Chi Minh was simply a puppet of Moscow and Beijing rather than a Vietnamese nationalist fighting for self-determination after 80 years of French colonial exploitation, Washington committed itself to propping up an illegitimate, corrupt regime in Saigon to prevent a \"domino effect\" across Southeast Asia.</li></ol>",
-          "id": "44cnzhzcYjs"
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:38 | Lesson Phase: Starter Hook | Tone Alert: Animated explainer of President Eisenhower's geopolitical concept that the fall of Indochina would cause Southeast Asian nations to topple like dominos.",
+          "viewing_task": "[00:50] The Analogy: Explain Eisenhower's 'Domino Theory' regarding the spread of communism in Southeast Asia.\n[01:50] Geneva Accords: Why did the US and Ngo Dinh Diem refuse to hold the nationwide democratic elections scheduled for 1956?",
+          "model_answer": "Eisenhower argued that if South Vietnam fell to communism, neighboring nations (Laos, Cambodia, Thailand, Burma) would inevitably collapse in sequence like falling dominoes under Chinese and Soviet influence. The US and Diem blocked the 1956 elections because intelligence confirmed that North Vietnamese communist leader Ho Chi Minh would win over 80% of the nationwide popular vote."
         },
         {
           "type": "youtube",
+          "id": "028fwjzsAOc",
           "url": "https://www.youtube.com/watch?v=028fwjzsAOc",
-          "title": "The Cold War: Diem in South Vietnam - Strategic Hamlets, Buddhist Crisis & Assassination | I'm Stuck GCSE History",
+          "title": "The Cold War: Diem in South Vietnam - Strategic Hamlets & Assassination | I'm Stuck GCSE History",
           "duration": "6 mins 45 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Detailed GCSE examination of Ngo Dinh Diem's autocratic rule in South Vietnam: Catholic favouritism, the Strategic Hamlet Programme (1962), Thich Quang Duc's self-immolation, and the November 1963 military coup. Recommended Watch Window: 00:45–05:30 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Structured GCSE syllabus breakdown with primary newsreels and analysis.",
-          "viewing_task": "<ol><li><strong>[01:25] Recall:</strong> What was the Strategic Hamlet Programme (Operation Sunrise, 1962), and why did it deeply alienate South Vietnamese peasant villagers?</li><li><strong>[03:10] Explain:</strong> How did Ngo Dinh Diem's religious persecution of the Buddhist majority—culminating in the self-immolation of monk Thich Quang Duc in June 1963—shatter US diplomatic support for his regime?</li><li><strong>[05:00] Challenge:</strong> Evaluate the consequences of the CIA-backed military coup and assassination of Diem on 2 November 1963: did removing Diem stabilize South Vietnam or trigger catastrophic political anarchy?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Peasants were forcibly relocated into fortified barbed-wire compounds to isolate them from Vietcong infiltrators. Villagers resented being uprooted from their ancestral rice paddies and sacred family burial plots, and were often forced to pay for the building materials themselves.</li><li><strong>Explain:</strong> Although 80% of South Vietnam was Buddhist, Diem (a devout Catholic) gave top government and military posts to Catholics, exempted Catholic properties from land taxes, and banned the Buddhist flag on Buddha's birthday while shooting peaceful protesters in Hue. Malcolm Browne's world-famous photograph of monk Thich Quang Duc burning himself to death in Saigon horrified President Kennedy, demonstrating to the American public that Diem was a despised religious tyrant.</li><li><strong>Challenge:</strong> Diem's assassination created a power vacuum that worsened the situation. A succession of ten different corrupt military juntas ruled Saigon in rapid succession over the next eighteen months (\"the revolving door of generals\"), demoralizing the Army of the Republic of Vietnam (ARVN) and allowing the Vietcong to seize control of over 70% of the rural countryside.</li></ol>",
-          "id": "028fwjzsAOc"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Deep Governance Crisis | Tone Alert: Structured breakdown of Diem's Catholic nepotism, the unpopular Strategic Hamlet Program (1962), and Buddhist self-immolations.",
+          "viewing_task": "[02:00] Strategic Hamlets: Why did the Strategic Hamlet Program alienate South Vietnamese peasants and drive them into the arms of the Vietcong?\n[04:15] Buddhist Crisis: How did the self-immolation of monk Thich Quang Duc in June 1963 destroy Diem's international legitimacy?",
+          "model_answer": "Peasants were forcibly uprooted from ancestral villages and ancestral burial grounds to live behind barbed wire fortifications, while corrupt officials stole building funds; resentment drove peasants to support the Vietcong. Thich Quang Duc set himself on fire in a busy Saigon intersection to protest Diem's violent repression of Buddhism; Malcolm Browne's photograph shocked President Kennedy and convinced Washington that Diem had to be replaced."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=i2LdlqW26zc",
           "id": "i2LdlqW26zc",
-          "title": "The Quiet American (2002) | Official Trailer (Michael Caine / Graham Greene)",
+          "url": "https://www.youtube.com/watch?v=i2LdlqW26zc",
+          "title": "The Quiet American (2002) | Official Trailer | Michael Caine",
           "duration": "2 mins 18 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:18 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Depicts early 1950s CIA covert operations in Saigon and the roots of American military entanglement.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film contrast European cynical experience with American naive idealism about engineering a 'Third Force' in Vietnam?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows CIA operative Pyle genuinely believing he can save Vietnam with Western democracy, yet blind to the fact that his covert bombs are slaughtering ordinary civilians in Saigon squares."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "The Vietnam War: Roots of Conflict & The Domino Theory | PBS Archive",
-          "duration": "15 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–13:00 | Lesson Phase: Geopolitical Strategy | Tone Alert: Explores Eisenhower's Domino Theory, the Geneva Accords, and Diem's Catholic nepotism.",
-          "viewing_task": "[02:30] Recall: What was Eisenhower's 'Domino Theory' regarding Southeast Asia articulated in April 1954?\n[06:00] Explain: Why did the US support Ngo Dinh Diem's refusal to hold the 1956 nationwide elections mandated by the Geneva Accords?\n[10:15] Challenge: How did Diem's harsh repression of South Vietnam's Buddhist majority culminate in Thich Quang Duc's self-immolation in June 1963?",
-          "model_answer": "Recall: If Vietnam fell to communism, neighboring nations (Laos, Cambodia, Thailand, Burma) would topple one after another like a row of dominoes.\nExplain: US intelligence acknowledged that North Vietnamese leader Ho Chi Minh would win over 80% of the vote due to his heroic reputation defeating French colonialism.\nChallenge: Diem gave top government jobs exclusively to Catholic relatives and banned Buddhist flags; monk Thich Quang Duc set himself on fire at a busy Saigon intersection, producing photographs that destroyed Diem's international legitimacy."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:18 | Lesson Phase: Geopolitical Fiction | Tone Alert: Adaptation of Graham Greene's novel exploring CIA operative Alden Pyle backing a 'Third Force' in Saigon in the early 1950s.",
+          "viewing_task": "[00:50] Character Conflict: How does the film contrast British cynical detachment with naive American interventionist idealism in Vietnam?\n[01:35] Historical Context: How did CIA involvement in South Vietnam set up the military coup against Diem in November 1963?",
+          "model_answer": "The film contrasts veteran journalist Thomas Fowler's understanding of Vietnamese anticolonial pride with CIA agent Alden Pyle's dangerous, naive belief that Western democracy could be engineered through military covert ops. In November 1963, with covert CIA backing, South Vietnamese generals assassinated Diem and his brother Nhu, leaving South Vietnam ruled by a revolving door of weak military juntas."
         }
       ],
       "banner": "/units/usa/assets/sources/ngo-dinh-diem-parade.jpg",
@@ -9779,8 +9676,7 @@ export default {
               "src": "/units/usa/assets/sources/uss-maddox.jpg",
               "source": "/units/usa/assets/sources/uss-maddox.jpg"
             }
-          ],
-          "isReversed": false
+          ]
         },
         {
           "act": 2,
@@ -9976,7 +9872,8 @@ export default {
           "qNum": 1,
           "question": "Explain why US military involvement in Vietnam escalated in the years 1964–68. (12 marks)",
           "starter": "“One reason why US military involvement in Vietnam escalated in the years 1964–68 was the political authorization granted by the Gulf of Tonkin Resolution in August 1964.",
-          "model": "“One reason why US military involvement in Vietnam escalated in the years 1964–68 was the political authorization granted by the Gulf of Tonkin Resolution in August 1964.” After alleged clashes between the destroyer [[USS Maddox]] and North Vietnamese patrol boats, Congress passed the resolution giving President Johnson a 'blank check' to deploy combat troops without a formal declaration of war. How did the Gulf of Tonkin incident enable President Johnson to commit US ground combat troops to the war in Vietnam? {{Therefore, the Gulf of Tonkin Resolution was a vital cause of why US military involvement in Vietnam escalated in the years 1964–68 because it removed legislative barriers, allowing the deployment of Marines to Da Nang in March 1965.}}\n\n“A second reason why US military involvement in Vietnam escalated in the years 1964–68 was the strategic commitment to the Cold War policy of containment and the Domino Theory.” US military planners believed that if South Vietnam fell to communism, neighboring nations like Laos and Cambodia would fall next. To prevent this, General Westmoreland implemented [[search-and-destroy]] missions, raising troop levels to [[535,000]] by 1968. {{Therefore, the geopolitical policy of containment was a fundamental reason why US military involvement in Vietnam escalated in the years 1964–68 because it made stopping communism in South Vietnam a top national security priority.}}\n\n“A third reason why US military involvement in Vietnam escalated in the years 1964–68 was the strategic crisis and loss of control caused by the Tet Offensive in early 1968.” The Vietcong launched a massive surprise attack on over 100 cities, including the US Embassy in Saigon. Though militarily defeated, the [[Tet Offensive]] shattered US claims of imminent victory and led to requests for [[206,000]] more troops. {{Therefore, the military shock of the Tet Offensive was a decisive reason why US military involvement in Vietnam escalated in the years 1964–68 because it proved current force levels were failing, forcing a choice between withdrawal or further escalation.}}"
+          "model": "A primary reason was the ideological commitment to containment and the Domino Theory. US policymakers believed that allowing South Vietnam to fall to communism would trigger the collapse of Southeast Asia. When Vietcong guerrillas expanded control across rural areas, President Johnson believed American global credibility was at stake, compelling him to commit US forces.<br><br>Furthermore, the August 1964 Gulf of Tonkin Resolution gave the White House unlimited authority to wage war. Following a Vietcong attack on a US barracks at Pleiku in February 1965, Johnson launched Operation Rolling Thunder—a sustained three-year aerial bombing campaign against North Vietnam and the Ho Chi Minh Trail.<br><br>Ultimately, the escalation shifted to massive ground warfare under General William Westmoreland. To protect air bases and hunt the Vietcong, Westmoreland initiated 'Search and Destroy' missions. By 1968, over 536,000 US combat troops were deployed in Vietnam, relying on helicopter mobility, napalm, and body counts in an attempt to destroy communist resistance.",
+          "model_answer": "A primary reason was the ideological commitment to containment and the Domino Theory. US policymakers believed that allowing South Vietnam to fall to communism would trigger the collapse of Southeast Asia. When Vietcong guerrillas expanded control across rural areas, President Johnson believed American global credibility was at stake, compelling him to commit US forces.<br><br>Furthermore, the August 1964 Gulf of Tonkin Resolution gave the White House unlimited authority to wage war. Following a Vietcong attack on a US barracks at Pleiku in February 1965, Johnson launched Operation Rolling Thunder—a sustained three-year aerial bombing campaign against North Vietnam and the Ho Chi Minh Trail.<br><br>Ultimately, the escalation shifted to massive ground warfare under General William Westmoreland. To protect air bases and hunt the Vietcong, Westmoreland initiated 'Search and Destroy' missions. By 1968, over 536,000 US combat troops were deployed in Vietnam, relying on helicopter mobility, napalm, and body counts in an attempt to destroy communist resistance."
         },
         {
           "qNum": 2,
@@ -10301,7 +10198,7 @@ export default {
               "The attack on the US base at Pleiku (February 1965)"
             ],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "One major reason why US involvement escalated was the <strong>Gulf of Tonkin incident in August 1964</strong> and the subsequent congressional resolution. Following reports that North Vietnamese torpedo boats had attacked the USS Maddox, President Johnson obtained the Gulf of Tonkin Resolution from Congress with near-unanimous support. This resolution granted the president sweeping executive authority to 'take all necessary measures' to repel armed attacks, effectively providing Johnson with a blank cheque to wage war in Vietnam without a formal congressional declaration.<br><br>A second critical trigger was the <strong>Vietcong attack on the US military base at Pleiku in February 1965</strong>, which killed eight American servicemen and wounded over a hundred. Viewing this as an intolerable direct provocation, Johnson immediately launched Operation Rolling Thunder—a sustained aerial bombing campaign against North Vietnam. To protect the vital US airbases like Da Nang from counter-attack, Johnson made the historic decision in March 1965 to deploy the first 3,500 US ground combat troops, fundamentally transforming the conflict from an advisory mission into a full-scale American ground war.<br><br>Finally, an underlying driver was the pervasive <strong>Cold War Domino Theory</strong> and fear of communist expansion across Southeast Asia. US policymakers feared that if South Vietnam fell to Ho Chi Minh’s forces, neighbouring nations like Laos, Cambodia, Thailand, and Indonesia would inevitably collapse to communism. Furthermore, Johnson was politically determined not to be remembered as the first American president who 'lost' Vietnam to communism.",
+            "model": "A primary factor was the Cold War fear of the 'Domino Theory'. President Johnson and his military advisers believed that if South Vietnam fell to communism, neighbouring countries like Laos, Cambodia, and Thailand would inevitably collapse. Following the overthrow of President Diem in 1963, the corrupt South Vietnamese government faced imminent defeat by the Vietcong, convincing Washington that only direct American intervention could prevent a communist takeover.<br><br>Furthermore, the Gulf of Tonkin incident in August 1964 provided the political trigger for escalation. After reported North Vietnamese torpedo boat attacks on the USS Maddox, Congress passed the Gulf of Tonkin Resolution. This granted Johnson broad authority to 'take all necessary measures' to defend American forces without a formal declaration of war.<br><br>Ultimately, escalation was driven by the failure of bombing to stop the Vietcong. In February 1965, Johnson launched Operation Rolling Thunder. To defend US air bases from guerrilla attacks, Johnson deployed the first 3,500 American combat Marines to Da Nang in March 1965, transforming the conflict into an American ground war.",
             "scaffolding": {
               "acronym": "PEEL Structure Strip",
               "acronym_title": "3-Paragraph Causal Analysis (PEEL)",
@@ -10577,47 +10474,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "crALHjTiXbk",
           "url": "https://www.youtube.com/watch?v=crALHjTiXbk",
           "title": "The Gulf of Tonkin Incident (1964) | Simple History",
           "duration": "3 mins 22 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated breakdown of the naval clash between the destroyer USS Maddox and North Vietnamese torpedo boats in August 1964, and the controversial \"phantom attack\" of August 4. Recommended Watch Window: 00:00–03:10 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast, accessible animated summary explaining the naval confrontation.",
-          "viewing_task": "<ol><li><strong>[00:50] Quick Check:</strong> What was the name of the US Navy destroyer attacked by North Vietnamese torpedo boats in the Gulf of Tonkin on 2 August 1964?</li><li><strong>[02:10] Hinge Question:</strong> Why did President Lyndon B. Johnson order retaliatory air strikes on North Vietnam following the alleged second attack on 4 August 1964, despite radar operators admitting the sonar readings were ghost signals caused by stormy weather?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> The <em>USS Maddox</em>.</li><li><strong>Hinge Question:</strong> LBJ was running for re-election against conservative Republican Barry Goldwater, who accused him of being \"soft on communism.\" Johnson needed to project resolute commander-in-chief strength to the American electorate, and the administration had already drafted a congressional resolution weeks earlier, waiting for a dramatic pretext to escalate US military intervention.</li></ol>",
-          "id": "crALHjTiXbk"
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:22 | Lesson Phase: Starter Hook | Tone Alert: Animated breakdown of the USS Maddox skirmish on 2 August and the disputed second incident on 4 August 1964.",
+          "viewing_task": "[01:10] The Skirmish: What occurred in the Gulf of Tonkin on 2 August 1964 between the USS Maddox and North Vietnamese torpedo boats?\n[02:25] The Mystery: What evidence later revealed that the alleged second attack on 4 August was likely a false sonar contact in stormy seas?",
+          "model_answer": "The destroyer USS Maddox, conducting electronic espionage while supporting South Vietnamese commando raids, clashed with three North Vietnamese torpedo boats, firing warning shots before damaging them. Declassified records revealed that the 'second attack' on 4 August never occurred: freak weather, nervous young sonar operators misinterpreting wave echoes, and Captain Herrick's own cables casting doubt were suppressed by the Pentagon."
         },
         {
           "type": "youtube",
+          "id": "gMhx8R7IL8M",
           "url": "https://www.youtube.com/watch?v=gMhx8R7IL8M",
           "title": "The Gulf of Tonkin Resolution | HISTORY",
           "duration": "4 mins 18 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Constitutional analysis of the Gulf of Tonkin Resolution passed by Congress on 7 August 1964, effectively granting President Johnson a blank check to wage war without a formal declaration. Recommended Watch Window: 00:30–03:45 • Lesson Phase: Guided Instruction & Constitutional Analysis. Tone Alert: Analytical legal and political documentary examining presidential war powers.",
-          "viewing_task": "<ol><li><strong>[01:10] Recall:</strong> How many members of the US Senate voted against the Gulf of Tonkin Resolution on 7 August 1964?</li><li><strong>[02:20] Explain:</strong> Explain why constitutional historians describe the Gulf of Tonkin Resolution as a \"blank check\" for presidential warmaking.</li><li><strong>[03:15] Challenge:</strong> Evaluate how the Gulf of Tonkin Resolution radically transformed the nature of US involvement in Vietnam: how did it lead directly to Operation Rolling Thunder and the deployment of 500,000 combat troops?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Only two senators voted against it (Senators Wayne Morse of Oregon and Ernest Gruening of Alaska).</li><li><strong>Explain:</strong> The resolution empowered the President to \"take all necessary measures to repel any armed attack against the forces of the United States and to prevent further aggression\" anywhere in Southeast Asia. This bypassed the constitutional requirement that only Congress can declare war, allowing Johnson to commit unlimited military forces, bombers, and money without congressional oversight or debate.</li><li><strong>Challenge:</strong> Prior to August 1964, US personnel were officially \"advisers\" assisting the South Vietnamese military. Armed with the resolution, Johnson launched sustained aerial bombardment of North Vietnam (Operation Rolling Thunder in March 1965) and dispatched the first 3,500 US Marines to Da Nang, permanently Americanizing the conflict and escalating troop levels to 536,000 by 1968.</li></ol>",
-          "id": "gMhx8R7IL8M"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:18 | Lesson Phase: Constitutional Transformation | Tone Alert: Examines President Johnson securing congressional approval to wage war without a formal declaration of war.",
+          "viewing_task": "[01:30] Congressional Blank Cheque: What extraordinary military powers did the Gulf of Tonkin Resolution grant President Lyndon B. Johnson?\n[03:10] Vote Count: How many members of Congress voted against the Tonkin Resolution in August 1964?",
+          "model_answer": "The Resolution gave Johnson constitutional authority 'to take all necessary measures to repel any armed attack against the forces of the United States and to prevent further aggression,' functioning as an undeclared declaration of war. Congress passed it near-unanimously: 416-0 in the House of Representatives and 88-2 in the Senate, with only Senators Wayne Morse and Ernest Gruening dissenting."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "The Fog of War (2003) | Official Trailer (Errol Morris / Robert McNamara)",
-          "duration": "2 mins 10 secs",
+          "id": "R5gSxeiCBMY",
+          "url": "https://www.youtube.com/watch?v=R5gSxeiCBMY",
+          "title": "Operation Rolling Thunder (1965 - 68) | Simple History",
+          "duration": "10 mins 07 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:10 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Academy Award-winning documentary interrogation of Defense Secretary Robert McNamara.",
-          "viewing_task": "[01:05] Cinematic Discussion Focus: How does former Defense Secretary Robert McNamara reflect upon the misjudgements, hubris, and fabricated intelligence that escalated the Vietnam War?",
-          "model_answer": "Cinematic Discussion Focus: McNamara admits that the US military establishment operated under catastrophic misperceptions: they viewed Vietnam purely through a Cold War lens, failing to understand that the Vietnamese were fighting a war of national independence."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=_dZ8zKbP2r0",
-          "id": "_dZ8zKbP2r0",
-          "title": "The Vietnam War: Escalation & The Gulf of Tonkin Resolution | Archive",
-          "duration": "14 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–12:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: In-depth examination of the 1964 incident and the rapid buildup of US combat forces.",
-          "viewing_task": "[02:30] Recall: What powers did the Gulf of Tonkin Resolution grant to President Lyndon B. Johnson?\n[06:00] Explain: How did declassified naval records reveal that the alleged second attack on 4 August was based on radar phantom targets and false sonar readings?\n[10:15] Challenge: How did the resolution alter the constitutional separation of powers between the President and the US Congress?",
-          "model_answer": "Recall: Authority to use all necessary military force to repel armed attacks against US forces without a formal declaration of war. How did the Gulf of Tonkin incident enable President Johnson to commit US ground combat troops to the war in Vietnam?\nExplain: Destroyer captains cabled Washington that high seas and bad weather caused freak sonar returns, but LBJ went on television anyway to announce retaliatory air strikes.\nChallenge: It effectively transferred the exclusive congressional power to declare war directly into the hands of the executive branch, enabling an 8-year war that cost 58,000 American lives."
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Tactical Bombing Campaign | Tone Alert: Detailed tactical analysis of the 3-year sustained aerial bombardment of North Vietnam and the deployment of the first US combat troops at Da Nang.",
+          "viewing_task": "[01:45] Sustained Bombardment: What were the strategic objectives of Operation Rolling Thunder launched in March 1965?\n[04:20] Combat Troops: Why did General William Westmoreland demand the deployment of 3,500 US Marines to Da Nang in March 1965?",
+          "model_answer": "Operation Rolling Thunder aimed to destroy North Vietnam's transport infrastructure, interdict the Ho Chi Minh Trail, boost South Vietnamese morale, and force Hanoi to negotiate from weakness. General Westmoreland argued that South Vietnamese ARVN forces were incapable of defending the vital US airbase at Da Nang from Vietcong guerrilla mortar attacks, beginning the ground troop commitment that reached 536,000 troops by 1968."
         }
       ],
       "banner": "/units/usa/assets/sources/uss-maddox.jpg",
@@ -10789,8 +10675,7 @@ export default {
               "src": "/units/usa/assets/sources/cu-chi-tunnel-rats-1967.jpg",
               "source": "/units/usa/assets/sources/cu-chi-tunnel-rats-1967.jpg"
             }
-          ],
-          "isReversed": false
+          ]
         },
         {
           "act": 2,
@@ -10909,8 +10794,7 @@ export default {
               "src": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg",
               "source": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg"
             }
-          ],
-          "isReversed": true
+          ]
         },
         {
           "act": 5,
@@ -11305,7 +11189,7 @@ export default {
             "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the reasons why US military tactics failed to defeat the Vietcong (1965–68)? [8 marks]",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is useful for an enquiry into the failure of US tactics because it reveals the immense counter-productive impact of American heavy firepower on the civilian population. From my own knowledge, I know that tactics like Operation Rolling Thunder, napalm, Agent Orange, and 'Search and Destroy' missions (Zippo raids) destroyed countless peasant villages and poisoned farmland, alienating ordinary South Vietnamese civilians and driving them into supporting the Vietcong. The provenance of Source B makes it particularly valuable because, as a contemporary account by an American war correspondent, it provides an eyewitness record of how brutal pacification tactics destroyed civilian hearts and minds.<br><br>Source C is useful because it highlights the superior guerrilla tactics and resilience of the Vietcong (NLF). From my own knowledge, I know that the Vietcong utilized the Ho Chi Minh Trail to keep supplies flowing, constructed thousands of miles of subterranean tunnels (such as Cu Chi), and practiced 'hanging onto the belts' of American troops—fighting at such close range that US artillery and air strikes could not be used without killing their own men. The provenance of Source C adds strong historical value because it details the disciplined ideological commitment and local geographic mastery that allowed guerrilla forces to survive massive American firepower. Together, both sources provide high historical utility for analyzing both the strategic flaws of US search-and-destroy warfare and the asymmetric superiority of Vietcong guerrilla resistance.",
+            "model": "Source B is useful for an enquiry into the failure of US tactics in Vietnam because it demonstrates the devastating impact of heavy firepower on civilians. From my knowledge, tactics like Operation Rolling Thunder, chemical defoliants (Agent Orange), and napalm destroyed crops and villages, alienating the South Vietnamese peasants whose 'hearts and minds' were needed to defeat the Vietcong. As a report by an American war correspondent, it gives a candid account of military destruction.<br><br>Source C is useful because a Vietcong fighter describes using the Ho Chi Minh Trail and complex underground tunnel systems (like Cu Chi) to withstand American bombing. It shows how guerrilla adaptability countered superior US technology. Overall, both sources are highly useful for explaining why US firepower failed to defeat guerrilla resistance.",
             "scaffolding": {
               "acronym": "Source Utility Framework",
               "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
@@ -11575,47 +11459,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=hGsyEkfjhQk",
-          "title": "Platoon (1986, dir. Oliver Stone) Theatrical Trailer | MGM",
-          "duration": "2 mins 18 secs",
-          "pathway": "Cinematic Focus",
-          "teacher_guidance": "Oliver Stone's Academy Award-winning combat film based on his own infantry service in Vietnam (1967–68), capturing the sensory terror of jungle combat, booby traps, moral exhaustion, and the divide within American platoons. Recommended Watch Window: 00:00–02:15 • Lesson Phase: Cinematic Starter Hook (0–3m). Tone Alert: Gritty, visceral cinematic trailer conveying the claustrophobia and psychological trauma of frontline infantry warfare in Vietnam.",
-          "viewing_task": "<strong>Cinematic Discussion Focus:</strong> How does Oliver Stone's cinematic depiction in <em>Platoon</em> reflect the asymmetric nightmare faced by ordinary 19-year-old American \"grunts\", who found themselves fighting not only an invisible guerilla enemy in dense jungle terrain, but also the internal breakdown of military morale and ethics within their own units?",
-          "model_answer": "Stone's trailer emphasizes that the war was fought in an alien, hostile environment where conventional American heavy artillery and firepower were neutralized by dense jungle canopy, heat, disease, and hidden booby traps. Furthermore, the film captures the bitter generational and racial divide among young conscripts (average age 19), showing how the constant terror of invisible snipers and booby traps drove units to psychological collapse, drug abuse, and atrocities against civilians, transforming the conflict into a war for basic individual survival rather than ideological victory.",
-          "id": "hGsyEkfjhQk"
-        },
-        {
-          "type": "youtube",
+          "id": "huRWshoW7T8",
           "url": "https://www.youtube.com/watch?v=huRWshoW7T8",
-          "title": "Vietcong Guerilla (Vietnam War) | Simple History",
+          "title": "Vietcong Guerrilla (Vietnam War) | Simple History",
           "duration": "3 mins 35 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Explores the tactics, equipment, and doctrine of the National Liberation Front (Vietcong): \"hanging onto the belts\" of US troops, hit-and-run ambushes, and Ho Chi Minh's peasant army. Recommended Watch Window: 00:00–03:15 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast, accessible animated breakdown of guerrilla warfare doctrine.",
-          "viewing_task": "<ol><li><strong>[00:45] Quick Check:</strong> What phrase did Vietcong commanders use to describe their tactic of fighting in extreme close proximity to US soldiers to prevent American commanders from calling in artillery and airstrikes?</li><li><strong>[02:10] Hinge Question:</strong> Why were US \"Search and Destroy\" missions (Zippo raids) counterproductive, turning South Vietnamese peasants into loyal supporters of the Vietcong?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> \"Hanging onto the belts\" of the enemy (fighting so close that American bombs would kill their own men).</li><li><strong>Hinge Question:</strong> Because Vietcong guerrillas wore ordinary black peasant pajamas and blended seamlessly into civilian populations, frustrated US infantry were ordered to burn down entire villages, kill livestock, and destroy rice stores (\"Search and Destroy\" or \"Zippo missions\") if they suspected guerrilla presence. This collective punishment terrorized innocent farming families, driving hundreds of thousands of grieving peasants into the open arms of the National Liberation Front.</li></ol>",
-          "id": "huRWshoW7T8"
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:35 | Lesson Phase: Starter Hook | Tone Alert: Animated guide to Vietcong guerrilla tactics: camouflage, booby traps, hit-and-run ambushes, and blending with civilians.",
+          "viewing_task": "[01:00] Guerrilla Warfare: What rules of guerrilla combat laid down by Mao Zedong did the National Liberation Front (Vietcong) follow?\n[02:20] Deadly Traps: How did punji stick pits and tripwire grenades inflict severe psychological terror on American conscripts?",
+          "model_answer": "The Vietcong followed Mao's doctrine: 'The enemy advances, we retreat; the enemy camps, we harass; the enemy tires, we attack; the enemy retreats, we pursue,' avoiding large-scale set-piece battles. Punji traps (sharpened bamboo stakes smeared with human excrement) and toe-popper cartridge traps caused non-fatal, maiming injuries and gangrene, instilling constant fear and slowing American patrols to a crawl."
         },
         {
           "type": "youtube",
+          "id": "XsLE6EtrvhM",
           "url": "https://www.youtube.com/watch?v=XsLE6EtrvhM",
           "title": "Viet Cong Tunnels and Traps - Platoon: The True Story | Discovery UK",
           "duration": "4 mins 52 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Archival analysis and veteran testimony exploring the Cu Chi tunnel network, Punji stake booby traps, and the psychological warfare that demoralized US combat infantry. Recommended Watch Window: 00:30–04:20 • Lesson Phase: Guided Instruction & Tactical Deconstruction. Tone Alert: Technical and psychological military documentary analyzing asymmetric warfare.",
-          "viewing_task": "<ol><li><strong>[01:00] Recall:</strong> Name two common booby traps manufactured by the Vietcong from discarded US artillery shells, scrap metal, and bamboo stakes.</li><li><strong>[02:15] Explain:</strong> Describe the engineering features of the 150-mile Cu Chi tunnel complex (hospitals, kitchens, sleeping quarters) and why US chemical defoliants (Agent Orange) and napalm failed to destroy them.</li><li><strong>[03:40] Challenge:</strong> Evaluate why General William Westmoreland's strategy of \"attrition\" (measuring military success by \"body count\") proved a fatal strategic error in Vietnam.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Punji stake pits (sharpened bamboo stakes smeared with human excrement to cause gangrene) and \"bouncing betty\" landmines or toe-popper explosive cartridges.</li><li><strong>Explain:</strong> The Cu Chi tunnels featured multi-level labyrinthine engineering with airtight trapdoors, U-shaped water locks to block tear gas, and disguised smoke vents that filtered cooking smoke miles away in the jungle. They were dug up to 30 feet underground through dense clay, rendering them virtually immune to conventional bombing. While Agent Orange stripped foliage and napalm incinerated the surface, Vietcong fighters survived safely underground, emerging behind US patrols to stage devastating ambushes.</li><li><strong>Challenge:</strong> Westmoreland assumed that superior American firepower could kill Vietcong and North Vietnamese soldiers faster than North Vietnam could replace them. However, Ho Chi Minh correctly understood that North Vietnam was fighting a total war for national survival and was willing to accept massive casualties (famously declaring: \"You can kill ten of my men for every one I kill of yours, yet even at those odds, you will lose and I will win\"). The \"body count\" metric led to fabricated casualty reports, masked political defeat, and destroyed the morale of US troops who captured hills only to abandon them days later.</li></ol>",
-          "id": "XsLE6EtrvhM"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:52 | Lesson Phase: Underground Warfare | Tone Alert: Documentary exploration of the 250-kilometre Cu Chi tunnel network outside Saigon and the hazardous missions of American 'Tunnel Rats'.",
+          "viewing_task": "[01:30] Subterranean Network: What facilities were housed inside the multi-level Cu Chi tunnel complexes?\n[03:40] Tunnel Rats: What extreme hazards faced volunteer 'Tunnel Rats' armed only with a flashlight and a .45 pistol?",
+          "model_answer": "The Cu Chi tunnels contained blast-proof command posts, field hospitals, weapons workshops, kitchens with smoke-dispersing baffles, and sleeping quarters, allowing thousands of guerrillas to survive beneath US bases. 'Tunnel Rats' crawled through pitch-black, narrow crawlways confronting booby-trapped trapdoors, venomous bamboo pit vipers, scorpions, and enemy soldiers waiting around blind corners."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "Air Cavalry, Napalm & The Cu Chi Tunnels | Vietnam Tactical Deep Dive",
-          "duration": "14 mins 10 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–12:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Detailed tactical comparison between US high-tech firepower and NLF guerrilla warfare.",
-          "viewing_task": "[02:30] Recall: What was General Westmoreland's strategy of 'attrition' and measuring progress via 'body counts'?\n[06:00] Explain: How did the Vietcong's 250km Cu Chi tunnel network protect guerrillas from B-52 carpet bombing and napalm defoliation?\n[10:15] Challenge: Why did chemical defoliants like Agent Orange fail to break enemy logistics while creating a catastrophic legacy of cancer and birth defects?",
-          "model_answer": "Recall: Believing superior firepower could kill enemy troops faster than North Vietnam could replace them, using daily published enemy casualty counts as the metric of victory.\nExplain: Multi-level subterranean complexes contained hospitals, sleeping chambers, weapon factories, and water wells; guerrillas emerged to ambush patrols and disappeared underground before artillery could strike.\nChallenge: It poisoned 5 million acres of jungle and crops without halting the Ho Chi Minh Trail, alienating peasant farmers whose livelihoods were destroyed and creating lasting ecological and health disasters."
+          "id": "hGsyEkfjhQk",
+          "url": "https://www.youtube.com/watch?v=hGsyEkfjhQk",
+          "title": "Platoon (1986, dir. Oliver Stone) Theatrical Trailer | MGM",
+          "duration": "2 mins 18 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:18 | Lesson Phase: Conscript Experience | Tone Alert: Oliver Stone's Oscar-winning, semi-autobiographical depiction of grunt life, moral confusion, and jungle warfare in Vietnam.",
+          "viewing_task": "[00:50] Realism: How does Oliver Stone draw on his own combat experience as a US infantryman to convey the claustrophobic terror of jungle ambushes?\n[01:40] Chemical Weapons: Why did US forces deploy Agent Orange and napalm, and what devastating environmental consequences followed?",
+          "model_answer": "Stone strips away romanticized war heroism, portraying exhausted 19-year-old draftees battling mud, monsoons, and unseen enemies who vanished into the foliage. Operation Ranch Hand sprayed 20 million gallons of toxic defoliants like Agent Orange to strip forest canopies and destroy crops, poisoning water systems, causing cancer and birth defects, and alienating the civilian population."
         }
       ],
       "banner": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg",
@@ -12587,47 +12460,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "JUzTdiaiHhQ",
           "url": "https://www.youtube.com/watch?v=JUzTdiaiHhQ",
           "title": "Why Did Kissinger Wage A Secret War On Cambodia? | American Experience | PBS",
           "duration": "4 mins 28 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "PBS investigation into Operation Menu (1969–70): Nixon and Henry Kissinger's secret B-52 carpet-bombing of neutral Cambodia to disrupt the Ho Chi Minh Trail, leading to the rise of the Khmer Rouge. Recommended Watch Window: 00:30–04:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Serious investigative history examining executive secrecy and foreign collateral damage.",
-          "viewing_task": "<ol><li><strong>[01:05] Quick Check:</strong> What was the code name for President Nixon's secret 14-month B-52 carpet-bombing campaign launched against communist sanctuaries in neutral Cambodia in March 1969?</li><li><strong>[02:50] Hinge Question:</strong> How did Nixon and Kissinger keep the bombing of Cambodia secret from the US Congress and American public, and what catastrophic domestic reaction erupted when Nixon announced a ground invasion of Cambodia in April 1970?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Operation Menu (including sub-operations Breakfast, Lunch, Dinner, Snack, Supper, and Dessert).</li><li><strong>Hinge Question:</strong> The Pentagon maintained dual record-keeping systems where pilots flew missions into Cambodia but logged their bomb drops as occurring in South Vietnam. When Nixon publicly announced on 30 April 1970 that 30,000 US combat troops were invading Cambodia to destroy enemy headquarters, furious anti-war protests erupted across 400 college campuses nationwide, leading directly to the Kent State shootings four days later.</li></ol>",
-          "id": "JUzTdiaiHhQ"
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:28 | Lesson Phase: Starter Hook | Tone Alert: Explores Nixon and Henry Kissinger's clandestine 'Operation Menu' carpet-bombing of neutral Cambodia beginning March 1969.",
+          "viewing_task": "[01:15] Covert Action: Why did Nixon conceal the B-52 bombing of Cambodia from the American public and Congress for four years?\n[03:20] Geopolitical Blowback: How did the destabilization of Cambodia facilitate the rise of Pol Pot and the genocidal Khmer Rouge?",
+          "model_answer": "Nixon hid Operation Menu because bombing a neutral, sovereign nation without congressional approval violated the Constitution and international law, risking massive domestic outrage. The carpet-bombing killed an estimated 100,000 Cambodian peasants and destabilized Prince Sihanouk's government, driving traumatized rural populations into the extremist ranks of Pol Pot's Khmer Rouge."
         },
         {
           "type": "youtube",
+          "id": "n4fzowrmYh8",
           "url": "https://www.youtube.com/watch?v=n4fzowrmYh8",
-          "title": "The Cold War: Nixon in Vietnam - Vietnamisation, Cambodia and Invasion of Laos | I'm Stuck GCSE History",
+          "title": "The Cold War: Nixon in Vietnam - Vietnamisation, Cambodia and Laos | I'm Stuck GCSE History",
           "duration": "7 mins 10 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "GCSE breakdown of the Nixon Doctrine (June 1969): Vietnamization, troop withdrawals, the Madman Theory, the disastrous 1971 ARVN invasion of Laos (Operation Lam Son 719), and \"Peace with Honour\". Recommended Watch Window: 00:45–05:50 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Structured GCSE syllabus breakdown with primary newsreels and analysis.",
-          "viewing_task": "<ol><li><strong>[01:15] Recall:</strong> What was President Richard Nixon's policy of \"Vietnamization\", announced in the summer of 1969?</li><li><strong>[03:20] Explain:</strong> Explain Nixon's \"Madman Theory\" diplomatic strategy and describe how he used massive aerial bombing (Operation Linebacker) to force North Vietnam to negotiate in Paris.</li><li><strong>[05:10] Challenge:</strong> Evaluate the performance of the ARVN in the February 1971 invasion of Laos (Operation Lam Son 719): why did this campaign expose Vietnamization as a military failure?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The gradual withdrawal of 500,000 US ground combat troops while training, modernizing, and equipping the South Vietnamese Army (ARVN) with billions in weaponry to take over all frontline fighting.</li><li><strong>Explain:</strong> Nixon wanted North Vietnamese negotiators in Paris to believe he was an erratic, fanatical anti-communist whose finger was on the nuclear button and who would do anything to win. When peace talks stalled, Nixon unleashed Operation Linebacker I and the Christmas Bombings of December 1972 (Linebacker II), dropping 20,000 tons of bombs on Hanoi and Haiphong in eleven days to bomb North Vietnam back to the negotiating table.</li><li><strong>Challenge:</strong> Lam Son 719 was intended as the ultimate test of Vietnamization: South Vietnamese troops invaded Laos to sever the Ho Chi Minh Trail without US ground support (only US air cover). The ARVN were routed by North Vietnamese armor, suffering 50% casualties and fleeing in chaos, with television crews filming terrified South Vietnamese soldiers clinging desperately to the landing skids of departing American helicopters, proving ARVN could not stand alone.</li></ol>",
-          "id": "n4fzowrmYh8"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Policy Transition | Tone Alert: Structured breakdown of the Nixon Doctrine, Vietnamization policy, the Madman Theory, and the ARVN invasion of Laos (1971).",
+          "viewing_task": "[01:45] Vietnamization: What was Nixon's strategy of 'Vietnamization', and how did it aim to achieve 'Peace with Honour'?\n[04:00] Operation Lam Son 719: What did the disastrous ARVN retreat from Laos in February 1971 reveal about South Vietnamese military capability?",
+          "model_answer": "Vietnamization aimed to withdraw American ground troops gradually while massively arming and training South Vietnam's ARVN forces to bear the burden of combat, backed by US air power. The rout in Laos demonstrated that despite billions in US military hardware, ARVN units could not survive conventional battles against North Vietnamese regulars without US ground advisors and tactical air cover."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=nrXlY6gzTTM",
           "id": "nrXlY6gzTTM",
-          "title": "The Post (2017) | Official Trailer (Steven Spielberg / Meryl Streep)",
+          "url": "https://www.youtube.com/watch?v=nrXlY6gzTTM",
+          "title": "The Post (2017) | Official Trailer | Steven Spielberg",
           "duration": "2 mins 30 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Depicts the leak and publication of the top-secret Pentagon Papers in 1971.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film capture the constitutional showdown between freedom of the press and the Nixon administration's attempts to cover up decades of presidential deception?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows the Washington Post risking criminal prosecution to publish the secret history of Vietnam, revealing that four successive administrations lied about war progress while privately knowing the war was unwinnable."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "Operation Menu: The Secret Bombing of Cambodia & Vietnamization | PBS",
-          "duration": "13 mins 20 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–11:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Explores Nixon's 'madman theory', secret B-52 strikes, and the Cambodian genocide.",
-          "viewing_task": "[02:00] Recall: What was President Richard Nixon's policy of 'Vietnamization' announced in 1969?\n[05:45] Explain: Why did Nixon and Henry Kissinger keep the B-52 bombing of neutral Cambodia (Operation Menu) secret from Congress and the American public?\n[09:30] Challenge: How did the destabilization of Cambodia caused by 500,000 tons of US bombs directly pave the way for Pol Pot and the Khmer Rouge genocide?",
-          "model_answer": "Recall: Gradually withdrawing 500,000 US combat troops while transferring ground combat responsibility to the South Vietnamese ARVN, backed by intense US air power.\nExplain: Bombing a sovereign neutral country without congressional approval was an unconstitutional act of war that would trigger explosive domestic anti-war protests.\nChallenge: Massive carpet bombing shattered the rural social fabric and killed an estimated 100,000 civilians, driving radicalized peasants into the ranks of the extremist Khmer Rouge, who seized power and murdered over 1.7 million people."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Investigative Journalism | Tone Alert: Steven Spielberg's thriller on the 1971 publication of the leaked Pentagon Papers by Daniel Ellsberg.",
+          "viewing_task": "[01:00] Pentagon Papers: What shocking truths did the top-secret McNamara study leaked by Daniel Ellsberg reveal about four presidential administrations?\n[01:55] First Amendment: How did the Supreme Court ruling in New York Times v US strike a blow against government secrecy?",
+          "model_answer": "The Pentagon Papers proved that four consecutive presidents (Truman, Eisenhower, Kennedy, Johnson) had systematically lied to Congress and the public, knowing the war was unwinnable while expanding covert escalation. The Supreme Court rejected Nixon's attempt to use 'prior restraint' on national security grounds, ruling 6-3 that newspapers had a First Amendment right to publish truthful governmental records."
         }
       ],
       "banner": "/units/usa/assets/sources/nixon-visiting-troops.jpg",
@@ -12883,8 +12745,7 @@ export default {
               "src": "/units/usa/assets/sources/vietnam-draft-lottery.jpg",
               "source": "/units/usa/assets/sources/vietnam-draft-lottery.jpg"
             }
-          ],
-          "isReversed": true
+          ]
         },
         {
           "act": 4,
@@ -13311,7 +13172,7 @@ export default {
             "question": "1. Give two things you can infer from Source A about the confrontation at Kent State University in May 1970. [4 marks]",
             "stimulus": "Source A: Photograph and report on Ohio National Guardsmen firing into student anti-war demonstrators at Kent State, killing four.",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that domestic opposition to the Vietnam War had escalated into violent, lethal clashes on American soil.<br><strong>Details in the source that tell me this:</strong><br>National Guardsmen armed with live military ammunition opened fire on an unarmed student anti-war protest on a college campus, killing four students.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that President Nixon's decision to expand the war into Cambodia provoked unprecedented outrage among the younger generation.<br><strong>Details in the source that tell me this:</strong><br>The protest was triggered directly by Nixon's public announcement of the Cambodian incursion, prompting nationwide student strikes that shut down hundreds of universities.</p>",
+            "model": "<strong>Inference 1:</strong> Domestic anti-war protests had escalated into deadly violence on American soil. <strong>Detail:</strong> Four unarmed student demonstrators were shot dead by Ohio National Guardsmen at Kent State University in May 1970.<br><br><strong>Inference 2:</strong> Nixon's expansion of the war provoked furious nationwide student strikes. <strong>Detail:</strong> Hundreds of college campuses shut down immediately following the invasion of Cambodia.",
             "scaffolding": {
               "acronym": "Point & Detail (4 Marks)",
               "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
@@ -13584,47 +13445,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "ydo1TLuOHiY",
           "url": "https://www.youtube.com/watch?v=ydo1TLuOHiY",
           "title": "The Hero Who Stood Up to the My Lai Massacre (1968) | Simple History",
           "duration": "3 mins 15 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated history of the 16 March 1968 My Lai massacre where Charlie Company (led by Lt. William Calley) murdered over 500 unarmed Vietnamese civilians, and helicopter pilot Hugh Thompson Jr.'s heroic intervention. Recommended Watch Window: 00:00–03:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast, accessible animated account of military war crimes and moral courage.",
-          "viewing_task": "<ol><li><strong>[00:55] Quick Check:</strong> Which US Army platoon leader was convicted in March 1971 of the premeditated murder of 22 Vietnamese civilians at My Lai, serving just three years under house arrest?</li><li><strong>[02:15] Hinge Question:</strong> How did US Army helicopter pilot Hugh Thompson Jr. intervene to save remaining Vietnamese civilians from being executed by American soldiers in an irrigation ditch?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Lieutenant William Calley.</li><li><strong>Hinge Question:</strong> Warrant Officer Hugh Thompson Jr. landed his OH-23 observation helicopter directly between advancing US soldiers and fleeing Vietnamese civilians. He ordered his door gunners (Glenn Andreotta and Lawrence Colburn) to train their M60 machine guns on American troops and shoot if they resumed killing, while personally coaxing eleven surviving women and children out of a bunker and calling in evacuation gunships.</li></ol>",
-          "id": "ydo1TLuOHiY"
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:15 | Lesson Phase: Starter Hook | Tone Alert: Animated account of the 16 March 1968 My Lai massacre of over 500 unarmed Vietnamese civilians by Charlie Company and helicopter pilot Hugh Thompson's intervention.",
+          "viewing_task": "[01:10] The Massacre: What atrocities were committed by Lt. William Calley's soldiers in the hamlet of Son My (My Lai)?\n[02:25] The Intervention: How did warrant officer Hugh Thompson risk his life to confront American troops and rescue surviving villagers?",
+          "model_answer": "Charlie Company slaughtered between 347 and 504 unarmed old men, women, and infants, raping women and burning homes, despite discovering zero Vietcong weapons. Observation helicopter pilot Hugh Thompson landed his craft between Charlie Company soldiers and trapped Vietnamese civilians, ordering his gunners to fire on fellow US soldiers if they continued murdering civilians, and airlifted survivors to safety."
         },
         {
           "type": "youtube",
+          "id": "9Pwro3vCUdU",
           "url": "https://www.youtube.com/watch?v=9Pwro3vCUdU",
           "title": "The Kent State Shootings, Explained | HISTORY",
           "duration": "4 mins 12 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Archival analysis of the 4 May 1970 Kent State massacre in Ohio: National Guardsmen firing 67 rounds in 13 seconds into an unarmed anti-war rally, killing four students and sparking a nationwide student strike. Recommended Watch Window: 00:30–03:50 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Solemn, documentary examination of domestic political violence and iconic photojournalism.",
-          "viewing_task": "<ol><li><strong>[01:00] Recall:</strong> How many unarmed Kent State University students were killed and how many wounded when Ohio National Guardsmen opened fire on 4 May 1970?</li><li><strong>[02:15] Explain:</strong> Explain why the iconic Pulitzer Prize-winning photograph of 14-year-old runaway Mary Ann Vecchio kneeling in anguish over the body of student Jeffrey Miller galvanized anti-war sentiment worldwide.</li><li><strong>[03:20] Challenge:</strong> Evaluate the domestic consequences of the Kent State shootings: how did the event trigger a nationwide student strike shutting down 400 universities while simultaneously deepening the cultural divide in America?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Four students were killed (Allison Krause, Jeffrey Miller, Sandra Scheuer, and William Schroeder) and nine wounded.</li><li><strong>Explain:</strong> The photograph taken by student photojournalist John Filo captured the raw, visceral agony of state violence visited upon middle-class American college students. Seeing an ordinary American girl screaming in despair beside a pool of blood shattered the government narrative that anti-war protesters were violent communist terrorists, humanizing the movement and demonstrating that the war had turned American troops against their own children.</li><li><strong>Challenge:</strong> Kent State triggered an unprecedented nationwide student strike of over 4 million students, closing more than 450 colleges and universities and forcing 100,000 marchers onto Washington D.C., where federal buses were parked bumper-to-bumper to protect the White House. Yet it also revealed bitter societal polarization: opinion polls showed a majority of conservative Americans initially blamed the students rather than the Guardsmen, hardening political hostility between the counterculture and Middle America.</li></ol>",
-          "id": "9Pwro3vCUdU"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:12 | Lesson Phase: Domestic Tragedy | Tone Alert: Archival footage examining the 4 May 1970 Ohio National Guard shooting of student protesters demonstrating against the invasion of Cambodia.",
+          "viewing_task": "[01:20] Campus Outrage: Why did Nixon's announcement of the Cambodian Incursion on 30 April 1970 trigger student strikes across 400 universities?\n[02:50] The Tragedy: What occurred on 4 May 1970 when 28 Ohio National Guardsmen fired 67 rounds into a crowd of student demonstrators?",
+          "model_answer": "Nixon had promised he was ending the war through troop withdrawals; announcing the invasion of Cambodia appeared as an outright escalation, sparking massive student walkouts nationwide. Ohio National Guardsmen fired into unarmed crowds at Kent State University, killing four students (Allison Krause, Jeffrey Miller, Sandra Scheuer, William Schroeder) and wounding nine, triggering a nationwide student strike of four million youth."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=FVb6EdKDBfU",
           "id": "FVb6EdKDBfU",
-          "title": "The Trial of the Chicago 7 (2020) | Official Trailer (Netflix / Aaron Sorkin)",
+          "url": "https://www.youtube.com/watch?v=FVb6EdKDBfU",
+          "title": "The Trial of the Chicago 7 (2020) | Official Trailer | Netflix / Aaron Sorkin",
           "duration": "2 mins 30 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Aaron Sorkin's courtroom drama depicting anti-war leaders put on trial following the 1968 Chicago DNC riots.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film portray the government's attempt to criminalize political dissent against the Vietnam War?",
-          "model_answer": "Cinematic Discussion Focus: The trailer dramatises how federal prosecutors charged protest leaders under anti-riot conspiracy laws, framing democratic protest as treason while police violently clubbed demonstrators in front of television cameras."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "My Lai & Kent State: The Moral Crisis of Vietnam | Documentary Archive",
-          "duration": "14 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–12:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Investigates the March 1968 massacre of 504 unarmed Vietnamese villagers and the May 1970 shootings.",
-          "viewing_task": "[02:30] Recall: What actions did helicopter pilot Hugh Thompson take to halt the massacre of civilians by Charlie Company at My Lai?\n[06:15] Explain: How did journalist Seymour Hersh's investigative reporting expose the military cover-up of My Lai in November 1969?\n[10:00] Challenge: How did the killing of four unarmed students by the Ohio National Guard at Kent State University trigger a nationwide campus strike of over 4 million students?",
-          "model_answer": "Recall: Thompson landed his helicopter between rampaging US soldiers and terrified villagers, ordering his crew to train their machine guns on American troops if they fired again.\nExplain: Army commanders covered up the massacre for 18 months as a 'battle with 128 enemy dead'; Hersh interviewed Lieutenant William Calley and broke the story, shattering the myth of American moral righteousness.\nChallenge: When soldiers shot American college students on their own campus during protests against the invasion of Cambodia, hundreds of universities closed down, polarizing the nation between anti-war youth and pro-Nixon conservatives."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Political Trial & Civil Disobedience | Tone Alert: Aaron Sorkin's courtroom drama depicting the federal trial of anti-war organizers following the riots outside the 1968 Chicago Democratic National Convention.",
+          "viewing_task": "[00:50] Chicago 1968: What caused the violent clashes between police and anti-war demonstrators outside the Democratic Convention in August 1968?\n[01:45] Cultural Divide: How did the trial symbolize the deep generational and political fissure dividing 1960s America?",
+          "model_answer": "Mayor Richard J. Daley ordered 12,000 police and 6,000 National Guardsmen to crack down on peaceful youth demonstrators; a federal report later condemned the bloody clashes as a 'police riot'. The prosecution of the Chicago 7 exposed the generational chasm between an entrenched, conservative establishment terrified of social revolution and an idealistic youth culture demanding an immediate end to an immoral war."
         }
       ],
       "banner": "/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg",
@@ -13918,8 +13768,7 @@ export default {
               "src": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
               "source": "/units/usa/assets/sources/pro-war-rally-nyc.jpg"
             }
-          ],
-          "isReversed": true
+          ]
         },
         {
           "act": 5,
@@ -13994,7 +13843,8 @@ export default {
           "qNum": 1,
           "question": "Explain why some Americans supported US involvement in the Vietnam War in the years 1969–72. (12 marks)",
           "starter": "“One reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 was their deep-seated patriotism and fear of communist expansion.",
-          "model": "“One reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 was their deep-seated patriotism and fear of communist expansion.” Many conservative and working-class citizens believed that a communist victory in South Vietnam would damage US global credibility. They accepted the [[Domino Theory]] and argued that abandoning an ally would lead to a communist bloodbath. {{Therefore, anti-communist patriotism was a key reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 because they viewed the conflict as a necessary stand against global communism.}}\n\n“A second reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 was President Nixon's successful political mobilization of the Silent Majority.” In his November 1969 speech, Nixon called on the quiet, law-abiding majority of Americans to support his policy of [[Vietnamisation]]. This speech gave a voice to patriotic citizens, presenting them as the moral backbone of the country against radicals. {{Therefore, Nixon's political appeal to the Silent Majority was a crucial reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 because it framed support for his policies as a patriotic duty.}}\n\n“A third reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 was class resentment against middle-class student anti-war protesters.” Working-class families, whose drafted sons did not have college deferments, saw student demonstrators as privileged, unpatriotic draft-dodgers who insulted the military. This division led to pro-war events like the [[Hard Hat Riots]] of 1970. {{Therefore, working-class resentment of student protesters was a major reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 because it aligned patriotic sentiment against the anti-war movement.}}"
+          "model": "A primary reason was President Richard Nixon's effective appeal to the 'Silent Majority'. Nixon argued that while radical college students and media elites protested loudly against the war, the vast majority of ordinary, patriotic, working-class Americans supported the military and opposed a humiliating surrender to communist aggression.<br><br>Furthermore, many Americans held deep anti-communist convictions grounded in the Domino Theory. They feared that abandoning South Vietnam would embolden the Soviet Union and China, undermine American credibility with global allies, and lead to communist expansion throughout Asia.<br><br>Ultimately, pro-war support was driven by traditional patriotism and loyalty to American troops. Many citizens viewed the anti-war movement as disrespectful to soldiers fighting and dying abroad. Groups like the 'Hard Hats' (construction workers who clashed with anti-war demonstrators in New York in 1970) believed that the US had a moral duty to secure 'peace with honour' rather than accept defeat.",
+          "model_answer": "A primary reason was President Richard Nixon's effective appeal to the 'Silent Majority'. Nixon argued that while radical college students and media elites protested loudly against the war, the vast majority of ordinary, patriotic, working-class Americans supported the military and opposed a humiliating surrender to communist aggression.<br><br>Furthermore, many Americans held deep anti-communist convictions grounded in the Domino Theory. They feared that abandoning South Vietnam would embolden the Soviet Union and China, undermine American credibility with global allies, and lead to communist expansion throughout Asia.<br><br>Ultimately, pro-war support was driven by traditional patriotism and loyalty to American troops. Many citizens viewed the anti-war movement as disrespectful to soldiers fighting and dying abroad. Groups like the 'Hard Hats' (construction workers who clashed with anti-war demonstrators in New York in 1970) believed that the US had a moral duty to secure 'peace with honour' rather than accept defeat."
         },
         {
           "qNum": 2,
@@ -14315,7 +14165,7 @@ export default {
               "The impact of the Tet Offensive (1968)"
             ],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "One major reason why President Nixon introduced Vietnamization was the unsustainable toll of <strong>rising American military casualties</strong> and the explosive anti-war backlash on the home front. By 1969, over 36,000 American soldiers had been killed, with hundreds dying each week. Draft resistance, student strikes, and veterans returning medals convinced Nixon that the American public would no longer tolerate high US body bags, forcing him to promise 'peace with honour' and begin the phased withdrawal of ground troops.<br><br>A second decisive factor was the <strong>shattering psychological impact of the 1968 Tet Offensive</strong>. Tet had destroyed the credibility of the US government, exposing the reality that 500,000 US soldiers could not secure South Vietnam against communist guerrilla infiltration. Nixon recognized that continuing a direct US ground war was politically suicidal, compelling him to shift the military burden of ground combat entirely onto the South Vietnamese Army (ARVN), supported by US air and naval power.<br><br>Finally, Nixon sought to implement his broader <strong>Nixon Doctrine and diplomatic détente</strong> with the Soviet Union and China. By pursuing diplomatic triangular diplomacy with Beijing and Moscow, Nixon hoped to isolate North Vietnam diplomatically while demonstrating that America’s Asian allies had to take primary responsibility for their own military defense, thereby facilitating an honourable exit for the United States.",
+            "model": "A primary factor was the immense domestic political and public pressure to end the war. Following the January 1968 Tet Offensive, the American public realized the war was unwinnable. Widespread anti-war protests, student draft-card burnings, and rising casualties (over 30,000 dead by 1969) divided the nation. Nixon had campaigned in 1968 on a promise to achieve 'peace with honour', making US troop withdrawals politically mandatory.<br><br>Furthermore, Vietnamization aimed to transfer the burden of combat to the South Vietnamese army (ARVN). By heavily equipping ARVN with modern American aircraft, artillery, and training, the Nixon administration sought to enable South Vietnam to defend itself while reducing US casualties.<br><br>Ultimately, Nixon needed to appease the domestic public while maintaining diplomatic leverage at the Paris peace talks. By gradually withdrawing American ground troops from 540,000 to under 50,000, Nixon neutralised domestic anti-war outrage, while using heavy B-52 bombing raids to force North Vietnam into a negotiated settlement.",
             "scaffolding": {
               "acronym": "PEEL Structure Strip",
               "acronym_title": "3-Paragraph Causal Analysis (PEEL)",
@@ -14591,47 +14441,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "Hqz0i83Jqxg",
           "url": "https://www.youtube.com/watch?v=Hqz0i83Jqxg",
-          "title": "Nixon's \"Great Silent Majority\" | American Experience | PBS",
+          "title": "Nixon's 'Great Silent Majority' | American Experience | PBS",
           "duration": "4 mins 05 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Analyzes President Richard Nixon's landmark 3 November 1969 televised address appealing to the \"great silent majority\" of non-protesting, patriotic working- and middle-class Americans. Recommended Watch Window: 00:30–03:45 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Presidential speech analysis and social commentary.",
-          "viewing_task": "<ol><li><strong>[01:10] Quick Check:</strong> Who did President Nixon define as the \"great silent majority\" in his historic 3 November 1969 national television address?</li><li><strong>[02:30] Hinge Question:</strong> Why did Nixon warn that an immediate, unilateral US withdrawal from Vietnam would lead to a catastrophic \"collapse of confidence in American leadership\" across the world?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> The vast millions of ordinary, law-abiding working- and middle-class Americans who did not participate in anti-war street demonstrations, countercultural protests, or media debates.</li><li><strong>Hinge Question:</strong> Nixon framed the issue not around the merits of Vietnam itself, but around global credibility. He argued that if the world's greatest superpower surrendered under domestic mob pressure, allies in Europe and Asia would conclude that American security guarantees were worthless, while the Soviet Union and China would be emboldened to launch aggressive communist expansion globally.</li></ol>",
-          "id": "Hqz0i83Jqxg"
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:05 | Lesson Phase: Starter Hook | Tone Alert: Explores Richard Nixon's 3 November 1969 address calling on everyday, patriotic working-class Americans to reject anti-war protests.",
+          "viewing_task": "[01:25] Rhetoric: Whom did Nixon define as the 'Silent Majority', and how did he distinguish them from student demonstrators?\n[03:10] Political Strategy: How did Nixon's appeal consolidate working-class 'Hard Hat' voters behind the Republican presidency?",
+          "model_answer": "Nixon defined the Silent Majority as law-abiding, hardworking, patriotic citizens who paid taxes, went to church, and did not participate in street demonstrations or burn draft cards. Nixon tapped into deep resentment among middle- and working-class Americans who felt insulted by privileged college students protesting while working-class sons fought and died in uniform."
         },
         {
           "type": "youtube",
+          "id": "CYjxP7un91U",
           "url": "https://www.youtube.com/watch?v=CYjxP7un91U",
-          "title": "The 1970 Riot that Split America | American Experience | PBS",
+          "title": "The 1970 Riot that Split America (Hard Hat Riot) | American Experience | PBS",
           "duration": "6 mins 15 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Archival analysis of the 8 May 1970 \"Hard Hat Riot\" in Lower Manhattan: 200 construction workers attacking anti-war students protesting Kent State, symbolizing the blue-collar revolt against the New Left. Recommended Watch Window: 00:45–05:15 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Dramatic archival news footage detailing the class divide over the Vietnam War.",
-          "viewing_task": "<ol><li><strong>[01:30] Recall:</strong> Where did the \"Hard Hat Riot\" take place on 8 May 1970, and which iconic trade union members attacked student protesters?</li><li><strong>[03:20] Explain:</strong> Why did blue-collar trade union workers feel intense resentment towards college-educated anti-war demonstrators during the Vietnam War?</li><li><strong>[04:50] Challenge:</strong> Evaluate how President Nixon exploited the cultural and class resentments epitomized by the Hard Hat Riot to forge a new conservative Republican electoral coalition.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Lower Manhattan (near Wall Street and Federal Hall), New York City; construction workers belonging to the AFL-CIO building trades unions.</li><li><strong>Explain:</strong> Blue-collar workers viewed college students as privileged, draft-exempt elitists who burned American flags and spat on the military while working-class sons—who could not afford college draft deferments—were conscripted and dying in Vietnamese jungles. Construction workers regarded public protest as an unpatriotic betrayal of their fighting brothers, marching with American flags under the slogan \"All the way, USA!\"</li><li><strong>Challenge:</strong> Nixon recognized that working-class white union members—traditionally staunch New Deal Democrats—felt deeply alienated by countercultural radicalism, urban riots, and anti-war protests. By welcoming union leaders Peter J. Brennan and construction workers to the White House (accepting an honorary hard hat), Nixon brilliantly peeled white blue-collar \"Reagan Democrats\" away from the Democratic Party, laying the foundation for his 49-state landslide re-election in 1972.</li></ol>",
-          "id": "CYjxP7un91U"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Polarized Society | Tone Alert: Explores the 8 May 1970 'Hard Hat Riot' in Lower Manhattan where 200 construction workers attacked anti-war student demonstrators.",
+          "viewing_task": "[01:40] Lower Manhattan Clash: Why did construction workers charge student demonstrators protesting the Kent State shootings at Federal Hall?\n[04:00] Union Politics: How did Peter J. Brennan and union leaders turn labor patriotism into political support for Nixon?",
+          "model_answer": "Construction workers building the World Trade Center were enraged by students disrespecting the American flag and celebrating Vietcong flags just days after four students died at Kent State; they charged with helmets and steel pipes. Union leader Peter Brennan organized a 100,000-strong pro-war rally in New York and was invited to the White House by Nixon, cementing a historic realignment of blue-collar workers toward conservatism."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=FVb6EdKDBfU",
-          "id": "FVb6EdKDBfU",
-          "title": "The Hardhat Riots & The Silent Majority | Archival Footage",
-          "duration": "2 mins 30 secs",
+          "id": "OSajkR2JvJE",
+          "url": "https://www.youtube.com/watch?v=OSajkR2JvJE",
+          "title": "Nixon Asks for Support: The Great Silent Majority | Archival Broadcast",
+          "duration": "17 mins 10 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Working-Class Conservatism | Tone Alert: Visual record of New York construction workers attacking anti-war students in May 1970.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: Why did blue-collar working-class Americans feel alienated and enraged by privileged college student protesters?",
-          "model_answer": "Cinematic Discussion Focus: Working-class families could not afford college draft deferments; their sons were dying in Vietnam while affluent university students burned American flags and called soldiers baby-killers, provoking fierce patriotic counter-reactions."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "Nixon's Silent Majority Speech (November 1969) | Historical Masterclass",
-          "duration": "11 mins 45 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 00:30–10:30 | Lesson Phase: Political Strategy | Tone Alert: Detailed breakdown of Nixon's landmark televised address and polling shift.",
-          "viewing_task": "[01:45] Recall: What phrase did Nixon use to appeal to the millions of Americans who did not protest in streets ('the great silent majority')?\n[04:30] Explain: How did Nixon argue that a precipitous US withdrawal would cause a 'bloodbath' in South Vietnam and destroy American global credibility?\n[08:15] Challenge: How did Nixon's silent majority strategy mobilize conservative suburban voters and shatter the Democratic New Deal coalition?",
-          "model_answer": "Recall: 'And so tonight—to you, the great silent majority of my fellow Americans—I ask for your support.'\nExplain: He argued that abandoning an ally would invite communist aggression worldwide, destroy faith in US treaty commitments, and dishonor the sacrifice of 31,000 Americans who had died.\nChallenge: Nixon received an unprecedented 77% approval rating for the speech, cementing a conservative political realignment that dominated American presidential elections for the next two decades."
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:30 | Lesson Phase: Primary Source Address | Tone Alert: Primary television broadcast of President Nixon speaking directly from the Oval Office on 3 November 1969.",
+          "viewing_task": "[01:30] Cold War Framing: How did Nixon argue that a precipitate American withdrawal from Vietnam would lead to a communist bloodbath?\n[03:45] National Pride: Analyze Nixon's famous closing plea: 'And so tonight—to you, the great silent majority of my fellow Americans—I ask for your support.'",
+          "model_answer": "Nixon argued that immediate withdrawal would result in the massacre of hundreds of thousands of innocent South Vietnamese and destroy international confidence in American military commitments worldwide. Nixon framed domestic protest as giving comfort to the enemy, declaring that America could only be defeated from within by losing its national resolve and moral courage."
         }
       ],
       "banner": "/units/usa/assets/sources/hard-hat-riot-1970.jpg",
@@ -14922,8 +14761,7 @@ export default {
               "src": "/units/usa/assets/sources/portraits/general_van_tien_dung.jpg",
               "source": "/units/usa/assets/sources/portraits/general_van_tien_dung.jpg"
             }
-          ],
-          "isReversed": true
+          ]
         },
         {
           "act": 5,
@@ -15310,7 +15148,7 @@ export default {
             "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the main reasons for the growth of opposition to the Vietnam War in the USA (1968–71)? [8 marks]",
             "stimulus": [],
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is useful for an enquiry into the anti-war movement because it reveals the profound moral revulsion triggered by revelations of US military war crimes like the My Lai Massacre (revealed late 1969). From my own knowledge, I know that investigative reporting by Seymour Hersh uncovered that Charlie Company under Lt William Calley had murdered over 500 unarmed South Vietnamese women, children, and elderly villagers. The provenance of Source B makes it particularly valuable because, as a contemporary investigative report, it illustrates how photographic evidence of civilian massacres destroyed the moral justification for American involvement in Vietnam.<br><br>Source C is useful because it highlights the role of television broadcasting and the heavy human cost of the draft in mobilizing mass middle-class resistance. From my own knowledge, I know that Vietnam was America's first 'television war', bringing daily colour footage of burning villages, body bags, and wounded teenagers into living rooms, while draft card burnings and the Vietnam Veterans Against the War (VVAW) showed that ordinary Americans were turning decisively against the conflict. The provenance of Source C adds strong historical value because it details the widespread, multiracial scale of the anti-war coalitions like the Moratorium marchers. Together, both sources provide high historical utility for analyzing the moral, media, and human causes of domestic anti-war sentiment.",
+            "model": "Source B is useful for an enquiry into the anti-war movement because it reveals the moral shock caused by revelations of military atrocities, notably the 1968 My Lai Massacre. From my knowledge, when news broke that American troops under Lieutenant Calley had murdered over 300 unarmed Vietnamese villagers, public revulsion surged, turning millions of moderate citizens against the war. As a statement by a returning veteran, it provides firsthand evidence of anti-war sentiment within the military.<br><br>Source C is useful because President Nixon defends his 'Silent Majority', claiming anti-war protesters were an unpatriotic minority. Contextually, while protests dominated media headlines, millions of working-class Americans still supported Nixon. Overall, both sources are very useful for showing how the Vietnam War bitterly divided American society.",
             "scaffolding": {
               "acronym": "Source Utility Framework",
               "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
@@ -15580,47 +15418,36 @@ export default {
       "video": [
         {
           "type": "youtube",
+          "id": "k3SfcSageUk",
           "url": "https://www.youtube.com/watch?v=k3SfcSageUk",
           "title": "Fall of Saigon - Vietnam War Ends - April 30, 1975 | NBCUniversal Archives",
           "duration": "3 mins 48 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Live news coverage of Operation Frequent Wind and the fall of Saigon on 30 April 1975: Huey helicopters evacuating the US Embassy roof, pushing aircraft into the ocean, and North Vietnamese T-54 tanks crashing through the presidential palace gates. Recommended Watch Window: 00:00–03:20 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Dramatic live broadcast capturing historic defeat and panic.",
-          "viewing_task": "<ol><li><strong>[00:50] Quick Check:</strong> What was the name of the emergency tactical helicopter evacuation launched by the US military on 29–30 April 1975 to evacuate remaining Americans and at-risk South Vietnamese from Saigon?</li><li><strong>[02:15] Hinge Question:</strong> Why did US sailors aboard aircraft carriers push millions of dollars worth of flyable South Vietnamese helicopters overboard into the South China Sea during Operation Frequent Wind?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Operation Frequent Wind.</li><li><strong>Hinge Question:</strong> With thousands of desperate South Vietnamese pilots flying their families out to sea in overloaded military helicopters with nowhere else to land, the carrier flight decks became totally gridlocked. American sailors were forced to push multimillion-dollar aircraft over the ship's side into the ocean to clear deck space so incoming helicopters running out of fuel could land without crashing.</li></ol>",
-          "id": "k3SfcSageUk"
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:48 | Lesson Phase: Starter Hook | Tone Alert: Dramatic archival news bulletin tracking North Vietnamese tanks crashing through the gates of Saigon's Presidential Palace.",
+          "viewing_task": "[01:10] The Collapse: What happened at 11:30 AM on 30 April 1975 when Tank 390 rammed the gates of the Independence Palace in Saigon?\n[02:40] Historical Significance: How did the immediate renaming of Saigon to Ho Chi Minh City symbolize the total conclusion of thirty years of war?",
+          "model_answer": "North Vietnamese Army Tank 390 smashed through the wrought-iron gates of the Independence Palace, and soldiers ran to the roof to hoist the Vietcong flag, forcing President Duong Van Minh to broadcast an unconditional surrender. The rapid renaming of Saigon to Ho Chi Minh City cemented the final triumph of Vietnamese communist nationalism and the complete reunification of Vietnam under Hanoi."
         },
         {
           "type": "youtube",
+          "id": "mfBTw2UejO0",
           "url": "https://www.youtube.com/watch?v=mfBTw2UejO0",
-          "title": "The Cold War: The Paris Peace Agreement 1973 and the End of the Vietnam War | I'm Stuck GCSE History",
+          "title": "The Cold War: The Paris Peace Agreement 1973 & End of War | I'm Stuck GCSE History",
           "duration": "7 mins 30 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "GCSE syllabus breakdown of the January 1973 Paris Peace Accords negotiated by Henry Kissinger and Le Duc Tho, the 1973 War Powers Act, the 1974 cut-off of congressional military aid, and the final Ho Chi Minh Campaign. Recommended Watch Window: 00:45–06:10 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Structured GCSE syllabus breakdown with primary newsreels and analysis.",
-          "viewing_task": "<ol><li><strong>[01:30] Recall:</strong> On what date was the Paris Peace Agreement signed, formally ending direct US military combat participation in Vietnam and securing the release of 591 American POWs?</li><li><strong>[03:40] Explain:</strong> Explain the fatal concession President Nixon made in the Paris Peace Agreement regarding North Vietnamese Army (NVA) troops stationed inside South Vietnam.</li><li><strong>[05:20] Challenge:</strong> Evaluate why South Vietnam collapsed in barely 55 days in the spring of 1975: did the failure stem from military weakness in Saigon or congressional abandonment in Washington?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> 27 January 1973.</li><li><strong>Explain:</strong> While all US combat troops were required to withdraw completely within 60 days, Nixon and Kissinger conceded that over 150,000 North Vietnamese Army (NVA/PAVN) regular troops were permitted to remain in control of their captured territories inside South Vietnam. This left the communist military machine permanently poised to strike Saigon as soon as American airpower was removed.</li><li><strong>Challenge:</strong> Both factors were decisive. South Vietnamese President Thieu had built an ARVN force heavily reliant on lavish American artillery, spare parts, and air support. When the Watergate scandal forced Nixon's resignation in August 1974, a war-weary US Congress passed the Foreign Assistance Act, slashing military and fuel aid to Saigon and forbidding President Ford from providing US air support. Deprived of fuel, ammunition, and US air cover, the demoralized ARVN disintegrated rapidly against General Van Tien Dung's blitzkrieg offensive.</li></ol>",
-          "id": "mfBTw2UejO0"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Diplomatic Collapse | Tone Alert: Structured breakdown of the January 1973 Paris Peace Accords, the return of US POWs, and the 1975 Spring Offensive.",
+          "viewing_task": "[02:00] Paris Accords: What were the key terms negotiated by Henry Kissinger and Le Duc Tho in the January 1973 Paris Peace Accords?\n[04:45] Abandonment: Why did the US Congress refuse President Gerald Ford's desperate request for emergency military aid to save South Vietnam in April 1975?",
+          "model_answer": "The 1973 Paris Accords required all remaining US forces to withdraw within 60 days, North Vietnam to release American prisoners of war, and recognized the 17th parallel while crucially allowing 150,000 North Vietnamese troops to remain inside South Vietnam. Congress refused Ford's request because the American public was exhausted by a decade of futile casualties and Watergate had destroyed presidential authority, leading lawmakers to bar all direct military intervention."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=RTWX-BB4aAA",
           "id": "RTWX-BB4aAA",
-          "title": "Last Days in Vietnam (2014) | Official Trailer (PBS / Rory Kennedy)",
+          "url": "https://www.youtube.com/watch?v=RTWX-BB4aAA",
+          "title": "Last Days in Vietnam (2014) | Official Trailer | PBS / Rory Kennedy",
           "duration": "2 mins 20 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:20 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Academy Award-nominated documentary chronicling the chaotic April 1975 evacuation of Saigon.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film capture the moral anguish of American officers defying orders to evacuate thousands of South Vietnamese allies before the city fell?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows helicopters pushed off aircraft carrier decks into the South China Sea to make room for more fleeing refugees, capturing the desperate panic and heartbreak as an allied nation was abandoned to its fate."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
-          "id": "k_O7bD8Swxk",
-          "title": "The Fall of Saigon: Operation Frequent Wind | Archival Masterclass",
-          "duration": "15 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–13:30 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Comprehensive examination of the 1973 Paris Peace Accords, Watergate, and the 1975 North Vietnamese offensive.",
-          "viewing_task": "[02:30] Recall: What terms did the January 1973 Paris Peace Accords establish (complete US withdrawal, release of POWs, North Vietnamese troops remaining in the South)?\n[06:15] Explain: How did the Watergate scandal and Nixon's resignation in August 1974 prevent President Gerald Ford from providing promised air support when the North invaded?\n[10:45] Challenge: How did the iconic photograph of refugees climbing a ladder to a CIA helicopter atop a Saigon apartment building become the defining symbol of American imperial defeat?",
-          "model_answer": "Recall: All US forces left within 60 days, while 150,000 North Vietnamese PAVN soldiers were permitted to keep control of conquered areas in South Vietnam.\nExplain: An anti-war Congress passed the War Powers Act (1973) over Nixon's veto and slashed military aid to Saigon; when North Vietnamese tanks struck, Congress refused Ford's desperate request for emergency funds.\nChallenge: It provided a permanent visual rebuke to American global omnipotence: a superpower that possessed nuclear weapons and spent $140 billion was reduced to scrambling for the skids of a helicopter on an apartment roof."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:20 | Lesson Phase: Humanitarian Extraction | Tone Alert: Academy Award-nominated documentary on 'Operation Frequent Wind'—the desperate helicopter evacuation from the US Embassy roof.",
+          "viewing_task": "[00:50] Chaos at the Embassy: What scenes of panic unfolded around the US Embassy in Saigon as North Vietnamese artillery shelled Tan Son Nhut airport?\n[01:40] Moral Dilemma: How did American military personnel push millions of dollars worth of Huey helicopters off aircraft carriers into the sea?",
+          "model_answer": "Thousands of terrified South Vietnamese who had collaborated with the US climbed over razor wire outside the embassy compound, pleading to be rescued before the arrival of communist forces. Flight decks on US aircraft carriers became so overcrowded that sailors pushed millions of dollars worth of empty Huey helicopters over the side into the ocean to clear deck landing space for incoming helicopters crammed with refugees."
         }
       ],
       "banner": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
@@ -15766,33 +15593,29 @@ export default {
             {
               "id": "usa_lesson_4_4_a",
               "letter": "A",
-              "type": "photograph",
-              "title": "Source A: Exhausted and Mud-Covered US Conscript Resting in a Canal After a Firefight in the Mekong Delta (1968)",
-              "date": "1968",
-              "image": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
-              "image_url": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
-              "attribution": "National Archives Still Pictures, Record Group 111, Washington D.C.",
-              "question_badge": "Source Inference",
-              "question": "What does Source A reveal about the physical and psychological toll of fighting an unconventional war in the Vietnamese environment?",
-              "model_answer": "Source A reveals the extreme exhaustion, alienation, and disorientation experienced by young American conscripts. Operating in suffocating heat, relentless monsoons, and toxic swamp waters against an enemy who refused to engage in conventional battle, American soldiers were ground down by an agonizing war of attrition with no clear measure of progress.",
+              "type": "written_speech",
+              "title": "Source A: President Nguyen Van Thieu's Televised Resignation Address (21 April 1975)",
+              "author": "President Nguyen Van Thieu (Republic of Vietnam)",
+              "date": "21 April 1975",
+              "text": "\"The United States has not respected its promises. It is an inhumane act by an ally. You ran away and left us to do the job that you could not do... You asked us to do an impossible thing, like a man who is given only three bullets to shoot an elephant... You sold South Vietnam to the communists.\"",
+              "attribution": "National Television Broadcast, Saigon / Vietnam Center and Sam Johnson Vietnam Archive, Texas Tech University.",
+              "question_badge": "Ally Betrayal & Military Collapse",
+              "question": "What does Source A reveal about the immediate causes of the collapse of South Vietnam in April 1975?",
+              "model_answer": "Source A reveals that South Vietnamese leaders blamed their total collapse on the United States abandoning its military and financial commitments. Thieu argued that after the US withdrawal under Vietnamization and Congressional cuts to military aid, ARVN forces were left desperately outgunned by Soviet-equipped North Vietnamese divisions.",
               "provenance_clues": {
-                "author": "US Army combat photojournalist",
-                "audience": "The American military establishment and domestic public",
-                "motive": "To record the human cost and physical degradation endured by frontline infantrymen.",
-                "hinge_question": "Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?"
+                "author": "President Nguyen Van Thieu, Head of State of South Vietnam.",
+                "audience": "The South Vietnamese public, military commanders, and the international diplomatic community.",
+                "motive": "To deflect blame for ARVN's military catastrophe onto American abandonment and Congressional betrayal.",
+                "hinge_question": "Was the collapse of South Vietnam inevitable once US ground forces withdrew, or did Congressional aid cuts seal its doom?"
               },
               "teacher_notes": {
-                "source_context": "National Archives Still Pictures, Record Group 111, Washington D.C.. US Army combat photojournalist for The American military establishment and domestic public with the objective: To record the human cost and physical degradation endured by frontline infantrymen.. **Hinge Question:** Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?"
+                "source_context": "Delivered by South Vietnamese President Nguyen Van Thieu in an emotional two-hour televised farewell address on 21 April 1975, just days before Saigon fell. Thieu bitterly accused Washington of breaking the secret written pledges made by President Nixon to intervene with airpower if Hanoi violated the 1973 Paris Peace Accords. **Hinge Question:** Was the collapse of South Vietnam inevitable once US ground forces withdrew, or did Congressional aid cuts seal its doom?"
               },
-              "hinge_question": "Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?",
-              "source_context": "National Archives Still Pictures, Record Group 111, Washington D.C.. US Army combat photojournalist for The American military establishment and domestic public with the objective: To record the human cost and physical degradation endured by frontline infantrymen.. **Hinge Question:** Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?",
-              "src": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
-              "source": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg"
+              "hinge_question": "Was the collapse of South Vietnam inevitable once US ground forces withdrew, or did Congressional aid cuts seal its doom?",
+              "source_context": "Delivered by South Vietnamese President Nguyen Van Thieu in an emotional two-hour televised farewell address on 21 April 1975, just days before Saigon fell. Thieu bitterly accused Washington of breaking the secret written pledges made by President Nixon to intervene with airpower if Hanoi violated the 1973 Paris Peace Accords. **Hinge Question:** Was the collapse of South Vietnam inevitable once US ground forces withdrew, or did Congressional aid cuts seal its doom?"
             }
           ],
-          "image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
           "image_alt": "Exhausted US infantry soldiers wading through deep muddy waters during monsoon",
-          "caption": "Plate 4.7: Soldiers of the 9th Infantry Division wading through deep canal water and mud during a swamp patrol in the Mekong Delta (c. 1968).",
           "isReversed": false
         },
         {
@@ -15810,7 +15633,50 @@ export default {
               "id": "usa_lesson_4_4_b",
               "letter": "B",
               "type": "photograph",
-              "title": "Source B: Communist Transport Column of Camouflaged Carts and Bicycles Traversing the Mountainous Spine of the Truong Son (Ho Chi Minh Trail) (c. 1968)",
+              "title": "Source B: Rooftop Helicopter Evacuation of Saigon During Operation Frequent Wind (29 April 1975)",
+              "date": "29 April 1975",
+              "image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+              "image_url": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+              "src": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+              "source": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+              "attribution": "Hubert van Es / Corbis-Bettmann Archive, Saigon (22 Gia Long Street)",
+              "caption": "A CIA employee helps evacuees climb a rooftop ladder to board an Air America Bell UH-1 helicopter during Operation Frequent Wind, hours before communist forces entered Saigon.",
+              "question_badge": "The Fall of Saigon",
+              "question": "What can you infer from Source B about the desperation and final collapse of American involvement in Vietnam?",
+              "model_answer": "Source B illustrates the frantic, chaotic end of America's twenty-year intervention. With North Vietnamese artillery shelling the airport and roads blocked, the desperate rooftop scramble to board fleeing helicopters symbolized total defeat and the impossibility of an orderly American exit.",
+              "provenance_clues": {
+                "author": "Hubert van Es, independent photojournalist for United Press International (UPI).",
+                "audience": "Global news readers and television audiences.",
+                "motive": "To document the dramatic, panicked final hours of the American presence in Saigon.",
+                "hinge_question": "Why did the rooftop helicopter evacuation become the defining visual symbol of American failure in Southeast Asia?"
+              },
+              "teacher_notes": {
+                "source_context": "Captured by Dutch photojournalist Hubert van Es from the roof of the UPI bureau in Saigon on 29 April 1975. The image shows South Vietnamese civilians and officials desperately ascending a ladder to board an evacuation helicopter on the roof of a CIA apartment building at 22 Gia Long Street. **Hinge Question:** Why did the rooftop helicopter evacuation become the defining visual symbol of American failure in Southeast Asia?"
+              },
+              "hinge_question": "Why did the rooftop helicopter evacuation become the defining visual symbol of American failure in Southeast Asia?",
+              "source_context": "Captured by Dutch photojournalist Hubert van Es from the roof of the UPI bureau in Saigon on 29 April 1975. The image shows South Vietnamese civilians and officials desperately ascending a ladder to board an evacuation helicopter on the roof of a CIA apartment building at 22 Gia Long Street. **Hinge Question:** Why did the rooftop helicopter evacuation become the defining visual symbol of American failure in Southeast Asia?"
+            }
+          ],
+          "isReversed": true,
+          "image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+          "image_url": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+          "caption": "A CIA employee helps evacuees climb a rooftop ladder to board an Air America Bell UH-1 helicopter during Operation Frequent Wind, hours before communist forces entered Saigon (29 April 1975)."
+        },
+        {
+          "act": 3,
+          "act_title": "Stage 3: Vietnamese Determination vs Weakness of South Vietnam — Why was the ideological commitment of Vietnamese communists superior to the fragile political legitimacy of South Vietnam?",
+          "title": "Vietnamese Determination vs Weakness of South Vietnam",
+          "theme_heading": "Vietnamese Determination vs Weakness of South Vietnam",
+          "text": "<span class=\"para-ref\">[3.1]</span> **The Inadequacy of Technological Power:** The catastrophic failure of the United States in Vietnam was the synthesis of four decisive factors: First, **Vietnamese Revolutionary Nationalism:** The Vietcong and North Vietnamese were fighting an existential anti-colonial war for national survival, inspired by Ho Chi Minh and prepared to sacrifice millions of lives to outlast a foreign invader. Second, **Military and Tactical Inadequacy:** The US military relied on conventional attrition, search and destroy sweeps, and heavy carpet bombing, which alienated the rural peasantry and completely failed to neutralize asymmetric guerrilla tunnel networks and jungle supply trails.",
+          "paragraphs": [
+            "<span class=\"para-ref\">[3.1]</span> **The Inadequacy of Technological Power:** The catastrophic failure of the United States in Vietnam was the synthesis of four decisive factors: First, **Vietnamese Revolutionary Nationalism:** The Vietcong and North Vietnamese were fighting an existential anti-colonial war for national survival, inspired by Ho Chi Minh and prepared to sacrifice millions of lives to outlast a foreign invader. Second, **Military and Tactical Inadequacy:** The US military relied on conventional attrition, search and destroy sweeps, and heavy carpet bombing, which alienated the rural peasantry and completely failed to neutralize asymmetric guerrilla tunnel networks and jungle supply trails."
+          ],
+          "sources": [
+            {
+              "id": "usa_lesson_4_4_c",
+              "letter": "C",
+              "type": "photograph",
+              "title": "Source C: Communist Transport Column of Camouflaged Carts and Bicycles Traversing the Mountainous Spine of the Truong Son (Ho Chi Minh Trail) (c. 1968)",
               "date": "c. 1968",
               "image": "/units/usa/assets/sources/ho-chi-minh-trail-bicycles.jpg",
               "image_url": "/units/usa/assets/sources/ho-chi-minh-trail-bicycles.jpg",
@@ -15833,23 +15699,66 @@ export default {
               "source": "/units/usa/assets/sources/ho-chi-minh-trail-bicycles.jpg"
             }
           ],
+          "image": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
+          "image_alt": "A weary young American combat soldier resting with his rifle during an operation",
+          "caption": "Plate 4.8: An exhausted American conscript resting against a tree line during a protracted search-and-destroy mission in hostile territory (1968).",
           "isReversed": true
         },
         {
-          "act": 3,
-          "act_title": "Stage 3: Vietnamese Determination vs Weakness of South Vietnam — Why was the ideological commitment of Vietnamese communists superior to the fragile political legitimacy of South Vietnam?",
-          "title": "Vietnamese Determination vs Weakness of South Vietnam",
-          "theme_heading": "Vietnamese Determination vs Weakness of South Vietnam",
-          "text": "<span class=\"para-ref\">[3.1]</span> **The Inadequacy of Technological Power:** The catastrophic failure of the United States in Vietnam was the synthesis of four decisive factors: First, **Vietnamese Revolutionary Nationalism:** The Vietcong and North Vietnamese were fighting an existential anti-colonial war for national survival, inspired by Ho Chi Minh and prepared to sacrifice millions of lives to outlast a foreign invader. Second, **Military and Tactical Inadequacy:** The US military relied on conventional attrition, search and destroy sweeps, and heavy carpet bombing, which alienated the rural peasantry and completely failed to neutralize asymmetric guerrilla tunnel networks and jungle supply trails.",
+          "act": 4,
+          "act_title": "Stage 4: Failure of Industrial Military Tactics in Jungle Warfare — Why were advanced American military technology and firepower unable to overcome asymmetric jungle guerrilla warfare?",
+          "title": "Failure of Industrial Military Tactics in Jungle Warfare",
+          "theme_heading": "Failure of Industrial Military Tactics in Jungle Warfare",
+          "text": "<span class=\"para-ref\">[4.1]</span> **Political Illegitimacy and Domestic Collapse:** Third, **The Illegitimacy of the Saigon Regime:** The South Vietnamese government was an artificial American creation, crippled by nepotism, corruption, and military juntas that never commanded popular loyalty. Fourth, **The Collapse of the American Home Front:** The draft, rising casualty counts, graphic uncensored television coverage, and moral atrocities like My Lai destroyed the domestic political will required to sustain an open-ended war, forcing the political establishment to withdraw under intense public opposition.",
           "paragraphs": [
-            "<span class=\"para-ref\">[3.1]</span> **The Inadequacy of Technological Power:** The catastrophic failure of the United States in Vietnam was the synthesis of four decisive factors: First, **Vietnamese Revolutionary Nationalism:** The Vietcong and North Vietnamese were fighting an existential anti-colonial war for national survival, inspired by Ho Chi Minh and prepared to sacrifice millions of lives to outlast a foreign invader. Second, **Military and Tactical Inadequacy:** The US military relied on conventional attrition, search and destroy sweeps, and heavy carpet bombing, which alienated the rural peasantry and completely failed to neutralize asymmetric guerrilla tunnel networks and jungle supply trails."
+            "<span class=\"para-ref\">[4.1]</span> **Political Illegitimacy and Domestic Collapse:** Third, **The Illegitimacy of the Saigon Regime:** The South Vietnamese government was an artificial American creation, crippled by nepotism, corruption, and military juntas that never commanded popular loyalty. Fourth, **The Collapse of the American Home Front:** The draft, rising casualty counts, graphic uncensored television coverage, and moral atrocities like My Lai destroyed the domestic political will required to sustain an open-ended war, forcing the political establishment to withdraw under intense public opposition."
           ],
           "sources": [
             {
-              "id": "usa_lesson_4_4_c",
-              "letter": "C",
+              "id": "usa_lesson_4_4_d",
+              "letter": "D",
+              "type": "photograph",
+              "title": "Source D: Exhausted and Mud-Covered US Conscript Resting in a Canal After a Firefight in the Mekong Delta (1968)",
+              "date": "1968",
+              "image": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
+              "image_url": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
+              "attribution": "National Archives Still Pictures, Record Group 111, Washington D.C.",
+              "question_badge": "Source Inference",
+              "question": "What does Source A reveal about the physical and psychological toll of fighting an unconventional war in the Vietnamese environment?",
+              "model_answer": "Source A reveals the extreme exhaustion, alienation, and disorientation experienced by young American conscripts. Operating in suffocating heat, relentless monsoons, and toxic swamp waters against an enemy who refused to engage in conventional battle, American soldiers were ground down by an agonizing war of attrition with no clear measure of progress.",
+              "provenance_clues": {
+                "author": "US Army combat photojournalist",
+                "audience": "The American military establishment and domestic public",
+                "motive": "To record the human cost and physical degradation endured by frontline infantrymen.",
+                "hinge_question": "Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?"
+              },
+              "teacher_notes": {
+                "source_context": "National Archives Still Pictures, Record Group 111, Washington D.C.. US Army combat photojournalist for The American military establishment and domestic public with the objective: To record the human cost and physical degradation endured by frontline infantrymen.. **Hinge Question:** Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?"
+              },
+              "hinge_question": "Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?",
+              "source_context": "National Archives Still Pictures, Record Group 111, Washington D.C.. US Army combat photojournalist for The American military establishment and domestic public with the objective: To record the human cost and physical degradation endured by frontline infantrymen.. **Hinge Question:** Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?",
+              "src": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
+              "source": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg"
+            }
+          ],
+          "isReversed": true
+        },
+        {
+          "act": 5,
+          "act_title": "Stage 5: The Collapse of the American Domestic Home Front — How did the loss of American domestic political will ultimately decide the outcome of the Vietnam War?",
+          "title": "The Collapse of the American Domestic Home Front",
+          "theme_heading": "The Collapse of the American Domestic Home Front",
+          "text": "<span class=\"para-ref\">[5.1]</span> **The Human and Physical Cost:** The Vietnam War exacted an appalling toll. Over 58,220 American soldiers died and more than 300,000 were wounded, with hundreds of thousands suffering from lifelong physical disabilities and Post-Traumatic Stress Disorder (PTSD). For the Vietnamese people, the catastrophe was apocalyptic: between two and three million Vietnamese civilians and combatants were killed, large swaths of the country were poisoned by Agent Orange, and millions of unexploded cluster munitions contaminated agricultural land for generations.\n\n<span class=\"para-ref\">[5.2]</span> **The \"Vietnam Syndrome\" and American Foreign Policy:** For the United States, the war shattered the myth of American military invincibility and moral righteousness. The trauma produced the \"Vietnam Syndrome\"—a profound, enduring reluctance among the American public and Congress to intervene in foreign civil conflicts without overwhelming force, clear exit strategies, and guaranteed public support. The heroic era of post-World War II global interventionism had come to a bitter, painful end in the smouldering ruins of Southeast Asia.",
+          "paragraphs": [
+            "<span class=\"para-ref\">[5.1]</span> **The Human and Physical Cost:** The Vietnam War exacted an appalling toll. Over 58,220 American soldiers died and more than 300,000 were wounded, with hundreds of thousands suffering from lifelong physical disabilities and Post-Traumatic Stress Disorder (PTSD). For the Vietnamese people, the catastrophe was apocalyptic: between two and three million Vietnamese civilians and combatants were killed, large swaths of the country were poisoned by Agent Orange, and millions of unexploded cluster munitions contaminated agricultural land for generations.",
+            "<span class=\"para-ref\">[5.2]</span> **The \"Vietnam Syndrome\" and American Foreign Policy:** For the United States, the war shattered the myth of American military invincibility and moral righteousness. The trauma produced the \"Vietnam Syndrome\"—a profound, enduring reluctance among the American public and Congress to intervene in foreign civil conflicts without overwhelming force, clear exit strategies, and guaranteed public support. The heroic era of post-World War II global interventionism had come to a bitter, painful end in the smouldering ruins of Southeast Asia."
+          ],
+          "sources": [
+            {
+              "id": "usa_lesson_4_4_e",
+              "letter": "E",
               "type": "congressional_statute",
-              "title": "Source C: Excerpt from the War Powers Resolution Passed by Congress Over President Nixon's Veto (7 November 1973)",
+              "title": "Source E: Excerpt from the War Powers Resolution Passed by Congress Over President Nixon's Veto (7 November 1973)",
               "date": "7 November 1973",
               "image": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
               "image_url": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
@@ -15870,82 +15779,6 @@ export default {
               "source_context": "United States Statutes at Large, 87 Stat. 555, Public Law 93-148. The 93rd United States Congress, overriding Nixon's presidential veto by a two-thirds majority for The Executive Branch, the American public, and future commanders-in-chief with the objective: To prevent future presidents from entangling the United States in foreign wars through unilateral executive action.. **Hinge Question:** How did the War Powers Resolution reflect a profound loss of national trust in the federal government following the Vietnam War?",
               "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
               "source": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png"
-            }
-          ],
-          "image": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
-          "image_alt": "A weary young American combat soldier resting with his rifle during an operation",
-          "caption": "Plate 4.8: An exhausted American conscript resting against a tree line during a protracted search-and-destroy mission in hostile territory (1968).",
-          "isReversed": true
-        },
-        {
-          "act": 4,
-          "act_title": "Stage 4: Failure of Industrial Military Tactics in Jungle Warfare — Why were advanced American military technology and firepower unable to overcome asymmetric jungle guerrilla warfare?",
-          "title": "Failure of Industrial Military Tactics in Jungle Warfare",
-          "theme_heading": "Failure of Industrial Military Tactics in Jungle Warfare",
-          "text": "<span class=\"para-ref\">[4.1]</span> **Political Illegitimacy and Domestic Collapse:** Third, **The Illegitimacy of the Saigon Regime:** The South Vietnamese government was an artificial American creation, crippled by nepotism, corruption, and military juntas that never commanded popular loyalty. Fourth, **The Collapse of the American Home Front:** The draft, rising casualty counts, graphic uncensored television coverage, and moral atrocities like My Lai destroyed the domestic political will required to sustain an open-ended war, forcing the political establishment to withdraw under intense public opposition.",
-          "paragraphs": [
-            "<span class=\"para-ref\">[4.1]</span> **Political Illegitimacy and Domestic Collapse:** Third, **The Illegitimacy of the Saigon Regime:** The South Vietnamese government was an artificial American creation, crippled by nepotism, corruption, and military juntas that never commanded popular loyalty. Fourth, **The Collapse of the American Home Front:** The draft, rising casualty counts, graphic uncensored television coverage, and moral atrocities like My Lai destroyed the domestic political will required to sustain an open-ended war, forcing the political establishment to withdraw under intense public opposition."
-          ],
-          "sources": [
-            {
-              "id": "usa_lesson_4_4_e",
-              "letter": "D",
-              "type": "statistical_summary",
-              "title": "Source D: Official United States Department of Defense Statistical Summary of Human and Economic Costs of the Vietnam War (1975)",
-              "date": "1975",
-              "attribution": "Office of the Secretary of Defense (Comptroller), Southeast Asia Statistical Tables",
-              "question_badge": "Cross-Referencing",
-              "question": "How do the statistical casualties and economic expenditures in Source D corroborate the profound societal trauma left by the war?",
-              "model_answer": "Source D presents the staggering, tragic balance sheet of the conflict: 58,220 American military deaths, over 300,000 wounded, and over $168 billion spent ($1 trillion in modern terms), fueling catastrophic inflation and national division. For an estimated 2 to 3 million Vietnamese lives lost, the war achieved none of its strategic objectives, leaving deep enduring trauma known as the 'Vietnam Syndrome.'",
-              "provenance_clues": {
-                "author": "Pentagon statisticians and Department of Defense comptrollers",
-                "audience": "The United States Congress, veterans' organizations, and the historical record",
-                "motive": "To provide the definitive official statistical record of the personnel and financial costs of the conflict.",
-                "hinge_question": "How did the 'Vietnam Syndrome' fundamentally constrain American foreign policy and military interventions for the next two decades?"
-              },
-              "teacher_notes": {
-                "source_context": "Office of the Secretary of Defense (Comptroller), Southeast Asia Statistical Tables. Pentagon statisticians and Department of Defense comptrollers for The United States Congress, veterans' organizations, and the historical record with the objective: To provide the definitive official statistical record of the personnel and financial costs of the conflict.. **Hinge Question:** How did the 'Vietnam Syndrome' fundamentally constrain American foreign policy and military interventions for the next two decades?"
-              },
-              "hinge_question": "How did the 'Vietnam Syndrome' fundamentally constrain American foreign policy and military interventions for the next two decades?",
-              "source_context": "Office of the Secretary of Defense (Comptroller), Southeast Asia Statistical Tables. Pentagon statisticians and Department of Defense comptrollers for The United States Congress, veterans' organizations, and the historical record with the objective: To provide the definitive official statistical record of the personnel and financial costs of the conflict.. **Hinge Question:** How did the 'Vietnam Syndrome' fundamentally constrain American foreign policy and military interventions for the next two decades?",
-              "src": "/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg",
-              "source": "/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg"
-            }
-          ],
-          "isReversed": true
-        },
-        {
-          "act": 5,
-          "act_title": "Stage 5: The Collapse of the American Domestic Home Front — How did the loss of American domestic political will ultimately decide the outcome of the Vietnam War?",
-          "title": "The Collapse of the American Domestic Home Front",
-          "theme_heading": "The Collapse of the American Domestic Home Front",
-          "text": "<span class=\"para-ref\">[5.1]</span> **The Human and Physical Cost:** The Vietnam War exacted an appalling toll. Over 58,220 American soldiers died and more than 300,000 were wounded, with hundreds of thousands suffering from lifelong physical disabilities and Post-Traumatic Stress Disorder (PTSD). For the Vietnamese people, the catastrophe was apocalyptic: between two and three million Vietnamese civilians and combatants were killed, large swaths of the country were poisoned by Agent Orange, and millions of unexploded cluster munitions contaminated agricultural land for generations.\n\n<span class=\"para-ref\">[5.2]</span> **The \"Vietnam Syndrome\" and American Foreign Policy:** For the United States, the war shattered the myth of American military invincibility and moral righteousness. The trauma produced the \"Vietnam Syndrome\"—a profound, enduring reluctance among the American public and Congress to intervene in foreign civil conflicts without overwhelming force, clear exit strategies, and guaranteed public support. The heroic era of post-World War II global interventionism had come to a bitter, painful end in the smouldering ruins of Southeast Asia.",
-          "paragraphs": [
-            "<span class=\"para-ref\">[5.1]</span> **The Human and Physical Cost:** The Vietnam War exacted an appalling toll. Over 58,220 American soldiers died and more than 300,000 were wounded, with hundreds of thousands suffering from lifelong physical disabilities and Post-Traumatic Stress Disorder (PTSD). For the Vietnamese people, the catastrophe was apocalyptic: between two and three million Vietnamese civilians and combatants were killed, large swaths of the country were poisoned by Agent Orange, and millions of unexploded cluster munitions contaminated agricultural land for generations.",
-            "<span class=\"para-ref\">[5.2]</span> **The \"Vietnam Syndrome\" and American Foreign Policy:** For the United States, the war shattered the myth of American military invincibility and moral righteousness. The trauma produced the \"Vietnam Syndrome\"—a profound, enduring reluctance among the American public and Congress to intervene in foreign civil conflicts without overwhelming force, clear exit strategies, and guaranteed public support. The heroic era of post-World War II global interventionism had come to a bitter, painful end in the smouldering ruins of Southeast Asia."
-          ],
-          "sources": [
-            {
-              "id": "usa_lesson_4_4_d",
-              "letter": "E",
-              "type": "historian_analysis",
-              "title": "Source E: From an Analysis by Military Historian George C. Herring in 'America's Longest War' (1979)",
-              "date": "1979",
-              "attribution": "George C. Herring, 'America's Longest War: The United States and Vietnam, 1950–1975', Temple University Press",
-              "question_badge": "Reliability & Provenance",
-              "question": "How does Professor Herring's academic evaluation in Source E synthesize the military and political causes of American defeat?",
-              "model_answer": "Herring provides a balanced, scholarly synthesis that avoids simple scapegoating. He argues that American defeat was caused by a fatal mismatch: the US relied on conventional industrial firepower to solve what was fundamentally a complex political struggle, while underestimating the revolutionary nationalism and tenacity of a Vietnamese adversary fighting on its own soil.",
-              "provenance_clues": {
-                "author": "Professor George C. Herring, leading diplomatic and military historian of the Vietnam War",
-                "audience": "University students, academic historians, and military strategists",
-                "motive": "To provide a rigorous, objective historical autopsy of the comprehensive failure of US intervention.",
-                "hinge_question": "Was American defeat primarily caused by military failures in Vietnam or political collapse at home?"
-              },
-              "teacher_notes": {
-                "source_context": "George C. Herring, 'America's Longest War: The United States and Vietnam, 1950–1975', Temple University Press. Professor George C. Herring, leading diplomatic and military historian of the Vietnam War for University students, academic historians, and military strategists with the objective: To provide a rigorous, objective historical autopsy of the comprehensive failure of US intervention.. **Hinge Question:** Was American defeat primarily caused by military failures in Vietnam or political collapse at home?"
-              },
-              "hinge_question": "Was American defeat primarily caused by military failures in Vietnam or political collapse at home?",
-              "source_context": "George C. Herring, 'America's Longest War: The United States and Vietnam, 1950–1975', Temple University Press. Professor George C. Herring, leading diplomatic and military historian of the Vietnam War for University students, academic historians, and military strategists with the objective: To provide a rigorous, objective historical autopsy of the comprehensive failure of US intervention.. **Hinge Question:** Was American defeat primarily caused by military failures in Vietnam or political collapse at home?"
             }
           ],
           "isReversed": false
@@ -16421,34 +16254,59 @@ export default {
         {
           "id": "usa_lesson_4_4_a",
           "letter": "A",
-          "type": "photograph",
-          "title": "Source A: Exhausted and Mud-Covered US Conscript Resting in a Canal After a Firefight in the Mekong Delta (1968)",
-          "date": "1968",
-          "image": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
-          "image_url": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
-          "attribution": "National Archives Still Pictures, Record Group 111, Washington D.C.",
-          "question_badge": "Source Inference",
-          "question": "What does Source A reveal about the physical and psychological toll of fighting an unconventional war in the Vietnamese environment?",
-          "model_answer": "Source A reveals the extreme exhaustion, alienation, and disorientation experienced by young American conscripts. Operating in suffocating heat, relentless monsoons, and toxic swamp waters against an enemy who refused to engage in conventional battle, American soldiers were ground down by an agonizing war of attrition with no clear measure of progress.",
+          "type": "written_speech",
+          "title": "Source A: President Nguyen Van Thieu's Televised Resignation Address (21 April 1975)",
+          "author": "President Nguyen Van Thieu (Republic of Vietnam)",
+          "date": "21 April 1975",
+          "text": "\"The United States has not respected its promises. It is an inhumane act by an ally. You ran away and left us to do the job that you could not do... You asked us to do an impossible thing, like a man who is given only three bullets to shoot an elephant... You sold South Vietnam to the communists.\"",
+          "attribution": "National Television Broadcast, Saigon / Vietnam Center and Sam Johnson Vietnam Archive, Texas Tech University.",
+          "question_badge": "Ally Betrayal & Military Collapse",
+          "question": "What does Source A reveal about the immediate causes of the collapse of South Vietnam in April 1975?",
+          "model_answer": "Source A reveals that South Vietnamese leaders blamed their total collapse on the United States abandoning its military and financial commitments. Thieu argued that after the US withdrawal under Vietnamization and Congressional cuts to military aid, ARVN forces were left desperately outgunned by Soviet-equipped North Vietnamese divisions.",
           "provenance_clues": {
-            "author": "US Army combat photojournalist",
-            "audience": "The American military establishment and domestic public",
-            "motive": "To record the human cost and physical degradation endured by frontline infantrymen.",
-            "hinge_question": "Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?"
+            "author": "President Nguyen Van Thieu, Head of State of South Vietnam.",
+            "audience": "The South Vietnamese public, military commanders, and the international diplomatic community.",
+            "motive": "To deflect blame for ARVN's military catastrophe onto American abandonment and Congressional betrayal.",
+            "hinge_question": "Was the collapse of South Vietnam inevitable once US ground forces withdrew, or did Congressional aid cuts seal its doom?"
           },
           "teacher_notes": {
-            "source_context": "National Archives Still Pictures, Record Group 111, Washington D.C.. US Army combat photojournalist for The American military establishment and domestic public with the objective: To record the human cost and physical degradation endured by frontline infantrymen.. **Hinge Question:** Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?"
+            "source_context": "Delivered by South Vietnamese President Nguyen Van Thieu in an emotional two-hour televised farewell address on 21 April 1975, just days before Saigon fell. Thieu bitterly accused Washington of breaking the secret written pledges made by President Nixon to intervene with airpower if Hanoi violated the 1973 Paris Peace Accords. **Hinge Question:** Was the collapse of South Vietnam inevitable once US ground forces withdrew, or did Congressional aid cuts seal its doom?"
           },
-          "hinge_question": "Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?",
-          "source_context": "National Archives Still Pictures, Record Group 111, Washington D.C.. US Army combat photojournalist for The American military establishment and domestic public with the objective: To record the human cost and physical degradation endured by frontline infantrymen.. **Hinge Question:** Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?",
-          "src": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
-          "source": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg"
+          "hinge_question": "Was the collapse of South Vietnam inevitable once US ground forces withdrew, or did Congressional aid cuts seal its doom?",
+          "source_context": "Delivered by South Vietnamese President Nguyen Van Thieu in an emotional two-hour televised farewell address on 21 April 1975, just days before Saigon fell. Thieu bitterly accused Washington of breaking the secret written pledges made by President Nixon to intervene with airpower if Hanoi violated the 1973 Paris Peace Accords. **Hinge Question:** Was the collapse of South Vietnam inevitable once US ground forces withdrew, or did Congressional aid cuts seal its doom?"
         },
         {
           "id": "usa_lesson_4_4_b",
           "letter": "B",
           "type": "photograph",
-          "title": "Source B: Communist Transport Column of Camouflaged Carts and Bicycles Traversing the Mountainous Spine of the Truong Son (Ho Chi Minh Trail) (c. 1968)",
+          "title": "Source B: Rooftop Helicopter Evacuation of Saigon During Operation Frequent Wind (29 April 1975)",
+          "date": "29 April 1975",
+          "image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+          "image_url": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+          "src": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+          "source": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+          "attribution": "Hubert van Es / Corbis-Bettmann Archive, Saigon (22 Gia Long Street)",
+          "caption": "A CIA employee helps evacuees climb a rooftop ladder to board an Air America Bell UH-1 helicopter during Operation Frequent Wind, hours before communist forces entered Saigon.",
+          "question_badge": "The Fall of Saigon",
+          "question": "What can you infer from Source B about the desperation and final collapse of American involvement in Vietnam?",
+          "model_answer": "Source B illustrates the frantic, chaotic end of America's twenty-year intervention. With North Vietnamese artillery shelling the airport and roads blocked, the desperate rooftop scramble to board fleeing helicopters symbolized total defeat and the impossibility of an orderly American exit.",
+          "provenance_clues": {
+            "author": "Hubert van Es, independent photojournalist for United Press International (UPI).",
+            "audience": "Global news readers and television audiences.",
+            "motive": "To document the dramatic, panicked final hours of the American presence in Saigon.",
+            "hinge_question": "Why did the rooftop helicopter evacuation become the defining visual symbol of American failure in Southeast Asia?"
+          },
+          "teacher_notes": {
+            "source_context": "Captured by Dutch photojournalist Hubert van Es from the roof of the UPI bureau in Saigon on 29 April 1975. The image shows South Vietnamese civilians and officials desperately ascending a ladder to board an evacuation helicopter on the roof of a CIA apartment building at 22 Gia Long Street. **Hinge Question:** Why did the rooftop helicopter evacuation become the defining visual symbol of American failure in Southeast Asia?"
+          },
+          "hinge_question": "Why did the rooftop helicopter evacuation become the defining visual symbol of American failure in Southeast Asia?",
+          "source_context": "Captured by Dutch photojournalist Hubert van Es from the roof of the UPI bureau in Saigon on 29 April 1975. The image shows South Vietnamese civilians and officials desperately ascending a ladder to board an evacuation helicopter on the roof of a CIA apartment building at 22 Gia Long Street. **Hinge Question:** Why did the rooftop helicopter evacuation become the defining visual symbol of American failure in Southeast Asia?"
+        },
+        {
+          "id": "usa_lesson_4_4_c",
+          "letter": "C",
+          "type": "photograph",
+          "title": "Source C: Communist Transport Column of Camouflaged Carts and Bicycles Traversing the Mountainous Spine of the Truong Son (Ho Chi Minh Trail) (c. 1968)",
           "date": "c. 1968",
           "image": "/units/usa/assets/sources/ho-chi-minh-trail-bicycles.jpg",
           "image_url": "/units/usa/assets/sources/ho-chi-minh-trail-bicycles.jpg",
@@ -16471,10 +16329,36 @@ export default {
           "source": "/units/usa/assets/sources/ho-chi-minh-trail-bicycles.jpg"
         },
         {
-          "id": "usa_lesson_4_4_c",
-          "letter": "C",
+          "id": "usa_lesson_4_4_d",
+          "letter": "D",
+          "type": "photograph",
+          "title": "Source D: Exhausted and Mud-Covered US Conscript Resting in a Canal After a Firefight in the Mekong Delta (1968)",
+          "date": "1968",
+          "image": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
+          "image_url": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
+          "attribution": "National Archives Still Pictures, Record Group 111, Washington D.C.",
+          "question_badge": "Source Inference",
+          "question": "What does Source A reveal about the physical and psychological toll of fighting an unconventional war in the Vietnamese environment?",
+          "model_answer": "Source A reveals the extreme exhaustion, alienation, and disorientation experienced by young American conscripts. Operating in suffocating heat, relentless monsoons, and toxic swamp waters against an enemy who refused to engage in conventional battle, American soldiers were ground down by an agonizing war of attrition with no clear measure of progress.",
+          "provenance_clues": {
+            "author": "US Army combat photojournalist",
+            "audience": "The American military establishment and domestic public",
+            "motive": "To record the human cost and physical degradation endured by frontline infantrymen.",
+            "hinge_question": "Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?"
+          },
+          "teacher_notes": {
+            "source_context": "National Archives Still Pictures, Record Group 111, Washington D.C.. US Army combat photojournalist for The American military establishment and domestic public with the objective: To record the human cost and physical degradation endured by frontline infantrymen.. **Hinge Question:** Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?"
+          },
+          "hinge_question": "Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?",
+          "source_context": "National Archives Still Pictures, Record Group 111, Washington D.C.. US Army combat photojournalist for The American military establishment and domestic public with the objective: To record the human cost and physical degradation endured by frontline infantrymen.. **Hinge Question:** Why did the one-year individual tour of duty (DEROS) destroy unit cohesion and long-term military effectiveness in Vietnam?",
+          "src": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
+          "source": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg"
+        },
+        {
+          "id": "usa_lesson_4_4_e",
+          "letter": "E",
           "type": "congressional_statute",
-          "title": "Source C: Excerpt from the War Powers Resolution Passed by Congress Over President Nixon's Veto (7 November 1973)",
+          "title": "Source E: Excerpt from the War Powers Resolution Passed by Congress Over President Nixon's Veto (7 November 1973)",
           "date": "7 November 1973",
           "image": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
           "image_url": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
@@ -16495,98 +16379,41 @@ export default {
           "source_context": "United States Statutes at Large, 87 Stat. 555, Public Law 93-148. The 93rd United States Congress, overriding Nixon's presidential veto by a two-thirds majority for The Executive Branch, the American public, and future commanders-in-chief with the objective: To prevent future presidents from entangling the United States in foreign wars through unilateral executive action.. **Hinge Question:** How did the War Powers Resolution reflect a profound loss of national trust in the federal government following the Vietnam War?",
           "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
           "source": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png"
-        },
-        {
-          "id": "usa_lesson_4_4_e",
-          "letter": "D",
-          "type": "statistical_summary",
-          "title": "Source D: Official United States Department of Defense Statistical Summary of Human and Economic Costs of the Vietnam War (1975)",
-          "date": "1975",
-          "attribution": "Office of the Secretary of Defense (Comptroller), Southeast Asia Statistical Tables",
-          "question_badge": "Cross-Referencing",
-          "question": "How do the statistical casualties and economic expenditures in Source D corroborate the profound societal trauma left by the war?",
-          "model_answer": "Source D presents the staggering, tragic balance sheet of the conflict: 58,220 American military deaths, over 300,000 wounded, and over $168 billion spent ($1 trillion in modern terms), fueling catastrophic inflation and national division. For an estimated 2 to 3 million Vietnamese lives lost, the war achieved none of its strategic objectives, leaving deep enduring trauma known as the 'Vietnam Syndrome.'",
-          "provenance_clues": {
-            "author": "Pentagon statisticians and Department of Defense comptrollers",
-            "audience": "The United States Congress, veterans' organizations, and the historical record",
-            "motive": "To provide the definitive official statistical record of the personnel and financial costs of the conflict.",
-            "hinge_question": "How did the 'Vietnam Syndrome' fundamentally constrain American foreign policy and military interventions for the next two decades?"
-          },
-          "teacher_notes": {
-            "source_context": "Office of the Secretary of Defense (Comptroller), Southeast Asia Statistical Tables. Pentagon statisticians and Department of Defense comptrollers for The United States Congress, veterans' organizations, and the historical record with the objective: To provide the definitive official statistical record of the personnel and financial costs of the conflict.. **Hinge Question:** How did the 'Vietnam Syndrome' fundamentally constrain American foreign policy and military interventions for the next two decades?"
-          },
-          "hinge_question": "How did the 'Vietnam Syndrome' fundamentally constrain American foreign policy and military interventions for the next two decades?",
-          "source_context": "Office of the Secretary of Defense (Comptroller), Southeast Asia Statistical Tables. Pentagon statisticians and Department of Defense comptrollers for The United States Congress, veterans' organizations, and the historical record with the objective: To provide the definitive official statistical record of the personnel and financial costs of the conflict.. **Hinge Question:** How did the 'Vietnam Syndrome' fundamentally constrain American foreign policy and military interventions for the next two decades?",
-          "src": "/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg",
-          "source": "/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg"
-        },
-        {
-          "id": "usa_lesson_4_4_d",
-          "letter": "E",
-          "type": "historian_analysis",
-          "title": "Source E: From an Analysis by Military Historian George C. Herring in 'America's Longest War' (1979)",
-          "date": "1979",
-          "attribution": "George C. Herring, 'America's Longest War: The United States and Vietnam, 1950–1975', Temple University Press",
-          "question_badge": "Reliability & Provenance",
-          "question": "How does Professor Herring's academic evaluation in Source E synthesize the military and political causes of American defeat?",
-          "model_answer": "Herring provides a balanced, scholarly synthesis that avoids simple scapegoating. He argues that American defeat was caused by a fatal mismatch: the US relied on conventional industrial firepower to solve what was fundamentally a complex political struggle, while underestimating the revolutionary nationalism and tenacity of a Vietnamese adversary fighting on its own soil.",
-          "provenance_clues": {
-            "author": "Professor George C. Herring, leading diplomatic and military historian of the Vietnam War",
-            "audience": "University students, academic historians, and military strategists",
-            "motive": "To provide a rigorous, objective historical autopsy of the comprehensive failure of US intervention.",
-            "hinge_question": "Was American defeat primarily caused by military failures in Vietnam or political collapse at home?"
-          },
-          "teacher_notes": {
-            "source_context": "George C. Herring, 'America's Longest War: The United States and Vietnam, 1950–1975', Temple University Press. Professor George C. Herring, leading diplomatic and military historian of the Vietnam War for University students, academic historians, and military strategists with the objective: To provide a rigorous, objective historical autopsy of the comprehensive failure of US intervention.. **Hinge Question:** Was American defeat primarily caused by military failures in Vietnam or political collapse at home?"
-          },
-          "hinge_question": "Was American defeat primarily caused by military failures in Vietnam or political collapse at home?",
-          "source_context": "George C. Herring, 'America's Longest War: The United States and Vietnam, 1950–1975', Temple University Press. Professor George C. Herring, leading diplomatic and military historian of the Vietnam War for University students, academic historians, and military strategists with the objective: To provide a rigorous, objective historical autopsy of the comprehensive failure of US intervention.. **Hinge Question:** Was American defeat primarily caused by military failures in Vietnam or political collapse at home?"
         }
       ],
       "video": [
         {
           "type": "youtube",
+          "id": "XMLZamqVifg",
           "url": "https://www.youtube.com/watch?v=XMLZamqVifg",
           "title": "GCSE History Rapid Revision: Why Did the USA Fail in Vietnam? | MrClokeHistory",
           "duration": "6 mins 12 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Fast-paced GCSE revision synthesis categorizing the primary causes of American defeat: military failures (guerilla warfare vs. conventional firepower), political failures (Saigon corruption vs. communist commitment), and domestic opposition. Recommended Watch Window: 00:00–05:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Highly structured, exam-oriented revision lecture.",
-          "viewing_task": "<ol><li><strong>[01:10] Quick Check:</strong> What three broad categories of failure do GCSE examiners require students to evaluate when explaining why the United States failed to defeat communist forces in Vietnam?</li><li><strong>[03:30] Hinge Question:</strong> Why was the Vietnam War called the first \"living-room war\", and how did television coverage fundamentally undermine the US war effort in a way that had never occurred in World War II?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> 1) US military and tactical failures; 2) Political weaknesses of the South Vietnamese government; 3) US domestic opposition and the anti-war movement.</li><li><strong>Hinge Question:</strong> Vietnam was the first major conflict without military censorship. Nightly television news brought uncensored color footage of dead American soldiers in body bags, napalmed children, burning thatched huts, and weeping GI casualties directly into American living rooms during dinnertime. This created a devastating \"credibility gap\" between optimistic White House press statements and the grim reality on screen, destroying public faith in the war.</li></ol>",
-          "id": "XMLZamqVifg"
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Starter Hook | Tone Alert: Essential 4-pillar exam revision summary: military tactics, guerrilla resilience, domestic opposition, and South Vietnamese political corruption.",
+          "viewing_task": "[01:40] Military Mismatch: Why was modern industrial firepower (B-52s, artillery, chemical defoliants) unable to defeat peasant guerrilla warfare?\n[04:10] Disciplinary Assessment: Explain why the war was described as lost in 'the living rooms of America' rather than on the battlefields of Vietnam.",
+          "model_answer": "Heavy US firepower relied on clear targets and front lines, but the Vietcong operated without fixed bases, melted into the civilian peasantry, used underground tunnels, and were sustained by external Soviet and Chinese aid. The Vietnam War was the first uncensored 'television war'; nightly graphic colour broadcasts of body bags, burning villages, and civilian casualties shattered public trust and made continued military commitment politically impossible."
         },
         {
           "type": "youtube",
+          "id": "zAq6MrYgLr0",
           "url": "https://www.youtube.com/watch?v=zAq6MrYgLr0",
           "title": "How Did the U.S. Fail in Vietnam? | Animated History | The Armchair Historian",
           "duration": "14 mins 22 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Griffin Johnsen provides a masterclass military and geopolitical post-mortem: logistics, asymmetric doctrine, the Ho Chi Minh Trail through Laos and Cambodia, Soviet/Chinese military aid, and structural US command errors. Recommended Watch Window: 01:15–08:45 • Lesson Phase: Core Enquiry & Historiographical Synthesis. Tone Alert: Comprehensive, animated military history providing deep strategic analysis.",
-          "viewing_task": "<ol><li><strong>[02:30] Recall:</strong> How did the Soviet Union and Communist China provide vital military support to North Vietnam without committing their own combat armies directly?</li><li><strong>[05:15] Explain:</strong> Explain why the US military policy of 1-year tours of duty (\"short-timer syndrome\") and the \"ticket-punching\" system for officers destroyed squad cohesion and combat effectiveness in the jungle.</li><li><strong>[07:45] Challenge:</strong> Historiographical Synthesis: Assess the view that the United States lost the Vietnam War not on the battlefields of Southeast Asia, but on the home front in America.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The USSR supplied sophisticated surface-to-air missile systems (SAM-2), radar, heavy artillery, and MiG-21 fighter jets, while China provided hundreds of thousands of engineering, railway, and logistics personnel to keep the supply lines running, freeing the North Vietnamese Army to focus entirely on combat.</li><li><strong>Explain:</strong> Enlisted soldiers served only a 365-day tour (13 months for Marines). Just as a soldier gained jungle survival instincts, he was sent home, replaced by raw, inexperienced recruits (\"cherries\"). Officers rotated through frontline commands every six months to \"punch their ticket\" for promotion, leading to inexperienced commanders who took reckless risks or were mistrusted by their men, leading to high rates of desertion, drug abuse, and even \"fragging\" (murdering unpopular officers with fragmentation grenades).</li><li><strong>Challenge:</strong> While the US military won virtually every major tactical battle (including decisively crushing the 1968 Tet Offensive and the 1972 Easter Offensive), military dominance could never substitute for political victory. Because the US could not invade North Vietnam without risking World War III with China/USSR, and could not build a legitimate democratic government in Saigon, the war became an unwinnable war of attrition where communist patience inevitably outlasted American domestic political willpower.</li></ol>",
-          "id": "zAq6MrYgLr0"
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–07:00 | Lesson Phase: Comprehensive Strategic Synthesis | Tone Alert: Masterpiece animated tactical overview examining conscription morale, the draft lottery, body count metrics, and hearts-and-minds failure.",
+          "viewing_task": "[03:00] Conscript Morale: How did one-year tours of duty and the draft lottery contribute to combat fragging, drug abuse, and declining morale?\n[06:20] Body Count Metric: Why was General Westmoreland's reliance on the 'Body Count' as a metric of victory a fatal strategic delusion?",
+          "model_answer": "The one-year rotation meant soldiers lacked unit cohesion and experienced soldiers were constantly replaced by terrified raw recruits; by 1971, over 500 'fragging' incidents (assassinating officers with grenades) and widespread heroin addiction reflected complete breakdown of discipline. Westmoreland assumed high casualty counts would reach a 'crossover point' breaking enemy will, but North Vietnam viewed the conflict as an existential struggle for national liberation and was willing to absorb catastrophic casualties that no democratic Western government could endure."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
           "id": "k_O7bD8Swxk",
-          "title": "Hearts and Minds (1974) | Academy Award-Winning Documentary Trailer",
-          "duration": "2 mins 30 secs",
+          "url": "https://www.youtube.com/watch?v=k_O7bD8Swxk",
+          "title": "The Fog of War (2003) | Official Trailer | Errol Morris / Robert McNamara",
+          "duration": "2 mins 10 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Landmark cinematic critique contrasting military hubris with the reality of Vietnamese suffering.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film contrast General Westmoreland's claim that 'the Oriental doesn't put the same high price on life as a Westerner' with weeping Vietnamese mothers at graves?",
-          "model_answer": "Cinematic Discussion Focus: The film's juxtaposition exposed the deep-seated racism and moral blindness of US military leadership, demonstrating why the American campaign to 'win hearts and minds' failed so catastrophically."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=8yLKMhCjHyE",
-          "id": "8yLKMhCjHyE",
-          "title": "Why Did the US Fail in Vietnam? The Historiographical Debate | American Experience",
-          "duration": "16 mins 00 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 01:00–14:00 | Lesson Phase: Synoptic Synthesis | Tone Alert: Comprehensive examination of military, domestic, and geopolitical factors.",
-          "viewing_task": "[03:00] Recall: What four key factors explain the American defeat in Vietnam (military strategy, domestic opposition, political weakness in Saigon, resolve of North Vietnam)?\n[07:45] Explain: Why did US military superiority in conventional air power and artillery fail to defeat the Vietcong's asymmetric guerrilla tactics?\n[12:30] Challenge: In evaluating the failure, which factor was most decisive: the military quagmire in Vietnam or the collapse of the political will of the American public?",
-          "model_answer": "Recall: Inappropriate military doctrine, domestic anti-war protests, an illegitimate and corrupt South Vietnamese regime, and the unyielding nationalistic commitment of the North.\nExplain: B-52 carpet bombing and search-and-destroy patrols could clear jungle but could not secure territory; the Vietcong melted into the peasant population and rebuilt tunnels.\nChallenge: While the US never lost a major tactical battle, war is ultimately political: once the American public and Congress lost faith in the war's moral justification and refused further funding, military continuation became impossible."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:10 | Lesson Phase: Historiographical Reflection | Tone Alert: Academy Award-winning interview with former Secretary of Defense Robert S. McNamara reflecting on the fatal hubris and miscalculations of the Vietnam War.",
+          "viewing_task": "[00:50] McNamara's Confession: What was Robert McNamara's primary admission regarding the nature of the Vietnamese conflict?\n[01:40] Historical Lesson: How does 'The Fog of War' illustrate the danger of applying cold mathematical systems to human ideological conflicts?",
+          "model_answer": "McNamara admitted that the US fundamentally misread the Vietnam War: Washington viewed it through a Cold War lens as a communist domino plot controlled by Moscow and Beijing, failing to see it was primarily a fierce, century-old nationalist struggle for self-determination. The film demonstrates that relying on computer simulations, tonnage of bombs dropped, and body counts blinded policymakers to intangible factors like nationalist morale, cultural identity, and human resilience."
         }
       ],
       "banner": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
