@@ -1827,9 +1827,9 @@ const great_war = {
           ],
         },
         {
-          q: 'What was the name of the Serbian nationalist group responsible for the assassination?',
-          a: 'The Black Hand',
-          options: ['The White Rose', 'The Red Guards', 'Young Bosnia', 'The Black Hand'],
+          q: 'To which radical student movement did Gavrilo Princip and the Sarajevo assassins belong?',
+          a: 'Young Bosnia',
+          options: ['Young Bosnia', 'The White Rose', 'The Red Guards', 'The Young Turks'],
         },
         {
           q: 'On what exact date was the Archduke assassinated?',
@@ -1852,9 +1852,9 @@ const great_war = {
           ],
         },
         {
-          q: 'What terrorist group supplied the assassins with weapons?',
+          q: 'Which clandestine Serbian secret society supplied the assassins with weapons and bombs?',
           a: 'The Black Hand',
-          options: ['The Serbian Guard', 'Young Bosnia', 'The Red Army', 'The Black Hand'],
+          options: ['The Black Hand', 'The Serbian Guard', 'The Iron Guard', 'The Red Army'],
         },
         {
           q: 'What was the first, failed assassination attempt on the Archduke that morning?',

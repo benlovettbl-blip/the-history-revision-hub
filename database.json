@@ -86997,13 +86997,13 @@
               ]
             },
             {
-              "q": "What was the name of the Serbian nationalist group responsible for the assassination?",
-              "a": "The Black Hand",
+              "q": "To which radical student movement did Gavrilo Princip and the Sarajevo assassins belong?",
+              "a": "Young Bosnia",
               "options": [
-                "The Black Hand",
+                "Young Bosnia",
                 "The White Rose",
                 "The Red Guards",
-                "Young Bosnia"
+                "The Young Turks"
               ]
             },
             {
@@ -87037,12 +87037,12 @@
               ]
             },
             {
-              "q": "What terrorist group supplied the assassins with weapons?",
+              "q": "Which clandestine Serbian secret society supplied the assassins with weapons and bombs?",
               "a": "The Black Hand",
               "options": [
-                "The Serbian Guard",
                 "The Black Hand",
-                "Young Bosnia",
+                "The Serbian Guard",
+                "The Iron Guard",
                 "The Red Army"
               ]
             },
