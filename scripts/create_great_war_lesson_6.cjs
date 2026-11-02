@@ -179,7 +179,7 @@ const lesson6Data = {
     items: [
       {
         question: 'Who assassinated Archduke Franz Ferdinand on 28 June 1914 in Sarajevo?',
-        answer: 'Gavrilo Princip (a member of the Serbian nationalist group the Black Hand).',
+        answer: 'Gavrilo Princip (a member of Young Bosnia, armed by the Black Hand).',
       },
       {
         question:
