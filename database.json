@@ -91488,13 +91488,13 @@
               },
               {
                 "step": 3,
-                "date": "April 1915",
-                "title": "Gallipoli & The Birth of ANZAC Legend",
-                "actor": "ANZAC & Ottoman Turkish Forces",
-                "tag": "🌊 SEABORNE INVASION",
-                "trigger": "Australian and New Zealand troops landed on the rugged, fire-swept cliffs of Anzac Cove, enduring eight months of brutal trench fighting before evacuated in defeat.",
-                "connective": "Forged a powerful sense of national identity, sacrifice, and distinct independence separate from British imperial command.",
-                "question": "Why did the catastrophe of Gallipoli forge national identity for Australia and New Zealand?"
+                "date": "1915–1918",
+                "title": "The British West Indies Regiment & Colonial Service",
+                "actor": "15,000 Caribbean Volunteers & BWIR Battalions",
+                "tag": "🌴 COLONIAL RESISTANCE",
+                "trigger": "Over 15,000 Caribbean volunteers served in the British West Indies Regiment, performing vital frontline logistics and combat in the Middle East.",
+                "connective": "Endured severe racial segregation and degrading labour assignments, yet proved indispensable to the Allied imperial war effort.",
+                "question": "How did soldiers of the British West Indies Regiment challenge imperial discrimination through their wartime service?"
               },
               {
                 "step": 4,
@@ -92624,16 +92624,6 @@
               },
               {
                 "step": 3,
-                "date": "Jan 1916",
-                "title": "The Military Service Act & Conscription",
-                "actor": "Herbert Asquith’s Government",
-                "tag": "⚖️ MILITARY SERVICE ACT",
-                "trigger": "With voluntary enlistment failing to replace horrific Somme-bound casualties, the Military Service Act imposed compulsory conscription for all unmarried men aged 18–41.",
-                "connective": "Represented the most radical infringement of individual liberty in British history and sparked the first formal trials of Conscientious Objectors.",
-                "question": "Why did catastrophic frontline casualties force Britain to impose conscription in 1916?"
-              },
-              {
-                "step": 4,
                 "date": "1916–1918",
                 "title": "Canary Girls & Women’s Industrial War",
                 "actor": "1 Million Female Munitions Workers",
@@ -92643,14 +92633,24 @@
                 "question": "How did 1 million \"Canary Girls\" transform industrial production despite toxic hazards?"
               },
               {
+                "step": 4,
+                "date": "Jan 1916",
+                "title": "The Military Service Act & Conscription",
+                "actor": "Herbert Asquith’s Government",
+                "tag": "⚖️ MILITARY SERVICE ACT",
+                "trigger": "With voluntary enlistment failing to replace horrific frontline casualties, the Military Service Act imposed compulsory conscription for all unmarried men aged 18–41.",
+                "connective": "Represented the most radical infringement of individual liberty in British history and sparked the first formal trials of Conscientious Objectors.",
+                "question": "Why did catastrophic frontline casualties force Britain to impose conscription in 1916?"
+              },
+              {
                 "step": 5,
-                "date": "1917–1918",
-                "title": "Unrestricted U-Boats & Food Rationing",
-                "actor": "German Submarines & Ministry of Food",
-                "tag": "🍞 FOOD CRISIS",
-                "trigger": "Unrestricted German U-boat attacks sank hundreds of Allied merchant ships, reducing British grain and sugar reserves to less than six weeks’ supply.",
-                "connective": "Forced the introduction of compulsory ration books for sugar, meat, and butter, ending food panic and guaranteeing fair nutritional distribution until the Armistice.",
-                "question": "Why did unrestricted German submarine warfare push Britain to the brink of starvation?"
+                "date": "1916–1918",
+                "title": "Conscientious Objectors: Moral Conviction Behind Bars",
+                "actor": "16,000 British Conscientious Objectors",
+                "tag": "⛓️ MORAL PROTEST",
+                "trigger": "Around 16,000 men refused military service on religious, political, or moral grounds, facing military tribunals, public hostility, and harsh penal imprisonment.",
+                "connective": "Established the democratic principle of conscientious objection, demonstrating that individual conscience could resist state coercion during total war.",
+                "question": "Why did conscientious objectors endure imprisonment and public hostility rather than fight?"
               }
             ]
           },
@@ -93771,18 +93771,28 @@
             "stages": [
               {
                 "step": 1,
-                "date": "11 Nov 1918",
-                "title": "The Armistice & German Collapse",
-                "actor": "German High Command & Sailors",
-                "tag": "🚂 ARMISTICE RAILWAY CAR",
-                "trigger": "Strangled by the British naval blockade and beaten back by the Allied Hundred Days Offensive, German sailors mutinied at Kiel and the Kaiser abdicated, forcing Germany to sign the Armistice.",
-                "connective": "Ended four years of slaughter on the Western Front, leaving an exhausted Germany facing Allied dictated terms.",
-                "question": "What forced the German military to concede defeat and accept the Armistice in 1918?"
+                "date": "March–Nov 1918",
+                "title": "Operation Michael & The Hundred Days Offensive",
+                "actor": "General Ludendorff & Allied Supreme Commander Foch",
+                "tag": "⚔️ SPRING OFFENSIVE",
+                "trigger": "Germany launched a massive last-gasp offensive in March 1918, but exhausted its reserves before Allied counter-attacks broke the Hindenburg Line.",
+                "connective": "Shattered the German military machine and forced high command to admit the war was decisively lost on the battlefield.",
+                "question": "Why did Germany’s 1918 Spring Offensive fail to secure victory and hasten military defeat?"
               },
               {
                 "step": 2,
+                "date": "11 Nov 1918",
+                "title": "The Armistice & The Collapse of the Central Powers",
+                "actor": "German High Command & Sailors",
+                "tag": "🚂 ARMISTICE RAILWAY CAR",
+                "trigger": "Strangled by the British naval blockade and beaten back on the Western Front, German sailors mutinied at Kiel and the Kaiser abdicated, forcing Germany to sign the Armistice.",
+                "connective": "Ended four years of industrial slaughter on the Western Front, leaving an exhausted Germany facing Allied dictated terms.",
+                "question": "What forced the German military to concede defeat and accept the Armistice in 1918?"
+              },
+              {
+                "step": 3,
                 "date": "Jan–June 1919",
-                "title": "The Big Three & Conflicting Aims",
+                "title": "The Hall of Mirrors: The Big Three & Conflicting Aims",
                 "actor": "Clemenceau, Lloyd George & Wilson",
                 "tag": "🤝 DIPLOMATIC CLASH",
                 "trigger": "The Paris Peace Conference saw French Premier Clemenceau demand crushing revenge, American President Wilson promote the idealistic 14 Points, and British PM Lloyd George seek imperial trade.",
@@ -93790,9 +93800,9 @@
                 "question": "How did conflicting national motives divide Clemenceau, Lloyd George, and Wilson?"
               },
               {
-                "step": 3,
+                "step": 4,
                 "date": "28 June 1919",
-                "title": "The Diktat & German Humiliation",
+                "title": "The Bitter Terms: Article 231, £6.6 Billion & Demilitarisation",
                 "actor": "Weimar German Delegates & Allies",
                 "tag": "📜 TREATY TERMS (GARGLE)",
                 "trigger": "German representatives were barred from negotiations and forced under threat of invasion to sign the Treaty of Versailles, accepting Article 231 War Guilt and a £6.6 billion reparations debt.",
@@ -93800,23 +93810,13 @@
                 "question": "Why did Germans across all political parties denounce the Treaty terms as an unjust \"Diktat\"?"
               },
               {
-                "step": 4,
-                "date": "1919–1920",
-                "title": "Keynes’ Warning & The \"1940 Class\"",
-                "actor": "John Maynard Keynes & Will Dyson",
-                "tag": "⚠️ CATACLYSMIC WARNING",
-                "trigger": "British economist John Maynard Keynes resigned in protest, publishing ‘The Economic Consequences of the Peace’, while cartoonist Will Dyson warned Versailles would produce ‘1940 Cannon Fodder’.",
-                "connective": "Accurately predicted that economically crippling Germany’s democratic republic would fuel extremist nationalism and trigger a second European war within twenty years.",
-                "question": "How did Article 231, Keynes’ warning, and Will Dyson’s cartoon predict future catastrophe?"
-              },
-              {
                 "step": 5,
-                "date": "1920–1939",
-                "title": "The Verdict: Harsh Peace or Unenforced Compromise?",
-                "actor": "Inter-War European Powers",
+                "date": "1919–1939",
+                "title": "The Diktat Trauma, Keynes’ Critique & Historical Verdict",
+                "actor": "John Maynard Keynes & Modern Historians",
                 "tag": "⚖️ HISTORICAL VERDICT",
-                "trigger": "Versailles left Germany’s industrial core and population largely intact, yet the United States retreated into isolationism and Britain and France lacked the political will to enforce its terms.",
-                "connective": "Allowed Adolf Hitler to exploit grievance and dismantle the treaty unopposed in the 1930s, proving that the fatal failure lay in enforcement rather than severity.",
+                "trigger": "British economist John Maynard Keynes predicted the economic ruin of Europe, while interwar democracies failed to enforce the treaty against rising extremism.",
+                "connective": "Created an enduring geopolitical grievance that paved the diplomatic and psychological road to the outbreak of war in 1939.",
                 "question": "The Historical Verdict: Was Versailles an impossibly harsh peace or an unenforced compromise?"
               }
             ]
@@ -103113,17 +103113,6 @@
               {
                 "step": 1,
                 "para_ref": "[4.1]",
-                "date": "1939",
-                "title": "Backyard Anderson Shelters Installed",
-                "actor": "British Householders & Municipal Engineers",
-                "tag": "🛠️ SHELTER",
-                "trigger": "The government distributed over 1.5 million corrugated steel Anderson shelters, which families dug into garden soil and covered with earth for protection.",
-                "connective": "Provided immediate protection against flying shrapnel and blast waves right in family back gardens.",
-                "question": "Why was the Anderson shelter designed for self-assembly in family gardens?"
-              },
-              {
-                "step": 2,
-                "para_ref": "[4.3]",
                 "date": "September 1940",
                 "title": "The Blitz Hits London: 57 Consecutive Nights of Bombing",
                 "actor": "Luftwaffe Bomber Fleets",
@@ -103133,8 +103122,19 @@
                 "question": "How did civilian morale withstand 57 consecutive nights of bombardment?"
               },
               {
+                "step": 2,
+                "para_ref": "[4.2]",
+                "date": "1939–1940",
+                "title": "Backyard Anderson & Indoor Morrison Shelters",
+                "actor": "British Householders & Municipal Engineers",
+                "tag": "🛠️ SHELTER",
+                "trigger": "The government distributed over 1.5 million corrugated steel Anderson shelters, which families dug into garden soil and covered with earth for protection.",
+                "connective": "Provided immediate protection against flying shrapnel and blast waves right in family back gardens.",
+                "question": "Why was the Anderson shelter designed for self-assembly in family gardens?"
+              },
+              {
                 "step": 3,
-                "para_ref": "[4.5]",
+                "para_ref": "[4.3]",
                 "date": "Winter 1940–1941",
                 "title": "Sheltering on Underground Platforms & Rooftop Fire Watching",
                 "actor": "London Underground Shelters & Fire Watchers",
@@ -127240,63 +127240,63 @@
             }
           ],
           "causal_domino_spine": {
-            "title": "The De-industrialisation of India: The Company & Handloom Crisis",
+            "title": "The 1857 Indian Rebellion: Sepoy Grievance, Rani Lakshmibai & The Raj",
             "subtitle": "Key Turning Points & Causal Dominoes (5-Stage Framework)",
             "stages": [
               {
                 "step": 1,
-                "date": "1700–1757",
-                "title": "Mughal India: The World’s Textile Workshop",
-                "actor": "Mughal Artisans & Village Weavers",
-                "tag": "🧵 TEXTILE WORKSHOP",
-                "trigger": "Mughal India produced 25% of the world’s manufactured goods, crafting exquisite handloom muslins and calicos that European traders purchased with gold and silver bullion.",
-                "connective": "Attracted European trading companies eager to tap into India’s vast commercial wealth and unmatched manufacturing skill.",
-                "question": "Why was Mughal India the world’s leading textile workshop in 1700?",
-                "para_ref": "[1.1]"
-              },
-              {
-                "step": 2,
-                "date": "1721",
-                "title": "The Protectionist Calico Acts",
-                "actor": "British Parliament & Wool Merchants",
-                "tag": "⚖️ CALICO ACTS",
-                "trigger": "Responding to violent protests from domestic wool and silk guilds, Parliament passed the Calico Acts, legally banning the import and wearing of dyed Indian cottons in Britain.",
-                "connective": "Protected infant British textile manufacturing behind strict trade walls while hypocritically preaching free commerce abroad.",
-                "question": "Why did the British Parliament pass the protectionist Calico Acts?",
+                "date": "1757–1765",
+                "title": "Plassey, Corporate Conquest & The Bengal Diwani",
+                "actor": "Robert Clive & The East India Company",
+                "tag": "💰 CORPORATE PLUNDER",
+                "trigger": "Victory at Plassey (1757) and the 1765 Treaty of Allahabad granted the East India Company tax-collecting rights (Diwani) over 20 million Bengalis.",
+                "connective": "Transformed a commercial trading corporation into an aggressive territorial empire financed by Indian agricultural revenue.",
+                "question": "How did victory at Plassey and the Diwani transform the East India Company from traders into rulers?",
                 "para_ref": "[2.1]"
               },
               {
+                "step": 2,
+                "date": "1848–1856",
+                "title": "The Doctrine of Lapse & Annexation of Awadh",
+                "actor": "Governor-General Lord Dalhousie",
+                "tag": "👑 DOCTRINE OF LAPSE",
+                "trigger": "Lord Dalhousie annexed princely states lacking natural male heirs (Satara, Jhansi, Nagpur) and seized the rich kingdom of Awadh, home of most Bengal Army sepoys.",
+                "connective": "Outraged Indian royal dynasties and convinced sepoys that the British intended to extinguish traditional Indian sovereignty and land rights.",
+                "question": "Why did Lord Dalhousie’s Doctrine of Lapse alienate Indian royal dynasties?",
+                "para_ref": "[2.2]"
+              },
+              {
                 "step": 3,
-                "date": "1765",
-                "title": "The Diwani of Bengal & Revenue Inversion",
-                "actor": "Robert Clive & East India Company",
-                "tag": "💰 BENGAL DIWANI",
-                "trigger": "The Treaty of Allahabad granted the East India Company the Diwani (tax-collecting rights) of wealthy Bengal, collecting millions in land revenue from Indian peasants.",
-                "connective": "Allowed the Company to purchase Indian textiles using taxes extracted from Indian peasants rather than importing British silver, draining local wealth.",
-                "question": "How did the Diwani of Bengal invert the financial flow between Britain and India?",
-                "para_ref": "[3.1]"
+                "date": "May 1857",
+                "title": "The Greased Enfield Cartridge Crisis & The Spark at Meerut",
+                "actor": "Bengal Army Sepoys",
+                "tag": "🔫 ENFIELD CARTRIDGE",
+                "trigger": "The introduction of paper cartridges greased with cow and pig fat forced Hindu and Muslim sepoys at Meerut into open mutiny to defend their faith.",
+                "connective": "Sparked panic among troops that the Company was deliberately attempting to defile their religious purity and force conversion to Christianity.",
+                "question": "Why was the Enfield rifle cartridge the explosive catalyst for rebellion?",
+                "para_ref": "[2.3]"
               },
               {
                 "step": 4,
-                "date": "1813–1835",
-                "title": "Lancashire Steam Mills & Tariff Disparity",
-                "actor": "Lancashire Cotton Barons & Parliament",
-                "tag": "⚙️ STEAM FACTORIES",
-                "trigger": "Lancashire steam mills mass-produced cheap machine cotton, while Parliament slapped prohibitive 70–80% duties on Indian cloth imports while forcing India to import British goods duty-free.",
-                "connective": "Decimated Indian handloom weaving by undercutting local village weavers with subsidised British factory cloth.",
-                "question": "How did steam machinery and rigged tariffs dismantle Indian handloom weaving?",
-                "para_ref": "[4.1]"
+                "date": "1857–1858",
+                "title": "Rani Lakshmibai & The Armed Defence of Jhansi",
+                "actor": "Rani Lakshmibai of Jhansi",
+                "tag": "🗡️ RANI LAKSHMIBAI",
+                "trigger": "Deprived of her adopted son’s throne, Rani Lakshmibai strapped her child to her back, drew her talwar sword, and led fierce cavalry charges against British forces until killed at Gwalior.",
+                "connective": "Became an enduring national martyr and symbol of anti-colonial resistance who was revered even by the British commanders who fought her.",
+                "question": "How did Rani Lakshmibai of Jhansi become an enduring symbol of resistance?",
+                "para_ref": "[2.4]"
               },
               {
                 "step": 5,
-                "date": "1834",
-                "title": "Bentinck’s Report & Rural Destitution",
-                "actor": "Governor-General William Bentinck",
-                "tag": "⚠️ DE-INDUSTRIALISATION",
-                "trigger": "Governor-General Bentinck reported that \"the bones of the cotton-weavers are bleaching the plains of India\" as historic loom cities like Dhaka collapsed into ghost towns.",
-                "connective": "Transformed India from the world’s foremost manufacturing exporter into an impoverished captive market supplying raw cotton and food crops.",
-                "question": "Why did Governor-General Bentinck write that \"the bones of weavers bleach the plains\"?",
-                "para_ref": "[5.1]"
+                "date": "August 1858",
+                "title": "The Fall of the Company & Inauguration of the British Raj",
+                "actor": "Queen Victoria & British Parliament",
+                "tag": "👑 THE BRITISH RAJ",
+                "trigger": "Parliament passed the Government of India Act 1858, dissolving the East India Company and transferring sovereign authority directly to Queen Victoria and a royal Viceroy.",
+                "connective": "Abolished corporate mercenary rule, promising religious neutrality while reorganising the Indian army to prevent future uprisings.",
+                "question": "How did the Government of India Act 1858 permanently reshape British governance?",
+                "para_ref": "[2.5]"
               }
             ]
           },
@@ -128281,63 +128281,63 @@
             }
           ],
           "causal_domino_spine": {
-            "title": "The 1857 Indian Rebellion: Sepoy Grievance, Rani Lakshmibai & The Raj",
+            "title": "Settler Colonialism in Australia: First Fleet, Frontier Wars & Eureka",
             "subtitle": "Key Turning Points & Causal Dominoes (5-Stage Framework)",
             "stages": [
               {
                 "step": 1,
-                "date": "1848–1856",
-                "title": "The Doctrine of Lapse & Annexation of Awadh",
-                "actor": "Governor-General Lord Dalhousie",
-                "tag": "👑 DOCTRINE OF LAPSE",
-                "trigger": "Lord Dalhousie annexed princely states lacking natural male heirs (Satara, Jhansi, Nagpur) and seized the rich kingdom of Awadh, home of most Bengal Army sepoys.",
-                "connective": "Outraged Indian royal dynasties and convinced sepoys that the British intended to extinguish traditional Indian sovereignty and land rights.",
-                "question": "Why did Lord Dalhousie’s Doctrine of Lapse alienate Indian royal dynasties?",
-                "para_ref": "[1.1]"
-              },
-              {
-                "step": 2,
-                "date": "Early 1857",
-                "title": "The Greased Enfield Cartridge Crisis",
-                "actor": "Bengal Army Sepoys",
-                "tag": "🔫 ENFIELD CARTRIDGE",
-                "trigger": "The British Army introduced paper cartridges greased with cow and pig fat, requiring soldiers to bite them open, violating sacred Hindu and Muslim dietary laws.",
-                "connective": "Sparked panic among troops that the Company was deliberately attempting to defile their religious purity and force conversion to Christianity.",
-                "question": "Why was the Enfield rifle cartridge the explosive catalyst for rebellion?",
-                "para_ref": "[2.1]"
-              },
-              {
-                "step": 3,
-                "date": "May 1857",
-                "title": "The Mutiny at Meerut & March on Delhi",
-                "actor": "Sepoy Mutineers & Bahadur Shah Zafar",
-                "tag": "⚡ MEERUT UPRISING",
-                "trigger": "Sepoys at Meerut broke into open revolt, executed British officers, and marched directly to Delhi to proclaim the elderly Mughal Emperor Bahadur Shah Zafar leader of all India.",
-                "connective": "Transformed an isolated military mutiny into a unified Hindu-Muslim national war of liberation against British colonial rule.",
-                "question": "Why was the march from Meerut to Delhi a political masterstroke for the rebels?",
+                "date": "May 1787",
+                "title": "The Portsmouth Departure & The Convict Crisis",
+                "actor": "Captain Arthur Phillip & 736 British Convicts",
+                "tag": "🚢 CONVICT EXPEDITION",
+                "trigger": "Overcrowded prison hulks forced the British government to dispatch eleven First Fleet ships from Portsmouth on an 8-month voyage to Botany Bay.",
+                "connective": "Founded the British penal colony of New South Wales, beginning systematic dispossession of Indigenous Australians.",
+                "question": "Why did the British government choose transportation to Australia rather than building domestic prisons?",
                 "para_ref": "[3.1]"
               },
               {
+                "step": 2,
+                "date": "January 1788",
+                "title": "The Legal Fiction of Terra Nullius & Settlement",
+                "actor": "Governor Arthur Phillip & The British Admiralty",
+                "tag": "📜 LEGAL FICTION",
+                "trigger": "British colonial authorities declared the continent \"Terra Nullius\" (land belonging to no one), ignoring 65,000 years of Indigenous custodianship.",
+                "connective": "Denied First Nations peoples legal sovereignty, property rights, or treaty recognition under British law.",
+                "question": "How did the legal doctrine of \"Terra Nullius\" justify the seizure of Australian land without a treaty?",
+                "para_ref": "[3.2]"
+              },
+              {
+                "step": 3,
+                "date": "1790–1810",
+                "title": "Frontier Warfare & Pemulwuy’s Resistance",
+                "actor": "Bidjigal Warrior Pemulwuy & Indigenous Resistance Fighters",
+                "tag": "🏹 FRONTIER RESISTANCE",
+                "trigger": "Warrior Pemulwuy led coordinated guerrilla attacks against British settlements across the Hawkesbury and Parramatta rivers.",
+                "connective": "Shattered the myth of peaceful British settlement and demonstrated fierce First Nations resistance to territorial seizure.",
+                "question": "Why did Pemulwuy’s twelve-year guerrilla resistance pose a serious military threat to early Sydney?",
+                "para_ref": "[3.3]"
+              },
+              {
                 "step": 4,
-                "date": "1857–1858",
-                "title": "Rani Lakshmibai & The Defence of Jhansi",
-                "actor": "Rani Lakshmibai of Jhansi",
-                "tag": "🗡️ RANI LAKSHMIBAI",
-                "trigger": "Deprived of her adopted son’s throne, Rani Lakshmibai strapped her child to her back, drew her talwar sword, and led fierce cavalry charges against British forces until killed at Gwalior.",
-                "connective": "Became an enduring national martyr and symbol of anti-colonial resistance who was revered even by the British commanders who fought her.",
-                "question": "How did Rani Lakshmibai of Jhansi become an enduring symbol of resistance?",
-                "para_ref": "[4.1]"
+                "date": "1824–1835",
+                "title": "Van Diemen’s Land: The Black War & The Black Line",
+                "actor": "Governor George Arthur & Palawa Peoples",
+                "tag": "⚔️ THE BLACK WAR",
+                "trigger": "Colonial authorities declared martial law and deployed a human cordon of 2,200 settlers (the \"Black Line\") to drive the Palawa people from their lands.",
+                "connective": "Resulted in near-total destruction and forced exile of Tasmania’s Indigenous population to Flinders Island.",
+                "question": "How did Governor Arthur’s martial law and the \"Black Line\" devastate the Palawa population of Tasmania?",
+                "para_ref": "[3.4]"
               },
               {
                 "step": 5,
-                "date": "August 1858",
-                "title": "The 1858 Act & Inauguration of the Raj",
-                "actor": "Queen Victoria & British Parliament",
-                "tag": "👑 THE BRITISH RAJ",
-                "trigger": "Parliament passed the Government of India Act 1858, dissolving the East India Company and transferring sovereign authority directly to Queen Victoria and a royal Viceroy.",
-                "connective": "Abolished corporate mercenary rule, promising religious neutrality while reorganising the Indian army to prevent future uprisings.",
-                "question": "How did the Government of India Act 1858 permanently reshape British governance?",
-                "para_ref": "[5.1]"
+                "date": "1851–1854",
+                "title": "The 1851 Gold Rush & The Eureka Stockade",
+                "actor": "Peter Lalor & The Ballarat Gold Diggers",
+                "tag": "🚩 DEMOCRATIC REBELLION",
+                "trigger": "Thousands of diggers rebelled against oppressive mining licence fees and lack of political representation, swearing allegiance to the Southern Cross flag.",
+                "connective": "Though militarily crushed at Eureka Stockade, the uprising compelled Britain to grant democratic self-government and universal male suffrage.",
+                "question": "How did the armed clash at the Eureka Stockade accelerate the birth of Australian democracy?",
+                "para_ref": "[3.5]"
               }
             ]
           },

@@ -2760,16 +2760,16 @@ const great_war_part2_data = {
           },
           {
             step: 3,
-            date: 'April 1915',
-            title: 'Gallipoli & The Birth of ANZAC Legend',
-            actor: 'ANZAC & Ottoman Turkish Forces',
-            tag: '🌊 SEABORNE INVASION',
+            date: '1915–1918',
+            title: 'The British West Indies Regiment & Colonial Service',
+            actor: '15,000 Caribbean Volunteers & BWIR Battalions',
+            tag: '🌴 COLONIAL RESISTANCE',
             trigger:
-              'Australian and New Zealand troops landed on the rugged, fire-swept cliffs of Anzac Cove, enduring eight months of brutal trench fighting before evacuated in defeat.',
+              'Over 15,000 Caribbean volunteers served in the British West Indies Regiment, performing vital frontline logistics and combat in the Middle East.',
             connective:
-              'Forged a powerful sense of national identity, sacrifice, and distinct independence separate from British imperial command.',
+              'Endured severe racial segregation and degrading labour assignments, yet proved indispensable to the Allied imperial war effort.',
             question:
-              'Why did the catastrophe of Gallipoli forge national identity for Australia and New Zealand?',
+              'How did soldiers of the British West Indies Regiment challenge imperial discrimination through their wartime service?',
           },
           {
             step: 4,
@@ -4113,19 +4113,6 @@ const great_war_part2_data = {
           },
           {
             step: 3,
-            date: 'Jan 1916',
-            title: 'The Military Service Act & Conscription',
-            actor: 'Herbert Asquith’s Government',
-            tag: '⚖️ MILITARY SERVICE ACT',
-            trigger:
-              'With voluntary enlistment failing to replace horrific Somme-bound casualties, the Military Service Act imposed compulsory conscription for all unmarried men aged 18–41.',
-            connective:
-              'Represented the most radical infringement of individual liberty in British history and sparked the first formal trials of Conscientious Objectors.',
-            question:
-              'Why did catastrophic frontline casualties force Britain to impose conscription in 1916?',
-          },
-          {
-            step: 4,
             date: '1916–1918',
             title: 'Canary Girls & Women’s Industrial War',
             actor: '1 Million Female Munitions Workers',
@@ -4138,17 +4125,30 @@ const great_war_part2_data = {
               'How did 1 million "Canary Girls" transform industrial production despite toxic hazards?',
           },
           {
-            step: 5,
-            date: '1917–1918',
-            title: 'Unrestricted U-Boats & Food Rationing',
-            actor: 'German Submarines & Ministry of Food',
-            tag: '🍞 FOOD CRISIS',
+            step: 4,
+            date: 'Jan 1916',
+            title: 'The Military Service Act & Conscription',
+            actor: 'Herbert Asquith’s Government',
+            tag: '⚖️ MILITARY SERVICE ACT',
             trigger:
-              'Unrestricted German U-boat attacks sank hundreds of Allied merchant ships, reducing British grain and sugar reserves to less than six weeks’ supply.',
+              'With voluntary enlistment failing to replace horrific frontline casualties, the Military Service Act imposed compulsory conscription for all unmarried men aged 18–41.',
             connective:
-              'Forced the introduction of compulsory ration books for sugar, meat, and butter, ending food panic and guaranteeing fair nutritional distribution until the Armistice.',
+              'Represented the most radical infringement of individual liberty in British history and sparked the first formal trials of Conscientious Objectors.',
             question:
-              'Why did unrestricted German submarine warfare push Britain to the brink of starvation?',
+              'Why did catastrophic frontline casualties force Britain to impose conscription in 1916?',
+          },
+          {
+            step: 5,
+            date: '1916–1918',
+            title: 'Conscientious Objectors: Moral Conviction Behind Bars',
+            actor: '16,000 British Conscientious Objectors',
+            tag: '⛓️ MORAL PROTEST',
+            trigger:
+              'Around 16,000 men refused military service on religious, political, or moral grounds, facing military tribunals, public hostility, and harsh penal imprisonment.',
+            connective:
+              'Established the democratic principle of conscientious objection, demonstrating that individual conscience could resist state coercion during total war.',
+            question:
+              'Why did conscientious objectors endure imprisonment and public hostility rather than fight?',
           },
         ],
       },
@@ -5481,21 +5481,34 @@ const great_war_part2_data = {
         stages: [
           {
             step: 1,
+            date: 'March–Nov 1918',
+            title: 'Operation Michael & The Hundred Days Offensive',
+            actor: 'General Ludendorff & Allied Supreme Commander Foch',
+            tag: '⚔️ SPRING OFFENSIVE',
+            trigger:
+              'Germany launched a massive last-gasp offensive in March 1918, but exhausted its reserves before Allied counter-attacks broke the Hindenburg Line.',
+            connective:
+              'Shattered the German military machine and forced high command to admit the war was decisively lost on the battlefield.',
+            question:
+              'Why did Germany’s 1918 Spring Offensive fail to secure victory and hasten military defeat?',
+          },
+          {
+            step: 2,
             date: '11 Nov 1918',
-            title: 'The Armistice & German Collapse',
+            title: 'The Armistice & The Collapse of the Central Powers',
             actor: 'German High Command & Sailors',
             tag: '🚂 ARMISTICE RAILWAY CAR',
             trigger:
-              'Strangled by the British naval blockade and beaten back by the Allied Hundred Days Offensive, German sailors mutinied at Kiel and the Kaiser abdicated, forcing Germany to sign the Armistice.',
+              'Strangled by the British naval blockade and beaten back on the Western Front, German sailors mutinied at Kiel and the Kaiser abdicated, forcing Germany to sign the Armistice.',
             connective:
-              'Ended four years of slaughter on the Western Front, leaving an exhausted Germany facing Allied dictated terms.',
+              'Ended four years of industrial slaughter on the Western Front, leaving an exhausted Germany facing Allied dictated terms.',
             question:
               'What forced the German military to concede defeat and accept the Armistice in 1918?',
           },
           {
-            step: 2,
+            step: 3,
             date: 'Jan–June 1919',
-            title: 'The Big Three & Conflicting Aims',
+            title: 'The Hall of Mirrors: The Big Three & Conflicting Aims',
             actor: 'Clemenceau, Lloyd George & Wilson',
             tag: '🤝 DIPLOMATIC CLASH',
             trigger:
@@ -5506,9 +5519,9 @@ const great_war_part2_data = {
               'How did conflicting national motives divide Clemenceau, Lloyd George, and Wilson?',
           },
           {
-            step: 3,
+            step: 4,
             date: '28 June 1919',
-            title: 'The Diktat & German Humiliation',
+            title: 'The Bitter Terms: Article 231, £6.6 Billion & Demilitarisation',
             actor: 'Weimar German Delegates & Allies',
             tag: '📜 TREATY TERMS (GARGLE)',
             trigger:
@@ -5519,28 +5532,15 @@ const great_war_part2_data = {
               'Why did Germans across all political parties denounce the Treaty terms as an unjust "Diktat"?',
           },
           {
-            step: 4,
-            date: '1919–1920',
-            title: 'Keynes’ Warning & The "1940 Class"',
-            actor: 'John Maynard Keynes & Will Dyson',
-            tag: '⚠️ CATACLYSMIC WARNING',
-            trigger:
-              'British economist John Maynard Keynes resigned in protest, publishing ‘The Economic Consequences of the Peace’, while cartoonist Will Dyson warned Versailles would produce ‘1940 Cannon Fodder’.',
-            connective:
-              'Accurately predicted that economically crippling Germany’s democratic republic would fuel extremist nationalism and trigger a second European war within twenty years.',
-            question:
-              'How did Article 231, Keynes’ warning, and Will Dyson’s cartoon predict future catastrophe?',
-          },
-          {
             step: 5,
-            date: '1920–1939',
-            title: 'The Verdict: Harsh Peace or Unenforced Compromise?',
-            actor: 'Inter-War European Powers',
+            date: '1919–1939',
+            title: 'The Diktat Trauma, Keynes’ Critique & Historical Verdict',
+            actor: 'John Maynard Keynes & Modern Historians',
             tag: '⚖️ HISTORICAL VERDICT',
             trigger:
-              'Versailles left Germany’s industrial core and population largely intact, yet the United States retreated into isolationism and Britain and France lacked the political will to enforce its terms.',
+              'British economist John Maynard Keynes predicted the economic ruin of Europe, while interwar democracies failed to enforce the treaty against rising extremism.',
             connective:
-              'Allowed Adolf Hitler to exploit grievance and dismantle the treaty unopposed in the 1930s, proving that the fatal failure lay in enforcement rather than severity.',
+              'Created an enduring geopolitical grievance that paved the diplomatic and psychological road to the outbreak of war in 1939.',
             question:
               'The Historical Verdict: Was Versailles an impossibly harsh peace or an unenforced compromise?',
           },

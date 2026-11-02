@@ -1588,76 +1588,75 @@ const second_british_empire_data = {
         },
       ],
       causal_domino_spine: {
-        title: 'The De-industrialisation of India: The Company & Handloom Crisis',
+        title: 'The 1857 Indian Rebellion: Sepoy Grievance, Rani Lakshmibai & The Raj',
         subtitle: 'Key Turning Points & Causal Dominoes (5-Stage Framework)',
         stages: [
           {
             step: 1,
-            date: '1700–1757',
-            title: 'Mughal India: The World’s Textile Workshop',
-            actor: 'Mughal Artisans & Village Weavers',
-            tag: '🧵 TEXTILE WORKSHOP',
+            date: '1757–1765',
+            title: 'Plassey, Corporate Conquest & The Bengal Diwani',
+            actor: 'Robert Clive & The East India Company',
+            tag: '💰 CORPORATE PLUNDER',
             trigger:
-              'Mughal India produced 25% of the world’s manufactured goods, crafting exquisite handloom muslins and calicos that European traders purchased with gold and silver bullion.',
+              'Victory at Plassey (1757) and the 1765 Treaty of Allahabad granted the East India Company tax-collecting rights (Diwani) over 20 million Bengalis.',
             connective:
-              'Attracted European trading companies eager to tap into India’s vast commercial wealth and unmatched manufacturing skill.',
-            question: 'Why was Mughal India the world’s leading textile workshop in 1700?',
-            para_ref: '[1.1]',
-          },
-          {
-            step: 2,
-            date: '1721',
-            title: 'The Protectionist Calico Acts',
-            actor: 'British Parliament & Wool Merchants',
-            tag: '⚖️ CALICO ACTS',
-            trigger:
-              'Responding to violent protests from domestic wool and silk guilds, Parliament passed the Calico Acts, legally banning the import and wearing of dyed Indian cottons in Britain.',
-            connective:
-              'Protected infant British textile manufacturing behind strict trade walls while hypocritically preaching free commerce abroad.',
-            question: 'Why did the British Parliament pass the protectionist Calico Acts?',
+              'Transformed a commercial trading corporation into an aggressive territorial empire financed by Indian agricultural revenue.',
+            question:
+              'How did victory at Plassey and the Diwani transform the East India Company from traders into rulers?',
             para_ref: '[2.1]',
           },
           {
-            step: 3,
-            date: '1765',
-            title: 'The Diwani of Bengal & Revenue Inversion',
-            actor: 'Robert Clive & East India Company',
-            tag: '💰 BENGAL DIWANI',
+            step: 2,
+            date: '1848–1856',
+            title: 'The Doctrine of Lapse & Annexation of Awadh',
+            actor: 'Governor-General Lord Dalhousie',
+            tag: '👑 DOCTRINE OF LAPSE',
             trigger:
-              'The Treaty of Allahabad granted the East India Company the Diwani (tax-collecting rights) of wealthy Bengal, collecting millions in land revenue from Indian peasants.',
+              'Lord Dalhousie annexed princely states lacking natural male heirs (Satara, Jhansi, Nagpur) and seized the rich kingdom of Awadh, home of most Bengal Army sepoys.',
             connective:
-              'Allowed the Company to purchase Indian textiles using taxes extracted from Indian peasants rather than importing British silver, draining local wealth.',
-            question:
-              'How did the Diwani of Bengal invert the financial flow between Britain and India?',
-            para_ref: '[3.1]',
+              'Outraged Indian royal dynasties and convinced sepoys that the British intended to extinguish traditional Indian sovereignty and land rights.',
+            question: 'Why did Lord Dalhousie’s Doctrine of Lapse alienate Indian royal dynasties?',
+            para_ref: '[2.2]',
+          },
+          {
+            step: 3,
+            date: 'May 1857',
+            title: 'The Greased Enfield Cartridge Crisis & The Spark at Meerut',
+            actor: 'Bengal Army Sepoys',
+            tag: '🔫 ENFIELD CARTRIDGE',
+            trigger:
+              'The introduction of paper cartridges greased with cow and pig fat forced Hindu and Muslim sepoys at Meerut into open mutiny to defend their faith.',
+            connective:
+              'Sparked panic among troops that the Company was deliberately attempting to defile their religious purity and force conversion to Christianity.',
+            question: 'Why was the Enfield rifle cartridge the explosive catalyst for rebellion?',
+            para_ref: '[2.3]',
           },
           {
             step: 4,
-            date: '1813–1835',
-            title: 'Lancashire Steam Mills & Tariff Disparity',
-            actor: 'Lancashire Cotton Barons & Parliament',
-            tag: '⚙️ STEAM FACTORIES',
+            date: '1857–1858',
+            title: 'Rani Lakshmibai & The Armed Defence of Jhansi',
+            actor: 'Rani Lakshmibai of Jhansi',
+            tag: '🗡️ RANI LAKSHMIBAI',
             trigger:
-              'Lancashire steam mills mass-produced cheap machine cotton, while Parliament slapped prohibitive 70–80% duties on Indian cloth imports while forcing India to import British goods duty-free.',
+              'Deprived of her adopted son’s throne, Rani Lakshmibai strapped her child to her back, drew her talwar sword, and led fierce cavalry charges against British forces until killed at Gwalior.',
             connective:
-              'Decimated Indian handloom weaving by undercutting local village weavers with subsidised British factory cloth.',
-            question:
-              'How did steam machinery and rigged tariffs dismantle Indian handloom weaving?',
-            para_ref: '[4.1]',
+              'Became an enduring national martyr and symbol of anti-colonial resistance who was revered even by the British commanders who fought her.',
+            question: 'How did Rani Lakshmibai of Jhansi become an enduring symbol of resistance?',
+            para_ref: '[2.4]',
           },
           {
             step: 5,
-            date: '1834',
-            title: 'Bentinck’s Report & Rural Destitution',
-            actor: 'Governor-General William Bentinck',
-            tag: '⚠️ DE-INDUSTRIALISATION',
+            date: 'August 1858',
+            title: 'The Fall of the Company & Inauguration of the British Raj',
+            actor: 'Queen Victoria & British Parliament',
+            tag: '👑 THE BRITISH RAJ',
             trigger:
-              'Governor-General Bentinck reported that "the bones of the cotton-weavers are bleaching the plains of India" as historic loom cities like Dhaka collapsed into ghost towns.',
+              'Parliament passed the Government of India Act 1858, dissolving the East India Company and transferring sovereign authority directly to Queen Victoria and a royal Viceroy.',
             connective:
-              'Transformed India from the world’s foremost manufacturing exporter into an impoverished captive market supplying raw cotton and food crops.',
+              'Abolished corporate mercenary rule, promising religious neutrality while reorganising the Indian army to prevent future uprisings.',
             question:
-              'Why did Governor-General Bentinck write that "the bones of weavers bleach the plains"?',
-            para_ref: '[5.1]',
+              'How did the Government of India Act 1858 permanently reshape British governance?',
+            para_ref: '[2.5]',
           },
         ],
       },
@@ -2830,75 +2829,78 @@ const second_british_empire_data = {
         },
       ],
       causal_domino_spine: {
-        title: 'The 1857 Indian Rebellion: Sepoy Grievance, Rani Lakshmibai & The Raj',
+        title: 'Settler Colonialism in Australia: First Fleet, Frontier Wars & Eureka',
         subtitle: 'Key Turning Points & Causal Dominoes (5-Stage Framework)',
         stages: [
           {
             step: 1,
-            date: '1848–1856',
-            title: 'The Doctrine of Lapse & Annexation of Awadh',
-            actor: 'Governor-General Lord Dalhousie',
-            tag: '👑 DOCTRINE OF LAPSE',
+            date: 'May 1787',
+            title: 'The Portsmouth Departure & The Convict Crisis',
+            actor: 'Captain Arthur Phillip & 736 British Convicts',
+            tag: '🚢 CONVICT EXPEDITION',
             trigger:
-              'Lord Dalhousie annexed princely states lacking natural male heirs (Satara, Jhansi, Nagpur) and seized the rich kingdom of Awadh, home of most Bengal Army sepoys.',
+              'Overcrowded prison hulks forced the British government to dispatch eleven First Fleet ships from Portsmouth on an 8-month voyage to Botany Bay.',
             connective:
-              'Outraged Indian royal dynasties and convinced sepoys that the British intended to extinguish traditional Indian sovereignty and land rights.',
-            question: 'Why did Lord Dalhousie’s Doctrine of Lapse alienate Indian royal dynasties?',
-            para_ref: '[1.1]',
-          },
-          {
-            step: 2,
-            date: 'Early 1857',
-            title: 'The Greased Enfield Cartridge Crisis',
-            actor: 'Bengal Army Sepoys',
-            tag: '🔫 ENFIELD CARTRIDGE',
-            trigger:
-              'The British Army introduced paper cartridges greased with cow and pig fat, requiring soldiers to bite them open, violating sacred Hindu and Muslim dietary laws.',
-            connective:
-              'Sparked panic among troops that the Company was deliberately attempting to defile their religious purity and force conversion to Christianity.',
-            question: 'Why was the Enfield rifle cartridge the explosive catalyst for rebellion?',
-            para_ref: '[2.1]',
-          },
-          {
-            step: 3,
-            date: 'May 1857',
-            title: 'The Mutiny at Meerut & March on Delhi',
-            actor: 'Sepoy Mutineers & Bahadur Shah Zafar',
-            tag: '⚡ MEERUT UPRISING',
-            trigger:
-              'Sepoys at Meerut broke into open revolt, executed British officers, and marched directly to Delhi to proclaim the elderly Mughal Emperor Bahadur Shah Zafar leader of all India.',
-            connective:
-              'Transformed an isolated military mutiny into a unified Hindu-Muslim national war of liberation against British colonial rule.',
+              'Founded the British penal colony of New South Wales, beginning systematic dispossession of Indigenous Australians.',
             question:
-              'Why was the march from Meerut to Delhi a political masterstroke for the rebels?',
+              'Why did the British government choose transportation to Australia rather than building domestic prisons?',
             para_ref: '[3.1]',
           },
           {
-            step: 4,
-            date: '1857–1858',
-            title: 'Rani Lakshmibai & The Defence of Jhansi',
-            actor: 'Rani Lakshmibai of Jhansi',
-            tag: '🗡️ RANI LAKSHMIBAI',
+            step: 2,
+            date: 'January 1788',
+            title: 'The Legal Fiction of Terra Nullius & Settlement',
+            actor: 'Governor Arthur Phillip & The British Admiralty',
+            tag: '📜 LEGAL FICTION',
             trigger:
-              'Deprived of her adopted son’s throne, Rani Lakshmibai strapped her child to her back, drew her talwar sword, and led fierce cavalry charges against British forces until killed at Gwalior.',
+              'British colonial authorities declared the continent "Terra Nullius" (land belonging to no one), ignoring 65,000 years of Indigenous custodianship.',
             connective:
-              'Became an enduring national martyr and symbol of anti-colonial resistance who was revered even by the British commanders who fought her.',
-            question: 'How did Rani Lakshmibai of Jhansi become an enduring symbol of resistance?',
-            para_ref: '[4.1]',
+              'Denied First Nations peoples legal sovereignty, property rights, or treaty recognition under British law.',
+            question:
+              'How did the legal doctrine of "Terra Nullius" justify the seizure of Australian land without a treaty?',
+            para_ref: '[3.2]',
+          },
+          {
+            step: 3,
+            date: '1790–1810',
+            title: 'Frontier Warfare & Pemulwuy’s Resistance',
+            actor: 'Bidjigal Warrior Pemulwuy & Indigenous Resistance Fighters',
+            tag: '🏹 FRONTIER RESISTANCE',
+            trigger:
+              'Warrior Pemulwuy led coordinated guerrilla attacks against British settlements across the Hawkesbury and Parramatta rivers.',
+            connective:
+              'Shattered the myth of peaceful British settlement and demonstrated fierce First Nations resistance to territorial seizure.',
+            question:
+              'Why did Pemulwuy’s twelve-year guerrilla resistance pose a serious military threat to early Sydney?',
+            para_ref: '[3.3]',
+          },
+          {
+            step: 4,
+            date: '1824–1835',
+            title: 'Van Diemen’s Land: The Black War & The Black Line',
+            actor: 'Governor George Arthur & Palawa Peoples',
+            tag: '⚔️ THE BLACK WAR',
+            trigger:
+              'Colonial authorities declared martial law and deployed a human cordon of 2,200 settlers (the "Black Line") to drive the Palawa people from their lands.',
+            connective:
+              'Resulted in near-total destruction and forced exile of Tasmania’s Indigenous population to Flinders Island.',
+            question:
+              'How did Governor Arthur’s martial law and the "Black Line" devastate the Palawa population of Tasmania?',
+            para_ref: '[3.4]',
           },
           {
             step: 5,
-            date: 'August 1858',
-            title: 'The 1858 Act & Inauguration of the Raj',
-            actor: 'Queen Victoria & British Parliament',
-            tag: '👑 THE BRITISH RAJ',
+            date: '1851–1854',
+            title: 'The 1851 Gold Rush & The Eureka Stockade',
+            actor: 'Peter Lalor & The Ballarat Gold Diggers',
+            tag: '🚩 DEMOCRATIC REBELLION',
             trigger:
-              'Parliament passed the Government of India Act 1858, dissolving the East India Company and transferring sovereign authority directly to Queen Victoria and a royal Viceroy.',
+              'Thousands of diggers rebelled against oppressive mining licence fees and lack of political representation, swearing allegiance to the Southern Cross flag.',
             connective:
-              'Abolished corporate mercenary rule, promising religious neutrality while reorganising the Indian army to prevent future uprisings.',
+              'Though militarily crushed at Eureka Stockade, the uprising compelled Britain to grant democratic self-government and universal male suffrage.',
             question:
-              'How did the Government of India Act 1858 permanently reshape British governance?',
-            para_ref: '[5.1]',
+              'How did the armed clash at the Eureka Stockade accelerate the birth of Australian democracy?',
+            para_ref: '[3.5]',
           },
         ],
       },

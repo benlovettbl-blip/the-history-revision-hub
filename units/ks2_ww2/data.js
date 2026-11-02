@@ -2148,17 +2148,6 @@ const ks2_ww2_data = {
           {
             "step": 1,
             "para_ref": "[4.1]",
-            "date": "1939",
-            "title": "Backyard Anderson Shelters Installed",
-            "actor": "British Householders & Municipal Engineers",
-            "tag": "🛠️ SHELTER",
-            "trigger": "The government distributed over 1.5 million corrugated steel Anderson shelters, which families dug into garden soil and covered with earth for protection.",
-            "connective": "Provided immediate protection against flying shrapnel and blast waves right in family back gardens.",
-            "question": "Why was the Anderson shelter designed for self-assembly in family gardens?"
-          },
-          {
-            "step": 2,
-            "para_ref": "[4.3]",
             "date": "September 1940",
             "title": "The Blitz Hits London: 57 Consecutive Nights of Bombing",
             "actor": "Luftwaffe Bomber Fleets",
@@ -2168,8 +2157,19 @@ const ks2_ww2_data = {
             "question": "How did civilian morale withstand 57 consecutive nights of bombardment?"
           },
           {
+            "step": 2,
+            "para_ref": "[4.2]",
+            "date": "1939–1940",
+            "title": "Backyard Anderson & Indoor Morrison Shelters",
+            "actor": "British Householders & Municipal Engineers",
+            "tag": "🛠️ SHELTER",
+            "trigger": "The government distributed over 1.5 million corrugated steel Anderson shelters, which families dug into garden soil and covered with earth for protection.",
+            "connective": "Provided immediate protection against flying shrapnel and blast waves right in family back gardens.",
+            "question": "Why was the Anderson shelter designed for self-assembly in family gardens?"
+          },
+          {
             "step": 3,
-            "para_ref": "[4.5]",
+            "para_ref": "[4.3]",
             "date": "Winter 1940–1941",
             "title": "Sheltering on Underground Platforms & Rooftop Fire Watching",
             "actor": "London Underground Shelters & Fire Watchers",

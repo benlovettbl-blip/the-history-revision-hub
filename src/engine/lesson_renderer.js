@@ -6150,15 +6150,29 @@ export function renderLesson(lesson) {
           Array.isArray(lesson.causal_domino_spine.stages) &&
           lesson.causal_domino_spine.stages) ||
         [];
-      const matchedStage =
-        (decimalRef &&
+
+      // Prefer canonical 1:1 index alignment when stages count matches narrative blocks count
+      let matchedStage = null;
+      if (stagesList.length === (lesson?.narrative_blocks?.length || 0)) {
+        matchedStage = stagesList[index] || null;
+      } else if (decimalRef) {
+        matchedStage =
           stagesList.find(
             (s) =>
-              (s.para_ref && s.para_ref.includes(decimalRef)) ||
-              (s.paraRef && s.paraRef.includes(decimalRef)),
-          )) ||
-        stagesList[index] ||
-        null;
+              (s.para_ref &&
+                (s.para_ref === decimalRef ||
+                  s.para_ref === `[${decimalRef}]` ||
+                  s.para_ref.includes(`[${decimalRef}]`))) ||
+              (s.paraRef &&
+                (s.paraRef === decimalRef ||
+                  s.paraRef === `[${decimalRef}]` ||
+                  s.paraRef.includes(`[${decimalRef}]`))),
+          ) ||
+          stagesList[index] ||
+          null;
+      } else {
+        matchedStage = stagesList[index] || null;
+      }
 
       let stageDateVal = (matchedStage && matchedStage.date) || '';
       let cleanHeadingTitle = '';
