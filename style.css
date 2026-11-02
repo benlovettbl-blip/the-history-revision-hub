@@ -10343,8 +10343,13 @@ body.search-modal-open {
 
 .historical-setting-question {
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
   color: #0f172a;
+}
+
+[data-theme='dark'] .historical-setting-question,
+.dark-mode .historical-setting-question {
+  color: #f8fafc;
 }
 
 [data-theme='dark'] .historical-editorial-lede,
