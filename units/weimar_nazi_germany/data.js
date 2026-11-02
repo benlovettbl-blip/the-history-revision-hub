@@ -860,43 +860,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=F0Z74k0Vv4M",
-          "title": "Simple History: Who Ruled Germany Before Hitler? The Weimar Republic (1918–1933)",
-          "duration": "9 mins 48 secs",
+          "id": "_W6JAqg6TPk",
+          "url": "https://www.youtube.com/watch?v=_W6JAqg6TPk",
+          "title": "1919-33: The Weimar Constitution | GCSE History Revision",
+          "duration": "6 mins 11 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Comprehensive animated breakdown of the collapse of the German Empire in 1918, the Kiel naval mutiny, the Kaiser's abdication, and the fragile birth of democracy in Weimar. Recommended Watch Window: 00:00–04:30 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast, accessible animated educational summary.",
-          "viewing_task": "<ol><li><strong>[01:15] Quick Check:</strong> At which northern German naval base did sailors mutiny in late October 1918, sparking the nationwide revolution that brought down the Kaiser?</li><li><strong>[03:45] Hinge Question:</strong> How did the combination of Proportional Representation and Article 48 build a fatal structural instability into the 1919 Weimar Constitution from its very inception?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> The naval port of Kiel.</li><li><strong>Hinge Question:</strong> Proportional Representation allocated Reichstag seats based on the exact percentage of votes received, leading to dozens of splinter parties and perpetual unstable coalition governments. Meanwhile, Article 48 gave the President emergency powers to pass decrees without parliament's consent, creating a legal loophole that authoritarians and Hitler would later exploit to dismantle democracy.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Starter Hook | Tone Alert: Analytical breakdown of the Weimar Constitution, Reichstag voting, and the emergency powers granted by Article 48.",
+          "viewing_task": "[01:30] Quick Check: What was the voting system used to elect deputies to the Weimar Reichstag, and how did it encourage coalitions?\n[03:45] Disciplinary Question: Explain why Article 48 was described as a constitutional 'suicide pill' for the Republic.",
+          "model_answer": "The Weimar Constitution used Proportional Representation, where the percentage of votes cast directly determined the percentage of seats won. Because it was almost impossible for a single party to win an outright majority, governments were forced into fragile, unstable coalitions. Article 48 allowed the President to rule by emergency decree without Reichstag consent, creating a legal route to dictatorship."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=gKzZ1OWPXgk",
-          "title": "Imperial War Museums: The Treaty of Versailles & The \"Diktat\" (1919)",
-          "duration": "11 mins 20 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Detailed museum documentary analyzing the punitive terms imposed upon Germany at the Paris Peace Conference, including Article 231 (War Guilt), reparations, and territorial partition. Recommended Watch Window: 01:30–06:45 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Rigorous archival documentary utilizing primary treaty maps and Allied conference records.",
-          "viewing_task": "<ol><li><strong>[02:10] Recall:</strong> What specific article number was assigned to the \"War Guilt Clause\", and what total financial sum in gold marks was finalized for German reparations in 1921?</li><li><strong>[04:20] Explain:</strong> Explain the military and territorial restrictions imposed on Germany by the Treaty of Versailles, and why German citizens universally branded it a \"Diktat\".</li><li><strong>[06:15] Challenge:</strong> Evaluate the diplomatic dilemma facing Friedrich Ebert's government in June 1919: why were Weimar politicians compelled to sign a treaty they loathed, and how did this permanently cripple their domestic legitimacy?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Article 231; reparations were finalized at 132 billion gold marks (£6.6 billion).</li><li><strong>Explain:</strong> The treaty stripped Germany of 13% of its European land (including Alsace-Lorraine and the Polish Corridor), all overseas colonies, and key industrial areas. The army was slashed to 100,000 volunteers, conscription was banned, tanks and warplanes were outlawed, and the Rhineland was demilitarized. Germans called it a \"Diktat\" (dictated peace) because German delegates were excluded from negotiations and forced to sign under threat of immediate Allied military invasion.</li><li><strong>Challenge:</strong> Ebert was informed by Field Marshal Hindenburg that the German military was completely incapable of resisting an Allied invasion across the Rhine. Refusing to sign meant the immediate military dismemberment and physical conquest of Germany. By signing to preserve the nation, democratic leaders were permanently scapegoated by nationalists as the \"November Criminals\" who had betrayed the army.</li></ol>"
+          "id": "vrYhLNQMRro",
+          "url": "https://www.youtube.com/watch?v=vrYhLNQMRro",
+          "title": "The Treaty of Versailles, What Did the Big Three Want? | Simple History",
+          "duration": "2 mins 48 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:48 | Lesson Phase: Contextual Evidence | Tone Alert: Concise animated summary of the conflicting motivations of Clemenceau, Lloyd George, and Wilson in 1919.",
+          "viewing_task": "[00:50] Quick Check: Why did Georges Clemenceau demand the harshest possible terms against Germany at the Paris Peace Conference?\n[02:10] Analysis: How did the final Treaty terms set up German resentment regarding the 'Diktat' and War Guilt clause?",
+          "model_answer": "Clemenceau sought to permanently cripple Germany's military and economy to guarantee French security, given the devastation of northeastern France in WW1. The Germans felt betrayed because they were excluded from negotiations (a 'Diktat') and forced to sign Article 231 taking sole responsibility for causing the war."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=AUZIYQFM7mQ",
-          "title": "DW History: The German Revolution of 1918 & The \"Dolchstoßlegende\"",
-          "duration": "7 mins 15 secs",
-          "pathway": "Primary Archive",
-          "teacher_guidance": "Examines how Field Marshal Hindenburg and General Ludendorff fabricated the \"Stab in the Back\" myth (Dolchstoßlegende) to absolve the imperial officer corps of military defeat. Recommended Watch Window: 00:45–05:30 • Lesson Phase: Source Analysis & Historiographical Deconstruction. Tone Alert: Critical German documentary examining how nationalist propaganda weaponized post-war trauma.",
-          "viewing_task": "<ol><li><strong>[01:20] Recall:</strong> What German term was used to describe the conspiracy theory that the army was never defeated on the battlefield, but betrayed on the home front?</li><li><strong>[03:10] Explain:</strong> Which social and political groups did right-wing militarists and nationalist newspapers label the \"November Criminals\", and why?</li><li><strong>[04:45] Challenge:</strong> Analyze how the \"Stab in the Back\" myth served as an indispensable propaganda weapon for right-wing paramilitaries and the nascent Nazi Party throughout the 1920s.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The <em>Dolchstoßlegende</em> (\"Stab-in-the-back myth\").</li><li><strong>Explain:</strong> Nationalists labeled the socialist politicians (SPD), liberal reformers, and Jewish leaders who established the republic and signed the armistice as \"November Criminals\", claiming they had deliberately sabotaged the war effort through home-front strikes.</li><li><strong>Challenge:</strong> The myth provided a soothing lie for millions of traumatized Germans unable to accept battlefield defeat. By depicting the democratic republic as an illegitimate creation born of domestic treason, the myth gave Adolf Hitler and right-wing extremists a powerful weapon to justify violent opposition to Weimar democracy.</li></ol>"
-        },
-        {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/make-germany-pay-twentieth-century-history/",
-          "title": "BBC / ERA: Make Germany Pay (Twentieth Century History)",
-          "duration": "20 mins 00 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Authoritative BBC archival documentary examining the abdication of Kaiser Wilhelm II, street fighting in Berlin, and the signing of the Treaty of Versailles. Recommended Watch Window: 02:00–09:30 • Lesson Phase: High-Attainer Stretch & Primary Archival Investigation. Tone Alert: Classic BBC educational documentary featuring primary newsreels.",
-          "viewing_task": "<ol><li><strong>[03:15] Recall:</strong> On what date did Kaiser Wilhelm II formally abdicate his imperial throne and flee across the border into neutral Holland?</li><li><strong>[06:00] Explain:</strong> How did the Allied naval blockade, which continued until July 1919, intensify civilian starvation and coerce German signatures at Versailles?</li><li><strong>[08:40] Challenge:</strong> Evaluate the contrasting peace aims of Lloyd George (Britain), Clemenceau (France), and Woodrow Wilson (USA): why was the final treaty a compromise that satisfied none of them?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> 9 November 1918.</li><li><strong>Explain:</strong> The British Royal Navy maintained its tight blockade, cutting off essential grain and fertilizer shipments. With hundreds of thousands of German civilians suffering from malnutrition and facing economic collapse, the Weimar government had zero leverage to resist Allied terms.</li><li><strong>Challenge:</strong> Clemenceau sought to permanently cripple Germany to ensure French border security; Wilson advocated idealist self-determination and the League of Nations; Lloyd George wanted Germany punished to appease British voters but economically viable as a trading partner. The resulting treaty was harsh enough to create bitter German resentment, yet insufficiently debilitating to prevent Germany from rising again as a vengeful power.</li></ol>"
+          "id": "vO-_HXO7HwY",
+          "url": "https://www.youtube.com/watch?v=vO-_HXO7HwY",
+          "title": "Ten Minute History: The Weimar Republic and Nazi Germany | History Matters",
+          "duration": "9 mins 59 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:00 | Lesson Phase: Synoptic Overview | Tone Alert: Rapid, dryly humorous animated overview tracking the German Revolution, abdication of the Kaiser, and the Dolchstoßlegende (stab-in-the-back myth).",
+          "viewing_task": "[01:10] Key Recall: Why did German military commanders like Ludendorff shift blame for the 1918 defeat onto civilian politicians in Berlin?\n[02:40] Historical Inference: How did the 'November Criminals' myth undermine civilian trust in the new Weimar Republic from day one?",
+          "model_answer": "Ludendorff and Hindenburg sought to protect the Prussian military elite's honour by falsely claiming the German army remained undefeated in the field and was 'stabbed in the back' by socialists and politicians at home. This propaganda branded the democratic founders as 'November Criminals', creating deep, enduring delegitimisation of the Republic."
         }
       ],
       "pair_share": {
@@ -1250,43 +1243,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=cFLDrPfDGec",
-          "title": "Simple History: Weimar Republic – The Freikorps & Paramilitary Violence (1919–1920)",
-          "duration": "3 mins 18 secs",
+          "id": "FxeWA_AV3bo",
+          "url": "https://www.youtube.com/watch?v=FxeWA_AV3bo",
+          "title": "Jan 1919: The 'Spartacist' Revolt | GCSE History Revision | Weimar & Nazi Germany",
+          "duration": "3 mins 15 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated explainer tracking the demobilized WWI soldiers who formed armed right-wing volunteer units (Freikorps) to crush communist uprisings in Berlin. Recommended Watch Window: 00:00–03:18 (Full Clip) • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview of street violence.",
-          "viewing_task": "<ol><li><strong>[00:45] Quick Check:</strong> Who was the SPD Defence Minister who allied with General Groener to deploy the Freikorps against communist revolutionaries in January 1919?</li><li><strong>[02:15] Hinge Question:</strong> Why did the Weimar government's reliance on right-wing Freikorps paramilitaries create a fatal paradox for the democratic republic?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Gustav Noske.</li><li><strong>Hinge Question:</strong> The Freikorps were monarchists who openly despised democracy, flew imperial flags, and hated the republic. Using them to police Berlin gave military legitimacy to armed extremists who aimed to overthrow the very constitution they were temporarily hired to protect (as demonstrated during the Kapp Putsch in March 1920).</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:15 | Lesson Phase: Left-Wing Threat | Tone Alert: Focuses on the January 1919 Berlin uprising led by Rosa Luxemburg and Karl Liebknecht, and Ebert's reliance on the Freikorps.",
+          "viewing_task": "[00:55] Recall: Who were the leaders of the Spartacist League, and what type of government did they seek to establish?\n[02:15] Cause & Consequence: Why did President Ebert turn to the right-wing Freikorps to crush the Spartacists, and what dangerous precedent did this set?",
+          "model_answer": "The Spartacists were led by Rosa Luxemburg and Karl Liebknecht, seeking a communist council republic modelled on Soviet Russia. Ebert made a pact with the army and nationalist Freikorps paramilitaries because the regular army was demoralised; this set a fatal precedent of relying on violent anti-democratic soldiers to defend a democratic state."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=7_hL44v4o44",
-          "title": "The History Channel: The 1923 German Hyperinflation Catastrophe",
-          "duration": "8 mins 45 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Detailed documentary chronicling the occupation of the Ruhr by French and Belgian troops in January 1923, passive resistance, and the printing of trillions of paper marks. Recommended Watch Window: 01:15–06:30 • Lesson Phase: Guided Instruction & Economic Investigation. Tone Alert: Dramatic documentary examining hyperinflationary collapse.",
-          "viewing_task": "<ol><li><strong>[01:45] Recall:</strong> Why did 60,000 French and Belgian troops march into the industrial Ruhr Valley in January 1923?</li><li><strong>[03:50] Explain:</strong> Explain how the Weimar government's policy of \"passive resistance\"—paying striking Ruhr workers with freshly printed banknotes—triggered uncontrollable hyperinflation.</li><li><strong>[06:00] Challenge:</strong> Compare the economic winners and losers of hyperinflation: why were the German middle classes (Mittelstand) permanently alienated from democracy?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Germany defaulted on its scheduled reparations deliveries of timber and coal to France and Belgium.</li><li><strong>Explain:</strong> The government ordered Ruhr workers to strike and halt all coal extraction, promising to pay their wages. With no industrial production or tax revenue coming in, the government simply operated printing presses around the clock, causing the mark to lose all value until billions and trillions of marks were required to buy basic food.</li><li><strong>Challenge:</strong> Big industrialists and landowners with heavy debts paid off loans with worthless paper marks. Conversely, middle-class citizens who had spent decades accumulating fixed-interest savings, government war bonds, and pensions saw their lifetime wealth wiped out overnight. They blamed the democratic republic for their ruin, making them fertile ground for Nazi radicalization.</li></ol>"
+          "id": "Nk_AZtB5yKc",
+          "url": "https://www.youtube.com/watch?v=Nk_AZtB5yKc",
+          "title": "1920: The Kapp Putsch (& Ongoing Political Violence) | GCSE History Revision",
+          "duration": "4 mins 18 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:00 | Lesson Phase: Right-Wing Threat | Tone Alert: Examines Wolfgang Kapp and General Lüttwitz's march on Berlin, the army's refusal to fire ('Reichswehr does not fire on Reichswehr'), and the general strike.",
+          "viewing_task": "[01:20] Key Question: When the Weimar government ordered the army to defend Berlin against the Kapp Putsch, how did General von Seeckt respond?\n[02:50] Evaluation: How was the Kapp Putsch ultimately defeated, and what did it reveal about the loyalty of the German civil service and army?",
+          "model_answer": "General von Seeckt famously declared 'Reichswehr does not fire on Reichswehr', refusing to deploy troops against right-wing former soldiers. The putsch was defeated by a nationwide general strike called by Berlin trade unions and workers that cut transport, water, and power, proving the army could not be relied upon to defend democracy."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=s4N19L7G2aQ",
-          "title": "British Pathé: The Kapp Putsch & Freikorps in Berlin (March 1920)",
-          "duration": "4 mins 10 secs",
-          "pathway": "Primary Archive",
-          "teacher_guidance": "Rare authentic newsreel footage showing Wolfgang Kapp and General von Lüttwitz marching Freikorps brigades into Berlin, while the army refused to fire on fellow soldiers. Recommended Watch Window: 00:30–03:45 • Lesson Phase: Primary Source Deconstruction. Tone Alert: Historic silent newsreel showing troops flying imperial naval ensigns.",
-          "viewing_task": "<ol><li><strong>[01:00] Recall:</strong> What famous phrase did General von Seeckt use when President Ebert ordered the regular German army to defend Berlin against the Freikorps in March 1920?</li><li><strong>[02:30] Explain:</strong> How did the Berlin working class and trade unions defeat the Kapp Putsch in just four days without firing a shot?</li><li><strong>[03:30] Challenge:</strong> What did the contrasting judicial treatment of right-wing putschists versus left-wing rebels reveal about the political bias of the Weimar judiciary?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> \"Reichswehr does not fire on Reichswehr\" (<em>Truppe schießt nicht auf Truppe</em>).</li><li><strong>Explain:</strong> The SPD government called a nationwide general strike. Over 12 million workers shut down water, gas, electricity, railways, and telegraphs, completely paralyzing Berlin and forcing Wolfgang Kapp to flee to Sweden within 100 hours.</li><li><strong>Challenge:</strong> The judiciary was staffed by imperial judges hostile to democracy. Left-wing rebels were executed or given severe prison terms, whereas right-wing nationalist putschists and political assassins (like those who murdered Erzberger and Rathenau) received lenient sentences, pardons, or honorable acquittals, showing that the legal system actively sheltered enemies of the republic.</li></ol>"
-        },
-        {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/make-germany-pay-twentieth-century-history/",
-          "title": "BBC History File / ERA: The 1923 Crisis – Ruhr Occupation & Hyperinflation",
-          "duration": "22 mins 10 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "In-depth BBC educational documentary examining how the 1923 Ruhr crisis brought Germany to the brink of total social disintegration and violent civil war. Recommended Watch Window: 04:00–11:00 • Lesson Phase: High-Attainer Stretch & Macroeconomics. Tone Alert: Authoritative archival documentary with primary interviews.",
-          "viewing_task": "<ol><li><strong>[04:40] Recall:</strong> What was the price of a single loaf of bread in Berlin by November 1923 at the height of hyperinflation?</li><li><strong>[07:15] Explain:</strong> Explain how hyperinflation destroyed ordinary daily commerce, forcing Germans to resort to barter, wheelbarrows of cash, and burning banknotes for warmth.</li><li><strong>[09:50] Challenge:</strong> How did the 1923 crisis create the perfect conditions for Adolf Hitler to launch the Munich Beer Hall Putsch in November 1923?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Approximately 200 billion marks.</li><li><strong>Explain:</strong> Prices doubled every few hours; workers were paid twice daily and rushed to bakeries before prices jumped. Paper money became cheaper than wallpaper or firewood, and shopkeepers refused currency entirely, demanding payment in eggs, butter, or shoes.</li><li><strong>Challenge:</strong> The complete collapse of the currency and the humiliation of the French occupation convinced right-wing extremists that the Weimar Republic was bankrupt and ready to collapse. Hitler believed that Bavarian discontent had reached fever pitch, convincing him that the public and army would rally behind an armed march on Berlin.</li></ol>"
+          "id": "O2CIeNANQMM",
+          "url": "https://www.youtube.com/watch?v=O2CIeNANQMM",
+          "title": "1923: Hyperinflation | GCSE History | Weimar Germany",
+          "duration": "3 mins 49 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:49 | Lesson Phase: Economic Crisis | Tone Alert: Documents the French occupation of the Ruhr, passive resistance, endless paper money printing, and the total collapse of the Mark.",
+          "viewing_task": "[01:10] Cause: Why did French and Belgian troops occupy the Ruhr in January 1923?\n[02:30] Consequence: Which social class suffered the most devastating economic loss during the 1923 hyperinflation, and why?",
+          "model_answer": "France and Belgium invaded the industrial Ruhr because Germany failed to deliver promised timber and coal reparations installments. The German middle class (Mittelstand) suffered worst because lifelong savings, war bonds, and fixed pension incomes became completely worthless overnight, while debts and mortgages held by big industrialists were wiped out."
         }
       ],
       "learning_objectives": {
@@ -3123,43 +3109,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=F0Z74k0Vv4M",
-          "title": "Simple History: Gustav Stresemann & The Dawes Plan (1924–1929)",
-          "duration": "4 mins 15 secs",
+          "id": "vWwG2VKDFpY",
+          "url": "https://www.youtube.com/watch?v=vWwG2VKDFpY",
+          "title": "Stresemann at Home: Rentenmark to Reichsmark, Dawes Plan & Young Plan | GCSE History",
+          "duration": "4 mins 58 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated overview of Gustav Stresemann's leadership as Chancellor and Foreign Minister: introducing the Rentenmark, the Dawes Plan (1924), and the Young Plan (1929). Recommended Watch Window: 00:00–04:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast, accessible animated summary of economic stabilization.",
-          "viewing_task": "<ol><li><strong>[00:55] Quick Check:</strong> What new temporary currency was introduced by Gustav Stresemann in November 1923, backed by German industrial and agricultural land?</li><li><strong>[02:30] Hinge Question:</strong> Why did Stresemann famously warn that Germany's economic prosperity in the late 1920s was merely \"dancing on the edge of a volcano\"?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> The Rentenmark (later replaced by the Reichsmark).</li><li><strong>Hinge Question:</strong> Germany's economic recovery relied almost entirely on short-term American bank loans under the Dawes Plan. Stresemann recognized that if the United States experienced an economic crisis and recalled those loans, Germany's entire economy would instantly collapse.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:45 | Lesson Phase: Domestic Economic Recovery | Tone Alert: Explains how Gustav Stresemann halted hyperinflation by introducing the Rentenmark and negotiating US loans under the Dawes Plan.",
+          "viewing_task": "[01:15] Mechanism: How did Stresemann restore monetary confidence through the temporary Rentenmark in late 1923?\n[03:10] Analysis: How did the Dawes Plan (1924) and Young Plan (1929) resolve Germany's reparations burden?",
+          "model_answer": "Stresemann replaced the worthless paper mark with the Rentenmark, tied to Germany's agricultural and industrial land assets rather than gold reserves. The Dawes Plan introduced American loans of 800 million marks and restructured reparations payments to scale with economic capacity, later extended and reduced by the Young Plan in 1929."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=AUZIYQFM7mQ",
-          "title": "DW History: Weimar's Golden Twenties – Economic Miracle on Borrowed Time",
-          "duration": "8 mins 20 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Scholarly documentary examining the influx of American capital, the construction of modern public housing, schools, and hospitals, and the underlying weaknesses in agriculture. Recommended Watch Window: 01:15–06:45 • Lesson Phase: Guided Instruction & Economic Analysis. Tone Alert: Rigorous economic analysis balancing urban prosperity with rural distress.",
-          "viewing_task": "<ol><li><strong>[01:50] Recall:</strong> How many billion gold marks in American loans flooded into Germany under the Dawes Plan between 1924 and 1929?</li><li><strong>[03:40] Explain:</strong> Explain the key terms of the 1924 Dawes Plan and the 1929 Young Plan regarding reparations installments and Allied supervision.</li><li><strong>[05:50] Challenge:</strong> Evaluate why German farmers and small shopkeepers experienced an agricultural depression throughout the late 1920s, even while big industrial cities boomed.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Approximately 25 billion gold marks ($800 million).</li><li><strong>Explain:</strong> The Dawes Plan scaled down annual reparations to manageable installments starting at 1 billion marks, provided an immediate 800 million mark US loan, and secured the French evacuation of the Ruhr. The Young Plan reduced total reparations from £6.6 billion to £2 billion, extending payment over 59 years.</li><li><strong>Challenge:</strong> Global agricultural overproduction caused grain and food prices to plummet worldwide from 1925 onward. While urban factory workers gained higher wages and modern apartments, farmers faced crushing debts, mortgage foreclosures, and falling profits, leaving rural Germany deeply resentful of the Weimar government and eager to vote for the Nazi Party.</li></ol>"
+          "id": "OO3i2zEf4HQ",
+          "url": "https://www.youtube.com/watch?v=OO3i2zEf4HQ",
+          "title": "Stresemann Abroad: Locarno Treaties, League of Nations & Kellogg-Briand Pact",
+          "duration": "4 mins 18 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:18 | Lesson Phase: Foreign Policy Achievements | Tone Alert: Explores Stresemann's diplomatic reconciliation with Western powers, ending Germany's diplomatic isolation.",
+          "viewing_task": "[01:05] Key Term: What did Germany formally agree to in the 1925 Locarno Treaties regarding its western borders?\n[02:40] Significance: Why was Germany's admission to the League of Nations in 1926 a vital diplomatic triumph for Stresemann?",
+          "model_answer": "In the 1925 Locarno Treaties, Germany voluntarily accepted its western borders with France and Belgium, renouncing future territorial invasion and promising the permanent demilitarisation of the Rhineland. Admission to the League of Nations with a permanent Council seat restored Germany's status as an equal great power on the world stage."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=gKzZ1OWPXgk",
-          "title": "Crash Course: Interwar Diplomacy, Locarno (1925) & The League of Nations (1926)",
-          "duration": "10 mins 15 secs",
-          "pathway": "Diplomatic Achievement",
-          "teacher_guidance": "Examines Stresemann’s foreign policy successes: the 1925 Locarno Treaties, Germany’s admission to the League of Nations (1926), and the 1928 Kellogg-Briand Pact. Recommended Watch Window: 02:00–07:30 • Lesson Phase: Diplomatic Source Investigation. Tone Alert: Lively geopolitical analysis tracing Germany's return to great-power status.",
-          "viewing_task": "<ol><li><strong>[02:40] Recall:</strong> Which international borders did Germany formally guarantee and accept at the Locarno Conference in 1925?</li><li><strong>[04:50] Explain:</strong> How did Germany's admission to the League of Nations with a permanent Council seat in 1926 restore its international status as a respected great power?</li><li><strong>[06:40] Challenge:</strong> Why did hardline nationalists like Adolf Hitler and Alfred Hugenberg furiously attack the Locarno Treaties and the Young Plan as acts of national betrayal?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The western borders with France and Belgium (renouncing any future claim to Alsace-Lorraine and accepting the demilitarization of the Rhineland).</li><li><strong>Explain:</strong> Germany had been treated as an international outcast since 1919. Joining the League with a permanent seat put Germany on an equal diplomatic footing with Britain and France, secured the early withdrawal of Allied occupation troops from the Rhineland, and proved treaty revision could be achieved peacefully.</li><li><strong>Challenge:</strong> Nationalists refused to accept any agreement that recognized the Treaty of Versailles. They argued that accepting the western border permanently abandoned German claims, and attacked the Young Plan for committing future generations of Germans to pay reparations until 1988, launching a high-profile national referendum campaign that gave Hitler national prominence.</li></ol>"
-        },
-        {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/hitlers-rise-the-colour-films-the-treaty-of-versailles-channel-4/",
-          "title": "Channel 4 / ERA: Stresemann and the Illusion of Stability (1924–1929)",
-          "duration": "48 mins 00 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Colour archival footage and historian interviews exploring Berlin's glitz, cabaret nightlife, political assassinations, and Stresemann's sudden death in October 1929. Recommended Watch Window: 18:00–26:00 • Lesson Phase: High-Attainer Stretch & Historiographical Evaluation. Tone Alert: Rare colourised archival film capturing the contrast between urban luxury and working-class reality.",
-          "viewing_task": "<ol><li><strong>[19:15] Recall:</strong> In what month and year did Gustav Stresemann suffer a fatal stroke, just weeks before the Wall Street Crash?</li><li><strong>[22:00] Explain:</strong> How did the 1928 Reichstag election results—where pro-Weimar parties won 73% of the vote and the Nazis won only 2.6% (12 seats)—create a false sense of democratic triumph?</li><li><strong>[24:45] Challenge:</strong> Historiographical debate: Was the Weimar Republic genuinely stabilizing and maturing into a durable democracy between 1924 and 1929, or was it merely enjoying a temporary reprieve that masked unhealed political divisions?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> October 1929 (dying on 3 October 1929 at age 51).</li><li><strong>Explain:</strong> With inflation halted, wages rising, and international prestige restored, extremist parties were starved of public outrage. Voters abandoned radical paramilitaries and supported the SPD, Centre Party, and DDP, creating the impression that parliamentary democracy had permanently overcome its post-war birth pangs.</li><li><strong>Challenge:</strong> Optimist historians point to falling political violence, vibrant cultural flowering, and soaring social housing construction. However, structuralist historians emphasize that the traditional conservative elites (civil service, judiciary, military, and industrialists) never reconciled with the republic, coalition governments remained paralyzed by petty rivalries, and the election of monarchist Field Marshal Hindenburg as President in 1925 meant that the supreme office was held by a man who despised democracy, waiting for an opportunity to restore authoritarian rule.</li></ol>"
+          "id": "gYc8fX527PQ",
+          "url": "https://www.youtube.com/watch?v=gYc8fX527PQ",
+          "title": "1923-29: Stresemann's Strategy | GCSE History Revision | Weimar & Nazi Germany",
+          "duration": "6 mins 27 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Synoptic Evaluation | Tone Alert: Evaluates the strengths and fatal hidden fragilities of Stresemann's 'Golden Twenties' recovery.",
+          "viewing_task": "[03:20] Quote Analysis: What did Stresemann mean when he warned that Germany's economic recovery was 'dancing on a volcano'?\n[05:00] Historiographical Verdict: To what extent was the Weimar Republic truly stabilised between 1924 and 1929?",
+          "model_answer": "Stresemann warned Germany was 'dancing on a volcano' because its industrial resurgence was financed by short-term US loans that Wall Street could recall at any moment. While political violence dropped and culture flourished, underlying structural unemployment remained high and right-wing nationalists never accepted the Republic."
         }
       ],
       "pair_share": {
@@ -3516,43 +3495,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=k_lG71qF32s",
-          "title": "Cinematic: Babylon Berlin (2017) – Weimar Golden Twenties, Cabarets & Underworld",
-          "duration": "2 mins 15 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Award-winning historical feature series clip capturing the dazzling, feverish energy of 1920s Berlin: the Moka Efti cabaret, Charleston dancing, avant-garde fashions, and the shadowy underworld of political extremism. Recommended Watch Window: 00:00–02:15 (Full Clip) • Lesson Phase: Cinematic Starter Hook. Discussion Prompt: Cultural liberation and social tension.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the dizzying contrast between the euphoric Charleston dancing at the Moka Efti club, the underground criminal underworld, and the political riots outside in the streets. How does this clip capture why the \"Golden Twenties\" was an era of unprecedented cultural liberation that sat atop an erupting volcano of political resentment?</p>",
-          "model_answer": "<p><strong>Teacher Discussion Pointers:</strong> The clip vividly dramatizes the intense duality of Weimar Berlin: the lifting of imperial censorship unleashed dazzling modernism, jazz music, cabaret satire, and female emancipation, yet this cosmopolitan bubble was deeply hated by conservative, religious, and rural Germans who saw it as degenerate decadence, creating a cultural civil war that Hitler would exploit.</p>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=-j52Dx5wUFk",
-          "title": "The History Teacher: Changes for Workers, Women and Culture in the 1920s",
-          "duration": "6 mins 12 secs",
+          "id": "hSR3yehNYSk",
+          "url": "https://www.youtube.com/watch?v=hSR3yehNYSk",
+          "title": "The German 'New Woman', 1918-1933 | GCSE History | Weimar Germany",
+          "duration": "5 mins 34 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Concise Edexcel GCSE syllabus revision covering progressive social reforms, the \"New Woman\" phenomenon, and the explosion of avant-garde culture. Recommended Watch Window: 00:00–04:30 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced revision lecture specifically tailored to Paper 3 exam criteria.",
-          "viewing_task": "<ol><li><strong>[01:10] Quick Check:</strong> What landmark 1927 social welfare law provided unemployment insurance and benefits to over 17 million German workers?</li><li><strong>[03:15] Hinge Question:</strong> How did the visible emergence of the \"New Woman\" (short hair, smoking, working in offices) provoke deep moral panic among conservative, rural, and church communities?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> The Unemployment Insurance Act of 1927.</li><li><strong>Hinge Question:</strong> Traditionalists and conservative churches argued that the \"New Woman\" was abandoning the traditional family, driving down the birth rate, and threatening German male identity during an era of economic instability, viewing female liberation as decadent and un-German.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Social Transformation | Tone Alert: Examines women's suffrage under the 1919 Constitution, female employment in public sectors, and the emerging cultural archetype of the 'Neue Frau'.",
+          "viewing_task": "[01:10] Political Rights: What rights did Article 109 of the Weimar Constitution grant to German women in 1919?\n[03:15] Cultural Friction: Why did traditional conservatives and right-wing parties object to the modern 'New Woman' lifestyle in 1920s cities?",
+          "model_answer": "Article 109 granted women equal legal rights with men, including full voting rights at age 20 and equal civil service entry. Traditionalists and church leaders attacked the 'New Woman'—with short bobbed hair, cigarette smoking, and financial autonomy—for allegedly abandoning motherhood, driving down the birth rate, and corrupting German moral family values."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=bF8h8K2kSfs",
-          "title": "DW Arts: The Bauhaus Design Revolution in Dessau (Walter Gropius)",
-          "duration": "5 mins 40 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Examines Walter Gropius, the Bauhaus school of art and architecture, the principle of \"form follows function\", and the radical shift away from ornate imperial styles. Recommended Watch Window: 00:45–05:15 • Lesson Phase: Guided Instruction & Architectural Analysis. Tone Alert: Engaging arts documentary showcasing Bauhaus design.",
-          "viewing_task": "<ol><li><strong>[01:15] Recall:</strong> In which German city did Walter Gropius establish the famous purpose-built Bauhaus school building in 1925?</li><li><strong>[02:40] Explain:</strong> What core design philosophy was summarized by the phrase \"form follows function\", and how did Bauhaus architecture reflect the democratic, egalitarian ethos of the Weimar Republic?</li><li><strong>[04:20] Challenge:</strong> Why did nationalist politicians and traditional German architects furiously condemn Bauhaus buildings as \"un-German\" and \"Cultural Bolshevism\"?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Dessau (having relocated from Weimar).</li><li><strong>Explain:</strong> \"Form follows function\" meant that buildings and furniture should be designed purely for practical human use, utilizing modern industrial materials (steel, glass, concrete) rather than imperial ornament, producing clean, affordable, hygienic housing for ordinary working families.</li><li><strong>Challenge:</strong> Right-wing nationalists associated flat roofs, geometric minimalism, and international modernism with socialist egalitarianism and foreign corruption, demanding traditional Germanic styles and attacking Bauhaus as a communist plot to destroy German culture.</li></ol>"
+          "id": "Rv0Pz_YEk9M",
+          "url": "https://www.youtube.com/watch?v=Rv0Pz_YEk9M",
+          "title": "Cultural Changes in Weimar Germany, 1920s | GCSE History | Weimar & Nazi Germany",
+          "duration": "9 mins 42 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Artistic Modernism | Tone Alert: Surveys the explosion of creative freedom after the abolition of Imperial censorship, focusing on Expressionism, Otto Dix, and Fritz Lang's Metropolis.",
+          "viewing_task": "[01:45] Innovation: How did the abolition of wartime Imperial censorship unleash radical experimentation in German art and theatre?\n[04:20] Critical Realism: How did 'New Objectivity' (Neue Sachlichkeit) painters like Otto Dix and George Grosz critique post-war society?",
+          "model_answer": "The removal of censorship allowed avant-garde creators to confront raw social reality, satirise authority, and explore dark psychological themes. Painters like Otto Dix portrayed mutilated war veterans begging in streets alongside wealthy corrupt war profiteers, stripping away patriotic romance to reveal the grotesque social inequalities of Weimar Germany."
         },
         {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/hitlers-rise-the-colour-films-the-treaty-of-versailles-channel-4/",
-          "title": "Channel 4 / ERA: Expressionism, Otto Dix & Cultural Polarization",
-          "duration": "48 mins 00 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Examines the brutal, satirical paintings of Otto Dix and George Grosz (Neue Sachlichkeit), Berlin cabaret satire, and the growing chasm between cosmopolitan Berlin and the conservative countryside. Recommended Watch Window: 28:00–36:00 • Lesson Phase: High-Attainer Stretch & Visual Art Analysis. Tone Alert: Rich cultural documentary featuring artwork depicting wounded war veterans.",
-          "viewing_task": "<ol><li><strong>[29:30] Recall:</strong> Which two famous \"New Objectivity\" (*Neue Sachlichkeit*) painters depicted disfigured WWI amputees begging outside luxury Berlin nightclubs?</li><li><strong>[32:15] Explain:</strong> Why did Berlin become celebrated worldwide as the cultural capital of tolerance, cabaret satire, and avant-garde freedom during the late 1920s?</li><li><strong>[34:40] Challenge:</strong> How did right-wing newspapers and the Nazi Party exploit public disgust with Berlin's modern culture to attract conservative, religious voters?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Otto Dix and George Grosz.</li><li><strong>Explain:</strong> The abolition of imperial censorship under Article 118 unleashed an explosion of artistic experimentation. Berlin became a haven for playwrights (Bertolt Brecht), scientists (Albert Einstein), jazz musicians, and pioneering sexologists, offering unprecedented personal freedom.</li><li><strong>Challenge:</strong> Rural and small-town Germans viewed Berlin as a cesspool of moral depravity and unpatriotic decadence. The visual art of Grosz and Dix—which stripped away patriotic myths of wartime heroism—infuriated military veterans, allowing Hitler to present National Socialism as a holy crusade to cleanse German culture of degenerate filth.</li></ol>"
+          "type": "youtube",
+          "id": "Saa1UxNZIx8",
+          "url": "https://www.youtube.com/watch?v=Saa1UxNZIx8",
+          "title": "Weimar Culture: Art, Architecture & Bauhaus | GCSE History",
+          "duration": "3 mins 54 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:54 | Lesson Phase: Bauhaus Movement | Tone Alert: Focuses on Walter Gropius, the Bauhaus school of design in Weimar and Dessau, and functionalist modernist architecture.",
+          "viewing_task": "[01:00] Design Philosophy: What was the central principle of Walter Gropius and the Bauhaus design movement?\n[02:45] Cultural Polarization: Why did conservative nationalists view Bauhaus architecture and modern culture as 'un-German' and degenerate?",
+          "model_answer": "The Bauhaus philosophy was 'art into industry' and 'form follows function'—rejecting ornate imperial decoration in favour of clean geometric lines, steel, and glass suited to mass production. Right-wing traditionalists despised it as foreign, cosmopolitan, and communist-inspired, demanding a return to traditional Germanic pitched roofs and neo-classical styles."
         }
       ],
       "learning_objectives": {
@@ -5372,43 +5344,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=W_e8K3z9Pzs",
-          "title": "Simple History: The Early Nazi Party & Anton Drexler (1919–1922)",
-          "duration": "3 mins 50 secs",
+          "id": "5HFMQYN11P8",
+          "url": "https://www.youtube.com/watch?v=5HFMQYN11P8",
+          "title": "24th February 1920: Hitler Announces the 25 Point Programme | HistoryPod",
+          "duration": "2 mins 36 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Examines how corporal Adolf Hitler was sent as an army intelligence spy to investigate Anton Drexler's German Workers' Party (DAP) in a Munich beer cellar in September 1919. Recommended Watch Window: 00:00–03:50 (Full Clip) • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview tracing the party's early evolution.",
-          "viewing_task": "<ol><li><strong>[00:45] Quick Check:</strong> What was the original name of the party founded by Anton Drexler in Munich in January 1919?</li><li><strong>[02:15] Hinge Question:</strong> How did the 25-Point Programme cleverly combine extreme nationalist territorial demands with populist socialist appeals?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> The German Workers' Party (<em>Deutsche Arbeiterpartei</em> or DAP).</li><li><strong>Hinge Question:</strong> It demanded the immediate revocation of the Treaty of Versailles and the creation of a \"Greater Germany\", while simultaneously promising the confiscation of war profits, profit-sharing in heavy industries, and the nationalization of department stores, appealing to veterans and small shopkeepers alike.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:36 | Lesson Phase: Party Ideology | Tone Alert: Outlines the founding platform of the NSDAP at the Hofbräuhaus in Munich, combining radical antisemitism, anti-Versailles revanchism, and national socialism.",
+          "viewing_task": "[00:45] Key Fact: Under what name was the Nazi party originally founded by Anton Drexler in January 1919?\n[01:50] Core Demands: Identify two major demands outlined in the 25 Point Programme of February 1920.",
+          "model_answer": "The party was originally founded as the German Workers' Party (DAP) by Anton Drexler. Major demands in the 25 Point Programme included the total revocation of the Treaty of Versailles, the unification of all Germans in a Greater Germany (Großdeutschland), and the complete denial of German citizenship to Jews."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Kz8e_P8kW1s",
-          "title": "DW Documentary: Hitler’s Early Munich Years & The 25-Point Programme",
-          "duration": "7 mins 10 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Detailed documentary exploring Hitler's oratory in Munich beer halls, his adoption of the swastika emblem, and his takeover of party leadership in July 1921. Recommended Watch Window: 01:00–05:45 • Lesson Phase: Guided Instruction & Dual-Coding. Tone Alert: Critical historical analysis from Deutsche Welle.",
-          "viewing_task": "<ol><li><strong>[01:30] Recall:</strong> What ancient symbol did Hitler design and adopt as the official party emblem on a red-and-white background in 1920?</li><li><strong>[03:10] Explain:</strong> How did Hitler successfully oust Anton Drexler in July 1921 to secure the title of sole party chairman with dictatorial powers (<em>Führerprinzip</em>)?</li><li><strong>[04:50] Challenge:</strong> Evaluate the influence of Italian Fascist dictator Benito Mussolini's October 1922 \"March on Rome\" upon Adolf Hitler and Bavarian right-wing extremists.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The Swastika (<em>Hakenkreuz</em> or hooked cross).</li><li><strong>Explain:</strong> Recognizing that his crowd-pulling speeches were the party's sole financial asset, Hitler threatened to resign permanently unless he was granted absolute executive power over party policy, finances, and propaganda, forcing the committee to abolish democratic votes and accept the Leader Principle (*Führerprinzip*).</li><li><strong>Challenge:</strong> Mussolini's dramatic seizure of power proved that an armed paramilitary march on a national capital could successfully intimidate a government into surrendering power without a protracted war, convincing Hitler that a similar march from Munich to Berlin could overthrow the Weimar Republic in 1923.</li></ol>"
+          "id": "9fkPOpyNVJ8",
+          "url": "https://www.youtube.com/watch?v=9fkPOpyNVJ8",
+          "title": "The Early Years of the Nazi Party 1919-1923 | GCSE History",
+          "duration": "2 mins 34 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:34 | Lesson Phase: Hitler's Leadership & SA | Tone Alert: Explains Hitler's oratory skills, the creation of the SA (Brownshirts) under Ernst Röhm, and the party newspaper Völkischer Beobachter.",
+          "viewing_task": "[00:50] Leadership Takeover: How did Adolf Hitler outmanoeuvre Anton Drexler to become absolute party chairman in July 1921?\n[01:40] Paramilitary Role: What specific functions did the Sturmabteilung (SA) perform for the early Nazi Party?",
+          "model_answer": "Hitler threatened to resign permanently unless he was granted dictatorial powers over the DAP; knowing Hitler was their only charismatic orator and crowd-puller, the party committee capitulated. The SA was established as a paramilitary wing to violently disrupt rival political meetings (especially communists) and protect Nazi speakers at beer hall rallies."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=8w7F_L8kWzs",
-          "title": "BBC Two: Ernst Röhm, The SA & The Cult of Paramilitary Violence",
-          "duration": "6 mins 15 secs",
-          "pathway": "Primary Archive",
-          "teacher_guidance": "Examines Captain Ernst Röhm, the recruiting of hardened Freikorps veterans into the Brownshirts, and the culture of beer hall street brawling. Recommended Watch Window: 00:45–05:00 • Lesson Phase: Source Analysis & Paramilitary Apparatus. Tone Alert: Rigorous BBC archival documentary.",
-          "viewing_task": "<ol><li><strong>[01:10] Recall:</strong> What distinctive military nickname was given to the Sturmabteilung due to the surplus colonial uniforms they wore?</li><li><strong>[02:30] Explain:</strong> Explain the symbiotic relationship between Adolf Hitler and Ernst Röhm in the early 1920s: what did each man provide that the other lacked?</li><li><strong>[04:15] Challenge:</strong> How did the existence of private party paramilitaries like the SA and Communist Red Front Fighters prove that the Weimar state lacked a monopoly on legitimate violence?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The \"Brownshirts\" (<em>Braunhemden</em>).</li><li><strong>Explain:</strong> Röhm provided vital military connections, access to covert army weapon depots, and hundreds of battle-hardened ex-Freikorps veterans. In return, Hitler provided the charismatic political ideology, hypnotic speeches, and mass audience that gave Röhm's soldiers a sense of heroic purpose.</li><li><strong>Challenge:</strong> By tolerating private party armies clashing in city streets with tens of thousands of armed members, the Weimar state proved fundamentally incapable of protecting its citizens or enforcing the rule of law, reducing democratic politics to violent gang warfare.</li></ol>"
-        },
-        {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/bbc-two-the-dark-charisma-of-adolf-hitler-episode-1-stormtroopers/",
-          "title": "BBC Two / ERA: The Dark Charisma of Adolf Hitler – Early Stormtroopers",
-          "duration": "5 mins 20 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Laurence Rees examines how Hitler discovered his ability to tap into the rage and humiliation of ordinary Germans in the smoky beer cellars of post-war Munich. Recommended Watch Window: 00:30–04:45 • Lesson Phase: High-Attainer Stretch & Historical Psychology. Tone Alert: Masterclass documentary by renowned historian Laurence Rees.",
-          "viewing_task": "<ol><li><strong>[01:00] Recall:</strong> In which famous Munich beer hall did Hitler deliver his first major speech for the 25-Point Programme on 24 February 1920 before a crowd of 2,000 people?</li><li><strong>[02:30] Explain:</strong> According to eyewitnesses and psychological historians, what made Hitler's oratory so uniquely hypnotic to audiences who felt betrayed by the outcome of WWI?</li><li><strong>[04:10] Challenge:</strong> Evaluate the concept of \"charismatic authority\": why was Hitler's apocalyptic rhetoric embraced in Munich while being dismissed in cosmopolitan Berlin?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The <em>Hofbräuhaus</em>.</li><li><strong>Explain:</strong> Hitler began slowly before unleashing intense emotion, shouting, gesturing dramatically, and sweating profusely. He acted as an emotional mirror, articulating the unspoken rage, victimhood, and racial prejudice of his listeners, reassuring them that their misery was not their fault, but the treasonous work of external scapegoats.</li><li><strong>Challenge:</strong> Munich was a conservative hotbed of Catholic monarchist nostalgia and anti-communist fear following the Bavarian Soviet Republic of 1919. In contrast, cosmopolitan Berlin was dominated by socialist trade unions and intellectual skepticism; Hitler's beer-hall style succeeded in Munich because the local conservative establishment sheltered him, whereas Berliners viewed him as an extremist crank.</li></ol>"
+          "id": "3-P1U2e6Ozo",
+          "url": "https://www.youtube.com/watch?v=3-P1U2e6Ozo",
+          "title": "How Did Hitler Take Over the Nazi Party? | GCSE History",
+          "duration": "4 mins 59 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:30 | Lesson Phase: Oratory & Propaganda | Tone Alert: Examines how Hitler's theatrical delivery, gestures, swastika iconography, and populist appeal transformed a fringe Bavarian group.",
+          "viewing_task": "[01:30] Technique: What rhetorical methods did Hitler employ to captivate Bavarian beer hall audiences in the early 1920s?\n[03:20] Propaganda Design: Why was the swastika emblem and the renamed 'NSDAP' title so effectively targeted?",
+          "model_answer": "Hitler began speeches quietly and deliberately before building into theatrical crescendos of fury, exploiting audience grievances over the 1918 defeat, inflation, and communism. The swastika emblem created a striking visual brand, while adding 'National Socialist' appealed simultaneously to nationalist conservatives and disaffected working-class voters."
         }
       ],
       "pair_share": {
@@ -6753,43 +6718,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=lEDTB1l4Oek",
-          "title": "Cinematic: Hitler: The Rise of Evil (2003) – The Munich Beer Hall Putsch",
-          "duration": "3 mins 20 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Acclaimed historical feature film scene starring Robert Carlyle as Adolf Hitler. Depicts the storming of the Bürgerbräukeller on 8 November 1923: firing a pistol into the ceiling, taking Bavarian state leaders hostage, and proclaiming the national revolution. Recommended Watch Window: 00:00–03:20 (Full Clip) • Lesson Phase: Cinematic Starter Hook. Discussion Prompt: Theatricality of political violence and coup dynamics.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice Hitler jumping onto the tavern table, firing a pistol into the ceiling, and screaming that the national revolution has begun. How does Robert Carlyle's performance capture Hitler's theatrical style of leadership, and why did von Kahr's submission at gunpoint make the coup doomed from the moment Kahr left the hall?</p>",
-          "model_answer": "<p><strong>Teacher Discussion Pointers:</strong> The scene dramatizes Hitler's reckless romanticism: believing that dramatic gestures and armed bravado could cow professional politicians and generals. However, forcing Bavarian Commissioner von Kahr into a back room at gunpoint meant Kahr's cooperation was purely coerced; the moment General Ludendorff naively released him on his \"word of honor\", Kahr repudiated the coup and mobilized the army to crush it.</p>"
-        },
-        {
-          "type": "youtube",
+          "id": "pJVQZWLqSPE",
           "url": "https://www.youtube.com/watch?v=pJVQZWLqSPE",
-          "title": "Simple History: The Beer Hall Putsch & The Landsberg Sentence (1923)",
-          "duration": "3 mins 45 secs",
+          "title": "The Beer Hall Putsch (1923) | Simple History",
+          "duration": "10 mins 30 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated explainer covering the 8–9 November 1923 coup attempt in Munich, the clash at the Odeonsplatz, Hitler's arrest, and his trial. Recommended Watch Window: 00:00–03:45 (Full Clip) • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview of the failed coup.",
-          "viewing_task": "<ol><li><strong>[00:40] Quick Check:</strong> Which famous World War I general marched alongside Hitler during the armed putsch through Munich on 9 November 1923?</li><li><strong>[02:30] Hinge Question:</strong> How did Hitler successfully turn his 1924 Munich treason trial into a nationwide propaganda victory, despite being convicted and sentenced to Landsberg Prison?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> General Erich Ludendorff.</li><li><strong>Hinge Question:</strong> Sympathetic right-wing judges allowed Hitler unlimited time to speak. Instead of denying treason, Hitler proudly admitted trying to overthrow the republic, claiming he acted out of patriotic duty to save Germany from the \"November Criminals\". National newspapers published his speeches word-for-word, transforming him from a local Bavarian rabble-rouser into a recognized national hero.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: The Coup Attempt | Tone Alert: Animated narrative of the November 1923 coup in the Bürgerbräukeller, the confrontation at the Odeonsplatz, and its swift collapse.",
+          "viewing_task": "[02:15] Catalyst: Why did Hitler believe November 1923 was the ideal moment to launch a march on Berlin?\n[04:10] Turning Point: What happened when the Nazi marchers reached the Odeonsplatz armed police cordon?",
+          "model_answer": "Hitler believed hyperinflation, the Ruhr crisis, and nationalist fury made the Weimar government vulnerable, hoping to mimic Mussolini's successful 1922 March on Rome alongside WW1 hero General Ludendorff. At the Odeonsplatz, Bavarian state police fired upon the column; 16 Nazis and 4 police officers were killed, Göring was wounded, and Hitler fled."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=e_8Kz2P9kWs",
-          "title": "The History Channel: Hitler on Trial & The Landsberg Prison Strategy",
-          "duration": "7 mins 30 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Examines the comfortable conditions at Landsberg Prison, the dictation of *Mein Kampf* to Rudolf Hess, and the strategic decision to abandon armed putschism in favor of the \"legal road to power\". Recommended Watch Window: 01:00–06:00 • Lesson Phase: Guided Instruction & Strategic Pivot. Tone Alert: Documentary detailing ideological formation.",
-          "viewing_task": "<ol><li><strong>[01:45] Recall:</strong> How many months of his five-year sentence did Hitler actually serve in Landsberg Prison before being granted early parole?</li><li><strong>[03:30] Explain:</strong> What core ideological concepts did Hitler formulate in his autobiographical manifesto <em>Mein Kampf</em> regarding <em>Lebensraum</em>, Aryan racial supremacy, and anti-Semitism?</li><li><strong>[05:20] Challenge:</strong> Explain Hitler's fundamental tactical realization following the failure of the putsch: why did he conclude that the Nazis must \"hold their noses and enter the Reichstag\"?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Just nine months (released in December 1924).</li><li><strong>Explain:</strong> Hitler asserted that humanity was locked in a racial struggle where the \"Aryan\" master race must preserve purity; Jews were depicted as a destructive parasite; and Germany must conquer vast territory in Eastern Europe and Russia (<em>Lebensraum</em> or living space) through war.</li><li><strong>Challenge:</strong> The bloody shootout at the Odeonsplatz taught Hitler that the modern German state possessed overwhelming firepower and could never be toppled by armed street barricades. To win power, the Nazis had to disguise themselves as a constitutional party, win seats in democratic elections, and dismantle the constitution legally from within.</li></ol>"
+          "id": "0qEsf7O1VM0",
+          "url": "https://www.youtube.com/watch?v=0qEsf7O1VM0",
+          "title": "20th December 1924: Adolf Hitler Released from Landsberg Prison | HistoryPod",
+          "duration": "2 mins 53 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:53 | Lesson Phase: Trial, Landsberg & Mein Kampf | Tone Alert: Reviews Hitler's trial, sympathetic Bavarian judges, lenient sentence, and the dictation of Mein Kampf.",
+          "viewing_task": "[00:50] Trial as Platform: How did Hitler transform his treason trial into a national propaganda triumph?\n[02:00] Strategic Pivot: What fundamental shift in Nazi strategy did Hitler formulate while imprisoned at Landsberg?",
+          "model_answer": "Hitler used the courtroom as a national megaphone to denounce the Weimar Republic, claiming his actions were patriotic rather than treasonous; sympathetic judges gave him the minimum sentence of 5 years with early parole. In prison, he dictated Mein Kampf and realised the Nazis could never take power through armed putsch; they had to win power legally through the ballot box."
         },
         {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/bbc-two-the-dark-charisma-of-adolf-hitler-episode-1-stormtroopers/",
-          "title": "BBC Two / ERA: The Dark Charisma of Adolf Hitler – Mein Kampf & The Lean Years",
-          "duration": "8 mins 15 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Laurence Rees details the 1924–1929 \"Lean Years\": how the party expanded national branches (Gauleiter system), launched the SS, and held the pivotal 1926 Bamberg Conference. Recommended Watch Window: 01:30–07:00 • Lesson Phase: High-Attainer Stretch & Organizational Strategy. Tone Alert: Comprehensive documentary analysis.",
-          "viewing_task": "<ol><li><strong>[02:10] Recall:</strong> At which 1926 party conference did Hitler decisively outmaneuver Gregor Strasser's northern socialist faction to reassert his unquestioned leadership?</li><li><strong>[04:30] Explain:</strong> How did the creation of specialized auxiliary organizations—the Hitler Youth, Nazi Teachers' League, and Order of German Women—lay the groundwork for future electoral expansion?</li><li><strong>[06:15] Challenge:</strong> Why did the Nazi Party win a miserable 2.6% of the national vote (12 seats) in the May 1928 Reichstag election despite its nationwide organizational apparatus?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The Bamberg Conference (February 1926).</li><li><strong>Explain:</strong> By creating dedicated professional and demographic front organizations, the Nazis systematically infiltrated every sector of German civil society, building loyal voter networks among doctors, lawyers, teachers, and farmers ready to be mobilized whenever an economic crisis hit.</li><li><strong>Challenge:</strong> In 1928, Stresemann's economic policies were delivering high wages, stable currency, and full employment under American loans. In times of stability and prosperity, voters rejected extremist apocalyptic rhetoric, demonstrating that Nazi political fortunes were directly tied to economic misery.</li></ol>"
+          "type": "youtube",
+          "id": "O2ec9nyPsdg",
+          "url": "https://www.youtube.com/watch?v=O2ec9nyPsdg",
+          "title": "What Was the Beer Hall (Munich) Putsch? | GCSE History Revision",
+          "duration": "1 mins 38 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–01:38 | Lesson Phase: Quick Revision Summary | Tone Alert: High-impact summary of causes, events, and long-term consequences of the 1923 putsch.",
+          "viewing_task": "[00:30] Recall: Name the two Bavarian leaders whom Hitler held at gunpoint in the Bürgerbräukeller.\n[01:15] Consequence: How did the Bamberg Conference of 1926 solidify Hitler's complete control over the party?",
+          "model_answer": "Hitler cornered Bavarian state commissioner Gustav von Kahr and army chief Otto von Lossow. At the 1926 Bamberg Conference, Hitler crushed the northern socialist wing led by Gregor Strasser, establishing the Führerprinzip (leader principle) and cementing his unquestioned dictatorial authority over the party."
         }
       ],
       "pair_share": {
@@ -8118,43 +8076,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=29Mg6Gfh9Co",
-          "title": "Cinematic: Cabaret (1972) – \"Tomorrow Belongs to Me\" & Totalitarian Seduction",
-          "duration": "3 mins 10 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Bob Fosse's iconic, chilling scene from the Oscar-winning feature film. A solitary Hitler Youth boy begins singing an innocent pastoral anthem in a rural beer garden, gradually seducing ordinary German men, women, and elders to join in with fanatical devotion. Recommended Watch Window: 00:00–03:10 (Full Clip) • Lesson Phase: Cinematic Starter Hook. Discussion Prompt: Psychological contagion of fascist ideology.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Watch how a single blond Hitler Youth boy singing an innocent pastoral folk song gradually seduces an entire rural beer garden of ordinary, smiling Germans to stand, raise their arms in the Nazi salute, and join the chorus. How does Bob Fosse use this scene to explain why ordinary, civilized Germans were drawn into Nazi fanaticism during the Great Depression?</p>",
-          "model_answer": "<p><strong>Teacher Discussion Pointers:</strong> Fosse brilliantly captures the emotional, non-rational appeal of Nazism: it presented itself not as cruel hatred, but as a romantic vision of national renewal, youth, natural beauty, and communal belonging. To a population battered by the humiliation of Versailles and the poverty of the Depression, this promise of collective pride was intoxicating, showing how social conformity and emotional manipulation swept ordinary people into totalitarianism.</p>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=F0Z74k0Vv4M",
-          "title": "Simple History: The Great Depression & Hitler's Rise to Power (1929–1932)",
-          "duration": "4 mins 10 secs",
+          "id": "62DxELjuRec",
+          "url": "https://www.youtube.com/watch?v=62DxELjuRec",
+          "title": "The Great Depression: 5 Minute History Lesson | The Plain Bagel",
+          "duration": "5 mins 40 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated breakdown tracking the October 1929 Wall Street Crash, the recall of US loans, soaring unemployment, and the meteoric rise of Nazi Reichstag election votes. Recommended Watch Window: 00:00–04:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview of economic catastrophe.",
-          "viewing_task": "<ol><li><strong>[01:00] Quick Check:</strong> By early 1932, how many millions of German workers were officially registered as unemployed following the Wall Street Crash?</li><li><strong>[02:45] Hinge Question:</strong> Why did the Great Depression drive German middle-class voters (*Mittelstand*) and big business industrialists to embrace the Nazi Party instead of the Weimar democratic coalition?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Over 6 million workers (roughly one-third of the workforce).</li><li><strong>Hinge Question:</strong> The middle classes were terrified of a violent communist revolution as the KPD vote soared; Chancellor Brüning's deflationary wage and benefit cuts caused misery; and Hitler promised to crush communism, restore order, protect private property, and put Germans back to work.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:30 | Lesson Phase: Economic Collapse | Tone Alert: Explains the October 1929 Wall Street Crash, sudden recall of American short-term loans, and the global credit contraction.",
+          "viewing_task": "[01:30] Economic Mechanism: Why did the Wall Street Crash in New York trigger an instantaneous economic crisis across Germany?\n[03:40] Human Cost: How high did German unemployment soar by the winter of 1932?",
+          "model_answer": "Germany's economic revival was heavily reliant on short-term American loans from the Dawes Plan; when US banks faced bankruptcy, they immediately recalled these loans. German banks collapsed, factories shuttered, and unemployment soared past 6 million (over 30% of the working population) by 1932."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=7_hL44v4o44",
-          "title": "DW Documentary: 6 Million Unemployed – The Collapse of Weimar Democracy",
-          "duration": "9 mins 15 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Examines the human misery of soup kitchens, evictions, homelessness, and Chancellor Heinrich Brüning's disastrous deflationary policies. Recommended Watch Window: 01:30–07:00 • Lesson Phase: Guided Instruction & Dual-Coding. Tone Alert: Sombre archival documentary featuring primary newsreels of breadlines.",
-          "viewing_task": "<ol><li><strong>[02:10] Recall:</strong> What contemptuous nickname was given to Chancellor Heinrich Brüning by the public due to his policy of slashing welfare benefits and civil service wages?</li><li><strong>[04:20] Explain:</strong> How did Brüning's reliance on President Hindenburg's Article 48 emergency decrees mark the effective death of parliamentary democracy three years before Hitler was appointed?</li><li><strong>[06:30] Challenge:</strong> Analyze the demographic and social composition of Nazi voters between 1930 and 1932: why was the NSDAP unique as a \"catch-all\" party of protest?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The \"Hunger Chancellor\" (<em>Hungerkanzler</em>).</li><li><strong>Explain:</strong> Because the Reichstag was hopelessly deadlocked, Brüning bypassed parliament entirely, ruling through presidential emergency decrees signed by Hindenburg. By 1932, parliament met for only a few days a year, accustoming the German public to autocratic rule without legislative consent.</li><li><strong>Challenge:</strong> Unlike the SPD or KPD (which appealed almost exclusively to industrial workers) or the Centre Party (Catholics), the Nazis tailored their propaganda to every segment of society: promising higher food prices to bankrupt farmers, law and order to shopkeepers, anti-communism to industrialists, and jobs to unemployed youth.</li></ol>"
+          "id": "bj6RIHbU7bs",
+          "url": "https://www.youtube.com/watch?v=bj6RIHbU7bs",
+          "title": "The Wall Street Crash and Its Impact on Germany | GCSE History",
+          "duration": "5 mins 09 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Political Polarisation | Tone Alert: Details Chancellor Brüning's austerity policies ('Hunger Chancellor'), the collapse of Reichstag coalitions, and the surge in KPD and NSDAP votes.",
+          "viewing_task": "[01:40] Failure of Democracy: Why did Chancellor Brüning rely heavily on Article 48 emergency presidential decrees between 1930 and 1932?\n[03:30] Electoral Surge: How did the Nazi share of Reichstag seats change between May 1928 (12 seats) and July 1932 (230 seats)?",
+          "model_answer": "Brüning's deflationary spending cuts and tax rises alienated the Reichstag, causing coalition collapse; he increasingly bypassed parliament using Hindenburg's Article 48 decrees, crippling parliamentary democracy. Desperate voters abandoned moderate parties, propelling the Nazis from an irrelevant 12 seats (2.6%) in 1928 to 230 seats (37.3%) in July 1932, becoming the largest party."
         },
         {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/rise-of-the-nazis-series-1-1-politics/",
-          "title": "BBC Two / ERA: Rise of the Nazis – Goebbels' Propaganda & The Appeal of the SA",
-          "duration": "12 mins 30 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Gripping BBC docudrama series deconstructing Joseph Goebbels' modern electioneering: chartered aircraft (\"Hitler over Germany\"), loudspeakers, mass rallies, and SA food soup kitchens. Recommended Watch Window: 02:00–08:30 • Lesson Phase: High-Attainer Stretch & Propaganda Analysis. Tone Alert: Superb psychological reconstruction featuring leading British historians.",
-          "viewing_task": "<ol><li><strong>[02:40] Recall:</strong> What cutting-edge technological transport did Hitler use in 1932 to fly to four or five different German cities in a single day during his presidential campaign?</li><li><strong>[05:10] Explain:</strong> How did the Sturmabteilung (SA) provide practical relief—such as hot stew kitchens and hostels—to desperate unemployed youths while simultaneously waging street war?</li><li><strong>[07:45] Challenge:</strong> Evaluate the role of charismatic leadership versus structural economic crisis in the Nazi electoral surge from 12 seats (1928) to 230 seats (July 1932).</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> An airplane (in the famous \"Hitler Over Germany\" campaign).</li><li><strong>Explain:</strong> The SA offered destitute young men free warm uniforms, three meals a day, dormitory accommodation, and a sense of comradeship and masculine purpose, weaponizing their desperation into a private army of 400,000 disciplined street fighters.</li><li><strong>Challenge:</strong> Without the Great Depression, Hitler would have remained an eccentric political fringe figure. However, economic collapse alone did not make Hitler Chancellor; other European nations suffered depression without turning to fascism. Hitler's personal charisma, Goebbels' modern media blitz, and the promise of national rebirth channeled economic despair into an unstoppable mass movement.</li></ol>"
+          "type": "youtube",
+          "id": "qqZjF3-dMzU",
+          "url": "https://www.youtube.com/watch?v=qqZjF3-dMzU",
+          "title": "Hitler’s Rise to Power 1929 – 1934: The Great Depression",
+          "duration": "5 mins 18 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Appeal of the Nazis | Tone Alert: Explores Goebbels' propaganda campaigns, the Hitler Flight over Germany, and targeted promises to workers, farmers, and big business.",
+          "viewing_task": "[01:50] Broad Appeal: How did Nazi propaganda tailor different messages to win over German farmers, the middle class, and industrialists?\n[03:45] SA Role: What role did the brownshirt SA play on the streets during the 1930–1932 election campaigns?",
+          "model_answer": "The Nazis promised farmers higher agricultural tariffs and debt relief, promised the middle class protection against communism and big department stores, and promised industrialists that trade unions and communists would be crushed. The SA presented an image of disciplined order while violently brawling with communist Red Front fighters, convincing anxious citizens that only Hitler could restore stability."
         }
       ],
       "pair_share": {
@@ -9485,43 +9436,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=F0Z74k0Vv4M",
-          "title": "Simple History: How Hitler Became Chancellor in January 1933",
-          "duration": "4 mins 20 secs",
+          "id": "u_0KS4CUMcQ",
+          "url": "https://www.youtube.com/watch?v=u_0KS4CUMcQ",
+          "title": "30th January 1933: Adolf Hitler Appointed Chancellor of Germany | HistoryPod",
+          "duration": "2 mins 50 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated explainer detailing the electoral deadlock of 1932, the backroom intrigues between Franz von Papen and Kurt von Schleicher, and Hindenburg's fateful appointment of Hitler. Recommended Watch Window: 00:00–04:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview of elite political intrigue.",
-          "viewing_task": "<ol><li><strong>[01:05] Quick Check:</strong> In the July 1932 Reichstag elections, what record number of seats did the Nazi Party win to become the largest party in parliament?</li><li><strong>[02:50] Hinge Question:</strong> Explain the fatal miscalculation made by Franz von Papen and President Paul von Hindenburg when they offered Hitler the Chancellorship on 30 January 1933.</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> 230 seats (37.3% of the vote).</li><li><strong>Hinge Question:</strong> Papen believed he could control Hitler by surrounding him in the cabinet with conservative aristocratic ministers (leaving only three Nazis out of twelve cabinet posts), famously boasting: \"Within two months, we will have pushed Hitler into a corner until he squeals!\"</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:50 | Lesson Phase: Backroom Intrigue | Tone Alert: Explains the aristocratic conspiracy between Franz von Papen, Kurt von Schleicher, and President Paul von Hindenburg.",
+          "viewing_task": "[00:45] Elite Intrigue: Why did Franz von Papen persuade President Hindenburg to appoint Hitler as Chancellor on 30 January 1933?\n[01:55] The Fatal Calculation: What did Papen mean when he boastfully declared that they had 'hired Hitler' and would 'push him into a corner'?",
+          "model_answer": "Papen and the conservative aristocratic clique lacked popular support in the Reichstag after Schleicher's government collapsed; they needed Hitler's mass voter base to form a stable right-wing government. Papen foolishly believed that with only 3 Nazis in a cabinet of 12 (Hitler, Frick, Göring) and Papen as Vice-Chancellor, the conservative elite could easily control and tame Hitler."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=s4N19L7G2aQ",
-          "title": "The History Channel: The Backstairs Intrigue – Papen, Schleicher & Hindenburg",
-          "duration": "10 mins 15 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "In-depth study of the presidential clique: General Kurt von Schleicher's military plotting, Papen's thirst for revenge, and the senile President Hindenburg's contempt for the \"Bohemian Corporal\". Recommended Watch Window: 02:00–08:00 • Lesson Phase: Guided Instruction & Political Intrigue. Tone Alert: Tense political documentary.",
-          "viewing_task": "<ol><li><strong>[02:30] Recall:</strong> What insulting nickname did President Paul von Hindenburg repeatedly use for Adolf Hitler before finally agreeing to appoint him Chancellor?</li><li><strong>[04:45] Explain:</strong> Explain why General Kurt von Schleicher's brief chancellorship (December 1932 – January 1933) collapsed after he failed to split the Nazi Party with Gregor Strasser.</li><li><strong>[07:15] Challenge:</strong> Evaluate the argument that Hitler did not \"seize\" power, but was \"handed\" power by a bankrupt conservative aristocratic elite who sought to use him to destroy democracy.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> \"That Bohemian corporal\" (<em>dieser böhmische Gefreite</em>).</li><li><strong>Explain:</strong> Schleicher tried to break Hitler's power by offering the Vice-Chancellorship to Gregor Strasser and proposing land reform to divide bankrupt Junker estates, which alienated the wealthy Prussian landowners, the army, and President Hindenburg himself.</li><li><strong>Challenge:</strong> In November 1932, the Nazi vote had actually dropped by 2 million votes (down to 196 seats) and the party was financially bankrupt. Hitler was rescued not by a popular revolution, but by Papen, Hindenburg, and conservative aristocrats who believed they could use Hitler's mass following to smash the socialist trade unions and restore an authoritarian monarchy.</li></ol>"
+          "id": "ux8bNLD4QWw",
+          "url": "https://www.youtube.com/watch?v=ux8bNLD4QWw",
+          "title": "Why Did Hitler Become Chancellor in 1933? | GCSE History Revision",
+          "duration": "4 mins 40 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:40 | Lesson Phase: Synthesis of Causes | Tone Alert: Clear, structured analysis balancing long-term weaknesses of Weimar, mid-term economic depression, and short-term political miscalculations.",
+          "viewing_task": "[01:20] Relative Weight: Which factor was more significant: the electoral appeal of the Nazi Party or the political backstabbing of Papen and Hindenburg?\n[03:10] Democratic Breakdown: Why did Hindenburg refuse to appoint Hitler in August 1932 despite the Nazis winning 37% of the vote?",
+          "model_answer": "Both factors were essential: without mass electoral support after the Wall Street Crash Hitler could never have demanded power, but without Papen's backroom intrigue to oust Schleicher Hitler would not have been appointed, especially as Nazi votes had fallen in November 1932. Hindenburg personally despised Hitler as a vulgar 'Bohemian corporal' and refused him the Chancellorship until Papen promised Hitler could be safely contained."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=AUZIYQFM7mQ",
-          "title": "British Pathé: 30 January 1933 – The Torchlight Parade in Berlin",
-          "duration": "4 mins 10 secs",
-          "pathway": "Primary Archive",
-          "teacher_guidance": "Historic archival newsreel footage of the massive SA and SS torchlight victory parade passing through the Brandenburg Gate on the night of 30 January 1933. Recommended Watch Window: 00:30–03:45 • Lesson Phase: Primary Source Deconstruction. Tone Alert: Authentic historical newsreel with original sound.",
-          "viewing_task": "<ol><li><strong>[01:00] Recall:</strong> Which famous Berlin monument did thousands of uniformed SA stormtroopers march through with burning torches on the night of 30 January 1933?</li><li><strong>[02:15] Explain:</strong> What was the historic significance of 85-year-old President Hindenburg watching the parade from the Reich Chancellery window alongside Chancellor Hitler?</li><li><strong>[03:20] Challenge:</strong> Analyze the psychological impact of the torchlight procession on ordinary Berliners: how did the spectacle project an illusion of unstoppable national rebirth?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The Brandenburg Gate (<em>Brandenburger Tor</em>).</li><li><strong>Explain:</strong> It symbolized the fateful marriage between the old imperial Prussian military establishment (embodied by Field Marshal Hindenburg) and the revolutionary, violent energy of the Nazi movement (embodied by Hitler).</li><li><strong>Challenge:</strong> The hypnotic river of fire, martial drums, and military singing projected an overwhelming image of disciplined strength, unity, and dynamic momentum, terrifying political opponents into silence while convincing wavering citizens that the chaotic era of Weimar weakness was permanently over.</li></ol>"
-        },
-        {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/rise-of-the-nazis-series-1-1-politics/",
-          "title": "BBC Two / ERA: Rise of the Nazis – The Political Intrigue (Papen, Schleicher & Hindenburg)",
-          "duration": "25 mins 00 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Forensic dramatized analysis of the secret meetings between Papen and Hitler at the banker von Schröder's house in Cologne, and the final 48 hours before Hindenburg signed the appointment. Recommended Watch Window: 10:00–18:00 • Lesson Phase: High-Attainer Stretch & Historical Evaluation. Tone Alert: Masterpiece political thriller documentary from BBC Two.",
-          "viewing_task": "<ol><li><strong>[11:00] Recall:</strong> Which conservative newspaper tycoon and DNVP leader bankrolled Hitler's campaigns and joined the January 1933 cabinet as Minister of Economics?</li><li><strong>[14:15] Explain:</strong> How did Papen convince President Hindenburg's influential son, Oskar von Hindenburg, to endorse Hitler's appointment as Chancellor?</li><li><strong>[17:00] Challenge:</strong> Why was Papen's strategy of \"taming\" Hitler fatally flawed from the very first cabinet meeting on 30 January 1933?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Alfred Hugenberg.</li><li><strong>Explain:</strong> Papen warned Oskar that General Schleicher was planning a military coup and threatened to expose tax corruption involving the Hindenburg family's Neudeck country estate, convincing Oskar that Hitler was the only leader who could maintain order and protect the family estate.</li><li><strong>Challenge:</strong> Papen fatally underestimated Hitler's political cunning and ruthlessness. Hitler insisted on control of the Prussian police (given to Hermann Göring) and the Reich Ministry of the Interior (Wilhelm Frick). With the state police force firmly in Nazi hands, Hitler had the physical muscle to arrest opponents, ban rival meetings, and seize total control of the state apparatus within months.</li></ol>"
+          "id": "Oo5u086L_3k",
+          "url": "https://www.youtube.com/watch?v=Oo5u086L_3k",
+          "title": "How Did Hitler Become Chancellor of Germany? | GCSE History",
+          "duration": "7 mins 43 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Deep-Dive Enquiry | Tone Alert: Comprehensive examination of the political maneuvering through 1932, the presidential election, and the final cabinet composition.",
+          "viewing_task": "[02:30] Electoral Setback: Why was the November 1932 election a crisis for the Nazi party, and why did it make Hitler desperate for a deal?\n[04:45] Cabinet Power: How did Hermann Göring use his position as Prussian Minister of the Interior to secure Nazi dominance over the police?",
+          "model_answer": "In the November 1932 election, Nazi support dropped by 2 million votes (from 230 to 196 seats) and the party ran out of campaign funds, making Hitler fearful that his momentum was slipping away. Göring took command of Prussia's 50,000-strong police force, deputising 50,000 SA brownshirts as auxiliary police and ordering them to shoot anti-Nazi opponents on sight."
         }
       ],
       "pair_share": {
@@ -9975,6 +9919,14 @@ export default {
           {
             "question": "What emergency constitutional power allowed the Reich President to suspend civil liberties? (Prior Topic)",
             "answer": "Article 48 of the Weimar Constitution."
+          },
+          {
+            "question": "What 1919 treaty imposed Article 231 (War Guilt) and £6.6 billion reparations on the Weimar Republic? (Prior Topic)",
+            "answer": "The Treaty of Versailles."
+          },
+          {
+            "question": "Who was the moderate German foreign minister who negotiated the 1924 Dawes Plan and 1925 Locarno Treaties? (Prior Topic)",
+            "answer": "Gustav Stresemann."
           }
         ]
       },
@@ -10836,43 +10788,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=UrlE7ORQWNk",
-          "title": "Cinematic: Hitler: The Rise of Evil (2003) – The Reichstag Fire & Emergency Decrees",
-          "duration": "3 mins 15 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Tense docudrama scene depicting the burning of the Reichstag on 27 February 1933. Hitler and Goebbels rush to the scene, claim it is a Communist signal for armed insurrection, and coerce President Hindenburg into signing the emergency decree. Recommended Watch Window: 00:00–03:15 (Full Clip) • Lesson Phase: Cinematic Starter Hook. Discussion Prompt: Exploiting crisis to eliminate democracy.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Observe how Hitler and Goebbels immediately arrive at the burning Reichstag building on 27 February 1933, declaring it a Communist signal for armed insurrection, and browbeat President Hindenburg into signing the emergency decree. How does this sequence illustrate how the Nazis converted an isolated act of arson into the legal death sentence of German democracy?</p>",
-          "model_answer": "<p><strong>Teacher Discussion Pointers:</strong> The clip shows how an authoritarian regime uses an external crisis: whether Van der Lubbe acted alone or was manipulated, the Nazis instantly used the fire as a pretext to suspend civil liberties under the \"Reichstag Fire Decree\", legalizing arbitrary arrest, closing opposition newspapers, and arresting 4,000 Communists before the March 1933 elections, paving the way for the Enabling Act.</p>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=F0Z74k0Vv4M",
-          "title": "Simple History: The Reichstag Fire & The Enabling Act (1933)",
-          "duration": "3 mins 50 secs",
+          "id": "x4RGDM_q0l8",
+          "url": "https://www.youtube.com/watch?v=x4RGDM_q0l8",
+          "title": "The Reichstag Fire | The Pacifist",
+          "duration": "3 mins 11 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated breakdown of the legal dismantling of democracy: the Reichstag fire, the March 1933 elections, the intimidation of the Kroll Opera House, and the Enabling Act. Recommended Watch Window: 00:00–03:50 (Full Clip) • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview of the seizure of power.",
-          "viewing_task": "<ol><li><strong>[00:45] Quick Check:</strong> Who was the young Dutch communist arrested on site and blamed by the Nazis for starting the Reichstag fire on 27 February 1933?</li><li><strong>[02:45] Hinge Question:</strong> How did the Enabling Act of 23 March 1933 formally destroy the Weimar Constitution and establish Hitler as a legal dictator?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Marinus van der Lubbe.</li><li><strong>Hinge Question:</strong> It transferred full lawmaking powers to Chancellor Hitler and his cabinet for four years without requiring the approval of the Reichstag or the signature of President Hindenburg, allowing Hitler to pass laws violating the constitution, ban trade unions, and outlaw all rival political parties.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:11 | Lesson Phase: Elimination of Civil Rights | Tone Alert: Explores the burning of the Reichstag on 27 February 1933, the arrest of Marinus van der Lubbe, and the Decree for the Protection of People and State.",
+          "viewing_task": "[01:05] Immediate Reaction: How did Hitler exploit the Reichstag fire to crack down on the German Communist Party (KPD)?\n[02:15] Legal Dictatorship: What basic civil liberties were suspended by Hindenburg's emergency decree on 28 February 1933?",
+          "model_answer": "Hitler blamed the fire on a planned communist armed insurrection, arresting 4,000 communist officials and banning their press. The emergency decree suspended freedom of speech, assembly, press, and privacy of postal communications, allowing the regime to indefinitely detain political opponents without charge."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=s4N19L7G2aQ",
-          "title": "Khan Academy: The Night of the Long Knives (30 June – 2 July 1934)",
-          "duration": "9 mins 40 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Examines the internal Nazi power struggle between Hitler, Ernst Röhm's 3-million-strong SA, Heinrich Himmler's SS, and the regular German army (Reichswehr). Recommended Watch Window: 01:30–07:15 • Lesson Phase: Guided Instruction & Political Purge Analysis. Tone Alert: Rigorous historical breakdown of the bloody purge.",
-          "viewing_task": "<ol><li><strong>[02:10] Recall:</strong> What \"second revolution\" was Ernst Röhm demanding that terrified German industrialists and the aristocratic generals of the Reichswehr?</li><li><strong>[04:30] Explain:</strong> Explain how Heinrich Himmler (SS) and Hermann Göring forged evidence of an imminent SA putsch to convince Hitler to eliminate Röhm at Bad Wiessee.</li><li><strong>[06:40] Challenge:</strong> How did the Night of the Long Knives secure the army's loyalty, culminating in the personal soldier's oath to Adolf Hitler following President Hindenburg's death in August 1934?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Röhm wanted the SA to absorb the regular German army into a people's militia and enact socialist measures against wealthy corporations.</li><li><strong>Explain:</strong> Himmler and Göring presented fabricated intelligence files showing that Röhm had received French payments and was plotting an armed coup, playing on Hitler's paranoia that the SA would provoke a military takeover against the Nazi regime.</li><li><strong>Challenge:</strong> By liquidating Röhm and the SA leadership, Hitler satisfied the army generals' chief demand. When Hindenburg died on 2 August 1934, Hitler merged the Chancellorship and Presidency into the supreme title of *Führer*, and every soldier in the armed forces swore a sacred, unconditional personal oath of obedience to Adolf Hitler himself rather than to the constitution or nation.</li></ol>"
+          "id": "pBOK5FGhai0",
+          "url": "https://www.youtube.com/watch?v=pBOK5FGhai0",
+          "title": "The Night of the Long Knives | The Pacifist",
+          "duration": "4 mins 25 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:25 | Lesson Phase: Internal Party Purge | Tone Alert: Examines the 30 June 1934 purge of Ernst Röhm and the SA leadership, reconciling the regular army and eliminating conservative rivals.",
+          "viewing_task": "[01:15] Threat from Within: Why did the German army high command view Ernst Röhm and the 3-million-strong SA as a deadly threat?\n[03:00] Murder & Consolidation: Who carried out the killings during the Night of the Long Knives, and which prominent non-Nazis were assassinated?",
+          "model_answer": "Röhm demanded a 'Second Revolution' to absorb the regular German army into a people's militia under SA command, which the aristocratic army generals and industrial leaders fiercely rejected. Himmler's SS executed over 200 leaders, including Röhm, former Chancellor Kurt von Schleicher, and conservative leader Gregor Strasser."
         },
         {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/rise-of-the-nazis-series-1-1-politics/",
-          "title": "BBC Two / ERA: Rise of the Nazis – Creation of the Dictatorship (1933–1934)",
-          "duration": "24 mins 00 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Forensic analysis of the legal coordination (*Gleichschaltung*): the banning of trade unions on 2 May 1933, the Law Against the Formation of Parties, and the destruction of the federal states (*Länder*). Recommended Watch Window: 06:00–14:00 • Lesson Phase: High-Attainer Stretch & Legal State Dissection. Tone Alert: Masterpiece BBC documentary analysis.",
-          "viewing_task": "<ol><li><strong>[07:15] Recall:</strong> What single state-controlled organization replaced all independent German trade unions after stormtroopers seized union offices on 2 May 1933?</li><li><strong>[10:30] Explain:</strong> What was the historic meaning of the term <em>Gleichschaltung</em> (\"coordination\"), and how did it eliminate all independent civic organizations in German life?</li><li><strong>[13:15] Challenge:</strong> Evaluate how the German judiciary and legal profession voluntarily cooperated in the destruction of the rule of law, creating the \"Prerogative State\".</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The German Labour Front (<em>Deutsche Arbeitsfront</em> or DAF) led by Robert Ley.</li><li><strong>Explain:</strong> *Gleichschaltung* was the systematic Nazification of all institutions: sports clubs, youth groups, universities, churches, and trade unions were either brought under Nazi leadership or forcibly disbanded, ensuring no independent societal power could organize opposition.</li><li><strong>Challenge:</strong> German judges and lawyers were overwhelmingly conservative and nationalist. Rather than defending constitutional rights, they enthusiastically joined the National Socialist League of German Jurists (BNSJ), swearing loyalty to Hitler and interpreting laws according to the \"healthy sentiment of the German Volk\", replacing objective statutory law with the arbitrary will of the Führer.</li></ol>"
+          "type": "youtube",
+          "id": "evFc-exxPlU",
+          "url": "https://www.youtube.com/watch?v=evFc-exxPlU",
+          "title": "30th June 1934: Hitler Purges the Nazi Party in the Night of the Long Knives | HistoryPod",
+          "duration": "2 mins 19 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:19 | Lesson Phase: Oath & Führer | Tone Alert: Documents how Hindenburg's death in August 1934 led to the merger of Chancellor and President into 'Führer' and the personal army oath.",
+          "viewing_task": "[00:55] Consolidation: Following the purge, what title did Hitler adopt upon President Hindenburg's death in August 1934?\n[01:45] The Soldier's Oath: How did the new military oath fundamentally alter the loyalty of every German soldier?",
+          "model_answer": "Hitler merged the offices of Chancellor and President to declare himself 'Führer und Reichskanzler'. German soldiers and officers swore a sacred personal oath of unconditional obedience to Adolf Hitler himself as supreme commander, rather than to the constitution or the nation."
         }
       ],
       "pair_share": {
@@ -11328,6 +11273,14 @@ export default {
           {
             "question": "Which paramilitary organization was led by Ernst Röhm before 1934? (Prior Topic)",
             "answer": "The SA (Sturmabteilung, or Brownshirts)."
+          },
+          {
+            "question": "What was the 'stab-in-the-back' myth (Dolchstoßlegende) propagated by German military leaders like Ludendorff? (Prior Topic)",
+            "answer": "The false conspiracy theory that the German army was undefeated in the field and betrayed from within by socialists, communists, and Jews."
+          },
+          {
+            "question": "What 1928 international pact signed by 62 nations renounced war as an instrument of national policy? (Prior Topic)",
+            "answer": "The Kellogg-Briand Pact."
           }
         ]
       },
@@ -11988,43 +11941,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=_sKJxyf8iDI",
-          "title": "Cinematic: Hitler: The Rise of Evil (2003) – The Night of the Long Knives & The Bad Wiessee Purge",
-          "duration": "3 mins 05 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Dramatic feature recreation of the dawn raid at the Hotel Hanselbauer in Bad Wiessee on 30 June 1934. Hitler, accompanied by armed SS commandos, personally confronts Ernst Röhm, initiating the extrajudicial slaughter of over 85 SA leaders and conservative rivals. Recommended Watch Window: 00:00–03:05 (Full Clip) • Lesson Phase: Cinematic Starter Hook. Discussion Prompt: The brutal mechanics of totalitarian consolidation.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Watch how Hitler and the black-uniformed SS storm the Hanselbauer Hotel at dawn to drag Ernst Röhm and the sleeping SA leadership out of bed. What does this purge demonstrate about Hitler's absolute ruthlessness in eliminating his oldest comrades to secure the unconditional loyalty of the regular German Army?</p>",
-          "model_answer": "<p><strong>Teacher Discussion Pointers:</strong> The scene highlights the deadly pragmatism of Hitler's dictatorship: Röhm had been his closest friend and the armed backbone of the Nazi movement for a decade, but Hitler did not hesitate to order his murder to neutralize the army generals' opposition, eliminate conservative critics (like General von Schleicher), and elevate Himmler's SS into the supreme instruments of state terror.</p>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=AUZIYQFM7mQ",
-          "title": "Simple History: The Gestapo & The SS – Hitler’s Police State (1933–1939)",
-          "duration": "4 mins 15 secs",
+          "id": "Ggh9WpTqvLg",
+          "url": "https://www.youtube.com/watch?v=Ggh9WpTqvLg",
+          "title": "Nazi Terror: The Police State | GCSE History Revision",
+          "duration": "5 mins 22 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated explainer of the Nazi security apparatus: the SS (Schutzstaffel), the SD (Sicherheitsdienst), the Gestapo (Geheime Staatspolizei), and the concentration camp network. Recommended Watch Window: 00:00–04:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview of terror structures.",
-          "viewing_task": "<ol><li><strong>[00:55] Quick Check:</strong> Who was appointed Reichsführer-SS in 1929, transforming the Schutzstaffel into the most feared intelligence and terror apparatus in Nazi Germany?</li><li><strong>[02:50] Hinge Question:</strong> Why is the popular image of the Gestapo having secret agents on every street corner a myth, and how did the police state actually rely upon ordinary German citizens?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> Heinrich Himmler.</li><li><strong>Hinge Question:</strong> The Gestapo was surprisingly tiny (only 15,000 officers for a nation of 66 million). Over 80% of all Gestapo investigations were initiated by voluntary denunciations submitted by ordinary German neighbors, co-workers, and family members settling personal grudges or demonstrating ideological conformity.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Instruments of Terror | Tone Alert: Reviews Heinrich Himmler's SS, Reinhard Heydrich's SD, the Gestapo secret police, and the establishment of Dachau concentration camp in 1933.",
+          "viewing_task": "[01:20] Terror Apparatus: What was the primary difference in jurisdiction between the regular police, the Gestapo, and the SS?\n[03:10] Climate of Fear: Why did the Gestapo rely so heavily on ordinary citizens' voluntary denunciations?",
+          "model_answer": "The regular police handled routine criminal law, while the Gestapo (secret police) investigated political subversion above the law, and the SS operated concentration camps and ideological enforcement. The Gestapo had surprisingly few full-time officers (only ~30,000 nationwide), meaning over 80% of investigations began with voluntary denunciations by neighbours, colleagues, and rivals."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=7_hL44v4o44",
-          "title": "Imperial War Museums: Dachau (1933) – The First Concentration Camp",
-          "duration": "8 mins 30 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Examines the opening of Dachau concentration camp outside Munich in March 1933 under Theodor Eicke, establishing the blueprint for the entire concentration camp system (*Konzentrationslager*). Recommended Watch Window: 01:15–06:45 • Lesson Phase: Guided Instruction & Historical Investigation. Tone Alert: Sombre museum documentary utilizing authentic photos and prisoner records.",
-          "viewing_task": "<ol><li><strong>[01:45] Recall:</strong> Which groups of political prisoners were the first inmates incarcerated at Dachau concentration camp when it opened in March 1933?</li><li><strong>[03:40] Explain:</strong> What role did Theodor Eicke's \"Dachau Model\" play in codifying brutal punishment regulations and training future SS Death's Head (*Totenkopf*) guards?</li><li><strong>[05:50] Challenge:</strong> Explain how the concentration camp system operated outside the jurisdiction of ordinary German civil and criminal law courts.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Communist Party (KPD) and Social Democrat (SPD) politicians, trade unionists, and anti-Nazi journalists.</li><li><strong>Explain:</strong> Eicke created a rigid, militarized manual of terror: solitary confinement, flogging at the whipping post, hanging by the wrists, and immediate execution for resistance. Dachau became the training academy where SS recruits were systematically desensitized to human suffering before being deployed to run other camps.</li><li><strong>Challenge:</strong> Prisoners were held under \"protective custody\" warrants (*Schutzhaft*) issued by the Gestapo without trial, legal representation, or right of appeal. Even if a civil judge acquitted a defendant, the Gestapo would re-arrest them at the courtroom door and transport them directly to a concentration camp indefinitely.</li></ol>"
+          "id": "sBMu6atP1wA",
+          "url": "https://www.youtube.com/watch?v=sBMu6atP1wA",
+          "title": "Nazi Policies Towards the Church | GCSE History",
+          "duration": "3 mins 29 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:29 | Lesson Phase: Concordat & Reich Church | Tone Alert: Explores the July 1933 Reichskonkordat with the Vatican, the creation of the pro-Nazi Reich Church under Ludwig Müller, and subsequent persecution.",
+          "viewing_task": "[00:50] Agreement: What terms were agreed between Hitler and Pope Pius XI in the 1933 Concordat?\n[02:10] Subversion: How did the Nazi regime breach the Concordat, and how did the Pope respond in the 1937 encyclical Mit Brennender Sorge?",
+          "model_answer": "Hitler promised Catholic schools and youth groups would be protected in exchange for the Church withdrawing from German political life. The Nazis broke the pact by shutting Catholic schools and arresting priests; in 1937 Pope Pius XI issued 'Mit Brennender Sorge' ('With Burning Concern'), condemning Nazi racial idolatry and state worship."
         },
         {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/rise-of-the-nazis-series-1-1-politics/",
-          "title": "BBC Two / ERA: Rise of the Nazis – The Creation of the Gestapo (1933–1939)",
-          "duration": "25 mins 00 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Examines Reinhard Heydrich, the establishment of the SD, the takeover of the Prussian secret police, and the creation of the People's Court (*Volksgerichtshof*) under Roland Freisler. Recommended Watch Window: 08:00–16:00 • Lesson Phase: High-Attainer Stretch & Police State Deconstruction. Tone Alert: Authoritative BBC analysis of terror mechanisms.",
-          "viewing_task": "<ol><li><strong>[09:30] Recall:</strong> Who was Heinrich Himmler's ruthless deputy who organized the SD security service and directed the Gestapo?</li><li><strong>[12:15] Explain:</strong> How did the creation of the People's Court (<em>Volksgerichtshof</em>) in 1934 guarantee that political dissidents faced guaranteed conviction and execution?</li><li><strong>[15:00] Challenge:</strong> How did the combination of the SS, Gestapo, and People's Court create an atmosphere of pervasive self-censorship and terror across ordinary German households?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Reinhard Heydrich.</li><li><strong>Explain:</strong> The court had no jury; cases were tried before Nazi judges and SS officers dressed in red robes who openly ridiculed defendants, barred effective defense counsel, and sentenced thousands of citizens to death for minor offenses like listening to foreign radio or telling political jokes.</li><li><strong>Challenge:</strong> Because Germans knew that a stray remark in a pub, shop, or tram could be reported to the Gestapo by an eavesdropping neighbor, citizens learned to hide their true thoughts, speak in whispers (\"the German glance\" over one's shoulder), and publicly perform enthusiastic loyalty, effectively paralyzing any possibility of organized collective resistance.</li></ol>"
+          "type": "youtube",
+          "id": "tbnQ1pCWg2c",
+          "url": "https://www.youtube.com/watch?v=tbnQ1pCWg2c",
+          "title": "The Nazi Policies Towards the Church and Resistance | GCSE Edexcel History",
+          "duration": "6 mins 53 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:30 | Lesson Phase: Protestant Schism & Niemöller | Tone Alert: Details the struggle between the German Christians ('Gottgläubig') and Martin Niemöller's Confessing Church.",
+          "viewing_task": "[02:00] Protestant Division: Why did Protestant pastors like Martin Niemöller and Dietrich Bonhoeffer break away to form the Confessing Church in 1934?\n[04:40] Persecution: What happened to Pastor Martin Niemöller when he refused to stop preaching against Nazi state control?",
+          "model_answer": "They opposed Nazi attempts to nazify Protestant Christianity by removing the Old Testament and banning converted Jews under the 'Aryan Paragraph'. Niemöller was arrested in 1937 and imprisoned in Sachsenhausen and Dachau concentration camps as Hitler's 'personal prisoner' until 1945."
         }
       ],
       "pair_share": {
@@ -12479,6 +12425,14 @@ export default {
           {
             "question": "What violent purge took place in June 1934 against Ernst Röhm and the SA? (Last Week)",
             "answer": "The Night of the Long Knives."
+          },
+          {
+            "question": "What paramilitary group, nicknamed the 'Brownshirts' and led by Ernst Röhm, protected Nazi meetings and attacked opponents? (Prior Topic)",
+            "answer": "The SA (Sturmabteilung / Stormtroopers)."
+          },
+          {
+            "question": "How did the 1923 hyperinflation crisis affect Germany's middle classes? (Prior Topic)",
+            "answer": "It wiped out their life savings, bank deposits, and war pensions, permanently alienating them from the Weimar democracy."
           }
         ]
       },
@@ -13114,43 +13068,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=F0Z74k0Vv4M",
-          "title": "Simple History: Joseph Goebbels & The Propaganda Machine",
-          "duration": "4 mins 05 secs",
+          "id": "_UF6zAqDSJE",
+          "url": "https://www.youtube.com/watch?v=_UF6zAqDSJE",
+          "title": "What Was Nazi Propaganda? | Holocaust Explainer (USHMM)",
+          "duration": "2 mins 49 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated overview of the Reich Ministry of Public Enlightenment and Propaganda, total control of the press, radio broadcasts, rallies, and cinema. Recommended Watch Window: 00:00–04:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview of media control.",
-          "viewing_task": "<ol><li><strong>[01:00] Quick Check:</strong> What official government department was created in March 1933 with Joseph Goebbels as its minister to control all German culture and information?</li><li><strong>[02:30] Hinge Question:</strong> How did the People's Receiver (<em>Volksempfänger</em>) affordable radio revolutionize mass propaganda and ensure Hitler's voice entered every German living room?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> The Reich Ministry of Public Enlightenment and Propaganda (<em>Propagandaministerium</em>).</li><li><strong>Hinge Question:</strong> Goebbels subsidized cheap, mass-produced radios costing only 76 marks (and designed with short-range receivers that could not pick up foreign broadcasts like the BBC). By 1939, 70% of German households owned a radio—the highest percentage in the world—allowing Nazi speeches and marches to be broadcast directly into citizens' private homes and communal loudspeakers.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:49 | Lesson Phase: Propaganda Principles | Tone Alert: High-level overview by the US Holocaust Memorial Museum detailing Joseph Goebbels' Ministry of Public Enlightenment and Propaganda.",
+          "viewing_task": "[00:45] Definition: According to Joseph Goebbels, what was the primary purpose of state propaganda in the Third Reich?\n[01:50] Media Monopolies: Name three distinct communication media that the Nazi regime seized and censored to control public opinion.",
+          "model_answer": "Goebbels argued propaganda was not merely informative but intended to unify the German people's mindset so all citizens thought and acted in lockstep with the Führer. The regime monopolised radio broadcasting, daily newspapers through the Reich Press Law, and cinema through compulsory newsreels and film approval."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=gKzZ1OWPXgk",
-          "title": "Imperial War Museums: The 1936 Berlin Olympic Games & Nazi Spectacle",
-          "duration": "9 mins 10 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Museum documentary analyzing how the 1936 Berlin Olympics were choreographed as a global propaganda triumph, Leni Riefenstahl's film *Olympia*, and Jesse Owens' four gold medals. Recommended Watch Window: 01:30–07:00 • Lesson Phase: Guided Instruction & Propaganda Spectacle. Tone Alert: Museum documentary featuring original archival film.",
-          "viewing_task": "<ol><li><strong>[02:15] Recall:</strong> Which visionary female film director was commissioned by Hitler to pioneer innovative cinematography for the documentary film <em>Olympia</em>?</li><li><strong>[04:30] Explain:</strong> How did the Nazi regime temporarily sanitize Berlin during the 1936 Olympics—removing anti-Semitic signs and toning down street violence—to dupe foreign tourists?</li><li><strong>[06:20] Challenge:</strong> How did African-American track star Jesse Owens winning four gold medals humiliate Hitler's core ideological theory of Aryan racial supremacy?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Leni Riefenstahl.</li><li><strong>Explain:</strong> To present Germany as a civilized, modern, and hospitable nation, Goebbels ordered the removal of \"Jews Not Wanted\" signs from hotels and parks, ceased anti-Semitic newspaper articles, ordered stormtroopers to be polite, and allowed an athlete of Jewish descent (Helene Mayer) onto the German fencing team.</li><li><strong>Challenge:</strong> Nazi racial mythology claimed that \"Aryan\" athletes were naturally superior in discipline and physical excellence to all other races. Owens decisively defeated German athletes in the 100m, 200m, 4x100m relay, and long jump, publicly disproving Nazi biological determinism on the world stage, deeply embarrassing the regime.</li></ol>"
+          "id": "aD6zpu0H6d4",
+          "url": "https://www.youtube.com/watch?v=aD6zpu0H6d4",
+          "title": "Nazi Germany Propaganda: The Radio (1923-45) | Simple History",
+          "duration": "6 mins 53 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:30 | Lesson Phase: Technological Indoctrination | Tone Alert: Explores the mass production of the Volksempfänger (People's Receiver), street loudspeakers, and criminal penalties for listening to foreign broadcasts.",
+          "viewing_task": "[01:20] Innovation: How did the Volksempfänger ensure Nazi messages reached millions of ordinary German households?\n[03:40] Control: Why were the cheaper radio sets intentionally manufactured without shortwave frequency dials?",
+          "model_answer": "The Volksempfänger (VE301) was subsidised to be sold cheaply for 76 marks (and later 35 marks), raising German household radio ownership to over 70% by 1939—the highest in the world. They were designed with limited range so ordinary citizens could only tune into domestic Nazi broadcasts and could not intercept foreign stations like the BBC."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=bF8h8K2kSfs",
-          "title": "DW Documentary: Art, Censorship & The 1937 Degenerate Art Exhibition",
-          "duration": "8 mins 20 secs",
-          "pathway": "Cultural Control",
-          "teacher_guidance": "Examines the Great German Art Exhibition versus the infamous \"Degenerate Art\" (*Entartete Kunst*) exhibition in Munich in 1937, book burnings, and the suppression of modernism. Recommended Watch Window: 01:00–06:30 • Lesson Phase: Guided Instruction & Cultural Censorship. Tone Alert: Critical arts documentary.",
-          "viewing_task": "<ol><li><strong>[01:40] Recall:</strong> What was the official title given to the 1937 Munich exhibition organized by Goebbels to mock, ridicule, and ban modern expressionist art?</li><li><strong>[03:45] Explain:</strong> What aesthetic qualities did official Nazi art celebrate in the \"Great German Art Exhibition\" (heroic peasants, classical Greek physiques, loyal Aryan mothers)?</li><li><strong>[06:00] Challenge:</strong> Explain the ironic outcome of the two contrasting 1937 Munich exhibitions in terms of public attendance and visitor engagement.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The \"Degenerate Art\" Exhibition (<em>Entartete Kunst</em>).</li><li><strong>Explain:</strong> Nazi art was strictly realistic, classical, and romantic: paintings depicted muscular blonde farmers tilling the soil, heroic soldiers in helmets, and serene blonde mothers with numerous babies, promoting physical strength, obedience, and racial health while banning abstract or distorted forms.</li><li><strong>Challenge:</strong> Ironically, over 2 million Germans visited the \"Degenerate Art\" exhibition—more than three times the number who visited the official Nazi art gallery—partly because citizens recognized it was their final opportunity to see world-class modern masterpieces before they were burned or sold abroad, while official Nazi art was widely felt to be dull and repetitive.</li></ol>"
-        },
-        {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/the-nazis-a-warning-from-history-episode-1-helped-into-power/",
-          "title": "BBC Two / ERA: Nazis A Warning From History – The \"Führer Myth\"",
-          "duration": "22 mins 00 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Ian Kershaw deconstructs the \"Hitler Myth\": how Goebbels constructed the image of Hitler as a selfless, solitary genius who had rescued Germany from economic ruin and national disgrace. Recommended Watch Window: 05:00–12:30 • Lesson Phase: High-Attainer Stretch & Historiographical Analysis. Tone Alert: Landmark BBC series by historian Laurence Rees.",
-          "viewing_task": "<ol><li><strong>[06:00] Recall:</strong> What common phrase did ordinary Germans use when complaining about corruption or incompetence among local Nazi officials, exonerating Hitler himself?</li><li><strong>[09:15] Explain:</strong> How did Nazi propaganda cultivate the image of Hitler as a modest, hardworking ascetic who sacrificed personal family life and wealth purely for the German nation?</li><li><strong>[11:50] Challenge:</strong> How did the \"Führer Myth\" allow Hitler to maintain immense personal popularity even when citizens disliked specific Nazi policies, food shortages, or church persecution?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> \"If only the Führer knew!\" (<em>Wenn das der Führer wüsste!</em>).</li><li><strong>Explain:</strong> Hitler was portrayed as living simply on tea and vegetables in his Bavarian mountain retreat, loving dogs and children, and working late into the night over maps, never marrying or indulging in personal luxury, presenting him as a selfless father figure dedicated solely to his people.</li><li><strong>Challenge:</strong> By decoupling Hitler from everyday party bureaucracy, Goebbels turned Hitler into a quasi-religious icon. When butter prices rose or Gestapo thuggery occurred, Germans blamed corrupt local \"Little Hitlers\" (*Bonzen*), believing that the Führer was honest and well-meaning but betrayed by incompetent underlings, preserving his legitimacy.</li></ol>"
+          "id": "27HtAT5CsLY",
+          "url": "https://www.youtube.com/watch?v=27HtAT5CsLY",
+          "title": "The 1936 Berlin Olympics: Unveiling a Nazi Propaganda Masterpiece",
+          "duration": "2 mins 53 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:53 | Lesson Phase: International Showcase | Tone Alert: Documents how Hitler and Goebbels presented a modern, peaceful, and clean image of Germany during the Berlin Olympic Games.",
+          "viewing_task": "[00:55] Façade: How did the Nazi regime temporarily sanitize Berlin during the August 1936 Olympic Games?\n[01:50] Disruption: How did Jesse Owens' extraordinary performance in Berlin challenge Nazi racial theories of Aryan supremacy?",
+          "model_answer": "Antisemitic signs ('Jews not wanted here') and the vicious tabloid Der Stürmer were temporarily removed from Berlin streets, presenting a tranquil and welcoming image to foreign visitors. African-American sprinter Jesse Owens won four gold medals, humiliating Hitler's claims of Aryan biological and athletic supremacy before a global audience."
         }
       ],
       "pair_share": {
@@ -13606,6 +13553,14 @@ export default {
           {
             "question": "What was the legal decree passed after the February 1933 fire that suspended civil liberties? (Prior Topic)",
             "answer": "The Reichstag Fire Emergency Decree."
+          },
+          {
+            "question": "What major financial pact in 1929 reduced German reparations to £2 billion and extended payment over 59 years? (Prior Topic)",
+            "answer": "The Young Plan."
+          },
+          {
+            "question": "In what city was the 1919 constitution for the new German democratic republic drafted and approved? (Prior Topic)",
+            "answer": "Weimar (giving the republic its popular historical name)."
           }
         ]
       },
@@ -14258,43 +14213,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=F0Z74k0Vv4M",
-          "title": "Simple History: Youth Resistance – The Edelweiss Pirates & Swing Kids",
-          "duration": "4 mins 10 secs",
+          "id": "eJwnjFlYsyQ",
+          "url": "https://www.youtube.com/watch?v=eJwnjFlYsyQ",
+          "title": "Opposition, Resistance & Conformity: The Swing Youth and the Edelweiss Pirates",
+          "duration": "12 mins 13 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated explainer of youth counter-cultures: the working-class Edelweiss Pirates (camping, hiking, brawling with Hitler Youth) and the middle-class Swing Youth (jazz, long hair, British clothes). Recommended Watch Window: 00:00–04:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview of youth nonconformity.",
-          "viewing_task": "<ol><li><strong>[00:50] Quick Check:</strong> What flower symbol was worn on the lapels of working-class youth who rebelled against the Hitler Youth and ambushed patrol units?</li><li><strong>[02:40] Hinge Question:</strong> Why was active political resistance against the Nazi regime between 1933 and 1939 so extremely difficult, dangerous, and isolated?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> The Edelweiss flower badge (pinned under their collar).</li><li><strong>Hinge Question:</strong> Totalitarian surveillance by the Gestapo, harsh concentration camp penalties for minor dissent, the ban on trade unions and rival political parties, and the widespread popularity of Hitler following economic recovery and foreign policy successes left opponents isolated and terrified of denunciation.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Youth Nonconformity | Tone Alert: Explores working-class youth rebellion (Edelweiss Pirates) versus middle-class cultural defiance (Swing Youth).",
+          "viewing_task": "[02:15] Cultural Resistance: In what ways did the Swing Youth express their rebellion against Nazi cultural regimentation?\n[04:30] Active Defiance: How did the Edelweiss Pirates in the Rhineland escalate from mocking Hitler Youth marches to sheltering deserters?",
+          "model_answer": "Swing Youth listened to banned American jazz and swing music, dressed in English clothes, and danced in clubs, rejecting Nazi militarism and racial purism. Edelweiss Pirates began by beating up Hitler Youth patrols and camping freely, but during wartime escalated to graffiti, distributing allied leaflets, and derailing munitions trains."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=gKzZ1OWPXgk",
-          "title": "The History Channel: Religious Resistance – Martin Niemöller & Cardinal Galen",
-          "duration": "8 mins 45 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Examines church opposition: Pastor Martin Niemöller, the Pastors' Emergency League, the Confessing Church, and Catholic opposition following Pope Pius XI's 1937 encyclical *Mit Brennender Sorge*. Recommended Watch Window: 01:15–06:45 • Lesson Phase: Guided Instruction & Religious Conflict. Tone Alert: Tense documentary exploring theological defiance.",
-          "viewing_task": "<ol><li><strong>[01:45] Recall:</strong> What rival Protestant organization was founded by Pastor Martin Niemöller and Dietrich Bonhoeffer in 1934 to resist the state-controlled \"German Christians\"?</li><li><strong>[04:10] Explain:</strong> Explain the content and dramatic delivery of Pope Pius XI's 1937 encyclical <em>Mit Brennender Sorge</em> (\"With Burning Anxiety\"), and how it was smuggled into Germany.</li><li><strong>[06:20] Challenge:</strong> Evaluate the limits of religious resistance in Nazi Germany: why did the Catholic and Protestant churches protest against interference in their own doctrines while largely remaining silent on anti-Semitic persecution?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The Confessing Church (<em>Bekennende Kirche</em>).</li><li><strong>Explain:</strong> The encyclical condemned Nazi racial idolatry, the cult of state supremacy, and violations of the 1933 Concordat. Smuggled secretly into Germany by courier, it was printed secretly in Catholic print shops and read out from every Catholic pulpit on Palm Sunday 1937, taking the regime by complete surprise.</li><li><strong>Challenge:</strong> Both churches prioritized institutional survival, safeguarding their schools, youth groups, and property. While church leaders like Niemöller bravely resisted the nazification of Christian theology and the Aryan Paragraph inside the clergy, they shared traditional conservative German nationalism and deeply rooted theological anti-Judaism, generally refusing to challenge the regime's discriminatory laws against Jewish citizens.</li></ol>"
+          "id": "ZtOKRsF6Rr0",
+          "url": "https://www.youtube.com/watch?v=ZtOKRsF6Rr0",
+          "title": "The Secret Student Resistance to Hitler | TED-Ed (Iseult Gillespie)",
+          "duration": "5 mins 32 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:32 | Lesson Phase: Student Resistance | Tone Alert: Beautifully animated account of Sophie Scholl, Hans Scholl, and the White Rose resistance movement at Munich University.",
+          "viewing_task": "[01:45] Intellectual Dissent: What prompted Hans and Sophie Scholl to form the White Rose resistance group?\n[03:50] Consequence: How were the White Rose leaflets distributed, and what was the fate of the students upon discovery in 1943?",
+          "model_answer": "Witnessing battlefield atrocities on the Eastern Front and learning of the extermination of Jewish civilians compelled them to awaken the German conscience. They secretly mailed and distributed leaflets calling for passive resistance against Hitler; in February 1943 they were caught dropping leaflets at Munich University, subjected to a sham trial by Roland Freisler, and executed by guillotine."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=bF8h8K2kSfs",
-          "title": "DW History: Why Did So Few Germans Resist Hitler? Terror & Conformity",
-          "duration": "9 mins 20 secs",
-          "pathway": "Historiographical Debate",
-          "teacher_guidance": "Historiographical discussion on consent versus coercion: the benefits of full employment, national pride, terror of the Gestapo, and the distinction between nonconformity and active resistance. Recommended Watch Window: 01:30–07:00 • Lesson Phase: Guided Instruction & Historical Interpretation. Tone Alert: Scholarly debate featuring leading German historians.",
-          "viewing_task": "<ol><li><strong>[02:00] Recall:</strong> What term do historians use to distinguish between passive social grumbling or nonconformity (*Resistenz*) and active, organized attempts to overthrow the regime (*Widerstand*)?</li><li><strong>[04:20] Explain:</strong> How did genuine economic improvements (full employment, cheap holidays, autobahns) create broad consent among ordinary German workers?</li><li><strong>[06:30] Challenge:</strong> Historiographical controversy: Was Nazi Germany primarily a \"Dictatorship of Consent\" where most citizens willingly supported the regime, or a \"Terror State\" sustained by fear?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> <em>Resistenz</em> (passive dissent/non-compliance) versus <em>Widerstand</em> (active political resistance).</li><li><strong>Explain:</strong> Millions of workers remembered the desperate poverty, hunger, and 6 million unemployed of the Weimar Republic. Even if they disliked regimentation, they were grateful for regular pay packets, paid vacations through Strength Through Joy, and the restoration of national order.</li><li><strong>Challenge:</strong> Modern historians (like Ian Kershaw and Robert Gellately) argue that consent and terror reinforced each other. For the broad majority of ethnic \"Aryan\" Germans who conformed, the regime provided jobs, pride, and order, making active terror largely invisible. However, that consent was backstopped by the ruthless, visible terror applied to the minority who refused to conform: Communists, Jews, Jehovah's Witnesses, and dissidents, demonstrating that consent rested upon a foundation of coercive fear.</li></ol>"
-        },
-        {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/history-file-nazi-germany-opposition-channel-4/",
-          "title": "BBC History File / ERA: Opposition to Hitler – Workers, Youth & The Military",
-          "duration": "20 mins 00 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Archival case studies of underground opposition: the SPD in exile (SOPADE), illegal communist pamphlets, the Krefeld street brawls, and the Beck-Goerdeler military circle. Recommended Watch Window: 04:00–12:00 • Lesson Phase: High-Attainer Stretch & Underground Networks. Tone Alert: Classic educational documentary with primary oral testimonies.",
-          "viewing_task": "<ol><li><strong>[05:15] Recall:</strong> What was the name of the exiled Social Democratic Party organization based in Prague and Paris that compiled underground intelligence reports from inside Germany?</li><li><strong>[08:30] Explain:</strong> How did underground Communist factory cells distribute anti-Nazi leaflets (such as disguising pamphlets as seed packets or shampoo guides)?</li><li><strong>[11:00] Challenge:</strong> Why did early military plots to overthrow Hitler—such as General Ludwig Beck and the 1938 Oster Conspiracy during the Czech Crisis—abruptly collapse when Britain and France signed the Munich Agreement?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> SOPADE.</li><li><strong>Explain:</strong> Because possession of anti-Nazi literature meant immediate execution or Dachau, communist groups printed tiny leaflets disguised as common household items like tomato seed packets, engine oil brochures, or sewing instructions, leaving them in factory restrooms and telephone boxes.</li><li><strong>Challenge:</strong> General Beck and the conspirators had planned to arrest Hitler the moment he ordered an invasion of Czechoslovakia, believing the German military was unready and that a world war would destroy Germany. When British Prime Minister Neville Chamberlain flew to Munich and handed the Sudetenland to Hitler without a shot, Hitler achieved a triumph that made him revered as a diplomatic genius, making an army coup politically impossible.</li></ol>"
+          "id": "IgPKPKi4KNk",
+          "url": "https://www.youtube.com/watch?v=IgPKPKi4KNk",
+          "title": "Martin Niemöller and The Sin of Silence",
+          "duration": "3 mins 23 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:23 | Lesson Phase: Church Resistance & Conformity | Tone Alert: Explores Pastor Martin Niemöller's courageous public stand, the psychology of bystander complicity, and his famous post-war poem.",
+          "viewing_task": "[01:10] Resistance Message: What is the core warning of Niemöller's poem 'First they came for the socialists...'?\n[02:30] Historical Assessment: Why did the vast majority of ordinary Germans conform to the Nazi regime between 1933 and 1939 rather than actively resist?",
+          "model_answer": "Niemöller warned that remaining silent when minorities are persecuted ensures that when tyranny turns on you, there will be no one left to speak out. Most ordinary Germans conformed due to fear of the Gestapo terror apparatus, genuine appreciation for economic recovery, jobs, and national pride, and effective propaganda."
         }
       ],
       "pair_share": {
@@ -14701,43 +14649,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=AUZIYQFM7mQ",
-          "title": "The History Teacher: Life for Women in Weimar and Nazi Germany",
-          "duration": "5 mins 15 secs",
+          "id": "arCs4X2rko4",
+          "url": "https://www.youtube.com/watch?v=arCs4X2rko4",
+          "title": "Life for Women: Weimar and Nazi Germany | GCSE History Revision",
+          "duration": "6 mins 05 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Concise Edexcel GCSE revision lecture contrasting the Weimar \"New Woman\" with the Nazi focus on Kinder, Küche, Kirche (Children, Kitchen, Church). Recommended Watch Window: 00:00–04:30 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced revision lecture.",
-          "viewing_task": "<ol><li><strong>[01:00] Quick Check:</strong> What German phrase summarized the regime's ideal role for women (Children, Kitchen, Church)?</li><li><strong>[02:40] Hinge Question:</strong> How did the Law for the Encouragement of Marriage (1933) use financial loans to push women out of the workforce and boost the birth rate?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> <em>Kinder, Küche, Kirche</em>.</li><li><strong>Hinge Question:</strong> Newlyweds received a government loan voucher of 1,000 marks (worth roughly nine months' wages for an average worker) on the strict condition that the bride left her employment. For every child born to the couple, 250 marks (25%) of the loan repayment was permanently cancelled, so having four children erased the entire debt.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Domestic Ideology | Tone Alert: Examines Kinder, Küche, Kirche (Children, Kitchen, Church), the Law for the Encouragement of Marriage (1933), and the Mother's Cross.",
+          "viewing_task": "[01:15] Financial Incentive: How did the 1933 Marriage Loan scheme encourage German women to leave employment and have children?\n[03:30] Awards: What were the criteria for receiving Bronze, Silver, and Gold Honor Crosses of the German Mother?",
+          "model_answer": "Newlywed couples were given an interest-free loan of 1,000 marks (worth roughly 9 months' pay) on the condition that the bride left her job; for every child born, 25% of the loan was written off, making four children clear the entire debt. The Mother's Cross was awarded on Hitler's mother's birthday: Bronze for 4–5 children, Silver for 6–7, and Gold for 8 or more."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=F0Z74k0Vv4M",
-          "title": "Simple History: The Mother's Cross & Lebensborn in Nazi Germany",
-          "duration": "6 mins 45 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Animated explainer of the Mother's Cross medals (Bronze, Silver, Gold), tax concessions, and Heinrich Himmler's covert SS *Lebensborn* program. Recommended Watch Window: 01:00–05:45 • Lesson Phase: Guided Instruction & Gender Policy Analysis. Tone Alert: Critical historical overview of reproductive coercion.",
-          "viewing_task": "<ol><li><strong>[01:30] Recall:</strong> How many children did a German mother need to give birth to in order to receive the prestigious Gold Cross of Honour of the German Mother?</li><li><strong>[03:20] Explain:</strong> What social privileges and public honors did awardees of the Mother's Cross enjoy in their daily communities?</li><li><strong>[05:10] Challenge:</strong> Explain the fatal ideological contradiction that emerged by 1937–39 between the Nazi policy of confining women to the domestic home and the desperate labor demands of four-year rearmament.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Eight or more children (Bronze for 4–5, Silver for 6–7, Gold for 8+).</li><li><strong>Explain:</strong> Hitler Youth members were required to salute Mother's Cross recipients in the street; mothers received preferential seating on public trams and trains, jumped queues at food markets, and had annual birthday visits from local Nazi officials.</li><li><strong>Challenge:</strong> As Göring's Four-Year Plan ramped up heavy industrial arms factories and millions of young men were conscripted into the Wehrmacht, Germany faced severe industrial labor shortages. The regime was forced to reverse its rhetoric, introducing the \"Duty Year\" in 1938 and urging women back into munitions factories, showing that war preparations overrode domestic ideology.</li></ol>"
+          "id": "Ma4ZlCSbPBM",
+          "url": "https://www.youtube.com/watch?v=Ma4ZlCSbPBM",
+          "title": "Kinder, Küche, Kirche: Nazi Germany’s Campaign to Push Women Back Home",
+          "duration": "8 mins 54 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Professional Restrictions | Tone Alert: Documents how female civil servants, doctors, and teachers were dismissed from professional roles, followed by the wartime policy reversal.",
+          "viewing_task": "[02:10] Employment Purge: Which professional fields were German women barred from entering in the early years of the Third Reich?\n[04:40] Policy Contradiction: Why was the Nazi regime forced to reverse its anti-female employment policy after rearmament began in 1937?",
+          "model_answer": "Women were dismissed from civil service positions, excluded from the judiciary as judges and lawyers, and restricted to no more than 10% of university places. As rearmament accelerated and men were conscripted into the Wehrmacht, severe industrial labour shortages forced the regime to re-employ over 1.4 million women in factories by 1939."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=7_hL44v4o44",
-          "title": "DW Documentary: Women Under Hitler – Between Ideology and War Economy",
-          "duration": "8 mins 30 secs",
-          "pathway": "Social Perspective",
-          "teacher_guidance": "Examines the purging of female doctors, lawyers, and civil servants in 1933, the Nazi Women's League (*Frauenwerk*), and oral histories of German housewives. Recommended Watch Window: 01:15–06:45 • Lesson Phase: Guided Instruction & Primary Testimonies. Tone Alert: Rigorous social history documentary from Deutsche Welle.",
-          "viewing_task": "<ol><li><strong>[01:45] Recall:</strong> In what year were female civil servants and teachers dismissed from state employment, and female lawyers banned from practicing law?</li><li><strong>[03:40] Explain:</strong> How did Gertrud Scholtz-Klink's National Socialist Women's League (<em>NS-Frauenschaft</em>) train millions of German housewives in domestic cooking, nutrition, and avoiding foreign imports?</li><li><strong>[06:00] Challenge:</strong> Evaluate the contrasting experiences of working-class women compared to educated middle-class professionals under Nazi rule between 1933 and 1939.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> 1933 (with female judges and lawyers banned in 1936).</li><li><strong>Explain:</strong> It organized nationwide cookery courses instructing women how to cook cheap one-pot meals (<em>Eintopf</em>) on Sundays, preserve homegrown vegetables, and make clothes last longer, aligning domestic homemaking with national autarky and saving money for the state rearmament fund.</li><li><strong>Challenge:</strong> Educated middle-class professional women saw their careers destroyed, university enrollments capped at 10%, and positions in medicine and law stripped away. In contrast, many working-class rural and suburban housewives welcomed marriage loans, child allowances, and the public prestige accorded to motherhood, feeling elevated by regime propaganda.</li></ol>"
-        },
-        {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/history-file-nazi-germany-women-family/",
-          "title": "BBC History File / ERA: Women's Exclusion & The Family (1933–1939)",
-          "duration": "20 mins 00 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Classic BBC educational documentary examining compulsory sterilizations under the 1933 Hereditary Health Law, racial hygiene clinics, and the policing of private family life. Recommended Watch Window: 04:00–12:00 • Lesson Phase: High-Attainer Stretch & Eugenics Analysis. Tone Alert: Sombre archival documentary analyzing racial-hygiene laws.",
-          "viewing_task": "<ol><li><strong>[05:00] Recall:</strong> Approximately how many German citizens were forcibly sterilized under the July 1933 Law for the Prevention of Hereditarily Diseased Offspring?</li><li><strong>[08:15] Explain:</strong> How did the regime regulate marriage certificates through hereditary health courts to prevent \"genetically unfit\" Germans from having children?</li><li><strong>[11:00] Challenge:</strong> How did Nazi family policy dismantle the traditional boundary between private domestic life and the totalitarian state?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Approximately 400,000 people (for alleged conditions like congenital feeblemindedness, schizophrenia, or hereditary alcoholism).</li><li><strong>Explain:</strong> Couples were required to undergo medical examinations and obtain a \"Certificate of Fitness for Marriage\" from racial hygiene clinics before obtaining a marriage license, banning marriages involving hereditary defects or non-Aryan racial heritage.</li><li><strong>Challenge:</strong> The family was no longer a private sanctuary; reproduction, child-rearing, domestic consumption, and genetic health were made properties of the state. Children were encouraged to report unpatriotic parents, mothers were judged purely on genetic output for the army, and the state claimed total ownership over the bodies and minds of all family members.</li></ol>"
+          "id": "KlEKn6Bw6FQ",
+          "url": "https://www.youtube.com/watch?v=KlEKn6Bw6FQ",
+          "title": "Child of Lebensborn: The Racial Breeding Programme (JFI Short Documentary)",
+          "duration": "14 mins 39 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:30 | Lesson Phase: Racial Engineering | Tone Alert: Focuses on Heinrich Himmler's Lebensborn (Fount of Life) breeding homes aimed at raising the Aryan birth rate.",
+          "viewing_task": "[01:30] Programme Purpose: What was the primary ideological objective of Heinrich Himmler's Lebensborn programme founded in 1935?\n[03:15] Historical Significance: How did Lebensborn reflect the Nazi view of human beings as biological breeding assets for the state?",
+          "model_answer": "Lebensborn was created by the SS to encourage racially 'pure' unmarried Aryan women to bear children fathered by SS officers in secret maternity homes, with babies adopted by SS families. It treated women and infants as instruments of racial engineering, stripping away personal identity to populate the Reich with genetically engineered Aryans."
         }
       ],
       "learning_objectives": {
@@ -14784,6 +14725,14 @@ export default {
           {
             "question": "What catastrophic economic event in October 1929 plunged Germany into mass unemployment? (Prior Topic)",
             "answer": "The Wall Street Crash in the United States."
+          },
+          {
+            "question": "What emergency decree did Hindenburg sign after the Reichstag Fire in February 1933, suspending civil liberties? (Prior Topic)",
+            "answer": "The Decree for the Protection of People and State (Reichstag Fire Decree)."
+          },
+          {
+            "question": "What law passed in March 1933 gave Hitler dictatorial power to enact legislation without the Reichstag? (Prior Topic)",
+            "answer": "The Enabling Act (Gesetz zur Behebung der Not von Volk und Reich)."
           }
         ]
       },
@@ -15877,6 +15826,14 @@ export default {
           {
             "question": "Which Weimar Foreign Minister negotiated the Locarno Treaties (1925) and entry into the League of Nations? (Prior Topic)",
             "answer": "Gustav Stresemann."
+          },
+          {
+            "question": "What violent purge took place between 30 June and 2 July 1934 to eliminate Ernst Röhm and the SA leadership? (Prior Topic)",
+            "answer": "The Night of the Long Knives (Operation Hummingbird)."
+          },
+          {
+            "question": "What oath did all German armed forces take on 2 August 1934 following President Hindenburg's death? (Prior Topic)",
+            "answer": "A personal oath of unconditional loyalty and obedience to Adolf Hitler as Führer and Supreme Commander."
           }
         ]
       },
@@ -16540,43 +16497,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Y7h_s7j87vM",
-          "title": "Cinematic: Swing Kids (1993) – Hitler Youth Regimentation vs Underground Swing Rebellion",
-          "duration": "2 mins 30 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Theatrical feature film clip starring Christian Bale and Robert Sean Leonard. Contrasts the rigid military drills, uniforms, and ideological conformity of the Hitler Youth with the exuberant, clandestine swing dancing and jazz music of the Hamburg \"Swing Kids\". Recommended Watch Window: 00:00–02:30 (Full Clip) • Lesson Phase: Cinematic Starter Hook. Discussion Prompt: Totalitarian youth conformity vs cultural nonconformity.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Contrast the brutal physical drill, ideological lectures, and conformity of the Hitler Youth with the wild, exuberant American jazz dancing of the Hamburg \"Swing Kids\". Why did the Nazi regime view listening to Benny Goodman jazz records and wearing long hair not merely as teenage disobedience, but as dangerous political treason worthy of Gestapo arrest?</p>",
-          "model_answer": "<p><strong>Teacher Discussion Pointers:</strong> The clip vividly dramatizes the totalizing nature of the Nazi regime: it demanded 100% control over the hearts, minds, and leisure time of German youth. American swing and jazz was banned as \"degenerate negro music\" (<em>Negermusik</em>); celebrating Western individuality, Anglo-American slang, and uninhibited dancing was a direct ideological rebellion against the robotic militarism and racial purity demanded by the Third Reich, prompting Himmler to order Swing Kids sent to concentration camps.</p>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=F0Z74k0Vv4M",
-          "title": "Simple History: The Hitler Youth & League of German Girls",
-          "duration": "4 mins 10 secs",
+          "id": "_oxRrigvLEk",
+          "url": "https://www.youtube.com/watch?v=_oxRrigvLEk",
+          "title": "What Was the Hitler Youth? | Holocaust Explainer (USHMM)",
+          "duration": "3 mins 44 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated overview of the Hitler Youth (*Hitlerjugend*) for boys and the League of German Girls (*Bund Deutscher Mädel*) for girls, weekend camps, marches, and mandatory service. Recommended Watch Window: 00:00–04:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview of youth indoctrination.",
-          "viewing_task": "<ol><li><strong>[01:00] Quick Check:</strong> In what year was membership in the Hitler Youth (HJ) and League of German Girls (BDM) made legally compulsory for all eligible 10-to-18-year-old German children?</li><li><strong>[02:50] Hinge Question:</strong> How was the school curriculum systematically rewritten across History, Biology, and PE to prepare boys for military conquest and girls for motherhood?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> 1939 (having been made the sole legal youth organization in 1936).</li><li><strong>Hinge Question:</strong> History glorified German military victories and the \"stab-in-the-back\"; Biology taught pseudo-scientific racial hierarchy and eugenics; and PE was expanded to 15% of school time with boxing, grenade-throwing, and route-marches for boys to build aggressive soldiers, while girls practiced gymnastics and mothercraft.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:44 | Lesson Phase: Youth Organisations | Tone Alert: USHMM educational summary of the Hitler Youth (HJ) and League of German Girls (BDM), mandatory membership from 1936/1939.",
+          "viewing_task": "[01:00] Activities: What different skills were emphasised for boys in the Hitler Youth compared to girls in the Bund Deutscher Mädel (BDM)?\n[02:30] Loyalty: How did youth groups aim to replace family and religious loyalty with total allegiance to Adolf Hitler?",
+          "model_answer": "Boys focused on military drill, weapons cleaning, map-reading, obstacle courses, and endurance camping to prepare them for military service. Girls focused on physical fitness, gymnastics, camp cooking, hygiene, and mothercraft to prepare them for motherhood; both groups encouraged children to inform on parents if they expressed doubts about Hitler."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=gKzZ1OWPXgk",
-          "title": "Imperial War Museums: Indoctrination in Schools – The Nazi Curriculum",
-          "duration": "8 mins 50 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Museum documentary analyzing primary school textbooks, anti-Semitic children's books like *The Poisonous Mushroom*, and the Nazification of the teaching profession. Recommended Watch Window: 01:15–06:45 • Lesson Phase: Guided Instruction & Primary Curriculum Deconstruction. Tone Alert: Museum documentary showcasing original Nazi school readers.",
-          "viewing_task": "<ol><li><strong>[01:40] Recall:</strong> What professional organization was founded in 1929 that 97% of all German school teachers were forced to join by 1937?</li><li><strong>[03:45] Explain:</strong> How were math problems rewritten to embed military calculations (bombing raid flight paths) and economic arguments against caring for the mentally disabled?</li><li><strong>[06:00] Challenge:</strong> How did Nazi education dismantle parental authority by encouraging children to view Adolf Hitler, rather than their own parents, as their primary moral guide?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The National Socialist Teachers' League (<em>Nationalsozialistischer Lehrerbund</em> or NSLB).</li><li><strong>Explain:</strong> Math textbooks presented word problems calculating the fuel required by bombers to destroy enemy cities or the millions of marks wasted caring for a mentally ill patient compared to building modern workers' flats, conditioning children to view human life purely through utilitarian, military, and racial-hygiene terms.</li><li><strong>Challenge:</strong> Children were taught that their ultimate loyalty belonged to the *Volk* and the *Führer*. Youth leaders encouraged pupils to challenge or report parents who spoke critically of Hitler at the dinner table, driving a wedge between generations and replacing the family with the totalitarian collective.</li></ol>"
+          "id": "B5E7WR8TINI",
+          "url": "https://www.youtube.com/watch?v=B5E7WR8TINI",
+          "title": "Oath and Opposition: Education in the Third Reich | USHMM",
+          "duration": "4 mins 40 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:40 | Lesson Phase: School Curriculum & Indoctrination | Tone Alert: Explores how biology, history, and physical education curricula were militarised and infused with racial science.",
+          "viewing_task": "[01:15] Curriculum Transformation: How was the school curriculum rewritten to promote antisemitism and racial hygiene in biology and history?\n[03:20] Teacher Control: What was the National Socialist Teachers' League (NSLB), and what happened to teachers who refused to conform?",
+          "model_answer": "Biology was repurposed to teach racial hierarchy and eugenics, history glorified German military past and scapegoated Jews for the 1918 defeat, and math problems calculated bombing distances and costs of caring for the disabled. Teachers were forced to join the NSLB and swear loyalty to Hitler; Jewish teachers and political dissidents were purged immediately in 1933."
         },
         {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/history-file-nazi-germany-youth-education/",
-          "title": "BBC History File / ERA: Youth in Hitler's Germany – Education & Indoctrination",
-          "duration": "21 mins 30 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Interviews with former Hitler Youth members and educators: military training at Napola and Ordensburgen elite schools, dagger ceremonies, and peer intimidation. Recommended Watch Window: 05:00–13:00 • Lesson Phase: High-Attainer Stretch & Eyewitness Reflection. Tone Alert: Gripping oral history documentary.",
-          "viewing_task": "<ol><li><strong>[06:00] Recall:</strong> What special elite boarding schools (*Nationalpolitische Erziehungsanstalten*) were set up to train the future military and SS leadership cadre?</li><li><strong>[09:15] Explain:</strong> What ceremonial dagger inscribed with the motto \"Blood and Honour\" (<em>Blut und Ehre</em>) was awarded to 14-year-old boys upon initiation into the senior Hitler Youth?</li><li><strong>[12:20] Challenge:</strong> Why did many German children initially find the Hitler Youth exciting and liberating, and at what point did enthusiasm turn into resentment and rebellion?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Napolas (or *Ordensburgen* for university-age Nazi elite).</li><li><strong>Explain:</strong> The *Hitler-Jugend-Fahrtenmesser* (Hitler Youth knife) inscribed with \"Blut und Ehre\", handed over in solemn midnight oath ceremonies around bonfires to symbolize their commitment to die for the Führer.</li><li><strong>Challenge:</strong> Initially, camping trips, sports, uniforms, campfires, and shooting rifles gave children a thrilling sense of adventure, equality, and independence from parents and teachers. However, as the 1930s progressed, fun camping gave way to harsh, repetitive military drilling, exhausting route marches, sadistic hazing by older teenage squad leaders, and Gestapo-style regimentation, sparking disillusionment and the rise of rebel gangs like the Edelweiss Pirates.</li></ol>"
+          "type": "youtube",
+          "id": "wFkb7vYZp8U",
+          "url": "https://www.youtube.com/watch?v=wFkb7vYZp8U",
+          "title": "Nazi Germany: Tomorrow's Wives and Warriors | timelinesTV",
+          "duration": "2 mins 48 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:48 | Lesson Phase: Visual Archival Footage | Tone Alert: Superb archival newsreel footage showing Hitler Youth assemblies, Nuremberg rally parades, and the militarisation of childhood.",
+          "viewing_task": "[00:45] Visual Evidence: How do the archival images demonstrate the physical regimentation of German children under the Nazi regime?\n[01:50] Evaluation: Why did some young Germans find the outdoor adventures of the Hitler Youth thrilling while others felt suffocated?",
+          "model_answer": "Newsreels show massive synchronized parades, uniform brown shirts, drum cadences, and military camp formations, instilling unquestioning obedience. Many working-class boys loved the camping, hiking, shooting, and escape from strict schooling, but others detested the harsh bullying, mindless repetitive drills, and loss of free weekends."
         }
       ],
       "pair_share": {
@@ -17026,6 +16976,14 @@ export default {
           {
             "question": "What Dutch communist was executed for setting fire to the Reichstag building in February 1933? (Prior Topic)",
             "answer": "Marinus van der Lubbe."
+          },
+          {
+            "question": "Who was appointed Minister of Public Enlightenment and Propaganda in March 1933? (Prior Topic)",
+            "answer": "Dr Joseph Goebbels."
+          },
+          {
+            "question": "What secret state police force, created by Hermann Göring and later commanded by Heinrich Himmler, operated above the law? (Prior Topic)",
+            "answer": "The Gestapo (Geheime Staatspolizei)."
           }
         ]
       },
@@ -17730,43 +17688,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=F0Z74k0Vv4M",
-          "title": "Simple History: The Nazi Economic Miracle – RAD, Autobahns & Rearmament",
-          "duration": "4 mins 20 secs",
+          "id": "SVSUBSiAtGA",
+          "url": "https://www.youtube.com/watch?v=SVSUBSiAtGA",
+          "title": "Policies to Reduce Unemployment: Weimar and Nazi Germany | GCSE History Revision",
+          "duration": "5 mins 30 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated explainer tracking Hjalmar Schacht's economic recovery: the Reich Labour Service (RAD), autobahn construction, four-year plans, and military rearmament. Recommended Watch Window: 00:00–04:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview of economic policies.",
-          "viewing_task": "<ol><li><strong>[01:10] Quick Check:</strong> What mandatory public work service was established in 1935, requiring all 18-to-25-year-old men to perform six months of manual labor?</li><li><strong>[02:40] Hinge Question:</strong> How did the Nazis manipulate official unemployment statistics through \"invisible unemployment\" (excluding Jews, women, and conscripted youths)?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> The Reich Labour Service (<em>Reichsarbeitsdienst</em> or RAD).</li><li><strong>Hinge Question:</strong> Official statistics eliminated millions of jobless people from the registers: Jews stripped of citizenship were uncounted; married women forced from jobs were excluded; hundreds of thousands of men in the RAD or conscripted into the army were counted as employed; and political prisoners in concentration camps were erased from registries, exaggerating the real \"miracle\".</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: The 'Economic Miracle' | Tone Alert: Analyzes the National Labour Service (RAD), autobahn public works, invisible unemployment, and rearmament.",
+          "viewing_task": "[01:25] Compulsory Labour: What was the Reich Labour Service (RAD), and who was required to serve in it?\n[03:15] Invisible Unemployment: Identify two ways Nazi official unemployment figures were artificially reduced without creating real private-sector jobs.",
+          "model_answer": "From 1935, all 18–25 year-old men had to complete 6 months of manual labour in the RAD (clearing land, building motorways) for pocket money. Unemployment figures hid millions: Jews stripped of citizenship were excluded, women pressured out of work were uncounted, unmarried men in RAD were counted as employed, and political prisoners in camps were omitted."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=bF8h8K2kSfs",
-          "title": "DW History: Strength Through Joy (KdF) & The Volkswagen Scheme",
-          "duration": "8 mins 40 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Examines Robert Ley's DAF sub-organization *Kraft durch Freude* (KdF): subsidized Mediterranean cruises, theatre tickets, the Prora seaside resort on Rügen, and the 5-mark-a-week Volkswagen savings stamp swindle. Recommended Watch Window: 01:15–06:45 • Lesson Phase: Guided Instruction & Consumer Deception. Tone Alert: Fascinating social documentary from Deutsche Welle.",
-          "viewing_task": "<ol><li><strong>[01:45] Recall:</strong> What was the official German name of the massive leisure and tourism organization *Strength Through Joy*, and who was its eccentric leader?</li><li><strong>[03:50] Explain:</strong> Explain how the \"People's Car\" (Volkswagen / KdF-Wagen) savings stamp scheme worked, and why no ordinary German buyer ever received their car before WWII.</li><li><strong>[06:00] Challenge:</strong> How did the *Beauty of Labour* (<em>Schönheit der Arbeit</em>) initiative persuade workers to finance factory improvements and renovate canteens out of their own pockets?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> <em>Kraft durch Freude</em> (KdF), directed by German Labour Front chief Dr. Robert Ley.</li><li><strong>Explain:</strong> Workers purchased a savings booklet and bought 5-mark stamps weekly, promised a brand-new family car when they accumulated 750 marks. However, when war broke out in 1939, the Wolfsburg factory was immediately converted to manufacture military Kübelwagen jeeps; all civilian savings were confiscated by the state and not a single German citizen received a vehicle.</li><li><strong>Challenge:</strong> Instead of forcing wealthy industrialists to pay for factory improvements, the regime mobilized workers on weekends and after shifts to paint walls, install showers, and build cleaner canteens themselves without extra pay, boosting productivity and morale while shifting capital costs directly onto the labor force.</li></ol>"
+          "id": "88Yoy6L2tXM",
+          "url": "https://www.youtube.com/watch?v=88Yoy6L2tXM",
+          "title": "Strength Through Joy (1938) | British Pathé Archival Film",
+          "duration": "1 mins 06 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–01:06 | Lesson Phase: Kraft durch Freude (KdF) | Tone Alert: Authentic 1938 newsreel footage of workers boarding subsidized cruise liners to Madeira and the Norwegian fjords.",
+          "viewing_task": "[00:25] Primary Source Observation: How does this 1938 newsreel present the recreational activities of ordinary German industrial workers?\n[00:50] Purpose of KdF: Why did Dr Robert Ley and the German Labour Front (DAF) invest heavily in affordable leisure and vacations?",
+          "model_answer": "The newsreel portrays happy, sunbathing factory workers enjoying luxury ocean cruises previously reserved only for the wealthy elite. Robert Ley used KdF to reward hard work, pacify workers whose trade unions and strikes had been banned, and boost industrial productivity for rearmament."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=7_hL44v4o44",
-          "title": "The History Channel: The German Labour Front (DAF) & Standard of Living",
-          "duration": "7 mins 30 secs",
-          "pathway": "Economic Reality",
-          "teacher_guidance": "Deconstructs standard of living: wage freezes, rising food prices, longer working hours (up to 49 hours/week), and the total ban on strikes or wage negotiations. Recommended Watch Window: 01:00–06:00 • Lesson Phase: Guided Instruction & Standard of Living Analysis. Tone Alert: Analytical documentary examining working-class conditions.",
-          "viewing_task": "<ol><li><strong>[01:30] Recall:</strong> What essential worker document—recording an individual's complete employment history and disciplinary record—was required to hold any job in Nazi Germany?</li><li><strong>[03:15] Explain:</strong> How did the abolition of independent trade unions and the introduction of wage caps cause real hourly wages to stagnate below 1928 levels?</li><li><strong>[05:20] Challenge:</strong> Weigh the evidence: Did the average German industrial worker experience a genuine improvement in their standard of living between 1933 and 1939?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The Work Book (<em>Arbeitsbuch</em>).</li><li><strong>Explain:</strong> Without trade unions or the right to strike, employers set wages under state guidance. While total weekly earnings rose because workers put in substantially longer overtime hours (increasing from 43 to 49 hours per week by 1939), hourly pay was frozen and deductions for taxes, DAF dues, and winter relief (*Winterhilfswerk*) eroded take-home pay.</li><li><strong>Challenge:</strong> On one hand, having a secure job and reliable food on the table was a massive relief after the terror of the Great Depression, and perks like KdF concerts and cinema tickets improved leisure. On the other hand, workers suffered longer hours, loss of personal freedom, dangerous factory conditions, and shortages of quality meat, dairy, and eggs due to autarky import bans, meaning living standards improved in security but declined in liberty and consumer choice.</li></ol>"
-        },
-        {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/history-file-nazi-germany-economy-rearmament/",
-          "title": "BBC History File / ERA: Workers Under the Nazi Regime – Rearmament & Autarky",
-          "duration": "22 mins 00 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Hermann Göring's 1936 Four-Year Plan: the push for economic self-sufficiency (*Autarkie*), synthetic substitutes (*Ersatz* goods: rubber, oil), and the \"Guns or Butter\" dilemma. Recommended Watch Window: 05:00–13:00 • Lesson Phase: High-Attainer Stretch & Macroeconomic Policy. Tone Alert: Comprehensive economic history documentary.",
-          "viewing_task": "<ol><li><strong>[06:10] Recall:</strong> Who was appointed plenipotentiary of the Four-Year Plan in October 1936 to prepare the German military and economy for total war within four years?</li><li><strong>[09:00] Explain:</strong> What was the economic doctrine of *Autarky* (self-sufficiency), and how did German scientists develop synthetic (*Ersatz*) petrol, rubber (Buna), and textiles?</li><li><strong>[12:15] Challenge:</strong> Explain how Göring's famous slogan \"Guns will make us powerful; butter will only make us fat\" summarized the structural crisis facing the German economy by 1939.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Hermann Göring.</li><li><strong>Explain:</strong> Remembering the deadly British naval blockade of WWI, Hitler was obsessed with making Germany immune to foreign embargoes. Scientists produced synthetic oil from coal and artificial rubber from petroleum, but production was astronomically expensive, labor-intensive, and incapable of meeting Germany's raw material deficits in iron ore, copper, and rubber.</li><li><strong>Challenge:</strong> By 1939, Germany was spending over 60% of government revenue on the military and facing ballooning deficits and foreign exchange exhaustion. Consuming resources on civilian consumer goods (\"butter\") directly reduced the armaments budget (\"guns\"). The economy had reached a boiling point where the only escape from imminent financial bankruptcy was to launch a predatory war of conquest to loot the gold reserves and raw materials of neighboring European states.</li></ol>"
+          "id": "3jTW2b3oGCc",
+          "url": "https://www.youtube.com/watch?v=3jTW2b3oGCc",
+          "title": "The Nazi's Relationship with Volkswagen | History's Darkest Questions",
+          "duration": "4 mins 15 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:00 | Lesson Phase: Standard of Living Reality | Tone Alert: Explores Ferdinand Porsche's People's Car (KdF-Wagen), the stamp savings scheme, and how workers' money was diverted to military jeeps.",
+          "viewing_task": "[01:10] The Promise: How was the KdF-Wagen (Volkswagen Beetle) marketed to ordinary German families?\n[03:00] The Reality: Did any German workers actually receive their promised car before the outbreak of war in 1939?",
+          "model_answer": "Hitler promised a car for every German family for just 990 marks, paid via a 5-mark weekly savings stamp book. Not a single consumer received a car; when war broke out in 1939, the Wolfsburg factory was converted to produce Kübelwagen military vehicles, and millions of marks in workers' savings were swallowed by the war effort."
         }
       ],
       "pair_share": {
@@ -18227,6 +18178,14 @@ export default {
           {
             "question": "What failed armed coup did Adolf Hitler lead in Bavaria in November 1923? (Prior Topic)",
             "answer": "The Munich Beer Hall Putsch."
+          },
+          {
+            "question": "What July 1933 agreement was signed between Nazi Germany and the Vatican guaranteeing Catholic religious rights in exchange for political neutrality? (Prior Topic)",
+            "answer": "The Reichskonkordat (Concordat)."
+          },
+          {
+            "question": "Which Protestant pastor founded the anti-Nazi Confessing Church and was later imprisoned at Dachau? (Prior Topic)",
+            "answer": "Pastor Martin Niemöller."
           }
         ]
       },
@@ -18929,43 +18888,36 @@ export default {
       "video": [
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=AUZIYQFM7mQ",
-          "title": "Simple History: The Nuremberg Laws (1935) & Nazi Racial Ideology",
-          "duration": "4 mins 15 secs",
+          "id": "L52e29SVyYc",
+          "url": "https://www.youtube.com/watch?v=L52e29SVyYc",
+          "title": "What Were the Nuremberg Race Laws? | Holocaust Explainer (USHMM)",
+          "duration": "2 mins 35 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Animated breakdown of the escalating racial laws: the April 1933 anti-Jewish boycott, the Reich Citizenship Law, and the Law for the Protection of German Blood and Honour. Recommended Watch Window: 00:00–04:00 • Lesson Phase: Quick Starter Check (0–3m). Tone Alert: Fast-paced animated overview of racial segregation laws.",
-          "viewing_task": "<ol><li><strong>[01:05] Quick Check:</strong> What two laws passed at the September 1935 Nuremberg Rally stripped German Jews of citizenship and outlawed marriage between Jews and non-Jews?</li><li><strong>[02:45] Hinge Question:</strong> How did the assassination of German diplomat Ernst vom Rath in Paris serve as Goebbels' official pretext to unleash the nationwide Kristallnacht pogrom on 9–10 November 1938?</li></ol>",
-          "model_answer": "<ol><li><strong>Quick Check:</strong> The Reich Citizenship Law and the Law for the Protection of German Blood and German Honour (collectively the Nuremberg Laws).</li><li><strong>Hinge Question:</strong> Goebbels announced vom Rath's death at the annual Munich Beer Hall Putsch reunion, declaring that the Nazi Party would not prevent \"spontaneous\" demonstrations of public fury, which local SA and SS commanders understood as a direct order to burn synagogues and smash Jewish businesses across the country.</li></ol>"
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:35 | Lesson Phase: Legal Persecution | Tone Alert: Explains the Reich Citizenship Law and Law for the Protection of German Blood and German Honor passed in September 1935.",
+          "viewing_task": "[00:45] Loss of Citizenship: How did the Reich Citizenship Law legally distinguish between 'citizens of the Reich' and 'subjects'?\n[01:40] Racial Boundaries: What prohibitions did the Law for the Protection of German Blood enforce regarding marriage and relationships?",
+          "model_answer": "Only persons of 'German or related blood' were citizens with full political rights; Jews and Roma were stripped of citizenship and reduced to rightless state subjects. The Blood Protection Law outlawed marriages and sexual relations between Jews and German citizens, criminalising infractions as 'racial defilement' (Rassenschande)."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=gKzZ1OWPXgk",
-          "title": "Imperial War Museums: Kristallnacht – The Night of Broken Glass (November 1938)",
-          "duration": "9 mins 20 secs",
-          "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Museum documentary analyzing the devastating destruction of 9–10 November 1938: over 1,000 synagogues burned, 7,500 businesses destroyed, 91 murders, and 30,000 Jewish men sent to camps. Recommended Watch Window: 01:30–07:00 • Lesson Phase: Guided Instruction & Historical Investigation. Tone Alert: Sombre museum documentary utilizing authentic photos, broken glass newsreels, and survivor accounts.",
-          "viewing_task": "<ol><li><strong>[02:00] Recall:</strong> How many Jewish men were arrested and transported directly to Dachau, Buchenwald, and Sachsenhausen concentration camps immediately following Kristallnacht?</li><li><strong>[04:30] Explain:</strong> Explain the cynical financial punishment imposed on the German Jewish community by Hermann Göring following the pogrom.</li><li><strong>[06:30] Challenge:</strong> How did Kristallnacht mark a decisive, catastrophic turning point from legal and economic discrimination to violent physical terror and state-sponsored destruction?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Approximately 30,000 Jewish men.</li><li><strong>Explain:</strong> The Nazi regime blamed the victims for the riots, levying a collective fine of 1 billion Reichsmarks on German Jews and confiscating all insurance payouts paid by insurance companies to repair damaged shops and properties.</li><li><strong>Challenge:</strong> Prior to November 1938, persecution had primarily taken the form of legal disenfranchisement, economic boycotts, social segregation, and localized violence. Kristallnacht was a state-orchestrated pogrom of unprecedented nationwide brutality involving arson, murder, and mass incarceration in concentration camps, proving that the regime had abandoned any pretense of the rule of law and setting the stage for total forced emigration and the Holocaust.</li></ol>"
+          "id": "mQ1E6wO9jXQ",
+          "url": "https://www.youtube.com/watch?v=mQ1E6wO9jXQ",
+          "title": "What Was Kristallnacht in the Holocaust? | Holocaust Explainer (USHMM)",
+          "duration": "3 mins 11 secs",
+          "pathway": "Enquiry Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:11 | Lesson Phase: State-Sponsored Violence | Tone Alert: Explores the Night of Broken Glass (9–10 November 1938), the assassination of Ernst vom Rath, and the violent nationwide pogrom.",
+          "viewing_task": "[00:50] The Pretext: What event in Paris did Joseph Goebbels seize upon to orchestrate the Kristallnacht pogrom?\n[02:00] Scale of Destruction: What was the physical toll of Kristallnacht across Germany, Austria, and the Sudetenland?",
+          "model_answer": "The assassination of German diplomat Ernst vom Rath by 17-year-old Polish Jewish youth Herschel Grynszpan in Paris was exploited by Goebbels as an excuse for an alleged 'spontaneous' demonstration. Over 1,000 synagogues were burned, 7,500 Jewish-owned shops were ransacked, at least 91 Jews were murdered, and 30,000 Jewish men were arrested and sent to concentration camps."
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=bF8h8K2kSfs",
-          "title": "DW Documentary: From Boycott to Kristallnacht – The Escalation of Nazi Terror",
-          "duration": "8 mins 45 secs",
-          "pathway": "Historical Escalation",
-          "teacher_guidance": "Chronological analysis of anti-Semitic persecution: the 1 April 1933 nationwide boycott of Jewish businesses, the yellow star prelude, and the exclusion of Jewish children from schools. Recommended Watch Window: 01:00–06:30 • Lesson Phase: Guided Instruction & Escalation Timeline. Tone Alert: Comprehensive historical analysis from Deutsche Welle.",
-          "viewing_task": "<ol><li><strong>[01:40] Recall:</strong> On what date did SA stormtroopers stand outside Jewish-owned shops and doctors' offices painting the Star of David during the first official nationwide boycott?</li><li><strong>[03:45] Explain:</strong> How did the 1938 decree requiring all Jewish citizens to surrender passports and add the middle name \"Israel\" (men) or \"Sara\" (women) enforce administrative isolation?</li><li><strong>[06:00] Challenge:</strong> Analyze the persecution of other \"undesirable\" minorities under Nazi racial laws: Romani people (Gypsies), Jehovah's Witnesses, homosexuals, and the mentally disabled.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> 1 April 1933.</li><li><strong>Explain:</strong> It legally stamped every Jewish citizen with a physical and bureaucratic mark, making them instantly identifiable to police, employers, and landlords, facilitating total social segregation and preventing escape without regime approval.</li><li><strong>Challenge:</strong> Nazi persecution was not limited to Jewish people, but aimed to eradicate anyone deemed \"alien\" or biologically inferior to the Aryan *Volk*. Romani people were classified as racially inferior and subjected to sterilization and camps; Jehovah's Witnesses were jailed for refusing to swear military oaths; homosexuals were branded criminals and forced to wear pink triangles in camps; and over 70,000 disabled and mentally ill citizens were secretly murdered under the T4 Euthanasia program, demonstrating the totalizing nature of Nazi racial-hygiene ideology.</li></ol>"
-        },
-        {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/history-file-nazi-germany-master-race-eugenics/",
-          "title": "BBC History File / ERA: The Master Race & Nazi Eugenics (1933–1939)",
-          "duration": "21 mins 00 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Forensic study of pseudo-scientific racial hierarchy: craniology calipers, hair-colour charts, the Kaiser Wilhelm Institute, and the ideological roots of the \"Final Solution\". Recommended Watch Window: 05:00–13:00 • Lesson Phase: High-Attainer Stretch & Scientific Racism Deconstruction. Tone Alert: Chilling documentary examining the complicity of the scientific and medical establishment.",
-          "viewing_task": "<ol><li><strong>[06:15] Recall:</strong> What pseudo-scientific discipline—advocating the selective breeding of humans and sterilization of the \"unfit\"—was taught in every German university?</li><li><strong>[09:30] Explain:</strong> How did doctors, anthropologists, and professors at elite institutions lend intellectual legitimacy to Nazi racial persecution?</li><li><strong>[12:20] Challenge:</strong> How did the peacetime persecution of minorities between 1933 and 1939 establish the essential psychological and bureaucratic groundwork for the extermination camps of WWII?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Eugenics (or \"Racial Hygiene\" / <em>Rassenhygiene</em>).</li><li><strong>Explain:</strong> Elite medical doctors and professors developed skull-measuring calipers, racial classification charts, and biological theories arguing that Jews and Slavs were subhuman (*Untermenschen*), transforming political hatred into an alleged objective biological science that justified state violence as medical prophylaxis.</li><li><strong>Challenge:</strong> Peacetime persecution normalized public cruelty, stripped minorities of legal rights, desensitized ordinary citizens to dehumanizing language, perfected card-index identification systems, and constructed the SS concentration camp infrastructure, ensuring that when total war began in 1939, the state machinery and societal mindset for mass extermination were already fully operational.</li></ol>"
+          "id": "G7W8fT83h_k",
+          "url": "https://www.youtube.com/watch?v=G7W8fT83h_k",
+          "title": "The Night of Broken Glass: Kristallnacht 1938 | The Pacifist",
+          "duration": "4 mins 04 secs",
+          "pathway": "Cinematic",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:04 | Lesson Phase: Culmination & Aftermath | Tone Alert: Documents the 1 billion mark fine levied on the Jewish community, the confiscation of insurance payouts, and forced emigration.",
+          "viewing_task": "[01:30] State Extortion: How did Hermann Göring punish the victimised Jewish community following the destruction of Kristallnacht?\n[03:10] Turning Point: Why does Kristallnacht mark the decisive turning point from legislative discrimination to open violent terror?",
+          "model_answer": "Göring imposed a collective collective fine of 1 billion marks on the Jewish community for 'damage to the German economy' and confiscated all insurance payouts. It showed the world that the Nazi state would openly unleash mob violence, mass arrests without trial, and concentration camp deportation in broad daylight, marking the end of any secure Jewish existence in Germany."
         }
       ],
       "pair_share": {
@@ -20179,5 +20131,6 @@ export default {
       "term": "Aryanisation",
       "definition": "The forced transfer of Jewish-owned businesses and property to Aryans at a fraction of their value."
     }
-  ]
+  ],
+  "edition": "2026.1"
 };
