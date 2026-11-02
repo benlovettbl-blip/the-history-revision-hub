@@ -1360,7 +1360,7 @@ const cme_new_data = {
         }
       ],
       "enquiry": "Water, Faith, and Imperial Rulers: How did physical geography and artificial borders make conflict in the Middle East inevitable?",
-      "hook_text": "The Middle East is the ultimate geopolitical crossroads of the earth—the physical land bridge connecting Europe, Asia, and Africa, the guardian of vital maritime chokepoints, and the birthplace of three world religions. To understand the bloody wars between Arabs and Israelis from 1945 to 1995, one must first understand its geography: how European diplomats drew straight ruler lines across deserts, why fresh water from the River Jordan is a matter of national survival, and why controlling the high ground of the Golan Heights or the narrow waters of the Straits of Tiran dictated the difference between victory and annihilation.",
+      "hook_text": "The Middle East is the ultimate geopolitical crossroads of the earth—the physical land bridge connecting Europe, Asia, and Africa, the guardian of vital maritime chokepoints, and the birthplace of three world religions. To understand the bloody wars between Arabs and Israelis from 1945 to 1995, one must first understand its geography: how European diplomats drew straight ruler lines across deserts, why fresh water from the River Jordan is a matter of national survival, and why controlling the high ground of the Golan Heights or the narrow waters of the Straits of Tiran dictated the difference between victory and annihilation. How did imperial diplomacy and strategic geography lay the groundwork for fifty years of intractable conflict?",
       "exam_practice": {
         "type": "consequence_and_extended",
         "title": "Edexcel GCSE (9–1) Paper 2 Exam Practice",
@@ -2489,7 +2489,7 @@ const cme_new_data = {
           }
         ]
       },
-      "hook_text": "In 1945, the world was reeling from the horrors of the Holocaust, creating immense international pressure for a Jewish homeland. Yet, for the Arab population of Palestine, this meant the terrifying prospect of losing their ancestral land. The British, exhausted and bankrupt from World War Two, were caught in the middle of an impossible situation.",
+      "hook_text": "In 1945, the world was reeling from the horrors of the Holocaust, creating immense international pressure for a Jewish homeland. Yet, for the Arab population of Palestine, this meant the terrifying prospect of losing their ancestral land. The British, exhausted and bankrupt from World War Two, were caught in the middle of an impossible situation. Why did the British Mandate collapse, and how was the State of Israel established in the crucible of civil war?",
       "fun_facts": [
         "1917: The Balfour Declaration originally promised British support for a national home for the Jewish people.",
         "100,000: The number of Jewish Holocaust survivors US President Truman demanded Britain immediately allow into Palestine.",
@@ -3741,7 +3741,7 @@ const cme_new_data = {
           }
         }
       ],
-      "hook_text": "The moment Israel declared independence on 14 May 1948, five Arab armies invaded. What followed was a desperate fight for survival for the Israelis, and a catastrophic loss of land for the Palestinians—an event they remember as the 'Nakba' (Catastrophe). The map of the Middle East was forever redrawn.",
+      "hook_text": "The moment Israel declared independence on 14 May 1948, five Arab armies invaded. What followed was a desperate fight for survival for the Israelis, and a catastrophic loss of land for the Palestinians—an event they remember as the 'Nakba' (Catastrophe). The map of the Middle East was forever redrawn. How did the 1948–49 War transform the territorial and human landscape of Palestine?",
       "fun_facts": [
         "700,000: The approximate number of Palestinian Arabs who fled or were expelled from their homes during the war.",
         "78%: The amount of Mandatory Palestine that Israel controlled by the end of the war, far more than the UN Partition Plan.",
@@ -5039,7 +5039,7 @@ const cme_new_data = {
           }
         ]
       },
-      "hook_text": "By the 1950s, the Cold War had arrived in the Middle East. Egypt's charismatic new leader, Gamal Abdel Nasser, emerged as a hero of Arab nationalism, willing to stand up to the old European empires and Israel. When he nationalised the Suez Canal, it triggered a global crisis that almost sparked World War Three.",
+      "hook_text": "By the 1950s, the Cold War had arrived in the Middle East. Egypt's charismatic new leader, Gamal Abdel Nasser, emerged as a hero of Arab nationalism, willing to stand up to the old European empires and Israel. When he nationalised the Suez Canal, it triggered a global crisis that almost sparked World War Three. Why did the nationalisation of the Suez Canal trigger a global crisis, and how did it destroy Britain's imperial authority?",
       "fun_facts": [
         "1956: Nasser nationalised the Suez Canal, taking it back from British and French control.",
         "secret Sèvres agreement: A secret agreement where Israel, Britain, and France planned to invade Egypt together.",
@@ -5423,7 +5423,7 @@ const cme_new_data = {
         "Describe how the River Jordan water dispute and Syrian border skirmishes increased military tension.",
         "Analyse how the Samu raid (1966) and the April 1967 Golan dogfight brought the Middle East to the brink of war."
       ],
-      "hook_text": "In January 1964, Arab leaders met in Cairo to resolve two crises: Israel was pumping water out of the River Jordan, and Palestinians demanded their own state. Within three years, artillery battles and aerial dogfights had made a full-scale war inevitable.",
+      "hook_text": "In January 1964, Arab leaders met in Cairo to resolve two crises: Israel was pumping water out of the River Jordan, and Palestinians demanded their own state. Within three years, artillery battles and aerial dogfights had made a full-scale war inevitable. How did water disputes, cross-border guerrilla raids, and escalating militarism make a second regional war inescapable?",
       "teacher_notes": {
         "primer": "This lesson examines the underlying causes of the 1967 Six Day War from 1964 to May 1967. Pupils explore how the founding of the PLO, clashes over the River Jordan water supply, radical Syrian political hostility, and major Israeli retaliatory raids (Samu and the 7 April 1967 air clash) pushed the region towards war. Emphasize that the war did not begin out of nowhere in June 1967, but was the culmination of three years of escalating border friction.",
         "objectives": [
@@ -6416,7 +6416,7 @@ const cme_new_data = {
         "Describe how Israel's pre-emptive dawn airstrike destroyed the Arab air forces on 5 June 1967.",
         "Analyse the key military campaigns across Sinai, the West Bank, and the Golan Heights that transformed the map of the Middle East."
       ],
-      "hook_text": "On the morning of 5 June 1967, nearly 200 Israeli fighter jets flew low beneath radar over the Mediterranean. Within three hours, over 300 Egyptian aircraft lay burning on the tarmac. By Saturday evening, the map of the Middle East had been changed forever.",
+      "hook_text": "On the morning of 5 June 1967, nearly 200 Israeli fighter jets flew low beneath radar over the Mediterranean. Within three hours, over 300 Egyptian aircraft lay burning on the tarmac. By Saturday evening, the map of the Middle East had been changed forever. Why was the Six-Day War decided so rapidly, and did Egyptian brinkmanship make an Israeli preemptive strike inevitable?",
       "teacher_notes": {
         "primer": "This lesson covers the rapid descent into war in May 1967 and the six days of combat that radically redrew the Middle East. Pupils examine how Soviet false intelligence reports, Nasser's expulsion of UNEF peacekeepers, and the blockade of the Straits of Tiran led Israel to launch a decisive pre-emptive dawn air strike on 5 June 1967. They then study the rapid three-front campaign (Sinai, West Bank/Jerusalem, Golan Heights) that resulted in Israel quadrupling its territory in under a week.",
         "objectives": [
@@ -7404,7 +7404,7 @@ const cme_new_data = {
         "Explain the Arab response at the Khartoum Conference and the policy of the \"Three Noes\".",
         "Analyse the key terms and diplomatic ambiguities of United Nations Resolution 242 (\"Land for Peace\")."
       ],
-      "hook_text": "In the summer of 1967, Israel found itself ruling over one million Palestinians. In September, Arab leaders declared the \"Three Noes\" in Khartoum. In November, the UN passed Resolution 242 promising \"Land for Peace\"—yet its ambiguous words locked the region in stalemate.",
+      "hook_text": "In the summer of 1967, Israel found itself ruling over one million Palestinians. In September, Arab leaders declared the \"Three Noes\" in Khartoum. In November, the UN passed Resolution 242 promising \"Land for Peace\"—yet its ambiguous words locked the region in stalemate. How did Israel's capture of the occupied territories reshape diplomacy, identity, and the prospects for peace?",
       "teacher_notes": {
         "primer": "This lesson investigates the political and diplomatic aftermath of the 1967 Six Day War. Pupils explore how Israel administered five new territories (Sinai, Gaza, West Bank, East Jerusalem, Golan Heights) with over a million Palestinian inhabitants, sparking a second refugee crisis. They examine the hardline Arab response at the Khartoum Summit (\"Three Noes\") and dissect the core terms and deliberate linguistic ambiguities of UN Security Council Resolution 242 (\"Land for Peace\").",
         "objectives": [
@@ -8396,7 +8396,7 @@ const cme_new_data = {
         "Describe the causes and consequences of the Dawson's Field airplane hijackings and the Black September crisis in Jordan (1970).",
         "Analyse the events of the 1972 Munich Olympics massacre and evaluate its impact on international attitudes towards the Palestinian cause."
       ],
-      "hook_text": "In September 1970, Palestinian militants blew up three hijacked airliners in the Jordanian desert. Two years later, hooded gunmen scaled an Olympic fence in Munich. Having lost faith in Arab armies, Palestinians took their fight to the global stage.",
+      "hook_text": "In September 1970, Palestinian militants blew up three hijacked airliners in the Jordanian desert. Two years later, hooded gunmen scaled an Olympic fence in Munich. Having lost faith in Arab armies, Palestinians took their fight to the global stage. Why did the PLO shift towards armed international struggle, and how did Black September reshape Palestinian resistance?",
       "teacher_notes": {
         "primer": "This lesson charts the dramatic emergence of the Palestinian national movement as an independent armed force following the 1967 defeat of Arab state armies. Pupils examine the symbolic turning point of the Battle of Karameh (1968) and Yasser Arafat's election to chairman of the PLO. They investigate how radical factions like the PFLP turned to airplane hijackings (Dawson's Field, 1970), prompting King Hussein to crush Palestinian militias during \"Black September\" and expel the PLO to Lebanon. Finally, pupils analyze the Munich Olympics massacre of September 1972 and evaluate whether terrorism advanced or damaged the Palestinian cause.",
         "objectives": [
@@ -9400,7 +9400,7 @@ const cme_new_data = {
         "Describe how Egyptian and Syrian forces achieved complete tactical surprise on Yom Kippur (6 October 1973).",
         "Analyse the superpower involvement, the OPEC oil crisis, and why the war opened the door to diplomacy."
       ],
-      "hook_text": "On 6 October 1973, while Israel observed its holiest fast day, 80,000 Egyptian soldiers crossed the Suez Canal using high-pressure water hoses to wash away Israeli sand ramparts. It was a war that brought the superpowers to nuclear alert and changed Middle Eastern history.",
+      "hook_text": "On 6 October 1973, while Israel observed its holiest fast day, 80,000 Egyptian soldiers crossed the Suez Canal using high-pressure water hoses to wash away Israeli sand ramparts. It was a war that brought the superpowers to nuclear alert and changed Middle Eastern history. How did the surprise offensive of the Yom Kippur War puncture Israeli invincibility and force a fundamental diplomatic realignment?",
       "teacher_notes": {
         "primer": "This lesson examines the climactic conflict of Key Topic 2: the 1973 Yom Kippur War. Pupils investigate the static War of Attrition along the Suez Canal (1969–70) and Israel's construction of the Bar-Lev Line. They explore the accession of Anwar Sadat in Egypt and his daring strategy to wage a limited war to break the diplomatic stalemate. Students then study the surprise Egyptian and Syrian assault on 6 October 1973, the fierce tank battles, the Israeli counter-offensives across the canal, superpower intervention (airlifts and nuclear alert), the OPEC oil embargo, and why this war shattered Israeli complacency and paved the way for peace negotiations.",
         "objectives": [
@@ -11357,7 +11357,7 @@ const cme_new_data = {
           }
         ]
       },
-      "hook_text": "In an unprecedented move that stunned the world, Egyptian President Anwar Sadat traveled to Jerusalem in 1977, offering peace. This bold step shattered the Arab taboo of refusing to talk to Israel and paved the way for the historic Camp David Accords, fundamentally altering the Middle East peace process.",
+      "hook_text": "In an unprecedented move that stunned the world, Egyptian President Anwar Sadat traveled to Jerusalem in 1977, offering peace. This bold step shattered the Arab taboo of refusing to talk to Israel and paved the way for the historic Camp David Accords, fundamentally altering the Middle East peace process. How did historic adversaries Egypt and Israel negotiate the landmark Camp David Accords, and what were the consequences for the wider Arab world?",
       "fun_facts": [
         "Camp David Accords (1978): Brokered by US President Jimmy Carter, leading to the first peace treaty between Israel and an Arab nation.",
         "Sinai Return: Israel agreed to return the entire Sinai Peninsula to Egypt in exchange for full diplomatic recognition.",
@@ -12741,7 +12741,7 @@ const cme_new_data = {
           }
         ]
       },
-      "hook_text": "While Egypt and Israel made peace, the Palestinians felt abandoned. Operating out of Lebanon, the PLO launched relentless attacks against Israel, leading to the devastating 1982 Israeli invasion of Lebanon. By 1987, Palestinian frustration inside the occupied territories exploded into a spontaneous, grassroots uprising known as the First Intifada.",
+      "hook_text": "While Egypt and Israel made peace, the Palestinians felt abandoned. Operating out of Lebanon, the PLO launched relentless attacks against Israel, leading to the devastating 1982 Israeli invasion of Lebanon. By 1987, Palestinian frustration inside the occupied territories exploded into a spontaneous, grassroots uprising known as the First Intifada. How did the First Intifada fundamentally alter the balance of power and bring the Palestinian struggle to the forefront of global attention?",
       "fun_facts": [
         "Lebanon War (1982): Israel invaded Lebanon to destroy the PLO, resulting in thousands of civilian casualties.",
         "Intifada (1987): Meaning 'shaking off', this was a massive Palestinian uprising in the West Bank and Gaza involving strikes and stone-throwing.",
@@ -14107,7 +14107,7 @@ const cme_new_data = {
           }
         }
       ],
-      "hook_text": "The sheer exhaustion of the Intifada forced both sides to the negotiating table in secret. In 1993, the world watched in awe as PLO Chairman Yasser Arafat and Israeli Prime Minister Yitzhak Rabin shook hands on the White House lawn, signing the Oslo Accords. It seemed peace was finally possible, but extremists on both sides were determined to destroy it.",
+      "hook_text": "The sheer exhaustion of the Intifada forced both sides to the negotiating table in secret. In 1993, the world watched in awe as PLO Chairman Yasser Arafat and Israeli Prime Minister Yitzhak Rabin shook hands on the White House lawn, signing the Oslo Accords. It seemed peace was finally possible, but extremists on both sides were determined to destroy it. Why did the Oslo Accords create such unprecedented hope for peace, yet ultimately fail to resolve the core drivers of the conflict?",
       "fun_facts": [
         "Oslo Accords (1993): Created the Palestinian Authority with limited self-rule in parts of the West Bank and Gaza.",
         "Mutual Recognition: The PLO finally recognised Israel's right to exist, and Israel recognised the PLO as the representative of the Palestinians.",

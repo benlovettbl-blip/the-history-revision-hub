@@ -5752,7 +5752,7 @@ const great_war_data = {
       banner: '/images/great_war_cover.jpg',
       cover_image: '/images/great_war_cover.jpg',
       prologue:
-        'Welcome to your Year 9 November Assessment Masterclass! In this workshop, you will prepare for your 30-minute formal assessment: "Why did war break out in 1914?". You will write three developed PEEL paragraphs choosing from four key historical catalysts: German unification, Imperial rivalry, the Naval arms race, or Alliances and the Sarajevo assassination. Remember: NO conclusion is needed for this question! Over your revision period, you are permitted to prepare ONE single sheet of A4 paper containing bullet points, mind maps, statistics, and dates to bring directly into the assessment room.',
+        'Welcome to your Year 9 November Assessment Masterclass! In this workshop, you will prepare for your 30-minute formal assessment: "Why did war break out in 1914?". You will write three developed PEEL paragraphs choosing from four key historical catalysts: German unification, Imperial rivalry, the Naval arms race, or Alliances and the Sarajevo assassination. Remember: NO conclusion is needed for this question! Over your revision period, you are permitted to prepare ONE single sheet of A4 paper containing bullet points, mind maps, statistics, and dates to bring directly into the assessment room. Which causal factor will you argue was the most decisive in triggering continental war in August 1914?',
       assessment_notice: {
         title: 'Year 9 November Formal Assessment Timetable & Rules',
         groups: [

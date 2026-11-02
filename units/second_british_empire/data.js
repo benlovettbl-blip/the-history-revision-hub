@@ -826,227 +826,227 @@ const second_british_empire_data = {
         },
       ],
       quiz: [
-      {
-            "question": "What economic doctrine governed British imperial expansion, holding that colonies existed solely to enrich the mother country?",
-            "options": [
-                  "Mercantilism",
-                  "Socialism",
-                  "Laissez-faire",
-                  "Feudalism"
-            ],
-            "answer": "Mercantilism",
-            "explanation": "Mercantilism held that national wealth was measured in bullion and that colonies existed to provide cheap raw goods and buy British manufactures."
-      },
-      {
-            "question": "Which 1805 naval battle secured Britain's uncontested command of the global oceans for over a century?",
-            "options": [
-                  "The Battle of Trafalgar",
-                  "The Battle of Waterloo",
-                  "The Battle of the Nile",
-                  "The Battle of Jutland"
-            ],
-            "answer": "The Battle of Trafalgar",
-            "explanation": "Admiral Lord Nelson's victory off Cape Trafalgar in 1805 established undisputed British maritime mastery."
-      },
-      {
-            "question": "What legal right to collect all land taxes and customs across Bengal was granted to the East India Company in the 1765 Treaty of Allahabad?",
-            "options": [
-                  "The Diwani",
-                  "The Charter",
-                  "The Firman",
-                  "The Monopoly"
-            ],
-            "answer": "The Diwani",
-            "explanation": "The Grant of the Diwani in 1765 gave the EIC the legal power to collect land revenues across Bengal, Bihar, and Orissa."
-      },
-      {
-            "question": "Which Bengal textile city, world-famous for producing fine muslin, saw its weaving industry ruined by British machine-made cotton imports?",
-            "options": [
-                  "Dhaka",
-                  "Delhi",
-                  "Lahore",
-                  "Bombay"
-            ],
-            "answer": "Dhaka",
-            "explanation": "Dhaka (Dacca) was decimated as British factory-made cotton flooded India, shrinking its population and destroying handloom weaving."
-      },
-      {
-            "question": "From which neoclassical London headquarters on Leadenhall Street did the East India Company govern its commercial empire?",
-            "options": [
-                  "East India House",
-                  "The Bank of England",
-                  "The Royal Exchange",
-                  "The Admiralty"
-            ],
-            "answer": "East India House",
-            "explanation": "East India House on Leadenhall Street was the executive headquarters from which Company directors administered their overseas empire."
-      },
-      {
-            "question": "Which laws banned foreign merchant ships from trading directly with British colonies, requiring goods to be transported on British ships?",
-            "options": [
-                  "The Navigation Acts",
-                  "The Stamp Acts",
-                  "The Corn Laws",
-                  "The Factory Acts"
-            ],
-            "answer": "The Navigation Acts",
-            "explanation": "The Navigation Acts enforced a closed imperial trading circuit, routing colonial profits directly through British ports."
-      },
-      {
-            "question": "What century of relative global peace under Royal Navy maritime supremacy was known as the 'Pax Britannica'?",
-            "options": [
-                  "Pax Britannica",
-                  "Pax Romana",
-                  "The Golden Age",
-                  "The Victorian Peace"
-            ],
-            "answer": "Pax Britannica",
-            "explanation": "Pax Britannica describes the period of British global naval hegemony between 1805 and 1914."
-      },
-      {
-            "question": "Which naval manufacturing complex employed over ten thousand workers and became the largest industrial facility in the world?",
-            "options": [
-                  "Portsmouth Royal Dockyard",
-                  "Chatham Dockyard",
-                  "Plymouth Yard",
-                  "Woolwich Arsenal"
-            ],
-            "answer": "Portsmouth Royal Dockyard",
-            "explanation": "Portsmouth Royal Dockyard pioneered steam-powered assembly-line production and mass-manufactured rigging blocks."
-      },
-      {
-            "question": "What was the name of the world's first iron-hulled, armor-plated steam battleship launched by Britain in 1860?",
-            "options": [
-                  "HMS Warrior",
-                  "HMS Victory",
-                  "HMS Dreadnought",
-                  "HMS Beagle"
-            ],
-            "answer": "HMS Warrior",
-            "explanation": "Launched in 1860, HMS Warrior carried 4.5 inches of wrought-iron armor, rendering wooden battlefleets obsolete overnight."
-      },
-      {
-            "question": "Which private joint-stock corporation, chartered in 1600, commanded an army of over 200,000 sepoys in India?",
-            "options": [
-                  "The East India Company",
-                  "The Hudson's Bay Company",
-                  "The Royal African Company",
-                  "The Virginia Company"
-            ],
-            "answer": "The East India Company",
-            "explanation": "The Honourable East India Company ruled vast territories in India backed by its private mercenary army."
-      },
-      {
-            "question": "What clear annual revenue surplus did Robert Clive calculate the East India Company would extract from Bengal in 1765?",
-            "options": [
-                  "Over £2 million sterling",
-                  "£500,000",
-                  "£50 million",
-                  "£100,000"
-            ],
-            "answer": "Over £2 million sterling",
-            "explanation": "Clive calculated that Bengal tax revenues would yield a clear annual surplus of over £2 million sterling to remit to London."
-      },
-      {
-            "question": "What punitive import tariffs did the British Parliament impose on Indian handloom textiles entering Britain to protect Lancashire mills?",
-            "options": [
-                  "70% to 80%",
-                  "5% to 10%",
-                  "25%",
-                  "Zero"
-            ],
-            "answer": "70% to 80%",
-            "explanation": "Parliament imposed tariffs of 70% to 80% on Indian textiles while forcing India to admit British machine cotton virtually duty-free."
-      },
-      {
-            "question": "Which Governor-General of India reported to Parliament that 'the bones of the cotton weavers are bleaching the plains of India'?",
-            "options": [
-                  "Lord William Bentinck",
-                  "Lord Clive",
-                  "Lord Dalhousie",
-                  "Lord Curzon"
-            ],
-            "answer": "Lord William Bentinck",
-            "explanation": "Governor-General Bentinck described the catastrophic starvation and economic ruin of Indian artisanal weavers."
-      },
-      {
-            "question": "What diplomatic method involved deploying iron warships to bombard coastal ports and force foreign rulers to sign commercial treaties?",
-            "options": [
-                  "Gunboat diplomacy",
-                  "Appeasement",
-                  "Dollar diplomacy",
-                  "Isolationism"
-            ],
-            "answer": "Gunboat diplomacy",
-            "explanation": "Gunboat diplomacy used naval threats and bombardment to enforce British free-trade terms and open foreign markets."
-      },
-      {
-            "question": "Which 1889 parliamentary statute codified the Two-Power Standard for the Royal Navy?",
-            "options": [
-                  "The Naval Defence Act of 1889",
-                  "The Merchant Shipping Act",
-                  "The British North America Act",
-                  "The Reform Act 1884"
-            ],
-            "answer": "The Naval Defence Act of 1889",
-            "explanation": "The Naval Defence Act of 1889 mandated that the Royal Navy must equal or exceed the combined strength of France and Russia."
-      },
-      {
-            "question": "In Source A, which artist illustrated the 1886 Imperial Federation Map of the World celebrating Queen Victoria's empire?",
-            "options": [
-                  "Walter Crane",
-                  "John Leech",
-                  "Benjamin West",
-                  "George Raper"
-            ],
-            "answer": "Walter Crane",
-            "explanation": "Walter Crane designed the famous 1886 map supplement for The Graphic, depicting British colonies in red."
-      },
-      {
-            "question": "In Source B, where is the historic iron-hulled warship HMS Warrior permanently berthed today?",
-            "options": [
-                  "Portsmouth Royal Dockyard",
-                  "Greenwich Maritime Museum",
-                  "Dover Castle",
-                  "Bristol Floating Harbour"
-            ],
-            "answer": "Portsmouth Royal Dockyard",
-            "explanation": "HMS Warrior is permanently preserved and berthed at Portsmouth Royal Dockyard."
-      },
-      {
-            "question": "In Source C, to whom did Robert Clive write his private September 1765 dispatch celebrating the acquisition of the Diwani?",
-            "options": [
-                  "The Court of Directors of the East India Company",
-                  "Queen Victoria",
-                  "William Pitt",
-                  "Admiral Lord Nelson"
-            ],
-            "answer": "The Court of Directors of the East India Company",
-            "explanation": "Clive addressed his confidential report to the EIC Directors in London, describing Bengal as the richest kingdom in Asia."
-      },
-      {
-            "question": "According to parliamentary testimony in Source D, how many yards of British factory-made cotton cloth were imported into India by 1835?",
-            "options": [
-                  "Over 51 million yards",
-                  "800,000 yards",
-                  "1.2 million yards",
-                  "10 million yards"
-            ],
-            "answer": "Over 51 million yards",
-            "explanation": "Source D notes that British factory cotton imports exploded from 800,000 yards in 1814 to over 51 million yards by 1835."
-      },
-      {
-            "question": "In Source E, on which prominent London street was the corporate headquarters of East India House located?",
-            "options": [
-                  "Leadenhall Street",
-                  "Fleet Street",
-                  "Whitehall",
-                  "Downing Street"
-            ],
-            "answer": "Leadenhall Street",
-            "explanation": "East India House stood on Leadenhall Street in the City of London until its demolition in the 1860s."
-      }
-],
+        {
+          "question": "What economic doctrine governed British imperial expansion, holding that colonies existed solely to enrich the mother country?",
+          "options": [
+            "Mercantilism",
+            "Socialism",
+            "Laissez-faire",
+            "Feudalism"
+          ],
+          "answer": "Mercantilism",
+          "explanation": "Mercantilism held that national wealth was measured in bullion and that colonies existed to provide cheap raw goods and buy British manufactures."
+        },
+        {
+          "question": "Which 1805 naval battle secured Britain's uncontested command of the global oceans for over a century?",
+          "options": [
+            "The Battle of Trafalgar",
+            "The Battle of Waterloo",
+            "The Battle of the Nile",
+            "The Battle of Jutland"
+          ],
+          "answer": "The Battle of Trafalgar",
+          "explanation": "Admiral Lord Nelson's victory off Cape Trafalgar in 1805 established undisputed British maritime mastery."
+        },
+        {
+          "question": "What legal right to collect all land taxes and customs across Bengal was granted to the East India Company in the 1765 Treaty of Allahabad?",
+          "options": [
+            "The Diwani",
+            "The Charter",
+            "The Firman",
+            "The Monopoly"
+          ],
+          "answer": "The Diwani",
+          "explanation": "The Grant of the Diwani in 1765 gave the EIC the legal power to collect land revenues across Bengal, Bihar, and Orissa."
+        },
+        {
+          "question": "Which Bengal textile city, world-famous for producing fine muslin, saw its weaving industry ruined by British machine-made cotton imports?",
+          "options": [
+            "Dhaka",
+            "Delhi",
+            "Lahore",
+            "Bombay"
+          ],
+          "answer": "Dhaka",
+          "explanation": "Dhaka (Dacca) was decimated as British factory-made cotton flooded India, shrinking its population and destroying handloom weaving."
+        },
+        {
+          "question": "From which neoclassical London headquarters on Leadenhall Street did the East India Company govern its commercial empire?",
+          "options": [
+            "East India House",
+            "The Bank of England",
+            "The Royal Exchange",
+            "The Admiralty"
+          ],
+          "answer": "East India House",
+          "explanation": "East India House on Leadenhall Street was the executive headquarters from which Company directors administered their overseas empire."
+        },
+        {
+          "question": "Which laws banned foreign merchant ships from trading directly with British colonies, requiring goods to be transported on British ships?",
+          "options": [
+            "The Navigation Acts",
+            "The Stamp Acts",
+            "The Corn Laws",
+            "The Factory Acts"
+          ],
+          "answer": "The Navigation Acts",
+          "explanation": "The Navigation Acts enforced a closed imperial trading circuit, routing colonial profits directly through British ports."
+        },
+        {
+          "question": "What century of relative global peace under Royal Navy maritime supremacy was known as the 'Pax Britannica'?",
+          "options": [
+            "Pax Britannica",
+            "Pax Romana",
+            "The Golden Age",
+            "The Victorian Peace"
+          ],
+          "answer": "Pax Britannica",
+          "explanation": "Pax Britannica describes the period of British global naval hegemony between 1805 and 1914."
+        },
+        {
+          "question": "Which naval manufacturing complex employed over ten thousand workers and became the largest industrial facility in the world?",
+          "options": [
+            "Portsmouth Royal Dockyard",
+            "Chatham Dockyard",
+            "Plymouth Yard",
+            "Woolwich Arsenal"
+          ],
+          "answer": "Portsmouth Royal Dockyard",
+          "explanation": "Portsmouth Royal Dockyard pioneered steam-powered assembly-line production and mass-manufactured rigging blocks."
+        },
+        {
+          "question": "What was the name of the world's first iron-hulled, armor-plated steam battleship launched by Britain in 1860?",
+          "options": [
+            "HMS Warrior",
+            "HMS Victory",
+            "HMS Dreadnought",
+            "HMS Beagle"
+          ],
+          "answer": "HMS Warrior",
+          "explanation": "Launched in 1860, HMS Warrior carried 4.5 inches of wrought-iron armor, rendering wooden battlefleets obsolete overnight."
+        },
+        {
+          "question": "Which private joint-stock corporation, chartered in 1600, commanded an army of over 200,000 sepoys in India?",
+          "options": [
+            "The East India Company",
+            "The Hudson's Bay Company",
+            "The Royal African Company",
+            "The Virginia Company"
+          ],
+          "answer": "The East India Company",
+          "explanation": "The Honourable East India Company ruled vast territories in India backed by its private mercenary army."
+        },
+        {
+          "question": "What clear annual revenue surplus did Robert Clive calculate the East India Company would extract from Bengal in 1765?",
+          "options": [
+            "Over £2 million sterling",
+            "£500,000",
+            "£50 million",
+            "£100,000"
+          ],
+          "answer": "Over £2 million sterling",
+          "explanation": "Clive calculated that Bengal tax revenues would yield a clear annual surplus of over £2 million sterling to remit to London."
+        },
+        {
+          "question": "What punitive import tariffs did the British Parliament impose on Indian handloom textiles entering Britain to protect Lancashire mills?",
+          "options": [
+            "70% to 80%",
+            "5% to 10%",
+            "25%",
+            "Zero"
+          ],
+          "answer": "70% to 80%",
+          "explanation": "Parliament imposed tariffs of 70% to 80% on Indian textiles while forcing India to admit British machine cotton virtually duty-free."
+        },
+        {
+          "question": "Which Governor-General of India reported to Parliament that 'the bones of the cotton weavers are bleaching the plains of India'?",
+          "options": [
+            "Lord William Bentinck",
+            "Lord Clive",
+            "Lord Dalhousie",
+            "Lord Curzon"
+          ],
+          "answer": "Lord William Bentinck",
+          "explanation": "Governor-General Bentinck described the catastrophic starvation and economic ruin of Indian artisanal weavers."
+        },
+        {
+          "question": "What diplomatic method involved deploying iron warships to bombard coastal ports and force foreign rulers to sign commercial treaties?",
+          "options": [
+            "Gunboat diplomacy",
+            "Appeasement",
+            "Dollar diplomacy",
+            "Isolationism"
+          ],
+          "answer": "Gunboat diplomacy",
+          "explanation": "Gunboat diplomacy used naval threats and bombardment to enforce British free-trade terms and open foreign markets."
+        },
+        {
+          "question": "Which 1889 parliamentary statute codified the Two-Power Standard for the Royal Navy?",
+          "options": [
+            "The Naval Defence Act of 1889",
+            "The Merchant Shipping Act",
+            "The British North America Act",
+            "The Reform Act 1884"
+          ],
+          "answer": "The Naval Defence Act of 1889",
+          "explanation": "The Naval Defence Act of 1889 mandated that the Royal Navy must equal or exceed the combined strength of France and Russia."
+        },
+        {
+          "question": "In Source A, which artist illustrated the 1886 Imperial Federation Map of the World celebrating Queen Victoria's empire?",
+          "options": [
+            "Walter Crane",
+            "John Leech",
+            "Benjamin West",
+            "George Raper"
+          ],
+          "answer": "Walter Crane",
+          "explanation": "Walter Crane designed the famous 1886 map supplement for The Graphic, depicting British colonies in red."
+        },
+        {
+          "question": "In Source B, where is the historic iron-hulled warship HMS Warrior permanently berthed today?",
+          "options": [
+            "Portsmouth Royal Dockyard",
+            "Greenwich Maritime Museum",
+            "Dover Castle",
+            "Bristol Floating Harbour"
+          ],
+          "answer": "Portsmouth Royal Dockyard",
+          "explanation": "HMS Warrior is permanently preserved and berthed at Portsmouth Royal Dockyard."
+        },
+        {
+          "question": "In Source C, to whom did Robert Clive write his private September 1765 dispatch celebrating the acquisition of the Diwani?",
+          "options": [
+            "The Court of Directors of the East India Company",
+            "Queen Victoria",
+            "William Pitt",
+            "Admiral Lord Nelson"
+          ],
+          "answer": "The Court of Directors of the East India Company",
+          "explanation": "Clive addressed his confidential report to the EIC Directors in London, describing Bengal as the richest kingdom in Asia."
+        },
+        {
+          "question": "According to parliamentary testimony in Source D, how many yards of British factory-made cotton cloth were imported into India by 1835?",
+          "options": [
+            "Over 51 million yards",
+            "800,000 yards",
+            "1.2 million yards",
+            "10 million yards"
+          ],
+          "answer": "Over 51 million yards",
+          "explanation": "Source D notes that British factory cotton imports exploded from 800,000 yards in 1814 to over 51 million yards by 1835."
+        },
+        {
+          "question": "In Source E, on which prominent London street was the corporate headquarters of East India House located?",
+          "options": [
+            "Leadenhall Street",
+            "Fleet Street",
+            "Whitehall",
+            "Downing Street"
+          ],
+          "answer": "Leadenhall Street",
+          "explanation": "East India House stood on Leadenhall Street in the City of London until its demolition in the 1860s."
+        }
+      ],
       pair_share: {
         prompt: 'Discuss with your partner: Was the British Empire built on trade or violence?',
         think: 'Spend 1 minute quietly considering the question and forming your own opinion.',
@@ -2065,227 +2065,227 @@ const second_british_empire_data = {
         },
       ],
       quiz: [
-      {
-            "question": "At which 1757 battle did Robert Clive defeat the Nawab of Bengal, initiating East India Company territorial rule?",
-            "options": [
-                  "The Battle of Plassey",
-                  "The Battle of Buxar",
-                  "The Battle of Trafalgar",
-                  "The Battle of Waterloo"
-            ],
-            "answer": "The Battle of Plassey",
-            "explanation": "Robert Clive defeated Siraj ud-Daulah at Plassey in June 1757, installing a puppet Nawab."
-      },
-      {
-            "question": "What aggressive legal policy introduced by Lord Dalhousie annexed Indian princely states whose rulers died without biological male heirs?",
-            "options": [
-                  "The Doctrine of Lapse",
-                  "The Permanent Settlement",
-                  "The Subsidiary Alliance",
-                  "The Rowlatt Act"
-            ],
-            "answer": "The Doctrine of Lapse",
-            "explanation": "The Doctrine of Lapse refused to recognize traditional Hindu adoptions, enabling the EIC to annex states like Jhansi and Satara."
-      },
-      {
-            "question": "At which garrison town did eighty-five sepoys refuse to load greased rifle cartridges on 9 May 1857, sparking the rebellion?",
-            "options": [
-                  "Meerut",
-                  "Delhi",
-                  "Kanpur",
-                  "Lucknow"
-            ],
-            "answer": "Meerut",
-            "explanation": "Sepoys at Meerut refused the cartridges, and after their comrades were shackled in irons, mutinied and marched to Delhi."
-      },
-      {
-            "question": "Which Maratha queen led rebel cavalry in combat and defended her fort against British forces during the 1857 Rebellion?",
-            "options": [
-                  "Rani Lakshmibai",
-                  "Begum Hazrat Mahal",
-                  "Sarojini Naidu",
-                  "Kasturba Gandhi"
-            ],
-            "answer": "Rani Lakshmibai",
-            "explanation": "Rani Lakshmibai of Jhansi rallied 14,000 troops, dying in battle at Gwalior in June 1858."
-      },
-      {
-            "question": "Which 1858 British statute abolished the East India Company and transferred governing authority directly to the British Crown?",
-            "options": [
-                  "The Government of India Act 1858",
-                  "The Regulating Act 1773",
-                  "The Pitt's India Act",
-                  "The Indian Councils Act"
-            ],
-            "answer": "The Government of India Act 1858",
-            "explanation": "The Government of India Act 1858 ended Company rule, dissolving its private army and establishing the British Raj."
-      },
-      {
-            "question": "How many people died in the devastating Great Bengal Famine of 1770 while the East India Company maintained strict tax collections?",
-            "options": [
-                  "An estimated ten million people",
-                  "One million",
-                  "100,000",
-                  "50,000"
-            ],
-            "answer": "An estimated ten million people",
-            "explanation": "Around ten million Bengalis starved to death in 1770 as the Company refused to lower tax demands or release grain stores."
-      },
-      {
-            "question": "Which ancient northern Indian kingdom was annexed by Lord Dalhousie in 1856 under the pretext of 'misgovernance'?",
-            "options": [
-                  "Awadh",
-                  "Punjab",
-                  "Bengal",
-                  "Mysore"
-            ],
-            "answer": "Awadh",
-            "explanation": "The annexation of Awadh (Oudh) outraged over 75,000 high-caste sepoys in the Bengal Army who were recruited from the province."
-      },
-      {
-            "question": "Which new rifle introduced in early 1857 required soldiers to bite open cartridges greased with animal fat?",
-            "options": [
-                  "The Pattern 1853 Enfield rifle",
-                  "The Lee-Enfield",
-                  "The Brown Bess musket",
-                  "The Baker rifle"
-            ],
-            "answer": "The Pattern 1853 Enfield rifle",
-            "explanation": "The Enfield rifle's greased paper cartridges offended both Hindu (beef fat) and Muslim (pork lard) religious beliefs."
-      },
-      {
-            "question": "Which elderly Mughal Emperor was proclaimed supreme leader of India by rebel sepoys when they captured Delhi in May 1857?",
-            "options": [
-                  "Bahadur Shah Zafar",
-                  "Shah Alam II",
-                  "Aurangzeb",
-                  "Akbar II"
-            ],
-            "answer": "Bahadur Shah Zafar",
-            "explanation": "Rebel troops marched to the Red Fort in Delhi and proclaimed Bahadur Shah Zafar as the Emperor of Hindustan."
-      },
-      {
-            "question": "What major rebel manifesto published in August 1857 united Hindus and Muslims by outlining social and economic grievances against British rule?",
-            "options": [
-                  "The Azamgarh Proclamation",
-                  "The Delhi Charter",
-                  "The Meerut Declaration",
-                  "The Lucknow Compact"
-            ],
-            "answer": "The Azamgarh Proclamation",
-            "explanation": "The Azamgarh Proclamation appealed to all classes of Indian society to join forces against foreign exploitation."
-      },
-      {
-            "question": "Which British general led the assault on Jhansi and described Rani Lakshmibai as 'the bravest, best, and most dangerous rebel leader'?",
-            "options": [
-                  "Sir Hugh Rose",
-                  "Lord Clive",
-                  "General Kitchener",
-                  "General Dyer"
-            ],
-            "answer": "Sir Hugh Rose",
-            "explanation": "Sir Hugh Rose recorded high praise for the military skill and courage of Rani Lakshmibai in his dispatches."
-      },
-      {
-            "question": "Which loyal troops helped the British Army recapture Delhi in September 1857, having no loyalty to the Mughal court?",
-            "options": [
-                  "Sikh, Gurkha, and Punjabi regiments",
-                  "Bengal infantry",
-                  "French mercenaries",
-                  "Maratha cavalry"
-            ],
-            "answer": "Sikh, Gurkha, and Punjabi regiments",
-            "explanation": "The British relied on Sikh, Gurkha, and Punjabi troops to suppress the uprising in Delhi and northern India."
-      },
-      {
-            "question": "What brutal execution method was used by British colonial forces against captured sepoys in public spectacles of terror?",
-            "options": [
-                  "Tying them to the mouths of cannons",
-                  "Guillotine",
-                  "Drowning at sea",
-                  "Poison"
-            ],
-            "answer": "Tying them to the mouths of cannons",
-            "explanation": "Captured rebels were blown from cannons to traumatize and terrorize the civilian population."
-      },
-      {
-            "question": "On what date did Queen Victoria issue her Royal Proclamation promising religious tolerance and no further annexations?",
-            "options": [
-                  "1 November 1858",
-                  "9 May 1857",
-                  "13 May 1787",
-                  "28 June 1919"
-            ],
-            "answer": "1 November 1858",
-            "explanation": "Queen Victoria's Proclamation was read across India on 1 November 1858, inaugurating direct Crown rule."
-      },
-      {
-            "question": "What term describes the direct British Crown administration of India established in 1858 that lasted until independence in 1947?",
-            "options": [
-                  "The British Raj",
-                  "The East India Company",
-                  "The Dominion of India",
-                  "The Mughal Empire"
-            ],
-            "answer": "The British Raj",
-            "explanation": "The British Raj replaced corporate rule, governing the subcontinent until partition in 1947."
-      },
-      {
-            "question": "In Source A, which American-born historical artist painted Shah Alam Conveying the Grant of the Diwani to Lord Clive?",
-            "options": [
-                  "Benjamin West",
-                  "Walter Crane",
-                  "John Leech",
-                  "George Raper"
-            ],
-            "answer": "Benjamin West",
-            "explanation": "Benjamin West's 1795 painting depicted Clive receiving the firman for the Diwani inside an imperial tent."
-      },
-      {
-            "question": "In Source B, what weapons and armor is Rani Lakshmibai of Jhansi depicted carrying?",
-            "options": [
-                  "Sword and shield",
-                  "Musket and bayonet",
-                  "Bow and arrows",
-                  "Pike and cuirass"
-            ],
-            "answer": "Sword and shield",
-            "explanation": "The 19th-century portrait shows Rani Lakshmibai dressed in warrior attire holding a sword and shield."
-      },
-      {
-            "question": "According to Source C, which foreign power's tyranny and oppression does the Azamgarh Proclamation call on Indians to overthrow?",
-            "options": [
-                  "The treacherous English",
-                  "The Portuguese",
-                  "The Dutch",
-                  "The French"
-            ],
-            "answer": "The treacherous English",
-            "explanation": "Source C condemns the English for dispossessing ancient landlords and impoverishing native weavers."
-      },
-      {
-            "question": "In Source D, which vital transportation corridor and highway connected garrison towns like Meerut, Delhi, Cawnpore, and Lucknow?",
-            "options": [
-                  "The Grand Trunk Road",
-                  "The Silk Road",
-                  "The Royal Road",
-                  "The Trans-Siberian line"
-            ],
-            "answer": "The Grand Trunk Road",
-            "explanation": "The campaign map shows the epicenters of revolt along the corridor of the Grand Trunk Road."
-      },
-      {
-            "question": "In Source E, what did Queen Victoria declare regarding native Indian religious faiths and observances?",
-            "options": [
-                  "None be in any degree molested or disquieted",
-                  "All must convert to Christianity",
-                  "Only Hindu temples would be permitted",
-                  "Religious gatherings were banned"
-            ],
-            "answer": "None be in any degree molested or disquieted",
-            "explanation": "Victoria declared it her royal will that no Indian subject be persecuted or disturbed for their religious beliefs."
-      }
-],
+        {
+          "question": "At which 1757 battle did Robert Clive defeat the Nawab of Bengal, initiating East India Company territorial rule?",
+          "options": [
+            "The Battle of Plassey",
+            "The Battle of Buxar",
+            "The Battle of Trafalgar",
+            "The Battle of Waterloo"
+          ],
+          "answer": "The Battle of Plassey",
+          "explanation": "Robert Clive defeated Siraj ud-Daulah at Plassey in June 1757, installing a puppet Nawab."
+        },
+        {
+          "question": "What aggressive legal policy introduced by Lord Dalhousie annexed Indian princely states whose rulers died without biological male heirs?",
+          "options": [
+            "The Doctrine of Lapse",
+            "The Permanent Settlement",
+            "The Subsidiary Alliance",
+            "The Rowlatt Act"
+          ],
+          "answer": "The Doctrine of Lapse",
+          "explanation": "The Doctrine of Lapse refused to recognize traditional Hindu adoptions, enabling the EIC to annex states like Jhansi and Satara."
+        },
+        {
+          "question": "At which garrison town did eighty-five sepoys refuse to load greased rifle cartridges on 9 May 1857, sparking the rebellion?",
+          "options": [
+            "Meerut",
+            "Delhi",
+            "Kanpur",
+            "Lucknow"
+          ],
+          "answer": "Meerut",
+          "explanation": "Sepoys at Meerut refused the cartridges, and after their comrades were shackled in irons, mutinied and marched to Delhi."
+        },
+        {
+          "question": "Which Maratha queen led rebel cavalry in combat and defended her fort against British forces during the 1857 Rebellion?",
+          "options": [
+            "Rani Lakshmibai",
+            "Begum Hazrat Mahal",
+            "Sarojini Naidu",
+            "Kasturba Gandhi"
+          ],
+          "answer": "Rani Lakshmibai",
+          "explanation": "Rani Lakshmibai of Jhansi rallied 14,000 troops, dying in battle at Gwalior in June 1858."
+        },
+        {
+          "question": "Which 1858 British statute abolished the East India Company and transferred governing authority directly to the British Crown?",
+          "options": [
+            "The Government of India Act 1858",
+            "The Regulating Act 1773",
+            "The Pitt's India Act",
+            "The Indian Councils Act"
+          ],
+          "answer": "The Government of India Act 1858",
+          "explanation": "The Government of India Act 1858 ended Company rule, dissolving its private army and establishing the British Raj."
+        },
+        {
+          "question": "How many people died in the devastating Great Bengal Famine of 1770 while the East India Company maintained strict tax collections?",
+          "options": [
+            "An estimated ten million people",
+            "One million",
+            "100,000",
+            "50,000"
+          ],
+          "answer": "An estimated ten million people",
+          "explanation": "Around ten million Bengalis starved to death in 1770 as the Company refused to lower tax demands or release grain stores."
+        },
+        {
+          "question": "Which ancient northern Indian kingdom was annexed by Lord Dalhousie in 1856 under the pretext of 'misgovernance'?",
+          "options": [
+            "Awadh",
+            "Punjab",
+            "Bengal",
+            "Mysore"
+          ],
+          "answer": "Awadh",
+          "explanation": "The annexation of Awadh (Oudh) outraged over 75,000 high-caste sepoys in the Bengal Army who were recruited from the province."
+        },
+        {
+          "question": "Which new rifle introduced in early 1857 required soldiers to bite open cartridges greased with animal fat?",
+          "options": [
+            "The Pattern 1853 Enfield rifle",
+            "The Lee-Enfield",
+            "The Brown Bess musket",
+            "The Baker rifle"
+          ],
+          "answer": "The Pattern 1853 Enfield rifle",
+          "explanation": "The Enfield rifle's greased paper cartridges offended both Hindu (beef fat) and Muslim (pork lard) religious beliefs."
+        },
+        {
+          "question": "Which elderly Mughal Emperor was proclaimed supreme leader of India by rebel sepoys when they captured Delhi in May 1857?",
+          "options": [
+            "Bahadur Shah Zafar",
+            "Shah Alam II",
+            "Aurangzeb",
+            "Akbar II"
+          ],
+          "answer": "Bahadur Shah Zafar",
+          "explanation": "Rebel troops marched to the Red Fort in Delhi and proclaimed Bahadur Shah Zafar as the Emperor of Hindustan."
+        },
+        {
+          "question": "What major rebel manifesto published in August 1857 united Hindus and Muslims by outlining social and economic grievances against British rule?",
+          "options": [
+            "The Azamgarh Proclamation",
+            "The Delhi Charter",
+            "The Meerut Declaration",
+            "The Lucknow Compact"
+          ],
+          "answer": "The Azamgarh Proclamation",
+          "explanation": "The Azamgarh Proclamation appealed to all classes of Indian society to join forces against foreign exploitation."
+        },
+        {
+          "question": "Which British general led the assault on Jhansi and described Rani Lakshmibai as 'the bravest, best, and most dangerous rebel leader'?",
+          "options": [
+            "Sir Hugh Rose",
+            "Lord Clive",
+            "General Kitchener",
+            "General Dyer"
+          ],
+          "answer": "Sir Hugh Rose",
+          "explanation": "Sir Hugh Rose recorded high praise for the military skill and courage of Rani Lakshmibai in his dispatches."
+        },
+        {
+          "question": "Which loyal troops helped the British Army recapture Delhi in September 1857, having no loyalty to the Mughal court?",
+          "options": [
+            "Sikh, Gurkha, and Punjabi regiments",
+            "Bengal infantry",
+            "French mercenaries",
+            "Maratha cavalry"
+          ],
+          "answer": "Sikh, Gurkha, and Punjabi regiments",
+          "explanation": "The British relied on Sikh, Gurkha, and Punjabi troops to suppress the uprising in Delhi and northern India."
+        },
+        {
+          "question": "What brutal execution method was used by British colonial forces against captured sepoys in public spectacles of terror?",
+          "options": [
+            "Tying them to the mouths of cannons",
+            "Guillotine",
+            "Drowning at sea",
+            "Poison"
+          ],
+          "answer": "Tying them to the mouths of cannons",
+          "explanation": "Captured rebels were blown from cannons to traumatize and terrorize the civilian population."
+        },
+        {
+          "question": "On what date did Queen Victoria issue her Royal Proclamation promising religious tolerance and no further annexations?",
+          "options": [
+            "1 November 1858",
+            "9 May 1857",
+            "13 May 1787",
+            "28 June 1919"
+          ],
+          "answer": "1 November 1858",
+          "explanation": "Queen Victoria's Proclamation was read across India on 1 November 1858, inaugurating direct Crown rule."
+        },
+        {
+          "question": "What term describes the direct British Crown administration of India established in 1858 that lasted until independence in 1947?",
+          "options": [
+            "The British Raj",
+            "The East India Company",
+            "The Dominion of India",
+            "The Mughal Empire"
+          ],
+          "answer": "The British Raj",
+          "explanation": "The British Raj replaced corporate rule, governing the subcontinent until partition in 1947."
+        },
+        {
+          "question": "In Source A, which American-born historical artist painted Shah Alam Conveying the Grant of the Diwani to Lord Clive?",
+          "options": [
+            "Benjamin West",
+            "Walter Crane",
+            "John Leech",
+            "George Raper"
+          ],
+          "answer": "Benjamin West",
+          "explanation": "Benjamin West's 1795 painting depicted Clive receiving the firman for the Diwani inside an imperial tent."
+        },
+        {
+          "question": "In Source B, what weapons and armor is Rani Lakshmibai of Jhansi depicted carrying?",
+          "options": [
+            "Sword and shield",
+            "Musket and bayonet",
+            "Bow and arrows",
+            "Pike and cuirass"
+          ],
+          "answer": "Sword and shield",
+          "explanation": "The 19th-century portrait shows Rani Lakshmibai dressed in warrior attire holding a sword and shield."
+        },
+        {
+          "question": "According to Source C, which foreign power's tyranny and oppression does the Azamgarh Proclamation call on Indians to overthrow?",
+          "options": [
+            "The treacherous English",
+            "The Portuguese",
+            "The Dutch",
+            "The French"
+          ],
+          "answer": "The treacherous English",
+          "explanation": "Source C condemns the English for dispossessing ancient landlords and impoverishing native weavers."
+        },
+        {
+          "question": "In Source D, which vital transportation corridor and highway connected garrison towns like Meerut, Delhi, Cawnpore, and Lucknow?",
+          "options": [
+            "The Grand Trunk Road",
+            "The Silk Road",
+            "The Royal Road",
+            "The Trans-Siberian line"
+          ],
+          "answer": "The Grand Trunk Road",
+          "explanation": "The campaign map shows the epicenters of revolt along the corridor of the Grand Trunk Road."
+        },
+        {
+          "question": "In Source E, what did Queen Victoria declare regarding native Indian religious faiths and observances?",
+          "options": [
+            "None be in any degree molested or disquieted",
+            "All must convert to Christianity",
+            "Only Hindu temples would be permitted",
+            "Religious gatherings were banned"
+          ],
+          "answer": "None be in any degree molested or disquieted",
+          "explanation": "Victoria declared it her royal will that no Indian subject be persecuted or disturbed for their religious beliefs."
+        }
+      ],
       pair_share: {
         prompt:
           'Discuss with your partner: Was the 1857 Rebellion primarily a military mutiny over rifle grease or a war of national liberation?',
@@ -3309,227 +3309,227 @@ const second_british_empire_data = {
         },
       ],
       quiz: [
-      {
-            "question": "From which naval anchorage off Portsmouth did the First Fleet depart on 13 May 1787 to colonize New South Wales?",
-            "options": [
-                  "Spithead",
-                  "The Needles",
-                  "Plymouth Sound",
-                  "Torbay"
-            ],
-            "answer": "Spithead",
-            "explanation": "Captain Arthur Phillip's eleven ships weighed anchor from Spithead off Portsmouth on 13 May 1787."
-      },
-      {
-            "question": "What legal doctrine declaring Australia 'nobody’s land' was used by the British Crown to justify annexing the continent without treaties?",
-            "options": [
-                  "Terra Nullius",
-                  "Manifest Destiny",
-                  "Pax Britannica",
-                  "The Monroe Doctrine"
-            ],
-            "answer": "Terra Nullius",
-            "explanation": "Terra Nullius treated the continent as uninhabited because Indigenous peoples did not practice European-style fenced farming."
-      },
-      {
-            "question": "Which Bidjigal resistance warrior led armed guerrilla raids against British homesteads across the Sydney frontier from 1790 to 1802?",
-            "options": [
-                  "Pemulwuy",
-                  "Bennelong",
-                  "Windradyne",
-                  "Truganini"
-            ],
-            "answer": "Pemulwuy",
-            "explanation": "Pemulwuy led fierce guerrilla warfare against settlers along the Hawkesbury and Parramatta rivers until he was ambushed in 1802."
-      },
-      {
-            "question": "What violent conflict took place in Tasmania between 1824 and 1831 as British pastoralists dispossessed the Palawa people?",
-            "options": [
-                  "The Black War",
-                  "The Frontier War",
-                  "The Maori Wars",
-                  "The Emu War"
-            ],
-            "answer": "The Black War",
-            "explanation": "The Black War pitted British settlers and soldiers against the Indigenous Palawa people of Van Diemen's Land."
-      },
-      {
-            "question": "What 1854 rebellion saw gold miners in Ballarat, Victoria, build a timber stockade and swear an oath under the Southern Cross flag?",
-            "options": [
-                  "The Eureka Stockade",
-                  "The Castle Hill Rebellion",
-                  "The Rum Rebellion",
-                  "The Sydney Riots"
-            ],
-            "answer": "The Eureka Stockade",
-            "explanation": "Miners led by Peter Lalor rebelled against oppressive monthly licence fees, storming the stockade on 3 December 1854."
-      },
-      {
-            "question": "What major geopolitical loss in 1783 forced the British government to find a new penal colony for transported convicts?",
-            "options": [
-                  "The loss of the Thirteen American Colonies",
-                  "The fall of Quebec",
-                  "The loss of Minorca",
-                  "The loss of Hanover"
-            ],
-            "answer": "The loss of the Thirteen American Colonies",
-            "explanation": "Defeat in the American Revolutionary War closed transatlantic convict transportation to Virginia and Maryland."
-      },
-      {
-            "question": "What decommissioned wooden warships anchored in Portsmouth and the Thames were used to house prisoners during the penal crisis?",
-            "options": [
-                  "Prison hulks",
-                  "Sloops of war",
-                  "Frigates",
-                  "Fireships"
-            ],
-            "answer": "Prison hulks",
-            "explanation": "Prison hulks were damp, disease-ridden decommissioned warships used as temporary floating prisons."
-      },
-      {
-            "question": "Who was appointed commander of the First Fleet and first colonial Governor of New South Wales?",
-            "options": [
-                  "Captain Arthur Phillip",
-                  "Captain James Cook",
-                  "Captain Watkin Tench",
-                  "William Bligh"
-            ],
-            "answer": "Captain Arthur Phillip",
-            "explanation": "Captain Arthur Phillip successfully commanded the 15,000-mile voyage of the First Fleet to Botany Bay and Sydney Cove."
-      },
-      {
-            "question": "How many convicts were transported aboard the eleven ships of the First Fleet in 1787?",
-            "options": [
-                  "775 convicts",
-                  "5,000 convicts",
-                  "100 convicts",
-                  "20,000 convicts"
-            ],
-            "answer": "775 convicts",
-            "explanation": "The First Fleet carried 775 convicts, most convicted of petty property thefts."
-      },
-      {
-            "question": "For how many years had Aboriginal Australians continuously inhabited and stewarded the continent before European arrival?",
-            "options": [
-                  "Over 65,000 years",
-                  "1,000 years",
-                  "5,000 years",
-                  "10,000 years"
-            ],
-            "answer": "Over 65,000 years",
-            "explanation": "Archaeological and oral history proves Aboriginal nations had stewarded Australia for more than 65,000 years."
-      },
-      {
-            "question": "What fatal disease epidemic broke out in April 1789, killing over 50% of the Indigenous Eora people around Sydney?",
-            "options": [
-                  "Smallpox",
-                  "Cholera",
-                  "Yellow fever",
-                  "Typhus"
-            ],
-            "answer": "Smallpox",
-            "explanation": "A catastrophic smallpox epidemic decimated First Nations populations across the Sydney basin within fifteen months."
-      },
-      {
-            "question": "What pictorial visual aids did Lieutenant-Governor George Arthur tie to trees during the Black War to communicate British justice?",
-            "options": [
-                  "Proclamation Boards",
-                  "Union Jacks",
-                  "Maps of Hobart",
-                  "Bible verses"
-            ],
-            "answer": "Proclamation Boards",
-            "explanation": "Governor Arthur's wooden boards showed cartoon panels promising equal judicial punishment for settlers and Aboriginal people."
-      },
-      {
-            "question": "What massive 1830 military cordon comprising 2,200 soldiers and settlers swept across Tasmania to capture or kill remaining Palawa people?",
-            "options": [
-                  "The 'Black Line'",
-                  "The Red Line",
-                  "The Great Drive",
-                  "The Hobart Cordon"
-            ],
-            "answer": "The 'Black Line'",
-            "explanation": "The 'Black Line' swept across Tasmania, driving surviving Palawa families into exile on Flinders Island."
-      },
-      {
-            "question": "What monthly tax did colonial authorities charge miners on the Victorian goldfields, sparking the 1854 Eureka uprising?",
-            "options": [
-                  "Gold Mining Licence Fee of 30 shillings",
-                  "A 10% income tax",
-                  "A land registry fee",
-                  "A ship boarding toll"
-            ],
-            "answer": "Gold Mining Licence Fee of 30 shillings",
-            "explanation": "The 30-shilling monthly licence fee was levied on all diggers regardless of whether they struck gold."
-      },
-      {
-            "question": "Who was the Irish immigrant who led the gold miners at the Eureka Stockade under the Southern Cross flag?",
-            "options": [
-                  "Peter Lalor",
-                  "Arthur Phillip",
-                  "Watkin Tench",
-                  "George Arthur"
-            ],
-            "answer": "Peter Lalor",
-            "explanation": "Peter Lalor was elected commander of the miners and sworn into the Eureka Oath at Bakery Hill."
-      },
-      {
-            "question": "In Source A, which prominent Isle of Wight chalk landmark is the First Fleet depicted sailing past in George Raper's watercolor?",
-            "options": [
-                  "The Needles",
-                  "St Catherine's Point",
-                  "Culver Cliff",
-                  "Osborne House"
-            ],
-            "answer": "The Needles",
-            "explanation": "Midshipman George Raper depicted the convoy sailing past the Needles after departing Spithead in May 1787."
-      },
-      {
-            "question": "In Source B, where did the First Fleet initially anchor in January 1788 before moving to Port Jackson?",
-            "options": [
-                  "Botany Bay",
-                  "Sydney Cove",
-                  "Jervis Bay",
-                  "Broken Bay"
-            ],
-            "answer": "Botany Bay",
-            "explanation": "The fleet anchored in Botany Bay on 18 January 1788 before relocating to the deeper harbour of Port Jackson."
-      },
-      {
-            "question": "In Source C, which Royal Marines captain published 'A Complete Account of the Settlement at Port Jackson' in 1793?",
-            "options": [
-                  "Captain Watkin Tench",
-                  "Captain Arthur Phillip",
-                  "Captain Cook",
-                  "Captain Bligh"
-            ],
-            "answer": "Captain Watkin Tench",
-            "explanation": "Marine Captain Watkin Tench published vivid firsthand accounts of early frontier skirmishes and Indigenous tactics."
-      },
-      {
-            "question": "According to Source D, what did Governor Arthur's Proclamation Board show happening to a white settler who killed an Aboriginal person?",
-            "options": [
-                  "He would be hanged",
-                  "He would be given land",
-                  "He would be fined five pounds",
-                  "He would be made governor"
-            ],
-            "answer": "He would be hanged",
-            "explanation": "The pictograph panels depicted a white settler hanging from a gallows for killing an Aboriginal person."
-      },
-      {
-            "question": "In Source E, by which celestial symbol did the Ballarat gold miners swear their solemn oath to defend their rights and liberties?",
-            "options": [
-                  "The Southern Cross",
-                  "The Union Jack",
-                  "The North Star",
-                  "The Rising Sun"
-            ],
-            "answer": "The Southern Cross",
-            "explanation": "The miners swore: 'We swear by the Southern Cross to stand truly by each other, and fight to defend our rights and liberties.'"
-      }
-],
+        {
+          "question": "From which naval anchorage off Portsmouth did the First Fleet depart on 13 May 1787 to colonize New South Wales?",
+          "options": [
+            "Spithead",
+            "The Needles",
+            "Plymouth Sound",
+            "Torbay"
+          ],
+          "answer": "Spithead",
+          "explanation": "Captain Arthur Phillip's eleven ships weighed anchor from Spithead off Portsmouth on 13 May 1787."
+        },
+        {
+          "question": "What legal doctrine declaring Australia 'nobody’s land' was used by the British Crown to justify annexing the continent without treaties?",
+          "options": [
+            "Terra Nullius",
+            "Manifest Destiny",
+            "Pax Britannica",
+            "The Monroe Doctrine"
+          ],
+          "answer": "Terra Nullius",
+          "explanation": "Terra Nullius treated the continent as uninhabited because Indigenous peoples did not practice European-style fenced farming."
+        },
+        {
+          "question": "Which Bidjigal resistance warrior led armed guerrilla raids against British homesteads across the Sydney frontier from 1790 to 1802?",
+          "options": [
+            "Pemulwuy",
+            "Bennelong",
+            "Windradyne",
+            "Truganini"
+          ],
+          "answer": "Pemulwuy",
+          "explanation": "Pemulwuy led fierce guerrilla warfare against settlers along the Hawkesbury and Parramatta rivers until he was ambushed in 1802."
+        },
+        {
+          "question": "What violent conflict took place in Tasmania between 1824 and 1831 as British pastoralists dispossessed the Palawa people?",
+          "options": [
+            "The Black War",
+            "The Frontier War",
+            "The Maori Wars",
+            "The Emu War"
+          ],
+          "answer": "The Black War",
+          "explanation": "The Black War pitted British settlers and soldiers against the Indigenous Palawa people of Van Diemen's Land."
+        },
+        {
+          "question": "What 1854 rebellion saw gold miners in Ballarat, Victoria, build a timber stockade and swear an oath under the Southern Cross flag?",
+          "options": [
+            "The Eureka Stockade",
+            "The Castle Hill Rebellion",
+            "The Rum Rebellion",
+            "The Sydney Riots"
+          ],
+          "answer": "The Eureka Stockade",
+          "explanation": "Miners led by Peter Lalor rebelled against oppressive monthly licence fees, storming the stockade on 3 December 1854."
+        },
+        {
+          "question": "What major geopolitical loss in 1783 forced the British government to find a new penal colony for transported convicts?",
+          "options": [
+            "The loss of the Thirteen American Colonies",
+            "The fall of Quebec",
+            "The loss of Minorca",
+            "The loss of Hanover"
+          ],
+          "answer": "The loss of the Thirteen American Colonies",
+          "explanation": "Defeat in the American Revolutionary War closed transatlantic convict transportation to Virginia and Maryland."
+        },
+        {
+          "question": "What decommissioned wooden warships anchored in Portsmouth and the Thames were used to house prisoners during the penal crisis?",
+          "options": [
+            "Prison hulks",
+            "Sloops of war",
+            "Frigates",
+            "Fireships"
+          ],
+          "answer": "Prison hulks",
+          "explanation": "Prison hulks were damp, disease-ridden decommissioned warships used as temporary floating prisons."
+        },
+        {
+          "question": "Who was appointed commander of the First Fleet and first colonial Governor of New South Wales?",
+          "options": [
+            "Captain Arthur Phillip",
+            "Captain James Cook",
+            "Captain Watkin Tench",
+            "William Bligh"
+          ],
+          "answer": "Captain Arthur Phillip",
+          "explanation": "Captain Arthur Phillip successfully commanded the 15,000-mile voyage of the First Fleet to Botany Bay and Sydney Cove."
+        },
+        {
+          "question": "How many convicts were transported aboard the eleven ships of the First Fleet in 1787?",
+          "options": [
+            "775 convicts",
+            "5,000 convicts",
+            "100 convicts",
+            "20,000 convicts"
+          ],
+          "answer": "775 convicts",
+          "explanation": "The First Fleet carried 775 convicts, most convicted of petty property thefts."
+        },
+        {
+          "question": "For how many years had Aboriginal Australians continuously inhabited and stewarded the continent before European arrival?",
+          "options": [
+            "Over 65,000 years",
+            "1,000 years",
+            "5,000 years",
+            "10,000 years"
+          ],
+          "answer": "Over 65,000 years",
+          "explanation": "Archaeological and oral history proves Aboriginal nations had stewarded Australia for more than 65,000 years."
+        },
+        {
+          "question": "What fatal disease epidemic broke out in April 1789, killing over 50% of the Indigenous Eora people around Sydney?",
+          "options": [
+            "Smallpox",
+            "Cholera",
+            "Yellow fever",
+            "Typhus"
+          ],
+          "answer": "Smallpox",
+          "explanation": "A catastrophic smallpox epidemic decimated First Nations populations across the Sydney basin within fifteen months."
+        },
+        {
+          "question": "What pictorial visual aids did Lieutenant-Governor George Arthur tie to trees during the Black War to communicate British justice?",
+          "options": [
+            "Proclamation Boards",
+            "Union Jacks",
+            "Maps of Hobart",
+            "Bible verses"
+          ],
+          "answer": "Proclamation Boards",
+          "explanation": "Governor Arthur's wooden boards showed cartoon panels promising equal judicial punishment for settlers and Aboriginal people."
+        },
+        {
+          "question": "What massive 1830 military cordon comprising 2,200 soldiers and settlers swept across Tasmania to capture or kill remaining Palawa people?",
+          "options": [
+            "The 'Black Line'",
+            "The Red Line",
+            "The Great Drive",
+            "The Hobart Cordon"
+          ],
+          "answer": "The 'Black Line'",
+          "explanation": "The 'Black Line' swept across Tasmania, driving surviving Palawa families into exile on Flinders Island."
+        },
+        {
+          "question": "What monthly tax did colonial authorities charge miners on the Victorian goldfields, sparking the 1854 Eureka uprising?",
+          "options": [
+            "Gold Mining Licence Fee of 30 shillings",
+            "A 10% income tax",
+            "A land registry fee",
+            "A ship boarding toll"
+          ],
+          "answer": "Gold Mining Licence Fee of 30 shillings",
+          "explanation": "The 30-shilling monthly licence fee was levied on all diggers regardless of whether they struck gold."
+        },
+        {
+          "question": "Who was the Irish immigrant who led the gold miners at the Eureka Stockade under the Southern Cross flag?",
+          "options": [
+            "Peter Lalor",
+            "Arthur Phillip",
+            "Watkin Tench",
+            "George Arthur"
+          ],
+          "answer": "Peter Lalor",
+          "explanation": "Peter Lalor was elected commander of the miners and sworn into the Eureka Oath at Bakery Hill."
+        },
+        {
+          "question": "In Source A, which prominent Isle of Wight chalk landmark is the First Fleet depicted sailing past in George Raper's watercolor?",
+          "options": [
+            "The Needles",
+            "St Catherine's Point",
+            "Culver Cliff",
+            "Osborne House"
+          ],
+          "answer": "The Needles",
+          "explanation": "Midshipman George Raper depicted the convoy sailing past the Needles after departing Spithead in May 1787."
+        },
+        {
+          "question": "In Source B, where did the First Fleet initially anchor in January 1788 before moving to Port Jackson?",
+          "options": [
+            "Botany Bay",
+            "Sydney Cove",
+            "Jervis Bay",
+            "Broken Bay"
+          ],
+          "answer": "Botany Bay",
+          "explanation": "The fleet anchored in Botany Bay on 18 January 1788 before relocating to the deeper harbour of Port Jackson."
+        },
+        {
+          "question": "In Source C, which Royal Marines captain published 'A Complete Account of the Settlement at Port Jackson' in 1793?",
+          "options": [
+            "Captain Watkin Tench",
+            "Captain Arthur Phillip",
+            "Captain Cook",
+            "Captain Bligh"
+          ],
+          "answer": "Captain Watkin Tench",
+          "explanation": "Marine Captain Watkin Tench published vivid firsthand accounts of early frontier skirmishes and Indigenous tactics."
+        },
+        {
+          "question": "According to Source D, what did Governor Arthur's Proclamation Board show happening to a white settler who killed an Aboriginal person?",
+          "options": [
+            "He would be hanged",
+            "He would be given land",
+            "He would be fined five pounds",
+            "He would be made governor"
+          ],
+          "answer": "He would be hanged",
+          "explanation": "The pictograph panels depicted a white settler hanging from a gallows for killing an Aboriginal person."
+        },
+        {
+          "question": "In Source E, by which celestial symbol did the Ballarat gold miners swear their solemn oath to defend their rights and liberties?",
+          "options": [
+            "The Southern Cross",
+            "The Union Jack",
+            "The North Star",
+            "The Rising Sun"
+          ],
+          "answer": "The Southern Cross",
+          "explanation": "The miners swore: 'We swear by the Southern Cross to stand truly by each other, and fight to defend our rights and liberties.'"
+        }
+      ],
       pair_share: {
         prompt:
           'Discuss with your partner: Why did the British Crown invent the doctrine of terra nullius, and how did Pemulwuy challenge it?',
@@ -4541,227 +4541,227 @@ const second_british_empire_data = {
         },
       ],
       quiz: [
-      {
-            "question": "Which 1884–1885 international conference convened by Bismarck laid down the ground rules for the partition of Africa?",
-            "options": [
-                  "The Berlin Conference",
-                  "The Paris Conference",
-                  "The Congress of Vienna",
-                  "The Versailles Treaty"
-            ],
-            "answer": "The Berlin Conference",
-            "explanation": "Fourteen European powers and the US partitioned Africa at the Berlin Conference without consulting any African leaders."
-      },
-      {
-            "question": "What rapid-firing automatic weapon invented in 1884 gave European colonial forces devastating tactical superiority across Africa?",
-            "options": [
-                  "The Maxim machine gun",
-                  "The Gatling gun",
-                  "The Vickers gun",
-                  "The Enfield rifle"
-            ],
-            "answer": "The Maxim machine gun",
-            "explanation": "Hiram Maxim's gun fired 600 rounds per minute, overwhelming indigenous forces armed with spears and obsolete muskets."
-      },
-      {
-            "question": "Which 1899 poem by Rudyard Kipling urged Western powers to colonize foreign peoples as a noble moral obligation?",
-            "options": [
-                  "The White Man’s Burden",
-                  "The Recessional",
-                  "Gunga Din",
-                  "If—"
-            ],
-            "answer": "The White Man’s Burden",
-            "explanation": "Kipling framed violent conquest as a self-sacrificing civilising duty to rule 'half-devil and half-child' peoples."
-      },
-      {
-            "question": "Which British journalist founded the Congo Reform Association and authored 'The Black Man's Burden' in 1920?",
-            "options": [
-                  "E. D. Morel",
-                  "Rudyard Kipling",
-                  "Cecil Rhodes",
-                  "H. M. Stanley"
-            ],
-            "answer": "E. D. Morel",
-            "explanation": "E. D. Morel investigated King Leopold II's brutal rubber concessions and exposed the human horrors of colonial capitalism."
-      },
-      {
-            "question": "Which Ndebele monarch protested to Queen Victoria after being deceived by Cecil Rhodes's agents into signing the 1888 Rudd Concession?",
-            "options": [
-                  "King Lobengula",
-                  "King Cetshwayo",
-                  "King Menelik II",
-                  "King Prempeh I"
-            ],
-            "answer": "King Lobengula",
-            "explanation": "King Lobengula of Matabeleland sent envoys to London warning that England was like a chameleon slowly eating a fly."
-      },
-      {
-            "question": "What percentage of the African continent was under European colonial control in 1870 compared to 1914?",
-            "options": [
-                  "Less than 10% in 1870, rising to over 90% by 1914",
-                  "50% in 1870, rising to 100%",
-                  "Zero in 1870, rising to 50%",
-                  "Over 80% throughout"
-            ],
-            "answer": "Less than 10% in 1870, rising to over 90% by 1914",
-            "explanation": "The Scramble for Africa saw European colonial control surge from coastal outposts (<10%) to over 90% of the continent."
-      },
-      {
-            "question": "What principle established at the Berlin Conference required European powers to prove physical administrative control over claimed lands?",
-            "options": [
-                  "Effective Occupation",
-                  "Terra Nullius",
-                  "The Monroe Doctrine",
-                  "Direct Rule"
-            ],
-            "answer": "Effective Occupation",
-            "explanation": "Under Effective Occupation, powers had to station troops or establish treaties and chartered companies to validate land claims."
-      },
-      {
-            "question": "Which medicinal bark extract protected European explorers and soldiers from fatal tropical malaria?",
-            "options": [
-                  "Quinine",
-                  "Penicillin",
-                  "Aspirin",
-                  "Morphine"
-            ],
-            "answer": "Quinine",
-            "explanation": "Quinine, extracted from cinchona bark, reduced malaria mortality and allowed Europeans to penetrate African river valleys."
-      },
-      {
-            "question": "How many rounds per minute could the carriage-mounted Maxim machine gun discharge?",
-            "options": [
-                  "600 rounds per minute",
-                  "100 rounds per minute",
-                  "50 rounds per minute",
-                  "2,000 rounds per minute"
-            ],
-            "answer": "600 rounds per minute",
-            "explanation": "The Maxim gun discharged 600 rounds per minute using recoil-operated automatic loading."
-      },
-      {
-            "question": "What pseudoscientific ideology applied biological evolutionary theories to justify racial hierarchies and imperial conquest?",
-            "options": [
-                  "Social Darwinism",
-                  "Marxism",
-                  "Utilitarianism",
-                  "Mercantilism"
-            ],
-            "answer": "Social Darwinism",
-            "explanation": "Social Darwinism claimed white Anglo-Saxons were biologically superior and destined to dominate 'weaker' races."
-      },
-      {
-            "question": "Which popular Victorian consumer brand ran famous advertisements equating its soap with the imperial 'civilising mission'?",
-            "options": [
-                  "Pears' Soap",
-                  "Cadbury's Cocoa",
-                  "Colman's Mustard",
-                  "Lipton Tea"
-            ],
-            "answer": "Pears' Soap",
-            "explanation": "Pears' Soap celebrated British racial purity and claimed washing was the first step in lightening the 'White Man's Burden'."
-      },
-      {
-            "question": "At which Belgian port did shipping clerk E. D. Morel notice ships returning from the Congo carrying only weapons and ammunition?",
-            "options": [
-                  "Antwerp",
-                  "Rotterdam",
-                  "Ostend",
-                  "Brussels"
-            ],
-            "answer": "Antwerp",
-            "explanation": "At Antwerp, Morel saw that ivory and rubber arrived from the Congo while only military hardware returned, proving slave labour."
-      },
-      {
-            "question": "What bodily mutilation did King Leopold II's Force Publique inflict on Congolese rubber tappers who failed to meet harvest quotas?",
-            "options": [
-                  "Amputated hands and feet",
-                  "Blinded them",
-                  "Branded faces",
-                  "Cut off ears"
-            ],
-            "answer": "Amputated hands and feet",
-            "explanation": "Colonial sentries severed the hands and feet of rubber tappers and their children to account for expended bullets."
-      },
-      {
-            "question": "Which British diamond magnate and founder of the British South Africa Company sought to build a Cape-to-Cairo railway?",
-            "options": [
-                  "Cecil Rhodes",
-                  "Hiram Maxim",
-                  "Lord Curzon",
-                  "Robert Clive"
-            ],
-            "answer": "Cecil Rhodes",
-            "explanation": "Cecil Rhodes orchestrated the annexation of Southern Rhodesia (Zimbabwe) through the fraudulent Rudd Concession."
-      },
-      {
-            "question": "What creature did King Lobengula compare Great Britain to in his famous metaphor describing the stealthy seizure of his country?",
-            "options": [
-                  "A chameleon",
-                  "A lion",
-                  "An eagle",
-                  "A crocodile"
-            ],
-            "answer": "A chameleon",
-            "explanation": "Lobengula warned: 'England is the chameleon and my country is that fly,' capturing how creeping diplomacy trapped his kingdom."
-      },
-      {
-            "question": "In Source A, which German Chancellor is depicted addressing European ambassadors under a giant wall map of Africa in 1884?",
-            "options": [
-                  "Otto von Bismarck",
-                  "Kaiser Wilhelm II",
-                  "Theobald von Bethmann Hollweg",
-                  "Helmuth von Moltke"
-            ],
-            "answer": "Otto von Bismarck",
-            "explanation": "Bismarck hosted the fourteen powers at the Berlin Conference, brokering the diplomatic partition of Africa."
-      },
-      {
-            "question": "In Source B, who invented the world's first fully automatic, recoil-operated machine gun in 1884?",
-            "options": [
-                  "Hiram Maxim",
-                  "Richard Gatling",
-                  "Samuel Colt",
-                  "Sir Douglas Haig"
-            ],
-            "answer": "Hiram Maxim",
-            "explanation": "American-born British inventor Hiram Maxim patented the recoil-operated machine gun in 1884."
-      },
-      {
-            "question": "In Source C, what paternalistic phrase does Rudyard Kipling use to describe colonized non-European subjects?",
-            "options": [
-                  "Half-devil and half-child",
-                  "Brave comrades",
-                  "Sovereign partners",
-                  "Noble savages"
-            ],
-            "answer": "Half-devil and half-child",
-            "explanation": "Kipling wrote: 'Your new-caught, sullen peoples, / Half-devil and half-child,' presenting indigenous peoples as childlike."
-      },
-      {
-            "question": "According to Source D, what was the real motivation that drove European syndicates into Africa, according to E. D. Morel?",
-            "options": [
-                  "The insatiable lust for rubber, ivory, palm oil, and gold",
-                  "A desire to stop famines",
-                  "Christian evangelism",
-                  "Spreading medical science"
-            ],
-            "answer": "The insatiable lust for rubber, ivory, palm oil, and gold",
-            "explanation": "Morel exposed that corporate profit and commodity extraction, not philanthropy, drove the Scramble for Africa."
-      },
-      {
-            "question": "In Source E, what fraudulent concession did King Lobengula protest was misrepresented by Cecil Rhodes’s agents?",
-            "options": [
-                  "The Rudd Concession",
-                  "The Treaty of Allahabad",
-                  "The Berlin Act",
-                  "The Matabele Charter"
-            ],
-            "answer": "The Rudd Concession",
-            "explanation": "The Rudd Concession granted complete mineral rights to Rhodes's company while Lobengula was told only ten men would dig."
-      }
-],
+        {
+          "question": "Which 1884–1885 international conference convened by Bismarck laid down the ground rules for the partition of Africa?",
+          "options": [
+            "The Berlin Conference",
+            "The Paris Conference",
+            "The Congress of Vienna",
+            "The Versailles Treaty"
+          ],
+          "answer": "The Berlin Conference",
+          "explanation": "Fourteen European powers and the US partitioned Africa at the Berlin Conference without consulting any African leaders."
+        },
+        {
+          "question": "What rapid-firing automatic weapon invented in 1884 gave European colonial forces devastating tactical superiority across Africa?",
+          "options": [
+            "The Maxim machine gun",
+            "The Gatling gun",
+            "The Vickers gun",
+            "The Enfield rifle"
+          ],
+          "answer": "The Maxim machine gun",
+          "explanation": "Hiram Maxim's gun fired 600 rounds per minute, overwhelming indigenous forces armed with spears and obsolete muskets."
+        },
+        {
+          "question": "Which 1899 poem by Rudyard Kipling urged Western powers to colonize foreign peoples as a noble moral obligation?",
+          "options": [
+            "The White Man’s Burden",
+            "The Recessional",
+            "Gunga Din",
+            "If—"
+          ],
+          "answer": "The White Man’s Burden",
+          "explanation": "Kipling framed violent conquest as a self-sacrificing civilising duty to rule 'half-devil and half-child' peoples."
+        },
+        {
+          "question": "Which British journalist founded the Congo Reform Association and authored 'The Black Man's Burden' in 1920?",
+          "options": [
+            "E. D. Morel",
+            "Rudyard Kipling",
+            "Cecil Rhodes",
+            "H. M. Stanley"
+          ],
+          "answer": "E. D. Morel",
+          "explanation": "E. D. Morel investigated King Leopold II's brutal rubber concessions and exposed the human horrors of colonial capitalism."
+        },
+        {
+          "question": "Which Ndebele monarch protested to Queen Victoria after being deceived by Cecil Rhodes's agents into signing the 1888 Rudd Concession?",
+          "options": [
+            "King Lobengula",
+            "King Cetshwayo",
+            "King Menelik II",
+            "King Prempeh I"
+          ],
+          "answer": "King Lobengula",
+          "explanation": "King Lobengula of Matabeleland sent envoys to London warning that England was like a chameleon slowly eating a fly."
+        },
+        {
+          "question": "What percentage of the African continent was under European colonial control in 1870 compared to 1914?",
+          "options": [
+            "Less than 10% in 1870, rising to over 90% by 1914",
+            "50% in 1870, rising to 100%",
+            "Zero in 1870, rising to 50%",
+            "Over 80% throughout"
+          ],
+          "answer": "Less than 10% in 1870, rising to over 90% by 1914",
+          "explanation": "The Scramble for Africa saw European colonial control surge from coastal outposts (<10%) to over 90% of the continent."
+        },
+        {
+          "question": "What principle established at the Berlin Conference required European powers to prove physical administrative control over claimed lands?",
+          "options": [
+            "Effective Occupation",
+            "Terra Nullius",
+            "The Monroe Doctrine",
+            "Direct Rule"
+          ],
+          "answer": "Effective Occupation",
+          "explanation": "Under Effective Occupation, powers had to station troops or establish treaties and chartered companies to validate land claims."
+        },
+        {
+          "question": "Which medicinal bark extract protected European explorers and soldiers from fatal tropical malaria?",
+          "options": [
+            "Quinine",
+            "Penicillin",
+            "Aspirin",
+            "Morphine"
+          ],
+          "answer": "Quinine",
+          "explanation": "Quinine, extracted from cinchona bark, reduced malaria mortality and allowed Europeans to penetrate African river valleys."
+        },
+        {
+          "question": "How many rounds per minute could the carriage-mounted Maxim machine gun discharge?",
+          "options": [
+            "600 rounds per minute",
+            "100 rounds per minute",
+            "50 rounds per minute",
+            "2,000 rounds per minute"
+          ],
+          "answer": "600 rounds per minute",
+          "explanation": "The Maxim gun discharged 600 rounds per minute using recoil-operated automatic loading."
+        },
+        {
+          "question": "What pseudoscientific ideology applied biological evolutionary theories to justify racial hierarchies and imperial conquest?",
+          "options": [
+            "Social Darwinism",
+            "Marxism",
+            "Utilitarianism",
+            "Mercantilism"
+          ],
+          "answer": "Social Darwinism",
+          "explanation": "Social Darwinism claimed white Anglo-Saxons were biologically superior and destined to dominate 'weaker' races."
+        },
+        {
+          "question": "Which popular Victorian consumer brand ran famous advertisements equating its soap with the imperial 'civilising mission'?",
+          "options": [
+            "Pears' Soap",
+            "Cadbury's Cocoa",
+            "Colman's Mustard",
+            "Lipton Tea"
+          ],
+          "answer": "Pears' Soap",
+          "explanation": "Pears' Soap celebrated British racial purity and claimed washing was the first step in lightening the 'White Man's Burden'."
+        },
+        {
+          "question": "At which Belgian port did shipping clerk E. D. Morel notice ships returning from the Congo carrying only weapons and ammunition?",
+          "options": [
+            "Antwerp",
+            "Rotterdam",
+            "Ostend",
+            "Brussels"
+          ],
+          "answer": "Antwerp",
+          "explanation": "At Antwerp, Morel saw that ivory and rubber arrived from the Congo while only military hardware returned, proving slave labour."
+        },
+        {
+          "question": "What bodily mutilation did King Leopold II's Force Publique inflict on Congolese rubber tappers who failed to meet harvest quotas?",
+          "options": [
+            "Amputated hands and feet",
+            "Blinded them",
+            "Branded faces",
+            "Cut off ears"
+          ],
+          "answer": "Amputated hands and feet",
+          "explanation": "Colonial sentries severed the hands and feet of rubber tappers and their children to account for expended bullets."
+        },
+        {
+          "question": "Which British diamond magnate and founder of the British South Africa Company sought to build a Cape-to-Cairo railway?",
+          "options": [
+            "Cecil Rhodes",
+            "Hiram Maxim",
+            "Lord Curzon",
+            "Robert Clive"
+          ],
+          "answer": "Cecil Rhodes",
+          "explanation": "Cecil Rhodes orchestrated the annexation of Southern Rhodesia (Zimbabwe) through the fraudulent Rudd Concession."
+        },
+        {
+          "question": "What creature did King Lobengula compare Great Britain to in his famous metaphor describing the stealthy seizure of his country?",
+          "options": [
+            "A chameleon",
+            "A lion",
+            "An eagle",
+            "A crocodile"
+          ],
+          "answer": "A chameleon",
+          "explanation": "Lobengula warned: 'England is the chameleon and my country is that fly,' capturing how creeping diplomacy trapped his kingdom."
+        },
+        {
+          "question": "In Source A, which German Chancellor is depicted addressing European ambassadors under a giant wall map of Africa in 1884?",
+          "options": [
+            "Otto von Bismarck",
+            "Kaiser Wilhelm II",
+            "Theobald von Bethmann Hollweg",
+            "Helmuth von Moltke"
+          ],
+          "answer": "Otto von Bismarck",
+          "explanation": "Bismarck hosted the fourteen powers at the Berlin Conference, brokering the diplomatic partition of Africa."
+        },
+        {
+          "question": "In Source B, who invented the world's first fully automatic, recoil-operated machine gun in 1884?",
+          "options": [
+            "Hiram Maxim",
+            "Richard Gatling",
+            "Samuel Colt",
+            "Sir Douglas Haig"
+          ],
+          "answer": "Hiram Maxim",
+          "explanation": "American-born British inventor Hiram Maxim patented the recoil-operated machine gun in 1884."
+        },
+        {
+          "question": "In Source C, what paternalistic phrase does Rudyard Kipling use to describe colonized non-European subjects?",
+          "options": [
+            "Half-devil and half-child",
+            "Brave comrades",
+            "Sovereign partners",
+            "Noble savages"
+          ],
+          "answer": "Half-devil and half-child",
+          "explanation": "Kipling wrote: 'Your new-caught, sullen peoples, / Half-devil and half-child,' presenting indigenous peoples as childlike."
+        },
+        {
+          "question": "According to Source D, what was the real motivation that drove European syndicates into Africa, according to E. D. Morel?",
+          "options": [
+            "The insatiable lust for rubber, ivory, palm oil, and gold",
+            "A desire to stop famines",
+            "Christian evangelism",
+            "Spreading medical science"
+          ],
+          "answer": "The insatiable lust for rubber, ivory, palm oil, and gold",
+          "explanation": "Morel exposed that corporate profit and commodity extraction, not philanthropy, drove the Scramble for Africa."
+        },
+        {
+          "question": "In Source E, what fraudulent concession did King Lobengula protest was misrepresented by Cecil Rhodes’s agents?",
+          "options": [
+            "The Rudd Concession",
+            "The Treaty of Allahabad",
+            "The Berlin Act",
+            "The Matabele Charter"
+          ],
+          "answer": "The Rudd Concession",
+          "explanation": "The Rudd Concession granted complete mineral rights to Rhodes's company while Lobengula was told only ten men would dig."
+        }
+      ],
       prologue:
         'Between 1881 and 1914, European superpowers raced to conquer the African continent, slicing up territories with straight lines on European maps. Armed with the Maxim gun, steamships, and quinine, imperialists seized immense wealth in rubber, diamonds, and gold. How did Europeans justify the Scramble for Africa, and how did African rulers resist?',
       video: [
@@ -5779,227 +5779,227 @@ const second_british_empire_data = {
         },
       ],
       quiz: [
-      {
-            "question": "What industrial accolade was applied to Great Britain in the mid-nineteenth century to describe its manufacturing dominance?",
-            "options": [
-                  "The Workshop of the World",
-                  "The Sick Man of Europe",
-                  "The Breadbasket of Europe",
-                  "The Jewel in the Crown"
-            ],
-            "answer": "The Workshop of the World",
-            "explanation": "Britain's overwhelming industrial supremacy in iron, coal, and textiles earned it the title 'Workshop of the World'."
-      },
-      {
-            "question": "Which German socialist published 'The Condition of the Working Class in England' in 1845, exposing industrial slum squalor?",
-            "options": [
-                  "Friedrich Engels",
-                  "Karl Marx",
-                  "Otto von Bismarck",
-                  "John Maynard Keynes"
-            ],
-            "answer": "Friedrich Engels",
-            "explanation": "Friedrich Engels investigated Manchester factory districts, charging the British bourgeoisie with 'social murder'."
-      },
-      {
-            "question": "Which satirical magazine published John Leech's famous 1843 cartoon 'Capital and Labour' contrasting rich salons with subterranean mines?",
-            "options": [
-                  "Punch",
-                  "The Graphic",
-                  "The Times",
-                  "The Daily Herald"
-            ],
-            "answer": "Punch",
-            "explanation": "Punch published John Leech's celebrated two-tier cartoon exposing the gulf between capitalist wealth and worker misery."
-      },
-      {
-            "question": "Who was the first Asian British Member of Parliament who formulated the famous economic theory of the 'Drain of Wealth' from India?",
-            "options": [
-                  "Dadabhai Naoroji",
-                  "Mahatma Gandhi",
-                  "Jawaharlal Nehru",
-                  "Khudadad Khan"
-            ],
-            "answer": "Dadabhai Naoroji",
-            "explanation": "Dadabhai Naoroji, elected MP for Finsbury Central in 1892, proved that Britain systematically drained millions annually from India."
-      },
-      {
-            "question": "Which Viceroy of India declared in 1901 that the British Empire was 'under Providence the greatest instrument for good that the world has seen'?",
-            "options": [
-                  "Lord Curzon",
-                  "Lord Dalhousie",
-                  "Lord Clive",
-                  "Lord Bentinck"
-            ],
-            "answer": "Lord Curzon",
-            "explanation": "Lord Curzon mounted an uncompromising defense of the Raj, presenting British imperial rule as an impartial civilising instrument."
-      },
-      {
-            "question": "By how much did average British real wages rise between the Napoleonic Wars and the 1880s according to economic indices?",
-            "options": [
-                  "By nearly 50%",
-                  "By 500%",
-                  "By 5%",
-                  "They remained unchanged"
-            ],
-            "answer": "By nearly 50%",
-            "explanation": "Indices of real wages show an increase of nearly 50%, enabling workers to buy cheap colonial imports like tea and sugar."
-      },
-      {
-            "question": "Which 1851 international exhibition in London's Crystal Palace showcased British industrial inventions and colonial raw materials?",
-            "options": [
-                  "The Great Exhibition of 1851",
-                  "The Berlin Conference",
-                  "The Wembley Empire Exhibition",
-                  "The Paris Exposition"
-            ],
-            "answer": "The Great Exhibition of 1851",
-            "explanation": "Over six million visitors visited Prince Albert's Crystal Palace in Hyde Park to marvel at imperial manufactures."
-      },
-      {
-            "question": "What term did Friedrich Engels use to describe the British bourgeoisie sacrificing workers' lives to toxic factory conditions?",
-            "options": [
-                  "Social murder",
-                  "Class warfare",
-                  "Mercantilism",
-                  "Laissez-faire"
-            ],
-            "answer": "Social murder",
-            "explanation": "Engels accused factory owners of committing 'social murder' by knowingly placing workers in conditions that caused early death."
-      },
-      {
-            "question": "To what age did average life expectancy fall for working-class children in early Victorian industrial textile slums?",
-            "options": [
-                  "Under twenty years",
-                  "Forty years",
-                  "Sixty years",
-                  "Ten years"
-            ],
-            "answer": "Under twenty years",
-            "explanation": "Due to contaminated water, malnutrition, and factory pollution, life expectancy for slum children fell below 20 years."
-      },
-      {
-            "question": "In John Leech's cartoon 'Capital and Labour', what opulent luxuries surround the wealthy capitalists in the upper panel?",
-            "options": [
-                  "Crystal chandeliers, velvet cushions, and bags of gold",
-                  "Steam engines and coal carts",
-                  "Piles of raw cotton and looms",
-                  "Military artillery and guns"
-            ],
-            "answer": "Crystal chandeliers, velvet cushions, and bags of gold",
-            "explanation": "The upper panel shows a luxurious drawing room where capitalists recline amid velvet, gold, and obedient servants."
-      },
-      {
-            "question": "What was the title of Dadabhai Naoroji's landmark 1901 economic treatise critiquing colonial financial exploitation in India?",
-            "options": [
-                  "Poverty and Un-British Rule in India",
-                  "The Wealth of Nations",
-                  "The Black Man's Burden",
-                  "Das Kapital"
-            ],
-            "answer": "Poverty and Un-British Rule in India",
-            "explanation": "Naoroji published 'Poverty and Un-British Rule in India' in 1901, exposing the Drain of Wealth to the British public."
-      },
-      {
-            "question": "How much annual wealth did Dadabhai Naoroji calculate Britain drained out of India through administrative and military 'Home Charges'?",
-            "options": [
-                  "Between £20 million and £30 million sterling",
-                  "£1 million",
-                  "£500,000",
-                  "£100 million"
-            ],
-            "answer": "Between £20 million and £30 million sterling",
-            "explanation": "Naoroji calculated a continuous annual drain of £20 to £30 million sterling (or £30 to £40 million) remitted to Britain with no return."
-      },
-      {
-            "question": "Why did Dadabhai Naoroji argue that British railways in India failed to prevent famines?",
-            "options": [
-                  "They were designed to extract raw agricultural commodities to coastal ports",
-                  "They were too slow to carry grain",
-                  "They were exclusively reserved for passenger travel",
-                  "They were only built in mountain regions"
-            ],
-            "answer": "They were designed to extract raw agricultural commodities to coastal ports",
-            "explanation": "Naoroji demonstrated that railways were strategically designed to extract raw agricultural commodities to coastal ports rather than relieve rural hunger."
-      },
-      {
-            "question": "What modern historical consensus defines the true character and legacy of the Second British Empire?",
-            "options": [
-                  "An aggressively organized, state-backed commercial empire that enriched British elites at huge human cost",
-                  "A purely benevolent and charitable missionary project",
-                  "An accidental expansion with zero economic planning",
-                  "A completely socialist commonwealth"
-            ],
-            "answer": "An aggressively organized, state-backed commercial empire that enriched British elites at huge human cost",
-            "explanation": "Modern historians recognize the empire as a coercive commercial system that enriched Britain through colonial extraction."
-      },
-      {
-            "question": "Which historical school of thought emphasizes the rise in real wages, cheap tea and sugar, and technological infrastructure as benefits of empire?",
-            "options": [
-                  "Imperial optimists",
-                  "Imperial pessimists",
-                  "Marxist historians",
-                  "Post-colonial critics"
-            ],
-            "answer": "Imperial optimists",
-            "explanation": "Optimist historians point to rising consumption, infrastructure, and real wages as evidence of progress."
-      },
-      {
-            "question": "In Source A, by how much did per-capita sugar consumption in Britain increase between 1840 and 1880?",
-            "options": [
-                  "From 15 lbs to 54 lbs",
-                  "From 1 lb to 2 lbs",
-                  "From 50 lbs to 200 lbs",
-                  "It declined by half"
-            ],
-            "answer": "From 15 lbs to 54 lbs",
-            "explanation": "Source A records that annual per-capita sugar consumption rose from 15 lbs to 54 lbs as colonial imports cheapened food."
-      },
-      {
-            "question": "In Source B, which industrial city's textile factories did Friedrich Engels investigate to write his 1845 critique?",
-            "options": [
-                  "Manchester",
-                  "London",
-                  "Birmingham",
-                  "Bristol"
-            ],
-            "answer": "Manchester",
-            "explanation": "Engels studied living and working conditions in Manchester's cotton manufacturing districts."
-      },
-      {
-            "question": "In Source C, what setting does John Leech depict in the subterranean lower panel to represent 'Labour'?",
-            "options": [
-                  "A dark, suffocating coal mine and sweatshop",
-                  "A sunny farm meadow",
-                  "A luxury dining salon",
-                  "A naval warship deck"
-            ],
-            "answer": "A dark, suffocating coal mine and sweatshop",
-            "explanation": "The lower panel depicts miners, seamstresses, and child workers labouring in squalor under the floorboards of capital."
-      },
-      {
-            "question": "According to Source D, what does Dadabhai Naoroji identify as the true, fundamental cause of recurring famines in India?",
-            "options": [
-                  "This continuous drain of wealth",
-                  "Lack of sunshine",
-                  "Lack of ships",
-                  "Too many schools"
-            ],
-            "answer": "This continuous drain of wealth",
-            "explanation": "Naoroji stated: 'This continuous drain of wealth is the true, fundamental cause of the recurring famines that kill millions.'"
-      },
-      {
-            "question": "In Source E, what public infrastructure does Lord Curzon argue the British Raj constructed to preserve peace and shield millions from famine?",
-            "options": [
-                  "Railways, irrigation canals, and telegraphs",
-                  "Palaces and castles",
-                  "Forts and moats",
-                  "Dockyards and sailing ships"
-            ],
-            "answer": "Railways, irrigation canals, and telegraphs",
-            "explanation": "Curzon argued the British Empire justified itself by building railways, irrigation canals, and telegraph systems across India."
-      }
-],
+        {
+          "question": "What industrial accolade was applied to Great Britain in the mid-nineteenth century to describe its manufacturing dominance?",
+          "options": [
+            "The Workshop of the World",
+            "The Sick Man of Europe",
+            "The Breadbasket of Europe",
+            "The Jewel in the Crown"
+          ],
+          "answer": "The Workshop of the World",
+          "explanation": "Britain's overwhelming industrial supremacy in iron, coal, and textiles earned it the title 'Workshop of the World'."
+        },
+        {
+          "question": "Which German socialist published 'The Condition of the Working Class in England' in 1845, exposing industrial slum squalor?",
+          "options": [
+            "Friedrich Engels",
+            "Karl Marx",
+            "Otto von Bismarck",
+            "John Maynard Keynes"
+          ],
+          "answer": "Friedrich Engels",
+          "explanation": "Friedrich Engels investigated Manchester factory districts, charging the British bourgeoisie with 'social murder'."
+        },
+        {
+          "question": "Which satirical magazine published John Leech's famous 1843 cartoon 'Capital and Labour' contrasting rich salons with subterranean mines?",
+          "options": [
+            "Punch",
+            "The Graphic",
+            "The Times",
+            "The Daily Herald"
+          ],
+          "answer": "Punch",
+          "explanation": "Punch published John Leech's celebrated two-tier cartoon exposing the gulf between capitalist wealth and worker misery."
+        },
+        {
+          "question": "Who was the first Asian British Member of Parliament who formulated the famous economic theory of the 'Drain of Wealth' from India?",
+          "options": [
+            "Dadabhai Naoroji",
+            "Mahatma Gandhi",
+            "Jawaharlal Nehru",
+            "Khudadad Khan"
+          ],
+          "answer": "Dadabhai Naoroji",
+          "explanation": "Dadabhai Naoroji, elected MP for Finsbury Central in 1892, proved that Britain systematically drained millions annually from India."
+        },
+        {
+          "question": "Which Viceroy of India declared in 1901 that the British Empire was 'under Providence the greatest instrument for good that the world has seen'?",
+          "options": [
+            "Lord Curzon",
+            "Lord Dalhousie",
+            "Lord Clive",
+            "Lord Bentinck"
+          ],
+          "answer": "Lord Curzon",
+          "explanation": "Lord Curzon mounted an uncompromising defense of the Raj, presenting British imperial rule as an impartial civilising instrument."
+        },
+        {
+          "question": "By how much did average British real wages rise between the Napoleonic Wars and the 1880s according to economic indices?",
+          "options": [
+            "By nearly 50%",
+            "By 500%",
+            "By 5%",
+            "They remained unchanged"
+          ],
+          "answer": "By nearly 50%",
+          "explanation": "Indices of real wages show an increase of nearly 50%, enabling workers to buy cheap colonial imports like tea and sugar."
+        },
+        {
+          "question": "Which 1851 international exhibition in London's Crystal Palace showcased British industrial inventions and colonial raw materials?",
+          "options": [
+            "The Great Exhibition of 1851",
+            "The Berlin Conference",
+            "The Wembley Empire Exhibition",
+            "The Paris Exposition"
+          ],
+          "answer": "The Great Exhibition of 1851",
+          "explanation": "Over six million visitors visited Prince Albert's Crystal Palace in Hyde Park to marvel at imperial manufactures."
+        },
+        {
+          "question": "What term did Friedrich Engels use to describe the British bourgeoisie sacrificing workers' lives to toxic factory conditions?",
+          "options": [
+            "Social murder",
+            "Class warfare",
+            "Mercantilism",
+            "Laissez-faire"
+          ],
+          "answer": "Social murder",
+          "explanation": "Engels accused factory owners of committing 'social murder' by knowingly placing workers in conditions that caused early death."
+        },
+        {
+          "question": "To what age did average life expectancy fall for working-class children in early Victorian industrial textile slums?",
+          "options": [
+            "Under twenty years",
+            "Forty years",
+            "Sixty years",
+            "Ten years"
+          ],
+          "answer": "Under twenty years",
+          "explanation": "Due to contaminated water, malnutrition, and factory pollution, life expectancy for slum children fell below 20 years."
+        },
+        {
+          "question": "In John Leech's cartoon 'Capital and Labour', what opulent luxuries surround the wealthy capitalists in the upper panel?",
+          "options": [
+            "Crystal chandeliers, velvet cushions, and bags of gold",
+            "Steam engines and coal carts",
+            "Piles of raw cotton and looms",
+            "Military artillery and guns"
+          ],
+          "answer": "Crystal chandeliers, velvet cushions, and bags of gold",
+          "explanation": "The upper panel shows a luxurious drawing room where capitalists recline amid velvet, gold, and obedient servants."
+        },
+        {
+          "question": "What was the title of Dadabhai Naoroji's landmark 1901 economic treatise critiquing colonial financial exploitation in India?",
+          "options": [
+            "Poverty and Un-British Rule in India",
+            "The Wealth of Nations",
+            "The Black Man's Burden",
+            "Das Kapital"
+          ],
+          "answer": "Poverty and Un-British Rule in India",
+          "explanation": "Naoroji published 'Poverty and Un-British Rule in India' in 1901, exposing the Drain of Wealth to the British public."
+        },
+        {
+          "question": "How much annual wealth did Dadabhai Naoroji calculate Britain drained out of India through administrative and military 'Home Charges'?",
+          "options": [
+            "Between £20 million and £30 million sterling",
+            "£1 million",
+            "£500,000",
+            "£100 million"
+          ],
+          "answer": "Between £20 million and £30 million sterling",
+          "explanation": "Naoroji calculated a continuous annual drain of £20 to £30 million sterling (or £30 to £40 million) remitted to Britain with no return."
+        },
+        {
+          "question": "Why did Dadabhai Naoroji argue that British railways in India failed to prevent famines?",
+          "options": [
+            "They were designed to extract raw agricultural commodities to coastal ports",
+            "They were too slow to carry grain",
+            "They were exclusively reserved for passenger travel",
+            "They were only built in mountain regions"
+          ],
+          "answer": "They were designed to extract raw agricultural commodities to coastal ports",
+          "explanation": "Naoroji demonstrated that railways were strategically designed to extract raw agricultural commodities to coastal ports rather than relieve rural hunger."
+        },
+        {
+          "question": "What modern historical consensus defines the true character and legacy of the Second British Empire?",
+          "options": [
+            "An aggressively organized, state-backed commercial empire that enriched British elites at huge human cost",
+            "A purely benevolent and charitable missionary project",
+            "An accidental expansion with zero economic planning",
+            "A completely socialist commonwealth"
+          ],
+          "answer": "An aggressively organized, state-backed commercial empire that enriched British elites at huge human cost",
+          "explanation": "Modern historians recognize the empire as a coercive commercial system that enriched Britain through colonial extraction."
+        },
+        {
+          "question": "Which historical school of thought emphasizes the rise in real wages, cheap tea and sugar, and technological infrastructure as benefits of empire?",
+          "options": [
+            "Imperial optimists",
+            "Imperial pessimists",
+            "Marxist historians",
+            "Post-colonial critics"
+          ],
+          "answer": "Imperial optimists",
+          "explanation": "Optimist historians point to rising consumption, infrastructure, and real wages as evidence of progress."
+        },
+        {
+          "question": "In Source A, by how much did per-capita sugar consumption in Britain increase between 1840 and 1880?",
+          "options": [
+            "From 15 lbs to 54 lbs",
+            "From 1 lb to 2 lbs",
+            "From 50 lbs to 200 lbs",
+            "It declined by half"
+          ],
+          "answer": "From 15 lbs to 54 lbs",
+          "explanation": "Source A records that annual per-capita sugar consumption rose from 15 lbs to 54 lbs as colonial imports cheapened food."
+        },
+        {
+          "question": "In Source B, which industrial city's textile factories did Friedrich Engels investigate to write his 1845 critique?",
+          "options": [
+            "Manchester",
+            "London",
+            "Birmingham",
+            "Bristol"
+          ],
+          "answer": "Manchester",
+          "explanation": "Engels studied living and working conditions in Manchester's cotton manufacturing districts."
+        },
+        {
+          "question": "In Source C, what setting does John Leech depict in the subterranean lower panel to represent 'Labour'?",
+          "options": [
+            "A dark, suffocating coal mine and sweatshop",
+            "A sunny farm meadow",
+            "A luxury dining salon",
+            "A naval warship deck"
+          ],
+          "answer": "A dark, suffocating coal mine and sweatshop",
+          "explanation": "The lower panel depicts miners, seamstresses, and child workers labouring in squalor under the floorboards of capital."
+        },
+        {
+          "question": "According to Source D, what does Dadabhai Naoroji identify as the true, fundamental cause of recurring famines in India?",
+          "options": [
+            "This continuous drain of wealth",
+            "Lack of sunshine",
+            "Lack of ships",
+            "Too many schools"
+          ],
+          "answer": "This continuous drain of wealth",
+          "explanation": "Naoroji stated: 'This continuous drain of wealth is the true, fundamental cause of the recurring famines that kill millions.'"
+        },
+        {
+          "question": "In Source E, what public infrastructure does Lord Curzon argue the British Raj constructed to preserve peace and shield millions from famine?",
+          "options": [
+            "Railways, irrigation canals, and telegraphs",
+            "Palaces and castles",
+            "Forts and moats",
+            "Dockyards and sailing ships"
+          ],
+          "answer": "Railways, irrigation canals, and telegraphs",
+          "explanation": "Curzon argued the British Empire justified itself by building railways, irrigation canals, and telegraph systems across India."
+        }
+      ],
       pair_share: {
         prompt:
           'Discuss with your partner: Who truly benefited the most from the 19th-century transformation?',

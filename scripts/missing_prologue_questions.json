@@ -1,0 +1,578 @@
+[
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_1",
+    "lessonNum": 1,
+    "title": "KT 1.0: Broken Promises & Imperial Borders: Why Was Conflict in the Middle East Inevitable?",
+    "enquiry": "Water, Faith, and Imperial Rulers: How did physical geography and artificial borders make conflict in the Middle East inevitable?",
+    "currentBlurb": "The Middle East is the ultimate geopolitical crossroads of the earth—the physical land bridge connecting Europe, Asia, and Africa, the guardian of vital maritime chokepoints, and the birthplace of three world religions. To understand the bloody wars between Arabs and Israelis from 1945 to 1995, one must first understand its geography: how European diplomats drew straight ruler lines across deserts, why fresh water from the River Jordan is a matter of national survival, and why controlling the high ground of the Golan Heights or the narrow waters of the Straits of Tiran dictated the difference between victory and annihilation."
+  },
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_2",
+    "lessonNum": 2,
+    "title": "KT 1.1: The End of the British Mandate and the Creation of Israel, 1945–1949",
+    "enquiry": "Why did the British Mandate collapse and how was the State of Israel created amidst war?",
+    "currentBlurb": "In 1945, the world was reeling from the horrors of the Holocaust, creating immense international pressure for a Jewish homeland. Yet, for the Arab population of Palestine, this meant the terrifying prospect of losing their ancestral land. The British, exhausted and bankrupt from World War Two, were caught in the middle of an impossible situation."
+  },
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_3",
+    "lessonNum": 3,
+    "title": "KT 1.2: The Aftermath of the 1948–49 War & The Palestinian Refugee Crisis",
+    "enquiry": "What were the territorial, human, and geopolitical consequences of the 1948–49 War?",
+    "currentBlurb": "The moment Israel declared independence on 14 May 1948, five Arab armies invaded. What followed was a desperate fight for survival for the Israelis, and a catastrophic loss of land for the Palestinians—an event they remember as the 'Nakba' (Catastrophe). The map of the Middle East was forever redrawn."
+  },
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_4",
+    "lessonNum": 4,
+    "title": "KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963",
+    "enquiry": "Why did the nationalisation of the Suez Canal trigger a global crisis in 1956?",
+    "currentBlurb": "By the 1950s, the Cold War had arrived in the Middle East. Egypt's charismatic new leader, Gamal Abdel Nasser, emerged as a hero of Arab nationalism, willing to stand up to the old European empires and Israel. When he nationalised the Suez Canal, it triggered a global crisis that almost sparked World War Three."
+  },
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_6",
+    "lessonNum": 5,
+    "title": "KT 2.1 Enquiry: How Did Water, Border Raids, and Rhetoric Make a Second Arab-Israeli War Inevitable? (1964–1967)",
+    "enquiry": "",
+    "currentBlurb": "In January 1964, Arab leaders met in Cairo to resolve two crises: Israel was pumping water out of the River Jordan, and Palestinians demanded their own state. Within three years, artillery battles and aerial dogfights had made a full-scale war inevitable."
+  },
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_7",
+    "lessonNum": 6,
+    "title": "KT 2.2 Enquiry: Why Was the Six-Day War Decided in Three Hours, and Did Nasser Intend to Fight? (May–June 1967)",
+    "enquiry": "",
+    "currentBlurb": "On the morning of 5 June 1967, nearly 200 Israeli fighter jets flew low beneath radar over the Mediterranean. Within three hours, over 300 Egyptian aircraft lay burning on the tarmac. By Saturday evening, the map of the Middle East had been changed forever."
+  },
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_8",
+    "lessonNum": 7,
+    "title": "KT 2.3 Enquiry: \"Land for Peace\" or Permanent Stalemate: How Did the 1967 Conquered Territories Transform the Conflict?",
+    "enquiry": "",
+    "currentBlurb": "In the summer of 1967, Israel found itself ruling over one million Palestinians. In September, Arab leaders declared the \"Three Noes\" in Khartoum. In November, the UN passed Resolution 242 promising \"Land for Peace\"—yet its ambiguous words locked the region in stalemate."
+  },
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_9",
+    "lessonNum": 8,
+    "title": "KT 2.4: The Rise of Palestinian Resistance: The PLO, Black September & Munich (1968–1972)",
+    "enquiry": "",
+    "currentBlurb": "In September 1970, Palestinian militants blew up three hijacked airliners in the Jordanian desert. Two years later, hooded gunmen scaled an Olympic fence in Munich. Having lost faith in Arab armies, Palestinians took their fight to the global stage."
+  },
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_10",
+    "lessonNum": 9,
+    "title": "KT 2.5: The War of Attrition & The Yom Kippur War (1969–1973)",
+    "enquiry": "",
+    "currentBlurb": "On 6 October 1973, while Israel observed its holiest fast day, 80,000 Egyptian soldiers crossed the Suez Canal using high-pressure water hoses to wash away Israeli sand ramparts. It was a war that brought the superpowers to nuclear alert and changed Middle Eastern history."
+  },
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_11",
+    "lessonNum": 10,
+    "title": "KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979",
+    "enquiry": "How did historic enemies Egypt and Israel finally achieve a lasting peace treaty?",
+    "currentBlurb": "In an unprecedented move that stunned the world, Egyptian President Anwar Sadat traveled to Jerusalem in 1977, offering peace. This bold step shattered the Arab taboo of refusing to talk to Israel and paved the way for the historic Camp David Accords, fundamentally altering the Middle East peace process."
+  },
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_12",
+    "lessonNum": 11,
+    "title": "KT 3.2: The Palestinian Issue: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993",
+    "enquiry": "How did the First Intifada fundamentally alter the nature of the Palestinian struggle?",
+    "currentBlurb": "While Egypt and Israel made peace, the Palestinians felt abandoned. Operating out of Lebanon, the PLO launched relentless attacks against Israel, leading to the devastating 1982 Israeli invasion of Lebanon. By 1987, Palestinian frustration inside the occupied territories exploded into a spontaneous, grassroots uprising known as the First Intifada."
+  },
+  {
+    "unitId": "cme_new",
+    "lessonId": "lesson_13",
+    "lessonNum": 12,
+    "title": "KT 3.3: Attempts at a Solution: From the Oslo Accords to Oslo II, 1988–1995",
+    "enquiry": "Why did the Oslo Accords bring historic hope for peace, yet fail to resolve the conflict?",
+    "currentBlurb": "The sheer exhaustion of the Intifada forced both sides to the negotiating table in secret. In 1993, the world watched in awe as PLO Chairman Yasser Arafat and Israeli Prime Minister Yitzhak Rabin shook hands on the White House lawn, signing the Oslo Accords. It seemed peace was finally possible, but extremists on both sides were determined to destroy it."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_2_1",
+    "lessonNum": 6,
+    "title": "KT2.1: The New Spirit of Enquiry: Humanism, The Printing Press & The Royal Society (c1500–c1700)",
+    "enquiry": "",
+    "currentBlurb": "In 1440, Johannes Gutenberg created a machine that shattered the Catholic Church’s monopoly on knowledge: the movable-type printing press. For the first time in human history, revolutionary scientific treatises and anatomical plates could be mass-produced identically across Europe without copyist errors or clerical censorship. Over two centuries later, King Charles II granted a Royal Charter to the Royal Society, uniting empirical scholars under the motto Nullius in Verba—\"Take nobody's word for it\". Yet, while scientific communication accelerated at blinding speed, everyday patients still swallowed crushed beetle shells and bled into pewter bowls. This is the profound paradox of the Renaissance."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_3_1",
+    "lessonNum": 11,
+    "title": "KT3.1: Ideas on Causes: Pasteur’s Germ Theory & Koch’s Microbe Hunters (c.1861–c.1883)",
+    "enquiry": "",
+    "currentBlurb": "In 1860, the greatest scientific minds in Europe gathered at the Sorbonne in Paris to witness a duel of ideas. For centuries, orthodox science taught that rotting meat magically generated maggots and foul swamp water spontaneously spawned microbes out of nothing. Armed with glass flasks drawn out into elegant, curving swan necks, a French industrial chemist named Louis Pasteur set out to prove that life only comes from life. Yet, when Pasteur announced that invisible, airborne microorganisms invaded human bodies to cause disease, the British medical establishment sneered. It took twenty years of forensic laboratory detective work by a German country doctor named Robert Koch—staining bacteria with purple industrial dyes and photographing them under microscope lenses—to finally smash two thousand years of superstition and bad smells."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_3_2",
+    "lessonNum": 12,
+    "title": "KT3.2: Approaches to Prevention: Edward Jenner & The Smallpox Vaccine (1796–1853)",
+    "enquiry": "",
+    "currentBlurb": "In the eighteenth century, smallpox was the undisputed king of death in Britain, killing one in ten infants and leaving survivors blinded, mutilated, and scarred with deep pitted craters across their faces. The only protection was terrifying: paying a doctor to cut open your arm and rub in living pus taken from an active smallpox scab—a process called inoculation that killed thousands and sparked deadly epidemics. In 1796, a quiet Gloucestershire country doctor named Edward Jenner noticed something remarkable about local milkmaids: their creamy skin was completely unblemished by smallpox. By testing rural folklore on a young boy using pus from a dairy cow’s udder, Jenner invented vaccination. Yet, rather than hailing him as a hero, London doctors denounced him as a charlatan, preachers roared from pulpits that injecting beastly matter into humans defied Almighty God, and furious mobs carried placards showing vaccinated children sprouting cow heads and cloven hooves."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_3_3",
+    "lessonNum": 13,
+    "title": "KT3.3: Improvements in Hospital Care: Florence Nightingale, Mary Seacole & The Sanitary Revolution (1854–1863)",
+    "enquiry": "",
+    "currentBlurb": "In 1850, entering a British hospital was widely regarded as a death sentence. Infirmaries were squalid, airless warehouses where patients lay packed three to a bed on straw mattresses soaked with pus and blood, while surgeons moved between amputations in blood-stiffened frock coats, spreading lethal hospital gangrene. Nurses were untrained, uneducated, and stereotyped as drunken, corrupt domestic drudges. When the Crimean War erupted in 1854, dispatches in The Times shocked Victorian Britain: soldiers were dying in thousands at the military hospital in Scutari, not from Russian artillery, but from lice, typhus, and cholera. Armed with statistical charts, sweeping administrative authority, and an obsession with clean air, Florence Nightingale and volunteer nurse Mary Seacole broke into the male-dominated military establishment, permanently transforming hospital architecture and turning nursing into a respected medical science."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_3_4",
+    "lessonNum": 14,
+    "title": "KT3.4: The Surgical Revolution: Simpson, Lister & The Conquest of Pain and Sepsis (1847–1870s)",
+    "enquiry": "",
+    "currentBlurb": "In 1840, an operating theatre was an arena of pure butchery. With no effective pain relief, patients were pinned down to blood-drenched wooden tables by muscular hospital porters while screaming in terror. The greatest surgeon in London, Robert Liston, could amputate an adult leg in twenty-eight seconds, famously operating in a dark frock coat so encrusted with dried blood that it could stand upright on its own. Yet, when James Young Simpson discovered that sniffing chloroform vapor could plunge a patient into painless unconsciousness, surgery did not become safer—it became far more deadly. During the catastrophic \"Black Period\" of surgery, surgeons operated deeper and longer than ever before, unknowingly carrying lethal gangrene bacteria on their unwashed hands deep into internal organs. It took a quiet Quaker surgeon named Joseph Lister, armed with carbolic acid and Louis Pasteur’s Germ Theory, to conquer the invisible army of wound infection."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_3_5",
+    "lessonNum": 15,
+    "title": "KT3.5: Public Health & Cholera: John Snow, The Broad Street Pump & The 1875 Public Health Act (1854–1875)",
+    "enquiry": "",
+    "currentBlurb": "In August 1854, the densely packed slums of Soho in London became ground zero for a nightmare. Within ten days, over five hundred healthy people suffered violent vomiting, muscle spasms, and severe diarrhoea, turning a ghostly blue before dying of dehydration in their beds. Orthodox medicine insisted that the killer was miasma—a poisonous, invisible vapor rising from foul rubbish and cesspools. But an anaesthetist named Dr John Snow suspected a far more terrifying reality: Londoners were drinking their own sewage. Going door-to-door through the contaminated streets, Snow marked every corpse as a black bar on a street map, tracing the deaths back to a single iron water pump on Broad Street. Yet, when Snow removed the pump handle and halted the epidemic, the government Board of Health refused to believe him. It took a blazing summer heatwave in 1858—the \"Great Stink\" that made the River Thames smell so vile it brought Parliament to a standstill—to finally force the British state to abandon laissez-faire and build London’s underground sewers."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_4_1",
+    "lessonNum": 16,
+    "title": "KT4.1: Ideas on Causes: Genetics, DNA & The Human Genome Project (c.1953–present)",
+    "enquiry": "",
+    "currentBlurb": "For thousands of years, physicians understood that deadly illnesses could haunt family trees across generations, yet the biological mechanism remained an impenetrable mystery. The mid-twentieth-century discovery of the molecular structure of DNA, followed by the international Human Genome Project, unlocked the fundamental code of life—transforming medicine from passive symptom management into predictive, personalized genomic science."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_4_2",
+    "lessonNum": 17,
+    "title": "KT4.2: Lifestyle Factors & The Technological Revolution in Diagnosis (c.1900–present)",
+    "enquiry": "",
+    "currentBlurb": "As modern sanitation, clean water, and antibiotics brought lethal bacterial plagues under control, Britain underwent an unprecedented epidemiological transition. The leading killers shifted from infectious contagion to chronic lifestyle diseases caused by smoking, alcohol, and poor diet. Simultaneously, the invention of X-rays, CT scanners, MRI, and endoscopes allowed physicians to peer deep inside living organs without a single surgical incision."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_4_3",
+    "lessonNum": 18,
+    "title": "KT4.3: The Search for Magic Bullets, High-Tech Treatments & The Birth of the NHS (1909–1948)",
+    "enquiry": "",
+    "currentBlurb": "At the start of the 20th century, even if doctors could identify a deadly bacterium, they had no medicine to destroy it inside a patient without killing the human host. The discovery of synthetic ‘magic bullets’—Salvarsan 606 and Prontosil—proved that chemical science could target specific microbes. Simultaneously, a political revolution swept Britain: in 1948, Aneurin Bevan overcame fierce medical resistance to create the National Health Service, providing free medical care at the point of delivery for every citizen."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_4_4",
+    "lessonNum": 19,
+    "title": "KT4.4: Case Study 1: The Antibiotic Revolution: Fleming, Florey & Chain and Penicillin (1928–1945)",
+    "enquiry": "",
+    "currentBlurb": "In 1928, a stray fungal spore drifted through an open London window and landed on an abandoned bacterial petri dish, producing a clear halo where deadly staphylococci had dissolved. It took another decade, an interdisciplinary Oxford scientific team, makeshift dairy churns, and American industrial factories to turn Alexander Fleming’s accidental observation into penicillin—the wonder drug that saved millions of Allied soldiers and launched the Golden Age of Antibiotics."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_4_5",
+    "lessonNum": 20,
+    "title": "KT4.5: Case Study 2: Public Health & The Fight Against Lung Cancer (c.1950–present)",
+    "enquiry": "",
+    "currentBlurb": "In 1900, lung cancer was so rare that hospital pathologists rarely saw a case. By 1950, machine-rolled cigarettes had created a national epidemic, killing tens of thousands of British citizens. Richard Doll and Austin Bradford Hill’s statistical research proved the indisputable causal link between tobacco and carcinoma. The ensuing struggle forced government to permanently dismantle modern laissez-faire through television ad bans, public smoking bans, and plain packaging, while oncologists developed CT screening, robotic surgery, and immunotherapy."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_5_1",
+    "lessonNum": 21,
+    "title": "KT5.1: The Theatre of War: The British Sector, Trench Geography & Battles (1914–1918)",
+    "enquiry": "",
+    "currentBlurb": "In autumn 1914, the mobile war of movement ground to a shuddering halt in the mud of northern France and Flanders. Confronted by lethal rapid-firing artillery and Vickers machine guns, British and German armies dug thousands of miles of opposing earthworks stretching from the Swiss border to the North Sea. The British sector—defending key Channel ports and the precarious Ypres Salient—forced military doctors to operate inside waterlogged, shell-smashed ditches where every geological feature dictated life, death, and casualty evacuation."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_5_2",
+    "lessonNum": 22,
+    "title": "KT5.2: The Trench Environment: Mud, Vermin & Non-Combat Illnesses (1914–1918)",
+    "enquiry": "",
+    "currentBlurb": "Long before an infantryman faced enemy machine guns or artillery barrages, he fought an agonizing daily battle against the environment itself. Submerged in freezing, stagnant water saturated with human excrement and decomposing corpses, soldiers fell prey to devastating non-combat ailments. From the black, rotting necrosis of trench foot to the debilitating bone-pain of trench fever spread by swarms of body lice, maintaining the physical health of an army in the trenches demanded ruthless preventive medical discipline."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_5_3",
+    "lessonNum": 23,
+    "title": "KT5.3: Battlefield Trauma: High Explosive Shrapnel, Gas Attacks & Infection (1914–1918)",
+    "enquiry": "",
+    "currentBlurb": "The First World War was an industrial collision between high-technology steel and fragile human flesh. Over 70% of all battlefield casualties were inflicted not by rifle bullets, but by high-explosive artillery shells that tore bodies apart with jagged metal fragments. Yet the most lethal enemy was often microscopic: Flanders agricultural soil, heavily manured for centuries with animal dung, teemed with deadly anaerobic bacteria that invaded ragged wounds, spawning lethal gas gangrene and tetanus within hours of injury."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_5_4",
+    "lessonNum": 24,
+    "title": "KT5.4: The Chain of Evacuation: Stretcher Bearers, RAP, Dressing Stations & CCS (1914–1918)",
+    "enquiry": "",
+    "currentBlurb": "When a soldier was struck down in the mud of No Man’s Land, his survival depended on a vast, integrated medical machine: the Chain of Evacuation. Operated by the Royal Army Medical Corps (RAMC) and heroic volunteers of the First Aid Nursing Yeomanry (FANY), this multi-stage system ferried casualties from the frontline firing line through Regimental Aid Posts, Advanced Dressing Stations, and Casualty Clearing Stations, back to coastal Base Hospitals. In a war where untreated wounds quickly succumbed to fatal gas gangrene, every hour saved in transit was the difference between life and death."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_5_5",
+    "lessonNum": 25,
+    "title": "KT5.5: Surgical Breakthroughs: The Thomas Splint, Wound Debridement & Mobile X-Rays (1914–1918)",
+    "enquiry": "",
+    "currentBlurb": "In the opening months of the First World War, an infantryman who suffered a broken thigh bone had an 80% chance of dying before ever reaching a hospital. The violent jolting of horse ambulances caused shattered bone ends to tear through the femoral artery, triggering fatal internal hemorrhaging. Furthermore, standard nineteenth-century antiseptics completely failed against the anaerobic bacteria of Flanders mud. Confronted by catastrophic mortality, military surgeons revolutionized trauma medicine through brilliant mechanical engineering, chemical irrigation, and mobile radiology."
+  },
+  {
+    "unitId": "edexcel_medicine",
+    "lessonId": "lesson_5_6",
+    "lessonNum": 26,
+    "title": "KT5.6: Lifesaving Innovations: Blood Storage, Brain Surgery & Plastic Reconstruction (1914–1918)",
+    "enquiry": "",
+    "currentBlurb": "By 1917, the industrial violence of the Western Front was shattering human bodies in ways never before encountered in surgical history. Massive blood loss triggered fatal hemorrhagic shock before casualties could reach the operating table, while artillery shrapnel gouged out brains and ripped away soldiers’ faces. In response, brilliant visionaries transformed medicine forever: Captain Oswald Robertson established the world’s first blood bank on ice, Harvey Cushing pioneered microscopic brain surgery, and Harold Gillies sculpted entirely new living faces at Sidcup."
+  },
+  {
+    "unitId": "eee",
+    "lessonId": "lesson_1_2",
+    "lessonNum": 2,
+    "title": "KT 1.2: The 'Settlement' of Religion, 1559",
+    "enquiry": "How successfully did Elizabeth's 1559 'Middle Way' reconcile intense religious divisions while establishing crown authority across England?",
+    "currentBlurb": "For a quarter of a century, the English people had suffered whiplash religious revolutions—from Henry VIII’s violent break with Rome to the iconoclasm of Edward VI and the terrifying Smithfield fires of Mary I, where nearly three hundred Protestants burned alive. In the spring of 1559, Queen Elizabeth faced an intractable dilemma: how to satisfy returning Calvinist exiles without provoking a Catholic civil war. Her answer was the 'Middle Way'—a calculated political compromise that would define England's religious identity for centuries."
+  },
+  {
+    "unitId": "eee",
+    "lessonId": "lesson_1_4",
+    "lessonNum": 4,
+    "title": "KT 1.4: The Problem of Mary, Queen of Scots, 1568–69",
+    "enquiry": "Why did the arrival of Mary Stuart in 1568 create an insoluble dynastic crisis and a permanent Catholic figurehead against Elizabeth?",
+    "currentBlurb": "In May 1568, a small fishing boat washed ashore at Workington on the stormy coast of Cumberland. Stepping onto English gravel was twenty-five-year-old Mary Stuart, Queen of Scots, fleeing her rebellious Protestant lords after the suspicious gunpowder murder of her husband, Lord Darnley. Mary arrived not as an enemy, but as Elizabeth's closest blood cousin—and the anointed Catholic claimant to the English crown. For Elizabeth and William Cecil, Mary's arrival was a living nightmare: a captive queen who instantly became a magnetic lightning rod for Catholic rebellion."
+  },
+  {
+    "unitId": "eee",
+    "lessonId": "lesson_2_3",
+    "lessonNum": 7,
+    "title": "KT 2.3: The Outbreak of War with Spain, 1585–1588",
+    "enquiry": "Why did the Treaty of Nonsuch, Leicester’s Dutch campaign, and Drake’s Cadiz raid transform Cold War proxy conflict into open military invasion?",
+    "currentBlurb": "In July 1584, a Catholic assassin shot dead Prince William the Silent of the Netherlands inside his own home, leaving Dutch Protestants leaderless and facing annihilation by Spain's dreaded Army of Flanders. Convinced that the fall of Antwerp would leave England's southern coast defenceless, Elizabeth abandoned decades of cautious neutrality and dispatched an English army across the Channel. When war finally erupted, Sir Francis Drake struck a daring preemptive blow directly into the heart of Spain's naval empire: the legendary raid on Cadiz harbour."
+  },
+  {
+    "unitId": "eee",
+    "lessonId": "lesson_2_4",
+    "lessonNum": 8,
+    "title": "KT 2.4: The Spanish Armada: Strategy, Conflict & Defeat, 1588",
+    "enquiry": "Why did Philip II’s grand invasion plan disintegrate in the English Channel, and what were the decisive factors behind the English naval victory?",
+    "currentBlurb": "In July 1588, the most formidable invasion fleet Europe had ever witnessed appeared off the Cornish coast: one hundred and thirty Spanish galleons and armed transports advancing in a vast, seven-mile crescent known as the 'Invincible Armada'. Their orders were simple and terrifying: secure the English Channel, transport thirty thousand veteran troops under the Duke of Parma from Flanders, and seize London for Catholic Spain. Over nine dramatic days and nights of furious gunfire, drifting fireships, and raging storms, England fought an existential battle for survival."
+  },
+  {
+    "unitId": "eee",
+    "lessonId": "lesson_3_2",
+    "lessonNum": 10,
+    "title": "KT 3.2: The Problem of the Poor and Vagrancy, 1558–1588",
+    "enquiry": "Why did rural pauperism reach unprecedented crisis levels under Elizabeth, and how did state legislation transition from brutal punishment to structured social welfare?",
+    "currentBlurb": "Across the Tudor countryside, the roads were stalked by desperate families in rags. A catastrophic surge in population, recurring harvest failures, and soaring inflation pushed thousands of landless labourers to the edge of starvation. Meanwhile, ambitious landlords enclosed open fields to graze profitable sheep, tearing down cottages and driving peasants into the towns. Terrified of vagabond riots and crime, Elizabethan society underwent a profound revolution in thinking: transitioning from medieval charity and savage branding irons to England's first nationwide system of state-enforced welfare."
+  },
+  {
+    "unitId": "eee",
+    "lessonId": "lesson_3_3",
+    "lessonNum": 11,
+    "title": "KT 3.3: Exploration and Voyages of Discovery, 1558–1588",
+    "enquiry": "How did navigational innovations and commercial rivalry shatter Iberian dominance and inspire Drake’s historic circumnavigation of the globe?",
+    "currentBlurb": "At the dawn of Elizabeth's reign, England was a small, insular nation whose sailors rarely dared venture beyond the English Channel or the cold waters of Iceland. Yet within three decades, English navigators shattered Spanish and Portuguese oceanic monopolies, braving frozen Arctic ice floes and rounding the uncharted, storm-tossed tip of Cape Horn. Driven by commercial desperation, advanced nautical science, and the lure of unmapped trade routes, Elizabethan mariners transformed England into a global seafaring superpower."
+  },
+  {
+    "unitId": "eee",
+    "lessonId": "lesson_3_4",
+    "lessonNum": 12,
+    "title": "KT 3.4: Raleigh and the Colonisation of Virginia, 1584–1590",
+    "enquiry": "Why did Walter Raleigh’s ambitious attempts to establish an English colony on Roanoke Island end in catastrophic failure and the mystery of the ‘Lost Colony’?",
+    "currentBlurb": "In the spring of 1584, Queen Elizabeth granted her ambitious court favourite Sir Walter Raleigh an extraordinary royal charter: permission to discover, conquer, and colonise any remote lands in North America not held by Christian princes. Raleigh envisioned a bustling New World empire named 'Virginia' in honour of the Virgin Queen, designed to challenge Spanish power and enrich the Crown. Instead, two disastrous expeditions to Roanoke Island were wrecked by fierce Atlantic shoals, starvation, and deadly conflict with local Secotan tribes—culminating in the chilling, unsolved disappearance of the 'Lost Colony'."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_1_1",
+    "lessonNum": 1,
+    "title": "KT 1.1: What was the position of Black Americans in the early 1950s?",
+    "enquiry": "In the early 1950s, Black Americans in the Southern states lived under the oppressive system of Jim Crow. Racial segregation was legally enforced by state laws, and voting rights were systematically denied through arbitrary tests and economic terror. To fight this institutionalised inequality, civil rights organisations deployed different strategies: the NAACP used legal litigation in federal courts, while CORE pioneered non-violent direct action protests.",
+    "currentBlurb": "In the early 1950s, Black Americans in the Southern states lived under the oppressive system of Jim Crow. Racial segregation was legally enforced by state laws, and voting rights were systematically denied through arbitrary tests and economic terror. To fight this institutionalised inequality, civil rights organisations deployed different strategies: the NAACP used legal litigation in federal courts, while CORE pioneered non-violent direct action protests."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_1_2",
+    "lessonNum": 2,
+    "title": "KT 1.2: How did developments in education challenge segregation (1954–57)?",
+    "enquiry": "The desegregation of public schools became the first major battleground of the civil rights movement. In 1954, the NAACP won the landmark Brown v. Board of Education case, with the Supreme Court declaring school segregation unconstitutional. However, this sparked 'Massive Resistance' across the South, culminating in the Little Rock High School crisis in 1957. Here, Arkansas Governor Orval Faubus defied federal law, forcing President Eisenhower to deploy federal troops to protect Black students.",
+    "currentBlurb": "The desegregation of public schools became the first major battleground of the civil rights movement. In 1954, the NAACP won the landmark Brown v. Board of Education case, with the Supreme Court declaring school segregation unconstitutional. However, this sparked 'Massive Resistance' across the South, culminating in the Little Rock High School crisis in 1957. Here, Arkansas Governor Orval Faubus defied federal law, forcing President Eisenhower to deploy federal troops to protect Black students."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_1_3",
+    "lessonNum": 3,
+    "title": "KT 1.3: How did the Montgomery Bus Boycott happen, and why did it succeed?",
+    "enquiry": "The Montgomery Bus Boycott (1955–1956) was the first major grassroots test of non-violent resistance. Beginning immediately after Rosa Parks' arrest on 1 December 1955, the local Black community organized the Montgomery Improvement Association (MIA), electing Martin Luther King Jr. as president. Black citizens, who made up 70% of bus riders, walked, carpooled, and organized private cabs for 381 days. Despite bombings, arrests, and intimidation, the boycott devastated bus revenues until November 1956, when the Supreme Court ruled segregated transport unconstitutional, proving the power of mass direct action.",
+    "currentBlurb": "The Montgomery Bus Boycott (1955–1956) was the first major grassroots test of non-violent resistance. Beginning immediately after Rosa Parks' arrest on 1 December 1955, the local Black community organized the Montgomery Improvement Association (MIA), electing Martin Luther King Jr. as president. Black citizens, who made up 70% of bus riders, walked, carpooled, and organized private cabs for 381 days. Despite bombings, arrests, and intimidation, the boycott devastated bus revenues until November 1956, when the Supreme Court ruled segregated transport unconstitutional, proving the power of mass direct action."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_1_4",
+    "lessonNum": 4,
+    "title": "KT 1.4: Why did white people in the South resist integration, and how did they do it?",
+    "enquiry": "In the wake of the 1954 Brown decision and the 1956 Montgomery victory, Southern white resistance hardened. Southern politicians signed the 'Southern Manifesto' in 1956, pledging to defeat integration by all legal means. Segregationists formed White Citizens' Councils, using economic retaliation, firings, and mortgage foreclosures against Black activists. Concurrently, KKK violence erupted, targeting leaders with bombings. Governors like Orval Faubus (1957) and later Ross Barnett (1962) used state forces to defy federal mandates, creating a constitutional crisis over states' rights.",
+    "currentBlurb": "In the wake of the 1954 Brown decision and the 1956 Montgomery victory, Southern white resistance hardened. Southern politicians signed the 'Southern Manifesto' in 1956, pledging to defeat integration by all legal means. Segregationists formed White Citizens' Councils, using economic retaliation, firings, and mortgage foreclosures against Black activists. Concurrently, KKK violence erupted, targeting leaders with bombings. Governors like Orval Faubus (1957) and later Ross Barnett (1962) used state forces to defy federal mandates, creating a constitutional crisis over states' rights."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_2_1",
+    "lessonNum": 5,
+    "title": "KT 2.1: How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?",
+    "enquiry": "By 1960, a new generation of student activists accelerated the movement. In February 1960, four Black students staged a sit-in at a Woolworth's lunch counter in Greensboro, North Carolina, launching a wave of sit-ins that integrated over 100 lunch counters. In May 1961, the Congress of Racial Equality (CORE) launched the Freedom Rides to test desegregation on interstate buses, facing brutal mob violence and bombings in Alabama. In September 1962, James Meredith became the first Black student at the University of Mississippi, requiring federal marshals and troops to suppress a segregationist riot that left two dead.",
+    "currentBlurb": "By 1960, a new generation of student activists accelerated the movement. In February 1960, four Black students staged a sit-in at a Woolworth's lunch counter in Greensboro, North Carolina, launching a wave of sit-ins that integrated over 100 lunch counters. In May 1961, the Congress of Racial Equality (CORE) launched the Freedom Rides to test desegregation on interstate buses, facing brutal mob violence and bombings in Alabama. In September 1962, James Meredith became the first Black student at the University of Mississippi, requiring federal marshals and troops to suppress a segregationist riot that left two dead."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_2_2",
+    "lessonNum": 6,
+    "title": "KT 2.2: How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?",
+    "enquiry": "In 1963 and 1965, the Southern Christian Leadership Conference (SCLC) targeted the most segregated cities. The Birmingham Campaign (April 1963) saw police chief Bull Connor use fire hoses and attack dogs on child protesters, sparking international outrage and forcing President Kennedy to draft civil rights legislation. Following the Civil Rights Act of 1964, attention shifted to voting. In March 1965, the Selma-to-Montgomery marches faced state trooper violence on 'Bloody Sunday', forcing President Johnson to pass the Voting Rights Act of 1965, which outlawed literacy tests.",
+    "currentBlurb": "In 1963 and 1965, the Southern Christian Leadership Conference (SCLC) targeted the most segregated cities. The Birmingham Campaign (April 1963) saw police chief Bull Connor use fire hoses and attack dogs on child protesters, sparking international outrage and forcing President Kennedy to draft civil rights legislation. Following the Civil Rights Act of 1964, attention shifted to voting. In March 1965, the Selma-to-Montgomery marches faced state trooper violence on 'Bloody Sunday', forcing President Johnson to pass the Voting Rights Act of 1965, which outlawed literacy tests."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_2_3",
+    "lessonNum": 7,
+    "title": "KT 2.3: What was the Black Power movement, and how did it differ from non-violent protests?",
+    "enquiry": "By the mid-1960s, frustration with slow progress and continued white violence led to a major ideological split. Malcolm X, representing the Nation of Islam, criticized MLK's integrationist non-violence and championed Black nationalism and self-defense 'by any means necessary'. Following Malcolm's 1965 assassination, Stokely Carmichael popularised the term 'Black Power' at a 1966 march. This philosophy was institutionalized by the Black Panther Party (founded 1966), which organized armed neighborhood patrols and community programs, reflecting a shift toward racial pride and economic independence.",
+    "currentBlurb": "By the mid-1960s, frustration with slow progress and continued white violence led to a major ideological split. Malcolm X, representing the Nation of Islam, criticized MLK's integrationist non-violence and championed Black nationalism and self-defense 'by any means necessary'. Following Malcolm's 1965 assassination, Stokely Carmichael popularised the term 'Black Power' at a 1966 march. This philosophy was institutionalized by the Black Panther Party (founded 1966), which organized armed neighborhood patrols and community programs, reflecting a shift toward racial pride and economic independence."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_2_4",
+    "lessonNum": 8,
+    "title": "KT 2.4: Why did riots break out in American cities between 1965 and 1968?",
+    "enquiry": "Between 1965 and 1967, deep-seated grievances over poverty, housing, and police brutality triggered massive urban riots in Northern and Western cities, including Watts (1965) and Detroit (1967). In response, President Johnson established the Kerner Commission, which reported in 1968 that America was moving toward 'two societies, one Black, one white—separate and unequal', blaming systemic white racism. Following Martin Luther King Jr.'s assassination in April 1968, Congress passed the Civil Rights Act of 1968 (Fair Housing Act), prohibiting racial discrimination in housing.",
+    "currentBlurb": "Between 1965 and 1967, deep-seated grievances over poverty, housing, and police brutality triggered massive urban riots in Northern and Western cities, including Watts (1965) and Detroit (1967). In response, President Johnson established the Kerner Commission, which reported in 1968 that America was moving toward 'two societies, one Black, one white—separate and unequal', blaming systemic white racism. Following Martin Luther King Jr.'s assassination in April 1968, Congress passed the Civil Rights Act of 1968 (Fair Housing Act), prohibiting racial discrimination in housing."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_3_1",
+    "lessonNum": 9,
+    "title": "KT 3.1: Why did the US support the unpopular government of Ngo Dinh Diem in South Vietnam?",
+    "enquiry": "Following the 1954 Geneva Accords, which temporarily divided Vietnam at the 17th parallel, the United States committed to containing communism in Southeast Asia. Guided by President Eisenhower's 'Domino Theory'—the belief that if Vietnam fell to communism, neighboring nations would follow—the USA backed Ngo Dinh Diem's anti-communist government in South Vietnam. However, Diem's corrupt regime, Buddhist persecutions, and refusal to hold elections alienated the populace, leading to the 1960 formation of the Vietcong and Diem's ultimate assassination in November 1963.",
+    "currentBlurb": "Following the 1954 Geneva Accords, which temporarily divided Vietnam at the 17th parallel, the United States committed to containing communism in Southeast Asia. Guided by President Eisenhower's 'Domino Theory'—the belief that if Vietnam fell to communism, neighboring nations would follow—the USA backed Ngo Dinh Diem's anti-communist government in South Vietnam. However, Diem's corrupt regime, Buddhist persecutions, and refusal to hold elections alienated the populace, leading to the 1960 formation of the Vietcong and Diem's ultimate assassination in November 1963."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_3_2",
+    "lessonNum": 10,
+    "title": "KT 3.2: Why did the US send combat troops to Vietnam after the Gulf of Tonkin incident?",
+    "enquiry": "Following President Kennedy's assassination in 1963, President Johnson inherited a rapidly deteriorating situation in South Vietnam. In August 1964, reports of US destroyers being attacked by North Vietnamese patrol boats in the Gulf of Tonkin provided the pretext Johnson needed. Congress passed the Gulf of Tonkin Resolution, granting the president power to take 'all necessary measures' to repel attacks. In early 1965, Johnson launched Operation Rolling Thunder, a massive bombing campaign, and deployed the first US combat troops to Da Nang in March, escalating the conflict dramatically.",
+    "currentBlurb": "Following President Kennedy's assassination in 1963, President Johnson inherited a rapidly deteriorating situation in South Vietnam. In August 1964, reports of US destroyers being attacked by North Vietnamese patrol boats in the Gulf of Tonkin provided the pretext Johnson needed. Congress passed the Gulf of Tonkin Resolution, granting the president power to take 'all necessary measures' to repel attacks. In early 1965, Johnson launched Operation Rolling Thunder, a massive bombing campaign, and deployed the first US combat troops to Da Nang in March, escalating the conflict dramatically."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_3_3",
+    "lessonNum": 11,
+    "title": "KT 3.3: Why did US military tactics (like bombing and search & destroy) fail to defeat the Vietcong?",
+    "enquiry": "Between 1965 and 1968, the Vietnam War became a brutal conflict of contrasting strategies. The US military, led by General Westmoreland, relied on high-tech attrition tactics, including 'Search and Destroy' missions, massive carpet bombing, and chemical agents like Agent Orange and Napalm to clear jungles and crop cover. In contrast, the Vietcong fought a guerrilla war, avoiding pitched battles, hiding in complex underground tunnel networks, and deploying deadly booby traps, which neutralized US technological superiority and severely damaged US soldier morale.",
+    "currentBlurb": "Between 1965 and 1968, the Vietnam War became a brutal conflict of contrasting strategies. The US military, led by General Westmoreland, relied on high-tech attrition tactics, including 'Search and Destroy' missions, massive carpet bombing, and chemical agents like Agent Orange and Napalm to clear jungles and crop cover. In contrast, the Vietcong fought a guerrilla war, avoiding pitched battles, hiding in complex underground tunnel networks, and deploying deadly booby traps, which neutralized US technological superiority and severely damaged US soldier morale."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_3_4",
+    "lessonNum": 12,
+    "title": "KT 3.4: What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?",
+    "enquiry": "Elected in 1968 on a promise of 'Peace with Honor', President Nixon sought to reduce US involvement without appearing to surrender. In 1969, he introduced 'Vietnamization'—a policy to train and equip the South Vietnamese army (ARVN) to take over combat operations, allowing the gradual withdrawal of US troops. However, to disrupt communist supply lines along the Ho Chi Minh Trail, Nixon secretly ordered the bombing and invasion of neighboring Cambodia (1970) and Laos (1971), expanding the war geographic scale and triggering massive protests at home.",
+    "currentBlurb": "Elected in 1968 on a promise of 'Peace with Honor', President Nixon sought to reduce US involvement without appearing to surrender. In 1969, he introduced 'Vietnamization'—a policy to train and equip the South Vietnamese army (ARVN) to take over combat operations, allowing the gradual withdrawal of US troops. However, to disrupt communist supply lines along the Ho Chi Minh Trail, Nixon secretly ordered the bombing and invasion of neighboring Cambodia (1970) and Laos (1971), expanding the war geographic scale and triggering massive protests at home."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_4_1",
+    "lessonNum": 13,
+    "title": "KT 4.1: Why did so many Americans oppose the Vietnam War (like at My Lai and Kent State)?",
+    "enquiry": "As the war dragged on, domestic opposition erupted into a powerful movement. The introduction of the draft in 1965 and the first televised war brought graphic footage of civilian casualties directly into American living rooms, creating a 'credibility gap' between government claims and reality. The shock of the 1968 Tet Offensive and the 1969 exposure of the My Lai Massacre—where US troops murdered over 500 civilians—further fueled protests. Tension peaked in May 1970 at Kent State University, where National Guardsmen shot and killed four student protesters, polarizing the nation.",
+    "currentBlurb": "As the war dragged on, domestic opposition erupted into a powerful movement. The introduction of the draft in 1965 and the first televised war brought graphic footage of civilian casualties directly into American living rooms, creating a 'credibility gap' between government claims and reality. The shock of the 1968 Tet Offensive and the 1969 exposure of the My Lai Massacre—where US troops murdered over 500 civilians—further fueled protests. Tension peaked in May 1970 at Kent State University, where National Guardsmen shot and killed four student protesters, polarizing the nation."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_4_2",
+    "lessonNum": 14,
+    "title": "KT 4.2: Why did some Americans support the Vietnam War and the 'Silent Majority'?",
+    "enquiry": "Despite the high profile of the anti-war movement, millions of Americans supported the war or opposed the protests. In November 1969, President Nixon appealed to the 'Silent Majority'—conservative, patriotic, working-class citizens who felt alienated by radical counterculture and anti-war demonstrations. Pro-war support was fueled by deep-seated anti-communism, respect for law and order, and the belief that protesting troops during wartime was unpatriotic. Nixon's strategy was highly successful, enabling him to secure a landslide re-election in 1972.",
+    "currentBlurb": "Despite the high profile of the anti-war movement, millions of Americans supported the war or opposed the protests. In November 1969, President Nixon appealed to the 'Silent Majority'—conservative, patriotic, working-class citizens who felt alienated by radical counterculture and anti-war demonstrations. Pro-war support was fueled by deep-seated anti-communism, respect for law and order, and the belief that protesting troops during wartime was unpatriotic. Nixon's strategy was highly successful, enabling him to secure a landslide re-election in 1972."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_4_3",
+    "lessonNum": 15,
+    "title": "KT 4.3: How did the US exit Vietnam, and why did South Vietnam fall so quickly in 1975?",
+    "enquiry": "Peace negotiations began in Paris in 1968 but remained deadlocked for years. In late 1972, Nixon ordered the devastating 'Christmas Bombings' of Hanoi to pressure North Vietnam. In January 1973, the Paris Peace Accords were signed, leading to the complete withdrawal of all US combat forces. However, fighting resumed between Vietnamese forces, and without US air support, the ARVN crumbled. In April 1975, communist forces launched the Spring Offensive, capturing the capital and renaming it Ho Chi Minh City, completing the reunification of Vietnam under communist rule.",
+    "currentBlurb": "Peace negotiations began in Paris in 1968 but remained deadlocked for years. In late 1972, Nixon ordered the devastating 'Christmas Bombings' of Hanoi to pressure North Vietnam. In January 1973, the Paris Peace Accords were signed, leading to the complete withdrawal of all US combat forces. However, fighting resumed between Vietnamese forces, and without US air support, the ARVN crumbled. In April 1975, communist forces launched the Spring Offensive, capturing the capital and renaming it Ho Chi Minh City, completing the reunification of Vietnam under communist rule."
+  },
+  {
+    "unitId": "usa",
+    "lessonId": "lesson_4_4",
+    "lessonNum": 16,
+    "title": "KT 4.4: What were the main reasons why the US failed to win the war in Vietnam?",
+    "enquiry": "The failure of the USA to defeat communist forces in Vietnam was the result of interconnected military, political, and social factors. Militarily, the Vietcong's guerrilla tactics, local knowledge, and supplies from China and the USSR defeated US attrition strategies. Politically, the South Vietnamese government remained corrupt and unpopular, whereas the North Vietnamese exhibited absolute determination (the 'commitment bug'). Socially, the growing anti-war movement and draft resistance destroyed the domestic political support necessary to sustain a prolonged war, forcing US withdrawal.",
+    "currentBlurb": "The failure of the USA to defeat communist forces in Vietnam was the result of interconnected military, political, and social factors. Militarily, the Vietcong's guerrilla tactics, local knowledge, and supplies from China and the USSR defeated US attrition strategies. Politically, the South Vietnamese government remained corrupt and unpopular, whereas the North Vietnamese exhibited absolute determination (the 'commitment bug'). Socially, the growing anti-war movement and draft resistance destroyed the domestic political support necessary to sustain a prolonged war, forcing US withdrawal."
+  },
+  {
+    "unitId": "water_and_sanitation",
+    "lessonId": "lesson_2",
+    "lessonNum": 2,
+    "title": "Why did public health decline during the Middle Ages?",
+    "enquiry": "Was medieval public health squalor caused by a lack of money, or by mistaken medical beliefs like miasma?",
+    "currentBlurb": "When the Roman legions withdrew in AD 410, their monumental aqueducts and hypocausts fell into ruin. Across medieval Britain, newly expanding boroughs grew rapidly with narrow unpaved alleys, timber-framed houses, and overflowing cesspits. Yet the popular myth of the \"filthy dark ages\" overlooks the remarkable engineering of medieval monasteries like Canterbury and Titchfield, as well as municipal ordinances fining polluters. When the Black Death struck in 1348, wiping out nearly half the population, it exposed the tragic divide between medieval hygiene efforts and the limits of medical understanding."
+  },
+  {
+    "unitId": "water_and_sanitation",
+    "lessonId": "lesson_3",
+    "lessonNum": 3,
+    "title": "To what extent did towns become filthier during the Early Modern period?",
+    "enquiry": "Was early modern filth caused by population explosion, or the lack of running water to make inventions work?",
+    "currentBlurb": "Between 1500 and 1700, England underwent a staggering demographic surge. London exploded from 60,000 residents into a bustling metropolis of over half a million souls, packing families into cantilevered wooden tenements. In 1596, Sir John Harington invented the world's first flush toilet for Queen Elizabeth I—yet without running water networks, it remained an isolated palace curiosity. When Samuel Pepys stepped into his basement in 1660 only to find his neighbour's overflowing cesspit seeping through the wall, he documented the daily reality of early modern hygiene. When the Great Plague of 1665 struck, Londoners still turned to smoking tobacco and painting red crosses on doors, trapped between Renaissance innovation and medieval squalor."
+  },
+  {
+    "unitId": "water_and_sanitation",
+    "lessonId": "lesson_4",
+    "lessonNum": 4,
+    "title": "Enquiry 4: How did industrial growth and the 'Great Stink' force Britain to build modern sewers?",
+    "enquiry": "Was Victorian cholera conquered by civil engineering and fear of the Great Stink, or did politicians act out of genuine care for the poor?",
+    "currentBlurb": "Between 1780 and 1858, the Industrial Revolution catapulted Britain into the modern era, but at a horrifying human cost. Millions of rural labourers flooded into factory boomtowns like Manchester, Leeds, and London, crammed into unventilated back-to-back slums where cesspools overflowed into drinking wells. When Asiatic cholera struck in 1831, the medical establishment was helpless, trapped by ancient miasma beliefs. Even when Edwin Chadwick proved in 1842 that filth caused disease and poverty, Victorian politicians clung to laissez-faire inaction. It took the terrifying heatwave of June 1858—the Great Stink—when the raw sewage of three million Londoners fermenting in the Thames threatened Parliament itself, to finally force the government to act and commission Sir Joseph Bazalgette’s brick revolution."
+  },
+  {
+    "unitId": "water_and_sanitation",
+    "lessonId": "lesson_5",
+    "lessonNum": 5,
+    "title": "Enquiry 5: How did Dr John Snow, Germ Theory, and the 1875 Public Health Act conquer water-borne disease?",
+    "enquiry": "Was cholera defeated by scientific observation, laboratory discovery of bacteria, or the introduction of compulsory government legislation?",
+    "currentBlurb": "Between 1854 and 1884, a scientific revolution shattered centuries of medical ignorance. In September 1854, when Asiatic cholera struck Soho, Dr John Snow mapped every death around the Broad Street pump, deducing that cholera was waterborne long before bacteria could be seen. Though the medical establishment stubbornly defended miasma dogma, French chemist Louis Pasteur proved in 1861 that microscopic germs caused fermentation and disease. German microbiologist Robert Koch isolated Vibrio cholerae in 1884, providing undeniable laboratory proof. Armed with scientific certainty and galvanized by expanding working-class voting power, Disraeli’s government passed the landmark Public Health Act of 1875—compelling local councils to provide clean water, covered drainage, and sanitary inspections, permanently defeating epidemic cholera in Britain."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_1_1",
+    "lessonNum": 1,
+    "title": "KT1.1: The Origins of the Republic, 1918–1919",
+    "enquiry": "Out of the ashes: How did the devastating legacy of the First World War forge the Weimar Republic, and were the democratic foundations of its new Constitution fatally flawed from the start?",
+    "currentBlurb": "In late October 1918, imperial Germany stood on the precipice of total exhaustion. Frontline soldiers starved on turnip soup while Allied armies breached the Hindenburg Line. When naval admirals ordered a suicidal final sortie into the North Sea, sailors at Kiel raised red flags, sparking a nationwide revolution. Within days, five centuries of monarchical rule vanished as Kaiser Wilhelm II fled across the Dutch border in the dead of night. Amidst the chaos of strikes and revolutionary councils, moderate Social Democrat Friedrich Ebert was thrust into power—proclaiming a fragile republic that was born in defeat, surrounded by enemies, and doomed to sign an armistice the army refused to acknowledge."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_1_2",
+    "lessonNum": 2,
+    "title": "KT1.2: Early Challenges to the Republic, 1919–1923",
+    "enquiry": "Surrounded by enemies: How did the Weimar Republic survive the traumatic birth of the Treaty of Versailles, violent uprisings from the extreme left and right, and the catastrophic economic collapse of 1923?",
+    "currentBlurb": "Between 1919 and 1923, the young Weimar Republic fought for its survival against assassins, putschists, and economic catastrophe. The signing of the Treaty of Versailles stunned the German public, cementing the toxic 'Stab in the Back' myth that democratic politicians had betrayed an undefeated army. On the streets of Berlin, Communist Spartacists battled right-wing Freikorps mercenaries in bloody barricade warfare. When French and Belgian troops seized the Ruhr in January 1923, the government's desperate policy of passive resistance triggered catastrophic hyperinflation—wiping out the life savings of the middle class and leaving millions carrying laundry baskets of worthless cash to buy a single loaf of bread."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_1_3",
+    "lessonNum": 3,
+    "title": "KT1.3: The Recovery of the Republic, 1924–1929",
+    "enquiry": "Dancing on a volcano: Did Gustav Stresemann genuinely rescue the Weimar Republic from the ashes of 1923, or was Germany's 'Golden Age' built on quicksand?",
+    "currentBlurb": "By the end of 1923, the Weimar Republic appeared dead on its feet. Yet from the ashes of hyperinflation emerged an astonishing five-year revival orchestrated by Gustav Stresemann. By incinerating trillions of worthless paper Marks and issuing the Rentenmark, Stresemann restored faith in the currency before brokering the Dawes Plan—flooding German industry with 800 million gold marks in American loans. Germany was welcomed back into the family of nations at Locarno and entered the League of Nations as a Great Power. But beneath the glittering neon lights and jazz bars of Weimar Germany lay a lethal fragility: the republic was 'dancing on a volcano' of short-term foreign debt."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_1_4",
+    "lessonNum": 4,
+    "title": "KT1.4: Changes in Society, 1924–1929",
+    "enquiry": "A Golden Age or a divided nation: To what extent did the lives of workers, women, and artists genuinely improve during the Weimar Republic's era of recovery?",
+    "currentBlurb": "The 'Golden Twenties' unleashed a whirlwind of cultural experimentation and social liberation across Germany's cities. Women won universal suffrage, entered the professions, and embraced the bobbed hair, cigarette-smoking independence of the 'New Woman'. In Dessau, Walter Gropius founded the Bauhaus school, replacing ornate imperial stone with functional glass and tubular steel, while painters like Otto Dix cast a cynical, unflinching eye over war cripples and bourgeois hypocrisy. Yet this dazzling avant-garde world belonged almost entirely to metropolitan Berlin. In conservative rural towns and church pulpits, millions looked on with mounting moral fury, viewing modern Weimar culture as a decadent, unpatriotic cesspool."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_2_1",
+    "lessonNum": 5,
+    "title": "KT2.1: The Early Development of the Nazi Party, 1919–1922",
+    "enquiry": "From the shadows: How did a tiny, obscure political group in a Munich beer hall transform into a highly organised and violent political machine under Adolf Hitler's early leadership?",
+    "currentBlurb": "In September 1919, a bitter, homeless trench veteran named Adolf Hitler was dispatched by military intelligence to spy on a fringe political group in a smoky Munich beer cellar: the German Workers' Party. Instead of reporting treason, Hitler was mesmerised by their anti-Semitic, nationalist grievances. Joining as member 55, his hypnotic, vein-bulging oratorical fury rapidly transformed the obscure club into the National Socialist German Workers' Party (NSDAP). Backed by the thuggish muscle of Ernst Röhm's brown-shirted Sturmabteilung (SA) and symbolised by the red, white, and black swastika banner, Hitler seized absolute dictatorial control of the party through the Führerprinzip."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_2_2",
+    "lessonNum": 6,
+    "title": "KT2.2: The Munich Putsch and the Lean Years, 1923–1929",
+    "enquiry": "A spectacular failure or a political masterstroke: How did Hitler use the disaster of the Munich Putsch to completely rebuild the Nazi Party during its 'lean years'?",
+    "currentBlurb": "On the evening of 8 November 1923, Adolf Hitler fired a pistol into the ceiling of the Bürgerbräukeller in Munich, shouting that the national revolution had begun. Flanked by First World War hero General Ludendorff, Hitler attempted to overthrow the Bavarian government and march on Berlin. The coup collapsed within hours under Bavarian police rifle fire at the Feldherrnhalle, leaving sixteen Nazis dead. Yet at his treason trial, sympathetic nationalist judges allowed Hitler to turn the dock into a nationwide propaganda platform. Sentenced to a comfortable fortress in Landsberg, he dictated Mein Kampf and resolved that power would never be taken by bullets, but through the ballot box."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_2_3",
+    "lessonNum": 7,
+    "title": "KT2.3: The Growth of Nazi Support, 1929–1932",
+    "enquiry": "The shattered Republic: How did the economic earthquake of the Great Depression destroy Weimar democracy and propel Adolf Hitler from the political fringes to the brink of power?",
+    "currentBlurb": "On 29 October 1929, the Wall Street stock market collapsed in New York, instantly severing the financial lifeline of the Weimar Republic. American banks recalled billions in short-term loans, plunging German industry into total paralysis. By 1932, over six million citizens were registered unemployed, while homeless shantytowns ringed Berlin. As Chancellor Heinrich Brüning slashed pensions and wages by emergency presidential decree, desperate voters abandoned the democratic centre. While Communist paramilitaries fought Nazi Brownshirts in bloody street brawls, Joseph Goebbels mounted an unprecedented modern propaganda campaign, presenting Adolf Hitler as the solitary messiah capable of restoring work, bread, and national pride."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_2_4",
+    "lessonNum": 8,
+    "title": "KT2.4: How Hitler Became Chancellor, 1932–1933",
+    "enquiry": "The Backstairs Intrigue: How did secret political scheming, revenge, and a fatal underestimation rescue a struggling Adolf Hitler and hand him the Chancellorship of Germany?",
+    "currentBlurb": "By the winter of 1932, Adolf Hitler appeared politically exhausted. The NSDAP had lost two million votes in the November elections, the party treasury was bankrupt, and Gregor Strasser threatened a devastating internal mutiny. Yet what Hitler could not win at the ballot box was handed to him through corrupt backroom intrigue. Consumed by jealousy and ambition, former Chancellor Franz von Papen struck a secret deal at banker von Schröder's Cologne villa to oust General von Schleicher. Convinced that Hitler was an inexperienced demagogue who could be 'pushed into a corner until he squeaks', Papen persuaded an ailing President Hindenburg to appoint Hitler Chancellor on 30 January 1933."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_3_1",
+    "lessonNum": 9,
+    "title": "Key Topic 3.1: The Creation of a Dictatorship, 1933–1934",
+    "enquiry": "From chains to absolute control: How did Hitler completely dismantle the Weimar democracy and forge a totalitarian dictatorship in just 18 months?",
+    "currentBlurb": "On the bitterly cold night of 27 February 1933, the glass dome of the Reichstag building erupted into an inferno. Seizing upon the arson as proof of an imminent Communist insurrection, Hitler persuaded President Hindenburg to sign the Emergency Decree for the Protection of People and State—stripping German citizens of all civil liberties overnight. Within a month, the Enabling Act granted Hitler dictatorial power to bypass parliament entirely. Trade union offices were raided, rival political parties dissolved, and in June 1934, Hitler unleashed the SS to slaughter his own SA leadership in the Night of the Long Knives. When Hindenburg died weeks later, every soldier in the German army swore a personal oath of unconditional obedience to the Führer."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_3_2",
+    "lessonNum": 10,
+    "title": "Key Topic 3.2: The Police State and Religion, 1933–1939",
+    "enquiry": "The architecture of fear: How did Hitler construct a terrifying police state and attempt to crush the moral authority of the German churches?",
+    "currentBlurb": "Behind the gleaming public facade of full employment and national renewal, Nazi Germany was constructed upon an omnipresent architecture of terror. Heinrich Himmler's black-uniformed Schutzstaffel (SS) and the plainclothes Gestapo maintained an inescapable web of surveillance, relying on hundreds of thousands of voluntary denunciations from ordinary neighbours and colleagues. The judiciary was completely Nazified, replacing impartial law with Roland Freisler's murderous People's Court. When Hitler attempted to subordinate the churches, signing a Concordat with the Vatican only to break it, Catholic priests and Protestant Confessional Church pastors like Martin Niemöller found themselves imprisoned in the expanding barracks of Dachau."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_3_3",
+    "lessonNum": 11,
+    "title": "Key Topic 3.3: Controlling and Influencing Attitudes, 1933–1939",
+    "enquiry": "The war for the German mind: How did Joseph Goebbels use censorship, mass propaganda, and the arts to brainwash an entire nation?",
+    "currentBlurb": "From his headquarters in the Ministry of Public Enlightenment and Propaganda, Dr Joseph Goebbels waged a total war for the minds of seventy million Germans. Independent newspapers were shut down, while millions of subsidised Volksempfänger radios broadcast Hitler's voice into living rooms and factories where listening was compulsory. In May 1933, students burned 'un-German' books by Freud, Einstein, and Remarque in public bonfires. At the Nuremberg party rallies, Albert Speer's towering 'Cathedral of Light' mesmerised hundreds of thousands in choreographed pseudo-religious worship, while the 1936 Berlin Olympic Games projected a deceptive image of order, vitality, and peace to a gullible international audience."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_3_4",
+    "lessonNum": 12,
+    "title": "Key Topic 3.4: Opposition, Resistance and Conformity, 1933–1939",
+    "enquiry": "Why was there so little active opposition to the Nazi regime, and how did underground networks, workers, and young people attempt to resist?",
+    "currentBlurb": "In a totalitarian state where telling an anti-Hitler joke could lead to the executioner's block, active opposition was fraught with lethal peril. The vast majority of Germans conformed: dazzled by foreign policy triumphs, grateful for steady jobs, or cowed into silent complicity by the Gestapo. Yet resistance never entirely vanished. Underground Communist and Socialist networks smuggled anti-Nazi pamphlets across the Czech border, while courageous churchmen like Bishop Clemens August von Galen openly denounced the regime's secret euthanasia programme. In the cities, defiant working-class teenagers formed the Edelweiss Pirates to ambush Hitler Youth patrols, while middle-class Swing Youth danced to banned American swing music."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_4_1",
+    "lessonNum": 13,
+    "title": "Key Topic 4.1: Nazi Policies Towards Women, 1933–1939",
+    "enquiry": "How did the Nazis attempt to reverse the freedoms of Weimar women, and why did their policies ultimately contradict their own economic goals?",
+    "currentBlurb": "The Nazi regime viewed the emancipated, professional 'New Woman' of the Weimar era as a racial and demographic disaster. Under the slogan Kinder, Küche, Kirche (Children, Kitchen, Church), women were systematically expelled from civil service posts, universities, and the judiciary. The state issued 1,000-Mark marriage loans that were reduced by a quarter for every child born, while mothers were awarded the Cross of Honour of the German Mother in bronze, silver, or gold. Simultaneously, Heinrich Himmler's SS established Lebensborn homes to breed racially 'pure' children. Yet this domestic ideology collided with economic reality: as rearmament accelerated, the regime was forced to reverse course, desperately dragging female labour back into the munitions factories."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_4_2",
+    "lessonNum": 14,
+    "title": "Key Topic 4.2: Nazi Policies Towards the Young, 1933–1939",
+    "enquiry": "How did the Nazis use the education system and youth movements to indoctrinate the next generation, and how successful were they?",
+    "currentBlurb": "To Adolf Hitler, whoever captured the youth possessed the future of the Thousand-Year Reich. From the age of ten, boys were inducted into the Hitler Youth, exchanging childhood innocence for map reading, rifle training, and ideological fanatical indoctrination, while girls in the League of German Girls (BDM) were conditioned for domestic motherhood and racial health. Within the classroom, Bernhard Rust purged all Jewish and non-conformist educators, forcing every teacher to join the Nazi Teachers' League. Academic subjects were warped into racial instruments: Biology became the study of Aryan eugenics, History championed militarism, and Mathematics calculated the fuel consumption of bomber squadrons."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_4_3",
+    "lessonNum": 15,
+    "title": "Key Topic 4.3: Employment and Living Standards, 1933–1939",
+    "enquiry": "How did the Nazis achieve the 'economic miracle' of full employment, and did the standard of living actually improve for German workers?",
+    "currentBlurb": "Between 1933 and 1939, the Nazi regime claimed to have achieved an astonishing economic miracle: reducing unemployment from six million to virtually zero. Yet behind this triumph lay brutal coercion and statistical manipulation. Independent trade unions were smashed on 2 May 1933 and replaced by Robert Ley's compulsory German Labour Front (DAF). Unemployed young men were conscripted into the Reich Labour Service (RAD) to dig autobahns with spades, while Jews, women, and political opponents were erased from unemployment registers. To placate workers who endured eighty-hour weeks and frozen wages, the regime offered subsidised theatre tickets, cruises, and the promise of a Volkswagen Beetle through the Strength Through Joy (KdF) movement."
+  },
+  {
+    "unitId": "weimar_nazi_germany",
+    "lessonId": "lesson_4_4",
+    "lessonNum": 16,
+    "title": "Key Topic 4.4: The Persecution of Minorities, 1933–1939",
+    "enquiry": "How and why did the Nazis persecute minorities, and how did the persecution of Jewish people escalate between 1933 and 1939?",
+    "currentBlurb": "From the moment Hitler took power, the Nazi state embarked on a calculated, escalating campaign to purge Germany of all groups deemed racially or socially 'inferior'. The terror began in April 1933 with a nationwide boycott of Jewish shops and doctors. In September 1935, the Nuremberg Laws stripped German Jews of citizenship and outlawed intermarriage with Aryans. Simultaneously, thousands of Roma, homosexuals, and mentally ill individuals were subjected to compulsory sterilisation or locked in concentration camps as 'asocials'. The persecution turned openly violent on the night of 9 November 1938—Kristallnacht—when synagogues burned across Germany, businesses were looted, and thirty thousand Jewish men were dragged to concentration camps."
+  }
+]
