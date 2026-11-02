@@ -4759,6 +4759,8 @@ export function renderLesson(lesson) {
       let aText = item.answer || item.a || item.year || '';
       if (typeof qText !== 'string') qText = String(qText);
       if (typeof aText !== 'string') aText = String(aText);
+      // Strip obsolete retrieval metadata phrases such as (Last Week), (Last Lesson), etc.
+      qText = qText.replace(/\s*\((Last Lesson|Last Week|Prior Topic|Prior Unit|Earlier in Unit|Last Term|Last Year|Synoptic|Immediate Previous Lesson|Prior Learning|Foundational Context)\)\s*$/i, '').trim();
       if (window.currentUnitId) {
         qText = qText.replace(/src=['"]assets\//g, `src="/units/${window.currentUnitId}/assets/`);
         aText = aText.replace(/src=['"]assets\//g, `src="/units/${window.currentUnitId}/assets/`);
@@ -6069,16 +6071,67 @@ export function renderLesson(lesson) {
         /src=["'](\.\/)?assets\//g,
         'src="/units/' + window.currentUnitId + '/assets/',
       );
-      // Strip leading in-prose paragraph reference ([X.Y] or <span class="para-ref">...</span>) to avoid numbering duplicates
-      contentStr = contentStr.replace(
-        /^\s*<span\s+class=["']para-ref["']>\s*\[\s*[\d\.]+\s*\]\s*<\/span>\s*/i,
-        '',
+
+      // Decimal reference and paragraph number resolution
+      const rawTextForMatch = block.text || block.content || '';
+      const paraMatch = rawTextForMatch.match(/\[\s*(\d+\.\d+)\s*\]/);
+      let decimalRef = '';
+      if (paraMatch) {
+        decimalRef = paraMatch[1];
+      } else {
+        let lNum = 1;
+        if (lesson && lesson.id && lesson.id.startsWith('lesson_')) {
+          const parsed = parseInt(lesson.id.split('_')[1], 10);
+          if (!isNaN(parsed)) lNum = parsed;
+        } else if (lesson && typeof lesson.lesson_number === 'number') {
+          lNum = lesson.lesson_number;
+        }
+        decimalRef = `${lNum}.${index + 1}`;
+      }
+
+      const showParaNumber = Boolean(
+        rawTextForMatch &&
+        rawTextForMatch.trim() &&
+        !(typeof rawTextForMatch === 'string' && rawTextForMatch.includes('side-quest-box')) &&
+        !(block.title && block.title.toLowerCase().includes('lesson reflection')),
       );
-      contentStr = contentStr.replace(/^\s*\[\s*\d+\.\d+\s*\]\s*/i, '');
+
+      // Symmetrical Option A Paragraph Numbering: Clean modern pill without brackets for ALL paragraphs
+      const formatParagraphPills = (str, fallbackRef) => {
+        if (!str || typeof str !== 'string') return str;
+        // 1. Transform <span class="para-ref">...</span> into clean .narrative-para-pill
+        str = str.replace(
+          /<span\s+class=["']para-ref["']>\s*\[?\s*([\d\.]+)\s*\]?\s*<\/span>/gi,
+          (match, num) => {
+            return `<span class="narrative-para-pill" id="para-${num.replace('.', '-')}" data-para="${num}">${num}</span>`;
+          },
+        );
+        // 2. Transform raw [X.Y] bracket numbers into clean .narrative-para-pill
+        str = str.replace(
+          /(^|>|\s)\[\s*(\d+\.\d+)\s*\]/g,
+          (match, prefix, num) => {
+            return `${prefix}<span class="narrative-para-pill" id="para-${num.replace('.', '-')}" data-para="${num}">${num}</span>`;
+          },
+        );
+        // 3. Prepend fallbackRef if the narrative block has no paragraph pill and showParaNumber is true
+        if (showParaNumber && fallbackRef && !str.includes('narrative-para-pill')) {
+          str = `<span class="narrative-para-pill" id="para-${fallbackRef.replace('.', '-')}" data-para="${fallbackRef}">${fallbackRef}</span> ` + str;
+        }
+        return str;
+      };
+
+      contentStr = formatParagraphPills(contentStr, decimalRef);
 
       let styledContent = contentStr;
-      if (contentStr.trim().startsWith('<strong>')) {
-        styledContent = contentStr.replace(/^<strong>(.*?)<\/strong>\s*/i, (match, headingText) => {
+      if (/^<span class="narrative-para-pill"[^>]*>.*?<\/span>\s*<strong>(.*?)<\/strong>\s*/i.test(styledContent)) {
+        styledContent = styledContent.replace(
+          /^<span class="narrative-para-pill"([^>]*)>(.*?)<\/span>\s*<strong>(.*?)<\/strong>\s*/i,
+          (match, pillAttrs, pillText, headingText) => {
+            return `<div class="paragraph-signpost" style="font-weight: 700; color: #1e3a8a; font-size: 1.08rem; letter-spacing: 0.1px; margin-bottom: 6px; border-left: 3px solid #3b82f6; padding-left: 8px;"><span class="narrative-para-pill"${pillAttrs}>${pillText}</span> ${headingText}</div><br/>`;
+          },
+        );
+      } else if (styledContent.trim().startsWith('<strong>')) {
+        styledContent = styledContent.replace(/^<strong>(.*?)<\/strong>\s*/i, (match, headingText) => {
           return `<div class="paragraph-signpost" style="font-weight: 700; color: #1e3a8a; font-size: 1.08rem; letter-spacing: 0.1px; margin-bottom: 6px; border-left: 3px solid #3b82f6; padding-left: 8px;">${headingText}</div><br/>`;
         });
       }
@@ -6108,14 +6161,17 @@ export function renderLesson(lesson) {
           : highlightGlossary(l4ContentStr);
 
         l4ContentStr = formatBold(l4ContentStr);
-        // Strip leading in-prose paragraph reference ([X.Y] or <span class="para-ref">...</span>) to avoid numbering duplicates
-        l4ContentStr = l4ContentStr.replace(
-          /^\s*<span\s+class=["']para-ref["']>\s*\[\s*[\d\.]+\s*\]\s*<\/span>\s*/i,
-          '',
-        );
-        l4ContentStr = l4ContentStr.replace(/^\s*\[\s*\d+\.\d+\s*\]\s*/i, '');
+        l4ContentStr = formatParagraphPills(l4ContentStr, decimalRef);
+
         l4StyledContent = l4ContentStr;
-        if (l4ContentStr.trim().startsWith('<strong>')) {
+        if (/^<span class="narrative-para-pill"[^>]*>.*?<\/span>\s*<strong>(.*?)<\/strong>\s*/i.test(l4StyledContent)) {
+          l4StyledContent = l4StyledContent.replace(
+            /^<span class="narrative-para-pill"([^>]*)>(.*?)<\/span>\s*<strong>(.*?)<\/strong>\s*/i,
+            (match, pillAttrs, pillText, headingText) => {
+              return `<div class="paragraph-signpost" style="font-weight: 700; color: #047857; font-size: 1.08rem; letter-spacing: 0.1px; margin-bottom: 6px; border-left: 3px solid #10b981; padding-left: 8px;"><span class="narrative-para-pill"${pillAttrs}>${pillText}</span> ${headingText}</div><br/>`;
+            },
+          );
+        } else if (l4ContentStr.trim().startsWith('<strong>')) {
           l4StyledContent = l4ContentStr.replace(
             /^<strong>(.*?)<\/strong>\s*/i,
             (match, headingText) => {
@@ -6127,22 +6183,6 @@ export function renderLesson(lesson) {
 
       let themeHeadingHtml = '';
       const rawHeading = block.theme_heading || block.theme || block.title;
-
-      const rawTextForMatch = block.text || block.content || '';
-      const paraMatch = rawTextForMatch.match(/\[\s*(\d+\.\d+)\s*\]/);
-      let decimalRef = '';
-      if (paraMatch) {
-        decimalRef = paraMatch[1];
-      } else {
-        let lNum = 1;
-        if (lesson && lesson.id && lesson.id.startsWith('lesson_')) {
-          const parsed = parseInt(lesson.id.split('_')[1], 10);
-          if (!isNaN(parsed)) lNum = parsed;
-        } else if (lesson && typeof lesson.lesson_number === 'number') {
-          lNum = lesson.lesson_number;
-        }
-        decimalRef = `${lNum}.${index + 1}`;
-      }
 
       const stagesList =
         (lesson &&
@@ -6859,17 +6899,17 @@ export function renderLesson(lesson) {
 
           return `
             <details class="cme-source-drawer medicine-source-drawer eee-source-drawer weimar-source-drawer archival-drawer gcse-source-container archival-source-box" ${bCardIdAttr} style="margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
-              <summary style="padding: 7px 12px; min-height: 40px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
-                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                  <span class="archival-meta-tag" style="background: #1e40af; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2;">${sLetter ? `SOURCE ${sLetter}` : 'ARCHIVAL EVIDENCE'}</span>
-                  <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.2;">${displayTitle}</span>
+              <summary style="padding: 6px 12px; min-height: 38px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
+                <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; margin-right: 12px;">
+                  <span class="archival-meta-tag" style="background: #1e40af; color: #ffffff; padding: 2px 7px; border-radius: 4px; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">${sLetter ? `SOURCE ${sLetter}` : 'ARCHIVAL EVIDENCE'}</span>
+                  <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.85rem; color: #1e293b; font-weight: 700; line-height: 1.35;">${displayTitle}</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-                  <button type="button" class="source-to-narrative-jump-btn" onclick="event.stopPropagation(); if(window.jumpToNarrativeBlock){window.jumpToNarrativeBlock(${index + 1});}" style="background: rgba(15, 23, 42, 0.06); border: 1px solid #cbd5e1; color: #475569; font-size: 0.68rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.2s ease;" title="Jump up to Stage ${index + 1} Narrative Reading">
+                  <button type="button" class="source-to-narrative-jump-btn" onclick="event.stopPropagation(); if(window.jumpToNarrativeBlock){window.jumpToNarrativeBlock(${index + 1});}" style="background: rgba(15, 23, 42, 0.06); border: 1px solid #cbd5e1; color: #475569; font-size: 0.68rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.2s ease;" title="Jump up to Stage ${index + 1} Narrative Reading">
                     <i class="fa-solid fa-arrow-up"></i> Stage ${index + 1} Text
                   </button>
-                  <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0;">
-                    Archival Evidence &bull; <span class="drawer-state-expand">Expand</span><span class="drawer-state-collapse" style="display: none;">Collapse</span> <span class="drawer-caret">&#9660;</span>
+                  <span class="drawer-toggle-indicator" style="cursor: pointer;">
+                    <span class="drawer-state-expand">View Source</span><span class="drawer-state-collapse">Close</span> <span class="drawer-caret">&#9660;</span>
                   </span>
                 </div>
               </summary>
@@ -6940,14 +6980,6 @@ export function renderLesson(lesson) {
 
       let blockSourceHtml = rawSourcesList.map((s) => renderSingleArchivalSource(s)).join('');
 
-      const resolvedBlockText = block.text || block.content || '';
-      const showParaNumber = Boolean(
-        resolvedBlockText &&
-        resolvedBlockText.trim() &&
-        !(typeof resolvedBlockText === 'string' && resolvedBlockText.includes('side-quest-box')) &&
-        !(block.title && block.title.toLowerCase().includes('lesson reflection')),
-      );
-
       const isSourceAfter =
         window.currentUnitId === 'monarchy_religion_power' ||
         unitId === 'monarchy_religion_power' ||
@@ -6978,7 +7010,7 @@ export function renderLesson(lesson) {
               <div class="stage-header-meta" style="flex: 1 1 auto; min-width: 0; display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                 <span class="stage-header-title-row" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                   <span class="stage-decimal-pill" style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">
-                    ${decimalRef}
+                    Stage ${stageNum}
                   </span>
                   ${themeHeadingHtml}
                 </span>
@@ -7014,7 +7046,7 @@ export function renderLesson(lesson) {
           <div class="narrative-chunk-header" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 10px;">
             <div class="narrative-chunk-meta" style="flex: 1 1 auto; min-width: 0; display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
               <span class="stage-header-title-row" style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                ${showParaNumber ? `<span class="stage-decimal-pill" style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">${decimalRef}</span>` : ''}
+                ${showParaNumber ? `<span class="stage-decimal-pill" style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">Stage ${stageNum}</span>` : ''}
                 ${themeHeadingHtml}
               </span>
               ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}

@@ -2500,6 +2500,22 @@
           "asset_path": "/units/cme_new/assets/oslo_cover.png",
           "caption": "Archival document representing the confidential Norwegian-brokered bilateral channel conducted in suburban Oslo between Israeli academic Yair Hirschfeld and PLO negotiator Ahmed Qurei in 1993.",
           "hinge_question": "Why was total secrecy essential for the initial breakthroughs achieved at Oslo?"
+        },
+        {
+          "lesson_num": 11,
+          "lesson_title": "KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979",
+          "source_id": "Source A",
+          "artifact_title": "US Secretary of State Henry Kissinger (January 1974)",
+          "date": "January 1974",
+          "creator": "US Department of State / Gerald R. Ford Presidential Library",
+          "repository": "National Archives and Records Administration (NARA)",
+          "accession_id": "NARA RG 59 / Ford Library NLGRF-WHPO-A2633-14",
+          "rights_status": "Public Domain (US Federal Government Work — 17 U.S.C. § 105)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.fordlibrarymuseum.gov/",
+          "asset_path": "/units/cme_new/assets/henry_kissinger.jpg",
+          "caption": "Dr Henry Kissinger, US Secretary of State who pioneered 'Shuttle Diplomacy' between Cairo, Damascus, and Jerusalem following the 1973 Yom Kippur War.",
+          "hinge_question": "Why did Kissinger insist on an incremental, 'step-by-step' approach rather than attempting a comprehensive peace conference at Geneva?"
         }
       ],
       "exam_board": "Edexcel GCSE (9-1) History Paper 2 (Option P4)",
@@ -4075,7 +4091,7 @@
       "key_stage": "GCSE (Edexcel Paper 1)",
       "unit_title": "Medicine in Britain, c.1250–present & The Western Front",
       "total_lessons": 26,
-      "total_sources": 121,
+      "total_sources": 123,
       "sources": [
         {
           "lesson_num": 1,
@@ -4948,12 +4964,12 @@
         {
           "lesson_num": 16,
           "lesson_title": "KT4.1 Ideas on Causes: Genetics, DNA & The Human Genome Project (c.1953–present)",
-          "source_id": "Source A (Scientific Demonstration Model)",
-          "artifact_title": "Watson and Crick's Original 1953 Metal Demonstration Model of the DNA Double Helix",
+          "source_id": "Source A (Scale Demonstration Model)",
+          "artifact_title": "Watson and Crick's 1953 Demonstration Model of the DNA Double Helix",
           "date": "1953",
           "creator": "James Watson and Francis Crick",
           "repository": "The Science Museum, London",
-          "accession_id": "Science Museum Object 1976-830",
+          "accession_id": "Science Museum Object 1977-310",
           "rights_status": "Educational Fair Dealing / CDPA 1988 (Museum Documentation)",
           "commercial_use_permitted": true,
           "source_url": "https://collection.sciencemuseumgroup.org.uk/objects/co8084950",
@@ -5634,6 +5650,34 @@
           "asset_path": "/images/nightingale_scutari.jpg"
         },
         {
+          "lesson_num": 13,
+          "lesson_title": "KT3.3 Improvements in Hospital Care: Florence Nightingale, Mary Seacole & The Sanitary Revolution (1854–1863)",
+          "source_id": "Interactive Comparison Plate 1 (Before)",
+          "artifact_title": "Pre-Nightingale Hospital Ward Squalor: Museum Physical Reconstruction & Archival Panel",
+          "date": "Contemporary Museum Exhibition (Documenting 1854 Crimean Hospital Conditions)",
+          "creator": "Florence Nightingale Museum, London / Historical Exhibition Archive",
+          "repository": "Florence Nightingale Museum, St Thomas' Hospital, London",
+          "accession_id": "FNM-EXH-2024-W01",
+          "rights_status": "Educational Fair Dealing / CDPA 1988 (Section 30: Museum Educational Reconstruction)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.florence-nightingale.co.uk/",
+          "asset_path": "/images/pre_nightingale_reforms_museum.jpg"
+        },
+        {
+          "lesson_num": 13,
+          "lesson_title": "KT3.3 Improvements in Hospital Care: Florence Nightingale, Mary Seacole & The Sanitary Revolution (1854–1863)",
+          "source_id": "Interactive Comparison Plate 2 (After)",
+          "artifact_title": "The Nightingale Reforms: Museum Physical Reconstruction of Iron Bedframe & Sanitary Ward",
+          "date": "Contemporary Museum Exhibition (Documenting Post-1854 Sanitary Reforms)",
+          "creator": "Florence Nightingale Museum, London / Historical Exhibition Archive",
+          "repository": "Florence Nightingale Museum, St Thomas' Hospital, London",
+          "accession_id": "FNM-EXH-2024-W02",
+          "rights_status": "Educational Fair Dealing / CDPA 1988 (Section 30: Museum Educational Reconstruction)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.florence-nightingale.co.uk/",
+          "asset_path": "/images/nightingale_reforms_museum.jpg"
+        },
+        {
           "lesson_num": 14,
           "lesson_title": "KT3.4: The Surgical Revolution: Simpson, Lister & The Conquest of Pain and Sepsis (1847–1870s)",
           "source_id": "Narrative Plate 4",
@@ -5772,6 +5816,22 @@
           "commercial_use_permitted": true,
           "source_url": "https://www.bl.uk",
           "asset_path": "/images/gillies_tubed_pedicle.jpg"
+        },
+        {
+          "lesson_num": 13,
+          "lesson_title": "KT3.3: Improvements in Hospital Care: Florence Nightingale, Mary Seacole & The Sanitary Revolution (1854–1863)",
+          "source_id": "Block 1 Narrative Plate",
+          "artifact_title": "Middlesex Hospital Ward (1808)",
+          "date": "1808",
+          "creator": "Thomas Rowlandson and Augustus Pugin",
+          "repository": "Wellcome Collection, London / British Museum",
+          "accession_id": "Wellcome Library No. 38995i",
+          "rights_status": "Public Domain (Life of the Author + 70 Years — CDPA 1988)",
+          "commercial_use_permitted": true,
+          "source_url": "https://wellcomecollection.org/works/y96jvxk7",
+          "asset_path": "/images/pre_nightingale_middlesex_hospital.jpg",
+          "caption": "Middlesex Hospital Ward by Thomas Rowlandson and Augustus Pugin (1808), showing cramped beds, poor cross-ventilation, and unhygienic conditions in pre-modern voluntary hospitals.",
+          "hinge_question": "Why did middle-class patients in the early nineteenth century refuse to be treated in hospitals, preferring to be operated on at home?"
         }
       ],
       "exam_board": "Pearson Edexcel GCSE (9–1) Option 11",
@@ -15019,8 +15079,8 @@
     }
   },
   "total_units": 19,
-  "total_sources": 1019,
+  "total_sources": 1023,
   "total_lessons": 159,
-  "total_registered_sources": 1019,
-  "last_audit": "2026-10-29T19:43:04.169Z"
+  "total_registered_sources": 1023,
+  "last_audit": "2026-11-02"
 }
