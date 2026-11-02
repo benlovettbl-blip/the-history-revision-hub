@@ -1796,7 +1796,9 @@ export default {
             "starter": "A second key feature was... Specifically, all workers paid...",
             "model": "A second key feature was universal flat-rate national insurance [2.3]. Specifically, every employed worker and employer paid a weekly stamp contribution, entitling all citizens equally to unemployment benefits, pensions, and healthcare without a humiliating means test."
           },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]"
+          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "model_answer": "One key feature was the ambition to slay the \"Five Giants\" of Want, Disease, Ignorance, Squalor, and Idleness [2.2]. For instance, Sir William Beveridge proposed a comprehensive welfare safety net protecting all citizens \"from the cradle to the grave\". A second key feature was universal flat-rate national insurance [2.3]. Specifically, every employed worker and employer paid a weekly stamp contribution, entitling all citizens equally to unemployment benefits, pensions, and healthcare without a humiliating means test.",
+          "model": "One key feature was the ambition to slay the \"Five Giants\" of Want, Disease, Ignorance, Squalor, and Idleness [2.2]. For instance, Sir William Beveridge proposed a comprehensive welfare safety net protecting all citizens \"from the cradle to the grave\". A second key feature was universal flat-rate national insurance [2.3]. Specifically, every employed worker and employer paid a weekly stamp contribution, entitling all citizens equally to unemployment benefits, pensions, and healthcare without a humiliating means test."
         },
         {
           "id": "pwb_l2_consequence_nhs_creation",

@@ -2635,7 +2635,9 @@ export default {
             "starter": "A second key feature was... Specifically, convicts were forced to...",
             "model": "A second key feature was grueling physical hard labour in leg irons [2.2]. Specifically, convicts were rowed ashore every day in heavy chains to dredge gravel from the Thames or construct military dockyards under threat of the cat-o'-nine-tails lash."
           },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]"
+          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "model_answer": "One key feature was severe overcrowding and squalid, disease-ridden conditions below deck [2.1]. For instance, decommissioned warship hulks on the Thames held hundreds of convicts packed together in darkness, where typhus (\"gaol fever\") and dysentery killed nearly 30% of inmates. A second key feature was grueling physical hard labour in leg irons [2.2]. Specifically, convicts were rowed ashore every day in heavy chains to dredge gravel from the Thames or construct military dockyards under threat of the cat-o'-nine-tails lash.",
+          "model": "One key feature was severe overcrowding and squalid, disease-ridden conditions below deck [2.1]. For instance, decommissioned warship hulks on the Thames held hundreds of convicts packed together in darkness, where typhus (\"gaol fever\") and dysentery killed nearly 30% of inmates. A second key feature was grueling physical hard labour in leg irons [2.2]. Specifically, convicts were rowed ashore every day in heavy chains to dredge gravel from the Thames or construct military dockyards under threat of the cat-o'-nine-tails lash."
         },
         {
           "id": "aus_l2_source_utility_sydney_cove",

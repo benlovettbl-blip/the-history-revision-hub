@@ -724,7 +724,9 @@ export default {
             "starter": "A second key feature was... Specifically, life revolved around...",
             "model": "A second key feature was strong religious tradition centered in small market towns known as shtetls [1.1, 1.3]. Specifically, daily life was anchored by the synagogue, traditional kosher observance, the Sabbath, and deep rabbinical scholarship."
           },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]"
+          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "model_answer": "One key feature was the vibrant linguistic and cultural world of Yiddish literature, theater, and education [1.2]. For instance, millions of Jews across Poland and Lithuania spoke Yiddish as their primary language, supporting thousands of schools, newspapers, and community youth movements. A second key feature was strong religious tradition centered in small market towns known as shtetls [1.1, 1.3]. Specifically, daily life was anchored by the synagogue, traditional kosher observance, the Sabbath, and deep rabbinical scholarship.",
+          "model": "One key feature was the vibrant linguistic and cultural world of Yiddish literature, theater, and education [1.2]. For instance, millions of Jews across Poland and Lithuania spoke Yiddish as their primary language, supporting thousands of schools, newspapers, and community youth movements. A second key feature was strong religious tradition centered in small market towns known as shtetls [1.1, 1.3]. Specifically, daily life was anchored by the synagogue, traditional kosher observance, the Sabbath, and deep rabbinical scholarship."
         },
         {
           "id": "shoah_l1_consequence_racial_antisemitism",
@@ -3408,7 +3410,9 @@ export default {
             "starter": "A second key feature was... Specifically, arrival to murder took...",
             "model": "A second key feature was the rapid, industrial speed of mass murder [5.2]. Specifically, victims were forced into gas chambers within two hours of arrival, and enslaved Jewish prisoners (Sonderkommando) were forced at gunpoint to remove bodies and burn them in massive outdoor cremation pits."
           },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]"
+          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "model_answer": "One key feature was elaborate deception designed to prevent panic and revolt [5.1]. For example, camps like Treblinka were disguised as transit railway stations with fake ticket windows, clock faces, and signs directing victims to \"disinfection baths\" that were actually lethal gas chambers. A second key feature was the rapid, industrial speed of mass murder [5.2]. Specifically, victims were forced into gas chambers within two hours of arrival, and enslaved Jewish prisoners (Sonderkommando) were forced at gunpoint to remove bodies and burn them in massive outdoor cremation pits.",
+          "model": "One key feature was elaborate deception designed to prevent panic and revolt [5.1]. For example, camps like Treblinka were disguised as transit railway stations with fake ticket windows, clock faces, and signs directing victims to \"disinfection baths\" that were actually lethal gas chambers. A second key feature was the rapid, industrial speed of mass murder [5.2]. Specifically, victims were forced into gas chambers within two hours of arrival, and enslaved Jewish prisoners (Sonderkommando) were forced at gunpoint to remove bodies and burn them in massive outdoor cremation pits."
         },
         {
           "id": "shoah_l5_explain_why_warsaw_uprising",

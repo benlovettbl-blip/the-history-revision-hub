@@ -2408,7 +2408,9 @@ export default {
             "starter": "A second key feature was... This caused horrific suffering because...",
             "model": "A second key feature was rampant disease and catastrophic mortality rates [2.4]. For example, foul air, contaminated food, and stagnant bilge water bred dysentery (\"the bloody flux\") and smallpox, causing approximately 15% of captives to die during the voyage."
           },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]"
+          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "model_answer": "One key feature was extreme physical overcrowding and brutal confinement below deck [2.3]. Specifically, enslaved people were packed into shelves with less than 60 centimetres of headroom, chained together in pairs by iron leg irons for up to 23 hours a day. A second key feature was rampant disease and catastrophic mortality rates [2.4]. For example, foul air, contaminated food, and stagnant bilge water bred dysentery (\"the bloody flux\") and smallpox, causing approximately 15% of captives to die during the voyage.",
+          "model": "One key feature was extreme physical overcrowding and brutal confinement below deck [2.3]. Specifically, enslaved people were packed into shelves with less than 60 centimetres of headroom, chained together in pairs by iron leg irons for up to 23 hours a day. A second key feature was rampant disease and catastrophic mortality rates [2.4]. For example, foul air, contaminated food, and stagnant bilge water bred dysentery (\"the bloody flux\") and smallpox, causing approximately 15% of captives to die during the voyage."
         },
         {
           "id": "fbe_l2_consequence_zong_massacre",

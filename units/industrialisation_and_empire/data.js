@@ -2049,7 +2049,9 @@ export default {
             "starter": "A second key feature was... For example, this meant that...",
             "model": "A second key feature was the excessively long working hours enforced by corporal punishment [2.2, 2.4]. For example, child apprentices worked 14- to 16-hour shifts, and overlookers routinely beat them with leather straps if they slowed down."
           },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]"
+          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "model_answer": "One key feature was the extreme physical danger of working around unguarded machinery [2.3]. Specifically, young children employed as \"scavengers\" had to crawl beneath fast-moving spinning mules, risking crushed fingers and severe injuries. A second key feature was the excessively long working hours enforced by corporal punishment [2.2, 2.4]. For example, child apprentices worked 14- to 16-hour shifts, and overlookers routinely beat them with leather straps if they slowed down.",
+          "model": "One key feature was the extreme physical danger of working around unguarded machinery [2.3]. Specifically, young children employed as \"scavengers\" had to crawl beneath fast-moving spinning mules, risking crushed fingers and severe injuries. A second key feature was the excessively long working hours enforced by corporal punishment [2.2, 2.4]. For example, child apprentices worked 14- to 16-hour shifts, and overlookers routinely beat them with leather straps if they slowed down."
         },
         {
           "id": "ie_l2_consequence_factory_act",
@@ -3176,7 +3178,9 @@ export default {
             "starter": "A second key feature was... For instance, this involved...",
             "model": "A second key feature was the primitive communal sanitation [3.2]. For instance, up to a hundred residents shared a single outdoor cesspool privy, which frequently overflowed and contaminated local drinking water pumps."
           },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]"
+          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "model_answer": "One key feature of back-to-back housing was the total lack of through-ventilation [3.1]. Specifically, houses shared walls on three sides, meaning windows only opened onto a narrow court, trapping dampness and coal soot inside. A second key feature was the primitive communal sanitation [3.2]. For instance, up to a hundred residents shared a single outdoor cesspool privy, which frequently overflowed and contaminated local drinking water pumps.",
+          "model": "One key feature of back-to-back housing was the total lack of through-ventilation [3.1]. Specifically, houses shared walls on three sides, meaning windows only opened onto a narrow court, trapping dampness and coal soot inside. A second key feature was the primitive communal sanitation [3.2]. For instance, up to a hundred residents shared a single outdoor cesspool privy, which frequently overflowed and contaminated local drinking water pumps."
         },
         {
           "id": "ie_l3_consequence_great_stink",
@@ -4369,7 +4373,9 @@ export default {
             "starter": "A second key feature was... For example, this meant that...",
             "model": "A second key feature was the severe judicial retribution by the state at the Winchester Special Assizes [4.4]. For example, special judges tried over 300 Hampshire farmworkers, hanging nineteen-year-old Henry Cook and transporting 101 men to penal colonies in Australia."
           },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]"
+          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "model_answer": "One feature was the widespread destruction of agricultural machinery, where impoverished labourers smashed newly introduced threshing machines. Another feature was the delivery of threatening letters signed by the fictitious 'Captain Swing', warning landowners that their hayricks would be burned if wages were not raised.",
+          "model": "One feature was the widespread destruction of agricultural machinery, where impoverished labourers smashed newly introduced threshing machines. Another feature was the delivery of threatening letters signed by the fictitious 'Captain Swing', warning landowners that their hayricks would be burned if wages were not raised."
         },
         {
           "id": "ie_l4_narrative_account_protest",
@@ -4586,7 +4592,7 @@ export default {
             "type": "feature_drills_4m",
             "question": "Describe two features of the 1830 Hampshire Swing Riots. [4 marks]",
             "prompt": "Identify two distinct features of the 1830 agricultural protests in Hampshire. For each feature, provide a clear identification followed by supporting factual knowledge.",
-            "model": "Feature 1: One key feature was the physical destruction of steam threshing machines and hayrick burning.<br>Detail: Starving agricultural farm labourers attacked aristocratic and gentry estates across Hampshire—including at Selborne and Headley—smashing iron threshing machines with sledgehammers because the machines robbed them of essential winter wages.<br><br>Feature 2: A second key feature was the use of threatening letters signed by the mythical leader \"Captain Swing\".<br>Detail: Protesters delivered anonymous letters to magistrates, parsons, and wealthy farmers warning them to raise wages and dismantle machinery or face arson attacks, demanding an end to oppressive tithe taxes.",
+            "model": "One feature was the widespread destruction of agricultural machinery, where impoverished labourers smashed newly introduced threshing machines. Another feature was the delivery of threatening letters signed by the fictitious 'Captain Swing', warning landowners that their hayricks would be burned if wages were not raised.",
             "scaffolding": {
               "acronym": "F1 + D1 • F2 + D2",
               "acronym_title": "4-Mark Feature Drill Formula",

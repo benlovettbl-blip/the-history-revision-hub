@@ -1435,7 +1435,9 @@ export default {
             "starter": "A second fundamental feature was that the Soviet Union was based on... In particular, this meant that...",
             "model": "A second fundamental feature was that the Soviet Union was a Marxist-Leninist one-party dictatorship with a command economy [1.1]. In particular, all political opposition was suppressed by the state, and the government owned and planned all factories, farmland, and resources in the name of the proletariat."
           },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]"
+          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "model_answer": "One key ideological feature was that the United States was a liberal democracy founded upon free-market capitalism [1.1]. Specifically, citizens elected multiple political parties through open elections, and economic production was driven by private enterprise, the profit motive, and individual liberty. A second fundamental feature was that the Soviet Union was a Marxist-Leninist one-party dictatorship with a command economy [1.1]. In particular, all political opposition was suppressed by the state, and the government owned and planned all factories, farmland, and resources in the name of the proletariat.",
+          "model": "One key ideological feature was that the United States was a liberal democracy founded upon free-market capitalism [1.1]. Specifically, citizens elected multiple political parties through open elections, and economic production was driven by private enterprise, the profit motive, and individual liberty. A second fundamental feature was that the Soviet Union was a Marxist-Leninist one-party dictatorship with a command economy [1.1]. In particular, all political opposition was suppressed by the state, and the government owned and planned all factories, farmland, and resources in the name of the proletariat."
         },
         {
           "id": "cold_war_l1_consequence_atomic_bomb",
