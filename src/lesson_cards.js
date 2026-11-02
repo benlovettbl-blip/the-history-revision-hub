@@ -281,6 +281,9 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
       } else if (currentUnitId === 'weimar_nazi_germany') {
         pdfWorkbookUrl = `/pdfs/weimar_nazi_germany_pupil_workbook_${p.id}.pdf`;
         digitalWorkbookUrl = `/units/weimar_nazi_germany/pupil_workbook_${p.id}.html`;
+      } else if (currentUnitId === 'usa') {
+        pdfWorkbookUrl = `/pdfs/usa_pupil_workbook_${p.id}.pdf`;
+        digitalWorkbookUrl = `/units/usa/pupil_workbook_${p.id}.html`;
       }
 
       lessonsHTML += `

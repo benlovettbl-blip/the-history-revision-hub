@@ -10148,7 +10148,7 @@ const cme_new_data = {
           "question": "Who succeeded Gamal Abdel Nasser as President of Egypt following his death in September 1970?",
           "options": [
             "Anwar Sadat",
-            "Hosni Mubarak",
+            "King Hussein",
             "Boutros Boutros-Ghali",
             "Saad el-Shazly"
           ],
@@ -11953,7 +11953,7 @@ const cme_new_data = {
             "Operation Peace for Galilee",
             "Operation Litani",
             "Operation Desert Storm",
-            "Operation Focus"
+            "The Sinai Campaign"
           ],
           "answer": "Operation Peace for Galilee",
           "explanation": "Source A maps the three-pronged invasion of Lebanon advancing toward West Beirut."
