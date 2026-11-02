@@ -741,14 +741,9 @@
               },
             );
 
-            // Auto-reload on controller change (smooth update across tabs/mobile)
-            let refreshing = false;
-            navigator.serviceWorker.addEventListener('controllerchange', () => {
-              if (!refreshing) {
-                refreshing = true;
-                window.location.reload();
-              }
-            });
+            // Clean background service worker updates without disruptive page auto-reload.
+            // Navigation requests and database.json are strictly Network-First,
+            // so active views are always up-to-date without jarring double-loads.
           });
         } else {
           navigator.serviceWorker.getRegistrations().then((registrations) => {
