@@ -39088,7 +39088,43 @@
           "extra_videos": [],
           "period": "The Medical Renaissance (c.1500–c.1700)",
           "topic": "The Scientific Revolution & New Spirit of Enquiry",
-          "inquiry_question": "How did the invention of movable metal type, Renaissance humanism, and the founding of the Royal Society challenge 1,500 years of medieval medical orthodoxy?"
+          "inquiry_question": "How did the invention of movable metal type, Renaissance humanism, and the founding of the Royal Society challenge 1,500 years of medieval medical orthodoxy?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "Scientific Communication vs Everyday Medical Beliefs",
+              "question": "‘The creation of the Royal Society was more important than the invention of the printing press in advancing medical ideas in the Renaissance.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "Scientific Communication vs Everyday Medical Beliefs: Advancement vs Limitations",
+              "instruction": "GCSE Evaluative Assessment: Weigh the revolutionary impact of the printing press and Royal Society against the persistent continuity in everyday medical treatment.",
+              "advancement": {
+                "title": "Communication Revolution (Change)",
+                "points": [
+                  "Gutenberg movable-type press (1440/1476) took book production from Church scribes, eliminating copyist errors and distributing identical anatomical treatises across Europe.",
+                  "The Royal Society (1660 / Royal Charter 1662) established the scientific method under Nullius in Verba (\"Take nobody's word for it\").",
+                  "Philosophical Transactions (1665) launched Europe’s first peer-reviewed scientific journal, creating an international network for testing and validating experimental findings."
+                ],
+                "starter": "On the one hand, the communications revolution transformed Renaissance medicine because..."
+              },
+              "limitations": {
+                "title": "Entrenched Continuity & Stagnation (Limitations)",
+                "points": [
+                  "Scientific books were printed in Latin and remained expensive luxury goods; the general population was illiterate and relied on cheap astrological almanacs.",
+                  "Microscopic discoveries (Hooke’s cells, Leeuwenhoek’s \"animalcules\") were treated as optical curiosities; no one linked microbes to disease until 1861.",
+                  "Everyday treatments saw zero change: ordinary people and physicians still relied on bloodletting, purging, and miasma theory to explain illness."
+                ],
+                "starter": "However, the practical impact of these communication breakthroughs on ordinary patients was severely limited because..."
+              },
+              "synthesis_prompt": "Write a balanced GCSE exam paragraph explaining why scientific communication accelerated while everyday medical treatment stagnated.",
+              "synthesis_connectives": [
+                "On the one hand, the printing press transformed communication by...",
+                "Crucially, the Royal Society institutionalized...",
+                "However, the practical impact was limited because...",
+                "Consequently, ordinary patients...",
+                "Overall, while scientific networking was revolutionized..."
+              ],
+              "model_answer": "On the one hand, the communications revolution fundamentally transformed Renaissance medicine by dismantling the Catholic Church's scribal monopoly on knowledge. Johannes Gutenberg's movable-type press (c.1440, introduced to England by William Caxton in 1476) allowed medical treatises and detailed anatomical woodcuts to be mass-produced identically across Europe without copyist errors or clerical censorship. This enabled works like Vesalius's De Fabrica (1543) to spread rapidly among university faculties. Furthermore, the establishment of the Royal Society in London (1660, chartered 1662) institutionalized empirical science under its motto Nullius in Verba ('Take nobody\\'s word for it'). Through Philosophical Transactions (1665), Europe's first peer-reviewed journal, discoveries like Leeuwenhoek's 'animalcules' (1676) were rapidly shared, debated, and verified across an international network of scholars.<br><br>However, the practical impact of this revolution on everyday patient care was virtually non-existent, illustrating the profound 'Renaissance Paradox'. Medical treatises were printed in Latin and priced as luxury items for wealthy scholars; the overwhelming majority of ordinary people remained illiterate and continued to buy cheap, popular astrological almanacs and traditional herbals that reinforced ancient superstitions. Crucially, although microscopes revealed cells and bacteria, scientists treated them as fascinating natural curiosities and failed to connect them to the causes of illness. Without Germ Theory, medical treatments remained medieval: physicians and barber-surgeons continued to bleed, purge, and burn herbs against miasma. Therefore, while scientific communication and intellectual debate experienced revolutionary progress, everyday clinical care for ordinary people showed almost complete continuity with the Middle Ages."
+            }
+          ]
         },
         {
           "id": "lesson_2_2",
@@ -40091,7 +40127,43 @@
           "extra_videos": [],
           "period": "The Medical Renaissance (c.1500–c.1700)",
           "topic": "Clinical Observation & Disease Classification",
-          "inquiry_question": "Why was Thomas Sydenham known as the ‘English Hippocrates’, and how did his focus on bedside observation begin to detach disease from individual humoral balance?"
+          "inquiry_question": "Why was Thomas Sydenham known as the ‘English Hippocrates’, and how did his focus on bedside observation begin to detach disease from individual humoral balance?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "Thomas Sydenham: Bedside Clinical Observation vs Traditional Humoural Treatments",
+              "question": "‘Thomas Sydenham’s bedside observation transformed medical practice in the seventeenth century.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "Thomas Sydenham: Bedside Clinical Observation vs Traditional Humoural Treatments",
+              "instruction": "GCSE Analytical Assessment: Evaluate the diagnostic advancements of Thomas Sydenham against his continued reliance on traditional humoral treatments.",
+              "advancement": {
+                "title": "Diagnostic Advancement (Change)",
+                "points": [
+                  "Pioneered direct bedside observation, recording patient symptoms meticulously over time rather than diagnosing from books, urine wheels, or astrology.",
+                  "Classified diseases into distinct species (like plants in a botany manual) in Observationes Medicae (1676), successfully separating scarlet fever from measles.",
+                  "Introduced rational clinical therapies: cinchona bark (quinine) for malaria and cool, ventilated bedrooms for smallpox patients."
+                ],
+                "starter": "On the one hand, Thomas Sydenham significantly transformed medicine because..."
+              },
+              "limitations": {
+                "title": "Enduring Continuity & Stagnation (Limitations)",
+                "points": [
+                  "Had zero knowledge of microorganisms or germs; still believed diseases were caused by atmospheric miasma and toxic environmental vapors.",
+                  "Classification was based entirely on visible external symptoms rather than internal biological pathogens.",
+                  "Continued to prescribe traditional humoral treatments, frequently bleeding, purging, and sweating patients when new treatments were unavailable."
+                ],
+                "starter": "However, the practical significance of Sydenham was limited because..."
+              },
+              "synthesis_prompt": "Write a balanced GCSE exam paragraph evaluating the extent to which Thomas Sydenham was significant in the development of medicine.",
+              "synthesis_connectives": [
+                "Sydenham was significant because...",
+                "By rejecting classical theory, he established...",
+                "This directly led to...",
+                "However, his impact on treatments was limited because...",
+                "Therefore, while he revolutionized diagnosis..."
+              ],
+              "model_answer": "On the one hand, Thomas Sydenham was highly significant in the development of medicine because he pioneered a scientific, empirical approach to clinical diagnosis that broke fundamentally from medieval book-learning. Nicknamed the 'English Hippocrates', Sydenham insisted on sitting at the patient's bedside, taking meticulous clinical notes, and tracking the precise progression of symptoms over time, rather than relying on ancient Galenic treatises or astrological charts. In his landmark 1676 publication Observationes Medicae, Sydenham argued that diseases were like plants or animals: separate, external species that could be systematically classified into distinct categories rather than being treated as unique, personal humoral imbalances. This enabled him to successfully distinguish scarlet fever from measles as two entirely separate diseases for the first time. Furthermore, Sydenham popularized practical, effective therapies, such as using Peruvian cinchona bark (quinine) to treat malarial fevers and advocating cool bedrooms and fresh air for smallpox victims instead of suffocating them under heavy heating blankets.<br><br>However, Sydenham’s significance was severely limited because his understanding of disease causes and treatments remained fundamentally traditional. Because microscopes were primitive and germ theory was nearly two centuries away, Sydenham still believed that illnesses were triggered by poisonous atmospheric miasmas and toxic vapors in the air. Consequently, he was unable to identify the true biological causes of infectious diseases and frequently continued to prescribe traditional bloodletting and purging when other remedies failed. Furthermore, conservative physicians in London resisted his ideas, criticizing his refusal to base diagnoses on classical Galenic texts. Therefore, while Sydenham revolutionized the philosophy of clinical diagnosis and laid the foundations for modern epidemiology, his work resulted in very little immediate improvement in curing illness or saving lives during the Renaissance."
+            }
+          ]
         },
         {
           "id": "lesson_2_3",
@@ -41093,7 +41165,43 @@
           "extra_videos": [],
           "period": "The Medical Renaissance (c.1500–c.1700)",
           "topic": "Anatomy & The Anatomical Revolution",
-          "inquiry_question": "Why did Andreas Vesalius succeed in disproving over two hundred of Galen's anatomical claims, and why did his breakthroughs face fierce academic resistance?"
+          "inquiry_question": "Why did Andreas Vesalius succeed in disproving over two hundred of Galen's anatomical claims, and why did his breakthroughs face fierce academic resistance?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "Andreas Vesalius: Human Anatomical Dissection vs Lack of Medical Cures",
+              "question": "‘Andreas Vesalius’s anatomical dissections were the most significant medical breakthrough of the Renaissance.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "Andreas Vesalius: Human Anatomical Dissection vs Lack of Medical Cures",
+              "instruction": "GCSE Evaluative Assessment: Evaluate whether Vesalius’s anatomical revolution was the most significant medical breakthrough of the Renaissance.",
+              "advancement": {
+                "title": "Anatomical Breakthrough & Methodology (Change)",
+                "points": [
+                  "Overthrew 1,300 years of dogmatic authority by descending from the high lecturer pulpit to dissect human cadavers himself at Padua University.",
+                  "Corrected over 300 of Galen’s errors in De Humani Corporis Fabrica (1543), proving Galen dissected animals (lower jaw is 1 bone, sternum 3 parts, heart septum has no pores).",
+                  "Collaborated with Renaissance artists to publish over 200 magnificent woodcut illustrations, standardizing anatomical education across European universities."
+                ],
+                "starter": "On the one hand, Andreas Vesalius made revolutionary breakthroughs in Renaissance medicine because..."
+              },
+              "limitations": {
+                "title": "Critical Limitations on Treatment & Cures (Limitations)",
+                "points": [
+                  "Anatomical accuracy did NOT cure a single illness, heal infections, or stop deadly epidemics like the plague.",
+                  "Vesalius did not understand the causes of disease (microbes and bacteria remained completely unknown for another 300 years).",
+                  "Everyday treatments experienced zero change: without anaesthetics or antiseptics, surgery remained agonizing and doctors continued humoural bloodletting."
+                ],
+                "starter": "However, the practical significance of Vesalius was severely limited because..."
+              },
+              "synthesis_prompt": "Write a balanced GCSE exam paragraph evaluating how far you agree that Vesalius was the most significant breakthrough in Renaissance medicine.",
+              "synthesis_connectives": [
+                "On the one hand, Vesalius transformed anatomy because...",
+                "Crucially, De Fabrica disproved...",
+                "However, knowing body structure did not...",
+                "Consequently, ordinary patients...",
+                "Therefore, his immediate impact was limited to..."
+              ],
+              "model_answer": "On the one hand, Andreas Vesalius made revolutionary breakthroughs in Renaissance medicine by overthrowing 1,300 years of uncritical obedience to Galen. Working as Professor of Surgery at Padua University, Vesalius performed human dissections with his own hands rather than relying on uneducated barbers while lecturing from ancient texts. In his masterwork De Humani Corporis Fabrica (1543), he corrected over 300 of Galen's anatomical errors, proving conclusively that Galen had based his treatises on animal dissections (such as apes and dogs). For example, Vesalius proved that the human jawbone consists of a single bone rather than two, the sternum has three segments instead of seven, and the muscular septum of the heart is solid with no invisible pores. Furthermore, by mass-producing these findings with exceptionally precise woodcut illustrations via the printing press, Vesalius established empirical observation and human dissection as the bedrock of university medical training across Europe.<br><br>However, the practical significance of Vesalius was severely limited because his anatomical discoveries did not save a single patient's life or lead to any new medical treatments. Knowing the correct structure of muscles, bones, and organs did nothing to explain what caused disease, as microbes and bacteria were still completely unknown. Consequently, ordinary people and physicians continued to rely entirely on the Theory of the Four Humours and miasma to explain illness. Everyday medical treatments remained identical to the medieval period: patients were still bled, purged, and treated with herbal concoctions. In addition, surgery could not advance significantly because surgeons lacked effective anaesthetics to stop pain and antiseptics to prevent fatal post-operative infections. Therefore, while Vesalius sparked an indispensable revolution in anatomical science and scientific methodology, his direct impact on patient health and medical treatment was virtually non-existent during his lifetime."
+            }
+          ]
         },
         {
           "id": "lesson_2_4",
@@ -42096,7 +42204,43 @@
           "inquiry_question": "How did William Harvey prove the mechanical circulation of the blood through dissection and mathematics, and why did his discovery have virtually no immediate impact on seventeenth-century medical cures?",
           "card_image": "/images/william_harvey_npg.jpg",
           "hero_image": "/images/william_harvey_npg.jpg",
-          "card_position": "center 15%"
+          "card_position": "center 15%",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "William Harvey: Mechanical Circulation vs Traditional Humoural Practice",
+              "question": "‘William Harvey’s discovery of the circulation of the blood was a turning point in medicine c1500–c1700.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "William Harvey: Mechanical Circulation vs Traditional Humoural Practice",
+              "instruction": "GCSE Analytical Assessment: Evaluate the physiological breakthrough of William Harvey against his total lack of immediate clinical cures.",
+              "advancement": {
+                "title": "Physiological Breakthrough & Evidence (Change)",
+                "points": [
+                  "Proved in De Motu Cordis (1628) that blood circulates continuously in a closed, one-way system pumped by the muscular heart.",
+                  "Used mathematical calculation (540 pints per hour) to disprove Galen’s 1,400-year theory that the liver manufactures blood from food.",
+                  "Demonstrated through simple tourniquet experiments on human arms that vein valves ensure blood only flows toward the heart."
+                ],
+                "starter": "On the one hand, William Harvey made a momentous breakthrough in Renaissance medicine because..."
+              },
+              "limitations": {
+                "title": "Fierce Resistance & Zero Treatment Impact (Limitations)",
+                "points": [
+                  "Harvey’s discovery did NOT lead to a single new medical treatment, cure, or successful surgical procedure during his lifetime.",
+                  "Could not see microscopic capillaries connecting arteries and veins; Malpighi only proved them in 1661 using microscopes.",
+                  "Physicians ridiculed him as a \"circulator\" (quack), and doctors continued bloodletting with leeches for another 200 years."
+                ],
+                "starter": "However, the practical significance of Harvey’s discovery for sick patients was limited because..."
+              },
+              "synthesis_prompt": "Write a balanced GCSE exam paragraph explaining why Harvey’s discovery was a turning point yet had little immediate impact on treatments.",
+              "synthesis_connectives": [
+                "Harvey’s discovery was a turning point because...",
+                "By applying mechanical calculations, he proved...",
+                "Consequently, this disproved Galen’s idea that...",
+                "However, his practical impact was delayed because...",
+                "Therefore, his significance was theoretical rather than clinical..."
+              ],
+              "model_answer": "On the one hand, William Harvey made a momentous scientific breakthrough by discovering the true mechanics of blood circulation, completely dismantling 1,400 years of Galenic physiology. In De Motu Cordis (1628), Harvey proved that the heart acts as a muscular mechanical pump driving blood in a continuous, one-way circular loop around the body. Galen had taught that the liver perpetually manufactures new blood from digested food, which is consumed as fuel by body tissues. Harvey used mathematical calculations to prove this was physically impossible: the heart pumped approximately 540 pints of blood per hour, more than three times the weight of an average man. Through careful vivisection of cold-blooded animals and simple tourniquet experiments on living human arms, Harvey demonstrated that valves in veins only permit blood to flow toward the heart, proving that blood must be recycled continuously.<br><br>However, the practical significance of Harvey’s discovery for sick patients was virtually zero during his lifetime. Understanding that blood circulated did not give physicians the ability to cure disease or stop deadly infections. Because blood types and transfusion safety were unknown, early attempts at transfusion killed patients and were promptly banned. In fact, despite Harvey conclusively proving that the body contains a finite, precious volume of blood, doctors—and Harvey himself—continued to prescribe aggressive bloodletting as a standard treatment for the next two centuries. Furthermore, conservative physicians ridiculed Harvey as a 'circulator' (a derogatory Latin term meaning quack), and he lost many private patients who thought his theories were absurd. Therefore, while Harvey laid the indispensable foundation for modern cardiovascular physiology, his discovery was purely theoretical and saved no lives during the Renaissance."
+            }
+          ]
         },
         {
           "id": "lesson_2_5",
@@ -43109,7 +43253,43 @@
           "inquiry_question": "Why did the Great Plague of 1665 demonstrate the persistent failure of Renaissance scientific advances to improve medical treatments for epidemic disease?",
           "card_image": "/images/great_plague_1665_broadside.jpg",
           "card_position": "center 25%",
-          "hero_image": "/images/great_plague_1665_broadside.jpg"
+          "hero_image": "/images/great_plague_1665_broadside.jpg",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "The Great Plague of 1665: Municipal Quarantine vs Medical Stagnation",
+              "question": "‘Responses to the Great Plague of 1665 showed significant change compared to the Black Death of 1348.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "The Great Plague of 1665: Municipal Quarantine vs Medical Stagnation",
+              "instruction": "GCSE Analytical Assessment: Evaluate whether responses to the Great Plague showed greater change or continuity compared to the Black Death.",
+              "advancement": {
+                "title": "Municipal Public Health Organization (Change)",
+                "points": [
+                  "The Lord Mayor and Aldermen strictly enforced systematic municipal quarantine: padlocking infected houses for 28 days with red crosses and watchmen.",
+                  "Weekly parish Bills of Mortality recorded exact casualties, representing early statistical epidemiology.",
+                  "Banned public assemblies, closed theatres, and enforced midnight burials in mass lime pits outside city walls."
+                ],
+                "starter": "On the one hand, responses in 1665 showed significant change because..."
+              },
+              "limitations": {
+                "title": "Medical Ignorance & Superstition (Continuity)",
+                "points": [
+                  "Physicians and public were completely ignorant of the bacterium Yersinia pestis; killing 200,000 cats and dogs actually caused the rat flea population to explode.",
+                  "Enduring reliance on miasma: plague doctor beak masks, smoking tobacco, carrying pomanders, and burning pitch in streets.",
+                  "Treatments were completely useless: strapping plucked chickens to buboes, quack plague water, and continuing medieval bloodletting."
+                ],
+                "starter": "On the other hand, there was almost complete continuity in medical understanding because..."
+              },
+              "synthesis_prompt": "Write a balanced GCSE exam paragraph evaluating whether responses to the Great Plague showed more change or continuity compared to 1348.",
+              "synthesis_connectives": [
+                "On the one hand, municipal organization showed change because...",
+                "For example, local authorities enforced...",
+                "On the other hand, there was complete continuity in...",
+                "Consequently, treatments remained...",
+                "Overall, while civic methods progressed..."
+              ],
+              "model_answer": "On the one hand, responses to the Great Plague of 1665 showed significant change compared to the 1348 Black Death in terms of organized municipal administration and public health policy. The Lord Mayor of London and Court of Aldermen enforced systematic, centralized regulations to contain the epidemic. Infected houses were padlocked and boarded up for 28 days, marked with a painted red cross and 'Lord have mercy upon us', and guarded day and night by parish watchmen to enforce quarantine. Large public assemblies, theatrical plays, and traditional funerals were banned, and mass plague pits were dug outside city walls. Furthermore, the parish-by-parish recording of deaths in weekly Bills of Mortality allowed authorities to track the geographic spread of the epidemic, representing an early form of statistical epidemiology that was entirely absent during the Black Death.<br><br>On the other hand, there was almost complete continuity in medical understanding, diagnosis, and treatment between 1348 and 1665. Because bacteria and microbes were completely unknown, physicians and magistrates still blamed atmospheric miasma (poisonous air) and divine wrath. In a catastrophic error born of the miasma theory, authorities ordered the slaughter of over 40,000 dogs and 200,000 cats, which eliminated the natural predators of black rats and allowed the flea-infested rodent population to explode. Furthermore, medical treatments remained superstitious and ineffective: doctors prescribed smoking tobacco to ward off bad air, strapped plucked chickens or dried toads to swollen buboes, and charged vast sums for useless herbal 'plague water'. Consequently, over 100,000 Londoners died in a single year, proving that while municipal governance progressed, medical science remained trapped in medieval ignorance."
+            }
+          ]
         },
         {
           "id": "lesson_3_1",
@@ -44093,7 +44273,42 @@
           "banner_position": "center 20%",
           "card_position": "center 20%",
           "hero_image": "/images/pasteur_laboratory.jpg",
-          "inquiry_question": "Why did it take over two decades for British doctors to accept Louis Pasteur’s Germ Theory?"
+          "inquiry_question": "Why did it take over two decades for British doctors to accept Louis Pasteur’s Germ Theory?",
+          "tasks": [
+            {
+              "type": "written",
+              "tariff": "Question 3: Explain One Difference [4 marks]",
+              "topic": "Edexcel Paper 1 (Section B) • Question 3 Practice",
+              "question": "Explain one way in which ideas about the cause of disease in the late nineteenth century (c1860–c1890) were different from ideas in the Renaissance (c1500–c1700). [4 marks]",
+              "clue": "Contrast Pasteur and Koch’s laboratory discovery that specific microscopic bacteria cause disease with the persistent Renaissance belief in miasma and spontaneous generation.",
+              "starter": "One way ideas about the cause of disease were different was... In the Renaissance (c1500–c1700), physicians believed... In contrast, in the late nineteenth century (c1860–c1890), Pasteur and Koch...",
+              "model": "One way ideas about the cause of disease were different was the understanding of what actually caused sickness. In the Renaissance (c1500–c1700), physicians still believed in ancient, unproven theories like **miasma** (bad air emanating from decaying organic matter) and **spontaneous generation**, believing that rotting filth naturally created disease. In contrast, in the late nineteenth century (c1860–c1890), Louis Pasteur’s **Germ Theory (1861)** and Robert Koch’s work on specific bacteria proved that specific living microorganisms (bacteria) in the air and water entered the body to cause disease, such as *Mycobacterium tuberculosis* in 1882. Therefore, medical ideas changed completely from vague beliefs in poisonous air to laboratory-proven biological science that identified specific bacterial pathogens."
+            },
+            {
+              "type": "two_sided_argument",
+              "topic": "Pasteur vs Koch in Revolutionizing Medical Science",
+              "question": "‘Louis Pasteur’s Germ Theory was more important than Robert Koch’s discovery of specific bacteria in advancing medical understanding c1860–c1890.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "Louis Pasteur vs Robert Koch: Theoretical Foundation vs Diagnostic Precision",
+              "instruction": "GCSE Evaluative Assessment: Weigh the relative importance of Louis Pasteur’s Germ Theory against Robert Koch’s bacteriological methodology in changing the understanding of disease causes.",
+              "advancement": {
+                "title": "Louis Pasteur (Theoretical Foundation)",
+                "points": [
+                  "Swan-neck flask experiment (1861) conclusively destroyed the ancient theory of Spontaneous Generation.",
+                  "Published Germ Theory (1861), providing the overarching scientific concept that microorganisms cause decay and contagious human illness.",
+                  "Disproved miasma and humoural theory, inspiring Joseph Lister to invent antiseptic surgery and developing laboratory-attenuated vaccines (rabies 1885)."
+                ],
+                "starter": "On the one hand, Louis Pasteur was the decisive turning point because..."
+              },
+              "limitations": {
+                "title": "Robert Koch (Practical Forensic Bacteriology)",
+                "points": [
+                  "Pasteur was a chemist who failed to identify specific human pathogens, leaving British doctors like Henry Bastian skeptical through the 1870s.",
+                  "Koch developed solid agar jelly culture plates, synthetic aniline staining dyes, and microphotography to isolate specific microbes.",
+                  "Discovered the specific bacteria for anthrax (1876), tuberculosis (1882), and cholera (1883), establishing the Four Postulates."
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "lesson_3_2",
@@ -45063,7 +45278,33 @@
           "banner": "/images/edward_jenner.jpg",
           "card_image": "/images/edward_jenner.jpg",
           "hero_image": "/images/edward_jenner.jpg",
-          "inquiry_question": "Why did Edward Jenner’s smallpox vaccine face ferocious opposition despite proving scientifically successful?"
+          "inquiry_question": "Why did Edward Jenner’s smallpox vaccine face ferocious opposition despite proving scientifically successful?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "Jenner’s Significance: Medical Revolution vs Historical Limitations",
+              "question": "‘Edward Jenner’s development of the smallpox vaccine was the most significant breakthrough in the prevention of disease in the period c1700–c1900.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "Edward Jenner’s Smallpox Vaccine: Revolutionary Milestone vs One-Off Limitation",
+              "instruction": "GCSE Evaluative Assessment: Evaluate whether Jenner’s smallpox vaccination was the most significant turning point in disease prevention c1700–c1900.",
+              "advancement": {
+                "title": "Revolutionary Breakthrough (Change & Impact)",
+                "points": [
+                  "Created the world’s first safe, reproducible scientific vaccine using benign cowpox, eliminating the deadly risks of inoculation.",
+                  "Triggered the first major state health legislation (1840 ban on inoculation, 1852 Compulsory Vaccination Act), breaking laissez-faire.",
+                  "Saved millions of lives internationally, culminating in the global eradication of smallpox by the World Health Organization in 1980."
+                ],
+                "starter": "On the one hand, Jenner’s smallpox vaccine was an unprecedented turning point because..."
+              },
+              "limitations": {
+                "title": "Severe Limitations & Stagnation (Continuity)",
+                "points": [
+                  "Jenner could not explain why cowpox worked; without Germ Theory (1861), vaccination remained an isolated \"one-off\" discovery.",
+                  "He could not adapt the method to prevent other lethal killers like cholera, typhus, or tuberculosis.",
+                  "Faced fierce resistance from commercial inoculators, religious preachers, and the Anti-Vaccination League; smallpox was not eradicated in Britain until after 1871."
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "lesson_3_3",
@@ -46024,7 +46265,33 @@
           "hero_image": "/images/nightingale.jpg",
           "banner_position": "center 15%",
           "card_position": "center 15%",
-          "inquiry_question": "How did Florence Nightingale transform British hospitals from Victorian death houses into clean, scientific institutions?"
+          "inquiry_question": "How did Florence Nightingale transform British hospitals from Victorian death houses into clean, scientific institutions?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "Sanitary Reform vs Medical Science in Hospital Improvement",
+              "question": "‘Florence Nightingale’s sanitary reforms were the main reason for the improvement in hospital care in the nineteenth century.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "Nightingale’s Sanitary Discipline vs Scientific Bacteriology",
+              "instruction": "GCSE Evaluative Assessment: Weigh the relative importance of Florence Nightingale’s sanitary reforms against scientific breakthroughs in improving hospital care in the 19th century.",
+              "advancement": {
+                "title": "Nightingale & Sanitary Reform (Change)",
+                "points": [
+                  "Proved at Scutari (1854–56) that flushing sewers and boiling bedding cut hospital mortality from 42% to 2%.",
+                  "Revolutionized hospital architecture through the Pavilion Plan (cross-ventilation, wipeable tiles, 8ft bed spacing).",
+                  "Professionalized nursing at St Thomas’ Hospital (1860), transforming nurses from drunken drudges into trained medical staff."
+                ],
+                "starter": "On the one hand, Florence Nightingale was the decisive factor because..."
+              },
+              "limitations": {
+                "title": "Limitations & Alternative Factors",
+                "points": [
+                  "Nightingale rejected Germ Theory and clung to miasma; she did not understand the true bacterial cause of wound sepsis.",
+                  "Mary Seacole provided vital battlefield trauma care and herbal remedies but was excluded from official military reform.",
+                  "Joseph Lister’s antiseptic carbolic spray (1865) was required to conquer hospital gangrene during surgery itself."
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "lesson_3_4",
@@ -47006,7 +47273,33 @@
           "hero_image": "/images/james_young_simpson_portrait.jpg",
           "banner_position": "center 15%",
           "card_position": "center 15%",
-          "inquiry_question": "Why did the discovery of anaesthetics initially make surgical operations more dangerous rather than safer?"
+          "inquiry_question": "Why did the discovery of anaesthetics initially make surgical operations more dangerous rather than safer?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "Simpson vs Lister in Revolutionizing 19th-Century Surgery",
+              "question": "‘Joseph Lister’s antiseptic techniques were more significant than James Simpson’s discovery of chloroform in revolutionizing nineteenth-century surgery.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "Simpson’s Chloroform vs Lister’s Antiseptics: Pain Relief vs Infection Control",
+              "instruction": "GCSE Evaluative Assessment: Weigh the relative importance of James Simpson’s chloroform against Joseph Lister’s carbolic acid in making surgery safer c1840–c1900.",
+              "advancement": {
+                "title": "Joseph Lister & Antiseptics (Decisive Lifesaver)",
+                "points": [
+                  "Applied Pasteur’s Germ Theory to surgery in 1865, using carbolic acid on James Greenlees’ compound fracture to eliminate hospital gangrene.",
+                  "Reduced surgical mortality from 45.7% to 15% in Glasgow, proving infection was microbial rather than spontaneous.",
+                  "Paved the way for modern aseptic surgery (steam autoclaves, sterile gowns, rubber gloves)."
+                ],
+                "starter": "On the one hand, Joseph Lister was the decisive surgical turning point because..."
+              },
+              "limitations": {
+                "title": "James Simpson & Chloroform (Pain Relief)",
+                "points": [
+                  "Conquered surgical agony in 1847, allowing surgeons to operate on complex internal conditions.",
+                  "Overcame religious opposition through Queen Victoria’s endorsement in 1853.",
+                  "However, chloroform initially caused the disastrous \"Black Period\" of surgery, increasing infection deaths because surgeons operated deeper with dirty hands."
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "lesson_3_5",
@@ -47978,7 +48271,33 @@
           "hero_image": "/images/john_snow.jpg",
           "banner_position": "center 15%",
           "card_position": "center 15%",
-          "inquiry_question": "Why did the British government abandon its laissez-faire policy to pass the compulsory 1875 Public Health Act?"
+          "inquiry_question": "Why did the British government abandon its laissez-faire policy to pass the compulsory 1875 Public Health Act?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "Scientific Proof vs Government Intervention in Public Health Reform",
+              "question": "‘The work of John Snow was the main reason for improvements in public health in the nineteenth century.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "John Snow’s Scientific Detective Work vs The Compulsory 1875 Public Health Act",
+              "instruction": "GCSE Evaluative Assessment: Weigh the relative importance of John Snow’s 1854 discovery against compulsory government legislation (1875 Public Health Act) in improving 19th-century public health.",
+              "advancement": {
+                "title": "John Snow & Scientific Proof (Catalyst)",
+                "points": [
+                  "Proved cholera was water-borne through the 1854 Broad Street spot map and removing the pump handle.",
+                  "Conducted the \"Grand Experiment\" comparing Lambeth (clean water, 5 deaths/10k) vs Southwark & Vauxhall (sewage water, 71 deaths/10k).",
+                  "Disproved miasma theory, providing the scientific justification for building underground sewers and filtering water."
+                ],
+                "starter": "On the one hand, John Snow was the decisive catalyst because..."
+              },
+              "limitations": {
+                "title": "Government Compulsion & Bazalgette (Implementation)",
+                "points": [
+                  "The Board of Health rejected Snow’s findings in 1855; his work had little immediate impact on national policy.",
+                  "The Great Stink of 1858 and the 1867 working-class vote were required to compel Parliament to fund Bazalgette’s London sewers.",
+                  "The 1875 Public Health Act was compulsory, forcing councils nationwide to provide clean water, sewers, and medical inspectors."
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "lesson_4_1",
@@ -48892,7 +49211,36 @@
             }
           ],
           "extra_videos": [],
-          "inquiry_question": "How did unlocking the double helix and mapping the human genome revolutionize our understanding of disease causation?"
+          "inquiry_question": "How did unlocking the double helix and mapping the human genome revolutionize our understanding of disease causation?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "Watson & Crick vs Rosalind Franklin: Theoretical Model vs Experimental Evidence",
+              "question": "‘Rosalind Franklin’s X-ray crystallography was more important than Watson and Crick’s model-building in the discovery of the structure of DNA.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "Rosalind Franklin vs Watson & Crick: Empirical Proof vs Molecular Architecture",
+              "instruction": "GCSE Evaluative Assessment: Weigh the relative significance of Rosalind Franklin’s experimental X-ray data against Watson and Crick’s theoretical three-dimensional model in unlocking DNA.",
+              "advancement": {
+                "title": "Rosalind Franklin (Empirical Experimental Evidence)",
+                "points": [
+                  "Franklin was a world-class physical chemist whose meticulous X-ray crystallography produced Photograph 51 in May 1952 after 62 hours of exposure.",
+                  "Photograph 51 provided the vital mathematical dimensions (3.4 nm helical repeat, 10 base pairs per turn) that proved DNA was a double helix, not a triple chain.",
+                  "Without Franklin’s unauthorized X-ray diffraction data shown by Wilkins, Watson and Crick were stalled with incorrect triple-helix models with bases pointing outward."
+                ],
+                "starter": "On the one hand, Rosalind Franklin was the essential foundation of the discovery because..."
+              },
+              "limitations": {
+                "title": "Watson & Crick (Theoretical Synthesis & Base-Pairing)",
+                "points": [
+                  "Franklin was cautious and focused strictly on empirical data, refusing to publish theoretical models until she had accumulated complete mathematical proof.",
+                  "Watson and Crick synthesized chemistry, genetics, and physics, testing cardboard and sheet-metal cutouts to deduce the complementary base-pairing rule (A-T, C-G).",
+                  "Their 1953 double helix model did not merely depict a shape; it explained the biological mechanism of how genetic code unzips and replicates during cell division."
+                ],
+                "starter": "On the other hand, Watson and Crick made the decisive conceptual leap because..."
+              },
+              "connectives": "Consequently &bull; Furthermore &bull; This directly resulted in &bull; However &bull; While Franklin provided the empirical proof, Watson and Crick deduced...",
+              "model": "A student arguing that Franklin was more important would emphasize that Watson and Crick were completely deadlocked until Maurice Wilkins showed them Photograph 51 without her permission in January 1953. Watson himself admitted that seeing the distinct X-cross pattern gave him the exact helical dimensions required. Conversely, a student arguing for Watson and Crick would highlight that having an X-ray image is not the same as solving the chemical mechanism; Watson and Crick deduced the hydrogen bonding between Adenine-Thymine and Cytosine-Guanine, unlocking how genetic information replicates. The strongest historical judgement concludes that while Franklin provided the indispensable forensic foundation, Watson and Crick’s conceptual synthesis of base pairing transformed a physical photograph into the foundational breakthrough of modern biology."
+            }
+          ]
         },
         {
           "id": "lesson_4_2",
@@ -49818,7 +50166,36 @@
             }
           ],
           "extra_videos": [],
-          "inquiry_question": "How did the shift toward lifestyle diseases and the rise of diagnostic scanning transform 20th-century medicine?"
+          "inquiry_question": "How did the shift toward lifestyle diseases and the rise of diagnostic scanning transform 20th-century medicine?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "High-Tech Diagnostic Scanners vs Public Lifestyle Campaigns",
+              "question": "‘High-tech diagnostic machines were more important than public health lifestyle campaigns in combating disease in Britain c1900–present.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "Diagnostic Imaging Technology vs Preventative Lifestyle Education",
+              "instruction": "GCSE Evaluative Assessment: Weigh the relative impact of technological diagnostics (X-rays, CT, MRI) against government lifestyle education (anti-smoking, diet, alcohol) in improving modern British health.",
+              "advancement": {
+                "title": "High-Tech Diagnostics (Clinical Precision & Early Detection)",
+                "points": [
+                  "Wilhelm Röntgen’s X-rays (1895) and mobile units in WWI allowed immediate, non-invasive detection of bone fractures and shrapnel.",
+                  "Godfrey Hounsfield’s CT scanner (1971) and MRI scanning visualized internal soft tissues, brain tumors, and strokes without dangerous exploratory surgery.",
+                  "Automated blood testing and fiber-optic endoscopes allowed early detection of carcinomas, vastly improving surgical cure rates."
+                ],
+                "starter": "On the one hand, diagnostic technology was revolutionary because..."
+              },
+              "limitations": {
+                "title": "Public Lifestyle Campaigns (Root-Cause Prevention)",
+                "points": [
+                  "Diagnostic scanners only detect illness after damage has already occurred; they do not prevent chronic conditions from developing.",
+                  "Chronic lifestyle illnesses (heart disease, lung cancer, type 2 diabetes) are driven by consumer behavior: smoking, alcohol, and poor diet.",
+                  "Government public health campaigns (smoking bans, plain packaging, alcohol units, sugar taxes) tackle root causes across millions of citizens."
+                ],
+                "starter": "On the other hand, preventative lifestyle campaigns were more significant because..."
+              },
+              "connectives": "Consequently &bull; Furthermore &bull; In particular &bull; However &bull; While diagnostic imaging revolutionized treatment precision, lifestyle education addressed...",
+              "model": "A student arguing that diagnostic technology was more important would focus on how X-rays, CT scanners, and MRI machines permanently eliminated blind exploratory surgery. Before Hounsfield’s 1971 CT scanner, doctors had to cut into living skulls and abdomens simply to see what was wrong; scanning allowed pinpoint surgical excision and early tumor diagnosis. Conversely, a student arguing for lifestyle campaigns would demonstrate that scanning only identifies diseases after irreversible damage has taken place. The primary killers of the modern era—coronary heart disease, lung cancer, and diabetes—are caused by behavioral factors like smoking, poor diet, and alcohol. Government intervention, such as the 2007 public smoking ban and anti-obesity guidelines, prevents millions from falling ill in the first place. The most sophisticated historical judgement concludes that while diagnostic machines revolutionized clinical survival for individuals, public lifestyle campaigns exerted a vastly greater statistical impact on national life expectancy by preventing chronic disease at its societal root."
+            }
+          ]
         },
         {
           "id": "lesson_4_3",
@@ -50738,7 +51115,36 @@
             }
           ],
           "extra_videos": [],
-          "inquiry_question": "How did synthetic magic bullets and the foundation of the NHS dismantle medical inequality in Britain?"
+          "inquiry_question": "How did synthetic magic bullets and the foundation of the NHS dismantle medical inequality in Britain?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "The Foundation of the NHS: Universal Healthcare Triumph vs Financial Burden",
+              "question": "‘The establishment of the National Health Service in 1948 was the most significant turning point in medical care in the period c1900–present.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "The 1948 National Health Service: Social Revolution vs Economic Strain",
+              "instruction": "GCSE Evaluative Assessment: Weigh the social impact of the NHS in abolishing healthcare inequality against the economic and structural challenges of state-funded medicine.",
+              "advancement": {
+                "title": "The National Health Service (Social Revolution & Universal Care)",
+                "points": [
+                  "Prior to 1948, millions of working-class women and children were excluded from the 1911 National Insurance Act, suffering untreated illnesses due to poverty.",
+                  "Aneurin Bevan established healthcare free at the point of delivery financed by central taxation, providing universal access to GPs, hospitals, dentistry, and spectacles.",
+                  "The NHS centralized hospital administration, raised surgical standards across municipal infirmaries, and eradicated the terror of medical bankruptcy."
+                ],
+                "starter": "On the one hand, the establishment of the NHS was a momentous turning point because..."
+              },
+              "limitations": {
+                "title": "Limitations & Alternative Breakthroughs (Magic Bullets & Economic Crises)",
+                "points": [
+                  "Healthcare access is useless without effective cures: scientific discoveries like Salvarsan 606 (1909), Prontosil (1932), and Penicillin (1940) provided the medicines that saved lives.",
+                  "Huge public demand for dentures and spectacles overwhelmed state budgets, forcing the introduction of prescription charges in 1951 and Bevan’s resignation.",
+                  "Bevan had to compromise with the BMA by \"stuffing their mouths with gold,\" preserving private beds for wealthy consultants inside NHS hospitals."
+                ],
+                "starter": "On the other hand, the NHS had limitations and relied on scientific breakthroughs because..."
+              },
+              "connectives": "Consequently &bull; Furthermore &bull; In particular &bull; However &bull; While the NHS democratized access, scientific pharmacology provided the cures...",
+              "model": "A student arguing that the NHS was the decisive turning point would focus on the profound transformation of healthcare access. Before 1948, healthcare was a commercial commodity; working-class families who could not afford private doctor fees or voluntary hospital subscriptions delayed treatment, leading to preventable deaths. Bevan’s NHS established that healthcare was a universal civil right free at the point of need. Conversely, a student arguing for alternative factors would demonstrate that state organization cannot cure disease without pharmacological breakthroughs. Paul Ehrlich’s Salvarsan 606 (1909), Domagk’s Prontosil (1932), and Florey and Chain’s penicillin (1940) created the actual cures that made NHS hospitals effective. Furthermore, the 1951 introduction of prescription charges proved that free care faced severe economic limits. The most sophisticated conclusion argues that while scientific magic bullets provided the medical tools, the NHS was the ultimate turning point because it ensured those life-saving tools reached every British citizen regardless of wealth."
+            }
+          ]
         },
         {
           "id": "lesson_4_4",
@@ -51657,7 +52063,36 @@
             }
           ],
           "extra_videos": [],
-          "inquiry_question": "How did an accidental laboratory mold transform into humanity’s first mass-produced antibiotic wonder drug?"
+          "inquiry_question": "How did an accidental laboratory mold transform into humanity’s first mass-produced antibiotic wonder drug?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "Alexander Fleming vs Florey & Chain: Accidental Genius vs Biochemical Science",
+              "question": "‘Alexander Fleming’s accidental discovery was more important than the work of Florey and Chain in the development of penicillin.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "Alexander Fleming vs Howard Florey & Ernst Chain: Discovery vs Industrial Purification",
+              "instruction": "GCSE Evaluative Assessment: Weigh the relative importance of Alexander Fleming’s 1928 observation against Florey, Chain, and Heatley’s biochemical purification and clinical trials.",
+              "advancement": {
+                "title": "Alexander Fleming (The Serendipitous Catalyst)",
+                "points": [
+                  "Fleming’s acute observation in September 1928 spotted the translucent halo where staphylococcus colonies dissolved around Penicillium notatum.",
+                  "He recognized that penicillin killed bacteria without harming human white blood cells, a crucial insight forged during his WWI medical service.",
+                  "He published his findings in 1929; without his published paper and culture samples, Florey and Chain would never have begun their research."
+                ],
+                "starter": "On the one hand, Alexander Fleming was the essential catalyst because..."
+              },
+              "limitations": {
+                "title": "Florey, Chain & Heatley (Biochemical Purification & Clinical Proof)",
+                "points": [
+                  "Fleming abandoned penicillin after 1929 because he was a bacteriologist who could not chemically isolate, purify, or stabilize the drug.",
+                  "Ernst Chain used freeze-drying to purify brown penicillin powder, while Norman Heatley engineered apparatus from bedpans and dairy churns.",
+                  "The Oxford team proved penicillin cured living animals (1940 mice trial), conducted human clinical trials (Albert Alexander), and secured US mass production for D-Day."
+                ],
+                "starter": "On the other hand, Florey and Chain made penicillin a practical medicine because..."
+              },
+              "connectives": "Consequently &bull; Furthermore &bull; In particular &bull; However &bull; While Fleming observed the mold, Florey and Chain transformed it into...",
+              "model": "A student arguing that Fleming was more important would emphasize that without his acute observational skill in September 1928, the mold would have been washed away in disinfectant. Fleming possessed the insight from his WWI battlefield service to recognize that the mold destroyed bacteria without harming human tissue, and his 1929 paper preserved the discovery for future scientists. Conversely, a student arguing for Florey and Chain would prove that Fleming’s discovery was medically useless for a decade because he failed to purify or stabilize the drug. Howard Florey, Ernst Chain, and Norman Heatley overcame immense biochemical challenges, freeze-drying the active substance, proving it cured infected mice in May 1940, and conducting the first human trial on Albert Alexander in 1941. Furthermore, Florey travelled to the USA in 1941 to orchestrate industrial deep-tank fermentation. The most persuasive historical judgement concludes that while Fleming provided the accidental spark, Florey and Chain’s team science and transatlantic industrialization were vastly more important, as they transformed an unstable laboratory curiosity into a mass-produced wonder drug that saved millions of lives."
+            }
+          ]
         },
         {
           "id": "lesson_4_5",
@@ -52582,7 +53017,36 @@
             }
           ],
           "extra_videos": [],
-          "inquiry_question": "How did the battle against lung cancer drive modern high-tech oncology and permanently dismantle government laissez-faire?"
+          "inquiry_question": "How did the battle against lung cancer drive modern high-tech oncology and permanently dismantle government laissez-faire?",
+          "tasks": [
+            {
+              "type": "two_sided_argument",
+              "topic": "Government Regulation vs Medical Treatments in Combating Lung Cancer",
+              "question": "‘Government public health legislation was more important than advances in medical treatment in the fight against lung cancer c1950–present.’ How far do you agree? Explain your answer [16+4 marks].",
+              "text": "Government Public Health Legislation vs Modern Clinical Oncology",
+              "instruction": "GCSE Evaluative Assessment: Weigh the impact of government anti-smoking legislation against technological medical treatments (CT scans, radiotherapy, chemotherapy, immunotherapy) in reducing lung cancer mortality.",
+              "advancement": {
+                "title": "Government Public Health Legislation (State Prevention)",
+                "points": [
+                  "Richard Doll and Austin Bradford Hill proved the statistical link between smoking and lung cancer in 1950, giving government the mandate to act.",
+                  "Government legislation systematically eliminated tobacco marketing: TV advertising banned (1965), health warnings on packs (1971), and plain packaging enforced (2016).",
+                  "The Health Act 2007 banned smoking in all enclosed public places and workplaces, protecting non-smokers and reducing adult smoking rates from 65% in 1950 to 13% today."
+                ],
+                "starter": "On the one hand, government public health intervention was the decisive factor because..."
+              },
+              "limitations": {
+                "title": "Advances in Medical Treatment (Clinical Oncology & Early Detection)",
+                "points": [
+                  "For citizens already suffering from lung cancer, government legislation came too late; clinical treatments provided the only hope of survival.",
+                  "Low-dose helical CT scanning and bronchoscopy allowed early detection before tumors metastasized to the brain or liver.",
+                  "Advanced treatments—minimally invasive robotic lobectomies, stereotactic radiotherapy, chemotherapy, and immunotherapy (pembrolizumab)—have significantly prolonged survival."
+                ],
+                "starter": "On the other hand, advances in medical treatments were vital because..."
+              },
+              "connectives": "Consequently &bull; Furthermore &bull; In particular &bull; However &bull; While clinical treatments improved survival for infected patients, legislative prevention stopped millions...",
+              "model": "A student arguing that government legislation was more important would emphasize that lung cancer remains notoriously difficult to cure, with five-year survival rates hovering around 16–20%. Therefore, prevention is far more effective than clinical treatment. Following Doll and Hill’s 1950 discovery, government systematically destroyed the market for cigarettes: banning television adverts in 1965, banning smoking in public places in 2007, and enforcing standardized plain packaging in 2016. This compulsory state action reduced adult smoking rates from 65% in 1950 to under 13% today, preventing hundreds of thousands of cancers from ever developing. Conversely, a student arguing for medical treatments would demonstrate that for individuals who already have tumors, legislation is useless; their lives depend on technological oncology. Low-dose CT scans, flexible bronchoscopes, robotic lobectomies, and modern immunotherapy drugs like pembrolizumab have given terminal patients extra years of life. The most sophisticated historical judgement concludes that while high-tech oncology represents the cutting edge of science, government legislation was vastly more important because it tackled the root environmental cause, achieving a profound statistical reduction in mortality that hospitals could never match."
+            }
+          ]
         },
         {
           "id": "lesson_5_1",
@@ -55301,7 +55765,35 @@
             }
           ],
           "extra_videos": [],
-          "inquiry_question": "How did industrialized weaponry and manured soil create terrifying new forms of wound trauma and infection?"
+          "inquiry_question": "How did industrialized weaponry and manured soil create terrifying new forms of wound trauma and infection?",
+          "tasks": [
+            {
+              "type": "because_but_so",
+              "title": "The 'Because, But, So' Strategy: Battlefield Trauma & Protective Innovation",
+              "subtitle": "Hochman Analytical Framework • Rehearsing Causal, Complex & Consequential Syntax",
+              "topic": "Medical Response to Western Front Weaponry: Protective Innovation vs Battlefield Reality",
+              "instruction": "Complete each sentence using precise historical evidence from Acts 1–5 to demonstrate causal reasoning, historical complexity, and long-term significance before tackling the exam questions.",
+              "stem": "In 1915–1916, the British Army introduced chemical respirators (the PH hood) and the Brodie manganese steel helmet to protect troops from industrialised trench trauma...",
+              "because": {
+                "prompt": "...BECAUSE...",
+                "guidance": "Causal Explanation: Explain the precise lethal threat (phosgene gas / artillery shrapnel) that forced this emergency technological response.",
+                "placeholder": "Explain the lethal military threat that made these innovations necessary...",
+                "model": "BECAUSE inhaling chlorine and phosgene gas caused fatal chemical pulmonary edema (drowning in lung secretions), while overhead high-explosive shrapnel explosions were causing a catastrophic 58% of all battlefield casualties, with unarmoured soldiers suffering fatal penetrating brain trauma."
+              },
+              "but": {
+                "prompt": "...BUT...",
+                "guidance": "Nuance & Critical Limitation: Explain the severe battlefield flaws, combat failures, or untackled trauma that remained.",
+                "placeholder": "Explain the practical combat limitations, design flaws, or untackled bacterial infections...",
+                "model": "BUT the suffocating flannel PH hood lacked an exhaust valve, trapping carbon dioxide and fogging the glass goggles to leave soldiers blind during bombardment, while the Brodie helmet offered zero protection against deep gas gangrene infections ground into tissue by shrapnel, nor could masks prevent mustard gas from blistering skin through woolen uniforms."
+              },
+              "so": {
+                "prompt": "...SO...",
+                "guidance": "Consequence & Lasting Significance: Explain the ripple effect on military medicine, surgical protocol, or survival rates.",
+                "placeholder": "Explain how this forced the development of the Small Box Respirator and new surgical protocols...",
+                "model": "SO the British War Office was compelled to rapidly engineer the Small Box Respirator with charcoal filtration in 1916, reducing gas fatalities to under 3%, while military surgeons standardized aggressive wound debridement and Carrel-Dakin antiseptic irrigation across Casualty Clearing Stations to defeat anaerobic soil bacteria."
+              }
+            }
+          ]
         },
         {
           "id": "lesson_5_4",

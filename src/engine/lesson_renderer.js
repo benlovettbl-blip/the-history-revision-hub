@@ -8096,14 +8096,15 @@ export function renderLesson(lesson) {
           : '';
 
         const isWorkbookTask =
-          isKs3 ||
-          (!lesson.exam_practice && !isGCSE) ||
-          lesson.tasks.some(
-            (t) =>
-              t.type === 'extended_writing' ||
-              (t.topic && (t.topic.includes('Marks') || t.topic.includes('Disciplinary'))) ||
-              (t.question && t.question.includes('Explain why')),
-          );
+          !lesson.exam_practice &&
+          (isKs3 ||
+            (!isGCSE &&
+              lesson.tasks.some(
+                (t) =>
+                  t.type === 'extended_writing' ||
+                  (t.topic && (t.topic.includes('Marks') || t.topic.includes('Disciplinary'))) ||
+                  (t.question && t.question.includes('Explain why')),
+              )));
 
         const tasksCategoryBadge = isWorkbookTask
           ? `<span style="background: #dbeafe; color: #1e40af; padding: 1.5px 7px; border-radius: 4px; font-weight: 800;"><i class="fa-solid fa-book-open" style="margin-right: 4px;"></i> PUPIL WORKBOOK ACTIVITY</span>`
