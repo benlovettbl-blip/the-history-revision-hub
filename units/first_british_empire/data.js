@@ -1,7 +1,4 @@
-// The First British Empire (1600–1783)
-// Complete 5-Stage Chronological Inquiry Spine & 5-Block Narrative Architecture
-
-const first_british_empire_data = {
+export default {
   "id": "first_british_empire",
   "title": "The First British Empire (1600–1783)",
   "short_title": "The First British Empire",
@@ -7860,15 +7857,15 @@ const first_british_empire_data = {
           "model_answer": "Cinematic Discussion Focus: The trailer dramatises how an official ledger and written freedom certificate transformed vulnerable human beings from hunted 'fugitive property' into legally recognised free British subjects, demonstrating how literacy and documentation became tools of liberation."
         },
         {
-          "id": "CHRPY1aBPug",
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=CHRPY1aBPug",
-          "title": "Liberty! The American Revolution: Blows Must Decide | PBS",
-          "duration": "53 mins 00 secs",
+          "id": "ZFkq9oXcX48",
+          "url": "https://www.youtube.com/watch?v=ZFkq9oXcX48",
+          "title": "Liberty! Episode 2: Blows Must Decide (1774–1776) | PBS Documentary",
+          "duration": "58 mins 32 secs",
           "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 20:00–45:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Explores the outbreak of war at Lexington and Concord and the ideological birth of the American republic.",
-          "viewing_task": "[22:00] Recall: What happened on Lexington Green on 19 April 1775 ('the shot heard 'round the world')?\n[31:00] Explain: How did Thomas Paine's radical pamphlet 'Common Sense' transform a dispute over taxes into a crusade for total independence?\n[40:15] Challenge: How did French military and naval intervention under General Rochambeau seal British defeat at the Siege of Yorktown in 1781?",
-          "model_answer": "Recall: British regulars clashed with colonial minutemen, sparking a running battle along the road to Boston that began the Revolutionary War.\nExplain: Paine wrote in simple, fiery prose for common working people, arguing that it was absurd for a tiny island across the ocean to govern an entire continent, and that hereditary monarchy was inherently corrupt.\nChallenge: Without the French navy blockading the Chesapeake Bay to cut off British naval resupply, General Cornwallis would have been evacuated by sea; the Franco-American alliance transformed a colonial rebellion into an unwinnable global war for Britain."
+          "teacher_guidance": "Recommended Watch Window: 03:00–14:00 | Lesson Phase: Road to Independence | Tone Alert: Definitive PBS documentary dramatizing the First Continental Congress, Lexington and Concord, and the drafting of the 1776 Declaration.",
+          "viewing_task": "[08:15] Escalation to War: Why did King George III declare that the American colonies were in 'open rebellion' following the Olive Branch Petition?",
+          "model_answer": "King George III rejected any compromise with the colonists after Bunker Hill, declaring all colonial leaders traitors and ordering full military force to crush resistance, making full independence inevitable."
         }
       ],
       "tasks": [
@@ -8494,5 +8491,3 @@ const first_british_empire_data = {
   ],
   "homepage_background": "/images/first_british_empire/battle_of_plassey_1757.jpg"
 };
-
-export default first_british_empire_data;

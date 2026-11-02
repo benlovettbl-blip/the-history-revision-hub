@@ -1,4 +1,4 @@
-const australia_data = {
+export default {
   "homepage_background": "/images/francis_fowkes_sydney_cove_1788.jpg",
   "cover_image": "/images/prison_hulks.jpg",
   "id": "australia",
@@ -1088,15 +1088,15 @@ const australia_data = {
           "model_answer": "Recall: A master Tahitian star navigator and high priest who drew a map of over 70 Pacific islands and translated between European crews and Indigenous Pacific peoples.\nExplain: Australian Aboriginal languages belonged to entirely different, ancient language families unrelated to the Austronesian Polynesian languages of New Zealand and the Pacific.\nChallenge: Cook documented open, park-like landscapes deliberately created by millennia of sophisticated fire-stick burning, proving the land was actively managed and occupied rather than 'uncultivated wasteland'."
         },
         {
-          "id": "BDepKiFIt5A",
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=BDepKiFIt5A",
-          "title": "The Secret River (2015) | Extended Trailer (ABC / BBC)",
-          "duration": "2 mins 01 sec",
+          "id": "m_0UNKVKZOM",
+          "url": "https://www.youtube.com/watch?v=m_0UNKVKZOM",
+          "title": "Ten Canoes (2006) | Official Trailer (Rolf de Heer & Peter Djigirr)",
+          "duration": "1 mins 57 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:01 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Dramatisation of the violent clash over land ownership on the Australian frontier.",
-          "viewing_task": "[01:05] Cinematic Discussion Focus: How does the film contrast European concepts of fenced, private property with First Nations concepts of caring for country?",
-          "model_answer": "Cinematic Discussion Focus: The trailer visualises the fundamental ideological clash: British settlers mark boundaries with fences, crops, and guns, while the Dharug people regard the river and landscape as a living, sacred ancestral home that cannot be bought or owned."
+          "teacher_guidance": "Recommended Watch Window: 00:00–01:57 | Lesson Phase: First Nations Continuity | Tone Alert: Poetic, authentic portrayal of Arnhem Land Aboriginal society prior to European arrival, spoken in Yolngu Matha.",
+          "viewing_task": "[00:50] Cultural Continuity: How does the storytelling tradition shown in the film demonstrate that Aboriginal cultures were highly structured, deeply spiritual societies rather than an 'empty land' (terra nullius)?",
+          "model_answer": "The film illustrates that First Nations communities possessed rich, thousands-of-years-old oral histories, kinship laws, and sacred relationships with country, directly disproving European claims of terra nullius."
         },
         {
           "id": "1n6VJ5jq7zY",
@@ -3758,15 +3758,15 @@ const australia_data = {
           "model_answer": "Cinematic Discussion Focus: The film shows that on the colonial frontier, self-defence by an Aboriginal person against a white man was treated as murder; law and judicial trials functioned as instruments of colonial subjugation rather than impartial justice."
         },
         {
-          "id": "Z7_1avVKDwc",
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Z7_1avVKDwc",
-          "title": "First Australians: The Frontier Wars & Pemulwuy | SBS Documentary",
-          "duration": "53 mins 00 secs",
+          "id": "5hmPmjUzPTA",
+          "url": "https://www.youtube.com/watch?v=5hmPmjUzPTA",
+          "title": "The Australian Wars (2022) | Official Series Trailer (SBS / Rachel Perkins)",
+          "duration": "1 mins 15 secs",
           "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 25:00–48:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Essential First Nations testimony on Pemulwuy's military leadership.",
-          "viewing_task": "[28:00] Recall: What sparked the April 1789 smallpox epidemic (Galgala) that wiped out half the Eora population?\n[36:00] Explain: How did Pemulwuy organize alliances between different Aboriginal language groups to resist British pastoral expansion?\n[45:30] Challenge: Following Pemulwuy's death in 1802, what happened to his head, and what does this reveal about colonial attitudes toward resistance heroes?",
-          "model_answer": "Recall: An outbreak of smallpox swept through coastal clans; historians still debate whether it escaped from First Fleet medical vials, Macassan traders, or was deliberately spread.\nExplain: He united Bidjigal, Dharug, and Eora warriors, coordinating night attacks on isolated farms and burning maize crops to cut off food supplies to Sydney.\nChallenge: His severed head was pickled in spirits and sent to London to Sir Joseph Banks as a scientific curiosity, showing how colonial authorities treated First Nations resistance leaders as specimens rather than legitimate military adversaries."
+          "teacher_guidance": "Recommended Watch Window: 00:00–01:15 | Lesson Phase: Frontier Warfare Investigation | Tone Alert: Gripping, serious examination of the armed conflicts between British colonisers and First Nations warriors like Pemulwuy.",
+          "viewing_task": "[00:30] Conflict Dynamics: What evidence does filmmaker Rachel Perkins emphasize to show that the colonisation of Australia was an active, prolonged military war rather than a peaceful settlement?",
+          "model_answer": "Perkins highlights the deployment of British military regiments, coordinated frontier militias, fortified homesteads, and recorded casualty rates on both sides, confirming an organized, multi-decade frontier war."
         }
       ],
       "sources": [
@@ -5078,26 +5078,26 @@ const australia_data = {
           "model_answer": "Recall: Eleven armed stockmen roped together 28 unarmed Wirrayaraay elders, women, and children and slaughtered them without provocation.\nExplain: Colonial prosecutor John Plunkett took the case to a second trial under public outrage; it was the only time white perpetrators were executed for murdering Aboriginal people in colonial Australia.\nChallenge: Rather than stopping violence, the verdict caused pastoralists to conceal their crimes, turning to strychnine poison in flour and waterholes and swearing vows of silence to evade prosecution."
         },
         {
-          "id": "sYKBG1znk4A",
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=sYKBG1znk4A",
-          "title": "Sweet Country: Frontier Justice on Aboriginal Land | Official Trailer",
-          "duration": "2 mins 15 secs",
+          "id": "YuP8g_GQIgI",
+          "url": "https://www.youtube.com/watch?v=YuP8g_GQIgI",
+          "title": "The Nightingale (2018) | Official Trailer (Jennifer Kent)",
+          "duration": "2 mins 33 secs",
           "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Dramatic representation of frontier racism and institutional bias.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the cinematography frame the vast, unforgiving Australian outback as an active character in frontier struggles?",
-          "model_answer": "Cinematic Discussion Focus: The sweeping desert vistas highlight the settlers' alienation and fear, contrasting with First Nations characters whose deep, innate knowledge of tracks, water, and country allows them to survive."
+          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Van Diemen's Land Frontier | Tone Alert: Gritty, harrowing depiction of British military occupation, convict servitude, and Aboriginal dispossession in 1820s Tasmania.",
+          "viewing_task": "[01:10] Frontier Reality: How does the trailer convey the extreme brutality and lawlessness of the colonial frontier during the Tasmanian Black War?",
+          "model_answer": "It depicts British soldiers and penal authorities operating with absolute, unchecked violence in remote wilderness outposts, reflecting the systemic terror and martial law unleashed against Tasmanian Palawa people."
         },
         {
-          "id": "Z7_1avVKDwc",
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Z7_1avVKDwc",
-          "title": "First Australians: The Black War in Van Diemen's Land | SBS Documentary",
-          "duration": "53 mins 00 secs",
+          "id": "sD22ZkWu8Bs",
+          "url": "https://www.youtube.com/watch?v=sD22ZkWu8Bs",
+          "title": "First Australians: Her Will To Survive (Episode 2) | SBS / Rachel Perkins",
+          "duration": "52 mins 49 secs",
           "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 18:00–45:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Examines martial law, the Black Line, and Truganini's people in Tasmania.",
-          "viewing_task": "[20:00] Recall: What was the 'Black Line' military operation ordered by Governor George Arthur in Van Diemen's Land (Tasmania) in 1830?\n[32:00] Explain: How did George Augustus Robinson persuade surviving Tasmanian Aboriginal people to surrender and relocate to Flinders Island?\n[42:15] Challenge: How did the rapid decline of the Tasmanian population on Flinders Island disprove colonial claims of 'humanitarian protection'?",
-          "model_answer": "Recall: A human cordon of over 2,000 soldiers and armed settlers who swept across the island over six weeks to capture or drive all Aboriginal people onto the Tasman Peninsula.\nExplain: Robinson promised that if they ceased fighting and moved temporarily to an island sanctuary, they would be protected, their lands would be preserved, and they could eventually return home.\nChallenge: Confined on windy, disease-ridden Flinders Island, stripped of culture, and forced into European clothing and Christian prayer, over 100 people died of respiratory illness and despair within a decade."
+          "teacher_guidance": "Recommended Watch Window: 02:00–12:30 | Lesson Phase: The Black War in Van Diemen's Land | Tone Alert: Definitive archival documentary detailing Governor Arthur's martial law, the Black Line, and Truganini's survival.",
+          "viewing_task": "[06:45] The Black Line (1830): What was Governor Arthur's objective in mobilizing 2,200 armed colonists in a human cordon across Tasmania?",
+          "model_answer": "Governor Arthur intended to drive all remaining Aboriginal Tasmanians out of settled districts and corral them onto the Tasman Peninsula, an operation that failed militarily but demonstrated the colonial government's total commitment to clearing the land."
         }
       ],
       "sources": [
@@ -6408,15 +6408,15 @@ const australia_data = {
           "model_answer": "Cinematic Discussion Focus: The trailer contrasts Neville's bureaucratic, cold paternalism in his office with the terror of mothers having their children forcibly ripped away in police trucks, humanizing the catastrophic generational trauma of the Stolen Generations."
         },
         {
-          "id": "Z7_1avVKDwc",
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Z7_1avVKDwc",
-          "title": "First Australians: Dispossession, Protection Acts & Stolen Generations | SBS",
-          "duration": "53 mins 00 secs",
+          "id": "Nov-XPaTYB4",
+          "url": "https://www.youtube.com/watch?v=Nov-XPaTYB4",
+          "title": "First Australians: Freedom For Our Lifetime (Episode 3) | SBS Documentary",
+          "duration": "61 mins 20 secs",
           "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 22:00–48:00 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Synoptic evaluation of the 1901 Immigration Restriction Act and Protection Boards.",
-          "viewing_task": "[25:00] Recall: How did 19th-century colonial 'Aboriginal Protection Acts' strip Indigenous people of basic civil rights?\n[35:00] Explain: How did the 1901 Federation of Australia establish the 'White Australia Policy' through the Immigration Restriction Act?\n[44:30] Challenge: How does understanding the full trajectory from 1788 to 1901 explain why First Nations Australians continue to campaign for Constitutional Recognition and Treaty?",
-          "model_answer": "Recall: State Protectors controlled where Aboriginal people could live, whom they could marry, their wages, and seized their children without court orders.\nExplain: The newly federated Commonwealth passed laws designed to keep Australia exclusively white, imposing dictation tests in European languages and denying voting rights to Indigenous peoples.\nChallenge: Because Australia was founded without treaties or constitutional acknowledgement of prior ownership, the legacy of dispossession and systemic inequality remains an unresolved national question."
+          "teacher_guidance": "Recommended Watch Window: 05:00–16:00 | Lesson Phase: State Control & Protection Acts | Tone Alert: Insightful documentary analyzing Victorian Aboriginal reserves (Coranderrk), state paternalism, and the precursors to the Stolen Generations.",
+          "viewing_task": "[10:15] Protection Acts: How did colonial 'Aborigines Protection Acts' give government boards total control over Indigenous families, wages, and children?",
+          "model_answer": "The acts granted state protectors legal guardianship over Aboriginal children, strictly controlled where First Nations people could live and work, withheld their earned wages in government trusts, and laid the bureaucratic groundwork for forced child removals."
         }
       ],
       "sources": [
@@ -6905,5 +6905,3 @@ const australia_data = {
     }
   ]
 };
-
-export default australia_data;

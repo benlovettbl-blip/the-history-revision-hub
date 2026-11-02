@@ -1,5 +1,4 @@
-// CME Unit Data - Calibrated with 100% Traceable Quizzes
-const cme_new_data = {
+export default {
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
     "instructions": [
@@ -464,29 +463,22 @@ const cme_new_data = {
         {
           "id": "cme_l1_source_e",
           "letter": "E",
-          "title": "Source E: Theodor Herzl, Founder of the Modern Zionist Movement",
-          "src": "/units/cme_new/assets/theodor_herzl.jpg",
-          "image": "/units/cme_new/assets/theodor_herzl.jpg",
-          "source": "/units/cme_new/assets/theodor_herzl.jpg",
-          "caption": "Austro-Hungarian journalist Theodor Herzl, author of 'Der Judenstaat' (1896) and convenor of the First Zionist Congress in Basel, 1897.",
-          "desc": "Archival portrait photograph of Zionist visionary Theodor Herzl.",
-          "provenance": "Central Zionist Archives, Jerusalem (PHG/1012), c. 1897.",
-          "citation": "Central Zionist Archives, Jerusalem.",
-          "hinge_question": "How did Herzl's experience of anti-Semitism in Europe convince him that assimilation could never guarantee Jewish safety?",
-          "source_context": "Portrait of Theodor Herzl, who concluded following the Dreyfus Affair in France that Jews could only escape pervasive European persecution through establishing an internationally recognized sovereign Jewish homeland. **Hinge Question:** How did Herzl's experience of anti-Semitism in Europe convince him that assimilation could never guarantee Jewish safety?",
-          "context": "Portrait of Theodor Herzl, who formulated political Zionism in response to European anti-Semitism.",
-          "question_badge": "Source Inference",
-          "question_type": "Source Inference",
-          "enquiry_question": "What can you infer from Source E about the main goal of modern political Zionism in the 1890s?",
-          "model_answer": "We can infer that Theodor Herzl believed European anti-Semitism could not be solved by assimilation, arguing that Jewish people needed their own sovereign homeland to be safe from persecution.",
-          "provenance_clues": {
-            "author": "Official portraitist of the First Zionist Congress.",
-            "audience": "Delegates to the Basel Congress and European Jewish communities.",
-            "motive": "To present Herzl as a dignified, visionary statesman capable of negotiating with European monarchs and imperial cabinets.",
-            "hinge_question": "How did Herzl's experience of anti-Semitism in Europe convince him that assimilation could never guarantee Jewish safety?"
-          },
+          "target_stage": 5,
+          "title": "Source E: The British Government White Paper on Palestine (May 1939)",
+          "type": "written",
+          "provenance": "Official Parliamentary Command Paper (Cmd 6019), presented by the Secretary of State for the Colonies, Malcolm MacDonald, to Parliament, May 1939.",
+          "citation": "His Majesty's Stationery Office (HMSO) / The National Archives, Kew (CAB 66/1/24).",
+          "content": "His Majesty's Government believe that the framers of the Mandate in which the Balfour Declaration was embodied could not have intended that Palestine should be converted into a Jewish State against the will of the Arab population of the country... Jewish immigration during the next five years will be at a rate which, if economic absorptive capacity permits, will bring the Jewish population up to approximately one-third of the total population... After the period of five years no further Jewish immigration will be permitted unless the Arabs of Palestine are prepared to acquiesce in it.",
+          "caption": "Extract from the official British Parliamentary Command Paper 6019 (May 1939), drastically restricting Jewish immigration to 75,000 over five years and making further immigration conditional on Arab consent.",
+          "desc": "Extract from the 1939 British White Paper on Palestine limiting Jewish immigration and land purchase.",
+          "source_context": "Faced with the imminent outbreak of World War Two and desperate to secure Arab alliance and oil routes, the British government published the 1939 White Paper. It effectively repudiated the Balfour Declaration by proposing an independent binational Palestine within ten years and capping Jewish immigration at 75,000 refugees just as Nazi persecution escalated in Europe. **Hinge Question:** Why did the 1939 White Paper convince Zionist leaders like David Ben-Gurion that Britain was no longer a reliable partner?",
+          "question_badge": "Author's Purpose",
+          "question_type": "Author's Purpose",
+          "enquiry_question": "What does Source E suggest about why British policy toward Palestine changed radically on the eve of World War Two?",
+          "model_answer": "Source E reveals that Britain prioritized appeasing the Arab population to protect strategic Middle Eastern oil and trade routes before the outbreak of World War Two, sacrificing its earlier commitment to a Jewish national home.",
+          "hinge_question": "Why did the 1939 White Paper convince Zionist leaders like David Ben-Gurion that Britain was no longer a reliable partner?",
           "teacher_notes": {
-            "source_context": "Portrait of Theodor Herzl, who concluded following the Dreyfus Affair in France that Jews could only escape pervasive European persecution through establishing an internationally recognized sovereign Jewish homeland. **Hinge Question:** How did Herzl's experience of anti-Semitism in Europe convince him that assimilation could never guarantee Jewish safety?"
+            "source_context": "Faced with the imminent outbreak of World War Two and desperate to secure Arab alliance and oil routes, the British government published the 1939 White Paper. It effectively repudiated the Balfour Declaration by proposing an independent binational Palestine within ten years and capping Jewish immigration at 75,000 refugees just as Nazi persecution escalated in Europe. **Hinge Question:** Why did the 1939 White Paper convince Zionist leaders like David Ben-Gurion that Britain was no longer a reliable partner?"
           }
         }
       ],
@@ -5389,13 +5381,14 @@ const cme_new_data = {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=43DqkyuItH8",
-          "title": "France Télévisions / Best Documentary: Nasser: From Dream to Disaster",
-          "duration": "53 mins 04 secs",
+          "id": "KISRkue-NNU",
+          "url": "https://www.youtube.com/watch?v=KISRkue-NNU",
+          "title": "Egypt Grabs Suez (1956) | British Pathé Archival Newsreel",
+          "duration": "1 mins 33 secs",
           "pathway": "Arab Perspective",
-          "teacher_guidance": "In-depth documentary exploring Nasser's domestic reforms, radio diplomacy (Voice of the Arabs), and the anti-imperialist mobilization of the Arab world. Recommended Watch Window: 05:00–12:30 • Lesson Phase: High-Attainer Stretch & Pan-Arab Investigation. Tone Alert: Rich French-Arab documentary featuring primary radio recordings and public rallies celebrating anti-colonial defiance.",
-          "viewing_task": "<ol><li><strong>[06:15] Recall:</strong> What Cairo-based radio broadcasting station did President Nasser use to beam fiery anti-colonial speeches into homes and coffee houses across the Middle East?</li><li><strong>[08:50] Explain:</strong> How did President Nasser turn a total tactical military defeat in the Sinai desert into a magnificent political and diplomatic triumph across the Arab world?</li><li><strong>[11:15] Challenge:</strong> Analyze the long-term impact of Nasser's Pan-Arab charisma. How did the Suez victory elevate expectations among Arab populations that proved dangerously unsustainable by 1967?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> <em>Sawt al-Arab</em> ('Voice of the Arabs').</li><li><strong>Explain:</strong> Even though Israeli forces overran Sinai and Anglo-French paratroopers seized Port Said, Nasser remained in Cairo directing national resistance and scuttled ships in the canal to block all maritime traffic. When superpower intervention forced the imperial invaders to withdraw, Nasser was hailed across the Global South as the heroic leader who had humiliated the British Empire and retained control of the canal.</li><li><strong>Challenge:</strong> Nasser's 1956 triumph built an aura of near-mythical invincibility. However, it trapped him in his own militant rhetoric: Arab public opinion increasingly expected him to lead a victorious war to destroy Israel. When escalating border skirmishes erupted in 1967, Nasser felt politically unable to back down, leading directly to the catastrophe of the Six-Day War.</li></ol>"
+          "teacher_guidance": "Authentic 1956 British newsreel capturing President Gamal Abdel Nasser's historic speech in Alexandria nationalising the Suez Canal. Recommended Watch Window: 00:00–01:33 • Lesson Phase: Primary Source Hook. Tone Alert: British newsreel coverage showing Nasser announcing the nationalisation to roaring crowds in Alexandria.",
+          "viewing_task": "<ol><li><strong>[00:30] Recall:</strong> In which Egyptian city did President Gamal Abdel Nasser address a mass rally to announce the nationalisation of the Suez Canal Company?</li><li><strong>[00:55] Explain:</strong> How did President Nasser turn a tactical military defeat in the Sinai desert into a magnificent political and diplomatic triumph across the Arab world?</li><li><strong>[01:15] Challenge:</strong> Why did Britain, France, and Israel view the nationalisation of the canal as an unacceptable threat to their commercial and imperial interests?</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> Alexandria.</li><li><strong>Explain:</strong> Even though Israeli forces overran Sinai and Anglo-French paratroopers seized Port Said, Nasser retained control of the canal when international pressure from the US and UN forced the imperial invaders to withdraw, elevating him to legendary status across the Arab world.</li><li><strong>Challenge:</strong> The canal was Britain's imperial maritime highway to Persian Gulf oil reserves and India, while France accused Nasser of funding Algerian rebels, and Israel feared Egyptian blockades of the Straits of Tiran.</li></ol>"
         }
       ]
     },
@@ -6380,14 +6373,15 @@ const cme_new_data = {
           "model_answer": "<ol><li><strong>Recall:</strong> The Soviet Union (USSR).</li><li><strong>Explain:</strong> King Hussein ruled over a population containing hundreds of thousands of Palestinian refugees who revered Nasser. Had Jordan remained neutral while Egypt appeared ready to liberate Palestine, Hussein faced imminent revolution and the overthrow of his Hashemite dynasty. Signing the pact placed Jordan's armed forces under Egyptian command to secure regime survival.</li><li><strong>Challenge:</strong> Fiery broadcasts from Cairo declaring that 'the battle will be a general one and our basic objective will be to destroy Israel' whipped millions into a frenzy of expectation. Arab leaders became prisoners of their own nationalist myth-making: de-escalating or accepting diplomatic mediation was condemned by the street as treason, making armed confrontation unavoidable.</li></ol>"
         },
         {
-          "type": "era",
-          "url": "https://era.org.uk/streaming-service-resource/s3e6-battle-for-the-holy-city-the-six-day-war-days-that-shook-the-world/",
-          "title": "BBC / ERA: Days That Shook the World – The Six-Day War (Part 1)",
-          "duration": "59 mins 02 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Superb BBC reconstruction tracking the 3-week waiting period (Hamtana), Israeli domestic panic, and the decision to launch the pre-emptive air strike. Recommended Watch Window: 02:00–11:30 • Lesson Phase: High-Attainer Stretch & Oral History Investigation. Tone Alert: Immersive BBC dramatized documentary with firsthand Israeli cabinet and military testimonies.",
-          "viewing_task": "<ol><li><strong>[03:40] Recall:</strong> What Hebrew term was given to the agonizing three-week period of national dread, diplomatic paralysis, and military waiting in Israel between 16 May and 5 June 1967?</li><li><strong>[06:15] Explain:</strong> Why did the Israeli coalition cabinet under Prime Minister Levi Eshkol and newly appointed Defence Minister Moshe Dayan conclude that pre-emptive offensive action was necessary for national survival?</li><li><strong>[09:50] Challenge:</strong> Contrast the intense public terror among Israeli civilians (who dug 10,000 mass graves in public parks in Tel Aviv) with the meticulous operational confidence of Israeli Air Force commanders.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> <em>Hamtana</em> ('The Waiting Period').</li><li><strong>Explain:</strong> Israel possessed no strategic depth: in central Israel, the country was barely 9 miles wide from the Jordanian border to the Mediterranean Sea. Mobilizing 250,000 reservists had shut down factories, schools, and transport, meaning Israel would face economic bankruptcy within weeks if it simply waited. Striking first to eliminate hostile air forces was the only military doctrine that prevented catastrophic urban devastation.</li><li><strong>Challenge:</strong> While civilians prepared for a second Holocaust amidst bloodcurdling Arab radio threats, IAF Commander Mordechai Hod had spent fifteen years rehearsing the pre-emptive air strike: photographing every Arab runway and pilot briefing room. This stark juxtaposition illustrates how defensive existential dread among political leaders and the public coexisted with world-class offensive military planning.</li></ol>"
+          "type": "youtube",
+          "id": "hHqJ6pgdE-c",
+          "url": "https://www.youtube.com/watch?v=hHqJ6pgdE-c",
+          "title": "Six-Day War (1967) - Origins, Brinkmanship & Outbreak | Kings and Generals",
+          "duration": "15 mins 58 secs",
+          "pathway": "Documentary Depth",
+          "teacher_guidance": "Recommended Watch Window: 00:00–06:30 | Lesson Phase: Escalation to War | Tone Alert: Authoritative animated tactical map documentary detailing the War Over Water, Golan Heights artillery clashes, UNEF removal, and the closure of the Straits of Tiran.",
+          "viewing_task": "<ol><li><strong>[02:15] Water & Borders:</strong> How did Israel's National Water Carrier and Syrian counter-diversion canals turn the Jordan River basin into a direct military flashpoint?</li><li><strong>[04:45] Strategic Chokepoint:</strong> Why did Nasser's remilitarization of the Sinai and blockade of the Straits of Tiran make an Israeli pre-emptive strike inevitable under international law?</li></ol>",
+          "model_answer": "<ol><li><strong>Water & Borders:</strong> Israel viewed water from Lake Kinneret as vital for agricultural survival in the Negev, while Syria attempted to divert the Jordan headwaters (Banias) away from Israel. Clashes over construction machinery and tractor patrols along the demilitarized zones escalated into tank duels and aerial dogfights over the Golan Heights.</li><li><strong>Strategic Chokepoint:</strong> The Gulf of Aqaba and Straits of Tiran were Israel's only maritime shipping route to Asia and East Africa, securing 90% of its vital oil imports from Iran. Israel had explicitly stated in 1957 that closing the Straits would be considered a formal act of war (casus belli); by expelling UNEF peacekeepers and mining the straits, Nasser forced Israel to choose between economic strangulation or pre-emptive attack.</li></ol>"
         }
       ],
       "extra_videos": []
@@ -6756,36 +6750,30 @@ const cme_new_data = {
       ],
       "sources": [
         {
-          "id": "cme_l6_source_a",
+          "id": "cme_l7_source_a",
           "letter": "A",
-          "title": "Source A: Israeli Command Entering Jerusalem Through Lions' Gate (7 June 1967)",
-          "src": "/units/cme_new/assets/dayan_rabin_lions_gate_1967.jpg",
-          "image": "/units/cme_new/assets/dayan_rabin_lions_gate_1967.jpg",
-          "source": "/units/cme_new/assets/dayan_rabin_lions_gate_1967.jpg",
-          "caption": "David Rubinger's iconic photograph showing Defense Minister Moshe Dayan, Chief of Staff Yitzhak Rabin, and General Uzi Narkiss walking through Lions' Gate into the Old City of Jerusalem, 7 June 1967.",
-          "desc": "David Rubinger photograph of Defense Minister Moshe Dayan, Chief of Staff Yitzhak Rabin, and General Uzi Narkiss entering Jerusalem through Lions' Gate on 7 June 1967.",
-          "provenance": "Israel Government Press Office / David Rubinger (GPO D835-081), 7 June 1967.",
-          "citation": "Israel Government Press Office / David Rubinger.",
-          "hinge_question": "How did Moshe Dayan's famous declaration at the Wall ('We have returned to our holiest site, never to part from it again') bind future Israeli governments?",
-          "source_context": "Moshe Dayan famously declared: 'We have reunited Jerusalem, the divided capital of Israel. We have returned to the holiest of our holy places, never to part from it again.' This dramatic entrance sealed Israeli administrative control over East Jerusalem. **Hinge Question:** How did Moshe Dayan's famous declaration at the Wall ('We have returned to our holiest site, never to part from it again') bind future Israeli governments?",
-          "context": "Defense Minister Moshe Dayan, Chief of Staff Yitzhak Rabin, and Uzi Narkiss entered the Old City through Lions' Gate.",
-          "question_badge": "Source Inference",
-          "question_type": "Source Inference",
-          "enquiry_question": "What can you infer from Source A about how Moshe Dayan was presented to the Israeli public during the Six-Day War?",
-          "model_answer": "We can infer that Dayan was deliberately portrayed as the bold military hero of the nation, shown walking into the captured Old City alongside Chief of Staff Yitzhak Rabin.",
-          "provenance_clues": {
-            "author": "Ilan Bruner, official photographer for the Ministry of Defense.",
-            "audience": "World press, Israeli public, and domestic political rivals.",
-            "motive": "To immortalize Dayan and Rabin as victorious conquerors of biblical Jerusalem.",
-            "hinge_question": "How did Moshe Dayan's famous declaration at the Wall ('We have returned to our holiest site, never to part from it again') bind future Israeli governments?"
-          },
+          "target_stage": 1,
+          "title": "Source A: President Gamal Abdel Nasser's Address to Arab Trade Unionists (26 May 1967)",
+          "type": "written",
+          "provenance": "Speech by President Gamal Abdel Nasser, broadcast on Radio Cairo and the Voice of the Arabs, 26 May 1967.",
+          "citation": "Radio Cairo / British Broadcasting Corporation (BBC) Monitoring Service, May 1967.",
+          "content": "The battle will be a general one and our basic objective will be to destroy Israel. I probably could not have said such things five or even three years ago. If I had said such things, people would have said that I was bragging. Today I say such things because I am confident. We are now prepared to confront Israel... The Soviet Union has informed us of the concentration of Israeli forces on the Syrian border. Our armed forces have completed their mobilization in the Sinai and are ready for confrontation.",
+          "caption": "Official broadcast transcript of Egyptian President Gamal Abdel Nasser addressing the General Council of the International Confederation of Arab Trade Unions in Cairo on 26 May 1967, declaring readiness for total confrontation.",
+          "desc": "Transcript of President Gamal Abdel Nasser's speech on 26 May 1967 declaring readiness for war with Israel.",
+          "source_context": "In mid-May 1967, following false Soviet intelligence reports of Israeli troop concentrations on the Syrian border, President Nasser ordered 100,000 Egyptian troops into the Sinai Peninsula. Speaking to Arab trade unionists on 26 May, Nasser used aggressive rhetoric to rally pan-Arab nationalism and prepare the Arab world for what he framed as an inevitable war of liberation. **Hinge Question:** Did Nasser's public bellicose rhetoric lock him into a war he originally intended only as a political bluff?",
+          "question_badge": "Author's Purpose",
+          "question_type": "Author's Purpose",
+          "enquiry_question": "What does Source A reveal about how President Nasser used the threat of war in May 1967 to unify Arab public opinion?",
+          "model_answer": "Source A demonstrates that Nasser used uncompromising language ('our basic objective will be to destroy Israel') to galvanize domestic Arab pride and project supreme military confidence, framing the Sinai mobilization not merely as defensive support for Syria but as the decisive, unified campaign to eliminate Israel.",
+          "hinge_question": "Did Nasser's public bellicose rhetoric lock him into a war he originally intended only as a political bluff?",
           "teacher_notes": {
-            "source_context": "Moshe Dayan famously declared: 'We have reunited Jerusalem, the divided capital of Israel. We have returned to the holiest of our holy places, never to part from it again.' While Dayan handed administrative control of the Temple Mount (Haram al-Sharif) back to the Islamic Waqf to prevent a holy war, Israel formally annexed East Jerusalem weeks later. **Hinge Question:** How did Moshe Dayan's famous declaration at the Wall ('We have returned to our holiest site, never to part from it again') bind future Israeli governments?"
+            "source_context": "In mid-May 1967, following false Soviet intelligence reports of Israeli troop concentrations on the Syrian border, President Nasser ordered 100,000 Egyptian troops into the Sinai Peninsula. Speaking to Arab trade unionists on 26 May, Nasser used aggressive rhetoric to rally pan-Arab nationalism and prepare the Arab world for what he framed as an inevitable war of liberation. **Hinge Question:** Did Nasser's public bellicose rhetoric lock him into a war he originally intended only as a political bluff?"
           }
         },
         {
-          "id": "cme_l6_source_b",
+          "id": "cme_l7_source_b",
           "letter": "B",
+          "target_stage": 2,
           "title": "Source B: Cartographic Map of the Straits of Tiran & Sharm el-Sheikh Blockade (May 1967)",
           "src": "/units/cme_new/assets/cme_sinai_peninsula_map.jpg",
           "image": "/units/cme_new/assets/cme_sinai_peninsula_map.jpg",
@@ -6794,105 +6782,80 @@ const cme_new_data = {
           "desc": "Cartographic map of the Straits of Tiran maritime choke point.",
           "provenance": "Israeli Ministry of Foreign Affairs briefing chart, May 1967.",
           "citation": "Israel State Archives / MFA.",
-          "hinge_question": "Why did Israel define the closure of the Straits of Tiran as an unambiguous act of war (casus belli)?",
           "source_context": "On 22 May 1967, President Nasser announced the closure of the Straits of Tiran to all Israeli-flagged vessels and strategic cargo bound for Eilat. Because this cut off 90% of Israel's vital oil imports, Israeli leaders viewed the blockade as an existential chokehold that justified pre-emptive military action. **Hinge Question:** Why did Israel define the closure of the Straits of Tiran as an unambiguous act of war (casus belli)?",
-          "context": "President Nasser announced the closure of the Straits of Tiran on 22 May 1967, cutting off Israel's oil route.",
           "question_badge": "Historical Utility",
           "question_type": "Historical Utility",
           "enquiry_question": "How useful is Source B for an enquiry into why Israel considered Egypt's naval blockade an act of war in 1967?",
-          "model_answer": "Source B is useful because it maps the narrow Straits of Tiran, showing that Nasser's closure completely cut off Israel's southern port of Eilat and its vital oil supply from Iran.",
-          "provenance_clues": {
-            "author": "Israeli military and diplomatic cartographers.",
-            "audience": "Western diplomats, UN Security Council members, and the international press.",
-            "motive": "To convince world powers that Egypt had committed an explicit act of war requiring international intervention or Israeli retaliation.",
-            "hinge_question": "Why did Israel define the closure of the Straits of Tiran as an unambiguous act of war (casus belli)?"
-          },
+          "model_answer": "Source B is highly useful because it demonstrates the critical geographic vulnerability of the Straits of Tiran; by blockading Sharm el-Sheikh, Egypt severed Israel's southern maritime lifeline to Asian oil markets and Persian Gulf trade through the port of Eilat.",
+          "hinge_question": "Why did Israel define the closure of the Straits of Tiran as an unambiguous act of war (casus belli)?",
           "teacher_notes": {
             "source_context": "On 22 May 1967, President Nasser announced the closure of the Straits of Tiran to all Israeli-flagged vessels and strategic cargo bound for Eilat. Because this cut off 90% of Israel's vital oil imports, Israeli leaders viewed the blockade as an existential chokehold that justified pre-emptive military action. **Hinge Question:** Why did Israel define the closure of the Straits of Tiran as an unambiguous act of war (casus belli)?"
           }
         },
         {
-          "id": "cme_l6_source_c",
+          "id": "cme_l7_source_c",
           "letter": "C",
-          "title": "Source C: Chief Rabbi Goren Blowing the Shofar at the Wall (7 June 1967)",
-          "src": "/images/rabbi_goren_shofar_western_wall_1967.jpg",
-          "image": "/images/rabbi_goren_shofar_western_wall_1967.jpg",
-          "source": "/images/rabbi_goren_shofar_western_wall_1967.jpg",
-          "caption": "IDF Chief Rabbi Shlomo Goren blowing the shofar while holding a Torah scroll surrounded by paratroopers at the liberated Western Wall on 7 June 1967.",
-          "desc": "Archival photograph of IDF Chief Rabbi Shlomo Goren blowing the shofar at the Western Wall on 7 June 1967.",
-          "provenance": "Israel Government Press Office (GPO D1-1967), 7 June 1967.",
-          "citation": "Israel Government Press Office, Jerusalem.",
-          "hinge_question": "How did Rabbi Goren's messianic interpretation of the conquest give birth to the modern religious Zionist settlement movement?",
-          "source_context": "Rabbi Shlomo Goren recited the Shehecheyanu blessing and blew the shofar, proclaiming: 'The city of God has been liberated!' This religious framing transformed a military campaign into a moment of spiritual redemption for Jews worldwide. **Hinge Question:** How did Rabbi Goren's messianic interpretation of the conquest give birth to the modern religious Zionist settlement movement?",
-          "context": "Rabbi Shlomo Goren blew the shofar and recited blessings upon reaching the Western Wall.",
-          "question_badge": "Author’s Purpose",
-          "question_type": "Author’s Purpose",
-          "enquiry_question": "What was the purpose of Rabbi Goren blowing the shofar at the Western Wall in Source C?",
-          "model_answer": "Rabbi Goren blew the shofar to show that capturing the Western Wall was viewed as a sacred, historic moment for the Jewish people, not just an ordinary military victory.",
-          "provenance_clues": {
-            "author": "Military press photographer accompanying IDF chaplaincy.",
-            "audience": "Israeli soldiers, religious public, and global Jewry.",
-            "motive": "To broadcast the historic religious restoration of Jewish worship at the Western Wall after nineteen years of Jordanian exclusion.",
-            "hinge_question": "How did Rabbi Goren's messianic interpretation of the conquest give birth to the modern religious Zionist settlement movement?"
-          },
+          "target_stage": 3,
+          "title": "Source C: The Egyptian-Jordanian Joint Defence Pact in Cairo (30 May 1967)",
+          "src": "/images/cme_cairo_summit_1964.jpg",
+          "image": "/images/cme_cairo_summit_1964.jpg",
+          "source": "/images/cme_cairo_summit_1964.jpg",
+          "caption": "Jordan's King Hussein and Egyptian President Gamal Abdel Nasser sign the bilateral Joint Defence Agreement at the Koubbeh Palace in Cairo on 30 May 1967, placing the Jordanian armed forces under Egyptian command.",
+          "desc": "Historic photograph of King Hussein of Jordan and President Nasser signing the mutual defense agreement in Cairo.",
+          "provenance": "Egyptian Ministry of Information / Associated Press archival wire, 30 May 1967.",
+          "citation": "Egyptian State Information Service / Associated Press.",
+          "source_context": "On 30 May 1967, Jordan's King Hussein flew to Cairo and signed a mutual defence treaty with his former political rival Nasser, placing Jordanian forces under Egyptian General Abdel Moneim Riad. With Iraq joining shortly after, Israel was surrounded on three borders (Egypt, Jordan, Syria), convincing Israeli military leaders that a pre-emptive strike was essential before an Arab combined assault. **Hinge Question:** Why did King Hussein's unexpected pact with Nasser eliminate Israel's military margin for diplomatic delay?",
+          "question_badge": "Source Inference",
+          "question_type": "Source Inference",
+          "enquiry_question": "What can an historian infer from Source C about how the Cairo Defence Agreement escalated the crisis for Israel?",
+          "model_answer": "We can infer that the agreement completed the strategic military encirclement of Israel; with Jordan's British-trained Arab Legion placed under Egyptian command just miles from Tel Aviv, Israel's narrow coastal borders were exposed to imminent simultaneous multi-front invasion.",
+          "hinge_question": "Why did King Hussein's unexpected pact with Nasser eliminate Israel's military margin for diplomatic delay?",
           "teacher_notes": {
-            "source_context": "Rabbi Shlomo Goren recited the Shehecheyanu blessing and blew the shofar, proclaiming: 'The city of God has been liberated!' This religious framing transformed what secular military planners viewed as a security buffer into 'Eretz Yisrael Hashlemah' (the Greater Land of Israel), igniting the modern religious settlement movement. **Hinge Question:** How did Rabbi Goren's messianic interpretation of the conquest give birth to the modern religious Zionist settlement movement?"
+            "source_context": "On 30 May 1967, Jordan's King Hussein flew to Cairo and signed a mutual defence treaty with his former political rival Nasser, placing Jordanian forces under Egyptian General Abdel Moneim Riad. With Iraq joining shortly after, Israel was surrounded on three borders (Egypt, Jordan, Syria), convincing Israeli military leaders that a pre-emptive strike was essential before an Arab combined assault. **Hinge Question:** Why did King Hussein's unexpected pact with Nasser eliminate Israel's military margin for diplomatic delay?"
           }
         },
         {
-          "id": "cme_l6_source_d",
+          "id": "cme_l7_source_d",
           "letter": "D",
-          "title": "Source D: Tactical Map of the Egyptian Sinai Collapse (7–8 June 1967)",
-          "src": "/images/cme_1967_sinai_june7_8_map.jpg",
-          "image": "/images/cme_1967_sinai_june7_8_map.jpg",
-          "source": "/images/cme_1967_sinai_june7_8_map.jpg",
-          "caption": "Tactical military map showing the armored maneuvers of Tal, Yoffe, and Sharon through northern and central Sinai and the trapping of retreating Egyptian divisions at the Mitla and Giddi Passes, 7–8 June 1967.",
-          "desc": "Military map depicting the trapping of Egyptian armored divisions in Sinai passes.",
-          "provenance": "Egyptian Ministry of War / Combat Studies Institute Records, Fort Leavenworth, 1967.",
-          "citation": "Combat Studies Institute / US Army Command.",
-          "hinge_question": "Why did Field Marshal Amer's panicked order for general retreat turn an orderly defense into a catastrophic military rout?",
-          "source_context": "On 6 June, after learning of the destruction of his air force, Egyptian Field Marshal Abdel Hakim Amer panicked and ordered a general retreat across Sinai to the west bank of the Suez Canal. Without air cover, Egyptian columns were bottle-necked and decimated in the mountain passes. **Hinge Question:** Why did Field Marshal Amer's panicked order for general retreat turn an orderly defense into a catastrophic military rout?",
-          "context": "Field Marshal Amer ordered an immediate general retreat, resulting in the encirclement of Egyptian forces.",
-          "question_badge": "Cross-Referencing",
-          "question_type": "Cross-Referencing",
-          "enquiry_question": "How does Source D help explain the speed of Israel's military victory in Sinai in 1967?",
-          "model_answer": "Source D shows that because Israeli airstrikes destroyed Egypt's air force on day one, retreating Egyptian armored columns had zero air defense and were trapped in the mountain passes.",
-          "provenance_clues": {
-            "author": "Military staff historians and intelligence analysts.",
-            "audience": "General staff commanders and war college tacticians.",
-            "motive": "To analyze tactical command failures and the fatal consequences of uncoordinated retreat under total enemy air supremacy.",
-            "hinge_question": "Why did Field Marshal Amer's panicked order for general retreat turn an orderly defense into a catastrophic military rout?"
-          },
+          "target_stage": 4,
+          "title": "Source D: Aerial Reconnaissance of Destroyed Egyptian Airfields during Operation Focus (5 June 1967)",
+          "src": "/images/cme_six_day_war_airfield_1967.jpg",
+          "image": "/images/cme_six_day_war_airfield_1967.jpg",
+          "source": "/images/cme_six_day_war_airfield_1967.jpg",
+          "caption": "Israeli Air Force reconnaissance photograph showing destroyed Egyptian Air Force MiG-21 jet fighters and cratered runways at an Egyptian airbase following the opening waves of Operation Focus on the morning of 5 June 1967.",
+          "desc": "Aerial photograph of destroyed Egyptian Air Force MiG fighters on cratered tarmac, 5 June 1967.",
+          "provenance": "Israel Defense Forces Archives / IAF Aerial Reconnaissance Unit, 5 June 1967.",
+          "citation": "Israel Defense Forces Archives (IDFA).",
+          "source_context": "At 07:45 on 5 June 1967, the Israeli Air Force launched Operation Focus, flying under Egyptian radar across the Mediterranean to bomb 19 Egyptian airfields simultaneously with specialized concrete-piercing bombs. Within three hours, over 300 Egyptian combat aircraft were destroyed on the tarmac, securing absolute Israeli air supremacy. **Hinge Question:** Why was achieving total air superiority in the opening hours the decisive causal mechanism of the Six-Day War?",
+          "question_badge": "Historical Significance",
+          "question_type": "Historical Significance",
+          "enquiry_question": "How does Source D explain why the outcome of the Six-Day War was effectively decided in the first three hours?",
+          "model_answer": "Source D shows the complete destruction of Egypt's frontline fighter fleet on the ground; without air cover, Egyptian ground divisions in the Sinai were left completely exposed to relentless Israeli close air support, making an organized defense impossible.",
+          "hinge_question": "Why was achieving total air superiority in the opening hours the decisive causal mechanism of the Six-Day War?",
           "teacher_notes": {
-            "source_context": "On 6 June, after learning of the destruction of his air force, Egyptian Field Marshal Abdel Hakim Amer panicked and ordered a general retreat across Sinai to the west bank of the Suez Canal within 24 hours. Without air cover, Egyptian armor jammed the narrow desert passes, where they were systematically destroyed by the Israeli Air Force. **Hinge Question:** Why did Field Marshal Amer's panicked order for general retreat turn an orderly defense into a catastrophic military rout?"
+            "source_context": "At 07:45 on 5 June 1967, the Israeli Air Force launched Operation Focus, flying under Egyptian radar across the Mediterranean to bomb 19 Egyptian airfields simultaneously with specialized concrete-piercing bombs. Within three hours, over 300 Egyptian combat aircraft were destroyed on the tarmac, securing absolute Israeli air supremacy. **Hinge Question:** Why was achieving total air superiority in the opening hours the decisive causal mechanism of the Six-Day War?"
           }
         },
         {
-          "id": "cme_l6_source_e",
+          "id": "cme_l7_source_e",
           "letter": "E",
-          "title": "Source E: Israeli Paratroopers at the Western Wall (7 June 1967)",
-          "src": "/images/cme_paratroopers_western_wall_1967.jpg",
-          "image": "/images/cme_paratroopers_western_wall_1967.jpg",
-          "source": "/images/cme_paratroopers_western_wall_1967.jpg",
-          "caption": "David Rubinger's photograph of Israeli paratroopers (Zion Karasenti, Yitzhak Yifat, and Haim Oshri) standing in awe before the Western Wall in the captured Old City of Jerusalem, 7 June 1967.",
-          "desc": "Iconic photograph of paratroopers at the Western Wall.",
-          "provenance": "Israel Government Press Office / David Rubinger (GPO D1-1967), 7 June 1967.",
+          "target_stage": 5,
+          "title": "Source E: Israeli Command Entering Jerusalem Through Lions' Gate (7 June 1967)",
+          "src": "/units/cme_new/assets/dayan_rabin_lions_gate_1967.jpg",
+          "image": "/units/cme_new/assets/dayan_rabin_lions_gate_1967.jpg",
+          "source": "/units/cme_new/assets/dayan_rabin_lions_gate_1967.jpg",
+          "caption": "David Rubinger's iconic photograph showing Defense Minister Moshe Dayan, Chief of Staff Yitzhak Rabin, and General Uzi Narkiss walking through Lions' Gate into the Old City of Jerusalem, 7 June 1967.",
+          "desc": "David Rubinger photograph of Defense Minister Moshe Dayan, Chief of Staff Yitzhak Rabin, and General Uzi Narkiss entering Jerusalem through Lions' Gate on 7 June 1967.",
+          "provenance": "Israel Government Press Office / David Rubinger (GPO D835-081), 7 June 1967.",
           "citation": "Israel Government Press Office / David Rubinger.",
-          "hinge_question": "Why did the capture of the Old City and the Western Wall transform Israeli public attitudes from existential dread to religious and national euphoria?",
-          "source_context": "On the third day of the Six-Day War, the 55th Paratroopers Brigade breached the Lions' Gate and seized the Old City of Jerusalem, which had been under Jordanian control since 1948. David Rubinger's photograph became the defining national symbol of the war and the emotional reunion with Judaism's holiest prayer site. **Hinge Question:** Why did the capture of the Old City and the Western Wall transform Israeli public attitudes from existential dread to religious and national euphoria?",
-          "context": "On 7 June 1967, Israeli paratroopers captured the Old City of Jerusalem and reached the Western Wall.",
-          "question_badge": "Historical Utility",
-          "question_type": "Historical Utility",
-          "enquiry_question": "How useful is Source E for an inquiry into the psychological and emotional impact of the Six-Day War on Israeli society?",
-          "model_answer": "Source E is exceptionally useful because it captures the raw emotional transition from the mortal dread of annihilation preceding June 5 to an overwhelming sense of miraculous historical vindication, cementing national attachment to the newly captured territories.",
-          "provenance_clues": {
-            "author": "David Rubinger, veteran Israeli photojournalist embedded with the paratroopers.",
-            "audience": "The Israeli public, world media, and Jewish communities internationally.",
-            "motive": "To document the historic capture of Jerusalem's Old City for history and the press.",
-            "hinge_question": "Why did the capture of the Old City and the Western Wall transform Israeli public attitudes from existential dread to religious and national euphoria?"
-          },
+          "source_context": "Moshe Dayan famously declared: 'We have reunited Jerusalem, the divided capital of Israel. We have returned to the holiest of our holy places, never to part from it again.' This dramatic entrance sealed Israeli administrative control over East Jerusalem, transforming Israel's strategic and psychological standing. **Hinge Question:** How did Moshe Dayan's famous declaration at the Wall ('We have returned to our holiest site, never to part from it again') bind future Israeli governments?",
+          "question_badge": "Source Inference",
+          "question_type": "Source Inference",
+          "enquiry_question": "What can you infer from Source E about how the capture of the Old City of Jerusalem transformed Israel's military leadership and national identity?",
+          "model_answer": "We can infer that the Israeli high command presented the capture of Jerusalem not just as a defensive tactical victory, but as an epochal, historic reunification with Judaism's ancient biblical capital, immortalizing Dayan and Rabin as national heroes.",
+          "hinge_question": "How did Moshe Dayan's famous declaration at the Wall ('We have returned to our holiest site, never to part from it again') bind future Israeli governments?",
           "teacher_notes": {
-            "source_context": "On the third day of the Six-Day War, the 55th Paratroopers Brigade breached the Lions' Gate and seized the Old City of Jerusalem, which had been under Jordanian control since 1948. David Rubinger's photograph became the defining national symbol of the war and the emotional reunion with Judaism's holiest prayer site. **Hinge Question:** Why did the capture of the Old City and the Western Wall transform Israeli public attitudes from existential dread to religious and national euphoria?"
+            "source_context": "Moshe Dayan famously declared: 'We have reunited Jerusalem, the divided capital of Israel. We have returned to the holiest of our holy places, never to part from it again.' This dramatic entrance sealed Israeli administrative control over East Jerusalem, transforming Israel's strategic and psychological standing. **Hinge Question:** How did Moshe Dayan's famous declaration at the Wall ('We have returned to our holiest site, never to part from it again') bind future Israeli governments?"
           }
         }
       ],
@@ -8341,7 +8304,7 @@ const cme_new_data = {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=LYhJOjv0Yc8",
+          "url": "https://www.youtube.com/watch?v=DFKaFgDwLi8",
           "title": "Middle East Eye / Archival: The Khartoum Summit & The \"Three Noes\" (1967)",
           "duration": "4 mins 15 secs",
           "pathway": "Arab Perspective",
@@ -8361,9 +8324,9 @@ const cme_new_data = {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=IhfysdHgGh8",
-          "title": "BBC / PBS: The 50 Years War – Six Days in June and the Occupation",
-          "duration": "49 mins 26 secs",
+          "url": "https://www.youtube.com/watch?v=I0lLtFDthLw",
+          "title": "BBC / PBS: The 50 Years War – Six Days in June and the Occupation (1967)",
+          "duration": "47 mins 17 secs",
           "pathway": "Documentary",
           "teacher_guidance": "Eye-opening interviews with Israeli ministers debating whether to hold or return the West Bank, and Palestinian residents describing living under military administration. Recommended Watch Window: 32:00–42:00 • Lesson Phase: High-Attainer Stretch & Ministerial Deliberations. Tone Alert: Unrivalled dual-perspective oral testimony featuring key decision-makers (including Abba Eban and Moshe Dayan) discussing the moral dilemmas of military rule.",
           "viewing_task": "<ol><li><strong>[33:15] Recall:</strong> Approximately how many Palestinian Arab residents came under Israeli military occupation in the West Bank and Gaza Strip immediately following the 1967 war?</li><li><strong>[36:20] Explain:</strong> What was the profound 'demographic dilemma' that Israeli leaders confronted regarding whether to formally annex the newly captured territories?</li><li><strong>[39:45] Challenge:</strong> Analyze the debate between Moshe Dayan (who believed Israel could manage an 'invisible occupation' through economic integration) and Foreign Minister Abba Eban (who warned that ruling over a hostile million-strong population would rot Israeli democracy).</li></ol>",
@@ -10839,34 +10802,36 @@ const cme_new_data = {
           "text": "<span class=\"para-ref\">[1.1]</span> The 1973 oil shock demonstrated that Middle Eastern stability was a vital American national security priority. To prevent renewed hostilities and exclude the Soviet Union from regional diplomacy, US Secretary of State **Henry Kissinger** launched an unprecedented campaign of \"**Shuttle Diplomacy**.\" Flying tirelessly between Cairo, Damascus, and Jerusalem aboard his Boeing 707, Kissinger pursued an incremental, step-by-step negotiating strategy rather than attempting an impossible comprehensive peace conference.\n\n<span class=\"para-ref\">[1.2]</span> In January 1974, Kissinger brokered the **Sinai I Disengagement Agreement**, which separated Egyptian and Israeli forces, allowed the trapped Egyptian Third Army to be resupplied, and saw Israel withdraw 20 kilometres from the Suez Canal, allowing Egypt to clear and reopen the canal in June 1975. In May 1974, Kissinger achieved a disengagement accord between Israel and Syria on the Golan Heights, followed by the **Sinai II Accord** in September 1975, which returned the vital Abu Rudeis oil fields to Egypt.",
           "sources": [
             {
-              "id": "cme_l10_source_a",
+              "id": "cme_l11_source_a",
               "letter": "A",
-              "title": "Source A: Israeli Prime Minister Menachem Begin (1978)",
-              "src": "/units/cme_new/assets/menachem_begin.jpeg",
-              "image": "/units/cme_new/assets/menachem_begin.jpeg",
-              "source": "/units/cme_new/assets/menachem_begin.jpeg",
-              "caption": "Menachem Begin, former underground Irgun commander and Likud Prime Minister who negotiated the historic peace agreement with Egypt, 1978.",
-              "desc": "Archival portrait photograph of Israeli Prime Minister Menachem Begin.",
-              "provenance": "Israel Government Press Office (GPO D1-1978), 1978.",
-              "citation": "Israel Government Press Office, Jerusalem.",
-              "hinge_question": "Why was a hardline nationalist like Begin capable of surrendering the entire Sinai when Labor leaders could not?",
-              "source_context": "As a right-wing Revisionist Zionist who had fiercely opposed earlier compromises, Begin possessed the unimpeachable nationalist credentials needed to evacuate Jewish settlements like Yamit in Sinai without being branded a traitor. Crucially, Begin gave up Sinai to secure Egyptian neutrality, allowing Israel to retain permanent control over Judea and Samaria (the West Bank). **Hinge Question:** Why was a hardline nationalist like Begin capable of surrendering the entire Sinai when Labor leaders could not?",
-              "context": "Likud Prime Minister Menachem Begin agreed to return the entire Sinai in exchange for a separate peace with Egypt.",
+              "title": "Source A: US Secretary of State Henry Kissinger on Step-by-Step Shuttle Diplomacy (January 1974)",
+              "src": "/units/cme_new/assets/henry_kissinger.jpg",
+              "image": "/units/cme_new/assets/henry_kissinger.jpg",
+              "source": "/units/cme_new/assets/henry_kissinger.jpg",
+              "caption": "Dr Henry Kissinger, US Secretary of State who pioneered 'Shuttle Diplomacy' between Cairo, Damascus, and Jerusalem following the 1973 Yom Kippur War.",
+              "desc": "Archival portrait of US Secretary of State Henry Kissinger.",
+              "provenance": "US Department of State Historical Office / Gerald R. Ford Presidential Library.",
+              "citation": "Foreign Relations of the United States, 1969–1976, Volume XXVI, Arab-Israeli Dispute.",
+              "hinge_question": "Why did Kissinger insist on an incremental, 'step-by-step' approach rather than attempting a comprehensive peace conference at Geneva?",
+              "source_context": "Following the October 1973 War and the Arab oil embargo, US Secretary of State Henry Kissinger flew thousands of miles between Middle Eastern capitals aboard his Boeing 707. Kissinger deliberately excluded the Soviet Union and avoided intractable core disputes like Jerusalem and Palestinian sovereignty, focusing instead on military disengagement agreements (Sinai I in 1974 and Sinai II in 1975). **Hinge Question:** Why did Kissinger insist on an incremental, 'step-by-step' approach rather than attempting a comprehensive peace conference at Geneva?",
+              "context": "Kissinger's shuttle diplomacy separated Egyptian and Israeli frontline armies along the Suez Canal.",
               "question_badge": "Source Inference",
               "question_type": "Source Inference",
-              "enquiry_question": "What can you infer from Source A about the ideological trade-offs made by Menachem Begin at Camp David?",
-              "model_answer": "Source A indicates that Begin made painful territorial concessions in the non-biblical Sinai Peninsula specifically to split the Arab world and protect Israeli sovereignty over the biblically sacred heartland of Judea and Samaria.",
+              "enquiry_question": "What can you infer from Source A about the American objectives in conducting 'Shuttle Diplomacy' after the 1973 Yom Kippur War?",
+              "model_answer": "Source A indicates that the United States sought to stabilize the Middle East through step-by-step military disengagement, aiming to avert renewed conflict, protect Western oil supplies, and systematically edge the Soviet Union out of regional diplomacy.",
               "provenance_clues": {
-                "author": "Official photographer for the Prime Minister's Office.",
-                "audience": "The Israeli electorate, Knesset members, and international diplomats.",
-                "motive": "To project Begin as a resolute, principled legal statesman capable of defending vital national interests.",
-                "hinge_question": "Why was a hardline nationalist like Begin capable of surrendering the entire Sinai when Labor leaders could not?"
+                "author": "US Department of State diplomatic photographers.",
+                "audience": "International diplomatic community and American public.",
+                "motive": "To project Kissinger as an indispensable, tireless mediator constructing peace in the Middle East.",
+                "hinge_question": "Why did Kissinger insist on an incremental, 'step-by-step' approach rather than attempting a comprehensive peace conference at Geneva?"
               },
               "teacher_notes": {
-                "source_context": "As a right-wing Revisionist Zionist who had fiercely opposed earlier compromises, Begin possessed the unimpeachable nationalist credentials needed to evacuate Jewish settlements like Yamit in Sinai without being branded a traitor. Crucially, Begin gave up Sinai to secure Egyptian neutrality, allowing Israel to retain permanent control over Judea and Samaria (the West Bank). **Hinge Question:** Why was a hardline nationalist like Begin capable of surrendering the entire Sinai when Labor leaders could not?"
+                "source_context": "Following the October 1973 War and the Arab oil embargo, US Secretary of State Henry Kissinger flew thousands of miles between Middle Eastern capitals aboard his Boeing 707. Kissinger deliberately excluded the Soviet Union and avoided intractable core disputes like Jerusalem and Palestinian sovereignty, focusing instead on military disengagement agreements (Sinai I in 1974 and Sinai II in 1975). **Hinge Question:** Why did Kissinger insist on an incremental, 'step-by-step' approach rather than attempting a comprehensive peace conference at Geneva?"
               }
             }
-          ]
+          ],
+          "image": "/units/cme_new/assets/kissinger_golda_meir_1973.jpg",
+          "caption": "US Secretary of State Henry Kissinger meeting with Israeli Prime Minister Golda Meir in Jerusalem during post-war disengagement negotiations (1973–1974)."
         },
         {
           "title": "Sadat’s Historic Visit to Jerusalem",
@@ -10880,31 +10845,31 @@ const cme_new_data = {
           "text": "<span class=\"para-ref\">[2.1]</span> In **May 1977**, Israeli politics experienced an earthquake when the right-wing **Likud party** won a stunning general election, ending 29 years of uninterrupted Labour rule. Prime Minister **Menachem Begin**, a former Irgun underground leader, believed passionately in the historic \"Greater Land of Israel\" (Eretz Yisrael) and seemed an impossible partner for Arab peace. Yet Egyptian President **Anwar Sadat** faced catastrophic domestic food riots in Cairo and an economy drained by decades of military spending.\n\n<span class=\"para-ref\">[2.2]</span> On **9 November 1977**, Sadat stunned the world by declaring to the Egyptian parliament that he was prepared to travel \"to the ends of the earth, even to the Knesset itself\" to prevent further bloodshed. Ten days later, on **19 November 1977**, Sadat landed at Ben-Gurion Airport and became the first Arab leader to set foot in the Jewish state. Addressing the Israeli Knesset in Jerusalem, Sadat offered full diplomatic recognition and permanent peace in exchange for the complete return of the occupied Sinai Peninsula and self-determination for Palestinians.",
           "sources": [
             {
-              "id": "cme_l10_source_b",
+              "id": "cme_l11_source_b",
               "letter": "B",
-              "title": "Source B: President Jimmy Carter Addressing Congress on Camp David (18 September 1978)",
-              "src": "/units/cme_new/assets/carter_congress_camp_david_1978.jpg",
-              "image": "/units/cme_new/assets/carter_congress_camp_david_1978.jpg",
-              "source": "/units/cme_new/assets/carter_congress_camp_david_1978.jpg",
-              "caption": "President Jimmy Carter delivering his historic address to a joint session of the United States Congress announcing the signing of the Camp David Accords, 18 September 1978.",
-              "desc": "Archival photograph of President Jimmy Carter addressing a joint session of Congress on the Camp David Accords, 18 September 1978.",
-              "provenance": "Library of Congress, Prints & Photographs Division (LC-U9-36657), 18 September 1978.",
-              "citation": "Library of Congress, Washington D.C.",
-              "hinge_question": "How did Jimmy Carter's personal mediation and persistence prevent the Camp David negotiations from collapsing?",
-              "source_context": "For 13 days in September 1978, Carter isolated Sadat and Begin at the presidential retreat in Maryland, refusing to let them leave without an accord. When negotiations nearly collapsed over Israeli settlements in Yamit, Carter intervened personally with Begin, presenting personalized signed photographs to Begin's grandchildren to appeal to his conscience. **Hinge Question:** How did Jimmy Carter's personal mediation and persistence prevent the Camp David negotiations from collapsing?",
-              "context": "President Carter intervened extensively at Camp David to bridge differences between Sadat and Begin.",
+              "type": "written_speech",
+              "title": "Source B: President Anwar Sadat's Historic Address to the Israeli Knesset (20 November 1977)",
+              "author": "President Anwar Sadat (Arab Republic of Egypt)",
+              "date": "20 November 1977",
+              "text": "\"I have come to you today on firm ground, to build a new life, to establish peace. We all love this land, the land of God, Muslims, Christians, and Jews alike... You want to live with us in this part of the world in peace, and I say to you in all sincerity that we welcome you among us with all security and safety. We used to reject you, having our reasons and claims, but today we say to you that we agree to live with you in permanent peace and justice... Yet there can be no peace if you insist on retaining Arab territory occupied in 1967, nor without a just solution for the Palestinian people.\"",
+              "caption": "Extract from President Anwar Sadat's speech delivered before the Israeli Knesset in Jerusalem on 20 November 1977.",
+              "provenance": "Official Knesset Records, Jerusalem / Ministry of Foreign Affairs, Cairo.",
+              "citation": "Records of the Israeli Knesset, Third Session, Jerusalem.",
+              "hinge_question": "Why did Sadat's unilateral visit to Jerusalem shatter thirty years of psychological taboo between Israel and the Arab states?",
+              "source_context": "On 19–21 November 1977, Egyptian President Anwar Sadat made an unprecedented, dramatic state visit to Jerusalem, becoming the first Arab leader to travel to Israel. Speaking directly to Israeli lawmakers in the Knesset, Sadat offered full diplomatic recognition and peace in exchange for complete Israeli withdrawal from the Sinai and justice for Palestinians. **Hinge Question:** Why did Sadat's unilateral visit to Jerusalem shatter thirty years of psychological taboo between Israel and the Arab states?",
+              "context": "Sadat’s address to the Knesset broke thirty years of diplomatic paralysis, proving Egypt was willing to negotiate a separate peace.",
               "question_badge": "Author’s Purpose",
               "question_type": "Author’s Purpose",
-              "enquiry_question": "What was President Carter's purpose in delivering this address to Congress shown in Source B?",
-              "model_answer": "Carter sought to secure bipartisan congressional approval and multi-billion-dollar foreign military aid packages for both Egypt and Israel, which were the crucial financial guarantees underpinning the peace agreement.",
+              "enquiry_question": "What does Source B demonstrate about Sadat’s political purpose in addressing the Israeli Knesset in Jerusalem?",
+              "model_answer": "Source B demonstrates that Sadat sought to break the psychological barrier of hatred by directly reassuring the Israeli public that Egypt accepted Israel's right to exist in peace, while firmly linking lasting peace to the return of Arab lands seized in 1967.",
               "provenance_clues": {
-                "author": "US Congressional photo service.",
-                "audience": "Members of the Senate, House of Representatives, and American television viewers.",
-                "motive": "To mobilize political and financial support for the expensive commitments of the Camp David Accords.",
-                "hinge_question": "How did Jimmy Carter's personal mediation and persistence prevent the Camp David negotiations from collapsing?"
+                "author": "Egyptian President Anwar Sadat.",
+                "audience": "Members of the Israeli Knesset, the Israeli public, and the worldwide television audience.",
+                "motive": "To demonstrate moral courage, break diplomatic deadlock, and force Israeli leaders to reciprocate with territorial concessions in Sinai.",
+                "hinge_question": "Why did Sadat's unilateral visit to Jerusalem shatter thirty years of psychological taboo between Israel and the Arab states?"
               },
               "teacher_notes": {
-                "source_context": "For 13 days in September 1978, Carter isolated Sadat and Begin at the presidential retreat in Maryland, refusing to let them leave without an accord. When negotiations nearly collapsed over Israeli settlements in Yamit, Carter intervened personally with Begin, presenting personalized signed photographs to Begin's grandchildren to appeal to his conscience. **Hinge Question:** How did Jimmy Carter's personal mediation and persistence prevent the Camp David negotiations from collapsing?"
+                "source_context": "On 19–21 November 1977, Egyptian President Anwar Sadat made an unprecedented, dramatic state visit to Jerusalem, becoming the first Arab leader to travel to Israel. Speaking directly to Israeli lawmakers in the Knesset, Sadat offered full diplomatic recognition and peace in exchange for complete Israeli withdrawal from the Sinai and justice for Palestinians. **Hinge Question:** Why did Sadat's unilateral visit to Jerusalem shatter thirty years of psychological taboo between Israel and the Arab states?"
               }
             }
           ],
@@ -10925,31 +10890,31 @@ const cme_new_data = {
           "text": "<span class=\"para-ref\">[3.1]</span> When direct bilateral negotiations between Begin and Sadat deadlocked over Israeli settlements in Sinai and Palestinian autonomy, US President **Jimmy Carter** took the immense political gamble of inviting both leaders to the secluded presidential retreat at **Camp David**, Maryland. For thirteen agonizing days from **5 to 17 September 1978**, Carter engaged in marathon mediation, shuttling between Begin’s and Sadat’s cabins when the two men refused to speak to each other after day three.\n\n<span class=\"para-ref\">[3.2]</span> Carter rescued the summit from collapse by threatening to terminate US foreign aid and personally appealing to Begin’s concern for his grandchildren's future. On **17 September 1978**, the summit concluded with the signing of the **Camp David Accords**, which established two frameworks: a bilateral framework for a peace treaty returning the entire Sinai Peninsula to Egypt in exchange for diplomatic recognition, and a vague framework for Palestinian autonomy in the West Bank and Gaza Strip.",
           "sources": [
             {
-              "id": "cme_l10_source_c",
+              "id": "cme_l11_source_c",
               "letter": "C",
-              "title": "Source C: The Camp David Accords Framework Document (September 1978)",
-              "src": "/units/cme_new/assets/camp_david_accords.png",
-              "image": "/units/cme_new/assets/camp_david_accords.png",
-              "source": "/units/cme_new/assets/camp_david_accords.png",
-              "caption": "Facsimile copy of the signed 'Framework for Peace in the Middle East' signed by Anwar Sadat and Menachem Begin at Camp David on 17 September 1978.",
-              "desc": "Documentary photograph of the signed Camp David Accords text.",
-              "provenance": "US National Archives, Washington D.C. (RG 59 / Department of State Treaties), September 1978.",
-              "citation": "US National Archives, Washington D.C.",
-              "hinge_question": "Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?",
-              "source_context": "The Camp David framework contained two parts: a detailed bilateral treaty between Egypt and Israel, and a vague outline for five years of interim Palestinian administrative self-government in the West Bank and Gaza. Because the framework granted no guarantee of an independent state and gave Israel veto power over return of refugees, Palestinian leaders completely rejected it as a sham. **Hinge Question:** Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?",
-              "context": "The Camp David Accords established a framework for Egyptian-Israeli peace and interim Palestinian autonomy.",
-              "question_badge": "Historical Utility",
-              "question_type": "Historical Utility",
-              "enquiry_question": "How useful is Source C for an enquiry into why Palestinians rejected the 1978 Camp David Accords?",
-              "model_answer": "Source C is useful because it shows that while Egypt and Israel made a binding peace treaty, the plan for Palestinian autonomy was vague, had no guarantee of statehood, and excluded Palestinian leaders.",
+              "title": "Source C: Israeli Prime Minister Menachem Begin & The Camp David Accords (September 1978)",
+              "src": "/units/cme_new/assets/menachem_begin.jpeg",
+              "image": "/units/cme_new/assets/menachem_begin.jpeg",
+              "source": "/units/cme_new/assets/menachem_begin.jpeg",
+              "caption": "Menachem Begin, former underground Irgun commander and Likud Prime Minister who negotiated the historic Camp David Accords with Egypt, 1978.",
+              "desc": "Archival portrait photograph of Israeli Prime Minister Menachem Begin.",
+              "provenance": "Israel Government Press Office (GPO D1-1978), 1978.",
+              "citation": "Israel Government Press Office, Jerusalem.",
+              "hinge_question": "Why was a hardline nationalist like Begin capable of surrendering the entire Sinai when Labor leaders could not?",
+              "source_context": "As a right-wing Revisionist Zionist who had fiercely opposed earlier compromises, Begin possessed the unimpeachable nationalist credentials needed to evacuate Jewish settlements like Yamit in Sinai without being branded a traitor. Crucially, Begin gave up Sinai to secure Egyptian neutrality, allowing Israel to retain permanent control over Judea and Samaria (the West Bank). **Hinge Question:** Why was a hardline nationalist like Begin capable of surrendering the entire Sinai when Labor leaders could not?",
+              "context": "Likud Prime Minister Menachem Begin agreed to return the entire Sinai in exchange for a separate peace with Egypt.",
+              "question_badge": "Source Inference",
+              "question_type": "Source Inference",
+              "enquiry_question": "What can you infer from Source C about the ideological trade-offs made by Menachem Begin at Camp David?",
+              "model_answer": "Source C indicates that Begin made painful territorial concessions in the non-biblical Sinai Peninsula specifically to split the Arab world, neutralize Israel’s most powerful military opponent, and protect Israeli sovereignty over the biblically sacred West Bank.",
               "provenance_clues": {
-                "author": "Legal counsel for the United States, Egypt, and Israel.",
-                "audience": "Signatory cabinets, the UN Security Council, and world governments.",
-                "motive": "To codify the historic breakthrough while disguising irreconcilable differences over Palestinian statehood.",
-                "hinge_question": "Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?"
+                "author": "Official photographer for the Prime Minister's Office.",
+                "audience": "The Israeli electorate, Knesset members, and international diplomats.",
+                "motive": "To project Begin as a resolute, principled legal statesman capable of defending vital national interests.",
+                "hinge_question": "Why was a hardline nationalist like Begin capable of surrendering the entire Sinai when Labor leaders could not?"
               },
               "teacher_notes": {
-                "source_context": "The Camp David framework contained two parts: a detailed bilateral treaty between Egypt and Israel, and a vague outline for five years of interim Palestinian administrative self-government in the West Bank and Gaza. Because the framework granted no guarantee of an independent state and gave Israel veto power over return of refugees, Palestinian leaders completely rejected it as a sham. **Hinge Question:** Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?"
+                "source_context": "As a right-wing Revisionist Zionist who had fiercely opposed earlier compromises, Begin possessed the unimpeachable nationalist credentials needed to evacuate Jewish settlements like Yamit in Sinai without being branded a traitor. Crucially, Begin gave up Sinai to secure Egyptian neutrality, allowing Israel to retain permanent control over Judea and Samaria (the West Bank). **Hinge Question:** Why was a hardline nationalist like Begin capable of surrendering the entire Sinai when Labor leaders could not?"
               }
             }
           ]
@@ -10966,7 +10931,7 @@ const cme_new_data = {
           "text": "<span class=\"para-ref\">[4.1]</span> On **26 March 1979**, on the North Lawn of the White House, Menachem Begin and Anwar Sadat signed the historic **Egypt-Israel Peace Treaty**, witnessed by Jimmy Carter. Under the treaty, Israel agreed to completely evacuate the Sinai Peninsula in phases over three years, including dismantling twelve Jewish settlements (most notably Yamit) and returning the Sinai airfields to Egyptian sovereignty.\n\n<span class=\"para-ref\">[4.2]</span> In return, Egypt became the very first Arab nation to officially recognize the State of Israel, ending a 31-year state of war, establishing full diplomatic relations, exchanging ambassadors, opening borders, and guaranteeing unimpeded Israeli passage through the Suez Canal and Straits of Tiran. To cement the peace, the United States guaranteed billions of dollars in annual military and economic aid to both nations, transforming Egypt into a cornerstone of American regional strategy.",
           "sources": [
             {
-              "id": "cme_l10_source_d",
+              "id": "cme_l11_source_d",
               "letter": "D",
               "title": "Source D: The Historic White House Lawn Peace Handshake (March 1979)",
               "src": "/images/cme_treaty_triple_handshake_1979.jpg",
@@ -11011,7 +10976,7 @@ const cme_new_data = {
           "text": "<span class=\"para-ref\">[5.1]</span> While celebrated in the West, Sadat’s separate peace provoked incandescent fury across the Arab world. Arab governments condemned Sadat as a traitor who had sold out the Palestinian cause to reclaim Egyptian desert sand. The Arab League expelled Egypt from its membership, relocated its headquarters from Cairo to Tunis, severed diplomatic ties, and enacted a total economic boycott against Egyptian trade.\n\n<span class=\"para-ref\">[5.2]</span> Within Egypt, Islamic fundamentalist groups organized fierce domestic opposition. On **6 October 1981**, during the annual military parade in Cairo celebrating the eighth anniversary of the Yom Kippur canal crossing, Islamic Jihad militants led by Lieutenant **Khalid Islambouli** jumped from an artillery truck, hurling grenades and firing assault rifles into the reviewing stand. **Anwar Sadat was assassinated**, paying with his life for the peace treaty, but his successor **Sadat’s successor** chose to honor the treaty, preserving the uneasy peace with Israel.",
           "sources": [
             {
-              "id": "cme_l10_source_e",
+              "id": "cme_l11_source_e",
               "letter": "E",
               "title": "Source E: Map of the Phased Israeli Withdrawal from Sinai (1979–1982)",
               "src": "/units/cme_new/assets/sinai_returned.svg",
@@ -11045,13 +11010,69 @@ const cme_new_data = {
       "extra_videos": [],
       "sources": [
         {
-          "id": "cme_l10_source_a",
+          "id": "cme_l11_source_a",
           "letter": "A",
-          "title": "Source A: Israeli Prime Minister Menachem Begin (1978)",
+          "title": "Source A: US Secretary of State Henry Kissinger on Step-by-Step Shuttle Diplomacy (January 1974)",
+          "src": "/units/cme_new/assets/henry_kissinger.jpg",
+          "image": "/units/cme_new/assets/henry_kissinger.jpg",
+          "source": "/units/cme_new/assets/henry_kissinger.jpg",
+          "caption": "Dr Henry Kissinger, US Secretary of State who pioneered 'Shuttle Diplomacy' between Cairo, Damascus, and Jerusalem following the 1973 Yom Kippur War.",
+          "desc": "Archival portrait of US Secretary of State Henry Kissinger.",
+          "provenance": "US Department of State Historical Office / Gerald R. Ford Presidential Library.",
+          "citation": "Foreign Relations of the United States, 1969–1976, Volume XXVI, Arab-Israeli Dispute.",
+          "hinge_question": "Why did Kissinger insist on an incremental, 'step-by-step' approach rather than attempting a comprehensive peace conference at Geneva?",
+          "source_context": "Following the October 1973 War and the Arab oil embargo, US Secretary of State Henry Kissinger flew thousands of miles between Middle Eastern capitals aboard his Boeing 707. Kissinger deliberately excluded the Soviet Union and avoided intractable core disputes like Jerusalem and Palestinian sovereignty, focusing instead on military disengagement agreements (Sinai I in 1974 and Sinai II in 1975). **Hinge Question:** Why did Kissinger insist on an incremental, 'step-by-step' approach rather than attempting a comprehensive peace conference at Geneva?",
+          "context": "Kissinger's shuttle diplomacy separated Egyptian and Israeli frontline armies along the Suez Canal.",
+          "question_badge": "Source Inference",
+          "question_type": "Source Inference",
+          "enquiry_question": "What can you infer from Source A about the American objectives in conducting 'Shuttle Diplomacy' after the 1973 Yom Kippur War?",
+          "model_answer": "Source A indicates that the United States sought to stabilize the Middle East through step-by-step military disengagement, aiming to avert renewed conflict, protect Western oil supplies, and systematically edge the Soviet Union out of regional diplomacy.",
+          "provenance_clues": {
+            "author": "US Department of State diplomatic photographers.",
+            "audience": "International diplomatic community and American public.",
+            "motive": "To project Kissinger as an indispensable, tireless mediator constructing peace in the Middle East.",
+            "hinge_question": "Why did Kissinger insist on an incremental, 'step-by-step' approach rather than attempting a comprehensive peace conference at Geneva?"
+          },
+          "teacher_notes": {
+            "source_context": "Following the October 1973 War and the Arab oil embargo, US Secretary of State Henry Kissinger flew thousands of miles between Middle Eastern capitals aboard his Boeing 707. Kissinger deliberately excluded the Soviet Union and avoided intractable core disputes like Jerusalem and Palestinian sovereignty, focusing instead on military disengagement agreements (Sinai I in 1974 and Sinai II in 1975). **Hinge Question:** Why did Kissinger insist on an incremental, 'step-by-step' approach rather than attempting a comprehensive peace conference at Geneva?"
+          }
+        },
+        {
+          "id": "cme_l11_source_b",
+          "letter": "B",
+          "type": "written_speech",
+          "title": "Source B: President Anwar Sadat's Historic Address to the Israeli Knesset (20 November 1977)",
+          "author": "President Anwar Sadat (Arab Republic of Egypt)",
+          "date": "20 November 1977",
+          "text": "\"I have come to you today on firm ground, to build a new life, to establish peace. We all love this land, the land of God, Muslims, Christians, and Jews alike... You want to live with us in this part of the world in peace, and I say to you in all sincerity that we welcome you among us with all security and safety. We used to reject you, having our reasons and claims, but today we say to you that we agree to live with you in permanent peace and justice... Yet there can be no peace if you insist on retaining Arab territory occupied in 1967, nor without a just solution for the Palestinian people.\"",
+          "caption": "Extract from President Anwar Sadat's speech delivered before the Israeli Knesset in Jerusalem on 20 November 1977.",
+          "provenance": "Official Knesset Records, Jerusalem / Ministry of Foreign Affairs, Cairo.",
+          "citation": "Records of the Israeli Knesset, Third Session, Jerusalem.",
+          "hinge_question": "Why did Sadat's unilateral visit to Jerusalem shatter thirty years of psychological taboo between Israel and the Arab states?",
+          "source_context": "On 19–21 November 1977, Egyptian President Anwar Sadat made an unprecedented, dramatic state visit to Jerusalem, becoming the first Arab leader to travel to Israel. Speaking directly to Israeli lawmakers in the Knesset, Sadat offered full diplomatic recognition and peace in exchange for complete Israeli withdrawal from the Sinai and justice for Palestinians. **Hinge Question:** Why did Sadat's unilateral visit to Jerusalem shatter thirty years of psychological taboo between Israel and the Arab states?",
+          "context": "Sadat’s address to the Knesset broke thirty years of diplomatic paralysis, proving Egypt was willing to negotiate a separate peace.",
+          "question_badge": "Author’s Purpose",
+          "question_type": "Author’s Purpose",
+          "enquiry_question": "What does Source B demonstrate about Sadat’s political purpose in addressing the Israeli Knesset in Jerusalem?",
+          "model_answer": "Source B demonstrates that Sadat sought to break the psychological barrier of hatred by directly reassuring the Israeli public that Egypt accepted Israel's right to exist in peace, while firmly linking lasting peace to the return of Arab lands seized in 1967.",
+          "provenance_clues": {
+            "author": "Egyptian President Anwar Sadat.",
+            "audience": "Members of the Israeli Knesset, the Israeli public, and the worldwide television audience.",
+            "motive": "To demonstrate moral courage, break diplomatic deadlock, and force Israeli leaders to reciprocate with territorial concessions in Sinai.",
+            "hinge_question": "Why did Sadat's unilateral visit to Jerusalem shatter thirty years of psychological taboo between Israel and the Arab states?"
+          },
+          "teacher_notes": {
+            "source_context": "On 19–21 November 1977, Egyptian President Anwar Sadat made an unprecedented, dramatic state visit to Jerusalem, becoming the first Arab leader to travel to Israel. Speaking directly to Israeli lawmakers in the Knesset, Sadat offered full diplomatic recognition and peace in exchange for complete Israeli withdrawal from the Sinai and justice for Palestinians. **Hinge Question:** Why did Sadat's unilateral visit to Jerusalem shatter thirty years of psychological taboo between Israel and the Arab states?"
+          }
+        },
+        {
+          "id": "cme_l11_source_c",
+          "letter": "C",
+          "title": "Source C: Israeli Prime Minister Menachem Begin & The Camp David Accords (September 1978)",
           "src": "/units/cme_new/assets/menachem_begin.jpeg",
           "image": "/units/cme_new/assets/menachem_begin.jpeg",
           "source": "/units/cme_new/assets/menachem_begin.jpeg",
-          "caption": "Menachem Begin, former underground Irgun commander and Likud Prime Minister who negotiated the historic peace agreement with Egypt, 1978.",
+          "caption": "Menachem Begin, former underground Irgun commander and Likud Prime Minister who negotiated the historic Camp David Accords with Egypt, 1978.",
           "desc": "Archival portrait photograph of Israeli Prime Minister Menachem Begin.",
           "provenance": "Israel Government Press Office (GPO D1-1978), 1978.",
           "citation": "Israel Government Press Office, Jerusalem.",
@@ -11060,8 +11081,8 @@ const cme_new_data = {
           "context": "Likud Prime Minister Menachem Begin agreed to return the entire Sinai in exchange for a separate peace with Egypt.",
           "question_badge": "Source Inference",
           "question_type": "Source Inference",
-          "enquiry_question": "What can you infer from Source A about the ideological trade-offs made by Menachem Begin at Camp David?",
-          "model_answer": "Source A indicates that Begin made painful territorial concessions in the non-biblical Sinai Peninsula specifically to split the Arab world and protect Israeli sovereignty over the biblically sacred heartland of Judea and Samaria.",
+          "enquiry_question": "What can you infer from Source C about the ideological trade-offs made by Menachem Begin at Camp David?",
+          "model_answer": "Source C indicates that Begin made painful territorial concessions in the non-biblical Sinai Peninsula specifically to split the Arab world, neutralize Israel’s most powerful military opponent, and protect Israeli sovereignty over the biblically sacred West Bank.",
           "provenance_clues": {
             "author": "Official photographer for the Prime Minister's Office.",
             "audience": "The Israeli electorate, Knesset members, and international diplomats.",
@@ -11073,63 +11094,7 @@ const cme_new_data = {
           }
         },
         {
-          "id": "cme_l10_source_b",
-          "letter": "B",
-          "title": "Source B: President Jimmy Carter Addressing Congress on Camp David (18 September 1978)",
-          "src": "/units/cme_new/assets/carter_congress_camp_david_1978.jpg",
-          "image": "/units/cme_new/assets/carter_congress_camp_david_1978.jpg",
-          "source": "/units/cme_new/assets/carter_congress_camp_david_1978.jpg",
-          "caption": "President Jimmy Carter delivering his historic address to a joint session of the United States Congress announcing the signing of the Camp David Accords, 18 September 1978.",
-          "desc": "Archival photograph of President Jimmy Carter addressing a joint session of Congress on the Camp David Accords, 18 September 1978.",
-          "provenance": "Library of Congress, Prints & Photographs Division (LC-U9-36657), 18 September 1978.",
-          "citation": "Library of Congress, Washington D.C.",
-          "hinge_question": "How did Jimmy Carter's personal mediation and persistence prevent the Camp David negotiations from collapsing?",
-          "source_context": "For 13 days in September 1978, Carter isolated Sadat and Begin at the presidential retreat in Maryland, refusing to let them leave without an accord. When negotiations nearly collapsed over Israeli settlements in Yamit, Carter intervened personally with Begin, presenting personalized signed photographs to Begin's grandchildren to appeal to his conscience. **Hinge Question:** How did Jimmy Carter's personal mediation and persistence prevent the Camp David negotiations from collapsing?",
-          "context": "President Carter intervened extensively at Camp David to bridge differences between Sadat and Begin.",
-          "question_badge": "Author’s Purpose",
-          "question_type": "Author’s Purpose",
-          "enquiry_question": "What was President Carter's purpose in delivering this address to Congress shown in Source B?",
-          "model_answer": "Carter sought to secure bipartisan congressional approval and multi-billion-dollar foreign military aid packages for both Egypt and Israel, which were the crucial financial guarantees underpinning the peace agreement.",
-          "provenance_clues": {
-            "author": "US Congressional photo service.",
-            "audience": "Members of the Senate, House of Representatives, and American television viewers.",
-            "motive": "To mobilize political and financial support for the expensive commitments of the Camp David Accords.",
-            "hinge_question": "How did Jimmy Carter's personal mediation and persistence prevent the Camp David negotiations from collapsing?"
-          },
-          "teacher_notes": {
-            "source_context": "For 13 days in September 1978, Carter isolated Sadat and Begin at the presidential retreat in Maryland, refusing to let them leave without an accord. When negotiations nearly collapsed over Israeli settlements in Yamit, Carter intervened personally with Begin, presenting personalized signed photographs to Begin's grandchildren to appeal to his conscience. **Hinge Question:** How did Jimmy Carter's personal mediation and persistence prevent the Camp David negotiations from collapsing?"
-          }
-        },
-        {
-          "id": "cme_l10_source_c",
-          "letter": "C",
-          "title": "Source C: The Camp David Accords Framework Document (September 1978)",
-          "src": "/units/cme_new/assets/camp_david_accords.png",
-          "image": "/units/cme_new/assets/camp_david_accords.png",
-          "source": "/units/cme_new/assets/camp_david_accords.png",
-          "caption": "Facsimile copy of the signed 'Framework for Peace in the Middle East' signed by Anwar Sadat and Menachem Begin at Camp David on 17 September 1978.",
-          "desc": "Documentary photograph of the signed Camp David Accords text.",
-          "provenance": "US National Archives, Washington D.C. (RG 59 / Department of State Treaties), September 1978.",
-          "citation": "US National Archives, Washington D.C.",
-          "hinge_question": "Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?",
-          "source_context": "The Camp David framework contained two parts: a detailed bilateral treaty between Egypt and Israel, and a vague outline for five years of interim Palestinian administrative self-government in the West Bank and Gaza. Because the framework granted no guarantee of an independent state and gave Israel veto power over return of refugees, Palestinian leaders completely rejected it as a sham. **Hinge Question:** Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?",
-          "context": "The Camp David Accords established a framework for Egyptian-Israeli peace and interim Palestinian autonomy.",
-          "question_badge": "Historical Utility",
-          "question_type": "Historical Utility",
-          "enquiry_question": "How useful is Source C for an enquiry into why Palestinians rejected the 1978 Camp David Accords?",
-          "model_answer": "Source C is useful because it shows that while Egypt and Israel made a binding peace treaty, the plan for Palestinian autonomy was vague, had no guarantee of statehood, and excluded Palestinian leaders.",
-          "provenance_clues": {
-            "author": "Legal counsel for the United States, Egypt, and Israel.",
-            "audience": "Signatory cabinets, the UN Security Council, and world governments.",
-            "motive": "To codify the historic breakthrough while disguising irreconcilable differences over Palestinian statehood.",
-            "hinge_question": "Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?"
-          },
-          "teacher_notes": {
-            "source_context": "The Camp David framework contained two parts: a detailed bilateral treaty between Egypt and Israel, and a vague outline for five years of interim Palestinian administrative self-government in the West Bank and Gaza. Because the framework granted no guarantee of an independent state and gave Israel veto power over return of refugees, Palestinian leaders completely rejected it as a sham. **Hinge Question:** Why was the Palestinian autonomy framework in the Camp David Accords rejected by both the PLO and Jordan?"
-          }
-        },
-        {
-          "id": "cme_l10_source_d",
+          "id": "cme_l11_source_d",
           "letter": "D",
           "title": "Source D: The Historic White House Lawn Peace Handshake (March 1979)",
           "src": "/images/cme_treaty_triple_handshake_1979.jpg",
@@ -11157,7 +11122,7 @@ const cme_new_data = {
           }
         },
         {
-          "id": "cme_l10_source_e",
+          "id": "cme_l11_source_e",
           "letter": "E",
           "title": "Source E: Map of the Phased Israeli Withdrawal from Sinai (1979–1982)",
           "src": "/units/cme_new/assets/sinai_returned.svg",
@@ -11712,8 +11677,8 @@ const cme_new_data = {
         {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=LYhJOjv0Yc8",
-          "title": "Middle East Eye / Archival: The Arab World Reaction & The Price of Peace",
-          "duration": "6 mins 30 secs",
+          "title": "Al Jazeera English: Cold Peace – The Arab World Backlash & The Price of Peace",
+          "duration": "12 mins 13 secs",
           "pathway": "Arab Perspective",
           "teacher_guidance": "Explores the fury of the Arab League, Egypt's expulsion, the failure of the Palestinian autonomy framework, and Sadat's assassination on 6 October 1981. Recommended Watch Window: 00:30–04:45 • Lesson Phase: Arab Perspective & Cost of Compromise. Tone Alert: Sombre archival record examining Arab fury, Egypt's regional isolation, and Sadat's tragic fate.",
           "viewing_task": "<ol><li><strong>[01:15] Recall:</strong> On what date was President Anwar Sadat assassinated by radical Islamist soldiers during a military victory parade in Cairo?</li><li><strong>[02:40] Explain:</strong> Why did the Arab League brand Egypt a traitor, sever all diplomatic relations, and move its headquarters from Cairo to Tunis following the 1979 treaty?</li><li><strong>[04:00] Challenge:</strong> Analyze the tragic fate of peacemakers in the Middle East: why was Anwar Sadat celebrated as a visionary hero in the West while being reviled by radical factions at home?</li></ol>",
@@ -12520,30 +12485,24 @@ const cme_new_data = {
           }
         },
         {
-          "id": "cme_l11_source_e",
+          "id": "cme_l12_source_e",
           "letter": "E",
-          "title": "Source E: Defense Minister Ariel Sharon Overlooking West Beirut During the Siege (August 1982)",
-          "src": "/units/cme_new/assets/sharon_beirut_1982.jpg",
-          "image": "/units/cme_new/assets/sharon_beirut_1982.jpg",
-          "source": "/units/cme_new/assets/sharon_beirut_1982.jpg",
-          "caption": "Defense Minister Ariel Sharon surveying military positions and artillery lines overlooking besieged West Beirut from an IDF observation post with operational maps, August 1982.",
-          "desc": "Archival photograph of Ariel Sharon directing the siege of West Beirut in August 1982.",
-          "provenance": "Israel Government Press Office / Moshe Milner (GPO D1-1982), August 1982.",
-          "citation": "Israel Government Press Office / Moshe Milner.",
-          "hinge_question": "How does Sharon's direct presence overlooking Beirut illustrate why Israeli critics accused him of fighting a personal war beyond the Cabinet's approved mandate?",
-          "source_context": "During Operation Peace for Galilee in the summer of 1982, Defense Minister Ariel Sharon pushed IDF forces far beyond the 40-kilometer security zone approved by the Israeli Cabinet, trapping 15,000 PLO fighters and Chairman Yasser Arafat inside West Beirut. For ten weeks, Israeli artillery and air strikes pounded the capital until multinational peacekeepers evacuated the PLO to Tunisia. Sharon’s aggressive forward command sparked severe domestic controversy, culminating in his resignation following the Kahan Commission inquiry into the Sabra and Shatila massacres. **Hinge Question:** How does Sharon's direct presence overlooking Beirut illustrate why Israeli critics accused him of fighting a personal war beyond the Cabinet's approved mandate?",
-          "context": "Defense Minister Ariel Sharon personally directed the forward encirclement of West Beirut in August 1982, drawing severe public and political criticism.",
+          "target_stage": 5,
+          "title": "Source E: Yasser Arafat's Historic Address to the UN General Assembly in Geneva (13 December 1988)",
+          "type": "written",
+          "provenance": "Official speech by PLO Chairman Yasser Arafat before the United Nations General Assembly convened in Geneva, Switzerland, 13 December 1988.",
+          "citation": "United Nations Audiovisual Library / UN General Assembly Official Records (A/43/PV.78).",
+          "content": "The Palestine National Council has decided to establish a Palestinian State on our Palestinian land, with Jerusalem as its capital... We accept UN Security Council Resolutions 242 and 338 as the basis for negotiations with Israel within the framework of an international peace conference. We reiterate our total and categorical rejection of all forms of terrorism, including individual, group, and state terrorism. We seek peace, a just and comprehensive peace based on the rights of all peoples to live in security.",
+          "caption": "Extract from PLO Chairman Yasser Arafat's landmark speech to the UN General Assembly in Geneva on 13 December 1988, officially accepting UN Resolution 242 and renouncing terrorism.",
+          "desc": "Speech extract of Yasser Arafat accepting Resolution 242 and renouncing terrorism in Geneva.",
+          "source_context": "Under intense US and international diplomatic pressure following the Algiers declaration and the First Intifada, Yasser Arafat addressed the special session of the UN General Assembly in Geneva in December 1988. By explicitly accepting Resolution 242 and renouncing terrorism, Arafat met the longstanding US preconditions, opening direct diplomatic dialogue between Washington and the PLO for the first time. **Hinge Question:** Why was Arafat's public acceptance of Resolution 242 viewed by radical Palestinian factions as an unacceptable surrender of the 1948 lands?",
           "question_badge": "Historical Utility",
           "question_type": "Historical Utility",
-          "enquiry_question": "How useful is Source E for an inquiry into the extent of Ariel Sharon's personal direction of the 1982 military campaign in Lebanon?",
-          "model_answer": "Source E is exceptionally useful because it visually captures Sharon on the forward frontline overlooking the Lebanese capital with operational maps, demonstrating his hands-on command and personal determination to destroy the PLO infrastructure in West Beirut.",
-          "provenance_clues": {
-            "author": "Moshe Milner, senior photographer for the Israeli Government Press Office.",
-            "audience": "Israeli cabinet members, military commanders, and the public record.",
-            "motive": "To document Defense Minister Sharon's strategic surveillance of West Beirut during active operations."
-          },
+          "enquiry_question": "How useful is Source E for an enquiry into why the PLO changed its diplomatic strategy during the First Intifada in 1988?",
+          "model_answer": "Source E is extremely useful because it provides direct evidence of the PLO's historic diplomatic concession: by explicitly accepting Resolutions 242 and 338 and renouncing terrorism, Arafat officially acknowledged Israel's existence and paved the way for international recognition and future direct negotiations.",
+          "hinge_question": "Why was Arafat's public acceptance of Resolution 242 viewed by radical Palestinian factions as an unacceptable surrender of the 1948 lands?",
           "teacher_notes": {
-            "source_context": "During Operation Peace for Galilee in the summer of 1982, Defense Minister Ariel Sharon pushed IDF forces far beyond the 40-kilometer security zone approved by the Israeli Cabinet, trapping 15,000 PLO fighters and Chairman Yasser Arafat inside West Beirut. For ten weeks, Israeli artillery and air strikes pounded the capital until multinational peacekeepers evacuated the PLO to Tunisia. Sharon’s aggressive forward command sparked severe domestic controversy, culminating in his resignation following the Kahan Commission inquiry into the Sabra and Shatila massacres. **Hinge Question:** How does Sharon's direct presence overlooking Beirut illustrate why Israeli critics accused him of fighting a personal war beyond the Cabinet's approved mandate?"
+            "source_context": "Under intense US and international diplomatic pressure following the Algiers declaration and the First Intifada, Yasser Arafat addressed the special session of the UN General Assembly in Geneva in December 1988. By explicitly accepting Resolution 242 and renouncing terrorism, Arafat met the longstanding US preconditions, opening direct diplomatic dialogue between Washington and the PLO for the first time. **Hinge Question:** Why was Arafat's public acceptance of Resolution 242 viewed by radical Palestinian factions as an unacceptable surrender of the 1948 lands?"
           }
         }
       ],
@@ -16802,7 +16761,6 @@ const cme_new_data = {
       "image": "/units/cme_new/assets/benjamin_netanyahu.jpg"
     }
   ],
-  "id": "cme_new"
+  "id": "cme_new",
+  "edition": "2026.1"
 };
-
-export default cme_new_data;
