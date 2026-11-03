@@ -88,9 +88,31 @@ function localChessSyncPlugin() {
   };
 }
 
+function directPdfServePlugin() {
+  return {
+    name: 'direct-pdf-serve-middleware',
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        if (req.url && req.url.startsWith('/pdfs/')) {
+          const cleanUrl = req.url.split('?')[0].split('#')[0];
+          const decodedUrl = decodeURIComponent(cleanUrl);
+          const diskPath = path.resolve(process.cwd(), 'public', decodedUrl.replace(/^\//, ''));
+          if (fs.existsSync(diskPath) && fs.statSync(diskPath).isFile()) {
+            res.setHeader('Content-Type', 'application/pdf');
+            res.setHeader('Content-Length', fs.statSync(diskPath).size);
+            res.setHeader('Cache-Control', 'no-cache');
+            return fs.createReadStream(diskPath).pipe(res);
+          }
+        }
+        next();
+      });
+    },
+  };
+}
+
 export default defineConfig({
   root: '.',
-  plugins: [serviceWorkerVersionPlugin(), localChessSyncPlugin()],
+  plugins: [serviceWorkerVersionPlugin(), localChessSyncPlugin(), directPdfServePlugin()],
   build: {
     outDir: 'dist',
     emptyOutDir: true,
