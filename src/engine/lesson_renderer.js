@@ -9094,15 +9094,17 @@ export function renderLesson(lesson) {
         `;
       const isPaper3Weimar =
         (typeof unitId !== 'undefined' &&
-          (unitId === 'weimar_nazi_germany' || unitId === 'germany')) ||
+          (unitId === 'weimar_nazi_germany' || unitId === 'germany' || unitId === 'usa')) ||
         (typeof activeUnit !== 'undefined' &&
           activeUnit &&
-          activeUnit.id === 'weimar_nazi_germany') ||
+          (activeUnit.id === 'weimar_nazi_germany' || activeUnit.id === 'usa')) ||
         (typeof window !== 'undefined' &&
           (window.currentUnitId === 'weimar_nazi_germany' ||
+            window.currentUnitId === 'usa' ||
             (window.location &&
               window.location.search &&
-              window.location.search.includes('weimar_nazi_germany'))));
+              (window.location.search.includes('weimar_nazi_germany') ||
+                window.location.search.includes('usa')))));
 
       const formatExamQuestionTitle = (qText, fallbackIdx, qObj) => {
         if (!qText) return '';
@@ -10069,7 +10071,24 @@ export function renderLesson(lesson) {
           const secTitle = isInterpUnit
             ? 'Section B: Historiographical Interpretations'
             : 'Section B: Historical Enquiry & Source Utility';
-          const secBadge = isInterpUnit ? 'Questions 3(b) & 3(d)' : 'Question 3(a)';
+          const hasQ3bc = secBQuestions.some(
+            ({ q }) =>
+              /3\(b\)|3\(c\)|difference|reason/i.test(q.type || '') ||
+              /difference|reason/i.test(q.question || ''),
+          );
+          const hasQ3d = secBQuestions.some(
+            ({ q }) =>
+              /verdict|3\(d\)/i.test(q.type || '') ||
+              /how far do you agree/i.test(q.question || ''),
+          );
+          let secBadge = 'Question 3(a)';
+          if (hasQ3bc && hasQ3d) {
+            secBadge = 'Questions 3(b) & 3(d)';
+          } else if (hasQ3bc) {
+            secBadge = 'Questions 3(b) & 3(c)';
+          } else if (hasQ3d) {
+            secBadge = 'Question 3(d)';
+          }
           htmlExamPractice += `
             <div class="exam-section-wrapper exam-section-b-wrapper" style="margin-bottom: 20px;">
               <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 2px solid #cbd5e1; padding-bottom: 6px;">

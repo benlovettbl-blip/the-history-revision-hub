@@ -945,26 +945,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "Source A:\n\"In the Southern counties, the registration process is completely in the hands of the white registrar. Black applicants are subjected to impossible hurdles: they are forced to take 'literacy tests' where they must explain obscure, highly complex constitutional legal terms, while white citizens are simply asked to write their own names. Fear of violence hangs over every applicant, but economic retaliation is even swifter: even if a Black man somehow passes the test, his employer will likely fire him the very next day, his landlord will evict him, and the local bank will call in his farm loan.\"\n\nGive two things you can infer from Source A about voting rights in the Southern states. (4 marks)",
-          "starter": "Inference 1: I can infer that the voter registration system was deliberately corrupt and rigged in favour of white citizens.",
-          "model": "Inference 1: I can infer that the voter registration system was deliberately corrupt and rigged in favour of white citizens.\nDetails: \"They are forced to take 'literacy tests' where they must explain obscure, highly complex constitutional legal terms, while white citizens are simply asked to write their own names.\"\nInference 2: I can infer that economic intimidation was used as a weapon to stop Black Americans from trying to vote.\nDetails: \"Even if a Black man somehow passes the test, his employer will likely fire him the very next day.\""
-        },
-        {
-          "qNum": 2,
-          "question": "Why did the NAACP focus on legal litigation in federal courts rather than mass direct action in the early 1950s?",
-          "starter": "Consider: Consider the lack of federal protection and the power of binding precedents.",
-          "model": "The NAACP believed that federal court victories could establish binding, national constitutional precedents that local Southern governments could not legally ignore, providing a top-down dismantling of Jim Crow under federal protection."
-        },
-        {
-          "qNum": 3,
-          "question": "How did voting disenfranchisement (like literacy tests and poll taxes) prevent Black Americans from challenging segregation locally?",
-          "starter": "Consider: Think about who elects judges, sheriffs, and school board members.",
-          "model": "Without the vote, Black Americans had no political power to elect local school boards, sheriffs, or judges who enforced segregation laws. This ensured that the legal and political systems remained entirely under white control."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "The Power of Constitutional Law",
         "leftText": "The only way to dismantle segregation permanently is through federal court rulings that establish binding constitutional precedents. Grassroots actions are easily crushed by local police without federal legal protection.",
@@ -1275,23 +1256,81 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "4 marks",
+        "tariff": "Section A: Questions 1 & 2 (4 marks & 12 marks)",
+        "stimulus": [
+          {
+            "title": "Source A: Segregated Municipal Railway Waiting Room, Jacksonville, Florida, early 1950s",
+            "image": "/units/usa/assets/sources/colored-waiting-room-sign.jpg",
+            "caption": "A metal sign reading 'COLORED WAITING ROOM' with directional arrows directing Black passengers away from white municipal facilities.",
+            "provenance": "Official photograph documenting Jim Crow segregation signage at a Southern passenger terminal, early 1950s (US National Archives · Record Group 21 / Southern Railway Photographic Records).",
+            "extract": "A large metal sign suspended above the municipal terminal entrance reads: \"COLORED WAITING ROOM\" with dual directional arrows pointing towards the segregated facility. Under Jim Crow laws, Black travelers were strictly relegated to separate facilities under penalty of fine or imprisonment."
+          }
+        ],
         "questions": [
           {
             "tariff": "4 marks",
             "type": "inference_4m",
             "marks": 4,
-            "question": "1. Give two things you can infer from Source A about racial segregation in the American South in the early 1950s. [4 marks]",
-            "stimulus": "Source A: A segregated railway waiting room sign in Jacksonville, Florida, early 1950s reading 'Colored Waiting Room'.",
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that racial segregation was strictly enforced by law and physical barriers in public transport facilities.<br><strong>Details in the source that tell me this:</strong><br>A prominent, permanent metal sign suspended above the doorway explicitly designates the room for 'Colored' passengers only.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that Black Americans were systematically treated as second-class citizens with inferior, segregated public accommodations.<br><strong>Details in the source that tell me this:</strong><br>The separate, isolated entrance reflects the Jim Crow legal doctrine of 'separate but equal', which in practice enforced racial humiliation and public subjugation.</p>",
+            "question": "Give two things you can infer from Source A about racial segregation in the American South in the early 1950s.",
+            "prompt": "Give two separate valid inferences. Support each inference with direct factual details from Source A.",
+            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that racial segregation was strictly enforced by law and physical infrastructure in public transport facilities.<br><strong>Details in the source that tell me this:</strong><br>A prominent, permanent metal sign suspended above the entrance explicitly designates the facility for 'Colored' passengers only, with directional arrows enforcing physical separation.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that Black Americans were systematically treated as second-class citizens and relegated to separate, inferior public accommodations.<br><strong>Details in the source that tell me this:</strong><br>The separate, designated entrance reflects the Jim Crow legal doctrine of 'separate but equal', which in practice enforced racial humiliation and public subjugation.</p>",
             "scaffolding": {
-              "acronym": "Point & Detail (4 Marks)",
-              "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
-              "sentence_starters": [
-                "Source B is useful because...",
-                "Source C is useful because...",
-                "Combined, both sources provide..."
+              "acronym": "Inference Formula (AO3)",
+              "acronym_title": "Inference + Supporting Detail (2 Points • 4 Marks)",
+              "steps": [
+                {
+                  "letter": "I1",
+                  "name": "1. First Valid Inference",
+                  "prompt": "State what the source suggests beyond obvious surface facts."
+                },
+                {
+                  "letter": "D1",
+                  "name": "2. Supporting Detail",
+                  "prompt": "Quote or describe specific evidence from Source A to prove your first inference."
+                },
+                {
+                  "letter": "I2",
+                  "name": "3. Second Valid Inference",
+                  "prompt": "Identify a distinct second historical insight from the source."
+                },
+                {
+                  "letter": "D2",
+                  "name": "4. Supporting Detail",
+                  "prompt": "Provide specific textual or visual evidence from Source A for the second inference."
+                }
+              ]
+            }
+          },
+          {
+            "tariff": "12 marks",
+            "type": "explain_why_12",
+            "marks": 12,
+            "question": "Explain why it was difficult for Black Americans in the Southern states to register to vote in the early 1950s.",
+            "stimulus": [
+              "Literacy tests",
+              "Ku Klux Klan (KKK)"
+            ],
+            "prompt": "You may use the following in your answer: (1) Literacy tests, (2) Ku Klux Klan (KKK). You must also use information of your own.",
+            "model": "One major reason why voter registration was exceedingly difficult was the institutional use of deliberately biased <strong>literacy tests and poll taxes</strong> by white state registrars. Under the doctrine of states' rights, Southern registrars held unchecked authority to administer registration tests. Black applicants were routinely asked impossible, obscure questions—such as reciting complex sections of the state constitution or guessing the number of bubbles in a bar of soap. Furthermore, impoverished Black sharecroppers could rarely afford cumulative poll taxes, legally barring hundreds of thousands from the ballot box despite the 15th Amendment.<br><br>A second decisive reason was the pervasive threat of physical terror and extralegal violence orchestrated by white supremacist groups like the <strong>Ku Klux Klan (KKK)</strong> and local police forces. Black citizens who attempted to register faced beatings, arson, and lynching, while their names were published in local newspapers. Because local sheriffs and judges were frequently Klan members or sympathizers, Black applicants knew that the law would offer no protection, creating a paralyzing climate of fear that suppressed political mobilization.<br><br>Finally, voter registration was systematically blocked by <strong>economic coercion orchestrated by White Citizens' Councils</strong>. Founded in 1954, these networks of white bankers, merchants, and landlords retaliated against any Black individual attempting to exercise civil rights. Black applicants were immediately dismissed from employment, evicted from tenant farms, and denied bank credit and mortgages. This economic stranglehold ensured that even Black citizens willing to risk physical violence were deterred by the immediate prospect of financial ruin for their families.",
+            "scaffolding": {
+              "acronym": "PEEL Structure Strip",
+              "acronym_title": "3-Paragraph Causal Analysis (PEEL • 12 Marks)",
+              "steps": [
+                {
+                  "letter": "P1",
+                  "name": "1. Legal & Bureaucratic Barriers",
+                  "prompt": "Biased literacy tests and poll taxes enforced arbitrarily by all-white registrars."
+                },
+                {
+                  "letter": "P2",
+                  "name": "2. Terror & Physical Violence",
+                  "prompt": "KKK night raids, firebombings, and lynchings operating with total judicial immunity."
+                },
+                {
+                  "letter": "P3",
+                  "name": "3. Economic Coercion (Own Knowledge)",
+                  "prompt": "White Citizens' Councils firing activists, canceling mortgages, and evicting sharecroppers."
+                }
               ]
             }
           }
@@ -1501,9 +1540,9 @@ export default {
           "type": "speech_transcript",
           "title": "Source D: From an Address by Thurgood Marshall, Chief Legal Counsel for the NAACP, to the National Convention (July 1953)",
           "date": "July 1953",
-          "image": "/units/usa/assets/sources/portraits/thurgood_marshall.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/thurgood_marshall.jpg",
-          "attribution": "Library of Congress, NAACP Records, Manuscript Division",
+          "image": "/units/usa/assets/sources/thurgood_marshall_naacp_counsel.jpg",
+          "image_url": "/units/usa/assets/sources/thurgood_marshall_naacp_counsel.jpg",
+          "attribution": "NAACP Annual Convention Records, Library of Congress Manuscript Division",
           "question_badge": "Historical Context",
           "question": "Explain how the international context of the Cold War influenced Thurgood Marshall’s legal strategy in Source D.",
           "model_answer": "Marshall leveraged Cold War geopolitics by emphasizing that American claims to lead the 'free world' against Soviet totalitarianism were severely discredited by southern racial violence and Jim Crow laws. He used this international embarrassment to pressure the federal government and Supreme Court into recognizing segregation as a strategic national liability.",
@@ -1518,8 +1557,10 @@ export default {
           },
           "hinge_question": "Did international embarrassment during the Cold War help or hinder the NAACP's domestic legal campaign?",
           "source_context": "Library of Congress, NAACP Records, Manuscript Division. Thurgood Marshall, future first African American Supreme Court Justice for NAACP national delegates, civil rights attorneys, and domestic journalists with the objective: To unite grassroots civil rights activists behind a coordinated constitutional strategy targeting the Fourteenth Amendment in federal courts.. **Hinge Question:** Did international embarrassment during the Cold War help or hinder the NAACP's domestic legal campaign?",
-          "src": "/units/usa/assets/sources/portraits/thurgood_marshall.jpg",
-          "source": "/units/usa/assets/sources/portraits/thurgood_marshall.jpg"
+          "src": "/units/usa/assets/sources/thurgood_marshall_naacp_counsel.jpg",
+          "source": "/units/usa/assets/sources/portraits/thurgood_marshall.jpg",
+          "caption": "Thurgood Marshall (1908–1993), Chief Legal Counsel for the NAACP Legal Defense Fund, who formulated and argued the landmark Brown v. Board of Education case before the US Supreme Court (Library of Congress, c. 1953).",
+          "text": "We are not asking for charity. We are not asking for special treatment. We are asking for the rights guaranteed to us under the Constitution of the United States. We have established beyond question that 'separate but equal' is a myth, designed for one purpose and one purpose only—to perpetuate the badge of slavery upon an entire race of people. The time has come to destroy segregation at its very root."
         },
         {
           "id": "usa_lesson_1_1_e",
@@ -1940,26 +1981,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "Explain why desegregation in education faced severe resistance in the years 1954–57. (12 marks)",
-          "starter": "“One reason why desegregation in education faced severe resistance in the years 1954–57 was that Southern politicians organized systematic legal and political blockades.",
-          "model": "“One reason why desegregation in education faced severe resistance in the years 1954–57 was that Southern politicians organized systematic legal and political blockades.” Southern senators signed the [[Southern Manifesto]] in 1956, pledging to resist integration. State governors like [[Orval Faubus]] of Arkansas used state forces like the [[National Guard]] at Little Rock to directly defy federal court orders. {{Therefore, political obstruction by Southern leaders was a major reason why desegregation in education faced severe resistance in the years 1954–57 because it validated local white opposition and delayed federal enforcement.}}\n\n“A second reason why desegregation in education faced severe resistance in the years 1954–57 was the aggressive social backlash and vigilante terror from grassroots segregationist groups.” [[White Citizens' Councils]] were formed to apply economic pressure, firing Black workers who supported integration. The [[Ku Klux Klan]] revived, using bombings, threats, and mob violence at school gates to intimidate the [[Little Rock Nine]]. {{Therefore, grassroots white resistance and vigilante terror were key reasons why desegregation in education faced severe resistance in the years 1954–57 because they made attending integrated schools physically dangerous for Black students.}}\n\n“A third reason why desegregation in education faced severe resistance in the years 1954–57 was the reluctance of the federal government to enforce Supreme Court rulings, which emboldened segregationists.” President Eisenhower initially refused to publicly endorse the [[Brown v. Board of Education]] decision, and only sent the [[101st Airborne Division]] to Little Rock when the governor openly defied federal law. The school board then closed Little Rock high schools in 1958 to avoid integration. {{Therefore, weak federal enforcement and local school board closures were critical reasons why desegregation in education faced severe resistance in the years 1954–57 because they allowed Southern states to evade integration orders for years.}}"
-        },
-        {
-          "qNum": 2,
-          "question": "Why did Governor Faubus choose to defy federal law at Little Rock, and what does this show about Southern state politics?",
-          "starter": "Consider: Think about white voter support and upcoming elections.",
-          "model": "Faubus needed segregationist votes for re-election. It shows that state governors were willing to trigger constitutional crises and defy federal authority for local political survival."
-        },
-        {
-          "qNum": 3,
-          "question": "How did the deployment of the 101st Airborne shift the balance of power between state and federal authorities?",
-          "starter": "Consider: Think about executive power and the enforcement of the US Constitution.",
-          "model": "It was the first time since Reconstruction that federal forces intervened to protect Black rights. It asserted federal supremacy over state defiance, proving the executive branch would enforce desegregation by military force if necessary."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "Defending Constitutional Law",
         "leftText": "Desegregation is a federal constitutional mandate. Governor Faubus' rebellion against federal court decisions was an act of defiance that required immediate presidential military suppression to assert federal supremacy.",
@@ -2269,26 +2291,50 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "12 marks",
+        "tariff": "Section B: Question 3(a) (8 marks)",
+        "stimulus": [
+          {
+            "title": "Source B: From the Unanimous Supreme Court Ruling in Brown v. Board of Education, Delivered by Chief Justice Earl Warren, 17 May 1954",
+            "image": "/units/usa/assets/sources/warren-court-1954.jpg",
+            "caption": "Chief Justice Earl Warren and the associate justices of the US Supreme Court who ruled unanimously (9-0) that racial segregation in public schools violates the 14th Amendment.",
+            "provenance": "From the official unanimous opinion delivered by Chief Justice Earl Warren in Brown v. Board of Education of Topeka, 347 U.S. 483 (1954).",
+            "extract": "\"Does segregation of children in public schools solely on the basis of race, even though the physical facilities and other 'tangible' factors may be equal, deprive the children of the minority group of equal educational opportunities? We believe that it does... To separate them from others of similar age and qualifications solely because of their race generates a feeling of inferiority as to their status in the community that may affect their hearts and minds in a way unlikely ever to be undone... We conclude that in the field of public education the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.\""
+          },
+          {
+            "title": "Source C: Contemporary Press Photograph of Elizabeth Eckford Facing a Hostile Segregationist Mob Outside Little Rock Central High School, Arkansas, 4 September 1957",
+            "image": "/units/usa/assets/sources/elizabeth-eckford-mob.jpg",
+            "caption": "Fifteen-year-old Elizabeth Eckford walking calmly towards Central High School while surrounded by an angry crowd of white adults and teenagers screaming racial insults.",
+            "provenance": "Photograph by Will Counts for the Arkansas Democrat, 4 September 1957; published internationally across newspapers and magazines.",
+            "extract": "Fifteen-year-old Elizabeth Eckford, one of the nine Black students attempting to desegregate Little Rock Central High School, clutches her school books and walks calmly forward as an enraged crowd of white segregationist adults and students shout racial epithets and threats behind her. National Guardsmen deployed by Governor Faubus turned her away with bayonets."
+          }
+        ],
         "questions": [
           {
-            "tariff": "12 marks",
-            "type": "explain_why_12",
-            "marks": 12,
-            "question": "2. Explain why it was difficult for Black Americans in the Southern states to register to vote in the early 1950s. [12 marks]",
-            "stimulus": [
-              "Literacy tests",
-              "Ku Klux Klan (KKK)"
-            ],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "One major reason why it was exceptionally difficult for Black Americans to register to vote was the institutional use of deliberately biased <strong>literacy tests and poll taxes</strong> by white state officials. Southern registrars exercised total discretion over grading these tests, routinely giving Black applicants impossibly complex constitutional questions while exempting illiterate white voters under 'grandfather clauses'. Furthermore, impoverished Black sharecroppers could rarely afford the cumulative poll taxes required before voting, legally barring hundreds of thousands from the ballot box.<br><br>A second decisive reason was the pervasive threat of physical terror and extralegal violence orchestrated by white supremacist groups like the <strong>Ku Klux Klan (KKK)</strong> and local police forces. Black citizens who attempted to register faced beatings, arson, and lynching, while their names were published in local newspapers. Consequently, white employers immediately fired Black workers and landlords evicted tenant farmers who attempted to exercise their constitutional rights, creating an atmosphere of overwhelming terror.<br><br>Finally, an underlying barrier was the absolute <strong>lack of federal intervention or legal protection</strong>. Southern courts, judges, juries, and law enforcement officers were exclusively white and committed to upholding white supremacy. Without federal marshals or voting rights legislation to enforce the 15th Amendment, Black citizens had no legal recourse when local officials illegally denied them the right to vote.",
+            "tariff": "8 marks",
+            "type": "utility_8m",
+            "marks": 8,
+            "question": "Study Sources B and C. How useful are Sources B and C for an enquiry into the challenges facing the desegregation of schools in the Southern states between 1954 and 1957?",
+            "prompt": "Evaluate both sources using Content, Contextual Knowledge (Brown v. Board 1954, Brown II 'all deliberate speed', Southern Manifesto 1956, Little Rock Nine 1957, Eisenhower deploying 101st Airborne), and Provenance.",
+            "model": "Source B is exceptionally useful because it provides the official legal foundation of the challenge to educational segregation. In his unanimous 9–0 opinion, Chief Justice Earl Warren overturns the 1896 Plessy v. Ferguson doctrine, ruling that separate educational facilities are 'inherently unequal' and generate irreversible psychological harm. From my historical knowledge, this was a revolutionary judicial turning point, inspiring the NAACP and civil rights legal teams led by Thurgood Marshall. As an official Supreme Court ruling, its provenance gives it the highest legal authority, demonstrating the federal government's constitutional commitment to integration.<br><br>Source C is equally useful because it exposes the fierce, grassroots resistance to desegregation on the ground in the Deep South. The photograph captures 15-year-old Elizabeth Eckford facing a snarling white mob at Little Rock Central High School in September 1957. From my knowledge, Arkansas Governor Orval Faubus had deployed the National Guard to block the 'Little Rock Nine', forcing President Eisenhower to send 1,200 soldiers of the 101st Airborne Division to escort the students with fixed bayonets. As an uncensored press photograph published internationally, Source C provides authentic visual evidence of the violent social hostility that made federal enforcement necessary. However, neither source details the legislative resistance of the 101 congressmen who signed the 1956 Southern Manifesto. Overall, both sources are highly useful: Source B reveals the legal breakthrough of desegregation, while Source C captures the explosive community backlash it provoked.",
             "scaffolding": {
-              "acronym": "PEEL Structure Strip",
-              "acronym_title": "3-Paragraph Causal Analysis (PEEL)",
-              "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, a second critical factor was...",
-                "Finally, an underlying driver was..."
+              "acronym": "Source Utility Framework (AO3)",
+              "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
+              "steps": [
+                {
+                  "letter": "SOURCE B",
+                  "name": "1. Source B Content & Context",
+                  "prompt": "Explain how Warren's 9-0 ruling overturned 'separate but equal' and analyse its legal authority."
+                },
+                {
+                  "letter": "SOURCE C",
+                  "name": "2. Source C Content & Context",
+                  "prompt": "Analyse the Little Rock mob photograph and Faubus's defiance requiring Eisenhower's 101st Airborne."
+                },
+                {
+                  "letter": "SYNTHESIS",
+                  "name": "3. Provenance & Synthesis",
+                  "prompt": "Interrogate the nature and origin of both official judicial text and photojournalism; reach a balanced conclusion."
+                }
               ]
             }
           }
@@ -2429,9 +2475,9 @@ export default {
           "type": "judicial_ruling",
           "title": "Source A: From the Unanimous Supreme Court Opinion Delivered by Chief Justice Earl Warren in Brown v. Board of Education (17 May 1954)",
           "date": "17 May 1954",
-          "image": "/units/usa/assets/sources/portraits/earl_warren.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/earl_warren.jpg",
-          "attribution": "United States Supreme Court Reports, 347 U.S. 483",
+          "image": "/units/usa/assets/sources/warren-court-1954.jpg",
+          "image_url": "/units/usa/assets/sources/warren-court-1954.jpg",
+          "attribution": "United States Supreme Court, Brown v. Board of Education of Topeka, 347 U.S. 483 (1954)",
           "question_badge": "Cross-Referencing",
           "question": "How does Chief Justice Warren's reasoning in Source A directly reject the constitutional doctrine established in Plessy v. Ferguson (1896)?",
           "model_answer": "Warren explicitly rejects Plessy by stating that separating children solely because of their race generates a feeling of inferiority that affects their hearts and minds in ways unlikely ever to be undone. He concluded that in public education, the doctrine of 'separate but equal' has no place, ruling that separate educational facilities are inherently unequal.",
@@ -2446,8 +2492,10 @@ export default {
           },
           "hinge_question": "Why was achieving a unanimous 9–0 decision considered essential by Chief Justice Earl Warren?",
           "source_context": "United States Supreme Court Reports, 347 U.S. 483. Chief Justice Earl Warren, speaking on behalf of a unanimous nine-member court for The American judicial system, state governments, and the American citizenry with the objective: To issue an unequivocal, unanimous legal mandate dismantling the constitutional foundation of racial apartheid in American education.. **Hinge Question:** Why was achieving a unanimous 9–0 decision considered essential by Chief Justice Earl Warren?",
-          "src": "/units/usa/assets/sources/portraits/earl_warren.jpg",
-          "source": "/units/usa/assets/sources/portraits/earl_warren.jpg"
+          "src": "/units/usa/assets/sources/warren-court-1954.jpg",
+          "source": "/units/usa/assets/sources/portraits/earl_warren.jpg",
+          "caption": "The nine justices of the Warren Court in judicial robes (May 1954). Chief Justice Earl Warren (seated center) forged a unanimous 9–0 decision outlawing racial segregation in public schools.",
+          "text": "Does segregation of children in public schools solely on the basis of race, even though the physical facilities and other 'tangible' factors may be equal, deprive the children of the minority group of equal educational opportunities? We believe that it does... To separate them from others of similar age and qualifications solely because of their race generates a feeling of inferiority as to their status in the community that may affect their hearts and minds in a way unlikely ever to be undone... We conclude that in the field of public education the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal."
         },
         {
           "id": "usa_lesson_1_2_c",
@@ -2455,9 +2503,9 @@ export default {
           "type": "official_manifesto",
           "title": "Source B: Declaration of Constitutional Principles (The Southern Manifesto) Signed by 101 Southern Congressmen (12 March 1956)",
           "date": "12 March 1956",
-          "image": "/units/usa/assets/sources/southern-manifesto-signing.jpg",
-          "image_url": "/units/usa/assets/sources/southern-manifesto-signing.jpg",
-          "attribution": "Congressional Record, 84th Congress, 2nd Session, Washington D.C.",
+          "image": "/units/usa/assets/sources/southern_manifesto_congressional_record_1956.png",
+          "image_url": "/units/usa/assets/sources/southern_manifesto_congressional_record_1956.png",
+          "attribution": "Congressional Record, 84th Congress, 2nd Session, Vol. 102, Part 4 (12 March 1956)",
           "question_badge": "Author's Purpose",
           "question": "What was the primary objective of southern senators and representatives in issuing the Southern Manifesto in Source B?",
           "model_answer": "The primary objective was to legitimize 'Massive Resistance' across the South by branding the Supreme Court's Brown ruling as an unconstitutional usurpation of states' rights. By signing the document, southern politicians aimed to encourage state legislatures to defy federal desegregation orders and close public schools rather than permit integration.",
@@ -2472,8 +2520,10 @@ export default {
           },
           "hinge_question": "How did the Southern Manifesto institutionalize massive resistance beyond fringe groups like the Ku Klux Klan?",
           "source_context": "Congressional Record, 84th Congress, 2nd Session, Washington D.C.. 101 southern congressmen led by Senators Strom Thurmond and Richard Russell for The American Congress, southern white voters, and state educational boards with the objective: To rally organized political defiance against federal civil rights enforcement and pledge resistance 'by all lawful means.'. **Hinge Question:** How did the Southern Manifesto institutionalize massive resistance beyond fringe groups like the Ku Klux Klan?",
-          "src": "/units/usa/assets/sources/southern-manifesto-signing.jpg",
-          "source": "/units/usa/assets/sources/southern-manifesto-signing.jpg"
+          "src": "/units/usa/assets/sources/southern_manifesto_congressional_record_1956.png",
+          "source": "/units/usa/assets/sources/southern-manifesto-signing.jpg",
+          "caption": "Facsimile of the 12 March 1956 Congressional Record publishing the 'Declaration of Constitutional Principles' (Southern Manifesto), signed by 101 Southern senators and representatives pledging 'Massive Resistance' to school desegregation.",
+          "text": "The unwarranted decision of the Supreme Court in the public school cases is now bearing the fruit always produced when men substitute naked power for established law... We regard the decisions of the Supreme Court as a clear abuse of judicial power. It climaxes a trend in the Federal judiciary undertaking to legislate, in derogation of the authority of Congress, and to encroach upon the reserved rights of the States and the people... We pledge ourselves to use all lawful means to bring about a reversal of this decision which is contrary to the Constitution and to prevent the use of force in its implementation."
         },
         {
           "id": "usa_lesson_1_2_e",
@@ -2481,9 +2531,9 @@ export default {
           "type": "speech_transcript",
           "title": "Source C: Arkansas Governor Orval Faubus Televised Address Announcing the Deployment of the Arkansas National Guard (2 September 1957)",
           "date": "2 September 1957",
-          "image": "/units/usa/assets/sources/portraits/orval_faubus.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/orval_faubus.jpg",
-          "attribution": "Arkansas State Archives, Governor Orval E. Faubus Papers",
+          "image": "/units/usa/assets/sources/orval_faubus_little_rock_1957.jpg",
+          "image_url": "/units/usa/assets/sources/orval_faubus_little_rock_1957.jpg",
+          "attribution": "Office of the Governor of Arkansas, Executive Press Release and Televised Address (2 September 1957)",
           "question_badge": "Reliability & Provenance",
           "question": "How does Governor Faubus's political situation in 1957 affect the reliability of his claims regarding public disorder in Source C?",
           "model_answer": "Faubus's claims of imminent bloodshed were widely exaggerated to justify his political decision to block desegregation ahead of a competitive gubernatorial re-election campaign. While his speech accurately reflects segregationist political rhetoric, his claim that the National Guard was deployed to protect peace rather than enforce segregation is contradicted by federal trial records.",
@@ -2498,8 +2548,10 @@ export default {
           },
           "hinge_question": "To what extent was white political resistance to desegregation driven by electoral ambition rather than purely ideological racism?",
           "source_context": "Arkansas State Archives, Governor Orval E. Faubus Papers. Governor Orval Faubus of Arkansas for The white electorate of Arkansas and national broadcast audiences with the objective: To secure conservative segregationist votes by presenting himself as a defender of Arkansas sovereignty against federal overreach.. **Hinge Question:** To what extent was white political resistance to desegregation driven by electoral ambition rather than purely ideological racism?",
-          "src": "/units/usa/assets/sources/portraits/orval_faubus.jpg",
-          "source": "/units/usa/assets/sources/portraits/orval_faubus.jpg"
+          "src": "/units/usa/assets/sources/orval_faubus_little_rock_1957.jpg",
+          "source": "/units/usa/assets/sources/portraits/orval_faubus.jpg",
+          "caption": "Arkansas Governor Orval Faubus speaking before press microphones backed by state police in Little Rock, September 1957, announcing troops would surround Central High School to block the Little Rock Nine.",
+          "text": "Now that a federal court has chosen for the first time to issue an order to forcibly integrate a high school, it becomes my duty as Governor of Arkansas to preserve the peace and public order. Evidence has been presented to me that violence and civil disorder are imminent if this integration is attempted tomorrow morning. Therefore, in the interest of public safety and tranquility, I have issued orders to Major General Sherman T. Clinger to place units of the Arkansas National Guard around Central High School. These troops are not there to enforce integration, but to maintain the status quo and prevent disorder."
         },
         {
           "id": "usa_lesson_1_2_a",
@@ -2934,26 +2986,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "How useful are Sources B and C for an enquiry into the reasons for the success of the Montgomery Bus Boycott? (8 marks)",
-          "starter": "Source B is highly useful for demonstrating the internal organization, logistics, and non-violent ethos of the boycott.",
-          "model": "Source B is highly useful for demonstrating the internal organization, logistics, and non-violent ethos of the boycott. The mention of \"100 private station wagons\" transporting 15,000 citizens shows the sophisticated scale of the carpool network. Its provenance as an internal MIA newsletter is useful for revealing how leaders maintained morale and non-violent discipline directly.\n\nSource C is highly useful for showing the perspective and resistance of the white authorities. Mayor Gayle's claim that the boycott is \"illegal\" and \"destroying business\" reveals their attempts to frame the protest as economic sabotage, while his defense of \"our Southern way of life\" illustrates the deeply entrenched segregationist attitudes that resisted any compromise."
-        },
-        {
-          "qNum": 2,
-          "question": "Why did the MIA select the young, relatively new minister Martin Luther King Jr. to lead the boycott instead of established local figures?",
-          "starter": "Consider: Consider local rivalries and oratorical skills.",
-          "model": "King was new to Montgomery, unaligned with local factional rivalries, highly educated, and possessed extraordinary oratorical skills that could frame the protest as a moral, Christian, and patriotic duty."
-        },
-        {
-          "qNum": 3,
-          "question": "In what ways did the carpool system demonstrate the deep solidarity and community coordination of Montgomery's Black residents?",
-          "starter": "Consider: Think about the logistics of private cars and funding.",
-          "model": "It required over 100 private vehicles, coordinated schedules, raised funds for gas, and bypassed white taxi regulations to keep 15,000 citizens commuting daily, showing that the community could operate independently of municipal services."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "Dignified Non-Violent Resistance",
         "leftText": "MIA organizers argued that walking and carpooling was a peaceful protest that applied Christian love and economic leverage to force the city to treat Black citizens with human dignity.",
@@ -3264,23 +3297,83 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "8 marks",
+        "tariff": "Section B: Questions 3(b) & 3(c) (4 marks & 4 marks)",
+        "stimulus": [
+          {
+            "title": "Interpretation 1: From historian Danielle L. McGuire, 'At the Dark End of the Street: Black Women, Rape, and Resistance', published in 2010",
+            "content": "\"The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees.\""
+          },
+          {
+            "title": "Interpretation 2: From historian David L. Lewis, 'King: A Critical Biography', published in 1970",
+            "content": "\"While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling.\""
+          },
+          {
+            "title": "Source B: From a protest flyer mimeographed and distributed in Montgomery, 2 December 1955",
+            "content": "\"Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk.\"",
+            "provenance": "Protest leaflet written and mimeographed overnight by Jo Ann Robinson and the Women’s Political Council (WPC), distributing 35,000 copies across Montgomery."
+          },
+          {
+            "title": "Source C: From an address by Dr Martin Luther King Jr. to the Montgomery Improvement Association, 5 December 1955",
+            "content": "\"We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence.\"",
+            "provenance": "Delivered by Dr Martin Luther King Jr. at Holt Street Baptist Church to over 5,000 citizens at the first mass rally of the boycott."
+          }
+        ],
         "questions": [
           {
-            "tariff": "8 marks",
-            "type": "utility_8m",
-            "marks": 8,
-            "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the reasons for the success of the Montgomery Bus Boycott (1955–56)? [8 marks]",
-            "stimulus": [],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is useful for an enquiry into the success of the boycott because it demonstrates the critical role played by grassroots community organisation and alternative transport networks. From my own knowledge, I know that the Montgomery Improvement Association (MIA), led by Martin Luther King Jr., organised an elaborate carpool system involving over 300 private cars and church station wagons to transport 40,000 boycotters daily. The provenance of Source B makes it particularly valuable because, as a contemporary account by an active participant, it reveals the exceptional solidarity, planning, and discipline of the local Black community.<br><br>Source C is useful because it highlights the vital contribution of economic pressure and legal action in securing the boycott's victory. From my own knowledge, I know that Black citizens accounted for over 70% of bus ridership, depriving the Montgomery bus company of over 60% of its revenue, while NAACP lawyers fought the case to the Supreme Court in Browder v. Gayle (1956), which ruled segregated busing unconstitutional. The provenance of Source C adds strong historical value because it provides an analytical record of how local economic boycotts combined with federal judicial rulings to force municipal compliance. Combined, both sources provide high historical utility for understanding both the grassroots mobilization and the constitutional mechanisms that ensured victory.",
+            "tariff": "4 marks",
+            "type": "difference_4m",
+            "marks": 4,
+            "question": "Study Interpretations 1 and 2. They give different views about the main reason why the Montgomery Bus Boycott succeeded (1955–56). What is the main difference between these views? Explain your answer, using details from both interpretations.",
+            "prompt": "Explain the fundamental difference between the two interpretations, quoting details from both to support your answer.",
+            "model": "The main difference is that Interpretation 1 attributes the success of the boycott to the grassroots mobilization, planning, and economic sacrifice of working-class Black women, whereas Interpretation 2 argues that success was primarily driven by Dr Martin Luther King Jr.'s charismatic moral leadership and federal legal action.<br><br>Interpretation 1 states that the boycott was 'fundamentally the achievement of organized Black working-class women' like Jo Ann Robinson and domestic workers who walked up to twelve miles daily and ran an intricate 300-car pool. In contrast, Interpretation 2 emphasizes King's 'rhetorical genius' in preventing violence and framing the boycott as a national Christian crusade, arguing that local economic pressure was insufficient and that success ultimately depended on the Supreme Court's Browder v. Gayle ruling.",
             "scaffolding": {
-              "acronym": "Source Utility Framework",
-              "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
-              "sentence_starters": [
-                "Source B is useful because...",
-                "Source C is useful because...",
-                "Combined, both sources provide..."
+              "acronym": "Difference + Quotes Formula (AO4)",
+              "acronym_title": "Historiographical Comparison [4 Marks • 6 Mins]",
+              "steps": [
+                {
+                  "letter": "D",
+                  "name": "1. Main Difference",
+                  "prompt": "State the fundamental disagreement: grassroots women's economic sacrifice vs Dr King's charismatic leadership and legal ruling."
+                },
+                {
+                  "letter": "I1",
+                  "name": "2. Detail from Interp 1",
+                  "prompt": "Quote and explain specific details from Interpretation 1 (WPC leaflets, walking 12 miles, 70% passenger loss)."
+                },
+                {
+                  "letter": "I2",
+                  "name": "3. Detail from Interp 2",
+                  "prompt": "Quote and explain contrasting details from Interpretation 2 (King's Christian non-violence, national media, Browder v Gayle)."
+                }
+              ]
+            }
+          },
+          {
+            "tariff": "4 marks",
+            "type": "reason_4m",
+            "marks": 4,
+            "question": "Suggest one reason why Interpretations 1 and 2 give different views about the main reason why the Montgomery Bus Boycott succeeded (1955–56). You may use Sources B and C to help explain your answer.",
+            "prompt": "Explain why the historians reached contrasting conclusions by analysing how they investigated different types of primary evidence.",
+            "model": "The historians give different views because they have investigated different types of primary evidence. The author of Interpretation 1 has focused on grassroots evidence such as Source B, which highlights how Jo Ann Robinson and the Women's Political Council organized 35,000 flyers overnight and leveraged the economic power of Black riders (who made up three-fourths of bus passengers). In contrast, the author of Interpretation 2 has drawn upon evidence such as Source C, emphasizing Dr King's philosophical oratory at Holt Street Baptist Church and his leadership in preaching Christian non-violence and constitutional citizenship to national audiences.",
+            "scaffolding": {
+              "acronym": "Reason for Difference Formula (AO4)",
+              "acronym_title": "Why Historians Disagree [4 Marks • 6 Mins]",
+              "steps": [
+                {
+                  "letter": "R",
+                  "name": "1. Root Reason",
+                  "prompt": "State clearly that the historians relied on different types of sources or emphasized different aspects of the boycott."
+                },
+                {
+                  "letter": "SB",
+                  "name": "2. Evidence for Interp 1",
+                  "prompt": "Show how Source B (WPC flyer, economic pressure) supports the grassroots focus of Interpretation 1."
+                },
+                {
+                  "letter": "SC",
+                  "name": "3. Evidence for Interp 2",
+                  "prompt": "Show how Source C (King's church address, moral non-violence) supports the leadership focus of Interpretation 2."
+                }
               ]
             }
           }
@@ -3444,9 +3537,9 @@ export default {
           "type": "protest_flyer",
           "title": "Source B: Mimeographed Boycott Leaflet Authored by Jo Ann Robinson and the Women's Political Council (2 December 1955)",
           "date": "2 December 1955",
-          "image": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg",
-          "attribution": "Women's Political Council Papers, Alabama State University Special Collections",
+          "image": "/units/usa/assets/sources/jo_ann_robinson_booking_photo_1956.jpg",
+          "image_url": "/units/usa/assets/sources/jo_ann_robinson_booking_photo_1956.jpg",
+          "attribution": "Women's Political Council (WPC) Mimeographed Flyer, Montgomery, Alabama (2 December 1955)",
           "question_badge": "Reliability & Provenance",
           "question": "How does Source B demonstrate the grassroots organizational planning that preceded Martin Luther King’s leadership in Montgomery?",
           "model_answer": "Source B proves that the boycott was planned and mobilized by grassroots Black women before King was elected leader of the MIA. Robinson and the Women's Political Council mimeographed 35,000 leaflets within hours of Parks's arrest, showing that a sophisticated activist network was already prepared for coordinated mass action.",
@@ -3461,8 +3554,10 @@ export default {
           },
           "hinge_question": "To what extent has popular historical memory overemphasized King while obscuring the foundational role of the Women's Political Council?",
           "source_context": "Women's Political Council Papers, Alabama State University Special Collections. Jo Ann Robinson, English professor and president of the Women's Political Council for The 45,000 Black citizens and transit riders of Montgomery with the objective: To call for an immediate, total one-day economic boycott of city buses on the Monday of Rosa Parks's trial.. **Hinge Question:** To what extent has popular historical memory overemphasized King while obscuring the foundational role of the Women's Political Council?",
-          "src": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg",
-          "source": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg"
+          "src": "/units/usa/assets/sources/jo_ann_robinson_booking_photo_1956.jpg",
+          "source": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg",
+          "caption": "Police arrest booking photograph of Jo Ann Robinson (1912–1992), President of the Women's Political Council (WPC), following the mass boycott indictments in Montgomery, Alabama (February 1956). Robinson spent the night of 1 December 1955 mimeographing 35,000 boycott leaflets following Rosa Parks' arrest.",
+          "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person to sit down. It is the second time since the Claudette Colvin case that a Negro woman has been arrested for the same thing. This has to be stopped. Negroes have rights too, for if Negroes did not ride the buses, they could not operate. Three-fourths of the riders are Negroes, yet we are arrested, or have to stand over empty seats. If we do not do something to stop these arrests, they will continue. The next time it may be you, or your daughter, or mother. We are, therefore, asking every Negro to stay off the buses Monday in protest of the arrest and trial. Don't ride the buses to work, to town, to school, or anywhere on Monday."
         },
         {
           "id": "usa_lesson_1_3_a",
@@ -3518,7 +3613,7 @@ export default {
           "date": "5 June 1956",
           "image": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
           "image_url": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
-          "attribution": "United States District Court for the Middle District of Alabama, 142 F. Supp. 707",
+          "attribution": "United States District Court for the Middle District of Alabama, Browder v. Gayle, 142 F. Supp. 707 (1956)",
           "question_badge": "Historical Context",
           "question": "Explain the significance of the federal judicial decision in Source E in bringing about the final victory of the boycott.",
           "model_answer": "Source E is historically decisive because economic pressure alone could not legally desegregate the buses; municipal authorities and white taxi operators continued to arrest carpool drivers and firebomb Black churches. The federal court's ruling, affirmed by the Supreme Court in December 1956, struck down Alabama's bus segregation laws under the Fourteenth Amendment, delivering a binding legal mandate.",
@@ -3534,7 +3629,9 @@ export default {
           "hinge_question": "Could the Montgomery Bus Boycott have succeeded through economic pressure alone without the federal court victory in Browder v. Gayle?",
           "source_context": "United States District Court for the Middle District of Alabama, 142 F. Supp. 707. Federal Judges Richard Rives and Frank Johnson Jr. for The City of Montgomery, the State of Alabama, and the federal judiciary with the objective: To apply the constitutional precedent of Brown v. Board to municipal public transportation systems.. **Hinge Question:** Could the Montgomery Bus Boycott have succeeded through economic pressure alone without the federal court victory in Browder v. Gayle?",
           "src": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
-          "source": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg"
+          "source": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
+          "caption": "Rosa Parks seated near the front of a Montgomery city bus on 21 December 1956, the morning the Supreme Court mandate in Browder v. Gayle took effect, ending 381 days of boycott.",
+          "text": "We hold that the statutes and ordinances requiring segregation of the white and colored races on the motor buses of a common carrier of passengers in the City of Montgomery and the State of Alabama violate the due process and equal protection clauses of the Fourteenth Amendment to the Constitution of the United States. In the light of Brown v. Board of Education, the separate but equal doctrine can no longer be safely followed as a correct statement of the law. There is no rational basis for the segregation of races in public transportation."
         }
       ],
       "video": [
@@ -4228,15 +4325,15 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "16 marks (+4 SPaG)",
+        "tariff": "Section B: Question 3(d) (16 marks (+4 SPaG))",
         "stimulus": [
           {
-            "title": "Interpretation 1: From an academic study of Southern politics and the civil rights movement, published in 2004.",
-            "content": "The primary obstacle to school desegregation was the top-down campaign of 'Massive Resistance' coordinated by Southern political elites. When 101 congressmen signed the Southern Manifesto in 1956, they gave official state-sanctioned legitimacy to defiance against the federal judiciary. Southern governors and state legislatures passed dozens of laws to block integration, cut off state funding to integrated schools, and mobilized state troopers to bar Black children at schoolhouse doors. Without this active political leadership, local resistance would have fragmented and collapsed far more quickly."
+            "title": "Interpretation 1: From an academic study of Southern politics and the civil rights movement, published in 2004",
+            "content": "\"The primary obstacle to school desegregation was the top-down campaign of 'Massive Resistance' coordinated by Southern political elites. When 101 congressmen signed the Southern Manifesto in 1956, they gave official state-sanctioned legitimacy to defiance against the federal judiciary. Southern governors and state legislatures passed dozens of laws to block integration, cut off state funding to integrated schools, and mobilized state troopers to bar Black children at schoolhouse doors. Without this active political leadership, local resistance would have fragmented and collapsed far more quickly.\""
           },
           {
-            "title": "Interpretation 2: From a social history of white resistance in the American South, published in 2011.",
-            "content": "The real engine of resistance to school integration came from below, through deep-rooted white racial hostility and grassroots mobilisation. Organisations like the White Citizens' Councils—which enrolled over 250,000 members—wielded devastating economic coercion against Black families, while the Ku Klux Klan engaged in terrorist bombings and intimidation. In communities across Virginia, Mississippi, and Alabama, white parents and local school boards closed public schools altogether and established private 'segregation academies'. Resistance was a deeply held communal conviction rather than a creation of politicians."
+            "title": "Interpretation 2: From a social history of white resistance in the American South, published in 2011",
+            "content": "\"The real engine of resistance to school integration came from below, through deep-rooted white racial hostility and grassroots mobilisation. Organisations like the White Citizens' Councils—which enrolled over 250,000 members—wielded devastating economic coercion against Black families, while the Ku Klux Klan engaged in terrorist bombings and intimidation. In communities across Virginia, Mississippi, and Alabama, white parents and local school boards closed public schools altogether and established private 'segregation academies'. Resistance was a deeply held communal conviction rather than a creation of politicians.\""
           }
         ],
         "questions": [
@@ -4244,26 +4341,28 @@ export default {
             "tariff": "16 marks (+4 SPaG)",
             "type": "verdict_16m",
             "marks": 16,
-            "question": "3(d). How far do you agree with Interpretation 2 about the reasons why Southern states resisted school desegregation after Brown v. Board of Education (1954)? [16 marks + 4 SPaG]",
-            "stimulus": [
-              {
-                "title": "Interpretation 1: From an academic study of Southern politics and the civil rights movement, published in 2004.",
-                "content": "The primary obstacle to school desegregation was the top-down campaign of 'Massive Resistance' coordinated by Southern political elites. When 101 congressmen signed the Southern Manifesto in 1956, they gave official state-sanctioned legitimacy to defiance against the federal judiciary. Southern governors and state legislatures passed dozens of laws to block integration, cut off state funding to integrated schools, and mobilized state troopers to bar Black children at schoolhouse doors. Without this active political leadership, local resistance would have fragmented and collapsed far more quickly."
-              },
-              {
-                "title": "Interpretation 2: From a social history of white resistance in the American South, published in 2011.",
-                "content": "The real engine of resistance to school integration came from below, through deep-rooted white racial hostility and grassroots mobilisation. Organisations like the White Citizens' Councils—which enrolled over 250,000 members—wielded devastating economic coercion against Black families, while the Ku Klux Klan engaged in terrorist bombings and intimidation. In communities across Virginia, Mississippi, and Alabama, white parents and local school boards closed public schools altogether and established private 'segregation academies'. Resistance was a deeply held communal conviction rather than a creation of politicians."
-              }
-            ],
+            "question": "How far do you agree with Interpretation 2 about the reasons why Southern states resisted school desegregation after Brown v. Board of Education (1954)? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "On the one hand, Interpretation 1 is supported by compelling evidence showing that political leadership and 'Massive Resistance' organised by Southern state governments were fundamental in blocking school desegregation. Following the Brown ruling, 101 Southern congressmen signed the 'Southern Manifesto' in 1956, pledging to resist desegregation by all legal means. Southern governors like Orval Faubus at Little Rock (1957) actively deployed state National Guardsmen to block Black pupils from entering white schools, giving state-sponsored legitimacy to segregationist defiance.<br><br>On the other hand, Interpretation 2 offers an equally persuasive argument by focusing on the grassroots hostility, cultural racism, and violence organised by White Citizens' Councils and the KKK. White Citizens' Councils grew to over 250,000 members across the South, using economic intimidation, firing Black parents, and closing down public schools entirely (as in Prince Edward County, Virginia) to fund private all-white academies. This demonstrates that resistance was not merely top-down political rhetoric, but deeply embedded in the social fabric of white Southern communities.<br><br>Furthermore, contextual analysis confirms that the Supreme Court's vague wording in Brown II (1955)—ordering desegregation with 'all deliberate speed'—provided Southern school boards with an open invitation to delay integration for years without facing federal legal penalties.<br><br>In conclusion, having evaluated both interpretations against the historical evidence, I agree with Interpretation 2 to a large extent. While state governors and politicians provided legal cover, it was the deep-seated, community-wide white backlash and economic terror on the ground that made the enforcement of school desegregation so painfully slow and hazardous for Black children.",
+            "model": "On the one hand, Interpretation 1 is supported by compelling historical evidence showing that top-down political leadership and the policy of 'Massive Resistance' organised by Southern elites were fundamental in blocking school desegregation. Following the Brown ruling, 101 Southern congressmen signed the 'Southern Manifesto' in March 1956, declaring the Supreme Court decision a 'clear abuse of judicial power' and pledging to resist federal orders by all lawful means. State governors translated this rhetoric into direct executive obstruction: at Little Rock in 1957, Arkansas Governor Orval Faubus deployed the state National Guard with fixed bayonets to turn away nine Black students. This state-level resistance gave legal respectability and official encouragement to white resistance.<br><br>On the other hand, Interpretation 2 offers an equally powerful argument by showing that resistance was driven from below by entrenched grassroots white racism and economic terrorism. White Citizens' Councils grew rapidly to over 250,000 members across the Deep South, orchestrating coordinated economic warfare against Black families: activists had their names published in local papers, resulting in immediate job dismissals, mortgage cancellations, and eviction of sharecroppers. Concurrently, the Ku Klux Klan engaged in terrorist firebombings and lynchings (such as the murder of Emmett Till in 1955). In Prince Edward County, Virginia, local white authorities closed down the entire public school system for five years rather than integrate, funding private all-white 'segregation academies'. This proves that defiance was deeply woven into white Southern culture, rather than being an elite fabrication.<br><br>Furthermore, contextual analysis demonstrates that the Supreme Court itself inadvertently facilitated resistance through its 1955 Brown II ruling, which ambiguously ordered desegregation with 'all deliberate speed'. This lack of a rigid timetable allowed Southern school boards to obstruct integration through endless legal appeals and bureaucratic pupil-placement laws.<br><br>In conclusion, having evaluated both interpretations, I agree with Interpretation 2 to a very large extent. While Southern governors and congressmen provided ideological justification and legal cover, it was the ferocious, community-wide white backlash, economic boycotts, and vigilante terror at the grassroots level that made school integration virtually non-existent across the Deep South for over a decade after Brown.",
             "scaffolding": {
-              "acronym": "Evaluative Verdict Framework",
-              "acronym_title": "Balanced Evaluative Essay (3 Themes + Judgement)",
-              "sentence_starters": [
-                "On the one hand, Interpretation 1 argues that...",
-                "On the other hand, Interpretation 2 points out that...",
-                "In conclusion, having evaluated both views..."
+              "acronym": "Interpretation Verdict Framework (AO4)",
+              "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
+              "steps": [
+                {
+                  "letter": "INTERP 2",
+                  "name": "1. Support Interpretation 2 (Grassroots Terror & Economic Pressure)",
+                  "prompt": "Deploy evidence of White Citizens' Councils (250,000 members), KKK violence, and closure of public schools."
+                },
+                {
+                  "letter": "INTERP 1",
+                  "name": "2. Support Interpretation 1 (Top-Down Massive Resistance)",
+                  "prompt": "Deploy evidence of the Southern Manifesto (101 congressmen) and Faubus's deployment of the National Guard."
+                },
+                {
+                  "letter": "VERDICT",
+                  "name": "3. Sustained Historical Conclusion",
+                  "prompt": "Weigh both interpretations alongside Brown II ('all deliberate speed') to judge whether grassroots terror was decisive."
+                }
               ]
             }
           }
@@ -4436,9 +4535,9 @@ export default {
           "type": "press_report",
           "title": "Source B: Front-Page Report from the Chicago Defender on the Lynching of Emmett Till (10 September 1955)",
           "date": "10 September 1955",
-          "image": "/units/usa/assets/sources/portraits/emmett_till.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/emmett_till.jpg",
-          "attribution": "Chicago Defender National Edition, Historic Black Press Archive",
+          "image": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
+          "image_url": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
+          "attribution": "The Chicago Defender, Front-Page Report (10 September 1955)",
           "question_badge": "Source Inference",
           "question": "What can you infer from Source B regarding the impact of Mamie Till-Mobley’s decision to hold an open-casket funeral?",
           "model_answer": "Source B reveals that Mamie Till-Mobley's decision converted private grief into an undeniable public indictment of white southern terrorism. By forcing the world to look upon her son's mutilated body, she galvanized millions of northern and international citizens who had previously viewed southern racism as distant or exaggerated.",
@@ -4453,8 +4552,10 @@ export default {
           },
           "hinge_question": "Why did the lynching of Emmett Till catalyze the civil rights movement in a way that hundreds of previous unpunished lynchings had not?",
           "source_context": "Chicago Defender National Edition, Historic Black Press Archive. Chicago Defender editorial staff and investigative journalists for African American communities across the North and national civil rights organizations with the objective: To expose the barbaric violence of Mississippi white supremacy and generate nationwide outrage demanding federal intervention.. **Hinge Question:** Why did the lynching of Emmett Till catalyze the civil rights movement in a way that hundreds of previous unpunished lynchings had not?",
-          "src": "/units/usa/assets/sources/portraits/emmett_till.jpg",
-          "source": "/units/usa/assets/sources/portraits/emmett_till.jpg"
+          "src": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
+          "source": "/units/usa/assets/sources/portraits/emmett_till.jpg",
+          "caption": "Mamie Till Bradley weeping over the open casket of her 14-year-old lynched son, Emmett Till, at Roberts Temple Church of God in Christ in Chicago (September 1955).",
+          "text": "NATION SHOCKED BY TERROR LYNCHING OF CHICAGO BOY IN MISSISSIPPI. The mutilated, bullet-shattered body of 14-year-old Emmett Till was returned to Chicago this week after being dragged from the Tallahatchie River with a 75-pound cotton gin fan barbed-wired to his neck. His grieving mother, Mrs. Mamie Till Bradley, insisted on an open-casket funeral so that 'all the world can see what they did to my boy.' More than 50,000 mourners filed past the casket at Roberts Temple, weeping and shuddering in horror at the savagery of Southern racism."
         },
         {
           "id": "usa_lesson_1_4_c",
@@ -4487,7 +4588,7 @@ export default {
           "date": "9 September 1957",
           "image": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
           "image_url": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
-          "attribution": "United States Statutes at Large, 71 Stat. 634, Public Law 85-315",
+          "attribution": "Public Law 85-315, 85th United States Congress, 71 Stat. 634 (9 September 1957)",
           "question_badge": "Historical Context",
           "question": "Explain why civil rights leaders viewed the Civil Rights Act of 1957 as a crucial symbolic breakthrough yet practically ineffective.",
           "model_answer": "Source D was the first federal civil rights legislation passed since Reconstruction in 1875, establishing the Civil Rights Division in the Justice Department. However, southern senators led by Strom Thurmond weakened the bill through filibusters, removing enforcement powers and requiring that voting-rights contempt charges be tried by local white juries, rendering it virtually toothless.",
@@ -4503,7 +4604,9 @@ export default {
           "hinge_question": "Why did Lyndon B. Johnson believe that passing even a severely weakened civil rights bill in 1957 was essential for future progress?",
           "source_context": "United States Statutes at Large, 71 Stat. 634, Public Law 85-315. The 85th United States Congress, shepherded by Senate Majority Leader Lyndon B. Johnson for The American nation, federal courts, and southern voting registrars with the objective: To establish federal oversight over southern voter suppression while watering down enforcement to prevent a southern filibuster.. **Hinge Question:** Why did Lyndon B. Johnson believe that passing even a severely weakened civil rights bill in 1957 was essential for future progress?",
           "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
-          "source": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg"
+          "source": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
+          "caption": "President Dwight D. Eisenhower addressing the American public from the Oval Office. On 9 September 1957, Eisenhower signed the Civil Rights Act of 1957, the first federal civil rights legislation since Reconstruction.",
+          "text": "An Act to provide means of further securing and protecting the civil rights of persons within the jurisdiction of the United States. Be it enacted by the Senate and House of Representatives: Section 101. There is created in the executive branch of the Government a Commission on Civil Rights... Section 131. Whenever any person has engaged or there are reasonable grounds to believe that any person is about to engage in any act or practice which would deprive any other person of any right or privilege secured by subsection (a) or (b) [the right to vote without racial discrimination], the Attorney General may institute for the United States a civil action for preventive relief, including an application for a permanent or temporary injunction."
         },
         {
           "id": "usa_lesson_1_4_e",
@@ -4917,26 +5020,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "Source A:\n\"When our bus arrived in Anniston, a mob surrounded us and slashed the tires. The driver tried to limp out of town, but the mob chased us in cars and pickup trucks. Out on the highway, the tires went flat and the mob trapped us inside. They threw a firebomb through the window, filling the bus with choking black smoke. We crawled out through the flames and smoke, desperate for air, only to be beaten with iron bars, baseball bats, and pipes by the men waiting outside.\"\n\nGive two things you can infer from Source A about the dangers faced by the Freedom Riders. (4 marks)",
-          "starter": "Inference 1: I can infer that the Freedom Riders faced organized, lethal white vigilante violence.",
-          "model": "Inference 1: I can infer that the Freedom Riders faced organized, lethal white vigilante violence.\nDetails: \"Out on the highway, they threw a firebomb through the window. We crawled out... only to be beaten with iron bars.\"\nInference 2: I can infer that local transit routes in the South were highly dangerous and unsafe for integrated travel.\nDetails: \"When our bus arrived in Anniston, a mob surrounded us and slashed the tires.\""
-        },
-        {
-          "qNum": 2,
-          "question": "Why were student-led sit-ins so effective in exposing the social absurdity and commercial vulnerability of segregation?",
-          "starter": "Consider: Think about customer turnover and national retail chains.",
-          "model": "Greensboro sit-ins disrupted sales and drew negative national publicity, forcing retail chains like Woolworth's to choose between segregation and corporate survival. It proved that hitting businesses financially was highly effective."
-        },
-        {
-          "qNum": 3,
-          "question": "How did the Freedom Rides force the Kennedy administration to abandon its quiet behind-the-scenes diplomacy?",
-          "starter": "Consider: Think about international relations and Cold War pressures.",
-          "model": "Brutal televised violence and firebombings in Alabama created an international scandal, forcing the administration to send US Marshals and issue federal integration mandates to maintain America's moral authority globally during the Cold War."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "Direct Confrontation with Injustice",
         "leftText": "Student activists argued that directly breaking unjust local segregation laws was the only way to expose Southern white brutality to the world and force federal intervention.",
@@ -5247,23 +5331,81 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "4 marks",
+        "tariff": "Section A: Questions 1 & 2 (4 marks & 12 marks)",
+        "stimulus": [
+          {
+            "title": "Source A: Police Dogs Lunging at High School Demonstrators, Birmingham, Alabama, 3 May 1963",
+            "image": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
+            "caption": "Birmingham police officer Dick Pence holds the leash of a German Shepherd attack dog lunging at fifteen-year-old Walter Gadsden during the Children’s Crusade.",
+            "provenance": "Photograph taken by Bill Hudson for the Associated Press on 3 May 1963; published across front pages of national and international newspapers.",
+            "extract": "Birmingham police officer Dick Pence holds the leash of a German Shepherd attack dog as it lunges at fifteen-year-old student Walter Gadsden during the Children’s Crusade. High-pressure fire hoses and attack dogs were deployed on unarmed teenage marchers on the orders of Eugene ‘Bull’ Connor."
+          }
+        ],
         "questions": [
           {
             "tariff": "4 marks",
             "type": "inference_4m",
             "marks": 4,
-            "question": "1. Give two things you can infer from Source A about the methods used by Southern police against civil rights demonstrators in Birmingham, Alabama (1963). [4 marks]",
-            "stimulus": "Source A: Photograph of police dogs and high-pressure fire hoses deployed against young demonstrators in Birmingham, May 1963.",
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that Southern police forces used extreme, disproportionate physical brutality against peaceful protesters.<br><strong>Details in the source that tell me this:</strong><br>Police under Eugene 'Bull' Connor deployed high-pressure fire hoses capable of tearing clothes and knocking demonstrators off their feet.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that authorities were determined to intimidate civil rights activists regardless of their age.<br><strong>Details in the source that tell me this:</strong><br>Attack dogs and aggressive police lines were unleashed directly against young student marchers participating in the Children's Crusade.</p>",
+            "question": "Give two things you can infer from Source A about the methods used by Southern police against civil rights demonstrators in Birmingham, Alabama (1963).",
+            "prompt": "Give two separate valid inferences. Support each inference with direct visual or textual details from Source A.",
+            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that Southern police authorities deployed extreme physical intimidation and vicious attack dogs against young civil rights demonstrators.<br><strong>Details in the source that tell me this:</strong><br>The photograph shows a uniformed police officer gripping the leash of a snarling German Shepherd attack dog as it lunges directly at the stomach of a teenage demonstrator.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that civil rights marchers maintained non-violent discipline and composure even when confronted with terrifying police aggression.<br><strong>Details in the source that tell me this:</strong><br>The high school student (Walter Gadsden) stands calmly with his hands down, not running away, attacking the officer, or retaliating violently.</p>",
             "scaffolding": {
-              "acronym": "Point & Detail (4 Marks)",
-              "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
-              "sentence_starters": [
-                "Source B is useful because...",
-                "Source C is useful because...",
-                "Combined, both sources provide..."
+              "acronym": "Inference Formula (AO3)",
+              "acronym_title": "Inference + Supporting Detail (2 Points • 4 Marks)",
+              "steps": [
+                {
+                  "letter": "I1",
+                  "name": "1. First Valid Inference",
+                  "prompt": "State what the source reveals about police methods in Birmingham."
+                },
+                {
+                  "letter": "D1",
+                  "name": "2. Supporting Detail",
+                  "prompt": "Quote or describe specific visual evidence of police dogs and handlers from Source A."
+                },
+                {
+                  "letter": "I2",
+                  "name": "3. Second Valid Inference",
+                  "prompt": "Identify a second valid insight regarding demonstrator discipline or authority brutality."
+                },
+                {
+                  "letter": "D2",
+                  "name": "4. Supporting Detail",
+                  "prompt": "Provide specific visual details confirming the student's calm demeanor."
+                }
+              ]
+            }
+          },
+          {
+            "tariff": "12 marks",
+            "type": "explain_why_12",
+            "marks": 12,
+            "question": "Explain why the Civil Rights Act was passed in 1964.",
+            "stimulus": [
+              "The Birmingham Campaign (1963)",
+              "The assassination of President Kennedy (November 1963)"
+            ],
+            "prompt": "You may use the following in your answer: (1) The Birmingham Campaign (1963), (2) The assassination of President Kennedy (November 1963). You must also use information of your own.",
+            "model": "A primary catalyst for the passage of the 1964 Civil Rights Act was the national and international outrage generated by the <strong>Birmingham Campaign</strong> in May 1963. SCLC leader Martin Luther King Jr. deliberately chose Birmingham to expose the extreme violence of segregationist authorities. When Public Safety Commissioner Eugene ‘Bull’ Connor turned high-pressure fire hoses and police attack dogs on marching schoolchildren, the scenes were broadcast on television across the globe. This visual brutality horrified millions of northern white voters and severely damaged American diplomatic prestige during the Cold War, forcing President John F. Kennedy to publicly announce comprehensive civil rights legislation on national television in June 1963.<br><br>Furthermore, the <strong>assassination of President Kennedy</strong> in November 1963 provided the crucial moral and emotional impetus needed to pass the bill. When Lyndon B. Johnson assumed the presidency, he skillfully utilized Kennedy’s martyrdom to overcome legislative obstruction. Johnson addressed a joint session of Congress, declaring that \"no memorial oration or eulogy could more eloquently honor President Kennedy’s memory than the earliest possible passage of the civil rights bill.\" This emotional appeal made it politically toxic for moderate congressmen to oppose the legislation, transforming Kennedy’s draft into an urgent national tribute.<br><br>Finally, the passage of the Act was secured by the immense public pressure generated by the <strong>March on Washington in August 1963</strong>, combined with President Johnson’s legislative mastery. Over 250,000 peaceful demonstrators gathered at the Lincoln Memorial, where King delivered his iconic ‘I Have a Dream’ speech. When Southern Democratic senators launched a historic 54-day filibuster to kill the bill, Johnson utilized his formidable Senate expertise to forge a bipartisan coalition with Republican leader Everett Dirksen, securing the two-thirds supermajority required to break the filibuster and sign the historic Act on 2 July 1964.",
+            "scaffolding": {
+              "acronym": "PEEL Structure Strip",
+              "acronym_title": "3-Paragraph Causal Analysis (PEEL • 12 Marks)",
+              "steps": [
+                {
+                  "letter": "P1",
+                  "name": "1. Birmingham & Televised Shock",
+                  "prompt": "Connor’s brutal crackdown on children horrified northern public opinion and damaged US global prestige."
+                },
+                {
+                  "letter": "P2",
+                  "name": "2. Kennedy’s Assassination & LBJ",
+                  "prompt": "Johnson used JFK’s martyrdom as an unstoppable moral mandate to push the bill through Congress."
+                },
+                {
+                  "letter": "P3",
+                  "name": "3. March on Washington & Breaking Filibuster",
+                  "prompt": "250,000 demonstrators and LBJ's coalition breaking the 54-day Senate filibuster."
+                }
               ]
             }
           }
@@ -5499,9 +5641,9 @@ export default {
           "type": "official_order",
           "title": "Source E: Interstate Commerce Commission (ICC) Order Docket No. MC-C-3358 Outlawing Terminal Segregation (22 September 1961)",
           "date": "22 September 1961",
-          "image": "/units/usa/assets/sources/portraits/james_farmer.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/james_farmer.jpg",
-          "attribution": "Interstate Commerce Commission Records, National Archives, College Park, Maryland",
+          "image": "/units/usa/assets/sources/icc_order_mc_c_3358_1961.png",
+          "image_url": "/units/usa/assets/sources/icc_order_mc_c_3358_1961.png",
+          "attribution": "Interstate Commerce Commission, Docket No. MC-C-3358, Washington, D.C. (22 September 1961)",
           "question_badge": "Cross-Referencing",
           "question": "How does the federal administrative order in Source E confirm the strategic victory achieved by the Freedom Rides in Source B and Source D?",
           "model_answer": "Source E proves that direct action succeeded where years of litigation had stalled. Compelled by the international embarrassment of burning buses and mob beatings, the federal government issued an uncompromised ruling requiring all interstate carriers and terminal facilities to remove 'white' and 'colored' signs by 1 November 1961.",
@@ -5516,8 +5658,10 @@ export default {
           },
           "hinge_question": "Why was federal administrative regulation (like the ICC order) often more effective than Supreme Court rulings in enforcing desegregation?",
           "source_context": "Interstate Commerce Commission Records, National Archives, College Park, Maryland. The Commissioners of the Interstate Commerce Commission acting under Department of Justice petition for All interstate bus, rail, and transit companies across the United States with the objective: To establish binding federal administrative penalties, including licence revocation, for terminal segregation.. **Hinge Question:** Why was federal administrative regulation (like the ICC order) often more effective than Supreme Court rulings in enforcing desegregation?",
-          "src": "/units/usa/assets/sources/portraits/james_farmer.jpg",
-          "source": "/units/usa/assets/sources/portraits/james_farmer.jpg"
+          "src": "/units/usa/assets/sources/icc_order_mc_c_3358_1961.png",
+          "source": "/units/usa/assets/sources/portraits/james_farmer.jpg",
+          "caption": "Facsimile of the official Interstate Commerce Commission Order Docket No. MC-C-3358 (22 September 1961), issued at the petition of Attorney General Robert F. Kennedy following the Freedom Rides.",
+          "text": "No motor common carrier of passengers subject to the Interstate Commerce Act shall, in the operation of passenger vehicles in interstate or foreign commerce, utilize or permit the use of any terminal facilities which are in any manner segregated on the basis of race, color, creed, or national origin. All signs, placards, or notices displaying designations such as 'White Waiting Room', 'Colored Waiting Room', or similarly segregating restrooms, dining counters, or waiting spaces are hereby declared unlawful and ordered removed from all interstate passenger terminals forthwith."
         }
       ],
       "video": [
@@ -5912,26 +6056,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "Explain why civil rights legislation was passed in the years 1964–65. (12 marks)",
-          "starter": "“One reason why civil rights legislation was passed in the years 1964–65 was that non-violent direct action campaigns provoked violent responses that shocked the national public.",
-          "model": "“One reason why civil rights legislation was passed in the years 1964–65 was that non-violent direct action campaigns provoked violent responses that shocked the national public.” Campaigns in Birmingham (1963) and Selma (1965) were met with police dogs, water cannons under [[Bull Connor]], and state trooper attacks on [[Bloody Sunday]]. Televised media coverage of this brutality generated massive public sympathy and demand for reform. {{Therefore, the public outrage generated by media coverage of white violence was a primary reason why civil rights legislation was passed in the years 1964–65 because it made federal inaction politically impossible.}}\n\n“A second reason why civil rights legislation was passed in the years 1964–65 was the strong legislative leadership and political skill of President Lyndon B. Johnson.” Johnson used the national tragedy of [[John F. Kennedy's assassination]] to lobby congressmen, passing the [[Civil Rights Act of 1964]]. He broke a record-breaking Southern filibuster and pushed through the [[Voting Rights Act of 1965]] after Selma. {{Therefore, President Johnson's political pressure and commitment were crucial reasons why civil rights legislation was passed in the years 1964–65 because they bypassed Southern obstruction in Congress.}}\n\n“A third reason why civil rights legislation was passed in the years 1964–65 was the growing pressure from mass protests and the threat of civil unrest if voting rights were denied.” The 1963 [[March on Washington]] mobilized 250,000 people, showing widespread support. In Selma, the complete exclusion of Black voters from registrars highlighted the failure of local democracy, forcing the federal government to intervene. {{Therefore, the escalation of mass protests and local voting blockades were vital reasons why civil rights legislation was passed in the years 1964–65 because they forced the federal government to establish national voting safeguards.}}"
-        },
-        {
-          "qNum": 2,
-          "question": "Why did the SCLC choose to use children in the Birmingham protests (the 'Children's Crusade')?",
-          "starter": "Consider: Consider the moral impact on television viewers.",
-          "model": "Children did not have jobs to lose, and televised footage of police dogs and fire hoses attacking youth generated unprecedented moral outrage globally, forcing President Kennedy to declare segregation a 'moral issue' on national TV."
-        },
-        {
-          "qNum": 3,
-          "question": "How did the Selma campaign directly contribute to the passage of the Voting Rights Act of 1965?",
-          "starter": "Consider: Think about Bloody Sunday and the Edmund Pettus Bridge.",
-          "model": "The televised brutality of 'Bloody Sunday' forced President Johnson to intervene and publicly declare the voting rights issue a national emergency, giving him the political leverage to pass the Voting Rights Act."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "Exposing the Moral Rot of Segregation",
         "leftText": "SCLC leaders argued that putting children and peaceful marchers in harm's way was a necessary moral strategy to force federal legislation and expose the violent nature of white supremacy.",
@@ -6242,26 +6367,46 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "12 marks",
+        "tariff": "Section B: Question 3(a) (8 marks)",
+        "stimulus": [
+          {
+            "title": "Source B: From the Official Report of the National Advisory Commission on Civil Disorders (The Kerner Commission), March 1968",
+            "provenance": "From the official report presented to President Lyndon B. Johnson by the Kerner Commission, established to investigate the causes of urban riots.",
+            "extract": "\"Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit.\""
+          },
+          {
+            "title": "Source C: From a Speech by Stokely Carmichael, Chairman of SNCC, Addressing a Mass Rally in Chicago, July 1966",
+            "provenance": "Speech delivered by SNCC chairman Stokely Carmichael to young Black activists at a Chicago civil rights rally, July 1966.",
+            "extract": "\"We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to build a power base, so that when the police come into our communities with clubs and guns, they know we can defend ourselves!\""
+          }
+        ],
         "questions": [
           {
-            "tariff": "12 marks",
-            "type": "explain_why_12",
-            "marks": 12,
-            "question": "2. Explain why the Civil Rights Act was passed in 1964. [12 marks]",
-            "stimulus": [
-              "The Birmingham Campaign (1963)",
-              "The assassination of President Kennedy (November 1963)"
-            ],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "One major reason why the Civil Rights Act was passed was the national and international outrage generated by the <strong>Birmingham Campaign of May 1963</strong>. Televised images of Bull Connor’s police dogs attacking unarmed Black children and fire hoses tearing into demonstrators shocked the American public and deeply embarrassed the US government on the global Cold War stage. President Kennedy went on national television the following month declaring civil rights a 'moral issue', directly compelling the executive branch to draft comprehensive federal desegregation legislation.<br><br>A second decisive factor was the <strong>assassination of President John F. Kennedy in November 1963</strong> and the political skill of President Lyndon B. Johnson. Johnson used the immense wave of national grief to frame the passage of civil rights legislation as a sacred memorial to the fallen president, urging Congress not to let Kennedy's legacy fail. Furthermore, Johnson expertly leveraged his decades of congressional experience to break a record 54-day filibuster by Southern Democrats in the Senate.<br><br>Finally, the massive mobilization of over 250,000 peaceful citizens at the <strong>March on Washington in August 1963</strong> demonstrated unprecedented multiracial support for federal action. Martin Luther King Jr.'s iconic 'I Have a Dream' speech crystallized national moral sentiment, proving to wavering congressional moderates that civil rights could no longer be postponed without triggering catastrophic social unrest.",
+            "tariff": "8 marks",
+            "type": "utility_8m",
+            "marks": 8,
+            "question": "Study Sources B and C. How useful are Sources B and C for an enquiry into the causes of the riots in northern and western cities between 1965 and 1967?",
+            "prompt": "Evaluate both sources using Content, Contextual Knowledge (Watts 1965, Chicago Movement 1966, Newark & Detroit 1967, Kerner Commission findings, rise of Black Power), and Provenance.",
+            "model": "Source B is highly useful because it provides official, authoritative government evidence of the deep structural and economic causes of urban unrest. Commissioned by President Johnson following the devastating Detroit and Newark riots of 1967, the Kerner Report boldly concluded that \"white society is deeply implicated in the ghetto.\" The content reveals that discriminatory employment, redlined housing, and routine police harassment created an explosive \"reservoir of frustration.\" Its provenance as an official federal investigation gives it exceptional utility, as it represents the first time the US government officially acknowledged institutional white racism and economic deprivation as the root causes of urban rebellion.<br><br>Source C is equally useful because it provides immediate eyewitness insight into the radical ideological mindset of young Black activists in the northern ghettos. In this July 1966 Chicago speech, SNCC leader Stokely Carmichael explicitly repudiates Martin Luther King’s philosophy of Christian non-violence, arguing that the 1964 Civil Rights Act brought no material benefits to northern slums. He calls for Black Power and armed self-defense against police brutality. Its provenance as a contemporary political speech by the foremost proponent of Black Power gives it tremendous utility for showing how ideological radicalisation and anger at police misconduct turned urban youth toward active defiance. However, Carmichael was deliberately using fiery rhetoric to mobilize crowds, meaning he focuses on political militancy rather than detailed statistics. Overall, both sources are extremely useful: Source B reveals the socio-economic conditions of the ghetto, while Source C captures the explosive ideological fury that ignited the riots.",
             "scaffolding": {
-              "acronym": "PEEL Structure Strip",
-              "acronym_title": "3-Paragraph Causal Analysis (PEEL)",
-              "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, a second critical factor was...",
-                "Finally, an underlying driver was..."
+              "acronym": "Source Utility Framework (AO3)",
+              "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
+              "steps": [
+                {
+                  "letter": "SOURCE B",
+                  "name": "1. Source B Content & Context",
+                  "prompt": "Examine the Kerner Commission findings on systemic racism, redlining, and police harassment."
+                },
+                {
+                  "letter": "SOURCE C",
+                  "name": "2. Source C Content & Context",
+                  "prompt": "Analyse Carmichael's rejection of non-violence and demand for armed community self-defense."
+                },
+                {
+                  "letter": "SYNTHESIS",
+                  "name": "3. Provenance & Synthesis",
+                  "prompt": "Interrogate the contrast between an official government report and a radical activist speech; reach a balanced verdict."
+                }
               ]
             }
           }
@@ -6402,9 +6547,9 @@ export default {
           "type": "open_letter",
           "title": "Source A: From Dr Martin Luther King Jr.'s 'Letter from Birmingham Jail' Written to Moderate White Clergymen (16 April 1963)",
           "date": "16 April 1963",
-          "image": "/units/usa/assets/sources/portraits/mlk.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/mlk.jpg",
-          "attribution": "The King Center Archives, Atlanta, Georgia",
+          "image": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
+          "image_url": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
+          "attribution": "Dr Martin Luther King Jr., Letter from Birmingham Jail (16 April 1963)",
           "question_badge": "Reliability & Provenance",
           "question": "How does the specific audience of moderate clergymen shape King's arguments regarding direct action in Source A?",
           "model_answer": "King specifically targeted moderate white clergymen who urged Black citizens to 'wait' for a more convenient season. Writing from his cell, he argued passionately that 'wait' had almost always meant 'never,' explaining that non-violent tension was necessary to compel a privileged community to negotiate rights that are never given voluntarily.",
@@ -6419,8 +6564,10 @@ export default {
           },
           "hinge_question": "Why did King consider the 'white moderate' who prioritized order over justice to be a greater stumbling block than the Ku Klux Klan?",
           "source_context": "The King Center Archives, Atlanta, Georgia. Dr Martin Luther King Jr., incarcerated in the Birmingham city jail for Eight prominent moderate white Christian and Jewish clergymen in Alabama with the objective: To dismantle the moral argument for patience and defend the urgency of direct-action civil disobedience.. **Hinge Question:** Why did King consider the 'white moderate' who prioritized order over justice to be a greater stumbling block than the Ku Klux Klan?",
-          "src": "/units/usa/assets/sources/portraits/mlk.jpg",
-          "source": "/units/usa/assets/sources/portraits/mlk.jpg"
+          "src": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
+          "source": "/units/usa/assets/sources/portraits/mlk.jpg",
+          "caption": "Police attack dogs deployed by Public Safety Commissioner Eugene 'Bull' Connor against civil rights demonstrators in Birmingham, Alabama, May 1963.",
+          "text": "We know through painful experience that freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed. Frankly, I have yet to engage in a direct action campaign that was 'well timed' in the view of those who have not suffered unduly from the disease of segregation. For years now I have heard the word 'Wait!' It rings in the ear of every Negro with piercing familiarity. This 'Wait' has almost always meant 'Never.' We must come to see, with one of our distinguished jurists, that 'justice too long delayed is justice denied.'"
         },
         {
           "id": "usa_lesson_2_2_a",
@@ -6430,7 +6577,7 @@ export default {
           "date": "28 August 1963",
           "image": "/units/usa/assets/sources/mlk-dream-speech-1963.jpg",
           "image_url": "/units/usa/assets/sources/mlk-dream-speech-1963.jpg",
-          "attribution": "National Archives and Records Administration (NARA), Still Pictures Division",
+          "attribution": "Dr. Martin Luther King Jr., Address at the March on Washington for Jobs and Freedom, Washington D.C. (28 August 1963)",
           "question_badge": "Source Inference",
           "question": "What can you infer from Source B about how the March on Washington sought to frame the civil rights struggle within American national identity?",
           "model_answer": "Source B reveals that the March on Washington framed civil rights not as radical or subversive, but as the ultimate fulfillment of the American Dream and the Declaration of Independence. By speaking before the Lincoln Memorial, King tied the movement directly to the nation's foundational ideals.",
@@ -6446,17 +6593,19 @@ export default {
           "hinge_question": "Why did King choose to ground his speech in the Declaration of Independence and the Bible rather than in contemporary political theory?",
           "source_context": "National Archives and Records Administration (NARA), Still Pictures Division. United States Information Agency staff photographer for The global public and nationwide television audiences with the objective: To project American democratic ideals and demonstrate multiracial solidarity for legislative reform.. **Hinge Question:** Why did King choose to ground his speech in the Declaration of Independence and the Bible rather than in contemporary political theory?",
           "src": "/units/usa/assets/sources/mlk-dream-speech-1963.jpg",
-          "source": "/units/usa/assets/sources/mlk-dream-speech-1963.jpg"
+          "source": "/units/usa/assets/sources/mlk-dream-speech-1963.jpg",
+          "caption": "Dr. Martin Luther King Jr. addressing an estimated 250,000 civil rights demonstrators gathered at the Lincoln Memorial during the March on Washington for Jobs and Freedom, 28 August 1963.",
+          "text": "I say to you today, my friends, that in spite of the difficulties and frustrations of the moment, I still have a dream. It is a dream deeply rooted in the American dream. I have a dream that one day this nation will rise up and live out the true meaning of its creed: 'We hold these truths to be self-evident, that all men are created equal.' I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character. I have a dream today!"
         },
         {
           "id": "usa_lesson_2_2_c",
           "letter": "C",
           "type": "photograph",
-          "title": "Source C: President Lyndon B. Johnson Signing the Civil Rights Act of 1964 in the East Room of the White House (2 July 1964)",
+          "title": "Source C: Archival Photograph of President Lyndon B. Johnson Signing the Civil Rights Act of 1964 in the East Room of the White House (2 July 1964)",
           "date": "2 July 1964",
           "image": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
           "image_url": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
-          "attribution": "Cecil Stoughton / White House Press Office / LBJ Presidential Library",
+          "attribution": "President Lyndon B. Johnson, Remarks upon Signing the Civil Rights Bill, East Room of the White House (2 July 1964)",
           "question_badge": "Author's Purpose",
           "question": "What was the purpose of President Johnson in handing commemorative signing pens directly to Dr Martin Luther King Jr. in Source C?",
           "model_answer": "Johnson's purpose was to publicly symbolize the partnership between grassroots moral protest and federal legislative power. Handing the pen to King signaled the decisive defeat of the southern filibuster and certified the Civil Rights Act of 1964 as the law of the land.",
@@ -6472,7 +6621,9 @@ export default {
           "hinge_question": "Why did President Johnson famously remark after signing the Act: 'I think we just delivered the South to the Republican Party for a long time to come'?",
           "source_context": "Cecil Stoughton / White House Press Office / LBJ Presidential Library. Cecil Stoughton, official White House photographer for The national press corps and American public with the objective: To immortalize the landmark signing that outlawed discrimination in public accommodations and employment.. **Hinge Question:** Why did President Johnson famously remark after signing the Act: 'I think we just delivered the South to the Republican Party for a long time to come'?",
           "src": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
-          "source": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg"
+          "source": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
+          "caption": "President Lyndon B. Johnson signs the historic Civil Rights Act of 1964 in the East Room of the White House, handing a ceremonial pen to Dr. Martin Luther King Jr. standing behind him (White House Photo Office, 2 July 1964).",
+          "text": "We believe that all men are created equal. Yet many are denied equal treatment. We believe that all men have certain unalienable rights. Yet many Americans do not enjoy those rights. We believe that all men are entitled to the blessings of liberty. Yet millions are being deprived of those blessings—not because of their own failures, but because of the color of their skin... Its purpose is to promote a more abiding commitment to freedom, a more pursuit of justice, and a deeper respect for human dignity. We have come now to a time of testing. We must not fail. Let us close the springs of racial poison."
         },
         {
           "id": "usa_lesson_2_2_b",
@@ -6504,11 +6655,11 @@ export default {
           "id": "usa_lesson_2_2_d",
           "letter": "E",
           "type": "photograph",
-          "title": "Source E: President Johnson Signing the Voting Rights Act of 1965 in the President's Room of the Capitol (6 August 1965)",
+          "title": "Source E: Archival Photograph of President Johnson Signing the Voting Rights Act of 1965 in the President's Room of the Capitol (6 August 1965)",
           "date": "6 August 1965",
           "image": "/units/usa/assets/sources/lbj-signing-voting-rights-1965.jpg",
           "image_url": "/units/usa/assets/sources/lbj-signing-voting-rights-1965.jpg",
-          "attribution": "Yoichi Okamoto / LBJ Presidential Library, Austin, Texas",
+          "attribution": "President Lyndon B. Johnson, Remarks on the Signing of the Voting Rights Act, United States Capitol (6 August 1965)",
           "question_badge": "Cross-Referencing",
           "question": "How does the statutory victory illustrated in Source E address the systemic disenfranchisement documented earlier in Source 1.4E?",
           "model_answer": "Source E shows the enactment of the law that eliminated literacy tests and empowered federal examiners to register Black voters directly in counties where participation fell below 50%. This federal intervention destroyed the discriminatory barrier revealed in Source 1.4E, causing Black registration in the Deep South to surge within months.",
@@ -6524,7 +6675,9 @@ export default {
           "hinge_question": "Why was the Voting Rights Act of 1965 vastly more enforceable than the 1957 and 1960 civil rights acts?",
           "source_context": "Yoichi Okamoto / LBJ Presidential Library, Austin, Texas. Yoichi Okamoto, chief White House photographer for The American electorate and international diplomatic corps with the objective: To record the enactment of the most transformative voting rights statute in American history.. **Hinge Question:** Why was the Voting Rights Act of 1965 vastly more enforceable than the 1957 and 1960 civil rights acts?",
           "src": "/units/usa/assets/sources/lbj-signing-voting-rights-1965.jpg",
-          "source": "/units/usa/assets/sources/lbj-signing-voting-rights-1965.jpg"
+          "source": "/units/usa/assets/sources/lbj-signing-voting-rights-1965.jpg",
+          "caption": "President Lyndon B. Johnson signs the Voting Rights Act of 1965 in the President's Room of the Capitol in Washington D.C., with Rosa Parks, Martin Luther King Jr., and congressional leaders looking on (6 August 1965).",
+          "text": "This act flows from a clear and simple wrong. Millions of Americans are denied the right to vote because of their color. This law will strike away the last major shackle of those fierce and ancient bonds. Today the Negro citizen takes his place at the ballot box. The command of the Constitution is clear. No American may be denied the right to vote because of his race or color. Every American citizen must have an equal right to vote in every election where he is entitled to vote under the Constitution."
         }
       ],
       "video": [
@@ -6919,26 +7072,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "How useful are Sources B and C for an enquiry into the aims of the Black Panther Party? (8 marks)",
-          "starter": "Source B is highly useful for showing the official socio-political platform and welfare goals of the Black Panthers.",
-          "model": "Source B is highly useful for showing the official socio-political platform and welfare goals of the Black Panthers. The content outlines their demands for political self-determination alongside basic social needs like \"decent housing\" and true history education. Its provenance as the official party manifesto means it provides direct, primary evidence of how the Panthers wanted to present their aims to the public.\n\nSource C is highly useful for revealing how the federal government viewed and targeted the Panthers. J. Edgar Hoover's description of them as a \"threat to security\" explains why the FBI launched its COINTELPRO campaign to destroy the party. However, it is highly biased, framing community social services like \"breakfast programs\" as dangerous brainwashing, which limits its objective accuracy about Panther motives while maximizing its utility for showing state hostility."
-        },
-        {
-          "qNum": 2,
-          "question": "How did Malcolm X's critique of integration appeal to Black Americans living in Northern urban ghettos?",
-          "starter": "Consider: Think about de facto segregation vs. legal rights.",
-          "model": "Northern Black citizens already had legal voting rights but faced severe de facto economic segregation, slum housing, and police brutality, which integration did not solve. Malcolm's focus on economic self-reliance resonated deeply."
-        },
-        {
-          "qNum": 3,
-          "question": "What did the Black Panthers' focus on armed patrols and community breakfasts reveal about their concept of 'Black Power'?",
-          "starter": "Consider: Consider the mixture of militancy and social welfare.",
-          "model": "It combined revolutionary armed self-defense against police brutality with practical community self-reliance and socialist welfare programs, proving that 'Black Power' was about community control rather than just violent rhetoric."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "Black Self-Determination and Dignity",
         "leftText": "Black Power advocates argued that non-violence begged white oppressors for rights, and that Black people must defend themselves and control their own communities' destiny.",
@@ -7249,23 +7383,83 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "8 marks",
+        "tariff": "Section B: Questions 3(b) & 3(c) (4 marks & 4 marks)",
+        "stimulus": [
+          {
+            "title": "Interpretation 1: From historian Thomas J. Sugrue, 'Sweet Land of Liberty: The Forgotten Struggle for Civil Rights in the North', published in 2008",
+            "content": "\"The urban rebellions of 1965 to 1967 were fundamentally explosions of anger against entrenched economic inequality, racial ghettoization, and pervasive employment discrimination in the urban North and West. For decades, Black families migrating from the South were trapped in substandard, overpriced housing by predatory real estate practices and bank redlining. De-industrialisation eliminated well-paying manufacturing jobs, leaving young Black men facing unemployment rates exceeding thirty percent. When white police forces—viewed by residents as occupying armies—engaged in routine brutality, neighborhoods erupted in spontaneous, desperate fury against a system that denied them economic dignity.\""
+          },
+          {
+            "title": "Interpretation 2: From historian Clayborne Carson, 'In Struggle: SNCC and the Black Awakening of the 1960s', published in 1981",
+            "content": "\"The urban outbreaks cannot be understood simply as economic distress; they were catalyzed by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority.\""
+          },
+          {
+            "title": "Source B: From the Official Report of the National Advisory Commission on Civil Disorders (Kerner Commission), March 1968",
+            "content": "\"Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans... Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit.\"",
+            "provenance": "From the official report presented to President Lyndon B. Johnson by the Kerner Commission, March 1968."
+          },
+          {
+            "title": "Source C: From a Speech by Stokely Carmichael, Chairman of SNCC, Chicago, July 1966",
+            "content": "\"Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to build a power base, so that when the police come into our communities with clubs and guns, they know we can defend ourselves!\"",
+            "provenance": "Speech delivered by SNCC chairman Stokely Carmichael at a Chicago mass rally, July 1966."
+          }
+        ],
         "questions": [
           {
-            "tariff": "8 marks",
-            "type": "utility_8m",
-            "marks": 8,
-            "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the causes of the riots in northern and western cities between 1965 and 1967? [8 marks]",
-            "stimulus": [],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is useful for an enquiry into the urban riots because it illustrates the profound economic deprivation, de facto segregation, and police brutality experienced by Black Americans in northern ghettos like Watts, Los Angeles. From my own knowledge, I know that while the Civil Rights Act had dismantled legal Jim Crow in the South, it did nothing to resolve northern unemployment (often double the white rate), substandard tenement housing, and aggressive police profiling. The provenance of Source B makes it particularly valuable because, as a contemporary testimony from an inner-city resident, it reveals the deep sense of systemic hopelessness that erupted into spontaneous rebellion.<br><br>Source C is useful because it provides official, data-driven analysis of the structural causes of urban unrest. From my own knowledge, I know that the 1968 Kerner Commission concluded that the riots were caused by white racism, warning that America was 'moving toward two societies, one black, one white—separate and unequal'. The provenance of Source C is valuable because, as an independent federal investigation commissioned by President Johnson, it offers an authoritative, objective assessment of how governmental neglect and institutional discrimination sparked nationwide urban upheaval. Together, both sources provide high historical utility for understanding both the lived frustration on the streets and the macroeconomic failures that caused the riots.",
+            "tariff": "4 marks",
+            "type": "difference_4m",
+            "marks": 4,
+            "question": "Study Interpretations 1 and 2. They give different views about the main cause of the urban riots between 1965 and 1967. What is the main difference between these views? Explain your answer, using details from both interpretations.",
+            "prompt": "Explain the fundamental disagreement between the two interpretations, quoting details from both to support your answer.",
+            "model": "The main difference is that Interpretation 1 argues that the urban riots were driven primarily by entrenched economic inequality, poverty, and housing redlining, whereas Interpretation 2 argues that the riots were catalyzed by an ideological shift towards Black Power, militant nationalism, and the rejection of non-violence.<br><br>Interpretation 1 emphasizes that riots were 'explosions of anger against entrenched economic inequality' where Black citizens were trapped in substandard housing and faced 'unemployment rates exceeding thirty percent'. In contrast, Interpretation 2 asserts that unrest was caused by a 'profound ideological transformation' inspired by Malcolm X and Stokely Carmichael, which taught youth that non-violence was 'humiliating and ineffective' and legitimized direct confrontation against white authority.",
             "scaffolding": {
-              "acronym": "Source Utility Framework",
-              "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
-              "sentence_starters": [
-                "Source B is useful because...",
-                "Source C is useful because...",
-                "Combined, both sources provide..."
+              "acronym": "Difference + Quotes Formula (AO4)",
+              "acronym_title": "Historiographical Comparison [4 Marks • 6 Mins]",
+              "steps": [
+                {
+                  "letter": "D",
+                  "name": "1. Main Difference",
+                  "prompt": "State the fundamental disagreement: socio-economic deprivation vs Black Power ideological radicalisation."
+                },
+                {
+                  "letter": "I1",
+                  "name": "2. Detail from Interp 1",
+                  "prompt": "Quote and explain details from Interpretation 1 (economic inequality, redlining, 30% unemployment)."
+                },
+                {
+                  "letter": "I2",
+                  "name": "3. Detail from Interp 2",
+                  "prompt": "Quote and explain details from Interpretation 2 (Black Power, Malcolm X, rejection of non-violence)."
+                }
+              ]
+            }
+          },
+          {
+            "tariff": "4 marks",
+            "type": "reason_4m",
+            "marks": 4,
+            "question": "Suggest one reason why Interpretations 1 and 2 give different views about the main cause of the urban riots between 1965 and 1967. You may use Sources B and C to help explain your answer.",
+            "prompt": "Explain why the historians reached contrasting conclusions by analysing how they investigated different types of primary evidence.",
+            "model": "The historians have different views because they have relied on different types of historical evidence. The author of Interpretation 1 has focused on official socio-economic investigations such as the Kerner Commission Report in Source B, which emphasized structural poverty, housing redlining, and police harassment as the root causes creating a 'reservoir of frustration'. In contrast, the author of Interpretation 2 has examined radical political speeches and activist manifestos such as Source C, emphasizing the fiery rhetoric of Stokely Carmichael and the appeal of Black Power in encouraging urban youth to abandon non-violence and defend themselves against police.",
+            "scaffolding": {
+              "acronym": "Reason for Difference Formula (AO4)",
+              "acronym_title": "Why Historians Disagree [4 Marks • 6 Mins]",
+              "steps": [
+                {
+                  "letter": "R",
+                  "name": "1. Root Reason",
+                  "prompt": "State clearly that the historians investigated different types of primary records and historical dimensions."
+                },
+                {
+                  "letter": "SB",
+                  "name": "2. Evidence for Interp 1",
+                  "prompt": "Show how Source B (Kerner Report, poverty, redlining) influenced the socio-economic view in Interpretation 1."
+                },
+                {
+                  "letter": "SC",
+                  "name": "3. Evidence for Interp 2",
+                  "prompt": "Show how Source C (Carmichael speech, Black Power, self-defense) influenced the ideological view in Interpretation 2."
+                }
               ]
             }
           }
@@ -7287,43 +7481,43 @@ export default {
       "specification_anchor": "Protest, progress and radicalism, 1960–75: the rise of Black radicalism; the ideology and impact of Malcolm X and the Nation of Islam, Stokely Carmichael and the emergence of Black Power, the 1968 Mexico Olympics salute, and the founding and survival programmes of the Black Panther Party.",
       "flashcards": [
         {
-          "term": "Freedom Summer (Mississippi 1964)",
-          "definition": "A voter registration campaign organized by SNCC and CORE that brought hundreds of Northern white student volunteers to Mississippi to register Black voters.",
-          "q": "What was the goal of Freedom Summer in 1964?",
-          "a": "To register Black voters and establish Freedom Schools in Mississippi, the most racially repressive state in the nation."
+          "term": "Malcolm X (El-Hajj Malik El-Shabazz)",
+          "definition": "Charismatic minister of the Nation of Islam who advocated Black nationalism, racial pride, and self-defense 'by any means necessary' before his assassination in 1965.",
+          "q": "What was Malcolm X's core philosophy during his time with the Nation of Islam?",
+          "a": "He rejected non-violence and racial integration, advocating Black pride, economic independence, and armed self-defense."
         },
         {
-          "term": "Murder of Chaney, Goodman, and Schwerner",
-          "definition": "Three civil rights workers abducted, murdered, and buried in an earthen dam by Klansmen and local police officers near Philadelphia, Mississippi in June 1964.",
-          "q": "What was the Mississippi Burning case of 1964?",
-          "a": "The murder of three civil rights workers (James Chaney, Andrew Goodman, Michael Schwerner) by KKK members and local deputies."
+          "term": "The Ballot or the Bullet (1964)",
+          "definition": "Landmark speech by Malcolm X warning white politicians that Black Americans would use armed self-defense if denied their constitutional voting rights.",
+          "q": "What was the message of Malcolm X's 'Ballot or the Bullet' speech?",
+          "a": "If the government failed to protect Black voting rights, African Americans would be forced to resort to armed revolution."
         },
         {
-          "term": "Mississippi Freedom Democratic Party (MFDP)",
-          "definition": "An integrated political party formed to challenge the legitimacy of the all-white, segregationist Mississippi delegation at the 1964 Democratic National Convention.",
-          "q": "What was the MFDP, and who was its notable spokesperson?",
-          "a": "An integrated delegation founded to challenge the all-white Mississippi party, famously championed by Fannie Lou Hamer."
+          "term": "Black Power (June 1966)",
+          "definition": "Political slogan and philosophy popularized by SNCC Chairman Stokely Carmichael, emphasizing racial pride, political autonomy, and self-determination.",
+          "q": "What was the significance of the cry 'Black Power' in 1966?",
+          "a": "It marked a decisive break from the non-violent integrationist goals of MLK toward militant Black political and economic control."
         },
         {
-          "term": "Selma to Montgomery Marches (March 1965)",
-          "definition": "Three protest marches across Alabama demanding voting rights for Black citizens, who comprised 50% of Selma's population but only 1% of registered voters.",
-          "q": "Why were the 1965 marches in Selma, Alabama organized?",
-          "a": "To demand federal voting rights protection after local authorities systematically blocked Black residents from registering."
+          "term": "Stokely Carmichael (Kwame Ture)",
+          "definition": "SNCC leader who expelled white members in 1966 and re-oriented the organisation toward militant Black nationalism and anti-imperialism.",
+          "q": "How did Stokely Carmichael transform SNCC in 1966?",
+          "a": "He abandoned non-violence, expelled white organizers, and made 'Black Power' the official ideology of the group."
         },
         {
-          "term": "'Bloody Sunday' at Edmund Pettus Bridge",
-          "definition": "On 7 March 1965, Alabama state troopers and mounted posse armed with clubs and tear gas brutally attacked 600 peaceful marchers on Edmund Pettus Bridge.",
-          "q": "What occurred on 'Bloody Sunday' (7 March 1965)?",
-          "a": "Alabama state troopers brutally beat peaceful marchers crossing Edmund Pettus Bridge on live television, horrifying the American public."
+          "term": "Black Panther Party for Self-Defense",
+          "definition": "Revolutionary socialist organization founded in Oakland in 1966 by Huey Newton and Bobby Seale to conduct armed citizen patrols and provide free community survival programs.",
+          "q": "What were the main goals of the Black Panther Party?",
+          "a": "To monitor racist police brutality through armed patrols and operate community survival programs like Free Breakfast for Children."
         },
         {
-          "term": "Voting Rights Act of 1965",
-          "definition": "Federal legislation signed by LBJ that outlawed literacy tests and authorized federal examiners to register voters in discriminatory Southern districts.",
-          "q": "What did the Voting Rights Act of 1965 achieve?",
-          "a": "It banned literacy tests and sent federal registrars to Southern states, dramatically increasing Black voter registration."
+          "term": "1968 Mexico Olympics Salute",
+          "definition": "Historic protest by Black American sprinters Tommie Smith and John Carlos on the medal podium, raising black-gloved fists during the US national anthem.",
+          "q": "Why did Tommie Smith and John Carlos give the Black Power salute at the 1968 Olympics?",
+          "a": "To protest racial injustice and poverty in America on an international stage, wearing black socks to represent Black poverty."
         }
       ],
-      "vocab_cloze_text": "In the summer of 1964, civil rights coalitions launched [Freedom Summer], deploying over a thousand predominantly white Northern college students to establish community centers and register voters across repressive Mississippi. Within days of arriving, tragedy struck in the infamous [Mississippi Burning Case], when three young activists—James Chaney, Andrew Goodman, and Michael Schwerner—were abducted and murdered by Klansmen working with county deputy sheriffs. That August, sharecropper and voting activist [Fannie Lou Hamer] captivated the nation at the Democratic National Convention, movingly asking 'Is this America?' after recounting savage beatings endured for attempting to register. In early 1965, the voting struggle shifted to Selma, Alabama, where state troopers ambushed peaceful marchers on the [Edmund Pettus Bridge] on 'Bloody Sunday', fracturing skulls with billy clubs on live television. Outraged by the brutality, President Lyndon Johnson addressed Congress and invoked the movement's anthem 'We Shall Overcome', signing the transformative [Voting Rights Act of 1965] to dismantle Southern voter suppression forever.",
+      "vocab_cloze_text": "During the mid-1960s, a fiery alternative to the Southern non-violent movement emerged in northern and western urban centers, personified by [Malcolm X]. Rejecting Martin Luther King Jr.'s call for integration, Malcolm warned white politicians in his iconic 1964 address that Black Americans would embrace [The Ballot or the Bullet] if denied their constitutional rights. Following Malcolm's assassination, SNCC Chairman [Stokely Carmichael] electrified the 1966 March Against Fear by raising the militant cry of [Black Power], breaking decisively from non-violent direct action. In Oakland, California, Huey Newton and Bobby Seale established the [Black Panther Party], carrying loaded firearms on street patrols to protect Black citizens against police brutality while distributing thousands of free breakfasts to children. The global impact of this militant awakening culminated at the [1968 Mexico Olympics], when track stars Tommie Smith and John Carlos raised black-gloved fists on the medal podium to protest American racial oppression.",
       "causal_domino_spine": {
         "title": "The Black Power Movement & Black Panthers: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -7429,9 +7623,9 @@ export default {
           "type": "speech_transcript",
           "title": "Source B: From Malcolm X's Landmark Address 'The Ballot or the Bullet' Delivered in Cleveland, Ohio (3 April 1964)",
           "date": "3 April 1964",
-          "image": "/units/usa/assets/sources/portraits/malcolm_x.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/malcolm_x.jpg",
-          "attribution": "Malcolm X Memorial Foundation / Library of Congress Sound Recording Collection",
+          "image": "/units/usa/assets/sources/malcolm-x-speaking.jpg",
+          "image_url": "/units/usa/assets/sources/malcolm-x-speaking.jpg",
+          "attribution": "Malcolm X, The Ballot or the Bullet, Cory Methodist Church, Cleveland, Ohio (3 April 1964)",
           "question_badge": "Historical Context",
           "question": "Explain the political context that led Malcolm X to deliver his 'Ballot or the Bullet' address in Source B.",
           "model_answer": "Following his split from the Nation of Islam in early 1964, Malcolm X sought to enter the secular political arena. With the 1964 Civil Rights Act stalled in Congress by southern filibusters, he warned that if the white political establishment continued to deny Black Americans the democratic ballot, they would inevitably be forced to resort to the bullet in self-defense.",
@@ -7446,8 +7640,10 @@ export default {
           },
           "hinge_question": "How did Malcolm X's critique of the Democratic Party reflect growing Black disillusionment with liberal politicians in 1964?",
           "source_context": "Malcolm X Memorial Foundation / Library of Congress Sound Recording Collection. Malcolm X (el-Hajj Malik el-Shabazz) for 3,000 community members at Cory Methodist Church and national broadcast audiences with the objective: To warn the federal government that African Americans would no longer tolerate non-violent passivity if their political rights were obstructed.. **Hinge Question:** How did Malcolm X's critique of the Democratic Party reflect growing Black disillusionment with liberal politicians in 1964?",
-          "src": "/units/usa/assets/sources/portraits/malcolm_x.jpg",
-          "source": "/units/usa/assets/sources/portraits/malcolm_x.jpg"
+          "src": "/units/usa/assets/sources/malcolm-x-speaking.jpg",
+          "source": "/units/usa/assets/sources/portraits/malcolm_x.jpg",
+          "caption": "Malcolm X speaking at a press conference in 1964, articulating the philosophy of Black nationalism, self-defense, and political accountability.",
+          "text": "It's got to be the ballot or the bullet. The ballot or the bullet. If you're afraid to use an expression like that, you should get on out of the country, you should get back in the cotton patch... In 1964, it's the ballot or the bullet. Don't be throwing out any ballots. A ballot is like a bullet. You don't throw your ballots until you see a target, and if that target is not within your reach, keep your ballot in your pocket... It's time for us to see that every time we look at our community, we see our people suffering from exploitation, poverty, and brutality. If the government is unwilling or unable to defend the lives and properties of Negroes, it's time for Negroes to defend themselves."
         },
         {
           "id": "usa_lesson_2_3_e",
@@ -7457,7 +7653,7 @@ export default {
           "date": "16 June 1966",
           "image": "/units/usa/assets/sources/stokely_carmichael_mississippi_1966.jpg",
           "image_url": "/units/usa/assets/sources/stokely_carmichael_mississippi_1966.jpg",
-          "attribution": "SNCC Audio Archive, Tougaloo College Special Collections",
+          "attribution": "Stokely Carmichael, Address at Greenwood, Mississippi, March Against Fear (16 June 1966)",
           "question_badge": "Reliability & Provenance",
           "question": "How does Stokely Carmichael's election as chairman of SNCC explain the ideological shift reflected in Source C?",
           "model_answer": "Source C marks the definitive fracture in the civil rights coalition. Having been beaten and jailed dozens of times on peaceful protests, Carmichael and younger SNCC activists concluded that non-violence had exhausted its utility. His call for 'Black Power' signaled that SNCC would prioritize Black self-determination, community control, and racial pride over integration.",
@@ -7473,7 +7669,9 @@ export default {
           "hinge_question": "Why did the slogan 'Black Power' deeply alarm white liberals while electrifying young African Americans?",
           "source_context": "SNCC Audio Archive, Tougaloo College Special Collections. Stokely Carmichael (later Kwame Ture), newly elected chairman of SNCC for Marchers, local Greenwood residents, national journalists, and Dr King with the objective: To decisively reject integrationist passivity and mobilize Black communities to seize political and economic control.. **Hinge Question:** Why did the slogan 'Black Power' deeply alarm white liberals while electrifying young African Americans?",
           "src": "/units/usa/assets/sources/stokely_carmichael_mississippi_1966.jpg",
-          "source": "/units/usa/assets/sources/stokely_carmichael_mississippi_1966.jpg"
+          "source": "/units/usa/assets/sources/stokely_carmichael_mississippi_1966.jpg",
+          "caption": "SNCC Chairman Stokely Carmichael addressing a mass civil rights rally in Greenwood, Mississippi during the June 1966 March Against Fear, where he first electrified the crowd with the cry 'Black Power!'.",
+          "text": "This is the twenty-seventh time that I've been arrested. I ain't going to jail no more! The only way we gonna stop them white men from whuppin' us is to take over. We been saying 'freedom' for six years and we ain't got nothin'. What we gonna start saying now is Black Power! We want Black Power! Every county where we are the majority, we want to elect Black sheriffs, Black mayors, and control our own communities!"
         },
         {
           "id": "usa_lesson_2_3_d",
@@ -7481,9 +7679,9 @@ export default {
           "type": "manifesto",
           "title": "Source D: Excerpt from the Black Panther Party for Self-Defense Ten-Point Platform and Program (15 October 1966)",
           "date": "15 October 1966",
-          "image": "/units/usa/assets/sources/portraits/huey_newton.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/huey_newton.jpg",
-          "attribution": "BPP National Headquarters, Oakland, California / Stanford University Special Collections",
+          "image": "/units/usa/assets/sources/black-panthers-marching.jpg",
+          "image_url": "/units/usa/assets/sources/black-panthers-marching.jpg",
+          "attribution": "Huey P. Newton and Bobby Seale, Black Panther Party Platform and Program, Oakland, California (October 1966)",
           "question_badge": "Cross-Referencing",
           "question": "How do the socioeconomic demands in Source D contrast with the legislative focus of the mainstream civil rights movement in Source 2.2C?",
           "model_answer": "While the mainstream Civil Rights Act in Source 2.2C focused on legal desegregation in public accommodations, Source D focuses on radical socialist restructuring. The Panthers demanded full employment, decent housing, an end to police brutality, exemption from the Vietnam military draft, and freedom for all Black prisoners, addressing systemic urban poverty.",
@@ -7498,8 +7696,10 @@ export default {
           },
           "hinge_question": "Why did J. Edgar Hoover and the FBI designate the Black Panther Party as 'the greatest threat to the internal security of the country'?",
           "source_context": "BPP National Headquarters, Oakland, California / Stanford University Special Collections. Huey P. Newton and Bobby Seale, co-founders of the Black Panther Party for Urban Black youth, working-class communities, and radical activist groups with the objective: To set forth the core ideological objectives and practical socialist demands of the revolutionary Black Panther Party.. **Hinge Question:** Why did J. Edgar Hoover and the FBI designate the Black Panther Party as 'the greatest threat to the internal security of the country'?",
-          "src": "/units/usa/assets/sources/portraits/huey_newton.jpg",
-          "source": "/units/usa/assets/sources/portraits/huey_newton.jpg"
+          "src": "/units/usa/assets/sources/black-panthers-marching.jpg",
+          "source": "/units/usa/assets/sources/portraits/huey_newton.jpg",
+          "caption": "Black Panther Party members drilling and standing in uniform with black leather jackets and berets in Oakland, California.",
+          "text": "1. We want freedom. We want power to determine the destiny of our Black Community.<br>2. We want full employment for our people.<br>3. We want an end to the robbery by the white man of our Black Community.<br>4. We want decent housing, fit for the shelter of human beings.<br>7. We want an immediate end to POLICE BRUTALITY and MURDER of Black people.<br>8. We want freedom for all Black men held in federal, state, county and city prisons and jails.<br>10. We want land, bread, housing, education, clothing, justice and peace."
         },
         {
           "id": "usa_lesson_2_3_a",
@@ -8218,15 +8418,15 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "16 marks (+4 SPaG)",
+        "tariff": "Section B: Question 3(d) (16 marks (+4 SPaG))",
         "stimulus": [
           {
-            "title": "Interpretation 1: From an academic study of the Black Power movement, published in 2006.",
-            "content": "The fracture in the civil rights movement was fundamentally ideological, driven by young militants who grew disillusioned with non-violent direct action. Having endured years of beatings and jailings during the Freedom Rides and voter registration campaigns with little federal protection, younger activists in SNCC and CORE concluded that peaceful appeal to white conscience was ineffective and demeaning. Led by figures like Stokely Carmichael, they rejected Martin Luther King's philosophy of interracial integration, demanded 'Black Power', expelled white organizers, and embraced militant rhetoric and armed self-defense as the only viable path to self-determination."
+            "title": "Interpretation 1: From an academic study of the Black Power movement and civil rights, published in 2008",
+            "content": "\"The urban rebellions were fundamentally the outcome of severe, unaddressed socio-economic deprivation in northern ghettos. African Americans in cities like Los Angeles, Detroit, and Newark were trapped in substandard housing, suffered from substandard schools, and faced catastrophic youth unemployment rates above 30%. The civil rights legislation of 1964 and 1965 addressed Southern legal segregation but did virtually nothing to alleviate the economic misery of northern inner cities. When oppressive police forces acted with routine brutality, communities exploded in spontaneous, desperate anger against structural economic racism.\""
           },
           {
-            "title": "Interpretation 2: From a social and economic history of urban African American communities, published in 2013.",
-            "content": "The divergence between mainstream civil rights leaders and radical militants was rooted in geography and economics rather than mere ideology. When the movement moved north into cities like Chicago, Cleveland, and Detroit, non-violent tactics proved useless against entrenched de facto segregation, redlining, and systemic unemployment. While the Civil Rights and Voting Rights Acts had dismantled Southern Jim Crow, they offered nothing to northern urban youth trapped in grinding ghetto poverty and facing daily police brutality. Militancy surged because moderate leaders had no realistic strategy to solve inner-city economic inequality."
+            "title": "Interpretation 2: From a social and economic history of urban America in the 1960s, published in 2014",
+            "content": "\"The spread and intensity of urban riots cannot be understood without examining the ideological transformation wrought by Black Power and Malcolm X. Younger African Americans in northern cities became completely disillusioned with Martin Luther King's philosophy of non-violence, viewing it as slow, passive, and humiliating. The fiery militant rhetoric of Stokely Carmichael, the Nation of Islam, and the Black Panther Party gave ideological legitimacy to confrontation and anti-police violence. It was this radicalized consciousness, rather than economic conditions alone, that transformed localized street disturbances into revolutionary urban rebellions.\""
           }
         ],
         "questions": [
@@ -8234,26 +8434,28 @@ export default {
             "tariff": "16 marks (+4 SPaG)",
             "type": "verdict_16m",
             "marks": 16,
-            "question": "3(d). How far do you agree with Interpretation 2 about the causes of the split between non-violent civil rights organisations and the Black Power movement? [16 marks + 4 SPaG]",
-            "stimulus": [
-              {
-                "title": "Interpretation 1: From an academic study of the Black Power movement, published in 2006.",
-                "content": "The fracture in the civil rights movement was fundamentally ideological, driven by young militants who grew disillusioned with non-violent direct action. Having endured years of beatings and jailings during the Freedom Rides and voter registration campaigns with little federal protection, younger activists in SNCC and CORE concluded that peaceful appeal to white conscience was ineffective and demeaning. Led by figures like Stokely Carmichael, they rejected Martin Luther King's philosophy of interracial integration, demanded 'Black Power', expelled white organizers, and embraced militant rhetoric and armed self-defense as the only viable path to self-determination."
-              },
-              {
-                "title": "Interpretation 2: From a social and economic history of urban African American communities, published in 2013.",
-                "content": "The divergence between mainstream civil rights leaders and radical militants was rooted in geography and economics rather than mere ideology. When the movement moved north into cities like Chicago, Cleveland, and Detroit, non-violent tactics proved useless against entrenched de facto segregation, redlining, and systemic unemployment. While the Civil Rights and Voting Rights Acts had dismantled Southern Jim Crow, they offered nothing to northern urban youth trapped in grinding ghetto poverty and facing daily police brutality. Militancy surged because moderate leaders had no realistic strategy to solve inner-city economic inequality."
-              }
-            ],
+            "question": "How far do you agree with Interpretation 2 about the causes of the riots in northern and western cities between 1965 and 1967? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "On the one hand, Interpretation 1 argues that the split was caused primarily by ideological impatience and a fundamental rejection of non-violence by younger militants like Stokely Carmichael and Malcolm X. Younger activists in SNCC and CORE had endured brutal beatings during the Freedom Rides and Mississippi Freedom Summer without seeing tangible economic improvements in poor Black communities. Black Power advocates argued that non-violence was humiliating and ineffective for self-defense, adopting the slogan 'Black Power' and expelling white members to pursue racial self-determination and armed self-defense through groups like the Black Panther Party.<br><br>On the other hand, Interpretation 2 emphasizes that the split was driven by the changing geographical and economic focus of the movement from Southern legal desegregation to Northern urban poverty. When Martin Luther King Jr. brought his non-violent campaign to Chicago in 1966, he faced fierce white working-class hostility and found that moral marches could not resolve deep-rooted problems like housing discrimination, joblessness, and police brutality. Militants correctly recognized that the moderate tactics of the SCLC were ill-equipped to address the structural economic misery of urban ghettos.<br><br>Furthermore, government repression and the FBI’s COINTELPRO operations deliberately exacerbated divisions between civil rights leaders, planting false stories and escalating rivalries between mainstream organizations and radical factions.<br><br>In conclusion, having evaluated both interpretations against the historical evidence, I agree with Interpretation 2 to a moderate extent. While Carmichael and Malcolm X provided the radical rhetoric, it was the persistent failure of non-violent legalism to alleviate the crushing economic misery and police brutality in northern urban centres that made the fracture of the civil rights movement inevitable.",
+            "model": "On the one hand, Interpretation 2 correctly highlights the decisive influence of Black Power and militant Black nationalism in fostering an uncompromising climate of resistance. Following the assassination of Malcolm X in 1965 and Stokely Carmichael’s declaration of 'Black Power' in 1966, younger northern activists decisively broke with Martin Luther King’s philosophy of Christian non-violence. Groups like the Black Panther Party for Self-Defense, founded in Oakland in 1966 by Huey Newton and Bobby Seale, armed themselves to monitor police activities and openly advocated armed community defense. This radical rhetoric gave ideological justification to young men in northern cities who felt that passive integration was a failure, transforming street altercations into conscious political revolts against white authority.<br><br>On the other hand, Interpretation 1 provides an equally compelling explanation by demonstrating that the fundamental, underlying causes of the riots were entrenched socio-economic deprivation and institutional racism. While the 1964 Civil Rights Act and 1965 Voting Rights Act dismantled de jure Jim Crow laws in the South, they did almost nothing to tackle de facto segregation, job discrimination, and poverty in northern slums. The landmark 1968 Kerner Commission report confirmed this reality, famously warning that America was 'moving toward two societies, one black, one white—separate and unequal'. In cities like Watts (1965), Newark (1967), and Detroit (1967), Black unemployment hovered around 30%, while predatory real estate redlining confined families to overcrowded, rat-infested tenements with underfunded schools. These miserable conditions created an explosive reservoir of despair.<br><br>Furthermore, contextual knowledge reveals that in virtually every riot (such as Watts in August 1965, which resulted in 34 deaths and $40m damage), the immediate spark was an incident of police brutality by overwhelmingly white police departments viewed by local residents as an occupying army. King himself acknowledged this during his 1966 Chicago Campaign, when he was struck by a rock and admitted that northern white hostility was even more vicious than in the South.<br><br>In conclusion, having evaluated both interpretations, I agree with Interpretation 2 only to a moderate extent. While Black Power rhetoric provided the fiery vocabulary and militant confidence for urban unrest, it was the crushing reality of economic deprivation, ghetto redlining, and systemic police brutality outlined in Interpretation 1 that provided the explosive fuel without which no riots could have occurred.",
             "scaffolding": {
-              "acronym": "Evaluative Verdict Framework",
-              "acronym_title": "Balanced Evaluative Essay (3 Themes + Judgement)",
-              "sentence_starters": [
-                "On the one hand, Interpretation 1 argues that...",
-                "On the other hand, Interpretation 2 points out that...",
-                "In conclusion, having evaluated both views..."
+              "acronym": "Interpretation Verdict Framework (AO4)",
+              "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
+              "steps": [
+                {
+                  "letter": "INTERP 2",
+                  "name": "1. Support Interpretation 2 (Black Power & Ideological Militancy)",
+                  "prompt": "Deploy evidence of Malcolm X, Stokely Carmichael, the Black Panthers (Oakland 1966), and the rejection of non-violence."
+                },
+                {
+                  "letter": "INTERP 1",
+                  "name": "2. Support Interpretation 1 (Socio-Economic Ghetto Misery)",
+                  "prompt": "Deploy evidence from the Kerner Commission (1968), bank redlining, 30% youth unemployment, and Watts (1965)."
+                },
+                {
+                  "letter": "VERDICT",
+                  "name": "3. Sustained Historical Conclusion",
+                  "prompt": "Weigh both views: judge whether economic misery was the foundational cause while Black Power was the catalyst."
+                }
               ]
             }
           }
@@ -8284,43 +8486,43 @@ export default {
       "specification_anchor": "Protest, progress and radicalism, 1960–75: urban rebellion and the end of an era; race riots in northern cities (Watts 1965, Detroit/Newark 1967), the Kerner Report (1968), King's Chicago campaign, the assassination of Martin Luther King Jr. (1968), and assessment of civil rights progress by 1975.",
       "flashcards": [
         {
-          "term": "Civil Rights Act of 1964",
-          "definition": "Landmark federal legislation banning racial discrimination in all public accommodations, prohibiting employment discrimination, and empowering the federal government to desegregate schools.",
-          "q": "What were the key provisions of the Civil Rights Act of 1964?",
-          "a": "It banned discrimination in public accommodations, prohibited employment discrimination, and tied federal funding to school desegregation."
+          "term": "Watts Riots (August 1965)",
+          "definition": "Six days of violent urban rebellion in the Watts district of Los Angeles triggered by police mistreatment, resulting in 34 deaths, 1,000 injuries, and $40 million in property destruction.",
+          "q": "What caused the Watts Riots in Los Angeles in August 1965?",
+          "a": "Simmering rage over police brutality, high unemployment, and miserable ghetto housing erupted after an aggressive traffic arrest."
         },
         {
-          "term": "EEOC",
-          "definition": "Equal Employment Opportunity Commission, established under Title VII of the 1964 Civil Rights Act to investigate workplace and hiring discrimination.",
-          "q": "What was the role of the EEOC created in 1964?",
-          "a": "To investigate and enforce prohibitions against employment discrimination based on race, color, religion, sex, or national origin."
+          "term": "'Long, Hot Summers' (1965–1967)",
+          "definition": "A wave of over 150 race riots that erupted in northern and western industrial cities (such as Newark and Detroit in 1967), exposing deep racial divisions outside the South.",
+          "q": "What were the 'Long, Hot Summers' of 1965–1967?",
+          "a": "Outbreaks of violent urban rioting across dozens of northern cities including Detroit and Newark, fueled by poverty and police abuse."
         },
         {
-          "term": "24th Amendment (1964)",
-          "definition": "Constitutional amendment prohibiting the revocation of voting rights in federal elections based on failure to pay any poll tax or other tax.",
-          "q": "What did the 24th Amendment accomplish?",
-          "a": "It outlawed poll taxes in federal elections, removing a major financial barrier to voting for poor Black citizens."
+          "term": "Kerner Commission Report (1968)",
+          "definition": "President Johnson's investigative commission that concluded white racism was the primary cause of urban riots, warning the nation was 'moving toward two societies, one black, one white—separate and unequal'.",
+          "q": "What was the conclusion of the 1968 Kerner Commission Report?",
+          "a": "It blamed white racism for ghetto poverty and police abuse, famously warning America was dividing into two separate and unequal societies."
         },
         {
-          "term": "Lyndon B. Johnson's 'Great Society'",
-          "definition": "President Johnson's ambitious domestic reform program aimed at eliminating poverty and racial injustice through Medicare, Medicaid, Head Start, and education funding.",
-          "q": "What was Lyndon B. Johnson's 'Great Society'?",
-          "a": "A sweeping series of domestic reforms to eliminate poverty, expand civil rights, and provide federal healthcare and education."
+          "term": "De Facto Segregation",
+          "definition": "Racial segregation that occurs by socioeconomic reality, discriminatory bank redlining, and residential practice rather than by Southern Jim Crow laws.",
+          "q": "What was de facto segregation in northern cities?",
+          "a": "Segregation in housing and schools enforced by white prejudice, bank lending restrictions (redlining), and job discrimination, not by law."
         },
         {
-          "term": "Fair Housing Act (Civil Rights Act of 1968)",
-          "definition": "Legislation passed days after MLK's assassination prohibiting racial discrimination in the sale, rental, and financing of residential housing.",
-          "q": "What was prohibited by the Fair Housing Act of 1968?",
-          "a": "Racial discrimination in the sale, rental, and financing of housing, targeting de facto northern residential segregation."
+          "term": "Detroit Riot of 1967",
+          "definition": "One of the deadliest urban rebellions in US history, lasting five days after police raided an unlicensed bar, requiring 82nd Airborne paratroopers and resulting in 43 deaths.",
+          "q": "How severe was the 1967 Detroit rebellion?",
+          "a": "43 people were killed, over 1,000 injured, and 7,000 arrested, requiring federal army tanks and paratroopers to suppress."
         },
         {
-          "term": "Shift to Economic & Northern Rights",
-          "definition": "The pivot of civil rights focus after 1965 towards addressing entrenched Northern urban problems: ghetto slums, unemployment, poverty, and police violence.",
-          "q": "How did the civil rights focus shift after the 1965 Voting Rights Act?",
-          "a": "It shifted from legal segregation in the South to economic inequality, substandard housing, and joblessness in northern cities."
+          "term": "White Backlash ('Law and Order')",
+          "definition": "The political reaction among white suburban voters who blamed civil rights militants and rioters for disorder, leading to Richard Nixon's 'law and order' presidential victory in 1968.",
+          "q": "How did white suburban Americans react to the urban riots?",
+          "a": "With a conservative backlash demanding strict 'law and order', turning against civil rights funding and electing Richard Nixon."
         }
       ],
-      "vocab_cloze_text": "On 2 July 1964, President Lyndon B. Johnson signed the monumental [Civil Rights Act of 1964] into law, legally eradicating Jim Crow segregation across all public accommodations and empowering federal attorneys to sue recalcitrant school boards. Crucially, Title VII of the statute established the [EEOC] to investigate discriminatory workplace hiring practices and enforce fair employment protections for Black workers and women. Earlier that year, the constitutional barricades to the ballot box were further dismantled by the [24th Amendment], which outlawed the prohibitive poll taxes that had disenfranchised poor citizens for over half a century. Harnessing his landslide 1964 electoral mandate, Johnson launched [The Great Society], a visionary legislative crusade that created Medicare, Medicaid, Head Start, and substantial federal anti-poverty grants for inner cities. Following King's tragic assassination in April 1968, Johnson pushed the landmark [Fair Housing Act] through Congress, outlawing racial discrimination in real estate sales and rentals to tackle northern urban residential segregation.",
+      "vocab_cloze_text": "Just five days after President Johnson signed the Voting Rights Act, the streets of Los Angeles exploded in the catastrophic [Watts Riots] of August 1965, requiring 14,000 National Guardsmen to suppress six days of arson, looting, and gunfire that left 34 dead. This erupted into the [Long, Hot Summers] of 1966 and 1967, as more than 150 northern industrial metropolises—most catastrophically Detroit, where 43 people perished—rebelled against miserable ghetto housing, corrupt slumlords, and aggressive white police forces. Investigating the unprecedented urban turmoil, the presidentially appointed [Kerner Commission] issued a scathing report in 1968, warning that the nation was rapidly 'moving toward two societies, one black, one white—separate and unequal'. The commission made clear that northern cities suffered not from southern Jim Crow laws, but from entrenched [De Facto Segregation] enforced by predatory bank redlining and job discrimination. Instead of funding the commission's sweeping recommendations for billions in federal housing and school investment, white suburban voters experienced a furious [White Backlash], embracing Richard Nixon's conservative 'law and order' campaign in the 1968 presidential election.",
       "causal_domino_spine": {
         "title": "Urban Rebellions, The Kerner Report & King's Legacy: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -8400,9 +8602,9 @@ export default {
           "type": "eyewitness_testimony",
           "title": "Source A: Statement of Watts Resident Tommy Jacquette on the Causes of the Los Angeles Uprising (August 1965)",
           "date": "August 1965",
-          "image": "/units/usa/assets/sources/portraits/mlk.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/mlk.jpg",
-          "attribution": "McCone Commission Testimony, Los Angeles Public Library Special Collections",
+          "image": "/units/usa/assets/sources/watts_riots_avalon_blvd_1965.jpg",
+          "image_url": "/units/usa/assets/sources/watts_riots_avalon_blvd_1965.jpg",
+          "attribution": "Statement of Tommy Jacquette, Watts Community Organizer, Los Angeles (August 1965)",
           "question_badge": "Reliability & Provenance",
           "question": "How does Tommy Jacquette's perspective as a local community resident affect the historical value of Source A?",
           "model_answer": "Jacquette’s testimony provides invaluable authentic insight into the pent-up rage of urban Black youth who viewed the police as an occupying army. He rejected the label of 'riot,' describing it instead as a 'rebellion' against decades of police brutality, joblessness, and white arrogance that civil rights laws in the South had done nothing to solve.",
@@ -8417,8 +8619,10 @@ export default {
           },
           "hinge_question": "Why did northern urban rebellions break out immediately after the landmark Voting Rights Act was signed in 1965?",
           "source_context": "McCone Commission Testimony, Los Angeles Public Library Special Collections. Tommy Jacquette, twenty-one-year-old Watts community organizer for The Governor's Commission on the Los Angeles Riots (McCone Commission) with the objective: To articulate the authentic collective grievances and political meaning behind the spontaneous urban violence.. **Hinge Question:** Why did northern urban rebellions break out immediately after the landmark Voting Rights Act was signed in 1965?",
-          "src": "/units/usa/assets/sources/portraits/mlk.jpg",
-          "source": "/units/usa/assets/sources/portraits/mlk.jpg"
+          "src": "/units/usa/assets/sources/watts_riots_avalon_blvd_1965.jpg",
+          "source": "/units/usa/assets/sources/portraits/mlk.jpg",
+          "caption": "Aerial view of Avalon Boulevard during the Watts Rebellion in Los Angeles, August 1965, with dense black smoke rising from burning commercial blocks.",
+          "text": "Since August 1965, where are we going? Where is Watts going? We didn't burn our own community; we burned the property of white slumlords and merchants who bled our people dry for generations. It was a revolt, not a riot. It was a rebellion of young Black people standing up and declaring: 'We are tired of being brutalized by the Los Angeles Police Department, tired of living in rat-infested tenements, and tired of being treated like second-class citizens in our own country.'"
         },
         {
           "id": "usa_lesson_2_4_a",
@@ -8428,7 +8632,7 @@ export default {
           "date": "29 February 1968",
           "image": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
           "image_url": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
-          "attribution": "United States Government Printing Office, Washington D.C.",
+          "attribution": "Report of the National Advisory Commission on Civil Disorders (Kerner Report), Washington, D.C. (March 1968)",
           "question_badge": "Source Inference",
           "question": "What is the core conclusion reached by the Kerner Commission in Source B regarding the cause of urban racial violence?",
           "model_answer": "Source B famously concluded that 'our nation is moving toward two societies, one black, one white—separate and unequal.' The Commission placed the primary blame on white racism, systemic discrimination in employment and housing, and aggressive police practices that trapped Black citizens in decaying, underfunded urban ghettos.",
@@ -8444,7 +8648,9 @@ export default {
           "hinge_question": "Why did President Johnson largely ignore the recommendations of the Kerner Commission despite having appointed it?",
           "source_context": "United States Government Printing Office, Washington D.C.. The 11-member presidential commission chaired by Governor Otto Kerner of Illinois for President Lyndon B. Johnson, the United States Congress, and the American public with the objective: To provide an objective, authoritative federal investigation into the root causes of the devastating urban rebellions of 1967.. **Hinge Question:** Why did President Johnson largely ignore the recommendations of the Kerner Commission despite having appointed it?",
           "src": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
-          "source": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg"
+          "source": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
+          "caption": "Remains of burned-out residential structures in Detroit following the July 1967 rebellion, where 43 people died and paratroopers of the 82nd Airborne were deployed.",
+          "text": "This is our basic conclusion: Our nation is moving toward two societies, one black, one white—separate and unequal. Reaction to Detroit, Newark, and other riots of 1967 should not be planned on the basis of suppressing disorder, but on enriching the lives of the millions of ghetto dwellers who have lost hope. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it."
         },
         {
           "id": "usa_lesson_2_4_d",
@@ -8454,7 +8660,7 @@ export default {
           "date": "4 April 1968",
           "image": "/units/usa/assets/sources/mourners-mlk-assassination.jpg",
           "image_url": "/units/usa/assets/sources/mourners-mlk-assassination.jpg",
-          "attribution": "Robert F. Kennedy Presidential Campaign Sound Archives, JFK Library, Boston",
+          "attribution": "Senator Robert F. Kennedy, Remarks on the Death of Martin Luther King Jr., Indianapolis, Indiana (4 April 1968)",
           "question_badge": "Historical Context",
           "question": "Explain why Indianapolis remained peaceful on the night of 4 April 1968 while over 100 other American cities erupted in flames.",
           "model_answer": "Indianapolis remained peaceful because Robert Kennedy delivered an unscripted, deeply empathetic address directly to a predominantly Black crowd, sharing his personal pain over his brother's assassination. He appealed for reconciliation rather than division, quoting Aeschylus and urging Americans to 'tame the savageness of man and make gentle the life of this world.'",
@@ -8470,7 +8676,9 @@ export default {
           "hinge_question": "What does the violent national reaction to King's murder reveal about the state of American racial consensus in 1968?",
           "source_context": "Robert F. Kennedy Presidential Campaign Sound Archives, JFK Library, Boston. Senator Robert F. Kennedy, presidential candidate and former Attorney General for Several thousand Black citizens gathered for a campaign rally in inner-city Indianapolis with the objective: To convey the devastating news of King's murder, prevent retaliatory violence, and appeal for national unity.. **Hinge Question:** What does the violent national reaction to King's murder reveal about the state of American racial consensus in 1968?",
           "src": "/units/usa/assets/sources/mourners-mlk-assassination.jpg",
-          "source": "/units/usa/assets/sources/mourners-mlk-assassination.jpg"
+          "source": "/units/usa/assets/sources/mourners-mlk-assassination.jpg",
+          "caption": "Soldiers of the 3rd Infantry Regiment and National Guardsmen patrol 7th Street NW in Washington D.C. as firefighters hose down buildings destroyed in the April 1968 uprisings following the assassination of Martin Luther King Jr.",
+          "text": "I have very sad news for all of you, and I think sad news for all of our fellow citizens, and people who love peace all over the world, and that is that Martin Luther King was shot and was killed tonight in Memphis, Tennessee. Martin Luther King dedicated his life to love and to justice between fellow human beings. For those of you who are black—considering the evidence evidently that there were white people who were responsible—you can be filled with bitterness, and with hatred, and a desire for revenge. But what we need in the United States is not division; what we need in the United States is not hatred; what we need in the United States is not violence and lawlessness, but is love, and wisdom, and compassion toward one another."
         },
         {
           "id": "usa_lesson_2_4_e",
@@ -8478,9 +8686,9 @@ export default {
           "type": "legislative_statute",
           "title": "Source D: Excerpt from the Civil Rights Act of 1968 (The Fair Housing Act) Signed by President Johnson (11 April 1968)",
           "date": "11 April 1968",
-          "image": "/units/usa/assets/sources/portraits/johnson.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/johnson.jpg",
-          "attribution": "United States Statutes at Large, 82 Stat. 73, Public Law 90-284",
+          "image": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
+          "image_url": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
+          "attribution": "Public Law 90-284, 90th United States Congress, 82 Stat. 73 (11 April 1968)",
           "question_badge": "Cross-Referencing",
           "question": "How does the passage of the Fair Housing Act in Source D corroborate the analysis of urban segregation presented in the Kerner Report (Source B)?",
           "model_answer": "Source D directly corroborates the Kerner Report's warning about divided societies by outlawing racial discrimination in the sale and rental of housing. Stalled in Congress for months, the bill was swiftly passed only after King's murder and the national uprisings demonstrated that residential segregation was destroying American cities.",
@@ -8495,8 +8703,10 @@ export default {
           },
           "hinge_question": "Why did fair housing legislation encounter far fiercer resistance among northern white homeowners than voting rights in the South?",
           "source_context": "United States Statutes at Large, 82 Stat. 73, Public Law 90-284. The 90th United States Congress, signed into law by President Lyndon B. Johnson for The American real estate industry, financial lenders, and the public with the objective: To provide a federal legislative memorial to Dr King and dismantle the legal mechanisms of residential ghettoization.. **Hinge Question:** Why did fair housing legislation encounter far fiercer resistance among northern white homeowners than voting rights in the South?",
-          "src": "/units/usa/assets/sources/portraits/johnson.jpg",
-          "source": "/units/usa/assets/sources/portraits/johnson.jpg"
+          "src": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
+          "source": "/units/usa/assets/sources/portraits/johnson.jpg",
+          "caption": "President Lyndon B. Johnson signing federal civil rights legislation in the East Room of the White House. On 11 April 1968, amid national grief following MLK's assassination, Johnson signed the Civil Rights Act of 1968.",
+          "text": "An Act to prescribe penalties for certain acts of violence or intimidation, and for other purposes. Be it enacted by the Senate and House of Representatives: Section 804. It shall be unlawful—(a) To refuse to sell or rent after the making of a bona fide offer, or to refuse to negotiate for the sale or rental of, or otherwise make unavailable or deny, a dwelling to any person because of race, color, religion, or national origin. (b) To discriminate against any person in the terms, conditions, or privileges of sale or rental of a dwelling... because of race, color, religion, or national origin."
         },
         {
           "id": "usa_lesson_2_4_b",
@@ -8915,26 +9125,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "Source A:\n\"The Strategic Hamlet Program is failing to achieve its primary objective. The barbed-wire perimeter and armed militia watchtowers makes the peasants feel like prisoners. They are forced to abandon their ancestral lands, family rice paddies, and sacred burial grounds to build their own huts under armed supervision. Far from isolating the guerrillas, many peasants are secretly aiding the Vietcong because they hate being forced to live in these new camps and despise the corrupt Saigon officials who run them.\"\n\nGive two things you can infer from Source A about the Strategic Hamlet Program in Vietnam. (4 marks)",
-          "starter": "Inference 1: I can infer that the program created a hostile environment for the peasants.",
-          "model": "Inference 1: I can infer that the program created a hostile environment for the peasants.\nDetails: \"...makes the peasants feel like prisoners. They are forced to abandon their ancestral lands...\"\nInference 2: I can infer that the program backfired and increased support for the communist insurgency.\nDetails: \"Many peasants are secretly aiding the Vietcong because they hate being forced to live in these new camps.\""
-        },
-        {
-          "qNum": 2,
-          "question": "How did the US Domino Theory justify supporting Ngo Dinh Diem despite his undemocratic policies?",
-          "starter": "Consider: Consider the priority of anti-communism in US foreign policy.",
-          "model": "US leaders prioritized anti-communism over democratic integrity, fearing that if South Vietnam fell to communism, neighboring Laos and Cambodia would follow, thus compromising American containment strategy in Asia."
-        },
-        {
-          "qNum": 3,
-          "question": "Why did Diem's favoritism toward Catholicism alienate the majority Buddhist population in South Vietnam?",
-          "starter": "Consider: Think about the demographics of South Vietnam.",
-          "model": "Buddhists made up 80% of the population, but Diem restricted their flags, allocated lands to Catholics, and cracked down violently on Buddhist protestors, destroying his regime's legitimacy and driving peasants to aid the Vietcong."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "Containing Communist Tyranny",
         "leftText": "US planners argued that supporting South Vietnam was a vital strategic necessity to stop communist expansion, defend a sovereign ally, and uphold SEATO commitments.",
@@ -9245,23 +9436,81 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "4 marks",
+        "tariff": "Section A: Questions 1 & 2 (4 marks & 12 marks)",
+        "stimulus": [
+          {
+            "title": "Source A: A US Soldier on Combat Patrol in the Swamps of South Vietnam, 1966",
+            "image": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
+            "caption": "An American infantryman wades through chest-deep swamp water carrying an M60 machine gun and bandoliers of ammunition during a search-and-destroy mission in the Mekong Delta.",
+            "provenance": "Official combat photograph taken by US Army military photographers in South Vietnam, 1966 (US National Archives · Record Group 111).",
+            "extract": "An American soldier from the 9th Infantry Division wades through chest-deep swamp water carrying an M60 machine gun and bandoliers of ammunition during a search-and-destroy mission against Vietcong guerrillas in the Mekong Delta."
+          }
+        ],
         "questions": [
           {
             "tariff": "4 marks",
             "type": "inference_4m",
             "marks": 4,
-            "question": "1. Give two things you can infer from Source A about the conditions faced by US infantry patrols fighting in South Vietnam (1965–68). [4 marks]",
-            "stimulus": "Source A: A soldier's account describing the intense heat, hidden booby traps, and unseen enemy snipers in the jungle.",
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that American soldiers operated in an intensely hazardous, unfamiliar jungle environment where lethal danger was omnipresent.<br><strong>Details in the source that tell me this:</strong><br>The extract highlights soldiers constantly looking down for concealed punji-stick booby traps and tripping wires hidden beneath dense foliage.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that US troops experienced extreme psychological terror because they rarely saw the enemy directly.<br><strong>Details in the source that tell me this:</strong><br>The account describes sudden sniper fire from invisible tree lines, followed by the immediate disappearance of Vietcong fighters into underground tunnel networks.</p>",
+            "question": "Give two things you can infer from Source A about the conditions faced by US infantry patrols fighting in South Vietnam (1965–68).",
+            "prompt": "Give two separate valid inferences. Support each inference with direct visual or textual details from Source A.",
+            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that American soldiers faced exhausting and physically treacherous environmental conditions while patrolling in South Vietnam.<br><strong>Details in the source that tell me this:</strong><br>The soldier is shown submerged up to his chest in murky, stagnant swamp water while pushing through thick wetland vegetation.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that US ground troops were heavily encumbered with cumbersome combat gear and ammunition in an environment unsuited to conventional industrial warfare.<br><strong>Details in the source that tell me this:</strong><br>The soldier must physically hoist a heavy M60 machine gun above his head while draped in multiple heavy bandoliers of metal ammunition belts.</p>",
             "scaffolding": {
-              "acronym": "Point & Detail (4 Marks)",
-              "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
-              "sentence_starters": [
-                "Source B is useful because...",
-                "Source C is useful because...",
-                "Combined, both sources provide..."
+              "acronym": "Inference Formula (AO3)",
+              "acronym_title": "Inference + Supporting Detail (2 Points • 4 Marks)",
+              "steps": [
+                {
+                  "letter": "I1",
+                  "name": "1. First Valid Inference",
+                  "prompt": "State what the source reveals about the physical jungle and swamp conditions."
+                },
+                {
+                  "letter": "D1",
+                  "name": "2. Supporting Detail",
+                  "prompt": "Quote or describe the chest-deep swamp water from Source A."
+                },
+                {
+                  "letter": "I2",
+                  "name": "3. Second Valid Inference",
+                  "prompt": "Identify an insight regarding military equipment and terrain mismatch."
+                },
+                {
+                  "letter": "D2",
+                  "name": "4. Supporting Detail",
+                  "prompt": "Describe the heavy M60 machine gun held above the water."
+                }
+              ]
+            }
+          },
+          {
+            "tariff": "12 marks",
+            "type": "explain_why_12",
+            "marks": 12,
+            "question": "Explain why US involvement in Vietnam escalated under President Johnson between 1964 and 1965.",
+            "stimulus": [
+              "The Gulf of Tonkin incident (August 1964)",
+              "The attack on the US base at Pleiku (February 1965)"
+            ],
+            "prompt": "You may use the following in your answer: (1) The Gulf of Tonkin incident (August 1964), (2) The attack on the US base at Pleiku (February 1965). You must also use information of your own.",
+            "model": "A decisive turning point that triggered escalation was the <strong>Gulf of Tonkin incident in August 1964</strong>. Following alleged torpedo attacks by North Vietnamese patrol boats against the destroyer USS Maddox, President Johnson used the event to secure the Gulf of Tonkin Resolution from Congress. Passed almost unanimously, this resolution gave Johnson authority to 'take all necessary measures to repel any armed attack' and prevent further aggression. Crucially, it functioned as a constitutional 'blank check', allowing the President to wage undeclared, full-scale war in Southeast Asia without needing formal congressional approval.<br><br>This escalation was drastically accelerated by the <strong>Vietcong attack on the US military base at Pleiku</strong> in February 1965. Communist guerrillas launched a surprise mortar strike that killed eight American servicemen and wounded over a hundred. Viewing this as a direct test of American resolve, Johnson immediately authorized Operation Rolling Thunder—a sustained three-year aerial bombing campaign targeting North Vietnamese infrastructure, military installations, and the Ho Chi Minh Trail. This marked the definitive shift from advisory support to active direct warfare.<br><br>Finally, military escalation became inevitable due to the <strong>weakness of the South Vietnamese ARVN and the landing of US combat troops at Da Nang</strong> in March 1965. Air bases housing American bombers required ground security that the demoralized ARVN could not provide. In response, Johnson deployed 3,500 US Marines to Da Nang, marking the first official commitment of American ground combat troops. Driven by the Domino Theory and the fear that South Vietnam would fall to communism, Johnson rapidly expanded US troop levels to over 184,000 by the end of 1965, transforming the conflict into an American-run war.",
+            "scaffolding": {
+              "acronym": "PEEL Structure Strip",
+              "acronym_title": "3-Paragraph Causal Analysis (PEEL • 12 Marks)",
+              "steps": [
+                {
+                  "letter": "P1",
+                  "name": "1. Gulf of Tonkin Incident & Resolution",
+                  "prompt": "Alleged torpedo boat attack giving LBJ congressional authority to wage war without declaration."
+                },
+                {
+                  "letter": "P2",
+                  "name": "2. Pleiku Attack & Operation Rolling Thunder",
+                  "prompt": "Vietcong mortar attack on US airbase prompting 3-year sustained aerial bombing campaign."
+                },
+                {
+                  "letter": "P3",
+                  "name": "3. Troop Deployments & Da Nang (Own Knowledge)",
+                  "prompt": "Landing of 3,500 Marines in March 1965 to defend air bases, beginning full ground combat commitment."
+                }
               ]
             }
           }
@@ -9283,43 +9532,43 @@ export default {
       "specification_anchor": "US involvement in the Vietnam War, 1954–75: reasons for US involvement, 1954–63; the Domino Theory, the 1954 Geneva Accords, US financial and military support for Ngo Dinh Diem in South Vietnam, the growth of the Vietcong, and Kennedy's Strategic Hamlets and Green Berets.",
       "flashcards": [
         {
-          "term": "Malcolm X (El-Hajj Malik El-Shabazz)",
-          "definition": "Influential Black nationalist leader and orator who rejected integration and passive non-violence, advocating Black pride, self-defense, and self-determination.",
-          "q": "How did Malcolm X's approach differ from Martin Luther King Jr.'s?",
-          "a": "Malcolm X rejected non-violence and racial integration, advocating Black pride, self-determination, and armed self-defense."
+          "term": "Domino Theory",
+          "definition": "President Eisenhower's Cold War belief that if South Vietnam fell to communism, neighboring Southeast Asian nations (Laos, Cambodia, Thailand, Burma) would topple like a row of dominoes.",
+          "q": "What was Eisenhower's 'Domino Theory' regarding Southeast Asia?",
+          "a": "The geopolitical concept that a communist victory in Vietnam would trigger the rapid collapse of all surrounding Southeast Asian states."
         },
         {
-          "term": "Nation of Islam (Black Muslims)",
-          "definition": "A religious and political organization led by Elijah Muhammad teaching that white people were 'devils' and advocating strict religious discipline and a separate Black nation.",
-          "q": "What were the core beliefs of the Nation of Islam?",
-          "a": "It preached Black racial supremacy, strict Islamic moral codes, self-sufficiency, and total economic and territorial separation from white America."
+          "term": "Geneva Accords (1954)",
+          "definition": "International conference agreement that temporarily divided Vietnam along the 17th Parallel and scheduled nationwide democratic unification elections for July 1956.",
+          "q": "How did the 1954 Geneva Accords divide Vietnam?",
+          "a": "Temporarily divided the nation along the 17th Parallel between Ho Chi Minh's communist North and a Western-backed South, pending 1956 elections."
         },
         {
-          "term": "Black Nationalism",
-          "definition": "A political ideology emphasizing Black cultural pride, economic independence, and racial solidarity rather than assimilation into white-dominated American society.",
-          "q": "What was Black Nationalism?",
-          "a": "An ideology promoting Black political self-determination, economic independence, and cultural pride rather than integration."
+          "term": "Ngo Dinh Diem",
+          "definition": "Catholic, fiercely anti-communist leader of South Vietnam (1954–1963) backed by the US, whose nepotism, corruption, and persecution of Buddhists alienated the Vietnamese population.",
+          "q": "Why was Ngo Dinh Diem's regime so unpopular among ordinary Vietnamese?",
+          "a": "He favored his Catholic minority, jailed political opponents, appointed corrupt family members, and brutally persecuted Buddhist monks."
         },
         {
-          "term": "'By Any Means Necessary'",
-          "definition": "Malcolm X's famous doctrine asserting that African Americans had the moral and legal right to use self-defense against white racial violence.",
-          "q": "What did Malcolm X mean by advocating self-defense 'by any means necessary'?",
-          "a": "That Black Americans had the right to defend themselves, including with physical force, when law enforcement failed to protect them."
+          "term": "Strategic Hamlets Program",
+          "definition": "US-backed military scheme in 1962 that forcibly relocated Vietnamese peasants into fortified barbed-wire villages to isolate them from Vietcong guerrillas.",
+          "q": "Why did the Strategic Hamlets program backfire on the Diem regime?",
+          "a": "It uprooted peasants from their sacred ancestral burial lands, breeding intense hatred and driving thousands to join the Vietcong."
         },
         {
-          "term": "Hajj to Mecca (1964)",
-          "definition": "Malcolm X's pilgrimage to Mecca in April 1964, where praying alongside Muslims of all races led him to abandon Black supremacy and embrace orthodox Islam and international human rights.",
-          "q": "How did Malcolm X's pilgrimage to Mecca in 1964 change his views?",
-          "a": "Seeing Muslims of all races worshipping together led him to reject anti-white racial dogma and adopt a broader human rights perspective."
+          "term": "Buddhist Crisis (1963)",
+          "definition": "Nationwide Buddhist protests against Diem's religious persecution, dramatized globally when monk Thich Quang Duc burned himself to death in central Saigon.",
+          "q": "What was the historical impact of Thich Quang Duc's self-immolation in June 1963?",
+          "a": "The shocking photograph exposed Diem's brutality worldwide, convincing President Kennedy that Diem could no longer be supported."
         },
         {
-          "term": "Assassination of Malcolm X (1965)",
-          "definition": "The assassination of Malcolm X on 21 February 1965 at the Audubon Ballroom in Manhattan by members of the Nation of Islam following his break with Elijah Muhammad.",
-          "q": "When and why was Malcolm X assassinated?",
-          "a": "On 21 February 1965 by Nation of Islam gunmen after he split from the group and formed the Organization of Afro-American Unity."
+          "term": "Diem Coup (November 1963)",
+          "definition": "Overthrow and assassination of Ngo Dinh Diem by South Vietnamese military generals with the covert approval and encouragement of the US government.",
+          "q": "What happened to Ngo Dinh Diem in November 1963?",
+          "a": "He was overthrown and murdered in a military coup tacitly authorized by the Kennedy administration via State Department Cable 243."
         }
       ],
-      "vocab_cloze_text": "During the early 1960s, a fiery alternative to the Southern non-violent movement emerged in the northern urban ghettos, championed by [Malcolm X]. As the chief national spokesman for the [Nation of Islam], he vehemently denounced white people as historical oppressors and rejected racial integration, arguing that Black Americans should not beg for acceptance from those who had enslaved them. Malcolm promoted militant [Black Nationalism], urging African Americans to achieve economic self-sufficiency, embrace African heritage, and reclaim their psychological dignity. Rejecting Martin Luther King's philosophy of non-violence in the face of brutal beatings and bombings, Malcolm proclaimed that Black people must secure their freedom [By Any Means Necessary]. However, in 1964, Malcolm split with Elijah Muhammad and embarked on his historic [Hajj to Mecca], where worshipping beside blonde-haired and blue-eyed Muslims revolutionized his thinking, leading him to abandon anti-white rhetoric and adopt a universal human rights perspective before his tragic assassination in 1965.",
+      "vocab_cloze_text": "Following the humiliating defeat of French colonial forces at Dien Bien Phu in 1954, the international [Geneva Accords] temporarily partitioned the nation along the [17th Parallel]. Fearing that a communist takeover would trigger the [Domino Theory] across Southeast Asia, the United States installed and financed the authoritarian, anti-communist regime of [Ngo Dinh Diem] in Saigon. Diem refused to hold the promised 1956 reunification elections, rigged his own presidency, and alienated the rural peasantry by forcing them into fortified [Strategic Hamlets] surrounded by barbed wire. Diem's overt favoritism toward his Roman Catholic minority triggered the nationwide [Buddhist Crisis] of 1963, broadcast to a horrified world when monk Thich Quang Duc performed public self-immolation on a Saigon street corner. Realizing Diem's regime had lost all legitimacy, the Kennedy administration sent secret State Department Cable 243 approving the [Diem Coup] of November 1963, resulting in Diem's execution and leaving South Vietnam in severe political instability.",
       "causal_domino_spine": {
         "title": "Geneva Partition, Ngo Dinh Diem & The Vietcong: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -9399,9 +9648,9 @@ export default {
           "type": "speech_transcript",
           "title": "Source A: President Dwight D. Eisenhower Press Conference Formulating the 'Domino Theory' in Southeast Asia (7 April 1954)",
           "date": "7 April 1954",
-          "image": "/units/usa/assets/sources/portraits/eisenhower.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/eisenhower.jpg",
-          "attribution": "Public Papers of the Presidents: Dwight D. Eisenhower, 1954",
+          "image": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
+          "image_url": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
+          "attribution": "President Dwight D. Eisenhower, The President's News Conference (7 April 1954), Public Papers of the Presidents",
           "question_badge": "Source Inference",
           "question": "What does President Eisenhower's explanation in Source A reveal about American geopolitical assumptions regarding Indochina?",
           "model_answer": "Source A reveals that American policymakers viewed the struggle in Vietnam entirely through the prism of global Cold War containment rather than local anti-colonial nationalism. Eisenhower assumed that if Vietnam fell to communism, neighbouring states like Laos, Cambodia, Thailand, and Burma would inevitably collapse 'like falling dominoes.'",
@@ -9416,8 +9665,10 @@ export default {
           },
           "hinge_question": "To what extent was the 'Domino Theory' an accurate strategic assessment versus a flawed ideological simplification?",
           "source_context": "Public Papers of the Presidents: Dwight D. Eisenhower, 1954. President Dwight D. Eisenhower for White House press correspondents, congressional leaders, and international diplomats with the objective: To convince a skeptical American public that financial support for the French and anti-communist forces in Indochina was vital to national security.. **Hinge Question:** To what extent was the 'Domino Theory' an accurate strategic assessment versus a flawed ideological simplification?",
-          "src": "/units/usa/assets/sources/portraits/eisenhower.jpg",
-          "source": "/units/usa/assets/sources/portraits/eisenhower.jpg"
+          "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
+          "source": "/units/usa/assets/sources/portraits/eisenhower.jpg",
+          "caption": "President Dwight D. Eisenhower addressing news reporters during an executive press conference.",
+          "text": "You have, of course, both the specific and the general when you talk about such things. First of all, you have the specific value of a locality in its production of materials that the world needs, like rubber and tin. Then you have the possibility that many human beings pass under a dictatorship that is inimical to the free world. Finally, you have broader considerations that might follow what you would call the 'falling domino' principle. You have a row of dominoes set up, you knock over the first one, and what will happen to the last one is the certainty that it will go over very quickly. So you could have a beginning of a disintegration that would have the most profound influences."
         },
         {
           "id": "usa_lesson_3_1_e",
@@ -9477,9 +9728,9 @@ export default {
           "type": "diplomatic_cable",
           "title": "Source D: State Department Telegram No. 243 (Cable 243) Sent to US Ambassador Henry Cabot Lodge Jr. in Saigon (24 August 1963)",
           "date": "24 August 1963",
-          "image": "/units/usa/assets/sources/portraits/kennedy.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/kennedy.jpg",
-          "attribution": "Foreign Relations of the United States (FRUS), 1961–1963, Volume IV, Vietnam",
+          "image": "/units/usa/assets/sources/state_dept_cable_243_1963.png",
+          "image_url": "/units/usa/assets/sources/state_dept_cable_243_1963.png",
+          "attribution": "Department of State, Outgoing Telegram No. 243, Top Secret, Declassified (24 August 1963)",
           "question_badge": "Historical Context",
           "question": "Explain the significance of Cable 243 in Source D in setting in motion the military coup against President Diem.",
           "model_answer": "Source D was the decisive turning point in American involvement. Drafted by frustrated State Department officials, the cable authorized Ambassador Lodge to inform South Vietnamese generals that if Diem refused to remove his hated brother Nhu and halt crackdowns on Buddhists, the US could no longer support him, effectively greenlighting the military coup that killed him in November 1963.",
@@ -9494,8 +9745,10 @@ export default {
           },
           "hinge_question": "Did the assassination of Diem leave the United States more deeply trapped in Vietnam, or provide an opportunity to exit?",
           "source_context": "Foreign Relations of the United States (FRUS), 1961–1963, Volume IV, Vietnam. Roger Hilsman and George Ball, approved by President Kennedy for Ambassador Henry Cabot Lodge Jr. and the CIA station in Saigon with the objective: To signal to dissident South Vietnamese generals that the US would not oppose a coup to replace Diem.. **Hinge Question:** Did the assassination of Diem leave the United States more deeply trapped in Vietnam, or provide an opportunity to exit?",
-          "src": "/units/usa/assets/sources/portraits/kennedy.jpg",
-          "source": "/units/usa/assets/sources/portraits/kennedy.jpg"
+          "src": "/units/usa/assets/sources/state_dept_cable_243_1963.png",
+          "source": "/units/usa/assets/sources/portraits/kennedy.jpg",
+          "caption": "Facsimile of declassified State Department Telegram No. 243 (Cable 243), sent on 24 August 1963 authorizing Ambassador Henry Cabot Lodge Jr. to signal support for a military coup against Ngo Dinh Diem.",
+          "text": "It is now clear that whether military proposed martial law or whether Nhu tricked them into it, Nhu took advantage of it to smash Pagodas with police and Tung's Special Forces loyal to him. The US Government cannot tolerate situation in which power lies in Nhu's hands. Diem must be given chance remove Nhu and his coterie and replace them with best military and political personalities available. If Diem remains obdurate and refuses, then we must face the possibility that Diem himself cannot be preserved... You may also tell appropriate military commanders that we will give them direct support in any interim period of breakdown central government mechanism."
         },
         {
           "id": "usa_lesson_3_1_d",
@@ -9503,9 +9756,9 @@ export default {
           "type": "intelligence_memorandum",
           "title": "Source E: CIA Special National Intelligence Estimate: 'The Prospects for South Vietnam' (22 October 1963)",
           "date": "22 October 1963",
-          "image": "/units/usa/assets/sources/portraits/diem.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/diem.jpg",
-          "attribution": "Central Intelligence Agency Freedom of Information Act Electronic Reading Room",
+          "image": "/units/usa/assets/sources/cia_snie_53_63_south_vietnam.png",
+          "image_url": "/units/usa/assets/sources/cia_snie_53_63_south_vietnam.png",
+          "attribution": "Central Intelligence Agency, SNIE 53-2-63, Top Secret / Controlled Dissem (22 October 1963)",
           "question_badge": "Reliability & Provenance",
           "question": "How does the classified intelligence perspective in Source E compare with public White House statements regarding the Strategic Hamlet Program?",
           "model_answer": "Source E provides a brutally honest internal assessment that directly contradicted optimistic public propaganda. While the administration claimed the Strategic Hamlets were successfully isolating the Vietcong, the CIA privately reported that Diem's forced relocation of peasants had alienated rural communities, driving thousands directly into the arms of the National Liberation Front.",
@@ -9520,8 +9773,10 @@ export default {
           },
           "hinge_question": "Why was the Diem government's refusal to implement genuine land reform fatal to its survival in rural Vietnam?",
           "source_context": "Central Intelligence Agency Freedom of Information Act Electronic Reading Room. Office of National Estimates, Central Intelligence Agency for The President, National Security Council, and Joint Chiefs of Staff with the objective: To provide unvarnished, realistic intelligence on the catastrophic deterioration of political stability in South Vietnam.. **Hinge Question:** Why was the Diem government's refusal to implement genuine land reform fatal to its survival in rural Vietnam?",
-          "src": "/units/usa/assets/sources/portraits/diem.jpg",
-          "source": "/units/usa/assets/sources/portraits/diem.jpg"
+          "src": "/units/usa/assets/sources/cia_snie_53_63_south_vietnam.png",
+          "source": "/units/usa/assets/sources/portraits/diem.jpg",
+          "caption": "Facsimile of declassified CIA Special National Intelligence Estimate (SNIE 53-2-63), concluding that the Diem regime had lost all authority and that a military coup was imminent.",
+          "text": "We believe that the Buddhist crisis and the repression of students and intellectuals have alienated virtually all educated urban Vietnamese from the Diem regime. Respect for Ngo Dinh Diem has evaporated, and his brother Ngo Dinh Nhu is universally loathed and feared throughout Saigon. Concurrently, the military leadership in Saigon is divided, suspicious of Diem and Nhu, and increasingly convinced that victory over the Viet Cong is impossible under the present political leadership. A successful military coup against the Diem government appears increasingly likely within the coming weeks."
         }
       ],
       "video": [
@@ -9913,26 +10168,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "Explain why US military involvement in Vietnam escalated in the years 1964–68. (12 marks)",
-          "starter": "“One reason why US military involvement in Vietnam escalated in the years 1964–68 was the political authorization granted by the Gulf of Tonkin Resolution in August 1964.",
-          "model": "“One reason why US military involvement in Vietnam escalated in the years 1964–68 was the political authorization granted by the Gulf of Tonkin Resolution in August 1964.” After alleged clashes between the destroyer [[USS Maddox]] and North Vietnamese patrol boats, Congress passed the resolution giving President Johnson a 'blank check' to deploy combat troops without a formal declaration of war. How did the Gulf of Tonkin incident enable President Johnson to commit US ground combat troops to the war in Vietnam? {{Therefore, the Gulf of Tonkin Resolution was a vital cause of why US military involvement in Vietnam escalated in the years 1964–68 because it removed legislative barriers, allowing the deployment of Marines to Da Nang in March 1965.}}\n\n“A second reason why US military involvement in Vietnam escalated in the years 1964–68 was the strategic commitment to the Cold War policy of containment and the Domino Theory.” US military planners believed that if South Vietnam fell to communism, neighboring nations like Laos and Cambodia would fall next. To prevent this, General Westmoreland implemented [[search-and-destroy]] missions, raising troop levels to [[535,000]] by 1968. {{Therefore, the geopolitical policy of containment was a fundamental reason why US military involvement in Vietnam escalated in the years 1964–68 because it made stopping communism in South Vietnam a top national security priority.}}\n\n“A third reason why US military involvement in Vietnam escalated in the years 1964–68 was the strategic crisis and loss of control caused by the Tet Offensive in early 1968.” The Vietcong launched a massive surprise attack on over 100 cities, including the US Embassy in Saigon. Though militarily defeated, the [[Tet Offensive]] shattered US claims of imminent victory and led to requests for [[206,000]] more troops. {{Therefore, the military shock of the Tet Offensive was a decisive reason why US military involvement in Vietnam escalated in the years 1964–68 because it proved current force levels were failing, forcing a choice between withdrawal or further escalation.}}"
-        },
-        {
-          "qNum": 2,
-          "question": "Why was the Gulf of Tonkin Resolution called a 'blank check' for President Johnson?",
-          "starter": "Consider: Consider the scope of presidential power granted by Congress.",
-          "model": "It authorized the president to take 'all necessary measures' to repel attacks and prevent aggression without requiring a formal declaration of war by Congress, granting him unilateral authority to escalate military action."
-        },
-        {
-          "qNum": 3,
-          "question": "How did the transition from 'advisory' status to combat deployment in March 1965 change the nature of the war?",
-          "starter": "Consider: Think about troop numbers and direct responsibility.",
-          "model": "It turned a local civil conflict into a direct, large-scale American combat operation, shifting responsibility to US military forces and committing the US to an open-ended ground war."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "Appropriate Defensive Action",
         "leftText": "President Johnson argued that the Tonkin Resolution was a necessary response to unprovoked North Vietnamese aggression, showing US determination to defend Southeast Asia from communism.",
@@ -10243,26 +10479,46 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "12 marks",
+        "tariff": "Section B: Question 3(a) (8 marks)",
+        "stimulus": [
+          {
+            "title": "Source B: From Combat Memoirs by US Marine Lieutenant Philip Caputo, Published in ‘A Rumor of War’ (1977)",
+            "provenance": "Written by Philip Caputo, a US Marine lieutenant who commanded combat infantry units in South Vietnam in 1965–66.",
+            "extract": "\"We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies.\""
+          },
+          {
+            "title": "Source C: From an Interview with Vo Thi Mo, a Female Vietcong Guerrilla Fighter in Cu Chi District, Recorded in 1982",
+            "provenance": "Oral history interview with a veteran Vietcong combatant who operated in the Cu Chi tunnel network throughout the war.",
+            "extract": "\"The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted.\""
+          }
+        ],
         "questions": [
           {
-            "tariff": "12 marks",
-            "type": "explain_why_12",
-            "marks": 12,
-            "question": "2. Explain why US involvement in Vietnam escalated under President Johnson between 1964 and 1965. [12 marks]",
-            "stimulus": [
-              "The Gulf of Tonkin incident (August 1964)",
-              "The attack on the US base at Pleiku (February 1965)"
-            ],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "One major reason why US involvement escalated was the <strong>Gulf of Tonkin incident in August 1964</strong> and the subsequent congressional resolution. Following reports that North Vietnamese torpedo boats had attacked the USS Maddox, President Johnson obtained the Gulf of Tonkin Resolution from Congress with near-unanimous support. This resolution granted the president sweeping executive authority to 'take all necessary measures' to repel armed attacks, effectively providing Johnson with a blank cheque to wage war in Vietnam without a formal congressional declaration.<br><br>A second critical trigger was the <strong>Vietcong attack on the US military base at Pleiku in February 1965</strong>, which killed eight American servicemen and wounded over a hundred. Viewing this as an intolerable direct provocation, Johnson immediately launched Operation Rolling Thunder—a sustained aerial bombing campaign against North Vietnam. To protect the vital US airbases like Da Nang from counter-attack, Johnson made the historic decision in March 1965 to deploy the first 3,500 US ground combat troops, fundamentally transforming the conflict from an advisory mission into a full-scale American ground war.<br><br>Finally, an underlying driver was the pervasive <strong>Cold War Domino Theory</strong> and fear of communist expansion across Southeast Asia. US policymakers feared that if South Vietnam fell to Ho Chi Minh’s forces, neighbouring nations like Laos, Cambodia, Thailand, and Indonesia would inevitably collapse to communism. Furthermore, Johnson was politically determined not to be remembered as the first American president who 'lost' Vietnam to communism.",
+            "tariff": "8 marks",
+            "type": "utility_8m",
+            "marks": 8,
+            "question": "Study Sources B and C. How useful are Sources B and C for an enquiry into the reasons why US military tactics failed to defeat the Vietcong (1965–68)?",
+            "prompt": "Evaluate both sources using Content, Contextual Knowledge (Search & Destroy, Operation Rolling Thunder, Agent Orange & Napalm, body counts vs Cu Chi tunnels, punji traps, Ho Chi Minh Trail), and Provenance.",
+            "model": "Source B is exceptionally useful because it provides an honest, frontline combat officer’s diagnosis of why American counter-insurgency tactics failed. Written by Marine Lieutenant Philip Caputo, it exposes the fundamental flaws of General Westmoreland’s 'search and destroy' doctrine. Caputo reveals that US troops could rarely locate the elusive guerrilla enemy, who dictated combat on their own terms using booby traps and ambushes. Furthermore, he explains how 'Zippo raids' burning peasant villages fatally alienated the civilian population, destroying any hope of winning 'hearts and minds'. Its provenance as a published memoir by a combat platoon commander gives it high value for explaining the demoralization of American soldiers, although writing a decade later may introduce retrospective reflection.<br><br>Source C is equally valuable because it provides a rare, authentic primary perspective from an active Vietcong guerrilla fighter. Vo Thi Mo details how communist forces effectively neutralized American technological and aerial superiority through asymmetrical warfare: constructing over 200 kilometers of subterranean tunnels in Cu Chi with underground hospitals and workshops, and using homemade booby traps to inflict continuous psychological casualties. She also highlights the immense motivational advantage of fighting for national independence compared to conscripted US draftees. As an oral history interview recorded after the war, Source C may contain patriotic bias, but it accurately reflects the tactical ingenuity and ideological resolve that enabled the Vietcong to survive. Overall, both sources are extremely useful: Source B reveals the fatal flaws of American conventional search-and-destroy methods, while Source C demonstrates the extraordinary resilience and tactical ingenuity of the communist underground resistance.",
             "scaffolding": {
-              "acronym": "PEEL Structure Strip",
-              "acronym_title": "3-Paragraph Causal Analysis (PEEL)",
-              "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, a second critical factor was...",
-                "Finally, an underlying driver was..."
+              "acronym": "Source Utility Framework (AO3)",
+              "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
+              "steps": [
+                {
+                  "letter": "SOURCE B",
+                  "name": "1. Source B Content & Context",
+                  "prompt": "Examine Caputo's testimony on search-and-destroy failures, hidden booby traps, and burning peasant huts."
+                },
+                {
+                  "letter": "SOURCE C",
+                  "name": "2. Source C Content & Context",
+                  "prompt": "Analyse Vo Thi Mo on Cu Chi tunnels, homemade punji traps, and ideological determination."
+                },
+                {
+                  "letter": "SYNTHESIS",
+                  "name": "3. Provenance & Synthesis",
+                  "prompt": "Contrast an American officer's combat memoir with a Vietcong guerrilla's oral testimony; reach an evaluative verdict."
+                }
               ]
             }
           }
@@ -10287,43 +10543,43 @@ export default {
       "specification_anchor": "US involvement in the Vietnam War, 1954–75: escalation under President Johnson; the 1964 Gulf of Tonkin incident and Resolution, the start of combat troop deployment (1965), and the expansion of the US military draft.",
       "flashcards": [
         {
-          "term": "Black Power",
-          "definition": "A militant slogan and movement popularized by Stokely Carmichael in 1966 demanding Black political empowerment, cultural pride, and community control.",
-          "q": "What did the slogan 'Black Power' mean when coined in 1966?",
-          "a": "It demanded Black political and economic empowerment, racial pride, and control over their own institutions without white paternalism."
+          "term": "Gulf of Tonkin Incident (August 1964)",
+          "definition": "Naval skirmishes off North Vietnam involving the destroyer USS Maddox and questionable second sonar reports, used by President Johnson to justify direct US military intervention.",
+          "q": "What occurred during the Gulf of Tonkin Incident in August 1964?",
+          "a": "The USS Maddox fired on North Vietnamese patrol boats; a disputed second attack two nights later was used by LBJ to escalate the war."
         },
         {
-          "term": "Stokely Carmichael",
-          "definition": "SNCC chairman who broke with non-violence during the 1966 Meredith March Against Fear, proclaiming 'What we need now is Black Power!'",
-          "q": "What role did Stokely Carmichael play in the civil rights movement?",
-          "a": "He shifted SNCC toward Black Power and militant separatism, expelling white members and rejecting non-violent protest."
+          "term": "Gulf of Tonkin Resolution",
+          "definition": "Congressional statute (Public Law 88-408) passed almost unanimously granting President Johnson authority to 'take all necessary measures' to repel attacks in Southeast Asia.",
+          "q": "What power did the Gulf of Tonkin Resolution give President Johnson?",
+          "a": "It gave the president a constitutional 'blank check' to wage full-scale undeclared war in Vietnam without consulting Congress."
         },
         {
-          "term": "Black Panther Party for Self-Defense",
-          "definition": "A revolutionary Marxist-Leninist organization founded in Oakland, California in October 1966 by Huey Newton and Bobby Seale to combat police brutality.",
-          "q": "Who founded the Black Panther Party and why?",
-          "a": "Huey Newton and Bobby Seale founded it in Oakland in 1966 to monitor police brutality and protect Black neighborhoods."
+          "term": "Pleiku Attack (February 1965)",
+          "definition": "Vietcong mortar assault on a US helicopter base at Pleiku that killed 9 Americans, used by LBJ as the immediate trigger to launch sustained air bombing.",
+          "q": "Why was the attack on Pleiku in February 1965 a turning point?",
+          "a": "It provided the immediate catalyst for Johnson to order Operation Rolling Thunder and commit the first American ground combat troops."
         },
         {
-          "term": "Ten-Point Program",
-          "definition": "The founding manifesto of the Black Panthers demanding employment, decent housing, education, an end to police brutality, and exemption from the Vietnam draft.",
-          "q": "What were the main demands of the Black Panthers' Ten-Point Program?",
-          "a": "Freedom, full employment, decent housing, relevant education, an end to police brutality, and fair trials by Black juries."
+          "term": "Operation Rolling Thunder (1965–1968)",
+          "definition": "Massive, continuous three-year US aerial bombing campaign against North Vietnam and the Ho Chi Minh Trail aimed at halting communist infiltration.",
+          "q": "What was the purpose of Operation Rolling Thunder?",
+          "a": "A sustained aerial bombardment designed to destroy North Vietnamese infrastructure, military depots, and force Hanoi to negotiate."
         },
         {
-          "term": "Panther Survival Programs",
-          "definition": "Community service initiatives run by the Black Panthers, most notably the Free Breakfast for School Children Program feeding tens of thousands daily.",
-          "q": "What community survival programs did the Black Panthers run?",
-          "a": "Free breakfast programs for children, free health clinics, and educational classes in impoverished inner-city communities."
+          "term": "General William Westmoreland",
+          "definition": "Commander of US Military Assistance Command, Vietnam (MACV) from 1964 to 1968 who advocated conventional search-and-destroy warfare and an attrition body-count strategy.",
+          "q": "What military doctrine did General Westmoreland pursue in Vietnam?",
+          "a": "An attrition strategy relying on massive artillery, B-52 air strikes, and 'Search and Destroy' patrols to inflict unsustainable casualties on the enemy."
         },
         {
-          "term": "1968 Mexico City Olympics Black Power Salute",
-          "definition": "Sprinters Tommie Smith and John Carlos raised black-gloved fists on the medal podium during the national anthem to protest racial injustice, provoking international controversy.",
-          "q": "What protest occurred at the 1968 Mexico City Olympic Games?",
-          "a": "Tommie Smith and John Carlos gave the Black Power salute on the medal podium to protest racial inequality in America."
+          "term": "Da Nang Landing (8 March 1965)",
+          "definition": "Historic deployment of 3,500 United States Marines of the 9th Marine Expeditionary Brigade wading ashore at Red Beach, marking the formal arrival of US ground combat units.",
+          "q": "What was the significance of the US Marine landing at Da Nang in March 1965?",
+          "a": "It transformed the American role from military advisory support to full-scale offensive ground combat warfare in Asia."
         }
       ],
-      "vocab_cloze_text": "In June 1966, during the Meredith March Against Fear in Mississippi, SNCC chairman [Stokely Carmichael] galvanized a crowd by raising his fist and shouting for [Black Power], signaling a decisive break with traditional non-violence. In October 1966, young radicals in California established the [Black Panther Party] for Self-Defense, donning black leather jackets and berets while openly carrying loaded shotguns to monitor racist police patrols. The party published a radical [Ten-Point Program] that demanded decent housing, full employment, and exemptions from the Vietnam draft, while winning immense community loyalty through its Free Breakfast for Children and mobile health clinics. The movement's cultural resonance exploded into global consciousness during the [1968 Olympic Salute] in Mexico City, where gold and bronze medalists Tommie Smith and John Carlos bowed their heads and hoisted black-gloved fists during the American anthem, sacrificing their professional athletic careers to broadcast Black dignity to the entire planet.",
+      "vocab_cloze_text": "In August 1964, following skirmishes involving the USS Maddox off North Vietnam, President Lyndon B. Johnson seized upon the contested [Gulf of Tonkin Incident] to seek sweeping executive wartime powers. Congress responded by overwhelmingly passing the [Gulf of Tonkin Resolution], handing Johnson a virtual blank check to wage undeclared warfare. Following a deadly Vietcong mortar strike on the American air base at [Pleiku] in February 1965, LBJ unleashed [Operation Rolling Thunder], raining more explosive tonnage on North Vietnam than on all of Europe during World War II. To defend American airfields from communist sabotage, 3,500 United States Marines conducted the historic [Da Nang Landing] on 8 March 1965. Under the command of [General William Westmoreland], American forces transitioned rapidly from static perimeter defense to aggressive 'Search and Destroy' attrition warfare, escalating US troop commitments from 23,000 advisors to over 536,000 combat soldiers by 1968.",
       "causal_domino_spine": {
         "title": "Gulf of Tonkin, Escalation & Ground Troops: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -10405,7 +10661,7 @@ export default {
           "date": "4 August 1964",
           "image": "/units/usa/assets/sources/uss-maddox.jpg",
           "image_url": "/units/usa/assets/sources/uss-maddox.jpg",
-          "attribution": "National Security Agency (NSA) Declassified Gulf of Tonkin Records, Document No. 6310",
+          "attribution": "Commander, Task Group 72.1 (USS Maddox) to Commander Seventh Fleet, Flash Precedence Cable (4 August 1964)",
           "question_badge": "Reliability & Provenance",
           "question": "How does Captain Herrick's urgent warning in Source A cast doubt on the official narrative used to justify the Gulf of Tonkin Resolution?",
           "model_answer": "Source A fundamentally undermines the official justification for war. Just hours before Johnson addressed the nation claiming an unprovoked second attack, the commander on the scene cabled that radar and sonar contacts were freak weather effects caused by stormy seas and 'freak weather effects on radar and overeager sonarmen,' concluding 'no actual visual sightings... recommend complete evaluation before further action.'",
@@ -10421,7 +10677,9 @@ export default {
           "hinge_question": "Why did the Johnson Administration rush to launch retaliatory air strikes despite knowing the evidence of the second attack was questionable?",
           "source_context": "National Security Agency (NSA) Declassified Gulf of Tonkin Records, Document No. 6310. Captain John J. Herrick, Task Group Commander aboard USS Maddox for Commander in Chief, Pacific Fleet (CINCPAC) and the Pentagon with the objective: To urge caution and halt planned military strikes because evidence of an attack was highly doubtful.. **Hinge Question:** Why did the Johnson Administration rush to launch retaliatory air strikes despite knowing the evidence of the second attack was questionable?",
           "src": "/units/usa/assets/sources/uss-maddox.jpg",
-          "source": "/units/usa/assets/sources/uss-maddox.jpg"
+          "source": "/units/usa/assets/sources/uss-maddox.jpg",
+          "caption": "The destroyer USS Maddox (DD-731) underway in the Gulf of Tonkin, August 1964.",
+          "text": "Review of action makes many reported contacts and torpedoes fired appear doubtful. Freak weather effects on radar and overeager sonarmen may have accounted for many reports. No actual visual sightings by Maddox. Suggest complete evaluation before any further action taken."
         },
         {
           "id": "usa_lesson_3_2_e",
@@ -10429,9 +10687,9 @@ export default {
           "type": "radio_broadcast",
           "title": "Source B: Official Statement Broadcast by Radio Hanoi Condemning US Fabrications in the Gulf of Tonkin (6 August 1964)",
           "date": "6 August 1964",
-          "image": "/units/usa/assets/sources/portraits/ho_chi_minh.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/ho_chi_minh.jpg",
-          "attribution": "Foreign Broadcast Information Service (FBIS), Daily Report: Far East",
+          "image": "/units/usa/assets/sources/ho-chi-minh-trail-bicycles.jpg",
+          "image_url": "/units/usa/assets/sources/ho-chi-minh-trail-bicycles.jpg",
+          "attribution": "Voice of Vietnam (Radio Hanoi), Official Government Broadcast (6 August 1964)",
           "question_badge": "Cross-Referencing",
           "question": "How does the North Vietnamese broadcast in Source B challenge the American claims made in Source A regarding who was the aggressor?",
           "model_answer": "Source B directly challenges the American narrative by pointing out that the USS Maddox was engaged in covert electronic espionage (Desoto patrols) in support of South Vietnamese commando raids (Operation 34A) against North Vietnamese coastal islands. Hanoi argued that the US had manufactured a pretext to expand the war into North Vietnamese waters.",
@@ -10446,8 +10704,10 @@ export default {
           },
           "hinge_question": "Was the Gulf of Tonkin incident an unprovoked attack on US forces or the deliberate consequence of covert American operations?",
           "source_context": "Foreign Broadcast Information Service (FBIS), Daily Report: Far East. The Democratic Republic of Vietnam (Hanoi Radio Ministry of Information) for The North Vietnamese population, non-aligned nations, and the international public with the objective: To denounce American naval aggression and mobilize domestic patriotic resistance against foreign invasion.. **Hinge Question:** Was the Gulf of Tonkin incident an unprovoked attack on US forces or the deliberate consequence of covert American operations?",
-          "src": "/units/usa/assets/sources/portraits/ho_chi_minh.jpg",
-          "source": "/units/usa/assets/sources/portraits/ho_chi_minh.jpg"
+          "src": "/units/usa/assets/sources/ho-chi-minh-trail-bicycles.jpg",
+          "source": "/units/usa/assets/sources/portraits/ho_chi_minh.jpg",
+          "caption": "North Vietnamese transport column moving through jungle staging areas. On 6 August 1964, Radio Hanoi broadcast an official statement condemning US naval aggression.",
+          "text": "The Government of the Democratic Republic of Vietnam vehemently denounces before world public opinion the extremely serious provocative acts of the United States imperialists in dispatching warships to violate our territorial waters and fabricate so-called 'second attacks' on 4 August. This is a transparent pretext manufactured by the Johnson administration to justify unprovoked air strikes against North Vietnamese naval bases and expand the aggressive war into the North."
         },
         {
           "id": "usa_lesson_3_2_b",
@@ -10455,9 +10715,9 @@ export default {
           "type": "congressional_statute",
           "title": "Source C: Joint Resolution of Congress: The Gulf of Tonkin Resolution (Public Law 88-408) (7 August 1964)",
           "date": "7 August 1964",
-          "image": "/units/usa/assets/sources/portraits/johnson.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/johnson.jpg",
-          "attribution": "United States Statutes at Large, 78 Stat. 384, 88th Congress",
+          "image": "/units/usa/assets/sources/gulf_of_tonkin_resolution_statute_1964.png",
+          "image_url": "/units/usa/assets/sources/gulf_of_tonkin_resolution_statute_1964.png",
+          "attribution": "Public Law 88-408, 88th United States Congress, 78 Stat. 384 (7 August 1964)",
           "question_badge": "Author's Purpose",
           "question": "What was the purpose of President Johnson in securing the sweeping language of the Gulf of Tonkin Resolution in Source C?",
           "model_answer": "The purpose was to give the President virtually unlimited constitutional authority to wage war in Southeast Asia without asking Congress for a formal declaration of war. By authorizing Johnson to 'take all necessary measures to repel any armed attack,' Congress handed him what Undersecretary of State Nicholas Katzenbach later called 'the functional equivalent of a declaration of war.'",
@@ -10472,8 +10732,10 @@ export default {
           },
           "hinge_question": "Why did Senator Wayne Morse famously vote against the resolution, warning that Congress was 'giving the President a blank check'?",
           "source_context": "United States Statutes at Large, 78 Stat. 384, 88th Congress. The United States Congress, passed 416–0 in the House and 88–2 in the Senate for President Johnson, the military command, and the North Vietnamese government with the objective: To grant blanket presidential authority to deploy armed forces and launch retaliatory airstrikes across Southeast Asia.. **Hinge Question:** Why did Senator Wayne Morse famously vote against the resolution, warning that Congress was 'giving the President a blank check'?",
-          "src": "/units/usa/assets/sources/portraits/johnson.jpg",
-          "source": "/units/usa/assets/sources/portraits/johnson.jpg"
+          "src": "/units/usa/assets/sources/gulf_of_tonkin_resolution_statute_1964.png",
+          "source": "/units/usa/assets/sources/portraits/johnson.jpg",
+          "caption": "Facsimile of the Gulf of Tonkin Resolution (Public Law 88-408), passed overwhelmingly by Congress on 7 August 1964 granting President Johnson authority to wage undeclared war in Vietnam.",
+          "text": "Whereas naval units of the Communist regime in Vietnam, in violation of the principles of the Charter of the United Nations and of international law, have deliberately and repeatedly attacked United States naval vessels lawfully present in international waters... Resolved by the Senate and House of Representatives of the United States of America in Congress assembled: That the Congress approves and supports the determination of the President, as Commander in Chief, to take all necessary measures to repel any armed attack against the forces of the United States and to prevent further aggression."
         },
         {
           "id": "usa_lesson_3_2_d",
@@ -10911,26 +11173,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "How useful are Sources B and C for an enquiry into the nature of the conflict in Vietnam? (8 marks)",
-          "starter": "Source B is highly useful for showing the reality of US search-and-destroy tactics and the low morale of soldiers.",
-          "model": "Source B is highly useful for showing the reality of US search-and-destroy tactics and the low morale of soldiers. The content highlights the frustration of trying to fight a hidden enemy and the counterproductive burning of peasant huts. Its provenance as a personal, private letter makes it a highly reliable and unvarnished account of a soldier's disillusionment.\n\nSource C is highly useful for demonstrating the strategic planning and guerrilla tactics of the Vietcong. The manual confirms that they deliberately avoided conventional battles to nullify US firepower, relying instead on local knowledge, night raids, and booby traps. Its provenance as an internal military manual captured during the conflict makes it an extremely valuable piece of primary evidence for understanding the insurgency's tactics."
-        },
-        {
-          "qNum": 2,
-          "question": "Why did the US reliance on 'body counts' as a measure of success distort the actual progress of the war?",
-          "starter": "Consider: Consider guerrilla tactics and political loyalty.",
-          "model": "Body counts failed to measure territory controlled or political loyalty, incentivized indiscriminate killing of civilians, and ignored the enemy's willingness to absorb high casualties to achieve nationalist independence."
-        },
-        {
-          "qNum": 3,
-          "question": "How did chemical defoliants like Agent Orange backfire against the US goal of winning 'hearts and minds'?",
-          "starter": "Consider: Think about environmental destruction and peasant livelihoods.",
-          "model": "It destroyed crops, poisoned local food supplies, caused birth defects, and alienated the rural peasant population, driving them to aid the Vietcong as they saw the US as a destructive force."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "Necessary Attrition and Air Power",
         "leftText": "US commanders argued that massive air power, search-and-destroy patrols, and chemical defoliants were necessary to find a hidden enemy in dense jungle and minimize US casualties.",
@@ -11241,23 +11484,83 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "8 marks",
+        "tariff": "Section B: Questions 3(b) & 3(c) (4 marks & 4 marks)",
+        "stimulus": [
+          {
+            "title": "Interpretation 1: From historian Christian G. Appy, 'Working-Class War: American Combat Soldiers and Vietnam', published in 1993",
+            "content": "\"American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front.\""
+          },
+          {
+            "title": "Interpretation 2: From historian Guenter Lewy, 'America in Vietnam', published in 1978",
+            "content": "\"The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat.\""
+          },
+          {
+            "title": "Source B: From combat memoirs by US Marine Lieutenant Philip Caputo, ‘A Rumor of War’ (1977)",
+            "content": "\"The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him... Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies.\"",
+            "provenance": "Written by Philip Caputo, a US Marine lieutenant who commanded combat infantry units in South Vietnam in 1965–66."
+          },
+          {
+            "title": "Source C: From an interview with Vo Thi Mo, a female Vietcong guerrilla fighter in Cu Chi, recorded in 1982",
+            "content": "\"Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground... We were fighting for our own homeland; their soldiers fought only because they were drafted.\"",
+            "provenance": "Oral history interview with a veteran Vietcong combatant who operated in the Cu Chi tunnel network throughout the war."
+          }
+        ],
         "questions": [
           {
-            "tariff": "8 marks",
-            "type": "utility_8m",
-            "marks": 8,
-            "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the reasons why US military tactics failed to defeat the Vietcong (1965–68)? [8 marks]",
-            "stimulus": [],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is useful for an enquiry into the failure of US tactics because it reveals the immense counter-productive impact of American heavy firepower on the civilian population. From my own knowledge, I know that tactics like Operation Rolling Thunder, napalm, Agent Orange, and 'Search and Destroy' missions (Zippo raids) destroyed countless peasant villages and poisoned farmland, alienating ordinary South Vietnamese civilians and driving them into supporting the Vietcong. The provenance of Source B makes it particularly valuable because, as a contemporary account by an American war correspondent, it provides an eyewitness record of how brutal pacification tactics destroyed civilian hearts and minds.<br><br>Source C is useful because it highlights the superior guerrilla tactics and resilience of the Vietcong (NLF). From my own knowledge, I know that the Vietcong utilized the Ho Chi Minh Trail to keep supplies flowing, constructed thousands of miles of subterranean tunnels (such as Cu Chi), and practiced 'hanging onto the belts' of American troops—fighting at such close range that US artillery and air strikes could not be used without killing their own men. The provenance of Source C adds strong historical value because it details the disciplined ideological commitment and local geographic mastery that allowed guerrilla forces to survive massive American firepower. Together, both sources provide high historical utility for analyzing both the strategic flaws of US search-and-destroy warfare and the asymmetric superiority of Vietcong guerrilla resistance.",
+            "tariff": "4 marks",
+            "type": "difference_4m",
+            "marks": 4,
+            "question": "Study Interpretations 1 and 2. They give different views about the reasons why US military tactics failed to defeat the Vietcong (1965–68). What is the main difference between these views? Explain your answer, using details from both interpretations.",
+            "prompt": "Explain the fundamental disagreement between the two interpretations, quoting details from both to support your answer.",
+            "model": "The main difference is that Interpretation 1 attributes US failure to flawed American military strategies—specifically search-and-destroy, body count attrition, and the excessive use of firepower (napalm, Agent Orange) that turned the peasant population against the US. On the other hand, Interpretation 2 argues that failure was primarily caused by the extraordinary resilience, discipline, and subterranean tunnel engineering of the Vietcong, supported by Chinese and Soviet arms supplies down the Ho Chi Minh Trail.<br><br>Interpretation 1 states that tactics were 'fundamentally mismatched' because search-and-destroy never established permanent security and indiscriminate firepower 'alienated the rural population'. In contrast, Interpretation 2 asserts that failure was due to the 'extraordinary effectiveness, discipline, and strategic design of the communist insurgency', emphasizing the vast underground tunnel networks in Cu Chi that neutralized American airpower.",
             "scaffolding": {
-              "acronym": "Source Utility Framework",
-              "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
-              "sentence_starters": [
-                "Source B is useful because...",
-                "Source C is useful because...",
-                "Combined, both sources provide..."
+              "acronym": "Difference + Quotes Formula (AO4)",
+              "acronym_title": "Historiographical Comparison [4 Marks • 6 Mins]",
+              "steps": [
+                {
+                  "letter": "D",
+                  "name": "1. Main Difference",
+                  "prompt": "State the contrast: flawed US search-and-destroy tactics vs Vietcong subterranean resilience and logistics."
+                },
+                {
+                  "letter": "I1",
+                  "name": "2. Detail from Interp 1",
+                  "prompt": "Quote and explain Appy on body counts, search-and-destroy, and alienating peasant support."
+                },
+                {
+                  "letter": "I2",
+                  "name": "3. Detail from Interp 2",
+                  "prompt": "Quote and explain Lewy on Cu Chi tunnel networks, communist discipline, and the Ho Chi Minh Trail."
+                }
+              ]
+            }
+          },
+          {
+            "tariff": "4 marks",
+            "type": "reason_4m",
+            "marks": 4,
+            "question": "Suggest one reason why Interpretations 1 and 2 give different views about the reasons why US military tactics failed to defeat the Vietcong (1965–68). You may use Sources B and C to help explain your answer.",
+            "prompt": "Explain why the historians reached contrasting conclusions by analysing how they investigated different types of primary evidence.",
+            "model": "Interpretations 1 and 2 differ because the historians have investigated different dimensions of the war. The author of Interpretation 1 has focused on American military command records and veteran testimonies like Source B, analyzing the failure of search-and-destroy tactics, the inability to distinguish friend from foe, and the moral alienation caused by burning peasant villages. In contrast, the author of Interpretation 2 has focused on Vietnamese guerrilla engineering and communist military archives like Source C, evaluating the military effectiveness of the Cu Chi tunnel systems, homemade booby traps, and the logistical resilience of the National Liberation Front.",
+            "scaffolding": {
+              "acronym": "Reason for Difference Formula (AO4)",
+              "acronym_title": "Why Historians Disagree [4 Marks • 6 Mins]",
+              "steps": [
+                {
+                  "letter": "R",
+                  "name": "1. Root Reason",
+                  "prompt": "State that the historians focused on different aspects: American operational blunders vs communist guerrilla infrastructure."
+                },
+                {
+                  "letter": "SB",
+                  "name": "2. Evidence for Interp 1",
+                  "prompt": "Show how Source B (Caputo, search-and-destroy failure, Zippo raids) informs Interpretation 1."
+                },
+                {
+                  "letter": "SC",
+                  "name": "3. Evidence for Interp 2",
+                  "prompt": "Show how Source C (Vo Thi Mo, Cu Chi tunnels, traps) informs Interpretation 2."
+                }
               ]
             }
           }
@@ -11279,43 +11582,43 @@ export default {
       "specification_anchor": "US involvement in the Vietnam War, 1954–75: nature of the conflict; conventional US tactics (Operation Rolling Thunder, search-and-destroy missions, napalm, Agent Orange) contrasted with Vietcong guerrilla tactics (tunnels, booby traps, the Ho Chi Minh Trail).",
       "flashcards": [
         {
-          "term": "Watts Riots (August 1965)",
-          "definition": "Six days of violent urban rebellion in the Watts district of Los Angeles triggered by police mistreatment, resulting in 34 deaths, 1,000 injuries, and $40 million in damage.",
-          "q": "What caused the Watts Riots in Los Angeles in August 1965?",
-          "a": "Simmering anger over police harassment, high unemployment, and miserable ghetto housing erupted after an aggressive traffic arrest."
+          "term": "Vietcong Asymmetric Guerrilla Tactics",
+          "definition": "Combat doctrine of fighting without uniforms, avoiding pitched battles, relying on ambushes, booby traps, and 'hanging onto the belts' of American units to neutralize air power.",
+          "q": "How did the Vietcong fight an 'asymmetric' guerrilla war?",
+          "a": "They avoided open conventional battles, hid among villagers, ambushed US patrols at point-blank range, and vanished into jungles and tunnels."
         },
         {
-          "term": "'Long, Hot Summers' (1965–1967)",
-          "definition": "A wave of over 150 race riots that erupted in northern and western industrial cities (such as Newark and Detroit in 1967), exposing deep racial divisions outside the South.",
-          "q": "What were the 'Long, Hot Summers' of 1965–1967?",
-          "a": "Outbreaks of violent urban rioting across dozens of northern cities including Detroit and Newark, fueled by poverty and police brutality."
+          "term": "Cu Chi Tunnels",
+          "definition": "Complex 250-kilometer subterranean network of multi-level tunnels beneath South Vietnam featuring barracks, hospitals, munitions factories, and hidden trapdoors.",
+          "q": "Why were the Cu Chi tunnels so vital to Vietcong survival?",
+          "a": "They protected communist guerrillas from massive B-52 carpet bombing and allowed unseen fighters to stage surprise ambushes behind US patrols."
         },
         {
-          "term": "Kerner Commission Report (1968)",
-          "definition": "President Johnson's investigative commission that concluded white racism was the primary cause of urban riots, warning the nation was 'moving toward two societies, one black, one white—separate and unequal'.",
-          "q": "What was the conclusion of the 1968 Kerner Commission Report?",
-          "a": "It blamed white racism for ghetto poverty and police abuse, famously warning America was dividing into two separate and unequal societies."
+          "term": "Ho Chi Minh Trail",
+          "definition": "Massive 16,000-kilometer logistics corridor running through Laos and Cambodia used by North Vietnam to transport troops, heavy artillery, and Soviet munitions into South Vietnam.",
+          "q": "Why couldn't the US military cut the Ho Chi Minh Trail?",
+          "a": "It ran through sovereign neutral countries (Laos and Cambodia) beneath thick jungle canopy, and tens of thousands of workers repaired bombing damage overnight."
         },
         {
-          "term": "Urban Ghetto Conditions",
-          "definition": "Severe socioeconomic disadvantages facing northern Black urban populations: decaying tenement housing, underfunded schools, discriminatory redlining, and structural joblessness.",
-          "q": "What underlying grievances caused urban unrest in northern cities?",
-          "a": "Substandard housing, high Black youth unemployment, commercial exploitation, and hostile white police forces."
+          "term": "Search and Destroy ('Zippo Raids')",
+          "definition": "US infantry doctrine of inserting helicopter platoons into rural hamlets to locate Vietcong, often resulting in the burning of peasant huts and alienation of civilians.",
+          "q": "Why were Search and Destroy operations counterproductive?",
+          "a": "US troops could rarely identify hidden guerrillas, so they burned peasant homes and crops, fueling intense peasant hatred and boosting Vietcong recruitment."
         },
         {
-          "term": "Detroit Riot of 1967",
-          "definition": "One of the deadliest urban rebellions in US history, lasting five days after police raided an unlicensed bar, requiring 82nd Airborne troops and resulting in 43 deaths.",
-          "q": "How severe was the 1967 Detroit rebellion?",
-          "a": "43 people were killed, over 1,000 injured, and 7,000 arrested, requiring federal army tanks and paratroopers to suppress."
+          "term": "Agent Orange Defoliant",
+          "definition": "Toxic chemical herbicide sprayed by US C-123 aircraft over millions of acres of South Vietnamese forest to strip jungle canopy and destroy food supplies.",
+          "q": "What were the consequences of using Agent Orange in Vietnam?",
+          "a": "It caused devastating long-term cancer, horrific birth defects in hundreds of thousands of Vietnamese children, and catastrophic environmental destruction."
         },
         {
-          "term": "White Backlash ('Law and Order')",
-          "definition": "The political reaction among white suburban voters who blamed civil rights militants and rioters for disorder, leading to Richard Nixon's 'law and order' presidential victory in 1968.",
-          "q": "How did white suburban Americans react to the urban riots?",
-          "a": "With a conservative backlash demanding strict 'law and order', turning against civil rights funding and electing Richard Nixon."
+          "term": "Napalm Warfare",
+          "definition": "Jellied gasoline weapon dropped in firebombs that clung to human skin and burned at 1,000°C, causing horrific burns and terrorizing civilian populations.",
+          "q": "Why did the use of Napalm inflame domestic anti-war sentiment?",
+          "a": "Photographs of civilian children severely burned by incendiary napalm destroyed the moral credibility of the American intervention."
         }
       ],
-      "vocab_cloze_text": "Just five days after President Johnson signed the Voting Rights Act, the streets of Los Angeles exploded in the catastrophic [Watts Riots] of August 1965, requiring 14,000 National Guardsmen to suppress six days of arson, looting, and gunfire that left 34 dead. This erupted into the [Long, Hot Summers] of 1966 and 1967, as more than 150 northern industrial metropolises—most catastrophically Detroit, where 43 people perished—rebelled against miserable ghetto housing, corrupt slumlords, and aggressive white police forces. Investigating the unprecedented urban turmoil, the presidentially appointed [Kerner Commission] issued a scathing report in 1968, warning that the nation was rapidly 'moving toward two societies, one black, one white—separate and unequal'. The commission made clear that northern cities suffered not from southern Jim Crow laws, but from entrenched [De Facto Segregation] enforced by predatory bank redlining and job discrimination. Instead of funding the commission's sweeping recommendations for billions in federal housing and school investment, white suburban voters experienced a furious [White Backlash], embracing Richard Nixon's conservative 'law and order' campaign in the 1968 presidential election.",
+      "vocab_cloze_text": "In the dense tropical jungles of Vietnam, US troops struggled against an elusive enemy utilizing [Asymmetric Guerrilla Tactics]. Rather than engaging superior American firepower in pitched battle, the Vietcong practiced 'hanging onto the belts' of US patrols to prevent air strikes, and vanished into complex subterranean fortresses like the [Cu Chi Tunnels]. Reinforcements and heavy Soviet weaponry poured continuously into the South along the rugged [Ho Chi Minh Trail], a 16,000-kilometer logistical lifeline traversing Laos and Cambodia that American B-52 bombing could never sever. To locate the hidden guerrillas, General Westmoreland deployed helicopter platoons on aggressive [Search and Destroy] sweeps, nicknamed 'Zippo raids' because soldiers torched thatched peasant dwellings, driving enraged villagers into the insurgency. To strip the dense forest canopy concealing enemy positions, the US military sprayed over 19 million gallons of the carcinogenic defoliant [Agent Orange] and dropped devastating firebombs of incendiary [Napalm], inflicting horrific civilian casualties and generating worldwide outrage.",
       "causal_domino_spine": {
         "title": "Asymmetric Warfare & The Failure of US Tactics: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -11498,7 +11801,7 @@ export default {
           "date": "1966",
           "image": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
           "image_url": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
-          "attribution": "Philip Caputo, 'A Rumor of War', Holt, Rinehart and Winston (1977)",
+          "attribution": "Philip Caputo, A Rumor of War (1977), memoir of service with 1st Battalion, 3rd Marines (1965–1966)",
           "question_badge": "Historical Context",
           "question": "Explain how the American military reliance on 'body counts' as the measure of victory described in Source E corrupted soldiers' conduct on the ground.",
           "model_answer": "Because the US was fighting an unconventional war with no fixed frontline, General Westmoreland measured progress entirely by the 'body count'—the number of enemy killed. Caputo explains that this immense pressure from headquarters incentivized units to view every Vietnamese peasant in free-fire zones as an enemy combatant, leading to the destruction of entire villages and widespread civilian casualties.",
@@ -11514,7 +11817,9 @@ export default {
           "hinge_question": "Why was the 'body count' metric fundamentally flawed as a strategy for winning a counter-insurgency war?",
           "source_context": "Philip Caputo, 'A Rumor of War', Holt, Rinehart and Winston (1977). Lieutenant Philip Caputo, US Marine Corps infantry platoon commander for The American reading public and historians of the Vietnam War with the objective: To provide an honest, unromanticized personal account of how attrition warfare degraded moral standards.. **Hinge Question:** Why was the 'body count' metric fundamentally flawed as a strategy for winning a counter-insurgency war?",
           "src": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
-          "source": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg"
+          "source": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
+          "caption": "US soldier on point patrol through murky swamp water in the Mekong Delta. Search and destroy operations pitted American infantry against unseen snipers and booby traps.",
+          "text": "Our mission was not to win terrain or seize cities, but simply to kill: to kill communists and to count the bodies. It was an attrition strategy of body counts. But out in the rice paddies and jungle elephant grass, you couldn't tell who was Vietcong and who was a simple rice farmer. The VC didn't wear uniforms; they carried farming hoes by day and AK-47s by night. Every booby trap that tore a friend apart made us hate the villagers more, because we knew they knew where the punji stakes were buried and didn't warn us. In trying to destroy the enemy, we ended up destroying villages and driving the very people we were supposed to protect into the arms of the Vietcong."
         }
       ],
       "video": [
@@ -11858,8 +12163,10 @@ export default {
               "type": "declassified_transcript",
               "title": "Source E: Declassified Oval Office Tape Recording: President Nixon and National Security Advisor Henry Kissinger (3 August 1972)",
               "date": "3 August 1972",
-              "image": "/units/usa/assets/sources/portraits/kissinger.jpg",
-              "image_url": "/units/usa/assets/sources/portraits/kissinger.jpg",
+              "image": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
+              "image_url": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
+              "caption": "President Richard Nixon seated on the Oval Office desk conferring in private with National Security Advisor Dr. Henry Kissinger during strategic deliberations over Vietnam exit terms (White House Photo Office, 1972).",
+              "text": "Dr. Henry Kissinger: \"We require a decent interval. If a year or two years from now South Vietnam goes down the drain, it will look like a hell of an achievement to have got out, and it will be blamed on the South Vietnamese and on Congress.\"<br><br>President Richard Nixon: \"If we can get them out by November... then we've got to find a formula that holds the thing together until after the election. Then, if South Vietnam collapses in two years, that's their problem. We will have done our best.\"",
               "attribution": "Nixon Presidential Materials Project, White House Tapes, National Archives, College Park",
               "question_badge": "Reliability & Provenance",
               "question": "How does the private conversation between Nixon and Kissinger in Source E expose the cynical reality behind the phrase 'Peace with Honor'?",
@@ -11875,7 +12182,7 @@ export default {
               },
               "hinge_question": "What is the ethical and historical significance of the 'decent interval' revelation for understanding American foreign policy?",
               "source_context": "Nixon Presidential Materials Project, White House Tapes, National Archives, College Park. President Richard Nixon and Dr Henry Kissinger (secretly recorded by the White House taping system) for None; classified, intimate strategic deliberation with the objective: To formulate private diplomatic terms for exiting the war prior to the November 1972 presidential election.. **Hinge Question:** What is the ethical and historical significance of the 'decent interval' revelation for understanding American foreign policy?",
-              "src": "/units/usa/assets/sources/portraits/kissinger.jpg",
+              "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
               "source": "/units/usa/assets/sources/portraits/kissinger.jpg"
             }
           ],
@@ -12220,15 +12527,15 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "16 marks (+4 SPaG)",
+        "tariff": "Section B: Question 3(d) (16 marks (+4 SPaG))",
         "stimulus": [
           {
-            "title": "Interpretation 1: From a modern military history of the Vietnam War, published in 2008.",
-            "content": "From a purely military perspective, the 1968 Tet Offensive was an unmitigated catastrophe for the communist forces. More than 84,000 Vietcong and North Vietnamese soldiers committed to the offensive suffered devastating casualties, with an estimated 45,000 killed in action. The anticipated general uprising of the South Vietnamese civilian population completely failed to materialise. Within days, American and ARVN troops had recaptured almost all seized positions, decimating the Vietcong's infrastructure so severely that it never recovered its strength as an independent guerrilla army."
+            "title": "Interpretation 1: From a modern military history of the Vietnam War, published in 2009",
+            "content": "\"The Tet Offensive was the decisive psychological and political turning point that doomed the American war effort. Prior to January 1968, General Westmoreland and President Johnson had repeatedly assured the public that the 'light at the end of the tunnel' was visible and that the enemy was running out of men. When over 84,000 communist troops struck simultaneously at dozens of cities and breached the US Embassy in Saigon, that official illusion was permanently shattered. The graphic television coverage—especially Walter Cronkite declaring the conflict a 'stalemate'—exposed an unbridgeable credibility gap. Tet broke the political will of Washington and convinced the American middle class that the war was unwinnable.\""
           },
           {
-            "title": "Interpretation 2: From an academic analysis of American media and politics during Vietnam, published in 2014.",
-            "content": "The Tet Offensive was the decisive psychological and political turning point of the entire conflict, delivering a fatal blow to American war policy. For months, the Johnson administration and General Westmoreland had assured the public that communist defeat was imminent and that there was 'light at the end of the tunnel'. Graphic television footage of fierce combat on the grounds of the US Embassy in Saigon obliterated official credibility. The offensive convinced respected commentators like Walter Cronkite that the war was hopelessly mired in stalemate, shattering public morale and directly compelling President Johnson to abandon his re-election campaign."
+            "title": "Interpretation 2: From an academic analysis of American strategic doctrine in Vietnam, published in 2016",
+            "content": "\"In purely military terms, the Tet Offensive was an absolute catastrophe for the communist forces. The Vietcong had expected the urban population of South Vietnam to rise up in a mass popular rebellion; this never occurred. Instead, American and ARVN troops responded with overwhelming firepower, driving the attackers out of every city and inflicting staggering casualties of over 45,000 guerrilla fighters. The Vietcong infrastructure was so thoroughly decimated that they ceased to exist as an effective independent fighting force, forcing Hanoi to take over the war with regular North Vietnamese troops. Tet was a decisive US military victory that was mistakenly portrayed by a sensationalist media as a defeat.\""
           }
         ],
         "questions": [
@@ -12236,26 +12543,28 @@ export default {
             "tariff": "16 marks (+4 SPaG)",
             "type": "verdict_16m",
             "marks": 16,
-            "question": "3(d). How far do you agree with Interpretation 2 about the military and political significance of the Tet Offensive (January 1968)? [16 marks + 4 SPaG]",
-            "stimulus": [
-              {
-                "title": "Interpretation 1: From a modern military history of the Vietnam War, published in 2008.",
-                "content": "From a purely military perspective, the 1968 Tet Offensive was an unmitigated catastrophe for the communist forces. More than 84,000 Vietcong and North Vietnamese soldiers committed to the offensive suffered devastating casualties, with an estimated 45,000 killed in action. The anticipated general uprising of the South Vietnamese civilian population completely failed to materialise. Within days, American and ARVN troops had recaptured almost all seized positions, decimating the Vietcong's infrastructure so severely that it never recovered its strength as an independent guerrilla army."
-              },
-              {
-                "title": "Interpretation 2: From an academic analysis of American media and politics during Vietnam, published in 2014.",
-                "content": "The Tet Offensive was the decisive psychological and political turning point of the entire conflict, delivering a fatal blow to American war policy. For months, the Johnson administration and General Westmoreland had assured the public that communist defeat was imminent and that there was 'light at the end of the tunnel'. Graphic television footage of fierce combat on the grounds of the US Embassy in Saigon obliterated official credibility. The offensive convinced respected commentators like Walter Cronkite that the war was hopelessly mired in stalemate, shattering public morale and directly compelling President Johnson to abandon his re-election campaign."
-              }
-            ],
+            "question": "How far do you agree with Interpretation 2 about the military and political significance of the Tet Offensive (1968)? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "On the one hand, Interpretation 1 emphasizes that from a purely military standpoint, the Tet Offensive was an overwhelming, catastrophic defeat for the Vietcong and North Vietnamese Army. Over 84,000 communist troops attacked over 100 South Vietnamese cities and military installations, including the US Embassy in Saigon. However, US and ARVN forces rapidly recaptured every single objective, inflicting devastating casualties—killing an estimated 45,000 communist fighters and permanently crippling the Vietcong's independent military capacity for the remainder of the war.<br><br>On the other hand, Interpretation 2 persuasively argues that the Tet Offensive was a decisive, war-winning political and psychological victory for the communists. For years, General Westmoreland and President Johnson had assured the American public that the war was nearly won and that there was 'light at the end of the tunnel'. Seeing communist commandos breach the US Embassy on television shattered public credibility, creating an unbridgeable 'credibility gap' and convincing influential journalists like Walter Cronkite that the war was un-winnable.<br><br>Furthermore, the political fallout was immediate and catastrophic for the US administration: anti-war demonstrations escalated, public support plummeted, and on 31 March 1968, President Johnson stunned the nation by announcing he would halt bombing and would not seek re-election.<br><br>In conclusion, having evaluated both interpretations against the historical evidence, I agree with Interpretation 2 to a very large extent. While the US military won the tactical engagements on the battlefield, the Tet Offensive fatally destroyed American political will on the home front, proving that the United States could not achieve total victory and making a negotiated US withdrawal inevitable.",
+            "model": "On the one hand, Interpretation 2 is supported by formidable military evidence proving that the Tet Offensive was a catastrophic tactical defeat for the communist forces. Launched during the lunar new year truce in January 1968, the Vietcong deployed over 84,000 fighters with the objective of inciting a mass urban insurrection across South Vietnam. That popular uprising completely failed to materialize. Instead, US forces and the ARVN rallied rapidly, recapturing every captured city (including Hue after fierce urban combat). General Westmoreland’s forces inflicted an estimated 45,000 casualties, virtually annihilating the southern Vietcong guerrilla network and forcing North Vietnam’s regular army (PAVN) to take over the fighting. In tactical terms, the offensive failed in all its primary military objectives.<br><br>On the other hand, Interpretation 1 provides the more perceptive and historically profound assessment by arguing that Tet was a catastrophic political and psychological turning point for the United States. In the months leading up to Tet, President Johnson and military command had conducted a vigorous public relations campaign claiming the enemy was broken and victory was imminent. When live television footage showed Vietcong suicide commandos penetrating the US Embassy compound in Saigon, the 'credibility gap' between government claims and reality became unbridgeable. The uncensored media coverage—such as Eddie Adams' photograph of General Loan executing a Vietcong prisoner and Walter Cronkite’s broadcast declaring the war mired in stalemate—shattered the domestic consensus. In the aftermath of Tet, anti-war protests escalated, Secretary of Defense Clark Clifford advised against sending more troops, and on 31 March 1968, Johnson shocked the world by announcing he would not seek re-election and ordering an end to Rolling Thunder bombings above the 20th parallel to open peace talks.<br><br>Furthermore, contextual knowledge reveals that Tet fundamentally shifted American grand strategy. Following Tet, Richard Nixon won the presidency on the pledge of 'Peace with Honor' and introduced 'Vietnamization' in 1969 to begin withdrawing US troops, proving that Tet had permanently destroyed the political sustainability of maintaining US ground combat forces in Southeast Asia.<br><br>In conclusion, having evaluated both interpretations, I agree with Interpretation 2 only to a limited extent regarding the immediate tactical body count. In warfare, political outcomes supersede tactical statistics: while the US won the physical battles of Tet, North Vietnam achieved an irreversible strategic triumph by breaking the political resolve of the American presidency and the American public, making American defeat inevitable.",
             "scaffolding": {
-              "acronym": "Evaluative Verdict Framework",
-              "acronym_title": "Balanced Evaluative Essay (3 Themes + Judgement)",
-              "sentence_starters": [
-                "On the one hand, Interpretation 1 argues that...",
-                "On the other hand, Interpretation 2 points out that...",
-                "In conclusion, having evaluated both views..."
+              "acronym": "Interpretation Verdict Framework (AO4)",
+              "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
+              "steps": [
+                {
+                  "letter": "INTERP 2",
+                  "name": "1. Support Interpretation 2 (Tactical Military Victory for US/ARVN)",
+                  "prompt": "Deploy evidence of 45,000 Vietcong casualties, failure of urban rebellion, and ARVN resilience."
+                },
+                {
+                  "letter": "INTERP 1",
+                  "name": "2. Support Interpretation 1 (Decisive Political & Psychological Shock)",
+                  "prompt": "Deploy evidence of the credibility gap, Walter Cronkite broadcast, LBJ refusing to run, and the opening of peace talks."
+                },
+                {
+                  "letter": "VERDICT",
+                  "name": "3. Sustained Historical Conclusion",
+                  "prompt": "Judge whether political turning points supersede tactical battle statistics in determining the war's outcome."
+                }
               ]
             }
           }
@@ -12286,43 +12595,43 @@ export default {
       "specification_anchor": "US involvement in the Vietnam War, 1954–75: the turning point; the 1968 Tet Offensive and its military versus political impact, the Cronkite broadcast, Nixon's election, the Nixon Doctrine, and the policy of Vietnamisation.",
       "flashcards": [
         {
-          "term": "Tet Offensive (1968)",
-          "definition": "The nationwide communist surprise offensive launched across South Vietnam on 30 January 1968 during the lunar new year holiday.",
+          "term": "Tet Offensive (January 1968)",
+          "definition": "Massive, coordinated surprise offensive launched by 84,000 Vietcong and NVA troops across 36 provincial capitals and Saigon during the Lunar New Year holiday.",
           "q": "What was the 1968 Tet Offensive?",
-          "a": "A coordinated surprise attack by 84,000 communist troops on over 100 cities, provincial capitals, and the US Embassy in Saigon."
+          "a": "A simultaneous surprise assault on over 100 cities, provincial capitals, and the US Embassy in Saigon on 30 January 1968."
         },
         {
           "term": "Credibility Gap",
-          "definition": "The growing public skepticism and distrust of official US government statements regarding the progress and winnability of the Vietnam War.",
-          "q": "What was the 'credibility gap' in Vietnam?",
-          "a": "The difference between optimistic government claims of imminent victory and the grim battlefield reality shown on television."
+          "definition": "The unbridgeable divide between optimistic US government assurances that victory was near and the shocking battlefield combat broadcast nightly into American living rooms.",
+          "q": "What was the 'credibility gap' following the Tet Offensive?",
+          "a": "The public realization that President Johnson and General Westmoreland had misled the nation regarding the true progress and winnability of the war."
         },
         {
-          "term": "Walter Cronkite Editorial",
-          "definition": "CBS news anchor Cronkite's influential 27 February 1968 broadcast declaring the Vietnam War was mired in an unwinnable stalemate.",
-          "q": "What was the significance of Walter Cronkite's 1968 broadcast?",
-          "a": "It signaled to middle-class America that the war could not be won, prompting LBJ to abandon his re-election campaign."
+          "term": "Walter Cronkite Editorial (February 1968)",
+          "definition": "Unprecedented broadcast by America's most trusted news anchor concluding the war was 'mired in stalemate', prompting LBJ to declare 'If I've lost Cronkite, I've lost middle America'.",
+          "q": "What was the impact of Walter Cronkite's broadcast from Vietnam?",
+          "a": "It shattered mainstream public faith in the war and directly convinced President Johnson that military victory was unattainable."
         },
         {
-          "term": "Vietnamisation",
-          "definition": "President Nixon's strategy to withdraw US ground forces while training and equipping South Vietnamese (ARVN) troops to assume combat.",
-          "q": "What was the core goal of Nixon's Vietnamisation policy?",
-          "a": "To withdraw American troops to satisfy domestic anti-war sentiment while preventing an immediate communist victory."
+          "term": "Johnson's Resignation Announcement (March 1968)",
+          "definition": "Stunning televised address on 31 March 1968 in which President Lyndon B. Johnson announced a bombing pause and declared he would neither seek nor accept re-election.",
+          "q": "Why did Lyndon B. Johnson refuse to seek re-election in 1968?",
+          "a": "Crushed by the political fallout of the Tet Offensive, anti-war protests, and deep divisions within his own Democratic party."
         },
         {
-          "term": "The Nixon Doctrine (1969)",
-          "definition": "US policy stating America would honor defense treaties and provide aid, but expect Asian allies to fight their own ground wars.",
-          "q": "What did the Nixon Doctrine establish?",
-          "a": "That the United States would supply military aid and air support, but would not send ground troops to fight Asian civil wars."
+          "term": "Vietnamization Policy (1969)",
+          "definition": "President Richard Nixon's policy to expand, train, and equip the South Vietnamese army (ARVN) to assume combat operations while gradually withdrawing US ground troops.",
+          "q": "What was the goal of Nixon's 'Vietnamization' policy?",
+          "a": "To withdraw 500,000 American combat soldiers and transfer the fighting to the South Vietnamese ARVN while avoiding the appearance of defeat."
         },
         {
-          "term": "Operation Menu (1969–70)",
-          "definition": "Nixon's secret, unauthorized B-52 carpet-bombing of neutral Cambodia to sever communist supply lines on the Ho Chi Minh Trail.",
-          "q": "What was Operation Menu?",
-          "a": "A 14-month secret bombing campaign inside neutral Cambodia to destroy North Vietnamese sanctuaries."
+          "term": "Cambodian Incursion (April 1970)",
+          "definition": "Nixon's controversial military invasion of neutral Cambodia to destroy communist sanctuaries and supply dumps, sparking massive domestic university riots and student strikes.",
+          "q": "Why did Nixon's secret invasion of Cambodia trigger fury at home?",
+          "a": "It appeared to drastically expand the war into a neutral country despite Nixon's campaign promises to wind down US involvement."
         }
       ],
-      "vocab_cloze_text": "On 30 January 1968, communist forces launched the [Tet Offensive], assaulting over 100 cities and the US Embassy compound in Saigon. Although American and ARVN troops inflicted devastating casualties on the attackers, the televised carnage obliterated official claims that victory was near. This created an unbridgeable [Credibility Gap] between Pentagon assurances and reality. Influential journalist [Walter Cronkite Editorial] broadcast that the war was mired in an unwinnable stalemate, convincing President Johnson to withdraw from the 1968 election. After taking office, Richard Nixon implemented [Vietnamisation], shifting ground combat to South Vietnamese soldiers while proclaiming [The Nixon Doctrine] to justify troop withdrawals. However, to disrupt enemy supply lines, Nixon secretly ordered [Operation Menu] to carpet-bomb neutral Cambodia, igniting massive domestic protests.",
+      "vocab_cloze_text": "On 30 January 1968, communist forces detonated the decisive turning point of the conflict by launching the massive [Tet Offensive], assaulting over 100 South Vietnamese cities and breaching the US Embassy compound in Saigon. Although US and ARVN forces recaptured every objective and inflicted catastrophic military losses on the Vietcong, the graphic television footage created an unbridgeable [Credibility Gap] at home. Respected CBS anchor [Walter Cronkite] traveled to the smoldering ruins of Hue, concluding on national television that the war was hopelessly 'mired in stalemate'. Shattered by plunging public approval, President Johnson made the historic [Resignation Announcement] on 31 March 1968, halting bombing and abandoning his re-election campaign. Taking office in 1969 on a pledge of 'Peace with Honor', President Richard Nixon introduced the policy of [Vietnamization], transferring combat responsibilities to the ARVN while withdrawing US soldiers. However, Nixon's secret decision to expand the war through the [Cambodian Incursion] in April 1970 ignited unprecedented domestic student strikes and protests across American universities.",
       "causal_domino_spine": {
         "title": "Tet Offensive, Cronkite Verdict & Vietnamization: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -12402,9 +12711,9 @@ export default {
           "type": "television_broadcast",
           "title": "Source A: Editorial Declaration by CBS Evening News Anchor Walter Cronkite Following the Tet Offensive (27 February 1968)",
           "date": "27 February 1968",
-          "image": "/units/usa/assets/sources/hamburger-hill-101st-airborne-1969.jpg",
-          "image_url": "/units/usa/assets/sources/hamburger-hill-101st-airborne-1969.jpg",
-          "attribution": "CBS News Television Special: 'Who, What, When, Where, Why: Report from Vietnam'",
+          "image": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg",
+          "image_url": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg",
+          "attribution": "Walter Cronkite, CBS News Special Report: Report from Vietnam (27 February 1968)",
           "question_badge": "Cross-Referencing",
           "question": "How does Walter Cronkite's public assessment in Source A explain the political collapse of President Johnson's war policy?",
           "model_answer": "Cronkite, revered as 'the most trusted man in America,' declared that the only rational conclusion was that the war was 'mired in stalemate' and that negotiations were the only path out. When Cronkite broke with the official administration line, President Johnson privately remarked: 'If I've lost Cronkite, I've lost Middle America,' leading directly to his withdrawal from the 1968 election.",
@@ -12419,8 +12728,10 @@ export default {
           },
           "hinge_question": "Why was the 1968 Tet Offensive considered a catastrophic political defeat for the US even though American forces won a military victory?",
           "source_context": "CBS News Television Special: 'Who, What, When, Where, Why: Report from Vietnam'. Walter Cronkite, chief anchor of CBS Evening News for Millions of American families watching prime-time evening news with the objective: To deliver an unvarnished personal journalistic verdict following his eyewitness inspection of post-Tet devastation.. **Hinge Question:** Why was the 1968 Tet Offensive considered a catastrophic political defeat for the US even though American forces won a military victory?",
-          "src": "/units/usa/assets/sources/hamburger-hill-101st-airborne-1969.jpg",
-          "source": "/units/usa/assets/sources/hamburger-hill-101st-airborne-1969.jpg"
+          "src": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg",
+          "source": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg",
+          "caption": "CBS Evening News anchor Walter Cronkite reporting from the battlefield at Hue during the 1968 Tet Offensive.",
+          "text": "To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable pessimism. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out then will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy, and did the best they could."
         },
         {
           "id": "usa_lesson_3_4_a",
@@ -12456,7 +12767,7 @@ export default {
           "date": "30 April 1970",
           "image": "/units/usa/assets/sources/nixon-television-address.jpg",
           "image_url": "/units/usa/assets/sources/nixon-television-address.jpg",
-          "attribution": "Public Papers of the Presidents: Richard Nixon, 1970",
+          "attribution": "President Richard Nixon, Address to the Nation on the Situation in Southeast Asia (30 April 1970)",
           "question_badge": "Author's Purpose",
           "question": "What was the purpose of President Nixon in delivering the televised address shown in Source C?",
           "model_answer": "Nixon's purpose was to justify the controversial expansion of the war into neutral Cambodia to destroy communist headquarters and supply sanctuaries. He sought to preempt anti-war criticism by framing the invasion not as an escalation, but as a decisive military strike necessary to protect departing American soldiers and guarantee 'peace with honor.'",
@@ -12472,7 +12783,9 @@ export default {
           "hinge_question": "Why did the invasion of Cambodia trigger the largest wave of campus protests and student strikes in American history?",
           "source_context": "Public Papers of the Presidents: Richard Nixon, 1970. President Richard Nixon for The American electorate, anti-war activists, and the North Vietnamese leadership with the objective: To rally public support for a high-risk military offensive and warn that America would not act like 'a pitiful, helpless giant.'. **Hinge Question:** Why did the invasion of Cambodia trigger the largest wave of campus protests and student strikes in American history?",
           "src": "/units/usa/assets/sources/nixon-television-address.jpg",
-          "source": "/units/usa/assets/sources/nixon-television-address.jpg"
+          "source": "/units/usa/assets/sources/nixon-television-address.jpg",
+          "caption": "President Richard Nixon delivering a televised address from the Oval Office with a map of Cambodia, 30 April 1970.",
+          "text": "Tonight, American and South Vietnamese units will attack the headquarters for the entire Communist military operation in South Vietnam. A major responsibility for the ground operations is being assumed by South Vietnamese forces... This is not an invasion of Cambodia. The areas in which these attacks will take place are completely occupied and controlled by North Vietnamese forces... Our purpose is not to expand the war into Cambodia, but to end the war in Vietnam and to win the just peace we all desire."
         },
         {
           "id": "usa_lesson_3_4_b",
@@ -12506,8 +12819,8 @@ export default {
           "type": "declassified_transcript",
           "title": "Source E: Declassified Oval Office Tape Recording: President Nixon and National Security Advisor Henry Kissinger (3 August 1972)",
           "date": "3 August 1972",
-          "image": "/units/usa/assets/sources/portraits/kissinger.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/kissinger.jpg",
+          "image": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
+          "image_url": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
           "attribution": "Nixon Presidential Materials Project, White House Tapes, National Archives, College Park",
           "question_badge": "Reliability & Provenance",
           "question": "How does the private conversation between Nixon and Kissinger in Source E expose the cynical reality behind the phrase 'Peace with Honor'?",
@@ -12523,8 +12836,10 @@ export default {
           },
           "hinge_question": "What is the ethical and historical significance of the 'decent interval' revelation for understanding American foreign policy?",
           "source_context": "Nixon Presidential Materials Project, White House Tapes, National Archives, College Park. President Richard Nixon and Dr Henry Kissinger (secretly recorded by the White House taping system) for None; classified, intimate strategic deliberation with the objective: To formulate private diplomatic terms for exiting the war prior to the November 1972 presidential election.. **Hinge Question:** What is the ethical and historical significance of the 'decent interval' revelation for understanding American foreign policy?",
-          "src": "/units/usa/assets/sources/portraits/kissinger.jpg",
-          "source": "/units/usa/assets/sources/portraits/kissinger.jpg"
+          "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
+          "source": "/units/usa/assets/sources/portraits/kissinger.jpg",
+          "caption": "President Richard Nixon seated on the Oval Office desk conferring in private with National Security Advisor Dr. Henry Kissinger during strategic deliberations over Vietnam exit terms (White House Photo Office, 1972).",
+          "text": "Dr. Henry Kissinger: \"We require a decent interval. If a year or two years from now South Vietnam goes down the drain, it will look like a hell of an achievement to have got out, and it will be blamed on the South Vietnamese and on Congress.\"<br><br>President Richard Nixon: \"If we can get them out by November... then we've got to find a formula that holds the thing together until after the election. Then, if South Vietnam collapses in two years, that's their problem. We will have done our best.\""
         }
       ],
       "video": [
@@ -12916,26 +13231,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "Source A:\n\"Suddenly the National Guard turned and pointed their M1 rifles at us. They shot into a crowd that was just standing there on the commons. We thought they were shooting blanks to frighten us, but then the dust kicked up and students fell to the ground screaming. It was pure terror—war brought home to our own college kids.\"\n\nGive two things you can infer from Source A about the Kent State shootings. (4 marks)",
-          "starter": "Inference 1: I can infer that the National Guard used excessive, lethal force against unarmed protesters.",
-          "model": "Inference 1: I can infer that the National Guard used excessive, lethal force against unarmed protesters.\nDetails: \"They shot into a crowd that was just standing there. ... dust kicked up and students fell.\"\nInference 2: I can infer that the student demonstrators did not expect the military to fire live ammunition.\nDetails: \"We thought they were shooting blanks...\""
-        },
-        {
-          "qNum": 2,
-          "question": "How did televised media coverage of events like the My Lai Massacre affect public trust in the US military?",
-          "starter": "Consider: Consider the moral narrative of the war.",
-          "model": "It shattered the narrative of moral superiority, revealing that US forces committed atrocities against unarmed civilians, fueling anti-war sentiment and creating a deep credibility gap between the government and public."
-        },
-        {
-          "qNum": 3,
-          "question": "Why did the shooting of four students at Kent State University in 1970 trigger a nationwide student strike?",
-          "starter": "Consider: Think about the home front and class dynamics.",
-          "model": "It brought the violence of the war home, showing that the state was willing to use lethal force against its own middle-class youth on college campuses, mobilizing 4 million students to strike in protest."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "A Moral and Patriotic Duty to Protest",
         "leftText": "Anti-war activists argued that the war was immoral, undemocratic, and was destroying both Vietnamese lives and American youth through a rigged class-based draft system.",
@@ -13246,23 +13542,81 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "4 marks",
+        "tariff": "Section A: Questions 1 & 2 (4 marks & 12 marks)",
+        "stimulus": [
+          {
+            "title": "Source A: Ohio National Guard Confronting Anti-War Student Protesters at Kent State University, 4 May 1970",
+            "image": "/units/usa/assets/sources/kent-state-protests-1970.jpg",
+            "caption": "Armed Ohio National Guardsmen in military formation and gas masks deploy tear gas against student demonstrators protesting Nixon’s invasion of Cambodia.",
+            "provenance": "Contemporary news photograph documenting the confrontation between the Ohio National Guard and anti-war student demonstrators at Kent State University, 4 May 1970 (Kent State University Libraries).",
+            "extract": "Armed Ohio National Guardsmen in military formation and gas masks deploy tear gas canisters against unarmed student demonstrators on the campus commons protesting President Nixon’s invasion of Cambodia. Minutes later, troops fired sixty-seven live rounds, killing four students."
+          }
+        ],
         "questions": [
           {
             "tariff": "4 marks",
             "type": "inference_4m",
             "marks": 4,
-            "question": "1. Give two things you can infer from Source A about the confrontation at Kent State University in May 1970. [4 marks]",
-            "stimulus": "Source A: Photograph and report on Ohio National Guardsmen firing into student anti-war demonstrators at Kent State, killing four.",
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that domestic opposition to the Vietnam War had escalated into violent, lethal clashes on American soil.<br><strong>Details in the source that tell me this:</strong><br>National Guardsmen armed with live military ammunition opened fire on an unarmed student anti-war protest on a college campus, killing four students.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that President Nixon's decision to expand the war into Cambodia provoked unprecedented outrage among the younger generation.<br><strong>Details in the source that tell me this:</strong><br>The protest was triggered directly by Nixon's public announcement of the Cambodian incursion, prompting nationwide student strikes that shut down hundreds of universities.</p>",
+            "question": "Give two things you can infer from Source A about the confrontation at Kent State University in May 1970.",
+            "prompt": "Give two separate valid inferences. Support each inference with direct visual or textual details from Source A.",
+            "model": "<p><strong>(i) What I can infer:</strong><br>I can infer that the university campus confrontation was heavily militarized and treated by state authorities as an armed combat situation.<br><strong>Details in the source that tell me this:</strong><br>The National Guardsmen are advancing in strict military formation wearing gas masks and carrying military rifles with fixed bayonets across the student commons.</p><p><strong>(ii) What I can infer:</strong><br>I can infer that student demonstrators were determined to protest despite facing severe armed force and tear gas from state authorities.<br><strong>Details in the source that tell me this:</strong><br>Unarmed students remain visible on the hill opposite the troops, standing their ground amid clouds of deployed tear gas.</p>",
             "scaffolding": {
-              "acronym": "Point & Detail (4 Marks)",
-              "acronym_title": "Inference Formula: (i) Inference + Detail, (ii) Inference + Detail",
-              "sentence_starters": [
-                "Source B is useful because...",
-                "Source C is useful because...",
-                "Combined, both sources provide..."
+              "acronym": "Inference Formula (AO3)",
+              "acronym_title": "Inference + Supporting Detail (2 Points • 4 Marks)",
+              "steps": [
+                {
+                  "letter": "I1",
+                  "name": "1. First Valid Inference",
+                  "prompt": "State what the source reveals regarding the militarization of state authority on campus."
+                },
+                {
+                  "letter": "D1",
+                  "name": "2. Supporting Detail",
+                  "prompt": "Describe the troops advancing in gas masks carrying military weapons."
+                },
+                {
+                  "letter": "I2",
+                  "name": "3. Second Valid Inference",
+                  "prompt": "Identify an insight about student determination or domestic crisis."
+                },
+                {
+                  "letter": "D2",
+                  "name": "4. Supporting Detail",
+                  "prompt": "Describe the unarmed students standing opposite the troops in the tear gas."
+                }
+              ]
+            }
+          },
+          {
+            "tariff": "12 marks",
+            "type": "explain_why_12",
+            "marks": 12,
+            "question": "Explain why President Richard Nixon introduced the policy of Vietnamization in 1969.",
+            "stimulus": [
+              "Rising US casualties",
+              "The impact of the Tet Offensive (1968)"
+            ],
+            "prompt": "You may use the following in your answer: (1) Rising US casualties, (2) The impact of the Tet Offensive (1968). You must also use information of your own.",
+            "model": "A primary reason why President Nixon introduced Vietnamization was the unsustainable toll of <strong>rising American casualties</strong> and the widespread domestic anger it provoked. By 1968, American combat deaths exceeded 14,000 in that single year, bringing total fatalities above 30,000. Each week, television networks broadcast lists of dead teenagers, fueling widespread draft-resistance, campus protests, and public disgust. Nixon understood that public patience had run out: in order to defuse the anti-war movement and maintain political viability, he had to drastically lower American body counts by transferring ground combat responsibilities to South Vietnamese forces.<br><br>Furthermore, Vietnamization was directly driven by the <strong>political and psychological shock of the 1968 Tet Offensive</strong>. Although Tet was a tactical defeat for the Vietcong, it obliterated public and congressional trust in the military’s optimistic victory projections. The resulting 'credibility gap' convinced both Congress and middle-class voters that total military victory was unachievable. Having campaigned in 1968 on the pledge to secure 'Peace with Honor', Nixon needed an exit strategy that avoided the appearance of outright American defeat or abandoning an ally, making the modernization and expansion of the ARVN the only acceptable policy path.<br><br>Finally, Vietnamization was motivated by the desire to <strong>rebalance American strategic doctrine under the Nixon Doctrine (1969)</strong>. Nixon and National Security Advisor Henry Kissinger recognized that the US could no longer act as the world's unilateral policeman. By providing massive shipments of modern aircraft, tanks, and artillery to expand the ARVN to over one million soldiers, Nixon hoped to enable South Vietnam to defend itself while allowing the phased withdrawal of over 500,000 US combat troops between 1969 and 1972, thereby facilitating historic diplomatic breakthroughs with Beijing and Moscow.",
+            "scaffolding": {
+              "acronym": "PEEL Structure Strip",
+              "acronym_title": "3-Paragraph Causal Analysis (PEEL • 12 Marks)",
+              "steps": [
+                {
+                  "letter": "P1",
+                  "name": "1. Rising Casualties & Draft Backlash",
+                  "prompt": "Over 14,000 deaths in 1968 forcing Nixon to lower body counts and defuse anti-war anger."
+                },
+                {
+                  "letter": "P2",
+                  "name": "2. Impact of the Tet Offensive (1968)",
+                  "prompt": "Tet shattered claims of imminent victory and created an unbridgeable credibility gap."
+                },
+                {
+                  "letter": "P3",
+                  "name": "3. Nixon Doctrine & Building ARVN (Own Knowledge)",
+                  "prompt": "Equipping 1m South Vietnamese troops while withdrawing 500,000 US combat troops."
+                }
               ]
             }
           }
@@ -13284,43 +13638,43 @@ export default {
       "specification_anchor": "Reactions to, and the end of, US involvement in the Vietnam War, 1964–75: the anti-war movement; student protests, media and television coverage, exposure of the My Lai Massacre (1968) and Calley trial, and the Kent State shootings (1970).",
       "flashcards": [
         {
-          "term": "Domino Theory",
-          "definition": "President Eisenhower's foreign policy doctrine postulating that if South Vietnam fell to communism, surrounding Southeast Asian nations would collapse like falling dominoes.",
-          "q": "What was the 'Domino Theory' regarding Southeast Asia?",
-          "a": "The belief that if Vietnam fell to communism, neighboring countries (Laos, Cambodia, Thailand) would quickly follow."
+          "term": "The Living Room War",
+          "definition": "The reality that Vietnam was the first televised conflict, bringing uncensored battlefield carnage, body bags, and civilian destruction into American homes every evening.",
+          "q": "Why was Vietnam referred to as the 'Living Room War'?",
+          "a": "Uncensored nightly television news broadcast graphic footage of combat, wounded GIs, and burning villages directly into civilian living rooms."
         },
         {
-          "term": "Geneva Accords (1954) & 17th Parallel",
-          "definition": "The international peace treaty temporarily partitioning Vietnam at the 17th Parallel into communist North Vietnam (under Ho Chi Minh) and non-communist South Vietnam.",
-          "q": "What did the 1954 Geneva Accords establish?",
-          "a": "They divided Vietnam temporarily at the 17th Parallel and scheduled nationwide reunification elections for 1956."
+          "term": "Military Draft Lottery (1969)",
+          "definition": "Selective Service system that drew birthdates from a glass bowl to determine conscription priority, widely protested because college deferments favored wealthy white youths.",
+          "q": "Why did the military draft provoke widespread outrage on college campuses?",
+          "a": "Because young men faced conscription into a deadly, unpopular war, while college deferments disproportionately protected middle- and upper-class youths."
         },
         {
-          "term": "Ngo Dinh Diem",
-          "definition": "The autocratic Catholic, anti-communist leader of South Vietnam who cancelled the 1956 reunification elections and violently persecuted the country's Buddhist majority.",
-          "q": "Why was South Vietnamese President Ngo Dinh Diem unpopular?",
-          "a": "He ran a corrupt, nepotistic regime, favoured the Catholic minority, persecuted Buddhists, and crushed political opposition."
+          "term": "My Lai Massacre (March 1968)",
+          "definition": "Mass murder of over 500 unarmed Vietnamese women, children, and elderly villagers by US Charlie Company led by Lieutenant William Calley, exposed to the world in late 1969.",
+          "q": "What occurred at the village of My Lai on 16 March 1968?",
+          "a": "American soldiers systematically massacred between 347 and 504 unarmed civilians, an atrocity covered up by the military for over a year."
         },
         {
-          "term": "Vietcong (NLF)",
-          "definition": "The National Liberation Front, a communist guerrilla army formed in 1960 in South Vietnam backed by North Vietnam to overthrow Diem and unify the country.",
-          "q": "Who were the Vietcong (National Liberation Front)?",
-          "a": "Communist guerrilla fighters in South Vietnam fighting with Northern support to overthrow the US-backed Saigon government."
+          "term": "Kent State University Shootings (4 May 1970)",
+          "definition": "The fatal shooting of four unarmed college students by Ohio National Guardsmen during an anti-war rally protesting Nixon's Cambodian invasion, sparking a nationwide student strike of 4 million.",
+          "q": "What was the significance of the Kent State shootings in May 1970?",
+          "a": "The murder of four unarmed American students on their own campus galvanized over 450 universities to close down in the largest student strike in US history."
         },
         {
-          "term": "Strategic Hamlet Program (1962)",
-          "definition": "A joint US-South Vietnamese initiative forcibly relocating rural peasants into fortified stockade villages to isolate them from Vietcong insurgents, which alienated the population.",
-          "q": "Why did the Strategic Hamlet Program fail?",
-          "a": "It forcibly displaced peasants from ancestral burial lands and Buddhist shrines, increasing peasant sympathy for the Vietcong."
+          "term": "Pentagon Papers (June 1971)",
+          "definition": "Classified 7,000-page Department of Defense study leaked by Daniel Ellsberg proving that the US government had systematically lied about Tonkin, bombing raids, and casualty statistics.",
+          "q": "What did the Pentagon Papers reveal when leaked to the New York Times in 1971?",
+          "a": "They proved that four successive presidential administrations had deliberately deceived Congress and the public about the true scope and nature of the war."
         },
         {
-          "term": "Buddhist Crisis & Overthrow of Diem (1963)",
-          "definition": "Public self-immolations by Buddhist monks protesting Diem's oppression, leading to a US-backed military coup on 1 November 1963 in which Diem was executed.",
-          "q": "What led to the overthrow of President Diem in November 1963?",
-          "a": "Buddhist monks burned themselves in protest, leading the US to sanction a military coup that assassinated Diem."
+          "term": "Vietnam Veterans Against the War (VVAW)",
+          "definition": "Organization of returned combat veterans led by John Kerry who testified before Congress and threw their purple hearts and combat medals over the Capitol fence in April 1971.",
+          "q": "Why was the protest of Vietnam Veterans Against the War (VVAW) so impactful?",
+          "a": "Because decorated combat heroes publicly rejected the war as a moral disaster, giving enormous credibility to the anti-war movement."
         }
       ],
-      "vocab_cloze_text": "Following the humiliating defeat of French colonial forces at Dien Bien Phu in 1954, world powers signed the [Geneva Accords], temporarily dividing the country at the 17th Parallel into communist North Vietnam and non-communist South Vietnam. Convinced of the Cold War [Domino Theory]—the belief that if Vietnam fell to communism, all of Southeast Asia would collapse—the United States pumped hundreds of millions of dollars into supporting southern president [Ngo Dinh Diem]. However, Diem was an autocratic, corrupt ruler who favored his Catholic minority, cancelled the scheduled 1956 national reunification elections, and violently crushed peasant dissidents. In response, southern communist insurgents united with Northern backing in 1960 to form the [Vietcong (NLF)], launching an effective rural guerrilla war. To isolate the guerrillas from rural villagers, Diem and American advisers introduced the deeply unpopular [Strategic Hamlet Program] in 1962, which forcibly uprooted peasants from their ancestral farming lands and deepened peasant sympathy for the communist rebellion.",
+      "vocab_cloze_text": "Public disillusionment with the conflict deepened profoundly because Vietnam was America's first [Living Room War], with uncensored television footage of wounded soldiers and napalmed children broadcast nightly into family dining rooms. Campus unrest exploded across the nation as young men faced the dreaded [Military Draft], which disproportionately conscripted working-class and Black youths while the wealthy secured university deferments. The moral justification for the American war effort collapsed entirely in late 1969 with the exposure of the [My Lai Massacre], in which Lieutenant William Calley's platoon slaughtered over 500 unarmed women, infants, and elderly peasants. When President Nixon ordered troops into Cambodia in May 1970, students at [Kent State University] organized mass rallies, culminating in tragedy when Ohio National Guardsmen opened fire, killing four unarmed students and triggering a nationwide strike of four million students. The crisis of trust reached its climax in June 1971 when whistleblower Daniel Ellsberg leaked the [Pentagon Papers], proving that the US government had systematically deceived the public, while thousands of decorated soldiers in [Vietnam Veterans Against the War] hurled their combat medals over the Capitol fence.",
       "causal_domino_spine": {
         "title": "The Anti-War Movement, Draft Resistance & Kent State: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -13914,26 +14268,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "Explain why some Americans supported US involvement in the Vietnam War in the years 1969–72. (12 marks)",
-          "starter": "“One reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 was their deep-seated patriotism and fear of communist expansion.",
-          "model": "“One reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 was their deep-seated patriotism and fear of communist expansion.” Many conservative and working-class citizens believed that a communist victory in South Vietnam would damage US global credibility. They accepted the [[Domino Theory]] and argued that abandoning an ally would lead to a communist bloodbath. {{Therefore, anti-communist patriotism was a key reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 because they viewed the conflict as a necessary stand against global communism.}}\n\n“A second reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 was President Nixon's successful political mobilization of the Silent Majority.” In his November 1969 speech, Nixon called on the quiet, law-abiding majority of Americans to support his policy of [[Vietnamisation]]. This speech gave a voice to patriotic citizens, presenting them as the moral backbone of the country against radicals. {{Therefore, Nixon's political appeal to the Silent Majority was a crucial reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 because it framed support for his policies as a patriotic duty.}}\n\n“A third reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 was class resentment against middle-class student anti-war protesters.” Working-class families, whose drafted sons did not have college deferments, saw student demonstrators as privileged, unpatriotic draft-dodgers who insulted the military. This division led to pro-war events like the [[Hard Hat Riots]] of 1970. {{Therefore, working-class resentment of student protesters was a major reason why some Americans supported US involvement in the Vietnam War in the years 1969–72 because it aligned patriotic sentiment against the anti-war movement.}}"
-        },
-        {
-          "qNum": 2,
-          "question": "Who did Nixon mean by the 'Silent Majority', and how did he use them to politically counter the anti-war movement?",
-          "starter": "Consider: Consider the political division of the home front.",
-          "model": "The patriotic, law-abiding middle-class citizens who did not join protests. By claiming their quiet support, Nixon delegitimized anti-war protestors as a vocal minority, turning home front divisions into political capital."
-        },
-        {
-          "qNum": 3,
-          "question": "What did the 'Hard Hat Riots' of 1970 reveal about class divisions within the American home front?",
-          "starter": "Consider: Think about student protestors vs. union workers.",
-          "model": "Showed a deep split between working-class laborers (who supported the war out of patriotism) and middle-class college student protestors (whom they viewed as privileged and unpatriotic), revealing a cultural class war."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "Defending American Honor and Allies",
         "leftText": "Nixon supporters argued that maintaining the war was a patriotic duty to prevent a communist takeover of South Vietnam and protect America's credibility as a global ally.",
@@ -14244,26 +14579,46 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "12 marks",
+        "tariff": "Section B: Question 3(a) (8 marks)",
+        "stimulus": [
+          {
+            "title": "Source B: From a Special CBS News Television Broadcast by Walter Cronkite, 27 February 1968",
+            "provenance": "Broadcast to millions of American households by CBS Evening News anchor Walter Cronkite following his fact-finding mission to Vietnam after the Tet Offensive.",
+            "extract": "\"It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could.\""
+          },
+          {
+            "title": "Source C: From an Anti-Draft Flyer Distributed by Students for a Democratic Society (SDS) at University Campuses, October 1969",
+            "provenance": "Protest pamphlet produced and circulated by the student anti-war organization Students for a Democratic Society (SDS) prior to the October 1969 Moratorium.",
+            "extract": "\"Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!\""
+          }
+        ],
         "questions": [
           {
-            "tariff": "12 marks",
-            "type": "explain_why_12",
-            "marks": 12,
-            "question": "2. Explain why President Richard Nixon introduced the policy of Vietnamization in 1969. [12 marks]",
-            "stimulus": [
-              "Rising US casualties",
-              "The impact of the Tet Offensive (1968)"
-            ],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "One major reason why President Nixon introduced Vietnamization was the unsustainable toll of <strong>rising American military casualties</strong> and the explosive anti-war backlash on the home front. By 1969, over 36,000 American soldiers had been killed, with hundreds dying each week. Draft resistance, student strikes, and veterans returning medals convinced Nixon that the American public would no longer tolerate high US body bags, forcing him to promise 'peace with honour' and begin the phased withdrawal of ground troops.<br><br>A second decisive factor was the <strong>shattering psychological impact of the 1968 Tet Offensive</strong>. Tet had destroyed the credibility of the US government, exposing the reality that 500,000 US soldiers could not secure South Vietnam against communist guerrilla infiltration. Nixon recognized that continuing a direct US ground war was politically suicidal, compelling him to shift the military burden of ground combat entirely onto the South Vietnamese Army (ARVN), supported by US air and naval power.<br><br>Finally, Nixon sought to implement his broader <strong>Nixon Doctrine and diplomatic détente</strong> with the Soviet Union and China. By pursuing diplomatic triangular diplomacy with Beijing and Moscow, Nixon hoped to isolate North Vietnam diplomatically while demonstrating that America’s Asian allies had to take primary responsibility for their own military defense, thereby facilitating an honourable exit for the United States.",
+            "tariff": "8 marks",
+            "type": "utility_8m",
+            "marks": 8,
+            "question": "Study Sources B and C. How useful are Sources B and C for an enquiry into the main reason for the growth of opposition to the Vietnam War in the USA (1968–71)?",
+            "prompt": "Evaluate both sources using Content, Contextual Knowledge (Tet Offensive, Walter Cronkite broadcast, My Lai revelations 1969, the military draft lottery, campus student protests, Moratorium rallies), and Provenance.",
+            "model": "Source B is highly useful because it demonstrates the critical moment when mainstream, respectable American journalism turned against the war. Walter Cronkite was universally revered as 'the most trusted man in America'. In this special February 1968 broadcast following his personal investigation of the Tet Offensive, Cronkite dismantles government propaganda, declaring that the war is hopelessly 'mired in stalemate' and that negotiation is the only rational path. From my historical knowledge, President Johnson famously reacted to this broadcast by stating, 'If I've lost Cronkite, I've lost middle America'. Its provenance as a national primetime broadcast gives it immense utility, illustrating how television destroyed the credibility of Washington politicians among ordinary, moderate citizens.<br><br>Source C is equally useful because it exposes the passionate, grassroots fury of the youth and student anti-war movement. Produced by Students for a Democratic Society (SDS) for the nationwide October 1969 Moratorium, the leaflet targets the deep class and racial inequalities of the Selective Service conscription system. It exposes how wealthy students secured college deferments while poor and minority draftees were sent to die in the jungle. It explicitly calls for civil disobedience, urging young men to burn their draft cards. From my knowledge, over two million Americans participated in the Moratorium demonstrations on 15 October 1969, showing how the draft mobilized mass resistance. As a polemical propaganda leaflet, Source C uses emotive language to recruit activists, but it accurately captures the moral outrage and fear of conscription that animated campus rebellions. Overall, both sources are highly useful: Source B reveals the collapse of mainstream faith in military victory, while Source C illustrates the militant grassroots resistance provoked by the draft.",
             "scaffolding": {
-              "acronym": "PEEL Structure Strip",
-              "acronym_title": "3-Paragraph Causal Analysis (PEEL)",
-              "sentence_starters": [
-                "One major reason was...",
-                "Furthermore, a second critical factor was...",
-                "Finally, an underlying driver was..."
+              "acronym": "Source Utility Framework (AO3)",
+              "acronym_title": "Section B: Question 3(a) • Utility of Sources B & C [8 Marks • 12 Mins]",
+              "steps": [
+                {
+                  "letter": "SOURCE B",
+                  "name": "1. Source B Content & Context",
+                  "prompt": "Examine Cronkite's declaration of stalemate and its impact on middle-class public opinion."
+                },
+                {
+                  "letter": "SOURCE C",
+                  "name": "2. Source C Content & Context",
+                  "prompt": "Analyse the SDS leaflet targeting the unfair draft lottery, class deferments, and draft-card burning."
+                },
+                {
+                  "letter": "SYNTHESIS",
+                  "name": "3. Provenance & Synthesis",
+                  "prompt": "Contrast mainstream broadcast journalism with student activist protest literature; reach a balanced conclusion."
+                }
               ]
             }
           }
@@ -14288,43 +14643,43 @@ export default {
       "specification_anchor": "Reactions to, and the end of, US involvement in the Vietnam War, 1964–75: support for the war; Nixon's 'Silent Majority' speech, anti-communist sentiment, patriotism, and the 1970 New York 'Hard Hat' counter-demonstrations.",
       "flashcards": [
         {
-          "term": "Gulf of Tonkin Incident (August 1964)",
-          "definition": "Reports that North Vietnamese torpedo boats attacked the US destroyer USS Maddox in international waters in the Gulf of Tonkin off North Vietnam.",
-          "q": "What was the Gulf of Tonkin incident of August 1964?",
-          "a": "Alleged North Vietnamese torpedo attacks on US destroyers, used by President Johnson to justify direct military intervention."
+          "term": "The 'Silent Majority'",
+          "definition": "President Nixon's term for the millions of conservative, patriotic, blue-collar, and suburban Americans who supported the war and opposed anti-war student demonstrations.",
+          "q": "Who was Richard Nixon referring to as the 'Silent Majority' in November 1969?",
+          "a": "The large, quiet majority of law-abiding Americans who supported their country, respected the military, and rejected radical counterculture protests."
         },
         {
-          "term": "Gulf of Tonkin Resolution",
-          "definition": "A nearly unanimous congressional resolution authorising President Johnson to 'take all necessary measures' to repel armed attacks in Vietnam, effectively a blank check for war.",
-          "q": "What power did the Gulf of Tonkin Resolution give President Johnson?",
-          "a": "It gave the President authority to wage full-scale war in Vietnam without a formal congressional declaration of war."
+          "term": "Cold War Patriotism & Anti-Communism",
+          "definition": "The deep-seated belief held by millions of Americans that the Vietnam War was a noble, necessary struggle to defend the free world against global Soviet and Chinese totalitarianism.",
+          "q": "Why did millions of ordinary Americans continue to support the Vietnam War?",
+          "a": "Out of deep patriotic loyalty, respect for American soldiers, and genuine fear that communist expansion would threaten global democracy."
         },
         {
-          "term": "Operation Rolling Thunder (1965–1968)",
-          "definition": "A sustained, three-year US aerial bombardment campaign against North Vietnam designed to destroy infrastructure, interrupt the Ho Chi Minh Trail, and break Hanoi's will.",
-          "q": "What was Operation Rolling Thunder?",
-          "a": "A massive, continuous bombing campaign against North Vietnamese military and supply targets from 1965 to 1968."
+          "term": "Hard Hat Riots (8 May 1970)",
+          "definition": "Violent confrontation in lower Manhattan where 200 pro-war construction workers armed with iron pipes assaulted anti-war student demonstrators near Wall Street.",
+          "q": "What were the 'Hard Hat Riots' of May 1970 in New York City?",
+          "a": "A violent clash in which union construction workers attacked anti-war student protesters, demonstrating working-class support for Nixon and the military."
         },
         {
-          "term": "Landing of Ground Troops at Da Nang (March 1965)",
-          "definition": "The arrival of 3,500 US Marines at Da Nang on 8 March 1965, marking the official transformation of the US role from military advisers to direct ground combatants.",
-          "q": "When did the first US combat troops arrive in South Vietnam?",
-          "a": "In March 1965, when 3,500 US Marines landed at Da Nang to protect US air bases."
+          "term": "Congressional Hawks vs. Doves",
+          "definition": "The political division between 'Hawks' (conservatives who demanded total military victory and increased bombing) and 'Doves' (liberals who demanded an immediate negotiated US withdrawal).",
+          "q": "What was the difference between 'Hawks' and 'Doves' in Congress?",
+          "a": "Hawks supported aggressive military action to crush communism; Doves argued the war was unwinnable, immoral, and demanded rapid withdrawal."
         },
         {
-          "term": "General William Westmoreland",
-          "definition": "The supreme commander of US forces in Vietnam who implemented a military strategy of attrition, seeking to kill enemy forces faster than they could be replaced ('body count').",
-          "q": "What was General Westmoreland's strategy in Vietnam?",
-          "a": "A strategy of attrition using overwhelming firepower to inflict more casualties than the enemy could sustain."
+          "term": "Honor and National Credibility",
+          "definition": "The widespread argument that an abrupt American retreat from South Vietnam would dishonor fallen soldiers, betray loyal South Vietnamese allies, and destroy US global credibility.",
+          "q": "Why did Nixon insist on 'Peace with Honor' rather than immediate withdrawal?",
+          "a": "He believed that abandoning Saigon would destroy American credibility worldwide and embolden the Soviet Union and China to launch further aggression."
         },
         {
-          "term": "The Military Draft (Selective Service)",
-          "definition": "The conscription system that drafted hundreds of thousands of young American men (average age 19) into military combat, disproportionately affecting working-class youth.",
-          "q": "Why was the Vietnam military draft controversial?",
-          "a": "College deferments allowed wealthier youth to avoid combat, causing working-class and minority youth to be drafted in disproportionate numbers."
+          "term": "1972 49-State Presidential Landslide",
+          "definition": "Richard Nixon's historic electoral triumph over anti-war Democrat George McGovern, winning 60.7% of the popular vote and 520 out of 537 electoral votes.",
+          "q": "What did Richard Nixon's 1972 election victory prove about American public opinion?",
+          "a": "It demonstrated that the conservative Silent Majority overwhelmingly rejected the radical anti-war movement and supported Nixon's measured exit strategy."
         }
       ],
-      "vocab_cloze_text": "In August 1964, following skirmishes involving the USS Maddox off North Vietnam, President Johnson persuaded Congress to pass the [Gulf of Tonkin Resolution], which granted the executive branch virtually unchecked constitutional authority to wage full-scale war without a formal declaration. In February 1965, after a deadly Vietcong mortar strike on the US barracks at Pleiku, Johnson unleashed [Operation Rolling Thunder], a devastating three-year air bombardment dropping a million tons of bombs on North Vietnamese military infrastructure. Recognizing that air bases required ground defense, Johnson ordered the historic [Da Nang Landing] on 8 March 1965, sending the first 3,500 US Marines ashore and fundamentally shifting the American role from advisory support to direct combat. US commander [General William Westmoreland] instituted a bloody war of attrition, deploying massive artillery and air superiority to inflict more casualties than the enemy could replace ('body count'). To sustain the ballooning troop levels, which surpassed 500,000 soldiers by 1968, the government expanded [The Military Draft], which conscripted working-class nineteen-year-olds while wealthier students used college deferments, triggering furious anti-war protests across American campuses.",
+      "vocab_cloze_text": "Despite the high-profile visibility of campus protests, millions of ordinary citizens viewed the conflict through the prism of traditional [Cold War Patriotism], convinced that halting communist aggression was essential for the survival of the free world. On 3 November 1969, President Nixon rallied this constituency in a landmark televised address, appealing directly to the great [Silent Majority] of law-abiding citizens who rejected flag burnings and supported American troops. Tensions between the working class and college students erupted into violence during the [Hard Hat Riots] of May 1970, when hundreds of construction workers attacked anti-war demonstrators near Wall Street while chanting 'USA, All the Way!'. In Washington, political debate divided bitterly between pro-military [Congressional Hawks] who demanded increased air power and anti-war 'Doves'. President Nixon repeatedly emphasized that America could not abandon South Vietnam without irreparably destroying American [Honor and National Credibility]. The enduring strength of conservative public sentiment was proven conclusively in the [1972 Presidential Landslide], when Nixon defeated anti-war Democrat George McGovern in 49 of 50 states.",
       "causal_domino_spine": {
         "title": "The Silent Majority, Cold War Patriotism & Hard Hat Riots: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -14404,9 +14759,9 @@ export default {
           "type": "speech_transcript",
           "title": "Source A: President Richard Nixon's Televised 'Silent Majority' Address to the Nation (3 November 1969)",
           "date": "3 November 1969",
-          "image": "/units/usa/assets/sources/portraits/nixon.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/nixon.jpg",
-          "attribution": "Public Papers of the Presidents: Richard Nixon, 1969",
+          "image": "/units/usa/assets/sources/nixon-television-address.jpg",
+          "image_url": "/units/usa/assets/sources/nixon-television-address.jpg",
+          "attribution": "President Richard Nixon, Address to the Nation on the War in Vietnam (3 November 1969)",
           "question_badge": "Source Inference",
           "question": "What does President Nixon's appeal in Source A reveal about his political strategy to divide American public opinion over the war?",
           "model_answer": "Source A reveals Nixon's calculated strategy to isolate vocal anti-war protesters by contrasting them against what he called the 'great silent majority of my fellow Americans.' He framed anti-war demonstrations as an attempt by a radical minority to dictate foreign policy, appealing to the patriotism, law-and-order instincts, and social resentment of working- and middle-class citizens.",
@@ -14421,8 +14776,10 @@ export default {
           },
           "hinge_question": "Why did Nixon's 'Silent Majority' speech result in an immediate 77% surge in public approval ratings despite ongoing war casualties?",
           "source_context": "Public Papers of the Presidents: Richard Nixon, 1969. President Richard Nixon for The American television audience, estimated at over 70 million citizens with the objective: To buy political time for his Vietnamization strategy and neutralize the massive anti-war Moratorium demonstrations.. **Hinge Question:** Why did Nixon's 'Silent Majority' speech result in an immediate 77% surge in public approval ratings despite ongoing war casualties?",
-          "src": "/units/usa/assets/sources/portraits/nixon.jpg",
-          "source": "/units/usa/assets/sources/portraits/nixon.jpg"
+          "src": "/units/usa/assets/sources/nixon-television-address.jpg",
+          "source": "/units/usa/assets/sources/portraits/nixon.jpg",
+          "caption": "President Richard Nixon in the Oval Office surrounded by thousands of letters and telegrams sent by citizens supporting his 3 November 1969 'Silent Majority' address.",
+          "text": "Let historians not record that when America was the most powerful nation in the world we passed on the other side of the road and allowed the last hopes for peace and freedom of millions of people to be suffocated by the forces of totalitarianism. And so tonight—to you, the great silent majority of my fellow Americans—I ask for your support. I pledged in my campaign for the Presidency to end the war in a way that we could win the peace... Let us be united for peace. Let us also be united against defeat. Because let us understand: North Vietnam cannot defeat or humiliate the United States. Only Americans can do that."
         },
         {
           "id": "usa_lesson_4_2_c",
@@ -14454,7 +14811,7 @@ export default {
           "id": "usa_lesson_4_2_e",
           "letter": "C",
           "type": "editorial",
-          "title": "Source C: Construction Union Hard Hats on the White House Cabinet Table Following the Hard Hat Riots (26 May 1970)",
+          "title": "Source C: Archival Photograph of Construction Union Hard Hats on the White House Cabinet Table Following the Hard Hat Riots (26 May 1970)",
           "date": "11 May 1970",
           "image": "/units/usa/assets/sources/hard_hat_riot_cabinet_table_1970.jpg",
           "image_url": "/units/usa/assets/sources/hard_hat_riot_cabinet_table_1970.jpg",
@@ -14484,7 +14841,7 @@ export default {
           "date": "May 1970",
           "image": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
           "image_url": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
-          "attribution": "The Gallup Poll: Public Opinion 1935–1971, Volume 3, Random House",
+          "attribution": "Gallup Opinion Index, Report No. 60 (June 1970)",
           "question_badge": "Reliability & Provenance",
           "question": "How do the polling statistics in Source D challenge the modern assumption that the American public was overwhelmingly anti-war by 1970?",
           "model_answer": "Source D provides objective statistical evidence that while the public was weary of the war, they harboured intense hostility toward the anti-war movement itself. Even after the Kent State shootings, 58% of respondents held the students themselves responsible for their own deaths, proving that Nixon's 'Silent Majority' represented a real, formidable conservative consensus.",
@@ -14500,7 +14857,9 @@ export default {
           "hinge_question": "Why did a majority of Americans who opposed the war simultaneously detest the anti-war protesters?",
           "source_context": "The Gallup Poll: Public Opinion 1935–1971, Volume 3, Random House. George Gallup and the American Institute of Public Opinion for Newspaper subscribers, political strategists, and academic researchers with the objective: To measure scientifically validated cross-sections of American public sentiment during national crises.. **Hinge Question:** Why did a majority of Americans who opposed the war simultaneously detest the anti-war protesters?",
           "src": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
-          "source": "/units/usa/assets/sources/pro-war-rally-nyc.jpg"
+          "source": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
+          "caption": "Thousands of construction workers, longshoremen, and blue-collar citizens rallying in lower Manhattan waving American flags in support of President Nixon and American troops (May 1970).",
+          "text": "Gallup Special Survey on Campus Protests and the Cambodian Incursion (May 1970):<br>• 58% of respondents held student anti-war demonstrators primarily responsible for the fatal shootings at Kent State University, compared to only 11% who blamed the Ohio National Guard.<br>• 50% approved of President Nixon's decision to order US ground troops into Cambodia to attack communist sanctuaries, with 39% disapproving.<br>• 65% expressed favorable views of the 'Silent Majority' and believed anti-war protesters were hurting the country's international standing."
         },
         {
           "id": "usa_lesson_4_2_b",
@@ -14915,26 +15274,7 @@ export default {
         "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
         "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
       },
-      "tasks": [
-        {
-          "qNum": 1,
-          "question": "How useful are Sources B and C for an enquiry into the fall of Saigon in 1975? (8 marks)",
-          "starter": "Source B is highly useful for showing the panic, chaos, and final moments of the US evacuation from Saigon.",
-          "model": "Source B is highly useful for showing the panic, chaos, and final moments of the US evacuation from Saigon. The content details the physical breakdown of the evacuation and the desperation of South Vietnamese allies trying to escape. Its provenance as an official, urgent telegram from the US Ambassador makes it a highly reliable and immediate primary record of the final hours of the US presence.\n\nSource C is highly useful for showing the military reasons for the ARVN collapse. The officer's testimony highlights the devastating impact of US funding cuts, which left soldiers with \"no ammunition\" and \"no fuel.\" Its provenance as a memoir written by an ARVN officer provides an essential insider perspective on the feeling of betrayal and the material shortages that caused the military collapse."
-        },
-        {
-          "qNum": 2,
-          "question": "Why did historians argue that the Paris Peace Accords of 1973 were designed to create a 'decent interval'?",
-          "starter": "Consider: Consider the long-term survival of South Vietnam.",
-          "model": "It allowed the US to withdraw its forces and retrieve POWs under the guise of peace, knowing that South Vietnam would eventually fall once US support ended, avoiding the embarrassment of immediate defeat."
-        },
-        {
-          "qNum": 3,
-          "question": "What did the iconic image of the helicopter evacuation of the Saigon embassy in 1975 symbolize to the world?",
-          "starter": "Consider: Think about US superpower status and foreign policy outcomes.",
-          "model": "The total defeat and chaotic collapse of US policy in Southeast Asia, showing the limits of American military superpower status and marking the final failure of containment in Vietnam."
-        }
-      ],
+      "tasks": [],
       "dualPerspective": {
         "leftHeadline": "Achieving Peace with Honor",
         "leftText": "Nixon and Kissinger argued that the 1973 accords achieved 'Peace with Honor' by securing the return of US prisoners and guaranteeing South Vietnam a democratic choice.",
@@ -15245,23 +15585,83 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "8 marks",
+        "tariff": "Section B: Questions 3(b) & 3(c) (4 marks & 4 marks)",
+        "stimulus": [
+          {
+            "title": "Interpretation 1: From historian Chester Pach, 'The Real Media War on Vietnam', published in 1996",
+            "content": "\"The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer.\""
+          },
+          {
+            "title": "Interpretation 2: From historian Melvin Small, 'Antiwarriors: The Vietnam War and the Battle for America’s Hearts and Minds', published in 2002",
+            "content": "\"While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable.\""
+          },
+          {
+            "title": "Source B: From a television broadcast by CBS News anchor Walter Cronkite, 27 February 1968",
+            "content": "\"To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could.\"",
+            "provenance": "Broadcast to millions of American households by CBS Evening News anchor Walter Cronkite following his trip to Vietnam after Tet."
+          },
+          {
+            "title": "Source C: From an anti-draft flyer distributed by Students for a Democratic Society (SDS), October 1969",
+            "content": "\"Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins... Burn your draft cards! Strike against the war machine!\"",
+            "provenance": "Protest pamphlet produced and circulated by SDS on US university campuses prior to the October 1969 Moratorium."
+          }
+        ],
         "questions": [
           {
-            "tariff": "8 marks",
-            "type": "utility_8m",
-            "marks": 8,
-            "question": "3(a). Study Sources B and C. How useful are Sources B and C for an enquiry into the main reasons for the growth of opposition to the Vietnam War in the USA (1968–71)? [8 marks]",
-            "stimulus": [],
-            "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "Source B is useful for an enquiry into the anti-war movement because it reveals the profound moral revulsion triggered by revelations of US military war crimes like the My Lai Massacre (revealed late 1969). From my own knowledge, I know that investigative reporting by Seymour Hersh uncovered that Charlie Company under Lt William Calley had murdered over 500 unarmed South Vietnamese women, children, and elderly villagers. The provenance of Source B makes it particularly valuable because, as a contemporary investigative report, it illustrates how photographic evidence of civilian massacres destroyed the moral justification for American involvement in Vietnam.<br><br>Source C is useful because it highlights the role of television broadcasting and the heavy human cost of the draft in mobilizing mass middle-class resistance. From my own knowledge, I know that Vietnam was America's first 'television war', bringing daily colour footage of burning villages, body bags, and wounded teenagers into living rooms, while draft card burnings and the Vietnam Veterans Against the War (VVAW) showed that ordinary Americans were turning decisively against the conflict. The provenance of Source C adds strong historical value because it details the widespread, multiracial scale of the anti-war coalitions like the Moratorium marchers. Together, both sources provide high historical utility for analyzing the moral, media, and human causes of domestic anti-war sentiment.",
+            "tariff": "4 marks",
+            "type": "difference_4m",
+            "marks": 4,
+            "question": "Study Interpretations 1 and 2. They give different views about the main reason for the growth of opposition to the Vietnam War in the USA (1968–71). What is the main difference between these views? Explain your answer, using details from both interpretations.",
+            "prompt": "Explain the fundamental disagreement between the two interpretations, quoting details from both to support your answer.",
+            "model": "The main difference is that Interpretation 1 argues that television journalism and the visual exposure of combat horrors was the fundamental engine driving anti-war opposition, whereas Interpretation 2 argues that opposition was primarily catalyzed by the personal threat of the military draft system and escalating casualties.<br><br>Interpretation 1 emphasizes that Vietnam was a 'living-room war' where unedited color footage of napalmed children and Cronkite’s broadcast 'shattered the government’s credibility', making it morally impossible for middle America to support the conflict. In contrast, Interpretation 2 asserts that the 'primary catalyst' was the 'visceral fear of the draft' and rising death toll of over 50,000 soldiers, which mobilized student groups like SDS to burn draft cards and stage massive national moratoriums.",
             "scaffolding": {
-              "acronym": "Source Utility Framework",
-              "acronym_title": "Comparative Source Utility (Content, Knowledge, Provenance)",
-              "sentence_starters": [
-                "Source B is useful because...",
-                "Source C is useful because...",
-                "Combined, both sources provide..."
+              "acronym": "Difference + Quotes Formula (AO4)",
+              "acronym_title": "Historiographical Comparison [4 Marks • 6 Mins]",
+              "steps": [
+                {
+                  "letter": "D",
+                  "name": "1. Main Difference",
+                  "prompt": "State the fundamental disagreement: television coverage and moral shock vs the personal threat of the military draft and casualties."
+                },
+                {
+                  "letter": "I1",
+                  "name": "2. Detail from Interp 1",
+                  "prompt": "Quote and explain Pach on television journalism, living-room war, and Walter Cronkite."
+                },
+                {
+                  "letter": "I2",
+                  "name": "3. Detail from Interp 2",
+                  "prompt": "Quote and explain Small on the military draft system, 50,000 casualties, and SDS campus rebellions."
+                }
+              ]
+            }
+          },
+          {
+            "tariff": "4 marks",
+            "type": "reason_4m",
+            "marks": 4,
+            "question": "Suggest one reason why Interpretations 1 and 2 give different views about the main reason for the growth of opposition to the Vietnam War in the USA (1968–71). You may use Sources B and C to help explain your answer.",
+            "prompt": "Explain why the historians reached contrasting conclusions by analysing how they investigated different types of primary evidence.",
+            "model": "The historians give different views because they have investigated different types of primary evidence. The author of Interpretation 1 has focused on mainstream broadcast journalism such as Walter Cronkite's CBS commentary in Source B, which exposed the government's credibility gap and turned middle-class television viewers against the war. In contrast, the author of Interpretation 2 has drawn upon student activist literature and draft-resistance records such as Source C, emphasizing the anger of student draftees against unfair class deferments, rising body counts in aluminum coffins, and the organizational power of campus strikes.",
+            "scaffolding": {
+              "acronym": "Reason for Difference Formula (AO4)",
+              "acronym_title": "Why Historians Disagree [4 Marks • 6 Mins]",
+              "steps": [
+                {
+                  "letter": "R",
+                  "name": "1. Root Reason",
+                  "prompt": "State clearly that the historians examined different sources: mainstream television archives vs student anti-draft protest records."
+                },
+                {
+                  "letter": "SB",
+                  "name": "2. Evidence for Interp 1",
+                  "prompt": "Show how Source B (Cronkite broadcast, government credibility gap) supports the media focus of Interpretation 1."
+                },
+                {
+                  "letter": "SC",
+                  "name": "3. Evidence for Interp 2",
+                  "prompt": "Show how Source C (SDS anti-draft flyer, aluminum coffins) supports the conscription focus of Interpretation 2."
+                }
               ]
             }
           }
@@ -15283,43 +15683,43 @@ export default {
       "specification_anchor": "Reactions to, and the end of, US involvement in the Vietnam War, 1964–75: peace negotiations and withdrawal; the widening of the war into Cambodia and Laos, Kissinger's secret diplomacy, the 1973 Paris Peace Accords, US military exit, and the Fall of Saigon (1975).",
       "flashcards": [
         {
-          "term": "Guerrilla Warfare Tactics",
-          "definition": "Irregular military tactics used by the Vietcong, including hit-and-run ambushes, camouflage, booby traps (punji stakes, bouncing bettys), and vanishing into local populations.",
-          "q": "What tactics did the Vietcong use against technologically superior US forces?",
-          "a": "Guerrilla tactics: ambushes, booby traps, close-quarters combat ('hanging onto the belts'), and fading into the local population."
+          "term": "Henry Kissinger's Secret Diplomacy",
+          "definition": "Covert negotiations conducted in Paris by Nixon's National Security Advisor with North Vietnamese diplomat Le Duc Tho to secure a US military withdrawal.",
+          "q": "How did Henry Kissinger negotiate the American exit from Vietnam?",
+          "a": "Through clandestine meetings in Paris with North Vietnamese negotiator Le Duc Tho, agreeing to a 'decent interval' before Saigon fell."
         },
         {
-          "term": "Cu Chi Tunnels",
-          "definition": "An elaborate, multi-level 250-kilometre underground tunnel network containing barracks, hospitals, workshops, and command centers that protected Vietcong fighters from bombing.",
-          "q": "What was the purpose of the Cu Chi tunnel network?",
-          "a": "To shelter Vietcong fighters from US air strikes and artillery, store supplies, and launch surprise attacks on US bases."
+          "term": "Operation Linebacker II ('Christmas Bombing', 1972)",
+          "definition": "Fierce eleven-day B-52 carpet bombing of Hanoi and Haiphong in December 1972 ordered by Nixon to force North Vietnam back to the negotiating table.",
+          "q": "What was the purpose of the 1972 Christmas Bombing?",
+          "a": "To compel Hanoi to sign the Paris Accords and convince South Vietnamese President Thieu that the US would defend Saigon if North Vietnam violated the treaty."
         },
         {
-          "term": "Ho Chi Minh Trail",
-          "definition": "A 16,000-kilometre network of jungle paths, roads, and waterways running through neutral Laos and Cambodia used to funnel troops and supplies from North to South Vietnam.",
-          "q": "Why could the US military not cut off the Ho Chi Minh Trail?",
-          "a": "It passed through neutral Laos and Cambodia, was sheltered by thick jungle canopy, and was constantly repaired by 300,000 workers."
+          "term": "Paris Peace Accords (27 January 1973)",
+          "definition": "Formally signed treaty ending direct US military involvement: complete withdrawal of all US combat troops, release of all American POWs, but allowing 150,000 NVA troops to remain in South Vietnam.",
+          "q": "What were the key terms of the January 1973 Paris Peace Accords?",
+          "a": "All US combat forces withdrew within 60 days, US POWs were returned, but North Vietnamese troops were permitted to stay in South Vietnam."
         },
         {
-          "term": "Search and Destroy Missions ('Zippo Raids')",
-          "definition": "US ground combat operations where helicopters inserted troops to locate enemy forces, destroy supply caches, and burn suspected Vietcong villages to the ground.",
-          "q": "What were US 'Search and Destroy' missions?",
-          "a": "Missions to track down enemy fighters, kill them, and burn down sympathiser villages to deny the Vietcong food and shelter."
+          "term": "Operation Homecoming (1973)",
+          "definition": "The repatriation of 591 American prisoners of war (including John McCain) held in North Vietnamese captivity, welcomed home as national heroes.",
+          "q": "What was Operation Homecoming in early 1973?",
+          "a": "The formal release and return of nearly 600 American POWs held in Hanoi prisons following the signing of the Paris Peace Accords."
         },
         {
-          "term": "Agent Orange (Operation Ranch Hand)",
-          "definition": "A toxic chemical defoliant containing dioxin sprayed over millions of acres of Vietnamese jungle to strip forest cover and destroy crops, causing severe birth defects and cancers.",
-          "q": "What was Agent Orange and why was it used?",
-          "a": "A toxic chemical herbicide sprayed over jungles to destroy foliage concealing the enemy and eradicate food crops."
+          "term": "The Ho Chi Minh Campaign (1975)",
+          "definition": "The final massive conventional blitzkrieg launched by the North Vietnamese Army in spring 1975 under General Van Tien Dung, sweeping through South Vietnam in 55 days.",
+          "q": "Why did South Vietnam collapse so rapidly in spring 1975?",
+          "a": "The ARVN suffered from corruption and fuel shortages, while the US Congress refused to authorize military aid or B-52 air strikes to defend them."
         },
         {
-          "term": "Napalm",
-          "definition": "A jellied petroleum incendiary weapon dropped in canisters that adhered to human skin and burned at 1,000°C, causing devastating and fatal burn injuries.",
-          "q": "What was napalm and why was it feared?",
-          "a": "A sticky gasoline-based jelly weapon that burned through skin and clothing, incinerating jungle foliage and human targets."
+          "term": "Operation Frequent Wind & The Fall of Saigon (30 April 1975)",
+          "definition": "The dramatic emergency helicopter evacuation of over 7,000 Americans and South Vietnamese allies as North Vietnamese tanks smashed through the gates of the Independence Palace.",
+          "q": "What happened in Saigon on 30 April 1975?",
+          "a": "Communist tanks crashed through the gates of the Presidential Palace, Saigon surrendered unconditionally, and Vietnam was reunited under communist rule."
         }
       ],
-      "vocab_cloze_text": "In the dense tropical jungles of Vietnam, US troops struggled against an elusive enemy that avoided pitched conventional battles in favor of deadly booby traps and surprise ambushes. Vietcong guerrillas took refuge in the multi-tiered [Cu Chi Tunnels], an underground labyrinth containing command bunkers, hospitals, and weapons caches immune to conventional bombing. The lifeblood of the southern insurgency was the [Ho Chi Minh Trail], a 16,000-kilometer network of camouflaged roads and paths through neutral Laos and Cambodia that funneled continuous supplies and North Vietnamese army regulars into the South. To expose the concealed trail and jungle hideouts, the US Air Force dumped 19 million gallons of [Agent Orange], a toxic defoliant that poisoned waterways, devastated agriculture, and caused severe birth defects. US aircraft also dropped [Napalm], a gelatinous petroleum incendiary that adhered to skin and burned at 1,000 degrees Celsius, incinerating entire forest clearings. On the ground, American infantries were tasked with grueling [Search and Destroy] missions, flying into isolated hamlets in helicopters to eradicate hidden guerrilla caches and torch sympathizer huts with Zippo lighters, generating widespread peasant resentment.",
+      "vocab_cloze_text": "Seeking an exit that preserved American credibility, National Security Advisor [Henry Kissinger] engaged in secret talks in Paris with North Vietnamese diplomat Le Duc Tho. When negotiations stalled in late 1972, Nixon unleashed [Operation Linebacker II], an unprecedented eleven-day B-52 bombing blitz on Hanoi to force concessions. On 27 January 1973, all parties formally signed the [Paris Peace Accords], requiring the total withdrawal of all American combat forces within 60 days, while fatally permitting over 150,000 North Vietnamese troops to remain in the South. In early 1973, the emotional release of nearly 600 American prisoners of war took place under [Operation Homecoming]. Deprived of American air support and crippled by corruption, the South Vietnamese military collapsed catastrophically in spring 1975 under the communist [Ho Chi Minh Campaign]. In late April 1975, the United States conducted [Operation Frequent Wind], evacuating thousands by helicopter from rooftops as North Vietnamese tanks crashed through the gates of the Independence Palace, concluding 30 years of war.",
       "causal_domino_spine": {
         "title": "Paris Peace Accords, Christmas Bombings & Exit: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -15474,9 +15874,9 @@ export default {
           "type": "military_dispatch",
           "title": "Source D: From General Van Tien Dung's Official Account of the Final Communist 'Ho Chi Minh Campaign' on Saigon (April 1975)",
           "date": "April 1975",
-          "image": "/units/usa/assets/sources/portraits/creighton_abrams.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/creighton_abrams.jpg",
-          "attribution": "General Van Tien Dung, 'Our Great Spring Victory', Foreign Languages Publishing House, Hanoi (1977)",
+          "image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+          "image_url": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+          "attribution": "General Van Tien Dung, Our Great Spring Victory (Hanoi, 1976; translated 1977)",
           "question_badge": "Reliability & Provenance",
           "question": "How does General Dung's perspective as commander of the North Vietnamese offensive affect the historical value of Source D?",
           "model_answer": "General Dung’s account provides indispensable insight into the sudden collapse of South Vietnam. While written from a triumphant communist perspective, his analysis correctly identifies that the crippling of the ARVN was psychological and logistical: weakened by corruption, running out of fuel and ammunition, and paralyzed by the realization that American B-52s would not return.",
@@ -15491,8 +15891,10 @@ export default {
           },
           "hinge_question": "Why did South Vietnamese military resistance collapse in only 55 days in 1975 when military analysts predicted it would last at least two years?",
           "source_context": "General Van Tien Dung, 'Our Great Spring Victory', Foreign Languages Publishing House, Hanoi (1977). General Van Tien Dung, Chief of the General Staff of the Vietnam People's Army for Military historians and the reunited population of Vietnam with the objective: To record the military planning and execution of the final 55-day offensive that captured Saigon.. **Hinge Question:** Why did South Vietnamese military resistance collapse in only 55 days in 1975 when military analysts predicted it would last at least two years?",
-          "src": "/units/usa/assets/sources/portraits/creighton_abrams.jpg",
-          "source": "/units/usa/assets/sources/portraits/creighton_abrams.jpg"
+          "src": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+          "source": "/units/usa/assets/sources/portraits/creighton_abrams.jpg",
+          "caption": "Civilians scramble up a rooftop ladder to board an Air America helicopter in Saigon on 29 April 1975 as communist forces led by General Van Tien Dung surround the capital.",
+          "text": "The puppet troops fled in complete panic, abandoning their heavy tanks, howitzers, and aircraft at Da Nang and Cam Ranh Bay. Our revolutionary tanks smashed directly through the iron gates of the Independence Palace in Saigon at 11:30 a.m. on 30 April. The red-and-blue flag with the gold star was hoisted over the presidential palace. General Duong Van Minh surrendered unconditionally. Thirty years of liberation struggle had achieved glorious, total victory."
         },
         {
           "id": "usa_lesson_4_3_e",
@@ -15500,9 +15902,9 @@ export default {
           "type": "speech_transcript",
           "title": "Source E: President Gerald R. Ford's Address at Tulane University Declaring the Vietnam War 'Finished' (23 April 1975)",
           "date": "23 April 1975",
-          "image": "/units/usa/assets/sources/portraits/ford.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/ford.jpg",
-          "attribution": "Gerald R. Ford Presidential Library and Museum, Ann Arbor, Michigan",
+          "image": "/units/usa/assets/sources/ch53_frequent_wind_saigon_1975.jpg",
+          "image_url": "/units/usa/assets/sources/ch53_frequent_wind_saigon_1975.jpg",
+          "attribution": "President Gerald R. Ford, Address at a Tulane University Convocation, New Orleans (23 April 1975)",
           "question_badge": "Cross-Referencing",
           "question": "How does President Ford's address in Source E confirm the total abandonment of the South Vietnamese government by Washington?",
           "model_answer": "Source E confirms that the United States would not intervene to prevent the fall of Saigon. With communist tanks only miles from the presidential palace, Ford declared that the war 'is finished as far as America is concerned,' acknowledging that Congress had decisively refused his requests for emergency military aid and that the era of American intervention in Vietnam was over.",
@@ -15517,8 +15919,10 @@ export default {
           },
           "hinge_question": "How did the War Powers Act of 1973 and the Watergate scandal prevent President Ford from using air power to save South Vietnam in 1975?",
           "source_context": "Gerald R. Ford Presidential Library and Museum, Ann Arbor, Michigan. President Gerald R. Ford for Faculty and students at Tulane University and the national broadcast audience with the objective: To prepare the American public psychologically for the imminent fall of Saigon and signal a turn toward the future.. **Hinge Question:** How did the War Powers Act of 1973 and the Watergate scandal prevent President Ford from using air power to save South Vietnam in 1975?",
-          "src": "/units/usa/assets/sources/portraits/ford.jpg",
-          "source": "/units/usa/assets/sources/portraits/ford.jpg"
+          "src": "/units/usa/assets/sources/ch53_frequent_wind_saigon_1975.jpg",
+          "source": "/units/usa/assets/sources/portraits/ford.jpg",
+          "caption": "A US Marine guards the perimeter at Tan Son Nhut Air Base during Operation Frequent Wind, the final evacuation of Saigon in late April 1975.",
+          "text": "Today, America can again feel the pride that existed in New Orleans that day 160 years ago. But it is not a pride that will be achieved by fighting again a war that is finished as far as America is concerned. I believe it is time for us to look forward to the future, to direct our energies and our resources towards the great goals of which we are capable, and to restore the confidence of the American people in their own destiny."
         }
       ],
       "video": [
@@ -16216,15 +16620,15 @@ export default {
       ],
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
-        "tariff": "16 marks (+4 SPaG)",
+        "tariff": "Section B: Question 3(d) (16 marks (+4 SPaG))",
         "stimulus": [
           {
-            "title": "Interpretation 1: From a military history of the Vietnam War by an American historian, published in 2009.",
-            "content": "The fundamental reason for American defeat lay in the failure of US military doctrine on the battlefield. General Westmoreland's reliance on conventional firepower, heavy artillery, and massive aerial bombardment was entirely ineffective against an elusive guerrilla enemy operating in dense jungle and extensive tunnel networks. The tactical strategy of 'search and destroy' alienated the rural South Vietnamese population through widespread civilian devastation. Compounding this, the one-year tour of duty and the conscription draft created an army plagued by inexperience, low morale, indiscipline, and widespread drug abuse. The military apparatus was simply fighting the wrong war with the wrong methods."
+            "title": "Interpretation 1: From a military history of the Vietnam War, published in 2011",
+            "content": "\"The fundamental cause of American defeat in Vietnam lay on the battlefield: the United States military attempted to wage a conventional war of firepower and attrition in an environment completely unsuited to it. General Westmoreland’s 'search and destroy' operations and reliance on body counts could never overcome the tactical adaptability and deep ideological motivation of the Vietcong and North Vietnamese Army. Communist forces exploited the dense jungle terrain, constructed impervious underground tunnel complexes, and absorbed horrific casualties without breaking. America's reliance on massive bombing and defoliation simply alienated the rural population, ensuring that US forces could never establish permanent control over South Vietnam.\""
           },
           {
-            "title": "Interpretation 2: From a political study of the collapse of South Vietnam, published in 2016.",
-            "content": "The United States was not defeated on the battlefield, but by the collapse of domestic political will and the profound illegitimacy of the Saigon government. Televised coverage of civilian suffering and student protests on university campuses destroyed the national consensus for war, making it politically unsustainable for Washington to maintain troop commitments. At the same time, President Nguyen Van Thieu's South Vietnamese regime was hopelessly corrupt, undemocratic, and disconnected from its own peasantry. When the US withdrew its armed forces following the 1973 Paris Peace Accords, the ARVN lacked the moral cohesion or public support needed to defend South Vietnam independently."
+            "title": "Interpretation 2: From a political study of the conflict and American foreign policy, published in 2015",
+            "content": "\"The United States lost the Vietnam War not in the jungles of Southeast Asia, but in the corridors of Washington and on the streets of America. US forces never lost a major tactical battle throughout the entire conflict. Defeat occurred because the American political leadership failed to sustain domestic support for a protracted war. A hostile media, surging anti-war demonstrations, and the draft caused public opinion to collapse. Once Congress slashed military funding and passed the War Powers Act in 1973, it became impossible for President Nixon or Ford to uphold their commitments to Saigon. When North Vietnam launched its final invasion in 1975, South Vietnam collapsed because its American lifeline had been severed by political exhaustion.\""
           }
         ],
         "questions": [
@@ -16232,26 +16636,28 @@ export default {
             "tariff": "16 marks (+4 SPaG)",
             "type": "verdict_16m",
             "marks": 16,
-            "question": "3(d). How far do you agree with Interpretation 2 about the main reasons why the United States failed to defeat communist forces in Vietnam? [16 marks + 4 SPaG]",
-            "stimulus": [
-              {
-                "title": "Interpretation 1: From a military history of the Vietnam War by an American historian, published in 2009.",
-                "content": "The fundamental reason for American defeat lay in the failure of US military doctrine on the battlefield. General Westmoreland's reliance on conventional firepower, heavy artillery, and massive aerial bombardment was entirely ineffective against an elusive guerrilla enemy operating in dense jungle and extensive tunnel networks. The tactical strategy of 'search and destroy' alienated the rural South Vietnamese population through widespread civilian devastation. Compounding this, the one-year tour of duty and the conscription draft created an army plagued by inexperience, low morale, indiscipline, and widespread drug abuse. The military apparatus was simply fighting the wrong war with the wrong methods."
-              },
-              {
-                "title": "Interpretation 2: From a political study of the collapse of South Vietnam, published in 2016.",
-                "content": "The United States was not defeated on the battlefield, but by the collapse of domestic political will and the profound illegitimacy of the Saigon government. Televised coverage of civilian suffering and student protests on university campuses destroyed the national consensus for war, making it politically unsustainable for Washington to maintain troop commitments. At the same time, President Nguyen Van Thieu's South Vietnamese regime was hopelessly corrupt, undemocratic, and disconnected from its own peasantry. When the US withdrew its armed forces following the 1973 Paris Peace Accords, the ARVN lacked the moral cohesion or public support needed to defend South Vietnam independently."
-              }
-            ],
+            "question": "How far do you agree with Interpretation 2 about the main reasons why the United States failed to achieve its objectives in Vietnam? Explain your answer, using both interpretations and your knowledge of the historical context.",
             "prompt": "Use the structure strip and historical guidance below to structure your response.",
-            "model": "On the one hand, Interpretation 1 argues that the United States lost the war primarily because of military and strategic failures on the battlefield. The US relied on inappropriate conventional tactics—such as heavy artillery, carpet-bombing, and Search and Destroy missions—that were completely unsuited to fighting an elusive guerrilla enemy in dense jungle terrain. Furthermore, the conscription draft system produced low morale, drug abuse, and 'fragging' among inexperienced one-year draftees, while widespread civilian destruction thoroughly alienated the South Vietnamese population.<br><br>On the other hand, Interpretation 2 forcefully argues that the US defeat was decided by the political loss of will on the domestic home front and the collapse of the corrupt, unpopular South Vietnamese regime. The growing anti-war movement, intense media scrutiny, and revelations like the Pentagon Papers made it impossible for US presidents to sustain indefinite military commitments. Simultaneously, the South Vietnamese government under Thieu was plagued by rampant corruption and lacked genuine popular legitimacy, meaning the ARVN collapsed rapidly once US air support and funding were terminated following the 1973 Paris Peace Accords.<br><br>Furthermore, contextual historical analysis confirms that the extraordinary ideological resilience and external superpower support (Soviet and Chinese weaponry) provided to the North Vietnamese allowed Ho Chi Minh's forces to sustain astronomical casualties and outlast American resolve.<br><br>In conclusion, having evaluated both interpretations against the historical evidence, I agree with Interpretation 2 to a large extent. While US tactical military methods were deeply flawed, military technology alone could never compensate for the absence of political legitimacy in Saigon and the total collapse of public and congressional support in Washington, making an American defeat inevitable.",
+            "model": "On the one hand, Interpretation 2 presents a persuasive argument that political collapse at home was the decisive cause of American failure. American forces never lost a single major tactical engagement during the war; from the Ia Drang Valley (1965) to the Tet Offensive (1968), superior American firepower consistently prevailed on the battlefield. Defeat was ultimately political: the conflict became unsustainable because the American public, demoralized by television footage of body counts and atrocities like My Lai, withdrew its consent. Following the 1973 Paris Peace Accords and the withdrawal of US troops, the Watergate scandal critically weakened the presidency, prompting Congress to pass the War Powers Act (1973) and drastically cut military and financial aid to South Vietnam. Consequently, when North Vietnam launched its conventional Spring Offensive in 1975, President Gerald Ford was legally and politically powerless to intervene, leading to the rapid fall of Saigon in April 1975.<br><br>On the other hand, Interpretation 1 provides an equally essential counter-argument by demonstrating that military tactics in Vietnam were fundamentally flawed from the outset. American command mistakenly believed that overwhelming industrial firepower—dropping over 7 million tons of bombs and spraying 20 million gallons of Agent Orange—could break an adversary fighting an anti-colonial war for national reunification. General Westmoreland’s strategy of search-and-destroy, measured purely by body counts, was completely ineffective against guerrilla fighters who used the Ho Chi Minh Trail and subterranean tunnels in Cu Chi to dictate when and where they fought. Crucially, the destruction of civilian villages and high collateral casualties completely alienated the South Vietnamese peasantry, whose political loyalty was vital for counter-insurgency victory.<br><br>Furthermore, contextual analysis reveals that the Saigon government (led by Ngo Dinh Diem, Nguyen Cao Ky, and Nguyen Van Thieu) was viewed by the majority of ordinary Vietnamese citizens as a corrupt, undemocratic, and illegitimate puppet of the United States. Without popular domestic legitimacy, the South Vietnamese ARVN could never maintain civilian support or resist northern unification, regardless of US military supplies.<br><br>In conclusion, having evaluated both interpretations, I agree with Interpretation 2 only to a moderate extent. While the domestic collapse of political will and Congressional defunding dictated the timing and manner of American withdrawal, that political collapse was itself the direct consequence of the military quagmire highlighted in Interpretation 1. Because the US military could not defeat a resilient guerrilla insurgency in the jungle, the war dragged on indefinitely until American democracy could no longer bear the moral, human, and economic cost.",
             "scaffolding": {
-              "acronym": "Evaluative Verdict Framework",
-              "acronym_title": "Balanced Evaluative Essay (3 Themes + Judgement)",
-              "sentence_starters": [
-                "On the one hand, Interpretation 1 argues that...",
-                "On the other hand, Interpretation 2 points out that...",
-                "In conclusion, having evaluated both views..."
+              "acronym": "Interpretation Verdict Framework (AO4)",
+              "acronym_title": "Section B: Question 3(d) • Evaluative Assessment [16 Marks + 4 SPaG • 25 Mins]",
+              "steps": [
+                {
+                  "letter": "INTERP 2",
+                  "name": "1. Support Interpretation 2 (Domestic Political Collapse & Aid Cut)",
+                  "prompt": "Deploy evidence of anti-war protests, media impact, Watergate, the 1973 War Powers Act, and Congressional aid cuts."
+                },
+                {
+                  "letter": "INTERP 1",
+                  "name": "2. Support Interpretation 1 (Flawed Military Tactics & Guerrilla Resilience)",
+                  "prompt": "Deploy evidence of search-and-destroy failure, Cu Chi tunnels, Ho Chi Minh trail logistics, and Agent Orange alienating peasants."
+                },
+                {
+                  "letter": "VERDICT",
+                  "name": "3. Sustained Historical Conclusion",
+                  "prompt": "Synthesize both arguments alongside the corruption of the Saigon regime to reach a nuanced historical judgement."
+                }
               ]
             }
           }
@@ -16282,43 +16688,43 @@ export default {
       "specification_anchor": "Reactions to, and the end of, US involvement in the Vietnam War, 1964–75: reasons for US failure; military, geographical, cultural, and political factors explaining why the United States failed to prevent communist victory in Vietnam.",
       "flashcards": [
         {
-          "term": "Tet Offensive (January 1968)",
-          "definition": "A massive, simultaneous surprise offensive launched by 84,000 Vietcong and NVA troops striking over 100 cities, towns, and the US Embassy during the lunar new year holiday.",
-          "q": "What was the Tet Offensive (1968) and why was it a turning point?",
-          "a": "A massive communist surprise assault across South Vietnam that shocked the American public and proved the war was unwinnable."
+          "term": "Asymmetric Warfare and Military Doctrine",
+          "definition": "The fundamental mismatch between American reliance on high-tech industrial firepower and the Vietcong's low-tech guerrilla attrition warfare.",
+          "q": "Why did American conventional firepower fail against the Vietcong?",
+          "a": "Heavy artillery and air strikes could destroy terrain but could not defeat an unseen guerrilla force that blended with the civilian population."
         },
         {
-          "term": "Credibility Gap & Walter Cronkite",
-          "definition": "The chasm between upbeat official US government claims and the grim reality on television; broadcaster Walter Cronkite declared the war was mired in an unwinnable stalemate.",
-          "q": "What was the 'credibility gap' exposed by the Tet Offensive?",
-          "a": "The difference between government promises of impending victory and television images showing intense combat at the US Embassy."
+          "term": "Failure to Win 'Hearts and Minds'",
+          "definition": "The fatal alienation of the South Vietnamese peasantry caused by civilian bombing casualties, napalm burns, Agent Orange poisoning, and the burning of villages during search-and-destroy missions.",
+          "q": "Why did the US campaign to win 'hearts and minds' fail?",
+          "a": "Brutal tactics like napalm, defoliation, and Zippo raids turned ordinary rural peasants against the US and made them willing allies of the Vietcong."
         },
         {
-          "term": "My Lai Massacre (March 1968)",
-          "definition": "The massacre of 504 unarmed Vietnamese women, children, and elderly civilians by Charlie Company soldiers under Lieutenant William Calley, covered up for over a year.",
-          "q": "What happened at My Lai in March 1968?",
-          "a": "US soldiers under Lt. Calley slaughtered over 500 unarmed Vietnamese villagers, horrifying the public when exposed in late 1969."
+          "term": "Corruption and Illegitimacy of the Saigon Regime",
+          "definition": "The chronic political instability, military incompetence, and widespread corruption of South Vietnam's military dictatorships (Diem, Ky, Thieu), which never gained popular legitimacy.",
+          "q": "Why was the South Vietnamese government (ARVN) an ineffective ally?",
+          "a": "Its leaders were perceived as corrupt American puppets who pocketed US aid, while conscripted soldiers suffered from low morale and astronomical desertion rates."
         },
         {
-          "term": "Nixon's 'Vietnamization'",
-          "definition": "President Richard Nixon's policy announced in 1969 to gradually withdraw US ground troops and train and equip South Vietnamese forces (ARVN) to fight their own war.",
-          "q": "What was Nixon's policy of 'Vietnamization'?",
-          "a": "Gradually pulling US ground troops out of Vietnam while building up the South Vietnamese army to take over full combat responsibility."
+          "term": "Domestic Political Collapse & The Credibility Gap",
+          "definition": "The erosion of American home front support caused by uncensored television coverage, draft protests, the My Lai scandal, and the Watergate crisis.",
+          "q": "How did domestic politics contribute to the US defeat in Vietnam?",
+          "a": "Relentless anti-war opposition and deception scandals forced Congress to cut funding and eventually ban further military intervention in Southeast Asia."
         },
         {
-          "term": "Kent State Shootings (May 1970)",
-          "definition": "The killing of four unarmed university students and wounding of nine by the Ohio National Guard during campus protests against Nixon's invasion of Cambodia.",
-          "q": "What occurred at Kent State University in May 1970?",
-          "a": "Ohio National Guardsmen fired 67 rounds into student anti-war protesters, killing four students and triggering a national student strike."
+          "term": "Soviet and Chinese Military Aid",
+          "definition": "The billions of dollars in modern surface-to-air missiles (SAMs), radar, tanks, AK-47s, and logistics personnel provided to North Vietnam by the USSR and China.",
+          "q": "What role did the Soviet Union and China play in the communist victory?",
+          "a": "They supplied North Vietnam with advanced anti-aircraft missiles, heavy artillery, and economic aid, enabling Hanoi to withstand US air attacks."
         },
         {
-          "term": "Paris Peace Accords (1973) & Fall of Saigon (1975)",
-          "definition": "The treaty signed in January 1973 withdrawing all US forces; in April 1975, North Vietnamese tanks broke through the presidential palace gates in Saigon, reunifying Vietnam.",
-          "q": "How did the Vietnam War end in 1975?",
-          "a": "After US troops withdrew in 1973, North Vietnamese forces launched a final offensive capturing Saigon on 30 April 1975."
+          "term": "War Powers Act of 1973 (Public Law 93-148)",
+          "definition": "Landmark federal law passed over Nixon's veto requiring the President to consult Congress before committing US forces abroad and limiting deployments to 60 days without authorization.",
+          "q": "What was the significance of the 1973 War Powers Resolution?",
+          "a": "It revoked the imperial presidency and prevented future presidents from waging undeclared wars without explicit congressional approval."
         }
       ],
-      "vocab_cloze_text": "In the early morning hours of 31 January 1968, communist forces detonated the decisive turning point of the war with the massive [Tet Offensive], simultaneously attacking over 100 South Vietnamese towns, military bases, and even breaching the US Embassy compound in Saigon. Although the offensive was a catastrophic tactical defeat for the Vietcong—costing them roughly 40,000 veteran fighters—it shattered American home front morale by exposing an enormous [Credibility Gap] between official claims of impending victory and the gritty televised combat. Public horror deepened in late 1969 when investigative journalists revealed the [My Lai Massacre], in which US troops under Lieutenant William Calley had murdered over 500 unarmed women, infants, and old men in cold blood. To disengage from the quagmire, newly elected President Nixon introduced [Vietnamization], withdrawing over 500,000 American ground soldiers while vastly expanding secret bombing campaigns into neutral Cambodia. Following the 1973 Paris Peace Accords, American combat forces withdrew; two years later, without US air support, South Vietnam collapsed during the [Fall of Saigon] on 30 April 1975 as communist tanks crashed through the gates of the Presidential Palace.",
+      "vocab_cloze_text": "The ultimate defeat of the United States in Vietnam resulted from interconnected military, political, and cultural factors. Militarily, the Pentagon's conventional doctrine failed against the enemy's masterclass in [Asymmetric Warfare], where hidden tunnel networks and camouflage neutralized multi-billion-dollar technology. Politically, the US completely failed in its mission to [Win Hearts and Minds], as chemical defoliation and search-and-destroy missions alienated the very peasantry the US sought to defend. Furthermore, the South Vietnamese regime suffered from chronic [Saigon Regime Corruption], with generals pocketing American aid while conscripts deserted in massive numbers. On the domestic home front, an unbridgeable [Domestic Political Collapse] erupted as television broadcasts and scandals destroyed public trust, leading Congress to slash funding. Meanwhile, North Vietnam was bolstered by billions in advanced [Soviet and Chinese Aid], equipping their army with sophisticated anti-aircraft missiles. Determined to prevent future imperial presidencies, Congress enacted the historic [War Powers Act of 1973], permanently curtailing executive authority to wage undeclared foreign wars.",
       "causal_domino_spine": {
         "title": "The Fall of Saigon & Four Reasons for Defeat: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -16450,9 +16856,9 @@ export default {
           "type": "congressional_statute",
           "title": "Source C: Excerpt from the War Powers Resolution Passed by Congress Over President Nixon's Veto (7 November 1973)",
           "date": "7 November 1973",
-          "image": "/units/usa/assets/sources/portraits/nixon.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/nixon.jpg",
-          "attribution": "United States Statutes at Large, 87 Stat. 555, Public Law 93-148",
+          "image": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
+          "image_url": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
+          "attribution": "Public Law 93-148, 93rd United States Congress, 87 Stat. 555 (7 November 1973)",
           "question_badge": "Author's Purpose",
           "question": "What was the purpose of Congress in passing the War Powers Resolution over President Nixon's veto in Source C?",
           "model_answer": "The purpose was to reassert constitutional congressional authority over war-making and permanently terminate the 'imperial presidency' that had waged an undeclared war for a decade. The statute required the President to consult Congress before committing forces abroad and mandated troop withdrawal within 60 days unless Congress granted explicit approval.",
@@ -16467,8 +16873,10 @@ export default {
           },
           "hinge_question": "How did the War Powers Resolution reflect a profound loss of national trust in the federal government following the Vietnam War?",
           "source_context": "United States Statutes at Large, 87 Stat. 555, Public Law 93-148. The 93rd United States Congress, overriding Nixon's presidential veto by a two-thirds majority for The Executive Branch, the American public, and future commanders-in-chief with the objective: To prevent future presidents from entangling the United States in foreign wars through unilateral executive action.. **Hinge Question:** How did the War Powers Resolution reflect a profound loss of national trust in the federal government following the Vietnam War?",
-          "src": "/units/usa/assets/sources/portraits/nixon.jpg",
-          "source": "/units/usa/assets/sources/portraits/nixon.jpg"
+          "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
+          "source": "/units/usa/assets/sources/portraits/nixon.jpg",
+          "caption": "Facsimile of the opening section of the War Powers Resolution (Public Law 93-148), passed by Congress on 7 November 1973 to restrict presidential war-making power.",
+          "text": "Resolved by the Senate and House of Representatives of the United States of America in Congress assembled... Section 2(c). The constitutional powers of the President as Commander-in-Chief to introduce United States Armed Forces into hostilities are exercised only pursuant to (1) a declaration of war, (2) specific statutory authorization, or (3) a national emergency created by attack upon the United States... Section 5(b). Within sixty calendar days after a report is submitted, the President shall terminate any use of United States Armed Forces unless Congress has declared war or enacted a specific authorization."
         },
         {
           "id": "usa_lesson_4_4_e",
@@ -16502,9 +16910,9 @@ export default {
           "type": "historian_analysis",
           "title": "Source E: From an Analysis by Military Historian George C. Herring in 'America's Longest War' (1979)",
           "date": "1979",
-          "image": "/units/usa/assets/sources/portraits/westmoreland.jpg",
-          "image_url": "/units/usa/assets/sources/portraits/westmoreland.jpg",
-          "attribution": "George C. Herring, 'America's Longest War: The United States and Vietnam, 1950–1975', Temple University Press",
+          "image": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
+          "image_url": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
+          "attribution": "George C. Herring, America's Longest War: The United States and Vietnam, 1950–1975 (1979)",
           "question_badge": "Reliability & Provenance",
           "question": "How does Professor Herring’s academic evaluation in Source E synthesize the military and political causes of American defeat?",
           "model_answer": "Herring provides a balanced, scholarly synthesis that avoids simple scapegoating. He argues that American defeat was caused by a fatal mismatch: the US relied on conventional industrial firepower to solve what was fundamentally a complex political struggle, while underestimating the revolutionary nationalism and tenacity of a Vietnamese adversary fighting on its own soil.",
@@ -16519,8 +16927,10 @@ export default {
           },
           "hinge_question": "Was American defeat primarily caused by military failures in Vietnam or political collapse at home?",
           "source_context": "George C. Herring, 'America's Longest War: The United States and Vietnam, 1950–1975', Temple University Press. Professor George C. Herring, leading diplomatic and military historian of the Vietnam War for University students, academic historians, and military strategists with the objective: To provide a rigorous, objective historical autopsy of the comprehensive failure of US intervention.. **Hinge Question:** Was American defeat primarily caused by military failures in Vietnam or political collapse at home?",
-          "src": "/units/usa/assets/sources/portraits/westmoreland.jpg",
-          "source": "/units/usa/assets/sources/portraits/westmoreland.jpg"
+          "src": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
+          "source": "/units/usa/assets/sources/portraits/westmoreland.jpg",
+          "caption": "US soldiers wading through swamp under thick canopy in the Mekong Delta (US Army Combat Art Program).",
+          "text": "The United States intervened in Vietnam to contain communist expansion, but it fundamentally misperceived the nature of the conflict. Washington viewed the struggle through the rigid ideological lens of the global Cold War, failing to recognize that Vietnamese communism was deeply rooted in a century-long, ferocious struggle for national independence against foreign colonial domination. By intervening to prop up an artificial, corrupt, and illegitimate client regime in Saigon, the United States embarked upon an unwinnable war in which no amount of modern industrial technology or high-explosive firepower could compensate for the lack of political legitimacy."
         }
       ],
       "video": [
