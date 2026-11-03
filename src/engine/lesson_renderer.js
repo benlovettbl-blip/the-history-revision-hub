@@ -6841,8 +6841,14 @@ export function renderLesson(lesson) {
             '10px',
           );
 
+          const visualEnquiryHtml = utilityCardHtml
+            ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 14px;">${utilityCardHtml}</div>`
+            : !hasUtilityCard && (primaryDisc.promptHtml || primaryDisc.panelHtml)
+              ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 14px;">${primaryDisc.promptHtml || ''}${primaryDisc.panelHtml || ''}</div>`
+              : '';
+
           sourceBodyHtml = `
-            <div class="archival-source-split-layout">
+            <div class="archival-source-split-layout" style="margin-bottom: ${visualEnquiryHtml ? '12px' : '0'};">
               ${mediaColHtml}
               <div class="archival-source-details-col" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
                 ${
@@ -6876,15 +6882,9 @@ export function renderLesson(lesson) {
                 `
                     : ''
                 }
-                ${
-                  utilityCardHtml
-                    ? `<div class="archival-source-inline-enquiry" style="width: 100%; margin-top: 6px;">${utilityCardHtml}</div>`
-                    : !hasUtilityCard
-                      ? `${primaryDisc.promptHtml || ''}${primaryDisc.panelHtml || ''}`
-                      : ''
-                }
               </div>
             </div>
+            ${visualEnquiryHtml}
           `;
         }
 
