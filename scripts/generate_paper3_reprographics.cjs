@@ -2,7 +2,7 @@
  * scripts/generate_paper3_reprographics.cjs
  *
  * Compiles GCSE Paper 3 Mock Exams (Weimar Option 31 and USA Option 33)
- * into official Pearson Edexcel Reprographic Standard:
+ * into authentic Pearson Edexcel Reprographic Standard:
  * 1. 16-Page Question & Answer Booklet (4 folded A3 sheets, saddle-stitched)
  * 2. 4-Page Sources/Interpretations Booklet (1 folded A3 sheet, loose insert)
  * 3. 20-Page Unified Collated Exam Pack (Pages 1–16 QP + Pages 17–20 Sources)
@@ -10,7 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const puppeteer = require('puppeteer');
+const puppeteer = require('C:/Projects/the-history-revision-hub/node_modules/puppeteer');
 const pdfParse = require('pdf-parse');
 
 const BASE_URL = 'http://localhost:3003';
@@ -156,6 +156,48 @@ function parsePaper3Html(filePath, unitId) {
   };
 }
 
+function generateBarcodeSvg(refText) {
+  return `
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
+      <svg width="220" height="28" viewBox="0 0 220 28" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="220" height="28" fill="#ffffff"/>
+        <rect x="5" y="0" width="3" height="28" fill="#000000"/>
+        <rect x="11" y="0" width="2" height="28" fill="#000000"/>
+        <rect x="18" y="0" width="4" height="23" fill="#000000"/>
+        <rect x="25" y="0" width="2" height="23" fill="#000000"/>
+        <rect x="31" y="0" width="5" height="23" fill="#000000"/>
+        <rect x="40" y="0" width="2" height="23" fill="#000000"/>
+        <rect x="46" y="0" width="3" height="23" fill="#000000"/>
+        <rect x="54" y="0" width="5" height="23" fill="#000000"/>
+        <rect x="63" y="0" width="2" height="23" fill="#000000"/>
+        <rect x="69" y="0" width="4" height="23" fill="#000000"/>
+        <rect x="78" y="0" width="2" height="23" fill="#000000"/>
+        <rect x="84" y="0" width="5" height="23" fill="#000000"/>
+        <rect x="94" y="0" width="3" height="23" fill="#000000"/>
+        <rect x="101" y="0" width="2" height="23" fill="#000000"/>
+        <rect x="108" y="0" width="4" height="23" fill="#000000"/>
+        <rect x="116" y="0" width="3" height="23" fill="#000000"/>
+        <rect x="124" y="0" width="5" height="23" fill="#000000"/>
+        <rect x="133" y="0" width="2" height="23" fill="#000000"/>
+        <rect x="139" y="0" width="4" height="23" fill="#000000"/>
+        <rect x="148" y="0" width="3" height="23" fill="#000000"/>
+        <rect x="155" y="0" width="2" height="23" fill="#000000"/>
+        <rect x="162" y="0" width="5" height="23" fill="#000000"/>
+        <rect x="171" y="0" width="3" height="23" fill="#000000"/>
+        <rect x="178" y="0" width="4" height="23" fill="#000000"/>
+        <rect x="186" y="0" width="2" height="23" fill="#000000"/>
+        <rect x="193" y="0" width="5" height="23" fill="#000000"/>
+        <rect x="202" y="0" width="2" height="23" fill="#000000"/>
+        <rect x="208" y="0" width="2" height="28" fill="#000000"/>
+        <rect x="213" y="0" width="3" height="28" fill="#000000"/>
+      </svg>
+      <div style="font-family: 'Courier New', monospace; font-size: 7.5pt; font-weight: bold; letter-spacing: 2px;">
+        ${refText}
+      </div>
+    </div>
+  `;
+}
+
 function renderRuledLines(count) {
   let lines = '';
   for (let i = 0; i < count; i++) {
@@ -164,791 +206,835 @@ function renderRuledLines(count) {
   return lines;
 }
 
-const COMMON_CSS = `
-  @page {
-    size: A4 portrait;
-    margin: 14mm 15mm 14mm 15mm;
+function buildPage(pageNumber, totalPages, contentHtml, isBlank = false, barcodeBase = 'P 7 5 5 0 2 A 0') {
+  const isTurnOver = pageNumber % 2 === 1 && pageNumber < totalPages;
+  const pStr = pageNumber < 10 ? '0' + pageNumber : '' + pageNumber;
+  const tStr = totalPages < 10 ? '0' + totalPages : '' + totalPages;
+  const barcodeRef = `${barcodeBase} ${pStr} ${tStr}`;
+  
+  if (isBlank) {
+    return `
+      <div class="page" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="corner-reg-mark"></div>
+        <div class="scanner-margin-zone">
+          <div class="scanner-text">DO NOT WRITE IN THIS AREA</div>
+          <div class="scanner-text">DO NOT WRITE IN THIS AREA</div>
+          <div class="scanner-text">DO NOT WRITE IN THIS AREA</div>
+        </div>
+        
+        <div style="margin: auto 0; text-align: center;">
+          <h2 style="font-size: 16pt; font-weight: 800; letter-spacing: 2px; color: #18181b; margin-bottom: 8px;">BLANK PAGE</h2>
+        </div>
+
+        <div class="pearson-page-footer">
+          <div class="pearson-page-num">${pageNumber}</div>
+          <div class="pearson-barcode-block">
+            ${generateBarcodeSvg(barcodeRef)}
+          </div>
+          <div class="pearson-footer-right">
+            <span class="reg-squares">&#9632; &#9632; &#9632;</span>
+          </div>
+        </div>
+      </div>
+    `;
   }
-  * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    background: #ffffff;
-    color: #000000;
-    font-size: 13px;
-    line-height: 1.35;
-  }
-  .page {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    page-break-after: always;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-  .page:last-child {
-    page-break-after: avoid;
-  }
-  .top-strip {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    border-bottom: 2px solid #000000;
-    padding-bottom: 8px;
-    margin-bottom: 12px;
-  }
-  .pearson-logo {
-    font-size: 18px;
-    font-weight: 900;
-    letter-spacing: -0.5px;
-  }
-  .exam-code {
-    font-size: 13px;
-    font-weight: bold;
-  }
-  .candidate-box {
-    border: 2px solid #000000;
-    padding: 10px 14px;
-    margin-bottom: 14px;
-    border-radius: 4px;
-  }
-  .candidate-row {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 8px;
-  }
-  .candidate-cell {
-    flex: 1;
-  }
-  .cell-label {
-    font-size: 11px;
-    margin-bottom: 3px;
-    font-weight: bold;
-  }
-  .cell-input {
-    border: 1px solid #000000;
-    height: 28px;
-    background: #ffffff;
-  }
-  .boxes-grid {
-    display: flex;
-    gap: 2px;
-  }
-  .single-box {
-    border: 1px solid #000000;
-    width: 24px;
-    height: 28px;
-  }
-  .paper-masthead {
-    border: 2px solid #000000;
-    padding: 12px 14px;
-    margin-bottom: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fafafa;
-  }
-  .masthead-title {
-    font-size: 16px;
-    font-weight: 900;
-  }
-  .masthead-sub {
-    font-size: 12px;
-    color: #333333;
-    margin-top: 2px;
-  }
-  .masthead-ref {
-    text-align: right;
-    font-weight: bold;
-    font-size: 13px;
-  }
-  .notice-box {
-    border: 1.5px solid #000000;
-    padding: 8px 12px;
-    margin-bottom: 14px;
-    background: #ffffff;
-    font-weight: bold;
-    font-size: 12px;
-  }
-  .instructions-section {
-    font-size: 11.5px;
-    line-height: 1.45;
-    color: #111827;
-    margin-bottom: 12px;
-  }
-  .instructions-section h4 {
-    margin: 6px 0 2px 0;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  .instructions-section ul {
-    margin: 0;
-    padding-left: 18px;
-  }
-  .page-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 11px;
-    font-weight: bold;
-    border-top: 1px solid #cccccc;
-    padding-top: 6px;
-    margin-top: auto;
-  }
-  .section-banner {
-    background: #000000;
-    color: #ffffff;
-    padding: 6px 10px;
-    font-weight: 900;
-    font-size: 13px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-  }
-  .question-prompt {
-    font-weight: bold;
-    font-size: 13.5px;
-    line-height: 1.4;
-    margin-bottom: 10px;
-  }
-  .source-container {
-    border: 1.5px solid #000000;
-    padding: 10px 14px;
-    background: #fdfdfd;
-    margin-bottom: 12px;
-  }
-  .source-label {
-    font-weight: 900;
-    font-size: 13px;
-    margin-bottom: 4px;
-  }
-  .source-text {
-    font-size: 12.5px;
-    line-height: 1.45;
-  }
-  .bullet-box {
-    border: 1px solid #777777;
-    padding: 8px 14px;
-    background: #f9f9f9;
-    margin: 8px 0 12px 0;
-    font-size: 12px;
-  }
-  .bullet-box ul {
-    margin: 4px 0 0 0;
-    padding-left: 20px;
-  }
-  .inference-row {
-    margin-bottom: 10px;
-  }
-  .inference-title {
-    font-weight: bold;
-    font-size: 12px;
-    margin-bottom: 4px;
-  }
-  .ruled-line {
-    height: 25px;
-    border-bottom: 1px dotted #888888;
-  }
-  .total-marks-tag {
-    font-weight: bold;
-    text-align: right;
-    font-size: 12px;
-    margin: 6px 0 4px 0;
-  }
-  .section-total-banner {
-    background: #000000;
-    color: #ffffff;
-    font-weight: 900;
-    font-size: 12px;
-    padding: 4px 8px;
-    text-align: right;
-    letter-spacing: 0.5px;
-    margin-top: 6px;
-  }
-  .blank-page-center {
-    text-align: center;
-    margin: auto 0;
-  }
-  .blank-page-center h2 {
-    font-size: 24px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-  }
-  .blank-page-center p {
-    font-size: 13px;
-    color: #555555;
-  }
-  .paper-banner {
-    border: 2px solid #000000;
-    padding: 16px 20px;
-    background: #fafafa;
-    margin: 20px 0;
-  }
-  .banner-huge {
-    background: #000000;
-    color: #ffffff;
-    padding: 14px 20px;
-    font-size: 22px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-align: center;
-    margin: 24px 0;
-  }
-  .warning-box {
-    border: 2px solid #000000;
-    padding: 14px 20px;
-    font-weight: 900;
-    font-size: 14px;
-    text-align: center;
-    background: #ffffff;
-    margin-bottom: 24px;
-  }
-  .instructions-block {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-  .booklet-heading {
-    font-weight: 900;
-    font-size: 15px;
-    border-bottom: 1.5px solid #000000;
-    padding-bottom: 4px;
-    margin-bottom: 6px;
-  }
-  .enquiry-subheading {
-    font-style: italic;
-    font-size: 12px;
-    margin-bottom: 10px;
-    color: #333333;
-  }
-  .source-card {
-    border: 1.5px solid #000000;
-    padding: 10px 12px;
-    background: #ffffff;
-    margin-bottom: 10px;
-  }
-  .source-card-label {
-    font-weight: 900;
-    font-size: 13px;
-    margin-bottom: 4px;
-  }
-  .source-card-content {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-  .source-card img {
-    max-width: 100%;
-    max-height: 195px;
-    object-fit: contain;
-    display: block;
-    margin: 6px auto;
-  }
-`;
+
+  return `
+    <div class="page">
+      <div class="corner-reg-mark"></div>
+      
+      <div class="scanner-margin-zone">
+        <div class="scanner-text">DO NOT WRITE IN THIS AREA</div>
+        <div class="scanner-text">DO NOT WRITE IN THIS AREA</div>
+        <div class="scanner-text">DO NOT WRITE IN THIS AREA</div>
+      </div>
+
+      <div class="pearson-frame">
+        ${contentHtml}
+      </div>
+
+      <div class="pearson-page-footer">
+        <div class="pearson-page-num">${pageNumber}</div>
+        <div class="pearson-barcode-block">
+          ${generateBarcodeSvg(barcodeRef)}
+        </div>
+        <div class="pearson-footer-right">
+          ${isTurnOver ? '<span class="pearson-turn-over">Turn over &#9654;</span>' : '<span class="reg-squares">&#9632; &#9632; &#9632;</span>'}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function buildCoverPage(d) {
+  const barcodeBase = d.unitId === 'usa' ? 'P 7 5 5 0 4 A 0' : 'P 7 5 5 0 2 A 0';
+  return `
+    <div class="page cover-page" style="display: flex; flex-direction: column; justify-content: space-between; padding: 10mm 15mm 12mm 15mm;">
+      <div>
+        <div style="font-size: 8pt; font-weight: 700; text-align: center; margin-bottom: 4px; color: #27272a;">
+          Please check the examination details below before entering your candidate information
+        </div>
+
+        <!-- Candidate Information Grid -->
+        <div style="border: 2px solid #000; border-radius: 10px; padding: 10px 14px; margin-bottom: 12px; background: #fff;">
+          <div style="display: flex; gap: 12px; margin-bottom: 8px;">
+            <div style="flex: 1;">
+              <div style="font-size: 8pt; margin-bottom: 2px; font-weight: 600;">Candidate surname</div>
+              <div style="border: 1.5px solid #000; border-radius: 4px; height: 28px; background: #fff;"></div>
+            </div>
+            <div style="flex: 1.2;">
+              <div style="font-size: 8pt; margin-bottom: 2px; font-weight: 600;">Other names</div>
+              <div style="border: 1.5px solid #000; border-radius: 4px; height: 28px; background: #fff;"></div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <div>
+              <div style="font-size: 8pt; margin-bottom: 2px; font-weight: 600;">Centre Number</div>
+              <div style="display: flex; gap: 3px;">
+                <div style="border: 1.5px solid #000; border-radius: 3px; width: 24px; height: 28px;"></div>
+                <div style="border: 1.5px solid #000; border-radius: 3px; width: 24px; height: 28px;"></div>
+                <div style="border: 1.5px solid #000; border-radius: 3px; width: 24px; height: 28px;"></div>
+                <div style="border: 1.5px solid #000; border-radius: 3px; width: 24px; height: 28px;"></div>
+                <div style="border: 1.5px solid #000; border-radius: 3px; width: 24px; height: 28px;"></div>
+              </div>
+            </div>
+            <div>
+              <div style="font-size: 8pt; margin-bottom: 2px; font-weight: 600;">Candidate Number</div>
+              <div style="display: flex; gap: 3px;">
+                <div style="border: 1.5px solid #000; border-radius: 3px; width: 24px; height: 28px;"></div>
+                <div style="border: 1.5px solid #000; border-radius: 3px; width: 24px; height: 28px;"></div>
+                <div style="border: 1.5px solid #000; border-radius: 3px; width: 24px; height: 28px;"></div>
+                <div style="border: 1.5px solid #000; border-radius: 3px; width: 24px; height: 28px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pearson Edexcel Masthead -->
+        <div style="font-size: 19pt; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px;">
+          Pearson Edexcel GCSE (9–1)
+        </div>
+
+        <!-- Examination Header Card -->
+        <div style="border: 2px solid #000; border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: #fff;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+            <div>
+              <div style="font-size: 14pt; font-weight: 800; margin-bottom: 2px;">Thursday 11 June 2026</div>
+              <div style="font-size: 8.5pt; color: #18181b;">
+                Morning (Time: 1 hour 20 minutes)
+              </div>
+            </div>
+            <div style="border: 1.5px solid #000; border-radius: 6px; padding: 4px 10px; text-align: right; background: #f4f4f5;">
+              <div style="font-size: 7pt; font-weight: 700; text-transform: uppercase;">Paper reference</div>
+              <div style="font-size: 14pt; font-weight: 900; letter-spacing: 0.5px;">${d.paperCode}</div>
+            </div>
+          </div>
+          <div style="border-top: 1.5px solid #000; padding-top: 8px;">
+            <div style="font-size: 18pt; font-weight: 900; margin: 0; line-height: 1.1;">History</div>
+            <div style="font-size: 11pt; font-weight: 800; margin-top: 2px;">
+              ${d.seriesTitle}
+            </div>
+            <div style="font-size: 9pt; font-weight: 700; margin-top: 2px; color: #27272a;">
+              ${d.paperTitle}
+            </div>
+          </div>
+        </div>
+
+        <!-- Must Have & Total Marks -->
+        <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+          <div style="flex: 1; border: 1.5px solid #000; border-radius: 8px; padding: 6px 12px; font-size: 8.5pt;">
+            <strong>You must have:</strong><br>
+            Sources/Interpretations Booklet (enclosed)
+          </div>
+          <div style="width: 100px; border: 1.5px solid #000; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 8pt; font-weight: 700; text-align: center; padding: 4px;">
+            <div>Total Marks</div>
+            <div style="font-size: 13pt; font-weight: 900;">56</div>
+          </div>
+        </div>
+
+        <!-- Instructions, Information, Advice -->
+        <div style="font-size: 8.5pt; line-height: 1.45; color: #18181b;">
+          <div style="margin-bottom: 6px;">
+            <strong>Instructions</strong>
+            <ul style="margin: 2px 0 0 0; padding-left: 18px;">
+              <li>Use <strong>black</strong> ink or ball-point pen.</li>
+              <li><strong>Fill in the boxes</strong> at the top of this page with your name, centre number and candidate number.</li>
+              <li>There are two sections in this question paper. Answer Questions 1 and 2 from <strong>Section A</strong>. From <strong>Section B</strong>, answer Questions 3(a) to 3(d).</li>
+              <li>Answer the questions in the spaces provided &mdash; <em>there may be more space than you need.</em></li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom: 6px;">
+            <strong>Information</strong>
+            <ul style="margin: 2px 0 0 0; padding-left: 18px;">
+              <li>The total mark for this paper is 56.</li>
+              <li>The marks for <strong>each</strong> question are shown in brackets &mdash; <em>use this as a guide as to how much time to spend on each question.</em></li>
+              <li>The marks available for spelling, punctuation, grammar and use of specialist terminology are clearly indicated.</li>
+            </ul>
+          </div>
+
+          <div>
+            <strong>Advice</strong>
+            <ul style="margin: 2px 0 0 0; padding-left: 18px;">
+              <li>Read each question carefully before you start to answer it.</li>
+              <li>Check your answers if you have time at the end.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cover Footer -->
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; padding-top: 8px;">
+        <div style="font-size: 7.5pt; color: #52525b; line-height: 1.3;">
+          ${d.paperCode.replace('/', '')}A<br>&copy;2026 Pearson Education Ltd.<br>F:1/1/1/1/1/1/1/1/
+        </div>
+        <div>
+          ${generateBarcodeSvg(`${barcodeBase} 01 16`)}
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="font-size: 9pt; font-weight: 800; font-style: italic;">Turn over &#9654;</span>
+          <span style="font-size: 16pt; font-weight: 900; font-family: 'Times New Roman', serif; letter-spacing: -0.5px;">Pearson</span>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function buildSourcesCoverPage(d) {
+  const barcodeBase = d.unitId === 'usa' ? 'P 7 5 5 0 4 A 0' : 'P 7 5 5 0 2 A 0';
+  return `
+    <div class="page cover-page" style="display: flex; flex-direction: column; justify-content: space-between; padding: 14mm 16mm 14mm 16mm;">
+      <div>
+        <!-- Pearson Edexcel Masthead -->
+        <div style="font-size: 20pt; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 12px;">
+          Pearson Edexcel GCSE (9–1)
+        </div>
+
+        <!-- Examination Header Card -->
+        <div style="border: 2px solid #000; border-radius: 10px; padding: 14px 16px; margin-bottom: 18px; background: #fff;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+            <div>
+              <div style="font-size: 15pt; font-weight: 800; margin-bottom: 2px;">Thursday 11 June 2026</div>
+              <div style="font-size: 9pt; color: #18181b;">
+                Morning (Time: 1 hour 20 minutes)
+              </div>
+            </div>
+            <div style="border: 1.5px solid #000; border-radius: 6px; padding: 4px 10px; text-align: right; background: #f4f4f5;">
+              <div style="font-size: 7pt; font-weight: 700; text-transform: uppercase;">Paper reference</div>
+              <div style="font-size: 15pt; font-weight: 900; letter-spacing: 0.5px;">${d.paperCode}</div>
+            </div>
+          </div>
+          <div style="border-top: 1.5px solid #000; padding-top: 10px;">
+            <div style="font-size: 20pt; font-weight: 900; margin: 0; line-height: 1.1;">History</div>
+            <div style="font-size: 12pt; font-weight: 800; margin-top: 3px;">
+              ${d.seriesTitle}
+            </div>
+            <div style="font-size: 9.5pt; font-weight: 700; margin-top: 3px; color: #27272a;">
+              ${d.paperTitle}
+            </div>
+          </div>
+        </div>
+
+        <!-- Big Sources Booklet Banner -->
+        <div style="border: 2.5px solid #000; border-radius: 10px; padding: 30px 20px; text-align: center; margin: 30px 0; background: #fcfcfc;">
+          <h1 style="font-size: 24pt; font-weight: 900; letter-spacing: 1px; margin: 0 0 10px 0;">Sources/Interpretations Booklet</h1>
+          <p style="font-size: 11pt; font-weight: 700; color: #3f3f46; margin: 0;">Do not return this Booklet with the question paper.</p>
+        </div>
+
+        <div style="margin-top: 20px; border-left: 3px solid #000; padding-left: 14px; font-size: 9.5pt; line-height: 1.6; color: #18181b;">
+          <strong>Sources/Interpretations for use with Section B.</strong><br>
+          This booklet contains Source B, Source C, Interpretation 1 and Interpretation 2 for use with Question 3 on the question paper.
+        </div>
+      </div>
+
+      <!-- Sources Cover Footer -->
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; padding-top: 12px; border-top: 1px solid #d4d4d8;">
+        <div style="font-size: 7.5pt; color: #52525b; line-height: 1.3;">
+          ${d.paperCode.replace('/', '')}A<br>&copy;2026 Pearson Education Ltd.<br>F:1/1/1/1/1/1/1/1/
+        </div>
+        <div>
+          ${generateBarcodeSvg(`${barcodeBase} 01 04`)}
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="font-size: 9pt; font-weight: 800; font-style: italic;">Turn over &#9654;</span>
+          <span style="font-size: 16pt; font-weight: 900; font-family: 'Times New Roman', serif; letter-spacing: -0.5px;">Pearson</span>
+        </div>
+      </div>
+    </div>
+  `;
+}
 
 function generateQuestionBookletPages(d) {
-  return `
-  <!-- PAGE 1: COVER -->
-  <div class="page">
+  const totalPages = 16;
+  const barcodeBase = d.unitId === 'usa' ? 'P 7 5 5 0 4 A 0' : 'P 7 5 5 0 2 A 0';
+  let pagesHtml = '';
+
+  // Page 1: Cover
+  pagesHtml += buildCoverPage(d);
+
+  // Page 2: Section A header, Source A, Question 1
+  const p2Content = `
+    <div style="text-align: center; margin-bottom: 10px;">
+      <div style="font-size: 11.5pt; font-weight: 800; letter-spacing: 0.5px; margin-bottom: 2px;">SECTION A</div>
+      <div style="font-size: 9pt; font-weight: 700; color: #27272a;">Answer Question 1 and Question 2.</div>
+    </div>
+
+    <!-- Source A Container -->
+    <div style="border: 1.5px solid #000; border-radius: 4px; padding: 8px 12px; margin-bottom: 10px; background: #fafafa; font-size: 8.5pt; line-height: 1.45;">
+      <div style="font-weight: 900; margin-bottom: 4px; font-size: 9.5pt;">Source A</div>
+      ${d.srcARaw || 'Historical extract / visual source for enquiry.'}
+    </div>
+
     <div>
-      <div class="top-strip">
-        <div class="pearson-logo">Pearson Edexcel GCSE (9–1)</div>
-        <div class="exam-code">${d.paperCode}</div>
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 9.5pt; margin-bottom: 8px;">
+        <div><span style="font-weight: 900; margin-right: 6px;">1</span> Give two things you can infer from Source A about ${d.q1Topic}.</div>
+        <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
       </div>
 
-      <div class="candidate-box">
-        <div class="candidate-row">
-          <div class="candidate-cell" style="flex: 2;">
-            <div class="cell-label">Candidate surname</div>
-            <div class="cell-input"></div>
-          </div>
-          <div class="candidate-cell" style="flex: 3;">
-            <div class="cell-label">Other names</div>
-            <div class="cell-input"></div>
-          </div>
-        </div>
-        <div class="candidate-row" style="margin-bottom: 0;">
-          <div class="candidate-cell">
-            <div class="cell-label">Centre Number</div>
-            <div class="boxes-grid">
-              <div class="single-box"></div><div class="single-box"></div><div class="single-box"></div><div class="single-box"></div><div class="single-box"></div>
-            </div>
-          </div>
-          <div class="candidate-cell">
-            <div class="cell-label">Candidate Number</div>
-            <div class="boxes-grid">
-              <div class="single-box"></div><div class="single-box"></div><div class="single-box"></div><div class="single-box"></div>
-            </div>
-          </div>
-        </div>
+      <div style="margin-bottom: 8px;">
+        <div style="font-size: 8.5pt; font-weight: 800; margin-bottom: 2px;">(i) What I can infer:</div>
+        ${renderRuledLines(2)}
+        <div style="font-size: 8.5pt; font-weight: 800; margin-top: 4px; margin-bottom: 2px;">Details in the source that tell me this:</div>
+        ${renderRuledLines(2)}
       </div>
 
-      <div class="paper-masthead">
-        <div>
-          <div class="masthead-title">History</div>
-          <div class="masthead-sub">${d.seriesTitle}</div>
-          <div class="masthead-sub" style="font-weight: bold; color: #000000; margin-top: 4px;">${d.paperTitle}</div>
-        </div>
-        <div class="masthead-ref">
-          <div>Time: 1 hour 20 minutes</div>
-          <div style="font-size: 16px; margin-top: 4px;">${d.paperCode}</div>
-          <div style="font-size: 11px; font-weight: normal; color: #444444; margin-top: 2px;">Total Marks: 52</div>
-        </div>
+      <div>
+        <div style="font-size: 8.5pt; font-weight: 800; margin-bottom: 2px;">(ii) What I can infer:</div>
+        ${renderRuledLines(2)}
+        <div style="font-size: 8.5pt; font-weight: 800; margin-top: 4px; margin-bottom: 2px;">Details in the source that tell me this:</div>
+        ${renderRuledLines(2)}
       </div>
 
-      <div class="notice-box">
-        You must have: Sources/Interpretations Booklet (enclosed)
-      </div>
-
-      <div class="instructions-section">
-        <h4>Instructions</h4>
-        <ul>
-          <li>Use black ink or ball-point pen.</li>
-          <li>Fill in the boxes at the top of this page with your name, centre number and candidate number.</li>
-          <li>Answer <strong>all</strong> questions in Section A and Section B.</li>
-          <li>Answer the questions in the spaces provided &ndash; <em>there may be more space than you need</em>.</li>
-        </ul>
-
-        <h4>Information</h4>
-        <ul>
-          <li>The total mark for this paper is 52.</li>
-          <li>The marks for each question are shown in brackets &ndash; <em>use this as a guide as to how much time to spend on each question</em>.</li>
-          <li>The marks available for spelling, punctuation, grammar and use of specialist terminology are clearly indicated in Question 3(d).</li>
-        </ul>
-
-        <h4>Advice</h4>
-        <ul>
-          <li>Read each question carefully before you start to answer it.</li>
-          <li>Check your answers if you have time at the end.</li>
-        </ul>
+      <div style="text-align: right; font-weight: 700; font-size: 8.5pt; margin-top: 4px; color: #3f3f46;">
+        (Total for Question 1 = 4 marks)
       </div>
     </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>1</div>
-    </div>
-  </div>
-
-  <!-- PAGE 2: SECTION A & SOURCE A -->
-  <div class="page">
-    <div>
-      <div class="section-banner">SECTION A</div>
-      <div style="font-size: 13px; font-weight: bold; margin-bottom: 12px;">Answer ALL questions in this section.</div>
-      <div style="font-size: 12.5px; margin-bottom: 10px;">Study Source A below and then answer Question 1.</div>
-
-      <div class="source-container">
-        <div class="source-label">Source A</div>
-        <div class="source-text">${d.srcARaw}</div>
-      </div>
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>2</div>
-    </div>
-  </div>
-
-  <!-- PAGE 3: QUESTION 1 -->
-  <div class="page">
-    <div>
-      <div class="question-prompt">
-        1 Give two things you can infer from Source A about ${d.q1Topic}.
-        <span style="float: right; font-weight: normal;">(4)</span>
-      </div>
-
-      <div style="font-weight: bold; font-size: 12px; margin-bottom: 12px;">Complete the table below to explain your answer.</div>
-
-      <div class="inference-row">
-        <div class="inference-title">(i) What I can infer:</div>
-        ${renderRuledLines(3)}
-      </div>
-
-      <div class="inference-row">
-        <div class="inference-title">Details in the source that tell me this:</div>
-        ${renderRuledLines(3)}
-      </div>
-
-      <div class="inference-row" style="margin-top: 16px;">
-        <div class="inference-title">(ii) What I can infer:</div>
-        ${renderRuledLines(3)}
-      </div>
-
-      <div class="inference-row">
-        <div class="inference-title">Details in the source that tell me this:</div>
-        ${renderRuledLines(3)}
-      </div>
-
-      <div class="total-marks-tag">(Total for Question 1 = 4 marks)</div>
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>3</div>
-    </div>
-  </div>
-
-  <!-- PAGE 4: QUESTION 2 (P1) -->
-  <div class="page">
-    <div>
-      <div class="question-prompt">
-        2 ${d.q2Prompt}
-        <span style="float: right; font-weight: normal;">(12)</span>
-      </div>
-
-      <div class="bullet-box">
-        <em>You <strong>may</strong> use the following in your answer:</em>
-        <ul>
-          ${d.bullets.map(b => `<li>${b}</li>`).join('\n')}
-        </ul>
-        <div style="margin-top: 4px; font-weight: bold;">You must also use information of your own.</div>
-      </div>
-
-      ${renderRuledLines(14)}
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>4</div>
-    </div>
-  </div>
-
-  <!-- PAGE 5: QUESTION 2 (P2) -->
-  <div class="page">
-    <div>
-      ${renderRuledLines(26)}
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>5</div>
-    </div>
-  </div>
-
-  <!-- PAGE 6: QUESTION 2 (P3) & END SECTION A -->
-  <div class="page">
-    <div>
-      ${renderRuledLines(22)}
-      <div class="total-marks-tag">(Total for Question 2 = 12 marks)</div>
-      <div class="section-total-banner">TOTAL FOR SECTION A = 16 MARKS</div>
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>6</div>
-    </div>
-  </div>
-
-  <!-- PAGE 7: SECTION B & QUESTION 3(a) (P1) -->
-  <div class="page">
-    <div>
-      <div class="section-banner">SECTION B</div>
-      <div style="font-size: 12.5px; font-style: italic; margin-bottom: 12px; color: #222222;">
-        For this section, you will need to use the sources and interpretations in the Sources/Interpretations Booklet.
-      </div>
-
-      <div class="question-prompt">
-        3 (a) Study Sources B and C in the Sources/Interpretations Booklet.<br>
-        How useful are Sources B and C for an enquiry into ${d.enquiryTopic}?
-        <div style="font-weight: normal; font-size: 12.5px; margin-top: 4px;">
-          Explain your answer, using Sources B and C and your knowledge of the historical context.
-          <span style="float: right; font-weight: bold;">(8)</span>
-        </div>
-      </div>
-
-      ${renderRuledLines(14)}
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>7</div>
-    </div>
-  </div>
-
-  <!-- PAGE 8: QUESTION 3(a) (P2) -->
-  <div class="page">
-    <div>
-      ${renderRuledLines(26)}
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>8</div>
-    </div>
-  </div>
-
-  <!-- PAGE 9: QUESTION 3(a) (P3) -->
-  <div class="page">
-    <div>
-      ${renderRuledLines(22)}
-      <div class="total-marks-tag">(Total for Question 3(a) = 8 marks)</div>
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>9</div>
-    </div>
-  </div>
-
-  <!-- PAGE 10: QUESTION 3(b) -->
-  <div class="page">
-    <div>
-      <div class="question-prompt">
-        3 (b) Study Interpretations 1 and 2 in the Sources/Interpretations Booklet.<br>
-        They give different views about ${d.enquiryTopic}. What is the main difference between these views?
-        <div style="font-weight: normal; font-size: 12.5px; margin-top: 4px;">
-          Explain your answer, using details from both interpretations.
-          <span style="float: right; font-weight: bold;">(4)</span>
-        </div>
-      </div>
-
-      ${renderRuledLines(19)}
-      <div class="total-marks-tag">(Total for Question 3(b) = 4 marks)</div>
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>10</div>
-    </div>
-  </div>
-
-  <!-- PAGE 11: QUESTION 3(c) -->
-  <div class="page">
-    <div>
-      <div class="question-prompt">
-        3 (c) Suggest one reason why Interpretations 1 and 2 give different views about ${d.enquiryTopic}.
-        <div style="font-weight: normal; font-size: 12.5px; margin-top: 4px;">
-          You may use Sources B and C to help explain your answer.
-          <span style="float: right; font-weight: bold;">(4)</span>
-        </div>
-      </div>
-
-      ${renderRuledLines(19)}
-      <div class="total-marks-tag">(Total for Question 3(c) = 4 marks)</div>
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>11</div>
-    </div>
-  </div>
-
-  <!-- PAGE 12: QUESTION 3(d) (P1) -->
-  <div class="page">
-    <div>
-      <div class="question-prompt">
-        3 (d) How far do you agree with Interpretation 2 about ${d.enquiryTopic}?
-        <div style="font-weight: normal; font-size: 12.5px; margin-top: 4px;">
-          Explain your answer, using both interpretations and your knowledge of the historical context.
-          <span style="float: right; font-weight: bold;">(16 + 4 SPaG)</span>
-        </div>
-      </div>
-
-      ${renderRuledLines(16)}
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>12</div>
-    </div>
-  </div>
-
-  <!-- PAGE 13: QUESTION 3(d) (P2) -->
-  <div class="page">
-    <div>
-      ${renderRuledLines(26)}
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>13</div>
-    </div>
-  </div>
-
-  <!-- PAGE 14: QUESTION 3(d) (P3) -->
-  <div class="page">
-    <div>
-      ${renderRuledLines(26)}
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>14</div>
-    </div>
-  </div>
-
-  <!-- PAGE 15: QUESTION 3(d) (P4) & END OF PAPER -->
-  <div class="page">
-    <div>
-      ${renderRuledLines(19)}
-      <div class="total-marks-tag">(Total for Question 3(d) = 20 marks)</div>
-      <div class="section-total-banner">TOTAL FOR SECTION B = 36 MARKS</div>
-      <div class="section-total-banner" style="background: #333333; margin-top: 4px;">TOTAL FOR PAPER = 52 MARKS</div>
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>15</div>
-    </div>
-  </div>
-
-  <!-- PAGE 16: BACK COVER (BLANK) -->
-  <div class="page">
-    <div class="top-strip">
-      <div style="font-size: 11px; font-weight: bold;">DO NOT WRITE IN THIS AREA</div>
-      <div style="font-size: 11px; font-weight: bold;">${d.paperCode}</div>
-    </div>
-
-    <div class="blank-page-center">
-      <h2>BLANK PAGE</h2>
-      <p>DO NOT WRITE ON THIS PAGE</p>
-      <div style="font-size: 11px; color: #777777; max-width: 480px; margin: 20px auto 0 auto; line-height: 1.4;">
-        Acknowledgements: Every effort has been made to contact copyright holders to obtain their permission for the use of copyright material. Pearson Education Ltd. will, if notified, be happy to rectify any errors or omissions at the earliest opportunity.
-      </div>
-    </div>
-
-    <div class="page-footer">
-      <div>End of Paper</div>
-      <div>16</div>
-    </div>
-  </div>
   `;
+  pagesHtml += buildPage(2, totalPages, p2Content, false, barcodeBase);
+
+  // Page 3: Question 2 (Causation)
+  const bulletsHtml = (d.bullets || ['Key factor 1', 'Key factor 2']).map(b => `<li style="margin-bottom: 3px;">${b}</li>`).join('');
+  const p3Content = `
+    <div>
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 8px;">
+        <div><span style="font-weight: 900; margin-right: 8px;">2</span> ${d.q2Prompt}</div>
+        <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(12)</div>
+      </div>
+
+      <div style="margin-left: 20px; border: 1.2px solid #71717a; border-radius: 4px; padding: 8px 12px; margin-bottom: 12px; font-size: 8.5pt; background: #fafafa;">
+        <div>You <strong>may</strong> use the following in your answer:</div>
+        <ul style="margin: 4px 0 4px 18px; padding: 0;">
+          ${bulletsHtml}
+        </ul>
+        <div>You <strong>must</strong> also use information of your own.</div>
+      </div>
+
+      ${renderRuledLines(14)}
+    </div>
+  `;
+  pagesHtml += buildPage(3, totalPages, p3Content, false, barcodeBase);
+
+  // Page 4: Question 2 continued
+  const p4Content = `
+    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
+      (Question 2 continued)
+    </div>
+    ${renderRuledLines(26)}
+  `;
+  pagesHtml += buildPage(4, totalPages, p4Content, false, barcodeBase);
+
+  // Page 5: Question 2 continued & Section A totals
+  const p5Content = `
+    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
+      (Question 2 continued)
+    </div>
+    ${renderRuledLines(22)}
+    
+    <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 6px; color: #3f3f46;">
+      (Total for Question 2 = 12 marks)
+    </div>
+    <div style="border-top: 1.5px solid #000; padding-top: 6px; margin-top: 8px; text-align: right; font-weight: 900; font-size: 9.5pt;">
+      TOTAL FOR SECTION A = 16 MARKS
+    </div>
+  `;
+  pagesHtml += buildPage(5, totalPages, p5Content, false, barcodeBase);
+
+  // Page 6: Section B header & Question 3(a) Utility
+  const p6Content = `
+    <div style="text-align: center; margin-bottom: 12px;">
+      <div style="font-size: 11.5pt; font-weight: 800; letter-spacing: 0.5px; margin-bottom: 2px;">SECTION B</div>
+      <div style="font-size: 9pt; font-weight: 700; color: #27272a;">For Question 3, refer to the Sources/Interpretations Booklet.</div>
+    </div>
+
+    <div>
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 10px;">
+        <div>
+          <span style="font-weight: 900; margin-right: 6px;">3</span> (a) Study <strong>Sources B and C</strong> in the Sources/Interpretations Booklet.<br>
+          <div style="margin-top: 4px;">How useful are Sources B and C for an enquiry into ${d.enquiryTopic}?</div>
+          <div style="font-size: 8.5pt; font-weight: 600; color: #3f3f46; margin-top: 2px;">
+            Explain your answer, using Sources B and C and your knowledge of the historical context.
+          </div>
+        </div>
+        <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(8)</div>
+      </div>
+      ${renderRuledLines(18)}
+    </div>
+  `;
+  pagesHtml += buildPage(6, totalPages, p6Content, false, barcodeBase);
+
+  // Page 7: Question 3(a) continued
+  const p7Content = `
+    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
+      (Question 3(a) continued)
+    </div>
+    ${renderRuledLines(26)}
+    <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 6px; color: #3f3f46;">
+      (Total for Question 3(a) = 8 marks)
+    </div>
+  `;
+  pagesHtml += buildPage(7, totalPages, p7Content, false, barcodeBase);
+
+  // Page 8: Question 3(b) Interpretations Difference
+  const p8Content = `
+    <div>
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 10px;">
+        <div>
+          <span style="visibility: hidden; margin-right: 6px;">3</span> (b) Study <strong>Interpretations 1 and 2</strong> in the Sources/Interpretations Booklet.<br>
+          <div style="margin-top: 4px;">They give different views about ${d.enquiryTopic}.</div>
+          <div style="font-size: 9pt; font-weight: 800; margin-top: 2px;">What is the main difference between the views?</div>
+          <div style="font-size: 8.5pt; font-weight: 600; color: #3f3f46; margin-top: 2px;">
+            Explain your answer, using details and information from both interpretations.
+          </div>
+        </div>
+        <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
+      </div>
+      ${renderRuledLines(18)}
+      <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 8px; color: #3f3f46;">
+        (Total for Question 3(b) = 4 marks)
+      </div>
+    </div>
+  `;
+  pagesHtml += buildPage(8, totalPages, p8Content, false, barcodeBase);
+
+  // Page 9: Question 3(c) Reason for Difference
+  const p9Content = `
+    <div>
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 10px;">
+        <div>
+          <span style="visibility: hidden; margin-right: 6px;">3</span> (c) Suggest one reason why Interpretations 1 and 2 give different views about ${d.enquiryTopic}.<br>
+          <div style="font-size: 8.5pt; font-weight: 600; color: #3f3f46; margin-top: 4px;">
+            You may use Sources B and C to help explain your answer.
+          </div>
+        </div>
+        <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
+      </div>
+      ${renderRuledLines(18)}
+      <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 8px; color: #3f3f46;">
+        (Total for Question 3(c) = 4 marks)
+      </div>
+    </div>
+  `;
+  pagesHtml += buildPage(9, totalPages, p9Content, false, barcodeBase);
+
+  // Page 10: Question 3(d) Extended Evaluation Prompt
+  const p10Content = `
+    <div>
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 8px;">
+        <div>
+          <span style="visibility: hidden; margin-right: 6px;">3</span> (d) How far do you agree with <strong>Interpretation 2</strong> about ${d.enquiryTopic}?<br>
+          <div style="font-size: 8.5pt; font-weight: 600; color: #3f3f46; margin-top: 4px;">
+            Explain your answer, using both interpretations and your knowledge of the historical context.
+          </div>
+        </div>
+        <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(16)</div>
+      </div>
+
+      <div style="border: 1px solid #71717a; border-radius: 4px; padding: 6px 10px; margin-bottom: 12px; font-size: 8.5pt; background: #fafafa;">
+        Spelling, punctuation, grammar and use of specialist terminology will be assessed in this question.
+      </div>
+
+      ${renderRuledLines(14)}
+    </div>
+  `;
+  pagesHtml += buildPage(10, totalPages, p10Content, false, barcodeBase);
+
+  // Page 11: Question 3(d) continued
+  const p11Content = `
+    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
+      (Question 3(d) continued)
+    </div>
+    ${renderRuledLines(26)}
+  `;
+  pagesHtml += buildPage(11, totalPages, p11Content, false, barcodeBase);
+
+  // Page 12: Question 3(d) continued
+  const p12Content = `
+    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
+      (Question 3(d) continued)
+    </div>
+    ${renderRuledLines(26)}
+  `;
+  pagesHtml += buildPage(12, totalPages, p12Content, false, barcodeBase);
+
+  // Page 13: Question 3(d) continued
+  const p13Content = `
+    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
+      (Question 3(d) continued)
+    </div>
+    ${renderRuledLines(26)}
+  `;
+  pagesHtml += buildPage(13, totalPages, p13Content, false, barcodeBase);
+
+  // Page 14: Question 3(d) continued
+  const p14Content = `
+    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
+      (Question 3(d) continued)
+    </div>
+    ${renderRuledLines(26)}
+  `;
+  pagesHtml += buildPage(14, totalPages, p14Content, false, barcodeBase);
+
+  // Page 15: Question 3(d) continued & Paper Totals
+  const p15Content = `
+    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
+      (Question 3(d) continued)
+    </div>
+    ${renderRuledLines(16)}
+
+    <div style="text-align: right; font-size: 8pt; font-weight: 700; color: #52525b; margin-top: 4px;">
+      (Total for spelling, punctuation, grammar and use of specialist terminology = 4 marks)<br>
+      (Total for Question 3(d) = 20 marks)
+    </div>
+
+    <div style="border-top: 2px solid #000; padding-top: 8px; margin-top: 8px; display: flex; justify-content: space-between; align-items: center; font-weight: 900; font-size: 9.5pt;">
+      <div>TOTAL FOR SECTION B = 36 MARKS</div>
+      <div>TOTAL FOR PAPER = 52 MARKS (+4 marks for SPaG)</div>
+    </div>
+  `;
+  pagesHtml += buildPage(15, totalPages, p15Content, false, barcodeBase);
+
+  // Page 16: Blank Page
+  pagesHtml += buildPage(16, totalPages, '', true, barcodeBase);
+
+  return pagesHtml;
 }
 
 function generateSourcesBookletPages(d) {
-  return `
-  <!-- BOOKLET PAGE 1: COVER -->
-  <div class="page">
+  const totalPages = 4;
+  const barcodeBase = d.unitId === 'usa' ? 'P 7 5 5 0 4 A 0' : 'P 7 5 5 0 2 A 0';
+  let pagesHtml = '';
+
+  // Page 1: Sources Cover
+  pagesHtml += buildSourcesCoverPage(d);
+
+  // Page 2: Source B and Source C
+  const p2Content = `
     <div>
-      <div class="top-strip">
-        <div class="pearson-logo">Pearson Edexcel GCSE (9–1)</div>
-        <div style="font-weight: bold; font-size: 13px;">${d.paperCode}</div>
+      <div style="font-size: 10.5pt; font-weight: 800; border-bottom: 2px solid #000; padding-bottom: 3px; margin-bottom: 6px;">
+        Sources/Interpretations for use with Section B.
+      </div>
+      <div style="font-size: 8pt; font-style: italic; color: #52525b; margin-bottom: 8px;">
+        Sources for use with Questions 3(a) and 3(c).
       </div>
 
-      <div class="paper-banner">
-        <div style="font-size: 18px; font-weight: 900; margin-bottom: 4px;">History</div>
-        <div style="font-size: 13px; color: #444444;">${d.seriesTitle}</div>
-        <div style="font-size: 14px; font-weight: bold; margin-top: 6px; color: #000000;">${d.paperTitle}</div>
-        <div style="font-size: 12px; margin-top: 6px; font-weight: bold;">Afternoon (Time: 1 hour 20 minutes)</div>
+      <!-- Source B Card -->
+      <div style="border: 1.2px solid #000; border-radius: 4px; padding: 7px 9px; margin-bottom: 8px; background: #fff; font-size: 8pt; line-height: 1.35;">
+        <div style="font-weight: 900; font-size: 8.5pt; margin-bottom: 2px;">Source B</div>
+        ${d.srcB || 'Source extract B.'}
       </div>
 
-      <div class="banner-huge">
-        Sources/Interpretations Booklet
-      </div>
-
-      <div class="warning-box">
-        Do not return this booklet with the question paper.
-      </div>
-
-      <div class="instructions-block">
-        <h4 style="margin: 0 0 6px 0; text-transform: uppercase;">Instructions to Candidates</h4>
-        <ul>
-          <li>This booklet contains the sources and interpretations to be used with Section B of the Question Paper.</li>
-          <li>Lay this booklet flat on your desk alongside your Question &amp; Answer Booklet.</li>
-          <li>Sources B and C are for use with Question 3(a).</li>
-          <li>Interpretations 1 and 2 are for use with Questions 3(b), 3(c) and 3(d).</li>
-        </ul>
+      <!-- Source C Card -->
+      <div style="border: 1.2px solid #000; border-radius: 4px; padding: 7px 9px; background: #fff; font-size: 8pt; line-height: 1.35;">
+        <div style="font-weight: 900; font-size: 8.5pt; margin-bottom: 2px;">Source C</div>
+        ${d.srcC || 'Source extract C.'}
       </div>
     </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>1</div>
-    </div>
-  </div>
-
-  <!-- BOOKLET PAGE 2: SOURCES B & C -->
-  <div class="page">
-    <div>
-      <div class="booklet-heading">Sources for use with Section B.</div>
-      <div class="enquiry-subheading">For an enquiry into: ${d.enquiryTopic}</div>
-
-      <div class="source-card">
-        <div class="source-card-label">Source B</div>
-        <div class="source-card-content">${d.srcB}</div>
-      </div>
-
-      <div class="source-card" style="margin-bottom: 0;">
-        <div class="source-card-label">Source C</div>
-        <div class="source-card-content">${d.srcC}</div>
-      </div>
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>2</div>
-    </div>
-  </div>
-
-  <!-- BOOKLET PAGE 3: INTERPRETATIONS 1 & 2 -->
-  <div class="page">
-    <div>
-      <div class="booklet-heading">Interpretations for use with Section B.</div>
-      <div class="enquiry-subheading">For an enquiry into: ${d.enquiryTopic}</div>
-
-      <div class="source-card">
-        <div class="source-card-label">Interpretation 1</div>
-        <div class="source-card-content">${d.int1}</div>
-      </div>
-
-      <div class="source-card" style="margin-bottom: 0;">
-        <div class="source-card-label">Interpretation 2</div>
-        <div class="source-card-content">${d.int2}</div>
-      </div>
-    </div>
-
-    <div class="page-footer">
-      <div>Turn over &#9654;</div>
-      <div>3</div>
-    </div>
-  </div>
-
-  <!-- BOOKLET PAGE 4: BACK COVER -->
-  <div class="page">
-    <div class="top-strip">
-      <div style="font-size: 11px; font-weight: bold;">DO NOT WRITE IN THIS AREA</div>
-      <div style="font-size: 11px; font-weight: bold;">${d.paperCode}</div>
-    </div>
-
-    <div class="blank-center">
-      <h2>BLANK PAGE</h2>
-      <p>DO NOT WRITE ON THIS PAGE</p>
-      <div style="font-size: 11px; color: #777777; max-width: 480px; margin: 20px auto 0 auto; line-height: 1.4;">
-        Acknowledgements: Every effort has been made to contact copyright holders to obtain their permission for the use of copyright material. Pearson Education Ltd. will, if notified, be happy to rectify any errors or omissions at the earliest opportunity.
-      </div>
-    </div>
-
-    <div class="page-footer">
-      <div>End of Booklet</div>
-      <div>4</div>
-    </div>
-  </div>
   `;
+  pagesHtml += buildPage(2, totalPages, p2Content, false, barcodeBase);
+
+  // Page 3: Interpretation 1 and Interpretation 2
+  const p3Content = `
+    <div>
+      <div style="font-size: 10.5pt; font-weight: 800; border-bottom: 2px solid #000; padding-bottom: 3px; margin-bottom: 6px;">
+        Interpretations for use with Section B.
+      </div>
+      <div style="font-size: 8pt; font-style: italic; color: #52525b; margin-bottom: 8px;">
+        Interpretations for use with Questions 3(b), 3(c) and 3(d).
+      </div>
+
+      <!-- Interpretation 1 Card -->
+      <div style="border: 1.2px solid #000; border-radius: 4px; padding: 7px 9px; margin-bottom: 8px; background: #fff; font-size: 8pt; line-height: 1.35;">
+        <div style="font-weight: 900; font-size: 8.5pt; margin-bottom: 2px;">Interpretation 1</div>
+        ${d.int1 || 'Historical interpretation 1 extract.'}
+      </div>
+
+      <!-- Interpretation 2 Card -->
+      <div style="border: 1.2px solid #000; border-radius: 4px; padding: 7px 9px; background: #fff; font-size: 8pt; line-height: 1.35;">
+        <div style="font-weight: 900; font-size: 8.5pt; margin-bottom: 2px;">Interpretation 2</div>
+        ${d.int2 || 'Historical interpretation 2 extract.'}
+      </div>
+    </div>
+  `;
+  pagesHtml += buildPage(3, totalPages, p3Content, false, barcodeBase);
+
+  // Page 4: Blank Page
+  pagesHtml += buildPage(4, totalPages, '', true, barcodeBase);
+
+  return pagesHtml;
 }
 
-function wrapHtml(title, bodyPages) {
-  return `<!DOCTYPE html>
+function wrapDocumentHtml(title, pagesHtml) {
+  return `
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>${title}</title>
+  <title>${title} - Pearson Edexcel GCSE History</title>
   <style>
-    ${COMMON_CSS}
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f1f5f9;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      background: #ffffff;
+      margin: 15mm auto;
+      padding: 12mm 14mm 14mm 14mm;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      position: relative;
+      page-break-after: always;
+      break-after: page;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    @media print {
+      body { background: #ffffff !important; }
+      .page {
+        margin: 0 !important;
+        padding: 12mm 14mm 14mm 14mm !important;
+        box-shadow: none !important;
+        width: 210mm !important;
+        height: 297mm !important;
+        max-height: 297mm !important;
+        page-break-after: always !important;
+        break-after: page !important;
+      }
+      .page:last-of-type {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+    }
+    .corner-reg-mark {
+      position: absolute;
+      top: 7mm;
+      left: 12mm;
+      width: 26px;
+      height: 4.5px;
+      background: #000000;
+    }
+    .pearson-frame {
+      border: 1.2px solid #52525b;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-right: 12mm;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      position: relative;
+      background: #ffffff;
+      overflow: hidden;
+    }
+    .scanner-margin-zone {
+      position: absolute;
+      right: 3mm;
+      top: 12mm;
+      bottom: 16mm;
+      width: 10mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border-left: 1px dotted #a1a1aa;
+    }
+    .scanner-text {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 6.5pt;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      color: #71717a;
+      white-space: nowrap;
+    }
+    .ruled-line {
+      height: 8.5mm;
+      border-bottom: 0.75pt dotted #71717a;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .pearson-page-footer {
+      height: 14mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 4px;
+      margin-right: 12mm;
+    }
+    .pearson-page-num {
+      font-size: 11pt;
+      font-weight: 900;
+      width: 40px;
+    }
+    .pearson-barcode-block {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .pearson-footer-right {
+      width: 80px;
+      text-align: right;
+    }
+    .pearson-turn-over {
+      font-size: 8.5pt;
+      font-weight: 800;
+      font-style: italic;
+    }
+    .reg-squares {
+      font-size: 7.5pt;
+      letter-spacing: 2px;
+      color: #27272a;
+    }
+    img {
+      max-width: 100%;
+      max-height: 140mm;
+      object-fit: contain;
+      display: block;
+      margin: 6px auto;
+      border: 1px solid #d4d4d8;
+    }
   </style>
 </head>
 <body>
-  ${bodyPages}
+  ${pagesHtml}
 </body>
-</html>`;
+</html>
+  `;
+}
+
+function buildQuestionBookletHtml(d) {
+  return wrapDocumentHtml(`${d.examTitle} - Question Booklet`, generateQuestionBookletPages(d));
+}
+
+function buildSourcesBookletHtml(d) {
+  return wrapDocumentHtml(`${d.examTitle} - Sources Booklet`, generateSourcesBookletPages(d));
+}
+
+function buildCollatedMockHtml(d) {
+  const qpPages = generateQuestionBookletPages(d);
+  const sbPages = generateSourcesBookletPages(d);
+
+  // Update SB page numbers and barcode for 20-page pack (pages 17-20)
+  const barcodeBase = d.unitId === 'usa' ? 'P 7 5 5 0 4 A 0' : 'P 7 5 5 0 2 A 0';
+  let modSb = sbPages.replace(/<div class="pearson-page-num">1<\/div>/g, '<div class="pearson-page-num">17</div>')
+                     .replace(/<div class="pearson-page-num">2<\/div>/g, '<div class="pearson-page-num">18</div>')
+                     .replace(/<div class="pearson-page-num">3<\/div>/g, '<div class="pearson-page-num">19</div>')
+                     .replace(/<div class="pearson-page-num">4<\/div>/g, '<div class="pearson-page-num">20</div>')
+                     .replace(/0 01 04/g, '0 17 20')
+                     .replace(/0 02 04/g, '0 18 20')
+                     .replace(/0 03 04/g, '0 19 20')
+                     .replace(/0 04 04/g, '0 20 20');
+
+  return wrapDocumentHtml(`${d.examTitle} - Collated Exam Pack`, qpPages + '\n' + modSb);
+}
+
+async function compileMockSuite(mockData, page, outDir) {
+  const id = mockData.id;
+  console.log(`\n==================================================`);
+  console.log(`Processing Paper 3 Mock: [${mockData.unitId}] ${id}`);
+
+  // 1. Question Booklet (16 pages)
+  const qpHtml = buildQuestionBookletHtml(mockData);
+  const qpHtmlPath = path.join(mockData.unitId === 'usa' ? USA_DIR : WEIMAR_DIR, `${id}_question_booklet.html`);
+  fs.writeFileSync(qpHtmlPath, qpHtml, 'utf8');
+
+  const qpPdfPath = path.join(outDir, `${id}_question_booklet.pdf`);
+  await page.setContent(qpHtml, { waitUntil: 'load', timeout: 30000 });
+  await page.emulateMediaType('print');
+  await page.pdf({
+    path: qpPdfPath,
+    format: 'A4',
+    printBackground: true,
+    preferCSSPageSize: true,
+    margin: { top: 0, right: 0, bottom: 0, left: 0 }
+  });
+
+  const qpParsed = await pdfParse(fs.readFileSync(qpPdfPath));
+  console.log(`  📄 QP PDF: ${id}_question_booklet.pdf -> Pages: ${qpParsed.numpages} (Target: 16)`);
+  if (qpParsed.numpages !== 16) {
+    console.error(`❌ ERROR: QP PDF has ${qpParsed.numpages} pages, expected 16!`);
+  }
+
+  // 2. Sources Booklet (4 pages)
+  const sbHtml = buildSourcesBookletHtml(mockData);
+  const sbHtmlPath = path.join(mockData.unitId === 'usa' ? USA_DIR : WEIMAR_DIR, `${id}_sources_booklet.html`);
+  fs.writeFileSync(sbHtmlPath, sbHtml, 'utf8');
+
+  const sbPdfPath = path.join(outDir, `${id}_sources_booklet.pdf`);
+  await page.setContent(sbHtml, { waitUntil: 'load', timeout: 30000 });
+  await page.emulateMediaType('print');
+  await page.pdf({
+    path: sbPdfPath,
+    format: 'A4',
+    printBackground: true,
+    preferCSSPageSize: true,
+    margin: { top: 0, right: 0, bottom: 0, left: 0 }
+  });
+
+  const sbParsed = await pdfParse(fs.readFileSync(sbPdfPath));
+  console.log(`  📖 SB PDF: ${id}_sources_booklet.pdf -> Pages: ${sbParsed.numpages} (Target: 4)`);
+  if (sbParsed.numpages !== 4) {
+    console.error(`❌ ERROR: SB PDF has ${sbParsed.numpages} pages, expected 4!`);
+  }
+
+  // 3. 20-Page Collated Mock Pack
+  const packHtml = buildCollatedMockHtml(mockData);
+  const origHtmlPath = path.join(mockData.unitId === 'usa' ? USA_DIR : WEIMAR_DIR, `${id}.html`);
+  fs.writeFileSync(origHtmlPath, packHtml, 'utf8');
+
+  const packPdfPath = path.join(outDir, `${id}.pdf`);
+  await page.setContent(packHtml, { waitUntil: 'load', timeout: 30000 });
+  await page.emulateMediaType('print');
+  await page.pdf({
+    path: packPdfPath,
+    format: 'A4',
+    printBackground: true,
+    preferCSSPageSize: true,
+    margin: { top: 0, right: 0, bottom: 0, left: 0 }
+  });
+
+  const packParsed = await pdfParse(fs.readFileSync(packPdfPath));
+  console.log(`  📦 Pack PDF: ${id}.pdf -> Pages: ${packParsed.numpages} (Target: 20)`);
+  if (packParsed.numpages !== 20) {
+    console.error(`❌ ERROR: Pack PDF has ${packParsed.numpages} pages, expected 20!`);
+  }
 }
 
 async function run() {
-  console.log('🚀 Starting Paper 3 Reprographics Engine (16p QP + 4p Sources + 20p Unified)...');
+  console.log('🚀 Starting Authentic Pearson Reprographics Compilation for Paper 3 (Weimar & USA)...');
 
   const chromePath =
     process.env.PUPPETEER_EXECUTABLE_PATH ||
@@ -959,123 +1045,48 @@ async function run() {
   const browser = await puppeteer.launch({
     headless: 'new',
     executablePath: chromePath,
-    args: ['--allow-file-access-from-files', '--disable-web-security', '--no-sandbox']
+    protocolTimeout: 600000,
+    timeout: 300000,
+    args: ['--allow-file-access-from-files', '--disable-web-security', '--no-sandbox', '--disable-setuid-sandbox']
   });
 
   const page = await browser.newPage();
-  await page.setViewport({ width: 794, height: 1123, deviceScaleFactor: 2 });
+  await page.setViewport({ width: 1200, height: 1600, deviceScaleFactor: 2 });
 
-  const tasks = [
-    {
-      unitId: 'weimar_nazi_germany',
-      files: ['mock_notebook_1.html', 'mock_notebook_2.html', 'mock_notebook_3.html', 'mock_adapted_2026.html']
-    },
-    {
-      unitId: 'usa',
-      files: [
-        'usa_mock_1.html', 'usa_mock_2.html', 'usa_mock_3.html', 'usa_mock_4.html',
-        'usa_mock_5.html', 'usa_mock_6.html', 'usa_mock_7.html', 'usa_mock_8.html',
-        'usa_mock_9.html', 'usa_mock_10.html', 'usa_mock_11.html', 'usa_mock_12.html', 'usa_mock_13.html'
-      ]
-    }
+  // 1. Process Weimar (Option 31)
+  const weimarFiles = [
+    'mock_notebook_1.html',
+    'mock_notebook_2.html',
+    'mock_notebook_3.html',
+    'mock_adapted_2026.html'
   ];
+  const weimarOutDir = path.join(OUT_BASE, 'weimar_nazi_germany');
+  if (!fs.existsSync(weimarOutDir)) fs.mkdirSync(weimarOutDir, { recursive: true });
 
-  let totalSuccessful = 0;
+  for (const f of weimarFiles) {
+    const filePath = path.join(WEIMAR_DIR, f);
+    if (!fs.existsSync(filePath)) continue;
+    const mockData = parsePaper3Html(filePath, 'weimar_nazi_germany');
+    await compileMockSuite(mockData, page, weimarOutDir);
+  }
 
-  for (const t of tasks) {
-    const unitDir = t.unitId === 'weimar_nazi_germany' ? WEIMAR_DIR : USA_DIR;
-    const outUnitDir = path.join(OUT_BASE, t.unitId);
-    if (!fs.existsSync(outUnitDir)) fs.mkdirSync(outUnitDir, { recursive: true });
+  // 2. Process USA (Option 33)
+  const usaFiles = [];
+  for (let i = 1; i <= 13; i++) {
+    usaFiles.push(`usa_mock_${i}.html`);
+  }
+  const usaOutDir = path.join(OUT_BASE, 'usa');
+  if (!fs.existsSync(usaOutDir)) fs.mkdirSync(usaOutDir, { recursive: true });
 
-    console.log(`\n📚 Processing [${t.unitId.toUpperCase()}] (${t.files.length} Mock Papers)...`);
-
-    for (const file of t.files) {
-      const filePath = path.join(unitDir, file);
-      if (!fs.existsSync(filePath)) {
-        console.warn(`File not found: ${filePath}`);
-        continue;
-      }
-
-      const mockData = parsePaper3Html(filePath, t.unitId);
-      const mockId = mockData.id;
-
-      // 1. Generate 16-page Question Booklet
-      const qpHtml = wrapHtml(`${mockData.examTitle} - Question Booklet`, generateQuestionBookletPages(mockData));
-      const qpTempPath = path.join(__dirname, `temp_${mockId}_qp.html`);
-      fs.writeFileSync(qpTempPath, qpHtml, 'utf8');
-
-      // 2. Generate 4-page Sources Booklet
-      const sbHtml = wrapHtml(`${mockData.examTitle} - Sources Booklet`, generateSourcesBookletPages(mockData));
-      const sbTempPath = path.join(__dirname, `temp_${mockId}_sb.html`);
-      fs.writeFileSync(sbTempPath, sbHtml, 'utf8');
-
-      // 3. Generate 20-page Unified Exam Pack
-      const unifiedHtml = wrapHtml(`${mockData.examTitle} - Unified Exam Pack`, generateQuestionBookletPages(mockData) + generateSourcesBookletPages(mockData));
-      const unifiedTempPath = path.join(__dirname, `temp_${mockId}_unified.html`);
-      fs.writeFileSync(unifiedTempPath, unifiedHtml, 'utf8');
-
-      try {
-        process.stdout.write(`   📄 Compiling ${mockId}... `);
-
-        // Compile QP (16p)
-        const qpPdfPath = path.join(outUnitDir, `${mockId}_question_booklet.pdf`);
-        await page.goto('file:///' + qpTempPath.replace(/\\/g, '/'), { waitUntil: 'networkidle0' });
-        const qpBuffer = await page.pdf({
-          path: qpPdfPath,
-          format: 'A4',
-          printBackground: true,
-          preferCSSPageSize: true,
-          margin: { top: 0, right: 0, bottom: 0, left: 0 }
-        });
-        const qpParsed = await pdfParse(qpBuffer);
-
-        // Compile SB (4p)
-        const sbPdfPath = path.join(outUnitDir, `${mockId}_sources_booklet.pdf`);
-        await page.goto('file:///' + sbTempPath.replace(/\\/g, '/'), { waitUntil: 'networkidle0' });
-        const sbBuffer = await page.pdf({
-          path: sbPdfPath,
-          format: 'A4',
-          printBackground: true,
-          preferCSSPageSize: true,
-          margin: { top: 0, right: 0, bottom: 0, left: 0 }
-        });
-        const sbParsed = await pdfParse(sbBuffer);
-
-        // Compile Unified (20p) - canonical <mock_id>.pdf
-        const unifiedPdfPath = path.join(outUnitDir, `${mockId}.pdf`);
-        await page.goto('file:///' + unifiedTempPath.replace(/\\/g, '/'), { waitUntil: 'networkidle0' });
-        const unifiedBuffer = await page.pdf({
-          path: unifiedPdfPath,
-          format: 'A4',
-          printBackground: true,
-          preferCSSPageSize: true,
-          margin: { top: 0, right: 0, bottom: 0, left: 0 }
-        });
-        const unifiedParsed = await pdfParse(unifiedBuffer);
-
-        // Verify page counts
-        const isQp16 = qpParsed.numpages === 16;
-        const isSb4 = sbParsed.numpages === 4;
-        const isUni20 = unifiedParsed.numpages === 20;
-
-        if (isQp16 && isSb4 && isUni20) {
-          console.log(`✅ [QP: ${qpParsed.numpages}p | SB: ${sbParsed.numpages}p | Pack: ${unifiedParsed.numpages}p]`);
-          totalSuccessful++;
-        } else {
-          console.log(`⚠️ Warning: QP=${qpParsed.numpages}p (need 16), SB=${sbParsed.numpages}p (need 4), Uni=${unifiedParsed.numpages}p (need 20)`);
-        }
-      } catch (err) {
-        console.log(`❌ Error: ${err.message}`);
-      } finally {
-        if (fs.existsSync(qpTempPath)) fs.unlinkSync(qpTempPath);
-        if (fs.existsSync(sbTempPath)) fs.unlinkSync(sbTempPath);
-        if (fs.existsSync(unifiedTempPath)) fs.unlinkSync(unifiedTempPath);
-      }
-    }
+  for (const f of usaFiles) {
+    const filePath = path.join(USA_DIR, f);
+    if (!fs.existsSync(filePath)) continue;
+    const mockData = parsePaper3Html(filePath, 'usa');
+    await compileMockSuite(mockData, page, usaOutDir);
   }
 
   await browser.close();
-  console.log(`\n🎉 Reprographics Pipeline Complete! Successfully compiled ${totalSuccessful} Paper 3 mock suites.`);
+  console.log('\n🎉 Finished compiling all Paper 3 mock papers (Weimar & USA) to authentic Pearson reprographic standard!');
 }
 
 run().catch(err => {

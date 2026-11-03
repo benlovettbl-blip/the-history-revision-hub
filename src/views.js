@@ -2876,7 +2876,8 @@ export async function renderMockExamsView() {
       mock.mark_scheme_url || `${paperUrl.replace(/\.html$/, '')}_mark_scheme.html`;
     const fullMsUrl = msFileName.startsWith('/') ? msFileName : `/units/${unitId}/${msFileName}`;
 
-    const isPaper3 = unitId === 'weimar_nazi_germany' || unitId === 'usa';
+    const hasSeparateBooklets =
+      unitId === 'weimar_nazi_germany' || unitId === 'usa' || unitId === 'edexcel_medicine';
     const isRadarMock =
       mock.title.includes('Radar') ||
       mock.title.includes('Heat Map') ||
@@ -2921,9 +2922,9 @@ export async function renderMockExamsView() {
 
         <div style="display: flex; flex-direction: column; gap: 8px;">
           ${
-            isPaper3
+            hasSeparateBooklets
               ? `
-            <!-- Paper 3 Saddle-Stitch Architecture (Pearson Reprographics) -->
+            <!-- Saddle-Stitch Architecture (Pearson Reprographics) -->
             <div style="font-size: 0.68rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: -2px;">
               Exam Hall Saddle-Stitch Booklets:
             </div>
