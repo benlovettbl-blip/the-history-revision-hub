@@ -630,8 +630,8 @@ const medicineDoNowMaster = {
       answer: "Carbolic acid."
     },
     {
-      question: "What unintended consequence did the introduction of anaesthetics have on surgical mortality between 1846 and 1870? (Last Lesson)",
-      answer: "The 'Black Period of Surgery' — surgeons operated deeper and longer, carrying unseen germs deeper into body cavities, increasing deaths from gangrene and sepsis."
+      question: "What historical term describes the surge in surgical mortality between 1846 and 1870 following the introduction of anaesthetics? (Last Lesson)",
+      answer: "The 'Black Period of Surgery'."
     },
     {
       question: "Which British monarch endorsed chloroform in 1853 by using it during the birth of Prince Leopold? (Last Lesson)",

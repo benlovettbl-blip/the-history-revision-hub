@@ -4768,18 +4768,18 @@ export function renderLesson(lesson) {
       const cardId = `donow-card-${index}`;
       const isLast = index === doNowItems.length - 1;
       htmlDoNowInner += `
-          <div class="donow-sentence-row do-now-card" id="do-now-card-${index}" data-action="toggle-element" data-target-id="${cardId}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: #ffffff; border: none; ${!isLast ? 'border-bottom: 1px solid #f1f5f9;' : ''} border-radius: 0; margin: 0; padding: 7px 14px; min-height: 36px; box-sizing: border-box; cursor: pointer; box-shadow: none;">
-            <div style="display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0;">
+          <div class="donow-sentence-row do-now-card" id="do-now-card-${index}" data-action="toggle-element" data-target-id="${cardId}" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #ffffff; border: none; ${!isLast ? 'border-bottom: 1px solid #f1f5f9;' : ''} border-radius: 0; margin: 0; padding: 7px 14px; min-height: 36px; box-sizing: border-box; cursor: pointer; box-shadow: none;">
+            <div style="display: flex; align-items: center; gap: 10px; flex: 1 1 55%; min-width: 260px;">
               <span style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 4px; background: #f0f9ff; color: #0284c7; font-size: 0.74rem; font-weight: 800; flex-shrink: 0; border: 1px solid #bae6fd; line-height: 1;">${index + 1}</span>
               <span style="font-size: 0.88rem; line-height: 1.35; color: #1e293b; font-weight: 600; flex: 1;">${qText}</span>
             </div>
-            <div class="donow-right-answer-box" style="display: flex; align-items: center; flex-shrink: 0; margin-left: 8px;">
-              <span class="donow-reveal-pill" style="font-size: 0.72rem; font-weight: 700; color: #0284c7; background: #f0f9ff; border: 1px solid #bae6fd; padding: 3px 9px; border-radius: 12px; display: inline-flex; align-items: center; gap: 4px;">
+            <div class="donow-right-answer-box" style="display: flex; align-items: center; justify-content: flex-end; flex: 0 1 auto; max-width: 45%; margin-left: 8px;">
+              <span class="donow-reveal-pill" style="font-size: 0.72rem; font-weight: 700; color: #0284c7; background: #f0f9ff; border: 1px solid #bae6fd; padding: 3px 9px; border-radius: 12px; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap;">
                 <i class="fa-solid fa-eye" style="font-size: 0.65rem;"></i> Reveal Answer
               </span>
-              <div class="answer" id="${cardId}" style="display: none; margin: 0; padding: 0; background: transparent;">
-                <span style="display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; font-size: 0.82rem; font-weight: 700; color: #1d4ed8; white-space: nowrap;">
-                  <i class="fa-solid fa-circle-check" style="color: #2563eb; font-size: 0.75rem;"></i>
+              <div class="answer" id="${cardId}" style="display: none; margin: 0; padding: 0; background: transparent; max-width: 100%;">
+                <span style="display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; font-size: 0.82rem; font-weight: 700; color: #1d4ed8; text-align: left; line-height: 1.3; word-break: break-word;">
+                  <i class="fa-solid fa-circle-check" style="color: #2563eb; font-size: 0.75rem; flex-shrink: 0;"></i>
                   ${aText}
                 </span>
               </div>
