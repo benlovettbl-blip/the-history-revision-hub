@@ -2489,6 +2489,149 @@ function getHubTimingStrategyRows(unitId) {
     .join('\n');
 }
 
+let cachedOfficialPapersManifest = null;
+
+async function renderOfficialPastPapers(container, unitId) {
+  container.innerHTML = `
+    <div style="padding: 40px; text-align: center; color: #6b7280;">
+      <i class="fa-solid fa-spinner fa-spin" style="font-size: 1.8rem; margin-bottom: 12px; color: #000000;"></i>
+      <div style="font-size: 0.95rem; font-weight: 700; color: #111827;">Loading Pearson Past Examination Archive...</div>
+    </div>
+  `;
+
+  try {
+    if (!cachedOfficialPapersManifest) {
+      const res = await fetch('/data/official_past_papers_manifest.json');
+      if (!res.ok) throw new Error('Could not load official papers manifest');
+      cachedOfficialPapersManifest = await res.json();
+    }
+    const unitManifest = cachedOfficialPapersManifest[unitId];
+
+    if (!unitManifest || !unitManifest.papers || unitManifest.papers.length === 0) {
+      container.innerHTML = `
+        <div style="background: #ffffff; border: 2px solid #000000; border-radius: 4px; padding: 40px 30px; text-align: center; margin: 20px 0;">
+          <div style="font-size: 2.2rem; margin-bottom: 10px;">📦</div>
+          <h3 style="margin: 0 0 8px 0; font-family: 'Outfit', sans-serif; font-size: 1.3rem;">Official Pearson Archive</h3>
+          <p style="color: #4b5563; font-size: 0.92rem; max-width: 650px; margin: 0 auto; line-height: 1.5;">
+            Official Pearson Edexcel examination series past papers are curated for Key Stage 4 (GCSE) syllabus units. For KS3 units, use the full Pupil Workbooks, Master Textbooks, and Mastery Quizzes.
+          </p>
+        </div>
+      `;
+      return;
+    }
+
+    // Group papers by Year
+    const yearMap = {};
+    unitManifest.papers.forEach((p) => {
+      if (!yearMap[p.year]) {
+        yearMap[p.year] = {
+          year: p.year,
+          season: p.season,
+          seriesLabel: p.seriesLabel,
+          qp: [],
+          ms: [],
+          pef: [],
+        };
+      }
+      if (p.typeKey === 'question_paper') yearMap[p.year].qp.push(p);
+      else if (p.typeKey === 'mark_scheme') yearMap[p.year].ms.push(p);
+      else if (p.typeKey === 'examiner_report') yearMap[p.year].pef.push(p);
+    });
+
+    const sortedYears = Object.keys(yearMap).sort((a, b) => b - a);
+
+    let archiveHtml = `
+      <div style="background: #ffffff; border: 2px solid #000000; border-radius: 4px; padding: 22px 26px; margin-bottom: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #000000;">
+              OFFICIAL PEARSON ARCHIVE &bull; ${unitManifest.paperCode}
+            </div>
+            <h2 style="margin: 4px 0 6px 0; font-size: 1.45rem; font-weight: 900; font-family: 'Outfit', sans-serif; color: #000000;">
+              Official Past Examination Papers &amp; Mark Schemes (2018–2026)
+            </h2>
+            <p style="margin: 0; font-size: 0.88rem; color: #374151; max-width: 820px; line-height: 1.45;">
+              Authentic Pearson Edexcel exam hall papers, formal mark schemes with official indicative content, and Principal Examiner Reports detailing nationwide grade boundaries and candidate responses.
+            </p>
+          </div>
+          <div style="text-align: right;">
+            <span style="display: inline-block; background: #000000; color: #ffffff; padding: 6px 14px; border-radius: 3px; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.5px;">
+              ${unitManifest.papers.length} OFFICIAL DOCUMENTS
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+    `;
+
+    sortedYears.forEach((year) => {
+      const entry = yearMap[year];
+      archiveHtml += `
+        <div style="background: #ffffff; border: 2px solid #000000; border-radius: 4px; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
+              <span style="font-size: 0.72rem; font-weight: 800; background: #000000; color: #ffffff; padding: 3px 8px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.5px;">
+                ${year} EXAM SERIES
+              </span>
+              <span style="font-size: 0.82rem; font-weight: 800; color: #000000;">
+                ${unitManifest.paperCode}
+              </span>
+            </div>
+            <div style="font-size: 1.08rem; font-weight: 800; color: #000000; font-family: 'Outfit', sans-serif;">
+              Pearson Edexcel GCSE (9–1) History &bull; ${unitManifest.paperName}
+            </div>
+            <div style="font-size: 0.78rem; color: #4b5563; margin-top: 3px;">
+              Series: ${entry.seriesLabel} &bull; ${entry.qp.length} Question Paper(s), ${entry.ms.length} Mark Scheme(s)${entry.pef.length ? `, ${entry.pef.length} Examiner Report(s)` : ''}
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            ${entry.qp
+              .map(
+                (qp) => `
+              <a href="${qp.url}" target="_blank" download="${qp.filename}" style="text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 9px 14px; border-radius: 4px; font-size: 0.82rem; font-weight: 800; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#27272a';" onmouseout="this.style.background='#000000';" title="Download Question Paper (${qp.filename})">
+                <i class="fa-solid fa-file-lines"></i> Question Paper (${qp.sizeFormatted})
+              </a>
+            `,
+              )
+              .join('')}
+
+            ${entry.ms
+              .map(
+                (ms) => `
+              <a href="${ms.url}" target="_blank" download="${ms.filename}" style="text-decoration: none; background: #ffffff; color: #000000; border: 2px solid #000000; padding: 9px 14px; border-radius: 4px; font-size: 0.82rem; font-weight: 800; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Download Mark Scheme (${ms.filename})">
+                <i class="fa-solid fa-clipboard-check"></i> Mark Scheme (${ms.sizeFormatted})
+              </a>
+            `,
+              )
+              .join('')}
+
+            ${entry.pef
+              .map(
+                (pef) => `
+              <a href="${pef.url}" target="_blank" download="${pef.filename}" style="text-decoration: none; background: #f3f4f6; color: #1f2937; border: 1.5px solid #9ca3af; padding: 9px 12px; border-radius: 4px; font-size: 0.8rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#e5e7eb';" onmouseout="this.style.background='#f3f4f6';" title="Download Examiner Report (${pef.filename})">
+                <i class="fa-solid fa-chart-column"></i> Examiner Report (${pef.sizeFormatted})
+              </a>
+            `,
+              )
+              .join('')}
+          </div>
+        </div>
+      `;
+    });
+
+    archiveHtml += `</div>`;
+    container.innerHTML = archiveHtml;
+  } catch (err) {
+    container.innerHTML = `
+      <div style="background: #fef2f2; border: 2px solid #ef4444; border-radius: 4px; padding: 20px; color: #991b1b;">
+        <strong>Error loading past papers:</strong> ${err.message}
+      </div>
+    `;
+  }
+}
+
 export async function renderMockExamsView() {
   const contentArea = document.getElementById('main-content');
   if (!contentArea) return;
@@ -2681,11 +2824,14 @@ export async function renderMockExamsView() {
 
       <!-- Sub Navigation Tabs: High-Contrast Monochrome -->
       <div style="display: flex; gap: 8px; margin-bottom: 24px; border-bottom: 2px solid #000000; padding-bottom: 2px; overflow-x: auto;">
-        <button id="tab-btn-official-mocks" class="btn" style="background: #000000; color: #ffffff; border: 2px solid #000000; border-bottom: none; padding: 10px 20px; border-radius: 4px 4px 0 0; font-weight: 800; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
-          Official Mock Exam Papers
+        <button id="tab-btn-official-mocks" class="btn" style="background: #000000; color: #ffffff; border: 2px solid #000000; border-bottom: none; padding: 10px 18px; border-radius: 4px 4px 0 0; font-weight: 800; cursor: pointer; font-size: 0.88rem; display: flex; align-items: center; gap: 8px; white-space: nowrap;">
+          <i class="fa-solid fa-graduation-cap"></i> Predicted Mock Exam Papers
         </button>
-        <button id="tab-btn-trend-radar" class="btn" style="background: #ffffff; color: #000000; border: 2px solid #000000; border-bottom: none; padding: 10px 20px; border-radius: 4px 4px 0 0; font-weight: 700; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
-          2018–2026 Past Paper Matrix &amp; Overdue Radar
+        <button id="tab-btn-official-past-papers" class="btn" style="background: #ffffff; color: #000000; border: 2px solid #000000; border-bottom: none; padding: 10px 18px; border-radius: 4px 4px 0 0; font-weight: 700; cursor: pointer; font-size: 0.88rem; display: flex; align-items: center; gap: 8px; white-space: nowrap;">
+          <i class="fa-solid fa-box-archive"></i> Official Pearson Past Papers (2018–2026 Archive)
+        </button>
+        <button id="tab-btn-trend-radar" class="btn" style="background: #ffffff; color: #000000; border: 2px solid #000000; border-bottom: none; padding: 10px 18px; border-radius: 4px 4px 0 0; font-weight: 700; cursor: pointer; font-size: 0.88rem; display: flex; align-items: center; gap: 8px; white-space: nowrap;">
+          <i class="fa-solid fa-chart-line"></i> 2018–2026 Past Paper Matrix &amp; Overdue Radar
         </button>
       </div>
 
@@ -2773,26 +2919,38 @@ export async function renderMockExamsView() {
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 8px;">
-          <a href="${fullPaperUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 10px 14px; border-radius: 4px; font-size: 0.88rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.15s ease;" onmouseover="this.style.background='#27272a'; this.style.borderColor='#27272a';" onmouseout="this.style.background='#000000'; this.style.borderColor='#000000';">
-            Open Question Paper
-          </a>
+          <!-- Question Paper Actions: Interactive Simulator & Authentic A4 PDF -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+            <a href="${fullPaperUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 9px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#27272a';" onmouseout="this.style.background='#000000';" title="Open interactive exam simulator with timer">
+              <i class="fa-solid fa-laptop"></i> Interactive
+            </a>
+            <a href="/pdfs/mocks/${unitId}/${mock.id}.pdf" target="_blank" download="${mock.id}.pdf" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 2px solid #000000; padding: 9px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Download printable A4 Question Paper PDF">
+              <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> Paper PDF
+            </a>
+          </div>
 
           ${
             isRadarMock
               ? `
-            <button class="btn btn-jump-to-radar" style="text-align: center; text-decoration: none; background: #fee2e2; color: #991b1b; border: 2px solid #000000; padding: 9px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#fecaca';" onmouseout="this.style.background='#fee2e2';">
+            <button class="btn btn-jump-to-radar" style="text-align: center; text-decoration: none; background: #fee2e2; color: #991b1b; border: 2px solid #000000; padding: 8px 12px; border-radius: 4px; font-size: 0.82rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#fecaca';" onmouseout="this.style.background='#fee2e2';">
               <i class="fa-solid fa-fire" style="color: #dc2626;"></i> Drill Overdue Radar Gaps
             </button>
           `
               : ''
           }
 
+          <!-- Mark Scheme Actions -->
           ${
             hasMs
               ? `
-            <a href="${fullMsUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 2px solid #000000; padding: 9px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';">
-              Teacher Mark Scheme
-            </a>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+              <a href="${fullMsUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #f4f4f5; color: #000000; border: 1.5px solid #71717a; padding: 8px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#e4e4e7';" onmouseout="this.style.background='#f4f4f5';" title="Open interactive mark scheme with model answers">
+                <i class="fa-solid fa-clipboard-check"></i> Interactive MS
+              </a>
+              <a href="/pdfs/mocks/${unitId}/${mock.id}_mark_scheme.pdf" target="_blank" download="${mock.id}_mark_scheme.pdf" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 1.5px solid #71717a; padding: 8px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Download printable A4 Mark Scheme PDF">
+                <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> MS PDF
+              </a>
+            </div>
           `
               : `
             <div style="font-size: 0.75rem; color: #4b5563; text-align: center; font-style: italic; padding: 4px 0;">
@@ -2808,6 +2966,9 @@ export async function renderMockExamsView() {
   html += `
         </div>
       </div> <!-- End #mock-papers-wrapper -->
+
+      <!-- Official Pearson Past Papers Archive Container -->
+      <div id="official-past-papers-container" style="display: none;"></div>
 
       <!-- Past Paper Question Matrix & Overdue Radar Container -->
       <div id="mock-trend-matrix-container" style="display: none;"></div>
@@ -2828,56 +2989,81 @@ export async function renderMockExamsView() {
 
   // Sub Navigation Tabs Logic
   const tabBtnMocks = document.getElementById('tab-btn-official-mocks');
+  const tabBtnOfficial = document.getElementById('tab-btn-official-past-papers');
   const tabBtnTrend = document.getElementById('tab-btn-trend-radar');
   const mockWrapper = document.getElementById('mock-papers-wrapper');
+  const officialContainer = document.getElementById('official-past-papers-container');
   const trendContainer = document.getElementById('mock-trend-matrix-container');
 
-  if (tabBtnMocks && tabBtnTrend) {
-    tabBtnMocks.addEventListener('click', () => {
-      tabBtnMocks.style.background = '#000000';
-      tabBtnMocks.style.color = '#ffffff';
-      tabBtnTrend.style.background = '#ffffff';
-      tabBtnTrend.style.color = '#000000';
-      if (mockWrapper) mockWrapper.style.display = 'block';
-      if (trendContainer) trendContainer.style.display = 'none';
+  const activateTab = (activeBtn, showContainer) => {
+    [tabBtnMocks, tabBtnOfficial, tabBtnTrend].forEach((btn) => {
+      if (!btn) return;
+      if (btn === activeBtn) {
+        btn.style.background = '#000000';
+        btn.style.color = '#ffffff';
+      } else {
+        btn.style.background = '#ffffff';
+        btn.style.color = '#000000';
+      }
     });
+    [mockWrapper, officialContainer, trendContainer].forEach((c) => {
+      if (!c) return;
+      c.style.display = c === showContainer ? 'block' : 'none';
+    });
+  };
 
+  if (tabBtnMocks) {
+    tabBtnMocks.addEventListener('click', () => {
+      activateTab(tabBtnMocks, mockWrapper);
+    });
+  }
+
+  if (tabBtnOfficial) {
+    tabBtnOfficial.addEventListener('click', () => {
+      activateTab(tabBtnOfficial, officialContainer);
+      if (officialContainer) renderOfficialPastPapers(officialContainer, unitId);
+    });
+  }
+
+  if (tabBtnTrend) {
     tabBtnTrend.addEventListener('click', async () => {
-      tabBtnTrend.style.background = '#000000';
-      tabBtnTrend.style.color = '#ffffff';
-      tabBtnMocks.style.background = '#ffffff';
-      tabBtnMocks.style.color = '#000000';
-      if (mockWrapper) mockWrapper.style.display = 'none';
+      activateTab(tabBtnTrend, trendContainer);
       if (trendContainer) {
-        trendContainer.style.display = 'block';
         const { renderExamTrendMatrix } = await import('./exam_trend_matrix.js');
         renderExamTrendMatrix(trendContainer, unitId);
       }
     });
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const targetTab = urlParams.get('tab');
-    const curView = urlParams.get('view');
-    if (
-      targetTab === 'radar' ||
-      targetTab === 'trend' ||
-      targetTab === 'matrix' ||
-      curView === 'trend-radar' ||
-      curView === 'matrix'
-    ) {
-      tabBtnTrend.click();
-    }
-
-    contentArea.querySelectorAll('.btn-jump-to-radar').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        tabBtnTrend.click();
-        setTimeout(() => {
-          const radarTab = document.querySelector('.etm-tab-btn[data-tab="radar"]');
-          if (radarTab) radarTab.click();
-        }, 150);
-      });
-    });
   }
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const targetTab = urlParams.get('tab');
+  const curView = urlParams.get('view');
+  if (
+    targetTab === 'official' ||
+    targetTab === 'past-papers' ||
+    targetTab === 'archive' ||
+    targetTab === 'pastpapers'
+  ) {
+    if (tabBtnOfficial) tabBtnOfficial.click();
+  } else if (
+    targetTab === 'radar' ||
+    targetTab === 'trend' ||
+    targetTab === 'matrix' ||
+    curView === 'trend-radar' ||
+    curView === 'matrix'
+  ) {
+    if (tabBtnTrend) tabBtnTrend.click();
+  }
+
+  contentArea.querySelectorAll('.btn-jump-to-radar').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (tabBtnTrend) tabBtnTrend.click();
+      setTimeout(() => {
+        const radarTab = document.querySelector('.etm-tab-btn[data-tab="radar"]');
+        if (radarTab) radarTab.click();
+      }, 150);
+    });
+  });
 
   if (window.scrollToTop) window.scrollToTop(true);
   else contentArea.scrollTo({ top: 0, behavior: 'smooth' });
