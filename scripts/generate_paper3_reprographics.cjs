@@ -63,7 +63,8 @@ function parsePaper3Html(filePath, unitId) {
   }
 
   // Extract Question 1 Topic
-  const q1Match = html.match(/Give two things you can infer from Source A about (.*?)\./i);
+  const q1Match = html.match(/Give two things you can infer from Source A about (.*?)\.\s*(?:\(4|<|\n)/i) ||
+                  html.match(/Give two things you can infer from Source A about (.*?)\./i);
   const q1Topic = q1Match ? q1Match[1].trim() : (unitId === 'usa' ? 'Civil rights' : 'the Weimar Republic');
 
   // Extract Question 2 Prompt & Bullets
