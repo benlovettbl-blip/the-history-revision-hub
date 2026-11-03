@@ -6124,18 +6124,6 @@ export function renderLesson(lesson) {
       contentStr = formatParagraphPills(contentStr, decimalRef);
 
       let styledContent = contentStr;
-      if (/^<span class="narrative-para-pill"[^>]*>.*?<\/span>\s*<strong>(.*?)<\/strong>\s*/i.test(styledContent)) {
-        styledContent = styledContent.replace(
-          /^<span class="narrative-para-pill"([^>]*)>(.*?)<\/span>\s*<strong>(.*?)<\/strong>\s*/i,
-          (match, pillAttrs, pillText, headingText) => {
-            return `<div class="paragraph-signpost" style="font-weight: 700; color: #1e3a8a; font-size: 1.08rem; letter-spacing: 0.1px; margin-bottom: 6px; border-left: 3px solid #3b82f6; padding-left: 8px;"><span class="narrative-para-pill"${pillAttrs}>${pillText}</span> ${headingText}</div><br/>`;
-          },
-        );
-      } else if (styledContent.trim().startsWith('<strong>')) {
-        styledContent = styledContent.replace(/^<strong>(.*?)<\/strong>\s*/i, (match, headingText) => {
-          return `<div class="paragraph-signpost" style="font-weight: 700; color: #1e3a8a; font-size: 1.08rem; letter-spacing: 0.1px; margin-bottom: 6px; border-left: 3px solid #3b82f6; padding-left: 8px;">${headingText}</div><br/>`;
-        });
-      }
 
       let l4StyledContent = '';
       if (block.level_4) {
@@ -6165,21 +6153,6 @@ export function renderLesson(lesson) {
         l4ContentStr = formatParagraphPills(l4ContentStr, decimalRef);
 
         l4StyledContent = l4ContentStr;
-        if (/^<span class="narrative-para-pill"[^>]*>.*?<\/span>\s*<strong>(.*?)<\/strong>\s*/i.test(l4StyledContent)) {
-          l4StyledContent = l4StyledContent.replace(
-            /^<span class="narrative-para-pill"([^>]*)>(.*?)<\/span>\s*<strong>(.*?)<\/strong>\s*/i,
-            (match, pillAttrs, pillText, headingText) => {
-              return `<div class="paragraph-signpost" style="font-weight: 700; color: #047857; font-size: 1.08rem; letter-spacing: 0.1px; margin-bottom: 6px; border-left: 3px solid #10b981; padding-left: 8px;"><span class="narrative-para-pill"${pillAttrs}>${pillText}</span> ${headingText}</div><br/>`;
-            },
-          );
-        } else if (l4ContentStr.trim().startsWith('<strong>')) {
-          l4StyledContent = l4ContentStr.replace(
-            /^<strong>(.*?)<\/strong>\s*/i,
-            (match, headingText) => {
-              return `<div class="paragraph-signpost" style="font-weight: 700; color: #047857; font-size: 1.08rem; letter-spacing: 0.1px; margin-bottom: 6px; border-left: 3px solid #10b981; padding-left: 8px;">${headingText}</div><br/>`;
-            },
-          );
-        }
       }
 
       let themeHeadingHtml = '';
