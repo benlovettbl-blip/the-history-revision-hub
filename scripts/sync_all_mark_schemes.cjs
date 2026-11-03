@@ -266,3 +266,4 @@ if (fs.existsSync(medCPath)) {
 }
 
 console.log('\n🎉 All Teacher Mark Schemes are 100% synchronized and verified!');
+
