@@ -2876,6 +2876,7 @@ export async function renderMockExamsView() {
       mock.mark_scheme_url || `${paperUrl.replace(/\.html$/, '')}_mark_scheme.html`;
     const fullMsUrl = msFileName.startsWith('/') ? msFileName : `/units/${unitId}/${msFileName}`;
 
+    const isPaper3 = unitId === 'weimar_nazi_germany' || unitId === 'usa';
     const isRadarMock =
       mock.title.includes('Radar') ||
       mock.title.includes('Heat Map') ||
@@ -2919,15 +2920,42 @@ export async function renderMockExamsView() {
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 8px;">
-          <!-- Question Paper Actions: Interactive Simulator & Authentic A4 PDF -->
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-            <a href="${fullPaperUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 9px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#27272a';" onmouseout="this.style.background='#000000';" title="Open interactive exam simulator with timer">
-              <i class="fa-solid fa-laptop"></i> Interactive
-            </a>
-            <a href="/pdfs/mocks/${unitId}/${mock.id}.pdf" target="_blank" download="${mock.id}.pdf" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 2px solid #000000; padding: 9px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Download printable A4 Question Paper PDF">
-              <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> Paper PDF
-            </a>
-          </div>
+          ${
+            isPaper3
+              ? `
+            <!-- Paper 3 Saddle-Stitch Architecture (Pearson Reprographics) -->
+            <div style="font-size: 0.68rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: -2px;">
+              Exam Hall Saddle-Stitch Booklets:
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+              <a href="/pdfs/mocks/${unitId}/${mock.id}_question_booklet.pdf" target="_blank" download="${mock.id}_question_booklet.pdf" style="text-align: center; text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 8px 6px; border-radius: 4px; font-size: 0.78rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#27272a';" onmouseout="this.style.background='#000000';" title="Download 16-page saddle-stitch Question & Answer Booklet (4 folded A3 sheets)">
+                <i class="fa-solid fa-file-lines" style="color: #60a5fa;"></i> 16p Question Booklet
+              </a>
+              <a href="/pdfs/mocks/${unitId}/${mock.id}_sources_booklet.pdf" target="_blank" download="${mock.id}_sources_booklet.pdf" style="text-align: center; text-decoration: none; background: #f8fafc; color: #0f172a; border: 2px solid #000000; padding: 8px 6px; border-radius: 4px; font-size: 0.78rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#e2e8f0';" onmouseout="this.style.background='#f8fafc';" title="Download 4-page loose Sources/Interpretations Booklet (1 folded A3 sheet)">
+                <i class="fa-solid fa-book-open" style="color: #f59e0b;"></i> 4p Sources Insert
+              </a>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+              <a href="/pdfs/mocks/${unitId}/${mock.id}.pdf" target="_blank" download="${mock.id}.pdf" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 1.5px solid #71717a; padding: 7px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Download 20-page collated complete exam pack (Pages 1–16 QP + Pages 17–20 Sources)">
+                <i class="fa-solid fa-layer-group" style="color: #64748b;"></i> 20p Complete Pack
+              </a>
+              <a href="${fullPaperUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 1.5px solid #71717a; padding: 7px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Open interactive exam simulator with timer">
+                <i class="fa-solid fa-laptop"></i> Interactive
+              </a>
+            </div>
+          `
+              : `
+            <!-- Question Paper Actions: Interactive Simulator & Authentic A4 PDF -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+              <a href="${fullPaperUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 9px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#27272a';" onmouseout="this.style.background='#000000';" title="Open interactive exam simulator with timer">
+                <i class="fa-solid fa-laptop"></i> Interactive
+              </a>
+              <a href="/pdfs/mocks/${unitId}/${mock.id}.pdf" target="_blank" download="${mock.id}.pdf" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 2px solid #000000; padding: 9px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Download printable A4 Question Paper PDF">
+                <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> Paper PDF
+              </a>
+            </div>
+          `
+          }
 
           ${
             isRadarMock
