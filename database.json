@@ -33676,45 +33676,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Medieval Society & Worldview",
-            "instructions": "Answer the retrieval questions below from your prior historical knowledge of the medieval world. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_1_1_1",
-                "question": "Which international institution controlled all education, book copying, and hospital foundations in medieval England?",
-                "options": [
-                  "The Roman Catholic Church",
-                  "The Royal College of Physicians",
-                  "The House of Commons",
-                  "The Worshipful Society of Apothecaries"
-                ],
-                "answer": 0,
-                "explanation": "The Roman Catholic Church held an intellectual monopoly across Western Europe, overseeing monastic scriptoria, universities, and medical doctrine."
+                "question": "Which international institution controlled all education, book copying, and hospital foundations in medieval England? (Foundational Context)",
+                "answer": "The Roman Catholic Church."
               },
               {
-                "id": "dn_1_1_2",
-                "question": "What term describes the system of land ownership, loyalty, and social hierarchy established across England after 1066?",
-                "options": [
-                  "The Guild Monopoly",
-                  "The Feudal System",
-                  "Monastic Asceticism",
-                  "Divine Right Absolutism"
-                ],
-                "answer": 1,
-                "explanation": "The Feudal System structured medieval life, linking obedience to God, king, and local lord."
+                "question": "What term describes the system of land ownership, loyalty, and social hierarchy established across England after 1066? (Foundational Context)",
+                "answer": "The Feudal System."
               },
               {
-                "id": "dn_1_1_3",
-                "question": "Why did the vast majority of ordinary medieval peasants lack direct access to Latin medical manuscripts?",
-                "options": [
-                  "Books were mass printed in English and widely discarded",
-                  "Peasants were legally prohibited from touching parchment",
-                  "Manuscripts were hand-copied in Latin by monks and unaffordable to the illiterate majority",
-                  "The Pope banned physicians from treating agricultural labourers"
-                ],
-                "answer": 2,
-                "explanation": "Before the printing press, hand-illuminated Latin vellum texts were rare luxury items preserved strictly in monastic and aristocratic libraries."
+                "question": "Why did the vast majority of ordinary medieval peasants lack direct access to Latin medical manuscripts? (Foundational Context)",
+                "answer": "Peasant illiteracy was near universal and books had to be copied by hand onto expensive animal parchment (vellum)."
+              },
+              {
+                "question": "What language was universally used across medieval Western Europe for church services, legal documents, and university lectures? (Foundational Context)",
+                "answer": "Latin."
+              },
+              {
+                "question": "What ancient European empire collapsed around AD 476, leading to the fragmentation of public health infrastructure in Britain? (Foundational Context)",
+                "answer": "The Western Roman Empire."
+              },
+              {
+                "question": "What religious journeys did medieval Europeans undertake to holy shrines like Canterbury or Rome in hope of curing disease? (Foundational Context)",
+                "answer": "Pilgrimages."
+              },
+              {
+                "question": "What holy physical items did medieval Christians venerate in the belief they possessed miraculous healing power? (Foundational Context)",
+                "answer": "Holy relics (such as bones, clothing, or fragments of the True Cross associated with saints)."
+              },
+              {
+                "question": "What percentage of the population in medieval England lived in rural farming villages rather than towns? (Foundational Context)",
+                "answer": "Around 90%."
+              },
+              {
+                "question": "In medieval Christian theology, how was physical suffering and epidemic pestilence commonly understood? (Foundational Context)",
+                "answer": "As divine punishment sent by God for human sin, or a direct test of faith."
+              },
+              {
+                "question": "What medieval trade associations regulated apprentice training, market standards, and professional conduct in market towns? (Foundational Context)",
+                "answer": "Medieval Guilds."
               }
             ]
           },
@@ -34657,45 +34661,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Supernatural Causes & Social Worldview",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 1.1 and earlier medieval studies.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_1_2_1",
-                "question": "According to medieval Christian teaching, what was viewed as the ultimate root cause of physical sickness and epidemics?",
-                "options": [
-                  "Bacterial infection through dirty water",
-                  "Divine retribution and punishment for human sin",
-                  "Viral transmission via trade ships",
-                  "Poor drainage in local city ditches"
-                ],
-                "answer": 1,
-                "explanation": "As studied in Lesson 1.1, the medieval Church taught that sickness was sent by God to punish sinners or test faithful souls."
+                "question": "According to medieval Christian teaching, what was viewed as the ultimate root cause of physical disease? (Last Lesson)",
+                "answer": "Human sin and God's divine wrath."
               },
               {
-                "id": "dn_1_2_2",
-                "question": "Why did medieval physicians consult the Zodiac Man before performing surgery or bloodletting?",
-                "options": [
-                  "To calculate how much money to charge the patient",
-                  "To ensure the Moon was not in the astrological sign governing that specific organ",
-                  "To find out which cemetery the patient should be buried in",
-                  "To check if the King had given permission for surgery"
-                ],
-                "answer": 1,
-                "explanation": "Astrological medicine held that celestial constellations governed specific organs; operating during an adverse lunar alignment was thought to cause fatal hemorrhage."
+                "question": "Why did medieval physicians consult the Zodiac Man before performing surgery or medical procedures? (Last Lesson)",
+                "answer": "They believed the alignment of the stars and planets directly governed specific organs and parts of the body."
               },
               {
-                "id": "dn_1_2_3",
-                "question": "What distinctive object were diagnosed lepers legally forced to carry to warn healthy people away?",
-                "options": [
-                  "A glowing iron lantern",
-                  "A wooden clapper or bell",
-                  "A silver chalice filled with salt",
-                  "A written pardon from the Pope"
-                ],
-                "answer": 1,
-                "explanation": "Lepers were legally isolated and forced to sound wooden clappers to alert travellers of their approach."
+                "question": "What distinctive warning object were diagnosed lepers legally required to carry? (Last Lesson)",
+                "answer": "A bell or wooden clapper to warn healthy passers-by to keep away."
+              },
+              {
+                "question": "What religious practice involved whipping oneself in public to appease the anger of God? (Last Lesson)",
+                "answer": "Flagellation (practised by flagellants)."
+              },
+              {
+                "question": "Why did the medieval Catholic Church strongly promote the medical writings of the pagan Roman physician Galen? (Last Lesson)",
+                "answer": "Galen taught that the human body was purposefully created by a single Creator, which fitted Christian doctrine."
+              },
+              {
+                "question": "What ancient Greek physician originated the concept that natural balance, rather than spirits, maintained health? (Prior Topic)",
+                "answer": "Hippocrates of Kos."
+              },
+              {
+                "question": "What diagnostic method of recording symptoms and tracking the natural progress of an illness did Hippocrates introduce? (Prior Topic)",
+                "answer": "Clinical observation."
+              },
+              {
+                "question": "What ethical pledge taken by doctors to 'do no harm' originated with Hippocrates? (Prior Topic)",
+                "answer": "The Hippocratic Oath."
+              },
+              {
+                "question": "What language were classical Greek medical texts translated into before reaching medieval European universities? (Prior Topic)",
+                "answer": "Arabic (translated and preserved by Islamic scholars like Ibn Sina/Avicenna and al-Razi)."
+              },
+              {
+                "question": "What institution held a strict monopoly over university medical curricula and doctor licensing in medieval England? (Prior Topic)",
+                "answer": "The Roman Catholic Church."
               }
             ]
           },
@@ -35638,45 +35646,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Humours & Ancient Theories",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 1.2 on Hippocrates and Galen.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_1_3_1",
-                "question": "Which four bodily fluids made up the Hippocratic humoral system?",
-                "options": [
-                  "Blood, Phlegm, Yellow Bile, Black Bile",
-                  "Water, Wine, Vinegar, Salt",
-                  "Blood, Saliva, Pus, Marrow",
-                  "Sweat, Tears, Bile, Choler"
-                ],
-                "answer": 0,
-                "explanation": "The Four Humours were Blood, Phlegm, Yellow Bile, and Black Bile, as established by Hippocrates."
+                "question": "Which four bodily fluids made up the Hippocratic humoral system? (Last Lesson)",
+                "answer": "Blood, phlegm, black bile, and yellow bile."
               },
               {
-                "id": "dn_1_3_2",
-                "question": "What was Galen’s medical principle of treating a cold illness with hot foods known as?",
-                "options": [
-                  "The Germ Theory",
-                  "The Theory of Opposites",
-                  "The Divine Right",
-                  "The Astrological Alignment"
-                ],
-                "answer": 1,
-                "explanation": "Galen expanded humoral theory with the Theory of Opposites, using contraries (e.g. heating herbs for cold chills) to restore balance."
+                "question": "What was Galen’s medical principle of treating an illness with an opposite quality called? (Last Lesson)",
+                "answer": "The Theory of Opposites (e.g. treating a cold, wet chill with hot, dry wine or spices)."
               },
               {
-                "id": "dn_1_3_3",
-                "question": "What diagnostic procedure involved holding a glass flask of urine up to the light to check colour and sediment?",
-                "options": [
-                  "Trephining",
-                  "Uroscopy",
-                  "Cauterisation",
-                  "Inoculation"
-                ],
-                "answer": 1,
-                "explanation": "Uroscopy was the standard diagnostic method of inspecting urine flasks against standard colour wheels."
+                "question": "What diagnostic procedure involved holding a glass flask of urine up to the light against a colour chart? (Last Lesson)",
+                "answer": "Uroscopy (examining urine color, clarity, sediment, and sometimes taste)."
+              },
+              {
+                "question": "Which season and qualities were associated with the humor blood? (Last Lesson)",
+                "answer": "Spring; hot and wet."
+              },
+              {
+                "question": "In humoral theory, an excess of which humor was believed to make a person hot-tempered and irritable (choleric)? (Last Lesson)",
+                "answer": "Yellow bile."
+              },
+              {
+                "question": "According to Galen, what internal organ produced blood from digested food? (Last Lesson)",
+                "answer": "The liver (before being consumed by bodily tissues)."
+              },
+              {
+                "question": "What was the popular medieval medical belief that foul, corrupt air carried disease called? (Last Week)",
+                "answer": "Miasma (miasmatic theory)."
+              },
+              {
+                "question": "Why did medieval physicians rarely question Galen's anatomical descriptions? (Last Week)",
+                "answer": "The Catholic Church condemned anyone who challenged Galen's authority, and books were accepted as absolute truth."
+              },
+              {
+                "question": "What chart linking parts of the body to astrological constellations was consulted before surgery? (Last Week)",
+                "answer": "The Zodiac Man."
+              },
+              {
+                "question": "What religious journeys did medieval Christians undertake to cure illnesses when natural medicine failed? (Prior Topic)",
+                "answer": "Pilgrimages."
               }
             ]
           },
@@ -36619,45 +36631,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Medieval Treatments & Surgery",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 1.3 on treatments and surgical practices.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_1_4_1",
-                "question": "What was the most common medical procedure performed by medieval barber-surgeons to balance humours?",
-                "options": [
-                  "Trephining skull holes",
-                  "Bloodletting (phlebotomy)",
-                  "Inhaling pure oxygen",
-                  "Smallpox vaccination"
-                ],
-                "answer": 1,
-                "explanation": "Phlebotomy (bloodletting) was the universal medieval procedure for rebalancing humours."
+                "question": "What was the most common surgical procedure performed by medieval barber-surgeons to balance humours? (Last Lesson)",
+                "answer": "Bloodletting (phlebotomy)."
               },
               {
-                "id": "dn_1_4_2",
-                "question": "Which English military surgeon pioneered clean wine washes and opium pain relief for fistula surgery?",
-                "options": [
-                  "William Harvey",
-                  "John of Arderne",
-                  "Andreas Vesalius",
-                  "Edward Jenner"
-                ],
-                "answer": 1,
-                "explanation": "John of Arderne (1307–1392) was England's leading medieval surgeon, famous for gentle surgical methods and wound washing."
+                "question": "Which English military surgeon pioneered clean wine washes and opium pain relief during the Hundred Years' War? (Last Lesson)",
+                "answer": "John Arderne."
               },
               {
-                "id": "dn_1_4_3",
-                "question": "What costly compound of over sixty ingredients was widely used as a universal antidote and disease preventative?",
-                "options": [
-                  "Penicillin",
-                  "Theriac (Venice Treacle)",
-                  "Carbolic Acid",
-                  "Chloroform"
-                ],
-                "answer": 1,
-                "explanation": "Theriac was a complex herbal electuary containing vipers, opium, and herbs, valued as an antidote to all poisons."
+                "question": "What costly compound of over sixty herbal and mineral ingredients was used as a universal antidote? (Last Lesson)",
+                "answer": "Theriaca (or Venice Treacle)."
+              },
+              {
+                "question": "What medieval set of healthy lifestyle guidelines advised balanced diet, exercise, and sleep to prevent illness? (Last Lesson)",
+                "answer": "The Regimen Sanitatis."
+              },
+              {
+                "question": "What painful surgical technique involved pressing red-hot iron onto an open wound to seal blood vessels? (Last Lesson)",
+                "answer": "Cauterization."
+              },
+              {
+                "question": "What procedure used heated glass cups over small skin cuts to draw bad humours to the surface? (Last Lesson)",
+                "answer": "Cupping."
+              },
+              {
+                "question": "What were the four bodily fluids in the Theory of the Four Humours? (Last Week)",
+                "answer": "Blood, phlegm, black bile, and yellow bile."
+              },
+              {
+                "question": "What was Galen's core treatment method of using warmth against cold called? (Last Week)",
+                "answer": "The Theory of Opposites."
+              },
+              {
+                "question": "Why did wealthy medieval families employ university-trained physicians rather than local barber-surgeons? (Last Week)",
+                "answer": "Physicians had studied classical Latin texts of Galen for up to ten years and were considered scholars."
+              },
+              {
+                "question": "What international institution controlled hospital foundations and university curricula in medieval England? (Prior Topic)",
+                "answer": "The Roman Catholic Church."
               }
             ]
           },
@@ -37600,45 +37616,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Medieval Healthcare & Society",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 1.4 and earlier medieval topics.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_1_5_1",
-                "question": "What was the primary guiding principle of medieval monastic hospitals?",
-                "options": [
-                  "Surgical removal of diseased organs",
-                  "Care not cure: spiritual comfort and basic nourishment",
-                  "Vaccination of healthy children",
-                  "Conducting clinical experiments with new drugs"
-                ],
-                "answer": 1,
-                "explanation": "As studied in Lesson 1.4, medieval hospitals operated on the principle of \"care not cure\", focusing on soul salvation rather than medical treatment."
+                "question": "What was the primary guiding principle of medieval monastic hospitals? (Last Lesson)",
+                "answer": "'Care not cure' (providing shelter, warmth, spiritual prayer, and basic food rather than surgical treatment)."
               },
               {
-                "id": "dn_1_5_2",
-                "question": "Which group of medical practitioners performed bloodletting, bone-setting, and minor surgery in medieval towns?",
-                "options": [
-                  "University-trained physicians",
-                  "Barber-surgeons",
-                  "Monastic bishops",
-                  "Town mayors"
-                ],
-                "answer": 1,
-                "explanation": "Barber-surgeons carried out all manual surgical interventions, whereas physicians acted as academic consultants."
+                "question": "Which group of craftsmen performed bloodletting, tooth extraction, and minor amputations? (Last Lesson)",
+                "answer": "Barber-surgeons."
               },
               {
-                "id": "dn_1_5_3",
-                "question": "Which ancient Greek physician originated the Theory of the Four Humours?",
-                "options": [
-                  "Galen",
-                  "Hippocrates",
-                  "Aristotle",
-                  "Avicenna"
-                ],
-                "answer": 1,
-                "explanation": "Hippocrates established the Four Humours theory in the 5th century BC, later expanded by Galen."
+                "question": "What female practitioners prepared domestic herbal remedies and attended childbirth in medieval villages? (Last Lesson)",
+                "answer": "Wise women and local midwives."
+              },
+              {
+                "question": "What specialized medieval hospital in London was founded in 1123 to care for the poor and sick? (Last Lesson)",
+                "answer": "St Bartholomew’s Hospital."
+              },
+              {
+                "question": "Why were victims of infectious leprosy turned away from regular monastic hospitals? (Last Lesson)",
+                "answer": "They were viewed as contagiously and spiritually unclean, and segregated in specialized 'lazar houses'."
+              },
+              {
+                "question": "What common treatment involved giving emetics or laxatives to empty the digestive tract of bad humours? (Last Week)",
+                "answer": "Purging."
+              },
+              {
+                "question": "What medical manual gave advice on diet, clean air, sleep, and bathing to stay healthy? (Last Week)",
+                "answer": "The Regimen Sanitatis."
+              },
+              {
+                "question": "Which humor was associated with winter, coldness, and wetness? (Last Week)",
+                "answer": "Phlegm."
+              },
+              {
+                "question": "What ancient Greek physician originated clinical observation and the Four Humours? (Prior Topic)",
+                "answer": "Hippocrates."
+              },
+              {
+                "question": "What was the term for poisonous, foul-smelling air believed to spread disease? (Prior Topic)",
+                "answer": "Miasma."
               }
             ]
           },
@@ -38604,45 +38624,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Medieval Medicine & Church Authority",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from Key Topic 1. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_2_1_1",
-                "question": "In medieval England (c.1250–c.1500), which institution controlled all book copying, university licensing, and hospital foundations?",
-                "options": [
-                  "The Roman Catholic Church",
-                  "The Royal College of Physicians",
-                  "The Royal Society",
-                  "The Worshipful Company of Barber-Surgeons"
-                ],
-                "answer": 0,
-                "explanation": "The Catholic Church held an intellectual and doctrinal monopoly across medieval Western Europe, copying manuscripts strictly in Latin monastic scriptoria."
+                "question": "In what year did the Black Death arrive in England, killing one-third to one-half of the population? (Last Lesson)",
+                "answer": "1348 (arriving at Melcombe Regis in Dorset)."
               },
               {
-                "id": "dn_2_1_2",
-                "question": "What was the primary clinical diagnostic tool used by medieval physicians, who inspected liquid flasks against a colour wheel?",
-                "options": [
-                  "Compound microscopy",
-                  "Uroscopy (inspecting urine flasks)",
-                  "Taking blood pressure with a sphygmomanometer",
-                  "Percussion of the chest wall"
-                ],
-                "answer": 1,
-                "explanation": "Uroscopy was the primary diagnostic method of medieval physicians, comparing the color, clarity, and sediment of urine against printed wheels."
+                "question": "What two religious explanations did medieval people give for the Black Death? (Last Lesson)",
+                "answer": "God's wrath for human sin, and the unusual conjunction of Saturn, Jupiter, and Mars."
               },
               {
-                "id": "dn_2_1_3",
-                "question": "Which ancient Greek medical authority established the Theory of the Four Humours?",
-                "options": [
-                  "Hippocrates",
-                  "Galen",
-                  "Aristotle",
-                  "Avicenna"
-                ],
-                "answer": 0,
-                "explanation": "Hippocrates (c.460–c.370 BC) established the Four Humours theory, which Galen later expanded with the Theory of Opposites."
+                "question": "What environmental cause did medieval authorities blame for the plague, prompting people to carry posies of herbs? (Last Lesson)",
+                "answer": "Miasma (corrupt air from unburied bodies and filth)."
+              },
+              {
+                "question": "What quarantine measure did the city of Gloucester take in 1348 to prevent plague spreading? (Last Lesson)",
+                "answer": "They attempted to close the city gates to outsiders from infected areas."
+              },
+              {
+                "question": "What was the primary function of most medieval monastic hospitals? (Last Week)",
+                "answer": "'Care not cure' (spiritual hospice care, prayer, and rest)."
+              },
+              {
+                "question": "Which four humours were believed to govern human health throughout the Middle Ages? (Prior Topic)",
+                "answer": "Blood, phlegm, yellow bile, and black bile."
+              },
+              {
+                "question": "What was Galen's medical principle of treating illness with opposite qualities called? (Prior Topic)",
+                "answer": "The Theory of Opposites."
+              },
+              {
+                "question": "What common surgical procedure involved cutting a vein or using leeches to remove bad blood? (Prior Topic)",
+                "answer": "Bloodletting (phlebotomy)."
+              },
+              {
+                "question": "Which English military surgeon pioneered clean wine dressings for wounds in the 14th century? (Prior Topic)",
+                "answer": "John Arderne."
+              },
+              {
+                "question": "Which institution held an intellectual monopoly over medicine, dissection, and book copying in medieval England? (Prior Topic)",
+                "answer": "The Roman Catholic Church."
               }
             ]
           },
@@ -39638,45 +39662,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Renaissance Enquiries & Printing",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 2.1 and earlier topics. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_2_2_1",
-                "question": "What was the official Latin motto of the Royal Society, meaning 'Take nobody’s word for it'?",
-                "options": [
-                  "Nullius in Verba",
-                  "Caveat Emptor",
-                  "Habeas Corpus",
-                  "Deus Vult"
-                ],
-                "answer": 0,
-                "explanation": "As studied in Lesson 2.1, Nullius in Verba declared that scientific truth must be proved by experiment, not ancient authority."
+                "question": "What was the official Latin motto of the Royal Society, meaning 'Take nobody’s word for it'? (Last Lesson)",
+                "answer": "Nullius in verba."
               },
               {
-                "id": "dn_2_2_2",
-                "question": "Which invention in the mid-15th century allowed medical ideas and anatomical diagrams to be copied quickly without scribal errors?",
-                "options": [
-                  "The steam engine",
-                  "The movable-type printing press",
-                  "The compound microscope",
-                  "The telegraph"
-                ],
-                "answer": 1,
-                "explanation": "Gutenberg's movable-type printing press (c.1440) revolutionized book production, ending the Church's monopolistic control over copying."
+                "question": "Which invention in the mid-15th century allowed medical ideas and anatomical diagrams to spread rapidly? (Last Lesson)",
+                "answer": "The movable type printing press (developed by Johannes Gutenberg c.1440)."
               },
               {
-                "id": "dn_2_2_3",
-                "question": "In humoral theory, what was Galen's core treatment principle of treating a hot disease with cold remedies known as?",
-                "options": [
-                  "The Germ Theory",
-                  "The Theory of Opposites",
-                  "The Theory of Spontaneous Generation",
-                  "The Principle of Inoculation"
-                ],
-                "answer": 1,
-                "explanation": "Galen taught the Theory of Opposites, using contraries (e.g. heating herbs for cold chills) to restore humoral balance."
+                "question": "In what year did King Charles II grant a Royal Charter to establish the Royal Society in London? (Last Lesson)",
+                "answer": "1662 (founded in 1660)."
+              },
+              {
+                "question": "What intellectual movement encouraged Renaissance scholars to question classical texts and experiment for themselves? (Last Lesson)",
+                "answer": "Humanism."
+              },
+              {
+                "question": "In 1348, what epidemic killed over a third of England's population? (Last Week)",
+                "answer": "The Black Death."
+              },
+              {
+                "question": "What was the core principle of medieval hospitals? (Prior Topic)",
+                "answer": "'Care not cure'."
+              },
+              {
+                "question": "Which ancient Roman physician's anatomical books remained unchallenged for over 1,300 years? (Prior Topic)",
+                "answer": "Galen."
+              },
+              {
+                "question": "What theory taught that disease was caused by an imbalance of blood, phlegm, and biles? (Prior Topic)",
+                "answer": "The Theory of the Four Humours."
+              },
+              {
+                "question": "What diagnostic method involved inspecting a patient's urine in a flask? (Prior Topic)",
+                "answer": "Uroscopy."
+              },
+              {
+                "question": "What poisonous vapor was widely believed to transmit plague throughout the medieval era? (Prior Topic)",
+                "answer": "Miasma."
               }
             ]
           },
@@ -40672,45 +40700,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Clinical Observation & Ancient Theories",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 2.2 and earlier topics. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_2_3_1",
-                "question": "Which English Renaissance physician was celebrated as the 'English Hippocrates' for emphasizing direct bedside observation?",
-                "options": [
-                  "William Harvey",
-                  "Thomas Sydenham",
-                  "Edward Jenner",
-                  "John Snow"
-                ],
-                "answer": 1,
-                "explanation": "As studied in Lesson 2.2, Thomas Sydenham was nicknamed the 'English Hippocrates' for observing symptoms directly at the bedside."
+                "question": "Which English Renaissance physician was celebrated as the 'English Hippocrates' for his bedside observations? (Last Lesson)",
+                "answer": "Thomas Sydenham."
               },
               {
-                "id": "dn_2_3_2",
-                "question": "What revolutionary treatment did Thomas Sydenham champion for smallpox patients, overturning the old sweating method?",
-                "options": [
-                  "Keeping patients cool with open windows, light blankets, and cold fluids",
-                  "Applying red-hot cautery irons to chest boils",
-                  "Sealing all windows and burning pitch in bedroom hearths",
-                  "Draining two pints of blood every morning"
-                ],
-                "answer": 0,
-                "explanation": "Sydenham introduced the cool regimen for smallpox, opening windows for fresh air and discarding suffocating blankets."
+                "question": "What revolutionary treatment did Thomas Sydenham champion for smallpox patients, rejecting hot sweating rooms? (Last Lesson)",
+                "answer": "Cool air, cold drinks, and light bedclothes."
               },
               {
-                "id": "dn_2_3_3",
-                "question": "In medieval medical schools, why did professors fail to discover anatomical errors in Galen's texts?",
-                "options": [
-                  "Galen had a magic charm that blinded students",
-                  "Dissections were done rarely, and only to confirm Galen's books rather than investigate anatomy",
-                  "The King banned students from reading Latin",
-                  "Medieval human bodies had completely different organs than modern humans"
-                ],
-                "answer": 1,
-                "explanation": "Medieval dissections were rare demonstrations where professors read Galen aloud while barber-surgeons cut, assuming any difference was a deformed cadaver."
+                "question": "What bark containing quinine did Sydenham successfully use to treat malaria (ague)? (Last Lesson)",
+                "answer": "Cinchona bark (Jesuit's bark)."
+              },
+              {
+                "question": "What did Sydenham argue about diseases, comparing them to plants? (Last Lesson)",
+                "answer": "That diseases could be classified into distinct species with distinct symptoms, rather than individual humoral imbalances."
+              },
+              {
+                "question": "What was the motto of the Royal Society, meaning 'Take nobody's word for it'? (Last Week)",
+                "answer": "Nullius in verba."
+              },
+              {
+                "question": "What machine invented c.1440 revolutionized the sharing of scientific discoveries? (Last Week)",
+                "answer": "The printing press."
+              },
+              {
+                "question": "In what year did the Black Death arrive in England? (Prior Topic)",
+                "answer": "1348."
+              },
+              {
+                "question": "What was the primary function of medieval monastic hospitals? (Prior Topic)",
+                "answer": "'Care not cure'."
+              },
+              {
+                "question": "Who developed the Theory of Opposites in ancient Rome? (Prior Topic)",
+                "answer": "Galen."
+              },
+              {
+                "question": "What Greek physician originated the method of clinical observation at the bedside? (Prior Topic)",
+                "answer": "Hippocrates."
               }
             ]
           },
@@ -41703,45 +41735,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Vesalius & Anatomical Discoveries",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 2.3 on Andreas Vesalius. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_2_4_1",
-                "question": "What was the title of Andreas Vesalius’s landmark 1543 anatomical masterpiece?",
-                "options": [
-                  "De Motu Cordis",
-                  "De Humani Corporis Fabrica",
-                  "Observationes Medicae",
-                  "Micrographia"
-                ],
-                "answer": 1,
-                "explanation": "As studied in Lesson 2.3, Vesalius published De Humani Corporis Fabrica ('On the Fabric of the Human Body') in 1543."
+                "question": "What was the title of Andreas Vesalius’s landmark 1543 anatomical masterpiece? (Last Lesson)",
+                "answer": "De Humani Corporis Fabrica ('On the Fabric of the Human Body')."
               },
               {
-                "id": "dn_2_4_2",
-                "question": "Why did Galen make over two hundred anatomical errors in his original classical medical texts?",
-                "options": [
-                  "He was legally prohibited from dissecting human bodies in ancient Rome and dissected animals instead",
-                  "He suffered from visual blindness in old age",
-                  "His books were translated into Egyptian and completely erased",
-                  "He only dissected corpses that had died of smallpox"
-                ],
-                "answer": 0,
-                "explanation": "Roman law forbade human dissection; Galen dissected apes, pigs, and dogs, wrongly assuming human internal organs were identical."
+                "question": "Why did Galen make over two hundred anatomical errors in his original classical descriptions? (Last Lesson)",
+                "answer": "Roman religious taboos banned human dissection, so Galen had to dissect animals (pigs, apes, dogs) instead."
               },
               {
-                "id": "dn_2_4_3",
-                "question": "What was the motto of the Royal Society, meaning 'Take nobody’s word for it'?",
-                "options": [
-                  "Ad fontes",
-                  "Nullius in Verba",
-                  "Carpe Diem",
-                  "In Hoc Signo Vinces"
-                ],
-                "answer": 1,
-                "explanation": "Nullius in Verba was the motto of the Royal Society, demanding experimental proof over ancient book learning."
+                "question": "Name one specific error of Galen disproved by Andreas Vesalius. (Last Lesson)",
+                "answer": "The human lower jaw has one single bone, not two; or the human breastbone has three segments, not seven."
+              },
+              {
+                "question": "How did Vesalius conduct his university anatomy lectures at Padua, breaking medieval tradition? (Last Lesson)",
+                "answer": "He dissected human cadavers himself on the operating table instead of leaving it to a barber while reading from Galen."
+              },
+              {
+                "question": "Which English physician, nicknamed the 'English Hippocrates', pioneered the classification of diseases? (Last Week)",
+                "answer": "Thomas Sydenham."
+              },
+              {
+                "question": "What cooling treatment did Sydenham prescribe for smallpox? (Last Week)",
+                "answer": "Cool air, cold drinks, and removing heavy blankets."
+              },
+              {
+                "question": "What scientific organisation in London was granted a Royal Charter in 1662? (Prior Topic)",
+                "answer": "The Royal Society."
+              },
+              {
+                "question": "What mid-15th century invention allowed Vesalius's detailed woodcut anatomical illustrations to be printed accurately? (Prior Topic)",
+                "answer": "The printing press."
+              },
+              {
+                "question": "In humoral theory, what was Galen's treatment principle of opposites called? (Prior Topic)",
+                "answer": "The Theory of Opposites."
+              },
+              {
+                "question": "What was the Latin motto meaning 'Take nobody's word for it'? (Prior Topic)",
+                "answer": "Nullius in verba."
               }
             ]
           },
@@ -42738,45 +42774,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Harvey & Blood Circulation",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 2.4 on William Harvey. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_2_5_1",
-                "question": "What major physiological discovery did William Harvey publish in 1628 in De Motu Cordis?",
-                "options": [
-                  "Blood is continuously manufactured by the liver and consumed as fuel",
-                  "Blood circulates continuously around the body, pumped by the heart through arteries and returning via veins",
-                  "Bacteria in the bloodstream cause infectious fevers",
-                  "Penicillin destroys blood infections"
-                ],
-                "answer": 1,
-                "explanation": "As studied in Lesson 2.4, Harvey proved that blood circulates in a continuous circuit through arteries and veins pumped by the heart."
+                "question": "What major physiological discovery did William Harvey publish in 1628 in De Motu Cordis? (Last Lesson)",
+                "answer": "The circulation of blood pumped continuously around the body in a one-way system by the heart."
               },
               {
-                "id": "dn_2_5_2",
-                "question": "Why did William Harvey’s discovery of blood circulation have virtually no immediate impact on curing sick patients in the 17th century?",
-                "options": [
-                  "Doctors could not perform blood transfusions or vascular surgery, and understanding circulation offered no new drugs or cures",
-                  "The King banned physicians from treating sick people with blood",
-                  "All medical books were burned during the English Civil War",
-                  "Harvey kept his discovery secret until his death"
-                ],
-                "answer": 0,
-                "explanation": "While Harvey transformed physiological understanding, seventeenth-century medicine had no blood transfusions, antibiotics, or vascular surgery, so treatments remained unchanged."
+                "question": "Why did William Harvey’s discovery of blood circulation have virtually no immediate practical effect on medical treatments? (Last Lesson)",
+                "answer": "Doctors did not know about blood groups, transfusions, or bacteria, so they continued bleeding patients to balance humours."
               },
               {
-                "id": "dn_2_5_3",
-                "question": "In 1348, which pandemic arrived in Dorset aboard trading ships and wiped out over a third of England's population?",
-                "options": [
-                  "The Spanish Flu",
-                  "The Black Death",
-                  "Cholera",
-                  "Tuberculosis"
-                ],
-                "answer": 1,
-                "explanation": "The Black Death (1348–1349) was the catastrophic bubonic and pneumonic plague pandemic studied in Lesson 1.5."
+                "question": "What mechanical analogy did Harvey use to explain how the heart functioned as a muscular pump? (Last Lesson)",
+                "answer": "A mechanical water pump (reflecting Industrial Renaissance mechanical engineering)."
+              },
+              {
+                "question": "What microscopic blood vessels connecting arteries to veins could Harvey not see without a microscope? (Last Lesson)",
+                "answer": "Capillaries (later observed by Marcello Malpighi in 1661)."
+              },
+              {
+                "question": "What was the name of Andreas Vesalius's famous 1543 anatomical book? (Last Week)",
+                "answer": "The Fabric of the Human Body (De Fabrica)."
+              },
+              {
+                "question": "Why did Galen make mistakes about the human jaw and liver? (Last Week)",
+                "answer": "He dissected animals (apes, dogs, pigs) rather than human bodies."
+              },
+              {
+                "question": "Which English doctor was known as the 'English Hippocrates'? (Prior Topic)",
+                "answer": "Thomas Sydenham."
+              },
+              {
+                "question": "What was the Latin motto of the Royal Society? (Prior Topic)",
+                "answer": "Nullius in verba ('Take nobody's word for it')."
+              },
+              {
+                "question": "In 1348, what pandemic killed up to half of England's population? (Prior Topic)",
+                "answer": "The Black Death."
+              },
+              {
+                "question": "What was the primary function of medieval monastic hospitals? (Prior Topic)",
+                "answer": "'Care not cure'."
               }
             ]
           },
@@ -43780,45 +43820,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Renaissance Medicine & Early Scientific Enquiry",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from Key Topic 2. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_3_1_1",
-                "question": "What major anatomical discovery did William Harvey publish in 1628, disproving Galen's ancient belief that blood was constantly produced by the liver?",
-                "options": [
-                  "Continuous systemic circulation of blood pumped by the heart",
-                  "The discovery of microscopic red blood cells using compound lenses",
-                  "The chemical composition of oxygen in human arterial blood",
-                  "The existence of capillary valves in the digestive system"
-                ],
-                "answer": 0,
-                "explanation": "In 'De Motu Cordis' (1628), Harvey proved mechanically that blood circulates continuously in a closed loop through arteries and veins, pumped by the heart."
+                "question": "In what year did the Great Plague strike London, killing approximately 100,000 people? (Last Lesson)",
+                "answer": "1665."
               },
               {
-                "id": "dn_3_1_2",
-                "question": "Why did Thomas Sydenham (the 'English Hippocrates') urge doctors to abandon theoretical humoral balancing in the late seventeenth century?",
-                "options": [
-                  "He believed doctors should observe symptoms closely at the bedside and classify diseases like botanists classify plants",
-                  "He advocated chemical laboratory alchemy over patient interaction",
-                  "He argued that surgery was the only legitimate medical treatment",
-                  "He believed prayer alone could cure epidemic fevers"
-                ],
-                "answer": 0,
-                "explanation": "Sydenham pioneered clinical bedside observation, identifying diseases as specific external entities with characteristic symptoms rather than unique humoral imbalances."
+                "question": "What government quarantine measure was used in London during the 1665 Great Plague? (Last Lesson)",
+                "answer": "Infected houses were locked for 28 days with a red cross and the words 'Lord have mercy upon us' painted on the door."
               },
               {
-                "id": "dn_3_1_3",
-                "question": "Which ancient medical authority formulated the Theory of the Four Humours that dominated European ideas about disease causes from Roman times until the nineteenth century?",
-                "options": [
-                  "Hippocrates (expanded by Galen)",
-                  "Aristotle (expanded by Vesalius)",
-                  "Roger Bacon (expanded by Paré)",
-                  "Avicenna (expanded by Harvey)"
-                ],
-                "answer": 0,
-                "explanation": "Hippocrates established the Four Humours (blood, phlegm, yellow bile, black bile), which Galen later developed into the Theory of Opposites."
+                "question": "What animals were blamed and slaughtered in tens of thousands during the 1665 Great Plague? (Last Lesson)",
+                "answer": "Dogs and cats (which ironically allowed plague-carrying black rats to multiply)."
+              },
+              {
+                "question": "What major physiological breakthrough did William Harvey publish in 1628? (Last Week)",
+                "answer": "The circulation of the blood pumped by the heart."
+              },
+              {
+                "question": "What anatomical book did Andreas Vesalius publish in 1543 disproving Galen? (Last Week)",
+                "answer": "The Fabric of the Human Body (De Fabrica)."
+              },
+              {
+                "question": "Which Renaissance physician was celebrated as the 'English Hippocrates'? (Prior Topic)",
+                "answer": "Thomas Sydenham."
+              },
+              {
+                "question": "What was the motto of the Royal Society, founded in the 1660s? (Prior Topic)",
+                "answer": "Nullius in verba."
+              },
+              {
+                "question": "In 1348, what plague struck England? (Prior Topic)",
+                "answer": "The Black Death."
+              },
+              {
+                "question": "What was the guiding motto of medieval monastic hospitals? (Prior Topic)",
+                "answer": "'Care not cure'."
+              },
+              {
+                "question": "What theory taught that disease was caused by an imbalance of four bodily fluids? (Prior Topic)",
+                "answer": "The Theory of the Four Humours."
               }
             ]
           },
@@ -44838,45 +44882,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Germ Theory & Renaissance Anatomy",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from prior lessons. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_3_2_1",
-                "question": "What did Louis Pasteur prove using curved swan-neck flasks in his 1861 Germ Theory experiments?",
-                "options": [
-                  "Living airborne microbes cause decay and fermentation, disproving spontaneous generation",
-                  "Miasma gases spontaneously transform into infectious bacteria",
-                  "Human body temperature naturally kills all airborne organisms",
-                  "Boiling liquids destroys the chemical vitamins required for life"
-                ],
-                "answer": 0,
-                "explanation": "Pasteur proved that sterilized broth remains completely unspoiled unless exposed to living airborne particles, demonstrating that microbes do not generate spontaneously from decaying matter."
+                "question": "What did Louis Pasteur prove using curved swan-neck flasks in his 1861 Germ Theory? (Last Lesson)",
+                "answer": "Microbes in the air caused decay and fermentation, disproving spontaneous generation."
               },
               {
-                "id": "dn_3_2_2",
-                "question": "Which crucial laboratory technique did Robert Koch develop in 1882 to prove that a specific bacterium caused tuberculosis?",
-                "options": [
-                  "Staining transparent bacteria with chemical methyl violet dyes and growing pure cultures on agar jelly",
-                  "Testing liquid patient samples with litmus paper",
-                  "Administering penicillin mould directly into infected lungs",
-                  "Using high-frequency X-ray photography on tissue samples"
-                ],
-                "answer": 0,
-                "explanation": "Koch developed the method of staining microbes with industrial aniline dyes and culturing individual species on solid nutrient agar, enabling precise identification and microphotography."
+                "question": "Which crucial laboratory technique did Robert Koch develop in 1882 to identify specific bacteria? (Last Lesson)",
+                "answer": "Using agar jelly plates and chemical industrial dyes (like methylene blue) to stain and photograph microbes."
               },
               {
-                "id": "dn_3_2_3",
-                "question": "Why was Andreas Vesalius's 1543 book 'The Fabric of the Human Body' revolutionary for medical learning?",
-                "options": [
-                  "He conducted direct dissections of human corpses, correcting over 200 of Galen's anatomical errors based on animal dissections",
-                  "He proved that blood circulates continuously in closed vessels",
-                  "He discovered the surgical benefits of antiseptic carbolic acid",
-                  "He demonstrated that the Four Humours control the nervous system"
-                ],
-                "answer": 0,
-                "explanation": "Vesalius proved through direct human dissection that Galen had made hundreds of anatomical errors because he had only dissected animals such as Barbary macaques and pigs."
+                "question": "What deadly lung disease microbe did Robert Koch discover in 1882? (Last Lesson)",
+                "answer": "The tuberculosis bacterium (Mycobacterium tuberculosis)."
+              },
+              {
+                "question": "What cholera microbe did Robert Koch identify in 1883 in India and Egypt? (Last Lesson)",
+                "answer": "Vibrio cholerae."
+              },
+              {
+                "question": "What discredited theory claimed that living microbes appeared spontaneously out of rotting matter? (Last Lesson)",
+                "answer": "Spontaneous generation."
+              },
+              {
+                "question": "What major epidemic struck London in 1665? (Last Week)",
+                "answer": "The Great Plague."
+              },
+              {
+                "question": "Who proved in 1628 that blood circulated in a closed loop pumped by the heart? (Prior Topic)",
+                "answer": "William Harvey."
+              },
+              {
+                "question": "Who published 'The Fabric of the Human Body' in 1543? (Prior Topic)",
+                "answer": "Andreas Vesalius."
+              },
+              {
+                "question": "What was the official Latin motto of the Royal Society? (Prior Topic)",
+                "answer": "Nullius in verba."
+              },
+              {
+                "question": "What ancient Greek physician originated clinical observation? (Prior Topic)",
+                "answer": "Hippocrates."
               }
             ]
           },
@@ -45875,45 +45923,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Smallpox Vaccination & Medieval Healthcare",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from prior lessons. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_3_3_1",
-                "question": "What biological substance did Edward Jenner use in 1796 to safely inoculate young James Phipps against smallpox?",
-                "options": [
-                  "Cowpox matter taken from lesions on the hand of dairymaid Sarah Nelmes",
-                  "Diluted smallpox scab powder inhaled through the nose",
-                  "Purified chemical carbolic acid mixed with sterile water",
-                  "Heated blood serum from an infected horse"
-                ],
-                "answer": 0,
-                "explanation": "Jenner used cowpox lymph from the hand of dairymaid Sarah Nelmes, confirming local Gloucestershire folklore that cowpox infection provided natural immunity against lethal smallpox."
+                "question": "What biological substance did Edward Jenner use in 1796 to safely inoculate young James Phipps against smallpox? (Last Lesson)",
+                "answer": "Cowpox matter taken from lesions on the hand of dairymaid Sarah Nelmes."
               },
               {
-                "id": "dn_3_3_2",
-                "question": "Why did Parliament pass the 1840 Vaccination Act providing free cowpox vaccination and banning dangerous variolation?",
-                "options": [
-                  "Variolation used live smallpox scabs and frequently triggered deadly epidemics or killed patients",
-                  "Cowpox was significantly cheaper to produce in industrial laboratories",
-                  "Variolation was discovered to cause bubonic plague",
-                  "The Royal Navy required all sailors to receive herbal inoculations"
-                ],
-                "answer": 0,
-                "explanation": "Variolation inoculated patients with virulent live smallpox, which carried a 2–3% mortality rate and frequently sparked secondary outbreaks among the untreated population."
+                "question": "Why did Parliament pass the 1840 Vaccination Act providing free cowpox vaccination and banning dangerous variolation? (Last Lesson)",
+                "answer": "Variolation inoculated patients with virulent live smallpox, which carried a 2–3% mortality rate and frequently sparked secondary epidemics."
               },
               {
-                "id": "dn_3_3_3",
-                "question": "What was the primary function of most medieval hospitals (c.1250–c.1500) run by monastic orders in England?",
-                "options": [
-                  "Providing spiritual care, shelter, and hospitality ('care not cure') for travellers and the elderly",
-                  "Conducting anatomical surgery and amputations under anaesthesia",
-                  "Quarantining victims of infectious tropical diseases",
-                  "Licensing university-trained physicians and apothecaries"
-                ],
-                "answer": 0,
-                "explanation": "Medieval hospitals run by monks and nuns focused on prayer, rest, and basic nourishment ('care not cure') rather than medical treatment or surgical procedures."
+                "question": "In what year did the British government make smallpox vaccination compulsory for infants? (Last Lesson)",
+                "answer": "1853."
+              },
+              {
+                "question": "What was the older, dangerous method of scratching live smallpox scabs into a person's skin called? (Last Lesson)",
+                "answer": "Variolation (or inoculation)."
+              },
+              {
+                "question": "What French scientist published the Germ Theory in 1861? (Last Week)",
+                "answer": "Louis Pasteur."
+              },
+              {
+                "question": "What German doctor developed chemical staining techniques to discover the tuberculosis and cholera bacteria? (Last Week)",
+                "answer": "Robert Koch."
+              },
+              {
+                "question": "What was the primary function of most medieval hospitals (c.1250–c.1500) run by monastic orders in England? (Prior Topic)",
+                "answer": "'Care not cure' (providing spiritual comfort, rest, and prayer rather than medical treatment)."
+              },
+              {
+                "question": "What major physiological discovery did William Harvey publish in 1628? (Prior Topic)",
+                "answer": "The circulation of blood pumped by the heart."
+              },
+              {
+                "question": "What landmark anatomical book did Andreas Vesalius publish in 1543? (Prior Topic)",
+                "answer": "The Fabric of the Human Body (De Fabrica)."
+              },
+              {
+                "question": "What was the Latin motto meaning 'Take nobody's word for it'? (Prior Topic)",
+                "answer": "Nullius in verba."
               }
             ]
           },
@@ -46899,45 +46951,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Hospital Reform & Early Modern Surgery",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from prior lessons. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_3_4_1",
-                "question": "What major architectural innovation did Florence Nightingale advocate in her 1859 book 'Notes on Hospitals' to prevent ward cross-infection?",
-                "options": [
-                  "The Pavilion Plan with detached, cross-ventilated ward blocks and wide bed spacing",
-                  "Underground windowless wards sealed against city smog",
-                  "Single-storey circular wards heated by central coal stoves",
-                  "Multi-storey towers with shared central ventilation chimneys"
-                ],
-                "answer": 0,
-                "explanation": "Nightingale's Pavilion Plan used separate multi-windowed ward pavilions connected by open walkways, ensuring fresh airflow and stopping stagnant foul air from circulating between wards."
+                "question": "What major architectural innovation did Florence Nightingale advocate in her 1859 Notes on Hospitals? (Last Lesson)",
+                "answer": "The Pavilion Plan (separate multi-storey brick pavilions connected by corridors, with large windows for cross-ventilation)."
               },
               {
-                "id": "dn_3_4_2",
-                "question": "How did Mary Seacole deliver medical assistance to British soldiers in the Crimean War after being rejected by the War Office?",
-                "options": [
-                  "She funded her own journey, built the 'British Hotel' near the frontline, and treated wounded soldiers directly on the battlefield",
-                  "She joined a French Catholic order of nursing sisters in Sevastopol",
-                  "She opened a military medical academy in Kingston, Jamaica",
-                  "She managed the hospital supply warehouse in Constantinople"
-                ],
-                "answer": 0,
-                "explanation": "Seacole travelled independently to the Crimea, established the British Hotel at Spring Hill, and personally attended wounded soldiers on the battlefield under fire with herbal remedies."
+                "question": "How did Mary Seacole deliver medical assistance to British soldiers in the Crimean War? (Last Lesson)",
+                "answer": "She funded her own passage to the Crimea and established the 'British Hotel' near Balaclava, treating wounded soldiers directly on the battlefield."
               },
               {
-                "id": "dn_3_4_3",
-                "question": "What sixteenth-century surgical innovation did French military surgeon Ambroise Paré introduce to stop bleeding during amputations?",
-                "options": [
-                  "Silk thread ligatures to tie off arteries, replacing agonizing red-hot cautery irons",
-                  "Inhaling laughing gas before operations",
-                  "Injecting carbolic acid into severed veins",
-                  "Dressing wounds with boiling elderberry oil"
-                ],
-                "answer": 0,
-                "explanation": "Paré introduced silk ligatures to tie individual bleeding vessels during amputations, replacing the traditional horrific technique of searing flesh with red-hot cautery irons."
+                "question": "At which military hospital in 1854 did Florence Nightingale reduce mortality from over 40% to 2% through sanitary cleaning? (Last Lesson)",
+                "answer": "The Barrack Hospital at Scutari."
+              },
+              {
+                "question": "What training institution did Nightingale establish in 1860 at St Thomas' Hospital in London? (Last Lesson)",
+                "answer": "The Nightingale School of Nursing."
+              },
+              {
+                "question": "What vaccine did Edward Jenner develop in 1796 using cowpox? (Last Week)",
+                "answer": "The smallpox vaccine."
+              },
+              {
+                "question": "In what year did Louis Pasteur publish his Germ Theory? (Last Week)",
+                "answer": "1861."
+              },
+              {
+                "question": "What German scientist stained bacteria and discovered the tuberculosis microbe in 1882? (Last Week)",
+                "answer": "Robert Koch."
+              },
+              {
+                "question": "What sixteenth-century surgical innovation did French military surgeon Ambroise Paré introduce? (Prior Topic)",
+                "answer": "Soothing rose oil, egg yolk, and turpentine ointment instead of boiling elderberry oil, and silk ligatures to tie off arteries."
+              },
+              {
+                "question": "Who proved in 1628 that blood circulated in a one-way system? (Prior Topic)",
+                "answer": "William Harvey."
+              },
+              {
+                "question": "What was the guiding philosophy of medieval monastic hospitals? (Prior Topic)",
+                "answer": "'Care not cure'."
               }
             ]
           },
@@ -47957,45 +48013,49 @@
             }
           },
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Nineteenth-Century Surgery & Medieval Epidemics",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from prior lessons. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_3_5_1",
-                "question": "What effective anaesthetic agent did James Young Simpson discover in 1847 to replace irritating ether in surgical operations?",
-                "options": [
-                  "Chloroform",
-                  "Nitrous oxide (laughing gas)",
-                  "Carbolic acid vapour",
-                  "Cocaine hydrochloride"
-                ],
-                "answer": 0,
-                "explanation": "Simpson discovered that inhaling chloroform produced deep, rapid anaesthesia without the violent lung irritation and coughing triggered by ether."
+                "question": "What effective anaesthetic agent did James Young Simpson discover in 1847 to replace ether? (Last Lesson)",
+                "answer": "Chloroform."
               },
               {
-                "id": "dn_3_5_2",
-                "question": "What chemical antiseptic did Joseph Lister use in 1865 to prevent wound infection and gangrene in compound fractures?",
-                "options": [
-                  "Carbolic acid (phenol)",
-                  "Mercury chloride",
-                  "Sulphuric ether",
-                  "Boiling elderberry oil"
-                ],
-                "answer": 0,
-                "explanation": "Lister used carbolic acid (phenol), inspired by its use in treating sewage, soaking dressings and spraying the air to destroy septic germs entering surgical incisions."
+                "question": "What chemical antiseptic did Joseph Lister use in 1865 to prevent wound sepsis in compound fractures? (Last Lesson)",
+                "answer": "Carbolic acid."
               },
               {
-                "id": "dn_3_5_3",
-                "question": "What environmental cause did medieval and early modern authorities blame for transmitting the Black Death (1348) and the Great Plague (1665)?",
-                "options": [
-                  "Miasma (poisonous foul air and corruption rising from rotting filth)",
-                  "Contaminated deep groundwater pumped through lead pipes",
-                  "Bacterial fleas carried by domestic dogs and cats",
-                  "Unpasteurized dairy milk from country cattle"
-                ],
-                "answer": 0,
-                "explanation": "Authorities believed plagues were spread by miasma—corrupt, foul-smelling atmospheric air created by rotting organic matter, stagnant water, and human filth."
+                "question": "What unintended consequence did the introduction of anaesthetics have on surgical mortality between 1846 and 1870? (Last Lesson)",
+                "answer": "The 'Black Period of Surgery' — surgeons operated deeper and longer, carrying unseen germs deeper into body cavities, increasing deaths from gangrene and sepsis."
+              },
+              {
+                "question": "Which British monarch endorsed chloroform in 1853 by using it during the birth of Prince Leopold? (Last Lesson)",
+                "answer": "Queen Victoria."
+              },
+              {
+                "question": "What hospital ward design with high ceilings and cross-ventilation did Florence Nightingale champion? (Last Week)",
+                "answer": "The Pavilion Plan."
+              },
+              {
+                "question": "At which military hospital did Florence Nightingale slash death rates from 42% to 2% in the 1850s? (Last Week)",
+                "answer": "The Barrack Hospital at Scutari."
+              },
+              {
+                "question": "What did Edward Jenner use in 1796 to vaccinate against smallpox? (Prior Topic)",
+                "answer": "Cowpox lymph."
+              },
+              {
+                "question": "What theory published by Louis Pasteur in 1861 inspired Joseph Lister to use carbolic acid? (Prior Topic)",
+                "answer": "The Germ Theory."
+              },
+              {
+                "question": "What French surgeon in the 16th century introduced ligatures and soothing wound ointments? (Prior Topic)",
+                "answer": "Ambroise Paré."
+              },
+              {
+                "question": "What was the Latin motto of the Royal Society? (Prior Topic)",
+                "answer": "Nullius in verba."
               }
             ]
           },
@@ -49443,45 +49503,49 @@
             }
           ],
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Nineteenth-Century Germ Theory & Bacteriology",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from Key Topic 3. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_4_1_1",
-                "question": "What did Louis Pasteur prove in his 1861 Germ Theory using curved swan-neck flasks?",
-                "options": [
-                  "Decay and fermentation are caused by living airborne microorganisms, disproving spontaneous generation",
-                  "Miasma gases spontaneously transform into infectious bacteria",
-                  "Human body heat destroys all airborne particles",
-                  "Boiling liquids destroys essential vital life forces"
-                ],
-                "answer": 0,
-                "explanation": "Pasteur proved that sterilized broth remains pure indefinitely unless exposed to airborne microbes, demonstrating that living organisms do not spontaneously generate from dead matter."
+                "question": "What did Dr John Snow remove in 1854 to halt the deadly Soho cholera epidemic? (Last Lesson)",
+                "answer": "The handle of the Broad Street water pump."
               },
               {
-                "id": "dn_4_1_2",
-                "question": "Which crucial laboratory method did Robert Koch establish in 1882 to identify the bacterium causing tuberculosis?",
-                "options": [
-                  "Staining bacteria with aniline chemical dyes and culturing pure colonies on solid agar jelly",
-                  "Testing patient blood with paper litmus strips",
-                  "Administering penicillin mould directly into tissue samples",
-                  "Using high-frequency X-rays to image internal organs"
-                ],
-                "answer": 0,
-                "explanation": "Koch developed methyl violet and methylene blue chemical staining, solid agar nutrient growth mediums, and high-resolution microphotography to isolate specific pathogens."
+                "question": "What landmark public health legislation did Parliament pass in 1875, ending government laissez-faire? (Last Lesson)",
+                "answer": "The 1875 Public Health Act (which made it compulsory for local councils to provide clean water, sewers, and street lighting)."
               },
               {
-                "id": "dn_4_1_3",
-                "question": "Why did Edward Jenner's 1796 cowpox vaccination represent a dramatic improvement over traditional smallpox variolation?",
-                "options": [
-                  "Cowpox was safe and non-contagious, whereas variolation used virulent live smallpox that could kill or ignite epidemics",
-                  "Cowpox cured patients who already had advanced smallpox pustules",
-                  "Variolation required expensive chemical laboratory synthesis",
-                  "Cowpox protected patients against both smallpox and cholera"
-                ],
-                "answer": 0,
-                "explanation": "Variolation inoculated patients with live smallpox, carrying a 2–3% mortality rate and spreading epidemics. Jenner's cowpox vaccine was mild, completely non-fatal, and non-contagious to others."
+                "question": "What massive civil engineering project did Sir Joseph Bazalgette construct between 1859 and 1875 following the 'Great Stink'? (Last Lesson)",
+                "answer": "The London underground sewage network (over 1,100 miles of street sewers and 82 miles of main intercepting sewers)."
+              },
+              {
+                "question": "What effective surgical anaesthetic did James Simpson discover in 1847? (Last Week)",
+                "answer": "Chloroform."
+              },
+              {
+                "question": "What antiseptic chemical did Joseph Lister introduce in 1865? (Last Week)",
+                "answer": "Carbolic acid."
+              },
+              {
+                "question": "What hospital ward architecture did Florence Nightingale champion in the 1860s? (Last Week)",
+                "answer": "The Pavilion Plan."
+              },
+              {
+                "question": "What biological substance did Edward Jenner use in 1796 to prevent smallpox? (Prior Topic)",
+                "answer": "Cowpox lymph."
+              },
+              {
+                "question": "What French scientist proved in 1861 that airborne microbes caused decay and disease? (Prior Topic)",
+                "answer": "Louis Pasteur (The Germ Theory)."
+              },
+              {
+                "question": "What German scientist developed laboratory methods to discover the tuberculosis and cholera bacteria? (Prior Topic)",
+                "answer": "Robert Koch."
+              },
+              {
+                "question": "Who proved the circulation of blood in 1628? (Prior Topic)",
+                "answer": "William Harvey."
               }
             ]
           },
@@ -50437,45 +50501,49 @@
             }
           ],
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Genetics, DNA & Nineteenth-Century Surgery",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from prior lessons. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_4_2_1",
-                "question": "What geometric molecular structure did James Watson and Francis Crick discover for DNA in 1953?",
-                "options": [
-                  "A double helix spiral linked by complementary base pairs",
-                  "A single circular chromosome ring of amino acids",
-                  "A triple-strand protein chain of carbohydrate molecules",
-                  "A rigid linear grid of radioactive carbon atoms"
-                ],
-                "answer": 0,
-                "explanation": "Watson and Crick established that DNA consists of two spiral strands coiled into a double helix, held together by hydrogen bonds between specific complementary base pairs (A-T and G-C)."
+                "question": "What geometric molecular structure did James Watson and Francis Crick discover for DNA in 1953? (Last Lesson)",
+                "answer": "The double helix."
               },
               {
-                "id": "dn_4_2_2",
-                "question": "What was the primary achievement of the international Human Genome Project completed in 2003?",
-                "options": [
-                  "Sequencing and mapping all three billion chemical base pairs in the human genetic code",
-                  "Eradicating all inherited heart and lung diseases in newborn infants",
-                  "Creating the world's first synthetic biological antibiotic",
-                  "Inventing computerized magnetic resonance imaging (MRI)"
-                ],
-                "answer": 0,
-                "explanation": "The Human Genome Project mapped every human gene across all twenty-three chromosome pairs, providing the foundational atlas for modern genetic diagnosis and targeted medicine."
+                "question": "Which crystallographer produced Photograph 51, providing the essential X-ray image that revealed DNA's helical structure? (Last Lesson)",
+                "answer": "Rosalind Franklin (alongside Maurice Wilkins)."
               },
               {
-                "id": "dn_4_2_3",
-                "question": "What chemical antiseptic did Joseph Lister introduce in 1865 to prevent fatal sepsis in compound fracture operations?",
-                "options": [
-                  "Carbolic acid (phenol)",
-                  "Boiling elderberry oil",
-                  "Sulphuric ether vapour",
-                  "Chloroform solution"
-                ],
-                "answer": 0,
-                "explanation": "Lister used carbolic acid (phenol), applying it to surgical bandages and operating rooms to destroy airborne microbes before they could enter incisions and cause gangrene."
+                "question": "What was the primary achievement of the international Human Genome Project completed in 2003? (Last Lesson)",
+                "answer": "Successfully mapping and sequencing every single gene in the human genetic code (3 billion DNA base pairs)."
+              },
+              {
+                "question": "What 1875 legislation forced local town councils to provide clean water, sewers, and public health inspectors? (Last Week)",
+                "answer": "The 1875 Public Health Act."
+              },
+              {
+                "question": "What did Dr John Snow prove in 1854 about the transmission of cholera? (Last Week)",
+                "answer": "It was a waterborne disease transmitted by drinking water contaminated with human sewage, not by airborne miasma."
+              },
+              {
+                "question": "What anaesthetic did James Simpson discover in 1847? (Prior Topic)",
+                "answer": "Chloroform."
+              },
+              {
+                "question": "What chemical did Joseph Lister spray in operating theatres in 1865 to prevent infection? (Prior Topic)",
+                "answer": "Carbolic acid."
+              },
+              {
+                "question": "What did Louis Pasteur's 1861 Germ Theory prove? (Prior Topic)",
+                "answer": "Microbes in the air caused decay and disease."
+              },
+              {
+                "question": "Who discovered the smallpox vaccine in 1796? (Prior Topic)",
+                "answer": "Edward Jenner."
+              },
+              {
+                "question": "What was the primary function of medieval monastic hospitals? (Prior Topic)",
+                "answer": "'Care not cure'."
               }
             ]
           },
@@ -51425,45 +51493,49 @@
             }
           ],
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Diagnostic Technology & Victorian Public Health",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from prior lessons. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_4_3_1",
-                "question": "What internal diagnostic imaging technology was discovered by German physicist Wilhelm Röntgen in December 1895?",
-                "options": [
-                  "X-rays (radiography)",
-                  "Ultrasound echography",
-                  "Positron emission tomography (PET)",
-                  "Electrocardiography (ECG)"
-                ],
-                "answer": 0,
-                "explanation": "Röntgen discovered X-rays in 1895, creating the first medical radiograph of his wife's hand and enabling doctors to view skeletal bones and foreign objects inside the body without surgery."
+                "question": "What internal diagnostic imaging technology was discovered by German physicist Wilhelm Röntgen in 1895? (Last Lesson)",
+                "answer": "X-rays."
               },
               {
-                "id": "dn_4_3_2",
-                "question": "What major diagnostic machine did Sir Godfrey Hounsfield build at EMI in 1971 to image soft internal tissues like the brain in 3D slices?",
-                "options": [
-                  "The CT (Computerized Tomography) scanner",
-                  "The heart-lung bypass pump",
-                  "The kidney dialysis machine",
-                  "The electron microscope"
-                ],
-                "answer": 0,
-                "explanation": "Hounsfield invented the CT scanner in 1971, combining rotating X-ray beams with digital computing to produce cross-sectional slices of soft internal organs."
+                "question": "What major 3D medical scanning machine did Sir Godfrey Hounsfield develop at EMI in 1971? (Last Lesson)",
+                "answer": "The CT (Computed Tomography) scanner."
               },
               {
-                "id": "dn_4_3_3",
-                "question": "Which landmark legislation in 1875 finally ended the British government's laissez-faire policy by compelling all local councils to provide clean water, sewers, and medical officers?",
-                "options": [
-                  "The Public Health Act 1875",
-                  "The Factory Reform Act 1833",
-                  "The Poor Law Amendment Act 1834",
-                  "The Vaccination Act 1840"
-                ],
-                "answer": 0,
-                "explanation": "The 1875 Public Health Act was compulsory, forcing local authorities to pave streets, build sewers, supply clean water, appoint Medical Officers of Health, and inspect food."
+                "question": "What diagnostic imaging technology developed in the 1970s uses powerful magnetic fields and radio waves instead of radiation? (Last Lesson)",
+                "answer": "MRI (Magnetic Resonance Imaging)."
+              },
+              {
+                "question": "Name one major lifestyle factor identified in the 20th century as a leading cause of cardiovascular disease and lung cancer. (Last Lesson)",
+                "answer": "Cigarette smoking (or high-sugar/high-fat diets and alcohol misuse)."
+              },
+              {
+                "question": "Who discovered the double-helix chemical structure of DNA in 1953? (Last Week)",
+                "answer": "James Watson and Francis Crick (using Rosalind Franklin's Photograph 51)."
+              },
+              {
+                "question": "In what year was the international Human Genome Project completed? (Last Week)",
+                "answer": "2003."
+              },
+              {
+                "question": "What 1875 act ended government laissez-faire in Britain by requiring councils to provide sewers and clean water? (Prior Topic)",
+                "answer": "The 1875 Public Health Act."
+              },
+              {
+                "question": "What did John Snow map in London in 1854 to trace cholera? (Prior Topic)",
+                "answer": "The Broad Street water pump."
+              },
+              {
+                "question": "What French scientist published the Germ Theory in 1861? (Prior Topic)",
+                "answer": "Louis Pasteur."
+              },
+              {
+                "question": "Who discovered the circulation of blood in 1628? (Prior Topic)",
+                "answer": "William Harvey."
               }
             ]
           },
@@ -52413,45 +52485,49 @@
             }
           ],
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Magic Bullets, The NHS & Hospital Care",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from prior lessons. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_4_4_1",
-                "question": "What chemical 'magic bullet' did Paul Ehrlich and Sahachiro Hata discover in 1909 to target the bacterium causing syphilis?",
-                "options": [
-                  "Salvarsan 606 (arsphenamine)",
-                  "Prontosil red dye",
-                  "Carbolic acid mist",
-                  "Chloroform vapour"
-                ],
-                "answer": 0,
-                "explanation": "Ehrlich and Hata tested 606 arsenic compounds before discovering that Salvarsan 606 destroyed the syphilis bacterium without poisoning the patient."
+                "question": "What chemical 'magic bullet' did Paul Ehrlich and Sahachiro Hata discover in 1909 to cure syphilis? (Last Lesson)",
+                "answer": "Salvarsan 606."
               },
               {
-                "id": "dn_4_4_2",
-                "question": "On what exact date was Britain's National Health Service (NHS) officially launched by Health Minister Aneurin Bevan?",
-                "options": [
-                  "5 July 1948",
-                  "11 November 1918",
-                  "8 May 1945",
-                  "1 January 1953"
-                ],
-                "answer": 0,
-                "explanation": "The NHS began operations on 5 July 1948, taking over 2,750 voluntary and municipal hospitals to provide free medical care to every citizen."
+                "question": "What second 'magic bullet' (a red dye discovered by Gerhard Domagk in 1932) cured deadly streptococcal blood poisoning? (Last Lesson)",
+                "answer": "Prontosil."
               },
               {
-                "id": "dn_4_4_3",
-                "question": "How did Florence Nightingale lower mortality rates from over 40% to 2% at Scutari Hospital during the Crimean War in 1855?",
-                "options": [
-                  "Enforcing strict sanitation: flushing blocked sewers, boiling bedsheets, scrubbing floors, and improving ventilation",
-                  "Administering penicillin injections to every wounded soldier",
-                  "Injecting compound 606 to destroy hospital gangrene",
-                  "Introducing computerized CT brain scanning"
-                ],
-                "answer": 0,
-                "explanation": "Nightingale enforced rigorous hygiene, nutritious food, clean boiled linen, and unblocked sewer drainage, stopping hospital-acquired infections like typhus and cholera."
+                "question": "On what exact date was Britain's National Health Service (NHS) officially launched? (Last Lesson)",
+                "answer": "5 July 1948."
+              },
+              {
+                "question": "Which Labour Minister of Health founded the NHS, declaring healthcare should be free at the point of delivery? (Last Lesson)",
+                "answer": "Aneurin (Nye) Bevan."
+              },
+              {
+                "question": "What imaging breakthrough did Wilhelm Röntgen discover in 1895? (Last Week)",
+                "answer": "X-rays."
+              },
+              {
+                "question": "What 3D scanner did Godfrey Hounsfield build in 1971? (Last Week)",
+                "answer": "The CT scanner."
+              },
+              {
+                "question": "Who discovered the molecular structure of DNA in 1953? (Last Week)",
+                "answer": "Watson and Crick (with Franklin and Wilkins)."
+              },
+              {
+                "question": "What 1875 legislation made public health provisions compulsory in Britain? (Prior Topic)",
+                "answer": "The 1875 Public Health Act."
+              },
+              {
+                "question": "Who proved cholera was waterborne at Broad Street in 1854? (Prior Topic)",
+                "answer": "Dr John Snow."
+              },
+              {
+                "question": "Who developed the first smallpox vaccine in 1796? (Prior Topic)",
+                "answer": "Edward Jenner."
               }
             ]
           },
@@ -53414,45 +53490,49 @@
             }
           ],
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Penicillin & Nineteenth-Century Cholera",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from prior lessons. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_4_5_1",
-                "question": "What miracle antibiotic did Howard Florey and Ernst Chain purify and test on human patients in Oxford between 1938 and 1941?",
-                "options": [
-                  "Penicillin",
-                  "Salvarsan 606",
-                  "Prontosil",
-                  "Carbolic acid"
-                ],
-                "answer": 0,
-                "explanation": "Florey, Chain, and Heatley successfully extracted and concentrated Alexander Fleming's penicillin mould, demonstrating its miraculous therapeutic power in mice and human clinical trials."
+                "question": "What miracle antibiotic did Alexander Fleming discover in 1928, and which Howard Florey and Ernst Chain purified in 1940? (Last Lesson)",
+                "answer": "Penicillin."
               },
               {
-                "id": "dn_4_5_2",
-                "question": "How did industrial deep-tank fermentation in Peoria, Illinois (USA) transform the supply of penicillin by 1944?",
-                "options": [
-                  "It mass-produced billions of units using corn steep liquor and cantaloupe mould, supplying all Allied D-Day forces",
-                  "It replaced penicillin with synthetic aspirin tablets",
-                  "It proved that penicillin had no effect on bacterial wounds",
-                  "It restricted penicillin use strictly to naval hospital ships"
-                ],
-                "answer": 0,
-                "explanation": "Peoria researchers discovered that corn steep liquor and a hyper-productive mould from a Peoria cantaloupe allowed industrial deep-tank brewing, producing billions of doses for the Normandy landings."
+                "question": "What commercial manufacturing method developed in Peoria, Illinois (USA) allowed mass production of penicillin for D-Day in 1944? (Last Lesson)",
+                "answer": "Deep-tank industrial fermentation using corn-steep liquor."
               },
               {
-                "id": "dn_4_5_3",
-                "question": "What epidemiological detective method did Dr John Snow use in 1854 to prove that cholera was transmitted by drinking water rather than miasma?",
-                "options": [
-                  "Plotting cholera fatalities on a street map around the Broad Street water pump in Soho",
-                  "Examining cholera bacteria under high-powered electron microscopes",
-                  "Injecting sewage samples into laboratory guinea pigs",
-                  "Testing London air with chemical litmus paper"
-                ],
-                "answer": 0,
-                "explanation": "Snow created an epidemiological spot map showing that cholera deaths were clustered around the Broad Street pump, and proved brewery workers drinking beer were completely uninfected."
+                "question": "On what date was Britain's National Health Service (NHS) founded by Aneurin Bevan? (Last Lesson)",
+                "answer": "5 July 1948."
+              },
+              {
+                "question": "What was the first chemical 'magic bullet' discovered by Paul Ehrlich in 1909? (Last Week)",
+                "answer": "Salvarsan 606."
+              },
+              {
+                "question": "What second magic bullet did Gerhard Domagk discover in 1932? (Last Week)",
+                "answer": "Prontosil."
+              },
+              {
+                "question": "What medical imaging breakthrough did Wilhelm Röntgen discover in 1895? (Last Week)",
+                "answer": "X-rays."
+              },
+              {
+                "question": "What molecular structure did Watson and Crick uncover in 1953? (Prior Topic)",
+                "answer": "The double helix of DNA."
+              },
+              {
+                "question": "What 1875 Act made sewers and clean water compulsory in British cities? (Prior Topic)",
+                "answer": "The 1875 Public Health Act."
+              },
+              {
+                "question": "What did John Snow remove in 1854 to stop cholera? (Prior Topic)",
+                "answer": "The handle of the Broad Street water pump."
+              },
+              {
+                "question": "Who published the Germ Theory in 1861? (Prior Topic)",
+                "answer": "Louis Pasteur."
               }
             ]
           },
@@ -53865,45 +53945,49 @@
             "Evaluate the medical and logistical challenges posed by the major battles of the Somme, Arras, and Cambrai."
           ],
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Diagnostic & Surgical Foundations",
-            "instructions": "Answer the retrieval questions below recalling foundational knowledge from prior Key Topics. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_5_1_1",
-                "question": "In 1895, Wilhelm Röntgen discovered X-rays. Why was this immediately recognized as a revolutionary breakthrough for surgical diagnosis?",
-                "options": [
-                  "It allowed physicians to view internal bone fractures and foreign objects without exploratory surgery",
-                  "It chemically dissolved malignant tumours inside the lungs",
-                  "It acted as an antiseptic barrier preventing bacterial infection",
-                  "It served as an effective anaesthetic during emergency amputations"
-                ],
-                "answer": 0,
-                "explanation": "Röntgen's X-rays allowed doctors for the first time to view internal bones and foreign metallic objects inside the living body without cutting through flesh."
+                "question": "What epidemiological study by Richard Doll and Austin Bradford Hill in 1950 proved the link between smoking and lung cancer? (Last Lesson)",
+                "answer": "The British Doctors' Study (tracking 40,000 doctors over several years)."
               },
               {
-                "id": "dn_5_1_2",
-                "question": "In 1901, Karl Landsteiner discovered the ABO human blood groups. Why was this vital for blood transfusions?",
-                "options": [
-                  "It explained why previous transfusions had caused fatal agglutination and made safe blood matching possible",
-                  "It allowed blood to be stored indefinitely without refrigeration",
-                  "It proved that blood had no connection to human disease",
-                  "It allowed animal blood to be safely transfused into human casualties"
-                ],
-                "answer": 0,
-                "explanation": "Landsteiner discovered that incompatible blood types cause fatal agglutination (clumping of red cells), explaining past transfusion deaths and enabling safe donor matching."
+                "question": "What 2007 legislation banned smoking in all enclosed public work and leisure spaces across England? (Last Lesson)",
+                "answer": "The 2007 Health Act (Smoking Ban)."
               },
               {
-                "id": "dn_5_1_3",
-                "question": "What antiseptic technique did Joseph Lister introduce in 1865 to prevent wound sepsis in hospitals?",
-                "options": [
-                  "Carbolic acid spray and dressings to kill airborne bacteria on surgical wounds",
-                  "Boiling all surgical instruments in high-pressure steam autoclaves",
-                  "Wearing sterile thin rubber surgical gloves",
-                  "Prescribing oral penicillin tablets before surgery"
-                ],
-                "answer": 0,
-                "explanation": "Lister used carbolic acid (phenol) spray and dressings to kill airborne bacteria in the operating theatre, reducing post-operative surgical sepsis."
+                "question": "What 2016 law forced cigarette manufacturers to sell cigarettes in standardised sludge-brown boxes with graphic health warnings? (Last Lesson)",
+                "answer": "Standardised / Plain Packaging legislation."
+              },
+              {
+                "question": "What miracle antibiotic did Fleming discover in 1928, purified by Florey and Chain in the 1940s? (Last Week)",
+                "answer": "Penicillin."
+              },
+              {
+                "question": "On what date was the National Health Service (NHS) launched? (Last Week)",
+                "answer": "5 July 1948."
+              },
+              {
+                "question": "What was the first synthetic 'magic bullet' discovered by Paul Ehrlich in 1909? (Prior Topic)",
+                "answer": "Salvarsan 606."
+              },
+              {
+                "question": "In 1895, Wilhelm Röntgen discovered X-rays. Why was this immediately recognized as a vital surgical breakthrough? (Prior Topic)",
+                "answer": "It allowed doctors to photograph bone fractures and locate foreign metal bullets or shrapnel without invasive exploratory surgery."
+              },
+              {
+                "question": "In 1901, Karl Landsteiner discovered the ABO human blood groups. Why was this vital for surgery? (Prior Topic)",
+                "answer": "It explained why earlier blood transfusions caused fatal agglutination (clumping), enabling safe donor-recipient matching."
+              },
+              {
+                "question": "What antiseptic technique did Joseph Lister introduce in 1865 to prevent wound sepsis? (Prior Topic)",
+                "answer": "Carbolic acid spray and soaked dressings."
+              },
+              {
+                "question": "What was the guiding principle of medieval monastic hospitals? (Prior Topic)",
+                "answer": "'Care not cure'."
               }
             ]
           },
@@ -54805,45 +54889,49 @@
             "Evaluate the importance of latrine sanitation, water chlorination, and underground dressing stations."
           ],
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Trench Geography & Microbial Causes",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 5.1 and prior Key Topics. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_5_2_1",
-                "question": "Why did the zig-zag layout of trenches on the Western Front protect British soldiers from artillery shells?",
-                "options": [
-                  "Traverses absorbed the shockwave and shrapnel, preventing blasts from travelling down the trench line",
-                  "The angles allowed rain water to drain away completely into rivers",
-                  "The pattern prevented underground tunnellers from placing mines",
-                  "It forced enemy aircraft to fly in circles to bomb them"
-                ],
-                "answer": 0,
-                "explanation": "Earth traverses dug at 90-degree angles contained artillery explosions to a single fire bay and prevented enemy machine guns from sweeping the entire length of the trench."
+                "question": "Why did the zig-zag layout of trenches on the Western Front protect British soldiers? (Last Lesson)",
+                "answer": "It prevented enemy artillery shrapnel and blast waves from travelling down straight lines, and stopped enemy trench-raiders firing down the whole line."
               },
               {
-                "id": "dn_5_2_2",
-                "question": "Why was casualty evacuation particularly agonizing and slow in the Ypres Salient in 1917?",
-                "options": [
-                  "Low-lying clay terrain and destroyed drainage created deep liquid mud that bogged down stretcher squads",
-                  "The British Army had no motor ambulances anywhere in France",
-                  "All base hospitals had been captured by the German Army",
-                  "Stretcher bearers were forbidden from entering communication trenches"
-                ],
-                "answer": 0,
-                "explanation": "Continuous heavy artillery barrages destroyed the Flanders drainage dykes, turning the low clay soil into deep morasses where stretcher bearers sank to their waists."
+                "question": "Why was casualty evacuation particularly agonizing and slow in the Ypres Salient? (Last Lesson)",
+                "answer": "The low-lying waterlogged clay, destroyed drainage systems, and constant shell-craters turned the ground into a deep sea of mud."
               },
               {
-                "id": "dn_5_2_3",
-                "question": "What was the first chemical antibacterial 'magic bullet' discovered by Paul Ehrlich in 1909?",
-                "options": [
-                  "Salvarsan 606 to treat syphilis",
-                  "Prontosil to treat streptococcus",
-                  "Penicillin to treat staphylococcus",
-                  "Carbolic acid to sterilize wounds"
-                ],
-                "answer": 0,
-                "explanation": "Paul Ehrlich and Sahachiro Hata discovered Salvarsan 606 (arsphenamine) in 1909, the first synthetic chemical compound that targeted a specific bacterium without killing the patient."
+                "question": "What strategic battle between July and November 1916 resulted in 57,000 British casualties on its very first day? (Last Lesson)",
+                "answer": "The Battle of the Somme (1 July 1916)."
+              },
+              {
+                "question": "What underground chalk tunnel network in 1917 sheltered 25,000 British troops and contained a complete underground hospital? (Last Lesson)",
+                "answer": "The Arras cave network (built by New Zealand and British tunnelers)."
+              },
+              {
+                "question": "What diagnostic imaging discovered in 1895 by Röntgen was used to locate shrapnel in wounded soldiers? (Last Week)",
+                "answer": "X-rays."
+              },
+              {
+                "question": "Who discovered the ABO blood groups in 1901? (Last Week)",
+                "answer": "Karl Landsteiner."
+              },
+              {
+                "question": "What miracle antibiotic was discovered by Fleming in 1928? (Prior Topic)",
+                "answer": "Penicillin."
+              },
+              {
+                "question": "What chemical did Joseph Lister introduce in 1865 to kill surgical microbes? (Prior Topic)",
+                "answer": "Carbolic acid."
+              },
+              {
+                "question": "Who published the Germ Theory in 1861? (Prior Topic)",
+                "answer": "Louis Pasteur."
+              },
+              {
+                "question": "Who proved the circulation of the blood in 1628? (Prior Topic)",
+                "answer": "William Harvey."
               }
             ]
           },
@@ -55735,45 +55823,49 @@
             "Compare the effects of chlorine, phosgene, and mustard gas, and evaluate the development of protective gas helmets."
           ],
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Non-Combat Illnesses & Modern Penicillin",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 5.2 and prior Key Topics. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_5_3_1",
-                "question": "What parasite transmitted trench fever to British soldiers on the Western Front?",
-                "options": [
-                  "Body lice (Pediculus humanus) via infected faeces rubbed into the skin",
-                  "Fleas carried by brown trench rats in flooded mud",
-                  "Mosquitoes breeding in standing water craters",
-                  "Intestinal tapeworms from contaminated tinned corned beef"
-                ],
-                "answer": 0,
-                "explanation": "Body lice living in the seams of woollen uniforms transmitted trench fever; scratching rubbed the louse faeces into broken skin, causing high pyrexia and severe shin pain."
+                "question": "What parasite transmitted trench fever to British soldiers on the Western Front? (Last Lesson)",
+                "answer": "Body lice (Pediculus humanus) living in the seams of woolen uniforms."
               },
               {
-                "id": "dn_5_3_2",
-                "question": "What two mandatory preventative measures did the British Army introduce to combat trench foot?",
-                "options": [
-                  "Application of whale oil grease and regular changing into dry socks",
-                  "Soaking feet in carbolic acid and wearing rubber wading boots",
-                  "Giving soldiers penicillin tablets and alcohol injections",
-                  "Amputating toes before men entered the front line"
-                ],
-                "answer": 0,
-                "explanation": "The British Army enforced mandatory daily foot inspections where men rubbed whale oil grease onto their feet and changed into dry socks carried in their haversacks."
+                "question": "What two mandatory preventative measures did the British Army introduce to combat trench foot? (Last Lesson)",
+                "answer": "Whale oil rubdowns and mandatory clean dry sock inspections twice daily, alongside duckboards in trenches."
               },
               {
-                "id": "dn_5_3_3",
-                "question": "In 1928, Alexander Fleming accidentally discovered penicillin. What organism had contaminated his petri dish?",
-                "options": [
-                  "A fungal mould spore (Penicillium notatum) that dissolved staphylococci bacteria",
-                  "A chemical dye from prontosil synthesis",
-                  "A weakened cowpox virus culture",
-                  "A strain of tuberculosis bacilli"
-                ],
-                "answer": 0,
-                "explanation": "Fleming returned from holiday to discover that Penicillium notatum mould spores had landed on a staphylococci culture plate, producing a chemical halo that dissolved the surrounding bacteria."
+                "question": "What psychological trauma caused by relentless artillery bombardment was initially treated as cowardice or malingering? (Last Lesson)",
+                "answer": "Shell shock (Neurasthenia / combat fatigue)."
+              },
+              {
+                "question": "What lethal poison gas, first used by Germany at Second Ypres in April 1915, caused suffocation and fluid in the lungs? (Last Lesson)",
+                "answer": "Chlorine gas."
+              },
+              {
+                "question": "Why were trenches designed with a zig-zag pattern rather than straight lines? (Last Week)",
+                "answer": "To contain artillery blast waves and prevent enfilade rifle fire down the trench."
+              },
+              {
+                "question": "In which Belgian salient did deep clay mud make casualty evacuation almost impossible? (Last Week)",
+                "answer": "The Ypres Salient."
+              },
+              {
+                "question": "What machine invented in 1895 allowed surgeons to locate bullets in soldiers without exploratory cutting? (Prior Topic)",
+                "answer": "X-ray machines."
+              },
+              {
+                "question": "What did Karl Landsteiner discover in 1901 that made blood transfusions possible? (Prior Topic)",
+                "answer": "The ABO blood groups."
+              },
+              {
+                "question": "What was the first magic bullet, discovered by Paul Ehrlich in 1909? (Prior Topic)",
+                "answer": "Salvarsan 606."
+              },
+              {
+                "question": "Who developed the antiseptic carbolic spray in 1865? (Prior Topic)",
+                "answer": "Joseph Lister."
               }
             ]
           },
@@ -56699,45 +56791,49 @@
             "Evaluate the importance of triage at Casualty Clearing Stations and compare evacuation transport methods."
           ],
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Battlefield Trauma & Industrial Penicillin",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 5.3 and prior Key Topics. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_5_4_1",
-                "question": "Why did the introduction of the Brodie helmet in 1915 dramatically reduce fatal battlefield casualties?",
-                "options": [
-                  "It protected the skull from descending high-explosive shrapnel splinters, cutting fatal head wounds by over 75%",
-                  "It filtered lethal chlorine gas out of the air",
-                  "It stopped direct high-velocity artillery shells from exploding",
-                  "It completely prevented concussion and shellshock"
-                ],
-                "answer": 0,
-                "explanation": "The Brodie steel helmet was engineered from pressed manganese steel with a wide brim to deflect downwards-raining artillery shrapnel splinters, reducing fatal head trauma by over 75%."
+                "question": "Why did the introduction of the steel Brodie helmet in 1915 dramatically reduce fatal head injuries? (Last Lesson)",
+                "answer": "It deflected downwards-falling high-explosive artillery shrapnel and flying debris, reducing head wounds by over 70%."
               },
               {
-                "id": "dn_5_4_2",
-                "question": "What lethal anaerobic infection flourished in deep shrapnel wounds contaminated with manured Flanders soil?",
-                "options": [
-                  "Gas gangrene (Clostridium perfringens)",
-                  "Bubonic plague (Yersinia pestis)",
-                  "Tuberculosis (Mycobacterium tuberculosis)",
-                  "Cholera (Vibrio cholerae)"
-                ],
-                "answer": 0,
-                "explanation": "Centuries of intensive manuring saturated Flanders soil with Clostridium perfringens; driven into oxygen-starved muscle by shrapnel, it produced lethal gas gangrene."
+                "question": "What lethal anaerobic infection flourished in deep shrapnel wounds contaminated with manured Belgian soil? (Last Lesson)",
+                "answer": "Gas gangrene (caused by Clostridium bacteria in fertilised farmland)."
               },
               {
-                "id": "dn_5_4_3",
-                "question": "In 1941, Howard Florey and Ernst Chain successfully purified penicillin. What major historical event accelerated its mass industrial production?",
-                "options": [
-                  "The Second World War, heavily funded by US and British wartime production boards",
-                  "The Crimean War and Florence Nightingale's reforms",
-                  "The foundation of the National Health Service in 1948",
-                  "The Great Plague of London in 1665"
-                ],
-                "answer": 0,
-                "explanation": "The crisis of Allied combat casualties in the Second World War prompted massive government financial backing for pharmaceutical deep-tank fermentation, industrializing penicillin by 1944."
+                "question": "What oily blistering gas introduced in 1917 burned skin and caused internal airway blisters? (Last Lesson)",
+                "answer": "Mustard gas."
+              },
+              {
+                "question": "What parasite spread trench fever causing severe joint and leg pain? (Last Week)",
+                "answer": "Body lice."
+              },
+              {
+                "question": "What preventative measures stopped trench foot among British soldiers? (Last Week)",
+                "answer": "Whale oil rubdowns, regular dry sock changes, and wooden duckboards."
+              },
+              {
+                "question": "Why did the zig-zag layout of trenches save lives during artillery shelling? (Last Week)",
+                "answer": "It localized shell bursts and prevented shrapnel travelling down the whole trench."
+              },
+              {
+                "question": "What imaging technology discovered in 1895 located shrapnel before surgery? (Prior Topic)",
+                "answer": "X-rays."
+              },
+              {
+                "question": "Who discovered ABO blood groups in 1901? (Prior Topic)",
+                "answer": "Karl Landsteiner."
+              },
+              {
+                "question": "What miracle antibiotic discovered in 1928 was NOT available during World War One? (Prior Topic)",
+                "answer": "Penicillin."
+              },
+              {
+                "question": "What chemical did Joseph Lister use in 1865 to prevent wound sepsis? (Prior Topic)",
+                "answer": "Carbolic acid."
               }
             ]
           },
@@ -57628,45 +57724,49 @@
             "Evaluate how mobile X-ray technology improved the precision and speed of frontline surgery."
           ],
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Chain of Evacuation & Lister's Antiseptics",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 5.4 and prior Key Topics. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_5_5_1",
-                "question": "In the RAMC Chain of Evacuation, which medical facility performed urgent, life-saving surgery within miles of the front line?",
-                "options": [
-                  "Casualty Clearing Stations (CCS)",
-                  "Regimental Aid Posts (RAP)",
-                  "Divisional De-lousing Baths",
-                  "Military Convalescent Depots in Britain"
-                ],
-                "answer": 0,
-                "explanation": "Casualty Clearing Stations, located 10–12 miles behind the lines, were equipped with operating theatres where surgeons performed urgent abdominal operations and debridement."
+                "question": "In the RAMC Chain of Evacuation, which frontline medical post was situated just behind the front line to give immediate first aid? (Last Lesson)",
+                "answer": "The Regimental Aid Post (RAP)."
               },
               {
-                "id": "dn_5_5_2",
-                "question": "What volunteer organization of female motor ambulance drivers transported casualties from dressing stations to base hospitals?",
-                "options": [
-                  "First Aid Nursing Yeomanry (FANY)",
-                  "Queen Alexandra's Imperial Military Nursing Service",
-                  "The Royal College of Physicians",
-                  "The British Medical Association"
-                ],
-                "answer": 0,
-                "explanation": "The FANY (First Aid Nursing Yeomanry), an all-female volunteer organization, drove heavy motor ambulances across mud and shellfire to transport wounded soldiers."
+                "question": "In the Chain of Evacuation, which vital station performed immediate life-saving surgery before men were sent to Base Hospitals? (Last Lesson)",
+                "answer": "The Casualty Clearing Station (CCS)."
               },
               {
-                "id": "dn_5_5_3",
-                "question": "In the 1860s, what chemical did Joseph Lister use as an antiseptic spray and dressing to reduce surgical mortality?",
-                "options": [
-                  "Carbolic acid (phenol)",
-                  "Chloroform vapor",
-                  "Nitrous oxide gas",
-                  "Sodium hypochlorite"
-                ],
-                "answer": 0,
-                "explanation": "Joseph Lister utilized carbolic acid (phenol) to disinfect hands, surgical instruments, and wounds, pioneering chemical antisepsis in nineteenth-century surgery."
+                "question": "What volunteer organization of female motor ambulance drivers transported casualties from dressing stations to CCSs? (Last Lesson)",
+                "answer": "The FANY (First Aid Nursing Yeomanry)."
+              },
+              {
+                "question": "What large medical facility located near French coastal ports (like Étaples) provided long-term rehabilitation or hospital ships to Britain? (Last Lesson)",
+                "answer": "The Base Hospital."
+              },
+              {
+                "question": "What protective equipment introduced in 1915 reduced fatal head wounds by 70%? (Last Week)",
+                "answer": "The steel Brodie helmet."
+              },
+              {
+                "question": "What lethal soil bacterium caused deep flesh wounds to rot and bubble with foul-smelling gas? (Last Week)",
+                "answer": "Gas gangrene."
+              },
+              {
+                "question": "What parasite carried trench fever between frontline soldiers? (Last Week)",
+                "answer": "Body lice."
+              },
+              {
+                "question": "What 1895 discovery allowed military doctors to photograph shrapnel embedded in bone? (Prior Topic)",
+                "answer": "X-rays (Wilhelm Röntgen)."
+              },
+              {
+                "question": "What 1901 discovery allowed blood transfusions to match compatible donors and patients? (Prior Topic)",
+                "answer": "ABO blood groups (Karl Landsteiner)."
+              },
+              {
+                "question": "Who proved the Germ Theory in 1861? (Prior Topic)",
+                "answer": "Louis Pasteur."
               }
             ]
           },
@@ -58560,45 +58660,49 @@
             "Evaluate the pioneering reconstructive plastic surgery developed by Harold Gillies at Queen’s Hospital, Sidcup."
           ],
           "do_now": {
-            "type": "retrieval_starter",
-            "title": "Spaced Retrieval Starter: Surgical Breakthroughs & DNA Foundations",
-            "instructions": "Answer the retrieval questions below recalling knowledge from Lesson 5.5 and prior Key Topics. Do not consult new lesson notes.",
-            "questions": [
+            "type": "questions",
+            "title": "Spaced Retrieval Starter",
+            "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
+            "items": [
               {
-                "id": "dn_5_6_1",
-                "question": "Why did the Thomas Splint reduce compound femur fracture mortality from 80% to 20% on the Western Front?",
-                "options": [
-                  "It applied continuous mechanical traction to the leg, stopping broken bone ends from tearing femoral blood vessels",
-                  "It administered continuous penicillin directly into the marrow",
-                  "It chemically dissolved shattered bone splinters without surgery",
-                  "It numbed the entire leg so soldiers could immediately walk"
-                ],
-                "answer": 0,
-                "explanation": "The Thomas Splint held the fractured leg in rigid mechanical extension, preventing jagged bone ends from grinding together, severing the femoral artery, and piercing skin."
+                "question": "Why did the Thomas Splint reduce compound femur fracture mortality from 80% to 20% on the Western Front? (Last Lesson)",
+                "answer": "It stabilized the broken leg and exerted traction, preventing sharp bone ends grinding together, tearing the femoral artery, and causing fatal blood loss and shock."
               },
               {
-                "id": "dn_5_6_2",
-                "question": "What chemical solution did Alexis Carrel and Henry Dakin use to continuously irrigate deep war wounds?",
-                "options": [
-                  "Buffered sodium hypochlorite solution",
-                  "Undiluted carbolic acid spray",
-                  "Chloroform and alcohol wash",
-                  "Mercuric chloride and vinegar"
-                ],
-                "answer": 0,
-                "explanation": "Carrel and Dakin engineered a mild, non-toxic buffered sodium hypochlorite solution (0.5%) flushed through rubber tubes to dissolve dead tissue and eliminate bacteria."
+                "question": "What surgical procedure involved cutting away all dead, infected, and damaged tissue from an open shrapnel wound? (Last Lesson)",
+                "answer": "Wound debridement."
               },
               {
-                "id": "dn_5_6_3",
-                "question": "In 1953, who discovered the double helix chemical structure of DNA at Cambridge University?",
-                "options": [
-                  "James Watson and Francis Crick (using Rosalind Franklin's Photo 51)",
-                  "Alexander Fleming and Howard Florey",
-                  "Godfrey Hounsfield and Allan Cormack",
-                  "Robert Koch and Louis Pasteur"
-                ],
-                "answer": 0,
-                "explanation": "Watson and Crick deduced the double helix molecular architecture of DNA in 1953, relying on Rosalind Franklin's X-ray crystallography photograph (Photo 51)."
+                "question": "What antiseptic chemical solution did Alexis Carrel and Henry Dakin use to continuously irrigate deep wounds? (Last Lesson)",
+                "answer": "The Carrel-Dakin solution (sterilised buffered sodium hypochlorite / saline)."
+              },
+              {
+                "question": "Why were Marie Curie's mobile X-ray vans ('petites Curies') vital near the frontline? (Last Lesson)",
+                "answer": "They could drive directly to Casualty Clearing Stations to locate bullets and shrapnel before urgent surgery began."
+              },
+              {
+                "question": "In the RAMC Chain of Evacuation, what facility performed emergency surgery closest to the front line? (Last Week)",
+                "answer": "The Casualty Clearing Station (CCS)."
+              },
+              {
+                "question": "What volunteer female ambulance corps transported wounded soldiers under fire? (Last Week)",
+                "answer": "The FANY (First Aid Nursing Yeomanry)."
+              },
+              {
+                "question": "What steel helmet was introduced in 1915 to protect soldiers from overhead shrapnel? (Last Week)",
+                "answer": "The Brodie helmet."
+              },
+              {
+                "question": "What imaging technology was discovered by Wilhelm Röntgen in 1895? (Prior Topic)",
+                "answer": "X-rays."
+              },
+              {
+                "question": "What blood group discovery in 1901 by Karl Landsteiner made blood transfusions possible? (Prior Topic)",
+                "answer": "The ABO blood group system."
+              },
+              {
+                "question": "Who was the pioneering antiseptic surgeon who introduced carbolic acid in 1865? (Prior Topic)",
+                "answer": "Joseph Lister."
               }
             ]
           },

@@ -1182,6 +1182,15 @@ const fileContent = 'export default ' + JSON.stringify(med, null, 2) + ';\n';
 fs.writeFileSync(path.resolve(__dirname, '../units/edexcel_medicine/data.js'), fileContent, 'utf8');
 fs.writeFileSync(path.resolve(__dirname, '../public/units/edexcel_medicine/data.js'), fileContent, 'utf8');
 
+const dataJsonPath = path.resolve(__dirname, '../data/edexcel_medicine.json');
+if (fs.existsSync(dataJsonPath)) {
+  fs.writeFileSync(dataJsonPath, JSON.stringify(med, null, 2), 'utf8');
+}
+const pubDataJsonPath = path.resolve(__dirname, '../public/data/edexcel_medicine.json');
+if (fs.existsSync(pubDataJsonPath)) {
+  fs.writeFileSync(pubDataJsonPath, JSON.stringify(med, null, 2), 'utf8');
+}
+
 console.log('Successfully wrote to all Medicine files on disk!');
 console.log('='.repeat(80));
 
