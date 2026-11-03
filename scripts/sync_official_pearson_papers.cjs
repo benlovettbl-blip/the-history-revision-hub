@@ -122,11 +122,7 @@ async function run() {
     }
 
     const files = fs.readdirSync(srcDir).filter(f => f.endsWith('.pdf'));
-    const examPdfs = files.filter(f => {
-      if (!/que|rms|msc|pef/i.test(f)) return false;
-      if (unitId === 'usa' && /B4/i.test(f)) return false; // Exclude Elizabeth B4 stray from USA folder
-      return true;
-    });
+    const examPdfs = files.filter(f => /que|rms|msc|pef/i.test(f));
 
     console.log(`\n📂 [${unitId}] Syncing ${examPdfs.length} official Pearson papers...`);
 
@@ -165,3 +161,4 @@ async function run() {
 }
 
 run().catch(console.error);
+
