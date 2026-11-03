@@ -1059,7 +1059,7 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
 <body>
 `;
 
-  const coverImgPath = path.resolve('public/units/cme_new/assets/kt1_cover.jpg');
+  const coverImgPath = path.join(__dirname, '..', 'public', 'units', 'cme_new', 'assets', 'kt1_cover.jpg');
   let coverImgSrc = '/units/cme_new/assets/kt1_cover.jpg';
   if (fs.existsSync(coverImgPath)) {
     const coverImgBase64 = fs.readFileSync(coverImgPath).toString('base64');
@@ -1067,15 +1067,29 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
   }
 
   // Map images for Page 14 Cartographic Masterclass
-  const palestine1949MapPath = path.resolve('public/units/cme_new/assets/palestine_1949_map.png');
+  const palestine1949MapPath = path.join(
+    __dirname,
+    '..',
+    'public',
+    'units',
+    'cme_new',
+    'assets',
+    'palestine_1949_map.png',
+  );
   let palestine1949MapSrc = '/units/cme_new/assets/palestine_1949_map.png';
   if (fs.existsSync(palestine1949MapPath)) {
     const b64 = fs.readFileSync(palestine1949MapPath).toString('base64');
     palestine1949MapSrc = `data:image/png;base64,${b64}`;
   }
 
-  const suez1956MapPath = path.resolve(
-    'public/units/cme_new/assets/cme_suez_1956_campaign_map.jpg',
+  const suez1956MapPath = path.join(
+    __dirname,
+    '..',
+    'public',
+    'units',
+    'cme_new',
+    'assets',
+    'cme_suez_1956_campaign_map.jpg',
   );
   let suez1956MapSrc = '/units/cme_new/assets/cme_suez_1956_campaign_map.jpg';
   if (fs.existsSync(suez1956MapPath)) {
@@ -1108,39 +1122,6 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
       sourceTag: 'Historical Primary Source',
       archiveTag: 'Edexcel Paper 2 Master Archive',
       heightMm: 100,
-    },
-    specBox: {
-      title: 'Pearson Edexcel GCSE (9–1) History Specification &bull; Key Topic 1 Content',
-      subtopics: [
-        {
-          title: '1. The British Withdrawal &amp; Israel',
-          items: [
-            '<strong>Mandate Nationalist Rivalry:</strong> Conflicting demands of Palestinian Arabs and Zionists; British White Paper immigration quotas vs post-Holocaust survivor influx.',
-            '<strong>Zionist Insurgency (1945–47):</strong> Armed campaigns by Irgun and Lehi targeting British administration, culminating in the King David Hotel bombing (July 1946).',
-            '<strong>UN Partition Plan (1947):</strong> UN Resolution 181 voting to divide Palestine (56% Jewish / 43% Arab), accepted by Jewish Agency and rejected by Arab states.',
-            '<strong>The First Arab-Israeli War (1948–49):</strong> Proclamation of Israel, five Arab army invasions, Czech arms supplies, and the 1949 Green Line armistices.',
-          ],
-        },
-        {
-          title: '2. Aftermath of the 1948–49 War',
-          items: [
-            '<strong>Territorial Division:</strong> Israeli control expanding to 78% of Mandate Palestine, Transjordan annexing the West Bank, and Egyptian military rule in Gaza.',
-            '<strong>The Palestinian Refugee Crisis (Al-Nakba):</strong> Permanent displacement of 700,000 Palestinian Arabs into exile and establishment of UNRWA relief camps.',
-            '<strong>State Security &amp; Immigration:</strong> Formation of the Israeli Defence Forces (IDF) and the 1950 Law of Return absorbing over 680,000 Jewish refugees.',
-            '<strong>Superpower Alliances:</strong> Early United States financial aid and diplomatic recognition establishing an enduring strategic partnership.',
-            '<strong>Cross-Border Skirmishes:</strong> Infiltration of Palestinian fedayeen from Gaza and fierce Israeli military reprisals escalating border volatility.',
-          ],
-        },
-        {
-          title: '3. Increased Tension, 1955–63',
-          items: [
-            '<strong>Pan-Arab Leadership:</strong> Gamal Abdel Nasser assumes Egyptian presidency, championing Arab nationalism, anti-colonialism, and regional unity.',
-            '<strong>Gaza Raid &amp; Arms Deal (1955):</strong> Israeli retaliatory strike in Gaza prompting Nasser to secure large-scale modern Soviet-Czech weaponry.',
-            '<strong>The Suez Crisis (1956):</strong> Nasser nationalises the Suez Canal; secret Protocol of Sèvres between Britain, France, and Israel leads to the Sinai invasion.',
-            '<strong>Crisis Aftermath (1957–63):</strong> US financial ultimatums force humiliating European withdrawal, UNEF deployed in Sinai, and creation of the UAR (1958).',
-          ],
-        },
-      ],
     },
     footerQuip: approvedFunnyFooters[0],
     totalPageCount: 24,
@@ -1375,12 +1356,12 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
       <!-- Chronological Lesson Spine (Down the Left) with Pupil Note-Taking Canvas -->
       <div class="spine-notes-container">
         ${cfg.stages
-          .map((stg) => {
-            const bullets =
-              stg.bullets && stg.bullets.length
-                ? stg.bullets
-                : stg.keywords || [stg.clue || stg.title];
-            return `
+        .map((stg) => {
+          const bullets =
+            stg.bullets && stg.bullets.length
+              ? stg.bullets
+              : stg.keywords || [stg.clue || stg.title];
+          return `
           <div class="spine-stage-block">
             <div class="stage-banner">
               <span class="stage-badge">${stg.num || stg.step}</span>
@@ -1389,15 +1370,15 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
             <div class="stage-content-row">
               <div class="stage-trigger-col">
                 ${bullets
-                  .slice(0, 3)
-                  .map(
-                    (b) => `
+              .slice(0, 3)
+              .map(
+                (b) => `
                   <div class="trigger-fact-cell">
                     <span class="fact-dot">•</span>${b}
                   </div>
                 `,
-                  )
-                  .join('')}
+              )
+              .join('')}
               </div>
               <div class="stage-writing-col">
                 <div class="ruled-line"></div>
@@ -1410,8 +1391,8 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
             </div>
           </div>
         `;
-          })
-          .join('')}
+        })
+        .join('')}
       </div>
 
       <!-- Key Vocabulary (Core Disciplinary Distinction) -->
@@ -1504,32 +1485,31 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
           <div style="font-family: 'Playfair Display', serif; font-size: 9.2pt; font-weight: 800; color: #000000; line-height: 1.2;">
             ${rx.stem}
           </div>
-          ${
-            rx.type === 'narrative_8'
-              ? `
+          ${rx.type === 'narrative_8'
+        ? `
           <div style="background: #f4f4f4; border-left: 2.5px solid #000000; padding: 1.5px 5px; margin-top: 1.5px; font-family: 'Inter', sans-serif; font-size: 7.5pt; line-height: 1.18;">
             <strong>You may use the following in your answer:</strong> &bull; ${rx.stimulus[0]} &bull; ${rx.stimulus[1]} &bull; <em>You must also use information of your own.</em>
           </div>
           `
-              : `
+        : `
           <div style="background: #f4f4f4; border-left: 2.5px solid #000000; padding: 1.5px 5px; margin-top: 1.5px; font-family: 'Inter', sans-serif; font-size: 7.5pt; line-height: 1.18;">
             <strong>Structure across two distinct analytical aspects:</strong> &bull; ${rx.focusAspects[0]} &bull; ${rx.focusAspects[1]}
           </div>
           `
-          }
+      }
         </div>
 
         <!-- Row 2: 3-Column Planning Structure Strip (Heading Anchors Only) -->
         <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; border-bottom: 1px solid #000000; background: #f4f4f4;">
           ${rx.structureStrip
-            .map(
-              (strip, sIdx) => `
+        .map(
+          (strip, sIdx) => `
           <div style="padding: 2.5px 4px; text-align: center; ${sIdx < 2 ? 'border-right: 1px solid #000000;' : ''}">
             <strong style="font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #000000; display: block; line-height: 1.15; letter-spacing: 0.3px;">${strip.col}</strong>
           </div>
           `,
-            )
-            .join('')}
+        )
+        .join('')}
         </div>
 
         <!-- Row 3: Accessible Sentence Starters & Key Vocabulary Bank -->

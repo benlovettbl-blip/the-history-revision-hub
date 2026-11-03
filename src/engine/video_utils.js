@@ -113,15 +113,18 @@ export function getSortedLessonVideos(lesson) {
 }
 
 /**
- * Generates the HTML for the sidebar video micro-badge.
+ * Generates the HTML for the sidebar or card video micro-badge.
  * @param {object} lesson
+ * @param {object} [options]
+ * @param {boolean} [options.isCard=false]
  * @returns {string} HTML string (or empty if no videos)
  */
-export function renderSidebarVideoBadgeHTML(lesson) {
+export function renderSidebarVideoBadgeHTML(lesson, options = {}) {
   if (!lesson) return '';
   const sorted = getSortedLessonVideos(lesson);
   if (sorted.length === 0) return '';
 
+  const isCard = options.isCard ?? false;
   const shortest = sorted[0];
   const shortDur = formatShortDuration(shortest.duration);
   const isEraOnly = sorted.every(
@@ -130,9 +133,12 @@ export function renderSidebarVideoBadgeHTML(lesson) {
 
   const iconClass = isEraOnly ? 'fa-solid fa-tv' : 'fa-solid fa-play';
   const typeClass = isEraOnly ? 'era' : 'yt';
+  const cardClass = isCard ? ' card-vbadge' : '';
   const label = shortDur || (isEraOnly ? 'ERA' : 'Vid');
   const countBadge =
-    sorted.length > 1 ? `<span class="sidebar-vbadge-count">${sorted.length}</span>` : '';
+    sorted.length > 1
+      ? `<span class="sidebar-vbadge-count${isCard ? ' card-vbadge-count' : ''}">${sorted.length}${isCard ? ' clips' : ''}</span>`
+      : '';
 
   // Tooltip with video list
   const tooltipLines = sorted.map((v, i) => {
@@ -142,7 +148,7 @@ export function renderSidebarVideoBadgeHTML(lesson) {
   });
   const tooltipAttr = tooltipLines.join('&#10;');
 
-  return `<span class="sidebar-lesson-video-badge ${typeClass}" title="${tooltipAttr}"><i class="${iconClass}"></i><span>${label}</span>${countBadge}</span>`;
+  return `<span class="sidebar-lesson-video-badge ${typeClass}${cardClass}" title="${tooltipAttr}"><i class="${iconClass}"></i><span>${label}</span>${countBadge}</span>`;
 }
 
 /**

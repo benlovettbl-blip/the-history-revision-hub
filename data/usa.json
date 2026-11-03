@@ -4714,7 +4714,10 @@
               "source": "/units/usa/assets/sources/greensboro-sit-in-counter.jpg"
             }
           ],
-          "isReversed": false
+          "isReversed": false,
+          "image": "/units/usa/assets/sources/greensboro_four_1960.jpg",
+          "image_alt": "The Greensboro Four walking together after the Woolworth lunch counter sit-in, 1960",
+          "caption": "The Greensboro Four (1 February 1960): Ezell Blair Jr., Franklin McCain, Joseph McNeil, and David Richmond walking away from the Woolworth store in Greensboro, North Carolina, after launching the non-violent lunch counter sit-in movement."
         },
         {
           "act": 2,
@@ -4789,11 +4792,7 @@
               "src": "/units/usa/assets/sources/freedom-riders-bus-wreckage.jpg",
               "source": "/units/usa/assets/sources/freedom-riders-bus-wreckage.jpg"
             }
-          ],
-          "image": "/units/usa/assets/sources/greensboro_four_1960.jpg",
-          "image_alt": "James Meredith walking on University of Mississippi campus escorted by US Marshals",
-          "caption": "Plate 2.2: James Meredith walking between classes at the University of Mississippi (Ole Miss) in October 1962, flanked by federal marshals following deadly riots.",
-          "isReversed": true
+          ]
         },
         {
           "act": 4,
@@ -4830,7 +4829,10 @@
               "text": "When the Trailways bus pulled into the Birmingham terminal on Mother's Day, not a single police officer was in sight. Within seconds, a mob of forty men carrying iron pipes, lead clubs, and baseball bats stormed the waiting room. Before I could say a word, six men pounced on me, clubbing me over the head. I fell forward onto the concrete floor, bleeding profusely, and they kicked me repeatedly in the ribs. The police department under Bull Connor had agreed to give the Ku Klux Klan fifteen minutes to beat the Freedom Riders before dispatching a single squad car."
             }
           ],
-          "isReversed": true
+          "isReversed": true,
+          "image": "/units/usa/assets/sources/james-meredith-walking.jpg",
+          "image_alt": "James Meredith walking on campus at the University of Mississippi flanked by federal marshals, October 1962",
+          "caption": "James Meredith at the University of Mississippi (October 1962): Flanked by federal marshals, Air Force veteran James Meredith walks to class as the first Black student admitted to Ole Miss, following violent segregationist riots that required 31,000 federal troops to suppress."
         },
         {
           "act": 5,
@@ -7833,7 +7835,7 @@
           "act_title": "Stage 5: King's Assassination & The 1968 Civil Rights Act — How did the assassination of Dr Martin Luther King Jr. and the passage of the 1968 Fair Housing Act reshape the movement?",
           "title": "King's Assassination & The 1968 Civil Rights Act",
           "theme_heading": "King's Assassination & The 1968 Civil Rights Act",
-          "text": "<span class=\"para-ref\">[5.1]</span> **The Assassination of Dr King (4 April 1968):** In the spring of 1968, King traveled to Memphis, Tennessee, to support striking Black sanitation workers and organize a national Poor People's Campaign. On the evening of 4 April 1968, while standing on the balcony of the Lorraine Motel, King was assassinated by white supremacist James Earl Ray. King's murder unleashed the largest nationwide wave of social unrest in American history: uprisings erupted in over 125 cities, leaving 46 dead and requiring 45,000 troops to quell. In Washington, D.C., fires burned within sight of the White House. A week later, Congress rushed to pass the Civil Rights Act of 1968 (the Fair Housing Act), banning housing discrimination.\n\n<span class=\"para-ref\">[5.2]</span> **A Transformed Political Landscape:** By 1975, the civil rights movement had fundamentally transformed the American South. The blatant barbarism of de jure segregation was extinct, and millions of enfranchised Black citizens wielded decisive political power, electing thousands of Black municipal officials, sheriffs, and members of Congress. In major cities, Black mayors took office in Cleveland, Gary, Newark, Detroit, Los Angeles, and Atlanta. Affirmative action programs opened the doors of universities, corporations, and federal civil service to a growing Black middle class.\n\n<span class=\"para-ref\">[5.3]</span> **The Unfinished Revolution of Economic Justice:** Yet the promise of full racial equality remained tragically unfulfilled. As legal barriers fell, white Americans retreated into suburban enclaves (\"white flight\"), leaving inner-city schools and neighbourhoods more economically segregated than before. Dr King's ultimate crusade—the eradication of systemic poverty, urban ghettoization, and militarism—remained unfinished. The heroic era of 1954–75 had destroyed the legal pillars of racial apartheid, but it left the deeper structural inequalities of American capitalism and society unresolved.",
+          "text": "<span class=\"para-ref\">[5.1]</span> **The Assassination of Dr King (4 April 1968):** In the spring of 1968, King traveled to Memphis, Tennessee, to support striking Black sanitation workers and organize a national Poor People's Campaign. On the evening of 4 April 1968, while standing on the balcony of the Lorraine Motel, King was assassinated by white supremacist James Earl Ray. King's murder unleashed the largest nationwide wave of social unrest in American history: uprisings erupted in over 125 cities, leaving 46 dead and requiring 45,000 troops to quell. In Washington, D.C., fires burned within sight of the White House. A week later, President Lyndon B. Johnson signed the Civil Rights Act of 1968 (the Fair Housing Act), banning housing discrimination.\n\n<span class=\"para-ref\">[5.2]</span> **A Transformed Political Landscape:** By 1975, the civil rights movement had fundamentally transformed the American South. The blatant barbarism of de jure segregation was extinct, and millions of enfranchised Black citizens wielded decisive political power, electing thousands of Black municipal officials, sheriffs, and members of Congress. In major cities, Black mayors took office in Cleveland, Gary, Newark, Detroit, Los Angeles, and Atlanta. Affirmative action programs opened the doors of universities, corporations, and federal civil service to a growing Black middle class.\n\n<span class=\"para-ref\">[5.3]</span> **The Unfinished Revolution of Economic Justice:** Yet the promise of full racial equality remained tragically unfulfilled. As legal barriers fell, white Americans retreated into suburban enclaves (\"white flight\"), leaving inner-city schools and neighbourhoods more economically segregated than before. Dr King's ultimate crusade—the eradication of systemic poverty, urban ghettoization, and militarism—remained unfinished. The heroic era of 1954–75 had destroyed the legal pillars of racial apartheid, but it left the deeper structural inequalities of American capitalism and society unresolved.",
           "paragraphs": [
             "<span class=\"para-ref\">[5.1]</span> **The Assassination of Dr King (4 April 1968):** In the spring of 1968, King traveled to Memphis, Tennessee, to support striking Black sanitation workers and organize a national Poor People's Campaign. On the evening of 4 April 1968, while standing on the balcony of the Lorraine Motel, King was assassinated by white supremacist James Earl Ray. King's murder unleashed the largest nationwide wave of social unrest in American history: uprisings erupted in over 125 cities, leaving 46 dead and requiring 45,000 troops to quell. In Washington, D.C., fires burned within sight of the White House. A week later, Congress rushed to pass the Civil Rights Act of 1968 (the Fair Housing Act), banning housing discrimination.",
             "<span class=\"para-ref\">[5.2]</span> **A Transformed Political Landscape:** By 1975, the civil rights movement had fundamentally transformed the American South. The blatant barbarism of de jure segregation was extinct, and millions of enfranchised Black citizens wielded decisive political power, electing thousands of Black municipal officials, sheriffs, and members of Congress. In major cities, Black mayors took office in Cleveland, Gary, Newark, Detroit, Los Angeles, and Atlanta. Affirmative action programs opened the doors of universities, corporations, and federal civil service to a growing Black middle class.",
@@ -7867,7 +7869,9 @@
               "source": "/units/usa/assets/sources/poor-peoples-campaign-1968.jpg"
             }
           ],
-          "isReversed": false
+          "isReversed": false,
+          "caption": "President Lyndon B. Johnson with Dr Martin Luther King Jr.: Throughout their legislative partnership, Johnson relied on King's moral leadership to pass civil rights statutes. One week after King's assassination in April 1968, Johnson signed the Civil Rights Act of 1968 (Fair Housing Act) into federal law.",
+          "image_alt": "President Lyndon B. Johnson conferring with Dr Martin Luther King Jr."
         }
       ],
       "primary_source": null,
@@ -8688,11 +8692,7 @@
               "src": "/units/usa/assets/sources/portraits/eisenhower.jpg",
               "source": "/units/usa/assets/sources/portraits/eisenhower.jpg"
             }
-          ],
-          "image": "/units/usa/assets/sources/ngo-dinh-diem-parade.jpg",
-          "image_alt": "South Vietnamese President Ngo Dinh Diem reviewing troops in Saigon",
-          "caption": "Plate 3.1: President Ngo Dinh Diem of the Republic of Vietnam reviewing military forces in Saigon (c. 1957), heavily funded by US foreign aid.",
-          "isReversed": false
+          ]
         },
         {
           "act": 2,
@@ -8732,7 +8732,10 @@
               "source": "/units/usa/assets/vietnam_theater_ho_chi_minh_trail_map.jpg"
             }
           ],
-          "isReversed": true
+          "isReversed": false,
+          "image": "/units/usa/assets/sources/ngo-dinh-diem-parade.jpg",
+          "image_alt": "President Ngo Dinh Diem of South Vietnam reviewing troops in Saigon",
+          "caption": "President Ngo Dinh Diem of the Republic of Vietnam reviewing military forces in Saigon (c. 1957), heavily funded by US foreign aid."
         },
         {
           "act": 3,
@@ -8770,11 +8773,7 @@
               "src": "/units/usa/assets/sources/thich_quang_duc_self_immolation_1963.jpg",
               "source": "/units/usa/assets/sources/thich_quang_duc_self_immolation_1963.jpg"
             }
-          ],
-          "image": "/units/usa/assets/sources/buddhist-protests-1963.jpg",
-          "image_alt": "Buddhist monks protesting in Saigon against the Diem regime",
-          "caption": "Plate 3.2: Buddhist monks and citizens demonstrating in Saigon during the summer of 1963 following violent government crackdowns on Buddhist flag displays.",
-          "isReversed": true
+          ]
         },
         {
           "act": 4,
@@ -8813,7 +8812,10 @@
               "source": "/units/usa/assets/sources/portraits/kennedy.jpg"
             }
           ],
-          "isReversed": true
+          "isReversed": true,
+          "image": "/units/usa/assets/sources/buddhist-protests-1963.jpg",
+          "image_alt": "South Vietnamese police deploying tear gas outside a Buddhist pagoda gate in Saigon, 1963",
+          "caption": "South Vietnamese Security Forces Raiding a Buddhist Pagoda (Saigon, August 1963): Special Forces under Ngo Dinh Nhu deployed tear gas and automatic weapons against Buddhist shrines, arresting over 1,400 monks and sparking international outrage that convinced the Kennedy administration Diem had to be replaced."
         },
         {
           "act": 5,
@@ -11684,8 +11686,8 @@
             }
           ],
           "image": "/units/usa/assets/sources/general-westmoreland.jpg",
-          "image_alt": "President Richard Nixon gesturing toward a map of Cambodia during a live broadcast",
-          "caption": "Plate 3.7: President Richard Nixon addressing the nation on 30 April 1970, explaining the US military incursion into neutral Cambodia.",
+          "image_alt": "General William Westmoreland in US Army military uniform",
+          "caption": "General William Westmoreland (1914–2005): Commander of US Military Assistance Command, Vietnam (MACV). Despite assuring the American public in late 1967 that the war was being won, the sudden 1968 Tet Offensive shattered official optimism and triggered his controversial request for 206,000 additional troops.",
           "isReversed": false
         },
         {
@@ -11726,7 +11728,10 @@
               "source": "/units/usa/assets/sources/nixon-visiting-troops.jpg"
             }
           ],
-          "isReversed": true
+          "isReversed": true,
+          "image": "/units/usa/assets/vietnam_war_tet_offensive_theater_map.png",
+          "image_alt": "Military map showing simultaneous Tet Offensive attacks across South Vietnam in 1968",
+          "caption": "Military Map of the 1968 Tet Offensive: Illustrating the nationwide scope of the simultaneous attacks launched across South Vietnam between 29 January and 25 February 1968, targeting Khe Sanh, Hue, Da Nang, Pleiku, and Saigon, shattering American claims that the Vietcong were on the verge of defeat."
         },
         {
           "act": 3,
@@ -11764,11 +11769,7 @@
               "src": "/units/usa/assets/sources/nixon-television-address.jpg",
               "source": "/units/usa/assets/sources/nixon-television-address.jpg"
             }
-          ],
-          "image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
-          "image_alt": "South Vietnamese ARVN soldiers retreating under heavy fire",
-          "caption": "Plate 3.8: South Vietnamese ARVN paratroopers falling back under devastating artillery fire during Operation Lam Son 719 in Laos (March 1971).",
-          "isReversed": true
+          ]
         },
         {
           "act": 4,

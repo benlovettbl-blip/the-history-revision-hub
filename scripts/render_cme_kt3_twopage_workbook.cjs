@@ -1049,7 +1049,7 @@ function buildCmeKt3TwoPageWorkbook(unitData, period) {
 `;
 
   // Cover image: Oslo I handshake
-  const coverImgPath = path.resolve('public/units/cme_new/assets/kt3_cover.png');
+  const coverImgPath = path.join(__dirname, '..', 'public', 'units', 'cme_new', 'assets', 'kt3_cover.png');
   let coverImgSrc = '/units/cme_new/assets/kt3_cover.png';
   if (fs.existsSync(coverImgPath)) {
     const coverImgBase64 = fs.readFileSync(coverImgPath).toString('base64');
@@ -1057,15 +1057,29 @@ function buildCmeKt3TwoPageWorkbook(unitData, period) {
   }
 
   // Map images for Page 14
-  const osloMapPath = path.resolve('public/units/cme_new/assets/cme_west_bank_oslo_areas.png');
+  const osloMapPath = path.join(
+    __dirname,
+    '..',
+    'public',
+    'units',
+    'cme_new',
+    'assets',
+    'cme_west_bank_oslo_areas.png',
+  );
   let osloMapSrc = '/units/cme_new/assets/cme_west_bank_oslo_areas.png';
   if (fs.existsSync(osloMapPath)) {
     const b64 = fs.readFileSync(osloMapPath).toString('base64');
     osloMapSrc = `data:image/png;base64,${b64}`;
   }
 
-  const lebanonMapPath = path.resolve(
-    'public/units/cme_new/assets/cme_lebanon_1982_campaign_map.png',
+  const lebanonMapPath = path.join(
+    __dirname,
+    '..',
+    'public',
+    'units',
+    'cme_new',
+    'assets',
+    'cme_lebanon_1982_campaign_map.png',
   );
   let lebanonMapSrc = '/units/cme_new/assets/cme_lebanon_1982_campaign_map.png';
   if (fs.existsSync(lebanonMapPath)) {
@@ -1096,38 +1110,6 @@ function buildCmeKt3TwoPageWorkbook(unitData, period) {
       sourceTag: 'Historical Primary Source',
       archiveTag: 'Edexcel Paper 2 Master Archive',
       heightMm: 100,
-    },
-    specBox: {
-      title: 'Pearson Edexcel GCSE (9–1) History Specification &bull; Key Topic 3 Content',
-      subtopics: [
-        {
-          title: '1. Diplomatic Negotiations, 1974–79',
-          items: [
-            '<strong>Superpower Shuttle Diplomacy:</strong> Henry Kissinger negotiates disengagement accords following the 1973 war and the OPEC oil embargo.',
-            '<strong>Sadat’s Jerusalem Initiative (1977):</strong> Historic flight to Ben Gurion Airport and address to the Israeli Knesset: "No more war, no more bloodshed."',
-            '<strong>Camp David Accords (1978):</strong> 13 days of secluded talks hosted by Jimmy Carter, brokering bilateral peace frameworks between Sadat and Begin.',
-            '<strong>Treaty of Washington (1979):</strong> Demilitarisation and return of Sinai, demolition of Yamit, Arab League boycott, and Sadat’s assassination (1981).',
-          ],
-        },
-        {
-          title: '2. The Palestinian Issue, 1974–93',
-          items: [
-            '<strong>PLO Diplomacy &amp; "Fatahland":</strong> Arafat’s UN "gun and olive branch" address (1974) and guerrilla cross-border rocket strikes from southern Lebanon.',
-            '<strong>Lebanon Invasion &amp; Siege of Beirut (1982):</strong> Operation Peace for Galilee driving 60 miles north; 10-week siege and PLO evacuation to Tunis.',
-            '<strong>Sabra-Shatila &amp; Political Repercussions:</strong> Phalangist massacre of Palestinian refugees; Israeli Kahan Commission forces Sharon’s resignation.',
-            '<strong>The First Intifada (1987–93):</strong> Jabalia camp spark, civil strikes, Rabin’s "Iron Fist" policy, and the founding of militant Islamist rival Hamas.',
-          ],
-        },
-        {
-          title: '3. Attempts at a Solution, 1988–95',
-          items: [
-            '<strong>Renunciation of Terrorism (1988):</strong> Arafat’s Geneva address recognising Israel’s right to exist, opening direct US diplomatic dialogue.',
-            '<strong>Madrid Conference &amp; Rabin Election:</strong> Impact of Gulf War and Soviet collapse; 1992 election of Labour leader Yitzhak Rabin promising peace.',
-            '<strong>Oslo Accords &amp; Jordan Treaty (1993–94):</strong> Secret Norwegian backchannel, White House lawn handshake, and 1994 Israel-Jordan peace treaty.',
-            '<strong>Extremist Backlash &amp; Oslo II (1995):</strong> Baruch Goldstein Hebron massacre, Hamas suicide bombings, West Bank division (Areas A/B/C), and Rabin’s assassination.',
-          ],
-        },
-      ],
     },
     footerQuip: approvedFunnyFooters[0],
     totalPageCount: 24,

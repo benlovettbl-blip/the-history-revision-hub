@@ -11126,11 +11126,7 @@
                 "source_context": "For 13 days in September 1978, Carter isolated Sadat and Begin at the presidential retreat in Maryland, refusing to let them leave without an accord. When negotiations nearly collapsed over Israeli settlements in Yamit, Carter intervened personally with Begin, presenting personalized signed photographs to Begin's grandchildren to appeal to his conscience. **Hinge Question:** How did Jimmy Carter's personal mediation and persistence prevent the Camp David negotiations from collapsing?"
               }
             }
-          ],
-          "image": "/images/cme_camp_david_1978.jpg",
-          "image_alt": "US President Jimmy Carter sitting between Egyptian President Anwar Sadat and Israeli Prime Minister Menachem Begin at Camp David, September 1978",
-          "caption": "The Camp David Summit (September 1978): Thirteen days of intensive, secluded diplomacy produced the historic framework for the first Arab-Israeli peace accord.",
-          "isReversed": false
+          ]
         },
         {
           "title": "The Camp David Summit",
@@ -11142,6 +11138,10 @@
           "act_title": "Stage 3: The Camp David Summit — How did Jimmy Carter prevent the 13-day Camp David summit from collapsing?",
           "theme_heading": "The Camp David Summit",
           "text": "<span class=\"para-ref\">[3.1]</span> When direct bilateral negotiations between Begin and Sadat deadlocked over Israeli settlements in Sinai and Palestinian autonomy, US President **Jimmy Carter** took the immense political gamble of inviting both leaders to the secluded presidential retreat at **Camp David**, Maryland. For thirteen agonizing days from **5 to 17 September 1978**, Carter engaged in marathon mediation, shuttling between Begin’s and Sadat’s cabins when the two men refused to speak to each other after day three.\n\n<span class=\"para-ref\">[3.2]</span> Carter rescued the summit from collapse by threatening to terminate US foreign aid and personally appealing to Begin’s concern for his grandchildren's future. On **17 September 1978**, the summit concluded with the signing of the **Camp David Accords**, which established two frameworks: a bilateral framework for a peace treaty returning the entire Sinai Peninsula to Egypt in exchange for diplomatic recognition, and a vague framework for Palestinian autonomy in the West Bank and Gaza Strip.",
+          "image": "/images/cme_camp_david_1978.jpg",
+          "image_alt": "US President Jimmy Carter sitting between Egyptian President Anwar Sadat and Israeli Prime Minister Menachem Begin at Camp David, September 1978",
+          "caption": "The Camp David Summit (September 1978): Thirteen days of intensive, secluded diplomacy produced the historic framework for the first Arab-Israeli peace accord.",
+          "isReversed": true,
           "sources": [
             {
               "id": "cme_l10_source_c",
@@ -11212,22 +11212,22 @@
                 "source_context": "The Washington treaty formalized the Camp David Accords. Israel agreed to return the entire Sinai Peninsula and its oilfields to Egypt, dismantle all 18 Jewish settlements in Sinai, and open normal diplomatic and trade ties. However, the treaty relegated the Palestinian question to a vague 'autonomy' council that was never implemented, leading the Arab League to expel Egypt. **Hinge Question:** Why was the bilateral treaty between Egypt and Israel denounced as betrayal by the PLO and wider Arab world?"
               }
             }
-          ],
-          "image": "/images/cme_sadat_memorial_1981.jpg",
-          "image_alt": "The Unknown Soldier Memorial in Nasr City, Cairo, where Anwar Sadat was assassinated during the annual military victory parade on 6 October 1981",
-          "caption": "Assassination of Anwar Sadat (6 October 1981): Islamic Jihad militants murdered Sadat during a military parade, viewing the separate peace with Israel as treason.",
-          "isReversed": true
+          ]
         },
         {
           "title": "Arab Boycott & The Assassination of Sadat",
           "paragraphs": [
             "<span class=\"para-ref\">[5.1]</span> While celebrated in the West, Sadat’s separate peace provoked incandescent fury across the Arab world. Arab governments condemned Sadat as a traitor who had sold out the Palestinian cause to reclaim Egyptian desert sand. The Arab League expelled Egypt from its membership, relocated its headquarters from Cairo to Tunis, severed diplomatic ties, and enacted a total economic boycott against Egyptian trade.",
-            "<span class=\"para-ref\">[5.2]</span> Within Egypt, Islamic fundamentalist groups organized fierce domestic opposition. On **6 October 1981**, during the annual military parade in Cairo celebrating the eighth anniversary of the Yom Kippur canal crossing, Islamic Jihad militants led by Lieutenant **Khalid Islambouli** jumped from an artillery truck, hurling grenades and firing assault rifles into the reviewing stand. **Anwar Sadat was assassinated**, paying with his life for the peace treaty, but his successor **Sadat’s successor** chose to honor the treaty, preserving the uneasy peace with Israel."
+            "<span class=\"para-ref\">[5.2]</span> Within Egypt, Islamic fundamentalist groups organized fierce domestic opposition. On **6 October 1981**, during the annual military parade in Cairo celebrating the eighth anniversary of the Yom Kippur canal crossing, Islamic Jihad militants led by Lieutenant **Khalid Islambouli** jumped from an artillery truck, hurling grenades and firing assault rifles into the reviewing stand. **Anwar Sadat was assassinated**, paying with his life for the peace treaty, but the new Egyptian presidency chose to honor the treaty, preserving the uneasy peace with Israel."
           ],
           "act": 5,
           "act_title": "Stage 5: Arab Boycott & The Assassination of Sadat — Why did Egyptian Islamic Jihad assassinate Anwar Sadat in October 1981?",
           "theme_heading": "Arab Boycott & The Assassination of Sadat",
-          "text": "<span class=\"para-ref\">[5.1]</span> While celebrated in the West, Sadat’s separate peace provoked incandescent fury across the Arab world. Arab governments condemned Sadat as a traitor who had sold out the Palestinian cause to reclaim Egyptian desert sand. The Arab League expelled Egypt from its membership, relocated its headquarters from Cairo to Tunis, severed diplomatic ties, and enacted a total economic boycott against Egyptian trade.\n\n<span class=\"para-ref\">[5.2]</span> Within Egypt, Islamic fundamentalist groups organized fierce domestic opposition. On **6 October 1981**, during the annual military parade in Cairo celebrating the eighth anniversary of the Yom Kippur canal crossing, Islamic Jihad militants led by Lieutenant **Khalid Islambouli** jumped from an artillery truck, hurling grenades and firing assault rifles into the reviewing stand. **Anwar Sadat was assassinated**, paying with his life for the peace treaty, but his successor **Sadat’s successor** chose to honor the treaty, preserving the uneasy peace with Israel.",
+          "text": "<span class=\"para-ref\">[5.1]</span> While celebrated in the West, Sadat’s separate peace provoked incandescent fury across the Arab world. Arab governments condemned Sadat as a traitor who had sold out the Palestinian cause to reclaim Egyptian desert sand. The Arab League expelled Egypt from its membership, relocated its headquarters from Cairo to Tunis, severed diplomatic ties, and enacted a total economic boycott against Egyptian trade.\n\n<span class=\"para-ref\">[5.2]</span> Within Egypt, Islamic fundamentalist groups organized fierce domestic opposition. On **6 October 1981**, during the annual military parade in Cairo celebrating the eighth anniversary of the Yom Kippur canal crossing, Islamic Jihad militants led by Lieutenant **Khalid Islambouli** jumped from an artillery truck, hurling grenades and firing assault rifles into the reviewing stand. **Anwar Sadat was assassinated**, paying with his life for the peace treaty, but the new Egyptian presidency chose to honor the treaty, preserving the uneasy peace with Israel.",
+          "image": "/images/cme_sadat_memorial_1981.jpg",
+          "image_alt": "The Unknown Soldier Memorial in Nasr City, Cairo, where Anwar Sadat was assassinated during the annual military victory parade on 6 October 1981",
+          "caption": "Assassination of Anwar Sadat (6 October 1981): Islamic Jihad militants murdered Sadat during a military parade, viewing the separate peace with Israel as treason.",
+          "isReversed": false,
           "sources": [
             {
               "id": "cme_l10_source_e",

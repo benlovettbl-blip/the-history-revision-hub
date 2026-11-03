@@ -307,20 +307,20 @@ window.addEventListener('DOMContentLoaded', async () => {
         if (idx !== -1) {
           return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
         }
-        // 3. Title match
-        idx = unitData.lessons.findIndex(
-          (l) => l.title && l.title.toLowerCase().includes(rawStr.toLowerCase()),
-        );
-        if (idx !== -1) {
-          return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
-        }
-        // 4. Numeric index handling (supports 1-indexed e.g. 1 -> 0, or 0-indexed 0)
-        if (!isNaN(parseInt(rawStr, 10))) {
+        // 3. Numeric index handling (supports 1-indexed e.g. 1 -> 0, or 0-indexed 0)
+        if (!isNaN(parseInt(rawStr, 10)) && /^\d+$/.test(rawStr)) {
           const num = parseInt(rawStr, 10);
           idx = num >= 1 && num <= unitData.lessons.length ? num - 1 : num === 0 ? 0 : -1;
           if (idx !== -1 && unitData.lessons[idx]) {
             return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
           }
+        }
+        // 4. Title match
+        idx = unitData.lessons.findIndex(
+          (l) => l.title && l.title.toLowerCase().includes(rawStr.toLowerCase()),
+        );
+        if (idx !== -1) {
+          return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
         }
       }
       return { index: -1, lesson: null, id: null };

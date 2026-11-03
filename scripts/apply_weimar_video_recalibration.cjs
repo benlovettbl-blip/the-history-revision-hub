@@ -621,3 +621,4 @@ fs.writeFileSync(dataJsPath, updatedContent, 'utf8');
 fs.writeFileSync(pubDataJsPath, updatedContent, 'utf8');
 
 console.log(`\nSuccessfully updated ${updatedCount} lessons in both units/weimar_nazi_germany/data.js and public/units/weimar_nazi_germany/data.js!`);
+

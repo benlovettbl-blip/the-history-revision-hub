@@ -2884,54 +2884,167 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
   }
 
   // Robust unit-aware PDF resolution
-  if (!pdfUrl || pdfUrl === '#' || pdfUrl === 'undefined') {
-    if (htmlUrl.includes('/units/ks2_ww2/')) {
-      if (htmlUrl.includes('pupil_workbook')) {
+  if (!pdfUrl || pdfUrl === '#' || pdfUrl === 'undefined' || pdfUrl.endsWith('.html')) {
+    const url = htmlUrl || fileBaseName || '';
+
+    // 1. Conflict in the Middle East (cme_new)
+    if (url.includes('/units/cme_new/')) {
+      if (url.includes('mastery')) {
+        if (url.includes('KT1')) pdfUrl = '/pdfs/cme_new_mastery_pack_KT1.pdf';
+        else if (url.includes('KT2')) pdfUrl = '/pdfs/cme_new_mastery_pack_KT2.pdf';
+        else if (url.includes('KT3')) pdfUrl = '/pdfs/cme_new_mastery_pack_KT3.pdf';
+        else pdfUrl = '/pdfs/cme_mastery_pack_FULL.pdf';
+      } else if (url.includes('pupil_workbook')) {
+        if (url.includes('KT1')) pdfUrl = '/pdfs/cme_new_pupil_workbook_KT1.pdf';
+        else if (url.includes('KT2')) pdfUrl = '/pdfs/cme_new_pupil_workbook_KT2.pdf';
+        else if (url.includes('KT3')) pdfUrl = '/pdfs/cme_new_pupil_workbook_KT3.pdf';
+        else pdfUrl = '/pdfs/cme_new_pupil_workbook_KT1.pdf';
+      } else if (url.includes('retrieval') || url.includes('companion')) {
+        pdfUrl = '/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf';
+      } else if (url.includes('textbook')) {
+        if (url.includes('KT1')) pdfUrl = '/pdfs/cme_new_textbook_KT1.pdf';
+        else if (url.includes('KT2')) pdfUrl = '/pdfs/cme_new_textbook_KT2.pdf';
+        else if (url.includes('KT3')) pdfUrl = '/pdfs/cme_new_textbook_KT3.pdf';
+        else pdfUrl = '/pdfs/cme_new_textbook.pdf';
+      } else {
+        pdfUrl = '/pdfs/cme_new_textbook.pdf';
+      }
+    } else if (url.includes('/units/weimar_nazi_germany/')) {
+      if (url.includes('pupil_workbook')) {
+        if (url.includes('KT1')) pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf';
+        else if (url.includes('KT2')) pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT2.pdf';
+        else if (url.includes('KT3')) pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT3.pdf';
+        else if (url.includes('KT4')) pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT4.pdf';
+        else pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf';
+      } else if (url.includes('mastery')) {
+        pdfUrl = '/pdfs/weimar_nazi_germany_mastery_pack_KT1.pdf';
+      } else if (url.includes('retrieval') || url.includes('companion')) {
+        pdfUrl = '/pdfs/Weimar_and_Nazi_Germany_Master_Knowledge_Retrieval_Companion.pdf';
+      } else if (url.includes('textbook')) {
+        if (url.includes('KT1')) pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT1.pdf';
+        else if (url.includes('KT2')) pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT2.pdf';
+        else if (url.includes('KT3')) pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT3.pdf';
+        else if (url.includes('KT4')) pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT4.pdf';
+        else pdfUrl = '/pdfs/weimar_nazi_germany_textbook.pdf';
+      } else {
+        pdfUrl = '/pdfs/weimar_nazi_germany_textbook.pdf';
+      }
+    } else if (url.includes('/units/usa/')) {
+      if (url.includes('pupil_workbook')) {
+        if (url.includes('KT1')) pdfUrl = '/pdfs/usa_pupil_workbook_KT1.pdf';
+        else if (url.includes('KT2')) pdfUrl = '/pdfs/usa_pupil_workbook_KT2.pdf';
+        else if (url.includes('KT3')) pdfUrl = '/pdfs/usa_pupil_workbook_KT3.pdf';
+        else if (url.includes('KT4')) pdfUrl = '/pdfs/usa_pupil_workbook_KT4.pdf';
+        else pdfUrl = '/pdfs/usa_pupil_workbook_KT1.pdf';
+      } else if (url.includes('mastery')) {
+        if (url.includes('KT1')) pdfUrl = '/pdfs/usa_mastery_pack_KT1.pdf';
+        else if (url.includes('KT2')) pdfUrl = '/pdfs/usa_mastery_pack_KT2.pdf';
+        else if (url.includes('KT3')) pdfUrl = '/pdfs/usa_mastery_pack_KT3.pdf';
+        else if (url.includes('KT4')) pdfUrl = '/pdfs/usa_mastery_pack_KT4.pdf';
+        else pdfUrl = '/pdfs/usa_mastery_pack_FULL.pdf';
+      } else if (url.includes('retrieval') || url.includes('companion')) {
+        pdfUrl = '/pdfs/USA_1954_1975_Master_Knowledge_Retrieval_Companion.pdf';
+      } else if (url.includes('textbook')) {
+        if (url.includes('KT1')) pdfUrl = '/pdfs/usa_textbook_KT1.pdf';
+        else if (url.includes('KT2')) pdfUrl = '/pdfs/usa_textbook_KT2.pdf';
+        else if (url.includes('KT3')) pdfUrl = '/pdfs/usa_textbook_KT3.pdf';
+        else if (url.includes('KT4')) pdfUrl = '/pdfs/usa_textbook_KT4.pdf';
+        else pdfUrl = '/pdfs/usa_textbook.pdf';
+      } else {
+        pdfUrl = '/pdfs/usa_textbook.pdf';
+      }
+    } else if (url.includes('/units/eee/')) {
+      if (url.includes('pupil_workbook')) {
+        if (url.includes('KT1')) pdfUrl = '/pdfs/eee_pupil_workbook_KT1.pdf';
+        else if (url.includes('KT2')) pdfUrl = '/pdfs/eee_pupil_workbook_KT2.pdf';
+        else if (url.includes('KT3')) pdfUrl = '/pdfs/eee_pupil_workbook_KT3.pdf';
+        else pdfUrl = '/pdfs/eee_pupil_workbook_KT1.pdf';
+      } else if (url.includes('mastery')) {
+        if (url.includes('KT1')) pdfUrl = '/pdfs/eee_mastery_pack_KT1.pdf';
+        else if (url.includes('KT2')) pdfUrl = '/pdfs/eee_mastery_pack_KT2.pdf';
+        else if (url.includes('KT3')) pdfUrl = '/pdfs/eee_mastery_pack_KT3.pdf';
+        else pdfUrl = '/pdfs/eee_mastery_pack_KT1.pdf';
+      } else if (url.includes('retrieval') || url.includes('companion')) {
+        pdfUrl = '/pdfs/Early_Elizabethan_England_Master_Knowledge_Retrieval_Companion.pdf';
+      } else if (url.includes('textbook')) {
+        if (url.includes('KT1')) pdfUrl = '/pdfs/eee_textbook_KT1.pdf';
+        else if (url.includes('KT2')) pdfUrl = '/pdfs/eee_textbook_KT2.pdf';
+        else if (url.includes('KT3')) pdfUrl = '/pdfs/eee_textbook_KT3.pdf';
+        else pdfUrl = '/pdfs/eee_textbook.pdf';
+      } else {
+        pdfUrl = '/pdfs/eee_textbook.pdf';
+      }
+    } else if (url.includes('/units/edexcel_medicine/')) {
+      if (url.includes('pupil_workbook')) {
+        if (url.includes('medieval')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf';
+        else if (url.includes('renaissance')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_renaissance.pdf';
+        else if (url.includes('18th_19th')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_18th_19th.pdf';
+        else if (url.includes('modern')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_modern.pdf';
+        else if (url.includes('western_front')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_western_front.pdf';
+        else pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_master.pdf';
+      } else if (url.includes('textbook')) {
+        if (url.includes('medieval')) pdfUrl = '/pdfs/edexcel_medicine_textbook_medieval.pdf';
+        else if (url.includes('renaissance')) pdfUrl = '/pdfs/edexcel_medicine_textbook_renaissance.pdf';
+        else if (url.includes('18th_19th')) pdfUrl = '/pdfs/edexcel_medicine_textbook_18th_19th.pdf';
+        else if (url.includes('modern')) pdfUrl = '/pdfs/edexcel_medicine_textbook_modern.pdf';
+        else if (url.includes('western_front')) pdfUrl = '/pdfs/edexcel_medicine_textbook_western_front.pdf';
+        else pdfUrl = '/pdfs/edexcel_medicine_textbook_medieval.pdf';
+      } else if (url.includes('retrieval') || url.includes('companion')) {
+        if (url.includes('western_front')) pdfUrl = '/pdfs/Western_Front_Master_Knowledge_Retrieval_Companion.pdf';
+        else pdfUrl = '/pdfs/Medicine_Through_Time_Master_Knowledge_Retrieval_Companion.pdf';
+      } else {
+        pdfUrl = '/pdfs/edexcel_medicine_textbook_medieval.pdf';
+      }
+    } else if (url.includes('/units/ks2_ww2/')) {
+      if (url.includes('pupil_workbook')) {
         pdfUrl = '/pdfs/ks2_ww2_pupil_workbook.pdf';
       } else if (
-        htmlUrl.includes('quiz_pack') ||
-        htmlUrl.includes('retrieval') ||
-        htmlUrl.includes('companion')
+        url.includes('quiz_pack') ||
+        url.includes('retrieval') ||
+        url.includes('companion')
       ) {
         pdfUrl = '/pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf';
-      } else if (htmlUrl.includes('textbook')) {
+      } else if (url.includes('textbook')) {
         pdfUrl = '/pdfs/ks2_ww2_textbook.pdf';
-      } else if (htmlUrl.includes('/worksheets/')) {
-        const file = htmlUrl.split('/').pop().replace('.html', '.pdf');
+      } else if (url.includes('/worksheets/')) {
+        const file = url.split('/').pop().replace('.html', '.pdf');
         pdfUrl = `/pdfs/ks2_ww2/${file}`;
       } else {
         pdfUrl = '/pdfs/ks2_ww2_pupil_workbook.pdf';
       }
-    } else if (htmlUrl.includes('/units/medieval_england/')) {
-      if (htmlUrl.includes('pupil_workbook')) {
-        pdfUrl = '/pdfs/medieval_england_pupil_workbook.pdf';
-      } else if (
-        htmlUrl.includes('quiz_pack') ||
-        htmlUrl.includes('retrieval') ||
-        htmlUrl.includes('companion')
-      ) {
-        pdfUrl = '/pdfs/Medieval_England_Master_Knowledge_Retrieval_Companion.pdf';
-      } else {
-        pdfUrl = '/pdfs/medieval_england_textbook.pdf';
-      }
-    } else if (htmlUrl.includes('/units/great_war_part2/')) {
-      pdfUrl = '/pdfs/great_war_part2_pupil_workbook.pdf';
-    } else if (htmlUrl.includes('/units/great_war/')) {
-      if (htmlUrl.includes('pupil_workbook')) {
-        pdfUrl = '/pdfs/great_war_pupil_workbook.pdf';
-      } else {
-        pdfUrl = '/pdfs/Causes_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf';
-      }
-    } else if (htmlUrl.includes('/units/cme_new/')) {
-      const pdfBase = fileBaseName
-        .replace('/units/cme_new/booklets/', '')
-        .replace('/units/cme_new/printables/', '')
-        .replace('.html', '')
-        .replace('cme_mastery_', 'cme_mastery_pack_');
-      pdfUrl = `/pdfs/cme_new/${pdfBase}.pdf`;
     } else {
-      const cleanBase = htmlUrl.split('/').pop().replace('.html', '');
-      pdfUrl = `/pdfs/${cleanBase}.pdf`;
+      const ks3Companions = {
+        medieval_england: '/pdfs/Medieval_England_Master_Knowledge_Retrieval_Companion.pdf',
+        great_war: '/pdfs/Causes_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf',
+        great_war_part2: '/pdfs/The_Course_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf',
+        monarchy_religion_power: '/pdfs/Crown_Church_or_Parliament_Master_Knowledge_Retrieval_Companion.pdf',
+        first_british_empire: '/pdfs/The_First_British_Empire_Master_Knowledge_Retrieval_Companion.pdf',
+        second_british_empire: '/pdfs/The_Second_British_Empire_Master_Knowledge_Retrieval_Companion.pdf',
+        industrialisation_and_empire: '/pdfs/Industrialisation_Power_and_Protest_Master_Knowledge_Retrieval_Companion.pdf',
+        water_and_sanitation: '/pdfs/Water_and_Sanitation_Master_Knowledge_Retrieval_Companion.pdf',
+        the_shoah: '/pdfs/The_Shoah_Master_Knowledge_Retrieval_Companion.pdf',
+        post_war_britain: '/pdfs/Post_War_Britain_Master_Knowledge_Retrieval_Companion.pdf',
+        australia: '/pdfs/History_of_Australia_Master_Knowledge_Retrieval_Companion.pdf',
+        cold_war: '/pdfs/Superpower_Relations_and_Cold_War_Master_Knowledge_Retrieval_Companion.pdf',
+      };
+
+      const mUnit = url.match(/\/units\/([a-z0-9_]+)\//);
+      if (mUnit && mUnit[1]) {
+        const u = mUnit[1];
+        if (url.includes('pupil_workbook')) {
+          pdfUrl = `/pdfs/${u}_pupil_workbook.pdf`;
+        } else if (url.includes('textbook')) {
+          pdfUrl = `/pdfs/${u}_textbook.pdf`;
+        } else if (url.includes('quiz_pack') || url.includes('retrieval') || url.includes('companion')) {
+          const comp = ks3Companions[u];
+          pdfUrl = comp ? comp : `/pdfs/${u}_pupil_workbook.pdf`;
+        } else {
+          pdfUrl = `/pdfs/${u}_pupil_workbook.pdf`;
+        }
+      } else {
+        const cleanBase = url.split('/').pop().replace('.html', '');
+        pdfUrl = `/pdfs/${cleanBase}.pdf`;
+      }
     }
   }
 

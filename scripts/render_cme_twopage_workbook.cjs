@@ -1043,7 +1043,7 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
 <body>
 `;
 
-  const coverImgPath = path.resolve('public/units/cme_new/assets/kt2_cover.jpg');
+  const coverImgPath = path.join(__dirname, '..', 'public', 'units', 'cme_new', 'assets', 'kt2_cover.jpg');
   let coverImgSrc = '/units/cme_new/assets/kt2_cover.jpg';
   if (fs.existsSync(coverImgPath)) {
     const coverImgBase64 = fs.readFileSync(coverImgPath).toString('base64');
@@ -1051,8 +1051,14 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
   }
 
   // Map images for Page 14 Cartographic Masterclass
-  const sixDayWarMapPath = path.resolve(
-    'public/units/cme_new/assets/palestine_1967_six_day_war_map.png',
+  const sixDayWarMapPath = path.join(
+    __dirname,
+    '..',
+    'public',
+    'units',
+    'cme_new',
+    'assets',
+    'palestine_1967_six_day_war_map.png',
   );
   let sixDayWarMapSrc = '/units/cme_new/assets/palestine_1967_six_day_war_map.png';
   if (fs.existsSync(sixDayWarMapPath)) {
@@ -1060,7 +1066,15 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
     sixDayWarMapSrc = `data:image/png;base64,${b64}`;
   }
 
-  const yomKippurMapPath = path.resolve('public/units/cme_new/assets/cme_yom_kippur_1973_map.png');
+  const yomKippurMapPath = path.join(
+    __dirname,
+    '..',
+    'public',
+    'units',
+    'cme_new',
+    'assets',
+    'cme_yom_kippur_1973_map.png',
+  );
   let yomKippurMapSrc = '/units/cme_new/assets/cme_yom_kippur_1973_map.png';
   if (fs.existsSync(yomKippurMapPath)) {
     const b64 = fs.readFileSync(yomKippurMapPath).toString('base64');
@@ -1090,38 +1104,6 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
       sourceTag: 'Historical Primary Source',
       archiveTag: 'Edexcel Paper 2 Master Archive',
       heightMm: 100,
-    },
-    specBox: {
-      title: 'Pearson Edexcel GCSE (9–1) History Specification &bull; Key Topic 2 Content',
-      subtopics: [
-        {
-          title: '1. The Six Day War, 1967',
-          items: [
-            '<strong>Cairo Conference &amp; PLO (1964):</strong> Arab League water dispute over the National Water Carrier and the creation of the PLO and armed fedayeen factions.',
-            '<strong>Border Clashes &amp; Radicalisation:</strong> Syrian support for Fatah guerrillas, the Israeli Samu raid (Nov 1966), and dogfights over the Golan (April 1967).',
-            '<strong>Drift to War (May–June 1967):</strong> Soviet disinformation, Nasser expelling UNEF from Sinai, blockading the Straits of Tiran, and mobilising Arab forces.',
-            '<strong>Operation Focus &amp; Mobile Victory:</strong> Pre-emptive airstrike destroying the Egyptian Air Force, capturing Sinai, Gaza, West Bank, Jerusalem, and Golan.',
-          ],
-        },
-        {
-          title: '2. Aftermath of the 1967 War',
-          items: [
-            '<strong>UN Resolution 242 (Nov 1967):</strong> The "Land for Peace" formula, Arab Khartoum Summit "Three Noes", and the closed Suez Canal.',
-            '<strong>Refugees &amp; Occupied Lands:</strong> 1 million Palestinians under Israeli military administration; establishment of religious settlements and fresh refugee exiles.',
-            "<strong>International Fedayeen Campaigns:</strong> PFLP aircraft hijackings at Dawson's Field (1970) and the Black September hostage massacre at Munich (1972).",
-            '<strong>Expulsion from Jordan (1970):</strong> King Hussein’s military crushes Palestinian militia strongholds in Black September, forcing the PLO into Lebanon.',
-          ],
-        },
-        {
-          title: '3. Israel &amp; Egypt, 1967–73',
-          items: [
-            '<strong>War of Attrition &amp; Cold War Diplomacy:</strong> Artillery duels along Suez, Soviet air-defence umbrellas, and Sadat’s 1972 expulsion of 15,000 Soviet advisors.',
-            '<strong>Fortification &amp; The Conceptia:</strong> Construction of the fortified Bar-Lev Line along Suez and Israeli overconfidence in military superiority.',
-            '<strong>The Yom Kippur War (Oct 1973):</strong> Egyptian surprise canal crossing using water cannons, Syrian assault in Golan, and emergency US resupply airlifts.',
-            "<strong>Diplomatic &amp; Economic Fallout:</strong> Sharon’s counter-crossing, Kissinger's shuttle diplomacy, and the OPEC oil embargo quadrupling global fuel prices.",
-          ],
-        },
-      ],
     },
     footerQuip: approvedFunnyFooters[0],
     totalPageCount: 24,

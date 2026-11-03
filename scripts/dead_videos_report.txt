@@ -1,0 +1,133 @@
+Total Dead/Broken YouTube Videos: 33
+
+[1] YouTube ID: 43DqkyuItH8 | Status: 403
+     Used in: cme_new L4 ("France Télévisions / Best Documentary: Nasser: From Dream to Disaster")
+
+[2] YouTube ID: HdQYQ7d_hss | Status: 404
+     Used in: edexcel_medicine L3 ("Cinematic: The Physician (2013) – Ibn Sina & The Contrast with European Barber-Surgery")
+
+[3] YouTube ID: aG043nN5c-I | Status: 404
+     Used in: edexcel_medicine L5 ("Cinematic: Black Death (2010) – The Terror, Miasma & Religious Panic of 1348")
+
+[4] YouTube ID: 2T1sZphI1Qk | Status: 404
+     Used in: edexcel_medicine L10 ("Cinematic: The Great Plague of London (1665) – Watchmen, Red Crosses & City Orders")
+
+[5] YouTube ID: 34wK9H9kU9Y | Status: 404
+     Used in: edexcel_medicine L11 ("Simple History: Edward Jenner & The Smallpox Vaccine (1796) – Inoculation to Vaccination")
+
+[6] YouTube ID: 0Z4tE6-z8W4 | Status: 404
+     Used in: edexcel_medicine L12 ("Simple History: Louis Pasteur vs Robert Koch – The Dawn of Modern Germ Theory")
+     Used in: edexcel_medicine L17 ("Simple History: Magic Bullets – Paul Ehrlich, Salvarsan 606 & Prontosil")
+     Used in: edexcel_medicine L26 ("Simple History: Blood Transfusions on the Western Front – Blood Depots & Sodium Citrate")
+
+[7] YouTube ID: F3Gq22q5u-w | Status: 404
+     Used in: edexcel_medicine L13 ("Simple History: Florence Nightingale & Mary Seacole – The Crimean War & Modern Nursing")
+
+[8] YouTube ID: 1D_sE5m6qF8 | Status: 404
+     Used in: edexcel_medicine L14 ("Cinematic: The Knick (HBO) – The Pre-Antiseptic Surgical Amphitheatre")
+
+[9] YouTube ID: 1b-3_Ea3m0o | Status: 404
+     Used in: edexcel_medicine L16 ("Simple History: Crick, Watson & Franklin – The Discovery of the Structure of DNA (1953)")
+
+[10] YouTube ID: jWpU1gEcwqQ | Status: 404
+     Used in: edexcel_medicine L23 ("Simple History: Weapons of the Western Front – Artillery, Shrapnel & Gas Attacks")
+
+[11] YouTube ID: XW-aN1Uf-r8 | Status: 404
+     Used in: edexcel_medicine L23 ("Dan Snow: WW1 Uncut – Shrapnel Helmets & Gas Masks")
+
+[12] YouTube ID: EHYRfukHToc | Status: 404
+     Used in: edexcel_medicine L24 ("Cinematic: Peter Jackson's "They Shall Not Grow Old" (2018) – Stretcher Bearers & Field Casualties")
+
+[13] YouTube ID: sI9e_xRrhVw | Status: 404
+     Used in: eee L1 ("Elizabeth (1998) | Official Feature Trailer (Cate Blanchett / Geoffrey Rush)")
+     Used in: eee L2 ("Elizabeth (1998) | Passing the Act of Uniformity in Parliament Scene")
+
+[14] YouTube ID: wnqjSgQK03M | Status: 404
+     Used in: eee L4 ("Mary Queen of Scots (2018) | Official Feature Trailer (Saoirse Ronan / Margot Robbie)")
+
+[15] YouTube ID: era_armada_ | Status: 400
+     Used in: eee L7 ("Battlefield Britain: The Spanish Armada Strategic Build-Up | BBC Two")
+     Used in: eee L8 ("The Spanish Armada: Complete Historiographical Documentary | BBC Archive")
+
+[16] YouTube ID: 3b94RZcxQnE | Status: 404
+     Used in: eee L8 ("Simple History: The Spanish Armada (1588) – Crescent Formation, Fireships & Gravelines")
+
+[17] YouTube ID: kYv_3cZzU4I | Status: 404
+     Used in: eee L8 ("BBC Two / Dan Snow: Armada – 12 Days to Save England (The Battle of Gravelines)")
+
+[18] YouTube ID: 4FqV2nU-GqA | Status: 404
+     Used in: eee L9 ("Shakespeare in Love (1998) | Bankside Theatres, Groundlings & Censorship Trailer")
+
+[19] YouTube ID: yFPydEXeCus | Status: 403
+     Used in: usa L5 ("Freedom Riders: The Brutal Attack in Anniston | Feature Recreation")
+
+[20] YouTube ID: 5EI_VNORoe8 | Status: 403
+     Used in: usa L6 ("Eyes on the Prize: No Easy Walk (1961–1963) | PBS Landmark Series")
+
+[21] YouTube ID: F0Z74k0Vv4M | Status: 404
+     Used in: weimar_nazi_germany L1 ("Simple History: Who Ruled Germany Before Hitler? The Weimar Republic (1918–1933)")
+     Used in: weimar_nazi_germany L3 ("Simple History: Gustav Stresemann & The Dawes Plan (1924–1929)")
+     Used in: weimar_nazi_germany L7 ("Simple History: The Great Depression & Hitler's Rise to Power (1929–1932)")
+     Used in: weimar_nazi_germany L8 ("Simple History: How Hitler Became Chancellor in January 1933")
+     Used in: weimar_nazi_germany L9 ("Simple History: The Reichstag Fire & The Enabling Act (1933)")
+     Used in: weimar_nazi_germany L11 ("Simple History: Joseph Goebbels & The Propaganda Machine")
+     Used in: weimar_nazi_germany L12 ("Simple History: Youth Resistance – The Edelweiss Pirates & Swing Kids")
+     Used in: weimar_nazi_germany L13 ("Simple History: The Mother's Cross & Lebensborn in Nazi Germany")
+     Used in: weimar_nazi_germany L14 ("Simple History: The Hitler Youth & League of German Girls")
+     Used in: weimar_nazi_germany L15 ("Simple History: The Nazi Economic Miracle – RAD, Autobahns & Rearmament")
+
+[22] YouTube ID: gKzZ1OWPXgk | Status: 404
+     Used in: weimar_nazi_germany L1 ("Imperial War Museums: The Treaty of Versailles & The "Diktat" (1919)")
+     Used in: weimar_nazi_germany L3 ("Crash Course: Interwar Diplomacy, Locarno (1925) & The League of Nations (1926)")
+     Used in: weimar_nazi_germany L11 ("Imperial War Museums: The 1936 Berlin Olympic Games & Nazi Spectacle")
+     Used in: weimar_nazi_germany L12 ("The History Channel: Religious Resistance – Martin Niemöller & Cardinal Galen")
+     Used in: weimar_nazi_germany L14 ("Imperial War Museums: Indoctrination in Schools – The Nazi Curriculum")
+     Used in: weimar_nazi_germany L16 ("Imperial War Museums: Kristallnacht – The Night of Broken Glass (November 1938)")
+
+[23] YouTube ID: AUZIYQFM7mQ | Status: 404
+     Used in: weimar_nazi_germany L1 ("DW History: The German Revolution of 1918 & The "Dolchstoßlegende"")
+     Used in: weimar_nazi_germany L3 ("DW History: Weimar's Golden Twenties – Economic Miracle on Borrowed Time")
+     Used in: weimar_nazi_germany L8 ("British Pathé: 30 January 1933 – The Torchlight Parade in Berlin")
+     Used in: weimar_nazi_germany L10 ("Simple History: The Gestapo & The SS – Hitler’s Police State (1933–1939)")
+     Used in: weimar_nazi_germany L13 ("The History Teacher: Life for Women in Weimar and Nazi Germany")
+     Used in: weimar_nazi_germany L16 ("Simple History: The Nuremberg Laws (1935) & Nazi Racial Ideology")
+
+[24] YouTube ID: 7_hL44v4o44 | Status: 404
+     Used in: weimar_nazi_germany L2 ("The History Channel: The 1923 German Hyperinflation Catastrophe")
+     Used in: weimar_nazi_germany L7 ("DW Documentary: 6 Million Unemployed – The Collapse of Weimar Democracy")
+     Used in: weimar_nazi_germany L10 ("Imperial War Museums: Dachau (1933) – The First Concentration Camp")
+     Used in: weimar_nazi_germany L13 ("DW Documentary: Women Under Hitler – Between Ideology and War Economy")
+     Used in: weimar_nazi_germany L15 ("The History Channel: The German Labour Front (DAF) & Standard of Living")
+
+[25] YouTube ID: s4N19L7G2aQ | Status: 404
+     Used in: weimar_nazi_germany L2 ("British Pathé: The Kapp Putsch & Freikorps in Berlin (March 1920)")
+     Used in: weimar_nazi_germany L8 ("The History Channel: The Backstairs Intrigue – Papen, Schleicher & Hindenburg")
+     Used in: weimar_nazi_germany L9 ("Khan Academy: The Night of the Long Knives (30 June – 2 July 1934)")
+
+[26] YouTube ID: k_lG71qF32s | Status: 404
+     Used in: weimar_nazi_germany L4 ("Cinematic: Babylon Berlin (2017) – Weimar Golden Twenties, Cabarets & Underworld")
+
+[27] YouTube ID: bF8h8K2kSfs | Status: 404
+     Used in: weimar_nazi_germany L4 ("DW Arts: The Bauhaus Design Revolution in Dessau (Walter Gropius)")
+     Used in: weimar_nazi_germany L11 ("DW Documentary: Art, Censorship & The 1937 Degenerate Art Exhibition")
+     Used in: weimar_nazi_germany L12 ("DW History: Why Did So Few Germans Resist Hitler? Terror & Conformity")
+     Used in: weimar_nazi_germany L15 ("DW History: Strength Through Joy (KdF) & The Volkswagen Scheme")
+     Used in: weimar_nazi_germany L16 ("DW Documentary: From Boycott to Kristallnacht – The Escalation of Nazi Terror")
+
+[28] YouTube ID: W_e8K3z9Pzs | Status: 404
+     Used in: weimar_nazi_germany L5 ("Simple History: The Early Nazi Party & Anton Drexler (1919–1922)")
+
+[29] YouTube ID: Kz8e_P8kW1s | Status: 404
+     Used in: weimar_nazi_germany L5 ("DW Documentary: Hitler’s Early Munich Years & The 25-Point Programme")
+
+[30] YouTube ID: 8w7F_L8kWzs | Status: 404
+     Used in: weimar_nazi_germany L5 ("BBC Two: Ernst Röhm, The SA & The Cult of Paramilitary Violence")
+
+[31] YouTube ID: e_8Kz2P9kWs | Status: 404
+     Used in: weimar_nazi_germany L6 ("The History Channel: Hitler on Trial & The Landsberg Prison Strategy")
+
+[32] YouTube ID: 29Mg6Gfh9Co | Status: 404
+     Used in: weimar_nazi_germany L7 ("Cinematic: Cabaret (1972) – "Tomorrow Belongs to Me" & Totalitarian Seduction")
+
+[33] YouTube ID: Y7h_s7j87vM | Status: 404
+     Used in: weimar_nazi_germany L14 ("Cinematic: Swing Kids (1993) – Hitler Youth Regimentation vs Underground Swing Rebellion")

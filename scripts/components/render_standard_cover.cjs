@@ -15,6 +15,11 @@
 const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
+const {
+  getCanonicalGCSESpec,
+  getCanonicalTrackingRows,
+  UNIT_SPEC_MAP,
+} = require('./get_canonical_spec.cjs');
 
 function generateQrSvg(url) {
   const qr = QRCode.create(url, { margin: 1 });
@@ -316,6 +321,22 @@ function renderStandardFrontCover({
   </div>`;
   }
 
+  // Automatic Canonical Specification Feeder: Load literal Pearson Edexcel specification
+  if (UNIT_SPEC_MAP[unitId]) {
+    try {
+      const canonical = getCanonicalGCSESpec(unitId, keyTopicNum);
+      if (canonical) {
+        specBox = {
+          title: canonical.boxTitle,
+          subtopics: canonical.subtopics,
+          typography: canonical.typography,
+        };
+      }
+    } catch (e) {
+      console.warn(`[renderStandardFrontCover] Canonical spec auto-feed failed for ${unitId} KT${keyTopicNum}: ${e.message}`);
+    }
+  }
+
   // Dynamic specification typography scaling based on column count and item density
   const numCols = (specBox.subtopics || []).length || 3;
   const maxItems = Math.max(...(specBox.subtopics || []).map((s) => (s.items || []).length), 1);
@@ -325,13 +346,21 @@ function renderStandardFrontCover({
   const photoHeight = Math.min(heroImage.heightMm || defaultPhotoHeight, defaultPhotoHeight);
   const objectPos = heroImage.objectPosition || 'center 36%';
 
-  let specFontSize, specLineHeight, specTitleSize, specItemMargin, specTitleMargin;
-  if (isWeimar) {
+  let specFontSize, specLineHeight, specTitleSize, specItemMargin, specTitleMargin, bulletSize;
+  if (specBox.typography) {
+    specFontSize = specBox.typography.fontSize;
+    specLineHeight = specBox.typography.lineHeight;
+    specTitleSize = specBox.typography.titleSize;
+    specItemMargin = specBox.typography.itemMargin;
+    specTitleMargin = specBox.typography.titleMargin;
+    bulletSize = specBox.typography.bulletSize || '6.0px';
+  } else if (isWeimar) {
     specFontSize = '8.2pt';
     specLineHeight = '1.28';
     specTitleSize = '8.6pt';
     specItemMargin = '4.5px';
     specTitleMargin = '5px';
+    bulletSize = '6.0px';
   } else if (numCols <= 3) {
     // 3-column layout (e.g. Conflict in the Middle East, GCSE Paper 2)
     if (maxItems <= 3) {
@@ -340,18 +369,21 @@ function renderStandardFrontCover({
       specTitleSize = '8.3pt';
       specItemMargin = '4.0px';
       specTitleMargin = '4.5px';
+      bulletSize = '6.2px';
     } else if (maxItems <= 5) {
       specFontSize = '7.3pt';
       specLineHeight = '1.27';
       specTitleSize = '7.9pt';
       specItemMargin = '3.0px';
       specTitleMargin = '3.5px';
+      bulletSize = '5.8px';
     } else {
       specFontSize = '6.8pt';
       specLineHeight = '1.20';
       specTitleSize = '7.4pt';
       specItemMargin = '2.0px';
       specTitleMargin = '3.0px';
+      bulletSize = '5.0px';
     }
   } else {
     // 4+ column layout (e.g. Early Elizabethan England, Paper 2 British Depth)
@@ -361,18 +393,21 @@ function renderStandardFrontCover({
       specTitleSize = '8.0pt';
       specItemMargin = '4px';
       specTitleMargin = '5px';
+      bulletSize = '6.0px';
     } else if (maxItems === 4) {
       specFontSize = '7.0pt';
       specLineHeight = '1.22';
       specTitleSize = '7.5pt';
       specItemMargin = '3px';
       specTitleMargin = '4px';
+      bulletSize = '5.5px';
     } else {
       specFontSize = '6.6pt';
       specLineHeight = '1.18';
       specTitleSize = '7.0pt';
       specItemMargin = '2px';
       specTitleMargin = '3px';
+      bulletSize = '5.0px';
     }
   }
 
@@ -383,17 +418,20 @@ function renderStandardFrontCover({
       const itemsHtml = (sub.items || [])
         .map(
           (item) =>
-            `<div style="margin-bottom: ${specItemMargin}; display: flex; align-items: flex-start; gap: 5px;"><span style="color: #000; font-weight: 900; line-height: 1.2;">&bull;</span><span style="flex: 1;">${item}</span></div>`,
+            `<div style="margin-bottom: ${specItemMargin}; display: flex; align-items: flex-start; gap: 5px;">
+              <span style="color: #0f172a; font-weight: 900; line-height: 1.2; font-size: ${bulletSize}; margin-top: 1px;">&bull;</span>
+              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif;">${item}</span>
+            </div>`,
         )
         .join('\n');
 
       return `
           <!-- Subtopic ${idx + 1} -->
           <div class="spec-column-box" style="${borderStyle} display: flex; flex-direction: column; justify-content: space-between; height: 100%; overflow: hidden;">
-            <strong style="font-size: ${specTitleSize}; text-transform: uppercase; color: #000; border-bottom: 1.2px solid #000; padding-bottom: 2px; margin-bottom: ${specTitleMargin}; display: block; letter-spacing: 0.3px; flex-shrink: 0;">
+            <strong style="font-size: ${specTitleSize}; text-transform: uppercase; color: #000; border-bottom: 1.2px solid #000; padding-bottom: 2px; margin-bottom: ${specTitleMargin}; display: block; letter-spacing: 0.3px; flex-shrink: 0; font-family: 'Inter', sans-serif;">
               ${sub.title}
             </strong>
-            <div class="spec-column-items" style="font-size: ${specFontSize}; line-height: ${specLineHeight}; color: #111; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="spec-column-items" style="font-size: ${specFontSize}; line-height: ${specLineHeight}; color: #0f172a; flex: 1; display: flex; flex-direction: column; justify-content: space-evenly;">
               ${itemsHtml}
             </div>
           </div>`;

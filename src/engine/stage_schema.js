@@ -102,7 +102,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   lesson_1: {
     lessonTitle:
       'KT 1.0: Broken Promises & Imperial Borders: Why Was Conflict in the Middle East Inevitable?',
-    workbook: 'cme_new_pupil_workbook_KT1.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT1.pdf',
     bookletTitle: 'Key Topic 1 Pupil Workbook (1915–1956)',
     enquirySpread: 'Enquiry 1: Broken Promises & Imperial Borders (Pages 4–5)',
     examSpread: 'Pages 6–7',
@@ -111,7 +111,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   },
   lesson_2: {
     lessonTitle: 'KT 1.1: The End of the British Mandate and the Creation of Israel, 1945–1949',
-    workbook: 'cme_new_pupil_workbook_KT1.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT1.pdf',
     bookletTitle: 'Key Topic 1 Pupil Workbook (1915–1956)',
     enquirySpread: 'Enquiry 2: Collapse of the Mandate & UN Partition (Pages 8–9)',
     examSpread: 'Pages 10–11',
@@ -120,7 +120,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   },
   lesson_3: {
     lessonTitle: 'KT 1.2: The Aftermath of the 1948–49 War & The Palestinian Refugee Crisis',
-    workbook: 'cme_new_pupil_workbook_KT1.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT1.pdf',
     bookletTitle: 'Key Topic 1 Pupil Workbook (1915–1956)',
     enquirySpread: 'Enquiries 3 & 4: The 1948–49 War & Refugee Settlement (Pages 12–15)',
     examSpread: 'Pages 16–19',
@@ -129,7 +129,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   },
   lesson_4: {
     lessonTitle: 'KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963',
-    workbook: 'cme_new_pupil_workbook_KT1.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT1.pdf',
     bookletTitle: 'Key Topic 1 Pupil Workbook (1915–1956)',
     enquirySpread: 'Enquiry 5: The Suez Crisis & Cold War Confrontation (Pages 20–21)',
     examSpread: 'Pages 22–23',
@@ -141,7 +141,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   lesson_6: {
     lessonTitle:
       'KT 2.1 Enquiry: How Did Water, Border Raids, and Rhetoric Make a Second Arab-Israeli War Inevitable? (1964–1967)',
-    workbook: 'cme_new_pupil_workbook_KT2.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT2.pdf',
     bookletTitle: 'Key Topic 2 Pupil Workbook (1964–1973)',
     enquirySpread: 'Enquiry 1: Escalation to War (Pages 4–5)',
     examSpread: 'Pages 6–7',
@@ -151,7 +151,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   lesson_7: {
     lessonTitle:
       'KT 2.2 Enquiry: Why Was the Six-Day War Decided in Three Hours, and Did Nasser Intend to Fight? (May–June 1967)',
-    workbook: 'cme_new_pupil_workbook_KT2.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT2.pdf',
     bookletTitle: 'Key Topic 2 Pupil Workbook (1964–1973)',
     enquirySpread: 'Enquiry 2: The Six-Day War (Pages 8–9)',
     examSpread: 'Pages 10–11',
@@ -161,7 +161,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   lesson_8: {
     lessonTitle:
       'KT 2.3 Enquiry: "Land for Peace" or Permanent Stalemate: How Did the 1967 Conquered Territories Transform the Conflict?',
-    workbook: 'cme_new_pupil_workbook_KT2.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT2.pdf',
     bookletTitle: 'Key Topic 2 Pupil Workbook (1964–1973)',
     enquirySpread: 'Enquiry 3: The Conquered Territories & Resolution 242 (Pages 12–13)',
     examSpread: 'Pages 14–15',
@@ -171,7 +171,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   lesson_9: {
     lessonTitle:
       'KT 2.4: The Rise of Palestinian Resistance: The PLO, Black September & Munich (1968–1972)',
-    workbook: 'cme_new_pupil_workbook_KT2.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT2.pdf',
     bookletTitle: 'Key Topic 2 Pupil Workbook (1964–1973)',
     enquirySpread: 'Enquiry 4: Palestinian Nationalism & The PLO (Pages 16–17)',
     examSpread: 'Pages 18–19',
@@ -180,7 +180,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   },
   lesson_10: {
     lessonTitle: 'KT 2.5: The War of Attrition & The Yom Kippur War (1969–1973)',
-    workbook: 'cme_new_pupil_workbook_KT2.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT2.pdf',
     bookletTitle: 'Key Topic 2 Pupil Workbook (1964–1973)',
     enquirySpread: 'Enquiry 5: The Yom Kippur War & Oil Shock (Pages 20–21)',
     examSpread: 'Pages 22–23',
@@ -191,7 +191,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   // Key Topic 3 Booklet (cme_new_pupil_workbook_KT3.pdf)
   lesson_11: {
     lessonTitle: 'KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979',
-    workbook: 'cme_new_pupil_workbook_KT3.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT3.pdf',
     bookletTitle: 'Key Topic 3 Pupil Workbook (1973–1995)',
     enquirySpread: 'Enquiries 1 & 2: Shuttle Diplomacy, Camp David & 1979 Treaty (Pages 4–11)',
     examSpread: 'Pages 10–11',
@@ -201,7 +201,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   lesson_12: {
     lessonTitle:
       'KT 3.2: The Palestinian Issue: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993',
-    workbook: 'cme_new_pupil_workbook_KT3.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT3.pdf',
     bookletTitle: 'Key Topic 3 Pupil Workbook (1973–1995)',
     enquirySpread: 'Enquiries 3 & 4: Lebanon War, Kahan Commission & First Intifada (Pages 12–19)',
     examSpread: 'Pages 18–19',
@@ -210,7 +210,7 @@ export const CME_WORKBOOK_STAGE_REGISTRY = {
   },
   lesson_13: {
     lessonTitle: 'KT 3.3: Attempts at a Solution: From the Oslo Accords to Oslo II, 1988–1995',
-    workbook: 'cme_new_pupil_workbook_KT3.pdf',
+    workbook: '/pdfs/cme_new_pupil_workbook_KT3.pdf',
     bookletTitle: 'Key Topic 3 Pupil Workbook (1973–1995)',
     enquirySpread: 'Enquiry 5: Oslo Accords, Peace with Jordan & Oslo II (Pages 20–21)',
     examSpread: 'Pages 22–23',

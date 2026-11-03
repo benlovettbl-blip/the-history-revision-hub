@@ -69,3 +69,4 @@ filePaths.forEach(fp => {
   fs.writeFileSync(fp, newContent, 'utf8');
   console.log(`Updated ${count} items in ${fp}`);
 });
+

@@ -1,0 +1,214 @@
+[
+  {
+    "id": "43DqkyuItH8",
+    "status": 403,
+    "occurrences": [
+      {
+        "unitId": "cme_new",
+        "lessonIndex": 4,
+        "lessonId": "lesson_4",
+        "id": "43DqkyuItH8",
+        "url": "https://www.youtube.com/watch?v=43DqkyuItH8",
+        "title": "France Télévisions / Best Documentary: Nasser: From Dream to Disaster"
+      }
+    ]
+  },
+  {
+    "id": "sI9e_xRrhVw",
+    "status": 404,
+    "occurrences": [
+      {
+        "unitId": "eee",
+        "lessonIndex": 1,
+        "lessonId": "lesson_1_1",
+        "id": "sI9e_xRrhVw",
+        "url": "https://www.youtube.com/watch?v=sI9e_xRrhVw",
+        "title": "Elizabeth (1998) | Official Feature Trailer (Cate Blanchett / Geoffrey Rush)"
+      },
+      {
+        "unitId": "eee",
+        "lessonIndex": 2,
+        "lessonId": "lesson_1_2",
+        "id": "sI9e_xRrhVw",
+        "url": "https://www.youtube.com/watch?v=sI9e_xRrhVw",
+        "title": "Elizabeth (1998) | Passing the Act of Uniformity in Parliament Scene"
+      }
+    ]
+  },
+  {
+    "id": "wnqjSgQK03M",
+    "status": 404,
+    "occurrences": [
+      {
+        "unitId": "eee",
+        "lessonIndex": 4,
+        "lessonId": "lesson_1_4",
+        "id": "wnqjSgQK03M",
+        "url": "https://www.youtube.com/watch?v=wnqjSgQK03M",
+        "title": "Mary Queen of Scots (2018) | Official Feature Trailer (Saoirse Ronan / Margot Robbie)"
+      }
+    ]
+  },
+  {
+    "id": "era_armada_battlefield",
+    "status": 400,
+    "occurrences": [
+      {
+        "unitId": "eee",
+        "lessonIndex": 7,
+        "lessonId": "lesson_2_3",
+        "id": "era_armada_battlefield",
+        "url": "https://www.youtube.com/watch?v=era_armada_battlefield",
+        "title": "Battlefield Britain: The Spanish Armada Strategic Build-Up | BBC Two"
+      },
+      {
+        "unitId": "eee",
+        "lessonIndex": 8,
+        "lessonId": "lesson_2_4",
+        "id": "era_armada_battlefield",
+        "url": "https://www.youtube.com/watch?v=era_armada_battlefield",
+        "title": "The Spanish Armada: Complete Historiographical Documentary | BBC Archive"
+      }
+    ]
+  },
+  {
+    "id": "3b94RZcxQnE",
+    "status": 404,
+    "occurrences": [
+      {
+        "unitId": "eee",
+        "lessonIndex": 8,
+        "lessonId": "lesson_2_4",
+        "id": "3b94RZcxQnE",
+        "url": "https://www.youtube.com/watch?v=3b94RZcxQnE",
+        "title": "Simple History: The Spanish Armada (1588) – Crescent Formation, Fireships & Gravelines"
+      }
+    ]
+  },
+  {
+    "id": "kYv_3cZzU4I",
+    "status": 404,
+    "occurrences": [
+      {
+        "unitId": "eee",
+        "lessonIndex": 8,
+        "lessonId": "lesson_2_4",
+        "id": "kYv_3cZzU4I",
+        "url": "https://www.youtube.com/watch?v=kYv_3cZzU4I",
+        "title": "BBC Two / Dan Snow: Armada – 12 Days to Save England (The Battle of Gravelines)"
+      }
+    ]
+  },
+  {
+    "id": "4FqV2nU-GqA",
+    "status": 404,
+    "occurrences": [
+      {
+        "unitId": "eee",
+        "lessonIndex": 9,
+        "lessonId": "lesson_3_1",
+        "id": "4FqV2nU-GqA",
+        "url": "https://www.youtube.com/watch?v=4FqV2nU-GqA",
+        "title": "Shakespeare in Love (1998) | Bankside Theatres, Groundlings & Censorship Trailer"
+      }
+    ]
+  },
+  {
+    "id": "local_funtley_weir",
+    "status": 400,
+    "occurrences": [
+      {
+        "unitId": "industrialisation_and_empire",
+        "lessonIndex": 1,
+        "lessonId": "lesson_1",
+        "id": "local_funtley_weir",
+        "url": "/videos/local_funtley_weir.mp4",
+        "title": "Funtley Ironworks: River Meon Hydraulic Weir & Mill Race Flow (Fieldwork Footage)"
+      }
+    ]
+  },
+  {
+    "id": "era_black_british_cotton",
+    "status": 400,
+    "occurrences": [
+      {
+        "unitId": "industrialisation_and_empire",
+        "lessonIndex": 1,
+        "lessonId": "lesson_1",
+        "id": "era_black_british_cotton",
+        "url": "https://eduvids.org/embed/black-british-cotton",
+        "title": "Black and British: A Forgotten History — Moral Mission (Mississippi Cotton) | BBC Two / David Olusoga"
+      }
+    ]
+  },
+  {
+    "id": "era-windermere-words",
+    "status": 400,
+    "occurrences": [
+      {
+        "unitId": "ks2_ww2",
+        "lessonIndex": 11,
+        "lessonId": "lesson_11",
+        "id": "era-windermere-words",
+        "url": "https://era.org.uk/streaming-service-resource/the-windermere-children-in-their-own-words/",
+        "title": "The Windermere Children: In Their Own Words (BBC Four Documentary, 2020)"
+      }
+    ]
+  },
+  {
+    "id": "era-windermere-drama",
+    "status": 400,
+    "occurrences": [
+      {
+        "unitId": "ks2_ww2",
+        "lessonIndex": 11,
+        "lessonId": "lesson_11",
+        "id": "era-windermere-drama",
+        "url": "https://era.org.uk/streaming-service-resource/the-windermere-children/",
+        "title": "The Windermere Children (BBC Two Feature Drama, 2020)"
+      }
+    ]
+  },
+  {
+    "id": "8TH65WnwSFs",
+    "status": 408,
+    "occurrences": [
+      {
+        "unitId": "monarchy_religion_power",
+        "lessonIndex": 1,
+        "lessonId": "lesson_1",
+        "id": "8TH65WnwSFs",
+        "url": "https://www.youtube.com/watch?v=8TH65WnwSFs",
+        "title": "Henry VIII and the Church | Timelines.tv History of Britain"
+      }
+    ]
+  },
+  {
+    "id": "yFPydEXeCus",
+    "status": 403,
+    "occurrences": [
+      {
+        "unitId": "usa",
+        "lessonIndex": 5,
+        "lessonId": "lesson_2_1",
+        "id": "yFPydEXeCus",
+        "url": "https://www.youtube.com/watch?v=yFPydEXeCus",
+        "title": "Freedom Riders: The Brutal Attack in Anniston | Feature Recreation"
+      }
+    ]
+  },
+  {
+    "id": "5EI_VNORoe8",
+    "status": 403,
+    "occurrences": [
+      {
+        "unitId": "usa",
+        "lessonIndex": 6,
+        "lessonId": "lesson_2_2",
+        "id": "5EI_VNORoe8",
+        "url": "https://www.youtube.com/watch?v=5EI_VNORoe8",
+        "title": "Eyes on the Prize: No Easy Walk (1961–1963) | PBS Landmark Series"
+      }
+    ]
+  }
+]

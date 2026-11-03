@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
+const { renderStandardFrontCover } = require('./components/render_standard_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -833,168 +834,32 @@ function buildMedievalTwoPageWorkbook(unitData, period) {
 `;
 
   // ====================================================================
-  // PAGE 1: FRONT COVER
+  // PAGE 1: FRONT COVER (Unified 3-Tier Master Architectural Cover)
   // ====================================================================
-  html += `
-  <div class="page page-container" id="page-1" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <!-- Top Departmental Branding with Customizer Hook -->
-      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #0f284e; padding-bottom: 4px; margin-bottom: 8px;">
-        <div data-department-name="The History Department">
-          <span style="font-family: 'Inter', sans-serif; font-size: 11pt; font-weight: 900; color: #0f284e; text-transform: uppercase; letter-spacing: 1px;">
-            <span class="school-brand-target">The History Department</span>
-          </span>
-        </div>
-        <div style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 800; color: #0f284e;">
-          EDEXCEL GCSE (9–1) HISTORY &bull; PAPER 1
-        </div>
-      </div>
-
-      <!-- Unit Title & Subtitle Banner -->
-      <div style="text-align: center; margin-bottom: 8px;">
-        <span style="display: inline-block; font-family: 'Inter', sans-serif; font-size: 8pt; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; border: 1.5px solid #0f284e; background: #0f284e; color: #ffffff; padding: 2px 10px; border-radius: 3px; margin-bottom: 4px;">
-          KEY TOPIC 1 &bull; PUPIL WORKBOOK
-        </span>
-        <h1 style="font-family: 'Playfair Display', serif; font-size: 20pt; font-weight: 900; color: #0f284e; margin: 4px 0 2px 0; line-height: 1.15; letter-spacing: -0.5px;">
-          Medicine in Medieval Britain, c1250–c1500
-        </h1>
-        <p style="font-family: 'Georgia', serif; font-size: 9pt; color: #334155; margin: 0; font-style: italic; font-weight: 600;">
-          Ideas on Causes, Prevention, Treatment, Medical Care &amp; The Black Death
-        </p>
-      </div>
-
-      <!-- Prominent Primary Visual Source Centerpiece (Authentic Manuscript Illumination in Rich Color) -->
-      <div style="margin: 2px 0 5px 0; border: 1.5px solid #0f284e; border-radius: 4px; overflow: hidden; background: #ffffff;">
-        <div style="background: #fcfbf9; display: flex; justify-content: center; align-items: center; padding: 2px 4px;">
-          <img src="${coverImgBase64}" alt="Medieval Plague Sufferers in Bed with Buboes" style="width: 100%; height: 93mm; object-fit: contain; display: block; margin: 0 auto; border: 1.2px solid #0f284e; border-radius: 2px; box-shadow: 0 2px 6px rgba(15,40,78,0.22);">
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #0f284e; padding: 3px 8px; border-top: 1.5px solid #0f284e; background: #ffffff;">
-          <span><strong>Primary Visual Evidence:</strong> <em>Medieval Plague Sufferers in Bed with Buboes</em> &bull; Toggenburg Bible MS (1411)</span>
-          <span style="font-weight: 700; color: #475569;">CONTEMPORARY PRINT ARCHIVE</span>
-        </div>
-      </div>
-
-      <!-- Pupil Identification & Target Setting Box -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 4px 10px; background: #ffffff; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 14px; align-items: center; margin-bottom: 6px;">
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Pupil Name:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 12px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Target:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 12px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Class:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 12px;"></div>
-        </div>
-      </div>
-
-      <!-- Course Specification Curriculum Tracking Table -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; overflow: hidden; margin-bottom: 4px;">
-        <table style="width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 8pt;">
-          <thead>
-            <tr style="background: #0f284e; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px;">
-              <th style="padding: 4px 8px; text-align: left; width: 78%; font-size: 7.5pt; font-weight: 800;">
-                Key Topic 1 Specification Framework (1HI0/11)
-              </th>
-              <th style="padding: 4px 8px; text-align: center; width: 11%; font-size: 7.5pt; font-weight: 800; border-left: 1px solid rgba(255,255,255,0.25);">
-                Lesson Done
-              </th>
-              <th style="padding: 4px 8px; text-align: center; width: 11%; font-size: 7.5pt; font-weight: 800; border-left: 1px solid rgba(255,255,255,0.25);">
-                Quiz [10]
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-              <td style="padding: 18.5px 10px; border-right: 1.2px solid #cbd5e1;">
-                <div style="font-size: 8.8pt; font-weight: 800; color: #0f284e; line-height: 1.25;">
-                  Key Topic 1.1: Supernatural &amp; Religious Explanations of Disease
-                </div>
-                <div style="font-family: 'Georgia', serif; font-size: 8pt; font-style: italic; color: #475569; margin-top: 1.5px; line-height: 1.25;">
-                  Why did the Catholic Church, scriptoria, and divine retribution dominate medieval understanding of illness?
-                </div>
-              </td>
-              <td style="text-align: center; vertical-align: middle; border-right: 1.2px solid #cbd5e1;">
-                <div style="width: 16px; height: 16px; border: 1.5px solid #0f284e; border-radius: 2px; margin: 0 auto; background: #ffffff;"></div>
-              </td>
-              <td style="text-align: center; vertical-align: middle;">
-                <div style="width: 16px; height: 16px; border: 1.5px solid #0f284e; border-radius: 2px; margin: 0 auto; background: #ffffff;"></div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-              <td style="padding: 18.5px 10px; border-right: 1.2px solid #cbd5e1;">
-                <div style="font-size: 8.8pt; font-weight: 800; color: #0f284e; line-height: 1.25;">
-                  Key Topic 1.2: Rational Explanations: Hippocrates, Galen &amp; The Four Humours
-                </div>
-                <div style="font-family: 'Georgia', serif; font-size: 8pt; font-style: italic; color: #475569; margin-top: 1.5px; line-height: 1.25;">
-                  Why did the Theory of Opposites, uroscopy wheels, and miasma remain unchallenged for centuries?
-                </div>
-              </td>
-              <td style="text-align: center; vertical-align: middle; border-right: 1.2px solid #cbd5e1;">
-                <div style="width: 16px; height: 16px; border: 1.5px solid #0f284e; border-radius: 2px; margin: 0 auto; background: #ffffff;"></div>
-              </td>
-              <td style="text-align: center; vertical-align: middle;">
-                <div style="width: 16px; height: 16px; border: 1.5px solid #0f284e; border-radius: 2px; margin: 0 auto; background: #ffffff;"></div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-              <td style="padding: 18.5px 10px; border-right: 1.2px solid #cbd5e1;">
-                <div style="font-size: 8.8pt; font-weight: 800; color: #0f284e; line-height: 1.25;">
-                  Key Topic 1.3: Approaches to Prevention &amp; Treatment: Rituals, Bleeding &amp; Purging
-                </div>
-                <div style="font-family: 'Georgia', serif; font-size: 8pt; font-style: italic; color: #475569; margin-top: 1.5px; line-height: 1.25;">
-                  How did medieval physicians balance fleam bloodletting, treacle theriac, and the Regimen Sanitatis?
-                </div>
-              </td>
-              <td style="text-align: center; vertical-align: middle; border-right: 1.2px solid #cbd5e1;">
-                <div style="width: 16px; height: 16px; border: 1.5px solid #0f284e; border-radius: 2px; margin: 0 auto; background: #ffffff;"></div>
-              </td>
-              <td style="text-align: center; vertical-align: middle;">
-                <div style="width: 16px; height: 16px; border: 1.5px solid #0f284e; border-radius: 2px; margin: 0 auto; background: #ffffff;"></div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-              <td style="padding: 18.5px 10px; border-right: 1.2px solid #cbd5e1;">
-                <div style="font-size: 8.8pt; font-weight: 800; color: #0f284e; line-height: 1.25;">
-                  Key Topic 1.4: Medical Care Providers &amp; Monastic Hospitals: ‘Care Not Cure’
-                </div>
-                <div style="font-family: 'Georgia', serif; font-size: 8pt; font-style: italic; color: #475569; margin-top: 1.5px; line-height: 1.25;">
-                  Who cared for the sick, and why did monastic hospitals prioritize spiritual comfort over medical cure?
-                </div>
-              </td>
-              <td style="text-align: center; vertical-align: middle; border-right: 1.2px solid #cbd5e1;">
-                <div style="width: 16px; height: 16px; border: 1.5px solid #0f284e; border-radius: 2px; margin: 0 auto; background: #ffffff;"></div>
-              </td>
-              <td style="text-align: center; vertical-align: middle;">
-                <div style="width: 16px; height: 16px; border: 1.5px solid #0f284e; border-radius: 2px; margin: 0 auto; background: #ffffff;"></div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-              <td style="padding: 18.5px 10px; border-right: 1.2px solid #cbd5e1;">
-                <div style="font-size: 8.8pt; font-weight: 800; color: #0f284e; line-height: 1.25;">
-                  Key Topic 1.5: Case Study: Dealing with the Black Death (1348–1349)
-                </div>
-                <div style="font-family: 'Georgia', serif; font-size: 8pt; font-style: italic; color: #475569; margin-top: 1.5px; line-height: 1.25;">
-                  Why was medieval society entirely powerless against the arrival of Yersinia pestis at Melcombe Regis?
-                </div>
-              </td>
-              <td style="text-align: center; vertical-align: middle; border-right: 1.2px solid #cbd5e1;">
-                <div style="width: 16px; height: 16px; border: 1.5px solid #0f284e; border-radius: 2px; margin: 0 auto; background: #ffffff;"></div>
-              </td>
-              <td style="text-align: center; vertical-align: middle;">
-                <div style="width: 16px; height: 16px; border: 1.5px solid #0f284e; border-radius: 2px; margin: 0 auto; background: #ffffff;"></div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      ${renderFooterStrip(1, 'The History Revision Hub &bull; GCSE History Paper 1 &bull; Key Topic 1 Pupil Workbook', 20)}
-    </div>
-  </div>
-`;
+  html += renderStandardFrontCover({
+    unitId: 'edexcel_medicine',
+    paperTitle: 'EDEXCEL GCSE (9–1) HISTORY • PAPER 1: MEDICINE IN BRITAIN, C1250–PRESENT',
+    specCode: 'SPECIFICATION 1HI0/11',
+    keyTopicNum: 1,
+    dateRange: 'c1250–c1500',
+    title: 'Medicine in Medieval Britain, c1250–c1500',
+    subtitle: 'c1250–c1500: Ideas on Causes, Prevention, Treatment, Medical Care &amp; The Black Death',
+    heroImage: {
+      src: coverImgBase64,
+      alt: 'Medieval Plague Sufferers in Bed with Buboes',
+      objectPosition: 'center 30%',
+      shelfmark: 'MS 13076 • FOLIO 24V',
+      date: 'c.1350',
+      title: 'Omne Bonum: Clerics Ministering to Plague Victims with Buboes',
+      caption: 'James le Palmer (fl. 1360–1375) • Fourteenth-century illuminated manuscript showing two plague sufferers bearing bubonic sores in bed while priests administer last rites and prayer.',
+      sourceTag: 'Primary Visual Evidence',
+      archiveTag: 'The British Library Manuscript Collection',
+      heightMm: 68,
+    },
+    footerQuip: 'Notes: Key Topic 1 Specification Framework &bull; Retain for revision.',
+    totalPageCount: 20,
+    renderFooterStrip,
+  });
 
   // ====================================================================
   // PAGES 2–3: PANORAMIC LIVING TIMELINE (8 HISTORICAL MILESTONES)

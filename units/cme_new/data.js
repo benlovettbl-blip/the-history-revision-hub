@@ -109,6 +109,7 @@ export default {
   "lessons": [
     {
       "id": "lesson_1",
+      "banner": "/images/cme_allenby_jerusalem_1917.jpg",
       "key_individual": {
         "anchor_act": 3,
         "anchor_title": "The Balfour Declaration & Contradictory Imperial Pledges (1917)",
@@ -1351,8 +1352,8 @@ export default {
           "explanation": "King Abdullah entertained ambitions of creating a ‘Greater Syria’ under Hashemite rule. His secret contacts with Jewish Agency leaders and determination to secure the West Bank and East Jerusalem drove Transjordan’s distinctive military strategy in 1948."
         }
       ],
-      "enquiry": "Water, Faith, and Imperial Rulers: How did physical geography and artificial borders make conflict in the Middle East inevitable?",
-      "hook_text": "The Middle East is the ultimate geopolitical crossroads of the earth—the physical land bridge connecting Europe, Asia, and Africa, the guardian of vital maritime chokepoints, and the birthplace of three world religions. To understand the bloody wars between Arabs and Israelis from 1945 to 1995, one must first understand its geography: how European diplomats drew straight ruler lines across deserts, why fresh water from the River Jordan is a matter of national survival, and why controlling the high ground of the Golan Heights or the narrow waters of the Straits of Tiran dictated the difference between victory and annihilation. How did imperial diplomacy and strategic geography lay the groundwork for fifty years of intractable conflict?",
+      "enquiry": "How did physical geography and artificial borders make conflict in the Middle East inevitable?",
+      "hook_text": "The Middle East sits at the strategic crossroads of three continents, defined by vital waterways, rich oil reserves, and centuries of imperial rivalry. In the wake of the First World War, European diplomats drew artificial borders that divided Arab communities and promised conflicting homelands. How did imperial diplomacy and strategic geography lay the groundwork for fifty years of intractable conflict?",
       "exam_practice": {
         "type": "consequence_and_extended",
         "title": "Edexcel GCSE (9–1) Paper 2 Exam Practice",
@@ -1494,6 +1495,7 @@ export default {
     },
     {
       "id": "lesson_2",
+      "banner": "/images/cme_bengurion_declaration_1948.jpg",
       "key_individual": {
         "anchor_act": 12,
         "anchor_title": "The Declaration of the State of Israel (14 May 1948)",
@@ -2810,6 +2812,7 @@ export default {
     },
     {
       "id": "lesson_3",
+      "banner": "/images/cme_palestinian_refugees_1948.jpg",
       "key_individual": {
         "anchor_act": 2,
         "anchor_title": "West Bank Annexation & Absorption of Palestinian Refugees",
@@ -3348,7 +3351,7 @@ export default {
           "options": [
             "The Green Line",
             "The Bar-Lev Line",
-            "The Allon Line",
+            "The Green Line",
             "The Purple Line"
           ],
           "answer": "The Green Line",
@@ -3470,7 +3473,7 @@ export default {
             "The Green Line",
             "The Bar-Lev Line",
             "The Maginot Line",
-            "The Allon Line"
+            "The Green Line"
           ],
           "answer": "The Green Line",
           "explanation": "Source C is the 1949 armistice boundaries map showing the Green Line."
@@ -4098,6 +4101,7 @@ export default {
     },
     {
       "id": "lesson_4",
+      "banner": "/images/cme_port_said_british_troops_1956.jpg",
       "title": "KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963",
       "lesson_reflection": {
         "prompt": "You have reached the end of this Key Topic booklet! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
@@ -5394,6 +5398,7 @@ export default {
     },
     {
       "id": "lesson_6",
+      "banner": "/images/cme_cairo_summit_1964.jpg",
       "key_individual": {
         "anchor_act": 1,
         "anchor_title": "The 1964 Cairo Conference & The Water Wars",
@@ -5683,12 +5688,12 @@ export default {
             {
               "id": "cme_l5_source_d",
               "letter": "D",
-              "title": "Source D: The Arab Headwaters Diversion Plan Schematic (1964–1966)",
-              "src": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
-              "image": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
-              "source": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
-              "caption": "Schematic flow chart illustrating the Arab League plan to divert the Hasbani and Banyas tributaries away from the Jordan River basin into the Yarmouk River in Jordan.",
-              "desc": "Cartographic flow diagram of the disputed Jordan River headwaters.",
+              "title": "Source D: Israeli Tank Guarding the Disputed Banias River Headwaters (1967)",
+              "src": "/images/cme_banias_spring_headwaters_1967.jpg",
+              "image": "/images/cme_banias_spring_headwaters_1967.jpg",
+              "source": "/images/cme_banias_spring_headwaters_1967.jpg",
+              "caption": "An Israeli Super Sherman tank deployed above the natural pools and waterfalls of the Banias springs on the Syrian border, guarding the critical northern headwaters of the Jordan River basin against Syrian diversion works.",
+              "desc": "Archival photograph of Israeli tank at the Banias river headwaters on the Syrian border.",
               "provenance": "Arab League Permanent Military Committee, Cairo, 1965.",
               "citation": "Arab League Archives, Cairo.",
               "hinge_question": "Why did Israel treat the Arab headwaters diversion project as a legitimate casus belli (act of war)?",
@@ -5845,9 +5850,9 @@ export default {
           "id": "cme_l5_source_d",
           "letter": "D",
           "title": "Source D: The Arab Headwaters Diversion Plan Schematic (1964–1966)",
-          "src": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
-          "image": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
-          "source": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
+          "src": "/images/cme_banias_spring_headwaters_1967.jpg",
+          "image": "/images/cme_banias_spring_headwaters_1967.jpg",
+          "source": "/images/cme_banias_spring_headwaters_1967.jpg",
           "caption": "Schematic flow chart illustrating the Arab League plan to divert the Hasbani and Banyas tributaries away from the Jordan River basin into the Yarmouk River in Jordan.",
           "desc": "Cartographic flow diagram of the disputed Jordan River headwaters.",
           "provenance": "Arab League Permanent Military Committee, Cairo, 1965.",
@@ -6384,10 +6389,13 @@ export default {
           "model_answer": "<ol><li><strong>Water & Borders:</strong> Israel viewed water from Lake Kinneret as vital for agricultural survival in the Negev, while Syria attempted to divert the Jordan headwaters (Banias) away from Israel. Clashes over construction machinery and tractor patrols along the demilitarized zones escalated into tank duels and aerial dogfights over the Golan Heights.</li><li><strong>Strategic Chokepoint:</strong> The Gulf of Aqaba and Straits of Tiran were Israel's only maritime shipping route to Asia and East Africa, securing 90% of its vital oil imports from Iran. Israel had explicitly stated in 1957 that closing the Straits would be considered a formal act of war (casus belli); by expelling UNEF peacekeepers and mining the straits, Nasser forced Israel to choose between economic strangulation or pre-emptive attack.</li></ol>"
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "enquiry": "How did water disputes, border raids, and escalating militarism make a second regional war inescapable?"
     },
     {
       "id": "lesson_7",
+      "banner": "/images/cme_six_day_war_airfield_1967.jpg",
+      "card_image": "/images/cme_six_day_war_airfield_1967.jpg",
       "key_individual": {
         "anchor_act": 2,
         "anchor_title": "The Pre-Emptive Dawn Airstrike & Air Dominance (5 June 1967)",
@@ -6615,9 +6623,9 @@ export default {
               }
             }
           ],
-          "image": "/images/cme_six_day_war_airfield_1967.jpg",
-          "image_alt": "Burned out Egyptian MiG-21 jet fighters destroyed on tarmac runways during the pre-emptive air strike, 5 June 1967",
-          "caption": "the pre-emptive air strike (5 June 1967): The Israeli Air Force destroyed over 300 Egyptian combat aircraft on the ground in three hours, securing absolute air supremacy.",
+          "image": "/images/cme_six_day_war_sinai_armour_1967.jpg",
+          "image_alt": "Israeli 14th Armored Brigade tanks advancing across the Sinai desert, June 1967",
+          "caption": "Sinai armored offensive (June 1967): IDF armored columns advancing rapidly across the Sinai desert towards the Suez Canal.",
           "isReversed": false
         },
         {
@@ -6818,22 +6826,22 @@ export default {
           "id": "cme_l7_source_d",
           "letter": "D",
           "target_stage": 4,
-          "title": "Source D: Aerial Reconnaissance of Destroyed Egyptian Airfields during Operation Focus (5 June 1967)",
+          "title": "Source D: Aerial Reconnaissance of Destroyed Egyptian Airfields during the Pre-emptive Air Strike (5 June 1967)",
           "src": "/images/cme_six_day_war_airfield_1967.jpg",
           "image": "/images/cme_six_day_war_airfield_1967.jpg",
           "source": "/images/cme_six_day_war_airfield_1967.jpg",
-          "caption": "Israeli Air Force reconnaissance photograph showing destroyed Egyptian Air Force MiG-21 jet fighters and cratered runways at an Egyptian airbase following the opening waves of Operation Focus on the morning of 5 June 1967.",
+          "caption": "Israeli Air Force reconnaissance photograph showing destroyed Egyptian Air Force MiG-21 jet fighters and cratered runways at an Egyptian airbase following the opening waves of the pre-emptive air strike on the morning of 5 June 1967.",
           "desc": "Aerial photograph of destroyed Egyptian Air Force MiG fighters on cratered tarmac, 5 June 1967.",
           "provenance": "Israel Defense Forces Archives / IAF Aerial Reconnaissance Unit, 5 June 1967.",
           "citation": "Israel Defense Forces Archives (IDFA).",
-          "source_context": "At 07:45 on 5 June 1967, the Israeli Air Force launched Operation Focus, flying under Egyptian radar across the Mediterranean to bomb 19 Egyptian airfields simultaneously with specialized concrete-piercing bombs. Within three hours, over 300 Egyptian combat aircraft were destroyed on the tarmac, securing absolute Israeli air supremacy. **Hinge Question:** Why was achieving total air superiority in the opening hours the decisive causal mechanism of the Six-Day War?",
+          "source_context": "At 07:45 on 5 June 1967, the Israeli Air Force launched a pre-emptive strike, flying under Egyptian radar across the Mediterranean to bomb 19 Egyptian airfields simultaneously with specialized concrete-piercing bombs. Within three hours, over 300 Egyptian combat aircraft were destroyed on the tarmac, securing absolute Israeli air supremacy. **Hinge Question:** Why was achieving total air superiority in the opening hours the decisive causal mechanism of the Six-Day War?",
           "question_badge": "Historical Significance",
           "question_type": "Historical Significance",
           "enquiry_question": "How does Source D explain why the outcome of the Six-Day War was effectively decided in the first three hours?",
           "model_answer": "Source D shows the complete destruction of Egypt's frontline fighter fleet on the ground; without air cover, Egyptian ground divisions in the Sinai were left completely exposed to relentless Israeli close air support, making an organized defense impossible.",
           "hinge_question": "Why was achieving total air superiority in the opening hours the decisive causal mechanism of the Six-Day War?",
           "teacher_notes": {
-            "source_context": "At 07:45 on 5 June 1967, the Israeli Air Force launched Operation Focus, flying under Egyptian radar across the Mediterranean to bomb 19 Egyptian airfields simultaneously with specialized concrete-piercing bombs. Within three hours, over 300 Egyptian combat aircraft were destroyed on the tarmac, securing absolute Israeli air supremacy. **Hinge Question:** Why was achieving total air superiority in the opening hours the decisive causal mechanism of the Six-Day War?"
+            "source_context": "At 07:45 on 5 June 1967, the Israeli Air Force launched a pre-emptive strike, flying under Egyptian radar across the Mediterranean to bomb 19 Egyptian airfields simultaneously with specialized concrete-piercing bombs. Within three hours, over 300 Egyptian combat aircraft were destroyed on the tarmac, securing absolute Israeli air supremacy. **Hinge Question:** Why was achieving total air superiority in the opening hours the decisive causal mechanism of the Six-Day War?"
           }
         },
         {
@@ -6870,7 +6878,7 @@ export default {
             "marks": 4,
             "question": "1(a). Explain one consequence of the actions of Nasser in the period leading to war. [4 marks]. (4 marks)",
             "prompt": "Point (Forced Israel into launching a pre-emptive strike) • Fact (Nasser mobilized troops in Sinai, expelled UNEF, and blockaded the Straits of Tiran at Sharm el-Sheikh) • Consequence (Convinced Israeli leaders that war was imminent, prompting the surprise destruction of Arab air forces on 5 June 1967).",
-            "model": "One consequence of Nasser's actions in May 1967 was that Israel considered war inevitable and launched a preemptive strike. Specifically, Nasser expelled UN peacekeepers from Sinai, deployed 100,000 troops, and closed the Straits of Tiran to Israeli shipping. Viewing the blockade as an act of war, Israel launched Operation Focus on 5 June, destroying Egypt's air force.",
+            "model": "One consequence of Nasser's actions in May 1967 was that Israel considered war inevitable and launched a preemptive strike. Specifically, Nasser expelled UN peacekeepers from Sinai, deployed 100,000 troops, and closed the Straits of Tiran to Israeli shipping. Viewing the blockade as an act of war, Israel launched a pre-emptive air strike on 5 June, destroying Egypt's air force.",
             "scaffolding": {
               "acronym": "P-F-C (Point • Fact • Consequence)",
               "acronym_title": "The P-F-C High-Yield Consequence Formula (1 Concise Paragraph)",
@@ -7341,10 +7349,12 @@ export default {
           "model_answer": "<ol><li><strong>Recall:</strong> Ammunition Hill (<em>Givat HaTachmoshet</em>).</li><li><strong>Explain:</strong> Nasser lied to King Hussein on secure radio links, claiming Egyptian forces had destroyed 75% of the Israeli Air Force and were advancing through the Negev. Believing Israel was on the verge of destruction, Hussein rejected Israeli secret diplomatic pleas to stay out of the war, ordering his artillery to shell Tel Aviv and Jerusalem, sealing Jordan's defeat.</li><li><strong>Challenge:</strong> Far from an easy walkover, the battle of Ammunition Hill resulted in severe casualties on both sides; Israeli veterans openly praised the resolute bravery of the Jordanian soldiers who fought to the death in narrow concrete bunkers. These oral accounts demonstrate that military disaster stemmed from political deception and absent air cover, not a lack of soldierly valor.</li></ol>"
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "enquiry": "Why was the Six-Day War decided so rapidly, and did Egyptian brinkmanship make an Israeli preemptive strike inevitable?"
     },
     {
       "id": "lesson_8",
+      "banner": "/images/cme_bar_lev_line_fortifications_1970.jpg",
       "key_individual": {
         "anchor_act": 3,
         "anchor_title": "UN Resolution 242 & The Land for Peace Formula",
@@ -7547,29 +7557,29 @@ export default {
             {
               "id": "cme_l7_source_b",
               "letter": "B",
-              "title": "Source B: Military Governorate Administration Map of the West Bank (1968)",
-              "src": "/units/cme_new/assets/palestine_1967_map.png",
-              "image": "/units/cme_new/assets/palestine_1967_map.png",
-              "source": "/units/cme_new/assets/palestine_1967_map.png",
-              "caption": "Israeli military command map detailing the administrative sub-districts (Jenin, Nablus, Ramallah, Hebron) placed under direct IDF military decree following Order No. 1.",
-              "desc": "Cartographic map of the Israeli military government in Judea and Samaria.",
-              "provenance": "Israel Defense Forces Military Advocate General Archives, Tel Aviv, 1968.",
-              "citation": "IDF Archives / Israel State Archives.",
-              "hinge_question": "How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?",
-              "source_context": "Under Military Proclamation No. 2, all legislative, executive, and judicial powers over the West Bank were assumed by the IDF Military Commander. Over the following decades, more than 1,000 military orders were issued regulating everything from land registration and water drilling to political assemblies and school curricula. **Hinge Question:** How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?",
-              "context": "The IDF established military rule over the West Bank, issuing military orders to govern civil and security affairs.",
-              "question_badge": "Source Inference",
-              "question_type": "Source Inference",
-              "enquiry_question": "What can you infer from Source B about how Israel prepared for the governance of the West Bank after 1967?",
-              "model_answer": "Source B indicates that Israel quickly moved from ad-hoc wartime policing to a highly organized, institutionalized military administration capable of maintaining long-term control over a hostile civilian population indefinitely.",
+              "title": "Source B: The Khartoum Resolution and the 'Three Nos' (1 September 1967)",
+              "src": "/images/cme_khartoum_summit_1967.jpg",
+              "image": "/images/cme_khartoum_summit_1967.jpg",
+              "source": "/images/cme_khartoum_summit_1967.jpg",
+              "caption": "Arab heads of state at the Khartoum Summit in Sudan, where the Arab League adopted the famous 'Three Nos' resolution on 1 September 1967.",
+              "desc": "Archival photograph of Arab leaders at the Khartoum Summit formulating the 'Three Nos' resolution (1967).",
+              "provenance": "Arab League Summit Records / Sudanese Ministry of Information Archives, Khartoum, September 1967.",
+              "citation": "Khartoum Summit Declaration, Arab League Official Gazette, 1 September 1967.",
+              "hinge_question": "Why did the 'Three Nos' make a peaceful resolution under UN Resolution 242 virtually impossible?",
+              "source_context": "Following their defeat in the Six-Day War, Arab leaders met in Khartoum to coordinate their diplomatic strategy. While UN Resolution 242 proposed 'land for peace', the Khartoum Resolution declared that Arab states would make no peace, give no recognition, and enter into no negotiations with Israel. **Hinge Question:** Why did the 'Three Nos' make a peaceful resolution under UN Resolution 242 virtually impossible?",
+              "context": "Arab leaders issued the 'Three Nos' at Khartoum, rejecting all peace, recognition, and negotiation with Israel.",
+              "question_badge": "Author’s Purpose",
+              "question_type": "Author’s Purpose",
+              "enquiry_question": "What was the primary purpose of the Arab League issuing the 'Three Nos' in Source B?",
+              "model_answer": "The purpose was to restore Arab pride after the humiliating 1967 defeat and demonstrate to the Arab public that leaders like Nasser would never surrender Palestinian land or accept Israel’s existence.",
               "provenance_clues": {
-                "author": "IDF Central Command and Civil Administration planning unit.",
-                "audience": "Regional military governors and Ministry of Defense legal advisors.",
-                "motive": "To codify administrative control and legal authority over the occupied Palestinian populace.",
-                "hinge_question": "How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?"
+                "author": "Arab heads of state including Gamal Abdel Nasser of Egypt and King Faisal of Saudi Arabia.",
+                "audience": "The Arab public and the international community.",
+                "motive": "To prevent any individual Arab nation from breaking ranks to sign a separate peace treaty with Israel.",
+                "hinge_question": "Why did the 'Three Nos' make a peaceful resolution under UN Resolution 242 virtually impossible?"
               },
               "teacher_notes": {
-                "source_context": "Under Military Proclamation No. 2, all legislative, executive, and judicial powers over the West Bank were assumed by the IDF Military Commander. Over the following decades, more than 1,000 military orders were issued regulating everything from land registration and water drilling to political assemblies and school curricula. **Hinge Question:** How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?"
+                "source_context": "Following their defeat in the Six-Day War, Arab leaders met in Khartoum to coordinate their diplomatic strategy. While UN Resolution 242 proposed 'land for peace', the Khartoum Resolution declared that Arab states would make no peace, give no recognition, and enter into no negotiations with Israel. **Hinge Question:** Why did the 'Three Nos' make a peaceful resolution under UN Resolution 242 virtually impossible?"
               }
             }
           ],
@@ -7665,42 +7675,42 @@ export default {
           "isReversed": true
         },
         {
-          "title": "The Beginning of Israeli Settlements",
+          "title": "The Refugee Crisis & Military Administration",
           "paragraphs": [
-            "<span class=\"para-ref\">[5.1]</span> In the immediate aftermath of the Six-Day War, Israeli Deputy Prime Minister **Yigal Allon** presented a strategic blueprint known as the **Allon Plan**. It proposed retaining a permanent security perimeter along the Jordan River valley and the Judaean Desert to serve as a military buffer against eastern invasion, while returning densely populated Arab hill country to Jordanian administrative control in exchange for peace.",
-            "<span class=\"para-ref\">[5.2]</span> Under the Allon framework, the Israeli government established strategic agricultural outposts (**Nahal**) along the Jordan Valley and Golan Heights. Concurrently, ideological and religious Zionists—later organized as **Gush Emunim** (\"Bloc of the Faithful\")—began establishing unauthorized outposts in the biblical heartlands of Judea and Samaria, such as Kfar Etzion and Hebron. These early settlements transformed over time from temporary security garrisons into permanent suburban townships, severely complicating future territorial compromise."
+            "<span class=\"para-ref\">[5.1]</span> The conquest of the West Bank and Gaza Strip triggered a second massive wave of Palestinian displacement. Over **300,000 Palestinians** fled across the Jordan River into neighboring Jordan, many becoming refugees for the second time since 1948. This sudden influx overwhelmed Jordanian infrastructure and created fertile recruiting ground for armed Palestinian commando factions.",
+            "<span class=\"para-ref\">[5.2]</span> For the over one million Palestinians who remained, Israel established direct military rule. Under Military Proclamation No. 2, the IDF assumed complete legislative, executive, and judicial authority over the occupied territories. Through a series of strict military orders, Israeli commanders controlled civil administration, travel permits, and land use, establishing an enduring military occupation that deepened the conflict for decades to come."
           ],
           "act": 5,
-          "act_title": "Stage 5: The Beginning of Israeli Settlements — How did permanent Israeli settlements transform the occupied territories?",
-          "theme_heading": "The Beginning of Israeli Settlements",
-          "text": "<span class=\"para-ref\">[5.1]</span> In the immediate aftermath of the Six-Day War, Israeli Deputy Prime Minister **Yigal Allon** presented a strategic blueprint known as the **Allon Plan**. It proposed retaining a permanent security perimeter along the Jordan River valley and the Judaean Desert to serve as a military buffer against eastern invasion, while returning densely populated Arab hill country to Jordanian administrative control in exchange for peace.\n\n<span class=\"para-ref\">[5.2]</span> Under the Allon framework, the Israeli government established strategic agricultural outposts (**Nahal**) along the Jordan Valley and Golan Heights. Concurrently, ideological and religious Zionists—later organized as **Gush Emunim** (\"Bloc of the Faithful\")—began establishing unauthorized outposts in the biblical heartlands of Judea and Samaria, such as Kfar Etzion and Hebron. These early settlements transformed over time from temporary security garrisons into permanent suburban townships, severely complicating future territorial compromise.",
+          "act_title": "Stage 5: The Refugee Crisis & Military Administration — How did displacement and military rule transform the occupied territories?",
+          "theme_heading": "The Refugee Crisis & Military Administration",
+          "text": "<span class=\"para-ref\">[5.1]</span> The conquest of the West Bank and Gaza Strip triggered a second massive wave of Palestinian displacement. Over **300,000 Palestinians** fled across the Jordan River into neighboring Jordan, many becoming refugees for the second time since 1948. This sudden influx overwhelmed Jordanian infrastructure and created fertile recruiting ground for armed Palestinian commando factions.\n\n<span class=\"para-ref\">[5.2]</span> For the over one million Palestinians who remained, Israel established direct military rule. Under Military Proclamation No. 2, the IDF assumed complete legislative, executive, and judicial authority over the occupied territories. Through a series of strict military orders, Israeli commanders controlled civil administration, travel permits, and land use, establishing an enduring military occupation that deepened the conflict for decades to come.",
           "sources": [
             {
               "id": "cme_l7_source_e",
               "letter": "E",
-              "title": "Source E: The Allon Plan Settlement Strategy Blueprint (1967–1968)",
-              "src": "/units/cme_new/assets/allon_plan_1967_map.svg",
-              "image": "/units/cme_new/assets/allon_plan_1967_map.svg",
-              "source": "/units/cme_new/assets/allon_plan_1967_map.svg",
-              "caption": "Strategic cartographic map of the Allon Plan proposed by Labor Minister Yigal Allon: annexing a 10–15km security strip along the Jordan River while returning densely populated Arab highland enclaves to Jordanian civil control.",
-              "desc": "Policy diagram of Israel's early settlement and border defense doctrine.",
-              "provenance": "Israel Labor Party Archives, Beit Berl (Allon Papers), July 1968.",
-              "citation": "Beit Berl Archives / Yigal Allon Collection.",
-              "hinge_question": "Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?",
-              "source_context": "Yigal Allon argued that Israel needed the Jordan Valley as a permanent military barrier against eastern invasion, but warned that annexing the heavily populated hill country of Judea and Samaria would destroy Israel's Jewish demographic majority. **Hinge Question:** Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?",
-              "context": "Yigal Allon proposed establishing agricultural settlements along the Jordan Valley as a strategic security barrier.",
-              "question_badge": "Historical Utility",
-              "question_type": "Historical Utility",
-              "enquiry_question": "How useful is Source E for an enquiry into Israel's early settlement plans after the 1967 war?",
-              "model_answer": "Source E is useful because it shows that the Israeli government initially planned to build settlements along the Jordan Valley as a military defensive barrier, while leaving Arab population centres under Jordanian control.",
+              "title": "Source E: Military Governorate Administration Map of the West Bank (1968)",
+              "src": "/units/cme_new/assets/palestine_1967_map.png",
+              "image": "/units/cme_new/assets/palestine_1967_map.png",
+              "source": "/units/cme_new/assets/palestine_1967_map.png",
+              "caption": "Israeli military command map detailing the administrative sub-districts (Jenin, Nablus, Ramallah, Hebron) placed under direct IDF military decree following Order No. 1.",
+              "desc": "Cartographic map of the Israeli military government in the West Bank.",
+              "provenance": "Israel Defense Forces Military Advocate General Archives, Tel Aviv, 1968.",
+              "citation": "IDF Archives / Israel State Archives.",
+              "hinge_question": "How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?",
+              "source_context": "Under Military Proclamation No. 2, all legislative, executive, and judicial powers over the West Bank were assumed by the IDF Military Commander. Over the following decades, more than 1,000 military orders were issued regulating daily commerce, movement, and legal status. **Hinge Question:** How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?",
+              "context": "The IDF established military rule over the West Bank, issuing military orders to govern civil and security affairs.",
+              "question_badge": "Source Inference",
+              "question_type": "Source Inference",
+              "enquiry_question": "What can you infer from Source E about how Israel established governance over the West Bank after 1967?",
+              "model_answer": "Source E indicates that Israel quickly moved from wartime policing to an organized, institutionalized military administration capable of maintaining long-term control over the civilian population.",
               "provenance_clues": {
-                "author": "Yigal Allon, Deputy Prime Minister and former Palmach commander.",
-                "audience": "Prime Minister Levi Eshkol and the Ministerial Committee on Defense.",
-                "motive": "To establish a defensible eastern border while avoiding the incorporation of hundreds of thousands of Arab non-citizens.",
-                "hinge_question": "Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?"
+                "author": "IDF Central Command and Civil Administration planning unit.",
+                "audience": "Regional military governors and Ministry of Defense legal advisors.",
+                "motive": "To codify administrative control and legal authority over the occupied Palestinian populace.",
+                "hinge_question": "How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?"
               },
               "teacher_notes": {
-                "source_context": "Yigal Allon argued that Israel needed the Jordan Valley as a permanent military barrier against eastern invasion, but warned that annexing the heavily populated Arab spine would create a bi-national state and destroy Israel's Jewish demographic majority. Although never officially adopted by the Cabinet, it served as the practical blueprint for early Labor settlement construction. **Hinge Question:** Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?"
+                "source_context": "Under Military Proclamation No. 2, all legislative, executive, and judicial powers over the West Bank were assumed by the IDF Military Commander. Over the following decades, more than 1,000 military orders were issued regulating daily commerce, movement, and legal status. **Hinge Question:** How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?"
               }
             }
           ]
@@ -7738,29 +7748,29 @@ export default {
         {
           "id": "cme_l7_source_b",
           "letter": "B",
-          "title": "Source B: Military Governorate Administration Map of the West Bank (1968)",
-          "src": "/units/cme_new/assets/palestine_1967_map.png",
-          "image": "/units/cme_new/assets/palestine_1967_map.png",
-          "source": "/units/cme_new/assets/palestine_1967_map.png",
-          "caption": "Israeli military command map detailing the administrative sub-districts (Jenin, Nablus, Ramallah, Hebron) placed under direct IDF military decree following Order No. 1.",
-          "desc": "Cartographic map of the Israeli military government in Judea and Samaria.",
-          "provenance": "Israel Defense Forces Military Advocate General Archives, Tel Aviv, 1968.",
-          "citation": "IDF Archives / Israel State Archives.",
-          "hinge_question": "How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?",
-          "source_context": "Under Military Proclamation No. 2, all legislative, executive, and judicial powers over the West Bank were assumed by the IDF Military Commander. Over the following decades, more than 1,000 military orders were issued regulating everything from land registration and water drilling to political assemblies and school curricula. **Hinge Question:** How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?",
-          "context": "The IDF established military rule over the West Bank, issuing military orders to govern civil and security affairs.",
-          "question_badge": "Source Inference",
-          "question_type": "Source Inference",
-          "enquiry_question": "What can you infer from Source B about how Israel prepared for the governance of the West Bank after 1967?",
-          "model_answer": "Source B indicates that Israel quickly moved from ad-hoc wartime policing to a highly organized, institutionalized military administration capable of maintaining long-term control over a hostile civilian population indefinitely.",
+          "title": "Source B: The Khartoum Resolution and the 'Three Nos' (1 September 1967)",
+          "src": "/images/cme_khartoum_summit_1967.jpg",
+          "image": "/images/cme_khartoum_summit_1967.jpg",
+          "source": "/images/cme_khartoum_summit_1967.jpg",
+          "caption": "Arab heads of state at the Khartoum Summit in Sudan, where the Arab League adopted the famous 'Three Nos' resolution on 1 September 1967.",
+          "desc": "Archival photograph of Arab leaders at the Khartoum Summit formulating the 'Three Nos' resolution (1967).",
+          "provenance": "Arab League Summit Records / Sudanese Ministry of Information Archives, Khartoum, September 1967.",
+          "citation": "Khartoum Summit Declaration, Arab League Official Gazette, 1 September 1967.",
+          "hinge_question": "Why did the 'Three Nos' make a peaceful resolution under UN Resolution 242 virtually impossible?",
+          "source_context": "Following their defeat in the Six-Day War, Arab leaders met in Khartoum to coordinate their diplomatic strategy. While UN Resolution 242 proposed 'land for peace', the Khartoum Resolution declared that Arab states would make no peace, give no recognition, and enter into no negotiations with Israel. **Hinge Question:** Why did the 'Three Nos' make a peaceful resolution under UN Resolution 242 virtually impossible?",
+          "context": "Arab leaders issued the 'Three Nos' at Khartoum, rejecting all peace, recognition, and negotiation with Israel.",
+          "question_badge": "Author’s Purpose",
+          "question_type": "Author’s Purpose",
+          "enquiry_question": "What was the primary purpose of the Arab League issuing the 'Three Nos' in Source B?",
+          "model_answer": "The purpose was to restore Arab pride after the humiliating 1967 defeat and demonstrate to the Arab public that leaders like Nasser would never surrender Palestinian land or accept Israel’s existence.",
           "provenance_clues": {
-            "author": "IDF Central Command and Civil Administration planning unit.",
-            "audience": "Regional military governors and Ministry of Defense legal advisors.",
-            "motive": "To codify administrative control and legal authority over the occupied Palestinian populace.",
-            "hinge_question": "How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?"
+            "author": "Arab heads of state including Gamal Abdel Nasser of Egypt and King Faisal of Saudi Arabia.",
+            "audience": "The Arab public and the international community.",
+            "motive": "To prevent any individual Arab nation from breaking ranks to sign a separate peace treaty with Israel.",
+            "hinge_question": "Why did the 'Three Nos' make a peaceful resolution under UN Resolution 242 virtually impossible?"
           },
           "teacher_notes": {
-            "source_context": "Under Military Proclamation No. 2, all legislative, executive, and judicial powers over the West Bank were assumed by the IDF Military Commander. Over the following decades, more than 1,000 military orders were issued regulating everything from land registration and water drilling to political assemblies and school curricula. **Hinge Question:** How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?"
+            "source_context": "Following their defeat in the Six-Day War, Arab leaders met in Khartoum to coordinate their diplomatic strategy. While UN Resolution 242 proposed 'land for peace', the Khartoum Resolution declared that Arab states would make no peace, give no recognition, and enter into no negotiations with Israel. **Hinge Question:** Why did the 'Three Nos' make a peaceful resolution under UN Resolution 242 virtually impossible?"
           }
         },
         {
@@ -7822,29 +7832,29 @@ export default {
         {
           "id": "cme_l7_source_e",
           "letter": "E",
-          "title": "Source E: The Allon Plan Settlement Strategy Blueprint (1967–1968)",
-          "src": "/units/cme_new/assets/allon_plan_1967_map.svg",
-          "image": "/units/cme_new/assets/allon_plan_1967_map.svg",
-          "source": "/units/cme_new/assets/allon_plan_1967_map.svg",
-          "caption": "Strategic cartographic map of the Allon Plan proposed by Labor Minister Yigal Allon: annexing a 10–15km security strip along the Jordan River while returning densely populated Arab highland enclaves to Jordanian civil control.",
-          "desc": "Policy diagram of Israel's early settlement and border defense doctrine.",
-          "provenance": "Israel Labor Party Archives, Beit Berl (Allon Papers), July 1968.",
-          "citation": "Beit Berl Archives / Yigal Allon Collection.",
-          "hinge_question": "Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?",
-          "source_context": "Yigal Allon argued that Israel needed the Jordan Valley as a permanent military barrier against eastern invasion, but warned that annexing the heavily populated hill country of Judea and Samaria would destroy Israel's Jewish demographic majority. **Hinge Question:** Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?",
-          "context": "Yigal Allon proposed establishing agricultural settlements along the Jordan Valley as a strategic security barrier.",
-          "question_badge": "Historical Utility",
-          "question_type": "Historical Utility",
-          "enquiry_question": "How useful is Source E for an enquiry into Israel's early settlement plans after the 1967 war?",
-          "model_answer": "Source E is useful because it shows that the Israeli government initially planned to build settlements along the Jordan Valley as a military defensive barrier, while leaving Arab population centres under Jordanian control.",
+          "title": "Source E: Military Governorate Administration Map of the West Bank (1968)",
+          "src": "/units/cme_new/assets/palestine_1967_map.png",
+          "image": "/units/cme_new/assets/palestine_1967_map.png",
+          "source": "/units/cme_new/assets/palestine_1967_map.png",
+          "caption": "Israeli military command map detailing the administrative sub-districts (Jenin, Nablus, Ramallah, Hebron) placed under direct IDF military decree following Order No. 1.",
+          "desc": "Cartographic map of the Israeli military government in the West Bank.",
+          "provenance": "Israel Defense Forces Military Advocate General Archives, Tel Aviv, 1968.",
+          "citation": "IDF Archives / Israel State Archives.",
+          "hinge_question": "How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?",
+          "source_context": "Under Military Proclamation No. 2, all legislative, executive, and judicial powers over the West Bank were assumed by the IDF Military Commander. Over the following decades, more than 1,000 military orders were issued regulating daily commerce, movement, and legal status. **Hinge Question:** How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?",
+          "context": "The IDF established military rule over the West Bank, issuing military orders to govern civil and security affairs.",
+          "question_badge": "Source Inference",
+          "question_type": "Source Inference",
+          "enquiry_question": "What can you infer from Source E about how Israel established governance over the West Bank after 1967?",
+          "model_answer": "Source E indicates that Israel quickly moved from wartime policing to an organized, institutionalized military administration capable of maintaining long-term control over the civilian population.",
           "provenance_clues": {
-            "author": "Yigal Allon, Deputy Prime Minister and former Palmach commander.",
-            "audience": "Prime Minister Levi Eshkol and the Ministerial Committee on Defense.",
-            "motive": "To establish a defensible eastern border while avoiding the incorporation of hundreds of thousands of Arab non-citizens.",
-            "hinge_question": "Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?"
+            "author": "IDF Central Command and Civil Administration planning unit.",
+            "audience": "Regional military governors and Ministry of Defense legal advisors.",
+            "motive": "To codify administrative control and legal authority over the occupied Palestinian populace.",
+            "hinge_question": "How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?"
           },
           "teacher_notes": {
-            "source_context": "Yigal Allon argued that Israel needed the Jordan Valley as a permanent military barrier against eastern invasion, but warned that annexing the heavily populated Arab spine would create a bi-national state and destroy Israel's Jewish demographic majority. Although never officially adopted by the Cabinet, it served as the practical blueprint for early Labor settlement construction. **Hinge Question:** Why did the Israeli government choose to create 'facts on the ground' through settlements rather than formally annexing the West Bank?"
+            "source_context": "Under Military Proclamation No. 2, all legislative, executive, and judicial powers over the West Bank were assumed by the IDF Military Commander. Over the following decades, more than 1,000 military orders were issued regulating daily commerce, movement, and legal status. **Hinge Question:** How did the imposition of Israeli military orders replace Jordanian civil law and reshape daily Palestinian life?"
           }
         }
       ],
@@ -8022,8 +8032,8 @@ export default {
             "because": "The Israeli government sought security buffer zones, while religious settlers believed the land belonged to the historic Jewish homeland.",
             "therefore": "Created permanent Jewish communities inside Palestinian areas, establishing \"facts on the ground\" that made future territorial compromise far harder.",
             "connective": "Faced with permanent occupation and defeated Arab armies, Palestinians turned to armed guerrilla warfare...",
-            "exam_link": "Q1 Consequence: Created permanent Jewish settlements in Palestinian territory, which became a major barrier to a two-state solution.",
-            "question": "How did permanent Israeli settlements transform the occupied territories?"
+            "exam_link": "Q1 Consequence: Displaced over 300,000 Palestinian refugees into Jordan and established direct IDF military administration over the West Bank and Gaza.",
+            "question": "How did refugee displacement and military administration transform the occupied territories?"
           }
         ]
       },
@@ -8104,7 +8114,7 @@ export default {
           "explanation": "Arab leaders met in Khartoum following their defeat in the Six-Day War."
         },
         {
-          "question": "What were the 'Three No's' declared by Arab leaders at the Khartoum Summit in 1967?",
+          "question": "According to Source E, how did the Israeli military establish administrative control over the West Bank after the 1967 war?",
           "options": [
             "No peace with Israel, no recognition of Israel, no negotiations with Israel",
             "No oil exports, no trade, no diplomacy",
@@ -8112,7 +8122,7 @@ export default {
             "No Western aid, no foreign embassies, no treaties"
           ],
           "answer": "No peace with Israel, no recognition of Israel, no negotiations with Israel",
-          "explanation": "The Khartoum Resolution famously adopted the three non-negotiable principles."
+          "explanation": "Source E details the military governorate administrative map dividing the West Bank into military sectors."
         },
         {
           "question": "What was the number of the United Nations Security Council Resolution adopted on 22 November 1967?",
@@ -8195,7 +8205,7 @@ export default {
           "question": "What was the massive chain of fortifications constructed by Israel along the eastern bank of the Suez Canal called?",
           "options": [
             "The Bar-Lev Line",
-            "The Allon Line",
+            "The Green Line",
             "The Maginot Line",
             "The Green Line"
           ],
@@ -8280,15 +8290,15 @@ export default {
           "explanation": "Source D tactical plans detail the fortified Maoz strongpoints along the canal."
         },
         {
-          "question": "According to Source E, what settlement strategy blueprint was proposed by Labor Minister Yigal Allon in 1967–1968?",
+          "question": "According to Source E, what historic resolution was adopted by Arab leaders at the Khartoum Summit in September 1967?",
           "options": [
-            "The Allon Plan",
-            "The Dayan Plan",
-            "The Sharon Corridor",
-            "The Peel Partition"
+            "The 'Three Nos' (no peace, no recognition, no negotiations)",
+            "The Camp David Accords",
+            "UN Resolution 242",
+            "The Madrid Peace Framework"
           ],
-          "answer": "The Allon Plan",
-          "explanation": "Source E is the strategic cartographic map of the Allon Plan proposed by Labor Minister Yigal Allon."
+          "answer": "The 'Three Nos' (no peace, no recognition, no negotiations)",
+          "explanation": "Source E captures the Arab League Summit in Khartoum where leaders adopted the 'Three Nos', rejecting peace, recognition, and negotiations with Israel."
         }
       ],
       "video": [
@@ -8318,9 +8328,9 @@ export default {
           "title": "Vox: Israeli Settlements Explained – The West Bank & Gaza After 1967",
           "duration": "8 mins 05 secs",
           "pathway": "Strategic Overview",
-          "teacher_guidance": "Balanced journalistic breakdown tracing the Allon Plan, early agricultural buffer settlements, and the rise of Gush Emunim religious nationalism. Recommended Watch Window: 01:00–06:15 • Lesson Phase: Source Analysis & Spatial Evidence. Tone Alert: Balanced visual journalism tracing how settlement patterns evolved from security outposts into deeply ideological suburban cities.",
-          "viewing_task": "<ol><li><strong>[01:45] Recall:</strong> What strategic plan was proposed by Israeli Deputy Prime Minister Yigal Allon in 1967, recommending defensive settlements along the Jordan Valley while returning densely populated Arab hilltops?</li><li><strong>[03:30] Explain:</strong> How did the historic election of Menachem Begin's right-wing Likud government in 1977 transform settlement policy from peripheral security outposts to ideological colonization deep across the West Bank?</li><li><strong>[05:10] Challenge:</strong> Evaluate how the construction of settlements, bypass roads, and military zones established 'irreversible facts on the ground', making a viable, contiguous two-state solution extraordinarily difficult to implement.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The Allon Plan (1967).</li><li><strong>Explain:</strong> The Labor Party had built settlements primarily for security along border perimeters. Likud and its religious-nationalist allies (such as *Gush Emunim*) viewed the West Bank as Judea and Samaria—the biblical and historic heartland of the Jewish people—where Jews held a divine and national right to settle anywhere. Likud provided massive state subsidies, infrastructure, and military protection to build towns throughout the Palestinian interior.</li><li><strong>Challenge:</strong> Settlements were strategically placed on hilltops overlooking Palestinian towns and linked by bypass roads that local Palestinians were barred from using. By fragmenting the West Bank into disconnected cantons and populating it with hundreds of thousands of Israeli citizens, the settlement enterprise created legal, physical, and political barriers that fundamentally complicated any future territorial withdrawal.</li></ol>"
+          "teacher_guidance": "Balanced journalistic breakdown tracing the development of Israeli settlements across the West Bank and Gaza. Recommended Watch Window: 01:00–06:15 • Lesson Phase: Spatial Evidence & Territorial Control.",
+          "viewing_task": "<ol><li><strong>[01:45] Recall:</strong> Where did the Israeli government initially establish its first military and agricultural security outposts following the 1967 Six-Day War?</li><li><strong>[03:30] Explain:</strong> How did the historic election of Menachem Begin's right-wing Likud government in 1977 transform settlement policy from peripheral security outposts to permanent civilian towns across the West Bank?</li><li><strong>[05:10] Challenge:</strong> Evaluate how the construction of settlements, bypass roads, and military zones established physical 'facts on the ground', making territorial compromise under UN Resolution 242 increasingly difficult.</li></ol>",
+          "model_answer": "<ol><li><strong>Recall:</strong> Along the Jordan Valley, the Golan Heights, and the Sinai border perimeter.</li><li><strong>Explain:</strong> The early Labor governments built settlements primarily as military security buffers along border perimeters. However, Menachem Begin's Likud government, elected in 1977, viewed the West Bank as historic Judea and Samaria. Likud provided massive state subsidies, infrastructure, and military protection to build permanent civilian towns throughout the interior.</li><li><strong>Challenge:</strong> Settlements were strategically built on hilltops overlooking Palestinian towns and linked by bypass roads that local Palestinians could not use. By fragmenting the West Bank and populating it with hundreds of thousands of Israeli citizens, the settlement enterprise created physical and political barriers that made returning occupied land under UN Resolution 242 extraordinarily difficult.</li></ol>"
         },
         {
           "type": "youtube",
@@ -8333,10 +8343,13 @@ export default {
           "model_answer": "<ol><li><strong>Recall:</strong> Over one million Palestinian Arabs (approximately 660,000 in the West Bank, 350,000 in Gaza, and 70,000 in East Jerusalem).</li><li><strong>Explain:</strong> If Israel formally annexed the West Bank and Gaza and granted citizenship to the Palestinian residents, the Jewish demographic majority would be severely diluted, threatening Israel's identity as a Jewish state. If Israel annexed the land but denied Palestinians voting rights, Israel would cease to be a democracy. Consequently, Israel instituted indefinite military rule.</li><li><strong>Challenge:</strong> Dayan believed that providing jobs in Israel and improving municipal utilities would reconcile Palestinians to indefinite Israeli security control. Eban accurately foresaw that economic pacification could never extinguish national political aspirations, predicting that perpetual military administration would inevitably erode Israel's democratic soul and isolate it diplomatically on the world stage.</li></ol>"
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "enquiry": "How did Israel's capture of the occupied territories reshape diplomacy, identity, and the prospects for peace?"
     },
     {
       "id": "lesson_9",
+      "banner": "/images/cme_munich_1972_balcony.jpg",
+      "card_image": "/images/cme_king_hussein_black_september_1970.png",
       "key_individual": {
         "anchor_act": 1,
         "anchor_title": "From Dependence to Armed Resistance & The Battle of Karameh (1968–1969)",
@@ -8494,15 +8507,15 @@ export default {
               "id": "cme_l8_source_a",
               "letter": "A",
               "title": "Source A: Yasser Arafat in Military Battle Fatigues (1969)",
-              "src": "/units/cme_new/assets/arafat_fatigues_1969.jpg",
-              "image": "/units/cme_new/assets/arafat_fatigues_1969.jpg",
-              "source": "/units/cme_new/assets/arafat_fatigues_1969.jpg",
-              "caption": "Yasser Arafat in military battle fatigues and checkered kaffiyeh during a diplomatic and military summit following the 1968 Battle of Karameh (1969).",
-              "desc": "Archival photograph of PLO Chairman Yasser Arafat in military battle fatigues and kaffiyeh (1969).",
-              "provenance": "Palestinian National Authority Information Department / Gamma-Rapho, c. 1969.",
-              "citation": "Palestinian National Authority Information Department / Gamma-Rapho.",
+              "src": "/units/cme_new/assets/cme_arafat_fatigues_1969.jpg",
+              "image": "/units/cme_new/assets/cme_arafat_fatigues_1969.jpg",
+              "source": "/units/cme_new/assets/cme_arafat_fatigues_1969.jpg",
+              "caption": "Archival portrait of PLO Chairman Yasser Arafat wearing his iconic military combat field jacket and checkered kaffiyeh (1969).",
+              "desc": "Archival portrait of PLO Chairman Yasser Arafat in military combat field jacket and checkered kaffiyeh (1969).",
+              "provenance": "Palestinian National Authority Information Department / Gamma-Rapho / Wikimedia Commons, 1969.",
+              "citation": "Archival portrait (1969), PNA Information Dept / Gamma-Rapho / Wikimedia Commons.",
               "hinge_question": "How did Arafat's consistent adoption of military uniform project the image of an active guerrilla warrior rather than a desk-bound diplomat?",
-              "source_context": "After the 1968 Battle of Karameh in Jordan, where Fatah fighters inflicted heavy casualties on an Israeli raid, Arafat emerged as the preeminent symbol of armed Palestinian nationalism. In 1969, he was elected Chairman of the PLO Executive Committee. **Hinge Question:** How did Arafat's consistent adoption of military uniform project the image of an active guerrilla warrior rather than a desk-bound diplomat?",
+              "source_context": "Following the March 1968 Battle of Karameh in Jordan, where Fatah fighters mounted a fierce defence against an Israeli raid, Yasser Arafat emerged as the preeminent symbol of armed Palestinian nationalism. In 1969, he was elected Chairman of the PLO Executive Committee, adopting his signature olive-drab combat fatigues and checkered kaffiyeh to signal that the PLO's leadership was rooted in direct guerrilla warfare rather than political diplomacy. **Hinge Question:** How did Arafat's consistent adoption of military uniform project the image of an active guerrilla warrior rather than a desk-bound diplomat?",
               "context": "Yasser Arafat took leadership of the PLO in 1969, making armed struggle central to its mission.",
               "question_badge": "Author’s Purpose",
               "question_type": "Author’s Purpose",
@@ -8515,7 +8528,7 @@ export default {
                 "hinge_question": "How did Arafat's consistent adoption of military uniform project the image of an active guerrilla warrior rather than a desk-bound diplomat?"
               },
               "teacher_notes": {
-                "source_context": "After the 1968 Battle of Karameh in Jordan, where Fatah fighters inflicted heavy casualties on an Israeli raid, Arafat emerged as the preeminent symbol of Palestinian armed struggle. In 1969, Fatah took control of the Palestine Liberation Organization (PLO), declaring that armed struggle was the only way to liberate Palestine. **Hinge Question:** How did Arafat's consistent adoption of military uniform project the image of an active guerrilla warrior rather than a desk-bound diplomat?"
+                "source_context": "Following the March 1968 Battle of Karameh in Jordan, where Fatah fighters mounted a fierce defence against an Israeli raid, Yasser Arafat emerged as the preeminent symbol of armed Palestinian nationalism. In 1969, he was elected Chairman of the PLO Executive Committee, adopting his signature olive-drab combat fatigues and checkered kaffiyeh to signal that the PLO's leadership was rooted in direct guerrilla warfare rather than political diplomacy. **Hinge Question:** How did Arafat's consistent adoption of military uniform project the image of an active guerrilla warrior rather than a desk-bound diplomat?"
               }
             }
           ]
@@ -8560,7 +8573,7 @@ export default {
               }
             }
           ],
-          "image": "/units/cme_new/assets/black_september.svg",
+          "image": "/images/cme_king_hussein_black_september_1970.png",
           "image_alt": "Tactical map showing the Palestinian fedayeen armed enclaves in Amman and the Jordanian Army counter-offensive during Black September 1970",
           "caption": "The Escalation of Black September (1970): Schematic timeline showing the clash between King Hussein's Jordanian Arab Army and the armed Palestinian fedayeen.",
           "isReversed": false
@@ -8620,12 +8633,12 @@ export default {
             {
               "id": "cme_l8_source_d",
               "letter": "D",
-              "title": "Source D: Cartographic Map of 'Fatahland' in Southern Lebanon",
-              "src": "/units/cme_new/assets/fatahland.svg",
-              "image": "/units/cme_new/assets/fatahland.svg",
-              "source": "/units/cme_new/assets/fatahland.svg",
-              "caption": "Cartographic map detailing PLO operational bases, weapons caches, and Katyusha rocket launch zones across the Arkoub region ('Fatahland') along the Lebanese-Israeli border.",
-              "desc": "Strategic military map of PLO military build-up in southern Lebanon.",
+              "title": "Source D: Fatah Fedayeen Fighters on Parade in Lebanon (January 1979)",
+              "src": "/images/cme_fatah_fedayeen_lebanon_1979.jpg",
+              "image": "/images/cme_fatah_fedayeen_lebanon_1979.jpg",
+              "source": "/images/cme_fatah_fedayeen_lebanon_1979.jpg",
+              "caption": "Uniformed Palestinian Fatah fedayeen fighters, wearing keffiyehs and military fatigues, marching with Palestinian flags in Lebanon following the PLO’s relocation from Jordan into southern Lebanon ('Fatahland').",
+              "desc": "Archival photograph of uniformed Fatah fedayeen militia in Lebanon.",
               "provenance": "IDF Northern Command Intelligence Directorate, Safed, 1972.",
               "citation": "IDF Northern Command Archives.",
               "hinge_question": "How did the 1969 Cairo Agreement between Lebanon and the PLO compromise Lebanese state sovereignty in the south?",
@@ -8782,9 +8795,9 @@ export default {
           "id": "cme_l8_source_d",
           "letter": "D",
           "title": "Source D: Cartographic Map of 'Fatahland' in Southern Lebanon",
-          "src": "/units/cme_new/assets/fatahland.svg",
-          "image": "/units/cme_new/assets/fatahland.svg",
-          "source": "/units/cme_new/assets/fatahland.svg",
+          "src": "/images/cme_fatah_fedayeen_lebanon_1979.jpg",
+          "image": "/images/cme_fatah_fedayeen_lebanon_1979.jpg",
+          "source": "/images/cme_fatah_fedayeen_lebanon_1979.jpg",
           "caption": "Cartographic map detailing PLO operational bases, weapons caches, and Katyusha rocket launch zones across the Arkoub region ('Fatahland') along the Lebanese-Israeli border.",
           "desc": "Strategic military map of PLO military build-up in southern Lebanon.",
           "provenance": "IDF Northern Command Intelligence Directorate, Safed, 1972.",
@@ -9337,10 +9350,12 @@ export default {
           "model_answer": "<ol><li><strong>Recall:</strong> Leila Khaled (of the Popular Front for the Liberation of Palestine).</li><li><strong>Explain:</strong> Regular Arab armies had failed completely in 1948 and 1967. By seizing international commercial airliners, a tiny band of militants could paralyze Western governments, hold hundreds of foreign citizens hostage, and force world leaders to negotiate directly with them, neutralizing Israel's overwhelming conventional military advantage.</li><li><strong>Challenge:</strong> Hijackings put the word 'Palestinian' on the front page of every global newspaper, transforming refugees into recognized political actors. However, it severely damaged their moral legitimacy in the West, caused Western nations to designate Palestinian groups as terrorist organizations, and prompted King Hussein to violently expel them from Jordan to prevent foreign military intervention.</li></ol>"
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "enquiry": "Why did the PLO shift towards armed international struggle, and how did Black September reshape Palestinian resistance?"
     },
     {
       "id": "lesson_10",
+      "banner": "/images/cme_egyptians_crossing_suez_1973.jpg",
       "key_individual": {
         "anchor_act": 1,
         "anchor_title": "The Impasse of Attrition & Anwar Sadat's Plan (1969–1973)",
@@ -9850,7 +9865,7 @@ export default {
             "marks": 4,
             "question": "1(a). Explain one consequence of Israel’s consolidation of control of the occupied territories. [4 marks]. (4 marks)",
             "prompt": "Point (Deepened Arab determination to launch a military attack to reclaim occupied lands) • Fact (Israel constructed the Bar-Lev Line along the Suez Canal and established permanent settlements in Sinai, Golan, and the West Bank) • Consequence (Convinced Egyptian President Anwar Sadat that diplomacy had failed, leading directly to the coordinated surprise attack on Yom Kippur 1973).",
-            "model": "One consequence of Israel's consolidation of the occupied territories was the creation of permanent Jewish settlements and rising Palestinian resistance. Specifically, Israel established agricultural and religious outposts like Gush Emunim across the West Bank and Gaza. This divided Palestinian communities, restricted Arab access to fertile farmland and water, and entrenched deep hostility toward the military occupation.",
+            "model": "One consequence of Israel's consolidation of the occupied territories was the creation of permanent Jewish settlements and rising Palestinian resistance. Specifically, Israel established military outposts and civilian settlements across the West Bank and Gaza. This divided Palestinian communities, restricted Arab access to fertile farmland and water, and entrenched deep hostility toward the military occupation.",
             "scaffolding": {
               "acronym": "P-F-C (Point • Fact • Consequence)",
               "acronym_title": "The P-F-C High-Yield Consequence Formula (1 Concise Paragraph)",
@@ -9898,7 +9913,7 @@ export default {
               "The OPEC oil embargo"
             ],
             "prompt": "Use the structure strip and causal connectives below to structure your response.",
-            "model": "The Yom Kippur War began on 6 October 1973 with a coordinated surprise attack by Egypt and Syria during the holiest day of the Jewish calendar. Egyptian forces executed Operation Badr, crossing the Suez Canal on waterborne pontoon bridges and overrunning the Bar-Lev Line, while Syrian armour pushed deep across the Golan Heights.<br><br>After surviving initial catastrophic losses, Israeli forces mounted a fierce counter-offensive supported by an emergency American military airlift. By 10 October, Israeli forces had driven Syrian troops off the Golan plateau and advanced toward Damascus. In the Sinai, General Ariel Sharon exploited a gap between Egyptian armies, crossing the canal to encircle Egypt's Third Army.<br><br>Finally, the threat of direct superpower confrontation prompted international intervention. The Soviet Union threatened military deployment to save Egypt, leading US forces to DEFCON 3. The UN brokered an official ceasefire on 24 October, ending the combat.",
+            "model": "The Yom Kippur War began on 6 October 1973 with a coordinated surprise attack by Egypt and Syria during the holiest day of the Jewish calendar. Egyptian forces launched a surprise assault, crossing the Suez Canal on waterborne pontoon bridges and overrunning the Bar-Lev Line, while Syrian armour pushed deep across the Golan Heights.<br><br>After surviving initial catastrophic losses, Israeli forces mounted a fierce counter-offensive supported by an emergency American military airlift. By 10 October, Israeli forces had driven Syrian troops off the Golan plateau and advanced toward Damascus. In the Sinai, General Ariel Sharon exploited a gap between Egyptian armies, crossing the canal to encircle Egypt's Third Army.<br><br>Finally, the threat of direct superpower confrontation prompted international intervention. The Soviet Union threatened military deployment to save Egypt, leading US forces to DEFCON 3. The UN brokered an official ceasefire on 24 October, ending the combat.",
             "scaffolding": {
               "acronym": "Chronological Narrative Framework",
               "acronym_title": "Question 2: Narrative Account [8 marks • 12 mins]",
@@ -10243,7 +10258,7 @@ export default {
           "question": "According to Source A, what fortification system along the Suez Canal included fortified Maoz strongpoints?",
           "options": [
             "The Bar-Lev Line",
-            "The Allon Line",
+            "The Green Line",
             "The Atlantic Wall",
             "The Green Line"
           ],
@@ -10336,10 +10351,12 @@ export default {
           "model_answer": "<ol><li><strong>Recall:</strong> DEFCON 3 (Defense Readiness Condition 3).</li><li><strong>Explain:</strong> Sadat's goal was never to conquer Tel Aviv; it was to shatter the diplomatic logjam, restore Egyptian national honor lost in 1967, and force the US to actively mediate peace. By proving Arab armies could fight and break through the Bar Lev Line, Sadat proved that holding Sinai was a recipe for perpetual slaughter, forcing Israel to treat Egypt as an equal.</li><li><strong>Challenge:</strong> 1973 shattered Israeli overconfidence and convinced politicians like Menachem Begin that territory alone could not guarantee security against modern missile technology. Conversely, Egypt realized it had achieved maximum psychological gains and could not defeat the US-backed IDF. This mutual exhaustion created the exact psychological parity required for the Camp David Accords.</li></ol>"
         }
       ],
-      "extra_videos": []
+      "extra_videos": [],
+      "enquiry": "How did the surprise offensive of the Yom Kippur War puncture Israeli invincibility and force a fundamental diplomatic realignment?"
     },
     {
       "id": "lesson_11",
+      "banner": "/images/cme_camp_david_1978.jpg",
       "key_individual": {
         "anchor_act": 2,
         "anchor_title": "The Historic Election of Menachem Begin & Likud Victory (May 1977)",
@@ -10872,11 +10889,7 @@ export default {
                 "source_context": "On 19–21 November 1977, Egyptian President Anwar Sadat made an unprecedented, dramatic state visit to Jerusalem, becoming the first Arab leader to travel to Israel. Speaking directly to Israeli lawmakers in the Knesset, Sadat offered full diplomatic recognition and peace in exchange for complete Israeli withdrawal from the Sinai and justice for Palestinians. **Hinge Question:** Why did Sadat's unilateral visit to Jerusalem shatter thirty years of psychological taboo between Israel and the Arab states?"
               }
             }
-          ],
-          "image": "/images/cme_camp_david_1978.jpg",
-          "image_alt": "US President Jimmy Carter sitting between Egyptian President Anwar Sadat and Israeli Prime Minister Menachem Begin at Camp David, September 1978",
-          "caption": "The Camp David Summit (September 1978): Thirteen days of intensive, secluded diplomacy produced the historic framework for the first Arab-Israeli peace accord.",
-          "isReversed": false
+          ]
         },
         {
           "title": "The Camp David Summit",
@@ -10888,6 +10901,10 @@ export default {
           "act_title": "Stage 3: The Camp David Summit — How did Jimmy Carter prevent the 13-day Camp David summit from collapsing?",
           "theme_heading": "The Camp David Summit",
           "text": "<span class=\"para-ref\">[3.1]</span> When direct bilateral negotiations between Begin and Sadat deadlocked over Israeli settlements in Sinai and Palestinian autonomy, US President **Jimmy Carter** took the immense political gamble of inviting both leaders to the secluded presidential retreat at **Camp David**, Maryland. For thirteen agonizing days from **5 to 17 September 1978**, Carter engaged in marathon mediation, shuttling between Begin’s and Sadat’s cabins when the two men refused to speak to each other after day three.\n\n<span class=\"para-ref\">[3.2]</span> Carter rescued the summit from collapse by threatening to terminate US foreign aid and personally appealing to Begin’s concern for his grandchildren's future. On **17 September 1978**, the summit concluded with the signing of the **Camp David Accords**, which established two frameworks: a bilateral framework for a peace treaty returning the entire Sinai Peninsula to Egypt in exchange for diplomatic recognition, and a vague framework for Palestinian autonomy in the West Bank and Gaza Strip.",
+          "image": "/images/cme_camp_david_1978.jpg",
+          "image_alt": "US President Jimmy Carter sitting between Egyptian President Anwar Sadat and Israeli Prime Minister Menachem Begin at Camp David, September 1978",
+          "caption": "The Camp David Summit (September 1978): Thirteen days of intensive, secluded diplomacy produced the historic framework for the first Arab-Israeli peace accord.",
+          "isReversed": true,
           "sources": [
             {
               "id": "cme_l11_source_c",
@@ -10958,31 +10975,31 @@ export default {
                 "source_context": "The Washington treaty formalized the Camp David Accords. Israel agreed to return the entire Sinai Peninsula and its oilfields to Egypt, dismantle all 18 Jewish settlements in Sinai, and open normal diplomatic and trade ties. However, the treaty relegated the Palestinian question to a vague 'autonomy' council that was never implemented, leading the Arab League to expel Egypt. **Hinge Question:** Why was the bilateral treaty between Egypt and Israel denounced as betrayal by the PLO and wider Arab world?"
               }
             }
-          ],
-          "image": "/images/cme_sadat_memorial_1981.jpg",
-          "image_alt": "The Unknown Soldier Memorial in Nasr City, Cairo, where Anwar Sadat was assassinated during the annual military victory parade on 6 October 1981",
-          "caption": "Assassination of Anwar Sadat (6 October 1981): Islamic Jihad militants murdered Sadat during a military parade, viewing the separate peace with Israel as treason.",
-          "isReversed": true
+          ]
         },
         {
           "title": "Arab Boycott & The Assassination of Sadat",
           "paragraphs": [
             "<span class=\"para-ref\">[5.1]</span> While celebrated in the West, Sadat’s separate peace provoked incandescent fury across the Arab world. Arab governments condemned Sadat as a traitor who had sold out the Palestinian cause to reclaim Egyptian desert sand. The Arab League expelled Egypt from its membership, relocated its headquarters from Cairo to Tunis, severed diplomatic ties, and enacted a total economic boycott against Egyptian trade.",
-            "<span class=\"para-ref\">[5.2]</span> Within Egypt, Islamic fundamentalist groups organized fierce domestic opposition. On **6 October 1981**, during the annual military parade in Cairo celebrating the eighth anniversary of the Yom Kippur canal crossing, Islamic Jihad militants led by Lieutenant **Khalid Islambouli** jumped from an artillery truck, hurling grenades and firing assault rifles into the reviewing stand. **Anwar Sadat was assassinated**, paying with his life for the peace treaty, but his successor **Sadat’s successor** chose to honor the treaty, preserving the uneasy peace with Israel."
+            "<span class=\"para-ref\">[5.2]</span> Within Egypt, Islamic fundamentalist groups organized fierce domestic opposition. On **6 October 1981**, during the annual military parade in Cairo celebrating the eighth anniversary of the Yom Kippur canal crossing, Islamic Jihad militants led by Lieutenant **Khalid Islambouli** jumped from an artillery truck, hurling grenades and firing assault rifles into the reviewing stand. **Anwar Sadat was assassinated**, paying with his life for the peace treaty, but the new Egyptian presidency chose to honor the treaty, preserving the uneasy peace with Israel."
           ],
           "act": 5,
           "act_title": "Stage 5: Arab Boycott & The Assassination of Sadat — Why did Egyptian Islamic Jihad assassinate Anwar Sadat in October 1981?",
           "theme_heading": "Arab Boycott & The Assassination of Sadat",
-          "text": "<span class=\"para-ref\">[5.1]</span> While celebrated in the West, Sadat’s separate peace provoked incandescent fury across the Arab world. Arab governments condemned Sadat as a traitor who had sold out the Palestinian cause to reclaim Egyptian desert sand. The Arab League expelled Egypt from its membership, relocated its headquarters from Cairo to Tunis, severed diplomatic ties, and enacted a total economic boycott against Egyptian trade.\n\n<span class=\"para-ref\">[5.2]</span> Within Egypt, Islamic fundamentalist groups organized fierce domestic opposition. On **6 October 1981**, during the annual military parade in Cairo celebrating the eighth anniversary of the Yom Kippur canal crossing, Islamic Jihad militants led by Lieutenant **Khalid Islambouli** jumped from an artillery truck, hurling grenades and firing assault rifles into the reviewing stand. **Anwar Sadat was assassinated**, paying with his life for the peace treaty, but his successor **Sadat’s successor** chose to honor the treaty, preserving the uneasy peace with Israel.",
+          "text": "<span class=\"para-ref\">[5.1]</span> While celebrated in the West, Sadat’s separate peace provoked incandescent fury across the Arab world. Arab governments condemned Sadat as a traitor who had sold out the Palestinian cause to reclaim Egyptian desert sand. The Arab League expelled Egypt from its membership, relocated its headquarters from Cairo to Tunis, severed diplomatic ties, and enacted a total economic boycott against Egyptian trade.\n\n<span class=\"para-ref\">[5.2]</span> Within Egypt, Islamic fundamentalist groups organized fierce domestic opposition. On **6 October 1981**, during the annual military parade in Cairo celebrating the eighth anniversary of the Yom Kippur canal crossing, Islamic Jihad militants led by Lieutenant **Khalid Islambouli** jumped from an artillery truck, hurling grenades and firing assault rifles into the reviewing stand. **Anwar Sadat was assassinated**, paying with his life for the peace treaty, but the new Egyptian presidency chose to honor the treaty, preserving the uneasy peace with Israel.",
+          "image": "/images/cme_sadat_memorial_1981.jpg",
+          "image_alt": "The Unknown Soldier Memorial in Nasr City, Cairo, where Anwar Sadat was assassinated during the annual military victory parade on 6 October 1981",
+          "caption": "Assassination of Anwar Sadat (6 October 1981): Islamic Jihad militants murdered Sadat during a military parade, viewing the separate peace with Israel as treason.",
+          "isReversed": false,
           "sources": [
             {
               "id": "cme_l11_source_e",
               "letter": "E",
-              "title": "Source E: Map of the Phased Israeli Withdrawal from Sinai (1979–1982)",
-              "src": "/units/cme_new/assets/sinai_returned.svg",
-              "image": "/units/cme_new/assets/sinai_returned.svg",
-              "source": "/units/cme_new/assets/sinai_returned.svg",
-              "caption": "Cartographic diagram displaying the three-stage withdrawal of the IDF from the Sinai Peninsula (1979-1982) and the creation of demilitarized security zones monitored by the Multinational Force and Observers (MFO).",
+              "title": "Source E: Official CIA Map of Sinai Demilitarized Security Zones (March 1979)",
+              "src": "/images/cme_sinai_withdrawal_zones_cia_1979.jpg",
+              "image": "/images/cme_sinai_withdrawal_zones_cia_1979.jpg",
+              "source": "/images/cme_sinai_withdrawal_zones_cia_1979.jpg",
+              "caption": "Official Central Intelligence Agency cartographic map detailing the phased withdrawal zones (Zones A, B, C, and D) and UN peacekeeping positions across the Sinai Peninsula under the 1979 Egypt-Israel Peace Treaty.",
               "desc": "Operational map tracing the return of the Sinai Peninsula to Egypt.",
               "provenance": "Multinational Force and Observers (MFO) Archives / US Department of State, 1982.",
               "citation": "MFO Historical Records.",
@@ -11125,9 +11142,9 @@ export default {
           "id": "cme_l11_source_e",
           "letter": "E",
           "title": "Source E: Map of the Phased Israeli Withdrawal from Sinai (1979–1982)",
-          "src": "/units/cme_new/assets/sinai_returned.svg",
-          "image": "/units/cme_new/assets/sinai_returned.svg",
-          "source": "/units/cme_new/assets/sinai_returned.svg",
+          "src": "/images/cme_sinai_withdrawal_zones_cia_1979.jpg",
+          "image": "/images/cme_sinai_withdrawal_zones_cia_1979.jpg",
+          "source": "/images/cme_sinai_withdrawal_zones_cia_1979.jpg",
           "caption": "Cartographic diagram displaying the three-stage withdrawal of the IDF from the Sinai Peninsula (1979-1982) and the creation of demilitarized security zones monitored by the Multinational Force and Observers (MFO).",
           "desc": "Operational map tracing the return of the Sinai Peninsula to Egypt.",
           "provenance": "Multinational Force and Observers (MFO) Archives / US Department of State, 1982.",
@@ -11677,7 +11694,7 @@ export default {
         {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=LYhJOjv0Yc8",
-          "title": "Al Jazeera English: Cold Peace – The Arab World Backlash & The Price of Peace",
+          "title": "Al Jazeera English: The Arab World Backlash & The Price of Peace",
           "duration": "12 mins 13 secs",
           "pathway": "Arab Perspective",
           "teacher_guidance": "Explores the fury of the Arab League, Egypt's expulsion, the failure of the Palestinian autonomy framework, and Sadat's assassination on 6 October 1981. Recommended Watch Window: 00:30–04:45 • Lesson Phase: Arab Perspective & Cost of Compromise. Tone Alert: Sombre archival record examining Arab fury, Egypt's regional isolation, and Sadat's tragic fate.",
@@ -11708,6 +11725,7 @@ export default {
     },
     {
       "id": "lesson_12",
+      "banner": "/units/cme_new/assets/sharon_beirut_1982.jpg",
       "key_individual": {
         "anchor_act": 2,
         "anchor_title": "The 10-Week Siege of Beirut & Operation Peace for Galilee (Summer 1982)",
@@ -11873,7 +11891,7 @@ export default {
           "options": [
             "'Iron Fist' policy",
             "'Open Borders' policy",
-            "'Allon Doctrine'",
+            "'Land for Peace' formula",
             "'Good Fence' policy"
           ],
           "answer": "'Iron Fist' policy",
@@ -12213,12 +12231,12 @@ export default {
             {
               "id": "cme_l11_source_b",
               "letter": "B",
-              "title": "Source B: Topographical Map of the Sabra and Shatila Camps (September 1982)",
-              "src": "/units/cme_new/assets/sabra_shatila.svg",
-              "image": "/units/cme_new/assets/sabra_shatila.svg",
-              "source": "/units/cme_new/assets/sabra_shatila.svg",
-              "caption": "Topographical overview showing the perimeter of Sabra and Shatila refugee camps in West Beirut, Israeli observation posts, and Lebanese Phalangist militia entry routes (16-18 September 1982).",
-              "desc": "Investigative map produced for the Kahan Commission of Inquiry.",
+              "title": "Source B: Defence Minister Ariel Sharon Overlooking West Beirut from IDF Observation Post (August 1982)",
+              "src": "/units/cme_new/assets/sharon_beirut_1982.jpg",
+              "image": "/units/cme_new/assets/sharon_beirut_1982.jpg",
+              "source": "/units/cme_new/assets/sharon_beirut_1982.jpg",
+              "caption": "Israeli Defence Minister Ariel Sharon surveying West Beirut and surrounding refugee camp sectors from an IDF rooftop command post with military operational maps, August 1982.",
+              "desc": "Archival photograph of Ariel Sharon directing operations overlooking West Beirut, August 1982.",
               "provenance": "Israel Commission of Inquiry into the Events at the Refugee Camps in Beirut (Kahan Commission Report), February 1983.",
               "citation": "Israel State Archives / Kahan Commission.",
               "hinge_question": "Why did the Kahan Commission find Defense Minister Ariel Sharon 'indirectly responsible' for the massacre?",
@@ -12405,9 +12423,9 @@ export default {
           "id": "cme_l11_source_b",
           "letter": "B",
           "title": "Source B: Topographical Map of the Sabra and Shatila Camps (September 1982)",
-          "src": "/units/cme_new/assets/sabra_shatila.svg",
-          "image": "/units/cme_new/assets/sabra_shatila.svg",
-          "source": "/units/cme_new/assets/sabra_shatila.svg",
+          "src": "/units/cme_new/assets/sharon_beirut_1982.jpg",
+          "image": "/units/cme_new/assets/sharon_beirut_1982.jpg",
+          "source": "/units/cme_new/assets/sharon_beirut_1982.jpg",
           "caption": "Topographical overview showing the perimeter of Sabra and Shatila refugee camps in West Beirut, Israeli observation posts, and Lebanese Phalangist militia entry routes (16-18 September 1982).",
           "desc": "Investigative map produced for the Kahan Commission of Inquiry.",
           "provenance": "Israel Commission of Inquiry into the Events at the Refugee Camps in Beirut (Kahan Commission Report), February 1983.",
@@ -13077,6 +13095,8 @@ export default {
     },
     {
       "id": "lesson_13",
+      "banner": "/images/cme_oslo_handshake_1993.jpg",
+      "card_image": "/images/cme_oslo_handshake_1993.jpg",
       "key_individual": {
         "anchor_act": 2,
         "anchor_title": "The Secret Oslo Channel & 1993 Handshake",
@@ -13394,8 +13414,8 @@ export default {
               }
             }
           ],
-          "image": "/units/cme_new/assets/oslo_cover.png",
-          "image_alt": "Plenary assembly of the Madrid Middle East Peace Conference co-chaired by President George H.W. Bush and President Mikhail Gorbachev, October 1991",
+          "image": "/images/cme_nobel_peace_prize_oslo_1994.jpg",
+          "image_alt": "The 1994 Nobel Peace Prize Laureates in Oslo (10 December 1994): PLO Chairman Yasser Arafat, Israeli Foreign Minister Shimon Peres, and Prime Minister Yitzhak Rabin display their Nobel diplomas and gold medals in Oslo, Norway, honoring the historic compromise of the Oslo Accords.",
           "caption": "Archival document representing the confidential Norwegian-brokered bilateral channel conducted in suburban Oslo between Israeli academic Yair Hirschfeld and PLO negotiator Ahmed Qurei in 1993.",
           "isReversed": false
         },
@@ -14178,7 +14198,7 @@ export default {
           "question": "Explain one consequence of the June 1992 Israeli general election for peace negotiations.",
           "q": "Explain one consequence of the June 1992 Israeli general election for peace negotiations.",
           "options": [
-            "The election resulted in a coalition government led by the religious-nationalist Gush Emunim movement.",
+            "The election resulted in a right-wing Likud government led by Menachem Begin.",
             "The Likud party increased its parliamentary majority and formally annexed the entire West Bank and Gaza Strip.",
             "The Israeli electorate voted to abolish the office of Prime Minister and establish a military dictatorship.",
             "The Labor Party led by Yitzhak Rabin defeated Yitzhak Shamir’s Likud, campaigning on a pledge to freeze new political settlement building and conclude an agreement on Palestinian autonomy within nine months."

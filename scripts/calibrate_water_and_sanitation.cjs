@@ -40,3 +40,4 @@ filePaths.forEach(fp => {
   fs.writeFileSync(fp, `export default ${JSON.stringify(data, null, 2)};\n`, 'utf8');
   console.log(`Calibrated ${count} tasks in ${fp}`);
 });
+

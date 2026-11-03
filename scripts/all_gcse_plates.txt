@@ -1,0 +1,498 @@
+
+========================================
+UNIT: CME_NEW
+========================================
+L1: KT 1.0: Broken Promises & Imperial Borders: Why Was Conflict in the Middle East Inevitable?
+   Act 2: "The Secret Sykes-Picot Agreement"
+   Img: /images/cme_allenby_jerusalem_1917.jpg
+   Cap: General Allenby Enters Jerusalem (December 1917): Disclosing British military conquest of Ottoman Palestine, entering on foot out of respect for the holy city.
+   Txt: [2.1] Even while McMahon was negotiating with Sharif Hussein, British and French imperial planners moved secretly to orchestrate the partition of Ottoman territ...
+----------------------------------------
+L1: KT 1.0: Broken Promises & Imperial Borders: Why Was Conflict in the Middle East Inevitable?
+   Act 4: "The British Mandate & Rising Immigration"
+   Img: /images/cme_middle_east_mandates_1921_map.jpg
+   Cap: League of Nations Mandates (1921): Carving the collapsed Ottoman Empire into British (Palestine, Transjordan, Iraq) and French (Syria, Lebanon) administrative zones.
+   Txt: [4.1] Following Allied military conquest and General **Edmund Allenby's** entrance into Jerusalem in December 1917, the newly formed **League of Nations** ratif...
+----------------------------------------
+L2: KT 1.1: The End of the British Mandate and the Creation of Israel, 1945–1949
+   Act 2: "The Zionist Paramilitary Insurgency"
+   Img: /units/cme_new/assets/cme_david_ben_gurion__d597_087_.jpg
+   Cap: David Ben-Gurion, Chairman of the Jewish Agency Executive, who directed Zionist political strategy and paramilitary operations during the post-war insurgency against British rule.
+   Txt: [2.1] Convinced that British immigration restrictions condemned survivors to indefinite confinement, the three major Zionist underground paramilitaries united i...
+----------------------------------------
+L2: KT 1.1: The End of the British Mandate and the Creation of Israel, 1945–1949
+   Act 4: "The Sergeants Affair & Public Backlash"
+   Img: /images/cme_1948_arab_invasion_map.png
+   Cap: The 1948 Arab-Israeli War: Egypt, Jordan, Syria, Iraq, and Lebanon invaded the fledgling state immediately following the termination of the British Mandate.
+   Txt: [4.1] In July 1947, after British military courts sentenced three captured Irgun members to death for the Acre Prison break, Menachem Begin's underground kidnap...
+----------------------------------------
+L3: KT 1.2: The Aftermath of the 1948–49 War & The Palestinian Refugee Crisis
+   Act 2: "The Palestinian Refugee Crisis (The Nakba)"
+   Img: /images/cme_palestinian_refugees_1948.jpg
+   Cap: The Nakba ('The Catastrophe', 1948): Over 700,000 Palestinian Arabs were expelled or fled from their homes during the military campaigns of 1948.
+   Txt: [2.1] The 1948–49 War resulted in an unprecedented humanitarian catastrophe for Palestinian Arab society, an event known in Arabic as **Al-Nakba** ("The Catastr...
+----------------------------------------
+L3: KT 1.2: The Aftermath of the 1948–49 War & The Palestinian Refugee Crisis
+   Act 4: "The Israeli Law of Return"
+   Img: /images/cme_palestinian_refugees_leaving_gaza.webp
+   Cap: Refugee Dispersal (1949): Stateless Palestinian populations concentrated in sprawling camps across Gaza, the West Bank, Jordan, Syria, and Lebanon.
+   Txt: [4.1] On **5 July 1950**, the Israeli Knesset enacted the historic **Law of Return**, declaring that every Jewish person anywhere in the world possessed the inh...
+----------------------------------------
+L4: KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963
+   Act 2: "The Czech Arms Deal"
+   Img: /images/cme_port_said_british_troops_1956.jpg
+   Cap: Anglo-French Invasion at Port Said (November 1956): British and French troops deployed under the secret Sèvres Protocol to seize the nationalised Suez Canal.
+   Txt: [2.1] Rebuffed by the United States and Britain, Nasser turned to the Soviet Union. In **September 1955**, Egypt announced the **Czech Arms Deal**—a massive $25...
+----------------------------------------
+L4: KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963
+   Act 4: "The Secret Sèvres Plot & Invasion"
+   Img: /images/cme_port_said_from_air.jpg
+   Cap: Air Reconnaissance over Port Said (5 November 1956): British RAF reconnaissance plate capturing dense black smoke billowing from bombed oil storage installations along the canal entrance (IWM MH 23509).
+   Txt: [4.1] Between 22 and 24 October 1956, senior British, French, and Israeli officials met covertly at a private villa in **Sèvres**, France. Anthony Eden, French ...
+----------------------------------------
+L5: KT 2.1 Enquiry: How Did Water, Border Raids, and Rhetoric Make a Second Arab-Israeli War Inevitable? (1964–1967)
+   Act 2: "The Dispute Over the River Jordan Waterways"
+   Img: /images/cme_cairo_summit_1964.jpg
+   Cap: The First Arab League Summit (Cairo, 1964): Convened by President Nasser to coordinate pan-Arab resistance against Israel's National Water Carrier diversion.
+   Txt: [2.1] In response to Israel's National Water Carrier, Arab states initiated the **Headwaters Diversion Plan** in late 1964. Engineers in Syria, Lebanon, and Jor...
+----------------------------------------
+L5: KT 2.1 Enquiry: How Did Water, Border Raids, and Rhetoric Make a Second Arab-Israeli War Inevitable? (1964–1967)
+   Act 4: "The Israeli Raid on Samu"
+   Img: /images/cme_sinai_peninsula_map.jpg
+   Cap: Strategic Geography of Sinai: The narrow Straits of Tiran at Sharm el-Sheikh represented Israel's vital maritime lifeline to the Red Sea and Asia.
+   Txt: [4.1] On **13 November 1966**, following a Fatah landmine attack that killed three Israeli border police near the southern West Bank border, Israel launched its...
+----------------------------------------
+L6: KT 2.2 Enquiry: Why Was the Six-Day War Decided in Three Hours, and Did Nasser Intend to Fight? (May–June 1967)
+   Act 2: "UN Peacekeepers Expelled & Straits of Tiran Closed"
+   Img: /images/cme_six_day_war_sinai_armour_1967.jpg
+   Cap: Sinai armored offensive (June 1967): IDF armored columns advancing rapidly across the Sinai desert towards the Suez Canal.
+   Txt: [2.1] On **16 May 1967**, Nasser demanded that UN Secretary-General U Thant immediately withdraw the **United Nations Emergency Force (UNEF)** peacekeepers, who...
+----------------------------------------
+L6: KT 2.2 Enquiry: Why Was the Six-Day War Decided in Three Hours, and Did Nasser Intend to Fight? (May–June 1967)
+   Act 4: "The Pre-Emptive Air Strike"
+   Img: /images/cme_1967_sinai_campaign_map.jpg
+   Cap: Sinai Blitzkrieg (5–8 June 1967): Rapid IDF armored divisions commanded by Tal, Yoffe, and Sharon outflanked Egyptian defenses and sealed the Mitla Pass.
+   Txt: [4.1] At 07:45 on Monday, **5 June 1967**, the Israeli Air Force launched **the pre-emptive air strike** (**Mivtza Moked**), masterminded by IAF Commander **Mor...
+----------------------------------------
+L7: KT 2.3 Enquiry: "Land for Peace" or Permanent Stalemate: How Did the 1967 Conquered Territories Transform the Conflict?
+   Act 2: "The Khartoum Summit & The "Three No’s""
+   Img: /units/cme_new/assets/conquered_territories_1967.png
+   Cap: The Conquered Territories (June 1967): Israel quadrupled its territorial footprint, bringing over one million Palestinian Arabs under direct military administration.
+   Txt: [2.1] Stunned by their catastrophic defeat, eight Arab heads of state convened in the Sudanese capital of **Khartoum** in late August 1967 to forge a collective...
+----------------------------------------
+L7: KT 2.3 Enquiry: "Land for Peace" or Permanent Stalemate: How Did the 1967 Conquered Territories Transform the Conflict?
+   Act 4: "The Bar-Lev Line on the Suez Canal"
+   Img: /images/cme_bar_lev_line_fortifications_1970.jpg
+   Cap: Fortifying the Suez Canal: IDF soldiers and armored units constructing fortified bunker complexes (maozim) into the massive 20-metre sand ramparts of the Bar-Lev Line along the eastern bank of the Suez Canal (November 1970).
+   Txt: [4.1] Determined to hold the newly conquered Sinai Peninsula as a strategic defensive shield, the IDF constructed a massive chain of fortifications along the ea...
+----------------------------------------
+L8: KT 2.4: The Rise of Palestinian Resistance: The PLO, Black September & Munich (1968–1972)
+   Act 2: "The Dawson’s Field Airline Hijackings"
+   Img: /images/cme_king_hussein_black_september_1970.png
+   Cap: The Escalation of Black September (1970): Schematic timeline showing the clash between King Hussein's Jordanian Arab Army and the armed Palestinian fedayeen.
+   Txt: [2.1] Frustrated by conventional military limits, radical Marxist factions of the PLO, notably **George Habash's Popular Front for the Liberation of Palestine**...
+----------------------------------------
+L8: KT 2.4: The Rise of Palestinian Resistance: The PLO, Black September & Munich (1968–1972)
+   Act 4: "The Munich Olympics Massacre"
+   Img: /images/cme_munich_1972_balcony.jpg
+   Cap: The Munich Olympics Massacre (September 1972): Palestinian militant group Black September murdered eleven Israeli athletes, thrusting the conflict onto world television.
+   Txt: [4.1] In the early morning hours of **5 September 1972**, eight commandos belonging to a clandestine Fatah-linked terrorist cell calling itself **Black Septembe...
+----------------------------------------
+L9: KT 2.5: The War of Attrition & The Yom Kippur War (1969–1973)
+   Act 2: "Sadat Expels Soviet Advisers"
+   Img: /images/cme_yom_kippur_1973_map.png
+   Cap: The Yom Kippur Surprise Attack (6 October 1973): Egyptian and Syrian forces shattered Israeli defensive lines during the holiest day in Judaism.
+   Txt: [2.1] Following Nasser’s sudden death in September 1970, his successor **Anwar Sadat** inherited a bankrupt Egyptian economy, an exhausted population, and a fro...
+----------------------------------------
+L9: KT 2.5: The War of Attrition & The Yom Kippur War (1969–1973)
+   Act 4: "The US Emergency Airlift & Israeli Counter-Attack"
+   Img: /images/cme_yom_kippur_golan_1973_map.jpg
+   Cap: The Battle of the Golan (October 1973): Outnumbered Israeli Centurion crews repelled over 800 Syrian T-55 and T-62 tanks before launching a counter-thrust toward Damascus.
+   Txt: [4.1] By 11 October, Israel had halted the Syrian advance on the Golan in desperate tank battles at the "Valley of Tears" and pushed Syrian forces back beyond t...
+----------------------------------------
+L10: KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979
+   Act 1: "Kissinger’s Shuttle Diplomacy"
+   Img: /units/cme_new/assets/kissinger_golda_meir_1973.jpg
+   Cap: US Secretary of State Henry Kissinger meeting with Israeli Prime Minister Golda Meir in Jerusalem during post-war disengagement negotiations (1973–1974).
+   Txt: [1.1] The 1973 oil shock demonstrated that Middle Eastern stability was a vital American national security priority. To prevent renewed hostilities and exclude ...
+----------------------------------------
+L10: KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979
+   Act 2: "Sadat’s Historic Visit to Jerusalem"
+   Img: /images/cme_camp_david_1978.jpg
+   Cap: The Camp David Summit (September 1978): Thirteen days of intensive, secluded diplomacy produced the historic framework for the first Arab-Israeli peace accord.
+   Txt: [2.1] In **May 1977**, Israeli politics experienced an earthquake when the right-wing **Likud party** won a stunning general election, ending 29 years of uninte...
+----------------------------------------
+L10: KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979
+   Act 4: "The Egypt-Israel Peace Treaty"
+   Img: /images/cme_sadat_memorial_1981.jpg
+   Cap: Assassination of Anwar Sadat (6 October 1981): Islamic Jihad militants murdered Sadat during a military parade, viewing the separate peace with Israel as treason.
+   Txt: [4.1] On **26 March 1979**, on the North Lawn of the White House, Menachem Begin and Anwar Sadat signed the historic **Egypt-Israel Peace Treaty**, witnessed by...
+----------------------------------------
+L11: KT 3.2: The Palestinian Issue: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993
+   Act 2: "The Sabra and Shatila Massacres"
+   Img: /images/cme_operation_litani_1978_map.jpg
+   Cap: Operation Litani (March 1978): The IDF invaded southern Lebanon to eliminate PLO cross-border rocket launch sites and establish a Christian militia buffer zone.
+   Txt: [2.1] For ten brutal weeks in the summer of 1982, the IDF bombarded West Beirut with heavy artillery and airstrikes, cutting off water and electricity to force ...
+----------------------------------------
+L11: KT 3.2: The Palestinian Issue: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993
+   Act 4: "The Israeli Response & The Rise of Hamas"
+   Img: /images/cme_unifil_lebanon_map.jpg
+   Cap: UNIFIL Buffer Zone (1978): United Nations peacekeepers deployed along the southern Lebanese border following the withdrawal of Israeli forces.
+   Txt: [4.1] The First Intifada was a genuine grassroots rebellion led not by the distant PLO in Tunis, but by local Palestinian youth—the "children of the stones"—and...
+----------------------------------------
+L12: KT 3.3: Attempts at a Solution: From the Oslo Accords to Oslo II, 1988–1995
+   Act 2: "The Secret Oslo Negotiations"
+   Img: /images/cme_nobel_peace_prize_oslo_1994.jpg
+   Cap: Archival document representing the confidential Norwegian-brokered bilateral channel conducted in suburban Oslo between Israeli academic Yair Hirschfeld and PLO negotiator Ahmed Qurei in 1993.
+   Txt: [2.1] While the formal, public Madrid bilateral talks in Washington deadlocked over procedural formalities and Shamir's refusal to compromise, Israeli politics ...
+----------------------------------------
+L12: KT 3.3: Attempts at a Solution: From the Oslo Accords to Oslo II, 1988–1995
+   Act 4: "Israel-Jordan Peace Treaty & Oslo II"
+   Img: /units/cme_new/assets/rabin_peace_rally_1995.jpg
+   Cap: The Tel Aviv Peace Rally (4 November 1995): Moments before his assassination by a Jewish religious extremist, Yitzhak Rabin sang 'Shir LaShalom' in support of Oslo.
+   Txt: [4.1] The breakthrough of Oslo I unleashed immense regional momentum. On **26 October 1994**, King Hussein of Jordan and Yitzhak Rabin signed the **Israel-Jorda...
+----------------------------------------
+
+========================================
+UNIT: EEE
+========================================
+L1: KT 1.1: The Situation on Elizabeth’s Accession, 1558
+   Act 2: "The Royal Court & Privy Council: Patronage, Factional Flattery and the 19-Man Council (1558)"
+   Img: /images/elizabeth_procession_1601.jpg
+   Cap: Queen Elizabeth I in Procession (c. 1601, attr. Robert Peake). Depicting the elaborate Tudor Court and Privy Council patronage network that sustained royal authority.
+   Txt: [2.1] Tudor monarchical governance was rooted in the concept of **Divine Right**, but the Crown possessed no standing army or professional police force. Soverei...
+----------------------------------------
+L1: KT 1.1: The Situation on Elizabeth’s Accession, 1558
+   Act 4: "Whitehall to the Shires: Reluctant Parliaments and Unpaid Country JPs (1559)"
+   Img: /images/elizabeth_i_in_parliament_1559.jpg
+   Cap: Elizabeth I in Parliament (1559): Sitting beneath the royal canopy, balancing aristocratic lords, Protestant MPs, and the Marian bishops.
+   Txt: [4.1] Beyond Whitehall, the Crown depended entirely on local authorities to execute royal policy across England's counties. County administration was overseen b...
+----------------------------------------
+L2: KT 1.2: The 'Settlement' of Religion, 1559
+   Act 1: "A Fractured Realm: Marian Burnings, Geneva Exiles and the Search for Peace (1558–1559)"
+   Img: /images/great_bible_frontispiece.jpg
+   Cap: The English Vernacular Bible: Central to the Elizabethan religious compromise, requiring every parish church to possess an accessible English Bible.
+   Txt: [1.1] Upon her accession, Elizabeth inherited a nation bitterly polarized by decades of religious upheaval. The northern and western shires—dominated by conserv...
+----------------------------------------
+L2: KT 1.2: The 'Settlement' of Religion, 1559
+   Act 4: "The Royal Injunctions: Crucifix Bans, Clerical Surplices and Church Visitations (1559)"
+   Img: /images/elizabeth_ermine_portrait.jpg
+   Cap: The Ermine Portrait (1585): Symbolising purity, chastity, and monarchical supremacy, painted by Nicholas Hilliard.
+   Txt: [4.1] In the summer of 1559, William Cecil issued **57 Royal Injunctions** to provide precise administrative instructions for the day-to-day enforcement of the ...
+----------------------------------------
+L3: KT 1.3: Challenge to the Religious Settlement
+   Act 2: "The Vestments Controversy: Archbishop Parker, the Surplice Dispute and Puritan Defiance (1566)"
+   Img: /images/papal_bull.jpg
+   Cap: Papal Decrees & Authority: Rome's formal instruments of ecclesiastical command used to declare English monarchs heretical and depose them.
+   Txt: [2.1] Clashes between Elizabeth and Puritan reformers erupted over church visuals and clerical dress. Elizabeth insisted on retaining a silver **crucifix** in h...
+----------------------------------------
+L3: KT 1.3: Challenge to the Religious Settlement
+   Act 4: "The Counter-Reformation Shadow: Alba's Tercios, Douai Seminaries and the Jesuit Mission (1562–1568)"
+   Img: /units/eee/assets/portraits/alba.jpg
+   Cap: The Duke of Alba in the Low Countries: His 10,000 veteran Spanish troops in the Netherlands stoked fears of an immediate Catholic invasion of England.
+   Txt: [4.1] England's geopolitical security deteriorated dramatically in the 1560s as European religious conflicts intensified. In 1562, civil warfare erupted between...
+----------------------------------------
+L4: KT 1.4: The Problem of Mary, Queen of Scots, 1568–69
+   Act 1: "Two Anointed Queens: The Scottish Succession, Bloodline Rivalry and the French Pincer (1560–1565)"
+   Img: /images/mary_queen_of_scots_pink_portrait.jpg
+   Cap: Mary, Queen of Scots (1542–1587): An anointed Catholic monarch with a direct genealogical claim to the English crown.
+   Txt: [1.1] **Mary, Queen of Scots**, represented an existential dynastic challenge to Elizabeth I. As the granddaughter of Henry VIII's elder sister Margaret Tudor, ...
+----------------------------------------
+L4: KT 1.4: The Problem of Mary, Queen of Scots, 1568–69
+   Act 3: "Lochleven to the Solway: Abdication, Island Dungeon and Mary's Desperate Flight (1567–1568)"
+   Img: /units/eee/assets/portraits/darnley.jpg
+   Cap: Lord Darnley: Mary's second husband whose mysterious gunpowder assassination at Kirk o' Field in 1567 destroyed her Scottish rule.
+   Txt: [3.1] Scottish Protestant lords rose in armed rebellion against Mary and Bothwell, confronting the Queen's forces at **Carberry Hill** in June 1567. Abandoned b...
+----------------------------------------
+L5: KT 2.1: Plots and Revolts at Home, 1569–1587
+   Act 2: "Regnans in Excelsis & The Ridolfi Conspiracy: Intercepted Ciphers and Norfolk's Axe (1570–1572)"
+   Img: /images/babington_plot_st_giles.jpg
+   Cap: The Retribution of the Crown (September 1586): Anthony Babington and his co-conspirators hanged, drawn, and quartered at St Giles's Fields.
+   Txt: [2.1] In February 1570, Pope Pius V issued the momentous papal bull **Regnans in Excelsis**, excommunicating Elizabeth as a heretic and releasing all English su...
+----------------------------------------
+L5: KT 2.1: Plots and Revolts at Home, 1569–1587
+   Act 4: "The Beer Barrel Cryptograms: Walsingham's Trap and Babington's Fatal Sign-Off (1586)"
+   Img: /images/mary_queen_of_scots_execution_fotheringhay_1587.jpg
+   Cap: The Scaffold at Fotheringhay (8 February 1587): Mary, Queen of Scots executed before English commissioners after the discovery of the Babington Plot.
+   Txt: [4.1] In 1586, Catholic gentleman **Anthony Babington** devised a plan to murder Elizabeth and spark an international Catholic invasion to install Mary on the E...
+----------------------------------------
+L6: KT 2.2: Relations with Spain, 1569–1585
+   Act 1: "The Spanish Superpower: Philip II's Empire, the Dutch Revolt and English Sympathy (1570–1577)"
+   Img: /images/king_philip_ii_of_spain.jpg
+   Cap: King Philip II of Spain: Sovereign of the global Spanish Empire, defender of the Catholic Counter-Reformation, and Elizabeth's greatest adversary.
+   Txt: [1.1] Throughout the 1570s, ideological and geopolitical tensions mounted between Protestant England and Catholic Spain, the undisputed European superpower rule...
+----------------------------------------
+L6: KT 2.2: Relations with Spain, 1569–1585
+   Act 4: "The Deptford Knighting: Elizabeth's Defiance, Philip's Outrage and the £10,000 Reward (1580–1581)"
+   Img: /units/eee/assets/portraits/william_of_orange.jpg
+   Cap: William of Orange ('The Silent'): Leader of the Protestant Dutch Revolt against Spanish rule, assassinated by a Catholic fanatic in 1584.
+   Txt: [4.1] In April 1581, Elizabeth made a provocative public statement of defiance against Spain. Flouting Philip II's demands that Drake be handed over as a pirate...
+----------------------------------------
+L7: KT 2.3: The Outbreak of War with Spain, 1585–1588
+   Act 2: "Disaster in the Low Countries: Zutphen, Desertions and Leicester's Resignation (1586–1587)"
+   Img: /images/drake_cadiz_1587.jpg
+   Cap: Singeing the King of Spain's Beard (April 1587): Drake's raid on Cadiz destroyed over 30 Spanish galleons and delayed the Armada by a year.
+   Txt: [2.1] Leicester’s military operations were plagued by logistical shortages, tactical blunders, and internal dissension. Elizabeth refused to provide sufficient ...
+----------------------------------------
+L7: KT 2.3: The Outbreak of War with Spain, 1585–1588
+   Act 4: "The Logistical Shock: Seasoned Barrel Hoops, Scorched Fleets and Spanish Delay (1587–1588)"
+   Img: /images/ark_royal.jpg
+   Cap: The Ark Royal (1587): Fast, heavily gunned race-built flagship designed by Sir John Hawkins to out-manoeuvre the heavy Spanish galleons.
+   Txt: [4.1] Drake’s raid on Cadiz inflicted devastating tactical and logistical damage on Spanish war planning. He captured the **San Felipe**, a massive Portuguese E...
+----------------------------------------
+L8: KT 2.4: The Spanish Armada: Strategy, Conflict & Defeat, 1588
+   Act 2: "Midnight at Calais Roads: Hell-Burners, Severed Anchors and Broken Formation (1588)"
+   Img: /images/spanish_armada_battle.jpg
+   Cap: Clash in the Channel (July–August 1588): Long-range English culverin guns pounding the tightly packed Spanish crescent formation.
+   Txt: [2.1] On 6 August, Medina Sidonia anchored the Armada off **Calais Roads**, awaiting news from the Duke of Parma. However, Parma’s army was blockaded in Dunkirk...
+----------------------------------------
+L8: KT 2.4: The Spanish Armada: Strategy, Conflict & Defeat, 1588
+   Act 4: "The Protestant Wind: The Ordeal of the Scottish Isles and Shipwrecks on Irish Rocks (1588)"
+   Img: /images/armada_gravelines_chart_1590.jpg
+   Cap: The Fireships at Calais (August 1588): Eight flaming hulks sent into the anchorage, panicking the Spanish fleet into cutting their anchor cables.
+   Txt: [4.1] Following Gravelines, the surviving Armada faced utter destruction. A fierce southwesterly gale—celebrated by Protestants as the **"Protestant Wind"**—pre...
+----------------------------------------
+L9: KT 3.1: Education and Leisure in Elizabethan England, 1558–1588
+   Act 1: "Humanism & The Hornbook: The Printing Press, Illiteracy and the Protestant Drive for Reading"
+   Img: /images/renaissance_printing_house_stradanus.jpg
+   Cap: Johannes Stradanus, Impressio Librorum (c. 1580). Renaissance engraving depicting moveable-type compositors, inkers, and screw presses that drove the Tudor literacy revolution.
+   Txt: [1.1] Education in Elizabethan England was shaped by the Renaissance revival of learning known as **Humanism**, which argued that education should develop civil...
+----------------------------------------
+L9: KT 3.1: Education and Leisure in Elizabethan England, 1558–1588
+   Act 5: "The Elizabethan Playhouse: Commercial Theatres, Groundlings and Puritan Opposition"
+   Img: /images/theatre.jpg
+   Cap: Attributed to John Taylor, The Chandos Portrait of William Shakespeare (c. 1600–1610, NPG 1). Playwright whose works for the Lord Chamberlain's Men defined the booming commercial Elizabethan stage.
+   Txt: [5.1] The Elizabethan era saw the birth of secular commercial drama, evolving from wandering troupes of actors performing in inn-yards to purpose-built permanen...
+----------------------------------------
+L10: KT 3.2: The Problem of the Poor and Vagrancy, 1558–1588
+   Act 1: "The Hungry Generation: Population Explosion, Harvest Failures and Soaring Bread Prices"
+   Img: /images/sir_william_cecil_lord_burghley.jpg
+   Cap: Marcus Gheeraerts the Elder, Sir William Cecil, 1st Baron Burghley (c. 1585, NPG 362). Queen Elizabeth's chief minister whose parliamentary memoranda closely tracked rising grain prices and harvest crises.
+   Txt: [1.1] The fundamental driver of Elizabethan poverty was a massive demographic explosion. England’s population surged from 3 million in 1558 to over **4.2 millio...
+----------------------------------------
+L10: KT 3.2: The Problem of the Poor and Vagrancy, 1558–1588
+   Act 5: "Raw Wool and the House of Correction: The 1576 Act and the Foundations of Modern Welfare"
+   Img: /images/edward_vi_bridewell_hospital_charter.jpg
+   Cap: George Vertue after Hans Holbein, The Charter of Bridewell Hospital (1750). The institutional prototype adopted nationwide under the 1576 Poor Act to put the able-bodied poor to work in county Houses of Correction.
+   Txt: [5.1] Recognizing that physical punishment alone could not solve systemic unemployment, Parliament enacted the **1576 Act for the Relief of the Poor**. This sta...
+----------------------------------------
+L11: KT 3.3: Exploration and Voyages of Discovery, 1558–1588
+   Act 2: "The Race-Built Galleon: John Hawkins' Low Forecastles, Lateen Sails and Heavy Culvers (1558–1577)"
+   Img: /images/sir_john_hawkins.JPG
+   Cap: Sir John Hawkins (1532–1595). Elizabeth's Treasurer of the Navy whose race-built galleon design revolutionized English naval architecture.
+   Txt: [2.1] English oceanic voyages were made possible by major transformations in naval architecture led by Sir John Hawkins. Departing from traditional, high-castle...
+----------------------------------------
+L11: KT 3.3: Exploration and Voyages of Discovery, 1558–1588
+   Act 4: "Around the Globe: Drake's Golden Hind, the Straits of Magellan and Nova Albion (1577–1580)"
+   Img: /images/sir_francis_drake_portrait.jpg
+   Cap: Sir Francis Drake (1540–1596): Celebrated privateer and navigator who led the circumnavigation of the globe (1577–1580).
+   Txt: [4.1] In December 1577, Francis Drake sailed from Plymouth with five ships on a secret mission backed by Elizabeth to break into the Spanish Pacific. After navi...
+----------------------------------------
+L12: KT 3.4: Raleigh and the Colonisation of Virginia, 1584–1590
+   Act 2: "Mismatched Colonists: Soldiers, Alchemists, Grenville's Command and Lane's Fort (1584–1585)"
+   Img: /images/john_white_village_secotan.jpg
+   Cap: The Village of Secotan (1585): John White's visual record of Native American agriculture, communal tobacco plots, and longhouses in Virginia.
+   Txt: [2.1] Raleigh faced severe obstacles in organizing the 1585 colonial expedition to Roanoke Island. Forbidden by Elizabeth from leading the voyage personally, Ra...
+----------------------------------------
+L12: KT 3.4: Raleigh and the Colonisation of Virginia, 1584–1590
+   Act 4: "The Severed Thread: The Death of Wingina, Drake's Rescue and the First Evacuation (1586)"
+   Img: /images/john_white_indians_fishing.jpg
+   Cap: Native Algonquin Fishing Methods: John White documenting the rich coastal ecology and sophisticated fish weirs encountered by the Roanoke colonists.
+   Txt: [4.1] Tensions between the Roanoke colonists and the Secotan exploded into open warfare in the spring of 1586. English diseases decimated local villages, leadin...
+----------------------------------------
+
+========================================
+UNIT: WEIMAR_NAZI_GERMANY
+========================================
+L1: KT1.1: The Origins of the Republic, 1918–1919
+   Act 1: "Mutiny on the High Seas: The Kiel Sailors' Revolt and Imperial Collapse (1918)"
+   Img: /images/kiel_mutiny_1918.jpg
+   Cap: Kiel Sailors' Revolt (November 1918): Armed sailors seized battleships and formed revolutionary workers' and soldiers' councils, setting off an unstoppable collapse of imperial military authority.
+   Txt: [1.1] By autumn 1918, Imperial Germany was facing total military defeat. Four years of Allied naval blockade had caused over 763,000 civilian starvation deaths,...
+----------------------------------------
+L1: KT1.1: The Origins of the Republic, 1918–1919
+   Act 4: "Flight from Berlin: The National Assembly Convened in Weimar (Jan–Feb 1919)"
+   Img: /images/weimar_assembly_1919.jpg
+   Cap: Weimar National Assembly (February 1919): Democratic delegates convened in Weimar to escape civil unrest in Berlin, drafting Europe's most progressive democratic constitution.
+   Txt: [4.1] In January 1919, Ebert’s government held nationwide elections for a National Assembly under full universal suffrage for men and women aged twenty and abov...
+----------------------------------------
+L2: KT1.2: Early Challenges to the Republic, 1919–1923
+   Act 2: "The Diktat of Versailles: War Guilt, Reparations and the 'Stab in the Back' Legend (Jun 1919)"
+   Img: /images/weimar_versailles_losses_1919_map_auth.png
+   Cap: Versailles Territorial Losses (1919): Germany surrendered 13% of its European territory, including Alsace-Lorraine and the Polish Corridor, separating East Prussia from the German mainland.
+   Txt: [2.1] On 28 June 1919, German delegates were forced to sign the Treaty of Versailles in the Hall of Mirrors. Denounced across Germany as an intolerable **Diktat...
+----------------------------------------
+L2: KT1.2: Early Challenges to the Republic, 1919–1923
+   Act 5: "French Troops in the Ruhr & The Mark Collapses: The Nightmare of Hyperinflation (1923)"
+   Img: /images/weimar_hyperinflation_children_cash_1923.jpg
+   Cap: The Hyperinflation Catastrophe (1923): Money lost its value so rapidly that millions of marks were bundled into bricks for children's games, permanently wiping out middle-class life savings.
+   Txt: [5.1] In January 1923, Germany defaulted on coal deliveries, prompting 60,000 French and Belgian troops to invade the **Ruhr Valley**—the industrial heartland p...
+----------------------------------------
+L3: KT1.3: The Recovery of the Republic, 1924–1929
+   Act 1: "Burning the Trillion-Mark Notes: Stresemann and the Miracle of the Rentenmark (Nov 1923)"
+   Img: /images/weimar_rentenmark_1923.jpg
+   Cap: The Rentenmark Miracle (November 1923): Backed by agricultural mortgages and industrial assets, Gustav Stresemann's new currency abruptly restored public confidence and halted hyperinflation.
+   Txt: [1.1] In August 1923, at the peak of the Ruhr crisis, **Gustav Stresemann** was appointed Chancellor and Foreign Minister. Acting decisively, Stresemann ended p...
+----------------------------------------
+L3: KT1.3: The Recovery of the Republic, 1924–1929
+   Act 4: "Return to the World Stage: Germany Joins the League of Nations (Sep 1926)"
+   Img: /images/stresemann_geneva_league_of_nations_1926.jpg
+   Cap: Germany Enters the League of Nations (September 1926): Foreign Minister Stresemann delivered Germany's maiden address in Geneva, securing a permanent seat on the League Council as an equal great power.
+   Txt: [4.1] In September 1926, the diplomatic momentum of Locarno culminated in Germany’s admission into the **League of Nations** (**Source C**). Germany was awarded...
+----------------------------------------
+L4: KT1.4: Changes in Society, 1924–1929
+   Act 2: "The Bubikopf and the Vote: The Emancipation and Clashes of the 'New Woman' (1924–1929)"
+   Img: /images/weimar_new_woman_1920s.jpg
+   Cap: The "New Woman" (Neue Frau) in 1920s Berlin: Benefiting from constitutional equality under Article 109, young women embraced financial independence, shorter skirts, and modern clerical employment.
+   Txt: [2.1] The Weimar Constitution granted women equal voting rights at age twenty, achieving a 90% female turnout in national elections; 112 female deputies served ...
+----------------------------------------
+L4: KT1.4: Changes in Society, 1924–1929
+   Act 3: "Glass, Steel and Functional Design: Walter Gropius and the Bauhaus Revolution (1925–1929)"
+   Img: /images/bauhaus_dessau.jpg
+   Cap: The Bauhaus at Dessau (1925–1926): Walter Gropius revolutionized architecture by pioneering functional glass-curtain walls, clean steel geometries, and the principle that "form follows function".
+   Txt: [3.1] The Golden Twenties saw a revolutionary explosion of artistic creativity. In 1919, architect **Walter Gropius** founded the **Bauhaus** design school in W...
+----------------------------------------
+L5: KT2.1: The Early Development of the Nazi Party, 1919–1922
+   Act 1: "The Furrier's Son in the Sterneckerbräu: Anton Drexler and the German Workers’ Party (Sep 1919)"
+   Img: /images/anton_drexler.jpg
+   Cap: Anton Drexler (1884–1942): Munich railway locksmith who founded the German Workers' Party (DAP) in January 1919, preaching fierce anti-Marxism, anti-Semitism, and pan-German nationalism to working-class Munich.
+   Txt: [1.1] In September 1919, Corporal Adolf Hitler was working as an undercover intelligence agent ( V-Mann ) for the Bavarian army, tasked with spying on subversiv...
+----------------------------------------
+L5: KT2.1: The Early Development of the Nazi Party, 1919–1922
+   Act 3: "The Hooked Cross: Rebranding the NSDAP, the Völkischer Beobachter and the Swastika Standard (1920–1921)"
+   Img: /images/weimar_sa_rohm_munich_1924.jpg
+   Cap: Ernst Röhm and the SA (1921–1922): Army captain Ernst Röhm supplied military weapons and demobilised Freikorps soldiers to forge the Sturmabteilung (SA), providing Hitler with physical force to intimidate political rivals.
+   Txt: [3.1] In 1920, Hitler oversaw the complete rebranding of the movement, renaming it the **National Socialist German Workers' Party (NSDAP)**, commonly abbreviate...
+----------------------------------------
+L6: KT2.2: The Munich Putsch and the Lean Years, 1923–1929
+   Act 1: "Pistol Shots in the Bürgerbräukeller: Von Kahr Held at Gunpoint in the Munich Putsch (8 Nov 1923)"
+   Img: /images/munich_putsch_defendants.jpg
+   Cap: Munich Treason Trial (February–March 1924): Adolf Hitler and General Erich Ludendorff standing before sympathetic Bavarian judges; Hitler used the dock as a national stage to justify the coup and win conservative acclaim.
+   Txt: [1.1] By November 1923, hyperinflation had reached its peak, and Chancellor Stresemann's decision to call off passive resistance in the Ruhr sparked outrage amo...
+----------------------------------------
+L6: KT2.2: The Munich Putsch and the Lean Years, 1923–1929
+   Act 3: "A Treason Trial as a Stage: Sympathetic Judges, Landsberg Fortress and Mein Kampf (1924)"
+   Img: /images/hitler_rednerposen_oratory_1927.jpg
+   Cap: Hitler's Rehearsed Oratory (1927): Photographer Heinrich Hoffmann captured Hitler privately testing dramatic hand gestures and facial expressions, perfecting the theatrical charisma that defined the reorganized party.
+   Txt: [3.1] In February 1924, Hitler and Ludendorff went on trial for high treason in Munich (**Source A**). Legally facing the death penalty or life imprisonment, Hi...
+----------------------------------------
+L7: KT2.3: The Growth of Nazi Support, 1929–1932
+   Act 1: "Black Thursday in New York: The Wall Street Crash and the Recall of American Loans (Oct 1929)"
+   Img: /images/unemployment_berlin_1930.jpg
+   Cap: Mass Unemployment in Berlin (1930): The Wall Street Crash triggered the immediate recall of American loans; by 1932, over six million Germans were registered as jobless, driving widespread destitution and radicalizing the electorate.
+   Txt: [1.1] On 29 October 1929—just twenty-six days after the death of Gustav Stresemann—the New York Stock Exchange collapsed in the catastrophic **Wall Street Crash...
+----------------------------------------
+L7: KT2.3: The Growth of Nazi Support, 1929–1932
+   Act 3: "Street Warfare and the Red Threat: The KPD Surge and Middle-Class Panic (1930–1932)"
+   Img: /images/weimar_unemployed_sa_men_1932.jpg
+   Cap: The SA Welfare Engine (1932): The Nazi Party provided free dormitory beds, soup kitchens, and brown uniforms to young unemployed men, transforming joblessness into a disciplined paramilitary army of 400,000 stormtroopers.
+   Txt: [3.1] The economic catastrophe radicalized German politics, tearing society into polarized extremes. As desperate industrial workers abandoned the moderate SPD,...
+----------------------------------------
+L8: KT2.4: How Hitler Became Chancellor, 1932–1933
+   Act 1: "Cracks in the Brown Front: Strasser's Mutiny, Lost Seats and Party Bankruptcy (Nov 1932)"
+   Img: /images/weimar_individuals/gregor_strasser.jpg
+   Cap: Gregor Strasser (1892–1934): Head of the Nazi Party's Reich political organisation whose attempted coalition negotiations with Chancellor Schleicher in December 1932 precipitated a bitter party split and near financial ruin before Hitler reasserted total dominance.
+   Txt: [1.1] Following his triumph in July 1932, Hitler’s high-stakes gamble to hold out for complete executive power began to backfire disastrously. In the new Reichs...
+----------------------------------------
+L8: KT2.4: How Hitler Became Chancellor, 1932–1933
+   Act 3: "A Secret Meeting at Banker Schröder's Villa: Franz von Papen Plots His Revenge (Jan 1933)"
+   Img: /images/weimar_torchlight_parade_30jan1933.jpg
+   Cap: Torchlight Triumph at the Brandenburg Gate (30 January 1933): Over 25,000 SA and SS men paraded past the presidential palace until midnight, celebrating Hitler's legal appointment as the dawn of the "National Revolution".
+   Txt: [3.1] Furious at Schleicher’s betrayal, Franz von Papen sought revenge by scheming to regain political power through an alliance with Adolf Hitler. On 4 January...
+----------------------------------------
+L9: Key Topic 3.1: The Creation of a Dictatorship, 1933–1934
+   Act 2: "Intimidation in the Kroll Opera House: The Enabling Act and the Suicide of the Reichstag (Mar 1933)"
+   Img: /images/kroll_opera_enabling_act_1933.jpg
+   Cap: The Kroll Opera House (23 March 1933): With the Reichstag in ruins, deputies convened under massive swastika banners ringed by armed SS and SA guards. Intimidation and backroom deals secured the two-thirds majority required to pass the Enabling Act, ending parliamentary democracy.
+   Txt: [2.1] Despite state violence, the 5 March 1933 election yielded the Nazis only 43.9% of the vote, denying Hitler a majority. Determined to eliminate parliamenta...
+----------------------------------------
+L9: Key Topic 3.1: The Creation of a Dictatorship, 1933–1934
+   Act 5: "The Old Field Marshal Passes: Hindenburg's Death and the Soldier's Personal Oath to the Führer (Aug 1934)"
+   Img: /images/hitler_hindenburg_1933.jpg
+   Cap: The Day of Potsdam (21 March 1933): Adolf Hitler ceremoniously deferred to the revered 85-year-old Field Marshal Paul von Hindenburg, reassuring Germany's conservative establishment and the Reichswehr high command before dissolving their independence.
+   Txt: [5.1] The final constitutional barrier fell on 2 August 1934 when 86-year-old President Paul von Hindenburg died at his Neudeck estate. Hours before his death, ...
+----------------------------------------
+L10: Key Topic 3.2: The Police State and Religion, 1933–1939
+   Act 1: "The Black Order: Heinrich Himmler, the SS-Totenkopfverbände and Early Concentration Camps (1933–1939)"
+   Img: /images/weimar_individuals/heinrich_himmler.jpg
+   Cap: Heinrich Himmler (1900–1945): As Reichsführer-SS and later Chief of German Police, Himmler transformed the Schutzstaffel from a 280-man bodyguard into an omnipresent ideological terror apparatus that directed the Gestapo, SD, and concentration camp system.
+   Txt: [1.1] The principal instrument of Nazi totalitarian terror was the Schutzstaffel (SS), founded in 1925 as Hitler's personal bodyguard and transformed by Heinric...
+----------------------------------------
+L10: Key Topic 3.2: The Police State and Religion, 1933–1939
+   Act 5: "Pagan Crosses vs Confessional Pulpits: Ludwig Müller's Reich Church and Martin Niemöller's Resistance (1933–1939)"
+   Img: /images/weimar_individuals/martin_niem_ller.jpg
+   Cap: Pastor Martin Niemöller (1892–1984): Former U-boat commander who founded the Pastors' Emergency League (PFB) in 1933 to resist the Nazification of the Protestant Church. Niemöller was arrested by the Gestapo in 1937 and held in Sachsenhausen and Dachau as Hitler's personal prisoner.
+   Txt: [5.1] Germany's 40 million Protestants were initially viewed by Hitler as natural allies due to their historical patriotism and hostility toward communism. In 1...
+----------------------------------------
+L11: Key Topic 3.3: Controlling and Influencing Attitudes, 1933–1939
+   Act 1: "The Ministry of Public Enlightenment: Joseph Goebbels and the Reich Chamber of Culture (1933)"
+   Img: /images/weimar_individuals/joseph_goebbels.jpg
+   Cap: Dr Joseph Goebbels (1897–1945): As Minister of Propaganda, Goebbels subordinated all German media, literature, radio, theatre, and the arts to the Reich Chamber of Culture, insisting that propaganda was an art form whose purpose was the total ideological conquest of the nation.
+   Txt: [1.1] In March 1933, Hitler created the Ministry for Public Enlightenment and Propaganda (RMVP), appointing 35-year-old Dr. Joseph Goebbels as its minister. Goe...
+----------------------------------------
+L11: Key Topic 3.3: Controlling and Influencing Attitudes, 1933–1939
+   Act 3: "Cathedrals of Light: Albert Speer's Nuremberg Rallies and the Cult of the Führer (1933–1938)"
+   Img: /images/weimar_individuals/albert_speer.jpg
+   Cap: Albert Speer (1905–1981): Appointed Hitler's chief architect in 1934, Speer engineered the monumental neoclassical architecture of the regime and created the dramatic "Cathedral of Light" at Nuremberg using 152 anti-aircraft searchlights pointing into the night sky.
+   Txt: [3.1] The pinnacle of visual propaganda was the annual Nuremberg Party Rallies (Reichsparteitage), staged every September on the Zeppelin Field grounds. Masterm...
+----------------------------------------
+L12: Key Topic 3.4: Opposition, Resistance and Conformity, 1933–1939
+   Act 3: "Pins Under the Lapel: The Edelweiss Pirates and Working-Class Youth Defiance (1936–1939)"
+   Img: /images/edelweiss_pirates_gestapo_cell_graffiti.jpg
+   Cap: Defiance in the Cells (EL-DE Haus, Cologne): In the basement prison cells of the Gestapo headquarters at Appellhofplatz, imprisoned dissidents and members of the Edelweiss Pirates scratched anti-regime slogans, calendar tallies, and messages of hope into the plaster. Preserved today as a memorial archive, these inscriptions provide rare surviving physical evidence of clandestine resistance in the Rhineland.
+   Txt: [3.1] As the regime made Hitler Youth membership compulsory in 1936 and intensified military drills, rebellious teenagers formed counter-cultural protest groups...
+----------------------------------------
+L12: Key Topic 3.4: Opposition, Resistance and Conformity, 1933–1939
+   Act 5: "The Lion of Münster: Bishop von Galen, Dietrich Bonhoeffer and Religious Courage (1937–1939)"
+   Img: /images/bishop_von_galen.jpg
+   Cap: The "Lion of Münster" (1934–1941): Clemens August Graf von Galen, Catholic Bishop of Münster, openly preached against Gestapo lawlessness and the euthanasia program. His aristocratic status and immense local popularity made Hitler hesitate to execute him.
+   Txt: [5.1] Religious figures provided the most influential challenge to Nazi authority because the Christian churches retained deep institutional roots and moral cre...
+----------------------------------------
+L13: Key Topic 4.1: Nazi Policies Towards Women, 1933–1939
+   Act 2: "Financial Incentives and Demographic Engineering"
+   Img: /images/weimar_individuals/gertrud_scholtz_klink.jpg
+   Cap: Gertrud Scholtz-Klink (1902–1999): Appointed Reich Women’s Leader (Reichsfrauenführerin) in 1934, Scholtz-Klink headed the National Socialist Women’s League (NS-Frauenschaft). She enforced the regime’s doctrine of Kinder, Küche, Kirche, declaring that a woman’s highest service to the Reich was domestic devotion, racial hygiene, and bearing healthy children.
+   Txt: [2.1] Confronted by demographic decline, the Nazi regime introduced financial incentives to stimulate marriage and births. In June 1933, the government passed t...
+----------------------------------------
+L13: Key Topic 4.1: Nazi Policies Towards Women, 1933–1939
+   Act 4: "Eugenic Control, Sterilisation, and the Lebensborn Program"
+   Img: /images/mothers_cross_award.jpg
+   Cap: The Cross of Honour of the German Mother (Ehrenkreuz der Deutschen Mutter): Instituted in December 1938, this state medal militarized motherhood into a civic duty. Awarded on Hitler’s mother’s birthday (12 August), mothers received Bronze for 4–5 children, Silver for 6–7, and Gold for 8 or more racially pure Aryan children.
+   Txt: [4.1] Nazi family policy was governed by pseudo-scientific racial hygiene, restricting motherhood strictly to those deemed 'genetically valuable'. In July 1933,...
+----------------------------------------
+L14: Key Topic 4.2: Nazi Policies Towards the Young, 1933–1939
+   Act 1: "The Totalitarian Ambition to Control Youth"
+   Img: /images/weimar_individuals/bernhard_rust.jpg
+   Cap: Bernhard Rust (1883–1945): Appointed Reich Minister of Science, Education and National Culture in 1934. Rust purged schools and universities of Jewish and politically unreliable educators, made membership of the Nazi Teachers’ League (NSLB) mandatory, and transformed the curriculum into an instrument of racial and military indoctrination.
+   Txt: [1.1] Adolf Hitler recognized that securing a 'Thousand-Year Reich' required capturing the unquestioning loyalty of Germany's youth. At the 1935 Nuremberg rally...
+----------------------------------------
+L14: Key Topic 4.2: Nazi Policies Towards the Young, 1933–1939
+   Act 3: "The League of German Girls: Preparing Racial Mothers"
+   Img: /images/hitler_youth_march_1930s.jpg
+   Cap: Hitler Youth Members in Uniform (c. 1933–1936): A cohort of Hitler Youth (Hitlerjugend) boys assembled in their standard brown-shirt service uniforms with black neckerchiefs, leather cross-straps, and belt buckles. The regime sought total monopoly over boys' leisure time through physical conditioning, camping, and ideological drill to prepare them for military conscription.
+   Txt: [3.1] Parallel to the militarization of boys, German girls were organized into gender-segregated movements to prepare them for domestic motherhood. Girls aged t...
+----------------------------------------
+L15: Key Topic 4.3: Employment and Living Standards, 1933–1939
+   Act 2: "Public Works, the Autobahnen, and Rearmament"
+   Img: /images/weimar_individuals/hermann_goering.jpg
+   Cap: Hermann Göring (1893–1946): Appointed Plenipotentiary for the Four-Year Plan in October 1936, Göring took absolute dictatorial control over the German economy, prioritizing rapid rearmament, autarky, and synthetic materials over civilian living standards, famously proclaiming: "Guns will make us powerful; butter will only make us fat."
+   Txt: [2.1] Alongside the RAD, the regime launched massive state-funded public works, most prominently the national motorway network (Reichsautobahnen). Overseen by F...
+----------------------------------------
+L15: Key Topic 4.3: Employment and Living Standards, 1933–1939
+   Act 4: "Controlling the Working Class: The German Labour Front (DAF)"
+   Img: /images/autobahn_construction.jpg
+   Cap: The Completed Reichsautobahn Network (c. 1936–1938): An open, four-lane section of the Reichsautobahn with two automobiles driving beneath a roadside oak tree. While Nazi propaganda promoted the autobahns as a symbol of economic modernization and employment, ordinary workers could rarely afford cars, and the network functioned primarily as strategic military infrastructure for mechanized army movements.
+   Txt: [4.1] To enforce industrial discipline and prevent strikes, the regime moved swiftly against organized labour. On 2 May 1933, SA stormtroopers raided trade unio...
+----------------------------------------
+L16: Key Topic 4.4: The Persecution of Minorities, 1933–1939
+   Act 2: "Early Persecution, the 1933 Boycott, and Economic Exclusion"
+   Img: /images/weimar_individuals/julius_streicher.jpg
+   Cap: Julius Streicher (1885–1946): Gauleiter of Franconia and founder of the virulently antisemitic tabloid Der Stürmer. Reaching a circulation of over 500,000 readers, Streicher popularized anti-Jewish conspiracy theories, grotesque caricatures, and the slogan emblazoned on every front page: "Die Juden sind unser Unglück!" (The Jews are our misfortune!).
+   Txt: [2.1] In 1933, the regime launched an immediate campaign to ostracize Germany's 500,000 Jews—under one percent of the population. On 1 April 1933, the state sta...
+----------------------------------------
+L16: Key Topic 4.4: The Persecution of Minorities, 1933–1939
+   Act 4: "The Escalation to Terror: Kristallnacht, November 1938"
+   Img: /images/kristallnacht_berlin_aftermath_1938.jpg
+   Cap: The Morning After Kristallnacht (10 November 1938): Berliners in overcoats looking at the shattered plate-glass display window of a ransacked Jewish-owned clothing shop ("Inh. Lichtenstein"). Across Germany and Austria, the state-orchestrated pogrom destroyed over 7,500 Jewish businesses, torched 267 synagogues, and saw 30,000 Jewish men dragged to concentration camps.
+   Txt: [4.1] In 1938, persecution escalated from legal discrimination to organized violence. On 7 November 1938, Herschel Grynszpan, a seventeen-year-old Polish Jewish...
+----------------------------------------

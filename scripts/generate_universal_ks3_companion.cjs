@@ -536,17 +536,6 @@ const A5_BOOKLET_CSS = `
     line-height: 1.2;
     flex: 1;
   }
-  .q-warmup-choice {
-    display: inline-block;
-    background: #f1f5f9;
-    border: 1px solid #000000;
-    border-radius: 3px;
-    padding: 0.5px 5px;
-    margin-left: 4px;
-    font-weight: 800;
-    font-size: 8.6pt;
-    color: #000000;
-  }
   .q-line-row {
     display: flex;
     align-items: flex-end;
@@ -874,9 +863,6 @@ async function buildCompanionHtml(data) {
         .map((q) => {
           const currentNum = globalQNum++;
           const pipBadge = getPipBadge(q.tier);
-          const warmUpHtml = q.warmUp
-            ? `<span class="q-warmup-choice">${q.warmUp}</span>`
-            : '';
           const starterPrompt = q.starter || 'Because...';
 
           return `
@@ -886,7 +872,7 @@ async function buildCompanionHtml(data) {
             <span class="q-num">${currentNum}.</span>
             <span class="q-pips">${pipBadge}</span>
           </div>
-          <span class="q-prompt">${q.q}${warmUpHtml}</span>
+          <span class="q-prompt">${q.q}</span>
         </div>
         <div class="q-line-row">
           <span class="q-line-lbl">Fact:</span>

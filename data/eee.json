@@ -1664,8 +1664,8 @@
           "type": "narrative",
           "title": "The Royal Injunctions: Crucifix Bans, Clerical Surplices and Church Visitations (1559)",
           "theme_heading": "The Royal Injunctions: Crucifix Bans, Clerical Surplices and Church Visitations (1559)",
-          "text": "<span class=\"para-ref\">[4.1]</span> In the summer of 1559, William Cecil issued <strong>57 Royal Injunctions</strong> to provide precise administrative instructions for the day-to-day enforcement of the religious settlement. Clergy were instructed to preach royal supremacy at least once every quarter and report anyone praising foreign papal jurisdiction. Every parish church was legally mandated to purchase an <strong>English Bible</strong> accessible to all parishioners.<br><br><span class=\"para-ref\">[4.2]</span> To eradicate traditional Catholic idolatry, pilgrimages, fake miracles, and candle-burning before images were strictly prohibited. Furthermore, clerical marriage was tightly regulated, requiring prospective brides to be vetted and approved by two Justices of the Peace and the local bishop.",
-          "level_4": "The 57 Royal Injunctions detailed how churches must operate, requiring an English Bible in every parish and banning pilgrimages and image worship. Clergy had to preach royal supremacy quarterly.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In the summer of 1559, William Cecil issued <strong>57 Royal Injunctions</strong> in the name of <strong>Queen Elizabeth I</strong> to provide precise administrative instructions for the day-to-day enforcement of the religious settlement. Clergy were instructed to preach royal supremacy at least once every quarter and report anyone praising foreign papal jurisdiction. Every parish church was legally mandated to purchase an <strong>English Bible</strong> accessible to all parishioners.<br><br><span class=\"para-ref\">[4.2]</span> To eradicate traditional Catholic idolatry, pilgrimages, fake miracles, and candle-burning before images were strictly prohibited. Furthermore, clerical marriage was tightly regulated, requiring prospective brides to be vetted and approved by two Justices of the Peace and the local bishop.",
+          "level_4": "The 57 Royal Injunctions issued in Queen Elizabeth's name detailed how churches must operate, requiring an English Bible in every parish and banning pilgrimages and image worship. Clergy had to preach royal supremacy quarterly.",
           "source": {
             "id": "source_b_book_of_common_prayer",
             "letter": "B",
@@ -3857,7 +3857,7 @@
           "type": "narrative",
           "title": "Kirk o' Field: Gunpowder Treason, Bothwell's Ambition and Darnley's Murder (1567)",
           "theme_heading": "Kirk o' Field: Gunpowder Treason, Bothwell's Ambition and Darnley's Murder (1567)",
-          "text": "<span class=\"para-ref\">[2.1]</span> Mary’s reign in Scotland quickly unraveled through marital discord and scandal. Darnley was arrogant, violent, and jealous of Mary's Italian private secretary, David Rizzio, whom Darnley and Protestant lords murdered in Mary's presence at Holyrood Palace in 1566. Marital relations collapsed completely.<br><br><span class=\"para-ref\">[2.2]</span> In the early hours of <strong>10 February 1567</strong>, the house at <strong>Kirk o' Field</strong> where Darnley was recuperating from smallpox was destroyed in a massive gunpowder explosion; Darnley’s body was discovered strangled in an adjoining orchard. Public suspicion immediately fell upon the ambitious <strong>Earl of Bothwell</strong>, whom Mary shockingly married in May 1567 under Protestant rites, provoking outrage across Scotland and Europe.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Mary Queen of Scots' personal reign in Scotland quickly unraveled through marital discord and scandal. Darnley was arrogant, violent, and jealous of Mary's Italian private secretary, David Rizzio, whom Darnley and Protestant lords murdered in Mary's presence at Holyrood Palace in 1566. Marital relations collapsed completely.<br><br><span class=\"para-ref\">[2.2]</span> In the early hours of <strong>10 February 1567</strong>, the house at <strong>Kirk o' Field</strong> where Darnley was recuperating from smallpox was destroyed in a massive gunpowder explosion; Darnley’s body was discovered strangled in an adjoining orchard. Public suspicion immediately fell upon the ambitious <strong>Earl of Bothwell</strong>, whom Mary shockingly married in May 1567 under Protestant rites, provoking outrage across Scotland and Europe.",
           "level_4": "In February 1567, Mary's unpopular husband Lord Darnley was murdered at Kirk o' Field. When Mary married the chief suspect, the Earl of Bothwell, Scottish nobles rebelled against her.",
           "sources": [
             {
@@ -3888,7 +3888,11 @@
                 "source_context": "Portrait of Walsingham. Following the York and Westminster inquiries into the Casket Letters in 1568–69, Elizabeth chose neither to execute nor restore Mary, but to keep her under house arrest in remote castles like Tutbury and Sheffield under the custody of the Earl of Shrewsbury. **Hinge Question:** Why did Protestant hardliners like Walsingham regard Mary's mere physical presence in England as an existential threat to Elizabeth's survival?"
               }
             }
-          ]
+          ],
+          "image": "/units/eee/assets/portraits/darnley.jpg",
+          "image_alt": "Portrait of Henry Stuart, Lord Darnley, second husband of Mary Queen of Scots",
+          "caption": "Lord Darnley: Mary's second husband whose mysterious gunpowder assassination at Kirk o' Field in 1567 destroyed her Scottish rule.",
+          "isReversed": true
         },
         {
           "stage": 3,
@@ -3898,10 +3902,6 @@
           "theme_heading": "Lochleven to the Solway: Abdication, Island Dungeon and Mary's Desperate Flight (1567–1568)",
           "text": "<span class=\"para-ref\">[3.1]</span> Scottish Protestant lords rose in armed rebellion against Mary and Bothwell, confronting the Queen's forces at <strong>Carberry Hill</strong> in June 1567. Abandoned by her troops, Mary surrendered while Bothwell fled into exile.<br><br><span class=\"para-ref\">[3.2]</span> Imprisoned in the island fortress of <strong>Lochleven Castle</strong>, Mary was subjected to intense intimidation and forced on 24 July 1567 to sign deeds of <strong>abdication</strong> in favour of her one-year-old infant son, who was crowned King <strong>James VI</strong>, with Protestant Earl of Moray ruling as regent. However, with the aid of loyal supporters, Mary made a daring escape from Lochleven in May 1568, raised a 6,000-man army, but suffered decisive military defeat at the <strong>Battle of Langside</strong>.",
           "level_4": "Mary was imprisoned at Lochleven Castle in 1567 and forced to abdicate for her baby son, James VI. After escaping in May 1568, her forces were defeated at Langside, forcing her to flee.",
-          "image": "/units/eee/assets/portraits/darnley.jpg",
-          "image_alt": "Portrait of Henry Stuart, Lord Darnley, second husband of Mary Queen of Scots",
-          "caption": "Lord Darnley: Mary's second husband whose mysterious gunpowder assassination at Kirk o' Field in 1567 destroyed her Scottish rule.",
-          "isReversed": true,
           "sources": [
             {
               "id": "eee_l4_source_c",
@@ -4957,10 +4957,6 @@
           "theme_heading": "Regnans in Excelsis & The Ridolfi Conspiracy: Intercepted Ciphers and Norfolk's Axe (1570–1572)",
           "text": "<span class=\"para-ref\">[2.1]</span> In February 1570, Pope Pius V issued the momentous papal bull <strong>Regnans in Excelsis</strong>, excommunicating Elizabeth as a heretic and releasing all English subjects from their oaths of allegiance. This transformed English Catholics into potential traitors in the eyes of the law. Capitalizing on this decree, Italian banker <strong>Roberto Ridolfi</strong> orchestrated a conspiracy in 1571 to assassinate Elizabeth, land 10,000 Spanish soldiers under the Duke of Alba, and place Mary on the throne married to the <strong>Duke of Norfolk</strong>.<br><br><span class=\"para-ref\">[2.2]</span> William Cecil and Walsingham intercepted ciphered messages, exposed the plot, and arrested the conspirators. Ridolfi remained abroad, the Spanish ambassador was expelled, and Norfolk was executed on Tower Hill in June 1572.",
           "level_4": "In 1570, the Pope excommunicated Elizabeth, encouraging Catholic rebellion. The 1571 Ridolfi Plot aimed to invade with Spanish troops and crown Mary; Cecil uncovered the plot and executed the Duke of Norfolk.",
-          "image": "/images/babington_plot_st_giles.jpg",
-          "image_alt": "Contemporary engraving of the gruesome execution of Anthony Babington and his fellow conspirators at St Giles's Fields",
-          "caption": "The Retribution of the Crown (September 1586): Anthony Babington and his co-conspirators hanged, drawn, and quartered at St Giles's Fields.",
-          "isReversed": false,
           "sources": [
             {
               "id": "eee_l5_source_b",
@@ -5077,10 +5073,10 @@
               "In previous plots (such as Ridolfi and Throckmorton), Mary had maintained plausible deniability, claiming that conspiracies were mounted in her name by overzealous supporters without her personal knowledge or consent. In 1586, Walsingham's double-agent Gilbert Gifford intercepted letters between Mary (held at Chartley Manor) and Catholic plotter Anthony Babington, who outlined a plan to assassinate Elizabeth ('the dispatch of the usurper') alongside a Spanish invasion. When Mary wrote back on 17 July 1586 detailing exact instructions for her rescue and explicitly approving the assassination scheme, cryptographer Thomas Phelippes decoded the letter and added a gallows mark. Mary's direct, handwritten endorsement of Elizabeth's murder provided the incontrovertible proof of high treason required under the 1585 Act for the Queen's Safety, disarming Elizabeth's legal objections and sealing Mary's execution at Fotheringhay Castle."
             ]
           },
-          "image": "/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg",
-          "image_alt": "Contemporary German-Dutch engraving depicting the scaffold and execution of Mary, Queen of Scots at Fotheringhay Castle",
-          "caption": "The Scaffold at Fotheringhay (8 February 1587): Mary, Queen of Scots executed before English commissioners after the discovery of the Babington Plot.",
-          "isReversed": true,
+          "image": "/images/babington_plot_st_giles.jpg",
+          "image_alt": "Contemporary engraving of the gruesome execution of Anthony Babington and his fellow conspirators at St Giles's Fields",
+          "caption": "The Retribution of the Crown (September 1586): Anthony Babington and his co-conspirators hanged, drawn, and quartered at St Giles's Fields.",
+          "isReversed": false,
           "sources": [
             {
               "id": "eee_l5_source_d",
@@ -5120,6 +5116,10 @@
           "theme_heading": "The Great Hall at Fotheringhay: The Regicide Dilemma and Mary's Red Execution (1587)",
           "text": "<span class=\"para-ref\">[5.1]</span> In October 1586, Mary was brought to trial before a commission of forty-six peers at <strong>Fotheringhay Castle</strong> in Northamptonshire and found guilty of high treason. Elizabeth agonized for months over executing an anointed cousin, fearing it would set a dangerous precedent for regicide and provoke retaliation from Catholic Spain and Scotland. Under immense pressure from Parliament and the Privy Council, Elizabeth signed the death warrant on 1 February 1587, but ordered Cecil not to dispatch it immediately.<br><br><span class=\"para-ref\">[5.2]</span> Cecil acted secretly, and on <strong>8 February 1587, Mary was beheaded</strong> in the Great Hall at Fotheringhay. The execution eliminated the domestic Catholic figurehead, but provided Philip II with the ultimate religious justification to launch the Spanish Armada.",
           "level_4": "Mary was found guilty of treason at Fotheringhay Castle. After agonizing hesitation, Elizabeth signed the warrant, and Mary was beheaded on 8 February 1587, driving Philip II to launch the Armada.",
+          "image": "/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg",
+          "image_alt": "Contemporary German-Dutch engraving depicting the scaffold and execution of Mary, Queen of Scots at Fotheringhay Castle",
+          "caption": "The Scaffold at Fotheringhay (8 February 1587): Mary, Queen of Scots executed before English commissioners after the discovery of the Babington Plot.",
+          "isReversed": true,
           "tasks": [
             {
               "title": "Master Disciplinary Enquiry Task",
@@ -7249,10 +7249,6 @@
           "theme_heading": "Disaster in the Low Countries: Zutphen, Desertions and Leicester's Resignation (1586–1587)",
           "text": "<span class=\"para-ref\">[2.1]</span> Leicester’s military operations were plagued by logistical shortages, tactical blunders, and internal dissension. Elizabeth refused to provide sufficient funding, leaving English soldiers unpaid, diseased, and starving. In September 1586, English forces failed to capture the Spanish supply base at <strong>Zutphen</strong>, a battle famed for the death of poet-soldier <strong>Sir Philip Sidney</strong>.<br><br><span class=\"para-ref\">[2.2]</span> Relations with the Dutch collapsed completely in January 1587 when English Catholic mercenary commanders, Sir William Stanley and Rowland York, defected to Spain and betrayed the key fortresses of <strong>Deventer and the Zutphen sconces</strong> to the Duke of Parma. Deeply humiliated and mistrusted by Dutch leaders, Leicester was recalled to England in December 1587, having achieved negligible military gains.",
           "level_4": "The English campaign suffered from lack of funds and poor leadership. At Zutphen, Sir Philip Sidney was killed, and the betrayal of Deventer to Spain destroyed English credibility, forcing Leicester's recall.",
-          "image": "/images/drake_cadiz_1587.jpg",
-          "image_alt": "Engraving depicting Sir Francis Drake's fleet attacking Spanish shipping in the Bay of Cadiz in April 1587",
-          "caption": "Singeing the King of Spain's Beard (April 1587): Drake's raid on Cadiz destroyed over 30 Spanish galleons and delayed the Armada by a year.",
-          "isReversed": false,
           "sources": [
             {
               "id": "eee_l7_source_b",
@@ -7292,25 +7288,10 @@
           "theme_heading": "Singeing the King of Spain's Beard: Drake's Daring Raid on Cadiz Harbour (1587)",
           "text": "<span class=\"para-ref\">[3.1]</span> With war now open and Philip assembling a massive invasion armada in Spanish ports, Elizabeth dispatched Sir Francis Drake with twenty-four warships to disrupt Spanish preparations. On <strong>19 April 1587</strong>, Drake audaciously sailed straight into the heavily fortified harbour of <strong>Cadiz</strong>, catching the Spanish fleet unprepared.<br><br><span class=\"para-ref\">[3.2]</span> Over thirty-six hours of daring naval warfare, Drake destroyed or captured <strong>thirty Spanish transport ships and warships</strong>, broke harbour fortifications, and plundered enormous quantities of arms and provisions. Drake famously characterized this pre-emptive strike as <strong>\"singeing the King of Spain's beard\"</strong>, demonstrating English naval supremacy in Spain's home waters.",
           "level_4": "In April 1587, Drake attacked the fortified port of Cadiz in a daring pre-emptive strike. He destroyed 30 Spanish ships, famously boasting he had 'singed the King of Spain's beard'.",
-          "source": {
-            "id": "source_a_drake_cadiz",
-            "letter": "A",
-            "title": "Source A: Drake’s Raid on Cadiz (1587)",
-            "src": "/images/drake_cadiz_1587.jpg",
-            "source": "/images/drake_cadiz_1587.jpg",
-            "image": "/images/drake_cadiz_1587.jpg",
-            "caption": "Sir Francis Drake’s daring naval raid on the Spanish port of Cadiz in April 1587, destroying over thirty Spanish supply ships and delaying the Armada by over a year.",
-            "desc": "Contemporary maritime illustration of Drake’s raid on Cadiz harbour, 1587.",
-            "provenance": "National Maritime Museum, Greenwich, 1587.",
-            "citation": "National Maritime Museum, Greenwich, 1587.",
-            "question": "Why did Drake describe his raid on Cadiz as \"singeing the King of Spain’s beard\", and how did it give England vital time to prepare for invasion?",
-            "hinge_question": "Why did Drake describe his raid on Cadiz as 'singeing the King of Spain’s beard', and how did it give England vital time to prepare for invasion?",
-            "source_context": "Contemporary illustration of Drake’s raid on Cadiz harbour, April 1587. Hinge Question: Why did Drake describe his raid on Cadiz as \"singeing the King of Spain’s beard\", and how did it give England vital time to prepare for invasion?",
-            "context": "Contemporary illustration of Drake’s raid on Cadiz harbour, April 1587.",
-            "discussion_ideas": [
-              "In April 1587, Sir Francis Drake led a pre-emptive strike into the Spanish port of Cadiz, sinking or capturing between 24 and 37 Spanish naval vessels, destroying tons of provisions, and sailing along the Portuguese coast to intercept transport ships carrying seasoned barrel staves. Drake referred to this insolent strike as 'singeing the King of Spain's beard'—a humiliating, stinging insult rather than a fatal blow. Crucially, the destruction of seasoned wood forced the Spanish to construct fresh, unseasoned barrel staves for the Armada's food and water supplies, which later rotted meat and spoiled drinking water at sea. Most importantly, the raid delayed the launching of the Spanish Armada by more than a full year, granting England precious time to manufacture guns, train coastal militias, and construct race-built warships."
-            ]
-          },
+          "image": "/images/drake_cadiz_1587.jpg",
+          "image_alt": "Engraving depicting Sir Francis Drake's fleet attacking Spanish shipping in the Bay of Cadiz in April 1587",
+          "caption": "Singeing the King of Spain's Beard (April 1587): Drake's raid on Cadiz destroyed over 30 Spanish galleons and delayed the Armada by a year.",
+          "isReversed": true,
           "sources": [
             {
               "id": "eee_l7_source_c",

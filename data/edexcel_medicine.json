@@ -12365,7 +12365,7 @@
           "title": "Open University: Mapping Health & Disease in the 19th Century",
           "duration": "28 mins 0 secs",
           "pathway": "Enquiry Evidence",
-          "teacher_guidance": "Scholarly exploration of how mid-19th-century epidemiological mapping connected microscopic pathology with urban sanitary infrastructure. Recommended Watch Window: 04:00–10:30 • Lesson Phase: Disciplinary Synthesis & High-Attainer Extension. Tone Alert: Academic Open University production with archival maps.",
+          "teacher_guidance": "Scholarly exploration of how mid-19th-century epidemiological mapping connected microscopic pathology with urban sanitary infrastructure. Recommended Watch Window: 04:00–10:30 • Lesson Phase: Core Specification Themes & High-Attainer Extension. Tone Alert: Academic Open University production with archival maps.",
           "viewing_task": "<ol><li><strong>[05:10] Recall:</strong> What two environmental theories of disease causation dominated British medical debate prior to the universal acceptance of Germ Theory in the 1880s?</li><li><strong>[07:30] Explain:</strong> Explain why British medical officers of health initially rejected Pasteur's Germ Theory, arguing that filth and poverty were the direct chemical causes of fever.</li><li><strong>[09:45] Challenge:</strong> Evaluate why it took over 20 years for Pasteur's 1861 Germ Theory to be fully accepted and implemented by the British medical establishment.</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Miasma theory (poisonous airborne effluvia) and Anti-contagionist sanitation theory (disease generated spontaneously by filth).</li><li><strong>Explain:</strong> Medical officers observed that outbreaks were concentrated in dirty, unpaved slums with open privies. They concluded that decomposing vegetable and animal refuse chemically poisoned the air, producing fever directly. Without seeing bacteria, they viewed microbes as harmless consequences of decay rather than its primary cause.</li><li><strong>Challenge:</strong> British medicine was dominated by practical sanitary reformers who believed cleaning the streets was sufficient. Influential figures like William Farr and Florence Nightingale distrusted laboratory microscopes, believing illness could be conquered simply by fresh air, clean water, and soap. It was not until Koch identified the precise bacteria for wound infections and cholera in the 1880s that the British establishment finally abandoned miasma.</li></ol>"
         },
@@ -14041,9 +14041,9 @@
           "title": "Joseph Lister & The Carbolic Acid Antiseptic Spray (1865–1870s)",
           "theme_heading": "Joseph Lister & The Carbolic Acid Antiseptic Spray (1865–1870s)",
           "text": "<span class=\"para-ref\">[4.1]</span> In 1865, Joseph Lister, Professor of Surgery at Glasgow Royal Infirmary, resolved to conquer the scourge of wound sepsis. Reading Louis Pasteur’s 1861 paper on fermentation, Lister realized that wound rot was not caused by moist air or chemical oxidation, but by living microscopic germs entering the body from the air and surgical contact. Lister noticed that the town council of Carlisle used crude *carbolic acid* (creosote) to disinfect sewage and kill cattle parasites without harming livestock. In August 1865, eleven-year-old James Greenlees was brought to Glasgow Infirmary with an open compound fracture of the leg after being run over by a cart—a condition that almost invariably ended in fatal gangrene and amputation. Lister cleaned the bone, dressed the wound with lint soaked in liquid carbolic acid, and covered it with tinfoil. To the astonishment of his colleagues, the bone healed cleanly within six weeks without a trace of infection or pus.<br><br><span class=\"para-ref\">[4.2]</span> Between 1865 and 1869, Lister published a series of landmark clinical papers in *The Lancet*, documenting that his antiseptic method had slashed surgical mortality from 45.7% down to 15.0%. Lister developed a comprehensive antiseptic regime: surgeons washed their hands in carbolic lotion, instruments were soaked in carbolic solution, dressings were impregnated with carbolic oil, and a steam-driven apparatus pumped a fine mist of carbolic acid over the patient throughout the operation (<span class=\"archival-meta-tag\">Source B</span>).",
-          "image": "/images/james_young_simpson_portrait.jpg",
-          "image_alt": "Formal photographic portrait of Sir James Young Simpson, Professor of Midwifery at Edinburgh University",
-          "caption": "Sir James Young Simpson (1811–1870): Edinburgh obstetrician who championed the use of chloroform in surgery and childbirth, overcoming fierce opposition from conservative surgeons and religious clergy until Queen Victoria took it in 1853.",
+          "image": "/images/lister_carbolic_spray.jpg",
+          "image_alt": "Contemporary engraving of a surgical operation performed under Joseph Lister's steam carbolic acid spray",
+          "caption": "Lister's Antiseptic Surgery in Practice (c. 1870s): Surgeons operating under a continuous cloud of carbolic acid mist emitted by a steam spray, designed to destroy airborne microbes before they could enter open surgical wounds.",
           "isReversed": true,
           "sources": [
             {
@@ -16939,17 +16939,17 @@
             }
           ],
           "content": "<span class=\"para-ref\">[1.1]</span> In 1895, physician diagnostics remained trapped on the exterior of the living body: doctors tapped chests, smelled urine, and took pulses, but could only discover internal fractures, bullets, or tumors through agonizing exploratory knife surgery. The diagnostic revolution ignited unexpectedly in Würzburg, Germany, on 8 November 1895. Physicist Wilhelm Röntgen, experimenting with high-voltage electrical discharges inside an evacuated glass Crookes tube, noticed that a cardboard screen coated with barium platinocyanide fluoresced green in his darkened laboratory, despite the tube being shielded in thick black cardboard. Röntgen realized an unknown, highly penetrating form of electromagnetic radiation was escaping the glass, christening the phenomenon \"X-rays\" using the mathematical variable for the unknown.<br><br><span class=\"para-ref\">[1.2]</span> On 22 December 1895, Röntgen exposed his wife Bertha’s hand over a photographic glass plate for fifteen minutes (<span class=\"archival-meta-tag\">Source A</span>). The developed plate revealed the living skeletal architecture of her fingers and her dark wedding ring, causing Bertha to cry: \"I have seen my death!\" News spread across the globe within days; within months, British voluntary hospitals installed primitive X-ray apparatus to locate bone fractures without incisions. During World War I, Polish-French scientist Marie Curie mobilized twenty mobile radiology cars (\"petites Curies\"), driving diagnostic X-ray units directly to front-line Casualty Clearing Stations to locate shrapnel before fatal gas gangrene set in.",
-          "theme": "Wilhelm Röntgen & The Discovery of X-Rays (1895–1918)"
+          "theme": "Wilhelm Röntgen & The Discovery of X-Rays (1895–1918)",
+          "image": "/images/rontgen_first_xray.jpg",
+          "image_alt": "First medical radiograph taken by Wilhelm Röntgen on 22 December 1895, showing the bones of his wife Bertha's hand and her wedding ring",
+          "caption": "The First Clinical X-Ray (1895): Wilhelm Conrad Röntgen's historic radiograph of his wife Bertha's hand, revealing internal skeletal anatomy non-invasively for the first time without surgical incision.",
+          "isReversed": false
         },
         {
           "act": 2,
           "title": "Blood Laboratories & Fibre-Optic Endoscopy (1930s–1960s)",
           "theme_heading": "Blood Laboratories & Fibre-Optic Endoscopy (1930s–1960s)",
           "text": "<span class=\"para-ref\">[2.1]</span> As the twentieth century progressed, hospital diagnostics moved beyond bones to chemical pathology and biochemistry. Automated laboratory testing transformed diagnostic precision: centrifuges separated blood plasma, automated cell counters measured white blood cell spikes signaling acute infection or leukaemia, and biochemical assays measured blood glucose to diagnose diabetes and blood pressure cuffs monitored cardiovascular strain. Instead of guessing from external symptoms, clinicians possessed quantifiable biochemical indicators.<br><br><span class=\"para-ref\">[2.2]</span> Alongside blood testing arose flexible fibre-optic endoscopy. Prior to the 1950s, inspecting internal organs required rigid metal tubes that risked puncturing delicate tissues, or dangerous exploratory laparotomies (cutting open the abdomen). In the 1950s and 1960s, optical physicists developed coherent bundles of flexible glass fibres that transmitted light and high-resolution images around bends. Doctors could now slide flexible endoscopes down a patient’s throat or into the bowel, directly inspecting gastric ulcers and biopsying tumors under direct vision without a single surgical incision.",
-          "image": "/images/rontgen_first_xray.jpg",
-          "image_alt": "First medical radiograph taken by Wilhelm Röntgen on 22 December 1895, showing the bones of his wife Bertha's hand and her wedding ring",
-          "caption": "The First Clinical X-Ray (1895): Wilhelm Conrad Röntgen's historic radiograph of his wife Bertha's hand, revealing internal skeletal anatomy non-invasively for the first time without surgical incision.",
-          "isReversed": false,
           "sources": [
             {
               "id": "med_l17_source_endoscopy",
@@ -17006,17 +17006,17 @@
             }
           ],
           "content": "<span class=\"para-ref\">[3.1]</span> Despite their brilliance, conventional 2D X-rays suffered from a major blind spot: dense bones cast intense white shadows that obscured underlying soft tissues, rendering brain tumors, blood clots, and liver carcinomas invisible. In 1967, British electrical engineer Godfrey Hounsfield, working at EMI Central Research Laboratories, devised Computerized Tomography (CT). Hounsfield realized that rotating an X-ray tube 360 degrees around a patient while linked to a digital computer allowed thousands of tissue density measurements to be mathematically reconstructed into razor-sharp cross-sectional 3D \"slices\" of internal organs.<br><br><span class=\"para-ref\">[3.2]</span> In October 1971, Hounsfield installed his prototype clinical CT scanner (<span class=\"archival-meta-tag\">Source B</span>) at Atkinson Morley Hospital in Wimbledon. The first scan clearly revealed a dark circular tumor in a patient’s frontal lobe, allowing surgeons to excise it with millimeter precision. The CT scanner was followed in the late 1970s and 1980s by Magnetic Resonance Imaging (MRI), developed by Sir Peter Mansfield and Raymond Damadian. MRI used powerful magnetic fields and harmless radio waves to render soft tissues, spinal cords, and brain matter with pristine clarity and zero ionizing radiation.",
-          "theme": "Godfrey Hounsfield, The CT Scanner & MRI (1971–1980s)"
+          "theme": "Godfrey Hounsfield, The CT Scanner & MRI (1971–1980s)",
+          "image": "/images/banner_mri_hospital.jpg",
+          "image_alt": "Modern hospital magnetic resonance imaging (MRI) scanner suite with circular superconducting magnet bore",
+          "caption": "Advanced MRI Diagnostic Scanner: Developed in the late 1970s, MRI uses strong magnetic fields and radio waves to generate cross-sectional images of soft tissues, brain structures, and internal organs without ionizing radiation.",
+          "isReversed": true
         },
         {
           "act": 4,
           "title": "The Epidemiological Shift to Chronic & Lifestyle Diseases (c1950–1980s)",
           "theme_heading": "The Epidemiological Shift to Chronic & Lifestyle Diseases (c1950–1980s)",
           "text": "<span class=\"para-ref\">[4.1]</span> In 1900, infectious diseases—tuberculosis, pneumonia, cholera, and diphtheria—were the undisputed executioners of British citizens, holding average life expectancy to just 46 for men and 50 for women. Over the subsequent six decades, clean municipal water, compulsory childhood immunizations, and the mass deployment of antibiotics brought bacterial epidemics under historic control. Average UK life expectancy surged past 75 by the 1980s.<br><br><span class=\"para-ref\">[4.2]</span> However, living decades longer triggered a profound \"epidemiological transition\": the leading causes of national mortality shifted decisively from external microbial pathogens to non-communicable, chronic lifestyle illnesses. Epidemiologists isolated major culprits: commercial cigarette smoking causing lung cancer and COPD; excessive alcohol causing liver cirrhosis; sedentary diets high in saturated fats and refined sugars driving coronary heart disease, strokes, and type 2 diabetes; and UV sunbeds causing melanoma. Twentieth-century medicine recognized that daily consumer behaviors were degrading internal organs from within.",
-          "image": "/images/banner_mri_hospital.jpg",
-          "image_alt": "Modern hospital magnetic resonance imaging (MRI) scanner suite with circular superconducting magnet bore",
-          "caption": "Advanced MRI Diagnostic Scanner: Developed in the late 1970s, MRI uses strong magnetic fields and radio waves to generate cross-sectional images of soft tissues, brain structures, and internal organs without ionizing radiation.",
-          "isReversed": true,
           "sources": [
             {
               "id": "source_d_hounsfield_nobel_1979",
@@ -17933,17 +17933,17 @@
             }
           ],
           "content": "<span class=\"para-ref\">[1.1]</span> By the opening decade of the twentieth century, bacteriology had successfully unmasked the microbial culprits behind tuberculosis, cholera, and diphtheria. Yet physicians found themselves crippled by an agonizing limitation known as the *Diagnostic-Therapeutic Lag*: while a doctor could diagnose a bacterial infection under a microscope, they possessed zero medicines to kill the pathogens inside the living human body. Existing chemical antiseptics like carbolic acid, mercury, and arsenic were indiscriminate poisons that destroyed human blood cells, liver tissue, and kidneys just as swiftly as they destroyed bacteria.<br><br><span class=\"para-ref\">[1.2]</span> A brilliant German physician named Paul Ehrlich proposed an audacious hypothesis: the *Zauberkugel*, or \"magic bullet.\" Ehrlich noticed that certain synthetic aniline dyes attached themselves selectively to specific bacterial cells while leaving surrounding human cells unstained. Ehrlich reasoned that if a toxin could be chemically bonded to a selective dye molecule, it would behave like a guided missile—destroying targeted microbes without harming the host. Working in Frankfurt with Japanese bacteriologist Sahachiro Hata (<span class=\"archival-meta-tag\">Source A</span>), they systematically re-examined compound 606 (arsphenamine) in 1909, proving it cured lethal human syphilis. Branded **Salvarsan 606**, it became humanity’s first synthetic chemical \"magic bullet.\"",
-          "theme": "Paul Ehrlich & Salvarsan 606 (1906–1909)"
+          "theme": "Paul Ehrlich & Salvarsan 606 (1906–1909)",
+          "image": "/images/paul_ehrlich_lab.jpg",
+          "image_alt": "Photograph of Paul Ehrlich and Japanese bacteriologist Sahachiro Hata working in their Frankfurt laboratory in 1909",
+          "caption": "Paul Ehrlich & Sahachiro Hata (1909): In their Frankfurt laboratory, Ehrlich and Hata systematically tested hundreds of chemical arsenic compounds, discovering Compound 606 (Salvarsan), the world's first targeted chemical 'magic bullet'.",
+          "isReversed": false
         },
         {
           "act": 2,
           "title": "Gerhard Domagk & Prontosil (1932–1935)",
           "theme_heading": "Gerhard Domagk & Prontosil (1932–1935)",
           "text": "<span class=\"para-ref\">[2.1]</span> While Salvarsan 606 was a triumph against syphilis spirochetes, it was ineffective against common bacterial killers like *Streptococcus* and *Staphylococcus*. In 1932, German pathologist Gerhard Domagk achieved the next therapeutic breakthrough with **Prontosil**, a bright red industrial leather dye manufactured by Bayer. Domagk demonstrated that Prontosil cured mice infected with lethal streptococcal blood poisoning without poisoning the animals.<br><br><span class=\"para-ref\">[2.2]</span> In 1935, Domagk’s six-year-old daughter Hildegard contracted severe, life-threatening blood poisoning after an embroidery needle snapped in her arm. Facing impending amputation and death, Domagk took the desperate gamble of injecting her with a heavy dose of Prontosil; she recovered completely within days. Researchers at the Pasteur Institute soon realized that the active therapeutic agent inside Prontosil was a simple chemical called *sulphonamide*. Sulphonamides (\"sulfa drugs\") slashed maternal puerperal fever deaths by 60% and cured bacterial pneumonia, proving that synthetic drugs could conquer widespread internal infections.",
-          "image": "/images/paul_ehrlich_lab.jpg",
-          "image_alt": "Photograph of Paul Ehrlich and Japanese bacteriologist Sahachiro Hata working in their Frankfurt laboratory in 1909",
-          "caption": "Paul Ehrlich & Sahachiro Hata (1909): In their Frankfurt laboratory, Ehrlich and Hata systematically tested hundreds of chemical arsenic compounds, discovering Compound 606 (Salvarsan), the world's first targeted chemical 'magic bullet'.",
-          "isReversed": false,
           "sources": [
             {
               "id": "source_c_gerhard_domagk_portrait",
@@ -18923,6 +18923,10 @@
             }
           ],
           "content": "<span class=\"para-ref\">[1.1]</span> During the First World War, Scottish bacteriologist Alexander Fleming witnessed thousands of soldiers die from wound sepsis in French military hospitals. Fleming recognized that standard chemical antiseptics like carbolic acid did more harm than good in deep lacerations, because chemicals destroyed the patient’s protective white blood cells faster than they eliminated bacteria. Fleming dedicated his post-war career at St Mary’s Hospital, London, to discovering an antibacterial agent that attacked microbes without poisoning human tissue.<br><br><span class=\"para-ref\">[1.2]</span> In late August 1928, Fleming left culture plates of *Staphylococcus* bacteria stacked in his Paddington laboratory before departing on holiday. Fungal spores from a mycologist’s laboratory below drifted through the open window, landing on an uncovered dish. Returning on 3 September 1928, Fleming examined the plate (<span class=\"archival-meta-tag\">Source A</span>) and noticed a clear, bacteria-free halo around a blob of blue-green mould where colonies of golden bacteria had dissolved. Fleming identified the mould as *Penicillium notatum*, naming its secretion **Penicillin**. He published his findings in 1929; however, lacking biochemical expertise to purify the unstable juice, he abandoned clinical trials.",
+          "image": "/images/banner_fleming_lab.jpg",
+          "image_alt": "Sir Alexander Fleming working at his laboratory workbench at St Mary's Hospital, Paddington, surrounded by glassware and culture plates",
+          "caption": "Alexander Fleming in his Laboratory (1928): Working at St Mary's Hospital, Paddington, Fleming discovered that a stray spore of *Penicillium notatum* mould had contaminated an unwashed petri dish, dissolving surrounding staphylococcal bacteria.",
+          "isReversed": false,
           "theme": "Alexander Fleming’s Accidental Discovery (1928–1929)"
         },
         {
@@ -18930,10 +18934,10 @@
           "title": "Florey, Chain & Norman Heatley at Oxford (1938–1940)",
           "theme_heading": "Florey, Chain & Norman Heatley at Oxford (1938–1940)",
           "text": "<span class=\"para-ref\">[2.1]</span> A decade later, in 1938, an interdisciplinary scientific research team at Oxford University reopened Fleming’s forgotten paper. Led by Australian professor of pathology Howard Florey and German-Jewish refugee biochemist Ernst Chain, the Oxford team set out to isolate pure penicillin. Florey brought clinical leadership, while Chain applied biochemical rigor to analyze the chemical properties of the elusive mold.<br><br><span class=\"para-ref\">[2.2]</span> Operating in a cash-starved laboratory during the early months of World War II, the team faced immense obstacles: penicillin broke down rapidly when exposed to air, light, or mild temperature shifts. Laboratory engineer Norman Heatley improvised brilliant apparatus using hospital bedpans, porcelain dairy churns, milk bottles, and bathtubs. By using ether solvents and vacuum freeze-drying, Heatley yielded tiny, precious pinches of stable, concentrated brown penicillin powder.",
-          "image": "/images/banner_fleming_lab.jpg",
-          "image_alt": "Sir Alexander Fleming working at his laboratory workbench at St Mary's Hospital, Paddington, surrounded by glassware and culture plates",
-          "caption": "Alexander Fleming in his Laboratory (1928): Working at St Mary's Hospital, Paddington, Fleming discovered that a stray spore of *Penicillium notatum* mould had contaminated an unwashed petri dish, dissolving surrounding staphylococcal bacteria.",
-          "isReversed": false,
+          "image": "/images/florey_chain_apparatus.jpg",
+          "image_alt": "Makeshift glassware, ceramic bedpans, and milk churn apparatus engineered by Norman Heatley at Oxford University in 1940 to extract penicillin",
+          "caption": "The Oxford Penicillin Extraction Plant (1940): Howard Florey, Ernst Chain, and biochemist Norman Heatley engineered a makeshift biochemical refinery using hospital bedpans and milk churns to purify the world's first clinical penicillin.",
+          "isReversed": true,
           "sources": [
             {
               "id": "source_b_fleming_paper_1929",
@@ -18992,10 +18996,6 @@
           "title": "Peoria & US Industrial Deep-Tank Fermentation (1941–1944)",
           "theme_heading": "Peoria & US Industrial Deep-Tank Fermentation (1941–1944)",
           "text": "<span class=\"para-ref\">[4.1]</span> In July 1941, Florey and Heatley flew to the neutral United States to secure corporate backing. Collaborating with the US Department of Agriculture Northern Regional Research Laboratory in Peoria, Illinois, scientists achieved two crucial breakthroughs: culturing the mould in *corn steep liquor* (a cornstarch byproduct) boosted yields twenty-fold, while a mouldy cantaloupe melon from a Peoria grocery market provided *Penicillium chrysogenum*, producing 200 times more penicillin.<br><br><span class=\"para-ref\">[4.2]</span> Backed by the US War Production Board, pharmaceutical giants (Pfizer, Merck, Squibb) constructed massive 10,000-gallon deep-tank fermentation vats pumped with sterile oxygen. By D-Day on 6 June 1944, Allied medical units possessed 2.3 million doses of penicillin, treating every wounded casualty on the Normandy beaches and reducing amputations and fatal wound sepsis to unprecedented historic lows.",
-          "image": "/images/florey_chain_apparatus.jpg",
-          "image_alt": "Makeshift glassware, ceramic bedpans, and milk churn apparatus engineered by Norman Heatley at Oxford University in 1940 to extract penicillin",
-          "caption": "The Oxford Penicillin Extraction Plant (1940): Howard Florey, Ernst Chain, and biochemist Norman Heatley engineered a makeshift biochemical refinery using hospital bedpans and milk churns to purify the world's first clinical penicillin.",
-          "isReversed": true,
           "sources": [
             {
               "id": "source_d_oxford_lancet_1941",
@@ -25677,10 +25677,6 @@
           "title": "Specialized Brain Surgery: Harvey Cushing at Passchendaele (1917–1918)",
           "theme_heading": "Specialized Brain Surgery: Harvey Cushing at Passchendaele (1917–1918)",
           "text": "<span class=\"para-ref\">[4.1]</span> Parallel breakthroughs occurred in specialized trauma surgery. Penetrating skull and brain wounds inflicted by descending artillery shrapnel carried a catastrophic 50% mortality rate on the Western Front. American neurosurgeon <strong>Harvey Cushing</strong>, stationed at No. 46 Casualty Clearing Station near Mendinghem during the grueling Third Battle of Ypres (Passchendaele) in 1917, revolutionized brain surgery through meticulous clinical innovation. Cushing recognized that standard general anaesthesia (ether or chloroform) caused massive cerebral swelling and elevated intracranial pressure, which pushed delicate brain tissue through fractured skull defects, causing instant fatal herniation.<br><br><span class=\"para-ref\">[4.2]</span> Cushing pioneered operating on conscious brain casualties under <strong>local anaesthetic</strong> (novocaine injected into the scalp), which kept the brain calm and unswollen. He designed an electrical suction apparatus to gently aspirate pulped, dead brain tissue, deployed powerful <em>surgical electromagnets</em> to extract deeply embedded steel shrapnel shards without lacerating healthy cerebral cortex, and used tiny silver clips to clamp delicate bleeding vessels. Cushing stitched the scalp closed using galeal sutures to protect against meningitis, reducing brain surgery mortality from over 50% down to 29% and operating on 45 severe casualties in a single 48-hour offensive, establishing modern neurosurgery.",
-          "image": "/images/gillies_tubed_pedicle.jpg",
-          "image_alt": "Medical diagrams of Sir Harold Gillies' tubed pedicle skin grafting technique at Queen's Hospital Sidcup",
-          "caption": "Sir Harold Gillies' 'Tubed Pedicle' Technique (Queen's Hospital, Sidcup): By rolling flap tissue into a sterile skin tube with its own vascular blood supply, Gillies bridged severe facial wounds caused by shell splinters, pioneering modern reconstructive plastic surgery.",
-          "isReversed": true,
           "sources": [
             {
               "id": "med_l26_source_d",
@@ -25710,7 +25706,7 @@
           "title": "Harold Gillies & The Tubed Pedicle Plastic Reconstruction (1917–1918)",
           "theme_heading": "Harold Gillies & The Tubed Pedicle Plastic Reconstruction (1917–1918)",
           "text": "<span class=\"para-ref\">[5.1]</span> Simultaneously, New Zealand-born surgeon <strong>Harold Gillies</strong> pioneered modern reconstructive plastic and maxillofacial surgery. Because trench sentries looked directly over parapets, thousands of soldiers sustained horrific facial wounds from machine-gun bullets and shrapnel, having jaws, noses, and cheeks completely blown away. Surviving soldiers were severely disfigured and suffered profound social ostracization. Recognizing their plight, Gillies persuaded the War Office to establish a dedicated hospital at <strong>Queen’s Hospital in Sidcup</strong>, Kent, in 1917, designed specifically for facial reconstruction.<br><br><span class=\"para-ref\">[5.2]</span> Gillies confronted a major biological hurdle: large, flat skin grafts transplanted onto open facial wounds invariably rotted and died from microbial infection and lack of blood supply. To overcome this, Gillies invented the revolutionary <strong>Tubed Pedicle</strong> technique (<span class=\"archival-meta-tag\">Source B</span>). A flap of healthy skin was cut from the patient’s chest, neck, or forehead and rolled into an enclosed, living tube of flesh with its internal blood vessels intact, while remaining attached at one end to maintain active arterial circulation. The free end was stitched to the facial defect; once new blood vessels grew into the graft over several weeks, the stalk was severed. Gillies and his multidisciplinary team performed over 11,000 operations at Sidcup, reconstructing jaws with rib bone grafts and restoring both physical anatomy and human dignity to shattered veterans.",
-          "image": null,
+          "image": "/images/gillies_tubed_pedicle.jpg",
           "sources": [
             {
               "id": "med_l26_source_e",
@@ -25733,7 +25729,10 @@
             }
           ],
           "content": "<span class=\"para-ref\">[5.1]</span> Simultaneously, New Zealand-born surgeon <strong>Harold Gillies</strong> pioneered modern reconstructive plastic and maxillofacial surgery. Because trench sentries looked directly over parapets, thousands of soldiers sustained horrific facial wounds from machine-gun bullets and shrapnel, having jaws, noses, and cheeks completely blown away. Surviving soldiers were severely disfigured and suffered profound social ostracization. Recognizing their plight, Gillies persuaded the War Office to establish a dedicated hospital at <strong>Queen’s Hospital in Sidcup</strong>, Kent, in 1917, designed specifically for facial reconstruction.<br><br><span class=\"para-ref\">[5.2]</span> Gillies confronted a major biological hurdle: large, flat skin grafts transplanted onto open facial wounds invariably rotted and died from microbial infection and lack of blood supply. To overcome this, Gillies invented the revolutionary <strong>Tubed Pedicle</strong> technique (<span class=\"archival-meta-tag\">Source B</span>). A flap of healthy skin was cut from the patient’s chest, neck, or forehead and rolled into an enclosed, living tube of flesh with its internal blood vessels intact, while remaining attached at one end to maintain active arterial circulation. The free end was stitched to the facial defect; once new blood vessels grew into the graft over several weeks, the stalk was severed. Gillies and his multidisciplinary team performed over 11,000 operations at Sidcup, reconstructing jaws with rib bone grafts and restoring both physical anatomy and human dignity to shattered veterans.",
-          "theme": "Harold Gillies & The Tubed Pedicle Plastic Reconstruction (1917–1918)"
+          "theme": "Harold Gillies & The Tubed Pedicle Plastic Reconstruction (1917–1918)",
+          "image_alt": "Medical diagrams of Sir Harold Gillies' tubed pedicle skin grafting technique at Queen's Hospital Sidcup",
+          "caption": "Sir Harold Gillies' 'Tubed Pedicle' Technique (Queen's Hospital, Sidcup): By rolling flap tissue into a sterile skin tube with its own vascular blood supply, Gillies bridged severe facial wounds caused by shell splinters, pioneering modern reconstructive plastic surgery.",
+          "isReversed": true
         }
       ],
       "sources": [

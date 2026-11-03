@@ -87,3 +87,4 @@ calibrateUnit('post_war_britain', (data) => {
     data.lessons[4].tasks[0].model_answer = "On the one hand, the 1960s was a decade of profound social and legal transformation. Harold Wilson's Labour government passed landmark liberalising legislation, including the legalisation of abortion (1967), the partial decriminalisation of male homosexuality (1967), and the abolition of capital punishment (1969). Concurrently, youth culture flourished through rock music, fashion, and greater personal freedom.<br><br>On the other hand, traditional conservatism remained deeply rooted for most ordinary citizens. Deep inequalities persisted, with women facing unequal pay until the 1970 Equal Pay Act, and racial discrimination remaining widespread despite early Race Relations Acts. Therefore, while legal reforms dismantled Victorian moral codes, genuine equality was an ongoing struggle.";
   }
 });
+

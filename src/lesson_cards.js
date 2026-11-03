@@ -1,6 +1,32 @@
 import { getAssetUrl } from './engine/assets.js'; // refreshed
 import { renderSidebarVideoBadgeHTML } from './engine/video_utils.js';
 
+export function getLessonEnquiryQuestion(lesson) {
+  if (!lesson) return '';
+  if (lesson.enquiry_question && typeof lesson.enquiry_question === 'string') {
+    return lesson.enquiry_question.trim();
+  }
+  if (lesson.enquiryQuestion && typeof lesson.enquiryQuestion === 'string') {
+    return lesson.enquiryQuestion.trim();
+  }
+  if (lesson.enquiry && typeof lesson.enquiry === 'string') {
+    const text = lesson.enquiry.trim();
+    if (text.split(/\s+/).length > 35) {
+      const qMatch = text.match(/([^.?!]+[?])/g);
+      if (qMatch && qMatch.length > 0) return qMatch[qMatch.length - 1].trim();
+    }
+    return text;
+  }
+  if (lesson.hook_text && typeof lesson.hook_text === 'string') {
+    const qMatch = lesson.hook_text.trim().match(/([^.?!]+[?])/g);
+    if (qMatch && qMatch.length > 0) return qMatch[qMatch.length - 1].trim();
+  }
+  if (lesson.subtitle && typeof lesson.subtitle === 'string') {
+    return lesson.subtitle.trim();
+  }
+  return '';
+}
+
 export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitData) {
   let lessonsHTML = `
       <style>
@@ -364,7 +390,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
 
         if (isMatch) {
           foundAny = true;
-          const cardBadge = renderSidebarVideoBadgeHTML(lesson);
+          const cardBadge = renderSidebarVideoBadgeHTML(lesson, { isCard: true });
 
           let candidateImg =
             lesson.card_image || lesson.banner || lesson.hero_image || lesson.cover_image;
@@ -413,9 +439,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
             topMediaHTML = `
               <div style="position: relative; width: 100%; height: 145px; overflow: hidden; background: #0f172a; flex-shrink: 0;">
                 <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="width: 100%; height: 100%; object-fit: cover; object-position: ${cardPos}; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);" />
-                <div style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(6px); color: #f8fafc; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; letter-spacing: 0.04em; border: 1px solid rgba(255,255,255,0.2); text-transform: uppercase; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">
-                  ${unitData.type === 'trip' ? 'Day' : 'Lesson'} ${index + 1}
-                </div>
               </div>
             `;
           } else {
@@ -438,13 +461,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
             displayTitle = ktMatch[2].trim();
           }
 
-          const displayEnquiry =
-            lesson.enquiry ||
-            lesson.enquiryQuestion ||
-            lesson.enquiry_question ||
-            lesson.subtitle ||
-            lesson.hook_text ||
-            '';
+          const displayEnquiry = getLessonEnquiryQuestion(lesson);
 
           lessonsHTML += `
             <div class="homepage-lesson-card" data-action="view-lesson-detail" data-index="${index}" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-top: 4px solid ${p.border || '#2563eb'}; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 20px -3px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05)';">
@@ -455,7 +472,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
                     <span style="font-size: 0.75rem; font-weight: 700; color: ${p.border || '#2563eb'}; text-transform: uppercase; letter-spacing: 0.05em;">
                       ${shortCode}
                     </span>
-                    ${cardBadge}
                   </div>
                   <h3 style="margin: 0 0 8px 0; color: #0f172a; font-size: 1.02rem; font-weight: 700; line-height: 1.35; font-family: 'Playfair Display', Georgia, serif;">
                     ${displayTitle}
@@ -1078,9 +1094,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           topMediaHTML = `
             <div style="position: relative; width: 100%; height: 145px; overflow: hidden; background: #0f172a; flex-shrink: 0;">
               <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="width: 100%; height: 100%; object-fit: cover; object-position: ${cardPos}; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);" />
-              <div style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(6px); color: #f8fafc; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; letter-spacing: 0.04em; border: 1px solid rgba(255,255,255,0.2); text-transform: uppercase; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">
-                ${cardBadge}
-              </div>
             </div>
           `;
         } else {
@@ -1096,12 +1109,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
         const displayTitle = (lesson.title || '')
           .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
           .trim();
-        const displayEnquiry =
-          lesson.enquiry ||
-          lesson.enquiryQuestion ||
-          lesson.enquiry_question ||
-          lesson.subtitle ||
-          '';
+        const displayEnquiry = getLessonEnquiryQuestion(lesson);
 
         lessonsHTML += `
           <div class="homepage-lesson-card" data-action="view-lesson-detail" data-index="${index}" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s; display: flex; flex-direction: column;">
