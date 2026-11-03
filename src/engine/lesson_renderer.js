@@ -14,6 +14,7 @@ import {
 } from './video_utils.js';
 import './ks2_guidance.js';
 import { renderConsolidateStationHTML, initConsolidateStation } from './lesson_consolidate_station.js';
+import { renderLessonExamPracticeHTML, initLessonExamPractice } from './lesson_exam_practice_panel.js';
 
 // Canonical Key Stage Taxonomy Constants
 export const KS2_CANONICAL_UNITS = ['ks2_ww2'];
@@ -11102,6 +11103,7 @@ export function renderLesson(lesson) {
   // --- EMBEDDED CHECK & CONSOLIDATE STATION (Quick Check 5 Qs / Deep Challenge 20 Qs / Vocab Flip Cards) ---
   if (appStore.state.activeUnitData.type !== 'trip') {
     html += renderConsolidateStationHTML(lesson);
+    html += renderLessonExamPracticeHTML(unitId, lesson);
   }
 
   // Note: Exit Ticket is now unified directly into the Consolidate Station terminal above.
@@ -11208,6 +11210,7 @@ export function renderLesson(lesson) {
 
   try {
     initConsolidateStation(lesson);
+    initLessonExamPractice(unitId, lesson);
   } catch (err) {
     console.error('Failed to initialize consolidate station:', err);
   }
