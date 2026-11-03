@@ -75,7 +75,7 @@ function buildPage(pageNumber, totalPages, contentHtml, isBlank = false) {
   const pStr = pageNumber < 10 ? '0' + pageNumber : '' + pageNumber;
   const tStr = totalPages < 10 ? '0' + totalPages : '' + totalPages;
   const barcodeRef = `P 7 5 4 8 5 A 0 ${pStr} ${tStr}`;
-  
+
   if (isBlank) {
     return `
       <div class="page" style="display: flex; flex-direction: column; justify-content: space-between;">
@@ -352,52 +352,51 @@ function parseMedicineHtml(filePath) {
   // Parse using elements
   const qBlocks = doc.querySelectorAll('.question-block');
   qBlocks.forEach(qb => {
+    const numEl = qb.querySelector('.question-num');
+    const num = numEl ? numEl.textContent.trim() : '';
     const text = qb.textContent.replace(/\s+/g, ' ').trim();
-    if (text.includes('1 (a)')) {
+
+    if (num === '1 (a)' || text.startsWith('1 (a)')) {
       const qTextEl = qb.querySelector('.question-text div:last-child');
       if (qTextEl) q1a = qTextEl.textContent.trim();
-    }
-    if (text.includes('1 (b)')) {
+    } else if (num === '1 (b)' || text.startsWith('1 (b)')) {
       const qTextEl = qb.querySelector('.question-text div:last-child');
       if (qTextEl) q1b = qTextEl.textContent.trim();
-    }
-    if (text.includes('2 (a)')) {
+    } else if (num === '2 (a)' || text.startsWith('2 (a)')) {
       const qTextEl = qb.querySelector('.question-text div:last-child');
       if (qTextEl) q2a = qTextEl.textContent.trim();
-    }
-    if (text.includes('2 (b)')) {
+    } else if (num === '2 (b)' || text.startsWith('2 (b)')) {
       const qTextEl = qb.querySelector('.question-text div:last-child') || qb.querySelector('.question-text');
       if (qTextEl) {
         q2b = qTextEl.textContent.replace(/\s+/g, ' ').trim();
         if (q2b.includes('Source A')) q2bSourceLetter = 'A';
         else q2bSourceLetter = 'B';
       }
-    }
-    if (text.includes('3') && !text.includes('1 (a)') && !text.includes('2 (a)')) {
+    } else if (num === '3') {
       const qTextEl = qb.querySelector('.question-text div:last-child');
       if (qTextEl) q3 = qTextEl.textContent.trim();
-    }
-    if (text.includes('4') && !text.includes('1 (a)') && !text.includes('2 (a)')) {
+    } else if (num === '4') {
       const qTextEl = qb.querySelector('.question-text div:last-child');
       if (qTextEl) q4 = qTextEl.textContent.trim();
       const ul = qb.querySelector('ul');
       if (ul) {
         q4Bullets = Array.from(ul.querySelectorAll('li')).map(li => li.textContent.trim());
       }
-    }
-    if (text.includes('Question 5') || text.includes('EITHER 5') || text.includes('5')) {
-      const q5TextEl = qb.querySelector('.question-text div:last-child');
-      if (q5TextEl && q5TextEl.textContent.includes('agree')) q5 = q5TextEl.textContent.trim();
-      const uls = qb.querySelectorAll('ul');
+    } else if (num === '5' || text.includes('Answer EITHER Question 5 OR Question 6')) {
+      const qTexts = Array.from(qb.querySelectorAll('.question-text'));
+      qTexts.forEach(qt => {
+        const qSubNum = qt.querySelector('.question-num')?.textContent.trim();
+        const qSubText = qt.querySelector('div:last-child')?.textContent.trim();
+        if (qSubNum === '5' && qSubText) q5 = qSubText;
+        if (qSubNum === '6' && qSubText) q6 = qSubText;
+      });
+
+      const uls = Array.from(qb.querySelectorAll('ul'));
       if (uls.length >= 1) {
         q5Bullets = Array.from(uls[0].querySelectorAll('li')).map(li => li.textContent.trim());
       }
       if (uls.length >= 2) {
         q6Bullets = Array.from(uls[1].querySelectorAll('li')).map(li => li.textContent.trim());
-      }
-      const q6Divs = Array.from(qb.querySelectorAll('.question-text div:last-child'));
-      if (q6Divs.length >= 2) {
-        q6 = q6Divs[1].textContent.trim();
       }
     }
   });

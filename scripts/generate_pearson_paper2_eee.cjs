@@ -9,7 +9,9 @@ const fs = require('fs');
 const path = require('path');
 const puppeteer = require('C:/Projects/the-history-revision-hub/node_modules/puppeteer');
 const pdf = require('pdf-parse');
+const { JSDOM } = require('jsdom');
 
+const EEE_RAW_DIR = path.join(__dirname, '..', 'data', 'raw_mocks', 'eee');
 const EEE_HTML_DIR = path.join(__dirname, '..', 'public', 'units', 'eee');
 const OUT_DIR = path.join(__dirname, '..', 'public', 'pdfs', 'mocks', 'eee');
 
@@ -252,51 +254,82 @@ function buildCoverPage(titleText, paperRef = '1HI0/B4') {
   `;
 }
 
+function cleanText(t) {
+  return t ? t.replace(/\s+/g, ' ').replace(/\(\d+\)\s*⏱.*$/i, '').trim() : '';
+}
+
+function cleanStatement(t) {
+  let s = cleanText(t);
+  s = s.replace(/^[0-9]+\s*/, '');
+  s = s.replace(/How far do you agree\?.*$/i, '').trim();
+  s = s.replace(/^[\s"'“”‘’]+|[\s"'“”‘’]+$/g, '').trim();
+  return s;
+}
+
 function parseEeeMockHtml(htmlContent) {
-  // Extract questions
-  const q1aMatch = htmlContent.match(/\(a\)\s*Describe[^<]+/i);
-  const q1bMatch = htmlContent.match(/\(b\)\s*Describe[^<]+/i);
-  const q2Match = htmlContent.match(/Explain why[^<]+/i);
-  
-  // Extract Q2 bullets
-  const q2Bullets = [];
-  const q2BulletsBlock = htmlContent.match(/<ul>([\s\S]*?)<\/ul>/i);
-  if (q2BulletsBlock) {
-    const bMatches = q2BulletsBlock[1].match(/<li>([^<]+)<\/li>/gi) || [];
-    bMatches.forEach(b => q2Bullets.push(b.replace(/<\/?li>/gi, '').trim()));
+  const dom = new JSDOM(htmlContent);
+  const doc = dom.window.document;
+  const qBlocks = doc.querySelectorAll('.question-block');
+
+  let q1aText = '(a) Describe one characteristic of poverty in early Elizabethan England.';
+  let q1bText = '(b) Describe one characteristic of the English attempts to colonise Virginia.';
+  let q2Text = "Explain why the Northern Earls' Rebellion (1569-70) posed a significant danger to Elizabeth I.";
+  let q2Bullets = ['Mary, Queen of Scots', 'Anglo-Spanish relations'];
+  let q3Statement = 'Economic difficulties were the most significant challenge Elizabeth faced upon her accession in 1558.';
+  let q3Bullets = ['The royal debt', "Elizabeth's claim to the throne"];
+  let q4Statement = "Spanish strategic errors were the primary cause of England's triumph over the Armada.";
+  let q4Bullets = ['The command of the Duke of Medina Sidonia', 'The deployment of fireships'];
+
+  if (qBlocks.length >= 1) {
+    const raw = cleanText(qBlocks[0].querySelector('.question-text')?.textContent);
+    const cleaned = raw.replace(/^1\s*/, '').trim();
+    if (cleaned) q1aText = cleaned;
   }
 
-  // Extract Q3 & Q4
-  const q3Match = htmlContent.match(/"([^"]+)"[\s\S]*?How far do you agree\?/i);
-  const allAgreementMatches = [];
-  const regex = /"([^"]+)"[\s\S]*?How far do you agree\? Explain your answer\./gi;
-  let m;
-  while ((m = regex.exec(htmlContent)) !== null) {
-    allAgreementMatches.push(m[1]);
+  if (qBlocks.length >= 2) {
+    const raw = cleanText(qBlocks[1].querySelector('.question-text')?.textContent);
+    const cleaned = raw.replace(/^1\s*/, '').trim();
+    if (cleaned) q1bText = cleaned;
   }
 
-  // Extract bullets for Q3 and Q4
-  const allUlMatches = htmlContent.match(/<ul>([\s\S]*?)<\/ul>/gi) || [];
-  const q3Bullets = [];
-  const q4Bullets = [];
-  if (allUlMatches.length >= 2) {
-    const b3 = allUlMatches[1].match(/<li>([^<]+)<\/li>/gi) || [];
-    b3.forEach(b => q3Bullets.push(b.replace(/<\/?li>/gi, '').trim()));
+  if (qBlocks.length >= 3) {
+    const raw = cleanText(qBlocks[2].querySelector('.question-text')?.textContent);
+    const cleaned = raw.replace(/^2\s*/, '').trim();
+    if (cleaned) q2Text = cleaned;
+    const lis = Array.from(qBlocks[2].querySelectorAll('li')).map(li => li.textContent.trim());
+    if (lis.length >= 2) q2Bullets = lis;
   }
-  if (allUlMatches.length >= 3) {
-    const b4 = allUlMatches[2].match(/<li>([^<]+)<\/li>/gi) || [];
-    b4.forEach(b => q4Bullets.push(b.replace(/<\/?li>/gi, '').trim()));
+
+  if (qBlocks.length >= 4) {
+    const raw = qBlocks[3].querySelector('.question-text')?.textContent;
+    if (raw) q3Statement = cleanStatement(raw);
+    const lis = Array.from(qBlocks[3].querySelectorAll('li')).map(li => li.textContent.trim());
+    if (lis.length >= 2) q3Bullets = lis;
+  }
+
+  if (qBlocks.length >= 5) {
+    const raw = qBlocks[4].querySelector('.question-text')?.textContent;
+    if (raw) q4Statement = cleanStatement(raw);
+    const lis = Array.from(qBlocks[4].querySelectorAll('li')).map(li => li.textContent.trim());
+    if (lis.length >= 2) q4Bullets = lis;
+  }
+
+  if (!q1aText.startsWith('(a)')) {
+    q1aText = '(a) ' + q1aText.replace(/^\(a\)\s*/i, '');
+  }
+  if (!q1bText.startsWith('(b)')) {
+    q1bText = '(b) ' + q1bText.replace(/^\(b\)\s*/i, '');
   }
 
   return {
-    q1aText: q1aMatch ? q1aMatch[0].trim() : '(a) Describe one characteristic of poverty in early Elizabethan England.',
-    q1bText: q1bMatch ? q1bMatch[0].trim() : '(b) Describe one characteristic of English attempts to colonise Virginia.',
-    q2Text: q2Match ? q2Match[0].trim() : "Explain why the Northern Earls' Rebellion (1569-70) posed a significant danger to Elizabeth I.",
-    q2Bullets: q2Bullets.length >= 2 ? q2Bullets : ['Mary, Queen of Scots', 'Anglo-Spanish relations'],
-    q3Statement: allAgreementMatches[0] || 'Economic difficulties were the most significant challenge Elizabeth faced upon her accession in 1558.',
-    q3Bullets: q3Bullets.length >= 2 ? q3Bullets : ['The royal debt', "Elizabeth's claim to the throne"],
-    q4Statement: allAgreementMatches[1] || "Spanish strategic errors were the primary cause of England's triumph over the Armada.",
-    q4Bullets: q4Bullets.length >= 2 ? q4Bullets : ['The command of the Duke of Medina Sidonia', 'The deployment of fireships']
+    q1aText,
+    q1bText,
+    q2Text,
+    q2Bullets,
+    q3Statement,
+    q3Bullets,
+    q4Statement,
+    q4Bullets
   };
 }
 
@@ -673,10 +706,14 @@ async function compileAllEeeMocks() {
 
   for (const mock of eeeMocks) {
     const htmlFile = `${mock.id}.html`;
+    const rawPath = path.join(EEE_RAW_DIR, htmlFile);
     const htmlPath = path.join(EEE_HTML_DIR, htmlFile);
-    if (!fs.existsSync(htmlPath)) continue;
+    if (!fs.existsSync(rawPath)) {
+      console.warn(`⚠️ Warning: raw mock not found: ${rawPath}`);
+      continue;
+    }
 
-    const rawHtml = fs.readFileSync(htmlPath, 'utf8');
+    const rawHtml = fs.readFileSync(rawPath, 'utf8');
     const parsedData = parseEeeMockHtml(rawHtml);
     const newHtml = compileEeeMockToHtml(parsedData, mock.title);
     fs.writeFileSync(htmlPath, newHtml, 'utf8');
