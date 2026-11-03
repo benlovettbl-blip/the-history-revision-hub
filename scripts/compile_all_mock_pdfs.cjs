@@ -56,8 +56,9 @@ async function compileAll() {
       const qpPdfPath = path.join(unitOutDir, qpPdfName);
 
       // 1. Compile Question Paper
+      const forceQp = process.argv.indexOf('--force') !== -1;
       if (fs.existsSync(qpLocalPath)) {
-        if (fs.existsSync(qpPdfPath) && process.argv.indexOf('--force') === -1) {
+        if (fs.existsSync(qpPdfPath) && !forceQp) {
           totalSkipped++;
         } else {
           try {
@@ -87,9 +88,10 @@ async function compileAll() {
       const msLocalPath = path.join(__dirname, '..', 'public', 'units', unitId, msFileName);
       const msPdfName = `${mock.id}_mark_scheme.pdf`;
       const msPdfPath = path.join(unitOutDir, msPdfName);
+      const forceMs = process.argv.indexOf('--force') !== -1 || process.argv.indexOf('--force-ms') !== -1;
 
       if (fs.existsSync(msLocalPath)) {
-        if (fs.existsSync(msPdfPath) && process.argv.indexOf('--force') === -1) {
+        if (fs.existsSync(msPdfPath) && !forceMs) {
           totalSkipped++;
         } else {
           try {
