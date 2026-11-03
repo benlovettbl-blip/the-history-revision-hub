@@ -14,6 +14,7 @@ const { JSDOM } = require('jsdom');
 
 const OUT_DIR = path.join(__dirname, '..', 'public', 'pdfs', 'mocks', 'edexcel_medicine');
 const HTML_DIR = path.join(__dirname, '..', 'public', 'units', 'edexcel_medicine');
+const RAW_DIR = path.join(__dirname, '..', 'data', 'raw_mocks', 'edexcel_medicine');
 
 if (!fs.existsSync(OUT_DIR)) {
   fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -994,13 +995,13 @@ async function main() {
   await page.setViewport({ width: 1200, height: 1600, deviceScaleFactor: 2 });
 
   for (const filename of mocksToProcess) {
-    const filePath = path.join(HTML_DIR, filename);
-    if (!fs.existsSync(filePath)) {
+    const rawFilePath = path.join(RAW_DIR, filename);
+    if (!fs.existsSync(rawFilePath)) {
       console.log(`⚠️ Skipping missing file: ${filename}`);
       continue;
     }
 
-    const mock = parseMedicineHtml(filePath);
+    const mock = parseMedicineHtml(rawFilePath);
     console.log(`\n📌 Processing [${mock.id}] "${mock.title}"...`);
 
     // 1. Generate 16-page Question Booklet HTML & PDF
@@ -1049,8 +1050,9 @@ async function main() {
 
     // 3. Generate 20-page Collated Complete Mock Pack HTML & PDF
     const packHtml = compileMedicineCompletePackHtml(mock);
-    // Overwrite the primary mock HTML file so it serves the complete 20p authentic mock
-    fs.writeFileSync(filePath, packHtml, 'utf8');
+    // Write the primary mock HTML file so it serves the complete 20p authentic mock
+    const packHtmlPath = path.join(HTML_DIR, filename);
+    fs.writeFileSync(packHtmlPath, packHtml, 'utf8');
 
     const packPdfPath = path.join(OUT_DIR, `${mock.id}.pdf`);
     await page.setContent(packHtml, { waitUntil: 'load', timeout: 30000 });

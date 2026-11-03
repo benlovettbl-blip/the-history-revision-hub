@@ -16,6 +16,8 @@ const pdfParse = require('pdf-parse');
 const BASE_URL = 'http://localhost:3003';
 const WEIMAR_DIR = path.join(__dirname, '..', 'public', 'units', 'weimar_nazi_germany');
 const USA_DIR = path.join(__dirname, '..', 'public', 'units', 'usa');
+const RAW_WEIMAR_DIR = path.join(__dirname, '..', 'data', 'raw_mocks', 'weimar_nazi_germany');
+const RAW_USA_DIR = path.join(__dirname, '..', 'data', 'raw_mocks', 'usa');
 const OUT_BASE = path.join(__dirname, '..', 'public', 'pdfs', 'mocks');
 
 function extractBoxes(htmlStr, className) {
@@ -65,16 +67,23 @@ function parsePaper3Html(filePath, unitId) {
   const q1Topic = q1Match ? q1Match[1].trim() : (unitId === 'usa' ? 'Civil rights' : 'the Weimar Republic');
 
   // Extract Question 2 Prompt & Bullets
-  const p3 = pages[3] || '';
-  const q2Match = p3.match(/Explain why (.*?)\.\s*(?:\(12|<span|\n|<)/i) ||
-                  html.match(/Explain why (.*?)\.\s*(?:\(12|<span|\n|<)/i);
+  const q2Match = html.match(/Explain why (.*?)\.\s*(?:\(12|<span|\n|<)/i);
   const q2Prompt = q2Match ? `Explain why ${q2Match[1].trim().replace(/\.$/, '')}.` : 'Explain why the situation was unstable.';
 
-  const bulletsMatch = p3.match(/<ul>([\s\S]*?)<\/ul>/i) || html.match(/<ul>([\s\S]*?)<\/ul>/i);
   const bullets = [];
-  if (bulletsMatch) {
-    const bItems = bulletsMatch[1].match(/<li>(.*?)<\/li>/gi) || [];
-    bItems.forEach(b => bullets.push(b.replace(/<[^>]+>/g, '').trim()));
+  if (unitId === 'usa') {
+    const bulletsMatch = html.match(/<ul>([\s\S]*?)<\/ul>/i);
+    if (bulletsMatch) {
+      const bItems = bulletsMatch[1].match(/<li>(.*?)<\/li>/gi) || [];
+      bItems.forEach(b => bullets.push(b.replace(/<[^>]+>/g, '').trim()));
+    }
+  } else {
+    // Weimar: extract from .bullet-point-box
+    const boxMatch = html.match(/<div class="bullet-point-box">([\s\S]*?)<\/div>/i);
+    if (boxMatch) {
+      const bItems = boxMatch[1].match(/<li>(.*?)<\/li>/gi) || [];
+      bItems.forEach(b => bullets.push(b.replace(/<[^>]+>/g, '').trim()));
+    }
   }
   if (bullets.length === 0) {
     if (unitId === 'usa') {
@@ -92,8 +101,9 @@ function parsePaper3Html(filePath, unitId) {
   let int1 = '';
   let int2 = '';
 
+  const sourceBoxes = extractBoxes(html, 'source-box');
+
   if (unitId === 'usa') {
-    const sourceBoxes = extractBoxes(html, 'source-box');
     srcARaw = sourceBoxes[0] || '';
     srcB = sourceBoxes[1] || '';
     srcC = sourceBoxes[2] || '';
@@ -105,24 +115,23 @@ function parsePaper3Html(filePath, unitId) {
     if (enqMatch) enquiryTopic = enqMatch[1].trim();
   } else {
     // Weimar Mock
-    const sourceBoxes = extractBoxes(html, 'source-box');
     srcARaw = sourceBoxes[0] || '';
 
-    const p9 = pages[9] || '';
-    const enqMatch = html.match(/enquiry into:\s*(.*?)(?:<|\n)/i) ||
-                     html.match(/Enquiry:\s*(.*?)(?:<|\n)/i) ||
-                     html.match(/How useful are Sources B and C for an enquiry into (.*?)\?/i);
-    if (enqMatch) enquiryTopic = enqMatch[1].trim();
-
-    const srcBMatch = p9.match(/Source B:([\s\S]*?)(?=Source C:|$)/i);
-    const srcCMatch = p9.match(/Source C:([\s\S]*?)(?=Interpretation 1:|$)/i);
-    const int1Match = p9.match(/Interpretation 1:([\s\S]*?)(?=Interpretation 2:|$)/i);
-    const int2Match = p9.match(/Interpretation 2:([\s\S]*?)(?=<div class="footer"|$)/i);
+    const bText = sourceBoxes[1] || '';
+    const srcBMatch = bText.match(/Source B:([\s\S]*?)(?=Source C:|$)/i);
+    const srcCMatch = bText.match(/Source C:([\s\S]*?)(?=Interpretation 1:|$)/i);
+    const int1Match = bText.match(/Interpretation 1:([\s\S]*?)(?=Interpretation 2:|$)/i);
+    const int2Match = bText.match(/Interpretation 2:([\s\S]*?)$/i);
 
     if (srcBMatch) srcB = srcBMatch[1].trim();
     if (srcCMatch) srcC = srcCMatch[1].trim();
     if (int1Match) int1 = int1Match[1].trim();
     if (int2Match) int2 = int2Match[1].trim();
+
+    const enqMatch = html.match(/enquiry into:\s*(.*?)(?:<|\n)/i) ||
+                     html.match(/Enquiry:\s*(.*?)(?:<|\n)/i) ||
+                     html.match(/How useful are Sources B and C for an enquiry into (.*?)\?/i);
+    if (enqMatch) enquiryTopic = enqMatch[1].trim();
   }
 
   // Clean relative images to absolute BASE_URL
@@ -472,49 +481,59 @@ function generateQuestionBookletPages(d) {
   // Page 1: Cover
   pagesHtml += buildCoverPage(d);
 
-  // Page 2: Section A header, Source A, Question 1
+  // Page 2: Section A header, Source A
   const p2Content = `
-    <div style="text-align: center; margin-bottom: 10px;">
-      <div style="font-size: 11.5pt; font-weight: 800; letter-spacing: 0.5px; margin-bottom: 2px;">SECTION A</div>
-      <div style="font-size: 9pt; font-weight: 700; color: #27272a;">Answer Question 1 and Question 2.</div>
+    <div style="text-align: center; margin-bottom: 14px;">
+      <div style="font-size: 13pt; font-weight: 800; letter-spacing: 0.5px; margin-bottom: 4px;">SECTION A</div>
+      <div style="font-size: 9.5pt; font-weight: 700; color: #27272a;">Answer both questions.</div>
+      <div style="font-size: 9.5pt; font-weight: 700; color: #27272a; margin-top: 4px;">Study Source A below and then answer Question 1.</div>
     </div>
 
     <!-- Source A Container -->
-    <div style="border: 1.5px solid #000; border-radius: 4px; padding: 8px 12px; margin-bottom: 10px; background: #fafafa; font-size: 8.5pt; line-height: 1.45;">
-      <div style="font-weight: 900; margin-bottom: 4px; font-size: 9.5pt;">Source A</div>
-      ${d.srcARaw || 'Historical extract / visual source for enquiry.'}
-    </div>
-
-    <div>
-      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 9.5pt; margin-bottom: 8px;">
-        <div><span style="font-weight: 900; margin-right: 6px;">1</span> Give two things you can infer from Source A about ${d.q1Topic}.</div>
-        <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
-      </div>
-
-      <div style="margin-bottom: 8px;">
-        <div style="font-size: 8.5pt; font-weight: 800; margin-bottom: 2px;">(i) What I can infer:</div>
-        ${renderRuledLines(2)}
-        <div style="font-size: 8.5pt; font-weight: 800; margin-top: 4px; margin-bottom: 2px;">Details in the source that tell me this:</div>
-        ${renderRuledLines(2)}
-      </div>
-
-      <div>
-        <div style="font-size: 8.5pt; font-weight: 800; margin-bottom: 2px;">(ii) What I can infer:</div>
-        ${renderRuledLines(2)}
-        <div style="font-size: 8.5pt; font-weight: 800; margin-top: 4px; margin-bottom: 2px;">Details in the source that tell me this:</div>
-        ${renderRuledLines(2)}
-      </div>
-
-      <div style="text-align: right; font-weight: 700; font-size: 8.5pt; margin-top: 4px; color: #3f3f46;">
-        (Total for Question 1 = 4 marks)
+    <div style="border: 1.5px solid #000; border-radius: 4px; padding: 14px 18px; margin-top: 10px; background: #fafafa; font-size: 9pt; line-height: 1.55;">
+      <div style="font-weight: 900; margin-bottom: 8px; font-size: 10.5pt;">Source A</div>
+      <div class="source-content" style="font-size: 9pt; line-height: 1.55; color: #18181b;">
+        ${d.srcARaw}
       </div>
     </div>
   `;
   pagesHtml += buildPage(2, totalPages, p2Content, false, barcodeBase);
 
-  // Page 3: Question 2 (Causation)
-  const bulletsHtml = (d.bullets || ['Key factor 1', 'Key factor 2']).map(b => `<li style="margin-bottom: 3px;">${b}</li>`).join('');
+  // Page 3: Question 1
   const p3Content = `
+    <div>
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 10px;">
+        <div><span style="font-weight: 900; margin-right: 8px;">1</span> Give two things you can infer from Source A about ${d.q1Topic}.</div>
+        <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
+      </div>
+      <div style="font-size: 8.5pt; font-style: italic; color: #3f3f46; margin-bottom: 12px;">
+        Complete the table below to explain your answer.
+      </div>
+
+      <div style="margin-bottom: 14px;">
+        <div style="font-size: 9pt; font-weight: 800; margin-bottom: 4px;">(i) What I can infer:</div>
+        ${renderRuledLines(3)}
+        <div style="font-size: 9pt; font-weight: 800; margin-top: 8px; margin-bottom: 4px;">Details in the source that tell me this:</div>
+        ${renderRuledLines(3)}
+      </div>
+
+      <div style="margin-bottom: 14px;">
+        <div style="font-size: 9pt; font-weight: 800; margin-bottom: 4px;">(ii) What I can infer:</div>
+        ${renderRuledLines(3)}
+        <div style="font-size: 9pt; font-weight: 800; margin-top: 8px; margin-bottom: 4px;">Details in the source that tell me this:</div>
+        ${renderRuledLines(3)}
+      </div>
+
+      <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 10px; color: #3f3f46;">
+        (Total for Question 1 = 4 marks)
+      </div>
+    </div>
+  `;
+  pagesHtml += buildPage(3, totalPages, p3Content, false, barcodeBase);
+
+  // Page 4: Question 2 (Causation)
+  const bulletsHtml = (d.bullets || ['Key factor 1', 'Key factor 2']).map(b => `<li style="margin-bottom: 3px;">${b}</li>`).join('');
+  const p4Content = `
     <div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 8px;">
         <div><span style="font-weight: 900; margin-right: 8px;">2</span> ${d.q2Prompt}</div>
@@ -529,26 +548,26 @@ function generateQuestionBookletPages(d) {
         <div>You <strong>must</strong> also use information of your own.</div>
       </div>
 
-      ${renderRuledLines(22)}
+      ${renderRuledLines(16)}
     </div>
-  `;
-  pagesHtml += buildPage(3, totalPages, p3Content, false, barcodeBase);
-
-  // Page 4: Question 2 continued
-  const p4Content = `
-    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
-      (Question 2 continued)
-    </div>
-    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(4, totalPages, p4Content, false, barcodeBase);
 
-  // Page 5: Question 2 continued & Section A totals
+  // Page 5: Question 2 continued
   const p5Content = `
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 2 continued)
     </div>
-    ${renderRuledLines(25)}
+    ${renderRuledLines(26)}
+  `;
+  pagesHtml += buildPage(5, totalPages, p5Content, false, barcodeBase);
+
+  // Page 6: Question 2 continued & Section A totals
+  const p6Content = `
+    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
+      (Question 2 continued)
+    </div>
+    ${renderRuledLines(20)}
     
     <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 6px; color: #3f3f46;">
       (Total for Question 2 = 12 marks)
@@ -557,10 +576,10 @@ function generateQuestionBookletPages(d) {
       TOTAL FOR SECTION A = 16 MARKS
     </div>
   `;
-  pagesHtml += buildPage(5, totalPages, p5Content, false, barcodeBase);
+  pagesHtml += buildPage(6, totalPages, p6Content, false, barcodeBase);
 
-  // Page 6: Section B header & Question 3(a) Utility
-  const p6Content = `
+  // Page 7: Section B header & Question 3(a) Utility
+  const p7Content = `
     <div style="text-align: center; margin-bottom: 12px;">
       <div style="font-size: 11.5pt; font-weight: 800; letter-spacing: 0.5px; margin-bottom: 2px;">SECTION B</div>
       <div style="font-size: 9pt; font-weight: 700; color: #27272a;">For Question 3, refer to the Sources/Interpretations Booklet.</div>
@@ -577,25 +596,25 @@ function generateQuestionBookletPages(d) {
         </div>
         <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(8)</div>
       </div>
-      ${renderRuledLines(22)}
-    </div>
-  `;
-  pagesHtml += buildPage(6, totalPages, p6Content, false, barcodeBase);
-
-  // Page 7: Question 3(a) continued
-  const p7Content = `
-    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
-      (Question 3(a) continued)
-    </div>
-    ${renderRuledLines(28)}
-    <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 6px; color: #3f3f46;">
-      (Total for Question 3(a) = 8 marks)
+      ${renderRuledLines(16)}
     </div>
   `;
   pagesHtml += buildPage(7, totalPages, p7Content, false, barcodeBase);
 
-  // Page 8: Question 3(b) Interpretations Difference
+  // Page 8: Question 3(a) continued
   const p8Content = `
+    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
+      (Question 3(a) continued)
+    </div>
+    ${renderRuledLines(24)}
+    <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 6px; color: #3f3f46;">
+      (Total for Question 3(a) = 8 marks)
+    </div>
+  `;
+  pagesHtml += buildPage(8, totalPages, p8Content, false, barcodeBase);
+
+  // Page 9: Question 3(b) Interpretations Difference
+  const p9Content = `
     <div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 10px;">
         <div>
@@ -608,16 +627,17 @@ function generateQuestionBookletPages(d) {
         </div>
         <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
       </div>
-      ${renderRuledLines(22)}
+      ${renderRuledLines(20)}
       <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 8px; color: #3f3f46;">
         (Total for Question 3(b) = 4 marks)
       </div>
     </div>
   `;
-  pagesHtml += buildPage(8, totalPages, p8Content, false, barcodeBase);
+  pagesHtml += buildPage(9, totalPages, p9Content, false, barcodeBase);
 
-  // Page 9: Question 3(c) Reason for Difference
-  const p9Content = `
+  // Page 10: Question 3(c) Reason for Difference
+  const p9Content_unused = '';
+  const p10Content = `
     <div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 10px;">
         <div>
@@ -628,16 +648,16 @@ function generateQuestionBookletPages(d) {
         </div>
         <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
       </div>
-      ${renderRuledLines(22)}
+      ${renderRuledLines(20)}
       <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 8px; color: #3f3f46;">
         (Total for Question 3(c) = 4 marks)
       </div>
     </div>
   `;
-  pagesHtml += buildPage(9, totalPages, p9Content, false, barcodeBase);
+  pagesHtml += buildPage(10, totalPages, p10Content, false, barcodeBase);
 
-  // Page 10: Question 3(d) Extended Evaluation Prompt
-  const p10Content = `
+  // Page 11: Question 3(d) Extended Evaluation Prompt
+  const p11Content = `
     <div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 8px;">
         <div>
@@ -653,17 +673,8 @@ function generateQuestionBookletPages(d) {
         Spelling, punctuation, grammar and use of specialist terminology will be assessed in this question.
       </div>
 
-      ${renderRuledLines(22)}
+      ${renderRuledLines(16)}
     </div>
-  `;
-  pagesHtml += buildPage(10, totalPages, p10Content, false, barcodeBase);
-
-  // Page 11: Question 3(d) continued
-  const p11Content = `
-    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
-      (Question 3(d) continued)
-    </div>
-    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(11, totalPages, p11Content, false, barcodeBase);
 
@@ -672,7 +683,7 @@ function generateQuestionBookletPages(d) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3(d) continued)
     </div>
-    ${renderRuledLines(28)}
+    ${renderRuledLines(26)}
   `;
   pagesHtml += buildPage(12, totalPages, p12Content, false, barcodeBase);
 
@@ -681,25 +692,16 @@ function generateQuestionBookletPages(d) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3(d) continued)
     </div>
-    ${renderRuledLines(28)}
+    ${renderRuledLines(26)}
   `;
   pagesHtml += buildPage(13, totalPages, p13Content, false, barcodeBase);
 
-  // Page 14: Question 3(d) continued
+  // Page 14: Question 3(d) continued & Paper Totals
   const p14Content = `
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3(d) continued)
     </div>
-    ${renderRuledLines(28)}
-  `;
-  pagesHtml += buildPage(14, totalPages, p14Content, false, barcodeBase);
-
-  // Page 15: Question 3(d) continued & Paper Totals
-  const p15Content = `
-    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
-      (Question 3(d) continued)
-    </div>
-    ${renderRuledLines(20)}
+    ${renderRuledLines(18)}
 
     <div style="text-align: right; font-size: 8pt; font-weight: 700; color: #52525b; margin-top: 4px;">
       (Total for spelling, punctuation, grammar and use of specialist terminology = 4 marks)<br>
@@ -711,7 +713,10 @@ function generateQuestionBookletPages(d) {
       <div>TOTAL FOR PAPER = 52 MARKS (+4 marks for SPaG)</div>
     </div>
   `;
-  pagesHtml += buildPage(15, totalPages, p15Content, false, barcodeBase);
+  pagesHtml += buildPage(14, totalPages, p14Content, false, barcodeBase);
+
+  // Page 15: Blank Page
+  pagesHtml += buildPage(15, totalPages, '', true, barcodeBase);
 
   // Page 16: Blank Page
   pagesHtml += buildPage(16, totalPages, '', true, barcodeBase);
@@ -1064,9 +1069,9 @@ async function run() {
   if (!fs.existsSync(weimarOutDir)) fs.mkdirSync(weimarOutDir, { recursive: true });
 
   for (const f of weimarFiles) {
-    const filePath = path.join(WEIMAR_DIR, f);
-    if (!fs.existsSync(filePath)) continue;
-    const mockData = parsePaper3Html(filePath, 'weimar_nazi_germany');
+    const rawFilePath = path.join(RAW_WEIMAR_DIR, f);
+    if (!fs.existsSync(rawFilePath)) continue;
+    const mockData = parsePaper3Html(rawFilePath, 'weimar_nazi_germany');
     await compileMockSuite(mockData, page, weimarOutDir);
   }
 
@@ -1079,9 +1084,9 @@ async function run() {
   if (!fs.existsSync(usaOutDir)) fs.mkdirSync(usaOutDir, { recursive: true });
 
   for (const f of usaFiles) {
-    const filePath = path.join(USA_DIR, f);
-    if (!fs.existsSync(filePath)) continue;
-    const mockData = parsePaper3Html(filePath, 'usa');
+    const rawFilePath = path.join(RAW_USA_DIR, f);
+    if (!fs.existsSync(rawFilePath)) continue;
+    const mockData = parsePaper3Html(rawFilePath, 'usa');
     await compileMockSuite(mockData, page, usaOutDir);
   }
 
