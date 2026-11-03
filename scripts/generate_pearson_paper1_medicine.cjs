@@ -475,7 +475,7 @@ function compileMedicineQpHtml(mock) {
         </div>
         <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(8)</div>
       </div>
-      ${renderRuledLines(18)}
+      ${renderRuledLines(22)}
     </div>
   `;
   pagesHtml += buildPage(3, totalPages, p3Content);
@@ -485,7 +485,7 @@ function compileMedicineQpHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 2(a) continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
     <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 6px; color: #3f3f46;">
       (Total for Question 2(a) = 8 marks)
     </div>
@@ -549,7 +549,7 @@ function compileMedicineQpHtml(mock) {
         <div><span style="font-weight: 900; margin-right: 8px;">3</span> ${mock.q3}</div>
         <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
       </div>
-      ${renderRuledLines(18)}
+      ${renderRuledLines(22)}
       <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 8px; color: #3f3f46;">
         (Total for Question 3 = 4 marks)
       </div>
@@ -574,7 +574,7 @@ function compileMedicineQpHtml(mock) {
         <div>You <strong>must</strong> also use information of your own.</div>
       </div>
 
-      ${renderRuledLines(14)}
+      ${renderRuledLines(22)}
     </div>
   `;
   pagesHtml += buildPage(7, totalPages, p7Content);
@@ -584,7 +584,7 @@ function compileMedicineQpHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 4 continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(8, totalPages, p8Content);
 
@@ -593,7 +593,7 @@ function compileMedicineQpHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 4 continued)
     </div>
-    ${renderRuledLines(24)}
+    ${renderRuledLines(26)}
     <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 6px; color: #3f3f46;">
       (Total for Question 4 = 12 marks)
     </div>
@@ -678,7 +678,7 @@ function compileMedicineQpHtml(mock) {
         </div>
       </div>
 
-      ${renderRuledLines(18)}
+      ${renderRuledLines(22)}
     </div>
   `;
   pagesHtml += buildPage(11, totalPages, p11Content);
@@ -688,7 +688,7 @@ function compileMedicineQpHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 5/6 continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(12, totalPages, p12Content);
 
@@ -697,7 +697,7 @@ function compileMedicineQpHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 5/6 continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(13, totalPages, p13Content);
 
@@ -706,7 +706,7 @@ function compileMedicineQpHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 5/6 continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(14, totalPages, p14Content);
 
@@ -715,7 +715,7 @@ function compileMedicineQpHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 5/6 continued)
     </div>
-    ${renderRuledLines(18)}
+    ${renderRuledLines(22)}
     
     <div style="border-top: 2px solid #000; padding-top: 10px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center; font-weight: 900; font-size: 10pt;">
       <div>TOTAL FOR SECTION B = 36 MARKS</div>
@@ -1078,3 +1078,4 @@ main().catch(err => {
   console.error('Fatal error generating medicine mocks:', err);
   process.exit(1);
 });
+

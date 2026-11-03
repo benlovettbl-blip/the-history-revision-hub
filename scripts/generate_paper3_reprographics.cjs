@@ -529,7 +529,7 @@ function generateQuestionBookletPages(d) {
         <div>You <strong>must</strong> also use information of your own.</div>
       </div>
 
-      ${renderRuledLines(14)}
+      ${renderRuledLines(22)}
     </div>
   `;
   pagesHtml += buildPage(3, totalPages, p3Content, false, barcodeBase);
@@ -539,7 +539,7 @@ function generateQuestionBookletPages(d) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 2 continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(4, totalPages, p4Content, false, barcodeBase);
 
@@ -548,7 +548,7 @@ function generateQuestionBookletPages(d) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 2 continued)
     </div>
-    ${renderRuledLines(22)}
+    ${renderRuledLines(25)}
     
     <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 6px; color: #3f3f46;">
       (Total for Question 2 = 12 marks)
@@ -577,7 +577,7 @@ function generateQuestionBookletPages(d) {
         </div>
         <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(8)</div>
       </div>
-      ${renderRuledLines(18)}
+      ${renderRuledLines(22)}
     </div>
   `;
   pagesHtml += buildPage(6, totalPages, p6Content, false, barcodeBase);
@@ -587,7 +587,7 @@ function generateQuestionBookletPages(d) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3(a) continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
     <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 6px; color: #3f3f46;">
       (Total for Question 3(a) = 8 marks)
     </div>
@@ -608,7 +608,7 @@ function generateQuestionBookletPages(d) {
         </div>
         <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
       </div>
-      ${renderRuledLines(18)}
+      ${renderRuledLines(22)}
       <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 8px; color: #3f3f46;">
         (Total for Question 3(b) = 4 marks)
       </div>
@@ -628,7 +628,7 @@ function generateQuestionBookletPages(d) {
         </div>
         <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
       </div>
-      ${renderRuledLines(18)}
+      ${renderRuledLines(22)}
       <div style="text-align: right; font-weight: 700; font-size: 9pt; margin-top: 8px; color: #3f3f46;">
         (Total for Question 3(c) = 4 marks)
       </div>
@@ -653,7 +653,7 @@ function generateQuestionBookletPages(d) {
         Spelling, punctuation, grammar and use of specialist terminology will be assessed in this question.
       </div>
 
-      ${renderRuledLines(14)}
+      ${renderRuledLines(22)}
     </div>
   `;
   pagesHtml += buildPage(10, totalPages, p10Content, false, barcodeBase);
@@ -663,7 +663,7 @@ function generateQuestionBookletPages(d) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3(d) continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(11, totalPages, p11Content, false, barcodeBase);
 
@@ -672,7 +672,7 @@ function generateQuestionBookletPages(d) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3(d) continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(12, totalPages, p12Content, false, barcodeBase);
 
@@ -681,7 +681,7 @@ function generateQuestionBookletPages(d) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3(d) continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(13, totalPages, p13Content, false, barcodeBase);
 
@@ -690,7 +690,7 @@ function generateQuestionBookletPages(d) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3(d) continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(14, totalPages, p14Content, false, barcodeBase);
 
@@ -699,7 +699,7 @@ function generateQuestionBookletPages(d) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3(d) continued)
     </div>
-    ${renderRuledLines(16)}
+    ${renderRuledLines(20)}
 
     <div style="text-align: right; font-size: 8pt; font-weight: 700; color: #52525b; margin-top: 4px;">
       (Total for spelling, punctuation, grammar and use of specialist terminology = 4 marks)<br>

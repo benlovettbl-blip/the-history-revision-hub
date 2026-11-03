@@ -352,7 +352,7 @@ function compileEeeMockToHtml(mockData, title) {
         <div style="font-style: italic; margin-top: 4px;">You <strong>must</strong> also use information of your own.</div>
       </div>
 
-      ${renderRuledLines(14)}
+      ${renderRuledLines(22)}
     </div>
   `;
   pagesHtml += buildPage(3, totalPages, p3Content);
@@ -362,7 +362,7 @@ function compileEeeMockToHtml(mockData, title) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 2 continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(4, totalPages, p4Content);
 
@@ -371,7 +371,7 @@ function compileEeeMockToHtml(mockData, title) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 2 continued)
     </div>
-    ${renderRuledLines(22)}
+    ${renderRuledLines(26)}
     <div style="text-align: right; font-weight: 700; font-size: 9.5pt; margin-top: 8px; border-top: 1px solid #a1a1aa; padding-top: 6px;">
       (Total for Question 2 = 12 marks)
     </div>
@@ -441,7 +441,7 @@ function compileEeeMockToHtml(mockData, title) {
         </label>
       </div>
 
-      ${renderRuledLines(20)}
+      ${renderRuledLines(24)}
     </div>
   `;
   pagesHtml += buildPage(7, totalPages, p7Content);
@@ -451,7 +451,7 @@ function compileEeeMockToHtml(mockData, title) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(8, totalPages, p8Content);
 
@@ -460,7 +460,7 @@ function compileEeeMockToHtml(mockData, title) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(9, totalPages, p9Content);
 
@@ -469,7 +469,7 @@ function compileEeeMockToHtml(mockData, title) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question continued)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(10, totalPages, p10Content);
 
@@ -478,7 +478,7 @@ function compileEeeMockToHtml(mockData, title) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question continued)
     </div>
-    ${renderRuledLines(18)}
+    ${renderRuledLines(22)}
     <div style="text-align: right; font-weight: 700; font-size: 9.5pt; margin-top: 10px;">
       (Total for Question = 16 marks)
     </div>
@@ -711,3 +711,4 @@ compileAllEeeMocks().catch(err => {
   console.error('❌ Compilation failed:', err);
   process.exit(1);
 });
+

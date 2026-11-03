@@ -283,7 +283,7 @@ function compileCmeMockToHtml(mock) {
         <div><span style="font-weight: 900; margin-right: 8px;">1</span> (a) ${q1a.text}</div>
         <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
       </div>
-      ${renderRuledLines(10)}
+      ${renderRuledLines(12)}
     </div>
 
     <div>
@@ -291,7 +291,7 @@ function compileCmeMockToHtml(mock) {
         <div><span style="visibility: hidden; margin-right: 8px;">1</span> (b) ${q1b.text}</div>
         <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
       </div>
-      ${renderRuledLines(10)}
+      ${renderRuledLines(12)}
     </div>
   `;
   pagesHtml += buildPage(2, totalPages, p2Content);
@@ -301,7 +301,7 @@ function compileCmeMockToHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 1 continued)
     </div>
-    ${renderRuledLines(23)}
+    ${renderRuledLines(26)}
     <div style="text-align: right; font-weight: 700; font-size: 9.5pt; margin-top: 8px;">
       (Total for Question 1 = 8 marks)
     </div>
@@ -324,7 +324,7 @@ function compileCmeMockToHtml(mock) {
         <div style="font-style: italic; margin-top: 4px;">You <strong>must</strong> also use information of your own.</div>
       </div>
 
-      ${renderRuledLines(14)}
+      ${renderRuledLines(22)}
     </div>
   `;
   pagesHtml += buildPage(4, totalPages, p4Content);
@@ -334,7 +334,7 @@ function compileCmeMockToHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 2 continued)
     </div>
-    ${renderRuledLines(25)}
+    ${renderRuledLines(27)}
     <div style="text-align: right; font-weight: 700; font-size: 9.5pt; margin-top: 8px;">
       (Total for Question 2 = 8 marks)
     </div>
@@ -387,7 +387,7 @@ function compileCmeMockToHtml(mock) {
         `).join('')}
       </div>
 
-      ${renderRuledLines(14)}
+      ${renderRuledLines(22)}
     </div>
   `;
   pagesHtml += buildPage(7, totalPages, p7Content);
@@ -397,7 +397,7 @@ function compileCmeMockToHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3 continued &mdash; Choice 1)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(8, totalPages, p8Content);
 
@@ -420,7 +420,7 @@ function compileCmeMockToHtml(mock) {
         `).join('')}
       </div>
 
-      ${renderRuledLines(14)}
+      ${renderRuledLines(22)}
     </div>
   `;
   pagesHtml += buildPage(9, totalPages, p9Content);
@@ -430,7 +430,7 @@ function compileCmeMockToHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3 continued &mdash; Choice 2)
     </div>
-    ${renderRuledLines(26)}
+    ${renderRuledLines(28)}
   `;
   pagesHtml += buildPage(10, totalPages, p10Content);
 
@@ -439,7 +439,7 @@ function compileCmeMockToHtml(mock) {
     <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
       (Question 3 continued &mdash; Choice 2)
     </div>
-    ${renderRuledLines(18)}
+    ${renderRuledLines(22)}
     <div style="text-align: right; font-weight: 700; font-size: 9.5pt; margin-top: 10px;">
       (Total for Question 3 = 16 marks)
     </div>
@@ -725,3 +725,4 @@ compileAllCmeMocks().catch(err => {
   console.error('❌ Compilation failed:', err);
   process.exit(1);
 });
+
