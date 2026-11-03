@@ -58,3 +58,4 @@ for (const f of weimarFiles) {
     console.log(`   Box ${idx} (${b.length} chars): ${text.slice(0, 90)}...`);
   });
 }
+

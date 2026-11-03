@@ -3351,7 +3351,7 @@ export default {
           "options": [
             "The Green Line",
             "The Bar-Lev Line",
-            "The Green Line",
+            "The Allon Line",
             "The Purple Line"
           ],
           "answer": "The Green Line",
@@ -3473,7 +3473,7 @@ export default {
             "The Green Line",
             "The Bar-Lev Line",
             "The Maginot Line",
-            "The Green Line"
+            "The Allon Line"
           ],
           "answer": "The Green Line",
           "explanation": "Source C is the 1949 armistice boundaries map showing the Green Line."
@@ -8207,7 +8207,7 @@ export default {
             "The Bar-Lev Line",
             "The Green Line",
             "The Maginot Line",
-            "The Green Line"
+            "The Purple Line"
           ],
           "answer": "The Bar-Lev Line",
           "explanation": "The Bar-Lev Line was named after Chief of Staff Haim Bar-Lev."
@@ -10260,7 +10260,7 @@ export default {
             "The Bar-Lev Line",
             "The Green Line",
             "The Atlantic Wall",
-            "The Green Line"
+            "The Purple Line"
           ],
           "answer": "The Bar-Lev Line",
           "explanation": "Source A details the tactical blueprint of the Bar-Lev Line fortifications."

@@ -94,3 +94,4 @@ function walkSrc(dir) {
 walkSrc('src');
 
 console.log(`Link check complete. Checked links: ${checkedLinks}, Dead links: ${deadLinks}\n`);
+

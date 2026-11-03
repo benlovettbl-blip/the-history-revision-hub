@@ -271,39 +271,34 @@ function compileCmeMockToHtml(mock) {
   // Page 1: Cover
   pagesHtml += buildCoverPage('1HI0/P5');
 
-  // Page 2: Section A header & Question 1
+  // Page 2: Section A header & Question 1(a)
   const p2Content = `
     <div style="text-align: center; margin-bottom: 14px;">
       <div style="font-size: 12pt; font-weight: 800; margin-bottom: 3px;">Conflict in the Middle East, 1945–95</div>
       <div style="font-size: 10pt; font-weight: 800;">Answer ALL questions in this booklet.</div>
     </div>
     
-    <div style="margin-bottom: 12px;">
-      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 6px;">
+    <div>
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 8px;">
         <div><span style="font-weight: 900; margin-right: 8px;">1</span> (a) ${q1a.text}</div>
         <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
       </div>
-      ${renderRuledLines(12)}
-    </div>
-
-    <div>
-      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 6px;">
-        <div><span style="visibility: hidden; margin-right: 8px;">1</span> (b) ${q1b.text}</div>
-        <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
-      </div>
-      ${renderRuledLines(12)}
+      ${renderRuledLines(21)}
     </div>
   `;
   pagesHtml += buildPage(2, totalPages, p2Content);
 
-  // Page 3: Question 1 continuation
+  // Page 3: Question 1(b)
   const p3Content = `
-    <div style="font-size: 9pt; color: #52525b; font-weight: 600; margin-bottom: 6px;">
-      (Question 1 continued)
-    </div>
-    ${renderRuledLines(26)}
-    <div style="text-align: right; font-weight: 700; font-size: 9.5pt; margin-top: 8px;">
-      (Total for Question 1 = 8 marks)
+    <div>
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; font-weight: 700; font-size: 10pt; margin-bottom: 8px;">
+        <div><span style="visibility: hidden; margin-right: 8px;">1</span> (b) ${q1b.text}</div>
+        <div style="font-weight: 600; color: #3f3f46; margin-left: 8px;">(4)</div>
+      </div>
+      ${renderRuledLines(23)}
+      <div style="text-align: right; font-weight: 700; font-size: 9.5pt; margin-top: 10px;">
+        (Total for Question 1 = 8 marks)
+      </div>
     </div>
   `;
   pagesHtml += buildPage(3, totalPages, p3Content);

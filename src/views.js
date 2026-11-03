@@ -2271,7 +2271,7 @@ function getHubTimingStrategyRows(unitId) {
       {
         tariff: '4 Marks (×2)',
         type: 'Explain one consequence of... (Q1a & Q1b)',
-        totalTime: '6 mins each',
+        totalTime: '6 mins each (12m total)',
         planSplit: '<strong>1 min</strong> identify 1 direct consequence + context',
         writeSplit:
           '<strong>5 mins</strong> single sustained analytical paragraph with precise factual detail',
@@ -2281,33 +2281,33 @@ function getHubTimingStrategyRows(unitId) {
       {
         tariff: '8 Marks',
         type: 'Write a narrative account analysing... (Q2)',
-        totalTime: '14 mins',
+        totalTime: '13 mins',
         planSplit:
           '<strong>2 mins</strong> outline 3-phase chronological flow (start &rarr; dev &rarr; outcome)',
         writeSplit:
-          '<strong>12 mins</strong> 3 linked analytical paragraphs showing causation and change',
-        actionMins: 14,
-        actionLabel: '8-Mark Narrative (14m)',
+          '<strong>11 mins</strong> 3 linked analytical paragraphs showing causation and change',
+        actionMins: 13,
+        actionLabel: '8-Mark Narrative (13m)',
       },
       {
         tariff: '8 Marks',
         type: 'Explain the importance of [Choice 1] for... (Q3 Option 1)',
-        totalTime: '14 mins',
+        totalTime: '12 mins',
         planSplit: '<strong>2 mins</strong> define criteria + 2 distinct impacts/consequences',
         writeSplit:
-          '<strong>12 mins</strong> 2 structured analytical paragraphs evaluating significance',
-        actionMins: 14,
-        actionLabel: '8-Mark Importance Choice 1 (14m)',
+          '<strong>10 mins</strong> 2 structured analytical paragraphs evaluating significance',
+        actionMins: 12,
+        actionLabel: '8-Mark Importance Choice 1 (12m)',
       },
       {
         tariff: '8 Marks',
         type: 'Explain the importance of [Choice 2] for... (Q3 Option 2)',
-        totalTime: '14 mins',
+        totalTime: '13 mins',
         planSplit: '<strong>2 mins</strong> define criteria + 2 distinct impacts/consequences',
         writeSplit:
-          '<strong>12 mins</strong> 2 structured analytical paragraphs evaluating significance',
-        actionMins: 14,
-        actionLabel: '8-Mark Importance Choice 2 (14m)',
+          '<strong>11 mins</strong> 2 structured analytical paragraphs evaluating significance',
+        actionMins: 13,
+        actionLabel: '8-Mark Importance Choice 2 (13m)',
       },
     ];
   } else if (unitId === 'eee') {
@@ -2315,7 +2315,7 @@ function getHubTimingStrategyRows(unitId) {
       {
         tariff: '2 Marks (×2)',
         type: 'Describe one feature of... (Q1a & Q1b)',
-        totalTime: '3 mins each',
+        totalTime: '3 mins each (6m total)',
         planSplit: '<strong>30s</strong> target feature recall',
         writeSplit:
           '<strong>2.5m</strong> 2 precise sentences (feature identification + supporting detail)',
@@ -2334,12 +2334,12 @@ function getHubTimingStrategyRows(unitId) {
       {
         tariff: '16 Marks',
         type: 'Statement Evaluation Essay ("How far do you agree?" - Q3 or Q4)',
-        totalTime: '25 mins',
+        totalTime: '26 mins',
         planSplit: '<strong>5 mins</strong> define criteria + balance arguments + reach judgement',
         writeSplit:
-          '<strong>20 mins</strong> Intro + Agree argument + Counter argument + Justified Judgement',
-        actionMins: 25,
-        actionLabel: '16-Mark Essay (25m)',
+          '<strong>21 mins</strong> Intro + Agree argument + Counter argument + Justified Judgement',
+        actionMins: 26,
+        actionLabel: '16-Mark Essay (26m)',
       },
     ];
   } else if (unitId === 'edexcel_medicine') {
@@ -2347,12 +2347,12 @@ function getHubTimingStrategyRows(unitId) {
       {
         tariff: '2 Marks (×2)',
         type: 'Describe one feature of... (Sec A: Western Front - Q1a & Q1b)',
-        totalTime: '3 mins each',
+        totalTime: '2 mins each (4m total)',
         planSplit: '<strong>30s</strong> target feature recall',
         writeSplit:
-          '<strong>2.5m</strong> 2 precise sentences (feature + clinical/contextual detail)',
-        actionMins: 3,
-        actionLabel: '2-Mark Feature (3m)',
+          '<strong>1.5m</strong> 2 precise sentences (feature + clinical/contextual detail)',
+        actionMins: 4,
+        actionLabel: '4-Mark Feature (4m)',
       },
       {
         tariff: '8 Marks',
@@ -2398,75 +2398,76 @@ function getHubTimingStrategyRows(unitId) {
       {
         tariff: '16+4 Marks',
         type: 'Statement Evaluation Essay ("How far do you agree?" - Sec B: Q5 or Q6)',
-        totalTime: '26 mins',
+        totalTime: '30 mins',
         planSplit: '<strong>5 mins</strong> define criteria + balance both sides + plan judgement',
         writeSplit:
-          '<strong>21 mins</strong> Intro + Agree + Counter + Justified Judgement + SPaG check',
-        actionMins: 26,
-        actionLabel: '16+4 Mark Essay (26m)',
+          '<strong>25 mins</strong> Intro + Agree + Counter + Justified Judgement + SPaG check',
+        actionMins: 30,
+        actionLabel: '16+4 Mark Essay (30m)',
       },
     ];
-    // Paper 3 Modern Depth Study: USA 1954-75 & Weimar and Nazi Germany (90 Mins Total)
+  } else {
+    // Paper 3 Modern Depth Study: USA 1954-75 & Weimar and Nazi Germany (80 Mins Total)
     rows = [
       {
         tariff: '4 Marks',
         type: 'Give two things you can infer from Source A... (Sec A: Q1)',
-        totalTime: '6 mins',
+        totalTime: '5 mins',
         planSplit: '<strong>1 min</strong> identify quotes and details in Source A',
-        writeSplit: '<strong>5 mins</strong> 2 separate inference + evidence pairs (2× 2 marks)',
-        actionMins: 6,
-        actionLabel: '4-Mark Inference (6m)',
+        writeSplit: '<strong>4 mins</strong> 2 separate inference + evidence pairs (2× 2 marks)',
+        actionMins: 5,
+        actionLabel: '4-Mark Inference (5m)',
       },
       {
         tariff: '12 Marks',
         type: 'Explain why... (Causation / Analytical Account - Sec A: Q2)',
-        totalTime: '24 mins',
+        totalTime: '20 mins',
         planSplit: '<strong>4 mins</strong> select 3 distinct causes (2 stimulus + 1 own point)',
-        writeSplit: '<strong>20 mins</strong> 3 sustained PEEL paragraphs with causal links',
-        actionMins: 24,
-        actionLabel: '12-Mark Causation (24m)',
+        writeSplit: '<strong>16 mins</strong> 3 sustained PEEL paragraphs with causal links',
+        actionMins: 20,
+        actionLabel: '12-Mark Causation (20m)',
       },
       {
         tariff: '8 Marks',
         type: 'How useful are Sources B and C for an enquiry into... (Sec B: Q3a)',
-        totalTime: '14 mins',
+        totalTime: '12 mins',
         planSplit: '<strong>2 mins</strong> annotate provenance (NOP) + own knowledge context',
         writeSplit:
-          '<strong>12 mins</strong> 2 balanced paragraphs evaluating utility on content and NOP',
-        actionMins: 14,
-        actionLabel: '8-Mark Utility (14m)',
+          '<strong>10 mins</strong> 2 balanced paragraphs evaluating utility on content and NOP',
+        actionMins: 12,
+        actionLabel: '8-Mark Utility (12m)',
       },
       {
         tariff: '4 Marks',
         type: 'What is the main difference between Interpretations 1 and 2? (Sec B: Q3b)',
-        totalTime: '6 mins',
+        totalTime: '5 mins',
         planSplit:
           '<strong>1 min</strong> compare historical perspectives in Interpretations 1 & 2',
         writeSplit:
-          '<strong>5 mins</strong> identify primary divergence supported by direct quotations',
-        actionMins: 6,
-        actionLabel: '4-Mark Difference (6m)',
+          '<strong>4 mins</strong> identify primary divergence supported by direct quotations',
+        actionMins: 5,
+        actionLabel: '4-Mark Difference (5m)',
       },
       {
         tariff: '4 Marks',
         type: 'Suggest one reason why Interpretations 1 and 2 give different views (Sec B: Q3c)',
-        totalTime: '6 mins',
+        totalTime: '5 mins',
         planSplit: '<strong>1 min</strong> match with Sources B/C or author focus/emphasis',
         writeSplit:
-          '<strong>5 mins</strong> explain reason for divergence (different sources/motives)',
-        actionMins: 6,
-        actionLabel: '4-Mark Reason (6m)',
+          '<strong>4 mins</strong> explain reason for divergence (different sources/motives)',
+        actionMins: 5,
+        actionLabel: '4-Mark Reason (5m)',
       },
       {
         tariff: '16+4 Marks',
         type: 'How far do you agree with Interpretation 2... (Sec B: Q3d)',
-        totalTime: '34 mins',
+        totalTime: '33 mins',
         planSplit:
-          '<strong>6 mins</strong> define criteria + balance views against Interpretation 1',
+          '<strong>5 mins</strong> define criteria + balance views against Interpretation 1',
         writeSplit:
           '<strong>28 mins</strong> Intro + evaluate Int 2 + evaluate Int 1/context + Judgement + SPaG',
-        actionMins: 34,
-        actionLabel: '16+4 Mark Essay (34m)',
+        actionMins: 33,
+        actionLabel: '16+4 Mark Essay (33m)',
       },
     ];
   }
@@ -2662,44 +2663,44 @@ export async function renderMockExamsView() {
 
   if (unitId === 'cme_new') {
     specTitle = 'Paper 2: Conflict in the Middle East, 1945–1995';
-    specPaperRef = '1HI0/21';
-    defaultTime = '55 Minutes';
+    specPaperRef = '1HI0/P5';
+    defaultTime = '50 Minutes';
     defaultMarks = '32 Marks';
     pacingSummary =
-      'Total Exam Duration: 55 mins &bull; Q1(a)/(b) Consequence (6m each) &bull; Q2 Narrative (14m) &bull; Q3 Importance (2× 14m)';
+      'Total Exam Duration: 50 mins &bull; Q1(a)/(b) Consequence (12m total) &bull; Q2 Narrative (13m) &bull; Q3 Importance (25m)';
   } else if (unitId === 'weimar_nazi_germany') {
     specTitle = 'Paper 3: Weimar and Nazi Germany, 1918–1939';
     specPaperRef = '1HI0/31';
-    defaultTime = '1 Hour 30 Mins';
+    defaultTime = '1 Hour 20 Mins';
     defaultMarks = '52 Marks + 4 SPaG';
     pacingSummary =
-      'Section A: 30 mins (Q1 6m, Q2 24m) &bull; Section B: 60 mins (Q3a 14m, Q3b 6m, Q3c 6m, Q3d 34m)';
+      'Section A: 25 mins (Q1 5m, Q2 20m) &bull; Section B: 55 mins (Q3a 12m, Q3b 5m, Q3c 5m, Q3d 33m)';
   } else if (unitId === 'eee') {
     specTitle = 'Paper 2: Early Elizabethan England, 1558–1588';
     specPaperRef = '1HI0/B4';
-    defaultTime = '55 Minutes';
+    defaultTime = '50 Minutes';
     defaultMarks = '32 Marks';
     pacingSummary =
-      'Total Exam Duration: 55 mins &bull; Q1(a)/(b) Features (3m each) &bull; Q2 Causation (18m) &bull; Q3/4 Essay (25m)';
+      'Total Exam Duration: 50 mins &bull; Q1 Features (6m total) &bull; Q2 Causation (18m) &bull; Q3/4 Essay (26m)';
   } else if (unitId === 'edexcel_medicine') {
     specTitle = 'Paper 1: Medicine in Britain, c1250–present and Western Front';
     specPaperRef = '1HI0/11';
-    defaultTime = '1 Hour 20 Mins';
+    defaultTime = '1 Hour 15 Mins';
     defaultMarks = '52 Marks + 4 SPaG';
-    pacingSummary = 'Section A (Western Front): 25 mins &bull; Section B (Thematic Study): 55 mins';
+    pacingSummary = 'Section A (Western Front): 21 mins &bull; Section B (Thematic Study): 54 mins';
   } else if (unitId === 'usa') {
     specTitle = 'Paper 3: Conflict at Home and Abroad: the USA, 1954–75';
     specPaperRef = '1HI0/33';
-    defaultTime = '1 Hour 30 Mins';
+    defaultTime = '1 Hour 20 Mins';
     defaultMarks = '52 Marks + 4 SPaG';
     pacingSummary =
-      'Section A (Civil Rights): 30 mins (Q1 6m, Q2 24m) &bull; Section B (Vietnam): 60 mins (Q3a 14m, Q3b 6m, Q3c 6m, Q3d 34m)';
+      'Section A (Civil Rights): 25 mins (Q1 5m, Q2 20m) &bull; Section B (Vietnam): 55 mins (Q3a 12m, Q3b 5m, Q3c 5m, Q3d 33m)';
   }
 
-  const defaultMins = defaultTime.includes('55')
-    ? 55
-    : defaultTime.includes('30') || defaultTime.includes('90')
-      ? 90
+  const defaultMins = defaultTime.includes('50')
+    ? 50
+    : defaultTime.includes('15') || defaultTime.includes('75')
+      ? 75
       : 80;
   if (window.hubExamTimerState && window.hubExamTimerState.interval) {
     clearInterval(window.hubExamTimerState.interval);
@@ -2722,7 +2723,7 @@ export async function renderMockExamsView() {
               PEARSON EXAM HALL CLOCK &bull; ${specPaperRef}
             </div>
             <div id="hub-exam-clock-display" style="font-size: 1.95rem; font-weight: 800; font-family: 'Courier New', Courier, monospace; letter-spacing: 2px; color: #ffffff; line-height: 1.05; margin-top: 2px;">
-              ${defaultMins === 55 ? '55:00' : defaultMins === 90 ? '01:30:00' : '01:20:00'}
+              ${defaultMins === 50 ? '50:00' : defaultMins === 75 ? '01:15:00' : '01:20:00'}
             </div>
           </div>
           <div style="border-left: 1px solid #374151; padding-left: 16px; font-size: 0.78rem; color: #d1d5db; line-height: 1.4;">
