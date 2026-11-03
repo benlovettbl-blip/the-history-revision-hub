@@ -1959,6 +1959,16 @@ body.sen-mode .narrative-block span[style*="font-family: 'Playfair Display'"] {
     max-height: 240px !important;
   }
 
+  .narrative-visual-row .narrative-visual-plate.plate-compact {
+    flex: 0 0 240px !important;
+    max-width: 250px !important;
+    padding: 10px 12px !important;
+  }
+
+  .narrative-visual-row .narrative-visual-plate.plate-compact img {
+    max-height: 185px !important;
+  }
+
   .narrative-visual-row .narrative-chunk {
     flex: 1 1 auto !important;
     min-width: 0 !important;

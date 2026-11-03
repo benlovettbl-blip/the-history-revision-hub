@@ -7067,9 +7067,19 @@ export function renderLesson(lesson) {
 
       let topNarrativeHtml = '';
       if (hasPureVisual) {
+        const rawContent = (block.content || block.text || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+        const rawWordCount = rawContent.split(/\s+/).filter(Boolean).length;
+        const hasMultipleParagraphs = /<br\s*\/?>\s*<br\s*\/?>|<\/p>\s*<p>/i.test(block.content || block.text || '');
+        const isCompactNarrative = !hasMultipleParagraphs || rawWordCount < 165;
+        const plateMaxImgHeight = isCompactNarrative ? '205px' : '310px';
+        const plateFlexBasis = isCompactNarrative ? '300px' : '360px';
+        const plateMaxWidth = isCompactNarrative ? '340px' : '400px';
+        const platePadding = isCompactNarrative ? '12px 14px' : '14px 16px';
+        const plateClass = isCompactNarrative ? 'narrative-visual-plate plate-compact' : 'narrative-visual-plate plate-standard';
+
         const visualPlateHtml = `
-          <div class="narrative-visual-plate" style="flex: 0 0 360px; max-width: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 16px; box-shadow: 0 2px 5px rgba(0,0,0,0.04); text-align: center;">
-            <img src="${getAssetUrl(block.image)}" alt="${block.image_alt || 'Archival Plate'}" style="max-width: 100%; max-height: 310px; object-fit: contain; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.12); border: 1px solid #cbd5e1; cursor: zoom-in; display: block; margin: 0 auto;" data-action="open-modal" data-src="${getAssetUrl(block.image)}">
+          <div class="${plateClass}" style="flex: 0 0 ${plateFlexBasis}; max-width: ${plateMaxWidth}; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: ${platePadding}; box-shadow: 0 2px 5px rgba(0,0,0,0.04); text-align: center;">
+            <img src="${getAssetUrl(block.image)}" alt="${block.image_alt || 'Archival Plate'}" style="max-width: 100%; max-height: ${plateMaxImgHeight}; object-fit: contain; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.12); border: 1px solid #cbd5e1; cursor: zoom-in; display: block; margin: 0 auto;" data-action="open-modal" data-src="${getAssetUrl(block.image)}">
             ${block.caption || block.image_caption || block.image_alt ? `<div class="narrative-plate-caption" style="font-size: 0.82rem; color: #64748b; margin-top: 10px; font-style: italic; line-height: 1.45; user-select: none;">${block.caption || block.image_caption || block.image_alt}</div>` : ''}
           </div>
         `;
