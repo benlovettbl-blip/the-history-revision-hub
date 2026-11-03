@@ -11542,9 +11542,9 @@ export default {
     {
       "id": "lesson_3_4",
       "title": "KT 3.4: What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?",
-      "enquiry": "Elected in 1968 on a promise of 'Peace with Honor', President Nixon sought to reduce US involvement without appearing to surrender. In 1969, he introduced 'Vietnamization'—a policy to train and equip the South Vietnamese army (ARVN) to take over combat operations, allowing the gradual withdrawal of US troops. However, to disrupt communist supply lines along the Ho Chi Minh Trail, Nixon secretly ordered the bombing and invasion of neighboring Cambodia (1970) and Laos (1971), expanding the war geographic scale and triggering massive protests at home. What was the strategy behind Nixon's policy of 'Vietnamization', and why did the secret expansion into Cambodia and Laos provoke intense domestic fury? What was the strategy behind Nixon's policy of 'Vietnamization', and why did the secret expansion into Cambodia and Laos provoke intense domestic fury?",
+      "enquiry": "Elected in 1968 on a promise of 'Peace with Honor', President Nixon sought to reduce US involvement without appearing to surrender. In 1969, he introduced 'Vietnamization'—a policy to train and equip the South Vietnamese army (ARVN) to take over combat operations, allowing the gradual withdrawal of US troops. However, to disrupt communist supply lines along the Ho Chi Minh Trail, Nixon secretly ordered the bombing and invasion of neighboring Cambodia (1970) and Laos (1971), expanding the war geographic scale and triggering massive protests at home. What was the strategy behind Nixon's policy of 'Vietnamization', and why did the secret expansion into Cambodia and Laos provoke intense domestic fury?",
       "teacher_notes": {
-        "primer": "This lesson investigates KT 3.4: What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?. Elected in 1968 on a promise of 'Peace with Honor', President Nixon sought to reduce US involvement without appearing to surrender. In 1969, he introduced 'Vietnamization'—a policy to train and equip the South Vietnamese army (ARVN) to take over combat operations, allowing the gradual withdrawal of US troops. However, to disrupt communist supply lines along the Ho Chi Minh Trail, Nixon secretly ordered the bombing and invasion of neighboring Cambodia (1970) and Laos (1971), expanding the war geographic scale and triggering massive protests at home. What was the strategy behind Nixon's policy of 'Vietnamization', and why did the secret expansion into Cambodia and Laos provoke intense domestic fury? What was the strategy behind Nixon's policy of 'Vietnamization', and why did the secret expansion into Cambodia and Laos provoke intense domestic fury?",
+        "primer": "This lesson investigates KT 3.4: What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?. Elected in 1968 on a promise of 'Peace with Honor', President Nixon sought to reduce US involvement without appearing to surrender. In 1969, he introduced 'Vietnamization'—a policy to train and equip the South Vietnamese army (ARVN) to take over combat operations, allowing the gradual withdrawal of US troops. However, to disrupt communist supply lines along the Ho Chi Minh Trail, Nixon secretly ordered the bombing and invasion of neighboring Cambodia (1970) and Laos (1971), expanding the war geographic scale and triggering massive protests at home. What was the strategy behind Nixon's policy of 'Vietnamization', and why did the secret expansion into Cambodia and Laos provoke intense domestic fury?",
         "objectives": [
           {
             "objective": "Demonstrate comprehensive historical knowledge of the key developments and figures in KT 3.4: What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?.",
@@ -11621,29 +11621,29 @@ export default {
       },
       "vocab": [
         {
-          "term": "Poor People's Campaign",
-          "def": "Martin Luther King Jr.'s 1968 multiracial crusade demanding an Economic Bill of Rights, living wages, and federal anti-poverty legislation.",
-          "definition": "Martin Luther King Jr.'s 1968 multiracial crusade demanding an Economic Bill of Rights, living wages, and federal anti-poverty legislation."
+          "term": "Tet Offensive (1968)",
+          "def": "A coordinated nationwide surprise attack launched by 84,000 Vietcong and North Vietnamese troops across South Vietnam on 30 January 1968.",
+          "definition": "A coordinated nationwide surprise attack launched by 84,000 Vietcong and North Vietnamese troops across South Vietnam on 30 January 1968."
         },
         {
-          "term": "Memphis Sanitation Strike",
-          "def": "The early 1968 strike by 1,300 Black sanitation workers carrying 'I AM A MAN' placards that brought Dr. King to Memphis.",
-          "definition": "The early 1968 strike by 1,300 Black sanitation workers carrying 'I AM A MAN' placards that brought Dr. King to Memphis."
+          "term": "Credibility Gap",
+          "def": "The growing chasm between optimistic official US government claims of imminent victory and the grim reality of the battlefield exposed on television.",
+          "definition": "The growing chasm between optimistic official US government claims of imminent victory and the grim reality of the battlefield exposed on television."
         },
         {
-          "term": "James Earl Ray",
-          "def": "The escaped white convict and racist who assassinated Dr. Martin Luther King Jr. at the Lorraine Motel on 4 April 1968.",
-          "definition": "The escaped white convict and racist who assassinated Dr. Martin Luther King Jr. at the Lorraine Motel on 4 April 1968."
+          "term": "Vietnamisation",
+          "def": "President Nixon's strategy to withdraw American ground troops in phased increments while training and equipping the South Vietnamese army (ARVN) to take over combat.",
+          "definition": "President Nixon's strategy to withdraw American ground troops in phased increments while training and equipping the South Vietnamese army (ARVN) to take over combat."
         },
         {
-          "term": "1968 Holy Week Uprisings",
-          "def": "The immediate wave of violent unrest that erupted in over 100 American cities following Dr. King's murder, requiring 45,000 federal soldiers.",
-          "definition": "The immediate wave of violent unrest that erupted in over 100 American cities following Dr. King's murder, requiring 45,000 federal soldiers."
+          "term": "Nixon Doctrine",
+          "def": "Nixon's 1969 foreign policy declaration that the United States would honor treaty commitments and provide aid, but expect Asian allies to furnish their own ground troops.",
+          "definition": "Nixon's 1969 foreign policy declaration that the United States would honor treaty commitments and provide aid, but expect Asian allies to furnish their own ground troops."
         },
         {
-          "term": "Movement Fragmentation",
-          "def": "The fracturing of the civil rights coalition after 1968 between moderate legalists, non-violent pastors, and armed Black Power separatists.",
-          "definition": "The fracturing of the civil rights coalition after 1968 between moderate legalists, non-violent pastors, and armed Black Power separatists."
+          "term": "Operation Menu",
+          "def": "The secret, unauthorized 14-month B-52 carpet-bombing of neutral Cambodia ordered by President Nixon in 1969 to destroy communist sanctuaries along the Ho Chi Minh Trail.",
+          "definition": "The secret, unauthorized 14-month B-52 carpet-bombing of neutral Cambodia ordered by President Nixon in 1969 to destroy communist sanctuaries along the Ho Chi Minh Trail."
         }
       ],
       "narrative_blocks": [
@@ -11661,28 +11661,29 @@ export default {
             {
               "id": "usa_lesson_3_4_d",
               "letter": "A",
-              "type": "television_broadcast",
+              "type": "written",
               "title": "Source A: Editorial Declaration by CBS Evening News Anchor Walter Cronkite Following the Tet Offensive (27 February 1968)",
               "date": "27 February 1968",
-              "image": "/units/usa/assets/sources/hamburger-hill-101st-airborne-1969.jpg",
-              "image_url": "/units/usa/assets/sources/hamburger-hill-101st-airborne-1969.jpg",
+              "image": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg",
+              "image_url": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg",
               "attribution": "CBS News Television Special: 'Who, What, When, Where, Why: Report from Vietnam'",
-              "question_badge": "Cross-Referencing",
-              "question": "How does Walter Cronkite's public assessment in Source D explain the political collapse of President Johnson's war policy?",
-              "model_answer": "Cronkite, revered as 'the most trusted man in America,' declared that the only rational conclusion was that the war was 'mired in stalemate' and that negotiations were the only path out. When Cronkite broke with the official administration line, President Johnson privately remarked: 'If I've lost Cronkite, I've lost Middle America,' leading directly to his withdrawal from the 1968 election.",
+              "question_badge": "Source Inference",
+              "question": "What can you infer from Source A about how Walter Cronkite viewed the prospects of an American military victory in Vietnam?",
+              "model_answer": "From Source A, it can be inferred that Cronkite believed total American victory was impossible and that continuing the war would only produce further senseless bloodshed. His conclusion that the conflict was 'mired in stalemate' directly shattered official administration claims of progress and signaled to the public that negotiated withdrawal was the only rational path.",
               "provenance_clues": {
                 "author": "Walter Cronkite, chief anchor of CBS Evening News",
                 "audience": "Millions of American families watching prime-time evening news",
                 "motive": "To deliver an unvarnished personal journalistic verdict following his eyewitness inspection of post-Tet devastation.",
-                "hinge_question": "Why was the 1968 Tet Offensive considered a catastrophic political defeat for the US even though American forces won a military victory?"
+                "hinge_question": "Why did an editorial judgment by a single television journalist have a more devastating impact on President Johnson's presidency than months of anti-war protests?"
               },
               "teacher_notes": {
-                "source_context": "CBS News Television Special: 'Who, What, When, Where, Why: Report from Vietnam'. Walter Cronkite, chief anchor of CBS Evening News for Millions of American families watching prime-time evening news with the objective: To deliver an unvarnished personal journalistic verdict following his eyewitness inspection of post-Tet devastation.. **Hinge Question:** Why was the 1968 Tet Offensive considered a catastrophic political defeat for the US even though American forces won a military victory?"
+                "source_context": "CBS News Television Special: 'Who, What, When, Where, Why: Report from Vietnam', broadcast on 27 February 1968. Revered as 'the most trusted man in America', anchor Walter Cronkite traveled to Vietnam during the Tet Offensive to inspect the battlefields of Hue and Saigon. **Hinge Question:** Why did an editorial judgment by a single television journalist have a more devastating impact on President Johnson's presidency than months of anti-war protests?"
               },
-              "hinge_question": "Why was the 1968 Tet Offensive considered a catastrophic political defeat for the US even though American forces won a military victory?",
-              "source_context": "CBS News Television Special: 'Who, What, When, Where, Why: Report from Vietnam'. Walter Cronkite, chief anchor of CBS Evening News for Millions of American families watching prime-time evening news with the objective: To deliver an unvarnished personal journalistic verdict following his eyewitness inspection of post-Tet devastation.. **Hinge Question:** Why was the 1968 Tet Offensive considered a catastrophic political defeat for the US even though American forces won a military victory?",
-              "src": "/units/usa/assets/sources/hamburger-hill-101st-airborne-1969.jpg",
-              "source": "/units/usa/assets/sources/hamburger-hill-101st-airborne-1969.jpg"
+              "hinge_question": "Why did an editorial judgment by a single television journalist have a more devastating impact on President Johnson's presidency than months of anti-war protests?",
+              "source_context": "CBS News Television Special: 'Who, What, When, Where, Why: Report from Vietnam', broadcast on 27 February 1968. Revered as 'the most trusted man in America', anchor Walter Cronkite traveled to Vietnam during the Tet Offensive to inspect the battlefields of Hue and Saigon. **Hinge Question:** Why did an editorial judgment by a single television journalist have a more devastating impact on President Johnson's presidency than months of anti-war protests?",
+              "text": "To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable pessimism. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion... It is increasingly clear to this reporter that the only rational way out then will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy, and did the best they could.",
+              "src": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg",
+              "source": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg"
             }
           ],
           "image": "/units/usa/assets/sources/general-westmoreland.jpg",
@@ -11735,9 +11736,9 @@ export default {
         },
         {
           "act": 3,
-          "act_title": "Stage 3: President Johnson's Dramatic Abdication — Why did the political fallout from the Tet Offensive force President Johnson to withdraw from the 1968 presidential election?",
-          "title": "President Johnson's Dramatic Abdication",
-          "theme_heading": "President Johnson's Dramatic Abdication",
+          "act_title": "Stage 3: The Nixon Doctrine & Vietnamisation — What was President Nixon's strategy of 'Vietnamisation', and how did it attempt to achieve 'peace with honor'?",
+          "title": "The Nixon Doctrine & Vietnamisation",
+          "theme_heading": "The Nixon Doctrine & Vietnamisation",
           "text": "<span class=\"para-ref\">[3.1]</span> **The Nixon Doctrine and Vietnamisation:** Elected in November 1968 on a promise to bring \"peace with honor\", President Richard Nixon and his National Security Advisor Henry Kissinger instituted the policy of \"Vietnamisation\". Formulated under the Nixon Doctrine, the strategy aimed to withdraw American ground troops in phased increments while expanding, equipping, and training the ARVN to assume primary combat responsibility. Between 1969 and 1972, US troop levels dropped precipitously from an all-time peak of 543,000 to under 25,000.",
           "paragraphs": [
             "<span class=\"para-ref\">[3.1]</span> **The Nixon Doctrine and Vietnamisation:** Elected in November 1968 on a promise to bring \"peace with honor\", President Richard Nixon and his National Security Advisor Henry Kissinger instituted the policy of \"Vietnamisation\". Formulated under the Nixon Doctrine, the strategy aimed to withdraw American ground troops in phased increments while expanding, equipping, and training the ARVN to assume primary combat responsibility. Between 1969 and 1972, US troop levels dropped precipitously from an all-time peak of 543,000 to under 25,000."
@@ -11857,12 +11858,12 @@ export default {
         "title": "Edexcel GCSE Paper 3: 8-Mark Source Utility Assessment",
         "question": "How useful are Sources A and B for an enquiry into the effectiveness of Nixon's policy of Vietnamization? (8 marks)",
         "source_a": {
-          "provenance": "Source A: From a photograph of President Richard Nixon visiting US troops in South Vietnam, July 1969.",
-          "content": "[A photograph showing President Nixon standing in a crowd of smiling US soldiers in combat uniforms. He is shaking hands and talking with them, projecting a positive image of troop support.]"
+          "provenance": "Source A: From an official photograph of President Richard Nixon visiting US troops of the 1st Infantry Division at Di An, South Vietnam, July 1969.",
+          "content": "/units/usa/assets/sources/nixon-visiting-troops.jpg"
         },
         "source_b": {
-          "provenance": "Source B: A photograph showing South Vietnamese ARVN troops advancing during the invasion of Cambodia, May 1970.",
-          "content": "[A photograph showing several ARVN soldiers running past a burning tank on a dirt road in Cambodia. Helicopters are flying overhead, and the soldiers are carrying M16 rifles.]"
+          "provenance": "Source B: From an official US military photograph of South Vietnamese ARVN troops conducting an armed patrol during joint combat operations, 1967.",
+          "content": "/units/usa/assets/sources/arvn-troops-combat.jpg"
         },
         "hints": [
           "Content (Utility): What specific details in each source answer the enquiry? Support this with your own historical knowledge.",
@@ -11873,10 +11874,10 @@ export default {
         "model": "Source A is highly useful for showing the public relations campaign used to justify Vietnamization. The photograph shows \"Nixon standing in a crowd of smiling US soldiers\" in combat uniforms. This content's utility is supported by my knowledge that <strong>President Nixon introduced 'Vietnamization' in 1969 to gradually withdraw US combat troops while shifting responsibility to the ARVN, seeking 'peace with honor' to satisfy the public</strong>, which explains the positive, supportive image projected by the President. <em>The provenance of July 1969 makes the source highly useful because it illustrates the presidential photo opportunity used to project troop support. However, it is less useful because it is a carefully managed event, masking the low morale, drug use, and growing anti-war sentiment among the soldiers in the field.</em>\n\nSource B is highly useful for showing that Vietnamization actually expanded the geographical scope of the war. The photograph shows \"ARVN soldiers running past a burning tank on a dirt road in Cambodia\" with helicopters overhead. This content is highly useful because it is supported by my knowledge that <strong>Nixon ordered the invasion of Cambodia in May 1970 to destroy communist sanctuaries and supply lines, which failed to secure South Vietnam and sparked massive protests at Kent State</strong>, which confirms that ARVN relied heavily on US air support and regional incursions rather than independent ground strength. <em>The provenance of May 1970 makes the source extremely useful because it shows ARVN troops in active combat. However, it is less useful because it portrays a successful tactical advance, failing to show the strategic failure of the campaign or the ARVN's heavy reliance on US air power.</em>"
       },
       "pair_share": {
-        "prompt": "What does this soldier's account of the Laos invasion tell us about the practical weaknesses and failures of Nixon's 'Vietnamization' policy?",
-        "think": "Reflect on the evidence presented in the narrative, primary sources, and scholarly perspectives.",
-        "pair": "Share your perspective with your partner, comparing the significance of legal litigation versus grassroots action.",
-        "share": "Synthesize your joint conclusion: which factor had the greatest enduring legacy?"
+        "prompt": "What does the military failure in Laos and Cambodia reveal about the practical limits of Nixon's 'Vietnamisation' strategy?",
+        "think": "Reflect on ARVN's heavy dependence on US air power, domestic morale, and supply line interdiction.",
+        "pair": "Share your perspective with your partner, comparing military capability versus domestic political pressure.",
+        "share": "Synthesize your joint conclusion: could Vietnamisation ever have achieved genuine 'peace with honor'?"
       },
       "tasks": [
         {
@@ -11887,15 +11888,17 @@ export default {
         },
         {
           "qNum": 2,
-          "question": "What was the core contradiction in Nixon's policy of Vietnamization?",
-          "starter": "Consider: Consider the geographical scope of the war.",
-          "model": "Nixon claimed to be withdrawing US troops to achieve 'peace with honor', yet he expanded the war by bombing and invading neutral Cambodia and Laos to cut off Ho Chi Minh Trail supply lines."
+          "tariff": "Question 2. [12 marks]",
+          "question": "Explain why President Nixon introduced the policy of Vietnamisation in 1969.\n\nYou may use the following in your answer:\n• Public reaction to the Tet Offensive (1968)\n• Growing anti-war demonstrations in the USA\n\nYou must also use information of your own. [12 marks]",
+          "starter": "One reason why President Nixon introduced the policy of Vietnamisation was the political and psychological fallout from the 1968 Tet Offensive...",
+          "model": "One key reason why President Nixon introduced Vietnamisation was the severe collapse in American public support following the 1968 Tet Offensive. Although US and ARVN forces won a tactical victory on the ground, graphic news broadcasts—especially Walter Cronkite's editorial declaring the conflict an unwinnable 'stalemate'—created an unbridgeable 'credibility gap' between the government and the American people. Having campaigned on a pledge to deliver 'peace with honor', Nixon recognized that maintaining over 500,000 combat troops in Vietnam was politically impossible. Vietnamisation was designed to appease public demands for troop withdrawals while avoiding the humiliation of an immediate American surrender.\n\nFurthermore, escalating domestic anti-war protests and draft resistance placed immense pressure on the White House to scale down direct US military involvement. By 1969, nationwide moratorium marches, campus strikes, and rising casualty numbers (over 30,000 dead by Nixon's inauguration) threatened domestic stability. Vietnamisation allowed Nixon to gradually withdraw US combat troops from 543,000 to under 25,000, thereby disarming the anti-war movement at home while transferring the battlefield burden to South Vietnamese ground forces.\n\nA third decisive factor was the strategic reorientation known as the Nixon Doctrine. Nixon and his National Security Advisor Henry Kissinger realized that the policy of massive, direct US military interventions was bankrupting the US economy and weakening American global posture during the Cold War. Under the Nixon Doctrine, the US announced it would provide economic and military hardware to allied nations in Asia, but expected Asian allies to provide the manpower for their own defense. Transferring billions of dollars of modern weaponry to the ARVN allowed the US to pursue diplomatic détente with the Soviet Union and China while disengaging American infantry."
         },
         {
           "qNum": 3,
-          "question": "Why did the ARVN struggle to defend South Vietnam independently despite receiving massive US equipment?",
-          "starter": "Consider: Think about leadership, morale, and dependency.",
-          "model": "The ARVN suffered from corrupt leadership, low morale, high desertion rates, and dependency on US air support, which was steadily withdrawn, exposing their structural military weaknesses."
+          "tariff": "Question 3(b). [4 marks]",
+          "question": "Study Interpretations 1 and 2 above. They give different views about the military and political significance of the 1968 Tet Offensive.\n\nWhat is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]",
+          "starter": "The main difference between the two interpretations is that Interpretation 1 views the Tet Offensive as a tactical failure for the communists, whereas Interpretation 2 views it as...",
+          "model": "The main difference between the two views is that Interpretation 1 emphasizes the military catastrophe suffered by the Vietcong, whereas Interpretation 2 focuses on the decisive political and psychological victory won by the communists on the American home front.\n\nInterpretation 1 argues that from a battlefield perspective, the offensive was 'an unmitigated catastrophe' that resulted in over 45,000 communist casualties and crippled the Vietcong's independent fighting capability.\n\nIn contrast, Interpretation 2 argues that the offensive was 'the decisive psychological and political turning point', shattering the Johnson administration's credibility, destroying public morale, and directly forcing President Johnson to withdraw from the 1968 presidential election."
         }
       ],
       "dualPerspective": {
@@ -12209,6 +12212,16 @@ export default {
       "exam_practice": {
         "title": "Edexcel GCSE (9–1) Paper 3 Exam Practice",
         "tariff": "16 marks (+4 SPaG)",
+        "stimulus": [
+          {
+            "title": "Interpretation 1: From a modern military history of the Vietnam War, published in 2008.",
+            "content": "From a purely military perspective, the 1968 Tet Offensive was an unmitigated catastrophe for the communist forces. More than 84,000 Vietcong and North Vietnamese soldiers committed to the offensive suffered devastating casualties, with an estimated 45,000 killed in action. The anticipated general uprising of the South Vietnamese civilian population completely failed to materialise. Within days, American and ARVN troops had recaptured almost all seized positions, decimating the Vietcong's infrastructure so severely that it never recovered its strength as an independent guerrilla army."
+          },
+          {
+            "title": "Interpretation 2: From an academic analysis of American media and politics during Vietnam, published in 2014.",
+            "content": "The Tet Offensive was the decisive psychological and political turning point of the entire conflict, delivering a fatal blow to American war policy. For months, the Johnson administration and General Westmoreland had assured the public that communist defeat was imminent and that there was 'light at the end of the tunnel'. Graphic television footage of fierce combat on the grounds of the US Embassy in Saigon obliterated official credibility. The offensive convinced respected commentators like Walter Cronkite that the war was hopelessly mired in stalemate, shattering public morale and directly compelling President Johnson to abandon his re-election campaign."
+          }
+        ],
         "questions": [
           {
             "tariff": "16 marks (+4 SPaG)",
@@ -12237,52 +12250,61 @@ export default {
             "type": "written",
             "tariff": "Question 3(d). [16 marks (+4 SPaG)]",
             "text": "3(d). How far do you agree with Interpretation 2 about the military and political significance of the Tet Offensive (January 1968)? [16 marks + 4 SPaG]",
-            "stimulus": [],
+            "stimulus": [
+              {
+                "title": "Interpretation 1: From a modern military history of the Vietnam War, published in 2008.",
+                "content": "From a purely military perspective, the 1968 Tet Offensive was an unmitigated catastrophe for the communist forces. More than 84,000 Vietcong and North Vietnamese soldiers committed to the offensive suffered devastating casualties, with an estimated 45,000 killed in action. The anticipated general uprising of the South Vietnamese civilian population completely failed to materialise. Within days, American and ARVN troops had recaptured almost all seized positions, decimating the Vietcong's infrastructure so severely that it never recovered its strength as an independent guerrilla army."
+              },
+              {
+                "title": "Interpretation 2: From an academic analysis of American media and politics during Vietnam, published in 2014.",
+                "content": "The Tet Offensive was the decisive psychological and political turning point of the entire conflict, delivering a fatal blow to American war policy. For months, the Johnson administration and General Westmoreland had assured the public that communist defeat was imminent and that there was 'light at the end of the tunnel'. Graphic television footage of fierce combat on the grounds of the US Embassy in Saigon obliterated official credibility. The offensive convinced respected commentators like Walter Cronkite that the war was hopelessly mired in stalemate, shattering public morale and directly compelling President Johnson to abandon his re-election campaign."
+              }
+            ],
             "model": "On the one hand, Interpretation 1 emphasizes that from a purely military standpoint, the Tet Offensive was an overwhelming, catastrophic defeat for the Vietcong and North Vietnamese Army. Over 84,000 communist troops attacked over 100 South Vietnamese cities and military installations, including the US Embassy in Saigon. However, US and ARVN forces rapidly recaptured every single objective, inflicting devastating casualties—killing an estimated 45,000 communist fighters and permanently crippling the Vietcong's independent military capacity for the remainder of the war.<br><br>On the other hand, Interpretation 2 persuasively argues that the Tet Offensive was a decisive, war-winning political and psychological victory for the communists. For years, General Westmoreland and President Johnson had assured the American public that the war was nearly won and that there was 'light at the end of the tunnel'. Seeing communist commandos breach the US Embassy on television shattered public credibility, creating an unbridgeable 'credibility gap' and convincing influential journalists like Walter Cronkite that the war was un-winnable.<br><br>Furthermore, the political fallout was immediate and catastrophic for the US administration: anti-war demonstrations escalated, public support plummeted, and on 31 March 1968, President Johnson stunned the nation by announcing he would halt bombing and would not seek re-election.<br><br>In conclusion, having evaluated both interpretations against the historical evidence, I agree with Interpretation 2 to a very large extent. While the US military won the tactical engagements on the battlefield, the Tet Offensive fatally destroyed American political will on the home front, proving that the United States could not achieve total victory and making a negotiated US withdrawal inevitable."
           }
         ]
       },
-      "hook_text": "Elected in 1968 on a promise of 'Peace with Honor', President Nixon sought to reduce US involvement without appearing to surrender. In 1969, he introduced 'Vietnamization'—a policy to train and equip the South Vietnamese army (ARVN) to take over combat operations, allowing the gradual withdrawal of US troops. However, to disrupt communist supply lines along the Ho Chi Minh Trail, Nixon secretly ordered the bombing and invasion of neighboring Cambodia (1970) and Laos (1971), expanding the war geographic scale and triggering massive protests at home. What was the strategy behind Nixon's policy of 'Vietnamization', and why did the secret expansion into Cambodia and Laos provoke intense domestic fury? What was the strategy behind Nixon's policy of 'Vietnamization', and why did the secret expansion into Cambodia and Laos provoke intense domestic fury?",
+      "hook_text": "Elected in 1968 on a promise of 'Peace with Honor', President Nixon sought to reduce US involvement without appearing to surrender. In 1969, he introduced 'Vietnamization'—a policy to train and equip the South Vietnamese army (ARVN) to take over combat operations, allowing the gradual withdrawal of US troops. However, to disrupt communist supply lines along the Ho Chi Minh Trail, Nixon secretly ordered the bombing and invasion of neighboring Cambodia (1970) and Laos (1971), expanding the war geographic scale and triggering massive protests at home. What was the strategy behind Nixon's policy of 'Vietnamization', and why did the secret expansion into Cambodia and Laos provoke intense domestic fury?",
       "specification_anchor": "US involvement in the Vietnam War, 1954–75: the turning point; the 1968 Tet Offensive and its military versus political impact, the Cronkite broadcast, Nixon's election, the Nixon Doctrine, and the policy of Vietnamisation.",
       "flashcards": [
         {
-          "term": "Poor People's Campaign (1968)",
-          "definition": "Martin Luther King Jr.'s final ambitious multiracial initiative to demand an Economic Bill of Rights, living wages, and federal anti-poverty legislation.",
-          "q": "What was the goal of King's Poor People's Campaign in 1968?",
-          "a": "To unite poor Americans of all races to demand federal guarantees for jobs, affordable housing, and living incomes."
+          "term": "Tet Offensive (1968)",
+          "definition": "The nationwide communist surprise offensive launched across South Vietnam on 30 January 1968 during the lunar new year holiday.",
+          "q": "What was the 1968 Tet Offensive?",
+          "a": "A coordinated surprise attack by 84,000 communist troops on over 100 cities, provincial capitals, and the US Embassy in Saigon."
         },
         {
-          "term": "Assassination of Martin Luther King Jr.",
-          "definition": "The shooting of Martin Luther King Jr. on the balcony of the Lorraine Motel in Memphis, Tennessee on 4 April 1968 by white segregationist James Earl Ray.",
-          "q": "When and where was Martin Luther King Jr. assassinated?",
-          "a": "On 4 April 1968 at the Lorraine Motel in Memphis, Tennessee, while supporting striking Black sanitation workers."
+          "term": "Credibility Gap",
+          "definition": "The growing public skepticism and distrust of official US government statements regarding the progress and winnability of the Vietnam War.",
+          "q": "What was the 'credibility gap' in Vietnam?",
+          "a": "The difference between optimistic government claims of imminent victory and the grim battlefield reality shown on television."
         },
         {
-          "term": "1968 Post-Assassination Riots",
-          "definition": "Outbreaks of grief, fury, and violent rioting in over 100 American cities (including Washington, Chicago, and Baltimore) immediately following King's assassination.",
-          "q": "How did American cities respond to Martin Luther King's assassination?",
-          "a": "Violent rebellions broke out in more than 100 cities, requiring 45,000 National Guard troops to restore order."
+          "term": "Walter Cronkite Editorial",
+          "definition": "CBS news anchor Cronkite's influential 27 February 1968 broadcast declaring the Vietnam War was mired in an unwinnable stalemate.",
+          "q": "What was the significance of Walter Cronkite's 1968 broadcast?",
+          "a": "It signaled to middle-class America that the war could not be won, prompting LBJ to abandon his re-election campaign."
         },
         {
-          "term": "Civil Rights Act of 1968 (Fair Housing)",
-          "definition": "Passed by Congress six days after King's murder as a tribute to his legacy, prohibiting racial and religious discrimination in housing sales and rentals.",
-          "q": "What legislation was passed immediately following King's assassination?",
-          "a": "The Civil Rights Act of 1968, which outlawed discrimination in the sale, financing, and rental of housing."
+          "term": "Vietnamisation",
+          "definition": "President Nixon's strategy to withdraw US ground forces while training and equipping South Vietnamese (ARVN) troops to assume combat.",
+          "q": "What was the core goal of Nixon's Vietnamisation policy?",
+          "a": "To withdraw American troops to satisfy domestic anti-war sentiment while preventing an immediate communist victory."
         },
         {
-          "term": "Splintering of the Civil Rights Movement",
-          "definition": "The loss of unified national leadership and ideological fractures between non-violent assimilationists (SCLC, NAACP) and militant separatists (SNCC, Panthers).",
-          "q": "Why did the civil rights coalition collapse after 1968?",
-          "a": "It fractured between non-violent integrationists and militant Black Power groups, losing white moderate support and central coordination."
+          "term": "The Nixon Doctrine (1969)",
+          "definition": "US policy stating America would honor defense treaties and provide aid, but expect Asian allies to fight their own ground wars.",
+          "q": "What did the Nixon Doctrine establish?",
+          "a": "That the United States would supply military aid and air support, but would not send ground troops to fight Asian civil wars."
         },
         {
-          "term": "Long-Term Legacy of the Movement",
-          "definition": "The permanent destruction of legal segregation, enfranchisement of millions of Black voters, and rise of Black mayors and congressmen, alongside lingering economic inequality.",
-          "q": "What were the lasting achievements of the Civil Rights Movement?",
-          "a": "Dismantling legal segregation, securing constitutional voting protections, and expanding Black political power across America."
+          "term": "Operation Menu (1969–70)",
+          "definition": "Nixon's secret, unauthorized B-52 carpet-bombing of neutral Cambodia to sever communist supply lines on the Ho Chi Minh Trail.",
+          "q": "What was Operation Menu?",
+          "a": "A 14-month secret bombing campaign inside neutral Cambodia to destroy North Vietnamese sanctuaries."
         }
       ],
-      "vocab_cloze_text": "In the final months of his life, Martin Luther King Jr. broadened his vision from southern desegregation to radical economic equality, organizing the multiracial [Poor People's Campaign] to demand federal guarantees for decent jobs and income. In March 1968, he traveled to Tennessee to march alongside 1,300 striking garbage workers in the [Memphis Sanitation Strike], who marched proudly wearing placards proclaiming 'I AM A MAN'. On the evening of 4 April 1968, King stepped onto the balcony of the Lorraine Motel and was shot dead by white supremacist sniper [James Earl Ray]. News of the murder detonated grief and fury across the country, unleashing the [1968 Holy Week Uprisings] in more than 100 American cities, including Washington DC and Chicago, which required 45,000 military troops to restore order. The loss of King's unifying moral voice accelerated the [Movement Fragmentation], as the traditional alliance between non-violent Christian ministers, white liberals, and militant youth permanently splintered.",
+      "vocab_cloze_text": "On 30 January 1968, communist forces launched the [Tet Offensive], assaulting over 100 cities and the US Embassy compound in Saigon. Although American and ARVN troops inflicted devastating casualties on the attackers, the televised carnage obliterated official claims that victory was near. This created an unbridgeable [Credibility Gap] between Pentagon assurances and reality. Influential journalist [Walter Cronkite Editorial] broadcast that the war was mired in an unwinnable stalemate, convincing President Johnson to withdraw from the 1968 election. After taking office, Richard Nixon implemented [Vietnamisation], shifting ground combat to South Vietnamese soldiers while proclaiming [The Nixon Doctrine] to justify troop withdrawals. However, to disrupt enemy supply lines, Nixon secretly ordered [Operation Menu] to carpet-bomb neutral Cambodia, igniting massive domestic protests.",
       "causal_domino_spine": {
         "title": "Tet Offensive, Cronkite Verdict & Vietnamization: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
