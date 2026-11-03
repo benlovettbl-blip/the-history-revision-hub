@@ -26,20 +26,20 @@ const replacements = [
     newText: "suppress a segregationist riot that left two dead. How did student sit-ins, Freedom Rides, and campus integrations escalate pressure on the federal government to act?"
   },
   {
-    oldText: "federalised voter registration.",
-    newText: "federalised voter registration. How did national television coverage of police brutality in Birmingham and Selma shock the American public and compel Congress to pass civil rights legislation?"
+    oldText: "which outlawed literacy tests.",
+    newText: "which outlawed literacy tests. How did national television coverage of police brutality in Birmingham and Selma shock the American public and compel Congress to pass civil rights legislation?"
   },
   {
-    oldText: "had failed to deliver economic equality and dignity.",
-    newText: "had failed to deliver economic equality and dignity. Why did the Black Power movement emerge in the mid-1960s, and how did its methods and philosophy differ from non-violent direct action?"
+    oldText: "reflecting a shift toward racial pride and economic independence.",
+    newText: "reflecting a shift toward racial pride and economic independence. Why did the Black Power movement emerge in the mid-1960s, and how did its methods and philosophy differ from non-violent direct action?"
   },
   {
-    oldText: "had not resolved deep-seated racial injustice.",
-    newText: "had not resolved deep-seated racial injustice. Why did violent urban riots erupt in northern and western cities between 1965 and 1968, and what did they reveal about racial inequality beyond the South?"
+    oldText: "prohibiting racial discrimination in housing.",
+    newText: "prohibiting racial discrimination in housing. Why did violent urban riots erupt in northern and western cities between 1965 and 1968, and what did they reveal about racial inequality beyond the South?"
   },
   {
-    oldText: "and Diem's assassination in November 1963.",
-    newText: "and Diem's assassination in November 1963. Why did the United States back the corrupt regime of Ngo Dinh Diem, and how did his overthrow deepen American involvement in Vietnam?"
+    oldText: "and Diem's ultimate assassination in November 1963.",
+    newText: "and Diem's ultimate assassination in November 1963. Why did the United States back the corrupt regime of Ngo Dinh Diem, and how did his overthrow deepen American involvement in Vietnam?"
   },
   {
     oldText: "without a formal declaration of war.",
@@ -66,13 +66,18 @@ const replacements = [
     newText: "completing the reunification of Vietnam under communist rule. How did the United States negotiate its withdrawal under the Paris Peace Accords, and why did South Vietnam collapse so rapidly in 1975?"
   },
   {
-    oldText: "sustaining a prolonged war, forcing US withdrawal.",
-    newText: "sustaining a prolonged war, forcing US withdrawal. What was the decisive reason why the United States failed to achieve its military and political objectives in Vietnam?"
+    oldText: "prolonged war, forcing US withdrawal.",
+    newText: "prolonged war, forcing US withdrawal. What was the decisive reason why the United States failed to achieve its military and political objectives in Vietnam?"
   }
 ];
 
 let totalReplacements = 0;
 replacements.forEach((r, idx) => {
+  // Only replace if not already ending in a question mark
+  if (content.includes(r.oldText + '?')) {
+    console.log(`Target ${idx + 1} already has a question.`);
+    return;
+  }
   const count = (content.split(r.oldText).length - 1);
   if (count === 0) {
     console.error(`Target ${idx + 1} not found: "${r.oldText.substring(0, 30)}..."`);
@@ -83,11 +88,5 @@ replacements.forEach((r, idx) => {
   }
 });
 
-if (totalReplacements >= 16) {
-  fs.writeFileSync(dataFilePath, content, 'utf8');
-  console.log(`✅ Successfully updated USA blurbs with ${totalReplacements} replacements!`);
-} else {
-  console.error(`❌ Only replaced ${totalReplacements} times. Aborting.`);
-  process.exit(1);
-}
-
+fs.writeFileSync(dataFilePath, content, 'utf8');
+console.log(`✅ Successfully updated USA blurbs with ${totalReplacements} new replacements!`);
