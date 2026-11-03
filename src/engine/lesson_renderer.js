@@ -7059,9 +7059,9 @@ export function renderLesson(lesson) {
       }
 
       const narrativeChunkHtml = `
-              <div id="para-${index + 1}" class="narrative-chunk" style="display: flex; flex-direction: column; margin-bottom: ${hasPureVisual ? '0' : '15px'}; padding: 16px 18px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: 1 1 58%; min-width: 0;">
+              <div id="para-${index + 1}" class="narrative-chunk ${hasPureVisual ? '' : 'standalone-narrative-chunk'}" style="display: flex; flex-direction: column; margin-bottom: ${hasPureVisual ? '0' : '15px'}; padding: 16px 18px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: 1 1 58%; min-width: 0;">
                 ${stageQ ? '' : headerBlockHtml}
-                <div class="narrative-text" style="width: 100%; line-height: 1.65; color: #1e293b; font-size: 1.05rem;">${styledContent}</div>
+                <div class="narrative-text" style="width: 100%; ${hasPureVisual ? '' : 'max-width: 880px;'} line-height: ${hasPureVisual ? '1.65' : '1.7'}; color: #1e293b; font-size: 1.05rem;">${styledContent}</div>
               </div>
       `;
 
@@ -7099,7 +7099,7 @@ export function renderLesson(lesson) {
       }
 
       htmlNarrative += `
-            <div class="standard-narrative-container" style="margin-bottom: 24px;">
+            <div class="standard-narrative-container" style="margin-bottom: 38px;">
               ${topNarrativeHtml}
               ${blockSourceHtml}
             </div>
