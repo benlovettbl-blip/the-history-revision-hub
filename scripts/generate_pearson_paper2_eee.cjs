@@ -178,7 +178,7 @@ function buildCoverPage(titleText, paperRef = '1HI0/B4') {
             <div>
               <div style="font-size: 14pt; font-weight: 800; margin-bottom: 2px;">Thursday 4 June 2026</div>
               <div style="font-size: 8.5pt; color: #18181b;">
-                Morning (Time: 1 hour 45 minutes - total time for <strong>both</strong> booklets)
+                Morning (Time: 1 hour 50 minutes - total time for <strong>both</strong> booklets)
               </div>
             </div>
             <div style="border: 1.5px solid #000; border-radius: 6px; padding: 4px 10px; text-align: right; background: #f4f4f5;">
@@ -221,7 +221,7 @@ function buildCoverPage(titleText, paperRef = '1HI0/B4') {
             <strong>Information</strong>
             <ul style="margin: 2px 0 0 0; padding-left: 18px;">
               <li>The total mark for this booklet is 32.</li>
-              <li>The total time for <strong>both</strong> booklets is 1 hour 45 minutes.</li>
+              <li>The total time for <strong>both</strong> booklets is 1 hour 50 minutes.</li>
               <li>The marks for <strong>each</strong> question are shown in brackets &mdash; <em>use this as a guide as to how much time to spend on each question.</em></li>
               <li><strong>Do not forget to complete booklet P.</strong></li>
             </ul>
@@ -271,54 +271,46 @@ function parseEeeMockHtml(htmlContent) {
   const doc = dom.window.document;
   const qBlocks = doc.querySelectorAll('.question-block');
 
-  let q1aText = '(a) Describe one characteristic of poverty in early Elizabethan England.';
-  let q1bText = '(b) Describe one characteristic of the English attempts to colonise Virginia.';
-  let q2Text = "Explain why the Northern Earls' Rebellion (1569-70) posed a significant danger to Elizabeth I.";
-  let q2Bullets = ['Mary, Queen of Scots', 'Anglo-Spanish relations'];
-  let q3Statement = 'Economic difficulties were the most significant challenge Elizabeth faced upon her accession in 1558.';
-  let q3Bullets = ['The royal debt', "Elizabeth's claim to the throne"];
-  let q4Statement = "Spanish strategic errors were the primary cause of England's triumph over the Armada.";
-  let q4Bullets = ['The command of the Duke of Medina Sidonia', 'The deployment of fireships'];
+  let q1aText = '';
+  let q1bText = '';
+  let q2Text = '';
+  let q2Bullets = [];
+  let q3Statement = '';
+  let q3Bullets = [];
+  let q4Statement = '';
+  let q4Bullets = [];
 
-  if (qBlocks.length >= 1) {
-    const raw = cleanText(qBlocks[0].querySelector('.question-text')?.textContent);
-    const cleaned = raw.replace(/^1\s*/, '').trim();
-    if (cleaned) q1aText = cleaned;
+  if (qBlocks.length < 5) {
+    throw new Error(`CRITICAL: EEE mock has ${qBlocks.length} question blocks! Expected at least 5.`);
   }
 
-  if (qBlocks.length >= 2) {
-    const raw = cleanText(qBlocks[1].querySelector('.question-text')?.textContent);
-    const cleaned = raw.replace(/^1\s*/, '').trim();
-    if (cleaned) q1bText = cleaned;
-  }
+  const raw1a = cleanText(qBlocks[0].querySelector('.question-text')?.textContent);
+  q1aText = raw1a.replace(/^1\s*/, '').trim();
 
-  if (qBlocks.length >= 3) {
-    const raw = cleanText(qBlocks[2].querySelector('.question-text')?.textContent);
-    const cleaned = raw.replace(/^2\s*/, '').trim();
-    if (cleaned) q2Text = cleaned;
-    const lis = Array.from(qBlocks[2].querySelectorAll('li')).map(li => li.textContent.trim());
-    if (lis.length >= 2) q2Bullets = lis;
-  }
+  const raw1b = cleanText(qBlocks[1].querySelector('.question-text')?.textContent);
+  q1bText = raw1b.replace(/^1\s*/, '').trim();
 
-  if (qBlocks.length >= 4) {
-    const raw = qBlocks[3].querySelector('.question-text')?.textContent;
-    if (raw) q3Statement = cleanStatement(raw);
-    const lis = Array.from(qBlocks[3].querySelectorAll('li')).map(li => li.textContent.trim());
-    if (lis.length >= 2) q3Bullets = lis;
-  }
+  const raw2 = cleanText(qBlocks[2].querySelector('.question-text')?.textContent);
+  q2Text = raw2.replace(/^2\s*/, '').trim();
+  q2Bullets = Array.from(qBlocks[2].querySelectorAll('li')).map(li => li.textContent.trim());
 
-  if (qBlocks.length >= 5) {
-    const raw = qBlocks[4].querySelector('.question-text')?.textContent;
-    if (raw) q4Statement = cleanStatement(raw);
-    const lis = Array.from(qBlocks[4].querySelectorAll('li')).map(li => li.textContent.trim());
-    if (lis.length >= 2) q4Bullets = lis;
-  }
+  const raw3 = qBlocks[3].querySelector('.question-text')?.textContent;
+  if (raw3) q3Statement = cleanStatement(raw3);
+  q3Bullets = Array.from(qBlocks[3].querySelectorAll('li')).map(li => li.textContent.trim());
+
+  const raw4 = qBlocks[4].querySelector('.question-text')?.textContent;
+  if (raw4) q4Statement = cleanStatement(raw4);
+  q4Bullets = Array.from(qBlocks[4].querySelectorAll('li')).map(li => li.textContent.trim());
 
   if (!q1aText.startsWith('(a)')) {
     q1aText = '(a) ' + q1aText.replace(/^\(a\)\s*/i, '');
   }
   if (!q1bText.startsWith('(b)')) {
     q1bText = '(b) ' + q1bText.replace(/^\(b\)\s*/i, '');
+  }
+
+  if (!q1aText || !q1bText || !q2Text || q2Bullets.length < 2 || !q3Statement || q3Bullets.length < 2 || !q4Statement || q4Bullets.length < 2) {
+    throw new Error(`CRITICAL: Incomplete parse of EEE mock questions or bullets! Never use silent generic fallbacks.`);
   }
 
   return {

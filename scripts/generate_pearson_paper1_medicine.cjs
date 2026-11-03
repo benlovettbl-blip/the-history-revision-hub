@@ -184,7 +184,7 @@ function buildCoverPage(mockTitle = 'Predicted Mock Paper', paperRef = '1HI0/11'
             <div>
               <div style="font-size: 14pt; font-weight: 800; margin-bottom: 2px;">Wednesday 15 May 2026</div>
               <div style="font-size: 8.5pt; color: #18181b;">
-                Morning (Time: 1 hour 15 minutes)
+                Morning (Time: 1 hour 20 minutes)
               </div>
             </div>
             <div style="border: 1.5px solid #000; border-radius: 6px; padding: 4px 10px; text-align: right; background: #f4f4f5;">
@@ -278,7 +278,7 @@ function buildSourcesCoverPage(mockTitle = 'Predicted Mock Paper', paperRef = '1
             <div>
               <div style="font-size: 15pt; font-weight: 800; margin-bottom: 2px;">Wednesday 15 May 2026</div>
               <div style="font-size: 9pt; color: #18181b;">
-                Morning (Time: 1 hour 15 minutes)
+                Morning (Time: 1 hour 20 minutes)
               </div>
             </div>
             <div style="border: 1.5px solid #000; border-radius: 6px; padding: 4px 10px; text-align: right; background: #f4f4f5;">
@@ -336,18 +336,18 @@ function parseMedicineHtml(filePath) {
   const titleEl = doc.querySelector('title, h1, h2');
   if (titleEl) title = titleEl.textContent.trim();
 
-  let q1a = 'Describe one feature of the clinical use and diagnostic limitations of mobile X-ray units near the frontline.';
-  let q1b = 'Describe one feature of trench fever, including its symptoms, cause, or prevention.';
-  let q2a = 'Study Sources A and B in the Sources Booklet. How useful are Sources A and B for an enquiry into the physical trauma and preventative treatments associated with German poison gas attacks? Explain your answer, using Sources A and B and your knowledge of the historical context.';
-  let q2b = 'Study Source B. How could you follow up Source B to find out more about the preventative treatments associated with German poison gas attacks? In your answer, you must give the question you would ask and the type of source you could use. Complete the table below.';
+  let q1a = '';
+  let q1b = '';
+  let q2a = '';
+  let q2b = '';
   let q2bSourceLetter = 'B';
-  let q3 = 'Explain one way in which ideas about the cause of illness in the Medieval period (c1250–c1500) were similar to ideas about the cause of illness in the Renaissance period (c1500–c1700).';
-  let q4 = 'Explain why there was rapid progress in the development and mass production of penicillin in the years c1938–c1945.';
-  let q4Bullets = ['Howard Florey and Ernst Chain', 'US Government funding and the Second World War'];
-  let q5 = '‘Edward Jenner’s discovery of the smallpox vaccination was the most significant turning point in the prevention of disease in the period c1700–c1900.’ How far do you agree? Explain your answer.';
-  let q5Bullets = ['Inoculation', 'The 1875 Public Health Act'];
-  let q6 = '‘The discovery of the structure of DNA was the most significant breakthrough in understanding the causes of illness in the period c1900–present.’ How far do you agree? Explain your answer.';
-  let q6Bullets = ['James Watson and Francis Crick', 'Lifestyle factors (e.g., smoking and lung cancer)'];
+  let q3 = '';
+  let q4 = '';
+  let q4Bullets = [];
+  let q5 = '';
+  let q5Bullets = [];
+  let q6 = '';
+  let q6Bullets = [];
 
   // Parse using elements
   const qBlocks = doc.querySelectorAll('.question-block');
@@ -408,6 +408,10 @@ function parseMedicineHtml(filePath) {
   if (srcBlocks.length >= 2) {
     srcAHtml = srcBlocks[0].innerHTML.trim();
     srcBHtml = srcBlocks[1].innerHTML.trim();
+  }
+
+  if (!q1a || !q1b || !q2a || !q2b || !q3 || !q4 || q4Bullets.length < 2 || !q5 || q5Bullets.length < 2 || !q6 || q6Bullets.length < 2) {
+    throw new Error(`CRITICAL: Incomplete parse of Medicine mock ${filePath}! Never use silent generic fallbacks.`);
   }
 
   return {

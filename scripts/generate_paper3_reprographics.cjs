@@ -69,29 +69,41 @@ function parsePaper3Html(filePath, unitId) {
 
   // Extract Question 2 Prompt & Bullets
   const q2Match = html.match(/Explain why (.*?)\.\s*(?:\(12|<span|\n|<)/i);
-  const q2Prompt = q2Match ? `Explain why ${q2Match[1].trim().replace(/\.$/, '')}.` : 'Explain why the situation was unstable.';
+  if (!q2Match) {
+    throw new Error(`Failed to match Question 2 prompt in ${filePath}!`);
+  }
+  const q2Prompt = `Explain why ${q2Match[1].trim().replace(/\.$/, '')}.`;
 
   const bullets = [];
-  if (unitId === 'usa') {
-    const bulletsMatch = html.match(/<ul>([\s\S]*?)<\/ul>/i);
+  const q2Pos = html.indexOf('2. Explain why');
+  if (q2Pos !== -1) {
+    const q2Sub = html.substring(q2Pos, q2Pos + 1500);
+    const bulletsMatch = q2Sub.match(/<ul>([\s\S]*?)<\/ul>/i) || q2Sub.match(/<div class="bullet-point-box">([\s\S]*?)<\/div>/i);
     if (bulletsMatch) {
       const bItems = bulletsMatch[1].match(/<li>(.*?)<\/li>/gi) || [];
       bItems.forEach(b => bullets.push(b.replace(/<[^>]+>/g, '').trim()));
     }
-  } else {
-    // Weimar: extract from .bullet-point-box
-    const boxMatch = html.match(/<div class="bullet-point-box">([\s\S]*?)<\/div>/i);
-    if (boxMatch) {
-      const bItems = boxMatch[1].match(/<li>(.*?)<\/li>/gi) || [];
-      bItems.forEach(b => bullets.push(b.replace(/<[^>]+>/g, '').trim()));
+  }
+
+  // Secondary fallback search if not found in first substring
+  if (bullets.length < 2) {
+    if (unitId === 'usa') {
+      const bulletsMatch = html.match(/<ul>([\s\S]*?)<\/ul>/i);
+      if (bulletsMatch) {
+        const bItems = bulletsMatch[1].match(/<li>(.*?)<\/li>/gi) || [];
+        bItems.forEach(b => bullets.push(b.replace(/<[^>]+>/g, '').trim()));
+      }
+    } else {
+      const boxMatch = html.match(/<div class="bullet-point-box">([\s\S]*?)<\/div>/i);
+      if (boxMatch) {
+        const bItems = boxMatch[1].match(/<li>(.*?)<\/li>/gi) || [];
+        bItems.forEach(b => bullets.push(b.replace(/<[^>]+>/g, '').trim()));
+      }
     }
   }
-  if (bullets.length === 0) {
-    if (unitId === 'usa') {
-      bullets.push('Legal challenges by civil rights groups', 'Federal government intervention');
-    } else {
-      bullets.push('Political violence and uprisings', 'Economic instability and inflation');
-    }
+
+  if (bullets.length < 2) {
+    throw new Error(`CRITICAL: Failed to parse 2 bullet points for Question 2 in ${filePath}! Never use silent generic fallback.`);
   }
 
   // Extract Sources and Interpretations
@@ -331,7 +343,7 @@ function buildCoverPage(d) {
             <div>
               <div style="font-size: 14pt; font-weight: 800; margin-bottom: 2px;">Thursday 11 June 2026</div>
               <div style="font-size: 8.5pt; color: #18181b;">
-                Morning (Time: 1 hour 20 minutes)
+                Morning (Time: 1 hour 30 minutes)
               </div>
             </div>
             <div style="border: 1.5px solid #000; border-radius: 6px; padding: 4px 10px; text-align: right; background: #f4f4f5;">
@@ -426,7 +438,7 @@ function buildSourcesCoverPage(d) {
             <div>
               <div style="font-size: 15pt; font-weight: 800; margin-bottom: 2px;">Thursday 11 June 2026</div>
               <div style="font-size: 9pt; color: #18181b;">
-                Morning (Time: 1 hour 20 minutes)
+                Morning (Time: 1 hour 30 minutes)
               </div>
             </div>
             <div style="border: 1.5px solid #000; border-radius: 6px; padding: 4px 10px; text-align: right; background: #f4f4f5;">

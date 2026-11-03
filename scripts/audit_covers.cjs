@@ -13,7 +13,7 @@ async function auditCovers() {
       path: `public/pdfs/mocks/usa/usa_mock_${i + 1}_question_booklet.pdf`,
       id: `usa_mock_${i + 1}`,
       expectedCode: '1HI0/33',
-      expectedTime: '1 hour 20 minutes',
+      expectedTime: '1 hour 30 minutes',
       expectedMarks: '56'
     })),
     // Weimar
@@ -21,7 +21,7 @@ async function auditCovers() {
       path: `public/pdfs/mocks/weimar_nazi_germany/${id}_question_booklet.pdf`,
       id,
       expectedCode: '1HI0/31',
-      expectedTime: '1 hour 20 minutes',
+      expectedTime: '1 hour 30 minutes',
       expectedMarks: '56'
     })),
     // Medicine
@@ -29,14 +29,15 @@ async function auditCovers() {
       path: `public/pdfs/mocks/edexcel_medicine/${id}_question_booklet.pdf`,
       id,
       expectedCode: '1HI0/11',
-      expectedTime: '1 hour 15 minutes',
-      expectedMarks: '56'
+      expectedTime: '1 hour 20 minutes',
+      expectedMarks: '52'
     })),
     // CME
     ...['cme_mock_a', 'cme_mock_b', 'cme_mock_c', 'cme_mock_d', 'cme_mock_e', 'cme_mock_radar'].map(id => ({
       path: `public/pdfs/mocks/cme_new/${id}.pdf`,
       id,
       expectedCode: '1HI0/P5',
+      expectedTime: '1 hour 50 minutes',
       expectedMarks: '32'
     })),
     // EEE
@@ -44,6 +45,7 @@ async function auditCovers() {
       path: `public/pdfs/mocks/eee/${id}.pdf`,
       id,
       expectedCode: '1HI0/B4',
+      expectedTime: '1 hour 50 minutes',
       expectedMarks: '32'
     }))
   ];
@@ -58,7 +60,7 @@ async function auditCovers() {
     const buf = fs.readFileSync(p.path);
     const data = await pdfParse(buf);
     const text = data.text;
-    const coverText = text.slice(0, 800).replace(/\s+/g, ' ');
+    const coverText = text.slice(0, 1500).replace(/\s+/g, ' ');
 
     if (!coverText.includes(p.expectedCode)) {
       errors.push(`${p.id}: Expected paper code "${p.expectedCode}" not found on cover!`);
