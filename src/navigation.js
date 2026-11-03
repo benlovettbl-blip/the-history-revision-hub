@@ -604,8 +604,10 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName === 'revision-builder' ||
     viewName === 'year11-tracker'
   ) {
-    const { renderGcseSpecTracker } = await import('./gcse_spec_tracker.js');
-    await renderGcseSpecTracker(param || 'audit');
+    // Specification Tracker is temporarily paused. Gracefully redirect to GCSE dashboard.
+    appStore.state.currentView = 'dashboard';
+    window.location.hash = '';
+    renderDashboard();
   } else {
     console.warn(`[Router] Unrecognized view '${viewName}', gracefully falling back to dashboard.`);
     appStore.state.currentView = 'dashboard';

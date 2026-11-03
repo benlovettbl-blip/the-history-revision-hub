@@ -341,32 +341,6 @@ export function renderDashboard() {
     });
     html += `
         </div>
-
-        <!-- GCSE Specification Tracker & Revision Engine Hero Showcase -->
-        <div class="year11-spec-tracker-banner" style="margin-bottom: 2rem; background: linear-gradient(135deg, #091e3a 0%, #1e3a8a 60%, #172554 100%); border-radius: 14px; padding: 22px 26px; color: #ffffff; box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.4); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; border: 1.5px solid rgba(255,255,255,0.18); position: relative; overflow: hidden;">
-          <div style="position: absolute; right: -20px; top: -30px; font-size: 11rem; color: rgba(255, 255, 255, 0.03); pointer-events: none; z-index: 0;">
-            <i class="fa-solid fa-list-check"></i>
-          </div>
-          <div style="flex: 1; min-width: 290px; position: relative; z-index: 1;">
-            <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(59, 130, 246, 0.25); border: 1px solid rgba(147, 197, 253, 0.4); padding: 4px 12px; border-radius: 20px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; color: #93c5fd;">
-              <i class="fa-solid fa-bolt"></i> Interactive Specification Engine &bull; Active 2026 Baseline
-            </div>
-            <h3 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.55rem; font-weight: 800; color: #ffffff; line-height: 1.25;">
-              GCSE Specification Tracker &amp; Revision Builder
-            </h3>
-            <p style="margin: 0; color: #cbd5e1; font-size: 0.92rem; line-height: 1.45; max-width: 700px;">
-              Your complete terminal revision roadmap: live Red-Amber-Green self-audit matrix covering verbatim Pearson Issue 6 targets, direct lesson bridges, printable A4 checklist, 12-mark causation generator, and rapid diagnostic retrieval sprints.
-            </p>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; position: relative; z-index: 1;">
-            <button type="button" class="btn" onclick="window.switchView('gcse-tracker', 'audit')" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: #ffffff; padding: 11px 22px; border-radius: 8px; font-weight: 700; font-size: 0.92rem; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='none';">
-              <i class="fa-solid fa-list-check"></i> Launch Spec Tracker
-            </button>
-            <button type="button" class="btn" onclick="window.switchView('gcse-tracker', 'printable')" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); padding: 9px 18px; border-radius: 8px; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
-              <i class="fa-solid fa-print"></i> Personalised A4 Checklist
-            </button>
-          </div>
-        </div>
       </div>
     `;
   }
