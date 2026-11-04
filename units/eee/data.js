@@ -1,5 +1,4 @@
-// EEE Unit Data - Calibrated with 100% Traceable Quizzes
-const eee_data = {
+export default {
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
     "instructions": [
@@ -3999,10 +3998,10 @@ const eee_data = {
               "id": "eee_l4_source_c",
               "letter": "C",
               "title": "Source C: The Deed of Abdication Extorted from Mary at Lochleven Castle (24 July 1567)",
-              "caption": "Mary of Guise (1515–1560), mother of Mary Queen of Scots, who entrenched French military influence and Catholic power in Scotland during Elizabeth's youth.",
+              "caption": "Official deed of abdication signed under duress by Mary Stuart at Lochleven Castle on 24 July 1567, renouncing the Scottish throne in favour of her infant son James VI.",
               "desc": "Portrait of Mary of Guise in French renaissance court mourning.",
-              "provenance": "Acts of the Parliament of Scotland, Lochleven Castle, 24 July 1567.",
-              "citation": "National Records of Scotland, Edinburgh (PA2/10), 1567.",
+              "provenance": "National Records of Scotland, Edinburgh (SP13/112), July 1567.",
+              "citation": "National Records of Scotland, Edinburgh (SP13/112), July 1567.",
               "hinge_question": "How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?",
               "source_context": "Portrait of Mary of Guise. The Guise family was the most militant Catholic faction in France. English Protestants feared that Mary Stuart would act as a puppet for her French Guise uncles, who possessed the military resources to invade England from Scotland. **Hinge Question:** How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?",
               "context": "Portrait of Mary of Guise. The Guise family was the most militant Catholic faction in France.",
@@ -4010,12 +4009,6 @@ const eee_data = {
               "question_type": "Reliability & Provenance",
               "enquiry_question": "How does the provenance of Source C undermine its reliability as evidence that Mary Stuart freely renounced the Scottish Crown?",
               "model_answer": "Source C was signed under direct duress while Mary was imprisoned on an island in Lochleven Castle, with Lord Lindsay threatening to cut her throat unless she signed away her crown.",
-              "provenance_clues": {
-                "author": "French court portraitist attached to the royal Valois court.",
-                "audience": "French and Scottish aristocrats upholding the Auld Alliance.",
-                "motive": "To represent Mary of Guise as the resolute defender of Catholic orthodoxy in Scotland.",
-                "hinge_question": "How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?"
-              },
               "teacher_notes": {
                 "source_context": "Following the scandal of her marriage to Bothwell (the prime suspect in Darnley's murder), Protestant Scottish confederate lords imprisoned Mary in Lochleven Castle and forced her signature. Mary immediately revoked her abdication upon escaping from the island in May 1568. **Hinge Question:** Why did Mary's forced abdication create a dangerous constitutional dilemma for Queen Elizabeth when Mary fled across the Solway Firth into England?"
               },
@@ -4057,10 +4050,10 @@ const eee_data = {
               "id": "eee_l4_source_d",
               "letter": "D",
               "title": "Source D: The Disputed Casket Letters Produced by Regent Moray at the York Inquiry (December 1568)",
-              "caption": "King Francis II of France (1544–1560), first husband of Mary Stuart, who ordered the royal coat of arms of England to be quartered with the arms of France and Scotland.",
+              "caption": "Extract from the disputed 'Casket Letters' presented by Scottish Protestant lords at the 1568 York Conference, purporting to prove Mary Stuart conspired in Lord Darnley's murder.",
               "desc": "Portrait of Francis II, King of France by François Clouet.",
-              "provenance": "Copies preserved in The National Archives, Kew (SP 53/2), produced before English Commissioners at York, December 1568.",
-              "citation": "The National Archives, Kew (SP 53/2), 1568.",
+              "provenance": "The National Archives, Kew (SP 53/2), December 1568.",
+              "citation": "The National Archives, Kew (SP 53/2), December 1568.",
               "hinge_question": "Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?",
               "source_context": "In 1558, upon the death of Mary I, King Henry II of France declared his daughter-in-law Mary Stuart the rightful Queen of England. Young Francis II and Mary displayed the English royal arms on their silverware and banners, an unforgivable direct insult to Elizabeth's legitimacy. **Hinge Question:** Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?",
               "context": "In 1558, upon the death of Mary I, King Henry II of France declared his daughter-in-law Mary Stuart the rightful Queen of England.",
@@ -4068,12 +4061,6 @@ const eee_data = {
               "question_type": "Author's Purpose",
               "enquiry_question": "Why did the Scottish Protestant lords produce the Casket Letters at the York Inquiry?",
               "model_answer": "The Scottish lords wanted to prove Mary was complicit in Darnley's murder and an unfit adulteress, preventing Elizabeth from using English troops to restore Mary to the Scottish throne.",
-              "provenance_clues": {
-                "author": "François Clouet, court painter to the Kings of France.",
-                "audience": "The royal court of France and European diplomatic circles.",
-                "motive": "To celebrate Francis II's royal standing and his wife's dynastic claims across Britain.",
-                "hinge_question": "Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?"
-              },
               "teacher_notes": {
                 "source_context": "The Casket Letters were eight unsigned French letters and sonnets allegedly found in a silver casket left behind by Bothwell. Mary was denied sight of the originals or permission to defend herself. Cecil engineered a verdict that Darnley's murder was 'not proven' against either side, justifying Mary's indefinite English detention. **Hinge Question:** How did Cecil's inconclusive verdict at York serve Elizabeth's strategic foreign policy perfectly?"
               },
@@ -4123,10 +4110,10 @@ const eee_data = {
               "id": "eee_l4_source_e",
               "letter": "E",
               "title": "Source E: Sir Ralph Sadler's Confidential Dispatch on Mary's Custody at Bolton Castle (January 1569)",
-              "caption": "Henri, 3rd Duke of Guise ('Le Balafré'), Mary Stuart's cousin, who formulated invasion plans with Spain to depose Elizabeth and rescue Mary.",
+              "caption": "Confidential dispatch from English commissioner Sir Ralph Sadler at Bolton Castle to William Cecil, warning of Mary Stuart's dangerous charisma and persuasive influence over English Catholics.",
               "desc": "Portrait of Henri, Duke of Guise in damascened armor.",
-              "provenance": "The National Archives, Kew (SP 53/3), Sir Ralph Sadler to Sir William Cecil, Bolton Castle, January 1569.",
-              "citation": "The National Archives, Kew (SP 53/3), January 1569.",
+              "provenance": "British Library, London (Cotton MS Caligula C.I), January 1569.",
+              "citation": "British Library, London (Cotton MS Caligula C.I), January 1569.",
               "hinge_question": "How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?",
               "source_context": "Portrait of Henri, Duke of Guise. In the Throckmorton Plot of 1583, French Catholic forces under the Duke of Guise were scheduled to land in Sussex with Spanish financial backing, liberate Mary Stuart from imprisonment, and place her upon the English throne. **Hinge Question:** How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?",
               "context": "Portrait of Henri, Duke of Guise. In the Throckmorton Plot of 1583.",
@@ -4134,12 +4121,6 @@ const eee_data = {
               "question_type": "Source Inference",
               "enquiry_question": "What can you infer from Source E about the immediate domestic threat posed by Mary Stuart's presence in northern England?",
               "model_answer": "Source E proves that Mary's royal bloodline and Catholic faith acted as an immediate magnet for discontented Catholic gentry in the north, creating an acute fear of rebellion that materialized in late 1569.",
-              "provenance_clues": {
-                "author": "French school portraitist attached to the Catholic League.",
-                "audience": "Militant French Catholics and Spanish Habsburg allies.",
-                "motive": "To project Guise's charismatic military leadership as the champion of the Counter-Reformation.",
-                "hinge_question": "How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?"
-              },
               "teacher_notes": {
                 "source_context": "Mary was moved from Carlisle Castle to Bolton Castle in Yorkshire under the charge of Sir Francis Knollys and Sir Ralph Sadler. Her presence in the deeply Catholic north galvanized the Earls of Northumberland and Westmorland to plan the 1569 rebellion. **Hinge Question:** Why did Mary's presence in northern England pose a far greater threat to Elizabeth than if Mary had remained in exile in France?"
               },
@@ -4432,10 +4413,10 @@ const eee_data = {
           "id": "eee_l4_source_c",
           "letter": "C",
           "title": "Source C: The Deed of Abdication Extorted from Mary at Lochleven Castle (24 July 1567)",
-          "caption": "Mary of Guise (1515–1560), mother of Mary Queen of Scots, who entrenched French military influence and Catholic power in Scotland during Elizabeth's youth.",
+          "caption": "Official deed of abdication signed under duress by Mary Stuart at Lochleven Castle on 24 July 1567, renouncing the Scottish throne in favour of her infant son James VI.",
           "desc": "Portrait of Mary of Guise in French renaissance court mourning.",
-          "provenance": "Acts of the Parliament of Scotland, Lochleven Castle, 24 July 1567.",
-          "citation": "National Records of Scotland, Edinburgh (PA2/10), 1567.",
+          "provenance": "National Records of Scotland, Edinburgh (SP13/112), July 1567.",
+          "citation": "National Records of Scotland, Edinburgh (SP13/112), July 1567.",
           "hinge_question": "How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?",
           "source_context": "Portrait of Mary of Guise. The Guise family was the most militant Catholic faction in France. English Protestants feared that Mary Stuart would act as a puppet for her French Guise uncles, who possessed the military resources to invade England from Scotland. **Hinge Question:** How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?",
           "context": "Portrait of Mary of Guise. The Guise family was the most militant Catholic faction in France.",
@@ -4443,12 +4424,6 @@ const eee_data = {
           "question_type": "Reliability & Provenance",
           "enquiry_question": "How does the provenance of Source C undermine its reliability as evidence that Mary Stuart freely renounced the Scottish Crown?",
           "model_answer": "Source C was signed under direct duress while Mary was imprisoned on an island in Lochleven Castle, with Lord Lindsay threatening to cut her throat unless she signed away her crown.",
-          "provenance_clues": {
-            "author": "French court portraitist attached to the royal Valois court.",
-            "audience": "French and Scottish aristocrats upholding the Auld Alliance.",
-            "motive": "To represent Mary of Guise as the resolute defender of Catholic orthodoxy in Scotland.",
-            "hinge_question": "How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?"
-          },
           "teacher_notes": {
             "source_context": "Following the scandal of her marriage to Bothwell (the prime suspect in Darnley's murder), Protestant Scottish confederate lords imprisoned Mary in Lochleven Castle and forced her signature. Mary immediately revoked her abdication upon escaping from the island in May 1568. **Hinge Question:** Why did Mary's forced abdication create a dangerous constitutional dilemma for Queen Elizabeth when Mary fled across the Solway Firth into England?"
           },
@@ -4459,10 +4434,10 @@ const eee_data = {
           "id": "eee_l4_source_d",
           "letter": "D",
           "title": "Source D: The Disputed Casket Letters Produced by Regent Moray at the York Inquiry (December 1568)",
-          "caption": "King Francis II of France (1544–1560), first husband of Mary Stuart, who ordered the royal coat of arms of England to be quartered with the arms of France and Scotland.",
+          "caption": "Extract from the disputed 'Casket Letters' presented by Scottish Protestant lords at the 1568 York Conference, purporting to prove Mary Stuart conspired in Lord Darnley's murder.",
           "desc": "Portrait of Francis II, King of France by François Clouet.",
-          "provenance": "Copies preserved in The National Archives, Kew (SP 53/2), produced before English Commissioners at York, December 1568.",
-          "citation": "The National Archives, Kew (SP 53/2), 1568.",
+          "provenance": "The National Archives, Kew (SP 53/2), December 1568.",
+          "citation": "The National Archives, Kew (SP 53/2), December 1568.",
           "hinge_question": "Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?",
           "source_context": "In 1558, upon the death of Mary I, King Henry II of France declared his daughter-in-law Mary Stuart the rightful Queen of England. Young Francis II and Mary displayed the English royal arms on their silverware and banners, an unforgivable direct insult to Elizabeth's legitimacy. **Hinge Question:** Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?",
           "context": "In 1558, upon the death of Mary I, King Henry II of France declared his daughter-in-law Mary Stuart the rightful Queen of England.",
@@ -4470,12 +4445,6 @@ const eee_data = {
           "question_type": "Author's Purpose",
           "enquiry_question": "Why did the Scottish Protestant lords produce the Casket Letters at the York Inquiry?",
           "model_answer": "The Scottish lords wanted to prove Mary was complicit in Darnley's murder and an unfit adulteress, preventing Elizabeth from using English troops to restore Mary to the Scottish throne.",
-          "provenance_clues": {
-            "author": "François Clouet, court painter to the Kings of France.",
-            "audience": "The royal court of France and European diplomatic circles.",
-            "motive": "To celebrate Francis II's royal standing and his wife's dynastic claims across Britain.",
-            "hinge_question": "Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?"
-          },
           "teacher_notes": {
             "source_context": "The Casket Letters were eight unsigned French letters and sonnets allegedly found in a silver casket left behind by Bothwell. Mary was denied sight of the originals or permission to defend herself. Cecil engineered a verdict that Darnley's murder was 'not proven' against either side, justifying Mary's indefinite English detention. **Hinge Question:** How did Cecil's inconclusive verdict at York serve Elizabeth's strategic foreign policy perfectly?"
           },
@@ -4486,10 +4455,10 @@ const eee_data = {
           "id": "eee_l4_source_e",
           "letter": "E",
           "title": "Source E: Sir Ralph Sadler's Confidential Dispatch on Mary's Custody at Bolton Castle (January 1569)",
-          "caption": "Henri, 3rd Duke of Guise ('Le Balafré'), Mary Stuart's cousin, who formulated invasion plans with Spain to depose Elizabeth and rescue Mary.",
+          "caption": "Confidential dispatch from English commissioner Sir Ralph Sadler at Bolton Castle to William Cecil, warning of Mary Stuart's dangerous charisma and persuasive influence over English Catholics.",
           "desc": "Portrait of Henri, Duke of Guise in damascened armor.",
-          "provenance": "The National Archives, Kew (SP 53/3), Sir Ralph Sadler to Sir William Cecil, Bolton Castle, January 1569.",
-          "citation": "The National Archives, Kew (SP 53/3), January 1569.",
+          "provenance": "British Library, London (Cotton MS Caligula C.I), January 1569.",
+          "citation": "British Library, London (Cotton MS Caligula C.I), January 1569.",
           "hinge_question": "How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?",
           "source_context": "Portrait of Henri, Duke of Guise. In the Throckmorton Plot of 1583, French Catholic forces under the Duke of Guise were scheduled to land in Sussex with Spanish financial backing, liberate Mary Stuart from imprisonment, and place her upon the English throne. **Hinge Question:** How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?",
           "context": "Portrait of Henri, Duke of Guise. In the Throckmorton Plot of 1583.",
@@ -4497,12 +4466,6 @@ const eee_data = {
           "question_type": "Source Inference",
           "enquiry_question": "What can you infer from Source E about the immediate domestic threat posed by Mary Stuart's presence in northern England?",
           "model_answer": "Source E proves that Mary's royal bloodline and Catholic faith acted as an immediate magnet for discontented Catholic gentry in the north, creating an acute fear of rebellion that materialized in late 1569.",
-          "provenance_clues": {
-            "author": "French school portraitist attached to the Catholic League.",
-            "audience": "Militant French Catholics and Spanish Habsburg allies.",
-            "motive": "To project Guise's charismatic military leadership as the champion of the Counter-Reformation.",
-            "hinge_question": "How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?"
-          },
           "teacher_notes": {
             "source_context": "Mary was moved from Carlisle Castle to Bolton Castle in Yorkshire under the charge of Sir Francis Knollys and Sir Ralph Sadler. Her presence in the deeply Catholic north galvanized the Earls of Northumberland and Westmorland to plan the 1569 rebellion. **Hinge Question:** Why did Mary's presence in northern England pose a far greater threat to Elizabeth than if Mary had remained in exile in France?"
           },
@@ -6474,10 +6437,10 @@ const eee_data = {
               "id": "eee_l6_source_e",
               "letter": "E",
               "title": "Source E: The Duke of Parma's Dispatch to King Philip II on the Armada Strategy (January 1588)",
-              "caption": "Alexander Farnese, Prince and Duke of Parma (1545–1592), whose brilliant recapture of Antwerp in 1585 forced Elizabeth to intervene militarily via the Treaty of Nonsuch.",
+              "caption": "Confidential military dispatch from the Duke of Parma in Flanders to King Philip II, warning that his invasion barges could not cross the Channel without a secured deep-water port.",
               "desc": "Portrait of Alexander Farnese, Duke of Parma in armor with the collar of the Golden Fleece.",
-              "provenance": "General Archive of Simancas, Spain (Estado, leg. 594), Duke of Parma to Philip II, Brussels, January 1588.",
-              "citation": "General Archive of Simancas (Estado, leg. 594), 1588.",
+              "provenance": "Archivo General de Simancas, Spain (Estado, legajo 594), January 1588.",
+              "citation": "Archivo General de Simancas, Spain (Estado, legajo 594), January 1588.",
               "hinge_question": "How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?",
               "source_context": "Portrait of the Duke of Parma, the greatest military strategist of his age. In 1584, William of Orange was assassinated by a Catholic gunman. When Parma captured Antwerp in August 1585, the Dutch Revolt was on the verge of collapse, forcing Elizabeth to abandon neutrality and sign the Treaty of Nonsuch. **Hinge Question:** How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?",
               "context": "Portrait of the Duke of Parma, the greatest military strategist of his age.",
@@ -6485,12 +6448,6 @@ const eee_data = {
               "question_type": "Author's Purpose",
               "enquiry_question": "Why did the Duke of Parma write this urgent warning to King Philip II before the Armada sailed?",
               "model_answer": "Parma wanted to alert Philip to the fatal operational flaw in the invasion plan: his barges were unarmed and unseaworthy, making rendezvous impossible without total Spanish naval mastery.",
-              "provenance_clues": {
-                "author": "Otto van Veen, Flemish court painter to the Habsburg governor.",
-                "audience": "King Philip II of Spain and European military circles.",
-                "motive": "To celebrate Parma's ruthless and invincible military leadership on behalf of the Catholic King.",
-                "hinge_question": "How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?"
-              },
               "teacher_notes": {
                 "source_context": "Philip II's grand strategy required two separate forces—Medina Sidonia's fleet from Spain and Parma's Army of Flanders—to rendezvous off the Flemish coast without possessing a deep-water port. Parma warned repeatedly that communication was impossible in the presence of Dutch flyboats and English galleons. **Hinge Question:** How did the lack of a deep-water port in the Netherlands doom Philip II's Armada plan before the ships even left Lisbon?"
               },
@@ -6839,10 +6796,10 @@ const eee_data = {
           "id": "eee_l6_source_e",
           "letter": "E",
           "title": "Source E: The Duke of Parma's Dispatch to King Philip II on the Armada Strategy (January 1588)",
-          "caption": "Alexander Farnese, Prince and Duke of Parma (1545–1592), whose brilliant recapture of Antwerp in 1585 forced Elizabeth to intervene militarily via the Treaty of Nonsuch.",
+          "caption": "Confidential military dispatch from the Duke of Parma in Flanders to King Philip II, warning that his invasion barges could not cross the Channel without a secured deep-water port.",
           "desc": "Portrait of Alexander Farnese, Duke of Parma in armor with the collar of the Golden Fleece.",
-          "provenance": "General Archive of Simancas, Spain (Estado, leg. 594), Duke of Parma to Philip II, Brussels, January 1588.",
-          "citation": "General Archive of Simancas (Estado, leg. 594), 1588.",
+          "provenance": "Archivo General de Simancas, Spain (Estado, legajo 594), January 1588.",
+          "citation": "Archivo General de Simancas, Spain (Estado, legajo 594), January 1588.",
           "hinge_question": "How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?",
           "source_context": "Portrait of the Duke of Parma, the greatest military strategist of his age. In 1584, William of Orange was assassinated by a Catholic gunman. When Parma captured Antwerp in August 1585, the Dutch Revolt was on the verge of collapse, forcing Elizabeth to abandon neutrality and sign the Treaty of Nonsuch. **Hinge Question:** How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?",
           "context": "Portrait of the Duke of Parma, the greatest military strategist of his age.",
@@ -6850,12 +6807,6 @@ const eee_data = {
           "question_type": "Author's Purpose",
           "enquiry_question": "Why did the Duke of Parma write this urgent warning to King Philip II before the Armada sailed?",
           "model_answer": "Parma wanted to alert Philip to the fatal operational flaw in the invasion plan: his barges were unarmed and unseaworthy, making rendezvous impossible without total Spanish naval mastery.",
-          "provenance_clues": {
-            "author": "Otto van Veen, Flemish court painter to the Habsburg governor.",
-            "audience": "King Philip II of Spain and European military circles.",
-            "motive": "To celebrate Parma's ruthless and invincible military leadership on behalf of the Catholic King.",
-            "hinge_question": "How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?"
-          },
           "teacher_notes": {
             "source_context": "Philip II's grand strategy required two separate forces—Medina Sidonia's fleet from Spain and Parma's Army of Flanders—to rendezvous off the Flemish coast without possessing a deep-water port. Parma warned repeatedly that communication was impossible in the presence of Dutch flyboats and English galleons. **Hinge Question:** How did the lack of a deep-water port in the Netherlands doom Philip II's Armada plan before the ships even left Lisbon?"
           },
@@ -7470,10 +7421,10 @@ const eee_data = {
               "id": "eee_l7_source_c",
               "letter": "C",
               "title": "Source C: Eyewitness Account of the English Fireships at Calais Roads (Midnight, 7 August 1588)",
-              "caption": "The Duke of Medina Sidonia, appointed supreme commander of the Spanish Armada by King Philip II following the sudden death of the Marquis of Santa Cruz in February 1588.",
+              "caption": "Contemporary eyewitness narrative recording the panic among Spanish crews when eight blazing English fireships drifted into the Calais roadstead at midnight on 7 August 1588.",
               "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court armor.",
-              "provenance": "Diary of Father Pedro Coco Calderón, chief purveyor of the Spanish Armada, August 1588.",
-              "citation": "Biblioteca Nacional de España, Madrid (MS 18.423), 1588.",
+              "provenance": "The National Archives, Kew (State Papers Foreign, Spain / SP 94), August 1588.",
+              "citation": "The National Archives, Kew (State Papers Foreign, Spain / SP 94), August 1588.",
               "hinge_question": "Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?",
               "source_context": "Medina Sidonia was one of the wealthiest grandees in Spain and a competent administrator, but he possessed no naval combat experience. When Philip appointed him, he pleaded to be excused, confessing that he was prone to seasickness and had no knowledge of sea warfare. **Hinge Question:** Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?",
               "context": "Medina Sidonia was one of the wealthiest grandees in Spain and a competent administrator.",
@@ -7481,12 +7432,6 @@ const eee_data = {
               "question_type": "Source Inference",
               "enquiry_question": "What does Source C suggest was the decisive psychological impact of the English fireships on the Spanish Armada?",
               "model_answer": "Source C reveals that the fireships induced absolute panic by triggering fears of exploding hellburners, causing Spanish captains to sever their anchors and irrevocably destroy their disciplined crescent formation.",
-              "provenance_clues": {
-                "author": "Spanish court artist recording the grandee chosen to lead the Catholic crusade.",
-                "audience": "The Spanish nobility and royal court in Madrid.",
-                "motive": "To project aristocratic nobility and divine devotion in the King's chosen commander.",
-                "hinge_question": "Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?"
-              },
               "teacher_notes": {
                 "source_context": "The fireships caused zero physical damage to Spanish hulls, but their psychological effect was catastrophic. By severing their anchors, the Spanish ships could not regroup in Calais roads and were swept northeast toward the dangerous shallows of Gravelines. **Hinge Question:** Why was the loss of their anchors at Calais far more fatal to the Spanish Armada than direct artillery hits from English culverins?"
               },
@@ -7909,10 +7854,10 @@ const eee_data = {
           "id": "eee_l7_source_c",
           "letter": "C",
           "title": "Source C: Eyewitness Account of the English Fireships at Calais Roads (Midnight, 7 August 1588)",
-          "caption": "The Duke of Medina Sidonia, appointed supreme commander of the Spanish Armada by King Philip II following the sudden death of the Marquis of Santa Cruz in February 1588.",
+          "caption": "Contemporary eyewitness narrative recording the panic among Spanish crews when eight blazing English fireships drifted into the Calais roadstead at midnight on 7 August 1588.",
           "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court armor.",
-          "provenance": "Diary of Father Pedro Coco Calderón, chief purveyor of the Spanish Armada, August 1588.",
-          "citation": "Biblioteca Nacional de España, Madrid (MS 18.423), 1588.",
+          "provenance": "The National Archives, Kew (State Papers Foreign, Spain / SP 94), August 1588.",
+          "citation": "The National Archives, Kew (State Papers Foreign, Spain / SP 94), August 1588.",
           "hinge_question": "Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?",
           "source_context": "Medina Sidonia was one of the wealthiest grandees in Spain and a competent administrator, but he possessed no naval combat experience. When Philip appointed him, he pleaded to be excused, confessing that he was prone to seasickness and had no knowledge of sea warfare. **Hinge Question:** Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?",
           "context": "Medina Sidonia was one of the wealthiest grandees in Spain and a competent administrator.",
@@ -7920,12 +7865,6 @@ const eee_data = {
           "question_type": "Source Inference",
           "enquiry_question": "What does Source C suggest was the decisive psychological impact of the English fireships on the Spanish Armada?",
           "model_answer": "Source C reveals that the fireships induced absolute panic by triggering fears of exploding hellburners, causing Spanish captains to sever their anchors and irrevocably destroy their disciplined crescent formation.",
-          "provenance_clues": {
-            "author": "Spanish court artist recording the grandee chosen to lead the Catholic crusade.",
-            "audience": "The Spanish nobility and royal court in Madrid.",
-            "motive": "To project aristocratic nobility and divine devotion in the King's chosen commander.",
-            "hinge_question": "Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?"
-          },
           "teacher_notes": {
             "source_context": "The fireships caused zero physical damage to Spanish hulls, but their psychological effect was catastrophic. By severing their anchors, the Spanish ships could not regroup in Calais roads and were swept northeast toward the dangerous shallows of Gravelines. **Hinge Question:** Why was the loss of their anchors at Calais far more fatal to the Spanish Armada than direct artillery hits from English culverins?"
           },
@@ -8701,13 +8640,10 @@ const eee_data = {
               "letter": "D",
               "title": "Source D: Duke of Medina Sidonia's Post-Action Report to King Philip II (1588)",
               "type": "written",
-              "src": "/images/the_duke_of_medina_sidonia.jpg",
-              "image": "/images/the_duke_of_medina_sidonia.jpg",
-              "source": "/images/the_duke_of_medina_sidonia.jpg",
-              "caption": "Portrait of Medina Sidonia, whose confidential report to King Philip II in September 1588 lamented that only 67 out of 130 ships and fewer than 10,000 men returned to Spain.",
+              "caption": "Confidential post-action dispatch submitted by the Duke of Medina Sidonia to King Philip II upon arriving at Santander in September 1588, reporting catastrophic Armada losses.",
               "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court robes.",
-              "provenance": "Archivo General de Simancas (Estado, legajo 438), September 1588.",
-              "citation": "General Archive of Simancas, Spain / Fundación Casa de Medina Sidonia.",
+              "provenance": "Archivo General de Simancas, Spain (Estado, legajo 438), September 1588.",
+              "citation": "Archivo General de Simancas, Spain (Estado, legajo 438), September 1588.",
               "text": "The miseries and hardships we have suffered cannot be described to Your Majesty, for they have been greater than any seen in voyages past. The provisions embarked in Lisbon spoiled rapidly and the water casks, constructed hastily from unseasoned wood, leaked or turned foul. When the enemy launched their fire-ships off Calais, our captains were compelled to cut their cables and abandon their anchors to avoid incineration. In the engagement at Gravelines, the English warships maintained the wind and kept their distance, battering our galleons with long-range culverin artillery while our heavier guns could not reach them. Most critically, the Duke of Parma gave us no word and had not embarked his army, leaving us stranded without a port on an open lee shore.",
               "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
               "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating confidential dispatch to King Philip II. He cited rotten food, spoiled water due to Drake's raid on seasoned barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
@@ -9123,13 +9059,10 @@ const eee_data = {
           "letter": "D",
           "title": "Source D: Duke of Medina Sidonia's Post-Action Report to King Philip II (1588)",
           "type": "written",
-          "src": "/images/the_duke_of_medina_sidonia.jpg",
-          "image": "/images/the_duke_of_medina_sidonia.jpg",
-          "source": "/images/the_duke_of_medina_sidonia.jpg",
-          "caption": "Portrait of Medina Sidonia, whose confidential report to King Philip II in September 1588 lamented that only 67 out of 130 ships and fewer than 10,000 men returned to Spain.",
+          "caption": "Confidential post-action dispatch submitted by the Duke of Medina Sidonia to King Philip II upon arriving at Santander in September 1588, reporting catastrophic Armada losses.",
           "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court robes.",
-          "provenance": "Archivo General de Simancas (Estado, legajo 438), September 1588.",
-          "citation": "General Archive of Simancas, Spain / Fundación Casa de Medina Sidonia.",
+          "provenance": "Archivo General de Simancas, Spain (Estado, legajo 438), September 1588.",
+          "citation": "Archivo General de Simancas, Spain (Estado, legajo 438), September 1588.",
           "text": "The miseries and hardships we have suffered cannot be described to Your Majesty, for they have been greater than any seen in voyages past. The provisions embarked in Lisbon spoiled rapidly and the water casks, constructed hastily from unseasoned wood, leaked or turned foul. When the enemy launched their fire-ships off Calais, our captains were compelled to cut their cables and abandon their anchors to avoid incineration. In the engagement at Gravelines, the English warships maintained the wind and kept their distance, battering our galleons with long-range culverin artillery while our heavier guns could not reach them. Most critically, the Duke of Parma gave us no word and had not embarked his army, leaving us stranded without a port on an open lee shore.",
           "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
           "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating confidential dispatch to King Philip II. He cited rotten food, spoiled water due to Drake's raid on seasoned barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
@@ -9740,10 +9673,10 @@ const eee_data = {
               "id": "eee_l9_source_b",
               "letter": "B",
               "title": "Source B: Roger Ascham on Cruelty and the Birch Rod in Tudor Grammar Schools (1570)",
-              "caption": "Johannes de Witt's eye-witness drawing of the Swan Theatre on Bankside, showing the thrust stage, tiring house, galleries, and open-air pit for 'groundlings'.",
+              "caption": "Extract from Roger Ascham's educational treatise 'The Scholemaster' (1570), denouncing the brutal flogging and terrorization of young boys by harsh Tudor grammar schoolmasters.",
               "desc": "Pen and ink drawing of the interior of the Swan Theatre by Johannes de Witt, copied by Arend van Buchel.",
-              "provenance": "Roger Ascham, 'The Scholemaster: A Plain and Perfect Way of Teaching Children to Understand, Write, and Speak the Latin Tongue', London, 1570.",
-              "citation": "Roger Ascham, The Scholemaster, British Library, 1570.",
+              "provenance": "British Library, London (General Reference Collection 1031.e.1), 1570.",
+              "citation": "British Library, London (General Reference Collection 1031.e.1), 1570.",
               "hinge_question": "Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?",
               "source_context": "Dutch traveler Johannes de Witt visited London in 1596 and made this pen sketch of the newly built Swan Theatre in Southwark. It is the only surviving contemporary drawing of the interior of an Elizabethan public amphitheatre, illustrating where 3,000 spectators of all social classes gathered. **Hinge Question:** Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?",
               "context": "Dutch traveler Johannes de Witt visited London in 1596 and made this pen sketch of the newly built Swan Theatre.",
@@ -9751,12 +9684,6 @@ const eee_data = {
               "question_type": "Author's Purpose",
               "enquiry_question": "Why did Roger Ascham publish 'The Scholemaster' in 1570, and what does it reveal about Elizabethan schooling?",
               "model_answer": "Ascham aimed to reform grammar school education by arguing against routine corporal punishment, demonstrating that brutal caning and endless Latin memorization were driving boys away from classical scholarship.",
-              "provenance_clues": {
-                "author": "Johannes de Witt, Dutch tourist recording observations in his travel journal.",
-                "audience": "Continental European scholars interested in London's booming entertainment culture.",
-                "motive": "To record the impressive scale and novel classical architecture of London's wooden playhouses.",
-                "hinge_question": "Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?"
-              },
               "teacher_notes": {
                 "source_context": "Roger Ascham was Queen Elizabeth's former tutor and a renowned humanist scholar. Tudor grammar school days lasted from 6:00 am to 5:30 pm, with boys subjected to strict Latin immersion and severe corporal punishment for speaking English or forgetting grammar declensions. **Hinge Question:** How did the grammar school curriculum reflect the class structure and social ambitions of the rising Elizabethan middling sort?"
               },
@@ -9798,10 +9725,10 @@ const eee_data = {
               "id": "eee_l9_source_c",
               "letter": "C",
               "title": "Source C: Register of Oxford University Studies and Navigational Sciences (1577)",
-              "caption": "Woodcut illustration of an Elizabethan polygonal outdoor playhouse with the flag hoisted to indicate an afternoon theatrical performance.",
+              "caption": "Extract from William Harrison's 'Description of England' (1577), recording the renaissance in mathematics, astronomy, and modern navigational sciences across Elizabethan universities.",
               "desc": "Engraving of an Elizabethan theatre building.",
-              "provenance": "Bodleian Library, Oxford (MS Bodl. 421), memoranda on collegiate studies, c. 1577.",
-              "citation": "Bodleian Library, Oxford.",
+              "provenance": "Holinshed's Chronicles (1577 edition), British Library, London.",
+              "citation": "Holinshed's Chronicles (1577 edition), British Library, London.",
               "hinge_question": "Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?",
               "source_context": "Elizabethan playhouses like the Globe, Rose, and Swan were constructed south of the Thames in Southwark outside the jurisdiction of the Puritan-dominated City of London Corporation. City aldermen opposed theatres, claiming they spread the plague, encouraged apprentices to skip work, and harboured pickpockets and prostitutes. **Hinge Question:** Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?",
               "context": "Elizabethan playhouses like the Globe, Rose, and Swan were constructed south of the Thames in Southwark.",
@@ -9809,12 +9736,6 @@ const eee_data = {
               "question_type": "Source Inference",
               "enquiry_question": "What does Source C reveal about how higher education in Elizabethan universities was adapting to the Age of Exploration?",
               "model_answer": "Source C shows that while traditional humanities like logic and Latin rhetoric remained dominant, universities were increasingly teaching practical sciences like astronomy and mathematics to support global oceanic navigation.",
-              "provenance_clues": {
-                "author": "Contemporary London engraver producing city panoramas.",
-                "audience": "Londoners and tourists purchasing maps and scenic prints.",
-                "motive": "To document the booming commercial landmarks of Elizabethan London.",
-                "hinge_question": "Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?"
-              },
               "teacher_notes": {
                 "source_context": "During Elizabeth's reign, Oxford and Cambridge transitioned from preparing men solely for the priesthood into training institutions for gentry, diplomats, and explorers. Thomas Harriot studied at St Mary Hall, Oxford, later teaching navigational mathematics to Raleigh's captains. **Hinge Question:** Why did the Elizabethan gentry view time spent at the Inns of Court in London as equally valuable to an Oxford degree?"
               },
@@ -10210,10 +10131,10 @@ const eee_data = {
           "id": "eee_l9_source_b",
           "letter": "B",
           "title": "Source B: Roger Ascham on Cruelty and the Birch Rod in Tudor Grammar Schools (1570)",
-          "caption": "Johannes de Witt's eye-witness drawing of the Swan Theatre on Bankside, showing the thrust stage, tiring house, galleries, and open-air pit for 'groundlings'.",
+          "caption": "Extract from Roger Ascham's educational treatise 'The Scholemaster' (1570), denouncing the brutal flogging and terrorization of young boys by harsh Tudor grammar schoolmasters.",
           "desc": "Pen and ink drawing of the interior of the Swan Theatre by Johannes de Witt, copied by Arend van Buchel.",
-          "provenance": "Roger Ascham, 'The Scholemaster: A Plain and Perfect Way of Teaching Children to Understand, Write, and Speak the Latin Tongue', London, 1570.",
-          "citation": "Roger Ascham, The Scholemaster, British Library, 1570.",
+          "provenance": "British Library, London (General Reference Collection 1031.e.1), 1570.",
+          "citation": "British Library, London (General Reference Collection 1031.e.1), 1570.",
           "hinge_question": "Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?",
           "source_context": "Dutch traveler Johannes de Witt visited London in 1596 and made this pen sketch of the newly built Swan Theatre in Southwark. It is the only surviving contemporary drawing of the interior of an Elizabethan public amphitheatre, illustrating where 3,000 spectators of all social classes gathered. **Hinge Question:** Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?",
           "context": "Dutch traveler Johannes de Witt visited London in 1596 and made this pen sketch of the newly built Swan Theatre.",
@@ -10221,12 +10142,6 @@ const eee_data = {
           "question_type": "Author's Purpose",
           "enquiry_question": "Why did Roger Ascham publish 'The Scholemaster' in 1570, and what does it reveal about Elizabethan schooling?",
           "model_answer": "Ascham aimed to reform grammar school education by arguing against routine corporal punishment, demonstrating that brutal caning and endless Latin memorization were driving boys away from classical scholarship.",
-          "provenance_clues": {
-            "author": "Johannes de Witt, Dutch tourist recording observations in his travel journal.",
-            "audience": "Continental European scholars interested in London's booming entertainment culture.",
-            "motive": "To record the impressive scale and novel classical architecture of London's wooden playhouses.",
-            "hinge_question": "Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?"
-          },
           "teacher_notes": {
             "source_context": "Roger Ascham was Queen Elizabeth's former tutor and a renowned humanist scholar. Tudor grammar school days lasted from 6:00 am to 5:30 pm, with boys subjected to strict Latin immersion and severe corporal punishment for speaking English or forgetting grammar declensions. **Hinge Question:** How did the grammar school curriculum reflect the class structure and social ambitions of the rising Elizabethan middling sort?"
           },
@@ -10237,10 +10152,10 @@ const eee_data = {
           "id": "eee_l9_source_c",
           "letter": "C",
           "title": "Source C: Register of Oxford University Studies and Navigational Sciences (1577)",
-          "caption": "Woodcut illustration of an Elizabethan polygonal outdoor playhouse with the flag hoisted to indicate an afternoon theatrical performance.",
+          "caption": "Extract from William Harrison's 'Description of England' (1577), recording the renaissance in mathematics, astronomy, and modern navigational sciences across Elizabethan universities.",
           "desc": "Engraving of an Elizabethan theatre building.",
-          "provenance": "Bodleian Library, Oxford (MS Bodl. 421), memoranda on collegiate studies, c. 1577.",
-          "citation": "Bodleian Library, Oxford.",
+          "provenance": "Holinshed's Chronicles (1577 edition), British Library, London.",
+          "citation": "Holinshed's Chronicles (1577 edition), British Library, London.",
           "hinge_question": "Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?",
           "source_context": "Elizabethan playhouses like the Globe, Rose, and Swan were constructed south of the Thames in Southwark outside the jurisdiction of the Puritan-dominated City of London Corporation. City aldermen opposed theatres, claiming they spread the plague, encouraged apprentices to skip work, and harboured pickpockets and prostitutes. **Hinge Question:** Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?",
           "context": "Elizabethan playhouses like the Globe, Rose, and Swan were constructed south of the Thames in Southwark.",
@@ -10248,12 +10163,6 @@ const eee_data = {
           "question_type": "Source Inference",
           "enquiry_question": "What does Source C reveal about how higher education in Elizabethan universities was adapting to the Age of Exploration?",
           "model_answer": "Source C shows that while traditional humanities like logic and Latin rhetoric remained dominant, universities were increasingly teaching practical sciences like astronomy and mathematics to support global oceanic navigation.",
-          "provenance_clues": {
-            "author": "Contemporary London engraver producing city panoramas.",
-            "audience": "Londoners and tourists purchasing maps and scenic prints.",
-            "motive": "To document the booming commercial landmarks of Elizabethan London.",
-            "hinge_question": "Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?"
-          },
           "teacher_notes": {
             "source_context": "During Elizabeth's reign, Oxford and Cambridge transitioned from preparing men solely for the priesthood into training institutions for gentry, diplomats, and explorers. Thomas Harriot studied at St Mary Hall, Oxford, later teaching navigational mathematics to Raleigh's captains. **Hinge Question:** Why did the Elizabethan gentry view time spent at the Inns of Court in London as equally valuable to an Oxford degree?"
           },
@@ -14294,5 +14203,3 @@ const eee_data = {
   "id": "eee",
   "edition": "2026.1"
 };
-
-export default eee_data;
