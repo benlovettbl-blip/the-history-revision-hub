@@ -10489,6 +10489,56 @@ body.search-modal-open {
   flex-shrink: 0;
 }
 
+.launchpad-map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.22) 0%, rgba(3, 105, 161, 0.32) 100%);
+  color: #38bdf8;
+  border: 1.2px solid #0284c7;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.2);
+}
+
+.launchpad-map-btn:hover {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+  border-color: #38bdf8;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(2, 132, 199, 0.4);
+}
+
+.launchpad-map-btn:hover i {
+  color: #ffffff !important;
+}
+
+.launchpad-map-btn:hover .launchpad-map-kbd {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+.launchpad-map-kbd {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 3px;
+  padding: 1px 4px;
+  font-size: 0.65rem;
+  font-family: monospace;
+  color: #bae6fd;
+  margin-left: 2px;
+  transition: all 0.18s ease;
+}
+
 .launchpad-start-reading-btn {
   display: inline-flex;
   align-items: center;

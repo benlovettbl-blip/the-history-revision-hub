@@ -518,45 +518,9 @@ export function removeFloatingCmeMapButton() {
 }
 
 export function renderFloatingCmeMapButton() {
+  // Retired floating bottom-right button in favour of the top Launchpad tab row button
   const existing = document.getElementById('cme-floating-theater-map-btn');
-  const unitId = window.currentUnitId;
-  const urlParams = new URLSearchParams(window.location.search);
-  const currentView = window.appState?.currentView || urlParams.get('view');
-
-  // Strictly only show when the student is inside CME lessons
-  if (unitId !== 'cme_new' || currentView !== 'lessons') {
-    if (existing) existing.remove();
-    return;
-  }
-
-  if (existing) return;
-
-  const btn = document.createElement('button');
-  btn.id = 'cme-floating-theater-map-btn';
-  btn.type = 'button';
-  btn.className = 'cme-floating-theater-map-btn no-print';
-  btn.setAttribute('aria-label', 'Open Middle East Regional Map');
-  btn.style.cssText =
-    'position: fixed; bottom: 12px; right: 16px; z-index: 9990; background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: 1.5px solid #38bdf8; border-radius: 20px; padding: 6px 12px; font-size: 0.76rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.40); transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); user-select: none; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;';
-
-  btn.innerHTML = `
-    <i class="fa-solid fa-map" style="font-size: 0.95rem;"></i>
-    <span>Regional Map <kbd style="background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.3); border-radius: 3px; padding: 1px 4px; font-size: 0.65rem; margin-left: 2px;">M</kbd></span>
-  `;
-
-  btn.onmouseover = () => {
-    btn.style.transform = 'translateY(-2px) scale(1.03)';
-    btn.style.boxShadow = '0 6px 20px rgba(2, 132, 199, 0.6)';
-  };
-  btn.onmouseout = () => {
-    btn.style.transform = 'translateY(0) scale(1)';
-    btn.style.boxShadow = '0 4px 14px rgba(2, 132, 199, 0.45)';
-  };
-  btn.onclick = () => {
-    window.openCmeTheaterMapModal();
-  };
-
-  document.body.appendChild(btn);
+  if (existing) existing.remove();
 }
 
 // ============================================================================

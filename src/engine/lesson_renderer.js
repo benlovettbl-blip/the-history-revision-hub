@@ -2680,6 +2680,9 @@ export function renderLessonLaunchpad({
   htmlObjectivesInner = '',
   defaultTab = '',
 }) {
+  const isCme =
+    unitId === 'cme_new' ||
+    (typeof window !== 'undefined' && window.currentUnitId === 'cme_new');
   const tabs = [];
 
   // 1. Do Now Starter Tab
@@ -2819,6 +2822,19 @@ export function renderLessonLaunchpad({
       .join('')}
         </div>
         <div class="launchpad-actions-group">
+          ${isCme
+        ? `
+            <button type="button"
+              class="launchpad-map-btn"
+              onclick="if(typeof window.openCmeTheaterMapModal === 'function') window.openCmeTheaterMapModal();"
+              title="Open High-Resolution Regional Map (Israel & Surrounding Neighbours) [Shortcut: M]">
+              <i class="fa-solid fa-map" style="color: #38bdf8;"></i>
+              <span>Regional Map</span>
+              <kbd class="launchpad-map-kbd">M</kbd>
+            </button>
+          `
+        : ''
+      }
           <button type="button"
             class="launchpad-start-reading-btn"
             data-action="launchpad-start-reading"
