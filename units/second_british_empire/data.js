@@ -1282,6 +1282,10 @@ export default {
           {
             "question": "What 1889 British naval doctrine legally mandated that the Royal Navy must equal the combined battle strength of the next two strongest fleets?",
             "answer": "The Two-Power Standard (Naval Defence Act 1889)."
+          },
+          {
+            "question": "What 1757 battle established British military domination and civil taxation rights over Bengal?",
+            "answer": "The Battle of Plassey (led by Robert Clive)."
           }
         ]
       },
@@ -2323,6 +2327,10 @@ export default {
           {
             "question": "What 1858 statute dissolved the East India Company and established direct Crown governance under the British Raj?",
             "answer": "The Government of India Act 1858."
+          },
+          {
+            "question": "What chartered trading corporation's rule in India was abolished following the 1857 Rebellion?",
+            "answer": "The East India Company (EIC)."
           }
         ]
       },
@@ -3364,6 +3372,10 @@ export default {
           {
             "question": "What 1854 armed rebellion by gold miners in Victoria protested colonial license taxes and won democratic reforms?",
             "answer": "The Eureka Stockade."
+          },
+          {
+            "question": "What direct Crown governance system replaced company rule in India under Queen Victoria in 1858?",
+            "answer": "The British Raj."
           }
         ]
       },
@@ -4402,6 +4414,10 @@ export default {
           {
             "question": "What 1884–85 conference partitioned Africa among fourteen European powers without any African representatives present?",
             "answer": "The Berlin Conference."
+          },
+          {
+            "question": "What 1899–1902 conflict in southern Africa saw the British military construct concentration camps against Boer civilians?",
+            "answer": "The Second Boer War."
           }
         ]
       },

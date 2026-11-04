@@ -1803,78 +1803,107 @@ function compileGreatWarWorkbook() {
         <table style="width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 8pt;">
           <thead>
             <tr style="background: #0f284e; color: #ffffff;">
-              <th style="padding: 7px 4px; width: 10%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.5pt; text-transform: uppercase; color: #ffffff;">Date</th>
-              <th style="padding: 7px 8px; width: 43%; text-align: left; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.5pt; text-transform: uppercase; color: #ffffff;">Enquiry &bull; Assessment Focus</th>
-              <th style="padding: 7px 6px; width: 17%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.5pt; text-transform: uppercase; color: #ffffff;">KS3 Level / Effort</th>
-              <th style="padding: 7px 8px; width: 30%; text-align: left; font-size: 7.5pt; text-transform: uppercase; color: #ffffff;">Teacher Comment / Spellings</th>
+              <th style="padding: 6px 4px; width: 9%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Date</th>
+              <th style="padding: 6px 8px; width: 38%; text-align: left; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Enquiry &bull; Assessment Focus</th>
+              <th style="padding: 6px 4px; width: 14%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Do Now (/5)</th>
+              <th style="padding: 6px 4px; width: 15%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">KS3 Level / Effort</th>
+              <th style="padding: 6px 8px; width: 24%; text-align: left; font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Teacher Comment / Spellings</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 21px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 21px 8px; border-right: 1px solid #cbd5e1;">
+<td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+<td style="padding: 13px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 1: German Unification, Franco-Prussian &amp; Bismarck</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Causal Analysis: Why did the German Empire create instability?</div>
               </td>
-              <td style="padding: 21px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
+              <td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
+                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
+              </td>
+<td style="padding: 13px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
                 &nbsp;
               </td>
-              <td style="padding: 21px 8px; background: #ffffff;">&nbsp;</td>
+<td style="padding: 13px 8px; background: #ffffff;">&nbsp;</td>
             </tr>
             <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 21px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 21px 8px; border-right: 1px solid #cbd5e1;">
+<td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+<td style="padding: 13px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 2: Imperial Rivalry &amp; Moroccan Crises</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Feature Drill &amp; Consequence of Weltpolitik</div>
               </td>
-              <td style="padding: 21px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
+              <td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
+                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
+              </td>
+<td style="padding: 13px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
                 &nbsp;
               </td>
-              <td style="padding: 21px 8px; background: #ffffff;">&nbsp;</td>
+<td style="padding: 13px 8px; background: #ffffff;">&nbsp;</td>
             </tr>
             <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 21px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 21px 8px; border-right: 1px solid #cbd5e1;">
+<td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+<td style="padding: 13px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 3: Naval Arms Race &amp; HMS Dreadnought</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Contrasting Interpretations: Causes of Naval Race</div>
               </td>
-              <td style="padding: 21px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
+              <td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
+                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
+              </td>
+<td style="padding: 13px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
                 &nbsp;
               </td>
-              <td style="padding: 21px 8px; background: #ffffff;">&nbsp;</td>
+<td style="padding: 13px 8px; background: #ffffff;">&nbsp;</td>
             </tr>
             <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 21px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 21px 8px; border-right: 1px solid #cbd5e1;">
+<td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+<td style="padding: 13px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 4: Alliance Systems &amp; Balkan Powder Keg</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Narrative Account &amp; Importance of Alliances</div>
               </td>
-              <td style="padding: 21px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
+              <td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
+                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
+              </td>
+<td style="padding: 13px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
                 &nbsp;
               </td>
-              <td style="padding: 21px 8px; background: #ffffff;">&nbsp;</td>
+<td style="padding: 13px 8px; background: #ffffff;">&nbsp;</td>
             </tr>
             <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 21px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 21px 8px; border-right: 1px solid #cbd5e1;">
+<td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+<td style="padding: 13px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 5: The July Crisis &amp; Sarajevo Outbreak</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Evaluative Essay: Causes of General European War</div>
               </td>
-              <td style="padding: 21px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
+              <td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
+                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
+              </td>
+<td style="padding: 13px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
                 &nbsp;
               </td>
-              <td style="padding: 21px 8px; background: #ffffff;">&nbsp;</td>
+<td style="padding: 13px 8px; background: #ffffff;">&nbsp;</td>
             </tr>
             <tr style="background: #ffffff; border-top: 1.5px solid #0f284e;">
-              <td style="padding: 21px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 21px 8px; border-right: 1px solid #cbd5e1;">
+<td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+<td style="padding: 13px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Teacher-Designated Assessment Task</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Synoptic End-of-Unit Assessment &amp; Revision Target</div>
               </td>
-              <td style="padding: 21px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
+              <td style="padding: 13px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; color: #94a3b8; vertical-align: middle;">—</td>
+<td style="padding: 13px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
                 &nbsp;
               </td>
-              <td style="padding: 21px 8px; background: #ffffff;">&nbsp;</td>
+<td style="padding: 13px 8px; background: #ffffff;">&nbsp;</td>
+            </tr>
+            <tr style="border-top: 1.5px solid #0f284e; background: #f8fafc;">
+              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; color: #0f284e; font-size: 8pt;">★</td>
+              <td style="padding: 6px 8px; border-right: 1px solid #cbd5e1; font-weight: 900; font-size: 8pt; color: #0f284e; text-transform: uppercase;">
+                Unit Retrieval Starter Total:
+              </td>
+              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; font-size: 8.5pt; color: #0f284e;">
+                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 25</strong></span>
+              </td>
+              <td colspan="2" style="padding: 6px 8px; font-size: 7.2pt; color: #475569; vertical-align: middle;">
+                Overall Retrieval Grade: &nbsp;&nbsp;&nbsp;&nbsp; [ Emerging &bull; Expected &bull; Greater Depth ]
+              </td>
             </tr>
           </tbody>
         </table>

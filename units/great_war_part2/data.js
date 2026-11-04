@@ -227,6 +227,11 @@ export default {
             "label": "Box 4: Big Picture (The Spark)",
             "question": "Where was Archduke Franz Ferdinand assassinated on 28 June 1914?",
             "answer": "Sarajevo, Bosnia."
+          },
+          {
+            "label": "Box 5: Deep Recall (Outbreak)",
+            "question": "What 1839 international treaty guaranteeing Belgian neutrality did Britain enter the war to defend?",
+            "answer": "The Treaty of London (1839)."
           }
         ]
       },
@@ -1341,6 +1346,11 @@ export default {
             "label": "Box 4: Big Picture (1914)",
             "question": "What was the small professional British military force of 120,000 men sent to France in August 1914 called?",
             "answer": "The British Expeditionary Force (BEF)."
+          },
+          {
+            "label": "Box 5: Spaced Recall (Origins)",
+            "question": "What German war plan aimed to quickly knock out France by invading through neutral Belgium?",
+            "answer": "The Schlieffen Plan."
           }
         ]
       },
@@ -2519,6 +2529,11 @@ export default {
             "label": "Box 4: Unit Recall (1914)",
             "question": "What British recruitment battalions allowed friends and neighbours to serve together?",
             "answer": "Pals Battalions."
+          },
+          {
+            "label": "Box 5: Spaced Recall (Technology)",
+            "question": "In which 1915 battle did the German army first deploy lethal chlorine poison gas on the Western Front?",
+            "answer": "The Second Battle of Ypres (April 1915)."
           }
         ]
       },
@@ -3655,6 +3670,11 @@ export default {
             "label": "Box 4: Unit Recall (1916)",
             "question": "On which horrific battlefield were 57,470 British soldiers killed or wounded on 1 July 1916?",
             "answer": "The Battle of the Somme."
+          },
+          {
+            "label": "Box 5: Spaced Recall (Military Command)",
+            "question": "Which British Commander-in-Chief commanded the Allied armies at the Battle of the Somme in 1916?",
+            "answer": "Field Marshal Sir Douglas Haig."
           }
         ]
       },
@@ -4822,6 +4842,11 @@ export default {
             "label": "Box 4: Unit Recall (1914)",
             "question": "What small professional British army force fought at Mons and the Marne in 1914?",
             "answer": "The British Expeditionary Force (BEF)."
+          },
+          {
+            "label": "Box 5: Spaced Recall (The Armistice)",
+            "question": "On what exact date and time did the armistice ending fighting on the Western Front come into effect?",
+            "answer": "11 November 1918 at 11:00 am."
           }
         ]
       },

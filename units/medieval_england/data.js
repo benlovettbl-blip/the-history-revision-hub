@@ -484,6 +484,10 @@ export default {
           {
             "question": "What council of English nobles and bishops advised Anglo-Saxon kings on royal succession?",
             "answer": "The Witan (Witenagemot)."
+          },
+          {
+            "question": "Which Anglo-Saxon king died in January 1066 without leaving a clear blood heir, sparking the succession crisis?",
+            "answer": "Edward the Confessor."
           }
         ]
       },
@@ -1615,6 +1619,10 @@ export default {
           {
             "question": "What term describes the formal legal process of inheriting a royal crown?",
             "answer": "Succession."
+          },
+          {
+            "question": "Which Anglo-Saxon king was killed at the Battle of Hastings after marching south from Stamford Bridge?",
+            "answer": "King Harold Godwinson."
           }
         ]
       },
@@ -2781,6 +2789,10 @@ export default {
           {
             "question": "What is the ultimate punishment of expelling someone from the Catholic Church called?",
             "answer": "Excommunication."
+          },
+          {
+            "question": "What brutal winter campaign did William I carry out in 1069–1070 to crush Saxon rebellions in northern England?",
+            "answer": "The Harrying of the North."
           }
         ]
       },
@@ -3935,12 +3947,16 @@ export default {
             "answer": "Henry II."
           },
           {
-            "question": "What is the term for a medieval king who rules with absolute, unlimited power?",
-            "answer": "Autocrat (Autocracy)."
+            "question": "What term describes clergy accused of secular crimes who claimed the right to be tried only in church courts?",
+            "answer": "Criminous clerks."
           },
           {
             "question": "What term describes shield money paid by barons in place of military service?",
             "answer": "Scutage."
+          },
+          {
+            "question": "What 1086 survey recorded England's landholders, wealth, and livestock to maximize royal taxation?",
+            "answer": "The Domesday Book."
           }
         ]
       },
@@ -5056,20 +5072,24 @@ export default {
         "type": "questions",
         "items": [
           {
-            "question": "In what year was Magna Carta sealed at Runnymede?",
+            "question": "In what year was Magna Carta agreed between King John and his rebel barons at Runnymede?",
             "answer": "1215."
           },
           {
-            "question": "What term describes unfree medieval peasants tied to a lord’s manor?",
-            "answer": "Serfs (villeins)."
+            "question": "What fundamental legal principle in Clause 39 established that no free man could be imprisoned without lawful trial?",
+            "answer": "The Rule of Law (Due Process)."
           },
           {
-            "question": "What bacterium carried by rat fleas caused the Black Death?",
-            "answer": "Yersinia pestis."
+            "question": "Which English king was forced to seal Magna Carta following the loss of Normandy and heavy scutage taxation?",
+            "answer": "King John."
           },
           {
-            "question": "What flat tax levied equally on every individual head sparked rebellion in 1381?",
-            "answer": "The Poll Tax."
+            "question": "Which archbishop of Canterbury was murdered on the altar steps in 1170 after clashing with Henry II?",
+            "answer": "Thomas Becket."
+          },
+          {
+            "question": "What social hierarchy bound unfree peasants (serfs/villeins) to work the lord's manor in return for land and protection?",
+            "answer": "The Feudal System."
           }
         ]
       },
