@@ -56,6 +56,37 @@
       box-sizing: border-box;
       margin: 0;
     }
+    .stage-trigger-col {
+      width: 26mm;
+      flex-shrink: 0;
+      background: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      border-right: 1.2px solid #000000;
+      box-sizing: border-box;
+    }
+    .trigger-fact-cell {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 3px;
+    }
+    .stage-writing-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #ffffff;
+      box-sizing: border-box;
+    }
+    .ruled-line {
+      height: 8.2mm;
+      border-bottom: 0.8px solid #000000;
+      box-sizing: border-box;
+    }
+    .ruled-line:last-child {
+      border-bottom: none;
+    }
     .note-line {
       flex: 1;
       min-height: 0;
@@ -372,280 +403,275 @@
           
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 1
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1750–1770
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why was Britain’s early iron industry crippled by charcoal and timber shortages?
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Deforestation of English Oaks</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Deforestation of English Oaks</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Brittle Impure Pig Iron</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Brittle Impure Pig Iron</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Dependence on Swedish Imports</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Dependence on Swedish Imports</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 2
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1769–1781
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                How did James Watt’s rotary steam engine revolutionise heavy industrial manufacturing?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                How did James Watt’s rotary steam engine revolutionise heavy industrial manuf...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Separate Condenser Efficiency</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Separate Condenser Efficiency</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Rotary Shaft Motion</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Rotary Shaft Motion</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Liberation from River Valleys</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Liberation from River Valleys</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 3
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1775–1784
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did Henry Cort’s puddling furnace at Funtley chemically refine molten iron?
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Reverberatory Furnace Chamber</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Reverberatory Furnace Chamber</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Stirring Molten Decarburisation</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Stirring Molten Decarburisation</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Eliminating Harmful Sulphur</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Eliminating Harmful Sulphur</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 4
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1783–1784
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                Why were Cort’s patented grooved rollers fifteen times faster than traditional trip hammers?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                Why were Cort’s patented grooved rollers fifteen times faster than traditiona...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Mechanical Grooved Cylinders</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Mechanical Grooved Cylinders</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Squeezing Out Slag Impurities</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Squeezing Out Slag Impurities</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Uniform Naval Bar Production</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Uniform Naval Bar Production</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 5
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1787
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                How did the Portsmouth Dockyard naval trials confirm Cort’s triumph for the Royal Navy?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                How did the Portsmouth Dockyard naval trials confirm Cort’s triumph for the R...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Admiralty Smith Forge Tests</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Admiralty Smith Forge Tests</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Shatter-Resistant Anchors</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Shatter-Resistant Anchors</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Complete Naval Independence</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Complete Naval Independence</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
@@ -785,280 +811,275 @@
           
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 1
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1780–1820
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 9.1pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did the factory system displace traditional domestic craft production?
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Domestic Home Handlooms</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Domestic Home Handlooms</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Centralised Steam Factories</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Centralised Steam Factories</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Relentless Machine Speed</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Relentless Machine Speed</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 2
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1800–1830
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                How did the factory clock and draconian fines enforce strict industrial discipline?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                How did the factory clock and draconian fines enforce strict industrial disci...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Rigid Fourteen-Hour Shifts</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Rigid Fourteen-Hour Shifts</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Pence-Deduction Lateness Fines</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Pence-Deduction Lateness Fines</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Choking Dust & Locked Doors</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Choking Dust & Locked Doors</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 3
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1810–1832
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                Why were pauper apprentice children systematically exploited in northern textile mills?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                Why were pauper apprentice children systematically exploited in northern text...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Workhouse Apprentice Trafficking</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Workhouse Apprentice Trafficking</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Crawling Under Spinning Mules</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Crawling Under Spinning Mules</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Crushed Fingers & Hair Scalpings</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Crushed Fingers & Hair Scalpings</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 4
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1832
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                What shocking physical abuses did Matthew Crabtree reveal to the Sadler Committee?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                What shocking physical abuses did Matthew Crabtree reveal to the Sadler Commi...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Sixteen-Hour Daily Fatigue</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Sixteen-Hour Daily Fatigue</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Overlooker Leather Strap Beatings</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Overlooker Leather Strap Beatings</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Permanent Spinal Stunting</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Permanent Spinal Stunting</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 5
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1833
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                How did the 1833 Factory Act introduce the first legal regulation of child labour?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                How did the 1833 Factory Act introduce the first legal regulation of child la...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Ban on Children Under Nine</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Ban on Children Under Nine</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Eight-Hour Workday Limits</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Eight-Hour Workday Limits</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Four Statutory Factory Inspectors</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Four Statutory Factory Inspectors</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
@@ -1189,280 +1210,275 @@
           
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 1
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1800–1830
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 9.1pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did explosive urban population growth create deadly back-to-back slums?
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Unregulated Speculative Building</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Unregulated Speculative Building</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Windowless Shared Party Walls</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Windowless Shared Party Walls</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Flooded Earthen Cellars</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Flooded Earthen Cellars</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 2
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1830–1840
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why did primitive sanitation turn working-class courts into festering cesspools?
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Shared Privy Overflow</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Shared Privy Overflow</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Towering Nightsoil Dunghills</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Towering Nightsoil Dunghills</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Seeping Groundwater Wells</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Seeping Groundwater Wells</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 3
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1831–1848
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                Why did terrifying cholera epidemics shatter complacent beliefs in laissez-faire?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                Why did terrifying cholera epidemics shatter complacent beliefs in laissez-fa...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Waterborne Bacterial Agony</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Waterborne Bacterial Agony</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Blue-Skinned Twelve-Hour Collapse</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Blue-Skinned Twelve-Hour Collapse</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Terrified Wealthy Elites</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Terrified Wealthy Elites</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 4
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1842
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                How did Edwin Chadwick’s 1842 Report prove that filth caused disease and premature death?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                How did Edwin Chadwick’s 1842 Report prove that filth caused disease and prem...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Statistical Lifespan Comparison</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Statistical Lifespan Comparison</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Nineteen-Year Manchester Average</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Nineteen-Year Manchester Average</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Economic Cost of Epidemics</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Economic Cost of Epidemics</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 5
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1858–1865
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                How did the 1858 Great Stink compel Parliament to fund Joseph Bazalgette’s sewers?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                How did the 1858 Great Stink compel Parliament to fund Joseph Bazalgette’s se...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Midsummer Thames Fermentation</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Midsummer Thames Fermentation</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Commons Chloride Curtains</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Commons Chloride Curtains</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Bazalgette Interceptor Tunnels</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Bazalgette Interceptor Tunnels</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
@@ -1801,280 +1817,275 @@
           
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 1
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1811–1816
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                Why did textile croppers and knitters turn to nocturnal machine-breaking under "General Ludd"?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                Why did textile croppers and knitters turn to nocturnal machine-breaking unde...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Powerloom Wage Collapses</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Powerloom Wage Collapses</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Sledgehammer Midnight Raids</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Sledgehammer Midnight Raids</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Capital Frame-Breaking Act</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Capital Frame-Breaking Act</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 2
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 Aug 1819
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                Why did the Peterloo Massacre ignite widespread working-class fury against the state?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                Why did the Peterloo Massacre ignite widespread working-class fury against th...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Peaceful St Peter’s Field Crowd</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Peaceful St Peter’s Field Crowd</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Manchester Yeomanry Sabre Charge</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Manchester Yeomanry Sabre Charge</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Repressive Tory Six Acts</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Repressive Tory Six Acts</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 3
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 Nov 1830
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did the "Captain Swing" riots sweep through Hampshire and the Meon Valley?
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Starvation Winter Destitution</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Starvation Winter Destitution</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Sledgehammer Threshing Destruction</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Sledgehammer Threshing Destruction</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Nocturnal Hayrick Arson</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Nocturnal Hayrick Arson</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 4
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 Dec 1830
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                How brutally did the Winchester Special Assizes punish Hampshire machine-breakers?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                How brutally did the Winchester Special Assizes punish Hampshire machine-brea...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Winchester Great Hall Trials</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Winchester Great Hall Trials</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Micheldever Youth Execution</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Micheldever Youth Execution</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Australian Penal Transportation</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Australian Penal Transportation</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 5
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1834
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why did the harsh punishment of the Tolpuddle Martyrs provoke a national outcry?
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Friendly Society Mutual Aid</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Friendly Society Mutual Aid</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Obscure Secret Oaths Law</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Obscure Secret Oaths Law</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Massive London Protest Marches</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Massive London Protest Marches</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
@@ -2210,280 +2221,275 @@
           
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 1
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1800–1830
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                Why was Britain’s unreformed parliamentary system condemned as a corrupt oligarchy?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                Why was Britain’s unreformed parliamentary system condemned as a corrupt olig...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Under-Five-Percent Electorate</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Under-Five-Percent Electorate</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Old Sarum & Newtown Rotten Boroughs</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Old Sarum & Newtown Rotten Boroughs</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Unrepresented Industrial Cities</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Unrepresented Industrial Cities</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 2
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1831–1832
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                How did public rebellion and economic panic force the passage of the 1832 Great Reform Act?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                How did public rebellion and economic panic force the passage of the 1832 Gre...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Bristol Reform Riots & Fires</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Bristol Reform Riots & Fires</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">"Days of May" Bank Run Gold Panic</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">"Days of May" Bank Run Gold Panic</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Tory House of Lords Surrender</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Tory House of Lords Surrender</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 3
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1832
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                Which industrial cities were granted MPs, and why did workers call the Act the "Great Betrayal"?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                Which industrial cities were granted MPs, and why did workers call the Act th...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Manchester, Birmingham & Leeds MPs</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Manchester, Birmingham & Leeds MPs</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Ten-Pound Property Qualification</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Ten-Pound Property Qualification</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Deliberate Working-Class Exclusion</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Deliberate Working-Class Exclusion</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 4
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1838–1848
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did the Chartist movement unite millions of workers behind the Six Points?
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Universal Male Suffrage & Secret Ballot</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Universal Male Suffrage & Secret Ballot</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Abolition of Property Requirements</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Abolition of Property Requirements</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Three Mammoth Rejected Petitions</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Three Mammoth Rejected Petitions</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 5
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
                 1872
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                How did the 1872 Secret Ballot Act at Pontefract destroy landlord political coercion?
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                How did the 1872 Secret Ballot Act at Pontefract destroy landlord political c...
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Abolition of Public Hustings</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Abolition of Public Hustings</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; border-bottom: 0.8px solid #000000;">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Private Booths & Liquorice Wax Seals</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; border-bottom: 0.8px solid #cbd5e1;">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Private Booths & Liquorice Wax Seals</span>
               </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">Freedom from Landlord Eviction</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">Freedom from Landlord Eviction</span>
               </div>
             </div>
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>

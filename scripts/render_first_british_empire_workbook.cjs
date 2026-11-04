@@ -578,54 +578,58 @@ function renderFooterStrip(pageNum, quip, totalPages = 16) {
 // ============================================================================
 function renderSpinePage(cfg, pageNum) {
   const stagesHtml = cfg.stages
-    .map((st) => {
-      // 3 Spaced-out trigger terms, each aligned 1-to-1 with pairs of ruled lines
-      const bulletsHtml = st.bullets
+    .map((st, sIdx) => {
+      // 3 High-density trigger concepts in 26mm left spine
+      const bulletsHtml = (st.bullets || [])
         .map(
           (b, idx) => `
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ${idx < 2 ? 'border-bottom: 0.8px solid #000000;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">${b}</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
               </div>
             </div>`,
         )
         .join('');
+
+      const rawQ = (st.questionHeading || st.question || '').replace(/^\[[\d\.]+\]\s*/, '');
+      const stageNum = st.step || sIdx + 1;
+      const questionText = rawQ.length > 80 ? rawQ.slice(0, 77) + '...' : rawQ;
+
       return `
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 2.5px 7px; display: flex; align-items: center; border-bottom: 1.4px solid #000000; min-height: 22px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; padding: 0.8px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
-                ${st.step}
+          <!-- Solid Black Header Banner (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+                ${stageNum}
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
-                ${st.date}
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
+                ${st.date ? `${st.date}` : ''}
               </span>
-              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: ${st.questionHeading && st.questionHeading.length > 75 ? '8.6pt' : '9.1pt'}; font-weight: 900; color: #000000; white-space: nowrap; letter-spacing: -0.08px;">
-                ${st.questionHeading}
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                ${questionText}
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               ${bulletsHtml}
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
@@ -1077,6 +1081,37 @@ function compileEmpireWorkbook() {
       width: 100%;
       box-sizing: border-box;
       margin: 0;
+    }
+    .stage-trigger-col {
+      width: 26mm;
+      flex-shrink: 0;
+      background: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      border-right: 1.2px solid #000000;
+      box-sizing: border-box;
+    }
+    .trigger-fact-cell {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 3px;
+    }
+    .stage-writing-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #ffffff;
+      box-sizing: border-box;
+    }
+    .ruled-line {
+      height: 8.2mm;
+      border-bottom: 0.8px solid #000000;
+      box-sizing: border-box;
+    }
+    .ruled-line:last-child {
+      border-bottom: none;
     }
     .task-line-dotted {
       border-bottom: 1.2px dotted #000000;
