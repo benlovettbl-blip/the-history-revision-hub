@@ -3811,23 +3811,21 @@ export function renderLesson(lesson) {
                     ? 'Key Stage 2'
                     : 'Edexcel GCSE';
 
+    const safeSpec = encodeURIComponent(lesson.specification_anchor);
+    const safeTitle = encodeURIComponent(cleanLessonHeading);
+
     specPillHtml = `
-      <details class="spec-anchor-popover" style="position: relative; display: inline-block; margin: 0; z-index: 50;">
-        <summary style="list-style: none; cursor: pointer; background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(148, 163, 184, 0.45); color: #93c5fd; padding: 3px 10px; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.4px; display: inline-flex; align-items: center; gap: 6px; backdrop-filter: blur(6px); transition: all 0.2s;" title="Click to view syllabus specification alignment">
-          <i class="fa-solid fa-bookmark" style="color: #60a5fa; font-size: 0.72rem;"></i>
-          <span>${specPaperBadge} Spec Anchor</span>
-          <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem; opacity: 0.8; margin-left: 2px;"></i>
-        </summary>
-        <div class="spec-popover-content" style="position: absolute; right: 0; top: calc(100% + 6px); z-index: 1000; width: min(450px, calc(100vw - 48px)); background: #ffffff; color: #0f172a; padding: 14px 18px; border-radius: 8px; border: 1.5px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28); font-family: 'Inter', sans-serif; font-size: 0.88rem; line-height: 1.5; text-shadow: none;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">
-            <strong style="color: #1e3a8a; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 5px;">
-              <i class="fa-solid fa-scroll" style="color: #3b82f6;"></i> Official Syllabus Anchor
-            </strong>
-            <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">${specPaperBadge}</span>
-          </div>
-          <p style="margin: 0; color: #334155; font-style: italic; font-size: 0.86rem; line-height: 1.45;">&ldquo;${lesson.specification_anchor}&rdquo;</p>
-        </div>
-      </details>
+      <button type="button"
+        class="spec-anchor-btn"
+        onclick="window.showLessonSpecModal('${safeSpec}', '${specPaperBadge}', '${safeTitle}')"
+        style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(148, 163, 184, 0.45); color: #93c5fd; padding: 4px 12px; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.4px; display: inline-flex; align-items: center; gap: 6px; backdrop-filter: blur(6px); cursor: pointer; transition: all 0.2s;"
+        onmouseover="this.style.background='rgba(30, 41, 59, 0.9)'; this.style.borderColor='#60a5fa'; this.style.color='#bfdbfe';"
+        onmouseout="this.style.background='rgba(15, 23, 42, 0.75)'; this.style.borderColor='rgba(148, 163, 184, 0.45)'; this.style.color='#93c5fd';"
+        title="Click to view official syllabus specification anchor">
+        <i class="fa-solid fa-bookmark" style="color: #60a5fa; font-size: 0.75rem;"></i>
+        <span>${specPaperBadge} Spec Anchor</span>
+        <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.65rem; opacity: 0.8; margin-left: 2px;"></i>
+      </button>
     `;
   }
 
@@ -12047,4 +12045,81 @@ export function toggleAllAnswers(btnOrContainer) {
 
 if (typeof window !== 'undefined') {
   window.toggleAllAnswers = toggleAllAnswers;
+
+  window.showLessonSpecModal = function (encodedSpec, badge, encodedTitle) {
+    const existing = document.getElementById('lesson-spec-modal-overlay');
+    if (existing) existing.remove();
+
+    let specText = '';
+    let lessonTitle = '';
+    try {
+      specText = encodedSpec ? decodeURIComponent(encodedSpec) : '';
+    } catch (e) {
+      specText = encodedSpec || '';
+    }
+    try {
+      lessonTitle = encodedTitle ? decodeURIComponent(encodedTitle) : '';
+    } catch (e) {
+      lessonTitle = encodedTitle || '';
+    }
+
+    if (!specText) return;
+
+    const overlay = document.createElement('div');
+    overlay.id = 'lesson-spec-modal-overlay';
+    overlay.style.cssText =
+      'position: fixed; inset: 0; z-index: 999999; background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; padding: 20px; font-family: "Inter", sans-serif;';
+
+    overlay.innerHTML = `
+      <div style="background: #ffffff; color: #0f172a; width: 100%; max-width: 620px; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35); border: 1.5px solid #cbd5e1; overflow: hidden; animation: specModalFadeIn 0.18s ease-out;">
+        <!-- Header -->
+        <div style="background: #0f172a; color: #ffffff; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #3b82f6;">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-bookmark" style="color: #60a5fa;"></i>
+            <span style="font-weight: 800; font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">${badge || 'Official Specification Anchor'}</span>
+          </div>
+          <button type="button" onclick="window.closeLessonSpecModal()" style="background: none; border: none; color: #94a3b8; font-size: 1.25rem; cursor: pointer; padding: 0 4px; line-height: 1; transition: color 0.15s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'" title="Close (Esc)">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Body -->
+        <div style="padding: 24px;">
+          ${lessonTitle ? `<div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.18rem; font-weight: 700; color: #0f172a; margin-bottom: 16px; border-bottom: 1px solid #f1f5f9; padding-bottom: 10px; line-height: 1.35;">${lessonTitle}</div>` : ''}
+          
+          <div style="background: #f8fafc; border-left: 4px solid #2563eb; border-radius: 6px; padding: 16px 20px; margin-bottom: 22px; font-size: 1rem; color: #1e293b; line-height: 1.6; box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);">
+            <div style="font-size: 0.75rem; font-weight: 800; color: #1e3a8a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-scroll" style="color: #3b82f6;"></i> Official Syllabus Focus
+            </div>
+            &ldquo;${specText}&rdquo;
+          </div>
+
+          <div style="display: flex; justify-content: flex-end;">
+            <button type="button" onclick="window.closeLessonSpecModal()" style="background: #0f172a; color: #ffffff; border: none; padding: 9px 22px; border-radius: 6px; font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#1e293b'" onmouseout="this.style.background='#0f172a'">
+              Close (Esc)
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) window.closeLessonSpecModal();
+    });
+
+    const escHandler = (e) => {
+      if (e.key === 'Escape') {
+        window.closeLessonSpecModal();
+        window.removeEventListener('keydown', escHandler);
+      }
+    };
+    window.addEventListener('keydown', escHandler);
+  };
+
+  window.closeLessonSpecModal = function () {
+    const existing = document.getElementById('lesson-spec-modal-overlay');
+    if (existing) existing.remove();
+  };
 }
