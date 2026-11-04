@@ -120,8 +120,8 @@ window.formatBold = function (text) {
           window.formatBold(text.stem) +
           (text.pupil_focus
             ? ' <span style="display:block; font-size:0.85em; opacity:0.85; margin-top:2px;">(' +
-              text.pupil_focus +
-              ')</span>'
+            text.pupil_focus +
+            ')</span>'
             : '')
         );
       }
@@ -310,13 +310,13 @@ export function getArchivalSourceDiscussionComponents(
 
   let ideas = sourceObj
     ? sourceObj.discussion_ideas ||
-      sourceObj.example_answers ||
-      sourceObj.exemplar_answers ||
-      (sourceObj.model_answer
-        ? Array.isArray(sourceObj.model_answer)
-          ? sourceObj.model_answer
-          : [sourceObj.model_answer]
-        : null)
+    sourceObj.example_answers ||
+    sourceObj.exemplar_answers ||
+    (sourceObj.model_answer
+      ? Array.isArray(sourceObj.model_answer)
+        ? sourceObj.model_answer
+        : [sourceObj.model_answer]
+      : null)
     : null;
   if (!ideas || !Array.isArray(ideas) || ideas.length === 0) {
     ideas = getFallbackDiscussionIdeas(cleanQ, sourceObj);
@@ -339,15 +339,14 @@ export function getArchivalSourceDiscussionComponents(
           <span style="font-size: 1.15rem; line-height: 1.25; flex-shrink: 0;" title="Discussion Prompt">💭</span>
           <span>${formattedQ}</span>
         </div>
-        ${
-          hasIdeas
-            ? `
+        ${hasIdeas
+      ? `
           <button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-clue btn-think-discuss-toggle" data-action="toggle-think-discuss" data-target-id="${discussId}" onclick="if(window.toggleThinkDiscuss){window.toggleThinkDiscuss(this, '${discussId}');}event.stopPropagation();" title="Click to reveal exemplar discussion points for the class" style="padding: 5px 10px; font-size: 0.78rem; text-transform: none; border-radius: 5px; display: inline-flex; align-items: center; justify-content: center; width: 140px; min-width: 140px; gap: 6px; font-weight: 700; cursor: pointer; border: none; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex-shrink: 0; white-space: nowrap; margin-top: 1px; box-sizing: border-box;">
             <i class="fa-solid fa-lightbulb"></i> <span class="toggle-label" data-show-text="${showBtnLabel}" data-hide-text="${hideBtnLabel}">${showBtnLabel}</span>
           </button>
         `
-            : ''
-        }
+      : ''
+    }
       </div>
     </div>
   `;
@@ -360,15 +359,15 @@ export function getArchivalSourceDiscussionComponents(
       </div>
       <div style="display: ${isSingle ? 'block' : 'grid'}; ${isSingle ? '' : 'grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 12px;'}">
         ${ideas
-          .map(
-            (idea, idx) => `
+      .map(
+        (idea, idx) => `
           <div style="display: flex; gap: 9px; align-items: flex-start; font-size: 0.90rem; color: #1e293b; line-height: 1.45; background: #f8fafc; padding: 10px 13px; border-radius: 5px; border-left: 3.5px solid #3b82f6;">
             <span style="font-weight: 800; color: #1d4ed8; font-size: 0.72rem; background: #dbeafe; padding: 2px 6px; border-radius: 3px; flex-shrink: 0; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.03em;">${isSingle ? 'Model Answer' : `Point ${idx + 1}`}</span>
             <span style="font-weight: 500;">${idea}</span>
           </div>
         `,
-          )
-          .join('')}
+      )
+      .join('')}
       </div>
     </div>
   `
@@ -658,9 +657,8 @@ function renderDoNowHeaderWithTimerHTML({
       </div>
 
       <!-- Action (Reveal All) -->
-      ${
-        showRevealAll
-          ? `
+      ${showRevealAll
+      ? `
         <div style="display: flex; align-items: center; gap: 6px;">
           <button class="btn btn-secondary btn-sm" data-action="toggle-all-answers" onclick="if(window.toggleAllAnswers){window.toggleAllAnswers(this);}event.stopPropagation();" style="font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #ffffff; color: #334155; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
             <i class="fa-solid fa-eye" style="color: #0284c7; font-size: 0.72rem;"></i>
@@ -668,8 +666,8 @@ function renderDoNowHeaderWithTimerHTML({
           </button>
         </div>
       `
-          : ''
-      }
+      : ''
+    }
     </div>
   `;
 }
@@ -900,7 +898,7 @@ window.toggleDoNowTimer = function (timerId, action) {
       gain.connect(audioCtx.destination);
       osc.start();
       osc.stop(audioCtx.currentTime + 0.8);
-    } catch (e) {}
+    } catch (e) { }
   };
 
   if (action === 'start') {
@@ -986,7 +984,7 @@ window.toggleWhiteboardMode = function (forceState) {
   }
   try {
     localStorage.setItem('whiteboardMode', nextState ? 'true' : 'false');
-  } catch (e) {}
+  } catch (e) { }
   window.syncWhiteboardButtons(nextState);
 };
 
@@ -1027,7 +1025,7 @@ window.toggleTeacherMode = function (forceState) {
   }
   try {
     localStorage.setItem('teacherMode', nextState ? 'true' : 'false');
-  } catch (e) {}
+  } catch (e) { }
   window.syncTeacherButtons(nextState);
 };
 
@@ -1057,9 +1055,9 @@ window.syncTeacherButtons = function (isActive) {
   }
 };
 
-window.updateClassroomToolsBadge = function () {};
-window.toggleLessonToolsMenu = function () {};
-window.closeLessonToolsMenu = function () {};
+window.updateClassroomToolsBadge = function () { };
+window.toggleLessonToolsMenu = function () { };
+window.closeLessonToolsMenu = function () { };
 
 if (typeof localStorage !== 'undefined' && localStorage.getItem('teacherMode') === 'true') {
   if (typeof document !== 'undefined' && document.body) {
@@ -1505,16 +1503,15 @@ function renderCausalDominoSpine(spine) {
           </button>
 
           <!-- Connective Step Banner -->
-          ${
-            connective
-              ? `
+          ${connective
+          ? `
             <div style="margin: 4px 0 8px 0; padding: 4px 6px; background: #eff6ff; border: 1px dashed #bfdbfe; border-radius: 4px; font-size: 0.68rem; color: #1e40af; font-weight: 700; line-height: 1.25; text-align: center;">
               <i class="fa-solid fa-arrow-down" style="color: #2563eb; display: block; margin-bottom: 2px;"></i>
               ${connective}
             </div>
           `
-              : ''
-          }
+          : ''
+        }
         </div>
 
         <!-- Exam Link Footer -->
@@ -1928,11 +1925,11 @@ function renderLessonNoteScaffold(lesson, unitId) {
               <i class="fa-solid fa-key" style="color: #64748b; margin-right: 3px;"></i> Must-Use Terms:
             </span>
             ${keyTerms
-              .map(
-                (t) =>
-                  `<span style="background: #f1f5f9; color: #0f172a; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 700; padding: 2px 7px; border-radius: 4px; font-family: 'Inter', sans-serif;">${t}</span>`,
-              )
-              .join('')}
+            .map(
+              (t) =>
+                `<span style="background: #f1f5f9; color: #0f172a; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 700; padding: 2px 7px; border-radius: 4px; font-family: 'Inter', sans-serif;">${t}</span>`,
+            )
+            .join('')}
           </div>
         `
           : '';
@@ -2225,11 +2222,10 @@ if (typeof window !== 'undefined') {
           </div>
           ${keyTermsText}
           <div class="prompt">Prompt: ${b.prompt}</div>
-          ${
-            userNote
-              ? `<div class="user-note"><strong>Student Notes:</strong>\n${userNote}</div>`
-              : `<div class="lines"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div>`
-          }
+          ${userNote
+          ? `<div class="user-note"><strong>Student Notes:</strong>\n${userNote}</div>`
+          : `<div class="lines"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div>`
+        }
         </div>
       `;
     });
@@ -2404,15 +2400,14 @@ function renderLessonVideos(videos, lesson, unitId) {
         ${thumbHtml}
         <div class="video-shelf-card-info">
           <div class="video-shelf-card-tags">
-            ${
-              prominentDur
-                ? `
+            ${prominentDur
+        ? `
               <span class="video-shelf-duration-badge" title="Exact Runtime: ${vid.duration || prominentDur}">
                 <i class="fa-solid fa-clock"></i> ${prominentDur}
               </span>
             `
-                : ''
-            }
+        : ''
+      }
             <span class="video-shelf-pathway-pill" title="${(pathwayInfo.guidance || '').replace(/"/g, '&quot;')}">
               <i class="${pathwayInfo.icon || 'fa-solid fa-route'}"></i> ${pathwayInfo.pathway}
             </span>
@@ -2440,15 +2435,14 @@ function renderLessonVideos(videos, lesson, unitId) {
               ${vid.duration ? `<span class="video-shelf-duration-badge"><i class="fa-solid fa-clock"></i> ${vid.duration}</span>` : ''}
             </div>
             <div style="display: flex; align-items: center; gap: 8px;">
-              ${
-                ytId
-                  ? `
+              ${ytId
+          ? `
                 <button type="button" class="btn-theater-launch-banner" data-action="open-video-modal" data-youtube="${ytId}" data-video-key="${videoKey}" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: #ffffff; border: none; font-size: 0.76rem; font-weight: 700; padding: 5px 12px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 3px rgba(37,99,235,0.3);">
                   <i class="fa-solid fa-expand"></i> Launch Theater Mode
                 </button>
               `
-                  : ''
-              }
+          : ''
+        }
               <button type="button" style="background: none; border: 1px solid #cbd5e1; font-size: 0.78rem; color: #64748b; cursor: pointer; padding: 4px 8px; border-radius: 5px;" onclick="window.toggleVideoTaskDrawer('${safeLessonId}', ${idx}, event)">
                 <i class="fa-solid fa-xmark"></i> Close
               </button>
@@ -2456,9 +2450,8 @@ function renderLessonVideos(videos, lesson, unitId) {
           </div>
 
           <div class="video-drawer-body" style="display: flex; flex-direction: column; gap: 10px;">
-            ${
-              pathwayInfo.guidance
-                ? `
+            ${pathwayInfo.guidance
+          ? `
               <div class="video-teacher-guidance-box" style="background: #f8faff; border-left: 4px solid #6366f1; padding: 10px 14px; border-radius: 0 8px 8px 0; border: 1px solid #e0e7ff; border-left-width: 4px;">
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; flex-wrap: wrap; gap: 6px;">
                   <div style="font-size: 0.72rem; font-weight: 800; color: #4338ca; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 5px;">
@@ -2473,12 +2466,11 @@ function renderLessonVideos(videos, lesson, unitId) {
                 </div>
               </div>
             `
-                : ''
-            }
+          : ''
+        }
 
-            ${
-              vid.viewing_task
-                ? `
+            ${vid.viewing_task
+          ? `
               <div class="video-viewing-task-box" style="background: #ffffff; border-left: 4px solid #f59e0b; padding: 12px 14px; border-radius: 0 8px 8px 0; border: 1px solid #fed7aa; border-left-width: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
                   <div style="font-size: 0.72rem; font-weight: 800; color: #b45309; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 5px;">
@@ -2493,12 +2485,11 @@ function renderLessonVideos(videos, lesson, unitId) {
                 </div>
               </div>
             `
-                : ''
-            }
+          : ''
+        }
 
-            ${
-              vid.model_answer
-                ? `
+            ${vid.model_answer
+          ? `
               <details class="video-model-details" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; overflow: hidden; margin-top: 2px;">
                 <summary style="cursor: pointer; padding: 8px 14px; font-size: 0.82rem; color: #166534; font-weight: 700; user-select: none; display: flex; align-items: center; justify-content: space-between;">
                   <span style="display: flex; align-items: center; gap: 6px;">
@@ -2511,8 +2502,8 @@ function renderLessonVideos(videos, lesson, unitId) {
                 </div>
               </details>
             `
-                : ''
-            }
+          : ''
+        }
           </div>
         </div>
       `;
@@ -2538,15 +2529,14 @@ function renderLessonVideos(videos, lesson, unitId) {
       </div>
 
       <!-- Expandable Task Drawer if triggered -->
-      ${
-        hasAnyTasks
-          ? `
+      ${hasAnyTasks
+      ? `
         <div id="${drawerId}" class="video-task-drawer" style="display: none;">
           ${taskPanelsHtml}
         </div>
       `
-          : ''
-      }
+      : ''
+    }
     </div>
   `;
 }
@@ -2648,9 +2638,9 @@ export function renderLessonLaunchpad({
       <div class="launchpad-bar">
         <div class="launchpad-tabs-group" role="tablist">
           ${tabs
-            .map((tab) => {
-              const isActive = tab.key === activeTabKey;
-              return `
+      .map((tab) => {
+        const isActive = tab.key === activeTabKey;
+        return `
               <button type="button"
                 class="launchpad-tab-btn ${isActive ? 'active' : ''}"
                 data-action="switch-launchpad-tab"
@@ -2663,8 +2653,8 @@ export function renderLessonLaunchpad({
                 ${tab.badge ? `<span class="launchpad-tab-badge">${tab.badge}</span>` : ''}
               </button>
             `;
-            })
-            .join('')}
+      })
+      .join('')}
         </div>
         <div class="launchpad-actions-group">
           <button type="button"
@@ -2677,42 +2667,38 @@ export function renderLessonLaunchpad({
         </div>
       </div>
       <div class="lesson-launchpad-drawer" id="launchpad-drawer-${lesson.id || 'current'}" style="${activeTabKey ? 'display: block;' : 'display: none;'}">
-        ${
-          hasDoNow
-            ? `
+        ${hasDoNow
+      ? `
           <div class="launchpad-panel ${activeTabKey === 'donow' ? 'active' : ''}" data-panel="donow" style="${activeTabKey === 'donow' ? 'display: block;' : 'display: none;'}">
             ${htmlDoNowInner}
           </div>
         `
-            : ''
-        }
-        ${
-          hasVideo
-            ? `
+      : ''
+    }
+        ${hasVideo
+      ? `
           <div class="launchpad-panel ${activeTabKey === 'video' ? 'active' : ''}" data-panel="video" style="${activeTabKey === 'video' ? 'display: block;' : 'display: none;'}">
             ${htmlVideo}
           </div>
         `
-            : ''
-        }
-        ${
-          hasVocab
-            ? `
+      : ''
+    }
+        ${hasVocab
+      ? `
           <div class="launchpad-panel ${activeTabKey === 'vocab' ? 'active' : ''}" data-panel="vocab" style="${activeTabKey === 'vocab' ? 'display: block;' : 'display: none;'}">
             ${htmlVocabInner}
           </div>
         `
-            : ''
-        }
-        ${
-          hasSpine
-            ? `
+      : ''
+    }
+        ${hasSpine
+      ? `
           <div class="launchpad-panel ${activeTabKey === 'spine' ? 'active' : ''}" data-panel="spine" style="${activeTabKey === 'spine' ? 'display: block;' : 'display: none;'}">
             ${htmlSpineInner}
           </div>
         `
-            : ''
-        }
+      : ''
+    }
       </div>
     </div>
   `;
@@ -2782,28 +2768,26 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId) {
               ${sShelf}
             </span>
           </div>
-          ${
-            imgSrc
-              ? `
+          ${imgSrc
+        ? `
             <div style="text-align: center; margin-bottom: 10px; background: #0f172a; border-radius: 6px; padding: 6px;">
               <img src="${imgSrc}" alt="${sTitle}" style="max-height: 200px; max-width: 100%; object-fit: contain; border-radius: 4px; cursor: zoom-in;" data-action="open-modal" data-src="${imgSrc}" title="Click to zoom">
             </div>
           `
-              : ''
-          }
+        : ''
+      }
           <div class="archival-source-body" style="font-family: 'Georgia', serif; font-size: 0.92rem; line-height: 1.55; color: #1e293b; margin-bottom: 10px; font-style: italic;">
             ${sText ? `&ldquo;${sText.replace(/^“|”$/g, '')}&rdquo;` : ''}
           </div>
         </div>
-        ${
-          sClue
-            ? `
+        ${sClue
+        ? `
           <div style="padding: 8px 10px; background: #ffffff; border-left: 3px solid ${textCol}; border-radius: 4px; font-size: 0.82rem; color: #334155; line-height: 1.4; margin-top: 6px;">
             <strong style="color: ${textCol};"><i class="fa-solid fa-lightbulb"></i> Provenance Clue:</strong> ${sClue}
           </div>
         `
-            : ''
-        }
+        : ''
+      }
       </div>
     `;
   };
@@ -2839,8 +2823,8 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId) {
         </div>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
           ${matrix
-            .map(
-              (m, mIdx) => `
+      .map(
+        (m, mIdx) => `
             <div style="background: #ffffff; border: 1px solid #e2e8f0; border-top: 3px solid ${mIdx === 0 ? '#3b82f6' : mIdx === 1 ? '#8b5cf6' : '#10b981'}; border-radius: 6px; padding: 10px;">
               <strong style="display: block; font-size: 0.82rem; color: #1e293b; margin-bottom: 4px; text-transform: uppercase;">
                 ${m.col || m.title || `Phase ${mIdx + 1}`}
@@ -2850,8 +2834,8 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId) {
               </div>
             </div>
           `,
-            )
-            .join('')}
+      )
+      .join('')}
         </div>
       </div>
 
@@ -2859,20 +2843,19 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId) {
       <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; align-items: center;">
         <span style="font-size: 0.78rem; font-weight: 700; color: #1e40af; text-transform: uppercase;">Analytical Connectives (Click to Insert):</span>
         ${connectives
-          .map(
-            (c) => `
+      .map(
+        (c) => `
           <button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #bfdbfe; color: #1e40af; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>
         `,
-          )
-          .join('')}
+      )
+      .join('')}
       </div>
 
       <!-- Pupil Writing Workspace Area -->
       <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 110px; padding: 12px; border: 1.5px solid #bfdbfe; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical; line-height: 1.5;" placeholder="Evaluate the utility of both sources: analyse specific content, evaluate author provenance and purpose, and reach a reasoned comparative judgement..."></textarea>
 
-      ${
-        modelAnswer
-          ? `
+      ${modelAnswer
+      ? `
         <details class="model-paragraph-reveal" style="margin-top: 12px; border: 1px dashed #2563eb; border-radius: 6px; padding: 8px 12px; background: #eff6ff;">
           <summary style="cursor: pointer; color: #1e40af; font-weight: 700; font-size: 0.88rem; outline: none; display: flex; align-items: center; gap: 6px;">
             <i class="fa-solid fa-award"></i> [ Show Level 4 Target Exemplar Model Answer ]
@@ -2882,8 +2865,8 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId) {
           </div>
         </details>
       `
-          : ''
-      }
+      : ''
+    }
     </div>
   `;
 }
@@ -2954,15 +2937,14 @@ export function renderHistoricalInterpretationsTaskHTML(task, lessonIndex, tIdx,
             ${iText ? `&ldquo;${iText.replace(/^“|”$/g, '')}&rdquo;` : ''}
           </div>
         </div>
-        ${
-          iAuthor
-            ? `
+        ${iAuthor
+        ? `
           <div style="padding: 6px 10px; background: #ffffff; border-left: 3px solid ${textCol}; border-radius: 4px; font-size: 0.8rem; color: #475569; font-weight: 600;">
             <i class="fa-solid fa-user-pen" style="color: ${textCol};"></i> ${iAuthor}
           </div>
         `
-            : ''
-        }
+        : ''
+      }
       </div>
     `;
   };
@@ -2998,8 +2980,8 @@ export function renderHistoricalInterpretationsTaskHTML(task, lessonIndex, tIdx,
         </div>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
           ${matrix
-            .map(
-              (m, mIdx) => `
+      .map(
+        (m, mIdx) => `
             <div style="background: #ffffff; border: 1px solid #e2e8f0; border-top: 3px solid ${mIdx === 0 ? '#8b5cf6' : mIdx === 1 ? '#ec4899' : '#059669'}; border-radius: 6px; padding: 10px;">
               <strong style="display: block; font-size: 0.82rem; color: #1e293b; margin-bottom: 4px; text-transform: uppercase;">
                 ${m.col || m.title || `Step ${mIdx + 1}`}
@@ -3009,8 +2991,8 @@ export function renderHistoricalInterpretationsTaskHTML(task, lessonIndex, tIdx,
               </div>
             </div>
           `,
-            )
-            .join('')}
+      )
+      .join('')}
         </div>
       </div>
 
@@ -3018,20 +3000,19 @@ export function renderHistoricalInterpretationsTaskHTML(task, lessonIndex, tIdx,
       <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; align-items: center;">
         <span style="font-size: 0.78rem; font-weight: 700; color: #6d28d9; text-transform: uppercase;">Historiographical Connectives (Click to Insert):</span>
         ${connectives
-          .map(
-            (c) => `
+      .map(
+        (c) => `
           <button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #ddd6fe; color: #6d28d9; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>
         `,
-          )
-          .join('')}
+      )
+      .join('')}
       </div>
 
       <!-- Pupil Writing Workspace Area -->
       <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 110px; padding: 12px; border: 1.5px solid #ddd6fe; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical; line-height: 1.5;" placeholder="Evaluate both interpretations: analyse the arguments of Interpretation 1, contrast with Interpretation 2, and weigh against specific historical knowledge to reach your sustained verdict..."></textarea>
 
-      ${
-        modelAnswer
-          ? `
+      ${modelAnswer
+      ? `
         <details class="model-paragraph-reveal" style="margin-top: 12px; border: 1px dashed #7c3aed; border-radius: 6px; padding: 8px 12px; background: #faf5ff;">
           <summary style="cursor: pointer; color: #6d28d9; font-weight: 700; font-size: 0.88rem; outline: none; display: flex; align-items: center; gap: 6px;">
             <i class="fa-solid fa-award"></i> [ Show Level 4 Target Exemplar Model Answer ]
@@ -3041,8 +3022,8 @@ export function renderHistoricalInterpretationsTaskHTML(task, lessonIndex, tIdx,
           </div>
         </details>
       `
-          : ''
-      }
+      : ''
+    }
     </div>
   `;
 }
@@ -3125,26 +3106,24 @@ export function renderBecauseButSoTaskHTML(task, lessonIndex, tIdx, unitId) {
               <span style="background: #16a34a; color: #ffffff; font-weight: 900; font-size: 0.78rem; padding: 3px 8px; border-radius: 4px; letter-spacing: 0.5px;">BECAUSE</span>
               <strong style="color: #166534; font-size: 0.92rem;">${becauseGuidance}</strong>
             </div>
-            ${
-              becauseModel
-                ? `
+            ${becauseModel
+      ? `
               <button type="button" class="btn-single-bbs-model no-print" onclick="window.toggleSingleBbsModel && window.toggleSingleBbsModel(this)" style="background: #ffffff; border: 1px solid #86efac; color: #166534; font-size: 0.76rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
                 <i class="fa-solid fa-eye"></i> <span>Model Stem</span>
               </button>
             `
-                : ''
-            }
+      : ''
+    }
           </div>
           <textarea class="student-answer-input bbs-input" style="width: 100%; box-sizing: border-box; min-height: 60px; padding: 10px; border: 1px solid #86efac; border-radius: 6px; font-size: 0.95rem; font-family: inherit; resize: vertical; line-height: 1.45; background: #ffffff;" placeholder="${becausePlaceholder}"></textarea>
-          ${
-            becauseModel
-              ? `
+          ${becauseModel
+      ? `
             <div class="bbs-model-box" style="display: none; margin-top: 10px; padding: 12px 14px; background: #ffffff; border-left: 3.5px solid #16a34a; border-radius: 4px; font-size: 0.92rem; color: #14532d; line-height: 1.5; border: 1px solid #bbf7d0;">
               <strong>Exemplar Completion:</strong> ${becauseModel}
             </div>
           `
-              : ''
-          }
+      : ''
+    }
         </div>
 
         <!-- Card 2: BUT -->
@@ -3154,26 +3133,24 @@ export function renderBecauseButSoTaskHTML(task, lessonIndex, tIdx, unitId) {
               <span style="background: #d97706; color: #ffffff; font-weight: 900; font-size: 0.78rem; padding: 3px 8px; border-radius: 4px; letter-spacing: 0.5px;">BUT</span>
               <strong style="color: #92400e; font-size: 0.92rem;">${butGuidance}</strong>
             </div>
-            ${
-              butModel
-                ? `
+            ${butModel
+      ? `
               <button type="button" class="btn-single-bbs-model no-print" onclick="window.toggleSingleBbsModel && window.toggleSingleBbsModel(this)" style="background: #ffffff; border: 1px solid #fde68a; color: #92400e; font-size: 0.76rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
                 <i class="fa-solid fa-eye"></i> <span>Model Stem</span>
               </button>
             `
-                : ''
-            }
+      : ''
+    }
           </div>
           <textarea class="student-answer-input bbs-input" style="width: 100%; box-sizing: border-box; min-height: 60px; padding: 10px; border: 1px solid #fde68a; border-radius: 6px; font-size: 0.95rem; font-family: inherit; resize: vertical; line-height: 1.45; background: #ffffff;" placeholder="${butPlaceholder}"></textarea>
-          ${
-            butModel
-              ? `
+          ${butModel
+      ? `
             <div class="bbs-model-box" style="display: none; margin-top: 10px; padding: 12px 14px; background: #ffffff; border-left: 3.5px solid #d97706; border-radius: 4px; font-size: 0.92rem; color: #78350f; line-height: 1.5; border: 1px solid #fef3c7;">
               <strong>Exemplar Completion:</strong> ${butModel}
             </div>
           `
-              : ''
-          }
+      : ''
+    }
         </div>
 
         <!-- Card 3: SO -->
@@ -3183,26 +3160,24 @@ export function renderBecauseButSoTaskHTML(task, lessonIndex, tIdx, unitId) {
               <span style="background: #2563eb; color: #ffffff; font-weight: 900; font-size: 0.78rem; padding: 3px 8px; border-radius: 4px; letter-spacing: 0.5px;">SO</span>
               <strong style="color: #1e40af; font-size: 0.92rem;">${soGuidance}</strong>
             </div>
-            ${
-              soModel
-                ? `
+            ${soModel
+      ? `
               <button type="button" class="btn-single-bbs-model no-print" onclick="window.toggleSingleBbsModel && window.toggleSingleBbsModel(this)" style="background: #ffffff; border: 1px solid #bfdbfe; color: #1e40af; font-size: 0.76rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
                 <i class="fa-solid fa-eye"></i> <span>Model Stem</span>
               </button>
             `
-                : ''
-            }
+      : ''
+    }
           </div>
           <textarea class="student-answer-input bbs-input" style="width: 100%; box-sizing: border-box; min-height: 60px; padding: 10px; border: 1px solid #bfdbfe; border-radius: 6px; font-size: 0.95rem; font-family: inherit; resize: vertical; line-height: 1.45; background: #ffffff;" placeholder="${soPlaceholder}"></textarea>
-          ${
-            soModel
-              ? `
+          ${soModel
+      ? `
             <div class="bbs-model-box" style="display: none; margin-top: 10px; padding: 12px 14px; background: #ffffff; border-left: 3.5px solid #2563eb; border-radius: 4px; font-size: 0.92rem; color: #1e3a8a; line-height: 1.5; border: 1px solid #dbeafe;">
               <strong>Exemplar Completion:</strong> ${soModel}
             </div>
           `
-              : ''
-          }
+      : ''
+    }
         </div>
       </div>
     </div>
@@ -3264,27 +3239,24 @@ export function renderTextbookSpotlightDrawers(lesson) {
               <div style="font-size: 0.92rem; color: #334155; line-height: 1.5;">${kf.significance}</div>
             </div>
           </div>
-          ${
-            kf.quote
-              ? `
+          ${kf.quote
+        ? `
             <blockquote style="margin: 0 0 12px 0; padding: 10px 14px; background: #ffffff; border-left: 3px solid #94a3b8; font-style: italic; color: #334155; font-size: 0.92rem; border-radius: 0 4px 4px 0; border-top: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
               "${kf.quote.replace(/^["'“”]+|["'“”]+$/g, '')}"
             </blockquote>
           `
-              : ''
-          }
-          ${
-            kf.core_achievement
-              ? `
+        : ''
+      }
+          ${kf.core_achievement
+        ? `
             <div style="font-size: 0.9rem; line-height: 1.55; color: #1e293b; margin-bottom: 6px;">
               <strong style="color: #0f172a;">Core Historical Achievement:</strong> ${kf.core_achievement}
             </div>
           `
-              : ''
-          }
-          ${
-            kf.actions && Array.isArray(kf.actions) && kf.actions.length > 0
-              ? `
+        : ''
+      }
+          ${kf.actions && Array.isArray(kf.actions) && kf.actions.length > 0
+        ? `
             <div style="margin-top: 10px;">
               <strong style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; color: #475569; display: block; margin-bottom: 4px;">Decisive Actions:</strong>
               <ul style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #334155; line-height: 1.5;">
@@ -3292,8 +3264,8 @@ export function renderTextbookSpotlightDrawers(lesson) {
               </ul>
             </div>
           `
-              : ''
-          }
+        : ''
+      }
         </div>
       </details>
     `;
@@ -3321,25 +3293,23 @@ export function renderTextbookSpotlightDrawers(lesson) {
           <div style="margin-bottom: 12px; font-size: 0.92rem; line-height: 1.55; color: #1e293b;">
             <strong style="color: #0f172a;">Core Definition:</strong> ${cs.definition || cs.body || ''}
           </div>
-          ${
-            cs.historical_case_study
-              ? `
+          ${cs.historical_case_study
+        ? `
             <div style="margin-bottom: 12px; padding: 12px 14px; background: #ffffff; border: 1px solid #fed7aa; border-radius: 6px; font-size: 0.9rem; line-height: 1.55; color: #451a03;">
               <strong style="color: #92400e; display: block; margin-bottom: 4px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;">Historical Case Study</strong>
               ${cs.historical_case_study}
             </div>
           `
-              : ''
-          }
-          ${
-            cs.analytical_takeaway || cs.takeaway
-              ? `
+        : ''
+      }
+          ${cs.analytical_takeaway || cs.takeaway
+        ? `
             <div style="font-size: 0.9rem; line-height: 1.55; color: #1e293b;">
               <strong style="color: #0f172a;">Analytical Takeaway:</strong> ${cs.analytical_takeaway || cs.takeaway}
             </div>
           `
-              : ''
-          }
+        : ''
+      }
         </div>
       </details>
     `;
@@ -3369,24 +3339,22 @@ export function renderTextbookSpotlightDrawers(lesson) {
               "${(ad.excerpt || ad.body || '').replace(/^["'“”]+|["'“”]+$/g, '')}"
             </div>
           </div>
-          ${
-            ad.provenance_significance
-              ? `
+          ${ad.provenance_significance
+        ? `
             <div style="margin-bottom: 8px; font-size: 0.88rem; line-height: 1.5; color: #334155;">
               <strong style="color: #0f172a;">Provenance &amp; Context:</strong> ${ad.provenance_significance}
             </div>
           `
-              : ''
-          }
-          ${
-            ad.enquiry_connection
-              ? `
+        : ''
+      }
+          ${ad.enquiry_connection
+        ? `
             <div style="font-size: 0.88rem; line-height: 1.5; color: #334155;">
               <strong style="color: #0f172a;">Enquiry Connection:</strong> ${ad.enquiry_connection}
             </div>
           `
-              : ''
-          }
+        : ''
+      }
         </div>
       </details>
     `;
@@ -3422,7 +3390,7 @@ export function renderLesson(lesson) {
     activeUnit.id ||
     (typeof window !== 'undefined' && window.location && window.location.search
       ? new URLSearchParams(window.location.search).get('id') ||
-        new URLSearchParams(window.location.search).get('unit')
+      new URLSearchParams(window.location.search).get('unit')
       : null) ||
     window.currentUnitId;
   const isEarlyModern = unitId === 'early_modern_world';
@@ -3551,7 +3519,7 @@ export function renderLesson(lesson) {
       typeof lesson.cover_image === 'string'
         ? lesson.cover_image
         : lesson.cover_image.image ||
-          (Array.isArray(lesson.cover_image) ? lesson.cover_image[0] : '');
+        (Array.isArray(lesson.cover_image) ? lesson.cover_image[0] : '');
   }
   if (!heroImage && lesson.sources && lesson.sources.length > 0) {
     heroImage =
@@ -3698,47 +3666,40 @@ export function renderLesson(lesson) {
             ${stickyAnchorText}
           </h4>
           <div class="sticky-lesson-actions">
-          ${
-            isTrip
-              ? ''
-              : `
-              ${
-                isKs2
-                  ? `
+          ${isTrip
+      ? ''
+      : `
+              ${isKs2
+        ? `
                     <button type="button" class="btn btn-ks2-worksheet-launcher" onclick="window.openKs2WorksheetModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #eff6ff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(30, 58, 138, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Open A4 Companion Worksheet (PDF & Print)"><i class="fa-solid fa-file-pdf" style="color: #2563eb;"></i> <span>Enquiry Worksheet</span></button>
                     <button type="button" class="btn btn-ks2-teacher-launcher" onclick="window.openKs2TeacherGuidanceModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(157, 23, 77, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Junior School Non-Specialist Teacher Guidance & Answers"><i class="fa-solid fa-chalkboard-user" style="color: #be185d;"></i> <span>Teacher Guidance</span></button>
                     <a href="/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf" target="_blank" class="btn btn-ks2-workbook-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Open complete 24-page pupil workbook (PDF)"><i class="fa-solid fa-book-bookmark" style="color: #16a34a;"></i> <span>Pupil Workbook (PDF)</span></a>
                   `
-                  : ''
-              }
-              ${
-                grEntry
-                  ? `<button class="btn btn-guided-reading-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" data-action="open-guided-reading-modal" data-lesson-index="${currentIndex}" title="Open Guided Reading Extract: ${grEntry.book_title}"><i class="fa-solid fa-book-open-reader" style="color: #be185d;"></i> Guided Reading</button>`
-                  : ''
-              }
-              ${
-                unitId === 'edexcel_medicine' && currentIndex >= 0
-                  ? `<a href="/units/edexcel_medicine/visual_revision_guide.html#spread-${currentIndex + 1}" target="_blank" class="btn" style="padding: 6px 12px; font-size: 0.88rem; background: #eff6ff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Jump directly to this lesson's visual revision spread and exam model in the Masterclass Guide"><i class="fa-solid fa-book-open"></i> Revision Masterclass (Spread ${currentIndex + 1})</a>`
-                  : ''
-              }
-              ${
-                unitId === 'cme_new' && currentIndex >= 0
-                  ? `<a href="/units/cme_new/visual_revision_guide.html#page_${6 + currentIndex}" target="_blank" class="btn" style="padding: 6px 12px; font-size: 0.88rem; background: #f0f9ff; color: #0369a1; border: 1.5px solid #bae6fd; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Jump directly to this lesson's 1-page Specification Cheat Sheet in the Revision Guide"><i class="fa-solid fa-file-lines"></i> Specification Cheat Sheet (Page ${6 + currentIndex})</a>`
-                  : ''
-              }
-              ${
-                unitId === 'cme_new' || isCme
-                  ? `<button type="button" class="btn btn-cme-theater-map" onclick="window.openCmeTheaterMapModal()" style="padding: 6px 12px; font-size: 0.88rem; background: #0284c7; color: #ffffff; border: 1.5px solid #0369a1; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(2,132,199,0.3); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Open High-Resolution Regional Map (Israel & Surrounding Neighbours) [Shortcut: M]"><i class="fa-solid fa-map" style="color: #ffffff;"></i> Regional Map</button>`
-                  : ''
-              }
-              ${
-                lesson.note_scaffold
-                  ? `<button class="btn btn-note-scaffold-jump" onclick="const sc = document.getElementById('lesson-note-scaffold'); if(sc) { sc.open = true; sc.scrollIntoView({ behavior: 'smooth' }); }" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Jump directly to the Active Lesson Task"><i class="fa-solid fa-pen-to-square" style="color: #16a34a;"></i> Core Lesson Task</button>`
-                  : ''
-              }
+        : ''
+      }
+              ${grEntry
+        ? `<button class="btn btn-guided-reading-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" data-action="open-guided-reading-modal" data-lesson-index="${currentIndex}" title="Open Guided Reading Extract: ${grEntry.book_title}"><i class="fa-solid fa-book-open-reader" style="color: #be185d;"></i> Guided Reading</button>`
+        : ''
+      }
+              ${unitId === 'edexcel_medicine' && currentIndex >= 0
+        ? `<a href="/units/edexcel_medicine/visual_revision_guide.html#spread-${currentIndex + 1}" target="_blank" class="btn" style="padding: 6px 12px; font-size: 0.88rem; background: #eff6ff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Jump directly to this lesson's visual revision spread and exam model in the Masterclass Guide"><i class="fa-solid fa-book-open"></i> Revision Masterclass (Spread ${currentIndex + 1})</a>`
+        : ''
+      }
+              ${unitId === 'cme_new' && currentIndex >= 0
+        ? `<a href="/units/cme_new/visual_revision_guide.html#page_${6 + currentIndex}" target="_blank" class="btn" style="padding: 6px 12px; font-size: 0.88rem; background: #f0f9ff; color: #0369a1; border: 1.5px solid #bae6fd; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Jump directly to this lesson's 1-page Specification Cheat Sheet in the Revision Guide"><i class="fa-solid fa-file-lines"></i> Specification Cheat Sheet (Page ${6 + currentIndex})</a>`
+        : ''
+      }
+              ${unitId === 'cme_new' || isCme
+        ? `<button type="button" class="btn btn-cme-theater-map" onclick="window.openCmeTheaterMapModal()" style="padding: 6px 12px; font-size: 0.88rem; background: #0284c7; color: #ffffff; border: 1.5px solid #0369a1; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(2,132,199,0.3); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Open High-Resolution Regional Map (Israel & Surrounding Neighbours) [Shortcut: M]"><i class="fa-solid fa-map" style="color: #ffffff;"></i> Regional Map</button>`
+        : ''
+      }
+              ${lesson.note_scaffold
+        ? `<button class="btn btn-note-scaffold-jump" onclick="const sc = document.getElementById('lesson-note-scaffold'); if(sc) { sc.open = true; sc.scrollIntoView({ behavior: 'smooth' }); }" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Jump directly to the Active Lesson Task"><i class="fa-solid fa-pen-to-square" style="color: #16a34a;"></i> Core Lesson Task</button>`
+        : ''
+      }
 
             `
-          }
+    }
         </div>
       </div>
     `;
@@ -3904,17 +3865,17 @@ export function renderLesson(lesson) {
         tier: v.tier
           ? String(v.tier)
           : [
-                'gongfermer',
-                'cesspit',
-                'reredorter',
-                'miasma',
-                'latrine',
-                'aqueduct',
-                'conduit',
-                'hypocaust',
-                'lavatorium',
-                'strigil',
-              ].some((t) => termKey.includes(t))
+            'gongfermer',
+            'cesspit',
+            'reredorter',
+            'miasma',
+            'latrine',
+            'aqueduct',
+            'conduit',
+            'hypocaust',
+            'lavatorium',
+            'strigil',
+          ].some((t) => termKey.includes(t))
             ? '3'
             : '2',
       };
@@ -4066,27 +4027,27 @@ export function renderLesson(lesson) {
         const sourceEnquiryHtml =
           source.question || source.enquiry_question || source.how_useful_question
             ? (() => {
-                const qPrompt =
-                  source.question || source.enquiry_question || source.how_useful_question;
-                const dynamicBadge =
-                  source.question_badge ||
-                  source.question_type ||
-                  (() => {
-                    if (/what can you infer|what does .* reveal|what does .* show/i.test(qPrompt))
-                      return 'Source Inference';
-                    if (/why was|why did|purpose|intended|motive|propaganda/i.test(qPrompt))
-                      return 'Author’s Purpose';
-                    if (/differ|support|challenge|corroborat|contrast|counter/i.test(qPrompt))
-                      return 'Cross-Referencing';
-                    if (/reliable|convincing|trustworthy|provenance|weight/i.test(qPrompt))
-                      return 'Reliability & Provenance';
-                    if (/how useful/i.test(qPrompt)) return 'Source Utility';
-                    if (/significance|commemorat|myth/i.test(qPrompt))
-                      return 'Historical Significance';
-                    return 'Enquiry Question';
-                  })();
+              const qPrompt =
+                source.question || source.enquiry_question || source.how_useful_question;
+              const dynamicBadge =
+                source.question_badge ||
+                source.question_type ||
+                (() => {
+                  if (/what can you infer|what does .* reveal|what does .* show/i.test(qPrompt))
+                    return 'Source Inference';
+                  if (/why was|why did|purpose|intended|motive|propaganda/i.test(qPrompt))
+                    return 'Author’s Purpose';
+                  if (/differ|support|challenge|corroborat|contrast|counter/i.test(qPrompt))
+                    return 'Cross-Referencing';
+                  if (/reliable|convincing|trustworthy|provenance|weight/i.test(qPrompt))
+                    return 'Reliability & Provenance';
+                  if (/how useful/i.test(qPrompt)) return 'Source Utility';
+                  if (/significance|commemorat|myth/i.test(qPrompt))
+                    return 'Historical Significance';
+                  return 'Enquiry Question';
+                })();
 
-                return `
+              return `
                 <details class="source-enquiry-reveal">
                   <summary style="padding: 10px 14px; cursor: pointer; display: flex; flex-direction: column; gap: 8px; list-style: none; user-select: none; background: #f0fdf4; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
                     <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%;">
@@ -4101,18 +4062,17 @@ export function renderLesson(lesson) {
                     <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.96rem; color: #14532d; font-weight: 700; line-height: 1.45; width: 100%; word-break: normal; overflow-wrap: break-word;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(qPrompt) : qPrompt}</div>
                   </summary>
                   <div class="source-enquiry-answer-body" style="padding: 16px 20px 14px 20px; background: #ffffff; border-top: 1.5px solid #86efac;">
-                    ${
-                      source.model_answer
-                        ? `
+                    ${source.model_answer
+                  ? `
                       <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #16a34a; padding: 10px 14px; border-radius: 0 4px 4px 0;">
                         <strong style="color: #166534; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-graduation-cap" style="color: #16a34a; margin-right: 6px;"></i>Model Answer:</strong>
                         <div style="font-size: 0.90rem; color: #1e293b; line-height: 1.6;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(source.model_answer) : source.model_answer}</div>
                       </div>
                     `
-                        : source.discussion_ideas &&
-                            Array.isArray(source.discussion_ideas) &&
-                            source.discussion_ideas.length > 0
-                          ? `
+                  : source.discussion_ideas &&
+                    Array.isArray(source.discussion_ideas) &&
+                    source.discussion_ideas.length > 0
+                    ? `
                       <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #16a34a; padding: 10px 14px; border-radius: 0 4px 4px 0;">
                         <strong style="color: #166534; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-graduation-cap" style="color: #16a34a; margin-right: 6px;"></i>Model Disciplinary Guidance:</strong>
                         <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #1e293b; line-height: 1.55;">
@@ -4120,12 +4080,12 @@ export function renderLesson(lesson) {
                         </ul>
                       </div>
                     `
-                          : ''
-                    }
+                    : ''
+                }
                   </div>
                 </details>
               `;
-              })()
+            })()
             : '';
 
         const isSourceArtwork = isPaintingSource(source, displayTitle);
@@ -4150,100 +4110,89 @@ export function renderLesson(lesson) {
               </span>
             </summary>
             <div class="eee-source-content" style="padding: 18px; background: #ffffff; border-top: 1px solid #e2e8f0;">
-              ${
-                sourceImgUrl
-                  ? (() => {
-                      const disc = getArchivalSourceDiscussionComponents(
-                        hingeText,
-                        source,
-                        isKs2,
-                        '10px',
-                      );
-                      return `
+              ${sourceImgUrl
+            ? (() => {
+              const disc = getArchivalSourceDiscussionComponents(
+                hingeText,
+                source,
+                isKs2,
+                '10px',
+              );
+              return `
                 <div class="archival-source-split-layout">
                   <div class="archival-source-media-col${isKs2 ? ' ks2-source-media-col' : ''}">
                     <div style="position: relative; width: 100%; display: flex; justify-content: center;">
                       <img src="${sourceImgUrl}" alt="${displayTitle}" data-action="open-modal" data-src="${sourceImgUrl}" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: ${isKs2 ? '380px' : '280px'}; object-fit: contain; display: block; border-radius: 6px;">
                     </div>
                     ${sourceSpotlightBtn}
-                    ${
-                      !isKs2 && citationText
-                        ? `<div class="archival-media-provenance" style="margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 8px; font-size: 0.74rem; line-height: 1.35; color: #94a3b8; text-align: left;">
+                    ${!isKs2 && citationText
+                  ? `<div class="archival-media-provenance" style="margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 8px; font-size: 0.74rem; line-height: 1.35; color: #94a3b8; text-align: left;">
                             <strong style="color: #cbd5e1;">Provenance:</strong> ${citationText}
                           </div>`
-                        : ''
-                    }
+                  : ''
+                }
                   </div>
                   <div class="archival-source-details-col" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
                     <div>
-                      ${
-                        source.caption
-                          ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 12px; font-style: italic;">${source.caption}</div>`
-                          : ''
-                      }
-                      ${
-                        sourceText
-                          ? `<div class="archival-source-body" style="width: 100%; max-height: 250px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 0.95rem; line-height: 1.6; color: #1e293b; background: #fffdfa; padding: 10px 14px; border-left: 3px solid #1e3a8a; border-radius: 4px; margin-bottom: 12px;">${sourceText}</div>`
-                          : ''
-                      }
-                      ${
-                        contextText
-                          ? `
+                      ${source.caption
+                  ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 12px; font-style: italic;">${source.caption}</div>`
+                  : ''
+                }
+                      ${sourceText
+                  ? `<div class="archival-source-body" style="width: 100%; max-height: 250px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 0.95rem; line-height: 1.6; color: #1e293b; background: #fffdfa; padding: 10px 14px; border-left: 3px solid #1e3a8a; border-radius: 4px; margin-bottom: 12px;">${sourceText}</div>`
+                  : ''
+                }
+                      ${contextText
+                  ? `
                         <div style="background: #f8fafc; border-left: 4px solid #64748b; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 12px; color: #334155; font-size: 0.98rem; line-height: 1.6;">
                           <strong>${isKs2 ? 'What this tells us:' : 'Historical Context:'}</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(contextText) : contextText}
                         </div>
                       `
-                          : ''
-                      }
+                  : ''
+                }
                       ${disc.promptHtml}
                     </div>
-                    ${
-                      sourceEnquiryHtml
-                        ? `<div class="archival-source-inline-enquiry" style="width: 100%; margin-top: 6px;">${sourceEnquiryHtml}</div>`
-                        : ''
-                    }
+                    ${sourceEnquiryHtml
+                  ? `<div class="archival-source-inline-enquiry" style="width: 100%; margin-top: 6px;">${sourceEnquiryHtml}</div>`
+                  : ''
+                }
                   </div>
                 </div>
                 ${disc.panelHtml}
               `;
-                    })()
-                  : `
+            })()
+            : `
                 <div>
-                  ${
-                    sourceText
-                      ? `<div class="archival-source-body" style="width: 100%; max-height: 350px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 1.05rem; line-height: 1.75; color: #1e293b; background: #fffdfa; padding: 14px 18px; border-left: 4px solid #1e3a8a; border-radius: 4px; margin-bottom: 12px;">${sourceText}</div>`
-                      : ''
-                  }
-                  ${
-                    source.caption
-                      ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 12px; font-style: italic;">${source.caption}</div>`
-                      : ''
-                  }
-                  ${
-                    contextText
-                      ? `
+                  ${sourceText
+              ? `<div class="archival-source-body" style="width: 100%; max-height: 350px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 1.05rem; line-height: 1.75; color: #1e293b; background: #fffdfa; padding: 14px 18px; border-left: 4px solid #1e3a8a; border-radius: 4px; margin-bottom: 12px;">${sourceText}</div>`
+              : ''
+            }
+                  ${source.caption
+              ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 12px; font-style: italic;">${source.caption}</div>`
+              : ''
+            }
+                  ${contextText
+              ? `
                     <div style="background: #f8fafc; border-left: 4px solid #64748b; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 12px; color: #334155; font-size: 0.98rem; line-height: 1.6;">
                       <strong>${isKs2 ? 'What this tells us:' : 'Historical Context:'}</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(contextText) : contextText}
                     </div>
                   `
-                      : ''
-                  }
-                  ${
-                    !isKs2 && citationText
-                      ? `<div class="archival-citation-footer" style="font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 8px;">
+              : ''
+            }
+                  ${!isKs2 && citationText
+              ? `<div class="archival-citation-footer" style="font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 8px;">
                           <strong>Provenance:</strong> ${citationText}
                         </div>`
-                      : ''
-                  }
+              : ''
+            }
                   ${renderArchivalSourceDiscussionBox(hingeText, source, isKs2, '12px')}
-                  ${
-                    sourceEnquiryHtml
-                      ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 12px;">${sourceEnquiryHtml}</div>`
-                      : ''
-                  }
+                  ${sourceEnquiryHtml
+              ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 12px;">${sourceEnquiryHtml}</div>`
+              : ''
+            }
                 </div>
               `
-              }
+          }
             </div>
           </details>
         `;
@@ -4280,9 +4229,8 @@ export function renderLesson(lesson) {
                 </h4>
               </div>
             </div>
-            ${
-              source.image || source.src || source.source
-                ? `
+            ${source.image || source.src || source.source
+            ? `
               <div class="archival-source-split-layout">
                 <div class="archival-source-media-col${isKs2 ? ' ks2-source-media-col' : ''}">
                   <div style="position: relative; width: 100%; display: flex; justify-content: center;">
@@ -4291,98 +4239,89 @@ export function renderLesson(lesson) {
                 </div>
                 <div class="archival-source-details-col">
                   <div>
-                    ${
-                      source.text
-                        ? `
+                    ${source.text
+              ? `
                       <div class="archival-source-body" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.02rem; line-height: 1.65; color: #1e293b; background: #fdfbf7; border-left: 4px solid #b45309; padding: 12px 16px; margin-bottom: 14px; border-radius: 0 4px 4px 0; font-style: italic; white-space: pre-line;">
                         ${source.text}
                       </div>
                     `
-                        : ''
-                    }
-                    ${
-                      source.caption
-                        ? `
+              : ''
+            }
+                    ${source.caption
+              ? `
                       <div style="font-size: 0.95rem; color: #334155; margin-bottom: 12px; line-height: 1.6; font-style: italic; background: #f8fafc; padding: 12px 16px; border-left: 3px solid #64748b; border-radius: 0 4px 4px 0;">
                         ${source.caption}
                       </div>
                     `
-                        : ''
-                    }
-                    ${
-                      source.context
-                        ? `
+              : ''
+            }
+                    ${source.context
+              ? `
                       <div style="font-size: 0.95rem; color: #1e293b; margin-bottom: 12px; line-height: 1.65; background: rgba(2, 132, 199, 0.06); padding: 14px 18px; border-left: 4px solid #0284c7; border-radius: 0 6px 6px 0;">
                         <strong style="color: #0369a1; display: block; margin-bottom: 5px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;"><span class="archival-meta-tag" style="color: #0284c7; margin-right: 6px;">HISTORICAL CONTEXT</span></strong>
                         ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(source.context) : source.context}
                       </div>
                     `
-                        : ''
-                    }
+              : ''
+            }
                   </div>
-                  ${
-                    source.citation || source.provenance
-                      ? `
+                  ${source.citation || source.provenance
+              ? `
                     <div class="archival-citation-footer" style="font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: auto;">
                       <strong>Provenance:</strong> ${source.citation || source.provenance}
                     </div>
                   `
-                      : ''
-                  }
+              : ''
+            }
                 </div>
               </div>
             `
-                : `
-              ${
-                source.text
-                  ? `
+            : `
+              ${source.text
+              ? `
                 <div class="archival-source-body" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; line-height: 1.7; color: #1e293b; background: #fdfbf7; border-left: 4px solid #b45309; padding: 16px 20px; margin: 14px 0; border-radius: 0 6px 6px 0; font-style: italic; white-space: pre-line;">
                   ${source.text}
                 </div>
               `
-                  : ''
-              }
-              ${
-                source.caption
-                  ? `
+              : ''
+            }
+              ${source.caption
+              ? `
                 <div style="font-size: 0.95rem; color: #334155; margin: 12px 0; line-height: 1.6; font-style: italic; background: #f8fafc; padding: 12px 16px; border-left: 3px solid #64748b; border-radius: 0 4px 4px 0;">
                   ${source.caption}
                 </div>
               `
-                  : ''
-              }
-              ${
-                source.context
-                  ? `
+              : ''
+            }
+              ${source.context
+              ? `
                 <div style="font-size: 0.95rem; color: #1e293b; margin: 14px 0; line-height: 1.65; background: rgba(2, 132, 199, 0.06); padding: 14px 18px; border-left: 4px solid #0284c7; border-radius: 0 6px 6px 0;">
                   <strong style="color: #0369a1; display: block; margin-bottom: 5px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;"><span class="archival-meta-tag" style="color: #0284c7; margin-right: 6px;">HISTORICAL CONTEXT</span></strong>
                   ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(source.context) : source.context}
                 </div>
               `
-                  : ''
-              }
-              ${
-                source.citation || source.provenance
-                  ? `
+              : ''
+            }
+              ${source.citation || source.provenance
+              ? `
                 <div class="archival-citation-footer" style="font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 12px;">
                   <strong>Provenance:</strong> ${source.citation || source.provenance}
                 </div>
               `
-                  : ''
-              }
-            `
+              : ''
             }
-            ${
-              source.question || source.hinge_question
-                ? `
+            `
+          }
+            ${source.question || source.hinge_question
+            ? `
               <div style="background: #eff6ff; border: 1.5px solid #bfdbfe; border-left: 5px solid #1e40af; padding: 14px 18px; border-radius: 4px; text-align: left; margin-top: 14px; box-shadow: 0 2px 5px rgba(30,58,138,0.06);">
                 <p style="margin-bottom: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.02rem; color: #1e3a8a; line-height: 1.5; font-weight: 600;">
                   <strong>${source.qNum ? `Q${source.qNum}. ` : ''}${formatQuestion(cleanQuestionText(source.question || source.hinge_question), !source.qNum)}</strong>
                 </p>
               </div>
             `
-                : ''
-            }
+            : ''
+          }
           </div>
         `;
         return;
@@ -4392,16 +4331,14 @@ export function renderLesson(lesson) {
             <div class="source-card" ${cardIdAttr} style="background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 20px; text-align: center; transition: all 0.3s ease;">
               ${source.title ? `<h4 style="color: var(--primary); margin-top: 0; text-align: left;">${source.title}</h4>` : ''}
               
-              ${
-                source.image || source.src || source.source
-                  ? `
+              ${source.image || source.src || source.source
+          ? `
                 <div style="display: inline-flex; flex-direction: column; position: relative; max-width: 100%; text-align: left; margin: 15px 0;">
                   <div style="position: relative;">
                     <img src="${getAssetUrl(source.image || source.src || source.source)}" alt="Source Image" style="max-width: 100%; max-height: 400px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #cbd5e1; cursor: zoom-in; display: block;" data-action="open-modal" data-src="${getAssetUrl(source.image || source.src || source.source)}">
                   </div>
-                  ${
-                    source.caption
-                      ? `
+                  ${source.caption
+            ? `
                     <div class="source-info-panel" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px; font-size: 0.95rem; color: #334155; margin-top: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); position: relative;">
                       <strong style="color: #0f172a; margin-bottom: 5px; display: block;">
                         <i class="fa-solid fa-circle-info" style="color: #10b981; margin-right: 5px;"></i>
@@ -4410,29 +4347,28 @@ export function renderLesson(lesson) {
                       ${source.caption}
                     </div>
                   `
-                      : ''
-                  }
+            : ''
+          }
                 </div>
               `
-                  : source.caption
-                    ? `
+          : source.caption
+            ? `
                 <div style="text-align: left; margin-top: 15px; font-size: 1.05rem; color: #334155; line-height: 1.5; padding: 15px; background: #f8fafc; border-left: 4px solid #10b981; border-radius: 4px;">
                   ${source.caption}
                 </div>
               `
-                    : ''
-              }
+            : ''
+        }
               
               ${source.content ? `<div style="text-align: left; margin-top: 10px; font-style: italic; color: #334155; font-size: 1.05rem; line-height: 1.5;">${source.content}</div>` : ''}
-              ${
-                source.question
-                  ? `
+              ${source.question
+          ? `
                 <div class="${qClassAttr}" ${qDataAttr} style="background: #ebf8ff; border-left: 4px solid #3182ce; padding: 15px; border-radius: 0 4px 4px 0; text-align: left; margin-top: 15px;">
                   <p style="margin-bottom: 0; font-size: 1.1rem; color: #1e3a8a;"><strong>${source.qNum ? `Q${source.qNum}. ` : ''}${formatQuestion(source.question, !source.qNum)}</strong></p>
                 </div>
               `
-                  : ''
-              }
+          : ''
+        }
             </div>
           `;
     });
@@ -4470,68 +4406,62 @@ export function renderLesson(lesson) {
                 <span class="archival-shelfmark-stamp">${lesson.primary_source.shelfmark || 'IWM ARCHIVES / REF-GW-1914'}</span>
               </div>
             </div>
-            ${
-              srcs.length > 0
-                ? `
+            ${srcs.length > 0
+          ? `
               <div class="archival-source-split-layout">
                 <div class="archival-source-media-col">
                   ${srcs.map((src) => `<img src="${getAssetUrl(src)}" alt="${lesson.primary_source.title}" data-action="open-modal" data-src="${getAssetUrl(src)}" style="cursor: zoom-in;">`).join('')}
                 </div>
                 <div class="archival-source-details-col">
                   <div>
-                    ${
-                      lesson.primary_source.caption
-                        ? `
+                    ${lesson.primary_source.caption
+            ? `
                       <div style="font-size: 0.95rem; color: #334155; margin-bottom: 12px; line-height: 1.6; font-style: italic; background: #f8fafc; padding: 12px 16px; border-left: 3px solid #64748b; border-radius: 0 4px 4px 0;">
                         ${lesson.primary_source.caption}
                       </div>
                     `
-                        : ''
-                    }
-                    ${
-                      lesson.primary_source.context
-                        ? `
+            : ''
+          }
+                    ${lesson.primary_source.context
+            ? `
                       <div style="font-size: 0.95rem; color: #1e293b; margin-bottom: 12px; line-height: 1.65; background: rgba(2, 132, 199, 0.06); padding: 14px 18px; border-left: 4px solid #0284c7; border-radius: 0 6px 6px 0;">
                         <strong style="color: #0369a1; display: block; margin-bottom: 5px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;"><span class="archival-meta-tag" style="color: #0284c7; margin-right: 6px;">HISTORICAL CONTEXT</span></strong>
                         ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(lesson.primary_source.context) : lesson.primary_source.context}
                       </div>
                     `
-                        : ''
-                    }
+            : ''
+          }
                   </div>
-                  ${
-                    lesson.primary_source.citation || lesson.primary_source.provenance
-                      ? `
+                  ${lesson.primary_source.citation || lesson.primary_source.provenance
+            ? `
                     <div class="archival-citation-footer" style="font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: auto;">
                       <strong>Provenance:</strong> ${lesson.primary_source.citation || lesson.primary_source.provenance}
                     </div>
                   `
-                      : ''
-                  }
+            : ''
+          }
                 </div>
               </div>
             `
-                : ''
-            }
+          : ''
+        }
             ${lesson.primary_source.quote ? `<blockquote style="border-left: 4px solid #3b82f6; background: #f8fafc; padding: 14px 18px; margin: 15px 0; border-radius: 0 8px 8px 0; font-style: italic; color: #1e293b; text-align: left; font-size: 1rem; line-height: 1.6;">&ldquo;${lesson.primary_source.quote}&rdquo;</blockquote>` : ''}
-            ${
-              lesson.primary_source.citation || lesson.primary_source.provenance
-                ? `
+            ${lesson.primary_source.citation || lesson.primary_source.provenance
+          ? `
               <div class="archival-citation-footer" style="font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 14px;">
                 <strong>Provenance:</strong> ${lesson.primary_source.citation || lesson.primary_source.provenance}
               </div>
             `
-                : ''
-            }
-            ${
-              lesson.primary_source.question
-                ? `
+          : ''
+        }
+            ${lesson.primary_source.question
+          ? `
               <div style="background: #eff6ff; border-left: 4px solid #1e40af; padding: 16px 20px; border-radius: 0 6px 6px 0; text-align: left; margin-top: 20px; box-shadow: 0 2px 5px rgba(30,58,138,0.05);">
                 <p style="margin-bottom: 0; font-size: 1.05rem; color: #1e3a8a; line-height: 1.5;"><strong>${lesson.primary_source.qNum ? `Q${lesson.primary_source.qNum}. ` : ''}${formatQuestion(lesson.primary_source.question, !lesson.primary_source.qNum)}</strong></p>
               </div>
             `
-                : ''
-            }
+          : ''
+        }
           </div>
         </div>
       `;
@@ -4539,28 +4469,26 @@ export function renderLesson(lesson) {
       htmlPrimary += `
         <div class="phase-card">
           <div class="source-card" style="background: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 20px; text-align: center;">
-            ${
-              srcs.length > 0
-                ? `
+            ${srcs.length > 0
+          ? `
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 15px;">
               ${srcs.map((src) => `<img src="${getAssetUrl(src)}" alt="Source" style="max-height: 500px; max-width: ${srcs.length > 1 ? '45%' : '100%'}; object-fit: contain; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">`).join('')}
             </div>
             `
-                : ''
-            }
+          : ''
+        }
             <div style="font-weight: bold; margin-bottom: 10px; font-size: 1.1rem; color: var(--primary);">${lesson.primary_source.title}</div>
             ${lesson.primary_source.context ? `<div style="color: #64748b; margin-bottom: 12px; font-size: 0.9rem; text-align: left; font-style: italic;"><strong>Context:</strong> ${lesson.primary_source.context}</div>` : ''}
             ${lesson.primary_source.quote ? `<blockquote style="border-left: 4px solid #3b82f6; background: #f8fafc; padding: 14px 18px; margin: 15px 0; border-radius: 0 8px 8px 0; font-style: italic; color: #1e293b; text-align: left; font-size: 1rem; line-height: 1.6;">&ldquo;${lesson.primary_source.quote}&rdquo;</blockquote>` : ''}
             ${lesson.primary_source.caption ? `<div style="color: #475569; margin-bottom: 15px; font-size: 0.95rem; text-align: left;">${lesson.primary_source.caption}</div>` : ''}
-            ${
-              lesson.primary_source.question
-                ? `
+            ${lesson.primary_source.question
+          ? `
               <div style="background: #ebf8ff; border-left: 4px solid #3182ce; padding: 15px; border-radius: 0 4px 4px 0; text-align: left; margin-top: 20px;">
                 <p style="margin-bottom: 0; font-size: 1.1rem; color: #1e3a8a;"><strong>${lesson.primary_source.qNum ? `Q${lesson.primary_source.qNum}. ` : ''}${formatQuestion(lesson.primary_source.question, !lesson.primary_source.qNum)}</strong></p>
               </div>
             `
-                : ''
-            }
+          : ''
+        }
           </div>
         </div>
       `;
@@ -4697,12 +4625,12 @@ export function renderLesson(lesson) {
       htmlDoNowInner += `
           <div class="donow-panel-content">
             ${renderDoNowHeaderWithTimerHTML({
-              timerId: 'donow-timeline-timer',
-              title: 'Timeline Starter',
-              badgeText: 'Chronological Sequence',
-              icon: 'fa-solid fa-clock-rotate-left',
-              showRevealAll: false,
-            })}
+        timerId: 'donow-timeline-timer',
+        title: 'Timeline Starter',
+        badgeText: 'Chronological Sequence',
+        icon: 'fa-solid fa-clock-rotate-left',
+        showRevealAll: false,
+      })}
             <div style="margin-bottom: 14px; font-size: 1rem; color: #1e3a8a;"><strong>${lesson.do_now.prediction_question || ''}</strong></div>
             <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between;">
       `;
@@ -4746,12 +4674,12 @@ export function renderLesson(lesson) {
     htmlDoNowInner += `
         <div class="donow-panel-content">
           ${renderDoNowHeaderWithTimerHTML({
-            timerId: 'donow-timer',
-            title: 'Do Now Tasks',
-            badgeText: '📖 Workbook Task 1 &bull; Prior Knowledge Retrieval',
-            icon: 'fa-solid fa-list-check',
-            showRevealAll: true,
-          })}
+      timerId: 'donow-timer',
+      title: 'Do Now Tasks',
+      badgeText: '📖 Workbook Task 1 &bull; Prior Knowledge Retrieval',
+      icon: 'fa-solid fa-list-check',
+      showRevealAll: true,
+    })}
           <div class="donow-rows-container" style="display: flex; flex-direction: column; gap: 0; margin-top: 6px; background: #ffffff; border: 1.2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);">
     `;
     const doNowItems = lesson.do_now.items || lesson.do_now.questions || lesson.do_now.tasks || [];
@@ -4890,11 +4818,11 @@ export function renderLesson(lesson) {
           </p>
           <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
             ${vocabTermsList
-              .map(
-                (t) =>
-                  `<button type="button" class="btn btn-secondary odd-term-btn" onclick="document.querySelectorAll('.odd-term-btn').forEach(b=>{b.style.borderColor='#cbd5e1'; b.style.backgroundColor='#ffffff';}); this.style.borderColor='#2563eb'; this.style.backgroundColor='#eff6ff'; document.getElementById('odd-choice').value='${t.replace(/'/g, "\\'")}'; document.getElementById('odd-reasoning-box').style.display='block';" style="padding: 6px 14px; font-size: 0.9rem; border-radius: 20px; border: 2px solid #cbd5e1; font-weight: 600; cursor: pointer; transition: all 0.2s; background: #ffffff; color: #1e293b;">${t}</button>`,
-              )
-              .join('')}
+          .map(
+            (t) =>
+              `<button type="button" class="btn btn-secondary odd-term-btn" onclick="document.querySelectorAll('.odd-term-btn').forEach(b=>{b.style.borderColor='#cbd5e1'; b.style.backgroundColor='#ffffff';}); this.style.borderColor='#2563eb'; this.style.backgroundColor='#eff6ff'; document.getElementById('odd-choice').value='${t.replace(/'/g, "\\'")}'; document.getElementById('odd-reasoning-box').style.display='block';" style="padding: 6px 14px; font-size: 0.9rem; border-radius: 20px; border: 2px solid #cbd5e1; font-weight: 600; cursor: pointer; transition: all 0.2s; background: #ffffff; color: #1e293b;">${t}</button>`,
+          )
+          .join('')}
           </div>
           <input type="hidden" id="odd-choice" value="">
           <div id="odd-reasoning-box" style="display: none; margin-top: 10px;">
@@ -4917,8 +4845,8 @@ export function renderLesson(lesson) {
               </div>
               <div style="display: flex; flex-direction: column; gap: 8px;">
                 ${oddExemplars
-                  .map(
-                    (ex, idx) => `
+          .map(
+            (ex, idx) => `
                   <div style="background: #ffffff; border: 1px solid #fde047; border-radius: 6px; padding: 10px 14px;">
                     <div style="font-size: 0.8rem; font-weight: 800; color: #b45309; text-transform: uppercase;">
                       Option ${String.fromCharCode(65 + idx)}: ${ex.title || 'Historical Link'}
@@ -4931,8 +4859,8 @@ export function renderLesson(lesson) {
                     </div>
                   </div>
                 `,
-                  )
-                  .join('')}
+          )
+          .join('')}
               </div>
             </div>
           </div>
@@ -4957,11 +4885,11 @@ export function renderLesson(lesson) {
           </p>
           <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; background: #f8fafc; padding: 10px; border-radius: 6px; border: 1px solid #e2e8f0;">
             ${vocabTermsList
-              .map(
-                (t) =>
-                  `<span style="background: #ffffff; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 12px; font-size: 0.85rem; font-weight: 600; color: #1e293b;">${t}</span>`,
-              )
-              .join('')}
+          .map(
+            (t) =>
+              `<span style="background: #ffffff; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 12px; font-size: 0.85rem; font-weight: 600; color: #1e293b;">${t}</span>`,
+          )
+          .join('')}
           </div>
           <textarea id="golden-sentence-input" placeholder="Write your Golden Sentence here using because, although, or consequently..." style="width: 100%; min-height: 70px; padding: 10px; border-radius: 6px; border: 1.5px solid #94a3b8; font-family: inherit; font-size: 0.95rem; box-sizing: border-box;"></textarea>
           <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
@@ -5018,11 +4946,11 @@ export function renderLesson(lesson) {
           </div>
           <div id="sort-token-container" style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px;">
             ${vocabTermsList
-              .map(
-                (t) =>
-                  `<button type="button" class="btn btn-secondary sort-token-btn" onclick="const b1 = document.querySelector('#sort-cat-power .sort-bucket-items'); const b2 = document.querySelector('#sort-cat-economy .sort-bucket-items'); const root = document.getElementById('sort-token-container'); if(this.dataset.assigned === 'power'){ this.dataset.assigned='economy'; b2.appendChild(this); this.style.background='#dcfce7'; this.style.borderColor='#86efac'; } else if(this.dataset.assigned === 'economy'){ this.dataset.assigned='unassigned'; root.appendChild(this); this.style.background='#ffffff'; this.style.borderColor='#94a3b8'; } else { this.dataset.assigned='power'; b1.appendChild(this); this.style.background='#dbeafe'; this.style.borderColor='#93c5fd'; }" data-assigned="unassigned" style="padding: 5px 12px; font-size: 0.85rem; border-radius: 12px; border: 1.5px solid #94a3b8; background: #ffffff; color: #1e293b; cursor: pointer; font-weight: 600; transition: all 0.2s;">${t} &rarr;</button>`,
-              )
-              .join('')}
+          .map(
+            (t) =>
+              `<button type="button" class="btn btn-secondary sort-token-btn" onclick="const b1 = document.querySelector('#sort-cat-power .sort-bucket-items'); const b2 = document.querySelector('#sort-cat-economy .sort-bucket-items'); const root = document.getElementById('sort-token-container'); if(this.dataset.assigned === 'power'){ this.dataset.assigned='economy'; b2.appendChild(this); this.style.background='#dcfce7'; this.style.borderColor='#86efac'; } else if(this.dataset.assigned === 'economy'){ this.dataset.assigned='unassigned'; root.appendChild(this); this.style.background='#ffffff'; this.style.borderColor='#94a3b8'; } else { this.dataset.assigned='power'; b1.appendChild(this); this.style.background='#dbeafe'; this.style.borderColor='#93c5fd'; }" data-assigned="unassigned" style="padding: 5px 12px; font-size: 0.85rem; border-radius: 12px; border: 1.5px solid #94a3b8; background: #ffffff; color: #1e293b; cursor: pointer; font-weight: 600; transition: all 0.2s;">${t} &rarr;</button>`,
+          )
+          .join('')}
           </div>
           <p style="font-size: 0.8rem; color: #64748b; margin-top: 8px; font-style: italic;">Click a term button to cycle it between Power (blue), Economy (green), and unassigned.</p>
         </div>
@@ -5286,18 +5214,17 @@ export function renderLesson(lesson) {
               <button type="button" class="btn btn-toggle-all-stages btn-toggle-all-consequences" onclick="event.stopPropagation(); window.toggleAllSpineStages(this);" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; color: #0369a1; background: #ffffff; border: 1.2px solid #bae6fd; padding: 3px 12px; border-radius: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all 0.15s ease;" title="Expand or collapse all historical answer stages across all cards">
                 <i class="fa-solid fa-eye" style="font-size: 0.70rem;"></i> <span class="toggle-stage-text toggle-consequence-text">Reveal All Stages</span>
               </button>
-              ${
-                unitId === 'cme_new' ||
-                (typeof window !== 'undefined' &&
-                  (window.currentUnitId === 'cme_new' ||
-                    window.currentUnitId === 'gcse_middle_east_1945_1995'))
-                  ? `
+              ${unitId === 'cme_new' ||
+          (typeof window !== 'undefined' &&
+            (window.currentUnitId === 'cme_new' ||
+              window.currentUnitId === 'gcse_middle_east_1945_1995'))
+          ? `
               <button type="button" class="btn btn-timeline-jump" onclick="event.stopPropagation(); if(typeof window.switchView==='function'){window.switchView('timeline', 'cme_new');}else if(typeof window.navigateTo==='function'){window.navigateTo('timeline');}" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1.2px solid #bfdbfe; padding: 3px 12px; border-radius: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all 0.15s ease;" title="Jump to interactive chronological Living Timeline">
                 <i class="fa-solid fa-clock-rotate-left" style="color: #2563eb;"></i> Full Living Timeline &rarr;
               </button>
               `
-                  : ''
-              }
+          : ''
+        }
               <span style="font-size: 0.74rem; font-weight: 700; color: #475569; background: #e2e8f0; padding: 2px 8px; border-radius: 12px;">${spineItems.length} Milestones</span>
             </div>
           </div>
@@ -5305,31 +5232,30 @@ export function renderLesson(lesson) {
           <!-- Dynamic Columns Grid -->
           <div class="cme-chronology-spine-grid" style="--spine-cols: ${spineItems.length};">
             ${spineItems
-              .map((item, idx) => {
-                const isLast = idx === spineItems.length - 1;
-                const displayDate = item.date
-                  ? item.date.replace('October–November', 'Oct–Nov')
-                  : '';
-                const hasConsequence = Boolean(
-                  item.consequence && item.consequence.trim().length > 0,
-                );
-                const cleanQ = item.question ? item.question.replace(/^"|"$/g, '').trim() : '';
-                const targetParaMatch = item.para_ref && item.para_ref.match(/\d+\.\d+/);
-                const targetFirstPara = targetParaMatch ? targetParaMatch[0] : `${item.step}.1`;
-                const dominoTooltip = item.connective
-                  ? item.connective
-                  : `Stage ${item.step} triggers Stage ${item.step + 1}`;
+          .map((item, idx) => {
+            const isLast = idx === spineItems.length - 1;
+            const displayDate = item.date
+              ? item.date.replace('October–November', 'Oct–Nov')
+              : '';
+            const hasConsequence = Boolean(
+              item.consequence && item.consequence.trim().length > 0,
+            );
+            const cleanQ = item.question ? item.question.replace(/^"|"$/g, '').trim() : '';
+            const targetParaMatch = item.para_ref && item.para_ref.match(/\d+\.\d+/);
+            const targetFirstPara = targetParaMatch ? targetParaMatch[0] : `${item.step}.1`;
+            const dominoTooltip = item.connective
+              ? item.connective
+              : `Stage ${item.step} triggers Stage ${item.step + 1}`;
 
-                return `
+            return `
                 <div class="cme-spine-card universal-spine-card" data-stage="${item.step}">
-                  ${
-                    !isLast
-                      ? `
+                  ${!isLast
+                ? `
                   <div class="cme-domino-pipeline-node" title="${dominoTooltip}">
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>`
-                      : ''
-                  }
+                : ''
+              }
 
                   <!-- Dedicated Stage Top Bar: Stage Badge + Jump Pill -->
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; padding-bottom: 5px; border-bottom: 1px solid #f1f5f9;">
@@ -5347,16 +5273,15 @@ export function renderLesson(lesson) {
                   </div>
 
                   <!-- Historical Actor Pill -->
-                  ${
-                    item.actor
-                      ? `
+                  ${item.actor
+                ? `
                   <div style="margin-bottom: 6px;">
                     <span style="font-family: 'Inter', sans-serif; font-size: 0.66rem; font-weight: 700; color: #334155; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 2.5px 7px; border-radius: 4px; display: inline-flex; align-items: flex-start; gap: 5px; line-height: 1.25; max-width: 100%;" title="Historical Actor: ${item.actor}">
                       <i class="fa-solid fa-users" style="color: #0284c7; font-size: 0.60rem; margin-top: 2px; flex-shrink: 0;"></i> <span>${item.actor}</span>
                     </span>
                   </div>`
-                      : ''
-                  }
+                : ''
+              }
 
                   <!-- Milestone Title -->
                   <h5 class="cme-spine-title" style="margin: 0 0 8px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 0.94rem; font-weight: 800; color: #0f172a; line-height: 1.30;">
@@ -5364,9 +5289,8 @@ export function renderLesson(lesson) {
                   </h5>
 
                   <!-- Interactive Enquiry Question Card (Click to Reveal Turning Point & Consequence) -->
-                  ${
-                    cleanQ
-                      ? `
+                  ${cleanQ
+                ? `
                   <button type="button" class="spine-question-toggle-card" onclick="event.stopPropagation(); window.toggleCardSpineStage(this);" aria-expanded="false" style="width: 100%; text-align: left; background: #f8fafc; border: 1.2px solid #cbd5e1; border-left: 4px solid #0284c7; padding: 8px 10px; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; margin-bottom: 8px; display: flex; flex-direction: column; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.03);" title="Click to test your memory and reveal the turning point &amp; consequence">
                     <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
                       <span style="display: inline-flex; align-items: center; gap: 5px; font-family: 'Inter', sans-serif; font-size: 0.64rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.5px;">
@@ -5381,8 +5305,8 @@ export function renderLesson(lesson) {
                       "${cleanQ}"
                     </div>
                   </button>`
-                      : ''
-                  }
+                : ''
+              }
 
                   <!-- Collapsible Stage Answer Body (Action, Motive & Consequence) -->
                   <div class="spine-stage-body" style="display: none; animation: spineSlideDown 0.22s ease-out; flex-direction: column; gap: 8px; margin-top: auto;">
@@ -5397,9 +5321,8 @@ export function renderLesson(lesson) {
                     </div>
 
                     <!-- Beat 2: Consequence & Significance (Amber Dual-Coding Identity) -->
-                    ${
-                      hasConsequence
-                        ? `
+                    ${hasConsequence
+                ? `
                     <div class="spine-consequence-block" style="background: #fffdf5; border: 1px solid #fef3c7; border-left: 3.5px solid #d97706; border-radius: 6px; padding: 8px 10px;">
                       <div style="font-family: 'Inter', sans-serif; font-size: 0.63rem; font-weight: 800; color: #b45309; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; display: flex; align-items: center; gap: 4px;">
                         <i class="fa-solid fa-bolt" style="color: #d97706; font-size: 0.60rem;"></i> Consequence &amp; Significance
@@ -5408,13 +5331,12 @@ export function renderLesson(lesson) {
                         ${item.consequence}
                       </div>
                     </div>`
-                        : ''
-                    }
+                : ''
+              }
                   </div>
                 </div>
-                ${
-                  !isLast
-                    ? `
+                ${!isLast
+                ? `
                 <div class="cme-domino-vertical-connector" title="${dominoTooltip}">
                   <div class="cme-connector-line"></div>
                   <div class="cme-connector-badge">
@@ -5423,11 +5345,11 @@ export function renderLesson(lesson) {
                   </div>
                   <div class="cme-connector-line"></div>
                 </div>`
-                    : ''
-                }
+                : ''
+              }
                 `;
-              })
-              .join('')}
+          })
+          .join('')}
           </div>
         </div>
       `;
@@ -5460,10 +5382,10 @@ export function renderLesson(lesson) {
               
               <!-- Hotspot Pins -->
               ${(mapBlock.hotspots || [])
-                .map((spot, sIdx) => {
-                  const isFirst = sIdx === 0;
-                  const isLeftAligned = (spot.x || 0) > 75 || spot.align === 'left';
-                  return `
+          .map((spot, sIdx) => {
+            const isFirst = sIdx === 0;
+            const isLeftAligned = (spot.x || 0) > 75 || spot.align === 'left';
+            return `
                 <div class="map-hotspot-pin ${isFirst ? 'active-pin' : ''} ${isLeftAligned ? 'pin-align-left' : ''}" id="${mapId}-pin-${spot.id}" data-spot-id="${spot.id}" style="left: ${spot.x}%; top: ${spot.y}%;" title="${spot.title}">
                   <div class="pin-pulse" style="background: ${spot.color || '#b91c1c'};"></div>
                   <div class="pin-marker" style="background: ${spot.color || '#b91c1c'};"></div>
@@ -5472,16 +5394,15 @@ export function renderLesson(lesson) {
                   </div>
                 </div>
                 `;
-                })
-                .join('')}
+          })
+          .join('')}
             </div>
           </div>
 
           <!-- Hotspot Dispatch Banner -->
           <div id="${mapId}-intel-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${initialSpot ? initialSpot.color || '#38bdf8' : '#38bdf8'}; border-radius: 8px; padding: 16px 20px;">
-            ${
-              initialSpot
-                ? `
+            ${initialSpot
+          ? `
               <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
                 <div>
                   <span style="background: ${initialSpot.color || '#0284c7'}; color: #ffffff; font-size: 0.68rem; font-weight: 800; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.5px;">${initialSpot.badge || 'Archival Incident'}</span>
@@ -5492,23 +5413,23 @@ export function renderLesson(lesson) {
               <p style="margin: 0 0 10px 0; font-size: 0.95rem; line-height: 1.6; color: #cbd5e1;">${initialSpot.details}</p>
               ${initialSpot.hinge ? `<div style="background: rgba(245, 158, 11, 0.12); border-left: 3px solid #f59e0b; padding: 8px 12px; border-radius: 4px; font-size: 0.88rem; color: #fde68a; font-style: italic;">${initialSpot.hinge.replace(/^(?:Hinge Question|Discussion Prompt|Discussion Question|Question):\s*/i, 'Discussion Prompt: ')}</div>` : ''}
             `
-                : ''
-            }
+          : ''
+        }
           </div>
 
           <!-- Hotspot Buttons Row -->
           <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; justify-content: center;">
             ${(mapBlock.hotspots || [])
-              .map((spot, sIdx) => {
-                const isFirst = sIdx === 0;
-                return `
+          .map((spot, sIdx) => {
+            const isFirst = sIdx === 0;
+            return `
               <button type="button" class="btn btn-sm ${mapId}-nav-btn" data-spot-id="${spot.id}" style="background: ${isFirst ? spot.color || '#0284c7' : 'rgba(255,255,255,0.08)'}; color: #ffffff; border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 4px 12px; font-size: 0.74rem; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">
                 <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background: ${spot.color || '#0284c7'}; color: #fff; text-align: center; line-height: 16px; font-size: 0.62rem; margin-right: 5px;">${sIdx + 1}</span>
                 ${spot.label || spot.title.split(':')[0]}
               </button>
               `;
-              })
-              .join('')}
+          })
+          .join('')}
           </div>
         </div>
       `;
@@ -5578,9 +5499,8 @@ export function renderLesson(lesson) {
             </h3>
             ${sliderBlock.description ? `<p style="font-size: 0.92rem; color: #475569; margin: 0 auto 16px auto; max-width: 760px; line-height: 1.5;">${sliderBlock.description}</p>` : ''}
             
-            ${
-              hasSat
-                ? `
+            ${hasSat
+          ? `
             <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 14px;">
               <button type="button" class="btn btn-sm" id="${sliderId}-btn-street" onclick="
                 const container = document.getElementById('${sliderId}-container');
@@ -5605,8 +5525,8 @@ export function renderLesson(lesson) {
                 <i class="fa-solid fa-satellite"></i> Satellite Aerial Photo
               </button>
             </div>`
-                : ''
-            }
+          : ''
+        }
 
             <!-- Viewport -->
             <div style="position: relative; width: 100%; max-width: 720px; aspect-ratio: ${sliderBlock.aspect_ratio || '1 / 1'}; margin: 0 auto; overflow: hidden; border-radius: 10px; border: 2px solid #94a3b8; background: #0f172a; box-shadow: 0 4px 14px rgba(0,0,0,0.18); user-select: none;">
@@ -5644,22 +5564,21 @@ export function renderLesson(lesson) {
               <span id="${sliderId}-after-text" style="color: #0f172a;">${sliderBlock.after_label || 'After'} <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i></span>
             </div>
 
-            ${
-              sliderBlock.links && sliderBlock.links.length
-                ? `
+            ${sliderBlock.links && sliderBlock.links.length
+          ? `
             <div style="margin-top: 16px; padding-top: 14px; border-top: 1px dashed #cbd5e1; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
               ${sliderBlock.links
-                .map(
-                  (l) => `
+            .map(
+              (l) => `
                 <a href="${l.url}" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 600; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; padding: 6px 12px; border-radius: 6px; text-decoration: none; transition: all 0.15s ease;" onmouseover="this.style.background='#dbeafe';" onmouseout="this.style.background='#eff6ff';">
                   <i class="${l.icon || 'fa-solid fa-arrow-up-right-from-square'}"></i> ${l.label}
                 </a>
               `,
-                )
-                .join('')}
+            )
+            .join('')}
             </div>`
-                : ''
-            }
+          : ''
+        }
           </div>
       `;
 
@@ -5702,8 +5621,8 @@ export function renderLesson(lesson) {
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 25px;">
               ${block.branches
-                .map(
-                  (b) => `
+            .map(
+              (b) => `
                 <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-top: 4px solid ${b.color}; border-radius: 8px; padding: 14px; display: flex; flex-direction: column;">
                   <div style="font-weight: 700; font-size: 0.9rem; color: ${b.color}; margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px;">${b.category}</div>
                   <ul style="margin: 0; padding-left: 18px; font-size: 0.84rem; line-height: 1.5; color: #cbd5e1; flex-grow: 1;">
@@ -5714,8 +5633,8 @@ export function renderLesson(lesson) {
                   </div>
                 </div>
               `,
-                )
-                .join('')}
+            )
+            .join('')}
             </div>
 
             <div style="background: rgba(2, 132, 199, 0.15); border: 2px solid #0284c7; border-radius: 10px; padding: 18px 24px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);">
@@ -5778,9 +5697,8 @@ export function renderLesson(lesson) {
               <h3 style="margin-top: 0; color: #f8fafc; font-family: 'Playfair Display', serif; text-align: center; border-bottom: 1px solid #475569; padding-bottom: 15px; margin-bottom: 20px;">
                 <i class="fa-solid fa-users-viewfinder"></i> The Fallen
               </h3>
-              ${
-                block.cards && block.cards.length > 10
-                  ? `
+              ${block.cards && block.cards.length > 10
+            ? `
               <div style="text-align: center; margin-bottom: 30px;">
                 <input type="text" id="${searchId}" placeholder="Search names..." onkeyup="
                   const filter = this.value.toUpperCase();
@@ -5796,8 +5714,8 @@ export function renderLesson(lesson) {
                   }
                 " style="padding: 12px 20px; width: 80%; max-width: 400px; border-radius: 25px; border: 1px solid #334155; background: #0f172a; color: white; outline: none; font-size: 1.1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
               </div>`
-                  : ''
-              }
+            : ''
+          }
               
               <div class="flip-card-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px;">
           `;
@@ -5964,9 +5882,8 @@ export function renderLesson(lesson) {
 
                       <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 80px; padding: 8px; border: 1px solid #fde68a; border-radius: 5px; font-size: 0.9rem; font-family: inherit; resize: vertical;" placeholder="${isKs3 ? 'Combine the evidence and counter-evidence above to write your complex, balanced analytical paragraph...' : isKs2 ? 'Write your historian answer using the evidence above...' : 'Combine the evidence and counter-evidence above to write your complex, balanced GCSE exam paragraph...'}"></textarea>
 
-                      ${
-                        modelAnswer
-                          ? `
+                      ${modelAnswer
+                    ? `
                         <details style="margin-top: 8px;">
                           <summary style="cursor: pointer; color: #b45309; font-weight: 600; font-size: 0.85rem;"><i class="fa-solid fa-eye"></i> View Level 4 Model Paragraph</summary>
                           <div class="scaffold-box model-box" style="margin-top: 6px; padding: 10px 12px; background: #ffffff; border-left: 3px solid #f59e0b; border-radius: 4px; font-size: 0.9rem; color: #78350f; line-height: 1.5;">
@@ -5974,8 +5891,8 @@ export function renderLesson(lesson) {
                           </div>
                         </details>
                       `
-                          : ''
-                      }
+                    : ''
+                  }
                     </div>
                   </div>
                 `;
@@ -6025,14 +5942,14 @@ export function renderLesson(lesson) {
                     <div style="color: #0f172a; font-size: 1.1rem; font-weight: bold; margin-bottom: 15px;">"${hingeQuestionText}"</div>
                     <div style="display: flex; flex-direction: column; gap: 8px;">
                       ${block.hinge_question.options
-                        .map(
-                          (opt, i) => `
+                .map(
+                  (opt, i) => `
                         <button data-action="hinge-mcq-select" data-correct="${correctIndex}" data-index="${i}" style="text-align: left; background: white; border: 1px solid #bae6fd; padding: 12px 15px; border-radius: 6px; cursor: pointer; transition: all 0.2s; font-size: 1rem; color: #334155;">
                           <strong>${String.fromCharCode(65 + i)}:</strong> ${opt}
                         </button>
                       `,
-                        )
-                        .join('')}
+                )
+                .join('')}
                     </div>
                     <div style="display: none; margin-top: 15px; padding: 12px; background: #dcfce7; border-left: 4px solid #22c55e; color: #166534; font-size: 1rem; border-radius: 0 6px 6px 0;">
                       <strong>Explanation:</strong> ${block.hinge_question.explanation}
@@ -6246,35 +6163,35 @@ export function renderLesson(lesson) {
              </style>
              <div class="narrative-images-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 20px 0;">
                ${block.images
-                 .map((img, idx) => {
-                   if (img.image_context) {
-                     const isWeimar =
-                       window.currentUnitId === 'weimar_nazi_germany' ||
-                       unitId === 'weimar_nazi_germany';
+            .map((img, idx) => {
+              if (img.image_context) {
+                const isWeimar =
+                  window.currentUnitId === 'weimar_nazi_germany' ||
+                  unitId === 'weimar_nazi_germany';
 
-                     let contextText = img.image_context || '';
-                     let hingeText = '';
-                     if (
-                       /\*{0,2}(?:Hinge Question|Discussion Prompt|Discussion Question|Question):\*{0,2}/i.test(
-                         contextText,
-                       )
-                     ) {
-                       const parts = contextText.split(
-                         /\*{0,2}(?:Hinge Question|Discussion Prompt|Discussion Question|Question):\*{0,2}/i,
-                       );
-                       contextText = parts[0].trim();
-                       hingeText = parts[1].trim();
-                     } else if (contextText.includes('Hinge Question:')) {
-                       const parts = contextText.split('Hinge Question:');
-                       contextText = parts[0].trim();
-                       hingeText = parts[1].trim();
-                     }
+                let contextText = img.image_context || '';
+                let hingeText = '';
+                if (
+                  /\*{0,2}(?:Hinge Question|Discussion Prompt|Discussion Question|Question):\*{0,2}/i.test(
+                    contextText,
+                  )
+                ) {
+                  const parts = contextText.split(
+                    /\*{0,2}(?:Hinge Question|Discussion Prompt|Discussion Question|Question):\*{0,2}/i,
+                  );
+                  contextText = parts[0].trim();
+                  hingeText = parts[1].trim();
+                } else if (contextText.includes('Hinge Question:')) {
+                  const parts = contextText.split('Hinge Question:');
+                  contextText = parts[0].trim();
+                  hingeText = parts[1].trim();
+                }
 
-                     if (isWeimar) {
-                       const displayCaption =
-                         img.caption || img.image_caption || 'Archival Primary Record';
-                       const imgSrc = getAssetUrl(img.src || img.image);
-                       return `
+                if (isWeimar) {
+                  const displayCaption =
+                    img.caption || img.image_caption || 'Archival Primary Record';
+                  const imgSrc = getAssetUrl(img.src || img.image);
+                  return `
                        <div style="width: 100%; grid-column: 1 / -1; margin: 6px 0;">
                          <details class="cme-source-drawer weimar-source-drawer archival-drawer gcse-source-container archival-source-box" id="source-card-A" data-source-letter="A" style="margin: 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
                            <summary style="padding: 5px 12px; min-height: 40px; padding: 7px 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
@@ -6288,48 +6205,46 @@ export function renderLesson(lesson) {
                            </summary>
                            <div class="weimar-source-content" style="padding: 18px; background: #ffffff; border-top: 1px solid #e2e8f0;">
                              ${(() => {
-                               const disc = getArchivalSourceDiscussionComponents(
-                                 hingeText,
-                                 img,
-                                 isKs2,
-                                 '10px',
-                               );
-                               return `
+                      const disc = getArchivalSourceDiscussionComponents(
+                        hingeText,
+                        img,
+                        isKs2,
+                        '10px',
+                      );
+                      return `
                              <div class="archival-source-split-layout">
                                <div class="archival-source-media-col">
                                  <img src="${imgSrc}" alt="${displayCaption}" style="width: 100%; max-height: 380px; object-fit: contain; background: #fff; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.08); border: 1px solid #cbd5e1; cursor: zoom-in;" data-action="open-gallery" data-gallery="${galleryData}" data-index="${idx}">
-                                 ${
-                                   !isKs2
-                                     ? `<div class="archival-media-provenance" style="margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 8px; font-size: 0.74rem; line-height: 1.35; color: #94a3b8; text-align: left;">
+                                 ${!isKs2
+                          ? `<div class="archival-media-provenance" style="margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 8px; font-size: 0.74rem; line-height: 1.35; color: #94a3b8; text-align: left;">
                                    <strong style="color: #cbd5e1;">Accession:</strong> Edexcel GCSE Paper 3 Primary Visual Evidence
                                  </div>`
-                                     : ''
-                                 }
+                          : ''
+                        }
                                </div>
                                <div class="archival-source-details-col">
                                  ${displayCaption ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 12px; font-style: italic;">${displayCaption}</div>` : ''}
-                                 ${
-                                   contextText
-                                     ? `
+                                 ${contextText
+                          ? `
                                    <div style="background: #f8fafc; border-left: 4px solid #64748b; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 12px; color: #334155; font-size: 0.98rem; line-height: 1.6;">
                                      <strong>${isKs2 ? 'What this tells us:' : 'Historical Context:'}</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(contextText) : contextText}
                                    </div>
                                  `
-                                     : ''
-                                 }
+                          : ''
+                        }
                                  ${disc.promptHtml}
                                </div>
                              </div>
                              ${disc.panelHtml}
                              `;
-                             })()}
+                    })()}
                            </div>
                          </details>
                        </div>
                        `;
-                     }
+                }
 
-                     return `
+                return `
                      <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch; justify-content: center; margin: 20px 0; width: 100%; grid-column: 1 / -1;">
                        <div style="flex: 1 1 300px; text-align: center; display: flex; flex-direction: column; justify-content: center;">
                          <img src="${getAssetUrl(img.src || img.image)}" alt="${img.alt || img.image_alt || 'Narrative Image'}" style="width: 100%; max-height: 400px; object-fit: contain; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #cbd5e1; cursor: zoom-in;" data-action="open-gallery" data-gallery="${galleryData}" data-index="${idx}">
@@ -6345,16 +6260,16 @@ export function renderLesson(lesson) {
                        </div>
                      </div>
                    `;
-                   } else {
-                     return `
+              } else {
+                return `
                      <div class="narrative-image-container" style="text-align: center;">
                        <img src="${getAssetUrl(img.src || img.image)}" alt="${img.alt || img.image_alt || 'Narrative Image'}" style="width: 100%; max-height: 400px; object-fit: contain; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #cbd5e1; cursor: zoom-in;" data-action="open-gallery" data-gallery="${galleryData}" data-index="${idx}">
                        ${img.caption || img.image_caption || img.alt || img.image_alt ? `<div class="narrative-plate-caption" style="font-size: 0.82rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.45;">${img.source_letter ? `<strong>Source ${img.source_letter}:</strong> ` : ''}${img.caption || img.image_caption || img.alt || img.image_alt}</div>` : ''}
                      </div>
                    `;
-                   }
-                 })
-                 .join('')}
+              }
+            })
+            .join('')}
              </div>
            `;
       } else if (
@@ -6391,18 +6306,18 @@ export function renderLesson(lesson) {
         if (!rawSource) return '';
         const rawImgSrc =
           (typeof rawSource.image === 'string' &&
-          rawSource.image.trim() &&
-          rawSource.image !== 'undefined'
+            rawSource.image.trim() &&
+            rawSource.image !== 'undefined'
             ? rawSource.image.trim()
             : '') ||
           (typeof rawSource.src === 'string' &&
-          rawSource.src.trim() &&
-          rawSource.src !== 'undefined'
+            rawSource.src.trim() &&
+            rawSource.src !== 'undefined'
             ? rawSource.src.trim()
             : '') ||
           (typeof rawSource.source === 'string' &&
-          rawSource.source.trim() &&
-          rawSource.source !== 'undefined'
+            rawSource.source.trim() &&
+            rawSource.source !== 'undefined'
             ? rawSource.source.trim()
             : '') ||
           '';
@@ -6520,7 +6435,7 @@ export function renderLesson(lesson) {
                 (isMedicineWesternFront
                   ? 'Edexcel Paper 1 &bull; Q2(a) Source Utility Enquiry [8 Marks]'
                   : unitId === 'weimar_nazi_germany' ||
-                      window.currentUnitId === 'weimar_nazi_germany'
+                    window.currentUnitId === 'weimar_nazi_germany'
                     ? 'Edexcel Paper 3 &bull; Q3(a) Source Utility Enquiry [8 Marks]'
                     : isKs3
                       ? 'KS3 Primary Source Enquiry'
@@ -6686,18 +6601,17 @@ export function renderLesson(lesson) {
                   <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.96rem; color: #14532d; font-weight: 700; line-height: 1.45; width: 100%; word-break: normal; overflow-wrap: break-word;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(qPrompt) : qPrompt}</div>
                 </summary>
                 <div class="source-enquiry-answer-body" style="padding: 16px 20px 14px 20px; background: #ffffff; border-top: 1.5px solid #86efac;">
-                  ${
-                    rawSource.model_answer
-                      ? `
+                  ${rawSource.model_answer
+                ? `
                     <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #16a34a; padding: 10px 14px; border-radius: 0 4px 4px 0;">
                       <strong style="color: #166534; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-graduation-cap" style="color: #16a34a; margin-right: 6px;"></i>Model Answer:</strong>
                       <div style="font-size: 0.90rem; color: #1e293b; line-height: 1.6;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(rawSource.model_answer) : rawSource.model_answer}</div>
                     </div>
                   `
-                      : rawSource.discussion_ideas &&
-                          Array.isArray(rawSource.discussion_ideas) &&
-                          rawSource.discussion_ideas.length > 0
-                        ? `
+                : rawSource.discussion_ideas &&
+                  Array.isArray(rawSource.discussion_ideas) &&
+                  rawSource.discussion_ideas.length > 0
+                  ? `
                     <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #16a34a; padding: 10px 14px; border-radius: 0 4px 4px 0;">
                       <strong style="color: #166534; display: block; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-graduation-cap" style="color: #16a34a; margin-right: 6px;"></i>Model Disciplinary Guidance:</strong>
                       <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #1e293b; line-height: 1.55;">
@@ -6705,8 +6619,8 @@ export function renderLesson(lesson) {
                       </ul>
                     </div>
                   `
-                        : ''
-                  }
+                  : ''
+              }
                 </div>
               </details>
             `;
@@ -6728,28 +6642,25 @@ export function renderLesson(lesson) {
               ${orientingIntro ? `<div style="font-size: 0.95rem; color: #475569; font-style: italic; line-height: 1.5; flex: 1 1 300px;">${orientingIntro}</div>` : '<div style="flex: 1;"></div>'}
               ${sourceAudioBtnHtml ? `<div style="flex-shrink: 0;">${sourceAudioBtnHtml}</div>` : ''}
             </div>
-            ${
-              sourceText
-                ? `<div class="archival-source-body" style="width: 100%; max-height: 350px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 1.05rem; line-height: 1.75; color: #1e293b; background: #fffdfa; padding: 14px 18px; border-left: 4px solid #1e3a8a; border-radius: 4px; margin-bottom: 8px;">
+            ${sourceText
+              ? `<div class="archival-source-body" style="width: 100%; max-height: 350px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 1.05rem; line-height: 1.75; color: #1e293b; background: #fffdfa; padding: 14px 18px; border-left: 4px solid #1e3a8a; border-radius: 4px; margin-bottom: 8px;">
                     ${sourceText}
                   </div>`
-                : ''
+              : ''
             }
-            ${
-              !isKs2 && (rawSource.citation || rawSource.provenance)
-                ? `<div class="archival-citation-footer" style="font-size: 0.78rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 6px; margin-top: 6px; margin-bottom: 6px; display: block !important; text-align: left !important; line-height: 1.45;">
+            ${!isKs2 && (rawSource.citation || rawSource.provenance)
+              ? `<div class="archival-citation-footer" style="font-size: 0.78rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 6px; margin-top: 6px; margin-bottom: 6px; display: block !important; text-align: left !important; line-height: 1.45;">
                     <strong>Provenance:</strong> ${rawSource.citation || rawSource.provenance}
                   </div>`
-                : ''
+              : ''
             }
-            ${
-              cleanContextVal
-                ? `
+            ${cleanContextVal
+              ? `
               <div style="background: #f8fafc; border-left: 4px solid #64748b; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-top: 12px; margin-bottom: 12px; color: #334155; font-size: 0.95rem; line-height: 1.5;">
                 <strong>${isKs2 ? 'What this tells us:' : 'Historical Context:'}</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(cleanContextVal) : cleanContextVal}
               </div>
             `
-                : ''
+              : ''
             }
             ${utilityCardHtml ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 12px;">${utilityCardHtml}</div>` : renderArchivalSourceDiscussionBox(rawSource.hinge_question || rawSource.question || rawSource.source_question, rawSource, isKs2, '12px')}
           `;
@@ -6777,9 +6688,9 @@ export function renderLesson(lesson) {
             mediaColHtml = `
               <div class="archival-source-media-col dual-plates-col${isKs2 ? ' ks2-source-media-col' : ''}" style="flex: 0 0 380px; max-width: 440px; display: flex; flex-direction: column; gap: 14px;">
                 ${rawSource.plates
-                  .map((plate, pIdx) => {
-                    const plateImgUrl = getAssetUrl(plate.image || plate.src);
-                    return `
+                .map((plate, pIdx) => {
+                  const plateImgUrl = getAssetUrl(plate.image || plate.src);
+                  return `
                     <div class="archival-plate-card" style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; padding: 10px; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
                       <div style="font-size: 0.65rem; font-weight: 800; color: #1e40af; letter-spacing: 0.5px; margin-bottom: 6px; text-transform: uppercase;">
                         ${plate.label || `PLATE ${pIdx + 1}`}
@@ -6790,8 +6701,8 @@ export function renderLesson(lesson) {
                       ${plate.caption ? `<div style="font-size: 0.78rem; color: #475569; margin-top: 6px; line-height: 1.35; font-style: italic;">${plate.caption}</div>` : ''}
                     </div>
                   `;
-                  })
-                  .join('')}
+                })
+                .join('')}
                 ${primaryProvenanceHtml}
               </div>
             `;
@@ -6825,37 +6736,33 @@ export function renderLesson(lesson) {
             <div class="archival-source-split-layout" style="margin-bottom: ${visualEnquiryHtml ? '12px' : '0'};">
               ${mediaColHtml}
               <div class="archival-source-details-col" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
-                ${
-                  rawSource.caption
-                    ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 2px; font-style: italic;">${rawSource.caption}</div>`
-                    : ''
-                }
-                ${
-                  sourceText
-                    ? `<div class="archival-source-body" style="width: 100%; max-height: 250px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 0.95rem; line-height: 1.6; color: #1e293b; background: #fffdfa; padding: 10px 14px; border-left: 3px solid #1e3a8a; border-radius: 4px; margin-bottom: 4px;">
+                ${rawSource.caption
+              ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 2px; font-style: italic;">${rawSource.caption}</div>`
+              : ''
+            }
+                ${sourceText
+              ? `<div class="archival-source-body" style="width: 100%; max-height: 250px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 0.95rem; line-height: 1.6; color: #1e293b; background: #fffdfa; padding: 10px 14px; border-left: 3px solid #1e3a8a; border-radius: 4px; margin-bottom: 4px;">
                         ${sourceText}
                       </div>`
-                    : ''
-                }
-                ${
-                  cleanContextVal
-                    ? `
+              : ''
+            }
+                ${cleanContextVal
+              ? `
                   <div style="background: #f8fafc; border-left: 4px solid #64748b; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 4px; color: #334155; font-size: 0.95rem; line-height: 1.55;">
                     <strong>${isKs2 ? 'What this tells us:' : 'Historical Context:'}</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(cleanContextVal) : cleanContextVal}
                   </div>
                 `
-                    : ''
-                }
-                ${
-                  rawSource.provenance_clue
-                    ? `
+              : ''
+            }
+                ${rawSource.provenance_clue
+              ? `
                   <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 10px 14px; margin-bottom: 4px;">
                     <strong style="color: #166534; display: block; margin-bottom: 2px;"><span class="archival-meta-tag accent-emerald" style="margin-right: 6px;">PROVENANCE CLUE</span></strong>
                     <span style="color: #15803d; font-size: 0.90rem;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(rawSource.provenance_clue) : rawSource.provenance_clue}</span>
                   </div>
                 `
-                    : ''
-                }
+              : ''
+            }
               </div>
             </div>
             ${visualEnquiryHtml}
@@ -6999,15 +6906,14 @@ export function renderLesson(lesson) {
                 <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; color: #38bdf8; letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 5px;">
                   <i class="fa-solid fa-book-open"></i> Stage ${stageNum} Workbook Enquiry
                 </span>
-                ${
-                  matchingLetter && isFiveBlockUnit
-                    ? `
+                ${matchingLetter && isFiveBlockUnit
+            ? `
                   <button type="button" class="stage-source-jump-btn" onclick="event.stopPropagation(); if(window.jumpToSourceDrawer){window.jumpToSourceDrawer('${matchingLetter}');}" style="background: rgba(2, 132, 199, 0.22); border: 1px solid rgba(56, 189, 248, 0.45); color: #7dd3fc; font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease;" title="Jump directly to Source ${matchingLetter} Evidence Drawer below">
                     <i class="fa-solid fa-scroll" style="color: #38bdf8;"></i> Jump to Source ${matchingLetter}
                   </button>
                 `
-                    : ''
-                }
+            : ''
+          }
               </div>
               <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 700; color: #f8fafc; line-height: 1.35;">
                 &ldquo;${stageQ}&rdquo;
@@ -7115,14 +7021,14 @@ export function renderLesson(lesson) {
                 <div style="color: #0f172a; font-size: 1.1rem; font-weight: bold; margin-bottom: 15px;">"${hingeQuestionText}"</div>
                 <div style="display: flex; flex-direction: column; gap: 8px;">
                   ${block.hinge_question.options
-                    .map(
-                      (opt, i) => `
+            .map(
+              (opt, i) => `
                     <button data-action="hinge-mcq-select" data-correct="${correctIndex}" data-index="${i}" style="text-align: left; background: white; border: 1px solid #bae6fd; padding: 12px 15px; border-radius: 6px; cursor: pointer; transition: all 0.2s; font-size: 1rem; color: #334155;">
                       <strong>${String.fromCharCode(65 + i)}:</strong> ${opt}
                     </button>
                   `,
-                    )
-                    .join('')}
+            )
+            .join('')}
                 </div>
                 <div style="display: none; margin-top: 15px; padding: 12px; background: #dcfce7; border-left: 4px solid #22c55e; color: #166534; font-size: 1rem; border-radius: 0 6px 6px 0;">
                   <strong>Explanation:</strong> ${block.hinge_question.explanation}
@@ -7201,26 +7107,26 @@ export function renderLesson(lesson) {
             extrasHtml += `<div style="margin-bottom: 20px; background: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0;">
                  <h4 style="margin-top:0; color:#0f172a;"><i class="fa-solid fa-list-check"></i> ${mcPrefix}${task.text || task.question || ''}</h4>
                  ${task.questions
-                   .map(
-                     (q, qIdx) => `
+                .map(
+                  (q, qIdx) => `
                    <div style="margin-top: 15px;">
                      <strong>${q.q}</strong>
                      <div style="margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">
                        ${q.options
-                         .map(
-                           (opt, oIdx) => `
+                      .map(
+                        (opt, oIdx) => `
                          <label style="cursor:pointer; display:flex; align-items:center; gap:8px;">
                            <input type="radio" name="mc-${index}-${tIdx}-${qIdx}" value="${oIdx}">
                            <span>${opt}</span>
                          </label>
                        `,
-                         )
-                         .join('')}
+                      )
+                      .join('')}
                      </div>
                    </div>
                  `,
-                   )
-                   .join('')}
+                )
+                .join('')}
                </div>`;
             return;
           }
@@ -7229,15 +7135,15 @@ export function renderLesson(lesson) {
                  <h4 style="margin-top:0; color:#0f172a;"><i class="fa-solid fa-arrow-down-1-9"></i> ${task.text || task.question || ''}</h4>
                  <div style="display:flex; flex-direction:column; gap:10px; margin-top:10px;">
                    ${task.events
-                     .map(
-                       (ev, eIdx) => `
+                .map(
+                  (ev, eIdx) => `
                      <div style="display:flex; align-items:center; gap:10px;">
                        <input type="number" min="1" max="${task.events.length}" style="width:50px; padding:5px; border:1px solid #ccc; border-radius:4px;">
                        <span>${ev}</span>
                      </div>
                    `,
-                     )
-                     .join('')}
+                )
+                .join('')}
                  </div>
                </div>`;
             return;
@@ -7263,12 +7169,12 @@ export function renderLesson(lesson) {
                    </div>
                    <div style="display:flex; flex-direction:column; gap:10px;">
                      ${[...task.pairs]
-                       .sort(() => Math.random() - 0.5)
-                       .map(
-                         (p) =>
-                           `<div style="padding:10px; background:white; border:1px solid #cbd5e1; border-radius:6px;">${p.right}</div>`,
-                       )
-                       .join('')}
+                .sort(() => Math.random() - 0.5)
+                .map(
+                  (p) =>
+                    `<div style="padding:10px; background:white; border:1px solid #cbd5e1; border-radius:6px;">${p.right}</div>`,
+                )
+                .join('')}
                    </div></div></div>`;
             return;
           }
@@ -7279,11 +7185,11 @@ export function renderLesson(lesson) {
                    <thead><tr>${task.columns.map((c) => `<th style="border:1px solid #cbd5e1; padding:10px; background:#e2e8f0; color:#1e293b; text-align:left;">${c}</th>`).join('')}</tr></thead>
                    <tbody>
                      ${Array.from({ length: task.rows })
-                       .map(
-                         () =>
-                           `<tr>${task.columns.map(() => `<td style="border:1px solid #cbd5e1; padding:10px;"><textarea style="width:100%; min-height:60px; border:none; resize:vertical; outline:none;" placeholder="Type here..."></textarea></td>`).join('')}</tr>`,
-                       )
-                       .join('')}
+                .map(
+                  () =>
+                    `<tr>${task.columns.map(() => `<td style="border:1px solid #cbd5e1; padding:10px;"><textarea style="width:100%; min-height:60px; border:none; resize:vertical; outline:none;" placeholder="Type here..."></textarea></td>`).join('')}</tr>`,
+                )
+                .join('')}
                    </tbody>
                  </table>
                </div>`;
@@ -7313,24 +7219,22 @@ export function renderLesson(lesson) {
                   <span style="background: #0f172a; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Visual Anatomy</span>
                 </div>
                 ${task.instruction ? `<p style="font-size: 0.95rem; color: #475569; font-style: italic; margin-top: 0; margin-bottom: 15px;">${task.instruction}</p>` : ''}
-                ${
-                  imgSrc
-                    ? `
+                ${imgSrc
+                ? `
                   <div style="text-align: center; margin-bottom: 20px; background: #0f172a; border-radius: 8px; padding: 10px; position: relative;">
                     <img src="${imgSrc}" alt="Historical Diagram" style="max-height: 380px; max-width: 100%; object-fit: contain; border-radius: 4px; cursor: zoom-in;" data-action="open-modal" data-src="${imgSrc}" title="Click to zoom">
                     ${task.caption ? `<div style="color: #94a3b8; font-size: 0.85rem; font-style: italic; margin-top: 8px;">${task.caption}</div>` : ''}
                   </div>
                 `
-                    : ''
-                }
-                ${
-                  task.annotations && task.annotations.length > 0
-                    ? `
+                : ''
+              }
+                ${task.annotations && task.annotations.length > 0
+                ? `
                   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
                     ${task.annotations
-                      .map((ann, aIdx) => {
-                        const num = ann.num || aIdx + 1;
-                        return `
+                  .map((ann, aIdx) => {
+                    const num = ann.num || aIdx + 1;
+                    return `
                         <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 14px;">
                           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
                             <span style="background: #0f172a; color: #ffffff; font-weight: 800; font-size: 0.85rem; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">${num}</span>
@@ -7338,24 +7242,23 @@ export function renderLesson(lesson) {
                           </div>
                           <p style="font-size: 0.88rem; color: #475569; margin: 0 0 10px 0; line-height: 1.4;">${ann.prompt || ann.question || 'Identify and explain significance:'}</p>
                           <textarea style="width: 100%; box-sizing: border-box; min-height: 55px; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.9rem; font-family: inherit; resize: vertical;" placeholder="${ann.starter || 'Type your notes / label here...'}"></textarea>
-                          ${
-                            ann.model
-                              ? `
+                          ${ann.model
+                        ? `
                             <details style="margin-top: 8px;">
                               <summary style="cursor: pointer; color: #b45309; font-weight: 600; font-size: 0.82rem;"><i class="fa-solid fa-eye"></i> View Expert Historical Note</summary>
                               <div style="margin-top: 6px; padding: 8px 10px; background: #fef3c7; border-left: 3px solid #b45309; border-radius: 4px; font-size: 0.85rem; color: #78350f;">${ann.model}</div>
                             </details>
                           `
-                              : ''
-                          }
+                        : ''
+                      }
                         </div>
                       `;
-                      })
-                      .join('')}
+                  })
+                  .join('')}
                   </div>
                 `
-                    : ''
-                }
+                : ''
+              }
               </div>
             `;
             return;
@@ -7368,13 +7271,12 @@ export function renderLesson(lesson) {
                   <span style="background: #0284c7; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Causal Chain</span>
                 </div>
                 ${task.instruction ? `<p style="font-size: 0.95rem; color: #075985; font-style: italic; margin-top: 0; margin-bottom: 15px;">${task.instruction}</p>` : ''}
-                ${
-                  task.steps && task.steps.length > 0
-                    ? `
+                ${task.steps && task.steps.length > 0
+                ? `
                   <div style="display: flex; flex-direction: column; gap: 12px;">
                     ${task.steps
-                      .map(
-                        (step, sIdx) => `
+                  .map(
+                    (step, sIdx) => `
                       <div style="background: #ffffff; border: 1.5px solid ${step.blank ? '#0284c7' : '#cbd5e1'}; border-left: 5px solid ${sIdx === 0 ? '#0284c7' : sIdx === task.steps.length - 1 ? '#0369a1' : '#0ea5e9'}; border-radius: 8px; padding: 14px; display: flex; align-items: flex-start; gap: 14px;">
                         <div style="background: #e0f2fe; color: #0369a1; font-weight: 800; font-size: 0.9rem; padding: 4px 10px; border-radius: 6px; white-space: nowrap;">
                           ${step.stage || 'Step ' + (sIdx + 1)}
@@ -7385,22 +7287,21 @@ export function renderLesson(lesson) {
                             ${step.year ? `<span style="font-size: 0.85rem; color: #64748b; font-weight: 600;">${step.year}</span>` : ''}
                           </div>
                           ${step.desc ? `<p style="margin: 0 0 8px 0; font-size: 0.92rem; color: #475569; line-height: 1.4;">${step.desc}</p>` : ''}
-                          ${
-                            step.blank
-                              ? `
+                          ${step.blank
+                        ? `
                             <textarea style="width: 100%; box-sizing: border-box; min-height: 50px; padding: 8px; border: 1.5px dashed #0284c7; border-radius: 6px; font-size: 0.9rem; font-family: inherit; resize: vertical; background: #f8fafc;" placeholder="${step.prompt || 'Explain the causal link connecting this step...'}"></textarea>
                           `
-                              : ''
-                          }
+                        : ''
+                      }
                         </div>
                       </div>
                     `,
-                      )
-                      .join('')}
+                  )
+                  .join('')}
                   </div>
                 `
-                    : ''
-                }
+                : ''
+              }
               </div>
             `;
             return;
@@ -7413,32 +7314,29 @@ export function renderLesson(lesson) {
                   <span style="background: #d97706; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Forensic Scalpel</span>
                 </div>
                 ${task.instruction ? `<p style="font-size: 0.95rem; color: #78350f; font-style: italic; margin-top: 0; margin-bottom: 12px;">${task.instruction}</p>` : ''}
-                ${
-                  task.source_excerpt
-                    ? `
+                ${task.source_excerpt
+                ? `
                   <div style="font-family: Georgia, serif; font-size: 1rem; color: #1e293b; font-style: italic; background: #ffffff; border-left: 4px solid #d97706; padding: 12px 16px; margin-bottom: 15px; border-radius: 0 6px 6px 0; line-height: 1.6;">
                     &ldquo;${task.source_excerpt}&rdquo;
                   </div>
                 `
-                    : ''
-                }
+                : ''
+              }
                 <div style="background: #ffffff; border: 2px dashed #b45309; border-radius: 8px; padding: 14px; margin-bottom: 14px;">
                   <div style="font-size: 0.88rem; font-weight: 700; color: #92400e; margin-bottom: 6px;">Extract the Exact 3–6 Word "Smoking Gun" Quote:</div>
                   <input type="text" style="width: 100%; box-sizing: border-box; padding: 10px 14px; font-family: Georgia, serif; font-size: 1.05rem; border: 1px solid #fed7aa; border-radius: 6px; color: #1e293b;" placeholder='e.g. "[ . . . 3 to 6 words . . . ]"'>
                 </div>
-                ${
-                  task.justification_prompt
-                    ? `
+                ${task.justification_prompt
+                ? `
                   <div style="margin-bottom: 10px;">
                     <label style="display: block; font-size: 0.9rem; font-weight: 700; color: #78350f; margin-bottom: 6px;">Why is this phrase decisive? ${task.justification_prompt}</label>
                     <textarea style="width: 100%; box-sizing: border-box; min-height: 60px; padding: 8px; border: 1px solid #fed7aa; border-radius: 6px; font-size: 0.9rem; font-family: inherit; resize: vertical;" placeholder="${task.starter || 'Type your justification here...'}"></textarea>
                   </div>
                 `
-                    : ''
-                }
-                ${
-                  task.model_quote
-                    ? `
+                : ''
+              }
+                ${task.model_quote
+                ? `
                   <details style="margin-top: 10px;">
                     <summary style="cursor: pointer; color: #b45309; font-weight: 600; font-size: 0.85rem;"><i class="fa-solid fa-eye"></i> Reveal Historian's Scalpel Selection</summary>
                     <div style="margin-top: 6px; padding: 10px 14px; background: #fef3c7; border-left: 3px solid #b45309; border-radius: 4px; font-size: 0.92rem; color: #78350f;">
@@ -7447,8 +7345,8 @@ export function renderLesson(lesson) {
                     </div>
                   </details>
                 `
-                    : ''
-                }
+                : ''
+              }
               </div>
             `;
             return;
@@ -7468,22 +7366,22 @@ export function renderLesson(lesson) {
                   <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 14px;">
                     <h5 style="margin: 0 0 10px 0; color: #0f172a; font-size: 1rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 6px;">${col1.title}</h5>
                     ${Array.from({ length: rowCount })
-                      .map(
-                        (_, r) => `
+                .map(
+                  (_, r) => `
                       <input type="text" style="width: 100%; box-sizing: border-box; margin-bottom: 8px; padding: 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 0.88rem;" placeholder="${col1.hints && col1.hints[r] ? col1.hints[r] : 'Evidence point ' + (r + 1)}">
                     `,
-                      )
-                      .join('')}
+                )
+                .join('')}
                   </div>
                   <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 14px;">
                     <h5 style="margin: 0 0 10px 0; color: #0f172a; font-size: 1rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 6px;">${col2.title}</h5>
                     ${Array.from({ length: rowCount })
-                      .map(
-                        (_, r) => `
+                .map(
+                  (_, r) => `
                       <input type="text" style="width: 100%; box-sizing: border-box; margin-bottom: 8px; padding: 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 0.88rem;" placeholder="${col2.hints && col2.hints[r] ? col2.hints[r] : 'Evidence point ' + (r + 1)}">
                     `,
-                      )
-                      .join('')}
+                )
+                .join('')}
                   </div>
                 </div>
               </div>
@@ -7566,9 +7464,8 @@ export function renderLesson(lesson) {
 
                   <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 90px; padding: 10px; border: 1px solid #fde68a; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical;" placeholder="${isKs3 ? 'Combine the evidence and counter-evidence above to write your complex, balanced analytical paragraph...' : isKs2 ? 'Write your historian answer using the evidence above...' : 'Combine the evidence and counter-evidence above to write your complex, balanced GCSE exam paragraph...'}"></textarea>
 
-                  ${
-                    modelAnswer
-                      ? `
+                  ${modelAnswer
+                ? `
                     <details class="model-paragraph-reveal" style="margin-top: 12px; border: 1px dashed #d97706; border-radius: 6px; padding: 8px 12px; background: #fffbeb;">
                       <summary style="cursor: pointer; color: #b45309; font-weight: 700; font-size: 0.88rem; outline: none; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye"></i> ${isKs2 ? '[ Show Model Historian Answer ]' : isKs3 ? '[ Show Model Analytical Response ]' : '[ Show Examiner-Grade Model Paragraph ]'}</summary>
                       <div class="scaffold-box model-box" style="margin-top: 10px; padding: 12px 15px; background: #ffffff; border-left: 3px solid #f59e0b; border-radius: 4px; font-size: 0.92rem; color: #78350f; line-height: 1.6; border: 1px solid #fde68a;">
@@ -7576,8 +7473,8 @@ export function renderLesson(lesson) {
                       </div>
                     </details>
                   `
-                      : ''
-                  }
+                : ''
+              }
                 </div>
               </div>
             `;
@@ -7620,13 +7517,12 @@ export function renderLesson(lesson) {
                   <span style="background: #ea580c; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Decision Dilemma</span>
                 </div>
                 ${task.instruction ? `<p style="font-size: 0.95rem; color: #c2410c; font-style: italic; margin-top: 0; margin-bottom: 15px;">${task.instruction}</p>` : ''}
-                ${
-                  task.options && task.options.length > 0
-                    ? `
+                ${task.options && task.options.length > 0
+                ? `
                   <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px;">
                     ${task.options
-                      .map(
-                        (opt, oIdx) => `
+                  .map(
+                    (opt, oIdx) => `
                       <label style="background: #ffffff; border: 1.5px solid #fed7aa; border-radius: 8px; padding: 12px; display: flex; align-items: flex-start; gap: 10px; cursor: pointer; transition: all 0.2s ease;">
                         <input type="radio" name="fork-${index}-${tIdx}" value="${oIdx}" style="margin-top: 3px;">
                         <div>
@@ -7635,25 +7531,23 @@ export function renderLesson(lesson) {
                         </div>
                       </label>
                     `,
-                      )
-                      .join('')}
+                  )
+                  .join('')}
                   </div>
                 `
-                    : ''
-                }
-                ${
-                  task.risk_prompt
-                    ? `
+                : ''
+              }
+                ${task.risk_prompt
+                ? `
                   <div style="margin-bottom: 10px;">
                     <label style="display: block; font-size: 0.9rem; font-weight: 700; color: #9a3412; margin-bottom: 6px;">Calculated Risk: ${task.risk_prompt}</label>
                     <textarea style="width: 100%; box-sizing: border-box; min-height: 50px; padding: 8px; border: 1px solid #fed7aa; border-radius: 6px; font-size: 0.9rem; font-family: inherit; resize: vertical;" placeholder="${task.starter || 'The primary risk of this decision was...'}"></textarea>
                   </div>
                 `
-                    : ''
-                }
-                ${
-                  task.historical_outcome
-                    ? `
+                : ''
+              }
+                ${task.historical_outcome
+                ? `
                   <details style="margin-top: 10px;">
                     <summary style="cursor: pointer; color: #ea580c; font-weight: 600; font-size: 0.85rem;"><i class="fa-solid fa-clock-rotate-left"></i> Reveal Historical Reality</summary>
                     <div style="margin-top: 6px; padding: 10px 14px; background: #ffedd5; border-left: 3px solid #ea580c; border-radius: 4px; font-size: 0.92rem; color: #9a3412;">
@@ -7661,8 +7555,8 @@ export function renderLesson(lesson) {
                     </div>
                   </details>
                 `
-                    : ''
-                }
+                : ''
+              }
               </div>
             `;
             return;
@@ -7679,23 +7573,22 @@ export function renderLesson(lesson) {
                   <span style="background: #059669; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Priority Diamond</span>
                 </div>
                 ${task.instruction ? `<p style="font-size: 0.95rem; color: #047857; font-style: italic; margin-top: 0; margin-bottom: 15px;">${task.instruction}</p>` : ''}
-                ${
-                  task.factors && task.factors.length > 0
-                    ? `
+                ${task.factors && task.factors.length > 0
+                ? `
                   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
                     <div style="background: #ffffff; border: 1.5px solid #a7f3d0; border-radius: 8px; padding: 12px;">
                       <strong style="color: #065f46; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 8px;">Historical Factors Bank:</strong>
                       <div style="display: flex; flex-direction: column; gap: 6px;">
                         ${task.factors
-                          .map(
-                            (f, fIdx) => `
+                  .map(
+                    (f, fIdx) => `
                           <div style="background: #f0fdf4; border: 1px solid #6ee7b7; border-radius: 6px; padding: 8px 10px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #065f46;">
                             <span style="background: #059669; color: #ffffff; font-weight: bold; font-size: 0.75rem; width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">${String.fromCharCode(65 + fIdx)}</span>
                             <span>${typeof f === 'string' ? f : f.title || f.name}</span>
                           </div>
                         `,
-                          )
-                          .join('')}
+                  )
+                  .join('')}
                       </div>
                     </div>
                     <div style="background: #ffffff; border: 1.5px solid #a7f3d0; border-radius: 8px; padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
@@ -7720,8 +7613,8 @@ export function renderLesson(lesson) {
                     </div>
                   </div>
                 `
-                    : ''
-                }
+                : ''
+              }
                 <div style="margin-top: 10px;">
                   <label style="display: block; font-size: 0.9rem; font-weight: 700; color: #065f46; margin-bottom: 6px;">Evaluative Justification: ${task.justification_prompt || 'Explain why your #1 factor outweighs the others:'}</label>
                   <textarea style="width: 100%; box-sizing: border-box; min-height: 55px; padding: 8px; border: 1px solid #a7f3d0; border-radius: 6px; font-size: 0.9rem; font-family: inherit; resize: vertical;" placeholder="${task.starter || 'Factor A was the decisive catalyst because...'}"></textarea>
@@ -7738,9 +7631,9 @@ export function renderLesson(lesson) {
                 ? scaf.structure_strip
                 : task.hints && task.hints.length > 0
                   ? task.hints.map((h) => ({
-                      col: h.label || 'PEEL Step',
-                      prompt: h.prompt || h.text || h,
-                    }))
+                    col: h.label || 'PEEL Step',
+                    prompt: h.prompt || h.text || h,
+                  }))
                   : (scaf.matrix || []).map((m) => ({ col: m.col, prompt: m.text || m.prompt }));
             const starters = scaf.sentence_starters || [];
             const rawConnectives = scaf.connective_bank || scaf.causal_connectives || [];
@@ -7748,9 +7641,9 @@ export function renderLesson(lesson) {
               ? rawConnectives
               : typeof rawConnectives === 'string'
                 ? rawConnectives
-                    .split('•')
-                    .map((s) => s.trim())
-                    .filter(Boolean)
+                  .split('•')
+                  .map((s) => s.trim())
+                  .filter(Boolean)
                 : [];
             const words = scaf.word_bank || [];
             const criteria = scaf.evaluative_criteria || [];
@@ -7783,52 +7676,49 @@ export function renderLesson(lesson) {
                   <span style="background: #0284c7; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">${badgeText}</span>
                 </div>
 
-                ${
-                  actualPrompt
-                    ? `
+                ${actualPrompt
+                ? `
                   <div class="extended-writing-prompt" style="font-size: 1.08rem; font-weight: 700; color: #0f172a; margin-bottom: 16px; line-height: 1.5; background: #f0f9ff; padding: 14px 18px; border-left: 4px solid #0284c7; border-radius: 6px;">
                     <span style="display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; color: #0284c7; margin-bottom: 4px; font-weight: 800;">Enquiry Question:</span>
                     <div>${window.formatBold ? window.formatBold(actualPrompt) : actualPrompt}</div>
-                    ${
-                      task.stimulus && task.stimulus.length > 0
-                        ? `
+                    ${task.stimulus && task.stimulus.length > 0
+                  ? `
                       <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 10px; font-size: 0.85rem; color: #334155;">
                         <strong style="color: #0369a1; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px;">Stimulus:</strong>
                         ${task.stimulus.map((st) => `<span style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.82rem;">${st}</span>`).join('')}
                         <span style="font-style: italic; font-size: 0.78rem; color: #64748b;">(You must also use information of your own)</span>
                       </div>
                     `
-                        : ''
-                    }
+                  : ''
+                }
                   </div>
                 `
-                    : ''
-                }
+                : ''
+              }
 
                 ${scaf.guidance ? `<p style="font-size: 0.95rem; color: #334155; margin-top: 0; margin-bottom: 16px; line-height: 1.5;">${scaf.guidance}</p>` : ''}
 
-                ${
-                  structureStrip.length > 0
-                    ? `
+                ${structureStrip.length > 0
+                ? `
                   <div style="margin-bottom: 18px;">
                     <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #0284c7; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
                       <i class="fa-solid fa-layer-group"></i> Analytical Structure Strip
                     </div>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px;">
                       ${structureStrip
-                        .map((step, sIdx) => {
-                          const isScholar =
-                            step.col && (step.col.includes('Scholar') || step.col.includes('★'));
-                          const borderCol = isScholar
-                            ? '#8b5cf6'
-                            : sIdx === 0
-                              ? '#0284c7'
-                              : sIdx === 1
-                                ? '#059669'
-                                : '#d97706';
-                          const bgCol = isScholar ? '#fbf7ff' : '#f8fafc';
-                          const badgeCol = isScholar ? '#7c3aed' : borderCol;
-                          return `
+                  .map((step, sIdx) => {
+                    const isScholar =
+                      step.col && (step.col.includes('Scholar') || step.col.includes('★'));
+                    const borderCol = isScholar
+                      ? '#8b5cf6'
+                      : sIdx === 0
+                        ? '#0284c7'
+                        : sIdx === 1
+                          ? '#059669'
+                          : '#d97706';
+                    const bgCol = isScholar ? '#fbf7ff' : '#f8fafc';
+                    const badgeCol = isScholar ? '#7c3aed' : borderCol;
+                    return `
                           <div style="background: ${bgCol}; border: 1.5px solid ${borderCol}; border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; justify-content: space-between;">
                             <div>
                               <div style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: ${badgeCol}; margin-bottom: 4px;">
@@ -7838,28 +7728,26 @@ export function renderLesson(lesson) {
                                 ${step.prompt || step.text}
                               </div>
                             </div>
-                            ${
-                              step.starter
-                                ? `
+                            ${step.starter
+                        ? `
                               <div style="font-size: 0.78rem; font-style: italic; color: #475569; border-left: 2px solid ${badgeCol}; padding-left: 6px; margin-top: 4px;">
                                 "${step.starter}"
                               </div>
                             `
-                                : ''
-                            }
+                        : ''
+                      }
                           </div>
                         `;
-                        })
-                        .join('')}
+                  })
+                  .join('')}
                     </div>
                   </div>
                 `
-                    : ''
-                }
+                : ''
+              }
 
-                ${
-                  criteria.length > 0
-                    ? `
+                ${criteria.length > 0
+                ? `
                   <div style="margin-bottom: 14px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 14px;">
                     <strong style="display: block; font-size: 0.78rem; text-transform: uppercase; color: #475569; letter-spacing: 0.5px; margin-bottom: 6px;">
                       <i class="fa-solid fa-scale-balanced" style="color: #0284c7; margin-right: 6px;"></i> Evaluative Criteria &amp; Evidence Checklist
@@ -7869,16 +7757,14 @@ export function renderLesson(lesson) {
                     </ul>
                   </div>
                 `
-                    : ''
-                }
+                : ''
+              }
 
-                ${
-                  starters.length > 0 || connectives.length > 0 || words.length > 0
-                    ? `
+                ${starters.length > 0 || connectives.length > 0 || words.length > 0
+                ? `
                   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 16px;">
-                    ${
-                      words.length > 0
-                        ? `
+                    ${words.length > 0
+                  ? `
                       <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 12px;">
                         <strong style="display: block; font-size: 0.75rem; text-transform: uppercase; color: #475569; letter-spacing: 0.5px; margin-bottom: 6px;">
                           ${vocabBadgeText}
@@ -7888,11 +7774,10 @@ export function renderLesson(lesson) {
                         </div>
                       </div>
                     `
-                        : ''
-                    }
-                    ${
-                      connectives.length > 0
-                        ? `
+                  : ''
+                }
+                    ${connectives.length > 0
+                  ? `
                       <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 10px 12px;">
                         <strong style="display: block; font-size: 0.75rem; text-transform: uppercase; color: #15803d; letter-spacing: 0.5px; margin-bottom: 6px;">
                           Causal Connectives Bank
@@ -7902,16 +7787,15 @@ export function renderLesson(lesson) {
                         </div>
                       </div>
                     `
-                        : ''
-                    }
+                  : ''
+                }
                   </div>
                 `
-                    : ''
-                }
+                : ''
+              }
 
-                ${
-                  starters.length > 0
-                    ? `
+                ${starters.length > 0
+                ? `
                   <details style="margin-bottom: 14px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 8px 12px;">
                     <summary style="cursor: pointer; font-size: 0.84rem; font-weight: 700; color: #1d4ed8;"><i class="fa-solid fa-pen-fancy"></i> Expand Master Sentence Starters Bank (${starters.length} prompts)</summary>
                     <ul style="margin: 8px 0 0 0; padding-left: 20px; font-size: 0.85rem; color: #1e40af; line-height: 1.5;">
@@ -7919,8 +7803,8 @@ export function renderLesson(lesson) {
                     </ul>
                   </details>
                 `
-                    : ''
-                }
+                : ''
+              }
 
                 <div style="margin-bottom: 14px;">
                   <label style="display: block; font-size: 0.88rem; font-weight: 700; color: #0f172a; margin-bottom: 6px;">Pupil Extended Writing Area:</label>
@@ -7969,8 +7853,8 @@ export function renderLesson(lesson) {
                 </div>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
                   ${fc.steps
-                    .map(
-                      (s, sIdx) => `
+                .map(
+                  (s, sIdx) => `
                     <div style="background: white; border: 1px solid #cbd5e1; border-top: 3.5px solid ${sIdx === 0 ? '#0284c7' : sIdx === 1 ? '#d97706' : '#dc2626'}; border-radius: 6px; padding: 10px;">
                       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
                         <span style="font-weight: 800; font-size: 0.78rem; background: #f1f5f9; color: #334155; width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;">${s.num}</span>
@@ -7980,8 +7864,8 @@ export function renderLesson(lesson) {
                       <div style="font-size: 0.78rem; color: #475569; line-height: 1.35;">${s.desc}</div>
                     </div>
                   `,
-                    )
-                    .join('')}
+                )
+                .join('')}
                 </div>
               </div>
             `;
@@ -8263,19 +8147,19 @@ export function renderLesson(lesson) {
               task.synthesis_connectives ||
               (isLocalKs2
                 ? [
-                    'On the one hand...',
-                    'For example...',
-                    'On the other hand...',
-                    'This was important because...',
-                    'Overall, I think that...',
-                  ]
+                  'On the one hand...',
+                  'For example...',
+                  'On the other hand...',
+                  'This was important because...',
+                  'Overall, I think that...',
+                ]
                 : [
-                    'On the one hand...',
-                    'For example...',
-                    'On the other hand...',
-                    'Consequently...',
-                    'Overall, while...',
-                  ]);
+                  'On the one hand...',
+                  'For example...',
+                  'On the other hand...',
+                  'Consequently...',
+                  'Overall, while...',
+                ]);
             const modelAnswer = task.model_answer || task.model || '';
             const targetBadge = isLocalKs2
               ? `<span style="background: #1e3a8a; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-award" style="color: #93c5fd;"></i> Key Stage 2 Historian Investigation</span>`
@@ -8318,8 +8202,8 @@ export function renderLesson(lesson) {
                     </div>
                     <ul style="margin: 0 0 12px 0; padding: 0; list-style: none;">
                       ${advPoints
-                        .map(
-                          (pt, pIdx) => `
+                .map(
+                  (pt, pIdx) => `
                         <li class="t3-evidence-item" onclick="window.toggleSingleEvidence && window.toggleSingleEvidence(this)" style="margin-bottom: 8px; cursor: pointer; transition: all 0.15s ease;">
                           <div style="background: #ffffff; border: 1.5px dashed #86efac; border-radius: 6px; padding: 8px 10px; display: flex; align-items: flex-start; gap: 8px;">
                             <span style="background: #dcfce7; color: #166534; font-size: 0.75rem; font-weight: 800; width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">${pIdx + 1}</span>
@@ -8335,12 +8219,11 @@ export function renderLesson(lesson) {
                           </div>
                         </li>
                       `,
-                        )
-                        .join('')}
+                )
+                .join('')}
                     </ul>
-                    ${
-                      advStarter
-                        ? `
+                    ${advStarter
+                ? `
                       <div class="t3-starter-box" onclick="window.toggleSingleStarter && window.toggleSingleStarter(this)" style="cursor: pointer; padding: 8px 10px; background: #ffffff; border-left: 3px solid #22c55e; border-radius: 4px; font-size: 0.85rem; color: #15803d; font-style: italic; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
                         <span class="t3-starter-prompt" style="font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
                           <span><i class="fa-solid fa-pen"></i> Evidence Sentence Stem (Click to Reveal)</span>
@@ -8349,8 +8232,8 @@ export function renderLesson(lesson) {
                         <span class="t3-starter-revealed" style="display: none;"><strong>Evidence Stem:</strong> &ldquo;${advStarter}&rdquo;</span>
                       </div>
                     `
-                        : ''
-                    }
+                : ''
+              }
                   </div>
 
                   <!-- Side 2: Limitations / Continuity -->
@@ -8363,8 +8246,8 @@ export function renderLesson(lesson) {
                     </div>
                     <ul style="margin: 0 0 12px 0; padding: 0; list-style: none;">
                       ${limPoints
-                        .map(
-                          (pt, pIdx) => `
+                .map(
+                  (pt, pIdx) => `
                         <li class="t3-evidence-item" onclick="window.toggleSingleEvidence && window.toggleSingleEvidence(this)" style="margin-bottom: 8px; cursor: pointer; transition: all 0.15s ease;">
                           <div style="background: #ffffff; border: 1.5px dashed #fecdd3; border-radius: 6px; padding: 8px 10px; display: flex; align-items: flex-start; gap: 8px;">
                             <span style="background: #ffe4e6; color: #9f1239; font-size: 0.75rem; font-weight: 800; width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">${pIdx + 1}</span>
@@ -8380,12 +8263,11 @@ export function renderLesson(lesson) {
                           </div>
                         </li>
                       `,
-                        )
-                        .join('')}
+                )
+                .join('')}
                     </ul>
-                    ${
-                      limStarter
-                        ? `
+                    ${limStarter
+                ? `
                       <div class="t3-starter-box" onclick="window.toggleSingleStarter && window.toggleSingleStarter(this)" style="cursor: pointer; padding: 8px 10px; background: #ffffff; border-left: 3px solid #f43f5e; border-radius: 4px; font-size: 0.85rem; color: #be123c; font-style: italic; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
                         <span class="t3-starter-prompt" style="font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
                           <span><i class="fa-solid fa-pen"></i> Counter-Sentence Stem (Click to Reveal)</span>
@@ -8394,8 +8276,8 @@ export function renderLesson(lesson) {
                         <span class="t3-starter-revealed" style="display: none;"><strong>Counter-Stem:</strong> &ldquo;${limStarter}&rdquo;</span>
                       </div>
                     `
-                        : ''
-                    }
+                : ''
+              }
                   </div>
                 </div>
 
@@ -8418,9 +8300,8 @@ export function renderLesson(lesson) {
 
                   <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 90px; padding: 10px; border: 1px solid #fde68a; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical;" placeholder="${placeholderText}"></textarea>
 
-                  ${
-                    modelAnswer
-                      ? `
+                  ${modelAnswer
+                ? `
                     <details class="model-paragraph-reveal" style="margin-top: 12px; border: 1px dashed #d97706; border-radius: 6px; padding: 8px 12px; background: #fffbeb;">
                       <summary style="cursor: pointer; color: #b45309; font-weight: 700; font-size: 0.88rem; outline: none; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye"></i> ${isLocalKs2 ? '[ Show Model Historian Answer ]' : isLocalKs3 ? '[ Show Model Analytical Response ]' : '[ Show Examiner-Grade Model Paragraph ]'}</summary>
                       <div class="scaffold-box model-box" style="margin-top: 10px; padding: 12px 15px; background: #ffffff; border-left: 3px solid #f59e0b; border-radius: 4px; font-size: 0.92rem; color: #78350f; line-height: 1.6; border: 1px solid #fde68a;">
@@ -8428,8 +8309,8 @@ export function renderLesson(lesson) {
                       </div>
                     </details>
                   `
-                      : ''
-                  }
+                : ''
+              }
                 </div>
               </div>
             `;
@@ -8478,16 +8359,15 @@ export function renderLesson(lesson) {
                   </div>
                   ${f1.starter ? `<div style="font-size: 0.82rem; color: #64748b; font-style: italic; margin-bottom: 6px;"><strong>Starter:</strong> &ldquo;${f1.starter}&rdquo;</div>` : ''}
                   <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 75px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.92rem; line-height: 1.5;" placeholder="${f1.starter || 'One key feature was... Specifically, this involved...'}"></textarea>
-                  ${
-                    f1.model
-                      ? `
+                  ${f1.model
+                ? `
                     <details style="margin-top: 8px;">
                       <summary style="cursor: pointer; color: #0369a1; font-weight: 700; font-size: 0.82rem;"><i class="fa-solid fa-eye"></i> [ Reveal Feature 1 Model ]</summary>
                       <div style="margin-top: 6px; padding: 10px; background: #ffffff; border-left: 3px solid #0284c7; border-radius: 4px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${formatBold ? formatBold(f1.model) : f1.model}</div>
                     </details>
                   `
-                      : ''
-                  }
+                : ''
+              }
                 </div>
 
                 <!-- Feature 2 -->
@@ -8498,16 +8378,15 @@ export function renderLesson(lesson) {
                   </div>
                   ${f2.starter ? `<div style="font-size: 0.82rem; color: #64748b; font-style: italic; margin-bottom: 6px;"><strong>Starter:</strong> &ldquo;${f2.starter}&rdquo;</div>` : ''}
                   <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 75px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.92rem; line-height: 1.5;" placeholder="${f2.starter || 'A second key feature was... For example, this meant that...'}"></textarea>
-                  ${
-                    f2.model
-                      ? `
+                  ${f2.model
+                ? `
                     <details style="margin-top: 8px;">
                       <summary style="cursor: pointer; color: #0369a1; font-weight: 700; font-size: 0.82rem;"><i class="fa-solid fa-eye"></i> [ Reveal Feature 2 Model ]</summary>
                       <div style="margin-top: 6px; padding: 10px; background: #ffffff; border-left: 3px solid #0284c7; border-radius: 4px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${formatBold ? formatBold(f2.model) : f2.model}</div>
                     </details>
                   `
-                      : ''
-                  }
+                : ''
+              }
                 </div>
               </div>
             `;
@@ -8536,7 +8415,7 @@ export function renderLesson(lesson) {
                   ? task.type === 'narrative_account'
                     ? '8 MARKS &bull; NARRATIVE ACCOUNT'
                     : (task.topic && task.topic.includes('12 Marks')) ||
-                        (task.question && task.question.includes('12 marks'))
+                      (task.question && task.question.includes('12 marks'))
                       ? '12 MARKS &bull; EXPLAIN WHY'
                       : 'KS3 Enquiry Essay &bull; Structured Writing'
                   : 'GCSE Analytical Masterclass');
@@ -8555,12 +8434,12 @@ export function renderLesson(lesson) {
               (isKs2
                 ? ks2Connectives
                 : [
-                    'To a large extent, it can be argued that...',
-                    'In particular, a decisive factor was...',
-                    'Furthermore, this created severe consequences because...',
-                    'On the other hand, an alternative perspective is that...',
-                    'In conclusion, the decisive reason why...',
-                  ]);
+                  'To a large extent, it can be argued that...',
+                  'In particular, a decisive factor was...',
+                  'Furthermore, this created severe consequences because...',
+                  'On the other hand, an alternative perspective is that...',
+                  'In conclusion, the decisive reason why...',
+                ]);
 
             const taskScaf = task.scaffolding || {};
             const structureStrip = Array.isArray(taskScaf.structure_strip) ? taskScaf.structure_strip : [];
@@ -8630,23 +8509,23 @@ export function renderLesson(lesson) {
               peelHtml = `
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px;">
                   ${hints
-                    .map((hint, hIdx) => {
-                      const cfg = cfgList[hIdx % cfgList.length];
-                      let cleanHint =
-                        typeof hint === 'string'
-                          ? hint
-                          : hint.prompt || hint.text || hint.desc || '';
-                      let label = typeof hint === 'object' && hint.label ? hint.label : cfg.label;
-                      if (typeof hint === 'string' && typeof hint.match === 'function') {
-                        const splitMatch = hint.match(
-                          /^(Point|Evidence|Explanation|Link|Beginning|Middle|End)(?:\s*\([^)]*\))?:\s*(.*)/i,
-                        );
-                        if (splitMatch) {
-                          label = isNarrative ? cfg.label : splitMatch[1];
-                          cleanHint = splitMatch[2];
-                        }
+                  .map((hint, hIdx) => {
+                    const cfg = cfgList[hIdx % cfgList.length];
+                    let cleanHint =
+                      typeof hint === 'string'
+                        ? hint
+                        : hint.prompt || hint.text || hint.desc || '';
+                    let label = typeof hint === 'object' && hint.label ? hint.label : cfg.label;
+                    if (typeof hint === 'string' && typeof hint.match === 'function') {
+                      const splitMatch = hint.match(
+                        /^(Point|Evidence|Explanation|Link|Beginning|Middle|End)(?:\s*\([^)]*\))?:\s*(.*)/i,
+                      );
+                      if (splitMatch) {
+                        label = isNarrative ? cfg.label : splitMatch[1];
+                        cleanHint = splitMatch[2];
                       }
-                      return `
+                    }
+                    return `
                       <div style="background: ${cfg.bg}; border: 1.5px solid ${cfg.border}; border-radius: 6px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px;">
                         <div style="display: flex; align-items: center; gap: 6px; font-weight: 800; font-size: 0.82rem; color: ${cfg.text}; text-transform: uppercase;">
                           <span style="background: ${cfg.text}; color: #ffffff; width: 18px; height: 18px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.72rem;">${cfg.letter}</span>
@@ -8657,8 +8536,8 @@ export function renderLesson(lesson) {
                         </div>
                       </div>
                     `;
-                    })
-                    .join('')}
+                  })
+                  .join('')}
                 </div>
               `;
             }
@@ -8674,15 +8553,15 @@ export function renderLesson(lesson) {
                   </div>
                   <div style="display: flex; flex-direction: column; gap: 7px;">
                     ${structureStrip
-                      .map((step) => {
-                        const stepText = typeof step === 'string' ? step : (step.prompt || step.text || '');
-                        return `
+                  .map((step) => {
+                    const stepText = typeof step === 'string' ? step : (step.prompt || step.text || '');
+                    return `
                         <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #0284c7; border-radius: 4px; padding: 8px 12px; font-size: 0.86rem; color: #1e293b; line-height: 1.5;">
                           ${formatBold ? formatBold(stepText) : stepText}
                         </div>
                       `;
-                      })
-                      .join('')}
+                  })
+                  .join('')}
                   </div>
                 </div>
               `;
@@ -8793,17 +8672,16 @@ export function renderLesson(lesson) {
                   </div>
                 </div>
 
-                ${
-                  questionPrompt
-                    ? `
+                ${questionPrompt
+                ? `
                   <div class="extended-writing-prompt" style="font-size: 1.08rem; font-weight: 700; color: #0f172a; margin-bottom: 16px; line-height: 1.5; background: #f0f9ff; padding: 14px 18px; border-left: 4px solid #0284c7; border-radius: 0 6px 6px 0;">
                     <span style="display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; color: #0284c7; margin-bottom: 4px; font-weight: 800;">Enquiry Question:</span>
                     <div>${formatBold ? formatBold(questionPrompt) : questionPrompt}</div>
                     ${stimulusHtml}
                   </div>
                 `
-                    : ''
-                }
+                : ''
+              }
 
                 ${scaffoldingDrawerHtml}
 
@@ -8811,32 +8689,30 @@ export function renderLesson(lesson) {
                   <label style="display: block; font-size: 0.85rem; font-weight: 700; color: #1e293b; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">${isKs2 ? 'Your Historian Response:' : task.type === 'narrative_account' ? 'Student Response &bull; Chronological 3-Paragraph Narrative Account (Beginning, Middle, End):' : 'Student Response &bull; Structured Historical Argument:'}</label>
                   <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 140px; padding: 12px; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; font-family: inherit; resize: vertical;" placeholder="${customPlaceholder}" oninput="window.updateProgress()"></textarea>
 
-                  ${
-                    modelAnswer
-                      ? `
+                  ${modelAnswer
+                ? `
                     <details class="model-paragraph-reveal" style="margin-top: 14px; border: 1px dashed #0284c7; border-radius: 8px; padding: 10px 14px; background: #ffffff;" closed>
                       <summary style="cursor: pointer; color: #0369a1; font-weight: 700; font-size: 0.9rem; outline: none; display: flex; align-items: center; gap: 8px;">
                         <i class="fa-solid fa-eye"></i> ${isKs2 ? '[ Show Model Historian Answer ]' : isLocalKs3 ? '[ Show Model Analytical Response ]' : '[ Show Examiner-Grade Model Response ]'}
                       </summary>
                       <div class="scaffold-box model-box" style="margin-top: 12px; padding: 14px 16px; background: #f8fafc; border-left: 4px solid #0284c7; border-radius: 4px; font-size: 0.95rem; color: #1e293b; line-height: 1.65; border: 1px solid #e2e8f0; font-family: 'Georgia', serif;">
-                        ${
-                          modelAnswer.includes('\n\n')
-                            ? modelAnswer
-                                .split(/\n\s*\n/)
-                                .map(
-                                  (p) =>
-                                    `<p style="margin: 0 0 10px 0; line-height: 1.65;">${formatBold ? formatBold(p) : p}</p>`,
-                                )
-                                .join('')
-                            : formatBold
-                              ? formatBold(modelAnswer)
-                              : modelAnswer
-                        }
+                        ${modelAnswer.includes('\n\n')
+                  ? modelAnswer
+                    .split(/\n\s*\n/)
+                    .map(
+                      (p) =>
+                        `<p style="margin: 0 0 10px 0; line-height: 1.65;">${formatBold ? formatBold(p) : p}</p>`,
+                    )
+                    .join('')
+                  : formatBold
+                    ? formatBold(modelAnswer)
+                    : modelAnswer
+                }
                       </div>
                     </details>
                   `
-                      : ''
-                  }
+                : ''
+              }
                 </div>
               </div>
             `;
@@ -8935,9 +8811,8 @@ export function renderLesson(lesson) {
               </div>
             </div>
 
-            ${
-              ep.criteria_prompt
-                ? `
+            ${ep.criteria_prompt
+          ? `
             <div style="background: #fffbeb; border: 1.5px solid #fde68a; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px;">
               <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
                 <span style="color: #b45309; font-weight: bold;">⚖️</span>
@@ -8947,8 +8822,8 @@ export function renderLesson(lesson) {
                 ${formatBold(ep.criteria_prompt)}
               </p>
             </div>`
-                : ''
-            }
+          : ''
+        }
 
             <div>
               <label style="display: block; font-size: 0.85rem; font-weight: 700; color: #475569; margin-bottom: 6px;">
@@ -8985,9 +8860,8 @@ export function renderLesson(lesson) {
             </summary>
             <div style="padding: 20px; background: #ecfdf5;">
               <p style="font-size: 1.15rem; font-weight: 700; color: #065f46; margin-top: 0;">${ps.qNum ? `Q${ps.qNum}. ` : ''}${ps.prompt}</p>
-              ${
-                ps.dilemma_scale
-                  ? `
+              ${ps.dilemma_scale
+        ? `
                 <div class="dilemma-scale-box" style="margin: 15px 0 20px 0; background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.04);">
                   <div style="text-align: center; font-weight: 800; color: #1e3a8a; font-size: 1rem; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; gap: 8px;">
                     <i class="fa-solid fa-scale-balanced" style="color: #0284c7;"></i> ${ps.dilemma_scale.title}
@@ -9017,8 +8891,8 @@ export function renderLesson(lesson) {
                   </div>
                 </div>
               `
-                  : ''
-              }
+        : ''
+      }
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
                 <div style="background: white; padding: 15px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
                   <div style="font-weight: bold; color: #059669; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
@@ -9525,19 +9399,17 @@ export function renderLesson(lesson) {
                 <span style="background: #eff6ff; border: 1px solid #93c5fd; color: #1e40af; font-size: 0.85rem; font-weight: 700; padding: 4px 10px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 0.5px;">
                   <i class="fa-solid fa-layer-group" style="margin-right: 6px;"></i> ${sc.acronym || 'PEE/PEEL Structure Strip'}
                 </span>
-                ${
-                  hasDetailedScaffold
-                    ? `
+                ${hasDetailedScaffold
+              ? `
                 <button class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ep-scaffold-${qIdx}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600;">
                   <i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> Structure Strip &amp; Tips
                 </button>
                 `
-                    : ''
-                }
+              : ''
+            }
               </div>
-              ${
-                hasDetailedScaffold
-                  ? `
+              ${hasDetailedScaffold
+              ? `
               <div id="ep-scaffold-${qIdx}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 16px; margin-top: 8px;">
                 <div style="font-weight: 700; color: #1e3a8a; font-size: 1.05rem; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;">
                   <i class="fa-solid fa-sitemap" style="color: #3b82f6;"></i> ${sc.acronym_title || 'Exam Technique Formula'}
@@ -9550,8 +9422,8 @@ export function renderLesson(lesson) {
                 ${checklistHtml}
               </div>
               `
-                  : ''
-              }
+              : ''
+            }
             </div>
           `;
         }
@@ -9914,9 +9786,9 @@ export function renderLesson(lesson) {
           const stimProvenance =
             typeof stim === 'object' && stim !== null
               ? stim.provenance ||
-                stim.citation ||
-                cleanSourceTitle ||
-                'Contemporary Written Record'
+              stim.citation ||
+              cleanSourceTitle ||
+              'Contemporary Written Record'
               : cleanSourceTitle || 'Contemporary Written Record';
 
           return `
@@ -9931,41 +9803,38 @@ export function renderLesson(lesson) {
                 </span>
               </summary>
               <div class="weimar-source-content" style="padding: 18px; background: #ffffff; border-top: 1px solid #e2e8f0;">
-                ${
-                  stimImgUrl
-                    ? `
+                ${stimImgUrl
+              ? `
                   <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 12px;">
                     <div style="flex: 0 0 280px; max-width: 320px; position: relative; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
                       <img src="${stimImgUrl}" alt="${cleanSourceTitle || 'Source ' + srcLetter}" data-action="open-modal" data-src="${stimImgUrl}" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: 240px; object-fit: contain; display: block; margin: 0 auto; border-radius: 4px;">
                     </div>
                     <div style="flex: 1 1 300px;">
-                      ${
-                        stimContent
-                          ? `
+                      ${stimContent
+                ? `
                         <div class="archival-source-body" style="font-family: 'Georgia', serif; font-style: italic; font-size: 1.02rem; line-height: 1.7; color: #1e293b; background: #fffdfa; padding: 12px 16px; border-left: 4px solid #1e40af; border-radius: 4px; margin-bottom: 10px;">
                           ${typeof formatBold !== 'undefined' ? formatBold(stimContent) : stimContent}
                         </div>
                       `
-                          : ''
-                      }
-                      ${
-                        stimCaption
-                          ? `
+                : ''
+              }
+                      ${stimCaption
+                ? `
                         <div style="font-size: 0.86rem; color: #475569; line-height: 1.45; margin-bottom: 8px;">
                           <strong style="color: #1e3a8a;">Archival Caption:</strong> ${stimCaption}
                         </div>
                       `
-                          : ''
-                      }
+                : ''
+              }
                     </div>
                   </div>
                 `
-                    : `
+              : `
                   <div class="archival-source-body" style="font-family: 'Georgia', serif; font-style: italic; font-size: 1.05rem; line-height: 1.75; color: #1e293b; background: #fffdfa; padding: 14px 18px; border-left: 4px solid #1e40af; border-radius: 4px;">
                     ${typeof formatBold !== 'undefined' ? formatBold(stimContent) : stimContent}
                   </div>
                 `
-                }
+            }
                 <div class="archival-citation-footer" style="font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 8px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center;">
                   <span><strong>Provenance:</strong> ${stimProvenance}</span>
                   <span class="archival-shelfmark-stamp" style="font-family: monospace; font-size: 0.72rem; color: #64748b; background: #f1f5f9; padding: 2px 6px; border-radius: 4px;">SOURCE ${srcLetter}</span>
@@ -10277,18 +10146,16 @@ export function renderLesson(lesson) {
             <div style="font-size: 0.75rem; text-transform: uppercase; color: #991b1b; font-weight: 700;">Official Memorial Location</div>
             <div style="font-size: 1.02rem; color: #7f1d1d; font-weight: 700; margin-top: 2px;">${cd.memorial} · <span style="background: #dc2626; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem;">${cd.panel}</span></div>
           </div>
-          ${
-            cd.hometown
-              ? `
+          ${cd.hometown
+        ? `
           <div style="border-left: 3px solid #64748b; padding-left: 12px; grid-column: 1 / -1;">
             <div style="font-size: 0.75rem; text-transform: uppercase; color: #475569; font-weight: 700;">Home Connection</div>
             <div style="font-size: 0.95rem; color: #334155; margin-top: 2px;">${cd.hometown} ${cd.parents ? `(Son of ${cd.parents})` : ''}</div>
           </div>`
-              : ''
-          }
-          ${
-            cd.tablet_inscription
-              ? `
+        : ''
+      }
+          ${cd.tablet_inscription
+        ? `
           <div style="background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 6px; padding: 12px; grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
             <div>
               <span style="font-size: 0.82rem; font-weight: 700; color: #1e3a8a;"><i class="fa-solid fa-church" style="margin-right: 6px;"></i>Holy Rood Church Crofton Parish Memorial Tablet:</span>
@@ -10296,8 +10163,8 @@ export function renderLesson(lesson) {
             </div>
             <span style="font-size: 0.8rem; color: #64748b;"><i class="fa-solid fa-location-dot" style="margin-right: 4px;"></i>Stubbington Village Center</span>
           </div>`
-              : ''
-          }
+        : ''
+      }
         </div>
       </div>
     `;
@@ -10381,7 +10248,7 @@ export function renderLesson(lesson) {
     (Array.isArray(lesson.exam_practice)
       ? lesson.exam_practice.length > 0
       : (lesson.exam_practice.questions && lesson.exam_practice.questions.length > 0) ||
-        (lesson.exam_practice.stimulus && lesson.exam_practice.stimulus.length > 0))
+      (lesson.exam_practice.stimulus && lesson.exam_practice.stimulus.length > 0))
   );
   const shouldRenderGcseTask = !!(lesson.gcse_task && !hasExamPractice);
 
@@ -10551,9 +10418,8 @@ export function renderLesson(lesson) {
             ${connectivesHtml}
             ${startersHtml}
             ${hintsHtml}
-            ${
-              lesson.extended.answer_image
-                ? `
+            ${lesson.extended.answer_image
+          ? `
               <div id="extended-map-answer-${lesson.id}" style="display:none; margin-top: 15px; border: 2px solid #16a34a; border-radius: 8px; padding: 15px; background: #f0fdf4;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                   <strong style="color: #166534; font-size: 1.05rem;"><i class="fa-solid fa-circle-check"></i> Authoritative Reference Map (CIA World Factbook):</strong>
@@ -10564,11 +10430,10 @@ export function renderLesson(lesson) {
                 <div style="text-align: center;"><img src="${getAssetUrl(lesson.extended.answer_image)}" style="max-width: 100%; max-height: 520px; object-fit: contain; border-radius: 6px; border: 1px solid #86efac;" /></div>
               </div>
             `
-                : ''
-            }
-            ${
-              lesson.extended.title && lesson.extended.title.toLowerCase().includes('map task')
-                ? `
+          : ''
+        }
+            ${lesson.extended.title && lesson.extended.title.toLowerCase().includes('map task')
+          ? `
               <div id="extended-map-interactive-${lesson.id}" style="display:none; margin-top: 15px; border: 2px solid #0284c7; border-radius: 8px; padding: 15px; background: #f0f9ff;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
                   <strong style="color: #0369a1; font-size: 1.05rem;"><i class="fa-solid fa-earth-americas"></i> Interactive Whiteboard Explorer (Middle East):</strong>
@@ -10584,8 +10449,8 @@ export function renderLesson(lesson) {
                 </div>
               </div>
             `
-                : ''
-            }
+          : ''
+        }
             <textarea class="student-answer-input" style="min-height: 200px;" placeholder="Write your extended response here..." oninput="window.updateProgress()"></textarea>
             ${lesson.extended.model || lesson.extended.model_answer || lesson.extended.answer ? `<div id="extended-model-${lesson.id}" class="scaffold-box model-box" style="display:none; margin-top: 15px;">${formatBold(lesson.extended.model || lesson.extended.model_answer || lesson.extended.answer)}</div>` : ''}
           </div>
@@ -10612,19 +10477,17 @@ export function renderLesson(lesson) {
             ${sm.answer_image ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="secondary-map-answer-${lesson.id}"><i class="fa-solid fa-map-location-dot"></i> Reveal Reference Map</button>` : ''}
           </div>
           <p style="font-size: 0.95rem; color: #334155; line-height: 1.5; margin-bottom: 15px;">${formatBold(sm.instructions || sm.question)}</p>
-          ${
-            smContent
-              ? `
+          ${smContent
+          ? `
             <div style="text-align: center; margin: 15px 0; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 15px; background: #f8fafc;">
               <img src="${getAssetUrl(smContent)}" style="max-width: 100%; max-height: 500px; object-fit: contain; border-radius: 4px;" alt="${sm.title}">
             </div>
           `
-              : ''
-          }
+          : ''
+        }
           ${smHints}
-          ${
-            sm.answer_image
-              ? `
+          ${sm.answer_image
+          ? `
             <div id="secondary-map-answer-${lesson.id}" style="display:none; margin-top: 15px; border: 2px solid #16a34a; border-radius: 8px; padding: 15px; background: #f0fdf4;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
                 <strong style="color: #166534; font-size: 1rem;"><i class="fa-solid fa-circle-check"></i> Model Answer & Reference Maps</strong>
@@ -10634,30 +10497,28 @@ export function renderLesson(lesson) {
                   <div style="font-size: 0.85rem; font-weight: 700; color: #166534; margin-bottom: 6px;">Israel & Occupied Territories Reference</div>
                   <img src="${getAssetUrl(sm.answer_image)}" style="max-width: 100%; max-height: 480px; object-fit: contain; border-radius: 6px; border: 1px solid #bbf7d0;" alt="Reference Map">
                 </div>
-                ${
-                  sm.macro_map
-                    ? `
+                ${sm.macro_map
+            ? `
                   <div style="flex: 1 1 300px; text-align: center;">
                     <div style="font-size: 0.85rem; font-weight: 700; color: #166534; margin-bottom: 6px;">1967 Six-Day War Territorial Shift</div>
                     <img src="${getAssetUrl(sm.macro_map)}" style="max-width: 100%; max-height: 480px; object-fit: contain; border-radius: 6px; border: 1px solid #bbf7d0;" alt="Six-Day War Macro Map">
                   </div>
                 `
-                    : ''
-                }
+            : ''
+          }
               </div>
-              ${
-                sm.historical_notes
-                  ? `
+              ${sm.historical_notes
+            ? `
                 <div style="margin-top: 12px; padding: 10px; background: #ffffff; border: 1px solid #86efac; border-radius: 6px; font-size: 0.9rem; color: #14532d; line-height: 1.45;">
                   <strong>Historical Context:</strong> ${sm.historical_notes}
                 </div>
               `
-                  : ''
-              }
+            : ''
+          }
             </div>
           `
-              : ''
-          }
+          : ''
+        }
         </div>
       `;
     }
@@ -10713,8 +10574,8 @@ export function renderLesson(lesson) {
                   </thead>
                   <tbody>
                     ${task.table
-                      .map(
-                        (row, rIdx) => `
+                .map(
+                  (row, rIdx) => `
                       <tr style="border-bottom: 1px solid #cbd5e1;">
                         <td style="padding: 8px 12px; font-weight: 700; background: #f8fafc; border-right: 1.5px solid #0f172a;">${row.row}</td>
                         <td style="padding: 6px 10px;">
@@ -10723,8 +10584,8 @@ export function renderLesson(lesson) {
                         </td>
                       </tr>
                     `,
-                      )
-                      .join('')}
+                )
+                .join('')}
                   </tbody>
                 </table>
               </div>
@@ -10742,15 +10603,14 @@ export function renderLesson(lesson) {
                 <div style="font-weight: 700; margin-bottom: 10px; font-size: 1.05rem; color: #0f172a; line-height: 1.45;">
                   ${lesson.gcse_task.qNum && tIdx === 0 ? `Q${lesson.gcse_task.qNum}. ` : ''}${formatQuestion(taskPrompt, !(lesson.gcse_task.qNum && tIdx === 0))}
                 </div>
-                ${
-                  task.provenance_clue
-                    ? `
+                ${task.provenance_clue
+              ? `
                   <div style="padding: 10px 14px; background: #eff6ff; border-left: 4px solid #2563eb; border-radius: 4px; font-size: 0.88rem; color: #1e40af; margin: 10px 0 14px 0; line-height: 1.45;">
                     <strong style="color: #1e3a8a;"><i class="fa-solid fa-lightbulb"></i> Provenance Clue:</strong> ${task.provenance_clue}
                   </div>
                 `
-                    : ''
-                }
+              : ''
+            }
                 ${matrixHtml}
                 ${tableHtml}
                 ${!task.table ? `<textarea class="student-answer-input" style="min-height: ${taskPrompt.includes('12 marks') || taskPrompt.includes('16 marks') ? '200px' : '110px'};" placeholder="Write your examination response here..." oninput="window.updateProgress()"></textarea>` : ''}
@@ -10789,9 +10649,8 @@ export function renderLesson(lesson) {
               <strong style="color: #92400e; display: flex; align-items: center; gap: 8px; font-size: 1rem; margin-bottom: 8px;">
                 <i class="fa-solid fa-magnifying-glass"></i> Provenance Clues &amp; Utility Stems (Edexcel 8-Mark Focus)
               </strong>
-              ${
-                sc.provenance_clues && sc.provenance_clues.length > 0
-                  ? `
+              ${sc.provenance_clues && sc.provenance_clues.length > 0
+              ? `
                 <div style="margin-bottom: 10px;">
                   <span style="font-weight: 700; color: #b45309; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.5px;">Provenance Clues (Nature, Origin, Purpose):</span>
                   <ul style="margin: 4px 0 0 0; padding-left: 20px; color: #78350f; font-size: 0.92rem; line-height: 1.5;">
@@ -10799,11 +10658,10 @@ export function renderLesson(lesson) {
                   </ul>
                 </div>
               `
-                  : ''
-              }
-              ${
-                sc.utility_stems && sc.utility_stems.length > 0
-                  ? `
+              : ''
+            }
+              ${sc.utility_stems && sc.utility_stems.length > 0
+              ? `
                 <div>
                   <span style="font-weight: 700; color: #b45309; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.5px;">Tiered Sentence Starters:</span>
                   <ul style="margin: 4px 0 0 0; padding-left: 20px; color: #92400e; font-size: 0.92rem; line-height: 1.5;">
@@ -10811,8 +10669,8 @@ export function renderLesson(lesson) {
                   </ul>
                 </div>
               `
-                  : ''
-              }
+              : ''
+            }
             </div>
           `;
         }
@@ -10866,9 +10724,9 @@ export function renderLesson(lesson) {
           const modelAns = gt.model_answer || gt.model || '';
           const minHeight =
             typeStr.includes('12_mark') ||
-            typeStr.includes('16_mark') ||
-            qText.includes('12 marks') ||
-            qText.includes('16 marks')
+              typeStr.includes('16_mark') ||
+              qText.includes('12 marks') ||
+              qText.includes('16 marks')
               ? '240px'
               : '140px';
           const cardId = `gcse-model-task-${lesson.id}${cardSuffix ? '-' + cardSuffix : ''}`;
@@ -10891,31 +10749,29 @@ export function renderLesson(lesson) {
               <div style="font-size: 1.1rem; font-weight: 700; color: #0f172a; line-height: 1.5; margin-bottom: ${stimulusList.length > 0 ? '12px' : '0'};">
                 ${formatBold(qText)}
               </div>
-              ${
-                stimulusList.length > 0
-                  ? `
+              ${stimulusList.length > 0
+              ? `
                 <div style="background: #ffffff; border: 1.2px solid #cbd5e1; border-radius: 6px; padding: 10px 14px;">
                   <div style="font-size: 0.8rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
                     <i class="fa-solid fa-circle-info" style="color: #3b82f6;"></i> Edexcel Stimulus Points (You must also use information of your own):
                   </div>
                   <div style="display: flex; gap: 10px; flex-wrap: wrap;">
                     ${stimulusList
-                      .map(
-                        (s) =>
-                          `<span style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; font-size: 0.88rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">• ${s}</span>`,
-                      )
-                      .join('')}
+                .map(
+                  (s) =>
+                    `<span style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; font-size: 0.88rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">• ${s}</span>`,
+                )
+                .join('')}
                   </div>
                 </div>
               `
-                  : ''
-              }
+              : ''
+            }
             </div>
 
             <!-- Pedagogical Guidance / Clue Box (if present) -->
-            ${
-              gt.hint || gt.clue
-                ? `
+            ${gt.hint || gt.clue
+              ? `
               <div style="margin-bottom: 16px; background: #fffbeb; border: 1.2px solid #fde68a; border-left: 4px solid #f59e0b; border-radius: 6px; padding: 12px 16px;">
                 <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #b45309; letter-spacing: 0.5px; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
                   <i class="fa-solid fa-lightbulb" style="color: #f59e0b;"></i> Pedagogical Examination Guidance &amp; Clue:
@@ -10923,42 +10779,40 @@ export function renderLesson(lesson) {
                 <div style="font-size: 0.92rem; color: #78350f; line-height: 1.5;">${formatBold(gt.hint || gt.clue)}</div>
               </div>
             `
-                : ''
+              : ''
             }
 
             <!-- Key Disciplinary Word Bank -->
-            ${
-              vocabList.length > 0
-                ? `
+            ${vocabList.length > 0
+              ? `
               <div style="margin-bottom: 16px; background: #faf5ff; border: 1.2px solid #e9d5ff; border-radius: 8px; padding: 12px 16px;">
                 <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #7e22ce; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
                   <i class="fa-solid fa-spell-check"></i> GCSE Key Vocabulary Bank (Incorporate into your response):
                 </div>
                 <div style="display: flex; gap: 8px; flex-wrap: wrap;">
                   ${vocabList
-                    .map(
-                      (w) =>
-                        `<span style="background: #ffffff; border: 1px solid #d8b4fe; color: #6b21a8; font-size: 0.85rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; box-shadow: 0 1px 2px rgba(107,33,168,0.06);">${w}</span>`,
-                    )
-                    .join('')}
+                .map(
+                  (w) =>
+                    `<span style="background: #ffffff; border: 1px solid #d8b4fe; color: #6b21a8; font-size: 0.85rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; box-shadow: 0 1px 2px rgba(107,33,168,0.06);">${w}</span>`,
+                )
+                .join('')}
                 </div>
               </div>
             `
-                : ''
+              : ''
             }
 
             <!-- Analytical Structure Strip -->
-            ${
-              structureStrip.length > 0
-                ? `
+            ${structureStrip.length > 0
+              ? `
               <div style="margin-bottom: 16px;">
                 <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #0369a1; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
                   <i class="fa-solid fa-layer-group"></i> Analytical Structure Strip (Paragraph Breakdown):
                 </div>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
                   ${structureStrip
-                    .map(
-                      (st, sIdx) => `
+                .map(
+                  (st, sIdx) => `
                     <div style="background: #f0f9ff; border: 1.2px solid #bae6fd; border-radius: 6px; padding: 10px 12px;">
                       <div style="font-size: 0.8rem; font-weight: 800; color: #0369a1; text-transform: uppercase; margin-bottom: 4px; border-bottom: 1px solid #e0f2fe; padding-bottom: 3px;">
                         ${st.para || `Paragraph ${sIdx + 1}`}
@@ -10968,33 +10822,32 @@ export function renderLesson(lesson) {
                       </div>
                     </div>
                   `,
-                    )
-                    .join('')}
+                )
+                .join('')}
                 </div>
               </div>
             `
-                : ''
+              : ''
             }
 
             <!-- Causal Connectives & Sentence Starters -->
-            ${
-              connectives.length > 0
-                ? `
+            ${connectives.length > 0
+              ? `
               <div style="margin-bottom: 16px; background: #f0fdf4; border: 1.2px solid #bbf7d0; border-radius: 8px; padding: 12px 16px;">
                 <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #15803d; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
                   <i class="fa-solid fa-pen-fancy"></i> Causal Connective Bank &amp; Tiered Sentence Starters:
                 </div>
                 <div style="display: flex; gap: 8px; flex-wrap: wrap;">
                   ${connectives
-                    .map(
-                      (c) =>
-                        `<span style="background: #ffffff; border: 1px solid #86efac; color: #166534; font-size: 0.82rem; font-style: italic; padding: 4px 10px; border-radius: 4px;">&ldquo;${c}&rdquo;</span>`,
-                    )
-                    .join('')}
+                .map(
+                  (c) =>
+                    `<span style="background: #ffffff; border: 1px solid #86efac; color: #166534; font-size: 0.82rem; font-style: italic; padding: 4px 10px; border-radius: 4px;">&ldquo;${c}&rdquo;</span>`,
+                )
+                .join('')}
                 </div>
               </div>
             `
-                : ''
+              : ''
             }
 
             <!-- Student Response Textarea -->
@@ -11006,9 +10859,8 @@ export function renderLesson(lesson) {
             </div>
 
             <!-- Model Answer Reveal -->
-            ${
-              modelAns
-                ? `
+            ${modelAns
+              ? `
               <div style="margin-top: 14px;">
                 <button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="${cardId}">
                   <i class="fa-solid fa-check-double"></i> Reveal Examiner Model Answer
@@ -11021,7 +10873,7 @@ export function renderLesson(lesson) {
                 </div>
               </div>
             `
-                : ''
+              : ''
             }
           </div>
         `;
@@ -11066,9 +10918,8 @@ export function renderLesson(lesson) {
             <p style="color: #334155; font-size: 1.05rem; line-height: 1.6; margin-bottom: 20px;">
               ${lesson.extension_task.instructions}
             </p>
-            ${
-              lesson.extension_task.search_terms && lesson.extension_task.search_terms.length > 0
-                ? `
+            ${lesson.extension_task.search_terms && lesson.extension_task.search_terms.length > 0
+        ? `
             <div style="background: white; border: 1px solid #cbd5e1; border-radius: 6px; padding: 15px; margin-bottom: 15px;">
               <strong style="color: #0f172a; display: block; margin-bottom: 8px;"><i class="fa-brands fa-google" style="color: #ea4335; margin-right: 5px;"></i> Suggested Search Terms:</strong>
               <div style="display: flex; flex-wrap: wrap; gap: 10px;">
@@ -11076,17 +10927,16 @@ export function renderLesson(lesson) {
               </div>
             </div>
             `
-                : ''
-            }
-            ${
-              lesson.extension_task.hyperlinks && lesson.extension_task.hyperlinks.length > 0
-                ? `
+        : ''
+      }
+            ${lesson.extension_task.hyperlinks && lesson.extension_task.hyperlinks.length > 0
+        ? `
             <div style="display: flex; flex-wrap: wrap; gap: 10px;">
               ${lesson.extension_task.hyperlinks.map((l) => `<a href="${l.url}" target="_blank" class="btn btn-secondary" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border: 1px solid #94a3b8;"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #3b82f6;"></i> ${l.text}</a>`).join('')}
             </div>
             `
-                : ''
-            }
+        : ''
+      }
           </div>
         </div>
     `;
@@ -11770,7 +11620,7 @@ export function assignQuestionNumbers(lesson, targetUnitId) {
     (typeof appStore !== 'undefined' && appStore?.state?.activeUnitData?.id) ||
     (typeof window !== 'undefined' && window.location && window.location.search
       ? new URLSearchParams(window.location.search).get('id') ||
-        new URLSearchParams(window.location.search).get('unit')
+      new URLSearchParams(window.location.search).get('unit')
       : null);
 
   let globalQNum = 1;
@@ -11932,14 +11782,14 @@ export function renderPoetryDossiersHTML(poetryDossiers) {
         <div style="display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; align-items: center; background: #f8fafc; padding: 8px 12px; border-radius: 6px; border: 1px solid #e2e8f0;">
           <span style="font-size: 0.78rem; font-weight: 700; color: #64748b; margin-right: 4px;">Choose Voice:</span>
           ${stop.poems
-            .map(
-              (p, pIdx) => `
+          .map(
+            (p, pIdx) => `
             <button class="btn poet-tab-btn" data-action="switch-poet-tab" data-target-poet="pane-${stop.site_id}-${p.id}" style="padding: 5px 12px; font-size: 0.82rem; border-radius: 16px; border: 1px solid ${pIdx === 0 ? '#7f1d1d' : '#cbd5e1'}; background: ${pIdx === 0 ? '#7f1d1d' : '#ffffff'}; color: ${pIdx === 0 ? '#ffffff' : '#475569'}; font-weight: ${pIdx === 0 ? '700' : '600'}; cursor: pointer; transition: all 0.2s;">
               <i class="fa-solid fa-feather-pointed" style="margin-right: 4px;"></i> ${p.poet.name.split(',')[0]}: <em>"${p.title}"</em>
             </button>
           `,
-            )
-            .join('')}
+          )
+          .join('')}
         </div>
       `;
     }

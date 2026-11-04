@@ -790,3 +790,4 @@ console.log(`\nUpdated ${updatedCount}/16 lessons in USA dataset.`);
 const output = `export default ${JSON.stringify(usaData, null, 2)};\n`;
 fs.writeFileSync(dataJsPath, output, 'utf8');
 console.log(`✓ Successfully saved updated data to ${dataJsPath}`);
+
