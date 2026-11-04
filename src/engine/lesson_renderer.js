@@ -2789,7 +2789,6 @@ export function renderLessonLaunchpad({
       key: 'spine',
       label: 'Chronology Spine',
       icon: 'fa-solid fa-timeline',
-      badge: spineCount ? `${spineCount} Stages` : '',
     });
   }
 
@@ -2819,29 +2818,20 @@ export function renderLessonLaunchpad({
             `;
       })
       .join('')}
-        </div>
-        <div class="launchpad-actions-group">
           ${isCme
         ? `
             <button type="button"
-              class="launchpad-map-btn"
+              class="launchpad-tab-btn"
               onclick="if(typeof window.openCmeTheaterMapModal === 'function') window.openCmeTheaterMapModal();"
-              title="Open High-Resolution Regional Map (Israel & Surrounding Neighbours) [Shortcut: M]">
-              <i class="fa-solid fa-map" style="color: #38bdf8;"></i>
+              title="Regional Map (Israel & Surrounding Neighbours)">
+              <i class="fa-solid fa-map"></i>
               <span>Regional Map</span>
-              <kbd class="launchpad-map-kbd">M</kbd>
             </button>
           `
         : ''
       }
-          <button type="button"
-            class="launchpad-start-reading-btn"
-            data-action="launchpad-start-reading"
-            title="Collapse drawer and begin lesson"
-            style="${activeTabKey ? 'display: inline-flex;' : 'display: none;'}">
-            <i class="fa-solid fa-book-open"></i>
-            <span>Start Reading</span>
-          </button>
+        </div>
+        <div class="launchpad-actions-group">
           <button type="button"
             class="launchpad-close-btn"
             data-action="close-launchpad"
