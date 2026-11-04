@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const path = require('path');
 
 (async () => {
   const chromePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
@@ -45,6 +46,15 @@ const fs = require('fs');
         status,
     );
     if (metrics.overflow > 1) hasOverflow = true;
+  }
+
+  // Capture Page 2 screenshot to verify the upgraded CME Gold Standard spine
+  const page2 = await page.$('#page-2');
+  if (page2) {
+    await page2.screenshot({
+      path: 'C:/Users/fives/.gemini/antigravity/brain/273efd99-6d2b-4b16-9d56-a3b2cd605426/shoah_page2_spine_cme.png',
+    });
+    console.log('Saved Page 2 screenshot to shoah_page2_spine_cme.png');
   }
 
   // Capture Page 1 screenshot to verify the Pitel family front cover visually
