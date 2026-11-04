@@ -1129,7 +1129,8 @@ export default {
           },
           "id": "aus_l1_src_a",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "Why did the British Admiralty include a requirement for native consent in their secret orders, yet Cook claimed the entire eastern coast without it?"
         },
         {
           "letter": "B",
@@ -1148,7 +1149,8 @@ export default {
           "teacher_notes": {
             "source_context": "Tupaia joined the Endeavour at Tahiti, using centuries-old Polynesian non-instrument navigation (star paths, ocean swells, and bird flight) to guide Cook through uncharted waters. **Hinge Question:** Why did European imperial histories celebrate Cook as a \"lone discoverer\" while erasing the indispensable guidance of Polynesian navigator Tupaia?"
           },
-          "id": "aus_l1_src_b"
+          "id": "aus_l1_src_b",
+          "enquiry_question": "Why did European imperial histories celebrate Cook as a \"lone discoverer\" while erasing the indispensable guidance of Polynesian navigator Tupaia?"
         },
         {
           "letter": "C",
@@ -1167,7 +1169,8 @@ export default {
           "teacher_notes": {
             "source_context": "Sydney Parkinson made the earliest known European drawings of Australian First Nations people during Cook's landing at Botany Bay, recording two Gweagal warriors with spears and shields. **Hinge Question:** How does Parkinson's visual evidence of canoes, homes, and defensive shields directly contradict the British legal claim that Australia was \"terra nullius\" (nobody's land)?"
           },
-          "id": "aus_l1_src_c"
+          "id": "aus_l1_src_c",
+          "enquiry_question": "How does Parkinson's visual evidence of canoes, homes, and defensive shields directly contradict the British legal claim that Australia was \"terra nullius\" (nobody's land)?"
         },
         {
           "letter": "D",
@@ -1186,7 +1189,8 @@ export default {
           "teacher_notes": {
             "source_context": "At Possession Island in the Torres Strait, Cook hoisted the English flag and fired three volleys of musketry, declaring British sovereignty without consulting any First Nations people. **Hinge Question:** Why did Cook feel legally justified in claiming over 2,000 miles of inhabited coastline based solely on hoisting a flag on an offshore islet?"
           },
-          "id": "aus_l1_src_d"
+          "id": "aus_l1_src_d",
+          "enquiry_question": "Why did Cook feel legally justified in claiming over 2,000 miles of inhabited coastline based solely on hoisting a flag on an offshore islet?"
         },
         {
           "letter": "E",
@@ -1206,7 +1210,8 @@ export default {
           },
           "id": "aus_l1_src_e",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "Why did English legal theory define land ownership strictly through farming and fencing rather than custodial stewardship?"
         }
       ],
       "exam_practice": {
@@ -2427,7 +2432,8 @@ export default {
           "teacher_notes": {
             "source_context": "Following the American Revolution (1775–1783), Britain lost its primary destination for transported convicts, forcing thousands into squalid, disease-ridden prison hulks along the Thames and southern ports. **Hinge Question:** Why did the British government choose an expensive 15,000-mile voyage to Australia rather than constructing permanent prisons in Britain?"
           },
-          "id": "aus_l2_src_a"
+          "id": "aus_l2_src_a",
+          "enquiry_question": "Why did the British government choose an expensive 15,000-mile voyage to Australia rather than constructing permanent prisons in Britain?"
         },
         {
           "letter": "B",
@@ -2446,7 +2452,8 @@ export default {
           "teacher_notes": {
             "source_context": "Bowes Smyth served as surgeon to over 100 female convicts aboard the Lady Penrhyn. **Hinge Question:** How does Bowes Smyth's meticulous medical record reflect Governor Phillip's emphasis on convict survival and health during the voyage?"
           },
-          "id": "aus_l2_src_b"
+          "id": "aus_l2_src_b",
+          "enquiry_question": "How does Bowes Smyth's meticulous medical record reflect Governor Phillip's emphasis on convict survival and health during the voyage?"
         },
         {
           "letter": "C",
@@ -2465,7 +2472,8 @@ export default {
           "teacher_notes": {
             "source_context": "After finding Botany Bay exposed and waterless, Governor Phillip relocated to Sydney Cove on 26 January 1788. Fowkes, a convict tradesman, surveyed the layout. **Hinge Question:** Why did Governor Phillip prioritize clearing land for military barracks and storehouses rather than building convict shelters?"
           },
-          "id": "aus_l2_src_c"
+          "id": "aus_l2_src_c",
+          "enquiry_question": "Why did Governor Phillip prioritize clearing land for military barracks and storehouses rather than building convict shelters?"
         },
         {
           "letter": "D",
@@ -2485,7 +2493,8 @@ export default {
           },
           "id": "aus_l2_src_d",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "Why did the British government launch the First Fleet with barely two years of supplies for an untried continent?"
         },
         {
           "letter": "E",
@@ -2505,7 +2514,8 @@ export default {
           },
           "id": "aus_l2_src_e",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "How did the opportunity to become an independent landowner transform convict behavior in early colonial Australia?"
         }
       ],
       "exam_practice": {
@@ -3790,7 +3800,8 @@ export default {
           },
           "id": "aus_l3_src_a",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "How does Tench's observation of family-owned coves and restrained hunting directly refute the British claim that First Nations peoples had no concept of property?"
         },
         {
           "letter": "B",
@@ -3810,7 +3821,8 @@ export default {
           },
           "id": "aus_l3_src_b",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "Was the 1789 smallpox outbreak an accidental transmission from First Fleet medical vials, or a catastrophic consequence of European arrival?"
         },
         {
           "letter": "C",
@@ -3829,7 +3841,8 @@ export default {
           "teacher_notes": {
             "source_context": "Governor Phillip kidnapped Bennelong in 1789 to establish communication. Bennelong mastered English, negotiated between cultures, and visited London in 1792, but struggled upon returning to find acceptance in either society. **Hinge Question:** Did Bennelong's adoption of European clothing and diplomacy represent cultural collaboration or a strategic survival effort for his people?"
           },
-          "id": "aus_l3_src_c"
+          "id": "aus_l3_src_c",
+          "enquiry_question": "Did Bennelong's adoption of European clothing and diplomacy represent cultural collaboration or a strategic survival effort for his people?"
         },
         {
           "letter": "D",
@@ -3848,7 +3861,8 @@ export default {
           "teacher_notes": {
             "source_context": "While Bennelong sought diplomatic mediation, Bidjigal warrior Pemulwuy led a ferocious 12-year guerrilla war against British settlement across the Hawkesbury and Parramatta basins from 1790 to 1802. **Hinge Question:** Why did Pemulwuy's followers believe he had supernatural spiritual immunity against British musket fire, and how did that belief sustain his guerrilla war?"
           },
-          "id": "aus_l3_src_d"
+          "id": "aus_l3_src_d",
+          "enquiry_question": "Why did Pemulwuy's followers believe he had supernatural spiritual immunity against British musket fire, and how did that belief sustain his guerrilla war?"
         },
         {
           "letter": "E",
@@ -3868,7 +3882,8 @@ export default {
           },
           "id": "aus_l3_src_e",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "Why did Governor King treat Pemulwuy as an enemy military commander rather than an ordinary colonial criminal?"
         }
       ],
       "exam_practice": {
@@ -5121,7 +5136,8 @@ export default {
           },
           "id": "aus_l4_src_a",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "Why did the British military respond to an Indigenous kangaroo hunt with lethal artillery fire?"
         },
         {
           "letter": "B",
@@ -5140,7 +5156,8 @@ export default {
           "teacher_notes": {
             "source_context": "Governor Arthur ordered painted boards nailed to trees during the Black War to show that white settlers and Indigenous people would be treated equally under British law. **Hinge Question:** Why did Governor Arthur depict \"equal justice\" on pictorial boards at the very moment he was declaring martial law and mobilizing 2,200 armed men in the Black Line to drive Indigenous Tasmanians from their lands?"
           },
-          "id": "aus_l4_src_b"
+          "id": "aus_l4_src_b",
+          "enquiry_question": "Why did Governor Arthur depict \"equal justice\" on pictorial boards at the very moment he was declaring martial law and mobilizing 2,200 armed men in the Black Line to drive Indigenous Tasmanians from their lands?"
         },
         {
           "letter": "C",
@@ -5160,7 +5177,8 @@ export default {
           },
           "id": "aus_l4_src_c",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "Did Robinson's mission save the Tasmanian Aboriginal people from extinction, or facilitate their destruction through exile?"
         },
         {
           "letter": "D",
@@ -5180,7 +5198,8 @@ export default {
           },
           "id": "aus_l4_src_d",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "Why did the British Parliament express \"deepest sorrow and national humiliation\" in London, yet fail to stop pastoral squatters from seizing Indigenous land in Australia?"
         },
         {
           "letter": "E",
@@ -5199,7 +5218,8 @@ export default {
           "teacher_notes": {
             "source_context": "On 10 June 1838, a gang of 11 white stockmen bound and murdered 28 defenseless Wirrayaraay people. Hobbs bravely reported the crime, leading to an unprecedented trial where seven perpetrators were convicted and hanged. **Hinge Question:** Why was the conviction of the Myall Creek perpetrators a unique anomaly in 19th-century colonial Australian history?"
           },
-          "id": "aus_l4_src_e"
+          "id": "aus_l4_src_e",
+          "enquiry_question": "Why was the conviction of the Myall Creek perpetrators a unique anomaly in 19th-century colonial Australian history?"
         }
       ],
       "exam_practice": {
@@ -6440,7 +6460,8 @@ export default {
           },
           "id": "aus_l5_src_a",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "Why did colonial governors initially fear the discovery of gold would destroy law, order, and social hierarchy?"
         },
         {
           "letter": "B",
@@ -6459,7 +6480,8 @@ export default {
           "teacher_notes": {
             "source_context": "Miners were compelled to pay exorbitant fees and carry this physical paper licence at all times, subject to twice-weekly armed police 'digger hunts'. This exact licence was issued to Italian-born digger leader Raffaello Carboni just weeks before the Eureka uprising. **Hinge Question:** Why was the requirement to produce a physical licence on demand so deeply resented by free miners?"
           },
-          "id": "aus_l5_src_b"
+          "id": "aus_l5_src_b",
+          "enquiry_question": "Why was the requirement to produce a physical licence on demand so deeply resented by free miners?"
         },
         {
           "letter": "C",
@@ -6478,7 +6500,8 @@ export default {
           "teacher_notes": {
             "source_context": "On 1 December 1854, over 500 miners knelt beneath the blue-and-white Southern Cross flag and swore: \"We swear by the Southern Cross to stand truly by each other, and fight to defend our rights and liberties.\" Two days later, British troops stormed the stockade, killing 22 diggers. **Hinge Question:** Why did the Eureka rebellion become the foundational myth of Australian democracy despite being a military defeat?"
           },
-          "id": "aus_l5_src_c"
+          "id": "aus_l5_src_c",
+          "enquiry_question": "Why did the Eureka rebellion become the foundational myth of Australian democracy despite being a military defeat?"
         },
         {
           "letter": "D",
@@ -6498,7 +6521,8 @@ export default {
           },
           "id": "aus_l5_src_d",
           "src": "",
-          "image": ""
+          "image": "",
+          "enquiry_question": "Why did the Australian government implement a deceitful \"dictation test\" rather than passing an explicit ban based on race or skin colour?"
         },
         {
           "letter": "E",
@@ -6517,7 +6541,8 @@ export default {
           "teacher_notes": {
             "source_context": "On Australia's 150th anniversary, while official reenactments celebrated Governor Phillip's landing, First Nations leaders Jack Patten and William Ferguson held a counter-conference declaring 26 January a national Day of Mourning. **Hinge Question:** Why did Indigenous leaders choose the 150th anniversary of the First Fleet to launch their political campaign for constitutional equality?"
           },
-          "id": "aus_l5_src_e"
+          "id": "aus_l5_src_e",
+          "enquiry_question": "Why did Indigenous leaders choose the 150th anniversary of the First Fleet to launch their political campaign for constitutional equality?"
         }
       ],
       "exam_practice": {

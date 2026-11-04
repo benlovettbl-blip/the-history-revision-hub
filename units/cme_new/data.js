@@ -409,6 +409,7 @@ export default {
           "id": "cme_l1_source_c",
           "letter": "C",
           "title": "Source C: The Balfour Declaration Official Letter (November 1917)",
+          "type": "written",
           "src": "/images/cme_balfour_declaration_1917.jpg",
           "image": "/images/cme_balfour_declaration_1917.jpg",
           "source": "/images/cme_balfour_declaration_1917.jpg",
@@ -416,6 +417,7 @@ export default {
           "desc": "Documentary photograph of the signed Balfour Declaration typescript.",
           "provenance": "British Library, London (Add MS 41178), 2 November 1917.",
           "citation": "British Library, London.",
+          "text": "\"His Majesty's Government view with favour the establishment in Palestine of a national home for the Jewish people, and will use their best endeavours to facilitate the achievement of this object, it being clearly understood that nothing shall be done which may prejudice the civil and religious rights of existing non-Jewish communities in Palestine, or the rights and political status enjoyed by Jews in any other country.\"",
           "hinge_question": "How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?",
           "source_context": "Official public statement issued by the British government during the First World War announcing support for establishing a Jewish national home in Palestine, while stipulating that nothing should prejudice the civil and religious rights of existing non-Jewish communities. **Hinge Question:** How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?",
           "context": "Official public statement issued by the British government during the First World War.",
@@ -423,12 +425,6 @@ export default {
           "question_type": "Author’s Purpose",
           "enquiry_question": "What was the British government's primary purpose in issuing the Balfour Declaration in November 1917?",
           "model_answer": "The British government sought to rally worldwide Jewish sympathy—particularly in the United States and revolutionary Russia—behind the Allied war effort, while securing a vital strategic buffer adjacent to the Suez Canal under British imperial protection.",
-          "provenance_clues": {
-            "author": "Arthur Balfour, British Secretary of State for Foreign Affairs.",
-            "audience": "Lord Rothschild, the Zionist Federation, and international diplomatic observers.",
-            "motive": "To win global Jewish financial and diplomatic backing for the Allies while laying claim to a strategic postwar buffer zone in Palestine.",
-            "hinge_question": "How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?"
-          },
           "teacher_notes": {
             "source_context": "Official public statement issued by the British government during the First World War announcing support for establishing a Jewish national home in Palestine, while stipulating that nothing should prejudice the civil and religious rights of existing non-Jewish communities. **Hinge Question:** How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?"
           }
@@ -697,6 +693,7 @@ export default {
               "id": "cme_l1_source_c",
               "letter": "C",
               "title": "Source C: The Balfour Declaration Official Letter (November 1917)",
+              "type": "written",
               "src": "/images/cme_balfour_declaration_1917.jpg",
               "image": "/images/cme_balfour_declaration_1917.jpg",
               "source": "/images/cme_balfour_declaration_1917.jpg",
@@ -704,6 +701,7 @@ export default {
               "desc": "Documentary photograph of the signed Balfour Declaration typescript.",
               "provenance": "British Library, London (Add MS 41178), 2 November 1917.",
               "citation": "British Library, London.",
+              "text": "\"His Majesty's Government view with favour the establishment in Palestine of a national home for the Jewish people, and will use their best endeavours to facilitate the achievement of this object, it being clearly understood that nothing shall be done which may prejudice the civil and religious rights of existing non-Jewish communities in Palestine, or the rights and political status enjoyed by Jews in any other country.\"",
               "hinge_question": "How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?",
               "source_context": "Official public statement issued by the British government during the First World War announcing support for establishing a Jewish national home in Palestine, while stipulating that nothing should prejudice the civil and religious rights of existing non-Jewish communities. **Hinge Question:** How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?",
               "context": "Official public statement issued by the British government during the First World War.",
@@ -711,12 +709,6 @@ export default {
               "question_type": "Author’s Purpose",
               "enquiry_question": "What was the British government's primary purpose in issuing the Balfour Declaration in November 1917?",
               "model_answer": "The British government sought to rally worldwide Jewish sympathy—particularly in the United States and revolutionary Russia—behind the Allied war effort, while securing a vital strategic buffer adjacent to the Suez Canal under British imperial protection.",
-              "provenance_clues": {
-                "author": "Arthur Balfour, British Secretary of State for Foreign Affairs.",
-                "audience": "Lord Rothschild, the Zionist Federation, and international diplomatic observers.",
-                "motive": "To win global Jewish financial and diplomatic backing for the Allies while laying claim to a strategic postwar buffer zone in Palestine.",
-                "hinge_question": "How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?"
-              },
               "teacher_notes": {
                 "source_context": "Official public statement issued by the British government during the First World War announcing support for establishing a Jewish national home in Palestine, while stipulating that nothing should prejudice the civil and religious rights of existing non-Jewish communities. **Hinge Question:** How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?"
               }

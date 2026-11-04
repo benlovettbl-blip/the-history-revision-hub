@@ -4036,10 +4036,10 @@ export function renderLesson(lesson) {
         const citationText = source.citation || source.provenance || '';
 
         const sourceEnquiryHtml =
-          source.question || source.enquiry_question || source.how_useful_question
+          source.question || source.enquiry_question || source.how_useful_question || source.prompt || (source.model_answer && source.hinge_question ? source.hinge_question : '')
             ? (() => {
               const qPrompt =
-                source.question || source.enquiry_question || source.how_useful_question;
+                source.question || source.enquiry_question || source.how_useful_question || source.prompt || source.hinge_question;
               const dynamicBadge =
                 source.question_badge ||
                 source.question_type ||

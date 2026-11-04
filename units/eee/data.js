@@ -8700,26 +8700,22 @@ const eee_data = {
               "id": "eee_l8_source_d",
               "letter": "D",
               "title": "Source D: Duke of Medina Sidonia's Post-Action Report to King Philip II (1588)",
+              "type": "written",
               "src": "/images/the_duke_of_medina_sidonia.jpg",
               "image": "/images/the_duke_of_medina_sidonia.jpg",
               "source": "/images/the_duke_of_medina_sidonia.jpg",
               "caption": "Portrait of Medina Sidonia, whose confidential report to King Philip II in September 1588 lamented that only 67 out of 130 ships and fewer than 10,000 men returned to Spain.",
               "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court robes.",
               "provenance": "Archivo General de Simancas (Estado, legajo 438), September 1588.",
-              "citation": "General Archive of Simancas, Spain.",
+              "citation": "General Archive of Simancas, Spain / Fundación Casa de Medina Sidonia.",
+              "text": "The miseries and hardships we have suffered cannot be described to Your Majesty, for they have been greater than any seen in voyages past. The provisions embarked in Lisbon spoiled rapidly and the water casks, constructed hastily from unseasoned wood, leaked or turned foul. When the enemy launched their fire-ships off Calais, our captains were compelled to cut their cables and abandon their anchors to avoid incineration. In the engagement at Gravelines, the English warships maintained the wind and kept their distance, battering our galleons with long-range culverin artillery while our heavier guns could not reach them. Most critically, the Duke of Parma gave us no word and had not embarked his army, leaving us stranded without a port on an open lee shore.",
               "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
-              "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
+              "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating confidential dispatch to King Philip II. He cited rotten food, spoiled water due to Drake's raid on seasoned barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
               "context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II.",
               "question_badge": "Reliability & Provenance",
               "question_type": "Reliability & Provenance",
               "enquiry_question": "How reliable is Medina Sidonia's post-campaign report for understanding why the Armada failed?",
               "model_answer": "The report is highly reliable regarding Spanish logistical collapse, ruined provisions, and communication failures with Parma, though Medina Sidonia naturally downplayed his own tactical indecision at Calais.",
-              "provenance_clues": {
-                "author": "The Duke of Medina Sidonia writing directly to his sovereign.",
-                "audience": "King Philip II of Spain and the Spanish Council of State.",
-                "motive": "To explain the loss of half the royal navy and justify his operational decisions.",
-                "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
-              },
               "teacher_notes": {
                 "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
               }
@@ -9126,26 +9122,22 @@ const eee_data = {
           "id": "eee_l8_source_d",
           "letter": "D",
           "title": "Source D: Duke of Medina Sidonia's Post-Action Report to King Philip II (1588)",
+          "type": "written",
           "src": "/images/the_duke_of_medina_sidonia.jpg",
           "image": "/images/the_duke_of_medina_sidonia.jpg",
           "source": "/images/the_duke_of_medina_sidonia.jpg",
           "caption": "Portrait of Medina Sidonia, whose confidential report to King Philip II in September 1588 lamented that only 67 out of 130 ships and fewer than 10,000 men returned to Spain.",
           "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court robes.",
           "provenance": "Archivo General de Simancas (Estado, legajo 438), September 1588.",
-          "citation": "General Archive of Simancas, Spain.",
+          "citation": "General Archive of Simancas, Spain / Fundación Casa de Medina Sidonia.",
+          "text": "The miseries and hardships we have suffered cannot be described to Your Majesty, for they have been greater than any seen in voyages past. The provisions embarked in Lisbon spoiled rapidly and the water casks, constructed hastily from unseasoned wood, leaked or turned foul. When the enemy launched their fire-ships off Calais, our captains were compelled to cut their cables and abandon their anchors to avoid incineration. In the engagement at Gravelines, the English warships maintained the wind and kept their distance, battering our galleons with long-range culverin artillery while our heavier guns could not reach them. Most critically, the Duke of Parma gave us no word and had not embarked his army, leaving us stranded without a port on an open lee shore.",
           "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
-          "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
+          "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating confidential dispatch to King Philip II. He cited rotten food, spoiled water due to Drake's raid on seasoned barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
           "context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II.",
           "question_badge": "Reliability & Provenance",
           "question_type": "Reliability & Provenance",
           "enquiry_question": "How reliable is Medina Sidonia's post-campaign report for understanding why the Armada failed?",
           "model_answer": "The report is highly reliable regarding Spanish logistical collapse, ruined provisions, and communication failures with Parma, though Medina Sidonia naturally downplayed his own tactical indecision at Calais.",
-          "provenance_clues": {
-            "author": "The Duke of Medina Sidonia writing directly to his sovereign.",
-            "audience": "King Philip II of Spain and the Spanish Council of State.",
-            "motive": "To explain the loss of half the royal navy and justify his operational decisions.",
-            "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
-          },
           "teacher_notes": {
             "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
           }

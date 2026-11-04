@@ -1131,7 +1131,8 @@
               },
               "id": "aus_l1_src_a",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "Why did the British Admiralty include a requirement for native consent in their secret orders, yet Cook claimed the entire eastern coast without it?"
             },
             {
               "letter": "B",
@@ -1150,7 +1151,8 @@
               "teacher_notes": {
                 "source_context": "Tupaia joined the Endeavour at Tahiti, using centuries-old Polynesian non-instrument navigation (star paths, ocean swells, and bird flight) to guide Cook through uncharted waters. **Hinge Question:** Why did European imperial histories celebrate Cook as a \"lone discoverer\" while erasing the indispensable guidance of Polynesian navigator Tupaia?"
               },
-              "id": "aus_l1_src_b"
+              "id": "aus_l1_src_b",
+              "enquiry_question": "Why did European imperial histories celebrate Cook as a \"lone discoverer\" while erasing the indispensable guidance of Polynesian navigator Tupaia?"
             },
             {
               "letter": "C",
@@ -1169,7 +1171,8 @@
               "teacher_notes": {
                 "source_context": "Sydney Parkinson made the earliest known European drawings of Australian First Nations people during Cook's landing at Botany Bay, recording two Gweagal warriors with spears and shields. **Hinge Question:** How does Parkinson's visual evidence of canoes, homes, and defensive shields directly contradict the British legal claim that Australia was \"terra nullius\" (nobody's land)?"
               },
-              "id": "aus_l1_src_c"
+              "id": "aus_l1_src_c",
+              "enquiry_question": "How does Parkinson's visual evidence of canoes, homes, and defensive shields directly contradict the British legal claim that Australia was \"terra nullius\" (nobody's land)?"
             },
             {
               "letter": "D",
@@ -1188,7 +1191,8 @@
               "teacher_notes": {
                 "source_context": "At Possession Island in the Torres Strait, Cook hoisted the English flag and fired three volleys of musketry, declaring British sovereignty without consulting any First Nations people. **Hinge Question:** Why did Cook feel legally justified in claiming over 2,000 miles of inhabited coastline based solely on hoisting a flag on an offshore islet?"
               },
-              "id": "aus_l1_src_d"
+              "id": "aus_l1_src_d",
+              "enquiry_question": "Why did Cook feel legally justified in claiming over 2,000 miles of inhabited coastline based solely on hoisting a flag on an offshore islet?"
             },
             {
               "letter": "E",
@@ -1208,7 +1212,8 @@
               },
               "id": "aus_l1_src_e",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "Why did English legal theory define land ownership strictly through farming and fencing rather than custodial stewardship?"
             }
           ],
           "exam_practice": {
@@ -2429,7 +2434,8 @@
               "teacher_notes": {
                 "source_context": "Following the American Revolution (1775–1783), Britain lost its primary destination for transported convicts, forcing thousands into squalid, disease-ridden prison hulks along the Thames and southern ports. **Hinge Question:** Why did the British government choose an expensive 15,000-mile voyage to Australia rather than constructing permanent prisons in Britain?"
               },
-              "id": "aus_l2_src_a"
+              "id": "aus_l2_src_a",
+              "enquiry_question": "Why did the British government choose an expensive 15,000-mile voyage to Australia rather than constructing permanent prisons in Britain?"
             },
             {
               "letter": "B",
@@ -2448,7 +2454,8 @@
               "teacher_notes": {
                 "source_context": "Bowes Smyth served as surgeon to over 100 female convicts aboard the Lady Penrhyn. **Hinge Question:** How does Bowes Smyth's meticulous medical record reflect Governor Phillip's emphasis on convict survival and health during the voyage?"
               },
-              "id": "aus_l2_src_b"
+              "id": "aus_l2_src_b",
+              "enquiry_question": "How does Bowes Smyth's meticulous medical record reflect Governor Phillip's emphasis on convict survival and health during the voyage?"
             },
             {
               "letter": "C",
@@ -2467,7 +2474,8 @@
               "teacher_notes": {
                 "source_context": "After finding Botany Bay exposed and waterless, Governor Phillip relocated to Sydney Cove on 26 January 1788. Fowkes, a convict tradesman, surveyed the layout. **Hinge Question:** Why did Governor Phillip prioritize clearing land for military barracks and storehouses rather than building convict shelters?"
               },
-              "id": "aus_l2_src_c"
+              "id": "aus_l2_src_c",
+              "enquiry_question": "Why did Governor Phillip prioritize clearing land for military barracks and storehouses rather than building convict shelters?"
             },
             {
               "letter": "D",
@@ -2487,7 +2495,8 @@
               },
               "id": "aus_l2_src_d",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "Why did the British government launch the First Fleet with barely two years of supplies for an untried continent?"
             },
             {
               "letter": "E",
@@ -2507,7 +2516,8 @@
               },
               "id": "aus_l2_src_e",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "How did the opportunity to become an independent landowner transform convict behavior in early colonial Australia?"
             }
           ],
           "exam_practice": {
@@ -3792,7 +3802,8 @@
               },
               "id": "aus_l3_src_a",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "How does Tench's observation of family-owned coves and restrained hunting directly refute the British claim that First Nations peoples had no concept of property?"
             },
             {
               "letter": "B",
@@ -3812,7 +3823,8 @@
               },
               "id": "aus_l3_src_b",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "Was the 1789 smallpox outbreak an accidental transmission from First Fleet medical vials, or a catastrophic consequence of European arrival?"
             },
             {
               "letter": "C",
@@ -3831,7 +3843,8 @@
               "teacher_notes": {
                 "source_context": "Governor Phillip kidnapped Bennelong in 1789 to establish communication. Bennelong mastered English, negotiated between cultures, and visited London in 1792, but struggled upon returning to find acceptance in either society. **Hinge Question:** Did Bennelong's adoption of European clothing and diplomacy represent cultural collaboration or a strategic survival effort for his people?"
               },
-              "id": "aus_l3_src_c"
+              "id": "aus_l3_src_c",
+              "enquiry_question": "Did Bennelong's adoption of European clothing and diplomacy represent cultural collaboration or a strategic survival effort for his people?"
             },
             {
               "letter": "D",
@@ -3850,7 +3863,8 @@
               "teacher_notes": {
                 "source_context": "While Bennelong sought diplomatic mediation, Bidjigal warrior Pemulwuy led a ferocious 12-year guerrilla war against British settlement across the Hawkesbury and Parramatta basins from 1790 to 1802. **Hinge Question:** Why did Pemulwuy's followers believe he had supernatural spiritual immunity against British musket fire, and how did that belief sustain his guerrilla war?"
               },
-              "id": "aus_l3_src_d"
+              "id": "aus_l3_src_d",
+              "enquiry_question": "Why did Pemulwuy's followers believe he had supernatural spiritual immunity against British musket fire, and how did that belief sustain his guerrilla war?"
             },
             {
               "letter": "E",
@@ -3870,7 +3884,8 @@
               },
               "id": "aus_l3_src_e",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "Why did Governor King treat Pemulwuy as an enemy military commander rather than an ordinary colonial criminal?"
             }
           ],
           "exam_practice": {
@@ -5123,7 +5138,8 @@
               },
               "id": "aus_l4_src_a",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "Why did the British military respond to an Indigenous kangaroo hunt with lethal artillery fire?"
             },
             {
               "letter": "B",
@@ -5142,7 +5158,8 @@
               "teacher_notes": {
                 "source_context": "Governor Arthur ordered painted boards nailed to trees during the Black War to show that white settlers and Indigenous people would be treated equally under British law. **Hinge Question:** Why did Governor Arthur depict \"equal justice\" on pictorial boards at the very moment he was declaring martial law and mobilizing 2,200 armed men in the Black Line to drive Indigenous Tasmanians from their lands?"
               },
-              "id": "aus_l4_src_b"
+              "id": "aus_l4_src_b",
+              "enquiry_question": "Why did Governor Arthur depict \"equal justice\" on pictorial boards at the very moment he was declaring martial law and mobilizing 2,200 armed men in the Black Line to drive Indigenous Tasmanians from their lands?"
             },
             {
               "letter": "C",
@@ -5162,7 +5179,8 @@
               },
               "id": "aus_l4_src_c",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "Did Robinson's mission save the Tasmanian Aboriginal people from extinction, or facilitate their destruction through exile?"
             },
             {
               "letter": "D",
@@ -5182,7 +5200,8 @@
               },
               "id": "aus_l4_src_d",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "Why did the British Parliament express \"deepest sorrow and national humiliation\" in London, yet fail to stop pastoral squatters from seizing Indigenous land in Australia?"
             },
             {
               "letter": "E",
@@ -5201,7 +5220,8 @@
               "teacher_notes": {
                 "source_context": "On 10 June 1838, a gang of 11 white stockmen bound and murdered 28 defenseless Wirrayaraay people. Hobbs bravely reported the crime, leading to an unprecedented trial where seven perpetrators were convicted and hanged. **Hinge Question:** Why was the conviction of the Myall Creek perpetrators a unique anomaly in 19th-century colonial Australian history?"
               },
-              "id": "aus_l4_src_e"
+              "id": "aus_l4_src_e",
+              "enquiry_question": "Why was the conviction of the Myall Creek perpetrators a unique anomaly in 19th-century colonial Australian history?"
             }
           ],
           "exam_practice": {
@@ -6442,7 +6462,8 @@
               },
               "id": "aus_l5_src_a",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "Why did colonial governors initially fear the discovery of gold would destroy law, order, and social hierarchy?"
             },
             {
               "letter": "B",
@@ -6461,7 +6482,8 @@
               "teacher_notes": {
                 "source_context": "Miners were compelled to pay exorbitant fees and carry this physical paper licence at all times, subject to twice-weekly armed police 'digger hunts'. This exact licence was issued to Italian-born digger leader Raffaello Carboni just weeks before the Eureka uprising. **Hinge Question:** Why was the requirement to produce a physical licence on demand so deeply resented by free miners?"
               },
-              "id": "aus_l5_src_b"
+              "id": "aus_l5_src_b",
+              "enquiry_question": "Why was the requirement to produce a physical licence on demand so deeply resented by free miners?"
             },
             {
               "letter": "C",
@@ -6480,7 +6502,8 @@
               "teacher_notes": {
                 "source_context": "On 1 December 1854, over 500 miners knelt beneath the blue-and-white Southern Cross flag and swore: \"We swear by the Southern Cross to stand truly by each other, and fight to defend our rights and liberties.\" Two days later, British troops stormed the stockade, killing 22 diggers. **Hinge Question:** Why did the Eureka rebellion become the foundational myth of Australian democracy despite being a military defeat?"
               },
-              "id": "aus_l5_src_c"
+              "id": "aus_l5_src_c",
+              "enquiry_question": "Why did the Eureka rebellion become the foundational myth of Australian democracy despite being a military defeat?"
             },
             {
               "letter": "D",
@@ -6500,7 +6523,8 @@
               },
               "id": "aus_l5_src_d",
               "src": "",
-              "image": ""
+              "image": "",
+              "enquiry_question": "Why did the Australian government implement a deceitful \"dictation test\" rather than passing an explicit ban based on race or skin colour?"
             },
             {
               "letter": "E",
@@ -6519,7 +6543,8 @@
               "teacher_notes": {
                 "source_context": "On Australia's 150th anniversary, while official reenactments celebrated Governor Phillip's landing, First Nations leaders Jack Patten and William Ferguson held a counter-conference declaring 26 January a national Day of Mourning. **Hinge Question:** Why did Indigenous leaders choose the 150th anniversary of the First Fleet to launch their political campaign for constitutional equality?"
               },
-              "id": "aus_l5_src_e"
+              "id": "aus_l5_src_e",
+              "enquiry_question": "Why did Indigenous leaders choose the 150th anniversary of the First Fleet to launch their political campaign for constitutional equality?"
             }
           ],
           "exam_practice": {
@@ -7323,6 +7348,7 @@
               "id": "cme_l1_source_c",
               "letter": "C",
               "title": "Source C: The Balfour Declaration Official Letter (November 1917)",
+              "type": "written",
               "src": "/images/cme_balfour_declaration_1917.jpg",
               "image": "/images/cme_balfour_declaration_1917.jpg",
               "source": "/images/cme_balfour_declaration_1917.jpg",
@@ -7330,6 +7356,7 @@
               "desc": "Documentary photograph of the signed Balfour Declaration typescript.",
               "provenance": "British Library, London (Add MS 41178), 2 November 1917.",
               "citation": "British Library, London.",
+              "text": "\"His Majesty's Government view with favour the establishment in Palestine of a national home for the Jewish people, and will use their best endeavours to facilitate the achievement of this object, it being clearly understood that nothing shall be done which may prejudice the civil and religious rights of existing non-Jewish communities in Palestine, or the rights and political status enjoyed by Jews in any other country.\"",
               "hinge_question": "How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?",
               "source_context": "Official public statement issued by the British government during the First World War announcing support for establishing a Jewish national home in Palestine, while stipulating that nothing should prejudice the civil and religious rights of existing non-Jewish communities. **Hinge Question:** How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?",
               "context": "Official public statement issued by the British government during the First World War.",
@@ -7337,12 +7364,6 @@
               "question_type": "Author’s Purpose",
               "enquiry_question": "What was the British government's primary purpose in issuing the Balfour Declaration in November 1917?",
               "model_answer": "The British government sought to rally worldwide Jewish sympathy—particularly in the United States and revolutionary Russia—behind the Allied war effort, while securing a vital strategic buffer adjacent to the Suez Canal under British imperial protection.",
-              "provenance_clues": {
-                "author": "Arthur Balfour, British Secretary of State for Foreign Affairs.",
-                "audience": "Lord Rothschild, the Zionist Federation, and international diplomatic observers.",
-                "motive": "To win global Jewish financial and diplomatic backing for the Allies while laying claim to a strategic postwar buffer zone in Palestine.",
-                "hinge_question": "How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?"
-              },
               "teacher_notes": {
                 "source_context": "Official public statement issued by the British government during the First World War announcing support for establishing a Jewish national home in Palestine, while stipulating that nothing should prejudice the civil and religious rights of existing non-Jewish communities. **Hinge Question:** How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?"
               }
@@ -7611,6 +7632,7 @@
                   "id": "cme_l1_source_c",
                   "letter": "C",
                   "title": "Source C: The Balfour Declaration Official Letter (November 1917)",
+                  "type": "written",
                   "src": "/images/cme_balfour_declaration_1917.jpg",
                   "image": "/images/cme_balfour_declaration_1917.jpg",
                   "source": "/images/cme_balfour_declaration_1917.jpg",
@@ -7618,6 +7640,7 @@
                   "desc": "Documentary photograph of the signed Balfour Declaration typescript.",
                   "provenance": "British Library, London (Add MS 41178), 2 November 1917.",
                   "citation": "British Library, London.",
+                  "text": "\"His Majesty's Government view with favour the establishment in Palestine of a national home for the Jewish people, and will use their best endeavours to facilitate the achievement of this object, it being clearly understood that nothing shall be done which may prejudice the civil and religious rights of existing non-Jewish communities in Palestine, or the rights and political status enjoyed by Jews in any other country.\"",
                   "hinge_question": "How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?",
                   "source_context": "Official public statement issued by the British government during the First World War announcing support for establishing a Jewish national home in Palestine, while stipulating that nothing should prejudice the civil and religious rights of existing non-Jewish communities. **Hinge Question:** How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?",
                   "context": "Official public statement issued by the British government during the First World War.",
@@ -7625,12 +7648,6 @@
                   "question_type": "Author’s Purpose",
                   "enquiry_question": "What was the British government's primary purpose in issuing the Balfour Declaration in November 1917?",
                   "model_answer": "The British government sought to rally worldwide Jewish sympathy—particularly in the United States and revolutionary Russia—behind the Allied war effort, while securing a vital strategic buffer adjacent to the Suez Canal under British imperial protection.",
-                  "provenance_clues": {
-                    "author": "Arthur Balfour, British Secretary of State for Foreign Affairs.",
-                    "audience": "Lord Rothschild, the Zionist Federation, and international diplomatic observers.",
-                    "motive": "To win global Jewish financial and diplomatic backing for the Allies while laying claim to a strategic postwar buffer zone in Palestine.",
-                    "hinge_question": "How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?"
-                  },
                   "teacher_notes": {
                     "source_context": "Official public statement issued by the British government during the First World War announcing support for establishing a Jewish national home in Palestine, while stipulating that nothing should prejudice the civil and religious rights of existing non-Jewish communities. **Hinge Question:** How did the phrasing 'national home for the Jewish people' deliberately create ambiguity regarding future statehood?"
                   }
@@ -68919,26 +68936,22 @@
                   "id": "eee_l8_source_d",
                   "letter": "D",
                   "title": "Source D: Duke of Medina Sidonia's Post-Action Report to King Philip II (1588)",
+                  "type": "written",
                   "src": "/images/the_duke_of_medina_sidonia.jpg",
                   "image": "/images/the_duke_of_medina_sidonia.jpg",
                   "source": "/images/the_duke_of_medina_sidonia.jpg",
                   "caption": "Portrait of Medina Sidonia, whose confidential report to King Philip II in September 1588 lamented that only 67 out of 130 ships and fewer than 10,000 men returned to Spain.",
                   "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court robes.",
                   "provenance": "Archivo General de Simancas (Estado, legajo 438), September 1588.",
-                  "citation": "General Archive of Simancas, Spain.",
+                  "citation": "General Archive of Simancas, Spain / Fundación Casa de Medina Sidonia.",
+                  "text": "The miseries and hardships we have suffered cannot be described to Your Majesty, for they have been greater than any seen in voyages past. The provisions embarked in Lisbon spoiled rapidly and the water casks, constructed hastily from unseasoned wood, leaked or turned foul. When the enemy launched their fire-ships off Calais, our captains were compelled to cut their cables and abandon their anchors to avoid incineration. In the engagement at Gravelines, the English warships maintained the wind and kept their distance, battering our galleons with long-range culverin artillery while our heavier guns could not reach them. Most critically, the Duke of Parma gave us no word and had not embarked his army, leaving us stranded without a port on an open lee shore.",
                   "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
-                  "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
+                  "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating confidential dispatch to King Philip II. He cited rotten food, spoiled water due to Drake's raid on seasoned barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
                   "context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II.",
                   "question_badge": "Reliability & Provenance",
                   "question_type": "Reliability & Provenance",
                   "enquiry_question": "How reliable is Medina Sidonia's post-campaign report for understanding why the Armada failed?",
                   "model_answer": "The report is highly reliable regarding Spanish logistical collapse, ruined provisions, and communication failures with Parma, though Medina Sidonia naturally downplayed his own tactical indecision at Calais.",
-                  "provenance_clues": {
-                    "author": "The Duke of Medina Sidonia writing directly to his sovereign.",
-                    "audience": "King Philip II of Spain and the Spanish Council of State.",
-                    "motive": "To explain the loss of half the royal navy and justify his operational decisions.",
-                    "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
-                  },
                   "teacher_notes": {
                     "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
                   }
@@ -69345,26 +69358,22 @@
               "id": "eee_l8_source_d",
               "letter": "D",
               "title": "Source D: Duke of Medina Sidonia's Post-Action Report to King Philip II (1588)",
+              "type": "written",
               "src": "/images/the_duke_of_medina_sidonia.jpg",
               "image": "/images/the_duke_of_medina_sidonia.jpg",
               "source": "/images/the_duke_of_medina_sidonia.jpg",
               "caption": "Portrait of Medina Sidonia, whose confidential report to King Philip II in September 1588 lamented that only 67 out of 130 ships and fewer than 10,000 men returned to Spain.",
               "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court robes.",
               "provenance": "Archivo General de Simancas (Estado, legajo 438), September 1588.",
-              "citation": "General Archive of Simancas, Spain.",
+              "citation": "General Archive of Simancas, Spain / Fundación Casa de Medina Sidonia.",
+              "text": "The miseries and hardships we have suffered cannot be described to Your Majesty, for they have been greater than any seen in voyages past. The provisions embarked in Lisbon spoiled rapidly and the water casks, constructed hastily from unseasoned wood, leaked or turned foul. When the enemy launched their fire-ships off Calais, our captains were compelled to cut their cables and abandon their anchors to avoid incineration. In the engagement at Gravelines, the English warships maintained the wind and kept their distance, battering our galleons with long-range culverin artillery while our heavier guns could not reach them. Most critically, the Duke of Parma gave us no word and had not embarked his army, leaving us stranded without a port on an open lee shore.",
               "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
-              "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
+              "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating confidential dispatch to King Philip II. He cited rotten food, spoiled water due to Drake's raid on seasoned barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
               "context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II.",
               "question_badge": "Reliability & Provenance",
               "question_type": "Reliability & Provenance",
               "enquiry_question": "How reliable is Medina Sidonia's post-campaign report for understanding why the Armada failed?",
               "model_answer": "The report is highly reliable regarding Spanish logistical collapse, ruined provisions, and communication failures with Parma, though Medina Sidonia naturally downplayed his own tactical indecision at Calais.",
-              "provenance_clues": {
-                "author": "The Duke of Medina Sidonia writing directly to his sovereign.",
-                "audience": "King Philip II of Spain and the Spanish Council of State.",
-                "motive": "To explain the loss of half the royal navy and justify his operational decisions.",
-                "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
-              },
               "teacher_notes": {
                 "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
               }
@@ -164164,6 +164173,7 @@
                   "desc": "Official printed government placard posted across Berlin on 9 November 1918 declaring the abdication of Wilhelm II.",
                   "provenance": "Imperial Chancellery, Berlin. Bundesarchiv R 43-I/1381, 9 November 1918.",
                   "citation": "German Federal Archives (Bundesarchiv), Berlin.",
+                  "text": "\"The Kaiser and King has decided to renounce the throne. The Imperial Chancellor remains in office until the questions connected with the abdication of the Kaiser, the renouncing of the throne by the Crown Prince of the German Empire and of Prussia, and the setting up of a regency have been settled. He intends to propose to the Regent the appointment of Deputy Ebert to the Imperial Chancellorship and the drawing up of a bill for the immediate summoning of a German National Assembly.\"",
                   "hinge_question": "Why did Prince Max von Baden announce the Kaiser's abdication before Wilhelm II had personally signed an official instrument of renunciation?",
                   "source_context": "On the morning of 9 November 1918, Chancellor Prince Max von Baden unilaterally announced the Kaiser's abdication to prevent a general strike from escalating into a bloody revolution, handing the Chancellorship to SPD leader Friedrich Ebert. **Hinge Question:** Why did Prince Max von Baden announce the Kaiser's abdication before Wilhelm II had personally signed an official instrument of renunciation?",
                   "context": "Official decree issued by Prince Max von Baden announcing the abdication of the Kaiser on 9 November 1918.",
@@ -164959,6 +164969,7 @@
               "desc": "Official printed government placard posted across Berlin on 9 November 1918 declaring the abdication of Wilhelm II.",
               "provenance": "Imperial Chancellery, Berlin. Bundesarchiv R 43-I/1381, 9 November 1918.",
               "citation": "German Federal Archives (Bundesarchiv), Berlin.",
+              "text": "\"The Kaiser and King has decided to renounce the throne. The Imperial Chancellor remains in office until the questions connected with the abdication of the Kaiser, the renouncing of the throne by the Crown Prince of the German Empire and of Prussia, and the setting up of a regency have been settled. He intends to propose to the Regent the appointment of Deputy Ebert to the Imperial Chancellorship and the drawing up of a bill for the immediate summoning of a German National Assembly.\"",
               "hinge_question": "Why did Prince Max von Baden announce the Kaiser's abdication before Wilhelm II had personally signed an official instrument of renunciation?",
               "source_context": "On the morning of 9 November 1918, Chancellor Prince Max von Baden unilaterally announced the Kaiser's abdication to prevent a general strike from escalating into a bloody revolution, handing the Chancellorship to SPD leader Friedrich Ebert. **Hinge Question:** Why did Prince Max von Baden announce the Kaiser's abdication before Wilhelm II had personally signed an official instrument of renunciation?",
               "context": "Official decree issued by Prince Max von Baden announcing the abdication of the Kaiser on 9 November 1918.",
