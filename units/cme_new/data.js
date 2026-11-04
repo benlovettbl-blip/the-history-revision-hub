@@ -264,7 +264,7 @@ export default {
             "Haj Amin al-Husseini",
             "Sharif Hussein",
             "Gamal Abdel Nasser",
-            "Ahmad Shukeiri"
+            "King Abdullah"
           ],
           "answer": "Haj Amin al-Husseini",
           "explanation": "Grand Mufti Haj Amin al-Husseini headed the Arab Higher Committee during the 1936–1939 revolt."
@@ -517,12 +517,12 @@ export default {
             "answer": "Arab Nationalism"
           },
           {
-            "question": "What secret 1916 agreement between Britain and France used straight lines to carve up the Middle East?",
-            "answer": "The Sykes-Picot Agreement"
+            "question": "Which major European war (1914–1918) led to the collapse and partition of the Ottoman Empire?",
+            "answer": "World War One (First World War)"
           },
           {
-            "question": "What 1939 British government policy paper severely restricted Jewish immigration into Palestine to 75,000 over five years?",
-            "answer": "The 1939 White Paper"
+            "question": "Why was control of the Suez Canal considered vital to the British Empire before 1914?",
+            "answer": "It was the shortest maritime trade route connecting Britain to India (the 'Jewel in the Crown')"
           }
         ]
       },
@@ -2943,16 +2943,16 @@ export default {
         "stages": [
           {
             "step": 1,
-            "date": "June–July 1948",
-            "title": "The UN Ceasefire & The Czech Arms Supply",
-            "actor": "Israel & The Czech Arms Supply",
+            "date": "May–July 1948",
+            "title": "Creation of the IDF & The Czech Arms Supply",
+            "actor": "David Ben-Gurion & The Newly Formed IDF",
             "tag": "The Military Turning Point",
-            "trigger": "During a four-week UN truce, Israel reorganises its forces into the Israeli Defence Forces (IDF) and imports large shipments of rifles, machine guns, and fighter planes from Czechoslovakia.",
-            "because": "Israel was initially short of heavy equipment and needed modern arms to resist five invading Arab armies.",
-            "therefore": "Decisively shifted the military balance in Israel’s favor, allowing the newly organized IDF to launch successful counter-offensives and win the war.",
+            "trigger": "David Ben-Gurion legally establishes the unified Israel Defense Forces (IDF) by merging underground militias, while covertly importing arms and fighter planes from Czechoslovakia during the UN truce.",
+            "because": "Israel faced an existential threat from five invading Arab armies and needed a disciplined, central command alongside modern heavy weapons.",
+            "therefore": "Ended factional militia rivalry, mobilised over 100,000 troops, and decisively shifted the military balance during the 'Ten Days' counter-offensive.",
             "connective": "As the fighting swept through towns and villages, hundreds of thousands of civilians were forced from their homes...",
-            "exam_link": "Q2 Narrative Account: Explains how Israel used the UN truce to rearm and overcome Arab numerical superiority.",
-            "question": "How did the 4-week UN truce enable Israel to decisively shift military momentum?"
+            "exam_link": "Q2 Narrative Account: Explains how the creation of the IDF and Czech arms enabled Israel to overcome initial Arab superiority.",
+            "question": "How did the creation of the IDF and the 4-week UN truce enable Israel to decisively shift military momentum?"
           },
           {
             "step": 2,
@@ -3036,15 +3036,15 @@ export default {
       ],
       "narrative_blocks": [
         {
-          "title": "The UN Ceasefire & The Czech Arms Supply",
+          "title": "Creation of the IDF & The Czech Arms Supply",
           "paragraphs": [
-            "<span class=\"para-ref\">[1.1]</span> When five Arab armies invaded Mandatory Palestine on 15 May 1948, the fledgling State of Israel was in a precarious military position, facing acute shortages of heavy artillery, ammunition, and combat aircraft. On **11 June 1948**, UN mediator **Count Folke Bernadotte** negotiated a four-week truce. While the Arab League respected the truce and suffered from a British arms embargo, David Ben-Gurion utilized the pause to reorganize disparate paramilitary militias into a unified, disciplined national army: the **Israel Defense Forces** (IDF).",
-            "<span class=\"para-ref\">[1.2]</span> Crucially, Israel breached the international UN arms embargo through \"**Operation Balak**,\" purchasing thousands of modern rifles, machine guns, and 25 **Avia S-199 fighter aircraft** from Communist **Czechoslovakia** with secret approval from Soviet leader Joseph Stalin. When fighting resumed on 8 July during the \"**Ten Days**,\" the IDF deployed modern fighter aircraft and tanks, shattering Arab offensives, capturing western Galilee, and seizing strategic initiative across all operational fronts."
+            "<span class=\"para-ref\">[1.1]</span> On **26 May 1948**, twelve days after proclaiming independence amid an invasion by five Arab armies, Prime Minister **David Ben-Gurion** issued **Order No. 4**, legally establishing the **Israel Defense Forces** (IDF) as the sole legitimate military force of the Jewish state. To prevent factional infighting and guarantee democratic civilian command, Ben-Gurion mandated the immediate dissolution and integration of all rival Zionist underground militias: the mainstream socialist **Haganah**, the elite strike-force **Palmach**, and the right-wing revisionist paramilitaries **Irgun (Etzel)** and **Lehi (Stern Gang)**. This consolidation provoked intense internal crisis during the **Altalena Affair** in June 1948, when Ben-Gurion ordered the fledgling IDF to shell and sink an Irgun arms vessel off Tel Aviv, establishing the absolute principle of state monopoly on armed force and averting civil war.",
+            "<span class=\"para-ref\">[1.2]</span> When UN mediator **Count Folke Bernadotte** brokered a four-week truce on **11 June 1948**, Ben-Gurion utilised the pause to transform the unified IDF into a formidable national army through universal conscription and mass mobilisation—rapidly inducting newly arriving European Holocaust survivors to swell IDF ranks from 30,000 to over **108,000 mobilised troops**. Crucially, Israel circumvented the international UN arms embargo via **Operation Balak**, covertly importing tens of thousands of rifles, heavy machine guns, and 25 **Avia S-199 fighter aircraft** from Communist **Czechoslovakia** with secret approval from Soviet leader Joseph Stalin. When fighting resumed on 8 July during the **Ten Days**, the unified, well-equipped IDF launched decisive combined-arms offensives, routing uncoordinated Arab armies that lacked central direction."
           ],
           "act": 1,
-          "act_title": "Stage 1: The UN Ceasefire & The Czech Arms Supply — How did the 4-week UN truce enable Israel to decisively shift military momentum?",
-          "theme_heading": "The UN Ceasefire & The Czech Arms Supply",
-          "text": "<span class=\"para-ref\">[1.1]</span> When five Arab armies invaded Mandatory Palestine on 15 May 1948, the fledgling State of Israel was in a precarious military position, facing acute shortages of heavy artillery, ammunition, and combat aircraft. On **11 June 1948**, UN mediator **Count Folke Bernadotte** negotiated a four-week truce. While the Arab League respected the truce and suffered from a British arms embargo, David Ben-Gurion utilized the pause to reorganize disparate paramilitary militias into a unified, disciplined national army: the **Israel Defense Forces** (IDF).\n\n<span class=\"para-ref\">[1.2]</span> Crucially, Israel breached the international UN arms embargo through \"**Operation Balak**,\" purchasing thousands of modern rifles, machine guns, and 25 **Avia S-199 fighter aircraft** from Communist **Czechoslovakia** with secret approval from Soviet leader Joseph Stalin. When fighting resumed on 8 July during the \"**Ten Days**,\" the IDF deployed modern fighter aircraft and tanks, shattering Arab offensives, capturing western Galilee, and seizing strategic initiative across all operational fronts.",
+          "act_title": "Stage 1: Creation of the IDF & The Czech Arms Supply — How did the founding of the IDF and the 4-week truce shift military momentum?",
+          "theme_heading": "Creation of the IDF & The Czech Arms Supply",
+          "text": "<span class=\"para-ref\">[1.1]</span> On **26 May 1948**, twelve days after proclaiming independence amid an invasion by five Arab armies, Prime Minister **David Ben-Gurion** issued **Order No. 4**, legally establishing the **Israel Defense Forces** (IDF) as the sole legitimate military force of the Jewish state. To prevent factional infighting and guarantee democratic civilian command, Ben-Gurion mandated the immediate dissolution and integration of all rival Zionist underground militias: the mainstream socialist **Haganah**, the elite strike-force **Palmach**, and the right-wing revisionist paramilitaries **Irgun (Etzel)** and **Lehi (Stern Gang)**. This consolidation provoked intense internal crisis during the **Altalena Affair** in June 1948, when Ben-Gurion ordered the fledgling IDF to shell and sink an Irgun arms vessel off Tel Aviv, establishing the absolute principle of state monopoly on armed force and averting civil war.\n\n<span class=\"para-ref\">[1.2]</span> When UN mediator **Count Folke Bernadotte** brokered a four-week truce on **11 June 1948**, Ben-Gurion utilised the pause to transform the unified IDF into a formidable national army through universal conscription and mass mobilisation—rapidly inducting newly arriving European Holocaust survivors to swell IDF ranks from 30,000 to over **108,000 mobilised troops**. Crucially, Israel circumvented the international UN arms embargo via **Operation Balak**, covertly importing tens of thousands of rifles, heavy machine guns, and 25 **Avia S-199 fighter aircraft** from Communist **Czechoslovakia** with secret approval from Soviet leader Joseph Stalin. When fighting resumed on 8 July during the **Ten Days**, the unified, well-equipped IDF launched decisive combined-arms offensives, routing uncoordinated Arab armies that lacked central direction.",
           "sources": [
             {
               "id": "cme_l3_source_a",
@@ -3166,12 +3166,12 @@ export default {
           "title": "The Israeli Law of Return",
           "paragraphs": [
             "<span class=\"para-ref\">[4.1]</span> On **5 July 1950**, the Israeli Knesset enacted the historic **Law of Return**, declaring that every Jewish person anywhere in the world possessed the inherent legal right to settle in Israel and receive automatic citizenship. Within four years of statehood, Israel’s Jewish population more than doubled, surging from 650,000 in May 1948 to over **1.4 million by 1952**. This massive influx transformed the demographic security and military mobilization capacity of the young republic.",
-            "<span class=\"para-ref\">[4.2]</span> The demographic wave arrived in two distinct streams: European Holocaust survivors followed by over 300,000 **Mizrahi and Sephardic Jews** fleeing persecution, riots, and property seizures in Arab countries (including Iraq, Yemen, Morocco, and Egypt). Absorbing these impoverished refugees created severe economic hardship: food was strictly rationed (**Tzena**), and families were housed in squalid tin-shack transit camps (**Ma'abarot**) until West German Holocaust reparations (**Wiedergutmachung**) and US loans stabilized the national economy."
+            "<span class=\"para-ref\">[4.2]</span> The demographic wave arrived in two distinct streams: European Holocaust survivors followed by over 300,000 **Mizrahi and Sephardic Jews** fleeing persecution, riots, and property seizures in Arab countries (including Iraq, Yemen, Morocco, and Egypt). Absorbing these impoverished refugees created severe economic hardship: food was strictly rationed (**Tzena**), and families were housed in squalid tin-shack transit camps (**Ma'abarot**). The young state avoided bankruptcy through West German Holocaust reparations (**Wiedergutmachung**), private diaspora donations, and vital **US aid to Israel**—including a pivotal $100 million Export-Import Bank loan in 1949 and grant-in-aid food shipments under President Harry Truman, which underwrote infrastructure, agricultural expansion, and immigrant absorption."
           ],
           "act": 4,
           "act_title": "Stage 4: The Israeli Law of Return — How did the Law of Return transform Israel’s demographics and economy by 1953?",
           "theme_heading": "The Israeli Law of Return",
-          "text": "<span class=\"para-ref\">[4.1]</span> On **5 July 1950**, the Israeli Knesset enacted the historic **Law of Return**, declaring that every Jewish person anywhere in the world possessed the inherent legal right to settle in Israel and receive automatic citizenship. Within four years of statehood, Israel’s Jewish population more than doubled, surging from 650,000 in May 1948 to over **1.4 million by 1952**. This massive influx transformed the demographic security and military mobilization capacity of the young republic.\n\n<span class=\"para-ref\">[4.2]</span> The demographic wave arrived in two distinct streams: European Holocaust survivors followed by over 300,000 **Mizrahi and Sephardic Jews** fleeing persecution, riots, and property seizures in Arab countries (including Iraq, Yemen, Morocco, and Egypt). Absorbing these impoverished refugees created severe economic hardship: food was strictly rationed (**Tzena**), and families were housed in squalid tin-shack transit camps (**Ma'abarot**) until West German Holocaust reparations (**Wiedergutmachung**) and US loans stabilized the national economy.",
+          "text": "<span class=\"para-ref\">[4.1]</span> On **5 July 1950**, the Israeli Knesset enacted the historic **Law of Return**, declaring that every Jewish person anywhere in the world possessed the inherent legal right to settle in Israel and receive automatic citizenship. Within four years of statehood, Israel’s Jewish population more than doubled, surging from 650,000 in May 1948 to over **1.4 million by 1952**. This massive influx transformed the demographic security and military mobilization capacity of the young republic.\n\n<span class=\"para-ref\">[4.2]</span> The demographic wave arrived in two distinct streams: European Holocaust survivors followed by over 300,000 **Mizrahi and Sephardic Jews** fleeing persecution, riots, and property seizures in Arab countries (including Iraq, Yemen, Morocco, and Egypt). Absorbing these impoverished refugees created severe economic hardship: food was strictly rationed (**Tzena**), and families were housed in squalid tin-shack transit camps (**Ma'abarot**). The young state avoided bankruptcy through West German Holocaust reparations (**Wiedergutmachung**), private diaspora donations, and vital **US aid to Israel**—including a pivotal $100 million Export-Import Bank loan in 1949 and grant-in-aid food shipments under President Harry Truman, which underwrote infrastructure, agricultural expansion, and immigrant absorption.",
           "sources": [
             {
               "id": "cme_l3_source_d",
@@ -4724,12 +4724,12 @@ export default {
           "title": "US Ultimatum & British Retreat",
           "paragraphs": [
             "<span class=\"para-ref\">[5.1]</span> The Anglo-French conspiracy provoked incandescent fury from US President **Dwight D. Eisenhower**, who was running for re-election on a platform of peace and had been kept completely in the dark. Eisenhower warned that imperial aggression in Egypt undermined Western moral authority just as the Soviet Union was violently crushing the Hungarian Uprising. When Soviet Premier Bulganin threatened rocket attacks against London and Paris, Eisenhower refused to support Britain, threatening to collapse the British pound by blocking IMF emergency loans unless all forces withdrew.",
-            "<span class=\"para-ref\">[5.2]</span> Facing total financial bankruptcy and run on sterling, Eden declared a humiliating ceasefire on **6 November 1956**. The newly established **United Nations Emergency Force (UNEF)** deployed to Sinai to supervise the withdrawal of Anglo-French and Israeli forces. The **Suez Crisis** marked the definitive end of Britain and France as global imperial superpowers, forced Eden's resignation, opened the Straits of Tiran to Israeli shipping under UN supervision, and elevated Nasser into the undisputed hero of **Pan-Arab nationalism**."
+            "<span class=\"para-ref\">[5.2]</span> Facing total financial bankruptcy and run on sterling, Eden declared a humiliating ceasefire on **6 November 1956**. The newly established **United Nations Emergency Force (UNEF)** deployed to Sinai to supervise the withdrawal of Anglo-French and Israeli forces. The **Suez Crisis** marked the definitive end of Britain and France as global imperial superpowers, forced Eden's resignation, opened the Straits of Tiran to Israeli shipping under UN supervision, and elevated Nasser into the undisputed hero of **Pan-Arab nationalism**. This surge in prestige culminated in the **formation of the United Arab Republic (UAR) in February 1958**, a political union merging Egypt and Syria under Nasser's presidency. Although Syrian resentment over Egyptian dominance led to the UAR's dissolution in 1961, the merger temporarily encircled Israel on two borders and cemented Nasser's pre-eminence across the Arab world."
           ],
           "act": 5,
           "act_title": "Stage 5: US Ultimatum & British Retreat — Why did the Suez Crisis end in political triumph for Nasser despite military defeat?",
           "theme_heading": "US Ultimatum & British Retreat",
-          "text": "<span class=\"para-ref\">[5.1]</span> The Anglo-French conspiracy provoked incandescent fury from US President **Dwight D. Eisenhower**, who was running for re-election on a platform of peace and had been kept completely in the dark. Eisenhower warned that imperial aggression in Egypt undermined Western moral authority just as the Soviet Union was violently crushing the Hungarian Uprising. When Soviet Premier Bulganin threatened rocket attacks against London and Paris, Eisenhower refused to support Britain, threatening to collapse the British pound by blocking IMF emergency loans unless all forces withdrew.\n\n<span class=\"para-ref\">[5.2]</span> Facing total financial bankruptcy and run on sterling, Eden declared a humiliating ceasefire on **6 November 1956**. The newly established **United Nations Emergency Force (UNEF)** deployed to Sinai to supervise the withdrawal of Anglo-French and Israeli forces. The **Suez Crisis** marked the definitive end of Britain and France as global imperial superpowers, forced Eden's resignation, opened the Straits of Tiran to Israeli shipping under UN supervision, and elevated Nasser into the undisputed hero of **Pan-Arab nationalism**.",
+          "text": "<span class=\"para-ref\">[5.1]</span> The Anglo-French conspiracy provoked incandescent fury from US President **Dwight D. Eisenhower**, who was running for re-election on a platform of peace and had been kept completely in the dark. Eisenhower warned that imperial aggression in Egypt undermined Western moral authority just as the Soviet Union was violently crushing the Hungarian Uprising. When Soviet Premier Bulganin threatened rocket attacks against London and Paris, Eisenhower refused to support Britain, threatening to collapse the British pound by blocking IMF emergency loans unless all forces withdrew.\n\n<span class=\"para-ref\">[5.2]</span> Facing total financial bankruptcy and run on sterling, Eden declared a humiliating ceasefire on **6 November 1956**. The newly established **United Nations Emergency Force (UNEF)** deployed to Sinai to supervise the withdrawal of Anglo-French and Israeli forces. The **Suez Crisis** marked the definitive end of Britain and France as global imperial superpowers, forced Eden's resignation, opened the Straits of Tiran to Israeli shipping under UN supervision, and elevated Nasser into the undisputed hero of **Pan-Arab nationalism**. This surge in prestige culminated in the **formation of the United Arab Republic (UAR) in February 1958**, a political union merging Egypt and Syria under Nasser's presidency. Although Syrian resentment over Egyptian dominance led to the UAR's dissolution in 1961, the merger temporarily encircled Israel on two borders and cemented Nasser's pre-eminence across the Arab world.",
           "sources": [
             {
               "id": "cme_l4_source_e",
@@ -5543,12 +5543,12 @@ export default {
           "title": "The 1964 Cairo Conference & PLO Founded",
           "paragraphs": [
             "<span class=\"para-ref\">[1.1]</span> In **January 1964**, Egyptian President Gamal Abdel Nasser convened the **First Arab League Summit** in Cairo, bringing together thirteen heads of state to forge a unified Arab strategy against Israel. Arab leaders were particularly alarmed by Israel's completion of the **National Water Carrier**, a massive infrastructure project pumping water from the Sea of Galilee across the coastal plain to irrigate the Negev desert, which Arab states viewed as an illegal seizure of vital regional water resources.",
-            "<span class=\"para-ref\">[1.2]</span> Under Nasser's direct sponsorship, the Cairo Summit formally authorized the creation of the **Palestine Liberation Organisation** (**PLO**), establishing the Palestinian National Charter and creating the Palestine Liberation Army (PLA). Led initially by Ahmad Shukeiri, the PLO declared that armed struggle was the only path to liberate Palestine. While Nasser intended to keep the PLO under strict Egyptian control, independent guerrilla factions like **Yasser Arafat's Fatah** soon began executing cross-border armed operations."
+            "<span class=\"para-ref\">[1.2]</span> Under Nasser's direct sponsorship, the Cairo Summit formally authorized the creation of the **Palestine Liberation Organisation** (**PLO**), establishing the Palestinian National Charter and creating the Palestine Liberation Army (PLA). Created under Egyptian auspices, the PLO declared that armed struggle was the only path to liberate Palestine. While Nasser intended to keep the PLO under strict Egyptian control, independent guerrilla factions like **Yasser Arafat's Fatah** soon began executing cross-border armed operations."
           ],
           "act": 1,
           "act_title": "Stage 1: The 1964 Cairo Conference & PLO Founded — Why did Arab leaders meet in Cairo and create the PLO in 1964?",
           "theme_heading": "The 1964 Cairo Conference & PLO Founded",
-          "text": "<span class=\"para-ref\">[1.1]</span> In **January 1964**, Egyptian President Gamal Abdel Nasser convened the **First Arab League Summit** in Cairo, bringing together thirteen heads of state to forge a unified Arab strategy against Israel. Arab leaders were particularly alarmed by Israel's completion of the **National Water Carrier**, a massive infrastructure project pumping water from the Sea of Galilee across the coastal plain to irrigate the Negev desert, which Arab states viewed as an illegal seizure of vital regional water resources.\n\n<span class=\"para-ref\">[1.2]</span> Under Nasser's direct sponsorship, the Cairo Summit formally authorized the creation of the **Palestine Liberation Organisation** (**PLO**), establishing the Palestinian National Charter and creating the Palestine Liberation Army (PLA). Led initially by Ahmad Shukeiri, the PLO declared that armed struggle was the only path to liberate Palestine. While Nasser intended to keep the PLO under strict Egyptian control, independent guerrilla factions like **Yasser Arafat's Fatah** soon began executing cross-border armed operations.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In **January 1964**, Egyptian President Gamal Abdel Nasser convened the **First Arab League Summit** in Cairo, bringing together thirteen heads of state to forge a unified Arab strategy against Israel. Arab leaders were particularly alarmed by Israel's completion of the **National Water Carrier**, a massive infrastructure project pumping water from the Sea of Galilee across the coastal plain to irrigate the Negev desert, which Arab states viewed as an illegal seizure of vital regional water resources.\n\n<span class=\"para-ref\">[1.2]</span> Under Nasser's direct sponsorship, the Cairo Summit formally authorized the creation of the **Palestine Liberation Organisation** (**PLO**), establishing the Palestinian National Charter and creating the Palestine Liberation Army (PLA). Created under Egyptian auspices, the PLO declared that armed struggle was the only path to liberate Palestine. While Nasser intended to keep the PLO under strict Egyptian control, independent guerrilla factions like **Yasser Arafat's Fatah** soon began executing cross-border armed operations.",
           "sources": [
             {
               "id": "cme_l5_source_a",
@@ -6151,15 +6151,15 @@ export default {
           "explanation": "The Cairo Summit established the PLO to coordinate Palestinian armed resistance."
         },
         {
-          "question": "Who was the initial leader of the Palestine Liberation Organisation when it was founded in 1964?",
+          "question": "Which Arab leader sponsored the founding of the Palestine Liberation Organisation (PLO) at the 1964 Cairo Summit?",
           "options": [
-            "Ahmad Shukeiri",
-            "Yasser Arafat",
-            "George Habash",
-            "Sheikh Yassin"
+            "Gamal Abdel Nasser",
+            "King Hussein",
+            "Hafez al-Assad",
+            "Anwar Sadat"
           ],
-          "answer": "Ahmad Shukeiri",
-          "explanation": "Ahmad Shukeiri was the first chairman of the PLO before Yasser Arafat took control."
+          "answer": "Gamal Abdel Nasser",
+          "explanation": "Egyptian President Gamal Abdel Nasser sponsored the 1964 Cairo Summit that established the PLO."
         },
         {
           "question": "Which independent Palestinian guerrilla movement led by Yasser Arafat launched armed sabotage raids into Israel starting in 1965?",
@@ -6445,8 +6445,8 @@ export default {
             "answer": "Cairo"
           },
           {
-            "question": "Who was elected the first chairman of the PLO in 1964?",
-            "answer": "Ahmad Shukeiri"
+            "question": "Which Egyptian president sponsored the creation of the PLO at the 1964 Arab League summit in Cairo?",
+            "answer": "Gamal Abdel Nasser"
           },
           {
             "question": "Which Palestinian guerrilla faction was founded by Yasser Arafat in Kuwait in 1959?",
@@ -6465,20 +6465,20 @@ export default {
             "answer": "UNEF (UN Emergency Force)"
           },
           {
-            "question": "What narrow strait did President Nasser close to Israeli shipping on 22 May 1967?",
-            "answer": "The Straits of Tiran"
+            "question": "Which river's headwaters did Syria attempt to divert away from Israel in 1964, sparking border clashes?",
+            "answer": "The River Jordan (Banias and Hasbani springs)"
           },
           {
-            "question": "Which coastal outpost at the entrance of the Gulf of Aqaba was fortified by Egyptian guns?",
-            "answer": "Sharm el-Sheikh"
+            "question": "In which West Bank village did the IDF launch a massive retaliatory cross-border raid in November 1966?",
+            "answer": "Samu"
           },
           {
-            "question": "Which monarch of Jordan flew to Cairo on 30 May 1967 to sign a joint defence pact with Nasser?",
-            "answer": "King Hussein"
+            "question": "Which international crisis in 1956 ended in diplomatic humiliation for Britain and France in the Middle East?",
+            "answer": "The Suez Crisis"
           },
           {
-            "question": "Who was appointed Israeli Minister of Defence on 1 June 1967 on the eve of war?",
-            "answer": "Moshe Dayan"
+            "question": "What Arabic term ('The Catastrophe') refers to the displacement of 700,000 Palestinians during the 1948 War?",
+            "answer": "Al-Nakba"
           }
         ]
       },
@@ -7429,16 +7429,16 @@ export default {
             "answer": "Between 300,000 and 350,000"
           },
           {
-            "question": "What city in Sudan hosted the Arab League summit in August–September 1967?",
-            "answer": "Khartoum"
+            "question": "What type of surprise dawn attack did the Israeli Air Force launch on 5 June 1967 to destroy enemy aircraft on the tarmac?",
+            "answer": "A pre-emptive air strike"
           },
           {
-            "question": "What famous formula summarized the Arab League position at the Khartoum Summit?",
-            "answer": "The \"Three Noes\" (no peace, no recognition, no negotiations)"
+            "question": "Who was appointed Israeli Minister of Defence on 1 June 1967 and became the public face of Israel's military triumph?",
+            "answer": "Moshe Dayan"
           },
           {
-            "question": "What core diplomatic formula was introduced by UN Security Council Resolution 242?",
-            "answer": "\"Land for Peace\""
+            "question": "Which strategic desert pass in western Sinai became a bottleneck where retreating Egyptian armour was destroyed?",
+            "answer": "The Mitla Pass"
           }
         ]
       },
@@ -8415,8 +8415,8 @@ export default {
             "answer": "Palestine Liberation Organisation"
           },
           {
-            "question": "In what year was Yasser Arafat elected Chairman of the PLO?",
-            "answer": "1969"
+            "question": "Which country hosted the largest number of Palestinian refugees following the 1967 Six-Day War?",
+            "answer": "Jordan (the Hashemite Kingdom of Jordan)"
           },
           {
             "question": "Which Egyptian president expelled UNEF and closed the Straits of Tiran in 1967?",
@@ -9064,7 +9064,7 @@ export default {
           "options": [
             "Yasser Arafat",
             "George Habash",
-            "Ahmad Shukeiri",
+            "Gamal Abdel Nasser",
             "King Hussein"
           ],
           "answer": "Yasser Arafat",
@@ -9413,24 +9413,24 @@ export default {
             "answer": "Lebanon"
           },
           {
-            "question": "What static artillery border conflict was fought along the Suez Canal in 1969–70?",
-            "answer": "The War of Attrition"
+            "question": "Which armed conflict erupted in September 1970 when King Hussein ordered the Jordanian army to crush the PLO in Amman?",
+            "answer": "Black September (Jordanian Civil War)"
           },
           {
-            "question": "Who succeeded Gamal Abdel Nasser as President of Egypt following Nasser’s death in 1970?",
-            "answer": "Anwar Sadat"
+            "question": "Which March 1968 battle in Jordan was celebrated by Palestinians as a heroic moral victory against the IDF?",
+            "answer": "The Battle of Karameh"
           },
           {
-            "question": "What fortified sand-rampart defensive line did Israel construct along the Suez Canal?",
-            "answer": "The Bar-Lev Line"
+            "question": "Which radical Palestinian faction led by George Habash carried out the Dawson's Field airline hijackings in 1970?",
+            "answer": "The PFLP (Popular Front for the Liberation of Palestine)"
           },
           {
-            "question": "What method did Egyptian engineers use to blast through the sand ramparts of the Bar-Lev Line?",
-            "answer": "High-pressure water monitors (water cannons)"
+            "question": "What diplomatic formula was established by UN Security Council Resolution 242 in November 1967?",
+            "answer": "\"Land for Peace\""
           },
           {
-            "question": "On what Jewish holy day did Egypt and Syria launch their coordinated surprise attack in 1973?",
-            "answer": "Yom Kippur (Day of Atonement)"
+            "question": "What were the famous \"Three Noes\" declared by Arab leaders at the August 1967 Khartoum Summit?",
+            "answer": "No peace, no recognition, no negotiations with Israel"
           },
           {
             "question": "Which vital international waterway remained closed to shipping between 1967 and 1975?",
@@ -10626,32 +10626,32 @@ export default {
             "answer": "It quadrupled (from $3 to $12 a barrel)"
           },
           {
-            "question": "Who served as US Secretary of State and pioneered \"shuttle diplomacy\" between 1974 and 1975?",
-            "answer": "Henry Kissinger"
+            "question": "What sand-rampart fortification along the Suez Canal was breached by Egyptian forces in October 1973?",
+            "answer": "The Bar-Lev Line"
           },
           {
             "question": "Which vital international waterway, closed since June 1967, was reopened by Egypt in June 1975?",
             "answer": "The Suez Canal"
           },
           {
-            "question": "Which right-wing Israeli political party won the May 1977 election, ending 29 years of Labour rule?",
-            "answer": "Likud"
+            "question": "What method did Egyptian engineers use to blast channels through the sand ramparts of the Bar-Lev Line?",
+            "answer": "High-pressure water monitors (water cannons)"
           },
           {
-            "question": "Who became Prime Minister of Israel in May 1977 having formerly commanded the Irgun?",
-            "answer": "Menachem Begin"
+            "question": "Which Soviet-supplied surface-to-air missiles inflicted devastating initial losses on the Israeli Air Force in October 1973?",
+            "answer": "SAM missiles (SAM-6)"
           },
           {
-            "question": "On what date did Egyptian President Anwar Sadat land in Israel to address the Knesset in Jerusalem?",
-            "answer": "19 November 1977"
+            "question": "What was the codename of the emergency US military airlift that resupplied Israel with ammunition and weapons during the 1973 war?",
+            "answer": "Operation Nickel Grass"
           },
           {
             "question": "What foundational diplomatic principle did UN Resolution 242 establish in November 1967?",
             "answer": "\"Land for Peace\""
           },
           {
-            "question": "In which Egyptian city did Menachem Begin meet Sadat on Christmas Day 1977 for reciprocal talks?",
-            "answer": "Ismailia"
+            "question": "Who served as Prime Minister of Israel during the October 1973 Yom Kippur War?",
+            "answer": "Golda Meir"
           }
         ]
       },
@@ -12169,15 +12169,15 @@ export default {
       ],
       "narrative_blocks": [
         {
-          "title": "The Israeli Invasion of Lebanon",
+          "title": "Arafat’s UN Speech, Fatahland & The 1982 Invasion of Lebanon",
           "paragraphs": [
-            "<span class=\"para-ref\">[1.1]</span> Following their expulsion from Jordan in 1970–71, the PLO transformed southern Lebanon into an armed redoubt known as \"**Fatahland**,\" launching Katyusha rocket barrages and cross-border raids into northern Israel. In March 1978, Israel launched **Operation Litani**, occupying southern Lebanon up to the Litani River before withdrawing in favor of UN peacekeepers (**UNIFIL**) and a proxy Christian militia, the South Lebanon Army (SLA).",
-            "<span class=\"para-ref\">[1.2]</span> On **3 June 1982**, the rogue Abu Nidal terrorist faction critically wounded Israeli Ambassador **Shlomo Argov** in London. Although Abu Nidal was a sworn enemy of Arafat, Israeli Defence Minister **Ariel Sharon** seized the pretext to launch **Operation Peace for Galilee** on **6 June 1982**. Sharon deceived Prime Minister Begin and the Israeli Cabinet, claiming the invasion would advance only 40 kilometres to clear rocket range, but instead drove armoured divisions 100 kilometres north to lay siege to the Lebanese capital of **Beirut**."
+            "<span class=\"para-ref\">[1.1]</span> On **13 November 1974**, following the Arab League summit recognizing the PLO as the sole legitimate representative of the Palestinian people, Chairman **Yasser Arafat** delivered a historic address to the UN General Assembly in New York, famously concluding: *\"I have come bearing an olive branch and a freedom fighter's gun. Do not let the olive branch fall from my hand.\"* The UN granted the PLO official permanent observer status under **UN Resolution 3236**, formally recognizing the Palestinian right to national self-determination. However, diplomatic progress stalled, and following their violent expulsion from Jordan during Black September, the PLO fortified southern Lebanon into a militarized enclave known as **\"Fatahland\"**, launching cross-border Katyusha rocket barrages and guerrilla raids into northern Israel.",
+            "<span class=\"para-ref\">[1.2]</span> In March 1978, following a deadly coastal raid, Israel launched **Operation Litani**, occupying southern Lebanon before withdrawing in favor of UN peacekeepers (**UNIFIL**). On **3 June 1982**, the rogue Abu Nidal faction critically wounded Israeli Ambassador **Shlomo Argov** in London. Seizing this pretext, Defence Minister **Ariel Sharon** launched **Operation Peace for Galilee** on **6 June 1982**. Sharon deceived Prime Minister Begin and the Israeli Cabinet, claiming forces would advance only 40 kilometres to push rockets out of range; instead, 76,000 Israeli troops drove 100 kilometres north to lay siege to the Lebanese capital of **Beirut**, determined to destroy the PLO's leadership."
           ],
           "act": 1,
-          "act_title": "Stage 1: The Israeli Invasion of Lebanon — Why did Ariel Sharon expand the invasion far beyond the cabinet’s 40km limit?",
-          "theme_heading": "The Israeli Invasion of Lebanon",
-          "text": "<span class=\"para-ref\">[1.1]</span> Following their expulsion from Jordan in 1970–71, the PLO transformed southern Lebanon into an armed redoubt known as \"**Fatahland**,\" launching Katyusha rocket barrages and cross-border raids into northern Israel. In March 1978, Israel launched **Operation Litani**, occupying southern Lebanon up to the Litani River before withdrawing in favor of UN peacekeepers (**UNIFIL**) and a proxy Christian militia, the South Lebanon Army (SLA).\n\n<span class=\"para-ref\">[1.2]</span> On **3 June 1982**, the rogue Abu Nidal terrorist faction critically wounded Israeli Ambassador **Shlomo Argov** in London. Although Abu Nidal was a sworn enemy of Arafat, Israeli Defence Minister **Ariel Sharon** seized the pretext to launch **Operation Peace for Galilee** on **6 June 1982**. Sharon deceived Prime Minister Begin and the Israeli Cabinet, claiming the invasion would advance only 40 kilometres to clear rocket range, but instead drove armoured divisions 100 kilometres north to lay siege to the Lebanese capital of **Beirut**.",
+          "act_title": "Stage 1: Arafat’s UN Speech, Fatahland & The 1982 Invasion of Lebanon — Why did Ariel Sharon expand the invasion far beyond the cabinet’s 40km limit?",
+          "theme_heading": "Arafat’s UN Speech, Fatahland & The 1982 Invasion of Lebanon",
+          "text": "<span class=\"para-ref\">[1.1]</span> On **13 November 1974**, following the Arab League summit recognizing the PLO as the sole legitimate representative of the Palestinian people, Chairman **Yasser Arafat** delivered a historic address to the UN General Assembly in New York, famously concluding: *\"I have come bearing an olive branch and a freedom fighter's gun. Do not let the olive branch fall from my hand.\"* The UN granted the PLO official permanent observer status under **UN Resolution 3236**, formally recognizing the Palestinian right to national self-determination. However, diplomatic progress stalled, and following their violent expulsion from Jordan during Black September, the PLO fortified southern Lebanon into a militarized enclave known as **\"Fatahland\"**, launching cross-border Katyusha rocket barrages and guerrilla raids into northern Israel.\n\n<span class=\"para-ref\">[1.2]</span> In March 1978, following a deadly coastal raid, Israel launched **Operation Litani**, occupying southern Lebanon before withdrawing in favor of UN peacekeepers (**UNIFIL**). On **3 June 1982**, the rogue Abu Nidal faction critically wounded Israeli Ambassador **Shlomo Argov** in London. Seizing this pretext, Defence Minister **Ariel Sharon** launched **Operation Peace for Galilee** on **6 June 1982**. Sharon deceived Prime Minister Begin and the Israeli Cabinet, claiming forces would advance only 40 kilometres to push rockets out of range; instead, 76,000 Israeli troops drove 100 kilometres north to lay siege to the Lebanese capital of **Beirut**, determined to destroy the PLO's leadership.",
           "sources": [
             {
               "id": "cme_l11_source_a",

@@ -104,10 +104,27 @@
     .task-section {
       margin-bottom: 2px;
     }
+    .stage-writing-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    .ruled-line {
+      height: 8.2mm;
+      border-bottom: 0.8px solid #000000;
+      box-sizing: border-box;
+    }
+    .ruled-line:last-child {
+      border-bottom: none;
+    }
     /* Thick Black Writing Lines for Accessibility & Special Needs */
     .task-line {
-      border-bottom: 1.5px solid #000000;
-      height: 7.0mm;
+      border-bottom: 1.2px solid #000000;
+      height: 8.0mm;
+      width: 100%;
       margin: 0;
       box-sizing: border-box;
     }
@@ -202,29 +219,20 @@
 
       <!-- Pupil Workbook & Assessment Card (Top Placement) -->
       
-      <!-- Pupil Workbook & Assessment Card (Spanning Across the Page) -->
-      <div style="border: 1.5px solid #000; border-radius: 4px; padding: 4.5px 12px; background: #fff; margin-bottom: 3px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000; padding-bottom: 2px; margin-bottom: 4px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.0pt; text-transform: uppercase; letter-spacing: 0.8px;">
-            Pupil Workbook &amp; Assessment
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #222;">
-            EDEXCEL GCSE (9–1) HISTORY • PAPER 2: CONFLICT IN THE MIDDLE EAST, 1945–1995 &bull; Key Topic 2
-          </span>
-        </div>
-        
-        <div style="display: grid; grid-template-columns: 2fr 1fr 1.2fr; gap: 16px; font-family: 'Inter', sans-serif; font-size: 7.5pt;">
+      <!-- Pupil Identification Card -->
+      <div style="border: 1.5px solid #000; border-radius: 4px; padding: 5.5px 14px; background: #fff; margin-bottom: 3px;">
+        <div style="display: grid; grid-template-columns: 2.2fr 1.1fr 1.3fr; gap: 18px; font-family: 'Inter', sans-serif; font-size: 8.0pt;">
           <div style="display: flex; align-items: baseline;">
-            <strong style="text-transform: uppercase; width: 48px; font-size: 7.0pt;">Name:</strong>
-            <div style="flex: 1; border-bottom: 1.2px solid #000; height: 13px;"></div>
+            <strong style="text-transform: uppercase; width: 50px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Name:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
           </div>
           <div style="display: flex; align-items: baseline;">
-            <strong style="text-transform: uppercase; width: 44px; font-size: 7.0pt;">Class:</strong>
-            <div style="flex: 1; border-bottom: 1.2px solid #000; height: 13px;"></div>
+            <strong style="text-transform: uppercase; width: 46px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Class:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
           </div>
           <div style="display: flex; align-items: baseline;">
-            <strong style="text-transform: uppercase; width: 56px; font-size: 7.0pt;">Teacher:</strong>
-            <div style="flex: 1; border-bottom: 1.2px solid #000; height: 13px;"></div>
+            <strong style="text-transform: uppercase; width: 62px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Teacher:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
           </div>
         </div>
       </div>
@@ -280,73 +288,94 @@
       </div>
 
       <!-- Pearson Edexcel Specification Word-For-Word (Spanning Across the Page) -->
-      <div style="border: 1.5px solid #000; border-radius: 4px; overflow: hidden; background: #fff; flex: 1; display: flex; flex-direction: column; margin-bottom: 3px;">
-        <div style="background: #000; color: #fff; padding: 3px 10px; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; letter-spacing: 0.8px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
-          <span>Pearson Edexcel GCSE (9–1) History Specification • Option P5 • Key Topic 2 Content</span>
-          <span style="font-size: 6.8pt; letter-spacing: 0.5px;">Official Specification Content</span>
+      <div style="border: 1.6px solid #0f172a; border-radius: 5px; overflow: hidden; background: #f1f5f9; flex: 1; display: flex; flex-direction: column; margin-bottom: 3px;">
+        <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-top: 3px solid #0284c7; color: #ffffff; padding: 3.5px 10px; font-family: 'Inter', sans-serif; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+          <div style="display: flex; align-items: center; gap: 7px;">
+            <span style="background: #0284c7; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; font-size: 6.8pt; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase;">Pearson Edexcel</span>
+            <span style="font-size: 7.4pt; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase; color: #f8fafc;">Option P5 • Key Topic 2 Content</span>
+          </div>
+          <span style="background: rgba(2, 132, 199, 0.25); border: 1px solid #38bdf8; color: #e0f2fe; padding: 1.5px 7px; border-radius: 3px; font-size: 6.6pt; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase;">Official Specification Directory</span>
         </div>
 
-        <div style="padding: 5px 10px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; font-family: 'Inter', sans-serif; flex: 1; overflow: hidden;">
+        <div style="padding: 5px 6px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; font-family: 'Inter', sans-serif; flex: 1; overflow: hidden;">
           
-          <!-- Subtopic 1 -->
-          <div class="spec-column-box" style="border-right: 1.2px solid #e2e8f0; padding-right: 10px; display: flex; flex-direction: column; justify-content: space-between; height: 100%; overflow: hidden;">
-            <strong style="font-size: 7.5pt; text-transform: uppercase; color: #000; border-bottom: 1.2px solid #000; padding-bottom: 2px; margin-bottom: 3.2px; display: block; letter-spacing: 0.3px; flex-shrink: 0; font-family: 'Inter', sans-serif;">
-              1. The Six Day War, 1967
-            </strong>
-            <div class="spec-column-items" style="font-size: 6.8pt; line-height: 1.20; color: #0f172a; flex: 1; display: flex; flex-direction: column; justify-content: space-evenly;">
-              <div style="margin-bottom: 2.2px; display: flex; align-items: flex-start; gap: 5px;">
-              <span style="color: #0f172a; font-weight: 900; line-height: 1.2; font-size: 5.0px; margin-top: 1px;">&bull;</span>
-              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif;">The significance of the <strong>Cairo Conference (1964)</strong>. Escalating tension between Israel, Syria and Jordan: Syria’s support for <strong>Fatah</strong>, Israel’s <strong>raid on Samu</strong> and events of 7 April 1967.</span>
+          <!-- Subtopic Card 1 -->
+          <div class="spec-column-box" style="background: #ffffff; border: 1.2px solid #cbd5e1; border-radius: 4px; padding: 6px 8px 6px 8px; display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);">
+            <div style="display: flex; align-items: flex-start; gap: 6px; border-bottom: 2px solid #0284c7; padding-bottom: 4px; margin-bottom: 3.5px; flex-shrink: 0;">
+              <span style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; width: 17px; height: 17px; border-radius: 3px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">1</span>
+              <strong style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.6pt; font-weight: 900; color: #0f172a; line-height: 1.18; letter-spacing: 0.1px;">
+                The Six Day War, 1967
+              </strong>
             </div>
-<div style="margin-bottom: 2.2px; display: flex; align-items: flex-start; gap: 5px;">
-              <span style="color: #0f172a; font-weight: 900; line-height: 1.2; font-size: 5.0px; margin-top: 1px;">&bull;</span>
-              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif;">The actions of the USSR, <strong>Nasser</strong> and the USA in the period leading to war.</span>
+            <div class="spec-column-items" style="flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; gap: 6px;">
+              
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; border-radius: 3px; padding: 7px 9px; display: flex; align-items: flex-start; gap: 6px; box-sizing: border-box;">
+              <span style="color: #0284c7; font-weight: 900; line-height: 1.25; font-size: 5.2px; margin-top: 1px; flex-shrink: 0;">▪</span>
+              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif; font-size: 7.0pt; line-height: 1.22; color: #1e293b;">The significance of the <strong>Cairo Conference (1964)</strong>. Escalating tension between Israel, Syria and Jordan: Syria’s support for <strong>Fatah</strong>, Israel’s <strong>raid on Samu</strong> and events of 7 April 1967.</span>
             </div>
-<div style="margin-bottom: 2.2px; display: flex; align-items: flex-start; gap: 5px;">
-              <span style="color: #0f172a; font-weight: 900; line-height: 1.2; font-size: 5.0px; margin-top: 1px;">&bull;</span>
-              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif;">Key events of the war.</span>
+
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; border-radius: 3px; padding: 7px 9px; display: flex; align-items: flex-start; gap: 6px; box-sizing: border-box;">
+              <span style="color: #0284c7; font-weight: 900; line-height: 1.25; font-size: 5.2px; margin-top: 1px; flex-shrink: 0;">▪</span>
+              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif; font-size: 7.0pt; line-height: 1.22; color: #1e293b;">The actions of the USSR, <strong>Nasser</strong> and the USA in the period leading to war.</span>
+            </div>
+
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; border-radius: 3px; padding: 7px 9px; display: flex; align-items: flex-start; gap: 6px; box-sizing: border-box;">
+              <span style="color: #0284c7; font-weight: 900; line-height: 1.25; font-size: 5.2px; margin-top: 1px; flex-shrink: 0;">▪</span>
+              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif; font-size: 7.0pt; line-height: 1.22; color: #1e293b;">Key events of the war.</span>
             </div>
             </div>
           </div>
 
-          <!-- Subtopic 2 -->
-          <div class="spec-column-box" style="border-right: 1.2px solid #e2e8f0; padding-right: 10px; display: flex; flex-direction: column; justify-content: space-between; height: 100%; overflow: hidden;">
-            <strong style="font-size: 7.5pt; text-transform: uppercase; color: #000; border-bottom: 1.2px solid #000; padding-bottom: 2px; margin-bottom: 3.2px; display: block; letter-spacing: 0.3px; flex-shrink: 0; font-family: 'Inter', sans-serif;">
-              2. Aftermath of the 1967 war
-            </strong>
-            <div class="spec-column-items" style="font-size: 6.8pt; line-height: 1.20; color: #0f172a; flex: 1; display: flex; flex-direction: column; justify-content: space-evenly;">
-              <div style="margin-bottom: 2.2px; display: flex; align-items: flex-start; gap: 5px;">
-              <span style="color: #0f172a; font-weight: 900; line-height: 1.2; font-size: 5.0px; margin-top: 1px;">&bull;</span>
-              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif;"><strong>UN Resolution 242</strong> and continued dispute over the Suez Canal.</span>
+          <!-- Subtopic Card 2 -->
+          <div class="spec-column-box" style="background: #ffffff; border: 1.2px solid #cbd5e1; border-radius: 4px; padding: 6px 8px 6px 8px; display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);">
+            <div style="display: flex; align-items: flex-start; gap: 6px; border-bottom: 2px solid #0284c7; padding-bottom: 4px; margin-bottom: 3.5px; flex-shrink: 0;">
+              <span style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; width: 17px; height: 17px; border-radius: 3px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">2</span>
+              <strong style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.6pt; font-weight: 900; color: #0f172a; line-height: 1.18; letter-spacing: 0.1px;">
+                Aftermath of the 1967 War
+              </strong>
             </div>
-<div style="margin-bottom: 2.2px; display: flex; align-items: flex-start; gap: 5px;">
-              <span style="color: #0f172a; font-weight: 900; line-height: 1.2; font-size: 5.0px; margin-top: 1px;">&bull;</span>
-              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif;">Palestinian refugees and the significance of the <strong>occupied territories</strong>: <strong>Golan Heights</strong>, <strong>Gaza Strip</strong>, <strong>West Bank</strong>, <strong>Sinai</strong> and <strong>East Jerusalem</strong>.</span>
+            <div class="spec-column-items" style="flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; gap: 6px;">
+              
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; border-radius: 3px; padding: 7px 9px; display: flex; align-items: flex-start; gap: 6px; box-sizing: border-box;">
+              <span style="color: #0284c7; font-weight: 900; line-height: 1.25; font-size: 5.2px; margin-top: 1px; flex-shrink: 0;">▪</span>
+              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif; font-size: 7.0pt; line-height: 1.22; color: #1e293b;"><strong>UN Resolution 242</strong> and continued dispute over the Suez Canal.</span>
             </div>
-<div style="margin-bottom: 2.2px; display: flex; align-items: flex-start; gap: 5px;">
-              <span style="color: #0f172a; font-weight: 900; line-height: 1.2; font-size: 5.0px; margin-top: 1px;">&bull;</span>
-              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif;">The use of terrorism, Israel’s response and international attitudes towards the Palestine issue: the <strong>PFLP airplane hijacks</strong> of 1970; <strong>Black September</strong> and the <strong>Munich Olympics</strong>. The expulsion of the <strong>PLO</strong> from <strong>Jordan (1970)</strong>.</span>
+
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; border-radius: 3px; padding: 7px 9px; display: flex; align-items: flex-start; gap: 6px; box-sizing: border-box;">
+              <span style="color: #0284c7; font-weight: 900; line-height: 1.25; font-size: 5.2px; margin-top: 1px; flex-shrink: 0;">▪</span>
+              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif; font-size: 7.0pt; line-height: 1.22; color: #1e293b;">Palestinian refugees and the significance of the <strong>occupied territories</strong>: <strong>Golan Heights</strong>, <strong>Gaza Strip</strong>, <strong>West Bank</strong>, <strong>Sinai</strong> and <strong>East Jerusalem</strong>.</span>
+            </div>
+
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; border-radius: 3px; padding: 7px 9px; display: flex; align-items: flex-start; gap: 6px; box-sizing: border-box;">
+              <span style="color: #0284c7; font-weight: 900; line-height: 1.25; font-size: 5.2px; margin-top: 1px; flex-shrink: 0;">▪</span>
+              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif; font-size: 7.0pt; line-height: 1.22; color: #1e293b;">The use of terrorism, Israel’s response and international attitudes towards the Palestine issue: the <strong>PFLP airplane hijacks</strong> of 1970; <strong>Black September</strong> and the <strong>Munich Olympics</strong>. The expulsion of the <strong>PLO</strong> from <strong>Jordan (1970)</strong>.</span>
             </div>
             </div>
           </div>
 
-          <!-- Subtopic 3 -->
-          <div class="spec-column-box" style=" display: flex; flex-direction: column; justify-content: space-between; height: 100%; overflow: hidden;">
-            <strong style="font-size: 7.5pt; text-transform: uppercase; color: #000; border-bottom: 1.2px solid #000; padding-bottom: 2px; margin-bottom: 3.2px; display: block; letter-spacing: 0.3px; flex-shrink: 0; font-family: 'Inter', sans-serif;">
-              3. Israel and Egypt, 1967–73
-            </strong>
-            <div class="spec-column-items" style="font-size: 6.8pt; line-height: 1.20; color: #0f172a; flex: 1; display: flex; flex-direction: column; justify-content: space-evenly;">
-              <div style="margin-bottom: 2.2px; display: flex; align-items: flex-start; gap: 5px;">
-              <span style="color: #0f172a; font-weight: 900; line-height: 1.2; font-size: 5.0px; margin-top: 1px;">&bull;</span>
-              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif;">Egyptian relations with Israel, the USA, the USSR and other Arab states.</span>
+          <!-- Subtopic Card 3 -->
+          <div class="spec-column-box" style="background: #ffffff; border: 1.2px solid #cbd5e1; border-radius: 4px; padding: 6px 8px 6px 8px; display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);">
+            <div style="display: flex; align-items: flex-start; gap: 6px; border-bottom: 2px solid #0284c7; padding-bottom: 4px; margin-bottom: 3.5px; flex-shrink: 0;">
+              <span style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; width: 17px; height: 17px; border-radius: 3px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">3</span>
+              <strong style="font-family: 'Playfair Display', Georgia, serif; font-size: 7.6pt; font-weight: 900; color: #0f172a; line-height: 1.18; letter-spacing: 0.1px;">
+                Israel and Egypt, 1967–73
+              </strong>
             </div>
-<div style="margin-bottom: 2.2px; display: flex; align-items: flex-start; gap: 5px;">
-              <span style="color: #0f172a; font-weight: 900; line-height: 1.2; font-size: 5.0px; margin-top: 1px;">&bull;</span>
-              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif;">Israel’s consolidation of control of the <strong>occupied territories</strong>.</span>
+            <div class="spec-column-items" style="flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; gap: 6px;">
+              
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; border-radius: 3px; padding: 7px 9px; display: flex; align-items: flex-start; gap: 6px; box-sizing: border-box;">
+              <span style="color: #0284c7; font-weight: 900; line-height: 1.25; font-size: 5.2px; margin-top: 1px; flex-shrink: 0;">▪</span>
+              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif; font-size: 7.0pt; line-height: 1.22; color: #1e293b;">Egyptian relations with Israel, the USA, the USSR and other Arab states.</span>
             </div>
-<div style="margin-bottom: 2.2px; display: flex; align-items: flex-start; gap: 5px;">
-              <span style="color: #0f172a; font-weight: 900; line-height: 1.2; font-size: 5.0px; margin-top: 1px;">&bull;</span>
-              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif;">Key events of the <strong>Yom Kippur War (1973)</strong>  and its aftermath.</span>
+
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; border-radius: 3px; padding: 7px 9px; display: flex; align-items: flex-start; gap: 6px; box-sizing: border-box;">
+              <span style="color: #0284c7; font-weight: 900; line-height: 1.25; font-size: 5.2px; margin-top: 1px; flex-shrink: 0;">▪</span>
+              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif; font-size: 7.0pt; line-height: 1.22; color: #1e293b;">Israel’s consolidation of control of the <strong>occupied territories</strong>.</span>
+            </div>
+
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; border-radius: 3px; padding: 7px 9px; display: flex; align-items: flex-start; gap: 6px; box-sizing: border-box;">
+              <span style="color: #0284c7; font-weight: 900; line-height: 1.25; font-size: 5.2px; margin-top: 1px; flex-shrink: 0;">▪</span>
+              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif; font-size: 7.0pt; line-height: 1.22; color: #1e293b;">Key events of the <strong>Yom Kippur War (1973)</strong>  and its aftermath.</span>
             </div>
             </div>
           </div>
@@ -371,76 +400,76 @@
         </div>
 
         <div style="border-bottom: 1px solid #000000; padding-bottom: 3px; margin-bottom: 6px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
-          <strong>Living Timeline Protocol:</strong> Throughout this unit, illustrate each historical milestone inside its dedicated sketchpad box below. Use the dual-coding prompt to combine symbolic diagrams, causal arrows, and key dates.
+          <strong>Living Timeline Protocol:</strong> Complete each milestone canvas below. Choose either <strong>(A) Creative Sketch:</strong> draw historical symbols, causal arrows, and dramatic scenes; OR <strong>(B) Mind Map:</strong> create a central concept bubble with key factual anchors.
         </div>
       </div>
 
-      <!-- 3 Spacious Milestones with Large Blank Dual-Coding Workspace -->
-      <div style="display: flex; flex-direction: column; gap: 6px; flex: 1; justify-content: space-between;">
+      <!-- 3 Spacious Milestones with Open Dual-Coding & Mindmapping Canvases -->
+      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
 
         <!-- Milestone 1: JAN 1964 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 JAN 1964 &bull; The Cairo Conference &amp; The Foundation of the PLO
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.1</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.1</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Thirteen Arab League leaders meet in Cairo to oppose Israel's National Water Carrier. They establish the Palestine Liberation Organisation (PLO) under Ahmad Shukeiri and approve the Headwater Diversion Plan to divert the Hasbani and Banyas rivers away from the Sea of Galilee.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch the Jordan River / Sea of Galilee Headwater Diversion route alongside the early PLO emblem and fedayeen rifle symbol.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch the Jordan River / Sea of Galilee Headwater Diversion route alongside the early PLO emblem and fedayeen rifle symbol.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
         <!-- Milestone 2: MAY–JUNE 1967 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 MAY–JUNE 1967 &bull; Straits of Tiran Blockade &amp; UNEF Expulsion
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.1</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.1</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Spurred by Soviet false warnings, President Nasser demands the immediate withdrawal of UN Emergency Force (UNEF) peacekeepers, moves 100,000 troops into Sinai, and blockades the Straits of Tiran at Sharm el-Sheikh, cutting off Israel's southern oil route (casus belli).
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch Egyptian tanks advancing past evicted UNEF peacekeepers and a naval chain closing the Straits of Tiran at Sharm el-Sheikh.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch Egyptian tanks advancing past evicted UNEF peacekeepers and a naval chain closing the Straits of Tiran at Sharm el-Sheikh.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
         <!-- Milestone 3: 5–10 JUNE 1967 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 2px 0;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 5–10 JUNE 1967 &bull; The Six-Day War &amp; The Conquered Territories
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.2</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.2</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Israel launches Operation Focus, wiping out the Egyptian Air Force on the tarmac. In six days of mobile warfare, the IDF captures the Sinai Peninsula and Gaza Strip from Egypt, the West Bank and East Jerusalem from Jordan, and the Golan Heights from Syria.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch an airfield runway with destroyed Egyptian jets (Operation Focus), then map the 4 captured lands: Sinai, Gaza, West Bank, Golan.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch an airfield runway with destroyed Egyptian jets (Operation Focus), then map the 4 captured lands: Sinai, Gaza, West Bank, Golan.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
@@ -459,82 +488,82 @@
     <div class="page-body-full">
       <div>
         <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 5px;">
-          <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-size: 11.5pt; color: #000000; text-transform: uppercase; font-weight: 800;">
+          <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-size: 11pt; color: #000000; text-transform: uppercase; font-weight: 800;">
             Living Timeline &bull; Part 2: Diplomacy, Resistance &amp; The Yom Kippur War (1967–1973)
           </h2>
         </div>
 
-        <div style="border-bottom: 1px solid #000000; padding-bottom: 3px; margin-bottom: 6px; font-family: 'Inter', sans-serif; font-size: 8.2pt; color: #000000;">
-          <strong>Living Timeline Protocol:</strong> Complete each milestone sketchpad using dual-coding (combining visual symbols, causal arrows, and dates) to master the chronological spine.
+        <div style="border-bottom: 1px solid #000000; padding-bottom: 3px; margin-bottom: 6px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
+          <strong>Living Timeline Protocol:</strong> Complete each milestone canvas below. Choose either <strong>(A) Creative Sketch:</strong> draw historical symbols, causal arrows, and dramatic scenes; OR <strong>(B) Mind Map:</strong> create a central concept bubble with key factual anchors.
         </div>
       </div>
 
-      <!-- 3 Spacious Milestones with Large Blank Dual-Coding Workspace -->
-      <div style="display: flex; flex-direction: column; gap: 6px; flex: 1; justify-content: space-between;">
+      <!-- 3 Spacious Milestones with Open Dual-Coding & Mindmapping Canvases -->
+      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
 
         <!-- Milestone 4: NOV 1967 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 22 NOV 1967 &bull; UN Resolution 242 &amp; The Khartoum "Three Noes"
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.3</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.3</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               The UN Security Council unanimously adopts Resolution 242, establishing the foundational principle of "Land for Peace" (Israeli withdrawal in exchange for Arab recognition and secure borders). At the Khartoum Summit, the Arab League issues the defiant "Three Noes": no peace, no recognition, and no negotiations with Israel.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch a 'Land for Peace' balance scale (occupied territory for recognition) stamped with the Khartoum Summit's Three 'NO's.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch a 'Land for Peace' balance scale (occupied territory for recognition) stamped with the Khartoum Summit's Three 'NO's.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
         <!-- Milestone 5: SEPT 1970 – 1972 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 SEPT 1970 – 1972 &bull; Black September in Jordan &amp; The Munich Olympics
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.4</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.4</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Operating as a "state within a state" in Jordan, the PFLP blows up three hijacked Western airliners at Dawson's Field. King Hussein’s army crushes Palestinian militia strongholds in September 1970, expelling the PLO to Lebanon. In September 1972, the militant splinter faction Black September murders 11 Israeli Olympic athletes in Munich.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch the hijacked airliners at Dawson's Field, PLO fighters expelled across Jordan to Lebanon, and the Munich balcony silhouette.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch the hijacked airliners at Dawson's Field, PLO fighters expelled across Jordan to Lebanon, and the Munich balcony silhouette.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
         <!-- Milestone 6: OCT 1973 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 2px 0;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 6–25 OCT 1973 &bull; The Yom Kippur War &amp; The OPEC Oil Embargo
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.5</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.5</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Egypt and Syria launch a surprise assault on Yom Kippur. Egyptian infantry blast through the Bar-Lev Line using high-pressure water monitors under a Soviet SAM umbrella. Following emergency US airlifts and an Israeli counter-crossing led by Ariel Sharon, Arab OPEC ministers impose an oil embargo that quadruples global prices, shattering Israeli complacency.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch water cannons breaching the Bar-Lev sand wall, Sharon's canal counter-crossing, and a soaring OPEC oil barrel price graph.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch water cannons breaching the Bar-Lev sand wall, Sharon's canal counter-crossing, and a soaring OPEC oil barrel price graph.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
@@ -569,27 +598,22 @@
         </div>
       </div>
 
-      <!-- Key Specification Focus -->
-      <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; padding: 2px 6px; background: #f8fafc; margin-bottom: 2px; font-family: 'Inter', sans-serif; font-size: 7.8pt; line-height: 1.2;">
-        <strong>Key Specification Focus:</strong> The <strong>founding of the Palestine Liberation Organization (PLO) in 1964 and its aims</strong>; <strong>Fatah guerrilla raids</strong>; the <strong>Samu raid (1966)</strong>; <strong>Syrian border disputes and the Golan Heights</strong>; the <strong>April 1967 air skirmish</strong>; and <strong>Soviet false intelligence warnings</strong>.
-      </div>
-
       <!-- 5-Stage Chronological Inquiry Spine with Full-Width Question Banners (KS3 Golden Standard for GCSE) -->
       <div class="spine-notes-container" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin: 2px 0 2px 0; gap: 2px;">
         
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 1
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 January 1964
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why did Arab leaders meet in Cairo and create the PLO in 1964?
               </span>
             </div>
@@ -619,30 +643,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 2
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 1964–1965
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did the dispute over River Jordan water spark military conflict?
               </span>
             </div>
@@ -672,30 +695,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 3
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 1966
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why did Syria sponsor Fatah guerrilla raids across the border?
               </span>
             </div>
@@ -725,30 +747,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 4
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 13 November 1966
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 What were the consequences of the Israeli reprisal raid on Samu?
               </span>
             </div>
@@ -778,30 +799,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 5
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 7 April 1967
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did the 7 April dogfight escalate tensions toward all-out war?
               </span>
             </div>
@@ -831,13 +851,12 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
@@ -865,13 +884,9 @@
         </h2>
       </div>
 
-      <!-- 32 Ruled Lines with 8mm Left Margin (Tighter Line Spacing) -->
+      <!-- 31 Ruled Lines with 8mm Left Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1;">
         
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -1039,11 +1054,10 @@
         <div style="font-family: 'Inter', sans-serif; font-size: 7.3pt; font-weight: 700; margin-bottom: 2px;">
           <strong>Sentence Stems:</strong> One major consequence was that... &bull; Specifically, this was evident when... &bull; Consequently, this directly resulted in... / altered relations because...
         </div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
       </div>
 
       <!-- Section 2: Extended Exam Practice (Q2 Narrative [8m] or Q3 Importance [8m]) -->
@@ -1087,30 +1101,16 @@
           
         </div>
 
-        <!-- Row 3: Accessible Sentence Starters & Key Vocabulary Bank -->
-        <div style="padding: 2.5px 6px; background: #ffffff; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 8px;">
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Sentence Starters:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-style: italic; color: #222222; line-height: 1.15; display: block;">One main event was that... • For example, ... • This led directly to... • The next major development was... • In particular, ... • Overall, this culminated in... because...</span>
-          </div>
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Key Vocabulary Bank:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; color: #222222; line-height: 1.15; display: block;">Cairo Conference (1964) &bull; Syria’s support for Fatah &bull; Samu raid &bull; events of 7 April 1967 &bull; Soviet false warnings &bull; actions of Nasser &bull; UNEF withdrawal &bull; Straits of Tiran &bull; Sharm el-Sheikh &bull; pre-emptive strike</span>
-          </div>
+        <!-- Row 3: Accessible Sentence Starters / Analytical Connectives -->
+        <div style="padding: 2.5px 6px; background: #ffffff;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">One main event was that... • For example, ... • This led directly to... • The next major development was... • In particular, ... • Overall, this culminated in... because...</span>
         </div>
       </div>
 
-      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Tighter Line Spacing) -->
+      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin: 2px 0 2px 0;">
         
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -1209,9 +1209,17 @@
         </h2>
       </div>
 
-      <!-- 26 Ruled Response Lines with 8mm Margin (Tighter Line Spacing) -->
+      <!-- 30 Ruled Response Lines with 8mm Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin-bottom: 3px;">
         
+            <div class="lined-row">
+              <div class="lined-margin-cell">&nbsp;</div>
+              <div class="lined-content-cell">&nbsp;</div>
+            </div>
+            <div class="lined-row">
+              <div class="lined-margin-cell">&nbsp;</div>
+              <div class="lined-content-cell">&nbsp;</div>
+            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -1365,27 +1373,22 @@
         </div>
       </div>
 
-      <!-- Key Specification Focus -->
-      <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; padding: 2px 6px; background: #f8fafc; margin-bottom: 2px; font-family: 'Inter', sans-serif; font-size: 7.8pt; line-height: 1.2;">
-        <strong>Key Specification Focus:</strong> <strong>Causes of the Six-Day War</strong>: <strong>Nasser's remilitarisation of the Sinai and expulsion of UNEF</strong>; <strong>closure of the Straits of Tiran</strong>; the <strong>Egyptian-Jordanian Defence Pact</strong>; the <strong>Israeli pre-emptive air strike (Operation Focus, 5 June 1967)</strong>; <strong>air supremacy</strong>; and the <strong>rapid IDF tank blitzkrieg in Sinai, Jerusalem, the West Bank, and the Golan Heights</strong>.
-      </div>
-
       <!-- 5-Stage Chronological Inquiry Spine with Full-Width Question Banners (KS3 Golden Standard for GCSE) -->
       <div class="spine-notes-container" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin: 2px 0 2px 0; gap: 2px;">
         
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 1
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 13–15 May 1967
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did Soviet false warnings trigger Egyptian troop mobilisation in Sinai?
               </span>
             </div>
@@ -1415,30 +1418,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 2
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 16–23 May 1967
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why was closing the Straits of Tiran treated by Israel as a casus belli?
               </span>
             </div>
@@ -1468,30 +1470,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 3
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 30 May 1967
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did the Egyptian-Jordanian Defence Pact encircle Israel on three fronts?
               </span>
             </div>
@@ -1521,30 +1522,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 4
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 5 June 1967
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did Operation Focus destroy Arab air power on the first morning?
               </span>
             </div>
@@ -1574,30 +1574,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 5
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 5–10 June 1967
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 What territories did Israel conquer during the six days of fighting?
               </span>
             </div>
@@ -1627,13 +1626,12 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
@@ -1661,13 +1659,9 @@
         </h2>
       </div>
 
-      <!-- 32 Ruled Lines with 8mm Left Margin (Tighter Line Spacing) -->
+      <!-- 31 Ruled Lines with 8mm Left Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1;">
         
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -1835,11 +1829,10 @@
         <div style="font-family: 'Inter', sans-serif; font-size: 7.3pt; font-weight: 700; margin-bottom: 2px;">
           <strong>Sentence Stems:</strong> One major consequence was that... &bull; Specifically, this was evident when... &bull; Consequently, this directly resulted in... / altered relations because...
         </div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
       </div>
 
       <!-- Section 2: Extended Exam Practice (Q2 Narrative [8m] or Q3 Importance [8m]) -->
@@ -1883,30 +1876,16 @@
           
         </div>
 
-        <!-- Row 3: Accessible Sentence Starters & Key Vocabulary Bank -->
-        <div style="padding: 2.5px 6px; background: #ffffff; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 8px;">
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Sentence Starters:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-style: italic; color: #222222; line-height: 1.15; display: block;">One main reason this was important was that... • For example, ... • This mattered because... • Another key factor was... • In particular, ... • Overall, the most decisive impact was... because...</span>
-          </div>
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Key Vocabulary Bank:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; color: #222222; line-height: 1.15; display: block;">Golan Heights &bull; Galilee kibbutzim &bull; Hula Valley &bull; Syrian artillery bunkers &bull; General David Elazar &bull; Mt Hermon &bull; radar early warning &bull; Damascus buffer &bull; strategic depth &bull; 9–10 June assault</span>
-          </div>
+        <!-- Row 3: Accessible Sentence Starters / Analytical Connectives -->
+        <div style="padding: 2.5px 6px; background: #ffffff;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">One main reason this was important was that... • For example, ... • This mattered because... • Another key factor was... • In particular, ... • Overall, the most decisive impact was... because...</span>
         </div>
       </div>
 
-      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Tighter Line Spacing) -->
+      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin: 2px 0 2px 0;">
         
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -2005,9 +1984,17 @@
         </h2>
       </div>
 
-      <!-- 26 Ruled Response Lines with 8mm Margin (Tighter Line Spacing) -->
+      <!-- 30 Ruled Response Lines with 8mm Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin-bottom: 3px;">
         
+            <div class="lined-row">
+              <div class="lined-margin-cell">&nbsp;</div>
+              <div class="lined-content-cell">&nbsp;</div>
+            </div>
+            <div class="lined-row">
+              <div class="lined-margin-cell">&nbsp;</div>
+              <div class="lined-content-cell">&nbsp;</div>
+            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -2161,27 +2148,22 @@
         </div>
       </div>
 
-      <!-- Key Specification Focus -->
-      <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; padding: 2px 6px; background: #f8fafc; margin-bottom: 2px; font-family: 'Inter', sans-serif; font-size: 7.8pt; line-height: 1.2;">
-        <strong>Key Specification Focus:</strong> <strong>Consequences of the Six-Day War</strong>: <strong>territorial gains (Sinai, Gaza Strip, West Bank, East Jerusalem, and the Golan Heights)</strong>; the <strong>refugee crisis</strong>; the <strong>Khartoum Resolution ("Three No's")</strong>; <strong>UN Resolution 242 ("Land for Peace")</strong>; and the <strong>start of Israeli settlement building</strong>.
-      </div>
-
       <!-- 5-Stage Chronological Inquiry Spine with Full-Width Question Banners (KS3 Golden Standard for GCSE) -->
       <div class="spine-notes-container" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin: 2px 0 2px 0; gap: 2px;">
         
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 1
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 7 June 1967
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why did the capture and annexation of East Jerusalem cause global outcry?
               </span>
             </div>
@@ -2211,30 +2193,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 2
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 September 1967
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why did the Arab League issue the "Three Noes" at the Khartoum Summit?
               </span>
             </div>
@@ -2264,30 +2245,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 3
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 22 November 1967
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did UN Resolution 242 establish the principle of "Land for Peace"?
               </span>
             </div>
@@ -2317,30 +2297,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 4
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 1968–1969
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why did Israel build the fortified Bar-Lev Line along the Suez Canal?
               </span>
             </div>
@@ -2370,30 +2349,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 5
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 1968–1973
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did permanent Israeli settlements transform the occupied territories?
               </span>
             </div>
@@ -2423,13 +2401,12 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
@@ -2457,13 +2434,9 @@
         </h2>
       </div>
 
-      <!-- 32 Ruled Lines with 8mm Left Margin (Tighter Line Spacing) -->
+      <!-- 31 Ruled Lines with 8mm Left Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1;">
         
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -2631,11 +2604,10 @@
         <div style="font-family: 'Inter', sans-serif; font-size: 7.3pt; font-weight: 700; margin-bottom: 2px;">
           <strong>Sentence Stems:</strong> One major consequence was that... &bull; Specifically, this was evident when... &bull; Consequently, this directly resulted in... / altered relations because...
         </div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
       </div>
 
       <!-- Section 2: Extended Exam Practice (Q2 Narrative [8m] or Q3 Importance [8m]) -->
@@ -2679,30 +2651,16 @@
           
         </div>
 
-        <!-- Row 3: Accessible Sentence Starters & Key Vocabulary Bank -->
-        <div style="padding: 2.5px 6px; background: #ffffff; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 8px;">
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Sentence Starters:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-style: italic; color: #222222; line-height: 1.15; display: block;">One main event was that... • For example, ... • This led directly to... • The next major development was... • In particular, ... • Overall, this culminated in... because...</span>
-          </div>
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Key Vocabulary Bank:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; color: #222222; line-height: 1.15; display: block;">Occupied territories &bull; 300,000 refugees &bull; West Bank &bull; Gaza Strip &bull; Golan Heights &bull; Khartoum Conference &bull; "Three Noes" &bull; UN Resolution 242 &bull; "Land for Peace" &bull; diplomatic deadlock</span>
-          </div>
+        <!-- Row 3: Accessible Sentence Starters / Analytical Connectives -->
+        <div style="padding: 2.5px 6px; background: #ffffff;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">One main event was that... • For example, ... • This led directly to... • The next major development was... • In particular, ... • Overall, this culminated in... because...</span>
         </div>
       </div>
 
-      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Tighter Line Spacing) -->
+      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin: 2px 0 2px 0;">
         
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -2801,9 +2759,17 @@
         </h2>
       </div>
 
-      <!-- 26 Ruled Response Lines with 8mm Margin (Tighter Line Spacing) -->
+      <!-- 30 Ruled Response Lines with 8mm Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin-bottom: 3px;">
         
+            <div class="lined-row">
+              <div class="lined-margin-cell">&nbsp;</div>
+              <div class="lined-content-cell">&nbsp;</div>
+            </div>
+            <div class="lined-row">
+              <div class="lined-margin-cell">&nbsp;</div>
+              <div class="lined-content-cell">&nbsp;</div>
+            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -2957,27 +2923,22 @@
         </div>
       </div>
 
-      <!-- Key Specification Focus -->
-      <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; padding: 2px 6px; background: #f8fafc; margin-bottom: 2px; font-family: 'Inter', sans-serif; font-size: 7.8pt; line-height: 1.2;">
-        <strong>Key Specification Focus:</strong> The <strong>War of Attrition along the Suez Canal (1969–70)</strong>; the <strong>Battle of Karameh (1968)</strong>; the <strong>rise of Yasser Arafat</strong>; <strong>international aircraft hijackings (Dawson's Field, Sept 1970)</strong>; <strong>Black September in Jordan (1970)</strong>; and the <strong>Munich Olympics massacre (Sept 1972)</strong> followed by <strong>Operation Wrath of God</strong>.
-      </div>
-
       <!-- 5-Stage Chronological Inquiry Spine with Full-Width Question Banners (KS3 Golden Standard for GCSE) -->
       <div class="spine-notes-container" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin: 2px 0 2px 0; gap: 2px;">
         
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 1
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 21 March 1968
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did the Battle of Karameh establish Yasser Arafat as leader of the PLO?
               </span>
             </div>
@@ -3007,30 +2968,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 2
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 September 1970
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why did the PFLP hijack Western airliners to Dawson’s Field in 1970?
               </span>
             </div>
@@ -3060,30 +3020,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 3
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 September 1970
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why did King Hussein expel the PLO during Black September in 1970?
               </span>
             </div>
@@ -3113,30 +3072,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 4
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 5–6 September 1972
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 What was the global impact of the Munich Olympics massacre in 1972?
               </span>
             </div>
@@ -3166,30 +3124,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 5
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 1972–1979
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did Israel retaliate through Operation Wrath of God covert strikes?
               </span>
             </div>
@@ -3219,13 +3176,12 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
@@ -3253,13 +3209,9 @@
         </h2>
       </div>
 
-      <!-- 32 Ruled Lines with 8mm Left Margin (Tighter Line Spacing) -->
+      <!-- 31 Ruled Lines with 8mm Left Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1;">
         
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -3427,11 +3379,10 @@
         <div style="font-family: 'Inter', sans-serif; font-size: 7.3pt; font-weight: 700; margin-bottom: 2px;">
           <strong>Sentence Stems:</strong> One major consequence was that... &bull; Specifically, this was evident when... &bull; Consequently, this directly resulted in... / altered relations because...
         </div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
       </div>
 
       <!-- Section 2: Extended Exam Practice (Q2 Narrative [8m] or Q3 Importance [8m]) -->
@@ -3475,30 +3426,16 @@
           
         </div>
 
-        <!-- Row 3: Accessible Sentence Starters & Key Vocabulary Bank -->
-        <div style="padding: 2.5px 6px; background: #ffffff; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 8px;">
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Sentence Starters:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-style: italic; color: #222222; line-height: 1.15; display: block;">One main reason this was important was that... • For example, ... • This mattered because... • Another key factor was... • In particular, ... • Overall, the most decisive impact was... because...</span>
-          </div>
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Key Vocabulary Bank:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; color: #222222; line-height: 1.15; display: block;">Munich Olympics &bull; Black September &bull; 5 September 1972 &bull; 11 Israeli athletes &bull; Olympic Village &bull; 900 million viewers &bull; international attitudes &bull; Palestine issue &bull; Operation Wrath of God &bull; 1974 UN speech</span>
-          </div>
+        <!-- Row 3: Accessible Sentence Starters / Analytical Connectives -->
+        <div style="padding: 2.5px 6px; background: #ffffff;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">One main reason this was important was that... • For example, ... • This mattered because... • Another key factor was... • In particular, ... • Overall, the most decisive impact was... because...</span>
         </div>
       </div>
 
-      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Tighter Line Spacing) -->
+      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin: 2px 0 2px 0;">
         
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -3597,9 +3534,17 @@
         </h2>
       </div>
 
-      <!-- 26 Ruled Response Lines with 8mm Margin (Tighter Line Spacing) -->
+      <!-- 30 Ruled Response Lines with 8mm Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin-bottom: 3px;">
         
+            <div class="lined-row">
+              <div class="lined-margin-cell">&nbsp;</div>
+              <div class="lined-content-cell">&nbsp;</div>
+            </div>
+            <div class="lined-row">
+              <div class="lined-margin-cell">&nbsp;</div>
+              <div class="lined-content-cell">&nbsp;</div>
+            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -3753,27 +3698,22 @@
         </div>
       </div>
 
-      <!-- Key Specification Focus -->
-      <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; padding: 2px 6px; background: #f8fafc; margin-bottom: 2px; font-family: 'Inter', sans-serif; font-size: 7.8pt; line-height: 1.2;">
-        <strong>Key Specification Focus:</strong> <strong>Causes of the Yom Kippur War (1973)</strong>: <strong>Sadat’s diplomacy and Egyptian-Syrian desire to regain lost land</strong>; <strong>Operation Badr surprise crossing on Yom Kippur</strong>; <strong>Syrian offensive on Mount Hermon</strong>; the <strong>Israeli counter-offensive (Sharon crossing the Suez Canal)</strong>; <strong>superpower resupply airlifts (US Operation Nickel Grass vs Soviet airlift)</strong>; <strong>nuclear alert DEFCON 3</strong>; the <strong>ceasefire (UN Res 338)</strong>; and the <strong>OPEC oil embargo</strong>.
-      </div>
-
       <!-- 5-Stage Chronological Inquiry Spine with Full-Width Question Banners (KS3 Golden Standard for GCSE) -->
       <div class="spine-notes-container" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin: 2px 0 2px 0; gap: 2px;">
         
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 1
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 1969–1970
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why did Nasser launch the War of Attrition along the Suez Canal?
               </span>
             </div>
@@ -3803,30 +3743,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 2
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 1971–1972
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 Why did Anwar Sadat expel 15,000 Soviet advisers from Egypt in 1972?
               </span>
             </div>
@@ -3856,30 +3795,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 3
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 6 October 1973
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did Egyptian and Syrian forces achieve tactical surprise on Yom Kippur?
               </span>
             </div>
@@ -3909,30 +3847,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 4
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 12–16 October 1973
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did the US airlift enable General Sharon’s canal counter-crossing?
               </span>
             </div>
@@ -3962,30 +3899,29 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
         </div>
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 5
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
                 October 1973
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 How did the Arab OPEC oil embargo transform global superpower diplomacy?
               </span>
             </div>
@@ -4015,13 +3951,12 @@
               </div>
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
@@ -4049,13 +3984,9 @@
         </h2>
       </div>
 
-      <!-- 32 Ruled Lines with 8mm Left Margin (Tighter Line Spacing) -->
+      <!-- 31 Ruled Lines with 8mm Left Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1;">
         
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -4223,11 +4154,10 @@
         <div style="font-family: 'Inter', sans-serif; font-size: 7.3pt; font-weight: 700; margin-bottom: 2px;">
           <strong>Sentence Stems:</strong> One major consequence was that... &bull; Specifically, this was evident when... &bull; Consequently, this directly resulted in... / altered relations because...
         </div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
       </div>
 
       <!-- Section 2: Extended Exam Practice (Q2 Narrative [8m] or Q3 Importance [8m]) -->
@@ -4271,30 +4201,16 @@
           
         </div>
 
-        <!-- Row 3: Accessible Sentence Starters & Key Vocabulary Bank -->
-        <div style="padding: 2.5px 6px; background: #ffffff; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 8px;">
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Sentence Starters:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-style: italic; color: #222222; line-height: 1.15; display: block;">One main event was that... • For example, ... • This led directly to... • The next major development was... • In particular, ... • Overall, this culminated in... because...</span>
-          </div>
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Key Vocabulary Bank:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; color: #222222; line-height: 1.15; display: block;">Yom Kippur War (1973) &bull; Bar-Lev Line &bull; water monitors &bull; SAM-6 missiles &bull; Golan Heights &bull; Operation Nickel Grass &bull; Ariel Sharon &bull; Third Army encirclement &bull; OPEC oil embargo &bull; DEFCON 3 &bull; Henry Kissinger</span>
-          </div>
+        <!-- Row 3: Accessible Sentence Starters / Analytical Connectives -->
+        <div style="padding: 2.5px 6px; background: #ffffff;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">One main event was that... • For example, ... • This led directly to... • The next major development was... • In particular, ... • Overall, this culminated in... because...</span>
         </div>
       </div>
 
-      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Tighter Line Spacing) -->
+      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin: 2px 0 2px 0;">
         
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
-            <div class="lined-row">
-              <div class="lined-margin-cell">&nbsp;</div>
-              <div class="lined-content-cell">&nbsp;</div>
-            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -4393,9 +4309,17 @@
         </h2>
       </div>
 
-      <!-- 26 Ruled Response Lines with 8mm Margin (Tighter Line Spacing) -->
+      <!-- 30 Ruled Response Lines with 8mm Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin-bottom: 3px;">
         
+            <div class="lined-row">
+              <div class="lined-margin-cell">&nbsp;</div>
+              <div class="lined-content-cell">&nbsp;</div>
+            </div>
+            <div class="lined-row">
+              <div class="lined-margin-cell">&nbsp;</div>
+              <div class="lined-content-cell">&nbsp;</div>
+            </div>
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
               <div class="lined-content-cell">&nbsp;</div>
@@ -4542,7 +4466,6 @@
         </div>
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1px; border-top: 1px solid #000; padding-top: 2px;">
           <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; color: #222;">EDEXCEL GCSE (9–1) HISTORY • PAPER 2: CONFLICT IN THE MIDDLE EAST, 1945–1995</span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800;">OUTSIDE BACK COVER</span>
         </div>
       </div>
 
@@ -4586,7 +4509,7 @@
             <tr style="border-bottom: 1.5px solid #000000; background: #ffffff; height: 8.0mm;">
               <th style="padding: 3px 4px; width: 26px; text-align: center; font-size: 8.5pt; font-weight: 900; border-right: 1px solid #000000;">#</th>
               <th style="padding: 3px 8px; text-align: left; font-size: 8.2pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Enquiry / Lesson Assessment</th>
-              <th style="padding: 3px 4px; width: 84px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Starter (10m)</th>
+              <th style="padding: 3px 4px; width: 84px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Do Now (10m)</th>
               <th style="padding: 3px 4px; width: 78px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q1(a) (4m)</th>
               <th style="padding: 3px 4px; width: 78px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q1(b) (4m)</th>
               <th style="padding: 3px 4px; width: 84px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Extended (8m)</th>
@@ -4598,60 +4521,60 @@
             <tr style="border-bottom: 1px solid #000000;">
               <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">1</td>
               <td style="padding: 6px 8px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.25;"><strong>KT2.1:</strong> Cairo Conference & Water Wars</td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 4</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 4</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">Q2: [ &nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 8</strong> ]</span></td>
-              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 26</strong> ]</span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">Q2: &nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></span></td>
+              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 26</strong></span></td>
             </tr>
 
             <tr style="border-bottom: 1px solid #000000;">
               <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">2</td>
               <td style="padding: 6px 8px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.25;"><strong>KT2.2:</strong> Straits of Tiran & Six Day War</td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 4</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 4</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">Q3: [ &nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 8</strong> ]</span></td>
-              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 26</strong> ]</span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">Q3: &nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></span></td>
+              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 26</strong></span></td>
             </tr>
 
             <tr style="border-bottom: 1px solid #000000;">
               <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">3</td>
               <td style="padding: 6px 8px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.25;"><strong>KT2.3:</strong> Occupied Territories & Res 242</td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 4</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 4</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">Q2: [ &nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 8</strong> ]</span></td>
-              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 26</strong> ]</span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">Q2: &nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></span></td>
+              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 26</strong></span></td>
             </tr>
 
             <tr style="border-bottom: 1px solid #000000;">
               <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">4</td>
               <td style="padding: 6px 8px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.25;"><strong>KT2.4:</strong> Black September & Munich 1972</td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 4</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 4</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">Q3: [ &nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 8</strong> ]</span></td>
-              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 26</strong> ]</span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">Q3: &nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></span></td>
+              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 26</strong></span></td>
             </tr>
 
             <tr style="border-bottom: 1px solid #000000;">
               <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">5</td>
               <td style="padding: 6px 8px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.25;"><strong>KT2.5:</strong> Yom Kippur War & Oil Embargo</td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 4</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 4</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">Q2: [ &nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 8</strong> ]</span></td>
-              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 26</strong> ]</span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">Q2: &nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></span></td>
+              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 26</strong></span></td>
             </tr>
             
             <tr style="background: #f8fafc; font-weight: 900; border-top: 1.5px solid #000000; height: 11.5mm;">
               <td colspan="2" style="padding: 3px 8px; border-right: 1px solid #000000; text-transform: uppercase; font-size: 8.2pt; letter-spacing: 0.5px;">Key Topic 2 Cumulative Assessment Totals</td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Recall: <span style="font-size: 9.5pt; font-weight: 900;">[ &nbsp;&nbsp; <strong>/ 50</strong> ]</span></td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1(a): <span style="font-size: 9.5pt; font-weight: 900;">[ &nbsp;&nbsp; <strong>/ 20</strong> ]</span></td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1(b): <span style="font-size: 9.5pt; font-weight: 900;">[ &nbsp;&nbsp; <strong>/ 20</strong> ]</span></td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Ext: <span style="font-size: 9.5pt; font-weight: 900;">[ &nbsp;&nbsp; <strong>/ 40</strong> ]</span></td>
-              <td style="padding: 3px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #000000; color: #ffffff;">[ &nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 130</strong> ]</td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Do Now: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 50</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1(a): <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 20</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1(b): <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 20</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Ext: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 40</strong></span></td>
+              <td style="padding: 3px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #ffffff; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 130</strong></td>
             </tr>
           </tbody>
         </table>
@@ -4664,7 +4587,7 @@
             Teacher Formative Assessment &bull; WWW / EBI Feedback
           </strong>
           <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #222222; font-weight: 700;">
-            Effort Grade: [ &nbsp;&nbsp;&nbsp;&nbsp; ]
+            Effort Grade: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </span>
         </div>
         
@@ -4674,7 +4597,7 @@
               What Went Well (WWW):
             </span>
             <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0;">
-              <div class="task-line" style="height: 8.8mm;"></div><div class="task-line" style="height: 8.8mm;"></div><div class="task-line" style="height: 8.8mm;"></div><div class="task-line" style="height: 8.8mm;"></div>
+              <div class="task-line" style="height: 6.8mm;"></div><div class="task-line" style="height: 6.8mm;"></div><div class="task-line" style="height: 6.8mm;"></div>
             </div>
           </div>
           <div style="display: flex; flex-direction: column; justify-content: space-between;">
@@ -4682,7 +4605,7 @@
               Even Better If (EBI):
             </span>
             <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0;">
-              <div class="task-line" style="height: 8.8mm;"></div><div class="task-line" style="height: 8.8mm;"></div><div class="task-line" style="height: 8.8mm;"></div><div class="task-line" style="height: 8.8mm;"></div>
+              <div class="task-line" style="height: 6.8mm;"></div><div class="task-line" style="height: 6.8mm;"></div><div class="task-line" style="height: 6.8mm;"></div>
             </div>
           </div>
         </div>
@@ -4718,7 +4641,7 @@
               Scan to Quiz
             </div>
             <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; color: #000000; margin-top: 1px; white-space: nowrap;">
-              Score: [ &nbsp;&nbsp;&nbsp; <strong>/ 20</strong> ]
+              Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 20</strong>
             </div>
           </div>
 
@@ -4733,7 +4656,7 @@
               Scan to Quiz
             </div>
             <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; color: #000000; margin-top: 1px; white-space: nowrap;">
-              Score: [ &nbsp;&nbsp;&nbsp; <strong>/ 20</strong> ]
+              Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 20</strong>
             </div>
           </div>
 
@@ -4748,7 +4671,7 @@
               Scan to Quiz
             </div>
             <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; color: #000000; margin-top: 1px; white-space: nowrap;">
-              Score: [ &nbsp;&nbsp;&nbsp; <strong>/ 20</strong> ]
+              Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 20</strong>
             </div>
           </div>
 
@@ -4763,7 +4686,7 @@
               Scan to Quiz
             </div>
             <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; color: #000000; margin-top: 1px; white-space: nowrap;">
-              Score: [ &nbsp;&nbsp;&nbsp; <strong>/ 20</strong> ]
+              Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 20</strong>
             </div>
           </div>
 
@@ -4778,7 +4701,7 @@
               Scan to Quiz
             </div>
             <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; color: #000000; margin-top: 1px; white-space: nowrap;">
-              Score: [ &nbsp;&nbsp;&nbsp; <strong>/ 20</strong> ]
+              Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 20</strong>
             </div>
           </div>
         </div>

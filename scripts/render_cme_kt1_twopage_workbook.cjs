@@ -21,224 +21,63 @@ function generateQrSvg(url) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}" shape-rendering="crispEdges" style="width: 100%; height: 100%;"><path fill="#ffffff" d="M0,0h${size}v${size}H0z"/><path fill="#000000" d="${pathD.trim()}"/></svg>`;
 }
 
-// Approved Witty Revision Quips for CME Key Topic 1 (Exact 28 Pages)
+const TOTAL_PAGE_COUNT = 20;
+
+// Approved Witty Revision Quips for CME Key Topic 1 (Exact 20 Pages)
 const approvedFunnyFooters = [
   'Conflict in the Middle East Revision Hub • Key Topic 1 • The History Department', // Page 1
-  '"Diplomacy 101: Never promise the exact same slice of land to three different people at once."', // Page 2
-  '"Sykes and Picot drew borders with a pencil and a ruler — please be slightly more careful with your map sketches!"', // Page 3
-  '"The 1939 White Paper managed to infuriate absolutely everyone: truly the peak of British compromise."', // Page 4
-  '"Saying \'Britain was tired after the war\' is true, but the examiner expects 8 marks of depth!"', // Page 5
-  '"Balfour wrote 67 words; you have two full pages of lined paper to explain the consequences."', // Page 6
+  '"Remember: The exam strictly begins in 1945 — master the post-war crisis and Mandate collapse."', // Page 2
+  '"Irgun checked into the King David Hotel with milk churns... and checked Britain out of the Mandate."', // Page 3
+  '"Saying \'Britain was tired after the war\' is true, but the examiner expects 8 marks of depth!"', // Page 4
+  '"Bevingrads and barbed wire: explain how urban insurgency made Palestine ungovernable for Attlee."', // Page 5
+  '"Grade 9 formula: Point, Fact, Consequence — never leave an assertion without its factual anchor."', // Page 6
   '"Extended responses win Grade 9: deploy precise statistics and sustain your historical argument."', // Page 7
-  '"Irgun checked into the King David Hotel with milk churns... and checked Britain out of the Mandate."', // Page 8
-  '"UN Resolution 181 gave each side a jigsaw puzzle; neither side liked the picture."', // Page 9
-  '"Bevingrads and barbed wire: explain how urban insurgency made Palestine ungovernable for Attlee."', // Page 10
-  '"Write with forensic detail: dates, casualties, and causal mechanisms turn notes into top marks."', // Page 11
-  '"Ben-Gurion proclaimed independence in 16 minutes flat: you have 12 minutes for this narrative!"', // Page 12
-  '"Five invading Arab armies, zero unified commanders: coordination counts in war and in paragraphs."', // Page 13
-  '"Operation Dani and the Haganah: explain the strategic shift from defence to counter-offensive."', // Page 14
-  '"Armistice lines drawn in green pencil at Rhodes created 70 years of geopolitical deadlock."', // Page 15
-  '"Calling 700,000 displaced refugees \'a minor consequence\' is a guaranteed ticket to a Level 1 mark."', // Page 16
-  '"The Law of Return opened Israel\'s gates; you just need to return to your essay plan."', // Page 17
-  '"UNRWA camps in Gaza and the West Bank: explain the demographic transformation of the Levant."', // Page 18
-  '"Sustained conclusions: weigh political displacement against military security for Band 4."', // Page 19
-  '"Eden thought Nasser was Mussolini on the Nile; Eisenhower promptly reminded Eden what year it was."', // Page 20
-  '"The Protocol of Sèvres was so top secret the French burnt their copies — don\'t burn your exam paper!"', // Page 21
-  '"100-hour blitzkrieg across the Sinai: Moshe Dayan showed the power of pre-emptive armor."', // Page 22
-  '"Superpower showdown: US financial threats proved the British Empire was officially over."', // Page 23
-  '"Cartographic evidence: chokepoints and armistice lines dictated the rhythm of every Middle East war."', // Page 24
-  '"Grade 9 formula: Point, Fact, Consequence — never leave an assertion without its factual anchor."', // Page 25
-  '"Synoptic mastery: connect 1917 British pledges to the 1956 Suez crisis in one causal chain."', // Page 26
-  '"Final timed assessment: three sustained paragraphs, zero fluff, maximum historical precision."', // Page 27
-  'Key Topic 1 Mastery Complete • Cumulative Assessment & Digital Quizzing Hub', // Page 28
+  '"UN Resolution 181 gave each side a jigsaw puzzle; neither side liked the picture."', // Page 8
+  '"Ben-Gurion proclaimed independence in 16 minutes flat: you have 12 minutes for this narrative!"', // Page 9
+  '"Five invading Arab armies, zero unified commanders: coordination counts in war and in paragraphs."', // Page 10
+  '"Armistice lines drawn in green pencil at Rhodes created 70 years of geopolitical deadlock."', // Page 11
+  '"Calling 700,000 displaced refugees \'a minor consequence\' is a guaranteed ticket to a Level 1 mark."', // Page 12
+  '"The Law of Return opened Israel\'s gates; you just need to return to your essay plan."', // Page 13
+  '"UNRWA camps in Gaza and the West Bank: explain the demographic transformation of the Levant."', // Page 14
+  '"Sustained conclusions: weigh political displacement against military security for Band 4."', // Page 15
+  '"Eden thought Nasser was Mussolini on the Nile; Eisenhower promptly reminded Eden what year it was."', // Page 16
+  '"The Protocol of Sèvres was so top secret the French burnt their copies — don\'t burn your exam paper!"', // Page 17
+  '"100-hour blitzkrieg across the Sinai: Moshe Dayan showed the power of pre-emptive armor."', // Page 18
+  '"Superpower showdown: US financial threats proved the British Empire was officially over."', // Page 19
+  'Key Topic 1 Mastery Complete • Cumulative Assessment & Digital Quizzing Hub', // Page 20
 ];
 
-// ============================================================================
-// FOOTER STRIP HELPER (Page Number + Footer Text on the Same Line)
-// Even pages (verso/left): Page number on left, text on right.
-// Odd pages (recto/right): Text on left, page number on right.
-// ============================================================================
-function renderFooterStrip(pageNum, text, totalPages = 24) {
+function renderFooterStrip(pageNum, text, totalPages = TOTAL_PAGE_COUNT) {
   const isEven = pageNum % 2 === 0;
   if (isEven) {
-    return `
-      <div class="page-footer-strip">
-        <span class="footer-page-num" style="margin-right: 8px;">${pageNum}/${totalPages}</span>
-        <span class="footer-quip" style="text-align: right; flex: 1;">${text}</span>
-      </div>`;
+    return (
+      '<div class="page-footer-strip">' +
+      '<span class="footer-page-num" style="margin-right: 8px;">' + pageNum + '/' + totalPages + '</span>' +
+      '<span class="footer-quip" style="text-align: right; flex: 1;">' + text + '</span>' +
+      '</div>'
+    );
   } else {
-    return `
-      <div class="page-footer-strip">
-        <span class="footer-quip" style="text-align: left; flex: 1; margin-right: 8px;">${text}</span>
-        <span class="footer-page-num">${pageNum}/${totalPages}</span>
-      </div>`;
+    return (
+      '<div class="page-footer-strip">' +
+      '<span class="footer-quip" style="text-align: left; flex: 1; margin-right: 8px;">' + text + '</span>' +
+      '<span class="footer-page-num">' + pageNum + '/' + totalPages + '</span>' +
+      '</div>'
+    );
   }
 }
 
 // ============================================================================
-// 5 DEDICATED KEY TOPIC 1 LESSON CONFIGURATIONS
+// 4 DEDICATED KEY TOPIC 1 LESSON CONFIGURATIONS (STRICT 1945–1963 SPECIFICATION)
 // ============================================================================
 const kt1Configs = [
   {
     lessonIndex: 0,
     lessonNum: 1,
-    id: 'lesson_1',
-    inquiryQuestion:
-      'Why did conflicting British wartime promises make conflict in Palestine inevitable?',
-    subTitle:
-      'Key Topic 1.1: Imperial Origins, Conflicting Promises & Mandate Tensions (1915–1945)',
-    title: 'KT1.1: Imperial Origins & Contradictory Pledges (1915–1945)',
-    specAnchor: `<strong>Conflicting interests and demands of Jews and Arabs within the British Mandate</strong>; contextualised by the McMahon-Hussein Correspondence (1915), the secret Sykes-Picot Agreement (1916), the Balfour Declaration (1917), and the 1939 British White Paper.`,
-    stages: [
-      {
-        num: 1,
-        step: 1,
-        date: '1915–1916',
-        questionHeading:
-          'Why did Arabs believe Britain promised them independent sovereignty in 1915?',
-        bullets: [
-          'Sherif Hussein of Mecca',
-          'Arab Revolt Against Ottomans',
-          'Pledge from High Commissioner',
-        ],
-        keywords: [
-          'Sherif Hussein of Mecca',
-          'Arab Revolt Against Ottomans',
-          'Pledge from High Commissioner',
-        ],
-        clue: 'Why did Arabs believe Britain promised them Palestine in 1915?',
-        title: 'The McMahon-Hussein Correspondence',
-      },
-      {
-        num: 2,
-        step: 2,
-        date: 'May 1916',
-        questionHeading: 'Why was the secret Sykes-Picot Agreement viewed as an imperial betrayal?',
-        bullets: [
-          'Dividing Arab Lands with Rulers',
-          'Direct British & French Rule',
-          'International Holy Land Zone',
-        ],
-        keywords: [
-          'Dividing Arab Lands with Rulers',
-          'Direct British & French Rule',
-          'International Holy Land Zone',
-        ],
-        clue: 'Why was the secret Sykes-Picot deal seen as an imperial betrayal?',
-        title: 'The Secret Sykes-Picot Agreement',
-      },
-      {
-        num: 3,
-        step: 3,
-        date: 'November 1917',
-        questionHeading:
-          'How did the Balfour Declaration create contradictory British commitments?',
-        bullets: [
-          'Letter to Lord Rothschild',
-          '"Jewish National Home" Pledge',
-          'Safeguarding Arab Civil Rights',
-        ],
-        keywords: [
-          'Letter to Lord Rothschild',
-          '"Jewish National Home" Pledge',
-          'Safeguarding Arab Civil Rights',
-        ],
-        clue: 'Why was the Balfour Declaration contradictory to McMahon’s pledge?',
-        title: 'The Balfour Declaration',
-      },
-      {
-        num: 4,
-        step: 4,
-        date: '1920–1936',
-        questionHeading:
-          'Why did rising Jewish immigration spark communal violence under the Mandate?',
-        bullets: [
-          'Land Purchases & Evictions',
-          '1929 Hebron & Safed Massacres',
-          'Haganah Self-Defence Force',
-        ],
-        keywords: [
-          'Land Purchases & Evictions',
-          '1929 Hebron & Safed Massacres',
-          'Haganah Self-Defence Force',
-        ],
-        clue: 'How did rising Jewish immigration spark the 1936 Arab Revolt?',
-        title: 'The British Mandate & Rising Immigration',
-      },
-      {
-        num: 5,
-        step: 5,
-        date: '1936–1939',
-        questionHeading: 'Why did the 1939 White Paper turn Zionists against British rule?',
-        bullets: [
-          '75,000 Five-Year Immigrant Cap',
-          'Arab Consent for Future Entry',
-          'Underground Bomb Attacks on Police',
-        ],
-        keywords: [
-          '75,000 Five-Year Immigrant Cap',
-          'Arab Consent for Future Entry',
-          'Underground Bomb Attacks on Police',
-        ],
-        clue: 'Why did the 1939 White Paper turn Zionists against Britain?',
-        title: 'The Arab Revolt & The 1939 White Paper',
-      },
-    ],
-    vocabPrompt:
-      'Explain the fundamental historical distinction between <strong>Zionism</strong> and <strong>Arab Nationalism</strong>. Why did both movements consider the land of Palestine their rightful national territory, and why did this make peaceful compromise under the British Mandate nearly impossible?',
-    consequenceA: {
-      question: 'Explain one consequence of the Balfour Declaration (November 1917).',
-      guidance:
-        'Identify one direct consequence (Point), support with precise factual evidence (Fact), and explain how this altered subsequent developments (Consequence).',
-      stems:
-        'One major consequence was that... • Specifically, this was evident when... • Consequently, this directly resulted in...',
-      modelAnswer:
-        'Identify a clear consequence (e.g. Arab sense of betrayal or international legitimisation of a Jewish homeland), cite specific factual detail, and explain its long-term impact on tensions in Palestine.',
-    },
-    consequenceB: {
-      question: 'Explain one consequence of the British White Paper of 1939.',
-      guidance:
-        'Identify one direct consequence (Point), support with precise factual evidence (Fact), and explain how this altered subsequent developments (Consequence).',
-      stems:
-        'One major consequence was that... • Specifically, this was evident when... • Consequently, this directly resulted in...',
-      modelAnswer:
-        'Explain how limiting Jewish immigration to 75,000 over five years alienated Jewish leaders during the Holocaust and triggered armed resistance against British rule.',
-    },
-    extendedPractice: {
-      type: 'narrative_8',
-      tariff: 'Question 2: Narrative Account [8 marks &bull; 12 mins]',
-      stem: 'Write a narrative account analysing how British wartime diplomacy and policy between 1915 and 1923 created long-term conflict in Palestine. [8 marks]',
-      stimulus: ['The McMahon-Hussein Correspondence (1915)', 'The Balfour Declaration (1917)'],
-      structureStrip: [
-        {
-          col: '1. PHASE 1: CONTRADICTORY PLEDGES',
-          text: 'Explain McMahon’s 1915 pledge to Sharif Hussein vs the 1917 Balfour Declaration pledging a Jewish national home.',
-        },
-        {
-          col: '2. PHASE 2: SECRET IMPERIAL CARVE-UP',
-          text: 'Explain the 1916 Sykes-Picot Agreement carving up Ottoman lands and Arab outrage at perceived imperial betrayal.',
-        },
-        {
-          col: '3. PHASE 3: THE MANDATE & CLASHES',
-          text: 'Explain League of Nations Mandate (1922), Churchill White Paper, and early Arab-Jewish friction in Jerusalem.',
-        },
-      ],
-      connectives:
-        'One main event was that... • For example, ... • This led directly to... • The next major development was... • In particular, ... • Overall, this culminated in... because...',
-      wordBank:
-        'McMahon-Hussein (1915) &bull; Sharif Hussein &bull; Sykes-Picot (1916) &bull; Balfour Declaration (1917) &bull; Arthur Balfour &bull; Lord Rothschild &bull; "national home" &bull; League of Nations Mandate (1922) &bull; Yishuv &bull; Arab Nationalism &bull; Jewish immigration',
-      timelineMission:
-        'Turn to Pages 2–3 (Key Topic 1.1). In Milestone 1, sketch the contradictory British pledges and the imperial boundary line separating British and French mandate zones.',
-    },
-  },
-  {
-    lessonIndex: 1,
-    lessonNum: 2,
     id: 'lesson_2',
     inquiryQuestion:
       'Why did Britain abandon its Mandate in Palestine and hand the problem to the UN?',
-    subTitle: 'Key Topic 1.2: The Collapse of the British Mandate & UN Partition (1945–1947)',
-    title: 'KT1.2: Collapse of the Mandate & UN Partition (1945–1947)',
+    subTitle: 'Key Topic 1.1: The Collapse of the British Mandate & UN Partition (1945–1947)',
+    title: 'KT1.1: Collapse of the Mandate & UN Partition (1945–1947)',
     specAnchor: `<strong>Conflicting interests and demands of Jews and Arabs within the British Mandate</strong>; <strong>Jewish insurgency</strong> (the <strong>Irgun</strong> and <strong>Lehi</strong>); the <strong>bombing of the King David Hotel (July 1946)</strong>; British economic and military exhaustion; the <strong>SS Exodus affair (1947)</strong>; and <strong>UNSCOP recommendations</strong>.`,
     stages: [
       {
@@ -382,16 +221,16 @@ const kt1Configs = [
       wordBank:
         'King David Hotel (July 1946) &bull; Irgun &bull; Menachem Begin &bull; 91 casualties &bull; British Military HQ &bull; Secretariat &bull; Clement Attlee &bull; Ernest Bevin &bull; financial cost &bull; 100,000 troops &bull; UNSCOP &bull; February 1947 handover',
       timelineMission:
-        'Turn to Pages 2–3 (Key Topic 1.2). In Milestone 2, sketch the shattered south-west wing of the King David Hotel and the barbed wire perimeter around British administrative zones.',
+        'Turn to Pages 2–3 (Key Topic 1.1). In Milestones 1 & 2, sketch the shattered south-west wing of the King David Hotel and the SS Exodus refugee ship.',
     },
   },
   {
     lessonIndex: 1,
-    lessonNum: 3,
+    lessonNum: 2,
     id: 'lesson_2_war',
     inquiryQuestion: 'How was the State of Israel established and defended during the 1948–49 War?',
-    subTitle: 'Key Topic 1.3: UN Resolution 181, Independence & The 1948–49 War (1947–1949)',
-    title: 'KT1.3: UN Resolution 181 & The 1948–49 War (1947–1949)',
+    subTitle: 'Key Topic 1.2: UN Resolution 181, Independence & The 1948–49 War (1947–1949)',
+    title: 'KT1.2: UN Resolution 181 & The 1948–49 War (1947–1949)',
     specAnchor: `<strong>UN Resolution 181 (Partition Plan, November 1947)</strong>; <strong>outbreak of civil war</strong>; <strong>the British evacuation</strong>; <strong>David Ben-Gurion’s declaration of the State of Israel (14 May 1948)</strong>; <strong>invasion by five Arab armies</strong>; <strong>the UN truces</strong>; and the <strong>1949 Armistice Agreements (Green Line)</strong>.`,
     stages: [
       {
@@ -536,18 +375,17 @@ const kt1Configs = [
       wordBank:
         'David Ben-Gurion &bull; 14 May 1948 &bull; Tel Aviv Museum &bull; Arab invasion &bull; Egypt, Jordan, Syria, Iraq, Lebanon &bull; Arab Legion &bull; Glubb Pasha &bull; June 1948 truce &bull; Count Folke Bernadotte &bull; Czech arms deal &bull; Operation Dani &bull; Operation Yoav &bull; 1949 Armistices &bull; Green Line',
       timelineMission:
-        'Turn to Pages 2–3 (Key Topic 1.3). In Milestones 3 & 4, sketch the UN Partition map divisions and the five Arab invasion routes crossing Israel’s borders.',
+        'Turn to Pages 2–3 (Key Topic 1.2). In Milestones 3 & 4, sketch the UN Partition map divisions and the five Arab invasion routes crossing Israel’s borders.',
     },
   },
   {
     lessonIndex: 2,
-    lessonNum: 4,
+    lessonNum: 3,
     id: 'lesson_3',
     inquiryQuestion:
-      'Why did the aftermath of the 1948–49 War create a permanent refugee crisis and an armed Israeli state?',
-    subTitle:
-      'Key Topic 1.4: The Refugee Crisis (Nakba), Israeli Statehood & Border Friction (1949–1955)',
-    title: 'KT1.4: The Refugee Crisis (Nakba) & New Israeli State (1948–1954)',
+      'Why did the 1948–49 War create an enduring refugee crisis and regional militarism?',
+    subTitle: 'Key Topic 1.3: The Refugee Crisis (Nakba) & The New Israeli State (1948–1954)',
+    title: 'KT1.3: The Refugee Crisis (Nakba) & New Israeli State (1948–1954)',
     specAnchor: `<strong>Territorial changes and the refugee status of approximately 700,000 Palestinian Arabs (Al-Nakba)</strong>; creation and role of <strong>UNRWA</strong>; the development of the State of Israel: the <strong>Law of Return (1950)</strong>; the <strong>creation of the Israeli Defence Forces (IDF)</strong>; the role of <strong>US financial aid</strong>; and <strong>early relations between Israel and its Arab neighbours</strong>.`,
     stages: [
       {
@@ -693,17 +531,17 @@ const kt1Configs = [
       wordBank:
         'Law of Return (1950) &bull; David Ben-Gurion &bull; Jewish diaspora &bull; Holocaust survivors &bull; Displaced Persons camps &bull; Mizrahi Jews &bull; ma’abarot (transit camps) &bull; population doubled &bull; IDF universal conscription &bull; kibbutzim border defense',
       timelineMission:
-        'Turn to Pages 2–3 (Key Topic 1.4). In Milestone 5, sketch the overcrowded UNRWA refugee tents alongside the cargo ships arriving in Haifa with Jewish immigrants.',
+        'Turn to Pages 2–3 (Key Topic 1.3). In Milestone 5, sketch the overcrowded UNRWA refugee tents alongside the cargo ships arriving in Haifa with Jewish immigrants.',
     },
   },
   {
     lessonIndex: 3,
-    lessonNum: 5,
+    lessonNum: 4,
     id: 'lesson_4',
     inquiryQuestion:
-      'Why did the nationalisation of the Suez Canal trigger an international crisis in 1956?',
-    subTitle: 'Key Topic 1.5: Nasser, Border Tension, the Gaza Raid & The Suez Crisis (1955–1963)',
-    title: 'KT1.5: Nasser, Border Tension & The 1956 Suez Crisis (1955–1958)',
+      'Why did Gamal Abdel Nasser’s nationalisation of the Suez Canal trigger international war in 1956?',
+    subTitle: 'Key Topic 1.4: Nasser, Border Tension & The 1956 Suez Crisis (1955–1958)',
+    title: 'KT1.4: Nasser, Border Tension & The 1956 Suez Crisis (1955–1958)',
     specAnchor: `<strong>Gamal Abdel Nasser and Egypt’s leadership of the Arab world</strong>; cross-border fedayeen raids; the <strong>Israeli raid on Gaza (Feb 1955)</strong>; the <strong>Czech arms deal (1955)</strong>; the <strong>nationalisation of the Suez Canal (July 1956)</strong>; the <strong>secret Protocol of Sèvres</strong>; the <strong>Sinai campaign</strong>; <strong>US and Soviet intervention</strong>; and the <strong>creation of the United Arab Republic (1958)</strong>.`,
     stages: [
       {
@@ -849,7 +687,7 @@ const kt1Configs = [
       wordBank:
         'Gamal Abdel Nasser &bull; Aswan High Dam &bull; nationalisation &bull; 26 July 1956 &bull; Anthony Eden &bull; Protocol of Sèvres &bull; Operation Musketeer &bull; Sinai Peninsula &bull; Port Said paratroopers &bull; Dwight D. Eisenhower &bull; oil sanctions &bull; run on the pound &bull; UN Emergency Force (UNEF) &bull; United Arab Republic (1958)',
       timelineMission:
-        'Turn to Pages 2–3 (Key Topic 1.5). In Milestone 6, sketch the nationalised Suez Canal waterway and the British paratroopers landing at Port Said under US diplomatic pressure.',
+        'Turn to Pages 2–3 (Key Topic 1.4). In Milestone 6, sketch the tripartite causal flowchart: Israeli Sinai strike → Anglo-French canal landing → US economic ultimatum.',
     },
   },
 ];
@@ -916,8 +754,8 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
     .spine-notes-container {
       display: flex;
       flex-direction: column;
-      gap: 2.2mm;
-      margin-top: 1.5mm;
+      gap: 1.5mm;
+      margin-top: 1.0mm;
       flex: 1;
     }
     .spine-stage-block {
@@ -928,16 +766,16 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
       overflow: hidden;
     }
     .stage-banner {
-      background: #000;
-      color: #fff;
+      background: #ffffff;
+      color: #000000;
       font-family: 'Cinzel', 'Times New Roman', serif;
-      font-size: 7.5pt;
-      font-weight: 700;
-      padding: 1.2mm 2mm;
+      font-size: 7.8pt;
+      font-weight: 900;
+      padding: 1.0mm 2mm;
       display: flex;
       align-items: center;
       gap: 1.8mm;
-      border-bottom: 1px solid #000;
+      border-bottom: 1.4px solid #000000;
       letter-spacing: 0.1px;
     }
     .stage-banner .stage-badge {
@@ -953,7 +791,7 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
     .stage-content-row {
       display: flex;
       flex-direction: row;
-      min-height: 38mm;
+      min-height: 38.5mm;
     }
     .stage-trigger-col {
       width: 26mm;
@@ -986,13 +824,21 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
       box-sizing: border-box;
     }
     .ruled-line {
-      height: 6.33mm;
-      border-bottom: 0.5px solid #000000;
+      height: 7.8mm;
+      border-bottom: 0.8px solid #000000;
       box-sizing: border-box;
     }
     .ruled-line:last-child {
       border-bottom: none;
     }
+    /* Task Line Rule for Consequence Boxes */
+    .task-line {
+      border-bottom: 1.2px solid #000000;
+      height: 8.0mm;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
     /* Clean Lined Paper Grid for Extended Writing Pages (8mm margin, thick 1.5px black lines for photocopying) */
     .lined-page-grid {
       display: flex;
@@ -1124,7 +970,7 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
       heightMm: 100,
     },
     footerQuip: approvedFunnyFooters[0],
-    totalPageCount: 24,
+    totalPageCount: TOTAL_PAGE_COUNT,
     renderFooterStrip,
   });
 
@@ -1138,87 +984,87 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
       <div>
         <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 5px;">
           <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-size: 11pt; color: #000000; text-transform: uppercase; font-weight: 800;">
-            Living Timeline &bull; Part 1: Imperial Pledges, Insurgency &amp; Partition (1917–1947)
+            Living Timeline &bull; Part 1: Insurgency, UN Partition &amp; War (1945–1947)
           </h2>
         </div>
 
         <div style="border-bottom: 1px solid #000000; padding-bottom: 3px; margin-bottom: 6px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
-          <strong>Living Timeline Protocol:</strong> Throughout this unit, illustrate each historical milestone inside its dedicated sketchpad box below. Use the dual-coding prompt to combine symbolic diagrams, causal arrows, and key dates.
+          <strong>Living Timeline Protocol:</strong> Complete each milestone canvas below. Choose either <strong>(A) Creative Sketch:</strong> draw historical symbols, causal arrows, and dramatic scenes; OR <strong>(B) Mind Map:</strong> create a central concept bubble with key factual anchors.
         </div>
       </div>
 
-      <!-- 3 Spacious Milestones with Large Blank Dual-Coding Workspace -->
-      <div style="display: flex; flex-direction: column; gap: 6px; flex: 1; justify-content: space-between;">
+      <!-- 3 Spacious Milestones with Open Dual-Coding & Mindmapping Canvases -->
+      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
 
-        <!-- Milestone 1: NOV 1917 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <!-- Milestone 1: JULY 1946 -->
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
-                NOV 1917 &bull; The Balfour Declaration &amp; Contradictory British Promises
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
+                JULY 1946 &bull; The Bombing of the King David Hotel, Jerusalem
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 1.1</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 1.1</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
-              British Foreign Secretary Arthur Balfour writes to Lord Rothschild promising British support for the establishment of a "national home for the Jewish people" in Palestine. This directly contradicts Britain’s 1915 pledge to Sharif Hussein of Mecca and the secret 1916 Sykes-Picot Agreement dividing the Middle East with France.
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
+              Disguised as milkmen, militants from the Zionist paramilitary group Irgun, led by Menachem Begin, detonate 350kg of explosives in the basement of the King David Hotel. The blast collapses the entire south-west wing housing British military headquarters, killing 91 British, Arab, and Jewish staff and proving Palestine is ungovernable.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch a balance scale weighing Balfour's letter (1917) against the McMahon-Hussein pledge (1915), or map the Sykes-Picot partition line.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch the hotel facade &amp; milk churn blast wave, OR mindmap 3 reasons Palestine became ungovernable.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
-        <!-- Milestone 2: JULY 1946 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <!-- Milestone 2: JULY 1947 -->
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
-                JULY 1946 &bull; The Bombing of the King David Hotel, Jerusalem
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
+                JULY 1947 &bull; The SS Exodus Affair &amp; Surrender to the UN
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 1.2</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 1.1</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
-              Disguised as milkmen, militants from the Zionist paramilitary group Irgun, led by Menachem Begin, detonate 350kg of explosives in the basement of the King David Hotel. The blast collapses the entire south-west wing housing British military headquarters, killing 91 British, Arab, and Jewish staff.
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
+              Royal Navy warships intercept the refugee ship SS Exodus carrying 4,500 Holocaust survivors off Haifa and forcibly return them to displaced persons camps in Germany. The resulting global PR disaster outrages US President Truman, exhausts British resolve, and leads Foreign Secretary Ernest Bevin to surrender the Mandate to UNSCOP and the United Nations.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch the hotel facade with milk churn explosives in the basement, an outward blast wave, and Irgun's paramilitary emblem.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch the SS Exodus flanked by Royal Navy destroyers, OR map the international PR backlash and UN referral.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
         <!-- Milestone 3: NOV 1947 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 2px 0;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 NOV 1947 &bull; UN Resolution 181 (The Palestine Partition Plan)
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 1.3</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 1.2</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               The United Nations General Assembly votes 33 to 13 to terminate the British Mandate and partition Palestine into separate Arab and Jewish states, with Jerusalem placed under international United Nations trusteeship. The Jewish Agency accepts; all Arab nations reject the plan, triggering civil war.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch an outline map showing the partitioned Arab (43%) and Jewish (56%) zones, with Jerusalem under a UN emblem.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch the partitioned Arab (43%) &amp; Jewish (56%) map zones, OR map the contrasting Arab/Jewish reactions.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
       </div>
 
-      ${renderFooterStrip(2, approvedFunnyFooters[1], 24)}
+      ${renderFooterStrip(2, approvedFunnyFooters[1], TOTAL_PAGE_COUNT)}
     </div>
   </div>
 
@@ -1233,88 +1079,88 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         </div>
 
         <div style="border-bottom: 1px solid #000000; padding-bottom: 3px; margin-bottom: 6px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
-          <strong>Living Timeline Protocol:</strong> Complete each milestone sketchpad using dual-coding (combining visual symbols, causal arrows, and dates) to master the chronological spine.
+          <strong>Living Timeline Protocol:</strong> Complete each milestone canvas below. Choose either <strong>(A) Creative Sketch:</strong> draw historical symbols, causal arrows, and dramatic scenes; OR <strong>(B) Mind Map:</strong> create a central concept bubble with key factual anchors.
         </div>
       </div>
 
-      <!-- 3 Spacious Milestones with Large Blank Dual-Coding Workspace -->
-      <div style="display: flex; flex-direction: column; gap: 6px; flex: 1; justify-content: space-between;">
+      <!-- 3 Spacious Milestones with Open Dual-Coding & Mindmapping Canvases -->
+      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
 
         <!-- Milestone 4: MAY 1948 – 1949 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 MAY 1948 &bull; Declaration of Independence &amp; The 1948–49 Arab-Israeli War
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 1.3</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 1.2</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               On 14 May 1948, David Ben-Gurion proclaims the State of Israel as British forces complete their evacuation. The next day, five Arab states (Egypt, Transjordan, Syria, Iraq, Lebanon) invade. Israel survives initial assaults, re-arms during the June UN truce via Czechoslovakia, and signs armistices along the 1949 Green Line.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch Ben-Gurion declaring statehood beneath the Star of David, with 5 converging Arab invasion arrows repelled to the 1949 Green Line.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch Ben-Gurion declaring statehood beneath Star of David, OR map the 5 Arab invasion arrows repelled to Green Line.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
         <!-- Milestone 5: 1948–1950 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 1948–1950 &bull; The Palestinian Refugee Crisis (Al-Nakba) &amp; Law of Return
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 1.4</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 1.3</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Approximately 700,000 Palestinian Arabs are displaced into permanent exile (Al-Nakba), supported by the newly formed UNRWA in Gaza, the West Bank, Lebanon, and Syria. Simultaneously, Israel passes the 1950 Law of Return, absorbing over 680,000 Holocaust survivors and Mizrahi Jewish refugees from Arab lands.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch a split diagram: Palestinian refugee tents / UNRWA ration cards (left) vs immigrant ships arriving under the 1950 Law of Return (right).</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch split diagram: Palestinian refugee tents / UNRWA ration cards vs immigrant ships under 1950 Law of Return.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
         <!-- Milestone 6: OCT–NOV 1956 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 2px 0;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 OCT–NOV 1956 &bull; The Suez Crisis &amp; The Protocol of Sèvres
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 1.5</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 1.4</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Following Nasser’s nationalisation of the Suez Canal, Britain, France, and Israel secretly sign the Protocol of Sèvres. Israel invades the Sinai on 29 October; Britain and France intervene to "separate the combatants" and seize the canal. US financial ultimatums force a humiliating Anglo-French withdrawal, leaving UNEF peacekeepers in Sinai.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch a tripartite causal flowchart: Israeli Sinai strike &rarr; Anglo-French canal landing &rarr; US economic ultimatum forcing withdrawal.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch tripartite causal flowchart: Israeli Sinai strike &rarr; Anglo-French canal landing &rarr; US ultimatum.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
       </div>
 
-      ${renderFooterStrip(3, approvedFunnyFooters[2], 24)}
+      ${renderFooterStrip(3, approvedFunnyFooters[2], TOTAL_PAGE_COUNT)}
     </div>
   </div>
 `;
 
   // ====================================================================
-  // PAGES 4–23: 5 DEDICATED FOUR-PAGE ENQUIRY SPREADS (2 SPANNING SPREADS PER LESSON)
+  // PAGES 4–19: 4 DEDICATED FOUR-PAGE ENQUIRY SPREADS (2 SPANNING SPREADS PER LESSON)
   // ====================================================================
   kt1Configs.forEach((cfg) => {
     const leftPageNum = 4 + (cfg.lessonNum - 1) * 4; // Spread 1 Left (Verso): Chronological Spine + Vocab
@@ -1346,11 +1192,6 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         <div style="font-family: 'Georgia', serif; font-size: 7.8pt; font-style: italic; color: #222222; line-height: 1.18;">
           ${cfg.subTitle}
         </div>
-      </div>
-
-      <!-- Key Specification Focus -->
-      <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; padding: 2px 6px; background: #f8fafc; margin-bottom: 2px; font-family: 'Inter', sans-serif; font-size: 7.8pt; line-height: 1.2;">
-        <strong>Key Specification Focus:</strong> ${cfg.specAnchor}
       </div>
 
       <!-- Chronological Lesson Spine (Down the Left) with Pupil Note-Taking Canvas -->
@@ -1386,7 +1227,6 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
                 <div class="ruled-line"></div>
                 <div class="ruled-line"></div>
                 <div class="ruled-line"></div>
-                <div class="ruled-line"></div>
               </div>
             </div>
           </div>
@@ -1396,7 +1236,7 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
       </div>
 
       <!-- Key Vocabulary (Core Disciplinary Distinction) -->
-      ${renderFooterStrip(leftPageNum, approvedFunnyFooters[leftPageNum - 1], 24)}
+      ${renderFooterStrip(leftPageNum, approvedFunnyFooters[leftPageNum - 1], TOTAL_PAGE_COUNT)}
     </div>
   </div>
 
@@ -1412,10 +1252,10 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         </h2>
       </div>
 
-      <!-- 32 Ruled Lines with 8mm Left Margin (Tighter Line Spacing) -->
+      <!-- 31 Ruled Lines with 8mm Left Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1;">
         ${Array.from(
-          { length: 32 },
+          { length: 31 },
           () => `
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
@@ -1424,7 +1264,7 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         ).join('')}
       </div>
 
-      ${renderFooterStrip(rightPageNum, approvedFunnyFooters[rightPageNum - 1], 24)}
+      ${renderFooterStrip(rightPageNum, approvedFunnyFooters[rightPageNum - 1], TOTAL_PAGE_COUNT)}
     </div>
   </div>
 
@@ -1461,11 +1301,10 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         <div style="font-family: 'Inter', sans-serif; font-size: 7.3pt; font-weight: 700; margin-bottom: 2px;">
           <strong>Sentence Stems:</strong> One major consequence was that... &bull; Specifically, this was evident when... &bull; Consequently, this directly resulted in... / altered relations because...
         </div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
       </div>
 
       <!-- Section 2: Extended Exam Practice (Q2 Narrative [8m] or Q3 Importance [8m]) -->
@@ -1512,23 +1351,17 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         .join('')}
         </div>
 
-        <!-- Row 3: Accessible Sentence Starters & Key Vocabulary Bank -->
-        <div style="padding: 2.5px 6px; background: #ffffff; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 8px;">
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Sentence Starters:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-style: italic; color: #222222; line-height: 1.15; display: block;">${rx.connectives || rx.causalConnectives}</span>
-          </div>
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Key Vocabulary Bank:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; color: #222222; line-height: 1.15; display: block;">${rx.wordBank}</span>
-          </div>
+        <!-- Row 3: Accessible Sentence Starters / Analytical Connectives -->
+        <div style="padding: 2.5px 6px; background: #ffffff;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">${rx.connectives || rx.causalConnectives}</span>
         </div>
       </div>
 
-      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Tighter Line Spacing) -->
+      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin: 2px 0 2px 0;">
         ${Array.from(
-          { length: 21 },
+          { length: 19 },
           () => `
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
@@ -1537,7 +1370,7 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         ).join('')}
       </div>
 
-      ${renderFooterStrip(linedLeftPageNum, approvedFunnyFooters[linedLeftPageNum - 1], 24)}
+      ${renderFooterStrip(linedLeftPageNum, approvedFunnyFooters[linedLeftPageNum - 1], TOTAL_PAGE_COUNT)}
     </div>
   </div>
 
@@ -1553,10 +1386,10 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         </h2>
       </div>
 
-      <!-- 26 Ruled Response Lines with 8mm Margin (Tighter Line Spacing) -->
+      <!-- 30 Ruled Response Lines with 8mm Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin-bottom: 3px;">
         ${Array.from(
-          { length: 28 },
+          { length: 30 },
           () => `
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
@@ -1575,14 +1408,14 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         </div>
       </div>
 
-      ${renderFooterStrip(linedRightPageNum, approvedFunnyFooters[linedRightPageNum - 1], 24)}
+      ${renderFooterStrip(linedRightPageNum, approvedFunnyFooters[linedRightPageNum - 1], TOTAL_PAGE_COUNT)}
     </div>
   </div>
 `;
   });
 
   // ====================================================================
-  // PAGE 24: OUTSIDE BACK COVER (Student Assessment Record & Digital Quizzing Hub)
+  // PAGE 20: OUTSIDE BACK COVER (Student Assessment Record & Digital Quizzing Hub)
   // ====================================================================
   html += renderStandardBackCover({
     unitId: 'cme_new',
@@ -1595,17 +1428,6 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
       {
         num: 1,
         code: 'KT1.1',
-        title: 'Imperial Origins & Promises',
-        doNowMarks: 10,
-        q1aMarks: 4,
-        q1bMarks: 4,
-        extType: 'Q2',
-        extMarks: 8,
-        totalMarks: 26,
-      },
-      {
-        num: 2,
-        code: 'KT1.2',
         title: 'Mandate Collapse & King David',
         doNowMarks: 10,
         q1aMarks: 4,
@@ -1615,8 +1437,8 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         totalMarks: 26,
       },
       {
-        num: 3,
-        code: 'KT1.3',
+        num: 2,
+        code: 'KT1.2',
         title: 'UN Res 181 & The 1948–49 War',
         doNowMarks: 10,
         q1aMarks: 4,
@@ -1626,8 +1448,8 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         totalMarks: 26,
       },
       {
-        num: 4,
-        code: 'KT1.4',
+        num: 3,
+        code: 'KT1.3',
         title: 'Nakba & The Law of Return',
         doNowMarks: 10,
         q1aMarks: 4,
@@ -1637,8 +1459,8 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         totalMarks: 26,
       },
       {
-        num: 5,
-        code: 'KT1.5',
+        num: 4,
+        code: 'KT1.4',
         title: 'Nasser & The 1956 Suez Crisis',
         doNowMarks: 10,
         q1aMarks: 4,
@@ -1654,28 +1476,24 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
     },
     qrLessons: [
       {
-        label: 'KT 1.1: Imperial Pledges',
-        url: `https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=0`,
+        label: 'KT 1.1: Mandate Collapse',
+        url: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=1',
       },
       {
-        label: 'KT 1.2: Mandate Collapse',
-        url: `https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=1`,
+        label: 'KT 1.2: UN 181 & 1948 War',
+        url: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=2',
       },
       {
-        label: 'KT 1.3: UN 181 & 1948 War',
-        url: `https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=2`,
+        label: 'KT 1.3: Nakba & Statehood',
+        url: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=3',
       },
       {
-        label: 'KT 1.4: Nakba & Statehood',
-        url: `https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=3`,
-      },
-      {
-        label: 'KT 1.5: Nasser & Suez 1956',
-        url: `https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=4`,
+        label: 'KT 1.4: Nasser & Suez 1956',
+        url: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=4',
       },
     ],
-    footerQuip: approvedFunnyFooters[23],
-    totalPageCount: 24,
+    footerQuip: approvedFunnyFooters[19],
+    totalPageCount: TOTAL_PAGE_COUNT,
     renderFooterStrip,
   });
 

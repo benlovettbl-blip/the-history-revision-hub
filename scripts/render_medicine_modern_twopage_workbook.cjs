@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
-const { renderStandardFrontCover } = require('./components/render_standard_cover.cjs');
+const { renderStandardFrontCover, renderStandardBackCover } = require('./components/render_standard_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -142,9 +142,9 @@ const modernConfigs = [
         questionHeading: 'Why did doctors assume proteins carried hereditary traits?',
         paraBadge: '[1.1]',
         bullets: [
-          'Growing wrinkled green garden peas',
-          'Spotting dark rod shapes inside cells',
-          'Assuming heavy protein chains hold secrets',
+          'Gregor Mendel peas',
+          'Chromosomes observed',
+          'Hereditary protein theory',
         ],
       },
       {
@@ -154,9 +154,9 @@ const modernConfigs = [
         questionHeading: 'How did Photograph 51 prove DNA’s helical structure?',
         paraBadge: '[1.2]',
         bullets: [
-          'Beaming invisible rays through wet DNA fibers',
-          'Exposing glass photographic plates for sixty hours',
-          'Revealing clear fuzzy X-shaped shadow marks',
+          'Rosalind Franklin',
+          'X-ray crystallography',
+          'Photograph 51 (1952)',
         ],
       },
       {
@@ -166,9 +166,9 @@ const modernConfigs = [
         questionHeading: 'How did base pairing explain hereditary replication?',
         paraBadge: '[1.3]',
         bullets: [
-          'Twisting thin metal wire into spirals',
-          'Locking four chemical pairs like puzzle pieces',
-          'Rushing to celebratory pints at The Eagle pub',
+          'Watson & Crick model',
+          'Double helix structure',
+          'DNA base pairing',
         ],
       },
       {
@@ -178,9 +178,9 @@ const modernConfigs = [
         questionHeading: 'Why was mapping 3 billion base pairs a medical milestone?',
         paraBadge: '[1.4]',
         bullets: [
-          'Linking laboratory supercomputers across six nations',
-          'Reading three billion chemical letters in blood',
-          'Publishing complete human code free online',
+          'Human Genome Project',
+          'Mapped 3bn base pairs',
+          'International teamwork',
         ],
       },
       {
@@ -190,9 +190,9 @@ const modernConfigs = [
         questionHeading: 'Why did understanding causes outpace finding cures?',
         paraBadge: '[1.5]',
         bullets: [
-          'Testing saliva drops for faulty breast genes',
-          'Matching targeted pills to personal body code',
-          'Struggling to fix broken genetic code inside bodies',
+          'Genetic screening',
+          'BRCA1/2 gene testing',
+          'Gene therapy lag',
         ],
       },
     ],
@@ -241,9 +241,9 @@ const modernConfigs = [
         questionHeading: 'How did X-rays transform surgical trauma diagnosis in WWI?',
         paraBadge: '[2.1]',
         bullets: [
-          'Photographing wife Bertha’s hand and gold wedding ring',
-          'Driving mobile medical vans to muddy trenches',
-          'Finding jagged lead shrapnel without deep cuts',
+          'Wilhelm Röntgen (1895)',
+          'Marie Curie mobile vans',
+          'Shrapnel detection',
         ],
       },
       {
@@ -253,9 +253,9 @@ const modernConfigs = [
         questionHeading: 'Why was fiber-optic endoscopy superior to exploratory surgery?',
         paraBadge: '[2.2]',
         bullets: [
-          'Spinning red test tubes in fast centrifuges',
-          'Counting abnormal white cells on glass slides',
-          'Sliding flexible glass cables down throat tubes',
+          'Blood tests & typing',
+          'Centrifuges & biopsy',
+          'Fiber-optic endoscopes',
         ],
       },
       {
@@ -265,9 +265,9 @@ const modernConfigs = [
         questionHeading: 'Why did CT scans transform internal soft-tissue diagnosis?',
         paraBadge: '[2.3]',
         bullets: [
-          'Spinning heavy donut scanners around hospital beds',
-          'Combining computer pictures into 3D body slices',
-          'Using magnetic radio waves to find brain lumps',
+          'Godfrey Hounsfield (1971)',
+          'EMI CT body scanning',
+          'MRI magnetic imaging',
         ],
       },
       {
@@ -277,9 +277,9 @@ const modernConfigs = [
         questionHeading: 'What drove the shift from infectious to lifestyle diseases?',
         paraBadge: '[2.4]',
         bullets: [
-          'Banishing deadly childhood fevers with wonder drugs',
-          'People living past seventy years of age',
-          'Rising chest tumours and clogged heart arteries',
+          'Antibiotics curb fevers',
+          'Higher life expectancy',
+          'Cancers & heart disease',
         ],
       },
       {
@@ -289,9 +289,9 @@ const modernConfigs = [
         questionHeading: 'Why do governments favour lifestyle prevention over treatment?',
         paraBadge: '[2.5]',
         bullets: [
-          'Clicking compulsory car seatbelts across chests',
-          'Extinguishing glowing cigarettes outside pub doors',
-          'Taxing sugary fizzy cans and advertising fruit',
+          '1983 Seatbelt legislation',
+          '2007 Public smoking ban',
+          'Sugar tax & Change4Life',
         ],
       },
     ],
@@ -340,9 +340,9 @@ const modernConfigs = [
         questionHeading: 'Why was Salvarsan 606 termed the first "magic bullet"?',
         paraBadge: '[3.1]',
         bullets: [
-          'Testing hundreds of toxic yellow arsenic mixtures',
-          'Hunting chemical bullets that only hit germs',
-          'Curing deadly human syphilis with magic bullet',
+          'Paul Ehrlich research',
+          'Magic bullet concept',
+          'Salvarsan 606 (1909)',
         ],
       },
       {
@@ -352,9 +352,9 @@ const modernConfigs = [
         questionHeading: 'How did Prontosil prove synthetic drugs could kill microbes?',
         paraBadge: '[3.2]',
         bullets: [
-          'Injecting bright red leather dye into mice',
-          'Saving sick daughter from arm-amputation death',
-          'Discovering active white sulfa medicine powder',
+          'Gerhard Domagk (1932)',
+          'Prontosil red dye',
+          'Sulfa drug revolution',
         ],
       },
       {
@@ -364,9 +364,9 @@ const modernConfigs = [
         questionHeading: 'How did WWII unity create momentum for state healthcare?',
         paraBadge: '[3.3]',
         bullets: [
-          'Listing Five Giants that crush poor workers',
-          'Surviving Nazi air bombs with community spirit',
-          'Demanding free medical care for every citizen',
+          '1942 Beveridge Report',
+          'Five Giant Evils',
+          'Post-war welfare state',
         ],
       },
       {
@@ -376,9 +376,9 @@ const modernConfigs = [
         questionHeading: 'How did Bevan compromise to persuade resistant doctors?',
         paraBadge: '[3.4]',
         bullets: [
-          'Offering private bed perks to stubborn doctors',
-          'Delivering free spectacles and dentures to families',
-          'Abolishing terrifying doctor bills forever',
+          'Aneurin Bevan (1948)',
+          'BMA doctor compromise',
+          'Free universal healthcare',
         ],
       },
       {
@@ -388,9 +388,9 @@ const modernConfigs = [
         questionHeading: 'Why has modern medical success created financial strain?',
         paraBadge: '[3.5]',
         bullets: [
-          'Pumping blood through giant artificial kidney filters',
-          'Replacing worn hip joints with metal balls',
-          'Charging small fees for paper medicine slips',
+          'Kidney dialysis units',
+          'Hip replacement surgery',
+          'Rising NHS cost pressures',
         ],
       },
     ],
@@ -439,9 +439,9 @@ const modernConfigs = [
         questionHeading: 'Why could Fleming not turn mould into a clinical medicine?',
         paraBadge: '[4.1]',
         bullets: [
-          'Finding fluffy mould on dirty glass dish',
-          'Golden germs dissolving in clear circle halos',
-          'Failing to separate fragile liquid juice',
+          'Alexander Fleming (1928)',
+          'Penicillium notatum mould',
+          'Staphylococcus halo',
         ],
       },
       {
@@ -451,9 +451,9 @@ const modernConfigs = [
         questionHeading: 'How did Norman Heatley solve the purification challenge?',
         paraBadge: '[4.2]',
         bullets: [
-          'Brewing fungus inside hospital bedpans and milk churns',
-          'Winning American dollar grants during air raids',
-          'Freezing brown liquid into precious yellow crystals',
+          'Florey & Chain (Oxford)',
+          'Norman Heatley apparatus',
+          'Freeze-drying extract',
         ],
       },
       {
@@ -463,9 +463,9 @@ const modernConfigs = [
         questionHeading: 'Why was Alexander’s trial both a success and a tragedy?',
         paraBadge: '[4.3]',
         bullets: [
-          'Infecting eight mice and keeping treated four alive',
-          "Scraping rose thorn scratches on policeman's face",
-          'Running out of drops before patient recovers',
+          '1940 Lethal mice trial',
+          'Albert Alexander (1941)',
+          'Supply exhaustion death',
         ],
       },
       {
@@ -475,9 +475,9 @@ const modernConfigs = [
         questionHeading: 'How did US industrial fermentation enable mass production?',
         paraBadge: '[4.4]',
         bullets: [
-          'Feeding corn beer wash to rotting melon mould',
-          'Pumping sterile air through giant ten-thousand-gallon vats',
-          'Brewing million doses for D-Day landing craft',
+          'Peoria, Illinois lab',
+          'Corn-steep liquor vats',
+          '2.3m D-Day doses',
         ],
       },
       {
@@ -487,9 +487,9 @@ const modernConfigs = [
         questionHeading: 'Why did Fleming warn that antibiotic overuse causes resistance?',
         paraBadge: '[4.5]',
         bullets: [
-          "Spraying white powder directly into torn soldiers' limbs",
-          'Three scientists sharing golden Nobel prize medal',
-          'Overusing capsules creating tough hospital superbugs',
+          'Allied troop survival',
+          '1945 Nobel Prize',
+          'MRSA superbug threat',
         ],
       },
     ],
@@ -541,9 +541,9 @@ const modernConfigs = [
         questionHeading: 'Why did early doctors fail to link smoking to lung cancer?',
         paraBadge: '[5.1]',
         bullets: [
-          'Men coughing black blood into hospital basins',
-          'Blaming smelly road tarmac and lorry exhaust fumes',
-          'Colourful billboards showing smiling smoking doctors',
+          'Rising lung tumours',
+          'Tarmac & fume theories',
+          'Doctor cigarette adverts',
         ],
       },
       {
@@ -553,9 +553,9 @@ const modernConfigs = [
         questionHeading: 'How did statistical epidemiology prove the causal link?',
         paraBadge: '[5.2]',
         bullets: [
-          'Interviewing sick patients across twenty London wards',
-          'Tracking forty thousand real family doctors over years',
-          'Proving heavy smokers face fifty-times higher risk',
+          'Richard Doll & Austin Hill',
+          'British Doctors Study',
+          'Statistical proof (1950)',
         ],
       },
       {
@@ -565,9 +565,9 @@ const modernConfigs = [
         questionHeading: 'Why did government action encounter strong tobacco lobbying?',
         paraBadge: '[5.3]',
         bullets: [
-          'Banning glowing cigarette commercials on evening television',
-          'Printing bold black warning text on cardboard cartons',
-          'Sponsoring fast racing cars to keep brands famous',
+          '1962 RCP medical report',
+          '1965 TV ad ban',
+          'Cigarette packet warnings',
         ],
       },
       {
@@ -577,9 +577,9 @@ const modernConfigs = [
         questionHeading: 'Why was passive smoking crucial in banning public smoking?',
         paraBadge: '[5.4]',
         bullets: [
-          'Breathing toxic secondhand smoke in crowded rooms',
-          'Padlocking pub ashtrays and stepping outside into cold',
-          'Raising legal counter buying age to eighteen',
+          'Secondhand smoke risk',
+          '2007 Public smoking ban',
+          'Sales age raised to 18',
         ],
       },
       {
@@ -589,9 +589,9 @@ const modernConfigs = [
         questionHeading: 'Why does low cancer survival prove prevention beats cure?',
         paraBadge: '[5.5]',
         bullets: [
-          'Selling plain ugly mud-green packets with graphic photos',
-          'Guiding tiny robotic camera pincers between chest ribs',
-          'Boosting immune soldier cells to attack hidden tumours',
+          '2016 Plain packaging',
+          'CT chest screenings',
+          'Targeted immunotherapy',
         ],
       },
     ],
@@ -604,59 +604,55 @@ function renderSpinePage(cfg) {
 
   const stagesHtml = stages
     .map((st, sIdx) => {
-      const bulletsHtml = st.bullets
+      const bullets = st.bullets || (st.keywords ? st.keywords.slice(0, 3) : []);
+      const bulletsHtml = bullets
         .map(
           (b, idx) => `
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ${idx < 2 ? 'border-bottom: 0.8px solid #000000;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">${b}</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
               </div>
             </div>`,
         )
         .join('');
 
       const questionText = st.questionHeading || st.focusClue || st.title;
-      const paraBadge = st.paraBadge || `[${lessonNum}.${sIdx + 1}]`;
 
       return `
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
           <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 2px 7px; display: flex; align-items: center; border-bottom: 1.2px solid #000000; min-height: 20px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; padding: 0.6px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 ${st.step || sIdx + 1}
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 800; color: #ffffff; white-space: nowrap; flex-shrink: 0;">
-                ${st.dates}
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
+                ${st.dates || st.date}
               </span>
-              <span style="color: #ffffff; font-size: 7.5pt; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; letter-spacing: -0.1px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 ${questionText}
               </span>
             </div>
-            <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 900; padding: 0.5px 5px; border-radius: 2px; margin-left: 6px; white-space: nowrap; flex-shrink: 0;">
-              ${paraBadge}
-            </span>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col" style="width: 26mm; flex-shrink: 0; background: #f8fafc; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
               ${bulletsHtml}
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
@@ -684,11 +680,6 @@ function renderSpinePage(cfg) {
         <h2 style="font-family: 'Playfair Display', serif; font-size: 12.2pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.2;">
           ${enquiryQuestion}
         </h2>
-      </div>
-
-      <!-- Core Specification Focus Strip -->
-      <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; padding: 2.5px 7px; background: #ffffff; margin-bottom: 2px; font-family: 'Inter', sans-serif; font-size: 8.4pt; line-height: 1.26; color: #000000;">
-        <strong style="color: #000000;">Core Specification Focus:</strong> ${specAnchor}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -800,6 +791,22 @@ function buildModernTwoPageWorkbook(unitData, period) {
       width: 100%;
       box-sizing: border-box;
       margin: 0;
+    }
+    .stage-writing-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #ffffff;
+      box-sizing: border-box;
+    }
+    .ruled-line {
+      height: 8.2mm;
+      border-bottom: 0.8px solid #000000;
+      box-sizing: border-box;
+    }
+    .ruled-line:last-child {
+      border-bottom: none;
     }
     .page-footer-strip {
       display: flex;
@@ -1054,16 +1061,10 @@ function buildModernTwoPageWorkbook(unitData, period) {
           </div>
         </div>
 
-        <!-- Accessible Writing Frames & Key Vocabulary Bank (High-Legibility 8.2pt Font) -->
-        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 5px 8px; background: #ffffff; margin-bottom: 4px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 800; text-transform: uppercase; display: block; margin-bottom: 2px; color: #000000;">Accessible Writing Frames:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-style: italic; line-height: 1.32; display: block; color: #111111;">${cfg.connectives}</span>
-          </div>
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 800; text-transform: uppercase; display: block; margin-bottom: 2px; color: #000000;">Key Vocabulary Bank:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; line-height: 1.32; display: block; color: #111111;">${cfg.wordBank}</span>
-          </div>
+        <!-- Analytical Connectives (Full Width Scaffolding Standard) -->
+        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 2.5px 6px; background: #ffffff; margin-bottom: 3px;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">${cfg.connectives}</span>
         </div>
 
         <!-- Ruled Task Lines Prompt -->
@@ -1169,313 +1170,38 @@ ${part1TaskLines}
   );
 
   // ====================================================================
-  // PAGE 20: OUTSIDE BACK COVER
+  // PAGE 20: MASTER BACK COVER (Student Assessment Record & Digital Quizzing Hub)
   // ====================================================================
+  const modernEnquiries = modernConfigs.map((cfg, idx) => ({
+    num: cfg.lessonNum,
+    code: `KT4.${cfg.lessonNum}`,
+    title: cfg.title.replace(/^KT\d+\.\d+:\s*/, ''),
+    doNowMarks: 10,
+    q3Marks: 4,
+    extType: idx === 4 ? 'Q5/6 Essay' : 'Q4 Explain',
+    extMarks: idx === 4 ? 20 : 12,
+    totalMarks: idx === 4 ? 34 : 26,
+  }));
+
+  const modernQrLessons = modernConfigs.map((cfg) => ({
+    label: `KT 4.${cfg.lessonNum}`,
+    url: `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`,
+  }));
+
+  html += renderStandardBackCover({
+    unitId: 'edexcel_medicine',
+    paperTitle: 'EDEXCEL GCSE (9–1) HISTORY • PAPER 1: MEDICINE IN BRITAIN, C1250–PRESENT',
+    keyTopicNum: 4,
+    trackerTitle: 'Student Assessment Record &bull; Key Topic 4 Tracker',
+    trackerSubtitle: 'Paper 1: Medicine in Britain, c1250–present &bull; Modern Britain (c1900–present)',
+    enquiries: modernEnquiries,
+    qrLessons: modernQrLessons,
+    footerQuip: 'Retain this student assessment record for parent consultations and GCSE revision monitoring.',
+    totalPageCount: 20,
+    renderFooterStrip,
+  });
+
   html += `
-  <div class="page page-container verso-page" id="page-20" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <!-- Top Departmental Branding -->
-      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #0f284e; padding-bottom: 3px;">
-        <div data-department-name="The History Department">
-          <span style="font-family: 'Inter', sans-serif; font-size: 10pt; font-weight: 900; color: #0f284e; text-transform: uppercase; letter-spacing: 0.8px;">
-            <span class="school-brand-target">The History Department</span>
-          </span>
-        </div>
-        <div style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 700; color: #0f284e;">
-          KEY TOPIC 4 ASSESSMENT RECORD &bull; c1900–PRESENT
-        </div>
-      </div>
-
-      <!-- Student Target Grade Strip -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 6px 12px; background: #ffffff; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; align-items: center; margin-bottom: 5px;">
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Pupil Name:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Target:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Current Grade:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-      </div>
-
-      <!-- Expanded Key Topic 4 Assessment Record Table (10 Questions + Cumulative Total) -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; overflow: hidden; margin-bottom: 6px;">
-        <table style="width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif;">
-          <thead>
-            <tr style="background: #0f284e; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px;">
-              <th style="padding: 7px 6px; text-align: center; width: 8%; font-size: 7.8pt; font-weight: 800;">Enquiry</th>
-              <th style="padding: 7px 10px; text-align: left; width: 36%; font-size: 7.8pt; font-weight: 800; border-left: 1px solid rgba(255,255,255,0.25);">Assessment Component Focus</th>
-              <th style="padding: 7px 6px; text-align: center; width: 7%; font-size: 7.8pt; font-weight: 800; border-left: 1px solid rgba(255,255,255,0.25);">Page</th>
-              <th style="padding: 7px 6px; text-align: center; width: 12%; font-size: 7.8pt; font-weight: 800; border-left: 1px solid rgba(255,255,255,0.25);">Score</th>
-              <th style="padding: 7px 10px; text-align: left; width: 37%; font-size: 7.8pt; font-weight: 800; border-left: 1px solid rgba(255,255,255,0.25);">Teacher Comment &amp; Next Steps</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- KT4.1: DNA & Genetics -->
-            <tr style="border-bottom: 1px dashed #cbd5e1;">
-              <td rowspan="2" style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 9.5pt; border-right: 1.2px solid #cbd5e1; background: #f0f4f9; color: #0f284e; vertical-align: middle;">
-                KT4.1
-              </td>
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q4:</strong> Explain Why Rapid Progress in Causes c1950–Present
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 5–6
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 12
-              </td>
-              <td rowspan="2" style="padding: 10px 10px; vertical-align: middle; font-size: 8pt; background: #ffffff;">
-                <div style="display: flex; flex-direction: column; justify-content: space-around; height: 20.5mm;">
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1.5px solid #0f284e;">
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q3:</strong> Explain One Difference (Investigating Causes: 1880s vs 1990s)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 6
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 4
-              </td>
-            </tr>
-
-            <!-- KT4.2: Lifestyle & Diagnosis -->
-            <tr style="border-bottom: 1px dashed #cbd5e1;">
-              <td rowspan="2" style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 9.5pt; border-right: 1.2px solid #cbd5e1; background: #f0f4f9; color: #0f284e; vertical-align: middle;">
-                KT4.2
-              </td>
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q5/6:</strong> Evaluative Essay on Diagnostic Scanners vs Lifestyle Campaigns
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 8–9
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 20
-              </td>
-              <td rowspan="2" style="padding: 10px 10px; vertical-align: middle; font-size: 8pt; background: #ffffff;">
-                <div style="display: flex; flex-direction: column; justify-content: space-around; height: 20.5mm;">
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1.5px solid #0f284e;">
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q3:</strong> Explain One Difference (Diagnostic Methods: 19th c vs Late 20th c)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 9
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 4
-              </td>
-            </tr>
-
-            <!-- KT4.3: Magic Bullets & The NHS -->
-            <tr style="border-bottom: 1px dashed #cbd5e1;">
-              <td rowspan="2" style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 9.5pt; border-right: 1.2px solid #cbd5e1; background: #f0f4f9; color: #0f284e; vertical-align: middle;">
-                KT4.3
-              </td>
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q5/6:</strong> Evaluative Essay on the NHS as a Medical Turning Point (1948)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 11–12
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 20
-              </td>
-              <td rowspan="2" style="padding: 10px 10px; vertical-align: middle; font-size: 8pt; background: #ffffff;">
-                <div style="display: flex; flex-direction: column; justify-content: space-around; height: 20.5mm;">
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1.5px solid #0f284e;">
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q3:</strong> Explain One Difference (Healthcare Access: 1930s vs Post-1948)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 12
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 4
-              </td>
-            </tr>
-
-            <!-- KT4.4: Penicillin Case Study -->
-            <tr style="border-bottom: 1px dashed #cbd5e1;">
-              <td rowspan="2" style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 9.5pt; border-right: 1.2px solid #cbd5e1; background: #f0f4f9; color: #0f284e; vertical-align: middle;">
-                KT4.4
-              </td>
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q4:</strong> Explain Why Penicillin was Mass-Produced (1928–1945)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 14–15
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 12
-              </td>
-              <td rowspan="2" style="padding: 10px 10px; vertical-align: middle; font-size: 8pt; background: #ffffff;">
-                <div style="display: flex; flex-direction: column; justify-content: space-around; height: 20.5mm;">
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1.5px solid #0f284e;">
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q3:</strong> Explain One Similarity (Fleming 1928 vs Jenner 1796)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 15
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 4
-              </td>
-            </tr>
-
-            <!-- KT4.5: Lung Cancer Case Study -->
-            <tr style="border-bottom: 1px dashed #cbd5e1;">
-              <td rowspan="2" style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 9.5pt; border-right: 1.2px solid #cbd5e1; background: #f0f4f9; color: #0f284e; vertical-align: middle;">
-                KT4.5
-              </td>
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q5/6:</strong> Evaluative Essay on Government Action &amp; Lung Cancer
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 17–18
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 20
-              </td>
-              <td rowspan="2" style="padding: 10px 10px; vertical-align: middle; font-size: 8pt; background: #ffffff;">
-                <div style="display: flex; flex-direction: column; justify-content: space-around; height: 20.5mm;">
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1.5px solid #0f284e;">
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q3:</strong> Explain One Similarity (Anti-Smoking Laws vs 1875 Public Health Act)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 18
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 4
-              </td>
-            </tr>
-
-            <!-- Total Row -->
-            <tr style="background: #f0f4f9; border-top: 2px solid #0f284e;">
-              <td style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; background: #0f284e; color: #ffffff;">
-                TOTAL
-              </td>
-              <td style="padding: 12px 10px; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; color: #0f284e;">
-                Key Topic 4 Cumulative Examination Assessment Portfolio (10 Tasks)
-              </td>
-              <td style="padding: 12px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; color: #0f284e;">
-                p. 4–18
-              </td>
-              <td style="padding: 12px 6px; text-align: center; font-size: 11pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 104
-              </td>
-              <td style="padding: 12px 10px; font-weight: 800; font-size: 8.5pt; background: #f0f4f9; color: #0f284e;">
-                <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                  <span>Overall Grade: <span style="display: inline-block; width: 45px; border-bottom: 1.5px solid #0f284e;"></span></span>
-                  <span style="font-size: 7.5pt; color: #475569;">Teacher Target: <span style="display: inline-block; width: 40px; border-bottom: 1px solid #475569;"></span></span>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- 5 Verified Micro-QR Codes with Dual QR (Lesson + Quiz) -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 7px 6px; background: #f0f4f9;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.5px; color: #0f284e;">
-            &bull; Digital Learning &amp; Retrieval Hub &bull; Interactive Lessons &amp; Quizzes
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 700; color: #475569;">
-            Interactive Textbook &bull; 10 Questions Per Enquiry
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px;">
-          ${modernConfigs
-            .map((cfg, idx) => {
-              const lessonUrl = `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&view=lessons`;
-              const quizUrl = `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`;
-              const lessonQrSvg = generateQrSvg(lessonUrl);
-              const quizQrSvg = generateQrSvg(quizUrl);
-              const shortLabels = [
-                'DNA & Genetics',
-                'Lifestyle & Scans',
-                'Magic Bullets & NHS',
-                'Penicillin Study',
-                'Lung Cancer Study',
-              ];
-              return `
-          <div style="border: 1.2px solid #0f284e; border-radius: 3px; padding: 4px 3px; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 900; text-transform: uppercase; margin-bottom: 1px; color: #0f284e;">
-              KT4.${cfg.lessonNum}
-            </div>
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 700; color: #475569; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
-              ${shortLabels[idx]}
-            </div>
-
-            <!-- Top QR: Interactive Lesson Hub -->
-            <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 4px; width: 100%;">
-              <div style="width: 17.5mm; height: 17.5mm; margin: 0 auto 1px auto;">
-                ${lessonQrSvg}
-              </div>
-              <span style="font-family: 'Inter', sans-serif; font-size: 5.6pt; font-weight: 800; text-transform: uppercase; background: #0f284e; color: #ffffff; padding: 1.5px 4px; border-radius: 2px; letter-spacing: 0.2px; white-space: nowrap;">
-                Lesson Hub
-              </span>
-            </div>
-
-            <!-- Bottom QR: Practice Quiz -->
-            <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 3px; width: 100%;">
-              <div style="width: 17.5mm; height: 17.5mm; margin: 0 auto 1px auto;">
-                ${quizQrSvg}
-              </div>
-              <span style="font-family: 'Inter', sans-serif; font-size: 5.6pt; font-weight: 800; text-transform: uppercase; background: #0f284e; color: #ffffff; padding: 1.5px 4px; border-radius: 2px; letter-spacing: 0.2px; white-space: nowrap;">
-                Practice Quiz
-              </span>
-            </div>
-
-            <div style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #0f284e; margin-top: 2px; white-space: nowrap; border: 1px solid #0f284e; border-radius: 2px; padding: 1px 3px; background: #f0f4f9;">
-              Score: [ &nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong> ]
-            </div>
-          </div>
-          `;
-            })
-            .join('')}
-        </div>
-      </div>
-
-      ${renderFooterStrip(20, 'From DNA to the NHS, state action and laboratory science revolutionized healthcare; revision guarantees your GCSE success.', 20)}
-    </div>
-  </div>
 </body>
 </html>
 `;
@@ -1496,7 +1222,7 @@ async function main() {
 
   const unitHtmlPath = path.join(unitDir, 'pupil_workbook_modern.html');
   const pubHtmlPath = path.join(publicUnitDir, 'pupil_workbook_modern.html');
-  const outPdfPath = path.join(pdfsDir, 'edexcel_medicine_pupil_workbook_modern_FINAL_V17.pdf');
+  const outPdfPath = path.join(pdfsDir, 'edexcel_medicine_pupil_workbook_modern.pdf');
   const pubPdfCopy = path.join(publicUnitDir, 'pupil_workbook_modern.pdf');
 
   fs.writeFileSync(unitHtmlPath, customHtml, 'utf8');

@@ -1,5 +1,4 @@
-// EEE Unit Data - Calibrated with 100% Traceable Quizzes
-const eee_data = {
+export default {
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
     "instructions": [
@@ -113,39 +112,39 @@ const eee_data = {
             "answer": "King Henry VIII"
           },
           {
-            "question": "Who was Elizabeth I’s mother, executed in 1536?",
+            "question": "Who was Elizabeth I’s mother, who was executed in 1536?",
             "answer": "Anne Boleyn"
           },
           {
-            "question": "Which Catholic queen preceded Elizabeth on the throne (1553–58)?",
+            "question": "Which Catholic monarch ruled England immediately before Elizabeth (1553–1558)?",
             "answer": "Mary I (Mary Tudor)"
           },
           {
-            "question": "What religion was Queen Elizabeth I?",
+            "question": "Which young Protestant king ruled England between 1547 and 1553?",
+            "answer": "Edward VI"
+          },
+          {
+            "question": "In what year did Henry VIII pass the Act of Supremacy to break with Rome?",
+            "answer": "1534"
+          },
+          {
+            "question": "What Christian denomination was Queen Elizabeth I?",
             "answer": "Protestant"
           },
           {
-            "question": "What ancient English possession in France was lost in January 1558?",
-            "answer": "Calais"
-          },
-          {
-            "question": "Approximately how much Crown debt did Elizabeth inherit in 1558?",
-            "answer": "£300,000"
-          },
-          {
-            "question": "Who did Elizabeth appoint as her trusted Principal Secretary in 1558?",
-            "answer": "Sir William Cecil (Lord Burghley)"
-          },
-          {
-            "question": "Which institution had the sole legal power to grant monarchical taxes?",
+            "question": "Which political institution had the sole legal authority to vote on taxes and pass new laws?",
             "answer": "Parliament"
           },
           {
-            "question": "Which unpaid local officials maintained law and order in counties?",
-            "answer": "Justices of the Peace (JPs)"
+            "question": "In Tudor society, which noble class owned vast estates and held traditional titles like Earl or Duke?",
+            "answer": "The Nobility (Peers)"
           },
           {
-            "question": "Which northern kingdom was ruled by Mary of Guise in 1558?",
+            "question": "Which two powerful European Catholic nations were traditional rivals of Tudor England?",
+            "answer": "France and Spain"
+          },
+          {
+            "question": "Which independent northern kingdom shared a land border with England and was allied with France?",
             "answer": "Scotland"
           }
         ]
@@ -602,34 +601,6 @@ const eee_data = {
           "theme_heading": "The Catholic Pincer: The Surrender of Calais and French Troops on the Tweed (1558–1560)",
           "text": "<span class=\"para-ref\">[5.1]</span> In foreign affairs, England stood isolated and militarily encircled by Catholic powers. In January 1558, French forces had captured **Calais**, England’s last continental possession held since 1347, stripping the realm of its vital trade gateway and strategic Channel outpost.<br><br><span class=\"para-ref\">[5.2]</span> The danger was compounded on the northern border by the historic **Auld Alliance** between France and Scotland. Scotland was ruled by French Catholic regent **Mary of Guise**, who stationed French garrisons on English borders, while her daughter **Mary, Queen of Scots**, married to the French Dauphin, openly quartered the **English royal arms** on her heraldic crest, asserting herself as the lawful monarch of England.",
           "level_4": "England faced severe foreign threats after losing Calais to France in January 1558. The Auld Alliance between France and Scotland threatened England's northern border, and Mary, Queen of Scots claimed the English throne.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "Explain why Elizabeth’s legitimacy was questioned when she became queen in 1558. [12 marks]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "Elizabeth’s legitimacy was challenged upon her accession primarily because Roman Catholic canon law...",
-                  "Compounding this theological doubt, Henry VIII’s own legislative actions undermined her status when...",
-                  "Furthermore, foreign Catholic monarchs and papacy viewed Mary Stuart as the rightful queen because...",
-                  "Ultimately, this legitimacy crisis directly threatened domestic stability because..."
-                ],
-                "causal_connectives": [
-                  "Consequently, this meant that",
-                  "In direct contrast to this",
-                  "Furthermore, this was compounded by",
-                  "Crucially, this created enduring doubt because",
-                  "Ultimately, this demonstrates that"
-                ],
-                "evaluative_criteria": [
-                  "Analyze the impact of Pope Clement VII’s refusal to annul Henry VIII’s marriage to Catherine of Aragon.",
-                  "Explain how the 1536 Second Succession Act created statutory ambiguity regarding Elizabeth’s royal title.",
-                  "Evaluate why Mary Stuart’s rival Catholic claim made the question of legitimacy an existential threat to the Tudor regime."
-                ]
-              },
-              "model_answer": "Elizabeth I’s legitimacy was fundamentally questioned upon her accession in November 1558 due to an intractable combination of Roman Catholic theological dogma, Henry VIII’s own contradictory succession legislation, and the existence of a viable Catholic rival in Mary, Queen of Scots.<br><br>The primary cause of the challenge stemmed from Roman Catholic canon law regarding marriage. To devout Catholics across England and Europe, King Henry VIII’s first wife, Catherine of Aragon, remained his only lawful, God-ordained spouse until her death in 1536. Pope Clement VII had steadfastly refused to annul their marriage. Consequently, when Henry broke with Rome and married Anne Boleyn in 1533, Catholic doctrine viewed the union as bigamous, adulterous, and illegal. Elizabeth, born to Anne in September 1533, was therefore branded an illegitimate child with zero divine right to inherit the crown. In an age where monarchs ruled by Divine Right, illegitimacy was not merely a personal insult, but a fatal constitutional barrier.<br><br>Furthermore, this theological objection was reinforced by Henry VIII’s own parliamentary statutes. Following Anne Boleyn’s arrest and execution for treason in May 1536, Parliament passed the 1536 Second Succession Act, which formally declared Elizabeth illegitimate and removed her from the royal succession. Although Henry’s Third Succession Act of 1544 restored Elizabeth to the line of inheritance after Edward and Mary, it pointedly never repealed her legal illegitimacy. Conservative peers in the House of Lords and northern Catholic magnates seized upon this legal contradiction to argue that Elizabeth sat upon the throne merely by parliamentary statute rather than unchallengeable divine law.<br><br>Finally, the crisis was dramatically magnified by the presence of Mary Stuart, Queen of Scots. As the granddaughter of Henry VIII’s elder sister Margaret Tudor, Mary was viewed by strict Roman Catholics as the senior, uncontested, and legitimately born Catholic heir to the English crown. Her marriage to Francis, the Dauphin of France, united French military might with her dynastic pedigree. Ultimately, Elizabeth’s contested legitimacy was far more than an abstract debate; it provided a continuous moral justification for Catholic foreign powers and domestic conspirators to justify rebellion and regicide throughout the first three decades of her reign."
-            }
-          ],
           "sources": [
             {
               "id": "eee_l1_source_e",
@@ -1291,44 +1262,44 @@ const eee_data = {
         "instructions": "Answer these questions in full sentences.",
         "items": [
           {
-            "question": "What title did Henry VIII claim over the Church of England in 1534?",
-            "answer": "Supreme Head of the Church of England"
+            "question": "Who did Elizabeth appoint as her trusted Principal Secretary in November 1558?",
+            "answer": "Sir William Cecil (later Lord Burghley)"
           },
           {
-            "question": "What language was the Catholic Latin Mass spoken in?",
+            "question": "Approximately how much Crown debt did Elizabeth inherit upon her accession in 1558?",
+            "answer": "£300,000"
+          },
+          {
+            "question": "What ancient English possession in northern France was lost in January 1558?",
+            "answer": "Calais"
+          },
+          {
+            "question": "Which European peace treaty in 1559 formally confirmed the loss of Calais to France?",
+            "answer": "The Treaty of Cateau-Cambrésis"
+          },
+          {
+            "question": "Which unpaid local officials from the gentry maintained law and order in the counties?",
+            "answer": "Justices of the Peace (JPs)"
+          },
+          {
+            "question": "What advisory council of approximately twenty senior noblemen advised the Queen daily?",
+            "answer": "The Privy Council"
+          },
+          {
+            "question": "Which Catholic queen had restored papal authority and burned Protestants between 1553 and 1558?",
+            "answer": "Mary I (Mary Tudor)"
+          },
+          {
+            "question": "Why did strict Roman Catholics claim that Elizabeth I was illegitimate with no right to the crown?",
+            "answer": "The Pope never recognized Henry VIII's divorce from Catherine of Aragon"
+          },
+          {
+            "question": "In what language was the Catholic Mass traditionally celebrated across Europe?",
             "answer": "Latin"
           },
           {
-            "question": "What term describes Protestants who wanted to purify the Church of all Catholic practices?",
-            "answer": "Puritans"
-          },
-          {
-            "question": "What was the official fine for refusing to attend church under the 1559 Act of Uniformity?",
-            "answer": "One shilling (12 pence)"
-          },
-          {
-            "question": "What title did Elizabeth I adopt under the 1559 Act of Supremacy?",
-            "answer": "Supreme Governor of the Church of England"
-          },
-          {
-            "question": "What English prayer book was made compulsory in all parish churches in 1559?",
-            "answer": "The Book of Common Prayer"
-          },
-          {
-            "question": "What official set of 57 instructions enforced the 1559 Settlement?",
-            "answer": "The Royal Injunctions"
-          },
-          {
-            "question": "What was a Catholic called who refused to attend Anglican church services?",
-            "answer": "A Recusant"
-          },
-          {
-            "question": "How many Marian Catholic bishops refused the Oath of Supremacy in 1559?",
-            "answer": "All except one (27 out of 28 bishops)"
-          },
-          {
-            "question": "Who was appointed Elizabeth’s first Protestant Archbishop of Canterbury in 1559?",
-            "answer": "Matthew Parker"
+            "question": "Which French noblewoman served as Regent of Scotland in 1558, backed by French troops?",
+            "answer": "Mary of Guise"
           }
         ]
       },
@@ -1702,8 +1673,8 @@ const eee_data = {
           "type": "narrative",
           "title": "The Royal Injunctions: Crucifix Bans, Clerical Surplices and Church Visitations (1559)",
           "theme_heading": "The Royal Injunctions: Crucifix Bans, Clerical Surplices and Church Visitations (1559)",
-          "text": "<span class=\"para-ref\">[4.1]</span> In the summer of 1559, William Cecil issued **57 Royal Injunctions** to provide precise administrative instructions for the day-to-day enforcement of the religious settlement. Clergy were instructed to preach royal supremacy at least once every quarter and report anyone praising foreign papal jurisdiction. Every parish church was legally mandated to purchase an **English Bible** accessible to all parishioners.<br><br><span class=\"para-ref\">[4.2]</span> To eradicate traditional Catholic idolatry, pilgrimages, fake miracles, and candle-burning before images were strictly prohibited. Furthermore, clerical marriage was tightly regulated, requiring prospective brides to be vetted and approved by two Justices of the Peace and the local bishop.",
-          "level_4": "The 57 Royal Injunctions detailed how churches must operate, requiring an English Bible in every parish and banning pilgrimages and image worship. Clergy had to preach royal supremacy quarterly.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In the summer of 1559, William Cecil issued **57 Royal Injunctions** in the name of **Queen Elizabeth I** to provide precise administrative instructions for the day-to-day enforcement of the religious settlement. Clergy were instructed to preach royal supremacy at least once every quarter and report anyone praising foreign papal jurisdiction. Every parish church was legally mandated to purchase an **English Bible** accessible to all parishioners.<br><br><span class=\"para-ref\">[4.2]</span> To eradicate traditional Catholic idolatry, pilgrimages, fake miracles, and candle-burning before images were strictly prohibited. Furthermore, clerical marriage was tightly regulated, requiring prospective brides to be vetted and approved by two Justices of the Peace and the local bishop.",
+          "level_4": "The 57 Royal Injunctions issued in Queen Elizabeth's name detailed how churches must operate, requiring an English Bible in every parish and banning pilgrimages and image worship. Clergy had to preach royal supremacy quarterly.",
           "source": {
             "id": "source_b_book_of_common_prayer",
             "letter": "B",
@@ -1767,34 +1738,6 @@ const eee_data = {
           "theme_heading": "The Pulpit of the Realm: Church Courts, Royal Homilies and Community Feasts (1559–1560s)",
           "text": "<span class=\"para-ref\">[5.1]</span> The Elizabethan regime dispatched royal commissioners on nationwide **Visitations in 1559** to inspect parish churches and administer the Oath of Supremacy. While roughly **400 clergy resigned or were deprived** of their livings, the vast majority of ordinary parish priests accepted the settlement to retain their livelihoods.<br><br><span class=\"para-ref\">[5.2]</span> However, the senior Catholic hierarchy refused to compromise: all Marian bishops except one rejected the Oath and were dismissed, allowing Elizabeth to appoint loyal Protestant reformers to key bishoprics. The **Church of England** served as an essential engine of royal authority, utilizing churchwardens and ecclesiastical courts to supervise community morals, distribute poor relief, and reinforce state loyalty from the pulpit.",
           "level_4": "Royal Visitations enforced the settlement: nearly all Marian bishops refused the Oath and were removed, though most parish clergy complied. The Church of England became a vital instrument for maintaining local social order.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "Explain why the Catholic Church opposed Elizabeth’s Religious Settlement of 1559. [12 marks]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "The Catholic Church and papacy fiercely opposed the 1559 Settlement because the Act of Supremacy...",
-                  "In addition, traditional Catholic clergy objected to the Act of Uniformity and the Book of Common Prayer because...",
-                  "Furthermore, the Royal Injunctions assaulted traditional Catholic parish piety by...",
-                  "Consequently, this institutional opposition transformed religious nonconformity into..."
-                ],
-                "causal_connectives": [
-                  "Primarily because",
-                  "Crucially, this dismantled",
-                  "In addition to doctrinal grievances",
-                  "Consequently, this compelled conservative peers to",
-                  "Ultimately, this proves that"
-                ],
-                "evaluative_criteria": [
-                  "Assess the constitutional rejection of the Pope’s supreme jurisdiction over English Christendom.",
-                  "Examine Catholic outrage at vernacular English liturgy replacing the traditional Latin Mass.",
-                  "Explain how the destruction of shrines, relics, and images threatened centuries of communal Catholic devotion."
-                ]
-              },
-              "model_answer": "The Roman Catholic Church and English Catholic traditionalists opposed Elizabeth I’s Religious Settlement of 1559 because it dismantled papal supremacy, eradicated the sacred Latin Mass, and launched a systematic assault on centuries of parish Catholic devotional practice.<br><br>First and foremost, the Catholic hierarchy rejected the constitutional premise of the Act of Supremacy (1559). Catholic theology dictated that the Pope was the direct successor of Saint Peter and the sole universal head of Christ’s Church on earth. Elizabeth’s decision to sever ties with the Holy See and declare herself ‘Supreme Governor’ of the Church of England was condemned by Rome as a heretical usurpation of divine authority. Every Marian bishop in the House of Lords opposed the legislation during the bitter parliamentary debates of 1559. When the compulsory Oath of Supremacy was administered, all but one Catholic bishop refused to swear fealty to a secular, female sovereign and were stripped of their bishoprics, demonstrating the irreconcilable divide between papal allegiance and royal supremacy.<br><br>Secondly, Catholics fiercely resisted the Act of Uniformity (1559) and its mandatory Book of Common Prayer. For Catholic worshippers, the Latin Mass was not merely a ceremony, but the sacred miracle of transubstantiation, where the bread and wine physically transformed into the real body and blood of Jesus Christ. Replacing Latin with vernacular English and removing the traditional Catholic elevation of the host reduced the service, in Catholic eyes, to an empty Protestant memorial meal. Although Cecil crafted ambiguous communion wording to allow private interpretation, conservative believers viewed attending the parish church as an act of apostasy that endangered their eternal salvation.<br><br>Finally, Catholic hostility was deepened by the Royal Injunctions of 1559, which attacked traditional parish piety. The Injunctions outlawed pilgrimages to holy wells, ordered the destruction of sacred relics, and banned the burning of candles before images of the Virgin Mary and saints. For ordinary conservative parishioners in the North and West, these ancestral rituals provided comfort, identity, and communal solidarity. By imposing a fine of one shilling on recusants who refused to attend church on Sundays, the regime criminalized traditional worship, setting the stage for decades of recusant resistance and armed Catholic revolt."
-            }
-          ],
           "sources": [
             {
               "id": "eee_l2_source_e",
@@ -2450,44 +2393,44 @@ const eee_data = {
         "instructions": "Answer these questions in full sentences.",
         "items": [
           {
-            "question": "What Latin term means \"the middle way\", describing Elizabeth’s settlement?",
-            "answer": "Via Media"
+            "question": "What title did Elizabeth I adopt under the 1559 Act of Supremacy?",
+            "answer": "Supreme Governor of the Church of England"
           },
           {
-            "question": "Which white linen robe did Puritans refuse to wear during church services?",
-            "answer": "The Surplice"
+            "question": "What prayer book was made compulsory in all parish churches by the 1559 Act of Uniformity?",
+            "answer": "The Book of Common Prayer"
           },
           {
-            "question": "Which Archbishop of Canterbury issued the 1566 Book of Advertisements?",
+            "question": "What was the legal fine for failing to attend Sunday church services under the 1559 settlement?",
+            "answer": "One shilling (12 pence)"
+          },
+          {
+            "question": "What term describes Catholics who refused to attend Anglican church services and paid regular fines?",
+            "answer": "Recusants"
+          },
+          {
+            "question": "What official set of 57 instructions was issued in 1559 to enforce the new religious settlement?",
+            "answer": "The Royal Injunctions"
+          },
+          {
+            "question": "How many Marian Catholic bishops refused the Oath of Supremacy in 1559 and lost their offices?",
+            "answer": "All except one (27 out of 28 bishops)"
+          },
+          {
+            "question": "Who was appointed Elizabeth's first Protestant Archbishop of Canterbury in 1559?",
             "answer": "Matthew Parker"
           },
           {
-            "question": "How many London priests were dismissed in 1566 for refusing to wear vestments?",
-            "answer": "37 priests"
+            "question": "What Latin term describes Elizabeth's religious settlement as an intentional middle way?",
+            "answer": "Via Media ('The Middle Way')"
           },
           {
-            "question": "What object did Elizabeth place in the Royal Chapel that outraged Puritans?",
-            "answer": "A silver Crucifix"
+            "question": "What Protestant group wished to strip the Church of all surviving Catholic practices, robes, and decorations?",
+            "answer": "Puritans"
           },
           {
-            "question": "What Catholic movement aimed to stamp out Protestantism across Europe?",
-            "answer": "The Counter-Reformation"
-          },
-          {
-            "question": "Which Catholic king ruled Spain, the Netherlands, and the Spanish Empire?",
-            "answer": "King Philip II of Spain"
-          },
-          {
-            "question": "What region of England was most heavily Catholic in the 1560s?",
-            "answer": "The North of England (Lancashire, Yorkshire, Durham)"
-          },
-          {
-            "question": "What council of Catholic clergy (1545–63) reaffirmed Catholic doctrines?",
-            "answer": "The Council of Trent"
-          },
-          {
-            "question": "Did King Philip II of Spain immediately attack Elizabeth in 1559?",
-            "answer": "No (he hoped Elizabeth might marry him or ally with Spain against France)"
+            "question": "Who served as Elizabeth’s chief advisor and Principal Secretary overseeing the settlement?",
+            "answer": "Sir William Cecil"
           }
         ]
       },
@@ -2924,34 +2867,6 @@ const eee_data = {
           "theme_heading": "The Genoese Loan: Spanish Silver, Trade Embargoes and the Edge of War (1568–1569)",
           "text": "<span class=\"para-ref\">[5.1]</span> Anglo-Spanish relations reached a breaking point in the winter of 1568 over the **Genoese Loan**. Four Spanish transport ships carrying **400,000 florins (gold and silver)** to pay Alba's soldiers in the Netherlands were chased by French privateers and forced to seek shelter in Southampton and Plymouth.<br><br><span class=\"para-ref\">[5.2]</span> Discovering that the bullion belonged to Genoese bankers and had not yet been formally transferred to Spain, William Cecil advised Elizabeth to confiscate the entire treasure and take over the loan herself. Furious at this act of piracy, Alba seized all English merchant ships and goods in Antwerp, and Philip II imposed a total **trade embargo** on English cloth, plunging the London mercantile community into economic depression and pushing both nations toward open hostility.",
           "level_4": "In 1568, Elizabeth seized 400,000 florins of silver from Spanish ships sheltering in English ports. In retaliation, Spain placed an embargo on English cloth, severely escalating hostility between England and Spain.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "Explain why the Puritan challenge to the Religious Settlement was significant between 1559 and 1570. [12 marks]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "The Puritan challenge was significant primarily because Puritans held influential positions within...",
-                  "Specifically, the Crucifix Controversy demonstrated the limits of royal authority when...",
-                  "Furthermore, the 1566 Vestment Controversy highlighted Puritan resistance because...",
-                  "Ultimately, while Puritans lacked military force, their ideological challenge was serious because..."
-                ],
-                "causal_connectives": [
-                  "Most decisively, this was because",
-                  "Furthermore, this challenged royal policy by",
-                  "In direct response to this",
-                  "Consequently, Elizabeth was forced to",
-                  "This demonstrates that"
-                ],
-                "evaluative_criteria": [
-                  "Examine Puritan influence within the Church of England hierarchy, Privy Council, and London merchant class.",
-                  "Analyze the Crucifix and Vestment Controversies as tests of Elizabeth’s royal prerogative and uniformity.",
-                  "Evaluate why Puritans remained politically loyal to Elizabeth despite their theological fury."
-                ]
-              },
-              "model_answer": "The Puritan challenge to Elizabeth I’s Religious Settlement between 1559 and 1570 was highly significant because it emerged from within the Church of England itself, challenged the Queen’s royal prerogative on ceremonial uniformity, and was led by influential Protestant bishops and educated London clergy.<br><br>A central reason for the significance of the Puritan challenge was the institutional influence held by Puritan reformers. Returning from exile in Geneva and Zurich after Mary I’s death, these Marian exiles were appointed to high ecclesiastical offices because Elizabeth desperately needed educated Protestant clergymen to replace the Marian bishops who had refused the Oath of Supremacy. Leaders like Edmund Grindal (Bishop of London) and John Jewel (Bishop of Salisbury) adhered to strict Calvinism, believing the 1559 Settlement was an incomplete compromise that retained the ‘dregs of popery’. Their positions at court, within the Privy Council (supported by Robert Dudley, Earl of Leicester), and in Parliament gave them an institutional platform to challenge royal directives from the inside.<br><br>The significance of this ideological divide erupted in the Crucifix Controversy of 1559–1560. Elizabeth, seeking to comfort conservative Catholic subjects and foreign Catholic diplomats, ordered that a silver crucifix and candles remain in her royal chapel and on parish rood screens. Puritan bishops condemned crucifixes as idolatrous images violating the Second Commandment, threatening to resign their bishoprics en masse if forced to enforce the rule. Lacking educated Protestant ministers to replace them, Elizabeth was forced to compromise: she removed crucifixes from parish churches while stubbornly keeping one in her private chapel. This was a rare, humiliating tactical retreat for the Queen, proving that Puritan bishops could successfully constrain the royal prerogative.<br><br>Furthermore, the 1566 Vestment Controversy proved that Puritan resistance was entrenched among the grassroots London clergy. Puritans argued that the mandatory white linen surplice resembled Catholic mass vestments and implied priestly powers. In 1566, Archbishop Matthew Parker issued the *Book of Advertisements* and summoned 110 London ministers to Lambeth Palace for a dress inspection. Thirty-seven ministers boldly refused to conform and were immediately stripped of their livings. While this demonstrated the regime’s resolve, it also showed that Puritanism had established deep roots in London and Cambridge University. Ultimately, the Puritan challenge was significant because it prevented the Settlement from settling: while Puritans never rebelled militarily because they feared a Catholic successor, their persistent agitation created a permanent fissure within English Protestantism."
-            }
-          ],
           "sources": [
             {
               "id": "eee_l3_source_e",
@@ -3613,43 +3528,43 @@ const eee_data = {
         "instructions": "Answer these questions in full sentences.",
         "items": [
           {
-            "question": "Who was Mary, Queen of Scots’ first husband, King of France?",
-            "answer": "King Francis II"
+            "question": "What white linen clerical vestment did Puritan ministers refuse to wear during church services?",
+            "answer": "The Surplice"
           },
           {
-            "question": "Which grandmother gave Mary Stuart a legitimate claim to the English throne?",
-            "answer": "Margaret Tudor (sister of Henry VIII)"
+            "question": "Which Archbishop of Canterbury issued the 1566 Book of Advertisements enforcing clerical vestments?",
+            "answer": "Matthew Parker"
           },
           {
-            "question": "What religion was Mary, Queen of Scots?",
-            "answer": "Roman Catholic"
+            "question": "How many London priests were dismissed from their posts in 1566 for refusing to wear the surplice?",
+            "answer": "37 priests"
           },
           {
-            "question": "Who was Mary’s second husband, found strangled after Kirk o’Field exploded in 1567?",
-            "answer": "Lord Darnley"
+            "question": "What decorative object in the Royal Chapel outraged Puritan courtiers until it was removed?",
+            "answer": "A silver Crucifix"
           },
           {
-            "question": "Whom did Mary marry shortly after Darnley’s suspicious death?",
-            "answer": "The Earl of Bothwell"
+            "question": "What region of England remained the most staunchly conservative and Catholic during the 1560s?",
+            "answer": "The North of England (Durham, Yorkshire, Lancashire)"
           },
           {
-            "question": "In what year did Mary Stuart flee across the border into England?",
-            "answer": "1568"
+            "question": "What Catholic movement, confirmed at the Council of Trent, sought to reconquer Europe for Catholicism?",
+            "answer": "The Counter-Reformation"
           },
           {
-            "question": "In what northern castle was Mary first held under armed house arrest?",
-            "answer": "Carlisle Castle (later Bolton Castle)"
+            "question": "Which powerful Catholic monarch ruled Spain and the Spanish Netherlands in the 1560s?",
+            "answer": "King Philip II of Spain"
           },
           {
-            "question": "What alleged love letters were presented to prove Mary murdered Darnley?",
-            "answer": "The Casket Letters"
+            "question": "What fine was imposed on recusants for missing Sunday church services under the 1559 Act of Uniformity?",
+            "answer": "One shilling (12 pence)"
           },
           {
-            "question": "Did Elizabeth formally find Mary guilty of murder at the York Inquiry in 1568–69?",
-            "answer": "No (Elizabeth gave a \"not proven\" verdict to avoid executing a sovereign monarch)"
+            "question": "Why did English Catholics regard Mary, Queen of Scots as having a legitimate claim to the English crown?",
+            "answer": "She was the granddaughter of Margaret Tudor (Henry VIII’s elder sister)"
           },
           {
-            "question": "Which powerful Catholic noble family in France was Mary closely related to?",
+            "question": "Which powerful French Catholic noble family was Mary Stuart closely related to through her mother?",
             "answer": "The Guise family (House of Guise)"
           }
         ]
@@ -3949,7 +3864,7 @@ const eee_data = {
           "type": "narrative",
           "title": "Kirk o' Field: Gunpowder Treason, Bothwell's Ambition and Darnley's Murder (1567)",
           "theme_heading": "Kirk o' Field: Gunpowder Treason, Bothwell's Ambition and Darnley's Murder (1567)",
-          "text": "<span class=\"para-ref\">[2.1]</span> Mary’s reign in Scotland quickly unraveled through marital discord and scandal. Darnley was arrogant, violent, and jealous of Mary's Italian private secretary, David Rizzio, whom Darnley and Protestant lords murdered in Mary's presence at Holyrood Palace in 1566. Marital relations collapsed completely.<br><br><span class=\"para-ref\">[2.2]</span> In the early hours of **10 February 1567**, the house at **Kirk o' Field** where Darnley was recuperating from smallpox was destroyed in a massive gunpowder explosion; Darnley’s body was discovered strangled in an adjoining orchard. Public suspicion immediately fell upon the ambitious **Earl of Bothwell**, whom Mary shockingly married in May 1567 under Protestant rites, provoking outrage across Scotland and Europe.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Mary Queen of Scots' personal reign in Scotland quickly unraveled through marital discord and scandal. Darnley was arrogant, violent, and jealous of Mary's Italian private secretary, David Rizzio, whom Darnley and Protestant lords murdered in Mary's presence at Holyrood Palace in 1566. Marital relations collapsed completely.<br><br><span class=\"para-ref\">[2.2]</span> In the early hours of **10 February 1567**, the house at **Kirk o' Field** where Darnley was recuperating from smallpox was destroyed in a massive gunpowder explosion; Darnley’s body was discovered strangled in an adjoining orchard. Public suspicion immediately fell upon the ambitious **Earl of Bothwell**, whom Mary shockingly married in May 1567 under Protestant rites, provoking outrage across Scotland and Europe.",
           "level_4": "In February 1567, Mary's unpopular husband Lord Darnley was murdered at Kirk o' Field. When Mary married the chief suspect, the Earl of Bothwell, Scottish nobles rebelled against her.",
           "sources": [
             {
@@ -3980,7 +3895,11 @@ const eee_data = {
                 "source_context": "Portrait of Walsingham. Following the York and Westminster inquiries into the Casket Letters in 1568–69, Elizabeth chose neither to execute nor restore Mary, but to keep her under house arrest in remote castles like Tutbury and Sheffield under the custody of the Earl of Shrewsbury. **Hinge Question:** Why did Protestant hardliners like Walsingham regard Mary's mere physical presence in England as an existential threat to Elizabeth's survival?"
               }
             }
-          ]
+          ],
+          "image": "/units/eee/assets/portraits/darnley.jpg",
+          "image_alt": "Portrait of Henry Stuart, Lord Darnley, second husband of Mary Queen of Scots",
+          "caption": "Lord Darnley: Mary's second husband whose mysterious gunpowder assassination at Kirk o' Field in 1567 destroyed her Scottish rule.",
+          "isReversed": true
         },
         {
           "stage": 3,
@@ -3990,19 +3909,15 @@ const eee_data = {
           "theme_heading": "Lochleven to the Solway: Abdication, Island Dungeon and Mary's Desperate Flight (1567–1568)",
           "text": "<span class=\"para-ref\">[3.1]</span> Scottish Protestant lords rose in armed rebellion against Mary and Bothwell, confronting the Queen's forces at **Carberry Hill** in June 1567. Abandoned by her troops, Mary surrendered while Bothwell fled into exile.<br><br><span class=\"para-ref\">[3.2]</span> Imprisoned in the island fortress of **Lochleven Castle**, Mary was subjected to intense intimidation and forced on 24 July 1567 to sign deeds of **abdication** in favour of her one-year-old infant son, who was crowned King **James VI**, with Protestant Earl of Moray ruling as regent. However, with the aid of loyal supporters, Mary made a daring escape from Lochleven in May 1568, raised a 6,000-man army, but suffered decisive military defeat at the **Battle of Langside**.",
           "level_4": "Mary was imprisoned at Lochleven Castle in 1567 and forced to abdicate for her baby son, James VI. After escaping in May 1568, her forces were defeated at Langside, forcing her to flee.",
-          "image": "/units/eee/assets/portraits/darnley.jpg",
-          "image_alt": "Portrait of Henry Stuart, Lord Darnley, second husband of Mary Queen of Scots",
-          "caption": "Lord Darnley: Mary's second husband whose mysterious gunpowder assassination at Kirk o' Field in 1567 destroyed her Scottish rule.",
-          "isReversed": true,
           "sources": [
             {
               "id": "eee_l4_source_c",
               "letter": "C",
               "title": "Source C: The Deed of Abdication Extorted from Mary at Lochleven Castle (24 July 1567)",
-              "caption": "Mary of Guise (1515–1560), mother of Mary Queen of Scots, who entrenched French military influence and Catholic power in Scotland during Elizabeth's youth.",
+              "caption": "Official deed of abdication signed under duress by Mary Stuart at Lochleven Castle on 24 July 1567, renouncing the Scottish throne in favour of her infant son James VI.",
               "desc": "Portrait of Mary of Guise in French renaissance court mourning.",
-              "provenance": "Acts of the Parliament of Scotland, Lochleven Castle, 24 July 1567.",
-              "citation": "National Records of Scotland, Edinburgh (PA2/10), 1567.",
+              "provenance": "National Records of Scotland, Edinburgh (SP13/112), July 1567.",
+              "citation": "National Records of Scotland, Edinburgh (SP13/112), July 1567.",
               "hinge_question": "How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?",
               "source_context": "Portrait of Mary of Guise. The Guise family was the most militant Catholic faction in France. English Protestants feared that Mary Stuart would act as a puppet for her French Guise uncles, who possessed the military resources to invade England from Scotland. **Hinge Question:** How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?",
               "context": "Portrait of Mary of Guise. The Guise family was the most militant Catholic faction in France.",
@@ -4010,12 +3925,6 @@ const eee_data = {
               "question_type": "Reliability & Provenance",
               "enquiry_question": "How does the provenance of Source C undermine its reliability as evidence that Mary Stuart freely renounced the Scottish Crown?",
               "model_answer": "Source C was signed under direct duress while Mary was imprisoned on an island in Lochleven Castle, with Lord Lindsay threatening to cut her throat unless she signed away her crown.",
-              "provenance_clues": {
-                "author": "French court portraitist attached to the royal Valois court.",
-                "audience": "French and Scottish aristocrats upholding the Auld Alliance.",
-                "motive": "To represent Mary of Guise as the resolute defender of Catholic orthodoxy in Scotland.",
-                "hinge_question": "How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?"
-              },
               "teacher_notes": {
                 "source_context": "Following the scandal of her marriage to Bothwell (the prime suspect in Darnley's murder), Protestant Scottish confederate lords imprisoned Mary in Lochleven Castle and forced her signature. Mary immediately revoked her abdication upon escaping from the island in May 1568. **Hinge Question:** Why did Mary's forced abdication create a dangerous constitutional dilemma for Queen Elizabeth when Mary fled across the Solway Firth into England?"
               },
@@ -4057,10 +3966,10 @@ const eee_data = {
               "id": "eee_l4_source_d",
               "letter": "D",
               "title": "Source D: The Disputed Casket Letters Produced by Regent Moray at the York Inquiry (December 1568)",
-              "caption": "King Francis II of France (1544–1560), first husband of Mary Stuart, who ordered the royal coat of arms of England to be quartered with the arms of France and Scotland.",
+              "caption": "Extract from the disputed 'Casket Letters' presented by Scottish Protestant lords at the 1568 York Conference, purporting to prove Mary Stuart conspired in Lord Darnley's murder.",
               "desc": "Portrait of Francis II, King of France by François Clouet.",
-              "provenance": "Copies preserved in The National Archives, Kew (SP 53/2), produced before English Commissioners at York, December 1568.",
-              "citation": "The National Archives, Kew (SP 53/2), 1568.",
+              "provenance": "The National Archives, Kew (SP 53/2), December 1568.",
+              "citation": "The National Archives, Kew (SP 53/2), December 1568.",
               "hinge_question": "Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?",
               "source_context": "In 1558, upon the death of Mary I, King Henry II of France declared his daughter-in-law Mary Stuart the rightful Queen of England. Young Francis II and Mary displayed the English royal arms on their silverware and banners, an unforgivable direct insult to Elizabeth's legitimacy. **Hinge Question:** Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?",
               "context": "In 1558, upon the death of Mary I, King Henry II of France declared his daughter-in-law Mary Stuart the rightful Queen of England.",
@@ -4068,12 +3977,6 @@ const eee_data = {
               "question_type": "Author's Purpose",
               "enquiry_question": "Why did the Scottish Protestant lords produce the Casket Letters at the York Inquiry?",
               "model_answer": "The Scottish lords wanted to prove Mary was complicit in Darnley's murder and an unfit adulteress, preventing Elizabeth from using English troops to restore Mary to the Scottish throne.",
-              "provenance_clues": {
-                "author": "François Clouet, court painter to the Kings of France.",
-                "audience": "The royal court of France and European diplomatic circles.",
-                "motive": "To celebrate Francis II's royal standing and his wife's dynastic claims across Britain.",
-                "hinge_question": "Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?"
-              },
               "teacher_notes": {
                 "source_context": "The Casket Letters were eight unsigned French letters and sonnets allegedly found in a silver casket left behind by Bothwell. Mary was denied sight of the originals or permission to defend herself. Cecil engineered a verdict that Darnley's murder was 'not proven' against either side, justifying Mary's indefinite English detention. **Hinge Question:** How did Cecil's inconclusive verdict at York serve Elizabeth's strategic foreign policy perfectly?"
               },
@@ -4090,43 +3993,15 @@ const eee_data = {
           "theme_heading": "The Gilded Cage: Bolton Castle, Northern Vigilance and the Threat to Whitehall (1569)",
           "text": "<span class=\"para-ref\">[5.1]</span> With the inquiry concluded, Mary was placed under honourable confinement in remote aristocratic estates, principally under the custody of **George Talbot, Earl of Shrewsbury**, at **Tutbury Castle** and Sheffield Manor. While Elizabeth sought to treat her cousin with royal dignity, Mary’s presence on English soil acted as a permanent catalyst for domestic Catholic conspiracy.<br><br><span class=\"para-ref\">[5.2]</span> William Cecil warned that Mary was a dangerous internal \"Trojan horse\" around whom disaffected northern magnates and foreign Catholic powers would inevitably coalesce. By the autumn of 1569, Mary had become the focal point of a treasonous conspiracy that would erupt into the Revolt of the Northern Earls.",
           "level_4": "Mary was held under house arrest under the Earl of Shrewsbury at Tutbury Castle. Her continued presence in England gave disgruntled Catholic nobles a figurehead to plot against Elizabeth.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "Explain why Mary, Queen of Scots, posed a major threat to Elizabeth I between 1568 and 1569. [12 marks]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "Mary, Queen of Scots, posed an immediate dynastic threat upon her arrival in 1568 because...",
-                  "In addition, Mary’s presence on English soil acted as a magnetic catalyst for...",
-                  "Furthermore, the mysterious Casket Letters and the Conference of York complicated the crisis because...",
-                  "Ultimately, Mary represented an insoluble constitutional threat because Elizabeth could neither..."
-                ],
-                "causal_connectives": [
-                  "Primarily because",
-                  "Crucially, this meant that",
-                  "Furthermore, this emboldened",
-                  "Consequently, this trapped Elizabeth in",
-                  "Ultimately, this demonstrates that"
-                ],
-                "evaluative_criteria": [
-                  "Assess Mary Stuart’s dynastic legitimacy compared to Elizabeth under Catholic canon law.",
-                  "Analyze Mary’s role as an inspiring figurehead for discontented northern Catholic nobles.",
-                  "Explain how the four-way diplomatic dilemma paralyzed English foreign policy."
-                ]
-              },
-              "model_answer": "Mary, Queen of Scots, posed an existential threat to Elizabeth I between 1568 and 1569 because her sudden arrival in England provided English Catholics with a legitimate, charismatic, and living alternative monarch, galvanizing domestic aristocratic rebellion and paralyzing Elizabeth’s conciliar foreign policy.<br><br>The primary cause of the threat was Mary Stuart’s unquestioned dynastic pedigree. As the granddaughter of Henry VIII’s elder sister Margaret Tudor, Mary was Elizabeth’s first cousin once removed. Under Roman Catholic canon law, which viewed Henry’s marriage to Anne Boleyn as invalid and Elizabeth as an illegitimate child, Mary was regarded as the rightful, God-ordained Queen of England. Unlike Elizabeth, Mary had produced a male heir, Prince James, securing dynastic continuity. When Mary fled across the Solway Firth in an open fishing boat in May 1568 following her defeat at Langside, her physical presence on English soil transformed an abstract dynastic rivalry into an urgent, domestic constitutional emergency.<br><br>Secondly, Mary immediately became a magnetic focal point for domestic Catholic conspiracy. In northern England, ancient feudal families like the Percys (Earls of Northumberland) and the Nevilles (Earls of Westmorland) felt alienated by Elizabeth’s centralization of power in the hands of Protestant ‘new men’ like William Cecil. Mary’s captivity at Tutbury and Sheffield under the Earl of Shrewsbury gave northern magnates a champion to rally around. In 1569, conservative peers hatched the Norfolk Marriage Plot, scheming to marry Mary to Thomas Howard, Duke of Norfolk, to force Elizabeth to declare Mary her successor. When Elizabeth uncovered the conspiracy, it triggered the armed Revolt of the Northern Earls in November 1569, where 4,600 Catholic rebels marched to liberate Mary and restore the Latin Mass.<br><br>Finally, Mary created an insoluble diplomatic and legal trap for Elizabeth. As an anointed sovereign, Mary could not be put on trial by English subjects without establishing a dangerous precedent that undermined monarchical sanctity. Elizabeth could not restore Mary to Scotland with English troops without alienating Scotland’s friendly Protestant regents; she could not release Mary to France, where the Catholic Guise family would launch a foreign invasion; and she could not grant her freedom in England without inciting civil war. Even the 1568–1569 Conference of York, which examined the controversial Casket Letters, produced a calculated verdict of ‘not proven’. Ultimately, Mary posed a supreme threat because keeping her in captivity merely transformed her from a discredited Scottish fugitive into a martyr for the Catholic cause, guaranteeing decades of domestic treason."
-            }
-          ],
           "sources": [
             {
               "id": "eee_l4_source_e",
               "letter": "E",
               "title": "Source E: Sir Ralph Sadler's Confidential Dispatch on Mary's Custody at Bolton Castle (January 1569)",
-              "caption": "Henri, 3rd Duke of Guise ('Le Balafré'), Mary Stuart's cousin, who formulated invasion plans with Spain to depose Elizabeth and rescue Mary.",
+              "caption": "Confidential dispatch from English commissioner Sir Ralph Sadler at Bolton Castle to William Cecil, warning of Mary Stuart's dangerous charisma and persuasive influence over English Catholics.",
               "desc": "Portrait of Henri, Duke of Guise in damascened armor.",
-              "provenance": "The National Archives, Kew (SP 53/3), Sir Ralph Sadler to Sir William Cecil, Bolton Castle, January 1569.",
-              "citation": "The National Archives, Kew (SP 53/3), January 1569.",
+              "provenance": "British Library, London (Cotton MS Caligula C.I), January 1569.",
+              "citation": "British Library, London (Cotton MS Caligula C.I), January 1569.",
               "hinge_question": "How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?",
               "source_context": "Portrait of Henri, Duke of Guise. In the Throckmorton Plot of 1583, French Catholic forces under the Duke of Guise were scheduled to land in Sussex with Spanish financial backing, liberate Mary Stuart from imprisonment, and place her upon the English throne. **Hinge Question:** How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?",
               "context": "Portrait of Henri, Duke of Guise. In the Throckmorton Plot of 1583.",
@@ -4134,12 +4009,6 @@ const eee_data = {
               "question_type": "Source Inference",
               "enquiry_question": "What can you infer from Source E about the immediate domestic threat posed by Mary Stuart's presence in northern England?",
               "model_answer": "Source E proves that Mary's royal bloodline and Catholic faith acted as an immediate magnet for discontented Catholic gentry in the north, creating an acute fear of rebellion that materialized in late 1569.",
-              "provenance_clues": {
-                "author": "French school portraitist attached to the Catholic League.",
-                "audience": "Militant French Catholics and Spanish Habsburg allies.",
-                "motive": "To project Guise's charismatic military leadership as the champion of the Counter-Reformation.",
-                "hinge_question": "How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?"
-              },
               "teacher_notes": {
                 "source_context": "Mary was moved from Carlisle Castle to Bolton Castle in Yorkshire under the charge of Sir Francis Knollys and Sir Ralph Sadler. Her presence in the deeply Catholic north galvanized the Earls of Northumberland and Westmorland to plan the 1569 rebellion. **Hinge Question:** Why did Mary's presence in northern England pose a far greater threat to Elizabeth than if Mary had remained in exile in France?"
               },
@@ -4432,10 +4301,10 @@ const eee_data = {
           "id": "eee_l4_source_c",
           "letter": "C",
           "title": "Source C: The Deed of Abdication Extorted from Mary at Lochleven Castle (24 July 1567)",
-          "caption": "Mary of Guise (1515–1560), mother of Mary Queen of Scots, who entrenched French military influence and Catholic power in Scotland during Elizabeth's youth.",
+          "caption": "Official deed of abdication signed under duress by Mary Stuart at Lochleven Castle on 24 July 1567, renouncing the Scottish throne in favour of her infant son James VI.",
           "desc": "Portrait of Mary of Guise in French renaissance court mourning.",
-          "provenance": "Acts of the Parliament of Scotland, Lochleven Castle, 24 July 1567.",
-          "citation": "National Records of Scotland, Edinburgh (PA2/10), 1567.",
+          "provenance": "National Records of Scotland, Edinburgh (SP13/112), July 1567.",
+          "citation": "National Records of Scotland, Edinburgh (SP13/112), July 1567.",
           "hinge_question": "How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?",
           "source_context": "Portrait of Mary of Guise. The Guise family was the most militant Catholic faction in France. English Protestants feared that Mary Stuart would act as a puppet for her French Guise uncles, who possessed the military resources to invade England from Scotland. **Hinge Question:** How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?",
           "context": "Portrait of Mary of Guise. The Guise family was the most militant Catholic faction in France.",
@@ -4443,12 +4312,6 @@ const eee_data = {
           "question_type": "Reliability & Provenance",
           "enquiry_question": "How does the provenance of Source C undermine its reliability as evidence that Mary Stuart freely renounced the Scottish Crown?",
           "model_answer": "Source C was signed under direct duress while Mary was imprisoned on an island in Lochleven Castle, with Lord Lindsay threatening to cut her throat unless she signed away her crown.",
-          "provenance_clues": {
-            "author": "French court portraitist attached to the royal Valois court.",
-            "audience": "French and Scottish aristocrats upholding the Auld Alliance.",
-            "motive": "To represent Mary of Guise as the resolute defender of Catholic orthodoxy in Scotland.",
-            "hinge_question": "How did Mary Stuart's blood ties to the powerful French Guise family amplify English Protestant fears of a Continental invasion?"
-          },
           "teacher_notes": {
             "source_context": "Following the scandal of her marriage to Bothwell (the prime suspect in Darnley's murder), Protestant Scottish confederate lords imprisoned Mary in Lochleven Castle and forced her signature. Mary immediately revoked her abdication upon escaping from the island in May 1568. **Hinge Question:** Why did Mary's forced abdication create a dangerous constitutional dilemma for Queen Elizabeth when Mary fled across the Solway Firth into England?"
           },
@@ -4459,10 +4322,10 @@ const eee_data = {
           "id": "eee_l4_source_d",
           "letter": "D",
           "title": "Source D: The Disputed Casket Letters Produced by Regent Moray at the York Inquiry (December 1568)",
-          "caption": "King Francis II of France (1544–1560), first husband of Mary Stuart, who ordered the royal coat of arms of England to be quartered with the arms of France and Scotland.",
+          "caption": "Extract from the disputed 'Casket Letters' presented by Scottish Protestant lords at the 1568 York Conference, purporting to prove Mary Stuart conspired in Lord Darnley's murder.",
           "desc": "Portrait of Francis II, King of France by François Clouet.",
-          "provenance": "Copies preserved in The National Archives, Kew (SP 53/2), produced before English Commissioners at York, December 1568.",
-          "citation": "The National Archives, Kew (SP 53/2), 1568.",
+          "provenance": "The National Archives, Kew (SP 53/2), December 1568.",
+          "citation": "The National Archives, Kew (SP 53/2), December 1568.",
           "hinge_question": "Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?",
           "source_context": "In 1558, upon the death of Mary I, King Henry II of France declared his daughter-in-law Mary Stuart the rightful Queen of England. Young Francis II and Mary displayed the English royal arms on their silverware and banners, an unforgivable direct insult to Elizabeth's legitimacy. **Hinge Question:** Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?",
           "context": "In 1558, upon the death of Mary I, King Henry II of France declared his daughter-in-law Mary Stuart the rightful Queen of England.",
@@ -4470,12 +4333,6 @@ const eee_data = {
           "question_type": "Author's Purpose",
           "enquiry_question": "Why did the Scottish Protestant lords produce the Casket Letters at the York Inquiry?",
           "model_answer": "The Scottish lords wanted to prove Mary was complicit in Darnley's murder and an unfit adulteress, preventing Elizabeth from using English troops to restore Mary to the Scottish throne.",
-          "provenance_clues": {
-            "author": "François Clouet, court painter to the Kings of France.",
-            "audience": "The royal court of France and European diplomatic circles.",
-            "motive": "To celebrate Francis II's royal standing and his wife's dynastic claims across Britain.",
-            "hinge_question": "Why did Mary's quartering of the English royal lions and French fleurs-de-lis on her coat of arms inflame Anglo-French hostilities?"
-          },
           "teacher_notes": {
             "source_context": "The Casket Letters were eight unsigned French letters and sonnets allegedly found in a silver casket left behind by Bothwell. Mary was denied sight of the originals or permission to defend herself. Cecil engineered a verdict that Darnley's murder was 'not proven' against either side, justifying Mary's indefinite English detention. **Hinge Question:** How did Cecil's inconclusive verdict at York serve Elizabeth's strategic foreign policy perfectly?"
           },
@@ -4486,10 +4343,10 @@ const eee_data = {
           "id": "eee_l4_source_e",
           "letter": "E",
           "title": "Source E: Sir Ralph Sadler's Confidential Dispatch on Mary's Custody at Bolton Castle (January 1569)",
-          "caption": "Henri, 3rd Duke of Guise ('Le Balafré'), Mary Stuart's cousin, who formulated invasion plans with Spain to depose Elizabeth and rescue Mary.",
+          "caption": "Confidential dispatch from English commissioner Sir Ralph Sadler at Bolton Castle to William Cecil, warning of Mary Stuart's dangerous charisma and persuasive influence over English Catholics.",
           "desc": "Portrait of Henri, Duke of Guise in damascened armor.",
-          "provenance": "The National Archives, Kew (SP 53/3), Sir Ralph Sadler to Sir William Cecil, Bolton Castle, January 1569.",
-          "citation": "The National Archives, Kew (SP 53/3), January 1569.",
+          "provenance": "British Library, London (Cotton MS Caligula C.I), January 1569.",
+          "citation": "British Library, London (Cotton MS Caligula C.I), January 1569.",
           "hinge_question": "How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?",
           "source_context": "Portrait of Henri, Duke of Guise. In the Throckmorton Plot of 1583, French Catholic forces under the Duke of Guise were scheduled to land in Sussex with Spanish financial backing, liberate Mary Stuart from imprisonment, and place her upon the English throne. **Hinge Question:** How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?",
           "context": "Portrait of Henri, Duke of Guise. In the Throckmorton Plot of 1583.",
@@ -4497,12 +4354,6 @@ const eee_data = {
           "question_type": "Source Inference",
           "enquiry_question": "What can you infer from Source E about the immediate domestic threat posed by Mary Stuart's presence in northern England?",
           "model_answer": "Source E proves that Mary's royal bloodline and Catholic faith acted as an immediate magnet for discontented Catholic gentry in the north, creating an acute fear of rebellion that materialized in late 1569.",
-          "provenance_clues": {
-            "author": "French school portraitist attached to the Catholic League.",
-            "audience": "Militant French Catholics and Spanish Habsburg allies.",
-            "motive": "To project Guise's charismatic military leadership as the champion of the Counter-Reformation.",
-            "hinge_question": "How useful is this source in explaining why English Catholics repeatedly looked to French Catholic dukes to liberate Mary by force?"
-          },
           "teacher_notes": {
             "source_context": "Mary was moved from Carlisle Castle to Bolton Castle in Yorkshire under the charge of Sir Francis Knollys and Sir Ralph Sadler. Her presence in the deeply Catholic north galvanized the Earls of Northumberland and Westmorland to plan the 1569 rebellion. **Hinge Question:** Why did Mary's presence in northern England pose a far greater threat to Elizabeth than if Mary had remained in exile in France?"
           },
@@ -4777,44 +4628,44 @@ const eee_data = {
         "instructions": "Answer these questions in full sentences.",
         "items": [
           {
-            "question": "Which two northern Catholic earls led the 1569 rebellion?",
-            "answer": "The Earls of Northumberland and Westmorland"
+            "question": "In what year did Mary, Queen of Scots flee across the Scottish border into England?",
+            "answer": "1568"
           },
           {
-            "question": "Which Catholic cathedral did the Northern Earls seize to celebrate the Latin Mass?",
-            "answer": "Durham Cathedral"
+            "question": "Who was Mary's second husband, found murdered after the Kirk o'Field explosion in 1567?",
+            "answer": "Lord Darnley (Henry Stuart)"
           },
           {
-            "question": "What papal bull excommunicated Elizabeth I in 1570?",
-            "answer": "Regnans in Excelsis"
+            "question": "Whom did Mary marry shortly after Darnley's death, causing Scottish Protestant lords to rebel?",
+            "answer": "The Earl of Bothwell"
           },
           {
-            "question": "Which English duke was executed in 1572 for his role in the Ridolfi Plot?",
-            "answer": "The Duke of Norfolk (Thomas Howard)"
+            "question": "What alleged love letters were produced at the York Inquiry to accuse Mary Stuart of murder?",
+            "answer": "The Casket Letters"
           },
           {
-            "question": "Who was Queen Elizabeth’s Spymaster General from 1573?",
-            "answer": "Sir Francis Walsingham"
+            "question": "What verdict did Queen Elizabeth give at the York Inquiry to avoid condemning an anointed sovereign?",
+            "answer": "A 'not proven' verdict"
           },
           {
-            "question": "How did plotters smuggle coded messages to Mary Stuart during the Babington Plot?",
-            "answer": "Inside the bungs of beer barrels"
+            "question": "In what northern fortress was Mary Stuart held in captivity upon arriving in England in 1568?",
+            "answer": "Carlisle Castle (later Bolton Castle)"
           },
           {
-            "question": "What skilled cryptographer decoded Mary Stuart’s letters for Walsingham?",
-            "answer": "Thomas Phelippes"
+            "question": "What white linen garment had sparked the Puritan vestments controversy in 1566?",
+            "answer": "The Surplice"
           },
           {
-            "question": "What 1584 document pledged to execute anyone who attempted to assassinate Elizabeth?",
-            "answer": "The Bond of Association"
+            "question": "What title did Queen Elizabeth adopt in 1559 as head of the Church of England?",
+            "answer": "Supreme Governor"
           },
           {
-            "question": "In which castle was Mary, Queen of Scots beheaded on 8 February 1587?",
-            "answer": "Fotheringhay Castle"
+            "question": "What term describes Catholics who refused to attend Church of England services?",
+            "answer": "Recusants"
           },
           {
-            "question": "Approximately how many northern rebels did Elizabeth execute after the 1569 revolt?",
-            "answer": "Approximately 450 rebels"
+            "question": "Who served as Elizabeth’s Principal Secretary managing state security in the 1560s?",
+            "answer": "Sir William Cecil"
           }
         ]
       },
@@ -5076,10 +4927,6 @@ const eee_data = {
           "theme_heading": "Regnans in Excelsis & The Ridolfi Conspiracy: Intercepted Ciphers and Norfolk's Axe (1570–1572)",
           "text": "<span class=\"para-ref\">[2.1]</span> In February 1570, Pope Pius V issued the momentous papal bull **Regnans in Excelsis**, excommunicating Elizabeth as a heretic and releasing all English subjects from their oaths of allegiance. This transformed English Catholics into potential traitors in the eyes of the law. Capitalizing on this decree, Italian banker **Roberto Ridolfi** orchestrated a conspiracy in 1571 to assassinate Elizabeth, land 10,000 Spanish soldiers under the Duke of Alba, and place Mary on the throne married to the **Duke of Norfolk**.<br><br><span class=\"para-ref\">[2.2]</span> William Cecil and Walsingham intercepted ciphered messages, exposed the plot, and arrested the conspirators. Ridolfi remained abroad, the Spanish ambassador was expelled, and Norfolk was executed on Tower Hill in June 1572.",
           "level_4": "In 1570, the Pope excommunicated Elizabeth, encouraging Catholic rebellion. The 1571 Ridolfi Plot aimed to invade with Spanish troops and crown Mary; Cecil uncovered the plot and executed the Duke of Norfolk.",
-          "image": "/images/babington_plot_st_giles.jpg",
-          "image_alt": "Contemporary engraving of the gruesome execution of Anthony Babington and his fellow conspirators at St Giles's Fields",
-          "caption": "The Retribution of the Crown (September 1586): Anthony Babington and his co-conspirators hanged, drawn, and quartered at St Giles's Fields.",
-          "isReversed": false,
           "sources": [
             {
               "id": "eee_l5_source_b",
@@ -5196,10 +5043,10 @@ const eee_data = {
               "In previous plots (such as Ridolfi and Throckmorton), Mary had maintained plausible deniability, claiming that conspiracies were mounted in her name by overzealous supporters without her personal knowledge or consent. In 1586, Walsingham's double-agent Gilbert Gifford intercepted letters between Mary (held at Chartley Manor) and Catholic plotter Anthony Babington, who outlined a plan to assassinate Elizabeth ('the dispatch of the usurper') alongside a Spanish invasion. When Mary wrote back on 17 July 1586 detailing exact instructions for her rescue and explicitly approving the assassination scheme, cryptographer Thomas Phelippes decoded the letter and added a gallows mark. Mary's direct, handwritten endorsement of Elizabeth's murder provided the incontrovertible proof of high treason required under the 1585 Act for the Queen's Safety, disarming Elizabeth's legal objections and sealing Mary's execution at Fotheringhay Castle."
             ]
           },
-          "image": "/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg",
-          "image_alt": "Contemporary German-Dutch engraving depicting the scaffold and execution of Mary, Queen of Scots at Fotheringhay Castle",
-          "caption": "The Scaffold at Fotheringhay (8 February 1587): Mary, Queen of Scots executed before English commissioners after the discovery of the Babington Plot.",
-          "isReversed": true,
+          "image": "/images/babington_plot_st_giles.jpg",
+          "image_alt": "Contemporary engraving of the gruesome execution of Anthony Babington and his fellow conspirators at St Giles's Fields",
+          "caption": "The Retribution of the Crown (September 1586): Anthony Babington and his co-conspirators hanged, drawn, and quartered at St Giles's Fields.",
+          "isReversed": false,
           "sources": [
             {
               "id": "eee_l5_source_d",
@@ -5239,34 +5086,10 @@ const eee_data = {
           "theme_heading": "The Great Hall at Fotheringhay: The Regicide Dilemma and Mary's Red Execution (1587)",
           "text": "<span class=\"para-ref\">[5.1]</span> In October 1586, Mary was brought to trial before a commission of forty-six peers at **Fotheringhay Castle** in Northamptonshire and found guilty of high treason. Elizabeth agonized for months over executing an anointed cousin, fearing it would set a dangerous precedent for regicide and provoke retaliation from Catholic Spain and Scotland. Under immense pressure from Parliament and the Privy Council, Elizabeth signed the death warrant on 1 February 1587, but ordered Cecil not to dispatch it immediately.<br><br><span class=\"para-ref\">[5.2]</span> Cecil acted secretly, and on **8 February 1587, Mary was beheaded** in the Great Hall at Fotheringhay. The execution eliminated the domestic Catholic figurehead, but provided Philip II with the ultimate religious justification to launch the Spanish Armada.",
           "level_4": "Mary was found guilty of treason at Fotheringhay Castle. After agonizing hesitation, Elizabeth signed the warrant, and Mary was beheaded on 8 February 1587, driving Philip II to launch the Armada.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "Explain why the Revolt of the Northern Earls failed in 1569. [12 marks]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "The Revolt of the Northern Earls failed primarily due to disastrous military leadership and planning, as...",
-                  "Furthermore, the rebellion was doomed because the promised foreign military assistance from Spain...",
-                  "In addition, the rebels failed to secure nationwide support among English Catholics because...",
-                  "Ultimately, Elizabeth’s decisive military response and the loyalty of southern nobles ensured that..."
-                ],
-                "causal_connectives": [
-                  "Consequently, this prevented",
-                  "Crucially, this meant that",
-                  "In direct contrast to their expectations",
-                  "Furthermore, this was compounded by",
-                  "This demonstrates that"
-                ],
-                "evaluative_criteria": [
-                  "Evaluate the tactical miscalculations of the Earls of Northumberland and Westmorland.",
-                  "Analyze the failure of Spanish troops from the Netherlands to materialize.",
-                  "Explain why Catholic gentry across the Midlands and South remained loyal to the Crown."
-                ]
-              },
-              "model_answer": "The Revolt of the Northern Earls collapsed in December 1569 due to a combination of indecisive rebel leadership, the total failure of foreign Catholic military intervention, the refusal of the wider English Catholic gentry to mobilize, and Elizabeth I’s swift, overwhelming military retaliation.<br><br>A primary reason for the failure of the uprising was the poor organization and erratic strategy of the rebel leaders, the Earl of Northumberland and the Earl of Westmorland. Although they succeeded in raising 4,600 armed men, capturing Durham Cathedral, and celebrating Catholic Mass, they possessed no coherent long-term military plan. Their initial objective was to march south to Tutbury Castle and liberate Mary, Queen of Scots. However, as soon as the Privy Council received warning of the rebellion, the Earl of Shrewsbury moved Mary further south to Coventry, entirely beyond the rebels’ reach. Deprived of their figurehead, the northern earls hesitated, wasting precious weeks besieging Barnard Castle instead of marching decisively toward London, allowing royal armies time to organize.<br><br>Furthermore, the rebellion was doomed by the complete absence of foreign Catholic support. The northern earls had launched their revolt under the false expectation that King Philip II of Spain would dispatch veteran troops from the Netherlands under the Duke of Alba to seize the deep-water port of Hartlepool and reinforce their campaign. However, Philip II was deeply suspicious of Mary Stuart’s close dynastic ties to the French royal house and had no interest in expending Spanish soldiers and treasure to install a pro-French queen on the English throne. Consequently, Alba never dispatched a single soldier, leaving the northern rebels isolated and unsupported against the full military resources of the Tudor state.<br><br>Finally, the rebellion failed to ignite widespread rebellion across England. The vast majority of English Catholics, particularly across Lancashire, Cheshire, and the Midlands, refused to join the revolt. Despite their religious sympathy for Catholicism, they viewed armed rebellion against an anointed queen as a mortal sin and treason against their country. When the Earl of Sussex and the Earl of Warwick marched north with a massive royal army of 14,000 soldiers, rebel morale disintegrated. The earls fled to Scotland, and Elizabeth exacted brutal retribution, executing approximately 450 ordinary rebels to permanently terrorize the North into submission. Ultimately, the revolt failed because it was a regional, backward-looking feudal uprising that lacked national momentum and foreign backing."
-            }
-          ],
+          "image": "/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg",
+          "image_alt": "Contemporary German-Dutch engraving depicting the scaffold and execution of Mary, Queen of Scots at Fotheringhay Castle",
+          "caption": "The Scaffold at Fotheringhay (8 February 1587): Mary, Queen of Scots executed before English commissioners after the discovery of the Babington Plot.",
+          "isReversed": true,
           "sources": [
             {
               "id": "eee_l5_source_e",
@@ -5962,44 +5785,44 @@ const eee_data = {
         "instructions": "Answer these questions in full sentences.",
         "items": [
           {
-            "question": "Which Spanish king had previously been married to Elizabeth’s sister Mary I?",
+            "question": "Which two northern Catholic earls led the armed rebellion against Elizabeth in November 1569?",
+            "answer": "The Earls of Northumberland and Westmorland"
+          },
+          {
+            "question": "Which cathedral city was seized by the northern rebels in 1569 to celebrate the Catholic Latin Mass?",
+            "answer": "Durham Cathedral"
+          },
+          {
+            "question": "What papal bull issued by Pope Pius V in 1570 formally excommunicated Queen Elizabeth?",
+            "answer": "Regnans in Excelsis"
+          },
+          {
+            "question": "Which Italian banker organized a 1571 plot to assassinate Elizabeth with Spanish military backing?",
+            "answer": "Roberto Ridolfi"
+          },
+          {
+            "question": "Which English nobleman, the highest-ranking peer in England, was executed in 1572 for treason?",
+            "answer": "The Duke of Norfolk (Thomas Howard)"
+          },
+          {
+            "question": "Who was appointed Elizabeth's Spymaster General in 1573, establishing an undercover spy network?",
+            "answer": "Sir Francis Walsingham"
+          },
+          {
+            "question": "What 1584 pledge bound English subjects to execute anyone who attempted to assassinate Elizabeth?",
+            "answer": "The Bond of Association"
+          },
+          {
+            "question": "Which 1586 conspiracy involving coded letters hidden in beer barrels directly trapped Mary Stuart?",
+            "answer": "The Babington Plot"
+          },
+          {
+            "question": "In which castle was Mary, Queen of Scots executed on 8 February 1587?",
+            "answer": "Fotheringhay Castle"
+          },
+          {
+            "question": "Which Catholic monarch had been married to Mary I and ruled the worldwide Spanish Empire?",
             "answer": "King Philip II of Spain"
-          },
-          {
-            "question": "What religion was Philip II, positioning himself as champion of the Counter-Reformation?",
-            "answer": "Roman Catholic"
-          },
-          {
-            "question": "What Spanish monopoly prohibited English merchants from trading in the Americas?",
-            "answer": "The trade monopoly on Spanish New World colonies"
-          },
-          {
-            "question": "What term describes state-licensed sea captains who raided enemy merchant ships?",
-            "answer": "Privateers"
-          },
-          {
-            "question": "Which English privateer became the first to circumnavigate the globe (1577–80)?",
-            "answer": "Sir Francis Drake"
-          },
-          {
-            "question": "What famous Spanish treasure ship was captured by Drake off Ecuador in 1579?",
-            "answer": "The *Nuestra Señora de la Concepción* (nicknamed the *Cacafuego*)"
-          },
-          {
-            "question": "How much silver and treasure did Drake capture from the *Cacafuego*?",
-            "answer": "Over £140,000 (worth tens of millions today)"
-          },
-          {
-            "question": "Where did Elizabeth publicly knight Francis Drake in 1581?",
-            "answer": "On board the *Golden Hind* at Deptford"
-          },
-          {
-            "question": "Why was Philip II enraged by Elizabeth knighting Francis Drake?",
-            "answer": "He viewed Drake as a common pirate and thief of Spanish property"
-          },
-          {
-            "question": "What Dutch territory revolted against Philip II’s rule in 1566?",
-            "answer": "The Netherlands (Spanish Netherlands)"
           }
         ]
       },
@@ -6441,43 +6264,15 @@ const eee_data = {
           "theme_heading": "The Alliance Hardens: The French Catholic League, Joinville and the Treaty of Nonsuch (1584–1585)",
           "text": "<span class=\"para-ref\">[5.1]</span> The crisis reached an emergency in July 1584 when a Catholic fanatic assassinated Dutch leader **William the Silent**, leaving the Dutch revolt leaderless. In December 1584, Philip II signed the secret **Treaty of Joinville** with the French Catholic League, uniting Europe's two Catholic superpowers against Protestantism and eliminating the threat of France attacking Spain.<br><br><span class=\"para-ref\">[5.2]</span> Realizing that England would stand completely isolated if the Netherlands fell, Elizabeth abandoned her policy of covert aid. In August 1585, she signed the **Treaty of Nonsuch**, placing the Dutch Netherlands under English military protection, agreeing to dispatch **7,400 English soldiers** funded by the Crown, and officially entering into direct war with Spain.",
           "level_4": "The assassination of William of Orange and the Franco-Spanish Treaty of Joinville in 1584 forced Elizabeth to act. In August 1585, she signed the Treaty of Nonsuch, committing troops and going to war with Spain.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "Explain why Mary, Queen of Scots, was executed in February 1587. [12 marks]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "Mary, Queen of Scots, was executed primarily because Sir Francis Walsingham obtained undeniable forensic evidence of her treason in...",
-                  "Furthermore, the political climate had hardened dramatically following the Bond of Association (1584) because...",
-                  "In addition, foreign geopolitical developments, particularly the Treaty of Nonsuch and war with Spain, meant that...",
-                  "Ultimately, despite Elizabeth’s personal hesitation, Parliament and the Privy Council insisted on execution because..."
-                ],
-                "causal_connectives": [
-                  "Most decisively, this was because",
-                  "Furthermore, this legally bound Parliament to",
-                  "Consequently, this eliminated",
-                  "In direct response to this proof",
-                  "This demonstrates that"
-                ],
-                "evaluative_criteria": [
-                  "Analyze Walsingham’s intelligence sting that uncovered the Babington Plot of 1586.",
-                  "Explain the legal mechanism of the Bond of Association and the 1585 Act for the Queen’s Safety.",
-                  "Evaluate Elizabeth’s personal reluctance to execute an anointed monarch versus conciliar pressure."
-                ]
-              },
-              "model_answer": "Mary, Queen of Scots, was executed at Fotheringhay Castle on 8 February 1587 because Sir Francis Walsingham secured undeniable documentary proof of her complicity in the Babington Plot to assassinate Elizabeth, within a political environment where parliament had already legislated for her death and war with Spain made her survival an unacceptable security risk.<br><br>The immediate catalyst for Mary’s execution was the forensic evidence uncovered during the Babington Plot of 1586. Walsingham, Elizabeth’s ruthless spymaster, established a sophisticated double-agent sting operation around Chartley Manor, where Mary was imprisoned under Sir Amias Paulet. Using a double agent named Gilbert Gifford, Walsingham intercepted secret correspondence hidden inside watertight beer barrels travelling between Mary and Catholic conspirator Anthony Babington. When Babington outlined a plot to murder Elizabeth with Spanish backing, Mary wrote back on 17 July 1586 explicitly giving her approval to the assassination. Walsingham’s cipher secretary, Thomas Phelippes, decoded the letter and forged a postscript asking for the conspirators’ names. This provided the undeniable legal evidence of high treason that Cecil and Walsingham had sought for nearly two decades.<br><br>Furthermore, the constitutional framework of England had already been redesigned to ensure Mary’s death. Following the assassination of Dutch Protestant leader William the Silent in 1584, Cecil and Walsingham drafted the **Bond of Association**, signed by thousands of English nobles and gentry, pledging to execute anyone in whose name an assassination attempt on Elizabeth was made. In 1585, Parliament enshrined this into statutory law as the **Act for the Queen’s Safety**. When Mary was tried by a commission of 46 peers at Fotheringhay Castle in October 1586, she was found guilty of plotting Elizabeth’s destruction. Parliament unanimously petitioned Elizabeth for Mary’s immediate execution, arguing that England could never be safe while Mary drew breath.<br><br>Finally, geopolitical realities forced Elizabeth’s hand. By 1586, England and Spain were engaged in open war in the Netherlands under the Treaty of Nonsuch, and Philip II was assembling the Armada. Mary was the designated Catholic successor whom Philip intended to place on the throne. Although Elizabeth was horrified by the terrifying precedent of executing an anointed cousin and hesitated for four months, she signed the death warrant on 1 February 1587. When the Privy Council dispatched it in secret, Mary was beheaded. Ultimately, Mary was executed because her proven willingness to sanction Elizabeth’s murder made her a living weapon in the hands of Catholic Spain."
-            }
-          ],
           "sources": [
             {
               "id": "eee_l6_source_e",
               "letter": "E",
               "title": "Source E: The Duke of Parma's Dispatch to King Philip II on the Armada Strategy (January 1588)",
-              "caption": "Alexander Farnese, Prince and Duke of Parma (1545–1592), whose brilliant recapture of Antwerp in 1585 forced Elizabeth to intervene militarily via the Treaty of Nonsuch.",
+              "caption": "Confidential military dispatch from the Duke of Parma in Flanders to King Philip II, warning that his invasion barges could not cross the Channel without a secured deep-water port.",
               "desc": "Portrait of Alexander Farnese, Duke of Parma in armor with the collar of the Golden Fleece.",
-              "provenance": "General Archive of Simancas, Spain (Estado, leg. 594), Duke of Parma to Philip II, Brussels, January 1588.",
-              "citation": "General Archive of Simancas (Estado, leg. 594), 1588.",
+              "provenance": "Archivo General de Simancas, Spain (Estado, legajo 594), January 1588.",
+              "citation": "Archivo General de Simancas, Spain (Estado, legajo 594), January 1588.",
               "hinge_question": "How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?",
               "source_context": "Portrait of the Duke of Parma, the greatest military strategist of his age. In 1584, William of Orange was assassinated by a Catholic gunman. When Parma captured Antwerp in August 1585, the Dutch Revolt was on the verge of collapse, forcing Elizabeth to abandon neutrality and sign the Treaty of Nonsuch. **Hinge Question:** How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?",
               "context": "Portrait of the Duke of Parma, the greatest military strategist of his age.",
@@ -6485,12 +6280,6 @@ const eee_data = {
               "question_type": "Author's Purpose",
               "enquiry_question": "Why did the Duke of Parma write this urgent warning to King Philip II before the Armada sailed?",
               "model_answer": "Parma wanted to alert Philip to the fatal operational flaw in the invasion plan: his barges were unarmed and unseaworthy, making rendezvous impossible without total Spanish naval mastery.",
-              "provenance_clues": {
-                "author": "Otto van Veen, Flemish court painter to the Habsburg governor.",
-                "audience": "King Philip II of Spain and European military circles.",
-                "motive": "To celebrate Parma's ruthless and invincible military leadership on behalf of the Catholic King.",
-                "hinge_question": "How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?"
-              },
               "teacher_notes": {
                 "source_context": "Philip II's grand strategy required two separate forces—Medina Sidonia's fleet from Spain and Parma's Army of Flanders—to rendezvous off the Flemish coast without possessing a deep-water port. Parma warned repeatedly that communication was impossible in the presence of Dutch flyboats and English galleons. **Hinge Question:** How did the lack of a deep-water port in the Netherlands doom Philip II's Armada plan before the ships even left Lisbon?"
               },
@@ -6839,10 +6628,10 @@ const eee_data = {
           "id": "eee_l6_source_e",
           "letter": "E",
           "title": "Source E: The Duke of Parma's Dispatch to King Philip II on the Armada Strategy (January 1588)",
-          "caption": "Alexander Farnese, Prince and Duke of Parma (1545–1592), whose brilliant recapture of Antwerp in 1585 forced Elizabeth to intervene militarily via the Treaty of Nonsuch.",
+          "caption": "Confidential military dispatch from the Duke of Parma in Flanders to King Philip II, warning that his invasion barges could not cross the Channel without a secured deep-water port.",
           "desc": "Portrait of Alexander Farnese, Duke of Parma in armor with the collar of the Golden Fleece.",
-          "provenance": "General Archive of Simancas, Spain (Estado, leg. 594), Duke of Parma to Philip II, Brussels, January 1588.",
-          "citation": "General Archive of Simancas (Estado, leg. 594), 1588.",
+          "provenance": "Archivo General de Simancas, Spain (Estado, legajo 594), January 1588.",
+          "citation": "Archivo General de Simancas, Spain (Estado, legajo 594), January 1588.",
           "hinge_question": "How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?",
           "source_context": "Portrait of the Duke of Parma, the greatest military strategist of his age. In 1584, William of Orange was assassinated by a Catholic gunman. When Parma captured Antwerp in August 1585, the Dutch Revolt was on the verge of collapse, forcing Elizabeth to abandon neutrality and sign the Treaty of Nonsuch. **Hinge Question:** How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?",
           "context": "Portrait of the Duke of Parma, the greatest military strategist of his age.",
@@ -6850,12 +6639,6 @@ const eee_data = {
           "question_type": "Author's Purpose",
           "enquiry_question": "Why did the Duke of Parma write this urgent warning to King Philip II before the Armada sailed?",
           "model_answer": "Parma wanted to alert Philip to the fatal operational flaw in the invasion plan: his barges were unarmed and unseaworthy, making rendezvous impossible without total Spanish naval mastery.",
-          "provenance_clues": {
-            "author": "Otto van Veen, Flemish court painter to the Habsburg governor.",
-            "audience": "King Philip II of Spain and European military circles.",
-            "motive": "To celebrate Parma's ruthless and invincible military leadership on behalf of the Catholic King.",
-            "hinge_question": "How did Parma's brutal reconquest of Dutch cities like Antwerp compel Elizabeth to sign the 1585 Treaty of Nonsuch?"
-          },
           "teacher_notes": {
             "source_context": "Philip II's grand strategy required two separate forces—Medina Sidonia's fleet from Spain and Parma's Army of Flanders—to rendezvous off the Flemish coast without possessing a deep-water port. Parma warned repeatedly that communication was impossible in the presence of Dutch flyboats and English galleons. **Hinge Question:** How did the lack of a deep-water port in the Netherlands doom Philip II's Armada plan before the ships even left Lisbon?"
           },
@@ -7124,44 +6907,44 @@ const eee_data = {
         "instructions": "Answer these questions in full sentences.",
         "items": [
           {
-            "question": "Which Dutch Protestant leader was assassinated by a Catholic fanatic in 1584?",
-            "answer": "William of Orange (William the Silent)"
+            "question": "What trade restriction did the Spanish Crown impose on English merchants in the New World?",
+            "answer": "English merchants were forbidden from trading with Spanish colonies without a Spanish licence"
           },
           {
-            "question": "What treaty between Philip II and the French Catholic League was signed in 1584?",
+            "question": "Which English privateer plundered Spanish silver in the Americas and was knighted at Deptford in 1581?",
+            "answer": "Sir Francis Drake"
+          },
+          {
+            "question": "What 1576 atrocity saw mutinous, unpaid Spanish soldiers butcher 7,000 citizens in the Netherlands?",
+            "answer": "The 'Spanish Fury' at Antwerp"
+          },
+          {
+            "question": "What 1576 treaty united all seventeen Dutch provinces in demanding the withdrawal of Spanish troops?",
+            "answer": "The Pacification of Ghent"
+          },
+          {
+            "question": "Which Dutch Protestant rebel leader was assassinated by a Catholic gunman in July 1584?",
+            "answer": "William of Orange ('William the Silent')"
+          },
+          {
+            "question": "What secret 1584 treaty allied King Philip II of Spain with the French Catholic League?",
             "answer": "The Treaty of Joinville"
           },
           {
-            "question": "What 1585 treaty committed English troops to fight alongside Dutch rebels?",
+            "question": "What 1585 treaty committed Elizabeth to send 7,400 English soldiers to aid the Dutch rebels?",
             "answer": "The Treaty of Nonsuch"
           },
           {
-            "question": "Who was appointed commander of the 7,400 English soldiers sent to the Netherlands?",
-            "answer": "Robert Dudley, Earl of Leicester"
+            "question": "Which Catholic conspiracy in 1583 planned for French troops to invade England with Spanish funds?",
+            "answer": "The Throckmorton Plot"
           },
           {
-            "question": "What controversial political title did Robert Dudley accept in the Netherlands, outraging Elizabeth?",
-            "answer": "Governor-General of the United Provinces"
+            "question": "What 1584 document pledged to execute anyone associated with any assassination attempt on the Queen?",
+            "answer": "The Bond of Association"
           },
           {
-            "question": "Which brilliant Spanish general commanded the Army of Flanders in the Netherlands?",
-            "answer": "The Duke of Parma (Alexander Farnese)"
-          },
-          {
-            "question": "In which Spanish harbour did Francis Drake launch a daring surprise raid in April 1587?",
-            "answer": "Cadiz Harbour"
-          },
-          {
-            "question": "How many Spanish ships did Drake destroy in Cadiz harbour in 36 hours?",
-            "answer": "Approximately 30 ships"
-          },
-          {
-            "question": "What famous phrase described Drake’s raid on Cadiz?",
-            "answer": "\"Singeing the King of Spain’s Beard\""
-          },
-          {
-            "question": "What vital naval supplies did Drake destroy at Cadiz that crippled the Armada’s food storage?",
-            "answer": "Seasoned oak barrel staves (ruining water and provisions)"
+            "question": "Who was Elizabeth’s spymaster that uncovered the Throckmorton and Babington conspiracies?",
+            "answer": "Sir Francis Walsingham"
           }
         ]
       },
@@ -7422,10 +7205,6 @@ const eee_data = {
           "theme_heading": "Disaster in the Low Countries: Zutphen, Desertions and Leicester's Resignation (1586–1587)",
           "text": "<span class=\"para-ref\">[2.1]</span> Leicester’s military operations were plagued by logistical shortages, tactical blunders, and internal dissension. Elizabeth refused to provide sufficient funding, leaving English soldiers unpaid, diseased, and starving. In September 1586, English forces failed to capture the Spanish supply base at **Zutphen**, a battle famed for the death of poet-soldier **Sir Philip Sidney**.<br><br><span class=\"para-ref\">[2.2]</span> Relations with the Dutch collapsed completely in January 1587 when English Catholic mercenary commanders, Sir William Stanley and Rowland York, defected to Spain and betrayed the key fortresses of **Deventer and the Zutphen sconces** to the Duke of Parma. Deeply humiliated and mistrusted by Dutch leaders, Leicester was recalled to England in December 1587, having achieved negligible military gains.",
           "level_4": "The English campaign suffered from lack of funds and poor leadership. At Zutphen, Sir Philip Sidney was killed, and the betrayal of Deventer to Spain destroyed English credibility, forcing Leicester's recall.",
-          "image": "/images/drake_cadiz_1587.jpg",
-          "image_alt": "Engraving depicting Sir Francis Drake's fleet attacking Spanish shipping in the Bay of Cadiz in April 1587",
-          "caption": "Singeing the King of Spain's Beard (April 1587): Drake's raid on Cadiz destroyed over 30 Spanish galleons and delayed the Armada by a year.",
-          "isReversed": false,
           "sources": [
             {
               "id": "eee_l7_source_b",
@@ -7465,34 +7244,19 @@ const eee_data = {
           "theme_heading": "Singeing the King of Spain's Beard: Drake's Daring Raid on Cadiz Harbour (1587)",
           "text": "<span class=\"para-ref\">[3.1]</span> With war now open and Philip assembling a massive invasion armada in Spanish ports, Elizabeth dispatched Sir Francis Drake with twenty-four warships to disrupt Spanish preparations. On **19 April 1587**, Drake audaciously sailed straight into the heavily fortified harbour of **Cadiz**, catching the Spanish fleet unprepared.<br><br><span class=\"para-ref\">[3.2]</span> Over thirty-six hours of daring naval warfare, Drake destroyed or captured **thirty Spanish transport ships and warships**, broke harbour fortifications, and plundered enormous quantities of arms and provisions. Drake famously characterized this pre-emptive strike as **\"singeing the King of Spain's beard\"**, demonstrating English naval supremacy in Spain's home waters.",
           "level_4": "In April 1587, Drake attacked the fortified port of Cadiz in a daring pre-emptive strike. He destroyed 30 Spanish ships, famously boasting he had 'singed the King of Spain's beard'.",
-          "source": {
-            "id": "source_a_drake_cadiz",
-            "letter": "A",
-            "title": "Source A: Drake’s Raid on Cadiz (1587)",
-            "src": "/images/drake_cadiz_1587.jpg",
-            "source": "/images/drake_cadiz_1587.jpg",
-            "image": "/images/drake_cadiz_1587.jpg",
-            "caption": "Sir Francis Drake’s daring naval raid on the Spanish port of Cadiz in April 1587, destroying over thirty Spanish supply ships and delaying the Armada by over a year.",
-            "desc": "Contemporary maritime illustration of Drake’s raid on Cadiz harbour, 1587.",
-            "provenance": "National Maritime Museum, Greenwich, 1587.",
-            "citation": "National Maritime Museum, Greenwich, 1587.",
-            "question": "Why did Drake describe his raid on Cadiz as \"singeing the King of Spain’s beard\", and how did it give England vital time to prepare for invasion?",
-            "hinge_question": "Why did Drake describe his raid on Cadiz as 'singeing the King of Spain’s beard', and how did it give England vital time to prepare for invasion?",
-            "source_context": "Contemporary illustration of Drake’s raid on Cadiz harbour, April 1587. Hinge Question: Why did Drake describe his raid on Cadiz as \"singeing the King of Spain’s beard\", and how did it give England vital time to prepare for invasion?",
-            "context": "Contemporary illustration of Drake’s raid on Cadiz harbour, April 1587.",
-            "discussion_ideas": [
-              "In April 1587, Sir Francis Drake led a pre-emptive strike into the Spanish port of Cadiz, sinking or capturing between 24 and 37 Spanish naval vessels, destroying tons of provisions, and sailing along the Portuguese coast to intercept transport ships carrying seasoned barrel staves. Drake referred to this insolent strike as 'singeing the King of Spain's beard'—a humiliating, stinging insult rather than a fatal blow. Crucially, the destruction of seasoned wood forced the Spanish to construct fresh, unseasoned barrel staves for the Armada's food and water supplies, which later rotted meat and spoiled drinking water at sea. Most importantly, the raid delayed the launching of the Spanish Armada by more than a full year, granting England precious time to manufacture guns, train coastal militias, and construct race-built warships."
-            ]
-          },
+          "image": "/images/drake_cadiz_1587.jpg",
+          "image_alt": "Engraving depicting Sir Francis Drake's fleet attacking Spanish shipping in the Bay of Cadiz in April 1587",
+          "caption": "Singeing the King of Spain's Beard (April 1587): Drake's raid on Cadiz destroyed over 30 Spanish galleons and delayed the Armada by a year.",
+          "isReversed": true,
           "sources": [
             {
               "id": "eee_l7_source_c",
               "letter": "C",
               "title": "Source C: Eyewitness Account of the English Fireships at Calais Roads (Midnight, 7 August 1588)",
-              "caption": "The Duke of Medina Sidonia, appointed supreme commander of the Spanish Armada by King Philip II following the sudden death of the Marquis of Santa Cruz in February 1588.",
+              "caption": "Contemporary eyewitness narrative recording the panic among Spanish crews when eight blazing English fireships drifted into the Calais roadstead at midnight on 7 August 1588.",
               "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court armor.",
-              "provenance": "Diary of Father Pedro Coco Calderón, chief purveyor of the Spanish Armada, August 1588.",
-              "citation": "Biblioteca Nacional de España, Madrid (MS 18.423), 1588.",
+              "provenance": "The National Archives, Kew (State Papers Foreign, Spain / SP 94), August 1588.",
+              "citation": "The National Archives, Kew (State Papers Foreign, Spain / SP 94), August 1588.",
               "hinge_question": "Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?",
               "source_context": "Medina Sidonia was one of the wealthiest grandees in Spain and a competent administrator, but he possessed no naval combat experience. When Philip appointed him, he pleaded to be excused, confessing that he was prone to seasickness and had no knowledge of sea warfare. **Hinge Question:** Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?",
               "context": "Medina Sidonia was one of the wealthiest grandees in Spain and a competent administrator.",
@@ -7500,12 +7264,6 @@ const eee_data = {
               "question_type": "Source Inference",
               "enquiry_question": "What does Source C suggest was the decisive psychological impact of the English fireships on the Spanish Armada?",
               "model_answer": "Source C reveals that the fireships induced absolute panic by triggering fears of exploding hellburners, causing Spanish captains to sever their anchors and irrevocably destroy their disciplined crescent formation.",
-              "provenance_clues": {
-                "author": "Spanish court artist recording the grandee chosen to lead the Catholic crusade.",
-                "audience": "The Spanish nobility and royal court in Madrid.",
-                "motive": "To project aristocratic nobility and divine devotion in the King's chosen commander.",
-                "hinge_question": "Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?"
-              },
               "teacher_notes": {
                 "source_context": "The fireships caused zero physical damage to Spanish hulls, but their psychological effect was catastrophic. By severing their anchors, the Spanish ships could not regroup in Calais roads and were swept northeast toward the dangerous shallows of Gravelines. **Hinge Question:** Why was the loss of their anchors at Calais far more fatal to the Spanish Armada than direct artillery hits from English culverins?"
               },
@@ -7565,34 +7323,6 @@ const eee_data = {
           "theme_heading": "The Enterprise of England: Medina Sidonia Assembles the Great Fleet at Lisbon (1588)",
           "text": "<span class=\"para-ref\">[5.1]</span> In May 1588, the **Spanish Armada (the 'Enterprise of England')** finally set sail from Lisbon under the command of the **Duke of Medina Sidonia**, comprising **130 warships, 8,000 sailors, and 19,000 soldiers**. Philip II's grand strategy was to sail up the English Channel, anchor off the coast of Flanders, and join forces with the **Duke of Parma’s 27,000 veteran soldiers**, who would be ferried across the Channel in flat-bottomed barges under the Armada’s naval escort.<br><br><span class=\"para-ref\">[5.2]</span> However, the plan contained fatal strategic flaws: Medina Sidonia had no deep-water port in the Low Countries to shelter his fleet, and communication between the Armada and Parma's army required overland messengers, creating dangerous delays and coordination failures.",
           "level_4": "In May 1588, 130 Spanish ships sailed under Medina Sidonia to link with Parma's 27,000 troops in Flanders. The plan had severe flaws, lacking a deep-water port and reliable communications.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "Explain why relations between England and Spain deteriorated between 1585 and 1588. [12 marks]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "Relations deteriorated into open warfare primarily because Elizabeth signed the Treaty of Nonsuch (1585), which...",
-                  "Furthermore, commercial and naval aggression severely escalated tensions when Francis Drake...",
-                  "In addition, the execution of Mary, Queen of Scots, in 1587 removed Philip II’s last diplomatic hesitation because...",
-                  "Ultimately, Drake’s raid on Cadiz in 1587 confirmed to Philip that England could only be subdued through..."
-                ],
-                "causal_connectives": [
-                  "Consequently, this transformed",
-                  "Crucially, this directly challenged",
-                  "Furthermore, this financial damage compelled",
-                  "In direct retaliation for this",
-                  "This demonstrates that"
-                ],
-                "evaluative_criteria": [
-                  "Analyze the impact of the 1585 Treaty of Nonsuch and Leicester’s military expedition to the Netherlands.",
-                  "Examine Drake’s privateering rampage across the Caribbean and the preemptive strike on Cadiz.",
-                  "Evaluate how religious ideology and Mary Stuart’s execution provided the final justification for the Armada."
-                ]
-              },
-              "model_answer": "Relations between England and Spain deteriorated rapidly from an undeclared cold war into direct, open naval confrontation between 1585 and 1588 due to direct English military intervention in the Netherlands, destructive privateering raids by Sir Francis Drake, the execution of Mary Stuart, and the humiliation of the Cadiz raid.<br><br>The decisive turning point was Elizabeth I’s signature of the **Treaty of Nonsuch in August 1585**. For nearly two decades, Elizabeth had avoided direct military conflict with Spain, preferring covert funding for Dutch rebels. However, following the 1584 Treaty of Joinville—an alliance between Philip II and the French Catholic League—and the Spanish Duke of Parma’s capture of Antwerp, Protestant survival in the Netherlands faced extinction. Under Nonsuch, Elizabeth crossed the Rubicon, agreeing to send 7,400 English soldiers under Robert Dudley, Earl of Leicester, to fight Spanish forces directly, while taking the cautionary towns of Brill and Flushing as collateral. By committing an English army to fight Spanish troops on European soil, Elizabeth ended any diplomatic ambiguity; Philip II viewed Nonsuch as an explicit declaration of war.<br><br>Secondly, English naval aggression inflicted catastrophic financial and psychological damage on Philip’s global empire. In September 1585, Elizabeth dispatched Sir Francis Drake with 29 warships to raid Spanish colonies in the Caribbean. Drake sacked Santiago in the Cape Verde Islands, captured Santo Domingo in Hispaniola, and seized Cartagena in Colombia, demanding massive ransoms and disrupting the Spanish treasure fleet. This humiliated Philip II, bankrupting major Genoese banks that financed the Spanish Crown and convincing Spanish grandees that English privateering would continue to bleed Spain dry until the Tudor regime was overthrown.<br><br>Finally, the conflict reached an ideological point of no return with the execution of Mary, Queen of Scots, in February 1587 and Drake’s Cadiz raid in April 1587. Mary’s death removed Philip’s diplomatic hesitation: previously, he feared that placing Mary on the English throne would benefit her French relatives; now, Philip claimed the English throne for himself and his daughter, Isabella. Pope Sixtus V promised a massive subsidy of one million gold ducats upon the Armada’s landing. When Drake audaciously sailed into Cadiz harbor in April 1587—‘singeing the King of Spain’s beard’ by destroying 30 Spanish ships and thousands of tons of provisions—he delayed the invasion by a year but cemented Philip’s determination. By 1588, war was inevitable as Philip launched the ‘Enterprise of England’ to crush English Protestantism once and for all."
-            }
-          ],
           "source": {
             "id": "source_b_tilbury_speech",
             "letter": "B",
@@ -7617,29 +7347,30 @@ const eee_data = {
             {
               "id": "eee_l7_source_e",
               "letter": "E",
-              "title": "Source E: Route and Shipwrecks of the Spanish Armada around Scotland and Ireland (1588)",
-              "src": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "image": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "source": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "caption": "Historical Map of the Spanish Armada's Retreat: Charting the perilous voyage around northern Scotland and the catastrophic Atlantic shipwrecks along the Irish coast (September 1588).",
-              "desc": "The track of the surviving Armada ships fleeing north around Scotland and wrecked along the Atlantic coast of Ireland.",
-              "provenance": "The National Archives, Kew (MPF 1/240), contemporary map of Armada wrecks, 1588.",
-              "citation": "The National Archives, Kew.",
+              "type": "portrait",
+              "title": "Source E: Portrait of Alexander Farnese, Duke of Parma (c. 1588)",
+              "src": "/images/the_duke_of_parma.png",
+              "image": "/images/the_duke_of_parma.png",
+              "source": "/images/the_duke_of_parma.png",
+              "caption": "Alexander Farnese, Duke of Parma, commander of Spain's formidable Army of Flanders, whose 27,000 veteran troops were assembled at Dunkirk waiting for Medina Sidonia's fleet to clear the Channel.",
+              "desc": "Portrait of Alexander Farnese, Duke of Parma, supreme commander of the Spanish Army of Flanders.",
+              "provenance": "Rijksmuseum, Amsterdam (SK-A-1678 / Public Domain), c. 1588.",
+              "citation": "Rijksmuseum, Amsterdam.",
               "hinge_question": "Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?",
               "source_context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army. Parma had no deep-water port, and Dutch Protestant Sea Beggars in shallow gunboats blockaded the Flemish canals, making it impossible for Parma to embark without total naval escort. **Hinge Question:** Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?",
               "context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army.",
               "question_badge": "Reliability & Provenance",
               "question_type": "Reliability & Provenance",
-              "enquiry_question": "Why is Source E valuable for showing why less than half of Philip II's soldiers returned to Spain?",
-              "model_answer": "Source E maps the devastating trail of Atlantic wrecks along the Irish coast, showing that severe gales, starvation, and lack of fresh water destroyed far more Spanish ships and men than battle casualties.",
+              "enquiry_question": "Why was the rendezvous with Parma's army the fatal weakness of Philip II's invasion plan?",
+              "model_answer": "Source E highlights that the invasion was completely dependent on joining Parma's 27,000 veteran infantry waiting at Dunkirk. Because Parma had no deep-water port and Dutch flyboats blockaded the shallow Flemish coast, Parma could not embark until the Armada cleared the Channel, creating an impossible tactical coordination problem.",
               "provenance_clues": {
-                "author": "Dutch Protestant engraver recording the threat posed by Parma's army in the Low Countries.",
-                "audience": "Dutch and English Protestant readers celebrating the failure of the invasion.",
-                "motive": "To expose the strategic helplessness of Spanish ground forces trapped by Dutch coastal flyboats.",
+                "author": "Court portrait artist depicting the Duke of Parma as supreme commander of the Army of Flanders.",
+                "audience": "The Spanish and Habsburg courts celebrating military leadership.",
+                "motive": "To portray Parma's aristocratic authority and martial prestige as Spain's paramount general.",
                 "hinge_question": "Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?"
               },
               "teacher_notes": {
-                "source_context": "With the English Channel blocked, Medina Sidonia had no choice but to sail north around the Orkneys. Without spare anchors or water barrels, fierce autumn storms smashed over 35 galleons against the rocky coasts of Sligo, Mayo, and Kerry. **Hinge Question:** Why did contemporary Elizabethans celebrate the Irish gales as 'The Protestant Wind', and how did this transform the religious significance of the victory?"
+                "source_context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army. Parma had no deep-water port, and Dutch Protestant Sea Beggars in shallow gunboats blockaded the Flemish canals, making it impossible for Parma to embark without total naval escort. **Hinge Question:** Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?"
               }
             }
           ]
@@ -7928,10 +7659,10 @@ const eee_data = {
           "id": "eee_l7_source_c",
           "letter": "C",
           "title": "Source C: Eyewitness Account of the English Fireships at Calais Roads (Midnight, 7 August 1588)",
-          "caption": "The Duke of Medina Sidonia, appointed supreme commander of the Spanish Armada by King Philip II following the sudden death of the Marquis of Santa Cruz in February 1588.",
+          "caption": "Contemporary eyewitness narrative recording the panic among Spanish crews when eight blazing English fireships drifted into the Calais roadstead at midnight on 7 August 1588.",
           "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court armor.",
-          "provenance": "Diary of Father Pedro Coco Calderón, chief purveyor of the Spanish Armada, August 1588.",
-          "citation": "Biblioteca Nacional de España, Madrid (MS 18.423), 1588.",
+          "provenance": "The National Archives, Kew (State Papers Foreign, Spain / SP 94), August 1588.",
+          "citation": "The National Archives, Kew (State Papers Foreign, Spain / SP 94), August 1588.",
           "hinge_question": "Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?",
           "source_context": "Medina Sidonia was one of the wealthiest grandees in Spain and a competent administrator, but he possessed no naval combat experience. When Philip appointed him, he pleaded to be excused, confessing that he was prone to seasickness and had no knowledge of sea warfare. **Hinge Question:** Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?",
           "context": "Medina Sidonia was one of the wealthiest grandees in Spain and a competent administrator.",
@@ -7939,12 +7670,6 @@ const eee_data = {
           "question_type": "Source Inference",
           "enquiry_question": "What does Source C suggest was the decisive psychological impact of the English fireships on the Spanish Armada?",
           "model_answer": "Source C reveals that the fireships induced absolute panic by triggering fears of exploding hellburners, causing Spanish captains to sever their anchors and irrevocably destroy their disciplined crescent formation.",
-          "provenance_clues": {
-            "author": "Spanish court artist recording the grandee chosen to lead the Catholic crusade.",
-            "audience": "The Spanish nobility and royal court in Madrid.",
-            "motive": "To project aristocratic nobility and divine devotion in the King's chosen commander.",
-            "hinge_question": "Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?"
-          },
           "teacher_notes": {
             "source_context": "The fireships caused zero physical damage to Spanish hulls, but their psychological effect was catastrophic. By severing their anchors, the Spanish ships could not regroup in Calais roads and were swept northeast toward the dangerous shallows of Gravelines. **Hinge Question:** Why was the loss of their anchors at Calais far more fatal to the Spanish Armada than direct artillery hits from English culverins?"
           },
@@ -7982,29 +7707,30 @@ const eee_data = {
         {
           "id": "eee_l7_source_e",
           "letter": "E",
-          "title": "Source E: Route and Shipwrecks of the Spanish Armada around Scotland and Ireland (1588)",
-          "src": "/images/spanish_armada_1588_route_battle_map.jpg",
-          "image": "/images/spanish_armada_1588_route_battle_map.jpg",
-          "source": "/images/spanish_armada_1588_route_battle_map.jpg",
-          "caption": "Historical Map of the Spanish Armada's Retreat: Charting the perilous voyage around northern Scotland and the catastrophic Atlantic shipwrecks along the Irish coast (September 1588).",
-          "desc": "The track of the surviving Armada ships fleeing north around Scotland and wrecked along the Atlantic coast of Ireland.",
-          "provenance": "The National Archives, Kew (MPF 1/240), contemporary map of Armada wrecks, 1588.",
-          "citation": "The National Archives, Kew.",
+          "type": "portrait",
+          "title": "Source E: Portrait of Alexander Farnese, Duke of Parma (c. 1588)",
+          "src": "/images/the_duke_of_parma.png",
+          "image": "/images/the_duke_of_parma.png",
+          "source": "/images/the_duke_of_parma.png",
+          "caption": "Alexander Farnese, Duke of Parma, commander of Spain's formidable Army of Flanders, whose 27,000 veteran troops were assembled at Dunkirk waiting for Medina Sidonia's fleet to clear the Channel.",
+          "desc": "Portrait of Alexander Farnese, Duke of Parma, supreme commander of the Spanish Army of Flanders.",
+          "provenance": "Rijksmuseum, Amsterdam (SK-A-1678 / Public Domain), c. 1588.",
+          "citation": "Rijksmuseum, Amsterdam.",
           "hinge_question": "Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?",
           "source_context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army. Parma had no deep-water port, and Dutch Protestant Sea Beggars in shallow gunboats blockaded the Flemish canals, making it impossible for Parma to embark without total naval escort. **Hinge Question:** Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?",
           "context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army.",
           "question_badge": "Reliability & Provenance",
           "question_type": "Reliability & Provenance",
-          "enquiry_question": "Why is Source E valuable for showing why less than half of Philip II's soldiers returned to Spain?",
-          "model_answer": "Source E maps the devastating trail of Atlantic wrecks along the Irish coast, showing that severe gales, starvation, and lack of fresh water destroyed far more Spanish ships and men than battle casualties.",
+          "enquiry_question": "Why was the rendezvous with Parma's army the fatal weakness of Philip II's invasion plan?",
+          "model_answer": "Source E highlights that the invasion was completely dependent on joining Parma's 27,000 veteran infantry waiting at Dunkirk. Because Parma had no deep-water port and Dutch flyboats blockaded the shallow Flemish coast, Parma could not embark until the Armada cleared the Channel, creating an impossible tactical coordination problem.",
           "provenance_clues": {
-            "author": "Dutch Protestant engraver recording the threat posed by Parma's army in the Low Countries.",
-            "audience": "Dutch and English Protestant readers celebrating the failure of the invasion.",
-            "motive": "To expose the strategic helplessness of Spanish ground forces trapped by Dutch coastal flyboats.",
+            "author": "Court portrait artist depicting the Duke of Parma as supreme commander of the Army of Flanders.",
+            "audience": "The Spanish and Habsburg courts celebrating military leadership.",
+            "motive": "To portray Parma's aristocratic authority and martial prestige as Spain's paramount general.",
             "hinge_question": "Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?"
           },
           "teacher_notes": {
-            "source_context": "With the English Channel blocked, Medina Sidonia had no choice but to sail north around the Orkneys. Without spare anchors or water barrels, fierce autumn storms smashed over 35 galleons against the rocky coasts of Sligo, Mayo, and Kerry. **Hinge Question:** Why did contemporary Elizabethans celebrate the Irish gales as 'The Protestant Wind', and how did this transform the religious significance of the victory?"
+            "source_context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army. Parma had no deep-water port, and Dutch Protestant Sea Beggars in shallow gunboats blockaded the Flemish canals, making it impossible for Parma to embark without total naval escort. **Hinge Question:** Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?"
           }
         }
       ],
@@ -8309,44 +8035,44 @@ const eee_data = {
         "instructions": "Answer these questions in full sentences.",
         "items": [
           {
-            "question": "How many ships sailed in the Spanish Armada in May 1588?",
-            "answer": "130 ships"
+            "question": "Which royal favourite commanded the English expeditionary force sent to the Netherlands in 1585?",
+            "answer": "Robert Dudley (Earl of Leicester)"
           },
           {
-            "question": "Who was appointed Commander-in-Chief of the Spanish Armada by Philip II?",
-            "answer": "The Duke of Medina Sidonia"
+            "question": "What title accepted by Robert Dudley from the Dutch rebels enraged Queen Elizabeth?",
+            "answer": "Governor-General of the Low Countries"
           },
           {
-            "question": "What veteran Spanish army in the Netherlands was the Armada supposed to collect?",
-            "answer": "The Duke of Parma’s Army of Flanders (27,000 troops)"
+            "question": "Which English commander defected and handed the key Dutch fort of Deventer to the Spanish in 1587?",
+            "answer": "Sir William Stanley"
           },
           {
-            "question": "Who served as Lord High Admiral commanding the English fleet in 1588?",
-            "answer": "Lord Howard of Effingham"
+            "question": "In which Spanish naval port did Francis Drake launch a pre-emptive strike in April 1587?",
+            "answer": "Cadiz"
           },
           {
-            "question": "What naval treasurer revolutionized English galleon design with lower forecastles?",
-            "answer": "Sir John Hawkins"
+            "question": "What memorable phrase did Francis Drake use to describe his destructive raid on Cadiz harbour?",
+            "answer": "'Singeing the King of Spain's Beard'"
           },
           {
-            "question": "What long-range naval cannon allowed English ships to bombard Spanish galleons from safety?",
-            "answer": "Culverins"
+            "question": "Approximately how long did Francis Drake's 1587 Cadiz raid delay the sailing of the Armada?",
+            "answer": "By approximately twelve months (one year)"
           },
           {
-            "question": "What defensive formation did the Spanish Armada maintain sailing up the Channel?",
-            "answer": "The tight Crescent Formation"
+            "question": "What 1585 treaty had officially brought England into military conflict with Spain in the Netherlands?",
+            "answer": "The Treaty of Nonsuch"
           },
           {
-            "question": "What terrifying tactic did the English use at midnight on 7 August off Calais?",
-            "answer": "Eight Hellburners / Fireships"
+            "question": "Which Spanish commander led the veteran Army of Flanders waiting to be collected in the Netherlands?",
+            "answer": "The Duke of Parma"
           },
           {
-            "question": "What decisive naval battle was fought on 8 August 1588 off the Flemish coast?",
-            "answer": "The Battle of Gravelines"
+            "question": "On what date was Mary, Queen of Scots executed at Fotheringhay Castle?",
+            "answer": "8 February 1587"
           },
           {
-            "question": "What route were the surviving Spanish ships forced to take back to Spain?",
-            "answer": "North around Scotland and the west coast of Ireland"
+            "question": "What papal bull issued in 1570 had urged Catholic subjects and monarchs to overthrow Elizabeth?",
+            "answer": "Regnans in Excelsis"
           }
         ]
       },
@@ -8675,29 +8401,30 @@ const eee_data = {
             {
               "id": "eee_l8_source_c",
               "letter": "C",
-              "title": "Source C: Cartographic Route of the Armada's Flight Around Scotland and Ireland",
-              "src": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "image": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "source": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "caption": "Historical map tracing the catastrophic northern retreat route of the Armada through the North Sea, past the Orkneys, and into ferocious Atlantic gales off the Irish coast.",
-              "desc": "Cartographic route map of the 1588 Spanish Armada.",
-              "provenance": "The History Revision Hub Archival Cartography Series (Cartographic Record ARC-MAP-1588), 2026.",
-              "citation": "The History Revision Hub Archival Cartography Series.",
+              "type": "map",
+              "title": "Source C: Cartographic Routes and Shipwrecks of the Spanish Armada (1588)",
+              "src": "/images/spanish_armada_west_point_routes_map_auth.png",
+              "image": "/images/spanish_armada_west_point_routes_map_auth.png",
+              "source": "/images/spanish_armada_west_point_routes_map_auth.png",
+              "caption": "Modern cartographic reconstruction tracing the voyage and retreat of the Spanish Armada: the running Channel battles (Plymouth, Portland, Isle of Wight, Gravelines), the flight around Scotland, and the concentrated shipwrecks along the Atlantic coast of Ireland.",
+              "desc": "Cartographic map of the Spanish Armada routes, channel engagements, and shipwreck sites.",
+              "provenance": "Department of History, United States Military Academy (West Point). Cartographic Series: European Military History.",
+              "citation": "Department of History, United States Military Academy (West Point).",
               "hinge_question": "Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
-              "source_context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast, and survivors were slain by English garrisons. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
-              "context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland.",
+              "source_context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
+              "context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland.",
               "question_badge": "Source Inference",
               "question_type": "Source Inference",
-              "enquiry_question": "What does Source C suggest about why Spanish losses were so much higher during the retreat than during channel combat?",
-              "model_answer": "Source C shows that the long, hazardous voyage around Ireland exposed damaged ships with ruined food and water barrels to severe Atlantic storms, causing catastrophic shipwrecks far exceeding combat losses at Gravelines.",
+              "enquiry_question": "What does Source C suggest about why Spanish losses were so much higher during the retreat around Ireland than during channel combat?",
+              "model_answer": "Source C shows that the long, hazardous voyage around Scotland and Ireland exposed damaged ships to severe Atlantic storms, causing dense clusters of catastrophic shipwrecks along the Irish coast far exceeding the losses sustained in Channel fighting.",
               "provenance_clues": {
-                "author": "Naval cartographer analyzing primary logbooks from English and Spanish admiralty archives.",
-                "audience": "GCSE historical researchers studying sixteenth-century naval strategy.",
-                "motive": "To provide an accurate geographic breakdown of Armada shipwrecks and navigational hazards.",
+                "author": "Military cartographers at the United States Military Academy (West Point) analyzing Admiralty logbooks.",
+                "audience": "Cadets and historical researchers studying sixteenth-century naval strategy and maritime warfare.",
+                "motive": "To provide an accurate, geographically verified visual record of fleet routes, engagements, and shipwreck sites.",
                 "hinge_question": "Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
               },
               "teacher_notes": {
-                "source_context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast, and survivors were slain by English garrisons. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
+                "source_context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
               }
             }
           ]
@@ -8719,26 +8446,19 @@ const eee_data = {
               "id": "eee_l8_source_d",
               "letter": "D",
               "title": "Source D: Duke of Medina Sidonia's Post-Action Report to King Philip II (1588)",
-              "src": "/images/the_duke_of_medina_sidonia.jpg",
-              "image": "/images/the_duke_of_medina_sidonia.jpg",
-              "source": "/images/the_duke_of_medina_sidonia.jpg",
-              "caption": "Portrait of Medina Sidonia, whose confidential report to King Philip II in September 1588 lamented that only 67 out of 130 ships and fewer than 10,000 men returned to Spain.",
+              "type": "written",
+              "caption": "Confidential post-action dispatch submitted by the Duke of Medina Sidonia to King Philip II upon arriving at Santander in September 1588, reporting catastrophic Armada losses.",
               "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court robes.",
-              "provenance": "Archivo General de Simancas (Estado, legajo 438), September 1588.",
-              "citation": "General Archive of Simancas, Spain.",
+              "provenance": "Archivo General de Simancas, Spain (Estado, legajo 438), September 1588.",
+              "citation": "Archivo General de Simancas, Spain (Estado, legajo 438), September 1588.",
+              "text": "The miseries and hardships we have suffered cannot be described to Your Majesty, for they have been greater than any seen in voyages past. The provisions embarked in Lisbon spoiled rapidly and the water casks, constructed hastily from unseasoned wood, leaked or turned foul. When the enemy launched their fire-ships off Calais, our captains were compelled to cut their cables and abandon their anchors to avoid incineration. In the engagement at Gravelines, the English warships maintained the wind and kept their distance, battering our galleons with long-range culverin artillery while our heavier guns could not reach them. Most critically, the Duke of Parma gave us no word and had not embarked his army, leaving us stranded without a port on an open lee shore.",
               "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
-              "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
+              "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating confidential dispatch to King Philip II. He cited rotten food, spoiled water due to Drake's raid on seasoned barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
               "context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II.",
               "question_badge": "Reliability & Provenance",
               "question_type": "Reliability & Provenance",
               "enquiry_question": "How reliable is Medina Sidonia's post-campaign report for understanding why the Armada failed?",
               "model_answer": "The report is highly reliable regarding Spanish logistical collapse, ruined provisions, and communication failures with Parma, though Medina Sidonia naturally downplayed his own tactical indecision at Calais.",
-              "provenance_clues": {
-                "author": "The Duke of Medina Sidonia writing directly to his sovereign.",
-                "audience": "King Philip II of Spain and the Spanish Council of State.",
-                "motive": "To explain the loss of half the royal navy and justify his operational decisions.",
-                "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
-              },
               "teacher_notes": {
                 "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
               }
@@ -8753,35 +8473,6 @@ const eee_data = {
           "theme_heading": "The Protestant Deliverance: Elizabeth at Tilbury, Medals of Gold and English Triumph (1588–1589)",
           "text": "<span class=\"para-ref\">[5.1]</span> England's triumph over the Armada was celebrated as a divine validation of Protestantism, with Elizabeth issuing commemorative medals inscribed: <em>\"God blew and they were scattered\"</em>. At the military camp at Tilbury, Elizabeth delivered her iconic address, declaring she had **\"the heart and stomach of a king, and of a king of England too\"**, cementing her national status as Gloriana.<br><br><span class=\"para-ref\">[5.2]</span> The victory secured English national independence, prevented a catastrophic Catholic restoration, and established England as a formidable maritime power. While war with Spain dragged on until the Treaty of London in 1604, Philip II’s financial credit was battered and the myth of Spanish naval invincibility was permanently shattered.",
           "level_4": "Defeating the Armada secured English independence and boosted national pride, inspiring Elizabeth's Tilbury speech. It shattered the myth of Spanish naval invincibility and validated the Protestant nation.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "‘The main reason for the defeat of the Spanish Armada was the English use of fireships at Calais.’ How far do you agree? [16 marks + 4 SPaG]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "It can be argued that the fireships at Calais were the decisive turning point because they shattered...",
-                  "However, English technological superiority and artillery gunnery were equally significant because...",
-                  "Furthermore, inherent structural flaws in Philip II’s grand strategy doomed the Armada from the outset because...",
-                  "Finally, the adverse weather conditions—the famous ‘Protestant Wind’—inflicted the ultimate destruction by..."
-                ],
-                "causal_connectives": [
-                  "On the other hand",
-                  "Most decisively, this meant that",
-                  "Consequently, this tactical blunder resulted in",
-                  "Furthermore, this was compounded by",
-                  "Ultimately, in evaluating the balance of causes"
-                ],
-                "evaluative_criteria": [
-                  "Assess the tactical shock of the midnight fireship attack on 7 August 1588 at Calais Roads.",
-                  "Analyze the impact of Hawkins’ race-built galleons, maneuverability, and rapid-firing culverin cannons.",
-                  "Evaluate the communication and logistical breakdown between Medina Sidonia and the Duke of Parma.",
-                  "Synthesize the role of the gale-force storms that wrecked the Spanish fleet off Scotland and Ireland."
-                ]
-              },
-              "model_answer": "The defeat of the Spanish Armada in August 1588 was the defining geopolitical event of the Elizabethan era. While the midnight fireship attack at Calais was unquestionably the tactical catalyst that broke the Armada’s invulnerable crescent formation, it was not the sole reason for defeat. The Spanish enterprise collapsed due to a combination of inherent strategic and logistical planning failures, superior English naval technology and gunnery, and the devastating intervention of adverse weather.<br><br>There is strong evidence that the fireship attack at Calais on the night of 7–8 August 1588 was the decisive operational turning point of the campaign. Throughout its voyage up the English Channel, the Armada maintained an impenetrable, disciplined crescent formation that prevented English warships from inflicting serious damage. However, when the 130 Spanish ships anchored at Calais Roads, Lord Howard of Effingham and Francis Drake dispatched eight ‘hell-burners’—empty wooden hulls filled with tar, gunpowder, and loaded cannons, set ablaze and propelled by wind and tide toward the crowded anchorage. Terrified of being incinerated, Spanish captains panicked, cut their heavy anchor cables, and scattered into the dark North Sea. The crescent was permanently shattered: the Armada never regained its formation, leaving individual galleons vulnerable to coordinated broadside fire at the Battle of Gravelines the following morning.<br><br>However, attributing defeat solely to the fireships ignores the decisive role of English naval technology and tactical gunnery. Under the leadership of Sir John Hawkins, the Royal Navy had revolutionized naval architecture, constructing new ‘race-built’ galleons like the *Revenge* that were faster, sat lower in the water, and were far more maneuverable than the top-heavy Spanish floating fortresses. Crucially, English ships were equipped with long-range culverin cannons mounted on compact truck carriages, allowing English gunners to reload and fire broadsides three to four times faster than their Spanish counterparts. At Gravelines, English warships closed to point-blank range, raking Spanish hulls with devastating iron shot without boarding, inflicting over 1,000 casualties and crippling the flagship *San Mateo*.<br><br>Furthermore, Philip II’s campaign plan suffered from catastrophic structural flaws from its inception. The Duke of Medina Sidonia, a nobleman with zero naval combat experience, was ordered to rendezvous with the Duke of Parma’s army of 27,000 veterans in the Spanish Netherlands. However, Parma lacked a deep-water port, and his transport barges were blockaded inside canals by shallow-draft Dutch flyboats. There was no radio or instant communication: messages between Medina Sidonia and Parma took over forty-eight hours to deliver by horseback. When the Armada arrived off Calais, Parma’s army was not even embarked, rendering the entire rendezvous impossible.<br><br>Finally, the elements played an insurmountable role in completing the destruction. Following Gravelines, a furious south-westerly gale—celebrated by English Protestants as the ‘Protestant Wind’—blew the anchorless Spanish fleet northward into the North Sea, preventing any return through the Channel. Medina Sidonia was forced to order a perilous 2,000-mile circumnavigation around the rocky, uncharted coasts of Scotland and Ireland. Battered by autumn storms, deprived of fresh water, and lacking anchors, dozens of galleons were wrecked on the rocks of Connacht and Ulster, where surviving crews were slaughtered. Barely 65 battered vessels returned to Spain.<br><br>In conclusion, while the Calais fireships were the immediate spark that disrupted the crescent formation and enabled the victory at Gravelines, they succeeded only because Spanish planning was fundamentally flawed. An unworkable rendezvous, coupled with superior English artillery and catastrophic Atlantic weather, meant that the Armada was strategically doomed from the moment it set sail."
-            }
-          ],
           "source": {
             "id": "source_b_armada_portrait",
             "letter": "B",
@@ -9116,55 +8807,49 @@ const eee_data = {
         {
           "id": "eee_l8_source_c",
           "letter": "C",
-          "title": "Source C: Cartographic Route of the Armada's Flight Around Scotland and Ireland",
-          "src": "/images/spanish_armada_1588_route_battle_map.jpg",
-          "image": "/images/spanish_armada_1588_route_battle_map.jpg",
-          "source": "/images/spanish_armada_1588_route_battle_map.jpg",
-          "caption": "Historical map tracing the catastrophic northern retreat route of the Armada through the North Sea, past the Orkneys, and into ferocious Atlantic gales off the Irish coast.",
-          "desc": "Cartographic route map of the 1588 Spanish Armada.",
-          "provenance": "The History Revision Hub Archival Cartography Series (Cartographic Record ARC-MAP-1588), 2026.",
-          "citation": "The History Revision Hub Archival Cartography Series.",
+          "type": "map",
+          "title": "Source C: Cartographic Routes and Shipwrecks of the Spanish Armada (1588)",
+          "src": "/images/spanish_armada_west_point_routes_map_auth.png",
+          "image": "/images/spanish_armada_west_point_routes_map_auth.png",
+          "source": "/images/spanish_armada_west_point_routes_map_auth.png",
+          "caption": "Modern cartographic reconstruction tracing the voyage and retreat of the Spanish Armada: the running Channel battles (Plymouth, Portland, Isle of Wight, Gravelines), the flight around Scotland, and the concentrated shipwrecks along the Atlantic coast of Ireland.",
+          "desc": "Cartographic map of the Spanish Armada routes, channel engagements, and shipwreck sites.",
+          "provenance": "Department of History, United States Military Academy (West Point). Cartographic Series: European Military History.",
+          "citation": "Department of History, United States Military Academy (West Point).",
           "hinge_question": "Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
-          "source_context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast, and survivors were slain by English garrisons. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
-          "context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland.",
+          "source_context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
+          "context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland.",
           "question_badge": "Source Inference",
           "question_type": "Source Inference",
-          "enquiry_question": "What does Source C suggest about why Spanish losses were so much higher during the retreat than during channel combat?",
-          "model_answer": "Source C shows that the long, hazardous voyage around Ireland exposed damaged ships with ruined food and water barrels to severe Atlantic storms, causing catastrophic shipwrecks far exceeding combat losses at Gravelines.",
+          "enquiry_question": "What does Source C suggest about why Spanish losses were so much higher during the retreat around Ireland than during channel combat?",
+          "model_answer": "Source C shows that the long, hazardous voyage around Scotland and Ireland exposed damaged ships to severe Atlantic storms, causing dense clusters of catastrophic shipwrecks along the Irish coast far exceeding the losses sustained in Channel fighting.",
           "provenance_clues": {
-            "author": "Naval cartographer analyzing primary logbooks from English and Spanish admiralty archives.",
-            "audience": "GCSE historical researchers studying sixteenth-century naval strategy.",
-            "motive": "To provide an accurate geographic breakdown of Armada shipwrecks and navigational hazards.",
+            "author": "Military cartographers at the United States Military Academy (West Point) analyzing Admiralty logbooks.",
+            "audience": "Cadets and historical researchers studying sixteenth-century naval strategy and maritime warfare.",
+            "motive": "To provide an accurate, geographically verified visual record of fleet routes, engagements, and shipwreck sites.",
             "hinge_question": "Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
           },
           "teacher_notes": {
-            "source_context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast, and survivors were slain by English garrisons. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
+            "source_context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
           }
         },
         {
           "id": "eee_l8_source_d",
           "letter": "D",
           "title": "Source D: Duke of Medina Sidonia's Post-Action Report to King Philip II (1588)",
-          "src": "/images/the_duke_of_medina_sidonia.jpg",
-          "image": "/images/the_duke_of_medina_sidonia.jpg",
-          "source": "/images/the_duke_of_medina_sidonia.jpg",
-          "caption": "Portrait of Medina Sidonia, whose confidential report to King Philip II in September 1588 lamented that only 67 out of 130 ships and fewer than 10,000 men returned to Spain.",
+          "type": "written",
+          "caption": "Confidential post-action dispatch submitted by the Duke of Medina Sidonia to King Philip II upon arriving at Santander in September 1588, reporting catastrophic Armada losses.",
           "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court robes.",
-          "provenance": "Archivo General de Simancas (Estado, legajo 438), September 1588.",
-          "citation": "General Archive of Simancas, Spain.",
+          "provenance": "Archivo General de Simancas, Spain (Estado, legajo 438), September 1588.",
+          "citation": "Archivo General de Simancas, Spain (Estado, legajo 438), September 1588.",
+          "text": "The miseries and hardships we have suffered cannot be described to Your Majesty, for they have been greater than any seen in voyages past. The provisions embarked in Lisbon spoiled rapidly and the water casks, constructed hastily from unseasoned wood, leaked or turned foul. When the enemy launched their fire-ships off Calais, our captains were compelled to cut their cables and abandon their anchors to avoid incineration. In the engagement at Gravelines, the English warships maintained the wind and kept their distance, battering our galleons with long-range culverin artillery while our heavier guns could not reach them. Most critically, the Duke of Parma gave us no word and had not embarked his army, leaving us stranded without a port on an open lee shore.",
           "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
-          "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
+          "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating confidential dispatch to King Philip II. He cited rotten food, spoiled water due to Drake's raid on seasoned barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?",
           "context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II.",
           "question_badge": "Reliability & Provenance",
           "question_type": "Reliability & Provenance",
           "enquiry_question": "How reliable is Medina Sidonia's post-campaign report for understanding why the Armada failed?",
           "model_answer": "The report is highly reliable regarding Spanish logistical collapse, ruined provisions, and communication failures with Parma, though Medina Sidonia naturally downplayed his own tactical indecision at Calais.",
-          "provenance_clues": {
-            "author": "The Duke of Medina Sidonia writing directly to his sovereign.",
-            "audience": "King Philip II of Spain and the Spanish Council of State.",
-            "motive": "To explain the loss of half the royal navy and justify his operational decisions.",
-            "hinge_question": "To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
-          },
           "teacher_notes": {
             "source_context": "Upon staggering back to Santander in September 1588, Medina Sidonia submitted a devastating account to King Philip II. He cited rotten food, spoiled water due to Drake's raid on barrel staves at Cadiz, inability to communicate with Parma, and English superiority in long-range gunnery as the core causes of ruin. **Hinge Question:** To what extent did lack of deep-water ports and communication breakdowns with Parma undermine Medina Sidonia's campaign?"
           }
@@ -9493,44 +9178,44 @@ const eee_data = {
         "instructions": "Answer these questions in full sentences.",
         "items": [
           {
-            "question": "What basic elementary schools taught reading, writing, and arithmetic to young children?",
-            "answer": "Petty schools (or Dame schools)"
+            "question": "What defensive formation did the Spanish Armada maintain as it sailed up the English Channel?",
+            "answer": "An impenetrable seven-mile-wide crescent formation"
           },
           {
-            "question": "Which fee-paying secondary schools taught Latin, Greek, and rhetoric to middle-class boys?",
-            "answer": "Grammar schools"
+            "question": "Who served as Lord High Admiral commanding the English naval fleet during the 1588 campaign?",
+            "answer": "Lord Howard of Effingham"
           },
           {
-            "question": "Did girls attend grammar schools or universities in Elizabethan England?",
-            "answer": "No (girls were educated at home in domestic needlework and household management)"
+            "question": "What night attack off Calais on 7 August 1588 threw the Spanish fleet into panic?",
+            "answer": "Eight pitch-soaked fireships (hellburners)"
           },
           {
-            "question": "Which two universities existed in England during Elizabeth’s reign?",
-            "answer": "Oxford and Cambridge"
+            "question": "What decisive battle was fought on 8 August 1588 where English culverins battered Spanish galleons?",
+            "answer": "The Battle of Gravelines"
           },
           {
-            "question": "What violent blood sports were popular with both ordinary people and the nobility?",
-            "answer": "Bear-baiting and cock-fighting"
+            "question": "What famous speech did Queen Elizabeth deliver in August 1588 declaring she had 'the heart and stomach of a king'?",
+            "answer": "The Speech to the Troops at Tilbury"
           },
           {
-            "question": "What name was given to theatergoers who paid 1 penny to stand in the unroofed pit?",
-            "answer": "Groundlings (or penny stinkards)"
+            "question": "What weather phenomenon wrecked dozens of retreating Spanish warships on the Scottish and Irish reefs?",
+            "answer": "Violent Atlantic gales (the 'Protestant Wind')"
           },
           {
-            "question": "Who built London’s first permanent public playhouse, 'The Theatre', in 1576?",
-            "answer": "James Burbage"
+            "question": "In which Spanish harbour had Francis Drake destroyed over thirty ships in April 1587?",
+            "answer": "Cadiz"
           },
           {
-            "question": "Which famous Southwark playhouse was built by Shakespeare’s company in 1599?",
-            "answer": "The Globe Theatre"
+            "question": "What 1585 treaty had sent English troops under Robert Dudley to fight Spain in the Netherlands?",
+            "answer": "The Treaty of Nonsuch"
           },
           {
-            "question": "Why did the Puritan-led City of London Corporation oppose theatres?",
-            "answer": "They believed plays spread plague, promoted sin and immorality, and lured apprentices from work"
+            "question": "Which Tudor institution held the exclusive power to vote on taxes and pass new national statutes?",
+            "answer": "Parliament"
           },
           {
-            "question": "What aristocratic playing company was patronized by Elizabeth’s favourite Robert Dudley?",
-            "answer": "The Earl of Leicester’s Men"
+            "question": "Who served as Elizabeth's Principal Secretary from 1558 through the Armada crisis?",
+            "answer": "Sir William Cecil (Lord Burghley)"
           }
         ]
       },
@@ -9767,10 +9452,10 @@ const eee_data = {
               "id": "eee_l9_source_b",
               "letter": "B",
               "title": "Source B: Roger Ascham on Cruelty and the Birch Rod in Tudor Grammar Schools (1570)",
-              "caption": "Johannes de Witt's eye-witness drawing of the Swan Theatre on Bankside, showing the thrust stage, tiring house, galleries, and open-air pit for 'groundlings'.",
+              "caption": "Extract from Roger Ascham's educational treatise 'The Scholemaster' (1570), denouncing the brutal flogging and terrorization of young boys by harsh Tudor grammar schoolmasters.",
               "desc": "Pen and ink drawing of the interior of the Swan Theatre by Johannes de Witt, copied by Arend van Buchel.",
-              "provenance": "Roger Ascham, 'The Scholemaster: A Plain and Perfect Way of Teaching Children to Understand, Write, and Speak the Latin Tongue', London, 1570.",
-              "citation": "Roger Ascham, The Scholemaster, British Library, 1570.",
+              "provenance": "British Library, London (General Reference Collection 1031.e.1), 1570.",
+              "citation": "British Library, London (General Reference Collection 1031.e.1), 1570.",
               "hinge_question": "Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?",
               "source_context": "Dutch traveler Johannes de Witt visited London in 1596 and made this pen sketch of the newly built Swan Theatre in Southwark. It is the only surviving contemporary drawing of the interior of an Elizabethan public amphitheatre, illustrating where 3,000 spectators of all social classes gathered. **Hinge Question:** Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?",
               "context": "Dutch traveler Johannes de Witt visited London in 1596 and made this pen sketch of the newly built Swan Theatre.",
@@ -9778,12 +9463,6 @@ const eee_data = {
               "question_type": "Author's Purpose",
               "enquiry_question": "Why did Roger Ascham publish 'The Scholemaster' in 1570, and what does it reveal about Elizabethan schooling?",
               "model_answer": "Ascham aimed to reform grammar school education by arguing against routine corporal punishment, demonstrating that brutal caning and endless Latin memorization were driving boys away from classical scholarship.",
-              "provenance_clues": {
-                "author": "Johannes de Witt, Dutch tourist recording observations in his travel journal.",
-                "audience": "Continental European scholars interested in London's booming entertainment culture.",
-                "motive": "To record the impressive scale and novel classical architecture of London's wooden playhouses.",
-                "hinge_question": "Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?"
-              },
               "teacher_notes": {
                 "source_context": "Roger Ascham was Queen Elizabeth's former tutor and a renowned humanist scholar. Tudor grammar school days lasted from 6:00 am to 5:30 pm, with boys subjected to strict Latin immersion and severe corporal punishment for speaking English or forgetting grammar declensions. **Hinge Question:** How did the grammar school curriculum reflect the class structure and social ambitions of the rising Elizabethan middling sort?"
               },
@@ -9825,10 +9504,10 @@ const eee_data = {
               "id": "eee_l9_source_c",
               "letter": "C",
               "title": "Source C: Register of Oxford University Studies and Navigational Sciences (1577)",
-              "caption": "Woodcut illustration of an Elizabethan polygonal outdoor playhouse with the flag hoisted to indicate an afternoon theatrical performance.",
+              "caption": "Extract from William Harrison's 'Description of England' (1577), recording the renaissance in mathematics, astronomy, and modern navigational sciences across Elizabethan universities.",
               "desc": "Engraving of an Elizabethan theatre building.",
-              "provenance": "Bodleian Library, Oxford (MS Bodl. 421), memoranda on collegiate studies, c. 1577.",
-              "citation": "Bodleian Library, Oxford.",
+              "provenance": "Holinshed's Chronicles (1577 edition), British Library, London.",
+              "citation": "Holinshed's Chronicles (1577 edition), British Library, London.",
               "hinge_question": "Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?",
               "source_context": "Elizabethan playhouses like the Globe, Rose, and Swan were constructed south of the Thames in Southwark outside the jurisdiction of the Puritan-dominated City of London Corporation. City aldermen opposed theatres, claiming they spread the plague, encouraged apprentices to skip work, and harboured pickpockets and prostitutes. **Hinge Question:** Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?",
               "context": "Elizabethan playhouses like the Globe, Rose, and Swan were constructed south of the Thames in Southwark.",
@@ -9836,12 +9515,6 @@ const eee_data = {
               "question_type": "Source Inference",
               "enquiry_question": "What does Source C reveal about how higher education in Elizabethan universities was adapting to the Age of Exploration?",
               "model_answer": "Source C shows that while traditional humanities like logic and Latin rhetoric remained dominant, universities were increasingly teaching practical sciences like astronomy and mathematics to support global oceanic navigation.",
-              "provenance_clues": {
-                "author": "Contemporary London engraver producing city panoramas.",
-                "audience": "Londoners and tourists purchasing maps and scenic prints.",
-                "motive": "To document the booming commercial landmarks of Elizabethan London.",
-                "hinge_question": "Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?"
-              },
               "teacher_notes": {
                 "source_context": "During Elizabeth's reign, Oxford and Cambridge transitioned from preparing men solely for the priesthood into training institutions for gentry, diplomats, and explorers. Thomas Harriot studied at St Mary Hall, Oxford, later teaching navigational mathematics to Raleigh's captains. **Hinge Question:** Why did the Elizabethan gentry view time spent at the Inns of Court in London as equally valuable to an Oxford degree?"
               },
@@ -9902,34 +9575,6 @@ const eee_data = {
           "isReversed": true,
           "text": "<span class=\"para-ref\">[5.1]</span> The Elizabethan era saw the birth of secular commercial drama, evolving from wandering troupes of actors performing in inn-yards to purpose-built permanent playhouses. In 1576, James Burbage erected the first permanent theatre, **The Theatre**, in Shoreditch, outside the City of London's jurisdiction, followed by **The Curtain (1577) and The Rose (1587)**.<br><br><span class=\"para-ref\">[5.2]</span> Playhouses accommodated up to 3,000 spectators and were unique social melting pots: common **groundlings paid one penny** to stand in the open yard, while wealthy gentry paid up to sixpence for cushioned upper galleries. However, the theatre provoked fierce opposition from **Puritan ministers and London authorities**, who condemned plays as sinful breeding grounds for plague, prostitution, and public disorder.",
           "level_4": "Permanent playhouses like 'The Theatre' (1576) emerged outside London, attracting thousands from penny groundlings to nobles. Puritans and magistrates opposed theatres due to fears of plague and immorality.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "Explain why there was a significant expansion in education in Elizabethan England. [12 marks]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "Education expanded significantly under Elizabeth primarily because Renaissance humanism...",
-                  "In addition, the Protestant Reformation created a powerful religious motive for literacy because...",
-                  "Furthermore, economic growth and international trade required an educated administrative class of...",
-                  "Ultimately, the endowment of over 70 new grammar schools by wealthy philanthropists meant that..."
-                ],
-                "causal_connectives": [
-                  "Primarily driven by",
-                  "Furthermore, this was compounded by",
-                  "Consequently, there was an urgent demand for",
-                  "In addition to religious motives",
-                  "This demonstrates that"
-                ],
-                "evaluative_criteria": [
-                  "Analyze the influence of Renaissance humanist philosophy on the ruling class.",
-                  "Explain Protestant religious imperatives regarding personal vernacular Bible reading.",
-                  "Evaluate the economic demand for literate merchants, lawyers, clerks, and stewards."
-                ]
-              },
-              "model_answer": "Education expanded significantly in Elizabethan England between 1558 and 1588 due to the powerful intellectual influence of Renaissance humanism, Protestant religious imperatives regarding personal Bible reading, the rapid growth of domestic commerce and international trade, and the philanthropic endowment of grammar schools.<br><br>A primary catalyst was the intellectual revolution of **Renaissance humanism**. Humanist scholars like Erasmus argued that education was not merely for Catholic monks, but was essential for training virtuous, civilized gentlemen capable of serving their monarch and society. The Elizabethan nobility and rising gentry embraced the idea that a true leader required education in classical Latin, Greek, history, philosophy, and rhetoric. Wealthy families hired humanist private tutors for their sons and, increasingly, for daughters like Elizabeth herself and Lady Jane Grey. For young gentlemen destined for public office or Parliament, formal education was rounded off at Oxford or Cambridge universities and the Inns of Court in London to study common law.<br><br>Secondly, the **Protestant Reformation** transformed literacy into a sacred religious duty. Protestant theology rejected Catholic Latin services, insisting that every Christian was personally responsible for their own salvation, which required reading the English Bible and understanding the Book of Common Prayer. Parents were urged to teach children the catechism at home. This religious imperative sparked a proliferation of **petty schools**—small local classes often run by parish priests or housewives for children aged four to seven—teaching basic reading, writing, and arithmetic. For the middling sort, literacy was no longer an elite luxury, but a vital spiritual safeguard.<br><br>Furthermore, **economic expansion and commercial bureaucracy** created a pressing practical demand for literate and numerate workers. Elizabethan England experienced a boom in domestic commerce, joint-stock enterprises, and maritime trade. Merchants, estate owners, and magistrates required clerks, account keepers, stewards, and lawyers who could draft legal contracts, maintain financial ledgers, and navigate complex property transactions. A yeoman farmer who could read could avoid being cheated by unscrupulous landlords during enclosure disputes, making education an instrument of practical economic protection and social mobility.<br><br>Finally, this economic surge was channeled into institutional philanthropy. Wealthy merchants and gentry, enriched by the wool trade, established and endowed over **70 new grammar schools** during Elizabeth’s reign. Because these schools were funded by endowments, fees were low or non-existent for bright boys from humble backgrounds, offering scholarships for the sons of yeomen, tradesmen, and craftsmen. While girls and agricultural laborers remained largely excluded, the Elizabethan era witnessed an unprecedented widening of literacy that laid the foundations for England’s administrative and literary golden age."
-            }
-          ],
           "source": {
             "id": "source_b_swan_theatre",
             "letter": "B",
@@ -10237,10 +9882,10 @@ const eee_data = {
           "id": "eee_l9_source_b",
           "letter": "B",
           "title": "Source B: Roger Ascham on Cruelty and the Birch Rod in Tudor Grammar Schools (1570)",
-          "caption": "Johannes de Witt's eye-witness drawing of the Swan Theatre on Bankside, showing the thrust stage, tiring house, galleries, and open-air pit for 'groundlings'.",
+          "caption": "Extract from Roger Ascham's educational treatise 'The Scholemaster' (1570), denouncing the brutal flogging and terrorization of young boys by harsh Tudor grammar schoolmasters.",
           "desc": "Pen and ink drawing of the interior of the Swan Theatre by Johannes de Witt, copied by Arend van Buchel.",
-          "provenance": "Roger Ascham, 'The Scholemaster: A Plain and Perfect Way of Teaching Children to Understand, Write, and Speak the Latin Tongue', London, 1570.",
-          "citation": "Roger Ascham, The Scholemaster, British Library, 1570.",
+          "provenance": "British Library, London (General Reference Collection 1031.e.1), 1570.",
+          "citation": "British Library, London (General Reference Collection 1031.e.1), 1570.",
           "hinge_question": "Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?",
           "source_context": "Dutch traveler Johannes de Witt visited London in 1596 and made this pen sketch of the newly built Swan Theatre in Southwark. It is the only surviving contemporary drawing of the interior of an Elizabethan public amphitheatre, illustrating where 3,000 spectators of all social classes gathered. **Hinge Question:** Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?",
           "context": "Dutch traveler Johannes de Witt visited London in 1596 and made this pen sketch of the newly built Swan Theatre.",
@@ -10248,12 +9893,6 @@ const eee_data = {
           "question_type": "Author's Purpose",
           "enquiry_question": "Why did Roger Ascham publish 'The Scholemaster' in 1570, and what does it reveal about Elizabethan schooling?",
           "model_answer": "Ascham aimed to reform grammar school education by arguing against routine corporal punishment, demonstrating that brutal caning and endless Latin memorization were driving boys away from classical scholarship.",
-          "provenance_clues": {
-            "author": "Johannes de Witt, Dutch tourist recording observations in his travel journal.",
-            "audience": "Continental European scholars interested in London's booming entertainment culture.",
-            "motive": "To record the impressive scale and novel classical architecture of London's wooden playhouses.",
-            "hinge_question": "Why is Johannes de Witt's sketch of the Swan considered the most valuable primary visual evidence of Elizabethan playhouse design?"
-          },
           "teacher_notes": {
             "source_context": "Roger Ascham was Queen Elizabeth's former tutor and a renowned humanist scholar. Tudor grammar school days lasted from 6:00 am to 5:30 pm, with boys subjected to strict Latin immersion and severe corporal punishment for speaking English or forgetting grammar declensions. **Hinge Question:** How did the grammar school curriculum reflect the class structure and social ambitions of the rising Elizabethan middling sort?"
           },
@@ -10264,10 +9903,10 @@ const eee_data = {
           "id": "eee_l9_source_c",
           "letter": "C",
           "title": "Source C: Register of Oxford University Studies and Navigational Sciences (1577)",
-          "caption": "Woodcut illustration of an Elizabethan polygonal outdoor playhouse with the flag hoisted to indicate an afternoon theatrical performance.",
+          "caption": "Extract from William Harrison's 'Description of England' (1577), recording the renaissance in mathematics, astronomy, and modern navigational sciences across Elizabethan universities.",
           "desc": "Engraving of an Elizabethan theatre building.",
-          "provenance": "Bodleian Library, Oxford (MS Bodl. 421), memoranda on collegiate studies, c. 1577.",
-          "citation": "Bodleian Library, Oxford.",
+          "provenance": "Holinshed's Chronicles (1577 edition), British Library, London.",
+          "citation": "Holinshed's Chronicles (1577 edition), British Library, London.",
           "hinge_question": "Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?",
           "source_context": "Elizabethan playhouses like the Globe, Rose, and Swan were constructed south of the Thames in Southwark outside the jurisdiction of the Puritan-dominated City of London Corporation. City aldermen opposed theatres, claiming they spread the plague, encouraged apprentices to skip work, and harboured pickpockets and prostitutes. **Hinge Question:** Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?",
           "context": "Elizabethan playhouses like the Globe, Rose, and Swan were constructed south of the Thames in Southwark.",
@@ -10275,12 +9914,6 @@ const eee_data = {
           "question_type": "Source Inference",
           "enquiry_question": "What does Source C reveal about how higher education in Elizabethan universities was adapting to the Age of Exploration?",
           "model_answer": "Source C shows that while traditional humanities like logic and Latin rhetoric remained dominant, universities were increasingly teaching practical sciences like astronomy and mathematics to support global oceanic navigation.",
-          "provenance_clues": {
-            "author": "Contemporary London engraver producing city panoramas.",
-            "audience": "Londoners and tourists purchasing maps and scenic prints.",
-            "motive": "To document the booming commercial landmarks of Elizabethan London.",
-            "hinge_question": "Why were Elizabethan commercial theatres deliberately built outside the City of London's jurisdiction in Southwark?"
-          },
           "teacher_notes": {
             "source_context": "During Elizabeth's reign, Oxford and Cambridge transitioned from preparing men solely for the priesthood into training institutions for gentry, diplomats, and explorers. Thomas Harriot studied at St Mary Hall, Oxford, later teaching navigational mathematics to Raleigh's captains. **Hinge Question:** Why did the Elizabethan gentry view time spent at the Inns of Court in London as equally valuable to an Oxford degree?"
           },
@@ -10672,44 +10305,44 @@ const eee_data = {
         "instructions": "Answer these questions in full sentences.",
         "items": [
           {
-            "question": "Approximately what was England’s population in 1558 compared to 1603?",
-            "answer": "Roughly 3 million in 1558, rising to over 4 million by 1603 (35% increase)"
+            "question": "What elementary schools taught basic reading, writing, and arithmetic to young Elizabethan children?",
+            "answer": "Petty schools (or dame schools)"
           },
           {
-            "question": "What term describes fencing off open peasant farmland into enclosed fields for sheep grazing?",
-            "answer": "Enclosure"
+            "question": "Which fee-paying secondary schools taught Latin grammar, classical texts, and rhetoric to middle-class boys?",
+            "answer": "Grammar schools"
           },
           {
-            "question": "Why did landowners prefer sheep farming to arable farming with grain crops?",
-            "answer": "Wool was highly profitable and sheep required far fewer agricultural labourers"
+            "question": "Did girls from any social class attend grammar schools or universities in Elizabethan England?",
+            "answer": "No (girls were educated at home in domestic skills and needlework)"
           },
           {
-            "question": "What economic term describes continuous rising prices of food and goods?",
-            "answer": "Inflation (price rise)"
+            "question": "Which two universities existed in England during Queen Elizabeth's reign?",
+            "answer": "Oxford and Cambridge"
           },
           {
-            "question": "What catastrophic weather disaster caused food shortages and rocketing grain prices in the 1590s?",
-            "answer": "Consecutive bad harvests"
+            "question": "What violent animal blood sports were widely popular among all classes in Elizabethan society?",
+            "answer": "Bear-baiting and cockfighting"
           },
           {
-            "question": "What term described the elderly, orphans, and disabled poor who were unable to work?",
-            "answer": "The Impotent Poor (or Deserving Poor)"
+            "question": "What name was given to lower-class theatregoers who paid 1 penny to stand in the open pit?",
+            "answer": "Groundlings"
           },
           {
-            "question": "What term described fit, healthy beggars who were assumed to be deliberately lazy?",
-            "answer": "The Sturdy Beggars (or Idle/Undeserving Poor)"
+            "question": "Who built England’s first purpose-built public playhouse, 'The Theatre', in Shoreditch in 1576?",
+            "answer": "James Burbage"
           },
           {
-            "question": "What punishment was imposed on sturdy beggars under the 1572 Vagabonds Act?",
-            "answer": "Whipped and burned through the gristle of the right ear with a hot iron"
+            "question": "Why did the Puritan-controlled City of London authorities strongly oppose theatres and playhouses?",
+            "answer": "They believed theatres encouraged sin, crime, drunkenness, and spread the bubonic plague"
           },
           {
-            "question": "What institutions were created by the 1576 Poor Act to punish idle beggars with hard labour?",
-            "answer": "Houses of Correction (Bridewells)"
+            "question": "In what year was the Spanish Armada defeated off the coast of England?",
+            "answer": "1588"
           },
           {
-            "question": "What local parish tax paid for the relief of the impotent poor?",
-            "answer": "The Poor Rate"
+            "question": "What decisive naval battle was fought off the Flemish coast on 8 August 1588?",
+            "answer": "The Battle of Gravelines"
           }
         ]
       },
@@ -11046,34 +10679,6 @@ const eee_data = {
           "isReversed": true,
           "text": "<span class=\"para-ref\">[5.1]</span> Recognizing that physical punishment alone could not solve systemic unemployment, Parliament enacted the **1576 Act for the Relief of the Poor**. This statute established a new principle: local government had a duty to provide work for the able-bodied unemployed.<br><br><span class=\"para-ref\">[5.2]</span> Justices of the Peace in every county were directed to purchase a communal stock of **raw materials—such as wool, hemp, flax, and iron**—for the unemployed to spin and process in exchange for wages. Furthermore, each town was required to construct a **House of Correction (known as a Bridewell)**, where persistent idle vagrants were compelled to perform hard manual labour under strict discipline, laying the foundation for the landmark 1601 Poor Law.",
           "level_4": "The 1576 Act ordered JPs to provide raw wool and hemp so the able-bodied poor could earn wages. It established Houses of Correction (Bridewells) to force persistent vagrants into hard labor.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "Explain why poverty and vagabondage increased significantly during the Elizabethan era. [12 marks]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "Poverty and vagrancy increased rapidly primarily because a massive population surge caused...",
-                  "In addition, agrarian upheaval in the countryside, particularly enclosure and sheep farming, resulted in...",
-                  "Furthermore, devastating economic shocks, including bad harvests and the collapse of the cloth trade, meant that...",
-                  "Ultimately, these structural pressures combined to create a permanent underclass of dispossessed vagrants because..."
-                ],
-                "causal_connectives": [
-                  "Most decisively, this was because",
-                  "Consequently, this drove up",
-                  "In direct response to these pressures",
-                  "Furthermore, this was compounded by",
-                  "This demonstrates that"
-                ],
-                "evaluative_criteria": [
-                  "Analyze demographic population growth and inflation (price rise) outstripping wage levels.",
-                  "Examine the conversion of arable farming to enclosed sheep farming and rack-renting.",
-                  "Evaluate the impact of catastrophic harvest failures and the dissolution of monastic charity."
-                ]
-              },
-              "model_answer": "Poverty and vagrancy increased significantly during the Elizabethan era between 1558 and 1588 due to an explosive demographic population surge that drove runaway inflation, the transformation of arable farmland into enclosed sheep pastures, successive bad harvests, and the long-term absence of monastic charity.<br><br>The foundational cause of growing poverty was a massive **population explosion**. England’s population had plummeted after the Black Death, but during the sixteenth century it surged by 35%, growing from roughly 3 million in 1558 to over 4 million by 1603. This dramatic increase placed overwhelming pressure on finite resources. Food production could not keep pace with demand, causing food prices—especially for bread grain—to skyrocket. At the same time, the surplus of available laborers forced real wages downward, meaning ordinary working families could afford fewer basic necessities. This structural inflation was exacerbated by previous royal debasement of silver coinage, leaving thousands of day-laborers living on the knife-edge of destitution.<br><br>Secondly, agricultural changes dispossessed rural communities through **enclosure and sheep farming**. Historically, peasant farmers shared open communal fields, farming strips of land and grazing livestock on common land. In the sixteenth century, the international boom in raw wool led wealthy landowners to enclose open fields with hedges and fences, converting land from labor-intensive crop farming to sheep grazing. Sheep farming was vastly more profitable and required only a handful of shepherds rather than dozens of agricultural laborers. As landlords evicted tenant farmers and raised rents (‘rack-renting’), hundreds of rural families lost their livelihoods and homes. With no work in the countryside, they were forced on the road as wandering vagabonds.<br><br>Furthermore, the situation was punctuated by catastrophic **harvest failures and trade disruptions**. Bad weather led to failed harvests in the early 1570s, mid-1580s, and throughout the devastating 1590s. When grain failed, bread prices soared to famine levels, leaving urban day-laborers starving. Compounding this, political crises in the Spanish Netherlands caused recurrent collapses in the Antwerp cloth trade, England’s primary export industry, plunging thousands of spinners and weavers into sudden unemployment.<br><br>Finally, this crisis was exacerbated by the historical **dissolution of the monasteries** under Henry VIII in the 1530s. For centuries, religious houses had provided free food, shelter, and medical care for the sick, elderly, and destitute. Without monastic charity, the impoverished had nowhere to turn. By the 1570s, the surging numbers of ‘sturdy beggars’ roaming roads and flooding London created widespread panic among the ruling class, forcing Parliament to pass landmark Poor Laws in 1572 and 1576 to distinguish between the deserving impotent poor and the idle vagabond."
-            }
-          ],
           "source": {
             "id": "source_b_poor_law_statute",
             "letter": "B",
@@ -11763,44 +11368,44 @@ const eee_data = {
         "instructions": "Answer these questions in full sentences.",
         "items": [
           {
-            "question": "Which navigation instrument measured the angle of the sun and stars to calculate latitude?",
-            "answer": "The Astrolabe (or Quadrant)"
+            "question": "What agricultural process involved hedging common peasant land into privately owned sheep pasture?",
+            "answer": "Enclosure (the enclosure movement)"
           },
           {
-            "question": "What magnetic Chinese navigational tool allowed Elizabethan ships to steer accurate compass headings?",
-            "answer": "The Magnetic Compass"
+            "question": "Why did Elizabethan landowners increasingly prefer sheep farming over traditional arable grain crops?",
+            "answer": "Wool was far more profitable and required far fewer paid agricultural labourers"
           },
           {
-            "question": "What new 1569 map projection allowed navigators to plot straight sailing courses across oceans?",
-            "answer": "The Mercator Projection"
+            "question": "What continuous economic problem caused basic food prices to rise rapidly across the Elizabethan era?",
+            "answer": "Inflation (driven by population growth and debased coinage)"
           },
           {
-            "question": "Which valuable Asian commodities drove European explorers to find sea routes to the East?",
-            "answer": "Spices (pepper, cloves, nutmeg) and silk"
+            "question": "What term described elderly, sick, or disabled poor people who were physically unable to work?",
+            "answer": "The Impotent Poor"
           },
           {
-            "question": "What was the original name of Sir Francis Drake’s flagship before he renamed it *Golden Hind*?",
-            "answer": "*The Pelican*"
+            "question": "What harsh term was used by Elizabethan authorities for fit, healthy beggars who were assumed to be idle?",
+            "answer": "Sturdy beggars (or the 'idle poor')"
           },
           {
-            "question": "Through which notoriously dangerous strait at the tip of South America did Drake sail in 1578?",
-            "answer": "The Strait of Magellan"
+            "question": "What physical punishment was ordered by the 1572 Vagabonds Act for persistent sturdy beggars?",
+            "answer": "Whipping and boring a hole through the gristle of the right ear"
           },
           {
-            "question": "What name did Drake give to the Californian coast he claimed for Queen Elizabeth in 1579?",
-            "answer": "Nova Albion (New Britain)"
+            "question": "What workhouse institutions were established by the 1576 Poor Act to force sturdy beggars into hard labour?",
+            "answer": "Houses of Correction (or Bridewells)"
           },
           {
-            "question": "In which Indonesian spice islands did Drake trade with the Sultan of Ternate for cloves?",
-            "answer": "The Moluccas (Spice Islands)"
+            "question": "What local compulsory parish tax was levied on wealthy landowners to fund poor relief?",
+            "answer": "The Poor Rate"
           },
           {
-            "question": "How long did Drake’s circumnavigation take from departure to return?",
-            "answer": "Nearly three years (December 1577 – September 1580)"
+            "question": "What secondary school educated the sons of the Elizabethan gentry in Latin and Greek?",
+            "answer": "Grammar schools"
           },
           {
-            "question": "What percentage profit did Drake’s voyage generate for Queen Elizabeth and his investors?",
-            "answer": "4,700% profit"
+            "question": "Which English privateer plundered Spanish silver in the Americas and was knighted in 1581?",
+            "answer": "Sir Francis Drake"
           }
         ]
       },
@@ -12192,34 +11797,6 @@ const eee_data = {
           "theme_heading": "The Spoils of the Pacific: Stolen Silver, King Philip's Humiliation and Global Geopolitics (1580–1588)",
           "text": "<span class=\"para-ref\">[5.1]</span> Drake’s triumphant circumnavigation transformed England’s international standing. He returned to Plymouth laden with silver, gold, pearls, and spices worth **£140,000**, delivering a staggering **4,700% return** to his investors and enabling Elizabeth to pay off the entire Crown foreign debt with funds to spare.<br><br><span class=\"para-ref\">[5.2]</span> Drake became the first captain to successfully sail his own ship around the world, proving that English sailors and race-built galleons could master global navigation and challenge Spanish naval hegemony anywhere on earth. The voyage laid the navigational and geopolitical foundation for England's future global empire, inspiring future ventures to establish colonies in North America and direct trade in Asia.",
           "level_4": "Drake's voyage brought home massive wealth, wiped out the Crown foreign debt, and proved England could challenge Spain on the world's oceans, establishing the blueprint for the British Empire.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "Explain why Drake’s circumnavigation of the globe was significant for Elizabethan England. [12 marks]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "Drake’s circumnavigation was significant primarily because it inflicted immense financial and psychological damage on Spain by...",
-                  "In addition, the voyage transformed England’s Crown finances and prestige because the treasure brought home...",
-                  "Furthermore, the voyage demonstrated that English naval design and navigational technology could...",
-                  "Ultimately, Drake’s success laid the ideological and commercial foundations for..."
-                ],
-                "causal_connectives": [
-                  "Most decisively, this was because",
-                  "Consequently, this demonstrated that",
-                  "In addition to immediate financial wealth",
-                  "Furthermore, this challenged",
-                  "This demonstrates that"
-                ],
-                "evaluative_criteria": [
-                  "Evaluate the physical plundering of Spanish treasure ships in the Pacific (e.g. the Cacafuego).",
-                  "Analyze the direct financial impact on Queen Elizabeth’s national debt and royal prestige.",
-                  "Explain the strategic challenge to the Iberian oceanic monopoly and inspiration for future empire."
-                ]
-              },
-              "model_answer": "Sir Francis Drake’s circumnavigation of the globe between 1577 and 1580 was an event of monumental historical significance for Elizabethan England, shattering the myth of Spanish imperial invulnerability, transforming royal finances, demonstrating English navigational mastery, and inspiring the birth of an English global empire.<br><br>A primary significance of the circumnavigation was the catastrophic financial and psychological damage it inflicted on the Spanish Empire. Until Drake sailed into the Pacific Ocean through the Straits of Magellan in 1578, Spain considered the western coast of the Americas its private, inviolable sanctuary. Spanish treasure ports in Chile and Peru were completely unfortified, and Spanish merchant ships sailed unarmed. Drake’s lone flagship, the *Golden Hind*, raided port after port with total surprise, culminating in the capture of the royal treasure galleon *Nuestra Señora de la Concepción* (the *Cacafuego*), which yielded eighty pounds of pure gold, thirteen chests of silver coins, and twenty-six tons of unrefined silver bullion. This audacious raid shocked Madrid, panicked foreign investors, and proved that Spain’s vast oceanic trade routes were highly vulnerable to English naval attack.<br><br>Secondly, the voyage had a transformative effect on England’s royal treasury and Elizabeth’s domestic security. Drake returned to Plymouth in September 1580 carrying an estimated £400,000 in plundered treasure—a staggering sum that exceeded the Crown’s entire annual revenue. Elizabeth, who was a principal secret investor in the expedition, received her royal share, enabling her to pay off the entire foreign Crown debt, invest £42,000 in the newly founded Levant Company, and retain a massive surplus in the Exchequer. When Elizabeth boarded the *Golden Hind* at Deptford in April 1581 and knighted Drake on his own quarterdeck in the presence of the French ambassador, she sent an unmistakable diplomatic message that England openly celebrated privateering defiance against Catholic Spain.<br><br>Furthermore, the voyage was a triumph of navigational science and maritime endurance. Drake became the first Englishman to circumnavigate the earth, and only the second commander in human history to complete the voyage alive (unlike Magellan, who died en route). Using cutting-edge navigational tools—such as astrolabes, quadrants, and Mercator charts—Drake successfully navigated uncharted waters, charted northern California (which he claimed for Elizabeth as ‘Nova Albion’), and crossed the Pacific to Ternate in the Moluccas, negotiating a valuable trading treaty with the Sultan for six tons of precious cloves.<br><br>Ultimately, Drake’s circumnavigation was significant because it ignited a new national consciousness. It proved that English ships, seamen, and commanders were capable of operating globally, breaking the Iberian monopoly that had dominated the Age of Discovery and inspiring men like Walter Raleigh to envision an English empire in the Americas."
-            }
-          ],
           "sources": [
             {
               "id": "eee_l11_source_e",
@@ -12950,44 +12527,44 @@ const eee_data = {
         "instructions": "Answer these questions in full sentences.",
         "items": [
           {
-            "question": "Which Elizabethan courtier and explorer was granted a royal patent to colonise Virginia in 1584?",
-            "answer": "Sir Walter Raleigh"
+            "question": "What navigational instrument measured the angular height of stars to determine a ship's latitude?",
+            "answer": "The Astrolabe (or Quadrant)"
           },
           {
-            "question": "Why was the new North American territory named 'Virginia' by the English?",
-            "answer": "In honour of Elizabeth I, the \"Virgin Queen\""
+            "question": "What magnetic navigational tool allowed Elizabethan mariners to steer consistent compass headings?",
+            "answer": "The Magnetic Compass"
           },
           {
-            "question": "Did Sir Walter Raleigh ever travel to Virginia himself?",
-            "answer": "No (he organized and funded the expeditions from England)"
+            "question": "What 1569 cartographic projection enabled navigators to plot straight sailing courses across curved oceans?",
+            "answer": "The Mercator Projection"
           },
           {
-            "question": "On which barrier island off modern North Carolina was the first English colony established in 1585?",
-            "answer": "Roanoke Island"
+            "question": "What was the original name of Sir Francis Drake's flagship before being renamed the Golden Hind?",
+            "answer": "The Pelican"
           },
           {
-            "question": "Which two Native Americans were brought back to London in 1584 to advise the English?",
-            "answer": "Manteo and Wanchese"
+            "question": "Through which famously treacherous strait at the southern tip of South America did Drake navigate in 1578?",
+            "answer": "The Strait of Magellan"
           },
           {
-            "question": "Who was appointed governor of the first 1585 Roanoke settlement?",
-            "answer": "Ralph Lane"
+            "question": "What name did Francis Drake give to the Californian coast he claimed for Queen Elizabeth in 1579?",
+            "answer": "Nova Albion ('New Britain')"
           },
           {
-            "question": "What catastrophic accident happened to the flagship *Tiger* that destroyed the colonists’ food seeds?",
-            "answer": "It ran aground on a sandbar, letting seawater flood the hold and ruin the grain"
+            "question": "How many years did Sir Francis Drake's famous circumnavigation of the earth take (1577–1580)?",
+            "answer": "Three years"
           },
           {
-            "question": "Who commanded the English relief fleet that evacuated the starving colonists in 1586?",
-            "answer": "Sir Francis Drake"
+            "question": "Approximately what percentage profit did Drake’s circumnavigation generate for the Queen and investors?",
+            "answer": "4,700% profit"
           },
           {
-            "question": "Who was appointed governor of the second 1587 settlement (\"The Lost Colony\")?",
-            "answer": "John White"
+            "question": "What agricultural practice contributed to widespread rural unemployment and vagrancy in Tudor England?",
+            "answer": "Enclosure"
           },
           {
-            "question": "What single word carved on a wooden palisade post was found when John White returned in 1590?",
-            "answer": "CROATOAN"
+            "question": "What local parish tax paid for the food and shelter of the impotent poor under Elizabethan law?",
+            "answer": "The Poor Rate"
           }
         ]
       },
@@ -13379,35 +12956,6 @@ const eee_data = {
           "theme_heading": "The Lost Colony: John White's Families, the Armada Embargo and the Mystery of CROATOAN (1587–1590)",
           "text": "<span class=\"para-ref\">[5.1]</span> In 1587, Raleigh dispatched a second expedition to Roanoke under **John White**, this time recruiting **118 civilian settlers, including women and children**, to establish a permanent farming community. Shortly after arrival, White’s daughter gave birth to **Virginia Dare**, the first English child born in the Americas. In August 1587, White returned to England for emergency supplies, but his return was blocked for three years because all English shipping was impounded to defend against the **1588 Spanish Armada**.<br><br><span class=\"para-ref\">[5.2]</span> When White finally returned to Roanoke in August 1590, the settlement was entirely deserted, with the single word **\"CROATOAN\"** carved into a palisade post. Although both attempts failed, Roanoke provided essential navigational charts and agricultural lessons that ensured the successful founding of **Jamestown in 1607**.",
           "level_4": "In 1587, a second colony of 118 civilian settlers was led by John White. Delayed for three years by the Armada, White returned in 1590 to find the colony vanished, leaving only the word 'CROATOAN'.",
-          "tasks": [
-            {
-              "title": "Master Disciplinary Enquiry Task",
-              "prompt": "‘Poor planning and bad leadership was the main reason the Roanoke colony failed in 1585–86.’ How far do you agree? [16 marks + 4 SPaG]",
-              "type": "extended_writing",
-              "scaffolding": {
-                "sentence_starters": [
-                  "It can be argued that poor planning and leadership were primarily responsible because the colonists arrived too late in the year and...",
-                  "Furthermore, the makeup of the colonist group was deeply flawed because gentlemen adventurers refused to...",
-                  "However, bad luck and environmental disasters played a crucial role when the flagship Tiger ran aground and...",
-                  "Finally, escalating conflict with the indigenous Secotan people under Chief Wingina was equally critical because..."
-                ],
-                "causal_connectives": [
-                  "On the other hand",
-                  "Crucially, this meant that",
-                  "Consequently, this tactical failure resulted in",
-                  "Furthermore, this was compounded by",
-                  "Ultimately, in evaluating the balance of causes"
-                ],
-                "evaluative_criteria": [
-                  "Assess the strategic and organizational errors of Walter Raleigh, Richard Grenville, and Ralph Lane.",
-                  "Analyze the impact of the loss of food supplies when the Tiger struck a sandbar.",
-                  "Evaluate the social composition of the 108 male colonists (lack of farmers, surplus of soldiers and gentlemen).",
-                  "Synthesize the role of cultural misunderstandings and military violence against Chief Wingina."
-                ]
-              },
-              "model_answer": "The failure of the first English settlement at Roanoke Island, Virginia, between 1585 and 1586 is a classic case study in early colonial vulnerability. While poor planning and arrogant military leadership were undeniably foundational causes of the collapse, they interacted fatally with unavoidable environmental misfortune and the complete breakdown of diplomatic relations with the indigenous Algonquian population.<br><br>There is compelling evidence that poor planning and inappropriate social composition doomed the colony from the outset. Sir Walter Raleigh, who organized and financed the expedition under royal patent, recruited a group of 108 men consisting primarily of aristocratic ‘gentlemen adventurers’ and discharged soldiers who had fought in Ireland. The gentlemen considered manual agricultural labor beneath their social dignity, while the soldiers possessed neither the agricultural knowledge nor the patience required to clear land and plant crops. Essential craftspeople, particularly skilled farmers and building laborers, were underrepresented, and there were no women to establish stable domestic family structures. Furthermore, the expedition departed England far too late in the spring, arriving at Roanoke in late summer, meaning it was impossible to plant crops in time for the autumn harvest. The colony was thus completely dependent on imported English provisions or handouts from the local Native Americans.<br><br>However, this structural weakness was drastically accelerated by environmental misfortune and bad luck. When the expedition’s fleet reached the treacherous Outer Banks of North Carolina in June 1585, the flagship *Tiger* struck a shallow sandbar while attempting to navigate the inlet. Seawater flooded the hold, ruining almost the entire supply of seed grain, barreled meat, peas, and flour intended to sustain the settlement through the winter. This single nautical accident instantly transformed a challenging colonization into an immediate struggle for survival, forcing the colonists to turn to the local Secotan tribe for emergency food.<br><br>Furthermore, aggressive and rigid leadership by Governor Ralph Lane turned manageable difficulties into an active crisis. Lane, a veteran military officer who had served in the brutal conquest of Ireland, treated the indigenous peoples not as equal trading partners, but as subjects to be cowed through intimidation. Although the local leader, Chief Wingina, initially welcomed the English and provided food, he soon grew weary of their constant demands, especially as European diseases—against which the indigenous population had no immunity—began devastating nearby villages. Convinced that the English possessed supernatural weapons or were deliberately poisoning his people, Wingina cut off food supplies. Instead of negotiating, Lane launched a preemptive military strike in June 1586, assassinating Wingina and beheading him. This severed any possibility of peaceful coexistence, leaving the colonists trapped inside their fort, terrified of imminent ambush.<br><br>When Sir Francis Drake arrived unexpectedly at Roanoke in late June 1586 after raiding the Spanish Caribbean, a sudden hurricane battered his fleet, destroying promised relief supplies. Utterly demoralized, starving, and terrified of Native American retribution, Lane and his men abandoned the settlement and boarded Drake’s ships for England, leaving behind a deserted outpost.<br><br>In conclusion, while the grounding of the *Tiger* triggered the acute food crisis, the ultimate failure of the 1585 colony was caused by poor planning and defective leadership. Raleigh’s failure to send skilled farmers, his delayed departure, and Lane’s brutal militaristic treatment of Chief Wingina turned a difficult colonial enterprise into a paranoid catastrophe that made survival impossible."
-            }
-          ],
           "sources": [
             {
               "id": "eee_l12_source_e",
@@ -14321,5 +13869,3 @@ const eee_data = {
   "id": "eee",
   "edition": "2026.1"
 };
-
-export default eee_data;

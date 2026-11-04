@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
-const { renderStandardFrontCover } = require('./components/render_standard_cover.cjs');
+const { renderStandardFrontCover, renderStandardBackCover } = require('./components/render_standard_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -143,9 +143,9 @@ const medievalConfigs = [
         questionHeading: 'How did church scriptoria prevent new medical ideas from spreading?',
         paraBadge: '[1.1]',
         bullets: [
-          'Hand-copying Latin manuscripts by candle-light',
-          'Training university priests in Church doctrine',
-          'Punishing medical heretics like Roger Bacon',
+          'Church scriptoria monopoly',
+          'Latin manuscript copying',
+          'Roger Bacon imprisoned (1277)',
         ],
       },
       {
@@ -155,9 +155,9 @@ const medievalConfigs = [
         questionHeading: 'Why was leprosy viewed as visible proof of divine judgment?',
         paraBadge: '[1.2]',
         bullets: [
-          'Sending sickness to punish human sin',
-          'Exiling lepers to isolated Lazar houses',
-          'Ringing warning bells in dirt lanes',
+          'Divine punishment for sin',
+          'Biblical leprosy stigma',
+          'Lazar houses isolation',
         ],
       },
       {
@@ -167,9 +167,9 @@ const medievalConfigs = [
         questionHeading: 'How did the Church reconcile astrology with Christian doctrine?',
         paraBadge: '[1.3]',
         bullets: [
-          'Consulting parchment zodiac almanac wheels',
-          'Aligning Mars, Jupiter, and Saturn in Aquarius',
-          'Blaming corrupted night air for fever',
+          '1345 planetary conjunction',
+          'Mars, Jupiter & Saturn',
+          'Zodiac calendar almanacs',
         ],
       },
       {
@@ -179,9 +179,9 @@ const medievalConfigs = [
         questionHeading: 'Why did sick people turn to pilgrimage shrines rather than doctors?',
         paraBadge: '[1.4]',
         bullets: [
-          'Lighting beeswax candles before parish shrines',
-          'Kissing holy bone relics of saints',
-          'Selling paper indulgences to wealthy barons',
+          'Shrines & holy relics',
+          'Pilgrimage prayers',
+          'Sale of indulgences',
         ],
       },
       {
@@ -191,9 +191,9 @@ const medievalConfigs = [
         questionHeading: 'Why did church enforcement of Galen prevent medical progress?',
         paraBadge: '[1.5]',
         bullets: [
-          'Treating Galen’s pagan texts as sacred truth',
-          'Banning human dissections in English towns',
-          'Threatening curious scholars with church excommunication',
+          'Galen theological fit',
+          'Dissection bans enforced',
+          'Heresy excommunication threat',
         ],
       },
     ],
@@ -242,9 +242,9 @@ const medievalConfigs = [
         questionHeading: 'How did Hippocrates separate medicine from superstition?',
         paraBadge: '[2.1]',
         bullets: [
-          'Rejecting anger of gods at the bedside',
-          'Writing case charts on fever symptoms',
-          'Swearing ethical oath to protect patients',
+          'Hippocratic clinical method',
+          'Rejection of gods',
+          'Hippocratic Oath ethics',
         ],
       },
       {
@@ -254,9 +254,9 @@ const medievalConfigs = [
         questionHeading: 'Why did humoral theory seem logical to medieval people?',
         paraBadge: '[2.2]',
         bullets: [
-          'Balancing blood, phlegm, and two biles',
-          'Linking fluids to four earthly elements',
-          'Associating cold damp seasons with winter coughs',
+          'Four bodily humours',
+          'Blood, phlegm & biles',
+          'Seasonal balance system',
         ],
       },
       {
@@ -266,9 +266,9 @@ const medievalConfigs = [
         questionHeading: 'How did the Theory of Opposites provide practical treatment rules?',
         paraBadge: '[2.3]',
         bullets: [
-          'Cooling burning summer fever with cold cucumber',
-          'Treating excess phlegm with dry hot pepper',
-          'Dissecting Barbary apes to map organs',
+          'Galen Theory of Opposites',
+          'Contraries cure contraries',
+          'Animal dissection errors',
         ],
       },
       {
@@ -278,9 +278,9 @@ const medievalConfigs = [
         questionHeading: 'Why did uroscopy give physicians great diagnostic authority?',
         paraBadge: '[2.4]',
         bullets: [
-          'Holding glass flasks up to window sunlight',
-          'Comparing urine colours against twenty-shade wheels',
-          'Sniffing and tasting samples for sweetness',
+          'Uroscopy urine flask (matula)',
+          'Urine diagnostic wheel',
+          'Zodiac Man alignment',
         ],
       },
       {
@@ -290,9 +290,9 @@ const medievalConfigs = [
         questionHeading: 'Why did rational physicians link bad smells directly to epidemics?',
         paraBadge: '[2.5]',
         bullets: [
-          'Fearing stench from open roadside cesspools',
-          'Smelling rotting town refuse heaps',
-          'Believing toxic smells unbalanced bodily fluids',
+          'Miasma theory (bad air)',
+          'Cesspool stench fears',
+          'Unbalanced bodily fluids',
         ],
       },
     ],
@@ -341,9 +341,9 @@ const medievalConfigs = [
         questionHeading: 'Why did ordinary people consider prayer more vital than medicine?',
         paraBadge: '[3.1]',
         bullets: [
-          'Chanting Latin prayers beside the sickbed',
-          'Fasting on bread and well water',
-          'Whipping bare backs to beg God for mercy',
+          'Penance & fasting',
+          'Chanted Latin prayers',
+          'Flagellant whipping processions',
         ],
       },
       {
@@ -353,9 +353,9 @@ const medievalConfigs = [
         questionHeading: 'Why was bloodletting the most universal physical treatment?',
         paraBadge: '[3.2]',
         bullets: [
-          'Slicing vein walls with iron fleams',
-          'Applying fat swamp leeches to temples',
-          'Catching warm dark blood in pewter bowls',
+          'Phlebotomy vein incision',
+          'Iron fleams & leeches',
+          'Cupping & pewter bowls',
         ],
       },
       {
@@ -365,9 +365,9 @@ const medievalConfigs = [
         questionHeading: 'How was purging believed to restore bodily equilibrium?',
         paraBadge: '[3.3]',
         bullets: [
-          'Swallowing poisonous black hellebore seeds',
-          'Pumping warm mallow tea through boar-bladder clysters',
-          'Emptying bowels to balance bodily humours',
+          'Emetics (black hellebore)',
+          'Laxatives & clysters',
+          'Humoural fluid evacuation',
         ],
       },
       {
@@ -377,9 +377,9 @@ const medievalConfigs = [
         questionHeading: 'Why did herbal recipes remain popular across all social classes?',
         paraBadge: '[3.4]',
         bullets: [
-          'Grinding crushed mint and sage in stone mortars',
-          'Mixing seventy ingredients into treacle theriac',
-          'Brewing bitter willow bark teas for fever',
+          'Herbal Materia Medica',
+          'Theriac (70 ingredients)',
+          'Local apothecaries remedies',
         ],
       },
       {
@@ -389,9 +389,9 @@ const medievalConfigs = [
         questionHeading: 'How did wealthy barons attempt to prevent sickness before it struck?',
         paraBadge: '[3.5]',
         bullets: [
-          'Following private Latin health rulebooks',
-          'Burning sweet lavender sticks indoors',
-          'Carrying fragrant posy flowers through smelly streets',
+          'Regimen Sanitatis rules',
+          'Sweet pomander scents',
+          'Lavender & burning tar',
         ],
       },
     ],
@@ -443,9 +443,9 @@ const medievalConfigs = [
         questionHeading: 'Why were university physicians accessible only to the ultra-wealthy?',
         paraBadge: '[4.1]',
         bullets: [
-          'Studying Latin texts for ten years in Oxford',
-          'Consulting astronomical star charts for baronial clients',
-          'Charging heavy silver fees without touching patients',
+          'University-trained physicians',
+          'Latin texts & star charts',
+          'High diagnostic fees',
         ],
       },
       {
@@ -455,9 +455,9 @@ const medievalConfigs = [
         questionHeading: 'How did apothecaries provide accessible medicines to townspeople?',
         paraBadge: '[4.2]',
         bullets: [
-          'Weighing dried poppy roots on brass scales',
-          'Selling cheap herbal pills to town weavers',
-          'Learning trade secrets through guild apprenticeships',
+          'Apothecary guild trade',
+          'Herbal preparations sold',
+          'Cheaper urban access',
         ],
       },
       {
@@ -467,9 +467,9 @@ const medievalConfigs = [
         questionHeading: 'Why were barber-surgeons viewed as lower-status craftsmen?',
         paraBadge: '[4.3]',
         bullets: [
-          'Pulling rotten teeth with iron pliers',
-          'Setting broken arm bones with wooden splints',
-          'Cauterising bleeding flesh wounds with red-hot irons',
+          'Barber-surgeon guild',
+          'Bloodletting & tooth pulling',
+          'Cauterisation & amputation',
         ],
       },
       {
@@ -479,9 +479,9 @@ const medievalConfigs = [
         questionHeading: 'Why did monastic hospitals deliberately avoid medical treatment?',
         paraBadge: '[4.4]',
         bullets: [
-          'Sheltering bedridden pilgrims in monastic wards',
-          'Providing warm woollen blankets and fresh vegetable stew',
-          'Hearing Latin mass through chapel chancel screens',
+          'Monastic charity hospitals',
+          'Care not cure philosophy',
+          'Bed rest & prayer',
         ],
       },
       {
@@ -491,9 +491,9 @@ const medievalConfigs = [
         questionHeading: 'Why did the vast majority of sick people rely on female family members?',
         paraBadge: '[4.5]',
         bullets: [
-          'Gathering wild chamomile in country hedgerows',
-          'Delivering newborn babies in village cottages',
-          'Applying warm bread poultices to swollen skin',
+          'Domestic women healers',
+          'Local herb gardening',
+          'Midwifery & home care',
         ],
       },
     ],
@@ -545,9 +545,9 @@ const medievalConfigs = [
         questionHeading: 'How did trade routes unwittingly bring the plague to England?',
         paraBadge: '[5.1]',
         bullets: [
-          'Docking trade cogs from Gascony in Dorset',
-          'Unloading flea-infested wool sacks onto wharves',
-          'Spreading black rats into crowded timber cottages',
+          'Melcombe Regis port (1348)',
+          'Yersinia pestis bacteria',
+          'Black rats & fleas',
         ],
       },
       {
@@ -557,9 +557,9 @@ const medievalConfigs = [
         questionHeading: 'Why was the pneumonic strain far deadlier than the bubonic form?',
         paraBadge: '[5.2]',
         bullets: [
-          'Swelling agonizing egg-sized groin lumps',
-          'Coughing bloody phlegm across family rooms',
-          'Killing infected farm labourers within three days',
+          'Bubonic groin swellings (buboes)',
+          'Pneumonic bloody coughing',
+          'Mortality in three days',
         ],
       },
       {
@@ -569,9 +569,9 @@ const medievalConfigs = [
         questionHeading: 'Why were medical treatments completely useless against the plague?',
         paraBadge: '[5.3]',
         bullets: [
-          'Lancing hard neck swellings with hot knives',
-          'Strapping plucked live hens to dark sores',
-          'Drinking crushed emerald stones dissolved in vinegar',
+          'Divine wrath & miasma',
+          'Lancing buboes & live hens',
+          'Bleeding & crushed emeralds',
         ],
       },
       {
@@ -581,9 +581,9 @@ const medievalConfigs = [
         questionHeading: 'How did belief in miasma shape royal prevention orders?',
         paraBadge: '[5.4]',
         bullets: [
-          'Ordering town bailiffs to clear butchered animal entrails',
-          'Shovelling horse dung out of unpaved London streets',
-          'Lighting smoking pitch fires at road corners',
+          'Quarantine isolation rules',
+          'Cleaning town butchery waste',
+          'Street fire smoke barriers',
         ],
       },
       {
@@ -593,9 +593,9 @@ const medievalConfigs = [
         questionHeading: 'Why did the Black Death trigger a long-term social and economic crisis?',
         paraBadge: '[5.5]',
         bullets: [
-          'Digging vast emergency trenches at East Smithfield',
-          'Piling stacked corpses under thin river clay',
-          'Losing half of England’s agricultural workforce',
+          'Mass burial trenches',
+          'Third to half population lost',
+          'Labour shortage & wage rises',
         ],
       },
     ],
@@ -608,59 +608,55 @@ function renderSpinePage(cfg) {
 
   const stagesHtml = stages
     .map((st, sIdx) => {
-      const bulletsHtml = st.bullets
+      const bullets = st.bullets || (st.keywords ? st.keywords.slice(0, 3) : []);
+      const bulletsHtml = bullets
         .map(
           (b, idx) => `
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ${idx < 2 ? 'border-bottom: 0.8px solid #000000;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">${b}</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
               </div>
             </div>`,
         )
         .join('');
 
       const questionText = st.questionHeading || st.focusClue || st.title;
-      const paraBadge = st.paraBadge || `[${lessonNum}.${sIdx + 1}]`;
 
       return `
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
           <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 2px 7px; display: flex; align-items: center; border-bottom: 1.2px solid #000000; min-height: 20px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; padding: 0.6px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 ${st.step || sIdx + 1}
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 800; color: #ffffff; white-space: nowrap; flex-shrink: 0;">
-                ${st.dates}
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
+                ${st.dates || st.date}
               </span>
-              <span style="color: #ffffff; font-size: 7.5pt; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; letter-spacing: -0.1px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 ${questionText}
               </span>
             </div>
-            <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 900; padding: 0.5px 5px; border-radius: 2px; margin-left: 6px; white-space: nowrap; flex-shrink: 0;">
-              ${paraBadge}
-            </span>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col" style="width: 26mm; flex-shrink: 0; background: #f8fafc; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
               ${bulletsHtml}
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
@@ -688,11 +684,6 @@ function renderSpinePage(cfg) {
         <h2 style="font-family: 'Playfair Display', serif; font-size: 12.2pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.2;">
           ${enquiryQuestion}
         </h2>
-      </div>
-
-      <!-- Core Specification Focus Strip -->
-      <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; padding: 2.5px 7px; background: #ffffff; margin-bottom: 2px; font-family: 'Inter', sans-serif; font-size: 8.4pt; line-height: 1.26; color: #000000;">
-        <strong style="color: #000000;">Core Specification Focus:</strong> ${specAnchor}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -827,6 +818,22 @@ function buildMedievalTwoPageWorkbook(unitData, period) {
       white-space: nowrap;
       color: #000000;
       font-size: 6.8pt;
+    }
+      .stage-writing-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #ffffff;
+      box-sizing: border-box;
+    }
+    .ruled-line {
+      height: 8.2mm;
+      border-bottom: 0.8px solid #000000;
+      box-sizing: border-box;
+    }
+    .ruled-line:last-child {
+      border-bottom: none;
     }
   </style>
 </head>
@@ -1070,16 +1077,10 @@ function buildMedievalTwoPageWorkbook(unitData, period) {
           </div>
         </div>
 
-        <!-- Accessible Writing Frames & Key Vocabulary Bank (High-Legibility 8.2pt Font) -->
-        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 5px 8px; background: #ffffff; margin-bottom: 4px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 800; text-transform: uppercase; display: block; margin-bottom: 2px; color: #000000;">Accessible Writing Frames:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-style: italic; line-height: 1.32; display: block; color: #111111;">${cfg.connectives}</span>
-          </div>
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 800; text-transform: uppercase; display: block; margin-bottom: 2px; color: #000000;">Key Vocabulary Bank:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; line-height: 1.32; display: block; color: #111111;">${cfg.wordBank}</span>
-          </div>
+        <!-- Analytical Connectives (Full Width Scaffolding Standard) -->
+        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 2.5px 6px; background: #ffffff; margin-bottom: 3px;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">${cfg.connectives}</span>
         </div>
 
         <!-- Ruled Task Lines Prompt -->
@@ -1185,313 +1186,38 @@ ${part1TaskLines}
   );
 
   // ====================================================================
-  // PAGE 20: OUTSIDE BACK COVER
+  // PAGE 20: MASTER BACK COVER (Student Assessment Record & Digital Quizzing Hub)
   // ====================================================================
+  const medievalEnquiries = medievalConfigs.map((cfg, idx) => ({
+    num: cfg.lessonNum,
+    code: `KT1.${cfg.lessonNum}`,
+    title: cfg.title.replace(/^KT\d+\.\d+:\s*/, ''),
+    doNowMarks: 10,
+    q3Marks: 4,
+    extType: idx === 4 ? 'Q5/6 Essay' : 'Q4 Explain',
+    extMarks: idx === 4 ? 20 : 12,
+    totalMarks: idx === 4 ? 34 : 26,
+  }));
+
+  const medievalQrLessons = medievalConfigs.map((cfg) => ({
+    label: `KT 1.${cfg.lessonNum}`,
+    url: `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`,
+  }));
+
+  html += renderStandardBackCover({
+    unitId: 'edexcel_medicine',
+    paperTitle: 'EDEXCEL GCSE (9–1) HISTORY • PAPER 1: MEDICINE IN BRITAIN, C1250–PRESENT',
+    keyTopicNum: 1,
+    trackerTitle: 'Student Assessment Record &bull; Key Topic 1 Tracker',
+    trackerSubtitle: 'Paper 1: Medicine in Britain, c1250–present &bull; Medieval Britain (c1250–c1500)',
+    enquiries: medievalEnquiries,
+    qrLessons: medievalQrLessons,
+    footerQuip: 'Retain this student assessment record for parent consultations and GCSE revision monitoring.',
+    totalPageCount: 20,
+    renderFooterStrip,
+  });
+
   html += `
-  <div class="page page-container verso-page" id="page-20" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <!-- Top Departmental Branding -->
-      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #0f284e; padding-bottom: 3px;">
-        <div data-department-name="The History Department">
-          <span style="font-family: 'Inter', sans-serif; font-size: 10pt; font-weight: 900; color: #0f284e; text-transform: uppercase; letter-spacing: 0.8px;">
-            <span class="school-brand-target">The History Department</span>
-          </span>
-        </div>
-        <div style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 700; color: #0f284e;">
-          KEY TOPIC 1 ASSESSMENT RECORD &bull; c1250–c1500
-        </div>
-      </div>
-
-      <!-- Student Target Grade Strip -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 6px 12px; background: #ffffff; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; align-items: center;">
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Pupil Name:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Target:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Current Grade:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-      </div>
-
-      <!-- Expanded Key Topic 1 Assessment Record Table (10 Questions + Cumulative Total) -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; overflow: hidden; margin-bottom: 6px;">
-        <table style="width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif;">
-          <thead>
-            <tr style="background: #0f284e; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px;">
-              <th style="padding: 7px 6px; text-align: center; width: 8%; font-size: 7.8pt; font-weight: 800;">Enquiry</th>
-              <th style="padding: 7px 10px; text-align: left; width: 36%; font-size: 7.8pt; font-weight: 800; border-left: 1px solid rgba(255,255,255,0.25);">Assessment Component Focus</th>
-              <th style="padding: 7px 6px; text-align: center; width: 7%; font-size: 7.8pt; font-weight: 800; border-left: 1px solid rgba(255,255,255,0.25);">Page</th>
-              <th style="padding: 7px 6px; text-align: center; width: 12%; font-size: 7.8pt; font-weight: 800; border-left: 1px solid rgba(255,255,255,0.25);">Score</th>
-              <th style="padding: 7px 10px; text-align: left; width: 37%; font-size: 7.8pt; font-weight: 800; border-left: 1px solid rgba(255,255,255,0.25);">Teacher Comment &amp; Next Steps</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- KT1.1: Supernatural & Church -->
-            <tr style="border-bottom: 1px dashed #cbd5e1;">
-              <td rowspan="2" style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 9.5pt; border-right: 1.2px solid #cbd5e1; background: #f0f4f9; color: #0f284e; vertical-align: middle;">
-                KT1.1
-              </td>
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q4:</strong> Explain Why Church Dominated Explanations c1250–c1500
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 5–6
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 12
-              </td>
-              <td rowspan="2" style="padding: 10px 10px; vertical-align: middle; font-size: 8pt; background: #ffffff;">
-                <div style="display: flex; flex-direction: column; justify-content: space-around; height: 20.5mm;">
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1.5px solid #0f284e;">
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q3:</strong> Explain One Similarity (Causes: Medieval vs Renaissance)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 6
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 4
-              </td>
-            </tr>
-
-            <!-- KT1.2: Hippocrates, Galen & Four Humours -->
-            <tr style="border-bottom: 1px dashed #cbd5e1;">
-              <td rowspan="2" style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 9.5pt; border-right: 1.2px solid #cbd5e1; background: #f0f4f9; color: #0f284e; vertical-align: middle;">
-                KT1.2
-              </td>
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q4:</strong> Explain Why Four Humours Remained Dominant c1250–c1500
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 8–9
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 12
-              </td>
-              <td rowspan="2" style="padding: 10px 10px; vertical-align: middle; font-size: 8pt; background: #ffffff;">
-                <div style="display: flex; flex-direction: column; justify-content: space-around; height: 20.5mm;">
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1.5px solid #0f284e;">
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q3:</strong> Explain One Difference (Causes: Medieval vs Modern)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 9
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 4
-              </td>
-            </tr>
-
-            <!-- KT1.3: Prevention & Treatment -->
-            <tr style="border-bottom: 1px dashed #cbd5e1;">
-              <td rowspan="2" style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 9.5pt; border-right: 1.2px solid #cbd5e1; background: #f0f4f9; color: #0f284e; vertical-align: middle;">
-                KT1.3
-              </td>
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q4:</strong> Explain Why Treatments Focused on Humours &amp; Repentance
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 11–12
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 12
-              </td>
-              <td rowspan="2" style="padding: 10px 10px; vertical-align: middle; font-size: 8pt; background: #ffffff;">
-                <div style="display: flex; flex-direction: column; justify-content: space-around; height: 20.5mm;">
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1.5px solid #0f284e;">
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q3:</strong> Explain One Similarity (Prevention: Medieval vs Renaissance)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 12
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 4
-              </td>
-            </tr>
-
-            <!-- KT1.4: Care Providers & Hospitals -->
-            <tr style="border-bottom: 1px dashed #cbd5e1;">
-              <td rowspan="2" style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 9.5pt; border-right: 1.2px solid #cbd5e1; background: #f0f4f9; color: #0f284e; vertical-align: middle;">
-                KT1.4
-              </td>
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q4:</strong> Explain Why Hospital Care Was Based on ‘Care Not Cure’
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 14–15
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 12
-              </td>
-              <td rowspan="2" style="padding: 10px 10px; vertical-align: middle; font-size: 8pt; background: #ffffff;">
-                <div style="display: flex; flex-direction: column; justify-content: space-around; height: 20.5mm;">
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1.5px solid #0f284e;">
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q3:</strong> Explain One Difference (Hospitals: Medieval vs 19th Century)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 15
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 4
-              </td>
-            </tr>
-
-            <!-- KT1.5: The Black Death -->
-            <tr style="border-bottom: 1px dashed #cbd5e1;">
-              <td rowspan="2" style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 9.5pt; border-right: 1.2px solid #cbd5e1; background: #f0f4f9; color: #0f284e; vertical-align: middle;">
-                KT1.5
-              </td>
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q5/6:</strong> Evaluative Essay: Black Death &amp; Government Prevention
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 17–18
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 20
-              </td>
-              <td rowspan="2" style="padding: 10px 10px; vertical-align: middle; font-size: 8pt; background: #ffffff;">
-                <div style="display: flex; flex-direction: column; justify-content: space-around; height: 20.5mm;">
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                  <div style="border-bottom: 1px dotted #cbd5e1; height: 6.8mm;"></div>
-                </div>
-              </td>
-            </tr>
-            <tr style="border-bottom: 1.5px solid #0f284e;">
-              <td style="padding: 13px 10px; font-weight: 600; line-height: 1.35; border-right: 1.2px solid #cbd5e1; font-size: 8.2pt; color: #0f284e;">
-                <strong>Q3:</strong> Explain One Similarity (Plague Responses: 1348 vs 1665)
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                p. 18
-              </td>
-              <td style="padding: 13px 6px; text-align: center; font-size: 10pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 4
-              </td>
-            </tr>
-
-            <!-- Total Row -->
-            <tr style="background: #f0f4f9; border-top: 2px solid #0f284e;">
-              <td style="padding: 12px 6px; text-align: center; font-weight: 900; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; background: #0f284e; color: #ffffff;">
-                TOTAL
-              </td>
-              <td style="padding: 12px 10px; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; color: #0f284e;">
-                Key Topic 1 Cumulative Examination Assessment Portfolio (10 Tasks)
-              </td>
-              <td style="padding: 12px 6px; text-align: center; font-weight: 800; font-size: 8.5pt; border-right: 1.2px solid #cbd5e1; color: #0f284e;">
-                p. 4–18
-              </td>
-              <td style="padding: 12px 6px; text-align: center; font-size: 11pt; font-weight: 900; border-right: 1.2px solid #cbd5e1; white-space: nowrap; color: #0f284e;">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 88
-              </td>
-              <td style="padding: 12px 10px; font-weight: 800; font-size: 8.5pt; background: #f0f4f9; color: #0f284e;">
-                <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                  <span>Overall Grade: <span style="display: inline-block; width: 45px; border-bottom: 1.5px solid #0f284e;"></span></span>
-                  <span style="font-size: 7.5pt; color: #475569;">Teacher Target: <span style="display: inline-block; width: 40px; border-bottom: 1px solid #475569;"></span></span>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- 5 Verified Micro-QR Codes with Dual QR (Lesson + Quiz) -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 7px 6px; background: #f0f4f9;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.5px; color: #0f284e;">
-            &bull; Digital Learning &amp; Retrieval Hub &bull; Interactive Lessons &amp; Quizzes
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 700; color: #475569;">
-            Interactive Textbook &bull; 10 Questions Per Enquiry
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px;">
-          ${medievalConfigs
-            .map((cfg, idx) => {
-              const lessonUrl = `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&view=lessons`;
-              const quizUrl = `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`;
-              const lessonQrSvg = generateQrSvg(lessonUrl);
-              const quizQrSvg = generateQrSvg(quizUrl);
-              const shortLabels = [
-                'Supernatural',
-                'Four Humours',
-                'Treatments',
-                'Hospitals',
-                'Black Death',
-              ];
-              return `
-          <div style="border: 1.2px solid #0f284e; border-radius: 3px; padding: 4px 3px; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 900; text-transform: uppercase; margin-bottom: 1px; color: #0f284e;">
-              KT1.${cfg.lessonNum}
-            </div>
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 700; color: #475569; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
-              ${shortLabels[idx]}
-            </div>
-
-            <!-- Top QR: Interactive Lesson Hub -->
-            <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 4px; width: 100%;">
-              <div style="width: 17.5mm; height: 17.5mm; margin: 0 auto 1px auto;">
-                ${lessonQrSvg}
-              </div>
-              <span style="font-family: 'Inter', sans-serif; font-size: 5.6pt; font-weight: 800; text-transform: uppercase; background: #0f284e; color: #ffffff; padding: 1.5px 4px; border-radius: 2px; letter-spacing: 0.2px; white-space: nowrap;">
-                Lesson Hub
-              </span>
-            </div>
-
-            <!-- Bottom QR: Practice Quiz -->
-            <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 3px; width: 100%;">
-              <div style="width: 17.5mm; height: 17.5mm; margin: 0 auto 1px auto;">
-                ${quizQrSvg}
-              </div>
-              <span style="font-family: 'Inter', sans-serif; font-size: 5.6pt; font-weight: 800; text-transform: uppercase; background: #0f284e; color: #ffffff; padding: 1.5px 4px; border-radius: 2px; letter-spacing: 0.2px; white-space: nowrap;">
-                Practice Quiz
-              </span>
-            </div>
-
-            <div style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #0f284e; margin-top: 2px; white-space: nowrap; border: 1px solid #0f284e; border-radius: 2px; padding: 1px 3px; background: #f0f4f9;">
-              Score: [ &nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong> ]
-            </div>
-          </div>
-          `;
-            })
-            .join('')}
-        </div>
-      </div>
-
-      ${renderFooterStrip(20, 'Superstition, humours, and herbal mixtures gave way to observation; retrieval practice will guarantee your GCSE exam success.', 20)}
-    </div>
-  </div>
 </body>
 </html>
 `;
@@ -1512,7 +1238,7 @@ async function main() {
 
   const unitHtmlPath = path.join(unitDir, 'pupil_workbook_medieval.html');
   const pubHtmlPath = path.join(publicUnitDir, 'pupil_workbook_medieval.html');
-  const outPdfPath = path.join(pdfsDir, 'edexcel_medicine_pupil_workbook_medieval_FINAL_V17.pdf');
+  const outPdfPath = path.join(pdfsDir, 'edexcel_medicine_pupil_workbook_medieval.pdf');
   const pubPdfCopy = path.join(publicUnitDir, 'pupil_workbook_medieval.pdf');
 
   fs.writeFileSync(unitHtmlPath, customHtml, 'utf8');

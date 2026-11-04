@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
+const { renderStandardBackCover } = require('./components/render_standard_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -155,9 +156,9 @@ const wfConfigs = [
         dates: '1914–1915',
         title: 'Flanders Terrain & Ypres Salient',
         bullets: [
-          'Digging into sticky wet clay',
-          'Heavy artillery breaking water canals',
-          'Wounded men sinking into knee-deep mud',
+          'Ypres Salient waterlogged',
+          'Clay soil drainage destruction',
+          'Deep mud stretcher crisis',
         ],
         focusClue: 'Why was the low-lying topography of Ypres a tactical and medical nightmare?',
       },
@@ -165,9 +166,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Trench Architecture & Traverses',
         bullets: [
-          'Digging sharp zig-zag corners into earth',
-          'Laying wooden duckboards over smelly puddles',
-          'Stacking sandbags high on front firing steps',
+          'Zig-zag traverse construction',
+          'Duckboards & sump drainage',
+          'Frontline firing step',
         ],
         focusClue:
           'How did zig-zag traverses limit shrapnel injuries and contain shell explosions?',
@@ -176,9 +177,9 @@ const wfConfigs = [
         dates: '1915–1918',
         title: 'Trench System: Front to Rear',
         bullets: [
-          "Guarding firing steps facing No Man's Land",
-          'Squeezing wooden stretchers along narrow passages',
-          'Crawling through listening saps near enemy barbed wire',
+          'Three-line trench system',
+          'Communication trench transit',
+          'Narrow stretcher passages',
         ],
         focusClue: 'Why did narrow communication trenches create acute bottlenecks for stretchers?',
       },
@@ -186,9 +187,9 @@ const wfConfigs = [
         dates: 'Nov 1916–1917',
         title: 'Thompson’s Cave & Arras Tunnels',
         bullets: [
-          'Carving hospital wards deep into dry white chalk',
-          'Wiring electric light bulbs and water pipes',
-          'Treating seven hundred beds safely underground',
+          'Arras chalk caverns (1916)',
+          'Thompson\'s Cave hospital',
+          '700 underground beds',
         ],
         focusClue: 'How did the chalk geology at Arras allow safe, sterile surgical conditions?',
       },
@@ -196,9 +197,9 @@ const wfConfigs = [
         dates: '1916–1917',
         title: 'Mass Trauma: Somme & Cambrai',
         bullets: [
-          'Fifty-seven thousand men falling on first morning',
-          'Driving heavy metal tanks over chalk slopes',
-          'Overworked medical orderly lines facing endless stretchers',
+          '1916 Somme casualty flood',
+          '57,000 first-day casualties',
+          '1917 Cambrai tank battle',
         ],
         focusClue: 'Why did mass-casualty offensives force the RAMC to reorganize evacuation?',
       },
@@ -261,9 +262,9 @@ const wfConfigs = [
         dates: '1914–1915',
         title: 'Trench Foot Pathology',
         bullets: [
-          'Standing for days in freezing dirty water',
-          'Toes turning numb, swollen, and bluish-black',
-          'Surgeons sawing off rotting gangrene feet',
+          'Trench foot fungal infection',
+          'Constricted circulation numbness',
+          'Amputation gangrene risk',
         ],
         focusClue: 'How did prolonged cold water immersion destroy tissue and produce gangrene?',
       },
@@ -271,9 +272,9 @@ const wfConfigs = [
         dates: '1915–1918',
         title: 'Prevention: Whale Oil & Socks',
         bullets: [
-          'Pairs of soldiers rubbing fishy grease into toes',
-          'Packing three dry woollen pairs in kits',
-          'Officers holding daily morning foot inspections',
+          'Whale oil rubbing',
+          'Dry sock changes',
+          'Daily officer foot inspections',
         ],
         focusClue:
           'Why did mandatory officer inspections succeed where voluntary advice had failed?',
@@ -282,9 +283,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Trench Fever, Lice & Delousing',
         bullets: [
-          'Scratching itchy insect bites along uniform seams',
-          'High shaking chills and burning shin bone aches',
-          'Steaming dirty woollen jackets in giant barrels',
+          'Trench fever pyrexia',
+          'Body lice transmission',
+          'Delousing bathhouses',
         ],
         focusClue:
           'Why did trench fever persist until the body louse insect vector was proven in 1918?',
@@ -293,9 +294,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Dysentery & Water Chlorination',
         bullets: [
-          'Violent stomach cramps from dirty swamp water',
-          'Digging deep toilet pits far behind sleeping lines',
-          'Throwing smelly white lime powder into waste trenches',
+          'Bacterial dysentery illness',
+          'Latrine chloride-of-lime',
+          'Purified water chlorination',
         ],
         focusClue: 'How did strict sanitation and chemical water chlorination prevent epidemics?',
       },
@@ -303,9 +304,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Shell Shock & Psychological Trauma',
         bullets: [
-          "Endless artillery thunder breaking soldiers' minds",
-          'Men shaking uncontrollably and losing their speech',
-          'Resting traumatised patients in quiet country hospitals',
+          'Shell shock (NYDN)',
+          'Artillery concussive trauma',
+          'Craiglockhart mental convalescence',
         ],
         focusClue:
           'Why was shell shock initially stigmatised as cowardice before being treated medically?',
@@ -374,9 +375,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Artillery & Shrapnel Trauma',
         bullets: [
-          'Blasting hot jagged metal balls through flesh',
-          'Blowing dirty uniform cloth deep into broken bones',
-          'Causing over half of all battlefield wounds',
+          'Artillery shrapnel (58%)',
+          'High explosive fragments',
+          'Embedded uniform cloth',
         ],
         focusClue:
           'Why did jagged shrapnel fragments cause far worse infections than rifle bullets?',
@@ -385,9 +386,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Soil Bacteria & Gas Gangrene',
         bullets: [
-          'Fertilising farmland with rotten animal manure',
-          'Deadly microbes multiplying inside airless wounds',
-          'Hissing bubbles swelling under blackened skin',
+          'Manured agricultural soil',
+          'Clostridium gas gangrene',
+          'Dead tissue bacteria',
         ],
         focusClue: 'Why was Clostridium welchii so lethal in deep, airless shrapnel wounds?',
       },
@@ -395,9 +396,9 @@ const wfConfigs = [
         dates: 'Late 1915',
         title: 'Head Trauma & Brodie Helmet',
         bullets: [
-          'Soft cloth caps offering zero protection from blasts',
-          'Pressing hard steel bowls with wide gutters',
-          'Slashing deadly skull splinter wounds by eighty percent',
+          'Brodie steel helmet (1915)',
+          'Shrapnel deflection rim',
+          'Fatal head wounds halved',
         ],
         focusClue:
           'Why did the introduction of the Brodie helmet cause an apparent rise in hospital head cases?',
@@ -406,9 +407,9 @@ const wfConfigs = [
         dates: 'Apr 1915–1916',
         title: 'Chlorine & Phosgene Attacks',
         bullets: [
-          'Releasing green-yellow choking cloud over fields',
-          'Holding urine-soaked handkerchiefs over noses',
-          'Breathing through grey flannel hoods with glass eyepieces',
+          'Chlorine gas Ypres (1915)',
+          'Phosgene suffocation gas',
+          'Urine-soaked pad protection',
         ],
         focusClue: 'How did the rapid evolution of chemical respirators counter suffocating gases?',
       },
@@ -416,9 +417,9 @@ const wfConfigs = [
         dates: '1916–1918',
         title: 'Mustard Gas & Box Respirators',
         bullets: [
-          'Sucking air through rubber tubes and charcoal canisters',
-          'Oily yellow liquid burning huge skin blisters through clothes',
-          'Soaking into muddy earth for weeks without evaporating',
+          'Mustard blistering agent (1917)',
+          'Persistent chemical soil vapour',
+          'Small Box Respirator',
         ],
         focusClue: 'Why was mustard gas far harder to counter than chlorine or phosgene?',
       },
@@ -481,9 +482,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Stretcher Bearers & RAP',
         bullets: [
-          'Teams of four hauling wounded through bullet fire',
-          'Crowding into dark sandbagged frontline dugouts',
-          'Slapping brown iodine and white bandages on cuts',
+          'Four-man stretcher teams',
+          'Regimental Aid Post (RAP)',
+          'First aid & tourniquets',
         ],
         focusClue:
           'Why was rapid evacuation by stretcher bearers vital to prevent irreversible shock?',
@@ -492,9 +493,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Field Ambulances & ADS/MDS',
         bullets: [
-          'Setting up treatment cots inside ruined farm barns',
-          'Checking clean bandages one mile behind frontline',
-          'Loading urgent bleeding cases into transport carts',
+          'Advanced Dressing Stations (ADS)',
+          'Field Ambulance RAMC',
+          'Tetanus anti-toxin serum',
         ],
         focusClue: 'What was the tactical role of Dressing Stations in preventing CCS congestion?',
       },
@@ -502,9 +503,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'CCS & The Triage System',
         bullets: [
-          'Setting up big operating tents near railway tracks',
-          'Sorting bleeding soldiers into three survival groups',
-          "Rushing torn stomach wounds straight to surgeons' tables",
+          'Casualty Clearing Station (CCS)',
+          'Three-tier triage sorting',
+          'Immediate life-saving surgery',
         ],
         focusClue: 'How did the 3-tier triage system maximize survival during mass offensives?',
       },
@@ -512,9 +513,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Base Hospitals on French Coast',
         bullets: [
-          'Converting coastal resort hotels into recovery wards',
-          'Treating specialized amputations and poison burns',
-          'Carrying healed patients onto white hospital ships',
+          'Coastal Base Hospitals',
+          'Boulogne & Étaples centres',
+          'Specialised surgery & convalescence',
         ],
         focusClue: 'Why were Base Hospitals situated near major coastal rail terminals and ports?',
       },
@@ -522,9 +523,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Motor Ambulances & Barges',
         bullets: [
-          'Bouncing painfully in old wooden horse wagons',
-          'Donating hundreds of fast petrol motor vans',
-          'Gliding gently down quiet canals for head injuries',
+          'Horse-drawn ambulance delays',
+          'Motor ambulances introduced',
+          'Canal barges head-trauma',
         ],
         focusClue: 'Why were canal barges preferred over trains for head and chest trauma?',
       },
@@ -592,9 +593,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Wound Debridement & Excision',
         bullets: [
-          'Cutting away bruised, black, and dead muscle tissue',
-          'Depriving hungry bacteria of rotting food',
-          'Leaving surgical cuts open to wash before stitching',
+          'Wound surgical debridement',
+          'Dead tissue excision',
+          'Delayed primary closure',
         ],
         focusClue:
           'Why was surgical excision of dead tissue more effective than chemical antiseptics?',
@@ -603,9 +604,9 @@ const wfConfigs = [
         dates: '1915–1918',
         title: 'Carrel-Dakin Antiseptic Flush',
         bullets: [
-          'Pushing narrow rubber tubes deep into torn flesh',
-          'Dripping fresh salty bleach solution day and night',
-          'Killing hidden microbes before gangrene takes hold',
+          'Carrel-Dakin antiseptic irrigation',
+          'Sodium hypochlorite bleach',
+          'Rubber perfusion tubes',
         ],
         focusClue:
           'How did continuous chemical irrigation solve the problem of deep wound infection?',
@@ -614,9 +615,9 @@ const wfConfigs = [
         dates: 'Dec 1915–1916',
         title: 'The Thomas Splint Breakthrough',
         bullets: [
-          'Fitting padded metal oval ring around upper groin',
-          'Pulling leather cords to stretch broken leg bones taut',
-          'Dropping thigh fracture deaths from eighty to twenty percent',
+          'Thomas splint (1915)',
+          'Compound femur traction',
+          'Mortality reduced (80% to 20%)',
         ],
         focusClue: 'How did rigid traction prevent fatal haemorrhage and shock from broken femurs?',
       },
@@ -624,9 +625,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'Mobile X-Rays & Marie Curie',
         bullets: [
-          'Running small dynamo generators off motor engines',
-          'Scanning wounded soldiers right behind battle lines',
-          'Locating buried steel balls before surgeon cuts',
+          'Mobile radiographic vans',
+          'Van dynamo generators',
+          'Locating embedded shrapnel',
         ],
         focusClue: 'Why was locating shrapnel on an X-ray vital before operating on gas gangrene?',
       },
@@ -634,9 +635,9 @@ const wfConfigs = [
         dates: '1914–1918',
         title: 'X-Ray Limits in Combat',
         bullets: [
-          'Shattering delicate glass vacuum bulbs on bumpy tracks',
-          'Overheating metal tubes after five minutes of use',
-          'Failing to spot buried uniform cloth and muddy splinters',
+          'Fragile vacuum tubes',
+          'Overheating radiation limits',
+          'Undetected cloth fragments',
         ],
         focusClue:
           'Why did undetected cloth fragments remain the primary cause of post-op gangrene?',
@@ -700,9 +701,9 @@ const wfConfigs = [
         dates: '1914–1915',
         title: 'Sodium Citrate & Clotting',
         bullets: [
-          'Adding chemical salts to stop blood turning into jelly',
-          "Uncoupling donor arm from dying patient's vein",
-          'Pouring red liquid freely through sterile glass funnels',
+          'Richard Lewisohn sodium citrate',
+          'Uncoupled indirect transfusion',
+          'Preventing blood clotting',
         ],
         focusClue:
           'How did sodium citrate liberate blood transfusion from donor-to-patient tubing?',
@@ -711,9 +712,9 @@ const wfConfigs = [
         dates: '1916–1917',
         title: 'Citrate-Glucose Blood Storage',
         bullets: [
-          'Mixing sweet sugar syrup to feed fragile red cells',
-          'Packing glass medicine bottles into insulated ice chests',
-          'Keeping precious donations fresh for four weeks',
+          'Rous & Turner citrate-glucose',
+          'Stored refrigerated blood',
+          'Four-week viability window',
         ],
         focusClue: 'Why was glucose addition essential to prevent red blood cell breakdown?',
       },
@@ -721,9 +722,9 @@ const wfConfigs = [
         dates: 'Nov 1917',
         title: 'Cambrai Blood Bank Depot',
         bullets: [
-          'Collecting universal Type O bottles before big attack',
-          'Carrying twenty-two vacuum metal flasks to frontline',
-          'Reviving dying soldiers suffering cold shock',
+          'Oswald Robertson (1917)',
+          'Cambrai blood depot',
+          'Type O universal donors',
         ],
         focusClue: 'Why did pre-stored blood transform surgical survival during surprise assaults?',
       },
@@ -731,9 +732,9 @@ const wfConfigs = [
         dates: '1917–1918',
         title: 'Harvey Cushing’s Brain Surgery',
         bullets: [
-          'Numbing scalp with local needle jabs to stop brain swelling',
-          'Clamping bleeding blood vessels with tiny silver clips',
-          'Pulling out buried iron shards with magnetic rods',
+          'Harvey Cushing neurosurgery',
+          'Local anaesthetic brain operations',
+          'Magnet shrapnel extraction',
         ],
         focusClue: 'Why was local anaesthesia superior to general anaesthetic in head trauma?',
       },
@@ -741,9 +742,9 @@ const wfConfigs = [
         dates: '1917–1918',
         title: 'Harold Gillies at Sidcup',
         bullets: [
-          'Rolling chest skin into living round meat tubes',
-          'Keeping blood pumping into graft while it stitches to face',
-          'Sculpting new noses, chins, and jaws for shattered soldiers',
+          'Harold Gillies Sidcup (1917)',
+          'Queen\'s Hospital facial surgery',
+          'Tubed pedicle skin grafting',
         ],
         focusClue:
           'How did the tubed pedicle technique prevent skin grafts from rotting and dying?',
@@ -760,59 +761,55 @@ function renderWfSpinePage(cfg, pageNum) {
 
   const stagesHtml = stages
     .map((st, sIdx) => {
-      const bulletsHtml = st.bullets
+      const bullets = st.bullets || (st.keywords ? st.keywords.slice(0, 3) : []);
+      const bulletsHtml = bullets
         .map(
           (b, idx) => `
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ${idx < 2 ? 'border-bottom: 0.8px solid #000000;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">${b}</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
               </div>
             </div>`,
         )
         .join('');
 
       const questionText = st.questionHeading || st.focusClue || st.title;
-      const paraBadge = st.paraBadge || `[5.${cfg.lessonNum}.${sIdx + 1}]`;
 
       return `
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
           <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 2px 7px; display: flex; align-items: center; border-bottom: 1.2px solid #000000; min-height: 20px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; padding: 0.6px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
                 ${st.step || sIdx + 1}
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 800; color: #ffffff; white-space: nowrap; flex-shrink: 0;">
-                ${st.dates}
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
+                ${st.dates || st.date}
               </span>
-              <span style="color: #ffffff; font-size: 7.5pt; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: -0.1px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 ${questionText}
               </span>
             </div>
-            <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 900; padding: 0.5px 5px; border-radius: 2px; margin-left: 6px; white-space: nowrap; flex-shrink: 0;">
-              ${paraBadge}
-            </span>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col" style="width: 26mm; flex-shrink: 0; background: #f8fafc; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
               ${bulletsHtml}
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
@@ -842,26 +839,11 @@ function renderWfSpinePage(cfg, pageNum) {
           </h2>
         </div>
 
-        <!-- Core Specification Focus Strip -->
-        <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; padding: 2.5px 7px; background: #ffffff; margin-bottom: 2px; font-family: 'Inter', sans-serif; font-size: 8.2pt; line-height: 1.24; color: #000000;">
-          <strong style="color: #000000;">Core Specification Focus:</strong> ${specAnchor}
-        </div>
-      </div>
-
-      <!-- Chronological & Environmental Inquiry Spine (5 Stages • Full Page Height) -->
-      <div style="flex: 1; display: flex; flex-direction: column; min-height: 0; margin-top: 1px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #000000; padding: 1px 0; margin-bottom: 2px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; color: #000000;">
-            CHRONOLOGICAL INQUIRY SPINE &bull; 5 CAUSAL MILESTONES
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 700; color: #000000;">
-            PUPIL NOTE-TAKING ZONE &bull; <span style="font-style: italic; font-weight: 500; color: #222222;">Construct concise causal notes alongside each milestone prompt</span>
-          </span>
-        </div>
-
-        <!-- 5 Chronological Stages with Spine on Left and Ruled Lines on Right -->
-        <div style="display: flex; flex-direction: column; flex: 1; min-height: 0; gap: 0;">
-          ${stagesHtml}
+        <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
+        <div style="flex: 1; display: flex; flex-direction: column; min-height: 0; margin-top: 2px;">
+          <div style="display: flex; flex-direction: column; flex: 1; min-height: 0; gap: 0;">
+            ${stagesHtml}
+          </div>
         </div>
       </div>
 
@@ -870,9 +852,6 @@ function renderWfSpinePage(cfg, pageNum) {
   </div>`;
 }
 
-// ============================================================================
-// HELPER: RENDER SECTION A EXAM QUESTION PAGE (PAGE 2 OF LESSON)
-// ============================================================================
 function renderWfExamQuestionPage(cfg, pageNum, primarySource, b64Img) {
   const isQ2a = cfg.tariff.includes('2(a)');
 
@@ -1013,16 +992,10 @@ function renderWfExamQuestionPage(cfg, pageNum, primarySource, b64Img) {
           </div>
         </div>
 
-        <!-- Accessible Writing Frames & Key Vocabulary Bank -->
-        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 3px 6px; background: #ffffff; margin-bottom: 3px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 6px;">
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.6pt; text-transform: uppercase; display: block; margin-bottom: 1px;">Accessible Writing Frames:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.2pt; font-style: italic; line-height: 1.15; display: block;">${cfg.connectives}</span>
-          </div>
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.6pt; text-transform: uppercase; display: block; margin-bottom: 1px;">Key Vocabulary Bank:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.2pt; line-height: 1.15; display: block;">${cfg.wordBank}</span>
-          </div>
+        <!-- Analytical Connectives (Full Width Scaffolding Standard) -->
+        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 2.5px 6px; background: #ffffff; margin-bottom: 3px;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.4pt; font-style: italic; color: #222222; line-height: 1.2;">${cfg.connectives}</span>
         </div>
       </div>
 
@@ -1595,6 +1568,22 @@ function buildWesternFrontTwoPageWorkbook(unitData, period) {
       color: #000000;
       font-size: 6.8pt;
     }
+      .stage-writing-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #ffffff;
+      box-sizing: border-box;
+    }
+    .ruled-line {
+      height: 8.2mm;
+      border-bottom: 0.8px solid #000000;
+      box-sizing: border-box;
+    }
+    .ruled-line:last-child {
+      border-bottom: none;
+    }
   </style>
 </head>
 <body>
@@ -1617,19 +1606,21 @@ function buildWesternFrontTwoPageWorkbook(unitData, period) {
         </span>
       </div>
 
-      <!-- Student Identification Box -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 4.5px 12px; margin-bottom: 4px; background: #ffffff; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px;">
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Pupil:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 13px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Class:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 13px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Teacher:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 13px;"></div>
+      <!-- Pupil Identification Card -->
+      <div style="border: 1.5px solid #000; border-radius: 4px; padding: 5.5px 14px; background: #fff; margin-bottom: 3px;">
+        <div style="display: grid; grid-template-columns: 2.2fr 1.1fr 1.3fr; gap: 18px; font-family: 'Inter', sans-serif; font-size: 8.0pt;">
+          <div style="display: flex; align-items: baseline;">
+            <strong style="text-transform: uppercase; width: 50px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Name:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
+          </div>
+          <div style="display: flex; align-items: baseline;">
+            <strong style="text-transform: uppercase; width: 46px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Class:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
+          </div>
+          <div style="display: flex; align-items: baseline;">
+            <strong style="text-transform: uppercase; width: 62px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Teacher:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
+          </div>
         </div>
       </div>
 
@@ -1980,9 +1971,36 @@ function buildWesternFrontTwoPageWorkbook(unitData, period) {
   });
 
   // ====================================================================
-  // PAGE 28: BACK COVER - EXPANDED ASSESSMENT LEDGER & QUIZZING HUB
+  // PAGE 28: MASTER BACK COVER (Student Assessment Record & Digital Quizzing Hub)
   // ====================================================================
-  html += renderWfBackCover(wfConfigs, quipList[15]);
+  const wfEnquiries = wfConfigs.map((cfg) => ({
+    num: cfg.lessonNum,
+    code: `KT5.${cfg.lessonNum}`,
+    title: cfg.title.replace(/^KT5\.\d+:\s*/, ''),
+    doNowMarks: 10,
+    q1Marks: 4,
+    q2Type: [1, 3, 5].includes(cfg.lessonNum) ? 'Q2(a) Utility' : 'Q2(b) Follow-up',
+    q2Marks: [1, 3, 5].includes(cfg.lessonNum) ? 8 : 4,
+    totalMarks: [1, 3, 5].includes(cfg.lessonNum) ? 22 : 18,
+  }));
+
+  const wfQrLessons = wfConfigs.map((cfg) => ({
+    label: `KT 5.${cfg.lessonNum}`,
+    url: `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`,
+  }));
+
+  html += renderStandardBackCover({
+    unitId: 'edexcel_medicine',
+    paperTitle: 'EDEXCEL GCSE (9–1) HISTORY • PAPER 1 SECTION A: HISTORIC ENVIRONMENT',
+    keyTopicNum: 5,
+    trackerTitle: 'Student Assessment Record &bull; Key Topic 5 Tracker',
+    trackerSubtitle: 'The British Sector of the Western Front, 1914–1918: Injuries, Treatment and the Trenches',
+    enquiries: wfEnquiries,
+    qrLessons: wfQrLessons,
+    footerQuip: 'Retain this student assessment record for parent consultations and GCSE revision monitoring.',
+    totalPageCount: 28,
+    renderFooterStrip,
+  });
 
   html += `
 </body>
@@ -1996,25 +2014,70 @@ module.exports = {
   buildWesternFrontTwoPageWorkbook,
 };
 
-if (require.main === module) {
+async function main() {
+  console.log(
+    'Rendering 28-Page A4 Pupil Workbook (Dual QR & Assessment Portfolio): Key Topic 5: Western Front (1914–1918)...',
+  );
+  const puppeteer = require('puppeteer');
   const { pathToFileURL } = require('url');
-  (async () => {
-    const mod = await import(
-      pathToFileURL(path.resolve(__dirname, '../units/edexcel_medicine/data.js')).href
-    );
-    const customHtml = buildWesternFrontTwoPageWorkbook(mod.unitData, { name: 'western_front' });
-    const unitPath = path.resolve(
-      __dirname,
-      '../units/edexcel_medicine/pupil_workbook_western_front.html',
-    );
-    const pubPath = path.resolve(
-      __dirname,
-      '../public/units/edexcel_medicine/pupil_workbook_western_front.html',
-    );
-    fs.writeFileSync(unitPath, customHtml, 'utf8');
-    fs.writeFileSync(pubPath, customHtml, 'utf8');
-    console.log('Successfully generated pupil_workbook_western_front.html to:');
-    console.log(' -', unitPath);
-    console.log(' -', pubPath);
-  })();
+  const mod = await import(
+    pathToFileURL(path.resolve(__dirname, '../units/edexcel_medicine/data.js')).href
+  );
+  const unitData = mod.default || mod.unitData;
+  const customHtml = buildWesternFrontTwoPageWorkbook(unitData, { name: 'western_front' });
+
+  const unitDir = path.resolve(__dirname, '../units/edexcel_medicine');
+  const publicUnitDir = path.resolve(__dirname, '../public/units/edexcel_medicine');
+  const pdfsDir = path.resolve(__dirname, '../public/pdfs');
+
+  const unitHtmlPath = path.join(unitDir, 'pupil_workbook_western_front.html');
+  const pubHtmlPath = path.join(publicUnitDir, 'pupil_workbook_western_front.html');
+  const outPdfPath = path.join(pdfsDir, 'edexcel_medicine_pupil_workbook_western_front.pdf');
+  const pubPdfCopy = path.join(publicUnitDir, 'pupil_workbook_western_front.pdf');
+
+  fs.writeFileSync(unitHtmlPath, customHtml, 'utf8');
+  fs.writeFileSync(pubHtmlPath, customHtml, 'utf8');
+  console.log(`[OK] HTML written to: ${pubHtmlPath}`);
+
+  console.log('Launching Puppeteer to generate high-resolution print PDF...');
+  const chromePath =
+    process.env.PUPPETEER_EXECUTABLE_PATH ||
+    (fs.existsSync('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe')
+      ? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+      : undefined);
+
+  const browser = await puppeteer.launch({
+    headless: 'new',
+    executablePath: chromePath,
+    args: ['--allow-file-access-from-files', '--disable-web-security', '--no-sandbox'],
+  });
+
+  const page = await browser.newPage();
+  await page.setViewport({ width: 794, height: 1123, deviceScaleFactor: 2 });
+  await page.setContent(customHtml, { waitUntil: 'networkidle0', timeout: 60000 });
+
+  await page.pdf({
+    path: outPdfPath,
+    format: 'A4',
+    printBackground: true,
+    margin: {
+      top: '0mm',
+      bottom: '0mm',
+      left: '0mm',
+      right: '0mm',
+    },
+  });
+
+  await browser.close();
+  console.log(`[OK] PDF successfully compiled: ${outPdfPath}`);
+
+  fs.copyFileSync(outPdfPath, pubPdfCopy);
+  console.log(`[OK] PDF copy written: ${pubPdfCopy}`);
+}
+
+if (require.main === module) {
+  main().catch((err) => {
+    console.error('❌ Error compiling Western Front workbook:', err);
+    process.exit(1);
+  });
 }

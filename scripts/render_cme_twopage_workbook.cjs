@@ -964,10 +964,27 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
     .task-section {
       margin-bottom: 2px;
     }
+    .stage-writing-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    .ruled-line {
+      height: 8.2mm;
+      border-bottom: 0.8px solid #000000;
+      box-sizing: border-box;
+    }
+    .ruled-line:last-child {
+      border-bottom: none;
+    }
     /* Thick Black Writing Lines for Accessibility & Special Needs */
     .task-line {
-      border-bottom: 1.5px solid #000000;
-      height: 7.0mm;
+      border-bottom: 1.2px solid #000000;
+      height: 8.0mm;
+      width: 100%;
       margin: 0;
       box-sizing: border-box;
     }
@@ -1126,76 +1143,76 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
         </div>
 
         <div style="border-bottom: 1px solid #000000; padding-bottom: 3px; margin-bottom: 6px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
-          <strong>Living Timeline Protocol:</strong> Throughout this unit, illustrate each historical milestone inside its dedicated sketchpad box below. Use the dual-coding prompt to combine symbolic diagrams, causal arrows, and key dates.
+          <strong>Living Timeline Protocol:</strong> Complete each milestone canvas below. Choose either <strong>(A) Creative Sketch:</strong> draw historical symbols, causal arrows, and dramatic scenes; OR <strong>(B) Mind Map:</strong> create a central concept bubble with key factual anchors.
         </div>
       </div>
 
-      <!-- 3 Spacious Milestones with Large Blank Dual-Coding Workspace -->
-      <div style="display: flex; flex-direction: column; gap: 6px; flex: 1; justify-content: space-between;">
+      <!-- 3 Spacious Milestones with Open Dual-Coding & Mindmapping Canvases -->
+      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
 
         <!-- Milestone 1: JAN 1964 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 JAN 1964 &bull; The Cairo Conference &amp; The Foundation of the PLO
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.1</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.1</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Thirteen Arab League leaders meet in Cairo to oppose Israel's National Water Carrier. They establish the Palestine Liberation Organisation (PLO) under Ahmad Shukeiri and approve the Headwater Diversion Plan to divert the Hasbani and Banyas rivers away from the Sea of Galilee.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch the Jordan River / Sea of Galilee Headwater Diversion route alongside the early PLO emblem and fedayeen rifle symbol.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch the Jordan River / Sea of Galilee Headwater Diversion route alongside the early PLO emblem and fedayeen rifle symbol.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
         <!-- Milestone 2: MAY–JUNE 1967 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 MAY–JUNE 1967 &bull; Straits of Tiran Blockade &amp; UNEF Expulsion
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.1</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.1</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Spurred by Soviet false warnings, President Nasser demands the immediate withdrawal of UN Emergency Force (UNEF) peacekeepers, moves 100,000 troops into Sinai, and blockades the Straits of Tiran at Sharm el-Sheikh, cutting off Israel's southern oil route (casus belli).
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch Egyptian tanks advancing past evicted UNEF peacekeepers and a naval chain closing the Straits of Tiran at Sharm el-Sheikh.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch Egyptian tanks advancing past evicted UNEF peacekeepers and a naval chain closing the Straits of Tiran at Sharm el-Sheikh.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
         <!-- Milestone 3: 5–10 JUNE 1967 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 2px 0;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 5–10 JUNE 1967 &bull; The Six-Day War &amp; The Conquered Territories
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.2</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.2</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Israel launches Operation Focus, wiping out the Egyptian Air Force on the tarmac. In six days of mobile warfare, the IDF captures the Sinai Peninsula and Gaza Strip from Egypt, the West Bank and East Jerusalem from Jordan, and the Golan Heights from Syria.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch an airfield runway with destroyed Egyptian jets (Operation Focus), then map the 4 captured lands: Sinai, Gaza, West Bank, Golan.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch an airfield runway with destroyed Egyptian jets (Operation Focus), then map the 4 captured lands: Sinai, Gaza, West Bank, Golan.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
@@ -1210,82 +1227,82 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
     <div class="page-body-full">
       <div>
         <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 5px;">
-          <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-size: 11.5pt; color: #000000; text-transform: uppercase; font-weight: 800;">
+          <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-size: 11pt; color: #000000; text-transform: uppercase; font-weight: 800;">
             Living Timeline &bull; Part 2: Diplomacy, Resistance &amp; The Yom Kippur War (1967–1973)
           </h2>
         </div>
 
-        <div style="border-bottom: 1px solid #000000; padding-bottom: 3px; margin-bottom: 6px; font-family: 'Inter', sans-serif; font-size: 8.2pt; color: #000000;">
-          <strong>Living Timeline Protocol:</strong> Complete each milestone sketchpad using dual-coding (combining visual symbols, causal arrows, and dates) to master the chronological spine.
+        <div style="border-bottom: 1px solid #000000; padding-bottom: 3px; margin-bottom: 6px; font-family: 'Inter', sans-serif; font-size: 7.8pt; color: #000000;">
+          <strong>Living Timeline Protocol:</strong> Complete each milestone canvas below. Choose either <strong>(A) Creative Sketch:</strong> draw historical symbols, causal arrows, and dramatic scenes; OR <strong>(B) Mind Map:</strong> create a central concept bubble with key factual anchors.
         </div>
       </div>
 
-      <!-- 3 Spacious Milestones with Large Blank Dual-Coding Workspace -->
-      <div style="display: flex; flex-direction: column; gap: 6px; flex: 1; justify-content: space-between;">
+      <!-- 3 Spacious Milestones with Open Dual-Coding & Mindmapping Canvases -->
+      <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
 
         <!-- Milestone 4: NOV 1967 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 22 NOV 1967 &bull; UN Resolution 242 &amp; The Khartoum "Three Noes"
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.3</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.3</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               The UN Security Council unanimously adopts Resolution 242, establishing the foundational principle of "Land for Peace" (Israeli withdrawal in exchange for Arab recognition and secure borders). At the Khartoum Summit, the Arab League issues the defiant "Three Noes": no peace, no recognition, and no negotiations with Israel.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch a 'Land for Peace' balance scale (occupied territory for recognition) stamped with the Khartoum Summit's Three 'NO's.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch a 'Land for Peace' balance scale (occupied territory for recognition) stamped with the Khartoum Summit's Three 'NO's.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
         <!-- Milestone 5: SEPT 1970 – 1972 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 4px 0; border-bottom: 1.2px solid #000000;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 SEPT 1970 – 1972 &bull; Black September in Jordan &amp; The Munich Olympics
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.4</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.4</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Operating as a "state within a state" in Jordan, the PFLP blows up three hijacked Western airliners at Dawson's Field. King Hussein’s army crushes Palestinian militia strongholds in September 1970, expelling the PLO to Lebanon. In September 1972, the militant splinter faction Black September murders 11 Israeli Olympic athletes in Munich.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch the hijacked airliners at Dawson's Field, PLO fighters expelled across Jordan to Lebanon, and the Munich balcony silhouette.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch the hijacked airliners at Dawson's Field, PLO fighters expelled across Jordan to Lebanon, and the Munich balcony silhouette.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
         <!-- Milestone 6: OCT 1973 -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 5px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 2px 0 2px 0;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; color: #000000;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+              <strong style="font-family: 'Inter', sans-serif; font-size: 9.8pt; font-weight: 900; color: #000000;">
                 6–25 OCT 1973 &bull; The Yom Kippur War &amp; The OPEC Oil Embargo
               </strong>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">Key Topic 2.5</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #0f172a; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase;">Key Topic 2.5</span>
             </div>
-            <p style="font-family: 'Georgia', serif; font-size: 9.2pt; color: #000000; margin: 0 0 3px 0; line-height: 1.24;">
+            <p style="font-family: 'Georgia', serif; font-size: 8.8pt; color: #111111; margin: 0 0 3px 0; line-height: 1.24;">
               Egypt and Syria launch a surprise assault on Yom Kippur. Egyptian infantry blast through the Bar-Lev Line using high-pressure water monitors under a Soviet SAM umbrella. Following emergency US airlifts and an Israeli counter-crossing led by Ariel Sharon, Arab OPEC ministers impose an oil embargo that quadruples global prices, shattering Israeli complacency.
             </p>
           </div>
-          <div style="border-top: 1px dashed #000000; min-height: 44mm; flex: 1; background: #ffffff; margin-top: 2px; padding: 3px 5px 2px 5px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'Inter', sans-serif; font-size: 7.2pt; border-bottom: 0.5px dashed #000000; padding-bottom: 2px;">
-              <span><strong style="text-transform: uppercase; letter-spacing: 0.3px; color: #000000;">Milestone Sketchpad:</strong> <span style="font-style: italic; color: #222222;">Sketch water cannons breaching the Bar-Lev sand wall, Sharon's canal counter-crossing, and a soaring OPEC oil barrel price graph.</span></span>
-              <span style="font-size: 6.2pt; color: #555555; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
+          <!-- Open Dual-Coding / Concept Canvas -->
+          <div style="flex: 1; min-height: 48mm; background: #ffffff; display: flex; flex-direction: column; justify-content: flex-end;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 6.6pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 2px;">
+              <span><strong style="text-transform: uppercase; color: #334155; letter-spacing: 0.3px;">Creative Sketch / Mind Map:</strong> <span style="font-style: italic; color: #475569;">Sketch water cannons breaching the Bar-Lev sand wall, Sharon's canal counter-crossing, and a soaring OPEC oil barrel price graph.</span></span>
+              <span style="font-size: 6.0pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; white-space: nowrap; margin-left: 8px;">Dual-Coding</span>
             </div>
-            <div style="flex: 1;"></div>
           </div>
         </div>
 
@@ -1333,11 +1350,6 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
         </div>
       </div>
 
-      <!-- Key Specification Focus -->
-      <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; padding: 2px 6px; background: #f8fafc; margin-bottom: 2px; font-family: 'Inter', sans-serif; font-size: 7.8pt; line-height: 1.2;">
-        <strong>Key Specification Focus:</strong> ${cfg.specAnchor}
-      </div>
-
       <!-- 5-Stage Chronological Inquiry Spine with Full-Width Question Banners (KS3 Golden Standard for GCSE) -->
       <div class="spine-notes-container" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin: 2px 0 2px 0; gap: 2px;">
         ${cfg.stages
@@ -1358,17 +1370,17 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
             return `
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
-            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap;">
-                ${st.step}
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit & Photocopier-Proof High Contrast) -->
+          <div class="stage-banner" style="background: #ffffff; color: #000000; padding: 1.8px 6px; display: flex; align-items: center; border-bottom: 1.4px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; border: 1.4px solid #000000; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; padding: 0.5px 5.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+                ${st.num || st.step}
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap;">
-                ${st.date}
+              <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
+                ${st.date ? `${st.date}` : ''}
               </span>
-              <span style="color: #94a3b8; font-size: 7pt;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 ${questionHeading}
               </span>
             </div>
@@ -1380,13 +1392,12 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
               ${bulletsHtml}
             </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
           </div>
 
@@ -1412,10 +1423,10 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
         </h2>
       </div>
 
-      <!-- 32 Ruled Lines with 8mm Left Margin (Tighter Line Spacing) -->
+      <!-- 31 Ruled Lines with 8mm Left Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1;">
         ${Array.from(
-          { length: 32 },
+          { length: 31 },
           () => `
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
@@ -1461,11 +1472,10 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
         <div style="font-family: 'Inter', sans-serif; font-size: 7.3pt; font-weight: 700; margin-bottom: 2px;">
           <strong>Sentence Stems:</strong> One major consequence was that... &bull; Specifically, this was evident when... &bull; Consequently, this directly resulted in... / altered relations because...
         </div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
-        <div class="task-line" style="height: 6.8mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
+        <div class="task-line" style="height: 8.0mm;"></div>
       </div>
 
       <!-- Section 2: Extended Exam Practice (Q2 Narrative [8m] or Q3 Importance [8m]) -->
@@ -1513,23 +1523,17 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
             .join('')}
         </div>
 
-        <!-- Row 3: Accessible Sentence Starters & Key Vocabulary Bank -->
-        <div style="padding: 2.5px 6px; background: #ffffff; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 8px;">
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Sentence Starters:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-style: italic; color: #222222; line-height: 1.15; display: block;">${rx.connectives || rx.causalConnectives}</span>
-          </div>
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 6.8pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">Key Vocabulary Bank:</strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; color: #222222; line-height: 1.15; display: block;">${rx.wordBank}</span>
-          </div>
+        <!-- Row 3: Accessible Sentence Starters / Analytical Connectives -->
+        <div style="padding: 2.5px 6px; background: #ffffff;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">${rx.connectives || rx.causalConnectives}</span>
         </div>
       </div>
 
-      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Tighter Line Spacing) -->
+      <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin: 2px 0 2px 0;">
         ${Array.from(
-          { length: 21 },
+          { length: 19 },
           () => `
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>
@@ -1554,10 +1558,10 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
         </h2>
       </div>
 
-      <!-- 26 Ruled Response Lines with 8mm Margin (Tighter Line Spacing) -->
+      <!-- 30 Ruled Response Lines with 8mm Margin (Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin-bottom: 3px;">
         ${Array.from(
-          { length: 28 },
+          { length: 30 },
           () => `
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>

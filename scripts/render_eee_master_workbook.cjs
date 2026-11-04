@@ -3704,7 +3704,7 @@ function buildEeeKeyTopicWorkbook(ktId) {
             Enquiry ${data.keyTopicNum}.${enq.enquiryNum}: ${enq.title}
           </strong>
           <span style="font-size: 7.2pt; color: #475569; display: block; margin-top: 2px;">
-            Do Now Retrieval (p. ${leftPageNum}): [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong> ]
+            Do Now Retrieval (p. ${leftPageNum}): &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong>
           </span>
         </td>
         <td style="padding: 3px 4px; text-align: center; border-right: 1px solid #000000; font-size: 7.4pt; font-weight: 800; background: #fafafa;">
@@ -3714,10 +3714,10 @@ function buildEeeKeyTopicWorkbook(ktId) {
           <strong>Q1(a) Feature:</strong> ${featAText} [2m]
         </td>
         <td rowspan="4" style="padding: 4px 6px; text-align: center; border-right: 1.2px solid #000000; font-size: 8.5pt; font-weight: 800; vertical-align: middle; background: #ffffff;">
-          [ &nbsp;&nbsp;&nbsp;<strong>___ / ___</strong>&nbsp;&nbsp;&nbsp; ]
+          &nbsp;&nbsp;&nbsp;<strong>___ / ___</strong>&nbsp;&nbsp;&nbsp;
         </td>
         <td style="padding: 3px 6px; text-align: center; font-size: 9.0pt; font-weight: 800; white-space: nowrap;">
-          [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 2</strong> ]
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 2</strong>
         </td>
       </tr>
       <tr style="border-bottom: 1px solid #cbd5e1; background: #ffffff;">
@@ -3728,7 +3728,7 @@ function buildEeeKeyTopicWorkbook(ktId) {
           <strong>Q1(b) Feature:</strong> ${featBText} [2m]
         </td>
         <td style="padding: 3px 6px; text-align: center; font-size: 9.0pt; font-weight: 800; white-space: nowrap;">
-          [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 2</strong> ]
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 2</strong>
         </td>
       </tr>
       <tr style="border-bottom: 1px solid #cbd5e1; background: #ffffff;">
@@ -3739,7 +3739,7 @@ function buildEeeKeyTopicWorkbook(ktId) {
           <strong>Q1(c) Feature:</strong> ${featCText} [2m]
         </td>
         <td style="padding: 3px 6px; text-align: center; font-size: 9.0pt; font-weight: 800; white-space: nowrap;">
-          [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 2</strong> ]
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 2</strong>
         </td>
       </tr>
       <tr style="border-bottom: 1.5px solid #000000; background: #ffffff;">
@@ -3750,7 +3750,7 @@ function buildEeeKeyTopicWorkbook(ktId) {
           <strong>${extLabel}:</strong> ${extText} [${extTariff}m]
         </td>
         <td style="padding: 3px 6px; text-align: center; font-size: 9.0pt; font-weight: 800; white-space: nowrap;">
-          [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ ${extTariff}</strong> ]
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${extTariff}</strong>
         </td>
       </tr>
     `;
