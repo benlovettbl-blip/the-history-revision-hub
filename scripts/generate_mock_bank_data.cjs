@@ -548,13 +548,206 @@ function extractCanonicalWeimarQuestion(lessonId, index) {
 }
 
 
+// ====================================================
+// 3. Conflict in the Middle East (Option 26/27) Extraction
+// ====================================================
+
+const cmeData = require(path.join(__dirname, '../units/cme_new/data.js')).default;
+
+// Load Radar Mark Scheme
+const radarMsPath = path.join(__dirname, '../public/units/cme_new/cme_mock_radar_mark_scheme.html');
+let radarDoc = null;
+if (fs.existsSync(radarMsPath)) {
+  const radarHtml = fs.readFileSync(radarMsPath, 'utf8');
+  const radarDom = new JSDOM(radarHtml);
+  radarDoc = radarDom.window.document;
+}
+
+function cleanCmeQText(str) {
+  if (!str) return '';
+  let res = str.replace(/^[0-9]+(?:\([a-c]\))?\.\s*/, '').trim();
+  res = res.replace(/\s*[\(\[]\s*\d+\s*(?:marks?|SPaG)?\s*[\)\]]\s*$/i, '').trim();
+  res = res.replace(/\s*\[?\s*\d+\s*marks?\s*\]?\s*$/i, '').trim();
+  return res;
+}
+
+const radarQCards = radarDoc ? radarDoc.querySelectorAll('.q-card') : [];
+
+const radarQuestions = {
+  // Q1(a): Cairo Conference
+  'radar_1a': {
+    id: 'cme_mock_radar_q1a',
+    mockId: 'cme_mock_radar',
+    qCode: '1(a)',
+    mockTitle: 'Predicted Radar Mock Paper (Unexamined Spec Gaps)',
+    paperCode: 'Option 26/27 (1HI0/26-27)',
+    type: '4-Mark Consequence',
+    marks: 4,
+    targetMins: 6,
+    questionText: 'Explain one consequence of the Cairo Conference (1964).',
+    stimulus: [],
+    sourceExtract: '',
+    modelAnswer: radarQCards[0]?.querySelector('.model-box')?.innerHTML.trim() || '',
+    pdfUrl: '/pdfs/mocks/cme_new/cme_mock_radar.pdf',
+    mockUrl: '/units/cme_new/cme_mock_radar.html'
+  },
+  // Q1(b): Occupied territories consolidation
+  'radar_1b': {
+    id: 'cme_mock_radar_q1b',
+    mockId: 'cme_mock_radar',
+    qCode: '1(b)',
+    mockTitle: 'Predicted Radar Mock Paper (Unexamined Spec Gaps)',
+    paperCode: 'Option 26/27 (1HI0/26-27)',
+    type: '4-Mark Consequence',
+    marks: 4,
+    targetMins: 6,
+    questionText: "Explain one consequence of Israel's consolidation of control of the occupied territories in the years immediately following 1967.",
+    stimulus: [],
+    sourceExtract: '',
+    modelAnswer: radarQCards[1]?.querySelector('.model-box')?.innerHTML.trim() || '',
+    pdfUrl: '/pdfs/mocks/cme_new/cme_mock_radar.pdf',
+    mockUrl: '/units/cme_new/cme_mock_radar.html'
+  },
+  // Q2: Egyptian relations with superpowers
+  'radar_2': {
+    id: 'cme_mock_radar_q2',
+    mockId: 'cme_mock_radar',
+    qCode: '2',
+    mockTitle: 'Predicted Radar Mock Paper (Unexamined Spec Gaps)',
+    paperCode: 'Option 26/27 (1HI0/26-27)',
+    type: '8-Mark Narrative Account',
+    marks: 8,
+    targetMins: 16,
+    questionText: 'Write a narrative account analysing Egyptian relations with the superpowers and Israel in the years 1967–73.',
+    stimulus: ['Soviet military aid to Egypt', 'the surprise attack on Yom Kippur (1973)'],
+    sourceExtract: '',
+    modelAnswer: radarQCards[2]?.querySelector('.model-box')?.innerHTML.trim() || '',
+    pdfUrl: '/pdfs/mocks/cme_new/cme_mock_radar.pdf',
+    mockUrl: '/units/cme_new/cme_mock_radar.html'
+  },
+  // Q3 Option A: Nasser's leadership 1955-56
+  'radar_3a': {
+    id: 'cme_mock_radar_q3a',
+    mockId: 'cme_mock_radar',
+    qCode: '3',
+    mockTitle: 'Predicted Radar Mock Paper (Unexamined Spec Gaps)',
+    paperCode: 'Option 26/27 (1HI0/26-27)',
+    type: '8-Mark Importance',
+    marks: 8,
+    targetMins: 16,
+    questionText: "Explain the importance of Nasser's leadership of the Arab world for growing tension between Israel and Egypt in the years 1955–56.",
+    stimulus: [],
+    sourceExtract: '',
+    modelAnswer: radarQCards[3]?.querySelectorAll('.model-box')[0]?.innerHTML.trim() || '',
+    pdfUrl: '/pdfs/mocks/cme_new/cme_mock_radar.pdf',
+    mockUrl: '/units/cme_new/cme_mock_radar.html'
+  },
+  // Q3 Option B: Arafat's speech to UN 1974
+  'radar_3b': {
+    id: 'cme_mock_radar_q3b',
+    mockId: 'cme_mock_radar',
+    qCode: '3',
+    mockTitle: 'Predicted Radar Mock Paper (Unexamined Spec Gaps)',
+    paperCode: 'Option 26/27 (1HI0/26-27)',
+    type: '8-Mark Importance',
+    marks: 8,
+    targetMins: 16,
+    questionText: "Explain the importance of Arafat's speech to the UN (1974) for international recognition of the Palestinian cause.",
+    stimulus: [],
+    sourceExtract: '',
+    modelAnswer: radarQCards[3]?.querySelectorAll('.model-box')[1]?.innerHTML.trim() || '',
+    pdfUrl: '/pdfs/mocks/cme_new/cme_mock_radar.pdf',
+    mockUrl: '/units/cme_new/cme_mock_radar.html'
+  },
+  // Q3 Option C: End of Cold War and Gulf War 1991
+  'radar_3c': {
+    id: 'cme_mock_radar_q3c',
+    mockId: 'cme_mock_radar',
+    qCode: '3',
+    mockTitle: 'Predicted Radar Mock Paper (Unexamined Spec Gaps)',
+    paperCode: 'Option 26/27 (1HI0/26-27)',
+    type: '8-Mark Importance',
+    marks: 8,
+    targetMins: 16,
+    questionText: 'Explain the importance of the end of the Cold War and the Gulf War (1991) for superpower peace efforts in the Middle East.',
+    stimulus: [],
+    sourceExtract: '',
+    modelAnswer: radarQCards[3]?.querySelectorAll('.model-box')[2]?.innerHTML.trim() || '',
+    pdfUrl: '/pdfs/mocks/cme_new/cme_mock_radar.pdf',
+    mockUrl: '/units/cme_new/cme_mock_radar.html'
+  }
+};
+
+const cmeRadarMapping = {
+  'lesson_4': ['radar_3a'],
+  'lesson_6': ['radar_1a'],
+  'lesson_8': ['radar_1b'],
+  'lesson_10': ['radar_2'],
+  'lesson_11': ['radar_3b'],
+  'lesson_13': ['radar_3c']
+};
+
+function classifyCmeQuestion(lessonId, q, idx) {
+  const t = (q.type || '').toLowerCase();
+  const tariff = (q.tariff || '').toLowerCase();
+  const text = (q.question || '').toLowerCase();
+
+  let qCode = `1(${String.fromCharCode(97 + idx)})`;
+  let type = '4-Mark Consequence';
+  let marks = 4;
+  let targetMins = 6;
+
+  if (t === 'narrative_8' || tariff.includes('narrative') || text.includes('narrative account')) {
+    qCode = '2';
+    type = '8-Mark Narrative Account';
+    marks = 8;
+    targetMins = 16;
+  } else if (t === 'importance_8' || tariff.includes('importance') || text.includes('importance of')) {
+    qCode = '3';
+    type = '8-Mark Importance';
+    marks = 8;
+    targetMins = 16;
+  } else if (tariff.includes('4') || t === '4-mark' || text.includes('consequence')) {
+    qCode = idx === 0 ? '1(a)' : (idx === 1 ? '1(b)' : '1(c)');
+    type = '4-Mark Consequence';
+    marks = 4;
+    targetMins = 6;
+  }
+
+  let stimulus = [];
+  if (q.stimulus && Array.isArray(q.stimulus)) {
+    stimulus = q.stimulus;
+  } else if (q.bullet_points && Array.isArray(q.bullet_points)) {
+    stimulus = q.bullet_points;
+  }
+
+  return {
+    id: `${lessonId}_can_q${idx + 1}`,
+    mockId: 'cme_canonical_practice',
+    qCode,
+    mockTitle: 'Official Edexcel Syllabus Practice Station',
+    paperCode: 'Option 26/27 (1HI0/26-27)',
+    type,
+    marks,
+    targetMins,
+    questionText: cleanCmeQText(q.question),
+    stimulus,
+    sourceExtract: '',
+    modelAnswer: q.model || '',
+    pdfUrl: '/pdfs/cme_new_textbook.pdf',
+    mockUrl: '/units/cme_new/'
+  };
+}
+
+
 // ==========================================
-// 3. Assemble and Compile Final Database
+// 4. Assemble and Compile Final Database
 // ==========================================
 
 const finalDatabase = {
   usa: {},
-  weimar_nazi_germany: {}
+  weimar_nazi_germany: {},
+  cme_new: {}
 };
 
 // Build USA
@@ -571,6 +764,28 @@ for (const [lessonId, qList] of Object.entries(weimarMapping)) {
       return extractWeimarQuestionDetails(item.mock, item.q);
     }
   }).filter(Boolean);
+}
+
+// Build Conflict in the Middle East (cme_new)
+for (const l of cmeData.lessons) {
+  const lessonQuestions = [];
+  
+  // Canonical questions
+  if (l.exam_practice && l.exam_practice.questions) {
+    l.exam_practice.questions.forEach((q, idx) => {
+      lessonQuestions.push(classifyCmeQuestion(l.id, q, idx));
+    });
+  }
+
+  // Radar questions
+  const radarKeys = cmeRadarMapping[l.id] || [];
+  radarKeys.forEach(rk => {
+    if (radarQuestions[rk]) {
+      lessonQuestions.push(radarQuestions[rk]);
+    }
+  });
+
+  finalDatabase.cme_new[l.id] = lessonQuestions;
 }
 
 const fileContent = `/**
@@ -591,4 +806,4 @@ export function getLessonMockQuestions(unitId, lessonId) {
 `;
 
 fs.writeFileSync(path.join(__dirname, '../src/engine/mock_exam_bank_data.js'), fileContent, 'utf8');
-console.log('✅ Generated src/engine/mock_exam_bank_data.js successfully with USA and Weimar & Nazi Germany!');
+console.log('✅ Generated src/engine/mock_exam_bank_data.js successfully with USA, Weimar & Nazi Germany, and CME!');
