@@ -740,14 +740,91 @@ function classifyCmeQuestion(lessonId, q, idx) {
 }
 
 
+// ====================================================
+// 4. Early Elizabethan England (Option B4) Extraction
+// ====================================================
+
+const eeeData = require(path.join(__dirname, '../units/eee/data.js')).default;
+
+function cleanEeeQText(str) {
+  if (!str) return '';
+  let res = str.replace(/^[0-9]+(?:\([a-c]\))?\.\s*/, '').trim();
+  res = res.replace(/\s*[\(\[]\s*\d+\s*(?:marks?|SPaG)?\s*[\)\]]\s*$/i, '').trim();
+  res = res.replace(/\s*\[?\s*\d+\s*marks?\s*\]?\s*$/i, '').trim();
+  return res;
+}
+
+function classifyEeeQuestion(lessonId, q, idx) {
+  const t = (q.type || '').toLowerCase();
+  const tariff = (q.tariff || '').toLowerCase();
+  const text = (q.question || '').toLowerCase();
+
+  let qCode = idx === 0 ? '1(a)' : (idx === 1 ? '1(b)' : '1(c)');
+  let type = '2-Mark Feature';
+  let marks = 2;
+  let targetMins = 3;
+
+  if (t === 'essay_16' || tariff.includes('16') || text.includes('how far do you agree')) {
+    qCode = '3';
+    type = '16-Mark Statement Essay';
+    marks = 16;
+    targetMins = 25;
+  } else if (t === 'explain_why_12' || tariff.includes('12') || text.includes('explain why')) {
+    qCode = '2';
+    type = '12-Mark Causation';
+    marks = 12;
+    targetMins = 20;
+  } else if (t === 'feature_2m' || tariff.includes('2') || text.includes('describe one')) {
+    qCode = idx === 0 ? '1(a)' : (idx === 1 ? '1(b)' : '1(c)');
+    type = '2-Mark Feature';
+    marks = 2;
+    targetMins = 3;
+  }
+
+  let stimulus = [];
+  if (q.stimulus && Array.isArray(q.stimulus)) {
+    stimulus = q.stimulus;
+  } else if (q.bullet_points && Array.isArray(q.bullet_points)) {
+    stimulus = q.bullet_points;
+  }
+
+  let pdfUrl = '/pdfs/mocks/eee/eee_mock_2026.pdf';
+  if (lessonId.startsWith('lesson_1')) {
+    pdfUrl = '/pdfs/mocks/eee/eee_notebook_1.pdf';
+  } else if (lessonId.startsWith('lesson_2')) {
+    pdfUrl = '/pdfs/mocks/eee/eee_notebook_3.pdf';
+  } else if (lessonId.startsWith('lesson_3')) {
+    pdfUrl = '/pdfs/mocks/eee/eee_mock_d.pdf';
+  }
+
+  return {
+    id: `${lessonId}_q${idx + 1}`,
+    mockId: 'eee_official_practice',
+    qCode,
+    mockTitle: 'Official Edexcel Syllabus Practice Station',
+    paperCode: 'Option B4 (1HI0/B4)',
+    type,
+    marks,
+    targetMins,
+    questionText: cleanEeeQText(q.question),
+    stimulus,
+    sourceExtract: '',
+    modelAnswer: q.model || '',
+    pdfUrl,
+    mockUrl: '/units/eee/'
+  };
+}
+
+
 // ==========================================
-// 4. Assemble and Compile Final Database
+// 5. Assemble and Compile Final Database
 // ==========================================
 
 const finalDatabase = {
   usa: {},
   weimar_nazi_germany: {},
-  cme_new: {}
+  cme_new: {},
+  eee: {}
 };
 
 // Build USA
@@ -788,6 +865,15 @@ for (const l of cmeData.lessons) {
   finalDatabase.cme_new[l.id] = lessonQuestions;
 }
 
+// Build Early Elizabethan England (eee)
+for (const l of eeeData.lessons) {
+  if (l.exam_practice && l.exam_practice.questions) {
+    finalDatabase.eee[l.id] = l.exam_practice.questions.map((q, idx) => classifyEeeQuestion(l.id, q, idx));
+  } else {
+    finalDatabase.eee[l.id] = [];
+  }
+}
+
 const fileContent = `/**
  * src/engine/mock_exam_bank_data.js
  *
@@ -806,4 +892,4 @@ export function getLessonMockQuestions(unitId, lessonId) {
 `;
 
 fs.writeFileSync(path.join(__dirname, '../src/engine/mock_exam_bank_data.js'), fileContent, 'utf8');
-console.log('✅ Generated src/engine/mock_exam_bank_data.js successfully with USA, Weimar & Nazi Germany, and CME!');
+console.log('✅ Generated src/engine/mock_exam_bank_data.js successfully with USA, Weimar & Nazi Germany, CME, and Early Elizabethan England!');
