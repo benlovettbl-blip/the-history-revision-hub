@@ -96,6 +96,10 @@ const usaMapping = {
   'lesson_4_1': [
     { mock: 'usa_mock_4', q: '2' }
   ],
+  // lesson_4_2: The 'Silent Majority' and Support for the Vietnam War
+  'lesson_4_2': [
+    { canonical: true, index: 0 }
+  ],
   // lesson_4_3: Peace negotiations 1972-73, Fall of Saigon 1975
   'lesson_4_3': [
     { mock: 'usa_mock_5', q: '2' }
@@ -231,6 +235,75 @@ function extractUsaQuestionDetails(mockId, qCode) {
     modelAnswer,
     pdfUrl,
     mockUrl
+  };
+}
+
+const usaData = require(path.join(__dirname, '../units/usa/data.js')).default;
+
+function extractCanonicalUsaQuestion(lessonId, index) {
+  const lesson = usaData.lessons.find(l => l.id === lessonId);
+  if (!lesson || !lesson.exam_practice || !lesson.exam_practice.questions) return null;
+  const q = lesson.exam_practice.questions[index];
+  if (!q) return null;
+
+  let qCode = '1';
+  let type = '4-Mark Inference';
+  let marks = 4;
+  let targetMins = 6;
+
+  if ((q.tariff && q.tariff.includes('16')) || (q.type && q.type.includes('16')) || q.question.includes('How far do you agree')) {
+    qCode = '3(d)';
+    type = '16+4 Mark Historical Interpretation';
+    marks = 20;
+    targetMins = 34;
+  } else if ((q.tariff && q.tariff.includes('12')) || (q.type && q.type.includes('12')) || q.question.includes('Explain why')) {
+    qCode = '2';
+    type = '12-Mark Causation';
+    marks = 12;
+    targetMins = 24;
+  } else if ((q.tariff && q.tariff.includes('8')) || (q.type && q.type.includes('8')) || q.question.includes('How useful')) {
+    qCode = '3(a)';
+    type = '8-Mark Source Utility';
+    marks = 8;
+    targetMins = 14;
+  }
+
+  let sourceExtract = '';
+  if (lesson.exam_practice.stimulus && Array.isArray(lesson.exam_practice.stimulus)) {
+    sourceExtract = lesson.exam_practice.stimulus.map(s => {
+      const title = s.title || s.provenance || 'Source';
+      const prov = s.provenance && s.title ? `<div style="font-size: 0.9em; font-style: italic; color: #64748b; margin-bottom: 4px;">${s.provenance}</div>` : '';
+      const text = s.extract || s.content || '';
+      return `<div style="margin-bottom: 12px; padding: 10px; background: rgba(0,0,0,0.03); border-left: 3px solid #f59e0b; border-radius: 4px;">
+        <div style="font-weight: 700; color: #b45309; margin-bottom: 4px;">${title}</div>
+        ${prov}
+        <div>${text}</div>
+      </div>`;
+    }).join('');
+  }
+
+  let stimulus = [];
+  if (q.stimulus && Array.isArray(q.stimulus)) {
+    stimulus = q.stimulus;
+  } else if (q.bullet_points && Array.isArray(q.bullet_points)) {
+    stimulus = q.bullet_points;
+  }
+
+  return {
+    id: `${lessonId}_can_q${index + 1}`,
+    mockId: 'canonical_exam_station',
+    qCode,
+    mockTitle: 'Official Edexcel Syllabus Practice Station',
+    paperCode: 'Option 33 (1HI0/33)',
+    type,
+    marks,
+    targetMins,
+    questionText: q.question,
+    stimulus,
+    sourceExtract,
+    modelAnswer: q.model,
+    pdfUrl: '/pdfs/usa/usa_textbook_UNIFIED.pdf',
+    mockUrl: `/units/usa/`
   };
 }
 
@@ -1037,7 +1110,13 @@ const finalDatabase = {
 
 // Build USA
 for (const [lessonId, qList] of Object.entries(usaMapping)) {
-  finalDatabase.usa[lessonId] = qList.map(item => extractUsaQuestionDetails(item.mock, item.q));
+  finalDatabase.usa[lessonId] = qList.map(item => {
+    if (item.canonical) {
+      return extractCanonicalUsaQuestion(lessonId, item.index);
+    } else {
+      return extractUsaQuestionDetails(item.mock, item.q);
+    }
+  }).filter(Boolean);
 }
 
 // Build Weimar & Nazi Germany
