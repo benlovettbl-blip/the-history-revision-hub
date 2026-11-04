@@ -2962,6 +2962,1048 @@ export const UNIT_LESSON_MOCK_QUESTIONS = {
         "mockUrl": "/units/eee/"
       }
     ]
+  },
+  "edexcel_medicine": {
+    "lesson_1_1": [
+      {
+        "id": "lesson_1_1_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Similarity",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which ideas about the cause of disease in the Medieval period (c1250–c1500) were similar to ideas in the Renaissance period (c1500–c1700).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way ideas about the causes of disease were similar in both periods was the continuing belief in **miasma** (bad air). In the Medieval period, during the 1348 Black Death, people believed that poisonous fumes from rotting filth and swamps entered the body and caused disease. Similarly, during the Renaissance, people still blamed bad air for epidemics like the 1665 Great Plague, carrying sweet-smelling posies and pomanders to keep bad smells away. Therefore, both periods believed that breathing in foul air directly caused illness because they still had no understanding of germs.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_1_1_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why the Catholic Church had such a major influence on ideas about the causes of disease in the period c1250–c1500.",
+        "stimulus": [
+          "Control of education and book production",
+          "Galen and the Christian worldview"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One major reason the Catholic Church had such influence was its control over education and book-copying. In the Middle Ages, books were hand-copied by monks in monastic scriptoria, meaning the Church decided which medical texts were preserved. Because Galen wrote that the human body was created by one God, the Church officially approved his ideas and banned books that disagreed. Furthermore, medieval universities were run by Church clergy, so medical students spent years memorising Galen and Hippocrates instead of examining real patients. Therefore, the Church maintained a major influence over medical ideas because students were taught to treat Galen's texts as absolute truth rather than thinking independently.<br><br>Furthermore, the Church had the legal and religious power to punish anyone who challenged traditional ideas. Priests taught that disease was sent directly by God as a punishment for sin or a test of faith, and questioning this was treated as heresy. For example, in 1277 the Franciscan friar Roger Bacon was imprisoned by Church authorities for arguing that doctors should do scientific experiments rather than simply accepting ancient books. This harsh punishment sent a terrifying message to scholars across Europe that questioning Church-approved ideas would result in arrest and excommunication. Therefore, the Church controlled medical thinking because fear of punishment stopped doctors from investigating scientific causes of disease.<br><br>Finally, the Church ran society's hospitals and directed the daily religious beliefs of ordinary people. Most people attended church every Sunday, where priests told them that epidemics like the 1348 Black Death were caused by God's anger. Monastic hospitals were run by monks and nuns who focused on 'care not cure', offering patients prayer, warmth, and food rather than medical treatment. Because ordinary people were deeply religious and had no scientific alternative, everyone accepted the Church’s supernatural explanations for illness. Therefore, the Church had a massive influence because ordinary people completely relied on Christian teachings to understand illness.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_1_2": [
+      {
+        "id": "lesson_1_2_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Similarity",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which diagnosis of disease in the Medieval period was similar to diagnosis in the Renaissance.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way diagnosis of disease was similar was the continuing reliance on **checking urine and the Four Humours**. In the Medieval period, doctors examined a patient's urine against a colour chart to identify which humour was unbalanced, alongside checking astrology charts. Similarly, during the Renaissance, most ordinary doctors continued to examine urine samples and check humoural balance at the bedside to diagnose illness. Therefore, both periods relied on Galen's ancient humoural ideas to diagnose patients rather than scientific tests.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_1_2_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why Galen’s medical ideas continued to be believed in the period c1250–c1500.",
+        "stimulus": [
+          "Church approval of Galen’s monotheism",
+          "Lack of practical human dissection"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One primary reason Galen’s ideas continued to be believed was that his medical theories seemed logical and offered practical treatments. Galen expanded Hippocrates’ Four Humours into the Theory of Opposites. This gave doctors a clear system for treating illness: if a patient had a cold, wet fever, they were given hot, dry remedies like pepper or mustard. Because this gave doctors and ordinary people an understandable framework for illness, it provided reassuring explanations even when treatments failed to cure deadly epidemics. Therefore, Galen’s ideas continued to be believed because they provided a practical, common-sense explanation for illness that medieval people could easily understand.<br><br>Furthermore, Galen’s writings were actively supported and protected by the medieval Catholic Church. Galen believed that every part of the human body was purposefully created by a single God, which fit perfectly with Christian teachings. Because the Church controlled universities and book-copying, it declared Galen’s texts infallible and banned criticism of his work. In medical lectures, professors read aloud from Galen while an assistant cut open a body; if the corpse did not match Galen's drawings, professors claimed the body was deformed rather than admitting Galen was wrong. Therefore, Galen's ideas continued to be believed because the Church made it impossible for medical students to challenge his authority.<br><br>Finally, there was a total lack of alternative scientific tools or human dissection to disprove Galen's errors. Human dissection was heavily restricted by the Church, and doctors had no microscopes to see bacteria or physiological instruments to test blood flow. Because Galen had dissected animals like pigs and apes rather than humans, his mistakes remained undiscovered for centuries. Without modern scientific equipment or the freedom to experiment on human bodies, medieval doctors had no way of testing whether Galen’s theories were correct. Therefore, Galen’s ideas continued to be believed because doctors had neither the tools nor the scientific evidence to prove his theories wrong.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_1_3": [
+      {
+        "id": "lesson_1_3_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Difference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which treatments for disease in the Medieval period were different from treatments in the Modern period.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way treatments were different was that medieval treatments focused on **balancing humours**, whereas modern medicine uses **specific drugs to destroy germs**. In the Medieval period, doctors used bloodletting with leeches and purging with laxatives to remove excess humours from the body. In contrast, modern doctors prescribe targeted treatments like antibiotics (such as penicillin) to destroy bacteria without harming the body. Therefore, medieval treatments tried to balance the body's humours, while modern treatments scientifically attack the actual cause of the disease.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_1_3_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why medieval treatments for disease focused primarily on restoring humoural balance in the period c1250–c1500.",
+        "stimulus": [
+          "The Theory of Opposites",
+          "Bloodletting (phlebotomy) and purging"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One major reason medieval treatments focused on humoural balance was the universal belief in the Four Humours. Hippocrates and Galen taught that the body was made of four humours (blood, phlegm, yellow bile, and black bile) and that illness was caused when these humours became unbalanced. Treatments were designed to remove whichever humour was in excess, using bloodletting (phlebotomy) with leeches or cuts, and purging with herbal laxatives. Because patients visibly lost bodily fluids during these treatments, both doctors and patients believed that the excess humours causing the illness were being successfully expelled. Therefore, treatments focused on humoural balance because evacuative therapies provided visible physical proof that the disease was leaving the body.<br><br>Furthermore, preventive health advice was structured entirely around keeping the humours in equilibrium, as shown by the Regimen Sanitatis. The Regimen Sanitatis (Rule of Health) was a widely used medieval health guide that advised people to regulate their diet, sleep, and exercise to prevent humoural imbalance. Wealthy people consulted physicians to check their personal humoural complexion and astrological birth charts, adapting their lifestyle (such as avoiding cold foods in winter) to keep their humours balanced. Therefore, treatments focused on humoural balance because preventing disease was seen as a daily routine of maintaining internal bodily harmony.<br><br>Finally, treatments focused on the humours because there was no alternative scientific understanding of what caused disease. Without microscopes, people had no knowledge of bacteria, viruses, or cellular biology. Since the Catholic Church strictly enforced Galen’s teachings and banned independent experimentation, physicians were never taught any rival theories of medicine. Without any awareness of germs or modern medicines, humoural theory remained the only rational explanation for sickness available to medieval physicians. Therefore, treatments focused on humoural balance because physicians had no other scientific framework to explain or treat illness.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_1_4": [
+      {
+        "id": "lesson_1_4_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Similarity",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which medical care providers in the Medieval period were similar to those in the Renaissance.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way in which medical care providers were similar was that **the majority of ordinary sick people were treated at home by women and wise-women**, rather than university-educated physicians. In both the Medieval period and the Renaissance, licensed physicians were extremely expensive and catered almost exclusively to the wealthy elite. Consequently, ordinary peasants and townspeople relied on female relatives, apothecaries, and local herbalists who prepared home remedies from traditional recipe books passed down through generations. Therefore, both periods were similar because ordinary people could not afford trained doctors and relied entirely on home remedies and women healers.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_1_4_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why medieval hospitals provided ‘care not cure’ in the period c1250–c1500.",
+        "stimulus": [
+          "Monastic hospice rules and prayer",
+          "Lack of medically trained physicians in hospitals"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One fundamental reason medieval hospitals provided ‘care not cure’ was that they were religious institutions rather than medical facilities. Hospitals were run by monks and nuns and paid for by the Catholic Church or wealthy lords seeking forgiveness for their sins. The Latin word 'hospitium' meant hospitality, meaning hospitals were built as shelters for the elderly, poor, and pilgrims rather than places to treat the sick. Wards were arranged so that patient beds faced directly toward the chapel altar, ensuring patients could watch mass, confess their sins, and prepare their souls for heaven. Therefore, hospitals provided 'care not cure' because their primary purpose was saving the patient's soul through prayer rather than curing their physical body.<br><br>Furthermore, medieval hospitals deliberately lacked medically trained staff and surgical equipment. Monks and nuns had no medical training; their duties consisted of basic nursing care, such as washing patients, providing clean linens, and feeding them warm soup. Hospitals could not afford university-trained physicians, who charged high fees and only treated wealthy clients. Moreover, hospitals turned away people suffering from contagious diseases like leprosy and the plague, meaning they rarely admitted patients who needed active medical treatment. Therefore, hospitals provided 'care not cure' because they did not have the doctors, medicines, or equipment needed to cure illnesses.<br><br>Finally, medieval Christian doctrine taught that physical illness was sent directly by God to cleanse human sins. Priests and monks believed that attempting to cure a disease medically might interfere with God’s divine will, whereas prayer and repentance would heal the patient spiritually. As a result, hospital staff saw their Christian duty as offering compassionate comfort and shelter while letting God decide whether the patient lived or died. Therefore, hospitals provided 'care not cure' because religious belief placed spiritual salvation far above physical medicine.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_1_5": [
+      {
+        "id": "lesson_1_5_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Similarity",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which approaches to preventing epidemic disease in the Medieval period (1348 Black Death) were similar to the Renaissance (1665 Great Plague).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way approaches to preventing epidemics were similar was the use of **quarantine and fleeing from infected areas**. In 1348, during the Black Death, towns like Gloucester tried to shut their gates to outsiders, while the wealthy fled to the countryside. Similarly, during the 1665 Great Plague, the Mayor of London quarantined infected families in their homes for 28 days behind locked doors, while the King and wealthy citizens also fled London. Therefore, both periods attempted to stop the spread by keeping healthy people away from infected areas.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_1_5_q2",
+        "mockId": "med_official_practice",
+        "qCode": "5/6",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "16+4 Mark Evaluative Essay",
+        "marks": 20,
+        "targetMins": 28,
+        "questionText": "‘The primary reason people died during the Black Death was the complete failure of public health measures.’ How far do you agree? Explain your answer. [16+",
+        "stimulus": [
+          "Miasma and public filth",
+          "Quarantine and mass plague pits"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "On the one hand, there is evidence to agree that the failure of public health measures contributed to the high death toll. In 1348, medieval towns had no proper sewage systems, clean running water, or street cleaners. Filth, rotting meat offal, and human waste piled up in narrow unpaved streets, creating ideal breeding grounds for rats and fleas. Although some towns tried to protect themselves—for example, Gloucester attempted to quarantine itself by shutting its town gates to people from infected Bristol—the regulations were poorly enforced, and rural traders easily bypassed the gates. In London, authorities were completely overwhelmed and only organized emergency burial trenches after thousands were already dead. Therefore, public health measures failed to prevent mass deaths because town councils lacked the power, money, and organization to enforce effective quarantine or clean the streets.<br><br>On the other hand, the primary reason so many people died was that nobody understood the biological cause of the plague. In 1348, people had no knowledge of bacteria (Yersinia pestis) or flea bites from black rats. Instead, they believed the Black Death was caused by God’s wrath punishing human sins, or by miasma (poisonous air). Because of these false beliefs, civic and religious responses actually worsened the epidemic. For example, church authorities organized mass religious processions and prayer gatherings in crowded streets, which drastically accelerated the person-to-person spread of pneumonic plague. Similarly, carrying sweet-smelling posies and burning tar in the streets did nothing to stop fleas from biting people. Therefore, the overwhelming death toll was primarily caused by a total lack of medical understanding rather than public health failures, as authorities could never stop a disease they did not understand.<br><br>Furthermore, medieval medical treatments were completely ineffective and often hastened patients' deaths. Physicians followed Galen's Four Humours, using bloodletting with leeches and violent purging, which severely weakened patients' immune systems right when their bodies needed strength to fight the infection. Apothecaries prescribed costly herbal remedies that had no effect on bacteria, while barbers lanced swollen buboes with dirty knives, exposing victims to fatal blood poisoning. Because doctors did not possess modern antibiotics like streptomycin, anyone who caught pneumonic plague faced a 100% death rate. Therefore, high mortality was caused by the total failure of medical cures, as doctors were completely powerless against the plague bacteria.<br><br>In conclusion, I agree only to a limited extent that people died because of failed public health measures. While medieval town councils were disorganized and failed to enforce effective quarantine, even the cleanest medieval town would still have been devastated by the plague. The primary reason for the catastrophic mortality (which killed around a third of England's population) was the complete absence of scientific knowledge regarding germs and rat fleas. Therefore, while public health measures were weak, it was the fundamental lack of medical understanding that made mass death completely unavoidable.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_2_1": [
+      {
+        "id": "lesson_2_1_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Similarity",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which ideas about the cause of disease in the Renaissance period (c1500–c1700) were similar to ideas in the Medieval period (c1250–c1500).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way ideas about the causes of disease were similar in both periods was the continuing belief in **miasma** (bad air). In the Renaissance, people still blamed bad air for epidemics like the 1665 Great Plague, carrying sweet-smelling posies and pomanders to ward off disease. Similarly, during the Medieval period, people in 1348 believed foul vapors from rotting waste caused the Black Death. Therefore, both periods believed that breathing in foul air directly caused illness because neither period had any understanding of microscopic germs.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_2_1_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why there were changes in the way ideas about the causes of disease and illness were communicated in the period c1500–c1700.",
+        "stimulus": [
+          "The printing press (Gutenberg)",
+          "The Royal Society and Philosophical Transactions"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One major reason for changes in medical communication was the invention of the movable-type printing press. Invented by Johannes Gutenberg in c.1440 and brought to England by William Caxton in 1476, the printing press allowed thousands of identical books to be produced quickly and cheaply. Prior to this, books were hand-copied by monks in monasteries, which was slow, expensive, and subject to Church censorship. Crucially, the printing press allowed new anatomical discoveries, such as Andreas Vesalius’s De Fabrica (1543), to be printed with exact anatomical drawings and shared simultaneously across European universities without errors. Therefore, medical communication changed because the printing press bypassed Church control and allowed accurate scientific discoveries to spread rapidly across Europe.<br><br>Furthermore, communication changed fundamentally due to the founding of the Royal Society in London in 1660. Granted a Royal Charter by King Charles II in 1662, the Royal Society promoted scientific experimentation under the motto 'Nullius in Verba' ('Take nobody's word for it'). In 1665, they began publishing Philosophical Transactions, Europe’s first peer-reviewed scientific journal. This created an international network where scientists could publish experimental results, critique each other's work, and read about new microscopic discoveries like Robert Hooke’s Micrographia (1665). Therefore, communication changed because the Royal Society created an official platform for scientists to share, debate, and verify new discoveries together.<br><br>Finally, communication changed because the Renaissance and Humanism weakened the authority of the Catholic Church. Following the Protestant Reformation and the closure of monasteries, scholars were encouraged to question ancient authority and think critically (Humanism). Instead of blindly copying Galen's ancient manuscripts, university medical faculties and commercial publishers actively sought and printed books detailing hands-on dissections and clinical experiments. Therefore, communication changed because the rise of Humanism created widespread demand for new scientific research rather than ancient Church-approved texts.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_2_2": [
+      {
+        "id": "lesson_2_2_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Difference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which Thomas Sydenham's approach to diagnosis was different from medieval physicians.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way Sydenham’s approach to diagnosis was different was that he focused on **carefully observing the patient's symptoms at their bedside**, rather than relying on ancient books or urine charts. In the Medieval period, doctors rarely examined patients closely, instead checking urine flasks and astrology charts to diagnose a humoural imbalance. In contrast, Thomas Sydenham sat by the patient’s bed, recorded their symptoms over time, and showed that different diseases had specific symptom patterns (such as recognizing scarlet fever was different from measles). Therefore, Sydenham diagnosed diseases through direct bedside observation rather than ancient medical theories.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_2_2_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why Thomas Sydenham was significant in the development of medicine in Britain.",
+        "stimulus": [
+          "Observationes Medicae (1676)",
+          "Classification of distinct illnesses"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "Thomas Sydenham was significant primarily because he revolutionized medical diagnosis by introducing direct bedside observation. In the 1600s, most physicians diagnosed patients theoretically by reading Galen or checking urine charts, rarely spending time with the patient. Sydenham, nicknamed the 'English Hippocrates', rejected this and insisted that doctors must sit at the patient's bedside, observe symptoms closely, and take detailed clinical notes over time. By doing so, he encouraged doctors to treat what they actually observed in real patients rather than what they read in ancient manuscripts. Therefore, Sydenham was significant because he established careful bedside clinical observation as the foundation of British medical diagnosis.<br><br>Furthermore, Sydenham was significant because he pioneered the idea of classifying diseases into distinct groups in his book Observationes Medicae (1676). Traditional humoural theory claimed illness was completely unique to each person's individual balance of humours. Sydenham overturned this by arguing that diseases were external conditions with fixed patterns of symptoms, just like plants in a botanical book. This allowed him to achieve major breakthroughs, such as proving that scarlet fever and measles were two completely separate diseases rather than variations of the same fever. Therefore, Sydenham was significant because classifying diseases into specific categories laid the vital foundations for modern medical diagnosis and epidemiology.<br><br>Finally, Sydenham was significant because he introduced sensible, practical treatments that saved lives. For smallpox, traditional doctors sealed patients in overheated rooms with heavy blankets to 'sweat out' the poison. Sydenham introduced a 'cooling treatment' with fresh air, cool drinks, and light blankets, which dramatically reduced deaths. He also popularized using cinchona bark (quinine) from South America to treat malaria. While his treatments still included traditional bloodletting, his willingness to test practical remedies broke away from dangerous medieval traditions. Therefore, Sydenham was significant because his common-sense treatments directly improved patient recovery rates and challenged outdated medical customs.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_2_3": [
+      {
+        "id": "lesson_2_3_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Difference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which methods of investigating the human body in the Renaissance were different from methods in the Medieval period.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way methods of investigating the human body were different was that Renaissance anatomists **carried out dissections themselves** rather than just reading from old books. In the Medieval period, university professors sat on a raised chair reading aloud from Galen, while an assistant or barber-surgeon cut open the body without questioning Galen's errors. In contrast, during the Renaissance, Andreas Vesalius did the dissections with his own hands, inspecting human bones and organs directly to see how the body really worked. Therefore, Renaissance doctors learned anatomy through direct personal dissection rather than uncritically accepting ancient texts.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_2_3_q2",
+        "mockId": "med_official_practice",
+        "qCode": "5/6",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "16+4 Mark Evaluative Essay",
+        "marks": 20,
+        "targetMins": 28,
+        "questionText": "'Andreas Vesalius’s work on anatomy was the most significant breakthrough in medicine in the period c1500–c1700.' How far do you agree? Explain your answer. [16+",
+        "stimulus": [
+          "De Humani Corporis Fabrica (1543)",
+          "Correcting Galen’s anatomical errors"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "On the one hand, Vesalius’s work on anatomy can be seen as the most significant breakthrough because he corrected over 300 errors made by Galen and proved that ancient texts were fallible. In his landmark book De Humani Corporis Fabrica (1543), Vesalius climbed down from the professor's raised chair and dissected human corpses with his own hands. He proved that Galen had only dissected animals like pigs and apes, demonstrating that the human lower jaw was one bone not two, the breastbone had three parts not seven, and the heart's septum had no invisible pores. Furthermore, by publishing detailed, accurate anatomical drawings using the newly invented printing press, Vesalius distributed identical reference books to medical schools across Europe, teaching students to observe the human body directly. Therefore, Vesalius's work was a massive breakthrough because it proved Galen was wrong and established direct human dissection as the foundation of modern medical science.<br><br>However, a major limitation of Vesalius’s work was that knowing correct anatomy did not save a single patient's life or lead to new medical treatments during his lifetime. Understanding the exact position of bones and muscles did nothing to explain what caused diseases, as microscopic bacteria and viruses were still unknown. Consequently, ordinary people and physicians continued to rely on ancient beliefs in miasma and the Four Humours. Furthermore, major surgery remained life-threatening and agonizing because effective anaesthetics and antiseptics did not exist, preventing surgeons from performing internal operations based on Vesalius’s diagrams. Everyday treatments—such as bloodletting, purging, and herbal potions—remained completely unchanged from the Middle Ages. Therefore, Vesalius was only a partial breakthrough because his discoveries were purely anatomical and had zero practical effect on curing sick patients in the 16th century.<br><br>Furthermore, other medical developments in the period c1500–c1700 were equally or more significant. In 1628, William Harvey published De Motu Cordis, using mathematical calculations and experiments to prove that the heart acts as a muscular pump circulating the same blood continuously around the body, completely disproving Galen's theory of blood consumption. In addition, Thomas Sydenham's Observationes Medicae (1676) revolutionized clinical diagnosis by encouraging doctors to sit at the patient's bedside and classify diseases into distinct categories, such as separating scarlet fever from measles. Moreover, the founding of the Royal Society in 1660 provided the scientific network and journals needed to share and debate these discoveries. Therefore, Vesalius was not the only significant breakthrough, as Harvey and Sydenham made equally crucial discoveries in physiology and clinical diagnosis.<br><br>In conclusion, I agree that Vesalius was the most significant foundational breakthrough, but only in terms of scientific method rather than practical medicine. By proving that Galen made hundreds of mistakes, Vesalius broke the ancient tradition of unquestioning belief and gave later pioneers like Harvey the intellectual permission to challenge classical ideas. However, because his anatomical maps could not cure illnesses or stop epidemics, his immediate clinical benefit was almost non-existent. Therefore, Vesalius was the most significant breakthrough for starting the scientific revolution in anatomy, but was not the most significant for improving patient care.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_2_4": [
+      {
+        "id": "lesson_2_4_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Difference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which William Harvey's understanding of the circulatory system was different from Galen's theories.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way Harvey’s understanding was different was that he proved **blood circulates in a continuous one-way loop around the body**, rather than being burned up as fuel. Galen had taught that the liver constantly made new blood from food, which the body then absorbed and burned like wood in a fire. In contrast, William Harvey proved that the heart acts like a pump, circulating the same blood continuously around the body through arteries and back through veins. Therefore, Harvey proved blood flows in a repeated cycle, disproving Galen’s idea that blood was constantly used up.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_2_4_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why William Harvey's discovery of the circulation of the blood was a turning point in medicine.",
+        "stimulus": [
+          "Observation of mechanical heart valves",
+          "De Motu Cordis (1628)"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "William Harvey's discovery was a major turning point primarily because he used mathematical calculations to disprove Galen's 1,400-year-old ideas about blood. Galen taught that the liver constantly manufactured new blood from food, which was then burned up by bodily tissues as fuel. In De Motu Cordis (1628), Harvey calculated that the heart pumped approximately 540 pints of blood per hour, which was three times the weight of an average human body. This mathematical proof showed it was physically impossible for the liver to produce or the body to burn that amount of blood, proving that the same blood must circulate repeatedly in a closed loop. Therefore, Harvey's discovery was a turning point because mathematics definitively proved Galen's theory of blood consumption was completely wrong.<br><br>Furthermore, Harvey's discovery was a turning point because he proved his theories through repeatable scientific experiments. Harvey studied one-way valves in veins and carried out famous arm tourniquet experiments on living humans. By pushing blood down a vein away from the heart, he showed the vein stayed empty, proving that vein valves only permit blood to flow one way—back toward the heart. By publishing these experiments in De Motu Cordis, Harvey established experimental physiology as a scientific discipline, showing doctors that theories must be tested through practical demonstrations. Therefore, Harvey was a turning point because he established the modern scientific method of using physical experiments to prove how the human body works.<br><br>However, Harvey's discovery was only a partial turning point because it had very little immediate impact on treating living patients. Knowing that blood circulated did not cure illnesses, and attempts at blood transfusions failed and killed patients because blood groups were unknown. Crucially, despite Harvey proving that the body had a fixed amount of blood, doctors (including Harvey himself) continued to prescribe bloodletting for another 200 years because they lacked alternative treatments. Consequently, while Harvey transformed anatomical understanding, his discoveries could not be used to save lives until the 19th and 20th centuries. Therefore, Harvey was a turning point in scientific understanding and anatomy, but had almost no practical effect on curing sick patients at the time.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_2_5": [
+      {
+        "id": "lesson_2_5_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Difference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which approaches to preventing the Great Plague in 1665 were different from approaches to the Black Death in 1348.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way approaches to prevention were different was that local government took much more organized, official action in 1665 than in 1348. In 1348, during the Black Death, the King and local councils took almost no coordinated action to prevent the spread, so ordinary people were left to rely on individual actions like praying, carrying sweet-smelling herbs, or running away. In contrast, in 1665 during the Great Plague, the Mayor of London enforced strict public health rules: infected houses were shut up for 28 days with a red cross painted on the door, watchmen guarded them day and night, and large public gatherings were banned. Therefore, prevention in 1665 was officially enforced by local authorities, whereas in 1348 it was largely unorganized and left to individuals.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_2_5_q2",
+        "mockId": "med_official_practice",
+        "qCode": "5/6",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "16+4 Mark Evaluative Essay",
+        "marks": 20,
+        "targetMins": 28,
+        "questionText": "'Approaches to treating and preventing disease during the Great Plague of 1665 showed almost complete continuity with the Black Death of 1348.' How far do you agree? Explain your answer. [16+",
+        "stimulus": [
+          "Searchers of the dead and red crosses",
+          "Humoural purging and pomanders"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "On the one hand, there is strong evidence to agree that approaches to treating and understanding disease during the Great Plague of 1665 showed almost complete continuity with the Black Death of 1348. In terms of medical theory, physicians in 1665 still had no idea that plague was caused by bacteria on rat fleas. As a result, the main explanation remained the ancient idea of miasma (bad air) alongside God’s punishment for sin. People carried sweet-smelling pomanders, smoked tobacco, and burned barrels of tar in the streets to clear the air, just as people had done in 1348. Furthermore, medical treatments were identical in failing to cure anyone: doctors still used traditional bloodletting and purging, strapped dried toads or plucked chickens to buboes, and sold useless 'Plague Water'. The slaughter of 200,000 cats and dogs—ordered because people thought animal fur caught the bad air—further proved medical ideas had not improved, as killing cats allowed the rat population to grow. Therefore, approaches to treating disease showed almost complete continuity with 1348 because physicians remained completely powerless without knowledge of germs.<br><br>On the other hand, approaches to preventing the disease showed clear change through organized action by local government using quarantine and watchmen. In 1348, government action was chaotic and councils did very little. In 1665, the Mayor of London enforced strict Plague Orders. Infected houses were padlocked shut for 28 days with a red cross painted on the door and guarded day and night by watchmen to prevent anyone from leaving or entering. Theatres and large public gatherings were banned, domestic animals were cleared, and mass plague pits were dug outside the city walls for night burials. Therefore, approaches to prevention showed significant change because local government enforced strict public health rules and systematic quarantine that did not exist during the Black Death.<br><br>Furthermore, approaches to investigating and recording the epidemic showed significant change through the use of scientific data collection. During the 1665 outbreak, London parishes appointed female 'Searchers of the Dead' to examine corpses, identify plague buboes, and report causes of death, which were published weekly in the official Bills of Mortality. This statistical record allowed the Lord Mayor and the newly founded Royal Society (1660) to track which parishes were most infected and observe when the epidemic was peaking, representing an early form of epidemiological tracking that was completely absent in 1348. In addition, leading physicians like Dr Nathaniel Hodges remained in London to take detailed clinical notes on the symptoms and conduct post-mortems, marking a shift towards empirical scientific observation. Therefore, approaches to recording disease showed major change because London developed systematic ways to track casualties and gather physical evidence that were never attempted during the Black Death.<br><br>In conclusion, I agree with the statement regarding medical treatment, but disagree regarding prevention and statistical tracking. In terms of medical cures and understanding causes, there was almost total continuity with 1348 because doctors were just as helpless without knowledge of germs. However, in terms of civic prevention and epidemiological tracking, 1665 showed clear progress through strict municipal quarantine, parish searchers, and weekly Bills of Mortality. Therefore, while medical science stayed the same, government organization and data collection improved significantly.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_3_1": [
+      {
+        "id": "lesson_3_1_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Difference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which ideas about the cause of disease in the eighteenth century (c1700–c1800) were different from ideas in the late nineteenth century (c1860–c1900).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way in which ideas about the causes of disease were different was the shift from believing in **Spontaneous Generation** to accepting the **Germ Theory**. In the eighteenth century, physicians believed in Spontaneous Generation, arguing that decaying organic matter like rotting meat or stagnant water spontaneously generated disease and microbes out of nothing. In contrast, by the late nineteenth century, following Louis Pasteur's 1861 Germ Theory and swan-neck flask experiments, scientists understood that microscopic, airborne bacteria entered organisms from the outside and caused decay and illness. Therefore, while eighteenth-century doctors believed decay created disease from within, late nineteenth-century doctors proved that external living microbes directly caused infection.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_3_1_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why there was rapid progress in identifying the causes of illness between 1860 and 1890.",
+        "stimulus": [
+          "Louis Pasteur",
+          "Robert Koch"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One major reason for rapid progress was Louis Pasteur's development and publication of the **Germ Theory** in 1861. Prior to Pasteur, British and European medicine was dominated by the false theories of spontaneous generation and miasma. Investigating why wine and beer turned sour, Pasteur used swan-neck flask experiments to prove that airborne living microbes caused decay, and demonstrated that heating liquids killed these organisms (pasteurisation). He then linked this discovery to animal and human illness, publishing his Germ Theory in 1861 and demonstrating in 1878 that specific germs caused silkworm disease. Therefore, Pasteur provided the essential conceptual breakthrough by proving scientifically that external microscopic organisms, rather than spontaneous generation or bad air, were the true cause of decay and disease.<br><br>Furthermore, German physician **Robert Koch** transformed Pasteur's theoretical breakthrough into practical, systematic microbe-hunting. While Pasteur proved germs caused decay, he could not isolate individual human disease-causing bacteria. Koch solved this by developing groundbreaking laboratory techniques: he used solid agar jelly in petri dishes to grow pure, separate bacterial colonies and stained microbes with synthetic aniline dyes so they could be seen clearly under microscopes. Using these methods, Koch isolated the specific bacteria responsible for anthrax (1876), tuberculosis (1882), and cholera (1883), and formulated 'Koch's Postulates'—a rigid four-step scientific test proving a specific microbe caused a specific disease. Therefore, Koch accelerated progress by providing the precise scientific tools and methodology that enabled researchers across Europe to identify the exact microbial causes of deadly human diseases.<br><br>In addition, rapid progress was driven by **advancements in optical technology and intense national rivalry**. During the 1870s and 1880s, industrial precision engineering perfected the achromatic optical microscope; microscope lenses designed by Ernst Abbe and manufactured by the Carl Zeiss company allowed scientists to view bacteria magnified up to 1,000 times without visual distortion. At the same time, the Franco-Prussian War (1870–71) ignited fierce patriotic rivalry between France and Germany. Both the French and German national governments poured massive public funding into research institutes: the German government established the Imperial Health Office for Koch's team, while the French government funded the Pasteur Institute in Paris. Therefore, technological manufacturing combined with state-backed financial investment and nationalist competition enabled rival research teams to discover disease-causing pathogens at an unprecedented speed.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_3_2": [
+      {
+        "id": "lesson_3_2_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Difference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which approaches to preventing smallpox in the eighteenth century before 1796 were different from approaches in the nineteenth century.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way in which approaches to preventing smallpox were different was the transition from **inoculation (variolation)** to **vaccination**. In the eighteenth century before 1796, people used inoculation, which involved taking live smallpox pus from an infected patient and scratching it into a healthy person's arm. This was dangerous because patients developed full-blown smallpox, could infect family members, and often died. In contrast, in the nineteenth century, Edward Jenner's 1796 discovery of vaccination used harmless cowpox from cows or milkmaids, which stimulated immunity without risking a lethal smallpox epidemic. Therefore, while eighteenth-century inoculation used active, lethal smallpox that risked triggering deadly outbreaks, nineteenth-century vaccination used safe cowpox that protected the individual without endangering the community.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_3_2_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why there was opposition to Edward Jenner’s smallpox vaccination in the late eighteenth and early nineteenth centuries.",
+        "stimulus": [
+          "Commercial inoculators",
+          "The Anti-Vaccination League"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One major reason for opposition was the **commercial self-interest of professional inoculators**. In the eighteenth century, smallpox inoculation had become an enormously lucrative private medical business. Prominent dynasties like the Sutton family charged wealthy aristocrats and merchants substantial fees (often up to £20 per patient) to quarantine and inoculate households with mild smallpox. Because Jenner offered vaccination for free to local farmworkers and published his findings openly, inoculators feared losing their livelihoods and status. Consequently, commercial inoculators launched aggressive smear campaigns in pamphlets and newspapers, publishing false stories of vaccinated patients falling ill to protect their monopoly on smallpox prevention.<br><br>Furthermore, fierce opposition came from **religious and moral traditionalists who formed groups like the Anti-Vaccination League**. Many devout Christians and conservative clergymen argued that smallpox was a divine punishment sent by God to cleanse sinful humans, meaning that attempting to eradicate it interfered with God's will. Moreover, using cowpox was viewed as disgusting and unnatural because it crossed the sacred boundary between beasts and human beings. Satirical cartoonists like James Gillray published famous caricatures showing vaccinated patients sprouting cow horns, tails, and bovine muzzles from their flesh. When Parliament later made vaccination compulsory in the 1852 and 1867 Vaccination Acts, opposition intensified into mass street protests by the Anti-Vaccination League, who argued compulsory vaccination infringed upon personal civil liberties.<br><br>In addition, opposition was justified by **scientific skepticism within the medical establishment and early clinical accidents**. When Jenner submitted his paper to the Royal Society in 1797, they rejected it because Jenner could not explain *how* vaccination worked; since viruses and antibodies were completely unknown before Pasteur's 1861 Germ Theory, Jenner's idea that an animal infection could protect against a human disease seemed unscientific guesswork. Furthermore, early vaccination had real practical dangers: careless doctors contaminated vaccination lancets with blood or syphilis, or accidentally used smallpox matter instead of cowpox, leading to tragic patient deaths. Therefore, genuine medical ignorance and fatal clinical errors convinced many respectable physicians that vaccination was an unproven, hazardous procedure.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_3_3": [
+      {
+        "id": "lesson_3_3_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Similarity",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which hospital care in the eighteenth century was similar to hospital care in the early nineteenth century before 1850.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way in which hospital care was similar was the persistent problem of high mortality caused by unhygienic conditions and **'hospitalism'**. In the eighteenth century, voluntary hospitals like Guy's and St Thomas' lacked ventilation, patients shared beds, and dirty straw bedding was rarely changed, causing rampant spreading of infections like typhus and gangrene. Similarly, in early nineteenth-century hospitals before 1850, wards remained dark, cramped, and poorly ventilated, nurses were viewed as untrained and drunken, and surgeons operated in unwashed frock coats, resulting in death rates often exceeding 40%. Therefore, in both periods, hospitals functioned as dangerous places where patients frequently died from secondary infections caught inside the hospital rather than healing safely in clean environments.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_3_3_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why hospital care improved so rapidly between 1850 and 1900.",
+        "stimulus": [
+          "Florence Nightingale",
+          "Antiseptic and aseptic surgery"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One major reason hospital care improved was the pioneering work of **Florence Nightingale in hospital design and hygiene**. During the Crimean War (1854–56), Nightingale took 38 nurses to Scutari Barrack Hospital, where she slashed the death rate from 42% to 2% through aggressive sanitation, fresh air, clean water, and nutritious food. Returning to Britain as a national heroine, she published *Notes on Hospitals* (1859), which revolutionized hospital architecture. She advocated the 'pavilion plan', replacing cramped multi-story wards with separate, single-story wings featuring large windows facing each other to maximize cross-ventilation, along with easily cleaned tiled floors and dedicated drainage. As new hospitals like St Thomas' in London were rebuilt to these specifications, hospitalism and airborne cross-infection plummeted.<br><br>Furthermore, hospital care improved because **nursing was transformed into a disciplined, professional medical career**. Before the 1860s, hospital nurses were widely regarded as working-class, untrained, and negligent women often caricatured as drunken 'Betsy Prigs'. Nightingale used the £44,000 public fund raised in her honour to establish the Nightingale Training School at St Thomas' Hospital in 1860. The school provided rigorous scientific, anatomical, and sanitary training under strict matrons, establishing nursing as a respectable, middle-class profession with defined uniforms, codes of conduct, and sterile medical routines. Educated Nightingale nurses were dispatched across Britain and the British Empire to manage wards, ensuring that sterile procedures, accurate patient temperature charting, and wound monitoring were maintained twenty-four hours a day.<br><br>In addition, rapid improvement was driven by the **introduction of antiseptic and aseptic surgical methods on hospital wards**. Following Joseph Lister's 1865 breakthrough using carbolic acid to kill airborne microbes in compound fractures, hospital gangrene and sepsis were steadily brought under control. By the 1880s and 1890s, hospitals transitioned from antiseptic spray to total aseptic surgery: operating theatres were moved away from general wards into dedicated sterile suites equipped with steam autoclaves (invented by Charles Chamberland in 1881) to sterilize surgical instruments, gowns, and gauze. Surgeons and ward staff began wearing sterile boiled rubber gloves and white linen aprons, and replaced unwashed communal sponges with single-use sterile dressings. Therefore, eliminating bacteria from surgical wards transformed hospitals from terrifying death traps into modern, lifesaving clinical institutions.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_3_4": [
+      {
+        "id": "lesson_3_4_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Difference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which surgery in the early nineteenth century (c1800–c1840) was different from surgery in the late nineteenth century (c1870–c1900).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way in which surgery was different was the introduction of effective **anaesthetics** and **antiseptic methods** to eliminate pain and infection. In the early nineteenth century, surgery was performed without anaesthetics on fully conscious, agonizing patients held down by strong assistants, forcing surgeons like Robert Liston to amputate limbs in under thirty seconds to prevent fatal shock, with over 45% dying of gangrene. In contrast, by the late nineteenth century, surgeons used chloroform to render patients completely unconscious and applied Joseph Lister's carbolic acid and aseptic autoclaves to sterilize operating theatres, allowing complex internal procedures lasting hours to take place safely. Therefore, while early nineteenth-century surgery was rushed, agonising, and deadly from shock and sepsis, late nineteenth-century surgery was pain-free, meticulous, and performed in sterile environments with high survival rates.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_3_4_q2",
+        "mockId": "med_official_practice",
+        "qCode": "5/6",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "16+4 Mark Evaluative Essay",
+        "marks": 20,
+        "targetMins": 28,
+        "questionText": "'The development of anaesthetics was the most important breakthrough in surgery in the nineteenth century.' How far do you agree? Explain your answer. [16 marks + 4 marks SPaG =",
+        "stimulus": [
+          "James Simpson and Chloroform",
+          "Joseph Lister and Antiseptics"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "It is widely argued that the development of anaesthetics was the most important surgical breakthrough of the nineteenth century, as conquering excruciating physical pain transformed surgical practice from a terrifying ordeal into a viable medical specialty. However, while anaesthetics solved the immediate crisis of pain and fatal shock, they initially increased patient mortality during the 'Black Period' of surgery. Therefore, I disagree that anaesthetics were the single most important breakthrough, because without Joseph Lister's discovery of antiseptics and the subsequent transition to aseptic surgery, anaesthetics alone resulted in more infections and deaths rather than saving lives.<br><br>On the one hand, there is strong evidence that anaesthetics represented a monumental breakthrough. Before the 1840s, surgical operations were severely constrained by agony; patients had to be forcibly strapped to tables while surgeons performed rapid amputations in seconds to prevent the patient dying of cardiac shock or blood loss. In 1847, Edinburgh obstetrician **James Simpson** discovered the anaesthetic properties of **chloroform**, which rendered patients completely unconscious, relaxed muscle tissue, and permitted surgeons to operate with far greater care and precision. The breakthrough gained national and royal legitimacy in 1853 when Queen Victoria publicly praised chloroform during the birth of Prince Leopold. By eliminating agony, anaesthetics made patients willing to undergo life-saving operations that they previously would have refused, creating the foundation for all modern surgical intervention.<br><br>On the other hand, the development of anaesthetics alone had unintended, catastrophic consequences known as the **'Black Period' of surgery (1846–1865)**. Because patients were unconscious and felt no pain, ambitious surgeons attempted longer, deeper, and far more invasive abdominal and internal procedures. However, because surgeons had no understanding of germs or sterile technique, they continued operating in blood-stained frock coats using dirty, unwashed hands and infected sponges. Consequently, rates of hospital gangrene, sepsis, and pyemia soared, and overall surgical mortality actually increased in the two decades following the introduction of anaesthetics. This proves that anaesthetics alone were insufficient and dangerously incomplete without a solution to infection.<br><br>Therefore, the discovery of **antiseptics by Joseph Lister** and the transition to **aseptic surgery** was fundamentally more important. Inspired by Louis Pasteur's 1861 Germ Theory, Lister realized in 1865 that surgical sepsis was caused by living airborne microbes entering open wounds. By soaking wound dressings in carbolic acid, spraying carbolic mist in operating theatres, and sterilizing catgut ligatures, Lister reduced surgical mortality at Glasgow Royal Infirmary from 45.7% to 15.0%. By the 1880s and 1890s, surgeons perfected Lister's breakthrough into complete asepsis: using Charles Chamberland's steam autoclaves to sterilize instruments at high heat, scrubbing hands, and wearing sterile rubber gloves and gowns. This completely eliminated microscopic pathogens from the operating theatre, making deep abdominal, chest, and brain surgery genuinely safe for the first time in history.<br><br>In conclusion, although the development of anaesthetics was indispensable in conquering pain and psychological trauma, it cannot be considered the most important breakthrough. Pain relief without infection control merely led to longer operations and higher mortality during the Black Period. The decisive turning point that allowed surgery to become truly lifesaving was Lister's antiseptic technique and aseptic operating theatres, because controlling bacterial infection was the factor that directly determined whether a patient lived or died.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_3_5": [
+      {
+        "id": "lesson_3_5_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Difference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which government attitudes to public health in the early nineteenth century were different from government attitudes in the late nineteenth century.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way in which government attitudes were different was the transition from a policy of **laissez-faire** to active **state intervention**. In the early nineteenth century, the British government adhered strictly to laissez-faire ('leave alone'), believing it was not the state's responsibility to interfere in local affairs, build sewers, or levy national taxes to clean up industrial slums. In contrast, by the late nineteenth century, the government passed compulsory legislation like the landmark **1875 Public Health Act**, which forced all municipal councils to provide clean drinking water, pave and light streets, collect refuse, and appoint qualified Medical Officers of Health. Therefore, while the early nineteenth-century government took a hands-off approach that left citizens to suffer in squalor, the late nineteenth-century state accepted legal responsibility for safeguarding the living health of the nation.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_3_5_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why the British government abandoned laissez-faire and passed the 1875 Public Health Act.",
+        "stimulus": [
+          "The 1867 Reform Act (working-class vote)",
+          "The Great Stink (1858)"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One major reason the government abandoned laissez-faire was the **expansion of the franchise through the 1867 Reform Act**. Prior to 1867, only wealthy property owners had the vote, and they naturally resisted paying local rates to fund sewage systems that benefited the poor. However, the Second Reform Act of 1867 enfranchised over one million male urban working-class factory workers. For the first time, both major political parties—Benjamin Disraeli's Conservatives and William Gladstone's Liberals—had to compete directly for working-class votes to win general elections. Disraeli adopted the campaign slogan *Sanitas sanitatum, omnia sanitas* ('Sanitation, sanitation, all is sanitation'), promising social reform. Consequently, when Disraeli won the 1874 general election, his government immediately introduced the comprehensive, compulsory 1875 Public Health Act to deliver on its electoral promises.<br><br>Furthermore, the government was compelled to act by the **overwhelming public health crisis of cholera and 'The Great Stink' of 1858**. Repeated cholera epidemics in 1831, 1848, and 1853 had killed tens of thousands, but because the rich could flee to the countryside, Parliament dragged its feet. However, in the blistering hot summer of 1858, the Thames—which acted as an open sewer for two million Londoners—produced a stench so putrid and nauseating that parliamentary curtains were soaked in chloride of lime and MPs were forced to flee the chamber. Fearing that miasma would kill politicians themselves, Parliament suspended business and rushed through emergency legislation within eighteen days, allocating £3 million to engineer Joseph Bazalgette to construct London's 82-mile underground intercepting sewer network. The enormous success of Bazalgette's sewers proved that large-scale public engineering saved lives, creating irresistible pressure for national legislation.<br><br>In addition, government policy shifted due to **scientific evidence provided by Dr John Snow and Louis Pasteur's Germ Theory**. In 1854, John Snow mapped cholera deaths in Soho and removed the handle of the contaminated Broad Street pump, conclusively proving that cholera was a waterborne infection rather than an airborne miasma. Snow's epidemiological findings were subsequently validated in 1861 by Louis Pasteur's Germ Theory, which demonstrated scientifically that microscopic bacteria thrived in contaminated water and rotting waste. This destroyed the scientific credibility of miasma theory and proved to civil servants that laissez-faire was deadly negligence. Therefore, armed with indisputable scientific proof that clean water prevented epidemic disease, the government made public health duties strictly compulsory for all local councils in 1875.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_4_1": [
+      {
+        "id": "lesson_4_1_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Similarity",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which understanding of the causes of disease in the late nineteenth century was similar to understanding in the modern period (c1950–present).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way understanding of the causes of disease was similar was the reliance on **microscopic, scientific laboratory investigation** to identify specific causes of specific illnesses. In the late nineteenth century, scientists like Robert Koch and Louis Pasteur used microscopes, agar culture plates, and chemical dyes to isolate the specific individual bacteria responsible for diseases like tuberculosis and cholera. Similarly, in the modern period from 1953 onwards, geneticists used X-ray crystallography, electron microscopes, and computer gene sequencing to identify the specific double-helix DNA structure and genetic mutations responsible for hereditary conditions like cystic fibrosis. Therefore, both periods based their understanding on rigorous empirical laboratory observation to locate the precise, microscopic root cause of disease rather than relying on superstition or external balance.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_4_1_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why understanding of genetics and hereditary diseases improved so rapidly after 1950.",
+        "stimulus": [
+          "Rosalind Franklin and Photograph 51",
+          "The Human Genome Project"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One major reason genetic understanding improved was the **discovery of the molecular structure of DNA in 1953**. Prior to the 1950s, scientists knew that traits were inherited through chromosomes, but had no idea how genetic information was stored or replicated. Working at King's College London, **Rosalind Franklin** and Maurice Wilkins used pioneering X-ray crystallography to capture 'Photograph 51', which clearly revealed the diffraction pattern of a helical structure. Using Franklin's data, Cambridge researchers James Watson and Francis Crick constructed their famous 3D double-helix model of DNA in 1953, cracking the code of complementary base pairs (Adenine-Thymine, Cytosine-Guanine). This discovery explained for the first time the physical mechanism of heredity, proving that genes were chemical sequences that could be read, copied, and potentially repaired.<br><br>Furthermore, understanding accelerated through the launch and completion of the **Human Genome Project (1990–2003)**. Coordinated by an international coalition of publicly funded laboratories in the United States, Britain, France, Germany, and Japan, the project set out to map and sequence every single one of the 3 billion chemical base pairs in the human genetic code. By completing the map in 2003, researchers successfully catalogued roughly 20,000 human genes. This breakthrough allowed modern medical geneticists to pinpoint the exact faulty gene mutations responsible for devastating hereditary diseases like cystic fibrosis, Huntington's chorea, sickle cell anaemia, and inherited breast cancers (BRCA1/BRCA2), moving medicine from treating symptoms to identifying genetic root causes.<br><br>In addition, rapid progress was driven by **advancements in digital computing power and electron microscopy**. In the 1950s, manual DNA sequencing of a few dozen base pairs took months of painstaking laboratory work. However, the post-war digital computing revolution and the development of automated automated gene-sequencing machines powered by supercomputers enabled scientists to process billions of genetic sequences in hours. Furthermore, modern electron microscopes and CRISPR gene-editing technology (developed in 2012) allowed scientists not only to view chromosomes at atomic resolution, but to edit and correct mutated gene sequences directly. Therefore, advanced computing and imaging technology transformed genetic theory into practical diagnostic screening and targeted gene therapy.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_4_2": [
+      {
+        "id": "lesson_4_2_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Difference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which methods of diagnosing illness in the nineteenth century were different from methods in the modern period (c1900–present).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way in which methods of diagnosing illness were different was the development of **internal digital imaging and non-invasive scanning technology**. In the nineteenth century, physicians had to rely largely on external physical observation, palpating the abdomen, listening with primitive wooden stethoscopes, inspecting urine, and questioning patients, meaning internal tumours or internal bleeding could only be confirmed after death during a post-mortem autopsy. In contrast, in the modern period, doctors utilize high-tech medical machinery like Wilhelm Röntgen's X-rays (1895), Godfrey Hounsfield's CT scanners (1971), and MRI scans, which produce detailed 3D cross-sectional images of soft tissue inside the living human body without surgical incision. Therefore, while nineteenth-century diagnosis was limited to external sensory symptoms and exploratory surgery, modern diagnosis enables doctors to peer deep inside living organs instantly and painlessly.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_4_2_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why technological developments led to improvements in medical diagnosis in the twentieth century.",
+        "stimulus": [
+          "X-rays",
+          "CT and MRI scanners"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One major reason technological developments improved diagnosis was the **application of X-rays from 1895 onwards**. Discovered by German physicist Wilhelm Röntgen in 1895, X-rays possessed the unique physical property of passing through human soft tissue while being absorbed by dense bone. Within months of discovery, British hospitals installed primitive X-ray machines, allowing doctors to diagnose bone fractures and joint dislocations accurately without inflicting painful physical manipulation. During the First World War, Marie Curie and the Red Cross deployed mobile X-ray vans to the Western Front, enabling battlefield surgeons to locate lodged shrapnel and bullet fragments instantly before cutting into tissue. Therefore, X-rays provided the first non-invasive window into the living human skeleton, eliminating guesswork in trauma and orthopedic diagnosis.<br><br>Furthermore, diagnosis was revolutionized by the **invention of computerized tomography (CT) and magnetic resonance imaging (MRI)**. While traditional X-rays showed bones clearly, they could not differentiate soft tissues or detect early-stage brain tumours. In 1971, British electrical engineer Godfrey Hounsfield invented the **CT scanner**, using rotating X-ray beams combined with digital computers to construct detailed 3D cross-sectional slices of internal organs. This was followed in the 1980s by the development of **MRI scanners**, which used radio waves and powerful magnetic fields to map water molecules in bodily tissues without any harmful radiation exposure. Consequently, physicians could detect microscopic brain strokes, spinal disc tears, and malignant liver or lung tumours years before they became fatal, vastly improving treatment survival rates.<br><br>In addition, diagnosis advanced through the development of **fiber-optic endoscopy and automated biochemical testing**. The invention of flexible fiber-optic cables in the 1950s led to the development of the **endoscope**, allowing doctors to feed thin illuminated cameras down the throat or into the bowel to inspect stomach ulcers, colon polyps, and internal bleeding directly on video screens and take needle biopsies. Simultaneously, electronic laboratory analyzers automated the testing of blood, urine, and cerebrospinal fluid, measuring blood glucose for diabetes, detecting troponin levels for heart attacks, and identifying viral antibodies for HIV and hepatitis. Therefore, optical and biochemical technologies enabled doctors to diagnose physiological disorders precisely at cellular and chemical levels.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_4_3": [
+      {
+        "id": "lesson_4_3_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Similarity",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which treatments for disease in the early twentieth century (1900–1930) were similar to treatments in the mid-twentieth century (1930–1950).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way in which treatments were similar was the reliance on **laboratory-engineered chemical compounds designed to target specific bacteria without harming patient cells ('magic bullets')**. In the early twentieth century, Paul Ehrlich and Sahachiro Hata developed Salvarsan 606 (1909), a targeted arsenic compound that selectively attacked the Treponema pallidum bacterium causing syphilis. Similarly, in the 1930s, Gerhard Domagk discovered Prontosil (1932), a red synthetic chemical sulfonamide that destroyed deadly streptococcal bacteria in blood poisoning and puerperal fever. Therefore, both periods marked a revolutionary transition where medical treatments were no longer herbal folk mixtures or palliative care, but scientifically designed pharmaceutical chemicals manufactured to hunt down and kill specific microscopic pathogens inside the human bloodstream.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_4_3_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why the National Health Service (NHS) was established in 1948.",
+        "stimulus": [
+          "The Beveridge Report (1942)",
+          "Aneurin Bevan"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One major reason the NHS was created was the **social impact of the Second World War and the publication of the Beveridge Report in 1942**. During the war, the evacuation of over one million urban children to rural middle-class homes exposed the shocking reality of poverty, malnutrition, and untreated illnesses suffered by working-class families. Furthermore, the Blitz required the government to establish the Emergency Medical Service (EMS), organizing state-run blood depots, casualty wards, and ambulance networks. In December 1942, civil servant William Beveridge published his landmark social insurance report, calling for a post-war assault on the 'Five Giant Evils': Want, Ignorance, Idleness, Squalor, and **Disease**. The report sold over 600,000 copies and became a symbol of post-war reconstruction, creating overwhelming public expectation that healthcare should be a universal right funded by taxation.<br><br>Furthermore, the establishment of the NHS was driven by the **political victory and determination of the 1945 Labour Government and Health Minister Aneurin Bevan**. The Labour Party won a landslide general election in July 1945 on a manifesto promising to build a comprehensive welfare state. Appointed Minister of Health, former Welsh coalminer Aneurin Bevan demonstrated immense political skill and tenacity. He faced ferocious opposition from the British Medical Association (BMA), who claimed that state medicine would turn doctors into civil servants and rob them of private incomes. Bevan overcame their resistance by compromising pragmatically: he agreed that hospital consultants could retain private beds alongside their NHS duties, famously remarking that he had 'stuffed their mouths with gold'. On 5 July 1948, Bevan officially opened Park Hospital in Manchester, launching the NHS as a free service available to every British citizen regardless of income.<br><br>In addition, the NHS was necessary because the **pre-war healthcare system was completely unequal, fragmented, and failing**. Under the 1911 National Insurance Act, only employed male manual workers earning under £250 annually were eligible for a panel doctor; their wives, children, and the elderly were completely excluded. Voluntary hospitals relied on charitable donations and were on the brink of bankruptcy, while municipal hospitals operated under the grim stigma of Victorian workhouses. Working-class families had to pay private doctor fees or subscribe to private medical clubs, meaning treatable conditions like pneumonia, hernia, and rickets went untreated until patients were on the verge of death. Therefore, the glaring moral and practical bankruptcy of the pre-war private system made a unified, state-funded National Health Service an urgent necessity.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_4_4": [
+      {
+        "id": "lesson_4_4_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Difference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which the discovery of penicillin in 1928 was different from its development and mass production in the 1940s.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way in which the discovery of penicillin was different from its later development was that the discovery in 1928 was a **solitary, accidental laboratory observation**, whereas its development in the 1940s was a **massive, publicly funded collaborative industrial effort**. In 1928, Alexander Fleming working alone at St Mary's Hospital London accidentally noticed that a floating mold spore of *Penicillium notatum* had contaminated an open petri dish and dissolved staphylococci bacteria, but he was unable to chemically isolate or purify the substance. In contrast, during the Second World War (1938–1944), an Oxford team led by Howard Florey and Ernst Chain used freeze-drying to purify penicillin, and collaborated with US government agencies and commercial chemical corporations to build giant 10,000-gallon deep-tank fermentation factories. Therefore, while Fleming's 1928 discovery was an isolated, unpurified observation that remained unused, the 1940s development was a concerted international industrial triumph that produced 2.3 million doses for D-Day.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_4_4_q2",
+        "mockId": "med_official_practice",
+        "qCode": "5/6",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "16+4 Mark Evaluative Essay",
+        "marks": 20,
+        "targetMins": 28,
+        "questionText": "'Government funding during the Second World War was the main reason for the development of penicillin.' How far do you agree? Explain your answer. [16 marks + 4 marks SPaG =",
+        "stimulus": [
+          "Howard Florey and Ernst Chain",
+          "US pharmaceutical factories"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "It is widely argued that government funding during the Second World War was the main reason for the development of penicillin, as the massive financial and logistical mobilization by the British and United States governments turned an unpurified laboratory mold into an industrial wonder drug. While wartime state funding was the decisive catalyst that made mass production possible, I argue that it was only one vital link in a chain of factors: without Alexander Fleming's initial accidental discovery and Howard Florey and Ernst Chain's painstaking laboratory purification at Oxford, there would have been no medical antibiotic for governments to fund.<br><br>On the one hand, **government funding and wartime urgency** were undeniably central to penicillin's development. In the early years of the war, British chemical factories were fully committed to producing explosives and aircraft fuel, and British companies lacked the capital to invest in untried biological manufacturing. When Howard Florey traveled to the United States in July 1941, the US government's War Production Board recognized that penicillin could prevent thousands of Allied soldiers from dying of gangrenous battlefield wounds. The US government designated penicillin manufacturing the second highest national military priority after the Manhattan Project, offering lucrative tax incentives and funding to pharmaceutical giants like Pfizer, Merck, and Squibb. This direct government intervention funded the construction of giant 10,000-gallon deep-tank fermentation facilities, producing 2.3 million doses in time for the Normandy D-Day landings in June 1944. Without government millions and wartime logistics, penicillin could never have been produced on this global scale.<br><br>On the other hand, the crucial scientific breakthrough was achieved by **Howard Florey, Ernst Chain, and their Oxford research team (1938–1940)**. Fleming had abandoned his research in 1929 because he was a bacteriologist, not a biochemist, and could not purify the unstable substance. At Oxford, Ernst Chain read Fleming's forgotten paper and teamed up with Florey and biochemist Norman Heatley. Working with primitive equipment like bedpans and milk churns, the Oxford team developed freeze-drying techniques to stabilize the active antibiotic molecule. In 1940, they conducted their famous animal trial, proving that penicillin cured eight mice injected with lethal streptococci, and in 1941 successfully treated policeman Albert Alexander. It was Florey and Chain's brilliant scientific research that transformed a curious mold into a proven clinical cure before government funding was even sought.<br><br>Furthermore, **Alexander Fleming's original 1928 discovery** provided the indispensable foundation. In September 1928, Fleming returned to his disorderly laboratory at St Mary's Hospital London to find that a stray spore of *Penicillium notatum* had drifted through an open window onto a staphylococcus agar plate, creating a clear ring where bacteria had been destroyed. Fleming had the scientific insight to recognize the importance of the phenomenon, naming the substance 'penicillin' and publishing his findings in 1929. In addition, crucial agricultural discoveries played a major role: researchers at the US Department of Agriculture laboratory in Peoria, Illinois discovered that corn steep liquor accelerated mold growth by 500 times, and isolated a hyper-potent strain of mold on a rotting supermarket cantaloupe.<br><br>In conclusion, although Fleming's initial discovery and Florey and Chain's Oxford purification were essential scientific preconditions, government wartime funding was the main reason for penicillin's development into a practical reality. Thousands of laboratory discoveries languish unused due to lack of capital; it was the existential crisis of the Second World War and millions of dollars in state investment that overcame technological hurdles, built deep-tank fermentation plants, and made penicillin universally accessible to humanity.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_4_5": [
+      {
+        "id": "lesson_4_5_q1",
+        "mockId": "med_official_practice",
+        "qCode": "3",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Similarity",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Explain one way in which government intervention against disease in the nineteenth century was similar to government action against lung cancer in the twenty-first century.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "One way in which government action was similar was the use of **compulsory statutory legislation to regulate public environments and curb lethal health hazards**. In the nineteenth century, following proof that filthy water spread cholera, the government passed the compulsory 1875 Public Health Act, forcing local councils to provide clean water, build covered sewers, and inspect contaminated housing. Similarly, in the twenty-first century, following conclusive epidemiological proof linking secondhand smoke to lung carcinoma, the British government passed the 2007 Health Act banning smoking in all enclosed public work and leisure spaces, followed by compulsory plain cigarette packaging in 2016. Therefore, both periods demonstrated the state exercising legislative authority to restrict private liberties and commercial freedoms in order to protect public health.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_4_5_q2",
+        "mockId": "med_official_practice",
+        "qCode": "4",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Thematic Study)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "12-Mark Causation",
+        "marks": 12,
+        "targetMins": 20,
+        "questionText": "Explain why government methods to prevent lung cancer changed between 1950 and the present day.",
+        "stimulus": [
+          "Richard Doll’s epidemiological studies",
+          "The 2007 public smoking ban"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "One major reason prevention methods changed was the **accumulation of incontrovertible epidemiological evidence proving the deadly link between smoking and cancer**. In the early twentieth century, smoking was viewed as glamorous and harmless; during the Second World War, cigarettes were distributed free to soldiers. However, in 1950, British medical researchers **Richard Doll and Austin Bradford Hill** published a landmark epidemiological study of 709 lung cancer patients, proving that tobacco smoke contained potent chemical carcinogens that destroyed lung tissue. When their subsequent British Doctors Study (1954) proved that heavy smokers were twenty times more likely to die of lung cancer, the British government was stripped of plausible deniability. As scientific research in the 1980s further proved the lethal dangers of passive 'secondhand' smoking to children and non-smokers, the government was forced to transition from passive advice to direct preventative intervention.<br><br>Furthermore, prevention changed through the **abandonment of voluntary advertising codes in favor of coercive statutory bans**. Throughout the 1960s and 1970s, the government relied on weak, voluntary agreements with powerful tobacco corporations, banning cigarette adverts on television in 1965 and placing modest printed warnings on packets. However, smoking rates remained high, and lung cancer claimed 40,000 British lives annually, costing the National Health Service hundreds of millions of pounds in chemotherapy, radiotherapy, and palliative care. Recognizing that voluntary agreements had failed, Parliament passed aggressive legislation: the Tobacco Advertising and Promotion Act (2002) banned all sports sponsorship (such as Formula 1) and billboard advertising. This culminated in the **Health Act of 2007**, which made it a criminal offense to smoke in all enclosed public places, pubs, and workplaces, de-normalizing tobacco consumption across society.<br><br>In addition, prevention evolved through **punitive fiscal taxation, plain packaging, and mass-market public education**. To deter young people from initiating smoking, successive British chancellors deliberately imposed massive excise duties on cigarettes, increasing prices until taxes constituted over 80% of packet costs. In 2007, the legal age for purchasing tobacco was raised from 16 to 18, and in 2015 smoking in cars carrying children was banned. In 2016, Britain enforced compulsory standardized plain packaging: all brand logos and distinctive colors were outlawed in favor of a drab olive-brown box covered with 65% graphic photographic warnings of diseased lungs and mouth tumours. Combined with NHS-funded nationwide mass campaigns like 'Stoptober', free nicotine replacement therapies, and electronic vapor alternatives, the government successfully pushed adult smoking rates from 45% in 1974 to under 13% today.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_5_1": [
+      {
+        "id": "lesson_5_1_q1",
+        "mockId": "med_official_practice",
+        "qCode": "1",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Feature Drill",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "Describe two features of trench systems and medical facilities on the Western Front:\n(a) Describe one feature of the system of communication trenches on the Western Front. [2 marks]\n(b) Describe one feature of the underground hospital at Arras (Thompson’s Cave).",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "1(a) Feature: Communication trenches were dug at right angles connecting frontline, support, and reserve trenches.\nDetail: This allowed fresh troops, ammunition, food supplies, and stretcher-borne casualties to be transported to and from the frontline safely under cover from enemy artillery shellfire and rifle snipers.\n\n1(b) Feature: Thompson’s Cave at Arras was an expansive 700-bed subterranean British hospital constructed inside ancient chalk quarries.\nDetail: It was equipped with electric lighting, piped running water, kitchens, and fully functional operating theatres 20 metres underground, allowing RAMC surgeons to operate safely without fear of surface artillery bombardments.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_1_q2",
+        "mockId": "med_official_practice",
+        "qCode": "2(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "8-Mark Source Utility",
+        "marks": 8,
+        "targetMins": 14,
+        "questionText": "Study Source A. How useful is Source A for an enquiry into the defensive layout and design of the trench system on the Western Front? Explain your answer, using Source A and your knowledge of the historical context.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div style=\"margin-bottom: 12px;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source A (Aerial Photograph): Royal Flying Corps Reconnaissance of Frontline Trench Lines near Ypres (1917)</div>\n              <img src=\"/images/aerial_trench_ypres.jpg\" alt=\"Source A (Aerial Photograph): Royal Flying Corps Reconnaissance of Frontline Trench Lines near Ypres (1917)\" style=\"max-height: 220px; border-radius: 6px; border: 1px solid #cbd5e1; margin-bottom: 6px; display: block;\"><div style=\"font-size: 0.85rem; color: #475569; font-style: italic;\">Royal Flying Corps aerial reconnaissance photograph taken above the Ypres Salient in 1917, showing the intricate zig-zag pattern of frontline firebays, traverses, and communication trenches surrounded by water-filled shell craters.</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">Imperial War Museum, London (IWM Q 58498 / Public Domain).</div>\n            </div>\n          \n            <div style=\"margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From the Official War Diary of an RAMC Field Ambulance Officer, Ypres Salient (October 1917)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"The state of the ground defies description. The communication trenches have ceased to exist, having been obliterated by continuous heavy shelling and turned into channels of liquid clay three to four feet deep. Relieving stretcher squads took six hours to convey a single severely wounded casualty over a distance of barely two miles from the frontline aid post to the dressing station. Four bearers carried the stretcher while two accompanied them with poles to haul the bearers out when they sank to their waists. Several walking wounded fell into water-filled shell craters in the dark and were drowned before assistance could reach them.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The National Archives, Kew (WO 95/RAMC Diaries / Crown Copyright).</div>\n            </div>\n          ",
+        "modelAnswer": "Source A is highly useful for investigating the defensive layout of trenches because it provides an objective, photographic overhead view of the actual British earthworks in the Ypres sector. It clearly shows the characteristic zig-zag traverse pattern of frontline and communication trenches, which was specifically engineered so that artillery shell fragments and shrapnel were confined to a single bay, preventing an exploding shell from killing men down the entire line. It also reveals the dense carpet of artillery craters, corroborating historical knowledge that over 70% of battlefield casualties were caused by heavy shell fire. However, Source A is limited because, as a high-altitude military aerial photograph, it cannot show the ground-level conditions inside the trenches—such as waterlogging, mud depth, the presence of duckboards, or the difficulty stretcher bearers faced navigating those tight, right-angled corners with heavily wounded soldiers.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_1_q3",
+        "mockId": "med_official_practice",
+        "qCode": "2(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Follow-up Enquiry",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "Study Source B. How could you follow up Source B to find out more about the difficulties stretcher bearers faced when evacuating casualties in the Ypres Salient? In your answer, you must give the question you would ask and the type of source you would use.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div>\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From the Official War Diary of an RAMC Field Ambulance Officer, Ypres Salient (October 1917)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"The state of the ground defies description. The communication trenches have ceased to exist, having been obliterated by continuous heavy shelling and turned into channels of liquid clay three to four feet deep. Relieving stretcher squads took six hours to convey a single severely wounded casualty over a distance of barely two miles from the frontline aid post to the dressing station. Four bearers carried the stretcher while two accompanied them with poles to haul the bearers out when they sank to their waists. Several walking wounded fell into water-filled shell craters in the dark and were drowned before assistance could reach them.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The National Archives, Kew (WO 95/RAMC Diaries / Crown Copyright).</div>\n            </div>\n          ",
+        "modelAnswer": "<strong>Detail in Source B that I would follow up:</strong> The waist-deep water and collapsed mud walls of the communication trench where the duckboards are submerged.<br><br><strong>Question I would ask:</strong> How many hours did it take stretcher bearers to transport a single wounded soldier through flooded communication trenches to the Regimental Aid Post?<br><br><strong>Type of source I would look for:</strong> The personal war diary or official unit logbook of an RAMC Field Ambulance or Regimental Medical Officer serving in the Ypres Salient in 1917.<br><br><strong>How this might help answer my question:</strong> It would provide firsthand, contemporary records of the exact evacuation times, physical exhaustion, and number of stretcher bearers required per casualty during wet weather in Flanders.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_5_2": [
+      {
+        "id": "lesson_5_2_q1",
+        "mockId": "med_official_practice",
+        "qCode": "1",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Feature Drill",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "Describe two features of ill health arising from the trench environment:\n(a) Describe one feature of the methods used to prevent trench foot on the Western Front. [2 marks]\n(b) Describe one feature of the causes of trench fever among British troops.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "1(a) Feature: The British Army enforced a mandatory buddy-system routine where soldiers washed, dried, and massaged each other’s feet with whale oil.\nDetail: Officers conducted daily sock inspections, and men were ordered to change into dry socks at least three times a day to maintain blood circulation and prevent gangrenous numbness from waterlogged mud.\n\n1(b) Feature: Trench fever was an infectious disease transmitted through the excrement of body lice (Pediculus humanus) infesting uniform seams.\nDetail: When soldiers scratched itchy bite wounds, dried louse faeces were rubbed into the broken skin, causing high relapsing fevers, severe headaches, and shooting shin pains that put troops out of action for over a month.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_2_q2",
+        "mockId": "med_official_practice",
+        "qCode": "2(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "8-Mark Source Utility",
+        "marks": 8,
+        "targetMins": 14,
+        "questionText": "Study Source A. How useful is Source A for an enquiry into the methods used by the British Army to prevent trench foot on the Western Front? Explain your answer, using Source A and your knowledge of the historical context.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div style=\"margin-bottom: 12px;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source A (Clinical Photograph): Bilateral Trench Foot in a British Soldier (c.1915)</div>\n              <img src=\"/images/trench_foot_clinical.jpg\" alt=\"Source A (Clinical Photograph): Bilateral Trench Foot in a British Soldier (c.1915)\" style=\"max-height: 220px; border-radius: 6px; border: 1px solid #cbd5e1; margin-bottom: 6px; display: block;\"><div style=\"font-size: 0.85rem; color: #475569; font-style: italic;\">RAMC clinical photograph documenting severe bilateral trench foot in a British infantryman (c.1915). Prolonged immersion in freezing, waterlogged mud constricted blood vessels, resulting in tissue death, blistering, and wet gangrene.</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The Wellcome Collection, London (Wellcome Images / Public Domain).</div>\n            </div>\n          \n            <div style=\"margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From 2nd Battalion Routine Standing Orders on the Prevention of Trench Foot (December 1915)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"1. Every man before entering the frontline trenches must grease his feet thoroughly with whale oil provided at company stores.\n2. Company commanders will ensure that every soldier carries two pairs of dry socks in his haversack. A dry pair must be put on every twelve hours, and the wet pair dried around the neck inside the tunic.\n3. Platoon officers will hold a daily foot inspection in the firebays. Every soldier will remove his boots and puttees in the presence of an officer or NCO, rub his feet with oil, and rub his comrade's feet. Any officer whose platoon reports preventable cases of trench foot will be required to explain why disciplinary standing orders were neglected.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The National Archives, Kew (WO 95/Infantry Battalion Standing Orders / Crown Copyright).</div>\n            </div>\n          ",
+        "modelAnswer": "Source A is exceptionally useful for an enquiry into the prevention of trench foot because it provides clear visual evidence of the compulsory preventive routines enforced across the British sector. It shows soldiers seated together in a trench removing their boots and socks to vigorously rub whale oil into their bare skin, with a non-commissioned officer actively supervising the process. This corroborates historical knowledge that the RAMC instituted a mandatory \"buddy system\" requiring men to grease each other’s feet and change into clean, dry socks daily, reducing trench foot cases from over 20,000 in 1914 to negligible numbers by 1917. However, the source is an official British War Office photograph, taken partly to demonstrate military efficiency and high morale to the home front. It presents a clean, orderly scene in a dry reserve trench, and therefore does not show the extreme, chaotic frontline conditions in the Ypres Salient where water was waist-deep, supplies of whale oil ran out, and soldiers had no dry ground on which to take off their boots.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_2_q3",
+        "mockId": "med_official_practice",
+        "qCode": "2(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Follow-up Enquiry",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "Study Source B. How could you follow up Source B to find out more about the conditions inside underground medical dressing stations in the Ypres Salient? In your answer, you must give the question you would ask and the type of source you would use.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div>\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From 2nd Battalion Routine Standing Orders on the Prevention of Trench Foot (December 1915)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"1. Every man before entering the frontline trenches must grease his feet thoroughly with whale oil provided at company stores.\n2. Company commanders will ensure that every soldier carries two pairs of dry socks in his haversack. A dry pair must be put on every twelve hours, and the wet pair dried around the neck inside the tunic.\n3. Platoon officers will hold a daily foot inspection in the firebays. Every soldier will remove his boots and puttees in the presence of an officer or NCO, rub his feet with oil, and rub his comrade's feet. Any officer whose platoon reports preventable cases of trench foot will be required to explain why disciplinary standing orders were neglected.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The National Archives, Kew (WO 95/Infantry Battalion Standing Orders / Crown Copyright).</div>\n            </div>\n          ",
+        "modelAnswer": "<strong>Detail in Source B that I would follow up:</strong> The subterranean vaulted entrance to the Ramparts Dressing Station built beneath the fortified brick earthworks of Ypres.<br><br><strong>Question I would ask:</strong> What medical equipment, lighting, and surgical facilities were available inside the Ramparts Dressing Station to treat wounded men?<br><br><strong>Type of source I would look for:</strong> The official medical logbook or personal diary of an RAMC medical officer stationed at the Ramparts Dressing Station in Ypres in 1916–1917.<br><br><strong>How this might help answer my question:</strong> It would provide contemporary, detailed descriptions of internal sanitation, air quality, bed capacity, and whether surgeons could perform emergency procedures underground during heavy shell bombardments.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_5_3": [
+      {
+        "id": "lesson_5_3_q1",
+        "mockId": "med_official_practice",
+        "qCode": "1",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Feature Drill",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "(a) Describe one feature of the effects of poison gas attacks on soldiers on the Western Front. [2 marks]\n(b) Describe one feature of the design of the British Brodie steel helmet.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "1(a) Feature: Chemical poison gases like chlorine and phosgene attacked the respiratory tract, causing severe asphyxiation and fluid build-up in the lungs.\nDetail: Inhaling chlorine gas reacted with moisture in the respiratory system to form hydrochloric acid, stripping the bronchial lining and causing casualties to suffocate and drown in their own secretions, while mustard gas caused agonizing internal and external chemical blisters.\n\n1(b) Feature: The Brodie helmet was pressed from a single sheet of hardened Hadfield manganese steel with a wide, shallow protective brim.\nDetail: The wide rim was engineered specifically to deflect shrapnel balls, falling debris, and shell splinters exploding overhead, which reduced fatal penetrating head trauma by an estimated 75–80%.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_3_q2",
+        "mockId": "med_official_practice",
+        "qCode": "2(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "8-Mark Source Utility",
+        "marks": 8,
+        "targetMins": 14,
+        "questionText": "Study Source B. How useful is Source B for an enquiry into the methods used to protect British soldiers from poison gas attacks on the Western Front? Explain your answer, using Source B and your knowledge of the historical context.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div style=\"margin-bottom: 12px;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source A: Report of an RAMC Consulting Surgeon on High Explosive Shrapnel Trauma in Flanders (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"The devastating nature of modern artillery shrapnel exceeds anything in medical history. When a high explosive shell detonates, it shatters into hundreds of jagged, irregular steel fragments travelling at supersonic velocity. These hot jagged fragments rip through flesh, pulverising bone into splinters and driving fragments of mud, filthy wool uniform, and manure deep into the tissues. Infection is instantaneous; clean bullet wounds are almost unknown.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">British Medical Journal, Vol. 2, Clinical War Reports, London, 1916.</div>\n            </div>\n          \n            <div style=\"margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From an RAMC Surgical Report on Wound Infections in Flanders (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"Flanders farmland is saturated with animal manure through centuries of intensive cultivation, containing dense spores of tetanus and anaerobic gas gangrene bacilli (Clostridium perfringens). When a shell splinter tears into a thigh or buttock, it drives fragments of mud-caked serge uniform deep into the lacerated muscle.\nIn the deep, oxygen-deprived wound track, the anaerobic bacteria proliferate with terrifying speed, fermenting muscle tissue and producing foul gas bubbles beneath the skin within twelve hours. The limb turns purple, cold, and crackles like dry parchment under the surgeon's touch (crepitation). Antiseptics poured onto the surface are completely useless; unless the entire wound track is widely excised (debridement) or the limb amputated immediately, the soldier dies of systemic toxaemia.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The National Archives, Kew (WO 222/RAMC Medical History Series / Crown Copyright).</div>\n            </div>\n          ",
+        "modelAnswer": "Source B is highly useful for an enquiry into chemical gas protection because it provides physical, authentic evidence of the British Army’s technological response to poison gas in 1915–1916. It shows the Phenate-Hexamine (PH) helmet, made of double-layered flannel chemically treated with sodium phenate to neutralize chlorine and phosgene gas. It displays glass eyepieces for visibility and a rubber exhale valve, corroborating historical knowledge that the British moved rapidly away from improvised urine-soaked pads to standardized, manufactured chemical respirators. However, Source B is limited as a standalone museum artifact because it cannot show how the helmet performed under combat conditions. In practice, the flannel hood was hot, suffocating, smelled strongly of chemicals, and the glass eyepieces quickly misted up with condensation, blinding the soldier in the middle of battle before the superior Small Box Respirator was introduced in 1916.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_3_q3",
+        "mockId": "med_official_practice",
+        "qCode": "2(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Follow-up Enquiry",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "Study Source A. How could you follow up Source A to find out more about the medical treatments used to save soldiers suffering from gas gangrene on the Western Front? In your answer, you must give the question you would ask and the type of source you would use.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div>\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From an RAMC Surgical Report on Wound Infections in Flanders (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"Flanders farmland is saturated with animal manure through centuries of intensive cultivation, containing dense spores of tetanus and anaerobic gas gangrene bacilli (Clostridium perfringens). When a shell splinter tears into a thigh or buttock, it drives fragments of mud-caked serge uniform deep into the lacerated muscle.\nIn the deep, oxygen-deprived wound track, the anaerobic bacteria proliferate with terrifying speed, fermenting muscle tissue and producing foul gas bubbles beneath the skin within twelve hours. The limb turns purple, cold, and crackles like dry parchment under the surgeon's touch (crepitation). Antiseptics poured onto the surface are completely useless; unless the entire wound track is widely excised (debridement) or the limb amputated immediately, the soldier dies of systemic toxaemia.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The National Archives, Kew (WO 222/RAMC Medical History Series / Crown Copyright).</div>\n            </div>\n          ",
+        "modelAnswer": "<strong>Detail in Source A that I would follow up:</strong> The extensive necrotic, blackened tissue damage and rotting flesh in the soldier’s lower foot caused by anaerobic gangrene.<br><br><strong>Question I would ask:</strong> What specific surgical procedures, such as wound debridement or amputation, did RAMC surgeons perform to stop gas gangrene from spreading to the rest of the body?<br><br><strong>Type of source I would look for:</strong> The official clinical surgical casebooks or operational records of an RAMC Casualty Clearing Station operating ward on the Western Front from 1916–1917.<br><br><strong>How this might help answer my question:</strong> It would provide detailed surgical statistics on how many patients underwent debridement versus amputation, and the survival rate of men treated with antiseptic irrigation methods like Carrel-Dakin.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_5_4": [
+      {
+        "id": "lesson_5_4_q1",
+        "mockId": "med_official_practice",
+        "qCode": "1",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Feature Drill",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "Describe two features of the casualty evacuation chain on the Western Front:\n(a) Describe one feature of the triage system used at Casualty Clearing Stations on the Western Front. [2 marks]\n(b) Describe one feature of the work of the First Aid Nursing Yeomanry (FANY) on the Western Front.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "1(a) Feature: Casualty Clearing Stations operated a strict three-tier triage system to categorize wounded arrivals based on clinical urgency.\nDetail: Medical officers divided incoming casualties into Walking Wounded (minor injuries patched up), Immediate Surgery (urgent operations to stop haemorrhage or amputate shattered limbs), and Moribund (hopeless cases given comfort care and morphine), ensuring overworked surgical teams prioritized patients with the greatest chance of survival.\n\n1(b) Feature: FANY volunteer women served as front-line motorized ambulance drivers transporting wounded soldiers.\nDetail: Arriving in 1914, FANY personnel drove and maintained ambulance convoys over cratered roads under shellfire, evacuating casualties from Regimental Aid Posts and Dressing Stations to CCSs and hospital barges.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_4_q2",
+        "mockId": "med_official_practice",
+        "qCode": "2(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "8-Mark Source Utility",
+        "marks": 8,
+        "targetMins": 14,
+        "questionText": "Study Source A. How useful is Source A for an enquiry into the difficulties of evacuating wounded soldiers from the battlefield on the Western Front? Explain your answer, using Source A and your knowledge of the historical context.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div style=\"margin-bottom: 12px;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source A (Photograph): Stretcher Bearers Carrying a Wounded Soldier through Mud at the Battle of Passchendaele (1917)</div>\n              <img src=\"/images/stretcher_bearers_passchendaele_1917.jpg\" alt=\"Source A (Photograph): Stretcher Bearers Carrying a Wounded Soldier through Mud at the Battle of Passchendaele (1917)\" style=\"max-height: 220px; border-radius: 6px; border: 1px solid #cbd5e1; margin-bottom: 6px; display: block;\"><div style=\"font-size: 0.85rem; color: #475569; font-style: italic;\">Six British stretcher bearers struggling shoulder-high to carry a severely wounded casualty across waist-deep, liquid mud and shattered tree stumps near Boesinghe during the Third Battle of Ypres (Passchendaele, 1917).</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">Imperial War Museum, London (IWM Q 5935 / Public Domain).</div>\n            </div>\n          \n            <div style=\"margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From the Diary of Captain J. C. Dunn, Medical Officer to the 2nd Battalion, Royal Welch Fusiliers (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"The Regimental Aid Post was set up in a collapsed German dugout 200 yards behind the frontline trench. Throughout the bombardment, casualties poured in in an unending stream. My duty as Battalion Medical Officer is not to perform operations, but to execute rapid triage: stop severe arterial haemorrhage with tourniquets, dress wounds with sterile gauze, inject antitetanic serum, administer morphine to ease agony, and label each man with a colored tag.\nThe slightly wounded are bandaged and sent back to the firing line; men with severe shrapnel lacerations or fractured limbs are tagged for immediate stretcher transport to the Advanced Dressing Station; for the hopeless, dying cases with massive brain trauma, we can only provide morphine and a quiet corner to die.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The War the Infantry Knew 1914–1919 (Jane's Publishing / Public Domain).</div>\n            </div>\n          ",
+        "modelAnswer": "Source A is exceptionally useful for an enquiry into casualty evacuation because it provides authentic visual evidence of the extreme physical obstacles faced by RAMC stretcher bearers in the Ypres sector. It shows four bearers struggling to haul a single wounded soldier on a canvas stretcher through deep, waterlogged mud, with shell craters and devastated terrain stretching across the entire background. This corroborates historical knowledge that during the 1917 Passchendaele offensive, the pulverized Flanders drainage system turned the battlefield into a swamp where carrying a casualty to an aid post frequently took six to eight hours, requiring teams of six men to prevent the patient from falling into liquid mud. However, Source A is an official British War Office photograph taken for official records and morale, and therefore presents an isolated moment. It cannot capture the terrifying reality of active artillery bombardments, poison gas clouds, or sniper fire that stretcher bearers endured while carrying out this work.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_4_q3",
+        "mockId": "med_official_practice",
+        "qCode": "2(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Follow-up Enquiry",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "Study Source B. How could you follow up Source B to find out more about the advantages of using canal barges to transport wounded soldiers to Base Hospitals? In your answer, you must give the question you would ask and the type of source you would use.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div>\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From the Diary of Captain J. C. Dunn, Medical Officer to the 2nd Battalion, Royal Welch Fusiliers (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"The Regimental Aid Post was set up in a collapsed German dugout 200 yards behind the frontline trench. Throughout the bombardment, casualties poured in in an unending stream. My duty as Battalion Medical Officer is not to perform operations, but to execute rapid triage: stop severe arterial haemorrhage with tourniquets, dress wounds with sterile gauze, inject antitetanic serum, administer morphine to ease agony, and label each man with a colored tag.\nThe slightly wounded are bandaged and sent back to the firing line; men with severe shrapnel lacerations or fractured limbs are tagged for immediate stretcher transport to the Advanced Dressing Station; for the hopeless, dying cases with massive brain trauma, we can only provide morphine and a quiet corner to die.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The War the Infantry Knew 1914–1919 (Jane's Publishing / Public Domain).</div>\n            </div>\n          ",
+        "modelAnswer": "<strong>Detail in Source B that I would follow up:</strong> The spacious, covered hospital cots and calm water transport provided by the RAMC converted ambulance canal barge in France.<br><br><strong>Question I would ask:</strong> What were the survival and recovery rates of soldiers with severe head or abdominal wounds transported by canal barge compared to those transported by motor ambulance?<br><br><strong>Type of source I would look for:</strong> The official medical records or comparative mortality reports produced by the Director General of Army Medical Services for the Western Front in 1916–1917.<br><br><strong>How this might help answer my question:</strong> It would provide official clinical statistics showing whether smooth water transport reduced internal hemorrhaging and shock compared to the violent jolting of motor ambulances over rutted roads.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_5_5": [
+      {
+        "id": "lesson_5_5_q1",
+        "mockId": "med_official_practice",
+        "qCode": "1",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Feature Drill",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "Describe two features of surgical breakthroughs on the Western Front:\n(a) Describe one feature of the Thomas Splint used on the Western Front. [2 marks]\n(b) Describe one feature of the Carrel-Dakin method of treating infected wounds.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "1(a) Feature: The Thomas Splint was an elongated rigid metal frame designed to stabilize and apply continuous traction to fractured femurs.\nDetail: Introduced to the front by Robert Jones in late 1915, it immobilized the thigh bone during stretcher transit, preventing fractured bone ends from grinding and severing the femoral artery, slashing femur mortality from 80% to under 20%.\n\n1(b) Feature: The Carrel-Dakin method was an antiseptic wound irrigation system that used a dilute sodium hypochlorite solution to treat deep open wounds.\nDetail: Perforated rubber tubes were stitched directly into lacerated muscle tissue, continuously flushing the wound with antiseptic fluid to kill anaerobic gas gangrene bacteria (Clostridium welchii) without destroying healthy human tissue.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_5_q2",
+        "mockId": "med_official_practice",
+        "qCode": "2(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "8-Mark Source Utility",
+        "marks": 8,
+        "targetMins": 14,
+        "questionText": "Study Source A. How useful is Source A for an enquiry into the treatments used for wounded soldiers suffering from fractured limbs on the Western Front? Explain your answer, using Source A and your knowledge of the historical context.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div style=\"margin-bottom: 12px;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source A: Surgical Operating Theatre Suite at No. 23 Casualty Clearing Station in France (c.1917)</div>\n              <img src=\"/images/casualty_clearing_station_ww1.jpg\" alt=\"Source A: Surgical Operating Theatre Suite at No. 23 Casualty Clearing Station in France (c.1917)\" style=\"max-height: 220px; border-radius: 6px; border: 1px solid #cbd5e1; margin-bottom: 6px; display: block;\"><div style=\"font-size: 0.85rem; color: #475569; font-style: italic;\">Operating theatre suite inside No. 23 Casualty Clearing Station on the Western Front. Multiple operating tables with surgical instruments and overhead illumination enabled specialist surgical teams to perform urgent abdominal laparotomies and debridement simultaneously.</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">Imperial War Museum, London (IWM Q 33441 / Public Domain).</div>\n            </div>\n          \n            <div style=\"margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From a Paper by Dr Alexis Carrel and Dr Henry Dakin on Wound Treatment (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"Traditional antiseptic treatment failed completely in war wounds because chemical agents like carbolic acid killed healthy white blood cells and coagulated proteins without reaching bacteria sheltered in deep muscle crevices.\nOur method involves two vital steps: first, the complete surgical debridement of all devitalized tissue, dead muscle, and accessible foreign matter; second, the continuous or intermittent instillation of a non-irritating antiseptic solution (buffered sodium hypochlorite, 0.5%) through a network of perforated rubber tubes embedded directly into the recesses of the wound.\nThe solution dissolves dead tissue without injuring healthy granulation cells and rapidly sterilizes the wound. Cultures taken from the wound track show that bacteria drop to zero within five to eight days, allowing us to perform secondary delayed closure without fear of gangrene.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The Lancet / British Medical Journal (Public Domain).</div>\n            </div>\n          ",
+        "modelAnswer": "Source A is exceptionally useful for an enquiry into treatments for fractured limbs because it provides clear photographic evidence of the Thomas Splint in clinical use. It demonstrates exactly how the splint was fitted: the padded leather ring rested against the pelvic bone at the groin, while rigid metal rods extended down the sides of the leg, with extension cords attached to the foot to maintain continuous mechanical traction. This corroborates historical knowledge that Robert Jones introduced the Thomas Splint to frontline units in late 1915, pulling broken femur bones straight to stop muscle spasms from severing the femoral artery, which dramatically reduced mortality from compound fractures from 80% to just 20%. However, Source A is limited because it is an official instructional training photograph taken in a calm, well-lit hospital ward. It does not reflect the chaotic frontline reality in a muddy Regimental Aid Post under heavy artillery bombardment, where medical orderlies had to fit the splint onto screaming casualties in total darkness.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_5_q3",
+        "mockId": "med_official_practice",
+        "qCode": "2(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Follow-up Enquiry",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "Study Source B. How could you follow up Source B to find out more about the conditions under which surgical operations were performed at Casualty Clearing Stations? In your answer, you must give the question you would ask and the type of source you would use.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div>\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From a Paper by Dr Alexis Carrel and Dr Henry Dakin on Wound Treatment (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"Traditional antiseptic treatment failed completely in war wounds because chemical agents like carbolic acid killed healthy white blood cells and coagulated proteins without reaching bacteria sheltered in deep muscle crevices.\nOur method involves two vital steps: first, the complete surgical debridement of all devitalized tissue, dead muscle, and accessible foreign matter; second, the continuous or intermittent instillation of a non-irritating antiseptic solution (buffered sodium hypochlorite, 0.5%) through a network of perforated rubber tubes embedded directly into the recesses of the wound.\nThe solution dissolves dead tissue without injuring healthy granulation cells and rapidly sterilizes the wound. Cultures taken from the wound track show that bacteria drop to zero within five to eight days, allowing us to perform secondary delayed closure without fear of gangrene.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The Lancet / British Medical Journal (Public Domain).</div>\n            </div>\n          ",
+        "modelAnswer": "<strong>Detail in Source B that I would follow up:</strong> The multiple surgical tables operating simultaneously inside the canvas tented operating theatre at the Casualty Clearing Station.<br><br><strong>Question I would ask:</strong> How many surgical operations could a single surgical team perform in twenty-four hours during major battles, and what percentage of operated patients survived?<br><br><strong>Type of source I would look for:</strong> The official medical surgical registers and operational logbooks of No. 47 Casualty Clearing Station for 1917.<br><br><strong>How this might help answer my question:</strong> It would provide official statistical records of surgeon workloads, operation durations, patient diagnoses, and post-operative infection survival rates during intense battle offensives.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ],
+    "lesson_5_6": [
+      {
+        "id": "lesson_5_6_q1",
+        "mockId": "med_official_practice",
+        "qCode": "1",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Feature Drill",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "Describe two features of lifesaving medical and surgical innovations on the Western Front:\n(a) Describe one feature of Harvey Cushing’s surgical techniques in operating on head wounds on the Western Front. [2 marks]\n(b) Describe one feature of the surgical methods used by Harold Gillies at Queen’s Hospital, Sidcup.",
+        "stimulus": [],
+        "sourceExtract": "",
+        "modelAnswer": "1(a) Feature: Harvey Cushing utilized local anaesthetic rather than general chloroform anaesthesia when conducting delicate brain surgery.\nDetail: Operating under local anaesthesia prevented brain swelling and reduced intra-cranial pressure, allowing Cushing to use a surgical electromagnet to extract deep metallic shell fragments carefully, reducing brain surgery mortality to 29%.\n\n1(b) Feature: Harold Gillies developed facial plastic reconstruction using the ‘tubed pedicle’ skin-grafting technique.\nDetail: Skin flaps from the chest or forehead were rolled into living cylinders of tissue with blood supply intact at both ends before being stitched to damaged facial areas, preventing graft necrosis and enabling surgeons to rebuild shattered noses, jaws, and cheeks.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_6_q2",
+        "mockId": "med_official_practice",
+        "qCode": "2(a)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "8-Mark Source Utility",
+        "marks": 8,
+        "targetMins": 14,
+        "questionText": "Study Source A. How useful is Source A for an enquiry into advances in blood transfusion on the Western Front? Explain your answer, using Source A and your knowledge of the historical context.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div style=\"margin-bottom: 12px;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source A: Dr. Richard Lewisohn, Clinical Report on the Use of Sodium Citrate in Blood Transfusion (1915)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"The paramount obstacle in military blood transfusion has been rapid coagulation, which prevented the transfer of blood from donor to recipient without direct vein-to-vein suture. By adding a small, non-toxic dosage of sodium citrate (0.2%), coagulation is completely arrested for several hours. Blood can now be drawn into sterile flasks and transported directly to wounded soldiers suffering from catastrophic haemorrhage, eliminating the requirement for donor and patient to lie side by side.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">Annals of Surgery, Vol. 62, New York, July 1915.</div>\n            </div>\n          \n            <div style=\"margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: Dr. Francis Peyton Rous and Dr. Joseph Turner, Research on Preserving Human Blood Cells (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"While sodium citrate prevents immediate clotting, erythrocytes deteriorate rapidly unless provided with chemical nutrition. By combining sodium citrate with a dextrose (glucose) solution and maintaining the mixture in chilled containers, human red blood cells can be preserved in vitro for upwards of four weeks without haemolysis. Cells preserved in this citrate-dextrose medium remain viable and retain their full oxygen-carrying capacity when re-infused into an animal model.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">Journal of Experimental Medicine, Vol. 23, Rockefeller Institute, New York, 1916.</div>\n            </div>\n          ",
+        "modelAnswer": "Source A is exceptionally useful for an enquiry into blood transfusion advances because it provides authentic, physical evidence of the apparatus used to establish the world’s first blood bank. It shows the insulated wooden chest packed with ice to chill stored blood, alongside the sterile glass collection bottles and rubber tubes designed by Captain Oswald Robertson. This corroborates historical knowledge that by adding sodium citrate and glucose, blood could be stored for up to 28 days and transported to the front line, which Robertson demonstrated at the Battle of Cambrai in November 1917 by successfully treating twenty out of twenty-two casualties with pre-collected blood. However, Source A is limited as a standalone museum object because it cannot show the actual clinical administration of the transfusions, how difficult it was to keep ice supplied in the field, or the clinical reactions of patients who received transfusions before modern blood cross-matching was fully perfected.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      },
+      {
+        "id": "lesson_5_6_q3",
+        "mockId": "med_official_practice",
+        "qCode": "2(b)",
+        "mockTitle": "Official Edexcel Syllabus Practice Station (Western Front)",
+        "paperCode": "Option 11/12 (1HI0/11-12)",
+        "type": "4-Mark Follow-up Enquiry",
+        "marks": 4,
+        "targetMins": 5,
+        "questionText": "Study Source B. How could you follow up Source B to find out more about how mobile X-ray technology was used to treat wounded soldiers on the Western Front? In your answer, you must give the question you would ask and the type of source you would use.",
+        "stimulus": [],
+        "sourceExtract": "\n            <div>\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: Dr. Francis Peyton Rous and Dr. Joseph Turner, Research on Preserving Human Blood Cells (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"While sodium citrate prevents immediate clotting, erythrocytes deteriorate rapidly unless provided with chemical nutrition. By combining sodium citrate with a dextrose (glucose) solution and maintaining the mixture in chilled containers, human red blood cells can be preserved in vitro for upwards of four weeks without haemolysis. Cells preserved in this citrate-dextrose medium remain viable and retain their full oxygen-carrying capacity when re-infused into an animal model.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">Journal of Experimental Medicine, Vol. 23, Rockefeller Institute, New York, 1916.</div>\n            </div>\n          ",
+        "modelAnswer": "<strong>Detail in Source B that I would follow up:</strong> The mobile X-ray table and electrical generator apparatus being used to locate shrapnel in a wounded soldier at a Casualty Clearing Station.<br><br><strong>Question I would ask:</strong> How many mobile X-ray vans were operational in the British sector by 1917, and how did their radiographic findings alter surgical decisions during operations?<br><br><strong>Type of source I would look for:</strong> The official reports and clinical casebooks of the RAMC Mobile Radiological Units on the Western Front from 1917.<br><br><strong>How this might help answer my question:</strong> It would provide official contemporary data on how frequently X-rays successfully located deep metallic shrapnel fragments and prevented surgeons from carrying out damaging exploratory incisions.",
+        "pdfUrl": "/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf",
+        "mockUrl": "/units/edexcel_medicine/"
+      }
+    ]
   }
 };
 

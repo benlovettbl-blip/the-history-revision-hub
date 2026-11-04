@@ -816,15 +816,223 @@ function classifyEeeQuestion(lessonId, q, idx) {
 }
 
 
+// ================================================================
+// 5. Medicine in Britain & Western Front (Option 11/12) Extraction
+// ================================================================
+
+const medModule = require(path.join(__dirname, '../units/edexcel_medicine/data.js'));
+const medData = medModule.default || medModule;
+
+const medDefaultStimulus = {
+  'lesson_1_1': ['Control of education and book production', 'Galen and the Christian worldview'],
+  'lesson_1_2': ['Church approval of Galen’s monotheism', 'Lack of practical human dissection'],
+  'lesson_1_3': ['The Theory of Opposites', 'Bloodletting (phlebotomy) and purging'],
+  'lesson_1_4': ['Monastic hospice rules and prayer', 'Lack of medically trained physicians in hospitals'],
+  'lesson_1_5': ['Miasma and public filth', 'Quarantine and mass plague pits'],
+  'lesson_2_1': ['The printing press (Gutenberg)', 'The Royal Society and Philosophical Transactions'],
+  'lesson_2_2': ['Observationes Medicae (1676)', 'Classification of distinct illnesses'],
+  'lesson_2_3': ['De Humani Corporis Fabrica (1543)', 'Correcting Galen’s anatomical errors'],
+  'lesson_2_4': ['Observation of mechanical heart valves', 'De Motu Cordis (1628)'],
+  'lesson_2_5': ['Searchers of the dead and red crosses', 'Humoural purging and pomanders']
+};
+
+function cleanMedQText(str) {
+  if (!str) return '';
+  let res = str.replace(/^[0-9]+(?:\([a-c]\))?\.\s*/, '').trim();
+  res = res.replace(/\s*[\(\[]\s*\d+\s*(?:marks?|SPaG)?\s*[\)\]]\s*$/i, '').trim();
+  res = res.replace(/\s*\[?\s*\d+\s*marks?\s*\]?\s*$/i, '').trim();
+  return res;
+}
+
+function buildMedicineMockQuestions(lesson) {
+  const lessonQuestions = [];
+  const isWesternFront = lesson.id.startsWith('lesson_5_');
+  const pdfUrl = '/pdfs/edexcel_medicine/edexcel_medicine_textbook_UNIFIED.pdf';
+  const mockUrl = '/units/edexcel_medicine/';
+
+  if (!lesson.exam_practice || !lesson.exam_practice.questions) {
+    return [];
+  }
+
+  const rawQuestions = lesson.exam_practice.questions;
+
+  if (isWesternFront) {
+    // KT5: Western Front Historic Environment (Section A)
+    // Q1: 4-Mark Feature Drill (5 mins)
+    // Q2(a): 8-Mark Source Utility (14 mins) with Sources A & B
+    // Q2(b): 4-Mark Follow-up Enquiry (5 mins) with Source B
+    rawQuestions.forEach((q, idx) => {
+      const t = (q.type || '').toLowerCase();
+      let qCode = '1';
+      let type = '4-Mark Feature Drill';
+      let marks = 4;
+      let targetMins = 5;
+      let sourceExtract = '';
+
+      if (t.includes('feature') || idx === 0) {
+        qCode = '1';
+        type = '4-Mark Feature Drill';
+        marks = 4;
+        targetMins = 5;
+      } else if (t.includes('utility') || idx === 1) {
+        qCode = '2(a)';
+        type = '8-Mark Source Utility';
+        marks = 8;
+        targetMins = 14;
+
+        // Build dual source card from lesson.sources
+        const srcA = lesson.sources && lesson.sources[0];
+        const srcB = lesson.sources && lesson.sources[1];
+        let parts = [];
+        if (srcA) {
+          let aBody = '';
+          if (srcA.image || srcA.src) {
+            aBody = `<img src="${srcA.image || srcA.src}" alt="${srcA.title}" style="max-height: 220px; border-radius: 6px; border: 1px solid #cbd5e1; margin-bottom: 6px; display: block;"><div style="font-size: 0.85rem; color: #475569; font-style: italic;">${srcA.caption || ''}</div>`;
+          } else {
+            aBody = `<div style="font-style: italic; color: #1e293b; margin-bottom: 4px;">"${srcA.content || srcA.text || ''}"</div>`;
+          }
+          parts.push(`
+            <div style="margin-bottom: 12px;">
+              <div style="font-weight: 700; color: #b45309; margin-bottom: 4px;">${srcA.title || 'Source A'}</div>
+              ${aBody}
+              <div style="font-size: 0.8rem; color: #64748b; margin-top: 4px;">${srcA.citation || ''}</div>
+            </div>
+          `);
+        }
+        if (srcB) {
+          let bBody = '';
+          if (srcB.image || srcB.src) {
+            bBody = `<img src="${srcB.image || srcB.src}" alt="${srcB.title}" style="max-height: 220px; border-radius: 6px; border: 1px solid #cbd5e1; margin-bottom: 6px; display: block;"><div style="font-size: 0.85rem; color: #475569; font-style: italic;">${srcB.caption || ''}</div>`;
+          } else {
+            bBody = `<div style="font-style: italic; color: #1e293b; margin-bottom: 4px;">"${srcB.content || srcB.text || ''}"</div>`;
+          }
+          parts.push(`
+            <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1;">
+              <div style="font-weight: 700; color: #b45309; margin-bottom: 4px;">${srcB.title || 'Source B'}</div>
+              ${bBody}
+              <div style="font-size: 0.8rem; color: #64748b; margin-top: 4px;">${srcB.citation || ''}</div>
+            </div>
+          `);
+        }
+        sourceExtract = parts.join('');
+      } else if (t.includes('follow_up') || idx === 2) {
+        qCode = '2(b)';
+        type = '4-Mark Follow-up Enquiry';
+        marks = 4;
+        targetMins = 5;
+
+        // Source B focus for follow-up
+        const srcB = lesson.sources && (lesson.sources[1] || lesson.sources[0]);
+        if (srcB) {
+          let bBody = srcB.image || srcB.src
+            ? `<img src="${srcB.image || srcB.src}" alt="${srcB.title}" style="max-height: 200px; border-radius: 6px; border: 1px solid #cbd5e1; margin-bottom: 6px; display: block;"><div style="font-size: 0.85rem; color: #475569; font-style: italic;">${srcB.caption || ''}</div>`
+            : `<div style="font-style: italic; color: #1e293b; margin-bottom: 4px;">"${srcB.content || srcB.text || ''}"</div>`;
+          sourceExtract = `
+            <div>
+              <div style="font-weight: 700; color: #b45309; margin-bottom: 4px;">${srcB.title || 'Source B'}</div>
+              ${bBody}
+              <div style="font-size: 0.8rem; color: #64748b; margin-top: 4px;">${srcB.citation || ''}</div>
+            </div>
+          `;
+        }
+      }
+
+      lessonQuestions.push({
+        id: `${lesson.id}_q${idx + 1}`,
+        mockId: 'med_official_practice',
+        qCode,
+        mockTitle: 'Official Edexcel Syllabus Practice Station (Western Front)',
+        paperCode: 'Option 11/12 (1HI0/11-12)',
+        type,
+        marks,
+        targetMins,
+        questionText: cleanMedQText(q.question),
+        stimulus: [],
+        sourceExtract,
+        modelAnswer: q.model || '',
+        pdfUrl,
+        mockUrl
+      });
+    });
+  } else {
+    // KT1–KT4: Thematic Study (Section B)
+    // Q3: 4-Mark Similarity/Difference (6 mins)
+    // Q4: 12-Mark Causation (20 mins) OR Q5/6: 16+4 Mark Evaluative Statement Essay (28 mins)
+    rawQuestions.forEach((q, idx) => {
+      const t = (q.type || '').toLowerCase();
+      const tariff = (q.tariff || '').toLowerCase();
+      const text = (q.question || '').toLowerCase();
+
+      let qCode = '3';
+      let type = '4-Mark Similarity/Difference';
+      let marks = 4;
+      let targetMins = 6;
+      let stimulus = [];
+
+      if (idx === 0) {
+        qCode = '3';
+        type = text.includes('different') ? '4-Mark Difference' : '4-Mark Similarity';
+        if (!text.includes('similar') && !text.includes('different')) {
+          type = '4-Mark Similarity/Difference';
+        }
+        marks = 4;
+        targetMins = 6;
+      } else {
+        if (t.includes('evaluative') || t.includes('essay') || tariff.includes('16') || text.includes('agree') || text.includes('16+4') || text.includes('16 marks')) {
+          qCode = '5/6';
+          type = '16+4 Mark Evaluative Essay';
+          marks = 20;
+          targetMins = 28;
+        } else {
+          qCode = '4';
+          type = '12-Mark Causation';
+          marks = 12;
+          targetMins = 20;
+        }
+      }
+
+      // Check stimulus points
+      if (q.stimulus && Array.isArray(q.stimulus)) {
+        stimulus = q.stimulus;
+      } else if (q.bullet_points && Array.isArray(q.bullet_points)) {
+        stimulus = q.bullet_points;
+      } else if (medDefaultStimulus[lesson.id] && idx === 1) {
+        stimulus = medDefaultStimulus[lesson.id];
+      }
+
+      lessonQuestions.push({
+        id: `${lesson.id}_q${idx + 1}`,
+        mockId: 'med_official_practice',
+        qCode,
+        mockTitle: 'Official Edexcel Syllabus Practice Station (Thematic Study)',
+        paperCode: 'Option 11/12 (1HI0/11-12)',
+        type,
+        marks,
+        targetMins,
+        questionText: cleanMedQText(q.question),
+        stimulus,
+        sourceExtract: '',
+        modelAnswer: q.model || '',
+        pdfUrl,
+        mockUrl
+      });
+    });
+  }
+
+  return lessonQuestions;
+}
+
+
 // ==========================================
-// 5. Assemble and Compile Final Database
+// 6. Assemble and Compile Final Database
 // ==========================================
 
 const finalDatabase = {
   usa: {},
   weimar_nazi_germany: {},
   cme_new: {},
-  eee: {}
+  eee: {},
+  edexcel_medicine: {}
 };
 
 // Build USA
@@ -874,6 +1082,11 @@ for (const l of eeeData.lessons) {
   }
 }
 
+// Build Medicine in Britain & Western Front (edexcel_medicine)
+for (const l of medData.lessons) {
+  finalDatabase.edexcel_medicine[l.id] = buildMedicineMockQuestions(l);
+}
+
 const fileContent = `/**
  * src/engine/mock_exam_bank_data.js
  *
@@ -892,4 +1105,4 @@ export function getLessonMockQuestions(unitId, lessonId) {
 `;
 
 fs.writeFileSync(path.join(__dirname, '../src/engine/mock_exam_bank_data.js'), fileContent, 'utf8');
-console.log('✅ Generated src/engine/mock_exam_bank_data.js successfully with USA, Weimar & Nazi Germany, CME, and Early Elizabethan England!');
+console.log('✅ Generated src/engine/mock_exam_bank_data.js successfully with USA, Weimar & Nazi Germany, CME, Early Elizabethan England, and Medicine in Britain!');
