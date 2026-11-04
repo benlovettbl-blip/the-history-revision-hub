@@ -165,9 +165,9 @@
       "lessonIndex": 2
     },
     "lesson_4": {
-      "page": 10,
-      "endPage": 10,
-      "spread": "Page 10",
+      "page": 8,
+      "endPage": 8,
+      "spread": "Page 8",
       "booklet": "Pupil Workbook",
       "unitId": "cold_war",
       "lessonIndex": 3
@@ -189,9 +189,9 @@
       "lessonIndex": 5
     },
     "lesson_7": {
-      "page": 39,
-      "endPage": 39,
-      "spread": "Page 39",
+      "page": 16,
+      "endPage": 16,
+      "spread": "Page 16",
       "booklet": "Pupil Workbook",
       "unitId": "cold_war",
       "lessonIndex": 6
@@ -858,121 +858,121 @@
   "trip_ypres": {},
   "usa": {
     "lesson_1_1": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
       "booklet": "Key Topic 1 Booklet",
       "unitId": "usa",
       "lessonIndex": 0
     },
     "lesson_1_2": {
-      "page": 9,
-      "endPage": 9,
-      "spread": "Page 9",
+      "page": 7,
+      "endPage": 7,
+      "spread": "Page 7",
       "booklet": "Key Topic 1 Booklet",
       "unitId": "usa",
       "lessonIndex": 1
     },
     "lesson_1_3": {
-      "page": 15,
-      "endPage": 15,
-      "spread": "Page 15",
+      "page": 10,
+      "endPage": 10,
+      "spread": "Page 10",
       "booklet": "Key Topic 1 Booklet",
       "unitId": "usa",
       "lessonIndex": 2
     },
     "lesson_1_4": {
-      "page": 21,
-      "endPage": 21,
-      "spread": "Page 21",
+      "page": 13,
+      "endPage": 13,
+      "spread": "Page 13",
       "booklet": "Key Topic 1 Booklet",
       "unitId": "usa",
       "lessonIndex": 3
     },
     "lesson_2_1": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
       "booklet": "Key Topic 2 Booklet",
       "unitId": "usa",
       "lessonIndex": 4
     },
     "lesson_2_2": {
-      "page": 9,
-      "endPage": 9,
-      "spread": "Page 9",
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
       "booklet": "Key Topic 2 Booklet",
       "unitId": "usa",
       "lessonIndex": 5
     },
     "lesson_2_3": {
-      "page": 15,
-      "endPage": 15,
-      "spread": "Page 15",
+      "page": 10,
+      "endPage": 10,
+      "spread": "Page 10",
       "booklet": "Key Topic 2 Booklet",
       "unitId": "usa",
       "lessonIndex": 6
     },
     "lesson_2_4": {
-      "page": 21,
-      "endPage": 21,
-      "spread": "Page 21",
+      "page": 13,
+      "endPage": 13,
+      "spread": "Page 13",
       "booklet": "Key Topic 2 Booklet",
       "unitId": "usa",
       "lessonIndex": 7
     },
     "lesson_3_1": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
       "booklet": "Key Topic 3 Booklet",
       "unitId": "usa",
       "lessonIndex": 8
     },
     "lesson_3_2": {
-      "page": 9,
-      "endPage": 9,
-      "spread": "Page 9",
+      "page": 7,
+      "endPage": 7,
+      "spread": "Page 7",
       "booklet": "Key Topic 3 Booklet",
       "unitId": "usa",
       "lessonIndex": 9
     },
     "lesson_3_3": {
-      "page": 15,
-      "endPage": 15,
-      "spread": "Page 15",
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
       "booklet": "Key Topic 3 Booklet",
       "unitId": "usa",
       "lessonIndex": 10
     },
     "lesson_3_4": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
+      "page": 4,
+      "endPage": 4,
+      "spread": "Page 4",
       "booklet": "Key Topic 4 Booklet",
       "unitId": "usa",
       "lessonIndex": 11
     },
     "lesson_4_1": {
-      "page": 9,
-      "endPage": 9,
-      "spread": "Page 9",
+      "page": 7,
+      "endPage": 7,
+      "spread": "Page 7",
       "booklet": "Key Topic 4 Booklet",
       "unitId": "usa",
       "lessonIndex": 12
     },
     "lesson_4_2": {
-      "page": 15,
-      "endPage": 15,
-      "spread": "Page 15",
+      "page": 10,
+      "endPage": 10,
+      "spread": "Page 10",
       "booklet": "Key Topic 4 Booklet",
       "unitId": "usa",
       "lessonIndex": 13
     },
     "lesson_4_3": {
-      "page": 21,
-      "endPage": 21,
-      "spread": "Page 21",
+      "page": 2,
+      "endPage": 2,
+      "spread": "Page 2",
       "booklet": "Key Topic 4 Booklet",
       "unitId": "usa",
       "lessonIndex": 14

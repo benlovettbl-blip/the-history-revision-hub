@@ -4788,35 +4788,35 @@
             {
               "id": "cme_l4_source_d",
               "letter": "D",
-              "title": "Source D: Military Operational Map of the 1956 Suez Campaign",
-              "src": "/images/cme_suez_1956_campaign_map.jpg",
-              "image": "/images/cme_suez_1956_campaign_map.jpg",
-              "source": "/images/cme_suez_1956_campaign_map.jpg",
-              "caption": "Operational map tracing the Israeli paratrooper drop at Mitla Pass, IDF armored advances across Sinai, and Anglo-French sea landings at Port Said.",
-              "desc": "Operational theatre map showing the three-nation coordinated attack on Egypt.",
-              "provenance": "IDF Historical Branch / British Ministry of Defence Archives, 1956.",
-              "citation": "IDF Historical Archives / British MoD.",
+              "title": "Source D: British RAF Reconnaissance Photograph over Port Said (5 November 1956)",
+              "src": "/images/cme_port_said_from_air.jpg",
+              "image": "/images/cme_port_said_from_air.jpg",
+              "source": "/images/cme_port_said_from_air.jpg",
+              "caption": "British Royal Air Force aerial photograph capturing dense black smoke rising from burning oil storage tanks beside the Suez Canal entrance at Port Said following Anglo-French air strikes (IWM MH 23509).",
+              "desc": "Aerial reconnaissance photograph of Port Said harbour under air bombardment.",
+              "provenance": "Royal Air Force aerial photographic reconnaissance unit, Port Said, 5 November 1956 (Imperial War Museum MH 23509).",
+              "citation": "Imperial War Museum, Accession MH 23509.",
               "hinge_question": "How does the synchronized coordination between Israeli and British forces on this map expose the secret Sèvres collusion?",
-              "source_context": "The map illustrates the tripartite campaign against Egypt. Israel captured the entire Sinai Peninsula in eight days, while British and French bombers destroyed the Egyptian air force and landed paratroopers in Port Said. The invasion ended when the United Nations deployed UNEF peacekeepers and forced total Anglo-French withdrawal. **Hinge Question:** How does the synchronized coordination between Israeli and British forces on this map expose the secret Sèvres collusion?",
-              "context": "Operational map tracing the coordinated Israeli, British, and French military attacks against Egypt in 1956.",
-              "question_badge": "Cross-Referencing",
-              "question_type": "Cross-Referencing",
-              "enquiry_question": "How does Source D corroborate evidence that the British and French intervention was a pre-planned conspiracy with Israel rather than a genuine peacekeeping mission?",
-              "model_answer": "Source D shows that the British and French landings occurred precisely along the canal axis timed exactly to intercept retreating Egyptian forces, directly disproving Eden's claim of an impartial peacekeeping intervention between warring armies.",
+              "source_context": "During the Anglo-French assault on Port Said, allied air strikes targeted Egyptian coastal batteries, airfields, and port installations. This aerial photograph shows plumes of thick smoke billowing from burning oil tanks along the northern entrance to the Suez Canal, illustrating the destructive physical impact of the invasion before international pressure forced a ceasefire. **Hinge Question:** How does aerial reconnaissance evidence challenge British claims that the Suez operation was a minimal, bloodless police action?",
+              "context": "Aerial reconnaissance photograph taken by the RAF showing oil storage facilities burning at the entrance to the Suez Canal at Port Said in November 1956.",
+              "question_badge": "Source Utility",
+              "question_type": "Source Utility",
+              "enquiry_question": "How useful is Source D for an enquiry into the military impact of the Anglo-French assault on Egypt in November 1956?",
+              "model_answer": "Source D is very useful because its clear aerial view provides authentic evidence of the heavy physical destruction inflicted on Egypt's port infrastructure, directly demonstrating the intensity of the allied bombing campaign along the canal.",
               "provenance_clues": {
-                "author": "Joint allied military planning staff.",
-                "audience": "Operational task force commanders and naval headquarters.",
-                "motive": "To coordinate synchronized air, amphibious, and armored maneuvers across Egypt.",
-                "hinge_question": "How does the synchronized coordination between Israeli and British forces on this map expose the secret Sèvres collusion?"
+                "author": "British Royal Air Force aerial reconnaissance photographer.",
+                "audience": "Allied operational commanders evaluating the effectiveness of pre-landing air strikes.",
+                "motive": "To record physical damage to Egyptian oil installations and verify the neutralization of canal defenses.",
+                "hinge_question": "How does aerial reconnaissance evidence challenge British claims that the Suez operation was a minimal, bloodless police action?"
               },
               "teacher_notes": {
-                "source_context": "The map illustrates the tripartite campaign against Egypt. Israel captured the entire Sinai Peninsula in eight days, while British and French bombers destroyed the Egyptian air force and landed paratroopers in Port Said. The invasion ended when the United Nations deployed UNEF peacekeepers and forced total Anglo-French withdrawal. **Hinge Question:** How does the synchronized coordination between Israeli and British forces on this map expose the secret Sèvres collusion?"
+                "source_context": "During the Anglo-French assault on Port Said, allied air strikes targeted Egyptian coastal batteries, airfields, and port installations. This aerial photograph shows plumes of thick smoke billowing from burning oil tanks along the northern entrance to the Suez Canal, illustrating the destructive physical impact of the invasion before international pressure forced a ceasefire. **Hinge Question:** How does aerial reconnaissance evidence challenge British claims that the Suez operation was a minimal, bloodless police action?"
               }
             }
           ],
-          "image": "/images/cme_port_said_from_air.jpg",
-          "image_alt": "Aerial reconnaissance photograph of Port Said showing dense black smoke rising from burning oil storage tanks beside the Suez Canal following Anglo-French air strikes (5 November 1956)",
-          "caption": "Air Reconnaissance over Port Said (5 November 1956): British RAF reconnaissance plate capturing dense black smoke billowing from bombed oil storage installations along the canal entrance (IWM MH 23509).",
+          "image": "/images/cme_suez_1956_campaign_map.jpg",
+          "image_alt": "Military operational map of the 1956 Suez Campaign showing the Israeli advance across Sinai to Mitla Pass and Anglo-French landings at Port Said",
+          "caption": "The 1956 Suez Campaign (October–November 1956): Coordinated Israeli paratroop drops at Mitla Pass and armored advances across Sinai, synchronized with Anglo-French amphibious landings at Port Said.",
           "isReversed": true
         },
         {
@@ -4951,29 +4951,29 @@
         {
           "id": "cme_l4_source_d",
           "letter": "D",
-          "title": "Source D: Military Operational Map of the 1956 Suez Campaign",
-          "src": "/images/cme_suez_1956_campaign_map.jpg",
-          "image": "/images/cme_suez_1956_campaign_map.jpg",
-          "source": "/images/cme_suez_1956_campaign_map.jpg",
-          "caption": "Operational map tracing the Israeli paratrooper drop at Mitla Pass, IDF armored advances across Sinai, and Anglo-French sea landings at Port Said.",
-          "desc": "Operational theatre map showing the three-nation coordinated attack on Egypt.",
-          "provenance": "IDF Historical Branch / British Ministry of Defence Archives, 1956.",
-          "citation": "IDF Historical Archives / British MoD.",
+          "title": "Source D: British RAF Reconnaissance Photograph over Port Said (5 November 1956)",
+          "src": "/images/cme_port_said_from_air.jpg",
+          "image": "/images/cme_port_said_from_air.jpg",
+          "source": "/images/cme_port_said_from_air.jpg",
+          "caption": "British Royal Air Force aerial photograph capturing dense black smoke rising from burning oil storage tanks beside the Suez Canal entrance at Port Said following Anglo-French air strikes (IWM MH 23509).",
+          "desc": "Aerial reconnaissance photograph of Port Said harbour under air bombardment.",
+          "provenance": "Royal Air Force aerial photographic reconnaissance unit, Port Said, 5 November 1956 (Imperial War Museum MH 23509).",
+          "citation": "Imperial War Museum, Accession MH 23509.",
           "hinge_question": "How does the synchronized coordination between Israeli and British forces on this map expose the secret Sèvres collusion?",
-          "source_context": "The map illustrates the tripartite campaign against Egypt. Israel captured the entire Sinai Peninsula in eight days, while British and French bombers destroyed the Egyptian air force and landed paratroopers in Port Said. The invasion ended when the United Nations deployed UNEF peacekeepers and forced total Anglo-French withdrawal. **Hinge Question:** How does the synchronized coordination between Israeli and British forces on this map expose the secret Sèvres collusion?",
-          "context": "Operational map tracing the coordinated Israeli, British, and French military attacks against Egypt in 1956.",
-          "question_badge": "Cross-Referencing",
-          "question_type": "Cross-Referencing",
-          "enquiry_question": "How does Source D corroborate evidence that the British and French intervention was a pre-planned conspiracy with Israel rather than a genuine peacekeeping mission?",
-          "model_answer": "Source D shows that the British and French landings occurred precisely along the canal axis timed exactly to intercept retreating Egyptian forces, directly disproving Eden's claim of an impartial peacekeeping intervention between warring armies.",
+          "source_context": "During the Anglo-French assault on Port Said, allied air strikes targeted Egyptian coastal batteries, airfields, and port installations. This aerial photograph shows plumes of thick smoke billowing from burning oil tanks along the northern entrance to the Suez Canal, illustrating the destructive physical impact of the invasion before international pressure forced a ceasefire. **Hinge Question:** How does aerial reconnaissance evidence challenge British claims that the Suez operation was a minimal, bloodless police action?",
+          "context": "Aerial reconnaissance photograph taken by the RAF showing oil storage facilities burning at the entrance to the Suez Canal at Port Said in November 1956.",
+          "question_badge": "Source Utility",
+          "question_type": "Source Utility",
+          "enquiry_question": "How useful is Source D for an enquiry into the military impact of the Anglo-French assault on Egypt in November 1956?",
+          "model_answer": "Source D is very useful because its clear aerial view provides authentic evidence of the heavy physical destruction inflicted on Egypt's port infrastructure, directly demonstrating the intensity of the allied bombing campaign along the canal.",
           "provenance_clues": {
-            "author": "Joint allied military planning staff.",
-            "audience": "Operational task force commanders and naval headquarters.",
-            "motive": "To coordinate synchronized air, amphibious, and armored maneuvers across Egypt.",
-            "hinge_question": "How does the synchronized coordination between Israeli and British forces on this map expose the secret Sèvres collusion?"
+            "author": "British Royal Air Force aerial reconnaissance photographer.",
+            "audience": "Allied operational commanders evaluating the effectiveness of pre-landing air strikes.",
+            "motive": "To record physical damage to Egyptian oil installations and verify the neutralization of canal defenses.",
+            "hinge_question": "How does aerial reconnaissance evidence challenge British claims that the Suez operation was a minimal, bloodless police action?"
           },
           "teacher_notes": {
-            "source_context": "The map illustrates the tripartite campaign against Egypt. Israel captured the entire Sinai Peninsula in eight days, while British and French bombers destroyed the Egyptian air force and landed paratroopers in Port Said. The invasion ended when the United Nations deployed UNEF peacekeepers and forced total Anglo-French withdrawal. **Hinge Question:** How does the synchronized coordination between Israeli and British forces on this map expose the secret Sèvres collusion?"
+            "source_context": "During the Anglo-French assault on Port Said, allied air strikes targeted Egyptian coastal batteries, airfields, and port installations. This aerial photograph shows plumes of thick smoke billowing from burning oil tanks along the northern entrance to the Suez Canal, illustrating the destructive physical impact of the invasion before international pressure forced a ceasefire. **Hinge Question:** How does aerial reconnaissance evidence challenge British claims that the Suez operation was a minimal, bloodless police action?"
           }
         },
         {
@@ -5657,7 +5657,11 @@
                 "source_context": "Nasser projected Egypt as the leader of both the Arab world and the Third World. When Syrian leaders and Jordan accused him in 1966 of 'hiding behind UNEF' peacekeepers in Sinai while Syrians faced Israeli attacks, Nasser felt compelled to take aggressive actions in May 1967 to preserve his pan-Arab prestige. **Hinge Question:** How did Nasser's prestige as a global anti-imperialist leader trap him into escalatory rhetoric against Israel in May 1967?"
               }
             }
-          ]
+          ],
+          "image": "/images/cme_cairo_summit_1964.jpg",
+          "image_alt": "Arab heads of state meeting at the First Arab League Summit in Cairo in January 1964",
+          "caption": "The First Arab League Summit (Cairo, 1964): Convened by President Nasser to coordinate pan-Arab opposition to Israel's water diversion and establish the Palestine Liberation Organization (PLO).",
+          "isReversed": false
         },
         {
           "title": "The Dispute Over the River Jordan Waterways",
@@ -5673,36 +5677,36 @@
             {
               "id": "cme_l5_source_b",
               "letter": "B",
-              "title": "Source B: Israel's National Water Carrier Schematic Map (1964)",
-              "src": "/images/israel_national_water_carrier_1964_map.png",
-              "image": "/images/israel_national_water_carrier_1964_map.png",
-              "source": "/images/israel_national_water_carrier_1964_map.png",
-              "caption": "Engineering map of Israel's National Water Carrier pipeline network, pumping fresh water from the Sea of Galilee across the coastal plain down to the arid Negev Desert.",
-              "desc": "Technical cartographic diagram of Israel's trans-national water diversion project.",
-              "provenance": "Mekorot Water Company Archives, Tel Aviv, 1964.",
-              "citation": "Mekorot Archives, Tel Aviv.",
+              "title": "Source B: Causal Diagram of Syrian-Sponsored Fatah Infiltration & Israeli Reprisals (1965–1967)",
+              "src": "/units/cme_new/assets/syria_fatah.svg",
+              "image": "/units/cme_new/assets/syria_fatah.svg",
+              "source": "/units/cme_new/assets/syria_fatah.svg",
+              "caption": "Flowchart diagram illustrating the cycle of Syrian-backed Fatah guerrilla raids across the armistice border and the escalating Israeli military retaliation culminating in the Samu raid.",
+              "desc": "Causal flow diagram illustrating cross-border friction between Syria, Fatah, Jordan, and Israel.",
+              "provenance": "Department of History Curriculum Analysis, Edexcel Paper 2 Reference Architecture.",
+              "citation": "Curriculum Study Archive.",
               "hinge_question": "Why did Arab states perceive Israel's water diversion to the Negev as an existential economic and military threat?",
-              "source_context": "Completed in 1964, the National Water Carrier diverted water from Lake Kinneret (Sea of Galilee) to enable agriculture and settlement growth in the southern desert. Arab states viewed this as an illegal appropriation of international waters designed to facilitate massive Jewish immigration and expand Israel's demographic strength. **Hinge Question:** Why did Arab states perceive Israel's water diversion to the Negev as an existential economic and military threat?",
-              "context": "In 1964, Israel completed the National Water Carrier, pumping water from Lake Kinneret to the Negev.",
-              "question_badge": "Historical Utility",
-              "question_type": "Historical Utility",
-              "enquiry_question": "How useful is Source B for an inquiry into the root causes of the rising border tensions between Israel and its Arab neighbours between 1964 and 1967?",
-              "model_answer": "Source B is exceptionally useful because it illustrates the hydraulic geography of the conflict, proving that competition over scarce water resources was just as decisive in triggering military confrontation as political ideology and border skirmishes.",
+              "source_context": "From 1965, the newly formed Palestinian militant faction Fatah launched armed sabotage operations against Israeli infrastructure with military backing and weapons from Syria's radical Ba'athist regime. In response, Israel carried out heavy retaliatory strikes, including the November 1966 raid on Samu in the Jordanian West Bank, escalating regional border friction to the brink of war. **Hinge Question:** Why did Syria's sponsorship of cross-border guerrilla raids pull Egypt and Jordan into direct military conflict with Israel?",
+              "context": "Flowchart tracing the chain of causal escalation from Syrian-backed Fatah raids to Israeli reprisals on Samu.",
+              "question_badge": "Causation",
+              "question_type": "Causation",
+              "enquiry_question": "Explain one way in which Source B illustrates the chain of military escalation that made a wider war in 1967 difficult to avoid.",
+              "model_answer": "Source B demonstrates that Syrian-backed guerrilla attacks created a destructive cycle of Israeli military counter-attacks, which ultimately targeted Jordanian territory at Samu and shattered trust between neighboring Arab states and Israel.",
               "provenance_clues": {
-                "author": "Mekorot civil engineers and Israeli water planning authority.",
-                "audience": "Israeli government ministries, agricultural kibbutz planners, and international engineers.",
-                "motive": "To document the completion of the country's most vital economic infrastructure project.",
-                "hinge_question": "Why did Arab states perceive Israel's water diversion to the Negev as an existential economic and military threat?"
+                "author": "Historical analysis diagram.",
+                "audience": "Students and educators analyzing cross-border military escalation.",
+                "motive": "To break down the sequential cycle of raids and reprisals leading to the 1967 war.",
+                "hinge_question": "Why did Syria's sponsorship of cross-border guerrilla raids pull Egypt and Jordan into direct military conflict with Israel?"
               },
               "teacher_notes": {
-                "source_context": "Completed in 1964, the National Water Carrier diverted water from Lake Kinneret (Sea of Galilee) to enable agriculture and settlement growth in the southern desert. Arab states viewed this as an illegal appropriation of international waters designed to facilitate massive Jewish immigration and expand Israel's demographic strength. **Hinge Question:** Why did Arab states perceive Israel's water diversion to the Negev as an existential economic and military threat?"
+                "source_context": "From 1965, the newly formed Palestinian militant faction Fatah launched armed sabotage operations against Israeli infrastructure with military backing and weapons from Syria's radical Ba'athist regime. In response, Israel carried out heavy retaliatory strikes, including the November 1966 raid on Samu in the Jordanian West Bank, escalating regional border friction to the brink of war. **Hinge Question:** Why did Syria's sponsorship of cross-border guerrilla raids pull Egypt and Jordan into direct military conflict with Israel?"
               }
             }
           ],
-          "image": "/images/cme_cairo_summit_1964.jpg",
-          "image_alt": "Arab League leaders assembled at the First Arab Summit Conference in Cairo, January 1964",
-          "caption": "The First Arab League Summit (Cairo, 1964): Convened by President Nasser to coordinate pan-Arab resistance against Israel's National Water Carrier diversion.",
-          "isReversed": false
+          "image": "/images/israel_national_water_carrier_1964_map.png",
+          "image_alt": "Map of Israel's National Water Carrier running from the Sea of Galilee south to the Negev Desert",
+          "caption": "Israel's National Water Carrier (1964): Engineering pipeline pumping fresh water from the Sea of Galilee (Lake Kinneret) to irrigate the southern Negev desert, triggering Arab attempts to divert the Jordan headwaters.",
+          "isReversed": true
         },
         {
           "title": "Syrian Support for Fatah Border Raids",
@@ -5759,36 +5763,32 @@
             {
               "id": "cme_l5_source_d",
               "letter": "D",
-              "title": "Source D: The Arab Headwaters Diversion Plan Schematic (1964–1966)",
-              "src": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
-              "image": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
-              "source": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
-              "caption": "Schematic flow chart illustrating the Arab League plan to divert the Hasbani and Banyas tributaries away from the Jordan River basin into the Yarmouk River in Jordan.",
-              "desc": "Cartographic flow diagram of the disputed Jordan River headwaters.",
-              "provenance": "Arab League Permanent Military Committee, Cairo, 1965.",
-              "citation": "Arab League Archives, Cairo.",
+              "title": "Source D: Archival Photograph of the Disputed Banyas Spring Headwaters (1967)",
+              "src": "/units/cme_new/assets/cme_banias_spring_headwaters_1967.jpg",
+              "image": "/units/cme_new/assets/cme_banias_spring_headwaters_1967.jpg",
+              "source": "/units/cme_new/assets/cme_banias_spring_headwaters_1967.jpg",
+              "caption": "Archival view of the Banyas freshwater springs in the Golan foothills, one of three major Jordan River tributaries targeted by Syria's headwaters diversion project.",
+              "desc": "Archival photograph of the freshwater tributaries feeding the upper Jordan River.",
+              "provenance": "Israel Government Press Office (GPO) Photographic Archive, 1967.",
+              "citation": "Israel GPO Archive, Accession GPO-1967-BANIAS.",
               "hinge_question": "Why did Israel treat the Arab headwaters diversion project as a legitimate casus belli (act of war)?",
-              "source_context": "In response to Israel's National Water Carrier, the Arab League resolved to divert the Banyas and Hasbani rivers to cut Israel's water supply by 35%. Between 1965 and 1966, Israeli tanks and aircraft repeatedly bombed the Syrian engineering construction sites, completely halting the diversion. **Hinge Question:** Why did Israel treat the Arab headwaters diversion project as a legitimate casus belli (act of war)?",
-              "context": "The Arab League initiated a diversion project on the Banyas and Hasbani rivers, which Israel destroyed via airstrikes.",
+              "source_context": "In response to Israel's National Water Carrier, Syria and the Arab League attempted to divert the Banyas and Hasbani rivers to stop water entering the Sea of Galilee. Israel viewed this diversion as a direct threat to its national survival and used artillery and air strikes to destroy the Syrian construction equipment, creating chronic border tension that contributed directly to the Six-Day War. **Hinge Question:** Why was freshwater control in the Jordan River basin treated as a matter of national survival rather than an ordinary border dispute?",
+              "context": "Archival photograph of the Banyas springs in the Golan foothills, which Syria attempted to divert away from Israel's water supply between 1964 and 1966.",
               "question_badge": "Cross-Referencing",
               "question_type": "Cross-Referencing",
-              "enquiry_question": "How does Source D cross-reference with Source D to explain why border clashes escalated into air combat over Damascus by April 1967?",
-              "model_answer": "Source D demonstrates that Arab states attempted to physically cut off the water supply feeding the carrier in Source D, prompting Israel to retaliate with decisive military strikes that directly destroyed Syrian engineering machinery and set the stage for open war.",
+              "enquiry_question": "How does Source D cross-reference with Source B to explain why border clashes over water escalated into open conflict by 1967?",
+              "model_answer": "Source D shows the natural freshwater springs that directly fed the National Water Carrier shown in Source B, explaining why Israeli leaders considered Syria's diversion scheme an intolerable threat to their country's vital water supply and used air strikes to destroy it.",
               "provenance_clues": {
-                "author": "Arab League water resources and military advisory commission.",
-                "audience": "Heads of Arab states and military chiefs of staff.",
-                "motive": "To devise a non-military strategy to neutralize Israel's agricultural expansion by choking its primary water supply.",
-                "hinge_question": "Why did Israel treat the Arab headwaters diversion project as a legitimate casus belli (act of war)?"
+                "author": "Israeli official archival photographer.",
+                "audience": "The public and historical record documenting key geographic resources in the northern border zone.",
+                "motive": "To document the disputed freshwater headwaters at the foot of the Syrian Golan Heights.",
+                "hinge_question": "Why was freshwater control in the Jordan River basin treated as a matter of national survival rather than an ordinary border dispute?"
               },
               "teacher_notes": {
-                "source_context": "In response to Israel's National Water Carrier, the Arab League resolved to divert the Banyas and Hasbani rivers to cut Israel's water supply by 35%. Between 1965 and 1966, Israeli tanks and aircraft repeatedly bombed the Syrian engineering construction sites, completely halting the diversion. **Hinge Question:** Why did Israel treat the Arab headwaters diversion project as a legitimate casus belli (act of war)?"
+                "source_context": "In response to Israel's National Water Carrier, Syria and the Arab League attempted to divert the Banyas and Hasbani rivers to stop water entering the Sea of Galilee. Israel viewed this diversion as a direct threat to its national survival and used artillery and air strikes to destroy the Syrian construction equipment, creating chronic border tension that contributed directly to the Six-Day War. **Hinge Question:** Why was freshwater control in the Jordan River basin treated as a matter of national survival rather than an ordinary border dispute?"
               }
             }
-          ],
-          "image": "/images/cme_sinai_peninsula_map.jpg",
-          "image_alt": "Topographical overview map of the Sinai Peninsula showing the Straits of Tiran, Sharm el-Sheikh, and Israeli maritime corridors",
-          "caption": "Strategic Geography of Sinai: The narrow Straits of Tiran at Sharm el-Sheikh represented Israel's vital maritime lifeline to the Red Sea and Asia.",
-          "isReversed": true
+          ]
         },
         {
           "title": "The Aerial Battle of 7 April 1967",
@@ -5864,29 +5864,29 @@
         {
           "id": "cme_l5_source_b",
           "letter": "B",
-          "title": "Source B: Israel's National Water Carrier Schematic Map (1964)",
-          "src": "/images/israel_national_water_carrier_1964_map.png",
-          "image": "/images/israel_national_water_carrier_1964_map.png",
-          "source": "/images/israel_national_water_carrier_1964_map.png",
-          "caption": "Engineering map of Israel's National Water Carrier pipeline network, pumping fresh water from the Sea of Galilee across the coastal plain down to the arid Negev Desert.",
-          "desc": "Technical cartographic diagram of Israel's trans-national water diversion project.",
-          "provenance": "Mekorot Water Company Archives, Tel Aviv, 1964.",
-          "citation": "Mekorot Archives, Tel Aviv.",
+          "title": "Source B: Causal Diagram of Syrian-Sponsored Fatah Infiltration & Israeli Reprisals (1965–1967)",
+          "src": "/units/cme_new/assets/syria_fatah.svg",
+          "image": "/units/cme_new/assets/syria_fatah.svg",
+          "source": "/units/cme_new/assets/syria_fatah.svg",
+          "caption": "Flowchart diagram illustrating the cycle of Syrian-backed Fatah guerrilla raids across the armistice border and the escalating Israeli military retaliation culminating in the Samu raid.",
+          "desc": "Causal flow diagram illustrating cross-border friction between Syria, Fatah, Jordan, and Israel.",
+          "provenance": "Department of History Curriculum Analysis, Edexcel Paper 2 Reference Architecture.",
+          "citation": "Curriculum Study Archive.",
           "hinge_question": "Why did Arab states perceive Israel's water diversion to the Negev as an existential economic and military threat?",
-          "source_context": "Completed in 1964, the National Water Carrier diverted water from Lake Kinneret (Sea of Galilee) to enable agriculture and settlement growth in the southern desert. Arab states viewed this as an illegal appropriation of international waters designed to facilitate massive Jewish immigration and expand Israel's demographic strength. **Hinge Question:** Why did Arab states perceive Israel's water diversion to the Negev as an existential economic and military threat?",
-          "context": "In 1964, Israel completed the National Water Carrier, pumping water from Lake Kinneret to the Negev.",
-          "question_badge": "Historical Utility",
-          "question_type": "Historical Utility",
-          "enquiry_question": "How useful is Source B for an inquiry into the root causes of the rising border tensions between Israel and its Arab neighbours between 1964 and 1967?",
-          "model_answer": "Source B is exceptionally useful because it illustrates the hydraulic geography of the conflict, proving that competition over scarce water resources was just as decisive in triggering military confrontation as political ideology and border skirmishes.",
+          "source_context": "From 1965, the newly formed Palestinian militant faction Fatah launched armed sabotage operations against Israeli infrastructure with military backing and weapons from Syria's radical Ba'athist regime. In response, Israel carried out heavy retaliatory strikes, including the November 1966 raid on Samu in the Jordanian West Bank, escalating regional border friction to the brink of war. **Hinge Question:** Why did Syria's sponsorship of cross-border guerrilla raids pull Egypt and Jordan into direct military conflict with Israel?",
+          "context": "Flowchart tracing the chain of causal escalation from Syrian-backed Fatah raids to Israeli reprisals on Samu.",
+          "question_badge": "Causation",
+          "question_type": "Causation",
+          "enquiry_question": "Explain one way in which Source B illustrates the chain of military escalation that made a wider war in 1967 difficult to avoid.",
+          "model_answer": "Source B demonstrates that Syrian-backed guerrilla attacks created a destructive cycle of Israeli military counter-attacks, which ultimately targeted Jordanian territory at Samu and shattered trust between neighboring Arab states and Israel.",
           "provenance_clues": {
-            "author": "Mekorot civil engineers and Israeli water planning authority.",
-            "audience": "Israeli government ministries, agricultural kibbutz planners, and international engineers.",
-            "motive": "To document the completion of the country's most vital economic infrastructure project.",
-            "hinge_question": "Why did Arab states perceive Israel's water diversion to the Negev as an existential economic and military threat?"
+            "author": "Historical analysis diagram.",
+            "audience": "Students and educators analyzing cross-border military escalation.",
+            "motive": "To break down the sequential cycle of raids and reprisals leading to the 1967 war.",
+            "hinge_question": "Why did Syria's sponsorship of cross-border guerrilla raids pull Egypt and Jordan into direct military conflict with Israel?"
           },
           "teacher_notes": {
-            "source_context": "Completed in 1964, the National Water Carrier diverted water from Lake Kinneret (Sea of Galilee) to enable agriculture and settlement growth in the southern desert. Arab states viewed this as an illegal appropriation of international waters designed to facilitate massive Jewish immigration and expand Israel's demographic strength. **Hinge Question:** Why did Arab states perceive Israel's water diversion to the Negev as an existential economic and military threat?"
+            "source_context": "From 1965, the newly formed Palestinian militant faction Fatah launched armed sabotage operations against Israeli infrastructure with military backing and weapons from Syria's radical Ba'athist regime. In response, Israel carried out heavy retaliatory strikes, including the November 1966 raid on Samu in the Jordanian West Bank, escalating regional border friction to the brink of war. **Hinge Question:** Why did Syria's sponsorship of cross-border guerrilla raids pull Egypt and Jordan into direct military conflict with Israel?"
           }
         },
         {
@@ -5920,29 +5920,29 @@
         {
           "id": "cme_l5_source_d",
           "letter": "D",
-          "title": "Source D: The Arab Headwaters Diversion Plan Schematic (1964–1966)",
-          "src": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
-          "image": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
-          "source": "/units/cme_new/assets/israel_national_water_carrier_1964_map.svg",
-          "caption": "Schematic flow chart illustrating the Arab League plan to divert the Hasbani and Banyas tributaries away from the Jordan River basin into the Yarmouk River in Jordan.",
-          "desc": "Cartographic flow diagram of the disputed Jordan River headwaters.",
-          "provenance": "Arab League Permanent Military Committee, Cairo, 1965.",
-          "citation": "Arab League Archives, Cairo.",
+          "title": "Source D: Archival Photograph of the Disputed Banyas Spring Headwaters (1967)",
+          "src": "/units/cme_new/assets/cme_banias_spring_headwaters_1967.jpg",
+          "image": "/units/cme_new/assets/cme_banias_spring_headwaters_1967.jpg",
+          "source": "/units/cme_new/assets/cme_banias_spring_headwaters_1967.jpg",
+          "caption": "Archival view of the Banyas freshwater springs in the Golan foothills, one of three major Jordan River tributaries targeted by Syria's headwaters diversion project.",
+          "desc": "Archival photograph of the freshwater tributaries feeding the upper Jordan River.",
+          "provenance": "Israel Government Press Office (GPO) Photographic Archive, 1967.",
+          "citation": "Israel GPO Archive, Accession GPO-1967-BANIAS.",
           "hinge_question": "Why did Israel treat the Arab headwaters diversion project as a legitimate casus belli (act of war)?",
-          "source_context": "In response to Israel's National Water Carrier, the Arab League resolved to divert the Banyas and Hasbani rivers to cut Israel's water supply by 35%. Between 1965 and 1966, Israeli tanks and aircraft repeatedly bombed the Syrian engineering construction sites, completely halting the diversion. **Hinge Question:** Why did Israel treat the Arab headwaters diversion project as a legitimate casus belli (act of war)?",
-          "context": "The Arab League initiated a diversion project on the Banyas and Hasbani rivers, which Israel destroyed via airstrikes.",
+          "source_context": "In response to Israel's National Water Carrier, Syria and the Arab League attempted to divert the Banyas and Hasbani rivers to stop water entering the Sea of Galilee. Israel viewed this diversion as a direct threat to its national survival and used artillery and air strikes to destroy the Syrian construction equipment, creating chronic border tension that contributed directly to the Six-Day War. **Hinge Question:** Why was freshwater control in the Jordan River basin treated as a matter of national survival rather than an ordinary border dispute?",
+          "context": "Archival photograph of the Banyas springs in the Golan foothills, which Syria attempted to divert away from Israel's water supply between 1964 and 1966.",
           "question_badge": "Cross-Referencing",
           "question_type": "Cross-Referencing",
-          "enquiry_question": "How does Source D cross-reference with Source D to explain why border clashes escalated into air combat over Damascus by April 1967?",
-          "model_answer": "Source D demonstrates that Arab states attempted to physically cut off the water supply feeding the carrier in Source D, prompting Israel to retaliate with decisive military strikes that directly destroyed Syrian engineering machinery and set the stage for open war.",
+          "enquiry_question": "How does Source D cross-reference with Source B to explain why border clashes over water escalated into open conflict by 1967?",
+          "model_answer": "Source D shows the natural freshwater springs that directly fed the National Water Carrier shown in Source B, explaining why Israeli leaders considered Syria's diversion scheme an intolerable threat to their country's vital water supply and used air strikes to destroy it.",
           "provenance_clues": {
-            "author": "Arab League water resources and military advisory commission.",
-            "audience": "Heads of Arab states and military chiefs of staff.",
-            "motive": "To devise a non-military strategy to neutralize Israel's agricultural expansion by choking its primary water supply.",
-            "hinge_question": "Why did Israel treat the Arab headwaters diversion project as a legitimate casus belli (act of war)?"
+            "author": "Israeli official archival photographer.",
+            "audience": "The public and historical record documenting key geographic resources in the northern border zone.",
+            "motive": "To document the disputed freshwater headwaters at the foot of the Syrian Golan Heights.",
+            "hinge_question": "Why was freshwater control in the Jordan River basin treated as a matter of national survival rather than an ordinary border dispute?"
           },
           "teacher_notes": {
-            "source_context": "In response to Israel's National Water Carrier, the Arab League resolved to divert the Banyas and Hasbani rivers to cut Israel's water supply by 35%. Between 1965 and 1966, Israeli tanks and aircraft repeatedly bombed the Syrian engineering construction sites, completely halting the diversion. **Hinge Question:** Why did Israel treat the Arab headwaters diversion project as a legitimate casus belli (act of war)?"
+            "source_context": "In response to Israel's National Water Carrier, Syria and the Arab League attempted to divert the Banyas and Hasbani rivers to stop water entering the Sea of Galilee. Israel viewed this diversion as a direct threat to its national survival and used artillery and air strikes to destroy the Syrian construction equipment, creating chronic border tension that contributed directly to the Six-Day War. **Hinge Question:** Why was freshwater control in the Jordan River basin treated as a matter of national survival rather than an ordinary border dispute?"
           }
         },
         {
@@ -7809,9 +7809,9 @@
               }
             }
           ],
-          "image": "/units/cme_new/assets/map_lesson4.png",
-          "image_alt": "Map showing strategic early Jewish settlement outposts established in the Jordan Valley under the Allon Plan framework",
-          "caption": "Settlement Geography: The inception of ideological and strategic Israeli settlements across the West Bank and Golan Heights to secure permanent border buffers.",
+          "image": "/units/cme_new/assets/cme_bar_lev_line_fortifications_1970.jpg",
+          "image_alt": "Archival photograph of Israeli soldiers manning fortified bunkers and high sand ramparts along the Bar-Lev Line on the Suez Canal in 1970",
+          "caption": "The Bar-Lev Line on the Suez Canal (c. 1970): Israeli troops manning the massive chain of fortified sand ramparts and concrete bunkers constructed along the canal's eastern bank to defend the occupied Sinai Peninsula.",
           "isReversed": true
         },
         {
@@ -9758,9 +9758,9 @@
               }
             }
           ],
-          "image": "/images/cme_yom_kippur_1973_map.png",
-          "image_alt": "Operational theatre map showing the coordinated Egyptian assault across the Suez Canal and Syrian push on the Golan Heights on 6 October 1973",
-          "caption": "The Yom Kippur Surprise Attack (6 October 1973): Egyptian and Syrian forces shattered Israeli defensive lines during the holiest day in Judaism.",
+          "image": "/units/cme_new/assets/yom_kippur_crossing.png",
+          "image_alt": "Egyptian infantry crossing the Suez Canal on assault boats and pontoon bridges during Operation Badr in October 1973",
+          "caption": "Operation Badr (October 1973): Egyptian assault troops breaching the Bar-Lev Line with high-pressure water cannons and crossing the Suez Canal under cover of surface-to-air missile umbrellas.",
           "isReversed": false
         },
         {
@@ -9844,9 +9844,9 @@
               }
             }
           ],
-          "image": "/images/cme_yom_kippur_golan_1973_map.jpg",
-          "image_alt": "Battle map of the Syrian armoured offensive across the Golan Heights and the Israeli 7th Armoured Brigade defense in the Valley of Tears",
-          "caption": "The Battle of the Golan (October 1973): Outnumbered Israeli Centurion crews repelled over 800 Syrian T-55 and T-62 tanks before launching a counter-thrust toward Damascus.",
+          "image": "/images/cme_yom_kippur_1973_map.png",
+          "image_alt": "Tactical campaign map of the 1973 Yom Kippur War showing simultaneous attacks across the Suez Canal and on the Golan Heights",
+          "caption": "The Two-Front Surprise Assault (October 1973): Operational map illustrating the coordinated Egyptian assault across the Suez Canal in the south and the massive Syrian armored offensive on the Golan Heights in the north.",
           "isReversed": true
         },
         {
@@ -12516,8 +12516,8 @@
             }
           ],
           "image": "/images/cme_operation_litani_1978_map.jpg",
-          "image_alt": "Military map depicting Operation Litani, the Israeli invasion of southern Lebanon up to the Litani River in March 1978",
-          "caption": "Operation Litani (March 1978): The IDF invaded southern Lebanon to eliminate PLO cross-border rocket launch sites and establish a Christian militia buffer zone.",
+          "image_alt": "Map of Operation Litani in March 1978 showing the Israeli invasion of southern Lebanon up to the Litani River",
+          "caption": "Operation Litani (March 1978): Tactical map of the IDF military offensive across southern Lebanon to push PLO fedayeen north of the Litani River, creating the UNIFIL buffer zone.",
           "isReversed": false
         },
         {
@@ -12600,9 +12600,9 @@
               }
             }
           ],
-          "image": "/images/cme_unifil_lebanon_map.jpg",
-          "image_alt": "United Nations map showing the UNIFIL peacekeeping deployment area along the Lebanese-Israeli border established by UN Resolution 425",
-          "caption": "UNIFIL Buffer Zone (1978): United Nations peacekeepers deployed along the southern Lebanese border following the withdrawal of Israeli forces.",
+          "image": "/units/cme_new/assets/cme_rabin_gaza_1987.jpg",
+          "image_alt": "Israeli Defense Minister Yitzhak Rabin visiting IDF patrols in the Gaza Strip during the First Intifada in December 1987",
+          "caption": "Defense Minister Yitzhak Rabin in Gaza (December 1987): Inspecting Israeli military patrols during the outbreak of the First Intifada, where the IDF implemented the controversial 'force, might, and beatings' policy.",
           "isReversed": true
         },
         {
