@@ -12,7 +12,8 @@
  *      great_war, great_war_part2, industrialisation_and_empire, first_british_empire,
  *      second_british_empire, post_war_britain, water_and_sanitation, australia, ks2_ww2)
  *      must have lesson.tasks populated on 100% of lessons.
- *   3. Exits with code 1 if any lesson lacks workbook tasks or exam practice.
+ *   3. Zero Intra-Lesson Narrative Duplication across all 18 units (no copy-pasted blocks).
+ *   4. Exits with code 1 if any lesson lacks workbook tasks or contains duplicate text.
  */
 
 const fs = require('fs');
@@ -60,7 +61,7 @@ console.log('🛡️  WORKBOOK-TO-APP PARITY & TASK UNIFORMITY LINTER');
 console.log('====================================================\n');
 
 // 1. Audit GCSE Units
-console.log('--- [1/2] AUDITING GCSE UNITS (Paper 1, 2 & 3) ---');
+console.log('--- [1/3] AUDITING GCSE UNITS (Paper 1, 2 & 3) ---');
 for (const unitId of gcseUnits) {
   let unit = db[unitId];
   if (!unit) {
@@ -88,7 +89,7 @@ for (const unitId of gcseUnits) {
 }
 
 // 2. Audit KS3 & Depth Units
-console.log('\n--- [2/2] AUDITING KS3 & DEPTH UNITS ---');
+console.log('\n--- [2/3] AUDITING KS3 & DEPTH UNITS ---');
 for (const unitId of ks3AndDepthUnits) {
   let unit = db[unitId];
   if (!unit) {
@@ -116,6 +117,49 @@ for (const unitId of ks3AndDepthUnits) {
   }
 }
 
+// 3. Audit Zero Intra-Lesson Narrative Duplication Across All Units
+console.log('\n--- [3/3] AUDITING ZERO INTRA-LESSON NARRATIVE DUPLICATION ---');
+const allUnitIds = [...gcseUnits, ...ks3AndDepthUnits];
+let narrativeDuplicateViolations = 0;
+
+for (const unitId of allUnitIds) {
+  let unit = db[unitId];
+  if (!unit) continue;
+  if (unit.data) unit = unit.data;
+  const lessons = unit.lessons || unit.subtopics || [];
+
+  lessons.forEach((lesson, lIdx) => {
+    const blocks = lesson.narrative_blocks || [];
+    const seenTexts = new Map();
+
+    blocks.forEach((block, bIdx) => {
+      const rawText = (block.text || (block.paragraphs ? block.paragraphs.join(' ') : '')).trim();
+      if (!rawText) return;
+
+      const normText = rawText
+        .replace(/<span[^>]*class="para-ref"[^>]*>.*?<\/span>/gi, '')
+        .replace(/\[\d+\.\d+\]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      for (const [prevIdx, prevText] of seenTexts.entries()) {
+        if (normText === prevText || (normText.length > 150 && prevText.includes(normText.substring(0, 150)))) {
+          console.log(`  ❌ [${unitId}] Lesson ${lIdx + 1} (${lesson.id || 'no-id'}): Block ${bIdx + 1} duplicates Block ${prevIdx + 1}!`);
+          console.log(`     Snippet: "${normText.substring(0, 100)}..."`);
+          narrativeDuplicateViolations++;
+          totalViolations++;
+        }
+      }
+
+      seenTexts.set(bIdx, normText);
+    });
+  });
+}
+
+if (narrativeDuplicateViolations === 0) {
+  console.log(`  ✅ All 18 units: 100% Unique Narratives (0 duplicate blocks detected)`);
+}
+
 console.log('\n====================================================');
 console.log(`📊 AUDIT SUMMARY: Inspected ${totalLessonsAudited} lessons across ${gcseUnits.length + ks3AndDepthUnits.length} units.`);
 if (totalViolations === 0) {
@@ -123,7 +167,7 @@ if (totalViolations === 0) {
   console.log('====================================================\n');
   process.exit(0);
 } else {
-  console.error(`❌ AUDIT FAILED: ${totalViolations} parity violation(s) detected. Build blocked.`);
+  console.error(`❌ AUDIT FAILED: ${totalViolations} parity / narrative violation(s) detected. Build blocked.`);
   console.log('====================================================\n');
   process.exit(1);
 }

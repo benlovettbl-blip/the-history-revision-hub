@@ -79,3 +79,4 @@ if (anyMissing || totalLessonsWithMocksAllUnits !== totalLessonsAllUnits) {
 } else {
   console.log('\n✅ 100% COMPLETE: EVERY SINGLE GCSE LESSON ACROSS ALL 5 UNITS HAS DEDICATED MOCK PRACTICE!');
 }
+

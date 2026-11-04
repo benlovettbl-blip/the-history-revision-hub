@@ -2541,6 +2541,134 @@ function renderLessonVideos(videos, lesson, unitId) {
   `;
 }
 
+export function extractLearningObjectivesData(lesson) {
+  if (!lesson) return null;
+
+  // 1. Direct pupil-facing learning_objectives property
+  if (lesson.learning_objectives) {
+    const cleanTitle = (lesson.title || '').replace(/^Lesson\s*\d+:\s*/i, '').trim();
+    const rawOverarching =
+      !Array.isArray(lesson.learning_objectives) && lesson.learning_objectives.overarching
+        ? lesson.learning_objectives.overarching.trim()
+        : '';
+    const overarching = rawOverarching && rawOverarching !== cleanTitle ? rawOverarching : '';
+
+    let scaffolded = [];
+    if (Array.isArray(lesson.learning_objectives)) {
+      scaffolded = lesson.learning_objectives;
+    } else if (Array.isArray(lesson.learning_objectives.scaffolded)) {
+      scaffolded = lesson.learning_objectives.scaffolded;
+    }
+
+    if (scaffolded.length > 0 || overarching) {
+      return {
+        overarching,
+        scaffolded,
+      };
+    }
+  }
+
+  // 2. Structured fallback to teacher_notes.objectives across all key stages
+  if (
+    lesson.teacher_notes &&
+    Array.isArray(lesson.teacher_notes.objectives) &&
+    lesson.teacher_notes.objectives.length > 0
+  ) {
+    const scaffolded = lesson.teacher_notes.objectives
+      .map((item) => {
+        if (!item) return '';
+        if (typeof item === 'string') return item.trim();
+        return (item.objective || item.desc || item.title || '').trim();
+      })
+      .filter(Boolean);
+
+    if (scaffolded.length > 0) {
+      return {
+        overarching: '',
+        scaffolded,
+      };
+    }
+  }
+
+  return null;
+}
+
+export function renderLearningObjectivesSidebarHTML(objectivesData) {
+  if (!objectivesData) return '';
+  const { overarching, scaffolded } = objectivesData;
+  return `
+    <div class="donow-objectives-sidebar">
+      <div class="donow-objectives-card">
+        <div class="donow-objectives-header">
+          <div class="donow-objectives-eyebrow">
+            <i class="fa-solid fa-compass" style="color: #059669;"></i>
+            <span>Today's Enquiry Direction</span>
+          </div>
+          <h4 class="donow-objectives-title">
+            <i class="fa-solid fa-bullseye" style="color: #10b981;"></i>
+            <span>Learning Objectives</span>
+          </h4>
+        </div>
+        ${overarching ? `
+          <div class="donow-objectives-overarching">
+            ${overarching}
+          </div>
+        ` : ''}
+        <ul class="donow-objectives-list">
+          ${scaffolded.map((obj) => `
+            <li class="donow-objectives-item">
+              <span class="donow-obj-bullet"></span>
+              <span class="donow-obj-text">${obj}</span>
+            </li>
+          `).join('')}
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+export function renderLearningObjectivesPanelHTML(objectivesData, lesson) {
+  if (!objectivesData) return '';
+  const { overarching, scaffolded } = objectivesData;
+  const enquiryPrompt = lesson && (lesson.enquiry || lesson.enquiry_question || lesson.title) ? (lesson.enquiry || lesson.enquiry_question || lesson.title) : '';
+  return `
+    <div class="launchpad-objectives-panel-content" style="padding: 16px 20px; background: #ffffff;">
+      <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 8px; background: #ecfdf5; border: 1px solid #a7f3d0; color: #059669;">
+            <i class="fa-solid fa-bullseye" style="font-size: 1.1rem;"></i>
+          </span>
+          <div>
+            <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.6px; color: #059669;">Curriculum Focus &amp; Goals</div>
+            <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #0f172a;">Learning Objectives &amp; Enquiry Direction</h3>
+          </div>
+        </div>
+        <span style="font-size: 0.75rem; font-weight: 700; color: #059669; background: #ecfdf5; border: 1px solid #a7f3d0; padding: 4px 11px; border-radius: 12px; display: inline-flex; align-items: center; gap: 5px;">
+          <i class="fa-solid fa-check-double"></i> ${scaffolded.length} Target Milestones
+        </span>
+      </div>
+      ${enquiryPrompt ? `
+        <div style="margin-bottom: 14px; padding: 10px 14px; background: #f0fdf4; border-left: 3.5px solid #10b981; border-radius: 4px; font-size: 0.95rem; font-weight: 700; color: #065f46;">
+          <i class="fa-solid fa-circle-question" style="margin-right: 6px; color: #059669;"></i> ${enquiryPrompt}
+        </div>
+      ` : ''}
+      ${overarching ? `
+        <p style="font-size: 1.02rem; font-weight: 600; color: #1e3a8a; margin-bottom: 14px; line-height: 1.5;">
+          ${overarching}
+        </p>
+      ` : ''}
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
+        ${scaffolded.map((obj, idx) => `
+          <div style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; background: #f8fafc; border: 1.2px solid #e2e8f0; border-radius: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
+            <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: #10b981; color: #ffffff; font-size: 0.75rem; font-weight: 800; flex-shrink: 0; line-height: 1;">${idx + 1}</span>
+            <span style="font-size: 0.9rem; line-height: 1.45; color: #1e293b; font-weight: 600; flex: 1;">${obj}</span>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
 export function renderLessonLaunchpad({
   lesson,
   unitId,
@@ -2549,6 +2677,7 @@ export function renderLessonLaunchpad({
   htmlDoNowInner = '',
   htmlVocabInner = '',
   htmlSpineInner = '',
+  htmlObjectivesInner = '',
   defaultTab = '',
 }) {
   const tabs = [];
@@ -2573,7 +2702,40 @@ export function renderLessonLaunchpad({
     });
   }
 
-  // 2. Video Pathway Tab
+  // 2. Learning Objectives Tab
+  const hasObjectives = Boolean(
+    (lesson &&
+      lesson.learning_objectives &&
+      ((Array.isArray(lesson.learning_objectives) && lesson.learning_objectives.length > 0) ||
+        (lesson.learning_objectives.scaffolded && lesson.learning_objectives.scaffolded.length > 0))) ||
+    (lesson &&
+      lesson.teacher_notes &&
+      Array.isArray(lesson.teacher_notes.objectives) &&
+      lesson.teacher_notes.objectives.length > 0) ||
+    (htmlObjectivesInner && htmlObjectivesInner.trim().length > 0),
+  );
+
+  if (hasObjectives) {
+    let objCount = 0;
+    if (lesson && lesson.learning_objectives) {
+      if (Array.isArray(lesson.learning_objectives)) {
+        objCount = lesson.learning_objectives.length;
+      } else if (Array.isArray(lesson.learning_objectives.scaffolded)) {
+        objCount = lesson.learning_objectives.scaffolded.length;
+      }
+    }
+    if (!objCount && lesson && lesson.teacher_notes && Array.isArray(lesson.teacher_notes.objectives)) {
+      objCount = lesson.teacher_notes.objectives.length;
+    }
+    tabs.push({
+      key: 'objectives',
+      label: 'Learning Objectives',
+      icon: 'fa-solid fa-bullseye',
+      badge: objCount ? `${objCount} Goals` : '',
+    });
+  }
+
+  // 3. Video Pathway Tab
   const hasVideo = Boolean(
     (videos && videos.length > 0) || (htmlVideo && htmlVideo.trim().length > 0),
   );
@@ -2594,7 +2756,7 @@ export function renderLessonLaunchpad({
     });
   }
 
-  // 3. Key Vocabulary Tab
+  // 4. Key Vocabulary Tab
   const hasVocab = Boolean(
     (lesson && lesson.vocab && lesson.vocab.length > 0) ||
     (htmlVocabInner && htmlVocabInner.trim().length > 0),
@@ -2609,7 +2771,7 @@ export function renderLessonLaunchpad({
     });
   }
 
-  // 4. Chronology Spine Tab
+  // 5. Chronology Spine Tab
   const hasSpine = Boolean(htmlSpineInner && htmlSpineInner.trim().length > 0);
   if (hasSpine) {
     let spineCount = 0;
@@ -2658,6 +2820,14 @@ export function renderLessonLaunchpad({
         </div>
         <div class="launchpad-actions-group">
           <button type="button"
+            class="launchpad-start-reading-btn"
+            data-action="launchpad-start-reading"
+            title="Collapse drawer and begin lesson"
+            style="${activeTabKey ? 'display: inline-flex;' : 'display: none;'}">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Start Reading</span>
+          </button>
+          <button type="button"
             class="launchpad-close-btn"
             data-action="close-launchpad"
             title="Collapse drawer"
@@ -2671,6 +2841,14 @@ export function renderLessonLaunchpad({
       ? `
           <div class="launchpad-panel ${activeTabKey === 'donow' ? 'active' : ''}" data-panel="donow" style="${activeTabKey === 'donow' ? 'display: block;' : 'display: none;'}">
             ${htmlDoNowInner}
+          </div>
+        `
+      : ''
+    }
+        ${hasObjectives
+      ? `
+          <div class="launchpad-panel ${activeTabKey === 'objectives' ? 'active' : ''}" data-panel="objectives" style="${activeTabKey === 'objectives' ? 'display: block;' : 'display: none;'}">
+            ${htmlObjectivesInner}
           </div>
         `
       : ''
@@ -3410,6 +3588,7 @@ export function renderLesson(lesson) {
     htmlVocabInner = '',
     htmlSpineInner = '',
     htmlLearningObjectives = '',
+    objectivesData = null,
     htmlPrimary = '',
     htmlSources1 = '',
     htmlNarrative = '',
@@ -3434,6 +3613,7 @@ export function renderLesson(lesson) {
     lesson.vocab = lesson.vocabulary;
   }
   assignQuestionNumbers(lesson, unitId);
+  objectivesData = extractLearningObjectivesData(lesson);
 
   // Normalize do_now format
   if (Array.isArray(lesson.do_now)) {
@@ -3496,6 +3676,7 @@ export function renderLesson(lesson) {
   }
 
   assignQuestionNumbers(lesson, unitId);
+  objectivesData = extractLearningObjectivesData(lesson);
   lesson.unitId = unitId;
   window.currentActiveLesson = lesson;
 
@@ -4708,21 +4889,26 @@ export function renderLesson(lesson) {
       const cardId = `donow-card-${index}`;
       const isLast = index === doNowItems.length - 1;
       htmlDoNowInner += `
-          <div class="donow-sentence-row do-now-card" id="do-now-card-${index}" data-action="toggle-element" data-target-id="${cardId}" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #ffffff; border: none; ${!isLast ? 'border-bottom: 1px solid #f1f5f9;' : ''} border-radius: 0; margin: 0; padding: 7px 14px; min-height: 36px; box-sizing: border-box; cursor: pointer; box-shadow: none;">
-            <div style="display: flex; align-items: center; gap: 10px; flex: 1 1 55%; min-width: 260px;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 4px; background: #f0f9ff; color: #0284c7; font-size: 0.74rem; font-weight: 800; flex-shrink: 0; border: 1px solid #bae6fd; line-height: 1;">${index + 1}</span>
-              <span style="font-size: 0.88rem; line-height: 1.35; color: #1e293b; font-weight: 600; flex: 1;">${qText}</span>
-            </div>
-            <div class="donow-right-answer-box" style="display: flex; align-items: center; justify-content: flex-end; flex: 0 1 auto; max-width: 45%; margin-left: 8px;">
-              <span class="donow-reveal-pill" style="font-size: 0.72rem; font-weight: 700; color: #0284c7; background: #f0f9ff; border: 1px solid #bae6fd; padding: 3px 9px; border-radius: 12px; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap;">
-                <i class="fa-solid fa-eye" style="font-size: 0.65rem;"></i> Reveal Answer
-              </span>
-              <div class="answer" id="${cardId}" style="display: none; margin: 0; padding: 0; background: transparent; max-width: 100%;">
-                <span style="display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; font-size: 0.82rem; font-weight: 700; color: #1d4ed8; text-align: left; line-height: 1.3; word-break: break-word;">
-                  <i class="fa-solid fa-circle-check" style="color: #2563eb; font-size: 0.75rem; flex-shrink: 0;"></i>
-                  ${aText}
-                </span>
+          <div class="donow-sentence-row do-now-card" id="do-now-card-${index}" data-action="toggle-element" data-target-id="${cardId}" title="Tap anywhere on this row to reveal or hide the answer" style="display: flex; align-items: center; justify-content: space-between; gap: 14px; background: #ffffff; border: none; ${!isLast ? 'border-bottom: 1px solid #f1f5f9;' : ''} border-radius: 0; margin: 0; padding: 7px 14px; min-height: 38px; box-sizing: border-box; cursor: pointer; box-shadow: none;">
+            <div style="display: flex; align-items: flex-start; gap: 10px; flex: 1 1 auto; min-width: 0;">
+              <span style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 4px; background: #f0f9ff; color: #0284c7; font-size: 0.74rem; font-weight: 800; flex-shrink: 0; border: 1px solid #bae6fd; line-height: 1; margin-top: 1px;">${index + 1}</span>
+              <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; flex: 1; min-width: 0;">
+                <span class="donow-q-text" style="font-size: 0.88rem; line-height: 1.38; color: #1e293b; font-weight: 600;">${qText}</span>
+                <div class="answer donow-inline-answer" id="${cardId}" style="display: none; margin: 0; padding: 0; background: transparent;">
+                  <span class="donow-answer-badge" style="display: inline-flex; align-items: center; gap: 5px; padding: 2px 10px; background: #eff6ff; border: 1.2px solid #93c5fd; border-radius: 12px; font-size: 0.82rem; font-weight: 700; color: #1d4ed8; text-align: left; line-height: 1.3; word-break: break-word; box-shadow: 0 1px 2px rgba(37, 99, 235, 0.08);">
+                    <i class="fa-solid fa-circle-check" style="color: #2563eb; font-size: 0.75rem; flex-shrink: 0;"></i>
+                    ${aText}
+                  </span>
+                </div>
               </div>
+            </div>
+            <div class="donow-right-status-box" style="display: flex; align-items: center; justify-content: flex-end; flex-shrink: 0; margin-left: 8px;">
+              <span class="donow-reveal-pill" style="font-size: 0.72rem; font-weight: 700; color: #0284c7; background: #f0f9ff; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 12px; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap;">
+                <i class="fa-solid fa-eye" style="font-size: 0.65rem;"></i> Reveal
+              </span>
+              <span class="donow-revealed-pill" style="display: none; font-size: 0.72rem; font-weight: 700; color: #0284c7; background: #eff6ff; border: 1px solid #93c5fd; padding: 2px 8px; border-radius: 12px; align-items: center; gap: 4px; white-space: nowrap;">
+                <i class="fa-solid fa-check" style="font-size: 0.7rem;"></i> Answered
+              </span>
             </div>
           </div>
         `;
@@ -5040,38 +5226,9 @@ export function renderLesson(lesson) {
   // TAB 2: THE HISTORY
   // ==========================================
 
-  if (lesson.learning_objectives) {
-    // Smart check: Only render overarching objective if it differs from the main lesson title
-    let overarchingHtml = '';
-    const cleanTitle = (lesson.title || '').replace(/^Lesson\\s*\\d+:\\s*/i, '').trim();
-    const cleanObj =
-      !Array.isArray(lesson.learning_objectives) && lesson.learning_objectives.overarching
-        ? lesson.learning_objectives.overarching.trim()
-        : '';
-    if (cleanObj && cleanObj !== cleanTitle) {
-      overarchingHtml = `
-          <p style="font-size: 1.1rem; font-weight: 600; color: #1e3a8a; margin-bottom: 15px;">
-            ${cleanObj}
-          </p>
-        `;
-    }
-
-    const scaffoldedObjs = Array.isArray(lesson.learning_objectives)
-      ? lesson.learning_objectives
-      : lesson.learning_objectives.scaffolded || [];
-
-    htmlLearningObjectives += `
-        <div class="learning-objectives-card" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid #10b981;">
-          <h3 style="margin-top: 0; color: #0f172a; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; margin-bottom: ${overarchingHtml ? '0' : '15px'};">
-            <i class="fa-solid fa-bullseye" style="color: #10b981;"></i> Learning Objectives
-          </h3>
-          ${overarchingHtml}
-          <ul style="margin: 0; padding-left: 20px; color: #334155; font-size: 1.05rem; line-height: 1.6;">
-            ${scaffoldedObjs.map((obj) => `<li style="margin-bottom: 8px;">${obj}</li>`).join('')}
-          </ul>
-        </div>
-      `;
-  }
+  // Note: Learning objectives are now integrated directly into the Launchpad bar
+  // (dedicated tab) and docked side-by-side to the left of the Do Now retrieval starter.
+  // This keeps the Historical Narrative 100% clean and eliminates bulky vertical spacing.
 
   let videos = [];
   if (lesson.video) {
@@ -5268,28 +5425,25 @@ export function renderLesson(lesson) {
                 : ''
               }
 
-                  <!-- Dedicated Stage Top Bar: Stage Badge + Jump Pill -->
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; padding-bottom: 5px; border-bottom: 1px solid #f1f5f9;">
-                    <span style="font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 900; background: #0284c7; color: #ffffff; padding: 2px 7px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">
-                      Stage ${item.step}
+                  <!-- Dedicated Stage Top Bar: Step Node + Date Badge -->
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid #f1f5f9;">
+                    <span class="spine-stage-number-node" onclick="event.stopPropagation(); if(window.jumpToNarrativeBlock){window.jumpToNarrativeBlock(${item.step});}" title="Stage ${item.step} (Click to jump to reading)" style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 900; line-height: 1; flex-shrink: 0; box-shadow: 0 1px 3px rgba(2, 132, 199, 0.3); cursor: pointer; transition: transform 0.15s ease;">
+                      ${item.step}
                     </span>
-                    <button type="button" class="spine-stage-jump-pill" onclick="event.stopPropagation(); window.jumpToNarrativeBlock(${item.step}, '${targetFirstPara}');" title="Jump to Stage ${item.step} text [${targetFirstPara}] in the lesson" style="background: #f0f9ff; border: 1px solid #bae6fd; color: #0284c7; font-family: monospace; font-size: 0.68rem; font-weight: 800; padding: 2px 7px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; transition: all 0.15s ease;">
-                      <span>Text [${targetFirstPara}]</span> <i class="fa-solid fa-arrow-down" style="font-size: 0.60rem;"></i>
-                    </button>
+                    ${displayDate
+                ? `
+                    <span class="cme-spine-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #0369a1; background: #e0f2fe; padding: 2px 7px; border-radius: 4px; white-space: nowrap;" title="${item.date}">${displayDate}</span>
+                  `
+                : ''
+              }
                   </div>
 
-                  <!-- Date Row -->
-                  <div style="margin-bottom: 6px;">
-                    <span class="cme-spine-date-badge" style="display: inline-block; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 800; color: #0369a1; background: #e0f2fe; padding: 2px 8px; border-radius: 4px;" title="${item.date}">${displayDate}</span>
-                  </div>
-
-                  <!-- Historical Actor Pill -->
+                  <!-- Historical Actor Row -->
                   ${item.actor
                 ? `
-                  <div style="margin-bottom: 6px;">
-                    <span style="font-family: 'Inter', sans-serif; font-size: 0.66rem; font-weight: 700; color: #334155; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 2.5px 7px; border-radius: 4px; display: inline-flex; align-items: flex-start; gap: 5px; line-height: 1.25; max-width: 100%;" title="Historical Actor: ${item.actor}">
-                      <i class="fa-solid fa-users" style="color: #0284c7; font-size: 0.60rem; margin-top: 2px; flex-shrink: 0;"></i> <span>${item.actor}</span>
-                    </span>
+                  <div style="margin-bottom: 6px; font-family: 'Inter', sans-serif; font-size: 0.66rem; font-weight: 700; color: #475569; display: flex; align-items: flex-start; gap: 5px; line-height: 1.28; min-height: 28px;" title="Historical Actor: ${item.actor}">
+                    <i class="fa-solid fa-users" style="color: #0284c7; font-size: 0.60rem; flex-shrink: 0; margin-top: 2px;"></i>
+                    <span style="line-height: 1.28; word-break: normal;">${item.actor}</span>
                   </div>`
                 : ''
               }
@@ -5304,9 +5458,9 @@ export function renderLesson(lesson) {
                 ? `
                   <button type="button" class="spine-question-toggle-card" onclick="event.stopPropagation(); window.toggleCardSpineStage(this);" aria-expanded="false" style="width: 100%; text-align: left; background: #f8fafc; border: 1.2px solid #cbd5e1; border-left: 4px solid #0284c7; padding: 8px 10px; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; margin-bottom: 8px; display: flex; flex-direction: column; gap: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.03);" title="Click to test your memory and reveal the turning point &amp; consequence">
                     <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                      <span style="display: inline-flex; align-items: center; gap: 5px; font-family: 'Inter', sans-serif; font-size: 0.64rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.5px;">
+                      <span style="display: inline-flex; align-items: center; gap: 5px; font-family: 'Inter', sans-serif; font-size: 0.64rem; font-weight: 800; color: #0284c7; letter-spacing: 0.4px;">
                         <i class="fa-solid fa-circle-question" style="font-size: 0.68rem;"></i>
-                        <span>Workbook Enquiry</span>
+                        <span>Key Enquiry</span>
                       </span>
                       <span class="stage-toggle-indicator" style="font-size: 0.66rem; font-weight: 800; color: #0284c7; background: #e0f2fe; padding: 1.5px 6px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; transition: all 0.15s ease;">
                         <span class="stage-toggle-label">Reveal</span> <i class="fa-solid fa-chevron-down stage-chevron" style="font-size: 0.58rem; transition: transform 0.2s ease;"></i>
@@ -10190,6 +10344,20 @@ export function renderLesson(lesson) {
     htmlSpotlightDrawers = renderTextbookSpotlightDrawers(lesson);
   }
 
+  const htmlObjectivesInner = renderLearningObjectivesPanelHTML(objectivesData, lesson);
+
+  const hasDoNow = Boolean(
+    (lesson &&
+      lesson.do_now &&
+      ((lesson.do_now.items && lesson.do_now.items.length > 0) ||
+        (lesson.do_now.questions && lesson.do_now.questions.length > 0) ||
+        (lesson.do_now.tasks && lesson.do_now.tasks.length > 0) ||
+        (lesson.do_now.events && lesson.do_now.events.length > 0))) ||
+    (htmlDoNowInner && htmlDoNowInner.trim().length > 0),
+  );
+
+  const defaultTab = hasDoNow ? 'donow' : (objectivesData ? 'objectives' : '');
+
   const htmlLaunchpad = renderLessonLaunchpad({
     lesson,
     unitId,
@@ -10198,7 +10366,8 @@ export function renderLesson(lesson) {
     htmlDoNowInner,
     htmlVocabInner,
     htmlSpineInner,
-    defaultTab: '',
+    htmlObjectivesInner,
+    defaultTab,
   });
 
   if (isTrip) {
@@ -10226,7 +10395,6 @@ export function renderLesson(lesson) {
     // Universal KS3 Unified Engine Layout
     html +=
       htmlLaunchpad +
-      htmlLearningObjectives +
       htmlNarrative +
       htmlSpotlightDrawers +
       (lesson.narrative_blocks && lesson.narrative_blocks.length > 0 ? '' : htmlPrimary) +
@@ -10242,7 +10410,6 @@ export function renderLesson(lesson) {
 
     html +=
       htmlLaunchpad +
-      htmlLearningObjectives +
       htmlNarrative +
       htmlSpotlightDrawers +
       (lesson.narrative_blocks && lesson.narrative_blocks.length > 0 ? '' : htmlPrimary) +

@@ -67,7 +67,8 @@ function renderStandardFrontCover({
   totalPageCount = 16,
   renderFooterStrip = null,
 }) {
-  const isWeimar = unitId === 'weimar_nazi_germany';
+  const isPaper3 = unitId === 'weimar_nazi_germany' || unitId === 'usa';
+  const isWeimar = isPaper3;
   const isEee = unitId === 'eee';
 
   if (isEee) {
@@ -79,19 +80,19 @@ function renderStandardFrontCover({
     // Clean Pupil Card: strictly Name, Class, Teacher (no extra headers or paper title duplication)
     const pupilCardHtml = `
       <!-- Pupil Identification Card -->
-      <div style="border: 1.5px solid #000; border-radius: 4px; padding: 4.5px 12px; background: #fff; margin-bottom: 3px;">
-        <div style="display: grid; grid-template-columns: 2fr 1fr 1.2fr; gap: 16px; font-family: 'Inter', sans-serif; font-size: 7.5pt;">
+      <div style="border: 1.5px solid #000; border-radius: 4px; padding: 5.5px 14px; background: #fff; margin-bottom: 3px;">
+        <div style="display: grid; grid-template-columns: 2.2fr 1.1fr 1.3fr; gap: 18px; font-family: 'Inter', sans-serif; font-size: 8.0pt;">
           <div style="display: flex; align-items: baseline;">
-            <strong style="text-transform: uppercase; width: 48px; font-size: 7.0pt; color: #000;">Name:</strong>
-            <div style="flex: 1; border-bottom: 1.2px solid #000; height: 13px;"></div>
+            <strong style="text-transform: uppercase; width: 50px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Name:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
           </div>
           <div style="display: flex; align-items: baseline;">
-            <strong style="text-transform: uppercase; width: 44px; font-size: 7.0pt; color: #000;">Class:</strong>
-            <div style="flex: 1; border-bottom: 1.2px solid #000; height: 13px;"></div>
+            <strong style="text-transform: uppercase; width: 46px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Class:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
           </div>
           <div style="display: flex; align-items: baseline;">
-            <strong style="text-transform: uppercase; width: 56px; font-size: 7.0pt; color: #000;">Teacher:</strong>
-            <div style="flex: 1; border-bottom: 1.2px solid #000; height: 13px;"></div>
+            <strong style="text-transform: uppercase; width: 62px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Teacher:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
           </div>
         </div>
       </div>`;
@@ -364,74 +365,98 @@ function renderStandardFrontCover({
   } else if (numCols <= 3) {
     // 3-column layout (e.g. Conflict in the Middle East, GCSE Paper 2)
     if (maxItems <= 3) {
-      specFontSize = '7.7pt';
-      specLineHeight = '1.30';
-      specTitleSize = '8.3pt';
-      specItemMargin = '4.0px';
-      specTitleMargin = '4.5px';
-      bulletSize = '6.2px';
+      specFontSize = '8.8pt';
+      specLineHeight = '1.42';
+      specTitleSize = '9.2pt';
+      specItemMargin = '6.0px';
+      specTitleMargin = '6.0px';
+      bulletSize = '7.0px';
     } else if (maxItems <= 5) {
-      specFontSize = '7.3pt';
-      specLineHeight = '1.27';
-      specTitleSize = '7.9pt';
-      specItemMargin = '3.0px';
-      specTitleMargin = '3.5px';
-      bulletSize = '5.8px';
+      specFontSize = '7.6pt';
+      specLineHeight = '1.30';
+      specTitleSize = '8.2pt';
+      specItemMargin = '3.5px';
+      specTitleMargin = '4.2px';
+      bulletSize = '6.0px';
     } else {
-      specFontSize = '6.8pt';
-      specLineHeight = '1.20';
-      specTitleSize = '7.4pt';
-      specItemMargin = '2.0px';
-      specTitleMargin = '3.0px';
-      bulletSize = '5.0px';
+      specFontSize = '7.0pt';
+      specLineHeight = '1.22';
+      specTitleSize = '7.6pt';
+      specItemMargin = '2.5px';
+      specTitleMargin = '3.5px';
+      bulletSize = '5.2px';
     }
   } else {
     // 4+ column layout (e.g. Early Elizabethan England, Paper 2 British Depth)
     if (maxItems <= 3) {
-      specFontSize = '7.6pt';
-      specLineHeight = '1.30';
-      specTitleSize = '8.0pt';
-      specItemMargin = '4px';
-      specTitleMargin = '5px';
+      specFontSize = '7.8pt';
+      specLineHeight = '1.32';
+      specTitleSize = '8.4pt';
+      specItemMargin = '4.0px';
+      specTitleMargin = '4.8px';
       bulletSize = '6.0px';
     } else if (maxItems === 4) {
-      specFontSize = '7.0pt';
-      specLineHeight = '1.22';
-      specTitleSize = '7.5pt';
-      specItemMargin = '3px';
-      specTitleMargin = '4px';
+      specFontSize = '7.2pt';
+      specLineHeight = '1.26';
+      specTitleSize = '7.8pt';
+      specItemMargin = '3.5px';
+      specTitleMargin = '4.0px';
       bulletSize = '5.5px';
     } else {
       specFontSize = '6.6pt';
-      specLineHeight = '1.18';
-      specTitleSize = '7.0pt';
-      specItemMargin = '2px';
-      specTitleMargin = '3px';
+      specLineHeight = '1.20';
+      specTitleSize = '7.2pt';
+      specItemMargin = '2.5px';
+      specTitleMargin = '3.5px';
       bulletSize = '5.0px';
     }
   }
 
+  const specItemPadding = numCols >= 4 || maxItems >= 4 ? '3.5px 6px' : '7px 9px';
+  const itemsJustify = maxItems <= 3 ? 'space-evenly' : 'flex-start';
+
+  function formatTopicTitle(str) {
+    const smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|v.?|vs.?|via)$/i;
+    return str.split(/\s+/).map((word, index, arr) => {
+      const upper = word.toUpperCase();
+      if (['UAR', 'UN', 'IDF', 'SS', 'US', 'UK', 'PLO', 'PFLP', 'KKK', 'SCLC', 'SNCC', 'WWI', 'WWII'].includes(upper)) {
+        return upper;
+      }
+      if (index > 0 && index < arr.length - 1 && smallWords.test(word)) {
+        return word.toLowerCase();
+      }
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    }).join(' ');
+  }
+
   const subtopicsHtml = (specBox.subtopics || [])
     .map((sub, idx) => {
-      const isLast = idx === specBox.subtopics.length - 1;
-      const borderStyle = isLast ? '' : 'border-right: 1.2px solid #e2e8f0; padding-right: 10px;';
+      // Parse subtopic number and title
+      const numMatch = sub.title.match(/^(\d+)[\.\s]+(.*)/);
+      const topicNum = numMatch ? numMatch[1] : `${idx + 1}`;
+      const rawTitle = numMatch ? numMatch[2].trim() : sub.title.trim();
+      const elegantTitle = formatTopicTitle(rawTitle);
+
       const itemsHtml = (sub.items || [])
         .map(
-          (item) =>
-            `<div style="margin-bottom: ${specItemMargin}; display: flex; align-items: flex-start; gap: 5px;">
-              <span style="color: #0f172a; font-weight: 900; line-height: 1.2; font-size: ${bulletSize}; margin-top: 1px;">&bull;</span>
-              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif;">${item}</span>
+          (item) => `
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0284c7; border-radius: 3px; padding: ${specItemPadding}; display: flex; align-items: flex-start; gap: 6px; box-sizing: border-box;">
+              <span style="color: #0284c7; font-weight: 900; line-height: 1.25; font-size: ${bulletSize}; margin-top: 1px; flex-shrink: 0;">▪</span>
+              <span style="flex: 1; font-family: 'Inter', -apple-system, sans-serif; font-size: ${specFontSize}; line-height: ${specLineHeight}; color: #1e293b;">${item}</span>
             </div>`,
         )
         .join('\n');
 
       return `
-          <!-- Subtopic ${idx + 1} -->
-          <div class="spec-column-box" style="${borderStyle} display: flex; flex-direction: column; justify-content: space-between; height: 100%; overflow: hidden;">
-            <strong style="font-size: ${specTitleSize}; text-transform: uppercase; color: #000; border-bottom: 1.2px solid #000; padding-bottom: 2px; margin-bottom: ${specTitleMargin}; display: block; letter-spacing: 0.3px; flex-shrink: 0; font-family: 'Inter', sans-serif;">
-              ${sub.title}
-            </strong>
-            <div class="spec-column-items" style="font-size: ${specFontSize}; line-height: ${specLineHeight}; color: #0f172a; flex: 1; display: flex; flex-direction: column; justify-content: space-evenly;">
+          <!-- Subtopic Card ${idx + 1} -->
+          <div class="spec-column-box" style="background: #ffffff; border: 1.2px solid #cbd5e1; border-radius: 4px; padding: 6px 8px 6px 8px; display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);">
+            <div style="display: flex; align-items: flex-start; gap: 6px; border-bottom: 2px solid #0284c7; padding-bottom: 4px; margin-bottom: ${specTitleMargin}; flex-shrink: 0;">
+              <span style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; width: 17px; height: 17px; border-radius: 3px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">${topicNum}</span>
+              <strong style="font-family: 'Playfair Display', Georgia, serif; font-size: ${specTitleSize}; font-weight: 900; color: #0f172a; line-height: 1.18; letter-spacing: 0.1px;">
+                ${elegantTitle}
+              </strong>
+            </div>
+            <div class="spec-column-items" style="flex: 1; display: flex; flex-direction: column; justify-content: ${itemsJustify}; gap: 6px;">
               ${itemsHtml}
             </div>
           </div>`;
@@ -446,31 +471,22 @@ function renderStandardFrontCover({
         <span class="footer-page-num">1/${totalPageCount}</span>
       </div>`;
 
-  // Pupil Workbook Card (Top Placement)
+  // Clean Pupil Identification Card (Spacious Single-Row Standard)
   const pupilCardHtml = `
-      <!-- Pupil Workbook & Assessment Card (Spanning Across the Page) -->
-      <div style="border: 1.5px solid #000; border-radius: 4px; padding: 4.5px 12px; background: #fff; margin-bottom: 3px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000; padding-bottom: 2px; margin-bottom: 4px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.0pt; text-transform: uppercase; letter-spacing: 0.8px;">
-            Pupil Workbook &amp; Assessment
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #222;">
-            ${paperTitle} &bull; Key Topic ${keyTopicNum}
-          </span>
-        </div>
-        
-        <div style="display: grid; grid-template-columns: 2fr 1fr 1.2fr; gap: 16px; font-family: 'Inter', sans-serif; font-size: 7.5pt;">
+      <!-- Pupil Identification Card -->
+      <div style="border: 1.5px solid #000; border-radius: 4px; padding: 5.5px 14px; background: #fff; margin-bottom: 3px;">
+        <div style="display: grid; grid-template-columns: 2.2fr 1.1fr 1.3fr; gap: 18px; font-family: 'Inter', sans-serif; font-size: 8.0pt;">
           <div style="display: flex; align-items: baseline;">
-            <strong style="text-transform: uppercase; width: 48px; font-size: 7.0pt;">Name:</strong>
-            <div style="flex: 1; border-bottom: 1.2px solid #000; height: 13px;"></div>
+            <strong style="text-transform: uppercase; width: 50px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Name:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
           </div>
           <div style="display: flex; align-items: baseline;">
-            <strong style="text-transform: uppercase; width: 44px; font-size: 7.0pt;">Class:</strong>
-            <div style="flex: 1; border-bottom: 1.2px solid #000; height: 13px;"></div>
+            <strong style="text-transform: uppercase; width: 46px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Class:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
           </div>
           <div style="display: flex; align-items: baseline;">
-            <strong style="text-transform: uppercase; width: 56px; font-size: 7.0pt;">Teacher:</strong>
-            <div style="flex: 1; border-bottom: 1.2px solid #000; height: 13px;"></div>
+            <strong style="text-transform: uppercase; width: 62px; font-size: 7.6pt; color: #000; font-weight: 800; letter-spacing: 0.5px;">Teacher:</strong>
+            <div style="flex: 1; border-bottom: 1.4px solid #000; height: 15px;"></div>
           </div>
         </div>
       </div>`;
@@ -559,13 +575,16 @@ function renderStandardFrontCover({
       ${photoPlateHtml}
 
       <!-- Pearson Edexcel Specification Word-For-Word (Spanning Across the Page) -->
-      <div style="border: 1.5px solid #000; border-radius: 4px; overflow: hidden; background: #fff; flex: 1; display: flex; flex-direction: column; margin-bottom: 3px;">
-        <div style="background: #000; color: #fff; padding: 3px 10px; font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; letter-spacing: 0.8px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
-          <span>${specBox.title}</span>
-          <span style="font-size: 6.8pt; letter-spacing: 0.5px;">Official Specification Content</span>
+      <div style="border: 1.6px solid #0f172a; border-radius: 5px; overflow: hidden; background: #f1f5f9; flex: 1; display: flex; flex-direction: column; margin-bottom: 3px;">
+        <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-top: 3px solid #0284c7; color: #ffffff; padding: 3.5px 10px; font-family: 'Inter', sans-serif; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+          <div style="display: flex; align-items: center; gap: 7px;">
+            <span style="background: #0284c7; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; font-size: 6.8pt; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase;">Pearson Edexcel</span>
+            <span style="font-size: 7.4pt; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase; color: #f8fafc;">${(specBox.title || '').replace(/^Pearson Edexcel GCSE \(9–1\) History Specification • /i, '')}</span>
+          </div>
+          <span style="background: rgba(2, 132, 199, 0.25); border: 1px solid #38bdf8; color: #e0f2fe; padding: 1.5px 7px; border-radius: 3px; font-size: 6.6pt; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase;">Official Specification Directory</span>
         </div>
 
-        <div style="padding: 5px 10px; display: grid; grid-template-columns: repeat(${specBox.subtopics.length || 3}, 1fr); gap: 10px; font-family: 'Inter', sans-serif; flex: 1; overflow: hidden;">
+        <div style="padding: 5px 6px; display: grid; grid-template-columns: repeat(${specBox.subtopics.length || 3}, 1fr); gap: 6px; font-family: 'Inter', sans-serif; flex: 1; overflow: hidden;">
           ${subtopicsHtml}
         </div>
       </div>
@@ -595,51 +614,102 @@ function renderStandardBackCover({
   totalPageCount = 16,
   renderFooterStrip = null,
 }) {
-  const isWeimar = unitId === 'weimar_nazi_germany';
-  const qrSvgSize = isWeimar ? '16mm' : '14mm';
-  const teacherLineHeight = isWeimar ? '5.4mm' : '8.8mm';
-  const teacherLineCount = isWeimar ? 3 : 4;
+  const isPaper3 = unitId === 'weimar_nazi_germany' || unitId === 'usa';
+  const isWeimar = isPaper3;
+  const isMedicine = unitId === 'edexcel_medicine';
+  const isWesternFront = isMedicine && keyTopicNum === 5;
+  const isMedicineThematic = isMedicine && !isWesternFront;
+  const qrSvgSize = isWesternFront ? '13mm' : isWeimar ? '16mm' : '14mm';
+  const teacherLineHeight = isWesternFront ? '4.8mm' : isWeimar ? '5.4mm' : '6.8mm';
+  const teacherLineCount = isWesternFront ? 3 : isWeimar ? 3 : 3;
   const teacherLinesHtml = Array(teacherLineCount)
     .fill(`<div class="task-line" style="height: ${teacherLineHeight};"></div>`)
     .join('');
 
-  const enquiriesRowsHtml = isWeimar
-    ? enquiries
+  const totalStarter = enquiries.reduce((sum, enq) => sum + (enq.doNowMarks || 10), 0);
+  const totalQ1a = enquiries.reduce((sum, enq) => sum + (enq.q1aMarks || enq.q1Marks || enq.q3Marks || 4), 0);
+  const totalQ1b = enquiries.reduce((sum, enq) => sum + (enq.q1bMarks || 4), 0);
+  const totalExt = enquiries.reduce((sum, enq) => sum + (enq.extMarks || enq.q2Marks || 8), 0);
+  const grandTotal = enquiries.reduce(
+    (sum, enq) =>
+      sum +
+      (enq.totalMarks ||
+        (enq.doNowMarks || 10) +
+          (enq.q1aMarks || enq.q1Marks || enq.q3Marks || 4) +
+          (enq.q1bMarks || 0) +
+          (enq.extMarks || enq.q2Marks || 8)),
+    0,
+  );
+
+  let enquiriesRowsHtml = '';
+  if (isWeimar) {
+    enquiriesRowsHtml =
+      enquiries
         .map(
           (enq) => `
             <tr style="border-bottom: 1px solid #000000;">
               <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">${enq.num}</td>
               <td style="padding: 5px 8px; border-right: 1px solid #000000; font-size: 8.6pt; line-height: 1.25;"><strong>${enq.code || `KT${keyTopicNum}.${enq.num}`}:</strong> ${enq.title}</td>
-              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong> ]</span></td>
-              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 4</strong> ]</span></td>
-              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 12</strong> ]</span></td>
-              <td style="padding: 5px 6px; text-align: center; font-size: 10.0pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.0pt; font-weight: 900;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 26</strong> ]</span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 12</strong></span></td>
+              <td style="padding: 5px 6px; text-align: center; font-size: 10.0pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 26</strong></span></td>
             </tr>`,
         )
         .join('\n') +
       `
             <tr style="border-bottom: 1.5px solid #000000; background: #f8fafc;">
               <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">★</td>
-              <td style="padding: 5px 8px; border-right: 1px solid #000000; font-size: 8.4pt; line-height: 1.25;"><strong>Section B Capstone (pp. 20–23):</strong> Q3(a) [8m] &bull; Q3(b) [4m] &bull; Q3(c) [4m] &bull; Q3(d) [20m]</td>
-              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-size: 7.8pt; font-weight: 800;">Q3(a): [ &nbsp; <strong>/ 8</strong> ]</td>
-              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-size: 7.8pt; font-weight: 800;">Q3(b): [ &nbsp; <strong>/ 4</strong> ]</td>
-              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-size: 7.8pt; font-weight: 800;">Q3(c): [ &nbsp; <strong>/ 4</strong> ] &bull; Q3(d): [ &nbsp; <strong>/ 20</strong> ]</td>
-              <td style="padding: 5px 6px; text-align: center; font-size: 10.0pt; font-weight: 900; background: #e2e8f0;"><span style="font-size: 10.0pt; font-weight: 900;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 36</strong> ]</span></td>
-            </tr>`
-    : enquiries
-        .map(
-          (enq) => `
+              <td style="padding: 5px 8px; border-right: 1px solid #000000; font-size: 8.4pt; line-height: 1.25;"><strong>Section B Capstone (pp. 16–19):</strong> Q3(a) [8m] &bull; Q3(b) [4m] &bull; Q3(c) [4m] &bull; Q3(d) [20m]</td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-size: 7.8pt; font-weight: 800;">Q3(a): &nbsp;&nbsp;&nbsp;<strong>/ 8</strong></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-size: 7.8pt; font-weight: 800;">Q3(b): &nbsp;&nbsp;&nbsp;<strong>/ 4</strong></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-size: 7.8pt; font-weight: 800;">Q3(c): &nbsp;<strong>/ 4</strong> &bull; Q3(d): &nbsp;<strong>/ 20</strong></td>
+              <td style="padding: 5px 6px; text-align: center; font-size: 10.0pt; font-weight: 900; background: #e2e8f0;"><span style="font-size: 10.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 36</strong></span></td>
+            </tr>`;
+  } else if (isWesternFront) {
+    enquiriesRowsHtml = enquiries
+      .map(
+        (enq) => `
+            <tr style="border-bottom: 1px solid #000000;">
+              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.0pt;">${enq.num}</td>
+              <td style="padding: 4px 8px; border-right: 1px solid #000000; font-size: 8.2pt; line-height: 1.22;"><strong>${enq.code || `KT5.${enq.num}`}:</strong> ${enq.title}</td>
+              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></span></td>
+              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 4px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 8.2pt; font-weight: 800;">${enq.q2Type || ([1, 3, 5].includes(enq.num) ? 'Q2(a) Utility' : 'Q2(b) Follow-up')}: &nbsp;&nbsp;&nbsp;<strong>/ ${enq.q2Marks || ([1, 3, 5].includes(enq.num) ? 8 : 4)}</strong></span></td>
+              <td style="padding: 4px 6px; text-align: center; font-size: 9.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.totalMarks || ([1, 3, 5].includes(enq.num) ? 22 : 18)}</strong></span></td>
+            </tr>`,
+      )
+      .join('\n');
+  } else if (isMedicineThematic) {
+    enquiriesRowsHtml = enquiries
+      .map(
+        (enq) => `
+            <tr style="border-bottom: 1px solid #000000;">
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">${enq.num}</td>
+              <td style="padding: 5px 8px; border-right: 1px solid #000000; font-size: 8.4pt; line-height: 1.25;"><strong>${enq.code || `KT${keyTopicNum}.${enq.num}`}:</strong> ${enq.title}</td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 9.5pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 4</strong></span></td>
+              <td style="padding: 5px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 8.4pt; font-weight: 800;">${enq.extType || (enq.num === 5 ? 'Q5/6 Essay' : 'Q4 Explain')}: &nbsp;&nbsp;&nbsp;<strong>/ ${enq.extMarks || (enq.num === 5 ? 20 : 12)}</strong></span></td>
+              <td style="padding: 5px 6px; text-align: center; font-size: 10.0pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.totalMarks || (enq.num === 5 ? 34 : 26)}</strong></span></td>
+            </tr>`,
+      )
+      .join('\n');
+  } else {
+    enquiriesRowsHtml = enquiries
+      .map(
+        (enq) => `
             <tr style="border-bottom: 1px solid #000000;">
               <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; font-weight: 900; font-size: 9.5pt;">${enq.num}</td>
               <td style="padding: 6px 8px; border-right: 1px solid #000000; font-size: 8.8pt; line-height: 1.25;"><strong>${enq.code || `KT${keyTopicNum}.${enq.num}`}:</strong> ${enq.title}</td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ ${enq.doNowMarks || 10}</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ ${enq.q1aMarks || 4}</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ ${enq.q1bMarks || 4}</strong> ]</span></td>
-              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">${enq.extType || 'Q2'}: [ &nbsp;&nbsp;&nbsp;&nbsp; <strong>/ ${enq.extMarks || 8}</strong> ]</span></td>
-              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ ${enq.totalMarks || 26}</strong> ]</span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.doNowMarks || 10}</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.q1aMarks || 4}</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap;"><span style="font-size: 10.0pt; font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.q1bMarks || 4}</strong></span></td>
+              <td style="padding: 6px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.5pt;"><span style="font-size: 10.0pt; font-weight: 800;">${enq.extType || 'Q2'}: &nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.extMarks || 8}</strong></span></td>
+              <td style="padding: 6px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #fafafa;"><span style="font-size: 10.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${enq.totalMarks || 26}</strong></span></td>
             </tr>`,
-        )
-        .join('\n');
+      )
+      .join('\n');
+  }
 
   const qrCardsHtml = qrLessons
     .map((qrItem, idx) => {
@@ -656,7 +726,7 @@ function renderStandardBackCover({
               Scan to Quiz
             </div>
             <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; color: #000000; margin-top: 1px; white-space: nowrap;">
-              Score: [ &nbsp;&nbsp;&nbsp; <strong>/ 20</strong> ]
+              Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 20</strong>
             </div>
           </div>`;
     })
@@ -752,7 +822,6 @@ function renderStandardBackCover({
         </div>
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1px; border-top: 1px solid #000; padding-top: 2px;">
           <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; color: #222;">${paperTitle}</span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800;">OUTSIDE BACK COVER</span>
         </div>
       </div>
 
@@ -798,16 +867,36 @@ function renderStandardBackCover({
             <tr style="border-bottom: 1.5px solid #000000; background: #ffffff; height: 7.5mm;">
               <th style="padding: 3px 4px; width: 24px; text-align: center; font-size: 8.5pt; font-weight: 900; border-right: 1px solid #000000;">#</th>
               <th style="padding: 3px 8px; text-align: left; font-size: 8.2pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Enquiry / Assessment Unit</th>
-              <th style="padding: 3px 4px; width: 88px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Starter (10m)</th>
+              <th style="padding: 3px 4px; width: 88px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Do Now (10m)</th>
               <th style="padding: 3px 4px; width: 88px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q1 Infer (4m)</th>
               <th style="padding: 3px 4px; width: 104px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q2 Explain (12m)</th>
               <th style="padding: 3px 6px; width: 88px; text-align: center; font-size: 8.5pt; font-weight: 900; text-transform: uppercase;">Module Total</th>
+            </tr>`
+                : isWesternFront
+                ? `
+            <tr style="border-bottom: 1.5px solid #000000; background: #ffffff; height: 7.5mm;">
+              <th style="padding: 3px 4px; width: 24px; text-align: center; font-size: 8.5pt; font-weight: 900; border-right: 1px solid #000000;">#</th>
+              <th style="padding: 3px 8px; text-align: left; font-size: 8.2pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Enquiry / Historic Environment Focus</th>
+              <th style="padding: 3px 4px; width: 80px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Do Now (10m)</th>
+              <th style="padding: 3px 4px; width: 84px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q1 Features (4m)</th>
+              <th style="padding: 3px 4px; width: 100px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q2 Source Enquiry</th>
+              <th style="padding: 3px 6px; width: 84px; text-align: center; font-size: 8.5pt; font-weight: 900; text-transform: uppercase;">Lesson Total</th>
+            </tr>`
+                : isMedicineThematic
+                ? `
+            <tr style="border-bottom: 1.5px solid #000000; background: #ffffff; height: 7.5mm;">
+              <th style="padding: 3px 4px; width: 24px; text-align: center; font-size: 8.5pt; font-weight: 900; border-right: 1px solid #000000;">#</th>
+              <th style="padding: 3px 8px; text-align: left; font-size: 8.2pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Enquiry / Lesson Assessment</th>
+              <th style="padding: 3px 4px; width: 80px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Do Now (10m)</th>
+              <th style="padding: 3px 4px; width: 84px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q3 Sim/Diff (4m)</th>
+              <th style="padding: 3px 4px; width: 104px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q4/Q5 Extended</th>
+              <th style="padding: 3px 6px; width: 84px; text-align: center; font-size: 8.5pt; font-weight: 900; text-transform: uppercase;">Lesson Total</th>
             </tr>`
                 : `
             <tr style="border-bottom: 1.5px solid #000000; background: #ffffff; height: 8.0mm;">
               <th style="padding: 3px 4px; width: 26px; text-align: center; font-size: 8.5pt; font-weight: 900; border-right: 1px solid #000000;">#</th>
               <th style="padding: 3px 8px; text-align: left; font-size: 8.2pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Enquiry / Lesson Assessment</th>
-              <th style="padding: 3px 4px; width: 84px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Starter (10m)</th>
+              <th style="padding: 3px 4px; width: 84px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Do Now (10m)</th>
               <th style="padding: 3px 4px; width: 78px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q1(a) (4m)</th>
               <th style="padding: 3px 4px; width: 78px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Q1(b) (4m)</th>
               <th style="padding: 3px 4px; width: 84px; text-align: center; font-size: 8.0pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Extended (8m)</th>
@@ -822,19 +911,37 @@ function renderStandardBackCover({
                 ? `
             <tr style="background: #f8fafc; font-weight: 900; border-top: 1.5px solid #000000; height: 7.5mm;">
               <td colspan="2" style="padding: 3px 8px; border-right: 1px solid #000000; text-transform: uppercase; font-size: 8.2pt; letter-spacing: 0.5px;">Key Topic ${keyTopicNum} Cumulative Assessment Totals</td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Starter: <span style="font-size: 9.0pt; font-weight: 900;">[ &nbsp; <strong>/ 40</strong> ]</span></td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1 Infer: <span style="font-size: 9.0pt; font-weight: 900;">[ &nbsp; <strong>/ 16</strong> ]</span></td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q2 Cause: <span style="font-size: 9.0pt; font-weight: 900;">[ &nbsp; <strong>/ 48</strong> ]</span></td>
-              <td style="padding: 3px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #000000; color: #ffffff;">[ &nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 140</strong> ]</td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Do Now: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 40</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1 Infer: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 16</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q2 Cause: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 48</strong></span></td>
+              <td style="padding: 3px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #ffffff; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 140</strong></td>
+            </tr>`
+                : isWesternFront
+                ? `
+            <tr style="background: #f8fafc; font-weight: 900; border-top: 1.5px solid #000000; height: 7.5mm;">
+              <td colspan="2" style="padding: 3px 8px; border-right: 1px solid #000000; text-transform: uppercase; font-size: 8.2pt; letter-spacing: 0.5px;">Key Topic 5 Cumulative Assessment Totals</td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Do Now: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 60</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1 Feat: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 24</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q2 Enq: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 36</strong></span></td>
+              <td style="padding: 3px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #ffffff; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 120</strong></td>
+            </tr>`
+                : isMedicineThematic
+                ? `
+            <tr style="background: #f8fafc; font-weight: 900; border-top: 1.5px solid #000000; height: 7.5mm;">
+              <td colspan="2" style="padding: 3px 8px; border-right: 1px solid #000000; text-transform: uppercase; font-size: 8.2pt; letter-spacing: 0.5px;">Key Topic ${keyTopicNum} Cumulative Assessment Totals</td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Do Now: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 50</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q3: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 20</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Ext: <span style="font-size: 9.0pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;<strong>/ 68</strong></span></td>
+              <td style="padding: 3px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #ffffff; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 138</strong></td>
             </tr>`
                 : `
             <tr style="background: #f8fafc; font-weight: 900; border-top: 1.5px solid #000000; height: 11.5mm;">
               <td colspan="2" style="padding: 3px 8px; border-right: 1px solid #000000; text-transform: uppercase; font-size: 8.2pt; letter-spacing: 0.5px;">Key Topic ${keyTopicNum} Cumulative Assessment Totals</td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Recall: <span style="font-size: 9.5pt; font-weight: 900;">[ &nbsp;&nbsp; <strong>/ 50</strong> ]</span></td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1(a): <span style="font-size: 9.5pt; font-weight: 900;">[ &nbsp;&nbsp; <strong>/ 20</strong> ]</span></td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1(b): <span style="font-size: 9.5pt; font-weight: 900;">[ &nbsp;&nbsp; <strong>/ 20</strong> ]</span></td>
-              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Ext: <span style="font-size: 9.5pt; font-weight: 900;">[ &nbsp;&nbsp; <strong>/ 40</strong> ]</span></td>
-              <td style="padding: 3px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #000000; color: #ffffff;">[ &nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 130</strong> ]</td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Do Now: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${totalStarter}</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1(a): <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${totalQ1a}</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Q1(b): <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${totalQ1b}</strong></span></td>
+              <td style="padding: 3px 4px; border-right: 1px solid #000000; text-align: center; white-space: nowrap; font-size: 8.2pt;">Ext: <span style="font-size: 9.5pt; font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${totalExt}</strong></span></td>
+              <td style="padding: 3px 6px; text-align: center; font-size: 10.5pt; font-weight: 900; background: #ffffff; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ ${grandTotal}</strong></td>
             </tr>`
             }
           </tbody>
@@ -848,7 +955,7 @@ function renderStandardBackCover({
             Teacher Formative Assessment &bull; WWW / EBI Feedback
           </strong>
           <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #222222; font-weight: 700;">
-            Effort Grade: [ &nbsp;&nbsp;&nbsp;&nbsp; ]
+            Effort Grade: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </span>
         </div>
         

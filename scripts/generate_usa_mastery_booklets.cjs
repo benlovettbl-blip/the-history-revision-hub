@@ -3804,12 +3804,12 @@ function renderBookletHtml(ktKey, meta) {
     };
 
     // =========================================================================
-    // 1. DISCRETE KEY TOPIC PUPIL WORKBOOKS (MATCHING WEIMAR & CME STANDARD)
+    // 1. DISCRETE KEY TOPIC MASTERY EXAM PACKS (12 PAGES EACH)
     // =========================================================================
     for (const [ktKey, htmlPath] of Object.entries(generatedHtmlFiles)) {
-      const ktPdfPath = path.join(pdfsDir, `usa_pupil_workbook_${ktKey}.pdf`);
-      await renderPdf(htmlPath, ktPdfPath, `usa_pupil_workbook_${ktKey}.pdf (12 Pages)`);
-      fs.copyFileSync(ktPdfPath, path.join(globalPdfsDir, `usa_pupil_workbook_${ktKey}.pdf`));
+      const ktPdfPath = path.join(pdfsDir, `usa_mastery_${ktKey}.pdf`);
+      await renderPdf(htmlPath, ktPdfPath, `usa_mastery_${ktKey}.pdf (12 Pages)`);
+      fs.copyFileSync(ktPdfPath, path.join(globalPdfsDir, `usa_mastery_${ktKey}.pdf`));
     }
 
     // =========================================================================

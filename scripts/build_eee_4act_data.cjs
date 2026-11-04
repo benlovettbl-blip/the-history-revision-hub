@@ -513,7 +513,6 @@ const upgradedLessons = liveData.lessons.map((lesson, idx) => {
       title: `Act 4: Historical Verdict & Synoptic Resolution (${tb.sec4.title})`,
       theme_heading: `Act 4: Historical Verdict & Synoptic Resolution (${tb.sec4.title})`,
       text: act4Text,
-      tasks: [enquiryTask],
     },
   ];
 

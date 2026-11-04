@@ -1,0 +1,162 @@
+{
+  "phantomWritten": [
+    {
+      "unitId": "australia",
+      "lessonId": "lesson_1",
+      "sourceId": "aus_l1_src_d",
+      "letter": "D",
+      "title": "Source D (Visual Record): Manuscript Journal of Lieutenant James Cook Claiming New South Wales (22 August 1770)",
+      "question": "Why did Cook feel legally justified in claiming over 2,000 miles of inhabited coastline based solely on hoisting a flag on an offshore islet?",
+      "hasImage": true,
+      "image": "/images/aus_cook_journal.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "australia",
+      "lessonId": "lesson_2",
+      "sourceId": "aus_l2_src_b",
+      "letter": "B",
+      "title": "Source B (Visual Record): Journal of Surgeon Arthur Bowes Smyth aboard the Lady Penrhyn (1787–1788)",
+      "question": "How does Bowes Smyth's meticulous medical record reflect Governor Phillip's emphasis on convict survival and health during the voyage?",
+      "hasImage": true,
+      "image": "/images/arthur_bowes_smyth.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "australia",
+      "lessonId": "lesson_4",
+      "sourceId": "aus_l4_src_b",
+      "letter": "B",
+      "title": "Source B (Visual Record): Governor George Arthur's Pictorial Proclamation Board (c. 1829)",
+      "question": "Why did Governor Arthur depict \"equal justice\" on pictorial boards at the very moment he was declaring martial law and mobilizing 2,200 armed men in the Black Line to drive Indigenous Tasmanians from their lands?",
+      "hasImage": true,
+      "image": "/images/governor_arthur_proclamation_board_1829.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "first_british_empire",
+      "lessonId": "lesson_4",
+      "sourceId": "fbe_l4_src_a",
+      "letter": "A",
+      "title": "Source A (Imperial Jurisdiction): King George III's Royal Proclamation of 1763 Broadside",
+      "question": "Why did King George III's Proclamation of 1763 cause profound outrage among American frontier colonists and land speculators?",
+      "hasImage": true,
+      "image": "/images/first_british_empire/royal_proclamation_1763.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "first_british_empire",
+      "lessonId": "lesson_5",
+      "sourceId": "fbe_l5_src_a",
+      "letter": "A",
+      "title": "Source A (Strategic Emancipation): Lord Dunmore's Proclamation of Freedom to Enslaved Persons (November 1775)",
+      "question": "Why did Virginia's royal governor Lord Dunmore promise freedom to enslaved Africans who fled to join the British forces?",
+      "hasImage": true,
+      "image": "/images/dunmore_proclamation_1775.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "first_british_empire",
+      "lessonId": "lesson_5",
+      "sourceId": "fbe_l5_src_e",
+      "letter": "E",
+      "title": "Source E (Diplomatic Settlement & Peace): The Treaty of Paris: Signatures and Wax Seals Page (3 September 1783)",
+      "question": "What immense territorial and political concessions did Great Britain make in the 1783 Treaty of Paris?",
+      "hasImage": true,
+      "image": "/images/first_british_empire/treaty_of_paris_signatures_1783.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "great_war_part2",
+      "lessonId": "lesson_1_enlistment",
+      "sourceId": "lesson_1_enlistment_src_A",
+      "letter": "A",
+      "title": "Source A (State Treaty & Propaganda): Parliamentary Recruiting Committee Poster No. 15, 'The Scrap of Paper' (1914)",
+      "question": "Why did the Parliamentary Recruiting Committee produce a poster highlighting the 1839 Treaty of London?",
+      "hasImage": true,
+      "image": "/images/gw_scrap_of_paper.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "ks2_ww2",
+      "lessonId": "lesson_7",
+      "sourceId": "ks2_ww2_l7_src_c",
+      "letter": "C",
+      "title": "Source C: Nazi Decree Banning All Jewish Children from State Schools (November 1938)",
+      "question": "What does Source C show about how Nazi laws were used to treat Jewish schoolchildren unfairly?",
+      "hasImage": true,
+      "image": "/units/ks2_ww2/assets/school_ban_decree_november_1938.png",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "monarchy_religion_power",
+      "lessonId": "lesson_4",
+      "sourceId": "monarchy_religion_power_l4_src_d",
+      "letter": "D",
+      "title": "Source D (Legal Revolution & Regicide): The Death Warrant of King Charles I Signed by 59 Commissioners (29 January 1649)",
+      "question": "Why did signing the King's death warrant represent an irreversible constitutional revolution in English history?",
+      "hasImage": true,
+      "image": "/images/monarchy_religion_power/death_warrant_charles_i_1649.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "post_war_britain",
+      "lessonId": "lesson_2",
+      "sourceId": "pwb_l2_src_b",
+      "letter": "B",
+      "title": "Source B (Official Document Cover): Title Page of the Landmark Beveridge Report (November 1942)",
+      "question": "Why did the British public react with such extraordinary enthusiasm to the publication of the Beveridge Report in the middle of World War II?",
+      "hasImage": true,
+      "image": "/images/post_war_britain/beveridge_report_title_page_1942.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "second_british_empire",
+      "lessonId": "lesson_3",
+      "sourceId": "sbe_l3_src_d",
+      "letter": "D",
+      "title": "Source D (Pictorial Proclamation): Governor Arthur’s Proclamation Board (Van Diemen’s Land, c. 1828–1830)",
+      "question": "What message did Governor Arthur intend to send to Indigenous people and settlers through this pictorial proclamation board?",
+      "hasImage": true,
+      "image": "/images/governor_arthur_proclamation_board_1829.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "usa",
+      "lessonId": "lesson_4_1",
+      "sourceId": "usa_lesson_4_1_d",
+      "letter": "A",
+      "title": "Source A: Helicopter Pilot Warrant Officer Hugh Thompson Jr., Who Intervened to Halt the My Lai Killings (March 1968)",
+      "question": "How does Major Thompson's position as an active combat aviator who landed his helicopter to confront US troops enhance the value of Source A?",
+      "hasImage": true,
+      "image": "/units/usa/assets/sources/hugh_thompson_jr_1968.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "water_and_sanitation",
+      "lessonId": "lesson_4",
+      "sourceId": "water_l4_src_c",
+      "letter": "Source C",
+      "title": "Edwin Chadwick's 'Report on the Sanitary Condition of the Labouring Population' (1842)",
+      "question": "How did Edwin Chadwick use evidence in Source C to challenge traditional Victorian beliefs about poverty and public health?",
+      "hasImage": true,
+      "image": "/images/chadwick_sanitary_report_1842.jpg",
+      "reason": "Title indicates document/report but no text"
+    },
+    {
+      "unitId": "weimar_nazi_germany",
+      "lessonId": "lesson_1_1",
+      "sourceId": "weimar_l1_source_a",
+      "letter": "C",
+      "title": "Source C: Proclamation of the Republic by Philipp Scheidemann (9 November 1918)",
+      "question": "Give two things you can infer from Source C about the establishment of the Weimar Republic in November 1918.",
+      "hasImage": true,
+      "image": "/images/weimar_scheidemann_proclamation_1918.jpg",
+      "reason": "Title indicates document/report but no text"
+    }
+  ],
+  "missingImages": [],
+  "missingQuestions": [],
+  "missingModels": [],
+  "duplicateImages": []
+}

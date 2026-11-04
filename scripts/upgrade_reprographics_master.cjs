@@ -127,3 +127,4 @@ function upgradeKS3File(fileName) {
 console.log('Upgrading KS3 workbooks to Photocopier-Proof Standard & KS3 Stimulus Prompt...');
 ks3Files.forEach(f => upgradeKS3File(f));
 console.log('Done upgrading KS3 workbooks.');
+

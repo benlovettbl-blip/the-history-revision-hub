@@ -559,7 +559,7 @@ const KT_DATA = {
           'Gamal Abdel Nasser sponsorship',
           'Creation of the PLO (May 1964)',
           'Palestinian National Charter',
-          'Ahmad Shukeiri leadership',
+          'Pan-Arab institutional control',
           'Disillusionment after 1967 defeat',
           'Battle of Karameh (1968)',
           'Yasser Arafat & Fatah takeover (1969)',

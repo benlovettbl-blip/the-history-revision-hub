@@ -122,51 +122,51 @@ function calculateSpecTypography({ colCount, maxItems, maxChars, totalChars }) {
   if (colCount >= 4) {
     // 4 columns (Weimar, Elizabethan, USA)
     if (maxChars > 320 || maxItems >= 4) {
-      fontSize = '6.4pt';
-      lineHeight = '1.18';
-      titleSize = '7.0pt';
-      itemMargin = '2.0px';
-      titleMargin = '3.0px';
+      fontSize = '6.6pt';
+      lineHeight = '1.20';
+      titleSize = '7.2pt';
+      itemMargin = '2.5px';
+      titleMargin = '3.5px';
       bulletSize = '5.0px';
     } else if (maxChars > 220 || maxItems === 3) {
-      fontSize = '6.9pt';
-      lineHeight = '1.24';
-      titleSize = '7.4pt';
-      itemMargin = '3.0px';
-      titleMargin = '3.8px';
-      bulletSize = '5.5px';
-    } else {
-      fontSize = '7.4pt';
-      lineHeight = '1.28';
+      fontSize = '7.2pt';
+      lineHeight = '1.26';
       titleSize = '7.8pt';
       itemMargin = '3.5px';
-      titleMargin = '4.5px';
+      titleMargin = '4.0px';
+      bulletSize = '5.5px';
+    } else {
+      fontSize = '7.8pt';
+      lineHeight = '1.32';
+      titleSize = '8.4pt';
+      itemMargin = '4.0px';
+      titleMargin = '4.8px';
       bulletSize = '6.0px';
     }
   } else {
     // 3 columns (Middle East, Medicine)
     if (maxChars > 420 || maxItems >= 5) {
-      fontSize = '6.8pt';
-      lineHeight = '1.20';
-      titleSize = '7.5pt';
-      itemMargin = '2.2px';
-      titleMargin = '3.2px';
-      bulletSize = '5.0px';
+      fontSize = '7.0pt';
+      lineHeight = '1.22';
+      titleSize = '7.6pt';
+      itemMargin = '2.5px';
+      titleMargin = '3.5px';
+      bulletSize = '5.2px';
     } else if (maxChars > 270 || maxItems >= 4) {
-      fontSize = '7.3pt';
-      lineHeight = '1.26';
-      titleSize = '8.0pt';
-      itemMargin = '3.2px';
-      titleMargin = '4.0px';
-      bulletSize = '5.8px';
+      fontSize = '7.6pt';
+      lineHeight = '1.30';
+      titleSize = '8.2pt';
+      itemMargin = '3.5px';
+      titleMargin = '4.2px';
+      bulletSize = '6.0px';
     } else {
       // 3 items with standard length (e.g. CME KT1, KT2, KT3)
-      fontSize = '7.7pt';
-      lineHeight = '1.30';
-      titleSize = '8.3pt';
-      itemMargin = '4.0px';
-      titleMargin = '4.5px';
-      bulletSize = '6.2px';
+      fontSize = '8.8pt';
+      lineHeight = '1.42';
+      titleSize = '9.2pt';
+      itemMargin = '6.0px';
+      titleMargin = '6.0px';
+      bulletSize = '7.0px';
     }
   }
 

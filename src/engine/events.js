@@ -555,7 +555,7 @@ export function initEventDelegation() {
         const allTabs = launchpad.querySelectorAll('.launchpad-tab-btn');
         const allPanels = launchpad.querySelectorAll('.launchpad-panel');
         const targetPanel = launchpad.querySelector(`.launchpad-panel[data-panel="${tabKey}"]`);
-        const closeBtn = launchpad.querySelector('.launchpad-close-btn');
+        const actionBtns = launchpad.querySelectorAll('.launchpad-close-btn, .launchpad-start-reading-btn');
 
         const isCurrentlyActive =
           target.classList.contains('active') && drawer && drawer.style.display !== 'none';
@@ -564,7 +564,7 @@ export function initEventDelegation() {
           // Toggle close
           if (drawer) drawer.style.display = 'none';
           allTabs.forEach((t) => t.classList.remove('active'));
-          if (closeBtn) closeBtn.style.display = 'none';
+          actionBtns.forEach((btn) => btn.style.display = 'none');
         } else {
           // Open target panel
           if (drawer) drawer.style.display = 'block';
@@ -572,7 +572,7 @@ export function initEventDelegation() {
           allPanels.forEach((p) => {
             p.style.display = p.dataset.panel === tabKey ? 'block' : 'none';
           });
-          if (closeBtn) closeBtn.style.display = 'inline-flex';
+          actionBtns.forEach((btn) => btn.style.display = 'inline-flex');
         }
         break;
       }
@@ -581,10 +581,10 @@ export function initEventDelegation() {
         if (launchpad) {
           const drawer = launchpad.querySelector('.lesson-launchpad-drawer');
           const allTabs = launchpad.querySelectorAll('.launchpad-tab-btn');
-          const closeBtn = launchpad.querySelector('.launchpad-close-btn');
+          const actionBtns = launchpad.querySelectorAll('.launchpad-close-btn, .launchpad-start-reading-btn');
           if (drawer) drawer.style.display = 'none';
           allTabs.forEach((t) => t.classList.remove('active'));
-          if (closeBtn) closeBtn.style.display = 'none';
+          actionBtns.forEach((btn) => btn.style.display = 'none');
         }
         break;
       }
@@ -593,10 +593,10 @@ export function initEventDelegation() {
         if (launchpad) {
           const drawer = launchpad.querySelector('.lesson-launchpad-drawer');
           const allTabs = launchpad.querySelectorAll('.launchpad-tab-btn');
-          const closeBtn = launchpad.querySelector('.launchpad-close-btn');
+          const actionBtns = launchpad.querySelectorAll('.launchpad-close-btn, .launchpad-start-reading-btn');
           if (drawer) drawer.style.display = 'none';
           allTabs.forEach((t) => t.classList.remove('active'));
-          if (closeBtn) closeBtn.style.display = 'none';
+          actionBtns.forEach((btn) => btn.style.display = 'none');
         }
         const firstNarrative =
           document.querySelector('.historical-editorial-lede') ||

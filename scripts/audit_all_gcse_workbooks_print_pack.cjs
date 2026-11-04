@@ -47,12 +47,30 @@ const GCSE_WORKBOOKS = [
     pdf: 'public/pdfs/cme_new_pupil_workbook_KT3.pdf',
   },
 
-  // USA 1954–1975 (Master Compendium 48-Page Standard)
+  // USA 1954–1975 (20-Page Gold Standard Pupil Workbooks)
   {
     unit: 'usa',
-    name: 'USA Master Compendium (48 Pages)',
-    html: 'public/units/usa/booklets/usa_mastery_FULL.html',
-    pdf: 'public/pdfs/usa_mastery_pack_FULL.pdf',
+    name: 'KT1 (1954–1960)',
+    html: 'public/units/usa/pupil_workbook_KT1.html',
+    pdf: 'public/pdfs/usa_pupil_workbook_KT1.pdf',
+  },
+  {
+    unit: 'usa',
+    name: 'KT2 (1960–1975)',
+    html: 'public/units/usa/pupil_workbook_KT2.html',
+    pdf: 'public/pdfs/usa_pupil_workbook_KT2.pdf',
+  },
+  {
+    unit: 'usa',
+    name: 'KT3 (1954–1968)',
+    html: 'public/units/usa/pupil_workbook_KT3.html',
+    pdf: 'public/pdfs/usa_pupil_workbook_KT3.pdf',
+  },
+  {
+    unit: 'usa',
+    name: 'KT4 (1968–1975)',
+    html: 'public/units/usa/pupil_workbook_KT4.html',
+    pdf: 'public/pdfs/usa_pupil_workbook_KT4.pdf',
   },
 
   // Weimar and Nazi Germany

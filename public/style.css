@@ -7690,6 +7690,16 @@ details.spotlight-drawer[open] summary i.fa-chevron-down {
   transition: all 0.15s ease;
 }
 
+.spine-stage-number-node {
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.spine-stage-number-node:hover {
+  background: #0369a1 !important;
+  transform: scale(1.12);
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.45) !important;
+}
+
 .spine-stage-jump-pill:hover {
   background: #0284c7 !important;
   color: #ffffff !important;
@@ -10684,13 +10694,48 @@ body.search-modal-open {
   border-radius: 0 !important;
 }
 
+.donow-sentence-row {
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+}
+
+.donow-sentence-row:hover {
+  background-color: #f8fafc !important;
+}
+
+.donow-sentence-row.revealed {
+  background-color: #f0fdf4 !important;
+  border-left: 3px solid #10b981 !important;
+}
+
+.donow-sentence-row.revealed:hover {
+  background-color: #ecfdf5 !important;
+}
+
 .donow-sentence-row.revealed .donow-reveal-pill {
   display: none !important;
+}
+
+.donow-sentence-row.revealed .donow-revealed-pill {
+  display: inline-flex !important;
 }
 
 .donow-sentence-row.revealed .answer {
   display: inline-flex !important;
   align-items: center;
+  animation: donowInlineFadeSlide 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes donowInlineFadeSlide {
+  0% {
+    opacity: 0;
+    transform: scale(0.96) translateX(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
 }
 
 @media (max-width: 768px) {
@@ -10701,14 +10746,7 @@ body.search-modal-open {
   }
 
   .donow-sentence-row {
-    flex-direction: column;
-    align-items: flex-start !important;
-    gap: 6px !important;
-    padding: 8px 12px !important;
-  }
-
-  .donow-right-answer-box {
-    margin-left: 32px !important;
+    padding: 8px 10px !important;
   }
 }
 
