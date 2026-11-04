@@ -11227,13 +11227,16 @@ export function injectArchivalAudioButtons(container = document) {
   });
 
   // Global click-away handler to dismiss specification anchor popovers
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.spec-anchor-popover')) {
-      document.querySelectorAll('.spec-anchor-popover[open]').forEach((el) => {
-        el.removeAttribute('open');
-      });
-    }
-  });
+  if (!window._specAnchorListenerBound) {
+    window._specAnchorListenerBound = true;
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.spec-anchor-popover')) {
+        document.querySelectorAll('.spec-anchor-popover[open]').forEach((el) => {
+          el.removeAttribute('open');
+        });
+      }
+    });
+  }
 }
 
 export function initCrummackInteractiveFeatures() {
@@ -11980,13 +11983,16 @@ if (typeof window !== 'undefined' && !window._cmeSourceHighlightBound) {
   });
 
   // Global click-away handler to dismiss specification anchor popovers
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.spec-anchor-popover')) {
-      document.querySelectorAll('.spec-anchor-popover[open]').forEach((el) => {
-        el.removeAttribute('open');
-      });
-    }
-  });
+  if (!window._specAnchorListenerBound) {
+    window._specAnchorListenerBound = true;
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.spec-anchor-popover')) {
+        document.querySelectorAll('.spec-anchor-popover[open]').forEach((el) => {
+          el.removeAttribute('open');
+        });
+      }
+    });
+  }
 }
 
 export function toggleAllAnswers(btnOrContainer) {
