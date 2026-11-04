@@ -2815,7 +2815,6 @@ export function renderLessonLaunchpad({
                 title="${tab.label}">
                 <i class="${tab.icon}"></i>
                 <span>${tab.label}</span>
-                ${tab.badge ? `<span class="launchpad-tab-badge">${tab.badge}</span>` : ''}
               </button>
             `;
       })
