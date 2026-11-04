@@ -3792,11 +3792,53 @@ export function renderLesson(lesson) {
     ? lessonPrefix
     : `${unitBadgeTitle} &bull; ${isGCSE ? 'Lesson ' + (currentIndex + 1) : 'Enquiry ' + (currentIndex + 1)}`;
 
+  let specPillHtml = '';
+  if (lesson.specification_anchor) {
+    const specPaperBadge =
+      unitId === 'edexcel_medicine'
+        ? 'Edexcel Paper 1'
+        : unitId === 'cme_new'
+          ? 'Edexcel Paper 2'
+          : unitId === 'eee'
+            ? 'Edexcel Paper 2'
+            : unitId === 'weimar_nazi_germany'
+              ? 'Edexcel Paper 3'
+              : unitId === 'usa'
+                ? 'Edexcel Paper 3'
+                : isKs3
+                  ? 'Key Stage 3'
+                  : isKs2
+                    ? 'Key Stage 2'
+                    : 'Edexcel GCSE';
+
+    specPillHtml = `
+      <details class="spec-anchor-popover" style="position: relative; display: inline-block; margin: 0; z-index: 50;">
+        <summary style="list-style: none; cursor: pointer; background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(148, 163, 184, 0.45); color: #93c5fd; padding: 3px 10px; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.4px; display: inline-flex; align-items: center; gap: 6px; backdrop-filter: blur(6px); transition: all 0.2s;" title="Click to view syllabus specification alignment">
+          <i class="fa-solid fa-bookmark" style="color: #60a5fa; font-size: 0.72rem;"></i>
+          <span>${specPaperBadge} Spec Anchor</span>
+          <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem; opacity: 0.8; margin-left: 2px;"></i>
+        </summary>
+        <div class="spec-popover-content" style="position: absolute; right: 0; top: calc(100% + 6px); z-index: 1000; width: min(450px, calc(100vw - 48px)); background: #ffffff; color: #0f172a; padding: 14px 18px; border-radius: 8px; border: 1.5px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28); font-family: 'Inter', sans-serif; font-size: 0.88rem; line-height: 1.5; text-shadow: none;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">
+            <strong style="color: #1e3a8a; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 5px;">
+              <i class="fa-solid fa-scroll" style="color: #3b82f6;"></i> Official Syllabus Anchor
+            </strong>
+            <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">${specPaperBadge}</span>
+          </div>
+          <p style="margin: 0; color: #334155; font-style: italic; font-size: 0.86rem; line-height: 1.45;">&ldquo;${lesson.specification_anchor}&rdquo;</p>
+        </div>
+      </details>
+    `;
+  }
+
   html += `
       <div class="lesson-hero${heroExtraClass}" style="position: relative; width: calc(100% + 8rem); margin-left: -4rem; margin-top: 0; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border-glass); box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
         <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.85) 45%, rgba(15,23,42,0.96) 100%); backdrop-filter: blur(1px);"></div>
         <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1rem 4rem;">
-          <span style="color: #cbd5e1; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.78rem;">${heroEyebrow}</span>
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 2px;">
+            <span style="color: #cbd5e1; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.78rem;">${heroEyebrow}</span>
+            ${specPillHtml}
+          </div>
           <h2 style="font-family: 'Playfair Display', serif; color: white; font-size: 1.6rem; margin: 0.2rem 0 0 0; line-height: 1.2; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">${cleanLessonHeading}</h2>
           ${enquirySubtitle}
         </div>
@@ -3809,35 +3851,6 @@ export function renderLesson(lesson) {
         <div id="progress-bar" style="background: #10b981; height: 100%; width: 0%; transition: width 0.3s;"></div>
       </div>
     `;
-
-  // GCSE Specification Anchor Strip
-  if (lesson.specification_anchor) {
-    const specPaperBadge =
-      unitId === 'edexcel_medicine'
-        ? 'Edexcel Paper 1 &bull; Specification Anchor'
-        : unitId === 'cme_new'
-          ? 'Edexcel Paper 2 &bull; Specification Anchor'
-          : unitId === 'eee'
-            ? 'Edexcel Paper 2 &bull; Specification Anchor'
-            : unitId === 'weimar_nazi_germany'
-              ? 'Edexcel Paper 3 &bull; Specification Anchor'
-              : isKs3
-                ? 'Key Stage 3 &bull; Curriculum Anchor'
-                : isKs2
-                  ? 'Key Stage 2 &bull; Curriculum Anchor'
-                  : 'Edexcel GCSE &bull; Specification Anchor';
-
-    html += `
-      <div class="gcse-spec-anchor-strip">
-        <span style="background: #1e3a8a; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.76rem; font-weight: 800; padding: 3px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px;">
-          <i class="fa-solid fa-bookmark" style="color: #60a5fa;"></i> ${specPaperBadge}
-        </span>
-        <span class="spec-text" style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #1e293b; line-height: 1.4; flex: 1; min-width: 260px;">
-          <strong style="color: #0f172a;">Syllabus Focus:</strong> &ldquo;${lesson.specification_anchor}&rdquo;
-        </span>
-      </div>
-    `;
-  }
 
   // -----------------------------------------------------
   // TABS NAVIGATION UI
@@ -11212,6 +11225,15 @@ export function injectArchivalAudioButtons(container = document) {
       box.insertBefore(topBar, box.firstChild);
     }
   });
+
+  // Global click-away handler to dismiss specification anchor popovers
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.spec-anchor-popover')) {
+      document.querySelectorAll('.spec-anchor-popover[open]').forEach((el) => {
+        el.removeAttribute('open');
+      });
+    }
+  });
 }
 
 export function initCrummackInteractiveFeatures() {
@@ -11954,6 +11976,15 @@ if (typeof window !== 'undefined' && !window._cmeSourceHighlightBound) {
         card.classList.add('source-card-highlighted');
         setTimeout(() => card.classList.remove('source-card-highlighted'), 3000);
       }
+    }
+  });
+
+  // Global click-away handler to dismiss specification anchor popovers
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.spec-anchor-popover')) {
+      document.querySelectorAll('.spec-anchor-popover[open]').forEach((el) => {
+        el.removeAttribute('open');
+      });
     }
   });
 }
