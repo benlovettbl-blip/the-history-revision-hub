@@ -67780,29 +67780,30 @@
                 {
                   "id": "eee_l7_source_e",
                   "letter": "E",
-                  "title": "Source E: Route and Shipwrecks of the Spanish Armada around Scotland and Ireland (1588)",
-                  "src": "/images/spanish_armada_1588_route_battle_map.jpg",
-                  "image": "/images/spanish_armada_1588_route_battle_map.jpg",
-                  "source": "/images/spanish_armada_1588_route_battle_map.jpg",
-                  "caption": "Historical Map of the Spanish Armada's Retreat: Charting the perilous voyage around northern Scotland and the catastrophic Atlantic shipwrecks along the Irish coast (September 1588).",
-                  "desc": "The track of the surviving Armada ships fleeing north around Scotland and wrecked along the Atlantic coast of Ireland.",
-                  "provenance": "The National Archives, Kew (MPF 1/240), contemporary map of Armada wrecks, 1588.",
-                  "citation": "The National Archives, Kew.",
+                  "type": "portrait",
+                  "title": "Source E: Portrait of Alexander Farnese, Duke of Parma (c. 1588)",
+                  "src": "/images/the_duke_of_parma.png",
+                  "image": "/images/the_duke_of_parma.png",
+                  "source": "/images/the_duke_of_parma.png",
+                  "caption": "Alexander Farnese, Duke of Parma, commander of Spain's formidable Army of Flanders, whose 27,000 veteran troops were assembled at Dunkirk waiting for Medina Sidonia's fleet to clear the Channel.",
+                  "desc": "Portrait of Alexander Farnese, Duke of Parma, supreme commander of the Spanish Army of Flanders.",
+                  "provenance": "Rijksmuseum, Amsterdam (SK-A-1678 / Public Domain), c. 1588.",
+                  "citation": "Rijksmuseum, Amsterdam.",
                   "hinge_question": "Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?",
                   "source_context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army. Parma had no deep-water port, and Dutch Protestant Sea Beggars in shallow gunboats blockaded the Flemish canals, making it impossible for Parma to embark without total naval escort. **Hinge Question:** Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?",
                   "context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army.",
                   "question_badge": "Reliability & Provenance",
                   "question_type": "Reliability & Provenance",
-                  "enquiry_question": "Why is Source E valuable for showing why less than half of Philip II's soldiers returned to Spain?",
-                  "model_answer": "Source E maps the devastating trail of Atlantic wrecks along the Irish coast, showing that severe gales, starvation, and lack of fresh water destroyed far more Spanish ships and men than battle casualties.",
+                  "enquiry_question": "Why was the rendezvous with Parma's army the fatal weakness of Philip II's invasion plan?",
+                  "model_answer": "Source E highlights that the invasion was completely dependent on joining Parma's 27,000 veteran infantry waiting at Dunkirk. Because Parma had no deep-water port and Dutch flyboats blockaded the shallow Flemish coast, Parma could not embark until the Armada cleared the Channel, creating an impossible tactical coordination problem.",
                   "provenance_clues": {
-                    "author": "Dutch Protestant engraver recording the threat posed by Parma's army in the Low Countries.",
-                    "audience": "Dutch and English Protestant readers celebrating the failure of the invasion.",
-                    "motive": "To expose the strategic helplessness of Spanish ground forces trapped by Dutch coastal flyboats.",
+                    "author": "Court portrait artist depicting the Duke of Parma as supreme commander of the Army of Flanders.",
+                    "audience": "The Spanish and Habsburg courts celebrating military leadership.",
+                    "motive": "To portray Parma's aristocratic authority and martial prestige as Spain's paramount general.",
                     "hinge_question": "Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?"
                   },
                   "teacher_notes": {
-                    "source_context": "With the English Channel blocked, Medina Sidonia had no choice but to sail north around the Orkneys. Without spare anchors or water barrels, fierce autumn storms smashed over 35 galleons against the rocky coasts of Sligo, Mayo, and Kerry. **Hinge Question:** Why did contemporary Elizabethans celebrate the Irish gales as 'The Protestant Wind', and how did this transform the religious significance of the victory?"
+                    "source_context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army. Parma had no deep-water port, and Dutch Protestant Sea Beggars in shallow gunboats blockaded the Flemish canals, making it impossible for Parma to embark without total naval escort. **Hinge Question:** Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?"
                   }
                 }
               ]
@@ -68139,29 +68140,30 @@
             {
               "id": "eee_l7_source_e",
               "letter": "E",
-              "title": "Source E: Route and Shipwrecks of the Spanish Armada around Scotland and Ireland (1588)",
-              "src": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "image": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "source": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "caption": "Historical Map of the Spanish Armada's Retreat: Charting the perilous voyage around northern Scotland and the catastrophic Atlantic shipwrecks along the Irish coast (September 1588).",
-              "desc": "The track of the surviving Armada ships fleeing north around Scotland and wrecked along the Atlantic coast of Ireland.",
-              "provenance": "The National Archives, Kew (MPF 1/240), contemporary map of Armada wrecks, 1588.",
-              "citation": "The National Archives, Kew.",
+              "type": "portrait",
+              "title": "Source E: Portrait of Alexander Farnese, Duke of Parma (c. 1588)",
+              "src": "/images/the_duke_of_parma.png",
+              "image": "/images/the_duke_of_parma.png",
+              "source": "/images/the_duke_of_parma.png",
+              "caption": "Alexander Farnese, Duke of Parma, commander of Spain's formidable Army of Flanders, whose 27,000 veteran troops were assembled at Dunkirk waiting for Medina Sidonia's fleet to clear the Channel.",
+              "desc": "Portrait of Alexander Farnese, Duke of Parma, supreme commander of the Spanish Army of Flanders.",
+              "provenance": "Rijksmuseum, Amsterdam (SK-A-1678 / Public Domain), c. 1588.",
+              "citation": "Rijksmuseum, Amsterdam.",
               "hinge_question": "Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?",
               "source_context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army. Parma had no deep-water port, and Dutch Protestant Sea Beggars in shallow gunboats blockaded the Flemish canals, making it impossible for Parma to embark without total naval escort. **Hinge Question:** Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?",
               "context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army.",
               "question_badge": "Reliability & Provenance",
               "question_type": "Reliability & Provenance",
-              "enquiry_question": "Why is Source E valuable for showing why less than half of Philip II's soldiers returned to Spain?",
-              "model_answer": "Source E maps the devastating trail of Atlantic wrecks along the Irish coast, showing that severe gales, starvation, and lack of fresh water destroyed far more Spanish ships and men than battle casualties.",
+              "enquiry_question": "Why was the rendezvous with Parma's army the fatal weakness of Philip II's invasion plan?",
+              "model_answer": "Source E highlights that the invasion was completely dependent on joining Parma's 27,000 veteran infantry waiting at Dunkirk. Because Parma had no deep-water port and Dutch flyboats blockaded the shallow Flemish coast, Parma could not embark until the Armada cleared the Channel, creating an impossible tactical coordination problem.",
               "provenance_clues": {
-                "author": "Dutch Protestant engraver recording the threat posed by Parma's army in the Low Countries.",
-                "audience": "Dutch and English Protestant readers celebrating the failure of the invasion.",
-                "motive": "To expose the strategic helplessness of Spanish ground forces trapped by Dutch coastal flyboats.",
+                "author": "Court portrait artist depicting the Duke of Parma as supreme commander of the Army of Flanders.",
+                "audience": "The Spanish and Habsburg courts celebrating military leadership.",
+                "motive": "To portray Parma's aristocratic authority and martial prestige as Spain's paramount general.",
                 "hinge_question": "Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?"
               },
               "teacher_notes": {
-                "source_context": "With the English Channel blocked, Medina Sidonia had no choice but to sail north around the Orkneys. Without spare anchors or water barrels, fierce autumn storms smashed over 35 galleons against the rocky coasts of Sligo, Mayo, and Kerry. **Hinge Question:** Why did contemporary Elizabethans celebrate the Irish gales as 'The Protestant Wind', and how did this transform the religious significance of the victory?"
+                "source_context": "The fundamental flaw of Philip II's invasion plan was the rendezvous between Medina Sidonia's fleet and Parma's army. Parma had no deep-water port, and Dutch Protestant Sea Beggars in shallow gunboats blockaded the Flemish canals, making it impossible for Parma to embark without total naval escort. **Hinge Question:** Why was the Armada completely dependent on rendezvous with Parma's barges at Dunkirk to mount an invasion of England?"
               }
             }
           ],
@@ -68832,29 +68834,30 @@
                 {
                   "id": "eee_l8_source_c",
                   "letter": "C",
-                  "title": "Source C: Cartographic Route of the Armada's Flight Around Scotland and Ireland",
-                  "src": "/images/spanish_armada_1588_route_battle_map.jpg",
-                  "image": "/images/spanish_armada_1588_route_battle_map.jpg",
-                  "source": "/images/spanish_armada_1588_route_battle_map.jpg",
-                  "caption": "Historical map tracing the catastrophic northern retreat route of the Armada through the North Sea, past the Orkneys, and into ferocious Atlantic gales off the Irish coast.",
-                  "desc": "Cartographic route map of the 1588 Spanish Armada.",
-                  "provenance": "The History Revision Hub Archival Cartography Series (Cartographic Record ARC-MAP-1588), 2026.",
-                  "citation": "The History Revision Hub Archival Cartography Series.",
+                  "type": "map",
+                  "title": "Source C: Cartographic Routes and Shipwrecks of the Spanish Armada (1588)",
+                  "src": "/images/spanish_armada_west_point_routes_map_auth.png",
+                  "image": "/images/spanish_armada_west_point_routes_map_auth.png",
+                  "source": "/images/spanish_armada_west_point_routes_map_auth.png",
+                  "caption": "Modern cartographic reconstruction tracing the voyage and retreat of the Spanish Armada: the running Channel battles (Plymouth, Portland, Isle of Wight, Gravelines), the flight around Scotland, and the concentrated shipwrecks along the Atlantic coast of Ireland.",
+                  "desc": "Cartographic map of the Spanish Armada routes, channel engagements, and shipwreck sites.",
+                  "provenance": "Department of History, United States Military Academy (West Point). Cartographic Series: European Military History.",
+                  "citation": "Department of History, United States Military Academy (West Point).",
                   "hinge_question": "Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
-                  "source_context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast, and survivors were slain by English garrisons. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
-                  "context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland.",
+                  "source_context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
+                  "context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland.",
                   "question_badge": "Source Inference",
                   "question_type": "Source Inference",
-                  "enquiry_question": "What does Source C suggest about why Spanish losses were so much higher during the retreat than during channel combat?",
-                  "model_answer": "Source C shows that the long, hazardous voyage around Ireland exposed damaged ships with ruined food and water barrels to severe Atlantic storms, causing catastrophic shipwrecks far exceeding combat losses at Gravelines.",
+                  "enquiry_question": "What does Source C suggest about why Spanish losses were so much higher during the retreat around Ireland than during channel combat?",
+                  "model_answer": "Source C shows that the long, hazardous voyage around Scotland and Ireland exposed damaged ships to severe Atlantic storms, causing dense clusters of catastrophic shipwrecks along the Irish coast far exceeding the losses sustained in Channel fighting.",
                   "provenance_clues": {
-                    "author": "Naval cartographer analyzing primary logbooks from English and Spanish admiralty archives.",
-                    "audience": "GCSE historical researchers studying sixteenth-century naval strategy.",
-                    "motive": "To provide an accurate geographic breakdown of Armada shipwrecks and navigational hazards.",
+                    "author": "Military cartographers at the United States Military Academy (West Point) analyzing Admiralty logbooks.",
+                    "audience": "Cadets and historical researchers studying sixteenth-century naval strategy and maritime warfare.",
+                    "motive": "To provide an accurate, geographically verified visual record of fleet routes, engagements, and shipwreck sites.",
                     "hinge_question": "Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
                   },
                   "teacher_notes": {
-                    "source_context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast, and survivors were slain by English garrisons. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
+                    "source_context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
                   }
                 }
               ]
@@ -69266,29 +69269,30 @@
             {
               "id": "eee_l8_source_c",
               "letter": "C",
-              "title": "Source C: Cartographic Route of the Armada's Flight Around Scotland and Ireland",
-              "src": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "image": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "source": "/images/spanish_armada_1588_route_battle_map.jpg",
-              "caption": "Historical map tracing the catastrophic northern retreat route of the Armada through the North Sea, past the Orkneys, and into ferocious Atlantic gales off the Irish coast.",
-              "desc": "Cartographic route map of the 1588 Spanish Armada.",
-              "provenance": "The History Revision Hub Archival Cartography Series (Cartographic Record ARC-MAP-1588), 2026.",
-              "citation": "The History Revision Hub Archival Cartography Series.",
+              "type": "map",
+              "title": "Source C: Cartographic Routes and Shipwrecks of the Spanish Armada (1588)",
+              "src": "/images/spanish_armada_west_point_routes_map_auth.png",
+              "image": "/images/spanish_armada_west_point_routes_map_auth.png",
+              "source": "/images/spanish_armada_west_point_routes_map_auth.png",
+              "caption": "Modern cartographic reconstruction tracing the voyage and retreat of the Spanish Armada: the running Channel battles (Plymouth, Portland, Isle of Wight, Gravelines), the flight around Scotland, and the concentrated shipwrecks along the Atlantic coast of Ireland.",
+              "desc": "Cartographic map of the Spanish Armada routes, channel engagements, and shipwreck sites.",
+              "provenance": "Department of History, United States Military Academy (West Point). Cartographic Series: European Military History.",
+              "citation": "Department of History, United States Military Academy (West Point).",
               "hinge_question": "Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
-              "source_context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast, and survivors were slain by English garrisons. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
-              "context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland.",
+              "source_context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?",
+              "context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland.",
               "question_badge": "Source Inference",
               "question_type": "Source Inference",
-              "enquiry_question": "What does Source C suggest about why Spanish losses were so much higher during the retreat than during channel combat?",
-              "model_answer": "Source C shows that the long, hazardous voyage around Ireland exposed damaged ships with ruined food and water barrels to severe Atlantic storms, causing catastrophic shipwrecks far exceeding combat losses at Gravelines.",
+              "enquiry_question": "What does Source C suggest about why Spanish losses were so much higher during the retreat around Ireland than during channel combat?",
+              "model_answer": "Source C shows that the long, hazardous voyage around Scotland and Ireland exposed damaged ships to severe Atlantic storms, causing dense clusters of catastrophic shipwrecks along the Irish coast far exceeding the losses sustained in Channel fighting.",
               "provenance_clues": {
-                "author": "Naval cartographer analyzing primary logbooks from English and Spanish admiralty archives.",
-                "audience": "GCSE historical researchers studying sixteenth-century naval strategy.",
-                "motive": "To provide an accurate geographic breakdown of Armada shipwrecks and navigational hazards.",
+                "author": "Military cartographers at the United States Military Academy (West Point) analyzing Admiralty logbooks.",
+                "audience": "Cadets and historical researchers studying sixteenth-century naval strategy and maritime warfare.",
+                "motive": "To provide an accurate, geographically verified visual record of fleet routes, engagements, and shipwreck sites.",
                 "hinge_question": "Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
               },
               "teacher_notes": {
-                "source_context": "With the English Channel blocked by Howard and Drake, Medina Sidonia was forced to sail north around Scotland and Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast, and survivors were slain by English garrisons. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
+                "source_context": "With the English Channel blocked by Howard and Drake following the Battle of Gravelines, Medina Sidonia was forced to sail north around Scotland and down past Ireland. Damaged ships, lacking anchors and fresh water, encountered ferocious unseasonal Atlantic gales; over 30 galleons were wrecked on the Irish coast. **Hinge Question:** Why did severe Atlantic gales and uncharted rocky coastlines inflict catastrophic losses on the retreating Spanish fleet off Ireland?"
               }
             },
             {
