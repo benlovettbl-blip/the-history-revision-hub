@@ -496,59 +496,56 @@ function renderSpinePage(cfg, pageNum, quip, keyTopicNum) {
 
   const stagesHtml = stages
     .map((st, sIdx) => {
-      const bulletsHtml = st.bullets
+      const stageNum = st.step || sIdx + 1;
+      const questionText = st.questionHeading || st.focusClue || st.title;
+
+      const bulletsHtml = (st.bullets || [])
         .map(
           (b, idx) => `
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ${idx < 2 ? 'border-bottom: 0.8px solid #000000;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">${b}</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
               </div>
             </div>`,
         )
         .join('');
 
-      const questionText = st.questionHeading || st.focusClue || st.title;
-      const paraBadge = st.paraBadge || `[${sIdx + 1}.1]`;
-
       return `
+        <!-- STAGE ${stageNum} CONTAINER -->
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
           <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 2px 7px; display: flex; align-items: center; border-bottom: 1.2px solid #000000; min-height: 20px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; padding: 0.6px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
-                ${st.step || sIdx + 1}
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+                ${stageNum}
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 800; color: #ffffff; white-space: nowrap; flex-shrink: 0;">
-                ${st.dates}
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
+                ${st.dates ? `${st.dates}` : ''}
               </span>
-              <span style="color: #ffffff; font-size: 7.5pt; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.6pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; letter-spacing: -0.1px;">
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 ${questionText}
               </span>
             </div>
-            <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 900; padding: 0.5px 5px; border-radius: 2px; margin-left: 6px; white-space: nowrap; flex-shrink: 0;">
-              ${paraBadge}
-            </span>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine (Pure White Canvas, Zero Grey Dithering) -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               ${bulletsHtml}
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines (Expanded Writing Space) -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
@@ -574,16 +571,6 @@ function renderSpinePage(cfg, pageNum, quip, keyTopicNum) {
           ${enquiryTitle}
         </h2>
       </div>
-
-      <!-- Core Specification Focus Strip -->
-      ${
-        specAnchor
-          ? `
-      <div style="border: 1px solid #000000; border-left: 3.5px solid #000000; padding: 2.5px 7px; background: #ffffff; margin-bottom: 2px; font-family: 'Inter', sans-serif; font-size: 8.4pt; line-height: 1.26; color: #000000;">
-        <strong style="color: #000000;">Core Specification Focus:</strong> ${specAnchor}
-      </div>`
-          : ''
-      }
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
       <div style="flex: 1; display: flex; flex-direction: column; min-height: 0; margin-top: 2px;">
@@ -642,24 +629,10 @@ function renderEnquiryWritingPart1(cfg, pageNum, quip, keyTopicNum) {
           </div>
         </div>
 
-        <!-- Accessible Writing Frames & Key Vocabulary Bank -->
-        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 3px 6px; background: #ffffff; margin-bottom: 3px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 6px;">
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">
-              Accessible Writing Frames:
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; line-height: 1.2; display: block; color: #222222;">
-              ${cfg.connectives}
-            </span>
-          </div>
-          <div>
-            <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: block; margin-bottom: 1px; color: #000000;">
-              Key Vocabulary Bank:
-            </strong>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; line-height: 1.2; display: block; color: #111111;">
-              ${cfg.wordBank}
-            </span>
-          </div>
+        <!-- Analytical Connectives (Full Width Scaffolding Standard) -->
+        <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 2.5px 6px; background: #ffffff; margin-bottom: 3px;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.0pt; text-transform: uppercase; display: inline-block; margin-right: 4px; color: #000000;">Analytical Connectives:</strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-style: italic; color: #222222; line-height: 1.2;">${cfg.connectives}</span>
         </div>
 
         <!-- Ruled Task Lines Prompt -->
@@ -1380,6 +1353,37 @@ function buildEeeKeyTopicWorkbook(ktId) {
     .task-section {
       margin-bottom: 2px;
     }
+    .stage-trigger-col {
+      width: 26mm;
+      flex-shrink: 0;
+      background: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      border-right: 1.2px solid #000000;
+      box-sizing: border-box;
+    }
+    .trigger-fact-cell {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 3px;
+    }
+    .stage-writing-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #ffffff;
+      box-sizing: border-box;
+    }
+    .ruled-line {
+      height: 8.2mm;
+      border-bottom: 0.8px solid #000000;
+      box-sizing: border-box;
+    }
+    .ruled-line:last-child {
+      border-bottom: none;
+    }
     .task-line {
       border-bottom: 1.2px solid #000000;
       height: 7.8mm;
@@ -1642,7 +1646,7 @@ function buildEeeKeyTopicWorkbook(ktId) {
             Enquiry ${data.keyTopicNum}.${enq.enquiryNum}: ${enq.title}
           </strong>
           <span style="font-size: 7.2pt; color: #475569; display: block; margin-top: 2px;">
-            Spine Lecture Notes (p. ${spinePageNum}): &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong>
+            Do Now Starter (p. ${spinePageNum}): &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong>
           </span>
         </td>
         <td style="padding: 3px 4px; text-align: center; border-right: 1px solid #000000; font-size: 7.4pt; font-weight: 800; background: #fafafa;">

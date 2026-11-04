@@ -673,53 +673,57 @@ function renderFooterStrip(pageNum, quip, totalPages = 20) {
 // ============================================================================
 function renderSpinePage(cfg, pageNum, totalPages = 20) {
   const stagesHtml = cfg.stages
-    .map((st) => {
-      const bulletsHtml = st.bullets
+    .map((st, sIdx) => {
+      const stageNum = st.step || sIdx + 1;
+      const questionText = st.questionHeading || st.focusClue || st.title;
+
+      const bulletsHtml = (st.bullets || [])
         .map(
           (b, idx) => `
-            <div style="flex: 1; display: flex; align-items: center; padding: 0 5px; ${idx < 2 ? 'border-bottom: 0.8px solid #000000;' : ''}">
-              <div style="display: flex; align-items: flex-start; gap: 4px; line-height: 1.18;">
-                <span style="font-weight: 900; color: #000000; font-size: 7pt; line-height: 1.3;">&bull;</span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 8.8pt; font-weight: 800; color: #000000; word-break: break-word;">${b}</span>
+            <div class="trigger-fact-cell" style="flex: 1; display: flex; align-items: center; padding: 0 3px; ${idx < 2 ? 'border-bottom: 0.8px solid #cbd5e1;' : ''}">
+              <div style="display: flex; align-items: flex-start; gap: 2.5px; line-height: 1.12;">
+                <span style="font-weight: 900; color: #000000; font-size: 5pt; line-height: 1.3;">&bull;</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #000000; word-break: break-word;">${b}</span>
               </div>
             </div>`,
         )
         .join('');
+
       return `
+        <!-- STAGE ${stageNum} CONTAINER -->
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
           
-          <!-- Full-Width Banner with Key Question Across Page -->
-          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 2px 7px; display: flex; align-items: center; border-bottom: 1.2px solid #000000; min-height: 20px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1; overflow: hidden;">
-              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; padding: 0.6px 6px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
-                ${st.step}
+          <!-- Full-Width Banner with Key Question Across Page (Strict Single-Line Fit) -->
+          <div class="stage-banner" style="background: #000000; color: #ffffff; padding: 1.5px 6px; display: flex; align-items: center; border-bottom: 1.2px solid #000000;">
+            <div style="display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; overflow: hidden;">
+              <span style="background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; padding: 0.5px 4.5px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;">
+                ${stageNum}
               </span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 800; color: #ffffff; white-space: nowrap; flex-shrink: 0;">
-                ${st.date}
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #e2e8f0; white-space: nowrap; flex-shrink: 0;">
+                ${st.date ? `${st.date}` : ''}
               </span>
-              <span style="color: #ffffff; font-size: 7.5pt; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Inter', sans-serif; font-size: 9.0pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; letter-spacing: -0.1px;">
-                ${st.questionHeading}
+              <span style="color: #94a3b8; font-size: 7pt; flex-shrink: 0;">&bull;</span>
+              <span style="font-family: 'Playfair Display', serif; font-size: 8.5pt; font-weight: 800; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                ${questionText}
               </span>
             </div>
           </div>
 
-          <!-- Content Row: Left 3-Zone Trigger Spine (44mm) & Right Ruled Writing Lines (~154mm) -->
+          <!-- Content Row: Left 3-Zone Trigger Spine (26mm) & Right Ruled Writing Lines (~172mm) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
             
-            <!-- Left Column: High-Visibility 44mm Trigger Spine -->
-            <div style="width: 44mm; flex-shrink: 0; background: #ffffff; display: flex; flex-direction: column; border-right: 1.2px solid #000000; box-sizing: border-box;">
+            <!-- Left Column: High-Visibility 26mm Trigger Spine -->
+            <div class="stage-trigger-col">
               ${bulletsHtml}
             </div>
 
-            <!-- Right Column: 6 Ruled Note-Taking Lines -->
-            <div style="flex: 1; display: flex; flex-direction: column; background: #ffffff; margin: 0; padding: 0;">
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
-              <div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>
+            <!-- Right Column: 5 Ruled Note-Taking Lines (Expanded Writing Space) -->
+            <div class="stage-writing-col">
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
+              <div class="ruled-line"></div>
             </div>
 
           </div>
@@ -741,8 +745,8 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
           <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 2px 8px; border-radius: 2px;">
             ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
           </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            KEY STAGE 3 &bull; THE COLD WAR: 1945–1991
+          <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
+            EDEXCEL GCSE (9–1) HISTORY &bull; SUPERPOWER RELATIONS &amp; THE COLD WAR, 1941–91
           </span>
         </div>
         <h2 style="font-family: 'Playfair Display', serif; font-size: 12.6pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
@@ -1691,7 +1695,7 @@ function renderBackCover() {
             Scan to Quiz
           </div>
           <div style="font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; color: #0f172a; margin-top: 1px;">
-            Score: [ &nbsp;&nbsp;&nbsp; / 20 ]
+            Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 20
           </div>
         </div>`;
     })
@@ -1721,7 +1725,7 @@ function renderBackCover() {
       <div style="border: 1.5px solid #0f172a; border-radius: 4px; overflow: hidden; margin-top: 4px; background: #ffffff;">
         <div style="background: #0f172a; color: #ffffff; padding: 3px 8px; font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 900; text-transform: uppercase; letter-spacing: 0.8px; display: flex; justify-content: space-between;">
           <span>Student Assessment Progress Record &bull; 7 Core Enquiries</span>
-          <span style="font-size: 6.8pt; letter-spacing: 0.5px;">Target Grade: [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]</span>
+          <span style="font-size: 6.8pt; letter-spacing: 0.5px;">Target Grade: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </div>
         
         <table style="width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 7.2pt;">
@@ -1737,59 +1741,59 @@ function renderBackCover() {
           <tbody>
             <tr style="border-bottom: 1px solid #cbd5e1;">
               <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">1. Capitalism vs Communism</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 10 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 8 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp;&nbsp; ]</td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
               <td style="padding: 4px 6px; text-align: center;">____________</td>
             </tr>
             <tr style="border-bottom: 1px solid #cbd5e1; background: #fafaf9;">
               <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">2. Yalta to Potsdam (1945)</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 10 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 8 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp;&nbsp; ]</td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
               <td style="padding: 4px 6px; text-align: center;">____________</td>
             </tr>
             <tr style="border-bottom: 1px solid #cbd5e1;">
               <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">3. Iron Curtain &amp; Berlin Blockade</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 10 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 8 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp;&nbsp; ]</td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
               <td style="padding: 4px 6px; text-align: center;">____________</td>
             </tr>
             <tr style="border-bottom: 1px solid #cbd5e1; background: #fafaf9;">
               <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">4. Cuban Missile Crisis (1962)</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 10 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 12 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp;&nbsp; ]</td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 12</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
               <td style="padding: 4px 6px; text-align: center;">____________</td>
             </tr>
             <tr style="border-bottom: 1px solid #cbd5e1;">
               <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">5. Proxy Wars: Korea &amp; Vietnam</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 10 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 8 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp;&nbsp; ]</td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
               <td style="padding: 4px 6px; text-align: center;">____________</td>
             </tr>
             <tr style="border-bottom: 1px solid #cbd5e1; background: #fafaf9;">
               <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">6. Fall of Berlin Wall &amp; USSR</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 10 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 12 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp;&nbsp; ]</td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 12</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
               <td style="padding: 4px 6px; text-align: center;">____________</td>
             </tr>
             <tr style="border-bottom: 1.2px solid #0f172a;">
               <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">7. Was the Cold War Ever "Cold"?</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 10 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 12 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp;&nbsp; ]</td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 12</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
               <td style="padding: 4px 6px; text-align: center;">____________</td>
             </tr>
             <tr style="background: #e2e8f0; font-weight: 900;">
               <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; text-transform: uppercase;">Cumulative Unit Total</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 70 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">[ &nbsp;&nbsp; / 68 ]</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">Avg: [ &nbsp; ]</td>
-              <td style="padding: 4px 6px; text-align: center; font-size: 7.6pt; color: #1e3a8a;">[ &nbsp;&nbsp;&nbsp; / 138 ]</td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 70</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 68</strong></td>
+              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">Avg: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+              <td style="padding: 4px 6px; text-align: center; font-size: 7.6pt; color: #1e3a8a;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 138</strong></td>
             </tr>
           </tbody>
         </table>
@@ -1964,6 +1968,37 @@ async function compileColdWarWorkbook() {
       width: 100%;
       border-bottom: 1.2px solid #000000;
       box-sizing: border-box;
+    }
+    .stage-trigger-col {
+      width: 26mm;
+      flex-shrink: 0;
+      background: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      border-right: 1.2px solid #000000;
+      box-sizing: border-box;
+    }
+    .trigger-fact-cell {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 3px;
+    }
+    .stage-writing-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #ffffff;
+      box-sizing: border-box;
+    }
+    .ruled-line {
+      height: 8.2mm;
+      border-bottom: 0.8px solid #000000;
+      box-sizing: border-box;
+    }
+    .ruled-line:last-child {
+      border-bottom: none;
     }
     @media print {
       body {
