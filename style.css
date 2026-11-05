@@ -3667,21 +3667,21 @@ img::after {
 .vocab-word,
 .vocab-lens-term {
   position: relative;
-  border-bottom: 1.5px dotted #94a3b8;
+  border-bottom: 1.6px dotted #0284c7;
   cursor: pointer;
   color: inherit;
   font-weight: inherit;
   padding: 0 1px;
   border-radius: 2px;
-  transition: all 0.2s ease;
+  transition: all 0.18s ease;
 }
 
 .vocab-word:hover,
 .vocab-word.active,
 .vocab-lens-term:hover,
 .vocab-lens-term.active {
-  border-bottom-color: #0284c7;
-  background-color: rgba(224, 242, 254, 0.55);
+  border-bottom-color: #0369a1;
+  background-color: rgba(224, 242, 254, 0.65);
   color: #0369a1;
 }
 

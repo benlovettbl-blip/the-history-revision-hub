@@ -15,6 +15,7 @@ import {
 import './ks2_guidance.js';
 import { renderConsolidateStationHTML, initConsolidateStation } from './lesson_consolidate_station.js';
 import { renderLessonExamPracticeHTML, initLessonExamPractice } from './lesson_exam_practice_panel.js';
+import { buildComprehensiveVocabDict, highlightGlossaryInProse } from './disciplinary_glossary.js';
 
 // Canonical Key Stage Taxonomy Constants
 export const KS2_CANONICAL_UNITS = ['ks2_ww2'];
@@ -4043,99 +4044,14 @@ export function renderLesson(lesson) {
       
     `;
 
-  let vocabDict = {};
-  const allVocabEntries = (lesson.vocab || lesson.vocabulary || []).concat(
-    !lesson.vocab && !lesson.vocabulary && lesson.flashcards ? lesson.flashcards : [],
-  );
+  const activeUnitData =
+    (appStore && appStore.state && appStore.state.activeUnitData) ||
+    window.currentUnitData ||
+    {};
+  const vocabDict = buildComprehensiveVocabDict(lesson, activeUnitData);
 
-  allVocabEntries.forEach((v) => {
-    if (!v || !v.term) return;
-    const baseTerm = v.term.trim();
-    const termKey = baseTerm.toLowerCase();
-    const termDef = v.definition || v.def || v.desc || '';
-    if (termDef && !vocabDict[termKey]) {
-      const vocabMeta = {
-        term: baseTerm,
-        definition: termDef,
-        syllables: v.syllables || '',
-        phonetic: v.phonetic || '',
-        tier: v.tier
-          ? String(v.tier)
-          : [
-            'gongfermer',
-            'cesspit',
-            'reredorter',
-            'miasma',
-            'latrine',
-            'aqueduct',
-            'conduit',
-            'hypocaust',
-            'lavatorium',
-            'strigil',
-          ].some((t) => termKey.includes(t))
-            ? '3'
-            : '2',
-      };
-      vocabDict[termKey] = vocabMeta;
-
-      // Add common plural or stem variations if not already registered
-      if (!termKey.endsWith('s') && !termKey.includes(' ')) {
-        const pluralKey = termKey + 's';
-        if (!vocabDict[pluralKey]) vocabDict[pluralKey] = vocabMeta;
-      }
-      if (termKey === 'miasma theory' && !vocabDict['miasma']) {
-        vocabDict['miasma'] = vocabMeta;
-      }
-      if (termKey === 'filtration' && !vocabDict['filtered']) {
-        vocabDict['filtered'] = vocabMeta;
-      }
-      if (termKey === 'intervention' && !vocabDict['intervene']) {
-        vocabDict['intervene'] = vocabMeta;
-      }
-    }
-  });
-
-  let seenTerms = new Set();
   const highlightGlossary = (text, maxPerBlock = 3) => {
-    if (!text || typeof text !== 'string') return text || '';
-    if (Object.keys(vocabDict).length === 0) return text;
-    let processedText = text;
-    let blockCount = 0;
-    const sortedTerms = Object.keys(vocabDict).sort((a, b) => b.length - a.length);
-
-    for (const term of sortedTerms) {
-      if (blockCount >= maxPerBlock) break;
-      const vocabItem = vocabDict[term];
-      if (!vocabItem || !vocabItem.definition) continue;
-
-      // Check if root term or variant has been seen in this lesson
-      const rootKey = vocabItem.term.toLowerCase();
-      if (!seenTerms.has(rootKey)) {
-        // Regex matches HTML tags OR the specific term word boundary
-        const regex = new RegExp(`(<[^>]+>)|\\b(${term})\\b`, 'gi');
-        let matchedTerm = false;
-
-        processedText = processedText.replace(regex, (match, htmlTag, word) => {
-          if (htmlTag) return htmlTag; // Skip and preserve anything already in an HTML tag
-          if (word && blockCount < maxPerBlock) {
-            matchedTerm = true;
-            blockCount++;
-            const safeDef = vocabItem.definition.replace(/"/g, '&quot;');
-            const safeSyllables = (vocabItem.syllables || '').replace(/"/g, '&quot;');
-            const safePhonetic = (vocabItem.phonetic || '').replace(/"/g, '&quot;');
-            const safeTier = vocabItem.tier || '3';
-            const safeTerm = vocabItem.term.replace(/"/g, '&quot;');
-            return `<span class="vocab-word vocab-lens-term" data-term="${safeTerm}" data-definition="${safeDef}" data-syllables="${safeSyllables}" data-phonetic="${safePhonetic}" data-tier="${safeTier}">${word}</span>`;
-          }
-          return match;
-        });
-
-        if (matchedTerm) {
-          seenTerms.add(rootKey);
-        }
-      }
-    }
-    return processedText;
+    return highlightGlossaryInProse(text, vocabDict, maxPerBlock);
   };
 
   // Note: Teacher Guidance, Pedagogical Primers, and Hinge Questions
