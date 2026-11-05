@@ -208,6 +208,18 @@ function playArenaSound(type) {
       gain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
       osc.start(now);
       osc.stop(now + 0.3);
+    } else if (type === 'pass') {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(440, now);
+      osc.frequency.exponentialRampToValueAtTime(300, now + 0.12);
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+      osc.start(now);
+      osc.stop(now + 0.12);
     } else if (type === 'fanfare') {
       const notes = [523.25, 659.25, 783.99, 1046.50];
       notes.forEach((freq, idx) => {
@@ -1024,6 +1036,11 @@ export function initConsolidateStation(lesson) {
       tabooIndex: 0,
       tabooRevealedDef: false,
       tabooScore: 0,
+      tabooPasses: 0,
+      tabooTeamMode: false,
+      tabooActiveTeam: 'red', // 'red' | 'blue'
+      tabooTeamRedScore: 0,
+      tabooTeamBlueScore: 0,
       tabooTimerSeconds: 60,
       tabooTimerRunning: false,
       tabooTimerInterval: null,
@@ -1860,21 +1877,41 @@ function renderArenaTabooView(state, arenaData, isWhiteboard) {
 
   return `
     <div style="display: flex; flex-direction: column; gap: 16px;">
-      <!-- Deck Toggle & Round Score Bar -->
+      <!-- Deck Toggle, Team Battle & Round Score Bar -->
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-        <div style="display: flex; gap: 6px;">
+        <div style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center;">
           <button type="button" onclick="window.switchArenaTabooDeck('${state.lessonId}', 'cumulative')" style="padding: 5px 12px; border-radius: 6px; border: 1.5px solid ${!isTodayDeck ? '#3b82f6' : (isWhiteboard ? '#334155' : '#cbd5e1')}; background: ${!isTodayDeck ? (isWhiteboard ? '#1e3a8a' : '#eff6ff') : 'transparent'}; color: ${!isTodayDeck ? (isWhiteboard ? '#93c5fd' : '#1d4ed8') : (isWhiteboard ? '#94a3b8' : '#64748b')}; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
             <span>⭐</span> All Cumulative Unit Terms (${arenaData.cumulativeDeck.length})
           </button>
           <button type="button" onclick="window.switchArenaTabooDeck('${state.lessonId}', 'today')" style="padding: 5px 12px; border-radius: 6px; border: 1.5px solid ${isTodayDeck ? '#3b82f6' : (isWhiteboard ? '#334155' : '#cbd5e1')}; background: ${isTodayDeck ? (isWhiteboard ? '#1e3a8a' : '#eff6ff') : 'transparent'}; color: ${isTodayDeck ? (isWhiteboard ? '#93c5fd' : '#1d4ed8') : (isWhiteboard ? '#94a3b8' : '#64748b')}; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
             <span>📌</span> Today's Lesson Only (${arenaData.todayDeck.length})
           </button>
+          <button type="button" onclick="window.toggleArenaTabooTeamMode('${state.lessonId}')" style="padding: 5px 12px; border-radius: 6px; border: 1.5px solid ${a.tabooTeamMode ? '#8b5cf6' : (isWhiteboard ? '#334155' : '#cbd5e1')}; background: ${a.tabooTeamMode ? (isWhiteboard ? '#4c1d95' : '#f5f3ff') : 'transparent'}; color: ${a.tabooTeamMode ? (isWhiteboard ? '#c4b5fd' : '#6d28d9') : (isWhiteboard ? '#94a3b8' : '#64748b')}; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+            <span>⚔️</span> ${a.tabooTeamMode ? 'Team Battle: ON' : 'Team Battle Mode'}
+          </button>
         </div>
 
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <span style="background: ${isWhiteboard ? '#1e293b' : '#fef3c7'}; color: ${isWhiteboard ? '#f59e0b' : '#b45309'}; border: 1px solid ${isWhiteboard ? '#f59e0b' : '#fde68a'}; padding: 4px 12px; border-radius: 999px; font-weight: 800; font-size: 0.85rem;">
-            🔥 Round Score: ${a.tabooScore || 0} Correct
-          </span>
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+          ${!a.tabooTeamMode ? `
+            <span style="background: ${isWhiteboard ? '#1e293b' : '#fef3c7'}; color: ${isWhiteboard ? '#f59e0b' : '#b45309'}; border: 1px solid ${isWhiteboard ? '#f59e0b' : '#fde68a'}; padding: 4px 12px; border-radius: 999px; font-weight: 800; font-size: 0.85rem;">
+              🔥 Round Score: ${a.tabooScore || 0} Correct
+            </span>
+            <span style="background: ${isWhiteboard ? '#1e293b' : '#f1f5f9'}; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; border: 1px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 4px 10px; border-radius: 999px; font-weight: 700; font-size: 0.8rem;">
+              ⏭️ Passes: ${a.tabooPasses || 0}
+            </span>
+          ` : `
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <span style="background: ${isWhiteboard ? '#450a0a' : '#fef2f2'}; color: #ef4444; border: 1.5px solid ${a.tabooActiveTeam === 'red' ? '#ef4444' : (isWhiteboard ? '#7f1d1d' : '#fca5a5')}; padding: 4px 10px; border-radius: 999px; font-weight: 900; font-size: 0.82rem; display: inline-flex; align-items: center; gap: 4px; ${a.tabooActiveTeam === 'red' ? 'box-shadow: 0 0 8px rgba(239,68,68,0.4);' : 'opacity: 0.75;'}">
+                🔴 Red: ${a.tabooTeamRedScore || 0}
+              </span>
+              <span style="background: ${isWhiteboard ? '#172554' : '#eff6ff'}; color: #3b82f6; border: 1.5px solid ${a.tabooActiveTeam === 'blue' ? '#3b82f6' : (isWhiteboard ? '#1e3a8a' : '#93c5fd')}; padding: 4px 10px; border-radius: 999px; font-weight: 900; font-size: 0.82rem; display: inline-flex; align-items: center; gap: 4px; ${a.tabooActiveTeam === 'blue' ? 'box-shadow: 0 0 8px rgba(59,130,246,0.4);' : 'opacity: 0.75;'}">
+                🔵 Blue: ${a.tabooTeamBlueScore || 0}
+              </span>
+              <span style="background: ${isWhiteboard ? '#1e293b' : '#f1f5f9'}; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; border: 1px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 4px 8px; border-radius: 999px; font-weight: 700; font-size: 0.78rem;">
+                ⏭️ Passes: ${a.tabooPasses || 0}
+              </span>
+            </div>
+          `}
 
           <!-- 60s Countdown Timer Controls -->
           <div style="display: flex; align-items: center; gap: 6px; background: ${isWhiteboard ? '#1e293b' : '#f8fafc'}; border: 1.5px solid ${isWhiteboard ? '#334155' : '#cbd5e1'}; padding: 3px 8px; border-radius: 8px;">
@@ -1891,6 +1928,31 @@ function renderArenaTabooView(state, arenaData, isWhiteboard) {
           </div>
         </div>
       </div>
+
+      ${a.tabooTeamMode ? `
+        <!-- Team Battle Turn Banner -->
+        <div style="display: flex; justify-content: space-between; align-items: center; background: ${a.tabooActiveTeam === 'red' ? (isWhiteboard ? '#450a0a' : '#fef2f2') : (isWhiteboard ? '#172554' : '#eff6ff')}; border: 2px solid ${a.tabooActiveTeam === 'red' ? '#ef4444' : '#3b82f6'}; border-radius: 12px; padding: 10px 18px; box-shadow: 0 2px 10px rgba(${a.tabooActiveTeam === 'red' ? '239,68,68' : '59,130,246'},0.12); flex-wrap: wrap; gap: 8px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.4rem;">${a.tabooActiveTeam === 'red' ? '🔴' : '🔵'}</span>
+            <div>
+              <div style="font-weight: 900; font-size: 0.92rem; color: ${a.tabooActiveTeam === 'red' ? (isWhiteboard ? '#f87171' : '#b91c1c') : (isWhiteboard ? '#60a5fa' : '#1d4ed8')}; text-transform: uppercase; letter-spacing: 0.04em;">
+                ACTIVE TURN: TEAM ${a.tabooActiveTeam === 'red' ? 'RED' : 'BLUE'}
+              </div>
+              <div style="font-size: 0.74rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'};">
+                Teammates from Team ${a.tabooActiveTeam === 'red' ? 'Red' : 'Blue'} give clues to their Hot Seat player!
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <button type="button" onclick="window.switchArenaTabooTeam('${state.lessonId}', 'red')" style="background: ${a.tabooActiveTeam === 'red' ? '#ef4444' : 'transparent'}; color: ${a.tabooActiveTeam === 'red' ? '#ffffff' : (isWhiteboard ? '#fca5a5' : '#dc2626')}; border: 1.5px solid #ef4444; padding: 5px 12px; border-radius: 6px; font-weight: 800; font-size: 0.75rem; cursor: pointer;">
+              🔴 Red's Turn
+            </button>
+            <button type="button" onclick="window.switchArenaTabooTeam('${state.lessonId}', 'blue')" style="background: ${a.tabooActiveTeam === 'blue' ? '#3b82f6' : 'transparent'}; color: ${a.tabooActiveTeam === 'blue' ? '#ffffff' : (isWhiteboard ? '#93c5fd' : '#2563eb')}; border: 1.5px solid #3b82f6; padding: 5px 12px; border-radius: 6px; font-weight: 800; font-size: 0.75rem; cursor: pointer;">
+              🔵 Blue's Turn
+            </button>
+          </div>
+        </div>
+      ` : ''}
 
       <!-- Main Secret Taboo Card -->
       <div style="background: ${isWhiteboard ? '#1e293b' : '#ffffff'}; border: 2.5px solid ${isWhiteboard ? '#334155' : '#e2e8f0'}; border-radius: 16px; padding: 28px 24px; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,${isWhiteboard ? '0.3' : '0.06'});">
@@ -1934,21 +1996,21 @@ function renderArenaTabooView(state, arenaData, isWhiteboard) {
 
         <!-- Action Control Buttons -->
         <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
-          <button type="button" onclick="window.nextArenaTabooCard('${state.lessonId}', false)" style="background: ${isWhiteboard ? '#334155' : '#f1f5f9'}; border: 1.5px solid ${isWhiteboard ? '#475569' : '#cbd5e1'}; color: ${isWhiteboard ? '#e2e8f0' : '#475569'}; font-weight: 700; font-size: 0.92rem; padding: 10px 20px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
-            <i class="fa-solid fa-forward-step"></i> Skip Card
+          <button type="button" onclick="window.nextArenaTabooCard('${state.lessonId}', false, true)" style="background: ${isWhiteboard ? '#78350f' : '#fef3c7'}; border: 1.5px solid ${isWhiteboard ? '#f59e0b' : '#fcd34d'}; color: ${isWhiteboard ? '#fef3c7' : '#92400e'}; font-weight: 700; font-size: 0.92rem; padding: 10px 20px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 6px rgba(245,158,11,0.15);">
+            <i class="fa-solid fa-forward-step"></i> Pass / Skip Card
           </button>
-          <button type="button" onclick="window.nextArenaTabooCard('${state.lessonId}', true)" style="background: #10b981; border: none; color: #ffffff; font-weight: 800; font-size: 0.95rem; padding: 10px 26px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(16,185,129,0.3);">
-            <i class="fa-solid fa-check"></i> Got It! (+1 Point)
+          <button type="button" onclick="window.nextArenaTabooCard('${state.lessonId}', true, false)" style="background: #10b981; border: none; color: #ffffff; font-weight: 800; font-size: 0.95rem; padding: 10px 26px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(16,185,129,0.3);">
+            <i class="fa-solid fa-check"></i> ${a.tabooTeamMode ? `Got It! (+1 to Team ${a.tabooActiveTeam === 'red' ? 'Red 🔴' : 'Blue 🔵'})` : 'Got It! (+1 Point)'}
           </button>
           <button type="button" onclick="window.shuffleArenaTaboo('${state.lessonId}')" title="Reshuffle deck & reset score" style="background: transparent; border: 1px solid ${isWhiteboard ? '#475569' : '#cbd5e1'}; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; font-weight: 600; font-size: 0.82rem; padding: 10px 14px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-shuffle"></i> Reshuffle
+            <i class="fa-solid fa-shuffle"></i> Reshuffle & Reset
           </button>
         </div>
       </div>
 
       <!-- Classroom Teacher Protocol Note -->
       <div style="background: ${isWhiteboard ? '#0f172a' : '#f8fafc'}; border: 1px solid ${isWhiteboard ? '#1e293b' : '#e2e8f0'}; border-radius: 8px; padding: 10px 14px; font-size: 0.8rem; color: ${isWhiteboard ? '#94a3b8' : '#64748b'}; line-height: 1.45;">
-        <strong style="color: #f59e0b;"><i class="fa-solid fa-chalkboard-user"></i> Teacher Protocol:</strong> Seat one pupil in the "Hot Seat" with their back to the screen. Classmates raise hands to give historical clues explaining the concept WITHOUT saying any of the 3 red taboo words! Rotate pupils after each 60s round.
+        <strong style="color: #f59e0b;"><i class="fa-solid fa-chalkboard-user"></i> Teacher Protocol:</strong> Seat one pupil in the "Hot Seat" with their back to the screen. Classmates raise hands to give historical clues explaining the concept WITHOUT saying any of the 3 red taboo words! ${a.tabooTeamMode ? 'In Team Battle Mode, switch turns after each 60-second round so Team Red and Team Blue alternate hot seat contenders.' : 'Rotate pupils after each 60s round.'}
       </div>
     </div>
   `;
@@ -2630,13 +2692,41 @@ window.switchArenaTabooDeck = function (lessonId, deckType) {
   renderStationContent(lessonId);
 };
 
-window.nextArenaTabooCard = function (lessonId, isCorrect) {
+window.toggleArenaTabooTeamMode = function (lessonId) {
+  const state = window.consolidateStations[lessonId];
+  if (!state || !state.arena) return;
+  state.arena.tabooTeamMode = !state.arena.tabooTeamMode;
+  renderStationContent(lessonId);
+};
+
+window.switchArenaTabooTeam = function (lessonId, targetTeam) {
+  const state = window.consolidateStations[lessonId];
+  if (!state || !state.arena) return;
+  if (targetTeam === 'red' || targetTeam === 'blue') {
+    state.arena.tabooActiveTeam = targetTeam;
+  } else {
+    state.arena.tabooActiveTeam = state.arena.tabooActiveTeam === 'red' ? 'blue' : 'red';
+  }
+  renderStationContent(lessonId);
+};
+
+window.nextArenaTabooCard = function (lessonId, isCorrect, isPass = false) {
   const state = window.consolidateStations[lessonId];
   if (!state || !state.arena) return;
   const a = state.arena;
   if (isCorrect) {
     a.tabooScore = (a.tabooScore || 0) + 1;
+    if (a.tabooTeamMode) {
+      if (a.tabooActiveTeam === 'red') {
+        a.tabooTeamRedScore = (a.tabooTeamRedScore || 0) + 1;
+      } else {
+        a.tabooTeamBlueScore = (a.tabooTeamBlueScore || 0) + 1;
+      }
+    }
     if (a.soundEnabled) playArenaSound('ding');
+  } else if (isPass) {
+    a.tabooPasses = (a.tabooPasses || 0) + 1;
+    if (a.soundEnabled) playArenaSound('pass');
   }
   a.tabooIndex = (a.tabooIndex || 0) + 1;
   a.tabooRevealedDef = false;
@@ -2650,6 +2740,9 @@ window.shuffleArenaTaboo = function (lessonId) {
   state.arenaData.todayDeck = [...state.arenaData.todayDeck].sort(() => Math.random() - 0.5);
   state.arena.tabooIndex = 0;
   state.arena.tabooScore = 0;
+  state.arena.tabooPasses = 0;
+  state.arena.tabooTeamRedScore = 0;
+  state.arena.tabooTeamBlueScore = 0;
   state.arena.tabooRevealedDef = false;
   renderStationContent(lessonId);
 };
