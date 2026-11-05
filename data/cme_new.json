@@ -4728,9 +4728,9 @@
               }
             }
           ],
-          "image": "/images/cme_port_said_british_troops_1956.jpg",
-          "image_alt": "British troops patrolling the streets of Port Said during the Anglo-French Suez operation in November 1956",
-          "caption": "Anglo-French Invasion at Port Said (November 1956): British and French troops deployed under the secret Sèvres Protocol to seize the nationalised Suez Canal.",
+          "image": "/images/cme_nasser_1956.jpg",
+          "image_alt": "President Gamal Abdel Nasser waving to crowds in Alexandria during the Suez Crisis in 1956",
+          "caption": "President Nasser Announcing Nationalisation (July 1956): Waving to ecstatic crowds in Alexandria after declaring the Suez Canal Egyptian sovereign property to fund the Aswan High Dam.",
           "isReversed": false
         },
         {
@@ -4814,9 +4814,9 @@
               }
             }
           ],
-          "image": "/images/cme_suez_1956_campaign_map.jpg",
-          "image_alt": "Military operational map of the 1956 Suez Campaign showing the Israeli advance across Sinai to Mitla Pass and Anglo-French landings at Port Said",
-          "caption": "The 1956 Suez Campaign (October–November 1956): Coordinated Israeli paratroop drops at Mitla Pass and armored advances across Sinai, synchronized with Anglo-French amphibious landings at Port Said.",
+          "image": "/images/cme_port_said_british_troops_1956.jpg",
+          "image_alt": "British troops patrolling the streets of Port Said in November 1956",
+          "caption": "Anglo-French Invasion at Port Said (November 1956): British paratroopers and French commandos patrolling the streets of Port Said after launching their assault under the secret Sèvres Protocol.",
           "isReversed": true
         },
         {
@@ -9759,7 +9759,7 @@
             }
           ],
           "image": "/units/cme_new/assets/yom_kippur_crossing.png",
-          "image_alt": "Egyptian infantry crossing the Suez Canal on assault boats and pontoon bridges during Operation Badr in October 1973",
+          "image_alt": "Egyptian infantry crossing the Suez Canal on assault boats during Operation Badr in October 1973",
           "caption": "Operation Badr (October 1973): Egyptian assault troops breaching the Bar-Lev Line with high-pressure water cannons and crossing the Suez Canal under cover of surface-to-air missile umbrellas.",
           "isReversed": false
         },
@@ -9844,9 +9844,9 @@
               }
             }
           ],
-          "image": "/images/cme_yom_kippur_1973_map.png",
-          "image_alt": "Tactical campaign map of the 1973 Yom Kippur War showing simultaneous attacks across the Suez Canal and on the Golan Heights",
-          "caption": "The Two-Front Surprise Assault (October 1973): Operational map illustrating the coordinated Egyptian assault across the Suez Canal in the south and the massive Syrian armored offensive on the Golan Heights in the north.",
+          "image": "/images/golda_meir.jpg",
+          "image_alt": "Israeli Prime Minister Golda Meir addressing the nation during the Yom Kippur War in October 1973",
+          "caption": "Prime Minister Golda Meir During the Wartime Crisis (October 1973): Under intense pressure following the two-front surprise attack, Meir coordinated emergency US military resupply with President Nixon before resigning following the Agranat Commission.",
           "isReversed": true
         },
         {
@@ -12515,9 +12515,9 @@
               }
             }
           ],
-          "image": "/images/cme_operation_litani_1978_map.jpg",
-          "image_alt": "Map of Operation Litani in March 1978 showing the Israeli invasion of southern Lebanon up to the Litani River",
-          "caption": "Operation Litani (March 1978): Tactical map of the IDF military offensive across southern Lebanon to push PLO fedayeen north of the Litani River, creating the UNIFIL buffer zone.",
+          "image": "/units/cme_new/assets/sharon_beirut_1982.jpg",
+          "image_alt": "Israeli Defense Minister Ariel Sharon overlooking West Beirut during the 1982 siege",
+          "caption": "Defense Minister Ariel Sharon at West Beirut (August 1982): Overlooking the besieged Lebanese capital through binoculars during the controversial 1982 invasion of Lebanon that forced the PLO leadership into exile.",
           "isReversed": false
         },
         {
@@ -12601,7 +12601,7 @@
             }
           ],
           "image": "/units/cme_new/assets/cme_rabin_gaza_1987.jpg",
-          "image_alt": "Israeli Defense Minister Yitzhak Rabin visiting IDF patrols in the Gaza Strip during the First Intifada in December 1987",
+          "image_alt": "Israeli Defense Minister Yitzhak Rabin visiting IDF patrols in the Gaza Strip during the First Intifada in 1987",
           "caption": "Defense Minister Yitzhak Rabin in Gaza (December 1987): Inspecting Israeli military patrols during the outbreak of the First Intifada, where the IDF implemented the controversial 'force, might, and beatings' policy.",
           "isReversed": true
         },
@@ -12619,28 +12619,29 @@
             {
               "id": "cme_l11_source_e",
               "letter": "E",
-              "title": "Source E: Defense Minister Ariel Sharon Overlooking West Beirut During the Siege (August 1982)",
-              "src": "/units/cme_new/assets/sharon_beirut_1982.jpg",
-              "image": "/units/cme_new/assets/sharon_beirut_1982.jpg",
-              "source": "/units/cme_new/assets/sharon_beirut_1982.jpg",
-              "caption": "Defense Minister Ariel Sharon surveying military positions and artillery lines overlooking besieged West Beirut from an IDF observation post with operational maps, August 1982.",
-              "desc": "Archival photograph of Ariel Sharon directing the siege of West Beirut in August 1982.",
-              "provenance": "Israel Government Press Office / Moshe Milner (GPO D1-1982), August 1982.",
-              "citation": "Israel Government Press Office / Moshe Milner.",
+              "title": "Source E: Armed PLO Fedayeen Guerrillas in Southern Lebanon (c. 1979)",
+              "src": "/units/cme_new/assets/cme_fatah_fedayeen_lebanon_1979.jpg",
+              "image": "/units/cme_new/assets/cme_fatah_fedayeen_lebanon_1979.jpg",
+              "source": "/units/cme_new/assets/cme_fatah_fedayeen_lebanon_1979.jpg",
+              "caption": "Armed Palestinian guerrillas in military fatigues operating from southern Lebanese border strongholds, illustrating the PLO military presence that provoked Israel's 1982 invasion.",
+              "desc": "Archival photograph of Palestinian fedayeen fighters in southern Lebanon.",
+              "provenance": "PLO Unified Information Office / French Press Agency (AFP), Beirut, c. 1979.",
+              "citation": "AFP / PLO Photographic Archive, Beirut.",
               "hinge_question": "How does Sharon's direct presence overlooking Beirut illustrate why Israeli critics accused him of fighting a personal war beyond the Cabinet's approved mandate?",
-              "source_context": "During Operation Peace for Galilee in the summer of 1982, Defense Minister Ariel Sharon pushed IDF forces far beyond the 40-kilometer security zone approved by the Israeli Cabinet, trapping 15,000 PLO fighters and Chairman Yasser Arafat inside West Beirut. For ten weeks, Israeli artillery and air strikes pounded the capital until multinational peacekeepers evacuated the PLO to Tunisia. Sharon’s aggressive forward command sparked severe domestic controversy, culminating in his resignation following the Kahan Commission inquiry into the Sabra and Shatila massacres. **Hinge Question:** How does Sharon's direct presence overlooking Beirut illustrate why Israeli critics accused him of fighting a personal war beyond the Cabinet's approved mandate?",
-              "context": "Defense Minister Ariel Sharon personally directed the forward encirclement of West Beirut in August 1982, drawing severe public and political criticism.",
-              "question_badge": "Historical Utility",
-              "question_type": "Historical Utility",
-              "enquiry_question": "How useful is Source E for an inquiry into the extent of Ariel Sharon's personal direction of the 1982 military campaign in Lebanon?",
-              "model_answer": "Source E is exceptionally useful because it visually captures Sharon on the forward frontline overlooking the Lebanese capital with operational maps, demonstrating his hands-on command and personal determination to destroy the PLO infrastructure in West Beirut.",
+              "source_context": "Following their expulsion from Jordan during Black September in 1970, the PLO re-established their military headquarters and training bases in refugee camps across southern Lebanon, creating a semi-autonomous enclave known as 'Fatahland'. Repeated cross-border rocket attacks against northern Israeli towns provided Defense Minister Ariel Sharon with the strategic pretext to launch Operation Peace for Galilee in June 1982. **Hinge Question:** Why did the relocation of the PLO from Jordan to Lebanon make a major Israeli cross-border military operation inevitable?",
+              "context": "Archival photograph showing armed Palestinian fedayeen fighters operating in southern Lebanon prior to the 1982 Israeli invasion.",
+              "question_badge": "Author’s Purpose",
+              "question_type": "Author’s Purpose",
+              "enquiry_question": "How does Source E help explain Israel's declared aim of driving PLO forces 40 kilometres away from its northern border in June 1982?",
+              "model_answer": "Source E shows heavily armed PLO guerrilla units operating freely along the southern Lebanese border, demonstrating why Israeli leaders viewed the armed Palestinian presence as an unacceptable cross-border security threat to civilian settlements in northern Galilee.",
               "provenance_clues": {
-                "author": "Moshe Milner, senior photographer for the Israeli Government Press Office.",
-                "audience": "Israeli cabinet members, military commanders, and the public record.",
-                "motive": "To document Defense Minister Sharon's strategic surveillance of West Beirut during active operations."
+                "author": "Palestinian guerrilla media unit / photojournalist.",
+                "audience": "Arab and international public, displaying armed resistance capability.",
+                "motive": "To project revolutionary defiance and military discipline among Palestinian fighters.",
+                "hinge_question": "Why did the relocation of the PLO from Jordan to Lebanon make a major Israeli cross-border military operation inevitable?"
               },
               "teacher_notes": {
-                "source_context": "During Operation Peace for Galilee in the summer of 1982, Defense Minister Ariel Sharon pushed IDF forces far beyond the 40-kilometer security zone approved by the Israeli Cabinet, trapping 15,000 PLO fighters and Chairman Yasser Arafat inside West Beirut. For ten weeks, Israeli artillery and air strikes pounded the capital until multinational peacekeepers evacuated the PLO to Tunisia. Sharon’s aggressive forward command sparked severe domestic controversy, culminating in his resignation following the Kahan Commission inquiry into the Sabra and Shatila massacres. **Hinge Question:** How does Sharon's direct presence overlooking Beirut illustrate why Israeli critics accused him of fighting a personal war beyond the Cabinet's approved mandate?"
+                "source_context": "Following their expulsion from Jordan during Black September in 1970, the PLO re-established their military headquarters and training bases in refugee camps across southern Lebanon, creating a semi-autonomous enclave known as 'Fatahland'. Repeated cross-border rocket attacks against northern Israeli towns provided Defense Minister Ariel Sharon with the strategic pretext to launch Operation Peace for Galilee in June 1982. **Hinge Question:** Why did the relocation of the PLO from Jordan to Lebanon make a major Israeli cross-border military operation inevitable?"
               }
             }
           ]
@@ -12763,28 +12764,29 @@
         {
           "id": "cme_l11_source_e",
           "letter": "E",
-          "title": "Source E: Defense Minister Ariel Sharon Overlooking West Beirut During the Siege (August 1982)",
-          "src": "/units/cme_new/assets/sharon_beirut_1982.jpg",
-          "image": "/units/cme_new/assets/sharon_beirut_1982.jpg",
-          "source": "/units/cme_new/assets/sharon_beirut_1982.jpg",
-          "caption": "Defense Minister Ariel Sharon surveying military positions and artillery lines overlooking besieged West Beirut from an IDF observation post with operational maps, August 1982.",
-          "desc": "Archival photograph of Ariel Sharon directing the siege of West Beirut in August 1982.",
-          "provenance": "Israel Government Press Office / Moshe Milner (GPO D1-1982), August 1982.",
-          "citation": "Israel Government Press Office / Moshe Milner.",
+          "title": "Source E: Armed PLO Fedayeen Guerrillas in Southern Lebanon (c. 1979)",
+          "src": "/units/cme_new/assets/cme_fatah_fedayeen_lebanon_1979.jpg",
+          "image": "/units/cme_new/assets/cme_fatah_fedayeen_lebanon_1979.jpg",
+          "source": "/units/cme_new/assets/cme_fatah_fedayeen_lebanon_1979.jpg",
+          "caption": "Armed Palestinian guerrillas in military fatigues operating from southern Lebanese border strongholds, illustrating the PLO military presence that provoked Israel's 1982 invasion.",
+          "desc": "Archival photograph of Palestinian fedayeen fighters in southern Lebanon.",
+          "provenance": "PLO Unified Information Office / French Press Agency (AFP), Beirut, c. 1979.",
+          "citation": "AFP / PLO Photographic Archive, Beirut.",
           "hinge_question": "How does Sharon's direct presence overlooking Beirut illustrate why Israeli critics accused him of fighting a personal war beyond the Cabinet's approved mandate?",
-          "source_context": "During Operation Peace for Galilee in the summer of 1982, Defense Minister Ariel Sharon pushed IDF forces far beyond the 40-kilometer security zone approved by the Israeli Cabinet, trapping 15,000 PLO fighters and Chairman Yasser Arafat inside West Beirut. For ten weeks, Israeli artillery and air strikes pounded the capital until multinational peacekeepers evacuated the PLO to Tunisia. Sharon’s aggressive forward command sparked severe domestic controversy, culminating in his resignation following the Kahan Commission inquiry into the Sabra and Shatila massacres. **Hinge Question:** How does Sharon's direct presence overlooking Beirut illustrate why Israeli critics accused him of fighting a personal war beyond the Cabinet's approved mandate?",
-          "context": "Defense Minister Ariel Sharon personally directed the forward encirclement of West Beirut in August 1982, drawing severe public and political criticism.",
-          "question_badge": "Historical Utility",
-          "question_type": "Historical Utility",
-          "enquiry_question": "How useful is Source E for an inquiry into the extent of Ariel Sharon's personal direction of the 1982 military campaign in Lebanon?",
-          "model_answer": "Source E is exceptionally useful because it visually captures Sharon on the forward frontline overlooking the Lebanese capital with operational maps, demonstrating his hands-on command and personal determination to destroy the PLO infrastructure in West Beirut.",
+          "source_context": "Following their expulsion from Jordan during Black September in 1970, the PLO re-established their military headquarters and training bases in refugee camps across southern Lebanon, creating a semi-autonomous enclave known as 'Fatahland'. Repeated cross-border rocket attacks against northern Israeli towns provided Defense Minister Ariel Sharon with the strategic pretext to launch Operation Peace for Galilee in June 1982. **Hinge Question:** Why did the relocation of the PLO from Jordan to Lebanon make a major Israeli cross-border military operation inevitable?",
+          "context": "Archival photograph showing armed Palestinian fedayeen fighters operating in southern Lebanon prior to the 1982 Israeli invasion.",
+          "question_badge": "Author’s Purpose",
+          "question_type": "Author’s Purpose",
+          "enquiry_question": "How does Source E help explain Israel's declared aim of driving PLO forces 40 kilometres away from its northern border in June 1982?",
+          "model_answer": "Source E shows heavily armed PLO guerrilla units operating freely along the southern Lebanese border, demonstrating why Israeli leaders viewed the armed Palestinian presence as an unacceptable cross-border security threat to civilian settlements in northern Galilee.",
           "provenance_clues": {
-            "author": "Moshe Milner, senior photographer for the Israeli Government Press Office.",
-            "audience": "Israeli cabinet members, military commanders, and the public record.",
-            "motive": "To document Defense Minister Sharon's strategic surveillance of West Beirut during active operations."
+            "author": "Palestinian guerrilla media unit / photojournalist.",
+            "audience": "Arab and international public, displaying armed resistance capability.",
+            "motive": "To project revolutionary defiance and military discipline among Palestinian fighters.",
+            "hinge_question": "Why did the relocation of the PLO from Jordan to Lebanon make a major Israeli cross-border military operation inevitable?"
           },
           "teacher_notes": {
-            "source_context": "During Operation Peace for Galilee in the summer of 1982, Defense Minister Ariel Sharon pushed IDF forces far beyond the 40-kilometer security zone approved by the Israeli Cabinet, trapping 15,000 PLO fighters and Chairman Yasser Arafat inside West Beirut. For ten weeks, Israeli artillery and air strikes pounded the capital until multinational peacekeepers evacuated the PLO to Tunisia. Sharon’s aggressive forward command sparked severe domestic controversy, culminating in his resignation following the Kahan Commission inquiry into the Sabra and Shatila massacres. **Hinge Question:** How does Sharon's direct presence overlooking Beirut illustrate why Israeli critics accused him of fighting a personal war beyond the Cabinet's approved mandate?"
+            "source_context": "Following their expulsion from Jordan during Black September in 1970, the PLO re-established their military headquarters and training bases in refugee camps across southern Lebanon, creating a semi-autonomous enclave known as 'Fatahland'. Repeated cross-border rocket attacks against northern Israeli towns provided Defense Minister Ariel Sharon with the strategic pretext to launch Operation Peace for Galilee in June 1982. **Hinge Question:** Why did the relocation of the PLO from Jordan to Lebanon make a major Israeli cross-border military operation inevitable?"
           }
         }
       ],
