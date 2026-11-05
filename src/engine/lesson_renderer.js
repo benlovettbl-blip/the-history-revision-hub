@@ -10361,7 +10361,8 @@ export function renderLesson(lesson) {
     (htmlDoNowInner && htmlDoNowInner.trim().length > 0),
   );
 
-  const defaultTab = hasDoNow ? 'donow' : (objectivesData ? 'objectives' : '');
+  // Closed by default so lessons load with launchpad collapsed
+  const defaultTab = '';
 
   const htmlLaunchpad = renderLessonLaunchpad({
     lesson,
