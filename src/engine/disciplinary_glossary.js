@@ -555,6 +555,71 @@ export const MASTER_DISCIPLINARY_GLOSSARY = [
     tier: '3',
     variants: ['Age of Enlightenment'],
   },
+
+  // --- History of Medicine & Science ---
+  {
+    term: 'Anatomy',
+    definition:
+      'The scientific study of the bodily structure of humans and animals, pioneered through empirical human dissection by Renaissance physicians like Andreas Vesalius.',
+    syllables: 'a-nat-o-my',
+    phonetic: 'əˈnætəmi',
+    tier: '3',
+    variants: ['anatomical', 'anatomist', 'dissection', 'dissect', 'dissecting'],
+  },
+  {
+    term: 'Physiology',
+    definition:
+      'The branch of biology and medicine dealing with the internal mechanical and physical functions of living organisms and their organs (e.g. William Harvey on blood circulation).',
+    syllables: 'phys-i-ol-o-gy',
+    phonetic: 'ˌfɪziˈɒlədʒi',
+    tier: '3',
+    variants: ['physiological'],
+  },
+  {
+    term: 'Antiseptic',
+    definition:
+      'A chemical substance (such as carbolic acid) applied to living tissue or surgical instruments to destroy infectious pathogens and eliminate post-operative sepsis.',
+    syllables: 'an-ti-sep-tic',
+    phonetic: 'ˌæntiˈseptɪk',
+    tier: '3',
+    variants: ['antiseptics', 'antiseptic surgery', 'aseptic', 'aseptic surgery'],
+  },
+  {
+    term: 'Anaesthetic',
+    definition:
+      'A chemical substance (such as ether or James Simpson’s chloroform) administered to induce reversible loss of sensation and consciousness to conquer surgical pain.',
+    syllables: 'an-aes-thet-ic',
+    phonetic: 'ˌænəsˈθetɪk',
+    tier: '3',
+    variants: ['anaesthetics', 'anesthetic', 'anesthetics', 'anesthesia'],
+  },
+  {
+    term: 'Pathogen',
+    definition:
+      'A disease-causing biological microorganism, such as a bacterium or virus, identified as the true cause of contagious infections following Louis Pasteur’s Germ Theory (1861).',
+    syllables: 'path-o-gen',
+    phonetic: 'ˈpæθədʒən',
+    tier: '3',
+    variants: ['pathogens', 'microbe', 'microbes', 'germ theory'],
+  },
+  {
+    term: 'Epidemic',
+    definition:
+      'The widespread, rapid occurrence of an infectious disease within a community or population at a particular time (e.g. the 1831–1866 cholera outbreaks).',
+    syllables: 'ep-i-dem-ic',
+    phonetic: 'ˌepɪˈdemɪk',
+    tier: '2',
+    variants: ['epidemics', 'pandemic'],
+  },
+  {
+    term: 'Vaccination',
+    definition:
+      'The clinical administration of an antigenic material (pioneered by Edward Jenner using cowpox in 1796) to stimulate the immune system and confer immunity against a disease.',
+    syllables: 'vac-ci-na-tion',
+    phonetic: 'ˌvæksɪˈneɪʃən',
+    tier: '3',
+    variants: ['vaccine', 'vaccines', 'inoculation', 'inoculate'],
+  },
 ];
 
 /**
