@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
-const { renderStandardBackCover } = require('./components/render_standard_cover.cjs');
+const { renderStandardBackCover, renderVersoLessonQr } = require('./components/render_standard_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -825,18 +825,21 @@ function renderWfSpinePage(cfg, pageNum) {
     <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
       <div>
         <!-- Lesson Header with Inquiry Question Title -->
-        <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
-              ${keyTopicBadge} &bull; ENVIRONMENTAL INQUIRY NOTEBOOK
-            </span>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-              EDEXCEL GCSE (9–1) HISTORY &bull; PAPER 1 SECTION A
-            </span>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
+          <div style="flex: 1; min-width: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
+                ${keyTopicBadge} &bull; ENVIRONMENTAL INQUIRY NOTEBOOK
+              </span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+                EDEXCEL GCSE (9–1) HISTORY &bull; PAPER 1 SECTION A
+              </span>
+            </div>
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.18;">
+              ${enquiryQuestion}
+            </h2>
           </div>
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.18;">
-            ${enquiryQuestion}
-          </h2>
+          ${renderVersoLessonQr({ unitId: 'edexcel_medicine', lessonId: cfg.id })}
         </div>
 
         <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -1977,6 +1980,7 @@ function buildWesternFrontTwoPageWorkbook(unitData, period) {
     num: cfg.lessonNum,
     code: `KT5.${cfg.lessonNum}`,
     title: cfg.title.replace(/^KT5\.\d+:\s*/, ''),
+    enquiryQuestion: cfg.enquiryQuestion,
     doNowMarks: 10,
     q1Marks: 4,
     q2Type: [1, 3, 5].includes(cfg.lessonNum) ? 'Q2(a) Utility' : 'Q2(b) Follow-up',

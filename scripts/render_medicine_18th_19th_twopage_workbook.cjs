@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
-const { renderStandardFrontCover, renderStandardBackCover } = require('./components/render_standard_cover.cjs');
+const { renderStandardFrontCover, renderStandardBackCover, renderVersoLessonQr } = require('./components/render_standard_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -532,7 +532,7 @@ const eighteenthNineteenthConfigs = [
     linedLeftQuip:
       'Snow established waterborne transmission in 1854, but it took the Great Stink of 1858 and the 1867 Reform Act to compel government action.',
     linedRightQuip:
-      'Weigh Snow’s epidemiological genius against Chadwick’s sanitary report, Bazalgette’s sewers, and Disraeli’s compulsory 1875 Act.',
+      'Weigh Snow’s epidemiological genius against Chadwick’s sanitary report, Bazalgette’s sewers, and the compulsory 1875 Public Health Act.',
     stages: [
       {
         step: 1,
@@ -668,18 +668,21 @@ function renderSpinePage(cfg) {
     <div class="page-body-full">
       
       <!-- Lesson Header with Inquiry Question Title -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
-            ${keyTopicBadge} &bull; LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            EDEXCEL GCSE (9–1) HISTORY &bull; PAPER 1 (1HI0/11)
-          </span>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
+              ${keyTopicBadge} &bull; LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              EDEXCEL GCSE (9–1) HISTORY &bull; PAPER 1 (1HI0/11)
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 12.2pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.2;">
+            ${enquiryQuestion}
+          </h2>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.2pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.2;">
-          ${enquiryQuestion}
-        </h2>
+        ${renderVersoLessonQr({ unitId: 'edexcel_medicine', lessonId: cfg.id })}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -1015,7 +1018,7 @@ function build18th19thTwoPageWorkbook(unitData, period) {
             <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 6px; border-radius: 2px;">Key Topic 3.5</span>
           </div>
           <p style="font-family: 'Georgia', serif; font-size: 8.6pt; color: #000000; margin: 0; line-height: 1.3;">
-            Disraeli’s government ends laissez-faire by making public health compulsory. Municipal councils are legally required to provide clean piped water, subterranean sewer drainage, street lighting, and medical officers of health, transforming urban life expectancy.
+            The 1875 Public Health Act ends laissez-faire by making public health compulsory. Municipal councils are legally required to provide clean piped water, subterranean sewer drainage, street lighting, and medical officers of health, transforming urban life expectancy.
           </p>
         </div>
 
@@ -1188,6 +1191,7 @@ ${part1TaskLines}
     num: cfg.lessonNum,
     code: `KT3.${cfg.lessonNum}`,
     title: cfg.title.replace(/^KT\d+\.\d+:\s*/, ''),
+    enquiryQuestion: cfg.enquiryQuestion,
     doNowMarks: 10,
     q3Marks: 4,
     extType: idx === 4 ? 'Q5/6 Essay' : 'Q4 Explain',

@@ -72,15 +72,21 @@ export const CURRICULAR_PILLARS_CATALOG = {
     },
     workbook: {
       title: 'Course of the Great War Pupil Workbook',
-      label: 'Pupil Workbook',
+      label: 'Pupil Workbook (16p)',
       htmlUrl: '/units/great_war_part2/pupil_workbook.html',
       pdfUrl: '/pdfs/great_war_part2_pupil_workbook.pdf',
     },
     retrieval: {
-      title: 'Course of the Great War Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (30 Qs)',
+      title: 'The Course of the Great War Master Retrieval & Literary Companion (12 Pages)',
+      label: 'Retrieval & Literary Companion (12p)',
       htmlUrl: '/units/great_war_part2/great_war_part2_retrieval_companion.html',
-      pdfUrl: '/pdfs/The_Course_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf',
+      pdfUrl: '/pdfs/The_Course_of_the_Great_War_Master_Retrieval_and_Literary_Companion.pdf',
+    },
+    combined: {
+      title: 'The Course of the Great War Combined Master Scholar Workbook (24 Pages)',
+      label: 'Combined Workbook (24p)',
+      htmlUrl: '/units/great_war_part2/great_war_part2_combined_workbook.html',
+      pdfUrl: '/pdfs/The_Course_of_the_Great_War_Combined_Master_Scholar_Workbook.pdf',
     },
   },
   medieval_england: {
@@ -418,12 +424,14 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
   const tb = config.textbook;
   const wb = config.workbook;
   const rc = config.retrieval;
+  const cb = config.combined;
 
   const hasDistinctTextbook = tb && wb && tb.htmlUrl !== wb.htmlUrl && tb.pdfUrl !== wb.pdfUrl;
 
   const cleanTbTitle = (tb?.title || '').replace(/'/g, "\\'");
   const cleanWbTitle = (wb?.title || '').replace(/'/g, "\\'");
   const cleanRcTitle = (rc?.title || '').replace(/'/g, "\\'");
+  const cleanCbTitle = (cb?.title || '').replace(/'/g, "\\'");
 
   const textbookPill = hasDistinctTextbook
     ? `
@@ -469,11 +477,25 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
     ? `
         <!-- Pillar 3: Knowledge Retrieval Companion -->
         <div class="launchpad-pill-group pill-retrieval">
-          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${rc.htmlUrl}', '${cleanRcTitle}', '${rc.pdfUrl}', 'RETRIEVAL')" title="Open Knowledge Retrieval Companion in classroom reader">
+          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${rc.htmlUrl}', '${cleanRcTitle}', '${rc.pdfUrl}', 'RETRIEVAL')" title="Open ${cleanRcTitle || rc.label} in classroom reader">
             <i class="fa-solid fa-brain"></i>
             <span>${rc.label}</span>
           </button>
-          <a href="${rc.pdfUrl}" target="_blank" download title="Download Knowledge Retrieval Companion PDF" class="launchpad-pill-pdf">
+          <a href="${rc.pdfUrl}" target="_blank" download title="Download ${cleanRcTitle || rc.label} PDF" class="launchpad-pill-pdf">
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>
+        </div>`
+    : '';
+
+  const combinedPill = cb
+    ? `
+        <!-- Optional Pillar: Combined Master Scholar Workbook -->
+        <div class="launchpad-pill-group pill-combined">
+          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${cb.htmlUrl}', '${cleanCbTitle}', '${cb.pdfUrl}', 'COMBINED')" title="Open Combined Master Scholar Workbook (24 Pages) in classroom reader">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>${cb.label}</span>
+          </button>
+          <a href="${cb.pdfUrl}" target="_blank" download title="Download Combined Master Scholar Workbook (24 Pages) PDF" class="launchpad-pill-pdf">
             <i class="fa-solid fa-file-pdf"></i>
           </a>
         </div>`
@@ -485,6 +507,7 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
         ${textbookPill}
         ${workbookPill}
         ${retrievalPill}
+        ${combinedPill}
       </div>
     </div>
   `;

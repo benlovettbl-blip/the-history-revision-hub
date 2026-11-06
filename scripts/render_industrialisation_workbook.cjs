@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
+const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -750,19 +751,22 @@ function renderSpinePage(cfg, pageNum) {
   <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full">
       
-      <!-- Lesson Header with Inquiry Question Title (Expanded for High Legibility) -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 2px 8px; border-radius: 2px;">
-            ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            YEAR 8 &bull; INDUSTRIALISATION, EMPIRE &amp; POWER (1750–1901)
-          </span>
+      <!-- Lesson Header with Inquiry Question Title & 14mm Micro-QR -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 2px 8px; border-radius: 2px;">
+              ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              YEAR 8 &bull; INDUSTRIALISATION, EMPIRE &amp; POWER (1750–1901)
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 13.0pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
+            ${cfg.enquiryQuestion}
+          </h2>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 13.0pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
-          ${cfg.enquiryQuestion}
-        </h2>
+        ${renderVersoLessonQr({ unitId: 'industrialisation_and_empire', lessonId: cfg.id || `lesson_${cfg.lessonNum}` })}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -1730,7 +1734,7 @@ function compileIndustrialisationWorkbook() {
   // ====================================================================
   html += `
   <!-- PAGE 16: OUTSIDE BACK COVER (Full Colour Oxford Navy Standard) -->
-  <div class="page page-container verso-page" id="page-16" style="padding: 4mm 6mm;">
+  <div class="page page-container verso-page" id="page-16" style="padding: 6.5mm 6mm;">
     <div class="page-body-full">
       <!-- Back Cover Header Strip -->
       <div style="border-bottom: 2px solid #0f284e; padding-bottom: 3px; margin-bottom: 6px;">
@@ -1836,83 +1840,83 @@ function compileIndustrialisationWorkbook() {
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 1: Henry Cort &amp; Funtley Ironworks</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Explain Why: Naval Metallurgy &amp; Steam Power (1775–1787)</div>
               </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
                 <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
               </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
+              <td style="padding: 12.5px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; background: #ffffff;">&nbsp;</td>
             </tr>
             <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 2: Factory Work &amp; Child Labour</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Feature Drill &amp; Consequence: Sadler Committee &amp; 1833 Factory Act</div>
               </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
                 <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
               </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
+              <td style="padding: 12.5px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; background: #ffffff;">&nbsp;</td>
             </tr>
             <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 3: Urban Slums &amp; Public Health</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Feature Drill &amp; Consequence: Back-to-Backs &amp; Bazalgette Sewers</div>
               </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
                 <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
               </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
+              <td style="padding: 12.5px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; background: #ffffff;">&nbsp;</td>
             </tr>
             <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 4: Radical Protest &amp; The Swing Riots</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Feature Drill &amp; Narrative: Peterloo, Hampshire Swing Riots &amp; Tolpuddle</div>
               </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
                 <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
               </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
+              <td style="padding: 12.5px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; background: #ffffff;">&nbsp;</td>
             </tr>
             <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 5: The Road to Democracy</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Evaluative Statement Essay: Rotten Boroughs, 1832 Reform Act &amp; Secret Ballot</div>
               </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
                 <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
               </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
+              <td style="padding: 12.5px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; background: #ffffff;">&nbsp;</td>
             </tr>
             <tr style="border-bottom: 1px solid #0f284e; background: #f0f4f9;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Independent Study &amp; Notes Portfolio</div>
                 <div style="font-size: 7.5pt; color: #475569; margin-top: 1px;">Pages 14–15 Enquiry Notes, Reflection &amp; Revision Tasks</div>
               </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; color: #94a3b8; vertical-align: middle;">—</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #f0f4f9;">&nbsp;</td>
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; color: #94a3b8; vertical-align: middle;">—</td>
+              <td style="padding: 12.5px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; background: #f0f4f9;">&nbsp;</td>
             </tr>
             <tr style="background: #ffffff; border-top: 1.5px solid #0f284e;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; border-right: 1px solid #cbd5e1;">
                 <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Teacher-Designated Assessment Task</div>
               </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; color: #94a3b8; vertical-align: middle;">—</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
+              <td style="padding: 12.5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; color: #94a3b8; vertical-align: middle;">—</td>
+              <td style="padding: 12.5px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
+              <td style="padding: 12.5px 8px; background: #ffffff;">&nbsp;</td>
             </tr>
             <tr style="border-top: 1.5px solid #0f284e; background: #f8fafc;">
               <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; color: #0f284e; font-size: 8pt;">★</td>

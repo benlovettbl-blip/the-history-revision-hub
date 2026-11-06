@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
+const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -677,19 +678,22 @@ function renderSpinePage(cfg, pageNum) {
   <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full">
       
-      <!-- Lesson Header with Inquiry Question Title -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
-            ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            YEAR 8 &bull; THE HISTORY OF AUSTRALIA (1770–1901)
-          </span>
+      <!-- Lesson Header with Inquiry Question Title & 14mm Micro-QR -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
+              ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              YEAR 8 &bull; THE HISTORY OF AUSTRALIA (1770–1901)
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 13.0pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
+            ${cfg.enquiryQuestion}
+          </h2>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 13.0pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
-          ${cfg.enquiryQuestion}
-        </h2>
+        ${renderVersoLessonQr({ unitId: 'australia', lessonId: cfg.id || `lesson_${cfg.lessonNum}` })}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->

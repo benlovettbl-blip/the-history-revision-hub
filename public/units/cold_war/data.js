@@ -3726,7 +3726,7 @@ export default {
         },
         {
           "id": "lesson_3_q19",
-          "question": "What was the military codename for the American-led Berlin Airlift?",
+          "question": "During the 1948–1949 Berlin Blockade, what was the military codename for the American-led Berlin Airlift?",
           "options": [
             "Operation Vittles",
             "Operation Barbarossa",
@@ -3734,13 +3734,13 @@ export default {
             "Operation Anadyr"
           ],
           "answer": "Operation Vittles",
-          "q": "What was the military codename for the American-led Berlin Airlift?",
+          "q": "During the 1948–1949 Berlin Blockade, what was the military codename for the American-led Berlin Airlift?",
           "a": "Operation Vittles",
           "explanation": "Operation Vittles delivered food, coal, and medical supplies by air around the clock."
         },
         {
           "id": "lesson_3_q20",
-          "question": "For how many days did American and British transport planes fly supplies into Berlin before Stalin lifted the blockade?",
+          "question": "During the 1948–1949 Berlin Blockade, for how many days did Allied transport planes fly supplies into Berlin?",
           "options": [
             "For 324 days (delivering over 2.3 million tons of food, medicine, and coal)",
             "For 30 days",
@@ -3748,7 +3748,7 @@ export default {
             "For 3 years"
           ],
           "answer": "For 324 days (delivering over 2.3 million tons of food, medicine, and coal)",
-          "q": "For how many days did American and British transport planes fly supplies into Berlin before Stalin lifted the blockade?",
+          "q": "During the 1948–1949 Berlin Blockade, for how many days did Allied transport planes fly supplies into Berlin?",
           "a": "For 324 days (delivering over 2.3 million tons of food, medicine, and coal)",
           "explanation": "The 11-month airlift defeated Stalin’s siege without firing a single shot, forcing him to reopen transit corridors."
         }
@@ -4008,7 +4008,7 @@ export default {
         },
         {
           "id": "lesson_3_q19",
-          "question": "What was the military codename for the American-led Berlin Airlift?",
+          "question": "During the 1948–1949 Berlin Blockade, what was the military codename for the American-led Berlin Airlift?",
           "options": [
             "Operation Vittles",
             "Operation Barbarossa",
@@ -4016,13 +4016,13 @@ export default {
             "Operation Anadyr"
           ],
           "answer": "Operation Vittles",
-          "q": "What was the military codename for the American-led Berlin Airlift?",
+          "q": "During the 1948–1949 Berlin Blockade, what was the military codename for the American-led Berlin Airlift?",
           "a": "Operation Vittles",
           "explanation": "Operation Vittles delivered food, coal, and medical supplies by air around the clock."
         },
         {
           "id": "lesson_3_q20",
-          "question": "For how many days did American and British transport planes fly supplies into Berlin before Stalin lifted the blockade?",
+          "question": "During the 1948–1949 Berlin Blockade, for how many days did Allied transport planes fly supplies into Berlin?",
           "options": [
             "For 324 days (delivering over 2.3 million tons of food, medicine, and coal)",
             "For 30 days",
@@ -4030,7 +4030,7 @@ export default {
             "For 3 years"
           ],
           "answer": "For 324 days (delivering over 2.3 million tons of food, medicine, and coal)",
-          "q": "For how many days did American and British transport planes fly supplies into Berlin before Stalin lifted the blockade?",
+          "q": "During the 1948–1949 Berlin Blockade, for how many days did Allied transport planes fly supplies into Berlin?",
           "a": "For 324 days (delivering over 2.3 million tons of food, medicine, and coal)",
           "explanation": "The 11-month airlift defeated Stalin’s siege without firing a single shot, forcing him to reopen transit corridors."
         }
@@ -4949,7 +4949,7 @@ export default {
         },
         {
           "id": "lesson_4_q13",
-          "question": "Why did Kennedy choose a naval blockade termed a \"quarantine\" rather than launching airstrikes?",
+          "question": "During the 1962 Cuban Missile Crisis, why did President Kennedy choose a naval blockade termed a \"quarantine\" rather than launching airstrikes?",
           "options": [
             "To avoid killing Soviet personnel, avert a counter-attack on West Berlin, and avoid declaring war",
             "Because the US Navy lacked sufficient aircraft",
@@ -4957,7 +4957,7 @@ export default {
             "Because Castro had surrendered unconditionally"
           ],
           "answer": "To avoid killing Soviet personnel, avert a counter-attack on West Berlin, and avoid declaring war",
-          "q": "Why did Kennedy choose a naval blockade termed a \"quarantine\" rather than launching airstrikes?",
+          "q": "During the 1962 Cuban Missile Crisis, why did President Kennedy choose a naval blockade termed a \"quarantine\" rather than launching airstrikes?",
           "a": "To avoid killing Soviet personnel, avert a counter-attack on West Berlin, and avoid declaring war",
           "explanation": "A blockade avoided open war and gave Khrushchev time to reconsider without forcing immediate nuclear retaliation."
         },
@@ -5231,7 +5231,7 @@ export default {
         },
         {
           "id": "lesson_4_q13",
-          "question": "Why did Kennedy choose a naval blockade termed a \"quarantine\" rather than launching airstrikes?",
+          "question": "During the 1962 Cuban Missile Crisis, why did President Kennedy choose a naval blockade termed a \"quarantine\" rather than launching airstrikes?",
           "options": [
             "To avoid killing Soviet personnel, avert a counter-attack on West Berlin, and avoid declaring war",
             "Because the US Navy lacked sufficient aircraft",
@@ -5239,7 +5239,7 @@ export default {
             "Because Castro had surrendered unconditionally"
           ],
           "answer": "To avoid killing Soviet personnel, avert a counter-attack on West Berlin, and avoid declaring war",
-          "q": "Why did Kennedy choose a naval blockade termed a \"quarantine\" rather than launching airstrikes?",
+          "q": "During the 1962 Cuban Missile Crisis, why did President Kennedy choose a naval blockade termed a \"quarantine\" rather than launching airstrikes?",
           "a": "To avoid killing Soviet personnel, avert a counter-attack on West Berlin, and avoid declaring war",
           "explanation": "A blockade avoided open war and gave Khrushchev time to reconsider without forcing immediate nuclear retaliation."
         },

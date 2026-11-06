@@ -75,6 +75,9 @@ const { auditPageBudget, printSpaceAuditReport } = require('./audit_page_budget.
       if (candidates.includes('textbook_PUBLISHER.html')) {
         matched = matched.filter((f) => f !== 'textbook.html');
       }
+      if (arg === 'water_and_sanitation') {
+        matched = ['pupil_workbook.html', 'textbook.html'];
+      }
       if (arg === 'cme_new') {
         // Exclude legacy continuous files and unpaginated mastery files in cme_new
         matched = matched.filter(

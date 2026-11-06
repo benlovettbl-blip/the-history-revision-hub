@@ -1,4 +1,3 @@
-// Edexcel GCSE (9–1) History: Medicine in Britain, c1250–present and The British Sector of the Western Front, 1914–1918
 const data = {
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
@@ -15286,7 +15285,7 @@ const data = {
         {
           "date": "1875",
           "title": "The 1875 Public Health Act: End of Laissez-Faire",
-          "desc": "Following the 1867 Reform Act granting urban working men the vote, Prime Minister Benjamin Disraeli championed \"Sanitas Sanitatum\", passing the landmark Public Health Act of 1875.",
+          "desc": "Following the 1867 Reform Act granting urban working men the vote, Parliament championed \"Sanitas Sanitatum\", passing the landmark Public Health Act of 1875.",
           "para_ref": "[5.1–5.2]"
         }
       ],
@@ -15369,7 +15368,7 @@ const data = {
           },
           {
             "objective": "Explain why the 1875 Public Health Act marked the definitive death blow to laissez-faire.",
-            "primer": "Direct students to paragraphs [5.1]–[5.2]. Contrast the permissive 1848 Act with the compulsory 1875 duties, linking Disraeli’s reforms to the 1867 Reform Act that enfranchised urban working-class voters.",
+            "primer": "Direct students to paragraphs [5.1]–[5.2]. Contrast the permissive 1848 Act with the compulsory 1875 duties, linking the 1875 Act’s reforms to the 1867 Reform Act that enfranchised urban working-class voters.",
             "question": "Why was the 1875 Public Health Act able to succeed where the earlier 1848 Act had failed?"
           }
         ],
@@ -15587,7 +15586,7 @@ const data = {
           "act": 5,
           "title": "The 1875 Public Health Act: The Death of Laissez-Faire (1875)",
           "theme_heading": "The 1875 Public Health Act: The Death of Laissez-Faire (1875)",
-          "text": "<span class=\"para-ref\">[5.1]</span> The ultimate legislative triumph of the sanitary revolution was the **1875 Public Health Act**, passed under Prime Minister Benjamin Disraeli’s Conservative government. While Edwin Chadwick’s earlier *1848 Public Health Act* had been purely *permissive* (optional) and largely ignored by tight-fisted local ratepayer councils, the 1875 Act was strictly **compulsory**: every town council was legally forced to provide clean piped water, construct modern drainage, collect street refuse, pave roadways, and appoint a full-time Medical Officer of Health and Sanitary Inspector.<br><br><span class=\"para-ref\">[5.2]</span> Political democracy drove this legislative transformation. Under the 1867 Second Reform Act, urban working-class men had been granted the parliamentary vote; politicians could no longer ignore the appalling squalor of industrial slums if they wished to win elections. Combined with the Artisans’ Dwellings Act of 1875 (empowering councils to demolish filthy slums) and the Sale of Food and Drugs Act of 1875 (outlawing contaminated bread and milk), the 1875 Act marked the definitive death of *laissez-faire* and established the modern interventionist state, eliminating water-borne epidemics from Britain forever.",
+          "text": "<span class=\"para-ref\">[5.1]</span> The ultimate legislative triumph of the sanitary revolution was the **1875 Public Health Act**, passed under Parliament enacted the compulsory 1875 Public Health Act, ending laissez-faire. While Edwin Chadwick’s earlier *1848 Public Health Act* had been purely *permissive* (optional) and largely ignored by tight-fisted local ratepayer councils, the 1875 Act was strictly **compulsory**: every town council was legally forced to provide clean piped water, construct modern drainage, collect street refuse, pave roadways, and appoint a full-time Medical Officer of Health and Sanitary Inspector.<br><br><span class=\"para-ref\">[5.2]</span> Political democracy drove this legislative transformation. Under the 1867 Second Reform Act, urban working-class men had been granted the parliamentary vote; politicians could no longer ignore the appalling squalor of industrial slums if they wished to win elections. Combined with the Artisans’ Dwellings Act of 1875 (empowering councils to demolish filthy slums) and the Sale of Food and Drugs Act of 1875 (outlawing contaminated bread and milk), the 1875 Act marked the definitive death of *laissez-faire* and established the modern interventionist state, eliminating water-borne epidemics from Britain forever.",
           "sources": [
             {
               "id": "source_e_public_health_act_1875",
@@ -15600,15 +15599,15 @@ const data = {
               "question": "Explain how the Public Health Act 1875 marked the end of the government's laissez-faire attitude towards public health.",
               "model_answer": "The 1875 Public Health Act marked the definitive end of laissez-faire by making public health measures legally compulsory rather than optional. Local councils were legally forced to provide clean piped water, maintain sewers, appoint qualified Medical Officers of Health, and inspect food, ensuring the state took direct legal responsibility for citizens' living conditions.",
               "teacher_notes": {
-                "source_context": "Disraeli's Conservative government passed the 1875 Act under the campaign slogan Sanitas sanitatum, omnia sanitas ('Sanitation of sanitations, all is sanitation'). Unlike the permissive 1848 Act, councils could no longer refuse to spend ratepayer money on public health. **Hinge Question:** Was the end of laissez-faire driven more by scientific fear of epidemics or by politicians competing for the votes of newly enfranchised working-class men after 1867?"
+                "source_context": "The British government passed the 1875 Act under the campaign slogan Sanitas sanitatum, omnia sanitas ('Sanitation of sanitations, all is sanitation'). Unlike the permissive 1848 Act, councils could no longer refuse to spend ratepayer money on public health. **Hinge Question:** Was the end of laissez-faire driven more by scientific fear of epidemics or by politicians competing for the votes of newly enfranchised working-class men after 1867?"
               },
               "text": "Section 13: All existing and future sewers within the district of a local authority shall vest in and be under the control of such local authority, which shall cause them to be properly cleansed and emptied... Section 64: All existing public cisterns, pumps, wells, reservoirs, and conduits used for the gratuitous supply of water to inhabitants shall be maintained and kept plentifully supplied with pure and wholesome water by the local authority... Section 189: Every urban authority shall from time to time appoint a legally qualified medical practitioner as Medical Officer of Health, and shall appoint a fit and proper person to be Inspector of Nuisances... Section 116: The Medical Officer of Health may at all reasonable times inspect any animal, carcass, meat, poultry, fish, fruit, or vegetables exposed for sale, and if unfit for the food of man, seize the same.",
               "enquiry_question": "Explain how the Public Health Act 1875 marked the end of the government's laissez-faire attitude towards public health.",
               "hinge_question": "Was the end of laissez-faire driven more by scientific fear of epidemics or by politicians competing for the votes of newly enfranchised working-class men after 1867?",
-              "source_context": "Disraeli's Conservative government passed the 1875 Act under the campaign slogan Sanitas sanitatum, omnia sanitas ('Sanitation of sanitations, all is sanitation'). Unlike the permissive 1848 Act, councils could no longer refuse to spend ratepayer money on public health. **Hinge Question:** Was the end of laissez-faire driven more by scientific fear of epidemics or by politicians competing for the votes of newly enfranchised working-class men after 1867?"
+              "source_context": "The British government passed the 1875 Act under the campaign slogan Sanitas sanitatum, omnia sanitas ('Sanitation of sanitations, all is sanitation'). Unlike the permissive 1848 Act, councils could no longer refuse to spend ratepayer money on public health. **Hinge Question:** Was the end of laissez-faire driven more by scientific fear of epidemics or by politicians competing for the votes of newly enfranchised working-class men after 1867?"
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> The ultimate legislative triumph of the sanitary revolution was the **1875 Public Health Act**, passed under Prime Minister Benjamin Disraeli’s Conservative government. While Edwin Chadwick’s earlier *1848 Public Health Act* had been purely *permissive* (optional) and largely ignored by tight-fisted local ratepayer councils, the 1875 Act was strictly **compulsory**: every town council was legally forced to provide clean piped water, construct modern drainage, collect street refuse, pave roadways, and appoint a full-time Medical Officer of Health and Sanitary Inspector.<br><br><span class=\"para-ref\">[5.2]</span> Political democracy drove this legislative transformation. Under the 1867 Second Reform Act, urban working-class men had been granted the parliamentary vote; politicians could no longer ignore the appalling squalor of industrial slums if they wished to win elections. Combined with the Artisans’ Dwellings Act of 1875 (empowering councils to demolish filthy slums) and the Sale of Food and Drugs Act of 1875 (outlawing contaminated bread and milk), the 1875 Act marked the definitive death of *laissez-faire* and established the modern interventionist state, eliminating water-borne epidemics from Britain forever.",
+          "content": "<span class=\"para-ref\">[5.1]</span> The ultimate legislative triumph of the sanitary revolution was the **1875 Public Health Act**, passed under Parliament enacted the compulsory 1875 Public Health Act, ending laissez-faire. While Edwin Chadwick’s earlier *1848 Public Health Act* had been purely *permissive* (optional) and largely ignored by tight-fisted local ratepayer councils, the 1875 Act was strictly **compulsory**: every town council was legally forced to provide clean piped water, construct modern drainage, collect street refuse, pave roadways, and appoint a full-time Medical Officer of Health and Sanitary Inspector.<br><br><span class=\"para-ref\">[5.2]</span> Political democracy drove this legislative transformation. Under the 1867 Second Reform Act, urban working-class men had been granted the parliamentary vote; politicians could no longer ignore the appalling squalor of industrial slums if they wished to win elections. Combined with the Artisans’ Dwellings Act of 1875 (empowering councils to demolish filthy slums) and the Sale of Food and Drugs Act of 1875 (outlawing contaminated bread and milk), the 1875 Act marked the definitive death of *laissez-faire* and established the modern interventionist state, eliminating water-borne epidemics from Britain forever.",
           "theme": "The 1875 Public Health Act: The Death of Laissez-Faire (1875)"
         }
       ],
@@ -15675,7 +15674,7 @@ const data = {
             "type": "written",
             "tariff": "12 marks",
             "text": "Explain why the British government abandoned laissez-faire and passed the 1875 Public Health Act. [12 marks]",
-            "model": "One major reason the government abandoned laissez-faire was the **expansion of the franchise through the 1867 Reform Act**. Prior to 1867, only wealthy property owners had the vote, and they naturally resisted paying local rates to fund sewage systems that benefited the poor. However, the Second Reform Act of 1867 enfranchised over one million male urban working-class factory workers. For the first time, both major political parties—Benjamin Disraeli's Conservatives and William Gladstone's Liberals—had to compete directly for working-class votes to win general elections. Disraeli adopted the campaign slogan *Sanitas sanitatum, omnia sanitas* ('Sanitation, sanitation, all is sanitation'), promising social reform. Consequently, when Disraeli won the 1874 general election, his government immediately introduced the comprehensive, compulsory 1875 Public Health Act to deliver on its electoral promises.<br><br>Furthermore, the government was compelled to act by the **overwhelming public health crisis of cholera and 'The Great Stink' of 1858**. Repeated cholera epidemics in 1831, 1848, and 1853 had killed tens of thousands, but because the rich could flee to the countryside, Parliament dragged its feet. However, in the blistering hot summer of 1858, the Thames—which acted as an open sewer for two million Londoners—produced a stench so putrid and nauseating that parliamentary curtains were soaked in chloride of lime and MPs were forced to flee the chamber. Fearing that miasma would kill politicians themselves, Parliament suspended business and rushed through emergency legislation within eighteen days, allocating £3 million to engineer Joseph Bazalgette to construct London's 82-mile underground intercepting sewer network. The enormous success of Bazalgette's sewers proved that large-scale public engineering saved lives, creating irresistible pressure for national legislation.<br><br>In addition, government policy shifted due to **scientific evidence provided by Dr John Snow and Louis Pasteur's Germ Theory**. In 1854, John Snow mapped cholera deaths in Soho and removed the handle of the contaminated Broad Street pump, conclusively proving that cholera was a waterborne infection rather than an airborne miasma. Snow's epidemiological findings were subsequently validated in 1861 by Louis Pasteur's Germ Theory, which demonstrated scientifically that microscopic bacteria thrived in contaminated water and rotting waste. This destroyed the scientific credibility of miasma theory and proved to civil servants that laissez-faire was deadly negligence. Therefore, armed with indisputable scientific proof that clean water prevented epidemic disease, the government made public health duties strictly compulsory for all local councils in 1875.",
+            "model": "One major reason the government abandoned laissez-faire was the **expansion of the franchise through the 1867 Reform Act**. Prior to 1867, only wealthy property owners had the vote, and they naturally resisted paying local rates to fund sewage systems that benefited the poor. However, the Second Reform Act of 1867 enfranchised over one million male urban working-class factory workers. For the first time, both major political parties—Parliament's Conservatives and William Gladstone's Liberals—had to compete directly for working-class votes to win general elections. the 1875 Public Health Act adopted the campaign slogan *Sanitas sanitatum, omnia sanitas* ('Sanitation, sanitation, all is sanitation'), promising social reform. Consequently, when the 1875 Public Health Act won the 1874 general election, his government immediately introduced the comprehensive, compulsory 1875 Public Health Act to deliver on its electoral promises.<br><br>Furthermore, the government was compelled to act by the **overwhelming public health crisis of cholera and 'The Great Stink' of 1858**. Repeated cholera epidemics in 1831, 1848, and 1853 had killed tens of thousands, but because the rich could flee to the countryside, Parliament dragged its feet. However, in the blistering hot summer of 1858, the Thames—which acted as an open sewer for two million Londoners—produced a stench so putrid and nauseating that parliamentary curtains were soaked in chloride of lime and MPs were forced to flee the chamber. Fearing that miasma would kill politicians themselves, Parliament suspended business and rushed through emergency legislation within eighteen days, allocating £3 million to engineer Joseph Bazalgette to construct London's 82-mile underground intercepting sewer network. The enormous success of Bazalgette's sewers proved that large-scale public engineering saved lives, creating irresistible pressure for national legislation.<br><br>In addition, government policy shifted due to **scientific evidence provided by Dr John Snow and Louis Pasteur's Germ Theory**. In 1854, John Snow mapped cholera deaths in Soho and removed the handle of the contaminated Broad Street pump, conclusively proving that cholera was a waterborne infection rather than an airborne miasma. Snow's epidemiological findings were subsequently validated in 1861 by Louis Pasteur's Germ Theory, which demonstrated scientifically that microscopic bacteria thrived in contaminated water and rotting waste. This destroyed the scientific credibility of miasma theory and proved to civil servants that laissez-faire was deadly negligence. Therefore, armed with indisputable scientific proof that clean water prevented epidemic disease, the government made public health duties strictly compulsory for all local councils in 1875.",
             "prompt": "Explain three distinct causal factors behind the transition to compulsory public health legislation."
           }
         ]
@@ -15783,7 +15782,7 @@ const data = {
             "It required all Members of Parliament to undergo medical training."
           ],
           "answer": "It enfranchised working-class men, forcing political parties to pass social reforms to win their votes.",
-          "explanation": "Giving working-class town workers the vote meant politicians like Benjamin Disraeli had to champion public health (\"Sanitas sanitatum\") to secure election victories."
+          "explanation": "Giving working-class town workers the vote meant politicians like Parliament had to champion public health (\"Sanitas sanitatum\") to secure election victories."
         },
         {
           "question": "Which of the following was a mandatory requirement imposed on local councils by the compulsory 1875 Public Health Act?",
@@ -15816,7 +15815,7 @@ const data = {
         },
         {
           "q": "How did the 1867 Second Reform Act encourage public health reform?",
-          "a": "It gave working-class urban men the vote, forcing politicians (like Disraeli) to compete for votes by promising clean living conditions."
+          "a": "It gave working-class urban men the vote, forcing politicians  to compete for votes by promising clean living conditions."
         }
       ],
       "draw_tasks": [
@@ -15917,12 +15916,12 @@ const data = {
           "question": "Explain how the Public Health Act 1875 marked the end of the government's laissez-faire attitude towards public health.",
           "model_answer": "The 1875 Public Health Act marked the definitive end of laissez-faire by making public health measures legally compulsory rather than optional. Local councils were legally forced to provide clean piped water, maintain sewers, appoint qualified Medical Officers of Health, and inspect food, ensuring the state took direct legal responsibility for citizens' living conditions.",
           "teacher_notes": {
-            "source_context": "Disraeli's Conservative government passed the 1875 Act under the campaign slogan Sanitas sanitatum, omnia sanitas ('Sanitation of sanitations, all is sanitation'). Unlike the permissive 1848 Act, councils could no longer refuse to spend ratepayer money on public health. **Hinge Question:** Was the end of laissez-faire driven more by scientific fear of epidemics or by politicians competing for the votes of newly enfranchised working-class men after 1867?"
+            "source_context": "The British government passed the 1875 Act under the campaign slogan Sanitas sanitatum, omnia sanitas ('Sanitation of sanitations, all is sanitation'). Unlike the permissive 1848 Act, councils could no longer refuse to spend ratepayer money on public health. **Hinge Question:** Was the end of laissez-faire driven more by scientific fear of epidemics or by politicians competing for the votes of newly enfranchised working-class men after 1867?"
           },
           "text": "Section 13: All existing and future sewers within the district of a local authority shall vest in and be under the control of such local authority, which shall cause them to be properly cleansed and emptied... Section 64: All existing public cisterns, pumps, wells, reservoirs, and conduits used for the gratuitous supply of water to inhabitants shall be maintained and kept plentifully supplied with pure and wholesome water by the local authority... Section 189: Every urban authority shall from time to time appoint a legally qualified medical practitioner as Medical Officer of Health, and shall appoint a fit and proper person to be Inspector of Nuisances... Section 116: The Medical Officer of Health may at all reasonable times inspect any animal, carcass, meat, poultry, fish, fruit, or vegetables exposed for sale, and if unfit for the food of man, seize the same.",
           "enquiry_question": "Explain how the Public Health Act 1875 marked the end of the government's laissez-faire attitude towards public health.",
           "hinge_question": "Was the end of laissez-faire driven more by scientific fear of epidemics or by politicians competing for the votes of newly enfranchised working-class men after 1867?",
-          "source_context": "Disraeli's Conservative government passed the 1875 Act under the campaign slogan Sanitas sanitatum, omnia sanitas ('Sanitation of sanitations, all is sanitation'). Unlike the permissive 1848 Act, councils could no longer refuse to spend ratepayer money on public health. **Hinge Question:** Was the end of laissez-faire driven more by scientific fear of epidemics or by politicians competing for the votes of newly enfranchised working-class men after 1867?"
+          "source_context": "The British government passed the 1875 Act under the campaign slogan Sanitas sanitatum, omnia sanitas ('Sanitation of sanitations, all is sanitation'). Unlike the permissive 1848 Act, councils could no longer refuse to spend ratepayer money on public health. **Hinge Question:** Was the end of laissez-faire driven more by scientific fear of epidemics or by politicians competing for the votes of newly enfranchised working-class men after 1867?"
         }
       ],
       "video": [
@@ -16089,10 +16088,10 @@ const data = {
             "date": "1875",
             "para_ref": "[5.1–5.2]",
             "title": "The 1875 Public Health Act: End of Laissez-Faire",
-            "actor": "Benjamin Disraeli & Conservative Government",
+            "actor": "The 1875 Public Health Act & End of Laissez-Faire",
             "tag": "🏛️ COMPULSORY PUBLIC HEALTH ACT",
-            "trigger": "Following the 1867 Reform Act granting urban working men the vote, Prime Minister Benjamin Disraeli championed \"Sanitas Sanitatum\", passing the landmark Public Health Act of 1875.",
-            "desc": "Following the 1867 Reform Act granting urban working men the vote, Prime Minister Benjamin Disraeli championed \"Sanitas Sanitatum\", passing the landmark Public Health Act of 1875.",
+            "trigger": "Following the 1867 Reform Act granting urban working men the vote, Parliament championed \"Sanitas Sanitatum\", passing the landmark Public Health Act of 1875.",
+            "desc": "Following the 1867 Reform Act granting urban working men the vote, Parliament championed \"Sanitas Sanitatum\", passing the landmark Public Health Act of 1875.",
             "connective": "Replaced optional recommendations with strict compulsory duties, mandating town councils to provide clean water, collect rubbish, inspect food, and hire Medical Officers of Health, permanently ending laissez-faire.",
             "question": "Why was the 1875 Act the definitive death blow to laissez-faire?"
           }
@@ -16145,7 +16144,7 @@ const data = {
               "The Public Health Act (1875)"
             ],
             "prompt": "Use the stimulus points and your own historical knowledge to structure a balanced, sustained analytical response.",
-            "model": "There is strong evidence to agree that Dr John Snow made a groundbreaking contribution to public health during the 1854 Soho cholera outbreak. By meticulously mapping cholera deaths around Broad Street and removing the handle from the infected water pump, Snow proved that cholera was not an airborne miasma but a waterborne infection spread through sewage-contaminated drinking water. His scientific epidemiological mapping provided the conclusive empirical evidence needed to convince authorities that providing clean drinking water was essential to saving lives.<br><br>However, Edwin Chadwick played an equally decisive role in initiating public health reform. His 1842 *Report on the Sanitary Conditions of the Labouring Population* shocked Britain by proving statistically that poor living conditions, foul cesspits, and damp housing caused premature death among the working class. Chadwick argued that improving public health would reduce poverty and poor rates, directly inspiring the 1848 Public Health Act and the construction of Joseph Bazalgette’s massive London sewer network.<br><br>Furthermore, political developments were critical in turning theory into reality. The 1867 Reform Act gave working-class urban men the vote, compelling politicians to campaign on public health promises. This culminated in Benjamin Disraeli’s government passing the landmark 1875 Public Health Act, which made sanitation, clean water, and building inspections legally compulsory nationwide.<br><br>In conclusion, while John Snow provided the critical scientific proof that cholera was waterborne, he was not the sole or main reason for progress. Improvements required Chadwick’s social research, Bazalgette’s civil engineering, and above all the 1875 Public Health Act to force reluctant councils to finance nationwide sanitary reform.",
+            "model": "There is strong evidence to agree that Dr John Snow made a groundbreaking contribution to public health during the 1854 Soho cholera outbreak. By meticulously mapping cholera deaths around Broad Street and removing the handle from the infected water pump, Snow proved that cholera was not an airborne miasma but a waterborne infection spread through sewage-contaminated drinking water. His scientific epidemiological mapping provided the conclusive empirical evidence needed to convince authorities that providing clean drinking water was essential to saving lives.<br><br>However, Edwin Chadwick played an equally decisive role in initiating public health reform. His 1842 *Report on the Sanitary Conditions of the Labouring Population* shocked Britain by proving statistically that poor living conditions, foul cesspits, and damp housing caused premature death among the working class. Chadwick argued that improving public health would reduce poverty and poor rates, directly inspiring the 1848 Public Health Act and the construction of Joseph Bazalgette’s massive London sewer network.<br><br>Furthermore, political developments were critical in turning theory into reality. The 1867 Reform Act gave working-class urban men the vote, compelling politicians to campaign on public health promises. This culminated in Parliament’s government passing the landmark 1875 Public Health Act, which made sanitation, clean water, and building inspections legally compulsory nationwide.<br><br>In conclusion, while John Snow provided the critical scientific proof that cholera was waterborne, he was not the sole or main reason for progress. Improvements required Chadwick’s social research, Bazalgette’s civil engineering, and above all the 1875 Public Health Act to force reluctant councils to finance nationwide sanitary reform.",
             "scaffolding": {
               "acronym": "PEEL + Balanced Evaluation",
               "acronym_title": "16+4 marks",
@@ -16268,7 +16267,7 @@ const data = {
             "It required all Members of Parliament to undergo medical training."
           ],
           "answer": "It enfranchised working-class men, forcing political parties to pass social reforms to win their votes.",
-          "explanation": "Giving working-class town workers the vote meant politicians like Benjamin Disraeli had to champion public health (\"Sanitas sanitatum\") to secure election victories."
+          "explanation": "Giving working-class town workers the vote meant politicians like Parliament had to champion public health (\"Sanitas sanitatum\") to secure election victories."
         },
         {
           "question": "Which of the following was a mandatory requirement imposed on local councils by the compulsory 1875 Public Health Act?",
@@ -17137,7 +17136,7 @@ const data = {
               "The Human Genome Project (1990–2003)"
             ],
             "prompt": "Use the stimulus points and your own historical knowledge to structure a balanced, sustained analytical response.",
-            "model": "One major reason for rapid progress was the groundbreaking discovery of the structure of DNA in 1953. Working at King's College London, Rosalind Franklin used X-ray crystallography to produce 'Photograph 51', which revealed the double-helix structure of DNA. Using this data, James Watson and Francis Crick at Cambridge constructed the first accurate molecular model of DNA. Understanding how genetic information was stored and replicated allowed medical researchers to identify how faulty inherited genes directly caused hereditary conditions like cystic fibrosis and Down's syndrome.<br><br>Furthermore, the Human Genome Project (1990–2003) revolutionized disease understanding by mapping every single gene in the human body. Supported by international government funding and supercomputing technology, this collaborative effort decoded three billion DNA base pairs. This enabled doctors to identify specific genetic predispositions to diseases such as breast cancer (BRCA1/BRCA2 genes), shifting medicine towards predictive genetic screening.<br><br>Finally, technological innovations in diagnostic imaging and lifestyle epidemiology accelerated understanding of chronic non-infectious diseases. In 1950, Richard Doll and Austin Bradford Hill published definitive statistical research proving the causal link between cigarette smoking and lung cancer, while modern electron microscopes enabled scientists to photograph viruses that had previously been invisible.",
+            "model": "One major reason for rapid progress was the groundbreaking discovery of the structure of DNA in 1953. Working at King's College London, Rosalind Franklin used X-ray crystallography to produce 'Photograph 51', which revealed the double-helix structure of DNA. Using this data, James Watson and Francis Crick at Cambridge constructed the first accurate molecular model of DNA. Understanding how genetic information was stored and replicated allowed medical researchers to identify how faulty inherited genes directly caused hereditary conditions like cystic fibrosis and Down's syndrome.<br><br>Furthermore, the Human Genome Project (1990–2003) revolutionized disease understanding by mapping every single gene in the human body. Supported by international government funding and supercomputing technology, this collaborative effort decoded three billion DNA base pairs. This enabled doctors to identify specific genetic predispositions to diseases such as breast cancer (BRCA1/BRCA2 genes), shifting medicine towards predictive genetic screening.<br><br>Finally, technological innovations in diagnostic imaging and lifestyle epidemiology accelerated understanding of chronic non-infectious diseases. Epidemiological studies and government health warnings established the conclusive causal link between cigarette smoking and lung cancer, while modern electron microscopes enabled scientists to photograph viruses that had previously been invisible.",
             "scaffolding": {
               "acronym": "PEEL Causal Structure Strip",
               "acronym_title": "12 marks",
@@ -20265,9 +20264,9 @@ const data = {
       "id": "lesson_4_5",
       "banner": "/images/banner_radiotherapy.jpg",
       "banner_position": "center 40%",
-      "title": "KT4.5: Case Study 2: Public Health & The Fight Against Lung Cancer (c.1950–present)",
-      "specification_anchor": "Case study: The fight against lung cancer in the twenty-first century: the use of science and technology in diagnosis and treatment; government action.",
-      "enquiry_question": "How did the battle against lung cancer drive modern high-tech oncology and permanently dismantle government laissez-faire?",
+      "title": "KT4.5: Case Study 2: The Fight Against Lung Cancer (21st Century)",
+      "specification_anchor": "The fight against lung cancer in the twenty-first century: diagnostic science (chest X-rays vs high-resolution CT, PET-CT, bronchoscopy); surgical and clinical treatments (VATS keyhole lobectomy, CyberKnife radiotherapy, targeted immunotherapy); compulsory government prevention (Health Act 2006, 2007 public smoking ban, 2016 plain packaging, 2024 smoke-free generation).",
+      "enquiry_question": "Why has the 21st-century fight against lung cancer required state coercion rather than high-tech cures?",
       "living_timeline_mission": "Turn to Pages 2–3 (Key Topic 4.5). In the drawing box, sketch a 1950s cigarette advertisement and a modern plain-packaged packet with health warnings. Annotate how government regulation ended modern laissez-faire!",
       "timeline_anchor": [
         {
@@ -20278,8 +20277,8 @@ const data = {
         },
         {
           "date": "1950–1954",
-          "title": "Doll & Hill’s Proof",
-          "desc": "Medical Research Council epidemiologists Richard Doll and Austin Bradford Hill surveyed 709 lung cancer patients across 20 London hospitals in 1950, finding all but two were regular smokers.",
+          "title": "High-Tech Diagnostic Science (CT & PET)",
+          "desc": "Clinicians deploy low-dose spiral CT scans and PET-CT imaging to detect asymptomatic Stage 1 lung tumours before metastasis.",
           "para_ref": "[1.1–1.2]"
         },
         {
@@ -20301,45 +20300,31 @@ const data = {
           "para_ref": "[5.1–5.2]"
         }
       ],
-      "hook_text": "In 1900, lung cancer was so rare that hospital pathologists rarely saw a case. By 1950, machine-rolled cigarettes had created a national epidemic, killing tens of thousands of British citizens. Richard Doll and Austin Bradford Hill’s statistical research proved the indisputable causal link between tobacco and carcinoma. The ensuing struggle forced government to permanently dismantle modern laissez-faire through television ad bans, public smoking bans, and plain packaging, while oncologists developed CT screening, robotic surgery, and immunotherapy. How did government anti-smoking legislation and modern diagnostic technology combine in the fight against lung cancer?",
+      "hook_text": "Twenty-first-century medicine confronts a unique biological and technological challenge in combating lung cancer: early-stage tumours develop silently without pain, making computerised scanning (CT/PET-CT) and aggressive government statutory action far more decisive than late-stage hospital cures.",
       "teacher_notes": {
-        "primer": "This enquiry evaluates the battle against lung cancer as a modern public health case study, examining the interwar surge in smoking, Richard Doll and Austin Bradford Hill’s groundbreaking statistical epidemiology (1950–1954), the political struggle against tobacco corporate lobbying resulting in advertising bans (1965), the smoke-free legislation of the Health Act 2006, plain packaging (2016), and the multimodal limits of modern oncology.",
+        "primer": "This enquiry evaluates the Edexcel Paper 1 modern depth case study: the fight against lung cancer in the twenty-first century. Pupils examine the severe diagnostic challenge of asymptomatic early-stage tumours, modern imaging technologies (CT, PET-CT, bronchoscopy), minimally invasive surgical and radiotherapeutic treatments (VATS lobectomy, CyberKnife, immunotherapy), and the decisive role of statutory government prevention (2007 indoor ban, 2016 plain packaging).",
         "objectives": [
           {
-            "objective": "Explain why early twentieth-century physicians failed to link the surge in lung cancer to tobacco smoking.",
-            "primer": "Direct students to paragraphs [1.1]–[1.2] and Source A (1949 doctor cigarette advertisement). Highlight how doctors blamed road tarmac fumes and coal smog while tobacco firms actively used actors portraying physicians to reassure the public.",
-            "question": "Why did medical authorities in the 1930s and 1940s blame coal smog and road tarmac rather than cigarettes for rising lung cancer rates?"
+            "objective": "Analyse why the biological nature of lung tissue makes early diagnosis exceptionally difficult.",
+            "primer": "Direct students to Paragraph [5.1]. Emphasise that lung tissue has few pain-sensing nerves, meaning early tumours cause no discomfort and are missed by standard 2D X-rays.",
+            "question": "Why did standard two-dimensional chest X-rays fail to save lung cancer patients in the twentieth century?"
           },
           {
-            "objective": "Analyse how Richard Doll and Austin Bradford Hill used statistical epidemiology to prove the causal link.",
-            "primer": "Direct students to paragraphs [2.1]–[2.2]. Explain their 1950 case-control study of 709 London hospital patients and the prospective British Doctors Study (tracking 40,000 physicians over decades), proving heavy smokers had a 50-times higher risk.",
-            "question": "How did Doll and Hill’s statistical method of case-control surveys and long-term doctor tracking prove that smoking directly caused lung cancer?"
+            "objective": "Evaluate the role of 21st-century science and technology in diagnosis and treatment.",
+            "primer": "Guide pupils through Paragraphs [5.3]–[5.8]. Compare VATS keyhole surgery and CyberKnife with older radical surgery, and examine how immunotherapy retrains the body's immune system.",
+            "question": "How does Video-Assisted Thoracoscopic Surgery (VATS) represent a significant departure from twentieth-century open thoracotomy?"
           },
           {
-            "objective": "Examine why initial government public health action was delayed by commercial lobbying and tax revenues.",
-            "primer": "Direct students to paragraphs [3.1]–[3.2]. Focus on the Royal College of Physicians 1962 report, the 1965 ban on television cigarette commercials, and compulsory packet warnings in 1971.",
-            "question": "Why did British governments delay taking decisive action against cigarette marketing during the 1950s and 1960s?"
-          },
-          {
-            "objective": "Evaluate the impact of scientific evidence on passive secondhand smoking leading to the 2007 public smoking ban.",
-            "primer": "Direct students to paragraphs [4.1]–[4.2]. Discuss how proving that non-smokers and bar staff were harmed by secondhand smoke gave the government the moral and legal mandate to pass the Health Act 2006.",
-            "question": "Why was proving the health danger of passive smoking so crucial in overcoming resistance to the 2007 public indoor smoking ban?"
-          },
-          {
-            "objective": "Assess modern multimodal oncology treatments and explain why statutory prevention remains superior to cure.",
-            "primer": "Direct students to paragraphs [5.1]–[5.2] and Source B (plain cigarette packaging with warnings). Contrast low-dose CT scans, VATS lobectomies, and immunotherapy against stubbornly low survival rates, emphasizing prevention beats cure.",
-            "question": "Why do stubbornly low lung cancer survival rates demonstrate that statutory prevention (like plain packaging) is far more effective than high-tech clinical oncology?"
+            "objective": "Assess why statutory government intervention has proved more decisive than clinical medicine.",
+            "primer": "Focus on Paragraphs [5.9]–[5.10]. Contrast clinical survival rates (~10% after 10 years) with the dramatic public health impact of the 2007 ban and standardized packaging.",
+            "question": "If modern hospitals possess PET-CT scans and robotic CyberKnife systems, why does state legislation remain the most effective weapon against lung cancer?"
           }
-        ],
-        "source_context": {
-          "Source A": "1949 Vintage Cigarette Advertisement Featuring a Doctor. Commercial magazine advertisement for Camel cigarettes claiming that \"More Doctors Smoke Camels than any other cigarette,\" illustrating how tobacco companies used medical endorsements. Hinge Question: How did corporate tobacco advertising exploit the professional authority of medical practitioners to suppress public awareness of smoking hazards prior to Doll and Hill’s 1950 epidemiological study?",
-          "Source B": "Modern Cigarette Packet with Mandatory Government Health Warning. Contemporary standardized plain cigarette packaging in drab Pantone 448C displaying compulsory graphic medical warnings mandated under 2016 regulations. Hinge Question: How does the transition from unregulated commercial advertising (Source A) to state-mandated plain packaging (Source B) illustrate the changing role of government intervention in 20th- and 21st-century public health?"
-        }
+        ]
       },
       "fun_facts": [
-        "When epidemiologist Richard Doll began his 1948 study, he was a heavy smoker who assumed tarmac road dust was causing lung cancer; as the statistical data accumulated, he immediately quit smoking and lived to age 92.",
-        "Under the 2016 plain packaging legislation, all tobacco products in the UK must be sold in Pantone 448 C—a drab dark olive-brown color scientifically tested to be the most visually repellent color to consumers.",
-        "In 2007, England made it illegal to smoke in all enclosed public places and workplaces, a law that reduced hospital admissions for heart attacks by 2.4% in the very first year."
+        "The CyberKnife robotic radiation system uses real-time cameras and breathing sensors to track a lung tumour moving up and down as the patient breathes, delivering sub-millimetre radiation without damaging surrounding healthy tissue.",
+        "In 2016, the UK government mandated Pantone 448 C—officially named 'opaque couchant' and determined by market researchers to be the ugliest colour in the world—for all standardised cigarette packaging to deter young people from smoking.",
+        "Standardised plain packaging combined with the 2007 public smoking ban helped drive British adult smoking rates from over 24% in 2000 to below 13% today."
       ],
       "guided_reading": [
         {
@@ -20347,7 +20332,7 @@ const data = {
           "answer": "It was extraordinarily rare, with hospital pathologists encountering only a handful of cases throughout their entire careers."
         },
         {
-          "question": "Using paragraph [2.1], what did Richard Doll and Austin Bradford Hill publish in the BMJ in September 1950?",
+          "question": "Using paragraph [2.1], what did low-dose CT scanning and modern clinical trials publish in the BMJ in September 1950?",
           "answer": "A landmark study showing heavy cigarette smokers were fifty times more likely to develop lung cancer than non-smokers."
         },
         {
@@ -20362,157 +20347,110 @@ const data = {
       "narrative_blocks": [
         {
           "act": 1,
-          "title": "The 20th-Century Smoking Epidemic & Tobacco Advertising (1920s–1950)",
-          "theme_heading": "The 20th-Century Smoking Epidemic & Tobacco Advertising (1920s–1950)",
-          "text": "<span class=\"para-ref\">[1.1]</span> At the turn of the twentieth century, carcinoma of the lung was an extraordinarily rare clinical pathology in Great Britain, with major London teaching hospitals recording fewer than ten cases annually. By 1950, however, lung cancer had erupted into a catastrophic public health crisis, claiming over 12,000 British lives each year and rapidly becoming the leading cause of cancer mortality among adult men. The catalyst behind this deadly surge was the widespread industrialization of machine-rolled tobacco cigarettes, invented in the late nineteenth century and distributed on a colossal commercial scale.<br><br><span class=\"para-ref\">[1.2]</span> During the First and Second World Wars, military commanders issued free cigarette rations to soldiers in trenches and combat stations to alleviate anxiety, hooking entire generations on nicotine. In the interwar and post-war years, commercial tobacco corporations mounted aggressive advertising campaigns across print newspapers, cinema reels, and roadside billboards, associating smoking with athleticism, Hollywood glamour, and social sophistication. Bizarrely, tobacco companies actively weaponized the medical profession to deceive the public, running advertisements (<span class=\"archival-meta-tag\">Source A</span>) featuring actors dressed as white-coated doctors claiming that \"More Doctors Smoke Camels,\" reassuring citizens that tobacco was soothing to the throat and perfectly harmless.",
-          "sources": [
-            {
-              "id": "med_l20_source_tobacco_ad",
-              "letter": "A",
-              "title": "Source A: Transcript of a National British Cigarette Print Advertisement (1938)",
-              "type": "written",
-              "caption": "Popular 1938 national print advertisement promoting commercial cigarettes as throat-soothing and health-protecting before medical links to lung cancer were established.",
-              "desc": "Popular 1938 national print advertisement promoting commercial cigarettes as throat-soothing and health-protecting before medical links to lung cancer were established.",
-              "provenance": "Daily Mail, London edition, Advertising Supplement, 14 May 1938.",
-              "citation": "Daily Mail, London edition, Advertising Supplement, 14 May 1938.",
-              "intro": "From Transcript of a National British Cigarette Print Advertisement (1938).",
-              "hinge_question": "How does this 1938 cigarette advertisement demonstrate why smoking was so culturally normalized and popular before the 1950s?",
-              "source_context": "Before 1950, tobacco manufacturers advertised cigarettes as soothing, masculine, and medically safe, leading to soaring cigarette consumption that caused a massive epidemic of lung cancer. **Hinge Question:** How does this 1938 cigarette advertisement demonstrate why smoking was so culturally normalized and popular before the 1950s?",
-              "context": "Before 1950, tobacco manufacturers advertised cigarettes as soothing, masculine, and medically safe, leading to soaring cigarette consumption that caused a massive epidemic of lung cancer.",
-              "question_badge": "Source Utility",
-              "question_type": "Source Utility",
-              "enquiry_question": "How useful is Source A for an enquiry into how commercial tobacco advertising normalized cigarette consumption in Britain prior to scientific proof of lung cancer links?",
-              "model_answer": "<p>Source A is highly useful because it demonstrates how cigarette manufacturers actively marketed tobacco as beneficial to throat health and approved by doctors, normalising daily smoking across British society. As a mass commercial print advertisement, it explains why cigarette consumption reached unprecedented heights in the early 20th century, before Richard Doll’s epidemiological studies proved tobacco was the primary cause of fatal lung malignancies.</p>",
-              "teacher_notes": {
-                "source_context": "Before 1950, tobacco manufacturers advertised cigarettes as soothing, masculine, and medically safe, leading to soaring cigarette consumption that caused a massive epidemic of lung cancer. **Hinge Question:** How does this 1938 cigarette advertisement demonstrate why smoking was so culturally normalized and popular before the 1950s?"
-              },
-              "text": "Protect your throat! Smoke Craven \"A\" cork-tipped cigarettes. Made specifically to prevent sore throats, coughing, and vocal strain. Doctors agree that our natural, sun-ripened Virginia tobacco is pure, mild, and non-irritating. Join the millions of active men and women who smoke Craven \"A\" daily for refreshment, steady nerves, and throat protection."
-            }
-          ],
-          "content": "<span class=\"para-ref\">[1.1]</span> At the turn of the twentieth century, carcinoma of the lung was an extraordinarily rare clinical pathology in Great Britain, with major London teaching hospitals recording fewer than ten cases annually. By 1950, however, lung cancer had erupted into a catastrophic public health crisis, claiming over 12,000 British lives each year and rapidly becoming the leading cause of cancer mortality among adult men. The catalyst behind this deadly surge was the widespread industrialization of machine-rolled tobacco cigarettes, invented in the late nineteenth century and distributed on a colossal commercial scale.<br><br><span class=\"para-ref\">[1.2]</span> During the First and Second World Wars, military commanders issued free cigarette rations to soldiers in trenches and combat stations to alleviate anxiety, hooking entire generations on nicotine. In the interwar and post-war years, commercial tobacco corporations mounted aggressive advertising campaigns across print newspapers, cinema reels, and roadside billboards, associating smoking with athleticism, Hollywood glamour, and social sophistication. Bizarrely, tobacco companies actively weaponized the medical profession to deceive the public, running advertisements (<span class=\"archival-meta-tag\">Source A</span>) featuring actors dressed as white-coated doctors claiming that \"More Doctors Smoke Camels,\" reassuring citizens that tobacco was soothing to the throat and perfectly harmless.",
-          "theme": "The 20th-Century Smoking Epidemic & Tobacco Advertising (1920s–1950)"
-        },
-        {
-          "act": 2,
-          "title": "Doll & Hill’s Epidemiological Indictment (1950–1954)",
-          "theme_heading": "Doll & Hill’s Epidemiological Indictment (1950–1954)",
-          "text": "<span class=\"para-ref\">[2.1]</span> As hospital thoracic wards overflowed with dying patients, the Medical Research Council (MRC) commissioned two brilliant investigators—epidemiologist Richard Doll and medical statistician Austin Bradford Hill—to determine the cause of the epidemic. Most contemporary physicians assumed the culprit was environmental pollution, pointing to coal fires, automobile exhaust fumes, or tarmac road resurfacing. Doll and Hill designed an innovative forensic inquiry, personally interviewing 709 lung cancer patients across twenty London hospitals between 1948 and 1952, comparing their detailed life histories with an identical control group of hospital patients admitted for non-cancer illnesses.<br><br><span class=\"para-ref\">[2.2]</span> In September 1950, Doll and Hill dropped a scientific bombshell in the *British Medical Journal* (BMJ): heavy cigarette smokers were fifty times more likely to contract lung cancer than non-smokers, with the statistical risk rising in direct proportion to the number of cigarettes smoked per day. To silence skeptical tobacco executives, in October 1951 Doll and Hill launched the monumental British Doctors Study, tracking the smoking habits and cause of death of over 40,000 registered British physicians over several decades. Within three years, the prospective study proved conclusively that smoking caused lung cancer, chronic obstructive pulmonary disease (COPD), and coronary heart disease. Stunned by his own forensic data, Richard Doll extinguished his pipe and never smoked again.",
-          "image": "/images/vintage_doctor_cigarette_ad.jpg",
-          "image_alt": "Vintage 1949 color magazine advertisement showing a physician in white lab coat with the slogan 'More Doctors Smoke Camels Than Any Other Cigarette'",
-          "caption": "The Smoking Era (1949): Mid-century tobacco advertising explicitly used medical authority to reassure consumers that smoking was healthy, soothing, and harmless, driving British cigarette consumption to record peaks.",
+          "title": "The Diagnostic Challenge: Asymptomatic Tumours & X-Ray Limits",
+          "theme_heading": "The Diagnostic Challenge: Asymptomatic Tumours & X-Ray Limits",
+          "theme": "The Diagnostic Challenge: Asymptomatic Tumours & X-Ray Limits",
+          "text": "<span class=\"para-ref\">[5.1]</span> At the start of the twenty-first century, carcinoma of the lung remained the deadliest cancer pathology in Great Britain, claiming over 35,000 lives annually. Modern oncologists confronted a severe biological obstacle: lung tissue possesses virtually no pain-sensing nerve receptors. Consequently, early-stage malignant tumours grow entirely silently and asymptomatically deep within bronchial airways, causing neither discomfort nor pain while they remain small enough to be easily cured.<br><br><span class=\"para-ref\">[5.2]</span> By the time patients developed noticeable symptoms—such as persistent coughing, breathlessness, or coughing up blood—the tumour was typically larger than three centimetres and had invaded lymph nodes or metastasised to the liver or brain. Standard two-dimensional chest X-rays were inadequate for early detection because they frequently missed small lesions hidden behind the heart or ribs, and could not differentiate benign scars from malignant tumours. Consequently, over two-thirds of British lung cancer patients were diagnosed at Stage 3 or 4, when curative surgery was no longer viable.",
+          "content": "<span class=\"para-ref\">[5.1]</span> At the start of the twenty-first century, carcinoma of the lung remained the deadliest cancer pathology in Great Britain, claiming over 35,000 lives annually. Modern oncologists confronted a severe biological obstacle: lung tissue possesses virtually no pain-sensing nerve receptors. Consequently, early-stage malignant tumours grow entirely silently and asymptomatically deep within bronchial airways, causing neither discomfort nor pain while they remain small enough to be easily cured.<br><br><span class=\"para-ref\">[5.2]</span> By the time patients developed noticeable symptoms—such as persistent coughing, breathlessness, or coughing up blood—the tumour was typically larger than three centimetres and had invaded lymph nodes or metastasised to the liver or brain. Standard two-dimensional chest X-rays were inadequate for early detection because they frequently missed small lesions hidden behind the heart or ribs, and could not differentiate benign scars from malignant tumours. Consequently, over two-thirds of British lung cancer patients were diagnosed at Stage 3 or 4, when curative surgery was no longer viable.",
+          "image": null,
+          "caption": null,
+          "image_alt": null,
           "isReversed": false,
           "sources": [
             {
-              "id": "source_b_doll_hill_bmj_1950",
+              "id": "source_a_lung_cancer_ad_vintage",
+              "letter": "A",
+              "title": "Source A: 1938 Vintage Cigarette Advertisement Promoting Throat Protection",
+              "type": "written",
+              "caption": "Commercial magazine advertisement for Craven 'A' cigarettes claiming 'Doctors agree that our natural tobacco is pure, mild, and non-irritating'.",
+              "citation": "Commercial print advertisement, London Illustrated News, 1938.",
+              "desc": "Historical print advertisement illustrating commercial tobacco marketing and medical endorsement prior to public health legislation.",
+              "question_badge": "COMMERCIAL ADVERTISING & PUBLIC HEALTH",
+              "question_type": "Source Inference",
+              "question": "What can be inferred from Source A about how cigarette companies marketed smoking to the British public before modern health legislation?",
+              "enquiry_question": "What can be inferred from Source A about how cigarette companies marketed smoking to the British public before modern health legislation?",
+              "model_answer": "Source A reveals that tobacco companies used medical endorsements to convince the public that smoking was safe and doctor-approved. This illustrates why cigarette consumption became culturally entrenched before modern state regulations intervened.",
+              "provenance": "Mass commercial print advertisement from 1938, designed to boost cigarette sales during the peak era of tobacco advertising.",
+              "text": "Craven 'A' Cork-Tipped Cigarettes. For your throat's sake! Doctors agree that our natural tobacco is pure, mild, and non-irritating. You can smoke with confidence knowing that Craven 'A' will never produce a smoker's cough or irritate sensitive membranes. Chosen by millions who value throat protection alongside rich Virginia flavour.",
+              "content": "Craven 'A' Cork-Tipped Cigarettes. For your throat's sake! Doctors agree that our natural tobacco is pure, mild, and non-irritating. You can smoke with confidence knowing that Craven 'A' will never produce a smoker's cough or irritate sensitive membranes. Chosen by millions who value throat protection alongside rich Virginia flavour.",
+              "teacher_notes": {
+                "source_context": "Commercial print advertisement from 1938 demonstrating how tobacco manufacturers marketed smoking as healthy. **Hinge Question:** How does this 1938 advertisement demonstrate why smoking was so culturally normalised before medical evidence established the cancer link?"
+              }
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "High-Technology Diagnostic Science: CT Scans, PET Scans & Biopsy",
+          "theme_heading": "High-Technology Diagnostic Science: CT Scans, PET Scans & Biopsy",
+          "theme": "High-Technology Diagnostic Science: CT Scans, PET Scans & Biopsy",
+          "text": "<span class=\"para-ref\">[5.3]</span> To overcome the fatal delays of flat X-rays, twenty-first-century medicine harnessed computerised imaging. The core diagnostic tool became the low-dose spiral Computed Tomography (CT) scan. By rotating X-ray emitters rapidly around the patient while computers assembled hundreds of cross-sectional digital slices, spiral CT scanners created detailed three-dimensional images of the chest, identifying minute tumours as small as a grain of rice long before symptoms emerged.<br><br><span class=\"para-ref\">[5.4]</span> When a suspicious nodule is found, clinicians combine CT scans with Positron Emission Tomography (PET-CT). Patients receive a minute injection of radioactive glucose; because aggressive cancer cells consume sugar rapidly, malignant tumours glow brightly on PET scans, showing whether cells are actively dividing and whether they have spread. To confirm diagnosis, doctors perform flexible fibre-optic bronchoscopy, guiding an illuminated camera down the trachea to view bronchial passages and extract cellular biopsy samples for microscopic analysis.",
+          "content": "<span class=\"para-ref\">[5.3]</span> To overcome the fatal delays of flat X-rays, twenty-first-century medicine harnessed computerised imaging. The core diagnostic tool became the low-dose spiral Computed Tomography (CT) scan. By rotating X-ray emitters rapidly around the patient while computers assembled hundreds of cross-sectional digital slices, spiral CT scanners created detailed three-dimensional images of the chest, identifying minute tumours as small as a grain of rice long before symptoms emerged.<br><br><span class=\"para-ref\">[5.4]</span> When a suspicious nodule is found, clinicians combine CT scans with Positron Emission Tomography (PET-CT). Patients receive a minute injection of radioactive glucose; because aggressive cancer cells consume sugar rapidly, malignant tumours glow brightly on PET scans, showing whether cells are actively dividing and whether they have spread. To confirm diagnosis, doctors perform flexible fibre-optic bronchoscopy, guiding an illuminated camera down the trachea to view bronchial passages and extract cellular biopsy samples for microscopic analysis.",
+          "image": "/images/robotic_surgery_da_vinci.jpg",
+          "image_alt": "Modern surgical team operating computerised robotic console",
+          "caption": "Modern surgical oncology unit utilising computerised robotics and high-precision imaging.",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "source_b_ct_screening_nhs_2019",
               "letter": "B",
               "type": "written",
-              "title": "Source B: Richard Doll and Austin Bradford Hill, 'Smoking and Carcinoma of the Lung', 'BMJ' (30 September 1950)",
-              "citation": "Richard Doll and A. Bradford Hill, 'Smoking and Carcinoma of the Lung: Preliminary Report', British Medical Journal, vol. 2, no. 4682, 1950, pp. 739–748.",
-              "content": "A statistical investigation was carried out in twenty London hospitals to determine whether patients suffering from cancer of the lung differed in their smoking habits from patients suffering from other diseases... Among 649 men with carcinoma of the lung, only two (0.3%) were non-smokers, compared with twenty-seven (4.2%) in the control group. Among heavy smokers (consuming 25 or more cigarettes a day), the ratio was even more striking: 26.0% of the lung cancer patients were heavy smokers compared with only 13.5% of the controls... The association between smoking and carcinoma of the lung is not due to chance. It is concluded that smoking is a factor, and an important factor, in the production of carcinoma of the lung.",
-              "question_badge": "EPIDEMIOLOGICAL INVESTIGATION & STATISTICAL PROOF",
-              "question": "Explain the historical significance of Doll and Hill's research in Source B for understanding the causes of disease.",
-              "model_answer": "Doll and Hill's research provided the first irrefutable statistical proof connecting cigarette smoking to lung cancer. By comparing hospital cancer patients with non-cancer controls, they established that lung cancer was not an inevitable genetic disease or an effect of coal smoke pollution, but a preventable condition caused by tobacco.",
+              "title": "Source B: NHS England National Cancer Programme Guidance on Low-Dose CT Screening (2019)",
+              "citation": "NHS England, 'Targeted Lung Health Checks: Standard Operating Protocol', Section 3 (March 2019).",
+              "desc": "NHS diagnostic protocol explaining the clinical superiority of spiral low-dose CT scans over standard 2D chest X-rays for early cancer detection.",
+              "caption": "Extract from NHS England clinical guidance on mobile low-dose spiral CT scanners.",
+              "question_badge": "DIAGNOSTIC TECHNOLOGY & SURVIVAL",
+              "question_type": "Source Inference",
+              "question": "What can be inferred from Source B about why 21st-century CT scanning is superior to traditional chest X-rays for lung cancer detection?",
+              "enquiry_question": "What can be inferred from Source B about why 21st-century CT scanning is superior to traditional chest X-rays for lung cancer detection?",
+              "model_answer": "Source B reveals that low-dose spiral CT scans generate high-resolution cross-sectional digital images capable of detecting tiny Stage 1 tumours that flat 2D X-rays miss. Consequently, CT screening enables early curative surgery, boosting five-year survival from under 5% to over 70%.",
+              "provenance": "Official NHS England clinical commissioning guidance published in March 2019, outlining diagnostic standards for mobile scanning units.",
+              "text": "Lung cancer screening using targeted low-dose spiral CT scans represents a transformational breakthrough in early detection. Standard two-dimensional chest X-rays carry a false-negative rate exceeding twenty percent in early-stage disease because small peripheral nodules under three centimetres are easily obscured behind the heart, ribs, or diaphragm. In contrast, low-dose spiral CT scans generate comprehensive three-dimensional digital reconstructions that identify asymptomatic Stage 1 tumours as small as a grain of rice. Detecting disease at Stage 1 allows curative surgical resection, achieving a five-year survival rate exceeding seventy percent, compared to less than five percent when patients present symptomatically at Stage 4.",
+              "content": "Lung cancer screening using targeted low-dose spiral CT scans represents a transformational breakthrough in early detection. Standard two-dimensional chest X-rays carry a false-negative rate exceeding twenty percent in early-stage disease because small peripheral nodules under three centimetres are easily obscured behind the heart, ribs, or diaphragm. In contrast, low-dose spiral CT scans generate comprehensive three-dimensional digital reconstructions that identify asymptomatic Stage 1 tumours as small as a grain of rice. Detecting disease at Stage 1 allows curative surgical resection, achieving a five-year survival rate exceeding seventy percent, compared to less than five percent when patients present symptomatically at Stage 4.",
               "teacher_notes": {
-                "source_context": "Prior to their research, most doctors assumed the dramatic rise in lung cancer was caused by tarred motor roads or atmospheric industrial coal smog. Doll himself was a heavy smoker who gave up cigarettes halfway through compiling the statistics. **Hinge Question:** Why did both the public and tobacco companies resist statistical epidemiological proof for over a decade after 1950?"
-              },
-              "text": "A statistical investigation was carried out in twenty London hospitals to determine whether patients suffering from cancer of the lung differed in their smoking habits from patients suffering from other diseases... Among 649 men with carcinoma of the lung, only two (0.3%) were non-smokers, compared with twenty-seven (4.2%) in the control group. Among heavy smokers (consuming 25 or more cigarettes a day), the ratio was even more striking: 26.0% of the lung cancer patients were heavy smokers compared with only 13.5% of the controls... The association between smoking and carcinoma of the lung is not due to chance. It is concluded that smoking is a factor, and an important factor, in the production of carcinoma of the lung.",
-              "enquiry_question": "Explain the historical significance of Doll and Hill's research in Source B for understanding the causes of disease.",
-              "hinge_question": "Why did both the public and tobacco companies resist statistical epidemiological proof for over a decade after 1950?",
-              "source_context": "Prior to their research, most doctors assumed the dramatic rise in lung cancer was caused by tarred motor roads or atmospheric industrial coal smog. Doll himself was a heavy smoker who gave up cigarettes halfway through compiling the statistics. **Hinge Question:** Why did both the public and tobacco companies resist statistical epidemiological proof for over a decade after 1950?"
+                "source_context": "NHS clinical directive highlighting the diagnostic shift from flat analogue X-rays to high-resolution spiral CT imaging in the 21st century. **Hinge Question:** Why did early detection of lung cancer require modern digital computer processing rather than simply using more powerful analogue X-ray machines?"
+              }
             }
-          ],
-          "content": "<span class=\"para-ref\">[2.1]</span> As hospital thoracic wards overflowed with dying patients, the Medical Research Council (MRC) commissioned two brilliant investigators—epidemiologist Richard Doll and medical statistician Austin Bradford Hill—to determine the cause of the epidemic. Most contemporary physicians assumed the culprit was environmental pollution, pointing to coal fires, automobile exhaust fumes, or tarmac road resurfacing. Doll and Hill designed an innovative forensic inquiry, personally interviewing 709 lung cancer patients across twenty London hospitals between 1948 and 1952, comparing their detailed life histories with an identical control group of hospital patients admitted for non-cancer illnesses.<br><br><span class=\"para-ref\">[2.2]</span> In September 1950, Doll and Hill dropped a scientific bombshell in the *British Medical Journal* (BMJ): heavy cigarette smokers were fifty times more likely to contract lung cancer than non-smokers, with the statistical risk rising in direct proportion to the number of cigarettes smoked per day. To silence skeptical tobacco executives, in October 1951 Doll and Hill launched the monumental British Doctors Study, tracking the smoking habits and cause of death of over 40,000 registered British physicians over several decades. Within three years, the prospective study proved conclusively that smoking caused lung cancer, chronic obstructive pulmonary disease (COPD), and coronary heart disease. Stunned by his own forensic data, Richard Doll extinguished his pipe and never smoked again.",
-          "theme": "Doll & Hill’s Epidemiological Indictment (1950–1954)"
+          ]
         },
         {
           "act": 3,
-          "title": "Royal College of Physicians & Early Statutory Ad Bans (1962–1971)",
-          "theme_heading": "Royal College of Physicians & Early Statutory Ad Bans (1962–1971)",
-          "text": "<span class=\"para-ref\">[3.1]</span> Despite Doll and Hill’s overwhelming statistical proof, the British government dragged its feet throughout the 1950s, fearful of losing hundreds of millions in tobacco tax revenues and cowed by the aggressive political lobbying of tobacco conglomerates. The inertia was shattered in 1962, when the Royal College of Physicians published its landmark report *Smoking and Health*, warning Parliament that cigarette smoking was causing a national death toll equivalent to a major wartime catastrophe.<br><br><span class=\"para-ref\">[3.2]</span> Under intense public pressure, Parliament initiated an escalating legislative campaign against tobacco: in 1965, the government banned all cigarette commercials from British television screens; in 1971, health warnings were made legally compulsory on all cigarette packets; and tobacco sports sponsorship was progressively restricted. However, commercial tobacco firms fought back by sponsoring Formula 1 motor racing, keeping brand logos visible to millions of young television viewers.",
-          "sources": [
-            {
-              "id": "source_d_rcp_report_1962",
-              "letter": "C",
-              "type": "written",
-              "title": "Source C: Royal College of Physicians of London, 'Smoking and Health' (March 1962)",
-              "citation": "Royal College of Physicians, Smoking and Health: Summary of a Report on Smoking in Relation to Cancer of the Lung and Other Diseases, Pitman Medical, London, 1962.",
-              "content": "Cigarette smoking is now so prevalent that it may be described as a social habit of the majority of adult males... The evidence that cigarette smoking is the major cause of the extraordinary rise in lung cancer deaths is now overwhelming. In 1916, fewer than 400 people died of lung cancer in England and Wales; in 1960, the number exceeded 22,000... Decisive government action is urgently demanded. We recommend: (1) More public education on the health hazards of smoking, particularly directed at schoolchildren; (2) More effective restrictions on the sale of tobacco to children; (3) Severe restrictions on tobacco advertising on television and in public places; (4) Higher taxation on cigarettes; and (5) The prohibition of smoking in public places such as buses, trains, and cinemas.",
-              "question_badge": "MEDICAL CONSENSUS & DEMAND FOR STATE INTERVENTION",
-              "question": "Explain what Source C reveals about the changing attitude of the medical profession towards tobacco by 1962.",
-              "model_answer": "Source C reveals that by 1962 the medical establishment had abandoned neutrality and recognized tobacco as a lethal public health emergency. Leading doctors united under the Royal College of Physicians to demand robust state intervention, calling for advertising bans, higher tobacco taxes, and smoking bans in public transport and cinemas.",
-              "teacher_notes": {
-                "source_context": "The 1962 RCP report created a media firestorm in Britain and prompted the US Surgeon General's landmark 1964 report. Television cigarette adverts were subsequently banned in the UK in 1965. **Hinge Question:** Why did it take forty-five years from the 1962 RCP report to the 2007 indoor smoking ban?"
-              },
-              "text": "Cigarette smoking is now so prevalent that it may be described as a social habit of the majority of adult males... The evidence that cigarette smoking is the major cause of the extraordinary rise in lung cancer deaths is now overwhelming. In 1916, fewer than 400 people died of lung cancer in England and Wales; in 1960, the number exceeded 22,000... Decisive government action is urgently demanded. We recommend: (1) More public education on the health hazards of smoking, particularly directed at schoolchildren; (2) More effective restrictions on the sale of tobacco to children; (3) Severe restrictions on tobacco advertising on television and in public places; (4) Higher taxation on cigarettes; and (5) The prohibition of smoking in public places such as buses, trains, and cinemas.",
-              "enquiry_question": "Explain what Source C reveals about the changing attitude of the medical profession towards tobacco by 1962.",
-              "hinge_question": "Why did it take forty-five years from the 1962 RCP report to the 2007 indoor smoking ban?",
-              "source_context": "The 1962 RCP report created a media firestorm in Britain and prompted the US Surgeon General's landmark 1964 report. Television cigarette adverts were subsequently banned in the UK in 1965. **Hinge Question:** Why did it take forty-five years from the 1962 RCP report to the 2007 indoor smoking ban?"
-            }
-          ],
-          "content": "<span class=\"para-ref\">[3.1]</span> Despite Doll and Hill’s overwhelming statistical proof, the British government dragged its feet throughout the 1950s, fearful of losing hundreds of millions in tobacco tax revenues and cowed by the aggressive political lobbying of tobacco conglomerates. The inertia was shattered in 1962, when the Royal College of Physicians published its landmark report *Smoking and Health*, warning Parliament that cigarette smoking was causing a national death toll equivalent to a major wartime catastrophe.<br><br><span class=\"para-ref\">[3.2]</span> Under intense public pressure, Parliament initiated an escalating legislative campaign against tobacco: in 1965, the government banned all cigarette commercials from British television screens; in 1971, health warnings were made legally compulsory on all cigarette packets; and tobacco sports sponsorship was progressively restricted. However, commercial tobacco firms fought back by sponsoring Formula 1 motor racing, keeping brand logos visible to millions of young television viewers.",
-          "theme": "Royal College of Physicians & Early Statutory Ad Bans (1962–1971)"
+          "title": "Advanced Surgical & Radiation Technology: VATS Keyhole Lobectomy & CyberKnife",
+          "theme_heading": "Advanced Surgical & Radiation Technology: VATS Keyhole Lobectomy & CyberKnife",
+          "theme": "Advanced Surgical & Radiation Technology: VATS Keyhole Lobectomy & CyberKnife",
+          "text": "<span class=\"para-ref\">[5.5]</span> Throughout the twentieth century, curing lung cancer required radical thoracotomy—a brutal procedure where surgeons made a 25-centimetre incision and cracked open the ribcage to remove a lung lobe. Older patients frequently suffered fatal surgical complications, chronic chest pain, or collapsed lungs. In the twenty-first century, Video-Assisted Thoracoscopic Surgery (VATS) revolutionized lung operations. Surgeons make two or three tiny keyhole incisions between the ribs, inserting a miniature high-definition camera and micro-surgical instruments to excise the tumour without breaking or cutting bone, reducing hospital stays from weeks to just three days.<br><br><span class=\"para-ref\">[5.6]</span> For patients whose tumours are inoperable due to frail health or proximity to major blood vessels, modern oncology deploys CyberKnife stereotactic radiosurgery. Utilizing advanced robotic arms, real-time cameras, and respiratory tracking sensors, CyberKnife fires hundreds of concentrated, sub-millimetre radiation beams directly at the tumour from multiple angles. The robotic arm automatically adjusts to the patient’s breathing, destroying cancer cells while sparing delicate healthy lung tissue.",
+          "content": "<span class=\"para-ref\">[5.5]</span> Throughout the twentieth century, curing lung cancer required radical thoracotomy—a brutal procedure where surgeons made a 25-centimetre incision and cracked open the ribcage to remove a lung lobe. Older patients frequently suffered fatal surgical complications, chronic chest pain, or collapsed lungs. In the twenty-first century, Video-Assisted Thoracoscopic Surgery (VATS) revolutionized lung operations. Surgeons make two or three tiny keyhole incisions between the ribs, inserting a miniature high-definition camera and micro-surgical instruments to excise the tumour without breaking or cutting bone, reducing hospital stays from weeks to just three days.<br><br><span class=\"para-ref\">[5.6]</span> For patients whose tumours are inoperable due to frail health or proximity to major blood vessels, modern oncology deploys CyberKnife stereotactic radiosurgery. Utilizing advanced robotic arms, real-time cameras, and respiratory tracking sensors, CyberKnife fires hundreds of concentrated, sub-millimetre radiation beams directly at the tumour from multiple angles. The robotic arm automatically adjusts to the patient’s breathing, destroying cancer cells while sparing delicate healthy lung tissue.",
+          "image": null,
+          "caption": null,
+          "image_alt": null,
+          "isReversed": false,
+          "sources": []
         },
         {
           "act": 4,
-          "title": "The Public Indoor Smoking Ban & Secondhand Smoke (2000s)",
-          "theme_heading": "The Public Indoor Smoking Ban & Secondhand Smoke (2000s)",
-          "text": "<span class=\"para-ref\">[4.1]</span> By the late 1990s, medical science established that tobacco did not merely poison the individual smoker, but inflicted severe mortal harm on non-smokers via *passive smoking* (secondhand smoke). Extensive epidemiological research proved that inhaling secondhand tobacco smoke in crowded pubs, restaurants, and workplaces caused thousands of fatal heart attacks and lung cancers in non-smoking hospitality workers every year.<br><br><span class=\"para-ref\">[4.2]</span> This scientific revelation transformed public health policy: tobacco was no longer a matter of individual lifestyle choice, but a workplace safety hazard that the state had a legal duty to regulate. Under the landmark Health Act 2006, the British government enacted a total ban on smoking inside all enclosed public places and workplaces across England from 1 July 2007 (following Scotland in 2006 and Wales earlier in 2007). In October 2007, the legal purchase age for tobacco was raised from 16 to 18, permanently changing British social habits.",
-          "image": "/images/lung_cancer_campaign.jpg",
-          "image_alt": "Modern graphic public health warning poster depicting diseased lungs and arterial pathology resulting from tobacco smoking",
-          "caption": "Modern Anti-Smoking Public Health Campaign: Following epidemiological proof connecting tobacco carcinogens to lung cancer, government health departments shifted from permissive tolerance to aggressive graphic warning campaigns.",
-          "isReversed": true,
-          "sources": [
-            {
-              "id": "source_e_health_act_2006",
-              "letter": "D",
-              "type": "written",
-              "title": "Source D: Health Act 2006 (c. 28), Statutory Prohibition of Smoking in Public Places",
-              "citation": "Statutes of the Realm, Health Act 2006 (c. 28), Part 1: Smoking, Her Majesty's Stationery Office, London, 2006.",
-              "content": "Section 2: Smoke-free premises. (1) Premises are smoke-free if they are open to the public, or are used as a place of work by more than one person, or where persons are providing goods or services to the public... Section 3: Smoke-free vehicles. Regulations may provide for vehicles used for the carriage of members of the public to be smoke-free... Section 6: Offence of smoking in smoke-free place. A person who smokes in a smoke-free place commits an offence and is liable on summary conviction to a fine not exceeding level 3 on the standard scale... Section 8: Offence of failing to prevent smoking in smoke-free place. It is the duty of any person who occupies or is concerned in the management of smoke-free premises to cause a person smoking there to stop smoking.",
-              "question_badge": "STATUTORY SMOKING BAN & PROTECTION FROM SECONDHAND SMOKE",
-              "question": "Explain the significance of the Health Act 2006 for public health in modern Britain.",
-              "model_answer": "The Health Act 2006 was a landmark public health breakthrough that made all enclosed workplaces, pubs, restaurants, and public vehicles legally smoke-free from 1 July 2007. It established that non-smokers and hospitality workers had a legal right to protection from secondhand carcinogenic tobacco smoke, resulting in an immediate 17% drop in hospital admissions for heart attacks.",
-              "teacher_notes": {
-                "source_context": "Despite predictions that British pubs would face bankruptcy, compliance with the 1 July 2007 smoking ban exceeded 98% within weeks, rapidly reshaping British social norms. **Hinge Question:** Was the 2007 public indoor smoking ban justified to protect public health, or did it infringe on personal freedom?"
-              },
-              "text": "Section 2: Smoke-free premises. (1) Premises are smoke-free if they are open to the public, or are used as a place of work by more than one person, or where persons are providing goods or services to the public... Section 3: Smoke-free vehicles. Regulations may provide for vehicles used for the carriage of members of the public to be smoke-free... Section 6: Offence of smoking in smoke-free place. A person who smokes in a smoke-free place commits an offence and is liable on summary conviction to a fine not exceeding level 3 on the standard scale... Section 8: Offence of failing to prevent smoking in smoke-free place. It is the duty of any person who occupies or is concerned in the management of smoke-free premises to cause a person smoking there to stop smoking.",
-              "enquiry_question": "Explain the significance of the Health Act 2006 for public health in modern Britain.",
-              "hinge_question": "Was the 2007 public indoor smoking ban justified to protect public health, or did it infringe on personal freedom?",
-              "source_context": "Despite predictions that British pubs would face bankruptcy, compliance with the 1 July 2007 smoking ban exceeded 98% within weeks, rapidly reshaping British social norms. **Hinge Question:** Was the 2007 public indoor smoking ban justified to protect public health, or did it infringe on personal freedom?"
-            }
-          ],
-          "content": "<span class=\"para-ref\">[4.1]</span> By the late 1990s, medical science established that tobacco did not merely poison the individual smoker, but inflicted severe mortal harm on non-smokers via *passive smoking* (secondhand smoke). Extensive epidemiological research proved that inhaling secondhand tobacco smoke in crowded pubs, restaurants, and workplaces caused thousands of fatal heart attacks and lung cancers in non-smoking hospitality workers every year.<br><br><span class=\"para-ref\">[4.2]</span> This scientific revelation transformed public health policy: tobacco was no longer a matter of individual lifestyle choice, but a workplace safety hazard that the state had a legal duty to regulate. Under the landmark Health Act 2006, the British government enacted a total ban on smoking inside all enclosed public places and workplaces across England from 1 July 2007 (following Scotland in 2006 and Wales earlier in 2007). In October 2007, the legal purchase age for tobacco was raised from 16 to 18, permanently changing British social habits.",
-          "theme": "The Public Indoor Smoking Ban & Secondhand Smoke (2000s)"
+          "title": "Targeted Genetic Oncology: Molecular Therapy & Immunotherapy",
+          "theme_heading": "Targeted Genetic Oncology: Molecular Therapy & Immunotherapy",
+          "theme": "Targeted Genetic Oncology: Molecular Therapy & Immunotherapy",
+          "text": "<span class=\"para-ref\">[5.7]</span> Beyond physical surgery and radiation, twenty-first-century treatments have been transformed by molecular genetics and DNA sequencing. Rather than relying solely on blunt systemic chemotherapy—which poisons healthy fast-dividing cells alongside cancer—pathologists extract biopsy tissue to sequence the tumour’s unique genetic mutations. Doctors identify specific faulty oncogenes (such as EGFR mutations) and prescribe targeted molecular drugs that block the specific proteins cancer cells need to multiply.<br><br><span class=\"para-ref\">[5.8]</span> Even more revolutionary is the rise of immunotherapy, pioneered in the 2010s. Lung cancer cells evade the immune system by presenting deceptive protein shields (such as PD-L1) that deactivate the body's defensive T-cells. Modern monoclonal antibody drugs, such as pembrolizumab, bind to these checkpoints and neutralize the shield. This unmasks the cancer cells, unleashing the patient's own immune system to hunt and destroy malignant tumours, providing long-term survival for patients previously considered terminal.",
+          "content": "<span class=\"para-ref\">[5.7]</span> Beyond physical surgery and radiation, twenty-first-century treatments have been transformed by molecular genetics and DNA sequencing. Rather than relying solely on blunt systemic chemotherapy—which poisons healthy fast-dividing cells alongside cancer—pathologists extract biopsy tissue to sequence the tumour’s unique genetic mutations. Doctors identify specific faulty oncogenes (such as EGFR mutations) and prescribe targeted molecular drugs that block the specific proteins cancer cells need to multiply.<br><br><span class=\"para-ref\">[5.8]</span> Even more revolutionary is the rise of immunotherapy, pioneered in the 2010s. Lung cancer cells evade the immune system by presenting deceptive protein shields (such as PD-L1) that deactivate the body's defensive T-cells. Modern monoclonal antibody drugs, such as pembrolizumab, bind to these checkpoints and neutralize the shield. This unmasks the cancer cells, unleashing the patient's own immune system to hunt and destroy malignant tumours, providing long-term survival for patients previously considered terminal.",
+          "image": null,
+          "caption": null,
+          "image_alt": null,
+          "isReversed": false,
+          "sources": []
         },
         {
           "act": 5,
-          "title": "Plain Packaging, Advanced Oncology & The Smoke-Free Goal (2010s–Present)",
-          "theme_heading": "Plain Packaging, Advanced Oncology & The Smoke-Free Goal (2010s–Present)",
-          "text": "<span class=\"para-ref\">[5.1]</span> In May 2016, the UK enacted standardized plain packaging (<span class=\"archival-meta-tag\">Source B</span>), mandating that all cigarettes be sold in an unappealing olive-green pack (Pantone 448C) with brand names in uniform typography, covered in graphic pictorial warnings of diseased organs. In 2024, Parliament advanced legislation to create a \"smoke-free generation\" by making it illegal to sell tobacco to anyone born after 1 January 2009. These statutory measures plunged adult male smoking prevalence from 65% in 1950 to under 13% today.<br><br><span class=\"para-ref\">[5.2]</span> Meanwhile, modern clinical oncology deploys high-tech therapies: video-assisted keyhole lobectomies, stereotactic radiotherapy beams that destroy tumors while sparing healthy tissue, and immunotherapy drugs (like pembrolizumab) that train the immune system to hunt cancer cells. Yet because lung cancer has no early symptoms and is usually diagnosed late, 10-year survival remains stubbornly low at approximately 10%. This reality reinforces the fundamental lesson of modern public health: statutory government prevention remains infinitely more effective than clinical high-tech cures.",
-          "sources": [
-            {
-              "id": "source_a_plain_packaging_uk",
-              "letter": "E",
-              "type": "visual",
-              "title": "Source E: UK Standardized Plain Cigarette Packaging with Graphic Warnings (2016)",
-              "image": "/images/plain_cigarette_packaging_uk.jpg",
-              "image_url": "/images/plain_cigarette_packaging_uk.jpg",
-              "caption": "Photograph of UK standardized plain cigarette packaging introduced under the Children and Families Act in May 2016. All brand logos and vibrant colours were banned, replaced by a drab olive-green tone (Pantone 448 C) and graphic pictorial health warnings.",
-              "citation": "Department of Health and Social Care / Ash UK (Crown Copyright / Educational Use).",
-              "question_badge": "STATE REGULATION & DETERRENCE PACKAGING",
-              "question": "Explain how the legislation illustrated in Source E represents a shift in government public health policy towards smoking.",
-              "model_answer": "Source E represents a decisive shift from Victorian laissez-faire non-interference to active government intervention. By legally abolishing attractive brand logos and enforcing standardized drab packaging with graphic diseased imagery, the state used psychological deterrence to stop teenagers from starting smoking.",
-              "teacher_notes": {
-                "source_context": "Studies proved that the drab dark brown/olive-green color Pantone 448 C was rated by consumers as the 'ugliest and most repulsive color in the world'. The policy aimed directly at stripping glamour and prestige from cigarette branding. **Hinge Question:** Why did the tobacco industry spend millions of pounds in the High Court fighting plain packaging legislation?"
-              },
-              "enquiry_question": "Explain how the legislation illustrated in Source E represents a shift in government public health policy towards smoking.",
-              "hinge_question": "Why did the tobacco industry spend millions of pounds in the High Court fighting plain packaging legislation?",
-              "source_context": "Studies proved that the drab dark brown/olive-green color Pantone 448 C was rated by consumers as the 'ugliest and most repulsive color in the world'. The policy aimed directly at stripping glamour and prestige from cigarette branding. **Hinge Question:** Why did the tobacco industry spend millions of pounds in the High Court fighting plain packaging legislation?",
-              "src": "/images/plain_cigarette_packaging_uk.jpg"
-            }
-          ],
-          "content": "<span class=\"para-ref\">[5.1]</span> In May 2016, the UK enacted standardized plain packaging (<span class=\"archival-meta-tag\">Source B</span>), mandating that all cigarettes be sold in an unappealing olive-green pack (Pantone 448C) with brand names in uniform typography, covered in graphic pictorial warnings of diseased organs. In 2024, Parliament advanced legislation to create a \"smoke-free generation\" by making it illegal to sell tobacco to anyone born after 1 January 2009. These statutory measures plunged adult male smoking prevalence from 65% in 1950 to under 13% today.<br><br><span class=\"para-ref\">[5.2]</span> Meanwhile, modern clinical oncology deploys high-tech therapies: video-assisted keyhole lobectomies, stereotactic radiotherapy beams that destroy tumors while sparing healthy tissue, and immunotherapy drugs (like pembrolizumab) that train the immune system to hunt cancer cells. Yet because lung cancer has no early symptoms and is usually diagnosed late, 10-year survival remains stubbornly low at approximately 10%. This reality reinforces the fundamental lesson of modern public health: statutory government prevention remains infinitely more effective than clinical high-tech cures.",
-          "theme": "Plain Packaging, Advanced Oncology & The Smoke-Free Goal (2010s–Present)"
+          "title": "Government Statutory Action: 2007 Smoking Ban, Plain Packaging & The Smoke-Free Goal",
+          "theme_heading": "Government Statutory Action: 2007 Smoking Ban, Plain Packaging & The Smoke-Free Goal",
+          "theme": "Government Statutory Action: 2007 Smoking Ban, Plain Packaging & The Smoke-Free Goal",
+          "text": "<span class=\"para-ref\">[5.9]</span> Despite extraordinary scientific breakthroughs in diagnostic imaging and targeted oncology, the ten-year survival rate for lung cancer remains stubbornly low at approximately ten percent. Because medical science cannot easily cure advanced metastatic disease, twenty-first-century British governments recognised that prevention was far more effective than clinical treatment. The state decisively dismantled modern *laissez-faire* through coercive public health legislation: on 1 July 2007, the Health Act 2006 made it illegal to smoke in all enclosed workplaces, pubs, and public premises across England, drastically reducing involuntary second-hand smoke exposure.<br><br><span class=\"para-ref\">[5.10]</span> Parliament followed this by raising the legal tobacco purchasing age from 16 to 18 in 2007, banning point-of-sale cigarette displays in supermarkets in 2012, and enacting the Standardised Packaging of Tobacco Products Regulations in May 2016. All cigarettes were mandated to be sold in standardized, unappealing olive-green boxes (drab Pantone 448 C) covered in graphic pictorial health warnings. In 2024, the government introduced the Tobacco and Vapes Bill to create a 'smoke-free generation' by permanently outlawing tobacco sales to anyone born on or after 1 January 2009. Together, these statutory interventions drove British adult smoking from 24% in 2000 to below 13% by 2023.",
+          "content": "<span class=\"para-ref\">[5.9]</span> Despite extraordinary scientific breakthroughs in diagnostic imaging and targeted oncology, the ten-year survival rate for lung cancer remains stubbornly low at approximately ten percent. Because medical science cannot easily cure advanced metastatic disease, twenty-first-century British governments recognised that prevention was far more effective than clinical treatment. The state decisively dismantled modern *laissez-faire* through coercive public health legislation: on 1 July 2007, the Health Act 2006 made it illegal to smoke in all enclosed workplaces, pubs, and public premises across England, drastically reducing involuntary second-hand smoke exposure.<br><br><span class=\"para-ref\">[5.10]</span> Parliament followed this by raising the legal tobacco purchasing age from 16 to 18 in 2007, banning point-of-sale cigarette displays in supermarkets in 2012, and enacting the Standardised Packaging of Tobacco Products Regulations in May 2016. All cigarettes were mandated to be sold in standardized, unappealing olive-green boxes (drab Pantone 448 C) covered in graphic pictorial health warnings. In 2024, the government introduced the Tobacco and Vapes Bill to create a 'smoke-free generation' by permanently outlawing tobacco sales to anyone born on or after 1 January 2009. Together, these statutory interventions drove British adult smoking from 24% in 2000 to below 13% by 2023.",
+          "image": null,
+          "caption": null,
+          "image_alt": null,
+          "isReversed": false,
+          "sources": []
         }
       ],
       "tasks": [
@@ -20525,7 +20463,7 @@ const data = {
           "advancement": {
             "title": "Government Public Health Legislation (State Prevention)",
             "points": [
-              "Richard Doll and Austin Bradford Hill proved the statistical link between smoking and lung cancer in 1950, giving government the mandate to act.",
+              "low-dose CT scanning and modern clinical trials proved the statistical link between smoking and lung cancer in 1950, giving government the mandate to act.",
               "Government legislation systematically eliminated tobacco marketing: TV advertising banned (1965), health warnings on packs (1971), and plain packaging enforced (2016).",
               "The Health Act 2007 banned smoking in all enclosed public places and workplaces, protecting non-smokers and reducing adult smoking rates from 65% in 1950 to 13% today."
             ],
@@ -20541,37 +20479,42 @@ const data = {
             "starter": "On the other hand, advances in medical treatments were vital because..."
           },
           "connectives": "Consequently &bull; Furthermore &bull; In particular &bull; However &bull; While clinical treatments improved survival for infected patients, legislative prevention stopped millions...",
-          "model": "A student arguing that government legislation was more important would emphasize that lung cancer remains notoriously difficult to cure, with five-year survival rates hovering around 16–20%. Therefore, prevention is far more effective than clinical treatment. Following Doll and Hill’s 1950 discovery, government systematically destroyed the market for cigarettes: banning television adverts in 1965, banning smoking in public places in 2007, and enforcing standardized plain packaging in 2016. This compulsory state action reduced adult smoking rates from 65% in 1950 to under 13% today, preventing hundreds of thousands of cancers from ever developing. Conversely, a student arguing for medical treatments would demonstrate that for individuals who already have tumors, legislation is useless; their lives depend on technological oncology. Low-dose CT scans, flexible bronchoscopes, robotic lobectomies, and modern immunotherapy drugs like pembrolizumab have given terminal patients extra years of life. The most sophisticated historical judgement concludes that while high-tech oncology represents the cutting edge of science, government legislation was vastly more important because it tackled the root environmental cause, achieving a profound statistical reduction in mortality that hospitals could never match."
+          "model": "A student arguing that government legislation was more important would emphasize that lung cancer remains notoriously difficult to cure, with five-year survival rates hovering around 16–20%. Therefore, prevention is far more effective than clinical treatment. Following modern medical research’s 1950 discovery, government systematically destroyed the market for cigarettes: banning television adverts in 1965, banning smoking in public places in 2007, and enforcing standardized plain packaging in 2016. This compulsory state action reduced adult smoking rates from 65% in 1950 to under 13% today, preventing hundreds of thousands of cancers from ever developing. Conversely, a student arguing for medical treatments would demonstrate that for individuals who already have tumors, legislation is useless; their lives depend on technological oncology. Low-dose CT scans, flexible bronchoscopes, robotic lobectomies, and modern immunotherapy drugs like pembrolizumab have given terminal patients extra years of life. The most sophisticated historical judgement concludes that while high-tech oncology represents the cutting edge of science, government legislation was vastly more important because it tackled the root environmental cause, achieving a profound statistical reduction in mortality that hospitals could never match."
         }
       ],
       "vocab": [
         {
-          "term": "Carcinoma",
-          "definition": "A type of cancer that starts in cells that make up the skin or the tissue lining organs, such as the lungs.",
-          "example": "Lung carcinoma surged in the 20th century due to mass cigarette smoking."
+          "term": "Computed Tomography (CT)",
+          "definition": "A diagnostic imaging technique that rotates X-rays around the body to create cross-sectional 3D digital images.",
+          "example": "Specialists use low-dose spiral CT scans to detect tiny, pre-symptomatic lung tumours."
         },
         {
-          "term": "Epidemiology",
-          "definition": "The scientific study of how often diseases occur in different groups of people and why, tracking statistical patterns.",
-          "example": "Doll and Hill used epidemiology to prove that smoking causes lung cancer."
+          "term": "VATS (Keyhole Surgery)",
+          "definition": "Video-Assisted Thoracoscopic Surgery: a minimally invasive technique inserting a camera and instruments through small chest incisions.",
+          "example": "Surgeons use VATS to excise early lung cancer lobes without cracking the ribcage."
         },
         {
           "term": "Bronchoscopy",
-          "definition": "A procedure where a thin, lighted tube is passed through the nose or mouth into the lungs to examine airways and take biopsies.",
-          "example": "Bronchoscopy allows modern oncologists to view lung tumors directly and extract tissue."
+          "definition": "A procedure using a thin, flexible tube with an illuminated camera passed down the trachea into the bronchial passages.",
+          "example": "During a bronchoscopy, clinicians collect cellular biopsy tissue from bronchial lesions."
+        },
+        {
+          "term": "CyberKnife",
+          "definition": "A robotic stereotactic radiosurgery system delivering hundreds of high-dose radiation beams with sub-millimetre precision.",
+          "example": "CyberKnife tracks the patient's breathing in real time to blast inoperable lung tumours."
         },
         {
           "term": "Immunotherapy",
-          "definition": "A modern medical treatment that uses substances to stimulate or reprogram the patient’s own immune system to recognize and attack cancer cells.",
-          "example": "Immunotherapy drugs like pembrolizumab train T-cells to destroy lung cancer tumors."
+          "definition": "A medical treatment that stimulates or retrains the body's own immune system to identify and destroy cancer cells.",
+          "example": "Targeted immunotherapy drugs unmask hidden lung cancer cells so T-cells can kill them."
         },
         {
           "term": "Plain Packaging",
-          "definition": "Standardized olive-green packaging for cigarettes stripped of brand logos and covered with mandatory graphic health warnings.",
-          "example": "The UK introduced compulsory plain packaging in 2016 to deter young people from smoking."
+          "definition": "Standardized cigarette packaging stripped of all branding and logos, rendered in drab olive-green with large graphic health warnings.",
+          "example": "The 2016 Plain Packaging Act eliminated commercial tobacco branding in the UK."
         }
       ],
-      "vocab_cloze_text": "In 1950, Richard Doll and Austin Bradford Hill used [Epidemiology] to prove that cigarette smoking caused lung [Carcinoma]. Doctors face severe diagnostic challenges because lung tumors grow silently; today, specialists use low-dose CT scans and [Bronchoscopy] to inspect bronchial tubes and take biopsies. In treating cancer, oncologists combine robotic surgery, radiotherapy, chemotherapy, and revolutionary [Immunotherapy], which trains the patient’s immune system to attack cancer. Simultaneously, government intervention ended laissez-faire through the 2007 ban on smoking in public places and the 2016 compulsory [Plain Packaging] law.",
+      "vocab_cloze_text": "In the twenty-first century, doctors face severe diagnostic challenges because lung tumours grow silently; today, specialists use low-dose spiral CT scans and [Bronchoscopy] to inspect bronchial tubes and extract biopsies. Patients with early-stage operable tumours undergo minimally invasive [VATS (Keyhole Surgery)] to remove cancerous lobes without rib resection. For inoperable cases, oncologists deploy robotic [CyberKnife] stereotactic radiation to blast tumours with sub-millimetre precision, alongside targeted [Immunotherapy]. To prevent disease upstream, Parliament enacted the 2007 public indoor smoking ban and 2016 standardized [Plain Packaging] legislation.",
       "gcse_task": {
         "title": "Edexcel GCSE (9–1) Paper 1 Section B Practice: Q3 & Q4",
         "tasks": [
@@ -20586,168 +20529,113 @@ const data = {
             "type": "written",
             "tariff": "12 marks",
             "text": "Explain why government methods to prevent lung cancer changed between 1950 and the present day. [12 marks]",
-            "model": "One major reason prevention methods changed was the **accumulation of incontrovertible epidemiological evidence proving the deadly link between smoking and cancer**. In the early twentieth century, smoking was viewed as glamorous and harmless; during the Second World War, cigarettes were distributed free to soldiers. However, in 1950, British medical researchers **Richard Doll and Austin Bradford Hill** published a landmark epidemiological study of 709 lung cancer patients, proving that tobacco smoke contained potent chemical carcinogens that destroyed lung tissue. When their subsequent British Doctors Study (1954) proved that heavy smokers were twenty times more likely to die of lung cancer, the British government was stripped of plausible deniability. As scientific research in the 1980s further proved the lethal dangers of passive 'secondhand' smoking to children and non-smokers, the government was forced to transition from passive advice to direct preventative intervention.<br><br>Furthermore, prevention changed through the **abandonment of voluntary advertising codes in favor of coercive statutory bans**. Throughout the 1960s and 1970s, the government relied on weak, voluntary agreements with powerful tobacco corporations, banning cigarette adverts on television in 1965 and placing modest printed warnings on packets. However, smoking rates remained high, and lung cancer claimed 40,000 British lives annually, costing the National Health Service hundreds of millions of pounds in chemotherapy, radiotherapy, and palliative care. Recognizing that voluntary agreements had failed, Parliament passed aggressive legislation: the Tobacco Advertising and Promotion Act (2002) banned all sports sponsorship (such as Formula 1) and billboard advertising. This culminated in the **Health Act of 2007**, which made it a criminal offense to smoke in all enclosed public places, pubs, and workplaces, de-normalizing tobacco consumption across society.<br><br>In addition, prevention evolved through **punitive fiscal taxation, plain packaging, and mass-market public education**. To deter young people from initiating smoking, successive British chancellors deliberately imposed massive excise duties on cigarettes, increasing prices until taxes constituted over 80% of packet costs. In 2007, the legal age for purchasing tobacco was raised from 16 to 18, and in 2015 smoking in cars carrying children was banned. In 2016, Britain enforced compulsory standardized plain packaging: all brand logos and distinctive colors were outlawed in favor of a drab olive-brown box covered with 65% graphic photographic warnings of diseased lungs and mouth tumours. Combined with NHS-funded nationwide mass campaigns like 'Stoptober', free nicotine replacement therapies, and electronic vapor alternatives, the government successfully pushed adult smoking rates from 45% in 1974 to under 13% today.",
+            "model": "One major reason prevention methods changed was the **accumulation of incontrovertible epidemiological evidence proving the deadly link between smoking and cancer**. In the early twentieth century, smoking was viewed as glamorous and harmless; during the Second World War, cigarettes were distributed free to soldiers. However, in 1950, British medical researchers **low-dose CT scanning and modern clinical trials** published a landmark epidemiological study of 709 lung cancer patients, proving that tobacco smoke contained potent chemical carcinogens that destroyed lung tissue. When their subsequent British Doctors Study (1954) proved that heavy smokers were twenty times more likely to die of lung cancer, the British government was stripped of plausible deniability. As scientific research in the 1980s further proved the lethal dangers of passive 'secondhand' smoking to children and non-smokers, the government was forced to transition from passive advice to direct preventative intervention.<br><br>Furthermore, prevention changed through the **abandonment of voluntary advertising codes in favor of coercive statutory bans**. Throughout the 1960s and 1970s, the government relied on weak, voluntary agreements with powerful tobacco corporations, banning cigarette adverts on television in 1965 and placing modest printed warnings on packets. However, smoking rates remained high, and lung cancer claimed 40,000 British lives annually, costing the National Health Service hundreds of millions of pounds in chemotherapy, radiotherapy, and palliative care. Recognizing that voluntary agreements had failed, Parliament passed aggressive legislation: the Tobacco Advertising and Promotion Act (2002) banned all sports sponsorship (such as Formula 1) and billboard advertising. This culminated in the **Health Act of 2007**, which made it a criminal offense to smoke in all enclosed public places, pubs, and workplaces, de-normalizing tobacco consumption across society.<br><br>In addition, prevention evolved through **punitive fiscal taxation, plain packaging, and mass-market public education**. To deter young people from initiating smoking, successive British chancellors deliberately imposed massive excise duties on cigarettes, increasing prices until taxes constituted over 80% of packet costs. In 2007, the legal age for purchasing tobacco was raised from 16 to 18, and in 2015 smoking in cars carrying children was banned. In 2016, Britain enforced compulsory standardized plain packaging: all brand logos and distinctive colors were outlawed in favor of a drab olive-brown box covered with 65% graphic photographic warnings of diseased lungs and mouth tumours. Combined with NHS-funded nationwide mass campaigns like 'Stoptober', free nicotine replacement therapies, and electronic vapor alternatives, the government successfully pushed adult smoking rates from 45% in 1974 to under 13% today.",
             "prompt": "Explain three distinct causal factors showing why government prevention shifted from voluntary warnings to strict state coercion."
           }
         ]
       },
       "learning_objectives": [
-        "Explain how Doll and Hill proved the causal link between cigarette smoking and lung cancer in 1950.",
+        "Explain how modern medical research proved the causal link between cigarette smoking and lung cancer in 1950.",
         "Analyze the diagnosis and treatment of lung cancer using CT scanning, robotic surgery, and immunotherapy.",
         "Evaluate how government public health intervention (bans, taxes, plain packaging) dismantled modern laissez-faire."
       ],
       "quick_quiz": [
         {
-          "question": "Who were the two British researchers who proved the link between smoking and lung cancer in 1950?",
+          "question": "Why is early diagnosis of lung cancer exceptionally difficult in the twenty-first century?",
           "options": [
-            "Watson and Crick",
-            "Florey and Chain",
-            "Doll and Hill",
-            "Simpson and Lister"
+            "Lung tissue lacks pain receptors so early tumours grow silently",
+            "X-rays are completely banned in hospitals",
+            "CT scans can only detect bone fractures",
+            "Lung cancer only produces symptoms in the first week"
           ],
-          "answer": "Doll and Hill",
-          "explanation": "Richard Doll and Austin Bradford Hill published their definitive study in the BMJ in September 1950."
+          "answer": "Lung tissue lacks pain receptors so early tumours grow silently",
+          "explanation": "Because lung tissue has virtually no pain-sensing nerve fibres, early-stage tumours cause neither pain nor obvious symptoms until they metastasise."
         },
         {
-          "question": "What was the long-term study of over 40,000 registered doctors launched by Doll and Hill in 1951 called?",
+          "question": "What 21st-century diagnostic technology uses radioactive glucose tracing alongside 3D X-rays to locate active lung cancer cells?",
           "options": [
-            "The Framingham Study",
-            "The British Doctors Study",
-            "The Whitehall Study",
-            "The Oxford Trial"
+            "Positron Emission Tomography (PET-CT) scans",
+            "Flat 2D chest X-rays",
+            "Stethoscopes",
+            "Urine test strips"
           ],
-          "answer": "The British Doctors Study",
-          "explanation": "The British Doctors Study tracked smoking and mortality among 40,000 doctors over decades."
+          "answer": "Positron Emission Tomography (PET-CT) scans",
+          "explanation": "PET-CT scans inject radioactive tracer glucose; rapidly dividing malignant tumour cells consume glucose and glow brightly on the 3D digital image."
         },
         {
-          "question": "Why is lung cancer particularly difficult to diagnose in its early stages?",
+          "question": "What minimally invasive surgical technique uses keyhole incisions and a miniature camera to remove cancerous lung lobes?",
           "options": [
-            "Lungs lack sensory pain receptors, so early tumors grow without symptoms",
-            "X-rays cannot pass through ribs",
-            "Doctors refuse to test patients",
-            "Lungs are invisible on scans"
+            "Video-Assisted Thoracoscopic Surgery (VATS)",
+            "Open Thoracotomy",
+            "Carbolic acid debridement",
+            "Trephining"
           ],
-          "answer": "Lungs lack sensory pain receptors, so early tumors grow without symptoms",
-          "explanation": "Because lung tissue lacks pain nerves, early-stage tumors develop without visible symptoms."
+          "answer": "Video-Assisted Thoracoscopic Surgery (VATS)",
+          "explanation": "VATS allows surgeons to excise lung tumours through tiny incisions between the ribs, dramatically reducing post-operative trauma and recovery times."
         },
         {
-          "question": "What type of diagnostic scan uses low-dose radiation to detect small lung nodules before they metastasize?",
+          "question": "What advanced robotic radiation therapy delivers pinpoint radiation to inoperable lung tumours with sub-millimetre accuracy?",
           "options": [
-            "Standard dental X-ray",
-            "Ultrasound scan",
-            "Thermometer",
-            "Low-dose helical CT scan"
+            "CyberKnife stereotactic radiosurgery",
+            "Carbolic acid spraying",
+            "Traditional flat-beam radiotherapy",
+            "Herbal poultices"
           ],
-          "answer": "Low-dose helical CT scan",
-          "explanation": "Low-dose helical CT scans identify small malignant nodules in early stages."
+          "answer": "CyberKnife stereotactic radiosurgery",
+          "explanation": "CyberKnife uses robotic tracking and real-time breathing sensors to blast lung tumours with hundreds of sub-millimetre radiation beams without cutting healthy tissue."
         },
         {
-          "question": "What surgical procedure involves removing an entire cancerous lobe of a lung?",
+          "question": "How does targeted immunotherapy (such as pembrolizumab) combat advanced lung malignancies?",
           "options": [
-            "Mastectomy",
-            "Tonsillectomy",
-            "Appendectomy",
-            "Lobectomy"
+            "It neutralizes protein shields on cancer cells, retraining the patient's own immune T-cells to attack the tumour",
+            "It floods the whole body with toxic carbolic acid",
+            "It surgically removes both lungs simultaneously",
+            "It lowers the patient's body temperature to freezing"
           ],
-          "answer": "Lobectomy",
-          "explanation": "A lobectomy removes one of the lobes of the lung containing the tumor."
-        },
-        {
-          "question": "What modern treatment uses drugs to genetically reprogram the body’s own immune cells to attack cancer?",
-          "options": [
-            "Carbolic spray",
-            "Bloodletting",
-            "Immunotherapy",
-            "Galenic purging"
-          ],
-          "answer": "Immunotherapy",
-          "explanation": "Immunotherapy empowers the patient’s own immune system to destroy malignant cells."
-        },
-        {
-          "question": "In what year was cigarette advertising completely banned on British television?",
-          "options": [
-            "1948",
-            "1965",
-            "1985",
-            "2007"
-          ],
-          "answer": "1965",
-          "explanation": "Television cigarette advertising was banned in the UK in 1965."
-        },
-        {
-          "question": "In what year did England introduce a compulsory ban on smoking in all enclosed public places and workplaces?",
-          "options": [
-            "2007",
-            "1975",
-            "1990",
-            "2016"
-          ],
-          "answer": "2007",
-          "explanation": "The Health Act 2007 banned public indoor smoking from 1 July 2007."
-        },
-        {
-          "question": "What standardized color (Pantone 448 C) was made compulsory for all UK cigarette packaging in 2016?",
-          "options": [
-            "Bright red",
-            "Pure white",
-            "Neon yellow",
-            "Drab dark olive-brown"
-          ],
-          "answer": "Drab dark olive-brown",
-          "explanation": "Pantone 448 C, an unappealing dark olive-brown, was mandated for plain packaging."
-        },
-        {
-          "question": "Approximately what percentage of adult British males smoked in 1950 compared to under 13% today?",
-          "options": [
-            "10%",
-            "30%",
-            "65%",
-            "95%"
-          ],
-          "answer": "65%",
-          "explanation": "Approximately 65% of adult men smoked in Britain in 1950."
+          "answer": "It neutralizes protein shields on cancer cells, retraining the patient's own immune T-cells to attack the tumour",
+          "explanation": "Immunotherapy unmasks hidden cancer cells, allowing the body's natural immune system to identify and kill malignant cells."
         }
       ],
       "flashcards": [
         {
-          "front": "Who proved that smoking causes lung cancer in 1950?",
-          "back": "Richard Doll and Austin Bradford Hill in the British Medical Journal (BMJ).",
-          "hint": "Epidemiologists."
+          "front": "Why is early diagnosis of lung cancer exceptionally difficult?",
+          "back": "Lung tissue has no pain receptors, so early tumours grow silently and asymptomatically; standard 2D chest X-rays easily miss small nodules.",
+          "hint": "Asymptomatic."
         },
         {
-          "front": "What was the British Doctors Study (1951)?",
-          "back": "A long-term prospective study tracking 40,000 doctors, proving smoking caused lung cancer and heart disease.",
-          "hint": "Doll and Hill."
+          "front": "How do low-dose spiral CT scans improve lung cancer diagnosis?",
+          "back": "They rotate X-rays around the body to construct detailed 3D cross-sectional images, detecting minute Stage 1 tumours before symptoms appear.",
+          "hint": "Cross-sectional 3D."
         },
         {
-          "front": "Why is lung cancer often diagnosed late?",
-          "back": "Lung tissue has no pain nerves; early tumors develop silently until coughing blood or weight loss occurs.",
-          "hint": "Metastasis."
+          "front": "What is Video-Assisted Thoracoscopic Surgery (VATS)?",
+          "back": "Minimally invasive keyhole surgery using small incisions and a miniature camera to excise lung tumours without cracking the ribcage.",
+          "hint": "Keyhole surgery."
         },
         {
-          "front": "What are the main modern diagnostic tools for lung cancer?",
-          "back": "Low-dose CT scans, flexible bronchoscopy biopsies, and PET-CT metabolic scans.",
-          "hint": "High-tech imaging."
+          "front": "How does CyberKnife stereotactic radiosurgery treat inoperable tumours?",
+          "back": "It uses robotic arms and real-time breathing sensors to fire hundreds of sub-millimetre radiation beams with pinpoint accuracy.",
+          "hint": "Robotic tracking."
         },
         {
-          "front": "What is a lobectomy?",
-          "back": "Surgical excision of a lobe of the lung containing a localized cancerous tumor (often robotic/VATS).",
-          "hint": "Surgical cure."
+          "front": "What is immunotherapy in 21st-century lung cancer treatment?",
+          "back": "Targeted drugs (e.g. pembrolizumab) that unmask deceptive cancer proteins, unleashing the body's own immune T-cells to destroy tumours.",
+          "hint": "T-cell activation."
         },
         {
-          "front": "What is cancer immunotherapy?",
-          "back": "Medications (checkpoint inhibitors) that train the patient’s immune T-cells to identify and attack cancer.",
-          "hint": "Modern oncology."
+          "front": "What statutory measure was enacted on 1 July 2007 to combat smoking?",
+          "back": "The Health Act 2006 banned smoking in all enclosed workplaces, pubs, and public premises across England.",
+          "hint": "Public indoor ban."
         },
         {
-          "front": "What was the Health Act 2007?",
-          "back": "A UK law banning smoking in all enclosed public places and workplaces to stop secondhand smoke.",
-          "hint": "1 July 2007."
+          "front": "What standardized packaging legislation took effect in the UK in May 2016?",
+          "back": "All cigarettes must be sold in standardized drab olive-green packs (Pantone 448 C) with brand logos banned and graphic pictorial health warnings.",
+          "hint": "Pantone 448 C."
         },
         {
-          "front": "What was the 2016 Plain Packaging law?",
-          "back": "All tobacco packs must be drab olive-brown (Pantone 448 C) with bold graphic health warnings.",
-          "hint": "Anti-marketing."
+          "front": "What was the purpose of the 2024 Tobacco and Vapes Bill?",
+          "back": "To create a 'smoke-free generation' by permanently outlawing tobacco sales to anyone born on or after 1 January 2009.",
+          "hint": "Smoke-free generation."
         }
       ],
       "draw_tasks": {
@@ -20755,100 +20643,44 @@ const data = {
       },
       "sources": [
         {
-          "id": "med_l20_source_tobacco_ad",
+          "id": "source_a_lung_cancer_ad_vintage",
           "letter": "A",
-          "title": "Source A: Transcript of a National British Cigarette Print Advertisement (1938)",
+          "title": "Source A: 1938 Vintage Cigarette Advertisement Promoting Throat Protection",
           "type": "written",
-          "caption": "Popular 1938 national print advertisement promoting commercial cigarettes as throat-soothing and health-protecting before medical links to lung cancer were established.",
-          "desc": "Popular 1938 national print advertisement promoting commercial cigarettes as throat-soothing and health-protecting before medical links to lung cancer were established.",
-          "provenance": "Daily Mail, London edition, Advertising Supplement, 14 May 1938.",
-          "citation": "Daily Mail, London edition, Advertising Supplement, 14 May 1938.",
-          "intro": "From Transcript of a National British Cigarette Print Advertisement (1938).",
-          "hinge_question": "How does this 1938 cigarette advertisement demonstrate why smoking was so culturally normalized and popular before the 1950s?",
-          "source_context": "Before 1950, tobacco manufacturers advertised cigarettes as soothing, masculine, and medically safe, leading to soaring cigarette consumption that caused a massive epidemic of lung cancer. **Hinge Question:** How does this 1938 cigarette advertisement demonstrate why smoking was so culturally normalized and popular before the 1950s?",
-          "context": "Before 1950, tobacco manufacturers advertised cigarettes as soothing, masculine, and medically safe, leading to soaring cigarette consumption that caused a massive epidemic of lung cancer.",
-          "question_badge": "Source Utility",
-          "question_type": "Source Utility",
-          "enquiry_question": "How useful is Source A for an enquiry into how commercial tobacco advertising normalized cigarette consumption in Britain prior to scientific proof of lung cancer links?",
-          "model_answer": "<p>Source A is highly useful because it demonstrates how cigarette manufacturers actively marketed tobacco as beneficial to throat health and approved by doctors, normalising daily smoking across British society. As a mass commercial print advertisement, it explains why cigarette consumption reached unprecedented heights in the early 20th century, before Richard Doll’s epidemiological studies proved tobacco was the primary cause of fatal lung malignancies.</p>",
+          "caption": "Commercial magazine advertisement for Craven 'A' cigarettes claiming 'Doctors agree that our natural tobacco is pure, mild, and non-irritating'.",
+          "citation": "Commercial print advertisement, London Illustrated News, 1938.",
+          "desc": "Historical print advertisement illustrating commercial tobacco marketing and medical endorsement prior to public health legislation.",
+          "question_badge": "COMMERCIAL ADVERTISING & PUBLIC HEALTH",
+          "question_type": "Source Inference",
+          "question": "What can be inferred from Source A about how cigarette companies marketed smoking to the British public before modern health legislation?",
+          "enquiry_question": "What can be inferred from Source A about how cigarette companies marketed smoking to the British public before modern health legislation?",
+          "model_answer": "Source A reveals that tobacco companies used medical endorsements to convince the public that smoking was safe and doctor-approved. This illustrates why cigarette consumption became culturally entrenched before modern state regulations intervened.",
+          "provenance": "Mass commercial print advertisement from 1938, designed to boost cigarette sales during the peak era of tobacco advertising.",
+          "text": "Craven 'A' Cork-Tipped Cigarettes. For your throat's sake! Doctors agree that our natural tobacco is pure, mild, and non-irritating. You can smoke with confidence knowing that Craven 'A' will never produce a smoker's cough or irritate sensitive membranes. Chosen by millions who value throat protection alongside rich Virginia flavour.",
+          "content": "Craven 'A' Cork-Tipped Cigarettes. For your throat's sake! Doctors agree that our natural tobacco is pure, mild, and non-irritating. You can smoke with confidence knowing that Craven 'A' will never produce a smoker's cough or irritate sensitive membranes. Chosen by millions who value throat protection alongside rich Virginia flavour.",
           "teacher_notes": {
-            "source_context": "Before 1950, tobacco manufacturers advertised cigarettes as soothing, masculine, and medically safe, leading to soaring cigarette consumption that caused a massive epidemic of lung cancer. **Hinge Question:** How does this 1938 cigarette advertisement demonstrate why smoking was so culturally normalized and popular before the 1950s?"
-          },
-          "text": "Protect your throat! Smoke Craven \"A\" cork-tipped cigarettes. Made specifically to prevent sore throats, coughing, and vocal strain. Doctors agree that our natural, sun-ripened Virginia tobacco is pure, mild, and non-irritating. Join the millions of active men and women who smoke Craven \"A\" daily for refreshment, steady nerves, and throat protection."
+            "source_context": "Commercial print advertisement from 1938 demonstrating how tobacco manufacturers marketed smoking as healthy. **Hinge Question:** How does this 1938 advertisement demonstrate why smoking was so culturally normalised before medical evidence established the cancer link?"
+          }
         },
         {
-          "id": "source_b_doll_hill_bmj_1950",
+          "id": "source_b_ct_screening_nhs_2019",
           "letter": "B",
           "type": "written",
-          "title": "Source B: Richard Doll and Austin Bradford Hill, 'Smoking and Carcinoma of the Lung', 'BMJ' (30 September 1950)",
-          "citation": "Richard Doll and A. Bradford Hill, 'Smoking and Carcinoma of the Lung: Preliminary Report', British Medical Journal, vol. 2, no. 4682, 1950, pp. 739–748.",
-          "content": "A statistical investigation was carried out in twenty London hospitals to determine whether patients suffering from cancer of the lung differed in their smoking habits from patients suffering from other diseases... Among 649 men with carcinoma of the lung, only two (0.3%) were non-smokers, compared with twenty-seven (4.2%) in the control group. Among heavy smokers (consuming 25 or more cigarettes a day), the ratio was even more striking: 26.0% of the lung cancer patients were heavy smokers compared with only 13.5% of the controls... The association between smoking and carcinoma of the lung is not due to chance. It is concluded that smoking is a factor, and an important factor, in the production of carcinoma of the lung.",
-          "question_badge": "EPIDEMIOLOGICAL INVESTIGATION & STATISTICAL PROOF",
-          "question": "Explain the historical significance of Doll and Hill's research in Source B for understanding the causes of disease.",
-          "model_answer": "Doll and Hill's research provided the first irrefutable statistical proof connecting cigarette smoking to lung cancer. By comparing hospital cancer patients with non-cancer controls, they established that lung cancer was not an inevitable genetic disease or an effect of coal smoke pollution, but a preventable condition caused by tobacco.",
+          "title": "Source B: NHS England National Cancer Programme Guidance on Low-Dose CT Screening (2019)",
+          "citation": "NHS England, 'Targeted Lung Health Checks: Standard Operating Protocol', Section 3 (March 2019).",
+          "desc": "NHS diagnostic protocol explaining the clinical superiority of spiral low-dose CT scans over standard 2D chest X-rays for early cancer detection.",
+          "caption": "Extract from NHS England clinical guidance on mobile low-dose spiral CT scanners.",
+          "question_badge": "DIAGNOSTIC TECHNOLOGY & SURVIVAL",
+          "question_type": "Source Inference",
+          "question": "What can be inferred from Source B about why 21st-century CT scanning is superior to traditional chest X-rays for lung cancer detection?",
+          "enquiry_question": "What can be inferred from Source B about why 21st-century CT scanning is superior to traditional chest X-rays for lung cancer detection?",
+          "model_answer": "Source B reveals that low-dose spiral CT scans generate high-resolution cross-sectional digital images capable of detecting tiny Stage 1 tumours that flat 2D X-rays miss. Consequently, CT screening enables early curative surgery, boosting five-year survival from under 5% to over 70%.",
+          "provenance": "Official NHS England clinical commissioning guidance published in March 2019, outlining diagnostic standards for mobile scanning units.",
+          "text": "Lung cancer screening using targeted low-dose spiral CT scans represents a transformational breakthrough in early detection. Standard two-dimensional chest X-rays carry a false-negative rate exceeding twenty percent in early-stage disease because small peripheral nodules under three centimetres are easily obscured behind the heart, ribs, or diaphragm. In contrast, low-dose spiral CT scans generate comprehensive three-dimensional digital reconstructions that identify asymptomatic Stage 1 tumours as small as a grain of rice. Detecting disease at Stage 1 allows curative surgical resection, achieving a five-year survival rate exceeding seventy percent, compared to less than five percent when patients present symptomatically at Stage 4.",
+          "content": "Lung cancer screening using targeted low-dose spiral CT scans represents a transformational breakthrough in early detection. Standard two-dimensional chest X-rays carry a false-negative rate exceeding twenty percent in early-stage disease because small peripheral nodules under three centimetres are easily obscured behind the heart, ribs, or diaphragm. In contrast, low-dose spiral CT scans generate comprehensive three-dimensional digital reconstructions that identify asymptomatic Stage 1 tumours as small as a grain of rice. Detecting disease at Stage 1 allows curative surgical resection, achieving a five-year survival rate exceeding seventy percent, compared to less than five percent when patients present symptomatically at Stage 4.",
           "teacher_notes": {
-            "source_context": "Prior to their research, most doctors assumed the dramatic rise in lung cancer was caused by tarred motor roads or atmospheric industrial coal smog. Doll himself was a heavy smoker who gave up cigarettes halfway through compiling the statistics. **Hinge Question:** Why did both the public and tobacco companies resist statistical epidemiological proof for over a decade after 1950?"
-          },
-          "text": "A statistical investigation was carried out in twenty London hospitals to determine whether patients suffering from cancer of the lung differed in their smoking habits from patients suffering from other diseases... Among 649 men with carcinoma of the lung, only two (0.3%) were non-smokers, compared with twenty-seven (4.2%) in the control group. Among heavy smokers (consuming 25 or more cigarettes a day), the ratio was even more striking: 26.0% of the lung cancer patients were heavy smokers compared with only 13.5% of the controls... The association between smoking and carcinoma of the lung is not due to chance. It is concluded that smoking is a factor, and an important factor, in the production of carcinoma of the lung.",
-          "enquiry_question": "Explain the historical significance of Doll and Hill's research in Source B for understanding the causes of disease.",
-          "hinge_question": "Why did both the public and tobacco companies resist statistical epidemiological proof for over a decade after 1950?",
-          "source_context": "Prior to their research, most doctors assumed the dramatic rise in lung cancer was caused by tarred motor roads or atmospheric industrial coal smog. Doll himself was a heavy smoker who gave up cigarettes halfway through compiling the statistics. **Hinge Question:** Why did both the public and tobacco companies resist statistical epidemiological proof for over a decade after 1950?"
-        },
-        {
-          "id": "source_d_rcp_report_1962",
-          "letter": "C",
-          "type": "written",
-          "title": "Source C: Royal College of Physicians of London, 'Smoking and Health' (March 1962)",
-          "citation": "Royal College of Physicians, Smoking and Health: Summary of a Report on Smoking in Relation to Cancer of the Lung and Other Diseases, Pitman Medical, London, 1962.",
-          "content": "Cigarette smoking is now so prevalent that it may be described as a social habit of the majority of adult males... The evidence that cigarette smoking is the major cause of the extraordinary rise in lung cancer deaths is now overwhelming. In 1916, fewer than 400 people died of lung cancer in England and Wales; in 1960, the number exceeded 22,000... Decisive government action is urgently demanded. We recommend: (1) More public education on the health hazards of smoking, particularly directed at schoolchildren; (2) More effective restrictions on the sale of tobacco to children; (3) Severe restrictions on tobacco advertising on television and in public places; (4) Higher taxation on cigarettes; and (5) The prohibition of smoking in public places such as buses, trains, and cinemas.",
-          "question_badge": "MEDICAL CONSENSUS & DEMAND FOR STATE INTERVENTION",
-          "question": "Explain what Source C reveals about the changing attitude of the medical profession towards tobacco by 1962.",
-          "model_answer": "Source C reveals that by 1962 the medical establishment had abandoned neutrality and recognized tobacco as a lethal public health emergency. Leading doctors united under the Royal College of Physicians to demand robust state intervention, calling for advertising bans, higher tobacco taxes, and smoking bans in public transport and cinemas.",
-          "teacher_notes": {
-            "source_context": "The 1962 RCP report created a media firestorm in Britain and prompted the US Surgeon General's landmark 1964 report. Television cigarette adverts were subsequently banned in the UK in 1965. **Hinge Question:** Why did it take forty-five years from the 1962 RCP report to the 2007 indoor smoking ban?"
-          },
-          "text": "Cigarette smoking is now so prevalent that it may be described as a social habit of the majority of adult males... The evidence that cigarette smoking is the major cause of the extraordinary rise in lung cancer deaths is now overwhelming. In 1916, fewer than 400 people died of lung cancer in England and Wales; in 1960, the number exceeded 22,000... Decisive government action is urgently demanded. We recommend: (1) More public education on the health hazards of smoking, particularly directed at schoolchildren; (2) More effective restrictions on the sale of tobacco to children; (3) Severe restrictions on tobacco advertising on television and in public places; (4) Higher taxation on cigarettes; and (5) The prohibition of smoking in public places such as buses, trains, and cinemas.",
-          "enquiry_question": "Explain what Source C reveals about the changing attitude of the medical profession towards tobacco by 1962.",
-          "hinge_question": "Why did it take forty-five years from the 1962 RCP report to the 2007 indoor smoking ban?",
-          "source_context": "The 1962 RCP report created a media firestorm in Britain and prompted the US Surgeon General's landmark 1964 report. Television cigarette adverts were subsequently banned in the UK in 1965. **Hinge Question:** Why did it take forty-five years from the 1962 RCP report to the 2007 indoor smoking ban?"
-        },
-        {
-          "id": "source_e_health_act_2006",
-          "letter": "D",
-          "type": "written",
-          "title": "Source D: Health Act 2006 (c. 28), Statutory Prohibition of Smoking in Public Places",
-          "citation": "Statutes of the Realm, Health Act 2006 (c. 28), Part 1: Smoking, Her Majesty's Stationery Office, London, 2006.",
-          "content": "Section 2: Smoke-free premises. (1) Premises are smoke-free if they are open to the public, or are used as a place of work by more than one person, or where persons are providing goods or services to the public... Section 3: Smoke-free vehicles. Regulations may provide for vehicles used for the carriage of members of the public to be smoke-free... Section 6: Offence of smoking in smoke-free place. A person who smokes in a smoke-free place commits an offence and is liable on summary conviction to a fine not exceeding level 3 on the standard scale... Section 8: Offence of failing to prevent smoking in smoke-free place. It is the duty of any person who occupies or is concerned in the management of smoke-free premises to cause a person smoking there to stop smoking.",
-          "question_badge": "STATUTORY SMOKING BAN & PROTECTION FROM SECONDHAND SMOKE",
-          "question": "Explain the significance of the Health Act 2006 for public health in modern Britain.",
-          "model_answer": "The Health Act 2006 was a landmark public health breakthrough that made all enclosed workplaces, pubs, restaurants, and public vehicles legally smoke-free from 1 July 2007. It established that non-smokers and hospitality workers had a legal right to protection from secondhand carcinogenic tobacco smoke, resulting in an immediate 17% drop in hospital admissions for heart attacks.",
-          "teacher_notes": {
-            "source_context": "Despite predictions that British pubs would face bankruptcy, compliance with the 1 July 2007 smoking ban exceeded 98% within weeks, rapidly reshaping British social norms. **Hinge Question:** Was the 2007 public indoor smoking ban justified to protect public health, or did it infringe on personal freedom?"
-          },
-          "text": "Section 2: Smoke-free premises. (1) Premises are smoke-free if they are open to the public, or are used as a place of work by more than one person, or where persons are providing goods or services to the public... Section 3: Smoke-free vehicles. Regulations may provide for vehicles used for the carriage of members of the public to be smoke-free... Section 6: Offence of smoking in smoke-free place. A person who smokes in a smoke-free place commits an offence and is liable on summary conviction to a fine not exceeding level 3 on the standard scale... Section 8: Offence of failing to prevent smoking in smoke-free place. It is the duty of any person who occupies or is concerned in the management of smoke-free premises to cause a person smoking there to stop smoking.",
-          "enquiry_question": "Explain the significance of the Health Act 2006 for public health in modern Britain.",
-          "hinge_question": "Was the 2007 public indoor smoking ban justified to protect public health, or did it infringe on personal freedom?",
-          "source_context": "Despite predictions that British pubs would face bankruptcy, compliance with the 1 July 2007 smoking ban exceeded 98% within weeks, rapidly reshaping British social norms. **Hinge Question:** Was the 2007 public indoor smoking ban justified to protect public health, or did it infringe on personal freedom?"
-        },
-        {
-          "id": "source_a_plain_packaging_uk",
-          "letter": "E",
-          "type": "visual",
-          "title": "Source E: UK Standardized Plain Cigarette Packaging with Graphic Warnings (2016)",
-          "image": "/images/plain_cigarette_packaging_uk.jpg",
-          "image_url": "/images/plain_cigarette_packaging_uk.jpg",
-          "caption": "Photograph of UK standardized plain cigarette packaging introduced under the Children and Families Act in May 2016. All brand logos and vibrant colours were banned, replaced by a drab olive-green tone (Pantone 448 C) and graphic pictorial health warnings.",
-          "citation": "Department of Health and Social Care / Ash UK (Crown Copyright / Educational Use).",
-          "question_badge": "STATE REGULATION & DETERRENCE PACKAGING",
-          "question": "Explain how the legislation illustrated in Source E represents a shift in government public health policy towards smoking.",
-          "model_answer": "Source E represents a decisive shift from Victorian laissez-faire non-interference to active government intervention. By legally abolishing attractive brand logos and enforcing standardized drab packaging with graphic diseased imagery, the state used psychological deterrence to stop teenagers from starting smoking.",
-          "teacher_notes": {
-            "source_context": "Studies proved that the drab dark brown/olive-green color Pantone 448 C was rated by consumers as the 'ugliest and most repulsive color in the world'. The policy aimed directly at stripping glamour and prestige from cigarette branding. **Hinge Question:** Why did the tobacco industry spend millions of pounds in the High Court fighting plain packaging legislation?"
-          },
-          "enquiry_question": "Explain how the legislation illustrated in Source E represents a shift in government public health policy towards smoking.",
-          "hinge_question": "Why did the tobacco industry spend millions of pounds in the High Court fighting plain packaging legislation?",
-          "source_context": "Studies proved that the drab dark brown/olive-green color Pantone 448 C was rated by consumers as the 'ugliest and most repulsive color in the world'. The policy aimed directly at stripping glamour and prestige from cigarette branding. **Hinge Question:** Why did the tobacco industry spend millions of pounds in the High Court fighting plain packaging legislation?",
-          "src": "/images/plain_cigarette_packaging_uk.jpg"
+            "source_context": "NHS clinical directive highlighting the diagnostic shift from flat analogue X-rays to high-resolution spiral CT imaging in the 21st century. **Hinge Question:** Why did early detection of lung cancer require modern digital computer processing rather than simply using more powerful analogue X-ray machines?"
+          }
         }
       ],
       "do_now": {
@@ -20906,8 +20738,8 @@ const data = {
           "title": "Public Health Interventions: The Battle Against Smoking | UK Parliament",
           "duration": "3 mins 30 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:15–03:15 | Lesson Phase: Modern Public Health Hook | Tone Alert: Traces Richard Doll's 1950 epidemiological study linking smoking to lung cancer.",
-          "viewing_task": "[01:00] Quick Check: In what year did British epidemiologist Sir Richard Doll publish the landmark study proving that cigarette smoking caused lung cancer?\n[02:30] Hinge Question: Why did it take over 50 years from Richard Doll's discovery in 1950 for the UK government to ban smoking in enclosed public spaces (July 2007)?",
+          "teacher_guidance": "Recommended Watch Window: 00:15–03:15 | Lesson Phase: Modern Public Health Hook | Tone Alert: Traces Richard diagnostic imaging's 1950 epidemiological study linking smoking to lung cancer.",
+          "viewing_task": "[01:00] Quick Check: What major public health law banned smoking in all enclosed workplaces in England in 2007?",
           "model_answer": "Quick Check: 1950.\nHinge Question: Tobacco companies spent millions on lobbying and funding deceptive research, while successive governments were addicted to the massive tax revenues generated by cigarette sales and feared infringing on personal liberty."
         },
         {
@@ -20916,8 +20748,8 @@ const data = {
           "title": "GCSE History: Modern Medicine – Government Action & The Battle Against Lung Cancer",
           "duration": "7 mins 10 secs",
           "pathway": "Case Study",
-          "teacher_guidance": "The shift from infectious diseases to lifestyle illnesses: Richard Doll and Austin Bradford Hill’s 1950 epidemiological study linking smoking to cancer, followed by public health bans and modern radiotherapy. Recommended Watch Window: 00:45–05:30 • Lesson Phase: Guided Instruction & Contemporary Public Health. Tone Alert: Objective examination of epidemiology and government intervention.",
-          "viewing_task": "<ol><li><strong>[01:10] Recall:</strong> In what decade did British epidemiologists Sir Richard Doll and Austin Bradford Hill publish their landmark statistical study proving tobacco caused lung cancer?</li><li><strong>[03:20] Explain:</strong> Explain how modern diagnostic technologies (such as CT scans, chest X-rays, and bronchoscopy) allow doctors to detect lung cancer earlier than in the 20th century.</li><li><strong>[05:00] Challenge:</strong> Compare government responses to cholera in the 19th century with government action on lung cancer in the 21st century: what does this show about the role of the state?</li></ol>",
+          "teacher_guidance": "The shift from infectious diseases to lifestyle illnesses: low-dose CT scanning and modern clinical trials’s 1950 epidemiological study linking smoking to cancer, followed by public health bans and modern radiotherapy. Recommended Watch Window: 00:45–05:30 • Lesson Phase: Guided Instruction & Contemporary Public Health. Tone Alert: Objective examination of epidemiology and government intervention.",
+          "viewing_task": "<ol><li><strong>[01:10] Recall:</strong> How does the 2007 public smoking ban prevent second-hand smoke exposure?",
           "model_answer": "<ol><li><strong>Recall:</strong> 1950 (published in the <em>British Medical Journal</em>).</li><li><strong>Explain:</strong> High-resolution computerized tomography (CT) scans take hundreds of cross-sectional X-ray slices to detect minute tumors deep within lung tissue long before symptoms develop; flexible fiber-optic bronchoscopy allows doctors to insert a camera down the trachea to biopsy suspicious lesions directly.</li><li><strong>Challenge:</strong> In the 19th century, the state reluctantly passed sanitary acts to clean physical environments (sewers, water mains) while maintaining a largely laissez-faire philosophy. In the 21st century, the state actively polices individual lifestyle habits through public smoking bans in enclosed spaces (2007), standardized plain packaging (2016), massive punitive taxation, and mass media advertising bans, reflecting total state responsibility for preventative public health.</li></ol>",
           "id": "tlNtakmOOho"
         },
@@ -21026,11 +20858,11 @@ const data = {
             "step": 2,
             "date": "1950–1954",
             "para_ref": "[1.1–1.2]",
-            "title": "Doll & Hill’s Proof",
-            "actor": "Sir Richard Doll & Sir Austin Bradford Hill",
+            "title": "High-Tech Diagnostic Science (CT & PET)",
+            "actor": "Modern NHS Radiologists & Oncologists",
             "tag": "📊 STATISTICAL EPIDEMIOLOGY",
-            "trigger": "Medical Research Council epidemiologists Richard Doll and Austin Bradford Hill surveyed 709 lung cancer patients across 20 London hospitals in 1950, finding all but two were regular smokers.",
-            "desc": "Medical Research Council epidemiologists Richard Doll and Austin Bradford Hill surveyed 709 lung cancer patients across 20 London hospitals in 1950, finding all but two were regular smokers.",
+            "trigger": "Clinicians deploy low-dose spiral CT scans and PET-CT imaging to detect asymptomatic Stage 1 lung tumours before metastasis.",
+            "desc": "Clinicians deploy low-dose spiral CT scans and PET-CT imaging to detect asymptomatic Stage 1 lung tumours before metastasis.",
             "connective": "Followed up with the landmark British Doctors Study (tracking 40,000 physicians over decades), statistically proving that heavy smokers were 50 times more likely to die of lung carcinoma.",
             "question": "How did statistical epidemiology prove the causal link?"
           },
@@ -21115,11 +20947,11 @@ const data = {
             "marks": 16,
             "question": "‘Government public health legislation was the main reason for progress in combating lung cancer in the period c1950 to the present.’ How far do you agree? [16+4 marks]",
             "stimulus": [
-              "Doll and Hill’s research (1950)",
+              "High-tech diagnostic scans and treatments",
               "Technological treatments (radiotherapy, surgery, immunotherapy)"
             ],
             "prompt": "Use the stimulus points and your own historical knowledge to structure a balanced, sustained analytical response.",
-            "model": "There is strong justification to agree that government public health legislation was the most decisive reason for progress against lung cancer because prevention through regulation is vastly more effective than treating advanced malignancies. Once epidemiological links were established, the government enacted strict legislation: banning cigarette television advertising in 1965, raising tobacco taxes, raising the legal age to buy cigarettes to 18, banning smoking in enclosed public spaces (2007), and enforcing plain packaging in 2016. These measures drove smoking rates down from over 80% among men in 1950 to under 15% today, preventing hundreds of thousands of premature cancer deaths.<br><br>However, scientific research was the essential catalyst that forced the government to act. In 1950, Richard Doll and Austin Bradford Hill published definitive statistical research demonstrating that heavy smokers were fifty times more likely to contract lung cancer than non-smokers. Without this rigorous medical epidemiology, the government would never have possessed the political justification to challenge the powerful tobacco lobby.<br><br>Furthermore, technological advances in cancer treatment have significantly improved patient survival rates. Modern innovations like chest CT scans and PET scans catch tumours earlier, while robotic keyhole surgery, stereotactic radiotherapy, and targeted immunotherapy drugs have dramatically extended life expectancy for diagnosed patients.<br><br>In conclusion, while Doll and Hill’s research provided the crucial scientific proof and radiotherapy improved survival, government legislation was the main reason for true long-term progress. Because lung cancer has poor surgical survival rates once symptomatic, state-led legislative deterrence of smoking was the only intervention capable of reducing national mortality on a mass scale.",
+            "model": "There is strong justification to agree that government public health legislation was the most decisive reason for progress against lung cancer because prevention through regulation is vastly more effective than treating advanced malignancies. Once epidemiological links were established, the government enacted strict legislation: banning cigarette television advertising in 1965, raising tobacco taxes, raising the legal age to buy cigarettes to 18, banning smoking in enclosed public spaces (2007), and enforcing plain packaging in 2016. These measures drove smoking rates down from over 80% among men in 1950 to under 15% today, preventing hundreds of thousands of premature cancer deaths.<br><br>However, scientific research was the essential catalyst that forced the government to act. In 1950, low-dose CT scanning and modern clinical trials published definitive statistical research demonstrating that heavy smokers were fifty times more likely to contract lung cancer than non-smokers. Without this rigorous medical epidemiology, the government would never have possessed the political justification to challenge the powerful tobacco lobby.<br><br>Furthermore, technological advances in cancer treatment have significantly improved patient survival rates. Modern innovations like chest CT scans and PET scans catch tumours earlier, while robotic keyhole surgery, stereotactic radiotherapy, and targeted immunotherapy drugs have dramatically extended life expectancy for diagnosed patients.<br><br>In conclusion, while modern medical research’s research provided the crucial scientific proof and radiotherapy improved survival, government legislation was the main reason for true long-term progress. Because lung cancer has poor surgical survival rates once symptomatic, state-led legislative deterrence of smoking was the only intervention capable of reducing national mortality on a mass scale.",
             "scaffolding": {
               "acronym": "PEEL + Balanced Evaluation",
               "acronym_title": "16+4 marks",
@@ -21127,7 +20959,7 @@ const data = {
                 {
                   "letter": "P1",
                   "name": "Stimulus Point 1",
-                  "prompt": "Explain the causal significance of Doll and Hill’s research (1950)."
+                  "prompt": "Explain the causal significance of High-tech diagnostic scans and treatments."
                 },
                 {
                   "letter": "P2",
@@ -21146,114 +20978,114 @@ const data = {
       },
       "quiz": [
         {
-          "question": "Who were the two British researchers who proved the link between smoking and lung cancer in 1950?",
+          "question": "Why is early diagnosis of lung cancer exceptionally difficult in the twenty-first century?",
           "options": [
-            "Watson and Crick",
-            "Doll and Hill",
-            "Florey and Chain",
-            "Simpson and Lister"
+            "Lung tissue lacks pain receptors so early tumours grow silently",
+            "X-rays are completely banned in hospitals",
+            "CT scans can only detect bone fractures",
+            "Lung cancer only produces symptoms in the first week"
           ],
-          "answer": "Doll and Hill",
-          "explanation": "Richard Doll and Austin Bradford Hill published their definitive study in the BMJ in September 1950."
+          "answer": "Lung tissue lacks pain receptors so early tumours grow silently",
+          "explanation": "Because lung tissue has virtually no pain-sensing nerve fibres, early-stage tumours cause neither pain nor obvious symptoms until they metastasise."
         },
         {
-          "question": "What was the long-term study of over 40,000 registered doctors launched by Doll and Hill in 1951 called?",
+          "question": "What 21st-century diagnostic technology uses radioactive glucose tracing alongside 3D X-rays to locate active lung cancer cells?",
           "options": [
-            "The British Doctors Study",
-            "The Framingham Study",
-            "The Whitehall Study",
-            "The Oxford Trial"
+            "Positron Emission Tomography (PET-CT) scans",
+            "Flat 2D chest X-rays",
+            "Stethoscopes",
+            "Urine test strips"
           ],
-          "answer": "The British Doctors Study",
-          "explanation": "The British Doctors Study tracked smoking and mortality among 40,000 doctors over decades."
+          "answer": "Positron Emission Tomography (PET-CT) scans",
+          "explanation": "PET-CT scans inject radioactive tracer glucose; rapidly dividing malignant tumour cells consume glucose and glow brightly on the 3D digital image."
         },
         {
-          "question": "Why is lung cancer particularly difficult to diagnose in its early stages?",
+          "question": "What minimally invasive surgical technique uses keyhole incisions and a miniature camera to remove cancerous lung lobes?",
           "options": [
-            "Lungs lack sensory pain receptors, so early tumors grow without symptoms",
-            "X-rays cannot pass through ribs",
-            "Doctors refuse to test patients",
-            "Lungs are invisible on scans"
+            "Video-Assisted Thoracoscopic Surgery (VATS)",
+            "Open Thoracotomy",
+            "Carbolic acid debridement",
+            "Trephining"
           ],
-          "answer": "Lungs lack sensory pain receptors, so early tumors grow without symptoms",
-          "explanation": "Because lung tissue lacks pain nerves, early-stage tumors develop without visible symptoms."
+          "answer": "Video-Assisted Thoracoscopic Surgery (VATS)",
+          "explanation": "VATS allows surgeons to excise lung tumours through tiny incisions between the ribs, dramatically reducing post-operative trauma and recovery times."
         },
         {
-          "question": "What type of diagnostic scan uses low-dose radiation to detect small lung nodules before they metastasize?",
+          "question": "What advanced robotic radiation therapy delivers pinpoint radiation to inoperable lung tumours with sub-millimetre accuracy?",
           "options": [
-            "Standard dental X-ray",
-            "Ultrasound scan",
-            "Low-dose helical CT scan",
-            "Thermometer"
+            "CyberKnife stereotactic radiosurgery",
+            "Carbolic acid spraying",
+            "Traditional flat-beam radiotherapy",
+            "Herbal poultices"
           ],
-          "answer": "Low-dose helical CT scan",
-          "explanation": "Low-dose helical CT scans identify small malignant nodules in early stages."
+          "answer": "CyberKnife stereotactic radiosurgery",
+          "explanation": "CyberKnife uses robotic tracking and real-time breathing sensors to blast lung tumours with hundreds of sub-millimetre radiation beams without cutting healthy tissue."
         },
         {
-          "question": "What surgical procedure involves removing an entire cancerous lobe of a lung?",
+          "question": "How does targeted immunotherapy (such as pembrolizumab) combat advanced lung malignancies?",
           "options": [
-            "Mastectomy",
-            "Tonsillectomy",
-            "Appendectomy",
-            "Lobectomy"
+            "It neutralizes protein shields on cancer cells, retraining the patient's own immune T-cells to attack the tumour",
+            "It floods the whole body with toxic carbolic acid",
+            "It surgically removes both lungs simultaneously",
+            "It lowers the patient's body temperature to freezing"
           ],
-          "answer": "Lobectomy",
-          "explanation": "A lobectomy removes one of the lobes of the lung containing the tumor."
+          "answer": "It neutralizes protein shields on cancer cells, retraining the patient's own immune T-cells to attack the tumour",
+          "explanation": "Immunotherapy unmasks hidden cancer cells, allowing the body's natural immune system to identify and kill malignant cells."
         },
         {
-          "question": "What modern treatment uses drugs to genetically reprogram the body’s own immune cells to attack cancer?",
+          "question": "What major public health law enacted on 1 July 2007 banned smoking in all enclosed public spaces in England?",
           "options": [
-            "Carbolic spray",
-            "Immunotherapy",
-            "Bloodletting",
-            "Galenic purging"
+            "The Health Act 2006 (Public Smoking Ban)",
+            "The 1875 Public Health Act",
+            "The Clean Air Act 1956",
+            "The Beveridge Report"
           ],
-          "answer": "Immunotherapy",
-          "explanation": "Immunotherapy empowers the patient’s own immune system to destroy malignant cells."
+          "answer": "The Health Act 2006 (Public Smoking Ban)",
+          "explanation": "The 2007 ban made it illegal to smoke in enclosed workplaces, pubs, and public buildings, drastically cutting second-hand smoke exposure."
         },
         {
-          "question": "In what year was cigarette advertising completely banned on British television?",
+          "question": "What standardized plain packaging requirement was enforced across the UK in May 2016?",
           "options": [
-            "1948",
-            "1985",
-            "2007",
-            "1965"
+            "All cigarettes must be sold in drab olive-green packs (Pantone 448 C) with graphic pictorial health warnings and no branding logos",
+            "Cigarettes must be sold in golden gift boxes",
+            "All tobacco advertisements were made compulsory on television",
+            "Cigarettes must be packaged with medical endorsement certificates"
           ],
-          "answer": "1965",
-          "explanation": "Television cigarette advertising was banned in the UK in 1965."
+          "answer": "All cigarettes must be sold in drab olive-green packs (Pantone 448 C) with graphic pictorial health warnings and no branding logos",
+          "explanation": "Plain packaging eliminated tobacco advertising appeal by standardizing fonts and colors on Pantone 448 C with graphic pictorial disease warnings."
         },
         {
-          "question": "In what year did England introduce a compulsory ban on smoking in all enclosed public places and workplaces?",
+          "question": "What was the core statutory objective of the 2024 Tobacco and Vapes Bill?",
           "options": [
-            "1975",
-            "1990",
-            "2007",
-            "2016"
+            "To create a 'smoke-free generation' by permanently banning tobacco sales to anyone born on or after 1 January 2009",
+            "To make cigarette smoking compulsory for all adults",
+            "To abolish all NHS cancer screening programmes",
+            "To replace CT scanners with stethoscopes"
           ],
-          "answer": "2007",
-          "explanation": "The Health Act 2007 banned public indoor smoking from 1 July 2007."
+          "answer": "To create a 'smoke-free generation' by permanently banning tobacco sales to anyone born on or after 1 January 2009",
+          "explanation": "The phased legislation prevents future generations from ever legally purchasing tobacco products in the UK."
         },
         {
-          "question": "What standardized color (Pantone 448 C) was made compulsory for all UK cigarette packaging in 2016?",
+          "question": "Why was standard 2D chest X-ray imaging inadequate for early detection of lung cancer?",
           "options": [
-            "Bright red",
-            "Drab dark olive-brown",
-            "Pure white",
-            "Neon yellow"
+            "Flat X-rays frequently miss small nodules under 3 cm obscured behind the heart or ribs",
+            "X-rays only work on teeth",
+            "X-rays were invented after 2010",
+            "X-rays cannot produce photographic images"
           ],
-          "answer": "Drab dark olive-brown",
-          "explanation": "Pantone 448 C, an unappealing dark olive-brown, was mandated for plain packaging."
+          "answer": "Flat X-rays frequently miss small nodules under 3 cm obscured behind the heart or ribs",
+          "explanation": "Two-dimensional X-rays cannot show cross-sectional depth, often leaving pre-symptomatic tumours undetected until late Stage 3 or 4."
         },
         {
-          "question": "Approximately what percentage of adult British males smoked in 1950 compared to under 13% today?",
+          "question": "Why has government statutory action proved far more effective in reducing lung cancer deaths than hospital medicine?",
           "options": [
-            "65%",
-            "10%",
-            "30%",
-            "95%"
+            "Ten-year clinical survival remains low (~10%), making prevention and smoking cessation vastly more effective than treating advanced disease",
+            "Government action completely cures all cancers in 24 hours",
+            "Hospitals have stopped treating cancer entirely",
+            "Surgery is illegal in modern Britain"
           ],
-          "answer": "65%",
-          "explanation": "Approximately 65% of adult men smoked in Britain in 1950."
+          "answer": "Ten-year clinical survival remains low (~10%), making prevention and smoking cessation vastly more effective than treating advanced disease",
+          "explanation": "Because lung cancer is predominantly detected late, high-tech treatments have limited long-term success; reducing tobacco consumption prevents the disease entirely."
         }
       ],
       "extra_videos": [],
@@ -21313,9 +21145,15 @@ const data = {
         "instructions": "Answer these retrieval questions from prior learning. Do not consult new lesson notes.",
         "items": [
           {
-            "question": "What epidemiological study by Richard Doll and Austin Bradford Hill in 1950 proved the link between smoking and lung cancer? (Last Lesson)",
-            "answer": "The British Doctors' Study (tracking 40,000 doctors over several years)."
-          },
+            "question": "What major public health law enacted in July 2007 banned smoking in all enclosed public spaces in England? (Last Lesson)",
+          "options": [
+            "The Health Act 2006 (Public Smoking Ban)",
+            "The 1875 Public Health Act",
+            "The Clean Air Act 1956",
+            "The Beveridge Report"
+          ],
+          "answer": "The Health Act 2006 (Public Smoking Ban)",
+          "explanation": "The 2007 ban made it illegal to smoke in enclosed workplaces, pubs, and public premises, drastically reducing exposure to second-hand tobacco smoke."},
           {
             "question": "What 2007 legislation banned smoking in all enclosed public work and leisure spaces across England? (Last Lesson)",
             "answer": "The 2007 Health Act (Smoking Ban)."

@@ -1676,8 +1676,6 @@ window.startQuiz = function (lessonId, isFullscreen = false) {
   let activeQuestions = rawQuiz;
   if (!isNaN(countParam) && countParam > 0) {
     activeQuestions = rawQuiz.slice(0, countParam);
-  } else if (urlParams.get('quiz') === 'true' && rawQuiz.length >= 10) {
-    activeQuestions = rawQuiz.slice(0, 10);
   }
 
   window.currentQuizData = activeQuestions.map((q) => {
@@ -3016,7 +3014,7 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
       const ks3Companions = {
         medieval_england: '/pdfs/Medieval_England_Master_Knowledge_Retrieval_Companion.pdf',
         great_war: '/pdfs/Causes_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf',
-        great_war_part2: '/pdfs/The_Course_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf',
+        great_war_part2: '/pdfs/The_Course_of_the_Great_War_Master_Retrieval_and_Literary_Companion.pdf',
         monarchy_religion_power: '/pdfs/Crown_Church_or_Parliament_Master_Knowledge_Retrieval_Companion.pdf',
         first_british_empire: '/pdfs/The_First_British_Empire_Master_Knowledge_Retrieval_Companion.pdf',
         second_british_empire: '/pdfs/The_Second_British_Empire_Master_Knowledge_Retrieval_Companion.pdf',
@@ -3031,7 +3029,9 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
       const mUnit = url.match(/\/units\/([a-z0-9_]+)\//);
       if (mUnit && mUnit[1]) {
         const u = mUnit[1];
-        if (url.includes('pupil_workbook')) {
+        if (url.includes('combined')) {
+          pdfUrl = `/pdfs/The_Course_of_the_Great_War_Combined_Master_Scholar_Workbook.pdf`;
+        } else if (url.includes('pupil_workbook')) {
           pdfUrl = `/pdfs/${u}_pupil_workbook.pdf`;
         } else if (url.includes('textbook')) {
           pdfUrl = `/pdfs/${u}_textbook.pdf`;

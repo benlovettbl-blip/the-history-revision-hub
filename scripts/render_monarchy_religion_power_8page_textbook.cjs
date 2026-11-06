@@ -82,11 +82,11 @@ function cleanProse(text) {
 function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'monarchy_religion_power', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
-  raw = raw.replace(/export\s+default[\s\S]*$/, '');
-  raw = raw.replace('const monarchy_religion_power_data =', 'monarchy_religion_power_data =');
-  const sandbox = { module: { exports: {} } };
-  vm.runInNewContext(raw, sandbox);
-  return sandbox.monarchy_religion_power_data || sandbox.module.exports || sandbox.unitData;
+  const transformed = raw.replace(/^\s*export\s+default\s+/, 'var unitData = ');
+  const sandbox = {};
+  vm.createContext(sandbox);
+  vm.runInContext(transformed, sandbox);
+  return sandbox.unitData;
 }
 
 // Canonical Stage Questions matching render_monarchy_religion_power_workbook.cjs

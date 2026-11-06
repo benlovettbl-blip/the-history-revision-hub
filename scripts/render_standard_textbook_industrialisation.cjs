@@ -220,11 +220,11 @@ const milestones = [
 function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'industrialisation_and_empire', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
-  raw = raw.replace(/export\s+default\s+[^;]+;?/g, '').replace(/export\s*\{[^}]*\};?/g, '');
-  const sandbox = { module: { exports: {} }, window: {} };
+  raw = raw.replace(/^\s*export\s+default\s+/, 'var unitData = ');
+  const sandbox = { unitData: null };
   vm.createContext(sandbox);
   vm.runInContext(raw, sandbox);
-  return sandbox.module.exports.lessons ? sandbox.module.exports : sandbox.window.UNIT_DATA;
+  return sandbox.unitData;
 }
 
 function buildHtml() {

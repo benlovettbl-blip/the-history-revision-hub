@@ -1746,7 +1746,7 @@ export default {
           "answer": 2
         },
         {
-          "question": "Under the Treaty, what was the maximum number of soldiers allowed in the German army?",
+          "question": "Under the 1919 Treaty of Versailles, what was the maximum number of soldiers allowed in the German army?",
           "options": [
             "100,000 men",
             "250,000 men",
@@ -1875,7 +1875,7 @@ export default {
           "answer": 3
         },
         {
-          "question": "What non-violent tactic did the German government order the Ruhr workers to use against the French?",
+          "question": "During the 1923 French invasion of the Ruhr, what non-violent tactic did the German government order workers to use?",
           "options": [
             "Passive Resistance",
             "Writing letters of protest to the League of Nations",
@@ -1885,7 +1885,7 @@ export default {
           "answer": 0
         },
         {
-          "question": "Why did the invasion of the Ruhr directly lead to hyperinflation?",
+          "question": "Why did the 1923 French occupation of the Ruhr directly lead to hyperinflation?",
           "options": [
             "The workers demanded higher wages",
             "The French stole all of Germany's gold reserves",
@@ -3553,7 +3553,7 @@ export default {
             "answer": "The 'War Guilt Clause', forcing Germany to accept full blame for starting the war."
           },
           {
-            "question": "How was the German army restricted by the Treaty?",
+            "question": "Under the 1919 Treaty of Versailles, how was the German army restricted?",
             "answer": "Limited to 100,000 men, no air force, no submarines, and 6 battleships."
           },
           {
@@ -5804,7 +5804,7 @@ export default {
             "answer": "Because Germany had failed to pay its reparation instalment."
           },
           {
-            "question": "How did German workers react to the Ruhr invasion?",
+            "question": "How did German workers react to the 1923 French invasion of the Ruhr?",
             "answer": "They used 'passive resistance' (going on strike)."
           },
           {
@@ -5910,8 +5910,10 @@ export default {
             "October 1929"
           ],
           "answer": "November 1923",
+          "explanation": "Hitler sought to exploit the hyperinflation crisis and passive resistance in the Ruhr, marching on Munich on 8–9 November 1923.",
           "q": "In what month and year did the Munich Putsch take place?",
-          "a": "November 1923"
+          "a": "November 1923",
+          "explanation": "Hitler sought to exploit the hyperinflation crisis and passive resistance in the Ruhr, marching on Munich on 8–9 November 1923."
         },
         {
           "question": "Name the three men who made up the 'Bavarian Triumvirate' that Hitler tried to hijack.",
@@ -5922,8 +5924,10 @@ export default {
             "Ernst Röhm, Hermann Göring, Heinrich Himmler"
           ],
           "answer": "Gustav von Kahr, Otto von Lossow, Hans von Seisser",
+          "explanation": "State Commissioner Kahr, Army Commander Lossow, and Police Chief Seisser initially agreed under armed threat, but alerted the authorities as soon as they left the beer hall.",
           "q": "Name the three men who made up the 'Bavarian Triumvirate' that Hitler tried to hijack.",
-          "a": "Gustav von Kahr, Otto von Lossow, Hans von Seisser"
+          "a": "Gustav von Kahr, Otto von Lossow, Hans von Seisser",
+          "explanation": "State Commissioner Kahr, Army Commander Lossow, and Police Chief Seisser initially agreed under armed threat, but alerted the authorities as soon as they left the beer hall."
         },
         {
           "question": "Which famous First World War general supported Hitler during the Munich Putsch?",
@@ -5934,8 +5938,10 @@ export default {
             "General Walther von Lüttwitz"
           ],
           "answer": "General Erich Ludendorff",
+          "explanation": "Ludendorff's national military fame gave the putsch vital public prestige, marching at the front of the column towards the Feldherrnhalle.",
           "q": "Which famous First World War general supported Hitler during the Munich Putsch?",
-          "a": "General Erich Ludendorff"
+          "a": "General Erich Ludendorff",
+          "explanation": "Ludendorff's national military fame gave the putsch vital public prestige, marching at the front of the column towards the Feldherrnhalle."
         },
         {
           "question": "How many Nazis were killed in the firefight with the police during the Putsch?",
@@ -5946,8 +5952,10 @@ export default {
             "14"
           ],
           "answer": "14",
+          "explanation": "Bavarian police opened fire on the marchers at Odeonsplatz, killing 14 putschists and 4 state policemen, instantly breaking the coup.",
           "q": "How many Nazis were killed in the firefight with the police during the Putsch?",
-          "a": "14"
+          "a": "14",
+          "explanation": "Bavarian police opened fire on the marchers at Odeonsplatz, killing 14 putschists and 4 state policemen, instantly breaking the coup."
         },
         {
           "question": "What serious criminal charge was Hitler put on trial for in early 1924?",
@@ -5958,8 +5966,10 @@ export default {
             "Murder"
           ],
           "answer": "High Treason",
+          "explanation": "High treason legally carried the death penalty or life imprisonment under the Weimar Penal Code, but conservative judges granted Hitler extraordinary leniency.",
           "q": "What serious criminal charge was Hitler put on trial for in early 1924?",
-          "a": "High Treason"
+          "a": "High Treason",
+          "explanation": "High treason legally carried the death penalty or life imprisonment under the Weimar Penal Code, but conservative judges granted Hitler extraordinary leniency."
         },
         {
           "question": "Why did Hitler receive such a lenient sentence (5 years) at his trial?",
@@ -5970,8 +5980,10 @@ export default {
             "The judges were terrified of the SA storming the courtroom"
           ],
           "answer": "The Weimar judges were right-wing and sympathised with his nationalist, anti-Weimar views",
+          "explanation": "Presiding Judge Georg Neithardt openly sympathised with Hitler's anti-Weimar nationalism, allowing him to turn the trial into a political propaganda stage and granting him parole after just nine months.",
           "q": "Why did Hitler receive such a lenient sentence (5 years) at his trial?",
-          "a": "The Weimar judges were right-wing and sympathised with his nationalist, anti-Weimar views"
+          "a": "The Weimar judges were right-wing and sympathised with his nationalist, anti-Weimar views",
+          "explanation": "Presiding Judge Georg Neithardt openly sympathised with Hitler's anti-Weimar nationalism, allowing him to turn the trial into a political propaganda stage and granting him parole after just nine months."
         },
         {
           "question": "How long did Hitler actually spend in Landsberg Prison?",
@@ -5982,8 +5994,10 @@ export default {
             "Two weeks"
           ],
           "answer": "Nine months",
+          "explanation": "Hitler served less than a fifth of his nominal five-year sentence in comfortable fortress confinement before early release in December 1924.",
           "q": "How long did Hitler actually spend in Landsberg Prison?",
-          "a": "Nine months"
+          "a": "Nine months",
+          "explanation": "Hitler served less than a fifth of his nominal five-year sentence in comfortable fortress confinement before early release in December 1924."
         },
         {
           "question": "What was the title of the book Hitler dictated while in prison?",
@@ -5994,8 +6008,10 @@ export default {
             "Mein Kampf / My Struggle"
           ],
           "answer": "Mein Kampf / My Struggle",
+          "explanation": "Dictated to deputy Rudolf Hess, Mein Kampf outlined Hitler's core racial doctrines, anti-Semitism, and foreign policy quest for Lebensraum.",
           "q": "What was the title of the book Hitler dictated while in prison?",
-          "a": "Mein Kampf / My Struggle"
+          "a": "Mein Kampf / My Struggle",
+          "explanation": "Dictated to deputy Rudolf Hess, Mein Kampf outlined Hitler's core racial doctrines, anti-Semitism, and foreign policy quest for Lebensraum."
         },
         {
           "question": "What specific Nazi term was used in Hitler's book to describe the 'master race' of Germanic peoples?",
@@ -6006,8 +6022,10 @@ export default {
             "Teutonic"
           ],
           "answer": "Aryan",
+          "explanation": "Hitler pseudoscientifically classified Aryans as the sole 'culture-founders', claiming all progress required preserving racial purity against intermarriage.",
           "q": "What specific Nazi term was used in Hitler's book to describe the 'master race' of Germanic peoples?",
-          "a": "Aryan"
+          "a": "Aryan",
+          "explanation": "Hitler pseudoscientifically classified Aryans as the sole 'culture-founders', claiming all progress required preserving racial purity against intermarriage."
         },
         {
           "question": "What does the term 'Lebensraum' mean, as outlined in Mein Kampf?",
@@ -6018,8 +6036,10 @@ export default {
             "Breathing room - the need to eliminate the Treaty of Versailles"
           ],
           "answer": "Living space - the need to expand Germany's borders into Eastern Europe",
+          "explanation": "Hitler planned to conquer Poland, Ukraine, and western Russia to resettle German families and enslave Slavic populations.",
           "q": "What does the term 'Lebensraum' mean, as outlined in Mein Kampf?",
-          "a": "Living space - the need to expand Germany's borders into Eastern Europe"
+          "a": "Living space - the need to expand Germany's borders into Eastern Europe",
+          "explanation": "Hitler planned to conquer Poland, Ukraine, and western Russia to resettle German families and enslave Slavic populations."
         },
         {
           "question": "What major strategic lesson did Hitler learn from the failure of the Munich Putsch?",
@@ -6030,8 +6050,10 @@ export default {
             "That they should have attacked Berlin first instead of Munich"
           ],
           "answer": "That the Nazis had to win power legally through elections, not through violent revolution",
+          "explanation": "Known as the Legalitätsprinzip, Hitler resolved to destroy Weimar democracy from within using parliamentary elections and mass propaganda.",
           "q": "What major strategic lesson did Hitler learn from the failure of the Munich Putsch?",
-          "a": "That the Nazis had to win power legally through elections, not through violent revolution"
+          "a": "That the Nazis had to win power legally through elections, not through violent revolution",
+          "explanation": "Known as the Legalitätsprinzip, Hitler resolved to destroy Weimar democracy from within using parliamentary elections and mass propaganda."
         },
         {
           "question": "What title was given to the regional party chiefs appointed to run the 35 party districts (Gaue) across Germany?",
@@ -6068,8 +6090,10 @@ export default {
             "1928"
           ],
           "answer": "1925",
+          "explanation": "Formed in 1925 as Hitler's elite personal bodyguard, the SS swore loyalty oaths directly to the Führer rather than the broader party.",
           "q": "In what year did Hitler establish the SS (Schutzstaffel)?",
-          "a": "1925"
+          "a": "1925",
+          "explanation": "Formed in 1925 as Hitler's elite personal bodyguard, the SS swore loyalty oaths directly to the Führer rather than the broader party."
         },
         {
           "question": "Why did Hitler create the SS when he already had the SA?",
@@ -6080,8 +6104,10 @@ export default {
             "Because the SA was disbanded under the terms of the Dawes Plan"
           ],
           "answer": "He needed an elite bodyguard that was unquestionably loyal only to him, unlike the SA which was loyal to Ernst Röhm",
+          "explanation": "Ernst Röhm's SA was rowdy, semi-autonomous, and heavily loyal to Röhm, prompting Hitler to establish the black-uniformed SS as a fanatically loyal private cadre.",
           "q": "Why did Hitler create the SS when he already had the SA?",
-          "a": "He needed an elite bodyguard that was unquestionably loyal only to him, unlike the SA which was loyal to Ernst Röhm"
+          "a": "He needed an elite bodyguard that was unquestionably loyal only to him, unlike the SA which was loyal to Ernst Röhm",
+          "explanation": "Ernst Röhm's SA was rowdy, semi-autonomous, and heavily loyal to Röhm, prompting Hitler to establish the black-uniformed SS as a fanatically loyal private cadre."
         },
         {
           "question": "What personal ideological manifesto did Hitler dictate to Rudolf Hess while imprisoned at Landsberg Fortress in 1924?",
@@ -6105,8 +6131,10 @@ export default {
             "1929"
           ],
           "answer": "1926",
+          "explanation": "Hitler convened the Bamberg Conference in February 1926 to assert his absolute control over rival party factions in northern industrial cities.",
           "q": "In what year was the Bamberg Conference held?",
-          "a": "1926"
+          "a": "1926",
+          "explanation": "Hitler convened the Bamberg Conference in February 1926 to assert his absolute control over rival party factions in northern industrial cities."
         },
         {
           "question": "Which key figure did Hitler successfully win over from the 'socialist' wing at the Bamberg Conference?",
@@ -6117,8 +6145,10 @@ export default {
             "Heinrich Himmler"
           ],
           "answer": "Joseph Goebbels",
+          "explanation": "Goebbels abandoned Gregor Strasser's socialist-leaning wing after Hitler praised his talent and appointed him Gauleiter of Berlin in 1926.",
           "q": "Which key figure did Hitler successfully win over from the 'socialist' wing at the Bamberg Conference?",
-          "a": "Joseph Goebbels"
+          "a": "Joseph Goebbels",
+          "explanation": "Goebbels abandoned Gregor Strasser's socialist-leaning wing after Hitler praised his talent and appointed him Gauleiter of Berlin in 1926."
         },
         {
           "question": "How many seats did the Nazi Party win in the 1928 Reichstag elections?",
@@ -6129,8 +6159,10 @@ export default {
             "12 seats"
           ],
           "answer": "12 seats",
+          "explanation": "The Nazis polled a mere 2.6% of the national vote in 1928, marginalized by the Weimar Republic's economic recovery and cultural flourishing.",
           "q": "How many seats did the Nazi Party win in the 1928 Reichstag elections?",
-          "a": "12 seats"
+          "a": "12 seats",
+          "explanation": "The Nazis polled a mere 2.6% of the national vote in 1928, marginalized by the Weimar Republic's economic recovery and cultural flourishing."
         },
         {
           "question": "What northern socialist leader's faction did Hitler crush at the Bamberg Conference in February 1926?",
@@ -6150,6 +6182,7 @@ export default {
         {
           "q": "In what month and year did the Munich Putsch take place?",
           "a": "November 1923",
+          "explanation": "Hitler sought to exploit the hyperinflation crisis and passive resistance in the Ruhr, marching on Munich on 8–9 November 1923.",
           "distractors": [
             "January 1919",
             "August 1924",
@@ -6159,6 +6192,7 @@ export default {
         {
           "q": "Name the three men who made up the 'Bavarian Triumvirate' that Hitler tried to hijack.",
           "a": "Gustav von Kahr, Otto von Lossow, Hans von Seisser",
+          "explanation": "State Commissioner Kahr, Army Commander Lossow, and Police Chief Seisser initially agreed under armed threat, but alerted the authorities as soon as they left the beer hall.",
           "distractors": [
             "Erich Ludendorff, Paul von Hindenburg, Wilhelm Groener",
             "Friedrich Ebert, Philipp Scheidemann, Matthias Erzberger",
@@ -6168,6 +6202,7 @@ export default {
         {
           "q": "Which famous First World War general supported Hitler during the Munich Putsch?",
           "a": "General Erich Ludendorff",
+          "explanation": "Ludendorff's national military fame gave the putsch vital public prestige, marching at the front of the column towards the Feldherrnhalle.",
           "distractors": [
             "General Paul von Hindenburg",
             "General Wilhelm Groener",
@@ -6177,6 +6212,7 @@ export default {
         {
           "q": "How many Nazis were killed in the firefight with the police during the Putsch?",
           "a": "14",
+          "explanation": "Bavarian police opened fire on the marchers at Odeonsplatz, killing 14 putschists and 4 state policemen, instantly breaking the coup.",
           "distractors": [
             "2",
             "100",
@@ -6186,6 +6222,7 @@ export default {
         {
           "q": "What serious criminal charge was Hitler put on trial for in early 1924?",
           "a": "High Treason",
+          "explanation": "High treason legally carried the death penalty or life imprisonment under the Weimar Penal Code, but conservative judges granted Hitler extraordinary leniency.",
           "distractors": [
             "Murder",
             "Theft of government property",
@@ -6195,6 +6232,7 @@ export default {
         {
           "q": "Why did Hitler receive such a lenient sentence (5 years) at his trial?",
           "a": "The Weimar judges were right-wing and sympathised with his nationalist, anti-Weimar views",
+          "explanation": "Presiding Judge Georg Neithardt openly sympathised with Hitler's anti-Weimar nationalism, allowing him to turn the trial into a political propaganda stage and granting him parole after just nine months.",
           "distractors": [
             "He successfully convinced the jury he wasn't there",
             "He bribed the judges with money stolen from the beer hall",
@@ -6204,6 +6242,7 @@ export default {
         {
           "q": "How long did Hitler actually spend in Landsberg Prison?",
           "a": "Nine months",
+          "explanation": "Hitler served less than a fifth of his nominal five-year sentence in comfortable fortress confinement before early release in December 1924.",
           "distractors": [
             "Five years",
             "Two weeks",
@@ -6213,6 +6252,7 @@ export default {
         {
           "q": "What was the title of the book Hitler dictated while in prison?",
           "a": "Mein Kampf / My Struggle",
+          "explanation": "Dictated to deputy Rudolf Hess, Mein Kampf outlined Hitler's core racial doctrines, anti-Semitism, and foreign policy quest for Lebensraum.",
           "distractors": [
             "Das Kapital",
             "The 25-Point Programme",
@@ -6222,6 +6262,7 @@ export default {
         {
           "q": "What specific Nazi term was used in Hitler's book to describe the 'master race' of Germanic peoples?",
           "a": "Aryan",
+          "explanation": "Hitler pseudoscientifically classified Aryans as the sole 'culture-founders', claiming all progress required preserving racial purity against intermarriage.",
           "distractors": [
             "Nordic",
             "Prussian",
@@ -6231,6 +6272,7 @@ export default {
         {
           "q": "What does the term 'Lebensraum' mean, as outlined in Mein Kampf?",
           "a": "Living space - the need to expand Germany's borders into Eastern Europe",
+          "explanation": "Hitler planned to conquer Poland, Ukraine, and western Russia to resettle German families and enslave Slavic populations.",
           "distractors": [
             "Master race - the need to purify German blood",
             "Living standards - the need to improve factory conditions",
@@ -6240,6 +6282,7 @@ export default {
         {
           "q": "What major strategic lesson did Hitler learn from the failure of the Munich Putsch?",
           "a": "That the Nazis had to win power legally through elections, not through violent revolution",
+          "explanation": "Known as the Legalitätsprinzip, Hitler resolved to destroy Weimar democracy from within using parliamentary elections and mass propaganda.",
           "distractors": [
             "That the SA was too weak and needed to be replaced immediately",
             "That they should have attacked Berlin first instead of Munich",
@@ -6267,6 +6310,7 @@ export default {
         {
           "q": "In what year did Hitler establish the SS (Schutzstaffel)?",
           "a": "1925",
+          "explanation": "Formed in 1925 as Hitler's elite personal bodyguard, the SS swore loyalty oaths directly to the Führer rather than the broader party.",
           "distractors": [
             "1923",
             "1933",
@@ -6276,6 +6320,7 @@ export default {
         {
           "q": "Why did Hitler create the SS when he already had the SA?",
           "a": "He needed an elite bodyguard that was unquestionably loyal only to him, unlike the SA which was loyal to Ernst Röhm",
+          "explanation": "Ernst Röhm's SA was rowdy, semi-autonomous, and heavily loyal to Röhm, prompting Hitler to establish the black-uniformed SS as a fanatically loyal private cadre.",
           "distractors": [
             "Because the SA had all been arrested after the Munich Putsch",
             "Because the SA were seen as too weak and cowardly",
@@ -6294,6 +6339,7 @@ export default {
         {
           "q": "In what year was the Bamberg Conference held?",
           "a": "1926",
+          "explanation": "Hitler convened the Bamberg Conference in February 1926 to assert his absolute control over rival party factions in northern industrial cities.",
           "distractors": [
             "1924",
             "1929",
@@ -6303,6 +6349,7 @@ export default {
         {
           "q": "Which key figure did Hitler successfully win over from the 'socialist' wing at the Bamberg Conference?",
           "a": "Joseph Goebbels",
+          "explanation": "Goebbels abandoned Gregor Strasser's socialist-leaning wing after Hitler praised his talent and appointed him Gauleiter of Berlin in 1926.",
           "distractors": [
             "Gregor Strasser",
             "Ernst Röhm",
@@ -6312,6 +6359,7 @@ export default {
         {
           "q": "How many seats did the Nazi Party win in the 1928 Reichstag elections?",
           "a": "12 seats",
+          "explanation": "The Nazis polled a mere 2.6% of the national vote in 1928, marginalized by the Weimar Republic's economic recovery and cultural flourishing.",
           "distractors": [
             "32 seats",
             "107 seats",
@@ -8569,7 +8617,7 @@ export default {
             "answer": "An agreement accepting western borders."
           },
           {
-            "question": "Why did the French invade the Ruhr?",
+            "question": "In 1923, why did French and Belgian troops invade the Ruhr?",
             "answer": "Missed reparation payments."
           },
           {

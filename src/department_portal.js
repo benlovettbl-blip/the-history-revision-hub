@@ -252,14 +252,15 @@ const UNIT_HEALTH_DATA = [
     year: 'Key Stage 3',
     ks: 'KS3 Core',
     uid: 'great_war_part2',
-    name: 'The Great War 1914–1918 (Part 2: Somme & Armistice)',
-    enquiries: '7 Enquiries',
-    hours: '14 Hours',
-    workbookText: '20-Page Pupil Workbook',
+    name: 'The Course of the Great War (1914–1918)',
+    enquiries: '5 Enquiries',
+    hours: '10 Hours',
+    workbookText: '16-Page Pupil Workbook',
     textbookText: '12-Page Master Textbook',
     mapText: 'Somme & Ypres Salient Battlefields',
     workbookPdf: '/pdfs/great_war_part2_pupil_workbook.pdf',
     textbookPdf: '/pdfs/great_war_part2_textbook.pdf',
+    combinedPdf: '/pdfs/The_Course_of_the_Great_War_Combined_Master_Scholar_Workbook.pdf',
   },
   {
     year: 'Key Stage 3',
@@ -614,6 +615,10 @@ function renderTrackerTab(container) {
                       <a href="${u.textbookPdf}" target="_blank" title="Download Master Textbook (PDF)" style="padding: 6px 10px; background: #475569; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
                         <i class="fa-solid fa-book-open"></i> TB
                       </a>
+                      ${u.combinedPdf ? `
+                      <a href="${u.combinedPdf}" target="_blank" title="Download 24-Page Combined Workbook (PDF)" style="padding: 6px 10px; background: #4f46e5; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
+                        <i class="fa-solid fa-layer-group"></i> 24P
+                      </a>` : ''}
                       <button type="button" onclick="window.switchView('lessons', '${u.uid}')" title="Launch Interactive Unit" style="padding: 6px 10px; background: #059669; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.75rem; font-weight: 700;">
                         <i class="fa-solid fa-play"></i>
                       </button>
@@ -1205,6 +1210,10 @@ function renderCurriculumTab(container) {
             <a href="${currentUnit.workbookPdf}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: #1e3a8a; color: #ffffff; border: 1.5px solid #1e3a8a; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; box-shadow: 0 2px 6px rgba(30,58,138,0.2);">
               <i class="fa-solid fa-file-pen"></i> Pupil Workbook (PDF)
             </a>
+            ${currentUnit.combinedPdf ? `
+            <a href="${currentUnit.combinedPdf}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: #4f46e5; color: #ffffff; border: 1.5px solid #4f46e5; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; box-shadow: 0 2px 6px rgba(79,70,229,0.25);" title="Download 24-Page Combined Master Scholar Workbook (PDF)">
+              <i class="fa-solid fa-layer-group"></i> Combined Workbook (24p PDF)
+            </a>` : ''}
             <button type="button" onclick="window.switchView('curriculum')" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #eff6ff; color: #1e40af; border: 1.5px solid #bfdbfe; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: background 0.15s ease;">
               <i class="fa-solid fa-table-columns"></i> Whole-School Progression Map &rarr;
             </button>

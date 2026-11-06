@@ -10269,8 +10269,8 @@ export default {
           "explanation": "The campaign aimed to destroy North Vietnamese infrastructure and disrupt supply lines to the South. This bombing campaign failed to break North Vietnam's resolve or stop the flow of supplies to the South."
         },
         {
-          "question": "What was the primary goal of Operation Rolling Thunder?",
-          "q": "What was the primary goal of Operation Rolling Thunder?",
+          "question": "Launched in 1965 during the Vietnam War, what was the primary goal of Operation Rolling Thunder?",
+          "q": "Launched in 1965 during the Vietnam War, what was the primary goal of Operation Rolling Thunder?",
           "options": [
             "To clear large areas of jungle using chemical defoliants like Agent Blue",
             "To completely desegregate all military training bases inside the United States",
@@ -10889,7 +10889,7 @@ export default {
             "answer": "The Resolution gave President Johnson the authority to take all..."
           },
           {
-            "question": "What was the goal of Operation Rolling Thunder?",
+            "question": "During the Vietnam War, what was the primary goal of Operation Rolling Thunder (1965–1968)?",
             "answer": "The goal of Operation Rolling Thunder was to bomb North Vietnam and..."
           },
           {
@@ -12278,8 +12278,8 @@ export default {
           "explanation": "Vietnamisation aimed to reduce US ground casualties and shift the military burden to the ARVN forces. This policy aimed to quiet anti-war protests at home, but left South Vietnam highly vulnerable to North Vietnamese forces."
         },
         {
-          "question": "What was the name of the foreign policy doctrine declaring that US allies must provide their own ground troops?",
-          "q": "What was the name of the foreign policy doctrine declaring that US allies must provide their own ground troops?",
+          "question": "Announced in 1969 regarding the Vietnam War, what foreign policy doctrine declared that US allies must provide their own ground troops?",
+          "q": "Announced in 1969 regarding the Vietnam War, what foreign policy doctrine declared that US allies must provide their own ground troops?",
           "options": [
             "Carter Doctrine",
             "Eisenhower Doctrine",
@@ -12941,7 +12941,7 @@ export default {
             "answer": "Nixon ordered the invasion of Cambodia to destroy Vietcong sanctuaries and..."
           },
           {
-            "question": "Why did Operation Lam Son 719 in Laos fail?",
+            "question": "During the Vietnam War in 1971, why did Operation Lam Son 719 in Laos fail?",
             "answer": "Operation Lam Son 719 failed because the South Vietnamese army was..."
           },
           {
@@ -15466,8 +15466,8 @@ export default {
           "explanation": "Despite over a decade of military involvement and billions of dollars spent, the Fall of Saigon and the unification of Vietnam under a communist government represented a clear defeat for the US policy of containment."
         },
         {
-          "question": "What prominent building in Saigon became the iconic site of helicopter evacuations during Operation Frequent Wind?",
-          "q": "What prominent building in Saigon became the iconic site of helicopter evacuations during Operation Frequent Wind?",
+          "question": "During the fall of Saigon in April 1975, what prominent building became the iconic site of helicopter evacuations during Operation Frequent Wind?",
+          "q": "During the fall of Saigon in April 1975, what prominent building became the iconic site of helicopter evacuations during Operation Frequent Wind?",
           "options": [
             "US Embassy roof",
             "Tân Sơn Nhất Airport runway",

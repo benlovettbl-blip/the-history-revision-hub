@@ -28,6 +28,7 @@ const pdfParse = require('pdf-parse');
 const {
   renderStandardFrontCover,
   renderStandardBackCover,
+  renderVersoLessonQr,
 } = require('./components/render_standard_cover.cjs');
 const { auditPageBudget, printSpaceAuditReport } = require('./audit_page_budget.cjs');
 const {
@@ -175,18 +176,21 @@ function renderSpinePage(cfg, pageNum, quip) {
     <div class="page-body-full">
       
       <!-- Lesson Header with Inquiry Question Title -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
-            ${keyTopicBadge} &bull; LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            EDEXCEL GCSE (9–1) HISTORY &bull; PAPER 3 (1HI0/33)
-          </span>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
+              ${keyTopicBadge} &bull; LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              EDEXCEL GCSE (9–1) HISTORY &bull; PAPER 3 (1HI0/33)
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 12.2pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.2;">
+            ${enquiryQuestion}
+          </h2>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.2pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.2;">
-          ${enquiryQuestion}
-        </h2>
+        ${renderVersoLessonQr({ unitId: 'usa', lessonId: cfg.id })}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -1085,8 +1089,8 @@ function buildUsaKeyTopicWorkbook(ktId) {
     enquiries: enquiryConfigs.map((l) => ({
       num: l.lessonNum,
       code: `KT${ktNum}.${l.lessonNum}`,
-      title:
-        l.enquiryQuestion.length > 55 ? l.enquiryQuestion.slice(0, 52) + '...' : l.enquiryQuestion,
+      title: l.title.replace(/^KT\s*\d+\.\d+:\s*/, ''),
+      enquiryQuestion: l.enquiryQuestion,
       doNowMarks: 10,
       q1aMarks: 4,
       q1bMarks: 12,

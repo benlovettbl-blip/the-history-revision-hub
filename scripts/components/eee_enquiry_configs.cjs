@@ -76,7 +76,7 @@ const EEE_ENQUIRY_CONFIGS = {
           title: 'Foreign Threats: France & Scotland',
           bullets: [
             'Loss of Calais (January 1558)',
-            'Mary of Guise French Troops',
+            'French Garrison Troops in Scotland',
             'Quartered English Royal Arms',
           ],
           focusClue:
@@ -365,7 +365,7 @@ const EEE_ENQUIRY_CONFIGS = {
           dates: '1566',
           title: 'The Crucifix & Vestments Controversy',
           bullets: [
-            'Parker’s Book of Advertisements',
+            'Compulsory Clergy Surplices',
             'White Linen Surplice Requirement',
             'Thirty-Seven London Priests Sacked',
           ],
@@ -388,7 +388,7 @@ const EEE_ENQUIRY_CONFIGS = {
           title: 'Foreign Threats: France & The Netherlands',
           bullets: [
             'French Wars of Religion (1562)',
-            '10,000 Spanish Troops under Alba',
+            '10,000 Spanish Troops in Netherlands',
             'Council of Troubles Brutality',
           ],
           focusClue:
@@ -517,7 +517,7 @@ const EEE_ENQUIRY_CONFIGS = {
           title: 'Mary’s Claim to the English Throne',
           bullets: [
             'Margaret Tudor Granddaughter Lineage',
-            'Marriage to Henry Lord Darnley',
+            'Suspicious Murder of Mary’s Husband',
             'Legitimate Catholic Figurehead',
           ],
           focusClue:
@@ -528,7 +528,7 @@ const EEE_ENQUIRY_CONFIGS = {
           title: 'The Murder of Lord Darnley',
           bullets: [
             'Kirk o’ Field Gunpowder Explosion',
-            'Marriage to Earl of Bothwell',
+            'Scottish Nobility Force Abdication',
             'Scottish Protestant Rebellion',
           ],
           focusClue:
@@ -700,7 +700,7 @@ const EEE_ENQUIRY_CONFIGS = {
           dates: '1583–1584',
           title: 'The Throckmorton Plot & Bond of Association',
           bullets: [
-            'French Duke of Guise Invasion Plan',
+            'French Catholic Invasion Plan',
             'Philip II Provides 200,000 Ducats',
             'Bond of Association Traitor Oath',
           ],
@@ -1185,7 +1185,7 @@ const EEE_ENQUIRY_CONFIGS = {
           dates: '8 AUG 1588',
           title: 'The Battle of Gravelines',
           bullets: [
-            'Hawkins’ Low Race-Built Galleons',
+            'Fast English Race-Built Galleons',
             'Rapid-Fire Broadside Gunnery Close Range',
             'Three Galleons Sunk & Fleet Scattered',
           ],

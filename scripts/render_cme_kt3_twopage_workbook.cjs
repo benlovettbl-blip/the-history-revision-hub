@@ -4,6 +4,7 @@ const QRCode = require('qrcode');
 const {
   renderStandardFrontCover,
   renderStandardBackCover,
+  renderVersoLessonQr,
 } = require('./components/render_standard_cover.cjs');
 
 function generateQrSvg(url) {
@@ -417,12 +418,12 @@ const kt3Configs = [
         questionHeading:
           'Why did Ariel Sharon expand the invasion far beyond the cabinet’s 40km limit?',
         bullets: [
-          'London Ambush on Ambassador Argov',
+          'London Ambush on Israeli Ambassador',
           'Secret Drive to Capture Capital',
           'Goal to Destroy Armed Leadership',
         ],
         keywords: [
-          'London Ambush on Ambassador Argov',
+          'London Ambush on Israeli Ambassador',
           'Secret Drive to Capture Capital',
           'Goal to Destroy Armed Leadership',
         ],
@@ -517,7 +518,7 @@ const kt3Configs = [
         },
         {
           col: '2. PHASE 2: INVASION & SIEGE OF BEIRUT (1982)',
-          text: 'Explain the Argov shooting pretext, Sharon launching Operation Peace for Galilee, driving 60 miles to Beirut, 10-week siege, and PLO evacuation to Tunis.',
+          text: 'Explain the London ambassador shooting pretext, Sharon launching Operation Peace for Galilee, driving 60 miles to Beirut, 10-week siege, and PLO evacuation to Tunis.',
         },
         {
           col: '3. PHASE 3: SABRA-SHATILA & FALLOUT (1982–83)',
@@ -527,7 +528,7 @@ const kt3Configs = [
       connectives:
         'One main event was that... • For example, ... • This led directly to... • The next major development was... • In particular, ... • Overall, this culminated in... because...',
       wordBank:
-        'Operation Litani (1978) • Litani River • UNIFIL (Res 425) • South Lebanon Army • Ariel Sharon • Operation Peace for Galilee (1982) • Siege of Beirut • Philip Habib • PLO evacuation to Tunis • Bachir Gemayel • Sabra and Shatila • Kahan Commission',
+        'Operation Litani (1978) • Litani River • UNIFIL (Res 425) • South Lebanon Army • Ariel Sharon • Operation Peace for Galilee (1982) • Siege of Beirut • PLO evacuation to Tunis • Bachir Gemayel • Sabra and Shatila • Kahan Commission',
       timelineMission:
         'Turn to Pages 2–3 (Key Topic 3.3). In Milestone 4, sketch the IDF tank columns entering Beirut and annotate the Kahan Commission finding of "personal responsibility" against Sharon.',
     },
@@ -1338,21 +1339,24 @@ function buildCmeKt3TwoPageWorkbook(unitData, period) {
     <div class="page-body-full">
       
       <!-- Lesson Header with Inquiry Question Title -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; border: 1.2px solid #000000; padding: 1px 6px; border-radius: 2px;">
-            KEY TOPIC 3.${cfg.lessonNum} &bull; ENQUIRY LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            EDEXCEL PAPER 2 (1HI0/2B) &bull; PERIOD STUDY
-          </span>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; border: 1.2px solid #000000; padding: 1px 6px; border-radius: 2px;">
+              KEY TOPIC 3.${cfg.lessonNum} &bull; ENQUIRY LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              EDEXCEL PAPER 2 (1HI0/2B) &bull; PERIOD STUDY
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.18;">
+            ${cfg.inquiryQuestion}
+          </h2>
+          <div style="font-family: 'Georgia', serif; font-size: 7.8pt; font-style: italic; color: #222222; line-height: 1.18;">
+            ${cfg.subTitle}
+          </div>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.18;">
-          ${cfg.inquiryQuestion}
-        </h2>
-        <div style="font-family: 'Georgia', serif; font-size: 7.8pt; font-style: italic; color: #222222; line-height: 1.18;">
-          ${cfg.subTitle}
-        </div>
+        ${renderVersoLessonQr({ unitId: 'cme_new', lessonId: cfg.id })}
       </div>
 
       <!-- 5-Stage Chronological Inquiry Spine with Full-Width Question Banners (KS3 Golden Standard for GCSE) -->
@@ -1608,6 +1612,7 @@ function buildCmeKt3TwoPageWorkbook(unitData, period) {
         num: 1,
         code: 'KT3.1',
         title: 'Shuttle Diplomacy & Sadat in Jerusalem',
+        enquiryQuestion: 'How did historic enemies Egypt and Israel achieve a bilateral peace agreement at Camp David?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1619,6 +1624,7 @@ function buildCmeKt3TwoPageWorkbook(unitData, period) {
         num: 2,
         code: 'KT3.2',
         title: 'Camp David & Treaty of Washington',
+        enquiryQuestion: 'Why did the 1979 peace treaty alienate the wider Arab world and fail to resolve the Palestinian issue?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1630,6 +1636,7 @@ function buildCmeKt3TwoPageWorkbook(unitData, period) {
         num: 3,
         code: 'KT3.3',
         title: 'Lebanon, Litani & Sabra-Shatila',
+        enquiryQuestion: 'How did the 1982 Israeli invasion of Lebanon and the Sabra and Shatila massacres trigger global outrage?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1641,6 +1648,7 @@ function buildCmeKt3TwoPageWorkbook(unitData, period) {
         num: 4,
         code: 'KT3.4',
         title: 'First Intifada & Superpower Shifts',
+        enquiryQuestion: 'How did the grassroots Palestinian Intifada and the end of the Cold War compel Israel and the PLO to negotiate?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1652,6 +1660,7 @@ function buildCmeKt3TwoPageWorkbook(unitData, period) {
         num: 5,
         code: 'KT3.5',
         title: 'Oslo Accords, Oslo II & Rabin Death',
+        enquiryQuestion: 'Why did the Oslo Accords bring historic hope for peace, yet culminate in the assassination of Yitzhak Rabin?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1774,4 +1783,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { buildCmeKt3TwoPageWorkbook };
+module.exports = { buildCmeKt3TwoPageWorkbook, kt3Configs };

@@ -81,6 +81,7 @@ function cleanProse(text) {
   if (!text) return '';
   return text
     .replace(/<span\s+class=["']para-ref["']>[^<]*<\/span>\s*/gi, '')
+    .replace(/\s*\(\s*<span\s+class=["']archival-meta-tag["']>[^<]*<\/span>\s*\)/gi, '')
     .replace(/<span\s+class=["']archival-meta-tag["']>[^<]*<\/span>\s*/gi, '')
     .replace(/<span\s+class=["']para-ref-pill["']>[^<]*<\/span>\s*/gi, '')
     .replace(/\[\d+\.\d+\]\s*/g, '')
@@ -89,10 +90,8 @@ function cleanProse(text) {
     .replace(/,\s*\)/g, ')')
     .replace(/\(\s*,\s*/g, '(')
     .replace(/\(\s*\)/g, '')
+    .replace(/\s+([,.;—])/g, '$1')
     .replace(/\s{2,}/g, ' ')
-    .replace(/\\*\\*\\*(.*?)\\*\\*\\*/g, '<strong><em></em></strong>')
-    .replace(/\\*\\*(.*?)\\*\\*/g, '<strong></strong>')
-    .replace(/\\*(.*?)\\*/g, '<em></em>')
     .trim();
 }
 
@@ -1794,8 +1793,13 @@ async function renderEra(eraKey, unitData, browser) {
   const page = await browser.newPage();
   await page.setViewport({ width: 794, height: 1123, deviceScaleFactor: 2 });
   await page.emulateMediaType('print');
-  await page.setContent(html, { waitUntil: 'domcontentloaded' });
-  await page.evaluateHandle('document.fonts.ready');
+  await page.setContent(html, { waitUntil: 'domcontentloaded', timeout: 60000 });
+  try {
+    await Promise.race([
+      page.evaluateHandle('document.fonts.ready'),
+      new Promise((r) => setTimeout(r, 2000)),
+    ]);
+  } catch (e) {}
 
   // Evaluate auto-fit engines
   await page.evaluate(() => {
@@ -1847,7 +1851,7 @@ async function main() {
   const browser = await puppeteer.launch({
     headless: 'new',
     executablePath: chromePath,
-    args: ['--no-sandbox', '--disable-setuid-sandbox', '--allow-file-access-from-files'],
+    args: ['--allow-file-access-from-files', '--disable-web-security', '--no-sandbox', '--disable-setuid-sandbox'],
   });
 
   try {

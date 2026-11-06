@@ -4,6 +4,7 @@ const QRCode = require('qrcode');
 const {
   renderStandardFrontCover,
   renderStandardBackCover,
+  renderVersoLessonQr,
 } = require('./components/render_standard_cover.cjs');
 
 function generateQrSvg(url) {
@@ -575,12 +576,12 @@ const kt2Configs = [
         date: 'September 1970',
         questionHeading: 'Why did the PFLP hijack Western airliners to Dawson’s Field in 1970?',
         bullets: [
-          'George Habash & Marxist Faction',
+          'PFLP Airline Hijacking Faction',
           'Blowing Up Jets for World Television',
           'Humiliating King Hussein’s Sovereignty',
         ],
         keywords: [
-          'George Habash & Marxist Faction',
+          'PFLP Airline Hijacking Faction',
           'Blowing Up Jets for World Television',
           'Humiliating King Hussein’s Sovereignty',
         ],
@@ -705,7 +706,7 @@ const kt2Configs = [
     inquiryQuestion: 'How did the Yom Kippur War shatter Israeli invincibility in October 1973?',
     subTitle: 'Key Topic 2.5: The War of Attrition & The Yom Kippur War (1969–1973)',
     title: 'KT2.5: The War of Attrition & The Yom Kippur War (1969–1973)',
-    specAnchor: `<strong>Causes of the Yom Kippur War (1973)</strong>: <strong>Sadat’s diplomacy and Egyptian-Syrian desire to regain lost land</strong>; <strong>Operation Badr surprise crossing on Yom Kippur</strong>; <strong>Syrian offensive on Mount Hermon</strong>; the <strong>Israeli counter-offensive (Sharon crossing the Suez Canal)</strong>; <strong>superpower resupply airlifts (US Operation Nickel Grass vs Soviet airlift)</strong>; <strong>nuclear alert DEFCON 3</strong>; the <strong>ceasefire (UN Res 338)</strong>; and the <strong>OPEC oil embargo</strong>.`,
+    specAnchor: `<strong>Causes of the Yom Kippur War (1973)</strong>: <strong>Sadat’s diplomacy and Egyptian-Syrian desire to regain lost land</strong>; <strong>Operation Badr surprise crossing on Yom Kippur</strong>; <strong>Syrian offensive on Mount Hermon</strong>; the <strong>Israeli counter-offensive (Sharon crossing the Suez Canal)</strong>; <strong>superpower resupply airlifts (US US Emergency Arms Airlift vs Soviet airlift)</strong>; <strong>nuclear alert DEFCON 3</strong>; the <strong>ceasefire (UN Res 338)</strong>; and the <strong>OPEC oil embargo</strong>.`,
     stages: [
       {
         step: 1,
@@ -747,12 +748,12 @@ const kt2Configs = [
         questionHeading:
           'How did Egyptian and Syrian forces achieve tactical surprise on Yom Kippur?',
         bullets: [
-          'Operation Badr Holy Day Assault',
+          'Yom Kippur Holy Day Assault',
           'High-Pressure Water Monitors Breach Sand',
           '1,400 Syrian Tanks Storm the Heights',
         ],
         keywords: [
-          'Operation Badr Holy Day Assault',
+          'Yom Kippur Holy Day Assault',
           'High-Pressure Water Monitors Breach Sand',
           '1,400 Syrian Tanks Storm the Heights',
         ],
@@ -834,7 +835,7 @@ const kt2Configs = [
         {
           col: '2. PHASE 2: AIRLIFTS & COUNTER-CROSSING',
           ref: '[Textbook §2.2, §3.1 &amp; Source B]',
-          text: 'Explain massive US emergency airlift (Nickel Grass) enabling General Sharon’s armored division to counter-cross the canal and encircle Egypt’s 3rd Army.',
+          text: 'Explain massive US emergency airlift (US Emergency Arms Airlift) enabling General Sharon’s armored division to counter-cross the canal and encircle Egypt’s 3rd Army.',
         },
         {
           col: '3. PHASE 3: OIL WEAPON & AFTERMATH',
@@ -845,7 +846,7 @@ const kt2Configs = [
       connectives:
         'One main event was that... • For example, ... • This led directly to... • The next major development was... • In particular, ... • Overall, this culminated in... because...',
       wordBank:
-        'Yom Kippur War (1973) &bull; Bar-Lev Line &bull; water monitors &bull; SAM-6 missiles &bull; Golan Heights &bull; Operation Nickel Grass &bull; Ariel Sharon &bull; Third Army encirclement &bull; OPEC oil embargo &bull; DEFCON 3 &bull; Henry Kissinger',
+        'Yom Kippur War (1973) &bull; Bar-Lev Line &bull; water monitors &bull; SAM-6 missiles &bull; Golan Heights &bull; US Emergency Arms Airlift &bull; Ariel Sharon &bull; Third Army encirclement &bull; OPEC oil embargo &bull; DEFCON 3 &bull; Henry Kissinger',
       timelineMission:
         'Turn to Pages 2–3 (Key Topic 2.5). In Milestone 6, sketch the water-monitor breach of the Bar-Lev Line and the OPEC oil pipeline embargo valve.',
     },
@@ -1333,21 +1334,24 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
     <div class="page-body-full">
       
       <!-- Lesson Header with Inquiry Question Title -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; border: 1.2px solid #000000; padding: 1px 6px; border-radius: 2px;">
-            KEY TOPIC 2.${cfg.lessonNum} &bull; ENQUIRY LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            EDEXCEL PAPER 2 (1HI0/2B) &bull; PERIOD STUDY
-          </span>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; border: 1.2px solid #000000; padding: 1px 6px; border-radius: 2px;">
+              KEY TOPIC 2.${cfg.lessonNum} &bull; ENQUIRY LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              EDEXCEL PAPER 2 (1HI0/2B) &bull; PERIOD STUDY
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.18;">
+            ${cfg.inquiryQuestion}
+          </h2>
+          <div style="font-family: 'Georgia', serif; font-size: 7.8pt; font-style: italic; color: #222222; line-height: 1.18;">
+            ${cfg.subTitle}
+          </div>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.18;">
-          ${cfg.inquiryQuestion}
-        </h2>
-        <div style="font-family: 'Georgia', serif; font-size: 7.8pt; font-style: italic; color: #222222; line-height: 1.18;">
-          ${cfg.subTitle}
-        </div>
+        ${renderVersoLessonQr({ unitId: 'cme_new', lessonId: cfg.id })}
       </div>
 
       <!-- 5-Stage Chronological Inquiry Spine with Full-Width Question Banners (KS3 Golden Standard for GCSE) -->
@@ -1601,6 +1605,7 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
         num: 1,
         code: 'KT2.1',
         title: 'Cairo Conference & Water Wars',
+        enquiryQuestion: 'How did water disputes, border raids, and escalating military rhetoric make war inevitable?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1612,6 +1617,7 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
         num: 2,
         code: 'KT2.2',
         title: 'Straits of Tiran & Six Day War',
+        enquiryQuestion: 'Why was the Six-Day War decided so rapidly, and did Egyptian forces intend to fight?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1623,6 +1629,7 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
         num: 3,
         code: 'KT2.3',
         title: 'Occupied Territories & Res 242',
+        enquiryQuestion: 'How did Israel\'s capture of the occupied territories reshape diplomacy and UN Resolution 242?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1634,6 +1641,7 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
         num: 4,
         code: 'KT2.4',
         title: 'Black September & Munich 1972',
+        enquiryQuestion: 'Why did the PLO shift towards armed international struggle, hijackings, and the Munich attack?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1645,6 +1653,7 @@ function buildCmeKt2TwoPageWorkbook(unitData, period) {
         num: 5,
         code: 'KT2.5',
         title: 'Yom Kippur War & Oil Embargo',
+        enquiryQuestion: 'How did the surprise offensive of the Yom Kippur War and the OPEC oil embargo shatter assumptions?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1786,4 +1795,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { buildCmeKt2TwoPageWorkbook };
+module.exports = { buildCmeKt2TwoPageWorkbook, kt2Configs };

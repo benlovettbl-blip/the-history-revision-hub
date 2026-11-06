@@ -21,8 +21,13 @@ async function mergeMedicineMasterWorkbook() {
 
   let totalPages = 0;
   for (const period of periods) {
-    const pdfFileName = `edexcel_medicine_pupil_workbook_${period}_FINAL_V17.pdf`;
-    const pdfPath = path.join(pdfsDir, pdfFileName);
+    let pdfFileName = `edexcel_medicine_pupil_workbook_${period}_FINAL_V17.pdf`;
+    let pdfPath = path.join(pdfsDir, pdfFileName);
+
+    if (!fs.existsSync(pdfPath)) {
+      pdfFileName = `edexcel_medicine_pupil_workbook_${period}.pdf`;
+      pdfPath = path.join(pdfsDir, pdfFileName);
+    }
 
     if (!fs.existsSync(pdfPath)) {
       console.warn(`⚠️ Warning: Missing ${pdfFileName}, skipping...`);

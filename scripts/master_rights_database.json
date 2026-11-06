@@ -11174,6 +11174,20 @@
       "sources": [
         {
           "lesson_num": 0,
+          "lesson_title": "Master Retrieval & Literary Companion Front Cover Plate",
+          "source_id": "Companion Cover Plate",
+          "artifact_title": "The Menin Road (1919) by Paul Nash",
+          "date": "1919",
+          "creator": "Paul Nash (1889–1946)",
+          "repository": "Imperial War Museums, London",
+          "accession_id": "IWM Art.IWM ART 2242",
+          "rights_status": "Public Domain (Official British War Memorials Committee Commission)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.iwm.org.uk/collections/item/object/205193892",
+          "asset_path": "/images/menin_road_nash_opt.jpg"
+        },
+        {
+          "lesson_num": 0,
           "lesson_title": "Master Classroom Textbook Front Cover Plate",
           "source_id": "Textbook Cover Plate",
           "artifact_title": "Gassed (1919) by John Singer Sargent",

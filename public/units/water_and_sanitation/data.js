@@ -321,8 +321,8 @@ export default {
           "a": "Natural bubbling springs, hand-dug gravel wells, and unpolluted rivers."
         },
         {
-          "q": "What archaeological material was used to make the water pipes excavated at Fishbourne Palace?",
-          "a": "Cast lead sheets soldered into tubular conduits."
+          "q": "Which Celtic tribal queen led a major British rebellion against Roman rule in AD 60–61?",
+          "a": "Queen Boudicca (Boudica)."
         },
         {
           "q": "In what year did Emperor Claudius launch the Roman invasion of Britain?",

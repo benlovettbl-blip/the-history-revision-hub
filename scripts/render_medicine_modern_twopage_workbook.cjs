@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
-const { renderStandardFrontCover, renderStandardBackCover } = require('./components/render_standard_cover.cjs');
+const { renderStandardFrontCover, renderStandardBackCover, renderVersoLessonQr } = require('./components/render_standard_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -499,99 +499,99 @@ const modernConfigs = [
     lessonIndex: 19,
     id: 'lesson_4_5',
     keyTopicBadge: 'KEY TOPIC 4.5',
-    title: 'KT4.5: Case Study 2: Public Health & The Fight Against Lung Cancer',
+    title: 'KT4.5: Case Study 2: The Fight Against Lung Cancer (21st Century)',
     enquiryQuestion:
-      'Why has the modern fight against lung cancer required state coercion rather than laboratory cures?',
+      'Why has the 21st-century fight against lung cancer required state coercion rather than high-tech cures?',
     specAnchor:
-      'Case study: Fight against lung cancer: epidemiology of Doll and Hill (1950); diagnosis: chest X-rays, CT, bronchoscopy; treatments: surgery, radiotherapy, chemotherapy, immunotherapy; government prevention: ad bans, 2007 smoking ban, plain packs (2016).',
+      'The fight against lung cancer in the twenty-first century: diagnostic science (chest X-rays vs high-resolution CT, PET-CT, bronchoscopy); surgical and clinical treatments (VATS keyhole lobectomy, CyberKnife radiotherapy, targeted immunotherapy); compulsory government prevention (Health Act 2006, 2007 public smoking ban, 2016 plain packaging, 2024 smoke-free generation).',
     tariff: 'Question 5/6: Evaluative Essay [16+4 marks &bull; 20 mins]',
     examStem:
-      '‘Government public health legislation was the main reason for progress in combating lung cancer in the period c1950 to the present.’ How far do you agree? [16+4 marks]',
+      '‘Government action was the main reason for progress in combating lung cancer in the twenty-first century.’ How far do you agree? [16+4 marks]',
     stimulus: [
-      'Doll and Hill’s research (1950)',
-      'Technological treatments (radiotherapy, surgery, immunotherapy)',
+      'The Health Act 2006 (2007 public smoking ban)',
+      'High-tech diagnostic scans and treatments',
     ],
     connectives:
-      'On the one hand, government legislation was decisive because... &bull; For example, ... &bull; This was significant because... &bull; On the other hand, high-tech treatments mattered because... &bull; In particular, ... &bull; Overall, the most decisive factor was... because...',
+      'On the one hand, government action was decisive because... &bull; For example, ... &bull; This was significant because... &bull; On the other hand, high-tech treatments mattered because... &bull; In particular, ... &bull; Overall, the most decisive factor was... because...',
     wordBank:
-      'Richard Doll &bull; Austin Bradford Hill (1950) &bull; British Doctors Study &bull; 1965 TV ad ban &bull; 2007 public smoking ban &bull; plain packaging (2016) &bull; radiotherapy &bull; immunotherapy',
+      'CT scans &bull; PET-CT &bull; bronchoscopy &bull; biopsy &bull; VATS keyhole surgery &bull; CyberKnife radiotherapy &bull; immunotherapy (pembrolizumab) &bull; 2007 public smoking ban &bull; plain packaging (2016) &bull; Pantone 448 C',
     timelineMission:
-      'Turn to Pages 2–3 (Key Topic 4.5). In the drawing box, sketch a 1950s doctor cigarette advert and a 2016 olive-green plain pack. Annotate how state legislation slashed smoking from 65% to under 13%!',
+      'Turn to Pages 2–3 (Key Topic 4.5). In the drawing box, sketch a 21st-century CT scanner and a 2016 olive-green plain pack. Annotate how state legislation and high-tech scans combat lung cancer!',
     fourMark: {
-      type: 'Similarity',
+      type: 'Difference',
       question:
-        'Explain one way in which government intervention against lung cancer after 1965 was similar to government action in the 1875 Public Health Act. [4 marks]',
-      hint: 'Focus on both representing state intervention and compulsory legislation replacing laissez-faire.',
+        'Explain one way in which the diagnosis of lung cancer was different in the twenty-first century from diagnosis in the nineteenth century. [4 marks]',
+      hint: 'Focus on nineteenth-century doctors relying on external stethoscopes and post-mortem autopsies, whereas twenty-first-century clinicians use high-resolution CT scans and bronchoscopy to detect living tumors.',
       stems:
-        'One way government action was similar was... &bull; In 1875, Parliament... &bull; Similarly, after 1965...',
+        'One way diagnosis was different was... &bull; In the nineteenth century, ... &bull; In contrast, in the twenty-first century, ...',
     },
     leftPageQuip:
-      'Doll and Hill proved smoking caused lung cancer in 1950; Doll immediately extinguished his pipe and lived to age 92.',
+      'Despite high-tech oncology, 10-year lung cancer survival is only ~10%: statutory prevention remains far more powerful than clinical cure.',
     rightPageQuip:
-      'From TV ad bans in 1965 to plain olive-green packs in 2016: government compulsion slashed smoking from 65% to 13%.',
+      'From the 2007 indoor ban to 2016 olive-green plain packs: government compulsion plunged adult smoking from 65% in 1950 to under 13% today.',
     linedLeftQuip:
-      'Doll and Hill’s statistical epidemiology gave the British government the empirical evidence to dismantle tobacco marketing.',
+      'Early lung cancer is largely asymptomatic because lungs lack pain nerves: high-tech CT and PET scans are vital to spot minute nodules.',
     linedRightQuip:
       'Compare 1875 sewers with 2007 smoking bans: state compulsion consistently achieves greater public health impact than laissez-faire.',
     stages: [
       {
         step: 1,
-        dates: '1920s–1950',
-        title: 'The Mysterious Epidemic',
-        questionHeading: 'Why did early doctors fail to link smoking to lung cancer?',
+        dates: '2000s–Present',
+        title: 'The Diagnostic Challenge',
+        questionHeading: 'Why is early lung cancer so difficult to detect?',
         paraBadge: '[5.1]',
         bullets: [
-          'Rising lung tumours',
-          'Tarmac & fume theories',
-          'Doctor cigarette adverts',
+          'Few pain receptors',
+          'Asymptomatic growth',
+          'Late Stage 3/4 detection',
         ],
       },
       {
         step: 2,
-        dates: '1950–1954',
-        title: 'Doll & Hill’s Proof',
-        questionHeading: 'How did statistical epidemiology prove the causal link?',
+        dates: '2000s–Present',
+        title: 'High-Tech Diagnostic Scans',
+        questionHeading: 'How do CT and PET scans improve cancer detection?',
         paraBadge: '[5.2]',
         bullets: [
-          'Richard Doll & Austin Hill',
-          'British Doctors Study',
-          'Statistical proof (1950)',
+          'High-resolution CT scans',
+          'PET-CT tracer imaging',
+          'Bronchoscopy & biopsy',
         ],
       },
       {
         step: 3,
-        dates: '1962–1971',
-        title: 'Royal College & Ad Bans',
-        questionHeading: 'Why did government action encounter strong tobacco lobbying?',
+        dates: '2000s–Present',
+        title: 'Keyhole Surgery & CyberKnife',
+        questionHeading: 'How has technology reduced treatment trauma?',
         paraBadge: '[5.3]',
         bullets: [
-          '1962 RCP medical report',
-          '1965 TV ad ban',
-          'Cigarette packet warnings',
+          'VATS keyhole lobectomy',
+          'Chest cracking avoided',
+          'CyberKnife pinpoint rays',
         ],
       },
       {
         step: 4,
-        dates: '2000s',
-        title: 'Public Smoking Ban',
-        questionHeading: 'Why was passive smoking crucial in banning public smoking?',
+        dates: '2000s–Present',
+        title: 'Targeted Genetic Oncology',
+        questionHeading: 'How does immunotherapy harness the immune system?',
         paraBadge: '[5.4]',
         bullets: [
-          'Secondhand smoke risk',
-          '2007 Public smoking ban',
-          'Sales age raised to 18',
+          'Tumour DNA sequencing',
+          'Targeted pharmacotherapy',
+          'Pembrolizumab T-cell boost',
         ],
       },
       {
         step: 5,
-        dates: '2010s–Present',
-        title: 'Plain Packs & Oncology',
-        questionHeading: 'Why does low cancer survival prove prevention beats cure?',
+        dates: '2006–Present',
+        title: 'Government Statutory Action',
+        questionHeading: 'Why has state legislation proved more effective than cure?',
         paraBadge: '[5.5]',
         bullets: [
+          '2007 Public smoking ban',
           '2016 Plain packaging',
-          'CT chest screenings',
-          'Targeted immunotherapy',
+          'Smoke-free generation law',
         ],
       },
     ],
@@ -668,18 +668,21 @@ function renderSpinePage(cfg) {
     <div class="page-body-full">
       
       <!-- Lesson Header with Inquiry Question Title -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
-            ${keyTopicBadge} &bull; LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            EDEXCEL GCSE (9–1) HISTORY &bull; PAPER 1 (1HI0/11)
-          </span>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
+              ${keyTopicBadge} &bull; LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              EDEXCEL GCSE (9–1) HISTORY &bull; PAPER 1 (1HI0/11)
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 12.2pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.2;">
+            ${enquiryQuestion}
+          </h2>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.2pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.2;">
-          ${enquiryQuestion}
-        </h2>
+        ${renderVersoLessonQr({ unitId: 'edexcel_medicine', lessonId: cfg.id })}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -1176,6 +1179,7 @@ ${part1TaskLines}
     num: cfg.lessonNum,
     code: `KT4.${cfg.lessonNum}`,
     title: cfg.title.replace(/^KT\d+\.\d+:\s*/, ''),
+    enquiryQuestion: cfg.enquiryQuestion,
     doNowMarks: 10,
     q3Marks: 4,
     extType: idx === 4 ? 'Q5/6 Essay' : 'Q4 Explain',

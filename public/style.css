@@ -3041,10 +3041,10 @@ img::after {
   -webkit-backdrop-filter: blur(12px);
   border: 1.5px solid rgba(255, 255, 255, 0.22);
   border-radius: 999px;
-  padding: 6px 10px;
+  padding: 5px 8px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   flex-wrap: wrap;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
@@ -3078,10 +3078,15 @@ img::after {
   background: rgba(124, 58, 237, 0.25);
 }
 
+.launchpad-pill-group.pill-combined {
+  border: 1px solid rgba(129, 140, 248, 0.55);
+  background: rgba(79, 70, 229, 0.28);
+}
+
 .launchpad-pill-btn {
   border: none;
-  padding: 8px 14px 8px 16px;
-  font-size: 0.84rem;
+  padding: 7px 12px 7px 14px;
+  font-size: 0.83rem;
   font-weight: 700;
   color: #ffffff;
   cursor: pointer;
@@ -3110,9 +3115,13 @@ img::after {
   background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
 }
 
+.pill-combined .launchpad-pill-btn {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+}
+
 .launchpad-pill-pdf {
   border: none;
-  padding: 8px 11px;
+  padding: 7px 10px;
   font-size: 0.82rem;
   text-decoration: none;
   display: inline-flex;
@@ -3149,6 +3158,16 @@ img::after {
 
 .pill-retrieval .launchpad-pill-pdf:hover {
   background: #6d28d9;
+  color: #ffffff;
+}
+
+.pill-combined .launchpad-pill-pdf {
+  background: #3730a3;
+  color: #c7d2fe;
+}
+
+.pill-combined .launchpad-pill-pdf:hover {
+  background: #4338ca;
   color: #ffffff;
 }
 
@@ -10749,6 +10768,262 @@ body.search-modal-open {
     padding: 8px 10px !important;
   }
 }
+
+/* ==========================================================================
+   GCSE 3-MODE "DO NOW" RETRIEVAL CONTROL DECK & UNIT CHIPS
+   ========================================================================== */
+.donow-mode-deck {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 10px 0;
+  padding: 6px 12px;
+  background: #f8fafc;
+  border: 1.2px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.donow-mode-btn-group {
+  display: inline-flex;
+  align-items: center;
+  background: #e2e8f0;
+  padding: 3px;
+  border-radius: 8px;
+  gap: 3px;
+}
+
+.btn-donow-mode {
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: #475569;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.btn-donow-mode:hover {
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.btn-donow-mode.active {
+  background: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 4px rgba(2, 132, 199, 0.3);
+}
+
+.btn-donow-mode.active:hover {
+  background: #0369a1 !important;
+}
+
+.donow-unit-chips-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 10px 0;
+  padding: 8px 12px;
+  background: #f0fdf4;
+  border: 1.2px solid #bbf7d0;
+  border-radius: 8px;
+  animation: donowInlineFadeSlide 0.2s ease forwards;
+}
+
+.btn-donow-unit-chip {
+  padding: 3px 10px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  border-radius: 12px;
+  border: 1.2px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.btn-donow-unit-chip:hover {
+  border-color: #0284c7;
+  color: #0284c7;
+}
+
+.btn-donow-unit-chip.selected {
+  background: #0284c7 !important;
+  color: #ffffff !important;
+  border-color: #0284c7 !important;
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.25);
+}
+
+.donow-source-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 1.5px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-right: 4px;
+  flex-shrink: 0;
+  line-height: 1.3;
+}
+
+.btn-donow-shuffle:hover {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #94a3b8 !important;
+}
+
+/* ==========================================================================
+   GCSE DO NOW: PROGRESSIVE DISCLOSURE EXPLANATION DRAWER & JUMP PILLS
+   ========================================================================== */
+.donow-answer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  background: #eff6ff;
+  border: 1.2px solid #93c5fd;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  text-align: left;
+  line-height: 1.3;
+  word-break: break-word;
+  box-shadow: 0 1px 2px rgba(37, 99, 235, 0.08);
+}
+
+.donow-answer-badge.has-explanation {
+  cursor: pointer;
+  transition: all 0.16s ease;
+  user-select: none;
+}
+
+.donow-answer-badge.has-explanation:hover {
+  background: #dbeafe;
+  border-color: #60a5fa;
+  box-shadow: 0 2px 5px rgba(37, 99, 235, 0.16);
+  transform: translateY(-0.5px);
+}
+
+.donow-answer-badge.has-explanation.expanded {
+  background: #dbeafe;
+  border-color: #2563eb;
+}
+
+.donow-exp-caret {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-donow-jump-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2.5px 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: #f8fafc;
+  border: 1.1px solid #cbd5e1;
+  border-radius: 12px;
+  color: #0369a1;
+  cursor: pointer;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.btn-donow-jump-pill:hover {
+  background: #e0f2fe;
+  border-color: #0284c7;
+  color: #0284c7;
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.15);
+  transform: translateY(-0.5px);
+}
+
+.donow-explanation-drawer {
+  margin-top: 6px;
+  padding: 8px 12px;
+  background: #f8fafc;
+  border-left: 3px solid #0284c7;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #334155;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.02);
+  animation: donowDrawerSlideDown 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes donowDrawerSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.donow-exp-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.donow-exp-text {
+  font-weight: 500;
+  color: #1e293b;
+  line-height: 1.42;
+}
+
+.donow-exp-meta {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.7rem;
+}
+
+.donow-exp-spec-tag {
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.donow-exp-unit-lesson {
+  color: #0369a1;
+  font-weight: 700;
+}
+
+.donow-exp-inline-link {
+  color: #0284c7;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.donow-exp-inline-link:hover {
+  color: #0369a1;
+}
+
 
 /* ==========================================================================
    VOCABULARY MATCHING GAME (OPTION 1: ASYMMETRIC GRID & BALANCED CARDS)

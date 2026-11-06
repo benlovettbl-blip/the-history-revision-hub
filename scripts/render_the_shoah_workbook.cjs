@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
+const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -1002,19 +1003,22 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
   <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full">
       
-      <!-- Lesson Header with Inquiry Question Title -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 2px 8px; border-radius: 2px;">
-            ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
-            YEAR 9 &bull; THE SHOAH: 1933–1945
-          </span>
+      <!-- Lesson Header with Inquiry Question Title & 14mm Micro-QR -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 2px 8px; border-radius: 2px;">
+              ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
+              YEAR 9 &bull; THE SHOAH: 1933–1945
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 12.6pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
+            ${cfg.enquiryQuestion}
+          </h2>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.6pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
-          ${cfg.enquiryQuestion}
-        </h2>
+        ${renderVersoLessonQr({ unitId: 'the_shoah', lessonId: cfg.id || `lesson_${cfg.lessonNum}` })}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -2160,4 +2164,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { compileTheShoahWorkbook };
+module.exports = { compileTheShoahWorkbook, enquiryConfigs };

@@ -16,6 +16,7 @@ import './ks2_guidance.js';
 import { renderConsolidateStationHTML, initConsolidateStation } from './lesson_consolidate_station.js';
 import { renderLessonExamPracticeHTML, initLessonExamPractice } from './lesson_exam_practice_panel.js';
 import { buildComprehensiveVocabDict, highlightGlossaryInProse } from './disciplinary_glossary.js';
+import { renderGcseDoNowPanelHTML, initGcseDoNowEngine } from './gcse_donow_engine.js';
 
 // Canonical Key Stage Taxonomy Constants
 export const KS2_CANONICAL_UNITS = ['ks2_ww2'];
@@ -221,16 +222,48 @@ export function toggleThinkDiscuss(btn, targetId) {
   }
 }
 
-export function jumpToNarrativeBlock(stageNum) {
-  const el = document.getElementById(`para-${stageNum}`);
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    el.style.transition = 'all 0.4s ease';
-    el.style.boxShadow = '0 0 0 4px #0284c7, 0 8px 24px rgba(2, 132, 199, 0.35)';
-    setTimeout(() => {
-      el.style.boxShadow = '';
-    }, 2500);
+export function jumpToNarrativeBlock(stageNum, targetPara = null) {
+  let target = null;
+  const num = parseInt(stageNum, 10) || 1;
+
+  if (targetPara) {
+    target =
+      document.getElementById(`para-${targetPara.replace('.', '-')}`) ||
+      document.querySelector(`[data-para="${targetPara}"]`);
   }
+
+  if (!target) {
+    target =
+      document.getElementById(`para-${num}`) ||
+      document.getElementById(`stage-banner-${num}`) ||
+      document.getElementById(`para-l4-${num}`) ||
+      document.querySelector(`.standard-narrative-container:nth-of-type(${num})`) ||
+      document.querySelector(`.narrative-chunk:nth-of-type(${num})`) ||
+      document.querySelectorAll('.narrative-chunk')[num - 1];
+  }
+
+  if (target) {
+    const parentDetails = target.closest('details');
+    if (parentDetails) parentDetails.open = true;
+
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    target.style.transition = 'all 0.4s ease';
+    target.classList.add('keyword-pulse-glow');
+    target.style.outline = '4px solid #0284c7';
+    target.style.outlineOffset = '4px';
+    target.style.borderRadius = '8px';
+    target.style.backgroundColor = '#fef9c3';
+    target.style.boxShadow = '0 0 0 6px rgba(2, 132, 199, 0.25), 0 10px 25px rgba(2, 132, 199, 0.3)';
+    setTimeout(() => {
+      target.style.outline = '';
+      target.style.outlineOffset = '';
+      target.style.backgroundColor = '';
+      target.style.boxShadow = '';
+      target.classList.remove('keyword-pulse-glow');
+    }, 3500);
+    return true;
+  }
+  return false;
 }
 
 export function jumpToSpineCard(stageNum) {
@@ -1844,28 +1877,7 @@ if (typeof window !== 'undefined') {
   window.toggleAllCausalSpineDrawers = window.toggleAllSpineStages;
   window.toggleAllSpineDrawers = window.toggleAllSpineStages;
 
-  window.jumpToNarrativeBlock = function (stepNum, targetPara) {
-    const selector = targetPara
-      ? `#narrative-para-${targetPara.replace('.', '-')}`
-      : `[data-stage="${stepNum}"]`;
-    let target = document.querySelector(selector);
-    if (!target && targetPara) {
-      target = Array.from(
-        document.querySelectorAll('.narrative-paragraph, .narrative-exposition-block, h3, h4'),
-      ).find((el) => {
-        return el.textContent && el.textContent.includes(`[${stepNum}.`);
-      });
-    }
-    const chunk = target || document.querySelector(`.narrative-chunk:nth-of-type(${stepNum})`);
-    if (chunk) {
-      chunk.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      chunk.style.transition = 'all 0.4s ease';
-      chunk.style.boxShadow = '0 0 0 3px #0284c7, 0 6px 20px rgba(2,132,199,0.2)';
-      setTimeout(() => {
-        chunk.style.boxShadow = '';
-      }, 2000);
-    }
-  };
+  window.jumpToNarrativeBlock = jumpToNarrativeBlock;
 
   window.openSpineTabAndScroll = function () {
     const launchpad = document.querySelector('.lesson-launchpad-container');
@@ -3865,7 +3877,7 @@ export function renderLesson(lesson) {
         : ''
       }
               ${grEntry
-        ? `<button class="btn btn-guided-reading-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" data-action="open-guided-reading-modal" data-lesson-index="${currentIndex}" title="Open Guided Reading Extract: ${grEntry.book_title}"><i class="fa-solid fa-book-open-reader" style="color: #be185d;"></i> Guided Reading</button>`
+        ? `<a href="/?view=reading&unit=${unitId}&lesson=${currentIndex + 1}" target="_blank" rel="noopener noreferrer" class="btn btn-guided-reading-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; text-decoration: none;" title="Open Literary Companion & Audio Read-Aloud: ${grEntry.book_title}"><i class="fa-solid fa-book-open-reader" style="color: #be185d;"></i> <span>📖 Reading HW: ${grEntry.book_title} ↗</span></a>`
         : ''
       }
               ${unitId === 'edexcel_medicine' && currentIndex >= 0
@@ -3961,7 +3973,7 @@ export function renderLesson(lesson) {
     /^(?:How|Why|Who|What|Where|When|Was|Were|To what extent)\b/i.test(cleanLessonHeading);
 
   const enquiryText =
-    lesson.enquiryQuestion || lesson.enquiry_question || lesson.inquiry_question || '';
+    lesson.enquiryQuestion || lesson.enquiry_question || lesson.inquiry_question || lesson.enquiry || '';
 
   let enquirySubtitle = '';
   if (isHeadingAQuestion && lesson.subtitle) {
@@ -4763,78 +4775,108 @@ export function renderLesson(lesson) {
     lesson.do_now &&
     (lesson.do_now.items || lesson.do_now.questions || lesson.do_now.tasks)
   ) {
-    try {
-      const taught = JSON.parse(localStorage.getItem('taughtUnits') || '[]');
-      if (taught.length > 0 && window.KNOWLEDGE_BANK) {
-        const rawItems =
-          lesson.do_now.items || lesson.do_now.questions || lesson.do_now.tasks || [];
-        rawItems.forEach((item) => {
-          if (item && item.question && item.question.includes('PAST TOPIC:')) {
-            const unit = taught[Math.floor(Math.random() * taught.length)];
-            const bank = window.KNOWLEDGE_BANK[unit];
-            if (bank && bank.length > 0) {
-              const randQ = bank[Math.floor(Math.random() * bank.length)];
-              item.question = 'PAST TOPIC: ' + randQ.question;
-              item.answer = randQ.answer;
+    if (isGCSE) {
+      const headerHtml = renderDoNowHeaderWithTimerHTML({
+        timerId: 'donow-timer',
+        title: 'Do Now Tasks',
+        badgeText: '📖 Workbook Task 1 &bull; Prior Knowledge Retrieval',
+        icon: 'fa-solid fa-list-check',
+        showRevealAll: true,
+      });
+      const currentDb =
+        typeof window !== 'undefined'
+          ? window.db || (appStore && appStore.state && appStore.state.db)
+          : null;
+      htmlDoNowInner = renderGcseDoNowPanelHTML({
+        lesson,
+        activeUnit,
+        unitId,
+        db: currentDb,
+        headerHtml,
+      });
+      window.postRenderHooks.push(() => {
+        initGcseDoNowEngine(
+          lesson,
+          activeUnit,
+          typeof window !== 'undefined'
+            ? window.db || (appStore && appStore.state && appStore.state.db)
+            : null,
+        );
+      });
+    } else {
+      try {
+        const taught = JSON.parse(localStorage.getItem('taughtUnits') || '[]');
+        if (taught.length > 0 && window.KNOWLEDGE_BANK) {
+          const rawItems =
+            lesson.do_now.items || lesson.do_now.questions || lesson.do_now.tasks || [];
+          rawItems.forEach((item) => {
+            if (item && item.question && item.question.includes('PAST TOPIC:')) {
+              const unit = taught[Math.floor(Math.random() * taught.length)];
+              const bank = window.KNOWLEDGE_BANK[unit];
+              if (bank && bank.length > 0) {
+                const randQ = bank[Math.floor(Math.random() * bank.length)];
+                item.question = 'PAST TOPIC: ' + randQ.question;
+                item.answer = randQ.answer;
+              }
             }
-          }
-        });
+          });
+        }
+      } catch (e) {
+        console.error(e);
       }
-    } catch (e) {
-      console.error(e);
-    }
 
-    htmlDoNowInner += `
-        <div class="donow-panel-content">
-          ${renderDoNowHeaderWithTimerHTML({
-      timerId: 'donow-timer',
-      title: 'Do Now Tasks',
-      badgeText: '📖 Workbook Task 1 &bull; Prior Knowledge Retrieval',
-      icon: 'fa-solid fa-list-check',
-      showRevealAll: true,
-    })}
-          <div class="donow-rows-container" style="display: flex; flex-direction: column; gap: 0; margin-top: 6px; background: #ffffff; border: 1.2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);">
-    `;
-    const doNowItems = lesson.do_now.items || lesson.do_now.questions || lesson.do_now.tasks || [];
-    doNowItems.forEach((item, index) => {
-      let qText = item.question || item.q || item.event || '';
-      let aText = item.answer || item.a || item.year || '';
-      if (typeof qText !== 'string') qText = String(qText);
-      if (typeof aText !== 'string') aText = String(aText);
-      // Strip obsolete retrieval metadata phrases such as (Last Week), (Last Lesson), etc.
-      qText = qText.replace(/\s*\((Last Lesson|Last Week|Prior Topic|Prior Unit|Earlier in Unit|Last Term|Last Year|Synoptic|Immediate Previous Lesson|Prior Learning|Foundational Context)\)\s*$/i, '').trim();
-      if (window.currentUnitId) {
-        qText = qText.replace(/src=['"]assets\//g, `src="/units/${window.currentUnitId}/assets/`);
-        aText = aText.replace(/src=['"]assets\//g, `src="/units/${window.currentUnitId}/assets/`);
-      }
-      const cardId = `donow-card-${index}`;
-      const isLast = index === doNowItems.length - 1;
       htmlDoNowInner += `
-          <div class="donow-sentence-row do-now-card" id="do-now-card-${index}" data-action="toggle-element" data-target-id="${cardId}" title="Tap anywhere on this row to reveal or hide the answer" style="display: flex; align-items: center; justify-content: space-between; gap: 14px; background: #ffffff; border: none; ${!isLast ? 'border-bottom: 1px solid #f1f5f9;' : ''} border-radius: 0; margin: 0; padding: 7px 14px; min-height: 38px; box-sizing: border-box; cursor: pointer; box-shadow: none;">
-            <div style="display: flex; align-items: flex-start; gap: 10px; flex: 1 1 auto; min-width: 0;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 4px; background: #f0f9ff; color: #0284c7; font-size: 0.74rem; font-weight: 800; flex-shrink: 0; border: 1px solid #bae6fd; line-height: 1; margin-top: 1px;">${index + 1}</span>
-              <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; flex: 1; min-width: 0;">
-                <span class="donow-q-text" style="font-size: 0.88rem; line-height: 1.38; color: #1e293b; font-weight: 600;">${qText}</span>
-                <div class="answer donow-inline-answer" id="${cardId}" style="display: none; margin: 0; padding: 0; background: transparent;">
-                  <span class="donow-answer-badge" style="display: inline-flex; align-items: center; gap: 5px; padding: 2px 10px; background: #eff6ff; border: 1.2px solid #93c5fd; border-radius: 12px; font-size: 0.82rem; font-weight: 700; color: #1d4ed8; text-align: left; line-height: 1.3; word-break: break-word; box-shadow: 0 1px 2px rgba(37, 99, 235, 0.08);">
-                    <i class="fa-solid fa-circle-check" style="color: #2563eb; font-size: 0.75rem; flex-shrink: 0;"></i>
-                    ${aText}
-                  </span>
+          <div class="donow-panel-content">
+            ${renderDoNowHeaderWithTimerHTML({
+        timerId: 'donow-timer',
+        title: 'Do Now Tasks',
+        badgeText: '📖 Workbook Task 1 &bull; Prior Knowledge Retrieval',
+        icon: 'fa-solid fa-list-check',
+        showRevealAll: true,
+      })}
+            <div class="donow-rows-container" style="display: flex; flex-direction: column; gap: 0; margin-top: 6px; background: #ffffff; border: 1.2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);">
+      `;
+      const doNowItems = lesson.do_now.items || lesson.do_now.questions || lesson.do_now.tasks || [];
+      doNowItems.forEach((item, index) => {
+        let qText = item.question || item.q || item.event || '';
+        let aText = item.answer || item.a || item.year || '';
+        if (typeof qText !== 'string') qText = String(qText);
+        if (typeof aText !== 'string') aText = String(aText);
+        // Strip obsolete retrieval metadata phrases such as (Last Week), (Last Lesson), etc.
+        qText = qText.replace(/\s*\((Last Lesson|Last Week|Prior Topic|Prior Unit|Earlier in Unit|Last Term|Last Year|Synoptic|Immediate Previous Lesson|Prior Learning|Foundational Context)\)\s*$/i, '').trim();
+        if (window.currentUnitId) {
+          qText = qText.replace(/src=['"]assets\//g, `src="/units/${window.currentUnitId}/assets/`);
+          aText = aText.replace(/src=['"]assets\//g, `src="/units/${window.currentUnitId}/assets/`);
+        }
+        const cardId = `donow-card-${index}`;
+        const isLast = index === doNowItems.length - 1;
+        htmlDoNowInner += `
+            <div class="donow-sentence-row do-now-card" id="do-now-card-${index}" data-action="toggle-element" data-target-id="${cardId}" title="Tap anywhere on this row to reveal or hide the answer" style="display: flex; align-items: center; justify-content: space-between; gap: 14px; background: #ffffff; border: none; ${!isLast ? 'border-bottom: 1px solid #f1f5f9;' : ''} border-radius: 0; margin: 0; padding: 7px 14px; min-height: 38px; box-sizing: border-box; cursor: pointer; box-shadow: none;">
+              <div style="display: flex; align-items: flex-start; gap: 10px; flex: 1 1 auto; min-width: 0;">
+                <span style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 4px; background: #f0f9ff; color: #0284c7; font-size: 0.74rem; font-weight: 800; flex-shrink: 0; border: 1px solid #bae6fd; line-height: 1; margin-top: 1px;">${index + 1}</span>
+                <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; flex: 1; min-width: 0;">
+                  <span class="donow-q-text" style="font-size: 0.88rem; line-height: 1.38; color: #1e293b; font-weight: 600;">${qText}</span>
+                  <div class="answer donow-inline-answer" id="${cardId}" style="display: none; margin: 0; padding: 0; background: transparent;">
+                    <span class="donow-answer-badge" style="display: inline-flex; align-items: center; gap: 5px; padding: 2px 10px; background: #eff6ff; border: 1.2px solid #93c5fd; border-radius: 12px; font-size: 0.82rem; font-weight: 700; color: #1d4ed8; text-align: left; line-height: 1.3; word-break: break-word; box-shadow: 0 1px 2px rgba(37, 99, 235, 0.08);">
+                      <i class="fa-solid fa-circle-check" style="color: #2563eb; font-size: 0.75rem; flex-shrink: 0;"></i>
+                      ${aText}
+                    </span>
+                  </div>
                 </div>
               </div>
+              <div class="donow-right-status-box" style="display: flex; align-items: center; justify-content: flex-end; flex-shrink: 0; margin-left: 8px;">
+                <span class="donow-reveal-pill" style="font-size: 0.72rem; font-weight: 700; color: #0284c7; background: #f0f9ff; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 12px; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap;">
+                  <i class="fa-solid fa-eye" style="font-size: 0.65rem;"></i> Reveal
+                </span>
+                <span class="donow-revealed-pill" style="display: none; font-size: 0.72rem; font-weight: 700; color: #0284c7; background: #eff6ff; border: 1px solid #93c5fd; padding: 2px 8px; border-radius: 12px; align-items: center; gap: 4px; white-space: nowrap;">
+                  <i class="fa-solid fa-check" style="font-size: 0.7rem;"></i> Answered
+                </span>
+              </div>
             </div>
-            <div class="donow-right-status-box" style="display: flex; align-items: center; justify-content: flex-end; flex-shrink: 0; margin-left: 8px;">
-              <span class="donow-reveal-pill" style="font-size: 0.72rem; font-weight: 700; color: #0284c7; background: #f0f9ff; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 12px; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap;">
-                <i class="fa-solid fa-eye" style="font-size: 0.65rem;"></i> Reveal
-              </span>
-              <span class="donow-revealed-pill" style="display: none; font-size: 0.72rem; font-weight: 700; color: #0284c7; background: #eff6ff; border: 1px solid #93c5fd; padding: 2px 8px; border-radius: 12px; align-items: center; gap: 4px; white-space: nowrap;">
-                <i class="fa-solid fa-check" style="font-size: 0.7rem;"></i> Answered
-              </span>
-            </div>
-          </div>
-        `;
-    });
-    htmlDoNowInner += `</div></div>`;
+          `;
+      });
+      htmlDoNowInner += `</div></div>`;
+    }
   }
   htmlDoNow = htmlDoNowInner;
 
@@ -11171,6 +11213,23 @@ export function renderLesson(lesson) {
       window.postRenderHooks.forEach((hook) => hook());
       window.postRenderHooks = [];
     }
+
+    // Execute pending narrative block jump if set (e.g. from GCSE Do Now)
+    try {
+      const pendingJump = sessionStorage.getItem('hh_pending_narrative_jump');
+      if (pendingJump) {
+        sessionStorage.removeItem('hh_pending_narrative_jump');
+        const parsed = JSON.parse(pendingJump);
+        if (parsed && parsed.stageNum) {
+          setTimeout(() => {
+            if (typeof window.jumpToNarrativeBlock === 'function') {
+              window.jumpToNarrativeBlock(parsed.stageNum);
+            }
+          }, 80);
+        }
+      }
+    } catch (e) {}
+
     if (typeof window.renderFloatingCmeMapButton === 'function') {
       window.renderFloatingCmeMapButton();
     }

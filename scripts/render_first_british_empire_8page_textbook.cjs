@@ -82,11 +82,11 @@ function cleanProse(text) {
 function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'first_british_empire', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
-  raw = raw.replace(/export\s+default[\s\S]*$/, '');
-  raw = raw.replace('const first_british_empire_data =', 'first_british_empire_data =');
-  const sandbox = {};
-  vm.runInNewContext(raw, sandbox);
-  return sandbox.first_british_empire_data;
+  raw = raw.replace(/^\s*export\s+default\s+/, 'var unitData = ');
+  const sandbox = { unitData: null };
+  vm.createContext(sandbox);
+  vm.runInContext(raw, sandbox);
+  return sandbox.unitData;
 }
 
 // Canonical Stage Questions matching render_first_british_empire_workbook.cjs

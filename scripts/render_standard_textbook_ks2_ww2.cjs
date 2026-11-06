@@ -86,9 +86,9 @@ function cleanProse(text) {
     .replace(/([a-zA-Z])"([a-zA-Z])/g, '$1" $2')
     .replace(/\s*\(\s*\)/g, '')
     .replace(/\s{2,}/g, ' ')
-    .replace(/\\*\\*\\*(.*?)\\*\\*\\*/g, '<strong><em></em></strong>')
-    .replace(/\\*\\*(.*?)\\*\\*/g, '<strong></strong>')
-    .replace(/\\*(.*?)\\*/g, '<em></em>')
+    .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
     .trim();
 }
 
@@ -1995,7 +1995,10 @@ async function renderKs2Ww2Textbook() {
   try {
     const page = await browser.newPage();
     await page.setViewport({ width: 1200, height: 1600 });
-    await page.setContent(html, { waitUntil: 'networkidle0', timeout: 120000 });
+    await page.goto('file:///' + publicHtmlPath.replace(/\\/g, '/'), {
+      waitUntil: 'domcontentloaded',
+      timeout: 30000,
+    });
 
     // Dynamic In-Memory Typography Calibration with KS2 Profile
     console.log(

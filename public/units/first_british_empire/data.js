@@ -383,8 +383,8 @@ export default {
         "type": "questions",
         "items": [
           {
-            "question": "In what year did Queen Elizabeth I sign the royal charter establishing the East India Company?",
-            "answer": "1600 (31 December)."
+            "question": "Which Tudor monarch defeated the Spanish Armada in 1588 and ruled England until 1603?",
+            "answer": "Queen Elizabeth I."
           },
           {
             "question": "What 1534 statute declared the English monarch to be the Supreme Head of the Church of England?",

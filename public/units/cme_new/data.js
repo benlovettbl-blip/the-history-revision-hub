@@ -2245,7 +2245,7 @@ export default {
           "explanation": "UN General Assembly Resolution 181 voted to partition Palestine into Arab and Jewish states."
         },
         {
-          "question": "Under UN Resolution 181, what special international status was designated for the city of Jerusalem?",
+          "question": "Under the 1947 UN Partition Plan (Resolution 181), what special international status was designated for the city of Jerusalem?",
           "options": [
             "Corpus Separatum",
             "British Protectorate",
@@ -2256,7 +2256,7 @@ export default {
           "explanation": "Jerusalem was designated an international city under UN administration."
         },
         {
-          "question": "What percentage of Palestine was allocated to the proposed Jewish state under UN Resolution 181?",
+          "question": "Under the 1947 UN Partition Plan (Resolution 181), what percentage of Palestine was allocated to the proposed Jewish state?",
           "options": [
             "55% of Palestine",
             "33%",
@@ -2355,7 +2355,7 @@ export default {
           "explanation": "Source D shows Ben-Gurion standing beneath the large portrait of Theodor Herzl."
         },
         {
-          "question": "According to Source E, what special international regime was designated for the city of Jerusalem under UN Resolution 181?",
+          "question": "According to Source E, what special international regime was designated for the city of Jerusalem under the 1947 UN Partition Plan (Resolution 181)?",
           "options": [
             "Corpus Separatum",
             "British Protectorate",
@@ -3427,7 +3427,7 @@ export default {
           "explanation": "Fedayeen squads launched border raids and sabotage operations into Israeli territory."
         },
         {
-          "question": "Which elite Israeli commando unit was commanded by Major Ariel Sharon to execute retaliatory border raids?",
+          "question": "In the 1950s, which elite Israeli commando unit was commanded by Major Ariel Sharon to execute retaliatory border raids?",
           "options": [
             "Unit 101",
             "The Palmach",
@@ -4204,7 +4204,7 @@ export default {
           "explanation": "Eden, Guy Mollet, and David Ben-Gurion plotted the coordinated invasion of Sinai and Suez."
         },
         {
-          "question": "On which date did Israeli forces invade the Sinai Peninsula, commencing the Suez War?",
+          "question": "During the 1956 Suez Crisis, on which date did Israeli forces invade the Sinai Peninsula?",
           "options": [
             "29 October 1956",
             "26 July 1956",
@@ -4281,7 +4281,7 @@ export default {
           "explanation": "Source A depicts Nasser turning off the vital Middle Eastern oil valve."
         },
         {
-          "question": "According to Source B, what British military operation dropped psychological warfare propaganda leaflets over Egypt?",
+          "question": "During the 1956 Suez Crisis, what British military operation dropped psychological warfare propaganda leaflets over Egypt according to Source B?",
           "options": [
             "Operation Musketeer",
             "Operation Black Arrow",
@@ -6206,7 +6206,7 @@ export default {
           "explanation": "The diversion of the northern tributaries threatened to reduce Israel's water supply by 35%."
         },
         {
-          "question": "Which Israeli tank commander directed precision long-range tank fire to destroy Syrian diversion equipment on the Golan Heights?",
+          "question": "During the 1964–1967 War over Water, which Israeli tank commander directed precision long-range tank fire to destroy Syrian diversion equipment on the Golan Heights?",
           "options": [
             "General Israel Tal",
             "Ariel Sharon",
@@ -7200,7 +7200,7 @@ export default {
           "explanation": "Paratroopers stormed through the Lions' Gate on the morning of 7 June 1967."
         },
         {
-          "question": "Which strategic pass in Sinai became a bottleneck where retreating Egyptian armored columns were trapped and destroyed by Israeli aircraft?",
+          "question": "During the 1967 Six-Day War, which strategic pass in Sinai became a bottleneck where retreating Egyptian armored columns were destroyed by Israeli aircraft?",
           "options": [
             "The Mitla Pass",
             "The Khyber Pass",
@@ -7413,7 +7413,7 @@ export default {
             "answer": "The Gaza Strip"
           },
           {
-            "question": "Which territory on the west bank of the River Jordan was captured from the Kingdom of Jordan?",
+            "question": "During the 1967 Six-Day War, which territory on the west bank of the River Jordan was captured from the Kingdom of Jordan?",
             "answer": "The West Bank"
           },
           {
@@ -7437,7 +7437,7 @@ export default {
             "answer": "Moshe Dayan"
           },
           {
-            "question": "Which strategic desert pass in western Sinai became a bottleneck where retreating Egyptian armour was destroyed?",
+            "question": "During the 1967 Six-Day War, which strategic desert pass in western Sinai became a bottleneck where retreating Egyptian armour was destroyed?",
             "answer": "The Mitla Pass"
           }
         ]
@@ -8128,7 +8128,7 @@ export default {
           "explanation": "Resolution 242 established the core principle of 'Land for Peace'."
         },
         {
-          "question": "Which British diplomat drafted the text of UN Resolution 242?",
+          "question": "Following the 1967 Six-Day War, which British diplomat drafted the text of UN Resolution 242?",
           "options": [
             "Lord Caradon",
             "Arthur Balfour",
@@ -8139,7 +8139,7 @@ export default {
           "explanation": "Lord Caradon, British Ambassador to the UN, drafted the carefully balanced wording."
         },
         {
-          "question": "What popular diplomatic phrase summarizes the exchange proposed by UN Resolution 242?",
+          "question": "Adopted following the 1967 Six-Day War, what popular diplomatic phrase summarizes the exchange proposed by UN Resolution 242?",
           "options": [
             "Land for Peace",
             "Partition and Containment",
@@ -8150,7 +8150,7 @@ export default {
           "explanation": "Resolution 242 proposed Israeli withdrawal from occupied lands in exchange for recognized boundaries."
         },
         {
-          "question": "What specific English word was deliberately omitted before 'territories occupied' in the English text of Resolution 242?",
+          "question": "In the English text of UN Resolution 242 (1967), what specific word was deliberately omitted before 'territories occupied'?",
           "options": [
             "The",
             "All",
@@ -8172,7 +8172,7 @@ export default {
           "explanation": "The French text implied withdrawal from all territories captured during the conflict."
         },
         {
-          "question": "How did UN Resolution 242 refer to the displaced Palestinian population?",
+          "question": "Adopted after the 1967 Six-Day War, how did UN Resolution 242 refer to the displaced Palestinian population?",
           "options": [
             "As 'the refugee problem'",
             "As an independent nation",
@@ -8194,7 +8194,7 @@ export default {
           "explanation": "The Knesset passed legislation dissolving municipal boundaries and unilaterally annexing East Jerusalem."
         },
         {
-          "question": "What was the massive chain of fortifications constructed by Israel along the eastern bank of the Suez Canal called?",
+          "question": "Constructed after the 1967 Six-Day War, what was the massive chain of fortifications built by Israel along the eastern bank of the Suez Canal called?",
           "options": [
             "The Bar-Lev Line",
             "The Green Line",
@@ -8205,7 +8205,7 @@ export default {
           "explanation": "The Bar-Lev Line was named after Chief of Staff Haim Bar-Lev."
         },
         {
-          "question": "How high was the artificial sand rampart constructed along the Suez Canal as part of the Bar-Lev Line?",
+          "question": "Along the Suez Canal, how high was the artificial sand rampart constructed by Israel as part of the Bar-Lev Line?",
           "options": [
             "20-metre high artificial sand rampart",
             "5-metre concrete wall",
@@ -9170,7 +9170,7 @@ export default {
           "explanation": "Black September assaulted the Israeli Olympic delegation quarters at the Munich Games."
         },
         {
-          "question": "How many Israeli athletes and coaches were initially taken hostage at 31 Connollystraße during the Munich attack?",
+          "question": "During the 1972 Munich Olympics attack, how many Israeli athletes and coaches were initially taken hostage at 31 Connollystraße?",
           "options": [
             "Nine Israeli athletes and coaches hostage",
             "Two athletes",
@@ -9203,7 +9203,7 @@ export default {
           "explanation": "The botched rescue attempt at Fürstenfeldbruck airfield ended with all nine hostages killed."
         },
         {
-          "question": "Which Israeli Prime Minister authorized covert targeted assassinations of individuals linked to the Munich massacre?",
+          "question": "Following the 1972 Munich Olympics massacre, which Israeli Prime Minister authorized covert targeted assassinations under Operation Wrath of God?",
           "options": [
             "Golda Meir",
             "David Ben-Gurion",
@@ -9401,7 +9401,7 @@ export default {
             "answer": "The Munich Olympics massacre"
           },
           {
-            "question": "What covert Mossad retaliation operation was authorized by Golda Meir following Munich?",
+            "question": "Following the 1972 Munich Olympics massacre, what covert Mossad retaliation operation was authorized by Golda Meir?",
             "answer": "Operation Wrath of God"
           },
           {
@@ -10104,7 +10104,7 @@ export default {
           "explanation": "The Soviet Union sent over 15,000 advisers to operate anti-aircraft batteries."
         },
         {
-          "question": "Which Soviet surface-to-air missile batteries deployed along the Suez Canal provided a defensive umbrella for Egyptian forces?",
+          "question": "During the 1973 Yom Kippur War, which Soviet surface-to-air missile batteries deployed along the Suez Canal provided a defensive umbrella for Egyptian forces?",
           "options": [
             "SAM-2 and SAM-3 surface-to-air missile batteries",
             "Patriot missile systems",
@@ -10192,7 +10192,7 @@ export default {
           "explanation": "President Nixon ordered Operation Nickel Grass on 14 October to counter Soviet resupply of Arab armies."
         },
         {
-          "question": "Which Israeli general led an armored division across the Suez Canal over a pontoon bridge at Deversoir?",
+          "question": "During the 1973 Yom Kippur War, which Israeli general led an armored division across the Suez Canal over a pontoon bridge at Deversoir?",
           "options": [
             "Ariel Sharon",
             "Moshe Dayan",
@@ -10203,7 +10203,7 @@ export default {
           "explanation": "Sharon crossed the canal, destroyed SAM sites, and encircled the Egyptian Third Army."
         },
         {
-          "question": "Which Egyptian military formation comprising 20,000 soldiers was completely encircled by the IDF on the east bank of the Suez Canal?",
+          "question": "During the 1973 Yom Kippur War, which Egyptian military formation comprising 20,000 soldiers was completely encircled by the IDF on the east bank of the Suez Canal?",
           "options": [
             "The Egyptian Third Army",
             "The Egyptian Second Army",
@@ -10247,7 +10247,7 @@ export default {
           "explanation": "Resolution 338 called for an immediate ceasefire and implementation of Resolution 242."
         },
         {
-          "question": "According to Source A, what fortification system along the Suez Canal included fortified Maoz strongpoints?",
+          "question": "According to Source A, what Israeli fortification system along the Suez Canal included fortified Maoz strongpoints?",
           "options": [
             "The Bar-Lev Line",
             "The Green Line",
@@ -10466,7 +10466,7 @@ export default {
           "explanation": "Israel agreed to dismantle twelve Jewish settlements (notably Yamit) and return Sinai."
         },
         {
-          "question": "What notable Jewish settlement in the Sinai Peninsula did Israel agree to dismantle under the peace treaty?",
+          "question": "Under the 1979 Egypt-Israel Peace Treaty, what notable Jewish settlement in the Sinai Peninsula did Israel agree to dismantle?",
           "options": [
             "Yamit",
             "Kfar Etzion",
@@ -10488,7 +10488,7 @@ export default {
           "explanation": "Egypt became the first Arab state to recognize Israel, ending a 31-year state of war."
         },
         {
-          "question": "What waterway rights were guaranteed to Israel under the Egypt-Israel Peace Treaty?",
+          "question": "Under the 1979 Egypt-Israel Peace Treaty, what waterway rights were guaranteed to Israel?",
           "options": [
             "Unimpeded Israeli passage through the Suez Canal and Straits of Tiran",
             "Exclusive control over the Gulf of Aqaba",
@@ -10499,7 +10499,7 @@ export default {
           "explanation": "The treaty guaranteed free navigation through the Suez Canal and Straits of Tiran."
         },
         {
-          "question": "How did the Arab League react to Anwar Sadat signing the separate peace treaty with Israel?",
+          "question": "How did the Arab League react to Anwar Sadat signing the 1979 Egypt-Israel Peace Treaty?",
           "options": [
             "Expelled Egypt from its membership and relocated headquarters to Tunis",
             "Praised Sadat for his courage and joined negotiations",
@@ -10565,7 +10565,7 @@ export default {
           "explanation": "Source C is the facsimile copy of the framework signed by Sadat and Begin."
         },
         {
-          "question": "According to Source D, on which lawn of the White House did Sadat, Carter, and Begin join hands after signing the peace treaty?",
+          "question": "According to Source D, on which lawn of the White House did Sadat, Carter, and Begin join hands after signing the 1979 peace treaty?",
           "options": [
             "The South Lawn of the White House",
             "The Rose Garden",
@@ -10576,7 +10576,7 @@ export default {
           "explanation": "Source D depicts Sadat, Carter, and Begin joining hands on the South Lawn."
         },
         {
-          "question": "According to Source E, what international peacekeeping organization monitored demilitarized security zones in Sinai?",
+          "question": "Following the 1979 peace treaty, what international peacekeeping organization monitored demilitarized security zones in Sinai according to Source E?",
           "options": [
             "Multinational Force and Observers (MFO)",
             "UNIFIL",
@@ -11769,7 +11769,7 @@ export default {
           "explanation": "Ariel Sharon launched Operation Peace for Galilee on 6 June 1982."
         },
         {
-          "question": "Which Israeli Defence Minister directed the siege of Beirut and deceived the Israeli Cabinet about the invasion's depth?",
+          "question": "During the 1982 Lebanon War, which Israeli Defence Minister directed the siege of Beirut and deceived the Israeli Cabinet about the invasion's depth?",
           "options": [
             "Ariel Sharon",
             "Moshe Dayan",
@@ -11824,7 +11824,7 @@ export default {
           "explanation": "Phalangist militants slaughtered between 800 and 3,500 unarmed refugees while Israeli forces stood by."
         },
         {
-          "question": "What official Israeli commission of inquiry concluded that Ariel Sharon bore 'personal responsibility' for Sabra and Shatila?",
+          "question": "Following the 1982 Sabra and Shatila massacre, which official Israeli commission of inquiry concluded that Ariel Sharon bore 'personal responsibility'?",
           "options": [
             "The Kahan Commission of Inquiry",
             "The Agranat Commission",
@@ -13651,7 +13651,7 @@ export default {
           "explanation": "The Oslo II agreement was signed at Taba, expanding Palestinian self-rule."
         },
         {
-          "question": "Under the Oslo II agreement, which area was placed under full Palestinian civil and security control?",
+          "question": "Under the 1995 Oslo II agreement, which area was placed under full Palestinian civil and security control?",
           "options": [
             "Area A",
             "Area B",
@@ -13662,7 +13662,7 @@ export default {
           "explanation": "Area A covered the major Palestinian urban centers and was under full PA control."
         },
         {
-          "question": "Under the Oslo II agreement, which area remained under exclusive Israeli civil and military control, covering 60% of the West Bank?",
+          "question": "Under the 1995 Oslo II agreement, which area remained under exclusive Israeli civil and military control, covering 60% of the West Bank?",
           "options": [
             "Area C",
             "Area A",
@@ -13750,7 +13750,7 @@ export default {
           "explanation": "Source C shows Rabin and Arafat shaking hands on the White House South Lawn, encouraged by Bill Clinton."
         },
         {
-          "question": "According to Source D, what percentage of the West Bank territory was classified as Area C under exclusive Israeli control?",
+          "question": "According to Source D, what percentage of the West Bank territory was classified as Area C under the 1995 Oslo II agreement?",
           "options": [
             "60%",
             "10%",

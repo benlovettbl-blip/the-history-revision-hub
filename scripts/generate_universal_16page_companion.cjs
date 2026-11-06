@@ -315,15 +315,15 @@ function buildCompanionHtml(unitData) {
       line-height: 1.1;
     }
     .spine-event-title {
-      font-size: 6.6pt;
+      font-size: 6.2pt;
       font-weight: 700;
       color: #0f172a;
       line-height: 1.15;
       margin-top: 1.5px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 120px;
+      white-space: normal;
+      text-align: center;
+      word-break: normal;
+      overflow-wrap: break-word;
     }
     .spine-arrow {
       font-size: 7.5pt;
@@ -735,7 +735,7 @@ function buildCompanionHtml(unitData) {
           Human memory decays exponentially after learning—a reality proven by Hermann Ebbinghaus's <em>Forgetting Curve</em>. While passive re-reading creates a deceptive illusion of mastery, <strong>deliberate retrieval practice</strong> actively reconstructs neural pathways, arresting forgetfulness and cementing essential historical knowledge into long-term schema.
         </div>
         <div class="hero-plate-subtext">
-          <strong>Archival Plate:</strong> ${heroCaption}
+          ${heroCaption}
         </div>
       </div>
     </div>

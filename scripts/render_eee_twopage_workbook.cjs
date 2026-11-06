@@ -37,6 +37,7 @@ const { EEE_ENQUIRY_CONFIGS } = require('./components/eee_enquiry_configs.cjs');
 const {
   renderStandardFrontCover,
   renderStandardBackCover,
+  renderVersoLessonQr,
 } = require('./components/render_standard_cover.cjs');
 const { auditPageBudget, printSpaceAuditReport } = require('./audit_page_budget.cjs');
 
@@ -559,18 +560,21 @@ function renderSpinePage(cfg, pageNum, quip, keyTopicNum) {
   <div class="page page-container ${pageNum % 2 === 0 ? 'verso-page' : 'recto-page'}" id="page-${pageNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full">
       <!-- Lesson Header with Inquiry Question Title -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
-            KEY TOPIC ${keyTopicNum}.${cfg.enquiryNum} &bull; LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            EDEXCEL GCSE (9–1) HISTORY &bull; PAPER 2 (1HI0/2B)
-          </span>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
+              KEY TOPIC ${keyTopicNum}.${cfg.enquiryNum} &bull; LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              EDEXCEL GCSE (9–1) HISTORY &bull; PAPER 2 (1HI0/2B)
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 12.2pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.2;">
+            ${enquiryTitle}
+          </h2>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.2pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.2;">
-          ${enquiryTitle}
-        </h2>
+        ${renderVersoLessonQr({ unitId: 'eee', lessonId: cfg.id || `lesson_${cfg.lessonIndex + 1}` })}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -1611,262 +1615,43 @@ function buildEeeKeyTopicWorkbook(ktId) {
   });
 
   // ====================================================================
-  // PAGE 16: OUTSIDE BACK COVER (ASSESSMENT RECORD LEDGER & 4 DUAL-QR CARDS)
+  // PAGE 16: OUTSIDE BACK COVER (Student Assessment Record & Digital Quizzing Hub)
   // ====================================================================
-
-  function cleanStem(stem) {
-    if (!stem) return '';
-    return stem
-      .replace(/^Describe one key feature of /i, '')
-      .replace(/^Describe one feature of /i, '')
-      .replace(/^Describe two features of /i, '')
-      .replace(/\.$/, '');
-  }
-
-  let examRowsHtml = '';
-
-  data.enquiries.forEach((enq, idx) => {
-    const spinePageNum = 4 + idx * 3;
-    const writePart1PageNum = spinePageNum + 1;
-    const writePart2PageNum = spinePageNum + 2;
-    const extTariff = enq.tariff && enq.tariff.includes('16') ? 20 : 12;
-    const extLabel = enq.tariff && enq.tariff.includes('16') ? 'Q3 Essay' : 'Q2 Explain Why';
-
-    const featAText = cleanStem(enq.featureA?.stem);
-    const featBText = cleanStem(enq.featureB?.stem);
-    let extText = enq.examStem || enq.rightExam?.stem || 'Extended Writing Task';
-    if (extText.length > 70) extText = extText.slice(0, 67) + '...';
-
-    examRowsHtml += `
-      <tr style="border-top: 1.5px solid #000000; border-bottom: 1px solid #cbd5e1; background: #ffffff;">
-        <td rowspan="4" style="padding: 3px 4px; text-align: center; font-weight: 900; font-size: 8.5pt; border-right: 1.2px solid #000000; vertical-align: middle; background: #f8fafc;">
-          ${data.keyTopicNum}.${enq.enquiryNum}
-        </td>
-        <td rowspan="4" style="padding: 3px 8px; border-right: 1.2px solid #000000; vertical-align: middle; background: #ffffff;">
-          <strong style="font-size: 8.0pt; text-transform: uppercase; color: #000000; display: block; line-height: 1.2;">
-            Enquiry ${data.keyTopicNum}.${enq.enquiryNum}: ${enq.title}
-          </strong>
-          <span style="font-size: 7.2pt; color: #475569; display: block; margin-top: 2px;">
-            Do Now Starter (p. ${spinePageNum}): &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong>
-          </span>
-        </td>
-        <td style="padding: 3px 4px; text-align: center; border-right: 1px solid #000000; font-size: 7.4pt; font-weight: 800; background: #fafafa;">
-          p. ${writePart1PageNum}–${writePart2PageNum}
-        </td>
-        <td style="padding: 3px 8px; border-right: 1px solid #000000; font-size: 7.4pt; font-weight: 600;">
-          <strong>${extLabel}:</strong> ${extText} [${extTariff}m]
-        </td>
-        <td rowspan="4" style="padding: 4px 6px; text-align: center; border-right: 1.2px solid #000000; font-size: 8.5pt; font-weight: 800; vertical-align: middle; background: #ffffff;">
-          &nbsp;&nbsp;&nbsp;<strong>___ / ___</strong>&nbsp;&nbsp;&nbsp;
-        </td>
-        <td style="padding: 3px 6px; text-align: center; font-size: 9.0pt; font-weight: 800; white-space: nowrap;">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ ${extTariff}</strong>
-        </td>
-      </tr>
-      <tr style="border-bottom: 1px solid #cbd5e1; background: #ffffff;">
-        <td style="padding: 3px 4px; text-align: center; border-right: 1px solid #000000; font-size: 7.4pt; font-weight: 800; background: #fafafa;">
-          p. ${writePart2PageNum}
-        </td>
-        <td style="padding: 3px 8px; border-right: 1px solid #000000; font-size: 7.4pt; font-weight: 600;">
-          <strong>Q1(a) Feature:</strong> ${featAText} [2m]
-        </td>
-        <td style="padding: 3px 6px; text-align: center; font-size: 9.0pt; font-weight: 800; white-space: nowrap;">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 2</strong>
-        </td>
-      </tr>
-      <tr style="border-bottom: 1.5px solid #000000; background: #ffffff;">
-        <td style="padding: 3px 4px; text-align: center; border-right: 1px solid #000000; font-size: 7.4pt; font-weight: 800; background: #fafafa;">
-          p. ${writePart2PageNum}
-        </td>
-        <td style="padding: 3px 8px; border-right: 1px solid #000000; font-size: 7.4pt; font-weight: 600;">
-          <strong>Q1(b) Feature:</strong> ${featBText} [2m]
-        </td>
-        <td style="padding: 3px 6px; text-align: center; font-size: 9.0pt; font-weight: 800; white-space: nowrap;">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 2</strong>
-        </td>
-      </tr>
-      <tr style="border-bottom: 1.5px solid #000000; background: #f8fafc;">
-        <td style="padding: 2px 4px; text-align: center; border-right: 1px solid #000000; font-size: 7.0pt; font-weight: 800; color: #475569;">
-          Summary
-        </td>
-        <td style="padding: 2px 8px; border-right: 1px solid #000000; font-size: 7.0pt; font-weight: 700; color: #475569;">
-          Total Module Enquiry Assessment Mark
-        </td>
-        <td style="padding: 2px 6px; text-align: center; font-size: 8.5pt; font-weight: 900; white-space: nowrap; color: #000000;">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ ${extTariff + 4}</strong>
-        </td>
-      </tr>
-    `;
+  html += renderStandardBackCover({
+    unitId: 'eee',
+    paperTitle: 'EDEXCEL GCSE (9–1) HISTORY • PAPER 2: EARLY ELIZABETHAN ENGLAND, 1558–1588',
+    keyTopicNum: data.keyTopicNum,
+    trackerTitle: `Student Assessment Record • Key Topic ${data.keyTopicNum} Tracker`,
+    trackerSubtitle: `Paper 2: Early Elizabethan England, 1558–1588 • ${data.title}`,
+    enquiries: data.enquiries.map((enq) => {
+      const isEssay = enq.tariff && (enq.tariff.includes('16') || enq.tariff.includes('20'));
+      const extTariff = isEssay ? 20 : 12;
+      const extLabel = isEssay ? 'Q3 Essay' : 'Q2 Explain';
+      return {
+        num: enq.enquiryNum,
+        code: `KT${data.keyTopicNum}.${enq.enquiryNum}`,
+        title: enq.title,
+        enquiryQuestion: enq.inquiryQuestion || enq.enquiryQuestion || '',
+        doNowMarks: 10,
+        q1aMarks: 2,
+        q1bMarks: 2,
+        extType: extLabel,
+        extMarks: extTariff,
+        totalMarks: 10 + 2 + 2 + extTariff,
+      };
+    }),
+    feedback: {
+      signature: '____________________________',
+      date: '____________________',
+    },
+    qrLessons: data.enquiries.map((enq) => ({
+      label: `KT ${data.keyTopicNum}.${enq.enquiryNum}`,
+      url: `https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=${enq.id}`,
+    })),
+    footerQuip: footers[15],
+    totalPageCount: 16,
+    renderFooterStrip,
   });
-
-  // 4 Interactive Digital Dual-QR Cards (Lesson Hub + 20-Q Quiz)
-  const qrCardsHtml = data.enquiries
-    .map((enq) => {
-      const lessonUrl = `https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=${enq.id}`;
-      const quizUrl = `https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=${enq.id}&quiz=true`;
-      const lessonQrSvg = generateQrSvg(lessonUrl);
-      const quizQrSvg = generateQrSvg(quizUrl);
-
-      let specSnippet = '';
-      if (enq.specAnchor) {
-        const parts = enq.specAnchor
-          .split(/;|\(|\)/)
-          .map((s) => s.trim())
-          .filter(Boolean);
-        specSnippet = parts.slice(0, 2).join(' &bull; ');
-        if (specSnippet.length > 44) specSnippet = specSnippet.slice(0, 41) + '...';
-      }
-
-      return `
-      <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 4px 5px; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between; text-align: center; box-sizing: border-box; overflow: hidden; min-width: 0;">
-        
-        <!-- Card Header -->
-        <div style="border-bottom: 1.2px solid #000000; padding-bottom: 2px; margin-bottom: 2px; overflow: hidden;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; text-transform: uppercase; color: #000000; display: block;">
-            Enquiry ${data.keyTopicNum}.${enq.enquiryNum}
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.3pt; font-weight: 700; color: #1e293b; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
-            ${enq.title}
-          </span>
-          ${
-            specSnippet
-              ? `
-          <span style="font-family: 'Inter', sans-serif; font-size: 5.4pt; color: #64748b; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; margin-top: 1px;">
-            ${specSnippet}
-          </span>`
-              : ''
-          }
-        </div>
-
-        <!-- Dual QR Codes: Lesson + Quiz -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; align-items: center; justify-content: center; margin: 3px 0; padding: 2px 0;">
-          
-          <!-- Left QR: Digital Lesson -->
-          <div style="display: flex; flex-direction: column; align-items: center; min-width: 0;">
-            <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; text-transform: uppercase; color: #000000; margin-bottom: 1.5px; white-space: nowrap;">
-              📖 Lesson
-            </span>
-            <div style="width: 16mm; height: 16mm; margin: 0 auto; background: #ffffff; padding: 1px; border: 1px solid #cbd5e1; border-radius: 3px; box-sizing: border-box; display: flex; align-items: center; justify-content: center;">
-              ${lessonQrSvg}
-            </div>
-            <span style="font-family: 'Inter', sans-serif; font-size: 5.2pt; font-weight: 600; color: #475569; margin-top: 1.5px; white-space: nowrap;">
-              Read Online
-            </span>
-          </div>
-
-          <!-- Right QR: Interactive Quiz -->
-          <div style="display: flex; flex-direction: column; align-items: center; min-width: 0;">
-            <span style="font-family: 'Inter', sans-serif; font-size: 5.8pt; font-weight: 800; text-transform: uppercase; color: #000000; margin-bottom: 1.5px; white-space: nowrap;">
-              ⚡ 20-Q Quiz
-            </span>
-            <div style="width: 16mm; height: 16mm; margin: 0 auto; background: #ffffff; padding: 1px; border: 1px solid #cbd5e1; border-radius: 3px; box-sizing: border-box; display: flex; align-items: center; justify-content: center;">
-              ${quizQrSvg}
-            </div>
-            <span style="font-family: 'Inter', sans-serif; font-size: 5.2pt; font-weight: 600; color: #475569; margin-top: 1.5px; white-space: nowrap;">
-              Self-Marking
-            </span>
-          </div>
-
-        </div>
-
-        <!-- Retrieval Attempts Log & Score Box (No brackets around score!) -->
-        <div style="border-top: 1.2px solid #000000; padding: 2.5px 3px; margin-top: 2px; font-family: 'Inter', sans-serif; background: #f8fafc; border-radius: 2px; box-sizing: border-box;">
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 5.6pt; font-weight: 700; color: #475569; margin-bottom: 2px;">
-            <span>Quiz Attempt:</span>
-            <span>[ ] 1st &nbsp; [ ] 2nd &nbsp; [ ] 3rd</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 7.2pt; font-weight: 900; color: #000000;">
-            <span style="font-size: 6.0pt; font-weight: 700;">Score:</span>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 20</strong></span>
-            <span style="font-size: 5.8pt; font-weight: 600; color: #64748b;">Date: ___/___</span>
-          </div>
-        </div>
-
-      </div>`;
-    })
-    .join('');
-
-  html += `
-  <div class="page page-container verso-page" id="page-16" style="padding: 4mm 6mm; box-sizing: border-box;">
-    <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box;">
-      
-      <!-- Top Department Header -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 3px; box-sizing: border-box;" data-department-name="The History Department">
-        <div style="display: flex; justify-content: space-between; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 10.5pt; text-transform: uppercase; color: #000000;">
-            <span class="school-brand-target">The History Department</span> &bull; Assessment &amp; Progress Record
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 700; letter-spacing: 0.5px;">
-            KEY TOPIC ${data.keyTopicNum} ASSESSMENT &amp; HOMEWORK RECORD
-          </span>
-        </div>
-      </div>
-
-      <!-- Pupil Header Card -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 4px 10px; background: #ffffff; display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px; box-sizing: border-box;">
-        <div style="flex: 1; margin-right: 15px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 800; text-transform: uppercase;">Pupil:</span>
-          <div style="border-bottom: 1.5px solid #000000; height: 16px; margin-top: 1px;"></div>
-        </div>
-        <div style="text-align: center; margin-right: 15px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase;">Target Grade:</span>
-          <div style="border: 1.5px solid #000000; border-radius: 3px; width: 36px; height: 24px; margin: 2px auto 0 auto; font-family: 'Inter', sans-serif; font-size: 11pt; font-weight: 900; line-height: 22px;"></div>
-        </div>
-        <div style="text-align: center; margin-right: 15px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase;">Predicted:</span>
-          <div style="border: 1.5px solid #000000; border-radius: 3px; width: 36px; height: 24px; margin: 2px auto 0 auto; font-family: 'Inter', sans-serif; font-size: 11pt; font-weight: 900; line-height: 22px;"></div>
-        </div>
-        <div style="text-align: center;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase;">Attitude:</span>
-          <div style="font-family: 'Inter', sans-serif; font-size: 9.5pt; font-weight: 800; margin-top: 4px;">
-            1 &bull; 2 &bull; 3 &bull; 4 &bull; 5
-          </div>
-        </div>
-      </div>
-
-      <!-- Master Exam Practice & Homework Assessment Tracker Table (No brackets around scores!) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; overflow: hidden; margin-bottom: 4px; box-sizing: border-box;">
-        <table style="width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif;">
-          <thead>
-            <tr style="border-bottom: 1px solid #000000; background: #e2e8f0; color: #000000;">
-              <th colspan="6" style="padding: 3px 6px; font-size: 7.8pt; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;">
-                Master Exam Practice &amp; Homework Assessment Tracker &bull; Key Topic ${data.keyTopicNum}
-              </th>
-            </tr>
-            <tr style="border-bottom: 1.5px solid #000000; background: #ffffff;">
-              <th style="padding: 3px 4px; width: 28px; text-align: center; font-size: 7.6pt; font-weight: 900; border-right: 1.2px solid #000000;">#</th>
-              <th style="padding: 3px 8px; text-align: left; font-size: 7.6pt; font-weight: 900; text-transform: uppercase; border-right: 1.2px solid #000000;">Enquiry &amp; Specification Topic</th>
-              <th style="padding: 3px 4px; width: 44px; text-align: center; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Page</th>
-              <th style="padding: 3px 8px; text-align: left; font-size: 7.6pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #000000;">Exam Practice Question &amp; Focus</th>
-              <th style="padding: 4px 6px; width: 100px; text-align: center; font-size: 7.6pt; font-weight: 900; text-transform: uppercase; border-right: 1.2px solid #000000;">Homework Deadline</th>
-              <th style="padding: 4px 6px; width: 125px; text-align: center; font-size: 7.6pt; font-weight: 900; text-transform: uppercase;">Mark Awarded</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${examRowsHtml}
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Interactive Digital Hub (Flex Absorbs Vertical Space) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 4px 6px; background: #ffffff; flex: 1; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 2px; box-sizing: border-box; overflow: hidden;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #000000; padding-bottom: 2px; margin-bottom: 3px; box-sizing: border-box;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.2pt; text-transform: uppercase; color: #000000;">
-            📱 Interactive Digital Hub &bull; Smartphone QR Revision Access
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; color: #222222; font-weight: 700;">
-            Scan to read full digital textbook narratives or take live 20-question self-marking quizzes
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; text-align: center; flex: 1; box-sizing: border-box; overflow: hidden;">
-          ${qrCardsHtml}
-        </div>
-      </div>
-
-      ${renderFooterStrip(16, footers[15], 16)}
-    </div>
-  </div>
-`;
 
   html += `
   <!-- Client-Side Auto-Lines & Auto-Fit Calculator (Evaluated in Puppeteer before PDF print) -->

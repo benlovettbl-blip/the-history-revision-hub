@@ -14,6 +14,8 @@ import {
   renderLessonsView,
   renderMasterpieceView,
   renderDigitalReaderView,
+  renderReadingView,
+  renderMarkingView,
 } from './views.js'; // Trigger HMR
 import { renderCompetitionsView } from './competitions_zone.js';
 import { renderChessHubView } from './chess_zone.js';
@@ -76,6 +78,8 @@ export function initNavigationUI() {
       viewName === 'mock-exams' ||
       viewName === 'individuals' ||
       viewName === 'reading' ||
+      viewName === 'guided-reading' ||
+      viewName === 'marking' ||
       viewName === 'decisions' ||
       viewName === 'taboo'
     ) {
@@ -206,6 +210,9 @@ export function updateBreadcrumbs(customTrail = null) {
         viewName === 'taboo' ||
         viewName === 'individuals' ||
         viewName === 'reading' ||
+        viewName === 'guided-reading' ||
+        viewName === 'marking' ||
+        viewName === 'answers' ||
         viewName === 'reader' ||
         viewName === 'textbook-reader')
     ) {
@@ -225,7 +232,8 @@ export function updateBreadcrumbs(customTrail = null) {
     else if (viewName === 'decisions') currentSectionLabel = 'Decisions Game';
     else if (viewName === 'taboo') currentSectionLabel = 'Taboo Recall';
     else if (viewName === 'individuals') currentSectionLabel = 'Key Individuals';
-    else if (viewName === 'reading') currentSectionLabel = 'Guided Reading';
+    else if (viewName === 'reading' || viewName === 'guided-reading') currentSectionLabel = 'Literary Companion';
+    else if (viewName === 'marking' || viewName === 'answers') currentSectionLabel = 'Self-Checking Marking Bank';
     else if (viewName === 'masterpiece' || viewName === 'gallery')
       currentSectionLabel = 'Masterpiece Studio';
     else if (viewName === 'reader' || viewName === 'textbook-reader')
@@ -380,6 +388,12 @@ export function handleBrandClick() {
 window.handleBrandClick = handleBrandClick;
 
 export async function switchView(viewName, param = null, skipHistory = false, options = {}) {
+  // Gracefully handle calls passing options object as 3rd parameter
+  if (typeof skipHistory === 'object' && skipHistory !== null) {
+    options = skipHistory;
+    skipHistory = false;
+  }
+
   // Safeguard lockdown mode enforcement
   const urlParams =
     typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
@@ -447,9 +461,13 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     url.searchParams.set('view', viewName);
     if (param) url.searchParams.set('unit', param);
     else url.searchParams.delete('unit');
-    url.searchParams.delete('lesson');
+    if ((viewName === 'reading' || viewName === 'guided-reading') && options && options.lessonIndex !== undefined) {
+      url.searchParams.set('lesson', options.lessonIndex + 1);
+    } else if (viewName !== 'reading' && viewName !== 'guided-reading') {
+      url.searchParams.delete('lesson');
+    }
     try {
-      window.history.pushState({ view: viewName, unit: param, scrollY: 0 }, '', url);
+      window.history.pushState({ view: viewName, unit: param, lesson: options?.lessonIndex, scrollY: 0 }, '', url);
     } catch (e) {}
   }
 
@@ -569,12 +587,12 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
     await loadUnit(targetUnit);
     await renderLessonsView();
-    if (
-      options &&
-      typeof options.lessonIndex === 'number' &&
-      typeof window.viewLessonDetail === 'function'
-    ) {
-      window.viewLessonDetail(options.lessonIndex);
+    if (options && typeof options.lessonIndex === 'number') {
+      if (typeof window.viewLessonDetail === 'function') {
+        window.viewLessonDetail(options.lessonIndex);
+      } else if (typeof window.renderLessonByIndex === 'function') {
+        window.renderLessonByIndex(options.lessonIndex);
+      }
     }
   } else if (viewName === 'curriculum') {
     await renderCurriculumMap();
@@ -598,6 +616,14 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       await loadUnit(unitTarget);
     }
     await renderDigitalReaderView(param);
+  } else if (viewName === 'reading' || viewName === 'guided-reading') {
+    const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
+    await loadUnit(targetUnit);
+    await renderReadingView(options);
+  } else if (viewName === 'marking' || viewName === 'answers') {
+    const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
+    await loadUnit(targetUnit);
+    await renderMarkingView(options);
   } else if (
     viewName === 'gcse-tracker' ||
     viewName === 'spec-tracker' ||
@@ -1104,10 +1130,26 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     navMockExams.style.display = 'none';
   }
 
+  // Literary Companion (Guided Reading Extracts & Audio Studio)
+  const hasGuidedReading = Boolean(
+    unitData.guided_reading && Array.isArray(unitData.guided_reading) && unitData.guided_reading.length > 0,
+  );
+  if (navReading && hasGuidedReading) {
+    navReading.style.display = 'flex';
+    navReading.dataset.action = 'switch-view';
+    navReading.dataset.view = 'reading';
+    navReading.dataset.unit = unitId;
+    navReading.innerHTML =
+      '<i class="fa-solid fa-book-open-reader" style="color: #be185d;"></i><span>Literary Companion</span>';
+    navReading.onclick = () => switchView('reading', unitId);
+  } else if (navReading) {
+    navReading.style.display = 'none';
+  }
+
   // Hide secondary / fragmented tabs to preserve clean hierarchy
   if (navUnitBooklet) navUnitBooklet.style.display = 'none';
   if (navIndividuals) navIndividuals.style.display = 'none';
-  if (navReading) navReading.style.display = 'none';
+  if (navReading && !hasGuidedReading) navReading.style.display = 'none';
   if (navDecisions) navDecisions.style.display = 'none';
   if (navTaboo) navTaboo.style.display = 'none';
 

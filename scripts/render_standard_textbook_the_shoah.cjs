@@ -70,9 +70,8 @@ function cleanProse(text) {
 function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'the_shoah', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
-  raw = raw.replace('const the_shoah_data =', 'the_shoah_data =');
-  raw = raw.replace(/export\s+default\s+[^;]+;?/g, '');
-  const sandbox = { module: { exports: {} } };
+  raw = raw.replace(/^\s*export\s+default\s+/, 'var unitData = ');
+  const sandbox = { module: { exports: {} }, unitData: null };
   vm.runInNewContext(raw, sandbox);
   return (sandbox.module && sandbox.module.exports && sandbox.module.exports.lessons)
     ? sandbox.module.exports

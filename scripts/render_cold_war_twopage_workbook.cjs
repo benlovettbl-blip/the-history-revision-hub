@@ -21,6 +21,7 @@ const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
+const { renderStandardBackCover } = require('./components/render_standard_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -1643,208 +1644,52 @@ function renderCoverPage() {
 // PAGE 20: OUTSIDE BACK COVER
 // ============================================================================
 function renderBackCover() {
-  const qrCodes = [
-    {
-      num: 1,
-      title: 'L1: Ideology Clash',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_1',
-    },
-    {
-      num: 2,
-      title: 'L2: Yalta to Potsdam',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_2',
-    },
-    {
-      num: 3,
-      title: 'L3: Iron Curtain',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_3',
-    },
-    {
-      num: 4,
-      title: 'L4: Cuban Crisis',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_4',
-    },
-    {
-      num: 5,
-      title: 'L5: Asian Proxies',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_5',
-    },
-    {
-      num: 6,
-      title: 'L6: Fall of Wall',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_6',
-    },
-    {
-      num: 7,
-      title: 'L7: Synoptic Verdict',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_7',
-    },
+  const taskMeta = [
+    { extType: 'Q1 Feat (4m) + Q2 Conseq (4m)', extMarks: 8 },
+    { extType: 'Q2 Narrative Account', extMarks: 8 },
+    { extType: 'Q1 Feat (4m) + Q2 Conseq (4m)', extMarks: 8 },
+    { extType: 'Q4 Evaluative Essay', extMarks: 12 },
+    { extType: 'Q2 Narrative Account', extMarks: 8 },
+    { extType: 'Q4 Evaluative Essay', extMarks: 12 },
+    { extType: 'Q4 Evaluative Essay', extMarks: 12 },
   ];
 
-  const qrCardsHtml = qrCodes
-    .map((qr) => {
-      const qrSvg = generateQrSvg(qr.url);
-      return `
-        <div style="border: 1px solid #0f172a; border-radius: 3px; padding: 2px 3px; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
-          <div style="font-family: 'Inter', sans-serif; font-size: 6.0pt; font-weight: 800; color: #0f172a; margin-bottom: 1px; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
-            ${qr.title}
-          </div>
-          <div style="width: 14mm; height: 14mm; margin: 1px auto; display: flex; align-items: center; justify-content: center;">
-            ${qrSvg}
-          </div>
-          <div style="font-family: 'Inter', sans-serif; font-size: 5.4pt; font-weight: 700; color: #475569; text-transform: uppercase;">
-            Scan to Quiz
-          </div>
-          <div style="font-family: 'Inter', sans-serif; font-size: 6.4pt; font-weight: 900; color: #0f172a; margin-top: 1px;">
-            Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 20
-          </div>
-        </div>`;
-    })
-    .join('');
-
-  return `
-  <!-- PAGE 20: OUTSIDE BACK COVER -->
-  <div class="page page-container recto-page" id="page-20" style="padding: 4mm 6mm; background: #ffffff;">
-    <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-      
-      <!-- Top Department Header Strip -->
-      <div style="border-bottom: 2.5px solid #0f172a; padding-bottom: 3px; display: flex; justify-content: space-between; align-items: flex-end;">
-        <div>
-          <div style="font-family: 'Inter', sans-serif; font-size: 9.0pt; font-weight: 900; color: #0f172a; letter-spacing: 1.2px; text-transform: uppercase;" data-department-name="The History Revision Hub">
-            <span class="school-brand-target">The History Revision Hub</span> &bull; Assessment &amp; Feedback Ledger
-          </div>
-          <div style="font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.6px; margin-top: 1px;">
-            Unit Mastery Tracking &bull; The Cold War (1945–1991)
-          </div>
-        </div>
-        <span style="background: #0f172a; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 900; padding: 2px 7px; border-radius: 2px;">
-          PAGES 1–20 COMPLETE
-        </span>
-      </div>
-
-      <!-- Student Assessment Record Table -->
-      <div style="border: 1.5px solid #0f172a; border-radius: 4px; overflow: hidden; margin-top: 4px; background: #ffffff;">
-        <div style="background: #0f172a; color: #ffffff; padding: 3px 8px; font-family: 'Inter', sans-serif; font-size: 7.6pt; font-weight: 900; text-transform: uppercase; letter-spacing: 0.8px; display: flex; justify-content: space-between;">
-          <span>Student Assessment Progress Record &bull; 7 Core Enquiries</span>
-          <span style="font-size: 6.8pt; letter-spacing: 0.5px;">Target Grade: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        </div>
-        
-        <table style="width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 7.2pt;">
-          <thead>
-            <tr style="background: #f1f5f9; border-bottom: 1.2px solid #0f172a;">
-              <th style="padding: 3px 6px; text-align: left; width: 42%; border-right: 1px solid #cbd5e1;">Enquiry Title</th>
-              <th style="padding: 3px 4px; text-align: center; width: 14%; border-right: 1px solid #cbd5e1;">Spine Notes</th>
-              <th style="padding: 3px 4px; text-align: center; width: 14%; border-right: 1px solid #cbd5e1;">Task (8/12m)</th>
-              <th style="padding: 3px 4px; text-align: center; width: 14%; border-right: 1px solid #cbd5e1;">Effort (1–4)</th>
-              <th style="padding: 3px 6px; text-align: center; width: 16%;">Teacher Sign</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-              <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">1. Capitalism vs Communism</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-              <td style="padding: 4px 6px; text-align: center;">____________</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1; background: #fafaf9;">
-              <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">2. Yalta to Potsdam (1945)</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-              <td style="padding: 4px 6px; text-align: center;">____________</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-              <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">3. Iron Curtain &amp; Berlin Blockade</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-              <td style="padding: 4px 6px; text-align: center;">____________</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1; background: #fafaf9;">
-              <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">4. Cuban Missile Crisis (1962)</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 12</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-              <td style="padding: 4px 6px; text-align: center;">____________</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1;">
-              <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">5. Proxy Wars: Korea &amp; Vietnam</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 8</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-              <td style="padding: 4px 6px; text-align: center;">____________</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #cbd5e1; background: #fafaf9;">
-              <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">6. Fall of Berlin Wall &amp; USSR</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 12</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-              <td style="padding: 4px 6px; text-align: center;">____________</td>
-            </tr>
-            <tr style="border-bottom: 1.2px solid #0f172a;">
-              <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; font-weight: 700;">7. Was the Cold War Ever "Cold"?</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 10</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 12</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-              <td style="padding: 4px 6px; text-align: center;">____________</td>
-            </tr>
-            <tr style="background: #e2e8f0; font-weight: 900;">
-              <td style="padding: 4px 6px; border-right: 1px solid #cbd5e1; text-transform: uppercase;">Cumulative Unit Total</td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 70</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 68</strong></td>
-              <td style="padding: 4px 4px; text-align: center; border-right: 1px solid #cbd5e1;">Avg: &nbsp;&nbsp;&nbsp;&nbsp;</td>
-              <td style="padding: 4px 6px; text-align: center; font-size: 7.6pt; color: #1e3a8a;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 138</strong></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Qualitative Feedback WWW & EBI Lines -->
-      <div style="border: 1.5px solid #0f172a; border-radius: 4px; padding: 4px 8px; margin-top: 4px; background: #ffffff;">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 7.2pt; text-transform: uppercase; color: #0f172a;">
-            Teacher Feedback &bull; What Went Well (WWW) &amp; Even Better If (EBI)
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.4pt; color: #475569;">Teacher Initials: _______ &bull; Date: _______</span>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 3px;">
-          <div style="display: flex; align-items: baseline;">
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 800; color: #15803d; width: 46px;">WWW:</span>
-            <div style="flex: 1; border-bottom: 1.2px solid #000000; height: 12px;"></div>
-          </div>
-          <div style="border-bottom: 1.2px solid #000000; height: 12px; margin-left: 46px;"></div>
-          <div style="display: flex; align-items: baseline; margin-top: 1px;">
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 800; color: #b91c1c; width: 46px;">EBI:</span>
-            <div style="flex: 1; border-bottom: 1.2px solid #000000; height: 12px;"></div>
-          </div>
-          <div style="border-bottom: 1.2px solid #000000; height: 12px; margin-left: 46px;"></div>
-        </div>
-      </div>
-
-      <!-- Vector QR Interactive Quizzing Hub -->
-      <div style="border: 1.5px solid #0f172a; border-radius: 4px; padding: 4px 6px; margin-top: 4px; background: #fafaf9;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px; border-bottom: 1px solid #0f172a; padding-bottom: 2px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 7.2pt; text-transform: uppercase; color: #0f172a; letter-spacing: 0.5px;">
-            📱 Digital Revision Hub &bull; 7 Lesson Retrieval Quizzes
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 6.2pt; color: #475569; font-weight: 700;">
-            Scan camera on smartphone or tablet
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;">
-          ${qrCardsHtml}
-        </div>
-      </div>
-
-      <!-- Bottom Platform Footer Strip -->
-      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1.2px solid #0f172a; padding-top: 3px; font-family: 'Inter', sans-serif; font-size: 6.8pt; color: #475569; margin-top: 4px;">
-        <span>The History Revision Hub &bull; 20-Page Saddle-Stitch Publication Engine</span>
-        <span>Commercial Educational Standard &bull; Neutral Department Edition 2026.1</span>
-      </div>
-
-    </div>
-  </div>`;
+  return renderStandardBackCover({
+    unitId: 'cold_war',
+    paperTitle: 'EDEXCEL GCSE (9–1) HISTORY • PAPER 2: SUPERPOWER RELATIONS & THE COLD WAR, 1941–1991',
+    keyTopicNum: 1,
+    trackerTitle: 'STUDENT ASSESSMENT RECORD • COLD WAR UNIT TRACKER',
+    trackerSubtitle: 'Paper 2: Superpower Relations and the Cold War, 1941–1991 • 7 Core Historical Enquiries',
+    enquiries: enquiryConfigs.map((cfg, idx) => {
+      const meta = taskMeta[idx] || { extType: 'Task', extMarks: 8 };
+      return {
+        num: cfg.lessonNum,
+        code: `Enquiry ${cfg.lessonNum}`,
+        title: cfg.title.replace(/^Enquiry\s*\d+:\s*/, ''),
+        enquiryQuestion: cfg.enquiryQuestion,
+        doNowMarks: 10,
+        extType: meta.extType,
+        extMarks: meta.extMarks,
+        totalMarks: 10 + meta.extMarks,
+      };
+    }),
+    feedback: {
+      signature: '____________________________',
+      date: '____________________',
+    },
+    qrLessons: [
+      { label: 'L1: Ideology', url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_1' },
+      { label: 'L2: Yalta-Potsdam', url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_2' },
+      { label: 'L3: Iron Curtain', url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_3' },
+      { label: 'L4: Cuban Crisis', url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_4' },
+      { label: 'L5: Proxy Wars', url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_5' },
+      { label: 'L6: Berlin Wall', url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_6' },
+      { label: 'L7: Cold War End', url: 'https://the-history-revision-hub.netlify.app/?unit=cold_war&quiz=lesson_7' },
+    ],
+    footerQuip: 'Unit Complete • Superpower Relations and the Cold War (1941–1991) • Retain this assessment record for parent consultations and GCSE revision monitoring.',
+    totalPageCount: 20,
+    renderFooterStrip,
+  });
 }
 
 // ============================================================================

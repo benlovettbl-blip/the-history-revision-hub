@@ -1149,6 +1149,12 @@ async function main() {
     console.log(`Starting compilation of ${unitsToCompile.length} KS3 unit(s)...`);
     const results = [];
     for (const unit of unitsToCompile) {
+      if (unit === 'great_war_part2') {
+        const { compile12PageCompanion } = require('./generate_great_war_part2_companion_12p.cjs');
+        await compile12PageCompanion();
+        results.push({ unitKey: 'great_war_part2', title: 'The Great War: Western Front & Aftermath (1914–1918)', pages: 12, status: 'OPTIMAL' });
+        continue;
+      }
       const res = await compileUnit(unit, browser);
       results.push(res);
     }

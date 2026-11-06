@@ -319,15 +319,15 @@ const MEDICINE_MILESTONES = [
     { date: 'c170 AD', title: 'Galen\'s Theory of Opposites' },
     { date: 'c1250', title: 'Church Controls Universities' },
     { date: 'Mar 1345', title: 'Conjunction of 3 Planets' },
-    { date: 'c1400', title: 'Urine Wheel Diagnosis Standard' }
+    { date: 'c1400', title: 'Urine Wheel Diagnosis' }
   ],
   // 2: Medieval Care & Black Death
   [
-    { date: 'c1200', title: 'Monastic Hospitals Care Not Cure' },
+    { date: 'c1200', title: 'Hospitals: Care Not Cure' },
     { date: '1348', title: 'Plague Enters Melcombe Regis' },
-    { date: '1348', title: 'Edward III Orders Street Cleansing' },
-    { date: '1349', title: '50% of English Population Dies' },
-    { date: '1350', title: 'Labour Shortage Transforms Feudalism' }
+    { date: '1348', title: 'Edward III Cleans Streets' },
+    { date: '1349', title: 'Half of Population Dies' },
+    { date: '1350', title: 'Labour Shortage: Feudal Shift' }
   ],
   // 3: Renaissance: Vesalius & Sydenham
   [
@@ -335,21 +335,21 @@ const MEDICINE_MILESTONES = [
     { date: '1560', title: 'Paré\'s Soothing Wound Balm' },
     { date: '1660', title: 'Royal Society Founded' },
     { date: '1665', title: 'Great Plague Hits London' },
-    { date: '1676', title: 'Sydenham\'s Medical Observations' }
+    { date: '1676', title: 'Sydenham: Observationes' }
   ],
   // 4: Harvey & Circulation
   [
     { date: '1616', title: 'Harvey Lectures on Heart' },
     { date: '1628', title: 'De Motu Cordis Published' },
-    { date: '1649', title: 'Harvey\'s Theory Provokes Debate' },
-    { date: '1661', title: 'Malpighi Observes Capillaries' },
+    { date: '1649', title: 'Harvey\'s Theory Challenged' },
+    { date: '1661', title: 'Malpighi: Capillaries' },
     { date: 'c1700', title: 'Harvey\'s Circulation Taught' }
   ],
   // 5: 18th-C Hospitals & Jenner
   [
     { date: '1741', title: 'Coram\'s Foundling Hospital' },
-    { date: '1750s', title: 'Specialist Voluntary Hospitals' },
-    { date: '1796', title: 'Jenner Inoculates James Phipps' },
+    { date: '1750s', title: 'Specialist Hospitals' },
+    { date: '1796', title: 'Jenner Inoculates Phipps' },
     { date: '1798', title: 'Smallpox Vaccine Inquiry' },
     { date: '1852', title: 'Compulsory Vaccination Act' }
   ],
@@ -357,40 +357,40 @@ const MEDICINE_MILESTONES = [
   [
     { date: '1861', title: 'Pasteur\'s Germ Theory' },
     { date: '1876', title: 'Koch Identifies Anthrax' },
-    { date: '1882', title: 'Koch Stains Tuberculosis Microbe' },
+    { date: '1882', title: 'Koch Stains TB Microbe' },
     { date: '1883', title: 'Koch Identifies Cholera' },
     { date: '1909', title: 'Ehrlich\'s Salvarsan 606' }
   ],
   // 7: Surgery: Pain & Infection
   [
-    { date: '1846', title: 'Liston Amputates with Ether' },
-    { date: '1847', title: 'Simpson Discovers Chloroform' },
-    { date: '1853', title: 'Queen Victoria Inhales Chloroform' },
+    { date: '1846', title: 'Liston Uses Ether' },
+    { date: '1847', title: 'Simpson: Chloroform' },
+    { date: '1853', title: 'Victoria: Chloroform' },
     { date: '1867', title: 'Lister\'s Carbolic Spray' },
-    { date: '1890s', title: 'Aseptic Theatre Revolution' }
+    { date: '1890s', title: 'Aseptic Surgery Era' }
   ],
   // 8: 19th-C Public Health & Cholera
   [
     { date: '1842', title: 'Chadwick\'s Sanitary Report' },
     { date: '1848', title: 'First Public Health Act' },
-    { date: '1854', title: 'Snow Removes Broad St Pump Handle' },
-    { date: '1858', title: 'Great Stink Spurs Bazalgette' },
+    { date: '1854', title: 'Snow: Broad St Pump' },
+    { date: '1858', title: 'Great Stink: Bazalgette' },
     { date: '1875', title: 'Compulsory Public Health Act' }
   ],
   // 9: Penicillin Miracle
   [
     { date: '1928', title: 'Fleming Observes Penicillin' },
-    { date: '1938', title: 'Florey & Chain Oxford Research' },
-    { date: '1941', title: 'Albert Alexander Clinical Trial' },
-    { date: '1941', title: 'Florey Solicits US Industrial Vats' },
+    { date: '1938', title: 'Florey & Chain at Oxford' },
+    { date: '1941', title: 'Albert Alexander Trial' },
+    { date: '1941', title: 'US Mass Fermentation Vats' },
     { date: '1944', title: 'D-Day Mass Supply Guaranteed' }
   ],
   // 10: Modern High-Tech, DNA & NHS
   [
     { date: '1948', title: 'Bevan Launches Free NHS' },
     { date: '1953', title: 'Crick & Watson Model DNA' },
-    { date: '1973', title: 'Hounsfield Invents CT Scanner' },
-    { date: '1978', title: 'First IVF Baby Louise Brown' },
+    { date: '1973', title: 'Hounsfield: CT Scanner' },
+    { date: '1978', title: 'First IVF: Louise Brown' },
     { date: '2003', title: 'Human Genome Mapped' }
   ],
   // 11: Western Front: Terrain & Wounds
@@ -398,15 +398,15 @@ const MEDICINE_MILESTONES = [
     { date: 'Oct 1914', title: 'First Ypres Creates Salient' },
     { date: 'Apr 1915', title: 'Second Ypres: Chlorine Gas' },
     { date: 'Jul 1916', title: 'Somme: 57,000 Day 1 Losses' },
-    { date: 'Apr 1917', title: 'Arras Underground Quarry Wards' },
+    { date: 'Apr 1917', title: 'Arras Underground Hospital' },
     { date: 'Jul 1917', title: 'Passchendaele Quagmire' }
   ],
   // 12: Western Front: Evacuation & Innovations
   [
     { date: '1914', title: 'RAMC Evacuation Chain Formed' },
-    { date: '1915', title: 'Curie Deploys Mobile X-Ray Vans' },
+    { date: '1915', title: 'Curie: Mobile X-Ray Vans' },
     { date: '1915', title: 'Sodium Citrate Blood Storage' },
-    { date: '1916', title: 'Thomas Splint Slashes Mortality' },
+    { date: '1916', title: 'Thomas Splint Introduced' },
     { date: 'Nov 1917', title: 'Cambrai: First Blood Depot' }
   ]
 ];

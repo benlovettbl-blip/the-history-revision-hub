@@ -1839,11 +1839,54 @@ export async function renderLessonsView() {
       }
     } catch (e) {}
 
+    // Check if a target narrative block jump was requested (e.g. from GCSE Do Now)
+    let hasNarrativeJump = false;
+    try {
+      const pendingJump = sessionStorage.getItem('hh_pending_narrative_jump');
+      if (pendingJump) {
+        sessionStorage.removeItem('hh_pending_narrative_jump');
+        const parsedJump = JSON.parse(pendingJump);
+        if (parsedJump && parsedJump.stageNum) {
+          hasNarrativeJump = true;
+          let attempts = 0;
+          const pollJump = () => {
+            attempts++;
+            const ok = typeof window.jumpToNarrativeBlock === 'function' && window.jumpToNarrativeBlock(parsedJump.stageNum);
+            if (!ok && attempts < 12) {
+              setTimeout(pollJump, 100);
+            }
+          };
+          setTimeout(pollJump, 120);
+        }
+      }
+    } catch (e) {}
+
+    if (!hasNarrativeJump) {
+      try {
+        const stageParam = new URLSearchParams(window.location.search).get('stage');
+        if (stageParam) {
+          const parsedStage = parseInt(stageParam, 10);
+          if (!isNaN(parsedStage)) {
+            hasNarrativeJump = true;
+            let attempts = 0;
+            const pollJump = () => {
+              attempts++;
+              const ok = typeof window.jumpToNarrativeBlock === 'function' && window.jumpToNarrativeBlock(parsedStage);
+              if (!ok && attempts < 12) {
+                setTimeout(pollJump, 100);
+              }
+            };
+            setTimeout(pollJump, 120);
+          }
+        }
+      } catch (e) {}
+    }
+
     if (targetStopId) {
       setTimeout(() => {
         if (window.jumpToStop) window.jumpToStop(targetStopId);
       }, 180);
-    } else {
+    } else if (!hasNarrativeJump) {
       if (window.scrollToTop) window.scrollToTop(true);
       else window.scrollTo(0, 0);
     }
@@ -1927,7 +1970,7 @@ export async function renderLessonsView() {
     headerHtml = `
       <div style="position: relative; text-align: center; padding: 70px 24px 50px 24px; background-image: url('${heroImageUrl}'); background-size: cover; background-position: ${heroBgPos}; border-radius: 0;">
         <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.88));"></div>
-        <div style="position: relative; z-index: 1; max-width: 900px; margin: 0 auto;">
+        <div style="position: relative; z-index: 1; max-width: 1160px; margin: 0 auto;">
           <h1 class="enquiry-title" style="font-family: 'Playfair Display', serif; font-size: clamp(1.65rem, 5.2vw, 2.7rem); line-height: 1.25; color: white; margin-bottom: 12px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); hyphens: none; -webkit-hyphens: none; word-break: normal; overflow-wrap: normal; text-wrap: balance;">${data.enquiry_question || data.enquiry || 'Unit Enquiry'}</h1>
           <h2 style="font-size: clamp(1.05rem, 3.5vw, 1.35rem); color: #cbd5e1; font-weight: 500; margin-top: 0; margin-bottom: 0; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
             ${data.title}
@@ -3103,3 +3146,36 @@ export async function renderDigitalReaderView(param) {
   const { renderDigitalReaderView: renderReader } = await import('./digital_textbook_reader.js');
   await renderReader(param);
 }
+
+export async function renderReadingView(options = {}) {
+  const container = document.getElementById('main-content');
+  const unitId = state.selectedUnitId || window.currentUnitId || 'great_war_part2';
+  const unitData = state.activeUnitData || {};
+  const guidedReadingData = unitData.guided_reading || [];
+
+  const urlParams = new URLSearchParams(window.location.search);
+  let lessonParam = options && options.lessonIndex !== undefined ? options.lessonIndex : null;
+  if (lessonParam === null) {
+    const rawLesson = urlParams.get('lesson');
+    if (rawLesson !== null) {
+      const parsed = parseInt(rawLesson, 10);
+      if (!isNaN(parsed)) {
+        // e.g. ?lesson=1 -> index 0
+        lessonParam = parsed > 0 ? parsed - 1 : 0;
+      }
+    }
+  }
+  const currentLessonIndex = typeof lessonParam === 'number' ? lessonParam : 0;
+
+  initGuidedReadingTask(container, guidedReadingData, { currentLessonIndex, unitId, unitData });
+}
+
+export async function renderMarkingView(options = {}) {
+  const container = document.getElementById('main-content');
+  const unitId = state.selectedUnitId || window.currentUnitId || 'great_war_part2';
+  const unitData = state.activeUnitData || {};
+
+  const { renderDepartmentMarkingBank } = await import('./marking_bank.js');
+  renderDepartmentMarkingBank(container, unitId, unitData);
+}
+

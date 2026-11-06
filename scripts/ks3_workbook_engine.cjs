@@ -15,6 +15,7 @@ const {
   renderKs3FrontCover,
   renderKs3BackCover,
   generateQrSvg,
+  renderVersoLessonQr,
 } = require('./components/render_standard_cover.cjs');
 const { getThematicStrandsForUnit } = require('../src/curriculum_strands.cjs');
 
@@ -307,16 +308,19 @@ function buildKs3WorkbookHtml(unitConfig) {
   <div class="page page-container verso-page" id="page-${leftPageNum}">
     <div class="page-body-full">
       <div>
-        <div style="border-bottom: 2px solid #0f172a; padding-bottom: 2px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: baseline;">
-          <div>
-            <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; text-transform: uppercase; letter-spacing: 0.8px; color: #64748b; font-weight: 800;">
-              KS3 ${unitTitle.toUpperCase()} &bull; LESSON ${idx + 1}
+        <div style="border-bottom: 2px solid #0f172a; padding-bottom: 2px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+          <div style="flex: 1; min-width: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; text-transform: uppercase; letter-spacing: 0.8px; color: #64748b; font-weight: 800;">
+                KS3 ${unitTitle.toUpperCase()} &bull; LESSON ${idx + 1}
+              </div>
+              <span class="badge">${l.skill || 'Historical Analysis'}</span>
             </div>
             <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #0f172a; margin: 1px 0 0 0; font-weight: 900; line-height: 1.15;">
               Enquiry ${idx + 1}: ${cleanEnquiry}
             </h2>
           </div>
-          <span class="badge">${l.skill || 'Historical Analysis'}</span>
+          ${renderVersoLessonQr({ unitId, lessonId: l.id || `lesson_${idx + 1}` })}
         </div>
 
         <!-- Core Learning Objectives -->

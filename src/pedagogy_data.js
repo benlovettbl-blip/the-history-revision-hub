@@ -267,14 +267,17 @@ export const PEDAGOGY_RESEARCH_BANK = [
     applicationHeading: 'Departmental & Platform Implementation',
     implementation: [
       'Strict Pedagogical Recall Isolation: "Do Now" activities strictly test recall from prior lessons or units. They NEVER ask about content from today\'s lesson.',
+      '3-Tier Retrieval Architecture: Teachers toggle between Mode 1 (Last Lesson immediate recall), Mode 2 (Unit Interleaving across Lessons 1 to N-1), and Mode 3 (Synoptic All cross-specification exam practice with interactive unit chips).',
+      'Hyperlinked Diagnostic Deep-Links: Revealed answers provide collapsible micro-explanation drawers and deep-link badges targeting the exact narrative stage (#para-X) in a non-destructive new tab, preserving starter position, timers, and progress.',
       'Targeted Discussion Prompts in Teacher Notes: Every learning objective includes an actionable discussion prompt to diagnose whole-class comprehension on the fly.',
       'Small-Step Guided Practice: Complex historical causation is taught in small, manageable sequences followed immediately by application.',
       'High-Success-Rate Calibration: Starter retrieval is calibrated for 80%+ success, cementing student confidence before tackling new content.',
     ],
     protocolHeading: 'Classroom Protocol for History Teachers',
     teacherProtocols: [
-      'Enforce silent, independent completion of the Do-Now during the first 4 minutes of the lesson.',
-      'Do not allow pupils to consult textbooks during the Do-Now; it must function as genuine closed-book memory retrieval.',
+      'Enforce silent, independent completion of the Do-Now during the first 4 minutes of the lesson with the built-in 3m/5m countdown timer.',
+      'Do not allow pupils to consult textbooks during the initial Do-Now; it must function as genuine closed-book memory retrieval.',
+      'For missed questions, instruct pupils to tap the [📖 Lesson X • Stage Y ↗] badge to review the 1-paragraph narrative in a secondary tab, closing it (Ctrl+W) in 30 seconds without interrupting starter flow.',
       'Use cold-calling on discussion prompts to verify whole-class readiness before transitioning to extended writing.',
     ],
     citations: [

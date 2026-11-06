@@ -86,9 +86,6 @@ function cleanProse(text) {
     .replace(/([a-zA-Z])"([a-zA-Z])/g, '$1" $2')
     .replace(/\s*\(\s*\)/g, '')
     .replace(/\s{2,}/g, ' ')
-    .replace(/\\*\\*\\*(.*?)\\*\\*\\*/g, '<strong><em></em></strong>')
-    .replace(/\\*\\*(.*?)\\*\\*/g, '<strong></strong>')
-    .replace(/\\*(.*?)\\*/g, '<em></em>')
     .trim();
 }
 

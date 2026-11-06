@@ -972,9 +972,9 @@ const WEIMAR_ENQUIRY_CONFIGS = {
           "dates": "1933–1938",
           "title": "Left-Wing Underground Workers' Resistance",
           "bullets": [
-            "Mit Brennender Sorge (1937)",
-            "Pope Pius XI encyclical",
-            "Concordat violations condemned"
+            "KPD and SPD underground cells",
+            "Rote Kapelle courier networks",
+            "Factory sabotage & illegal leaflets"
           ],
           "focusClue": "How did outlawed Communist and Socialist cells maintain clandestine resistance?"
         },
@@ -982,9 +982,9 @@ const WEIMAR_ENQUIRY_CONFIGS = {
           "dates": "1936–1939",
           "title": "Youth Rebellion: The Edelweiss Pirates",
           "bullets": [
-            "Pastor Martin Niemöller",
-            "Dietrich Bonhoeffer resistance",
-            "Pastors Emergency League"
+            "Edelweiss Pirates defiance",
+            "Working-class youth rebellion",
+            "Camp beatings & anti-Nazi leaflets"
           ],
           "focusClue": "Why did working-class youth rebel against compulsory state youth movements?"
         },
@@ -992,9 +992,9 @@ const WEIMAR_ENQUIRY_CONFIGS = {
           "dates": "1937–1939",
           "title": "Cultural Dissent: The Swing Youth",
           "bullets": [
-            "Edelweiss Pirates defiance",
-            "Working-class youth rebellion",
-            "Camp beatings & anti-Nazi leaflets"
+            "Swing Youth culture",
+            "American jazz music",
+            "Middle-class non-conformity"
           ],
           "focusClue": "How did middle-class youth use foreign music to reject Nazi conformity?"
         },
@@ -1002,9 +1002,9 @@ const WEIMAR_ENQUIRY_CONFIGS = {
           "dates": "1937–1939",
           "title": "Religious Resistance: Niemöller & Galen",
           "bullets": [
-            "Swing Youth culture",
-            "American jazz music",
-            "Middle-class non-conformity"
+            "Mit Brennender Sorge (1937)",
+            "Pastor Martin Niemöller & Bonhoeffer",
+            "Bishop von Galen euthanasia protests"
           ],
           "focusClue": "Why did the regime hesitate to execute high-profile church critics?"
         }

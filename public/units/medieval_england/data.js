@@ -472,7 +472,11 @@ export default {
             "answer": "The Danelaw."
           },
           {
-            "question": "What council of English nobles and bishops advised Anglo-Saxon kings on royal succession?",
+            "question": "Which King of Wessex successfully defended his kingdom against the Great Heathen Army and united the Anglo-Saxons against Viking conquest?",
+            "answer": "King Alfred the Great."
+          },
+          {
+            "question": "What council of English nobles and bishops advised Anglo-Saxon kings on royal succession and kingdom governance?",
             "answer": "The Witan (Witenagemot)."
           }
         ]
@@ -3469,20 +3473,24 @@ export default {
         "type": "questions",
         "items": [
           {
-            "question": "In what year was Magna Carta sealed at Runnymede?",
+            "question": "In what year was Magna Carta agreed between King John and his rebel barons at Runnymede?",
             "answer": "1215."
           },
           {
-            "question": "What term describes unfree medieval peasants tied to a lord’s manor?",
-            "answer": "Serfs (villeins)."
+            "question": "What fundamental legal principle in Clause 39 established that no free man could be imprisoned without lawful trial?",
+            "answer": "The Rule of Law (Due Process)."
           },
           {
-            "question": "What bacterium carried by rat fleas caused the Black Death?",
-            "answer": "Yersinia pestis."
+            "question": "Which English king was forced to seal Magna Carta following the loss of Normandy and heavy scutage taxation?",
+            "answer": "King John."
           },
           {
-            "question": "What flat tax levied equally on every individual head sparked rebellion in 1381?",
-            "answer": "The Poll Tax."
+            "question": "Which archbishop of Canterbury was murdered on the altar steps in 1170 after clashing with Henry II?",
+            "answer": "Thomas Becket."
+          },
+          {
+            "question": "What social hierarchy bound unfree peasants (serfs/villeins) to work the lord's manor in return for land and protection?",
+            "answer": "The Feudal System."
           }
         ]
       },

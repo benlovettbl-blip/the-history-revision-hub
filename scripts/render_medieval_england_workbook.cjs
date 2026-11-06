@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
+const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -676,19 +677,22 @@ function renderSpinePage(cfg, pageNum) {
   <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full">
       
-      <!-- Lesson Header with Inquiry Question Title (Expanded for High Legibility) -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 2px 8px; border-radius: 2px;">
-            ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
-            YEAR 7 &bull; MEDIEVAL ENGLAND: 1066–1485
-          </span>
+      <!-- Lesson Header with Inquiry Question Title & 14mm Micro-QR -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 2px 8px; border-radius: 2px;">
+              ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
+              YEAR 7 &bull; MEDIEVAL ENGLAND: 1066–1485
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 13.0pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
+            ${cfg.enquiryQuestion}
+          </h2>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 13.0pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
-          ${cfg.enquiryQuestion}
-        </h2>
+        ${renderVersoLessonQr({ unitId: 'medieval_england', lessonId: cfg.id || `lesson_${cfg.lessonNum}` })}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -856,7 +860,7 @@ function renderRightPage(cfg, pageNum) {
           </div>
         </div>
         <div style="display: flex; flex-direction: column; gap: 0; flex: 1; min-height: 0;">
-          ${Array(9)
+          ${Array(11)
             .fill(
               '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
             )
@@ -883,7 +887,7 @@ function renderRightPage(cfg, pageNum) {
             <strong style="color: #000000;">Task:</strong> Explain why the interpretations differ by analysing their different points of focus:
           </div>
           <div style="display: flex; flex-direction: column; gap: 0; flex: 1; min-height: 0; margin-bottom: 3px;">
-            ${Array(9)
+            ${Array(11)
               .fill(
                 '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
               )
@@ -1766,7 +1770,7 @@ function compileMedievalWorkbook() {
   // ====================================================================
   html += `
   <!-- PAGE 16: OUTSIDE BACK COVER -->
-  <div class="page page-container verso-page" id="page-16" style="padding: 4mm 6mm;">
+  <div class="page page-container verso-page" id="page-16" style="padding: 6.5mm 6mm;">
     <div class="page-body-full">
       <!-- Back Cover Header Strip -->
       <div style="border-bottom: 2px solid #0f284e; padding-bottom: 3px; margin-bottom: 6px;">
@@ -2112,4 +2116,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { compileMedievalWorkbook };
+module.exports = { compileMedievalWorkbook, enquiryConfigs };

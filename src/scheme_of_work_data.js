@@ -972,12 +972,13 @@ export const SCHEMES_OF_WORK_DATA = {
       'How did total industrial warfare transform the human experience of soldiers, civilians, and the global order between 1914 and 1919?',
     textbookPdf: '/pdfs/great_war_part2_textbook.pdf',
     workbookPdf: '/pdfs/great_war_part2_pupil_workbook.pdf',
+    combinedPdf: '/pdfs/The_Course_of_the_Great_War_Combined_Master_Scholar_Workbook.pdf',
     enquiries: [
       {
         num: 1,
-        title: 'Why were young men so desperate to join the slaughter of 1914?',
+        title: '1914 & The Rush to the Colours',
         enquiryQuestion:
-          'What motivated millions of young men to enlist voluntarily in the autumn of 1914?',
+          'Why were young British men so desperate to volunteer for the slaughter of 1914?',
         disciplinaryFocus: 'Historical Motivation & Social Attitudes',
         sources:
           'Lord Kitchener "Your Country Needs You" poster; Pals Battalion recruitment diaries; White Feather campaign letters',
@@ -994,9 +995,9 @@ export const SCHEMES_OF_WORK_DATA = {
       },
       {
         num: 2,
-        title: 'Did British generals make the horror of trench warfare worse?',
+        title: 'Trench Warfare & The Haig Controversy (1915–1916)',
         enquiryQuestion:
-          'How far is the "Lions led by Donkeys" verdict on British military leadership justified?',
+          'Did British generals make the horror of trench warfare worse, or was Haig trapped in an industrial learning curve?',
         disciplinaryFocus: 'Historiographical Debate & Strategic Evaluation',
         sources:
           'Haig Battle of the Somme Despatches; John Nash (Over the Top, 1918); Somme first-day casualty returns (1 July 1916)',
@@ -1013,9 +1014,9 @@ export const SCHEMES_OF_WORK_DATA = {
       },
       {
         num: 3,
-        title: "How much of a 'World' War was it, and why were the Empire's troops forgotten?",
+        title: 'Global Empire & The Forgotten Fronts (1914–1918)',
         enquiryQuestion:
-          'How vital were Commonwealth, Indian, and African colonial troops to the Allied war effort?',
+          'Why were over four million colonial and dominion troops erased from popular memory?',
         disciplinaryFocus: 'Historical Diversity & Center-Periphery Balance',
         sources:
           'Indian Corps letters from France (1915); ANZAC Gallipoli diaries; West India Regiment photographic logs',
@@ -1032,9 +1033,9 @@ export const SCHEMES_OF_WORK_DATA = {
       },
       {
         num: 4,
-        title: 'How did a war fought miles away completely control daily life in Britain?',
+        title: 'The Home Front & Women’s Total War (1914–1918)',
         enquiryQuestion:
-          'How did the Defence of the Realm Act (DORA) and total war transform British society and civilian liberties?',
+          'How far did the First World War transform the British state and daily life on the Home Front?',
         disciplinaryFocus: 'Change & Continuity / State Intervention',
         sources:
           'Defence of the Realm Act (DORA) 1914 Text; Munitionettes factory registers; Rationing coupons (1918)',
@@ -1051,10 +1052,9 @@ export const SCHEMES_OF_WORK_DATA = {
       },
       {
         num: 5,
-        title:
-          'Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?',
+        title: 'The Treaty of Versailles & The Flawed Peace (1918–1919)',
         enquiryQuestion:
-          'Was the 1919 Treaty of Versailles a fair peace, a vindictive Diktat, or a fatal compromise?',
+          'Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?',
         disciplinaryFocus: 'Synoptic Assessment & Historical Significance',
         sources:
           'Treaty of Versailles War Guilt Clause 231; German delegation protest speech (Brockdorff-Rantzau); Dyson cartoon (1919)',

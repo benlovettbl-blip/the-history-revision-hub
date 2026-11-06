@@ -18,27 +18,27 @@ export const unitSynopses = {
     ],
   },
   great_war: {
-    period: '1871 – 1916',
+    period: '1871 – 1914',
     synopsis:
-      'Decades of imperial vanity, secret alliances, and dreadnought arms races wound the clockwork of European catastrophe. When a teenage assassin fired two fatal shots on the streets of Sarajevo in June 1914, thirty days of diplomatic brinkmanship sleepwalked an entire continent into ruin. Step onto the frozen fire-steps of Flanders, through the lethal gas clouds of Ypres, and into the roaring artillery barrage of the Somme to discover how modern industrial technology transformed warfare forever.',
+      "Decades of imperial vanity, naval rivalries, and rigid alliance treaties wound the clockwork of European catastrophe. From the blood and iron of German unification under Bismarck to the industrial race between British Dreadnoughts and Kaiser Wilhelm’s High Seas Fleet, Europe split into two heavily armed camps. When a teenage assassin fired two fatal shots in Sarajevo on 28 June 1914, thirty days of diplomatic brinkmanship sleepwalked an entire continent into total war.",
     tags: [
-      'Alliance Systems',
-      'Schlieffen Plan',
-      'First Battle of Ypres',
-      'Trench Stalemate',
-      'The Somme (1916)',
+      'German Unification (1871)',
+      'Scramble for Africa',
+      'Anglo-German Naval Race',
+      'Triple Entente & Alliance',
+      'The July Crisis (1914)',
     ],
   },
   great_war_part2: {
-    period: '1916 – 1918',
+    period: '1914 – 1919',
     synopsis:
-      "As the stalemate dragged into its third bleeding year, the war metastasized across continents, oceans, and home fronts. From the slaughter of Passchendaele's drowned crater fields to the collapse of Tsarist Russia, unrestricted U-boat attacks, and the arrival of American doughboys, empires were pushed to the brink of starvation and revolution. Follow the titanic clashes of the German Spring Offensive and the British Hundred Days Offensive that finally shattered the Hindenburg Line and forced the Armistice.",
+      "When Europe plunged into the abyss in August 1914, millions of young men rushed to enlist in an adventure they believed would be over by Christmas. Instead, industrial machinery transformed warfare into unprecedented slaughter. Confront the muddy hell of trench warfare and the controversial decisions of British generals at the Somme, uncover the forgotten global sacrifice of colonial soldiers from across the Empire, examine how total war gripped the Home Front under DORA, and discover how the bitter compromises of the Treaty of Versailles in 1919 sowed the seeds of future catastrophe.",
     tags: [
-      'Passchendaele (1917)',
-      'Unrestricted Submarine Warfare',
-      'Operation Michael (1918)',
-      'Hundred Days Offensive',
-      'The Armistice',
+      'Voluntary Enlistment & Pals',
+      'Trench Warfare & The Somme',
+      "The Empire's Contribution",
+      'The Home Front & DORA',
+      'Treaty of Versailles (1919)',
     ],
   },
   edexcel_medicine: {
@@ -231,18 +231,9 @@ export function renderUnitSynopsis(data, unitId) {
 
   const synopsisText = customSynopsis || config.synopsis;
   const period = data?.period || config.period || '';
-  const tags = data?.synopsis_tags || config.tags || [];
-
   const periodBadge = period
     ? `<span class="archival-shelfmark-stamp" style="font-size: 0.74rem; color: #64748b; border-color: #cbd5e1;">${period}</span>`
     : '';
-
-  const tagElements = tags
-    .map(
-      (tag) =>
-        `<span style="background: #ffffff; border: 1px solid #cbd5e1; color: #334155; font-size: 0.74rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">${tag}</span>`,
-    )
-    .join('');
 
   return `
     <div class="unit-synopsis-card" style="background: #fdfbf7; border: 1.5px solid #e2d9cc; border-left: 5px solid #1e3a8a; border-radius: 10px; padding: 20px 24px; margin-bottom: 26px; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
@@ -253,22 +244,9 @@ export function renderUnitSynopsis(data, unitId) {
         </div>
         ${periodBadge}
       </div>
-      <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; line-height: 1.7; color: #1e293b; margin: 0 0 14px 0; font-style: italic;">
+      <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; line-height: 1.7; color: #1e293b; margin: 0; font-style: italic;">
         &ldquo;${synopsisText}&rdquo;
       </p>
-      ${
-        tags.length > 0
-          ? `
-        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; border-top: 1px dashed #e2d9cc; padding-top: 12px;">
-          <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
-            <span style="color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.7rem;">Core Case Studies:</span>
-            ${tagElements}
-          </div>
-          <span style="color: #94a3b8; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 500;">Curated Scheme of Work</span>
-        </div>
-      `
-          : ''
-      }
     </div>
   `;
 }

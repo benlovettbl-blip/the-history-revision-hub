@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
+const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -63,7 +64,7 @@ const enquiryConfigs = [
       {
         step: 1,
         date: 'Aug 1914',
-        paraRef: '[1.1–1.2]',
+        paraRef: '[1.1]',
         questionHeading:
           'What forced Britain to launch Kitchener’s urgent call for 500,000 volunteers?',
         bullets: ['Small Regular Army', 'No Conscription', 'Kitchener’s Dire Call'],
@@ -73,7 +74,7 @@ const enquiryConfigs = [
       {
         step: 2,
         date: 'Aug–Sept 1914',
-        paraRef: '[2.1–2.2]',
+        paraRef: '[1.2]',
         questionHeading:
           'How did the invasion of Belgium spark genuine moral outrage and civic duty?',
         bullets: ['1839 Treaty of London', 'German Atrocities', 'Crusade for Law'],
@@ -83,7 +84,7 @@ const enquiryConfigs = [
       {
         step: 3,
         date: 'Sept 1914',
-        paraRef: '[3.1–3.2]',
+        paraRef: '[1.3]',
         questionHeading:
           'Why did workplace camaraderie and local pride drive the formation of Pals Battalions?',
         bullets: [
@@ -97,7 +98,7 @@ const enquiryConfigs = [
       {
         step: 4,
         date: 'Autumn 1914',
-        paraRef: '[4.1–4.2]',
+        paraRef: '[1.4]',
         questionHeading:
           'In what ways did poverty, adventure, and the King’s Shilling lure young recruits?',
         bullets: ['Regular Pay & Food', 'Escape Factory Drudgery', 'Over by Christmas'],
@@ -107,7 +108,7 @@ const enquiryConfigs = [
       {
         step: 5,
         date: 'Late 1914',
-        paraRef: '[5.1–5.2]',
+        paraRef: '[1.5]',
         questionHeading:
           'How did state propaganda and social coercion make refusal to enlist unbearable?',
         bullets: ['Kitchener Finger Poster', 'White Feather Movement', 'Unbearable Social Shame'],
@@ -149,7 +150,7 @@ const enquiryConfigs = [
       {
         step: 1,
         date: 'Autumn 1914',
-        paraRef: '[1.1–1.2]',
+        paraRef: '[2.1]',
         questionHeading:
           'What forced armies underground into a 400-mile line of industrial stalemate?',
         bullets: ['Race to the Sea', 'Deadly Machine Guns', 'Digging In to Survive'],
@@ -159,7 +160,7 @@ const enquiryConfigs = [
       {
         step: 2,
         date: '1915',
-        paraRef: '[2.1–2.2]',
+        paraRef: '[2.2]',
         questionHeading:
           'How was the three-tier trench system constructed, traversed, and defended?',
         bullets: ['Zig-Zag Trench Lines', 'Deep Concrete Dugouts', 'Barbed Wire Traps'],
@@ -169,7 +170,7 @@ const enquiryConfigs = [
       {
         step: 3,
         date: '1915–1916',
-        paraRef: '[3.1–3.2]',
+        paraRef: '[2.3]',
         questionHeading:
           'What lethal physical and psychological trauma did infantry endure in the mud?',
         bullets: ['Trench Foot & Frozen Mud', 'Relentless Heavy Shelling', 'Shell Shock Trauma'],
@@ -179,7 +180,7 @@ const enquiryConfigs = [
       {
         step: 4,
         date: '1 July 1916',
-        paraRef: '[4.1–4.2]',
+        paraRef: '[2.4]',
         questionHeading:
           'Why did the First Day of the Somme become the bloodiest disaster in British history?',
         bullets: ['7-Day Bombardment', 'Barbed Wire Intact', '57,470 Casualties'],
@@ -189,7 +190,7 @@ const enquiryConfigs = [
       {
         step: 5,
         date: '1916–1918',
-        paraRef: '[5.1–5.2]',
+        paraRef: '[2.5]',
         questionHeading:
           'Was Sir Douglas Haig a callous "butcher" or a commander learning total war?',
         bullets: ['Frontal Attacks in Mud', 'Hard War Lessons Learnt', 'Tanks & Combined Arms'],
@@ -242,7 +243,7 @@ const enquiryConfigs = [
       {
         step: 1,
         date: '1914',
-        paraRef: '[1.1–1.2]',
+        paraRef: '[3.1]',
         questionHeading:
           'Why was Britain completely dependent on mobilising 4 million imperial subjects?',
         bullets: [
@@ -256,7 +257,7 @@ const enquiryConfigs = [
       {
         step: 2,
         date: '1914–1915',
-        paraRef: '[2.1–2.2]',
+        paraRef: '[3.2]',
         questionHeading:
           'How crucially did 1.5 million Indian soldiers save the crumbling Allied line at Ypres?',
         bullets: [
@@ -270,7 +271,7 @@ const enquiryConfigs = [
       {
         step: 3,
         date: '1915',
-        paraRef: '[3.1–3.2]',
+        paraRef: '[3.3]',
         questionHeading:
           'Why did the catastrophe of Gallipoli forge national identity for Australia and New Zealand?',
         bullets: ['Anzac Cove Steep Cliffs', 'Ottoman Machine Guns', 'Birth of ANZAC Legend'],
@@ -280,7 +281,7 @@ const enquiryConfigs = [
       {
         step: 4,
         date: '1916–1918',
-        paraRef: '[4.1–4.2]',
+        paraRef: '[3.4]',
         questionHeading:
           'In what ways did the Chinese Labour Corps and African Pioneers sustain Allied logistics?',
         bullets: ['140,000 Chinese Labourers', 'Unloading Heavy Shells', 'Guarded Curfew Camps'],
@@ -290,7 +291,7 @@ const enquiryConfigs = [
       {
         step: 5,
         date: 'Post-1918',
-        paraRef: '[5.1–5.2]',
+        paraRef: '[3.5]',
         questionHeading:
           'Why were non-white colonial soldiers denied equal pensions, medals, and remembrance?',
         bullets: ['No Marked African Graves', 'Buried in Anonymous Pits', 'Victory Parade Erasure'],
@@ -338,7 +339,7 @@ const enquiryConfigs = [
       {
         step: 1,
         date: 'Aug 1914',
-        paraRef: '[1.1–1.2]',
+        paraRef: '[4.1]',
         questionHeading:
           'In what ways did DORA grant the British state unprecedented authoritarian control?',
         bullets: ['State Control Under DORA', 'Press Censorship Imposed', 'Early Pub Closures'],
@@ -348,7 +349,7 @@ const enquiryConfigs = [
       {
         step: 2,
         date: '1915–1916',
-        paraRef: '[2.1–2.2]',
+        paraRef: '[4.2]',
         questionHeading:
           'What forced David Lloyd George to nationalise munitions factories in 1915?',
         bullets: ['1915 Daily Mail Headlines', 'Frontline Shell Famine', 'State Takes Over Output'],
@@ -358,7 +359,7 @@ const enquiryConfigs = [
       {
         step: 3,
         date: 'Jan 1916',
-        paraRef: '[3.1–3.2]',
+        paraRef: '[4.3]',
         questionHeading:
           'Why did catastrophic frontline casualties force Britain to impose conscription in 1916?',
         bullets: [
@@ -372,7 +373,7 @@ const enquiryConfigs = [
       {
         step: 4,
         date: '1916–1918',
-        paraRef: '[4.1–4.2]',
+        paraRef: '[4.4]',
         questionHeading:
           'How did 1 million "Canary Girls" transform industrial production despite toxic hazards?',
         bullets: [
@@ -386,7 +387,7 @@ const enquiryConfigs = [
       {
         step: 5,
         date: '1917–1918',
-        paraRef: '[5.1–5.2]',
+        paraRef: '[4.5]',
         questionHeading:
           'Why did unrestricted German submarine warfare push Britain to the brink of starvation?',
         bullets: ['U-Boats Sink Merchantmen', 'Six Weeks Food Reserve', 'Compulsory Ration Books'],
@@ -436,7 +437,7 @@ const enquiryConfigs = [
   {
     lessonNum: 5,
     id: 'lesson_5_versailles',
-    title: 'Enquiry 5: 1918–1919 & The Treaty of Versailles',
+    title: 'Enquiry 5: The Treaty of Versailles & The Flawed Peace (1918–1919)',
     enquiryQuestion:
       'Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?',
     specAnchor:
@@ -445,7 +446,7 @@ const enquiryConfigs = [
       {
         step: 1,
         date: '11 Nov 1918',
-        paraRef: '[1.1–1.2]',
+        paraRef: '[5.1]',
         questionHeading:
           'What forced the German military to concede defeat and accept the Armistice in 1918?',
         bullets: ['Kiel Sailors Mutiny', 'Kaiser Flees to Holland', 'Railway Armistice Signed'],
@@ -455,7 +456,7 @@ const enquiryConfigs = [
       {
         step: 2,
         date: 'Jan–June 1919',
-        paraRef: '[2.1–2.2]',
+        paraRef: '[5.2]',
         questionHeading:
           'How did conflicting national motives divide Clemenceau, Lloyd George, and Wilson?',
         bullets: [
@@ -469,7 +470,7 @@ const enquiryConfigs = [
       {
         step: 3,
         date: '28 June 1919',
-        paraRef: '[3.1–3.2]',
+        paraRef: '[5.3]',
         questionHeading:
           'Why did Germans across all political parties denounce the Treaty terms as an unjust "Diktat"?',
         bullets: [
@@ -483,7 +484,7 @@ const enquiryConfigs = [
       {
         step: 4,
         date: 'June–Dec 1919',
-        paraRef: '[4.1–4.2]',
+        paraRef: '[5.4]',
         questionHeading:
           'How did Article 231, Keynes’ warning, and Will Dyson’s cartoon predict future catastrophe?',
         bullets: [
@@ -497,7 +498,7 @@ const enquiryConfigs = [
       {
         step: 5,
         date: '1920–1939',
-        paraRef: '[5.1–5.2]',
+        paraRef: '[5.5]',
         questionHeading:
           'The Historical Verdict: Was Versailles an impossibly harsh peace or an unenforced compromise?',
         bullets: [
@@ -637,19 +638,22 @@ function renderSpinePage(cfg, pageNum) {
   <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full">
       
-      <!-- Lesson Header with Inquiry Question Title -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
-            ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            YEAR 9 &bull; THE GREAT WAR: WESTERN FRONT &amp; AFTERMATH (1914–1919)
-          </span>
+      <!-- Lesson Header with Inquiry Question Title & 14mm Micro-QR -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; border: 1.2px solid #000000; padding: 1.5px 7px; border-radius: 2px;">
+              ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              YEAR 9 &bull; THE GREAT WAR: WESTERN FRONT &amp; AFTERMATH (1914–1919)
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 13.0pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
+            ${cfg.enquiryQuestion}
+          </h2>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 13.0pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
-          ${cfg.enquiryQuestion}
-        </h2>
+        ${renderVersoLessonQr({ unitId: 'great_war_part2', lessonId: cfg.id || `lesson_${cfg.lessonNum}` })}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -2049,7 +2053,7 @@ function compileGreatWarPart2Workbook() {
           </span>
         </div>
         <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; text-align: center;">
-          \${enquiryConfigs
+          ${enquiryConfigs
             .map((cfg, idx) => {
               const quizUrl =
                 'https://the-history-revision-hub.netlify.app/?unit=great_war_part2&lesson=' +
@@ -2065,17 +2069,17 @@ function compileGreatWarPart2Workbook() {
               ];
               return (
                 '<div style="border: 1.2px solid #0f284e; border-radius: 3px; padding: 5px 2px; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">' +
-                '<div style="font-family: \\'Inter\\', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase; margin-bottom: 1px; color: #0f284e;">Enquiry ' +
+                '<div style="font-family: Inter, sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase; margin-bottom: 1px; color: #0f284e;">Enquiry ' +
                 cfg.lessonNum +
                 '</div>' +
-                '<div style="font-family: \\'Inter\\', sans-serif; font-size: 6.5pt; font-weight: 700; color: #475569; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">' +
+                '<div style="font-family: Inter, sans-serif; font-size: 6.5pt; font-weight: 700; color: #475569; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">' +
                 shortLabels[idx] +
                 '</div>' +
                 '<div style="width: 24mm; height: 24mm; margin: 0 auto 2px auto;">' +
                 qrSvg +
                 '</div>' +
-                '<span style="font-family: \\'Inter\\', sans-serif; font-size: 6.2pt; font-weight: 800; text-transform: uppercase; background: #0f284e; color: #ffffff; padding: 1px 5px; border-radius: 2px; margin-bottom: 2px;">Scan to Quiz</span>' +
-                '<div style="font-family: \\'Inter\\', sans-serif; font-size: 8.5pt; font-weight: 900; color: #0f284e; margin-top: 1px; white-space: nowrap;">Score: [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 10</strong> ]</div>' +
+                '<span style="font-family: Inter, sans-serif; font-size: 6.2pt; font-weight: 800; text-transform: uppercase; background: #0f284e; color: #ffffff; padding: 1px 5px; border-radius: 2px; margin-bottom: 2px;">Scan to Quiz</span>' +
+                '<div style="font-family: Inter, sans-serif; font-size: 8.5pt; font-weight: 900; color: #0f284e; margin-top: 1px; white-space: nowrap;">Score: [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 20</strong> ]</div>' +
                 '</div>'
               );
             })
@@ -2188,4 +2192,10 @@ if (require.main === module) {
   });
 }
 
-module.exports = { compileGreatWarPart2Workbook };
+module.exports = {
+  compileGreatWarPart2Workbook,
+  enquiryConfigs,
+  renderSpinePage,
+  renderRightPage,
+  renderFooterStrip,
+};

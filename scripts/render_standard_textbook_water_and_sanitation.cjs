@@ -86,10 +86,10 @@ function formatMarkdown(text) {
 function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'water_and_sanitation', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
-  raw =
-    raw.replace(/export\s+default\s+[^;]+;?/g, '').replace(/export\s*\{[^}]*\};?/g, '') +
-    '\n; water_and_sanitation_data;';
-  return vm.runInNewContext(raw);
+  raw = raw.replace(/^\s*export\s+default\s+/, 'var unitData = ');
+  const sandbox = { unitData: null };
+  vm.runInNewContext(raw, sandbox);
+  return sandbox.unitData;
 }
 
 // 15 Defining Turning Points & Causal Dominoes for Page 2

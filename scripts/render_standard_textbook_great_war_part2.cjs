@@ -92,10 +92,11 @@ function formatBlockParas(htmlText) {
 function loadUnitData() {
   const dataPath = path.join(ROOT_DIR, 'units', 'great_war_part2', 'data.js');
   let raw = fs.readFileSync(dataPath, 'utf8');
-  raw =
-    raw.replace(/export\s+default\s+[^;]+;?/g, '').replace(/export\s*\{[^}]*\};?/g, '') +
-    '\n; great_war_part2_data;';
-  return vm.runInNewContext(raw);
+  const transformed = raw.replace(/^\s*export\s+default\s+/, 'var great_war_part2_data = ');
+  const sandbox = {};
+  vm.createContext(sandbox);
+  vm.runInContext(transformed, sandbox);
+  return sandbox.great_war_part2_data;
 }
 
 // Canonical Stage Questions matching render_great_war_part2_twopage_workbook.cjs
@@ -976,7 +977,7 @@ function buildHtml() {
           .map((l, idx) => {
             const pageNum = idx + 3;
             const num = String(idx + 1).padStart(2, '0');
-            const q = l.enquiry_question || l.title;
+            const q = l.enquiry_question || l.enquiry || l.title;
             return `
           <tr>
             <td class="col-num">ENQUIRY ${num}</td>
@@ -1063,7 +1064,7 @@ function buildHtml() {
         <h2 class="enquiry-title">${lesson.title}</h2>
         <div class="enquiry-core-question">
           <span class="label">Key Enquiry Question</span>
-          <span>${lesson.enquiry_question || lesson.title}</span>
+          <span>${lesson.enquiry_question || lesson.enquiry || lesson.title}</span>
         </div>
       </div>
 

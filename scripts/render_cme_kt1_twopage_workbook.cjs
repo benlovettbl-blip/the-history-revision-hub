@@ -4,6 +4,7 @@ const QRCode = require('qrcode');
 const {
   renderStandardFrontCover,
   renderStandardBackCover,
+  renderVersoLessonQr,
 } = require('./components/render_standard_cover.cjs');
 
 function generateQrSvg(url) {
@@ -1177,21 +1178,24 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
     <div class="page-body-full">
       
       <!-- Lesson Header with Inquiry Question Title -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; border: 1.2px solid #000000; padding: 1px 6px; border-radius: 2px;">
-            KEY TOPIC 1.${cfg.lessonNum} &bull; ENQUIRY LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            EDEXCEL PAPER 2 (1HI0/2B) &bull; PERIOD STUDY
-          </span>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; border: 1.2px solid #000000; padding: 1px 6px; border-radius: 2px;">
+              KEY TOPIC 1.${cfg.lessonNum} &bull; ENQUIRY LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              EDEXCEL PAPER 2 (1HI0/2B) &bull; PERIOD STUDY
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.18;">
+            ${cfg.inquiryQuestion}
+          </h2>
+          <div style="font-family: 'Georgia', serif; font-size: 7.8pt; font-style: italic; color: #222222; line-height: 1.18;">
+            ${cfg.subTitle}
+          </div>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 1px 0; font-weight: 900; line-height: 1.18;">
-          ${cfg.inquiryQuestion}
-        </h2>
-        <div style="font-family: 'Georgia', serif; font-size: 7.8pt; font-style: italic; color: #222222; line-height: 1.18;">
-          ${cfg.subTitle}
-        </div>
+        ${renderVersoLessonQr({ unitId: 'cme_new', lessonId: cfg.id })}
       </div>
 
       <!-- Chronological Lesson Spine (Down the Left) with Pupil Note-Taking Canvas -->
@@ -1429,6 +1433,7 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         num: 1,
         code: 'KT1.1',
         title: 'Mandate Collapse & King David',
+        enquiryQuestion: 'Why did the British Mandate collapse and how was the State of Israel established?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1440,6 +1445,7 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         num: 2,
         code: 'KT1.2',
         title: 'UN Res 181 & The 1948–49 War',
+        enquiryQuestion: 'What were the military, territorial, and geopolitical turning points of the 1948–49 War?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1451,6 +1457,7 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         num: 3,
         code: 'KT1.3',
         title: 'Nakba & The Law of Return',
+        enquiryQuestion: 'How did the Palestinian refugee crisis and the Law of Return transform the demographic landscape?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1462,6 +1469,7 @@ function buildCmeKt1TwoPageWorkbook(unitData, period) {
         num: 4,
         code: 'KT1.4',
         title: 'Nasser & The 1956 Suez Crisis',
+        enquiryQuestion: 'Why did the nationalisation of the Suez Canal trigger a global superpower crisis?',
         doNowMarks: 10,
         q1aMarks: 4,
         q1bMarks: 4,
@@ -1599,4 +1607,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { buildCmeKt1TwoPageWorkbook };
+module.exports = { buildCmeKt1TwoPageWorkbook, kt1Configs };

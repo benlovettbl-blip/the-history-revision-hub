@@ -208,6 +208,12 @@ window.addEventListener('DOMContentLoaded', async () => {
   } else if (view === 'quiz' || view === 'interactive_quiz' || view === 'retrieval') {
     view = 'interactive';
     unit = unit || 'edexcel_medicine';
+  } else if (view === 'reading' || view === 'guided-reading' || view === 'literary') {
+    view = 'reading';
+    unit = unit || 'great_war_part2';
+  } else if (view === 'marking' || view === 'answers' || view === 'marking-bank') {
+    view = 'marking';
+    unit = unit || 'great_war_part2';
   } else if (
     view === 'booklets' ||
     view === 'workbooks' ||
@@ -290,14 +296,23 @@ window.addEventListener('DOMContentLoaded', async () => {
       }
       if (paramLesson !== null && paramLesson !== undefined && String(paramLesson).trim() !== '') {
         const rawStr = String(paramLesson).trim();
-        // 1. Direct ID match (e.g. 'lesson_3_1', 'lesson_1_1', 'lesson_5_1')
+        // 1. Pure numeric index handling (supports 1-indexed e.g. 1 -> 0, or 0-indexed 0)
+        // High priority: sequential lesson number parameter (e.g. ?lesson=10) represents the 10th lesson
+        if (/^\d+$/.test(rawStr)) {
+          const num = parseInt(rawStr, 10);
+          const idx = num >= 1 && num <= unitData.lessons.length ? num - 1 : num === 0 ? 0 : -1;
+          if (idx !== -1 && unitData.lessons[idx]) {
+            return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
+          }
+        }
+        // 2. Direct ID match (e.g. 'lesson_3_1', 'lesson_1_1', 'lesson_5_1')
         let idx = unitData.lessons.findIndex(
           (l) => l.id && l.id.toLowerCase() === rawStr.toLowerCase(),
         );
         if (idx !== -1) {
           return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
         }
-        // 2. ID prefix match or partial match (e.g. '3_1' -> 'lesson_3_1')
+        // 3. ID prefix match or partial match (e.g. '3_1' -> 'lesson_3_1')
         idx = unitData.lessons.findIndex(
           (l) =>
             l.id &&
@@ -306,14 +321,6 @@ window.addEventListener('DOMContentLoaded', async () => {
         );
         if (idx !== -1) {
           return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
-        }
-        // 3. Numeric index handling (supports 1-indexed e.g. 1 -> 0, or 0-indexed 0)
-        if (!isNaN(parseInt(rawStr, 10)) && /^\d+$/.test(rawStr)) {
-          const num = parseInt(rawStr, 10);
-          idx = num >= 1 && num <= unitData.lessons.length ? num - 1 : num === 0 ? 0 : -1;
-          if (idx !== -1 && unitData.lessons[idx]) {
-            return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
-          }
         }
         // 4. Title match
         idx = unitData.lessons.findIndex(
@@ -423,6 +430,12 @@ window.addEventListener('DOMContentLoaded', async () => {
     } else if (targetView === 'quiz' || targetView === 'interactive_quiz' || targetView === 'retrieval') {
       targetView = 'interactive';
       targetUnit = targetUnit || 'edexcel_medicine';
+    } else if (targetView === 'reading' || targetView === 'guided-reading' || targetView === 'literary') {
+      targetView = 'reading';
+      targetUnit = targetUnit || 'great_war_part2';
+    } else if (targetView === 'marking' || targetView === 'answers' || targetView === 'marking-bank') {
+      targetView = 'marking';
+      targetUnit = targetUnit || 'great_war_part2';
     } else if (
       targetView === 'booklets' ||
       targetView === 'workbooks' ||
