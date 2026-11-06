@@ -892,7 +892,10 @@ export function readAloudText(btnElement) {
   if (!chunk) return;
 
   const textEl =
-    chunk.querySelector('.narrative-text') || chunk.querySelector('.archival-source-body') || chunk;
+    chunk.querySelector('.narrative-text') ||
+    chunk.querySelector('.archival-verse-stanzas') ||
+    chunk.querySelector('.archival-source-body') ||
+    chunk;
 
   // Tokenize container text for boundary highlighting
   const { spokenText, spans } = prepareHighlightableText(textEl);

@@ -194,6 +194,202 @@ window.formatBold = function (text) {
   return parsed;
 };
 
+/**
+ * Detects if a source text and metadata represent poetry, verse, or lyrics.
+ */
+export function isPoetryOrVerse(text, source = {}) {
+  if (!text) return false;
+  const title = (source.title || '').toLowerCase();
+  const format = (source.format || '').toLowerCase();
+  const type = (source.type || '').toLowerCase();
+  const caption = (source.caption || '').toLowerCase();
+  const citation = (source.citation || '').toLowerCase();
+
+  // Explicit type or format tags
+  if (['verse', 'poem', 'poetry', 'rhyme', 'sonnet', 'ballad', 'hymn'].includes(format)) return true;
+  if (['verse', 'poem', 'poetry'].includes(type)) return true;
+  if (/(?:verse|poem|poetry|rhyme|ballad|sonnet|hymn)/i.test(title)) return true;
+  if (/(?:recruitment poem|war poem|propaganda poem|propaganda verse|poetry extract)/i.test(caption)) return true;
+  if (/(?:war poems|ballads|songbook|poems)/i.test(citation)) return true;
+
+  // Content heuristic: multiple line-break slashes (e.g. 'line 1 / line 2 / line 3')
+  const slashMatches = text.match(/\s\/\s/g);
+  if (slashMatches && slashMatches.length >= 2) return true;
+
+  return false;
+}
+
+/**
+ * Parses poem text (whether separated by slashes or newlines) into structured stanzas and lines.
+ */
+export function parsePoetryStanzas(text) {
+  if (!text) return { stanzas: [], openQuote: '', closeQuote: '' };
+  let cleanText = text.trim();
+
+  let openQuote = '';
+  let closeQuote = '';
+  if (
+    (cleanText.startsWith('“') && cleanText.endsWith('”')) ||
+    (cleanText.startsWith('"') && cleanText.endsWith('"'))
+  ) {
+    openQuote = '“';
+    closeQuote = '”';
+    cleanText = cleanText.slice(1, -1).trim();
+  }
+
+  let stanzas = [];
+
+  if (/\n\s*\n/.test(cleanText)) {
+    // Explicit blank lines separating stanzas
+    const rawStanzas = cleanText.split(/\n\s*\n/);
+    stanzas = rawStanzas
+      .map((st) => {
+        return st
+          .split(/\n|\s*\/\s*/)
+          .map((l) => l.trim().replace(/^“|”$/g, ''))
+          .filter(Boolean);
+      })
+      .filter((st) => st.length > 0);
+  } else if (cleanText.includes(' // ')) {
+    // Double slash separating stanzas
+    const rawStanzas = cleanText.split(/\s*\/\/\s*/);
+    stanzas = rawStanzas
+      .map((st) => {
+        return st
+          .split(/\s*\/\s*|\n/)
+          .map((l) => l.trim().replace(/^“|”$/g, ''))
+          .filter(Boolean);
+      })
+      .filter((st) => st.length > 0);
+  } else if (cleanText.includes(' / ')) {
+    // Single slash separating lines
+    const lines = cleanText
+      .split(/\s*\/\s*/)
+      .map((l) => l.trim().replace(/^“|”$/g, ''))
+      .filter(Boolean);
+    if (lines.length >= 8 && lines.length % 4 === 0) {
+      for (let i = 0; i < lines.length; i += 4) {
+        stanzas.push(lines.slice(i, i + 4));
+      }
+    } else if (lines.length > 4) {
+      const mid = Math.ceil(lines.length / 2);
+      stanzas.push(lines.slice(0, mid));
+      stanzas.push(lines.slice(mid));
+    } else {
+      stanzas.push(lines);
+    }
+  } else if (cleanText.includes('\n')) {
+    const lines = cleanText
+      .split('\n')
+      .map((l) => l.trim().replace(/^“|”$/g, ''))
+      .filter(Boolean);
+    if (lines.length >= 8 && lines.length % 4 === 0) {
+      for (let i = 0; i < lines.length; i += 4) {
+        stanzas.push(lines.slice(i, i + 4));
+      }
+    } else {
+      stanzas.push(lines);
+    }
+  } else {
+    stanzas.push([cleanText.replace(/^“|”$/g, '')]);
+  }
+
+  return { stanzas, openQuote, closeQuote };
+}
+
+/**
+ * Renders poetry extract in an authentic, high-impact literary verse container.
+ */
+export function renderArchivalVerseHtml(text, source = {}, options = {}) {
+  const { stanzas, openQuote, closeQuote } = parsePoetryStanzas(text);
+  const maxHeightStyle =
+    options.maxHeight && options.maxHeight !== 'none'
+      ? `max-height: ${options.maxHeight}; overflow-y: auto;`
+      : '';
+
+  let pillLabel = 'Primary Archival Verse';
+  const title = (source.title || '').toLowerCase();
+  const caption = (source.caption || '').toLowerCase();
+  if (title.includes('propaganda verse') || title.includes('propaganda poem')) {
+    pillLabel = 'Propaganda Verse';
+  } else if (title.includes('recruitment poem') || caption.includes('recruitment poem')) {
+    pillLabel = 'Recruitment Verse';
+  } else if (title.includes('war poem') || title.includes('wartime')) {
+    pillLabel = 'Wartime Verse';
+  } else if (title.includes('imperial poetry') || title.includes('imperial')) {
+    pillLabel = 'Imperial Verse';
+  }
+
+  const stanzasHtml = stanzas
+    .map((stanza, sIdx) => {
+      const isFirstStanza = sIdx === 0;
+      const isLastStanza = sIdx === stanzas.length - 1;
+      const linesHtml = stanza
+        .map((line, lIdx) => {
+          const isFirstLine = isFirstStanza && lIdx === 0;
+          const isLastLine = isLastStanza && lIdx === stanza.length - 1;
+          let displayLine = line;
+          if (isFirstLine && openQuote) {
+            displayLine = openQuote + displayLine;
+          }
+          if (isLastLine && closeQuote) {
+            displayLine = displayLine + closeQuote;
+          }
+          return `<div class="archival-verse-line" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; line-height: 1.82; color: #1e293b; font-style: italic; padding-left: 1.6em; text-indent: -1.6em; letter-spacing: 0.01em;">${displayLine}</div>`;
+        })
+        .join('\n');
+
+      const isBottom = sIdx === stanzas.length - 1;
+      return `<div class="archival-verse-stanza" style="margin-bottom: ${isBottom ? '0' : '15px'};">\n${linesHtml}\n</div>`;
+    })
+    .join('\n\n');
+
+  return `
+    <div class="archival-source-body archival-source-verse" style="width: 100%; ${maxHeightStyle} font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 1.05rem; line-height: 1.75; color: #1e293b; background: linear-gradient(180deg, #fffdfa 0%, #fbf8f0 100%); border-left: 4px solid #b45309; border-top: 1px solid #f1e7d8; border-right: 1px solid #f1e7d8; border-bottom: 1px solid #f1e7d8; border-radius: 6px; padding: 16px 22px; margin-bottom: 12px; position: relative; box-shadow: 0 2px 8px rgba(180, 83, 9, 0.04);">
+      <div class="archival-verse-header" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px dashed rgba(180, 83, 9, 0.22); user-select: none;">
+        <span class="archival-verse-badge" style="display: inline-flex; align-items: center; gap: 6px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 0.70rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #92400e; background: #fef3c7; border: 1px solid #fde68a; padding: 3px 9px; border-radius: 999px;">
+          <i class="fa-solid fa-feather-pointed" style="color: #b45309;"></i> ${pillLabel}
+        </span>
+        <span class="archival-verse-meter" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 0.72rem; color: #78716c; font-style: normal; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">
+          <i class="fa-solid fa-scroll" style="margin-right: 4px; opacity: 0.7;"></i> Archival Poetic Extract
+        </span>
+      </div>
+      <div class="archival-verse-stanzas" style="padding-left: 10px; border-left: 2px dashed rgba(180, 83, 9, 0.28); margin-left: 4px;">
+        ${stanzasHtml}
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Master dispatcher for archival source text: renders authentic verse layout for poetry,
+ * and high-legibility serif container with preserved line-breaks for prose.
+ */
+export function renderArchivalSourceBody(text, source = {}, options = {}) {
+  if (!text || !String(text).trim()) return '';
+  const clean = String(text).trim();
+
+  if (isPoetryOrVerse(clean, source)) {
+    return renderArchivalVerseHtml(clean, source, options);
+  }
+
+  const maxHeightStyle =
+    options.maxHeight && options.maxHeight !== 'none'
+      ? `max-height: ${options.maxHeight}; overflow-y: auto;`
+      : '';
+  const borderColor = options.accentColor || '#1e3a8a';
+  const padding = options.padding || '14px 18px';
+  const fontSize = options.fontSize || '1.05rem';
+  const lineHeight = options.lineHeight || '1.75';
+  const marginBottom = options.marginBottom || '8px';
+
+  return `
+    <div class="archival-source-body" style="width: 100%; ${maxHeightStyle} font-family: 'Georgia', serif; font-style: italic; font-size: ${fontSize}; line-height: ${lineHeight}; color: #1e293b; background: #fffdfa; padding: ${padding}; border-left: 4px solid ${borderColor}; border-radius: 4px; margin-bottom: ${marginBottom}; white-space: pre-line;">
+      ${clean}
+    </div>
+  `;
+}
+
 export function toggleThinkDiscuss(btn, targetId) {
   const panel = typeof targetId === 'string' ? document.getElementById(targetId) : targetId;
   if (!panel) return;
@@ -4264,7 +4460,7 @@ export function renderLesson(lesson) {
                   : ''
                 }
                       ${sourceText
-                  ? `<div class="archival-source-body" style="width: 100%; max-height: 250px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 0.95rem; line-height: 1.6; color: #1e293b; background: #fffdfa; padding: 10px 14px; border-left: 3px solid #1e3a8a; border-radius: 4px; margin-bottom: 12px;">${sourceText}</div>`
+                  ? renderArchivalSourceBody(sourceText, source, { maxHeight: '250px', fontSize: '0.95rem', lineHeight: '1.6', padding: '10px 14px', marginBottom: '12px', accentColor: '#1e3a8a' })
                   : ''
                 }
                       ${contextText
@@ -4289,7 +4485,7 @@ export function renderLesson(lesson) {
             : `
                 <div>
                   ${sourceText
-              ? `<div class="archival-source-body" style="width: 100%; max-height: 350px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 1.05rem; line-height: 1.75; color: #1e293b; background: #fffdfa; padding: 14px 18px; border-left: 4px solid #1e3a8a; border-radius: 4px; margin-bottom: 12px;">${sourceText}</div>`
+              ? renderArchivalSourceBody(sourceText, source, { maxHeight: '350px', marginBottom: '12px', accentColor: '#1e3a8a' })
               : ''
             }
                   ${source.caption
@@ -4365,11 +4561,7 @@ export function renderLesson(lesson) {
                 <div class="archival-source-details-col">
                   <div>
                     ${source.text
-              ? `
-                      <div class="archival-source-body" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.02rem; line-height: 1.65; color: #1e293b; background: #fdfbf7; border-left: 4px solid #b45309; padding: 12px 16px; margin-bottom: 14px; border-radius: 0 4px 4px 0; font-style: italic; white-space: pre-line;">
-                        ${source.text}
-                      </div>
-                    `
+              ? renderArchivalSourceBody(source.text, source, { maxHeight: '280px', fontSize: '1.02rem', lineHeight: '1.65', padding: '12px 16px', marginBottom: '14px', accentColor: '#b45309' })
               : ''
             }
                     ${source.caption
@@ -4403,11 +4595,7 @@ export function renderLesson(lesson) {
             `
             : `
               ${source.text
-              ? `
-                <div class="archival-source-body" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; line-height: 1.7; color: #1e293b; background: #fdfbf7; border-left: 4px solid #b45309; padding: 16px 20px; margin: 14px 0; border-radius: 0 6px 6px 0; font-style: italic; white-space: pre-line;">
-                  ${source.text}
-                </div>
-              `
+              ? renderArchivalSourceBody(source.text, source, { maxHeight: '350px', fontSize: '1.05rem', lineHeight: '1.7', padding: '16px 20px', marginBottom: '14px', accentColor: '#b45309' })
               : ''
             }
               ${source.caption
@@ -6771,9 +6959,7 @@ export function renderLesson(lesson) {
               ${sourceAudioBtnHtml ? `<div style="flex-shrink: 0;">${sourceAudioBtnHtml}</div>` : ''}
             </div>
             ${sourceText
-              ? `<div class="archival-source-body" style="width: 100%; max-height: 350px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 1.05rem; line-height: 1.75; color: #1e293b; background: #fffdfa; padding: 14px 18px; border-left: 4px solid #1e3a8a; border-radius: 4px; margin-bottom: 8px;">
-                    ${sourceText}
-                  </div>`
+              ? renderArchivalSourceBody(sourceText, rawSource, { maxHeight: '350px', marginBottom: '8px', accentColor: '#1e3a8a' })
               : ''
             }
             ${!isKs2 && (rawSource.citation || rawSource.provenance)
@@ -6869,9 +7055,7 @@ export function renderLesson(lesson) {
               : ''
             }
                 ${sourceText
-              ? `<div class="archival-source-body" style="width: 100%; max-height: 250px; overflow-y: auto; font-family: 'Georgia', serif; font-style: italic; font-size: 0.95rem; line-height: 1.6; color: #1e293b; background: #fffdfa; padding: 10px 14px; border-left: 3px solid #1e3a8a; border-radius: 4px; margin-bottom: 4px;">
-                        ${sourceText}
-                      </div>`
+              ? renderArchivalSourceBody(sourceText, rawSource, { maxHeight: '250px', fontSize: '0.95rem', lineHeight: '1.6', padding: '10px 14px', marginBottom: '4px', accentColor: '#1e3a8a' })
               : ''
             }
                 ${cleanContextVal
@@ -9939,11 +10123,7 @@ export function renderLesson(lesson) {
                     </div>
                     <div style="flex: 1 1 300px;">
                       ${stimContent
-                ? `
-                        <div class="archival-source-body" style="font-family: 'Georgia', serif; font-style: italic; font-size: 1.02rem; line-height: 1.7; color: #1e293b; background: #fffdfa; padding: 12px 16px; border-left: 4px solid #1e40af; border-radius: 4px; margin-bottom: 10px;">
-                          ${typeof formatBold !== 'undefined' ? formatBold(stimContent) : stimContent}
-                        </div>
-                      `
+                ? renderArchivalSourceBody(stimContent, stim, { maxHeight: 'none', fontSize: '1.02rem', lineHeight: '1.7', padding: '12px 16px', marginBottom: '10px', accentColor: '#1e40af' })
                 : ''
               }
                       ${stimCaption
@@ -9957,11 +10137,7 @@ export function renderLesson(lesson) {
                     </div>
                   </div>
                 `
-              : `
-                  <div class="archival-source-body" style="font-family: 'Georgia', serif; font-style: italic; font-size: 1.05rem; line-height: 1.75; color: #1e293b; background: #fffdfa; padding: 14px 18px; border-left: 4px solid #1e40af; border-radius: 4px;">
-                    ${typeof formatBold !== 'undefined' ? formatBold(stimContent) : stimContent}
-                  </div>
-                `
+              : renderArchivalSourceBody(stimContent, stim, { maxHeight: 'none', fontSize: '1.05rem', lineHeight: '1.75', padding: '14px 18px', accentColor: '#1e40af' })
             }
                 <div class="archival-citation-footer" style="font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 8px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center;">
                   <span><strong>Provenance:</strong> ${stimProvenance}</span>
