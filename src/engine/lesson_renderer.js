@@ -4383,6 +4383,14 @@ export function renderLesson(lesson) {
                     <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.96rem; color: #14532d; font-weight: 700; line-height: 1.45; width: 100%; word-break: normal; overflow-wrap: break-word;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(qPrompt) : qPrompt}</div>
                   </summary>
                   <div class="source-enquiry-answer-body" style="padding: 16px 20px 14px 20px; background: #ffffff; border-top: 1.5px solid #86efac;">
+                    ${contextText
+                  ? `
+                      <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #64748b; padding: 10px 14px; border-radius: 0 4px 4px 0;">
+                        <strong style="color: #334155; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-landmark" style="color: #64748b; margin-right: 6px;"></i>Historical Context &amp; Guidance:</strong>
+                        <div style="font-size: 0.88rem; color: #334155; line-height: 1.55;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(contextText) : contextText}</div>
+                      </div>
+                    `
+                  : ''}
                     ${source.model_answer
                   ? `
                       <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #16a34a; padding: 10px 14px; border-radius: 0 4px 4px 0;">
@@ -4485,14 +4493,16 @@ export function renderLesson(lesson) {
             : `
                 <div>
                   ${sourceText
-              ? renderArchivalSourceBody(sourceText, source, { maxHeight: '350px', marginBottom: '12px', accentColor: '#1e3a8a' })
+              ? renderArchivalSourceBody(sourceText, source, { maxHeight: '350px', marginBottom: '8px', accentColor: '#1e3a8a' })
               : ''
             }
-                  ${source.caption
-              ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 12px; font-style: italic;">${source.caption}</div>`
+                  ${!isKs2 && citationText
+              ? `<div class="archival-citation-footer" style="font-size: 0.80rem; color: #64748b; font-style: italic; text-align: right; margin-top: 6px; margin-bottom: 12px; line-height: 1.4;">
+                          &mdash; <span style="font-style: normal; font-weight: 600; color: #475569;">Provenance:</span> ${citationText}
+                        </div>`
               : ''
             }
-                  ${contextText
+                  ${!sourceEnquiryHtml && contextText
               ? `
                     <div style="background: #f8fafc; border-left: 4px solid #64748b; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 12px; color: #334155; font-size: 0.98rem; line-height: 1.6;">
                       <strong>${isKs2 ? 'What this tells us:' : 'Historical Context:'}</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(contextText) : contextText}
@@ -4500,15 +4510,9 @@ export function renderLesson(lesson) {
                   `
               : ''
             }
-                  ${!isKs2 && citationText
-              ? `<div class="archival-citation-footer" style="font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 8px;">
-                          <strong>Provenance:</strong> ${citationText}
-                        </div>`
-              : ''
-            }
                   ${renderArchivalSourceDiscussionBox(hingeText, source, isKs2, '12px')}
                   ${sourceEnquiryHtml
-              ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 12px;">${sourceEnquiryHtml}</div>`
+              ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 10px;">${sourceEnquiryHtml}</div>`
               : ''
             }
                 </div>
@@ -6869,6 +6873,14 @@ export function renderLesson(lesson) {
                   <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.96rem; color: #14532d; font-weight: 700; line-height: 1.45; width: 100%; word-break: normal; overflow-wrap: break-word;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(uPrompt) : uPrompt}</div>
                 </summary>
                 <div class="source-enquiry-answer-body" style="padding: 16px 20px 14px 20px; background: #ffffff; border-top: 1.5px solid #86efac;">
+                  ${cleanContextVal
+                    ? `
+                    <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #64748b; padding: 10px 14px; border-radius: 0 4px 4px 0;">
+                      <strong style="color: #334155; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-landmark" style="color: #64748b; margin-right: 6px;"></i>Historical Context &amp; Guidance:</strong>
+                      <div style="font-size: 0.88rem; color: #334155; line-height: 1.55;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(cleanContextVal) : cleanContextVal}</div>
+                    </div>
+                  `
+                    : ''}
                   <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #166534; letter-spacing: 0.5px; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
                     <i class="fa-solid fa-circle-check" style="color: #16a34a;"></i> Key Takeaways &bull; Suggested Answers
                   </div>
@@ -6917,6 +6929,14 @@ export function renderLesson(lesson) {
                   <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.96rem; color: #14532d; font-weight: 700; line-height: 1.45; width: 100%; word-break: normal; overflow-wrap: break-word;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(qPrompt) : qPrompt}</div>
                 </summary>
                 <div class="source-enquiry-answer-body" style="padding: 16px 20px 14px 20px; background: #ffffff; border-top: 1.5px solid #86efac;">
+                  ${cleanContextVal
+                    ? `
+                    <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #64748b; padding: 10px 14px; border-radius: 0 4px 4px 0;">
+                      <strong style="color: #334155; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-landmark" style="color: #64748b; margin-right: 6px;"></i>Historical Context &amp; Guidance:</strong>
+                      <div style="font-size: 0.88rem; color: #334155; line-height: 1.55;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(cleanContextVal) : cleanContextVal}</div>
+                    </div>
+                  `
+                    : ''}
                   ${rawSource.model_answer
                 ? `
                     <div style="margin-bottom: 12px; background: #f8fafc; border-left: 3.5px solid #16a34a; padding: 10px 14px; border-radius: 0 4px 4px 0;">
@@ -6949,34 +6969,26 @@ export function renderLesson(lesson) {
         const orientingIntro =
           rawSource.intro ||
           rawSource.caption ||
-          (cleanContextVal ? cleanContextVal.split('.')[0] + '.' : '');
+          '';
 
         let sourceBodyHtml = '';
         if (isWrittenSource) {
+          const provenanceText = rawSource.citation || rawSource.provenance || '';
+          const provenanceHtml =
+            !isKs2 && provenanceText
+              ? `<div class="archival-citation-footer" style="font-size: 0.80rem; color: #64748b; font-style: italic; text-align: right; margin-top: 6px; margin-bottom: 12px; line-height: 1.4;">
+                  &mdash; <span style="font-style: normal; font-weight: 600; color: #475569;">Provenance:</span> ${provenanceText}
+                </div>`
+              : '';
+
           sourceBodyHtml = `
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; gap: 12px; flex-wrap: wrap;">
-              ${orientingIntro ? `<div style="font-size: 0.95rem; color: #475569; font-style: italic; line-height: 1.5; flex: 1 1 300px;">${orientingIntro}</div>` : '<div style="flex: 1;"></div>'}
-              ${sourceAudioBtnHtml ? `<div style="flex-shrink: 0;">${sourceAudioBtnHtml}</div>` : ''}
-            </div>
+            ${sourceAudioBtnHtml ? `<div style="display: flex; justify-content: flex-end; margin-bottom: 8px;">${sourceAudioBtnHtml}</div>` : ''}
             ${sourceText
-              ? renderArchivalSourceBody(sourceText, rawSource, { maxHeight: '350px', marginBottom: '8px', accentColor: '#1e3a8a' })
+              ? renderArchivalSourceBody(sourceText, rawSource, { maxHeight: '350px', marginBottom: '6px', accentColor: '#1e3a8a' })
               : ''
             }
-            ${!isKs2 && (rawSource.citation || rawSource.provenance)
-              ? `<div class="archival-citation-footer" style="font-size: 0.78rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 6px; margin-top: 6px; margin-bottom: 6px; display: block !important; text-align: left !important; line-height: 1.45;">
-                    <strong>Provenance:</strong> ${rawSource.citation || rawSource.provenance}
-                  </div>`
-              : ''
-            }
-            ${cleanContextVal
-              ? `
-              <div style="background: #f8fafc; border-left: 4px solid #64748b; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-top: 12px; margin-bottom: 12px; color: #334155; font-size: 0.95rem; line-height: 1.5;">
-                <strong>${isKs2 ? 'What this tells us:' : 'Historical Context:'}</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(cleanContextVal) : cleanContextVal}
-              </div>
-            `
-              : ''
-            }
-            ${utilityCardHtml ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 12px;">${utilityCardHtml}</div>` : renderArchivalSourceDiscussionBox(rawSource.hinge_question || rawSource.question || rawSource.source_question, rawSource, isKs2, '12px')}
+            ${provenanceHtml}
+            ${utilityCardHtml ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 10px;">${utilityCardHtml}</div>` : renderArchivalSourceDiscussionBox(rawSource.hinge_question || rawSource.question || rawSource.source_question, rawSource, isKs2, '10px')}
           `;
         } else {
           const rawSourceImgUrl = getAssetUrl(rawImgSrc);
@@ -7058,7 +7070,7 @@ export function renderLesson(lesson) {
               ? renderArchivalSourceBody(sourceText, rawSource, { maxHeight: '250px', fontSize: '0.95rem', lineHeight: '1.6', padding: '10px 14px', marginBottom: '4px', accentColor: '#1e3a8a' })
               : ''
             }
-                ${cleanContextVal
+                ${!visualEnquiryHtml && cleanContextVal
               ? `
                   <div style="background: #f8fafc; border-left: 4px solid #64748b; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 4px; color: #334155; font-size: 0.95rem; line-height: 1.55;">
                     <strong>${isKs2 ? 'What this tells us:' : 'Historical Context:'}</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(cleanContextVal) : cleanContextVal}
@@ -7098,9 +7110,6 @@ export function renderLesson(lesson) {
                   <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.85rem; color: #1e293b; font-weight: 700; line-height: 1.35;">${displayTitle}</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-                  <button type="button" class="source-to-narrative-jump-btn" onclick="event.stopPropagation(); if(window.jumpToNarrativeBlock){window.jumpToNarrativeBlock(${index + 1});}" style="background: rgba(15, 23, 42, 0.06); border: 1px solid #cbd5e1; color: #475569; font-size: 0.68rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.2s ease;" title="Jump up to Stage ${index + 1} Narrative Reading">
-                    <i class="fa-solid fa-arrow-up"></i> Stage ${index + 1} Text
-                  </button>
                   <span class="drawer-toggle-indicator" style="cursor: pointer;">
                     <span class="drawer-state-expand">View Source</span><span class="drawer-state-collapse">Close</span> <span class="drawer-caret">&#9660;</span>
                   </span>
