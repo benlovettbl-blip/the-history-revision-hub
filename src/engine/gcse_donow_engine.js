@@ -722,31 +722,34 @@ export function renderGcseDoNowPanelHTML({
       ${headerHtml}
 
       <!-- 3-Mode Scope Control Deck -->
-      <div class="donow-mode-deck">
-        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-          <span style="font-size: 0.72rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 5px;">
+      <div class="donow-mode-deck" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin: 8px 0 10px 0; padding: 6px 12px; background: #f8fafc; border: 1.2px solid #e2e8f0; border-radius: 10px;">
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+          <span style="font-size: 0.72rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.6px; display: inline-flex; align-items: center; gap: 5px; user-select: none;">
             <i class="fa-solid fa-sliders" style="color: #0284c7;"></i> Scope:
           </span>
-          <div class="donow-mode-btn-group">
+          <div class="donow-mode-btn-group" style="display: inline-flex; align-items: center; background: #e2e8f0; padding: 3px; border-radius: 999px; gap: 2px; border: 1px solid #cbd5e1; box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);">
             <button type="button"
               class="btn-donow-mode ${activeMode === 'previous' ? 'active' : ''}"
               data-donow-mode="previous"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('previous');"
-              title="10 Questions strictly from the immediate previous lesson">
+              title="10 Questions strictly from the immediate previous lesson"
+              style="padding: 4px 14px; font-size: 0.76rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'previous' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'previous' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: ${activeMode === 'previous' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-arrow-rotate-left"></i> Previous
             </button>
             <button type="button"
               class="btn-donow-mode ${activeMode === 'unit' ? 'active' : ''}"
               data-donow-mode="unit"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('unit');"
-              title="10 Questions interleaved across this unit up to now">
+              title="10 Questions interleaved across this unit up to now"
+              style="padding: 4px 14px; font-size: 0.76rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'unit' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'unit' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: ${activeMode === 'unit' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-layer-group"></i> Unit
             </button>
             <button type="button"
               class="btn-donow-mode ${activeMode === 'all' ? 'active' : ''}"
               data-donow-mode="all"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('all');"
-              title="10 Questions synoptically sampled across all selected GCSE units">
+              title="10 Questions synoptically sampled across all selected GCSE units"
+              style="padding: 4px 14px; font-size: 0.76rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'all' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'all' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: ${activeMode === 'all' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
               <i class="fa-solid fa-globe"></i> All
             </button>
           </div>
@@ -754,12 +757,12 @@ export function renderGcseDoNowPanelHTML({
             class="btn-donow-shuffle"
             onclick="event.stopPropagation(); window.refreshCurrentGcseDoNow();"
             title="Roll a fresh randomized set of 10 questions for this scope"
-            style="padding: 2.5px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 6px; border: 1px solid #cbd5e1; background: #ffffff; color: #475569; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+            style="padding: 4px 12px; font-size: 0.76rem; font-weight: 700; border-radius: 999px; border: 1px solid #cbd5e1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0369a1; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;">
             <i class="fa-solid fa-arrows-rotate" style="color: #0284c7;"></i> Shuffle
           </button>
         </div>
 
-        <div id="donow-mode-subtitle" style="font-size: 0.75rem; font-weight: 700; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2.5px 10px; border-radius: 12px; display: inline-flex; align-items: center; gap: 5px;">
+        <div id="donow-mode-subtitle" style="font-size: 0.75rem; font-weight: 700; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 3px 12px; border-radius: 999px; display: inline-flex; align-items: center; gap: 6px;">
           <i class="fa-solid fa-bullseye" style="color: #0284c7; font-size: 0.7rem;"></i>
           <span id="donow-mode-subtitle-text">${result.subtitle}</span>
         </div>
@@ -792,12 +795,19 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db) {
   window.setGcseDoNowMode = function (mode) {
     saveDoNowMode(mode);
 
-    // 1. Update button active states
+    // 1. Update button active states and inline styles
     document.querySelectorAll('.btn-donow-mode').forEach((btn) => {
-      if (btn.dataset.donowMode === mode) {
+      const isCur = btn.dataset.donowMode === mode;
+      if (isCur) {
         btn.classList.add('active');
+        btn.style.background = '#0284c7';
+        btn.style.color = '#ffffff';
+        btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
       } else {
         btn.classList.remove('active');
+        btn.style.background = 'transparent';
+        btn.style.color = '#475569';
+        btn.style.boxShadow = 'none';
       }
     });
 
