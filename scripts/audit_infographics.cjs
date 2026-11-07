@@ -40,7 +40,7 @@ console.log('\n============================================================');
 console.log('🛡️  INFOGRAPHIC ENGINE SUSTAINABILITY & INTEGRITY AUDIT');
 console.log('============================================================\n');
 
-const units = ['cme_new', 'eee', 'edexcel_medicine', 'usa'];
+const units = ['cme_new', 'eee', 'edexcel_medicine', 'usa', 'weimar_nazi_germany'];
 
 // Runtime matcher parity helper
 function getLessonInfographicsSyncLocal(unitId, lessonIdOrIndex) {

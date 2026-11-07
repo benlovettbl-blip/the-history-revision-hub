@@ -2156,5 +2156,28 @@
       "modelAnswer": "The Trail was not a single paved road but an intricate, 12,000-mile network of camouflaged jungle paths, bridges, and underground supply depots running through Laos and Cambodia. Over 300,000 peasant workers and youth volunteers immediately repaired bomb craters overnight. Despite the US dropping more bomb tonnage on Laos than on Germany and Japan combined in WWII, supply trucks and bicycle porters maintained an unbroken flow of Soviet and Chinese weapons southward."
     }
   ],
-  "generated_at": "2026-11-07T10:37:15.370Z"
+  "generated_at": "2026-11-07T10:37:15.370Z",
+  "weimar_nazi_germany": [
+    {
+      "unit": "weimar_nazi_germany",
+      "lessonId": "lesson_2_3",
+      "slug": "weimar_kt2_3_nazi_support",
+      "title": "The Growth of Nazi Support, 1929–1932: Wall Street Crash to 230 Seats",
+      "topic": "Key Topic 2.3: The Growth of Nazi Support, 1929–1932",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Wall Street Crash (Oct 1929) sparks global depression; US recalls billions in Dawes Plan loans.",
+        "Unemployment escalates catastrophically to 6.1 million by Jan 1933; 1 in 3 German workers jobless.",
+        "Parliamentary democracy collapses: Müller's coalition falls (1930); Brüning governs via Article 48 decrees.",
+        "Goebbels deploys modern propaganda ('Hitler Over Germany' flights, posters, mass rallies, 'Work & Bread').",
+        "July 1932 federal elections: Nazis achieve 230 seats (37.3%), becoming Germany's largest political party."
+      ],
+      "image": "/images/infographics/weimar/weimar_kt2_3_nazi_support.webp",
+      "interactiveUrl": "/interactive_mats/weimar_kt2_3_nazi_support.html",
+      "fileSizeKb": 149,
+      "hingeQuestion": "Why was the Great Depression necessary, but not sufficient on its own, to explain the surge in Nazi popularity between 1929 and 1932?",
+      "modelAnswer": "The Great Depression was the indispensable catalyst: it shattered the economic stability of the Golden Twenties, drove unemployment to 6.1 million, and exposed Weimar's institutional weakness as Brüning governed via Article 48 emergency decrees. However, economic misery alone does not explain why voters chose the Nazis rather than the Communists or other extremist parties. The decisive factors were the NSDAP's superior propaganda machinery under Goebbels, the cross-class nationalist appeal of Hitler's messianic leadership, and the middle-class terror of a Bolshevik revolution, which transformed economic grievance into political conversion."
+    }
+  ]
 }

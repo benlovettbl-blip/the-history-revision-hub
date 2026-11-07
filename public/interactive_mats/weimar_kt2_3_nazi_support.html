@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weimar & Nazi Germany (KT 2.3): The Growth of Nazi Support, 1929–1932 | Visual Revision Mat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-dark: #070d18;
+      --bg-surface: #0f172a;
+      --bg-card: rgba(15, 23, 42, 0.92);
+      --bg-card-hover: rgba(30, 41, 59, 0.98);
+      --border-subtle: rgba(255, 255, 255, 0.1);
+      --border-gold: rgba(245, 158, 11, 0.5);
+      --gold-primary: #fbbf24;
+      --gold-dark: #b45309;
+      --crimson-accent: #f43f5e;
+      --cyan-accent: #38bdf8;
+      --emerald-accent: #34d399;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #050914 radial-gradient(ellipse 80% 50% at 50% -20%, rgba(180, 83, 9, 0.25), rgba(7, 13, 24, 0.95) 70%, #030712 100%);
+      color: var(--text-main);
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    .mat-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    /* Top Utility Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 8px 16px;
+      backdrop-filter: blur(10px);
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .badge-spec {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.2), rgba(14, 165, 233, 0.3));
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+    }
+
+    .badge-topic {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.3));
+      color: #fbbf24;
+      border: 1px solid var(--border-gold);
+    }
+
+    .btn-action {
+      background: #1e293b;
+      color: #f1f5f9;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action:hover {
+      background: #334155;
+      border-color: var(--gold-primary);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    /* Dramatic Magazine Header */
+    .mat-header {
+      background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 45%, #1e293b 100%);
+      border: 2px solid var(--border-gold);
+      border-radius: 16px;
+      padding: 24px 32px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), inset 0 0 50px rgba(245, 158, 11, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .mat-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background: linear-gradient(180deg, #f43f5e, #fbbf24, #38bdf8);
+    }
+
+    .header-text-col {
+      flex: 1;
+    }
+
+    .header-sub {
+      color: var(--gold-primary);
+      font-size: 0.85rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .header-enquiry {
+      color: #cbd5e1;
+      font-size: 1rem;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-portrait-badge {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      border: 3px solid var(--gold-primary);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5), 0 0 20px rgba(245, 158, 11, 0.3);
+      overflow: hidden;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+    }
+
+    .header-portrait-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    /* 4 High-Impact Quantitative Data Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+
+    .stat-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 70%);
+    }
+
+    .stat-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .stat-icon.rose { background: rgba(244, 63, 94, 0.2); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.4); }
+    .stat-icon.cyan { background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); }
+    .stat-icon.gold { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.5); }
+    .stat-icon.emerald { background: rgba(52, 211, 153, 0.2); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.4); }
+
+    .stat-val {
+      font-size: 1.65rem;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.05;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .stat-lbl {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* Photographic Visual Gallery / Causal Pillars */
+    .photo-pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .photo-pillars-grid { grid-template-columns: 1fr; }
+    }
+
+    .photo-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .photo-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    }
+
+    .photo-container {
+      position: relative;
+      height: 160px;
+      width: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-card:hover .photo-container img {
+      transform: scale(1.05);
+    }
+
+    .photo-badge {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      backdrop-filter: blur(4px);
+    }
+
+    .photo-card-body {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .photo-card-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .photo-card-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Main Multi-Column Split: Timeline & Disciplinary Check */
+    .mat-body-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.95fr;
+      gap: 18px;
+    }
+
+    @media (max-width: 992px) {
+      .mat-body-grid { grid-template-columns: 1fr; }
+    }
+
+    .panel-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    }
+
+    .panel-heading {
+      font-size: 0.88rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 8px;
+    }
+
+    /* Chronological Domino Chain */
+    .domino-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .domino-step {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 9px 12px;
+      background: rgba(30, 41, 59, 0.45);
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--cyan-accent);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .domino-step:hover {
+      background: rgba(30, 41, 59, 0.85);
+      border-left-color: var(--gold-primary);
+      transform: translateX(4px);
+    }
+
+    .domino-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--cyan-accent);
+      background: rgba(56, 189, 248, 0.12);
+      padding: 2px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .domino-content h4 {
+      font-size: 0.86rem;
+      font-weight: 800;
+      color: #f1f5f9;
+      margin-bottom: 2px;
+    }
+
+    .domino-content p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Disciplinary Hinge Check Box */
+    .hinge-box {
+      background: linear-gradient(135deg, rgba(180, 83, 9, 0.15) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1.5px solid var(--border-gold);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    }
+
+    .hinge-header {
+      font-size: 0.7rem;
+      font-weight: 900;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hinge-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #fef08a;
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
+    .btn-model-toggle {
+      background: #1e293b;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      padding: 7px 12px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-model-toggle:hover {
+      background: #334155;
+      border-color: var(--cyan-accent);
+    }
+
+    .model-answer-container {
+      display: none;
+      margin-top: 10px;
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      border-radius: 8px;
+      padding: 12px 14px;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    .model-badge {
+      font-size: 0.68rem;
+      font-weight: 900;
+      color: #4ade80;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .model-text {
+      font-size: 0.82rem;
+      color: #dcfce7;
+      line-height: 1.5;
+    }
+
+    /* Bottom Bar */
+    .footer-bar {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 800px) {
+      .footer-bar { grid-template-columns: 1fr; }
+    }
+
+    .vocab-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .vocab-chip {
+      background: rgba(30, 41, 59, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #e2e8f0;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .vocab-chip:hover {
+      border-color: var(--gold-primary);
+      color: var(--gold-primary);
+      background: #1e293b;
+    }
+
+    /* Popup Modal */
+    #detail-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-card {
+      background: #0f172a;
+      border: 2px solid var(--border-gold);
+      border-radius: 14px;
+      max-width: 550px;
+      width: 100%;
+      padding: 22px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+      animation: modalPop 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes modalPop { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
+  </style>
+</head>
+<body>
+
+  <div class="mat-container">
+
+    <!-- Top Status Bar -->
+    <div class="top-bar">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span class="badge-pill badge-spec"><i class="fa-solid fa-graduation-cap"></i> Edexcel GCSE History: Paper 3</span>
+        <span class="badge-pill badge-topic"><i class="fa-solid fa-image"></i> Archival Visual Edition</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button type="button" class="btn-action" onclick="window.print()"><i class="fa-solid fa-print"></i> Print A4 Handout</button>
+        <button type="button" class="btn-action" onclick="resetHighlights()"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+      </div>
+    </div>
+
+    <!-- Main Header Card with Hitler Portrait -->
+    <header class="mat-header">
+      <div class="header-text-col">
+        <div class="header-sub">
+          <i class="fa-solid fa-landmark"></i> Weimar & Nazi Germany, 1918–1939 • Key Topic 2.3
+        </div>
+        <h1 class="header-title">The Growth of Nazi Support, 1929–1932</h1>
+        <div class="header-enquiry">
+          <i class="fa-solid fa-circle-question" style="color: var(--cyan-accent);"></i>
+          Enquiry: Why did the Wall Street Crash transform the Nazi Party from a fringe sect into Germany's largest political party?
+        </div>
+      </div>
+      <div class="header-portrait-badge" title="Adolf Hitler (1889–1945)">
+        <img src="/images/weimar_individuals/adolf_hitler.jpg" alt="Hitler Portrait" />
+      </div>
+    </header>
+
+    <!-- 4 High-Yield Metric Counters -->
+    <div class="stats-grid">
+      <div class="stat-card" onclick="showDetail('6.1 Million Unemployed', 'By January 1933, over 6 million German workers were registered unemployed (roughly 1 in 3). The recall of short-term US loans under the Dawes Plan paralyzed German factories, driving mass voters toward extremist parties.')">
+        <div class="stat-icon rose"><i class="fa-solid fa-person-falling"></i></div>
+        <div>
+          <div class="stat-val">6.1M</div>
+          <div class="stat-lbl">Peak Unemployment (1933)</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('230 Reichstag Seats', 'In the July 1932 federal elections, the Nazi Party won 230 seats (37.3% of the popular vote), making them the largest party in the Reichstag, up from just 12 seats in May 1928.')">
+        <div class="stat-icon cyan"><i class="fa-solid fa-chart-column"></i></div>
+        <div>
+          <div class="stat-val">230</div>
+          <div class="stat-lbl">Reichstag Seats (July 1932)</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('400,000 SA Stormtroopers', 'By 1932, Ernst Röhm\'s SA numbered over 400,000 men. Uniformed in brownshirts, they projected an illusion of military discipline while brawling with communist Red Front fighters on the streets.')">
+        <div class="stat-icon gold"><i class="fa-solid fa-shield-halved"></i></div>
+        <div>
+          <div class="stat-val">400k</div>
+          <div class="stat-lbl">SA Stormtroopers</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('66 Presidential Decrees vs 5 Laws', 'In 1932 alone, Chancellor Brüning relied on Article 48 emergency decrees signed by President Hindenburg 66 times, while the Reichstag passed only 5 laws, proving parliamentary democracy had collapsed.')">
+        <div class="stat-icon emerald"><i class="fa-solid fa-scroll"></i></div>
+        <div>
+          <div class="stat-val">66 vs 5</div>
+          <div class="stat-lbl">Article 48 vs Reichstag Laws</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Photographic Archival Primary Artifact Cards -->
+    <div class="photo-pillars-grid">
+
+      <!-- Photo Card 1: Economic Despair -->
+      <div class="photo-card" onclick="showDetail('Archival Plate 1: The Great Depression (1932)', 'This photograph depicts unemployed German men lining up outside an employment office and soup kitchen in Berlin. The sign offers temporary work. The loss of savings and dignity radicalized the middle class against the Weimar Republic.')">
+        <div class="photo-container">
+          <img src="/images/weimar_unemployed_sa_men_1932.jpg" alt="Unemployed men in Berlin" />
+          <span class="photo-badge"><i class="fa-solid fa-camera"></i> Primary Artifact 1</span>
+        </div>
+        <div class="photo-card-body">
+          <div class="photo-card-title">
+            <i class="fa-solid fa-coins" style="color: var(--rose-accent);"></i> Economic Despair & Breadlines
+          </div>
+          <p class="photo-card-desc">
+            The Wall Street Crash wiped out German trade. Brüning's welfare cuts and deflation earned him the title 'The Hunger Chancellor'.
+          </p>
+        </div>
+      </div>
+
+      <!-- Photo Card 2: Propaganda Machine -->
+      <div class="photo-card" onclick="showDetail('Archival Plate 2: 1932 Nazi Campaign Poster', 'The iconic poster: \'Unsere letzte Hoffnung: Hitler\' (Our Last Hope: Hitler). Designed under Joseph Goebbels, it depicted weary, impoverished German workers looking up toward Hitler as their messianic savior.')">
+        <div class="photo-container">
+          <img src="/images/weimar_nazi_election_poster_1932.jpg" alt="Nazi Election Poster 1932" />
+          <span class="photo-badge"><i class="fa-solid fa-camera"></i> Primary Artifact 2</span>
+        </div>
+        <div class="photo-card-body">
+          <div class="photo-card-title">
+            <i class="fa-solid fa-bullhorn" style="color: var(--gold-primary);"></i> Goebbels' Propaganda Machine
+          </div>
+          <p class="photo-card-desc">
+            'Hitler Over Germany' airborne rallies, gramophone recordings, and tailored slogans promised 'Work and Bread' to all classes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Photo Card 3: SA Street Power -->
+      <div class="photo-card" onclick="showDetail('Archival Plate 3: SA Stormtrooper Parade (1932)', 'A massive column of uniformed SA stormtroopers parading through Berlin. Amidst street chaos and fear of communist revolution, the SA projected an illusion of orderly militarism that appealed to conservative Germans.')">
+        <div class="photo-container">
+          <img src="/images/weimar_sa_parade_berlin_1932.jpg" alt="SA Parade in Berlin" />
+          <span class="photo-badge"><i class="fa-solid fa-camera"></i> Primary Artifact 3</span>
+        </div>
+        <div class="photo-card-body">
+          <div class="photo-card-title">
+            <i class="fa-solid fa-hand-fist" style="color: var(--emerald-accent);"></i> SA Projected Discipline
+          </div>
+          <p class="photo-card-desc">
+            400,000 Brownshirts broke up Communist meetings, ran soup kitchens, and convinced middle-class voters the Nazis could restore order.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Main Content Grid: Timeline & Disciplinary Hinge -->
+    <div class="mat-body-grid">
+
+      <!-- Left Column: Chronological Causal Domino Chain -->
+      <div class="panel-box">
+        <div class="panel-heading">
+          <i class="fa-solid fa-timeline" style="color: var(--cyan-accent);"></i> Chronological Causal Domino Chain (1929–1932)
+        </div>
+        <div class="domino-timeline">
+
+          <div class="domino-step" onclick="showDetail('Oct 1929: Wall Street Crash', 'The crash of the US stock exchange led American banks to immediately recall billions in short-term Dawes Plan loans, bankrupting German businesses and triggering hyper-unemployment.')">
+            <span class="domino-date">Oct 1929</span>
+            <div class="domino-content">
+              <h4>The Wall Street Crash & Loan Recalls</h4>
+              <p>US banks abruptly recall billions in short-term loans. German industrial exports plunge by 61%.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('Mar 1930: Fall of the Grand Coalition', 'Hermann Müller\'s SPD-led government collapsed in bitter disagreement over unemployment relief, destroying the last democratic majority government in Weimar history.')">
+            <span class="domino-date">Mar 1930</span>
+            <div class="domino-content">
+              <h4>Collapse of Democratic Coalition Government</h4>
+              <p>Müller resigns. Heinrich Brüning appointed Chancellor, initiating rule by presidential decree.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('Sep 1930: Reichstag Electoral Earthquake', 'Brüning called snap elections expecting support. Instead, desperate voters deserted the center: the Nazis surged from 12 to 107 seats, while Communists won 77 seats.')">
+            <span class="domino-date">Sep 1930</span>
+            <div class="domino-content">
+              <h4>September 1930: The Breakthrough Election</h4>
+              <p>Nazis surge from 12 to 107 seats (18.3%), exploding onto the national political stage.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('Apr 1932: Presidential Election Challenge', 'Hitler flew across Germany by private plane, speaking to 200,000 people a day. Although Hindenburg won, Hitler secured 13.4 million votes (36.8%), proving he was a mainstream leader.')">
+            <span class="domino-date">Apr 1932</span>
+            <div class="domino-content">
+              <h4>Hitler Challenges Hindenburg for the Presidency</h4>
+              <p>'Hitler Over Germany' flights cement his status as a national figurehead capable of governing.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('Jul 1932: Nazis Become Largest Party in Germany', 'With 230 seats (37.3%), the NSDAP became the largest party in Reichstag history. Hitler demanded the chancellorship from Hindenburg, who refused, triggering political deadlock.')">
+            <span class="domino-date">Jul 1932</span>
+            <div class="domino-content">
+              <h4>July 1932: High-Water Mark (230 Seats)</h4>
+              <p>Nazis win 37.3% of the vote. Democratic parliamentary majorities become mathematically impossible.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Column: Disciplinary Thinking Check & Exam Focus -->
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+
+        <!-- Disciplinary Hinge Check Box -->
+        <div class="hinge-box">
+          <div class="hinge-header">
+            <i class="fa-solid fa-brain"></i> Disciplinary Thinking Check (Paper 3 Synoptic Focus)
+          </div>
+          <p class="hinge-question">
+            "Why was the Great Depression necessary, but not sufficient on its own, to explain the surge in Nazi popularity between 1929 and 1932?"
+          </p>
+          <button type="button" class="btn-model-toggle" id="btn-toggle-model" onclick="toggleModelAnswer()">
+            <i class="fa-solid fa-eye" style="color: var(--cyan-accent);"></i> <span>Reveal Grade 8/9 Examiner Model</span>
+          </button>
+          <div class="model-answer-container" id="model-container">
+            <div class="model-badge">
+              <i class="fa-solid fa-check-double"></i> Grade 8/9 Examiner Model Answer
+            </div>
+            <p class="model-text">
+              The Great Depression was the indispensable catalyst: it shattered the economic stability of the Golden Twenties, drove unemployment to 6.1 million, and exposed Weimar's institutional weakness as Brüning governed via Article 48 emergency decrees. However, economic misery alone does not explain why voters chose the Nazis rather than the Communists or other extremist parties. The decisive factors were the NSDAP's superior propaganda machinery under Goebbels, the cross-class nationalist appeal of Hitler's messianic leadership, and the middle-class terror of a Bolshevik revolution, which transformed economic grievance into political conversion.
+            </p>
+          </div>
+        </div>
+
+        <!-- Exam Strategy Targets Card -->
+        <div class="panel-box" style="border-color: rgba(56, 189, 248, 0.4); background: linear-gradient(135deg, rgba(2, 132, 199, 0.1) 0%, rgba(15, 23, 42, 0.95) 100%);">
+          <div style="font-size: 0.74rem; font-weight: 900; color: var(--cyan-accent); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-pen-nib"></i> Edexcel Paper 3 Examination Strategy
+          </div>
+          <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; display: flex; flex-direction: column; gap: 6px;">
+            <div>
+              <strong style="color: #ffffff;">Q2 Explain Why [12m]:</strong> <em>Explain why support for the Nazi Party increased in the years 1929–32.</em> (Focus: Causal links between the Depression, fear of KPD, and Nazi campaigning).
+            </div>
+            <div>
+              <strong style="color: #ffffff;">Q3d Interpretations [16m + 4m]:</strong> <em>How far do you agree that Hitler's appeal was the main reason for Nazi electoral success?</em> (Evaluate Hitler's charisma vs. economic collapse vs. fear of communism).
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar: Key Vocabulary -->
+    <div class="footer-bar">
+      <div class="panel-box" style="padding: 12px 18px;">
+        <div style="font-size: 0.7rem; font-weight: 900; color: var(--gold-primary); text-transform: uppercase; margin-bottom: 6px;">
+          <i class="fa-solid fa-spell-check"></i> Key Curriculum Vocabulary (Click to Inspect)
+        </div>
+        <div class="vocab-chips">
+          <span class="vocab-chip" onclick="showDetail('Dawes Plan (1924)', 'US loans that funded Weimar economic recovery, whose recall after October 1929 sparked the collapse of German banking and industry.')">Dawes Plan</span>
+          <span class="vocab-chip" onclick="showDetail('Article 48', 'Emergency decree power in the Weimar Constitution allowing President Hindenburg to enact laws without Reichstag consent.')">Article 48</span>
+          <span class="vocab-chip" onclick="showDetail('Heinrich Brüning', 'Center Party Chancellor (1930–1932) known as the Hunger Chancellor for cutting wages, salaries, and welfare payments.')">Heinrich Brüning</span>
+          <span class="vocab-chip" onclick="showDetail('SA (Sturmabteilung)', 'Nazi paramilitary stormtroopers (Brownshirts) led by Ernst Röhm who fought communists and projected an image of order.')">SA (Brownshirts)</span>
+          <span class="vocab-chip" onclick="showDetail('Führerprinzip', 'The leadership principle: the belief that total authority resided in Hitler and unquestioning obedience was required.')">Führerprinzip</span>
+          <span class="vocab-chip" onclick="showDetail('KPD (Kommunistische Partei Deutschlands)', 'The German Communist Party whose rapid rise to 77 seats in 1930 terrified wealthy industrialists and small shopkeepers.')">KPD (Communists)</span>
+        </div>
+      </div>
+
+      <div class="panel-box" style="padding: 12px 18px; justify-content: center; align-items: center; text-align: center;">
+        <span style="font-size: 0.72rem; color: #94a3b8; font-weight: 600;">The History Department Revision Hub</span>
+        <span style="font-size: 0.8rem; color: #f8fafc; font-weight: 800; font-family: 'Playfair Display', serif;">GCSE Master Revision Pack • 2026–2027</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Interactive Detail Modal -->
+  <div id="detail-modal" onclick="closeModal(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+        <h3 id="modal-title" style="color: var(--gold-primary); font-size: 1.15rem; font-family: 'Playfair Display', Georgia, serif;"></h3>
+        <button type="button" onclick="closeModalDirect()" style="background: none; border: none; color: #94a3b8; font-size: 1.2rem; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <p id="modal-body" style="color: #e2e8f0; font-size: 0.88rem; line-height: 1.6;"></p>
+      <div style="margin-top: 16px; text-align: right;">
+        <button type="button" class="btn-action" onclick="closeModalDirect()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleModelAnswer() {
+      const container = document.getElementById('model-container');
+      const btn = document.getElementById('btn-toggle-model');
+      const isHidden = container.style.display === 'none' || !container.style.display;
+      container.style.display = isHidden ? 'block' : 'none';
+      btn.innerHTML = isHidden
+        ? '<i class="fa-solid fa-eye-slash" style="color: #94a3b8;"></i> <span>Hide Model Answer</span>'
+        : '<i class="fa-solid fa-eye" style="color: var(--cyan-accent);"></i> <span>Reveal Grade 8/9 Examiner Model</span>';
+    }
+
+    function showDetail(title, desc) {
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-body').textContent = desc;
+      const modal = document.getElementById('detail-modal');
+      modal.style.display = 'flex';
+    }
+
+    function closeModalDirect() {
+      document.getElementById('detail-modal').style.display = 'none';
+    }
+
+    function closeModal(e) {
+      if (e.target.id === 'detail-modal') closeModalDirect();
+    }
+
+    function resetHighlights() {
+      const container = document.getElementById('model-container');
+      if (container) container.style.display = 'none';
+      const btn = document.getElementById('btn-toggle-model');
+      if (btn) {
+        btn.innerHTML = '<i class="fa-solid fa-eye" style="color: var(--cyan-accent);"></i> <span>Reveal Grade 8/9 Examiner Model</span>';
+      }
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModalDirect();
+    });
+  </script>
+</body>
+</html>

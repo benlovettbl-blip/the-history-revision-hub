@@ -213,14 +213,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           border: '#dc2626',
           image: '/images/banner_medicine_medieval.jpg',
           enquiry: 'How much did medicine really change in Medieval England?',
-          infographics: [
-            {
-              slug: 'med_medieval_era_overview',
-              label: 'Medieval Era Overview',
-              icon: 'fa-solid fa-chart-pie',
-              title: 'Medieval Medicine: Religion, Care Not Cure & The Healers (c1250–c1500)',
-            },
-          ],
         },
         {
           id: 'renaissance',
@@ -230,14 +222,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           border: '#059669',
           image: '/images/banner_medicine_renaissance.jpg',
           enquiry: 'Why did the Medical Renaissance have so little impact on everyday treatments?',
-          infographics: [
-            {
-              slug: 'med_renaissance_era_overview',
-              label: 'Renaissance Era Overview',
-              icon: 'fa-solid fa-chart-pie',
-              title: 'The Medical Renaissance: Humanism, Dissection & Scientific Enquiry (c1500–c1700)',
-            },
-          ],
         },
         {
           id: '18th_19th',
@@ -248,14 +232,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           image: '/images/banner_medicine_18th_19th.jpg',
           enquiry:
             'How did the Industrial Revolution transform the understanding and prevention of disease?',
-          infographics: [
-            {
-              slug: 'med_industrial_era_overview',
-              label: 'Industrial Era Overview',
-              icon: 'fa-solid fa-chart-pie',
-              title: 'Industrial Medicine: The Scientific Revolution & Germs (c1700–c1900)',
-            },
-          ],
         },
         {
           id: 'modern',
@@ -266,14 +242,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           image: '/images/banner_medicine_modern.jpg',
           enquiry:
             'How did technology and government intervention revolutionize 20th-century medicine?',
-          infographics: [
-            {
-              slug: 'med_modern_era_overview',
-              label: 'Modern Era Overview',
-              icon: 'fa-solid fa-chart-pie',
-              title: 'Modern Medicine: The High-Tech, Genetic & Pharmaceutical Era (c1900–Present)',
-            },
-          ],
         },
         {
           id: 'western_front',
@@ -284,14 +252,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           image: '/images/banner_medicine_western_front.jpg',
           enquiry:
             'How did the horrific conditions of trench warfare drive rapid medical innovation?',
-          infographics: [
-            {
-              slug: 'med_kt5_4_evacuation_chain_map',
-              label: 'Chain of Evacuation Map',
-              icon: 'fa-solid fa-route',
-              title: 'The Western Front Chain of Evacuation (1914–1918)',
-            },
-          ],
         },
       ];
     } else if (currentUnitId === 'cme_new') {
@@ -304,20 +264,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           border: '#3b82f6',
           image: '/assets/cme_new_kt1_cover.png',
           enquiry: 'How and why was the state of Israel established?',
-          infographics: [
-            {
-              slug: 'cme_kt1_1_withdrawal_statehood',
-              label: 'Road to Statehood',
-              icon: 'fa-solid fa-timeline',
-              title: 'The Road to Jewish Statehood (1945–1948)',
-            },
-            {
-              slug: 'cme_kt1_2_aftermath_refugees',
-              label: '1948 Refugees Crisis',
-              icon: 'fa-solid fa-people-roof',
-              title: 'Aftermath of the 1948–49 War & Palestinian Refugees',
-            },
-          ],
         },
         {
           id: 'KT2',
@@ -327,20 +273,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           border: '#ef4444',
           image: '/assets/cme_new_yom_kippur_crossing.png',
           enquiry: 'What drove the major conflicts in the Middle East from 1967-1973?',
-          infographics: [
-            {
-              slug: 'cme_kt2_2_six_day_war',
-              label: 'Six-Day War Breakdown',
-              icon: 'fa-solid fa-jet-fighter',
-              title: 'The Six-Day War (1967): Causes, Course & Territorial Consequences',
-            },
-            {
-              slug: 'cme_kt2_5_yom_kippur_status_quo',
-              label: '1973 Yom Kippur War',
-              icon: 'fa-solid fa-burst',
-              title: 'The Yom Kippur War (1973): Crossing the Suez & Shattering the Status Quo',
-            },
-          ],
         },
         {
           id: 'KT3',
@@ -351,20 +283,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           image: '/assets/cme_new_camp_david_accords.png',
           enquiry: 'Why has lasting peace in the Middle East been so difficult to achieve?',
           bgPos: 'center 20%',
-          infographics: [
-            {
-              slug: 'cme_kt3_1_camp_david_timeline',
-              label: 'Camp David Accords',
-              icon: 'fa-solid fa-handshake',
-              title: 'Historic Israel-Egypt Peace Treaty Timeline (1973–1979)',
-            },
-            {
-              slug: 'cme_kt3_3_oslo_accords',
-              label: 'Oslo Peace Accords',
-              icon: 'fa-solid fa-dove',
-              title: 'The Oslo Peace Process (1993–1995): Milestones, Handshake & Assassination',
-            },
-          ],
         },
       ];
     } else if (
@@ -457,14 +375,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           bgPos: 'center 35%',
           enquiry:
             'How did legal victories and grassroots action transform the struggle for civil rights?',
-          infographics: [
-            {
-              slug: 'usa_kt1_1_black_equality_struggle_1950s',
-              label: '1950s Civil Rights Struggle',
-              icon: 'fa-solid fa-scale-balanced',
-              title: 'The Struggle for Black Equality in the 1950s',
-            },
-          ],
         },
         {
           id: 'KT2',
@@ -476,20 +386,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           bgPos: 'center 30%',
           enquiry:
             'How did the civil rights movement evolve from non-violent protest to Black Power?',
-          infographics: [
-            {
-              slug: 'usa_kt2_2_birmingham_campaign_1963',
-              label: 'Birmingham Campaign (1963)',
-              icon: 'fa-solid fa-bullhorn',
-              title: 'The 1963 Birmingham Campaign & Children’s Crusade',
-            },
-            {
-              slug: 'usa_kt2_4_us_civil_rights_1965_1975_overview',
-              label: 'Civil Rights 1965–1975',
-              icon: 'fa-solid fa-scroll',
-              title: 'US Civil Rights 1965–1975 Overview',
-            },
-          ],
         },
         {
           id: 'KT3',
@@ -501,20 +397,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           bgPos: 'center 30%',
           enquiry:
             'Why did the USA become militarily entangled in Vietnam, and why were US tactics unable to defeat the Vietcong?',
-          infographics: [
-            {
-              slug: 'usa_kt3_1_vietnam_escalation_timeline_1954_1963',
-              label: 'Vietnam Escalation (1954–63)',
-              icon: 'fa-solid fa-timeline',
-              title: 'Vietnam Escalation Timeline 1954–1963',
-            },
-            {
-              slug: 'usa_kt3_3_tet_offensive_1968',
-              label: 'Tet Offensive (1968)',
-              icon: 'fa-solid fa-burst',
-              title: 'The Tet Offensive (1968): Turning Point of the Vietnam War',
-            },
-          ],
         },
         {
           id: 'KT4',
@@ -527,20 +409,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           bgPos: 'center 30%',
           enquiry:
             'Why did domestic opposition force the USA to withdraw, and what was the consequence of the fall of Saigon?',
-          infographics: [
-            {
-              slug: 'usa_kt4_1_vietnam_war_support_collapse',
-              label: 'Anti-War Movement',
-              icon: 'fa-solid fa-hand-fist',
-              title: 'Collapse of Public Support & The Anti-War Movement',
-            },
-            {
-              slug: 'usa_kt4_3_vietnam_peace_process_and_end',
-              label: 'Peace Process & Saigon 1975',
-              icon: 'fa-solid fa-dove',
-              title: 'The Vietnam Peace Process, US Withdrawal & Fall of Saigon',
-            },
-          ],
         },
       ];
     }

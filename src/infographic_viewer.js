@@ -146,8 +146,18 @@ function ensureModalElement() {
 
       <!-- Action Toolbar -->
       <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+        <!-- Dual Mode Segmented Control (Poster vs Interactive) -->
+        <div id="infographic-mode-toggle" style="display: none; align-items: center; background: #0f172a; border-radius: 6px; padding: 2px; border: 1px solid rgba(245, 158, 11, 0.4); margin-right: 4px;">
+          <button type="button" id="infographic-btn-mode-poster" style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: #0284c7; color: #ffffff; display: flex; align-items: center; gap: 5px; transition: all 0.15s ease;">
+            <i class="fa-solid fa-image"></i> Poster
+          </button>
+          <button type="button" id="infographic-btn-mode-interactive" style="padding: 4px 10px; font-size: 0.74rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: transparent; color: #94a3b8; display: flex; align-items: center; gap: 5px; transition: all 0.15s ease;">
+            <i class="fa-solid fa-wand-magic-sparkles" style="color: #f59e0b;"></i> Interactive
+          </button>
+        </div>
+
         <!-- Zoom Controls -->
-        <div style="display: flex; align-items: center; background: #1e293b; border-radius: 6px; padding: 2px 4px; border: 1px solid #334155;">
+        <div id="infographic-zoom-controls" style="display: flex; align-items: center; background: #1e293b; border-radius: 6px; padding: 2px 4px; border: 1px solid #334155;">
           <button type="button" id="infographic-btn-zoom-out" style="background: none; border: none; color: #cbd5e1; width: 28px; height: 28px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.85rem;" title="Zoom Out (-)"><i class="fa-solid fa-minus"></i></button>
           <span id="infographic-zoom-label" style="font-size: 0.76rem; font-weight: 700; color: #f8fafc; min-width: 44px; text-align: center; font-family: monospace;">100%</span>
           <button type="button" id="infographic-btn-zoom-in" style="background: none; border: none; color: #cbd5e1; width: 28px; height: 28px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.85rem;" title="Zoom In (+)"><i class="fa-solid fa-plus"></i></button>
@@ -176,6 +186,7 @@ function ensureModalElement() {
       <!-- Canvas Stage -->
       <div id="infographic-stage" style="flex: 1; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; cursor: grab;">
         <img id="infographic-image" src="" alt="Infographic" style="max-width: 95%; max-height: 95%; object-fit: contain; transform-origin: center center; transition: transform 0.1s ease-out; box-shadow: 0 20px 40px rgba(0,0,0,0.8); border-radius: 8px; pointer-events: none;" />
+        <iframe id="infographic-frame" src="" style="display: none; width: 100%; height: 100%; border: none; background: #070d18;"></iframe>
 
         <!-- Navigation Arrows (if multiple) -->
         <button type="button" id="infographic-btn-prev" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: rgba(15, 23, 42, 0.8); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); box-shadow: 0 4px 12px rgba(0,0,0,0.5); z-index: 5;" title="Previous (Left Arrow)"><i class="fa-solid fa-chevron-left"></i></button>
@@ -612,6 +623,60 @@ function renderCurrentItem() {
   img.style.transform = `translate(0px, 0px) scale(1)`;
   const zoomLabel = modal.querySelector('#infographic-zoom-label');
   if (zoomLabel) zoomLabel.textContent = '100%';
+
+  // Dual-Mode Toggle (Poster vs Interactive)
+  const modeToggle = modal.querySelector('#infographic-mode-toggle');
+  const btnModePoster = modal.querySelector('#infographic-btn-mode-poster');
+  const btnModeInteractive = modal.querySelector('#infographic-btn-mode-interactive');
+  const iframe = modal.querySelector('#infographic-frame');
+  const stage = modal.querySelector('#infographic-stage');
+  const zoomControls = modal.querySelector('#infographic-zoom-controls');
+
+  function setViewMode(mode) {
+    if (mode === 'interactive' && currentItem.interactiveUrl) {
+      img.style.display = 'none';
+      if (iframe) {
+        iframe.style.display = 'block';
+        if (iframe.getAttribute('data-loaded-src') !== currentItem.interactiveUrl) {
+          iframe.src = currentItem.interactiveUrl;
+          iframe.setAttribute('data-loaded-src', currentItem.interactiveUrl);
+        }
+      }
+      if (zoomControls) zoomControls.style.opacity = '0.4';
+      if (btnModeInteractive) {
+        btnModeInteractive.style.background = '#f59e0b';
+        btnModeInteractive.style.color = '#000000';
+      }
+      if (btnModePoster) {
+        btnModePoster.style.background = 'transparent';
+        btnModePoster.style.color = '#94a3b8';
+      }
+      stage.style.cursor = 'default';
+    } else {
+      if (iframe) iframe.style.display = 'none';
+      img.style.display = 'block';
+      if (zoomControls) zoomControls.style.opacity = '1';
+      if (btnModePoster) {
+        btnModePoster.style.background = '#0284c7';
+        btnModePoster.style.color = '#ffffff';
+      }
+      if (btnModeInteractive) {
+        btnModeInteractive.style.background = 'transparent';
+        btnModeInteractive.style.color = '#94a3b8';
+      }
+      stage.style.cursor = 'grab';
+    }
+  }
+
+  if (currentItem.interactiveUrl) {
+    if (modeToggle) modeToggle.style.display = 'flex';
+    if (btnModePoster) btnModePoster.onclick = () => setViewMode('poster');
+    if (btnModeInteractive) btnModeInteractive.onclick = () => setViewMode('interactive');
+    setViewMode('poster');
+  } else {
+    if (modeToggle) modeToggle.style.display = 'none';
+    setViewMode('poster');
+  }
 
   // Render the 3 interactive pill panels
   renderDrawerTools(modal, currentItem);
