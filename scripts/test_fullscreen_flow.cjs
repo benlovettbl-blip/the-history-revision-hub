@@ -84,6 +84,30 @@ const puppeteer = require('puppeteer');
   await page.screenshot({ path: 'C:/Users/fives/.gemini/antigravity/brain/3f233d4c-2fbb-4769-bee8-1b205dfe324d/fullscreen_with_questions_sidebar.png' });
   console.log('Saved screenshot: fullscreen_with_questions_sidebar.png');
 
+  console.log('\n--- TEST 2B: MODEL ANSWER HTML RENDERING VERIFICATION ---');
+  await page.evaluate(() => {
+    const btnModel = document.getElementById('drawer-btn-toggle-exam-model');
+    if (btnModel) btnModel.click();
+  });
+  await new Promise(r => setTimeout(r, 600));
+
+  const modelAnswerCheck = await page.evaluate(() => {
+    const modelBox = document.getElementById('drawer-exam-model-box');
+    const modelTextEl = document.getElementById('drawer-exam-model-text');
+    return {
+      boxDisplay: modelBox?.style.display,
+      htmlContent: modelTextEl?.innerHTML,
+      strongCount: modelTextEl?.querySelectorAll('strong').length,
+      brCount: modelTextEl?.querySelectorAll('br').length,
+      hasLiteralStrongTag: modelTextEl?.innerText.includes('<strong>') || modelTextEl?.innerText.includes('</strong>')
+    };
+  });
+  console.log('Model Answer Verification:', JSON.stringify(modelAnswerCheck, null, 2));
+
+  // Save screenshot of the expanded model answer
+  await page.screenshot({ path: 'C:/Users/fives/.gemini/antigravity/brain/3f233d4c-2fbb-4769-bee8-1b205dfe324d/model_answer_rendered_clean.png' });
+  console.log('Saved screenshot: model_answer_rendered_clean.png');
+
   console.log('\n--- TEST 3: THIRD CLICK -> CLOSE QUESTIONS SIDEBAR ---');
   await page.evaluate(() => {
     const toggleBtn = document.getElementById('infographic-btn-toggle-drawer');
@@ -104,3 +128,4 @@ const puppeteer = require('puppeteer');
   await browser.close();
   console.log('\nALL 3 TESTS PASSED PERFECTLY!');
 })();
+

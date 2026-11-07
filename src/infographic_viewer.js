@@ -717,9 +717,7 @@ function renderCurrentItem() {
   }
 
   if (currentItem.interactiveUrl) {
-    if (modeToggle) modeToggle.style.display = 'flex';
-    if (btnModePoster) btnModePoster.onclick = () => setViewMode('poster');
-    if (btnModeInteractive) btnModeInteractive.onclick = () => setViewMode('interactive');
+    if (modeToggle) modeToggle.style.display = 'none'; // Use the interactive version exclusively as requested
     setViewMode('interactive'); // Default directly to interactive revision mat!
   } else {
     if (modeToggle) modeToggle.style.display = 'none';
@@ -1159,7 +1157,7 @@ function renderDrawerTools(modal, item) {
     if (!qObj) return;
     if (examBadge) examBadge.textContent = qObj.badge;
     if (examTariff) examTariff.textContent = qObj.tariff;
-    if (examPrompt) examPrompt.textContent = qObj.prompt;
+    if (examPrompt) examPrompt.innerHTML = qObj.prompt;
 
     if (examStimulus) {
       if (qObj.stimulus) {
@@ -1171,10 +1169,10 @@ function renderDrawerTools(modal, item) {
     }
 
     if (examFormulaTitle) examFormulaTitle.textContent = qObj.formulaTitle || 'Examiner Formula';
-    if (examTip) examTip.textContent = `${qObj.formula} ${qObj.tip}`;
+    if (examTip) examTip.innerHTML = `${qObj.formula} ${qObj.tip}`;
 
     if (examModelText) {
-      examModelText.textContent =
+      examModelText.innerHTML =
         qObj.model || 'Exemplar answer will be displayed in the Exam Station.';
     }
 
@@ -1349,8 +1347,8 @@ function renderDrawerTools(modal, item) {
     }
   }
 
-  if (hingeQuestion) hingeQuestion.textContent = `"${questionText}"`;
-  if (modelText) modelText.textContent = modelAnswerText;
+  if (hingeQuestion) hingeQuestion.innerHTML = `"${questionText}"`;
+  if (modelText) modelText.innerHTML = modelAnswerText;
 
   if (btnToggleModel && modelBox) {
     btnToggleModel.onclick = () => {
