@@ -55,3 +55,4 @@ units.forEach(unit => {
 fs.writeFileSync(path.join(__dirname, 'visual_audit_report.json'), JSON.stringify(report, null, 2));
 console.log('Generated visual audit report with entries:');
 Object.keys(report).forEach(k => console.log(`  ${k}: ${report[k].length} visual items`));
+

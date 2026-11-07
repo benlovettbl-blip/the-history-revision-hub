@@ -62,6 +62,18 @@ async function runSync() {
     return false;
   }
 
+  // Step 0c: Source Fidelity & Semantic Cross-Linter
+  console.log(`\n[Step 0c/6] 🛡️ Auditing source fidelity & semantic agreement...`);
+  try {
+    execSync(`node scripts/lint_source_fidelity.cjs`, {
+      stdio: 'inherit',
+      cwd: ROOT_DIR,
+    });
+  } catch (err) {
+    console.error(`❌ Fatal: Source fidelity audit failed. Build aborted.`);
+    return false;
+  }
+
   // Step 1: Validate Syntax
   console.log(`\n[Step 1/6] 🔍 Validating JavaScript syntax for ${unitId}/data.js...`);
   try {

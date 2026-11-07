@@ -4031,7 +4031,7 @@
           "src": "/units/cme_new/assets/palestine_1949_map.png",
           "image": "/units/cme_new/assets/palestine_1949_map.png",
           "source": "/units/cme_new/assets/palestine_1949_map.png",
-          "caption": "Map depicting the 1949 Armistice Agreements (Green Line) following the war: Israel expanded to 78% of Mandate territory; Jordan annexed the West Bank; Egypt administered the Gaza Strip.",
+          "caption": "Cartographic map of former mandatory Palestine depicting the 1949 Armistice Agreements (Green Line): Israel expanded to 78% of the territory, while Jordan annexed the West Bank and Egypt administered the Gaza Strip.",
           "desc": "Cartographic map of the 1949 Rhodes Armistice ceasefire demarcation lines.",
           "provenance": "United Nations Truce Supervision Organization (UNTSO), Rhodes, 1949.",
           "citation": "UNTSO / United Nations Archives.",
@@ -7214,9 +7214,9 @@
               }
             }
           ],
-          "image": "/images/cme_six_day_war_airfield_1967.jpg",
+          "image": "/units/cme_new/assets/cme_sinai_peninsula_map.jpg",
           "image_alt": "Burned out Egyptian MiG-21 jet fighters destroyed on tarmac runways during the pre-emptive air strike, 5 June 1967",
-          "caption": "the pre-emptive air strike (5 June 1967): The Israeli Air Force destroyed over 300 Egyptian combat aircraft on the ground in three hours, securing absolute air supremacy.",
+          "caption": "Strategic cartographic map of the Sinai Peninsula and the Straits of Tiran at Sharm el-Sheikh, where Egyptian forces evicted UN peacekeepers and imposed a naval blockade against Israel in May 1967.",
           "isReversed": false
         },
         {
@@ -7300,9 +7300,9 @@
               }
             }
           ],
-          "image": "/images/cme_1967_sinai_campaign_map.jpg",
+          "image": "/images/cme_six_day_war_airfield_1967.jpg",
           "image_alt": "Military operational map showing the three-pronged IDF armored thrusts across the Sinai Peninsula toward the Suez Canal, June 1967",
-          "caption": "Sinai Blitzkrieg (5–8 June 1967): Rapid IDF armored divisions commanded by Tal, Yoffe, and Sharon outflanked Egyptian defenses and sealed the Mitla Pass.",
+          "caption": "Operation Focus (5 June 1967): Israeli Air Force pre-emptive air strike destroying Egyptian combat aircraft on their airfield runways in the opening hours of the Six-Day War.",
           "isReversed": true
         },
         {
@@ -7383,7 +7383,7 @@
           "src": "/units/cme_new/assets/cme_sinai_peninsula_map.jpg",
           "image": "/units/cme_new/assets/cme_sinai_peninsula_map.jpg",
           "source": "/units/cme_new/assets/cme_sinai_peninsula_map.jpg",
-          "caption": "Strategic map highlighting the maritime choke point at the Straits of Tiran and Sharm el-Sheikh, where Egyptian forces blocked Israeli shipping to the port of Eilat on 22 May 1967.",
+          "caption": "Strategic cartographic map of the Sinai Peninsula and Straits of Tiran, highlighting the maritime blockade at Sharm el-Sheikh that triggered the June 1967 war.",
           "desc": "Cartographic map of the Straits of Tiran maritime choke point.",
           "provenance": "Israeli Ministry of Foreign Affairs briefing chart, May 1967.",
           "citation": "Israel State Archives / MFA.",
@@ -8489,7 +8489,7 @@
           "src": "/units/cme_new/assets/palestine_1967_map.png",
           "image": "/units/cme_new/assets/palestine_1967_map.png",
           "source": "/units/cme_new/assets/palestine_1967_map.png",
-          "caption": "Israeli military command map detailing the administrative sub-districts (Jenin, Nablus, Ramallah, Hebron) placed under direct IDF military decree following Order No. 1.",
+          "caption": "Israeli military command map of former mandatory Palestine territories, detailing the administrative sub-districts established in the West Bank following the 1967 war.",
           "desc": "Cartographic map of the Israeli military government in Judea and Samaria.",
           "provenance": "Israel Defense Forces Military Advocate General Archives, Tel Aviv, 1968.",
           "citation": "IDF Archives / Israel State Archives.",
@@ -10692,7 +10692,7 @@
           "src": "/units/cme_new/assets/bar_lev_line_fortifications_map.png",
           "image": "/units/cme_new/assets/bar_lev_line_fortifications_map.png",
           "source": "/units/cme_new/assets/bar_lev_line_fortifications_map.png",
-          "caption": "Tactical map and engineering plan of the Bar-Lev Line fortifications along the eastern bank of the Suez Canal, showing fortified Maoz strongpoints and observation bunkers.",
+          "caption": "Tactical engineering blueprint of the Bar-Lev Line fortifications along the Suez Canal, breached by Egyptian troops during Operation Badr on 6 October 1973 with high-pressure water monitors.",
           "desc": "Tactical engineering plan of the Bar Lev Line fortress fortifications along the Suez Canal.",
           "provenance": "IDF Combat Engineering Corps / Ministry of Defense Archives, Tel Aviv, 1969.",
           "citation": "IDF Combat Engineering Archives.",
