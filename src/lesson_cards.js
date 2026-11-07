@@ -220,12 +220,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               icon: 'fa-solid fa-chart-pie',
               title: 'Medieval Medicine: Religion, Care Not Cure & The Healers (c1250–c1500)',
             },
-            {
-              slug: 'med_kt1_1_causes_of_illness_chart',
-              label: 'Four Humours & Causes',
-              icon: 'fa-solid fa-diagram-project',
-              title: 'Medieval Causes of Illness: God, Planets & The Four Humours',
-            },
           ],
         },
         {
@@ -239,15 +233,9 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           infographics: [
             {
               slug: 'med_renaissance_era_overview',
-              label: 'Renaissance Overview',
+              label: 'Renaissance Era Overview',
               icon: 'fa-solid fa-chart-pie',
               title: 'The Medical Renaissance: Humanism, Dissection & Scientific Enquiry (c1500–c1700)',
-            },
-            {
-              slug: 'med_kt2_5_spot_difference_1348_vs_1665',
-              label: '1348 vs 1665 Plague',
-              icon: 'fa-solid fa-scale-balanced',
-              title: 'Spot the Difference: The Black Death (1348) vs The Great Plague (1665)',
             },
           ],
         },
@@ -267,18 +255,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               icon: 'fa-solid fa-chart-pie',
               title: 'Industrial Medicine: The Scientific Revolution & Germs (c1700–c1900)',
             },
-            {
-              slug: 'med_ladder_of_progress_synoptic',
-              label: 'Public Health Ladder',
-              icon: 'fa-solid fa-stairs',
-              title: 'The Ladder of Progress: Government Intervention in Public Health (1800–1948)',
-            },
-            {
-              slug: 'med_kt3_1_germ_revolution_timeline',
-              label: 'Germ Theory Timeline',
-              icon: 'fa-solid fa-timeline',
-              title: 'The Germ Theory Revolution: Spontaneous Generation to Microbes (1861–1883)',
-            },
           ],
         },
         {
@@ -297,12 +273,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               icon: 'fa-solid fa-chart-pie',
               title: 'Modern Medicine: The High-Tech, Genetic & Pharmaceutical Era (c1900–Present)',
             },
-            {
-              slug: 'med_kt4_2_history_modern_medicine_timeline',
-              label: 'Modern Breakthroughs',
-              icon: 'fa-solid fa-timeline',
-              title: 'From Magic Bullets to the NHS: Modern Medical Breakthroughs (1900–1948)',
-            },
           ],
         },
         {
@@ -320,12 +290,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               label: 'Chain of Evacuation Map',
               icon: 'fa-solid fa-route',
               title: 'The Western Front Chain of Evacuation (1914–1918)',
-            },
-            {
-              slug: 'med_kt5_5_wwi_medical_innovations',
-              label: 'Trench Trauma Innovations',
-              icon: 'fa-solid fa-syringe',
-              title: 'WWI Battlefield Trauma: Gas Gangrene, Splints & Transfusions',
             },
           ],
         },
