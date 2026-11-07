@@ -248,47 +248,49 @@ export function renderCompetitionsView() {
         border-bottom: none;
         padding-bottom: 0;
       }
-      .prospectus-spark-header {
+      .prospectus-rules-grid {
         display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+        flex-direction: column;
         gap: 10px;
+        margin-top: 8px;
+      }
+      .prospectus-rule-row {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-left: 3.5px solid #0284c7;
+        border-radius: 8px;
+        padding: 10px 14px;
+      }
+      .prospectus-rule-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
         margin-bottom: 4px;
-        flex-wrap: wrap;
       }
-      .prospectus-spark-title {
-        font-weight: 700;
-        font-size: 0.94rem;
-        color: #0f172a;
+      .prospectus-rule-title {
+        font-weight: 800;
+        font-size: 0.84rem;
+        color: #0369a1;
+        letter-spacing: 0.01em;
       }
-      .prospectus-spark-cat {
-        font-size: 0.72rem;
-        font-weight: 600;
-        color: #64748b;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-      }
-      .prospectus-spark-desc {
-        font-size: 0.86rem;
+      .prospectus-rule-desc {
+        font-size: 0.85rem;
         line-height: 1.55;
-        color: #475569;
-        margin: 0 0 8px 0;
+        color: #334155;
+        margin: 0;
       }
-      .prospectus-spark-link {
-        display: inline-block;
-        font-size: 0.78rem;
-        font-weight: 700;
-        color: #1e3a8a;
-        background: transparent;
-        border: none;
-        padding: 0;
-        cursor: pointer;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-        transition: color 0.15s;
+      .prospectus-criteria-list {
+        margin: 8px 0 0 0;
+        padding-left: 18px;
+        font-size: 0.85rem;
+        line-height: 1.6;
+        color: #334155;
       }
-      .prospectus-spark-link:hover {
-        color: #b45309;
+      .prospectus-criteria-list li {
+        margin-bottom: 6px;
+      }
+      .prospectus-criteria-list strong {
+        color: #0f172a;
       }
       .prospectus-steps-list {
         margin: 0;
@@ -474,32 +476,42 @@ export function renderCompetitionsView() {
             </div>
 
             <div>
-              <div class="prospectus-section-label">Curriculum Connections &amp; Research Pathways</div>
-              <div class="prospectus-sparks-list">
-                ${comp.localSparks
+              <div class="prospectus-section-label">Official Competition Rules &amp; Academic Integrity</div>
+              <div class="prospectus-rules-grid">
+                ${(comp.competitionRules || [])
                   .map(
-                    (spark) => `
-                  <div class="prospectus-spark-row">
-                    <div class="prospectus-spark-header">
-                      <span class="prospectus-spark-title">${spark.title}</span>
-                      <span class="prospectus-spark-cat">${spark.category}</span>
+                    (rule) => `
+                  <div class="prospectus-rule-row">
+                    <div class="prospectus-rule-header">
+                      <i class="fa-solid fa-scale-balanced" style="color: #0284c7; font-size: 0.8rem;"></i>
+                      <span class="prospectus-rule-title">${rule.label}</span>
                     </div>
-                    <p class="prospectus-spark-desc">${spark.desc}</p>
-                    ${
-                      spark.unitId
-                        ? `
-                      <button type="button" class="prospectus-spark-link" onclick="window.openLessonFromCompetition('${spark.unitId}', ${spark.lessonIndex !== undefined ? spark.lessonIndex : 0})">
-                        ${spark.lessonLabel || 'Examine Curriculum Lesson'} &rarr;
-                      </button>
-                    `
-                        : ''
-                    }
+                    <p class="prospectus-rule-desc">${rule.rule}</p>
                   </div>
                 `,
                   )
                   .join('')}
               </div>
             </div>
+
+            ${
+              comp.adjudicationCriteria && comp.adjudicationCriteria.length > 0
+                ? `
+            <div>
+              <div class="prospectus-section-label">Judging Standards &amp; Assessment Weightings</div>
+              <ul class="prospectus-criteria-list">
+                ${comp.adjudicationCriteria
+                  .map(
+                    (c) => `
+                  <li><strong>${c.title}:</strong> ${c.desc}</li>
+                `,
+                  )
+                  .join('')}
+              </ul>
+            </div>
+            `
+                : ''
+            }
 
             <div>
               <div class="prospectus-section-label">Submission Protocol</div>

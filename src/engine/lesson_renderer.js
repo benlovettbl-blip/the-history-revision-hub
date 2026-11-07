@@ -12311,7 +12311,9 @@ export function assignQuestionNumbers(lesson, targetUnitId) {
       : null);
 
   let globalQNum = 1;
-  const isGCSE = isGCSEInteractiveUnit(unit);
+  const isGCSE = ['cme_new', 'edexcel_medicine', 'eee', 'weimar_nazi_germany', 'usa'].includes(
+    unit,
+  );
   const isGreatWar = unit === 'great_war' || unit === 'great_war_part2';
   const hasNarrativeBlocks = Boolean(lesson.narrative_blocks && lesson.narrative_blocks.length > 0);
 

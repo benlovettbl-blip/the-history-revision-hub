@@ -32,6 +32,16 @@ if (fnStart === -1 || fnEnd === -1) {
   );
   process.exit(1);
 }
+const GCSE_CANONICAL_UNITS = [
+  'cme_new',
+  'edexcel_medicine',
+  'eee',
+  'weimar_nazi_germany',
+  'cold_war',
+  'usa',
+];
+const isGCSEInteractiveUnit = (uId) => GCSE_CANONICAL_UNITS.includes(uId);
+
 const fnCode = rendererSrc.slice(fnStart, fnEnd).replace('export function', 'function');
 eval(fnCode);
 

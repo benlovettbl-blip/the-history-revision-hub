@@ -288,7 +288,7 @@
     },
     {
       "unit": "cme_new",
-      "lessonId": "unit_overview",
+      "lessonId": "lesson_0",
       "slug": "cme_edexcel_spec_roadmap",
       "title": "Edexcel GCSE (9–1) Conflict in the Middle East Specification Roadmap",
       "topic": "Specification Architecture & Examiner's Toolkit",
@@ -302,11 +302,12 @@
         "Examiner's Toolkit: Question 1 (8 marks consequences), Question 2 (8 marks narrative), Question 3 (16 marks importance)."
       ],
       "image": "/images/infographics/cme/cme_edexcel_spec_roadmap.webp",
-      "fileSizeKb": 601
+      "fileSizeKb": 601,
+      "legacyLessonId": "unit_overview"
     },
     {
       "unit": "cme_new",
-      "lessonId": "unit_overview",
+      "lessonId": "lesson_0",
       "slug": "cme_narrative_chronology_roadmap",
       "title": "Roadmap to History: Conflict in the Middle East Chronology (1945–1995)",
       "topic": "Chronological Turning Points & Causal Evolution",
@@ -319,11 +320,12 @@
         "Visual iconography for all major peace treaties and military confrontations."
       ],
       "image": "/images/infographics/cme/cme_narrative_chronology_roadmap.webp",
-      "fileSizeKb": 507
+      "fileSizeKb": 507,
+      "legacyLessonId": "unit_overview"
     },
     {
       "unit": "cme_new",
-      "lessonId": "unit_overview",
+      "lessonId": "lesson_0",
       "slug": "cme_visual_course_overview",
       "title": "Conflict in the Middle East 1945–1995: Visual Historical Overview",
       "topic": "Core Course Overview & Diplomatic Documents",
@@ -335,7 +337,8 @@
         "Dual eras: 1945–1967 Statehood & Regional Escalation vs 1973–1995 Global Impact & Peace Search."
       ],
       "image": "/images/infographics/cme/cme_visual_course_overview.webp",
-      "fileSizeKb": 633
+      "fileSizeKb": 633,
+      "legacyLessonId": "unit_overview"
     },
     {
       "unit": "cme_new",

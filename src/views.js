@@ -2059,9 +2059,87 @@ export async function renderLessonsView() {
               <i class="fa-solid fa-scroll"></i>
               <span>Chronology Scroll</span>
             </button>
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_visual_course_overview');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #0d9488; color: #ffffff; border: 1px solid #2dd4bf; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(13,148,136,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
+              <i class="fa-solid fa-images"></i>
+              <span>Course Visual Overview</span>
+            </button>
             <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_paper2_exam_guide');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #3b82f6; color: #ffffff; border: 1px solid #60a5fa; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(59,130,246,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
               <i class="fa-solid fa-graduation-cap"></i>
               <span>Paper 2 Exam Guide</span>
+            </button>
+          </div>
+        </div>
+      `;
+    } else if (uId === 'edexcel_medicine') {
+      return `
+        <div class="unit-roadmap-strip" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1.5px solid #334155; border-radius: 12px; padding: 16px 20px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="background: #059669; color: #ffffff; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; box-shadow: 0 2px 8px rgba(5,150,105,0.4); flex-shrink: 0;">
+              <i class="fa-solid fa-staff-snake"></i>
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 0.72rem; font-weight: 700; color: #34d399; text-transform: uppercase; letter-spacing: 0.05em;">Visual Knowledge Architecture</span>
+                <span style="font-size: 0.68rem; font-weight: 600; color: #94a3b8; background: #334155; padding: 1px 6px; border-radius: 4px;">Edexcel Specification</span>
+              </div>
+              <h4 style="margin: 2px 0 0 0; color: #ffffff; font-size: 1.02rem; font-family: 'Playfair Display', Georgia, serif;">Medicine in Britain: Master Course Timelines &amp; Visual Overviews</h4>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('med_course_overview_c1250_present');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #059669; color: #ffffff; border: 1px solid #34d399; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(5,150,105,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
+              <i class="fa-solid fa-route"></i>
+              <span>c1250–Present Master Course Overview</span>
+            </button>
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('med_ladder_of_progress_synoptic');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #0284c7; color: #ffffff; border: 1px solid #38bdf8; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(2,132,199,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
+              <i class="fa-solid fa-stairs"></i>
+              <span>Public Health Ladder (1800–1948)</span>
+            </button>
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('med_medieval_era_overview');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#334155';" onmouseout="this.style.background='#1e293b';">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Medieval Era</span>
+            </button>
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('med_renaissance_era_overview');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#334155';" onmouseout="this.style.background='#1e293b';">
+              <i class="fa-solid fa-microscope"></i>
+              <span>Renaissance Era</span>
+            </button>
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('med_industrial_era_overview');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#334155';" onmouseout="this.style.background='#1e293b';">
+              <i class="fa-solid fa-industry"></i>
+              <span>Industrial Era</span>
+            </button>
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('med_modern_era_overview');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#334155';" onmouseout="this.style.background='#1e293b';">
+              <i class="fa-solid fa-dna"></i>
+              <span>Modern Era</span>
+            </button>
+          </div>
+        </div>
+      `;
+    } else if (uId === 'usa') {
+      return `
+        <div class="unit-roadmap-strip" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1.5px solid #334155; border-radius: 12px; padding: 16px 20px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="background: #b91c1c; color: #ffffff; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; box-shadow: 0 2px 8px rgba(185,28,28,0.4); flex-shrink: 0;">
+              <i class="fa-solid fa-flag-usa"></i>
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 0.72rem; font-weight: 700; color: #f87171; text-transform: uppercase; letter-spacing: 0.05em;">Visual Knowledge Architecture</span>
+                <span style="font-size: 0.68rem; font-weight: 600; color: #94a3b8; background: #334155; padding: 1px 6px; border-radius: 4px;">Edexcel Specification</span>
+              </div>
+              <h4 style="margin: 2px 0 0 0; color: #ffffff; font-size: 1.02rem; font-family: 'Playfair Display', Georgia, serif;">USA 1954–1975: Exam Strategy Guides &amp; Chronological Timelines</h4>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('usa_paper3_exam_strategy_guide');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #b91c1c; color: #ffffff; border: 1px solid #ef4444; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(185,28,28,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Paper 3 Exam Strategy Guide</span>
+            </button>
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('usa_kt3_1_vietnam_escalation_timeline_1954_1963');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#334155';" onmouseout="this.style.background='#1e293b';">
+              <i class="fa-solid fa-timeline"></i>
+              <span>Vietnam Escalation (1954–1963)</span>
+            </button>
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('usa_kt2_4_us_civil_rights_1965_1975_overview');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#334155';" onmouseout="this.style.background='#1e293b';">
+              <i class="fa-solid fa-scroll"></i>
+              <span>Civil Rights (1965–1975)</span>
             </button>
           </div>
         </div>
