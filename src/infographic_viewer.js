@@ -164,10 +164,22 @@ function ensureModalElement() {
           <button type="button" id="infographic-btn-zoom-reset" style="background: none; border: none; color: #94a3b8; padding: 0 6px; height: 28px; cursor: pointer; font-size: 0.72rem; font-weight: 700; border-left: 1px solid #334155;" title="Fit / Reset (0)">FIT</button>
         </div>
 
+        <!-- Whiteboard Fit (Auto-scales mat to fit 100% on one screen with zero scrolling) -->
+        <button type="button" id="infographic-btn-whiteboard-fit" style="display: none; align-items: center; gap: 6px; padding: 6px 12px; background: #0284c7; color: #ffffff; border: 1.5px solid #38bdf8; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease; box-shadow: 0 2px 6px rgba(2, 132, 199, 0.3);" title="Whiteboard Mode: Automatically scales mat to fit 100% on one screen with zero scrolling">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <span class="btn-text-desktop">Fit to Screen</span>
+        </button>
+
+        <!-- Projector Fullscreen (F11 requestFullscreen) -->
+        <button type="button" id="infographic-btn-fullscreen" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #1e293b; color: #f1f5f9; border: 1px solid #334155; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;" title="Toggle Projector Fullscreen Mode">
+          <i class="fa-solid fa-expand" id="infographic-fullscreen-icon"></i>
+          <span class="btn-text-desktop" id="infographic-fullscreen-text">Projector View</span>
+        </button>
+
         <!-- Download & Open in New Tab -->
-        <a id="infographic-btn-tab" href="#" target="_blank" style="display: none; align-items: center; gap: 6px; padding: 6px 12px; background: #f59e0b; color: #000000; text-decoration: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; transition: all 0.15s ease; box-shadow: 0 2px 6px rgba(245,158,11,0.3);" title="Open interactive revision mat in a new full browser window">
+        <a id="infographic-btn-tab" href="#" target="_blank" style="display: none; align-items: center; gap: 6px; padding: 6px 12px; background: #334155; color: #f8fafc; text-decoration: none; border: 1px solid #475569; border-radius: 6px; font-size: 0.82rem; font-weight: 700; transition: all 0.15s ease;" title="Open interactive revision mat in a new full browser window">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          <span class="btn-text-desktop">Open Fullscreen</span>
+          <span class="btn-text-desktop">New Tab</span>
         </a>
         <a id="infographic-btn-download" href="#" target="_blank" download style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #0284c7; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; transition: all 0.15s ease;" title="Download high-resolution revision image">
           <i class="fa-solid fa-download"></i>
@@ -410,6 +422,11 @@ function setupModalEvents(modal) {
       if (drawerChevron) drawerChevron.style.transform = 'rotate(0deg)';
       if (floatingQuestionsBtn) floatingQuestionsBtn.style.display = 'flex';
     }
+    setTimeout(() => {
+      if (typeof window.__hubApplyWhiteboardFit === 'function') {
+        window.__hubApplyWhiteboardFit();
+      }
+    }, 120);
   };
   window.__hubUpdateDrawerStateUI = updateDrawerStateUI;
 
@@ -421,6 +438,121 @@ function setupModalEvents(modal) {
   btnCloseDrawer.addEventListener('click', toggleDrawer);
   if (floatingQuestionsBtn) {
     floatingQuestionsBtn.addEventListener('click', () => updateDrawerStateUI(true));
+  }
+
+  // Whiteboard Fit & Fullscreen Actions
+  const btnWhiteboardFit = modal.querySelector('#infographic-btn-whiteboard-fit');
+  const btnFullscreen = modal.querySelector('#infographic-btn-fullscreen');
+  const iconFullscreen = modal.querySelector('#infographic-fullscreen-icon');
+  const textFullscreen = modal.querySelector('#infographic-fullscreen-text');
+  const iframeEl = modal.querySelector('#infographic-frame');
+
+  let whiteboardFitEnabled = true;
+
+  const applyWhiteboardFit = () => {
+    if (!iframeEl || iframeEl.style.display === 'none') return;
+    if (!whiteboardFitEnabled) {
+      try {
+        const doc = iframeEl.contentDocument;
+        if (doc && doc.body) {
+          doc.body.style.zoom = '1';
+          doc.body.style.overflow = '';
+        }
+      } catch (e) {}
+      if (btnWhiteboardFit) {
+        btnWhiteboardFit.style.background = '#1e293b';
+        btnWhiteboardFit.style.color = '#94a3b8';
+        btnWhiteboardFit.style.borderColor = '#334155';
+        btnWhiteboardFit.style.boxShadow = 'none';
+      }
+      return;
+    }
+
+    if (btnWhiteboardFit) {
+      btnWhiteboardFit.style.background = '#0284c7';
+      btnWhiteboardFit.style.color = '#ffffff';
+      btnWhiteboardFit.style.borderColor = '#38bdf8';
+      btnWhiteboardFit.style.boxShadow = '0 2px 6px rgba(2, 132, 199, 0.3)';
+    }
+
+    try {
+      const doc = iframeEl.contentDocument;
+      if (!doc || !doc.body) return;
+
+      // Reset zoom first to get true natural scrollHeight
+      doc.body.style.zoom = '1';
+      doc.body.style.overflow = '';
+
+      const container = doc.querySelector('.mat-container') || doc.body;
+      const naturalHeight = doc.body.scrollHeight;
+      const naturalWidth = container.offsetWidth || 1440;
+
+      const availableHeight = iframeEl.clientHeight - 6;
+      const availableWidth = iframeEl.clientWidth - 12;
+
+      if (availableHeight <= 0 || naturalHeight <= 0) return;
+
+      const scaleH = availableHeight / naturalHeight;
+      const scaleW = availableWidth / naturalWidth;
+      const scale = Math.min(scaleH, scaleW, 1.0); // Fit completely in both dimensions
+
+      if (scale < 0.99) {
+        doc.body.style.zoom = scale;
+        doc.body.style.overflow = 'hidden'; // Guarantees zero scrollbar in whiteboard mode!
+      } else {
+        doc.body.style.zoom = '1';
+        doc.body.style.overflow = '';
+      }
+    } catch (e) {
+      // Cross-origin safeguard
+    }
+  };
+  window.__hubApplyWhiteboardFit = applyWhiteboardFit;
+
+  if (btnWhiteboardFit) {
+    btnWhiteboardFit.addEventListener('click', () => {
+      whiteboardFitEnabled = !whiteboardFitEnabled;
+      applyWhiteboardFit();
+    });
+  }
+
+  if (btnFullscreen) {
+    btnFullscreen.addEventListener('click', () => {
+      if (!document.fullscreenElement) {
+        if (modal.requestFullscreen) {
+          modal.requestFullscreen().catch(() => {
+            document.documentElement.requestFullscreen?.();
+          });
+        } else if (document.documentElement.requestFullscreen) {
+          document.documentElement.requestFullscreen();
+        }
+      } else {
+        document.exitFullscreen?.();
+      }
+    });
+
+    document.addEventListener('fullscreenchange', () => {
+      const isFull = Boolean(document.fullscreenElement);
+      if (iconFullscreen) {
+        iconFullscreen.className = isFull ? 'fa-solid fa-compress' : 'fa-solid fa-expand';
+      }
+      if (textFullscreen) {
+        textFullscreen.textContent = isFull ? 'Exit Projector' : 'Projector View';
+      }
+      setTimeout(applyWhiteboardFit, 150);
+    });
+  }
+
+  window.addEventListener('resize', () => {
+    applyWhiteboardFit();
+  });
+
+  if (iframeEl) {
+    iframeEl.addEventListener('load', () => {
+      setTimeout(applyWhiteboardFit, 60);
+      setTimeout(applyWhiteboardFit, 250);
+      setTimeout(applyWhiteboardFit, 700);
+    });
   }
 
   // Drawer pill navigation
@@ -666,6 +798,7 @@ function renderCurrentItem() {
   const tabBtn = modal.querySelector('#infographic-btn-tab');
   const drawer = modal.querySelector('#infographic-drawer');
   const btnToggleDrawer = modal.querySelector('#infographic-btn-toggle-drawer');
+  const btnWhiteboardFit = modal.querySelector('#infographic-btn-whiteboard-fit');
 
   function setViewMode(mode) {
     if (mode === 'interactive' && currentItem.interactiveUrl) {
@@ -679,6 +812,7 @@ function renderCurrentItem() {
       }
       if (zoomControls) zoomControls.style.display = 'none';
       if (downloadBtn) downloadBtn.style.display = 'none';
+      if (btnWhiteboardFit) btnWhiteboardFit.style.display = 'inline-flex';
       if (tabBtn) {
         tabBtn.href = currentItem.interactiveUrl;
         tabBtn.style.display = 'inline-flex';
@@ -698,11 +832,17 @@ function renderCurrentItem() {
         btnModePoster.style.color = '#94a3b8';
       }
       stage.style.cursor = 'default';
+      setTimeout(() => {
+        if (typeof window.__hubApplyWhiteboardFit === 'function') {
+          window.__hubApplyWhiteboardFit();
+        }
+      }, 100);
     } else {
       if (iframe) iframe.style.display = 'none';
       img.style.display = 'block';
       if (zoomControls) zoomControls.style.display = 'flex';
       if (downloadBtn) downloadBtn.style.display = 'inline-flex';
+      if (btnWhiteboardFit) btnWhiteboardFit.style.display = 'none';
       if (tabBtn) tabBtn.style.display = 'none';
       if (btnModePoster) {
         btnModePoster.style.background = '#0284c7';
