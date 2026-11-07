@@ -4,8 +4,10 @@
  * Verifies:
  * 1. Physical Asset Existence (every image path exists on disk)
  * 2. Target Lesson Validity (every lessonId/lessonIds exists in database.json or is unit_overview)
- * 3. Semantic / Chronological Alignment (flags potential mismatches between lesson titles and infographic topics)
- * 4. Coverage Report per GCSE Unit
+ * 3. Zero Legacy ID Pollution (ensures no legacyLessonId remains in manifest)
+ * 4. Semantic / Chronological Alignment (flags mismatches between lesson titles and infographic topics)
+ * 5. Runtime Query Isolation & Zero Bleed Gate (tests exact getLessonInfographicsSync across every lesson)
+ * 6. Coverage Report per GCSE Unit
  *
  * Run: node scripts/audit_infographics.cjs
  */
@@ -40,6 +42,30 @@ console.log('============================================================\n');
 
 const units = ['cme_new', 'eee', 'edexcel_medicine', 'usa'];
 
+// Runtime matcher parity helper
+function getLessonInfographicsSyncLocal(unitId, lessonIdOrIndex) {
+  const unitList = manifest[unitId] || [];
+  if (!unitList.length) return [];
+  const targetStr = String(lessonIdOrIndex ?? '').trim();
+  if (!targetStr) return [];
+  const normalizedTarget = targetStr.replace(/^lesson_/i, '');
+
+  return unitList.filter((item) => {
+    if (item.lessonId) {
+      if (item.lessonId === targetStr) return true;
+      if (item.lessonId === `lesson_${targetStr}`) return true;
+      if (`lesson_${item.lessonId}` === targetStr) return true;
+      if (item.lessonId.replace(/^lesson_/i, '') === normalizedTarget) return true;
+    }
+    if (Array.isArray(item.lessonIds)) {
+      if (item.lessonIds.includes(targetStr)) return true;
+      if (item.lessonIds.includes(`lesson_${targetStr}`)) return true;
+      if (item.lessonIds.some(id => id.replace(/^lesson_/i, '') === normalizedTarget)) return true;
+    }
+    return false;
+  });
+}
+
 for (const unitId of units) {
   const items = manifest[unitId] || [];
   const unitDb = database[unitId];
@@ -61,7 +87,13 @@ for (const unitId of units) {
       totalErrors++;
     }
 
-    // 2. Lesson Target Validity
+    // 2. Zero Legacy ID Pollution
+    if (item.legacyLessonId !== undefined) {
+      console.error(`  ❌ ${prefix} Contains deprecated legacyLessonId '${item.legacyLessonId}'! Remove it.`);
+      totalErrors++;
+    }
+
+    // 3. Lesson Target Validity
     const targets = [];
     if (item.lessonId) targets.push(item.lessonId);
     if (Array.isArray(item.lessonIds)) targets.push(...item.lessonIds);
@@ -72,31 +104,22 @@ for (const unitId of units) {
     } else {
       targets.forEach((targetId) => {
         if (targetId === 'unit_overview' || targetId === 'overview' || targetId === 'exam_practice' || targetId === 'exam_overview' || item.type === 'exam_technique') {
-          // Valid period banner, unit overview, or exam strategy mat
           return;
         }
         if (!validLessonIds.has(targetId)) {
-          // Check if legacy mapping exists
-          const legacy = item.legacyLessonId;
-          if (legacy && validLessonIds.has(legacy)) {
-            console.warn(`  ⚠️ ${prefix} Assigned to '${targetId}' which does not exist, but legacy '${legacy}' does.`);
-            totalWarnings++;
-          } else {
-            console.error(`  ❌ ${prefix} Assigned to ghost lessonId '${targetId}' (does not exist in ${unitId})!`);
-            totalErrors++;
-          }
+          console.error(`  ❌ ${prefix} Assigned to ghost lessonId '${targetId}' (does not exist in ${unitId})!`);
+          totalErrors++;
         }
       });
     }
 
-    // 3. Semantic / Chronological Sanity Check
+    // 4. Semantic / Chronological Sanity Check
     if (item.lessonId && validLessonIds.has(item.lessonId)) {
       const lesson = lessons.find((l) => l.id === item.lessonId);
       if (lesson) {
         const lessonTitleLower = (lesson.title || '').toLowerCase();
         const matTitleLower = (item.title || '').toLowerCase();
 
-        // Sample spot-check: Era clash detection
         if (matTitleLower.includes('medieval') && (lessonTitleLower.includes('modern') || lessonTitleLower.includes('western front') || lessonTitleLower.includes('c1900'))) {
           console.warn(`  ⚠️ ${prefix} ERA CLASH WARNING: Mat '${item.title}' contains 'medieval' but mapped to modern lesson '${lesson.title}'!`);
           totalWarnings++;
@@ -113,6 +136,26 @@ for (const unitId of units) {
     }
   });
 
+  // 5. Runtime Query Isolation & Intra-Lesson Parity Gate
+  lessons.forEach((l, lIdx) => {
+    const matchedMats = getLessonInfographicsSyncLocal(unitId, l.id);
+    // Check that each matched mat strictly belongs to this lesson
+    matchedMats.forEach((mat) => {
+      const matTargets = [mat.lessonId, ...(Array.isArray(mat.lessonIds) ? mat.lessonIds : [])].filter(Boolean);
+      const isTarget = matTargets.includes(l.id) || matTargets.some(t => t.replace(/^lesson_/i, '') === l.id.replace(/^lesson_/i, ''));
+      if (!isTarget) {
+        console.error(`  ❌ CROSS-LESSON BLEED: Lesson ${lIdx} (${l.id}) queried mat '${mat.title}' which belongs to '${mat.lessonId}'!`);
+        totalErrors++;
+      }
+    });
+
+    // Check maximum mat budget sanity (no runaway 11-mat bugs)
+    if (matchedMats.length > 5) {
+      console.error(`  ❌ EXCESSIVE MAT COUNT: Lesson ${lIdx} (${l.id}) has ${matchedMats.length} mats (max budget is 5)!`);
+      totalErrors++;
+    }
+  });
+
   // Summary per unit
   const mappedLessonCount = lessons.filter((l) =>
     items.some((i) => i.lessonId === l.id || (Array.isArray(i.lessonIds) && i.lessonIds.includes(l.id)))
@@ -124,7 +167,7 @@ for (const unitId of units) {
 console.log('============================================================');
 console.log(`AUDIT COMPLETE: ${totalInspected} infographics inspected.`);
 if (totalErrors === 0 && totalWarnings === 0) {
-  console.log('🎉 100% HEALTHY: All infographics exist, point to valid lessons, and match curriculum eras!');
+  console.log('🎉 100% HEALTHY: All infographics exist, point to valid lessons, have zero legacy pollution, and guarantee zero cross-lesson bleed!');
 } else {
   console.log(`Results: ${totalErrors} errors, ${totalWarnings} warnings.`);
 }

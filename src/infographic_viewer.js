@@ -46,6 +46,7 @@ export async function getInfographicsManifest() {
 
 /**
  * Find infographics matching a unit and lesson ID or index synchronously from cache.
+ * Enforces strict, exact matching by lessonId or lessonIds array to prevent cross-lesson bleed.
  */
 export function getLessonInfographicsSync(unitId, lessonIdOrIndex) {
   const manifest = manifestCache || (typeof window !== 'undefined' && window.__INFOGRAPHICS_MANIFEST__);
@@ -53,25 +54,21 @@ export function getLessonInfographicsSync(unitId, lessonIdOrIndex) {
   const unitList = manifest[unitId] || [];
   if (!unitList.length) return [];
 
-  const targetStr = String(lessonIdOrIndex || '');
+  const targetStr = String(lessonIdOrIndex ?? '').trim();
   if (!targetStr) return [];
+  const normalizedTarget = targetStr.replace(/^lesson_/i, '');
 
   return unitList.filter((item) => {
-    if (item.lessonId && (item.lessonId === targetStr || item.lessonId === `lesson_${targetStr}`)) {
-      return true;
+    if (item.lessonId) {
+      if (item.lessonId === targetStr) return true;
+      if (item.lessonId === `lesson_${targetStr}`) return true;
+      if (`lesson_${item.lessonId}` === targetStr) return true;
+      if (item.lessonId.replace(/^lesson_/i, '') === normalizedTarget) return true;
     }
-    if (Array.isArray(item.lessonIds) && (item.lessonIds.includes(targetStr) || item.lessonIds.includes(`lesson_${targetStr}`))) {
-      return true;
-    }
-    if (item.legacyLessonId && (item.legacyLessonId === targetStr || item.legacyLessonId === `lesson_${targetStr}`)) {
-      return true;
-    }
-    if (typeof item.lessonIndex === 'number' && item.lessonIndex === Number(lessonIdOrIndex)) {
-      return true;
-    }
-    const normalizedTarget = targetStr.replace(/^lesson_/i, '').replace(/[^0-9a-z_]/gi, '_');
-    if (normalizedTarget && item.slug && item.slug.includes(normalizedTarget)) {
-      return true;
+    if (Array.isArray(item.lessonIds)) {
+      if (item.lessonIds.includes(targetStr)) return true;
+      if (item.lessonIds.includes(`lesson_${targetStr}`)) return true;
+      if (item.lessonIds.some(id => id.replace(/^lesson_/i, '') === normalizedTarget)) return true;
     }
     return false;
   });
@@ -88,31 +85,8 @@ export function getLessonInfographicCount(unitId, lessonIdOrIndex) {
  * Find infographics matching a unit and lesson ID or index.
  */
 export async function getLessonInfographics(unitId, lessonIdOrIndex) {
-  const manifest = await getInfographicsManifest();
-  const unitList = manifest[unitId] || [];
-  if (!unitList.length) return [];
-
-  const targetStr = String(lessonIdOrIndex);
-
-  return unitList.filter((item) => {
-    if (item.lessonId && (item.lessonId === targetStr || item.lessonId === `lesson_${targetStr}`)) {
-      return true;
-    }
-    if (Array.isArray(item.lessonIds) && (item.lessonIds.includes(targetStr) || item.lessonIds.includes(`lesson_${targetStr}`))) {
-      return true;
-    }
-    if (item.legacyLessonId && (item.legacyLessonId === targetStr || item.legacyLessonId === `lesson_${targetStr}`)) {
-      return true;
-    }
-    if (typeof item.lessonIndex === 'number' && item.lessonIndex === Number(lessonIdOrIndex)) {
-      return true;
-    }
-    // Handle fuzzy mapping (e.g. lesson_1_1 vs 1.1)
-    if (item.slug && item.slug.includes(targetStr.replace(/[^0-9a-z_]/gi, '_'))) {
-      return true;
-    }
-    return false;
-  });
+  await getInfographicsManifest();
+  return getLessonInfographicsSync(unitId, lessonIdOrIndex);
 }
 
 /**
