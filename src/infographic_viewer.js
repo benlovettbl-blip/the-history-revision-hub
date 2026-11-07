@@ -165,6 +165,10 @@ function ensureModalElement() {
         </div>
 
         <!-- Download & Open in New Tab -->
+        <a id="infographic-btn-tab" href="#" target="_blank" style="display: none; align-items: center; gap: 6px; padding: 6px 12px; background: #f59e0b; color: #000000; text-decoration: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; transition: all 0.15s ease; box-shadow: 0 2px 6px rgba(245,158,11,0.3);" title="Open interactive revision mat in a new full browser window">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <span class="btn-text-desktop">Open Fullscreen</span>
+        </a>
         <a id="infographic-btn-download" href="#" target="_blank" download style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #0284c7; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; transition: all 0.15s ease;" title="Download high-resolution revision image">
           <i class="fa-solid fa-download"></i>
           <span class="btn-text-desktop">Download</span>
@@ -631,6 +635,9 @@ function renderCurrentItem() {
   const iframe = modal.querySelector('#infographic-frame');
   const stage = modal.querySelector('#infographic-stage');
   const zoomControls = modal.querySelector('#infographic-zoom-controls');
+  const tabBtn = modal.querySelector('#infographic-btn-tab');
+  const drawer = modal.querySelector('#infographic-drawer');
+  const btnToggleDrawer = modal.querySelector('#infographic-btn-toggle-drawer');
 
   function setViewMode(mode) {
     if (mode === 'interactive' && currentItem.interactiveUrl) {
@@ -642,7 +649,18 @@ function renderCurrentItem() {
           iframe.setAttribute('data-loaded-src', currentItem.interactiveUrl);
         }
       }
-      if (zoomControls) zoomControls.style.opacity = '0.4';
+      if (zoomControls) zoomControls.style.display = 'none';
+      if (downloadBtn) downloadBtn.style.display = 'none';
+      if (tabBtn) {
+        tabBtn.href = currentItem.interactiveUrl;
+        tabBtn.style.display = 'inline-flex';
+      }
+      // Auto-collapse side drawer in interactive mode to give the mat full viewport width
+      if (drawer) drawer.style.display = 'none';
+      if (btnToggleDrawer) {
+        btnToggleDrawer.style.background = '#334155';
+        btnToggleDrawer.style.color = '#f8fafc';
+      }
       if (btnModeInteractive) {
         btnModeInteractive.style.background = '#f59e0b';
         btnModeInteractive.style.color = '#000000';
@@ -655,7 +673,9 @@ function renderCurrentItem() {
     } else {
       if (iframe) iframe.style.display = 'none';
       img.style.display = 'block';
-      if (zoomControls) zoomControls.style.opacity = '1';
+      if (zoomControls) zoomControls.style.display = 'flex';
+      if (downloadBtn) downloadBtn.style.display = 'inline-flex';
+      if (tabBtn) tabBtn.style.display = 'none';
       if (btnModePoster) {
         btnModePoster.style.background = '#0284c7';
         btnModePoster.style.color = '#ffffff';
@@ -672,9 +692,10 @@ function renderCurrentItem() {
     if (modeToggle) modeToggle.style.display = 'flex';
     if (btnModePoster) btnModePoster.onclick = () => setViewMode('poster');
     if (btnModeInteractive) btnModeInteractive.onclick = () => setViewMode('interactive');
-    setViewMode('poster');
+    setViewMode('interactive'); // Default directly to interactive revision mat!
   } else {
     if (modeToggle) modeToggle.style.display = 'none';
+    if (tabBtn) tabBtn.style.display = 'none';
     setViewMode('poster');
   }
 

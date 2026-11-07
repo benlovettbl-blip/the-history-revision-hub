@@ -68,3 +68,4 @@ renderAllMats().catch(err => {
   console.error('Error rendering mats:', err);
   process.exit(1);
 });
+
