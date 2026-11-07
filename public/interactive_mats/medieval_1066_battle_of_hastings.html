@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KS3 History: 1066 & The Battle of Hastings | Revision & Enquiry Mat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-dark: #070d18;
+      --bg-surface: #0f172a;
+      --bg-card: rgba(15, 23, 42, 0.92);
+      --bg-card-hover: rgba(30, 41, 59, 0.98);
+      --border-subtle: rgba(255, 255, 255, 0.1);
+      --border-gold: rgba(245, 158, 11, 0.5);
+      --gold-primary: #fbbf24;
+      --gold-dark: #b45309;
+      --crimson-accent: #f43f5e;
+      --cyan-accent: #38bdf8;
+      --emerald-accent: #34d399;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #050914 radial-gradient(ellipse 80% 50% at 50% -20%, rgba(14, 165, 233, 0.2), rgba(7, 13, 24, 0.95) 70%, #030712 100%);
+      color: var(--text-main);
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      padding: clamp(10px, 1.4vh, 18px);
+      line-height: 1.45;
+    }
+
+    .mat-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: clamp(10px, 1.2vh, 14px);
+    }
+
+    /* Top Utility & Mode Switcher Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 6px 14px;
+      backdrop-filter: blur(10px);
+    }
+
+    .ks3-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      background: linear-flex;
+      background: rgba(14, 165, 233, 0.2);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+    }
+
+    /* 3-Part Navigation Segmented Control */
+    .mode-nav {
+      display: flex;
+      background: #090e1a;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      padding: 3px;
+      gap: 4px;
+    }
+
+    .mode-btn {
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #94a3b8;
+      background: transparent;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .mode-btn:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .mode-btn.active {
+      background: #0284c7;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+    }
+
+    /* Magazine Header */
+    .mat-header {
+      background: linear-gradient(135deg, #0c4a6e 0%, #0f172a 45%, #1e1b4b 100%);
+      border: 2px solid rgba(56, 189, 248, 0.5);
+      border-radius: 14px;
+      padding: 14px 22px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .mat-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background: linear-gradient(180deg, #38bdf8, #fbbf24, #f43f5e);
+    }
+
+    .header-sub {
+      color: var(--gold-primary);
+      font-size: 0.8rem;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .header-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .header-enquiry {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      margin-top: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-style: italic;
+    }
+
+    /* PART 1: NARRATIVE BLOCKS & 3 WORD BOXES */
+    .blocks-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    @media (max-width: 980px) {
+      .blocks-grid { grid-template-columns: 1fr; }
+    }
+
+    .block-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+      transition: all 0.2s ease;
+    }
+
+    .block-card:hover {
+      border-color: #38bdf8;
+      box-shadow: 0 8px 25px rgba(2, 132, 199, 0.25);
+    }
+
+    .block-header-strip {
+      padding: 8px 12px;
+      background: #0f172a;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .block-act-badge {
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .block-title {
+      font-size: 0.96rem;
+      font-weight: 800;
+      color: #ffffff;
+      padding: 10px 14px 4px 14px;
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    .block-source-preview {
+      position: relative;
+      height: 145px;
+      background: #030712;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      cursor: zoom-in;
+    }
+
+    .block-source-preview img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 4px;
+      transition: transform 0.25s ease;
+    }
+
+    .block-source-preview:hover img {
+      transform: scale(1.04);
+    }
+
+    .block-source-badge {
+      position: absolute;
+      bottom: 6px;
+      left: 8px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 2.5px 7px;
+      border-radius: 4px;
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      backdrop-filter: blur(4px);
+    }
+
+    .block-summary-text {
+      padding: 8px 14px;
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.45;
+    }
+
+    /* THE 3 WORKBOOK WORD BOXES */
+    .word-boxes-section {
+      background: rgba(8, 14, 29, 0.9);
+      border-top: 1px dashed rgba(255, 255, 255, 0.15);
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .word-boxes-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: #fbbf24;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .word-box-item {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 6px;
+      padding: 6px 10px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .word-box-item:hover {
+      border-color: #38bdf8;
+      background: #131e33;
+    }
+
+    .word-box-item.revealed {
+      border-color: #38bdf8;
+      background: rgba(2, 132, 199, 0.15);
+    }
+
+    .word-box-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .word-box-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #f8fafc;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .word-box-status {
+      font-size: 0.68rem;
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    .word-box-note {
+      font-size: 0.74rem;
+      color: #cbd5e1;
+      line-height: 1.35;
+      padding-top: 3px;
+      border-top: 1px dotted rgba(255, 255, 255, 0.1);
+      display: none;
+    }
+
+    /* Sentence Launcher Banner */
+    .sentence-launcher-box {
+      margin-top: auto;
+      padding: 8px 12px;
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.9));
+      border-top: 1px solid #1e293b;
+      font-size: 0.76rem;
+    }
+
+    .sentence-launcher-btn {
+      background: none;
+      border: none;
+      color: #38bdf8;
+      font-size: 0.74rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0;
+      outline: none;
+    }
+
+    .sentence-launcher-output {
+      margin-top: 5px;
+      font-style: italic;
+      color: #f8fafc;
+      display: none;
+      padding-left: 6px;
+      border-left: 2px solid #38bdf8;
+      line-height: 1.35;
+    }
+
+    /* PART 2: THE CAUSAL BALANCE SCALE */
+    .scale-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .scale-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .scale-stage {
+      position: relative;
+      height: 240px;
+      background: radial-gradient(circle at center, #0f172a 0%, #070d18 100%);
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .scale-beam {
+      width: 70%;
+      height: 8px;
+      background: #475569;
+      border-radius: 4px;
+      position: relative;
+      transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .scale-pivot {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 35px solid #0284c7;
+      z-index: 2;
+    }
+
+    .scale-pan-left, .scale-pan-right {
+      position: absolute;
+      top: 100%;
+      width: 140px;
+      background: #1e293b;
+      border: 1.5px solid #38bdf8;
+      border-radius: 8px;
+      padding: 8px 10px;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+    }
+
+    .scale-pan-left { left: -10px; border-color: #f43f5e; }
+    .scale-pan-right { right: -10px; border-color: #38bdf8; }
+
+    .pan-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; }
+    .pan-weight { font-size: 1.3rem; font-weight: 900; margin-top: 2px; }
+
+    .scale-chips-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .scale-chip-btn {
+      padding: 8px 12px;
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      color: #cbd5e1;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+
+    .scale-chip-btn.active {
+      border-color: #38bdf8;
+      background: rgba(2, 132, 199, 0.2);
+      color: #ffffff;
+    }
+
+    /* PART 3: WRITING STUDIO & CLUE LADDER */
+    .studio-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .studio-grid { grid-template-columns: 1fr; }
+    }
+
+    .clue-ladder-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .ladder-step {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: border-color 0.2s ease;
+    }
+
+    .ladder-step.active {
+      border-color: var(--cyan-accent);
+      background: rgba(15, 23, 42, 0.95);
+    }
+
+    .ladder-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-bronze { color: #f97316; }
+    .badge-silver { color: #cbd5e1; }
+    .badge-gold { color: #fbbf24; }
+
+    .word-palette-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .palette-chip {
+      padding: 4px 10px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: #38bdf8;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .palette-chip:hover {
+      background: #0284c7;
+      color: #ffffff;
+      border-color: #38bdf8;
+      transform: translateY(-1px);
+    }
+
+    /* Modal */
+    #detail-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-card {
+      background: #0f172a;
+      border: 2px solid var(--border-gold);
+      border-radius: 12px;
+      max-width: 650px;
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    }
+    /* Print Styles */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        padding: 0 !important;
+      }
+      .top-bar, .mode-nav, .palette-chip, .sentence-launcher-btn, #detail-modal {
+        display: none !important;
+      }
+      .mat-header {
+        background: #f1f5f9 !important;
+        border: 2px solid #0284c7 !important;
+        color: #000000 !important;
+      }
+      .header-title, .header-sub, .header-enquiry {
+        color: #000000 !important;
+      }
+      #part-1-container, #part-2-container, #part-3-container {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+      }
+      .block-card, .clue-ladder-card, .scale-container {
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        color: #000000 !important;
+      }
+      .word-box-note, .sentence-launcher-output, #model-essay-box {
+        display: block !important;
+        color: #1e293b !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="mat-container">
+
+    <!-- Top Utility & Mode Switcher -->
+    <div class="top-bar">
+      <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <span class="ks3-badge"><i class="fa-solid fa-graduation-cap"></i> Key Stage 3 History</span>
+        <span style="font-size: 0.75rem; color: #94a3b8; font-weight: 600;">Medieval Realms (1066–1500) &bull; Lesson 1</span>
+      </div>
+
+      <!-- The 3 Interactive Parts / Views -->
+      <nav class="mode-nav" aria-label="KS3 Mat View Modes">
+        <button type="button" class="mode-btn active" id="btn-mode-1" onclick="switchPart(1)">
+          <i class="fa-solid fa-book-open"></i> <span>1. Left Page (Word Boxes)</span>
+        </button>
+        <button type="button" class="mode-btn" id="btn-mode-2" onclick="switchPart(2)">
+          <i class="fa-solid fa-scale-balanced"></i> <span>2. Causal Balance Scale</span>
+        </button>
+        <button type="button" class="mode-btn" id="btn-mode-3" onclick="switchPart(3)">
+          <i class="fa-solid fa-pen-nib"></i> <span>3. Right Page (Writing Studio)</span>
+        </button>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 6px;">
+        <button type="button" class="palette-chip" onclick="toggleAllWordBoxes()"><i class="fa-solid fa-wand-magic-sparkles"></i> Reveal All Clues</button>
+        <button type="button" class="palette-chip" onclick="window.print()"><i class="fa-solid fa-print"></i> Print A4 Handout</button>
+        <button type="button" class="palette-chip" onclick="resetAll()"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+      </div>
+    </div>
+
+    <!-- Magazine-Style Enquiry Header -->
+    <header class="mat-header">
+      <div>
+        <div class="header-sub">
+          <i class="fa-solid fa-crown"></i> 1066 &amp; The Norman Conquest &bull; Disciplinary Revision Studio
+        </div>
+        <h1 class="header-title">The Battle of Hastings: Why Did William Win?</h1>
+        <div class="header-enquiry">
+          <i class="fa-solid fa-circle-question" style="color: var(--cyan-accent);"></i>
+          Enquiry: Was William's victory decided by Norman tactical brilliance or Anglo-Saxon exhaustion and bad luck?
+        </div>
+      </div>
+      <div style="width: 72px; height: 72px; border-radius: 50%; border: 3px solid var(--gold-primary); overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+        <img src="/images/medieval_england/plate_1_2_bayeux_norman_cavalry.jpg" alt="Bayeux Cavalry" style="width: 100%; height: 100%; object-fit: cover;" />
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- PART 1: LEFT-PAGE COMPANION (NARRATIVE BLOCKS & 3 WORD BOXES)      -->
+    <!-- ================================================================= -->
+    <main id="part-1-container" class="blocks-grid">
+
+      <!-- ACT 1 BLOCK -->
+      <section class="block-card">
+        <div class="block-header-strip">
+          <span class="block-act-badge"><i class="fa-solid fa-1"></i> Narrative Block 1</span>
+          <span style="font-size: 0.7rem; color: #94a3b8; font-weight: 600;">Jan 1066</span>
+        </div>
+        <h2 class="block-title">The Succession Crisis &amp; Broken Oath</h2>
+        <div class="block-source-preview" onclick="showDetail('Bayeux Tapestry (Scene 23): The Sacred Relics Oath', 'Harold Godwinson swearing an oath on two holy reliquaries at Bayeux (c. 1064), promising to support Duke William\'s claim. When Harold crowned himself king, William convinced the Pope that Harold was a perjurer and traitor.', '/images/medieval_england/source_a_bayeux_harold_oath.jpg')">
+          <img src="/images/medieval_england/source_a_bayeux_harold_oath.jpg" alt="Harold swearing oath" />
+          <span class="block-source-badge"><i class="fa-solid fa-camera"></i> Source A &bull; Bayeux Tapestry</span>
+        </div>
+        <p class="block-summary-text">
+          Edward the Confessor died childless on 5 January 1066. The Anglo-Saxon <strong>Witan</strong> council elected wealthy Earl Harold Godwinson, but Duke William claimed Harold had sworn a sacred oath to support him.
+        </p>
+
+        <!-- THE 3 WORKBOOK WORD BOXES FOR BLOCK 1 -->
+        <div class="word-boxes-section">
+          <div class="word-boxes-label"><i class="fa-solid fa-pen-to-square"></i> Left Workbook Page &bull; 3 Word Boxes</div>
+          
+          <div class="word-box-item" onclick="toggleWordBox(this)">
+            <div class="word-box-top">
+              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Box 1: Succession Crisis</span>
+              <span class="word-box-status">[ Click Clue ]</span>
+            </div>
+            <div class="word-box-note"><strong>Workbook Note:</strong> Edward dies childless; no direct blood heir; England plunges into a dynastic power struggle.</div>
+          </div>
+
+          <div class="word-box-item" onclick="toggleWordBox(this)">
+            <div class="word-box-top">
+              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Box 2: The Witan</span>
+              <span class="word-box-status">[ Click Clue ]</span>
+            </div>
+            <div class="word-box-note"><strong>Workbook Note:</strong> Royal council of Saxon nobles and bishops who elected Harold Godwinson as king.</div>
+          </div>
+
+          <div class="word-box-item" onclick="toggleWordBox(this)">
+            <div class="word-box-top">
+              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Box 3: Sacred Relics Oath</span>
+              <span class="word-box-status">[ Click Clue ]</span>
+            </div>
+            <div class="word-box-note"><strong>Workbook Note:</strong> William claimed Harold broke his sacred vow on holy relics, securing the Pope's papal blessing.</div>
+          </div>
+        </div>
+
+        <div class="sentence-launcher-box">
+          <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Launch Historian Sentence Frame</span>
+          </button>
+          <div class="sentence-launcher-output">
+            "When Edward's death sparked a <strong>succession crisis</strong>, the <strong>Witan</strong> crowned Harold, but William attacked him for violating a <strong>sacred oath</strong>."
+          </div>
+        </div>
+      </section>
+
+      <!-- ACT 2 BLOCK -->
+      <section class="block-card">
+        <div class="block-header-strip">
+          <span class="block-act-badge"><i class="fa-solid fa-2"></i> Narrative Block 2</span>
+          <span style="font-size: 0.7rem; color: #94a3b8; font-weight: 600;">Sep 1066</span>
+        </div>
+        <h2 class="block-title">The Viking Attack &amp; Forced March</h2>
+        <div class="block-source-preview" onclick="showDetail('Silver Penny of King Harold II (1066)', 'London mint silver penny bearing Harold\'s face and the Latin word \'PAX\' (Peace). Harold desperately tried to maintain stability, but was forced to fight two major foreign invasions within three weeks.', '/images/medieval_england/source_c_harold_godwinson_penny.jpg')">
+          <img src="/images/medieval_england/source_c_harold_godwinson_penny.jpg" alt="Harold Silver Penny" />
+          <span class="block-source-badge"><i class="fa-solid fa-coins"></i> Source C &bull; Harold II Coinage</span>
+        </div>
+        <p class="block-summary-text">
+          Viking warlord Harald Hardrada invaded the north. Harold marched his army 185 miles north in 4 days, annihilating the Vikings at Stamford Bridge. But three days later, the wind changed and William landed in the south!
+        </p>
+
+        <!-- THE 3 WORKBOOK WORD BOXES FOR BLOCK 2 -->
+        <div class="word-boxes-section">
+          <div class="word-boxes-label"><i class="fa-solid fa-pen-to-square"></i> Left Workbook Page &bull; 3 Word Boxes</div>
+          
+          <div class="word-box-item" onclick="toggleWordBox(this)">
+            <div class="word-box-top">
+              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Box 1: Rapid March</span>
+              <span class="word-box-status">[ Click Clue ]</span>
+            </div>
+            <div class="word-box-note"><strong>Workbook Note:</strong> Harold marched 185 miles north in four days, achieving total tactical surprise at Stamford Bridge.</div>
+          </div>
+
+          <div class="word-box-item" onclick="toggleWordBox(this)">
+            <div class="word-box-top">
+              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Box 2: Stamford Bridge</span>
+              <span class="word-box-status">[ Click Clue ]</span>
+            </div>
+            <div class="word-box-note"><strong>Workbook Note:</strong> Decisive Saxon victory over Hardrada, but Harold's elite professional housecarls suffered heavy casualties.</div>
+          </div>
+
+          <div class="word-box-item" onclick="toggleWordBox(this)">
+            <div class="word-box-top">
+              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Box 3: Shift in Wind</span>
+              <span class="word-box-status">[ Click Clue ]</span>
+            </div>
+            <div class="word-box-note"><strong>Workbook Note:</strong> Southerly winds allowed William's 700 ships to cross the Channel while Harold was stranded 250 miles away.</div>
+          </div>
+        </div>
+
+        <div class="sentence-launcher-box">
+          <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Launch Historian Sentence Frame</span>
+          </button>
+          <div class="sentence-launcher-output">
+            "Although Harold's <strong>rapid march</strong> won glory at <strong>Stamford Bridge</strong>, the sudden <strong>shift in the wind</strong> forced his exhausted army to race south to face William."
+          </div>
+        </div>
+      </section>
+
+      <!-- ACT 3 BLOCK -->
+      <section class="block-card">
+        <div class="block-header-strip">
+          <span class="block-act-badge"><i class="fa-solid fa-3"></i> Narrative Block 3</span>
+          <span style="font-size: 0.7rem; color: #94a3b8; font-weight: 600;">14 Oct 1066</span>
+        </div>
+        <h2 class="block-title">The Shield Wall &amp; Feigned Retreat</h2>
+        <div class="block-source-preview" onclick="showDetail('Bayeux Tapestry (Scene 55): Duke William Unmasks His Helmet', 'When rumors spread through the Norman ranks that Duke William had been killed, panic ensued. William pushed back his helmet, shouting: \'Look at me! I live and with God\'s help I shall conquer!\' He then ordered the feigned retreat.', '/images/medieval_england/source_d_bayeux_william_unmasks.jpg')">
+          <img src="/images/medieval_england/source_d_bayeux_william_unmasks.jpg" alt="William unmasks helmet" />
+          <span class="block-source-badge"><i class="fa-solid fa-camera"></i> Source D &bull; Bayeux Tapestry</span>
+        </div>
+        <p class="block-summary-text">
+          On Senlac Hill, Harold deployed a locked <strong>shield wall</strong> that repulsed cavalry charges for six hours. William ordered the famous <strong>feigned retreat</strong>, tricking the undisciplined fyrd into breaking formation.
+        </p>
+
+        <!-- THE 3 WORKBOOK WORD BOXES FOR BLOCK 3 -->
+        <div class="word-boxes-section">
+          <div class="word-boxes-label"><i class="fa-solid fa-pen-to-square"></i> Left Workbook Page &bull; 3 Word Boxes</div>
+          
+          <div class="word-box-item" onclick="toggleWordBox(this)">
+            <div class="word-box-top">
+              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Box 1: Shield Wall</span>
+              <span class="word-box-status">[ Click Clue ]</span>
+            </div>
+            <div class="word-box-note"><strong>Workbook Note:</strong> Impenetrable wall of overlapping Saxon shields atop Senlac Hill that held off Norman cavalry for hours.</div>
+          </div>
+
+          <div class="word-box-item" onclick="toggleWordBox(this)">
+            <div class="word-box-top">
+              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Box 2: Feigned Retreat</span>
+              <span class="word-box-status">[ Click Clue ]</span>
+            </div>
+            <div class="word-box-note"><strong>Workbook Note:</strong> Tactical trick where Norman cavalry faked panic, luring Saxon militia down the hill where they were surrounded.</div>
+          </div>
+
+          <div class="word-box-item" onclick="toggleWordBox(this)">
+            <div class="word-box-top">
+              <span class="word-box-title"><i class="fa-solid fa-square-check" style="color: #38bdf8;"></i> Box 3: Combined Arms</span>
+              <span class="word-box-status">[ Click Clue ]</span>
+            </div>
+            <div class="word-box-note"><strong>Workbook Note:</strong> William combined cavalry, infantry, and high-angle archers, whereas Harold relied solely on defensive infantry.</div>
+          </div>
+        </div>
+
+        <div class="sentence-launcher-box">
+          <button type="button" class="sentence-launcher-btn" onclick="toggleSentence(this)">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Launch Historian Sentence Frame</span>
+          </button>
+          <div class="sentence-launcher-output">
+            "While Harold's <strong>shield wall</strong> held strong, William's cunning <strong>feigned retreat</strong> broke their line and allowed his <strong>combined arms</strong> to annihilate the Saxon army."
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- PART 2: THE CAUSAL BALANCE SCALE (LUCK VS TACTICAL SKILL)          -->
+    <!-- ================================================================= -->
+    <main id="part-2-container" class="scale-container" style="display: none;">
+      <div class="scale-header">
+        <h2 style="font-size: 1.35rem; font-weight: 800; color: #ffffff; font-family: 'Playfair Display', Georgia, serif;">
+          The Historian's Weighing Scale: What Really Decided 1066?
+        </h2>
+        <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">
+          Click the historical evidence chips below to weigh up whether William won through <strong>Saxon Bad Luck</strong> or <strong>Norman Military Skill</strong>.
+        </p>
+      </div>
+
+      <!-- Animated Balance Scale -->
+      <div class="scale-stage">
+        <div class="scale-pivot"></div>
+        <div class="scale-beam" id="scale-beam">
+          <div class="scale-pan-left">
+            <div class="pan-label" style="color: #f43f5e;"><i class="fa-solid fa-clover"></i> Saxon Bad Luck</div>
+            <div class="pan-weight" id="weight-luck" style="color: #f43f5e;">0 pts</div>
+          </div>
+          <div class="scale-pan-right">
+            <div class="pan-label" style="color: #38bdf8;"><i class="fa-solid fa-chess"></i> Norman Skill</div>
+            <div class="pan-weight" id="weight-skill" style="color: #38bdf8;">0 pts</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Evidence Chips Selection Grid -->
+      <div class="scale-chips-grid">
+        <!-- Luck Column -->
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 0.76rem; font-weight: 800; color: #f43f5e; text-transform: uppercase; letter-spacing: 0.5px;">
+            <i class="fa-solid fa-cloud-bolt"></i> Saxon Misfortune &amp; Exhaustion Evidence
+          </div>
+          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="15" onclick="toggleScaleChip(this)">
+            <span><strong>1. Dual Invasion:</strong> Attacked in the north and south in the same month</span>
+            <i class="fa-solid fa-plus-circle" style="color: #f43f5e;"></i>
+          </button>
+          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="20" onclick="toggleScaleChip(this)">
+            <span><strong>2. Stamford Bridge Losses:</strong> Harold lost many of his finest housecarls</span>
+            <i class="fa-solid fa-plus-circle" style="color: #f43f5e;"></i>
+          </button>
+          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="15" onclick="toggleScaleChip(this)">
+            <span><strong>3. 400-Mile March:</strong> Saxon fyrd marched on foot for weeks without rest</span>
+            <i class="fa-solid fa-plus-circle" style="color: #f43f5e;"></i>
+          </button>
+          <button type="button" class="scale-chip-btn" data-side="luck" data-pts="10" onclick="toggleScaleChip(this)">
+            <span><strong>4. The Channel Wind:</strong> Wind delayed William until Harold marched north</span>
+            <i class="fa-solid fa-plus-circle" style="color: #f43f5e;"></i>
+          </button>
+        </div>
+
+        <!-- Skill Column -->
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 0.76rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px;">
+            <i class="fa-solid fa-shield"></i> Norman Tactical Brilliance Evidence
+          </div>
+          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="20" onclick="toggleScaleChip(this)">
+            <span><strong>1. Feigned Retreat:</strong> Cunning tactical trick broke the impenetrable shield wall</span>
+            <i class="fa-solid fa-plus-circle" style="color: #38bdf8;"></i>
+          </button>
+          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="20" onclick="toggleScaleChip(this)">
+            <span><strong>2. Combined Arms:</strong> Coordinated archers, heavy cavalry, and infantry</span>
+            <i class="fa-solid fa-plus-circle" style="color: #38bdf8;"></i>
+          </button>
+          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="15" onclick="toggleScaleChip(this)">
+            <span><strong>3. William's Leadership:</strong> Removing helmet under arrow fire to stop panic</span>
+            <i class="fa-solid fa-plus-circle" style="color: #38bdf8;"></i>
+          </button>
+          <button type="button" class="scale-chip-btn" data-side="skill" data-pts="10" onclick="toggleScaleChip(this)">
+            <span><strong>4. Papal Banner:</strong> Pope's sacred blessing gave Norman soldiers moral courage</span>
+            <i class="fa-solid fa-plus-circle" style="color: #38bdf8;"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="scale-verdict-box" style="padding: 12px 16px; background: #0f172a; border-radius: 8px; border-left: 4px solid var(--gold-primary); font-size: 0.86rem; color: #f8fafc;">
+        <strong>Historian's Enquiry Verdict:</strong> Click chips on both sides to weigh up your historical conclusion!
+      </div>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- PART 3: RIGHT-PAGE COMPANION (WRITING STUDIO & CLUE LADDER)        -->
+    <!-- ================================================================= -->
+    <main id="part-3-container" class="studio-grid" style="display: none;">
+
+      <!-- Clue Ladder -->
+      <section class="clue-ladder-card">
+        <div style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;">
+          <span style="font-size: 0.7rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px;">Right Workbook Page &bull; Enquiry Writing Studio</span>
+          <h2 style="font-size: 1.15rem; font-weight: 800; color: #ffffff; font-family: 'Playfair Display', Georgia, serif; margin-top: 2px;">
+            The 3-Tier Clue Ladder (Write Your Paragraph)
+          </h2>
+        </div>
+
+        <!-- Bronze Step -->
+        <div class="ladder-step active">
+          <span class="ladder-badge badge-bronze"><i class="fa-solid fa-award"></i> Bronze Clue &bull; The Sentence Starter (Point)</span>
+          <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.4;">
+            "A crucial factor in William's triumph was his revolutionary deployment of combined arms..."
+          </p>
+        </div>
+
+        <!-- Silver Step -->
+        <div class="ladder-step">
+          <span class="ladder-badge badge-silver"><i class="fa-solid fa-award"></i> Silver Clue &bull; Left Page Word Box Checklist (Evidence)</span>
+          <p style="font-size: 0.8rem; color: #94a3b8;">
+            Make sure your paragraph embeds these words from your left-hand workbook page:
+          </p>
+          <div class="word-palette-chips">
+            <span class="palette-chip">Shield Wall</span>
+            <span class="palette-chip">Feigned Retreat</span>
+            <span class="palette-chip">Stamford Bridge Fatigue</span>
+            <span class="palette-chip">Combined Arms</span>
+          </div>
+        </div>
+
+        <!-- Gold Step -->
+        <div class="ladder-step">
+          <span class="ladder-badge badge-gold"><i class="fa-solid fa-award"></i> Gold Clue &bull; The Historian's Explanation ('So What?')</span>
+          <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.4;">
+            Explain <strong>why</strong> the feigned retreat was decisive: once the Saxon fyrd broke formation, their lack of horses meant they could neither defend themselves against cavalry nor catch up to retreat!
+          </p>
+        </div>
+
+        <!-- Exemplar Reveal -->
+        <div style="margin-top: 6px;">
+          <button type="button" class="palette-chip" style="width: 100%; padding: 8px; text-align: center; background: #0284c7; color: #ffffff;" onclick="toggleModelEssay()">
+            <i class="fa-solid fa-eye"></i> <span>[ Reveal Exemplar Historian Paragraph ]</span>
+          </button>
+          <div id="model-essay-box" style="display: none; margin-top: 10px; padding: 12px 14px; background: #0b1120; border-radius: 8px; border-left: 3px solid #38bdf8; font-size: 0.84rem; line-height: 1.55; color: #f8fafc; font-family: Georgia, serif;">
+            "A decisive factor in William’s victory was his mastery of combined arms. For over six hours on Senlac Hill, the Anglo-Saxon <strong>shield wall</strong> held firm against frontal cavalry charges. However, William exploited Saxon overconfidence by ordering a series of <strong>feigned retreats</strong>. When the undisciplined Saxon fyrd broke formation to pursue the 'fleeing' Normans, William’s heavy cavalry wheeled around and encircled them. Deprived of the defensive protection of their locked shields and exhausted from their 400-mile march from <strong>Stamford Bridge</strong>, the Saxon infantry was decimated, proving that William's tactical flexibility—not mere fortune—secured his triumph."
+          </div>
+        </div>
+      </section>
+
+      <!-- Historian's Word Palette -->
+      <section class="clue-ladder-card">
+        <div style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;">
+          <span style="font-size: 0.7rem; font-weight: 800; color: #fbbf24; text-transform: uppercase; letter-spacing: 0.5px;">Disciplinary Writing Tools</span>
+          <h2 style="font-size: 1.15rem; font-weight: 800; color: #ffffff; font-family: 'Playfair Display', Georgia, serif; margin-top: 2px;">
+            The Historian's Word Palette
+          </h2>
+        </div>
+
+        <div>
+          <span style="font-size: 0.72rem; font-weight: 800; color: #38bdf8; text-transform: uppercase;">Elevate Your Causal Verbs</span>
+          <div class="word-palette-chips">
+            <span class="palette-chip" onclick="showWordHelp('Precipitated', 'Caused an event to happen suddenly or sooner than expected.')">precipitated</span>
+            <span class="palette-chip" onclick="showWordHelp('Decimated', 'Destroyed or killed a huge proportion of an army.')">decimated</span>
+            <span class="palette-chip" onclick="showWordHelp('Neutralised', 'Rendered an enemy advantage completely harmless or ineffective.')">neutralised</span>
+            <span class="palette-chip" onclick="showWordHelp('Outmanoeuvred', 'Gained an advantage through superior tactical skill.')">outmanoeuvred</span>
+            <span class="palette-chip" onclick="showWordHelp('Capitalised on', 'Took full advantage of a mistake or opportunity.')">capitalised on</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 10px;">
+          <span style="font-size: 0.72rem; font-weight: 800; color: #fbbf24; text-transform: uppercase;">Disciplinary Evaluation Adjectives</span>
+          <div class="word-palette-chips">
+            <span class="palette-chip" onclick="showWordHelp('Indispensable', 'So absolutely necessary that the outcome could not happen without it.')">indispensable</span>
+            <span class="palette-chip" onclick="showWordHelp('Pivotal', 'A central turning point on which everything else depended.')">pivotal</span>
+            <span class="palette-chip" onclick="showWordHelp('Catastrophic', 'Involving sudden and massive ruin or defeat.')">catastrophic</span>
+            <span class="palette-chip" onclick="showWordHelp('Insurmountable', 'Too great to be overcome or resisted.')">insurmountable</span>
+          </div>
+        </div>
+
+        <div id="word-help-box" style="margin-top: auto; padding: 10px 12px; background: #0f172a; border-radius: 6px; border: 1px solid #1e293b; font-size: 0.78rem; color: #94a3b8;">
+          <strong style="color: #ffffff;">Tip:</strong> Click any word above to view its historian definition and usage frame!
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Interactive Detail Modal -->
+  <div id="detail-modal" onclick="closeModalDirect()">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+        <h3 id="modal-title" style="color: var(--gold-primary); font-size: 1.15rem; font-family: 'Playfair Display', Georgia, serif;"></h3>
+        <button type="button" onclick="closeModalDirect()" style="background: none; border: none; color: #94a3b8; font-size: 1.2rem; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="modal-img-container" style="text-align: center; margin-bottom: 12px; background: #030712; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 8px; display: none;">
+        <img id="modal-img" src="" alt="Primary Visual Source" style="max-height: 48vh; max-width: 100%; object-fit: contain; border-radius: 4px; display: block; margin: 0 auto; box-shadow: 0 4px 16px rgba(0,0,0,0.5);" />
+      </div>
+      <p id="modal-body" style="color: #e2e8f0; font-size: 0.88rem; line-height: 1.6;"></p>
+      <div style="margin-top: 16px; text-align: right;">
+        <button type="button" class="palette-chip" style="background: #1e293b; color: #ffffff;" onclick="closeModalDirect()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function notifyParentFit() {
+      try {
+        if (window.parent && typeof window.parent.__hubApplyWhiteboardFit === 'function') {
+          setTimeout(window.parent.__hubApplyWhiteboardFit, 40);
+        }
+      } catch (e) {}
+    }
+
+    // 1. Part Mode Switcher
+    function switchPart(partNum) {
+      document.querySelectorAll('.mode-btn').forEach((btn, idx) => {
+        btn.classList.toggle('active', idx + 1 === partNum);
+      });
+      document.getElementById('part-1-container').style.display = partNum === 1 ? 'grid' : 'none';
+      document.getElementById('part-2-container').style.display = partNum === 2 ? 'flex' : 'none';
+      document.getElementById('part-3-container').style.display = partNum === 3 ? 'grid' : 'none';
+      notifyParentFit();
+    }
+
+    // 2. Word Box Toggle
+    function toggleWordBox(el) {
+      const note = el.querySelector('.word-box-note');
+      const status = el.querySelector('.word-box-status');
+      const isRevealed = note.style.display === 'block';
+      note.style.display = isRevealed ? 'none' : 'block';
+      el.classList.toggle('revealed', !isRevealed);
+      status.textContent = isRevealed ? '[ Click Clue ]' : '[ Revealed ]';
+      notifyParentFit();
+    }
+
+    function toggleAllWordBoxes() {
+      document.querySelectorAll('.word-box-item').forEach(el => {
+        const note = el.querySelector('.word-box-note');
+        const status = el.querySelector('.word-box-status');
+        note.style.display = 'block';
+        el.classList.add('revealed');
+        status.textContent = '[ Revealed ]';
+      });
+      notifyParentFit();
+    }
+
+    // 3. Sentence Launcher Toggle
+    function toggleSentence(btn) {
+      const out = btn.nextElementSibling;
+      const isHidden = out.style.display === 'none' || !out.style.display;
+      out.style.display = isHidden ? 'block' : 'none';
+      btn.querySelector('span').textContent = isHidden ? 'Hide Historian Sentence' : 'Launch Historian Sentence Frame';
+      notifyParentFit();
+    }
+
+    // 4. Weighing Scale Logic
+    let luckWeight = 0;
+    let skillWeight = 0;
+
+    function toggleScaleChip(btn) {
+      const side = btn.dataset.side;
+      const pts = parseInt(btn.dataset.pts, 10);
+      const isActive = btn.classList.contains('active');
+      btn.classList.toggle('active', !isActive);
+
+      if (side === 'luck') {
+        luckWeight += isActive ? -pts : pts;
+        document.getElementById('weight-luck').textContent = `${luckWeight} pts`;
+      } else {
+        skillWeight += isActive ? -pts : pts;
+        document.getElementById('weight-skill').textContent = `${skillWeight} pts`;
+      }
+
+      // Calculate tilt angle (-15deg to +15deg)
+      const diff = skillWeight - luckWeight;
+      const angle = Math.max(-15, Math.min(15, diff * 0.4));
+      document.getElementById('scale-beam').style.transform = `rotate(${angle}deg)`;
+
+      // Update Verdict
+      const verdict = document.getElementById('scale-verdict-box');
+      if (skillWeight === 0 && luckWeight === 0) {
+        verdict.innerHTML = '<strong>Historian\'s Enquiry Verdict:</strong> Click chips on both sides to weigh up your historical conclusion!';
+      } else if (skillWeight > luckWeight) {
+        verdict.innerHTML = `<strong>Norman Tactical Skill Leads (+${skillWeight - luckWeight} pts):</strong> The scale tilts toward deliberate military prowess—suggesting the feigned retreat and combined arms decisively outclassed the Saxon infantry.`;
+      } else if (luckWeight > skillWeight) {
+        verdict.innerHTML = `<strong>Saxon Misfortune Leads (+${luckWeight - skillWeight} pts):</strong> The scale tilts toward bad luck—suggesting Harold was primarily doomed by fighting two full-scale invasions 400 miles apart in 21 days.`;
+      } else {
+        verdict.innerHTML = '<strong>A Perfectly Balanced Disciplinary Synthesis:</strong> Historians argue that while Saxon exhaustion made Harold vulnerable, William\'s tactical genius was required to break the shield wall!';
+      }
+    }
+
+    // 5. Word Palette Help
+    function showWordHelp(word, def) {
+      const box = document.getElementById('word-help-box');
+      box.innerHTML = `<strong style="color: #38bdf8;">${word}:</strong> ${def} <div style="margin-top: 4px; font-style: italic; color: #f8fafc;">e.g. "William's cavalry <strong>${word.toLowerCase()}</strong> the scattered Saxon fyrd on Senlac Hill."</div>`;
+    }
+
+    function toggleModelEssay() {
+      const box = document.getElementById('model-essay-box');
+      box.style.display = box.style.display === 'block' ? 'none' : 'block';
+      notifyParentFit();
+    }
+
+    // 6. Detail Modal
+    function showDetail(title, desc, imgSrc) {
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-body').textContent = desc;
+      const imgContainer = document.getElementById('modal-img-container');
+      const modalImg = document.getElementById('modal-img');
+      if (imgContainer && modalImg) {
+        if (imgSrc) {
+          modalImg.src = imgSrc;
+          imgContainer.style.display = 'block';
+        } else {
+          imgContainer.style.display = 'none';
+        }
+      }
+      document.getElementById('detail-modal').style.display = 'flex';
+    }
+
+    function closeModalDirect() {
+      document.getElementById('detail-modal').style.display = 'none';
+    }
+
+    function resetAll() {
+      document.querySelectorAll('.word-box-note').forEach(n => n.style.display = 'none');
+      document.querySelectorAll('.word-box-item').forEach(w => {
+        w.classList.remove('revealed');
+        w.querySelector('.word-box-status').textContent = '[ Click Clue ]';
+      });
+      document.querySelectorAll('.sentence-launcher-output').forEach(s => s.style.display = 'none');
+      document.querySelectorAll('.scale-chip-btn').forEach(b => b.classList.remove('active'));
+      luckWeight = 0;
+      skillWeight = 0;
+      document.getElementById('weight-luck').textContent = '0 pts';
+      document.getElementById('weight-skill').textContent = '0 pts';
+      document.getElementById('scale-beam').style.transform = 'rotate(0deg)';
+      document.getElementById('model-essay-box').style.display = 'none';
+      switchPart(1);
+    }
+  </script>
+</body>
+</html>

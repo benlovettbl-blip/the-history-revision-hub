@@ -232,7 +232,7 @@ function ensureModalElement() {
             <div style="display: flex; align-items: center; justify-content: space-between;">
               <div style="font-size: 0.72rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
                 <i class="fa-solid fa-layer-group" style="color: #f59e0b;"></i>
-                <span>Exam Practice &amp; Retrieval Checks</span>
+                <span id="drawer-exam-header-title">Exam Practice &amp; Retrieval Checks</span>
               </div>
             </div>
 
@@ -255,7 +255,7 @@ function ensureModalElement() {
               <div id="drawer-panel-exam" class="drawer-tab-panel" style="display: flex; flex-direction: column; gap: 10px;">
                 <!-- Sub-pills for picking between question types -->
                 <div>
-                  <div style="font-size: 0.68rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px;">
+                  <div id="drawer-subpills-label" style="font-size: 0.68rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px;">
                     Select Exam Question Type:
                   </div>
                   <div id="drawer-exam-subpills" style="display: flex; gap: 5px; flex-wrap: wrap;">
@@ -1164,6 +1164,52 @@ function extractTopicExamQuestions(lesson, unitId, item) {
     }
   }
 
+  // KS3 & Depth Units (extract tasks and clues instead of GCSE tariffs)
+  const isKS3Unit = [
+    'medieval_england',
+    'monarchy_religion_power',
+    'the_shoah',
+    'cold_war',
+    'great_war',
+    'great_war_part2',
+    'industrialisation_and_empire',
+    'first_british_empire',
+    'second_british_empire',
+    'post_war_britain',
+    'water_and_sanitation',
+    'australia',
+    'ks2_ww2',
+  ].includes(unitId) || (!ep && Array.isArray(lesson?.tasks) && lesson.tasks.length > 0);
+
+  if (isKS3Unit && Array.isArray(lesson?.tasks) && lesson.tasks.length > 0) {
+    lesson.tasks.forEach((t, idx) => {
+      const cleanTitle = (t.title || t.topic || `Task ${idx + 1}`).replace(/\[.*?\]/g, '').trim();
+      const cleanQuestion = (t.question || '').replace(/\[.*?\]/g, '').trim();
+      const hintsFormatted = Array.isArray(t.hints)
+        ? t.hints.map((h) => `<li style="margin-bottom: 4px;">${h}</li>`).join('')
+        : '';
+      const stimulusFormatted = Array.isArray(t.stimulus)
+        ? t.stimulus.join(' • ')
+        : (t.stimulus || null);
+
+      results.push({
+        id: t.id || `task_${idx + 1}`,
+        pillLabel: cleanTitle.length > 22 ? cleanTitle.slice(0, 20) + '...' : cleanTitle,
+        badge: 'Key Stage 3 • Right Page Writing Task',
+        tariff: 'Writing Clues & Scaffolding',
+        prompt: cleanQuestion || t.question,
+        stimulus: stimulusFormatted ? `<strong>Key Themes:</strong> ${stimulusFormatted}` : null,
+        formulaTitle: 'Writing Clues & Sentence Starters',
+        formula: hintsFormatted
+          ? `<ul style="margin: 4px 0 0 16px; padding: 0; font-size: 0.76rem; color: #cbd5e1;">${hintsFormatted}</ul>`
+          : 'Follow the 3-Tier Clue Ladder (Bronze Starter -> Silver Evidence Checklist -> Gold Explanation).',
+        tip: '<div style="margin-top: 6px; font-weight: 600; color: #38bdf8;"><i class="fa-solid fa-lightbulb"></i> Tip: Use your 3 Word Boxes on your left workbook page to complete your write-up.</div>',
+        model: t.model_answer || t.model || null,
+        isKS3: true,
+      });
+    });
+  }
+
   // Fallback: If no structured matches, take any questions from rawQuestions
   if (results.length === 0 && rawQuestions.length > 0) {
     rawQuestions.slice(0, 3).forEach((q, idx) => {
@@ -1181,6 +1227,24 @@ function extractTopicExamQuestions(lesson, unitId, item) {
         tip: q.examiner_tip || 'Focus on specific facts, dates, and causal consequences.',
         model: q.model || (q.model_tiers && Object.values(q.model_tiers)[0]?.text) || null,
       });
+    });
+  }
+
+  // If still empty and is a KS3 unit, synthesize authentic KS3 writing prompt
+  if (results.length === 0 && isKS3Unit) {
+    const topicTitle = item.topic || lesson?.title || 'this topic';
+    results.push({
+      id: 'task_1',
+      pillLabel: 'Writing Clues',
+      badge: 'Key Stage 3 • Analytical Writing',
+      tariff: 'Writing Clues & Scaffolding',
+      prompt: `Explain why the key developments occurred in ${topicTitle}.`,
+      stimulus: null,
+      formulaTitle: 'Writing Clues & Sentence Starters',
+      formula: 'Follow the 3-Tier Clue Ladder: 1. Sentence Starter (Bronze) -> 2. Left Page Word Box Checklist (Silver) -> 3. Historian\'s Explanation (Gold).',
+      tip: '<div style="margin-top: 6px; font-weight: 600; color: #38bdf8;"><i class="fa-solid fa-lightbulb"></i> Tip: Review your left workbook page to find historical evidence for your answer.</div>',
+      model: item.modelAnswer || 'Deploy precise historical vocabulary from the left-hand page to explain why this outcome happened.',
+      isKS3: true,
     });
   }
 
@@ -1299,36 +1363,56 @@ function renderDrawerTools(modal, item) {
     if (examTariff) examTariff.textContent = qObj.tariff;
     if (examPrompt) examPrompt.innerHTML = qObj.prompt;
 
+    const tabExam = modal.querySelector('#drawer-tab-exam');
+    const labelExam = modal.querySelector('#drawer-subpills-label');
+    const drawerExamHeader = modal.querySelector('#drawer-exam-header-title');
+
+    if (qObj.isKS3) {
+      if (tabExam) tabExam.innerHTML = '<i class="fa-solid fa-pen-nib"></i> Writing Clues';
+      if (labelExam) labelExam.textContent = 'Select Writing Task:';
+      if (drawerExamHeader) drawerExamHeader.innerHTML = 'Enquiry Studio &amp; Writing Clues';
+    } else {
+      if (tabExam) tabExam.innerHTML = '<i class="fa-solid fa-pen-nib"></i> Exam Link';
+      if (labelExam) labelExam.textContent = 'Select Exam Question Type:';
+      if (drawerExamHeader) drawerExamHeader.innerHTML = 'Exam Practice &amp; Retrieval Checks';
+    }
+
     if (examStimulus) {
       if (qObj.stimulus) {
         examStimulus.style.display = 'block';
-        examStimulus.innerHTML = `<strong>Stimulus guidance:</strong> ${qObj.stimulus}`;
+        examStimulus.innerHTML = qObj.stimulus.startsWith('<strong>') ? qObj.stimulus : `<strong>Stimulus guidance:</strong> ${qObj.stimulus}`;
       } else {
         examStimulus.style.display = 'none';
       }
     }
 
-    if (examFormulaTitle) examFormulaTitle.textContent = qObj.formulaTitle || 'Examiner Formula';
+    if (examFormulaTitle) examFormulaTitle.textContent = qObj.formulaTitle || (qObj.isKS3 ? 'Writing Clues & Sentence Starters' : 'Examiner Formula');
     if (examTip) examTip.innerHTML = `${qObj.formula} ${qObj.tip}`;
 
     if (examModelText) {
       examModelText.innerHTML =
-        qObj.model || 'Exemplar answer will be displayed in the Exam Station.';
+        qObj.model || (qObj.isKS3 ? 'Exemplar write-up will be displayed in the lesson tasks.' : 'Exemplar answer will be displayed in the Exam Station.');
     }
 
     // Toggle model button visibility
     if (btnToggleExamModel) {
       btnToggleExamModel.style.display = qObj.model ? 'flex' : 'none';
+      const revealText = qObj.isKS3 ? 'Reveal Exemplar Historian Paragraph' : 'View Mark Scheme Model Answer';
+      const hideText = qObj.isKS3 ? 'Hide Exemplar Paragraph' : 'Hide Model Answer';
+      btnToggleExamModel.innerHTML = `<i class="fa-solid fa-eye" style="color: #38bdf8;"></i> <span>${revealText}</span>`;
       btnToggleExamModel.onclick = () => {
         const isHidden = examModelBox.style.display === 'none';
         examModelBox.style.display = isHidden ? 'block' : 'none';
         btnToggleExamModel.innerHTML = isHidden
-          ? '<i class="fa-solid fa-eye-slash" style="color: #94a3b8;"></i> <span>Hide Model Answer</span>'
-          : '<i class="fa-solid fa-eye" style="color: #38bdf8;"></i> <span>View Mark Scheme Model Answer</span>';
+          ? `<i class="fa-solid fa-eye-slash" style="color: #94a3b8;"></i> <span>${hideText}</span>`
+          : `<i class="fa-solid fa-eye" style="color: #38bdf8;"></i> <span>${revealText}</span>`;
       };
     }
 
     if (btnExamStation) {
+      btnExamStation.innerHTML = qObj.isKS3
+        ? '<i class="fa-solid fa-pen-to-square"></i> Go to Workbook Tasks in Lesson'
+        : '<i class="fa-solid fa-pen-to-square"></i> Practice in Exam Station';
       btnExamStation.onclick = () => {
         closeInfographicModal();
         if (lessonIdx >= 0 && typeof window.renderLessonByIndex === 'function') {
@@ -1337,6 +1421,8 @@ function renderDrawerTools(modal, item) {
           setTimeout(() => {
             const targetCard =
               (qObj.id && document.getElementById(`exam-card-${qObj.id}`)) ||
+              (qObj.id && document.getElementById(`task-${qObj.id}`)) ||
+              document.querySelector('.lesson-task-card') ||
               document.querySelector('.gcse-exam-practice-station') ||
               document.querySelector('.exam-practice-card');
             if (targetCard) {

@@ -2242,5 +2242,28 @@
       "hingeQuestion": "Why did conservative elites like Franz von Papen believe they could 'tame' Hitler in January 1933, and why was their calculation fatally mistaken?",
       "modelAnswer": "Conservative elites believed they held all the structural levers of state power: Hindenburg remained President with commander-in-chief authority over the army and Article 48 emergency powers; von Papen was Vice-Chancellor with the unique right to attend all meetings between Hitler and Hindenburg; and 8 of the 11 cabinet ministers were traditional conservatives. They viewed Hitler as an uneducated political upstart whom they could exploit for his mass following before discarding him. This calculation was fatally mistaken because it ignored Hitler's fanatical ruthlessness, the armed street power of 400,000 SA stormtroopers, and the crucial appointment of Hermann Göring as Prussian Minister of the Interior, which placed Germany's largest police force directly under Nazi control."
     }
+  ],
+  "medieval_england": [
+    {
+      "unit": "medieval_england",
+      "lessonId": "lesson_1",
+      "slug": "medieval_1066_hastings",
+      "title": "1066 & The Battle of Hastings: Why Did William Win?",
+      "topic": "Key Stage 3 • Medieval Realms: 1066 & Battle of Hastings",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Succession Void (Jan 1066): Edward the Confessor dies childless; the Witan crowns Harold Godwinson, sparking claims from William of Normandy and Harald Hardrada.",
+        "Dual Invasion Crisis: King Harold marches 185 miles north in 4 days, destroying the Viking invasion at Stamford Bridge at heavy cost to his elite housecarls.",
+        "Channel Crossing: Wind changes from north to south, allowing Duke William's 700 Norman ships to land at Pevensey unopposed while Harold is in York.",
+        "Senlac Hill Shield Wall: For six hours on 14 October 1066, the Anglo-Saxon locked shield wall withstands Norman archers and heavy cavalry charges.",
+        "The Feigned Retreat & Victory: William orders repeated fake retreats, tricking the undisciplined Saxon fyrd into breaking ranks down the hill, securing Norman conquest."
+      ],
+      "image": "/images/medieval_england/plate_1_2_bayeux_norman_cavalry.jpg",
+      "interactiveUrl": "/interactive_mats/medieval_1066_battle_of_hastings.html",
+      "fileSizeKb": 140,
+      "hingeQuestion": "Was William's victory at Hastings decided primarily by Norman tactical brilliance or Anglo-Saxon exhaustion and misfortune?",
+      "modelAnswer": "A decisive factor in William’s victory was his mastery of combined arms and tactical flexibility. For over six hours on Senlac Hill, the Anglo-Saxon <strong>shield wall</strong> held firm against frontal cavalry charges. However, William exploited Saxon overconfidence by ordering a series of <strong>feigned retreats</strong>. When the undisciplined Saxon fyrd broke formation to pursue the 'fleeing' Normans, William’s heavy cavalry wheeled around and encircled them.<br><br>Deprived of the defensive protection of their locked shields and exhausted from their 400-mile march from <strong>Stamford Bridge</strong>, the Saxon infantry was decimated, proving that while Harold fought bravely, William's combined arms and tactical genius proved decisive."
+    }
   ]
 }
