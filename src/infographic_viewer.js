@@ -7,7 +7,13 @@
  * Strictly adheres to Institutional Neutrality and Zero AI Educational Jargon.
  */
 
-let manifestCache = null;
+import staticManifest from '../public/data/infographics_manifest.json';
+
+let manifestCache = staticManifest || null;
+if (typeof window !== 'undefined' && staticManifest) {
+  window.__INFOGRAPHICS_MANIFEST__ = staticManifest;
+}
+
 let currentItem = null;
 let currentList = [];
 let currentIndex = 0;
@@ -43,7 +49,7 @@ export async function getInfographicsManifest() {
  */
 export function getLessonInfographicCount(unitId, lessonIdOrIndex) {
   const manifest = manifestCache || (typeof window !== 'undefined' && window.__INFOGRAPHICS_MANIFEST__);
-  if (!manifest) return 1;
+  if (!manifest) return 0;
   const unitList = manifest[unitId] || [];
   if (!unitList.length) return 0;
 

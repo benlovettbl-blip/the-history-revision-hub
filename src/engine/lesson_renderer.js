@@ -17,6 +17,7 @@ import { renderConsolidateStationHTML, initConsolidateStation } from './lesson_c
 import { renderLessonExamPracticeHTML, initLessonExamPractice } from './lesson_exam_practice_panel.js';
 import { buildComprehensiveVocabDict, highlightGlossaryInProse } from './disciplinary_glossary.js';
 import { renderGcseDoNowPanelHTML, initGcseDoNowEngine } from './gcse_donow_engine.js';
+import { getLessonInfographicCount } from '../infographic_viewer.js';
 
 // Canonical Key Stage Taxonomy Constants
 export const KS2_CANONICAL_UNITS = ['ks2_ww2'];
@@ -895,7 +896,34 @@ function renderDoNowHeaderWithTimerHTML({
   icon = 'fa-solid fa-list-check',
   showRevealAll = true,
   includeTimer = true,
+  lessonId = '',
+  unitId = '',
 }) {
+  let infographicBtnHtml = '';
+  const effectiveUnitId = unitId || (typeof window !== 'undefined' ? window.currentUnitId : '');
+  let cnt = 0;
+  if (typeof getLessonInfographicCount === 'function') {
+    cnt = getLessonInfographicCount(effectiveUnitId, lessonId);
+  } else if (typeof window !== 'undefined' && window.getLessonInfographicCount) {
+    cnt = window.getLessonInfographicCount(effectiveUnitId, lessonId);
+  }
+
+  if (cnt > 0) {
+    const label = cnt > 1 ? `Infographics (${cnt})` : 'Visual Revision Mat';
+    infographicBtnHtml = `
+      <button type="button"
+        class="btn-donow-infographic-pill"
+        onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lessonId}', '${effectiveUnitId}');}"
+        title="Open Visual Revision Mat for this lesson"
+        style="padding: 3px 10px; font-size: 0.78rem; font-weight: 700; background: #e0f2fe; color: #0284c7; border: 1.2px solid #bae6fd; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; transition: all 0.15s ease;"
+        onmouseover="this.style.background='#0284c7'; this.style.color='#ffffff'; this.style.borderColor='#0284c7';"
+        onmouseout="this.style.background='#e0f2fe'; this.style.color='#0284c7'; this.style.borderColor='#bae6fd';">
+        <i class="fa-solid fa-chart-pie" style="font-size: 0.74rem;"></i>
+        <span>${label}</span>
+      </button>
+    `;
+  }
+
   return `
     <div class="donow-streamlined-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 10px;">
       <!-- Title & Pedagogical Badge -->
@@ -909,18 +937,19 @@ function renderDoNowHeaderWithTimerHTML({
       <!-- Discreet Inline Stopwatch Timer -->
       ${includeTimer ? renderDoNowInlineTimerHTML(timerId) : ''}
 
-      <!-- Action (Reveal All) -->
-      ${showRevealAll
+      <!-- Actions on Far Right: Infographic Pill + Reveal All Answers -->
+      <div style="display: flex; align-items: center; gap: 8px; margin-left: auto; flex-wrap: wrap;">
+        ${infographicBtnHtml}
+        ${showRevealAll
       ? `
-        <div style="display: flex; align-items: center; gap: 6px; margin-left: auto;">
           <button class="btn btn-secondary btn-sm" data-action="toggle-all-answers" onclick="if(window.toggleAllAnswers){window.toggleAllAnswers(this);}event.stopPropagation();" style="font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #ffffff; color: #334155; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
             <i class="fa-solid fa-eye" style="color: #0284c7; font-size: 0.72rem;"></i>
             <span>Reveal All Answers</span>
           </button>
-        </div>
-      `
+        `
       : ''
     }
+      </div>
     </div>
   `;
 }
@@ -4886,6 +4915,8 @@ export function renderLesson(lesson) {
         badgeText: 'Chronological Sequence',
         icon: 'fa-solid fa-clock-rotate-left',
         showRevealAll: false,
+        lessonId: lesson.id,
+        unitId: unitId,
       })}
             <div style="margin-bottom: 14px; font-size: 1rem; color: #1e3a8a;"><strong>${lesson.do_now.prediction_question || ''}</strong></div>
             <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between;">
@@ -4914,6 +4945,8 @@ export function renderLesson(lesson) {
         icon: 'fa-solid fa-list-check',
         showRevealAll: true,
         includeTimer: false,
+        lessonId: lesson.id,
+        unitId: unitId,
       });
       const timerHtml = renderDoNowInlineTimerHTML('donow-timer');
       const currentDb =
@@ -4967,6 +5000,8 @@ export function renderLesson(lesson) {
         badgeText: '📖 Workbook Task 1 &bull; Prior Knowledge Retrieval',
         icon: 'fa-solid fa-list-check',
         showRevealAll: true,
+        lessonId: lesson.id,
+        unitId: unitId,
       })}
             <div class="donow-rows-container" style="display: flex; flex-direction: column; gap: 0; margin-top: 6px; background: #ffffff; border: 1.2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);">
       `;
