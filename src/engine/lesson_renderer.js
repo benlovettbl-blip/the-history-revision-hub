@@ -17,7 +17,7 @@ import { renderConsolidateStationHTML, initConsolidateStation } from './lesson_c
 import { renderLessonExamPracticeHTML, initLessonExamPractice } from './lesson_exam_practice_panel.js';
 import { buildComprehensiveVocabDict, highlightGlossaryInProse } from './disciplinary_glossary.js';
 import { renderGcseDoNowPanelHTML, initGcseDoNowEngine } from './gcse_donow_engine.js';
-import { getLessonInfographicCount } from '../infographic_viewer.js';
+import { getLessonInfographicCount, getLessonInfographicsSync } from '../infographic_viewer.js';
 
 // Canonical Key Stage Taxonomy Constants
 export const KS2_CANONICAL_UNITS = ['ks2_ww2'];
@@ -896,34 +896,7 @@ function renderDoNowHeaderWithTimerHTML({
   icon = 'fa-solid fa-list-check',
   showRevealAll = true,
   includeTimer = true,
-  lessonId = '',
-  unitId = '',
 }) {
-  let infographicBtnHtml = '';
-  const effectiveUnitId = unitId || (typeof window !== 'undefined' ? window.currentUnitId : '');
-  let cnt = 0;
-  if (typeof getLessonInfographicCount === 'function') {
-    cnt = getLessonInfographicCount(effectiveUnitId, lessonId);
-  } else if (typeof window !== 'undefined' && window.getLessonInfographicCount) {
-    cnt = window.getLessonInfographicCount(effectiveUnitId, lessonId);
-  }
-
-  if (cnt > 0) {
-    const label = cnt > 1 ? `Infographics (${cnt})` : 'Visual Revision Mat';
-    infographicBtnHtml = `
-      <button type="button"
-        class="btn-donow-infographic-pill"
-        onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lessonId}', '${effectiveUnitId}');}"
-        title="Open Visual Revision Mat for this lesson"
-        style="padding: 3px 10px; font-size: 0.78rem; font-weight: 700; background: #e0f2fe; color: #0284c7; border: 1.2px solid #bae6fd; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; transition: all 0.15s ease;"
-        onmouseover="this.style.background='#0284c7'; this.style.color='#ffffff'; this.style.borderColor='#0284c7';"
-        onmouseout="this.style.background='#e0f2fe'; this.style.color='#0284c7'; this.style.borderColor='#bae6fd';">
-        <i class="fa-solid fa-chart-pie" style="font-size: 0.74rem;"></i>
-        <span>${label}</span>
-      </button>
-    `;
-  }
-
   return `
     <div class="donow-streamlined-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 10px;">
       <!-- Title & Pedagogical Badge -->
@@ -937,9 +910,8 @@ function renderDoNowHeaderWithTimerHTML({
       <!-- Discreet Inline Stopwatch Timer -->
       ${includeTimer ? renderDoNowInlineTimerHTML(timerId) : ''}
 
-      <!-- Actions on Far Right: Infographic Pill + Reveal All Answers -->
-      <div style="display: flex; align-items: center; gap: 8px; margin-left: auto; flex-wrap: wrap;">
-        ${infographicBtnHtml}
+      <!-- Actions on Far Right: Reveal All Answers -->
+      <div style="display: flex; align-items: center; gap: 8px; margin-left: auto;">
         ${showRevealAll
       ? `
           <button class="btn btn-secondary btn-sm" data-action="toggle-all-answers" onclick="if(window.toggleAllAnswers){window.toggleAllAnswers(this);}event.stopPropagation();" style="font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #ffffff; color: #334155; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
@@ -2160,6 +2132,47 @@ if (typeof window !== 'undefined') {
       }, 80);
     }
   };
+
+  window.openInfographicTabAndScroll = function () {
+    const launchpad = document.querySelector('.lesson-launchpad-container');
+    if (launchpad) {
+      const drawer = launchpad.querySelector('.lesson-launchpad-drawer');
+      const allTabs = launchpad.querySelectorAll('.launchpad-tab-btn');
+      const allPanels = launchpad.querySelectorAll('.launchpad-panel');
+      const closeBtn = launchpad.querySelector('.launchpad-close-btn');
+
+      if (drawer) drawer.style.display = 'block';
+      allTabs.forEach((t) => t.classList.toggle('active', t.dataset.tab === 'infographic'));
+      allPanels.forEach((p) => {
+        p.style.display = p.dataset.panel === 'infographic' ? 'block' : 'none';
+      });
+      if (closeBtn) closeBtn.style.display = 'inline-flex';
+    }
+
+    const panel = document.querySelector('.launchpad-infographic-panel-content');
+    if (panel) {
+      setTimeout(() => {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 80);
+    }
+  };
+
+  window.switchLaunchpadMat = function (btn, lessonId, matIndex) {
+    const container = btn.closest('.launchpad-infographic-panel-content');
+    if (!container) return;
+    const allBtns = container.querySelectorAll('.launchpad-mat-switch-btn');
+    const allPanels = container.querySelectorAll('.launchpad-mat-item');
+    allBtns.forEach((b, idx) => {
+      const active = idx === matIndex;
+      b.classList.toggle('active', active);
+      b.style.background = active ? '#0284c7' : '#ffffff';
+      b.style.color = active ? '#ffffff' : '#334155';
+      b.style.borderColor = active ? '#0284c7' : '#cbd5e1';
+    });
+    allPanels.forEach((p, idx) => {
+      p.style.display = idx === matIndex ? 'block' : 'none';
+    });
+  };
 }
 
 // ============================================================================
@@ -2828,6 +2841,143 @@ export function renderLearningObjectivesPanelHTML(objectivesData, lesson) {
   `;
 }
 
+export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics = []) {
+  if (!infographics || infographics.length === 0) return '';
+  const effectiveUnitId = unitId || (typeof window !== 'undefined' ? window.currentUnitId : '');
+  const lessonId = lesson?.id || '';
+
+  const multiTabsHtml =
+    infographics.length > 1
+      ? `
+    <div class="launchpad-mat-switcher" style="display: flex; gap: 8px; margin-bottom: 16px; overflow-x: auto; padding-bottom: 6px; border-bottom: 1.5px solid #f1f5f9;">
+      ${infographics
+        .map((mat, idx) => {
+          let cleanTitle = mat.title || `Mat ${idx + 1}`;
+          cleanTitle = cleanTitle.split(':')[0].replace(/^(Key Topic \d+(\.\d+)?|KT\s*\d+(\.\d+)?)\s*[:-]?\s*/i, '').trim();
+          if (cleanTitle.length > 28) cleanTitle = cleanTitle.substring(0, 26) + '...';
+          return `
+            <button type="button"
+              class="launchpad-mat-switch-btn ${idx === 0 ? 'active' : ''}"
+              data-mat-index="${idx}"
+              data-lesson-id="${lessonId}"
+              onclick="if(window.switchLaunchpadMat){window.switchLaunchpadMat(this, '${lessonId}', ${idx});}"
+              style="padding: 5px 12px; font-size: 0.78rem; font-weight: 700; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; border: 1.2px solid ${idx === 0 ? '#0284c7' : '#cbd5e1'}; background: ${idx === 0 ? '#0284c7' : '#ffffff'}; color: ${idx === 0 ? '#ffffff' : '#334155'}; transition: all 0.15s ease; white-space: nowrap;">
+              <i class="fa-solid fa-image" style="font-size: 0.74rem;"></i>
+              <span>Mat ${idx + 1}: ${cleanTitle}</span>
+            </button>
+          `;
+        })
+        .join('')}
+    </div>
+  `
+      : '';
+
+  const matsHtml = infographics
+    .map((mat, idx) => {
+      const isVisible = idx === 0;
+      const keyPointsList =
+        Array.isArray(mat.keyPoints) && mat.keyPoints.length > 0
+          ? `
+          <div style="margin-top: 12px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 16px;">
+            <div style="font-size: 0.72rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-list-check" style="color: #0284c7;"></i> Core Syllabus Knowledge Points
+            </div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.86rem; color: #334155; line-height: 1.5; display: flex; flex-direction: column; gap: 6px;">
+              ${mat.keyPoints.map((pt) => `<li style="padding-left: 2px;">${pt}</li>`).join('')}
+            </ul>
+          </div>
+        `
+          : '';
+
+      return `
+        <div class="launchpad-mat-item" data-mat-index="${idx}" style="display: ${isVisible ? 'block' : 'none'};">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; align-items: start;">
+            <!-- Visual Plate -->
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div onclick="if(window.openInfographicModal){window.openInfographicModal('${mat.slug}');}"
+                title="Click to view full-resolution interactive lightbox with zoom & pan"
+                style="cursor: zoom-in; position: relative; border-radius: 8px; overflow: hidden; border: 1.5px solid #cbd5e1; background: #0b1120; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: all 0.2s ease;"
+                onmouseover="this.style.borderColor='#38bdf8'; this.style.boxShadow='0 6px 20px rgba(2,132,199,0.2)';"
+                onmouseout="this.style.borderColor='#cbd5e1'; this.style.boxShadow='0 3px 10px rgba(0,0,0,0.08)';">
+                <img src="${mat.image}"
+                  alt="${mat.title}"
+                  loading="lazy"
+                  style="width: 100%; max-height: 480px; object-fit: contain; display: block; margin: 0 auto; background: #0f172a;" />
+                <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(15, 23, 42, 0.88); color: #ffffff; padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 700; display: inline-flex; align-items: center; gap: 5px; backdrop-filter: blur(4px); box-shadow: 0 2px 6px rgba(0,0,0,0.3); pointer-events: none;">
+                  <i class="fa-solid fa-magnifying-glass-plus" style="color: #38bdf8;"></i> Click to Zoom Fullscreen
+                </div>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.72rem; color: #64748b; padding: 0 4px;">
+                <span><i class="fa-solid fa-file-image" style="margin-right: 4px;"></i> High-Resolution Visual Revision Mat</span>
+                <a href="${mat.image}" download target="_blank" style="color: #0284c7; text-decoration: none; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                  <i class="fa-solid fa-download"></i> Save Image
+                </a>
+              </div>
+            </div>
+
+            <!-- Syllabus Context & Actions -->
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+              <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 16px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap; gap: 6px;">
+                  <span style="font-size: 0.7rem; font-weight: 800; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.4px;">
+                    ${mat.topic || 'Syllabus Specification'}
+                  </span>
+                  <span style="font-size: 0.7rem; color: #64748b; font-weight: 600;">
+                    ${mat.aspect === 'landscape' ? 'Landscape Mat' : 'Portrait Mat'}
+                  </span>
+                </div>
+                <h4 style="margin: 0 0 10px 0; font-size: 1.05rem; font-weight: 800; color: #0f172a; line-height: 1.35; font-family: 'Playfair Display', Georgia, serif;">
+                  ${mat.title}
+                </h4>
+                ${keyPointsList}
+              </div>
+
+              <button type="button"
+                onclick="if(window.openInfographicModal){window.openInfographicModal('${mat.slug}');}"
+                style="width: 100%; padding: 10px 16px; background: linear-gradient(135deg, #0284c7 0%, #1e40af 100%); color: #ffffff; border: none; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25); transition: all 0.15s ease;"
+                onmouseover="this.style.boxShadow='0 4px 12px rgba(2, 132, 199, 0.4)'; this.style.transform='translateY(-1px)';"
+                onmouseout="this.style.boxShadow='0 2px 8px rgba(2, 132, 199, 0.25)'; this.style.transform='translateY(0)';">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                <span>Open Interactive Study Hub (Zoom, Pan &amp; Exam Strategy)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    })
+    .join('');
+
+  return `
+    <div class="launchpad-infographic-panel-content" style="padding: 16px 20px; background: #ffffff; border-radius: 0 0 8px 8px;">
+      <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 8px; background: #e0f2fe; border: 1px solid #bae6fd; color: #0284c7;">
+            <i class="fa-solid fa-chart-pie" style="font-size: 1.1rem;"></i>
+          </span>
+          <div>
+            <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.6px; color: #0284c7;">
+              Disciplinary Visual Synthesis
+            </div>
+            <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #0f172a; font-family: 'Playfair Display', Georgia, serif;">
+              ${infographics.length > 1 ? 'Visual Revision Mats' : infographics[0].title}
+            </h3>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <button type="button" class="btn btn-secondary btn-sm"
+            onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lessonId}', '${effectiveUnitId}');}"
+            style="padding: 5px 12px; font-size: 0.8rem; font-weight: 700; color: #0284c7; background: #f0f9ff; border: 1.2px solid #bae6fd; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;"
+            title="Open interactive zoom, pan and exam strategy lightbox">
+            <i class="fa-solid fa-expand"></i> Fullscreen &amp; Zoom
+          </button>
+        </div>
+      </div>
+      ${multiTabsHtml}
+      ${matsHtml}
+    </div>
+  `;
+}
+
 export function renderLessonLaunchpad({
   lesson,
   unitId,
@@ -2837,6 +2987,7 @@ export function renderLessonLaunchpad({
   htmlVocabInner = '',
   htmlSpineInner = '',
   htmlObjectivesInner = '',
+  htmlInfographicInner = '',
   defaultTab = '',
 }) {
   const isCme =
@@ -2951,6 +3102,28 @@ export function renderLessonLaunchpad({
     });
   }
 
+  // 6. Visual Revision Mat Tab (Infographic)
+  let lessonInfographics = [];
+  const effectiveUnitId = unitId || (typeof window !== 'undefined' ? window.currentUnitId : '');
+  if (typeof getLessonInfographicsSync === 'function') {
+    lessonInfographics = getLessonInfographicsSync(effectiveUnitId, lesson?.id);
+  } else if (typeof window !== 'undefined' && typeof window.getLessonInfographicsSync === 'function') {
+    lessonInfographics = window.getLessonInfographicsSync(effectiveUnitId, lesson?.id);
+  }
+  const hasInfographic = Boolean(
+    (lessonInfographics && lessonInfographics.length > 0) ||
+    (htmlInfographicInner && htmlInfographicInner.trim().length > 0)
+  );
+  if (hasInfographic) {
+    const count = lessonInfographics.length;
+    tabs.push({
+      key: 'infographic',
+      label: count > 1 ? `Visual Revision Mats (${count})` : 'Visual Revision Mat',
+      icon: 'fa-solid fa-chart-pie icon-infographic',
+      badge: count > 1 ? `${count} Mats` : 'Visual Mat',
+    });
+  }
+
   if (tabs.length === 0) return '';
 
   // Active tab selection: only set active if defaultTab is explicitly specified and exists
@@ -3037,6 +3210,14 @@ export function renderLessonLaunchpad({
       ? `
           <div class="launchpad-panel ${activeTabKey === 'spine' ? 'active' : ''}" data-panel="spine" style="${activeTabKey === 'spine' ? 'display: block;' : 'display: none;'}">
             ${htmlSpineInner}
+          </div>
+        `
+      : ''
+    }
+        ${hasInfographic
+      ? `
+          <div class="launchpad-panel ${activeTabKey === 'infographic' ? 'active' : ''}" data-panel="infographic" style="${activeTabKey === 'infographic' ? 'display: block;' : 'display: none;'}">
+            ${htmlInfographicInner || renderLaunchpadInfographicPanelHTML(lesson, effectiveUnitId, lessonInfographics)}
           </div>
         `
       : ''
@@ -4915,8 +5096,6 @@ export function renderLesson(lesson) {
         badgeText: 'Chronological Sequence',
         icon: 'fa-solid fa-clock-rotate-left',
         showRevealAll: false,
-        lessonId: lesson.id,
-        unitId: unitId,
       })}
             <div style="margin-bottom: 14px; font-size: 1rem; color: #1e3a8a;"><strong>${lesson.do_now.prediction_question || ''}</strong></div>
             <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between;">
@@ -4945,8 +5124,6 @@ export function renderLesson(lesson) {
         icon: 'fa-solid fa-list-check',
         showRevealAll: true,
         includeTimer: false,
-        lessonId: lesson.id,
-        unitId: unitId,
       });
       const timerHtml = renderDoNowInlineTimerHTML('donow-timer');
       const currentDb =
@@ -5000,8 +5177,6 @@ export function renderLesson(lesson) {
         badgeText: '📖 Workbook Task 1 &bull; Prior Knowledge Retrieval',
         icon: 'fa-solid fa-list-check',
         showRevealAll: true,
-        lessonId: lesson.id,
-        unitId: unitId,
       })}
             <div class="donow-rows-container" style="display: flex; flex-direction: column; gap: 0; margin-top: 6px; background: #ffffff; border: 1.2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);">
       `;

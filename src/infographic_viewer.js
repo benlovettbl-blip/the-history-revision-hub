@@ -45,16 +45,18 @@ export async function getInfographicsManifest() {
 }
 
 /**
- * Find count of infographics matching a unit and lesson ID or index synchronously if cached.
+ * Find infographics matching a unit and lesson ID or index synchronously from cache.
  */
-export function getLessonInfographicCount(unitId, lessonIdOrIndex) {
+export function getLessonInfographicsSync(unitId, lessonIdOrIndex) {
   const manifest = manifestCache || (typeof window !== 'undefined' && window.__INFOGRAPHICS_MANIFEST__);
-  if (!manifest) return 0;
+  if (!manifest) return [];
   const unitList = manifest[unitId] || [];
-  if (!unitList.length) return 0;
+  if (!unitList.length) return [];
 
-  const targetStr = String(lessonIdOrIndex);
-  const matches = unitList.filter((item) => {
+  const targetStr = String(lessonIdOrIndex || '');
+  if (!targetStr) return [];
+
+  return unitList.filter((item) => {
     if (item.lessonId && (item.lessonId === targetStr || item.lessonId === `lesson_${targetStr}`)) {
       return true;
     }
@@ -67,12 +69,19 @@ export function getLessonInfographicCount(unitId, lessonIdOrIndex) {
     if (typeof item.lessonIndex === 'number' && item.lessonIndex === Number(lessonIdOrIndex)) {
       return true;
     }
-    if (item.slug && item.slug.includes(targetStr.replace(/[^0-9a-z_]/gi, '_'))) {
+    const normalizedTarget = targetStr.replace(/^lesson_/i, '').replace(/[^0-9a-z_]/gi, '_');
+    if (normalizedTarget && item.slug && item.slug.includes(normalizedTarget)) {
       return true;
     }
     return false;
   });
-  return matches.length;
+}
+
+/**
+ * Find count of infographics matching a unit and lesson ID or index synchronously if cached.
+ */
+export function getLessonInfographicCount(unitId, lessonIdOrIndex) {
+  return getLessonInfographicsSync(unitId, lessonIdOrIndex).length;
 }
 
 /**
@@ -1444,6 +1453,7 @@ if (typeof window !== 'undefined') {
   window.openLessonInfographicModal = openLessonInfographicModal;
   window.closeInfographicModal = closeInfographicModal;
   window.getLessonInfographics = getLessonInfographics;
+  window.getLessonInfographicsSync = getLessonInfographicsSync;
   window.getLessonInfographicCount = getLessonInfographicCount;
 
   // Pre-load manifest eagerly in background so counts are synchronous

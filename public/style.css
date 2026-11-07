@@ -8602,6 +8602,10 @@ details.spotlight-drawer[open] summary i.fa-chevron-down {
   color: #2563eb;
 }
 
+.launchpad-tab-btn .icon-infographic {
+  color: #0284c7;
+}
+
 .launchpad-tab-btn.active .icon-donow {
   color: #38bdf8 !important;
 }
@@ -8616,6 +8620,10 @@ details.spotlight-drawer[open] summary i.fa-chevron-down {
 
 .launchpad-tab-btn.active .icon-spine {
   color: #60a5fa !important;
+}
+
+.launchpad-tab-btn.active .icon-infographic {
+  color: #38bdf8 !important;
 }
 
 .launchpad-tab-badge {
