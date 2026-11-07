@@ -174,10 +174,11 @@ function ensureModalElement() {
           <span class="btn-text-desktop">Download</span>
         </a>
 
-        <!-- Toggle Recall Drawer -->
-        <button type="button" id="infographic-btn-toggle-drawer" style="padding: 6px 12px; background: #334155; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; font-size: 0.82rem; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;" title="Toggle Key Revision Points">
-          <i class="fa-solid fa-list-check" style="color: #38bdf8;"></i>
-          <span class="btn-text-desktop">Key Points</span>
+        <!-- Toggle Questions & Practice Drawer -->
+        <button type="button" id="infographic-btn-toggle-drawer" style="padding: 7px 14px; background: #1e293b; color: #f8fafc; border: 1.5px solid #38bdf8; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.25);" title="Open Questions & Practice Sidebar (Hinge Check, Exam Questions & Model Answers)">
+          <i class="fa-solid fa-circle-question" style="color: #38bdf8; font-size: 0.95rem;"></i>
+          <span id="infographic-drawer-btn-label">Questions &amp; Practice</span>
+          <i class="fa-solid fa-chevron-left" id="infographic-drawer-chevron" style="font-size: 0.72rem; transition: transform 0.25s ease;"></i>
         </button>
 
         <!-- Close Modal -->
@@ -195,34 +196,31 @@ function ensureModalElement() {
         <!-- Navigation Arrows (if multiple) -->
         <button type="button" id="infographic-btn-prev" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: rgba(15, 23, 42, 0.8); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); box-shadow: 0 4px 12px rgba(0,0,0,0.5); z-index: 5;" title="Previous (Left Arrow)"><i class="fa-solid fa-chevron-left"></i></button>
         <button type="button" id="infographic-btn-next" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: rgba(15, 23, 42, 0.8); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); box-shadow: 0 4px 12px rgba(0,0,0,0.5); z-index: 5;" title="Next (Right Arrow)"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <!-- Floating Quick-Toggle Button for Questions & Practice on Right Edge -->
+        <button type="button" id="infographic-floating-questions-btn" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: #0284c7; color: #ffffff; padding: 14px 10px; border-radius: 8px 0 0 8px; border: 1.5px solid #38bdf8; border-right: none; cursor: pointer; font-weight: 700; font-size: 0.78rem; display: flex; flex-direction: column; align-items: center; gap: 8px; box-shadow: -4px 0 15px rgba(0,0,0,0.5); z-index: 6; transition: all 0.2s ease;" title="Click to open Questions & Practice sidebar">
+          <i class="fa-solid fa-circle-question" style="font-size: 1.15rem; color: #fde047;"></i>
+          <span style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.5px; font-family: 'Inter', sans-serif;">Questions &amp; Practice</span>
+          <i class="fa-solid fa-chevron-left" style="font-size: 0.75rem;"></i>
+        </button>
       </div>
 
-      <!-- Collapsible Key Points Drawer -->
-      <aside id="infographic-drawer" style="width: 390px; max-width: 90vw; background: #080e1d; border-left: 1px solid #1e293b; display: flex; flex-direction: column; z-index: 8; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);">
+      <!-- Collapsible Questions & Practice Drawer -->
+      <aside id="infographic-drawer" style="width: 400px; max-width: 90vw; background: #080e1d; border-left: 1px solid #1e293b; display: flex; flex-direction: column; z-index: 8; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);">
         <div style="padding: 12px 16px; background: #0f172a; border-bottom: 1px solid #1e293b; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;">
           <div style="font-weight: 700; font-size: 0.9rem; color: #f8fafc; display: flex; align-items: center; gap: 8px;">
-            <i class="fa-solid fa-list-check" style="color: #38bdf8;"></i>
-            <span>Specification Core Points</span>
+            <i class="fa-solid fa-circle-question" style="color: #fde047;"></i>
+            <span>Questions &amp; Practice</span>
           </div>
           <button type="button" id="infographic-btn-drawer-close" style="background: none; border: none; color: #94a3b8; cursor: pointer; font-size: 0.9rem; padding: 4px;" title="Close drawer"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
         <div style="padding: 16px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 14px;">
-          <!-- Core Knowledge Points -->
-          <div>
-            <div style="font-size: 0.72rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-bullseye" style="color: #38bdf8;"></i>
-              <span>Specification Core Knowledge</span>
-            </div>
-            <ul id="infographic-keypoints-list" style="margin: 0; padding-left: 16px; font-size: 0.84rem; line-height: 1.55; color: #cbd5e1; display: flex; flex-direction: column; gap: 8px;">
-            </ul>
-          </div>
-
-          <!-- Interactive Study Tools: 3 Pickable Pills -->
-          <div style="border-top: 1px solid #1e293b; padding-top: 14px; display: flex; flex-direction: column; gap: 10px;">
+          <!-- Interactive Study Tools: 3 Pickable Pills (Placed FIRST for fast question access) -->
+          <div style="display: flex; flex-direction: column; gap: 10px;">
             <div style="display: flex; align-items: center; justify-content: space-between;">
-              <div style="font-size: 0.72rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
+              <div style="font-size: 0.72rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
                 <i class="fa-solid fa-layer-group" style="color: #f59e0b;"></i>
-                <span>Interactive Study Tools</span>
+                <span>Exam Practice &amp; Retrieval Checks</span>
               </div>
             </div>
 
@@ -342,6 +340,16 @@ function ensureModalElement() {
               </div>
             </div>
           </div>
+
+          <!-- Core Knowledge Points (Below Questions & Practice) -->
+          <div style="border-top: 1px solid #1e293b; padding-top: 14px;">
+            <div style="font-size: 0.72rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-bullseye" style="color: #38bdf8;"></i>
+              <span>Specification Core Knowledge</span>
+            </div>
+            <ul id="infographic-keypoints-list" style="margin: 0; padding-left: 16px; font-size: 0.84rem; line-height: 1.55; color: #cbd5e1; display: flex; flex-direction: column; gap: 8px;">
+            </ul>
+          </div>
         </div>
       </aside>
     </div>
@@ -380,20 +388,40 @@ function setupModalEvents(modal) {
     }
   });
 
-  // Drawer toggle
-  const toggleDrawer = () => {
-    if (drawer.style.display === 'none') {
+  // Drawer toggle & state coordinator
+  const floatingQuestionsBtn = modal.querySelector('#infographic-floating-questions-btn');
+  const drawerChevron = modal.querySelector('#infographic-drawer-chevron');
+
+  const updateDrawerStateUI = (isOpen) => {
+    if (isOpen) {
       drawer.style.display = 'flex';
       btnToggleDrawer.style.background = '#0284c7';
       btnToggleDrawer.style.color = '#ffffff';
+      btnToggleDrawer.style.borderColor = '#38bdf8';
+      btnToggleDrawer.style.boxShadow = '0 0 12px rgba(56, 189, 248, 0.5)';
+      if (drawerChevron) drawerChevron.style.transform = 'rotate(90deg)';
+      if (floatingQuestionsBtn) floatingQuestionsBtn.style.display = 'none';
     } else {
       drawer.style.display = 'none';
-      btnToggleDrawer.style.background = '#334155';
+      btnToggleDrawer.style.background = '#1e293b';
       btnToggleDrawer.style.color = '#f8fafc';
+      btnToggleDrawer.style.borderColor = '#38bdf8';
+      btnToggleDrawer.style.boxShadow = 'none';
+      if (drawerChevron) drawerChevron.style.transform = 'rotate(0deg)';
+      if (floatingQuestionsBtn) floatingQuestionsBtn.style.display = 'flex';
     }
+  };
+  window.__hubUpdateDrawerStateUI = updateDrawerStateUI;
+
+  const toggleDrawer = () => {
+    const isCurrentlyClosed = drawer.style.display === 'none';
+    updateDrawerStateUI(isCurrentlyClosed);
   };
   btnToggleDrawer.addEventListener('click', toggleDrawer);
   btnCloseDrawer.addEventListener('click', toggleDrawer);
+  if (floatingQuestionsBtn) {
+    floatingQuestionsBtn.addEventListener('click', () => updateDrawerStateUI(true));
+  }
 
   // Drawer pill navigation
   const pillNav = modal.querySelector('#drawer-pill-nav');
@@ -655,11 +683,11 @@ function renderCurrentItem() {
         tabBtn.href = currentItem.interactiveUrl;
         tabBtn.style.display = 'inline-flex';
       }
-      // Auto-collapse side drawer in interactive mode to give the mat full viewport width
-      if (drawer) drawer.style.display = 'none';
-      if (btnToggleDrawer) {
-        btnToggleDrawer.style.background = '#334155';
-        btnToggleDrawer.style.color = '#f8fafc';
+      // On first click: STRAIGHT TO FULL SCREEN! Sidebar drawer is collapsed by default.
+      if (typeof window.__hubUpdateDrawerStateUI === 'function') {
+        window.__hubUpdateDrawerStateUI(false);
+      } else if (drawer) {
+        drawer.style.display = 'none';
       }
       if (btnModeInteractive) {
         btnModeInteractive.style.background = '#f59e0b';

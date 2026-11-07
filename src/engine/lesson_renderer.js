@@ -2875,6 +2875,48 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
   const matsHtml = infographics
     .map((mat, idx) => {
       const isVisible = idx === 0;
+
+      // If this mat has an interactive HTML version, embed the live interactive mat directly!
+      if (mat.interactiveUrl) {
+        return `
+        <div class="launchpad-mat-item" data-mat-index="${idx}" style="display: ${isVisible ? 'block' : 'none'};">
+          <div style="background: #0b1120; border: 1.5px solid #1e293b; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);">
+            <!-- Interactive Mat Top Strip -->
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; background: #0f172a; border-bottom: 1.5px solid #1e293b; flex-wrap: wrap; gap: 10px;">
+              <div style="display: flex; align-items: center; gap: 10px; min-width: 0;">
+                <span style="font-size: 0.72rem; font-weight: 800; color: #f59e0b; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); padding: 3px 9px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0;">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i> Native Interactive Mat
+                </span>
+                <h4 style="margin: 0; font-size: 0.96rem; font-weight: 700; color: #f8fafc; font-family: 'Playfair Display', Georgia, serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                  ${mat.title}
+                </h4>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+                <a href="${mat.interactiveUrl}" target="_blank"
+                  style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: #f59e0b; color: #000000; text-decoration: none; border-radius: 6px; font-size: 0.8rem; font-weight: 700; transition: all 0.15s ease; box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);"
+                  title="Open interactive revision mat in a new full browser tab">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in New Tab
+                </a>
+                <button type="button"
+                  onclick="if(window.openInfographicModal){window.openInfographicModal('${mat.slug}');}"
+                  style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #1e293b; color: #e2e8f0; border: 1px solid #334155; border-radius: 6px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;"
+                  title="Open in expanded modal viewer">
+                  <i class="fa-solid fa-expand"></i> Fullscreen
+                </button>
+              </div>
+            </div>
+            <!-- Live Interactive Embed Frame -->
+            <div style="position: relative; width: 100%; height: 860px; background: #070d18;">
+              <iframe src="${mat.interactiveUrl}"
+                style="width: 100%; height: 100%; border: none; display: block;"
+                title="${mat.title} Interactive Mat"
+                loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
       const keyPointsList =
         Array.isArray(mat.keyPoints) && mat.keyPoints.length > 0
           ? `
@@ -3116,11 +3158,12 @@ export function renderLessonLaunchpad({
   );
   if (hasInfographic) {
     const count = lessonInfographics.length;
+    const hasInteractive = lessonInfographics && lessonInfographics.some((m) => m.interactiveUrl);
     tabs.push({
       key: 'infographic',
-      label: count > 1 ? `Visual Revision Mats (${count})` : 'Visual Revision Mat',
-      icon: 'fa-solid fa-chart-pie icon-infographic',
-      badge: count > 1 ? `${count} Mats` : 'Visual Mat',
+      label: hasInteractive ? (count > 1 ? `Interactive Mats (${count})` : 'Interactive Revision Mat') : (count > 1 ? `Visual Revision Mats (${count})` : 'Visual Revision Mat'),
+      icon: hasInteractive ? 'fa-solid fa-wand-magic-sparkles icon-infographic' : 'fa-solid fa-chart-pie icon-infographic',
+      badge: hasInteractive ? (count > 1 ? `${count} Interactive` : 'Interactive') : (count > 1 ? `${count} Mats` : 'Visual Mat'),
     });
   }
 

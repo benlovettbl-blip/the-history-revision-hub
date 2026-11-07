@@ -606,6 +606,17 @@ export function initEventDelegation() {
         const launchpad = target.closest('.lesson-launchpad-container');
         if (!launchpad) break;
 
+        // When clicking the revision mat tab, go straight to full screen!
+        if (tabKey === 'infographic') {
+          const launchpadId = launchpad?.id || '';
+          const lessonIdFromId = launchpadId.replace('lesson-launchpad-', '');
+          const activeUnit = (typeof window !== 'undefined' && window.currentUnitId) || '';
+          if (typeof window.openLessonInfographicModal === 'function') {
+            window.openLessonInfographicModal(lessonIdFromId, activeUnit);
+            return;
+          }
+        }
+
         const drawer = launchpad.querySelector('.lesson-launchpad-drawer');
         const allTabs = launchpad.querySelectorAll('.launchpad-tab-btn');
         const allPanels = launchpad.querySelectorAll('.launchpad-panel');
