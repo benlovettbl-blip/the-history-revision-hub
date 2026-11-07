@@ -290,21 +290,31 @@
 
     .photo-container {
       position: relative;
-      height: 160px;
+      height: 175px;
       width: 100%;
-      background: #000;
+      background: #030712;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
     }
 
     .photo-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+      transition: transform 0.25s ease;
     }
 
     .photo-card:hover .photo-container img {
-      transform: scale(1.05);
+      transform: scale(1.04);
     }
 
     .photo-badge {
@@ -644,7 +654,7 @@
     <div class="photo-pillars-grid">
 
       <!-- Photo Card 1: Kurt von Schleicher -->
-      <div class="photo-card" onclick="showDetail('Primary Artifact 1: General Kurt von Schleicher (1932)', 'Official portrait of General Kurt von Schleicher, Chancellor of Germany from December 1932 to January 1933. A master of backdoor political intrigue, Schleicher orchestrated the downfall of both Heinrich Brüning and Franz von Papen. However, his gamble to split the Nazi Party and form a \'Querfront\' (Cross-front) alliance with trade unions collapsed, leaving him friendless and isolated before being murdered in the 1934 purge.')">
+      <div class="photo-card" onclick="showDetail('Primary Artifact 1: General Kurt von Schleicher (1932)', 'Official portrait of General Kurt von Schleicher, Chancellor of Germany from December 1932 to January 1933. A master of backdoor political intrigue, Schleicher orchestrated the downfall of both Heinrich Brüning and Franz von Papen. However, his gamble to split the Nazi Party and form a \'Querfront\' (Cross-front) alliance with trade unions collapsed, leaving him friendless and isolated before being murdered in the 1934 purge.', '/images/weimar_kurt_von_schleicher.jpg')">
         <div class="photo-container">
           <img src="/images/weimar_kurt_von_schleicher.jpg" alt="General Kurt von Schleicher, Chancellor of Germany" />
           <span class="photo-badge"><i class="fa-solid fa-user-tie"></i> Primary Artifact 1</span>
@@ -656,7 +666,7 @@
       </div>
 
       <!-- Photo Card 2: Punch Cartoon The Temporary Triangle -->
-      <div class="photo-card" onclick="showDetail('Primary Artifact 2: Punch Cartoon: The Temporary Triangle (Feb 1933)', 'Famous political cartoon by Bernard Partridge published in Punch on 8 February 1933. It depicts President Hindenburg, Vice-Chancellor Franz von Papen, and Chancellor Adolf Hitler bound together in a fragile three-way political pact. Papen believed he had \'boxed Hitler in\', holding the reins of power while using Hitler\'s mass movement to provide popular legitimacy.')">
+      <div class="photo-card" onclick="showDetail('Primary Artifact 2: Punch Cartoon: The Temporary Triangle (Feb 1933)', 'Famous political cartoon by Bernard Partridge published in Punch on 8 February 1933. It depicts President Hindenburg, Vice-Chancellor Franz von Papen, and Chancellor Adolf Hitler bound together in a fragile three-way political pact. Papen believed he had \'boxed Hitler in\', holding the reins of power while using Hitler\'s mass movement to provide popular legitimacy.', '/images/papen_hitler_cartoon.jpg')">
         <div class="photo-container">
           <img src="/images/papen_hitler_cartoon.jpg" alt="Punch Cartoon: The Temporary Triangle, 8 February 1933" />
           <span class="photo-badge"><i class="fa-solid fa-newspaper"></i> Primary Artifact 2</span>
@@ -668,7 +678,7 @@
       </div>
 
       <!-- Photo Card 3: Hitler's First Cabinet -->
-      <div class="photo-card" onclick="showDetail('Primary Artifact 3: The First Cabinet of Adolf Hitler (30 Jan 1933)', 'Official group photograph of Adolf Hitler\'s initial coalition cabinet on 30 January 1933. Flanked by Vice-Chancellor Franz von Papen, DNVP leader Alfred Hugenberg, and Foreign Minister von Neurath, Hitler was ostensibly \'surrounded\' by conservative gentlemen. However, giving Hermann Göring control of the Prussian police gave the Nazis the physical machinery of state terror.')">
+      <div class="photo-card" onclick="showDetail('Primary Artifact 3: The First Cabinet of Adolf Hitler (30 Jan 1933)', 'Official group photograph of Adolf Hitler\'s initial coalition cabinet on 30 January 1933. Flanked by Vice-Chancellor Franz von Papen, DNVP leader Alfred Hugenberg, and Foreign Minister von Neurath, Hitler was ostensibly \'surrounded\' by conservative gentlemen. However, giving Hermann Göring control of the Prussian police gave the Nazis the physical machinery of state terror.', '/images/weimar_hitler_cabinet_1933.jpg')">
         <div class="photo-container">
           <img src="/images/weimar_hitler_cabinet_1933.jpg" alt="The First Cabinet of Adolf Hitler, 30 January 1933" />
           <span class="photo-badge"><i class="fa-solid fa-building-columns"></i> Primary Artifact 3</span>
@@ -806,6 +816,9 @@
         </h3>
         <button type="button" onclick="closeModalDirect()" style="background: none; border: none; color: #94a3b8; font-size: 1.2rem; cursor: pointer; padding: 2px 6px;">&times;</button>
       </div>
+      <div id="modal-img-container" style="text-align: center; margin-bottom: 12px; background: #030712; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 8px; display: none;">
+        <img id="modal-img" src="" alt="Primary Visual Source" style="max-height: 48vh; max-width: 100%; object-fit: contain; border-radius: 4px; display: block; margin: 0 auto; box-shadow: 0 4px 16px rgba(0,0,0,0.5);" />
+      </div>
       <p id="modal-desc" style="color: #f1f5f9; font-size: 0.9rem; line-height: 1.6;"></p>
       <div style="margin-top: 16px; text-align: right;">
         <button type="button" onclick="closeModalDirect()" class="btn-action" style="background: #1e293b; border-color: var(--border-gold); color: #fbbf24;">Close</button>
@@ -829,9 +842,19 @@
       }
     }
 
-    function showDetail(title, desc) {
+    function showDetail(title, desc, imgSrc) {
       document.getElementById('modal-title').innerHTML = '<i class="fa-solid fa-circle-info"></i> ' + title;
       document.getElementById('modal-desc').innerText = desc;
+      const imgContainer = document.getElementById('modal-img-container');
+      const modalImg = document.getElementById('modal-img');
+      if (imgContainer && modalImg) {
+        if (imgSrc) {
+          modalImg.src = imgSrc;
+          imgContainer.style.display = 'block';
+        } else {
+          imgContainer.style.display = 'none';
+        }
+      }
       const modal = document.getElementById('detail-modal');
       modal.style.display = 'flex';
     }

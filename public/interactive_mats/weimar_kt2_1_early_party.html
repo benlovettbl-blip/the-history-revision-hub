@@ -290,21 +290,31 @@
 
     .photo-container {
       position: relative;
-      height: 160px;
+      height: 175px;
       width: 100%;
-      background: #000;
+      background: #030712;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
     }
 
     .photo-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+      transition: transform 0.25s ease;
     }
 
     .photo-card:hover .photo-container img {
-      transform: scale(1.05);
+      transform: scale(1.04);
     }
 
     .photo-badge {
@@ -644,7 +654,7 @@
     <div class="photo-pillars-grid">
 
       <!-- Photo Card 1: 25-Point Programme -->
-      <div class="photo-card" onclick="showDetail('Primary Artifact 1: The 25-Point Programme Broadsheet (Feb 1920)', 'Official broadsheet of the 25-Point Programme of the NSDAP, read by Adolf Hitler in the Festival Hall of the Hofbräuhaus in Munich on 24 February 1920. Point 1 demanded Greater Germany; Point 2 demanded the revocation of the Treaty of Versailles and Saint-Germain; Point 4 declared that no Jew could be a German citizen. This document rebranded the DAP into the National Socialist German Workers\' Party (NSDAP) and established the foundational ideology of the Nazi movement.')">
+      <div class="photo-card" onclick="showDetail('Primary Artifact 1: The 25-Point Programme Broadsheet (Feb 1920)', 'Official broadsheet of the 25-Point Programme of the NSDAP, read by Adolf Hitler in the Festival Hall of the Hofbräuhaus in Munich on 24 February 1920. Point 1 demanded Greater Germany; Point 2 demanded the revocation of the Treaty of Versailles and Saint-Germain; Point 4 declared that no Jew could be a German citizen. This document rebranded the DAP into the National Socialist German Workers\' Party (NSDAP) and established the foundational ideology of the Nazi movement.', '/images/nazi_25_point_programme_1920.jpg')">
         <div class="photo-container">
           <img src="/images/nazi_25_point_programme_1920.jpg" alt="Official broadsheet of the 25-Point Programme of the NSDAP, 1920" />
           <span class="photo-badge"><i class="fa-solid fa-file-invoice"></i> Primary Artifact 1</span>
@@ -656,7 +666,7 @@
       </div>
 
       <!-- Photo Card 2: Völkischer Beobachter -->
-      <div class="photo-card" onclick="showDetail('Primary Artifact 2: Völkischer Beobachter Front Page (Dec 1920)', 'Front page of the Völkischer Beobachter from 25 December 1920 following its purchase by the NSDAP. Under Dietrich Eckart and Alfred Rosenberg, the newspaper gave the fringe Munich party a permanent media organ to attack the Weimar democracy, propagate the Dolchstoßlegende (stab-in-the-back myth), and spread vitriolic conspiracy theories blaming Jewish financiers for Germany\'s 1918 defeat.')">
+      <div class="photo-card" onclick="showDetail('Primary Artifact 2: Völkischer Beobachter Front Page (Dec 1920)', 'Front page of the Völkischer Beobachter from 25 December 1920 following its purchase by the NSDAP. Under Dietrich Eckart and Alfred Rosenberg, the newspaper gave the fringe Munich party a permanent media organ to attack the Weimar democracy, propagate the Dolchstoßlegende (stab-in-the-back myth), and spread vitriolic conspiracy theories blaming Jewish financiers for Germany\'s 1918 defeat.', '/images/weimar_volkischer_beobachter_1920.jpg')">
         <div class="photo-container">
           <img src="/images/weimar_volkischer_beobachter_1920.jpg" alt="Front page of the Völkischer Beobachter, 25 December 1920" />
           <span class="photo-badge"><i class="fa-solid fa-newspaper"></i> Primary Artifact 2</span>
@@ -668,7 +678,7 @@
       </div>
 
       <!-- Photo Card 3: Beer Hall Paramilitaries & Röhm -->
-      <div class="photo-card" onclick="showDetail('Primary Artifact 3: Munich Beer Hall Meetings & SA Paramilitaries', 'Adolf Hitler seated with early NSDAP leaders and armed stormtroopers in a Munich beer hall (c. 1923). Beer halls like the Hofbräuhaus and Bürgerbräukeller served as political arenas where Hitler perfected his hypnotic oratorical technique—starting slowly with quiet pauses before building to theatrical, screaming climaxes. Outside, Ernst Röhm\'s SA ensured violent domination of the streets.')">
+      <div class="photo-card" onclick="showDetail('Primary Artifact 3: Munich Beer Hall Meetings & SA Paramilitaries', 'Adolf Hitler seated with early NSDAP leaders and armed stormtroopers in a Munich beer hall (c. 1923). Beer halls like the Hofbräuhaus and Bürgerbräukeller served as political arenas where Hitler perfected his hypnotic oratorical technique—starting slowly with quiet pauses before building to theatrical, screaming climaxes. Outside, Ernst Röhm\'s SA ensured violent domination of the streets.', '/images/hitler_munich_1920s.jpg')">
         <div class="photo-container">
           <img src="/images/hitler_munich_1920s.jpg" alt="Adolf Hitler seated with NSDAP members and SA in a Munich beer hall" />
           <span class="photo-badge"><i class="fa-solid fa-shield-halved"></i> Primary Artifact 3</span>
@@ -804,6 +814,9 @@
         </h3>
         <button type="button" onclick="closeModalDirect()" style="background: none; border: none; color: #94a3b8; font-size: 1.2rem; cursor: pointer; padding: 2px 6px;">&times;</button>
       </div>
+      <div id="modal-img-container" style="text-align: center; margin-bottom: 12px; background: #030712; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 8px; display: none;">
+        <img id="modal-img" src="" alt="Primary Visual Source" style="max-height: 48vh; max-width: 100%; object-fit: contain; border-radius: 4px; display: block; margin: 0 auto; box-shadow: 0 4px 16px rgba(0,0,0,0.5);" />
+      </div>
       <p id="modal-desc" style="color: #f1f5f9; font-size: 0.9rem; line-height: 1.6;"></p>
       <div style="margin-top: 16px; text-align: right;">
         <button type="button" onclick="closeModalDirect()" class="btn-action" style="background: #1e293b; border-color: var(--border-gold); color: #fbbf24;">Close</button>
@@ -827,9 +840,19 @@
       }
     }
 
-    function showDetail(title, desc) {
+    function showDetail(title, desc, imgSrc) {
       document.getElementById('modal-title').innerHTML = '<i class="fa-solid fa-circle-info"></i> ' + title;
       document.getElementById('modal-desc').innerText = desc;
+      const imgContainer = document.getElementById('modal-img-container');
+      const modalImg = document.getElementById('modal-img');
+      if (imgContainer && modalImg) {
+        if (imgSrc) {
+          modalImg.src = imgSrc;
+          imgContainer.style.display = 'block';
+        } else {
+          imgContainer.style.display = 'none';
+        }
+      }
       const modal = document.getElementById('detail-modal');
       modal.style.display = 'flex';
     }

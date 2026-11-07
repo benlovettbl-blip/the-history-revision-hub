@@ -290,21 +290,31 @@
 
     .photo-container {
       position: relative;
-      height: 160px;
+      height: 175px;
       width: 100%;
-      background: #000;
+      background: #030712;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
     }
 
     .photo-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+      transition: transform 0.25s ease;
     }
 
     .photo-card:hover .photo-container img {
-      transform: scale(1.05);
+      transform: scale(1.04);
     }
 
     .photo-badge {
@@ -644,7 +654,7 @@
     <div class="photo-pillars-grid">
 
       <!-- Photo Card 1: Economic Despair -->
-      <div class="photo-card" onclick="showDetail('Archival Plate 1: The Great Depression (c. 1931–1932)', 'This iconic photograph (Bundesarchiv Bild 183-1987-0703-507) depicts unemployed German men sitting together on a public park bench in Berlin, intently scouring the job vacancy columns and classified advertisements of daily newspapers. With over 6 million Germans out of work (1 in 3) and welfare relief slashed under Chancellor Heinrich Brüning, millions spent long, idle days searching print notices for casual work. The collapse of wages, savings, and personal dignity shattered public trust in the Weimar democracy, providing fertile ground for political radicalisation.')">
+      <div class="photo-card" onclick="showDetail('Archival Plate 1: The Great Depression (c. 1931–1932)', 'This iconic photograph (Bundesarchiv Bild 183-1987-0703-507) depicts unemployed German men sitting together on a public park bench in Berlin, intently scouring the job vacancy columns and classified advertisements of daily newspapers. With over 6 million Germans out of work (1 in 3) and welfare relief slashed under Chancellor Heinrich Brüning, millions spent long, idle days searching print notices for casual work. The collapse of wages, savings, and personal dignity shattered public trust in the Weimar democracy, providing fertile ground for political radicalisation.', '/images/weimar_unemployed_sa_men_1932.jpg')">
         <div class="photo-container">
           <img src="/images/weimar_unemployed_sa_men_1932.jpg" alt="Unemployed German men sitting on a park bench reading newspapers in Berlin, c. 1931" />
           <span class="photo-badge"><i class="fa-solid fa-camera"></i> Primary Artifact 1</span>
@@ -660,7 +670,7 @@
       </div>
 
       <!-- Photo Card 2: Propaganda Machine -->
-      <div class="photo-card" onclick="showDetail('Archival Plate 2: 1932 Nazi Campaign Poster', 'The iconic poster: \'Unsere letzte Hoffnung: Hitler\' (Our Last Hope: Hitler). Designed under Joseph Goebbels, it depicted weary, impoverished German workers looking up toward Hitler as their messianic savior.')">
+      <div class="photo-card" onclick="showDetail('Archival Plate 2: 1932 Nazi Campaign Poster', 'The iconic poster: \'Unsere letzte Hoffnung: Hitler\' (Our Last Hope: Hitler). Designed under Joseph Goebbels, it depicted weary, impoverished German workers looking up toward Hitler as their messianic savior.', '/images/weimar_nazi_election_poster_1932.jpg')">
         <div class="photo-container">
           <img src="/images/weimar_nazi_election_poster_1932.jpg" alt="Nazi Election Poster 1932" />
           <span class="photo-badge"><i class="fa-solid fa-camera"></i> Primary Artifact 2</span>
@@ -676,7 +686,7 @@
       </div>
 
       <!-- Photo Card 3: SA Street Power -->
-      <div class="photo-card" onclick="showDetail('Archival Plate 3: SA Stormtrooper Parade (1932)', 'A massive column of uniformed SA stormtroopers parading through Berlin. Amidst street chaos and fear of communist revolution, the SA projected an illusion of orderly militarism that appealed to conservative Germans.')">
+      <div class="photo-card" onclick="showDetail('Archival Plate 3: SA Stormtrooper Parade (1932)', 'A massive column of uniformed SA stormtroopers parading through Berlin. Amidst street chaos and fear of communist revolution, the SA projected an illusion of orderly militarism that appealed to conservative Germans.', '/images/weimar_sa_parade_berlin_1932.jpg')">
         <div class="photo-container">
           <img src="/images/weimar_sa_parade_berlin_1932.jpg" alt="SA Parade in Berlin" />
           <span class="photo-badge"><i class="fa-solid fa-camera"></i> Primary Artifact 3</span>
@@ -820,6 +830,9 @@
         <h3 id="modal-title" style="color: var(--gold-primary); font-size: 1.15rem; font-family: 'Playfair Display', Georgia, serif;"></h3>
         <button type="button" onclick="closeModalDirect()" style="background: none; border: none; color: #94a3b8; font-size: 1.2rem; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
       </div>
+      <div id="modal-img-container" style="text-align: center; margin-bottom: 12px; background: #030712; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 8px; display: none;">
+        <img id="modal-img" src="" alt="Primary Visual Source" style="max-height: 48vh; max-width: 100%; object-fit: contain; border-radius: 4px; display: block; margin: 0 auto; box-shadow: 0 4px 16px rgba(0,0,0,0.5);" />
+      </div>
       <p id="modal-body" style="color: #e2e8f0; font-size: 0.88rem; line-height: 1.6;"></p>
       <div style="margin-top: 16px; text-align: right;">
         <button type="button" class="btn-action" onclick="closeModalDirect()">Close</button>
@@ -838,9 +851,19 @@
         : '<i class="fa-solid fa-eye" style="color: var(--cyan-accent);"></i> <span>Reveal Grade 8/9 Examiner Model</span>';
     }
 
-    function showDetail(title, desc) {
+    function showDetail(title, desc, imgSrc) {
       document.getElementById('modal-title').textContent = title;
       document.getElementById('modal-body').textContent = desc;
+      const imgContainer = document.getElementById('modal-img-container');
+      const modalImg = document.getElementById('modal-img');
+      if (imgContainer && modalImg) {
+        if (imgSrc) {
+          modalImg.src = imgSrc;
+          imgContainer.style.display = 'block';
+        } else {
+          imgContainer.style.display = 'none';
+        }
+      }
       const modal = document.getElementById('detail-modal');
       modal.style.display = 'flex';
     }

@@ -290,21 +290,31 @@
 
     .photo-container {
       position: relative;
-      height: 160px;
+      height: 175px;
       width: 100%;
-      background: #000;
+      background: #030712;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
     }
 
     .photo-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+      transition: transform 0.25s ease;
     }
 
     .photo-card:hover .photo-container img {
-      transform: scale(1.05);
+      transform: scale(1.04);
     }
 
     .photo-badge {
@@ -644,7 +654,7 @@
     <div class="photo-pillars-grid">
 
       <!-- Photo Card 1: Marienplatz Putschists -->
-      <div class="photo-card" onclick="showDetail('Primary Artifact 1: Armed SA Stormtroopers in Marienplatz (Nov 1923)', 'Armed stormtroopers of the SA and Stoßtrupp-Hitler occupying the Marienplatz outside the Munich Rathaus on 9 November 1923. Armed with surplus Great War rifles, machine guns, and swastika standards, the putschists mistakenly assumed the police and army would join their \'March on Berlin\'. When Gustav von Kahr and the army renounced the putsch overnight, the armed marchers were marched directly into police rifle fire.')">
+      <div class="photo-card" onclick="showDetail('Primary Artifact 1: Armed SA Stormtroopers in Marienplatz (Nov 1923)', 'Armed stormtroopers of the SA and Stoßtrupp-Hitler occupying the Marienplatz outside the Munich Rathaus on 9 November 1923. Armed with surplus Great War rifles, machine guns, and swastika standards, the putschists mistakenly assumed the police and army would join their \'March on Berlin\'. When Gustav von Kahr and the army renounced the putsch overnight, the armed marchers were marched directly into police rifle fire.', '/images/weimar_munich_putsch_marienplatz_1923.jpg')">
         <div class="photo-container">
           <img src="/images/weimar_munich_putsch_marienplatz_1923.jpg" alt="Armed SA Stormtroopers occupying Marienplatz during the Munich Putsch, 1923" />
           <span class="photo-badge"><i class="fa-solid fa-camera"></i> Primary Artifact 1</span>
@@ -656,7 +666,7 @@
       </div>
 
       <!-- Photo Card 2: Munich Treason Trial -->
-      <div class="photo-card" onclick="showDetail('Primary Artifact 2: Hitler and Ludendorff Outside the Treason Court (Spring 1924)', 'Adolf Hitler, General Erich Ludendorff, and fellow putsch defendants outside the Munich People\'s Court during their treason trial in spring 1924. Hitler turned the dock into a nationwide propaganda platform, unabashedly admitting his intention to overthrow the Weimar Republic while portraying himself as a selfless patriot. Ludendorff was acquitted; Hitler emerged as a national martyr of the extreme right.')">
+      <div class="photo-card" onclick="showDetail('Primary Artifact 2: Hitler and Ludendorff Outside the Treason Court (Spring 1924)', 'Adolf Hitler, General Erich Ludendorff, and fellow putsch defendants outside the Munich People\'s Court during their treason trial in spring 1924. Hitler turned the dock into a nationwide propaganda platform, unabashedly admitting his intention to overthrow the Weimar Republic while portraying himself as a selfless patriot. Ludendorff was acquitted; Hitler emerged as a national martyr of the extreme right.', '/images/munich_putsch_defendants.jpg')">
         <div class="photo-container">
           <img src="/images/munich_putsch_defendants.jpg" alt="Adolf Hitler, General Erich Ludendorff and co-defendants outside Munich People's Court, 1924" />
           <span class="photo-badge"><i class="fa-solid fa-scale-balanced"></i> Primary Artifact 2</span>
@@ -668,7 +678,7 @@
       </div>
 
       <!-- Photo Card 3: Landsberg Fortress -->
-      <div class="photo-card" onclick="showDetail('Primary Artifact 3: Hitler\'s Comfortable Room at Landsberg Fortress (1924)', 'Contemporary photograph of Adolf Hitler serving his sentence in a comfortable private room at Landsberg Fortress in 1924. Treated with immense deference by prison guards, Hitler was surrounded by books, received over 300 visitors, and dictated Mein Kampf (My Struggle) to Rudolf Hess. Here, Hitler formulated the decisive Legal Strategy: democracy had to be destroyed from within using the ballot box.')">
+      <div class="photo-card" onclick="showDetail('Primary Artifact 3: Hitler\'s Comfortable Room at Landsberg Fortress (1924)', 'Contemporary photograph of Adolf Hitler serving his sentence in a comfortable private room at Landsberg Fortress in 1924. Treated with immense deference by prison guards, Hitler was surrounded by books, received over 300 visitors, and dictated Mein Kampf (My Struggle) to Rudolf Hess. Here, Hitler formulated the decisive Legal Strategy: democracy had to be destroyed from within using the ballot box.', '/images/hitler_landsberg_1924.jpg')">
         <div class="photo-container">
           <img src="/images/hitler_landsberg_1924.jpg" alt="Adolf Hitler in his room at Landsberg Fortress, 1924" />
           <span class="photo-badge"><i class="fa-solid fa-book-skull"></i> Primary Artifact 3</span>
@@ -807,6 +817,9 @@
         </h3>
         <button type="button" onclick="closeModalDirect()" style="background: none; border: none; color: #94a3b8; font-size: 1.2rem; cursor: pointer; padding: 2px 6px;">&times;</button>
       </div>
+      <div id="modal-img-container" style="text-align: center; margin-bottom: 12px; background: #030712; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 8px; display: none;">
+        <img id="modal-img" src="" alt="Primary Visual Source" style="max-height: 48vh; max-width: 100%; object-fit: contain; border-radius: 4px; display: block; margin: 0 auto; box-shadow: 0 4px 16px rgba(0,0,0,0.5);" />
+      </div>
       <p id="modal-desc" style="color: #f1f5f9; font-size: 0.9rem; line-height: 1.6;"></p>
       <div style="margin-top: 16px; text-align: right;">
         <button type="button" onclick="closeModalDirect()" class="btn-action" style="background: #1e293b; border-color: var(--border-gold); color: #fbbf24;">Close</button>
@@ -830,9 +843,19 @@
       }
     }
 
-    function showDetail(title, desc) {
+    function showDetail(title, desc, imgSrc) {
       document.getElementById('modal-title').innerHTML = '<i class="fa-solid fa-circle-info"></i> ' + title;
       document.getElementById('modal-desc').innerText = desc;
+      const imgContainer = document.getElementById('modal-img-container');
+      const modalImg = document.getElementById('modal-img');
+      if (imgContainer && modalImg) {
+        if (imgSrc) {
+          modalImg.src = imgSrc;
+          imgContainer.style.display = 'block';
+        } else {
+          imgContainer.style.display = 'none';
+        }
+      }
       const modal = document.getElementById('detail-modal');
       modal.style.display = 'flex';
     }
