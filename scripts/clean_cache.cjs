@@ -117,10 +117,30 @@ function main() {
   // Global Developer Caches
   const npmCachePath = path.join(userHome, 'AppData', 'Local', 'npm-cache');
   targets.push({
-    name: 'NPM global package cache',
+    name: 'NPM global package & NPX cache',
     path: npmCachePath,
     type: 'npm_cache',
   });
+
+  // Puppeteer browser cache (clean orphaned previous versions)
+  const puppeteerCachePath = path.join(userHome, '.cache', 'puppeteer');
+  if (fs.existsSync(puppeteerCachePath)) {
+    targets.push({
+      name: 'Puppeteer orphaned browser versions',
+      path: puppeteerCachePath,
+      type: 'puppeteer_orphaned',
+    });
+  }
+
+  // Python pip cache
+  const pipCachePath = path.join(userHome, 'AppData', 'Local', 'pip', 'cache');
+  if (fs.existsSync(pipCachePath)) {
+    targets.push({
+      name: 'Python Pip package cache',
+      path: pipCachePath,
+      type: 'pip_cache',
+    });
+  }
 
   // Windows User Temp Directory
   targets.push({
@@ -176,6 +196,25 @@ function main() {
                 size += s.isDirectory() ? getFolderSize(p) : s.size;
               }
             } catch {}
+          }
+        } catch {}
+      } else if (t.type === 'puppeteer_orphaned') {
+        try {
+          const browserTypes = fs.readdirSync(t.path, { withFileTypes: true }).filter((e) => e.isDirectory());
+          for (const b of browserTypes) {
+            const bPath = path.join(t.path, b.name);
+            const versions = fs.readdirSync(bPath, { withFileTypes: true }).filter((e) => e.isDirectory());
+            if (versions.length > 1) {
+              versions.sort((a, b) => {
+                return (
+                  fs.statSync(path.join(bPath, b.name)).mtimeMs -
+                  fs.statSync(path.join(bPath, a.name)).mtimeMs
+                );
+              });
+              for (const oldV of versions.slice(1)) {
+                size += getFolderSize(path.join(bPath, oldV.name));
+              }
+            }
           }
         } catch {}
       } else {
@@ -246,6 +285,50 @@ function main() {
       } else if (target.type === 'npm_cache') {
         try {
           execSync('npm cache clean --force', { stdio: 'ignore' });
+        } catch {}
+        // npm cache clean --force intentionally skips _npx; explicitly purge _npx & _logs
+        const npxPath = path.join(target.path, '_npx');
+        if (fs.existsSync(npxPath)) {
+          try {
+            fs.rmSync(npxPath, { recursive: true, force: true });
+          } catch {}
+        }
+        const logsPath = path.join(target.path, '_logs');
+        if (fs.existsSync(logsPath)) {
+          try {
+            fs.rmSync(logsPath, { recursive: true, force: true });
+          } catch {}
+        }
+        totalReclaimedBytes += target.size;
+        if (!isAuto) console.log(`  ✅ Cleared: ${target.name} (${formatBytes(target.size)})`);
+      } else if (target.type === 'puppeteer_orphaned') {
+        let puppeteerFreed = 0;
+        try {
+          const browserTypes = fs.readdirSync(target.path, { withFileTypes: true }).filter((e) => e.isDirectory());
+          for (const b of browserTypes) {
+            const bPath = path.join(target.path, b.name);
+            const versions = fs.readdirSync(bPath, { withFileTypes: true }).filter((e) => e.isDirectory());
+            if (versions.length > 1) {
+              versions.sort((a, b) => {
+                return (
+                  fs.statSync(path.join(bPath, b.name)).mtimeMs -
+                  fs.statSync(path.join(bPath, a.name)).mtimeMs
+                );
+              });
+              for (const oldV of versions.slice(1)) {
+                const oldPath = path.join(bPath, oldV.name);
+                const oldSize = getFolderSize(oldPath);
+                fs.rmSync(oldPath, { recursive: true, force: true });
+                puppeteerFreed += oldSize;
+              }
+            }
+          }
+        } catch {}
+        totalReclaimedBytes += puppeteerFreed;
+        if (!isAuto) console.log(`  ✅ Purged: ${target.name} (${formatBytes(puppeteerFreed)})`);
+      } else if (target.type === 'pip_cache') {
+        try {
+          execSync('pip cache purge', { stdio: 'ignore' });
         } catch {
           fs.rmSync(target.path, { recursive: true, force: true });
         }
