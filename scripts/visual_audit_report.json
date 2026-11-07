@@ -1,0 +1,2577 @@
+{
+  "weimar_nazi_germany": [
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT1.1: The Origins of the Republic, 1918–1919",
+      "title": "Source A: From a speech by Philipp Scheidemann, announcing the new Republic from the balcony of the Reichstag, 9 November 1918.",
+      "caption": "Philipp Scheidemann addressing crowds from a Reichstag window on 9 November 1918, proclaiming the German Republic.",
+      "contentSnippet": "\"Workers and soldiers! The German people have won all along the line! The old and rotten monarchy ha",
+      "image": "/images/weimar_scheidemann_proclamation_1918.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT1.1: The Origins of the Republic, 1918–1919",
+      "letter": "A",
+      "title": "Source A: Armed Workers and Soldiers Manning Barricades in Berlin (November 1918)",
+      "caption": "Armed revolutionary fighters and deserting soldiers manning a street barricade constructed from giant newsprint rolls in the Berlin newspaper quarter during the revolutionary unrest of 1918–1919.",
+      "contentSnippet": "Archival press photograph of revolutionary fighters stationed behind heavy paper-roll barricades in ",
+      "image": "/images/weimar_spartacist_barricades_rolls_1919.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT1.1: The Origins of the Republic, 1918–1919",
+      "letter": "B",
+      "title": "Source B: Chancellor Prince Max von Baden's Proclamation of Kaiser Wilhelm II's Abdication (9 November 1918)",
+      "caption": "Imperial government decree issued by Prince Max von Baden announcing that Kaiser Wilhelm II and the Crown Prince had renounced the throne, transferring power to Friedrich Ebert.",
+      "contentSnippet": "Official printed government placard posted across Berlin on 9 November 1918 declaring the abdication",
+      "image": "/images/weimar_abdication_decree_1918.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT1.1: The Origins of the Republic, 1918–1919",
+      "letter": "C",
+      "title": "Source C: Proclamation of the Republic by Philipp Scheidemann (9 November 1918)",
+      "caption": "SPD leader Philipp Scheidemann proclaiming the German Republic from a window of the Reichstag building in Berlin to pre-empt a communist declaration.",
+      "contentSnippet": "Official press photograph of crowds gathered outside the Reichstag as Scheidemann proclaims the Germ",
+      "image": "/images/weimar_scheidemann_proclamation_1918.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT1.1: The Origins of the Republic, 1918–1919",
+      "letter": "E",
+      "title": "Source E: Frontispiece of the Official Weimar Constitution (Die Verfassung des Deutschen Reichs, 11 August 1919)",
+      "caption": "Official title page of the Weimar Constitution (Reichsgesetzblatt 1919), establishing a democratic republic with universal suffrage and emergency presidential decrees under Article 48.",
+      "contentSnippet": "Official printed state legislative document promulgating the Weimar Constitution, published in Berli",
+      "image": "/images/weimar_constitution_1919_document.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT1.2: Early Challenges to the Republic, 1919–1923",
+      "title": "Source B: Contemporary photograph of armed Freikorps troops during the Kapp Putsch, Berlin, March 1920.",
+      "caption": "Freikorps Ehrhardt Brigade occupying Berlin during the Kapp Putsch, March 1920, with swastika emblems painted on their helmets.",
+      "contentSnippet": "Troops of the Marinebrigade Ehrhardt occupying the government district in Berlin, with swastikas pai",
+      "image": "/images/kapp_putsch_freikorps.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT1.2: Early Challenges to the Republic, 1919–1923",
+      "title": "Source C: Official German banknote issued by the Reichsbank in Berlin, November 1923.",
+      "caption": "Official 1 Billion (Eine Milliarde) Mark banknote issued by the Reichsbank in Berlin during the hyperinflation crisis, November 1923.",
+      "contentSnippet": "A one-trillion-mark banknote ('Eine Billion Mark') issued at the height of hyperinflation, when curr",
+      "image": "/images/weimar_hyperinflation_note.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT1.2: Early Challenges to the Republic, 1919–1923",
+      "letter": "A",
+      "title": "Source A: Revolutionary Soldiers at the Brandenburg Gate during the Spartacist Uprising (January 1919)",
+      "caption": "Armed revolutionary troops occupying positions around the Brandenburg Gate in Berlin during the communist Spartacist Uprising led by Rosa Luxemburg and Karl Liebknecht.",
+      "contentSnippet": "Historical photograph of armed revolutionaries stationed with artillery vehicles at the Brandenburg ",
+      "image": "/images/weimar_spartacus_uprising_1919.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT1.2: Early Challenges to the Republic, 1919–1923",
+      "letter": "B",
+      "title": "Source B: The \"Stab in the Back\" (Dolchstoßlegende) Nationalist Postcard (1919)",
+      "caption": "Austrian and German right-wing postcard depicting the \"Stab in the Back\" (Dolchstoßlegende), claiming German frontline soldiers were betrayed from behind by socialist and Jewish home-front politicians.",
+      "contentSnippet": "Right-wing nationalist propaganda postcard depicting a heroic soldier stabbed in the back by a civil",
+      "image": "/images/dolchstosslegende_postcard_1919.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT1.2: Early Challenges to the Republic, 1919–1923",
+      "letter": "C",
+      "title": "Source C: Freikorps Soldiers of Marinebrigade Ehrhardt during the Kapp Putsch in Berlin (March 1920)",
+      "caption": "Mutinous soldiers of the Ehrhardt Naval Brigade wearing swastika-painted steel helmets occupying the government district in Berlin during the right-wing Kapp Putsch.",
+      "contentSnippet": "Official press photograph of Freikorps paramilitaries occupying the Wilhelmstraße during the Kapp Pu",
+      "image": "/images/kapp_putsch_freikorps.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT1.2: Early Challenges to the Republic, 1919–1923",
+      "letter": "E",
+      "title": "Source E: A One-Trillion-Mark Banknote Issued by the Reichsbank during Peak Hyperinflation (November 1923)",
+      "caption": "Official 1,000,000,000,000 Mark banknote printed only on one side by the Reichsbank in Berlin during the astronomical monetary collapse of November 1923.",
+      "contentSnippet": "High-denomination German hyperinflation currency issued by the Reichsbank, Berlin, 5 November 1923.",
+      "image": "/images/weimar_hyperinflation_note.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_3",
+      "lessonTitle": "KT1.3: The Recovery of the Republic, 1924–1929",
+      "letter": "B",
+      "title": "Source B: A $1,000 German External Loan (Dawes Loan) Gold Bond Certificate (October 1924)",
+      "caption": "Official 7% Gold Bond certificate for $1,000 issued by the German government under the Dawes Plan, floated by J.P. Morgan & Co. in New York to finance German economic recovery.",
+      "contentSnippet": "Engraved financial bond certificate for the Dawes Plan loan, New York/Berlin, 10 October 1924.",
+      "image": "/images/weimar_dawes_bond_1924.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_3",
+      "lessonTitle": "KT1.3: The Recovery of the Republic, 1924–1929",
+      "letter": "E",
+      "title": "Source E: Nationalist Campaign Poster against the Young Plan: \"Until Its 60th Year This Child Must Pay Tribute!\" (1929)",
+      "caption": "Right-wing propaganda poster by Herbert Rothgaengel for the 1929 \"Freedom Law\" referendum, claiming the Young Plan would enslave German children to pay reparations until 1988.",
+      "contentSnippet": "Right-wing nationalist election poster designed by Herbert Rothgaengel opposing the Young Plan, Berl",
+      "image": "/images/weimar_anti_young_plan_poster_1929.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_4",
+      "lessonTitle": "KT1.4: Changes in Society, 1924–1929",
+      "letter": "A",
+      "title": "Source A: The Horseshoe Estate (Hufeisensiedlung) in Berlin-Britz Designed by Bruno Taut (1925–1930)",
+      "caption": "The Horseshoe Estate in Berlin-Britz, constructed between 1925 and 1930 by socialist architect Bruno Taut to provide affordable, sunlit municipal housing for working-class families.",
+      "contentSnippet": "Architectural photograph of the completed central curved pavilion and green parkland of the Hufeisen",
+      "image": "/images/weimar_hufeisensiedlung_housing_1925.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_4",
+      "lessonTitle": "KT1.4: Changes in Society, 1924–1929",
+      "letter": "D",
+      "title": "Source D: Otto Dix, The Skat Players (Card-Playing War Cripples, 1920)",
+      "caption": "Otto Dix's famous Neue Sachlichkeit (New Objectivity) painting depicting three severely mutilated Great War veterans playing cards using prosthetic limbs and facial grafts.",
+      "contentSnippet": "Oil and collage painting on canvas by Otto Dix, Berlin/Dresden, 1920.",
+      "image": "/images/weimar_otto_dix_skat_players_1920.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_4",
+      "lessonTitle": "KT1.4: Changes in Society, 1924–1929",
+      "letter": "E",
+      "title": "Source E: Right-Wing DNVP Election Poster Warning of Cultural Decay and Moral Ruin (1928)",
+      "caption": "German National People's Party (DNVP) campaign insignia from the 1928 Reichstag election, rallying conservative Christians and nationalists against \"Cultural Bolshevism\", modern art, and American jazz.",
+      "contentSnippet": "Official political election insignia and campaign banner of the German National People's Party (DNVP",
+      "image": "/images/weimar_dnvp_poster_1928.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT2.1: The Early Development of the Nazi Party, 1919–1922",
+      "title": "Source B: From the 25-Point Programme of the NSDAP, announced by Adolf Hitler in Munich, 24 February 1920.",
+      "caption": "Official broadsheet of the 25-Point Programme of the NSDAP, announced by Adolf Hitler in Munich, 24 February 1920.",
+      "contentSnippet": "Point 1: We demand the union of all Germans in a Greater Germany on the basis of the right of nation",
+      "image": "/images/nazi_25_point_programme_1920.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT2.1: The Early Development of the Nazi Party, 1919–1922",
+      "letter": "C",
+      "title": "Source C: Front Page of the Völkischer Beobachter (25 December 1920)",
+      "caption": "The front page of the Völkischer Beobachter (People's Observer) from 25 December 1920, newly acquired by the NSDAP with funds arranged by Dietrich Eckart and General Franz Ritter von Epp.",
+      "contentSnippet": "Original masthead and lead articles of the Völkischer Beobachter, official party newspaper of the NS",
+      "image": "/images/weimar_volkischer_beobachter_1920.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT2.1: The Early Development of the Nazi Party, 1919–1922",
+      "letter": "E",
+      "title": "Source E: Adolf Hitler Seated with NSDAP Members and SA Stormtroopers in a Munich Beer Hall (1923)",
+      "caption": "Adolf Hitler seated at a tavern table in Munich with early NSDAP followers and uniformed SA stormtroopers, 1923. Beer steins and glasses rest on the checkered table as Hitler confers with his inner circle.",
+      "contentSnippet": "Archival photograph of Adolf Hitler and early SA stormtroopers inside a Munich beer hall, 1923.",
+      "image": "/images/hitler_munich_1920s.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT2.2: The Munich Putsch and the Lean Years, 1923–1929",
+      "title": "Source A: Contemporary press photograph showing Adolf Hitler, General Erich Ludendorff, and co-defendants outside the Munich People's Court during their treason trial, spring 1924.",
+      "caption": "Adolf Hitler and General Erich Ludendorff with fellow putschists outside the Munich People's Court during their treason trial, spring 1924.",
+      "contentSnippet": "Adolf Hitler stands confidently in a civilian trench coat adorned with the Iron Cross alongside the ",
+      "image": "/images/munich_putsch_defendants.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT2.2: The Munich Putsch and the Lean Years, 1923–1929",
+      "title": "Source B: Contemporary photograph of Adolf Hitler in his room at Landsberg Fortress, 1924.",
+      "caption": "Adolf Hitler serving his sentence in a comfortable private room at Landsberg Fortress, 1924, where he dictated Mein Kampf.",
+      "contentSnippet": "Hitler is photographed in a well-lit, comfortably furnished room surrounded by books, flowers, and a",
+      "image": "/images/hitler_landsberg_1924.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT2.2: The Munich Putsch and the Lean Years, 1923–1929",
+      "letter": "B",
+      "title": "Source B: Armed SA Stormtroopers Occupying Marienplatz During the Munich Putsch (9 November 1923)",
+      "caption": "Armed paramilitary stormtroopers and putschists occupying the central Marienplatz in Munich outside the New Town Hall on the morning of 9 November 1923.",
+      "contentSnippet": "Original news agency photograph of armed putschists and SA men deployed across Munich Marienplatz, 9",
+      "image": "/images/weimar_munich_putsch_marienplatz_1923.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT2.3: The Growth of Nazi Support, 1929–1932",
+      "title": "Source A: Contemporary photograph of unemployed men reading newspaper job advertisements in Berlin, c. 1931.",
+      "caption": "Unemployed German men sitting on a park bench in Berlin reading newspaper job listings during the Great Depression, c. 1931.",
+      "contentSnippet": "Unemployed German men sitting on a public park bench in Berlin, scouring the classified advertisemen",
+      "image": "/images/weimar_unemployed_sa_men_1932.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT2.3: The Growth of Nazi Support, 1929–1932",
+      "title": "Source B: From an NSDAP election campaign poster by Mjölnir, Berlin, 1932.",
+      "caption": "Nazi Party election poster by Mjölnir showing workers under the slogan 'Unsere letzte Hoffnung: Hitler', Berlin, 1932.",
+      "contentSnippet": "The poster features the haunting faces of impoverished, desperate German workers, mothers, and child",
+      "image": "/images/weimar_nazi_election_poster_1932.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT2.3: The Growth of Nazi Support, 1929–1932",
+      "letter": "C",
+      "title": "Source C: Nazi SA Paramilitary Parade Through Berlin-Spandau (1932)",
+      "caption": "Columns of uniformed SA stormtroopers marching in military formation through Spandau in Berlin during the 1932 Reichstag election campaign.",
+      "contentSnippet": "Official press photograph documenting a mass mobilization of the Berlin SA stormtroopers, Berlin, 19",
+      "image": "/images/weimar_sa_parade_berlin_1932.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT2.3: The Growth of Nazi Support, 1929–1932",
+      "letter": "D",
+      "title": "Source D: Nazi Election Poster: \"Our Last Hope: Hitler\" (1932)",
+      "caption": "Famous Nazi presidential election poster from 1932 created by artist Mjölnir (Hans Schweitzer), showing the desperate, gaunt faces of unemployed German workers looking up towards Hitler.",
+      "contentSnippet": "Lithograph campaign poster by Mjölnir (Hans Schweitzer) for the NSDAP presidential campaign, Berlin,",
+      "image": "/images/nazi_poster_our_last_hope.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT2.4: How Hitler Became Chancellor, 1932–1933",
+      "letter": "B",
+      "title": "Source B: General Kurt von Schleicher, Chancellor of Germany (December 1932–January 1933)",
+      "caption": "Official portrait photograph of General Kurt von Schleicher, the master political schemer of the German Army whose brief chancellorship collapsed in January 1933.",
+      "contentSnippet": "Official portrait photograph of Reich Chancellor General Kurt von Schleicher, Berlin, December 1932.",
+      "image": "/images/weimar_kurt_von_schleicher.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT2.4: How Hitler Became Chancellor, 1932–1933",
+      "letter": "D",
+      "title": "Source D: British Political Cartoon: \"The Temporary Triangle\" by Bernard Partridge (Punch, 8 February 1933)",
+      "caption": "Cartoon by Bernard Partridge in Punch magazine (8 February 1933). German President Paul von Hindenburg and Vice-Chancellor Franz von Papen carry Adolf Hitler aloft on their shoulders, singing \"For he's a jolly good fellow\" while muttering \"(Aside: Confound him!)\".",
+      "contentSnippet": "Contemporary British political cartoon commenting on Franz von Papen and Paul von Hindenburg's schem",
+      "image": "/images/papen_hitler_cartoon.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT2.4: How Hitler Became Chancellor, 1932–1933",
+      "letter": "E",
+      "title": "Source E: The First Cabinet of Adolf Hitler (30 January 1933)",
+      "caption": "The First Hitler Cabinet meeting on 30 January 1933: Hitler is flanked by Vice-Chancellor Franz von Papen, DNVP leader Alfred Hugenberg, and conservative aristocrats, with only two fellow Nazis (Frick and Göring) present.",
+      "contentSnippet": "Official government group portrait of the newly formed Cabinet Hitler in the Reich Chancellery, Berl",
+      "image": "/images/weimar_hitler_cabinet_1933.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_3_1",
+      "lessonTitle": "Key Topic 3.1: The Creation of a Dictatorship, 1933–1934",
+      "title": "Source A: Contemporary press photograph showing the smoldering, gutted plenary chamber of the Reichstag building in Berlin, the morning after the fire of 27 February 1933.",
+      "caption": "The gutted plenary chamber of the Reichstag building in Berlin on the morning of 28 February 1933 following the arson attack.",
+      "contentSnippet": "The central debating chamber of the German parliament is completely destroyed by fire, with the glas",
+      "image": "/images/reichstag_fire_ruins.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_3_2",
+      "lessonTitle": "Key Topic 3.2: The Police State and Religion, 1933–1939",
+      "title": "Source A: Contemporary photograph showing political prisoners lined up for roll call under SS guard at Dachau Concentration Camp, 1933.",
+      "caption": "Political prisoners lined up in rows for roll call under armed SS guard in the courtyard of Dachau Concentration Camp, 1933.",
+      "contentSnippet": "Prisoners in uniform are standing at rigid attention in the gravel courtyard of Dachau, supervised b",
+      "image": "/images/dachau_roll_call.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_3_2",
+      "lessonTitle": "Key Topic 3.2: The Police State and Religion, 1933–1939",
+      "title": "Source B: Official photograph of Vice-Chancellor Franz von Papen and Cardinal Eugenio Pacelli signing the Reichskonkordat in Rome, 20 July 1933.",
+      "caption": "Vice-Chancellor Franz von Papen and Vatican Secretary of State Cardinal Eugenio Pacelli signing the Reichskonkordat in Rome, 20 July 1933.",
+      "contentSnippet": "Papen and Vatican Secretary of State Cardinal Pacelli (the future Pope Pius XII) seated at an ornate",
+      "image": "/images/reichskonkordat_signing_1933.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "Key Topic 3.3: Controlling and Influencing Attitudes, 1933–1939",
+      "title": "Source B: Contemporary photograph of the annual NSDAP Party Rally at the Zeppelin Field in Nuremberg, c. 1935.",
+      "caption": "Massed formations of SA and SS troops assembled at the Zeppelin Field during the annual Nuremberg Reichsparteitag, c. 1935.",
+      "contentSnippet": "Hundreds of thousands of uniformed party members and SA stormtroopers arranged in colossal, geometri",
+      "image": "/images/nuremberg_rally.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "Key Topic 3.3: Controlling and Influencing Attitudes, 1933–1939",
+      "title": "Source C: Contemporary photograph of African American athlete Jesse Owens saluting on the medal podium after winning the long jump at the Berlin Olympic Games, August 1936.",
+      "caption": "African American athlete Jesse Owens saluting on the medal podium after winning gold in the long jump, Berlin Olympic Games, August 1936.",
+      "contentSnippet": "Jesse Owens stands atop the podium in the 100,000-seat Berlin Olympic Stadium, flanked by silver med",
+      "image": "/images/jesse_owens.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "Key Topic 3.3: Controlling and Influencing Attitudes, 1933–1939",
+      "letter": "B",
+      "title": "Source B: The Volksempfänger VE301 \"People's Receiver\" Radio (1933)",
+      "caption": "The Volksempfänger VE301 \"People's Receiver\", developed by engineer Otto Griessing at Goebbels' direction and launched at the Berlin Radio Exhibition on 18 August 1933.",
+      "contentSnippet": "Archival photograph of the standardized Volksempfänger VE301 Bakelite radio receiver with integrated",
+      "image": "/images/volksempfaenger_radio_1933.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "Key Topic 3.3: Controlling and Influencing Attitudes, 1933–1939",
+      "letter": "E",
+      "title": "Source E: Poster for the 'Degenerate Music' (Entartete Musik) Exhibition in Düsseldorf (May 1938)",
+      "caption": "Official exhibition poster for the 'Entartete Musik' (Degenerate Music) exhibition organized by the Reich Chamber of Music in Düsseldorf, May 1938.",
+      "contentSnippet": "Propaganda broadside for the Degenerate Music exhibition displaying a racist caricature of an Africa",
+      "image": "/images/nazi_entartete_musik_poster_1938.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "Key Topic 3.4: Opposition, Resistance and Conformity, 1933–1939",
+      "letter": "B",
+      "title": "Source B: Camouflaged Anti-Nazi Pamphlet ('Tarnschrift') Disguised as a Reclam Classic (1935)",
+      "caption": "A 1935 anti-Nazi resistance publication (left) published by the underground opposition, disguised behind an authentic yellow cover mimicking Reclam's Universal-Bibliothek (\"Das Diktat von Versailles\", right) to evade Gestapo book inspectors.",
+      "contentSnippet": "Archival photograph comparing an illegal camouflaged anti-fascist booklet with a standard Reclam pub",
+      "image": "/images/reclam_tarnschrift_1935.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "Key Topic 3.4: Opposition, Resistance and Conformity, 1933–1939",
+      "letter": "E",
+      "title": "Source E: Dietrich Bonhoeffer at the Underground Confessing Church Seminary (1936)",
+      "caption": "Pastor Dietrich Bonhoeffer (1906–1945), Protestant theologian and resistance fighter who ran the illegal Confessing Church seminary at Finkenwalde and later joined the military conspiracy against Hitler.",
+      "contentSnippet": "Archival portrait of German pastor, theologian, and anti-Nazi conspirator Dietrich Bonhoeffer, c. 19",
+      "image": "/images/weimar_individuals/dietrich_bonhoeffer.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_4_2",
+      "lessonTitle": "Key Topic 4.2: Nazi Policies Towards the Young, 1933–1939",
+      "title": "Source A: Contemporary photograph showing members of the Hitler Youth (Hitlerjugend) marching in uniform through a German town with drums and swastika flags, circa 1935.",
+      "caption": "Members of the Hitler Youth (Hitlerjugend) marching in uniform through a German town with drums and banners, c. 1935.",
+      "contentSnippet": "Adolescent boys in crisp military-style brown uniforms, swastika armbands, and marching packs move i",
+      "image": "/images/hitler_youth_march_1930s.jpg"
+    },
+    {
+      "type": "Exam Stimulus",
+      "lessonId": "lesson_4_2",
+      "lessonTitle": "Key Topic 4.2: Nazi Policies Towards the Young, 1933–1939",
+      "title": "Source B: Contemporary photograph showing girls of the League of German Girls (Bund Deutscher Mädel - BDM) performing synchronized gymnastics at a Nuremberg party rally, 1938.",
+      "caption": "Girls of the League of German Girls (BDM) performing synchronized physical drill at the Reich Sports Field, Nuremberg, 1938.",
+      "contentSnippet": "Hundreds of adolescent girls in matching white sports blouses and dark athletic shorts perform ident",
+      "image": "/images/bdm_gymnastics.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_2",
+      "lessonTitle": "Key Topic 4.2: Nazi Policies Towards the Young, 1933–1939",
+      "letter": "C",
+      "title": "Source C: League of German Girls (BDM) Performing Synchronized Physical Drill (c. 1936)",
+      "caption": "Teenage members of the League of German Girls (Bund Deutscher Mädel) in matching white uniforms performing mass synchronized gymnastics in an outdoor display, c. 1936.",
+      "contentSnippet": "Archival photograph showing mass rhythmic gymnastics by League of German Girls members in white athl",
+      "image": "/images/bdm_gymnastics_vorfuhrung.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_3",
+      "lessonTitle": "Key Topic 4.3: Employment and Living Standards, 1933–1939",
+      "letter": "E",
+      "title": "Source E: Official Emblem of the Strength Through Joy (Kraft durch Freude / KdF) Organisation (1938)",
+      "caption": "The official emblem of the Kraft durch Freude (KdF) division of the German Labour Front, depicting a swastika enclosed within an industrial gearwheel surrounded by radiating sunburst rays, 1938.",
+      "contentSnippet": "Official graphic emblem of the Strength Through Joy (KdF) organisation created by the German Labour ",
+      "image": "/images/kdf_cruise_ship_1938.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_4",
+      "lessonTitle": "Key Topic 4.4: The Persecution of Minorities, 1933–1939",
+      "letter": "B",
+      "title": "Source B: SA Stormtroopers Enforcing the Nationwide Anti-Jewish Boycott in Berlin (1 April 1933)",
+      "caption": "Uniformed SA stormtroopers picketing the N. Israel department store in Berlin, holding signs reading \"Deutsche! Wehrt Euch! Kauft nicht bei Juden!\" (Germans! Defend yourselves! Do not buy from Jews!), 1 April 1933.",
+      "contentSnippet": "Archival photograph showing SA stormtroopers picketing outside a Jewish department store in Berlin d",
+      "image": "/images/anti_jewish_boycott_1933.jpg"
+    }
+  ],
+  "edexcel_medicine": [
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT1.1: Supernatural & Religious Explanations of Disease (c1250–c1500)",
+      "letter": "C",
+      "title": "Source C (Astrological Chart): The Zodiac Man (Homo Signorum), Medical Almanac (c.1390)",
+      "caption": "Fourteenth-century illuminated vellum chart illustrating the astrological governing signs of the human anatomy, preserved in a medieval English physician's pocket compendium.",
+      "contentSnippet": "Illuminated vellum chart illustrating the Zodiac Man, showing planetary governance of bodily organs.",
+      "image": "/images/zodiac_man.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT1.1: Supernatural & Religious Explanations of Disease (c1250–c1500)",
+      "letter": "D",
+      "title": "Source D (Material Artefact): Pilgrim Ampulla Flask, Shrine of St Thomas Becket, Canterbury (c.1300)",
+      "caption": "Cast lead-alloy pilgrim flask (ampulla) stamped with the image of St Thomas Becket, designed to hold diluted sanctified holy water or relic oil from his Canterbury shrine.",
+      "contentSnippet": "Cast lead pilgrim ampulla used by medieval sick travelers to carry holy water from the shrine of St ",
+      "image": "/images/becket_pilgrim_badge.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT1.2: Rational Explanations: Hippocrates, Galen & The Four Humours (c1250–c1500)",
+      "letter": "A",
+      "title": "Source A (Cosmological Chart): The Four Bodily Humours and Temperaments, Tacuinum Sanitatis (14th Century)",
+      "caption": "Illuminated manuscript diagram showing the Four Humours (Blood, Phlegm, Yellow Bile, Black Bile), linked to bodily temperaments, elements, and seasons.",
+      "contentSnippet": "Illuminated manuscript diagram showing the Four Humours and their seasonal and elemental association",
+      "image": "/images/four_humours.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT1.2: Rational Explanations: Hippocrates, Galen & The Four Humours (c1250–c1500)",
+      "letter": "C",
+      "title": "Source C (Diagnostic Chart): Medieval Urine Wheel Diagram, Fasciculus Medicinae (1491)",
+      "caption": "A circular diagnostic urine wheel illustrating twenty different shades of human urine, from white and pale citrine to dark red and black, used to identify humoral imbalances.",
+      "contentSnippet": "Printed circular urine wheel diagram displaying twenty flask shades for medical diagnosis.",
+      "image": "/images/medieval_urine_chart.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_3",
+      "lessonTitle": "KT1.3: Approaches to Prevention & Treatment: Rituals, Bleeding & Purging (c1250–c1500)",
+      "letter": "B",
+      "title": "Source B (Manuscript Miniature): Phlebotomy by Cephalic Vein Venesection, Wellcome MS 990 (c.1380)",
+      "caption": "Fourteenth-century English manuscript miniature showing a surgeon incising the cephalic vein of a patient’s arm with a lancet, draining dark blood into a wooden bowl.",
+      "contentSnippet": "Manuscript miniature showing a surgeon performing venesection on a patient's arm.",
+      "image": "/images/medieval_venesection_ms990.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_3",
+      "lessonTitle": "KT1.3: Approaches to Prevention & Treatment: Rituals, Bleeding & Purging (c1250–c1500)",
+      "letter": "C",
+      "title": "Source C (Material Artefact): Graduated Pewter Bleeding Bowl with Measuring Rings (15th Century)",
+      "caption": "Fifteenth-century cast pewter bleeding bowl featuring graduated concentric rings engraved inside to measure the exact fluid volume of blood drained during venesection.",
+      "contentSnippet": "Cast pewter bleeding bowl with internal volume measurement rings used by barber-surgeons.",
+      "image": "/images/medieval_bleeding_bowl.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_4",
+      "lessonTitle": "KT1.4: Medical Care Providers & Monastic Hospitals: ‘Care Not Cure’ (c1250–c1500)",
+      "letter": "A",
+      "title": "Source A (Guild Painting): The Fellowship of Barber-Surgeons at Work (15th Century)",
+      "caption": "Fifteenth-century depiction of barber-surgeons practicing manual craft, demonstrating their guild fellowship and practical apprenticeship.",
+      "contentSnippet": "Historical depiction of barber-surgeons gathered in guild regalia practicing practical manual treatm",
+      "image": "/images/holbein_barber_surgeons.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_4",
+      "lessonTitle": "KT1.4: Medical Care Providers & Monastic Hospitals: ‘Care Not Cure’ (c1250–c1500)",
+      "letter": "C",
+      "title": "Source C (Architectural Record): Rahere’s Tomb and the Norman Nave of St Bartholomew the Great (Founded 1123)",
+      "caption": "The Norman priory church and founder's tomb of Rahere at St Bartholomew the Great, London, showing the ecclesiastical heart of England's oldest surviving hospital.",
+      "contentSnippet": "Norman priory architecture and founder Rahere's tomb at St Bartholomew the Great, London.",
+      "image": "/images/rahere_st_bartholomew.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_5",
+      "lessonTitle": "KT1.5: Case Study: Dealing with the Black Death (1348–1349)",
+      "letter": "B",
+      "title": "Source B (Clinical Woodcut): Bedside Examination of a Plague Victim with Buboes (1497)",
+      "caption": "Woodcut illustrating a bedridden plague patient covered in dark pustules, with large inflamed buboes visible in the groin and armpit, attended by a physician and weeping relatives.",
+      "contentSnippet": "Late medieval woodcut illustrating clinical symptoms of bubonic plague including buboes and bedside ",
+      "image": "/images/black_death.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_5",
+      "lessonTitle": "KT1.5: Case Study: Dealing with the Black Death (1348–1349)",
+      "letter": "D",
+      "title": "Source D (Historical Miniature): The Flagellants Performing Public Penance at Doornik (1349)",
+      "caption": "Fourteenth-century manuscript miniature depicting the Brotherhood of Flagellants marching into the Flemish town of Doornik in 1349, whipping themselves with iron-tipped scourges to appease God's anger.",
+      "contentSnippet": "Fourteenth-century manuscript miniature depicting Flagellants scourging themselves in public penance",
+      "image": "/images/flagellants_doornik_1349.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT2.1: The New Spirit of Enquiry: Humanism, The Printing Press & The Royal Society (c1500–c1700)",
+      "letter": "A",
+      "title": "Source A: Renaissance Printing House with Movable Metal Type, by Jan van der Straet (Stradanus, c.1580)",
+      "caption": "Sixteenth-century engraving showing the bustling division of labour inside a printing house: compositors setting metal type, proofreaders checking text, and pressmen operating the heavy wooden screw press.",
+      "contentSnippet": "Engraving by Stradanus illustrating compositors, pressmen, and proofreaders operating a movable-type",
+      "image": "/images/renaissance_printing_house_stradanus.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT2.1: The New Spirit of Enquiry: Humanism, The Printing Press & The Royal Society (c1500–c1700)",
+      "letter": "E",
+      "title": "Source E: Robert Hooke’s Microscopic Study of a Flea, Micrographia (1665)",
+      "caption": "Fold-out engraving of a common flea magnified several hundred times, displaying armored scales, jointed legs, and hairs, drawn by Robert Hooke using his compound microscope.",
+      "contentSnippet": "Detailed scientific fold-out engraving from Robert Hooke’s Micrographia illustrating the microscopic",
+      "image": "/images/hooke_micrographia_flea.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT2.2: Thomas Sydenham & The Art of Bedside Observation (1676)",
+      "letter": "A",
+      "title": "Source A: Thomas Sydenham, Observationes Medicae, London (1676)",
+      "caption": "Title page of Dr Thomas Sydenham's seminal clinical work Observationes Medicae circa Morborum Acutorum Historiam et Curationem (1676), championing meticulous bedside observation and classification of diseases over ancient humoral dogma.",
+      "contentSnippet": "Printed title page of Thomas Sydenham's seminal clinical treatise Observationes Medicae (1676).",
+      "image": "/images/sydenham_observationes_medicae_titlepage.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT2.2: Thomas Sydenham & The Art of Bedside Observation (1676)",
+      "letter": "E",
+      "title": "Source E: The Quack Physician by Jan Steen (c.1660)",
+      "caption": "Seventeenth-century Dutch painting mocking the pretensions of medical charlatans who swindled desperate families by theatrical inspections of urine flasks and high-flown jargon.",
+      "contentSnippet": "Satirical genre painting by Jan Steen depicting a quack physician pretending to diagnose illness fro",
+      "image": "/images/quack_physician_steen.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT2.3: Andreas Vesalius & The Anatomical Revolution (1543)",
+      "letter": "A",
+      "title": "Source A (Woodcut Frontispiece): Title Page of De Humani Corporis Fabrica, Basel (1543)",
+      "caption": "The celebrated frontispiece of Vesalius’s Fabrica showing the crowded anatomy theatre at Padua, with Vesalius himself at the dissecting table surrounded by students, scholars, and a standing skeleton.",
+      "contentSnippet": "Frontispiece of Vesalius’s Fabrica depicting an energetic public human dissection in Padua.",
+      "image": "/images/vesalius_fabrica_frontispiece.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT2.3: Andreas Vesalius & The Anatomical Revolution (1543)",
+      "letter": "C",
+      "title": "Source C (Anatomical Woodcut): Contemplative Skeleton Leaning upon a Spade, Fabrica (1543)",
+      "caption": "Iconic full-page woodcut from Book I of Fabrica depicting an anatomically accurate human skeleton leaning pensively upon a grave-digger’s spade in an Italian landscape.",
+      "contentSnippet": "Detailed woodcut from Fabrica showing an articulated human skeleton in a classical contemplative pos",
+      "image": "/images/vesalius_skeleton_leaning.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT2.4: William Harvey & The Circulation of the Blood (1628)",
+      "letter": "A",
+      "title": "Source A (Anatomical Diagram): Forearm Vein Ligature and Valve Experiments, De Motu Cordis (1628)",
+      "caption": "The celebrated woodcut plate from De Motu Cordis showing a patient's arm with a ligature applied, demonstrating how internal venous valves (nodes O and H) block blood from being pushed backwards toward the hand.",
+      "contentSnippet": "Diagram from De Motu Cordis demonstrating how one-way valves in arm veins allow blood to travel only",
+      "image": "/images/harvey_de_motu_cordis_valves.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT2.4: William Harvey & The Circulation of the Blood (1628)",
+      "letter": "C",
+      "title": "Source C (Microscopic Drawing): Marcello Malpighi’s Observation of Capillaries in Frog Lungs, De Pulmonibus (1661)",
+      "caption": "Seventeenth-century microscopic drawing by Italian anatomist Marcello Malpighi, showing the microscopic capillary network connecting branching arteries and veins in the lung tissue of a frog.",
+      "contentSnippet": "Microscopic drawing by Marcello Malpighi revealing the capillary network linking arteries and veins.",
+      "image": "/images/malpighi_capillaries_microscope.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_5",
+      "lessonTitle": "KT2.5: Continuity in Treatment & The Great Plague of London (1665)",
+      "letter": "A",
+      "title": "Source A (Contemporary Broadside): Multi-Scene Illustrated Broadside of the Great Plague, London (1665)",
+      "caption": "Broadside engraving illustrating scenes from the 1665 plague: citizens fleeing by water and coach, searchers carrying white rods, the dead cart collecting corpses, and mass burials in plague pits outside city walls.",
+      "contentSnippet": "Broadside engraving showing the multi-scene panic, fleeing citizens, dead carts, and mass burials in",
+      "image": "/images/great_plague_1665_broadside.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_5",
+      "lessonTitle": "KT2.5: Continuity in Treatment & The Great Plague of London (1665)",
+      "letter": "C",
+      "title": "Source C (Illustrated Broadsheet): \"Lord Have Mercy Upon Us\" Broadsheet with Mortality Statistics, London (1665)",
+      "caption": "Famous multi-panel broadsheet printed in London in 1665, showing shutting up of houses, dead-bearers carrying coffins, the Holywell Mount burial pit, and detailed weekly Bills of Mortality tables.",
+      "contentSnippet": "Illustrated broadsheet combining religious pleas, scenes of dead-bearers, and detailed parish mortal",
+      "image": "/images/plague_in_london_1665_wellcome.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_1",
+      "lessonTitle": "KT3.1: Ideas on Causes: Pasteur’s Germ Theory & Koch’s Microbe Hunters (c.1861–c.1883)",
+      "letter": "C",
+      "title": "Source C: Louis Pasteur in his Laboratory (1885) by Albert Edelfelt",
+      "caption": "Oil painting by Albert Edelfelt (1885), Musée d'Orsay, Paris. Pasteur inspects a spinal cord specimen drying in a sterile glass jar during his rabies vaccine trials, surrounded by laboratory glassware and scientific notebooks.",
+      "contentSnippet": "",
+      "image": "/images/pasteur_laboratory.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_1",
+      "lessonTitle": "KT3.1: Ideas on Causes: Pasteur’s Germ Theory & Koch’s Microbe Hunters (c.1861–c.1883)",
+      "letter": "D",
+      "title": "Source D: Robert Koch's Microphotograph of Stained Tuberculosis Bacilli (1882)",
+      "caption": "High-magnification microphotograph by Robert Koch (1882), showing rod-shaped Mycobacterium tuberculosis bacteria stained with chemical methyl violet dye against animal tissue, published by the Imperial Health Bureau in Berlin.",
+      "contentSnippet": "",
+      "image": "/images/koch_bacteria.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_2",
+      "lessonTitle": "KT3.2: Approaches to Prevention: Edward Jenner & The Smallpox Vaccine (1796–1853)",
+      "letter": "A",
+      "title": "Source A: James Gillray, 'The Cow-Pock—or—the Wonderful Effects of the New Inoculation!' (12 June 1802)",
+      "caption": "Hand-coloured satirical etching by James Gillray, published by Hannah Humphrey, London. Dr Jenner inoculates fearful patients at the Smallpox and Inoculation Hospital, St Pancras, as miniature bovine heads and cows burst out of their arms, noses, and bodies.",
+      "contentSnippet": "",
+      "image": "/images/gillray_cow_pock_1802.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_2",
+      "lessonTitle": "KT3.2: Approaches to Prevention: Edward Jenner & The Smallpox Vaccine (1796–1853)",
+      "letter": "C",
+      "title": "Source C: Hand of Sarah Nelmes Infected with Cowpox, Wellcome Collection (1796/1798)",
+      "caption": "Detailed anatomical engraving from Jenner's 1798 treatise illustrating the pustules on the hand of Gloucestershire dairymaid Sarah Nelmes, contracted while milking her cow Blossom, from which Jenner extracted the original vaccine lymph.",
+      "contentSnippet": "",
+      "image": "/images/sarah_nelmes_cowpox_hand.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "KT3.3: Improvements in Hospital Care: Florence Nightingale, Mary Seacole & The Sanitary Revolution (1854–1863)",
+      "letter": "A",
+      "title": "Source A: Florence Nightingale's 'Coxcomb' Diagram of Crimean War Mortality (1858)",
+      "caption": "Diagram of the Causes of Mortality in the Army in the East (1858) by Florence Nightingale. The large blue wedges show soldiers dying from preventable zymotic diseases (typhus, cholera, dysentery), dwarfing the tiny red slices of deaths from direct combat wounds.",
+      "contentSnippet": "",
+      "image": "/images/nightingale_coxcomb.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "KT3.3: Improvements in Hospital Care: Florence Nightingale, Mary Seacole & The Sanitary Revolution (1854–1863)",
+      "letter": "C",
+      "title": "Source C: Portrait of Mary Seacole (1869) by Albert Charles Challen",
+      "caption": "Oil on board by Albert Charles Challen (1869), National Portrait Gallery, London. Seacole proudly wears her four campaign medals: the British Crimea Medal, the French Légion d'Honneur, the Turkish Order of the Medjidie, and the Sardinian Crimean Medal.",
+      "contentSnippet": "",
+      "image": "/images/mary_seacole.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_5",
+      "lessonTitle": "KT3.5: Public Health & Cholera: John Snow, The Broad Street Pump & The 1875 Public Health Act (1854–1875)",
+      "letter": "B",
+      "title": "Source B: Dr John Snow's Spot Map of the Broad Street Cholera Outbreak (1854)",
+      "caption": "Epidemiological spot map compiled by Dr John Snow, published in his 1855 treatise. Each black bar represents a cholera death at that address, clustered overwhelmingly around the Broad Street public water pump in Soho, London.",
+      "contentSnippet": "",
+      "image": "/images/snow_cholera_map.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_5",
+      "lessonTitle": "KT3.5: Public Health & Cholera: John Snow, The Broad Street Pump & The 1875 Public Health Act (1854–1875)",
+      "letter": "C",
+      "title": "Source C: 'The Terror of Asiatic Cholera: King Cholera Tramples the Slums' (c.1850s)",
+      "caption": "Contemporary nineteenth-century lithograph depicting King Cholera as a winged, scythe-bearing skeletal phantom swooping through toxic industrial smoke, stagnant drainage ditches, and overcrowded tenements.",
+      "contentSnippet": "",
+      "image": "/images/cholera_miasma.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_1",
+      "lessonTitle": "KT4.1: Ideas on Causes: Genetics, DNA & The Human Genome Project (c.1953–present)",
+      "letter": "A",
+      "title": "Source A: James Watson and Francis Crick with the Double Helix Model (1953)",
+      "caption": "Photograph of James Watson and Francis Crick at the Cavendish Laboratory, Cambridge (1953), demonstrating their mechanical wire-and-sheet-metal model of the DNA double helix.",
+      "contentSnippet": "",
+      "image": "/images/dna_structure.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_1",
+      "lessonTitle": "KT4.1: Ideas on Causes: Genetics, DNA & The Human Genome Project (c.1953–present)",
+      "letter": "C",
+      "title": "Source C: Dr Rosalind Franklin at King's College London (c.1952)",
+      "caption": "Photographic portrait of Dr Rosalind Franklin, pioneering physical chemist and X-ray crystallographer whose meticulous laboratory work at King's College London produced Photograph 51.",
+      "contentSnippet": "",
+      "image": "/images/rosalind_franklin_portrait.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_2",
+      "lessonTitle": "KT4.2: Lifestyle Factors & The Technological Revolution in Diagnosis (c.1900–present)",
+      "letter": "C",
+      "title": "Source C: Clinician Positioning Patient in the Original EMI CT Brain Scanner (1970s)",
+      "caption": "A patient being positioned inside the original clinical EMI CT head scanner developed by Godfrey Hounsfield in the early 1970s. The scanner revolutionized medical diagnosis by directing a narrow X-ray beam through the head at hundreds of angles to produce computer-processed cross-sectional slices of brain tissue.",
+      "contentSnippet": "",
+      "image": "/images/emi_ct_scanner_original.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_3",
+      "lessonTitle": "KT4.3: The Search for Magic Bullets, High-Tech Treatments & The Birth of the NHS (1909–1948)",
+      "letter": "B",
+      "title": "Source B: Gerhard Domagk, Discoverer of Prontosil (c.1935)",
+      "caption": "Photographic portrait of German pathologist Gerhard Domagk, who discovered in 1932 that the industrial red leather dye Prontosil cured lethal streptococcal infections in mice, creating the second magic bullet.",
+      "contentSnippet": "",
+      "image": "/images/gerhard_domagk_portrait.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_3",
+      "lessonTitle": "KT4.3: The Search for Magic Bullets, High-Tech Treatments & The Birth of the NHS (1909–1948)",
+      "letter": "D",
+      "title": "Source D: Ministry of Health Household Leaflet on the Launch of the NHS (1948)",
+      "caption": "Official public information leaflet distributed by the Ministry of Health to all eight million British households in the spring of 1948, announcing the founding of the free National Health Service.",
+      "contentSnippet": "",
+      "image": "/images/nhs_established.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_4",
+      "lessonTitle": "KT4.4: Case Study 1: The Antibiotic Revolution: Fleming, Florey & Chain and Penicillin (1928–1945)",
+      "letter": "A",
+      "title": "Source A: Alexander Fleming's Original 1928 Penicillin Culture Plate",
+      "caption": "Preserved culture plate of Penicillium notatum mould growing on nutrient agar with a surrounding clear halo ring of staphylococcal bacteria lysis (Wellcome Collection L0059172). Fleming observed this accidental contamination in September 1928 at St Mary's Hospital.",
+      "contentSnippet": "",
+      "image": "/images/fleming_petri_dish.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_4",
+      "lessonTitle": "KT4.4: Case Study 1: The Antibiotic Revolution: Fleming, Florey & Chain and Penicillin (1928–1945)",
+      "letter": "C",
+      "title": "Source C: Allied Wartime Penicillin Motivational Poster: 'Penicillin Saves Soldiers' Lives!' (1944)",
+      "caption": "'Penicillin Saves Soldiers' Lives!' (1944) — Official US War Production Board / British Ministry of Supply industrial motivational poster urging pharmaceutical factory workers to maximize production for frontline combat casualties.",
+      "contentSnippet": "",
+      "image": "/images/penicillin_propaganda.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_5",
+      "lessonTitle": "KT4.5: Case Study 2: Public Health & The Fight Against Lung Cancer (c.1950–present)",
+      "letter": "E",
+      "title": "Source E: UK Standardized Plain Cigarette Packaging with Graphic Warnings (2016)",
+      "caption": "Photograph of UK standardized plain cigarette packaging introduced under the Children and Families Act in May 2016. All brand logos and vibrant colours were banned, replaced by a drab olive-green tone (Pantone 448 C) and graphic pictorial health warnings.",
+      "contentSnippet": "",
+      "image": "/images/plain_cigarette_packaging_uk.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_5_1",
+      "lessonTitle": "KT5.1: The Theatre of War: The British Sector, Trench Geography & Battles (1914–1918)",
+      "letter": "A",
+      "title": "Source A (Aerial Photograph): Royal Flying Corps Reconnaissance of Frontline Trench Lines near Ypres (1917)",
+      "caption": "Royal Flying Corps aerial reconnaissance photograph taken above the Ypres Salient in 1917, showing the intricate zig-zag pattern of frontline firebays, traverses, and communication trenches surrounded by water-filled shell craters.",
+      "contentSnippet": "",
+      "image": "/images/aerial_trench_ypres.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_5_1",
+      "lessonTitle": "KT5.1: The Theatre of War: The British Sector, Trench Geography & Battles (1914–1918)",
+      "letter": "C",
+      "title": "Source C (Photograph): British Soldiers in a Waterlogged Communication Trench, Flanders (1917)",
+      "caption": "British soldiers navigating a waterlogged communication trench in Flanders (1917). The wooden duckboards have floated loose in thick liquid mud, illustrating the extreme environmental barriers to movement and stretcher evacuation.",
+      "contentSnippet": "",
+      "image": "/images/gw_flooded_trench.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_5_2",
+      "lessonTitle": "KT5.2: The Trench Environment: Mud, Vermin & Non-Combat Illnesses (1914–1918)",
+      "letter": "A",
+      "title": "Source A (Clinical Photograph): Bilateral Trench Foot in a British Soldier (c.1915)",
+      "caption": "RAMC clinical photograph documenting severe bilateral trench foot in a British infantryman (c.1915). Prolonged immersion in freezing, waterlogged mud constricted blood vessels, resulting in tissue death, blistering, and wet gangrene.",
+      "contentSnippet": "",
+      "image": "/images/trench_foot_clinical.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_5_2",
+      "lessonTitle": "KT5.2: The Trench Environment: Mud, Vermin & Non-Combat Illnesses (1914–1918)",
+      "letter": "C",
+      "title": "Source C (Photograph): British Wounded at an Advanced Dressing Station near Boesinghe, Battle of Pilckem Ridge (31 July 1917)",
+      "caption": "British wounded soldiers attended by RAMC medical staff and orderlies as they lie on stretchers on the grass outside an Advanced Dressing Station near Boesinghe in the Ypres Salient during the opening day of the Third Battle of Ypres (Passchendaele, 31 July 1917).",
+      "contentSnippet": "",
+      "image": "/images/ramparts_ww1.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_5_3",
+      "lessonTitle": "KT5.3: Battlefield Trauma: High Explosive Shrapnel, Gas Attacks & Infection (1914–1918)",
+      "letter": "C",
+      "title": "Source C: Clinical Radiograph Showing Metallic Projectile Localisation in Cranium using Lead-Wire Cage (c.1916)",
+      "caption": "Clinical radiograph demonstrating metallic bullet localisation within the cranium of a living soldier using a lead-wire localisation cage (Professor Waymouth Reid's case, RAMC, c.1916). Cross-hairs and coordinate grids allowed surgeons to calculate the precise depth of intracranial projectiles before performing trephining or craniotomy.",
+      "contentSnippet": "",
+      "image": "/images/ww1_shrapnel_xray.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_5_4",
+      "lessonTitle": "KT5.4: The Chain of Evacuation: Stretcher Bearers, RAP, Dressing Stations & CCS (1914–1918)",
+      "letter": "A",
+      "title": "Source A (Photograph): Stretcher Bearers Carrying a Wounded Soldier through Mud at the Battle of Passchendaele (1917)",
+      "caption": "Six British stretcher bearers struggling shoulder-high to carry a severely wounded casualty across waist-deep, liquid mud and shattered tree stumps near Boesinghe during the Third Battle of Ypres (Passchendaele, 1917).",
+      "contentSnippet": "",
+      "image": "/images/stretcher_bearers_passchendaele_1917.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_5_4",
+      "lessonTitle": "KT5.4: The Chain of Evacuation: Stretcher Bearers, RAP, Dressing Stations & CCS (1914–1918)",
+      "letter": "C",
+      "title": "Source C (Painting): 'The Stretcher Bearer' by Gilbert Rogers (1919)",
+      "caption": "Gilbert Rogers' iconic oil painting 'The Stretcher Bearer' (1919), showing an exhausted, battle-weary RAMC orderly carrying a wounded comrade on his back through the mud and shellfire of the Western Front.",
+      "contentSnippet": "",
+      "image": "/images/stretcher_bearers_gilbert_rogers.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_5_5",
+      "lessonTitle": "KT5.5: Surgical Breakthroughs: The Thomas Splint, Wound Debridement & Mobile X-Rays (1914–1918)",
+      "letter": "A",
+      "title": "Source A: Surgical Operating Theatre Suite at No. 23 Casualty Clearing Station in France (c.1917)",
+      "caption": "Operating theatre suite inside No. 23 Casualty Clearing Station on the Western Front. Multiple operating tables with surgical instruments and overhead illumination enabled specialist surgical teams to perform urgent abdominal laparotomies and debridement simultaneously.",
+      "contentSnippet": "",
+      "image": "/images/casualty_clearing_station_ww1.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_5_5",
+      "lessonTitle": "KT5.5: Surgical Breakthroughs: The Thomas Splint, Wound Debridement & Mobile X-Rays (1914–1918)",
+      "letter": "D",
+      "title": "Source D: Marie Curie at the Wheel of a Mobile Field Radiography Car ('Petite Curie') on the Western Front (c.1915)",
+      "caption": "Marie Curie at the wheel of a mobile radiographic car ('petite Curie') on the Western Front (c.1915). Equipped with a petrol dynamo, portable X-ray apparatus, and photographic darkroom supplies, these mobile radiological vans brought diagnostic imaging directly to frontline dressing stations and casualty clearing units, enabling surgeons to locate bullets and shrapnel before operating.",
+      "contentSnippet": "",
+      "image": "/images/field_hospital_xray_1917.jpg"
+    }
+  ],
+  "usa": [
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT 1.1: What was the position of Black Americans in the early 1950s?",
+      "letter": "B",
+      "title": "Source B: Archival Photograph of 'Colored Waiting Room' Sign at a Southern Transit Terminal (c. 1950s)",
+      "caption": "Archival photograph of a 'Colored Waiting Room' sign at a southern bus terminal (c. 1950s), documenting mandatory racial segregation enforced under Jim Crow statutes across public transportation.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/colored-waiting-room-sign.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT 1.1: What was the position of Black Americans in the early 1950s?",
+      "letter": "D",
+      "title": "Source D: From an Address by Thurgood Marshall, Chief Legal Counsel for the NAACP, to the National Convention (July 1953)",
+      "caption": "Thurgood Marshall (1908–1993), Chief Legal Counsel for the NAACP Legal Defense Fund, who formulated and argued the landmark Brown v. Board of Education case before the US Supreme Court (Library of Congress, c. 1953).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/thurgood_marshall_naacp_counsel.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT 1.1: What was the position of Black Americans in the early 1950s?",
+      "letter": "E",
+      "title": "Source E: Demographic Map Illustrating State Legislation Mandating Public School Segregation Across the United States (1953)",
+      "caption": "Demographic and legislative map of the United States (1953) illustrating the seventeen southern and border states where racial segregation in public schools was legally mandated prior to Brown v. Board of Education.",
+      "contentSnippet": "",
+      "image": "/images/usa_school_segregation_brown_1954_map.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT 1.2: How did developments in education challenge segregation (1954–57)?",
+      "letter": "A",
+      "title": "Source A: From the Unanimous Supreme Court Opinion Delivered by Chief Justice Earl Warren in Brown v. Board of Education (17 May 1954)",
+      "caption": "The nine justices of the Warren Court in judicial robes (May 1954). Chief Justice Earl Warren (seated center) forged a unanimous 9–0 decision outlawing racial segregation in public schools.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/warren-court-1954.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT 1.2: How did developments in education challenge segregation (1954–57)?",
+      "letter": "B",
+      "title": "Source B: Declaration of Constitutional Principles (The Southern Manifesto) Signed by 101 Southern Congressmen (12 March 1956)",
+      "caption": "Facsimile of the 12 March 1956 Congressional Record publishing the 'Declaration of Constitutional Principles' (Southern Manifesto), signed by 101 Southern senators and representatives pledging 'Massive Resistance' to school desegregation.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/southern_manifesto_congressional_record_1956.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT 1.2: How did developments in education challenge segregation (1954–57)?",
+      "letter": "C",
+      "title": "Source C: Arkansas Governor Orval Faubus Televised Address Announcing the Deployment of the Arkansas National Guard (2 September 1957)",
+      "caption": "Arkansas Governor Orval Faubus speaking before press microphones backed by state police in Little Rock, September 1957, announcing troops would surround Central High School to block the Little Rock Nine.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/orval_faubus_little_rock_1957.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT 1.2: How did developments in education challenge segregation (1954–57)?",
+      "letter": "D",
+      "title": "Source D: Elizabeth Eckford Braving Screaming Segregationist Crowds Outside Little Rock Central High School (4 September 1957)",
+      "caption": "Fifteen-year-old Elizabeth Eckford walking stoically past a jeering, hostile segregationist mob outside Little Rock Central High School (4 September 1957), captured by photojournalist Will Counts.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/little-rock-nine-1957.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT 1.2: How did developments in education challenge segregation (1954–57)?",
+      "letter": "E",
+      "title": "Source E: Armed Soldiers of the 101st Airborne Division Escorting the 'Little Rock Nine' into Central High School (25 September 1957)",
+      "caption": "Armed federal paratroopers of the 101st Airborne Division escorting the 'Little Rock Nine' into Central High School (25 September 1957) following President Eisenhower's federal intervention.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/airborne-little-rock-patrol.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_3",
+      "lessonTitle": "KT 1.3: How did the Montgomery Bus Boycott happen, and why did it succeed?",
+      "letter": "A",
+      "title": "Source A: Montgomery Police Department Arrest Docket Sheet for Rosa Parks (1 December 1955)",
+      "caption": "Official arrest docket sheet from the Montgomery Police Department recording the arrest of Rosa Parks (1 December 1955) for refusing to surrender her seat on a municipal bus to a white passenger.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/rosa-parks-fingerprint.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_3",
+      "lessonTitle": "KT 1.3: How did the Montgomery Bus Boycott happen, and why did it succeed?",
+      "letter": "B",
+      "title": "Source B: Mimeographed Boycott Leaflet Authored by Jo Ann Robinson and the Women's Political Council (2 December 1955)",
+      "caption": "Police arrest booking photograph of Jo Ann Robinson (1912–1992), President of the Women's Political Council (WPC), following the mass boycott indictments in Montgomery, Alabama (February 1956). Robinson spent the night of 1 December 1955 mimeographing 35,000 boycott leaflets following Rosa Parks' arrest.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/jo_ann_robinson_booking_photo_1956.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_3",
+      "lessonTitle": "KT 1.3: How did the Montgomery Bus Boycott happen, and why did it succeed?",
+      "letter": "E",
+      "title": "Source E: From the Federal District Court Ruling in Browder v. Gayle Outlawing Bus Segregation (5 June 1956)",
+      "caption": "Rosa Parks seated near the front of a Montgomery city bus on 21 December 1956, the morning the Supreme Court mandate in Browder v. Gayle took effect, ending 381 days of boycott.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_4",
+      "lessonTitle": "KT 1.4: Why did white people in the South resist integration, and how did they do it?",
+      "letter": "A",
+      "title": "Source A: Archival Photograph of Segregationist Protesters Rallying at the Arkansas State Capitol in Little Rock (1959)",
+      "caption": "Segregationist demonstrators holding American flags and placards declaring 'Race Mixing is Communism' and 'Stop the Race Mixing March of the Antichrist' on the steps of the Arkansas State Capitol in Little Rock (1959).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/little-rock-protest-1957.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_4",
+      "lessonTitle": "KT 1.4: Why did white people in the South resist integration, and how did they do it?",
+      "letter": "B",
+      "title": "Source B: Front-Page Report from the Chicago Defender on the Lynching of Emmett Till (10 September 1955)",
+      "caption": "Segregationist demonstrators holding American flags and placards declaring 'Race Mixing is Communism' and 'Stop the Race Mixing March of the Antichrist' on the steps of the Arkansas State Capitol in Little Rock (1959).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_4",
+      "lessonTitle": "KT 1.4: Why did white people in the South resist integration, and how did they do it?",
+      "letter": "D",
+      "title": "Source D: Excerpt from the Civil Rights Act of 1957 Passed by the United States Congress (9 September 1957)",
+      "caption": "President Dwight D. Eisenhower addressing the American public from the Oval Office. On 9 September 1957, Eisenhower signed the Civil Rights Act of 1957, the first federal civil rights legislation since Reconstruction.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_4",
+      "lessonTitle": "KT 1.4: Why did white people in the South resist integration, and how did they do it?",
+      "letter": "E",
+      "title": "Source E: Map Documenting African American Voter Registration Percentages by County Across the Deep South (1958)",
+      "caption": "Research map published by the Southern Regional Council (1958) documenting county-by-county African American voter registration percentages across the Deep South, highlighting widespread disenfranchisement.",
+      "contentSnippet": "",
+      "image": "/images/usa_civil_rights_deep_south_map.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT 2.1: How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?",
+      "letter": "A",
+      "title": "Source A: Students Enduring Food, Drink, and Physical Abuse During a Non-Violent Lunch Counter Sit-In (1960)",
+      "caption": "Non-violent civil rights activists enduring physical assaults, food dousing, and verbal abuse while staging a sit-in at a segregated department store lunch counter in 1960.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/greensboro-sit-in-counter.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT 2.1: How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?",
+      "letter": "C",
+      "title": "Source C: Firebombed and Gutted Greyhound Bus Carrying Interracial Freedom Riders Outside Anniston, Alabama (14 May 1961)",
+      "caption": "The charred, smoking wreckage of a Greyhound bus carrying interracial Freedom Riders after being firebombed by a Ku Klux Klan mob outside Anniston, Alabama (14 May 1961).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/freedom-riders-bus-wreckage.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT 2.1: How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?",
+      "letter": "E",
+      "title": "Source E: Interstate Commerce Commission (ICC) Order Docket No. MC-C-3358 Outlawing Terminal Segregation (22 September 1961)",
+      "caption": "Facsimile of the official Interstate Commerce Commission Order Docket No. MC-C-3358 (22 September 1961), issued at the petition of Attorney General Robert F. Kennedy following the Freedom Rides.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/icc_order_mc_c_3358_1961.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT 2.2: How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?",
+      "letter": "A",
+      "title": "Source A: From Dr Martin Luther King Jr.'s 'Letter from Birmingham Jail' Written to Moderate White Clergymen (16 April 1963)",
+      "caption": "Police attack dogs deployed by Public Safety Commissioner Eugene 'Bull' Connor against civil rights demonstrators in Birmingham, Alabama, May 1963.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT 2.2: How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?",
+      "letter": "B",
+      "title": "Source B: Dr Martin Luther King Jr. Delivering His 'I Have a Dream' Address at the Lincoln Memorial (28 August 1963)",
+      "caption": "Dr. Martin Luther King Jr. addressing an estimated 250,000 civil rights demonstrators gathered at the Lincoln Memorial during the March on Washington for Jobs and Freedom, 28 August 1963.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/mlk-dream-speech-1963.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT 2.2: How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?",
+      "letter": "C",
+      "title": "Source C: Archival Photograph of President Lyndon B. Johnson Signing the Civil Rights Act of 1964 in the East Room of the White House (2 July 1964)",
+      "caption": "President Lyndon B. Johnson signs the historic Civil Rights Act of 1964 in the East Room of the White House, handing a ceremonial pen to Dr. Martin Luther King Jr. standing behind him (White House Photo Office, 2 July 1964).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT 2.2: How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?",
+      "letter": "D",
+      "title": "Source D: Alabama State Troopers Attacking Peaceful Marchers with Tear Gas and Nightsticks on the Edmund Pettus Bridge (7 March 1965)",
+      "caption": "Alabama state troopers using tear gas, bullwhips, and nightsticks to violently disperse peaceful voting rights marchers on the Edmund Pettus Bridge in Selma ('Bloody Sunday', 7 March 1965).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/selma-troopers-bridge.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT 2.2: How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?",
+      "letter": "E",
+      "title": "Source E: Archival Photograph of President Johnson Signing the Voting Rights Act of 1965 in the President's Room of the Capitol (6 August 1965)",
+      "caption": "President Lyndon B. Johnson signs the Voting Rights Act of 1965 in the President's Room of the Capitol in Washington D.C., with Rosa Parks, Martin Luther King Jr., and congressional leaders looking on (6 August 1965).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/lbj-signing-voting-rights-1965.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT 2.3: What was the Black Power movement, and how did it differ from non-violent protests?",
+      "letter": "A",
+      "title": "Source A: Front Page of the Nation of Islam Newspaper 'Muhammad Speaks' Featuring Malcolm X (March 1963)",
+      "caption": "Front page of 'Muhammad Speaks' (March 1963), the official newspaper of the Nation of Islam, featuring Malcolm X demanding complete racial separation and self-defense for Black Americans.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/malcolm-x-newspaper.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT 2.3: What was the Black Power movement, and how did it differ from non-violent protests?",
+      "letter": "B",
+      "title": "Source B: From Malcolm X's Landmark Address 'The Ballot or the Bullet' Delivered in Cleveland, Ohio (3 April 1964)",
+      "caption": "Malcolm X speaking at a press conference in 1964, articulating the philosophy of Black nationalism, self-defense, and political accountability.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/malcolm-x-speaking.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT 2.3: What was the Black Power movement, and how did it differ from non-violent protests?",
+      "letter": "C",
+      "title": "Source C: SNCC Chairman Stokely Carmichael Speaking in Mississippi During the March Against Fear (June 1966)",
+      "caption": "SNCC Chairman Stokely Carmichael addressing a mass civil rights rally in Greenwood, Mississippi during the June 1966 March Against Fear, where he first electrified the crowd with the cry 'Black Power!'.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/stokely_carmichael_mississippi_1966.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT 2.3: What was the Black Power movement, and how did it differ from non-violent protests?",
+      "letter": "D",
+      "title": "Source D: Excerpt from the Black Panther Party for Self-Defense Ten-Point Platform and Program (15 October 1966)",
+      "caption": "Black Panther Party members drilling and standing in uniform with black leather jackets and berets in Oakland, California.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/black-panthers-marching.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT 2.3: What was the Black Power movement, and how did it differ from non-violent protests?",
+      "letter": "E",
+      "title": "Source E: Tommie Smith and John Carlos Giving the Black Power Salute on the Olympic Medal Podium in Mexico City (16 October 1968)",
+      "caption": "Olympic medalists Tommie Smith and John Carlos raising black-gloved fists in a Black Power salute on the medal podium at the 1968 Mexico City Olympic Games (16 October 1968).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/olympics-black-power-1968.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT 2.4: Why did riots break out in American cities between 1965 and 1968?",
+      "letter": "A",
+      "title": "Source A: Statement of Watts Resident Tommy Jacquette on the Causes of the Los Angeles Uprising (August 1965)",
+      "caption": "Aerial view of Avalon Boulevard during the Watts Rebellion in Los Angeles, August 1965, with dense black smoke rising from burning commercial blocks.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/watts_riots_avalon_blvd_1965.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT 2.4: Why did riots break out in American cities between 1965 and 1968?",
+      "letter": "B",
+      "title": "Source B: From the Summary of the Report of the National Advisory Commission on Civil Disorders (The Kerner Commission) (29 February 1968)",
+      "caption": "Remains of burned-out residential structures in Detroit following the July 1967 rebellion, where 43 people died and paratroopers of the 82nd Airborne were deployed.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT 2.4: Why did riots break out in American cities between 1965 and 1968?",
+      "letter": "C",
+      "title": "Source C: Senator Robert F. Kennedy Announcing the Assassination of Martin Luther King Jr. to a Crowd in Indianapolis (4 April 1968)",
+      "caption": "Soldiers of the 3rd Infantry Regiment and National Guardsmen patrol 7th Street NW in Washington D.C. as firefighters hose down buildings destroyed in the April 1968 uprisings following the assassination of Martin Luther King Jr.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/mourners-mlk-assassination.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT 2.4: Why did riots break out in American cities between 1965 and 1968?",
+      "letter": "D",
+      "title": "Source D: Excerpt from the Civil Rights Act of 1968 (The Fair Housing Act) Signed by President Johnson (11 April 1968)",
+      "caption": "President Lyndon B. Johnson signing federal civil rights legislation in the East Room of the White House. On 11 April 1968, amid national grief following MLK's assassination, Johnson signed the Civil Rights Act of 1968.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT 2.4: Why did riots break out in American cities between 1965 and 1968?",
+      "letter": "E",
+      "title": "Source E: 'Resurrection City' Shanty Town Established by the Poor People's Campaign on the National Mall in Washington D.C. (May 1968)",
+      "caption": "Aerial view of 'Resurrection City', the encampment of wooden shanties built on the National Mall in Washington D.C. by the Poor People's Campaign in May 1968 following Dr. Martin Luther King Jr.'s assassination.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/poor-peoples-campaign-1968.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_1",
+      "lessonTitle": "KT 3.1: Why did the US support the unpopular government of Ngo Dinh Diem in South Vietnam?",
+      "letter": "A",
+      "title": "Source A: President Dwight D. Eisenhower Press Conference Formulating the 'Domino Theory' in Southeast Asia (7 April 1954)",
+      "caption": "President Dwight D. Eisenhower addressing news reporters during an executive press conference.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_1",
+      "lessonTitle": "KT 3.1: Why did the US support the unpopular government of Ngo Dinh Diem in South Vietnam?",
+      "letter": "B",
+      "title": "Source B: Map of the Demarcation Line along the 17th Parallel and Infiltration Corridors into South Vietnam (1962)",
+      "caption": "Military Assistance Command Vietnam (MACV) tactical map (1962) detailing the 17th Parallel Demilitarized Zone (DMZ) and covert communist infiltration routes through Laos and Cambodia.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/vietnam_theater_ho_chi_minh_trail_map.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_1",
+      "lessonTitle": "KT 3.1: Why did the US support the unpopular government of Ngo Dinh Diem in South Vietnam?",
+      "letter": "C",
+      "title": "Source C: Self-Immolation of Buddhist Monk Thich Quang Duc in Protest Against the Diem Regime in Saigon (11 June 1963)",
+      "caption": "Pulitzer Prize-winning photograph by Malcolm Browne showing Buddhist monk Thich Quang Duc performing ritual self-immolation in central Saigon (11 June 1963) to protest President Ngo Dinh Diem's regime.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/thich_quang_duc_self_immolation_1963.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_1",
+      "lessonTitle": "KT 3.1: Why did the US support the unpopular government of Ngo Dinh Diem in South Vietnam?",
+      "letter": "D",
+      "title": "Source D: State Department Telegram No. 243 (Cable 243) Sent to US Ambassador Henry Cabot Lodge Jr. in Saigon (24 August 1963)",
+      "caption": "Facsimile of declassified State Department Telegram No. 243 (Cable 243), sent on 24 August 1963 authorizing Ambassador Henry Cabot Lodge Jr. to signal support for a military coup against Ngo Dinh Diem.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/state_dept_cable_243_1963.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_1",
+      "lessonTitle": "KT 3.1: Why did the US support the unpopular government of Ngo Dinh Diem in South Vietnam?",
+      "letter": "E",
+      "title": "Source E: CIA Special National Intelligence Estimate: 'The Prospects for South Vietnam' (22 October 1963)",
+      "caption": "Facsimile of declassified CIA Special National Intelligence Estimate (SNIE 53-2-63), concluding that the Diem regime had lost all authority and that a military coup was imminent.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/cia_snie_53_63_south_vietnam.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_2",
+      "lessonTitle": "KT 3.2: Why did the US send combat troops to Vietnam after the Gulf of Tonkin incident?",
+      "letter": "A",
+      "title": "Source A: Declassified Flash Precedence Cable from Captain John Herrick of the USS Maddox (4 August 1964)",
+      "caption": "Declassified US Navy operational track chart showing the reported naval maneuvers and torpedo contacts of the USS Maddox (DD-731) in the Gulf of Tonkin (4 August 1964).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/uss-maddox.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_2",
+      "lessonTitle": "KT 3.2: Why did the US send combat troops to Vietnam after the Gulf of Tonkin incident?",
+      "letter": "C",
+      "title": "Source C: Joint Resolution of Congress: The Gulf of Tonkin Resolution (Public Law 88-408) (7 August 1964)",
+      "caption": "Facsimile of the Gulf of Tonkin Resolution (Public Law 88-408), passed overwhelmingly by Congress on 7 August 1964 granting President Johnson authority to wage undeclared war in Vietnam.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/gulf_of_tonkin_resolution_statute_1964.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_2",
+      "lessonTitle": "KT 3.2: Why did the US send combat troops to Vietnam after the Gulf of Tonkin incident?",
+      "letter": "D",
+      "title": "Source D: United States Air Force B-52 Stratofortress Dropping Ordnance During Operation Rolling Thunder (c. 1966)",
+      "caption": "A United States Air Force Boeing B-52 Stratofortress unleashing a heavy bomb payload during Operation Rolling Thunder over North Vietnam (c. 1966).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/b52_rolling_thunder_vietnam.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_2",
+      "lessonTitle": "KT 3.2: Why did the US send combat troops to Vietnam after the Gulf of Tonkin incident?",
+      "letter": "E",
+      "title": "Source E: United States Marines of the 9th Marine Expeditionary Brigade Wading Ashore at Red Beach, Da Nang (8 March 1965)",
+      "caption": "Combat troops of the 9th Marine Expeditionary Brigade wading ashore at Red Beach, Da Nang (8 March 1965), marking the first deployment of American ground combat units in the Vietnam War.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/marines-landing-danang.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "KT 3.3: Why did US military tactics (like bombing and search & destroy) fail to defeat the Vietcong?",
+      "letter": "A",
+      "title": "Source A: Cutaway Technical Diagram of the Multi-Level Vietcong Underground Tunnel System at Cu Chi (c. 1968)",
+      "caption": "Cutaway engineering schematic detailing the complex, multi-level underground tunnel complex constructed by the Vietcong at Cu Chi, including sleeping quarters, field hospitals, and booby-trapped trapdoors.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/cu-chi-tunnel-rats-1967.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "KT 3.3: Why did US military tactics (like bombing and search & destroy) fail to defeat the Vietcong?",
+      "letter": "C",
+      "title": "Source C: Vietcong Porters Pushing Bicycles Heavily Laden with Weapons and Artillery Shells along the Ho Chi Minh Trail (c. 1967)",
+      "caption": "Communist porters pushing reinforced bicycles laden with weapons, ammunition, and rations along the jungle paths of the Ho Chi Minh Trail (c. 1967).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/ho-chi-minh-trail-bicycles.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "KT 3.3: Why did US military tactics (like bombing and search & destroy) fail to defeat the Vietcong?",
+      "letter": "D",
+      "title": "Source D: Bell UH-1 Iroquois 'Huey' Helicopter Landing Combat Troops of the 1st Cavalry Division in a Jungle Clearing (1966)",
+      "caption": "Bell UH-1 Iroquois ('Huey') helicopters deploying soldiers of the 1st Cavalry Division (Airmobile) into a jungle landing zone during a combat search-and-destroy mission (1966).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "KT 3.3: Why did US military tactics (like bombing and search & destroy) fail to defeat the Vietcong?",
+      "letter": "E",
+      "title": "Source E: Testimony of Platoon Leader Lieutenant Philip Caputo on the Attrition Strategy and 'Search and Destroy' Missions (1966)",
+      "caption": "US soldier on point patrol through murky swamp water in the Mekong Delta. Search and destroy operations pitted American infantry against unseen snipers and booby traps.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "KT 3.4: What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?",
+      "letter": "A",
+      "title": "Source A: Editorial Declaration by CBS Evening News Anchor Walter Cronkite Following the Tet Offensive (27 February 1968)",
+      "caption": "CBS Evening News anchor Walter Cronkite reporting from the battlefield at Hue during the 1968 Tet Offensive.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "KT 3.4: What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?",
+      "letter": "B",
+      "title": "Source B: President Richard Nixon Visiting Soldiers of the 1st Infantry Division at Di An, South Vietnam (30 July 1969)",
+      "caption": "President Richard Nixon meeting informally with frontline combat soldiers of the 1st Infantry Division at Di An base camp, South Vietnam (30 July 1969), shortly after unveiling his 'Vietnamization' doctrine.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/nixon-visiting-troops.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "KT 3.4: What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?",
+      "letter": "C",
+      "title": "Source C: From President Nixon’s Address to the Nation Announcing the Cambodian Incursion (30 April 1970)",
+      "caption": "President Richard Nixon delivering a televised address from the Oval Office with a map of Cambodia, 30 April 1970.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/nixon-television-address.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "KT 3.4: What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?",
+      "letter": "D",
+      "title": "Source D: South Vietnamese ARVN Troops Clinging to Helicopter Skids in Chaotic Retreat from Laos During Operation Lam Son 719 (March 1971)",
+      "caption": "South Vietnamese ARVN soldiers desperately clinging to the landing skids of an overloaded US evacuation helicopter during the disastrous retreat from Laos during Operation Lam Son 719 (March 1971).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/arvn-troops-combat.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "KT 3.4: What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?",
+      "letter": "E",
+      "title": "Source E: Declassified Oval Office Tape Recording: President Nixon and National Security Advisor Henry Kissinger (3 August 1972)",
+      "caption": "President Richard Nixon seated on the Oval Office desk conferring in private with National Security Advisor Dr. Henry Kissinger during strategic deliberations over Vietnam exit terms (White House Photo Office, 1972).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_1",
+      "lessonTitle": "KT 4.1: Why did so many Americans oppose the Vietnam War (like at My Lai and Kent State)?",
+      "letter": "A",
+      "title": "Source A: Helicopter Pilot Warrant Officer Hugh Thompson Jr., Who Intervened to Halt the My Lai Killings (March 1968)",
+      "caption": "Army Warrant Officer Hugh Thompson Jr., the heroic observation helicopter pilot who landed his aircraft between American soldiers and surviving Vietnamese civilians to halt the My Lai Massacre (16 March 1968).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/hugh_thompson_jr_1968.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_1",
+      "lessonTitle": "KT 4.1: Why did so many Americans oppose the Vietnam War (like at My Lai and Kent State)?",
+      "letter": "B",
+      "title": "Source B: US Army Combat Photographer Ronald L. Haeberle's Photograph of Soldiers Burning Dwellings in My Lai (16 March 1968)",
+      "caption": "US Army combat photographer Ronald L. Haeberle's photograph documenting American infantrymen setting fire to thatched civilian dwellings in My Lai village (16 March 1968).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/my_lai_soldier_hut_fire_1968.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_1",
+      "lessonTitle": "KT 4.1: Why did so many Americans oppose the Vietnam War (like at My Lai and Kent State)?",
+      "letter": "C",
+      "title": "Source C: Drawing Birthdate Capsules from Glass Urn During the First US Selective Service Draft Lottery (1 December 1969)",
+      "caption": "Officials drawing plastic birthdate capsules from a large glass urn during the first Selective Service draft lottery broadcast live on national television (1 December 1969).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/vietnam-draft-lottery.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_1",
+      "lessonTitle": "KT 4.1: Why did so many Americans oppose the Vietnam War (like at My Lai and Kent State)?",
+      "letter": "D",
+      "title": "Source D: Ohio National Guardsmen Advancing with Fixed Bayonets Toward Unarmed Demonstrators at Kent State University (4 May 1970)",
+      "caption": "Armed Ohio National Guardsmen with fixed bayonets advancing toward unarmed student demonstrators on the campus of Kent State University moments before opening fire (4 May 1970).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/kent-state-protests-1970.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_1",
+      "lessonTitle": "KT 4.1: Why did so many Americans oppose the Vietnam War (like at My Lai and Kent State)?",
+      "letter": "E",
+      "title": "Source E: Anti-War Protest Poster Produced by the Student Mobilization Committee to End the War in Vietnam (1970)",
+      "caption": "Silkscreen anti-war poster designed by the Student Mobilization Committee to End the War in Vietnam (1970), demanding the immediate withdrawal of all American troops.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_2",
+      "lessonTitle": "KT 4.2: Why did some Americans support the Vietnam War and the 'Silent Majority'?",
+      "letter": "A",
+      "title": "Source A: President Richard Nixon's Televised 'Silent Majority' Address to the Nation (3 November 1969)",
+      "caption": "President Richard Nixon in the Oval Office surrounded by thousands of letters and telegrams sent by citizens supporting his 3 November 1969 'Silent Majority' address.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/nixon-television-address.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_2",
+      "lessonTitle": "KT 4.2: Why did some Americans support the Vietnam War and the 'Silent Majority'?",
+      "letter": "B",
+      "title": "Source B: Construction Workers in Hard Hats Clashing with Anti-War Student Protesters at Federal Hall in New York City (8 May 1970)",
+      "caption": "Hundreds of pro-war construction workers wearing hard hats clashing violently with anti-war student demonstrators near Wall Street during the 'Hard Hat Riot' in New York City (8 May 1970).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/hard-hat-riot-1970.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_2",
+      "lessonTitle": "KT 4.2: Why did some Americans support the Vietnam War and the 'Silent Majority'?",
+      "letter": "C",
+      "title": "Source C: Archival Photograph of Construction Union Hard Hats on the White House Cabinet Table Following the Hard Hat Riots (26 May 1970)",
+      "caption": "A white construction worker's hard hat adorned with an American flag displayed on the White House Cabinet table during President Nixon's meeting with union leaders (26 May 1970).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/hard_hat_riot_cabinet_table_1970.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_2",
+      "lessonTitle": "KT 4.2: Why did some Americans support the Vietnam War and the 'Silent Majority'?",
+      "letter": "D",
+      "title": "Source D: Gallup Opinion Poll Findings on Public Attitudes Toward the Anti-War Movement and the Nixon Administration (May 1970)",
+      "caption": "Thousands of construction workers, longshoremen, and blue-collar citizens rallying in lower Manhattan waving American flags in support of President Nixon and American troops (May 1970).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/pro-war-rally-nyc.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_2",
+      "lessonTitle": "KT 4.2: Why did some Americans support the Vietnam War and the 'Silent Majority'?",
+      "letter": "E",
+      "title": "Source E: Members of Vietnam Veterans Against the War (VVAW) Throwing Combat Medals and Purple Hearts Over the US Capitol Fence (23 April 1971)",
+      "caption": "Vietnam Veterans Against the War (VVAW) casting their combat decorations, Purple Hearts, and Silver Stars over the security barricades at the US Capitol in protest against the war (23 April 1971).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/vvaw-veterans-protest.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_3",
+      "lessonTitle": "KT 4.3: How did the US exit Vietnam, and why did South Vietnam fall so quickly in 1975?",
+      "letter": "A",
+      "title": "Source A: Formal Signing of the Paris Peace Accords at the Centre International de Conférences (27 January 1973)",
+      "caption": "Delegates from the United States, North Vietnam, South Vietnam, and the Vietcong officially signing the Paris Peace Accords at the Centre International de Conférences (27 January 1973).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/paris-peace-accords-signing.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_3",
+      "lessonTitle": "KT 4.3: How did the US exit Vietnam, and why did South Vietnam fall so quickly in 1975?",
+      "letter": "C",
+      "title": "Source C: Released American Prisoners of War Celebrating Aboard a C-141 Starlifter During Operation Homecoming (12 February 1973)",
+      "caption": "Jubilant American prisoners of war cheering inside a USAF C-141 Starlifter transport aircraft as it lifts off from Gia Lam Airport in Hanoi during Operation Homecoming (12 February 1973).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/operation-homecoming-pows-1973.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_3",
+      "lessonTitle": "KT 4.3: How did the US exit Vietnam, and why did South Vietnam fall so quickly in 1975?",
+      "letter": "D",
+      "title": "Source D: From General Van Tien Dung's Official Account of the Final Communist 'Ho Chi Minh Campaign' on Saigon (April 1975)",
+      "caption": "Civilians scramble up a rooftop ladder to board an Air America helicopter in Saigon on 29 April 1975 as communist forces led by General Van Tien Dung surround the capital.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_3",
+      "lessonTitle": "KT 4.3: How did the US exit Vietnam, and why did South Vietnam fall so quickly in 1975?",
+      "letter": "E",
+      "title": "Source E: President Gerald R. Ford's Address at Tulane University Declaring the Vietnam War 'Finished' (23 April 1975)",
+      "caption": "A US Marine guards the perimeter at Tan Son Nhut Air Base during Operation Frequent Wind, the final evacuation of Saigon in late April 1975.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/ch53_frequent_wind_saigon_1975.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_4",
+      "lessonTitle": "KT 4.4: What were the main reasons why the US failed to win the war in Vietnam?",
+      "letter": "A",
+      "title": "Source A: Exhausted and Mud-Covered US Conscript Resting in a Canal After a Firefight in the Mekong Delta (1968)",
+      "caption": "A young, exhausted US conscript resting in a muddy drainage canal following an intense firefight with Vietcong insurgents in the Mekong Delta (1968).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_4",
+      "lessonTitle": "KT 4.4: What were the main reasons why the US failed to win the war in Vietnam?",
+      "letter": "B",
+      "title": "Source B: Communist Transport Column of Camouflaged Carts and Bicycles Traversing the Mountainous Spine of the Truong Son (Ho Chi Minh Trail) (c. 1968)",
+      "caption": "Archival photograph of a camouflaged North Vietnamese transport column using carts and bicycles to haul artillery shells across the rugged Truong Son mountains along the Ho Chi Minh Trail (c. 1968).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/ho-chi-minh-trail-bicycles.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_4",
+      "lessonTitle": "KT 4.4: What were the main reasons why the US failed to win the war in Vietnam?",
+      "letter": "C",
+      "title": "Source C: Excerpt from the War Powers Resolution Passed by Congress Over President Nixon's Veto (7 November 1973)",
+      "caption": "Facsimile of the opening section of the War Powers Resolution (Public Law 93-148), passed by Congress on 7 November 1973 to restrict presidential war-making power.",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4_4",
+      "lessonTitle": "KT 4.4: What were the main reasons why the US failed to win the war in Vietnam?",
+      "letter": "E",
+      "title": "Source E: From an Analysis by Military Historian George C. Herring in 'America's Longest War' (1979)",
+      "caption": "US soldiers wading through swamp under thick canopy in the Mekong Delta (US Army Combat Art Program).",
+      "contentSnippet": "",
+      "image": "/units/usa/assets/sources/us-troops-bogged-down.jpg"
+    }
+  ],
+  "cme_new": [
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1",
+      "lessonTitle": "KT 1.0: Broken Promises & Imperial Borders: Why Was Conflict in the Middle East Inevitable?",
+      "letter": "A",
+      "title": "Source A: The McMahon-Hussein Correspondence Territorial Boundaries Map (1915–1916)",
+      "caption": "Cartographic map delineating the proposed borders of an independent Arab state pledged by Sir Henry McMahon to Sharif Hussein of Mecca (1915–1916).",
+      "contentSnippet": "Historical cartographic boundary map analyzing the territorial pledges of the McMahon-Hussein Corres",
+      "image": "/units/cme_new/assets/mcmahon_hussein_map_1915.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1",
+      "lessonTitle": "KT 1.0: Broken Promises & Imperial Borders: Why Was Conflict in the Middle East Inevitable?",
+      "letter": "B",
+      "title": "Source B: The Sykes-Picot Agreement Partition Map (May 1916)",
+      "caption": "Signed by Sir Mark Sykes and François Georges-Picot, partitioning Arab provinces of the Ottoman Empire into direct and indirect zones of British and French imperial influence.",
+      "contentSnippet": "Cartographic map detailing the secret Anglo-French partition of the Levant.",
+      "image": "/images/cme_sykes_picot_1916_map.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1",
+      "lessonTitle": "KT 1.0: Broken Promises & Imperial Borders: Why Was Conflict in the Middle East Inevitable?",
+      "letter": "C",
+      "title": "Source C: The Balfour Declaration Official Letter (November 1917)",
+      "caption": "Official letter from Foreign Secretary Arthur Balfour to Lord Walter Rothschild conveying the British War Cabinet's sympathy with Jewish Zionist aspirations.",
+      "contentSnippet": "Documentary photograph of the signed Balfour Declaration typescript.",
+      "image": "/images/cme_balfour_declaration_1917.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1",
+      "lessonTitle": "KT 1.0: Broken Promises & Imperial Borders: Why Was Conflict in the Middle East Inevitable?",
+      "letter": "D",
+      "title": "Source D: Archival Panorama of British Mandate Jerusalem (c. 1918–1920)",
+      "caption": "Panoramic landscape photograph of British Mandate Jerusalem looking toward the Old City and the Dome of the Rock from the Mount of Olives (c. 1920).",
+      "contentSnippet": "Archival panoramic landscape photograph of British Mandate Jerusalem from the Mount of Olives (c. 19",
+      "image": "/images/jerusalem_mandate_panorama_1920.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1",
+      "lessonTitle": "KT 1.0: Broken Promises & Imperial Borders: Why Was Conflict in the Middle East Inevitable?",
+      "letter": "E",
+      "title": "Source E: Theodor Herzl, Founder of the Modern Zionist Movement",
+      "caption": "Austro-Hungarian journalist Theodor Herzl, author of 'Der Judenstaat' (1896) and convenor of the First Zionist Congress in Basel, 1897.",
+      "contentSnippet": "Archival portrait photograph of Zionist visionary Theodor Herzl.",
+      "image": "/units/cme_new/assets/theodor_herzl.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2",
+      "lessonTitle": "KT 1.1: The End of the British Mandate and the Creation of Israel, 1945–1949",
+      "letter": "A",
+      "title": "Source A: The SS Exodus 1947 Arriving in Haifa Harbour",
+      "caption": "The battered immigrant ship SS Exodus 1947, carrying over 4,500 Holocaust survivors, escorted by the Royal Navy into Haifa before passengers were forcibly returned to Germany.",
+      "contentSnippet": "Documentary photograph of the Exodus 1947 crowded with Jewish refugees.",
+      "image": "/units/cme_new/assets/exodus_ship.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2",
+      "lessonTitle": "KT 1.1: The End of the British Mandate and the Creation of Israel, 1945–1949",
+      "letter": "B",
+      "title": "Source B: David Ben-Gurion Declaring Israeli Independence (14 May 1948)",
+      "caption": "David Ben-Gurion reading the Declaration of the Establishment of the State of Israel beneath a portrait of Theodor Herzl at the Tel Aviv Museum on 14 May 1948.",
+      "contentSnippet": "Iconic photograph by Rudi Weissenstein of the birth of the State of Israel.",
+      "image": "/images/cme_bengurion_declaration_1948.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2",
+      "lessonTitle": "KT 1.1: The End of the British Mandate and the Creation of Israel, 1945–1949",
+      "letter": "C",
+      "title": "Source C: The King David Hotel Bombing Ruins (22 July 1946)",
+      "caption": "The collapsed southwestern wing of the King David Hotel in Jerusalem following the Irgun bomb attack on 22 July 1946, killing 91 British, Arab, and Jewish civil servants and soldiers.",
+      "contentSnippet": "Archival photograph of the devastated King David Hotel wing.",
+      "image": "/units/cme_new/assets/king_david_ruins.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2",
+      "lessonTitle": "KT 1.1: The End of the British Mandate and the Creation of Israel, 1945–1949",
+      "letter": "D",
+      "title": "Source D: The Sergeants Affair Aftermath in Netanya (July 1947)",
+      "caption": "British soldiers examining the booby-trapped eucalyptus grove near Netanya where the Irgun hanged British sergeants Mervyn Paice and Clifford Martin in retaliation for executions of Jewish militants.",
+      "contentSnippet": "Archival military photograph of the Sergeants Affair crime scene.",
+      "image": "/images/cme_sergeants_affair_1947.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2",
+      "lessonTitle": "KT 1.1: The End of the British Mandate and the Creation of Israel, 1945–1949",
+      "letter": "E",
+      "title": "Source E: United Nations Partition Plan for Palestine (Resolution 181)",
+      "caption": "Official cartographic projection of the UN General Assembly Resolution 181 partition proposal: 56% allocated for a Jewish state, 43% for an Arab state, and an international regime (Corpus Separatum) for Jerusalem.",
+      "contentSnippet": "United Nations official map of Resolution 181 passed on 29 November 1947.",
+      "image": "/units/cme_new/assets/palestine_1947_map.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3",
+      "lessonTitle": "KT 1.2: The Aftermath of the 1948–49 War & The Palestinian Refugee Crisis",
+      "letter": "A",
+      "title": "Source A: UN Ad Hoc Committee Draft Partition Proposals (1947)",
+      "caption": "Cartographic comparison of the UNSCOP Majority Plan (partition with economic union) versus the Minority Plan (federal single state with autonomous cantons).",
+      "contentSnippet": "Official United Nations draft maps showing alternative constitutional models for Palestine.",
+      "image": "/units/cme_new/assets/cme_un_palestine_partition_versions_1947.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3",
+      "lessonTitle": "KT 1.2: The Aftermath of the 1948–49 War & The Palestinian Refugee Crisis",
+      "letter": "B",
+      "title": "Source B: Displaced Palestinian Families in Khan Yunis Camp (1948–1949)",
+      "caption": "UNRWA archival photograph of a displaced Palestinian mother and young child standing outside makeshift tent shelters in the Khan Yunis refugee camp in Gaza (1948–1949).",
+      "contentSnippet": "Documentary photograph of displaced Palestinian families in Khan Yunis refugee camp, Gaza (1948–1949",
+      "image": "/images/nakba_unrwa_khan_younis_1948.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3",
+      "lessonTitle": "KT 1.2: The Aftermath of the 1948–49 War & The Palestinian Refugee Crisis",
+      "letter": "C",
+      "title": "Source C: The 1949 Armistice Green Line Boundaries Map",
+      "caption": "Map depicting the 1949 Armistice Agreements (Green Line) following the war: Israel expanded to 78% of Mandate territory; Jordan annexed the West Bank; Egypt administered the Gaza Strip.",
+      "contentSnippet": "Cartographic map of the 1949 Rhodes Armistice ceasefire demarcation lines.",
+      "image": "/units/cme_new/assets/palestine_1949_map.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3",
+      "lessonTitle": "KT 1.2: The Aftermath of the 1948–49 War & The Palestinian Refugee Crisis",
+      "letter": "D",
+      "title": "Source D: Jewish Immigrants Arriving in Haifa Port (February 1949)",
+      "caption": "Thousands of Jewish immigrants arriving at Haifa Port aboard the Pan Yorkshire (February 1949) greeted by crowds beneath a Hebrew banner reading \"ברוכים הבאים\" (Welcome).",
+      "contentSnippet": "Archival photograph of Jewish immigrants arriving at the Port of Haifa (February 1949).",
+      "image": "/units/cme_new/assets/jewish_immigrants_haifa_1949.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3",
+      "lessonTitle": "KT 1.2: The Aftermath of the 1948–49 War & The Palestinian Refugee Crisis",
+      "letter": "E",
+      "title": "Source E: UNRWA Emergency Bread & Ration Distribution to Displaced Palestinian Refugees (c. 1949)",
+      "caption": "Archival photograph from the UNRWA Film & Photo Archive showing Palestinian refugee women and children in a temporary tent camp queuing to receive emergency flour and daily bread rations under UN General Assembly Resolution 302.",
+      "contentSnippet": "Archival photograph of Palestinian refugee women and children receiving emergency UNRWA rations in a",
+      "image": "/images/nakba_unrwa_women_bread_1948.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4",
+      "lessonTitle": "KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963",
+      "letter": "A",
+      "title": "Source A: Political Cartoon on Nasser Controlling the Canal (1956)",
+      "caption": "Fritz Behrendt political cartoon 'Der Mann am Hahnen' ('The Man at the Tap', 1956), depicting President Gamal Abdel Nasser turning off the Suez Canal oil valve to Western Europe.",
+      "contentSnippet": "British editorial political cartoon satirizing Nasser's canal nationalization.",
+      "image": "/images/cme_nasser_suez_cartoon_1956.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4",
+      "lessonTitle": "KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963",
+      "letter": "B",
+      "title": "Source B: British Psychological Warfare Propaganda Leaflet (November 1956)",
+      "caption": "British psychological warfare propaganda leaflet dropped over Egyptian cities during Operation Musketeer, depicting Nasser hiding behind a young civilian soldier (November 1956).",
+      "contentSnippet": "British psychological warfare propaganda leaflet dropped over Egyptian cities during the Suez Crisis",
+      "image": "/images/british_psyops_leaflet_suez_1956.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4",
+      "lessonTitle": "KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963",
+      "letter": "C",
+      "title": "Source C: Front Page of Al-Ahram Announcing Nationalization (27 July 1956)",
+      "caption": "Front page of Egyptian daily newspaper Al-Ahram declaring in banner headlines: 'We Have Nationalized the Suez Canal Company' following Nasser's speech in Alexandria.",
+      "contentSnippet": "Egyptian newspaper front page with celebratory headlines and Nasser's portrait.",
+      "image": "/images/cme_alahram_suez_1956.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4",
+      "lessonTitle": "KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963",
+      "letter": "D",
+      "title": "Source D: British RAF Reconnaissance Photograph over Port Said (5 November 1956)",
+      "caption": "British Royal Air Force aerial photograph capturing dense black smoke rising from burning oil storage tanks beside the Suez Canal entrance at Port Said following Anglo-French air strikes (IWM MH 23509).",
+      "contentSnippet": "Aerial reconnaissance photograph of Port Said harbour under air bombardment.",
+      "image": "/images/cme_port_said_from_air.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_4",
+      "lessonTitle": "KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963",
+      "letter": "E",
+      "title": "Source E: British Centurion Tanks in Port Said Streets (November 1956)",
+      "caption": "British Centurion tanks of the 6th Royal Tank Regiment advancing through the war-damaged commercial streets of Port Said during Operation Musketeer.",
+      "contentSnippet": "Military photograph of British heavy armour deployed during the Port Said landings.",
+      "image": "/images/cme_british_tanks_port_said_1956.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_6",
+      "lessonTitle": "KT 2.1 Enquiry: How Did Water, Border Raids, and Rhetoric Make a Second Arab-Israeli War Inevitable? (1964–1967)",
+      "letter": "A",
+      "title": "Source A: President Nasser During the Non-Aligned Summit (1962)",
+      "caption": "President Gamal Abdel Nasser photographed in Belgrade articulating his doctrine of Arab socialism, anti-imperialism, and leadership of the Non-Aligned Movement.",
+      "contentSnippet": "Archival portrait of President Nasser by Yugoslav photographer Stevan Kragujević.",
+      "image": "/units/cme_new/assets/cme_stevan_kragujevic__gamal_abdel_naser_u_beogradu__1962.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_6",
+      "lessonTitle": "KT 2.1 Enquiry: How Did Water, Border Raids, and Rhetoric Make a Second Arab-Israeli War Inevitable? (1964–1967)",
+      "letter": "B",
+      "title": "Source B: Causal Diagram of Syrian-Sponsored Fatah Infiltration & Israeli Reprisals (1965–1967)",
+      "caption": "Flowchart diagram illustrating the cycle of Syrian-backed Fatah guerrilla raids across the armistice border and the escalating Israeli military retaliation culminating in the Samu raid.",
+      "contentSnippet": "Causal flow diagram illustrating cross-border friction between Syria, Fatah, Jordan, and Israel.",
+      "image": "/units/cme_new/assets/syria_fatah.svg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_6",
+      "lessonTitle": "KT 2.1 Enquiry: How Did Water, Border Raids, and Rhetoric Make a Second Arab-Israeli War Inevitable? (1964–1967)",
+      "letter": "C",
+      "title": "Source C: Relief Map of the Golan Heights Artillery Positions (1967)",
+      "caption": "Topographical relief map illustrating Syrian artillery emplacements perched 1,000 feet above Israeli farming kibbutzim (Ein Gev, Tel Katzir) in the vulnerable Hula Valley below.",
+      "contentSnippet": "Topographical military map showing the strategic elevation of the Golan Heights.",
+      "image": "/images/cme_golan_heights_relief_map_1967.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_6",
+      "lessonTitle": "KT 2.1 Enquiry: How Did Water, Border Raids, and Rhetoric Make a Second Arab-Israeli War Inevitable? (1964–1967)",
+      "letter": "D",
+      "title": "Source D: Archival Photograph of the Disputed Banyas Spring Headwaters (1967)",
+      "caption": "Archival view of the Banyas freshwater springs in the Golan foothills, one of three major Jordan River tributaries targeted by Syria's headwaters diversion project.",
+      "contentSnippet": "Archival photograph of the freshwater tributaries feeding the upper Jordan River.",
+      "image": "/units/cme_new/assets/cme_banias_spring_headwaters_1967.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_6",
+      "lessonTitle": "KT 2.1 Enquiry: How Did Water, Border Raids, and Rhetoric Make a Second Arab-Israeli War Inevitable? (1964–1967)",
+      "letter": "E",
+      "title": "Source E: President Nasser Addressing Egyptian Troops at Bir Gifgafa (22 May 1967)",
+      "caption": "President Gamal Abdel Nasser addressing Egyptian armed forces and fighter pilots at Bir Gifgafa forward air base in Sinai on 22 May 1967, announcing the blockade of the Straits of Tiran.",
+      "contentSnippet": "Archival photograph of Nasser greeting ecstatic crowds during the UAR proclamation.",
+      "image": "/units/cme_new/assets/nasser_1958.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_7",
+      "lessonTitle": "KT 2.2 Enquiry: Why Was the Six-Day War Decided in Three Hours, and Did Nasser Intend to Fight? (May–June 1967)",
+      "letter": "A",
+      "title": "Source A: Israeli Command Entering Jerusalem Through Lions' Gate (7 June 1967)",
+      "caption": "David Rubinger's iconic photograph showing Defense Minister Moshe Dayan, Chief of Staff Yitzhak Rabin, and General Uzi Narkiss walking through Lions' Gate into the Old City of Jerusalem, 7 June 1967.",
+      "contentSnippet": "David Rubinger photograph of Defense Minister Moshe Dayan, Chief of Staff Yitzhak Rabin, and General",
+      "image": "/units/cme_new/assets/dayan_rabin_lions_gate_1967.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_7",
+      "lessonTitle": "KT 2.2 Enquiry: Why Was the Six-Day War Decided in Three Hours, and Did Nasser Intend to Fight? (May–June 1967)",
+      "letter": "B",
+      "title": "Source B: Cartographic Map of the Straits of Tiran & Sharm el-Sheikh Blockade (May 1967)",
+      "caption": "Strategic map highlighting the maritime choke point at the Straits of Tiran and Sharm el-Sheikh, where Egyptian forces blocked Israeli shipping to the port of Eilat on 22 May 1967.",
+      "contentSnippet": "Cartographic map of the Straits of Tiran maritime choke point.",
+      "image": "/units/cme_new/assets/cme_sinai_peninsula_map.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_7",
+      "lessonTitle": "KT 2.2 Enquiry: Why Was the Six-Day War Decided in Three Hours, and Did Nasser Intend to Fight? (May–June 1967)",
+      "letter": "C",
+      "title": "Source C: Chief Rabbi Goren Blowing the Shofar at the Wall (7 June 1967)",
+      "caption": "IDF Chief Rabbi Shlomo Goren blowing the shofar while holding a Torah scroll surrounded by paratroopers at the liberated Western Wall on 7 June 1967.",
+      "contentSnippet": "Archival photograph of IDF Chief Rabbi Shlomo Goren blowing the shofar at the Western Wall on 7 June",
+      "image": "/images/rabbi_goren_shofar_western_wall_1967.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_7",
+      "lessonTitle": "KT 2.2 Enquiry: Why Was the Six-Day War Decided in Three Hours, and Did Nasser Intend to Fight? (May–June 1967)",
+      "letter": "D",
+      "title": "Source D: Tactical Map of the Egyptian Sinai Collapse (7–8 June 1967)",
+      "caption": "Tactical military map showing the armored maneuvers of Tal, Yoffe, and Sharon through northern and central Sinai and the trapping of retreating Egyptian divisions at the Mitla and Giddi Passes, 7–8 June 1967.",
+      "contentSnippet": "Military map depicting the trapping of Egyptian armored divisions in Sinai passes.",
+      "image": "/images/cme_1967_sinai_june7_8_map.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_7",
+      "lessonTitle": "KT 2.2 Enquiry: Why Was the Six-Day War Decided in Three Hours, and Did Nasser Intend to Fight? (May–June 1967)",
+      "letter": "E",
+      "title": "Source E: Israeli Paratroopers at the Western Wall (7 June 1967)",
+      "caption": "David Rubinger's photograph of Israeli paratroopers (Zion Karasenti, Yitzhak Yifat, and Haim Oshri) standing in awe before the Western Wall in the captured Old City of Jerusalem, 7 June 1967.",
+      "contentSnippet": "Iconic photograph of paratroopers at the Western Wall.",
+      "image": "/images/cme_paratroopers_western_wall_1967.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_8",
+      "lessonTitle": "KT 2.3 Enquiry: \"Land for Peace\" or Permanent Stalemate: How Did the 1967 Conquered Territories Transform the Conflict?",
+      "letter": "A",
+      "title": "Source A: CIA Intelligence Map of Occupied Territories (1967)",
+      "caption": "Central Intelligence Agency secret situation map detailing Israeli military occupation zones, strategic passes, and Syrian ceasefire lines, July 1967.",
+      "contentSnippet": "CIA intelligence cartographic map of the Middle East post-June 1967.",
+      "image": "/images/cme_1967_occupied_territories_cia_map.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_8",
+      "lessonTitle": "KT 2.3 Enquiry: \"Land for Peace\" or Permanent Stalemate: How Did the 1967 Conquered Territories Transform the Conflict?",
+      "letter": "B",
+      "title": "Source B: Military Governorate Administration Map of the West Bank (1968)",
+      "caption": "Israeli military command map detailing the administrative sub-districts (Jenin, Nablus, Ramallah, Hebron) placed under direct IDF military decree following Order No. 1.",
+      "contentSnippet": "Cartographic map of the Israeli military government in Judea and Samaria.",
+      "image": "/units/cme_new/assets/palestine_1967_map.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_8",
+      "lessonTitle": "KT 2.3 Enquiry: \"Land for Peace\" or Permanent Stalemate: How Did the 1967 Conquered Territories Transform the Conflict?",
+      "letter": "C",
+      "title": "Source C: Official Scanned Record of UN Security Council Resolution 242 (22 November 1967)",
+      "caption": "Facsimile of the official United Nations Security Council Record for Resolution 242 (S/RES/242), showing the bilingual English and French texts that established the fundamental 'Land for Peace' formula.",
+      "contentSnippet": "Official United Nations Security Council record document for Resolution 242.",
+      "image": "/images/un_resolution_242_document_1967.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_8",
+      "lessonTitle": "KT 2.3 Enquiry: \"Land for Peace\" or Permanent Stalemate: How Did the 1967 Conquered Territories Transform the Conflict?",
+      "letter": "D",
+      "title": "Source D: The Bar Lev Line Fortress Fortifications on the Suez Canal (1969–1973)",
+      "caption": "Tactical map and engineering plan of the Bar-Lev Line fortifications along the eastern bank of the Suez Canal, showing fortified Maoz strongpoints and observation bunkers.",
+      "contentSnippet": "Tactical engineering plan of the Bar Lev Line fortress fortifications along the Suez Canal.",
+      "image": "/units/cme_new/assets/bar_lev_line_fortifications_map.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_8",
+      "lessonTitle": "KT 2.3 Enquiry: \"Land for Peace\" or Permanent Stalemate: How Did the 1967 Conquered Territories Transform the Conflict?",
+      "letter": "E",
+      "title": "Source E: The Allon Plan Settlement Strategy Blueprint (1967–1968)",
+      "caption": "Strategic cartographic map of the Allon Plan proposed by Labor Minister Yigal Allon: annexing a 10–15km security strip along the Jordan River while returning densely populated Arab highland enclaves to Jordanian civil control.",
+      "contentSnippet": "Policy diagram of Israel's early settlement and border defense doctrine.",
+      "image": "/units/cme_new/assets/allon_plan_1967_map.svg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_9",
+      "lessonTitle": "KT 2.4: The Rise of Palestinian Resistance: The PLO, Black September & Munich (1968–1972)",
+      "letter": "A",
+      "title": "Source A: Yasser Arafat in Military Battle Fatigues (1969)",
+      "caption": "Yasser Arafat in military battle fatigues and checkered kaffiyeh during a diplomatic and military summit following the 1968 Battle of Karameh (1969).",
+      "contentSnippet": "Archival photograph of PLO Chairman Yasser Arafat in military battle fatigues and kaffiyeh (1969).",
+      "image": "/units/cme_new/assets/arafat_fatigues_1969.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_9",
+      "lessonTitle": "KT 2.4: The Rise of Palestinian Resistance: The PLO, Black September & Munich (1968–1972)",
+      "letter": "B",
+      "title": "Source B: PFLP Guerrillas Blowing Up Airplanes at Dawson's Field (1970)",
+      "caption": "Three hijacked Western airliners (BOAC, Swissair, TWA) detonated by Marxist PFLP guerrillas on a desert airstrip in Jordan on 12 September 1970 after releasing 300 passengers.",
+      "contentSnippet": "Documentary photograph of hijacked jetliners exploding in the Jordanian desert.",
+      "image": "/images/cme_dawsons_field_1970.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_9",
+      "lessonTitle": "KT 2.4: The Rise of Palestinian Resistance: The PLO, Black September & Munich (1968–1972)",
+      "letter": "C",
+      "title": "Source C: Military Cartographic Operations Map of Black September, Jordan (September 1970)",
+      "caption": "Military situation map of Jordan during the September 1970 civil war, charting the clashes between the Jordanian Armed Forces and PLO fedayeen brigades across Amman, Irbid, and Jerash, alongside the repelled Syrian armored column invasion.",
+      "contentSnippet": "Jordanian military operations situation map of Black September 1970.",
+      "image": "/images/cme_jordan_fedayeen_1970_map.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_9",
+      "lessonTitle": "KT 2.4: The Rise of Palestinian Resistance: The PLO, Black September & Munich (1968–1972)",
+      "letter": "D",
+      "title": "Source D: Cartographic Map of 'Fatahland' in Southern Lebanon",
+      "caption": "Cartographic map detailing PLO operational bases, weapons caches, and Katyusha rocket launch zones across the Arkoub region ('Fatahland') along the Lebanese-Israeli border.",
+      "contentSnippet": "Strategic military map of PLO military build-up in southern Lebanon.",
+      "image": "/units/cme_new/assets/fatahland.svg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_9",
+      "lessonTitle": "KT 2.4: The Rise of Palestinian Resistance: The PLO, Black September & Munich (1968–1972)",
+      "letter": "E",
+      "title": "Source E: Yasser Arafat Addressing the UN General Assembly (1974)",
+      "caption": "Yasser Arafat addressing the United Nations General Assembly in New York on 13 November 1974, famously concluding: 'I come bearing an olive branch and a freedom fighter's gun. Do not let the olive branch fall from my hand.'",
+      "contentSnippet": "Photograph of Yasser Arafat's historic address to the UN General Assembly.",
+      "image": "/images/cme_arafat_un_1974.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_10",
+      "lessonTitle": "KT 2.5: The War of Attrition & The Yom Kippur War (1969–1973)",
+      "letter": "A",
+      "title": "Source A: Tactical Blueprint of Bar-Lev Line Fortifications Along the Suez Canal (1969–1970)",
+      "caption": "Tactical map and engineering plan of the Bar-Lev Line fortifications along the eastern bank of the Suez Canal, showing fortified Maoz strongpoints and observation bunkers.",
+      "contentSnippet": "Tactical engineering plan of the Bar Lev Line fortress fortifications along the Suez Canal.",
+      "image": "/units/cme_new/assets/bar_lev_line_fortifications_map.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_10",
+      "lessonTitle": "KT 2.5: The War of Attrition & The Yom Kippur War (1969–1973)",
+      "letter": "B",
+      "title": "Source B: President Sadat Reviewing Battle Plans in Center 10 Operations Room (6 October 1973)",
+      "caption": "President Anwar Sadat studying operational military charts in the Egyptian Armed Forces Center 10 Operations Room alongside War Minister Ahmad Ismail Ali and Chief of Staff Saad el-Shazly during the surprise attack, 6 October 1973.",
+      "contentSnippet": "Archival photograph of President Anwar Sadat studying operational charts in the Egyptian Armed Force",
+      "image": "/units/cme_new/assets/sadat_operations_center_1973.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_10",
+      "lessonTitle": "KT 2.5: The War of Attrition & The Yom Kippur War (1969–1973)",
+      "letter": "C",
+      "title": "Source C: Egyptian Troops Breaching the Bar Lev Line (October 1973)",
+      "caption": "Egyptian Second Army assault troops crossing the Suez Canal in rubber dinghies under heavy covering fire during the surprise attack on the afternoon of 6 October 1973.",
+      "contentSnippet": "Iconic combat photograph of the Egyptian crossing of the Suez Canal.",
+      "image": "/images/cme_egyptians_crossing_suez_1973.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_10",
+      "lessonTitle": "KT 2.5: The War of Attrition & The Yom Kippur War (1969–1973)",
+      "letter": "D",
+      "title": "Source D: Israeli Armor Crossing the Deversoir Pontoon Bridge (October 1973)",
+      "caption": "Israeli Patton and Centurion tanks crossing the Suez Canal onto the Egyptian mainland over Gillois amphibious pontoon bridges at Deversoir, October 1973.",
+      "contentSnippet": "Combat photograph of Israeli Patton and Centurion tanks crossing the Suez Canal at Deversoir on pont",
+      "image": "/units/cme_new/assets/israeli_deversoir_crossing_1973.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_10",
+      "lessonTitle": "KT 2.5: The War of Attrition & The Yom Kippur War (1969–1973)",
+      "letter": "E",
+      "title": "Source E: Henry Kissinger Conferring with Golda Meir and Richard Nixon (November 1973)",
+      "caption": "Prime Minister Golda Meir conferring with US President Richard Nixon and Secretary of State Henry Kissinger in the White House Oval Office, November 1973.",
+      "contentSnippet": "Archival photograph of Prime Minister Golda Meir conferring with US President Richard Nixon and Henr",
+      "image": "/units/cme_new/assets/kissinger_golda_meir_1973.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_11",
+      "lessonTitle": "KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979",
+      "letter": "A",
+      "title": "Source A: Israeli Prime Minister Menachem Begin (1978)",
+      "caption": "Menachem Begin, former underground Irgun commander and Likud Prime Minister who negotiated the historic peace agreement with Egypt, 1978.",
+      "contentSnippet": "Archival portrait photograph of Israeli Prime Minister Menachem Begin.",
+      "image": "/units/cme_new/assets/menachem_begin.jpeg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_11",
+      "lessonTitle": "KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979",
+      "letter": "B",
+      "title": "Source B: President Jimmy Carter Addressing Congress on Camp David (18 September 1978)",
+      "caption": "President Jimmy Carter delivering his historic address to a joint session of the United States Congress announcing the signing of the Camp David Accords, 18 September 1978.",
+      "contentSnippet": "Archival photograph of President Jimmy Carter addressing a joint session of Congress on the Camp Dav",
+      "image": "/units/cme_new/assets/carter_congress_camp_david_1978.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_11",
+      "lessonTitle": "KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979",
+      "letter": "C",
+      "title": "Source C: The Camp David Accords Framework Document (September 1978)",
+      "caption": "Facsimile copy of the signed 'Framework for Peace in the Middle East' signed by Anwar Sadat and Menachem Begin at Camp David on 17 September 1978.",
+      "contentSnippet": "Documentary photograph of the signed Camp David Accords text.",
+      "image": "/units/cme_new/assets/camp_david_accords.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_11",
+      "lessonTitle": "KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979",
+      "letter": "D",
+      "title": "Source D: The Historic White House Lawn Peace Handshake (March 1979)",
+      "caption": "Egyptian President Anwar Sadat, US President Jimmy Carter, and Israeli Prime Minister Menachem Begin joining hands on the South Lawn of the White House after signing the Egypt-Israel Peace Treaty on 26 March 1979.",
+      "contentSnippet": "Iconic photograph of the Egypt-Israel Peace Treaty signing ceremony.",
+      "image": "/images/cme_treaty_triple_handshake_1979.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_11",
+      "lessonTitle": "KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979",
+      "letter": "E",
+      "title": "Source E: Map of the Phased Israeli Withdrawal from Sinai (1979–1982)",
+      "caption": "Cartographic diagram displaying the three-stage withdrawal of the IDF from the Sinai Peninsula (1979-1982) and the creation of demilitarized security zones monitored by the Multinational Force and Observers (MFO).",
+      "contentSnippet": "Operational map tracing the return of the Sinai Peninsula to Egypt.",
+      "image": "/units/cme_new/assets/sinai_returned.svg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_12",
+      "lessonTitle": "KT 3.2: The Palestinian Issue: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993",
+      "letter": "A",
+      "title": "Source A: IDF Operation Peace for Galilee Campaign Map (June 1982)",
+      "caption": "Military map depicting the three-pronged Israeli invasion of Lebanon in June 1982, rapidly advancing far beyond the 40km buffer zone to encircle West Beirut.",
+      "contentSnippet": "Operational map tracing the IDF invasion of Lebanon in 1982.",
+      "image": "/images/cme_lebanon_1982_campaign_map.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_12",
+      "lessonTitle": "KT 3.2: The Palestinian Issue: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993",
+      "letter": "B",
+      "title": "Source B: Topographical Map of the Sabra and Shatila Camps (September 1982)",
+      "caption": "Topographical overview showing the perimeter of Sabra and Shatila refugee camps in West Beirut, Israeli observation posts, and Lebanese Phalangist militia entry routes (16-18 September 1982).",
+      "contentSnippet": "Investigative map produced for the Kahan Commission of Inquiry.",
+      "image": "/units/cme_new/assets/sabra_shatila.svg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_12",
+      "lessonTitle": "KT 3.2: The Palestinian Issue: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993",
+      "letter": "C",
+      "title": "Source C: Palestinian Youth Confronting IDF Troops During the First Intifada",
+      "caption": "Palestinian youths using slingshots to throw stones against Israeli armored vehicles in the Gaza Strip during the First Intifada (1987-1988).",
+      "contentSnippet": "Documentary photograph of street clashes during the First Intifada.",
+      "image": "/units/cme_new/assets/first_intifada.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_12",
+      "lessonTitle": "KT 3.2: The Palestinian Issue: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993",
+      "letter": "D",
+      "title": "Source D: Original Clandestine UNLU Leaflet (Bayan No. 1) Calling for General Strike (8 January 1988)",
+      "caption": "Original mimeographed underground leaflet (Bayan No. 1) issued by the Unified National Leadership of the Uprising (UNLU) on 8 January 1988, directing nationwide merchant shutdowns, labor strikes, and popular committee solidarity.",
+      "contentSnippet": "Primary archival scan of the original mimeographed UNLU Communiqué No. 1 distributed across the West",
+      "image": "/units/cme_new/assets/cme_unlu_bayan_no1_1988.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_12",
+      "lessonTitle": "KT 3.2: The Palestinian Issue: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993",
+      "letter": "E",
+      "title": "Source E: Armed PLO Fedayeen Guerrillas in Southern Lebanon (c. 1979)",
+      "caption": "Armed Palestinian guerrillas in military fatigues operating from southern Lebanese border strongholds, illustrating the PLO military presence that provoked Israel's 1982 invasion.",
+      "contentSnippet": "Archival photograph of Palestinian fedayeen fighters in southern Lebanon.",
+      "image": "/units/cme_new/assets/cme_fatah_fedayeen_lebanon_1979.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_13",
+      "lessonTitle": "KT 3.3: Attempts at a Solution: From the Oslo Accords to Oslo II, 1988–1995",
+      "letter": "A",
+      "title": "Source A: The Opening Plenary of the Madrid Peace Conference (30 October 1991)",
+      "caption": "Delegations from Israel, Syria, Lebanon, and a joint Jordanian-Palestinian delegation assembling at the Royal Palace of Madrid, co-chaired by US President George H.W. Bush and Soviet President Mikhail Gorbachev.",
+      "contentSnippet": "Official documentary photograph of the Madrid Peace Conference opening plenary.",
+      "image": "/images/cme_madrid_conference_1991.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_13",
+      "lessonTitle": "KT 3.3: Attempts at a Solution: From the Oslo Accords to Oslo II, 1988–1995",
+      "letter": "B",
+      "title": "Source B: Official Israeli-Palestinian Negotiating Map for Oslo II (1995)",
+      "caption": "Official diplomatic map signed by Yitzhak Rabin and Yasser Arafat at Taba, detailing initial phased IDF redeployments from Jenin, Nablus, Tulkarm, Qalqilya, Ramallah, and Bethlehem.",
+      "contentSnippet": "Facsimile of the official signed treaty map for the Oslo II Interim Agreement.",
+      "image": "/images/cme_oslo_ii_official_map.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_13",
+      "lessonTitle": "KT 3.3: Attempts at a Solution: From the Oslo Accords to Oslo II, 1988–1995",
+      "letter": "C",
+      "title": "Source C: The Historic Oslo Handshake on the White House Lawn (1993)",
+      "caption": "Prime Minister Yitzhak Rabin and PLO Chairman Yasser Arafat shaking hands on the White House South Lawn, encouraged by President Bill Clinton, following the signing of the Oslo Declaration of Principles on 13 September 1993.",
+      "contentSnippet": "Iconic photograph of the Rabin-Arafat handshake at the White House.",
+      "image": "/images/cme_oslo_handshake_1993.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_13",
+      "lessonTitle": "KT 3.3: Attempts at a Solution: From the Oslo Accords to Oslo II, 1988–1995",
+      "letter": "D",
+      "title": "Source D: The Oslo II Cartographic Division of the West Bank (1995)",
+      "caption": "Cartographic map illustrating the fragmentation of the West Bank into Areas A (full Palestinian civil and security control), B (Palestinian civil and joint Israeli security control), and C (exclusive Israeli control covering 60% of territory).",
+      "contentSnippet": "Territorial map of the West Bank partition under the Oslo II Agreement.",
+      "image": "/images/cme_oslo_areas_map.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_13",
+      "lessonTitle": "KT 3.3: Attempts at a Solution: From the Oslo Accords to Oslo II, 1988–1995",
+      "letter": "E",
+      "title": "Source E: Prime Minister Yitzhak Rabin Debating the Oslo II Accord in the Knesset (5 October 1995)",
+      "caption": "Prime Minister Yitzhak Rabin addressing the Knesset chamber during the impassioned debate on the Oslo II Interim Agreement, 5 October 1995.",
+      "contentSnippet": "Archival photograph of Prime Minister Yitzhak Rabin addressing the Knesset during the debate on the ",
+      "image": "/units/cme_new/assets/rabin_knesset_oslo2_1995.jpg"
+    }
+  ],
+  "eee": [
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT 1.1: The Situation on Elizabeth’s Accession, 1558",
+      "letter": "A",
+      "title": "Source A: Queen Elizabeth I Coronation Portrait (1559)",
+      "caption": "Queen Elizabeth I in her magnificent gold coronation robes, holding the orb and sceptre as symbols of monarchical authority and divine right, painted c. 1559.",
+      "contentSnippet": "Coronation portrait of Queen Elizabeth I in imperial robes.",
+      "image": "/images/elizabeth_coronation_portrait.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT 1.1: The Situation on Elizabeth’s Accession, 1558",
+      "letter": "B",
+      "title": "Source B: Sir William Cecil, Lord Burghley, Elizabeth’s Chief Minister",
+      "caption": "Sir William Cecil (1520–1598), created Lord Burghley in 1571, Elizabeth's Secretary of State and closest political confidant for four decades.",
+      "contentSnippet": "Portrait of Sir William Cecil holding the white staff of the Lord High Treasurer.",
+      "image": "/images/sir_william_cecil_lord_burghley.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_1",
+      "lessonTitle": "KT 1.1: The Situation on Elizabeth’s Accession, 1558",
+      "letter": "E",
+      "title": "Source E: Queen Mary I and the Inheritance of War and Debt (1554)",
+      "caption": "Queen Mary I, whose reign ended in 1558 leaving England £300,000 in debt to Antwerp bankers and bereft of Calais after military disaster against France.",
+      "contentSnippet": "Portrait of Mary I by Antonis Mor, 1554.",
+      "image": "/images/queen_mary_i_mary_tudor.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT 1.2: The 'Settlement' of Religion, 1559",
+      "letter": "A",
+      "title": "Source A: The 1559 Act of Supremacy (Parliamentary Roll)",
+      "caption": "The official parchment statute of the 1559 Act of Supremacy passed by Parliament, declaring Elizabeth 'Supreme Governor' of the Church of England.",
+      "contentSnippet": "Parchment roll of the Elizabethan Act of Supremacy 1559.",
+      "image": "/images/act_of_supremacy.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT 1.2: The 'Settlement' of Religion, 1559",
+      "letter": "B",
+      "title": "Source B: Title Page of the 1559 Book of Common Prayer",
+      "caption": "Printed title page of the Elizabethan Book of Common Prayer (1559), combining the 1549 and 1552 communion words into a deliberately ambiguous compromise.",
+      "contentSnippet": "Frontispiece of the Elizabethan Book of Common Prayer, printed by Richard Grafton in London, 1559.",
+      "image": "/images/book_of_common_prayer_1559_authentic.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_2",
+      "lessonTitle": "KT 1.2: The 'Settlement' of Religion, 1559",
+      "letter": "D",
+      "title": "Source D: Engraving of the House of Lords Passing the 1559 Settlement",
+      "caption": "Contemporary woodcut engraving of the Elizabethan Parliament assembled in Westminster, debating the Supremacy and Uniformity Bills in the spring of 1559.",
+      "contentSnippet": "Engraving of Parliament assembled before the Queen, 1559.",
+      "image": "/images/elizabeth_i_in_parliament_engraving.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_3",
+      "lessonTitle": "KT 1.3: Challenge to the Religious Settlement",
+      "letter": "C",
+      "title": "Source C: Historical Map of Catholic Resistance, Priest Holes, and Seminary Networks",
+      "caption": "Cartographic analysis of Elizabethan England highlighting strongholds of Catholic recusancy in the North and West, and landing points for Douai seminary priests.",
+      "contentSnippet": "Historical map illustrating Catholic resistance, rebel movements, and seminary priest havens.",
+      "image": "/images/elizabethan_england_catholic_revolt_mary_scots_map.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_4",
+      "lessonTitle": "KT 1.4: The Problem of Mary, Queen of Scots, 1568–69",
+      "letter": "A",
+      "title": "Source A: Portrait of Mary Stuart, Queen of Scots (c. 1565)",
+      "caption": "Mary, Queen of Scots (1542–1587), great-granddaughter of Henry VII, whose arrival in England in May 1568 ignited nineteen years of political crisis for Elizabeth I.",
+      "contentSnippet": "Oil painting of Mary Stuart wearing a fur-trimmed gown and jewelled crucifix.",
+      "image": "/images/mary_queen_of_scots_mary_stuart.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_1_4",
+      "lessonTitle": "KT 1.4: The Problem of Mary, Queen of Scots, 1568–69",
+      "letter": "B",
+      "title": "Source B: Sir Francis Walsingham's Intelligence Dossier on Mary Stuart",
+      "caption": "Sir Francis Walsingham, who argued consistently that as long as Mary Stuart lived, Elizabeth's life and the English Protestant church would never be safe.",
+      "contentSnippet": "Portrait of Sir Francis Walsingham in black velvet.",
+      "image": "/images/sir_francis_walsingham.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT 2.1: Plots and Revolts at Home, 1569–1587",
+      "letter": "A",
+      "title": "Source A: Thomas Percy, 7th Earl of Northumberland, Leader of the 1569 Revolt",
+      "caption": "Thomas Percy, Earl of Northumberland, who led the 1569 Northern Rebellion, celebrated Catholic Mass in Durham Cathedral, and was executed at York in 1572.",
+      "contentSnippet": "Portrait of Thomas Percy, 7th Earl of Northumberland, c. 1566.",
+      "image": "/images/the_earl_of_northumberland_thomas_percy.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT 2.1: Plots and Revolts at Home, 1569–1587",
+      "letter": "B",
+      "title": "Source B: Thomas Howard, 4th Duke of Norfolk, Executed for the 1571 Ridolfi Plot",
+      "caption": "Thomas Howard, 4th Duke of Norfolk, England's only duke and premier peer, executed on Tower Hill in June 1572 for his complicity in the Ridolfi Plot.",
+      "contentSnippet": "Portrait of Thomas Howard, 4th Duke of Norfolk in black velvet with the Order of the Garter.",
+      "image": "/images/the_duke_of_norfolk_thomas_howard.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT 2.1: Plots and Revolts at Home, 1569–1587",
+      "letter": "C",
+      "title": "Source C: Francis Throckmorton and the 1583 Catholic Conspiracy",
+      "caption": "Francis Throckmorton, who acted as the key courier between Mary Queen of Scots, the Spanish ambassador Mendoza, and French Catholic invasion planners before his arrest in 1583.",
+      "contentSnippet": "Engraved portrait of Francis Throckmorton.",
+      "image": "/images/francis_throckmorton.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT 2.1: Plots and Revolts at Home, 1569–1587",
+      "letter": "D",
+      "title": "Source D: Anthony Babington and the 1586 Conspiracy",
+      "caption": "Anthony Babington (1561–1586), a young Derbyshire Catholic gentleman who led the conspiracy to assassinate Elizabeth and rescue Mary Queen of Scots from Chartley Manor.",
+      "contentSnippet": "Portrait of Anthony Babington, executed for high treason in 1586.",
+      "image": "/images/portrait_anthony_babington.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_1",
+      "lessonTitle": "KT 2.1: Plots and Revolts at Home, 1569–1587",
+      "letter": "E",
+      "title": "Source E: Walsingham and Phelippes' Intercepted Babington Cipher Postscript (1586)",
+      "caption": "The fatal cipher postscript drawn by code-breaker Thomas Phelippes, adding a gallows mark to Mary Stuart's intercepted letter to Babington asking for the names of the six assassins.",
+      "contentSnippet": "Archival facsimile of the intercepted Babington cipher letter with Thomas Phelippes' decoded postscr",
+      "image": "/images/babington_cipher_postscript.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT 2.2: Relations with Spain, 1569–1585",
+      "letter": "A",
+      "title": "Source A: Robert Dudley, Earl of Leicester, Advocate of Protestant Intervention",
+      "caption": "Robert Dudley, Earl of Leicester (1532–1588), leader of the interventionist Protestant faction in the Privy Council who commanded English forces in the Netherlands in 1585.",
+      "contentSnippet": "Portrait of Robert Dudley, Earl of Leicester in embroidered white and gold doublet.",
+      "image": "/images/robert_dudley_earl_of_leicester.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT 2.2: Relations with Spain, 1569–1585",
+      "letter": "B",
+      "title": "Source B: Sir Francis Drake, Privateer and Circumnavigator (c. 1581)",
+      "caption": "Sir Francis Drake (1540–1596), privateer and explorer knighted by Elizabeth in 1581 after capturing hundreds of thousands of pounds in Spanish bullion.",
+      "contentSnippet": "Portrait of Sir Francis Drake wearing the Drake Jewel presented by Queen Elizabeth.",
+      "image": "/images/sir_francis_drake.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT 2.2: Relations with Spain, 1569–1585",
+      "letter": "C",
+      "title": "Source C: Sir John Hawkins, Naval Commander and Atlantic Privateer",
+      "caption": "Sir John Hawkins (1532–1595), who pioneered transatlantic slave voyages and served as Treasurer of the Navy, revolutionizing English galleon design.",
+      "contentSnippet": "Portrait of Sir John Hawkins, naval commander and administrator.",
+      "image": "/images/sir_john_hawkins.JPG"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_2",
+      "lessonTitle": "KT 2.2: Relations with Spain, 1569–1585",
+      "letter": "D",
+      "title": "Source D: Jodocus Hondius's 1595 Map of Drake’s Global Circumnavigation and Raids",
+      "caption": "Engraved world map by Jodocus Hondius celebrating Francis Drake's 1577–1580 circumnavigation, raiding Spanish ports in Chile, Peru, and California.",
+      "contentSnippet": "Broadsheet world map illustrating Drake and Cavendish circumnavigation routes.",
+      "image": "/images/hondius_drake_circumnavigation_map_1595.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT 2.3: The Outbreak of War with Spain, 1585–1588",
+      "letter": "A",
+      "title": "Source A: Sir Francis Drake Planning the Pre-emptive Raid on Cadiz (1587)",
+      "caption": "Sir Francis Drake, appointed Vice-Admiral by Elizabeth with royal orders to disrupt Spanish naval preparations for the invasion of England in 1587.",
+      "contentSnippet": "Portrait of Sir Francis Drake in naval dress.",
+      "image": "/images/drake.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT 2.3: The Outbreak of War with Spain, 1585–1588",
+      "letter": "B",
+      "title": "Source B: Queen Elizabeth I Addressing the Troops at Tilbury (August 1588)",
+      "caption": "Queen Elizabeth I on horseback reviewing 17,000 militia troops assembled at West Tilbury in August 1588 to resist a Spanish landing.",
+      "contentSnippet": "Engraving of Queen Elizabeth I delivering her celebrated speech at Tilbury camp.",
+      "image": "/images/elizabeth_tilbury_speech.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT 2.3: The Outbreak of War with Spain, 1585–1588",
+      "letter": "D",
+      "title": "Source D: Contemporary Painting of the Battle of Gravelines (8 August 1588)",
+      "caption": "The Battle of Gravelines (8 August 1588): English race-built galleons engaging the disarrayed Spanish fleet at point-blank range along the Flemish coast.",
+      "contentSnippet": "English race-built warships using superior speed and culverin broadsides against the Spanish Armada.",
+      "image": "/images/battle_of_gravelines_1588.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_3",
+      "lessonTitle": "KT 2.3: The Outbreak of War with Spain, 1585–1588",
+      "letter": "E",
+      "title": "Source E: Route and Shipwrecks of the Spanish Armada around Scotland and Ireland (1588)",
+      "caption": "Historical Map of the Spanish Armada's Retreat: Charting the perilous voyage around northern Scotland and the catastrophic Atlantic shipwrecks along the Irish coast (September 1588).",
+      "contentSnippet": "The track of the surviving Armada ships fleeing north around Scotland and wrecked along the Atlantic",
+      "image": "/images/spanish_armada_1588_route_battle_map.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT 2.4: The Spanish Armada: Strategy, Conflict & Defeat, 1588",
+      "letter": "A",
+      "title": "Source A: The Battle of Gravelines and the Fireships (8 August 1588)",
+      "caption": "The decisive Battle of Gravelines: English race-built warships engaging the scattered Spanish galleons at close range after fireships disrupted their defensive formation.",
+      "contentSnippet": "Contemporary oil painting of the Battle of Gravelines, 8 August 1588.",
+      "image": "/images/battle_of_gravelines_1588.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT 2.4: The Spanish Armada: Strategy, Conflict & Defeat, 1588",
+      "letter": "B",
+      "title": "Source B: The Armada Portrait of Queen Elizabeth I (1588)",
+      "caption": "The Armada Portrait of Elizabeth I, painted by George Gower c. 1588, with her hand resting upon the globe and the defeat of the Armada depicted in the background windows.",
+      "contentSnippet": "Oil on panel painting of Elizabeth I in pearl-embroidered black gown with background naval scenes.",
+      "image": "/images/armada_portrait.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT 2.4: The Spanish Armada: Strategy, Conflict & Defeat, 1588",
+      "letter": "C",
+      "title": "Source C: Cartographic Route of the Armada's Flight Around Scotland and Ireland",
+      "caption": "Historical map tracing the catastrophic northern retreat route of the Armada through the North Sea, past the Orkneys, and into ferocious Atlantic gales off the Irish coast.",
+      "contentSnippet": "Cartographic route map of the 1588 Spanish Armada.",
+      "image": "/images/spanish_armada_1588_route_battle_map.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT 2.4: The Spanish Armada: Strategy, Conflict & Defeat, 1588",
+      "letter": "D",
+      "title": "Source D: Duke of Medina Sidonia's Post-Action Report to King Philip II (1588)",
+      "caption": "Portrait of Medina Sidonia, whose confidential report to King Philip II in September 1588 lamented that only 67 out of 130 ships and fewer than 10,000 men returned to Spain.",
+      "contentSnippet": "Portrait of the 7th Duke of Medina Sidonia in Spanish court robes.",
+      "image": "/images/the_duke_of_medina_sidonia.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_2_4",
+      "lessonTitle": "KT 2.4: The Spanish Armada: Strategy, Conflict & Defeat, 1588",
+      "letter": "E",
+      "title": "Source E: Queen Elizabeth in Triumphal Procession to St Paul's Cathedral (1588)",
+      "caption": "Queen Elizabeth I riding in an open chariot to St Paul's Cathedral in November 1588 to give public thanks for the deliverance of England from the Spanish Armada.",
+      "contentSnippet": "Contemporary print of Elizabeth I's thanksgiving procession to St Paul's Cathedral.",
+      "image": "/images/elizabeth_armada_thanksgiving_st_pauls.png"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_1",
+      "lessonTitle": "KT 3.1: Education and Leisure in Elizabethan England, 1558–1588",
+      "letter": "A",
+      "title": "Source A: Contemporary Elizabethan Wooden Hornbook with Alphabet and Lord's Prayer (c. 1570s)",
+      "caption": "An authentic Elizabethan wooden hornbook: parchment sheet with alphabet and the Lord's Prayer protected by a thin slice of transparent horn with brass trim.",
+      "contentSnippet": "A wooden paddle hornbook used to teach reading and literacy to young children in Tudor dame and pett",
+      "image": "/images/tudor_wooden_hornbook_alphabet.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_1",
+      "lessonTitle": "KT 3.1: Education and Leisure in Elizabethan England, 1558–1588",
+      "letter": "D",
+      "title": "Source D: Contemporary Woodcut of Bear-Baiting in the Southwark Arena (c. 1570s)",
+      "caption": "Contemporary woodcut of bear-baiting in London: a bear chained to a stake in the pit being attacked by mastiffs before spectator galleries.",
+      "contentSnippet": "An Elizabethan woodcut showing bear-baiting, a popular blood sport patronized by all classes includi",
+      "image": "/images/elizabethan_bear_baiting_southwark.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_1",
+      "lessonTitle": "KT 3.1: Education and Leisure in Elizabethan England, 1558–1588",
+      "letter": "E",
+      "title": "Source E: Johannes de Witt's Eyewitness Sketch of the Swan Theatre (c. 1596)",
+      "caption": "Johannes de Witt's eyewitness sketch of the Swan Theatre interior (1596, copied by Arend van Buchell): showing thrust proscenium stage, groundling pit, three-tiered galleries, and tiring house.",
+      "contentSnippet": "The only surviving contemporary drawing of the interior of an Elizabethan public amphitheatre.",
+      "image": "/images/swan_theatre_interior_de_witt.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_2",
+      "lessonTitle": "KT 3.2: The Problem of the Poor and Vagrancy, 1558–1588",
+      "letter": "D",
+      "title": "Source D: Contemporary Woodcut of Vagrants Whipped at the Cart-Tail under the 1572 Act",
+      "caption": "A contemporary Elizabethan woodcut depicting sturdy beggars being tied to the cart-tail and whipped through the market town until bloody under the harsh 1572 Vagabonds Act.",
+      "contentSnippet": "A woodcut showing the public corporal punishment of vagrants in an Elizabethan market town.",
+      "image": "/images/tudor_vagrant_whipping.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_2",
+      "lessonTitle": "KT 3.2: The Problem of the Poor and Vagrancy, 1558–1588",
+      "letter": "E",
+      "title": "Source E: The Elizabethan Poor Law Statute of 1601 (Parliamentary Roll)",
+      "caption": "The official printed parliamentary statute of the 1601 Act for the Relief of the Poor (43 Elizabeth I c. 2), establishing compulsory parish poor rates, appointing Overseers of the Poor, providing raw materials to set the able-bodied to work, and funding almshouses for the impotent poor.",
+      "contentSnippet": "Parliamentary statute of the 1601 Elizabethan Poor Relief Act.",
+      "image": "/images/poor_law_1601.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "KT 3.3: Exploration and Voyages of Discovery, 1558–1588",
+      "letter": "A",
+      "title": "Source A: Authentic Elizabethan Mariner's Astrolabe for Latitude Navigation (c. 1580s)",
+      "caption": "An authentic heavy cast-brass mariner's astrolabe: cut-out spokes reduce wind resistance on pitching decks, allowing navigators to sight the Sun or Pole Star to determine latitude.",
+      "contentSnippet": "A brass navigational instrument essential for Elizabethan oceanic voyages across the Atlantic and Pa",
+      "image": "/images/mariners_astrolabe_1603.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "KT 3.3: Exploration and Voyages of Discovery, 1558–1588",
+      "letter": "B",
+      "title": "Source B: Contemporary Plate of the Race-Built English Galleon Ark Royal (1587)",
+      "caption": "The English race-built flagship Ark Royal: designed by Sir John Hawkins with reduced castles, a sleek hydrodynamic hull, lateen sails, and heavy culverins mounted low along broadsides.",
+      "contentSnippet": "A contemporary engraving of the English flagship Ark Royal, exemplifying John Hawkins' race-built na",
+      "image": "/images/ark_royal.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "KT 3.3: Exploration and Voyages of Discovery, 1558–1588",
+      "letter": "C",
+      "title": "Source C: Augustine Ryther's Sea Chart of the English Channel and Atlantic Approaches",
+      "caption": "Engraved maritime chart by Augustine Ryther (1590) displaying coastal soundings, compass roses, and latitude lines along the Atlantic seaboard.",
+      "contentSnippet": "Engraved sea chart showing navigation coordinates and coastal contours.",
+      "image": "/images/spanish_armada_1588_ryther_maritime_museum_auth.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_3",
+      "lessonTitle": "KT 3.3: Exploration and Voyages of Discovery, 1558–1588",
+      "letter": "D",
+      "title": "Source D: Jodocus Hondius World Map Showing the Track of Drake's Circumnavigation (1595)",
+      "caption": "Jodocus Hondius world map (1595) showing the confirmed global track of Sir Francis Drake on the Golden Hind (1577–1580), including Cape Horn, Nova Albion (California), and the Moluccas.",
+      "contentSnippet": "A renowned Dutch world map charting Drake's voyage around the globe, with the Golden Hind illustrate",
+      "image": "/images/hondius_drake_circumnavigation_map_1595.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "KT 3.4: Raleigh and the Colonisation of Virginia, 1584–1590",
+      "letter": "A",
+      "title": "Source A: Sir Walter Raleigh, Courtier, Explorer, and Coloniser (c. 1588)",
+      "caption": "Sir Walter Raleigh (1554–1618), royal favourite who received a royal patent from Elizabeth in 1584 granting him exclusive rights to colonize 'Virginia'.",
+      "contentSnippet": "Portrait of Sir Walter Raleigh wearing a pearl-adorned doublet and cloak.",
+      "image": "/images/sir_walter_raleigh.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "KT 3.4: Raleigh and the Colonisation of Virginia, 1584–1590",
+      "letter": "B",
+      "title": "Source B: The Roanoke Island Colony Map by John White (1585)",
+      "caption": "John White's detailed watercolor map of the coast of Virginia and North Carolina from Cape Lookout to the Chesapeake Bay, surveyed in 1585.",
+      "contentSnippet": "Hand-drawn watercolor map of Virginia and Roanoke Island by John White.",
+      "image": "/images/john_white_roanoke_map_1585_authentic.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "KT 3.4: Raleigh and the Colonisation of Virginia, 1584–1590",
+      "letter": "C",
+      "title": "Source C: John White Watercolor of an Algonquin Chief (Herowan) of Roanoke (1585)",
+      "caption": "John White's watercolor of a coastal Algonquin chief (herowan) adorned with copper ornaments, feathers, and body paint, painted from life in 1585.",
+      "contentSnippet": "Watercolor portrait of an Algonquin chief by John White.",
+      "image": "/images/john_white_chief_herowan.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "KT 3.4: Raleigh and the Colonisation of Virginia, 1584–1590",
+      "letter": "D",
+      "title": "Source D: John White's Painting of an Algonquin Religious Feast and Dance at Secotan",
+      "caption": "Watercolor by John White depicting a ritual circle dance of Algonquin priests and dancers with carved posts surrounding the sacred ceremonial ground at Secotan.",
+      "contentSnippet": "Watercolor of an Algonquin ceremonial dance by John White, 1585.",
+      "image": "/images/john_white_ceremony_dance.jpg"
+    },
+    {
+      "type": "Lesson Source",
+      "lessonId": "lesson_3_4",
+      "lessonTitle": "KT 3.4: Raleigh and the Colonisation of Virginia, 1584–1590",
+      "letter": "E",
+      "title": "Source E: John White Watercolor of an Algonquin Man and Woman Eating at Meat (1585)",
+      "caption": "Watercolor by John White showing an Algonquin couple seated on a reed mat eating a meal of boiled maize, fish, and tobacco.",
+      "contentSnippet": "Watercolor of Algonquin man and woman sitting at meat by John White, 1585.",
+      "image": "/images/john_white_sitting_at_meat.jpg"
+    }
+  ]
+}
