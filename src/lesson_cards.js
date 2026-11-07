@@ -213,6 +213,20 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           border: '#dc2626',
           image: '/images/banner_medicine_medieval.jpg',
           enquiry: 'How much did medicine really change in Medieval England?',
+          infographics: [
+            {
+              slug: 'med_medieval_era_overview',
+              label: 'Medieval Era Overview',
+              icon: 'fa-solid fa-chart-pie',
+              title: 'Medieval Medicine: Religion, Care Not Cure & The Healers (c1250–c1500)',
+            },
+            {
+              slug: 'med_kt1_1_causes_of_illness_chart',
+              label: 'Four Humours & Causes',
+              icon: 'fa-solid fa-diagram-project',
+              title: 'Medieval Causes of Illness: God, Planets & The Four Humours',
+            },
+          ],
         },
         {
           id: 'renaissance',
@@ -222,6 +236,20 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           border: '#059669',
           image: '/images/banner_medicine_renaissance.jpg',
           enquiry: 'Why did the Medical Renaissance have so little impact on everyday treatments?',
+          infographics: [
+            {
+              slug: 'med_renaissance_era_overview',
+              label: 'Renaissance Overview',
+              icon: 'fa-solid fa-chart-pie',
+              title: 'The Medical Renaissance: Humanism, Dissection & Scientific Enquiry (c1500–c1700)',
+            },
+            {
+              slug: 'med_kt2_5_spot_difference_1348_vs_1665',
+              label: '1348 vs 1665 Plague',
+              icon: 'fa-solid fa-scale-balanced',
+              title: 'Spot the Difference: The Black Death (1348) vs The Great Plague (1665)',
+            },
+          ],
         },
         {
           id: '18th_19th',
@@ -232,6 +260,26 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           image: '/images/banner_medicine_18th_19th.jpg',
           enquiry:
             'How did the Industrial Revolution transform the understanding and prevention of disease?',
+          infographics: [
+            {
+              slug: 'med_industrial_era_overview',
+              label: 'Industrial Era Overview',
+              icon: 'fa-solid fa-chart-pie',
+              title: 'Industrial Medicine: The Scientific Revolution & Germs (c1700–c1900)',
+            },
+            {
+              slug: 'med_ladder_of_progress_synoptic',
+              label: 'Public Health Ladder',
+              icon: 'fa-solid fa-stairs',
+              title: 'The Ladder of Progress: Government Intervention in Public Health (1800–1948)',
+            },
+            {
+              slug: 'med_kt3_1_germ_revolution_timeline',
+              label: 'Germ Theory Timeline',
+              icon: 'fa-solid fa-timeline',
+              title: 'The Germ Theory Revolution: Spontaneous Generation to Microbes (1861–1883)',
+            },
+          ],
         },
         {
           id: 'modern',
@@ -242,6 +290,20 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           image: '/images/banner_medicine_modern.jpg',
           enquiry:
             'How did technology and government intervention revolutionize 20th-century medicine?',
+          infographics: [
+            {
+              slug: 'med_modern_era_overview',
+              label: 'Modern Era Overview',
+              icon: 'fa-solid fa-chart-pie',
+              title: 'Modern Medicine: The High-Tech, Genetic & Pharmaceutical Era (c1900–Present)',
+            },
+            {
+              slug: 'med_kt4_2_history_modern_medicine_timeline',
+              label: 'Modern Breakthroughs',
+              icon: 'fa-solid fa-timeline',
+              title: 'From Magic Bullets to the NHS: Modern Medical Breakthroughs (1900–1948)',
+            },
+          ],
         },
         {
           id: 'western_front',
@@ -252,6 +314,20 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           image: '/images/banner_medicine_western_front.jpg',
           enquiry:
             'How did the horrific conditions of trench warfare drive rapid medical innovation?',
+          infographics: [
+            {
+              slug: 'med_kt5_4_evacuation_chain_map',
+              label: 'Chain of Evacuation Map',
+              icon: 'fa-solid fa-route',
+              title: 'The Western Front Chain of Evacuation (1914–1918)',
+            },
+            {
+              slug: 'med_kt5_5_wwi_medical_innovations',
+              label: 'Trench Trauma Innovations',
+              icon: 'fa-solid fa-syringe',
+              title: 'WWI Battlefield Trauma: Gas Gangrene, Splints & Transfusions',
+            },
+          ],
         },
       ];
     } else if (currentUnitId === 'cme_new') {
@@ -264,6 +340,20 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           border: '#3b82f6',
           image: '/assets/cme_new_kt1_cover.png',
           enquiry: 'How and why was the state of Israel established?',
+          infographics: [
+            {
+              slug: 'cme_kt1_1_road_to_statehood',
+              label: 'Road to Statehood',
+              icon: 'fa-solid fa-timeline',
+              title: 'The Road to Jewish Statehood (1945–1948)',
+            },
+            {
+              slug: 'cme_kt1_2_aftermath_refugees',
+              label: '1948 Refugees Crisis',
+              icon: 'fa-solid fa-people-roof',
+              title: 'Aftermath of the 1948–49 War & Palestinian Refugees',
+            },
+          ],
         },
         {
           id: 'KT2',
@@ -273,6 +363,20 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           border: '#ef4444',
           image: '/assets/cme_new_yom_kippur_crossing.png',
           enquiry: 'What drove the major conflicts in the Middle East from 1967-1973?',
+          infographics: [
+            {
+              slug: 'cme_kt2_2_six_day_war',
+              label: 'Six-Day War Breakdown',
+              icon: 'fa-solid fa-jet-fighter',
+              title: 'The Six-Day War (1967): Causes, Course & Territorial Consequences',
+            },
+            {
+              slug: 'cme_kt2_5_yom_kippur_status_quo',
+              label: '1973 Yom Kippur War',
+              icon: 'fa-solid fa-burst',
+              title: 'The Yom Kippur War (1973): Crossing the Suez & Shattering the Status Quo',
+            },
+          ],
         },
         {
           id: 'KT3',
@@ -283,6 +387,20 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           image: '/assets/cme_new_camp_david_accords.png',
           enquiry: 'Why has lasting peace in the Middle East been so difficult to achieve?',
           bgPos: 'center 20%',
+          infographics: [
+            {
+              slug: 'cme_kt3_1_camp_david_timeline',
+              label: 'Camp David Accords',
+              icon: 'fa-solid fa-handshake',
+              title: 'Historic Israel-Egypt Peace Treaty Timeline (1973–1979)',
+            },
+            {
+              slug: 'cme_kt3_3_oslo_accords',
+              label: 'Oslo Peace Accords',
+              icon: 'fa-solid fa-dove',
+              title: 'The Oslo Peace Process (1993–1995): Milestones, Handshake & Assassination',
+            },
+          ],
         },
       ];
     } else if (
@@ -375,6 +493,14 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           bgPos: 'center 35%',
           enquiry:
             'How did legal victories and grassroots action transform the struggle for civil rights?',
+          infographics: [
+            {
+              slug: 'usa_kt1_1_black_equality_struggle_1950s',
+              label: '1950s Civil Rights Struggle',
+              icon: 'fa-solid fa-scale-balanced',
+              title: 'The Struggle for Black Equality in the 1950s',
+            },
+          ],
         },
         {
           id: 'KT2',
@@ -386,6 +512,20 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           bgPos: 'center 30%',
           enquiry:
             'How did the civil rights movement evolve from non-violent protest to Black Power?',
+          infographics: [
+            {
+              slug: 'usa_kt2_2_birmingham_campaign_1963',
+              label: 'Birmingham Campaign (1963)',
+              icon: 'fa-solid fa-bullhorn',
+              title: 'The 1963 Birmingham Campaign & Children’s Crusade',
+            },
+            {
+              slug: 'usa_kt2_4_us_civil_rights_1965_1975_overview',
+              label: 'Civil Rights 1965–1975',
+              icon: 'fa-solid fa-scroll',
+              title: 'US Civil Rights 1965–1975 Overview',
+            },
+          ],
         },
         {
           id: 'KT3',
@@ -397,6 +537,20 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           bgPos: 'center 30%',
           enquiry:
             'Why did the USA become militarily entangled in Vietnam, and why were US tactics unable to defeat the Vietcong?',
+          infographics: [
+            {
+              slug: 'usa_kt3_1_vietnam_escalation_timeline_1954_1963',
+              label: 'Vietnam Escalation (1954–63)',
+              icon: 'fa-solid fa-timeline',
+              title: 'Vietnam Escalation Timeline 1954–1963',
+            },
+            {
+              slug: 'usa_kt3_3_tet_offensive_1968',
+              label: 'Tet Offensive (1968)',
+              icon: 'fa-solid fa-burst',
+              title: 'The Tet Offensive (1968): Turning Point of the Vietnam War',
+            },
+          ],
         },
         {
           id: 'KT4',
@@ -409,6 +563,20 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           bgPos: 'center 30%',
           enquiry:
             'Why did domestic opposition force the USA to withdraw, and what was the consequence of the fall of Saigon?',
+          infographics: [
+            {
+              slug: 'usa_kt4_1_vietnam_war_support_collapse',
+              label: 'Anti-War Movement',
+              icon: 'fa-solid fa-hand-fist',
+              title: 'Collapse of Public Support & The Anti-War Movement',
+            },
+            {
+              slug: 'usa_kt4_3_vietnam_peace_process_and_end',
+              label: 'Peace Process & Saigon 1975',
+              icon: 'fa-solid fa-dove',
+              title: 'The Vietnam Peace Process, US Withdrawal & Fall of Saigon',
+            },
+          ],
         },
       ];
     }
@@ -434,6 +602,17 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
         digitalWorkbookUrl = `/units/usa/pupil_workbook_${p.id}.html`;
       }
 
+      const infographicBtns = (p.infographics || [])
+        .map(
+          (info) => `
+        <button type="button" class="btn-banner-infographic" onclick="if(window.openInfographicModal){window.openInfographicModal('${info.slug}');}" title="View ${info.title || info.label} Visual Revision Mat" style="text-decoration: none; background: rgba(2, 132, 199, 0.7); color: #ffffff; border: 1.5px solid rgba(56, 189, 248, 0.6); padding: 8px 13px; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.82rem; display: inline-flex; align-items: center; gap: 7px; backdrop-filter: blur(6px); box-shadow: 0 4px 12px rgba(2,132,199,0.3); cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='rgba(2, 132, 199, 0.95)'; this.style.borderColor='#38bdf8'; this.style.transform='translateY(-1.5px)';" onmouseout="this.style.background='rgba(2, 132, 199, 0.7)'; this.style.borderColor='rgba(56, 189, 248, 0.6)'; this.style.transform='none';">
+          <i class="${info.icon || 'fa-solid fa-chart-pie'}" style="color: #7dd3fc; font-size: 0.92rem;"></i>
+          <span>${info.label}</span>
+        </button>
+      `,
+        )
+        .join('');
+
       lessonsHTML += `
         <div class="premium-banner" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
           <div class="premium-banner-bg" style="background-image: url('${p.image}'); background-position: ${p.bgPos || 'center'};"></div>
@@ -445,9 +624,13 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
             <p class="premium-banner-enquiry">${p.enquiry}</p>
           </div>
           ${
-            pdfWorkbookUrl
+            pdfWorkbookUrl || (p.infographics && p.infographics.length > 0)
               ? `
           <div class="premium-banner-actions" style="position: relative; z-index: 5; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-left: auto;">
+            ${infographicBtns}
+            ${
+              pdfWorkbookUrl
+                ? `
             <a href="${pdfWorkbookUrl}" target="_blank" class="btn-banner-pdf" title="Open compiled pupil workbook PDF in new tab" style="text-decoration: none; background: rgba(0, 0, 0, 0.7); color: #ffffff; border: 1.5px solid rgba(255, 255, 255, 0.4); padding: 9px 15px; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 7px; backdrop-filter: blur(6px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.2s ease;" onmouseover="this.style.background='rgba(255,255,255,0.95)'; this.style.color='#0f172a'; this.style.borderColor='#ffffff';" onmouseout="this.style.background='rgba(0,0,0,0.7)'; this.style.color='#ffffff'; this.style.borderColor='rgba(255,255,255,0.4)';">
               <i class="fa-solid fa-file-pdf" style="color: #ef4444; font-size: 1rem;"></i>
               <span>Pupil Workbook (PDF)</span>
@@ -459,6 +642,9 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               <i class="fa-solid fa-book-open" style="color: #93c5fd;"></i>
               <span>Digital HTML</span>
             </a>
+            `
+                : ''
+            }
             `
                 : ''
             }

@@ -290,6 +290,12 @@ export const CURRICULAR_PILLARS_CATALOG = {
       htmlUrl: '/units/cme_new/cme_master_retrieval_companion.html',
       pdfUrl: '/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf',
     },
+    overviewInfographic: {
+      slug: 'cme_edexcel_spec_roadmap',
+      label: 'Specification Roadmap (1945–1995)',
+      title: 'Edexcel GCSE (9–1) Conflict in the Middle East Specification Roadmap',
+      icon: 'fa-solid fa-route',
+    },
   },
   usa: {
     textbook: {
@@ -312,6 +318,12 @@ export const CURRICULAR_PILLARS_CATALOG = {
       htmlUrl: '/units/usa/usa_master_retrieval_companion.html',
       pdfUrl: '/pdfs/USA_1954_1975_Master_Knowledge_Retrieval_Companion.pdf',
     },
+    overviewInfographic: {
+      slug: 'usa_paper3_exam_strategy_guide',
+      label: 'Paper 3 Exam Strategy Guide',
+      title: 'Mastering Edexcel GCSE Paper 3: USA 1954–1975 Exam Strategy Guide',
+      icon: 'fa-solid fa-graduation-cap',
+    },
   },
   edexcel_medicine: {
     textbook: {
@@ -331,6 +343,12 @@ export const CURRICULAR_PILLARS_CATALOG = {
       label: 'Retrieval Companion (140 Qs)',
       htmlUrl: '/units/edexcel_medicine/medicine_master_retrieval_companion.html',
       pdfUrl: '/pdfs/Medicine_Through_Time_Master_Knowledge_Retrieval_Companion.pdf',
+    },
+    overviewInfographic: {
+      slug: 'med_course_overview_c1250_present',
+      label: 'Course Overview (c1250–Present)',
+      title: 'Medicine in Britain: c1250–Present Master Course Overview & Timeline',
+      icon: 'fa-solid fa-map-location-dot',
     },
   },
   weimar_nazi_germany: {
@@ -425,6 +443,7 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
   const wb = config.workbook;
   const rc = config.retrieval;
   const cb = config.combined;
+  const ov = config.overviewInfographic;
 
   const hasDistinctTextbook = tb && wb && tb.htmlUrl !== wb.htmlUrl && tb.pdfUrl !== wb.pdfUrl;
 
@@ -432,6 +451,7 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
   const cleanWbTitle = (wb?.title || '').replace(/'/g, "\\'");
   const cleanRcTitle = (rc?.title || '').replace(/'/g, "\\'");
   const cleanCbTitle = (cb?.title || '').replace(/'/g, "\\'");
+  const cleanOvTitle = (ov?.title || ov?.label || '').replace(/'/g, "\\'");
 
   const textbookPill = hasDistinctTextbook
     ? `
@@ -501,6 +521,17 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
         </div>`
     : '';
 
+  const overviewPill = ov
+    ? `
+        <!-- Optional Pillar: Master Course Overview & Timeline Infographic -->
+        <div class="launchpad-pill-group pill-overview">
+          <button type="button" class="launchpad-pill-btn" onclick="if(window.openInfographicModal){window.openInfographicModal('${ov.slug}');}" title="Open ${cleanOvTitle} in visual lightbox">
+            <i class="${ov.icon || 'fa-solid fa-map-location-dot'}"></i>
+            <span>${ov.label}</span>
+          </button>
+        </div>`
+    : '';
+
   return `
     <div class="hero-curricular-launchpad">
       <div class="hero-launchpad-capsule">
@@ -508,6 +539,7 @@ export function renderHeroCurricularLaunchpad(unitId, unitData) {
         ${workbookPill}
         ${retrievalPill}
         ${combinedPill}
+        ${overviewPill}
       </div>
     </div>
   `;

@@ -3083,6 +3083,11 @@ img::after {
   background: rgba(79, 70, 229, 0.28);
 }
 
+.launchpad-pill-group.pill-overview {
+  border: 1px solid rgba(52, 211, 153, 0.55);
+  background: rgba(5, 150, 105, 0.28);
+}
+
 .launchpad-pill-btn {
   border: none;
   padding: 7px 12px 7px 14px;
@@ -3117,6 +3122,14 @@ img::after {
 
 .pill-combined .launchpad-pill-btn {
   background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+}
+
+.pill-overview .launchpad-pill-btn {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.pill-overview .launchpad-pill-btn:hover {
+  filter: brightness(1.15);
 }
 
 .launchpad-pill-pdf {
