@@ -306,7 +306,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           enquiry: 'How and why was the state of Israel established?',
           infographics: [
             {
-              slug: 'cme_kt1_1_road_to_statehood',
+              slug: 'cme_kt1_1_withdrawal_statehood',
               label: 'Road to Statehood',
               icon: 'fa-solid fa-timeline',
               title: 'The Road to Jewish Statehood (1945–1948)',

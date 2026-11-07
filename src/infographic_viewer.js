@@ -52,6 +52,9 @@ export function getLessonInfographicCount(unitId, lessonIdOrIndex) {
     if (item.lessonId && (item.lessonId === targetStr || item.lessonId === `lesson_${targetStr}`)) {
       return true;
     }
+    if (Array.isArray(item.lessonIds) && (item.lessonIds.includes(targetStr) || item.lessonIds.includes(`lesson_${targetStr}`))) {
+      return true;
+    }
     if (item.legacyLessonId && (item.legacyLessonId === targetStr || item.legacyLessonId === `lesson_${targetStr}`)) {
       return true;
     }
@@ -78,6 +81,9 @@ export async function getLessonInfographics(unitId, lessonIdOrIndex) {
 
   return unitList.filter((item) => {
     if (item.lessonId && (item.lessonId === targetStr || item.lessonId === `lesson_${targetStr}`)) {
+      return true;
+    }
+    if (Array.isArray(item.lessonIds) && (item.lessonIds.includes(targetStr) || item.lessonIds.includes(`lesson_${targetStr}`))) {
       return true;
     }
     if (item.legacyLessonId && (item.legacyLessonId === targetStr || item.legacyLessonId === `lesson_${targetStr}`)) {
@@ -1351,7 +1357,7 @@ export async function openInfographicModal(options) {
   if (typeof options === 'string') {
     // If slug passed
     const all = Object.values(manifest).filter(Array.isArray).flat();
-    const found = all.find((i) => i.slug === options || i.image === options);
+    const found = all.find((i) => i.slug === options || i.image === options || (Array.isArray(i.aliases) && i.aliases.includes(options)));
     if (found) {
       currentList = [found];
       currentIndex = 0;

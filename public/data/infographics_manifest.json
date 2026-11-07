@@ -17,7 +17,10 @@
       ],
       "image": "/images/infographics/cme/cme_kt1_1_withdrawal_statehood.webp",
       "fileSizeKb": 477,
-      "legacyLessonId": "lesson_2"
+      "legacyLessonId": "lesson_2",
+      "aliases": [
+        "cme_kt1_1_road_to_statehood"
+      ]
     },
     {
       "unit": "cme_new",
@@ -790,7 +793,11 @@
         "Total stagnation: Medical knowledge remained unchanged for centuries because the Church forbade dissection of human bodies."
       ],
       "image": "/images/infographics/medicine/med_kt1_1_causes_of_illness_chart.webp",
-      "fileSizeKb": 834
+      "fileSizeKb": 834,
+      "lessonIds": [
+        "lesson_1_1",
+        "lesson_1_2"
+      ]
     },
     {
       "unit": "edexcel_medicine",
@@ -848,11 +855,11 @@
     },
     {
       "unit": "edexcel_medicine",
-      "lessonId": "lesson_2_1",
+      "lessonId": "unit_overview",
       "slug": "med_renaissance_era_overview",
       "title": "The Medical Renaissance: Humanism, Dissection & Scientific Enquiry (c1500–c1700)",
       "topic": "Key Topic 2: Medical Renaissance in Britain, c1500–c1700",
-      "type": "lesson_summary",
+      "type": "era_overview",
       "aspect": "landscape",
       "keyPoints": [
         "Renaissance \"rebirth\": Decline of Church control over medical teaching; revival of direct observation and humanism.",
@@ -1010,11 +1017,11 @@
     },
     {
       "unit": "edexcel_medicine",
-      "lessonId": "lesson_3_1",
+      "lessonId": "unit_overview",
       "slug": "med_industrial_era_overview",
       "title": "Industrial Medicine: The Scientific Revolution & Germs (c1700–c1900)",
       "topic": "Key Topic 3: Medicine in Eighteenth & Nineteenth Century Britain",
-      "type": "lesson_summary",
+      "type": "era_overview",
       "aspect": "landscape",
       "keyPoints": [
         "Rapid urbanization: Industrial cities (Manchester, Leeds, London) suffered catastrophic overcrowding, filth, and low life expectancy.",
@@ -1227,11 +1234,11 @@
     },
     {
       "unit": "edexcel_medicine",
-      "lessonId": "lesson_4_1",
+      "lessonId": "unit_overview",
       "slug": "med_modern_era_overview",
       "title": "Modern Medicine: The High-Tech, Genetic & Pharmaceutical Era (c1900–Present)",
       "topic": "Key Topic 4: Medicine in Modern Britain, c1900–present",
-      "type": "lesson_summary",
+      "type": "era_overview",
       "aspect": "landscape",
       "keyPoints": [
         "Genetic breakthrough: Watson, Crick, Franklin & Wilkins discover the double helix structure of DNA in 1953.",
@@ -1404,7 +1411,11 @@
         "Mobile X-ray vans: Marie Curie and British army deployed mobile X-ray units to locate shrapnel and bullets before surgery."
       ],
       "image": "/images/infographics/medicine/med_kt5_5_wwi_medical_innovations.webp",
-      "fileSizeKb": 451
+      "fileSizeKb": 451,
+      "lessonIds": [
+        "lesson_5_5",
+        "lesson_5_6"
+      ]
     },
     {
       "unit": "edexcel_medicine",
