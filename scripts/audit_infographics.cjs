@@ -134,9 +134,24 @@ for (const unitId of units) {
         }
       }
     }
+
+    // 5. Disciplinary Hinge Question & Model Answer Quality Gate
+    const ghostSourceRegex = /\b(this source|the source|Source [A-Z]|the photograph|the cartoon|the extract|the author|in the source)\b/i;
+    if (!item.hingeQuestion || typeof item.hingeQuestion !== 'string' || item.hingeQuestion.trim().length < 20) {
+      console.error(`  ❌ ${prefix} Missing or too short hingeQuestion!`);
+      totalErrors++;
+    } else if (ghostSourceRegex.test(item.hingeQuestion)) {
+      console.error(`  ❌ ${prefix} Hinge question references unseen source: "${item.hingeQuestion}"`);
+      totalErrors++;
+    }
+
+    if (!item.modelAnswer || typeof item.modelAnswer !== 'string' || item.modelAnswer.trim().length < 50) {
+      console.error(`  ❌ ${prefix} Missing or too short modelAnswer!`);
+      totalErrors++;
+    }
   });
 
-  // 5. Runtime Query Isolation & Intra-Lesson Parity Gate
+  // 6. Runtime Query Isolation & Intra-Lesson Parity Gate
   lessons.forEach((l, lIdx) => {
     const matchedMats = getLessonInfographicsSyncLocal(unitId, l.id);
     // Check that each matched mat strictly belongs to this lesson

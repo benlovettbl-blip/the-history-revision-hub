@@ -19,7 +19,9 @@
       "fileSizeKb": 477,
       "aliases": [
         "cme_kt1_1_road_to_statehood"
-      ]
+      ],
+      "hingeQuestion": "Why did the British Mandate in Palestine become politically and militarily untenable by 1947, forcing Britain to surrender control to the United Nations?",
+      "modelAnswer": "The British Mandate collapsed under the combined pressure of conflicting wartime pledges, violent Jewish paramilitary insurgency (such as the 1946 King David Hotel bombing), and global diplomatic outrage over Holocaust refugee internment. Exhausted by WWII debt, Britain could no longer sustain the military casualties or international condemnation, compelling the Attlee government to refer Palestine to the UN in February 1947 without implementing an orderly transition."
     },
     {
       "unit": "cme_new",
@@ -37,7 +39,9 @@
         "Armistice demarcation (Green Line) without permanent peace treaties or recognized borders."
       ],
       "image": "/images/infographics/cme/cme_kt1_2_aftermath_refugees.webp",
-      "fileSizeKb": 314
+      "fileSizeKb": 314,
+      "hingeQuestion": "To what extent was the outcome of the 1948–49 Arab-Israeli War determined by military coordination rather than manpower numbers?",
+      "modelAnswer": "Although five Arab nations invaded simultaneously, the newly formed Israel Defense Forces (IDF) possessed unified command under David Ben-Gurion, superior European combat experience, and clandestine Czechoslovak arms deliveries. In contrast, the Arab coalition suffered from deep mutual distrust between King Abdullah of Jordan and Egypt, uncoordinated operational planning, and fragmented supply lines, enabling the IDF to defeat Arab armies in separate tactical phases."
     },
     {
       "unit": "cme_new",
@@ -55,7 +59,9 @@
         "1958: Creation of the United Arab Republic (Egypt & Syria) deepening Israeli encirclement fears."
       ],
       "image": "/images/infographics/cme/cme_kt1_3_increased_tension.webp",
-      "fileSizeKb": 579
+      "fileSizeKb": 579,
+      "hingeQuestion": "How did Gamal Abdel Nasser's policy of positive neutralism transform the Arab-Israeli conflict into an active Cold War battleground?",
+      "modelAnswer": "By refusing to align formally with Western defense pacts like the Baghdad Pact, Nasser successfully played the superpowers against each other. When the US canceled funding for the Aswan High Dam in 1956, Nasser turned to the Soviet Union via the 1955 Czechoslovak arms deal. This introduced advanced Soviet weaponry into the Middle East, transforming regional Arab-Israeli friction into an ideological flashpoint of Cold War superpower rivalry."
     },
     {
       "unit": "cme_new",
@@ -73,7 +79,9 @@
         "Stationing of UNEF peacekeepers in Sinai and reopening of the Straits of Tiran to Israeli shipping."
       ],
       "image": "/images/infographics/cme/cme_kt1_3_suez_security_impact.webp",
-      "fileSizeKb": 364
+      "fileSizeKb": 364,
+      "hingeQuestion": "Why did the 1956 Suez Crisis represent a total tactical victory for Britain, France, and Israel, but an overwhelming geopolitical triumph for Nasser?",
+      "modelAnswer": "Militarily, Israeli forces routed Egyptian troops across Sinai while Anglo-French paratroopers seized Port Said with minimal losses. However, US President Eisenhower intervened with devastating financial threats against sterling, forcing an immediate, humiliating Anglo-French withdrawal. Nasser retained ownership of the nationalized canal, was hailed across the Arab world as the defiant champion of anti-imperialism, and solidified unchallenged leadership of Pan-Arab nationalism."
     },
     {
       "unit": "cme_new",
@@ -91,7 +99,9 @@
         "Closure of the Straits of Tiran on 22 May 1967 viewed by Israel as an explicit casus belli."
       ],
       "image": "/images/infographics/cme/cme_kt2_1_arab_world_tensions.webp",
-      "fileSizeKb": 595
+      "fileSizeKb": 595,
+      "hingeQuestion": "Which factor was more decisive in escalating tensions between 1964 and June 1967: cross-border skirmishes with Syria or Nasser's closure of the Straits of Tiran?",
+      "modelAnswer": "While Syrian artillery bombardments from the Golan Heights and PLO fedayeen raids provoked severe Israeli retaliation, Nasser's closure of the Straits of Tiran in May 1967 was the decisive catalyst. Israel had declared in 1957 that blockading the Gulf of Aqaba was an explicit casus belli. Combined with Nasser expelling the UN Emergency Force (UNEF) and mobilizing 100,000 troops in Sinai, it convinced Israeli military planners that a preemptive strike was an existential necessity."
     },
     {
       "unit": "cme_new",
@@ -109,7 +119,9 @@
         "Khartoum Summit (September 1967): Arab League adopts the \"Three No's\" (no peace, no recognition, no negotiations)."
       ],
       "image": "/images/infographics/cme/cme_kt2_2_six_day_war.webp",
-      "fileSizeKb": 461
+      "fileSizeKb": 461,
+      "hingeQuestion": "Why did the territorial expansion achieved by Israel in June 1967 create profound long-term political vulnerabilities despite its total military triumph?",
+      "modelAnswer": "Operation Focus destroyed the Egyptian and Syrian air forces within hours, enabling Israel to capture the Sinai Peninsula, Gaza Strip, West Bank, Old Jerusalem, and Golan Heights in just six days. However, seizing the West Bank and Gaza absorbed over one million Palestinian Arabs under military occupation, transforming Israel from an embattled state fighting for survival into an occupying power, sparking decades of civil resistance and international diplomatic isolation under UN Resolution 242."
     },
     {
       "unit": "cme_new",
@@ -127,7 +139,9 @@
         "Israel launches Operation Wrath of God to assassinate individuals linked to Munich."
       ],
       "image": "/images/infographics/cme/cme_kt2_4_international_terrorism.webp",
-      "fileSizeKb": 347
+      "fileSizeKb": 347,
+      "hingeQuestion": "Why did Palestinian fedayeen groups turn to international airline hijackings and high-profile terrorism after 1968 rather than conventional guerrilla warfare?",
+      "modelAnswer": "After the 1967 defeat proved conventional Arab state militaries could not liberate Palestine, the PLO under Yasser Arafat sought independent agency. However, Israel's fortified Jordan Valley borders and superior intelligence thwarted rural guerrilla insurrections. Factions like the PFLP turned to dramatic international spectacle—such as the Dawson's Field hijackings and the 1972 Munich Olympics massacre—to bypass Arab state control, provoke international shock, and forcefully thrust the Palestinian national cause onto the global diplomatic agenda."
     },
     {
       "unit": "cme_new",
@@ -145,7 +159,9 @@
         "Proved military dominance alone could not ensure security, forcing both sides toward diplomacy."
       ],
       "image": "/images/infographics/cme/cme_kt2_5_yom_kippur_status_quo.webp",
-      "fileSizeKb": 443
+      "fileSizeKb": 443,
+      "hingeQuestion": "Why did Anwar Sadat launch the Yom Kippur War in October 1973 despite knowing Egypt could not achieve a total military conquest of Israel?",
+      "modelAnswer": "Sadat's strategic objective was diplomatic rather than military annihilation. Recognizing that the Israeli 'conceptzia' (belief in permanent military invulnerability) and superpower detente had frozen the status quo, Sadat executed Operation Badr to cross the Suez Canal and breach the Bar Lev Line. By inflicting catastrophic Israeli casualties and proving the Arab armies could fight effectively, Sadat successfully forced the United States into high-level diplomatic intervention."
     },
     {
       "unit": "cme_new",
@@ -163,7 +179,9 @@
         "Lays the direct foundation for Henry Kissinger's shuttle diplomacy and the 1979 Camp David treaty."
       ],
       "image": "/images/infographics/cme/cme_kt2_5_yom_kippur_turning_point.webp",
-      "fileSizeKb": 330
+      "fileSizeKb": 330,
+      "hingeQuestion": "How did the deployment of OPEC's oil embargo during the 1973 Yom Kippur War permanently alter the balance of international diplomacy in the Middle East?",
+      "modelAnswer": "By reducing oil production and imposing a total export embargo against nations supporting Israel (including the US and the Netherlands), OAPEC quadrupled global crude prices, triggering severe Western inflation and fuel rationing. This proved that Arab states possessed an economic weapon capable of destabilizing Western economies, compelling US Secretary of State Henry Kissinger to prioritize Arab diplomatic interests and launch active shuttle diplomacy."
     },
     {
       "unit": "cme_new",
@@ -181,7 +199,9 @@
         "Menachem Begin and Sadat invited to Camp David summit by US President Jimmy Carter in 1978."
       ],
       "image": "/images/infographics/cme/cme_kt3_1_diplomatic_negotiations.webp",
-      "fileSizeKb": 353
+      "fileSizeKb": 353,
+      "hingeQuestion": "Why was Henry Kissinger's step-by-step 'shuttle diplomacy' effective in securing disengagement agreements between 1974 and 1975 where grand peace conferences failed?",
+      "modelAnswer": "Kissinger intentionally avoided intractable, existential disputes like the status of Jerusalem, Palestinian sovereignty, and permanent borders. Instead, he shuttled between Cairo, Damascus, and Jerusalem to broker limited, technical military disengagement accords (Sinai I, Sinai II, and the Golan disengagement). This incremental approach built practical operational confidence and secured Israeli territorial concessions without forcing either side to surrender core ideological claims."
     },
     {
       "unit": "cme_new",
@@ -199,7 +219,9 @@
         "October 1981: Anwar Sadat assassinated by Islamist extremists during a military parade in Cairo."
       ],
       "image": "/images/infographics/cme/cme_kt3_1_camp_david_timeline.webp",
-      "fileSizeKb": 404
+      "fileSizeKb": 404,
+      "hingeQuestion": "Why did the 1979 Egypt-Israel Peace Treaty succeed in stabilizing Israel's southern border while causing Egypt's total diplomatic isolation in the Arab world?",
+      "modelAnswer": "The treaty succeeded because it satisfied both states' vital bilateral interests: Israel dismantled Yamit settlements and returned the entire Sinai Peninsula, while Egypt granted full diplomatic recognition and demilitarized the border. However, because Sadat secured peace separately without extracting a binding, sovereign self-determination framework for the Palestinians, the Arab League expelled Egypt, relocated its headquarters from Cairo, and branded Sadat a traitor, culminating in his 1981 assassination."
     },
     {
       "unit": "cme_new",
@@ -217,7 +239,9 @@
         "Kahan Commission holds Sharon indirectly responsible; massive anti-war protests in Tel Aviv (400,000 march)."
       ],
       "image": "/images/infographics/cme/cme_kt3_2_lebanon_conflict.webp",
-      "fileSizeKb": 170
+      "fileSizeKb": 170,
+      "hingeQuestion": "How did the 1982 Israeli invasion of Lebanon undermine Israel's international standing and reshape Lebanese political resistance?",
+      "modelAnswer": "Operation Peace for Galilee expanded from a limited 40km border buffer into an aggressive siege of Beirut aimed at expelling the PLO. The subsequent Sabra and Shatila massacre—where Lebanese Christian Phalangist militias slaughtered hundreds of Palestinian refugees while the IDF controlled perimeter security—provoked unprecedented domestic protests in Tel Aviv and global condemnation. Furthermore, the occupation fostered the emergence of Hezbollah, a far more radical, Iranian-backed Shiite militia."
     },
     {
       "unit": "cme_new",
@@ -235,7 +259,9 @@
         "Israeli policy of \"Iron Fist\" draws intense international media criticism; proves military force cannot suppress political demands."
       ],
       "image": "/images/infographics/cme/cme_kt3_2_first_intifada_overview.webp",
-      "fileSizeKb": 534
+      "fileSizeKb": 534,
+      "hingeQuestion": "How did the First Intifada (1987–1993) shift the strategic center of gravity of Palestinian resistance from external exiled leaders to internal grassroots activists?",
+      "modelAnswer": "Sparked by a fatal traffic collision in Gaza, the Intifada was organized internally by local popular committees, youth stone-throwers (shabab), and merchants using strikes, boycotts, and barricades, catching the exiled PLO leadership in Tunis completely off guard. Television broadcasts of heavily armed IDF soldiers using harsh physical dispersal tactics against stone-throwing youths decisively shattered Israel's claim to an enlightened occupation and galvanized international pressure for negotiations."
     },
     {
       "unit": "cme_new",
@@ -253,7 +279,9 @@
         "Shifts focus from cross-border military conflict to internal territorial sovereignty."
       ],
       "image": "/images/infographics/cme/cme_kt3_2_plo_israel_timeline.webp",
-      "fileSizeKb": 355
+      "fileSizeKb": 355,
+      "hingeQuestion": "Why did Yasser Arafat's 1988 renunciation of terrorism and recognition of UN Resolution 242 represent a monumental turning point in the peace process?",
+      "modelAnswer": "By accepting UN Resolution 242 and 338, the PLO formally accepted a two-state solution, implicitly recognizing Israel's right to exist within pre-1967 borders and abandoning its founding 1968 charter calling for the total eradication of the Zionist state. This historic concession satisfied US preconditions, opened official Washington-PLO diplomatic dialogues, and laid the direct foundation for the secret back-channel negotiations in Oslo."
     },
     {
       "unit": "cme_new",
@@ -272,7 +300,9 @@
         "November 1995: Prime Minister Yitzhak Rabin assassinated by Jewish extremist Yigal Amir at Tel Aviv peace rally."
       ],
       "image": "/images/infographics/cme/cme_kt3_3_oslo_accords.webp",
-      "fileSizeKb": 350
+      "fileSizeKb": 350,
+      "hingeQuestion": "Why did the phased gradualism of the 1993 Oslo Accords ultimately fail to prevent the collapse of the Israeli-Palestinian peace process?",
+      "modelAnswer": "Oslo created the Palestinian Authority with limited administrative self-rule over Gaza and Jericho, but postponed the most explosive 'final status' issues—Jerusalem, right of return for refugees, and dismantling Jewish settlements—to future talks. This created a lethal void exploited by extremists on both sides: Hamas launched suicide bombings to derail the accords, while Israeli settlement expansion accelerated and prime minister Yitzhak Rabin was assassinated by a Jewish nationalist in 1995."
     },
     {
       "unit": "cme_new",
@@ -290,7 +320,9 @@
         "Examiner's Toolkit: Question 1 (8 marks consequences), Question 2 (8 marks narrative), Question 3 (16 marks importance)."
       ],
       "image": "/images/infographics/cme/cme_edexcel_spec_roadmap.webp",
-      "fileSizeKb": 601
+      "fileSizeKb": 601,
+      "hingeQuestion": "How did the central nature of the Middle East conflict fundamentally transform between 1948 and 1995?",
+      "modelAnswer": "Between 1948 and 1973, the conflict was primarily an interstate war fought by conventional standing armies (Egypt, Syria, Jordan against Israel) over territory and sovereignty. Following the 1979 Egypt-Israel Peace Treaty and the 1982 Lebanon invasion, it transformed into an asymmetrical, communal struggle between Israeli state forces and grassroots Palestinian resistance organizations (the PLO, Hamas, and civilian protesters) over occupation, civil rights, and statehood."
     },
     {
       "unit": "cme_new",
@@ -307,7 +339,9 @@
         "Visual iconography for all major peace treaties and military confrontations."
       ],
       "image": "/images/infographics/cme/cme_narrative_chronology_roadmap.webp",
-      "fileSizeKb": 507
+      "fileSizeKb": 507,
+      "hingeQuestion": "Across the fifty-year chronology from 1945 to 1995, why did external superpower intervention often obstruct peace negotiations rather than accelerate them?",
+      "modelAnswer": "During the Cold War, the United States and the Soviet Union treated Middle Eastern belligerents as geopolitical proxies. Massive arms shipments (such as Soviet SAM missiles to Egypt/Syria and American emergency airlifts during the 1973 war) enabled regional powers to sustain military belligerence without compromise. Only when superpower rivalry receded in the early 1990s following the Soviet collapse did direct bilateral talks (Madrid and Oslo) become diplomatically viable."
     },
     {
       "unit": "cme_new",
@@ -323,7 +357,9 @@
         "Dual eras: 1945–1967 Statehood & Regional Escalation vs 1973–1995 Global Impact & Peace Search."
       ],
       "image": "/images/infographics/cme/cme_visual_course_overview.webp",
-      "fileSizeKb": 633
+      "fileSizeKb": 633,
+      "hingeQuestion": "What role did geographical control of high ground and water resources play in sustaining military conflicts across the Middle East?",
+      "modelAnswer": "Geography dictated strategic vulnerability: the Golan Heights gave Syrian gunners direct artillery command over Israeli settlements in Galilee, while the West Bank provided strategic depth overlooking Israel's narrow coastal corridor. Crucially, control of the Jordan River headwaters and mountain aquifers made territorial compromise an existential security threat, as neither side could surrender high ground without risking hydrological strangulation or aerial vulnerability."
     },
     {
       "unit": "cme_new",
@@ -341,7 +377,9 @@
         "Examiner Golden Rule: Always go beyond the two provided stimulus points to access Level 4 top marks."
       ],
       "image": "/images/infographics/cme/cme_paper2_exam_guide.webp",
-      "fileSizeKb": 370
+      "fileSizeKb": 370,
+      "hingeQuestion": "How can an analytical student distinguish between immediate tactical triggers and deep-seated structural causation in Edexcel Period Study questions?",
+      "modelAnswer": "A top-grade response avoids linear chronological description by establishing a clear causal hierarchy. While immediate triggers (such as the assassination attempt on Shlomo Argov in 1982 or the Jabalya truck crash in 1987) ignited conflict, they only caused war because volatile structural conditions—entrenched refugee displacement, border militarization, and unresolved territorial occupations—had already rendered the status quo fundamentally unstable."
     }
   ],
   "eee": [
@@ -361,7 +399,9 @@
         "Elizabeth's personal strengths: Highly educated, fluent in four languages, adept at political patronage."
       ],
       "image": "/images/infographics/eee/eee_kt1_1_accession_crisis.webp",
-      "fileSizeKb": 421
+      "fileSizeKb": 421,
+      "hingeQuestion": "Why did Elizabeth I's gender and questionable legitimacy create an immediate constitutional crisis upon her accession in 1558?",
+      "modelAnswer": "Sixteenth-century patriarchal society viewed female monarchy as unnatural and inherently weak, fearing a queen could not lead troops in battle. Furthermore, Catholics regarded Elizabeth as illegitimate because the Pope had never sanctioned Henry VIII's divorce from Catherine of Aragon, leaving Elizabeth surrounded by hostile Catholic powers in France and Spain with an empty royal treasury and no recognized heir."
     },
     {
       "unit": "eee",
@@ -379,7 +419,9 @@
         "Deliberate compromise: Retained moderate Catholic ceremony while establishing Protestant doctrine."
       ],
       "image": "/images/infographics/eee/eee_kt1_2_religious_settlement.webp",
-      "fileSizeKb": 434
+      "fileSizeKb": 434,
+      "hingeQuestion": "Why was adopting the title 'Supreme Governor' rather than 'Supreme Head' essential to the survival of the 1559 Elizabethan Religious Settlement?",
+      "modelAnswer": "Adopting 'Supreme Governor' in the Act of Supremacy was a calculated theological compromise. It satisfied moderate Catholics who held that Christ or the Pope alone could be head of the church, while placating Puritans who believed no woman could claim spiritual headship, enabling Elizabeth to enforce royal supremacy over the clergy without provoking an immediate Catholic insurrection."
     },
     {
       "unit": "eee",
@@ -397,7 +439,9 @@
         "Arrival of trained Jesuit and Seminary priests from Douai to sustain underground Catholicism."
       ],
       "image": "/images/infographics/eee/eee_kt1_3_religious_challenges.webp",
-      "fileSizeKb": 439
+      "fileSizeKb": 439,
+      "hingeQuestion": "Why did the Elizabethan government treat Catholic missionary priests as political traitors rather than religious dissidents after 1570?",
+      "modelAnswer": "In 1570, Pope Pius V issued the papal bull Regnans in Excelsis, formally excommunicating Elizabeth and commanding English Catholics to depose her. Consequently, the Privy Council viewed Seminary priests and Jesuits trained abroad (such as Edmund Campion) not as harmless spiritual teachers, but as subversive agents of foreign powers sent to incite Catholic rebellion, passing the 1581 and 1585 Treason Acts making ordained Catholic priesthood punishable by execution."
     },
     {
       "unit": "eee",
@@ -415,7 +459,9 @@
         "Elizabeth's political dilemma: Reluctant to execute an anointed fellow monarch."
       ],
       "image": "/images/infographics/eee/eee_kt1_4_mary_scots_overview.webp",
-      "fileSizeKb": 458
+      "fileSizeKb": 458,
+      "hingeQuestion": "Why did Mary, Queen of Scots represent an existential threat to Elizabeth from the moment she arrived in England in 1568?",
+      "modelAnswer": "As Henry VII's great-granddaughter, Mary possessed a direct, undisputed royal pedigree that English Catholics deemed superior to Elizabeth's perceived illegitimacy. Because Elizabeth had no husband or heir, Mary served as an immediate, living figurehead for Catholic plots and foreign invasions backed by France, Spain, and the Papacy, turning her mere presence on English soil into a permanent national security threat."
     },
     {
       "unit": "eee",
@@ -432,7 +478,9 @@
         "Permanent diplomatic friction with France and Scotland during her captivity."
       ],
       "image": "/images/infographics/eee/eee_kt1_4_mary_stuart_problem.webp",
-      "fileSizeKb": 682
+      "fileSizeKb": 682,
+      "hingeQuestion": "Why did Elizabeth choose to hold Mary in permanent captivity for nineteen years rather than restore her to Scotland or execute her immediately?",
+      "modelAnswer": "Elizabeth faced a diplomatic dilemma: executing an anointed, sovereign monarch would establish a catastrophic precedent against royal divine right and provoke immediate war with Catholic France or Spain. Conversely, restoring Mary to the Scottish throne would return a hostile Catholic rival to England's northern border. Permanent, closely monitored captivity at Sheffield Castle neutralized Mary's physical autonomy while buying Elizabeth vital diplomatic time."
     },
     {
       "unit": "eee",
@@ -450,7 +498,9 @@
         "1584 Bond of Association: Oath pledging to execute anyone attempting to assassinate the Queen or benefiting from her death."
       ],
       "image": "/images/infographics/eee/eee_kt2_1_walsingham_spies.webp",
-      "fileSizeKb": 474
+      "fileSizeKb": 474,
+      "hingeQuestion": "How did Sir Francis Walsingham's intelligence network ensure the survival of the Elizabethan state against Catholic conspiracies?",
+      "modelAnswer": "Walsingham created a centralized intelligence network spanning 53 overseas posts and domestic informants, deploying agents provocateurs, interception of correspondence, and the master cryptanalyst Thomas Phelippes. By intercepting coded letters inside beer barrels during the 1586 Babington Plot, Walsingham entrapped Mary into explicitly approving Elizabeth's assassination, providing the decisive, unassailable evidence needed to compel Mary's execution."
     },
     {
       "unit": "eee",
@@ -468,7 +518,9 @@
         "February 1587: Execution of Mary, Queen of Scots at Fotheringhay Castle."
       ],
       "image": "/images/infographics/eee/eee_kt2_1_catholic_plots_timeline.webp",
-      "fileSizeKb": 516
+      "fileSizeKb": 516,
+      "hingeQuestion": "Why did Catholic plots against Elizabeth progressively escalate in foreign backing and radicalism between 1569 and 1586?",
+      "modelAnswer": "The 1569 Northern Rebellion was largely a localized insurrection by disenfranchised English northern earls. However, following the 1570 Papal Excommunication, plots became international conspiracies: the Ridolfi Plot (1571), Throckmorton Plot (1583), and Babington Plot (1586) directly coordinated Spanish invasion forces, French Catholic League mercenaries, and papal finance, seeking not merely religious toleration but Elizabeth's direct assassination and replacement by Mary."
     },
     {
       "unit": "eee",
@@ -486,7 +538,9 @@
         "1584 Treaty of Joinville: France and Spain form Catholic alliance against Protestantism."
       ],
       "image": "/images/infographics/eee/eee_kt2_2_spanish_rivalry.webp",
-      "fileSizeKb": 636
+      "fileSizeKb": 636,
+      "hingeQuestion": "How did English privateering in the New World transform commercial friction with Spain into an unavoidable geopolitical war?",
+      "modelAnswer": "Spain maintained a strict royal monopoly over trade in the Americas under the Treaty of Tordesillas. English privateers like Francis Drake plundered millions in silver from Spanish galleons (such as the Cacafuego), directly undermining Philip II's imperial treasury to finance his Dutch campaigns. When Elizabeth openly knighted Drake aboard the Golden Hind in 1581, she transformed commercial piracy into an official act of state defiance against the Spanish Empire."
     },
     {
       "unit": "eee",
@@ -504,7 +558,9 @@
         "Execution of Mary, Queen of Scots (1587) provides Philip with religious justification to claim the English crown."
       ],
       "image": "/images/infographics/eee/eee_kt2_2_road_to_armada.webp",
-      "fileSizeKb": 552
+      "fileSizeKb": 552,
+      "hingeQuestion": "Why did the 1584 Treaty of Joinville make direct open war between England and Spain inevitable?",
+      "modelAnswer": "The secret Treaty of Joinville united Philip II with the French Catholic League against Protestantism, eliminating the historic Anglo-French counterweight that had previously restrained Spain. Fearing a combined Catholic superpower controlling the Channel coast, Elizabeth signed the 1585 Treaty of Nonsuch, committing 7,400 English soldiers under Leicester to the Protestant Dutch rebels, effectively initiating direct, undeclared war with Spain."
     },
     {
       "unit": "eee",
@@ -522,7 +578,9 @@
         "Formal state of war declared, setting stage for full-scale Spanish invasion."
       ],
       "image": "/images/infographics/eee/eee_kt2_3_war_outbreak.webp",
-      "fileSizeKb": 583
+      "fileSizeKb": 583,
+      "hingeQuestion": "Why did the Earl of Leicester's military campaign in the Netherlands (1585–1587) prove a strategic and diplomatic disaster for Elizabeth?",
+      "modelAnswer": "Leicester accepted the title of Governor-General of the Low Countries without Elizabeth's permission, infuriating the Queen by appearing to usurp Dutch sovereignty and provoke Philip II into all-out war. Militarily, English forces were chronically underfunded, suffered widespread desertions, and failed to prevent the Duke of Parma from capturing key Flemish ports like Sluys, creating the exact invasion staging ground England had sought to avert."
     },
     {
       "unit": "eee",
@@ -539,7 +597,9 @@
         "Tilbury army camp established under Earl of Leicester to protect London."
       ],
       "image": "/images/infographics/eee/eee_kt2_3_england_war_spain.webp",
-      "fileSizeKb": 560
+      "fileSizeKb": 560,
+      "hingeQuestion": "Why was Francis Drake's 1587 raid on Cadiz ('Singeing the King of Spain's Beard') critical in preventing a 1587 Armada invasion?",
+      "modelAnswer": "Drake sailed into Cadiz harbor and destroyed over thirty Spanish warships and merchant vessels in 36 hours. Crucially, he burned vast supplies of seasoned wooden barrel staves and seized tons of food and water provisions. This delayed the Armada's launch by over a full year, forcing Spain to construct barrels from unseasoned wood that rotted food and contaminated fresh water supplies during the fateful 1588 voyage."
     },
     {
       "unit": "eee",
@@ -557,7 +617,9 @@
         "Battle of Gravelines (8 August): English gunnery batters Spanish ships; Protestant winds blow Armada north around Scotland and Ireland."
       ],
       "image": "/images/infographics/eee/eee_kt2_4_armada_defeat.webp",
-      "fileSizeKb": 532
+      "fileSizeKb": 532,
+      "hingeQuestion": "Which factor was most decisive in the defeat of the Spanish Armada: English naval tactics or Spanish logistical failure?",
+      "modelAnswer": "While English advantages—smaller, faster galleons designed by Hawkins, superior long-range culverin cannons, and the devastating midnight fireships at Gravelines—disrupted the crescent formation, Spanish structural and logistical failure was paramount. The Duke of Medina Sidonia was an inexperienced naval commander, communication with Parma's army trapped in Flanders was non-existent, and unseasoned water barrels contaminated rations before the ferocious Protestant Wind wrecked ships on the Scottish and Irish rocks."
     },
     {
       "unit": "eee",
@@ -575,7 +637,9 @@
         "Puritan opposition: Preachers condemned theatres as sinful houses of plague, crime, and temptation."
       ],
       "image": "/images/infographics/eee/eee_kt3_1_leisure_theatre.webp",
-      "fileSizeKb": 588
+      "fileSizeKb": 588,
+      "hingeQuestion": "Why did the rapid growth of public theatres in Elizabethan London provoke intense opposition from both the City Corporation and Puritans?",
+      "modelAnswer": "Puritans condemned theatres as sinful houses of immorality and vanity that drew citizens away from Sunday sermons, comparing actors to idle vagabonds. Simultaneously, the London City Corporation opposed them on practical civic grounds: playhouses outside the city walls (like The Globe and The Rose) attracted crowds of up to 3,000, creating public disorder, pickpocketing, brawls, and accelerating the spread of bubonic plague during epidemics."
     },
     {
       "unit": "eee",
@@ -593,7 +657,9 @@
         "Literacy rates increased (30% of men, 10% of women), but education remained sharply divided by gender and wealth."
       ],
       "image": "/images/infographics/eee/eee_kt3_1_education_learning.webp",
-      "fileSizeKb": 686
+      "fileSizeKb": 686,
+      "hingeQuestion": "How did humanist educational philosophy transform grammar school curricula and social mobility in Elizabethan England?",
+      "modelAnswer": "Humanist thought shifted education from narrow monastic theology toward classical literacy, civic virtue, and practical administration. Approximately 72 new grammar schools taught Latin grammar, rhetoric, and debate to sons of the gentry, yeomen, and merchants, producing a secular, literate administrative class capable of serving in royal governance and commerce without aristocratic birth."
     },
     {
       "unit": "eee",
@@ -611,7 +677,9 @@
         "Dissolution of the Monasteries under Henry VIII removed the traditional Catholic charity safety net."
       ],
       "image": "/images/infographics/eee/eee_kt3_2_poverty_causes.webp",
-      "fileSizeKb": 493
+      "fileSizeKb": 493,
+      "hingeQuestion": "Why was the dramatic rise in Elizabethan poverty caused primarily by long-term structural demographic shifts rather than bad harvests alone?",
+      "modelAnswer": "While catastrophic harvest failures in the 1590s triggered acute famine, the root crisis was structural: England's population surged from 2.8 million to over 4 million, causing intense competition for land, rampant inflation in food prices, and declining real wages. Furthermore, landlords enclosed common arable land for profitable sheep farming (enclosure), displacing thousands of tenant agricultural laborers into roaming vagrancy."
     },
     {
       "unit": "eee",
@@ -629,7 +697,9 @@
         "1601 Poor Relief Act (Elizabethan Poor Law): Established compulsory Poor Rate tax, Overseers of the Poor, and parish workhouses."
       ],
       "image": "/images/infographics/eee/eee_kt3_2_poor_laws.webp",
-      "fileSizeKb": 530
+      "fileSizeKb": 530,
+      "hingeQuestion": "How did the 1601 Poor Relief Act establish a revolutionary framework for state welfare in England?",
+      "modelAnswer": "The 1601 Act formalized a national, compulsory system of state intervention funded by local property taxation (the poor rate) administered by parish Overseers of the Poor. It institutionalized the crucial disciplinary division between the 'deserving poor' (impotent sick, aged, and orphans provided with indoor relief/apprenticeships) and the 'undeserving vagabonds' (idle sturdy beggars punished in Houses of Correction)."
     },
     {
       "unit": "eee",
@@ -647,7 +717,9 @@
         "Knighted on the deck of the Golden Hind by Elizabeth in 1581, enraging King Philip II."
       ],
       "image": "/images/infographics/eee/eee_kt3_3_drake_circumnavigation.webp",
-      "fileSizeKb": 436
+      "fileSizeKb": 436,
+      "hingeQuestion": "Why did Francis Drake's circumnavigation (1577–1580) produce profound geopolitical consequences far beyond its immediate financial plunder?",
+      "modelAnswer": "Drake returned with £400,000 in Spanish treasure—enough to pay off the entire national debt and fund foreign policy for years. Geopolitically, it demonstrated that English navigators could challenge Spain in the Pacific Ocean, claimed 'Nova Albion' (California) for the English Crown, opened future trade routes to the Moluccas spice islands, and elevated England into a formidable global maritime power."
     },
     {
       "unit": "eee",
@@ -665,7 +737,9 @@
         "Laid the foundations for British maritime supremacy and commercial empire."
       ],
       "image": "/images/infographics/eee/eee_kt3_3_exploration_discovery.webp",
-      "fileSizeKb": 713
+      "fileSizeKb": 713,
+      "hingeQuestion": "How did navigational technology and joint-stock company structures enable English merchants to bypass traditional European trade routes?",
+      "modelAnswer": "Navigational tools like astrolabes, magnetic compasses, Mercator projection maps, and sturdier ocean-going galleons enabled transoceanic voyages. Simultaneously, joint-stock corporations (like the Muscovy Company, Levant Company, and 1600 East India Company) pooled investment capital and spread financial risk across hundreds of shareholders, enabling England to establish direct global trading outposts without bankrupting individual merchants."
     },
     {
       "unit": "eee",
@@ -683,7 +757,9 @@
         "1590 return: Roanoke settlement found completely abandoned with only the word \"CROATOAN\" carved on a post."
       ],
       "image": "/images/infographics/eee/eee_kt3_4_roanoke_failure.webp",
-      "fileSizeKb": 515
+      "fileSizeKb": 515,
+      "hingeQuestion": "Why did the 1585 and 1587 attempts to establish an English colony at Roanoke collapse into complete failure?",
+      "modelAnswer": "The colonists lacked essential agricultural skills, consisting heavily of gentlemen and soldiers who alienated local Algonquian tribes by executing Chief Wingina over a stolen silver cup. Furthermore, treacherous sandbars damaged supply ships, destroying vital food barrels. When the 1588 Spanish Armada outbreak prevented relief ships from sailing for three years, John White returned in 1590 to find the colony abandoned with only the carving 'CROATOAN'."
     },
     {
       "unit": "eee",
@@ -701,7 +777,9 @@
         "Paved the way for subsequent successful permanent English colonisation at Jamestown (1607)."
       ],
       "image": "/images/infographics/eee/eee_kt3_4_raleigh_virginia.webp",
-      "fileSizeKb": 557
+      "fileSizeKb": 557,
+      "hingeQuestion": "How did Sir Walter Raleigh lay the foundational economic and ideological blueprint for the British Empire despite never setting foot in Virginia himself?",
+      "modelAnswer": "Raleigh held royal patent rights from Elizabeth to discover and colonize heathen lands. He funded exploration expeditions, commissioned Thomas Harriot and John White to produce scientific surveys and illustrations, named Virginia in honor of the Virgin Queen, and popularized the economic potential of tobacco and naval timber, establishing the blueprint that paved the way for successful permanent colonization at Jamestown in 1607."
     }
   ],
   "edexcel_medicine": [
@@ -721,7 +799,9 @@
         "Western Front Historic Environment (1914–1918): Trench trauma, Gas gangrene, Mobile X-rays, and Blood banks."
       ],
       "image": "/images/infographics/medicine/med_course_overview_c1250_present.webp",
-      "fileSizeKb": 522
+      "fileSizeKb": 522,
+      "hingeQuestion": "Why did major shifts in understanding the causes of disease between 1250 and 1900 rarely translate into immediate improvements in medical treatment?",
+      "modelAnswer": "Medical progress was chronically asymmetrical: breakthroughs in anatomical knowledge (Vesalius in 1543) or physiology (Harvey in 1628) disproved ancient Galenic doctrines but provided doctors with no new weapons against disease. Until Robert Koch identified specific bacterial pathogens and Paul Ehrlich developed targeted chemical synthetic drugs (magic bullets) in the late 19th and early 20th centuries, doctors continued to rely on traditional bloodletting and herbal remedies."
     },
     {
       "unit": "edexcel_medicine",
@@ -739,7 +819,9 @@
         "Decisive shift: Government evolved from complete non-interference (laissez-faire) into a proactive protector of national health."
       ],
       "image": "/images/infographics/medicine/med_ladder_of_progress_synoptic.webp",
-      "fileSizeKb": 438
+      "fileSizeKb": 438,
+      "hingeQuestion": "How did the transition from a laissez-faire governmental ideology to state interventionism transform British public health between 1848 and 1948?",
+      "modelAnswer": "During the early 19th century, laissez-faire philosophy held that government should not interfere in private property or local taxation. However, Edwin Chadwick's 1842 Sanitary Report and John Snow's 1854 cholera discovery proved that filth caused disease. The 1875 Public Health Act marked a decisive constitutional shift by making clean water and sewage disposal compulsory for all local councils, culminating in Aneurin Bevan's establishment of the fully state-funded National Health Service in 1948."
     },
     {
       "unit": "edexcel_medicine",
@@ -757,7 +839,9 @@
         "Control of Medical Knowledge: Monasteries and universities strictly preserved and taught Galen because his Creator theology aligned with Genesis."
       ],
       "image": "/images/infographics/medicine/med_medieval_era_overview.webp",
-      "fileSizeKb": 585
+      "fileSizeKb": 585,
+      "hingeQuestion": "Why was medieval hospital provision designed primarily around spiritual care rather than curative medical treatment?",
+      "modelAnswer": "Medieval Christian theology held that illness was sent by God as a test of faith or punishment for sin. Hospitals were run by monks and nuns who prioritized prayer, religious confession, and spiritual cleanliness over physical cure. Patients received warmth, food, and clean bedding, while infectious diseases, pregnant women, and terminal cases were turned away because the hospital's primary purpose was saving the patient's immortal soul rather than curing their body."
     },
     {
       "unit": "edexcel_medicine",
@@ -779,7 +863,9 @@
       "lessonIds": [
         "lesson_1_1",
         "lesson_1_2"
-      ]
+      ],
+      "hingeQuestion": "Why did the Catholic Church actively enforce and protect the ancient medical theories of Galen and Hippocrates for over 300 years?",
+      "modelAnswer": "Galen wrote that the complex human body had been deliberately created by a single supreme Designer with a divine purpose (teleology). This aligned perfectly with Christian doctrine. Because the Church controlled university education, monastic libraries, and the licensing of physicians, questioning Galen was branded heresy, locking European medical thinking into the Theory of the Four Humours until the Renaissance."
     },
     {
       "unit": "edexcel_medicine",
@@ -797,7 +883,9 @@
         "Religious prevention: Chanting litanies, wearing amulets, fasting, and making monetary donations to monasteries."
       ],
       "image": "/images/infographics/medicine/med_kt1_3_medieval_prevention_treatment.webp",
-      "fileSizeKb": 770
+      "fileSizeKb": 770,
+      "hingeQuestion": "Why was the Theory of Opposites considered a revolutionary development in humorist medical treatment despite being completely ineffective against bacterial infection?",
+      "modelAnswer": "Developed by Galen, the Theory of Opposites provided doctors with an overarching rational system for treatment rather than relying on superstition or chance. If a patient suffered from an excess of cold, wet phlegm, the doctor prescribed hot, dry remedies (such as pepper or mustard). Although useless against real pathogens, it gave medieval physicians a structured, logical diagnostic framework that gave comfort and consistency to patients."
     },
     {
       "unit": "edexcel_medicine",
@@ -815,7 +903,9 @@
         "Social consequences: Severe agricultural labour shortages led to peasants demanding higher wages, weakening feudalism."
       ],
       "image": "/images/infographics/medicine/med_kt1_5_black_death_revision_guide.webp",
-      "fileSizeKb": 812
+      "fileSizeKb": 812,
+      "hingeQuestion": "Why did the 1348 Black Death produce catastrophic mortality rates compared to ordinary medieval epidemics?",
+      "modelAnswer": "The Black Death was caused by the Yersinia pestis bacterium carried by rat fleas, transmitting both bubonic plague (via flea bites causing agonizing buboes) and pneumonic plague (spread by airborne coughing). Medieval medical practitioners possessed zero understanding of contagion or bacteria, attributing the plague to divine wrath or foul miasma, leading to ineffective treatments like bloodletting and carrying posies while unhygienic, crowded towns enabled rapid vector proliferation."
     },
     {
       "unit": "edexcel_medicine",
@@ -833,7 +923,9 @@
         "Breakdown of religious authority: So many parish priests died administering last rites that uneducated clergy were hastily ordained."
       ],
       "image": "/images/infographics/medicine/med_kt1_5_black_death_overview.webp",
-      "fileSizeKb": 875
+      "fileSizeKb": 875,
+      "hingeQuestion": "Why did religious responses like the Flagellants fail to halt the Black Death while unintentionally spreading the epidemic further?",
+      "modelAnswer": "Believing the plague was divine punishment for human sins, groups like the Brotherhood of the Flagellants whipped themselves in public squares to atone for God's anger. However, their open, bleeding wounds became severe vectors of infection. Furthermore, marching from town to town in large processions spread plague-carrying fleas directly into previously uninfected settlements."
     },
     {
       "unit": "edexcel_medicine",
@@ -851,7 +943,9 @@
         "Royal patronage: Monarchs granted anatomical charters allowing lawful dissection of executed criminals."
       ],
       "image": "/images/infographics/medicine/med_renaissance_era_overview.webp",
-      "fileSizeKb": 525
+      "fileSizeKb": 525,
+      "hingeQuestion": "How did the invention of the movable type printing press in c1440 accelerate the Medical Renaissance across Europe?",
+      "modelAnswer": "Before Gutenberg's printing press, medical manuscripts were copied by hand by monks who censored any ideas contradicting Galen or Church doctrine. The press enabled rapid, exact mass production of medical treatises and anatomical illustrations (such as Vesalius's Fabrica) without copying errors. Scientific texts spread rapidly across European universities, allowing physicians to debate, replicate, and verify anatomical discoveries independently of clerical control."
     },
     {
       "unit": "edexcel_medicine",
@@ -869,7 +963,9 @@
         "The Renaissance paradox: Medical theory transformed, but ordinary patients still purged, bled, and bought Galenic herbs."
       ],
       "image": "/images/infographics/medicine/med_kt2_1_medical_renaissance_evolution.webp",
-      "fileSizeKb": 442
+      "fileSizeKb": 442,
+      "hingeQuestion": "Why was the foundation of the Royal Society in 1660 crucial to legitimizing modern scientific medical methodology?",
+      "modelAnswer": "Under its motto 'Nullius in verba' ('Take nobody's word for it'), the Royal Society institutionalized empirical observation and laboratory experimentation over ancient authority. By publishing the journal Philosophical Transactions, the Society created a peer-reviewed scientific forum where doctors and scientists shared microscopic observations, blood transfusion experiments, and dissection findings, replacing medieval blind faith with verified evidence."
     },
     {
       "unit": "edexcel_medicine",
@@ -887,7 +983,9 @@
         "Causal impact: Shifted medicine away from unique individual humeral imbalances toward diagnosing specific classified illnesses."
       ],
       "image": "/images/infographics/medicine/med_kt2_2_thomas_sydenham.webp",
-      "fileSizeKb": 684
+      "fileSizeKb": 684,
+      "hingeQuestion": "Why was Thomas Sydenham given the title 'The English Hippocrates' for his revolution in clinical diagnosis?",
+      "modelAnswer": "Sydenham rejected the prevailing belief that every patient's illness was unique to their individual humorist balance. Instead, through meticulous bedside observation, he documented patterns of symptoms, classifying diseases into distinct species just as botanists classified plants. His 1676 book Observationes Medicae proved that specific diseases (like scarlet fever and measles) had distinct clinical courses requiring targeted treatment (such as cinchona bark for malaria)."
     },
     {
       "unit": "edexcel_medicine",
@@ -905,7 +1003,9 @@
         "Lasting legacy: Inspired generations of anatomists to question ancient medical dogma and rely on direct empirical evidence."
       ],
       "image": "/images/infographics/medicine/med_kt2_3_andreas_vesalius_fabrica.webp",
-      "fileSizeKb": 504
+      "fileSizeKb": 504,
+      "hingeQuestion": "How did Andreas Vesalius's 1543 work De Humani Corporis Fabrica permanently undermine the absolute authority of Galen?",
+      "modelAnswer": "Vesalius performed human dissections himself rather than sitting in a high chair while a barber-surgeon dissected. Through direct observation of human cadavers, Vesalius proved over 300 of Galen's anatomical claims were wrong—such as showing the human jawbone consists of one bone rather than two, and that the septum has no invisible pores—proving that Galen had dissected apes and pigs rather than humans."
     },
     {
       "unit": "edexcel_medicine",
@@ -923,7 +1023,9 @@
         "Limited immediate impact: Many contemporary physicians rejected his findings; bloodletting continued for another 200 years."
       ],
       "image": "/images/infographics/medicine/med_kt2_4_william_harvey_circulation.webp",
-      "fileSizeKb": 525
+      "fileSizeKb": 525,
+      "hingeQuestion": "Why did William Harvey's discovery of blood circulation (1628) face widespread professional resistance from contemporary physicians?",
+      "modelAnswer": "Harvey used mechanical calculation, ligature experiments, and dissection of cold-blooded animals to prove that the heart acted as a muscular pump circulating blood through arteries and veins in a one-way system. This completely demolished Galen's 1,400-year-old theory that blood was continually produced by the liver and consumed by the body like fuel. Traditional physicians resisted Harvey because accepting his discovery invalidated the foundational medical justification for bloodletting."
     },
     {
       "unit": "edexcel_medicine",
@@ -941,7 +1043,9 @@
         "Mass burial pits: Thousands buried in communal plague pits at night to prevent panic and contagion."
       ],
       "image": "/images/infographics/medicine/med_kt2_4_renaissance_harvey_plague_mat.webp",
-      "fileSizeKb": 947
+      "fileSizeKb": 947,
+      "hingeQuestion": "Why did public health responses to the 1665 Great Plague demonstrate far greater organized civic control than responses to the 1348 Black Death?",
+      "modelAnswer": "In 1665, the Mayor and aldermen of London enforced strict, coordinated municipal plague orders. Houses of the infected were locked for 28 days and marked with red crosses and 'Lord have mercy upon us', guarded by watchmen. Mass public gatherings were banned, over 40,000 stray dogs and cats were slaughtered, dead carts buried victims in mass pits at night, and searchers verified causes of death, showing a systematic civic attempt to contain contagion."
     },
     {
       "unit": "edexcel_medicine",
@@ -959,7 +1063,9 @@
         "End of the epidemic: Cold winter of 1665 and the Great Fire of London (September 1666) helped destroy rat habitats."
       ],
       "image": "/images/infographics/medicine/med_kt2_5_renaissance_harvey_and_plague_breakthrough.webp",
-      "fileSizeKb": 495
+      "fileSizeKb": 495,
+      "hingeQuestion": "To what extent did medical understanding of the causes of the 1665 Great Plague differ from understanding of the 1348 Black Death?",
+      "modelAnswer": "Fundamentally, understanding of causation remained virtually identical: in 1665, people still blamed divine anger, planetary conjunctions, and miasma (bad air). While quarantine measures and pest houses were more rigorously enforced by civic authorities, doctors still prescribed carrying pomanders, smoking tobacco, and bloodletting, because the true bacterial vector (Yersinia pestis on fleas) remained undiscovered."
     },
     {
       "unit": "edexcel_medicine",
@@ -977,7 +1083,9 @@
         "Pest houses: Purpose-built isolation wards established outside city boundaries in 1665 to isolate the sick."
       ],
       "image": "/images/infographics/medicine/med_kt2_5_spot_difference_1348_vs_1665.webp",
-      "fileSizeKb": 666
+      "fileSizeKb": 666,
+      "hingeQuestion": "What was the most significant continuity in medical treatment between the 1348 Black Death and the 1665 Great Plague?",
+      "modelAnswer": "The primary continuity was the complete inability of physicians to cure the disease once contracted. Despite three centuries of anatomical discoveries by Vesalius and Harvey, 17th-century doctors still possessed no antibiotics. Consequently, treatments in 1665 relied on medieval remedies: strapping live ploughed chickens to buboes, cupping, lancing swellings, and praying for divine mercy."
     },
     {
       "unit": "edexcel_medicine",
@@ -995,7 +1103,9 @@
         "Royal Touch: Believed that monarchs possessed divine healing power to cure scrofula (\"the King's Evil\") with their touch."
       ],
       "image": "/images/infographics/medicine/med_kt2_5_renaissance_prevention_treatment.webp",
-      "fileSizeKb": 895
+      "fileSizeKb": 895,
+      "hingeQuestion": "How did Paracelsus and the iatrochemists challenge traditional botanical medicine in the Renaissance?",
+      "modelAnswer": "Paracelsus rejected Galen's herbal polypharmacy, arguing that the body was a chemical system that required mineral and chemical remedies. He introduced controlled dosages of mercury, arsenic, sulfur, and antimony to treat ailments such as syphilis. While toxic in high doses, chemical pharmacology laid the earliest foundations for modern synthetic drug design."
     },
     {
       "unit": "edexcel_medicine",
@@ -1013,7 +1123,9 @@
         "Public health reform: John Snow proved cholera is waterborne (1854); 1875 Public Health Act mandated sewers and clean water."
       ],
       "image": "/images/infographics/medicine/med_industrial_era_overview.webp",
-      "fileSizeKb": 517
+      "fileSizeKb": 517,
+      "hingeQuestion": "Why was the 19th century the most revolutionary century in the history of medicine?",
+      "modelAnswer": "The 19th century conquered medicine's three historical barriers: cause, pain, and infection. Louis Pasteur and Robert Koch replaced miasma with Germ Theory; James Simpson introduced chloroform anesthesia to conquer operative agony; and Joseph Lister introduced carbolic acid antisepsis, transforming surgery from a lethal ordeal into a sterile clinical discipline."
     },
     {
       "unit": "edexcel_medicine",
@@ -1031,7 +1143,9 @@
         "Decisive shift: Proved specific microscopic living organisms cause specific infections, establishing modern bacteriology."
       ],
       "image": "/images/infographics/medicine/med_kt3_1_germ_revolution_timeline.webp",
-      "fileSizeKb": 425
+      "fileSizeKb": 425,
+      "hingeQuestion": "Why did Louis Pasteur's 1861 Germ Theory take over two decades to be universally accepted by British physicians?",
+      "modelAnswer": "Prominent British medical authorities, including Dr. Henry Bastian, fiercely defended the doctrine of Spontaneous Generation, arguing that decaying matter generated microbes as a symptom rather than a cause of disease. Furthermore, Pasteur was an industrial chemist working on beer and silkworms, not a licensed medical doctor. Only when Robert Koch isolated the specific Anthrax (1876) and Tuberculosis (1882) bacteria did British clinicians abandon miasma."
     },
     {
       "unit": "edexcel_medicine",
@@ -1049,7 +1163,9 @@
         "Global triumph: In 1885, Pasteur successfully cured 9-year-old Joseph Meister of fatal rabies using attenuated spinal cord vaccine."
       ],
       "image": "/images/infographics/medicine/med_kt3_1_louis_pasteur.webp",
-      "fileSizeKb": 409
+      "fileSizeKb": 409,
+      "hingeQuestion": "How did Louis Pasteur's discovery of the chicken cholera vaccine in 1879 unlock the principles of artificial immunization?",
+      "modelAnswer": "When his assistant Charles Chamberland accidentally injected chickens with an old, weakened culture of cholera microbes, the birds fell sick but recovered. When Pasteur reinjected them with a fresh, lethal dose, they survived. Pasteur realized that attenuated (weakened) pathogens stimulate the body's immune system to produce antibodies without killing the host, paving the way for his anthrax and rabies vaccines."
     },
     {
       "unit": "edexcel_medicine",
@@ -1067,7 +1183,9 @@
         "National rivalry: Franco-Prussian War intensified competition between Koch and Pasteur, accelerating government medical funding."
       ],
       "image": "/images/infographics/medicine/med_kt3_1_robert_koch.webp",
-      "fileSizeKb": 547
+      "fileSizeKb": 547,
+      "hingeQuestion": "Why were Robert Koch's laboratory techniques far more impactful on clinical medicine than Pasteur's original Germ Theory publication?",
+      "modelAnswer": "While Pasteur theorized that microbes caused disease, Koch provided the definitive empirical proof. Koch developed agar-agar jelly in Petri dishes to culture pure bacterial colonies, methyl violet dyes to stain transparent microbes under high-power microscopes, and micro-photography to document them. His 'Koch's Postulates' established the universal scientific standard for proving a specific microbe causes a specific disease."
     },
     {
       "unit": "edexcel_medicine",
@@ -1085,7 +1203,9 @@
         "Modern vaccine manufacturing: Opened the door to laboratory-developed vaccines for diphtheria, tetanus, and typhoid."
       ],
       "image": "/images/infographics/medicine/med_kt3_1_germ_theory_revolution_infographic.webp",
-      "fileSizeKb": 640
+      "fileSizeKb": 640,
+      "hingeQuestion": "Why did the persistence of Miasma Theory ironically lead to significant public health improvements before Germ Theory was accepted?",
+      "modelAnswer": "Believing that foul odors and decaying organic filth generated poisonous miasmas that caused epidemics like cholera, sanitarians like Edwin Chadwick and John Simon campaigned to clean up slums, pave streets, flush cesspools, and construct municipal sewers. Although their biological theory was mistaken, their actions eliminated the stagnant water and filth where cholera and typhoid bacteria bred."
     },
     {
       "unit": "edexcel_medicine",
@@ -1103,7 +1223,9 @@
         "Government backing: Parliament awarded Jenner £30,000; smallpox vaccination made compulsory in Britain in 1853."
       ],
       "image": "/images/infographics/medicine/med_kt3_2_edward_jenner.webp",
-      "fileSizeKb": 550
+      "fileSizeKb": 550,
+      "hingeQuestion": "Why did Edward Jenner's 1796 smallpox discovery provoke fierce opposition from the Royal Society and the London medical establishment?",
+      "modelAnswer": "Jenner could not explain how his cowpox vaccination worked scientifically because viruses were microscopic and invisible in 1796. The Royal Society initially refused to publish his findings, church ministers condemned injecting animal matter into humans as ungodly, and doctors who made enormous fortunes charging wealthy patients for smallpox inoculation (variolation) actively campaigned against Jenner's cheaper, safer alternative."
     },
     {
       "unit": "edexcel_medicine",
@@ -1121,7 +1243,9 @@
         "World Health Organization (WHO) declared smallpox totally eradicated worldwide in 1980 thanks to Jenner's technique."
       ],
       "image": "/images/infographics/medicine/med_kt3_2_medical_revolutions_1700_1900.webp",
-      "fileSizeKb": 811
+      "fileSizeKb": 811,
+      "hingeQuestion": "How did John Snow's 1854 investigation of the Broad Street pump demonstrate the power of epidemiological mapping over chemical analysis?",
+      "modelAnswer": "Snow marked the location of all 500 cholera deaths on a street map of Soho, demonstrating that the fatalities clustered directly around the Broad Street water pump, while workers at the nearby brewery (who drank only beer) remained unaffected. Although chemical analysis of the water revealed no obvious impurities under contemporary tests, Snow's statistical and geographical deduction forced the parish vestry to remove the pump handle, abruptly ending the outbreak."
     },
     {
       "unit": "edexcel_medicine",
@@ -1139,7 +1263,9 @@
         "Modern Robotic Precision: 20th and 21st-century micro-surgery and robotic laparoscopy allow complex internal operations through tiny incisions."
       ],
       "image": "/images/infographics/medicine/med_kt3_3_florence_nightingale.webp",
-      "fileSizeKb": 474
+      "fileSizeKb": 474,
+      "hingeQuestion": "Why did the introduction of anesthetics initially increase operative mortality during the 'Black Period' of surgery (1846–1865)?",
+      "modelAnswer": "Ether and chloroform rendered patients unconscious, eliminating operative pain and allowing surgeons to operate deeper inside the abdominal and thoracic cavities for longer periods. However, because surgeons did not yet understand Germ Theory, they operated in blood-stained frock coats with unsterilized instruments. Longer operations introduced millions of bacteria into open wounds, triggering fatal rates of gangrene, pyemia, and septicemia."
     },
     {
       "unit": "edexcel_medicine",
@@ -1157,7 +1283,9 @@
         "Joseph Lister (1867): Used carbolic acid spray and dressings, slashing surgical amputation mortality from 46% to 15%."
       ],
       "image": "/images/infographics/medicine/med_kt3_4_surgery_revolution_overview.webp",
-      "fileSizeKb": 421
+      "fileSizeKb": 421,
+      "hingeQuestion": "How did Joseph Lister's introduction of carbolic acid in 1865 conquer surgical sepsis?",
+      "modelAnswer": "Having read Pasteur's 1861 paper, Lister realized that wound sepsis was caused by airborne living microbes rather than oxygen. In August 1865, he treated eleven-year-old James Greenlees's compound fracture with lint soaked in carbolic acid (creosote). The wound healed without pus. Lister introduced carbolic hand-washing, carbolic ligatures, and carbolic spray over the operating field, reducing surgical ward mortality from 46% to 15% in three years."
     },
     {
       "unit": "edexcel_medicine",
@@ -1175,7 +1303,9 @@
         "Sterile apparel: William Halsted introduced sterilized rubber surgical gloves (1890); face masks and sterilized gowns followed."
       ],
       "image": "/images/infographics/medicine/med_kt3_4_conquering_operating_theatre.webp",
-      "fileSizeKb": 363
+      "fileSizeKb": 363,
+      "hingeQuestion": "What was the fundamental distinction between Lister's antiseptic surgery and the late 19th-century transition to aseptic surgery?",
+      "modelAnswer": "Antiseptic surgery aimed to kill bacteria already present in the wound using harsh chemical sprays (like carbolic acid, which cracked surgeons' hands and irritated patients' lungs). In contrast, aseptic surgery aimed to prevent any microbes from entering the operating environment in the first place, using steam autoclaves to sterilize instruments (developed by Ernst von Bergmann in 1886), rubber gloves (Halsted), sterile surgical gowns, masks, and filtered airflow."
     },
     {
       "unit": "edexcel_medicine",
@@ -1193,7 +1323,9 @@
         "Compulsory Public Health: The 1875 Second Public Health Act forced local councils to provide clean water, sewers, and sanitary inspectors."
       ],
       "image": "/images/infographics/medicine/med_kt3_4_breakthroughs_1700_1900.webp",
-      "fileSizeKb": 849
+      "fileSizeKb": 849,
+      "hingeQuestion": "How did Florence Nightingale's reforms during and after the Crimean War (1854–1856) professionalize hospital architecture and nursing?",
+      "modelAnswer": "At Scutari hospital, Nightingale cleaned wards, unblocked latrines, organized healthy food, and washed bedding, reducing the death rate from 42% to 2%. Upon her return, her 1859 book Notes on Hospitals established the 'pavilion ward' system (large windows for light and cross-ventilation, separate fever wards, and tiled surfaces), while the Nightingale Training School at St Thomas's Hospital elevated nursing into an educated, respected profession."
     },
     {
       "unit": "edexcel_medicine",
@@ -1212,7 +1344,9 @@
         "1875 Public Health Act: Ended laissez-faire; mandated town councils provide clean water, sewers, street paving, and health inspectors."
       ],
       "image": "/images/infographics/medicine/med_kt3_5_public_health_timeline.webp",
-      "fileSizeKb": 504
+      "fileSizeKb": 504,
+      "hingeQuestion": "Why was the 1875 Public Health Act the defining milestone of 19th-century social legislation in Britain?",
+      "modelAnswer": "The 1848 Public Health Act was optional; local boards only had to act if mortality exceeded 23 per 1,000. In contrast, Benjamin Disraeli's 1875 Act made public health compulsory for every local authority in England. Councils were legally required to appoint Medical Officers of Health, supply clean piped water, collect refuse, inspect slaughterhouses, maintain covered sewers, and enforce building regulations to prevent slum overcrowding."
     },
     {
       "unit": "edexcel_medicine",
@@ -1230,7 +1364,9 @@
         "Welfare state and NHS: Aneurin Bevan launches National Health Service on July 5, 1948—free care at the point of delivery."
       ],
       "image": "/images/infographics/medicine/med_modern_era_overview.webp",
-      "fileSizeKb": 355
+      "fileSizeKb": 355,
+      "hingeQuestion": "How did the 20th century shift the focus of healthcare from treating acute bacterial infections to managing chronic lifestyle and genetic conditions?",
+      "modelAnswer": "The discovery of penicillin, streptomycin, and universal vaccination programs effectively conquered historic killer bacterial and viral epidemics. With human life expectancy increasing from 46 in 1900 to over 80 by 2000, medicine's primary challenge shifted toward non-communicable lifestyle and age-related conditions—coronary heart disease, diabetes, obesity, Alzheimer's, and cancer—requiring public health education, genetic therapies, and expensive long-term pharmaceutical management."
     },
     {
       "unit": "edexcel_medicine",
@@ -1248,7 +1384,9 @@
         "Government public health legislation: Banning tobacco advertising (1965), seatbelt laws (1983), and indoor smoking bans (2007)."
       ],
       "image": "/images/infographics/medicine/med_kt4_1_evolution_modern_medical_science.webp",
-      "fileSizeKb": 719
+      "fileSizeKb": 719,
+      "hingeQuestion": "How did technological innovations transform clinical diagnosis from external symptom observation into internal cellular visualization in the 20th century?",
+      "modelAnswer": "In 1900, doctors relied on physical stethoscopes, palpation, and urine color. The 20th century developed non-invasive imaging technologies: Wilhelm Röntgen's X-rays (1895), ultrasound scanners (1950s), CT scans (Godfrey Hounsfield in 1972), and MRI scans (1970s). Combined with automated blood biochemistry analyzers and endoscopes, physicians could diagnose internal tumors and cardiovascular blockages before patients exhibited outward symptoms."
     },
     {
       "unit": "edexcel_medicine",
@@ -1266,7 +1404,9 @@
         "Modern ethical dilemmas: Controversies over stem-cell cloning, gene editing (CRISPR), and genetic discrimination by insurers."
       ],
       "image": "/images/infographics/medicine/med_kt4_1_genomic_revolution_timeline.webp",
-      "fileSizeKb": 349
+      "fileSizeKb": 349,
+      "hingeQuestion": "Why did the mapping of the Human Genome Project (1990–2003) represent a paradigm shift in understanding human disease?",
+      "modelAnswer": "Building on Watson, Crick, and Rosalind Franklin's 1953 discovery of the double helix structure of DNA, the Human Genome Project mapped every one of the 3 billion genetic base pairs in human DNA. This enabled scientists to pinpoint specific genetic mutations causing hereditary diseases like cystic fibrosis and Huntington's chorea, opening the era of targeted gene therapy, CRISPR gene editing, and personalized pharmacogenomics."
     },
     {
       "unit": "edexcel_medicine",
@@ -1284,7 +1424,9 @@
         "Launch of the NHS (July 5, 1948): Replaced uneven voluntary/private medical care with universal free healthcare for all citizens."
       ],
       "image": "/images/infographics/medicine/med_kt4_2_history_modern_medicine_timeline.webp",
-      "fileSizeKb": 744
+      "fileSizeKb": 744,
+      "hingeQuestion": "Why did Paul Ehrlich's discovery of Salvarsan 606 in 1909 mark the birth of modern chemotherapy?",
+      "modelAnswer": "Before Ehrlich, treatments attacked healthy human cells alongside pathogens. Ehrlich hypothesized that synthetic chemical dyes could act as 'magic bullets' (Zauberkugeln) that bound specifically to receptors on bacterial cells without harming human tissue. In 1909, his team discovered the 606th arsenic compound, Salvarsan 606, which effectively killed the syphilis bacterium, proving that synthetic chemistry could cure targeted infectious diseases."
     },
     {
       "unit": "edexcel_medicine",
@@ -1303,7 +1445,9 @@
         "D-Day (June 1944): 2.3 million doses available; saved an estimated 15% of wounded Allied soldiers from fatal infection."
       ],
       "image": "/images/infographics/medicine/med_kt4_4_history_penicillin_guide.webp",
-      "fileSizeKb": 795
+      "fileSizeKb": 795,
+      "hingeQuestion": "Why did Alexander Fleming's 1928 discovery of penicillin fail to benefit a single patient until 1941?",
+      "modelAnswer": "Although Fleming observed that Penicillium notatum mold dissolved staphylococci bacteria on a contaminated Petri dish, he was a bacteriologist, not a chemist. He was unable to extract or purify enough stable penicillin liquid to treat systemic human infections, and his 1929 published paper attracted little interest until Howard Florey and Ernst Chain assembled an Oxford team with Rockefeller Foundation funding during World War II."
     },
     {
       "unit": "edexcel_medicine",
@@ -1321,7 +1465,9 @@
         "Modern crisis: Over-prescription and animal feed misuse created \"superbugs\" like MRSA resistant to common antibiotics."
       ],
       "image": "/images/infographics/medicine/med_kt4_4_penicillin_breakthrough_deepdive.webp",
-      "fileSizeKb": 424
+      "fileSizeKb": 424,
+      "hingeQuestion": "Why was the industrial cooperation of the United States government and pharmaceutical companies essential to the success of penicillin in D-Day 1944?",
+      "modelAnswer": "Florey and Chain proved penicillin's clinical efficacy on Albert Alexander in 1941, but wartime Britain's chemical industry was devastated by bomb damage and lacked the capacity for mass fermentation. Florey traveled to the US War Production Board, which partnered with Pfizer and Merck. Using deep-tank fermentation with corn steep liquor, US factories produced 2.3 million doses in time for the Normandy landings in June 1944, saving hundreds of thousands of Allied lives."
     },
     {
       "unit": "edexcel_medicine",
@@ -1339,7 +1485,9 @@
         "Prevention focus: Government intervention proved far more effective than treatment in reducing disease rates."
       ],
       "image": "/images/infographics/medicine/med_kt4_5_lung_cancer_case_study.webp",
-      "fileSizeKb": 875
+      "fileSizeKb": 875,
+      "hingeQuestion": "Why was the clinical link between cigarette smoking and lung cancer notoriously difficult to translate into public health policy between 1950 and 1970?",
+      "modelAnswer": "Richard Doll and Austin Bradford Hill's 1950 epidemiological study proved that smoking caused a twenty-fold increase in lung cancer. However, the tobacco industry deployed aggressive lobbying and funding for counter-research. Furthermore, smoking was deeply embedded in British culture, with over 80% of adult males smoking, and successive governments feared losing millions in tobacco tax revenues, delaying the first television advertising ban until 1965."
     },
     {
       "unit": "edexcel_medicine",
@@ -1357,7 +1505,9 @@
         "Heavy taxation: Cigarette duties steadily increased to discourage youth uptake and fund NHS healthcare."
       ],
       "image": "/images/infographics/medicine/med_kt4_5_modern_lung_cancer_campaigns.webp",
-      "fileSizeKb": 431
+      "fileSizeKb": 431,
+      "hingeQuestion": "How did modern anti-smoking campaigns evolve from passive public warnings into aggressive legislative compulsion by 2007?",
+      "modelAnswer": "Early government responses in the 1960s relied on voluntary educational health warnings on cigarette packets. As cancer deaths mounted, the state adopted coercive legislative measures: banning cigarette advertising on television (1965), banning smoking on public transport, imposing punitive taxes, and ultimately enacting the 2007 Health Act banning smoking in all enclosed public places and workplaces, followed by plain standardized packaging in 2016."
     },
     {
       "unit": "edexcel_medicine",
@@ -1375,7 +1525,9 @@
         "Medical transport: Motor ambulances, horse-drawn carts, hospital canal barges, and dedicated hospital trains with surgical wards."
       ],
       "image": "/images/infographics/medicine/med_kt5_4_evacuation_chain_map.webp",
-      "fileSizeKb": 462
+      "fileSizeKb": 462,
+      "hingeQuestion": "Why was the RAMC Chain of Evacuation designed around rapid battlefield triage rather than comprehensive front-line treatment?",
+      "modelAnswer": "Trench warfare produced tens of thousands of casualties in hours during major offensives. Front-line Regimental Aid Posts (RAPs) and Advanced Dressing Stations (ADS) lacked sterile surgery facilities and were under constant artillery bombardment. By triaging wounded soldiers into walking wounded, hospital cases, and moribund cases, the RAMC used motor ambulances to funnel severe cases to Casualty Clearing Stations (CCS) equipped with operating theatres before gangrene set in."
     },
     {
       "unit": "edexcel_medicine",
@@ -1397,7 +1549,9 @@
       "lessonIds": [
         "lesson_5_5",
         "lesson_5_6"
-      ]
+      ],
+      "hingeQuestion": "Why did Hugh Owen Thomas's splint reduce mortality from fractured femurs on the Western Front from 80% to 20% by 1916?",
+      "modelAnswer": "A broken thigh bone (femur) caused severed muscle spasms that drove sharp bone fragments through major arteries, causing fatal internal hemorrhaging, shock, and gas gangrene during bumpy transport in ambulances. The Thomas splint pulled the leg into rigid traction, preventing broken bone ends from moving, stabilizing the fracture, and allowing wounded soldiers to survive the evacuation journey to Casualty Clearing Stations."
     },
     {
       "unit": "edexcel_medicine",
@@ -1415,7 +1569,9 @@
         "Amputation as last resort: Over 240,000 British limbs amputated by 1918 to stop fatal gangrene spreading."
       ],
       "image": "/images/infographics/medicine/med_kt5_5_fighting_wwi_wound_infections.webp",
-      "fileSizeKb": 566
+      "fileSizeKb": 566,
+      "hingeQuestion": "Why was gas gangrene extraordinarily lethal on the Western Front compared to previous military conflicts in British history?",
+      "modelAnswer": "Flanders and northern France were intensively farmed agricultural soils rich in manure containing anaerobic bacteria (Clostridium tetani and perfringens). When jagged shrapnel fragments ripped through uniforms, they drove manure-saturated mud and fabric deep into crushed muscular tissue deprived of oxygen. Antiseptics like carbolic acid failed on deep wounds, forcing surgeons to develop wound debridement (cutting away dead tissue) and the Carrel-Dakin antiseptic irrigation technique."
     }
   ],
   "usa": [
@@ -1435,7 +1591,9 @@
         "Q3(d) Agree with Interpretation [16m + 4m SPaG]: Substantiated criteria-led judgement evaluating Interpretation 1 against Interpretation 2."
       ],
       "image": "/images/infographics/usa/usa_paper3_exam_strategy_guide.webp",
-      "fileSizeKb": 282
+      "fileSizeKb": 282,
+      "hingeQuestion": "What is the decisive difference between evaluating source utility in Section A and weighing competing historical interpretations in Section B?",
+      "modelAnswer": "Section A utility requires students to evaluate how specific details of content and provenance (author, motive, audience, date) assist a specific historical inquiry. In contrast, Section B interpretations represent retrospective historical judgments: students cannot evaluate them as primary eyewitnesses, but must deploy targeted contextual knowledge to validate or challenge how convincing the historian's overarching thesis is."
     },
     {
       "unit": "usa",
@@ -1453,7 +1611,9 @@
         "Plessy v Ferguson (1896) remained the constitutional foundation underpinning Southern white supremacy."
       ],
       "image": "/images/infographics/usa/usa_kt1_1_black_equality_struggle_1950s.webp",
-      "fileSizeKb": 383
+      "fileSizeKb": 383,
+      "hingeQuestion": "Why was the system of Jim Crow segregation in the American South sustained as much by legal and political disenfranchisement as by social custom?",
+      "modelAnswer": "Jim Crow was not merely social etiquette; it was codified state law upheld by Plessy v. Ferguson's 'separate but equal' doctrine. Crucially, poll taxes, impossible literacy tests, and violent Ku Klux Klan terror disenfranchised over 95% of Black citizens in states like Mississippi. Lacking voting rights, Black Americans could neither elect local sheriffs nor serve on juries, leaving state legal institutions entirely controlled by white supremacists."
     },
     {
       "unit": "usa",
@@ -1471,7 +1631,9 @@
         "President Eisenhower sent the 101st Airborne Division to enforce federal court orders and protect the students."
       ],
       "image": "/images/infographics/usa/usa_kt1_2_fight_for_equal_education.webp",
-      "fileSizeKb": 410
+      "fileSizeKb": 410,
+      "hingeQuestion": "Why did President Eisenhower feel compelled to deploy federal paratroopers to Central High School in Little Rock in September 1957?",
+      "modelAnswer": "When Arkansas Governor Orval Faubus deployed the state National Guard to physically block nine Black students from entering Central High School, it created a direct constitutional showdown between state nullification and federal authority. Eisenhower, though personally ambivalent about rapid desegregation, had to uphold the Supreme Court's Brown ruling and constitutional supremacy, federalizing the National Guard and dispatching the 101st Airborne Division."
     },
     {
       "unit": "usa",
@@ -1489,7 +1651,9 @@
         "Foundation of SCLC (1957): Cemented non-violent direct action and Christian pacifism as central civil rights strategy."
       ],
       "image": "/images/infographics/usa/usa_kt1_3_montgomery_bus_boycott.webp",
-      "fileSizeKb": 374
+      "fileSizeKb": 374,
+      "hingeQuestion": "Why was the success of the Montgomery Bus Boycott dependent on sustained grassroots logistical planning rather than spontaneous individual protest alone?",
+      "modelAnswer": "While Rosa Parks's arrest catalyzed the protest, the boycott succeeded because the Montgomery Improvement Association (MIA) and Women's Political Council (WPC) constructed an elaborate alternative transport infrastructure. Over 300 private carpool vehicles, 40 dispatch stations, and church fund drives sustained 40,000 daily commuters for 381 days, starving the municipal bus company of 65% of its revenue until the Supreme Court ruled segregated busing unconstitutional in Browder v. Gayle."
     },
     {
       "unit": "usa",
@@ -1507,7 +1671,9 @@
         "Dixiecrats in Congress used filibusters to dilute and delay federal civil rights legislation."
       ],
       "image": "/images/infographics/usa/usa_kt1_4_resistance_to_civil_rights.webp",
-      "fileSizeKb": 488
+      "fileSizeKb": 488,
+      "hingeQuestion": "How did the 1955 murder of Emmett Till and the subsequent acquittal of his killers expose the total collapse of legal justice in the Deep South?",
+      "modelAnswer": "The unpunished abduction and lynching of 14-year-old Emmett Till demonstrated that white violence against Black individuals was officially protected by the southern judicial apparatus. An all-white, all-male jury deliberated for just over an hour before acquitting Roy Bryant and J.W. Milam, who later confessed in Look magazine with complete legal immunity under double jeopardy, horrifying national public opinion when Mamie Till Bradley insisted on an open-casket funeral."
     },
     {
       "unit": "usa",
@@ -1525,7 +1691,9 @@
         "Federal enforcement: Attorney General Robert Kennedy ordered Interstate Commerce Commission to desegregate transit."
       ],
       "image": "/images/infographics/usa/usa_kt2_1_civil_rights_struggle_1960_1962.webp",
-      "fileSizeKb": 410
+      "fileSizeKb": 410,
+      "hingeQuestion": "How did the shift toward direct, non-violent confrontational action in 1960–1961 redefine civil rights tactics beyond legal litigation in the courts?",
+      "modelAnswer": "Whereas the NAACP had historically focused on gradual litigation in federal courts, young activists formed SNCC and mobilized direct action (sit-ins, boycotts, Freedom Rides) to actively confront and disrupt segregation. By deliberately provoking violent police responses in the full glare of television cameras, activists forced the federal government to intervene directly to protect interstate commerce and uphold federal law."
     },
     {
       "unit": "usa",
@@ -1543,7 +1711,9 @@
         "Catalyzed formation of SNCC under Ella Baker, creating student-led direct-action vanguard."
       ],
       "image": "/images/infographics/usa/usa_kt2_1_greensboro_sit_ins.webp",
-      "fileSizeKb": 348
+      "fileSizeKb": 348,
+      "hingeQuestion": "Why did the February 1960 Greensboro lunch counter sit-ins ignite a nationwide student movement when previous protests had remained localized?",
+      "modelAnswer": "The Greensboro four—Ezell Blair Jr., Franklin McCain, Joseph McNeil, and David Richmond—demonstrated a scalable, non-violent direct action tactic that ordinary students could execute without bureaucratic leadership. Within weeks, sit-ins spread to 55 cities across 13 states, generating severe local economic disruption for downtown department stores and leading directly to the founding of SNCC (Student Nonviolent Coordinating Committee)."
     },
     {
       "unit": "usa",
@@ -1561,7 +1731,9 @@
         "November 1, 1961: ICC issued strict regulations enforcing total desegregation of all interstate transit terminals."
       ],
       "image": "/images/infographics/usa/usa_kt2_1_freedom_rides_1961.webp",
-      "fileSizeKb": 499
+      "fileSizeKb": 499,
+      "hingeQuestion": "Why did CORE and SNCC deliberately risk fatal violence during the 1961 Freedom Rides through Alabama and Mississippi?",
+      "modelAnswer": "Activists led by James Farmer knew the Supreme Court's Boynton v. Virginia ruling banning segregation in interstate bus terminals was being openly defied across the South. By testing compliance, riders anticipated violent segregationist mob attacks (such as the Anniston bus firebombing and the Birmingham beatings), forcing Attorney General Robert F. Kennedy and the Interstate Commerce Commission (ICC) to issue strict federal desegregation orders."
     },
     {
       "unit": "usa",
@@ -1579,7 +1751,9 @@
         "Kennedy announced comprehensive civil rights legislation on national television in June 1963."
       ],
       "image": "/images/infographics/usa/usa_kt2_2_birmingham_campaign_1963.webp",
-      "fileSizeKb": 461
+      "fileSizeKb": 461,
+      "hingeQuestion": "Why was Martin Luther King Jr.'s decision to involve school children in the May 1963 Birmingham campaign (The Children's Crusade) a decisive tactical breakthrough?",
+      "modelAnswer": "With adult participation flagging due to fear of job loss, SCLC organizer James Bevel mobilized thousands of students. When Public Safety Commissioner 'Bull' Connor turned high-pressure fire hoses and police attack dogs on unarmed school children, graphic photographs and newsreels shocked national and international opinion, forcing downtown merchants to desegregate and prompting President Kennedy to announce comprehensive federal civil rights legislation."
     },
     {
       "unit": "usa",
@@ -1597,7 +1771,9 @@
         "African American voter registration in the South soared: Mississippi jumped from 6.7% in 1964 to 59.8% in 1967."
       ],
       "image": "/images/infographics/usa/usa_kt2_2_civil_rights_milestones_1964_1965.webp",
-      "fileSizeKb": 419
+      "fileSizeKb": 419,
+      "hingeQuestion": "Why was the 1965 Voting Rights Act necessary despite the landmark passage of the 1964 Civil Rights Act just one year earlier?",
+      "modelAnswer": "The 1964 Civil Rights Act banned discrimination in public accommodations and employment, but southern registrars continued to weaponize literacy tests, character vouchers, and poll taxes to exclude Black voters. Following the brutal televised police violence against voting rights marchers on the Edmund Pettus Bridge in Selma (Bloody Sunday), Johnson signed the 1965 Act, which explicitly banned literacy tests and sent federal examiners to register voters directly."
     },
     {
       "unit": "usa",
@@ -1615,7 +1791,9 @@
         "24th Amendment (1964) outlawed poll taxes in federal elections, eliminating a key barrier to Black suffrage."
       ],
       "image": "/images/infographics/usa/usa_kt2_2_civil_rights_successes_1963_1965.webp",
-      "fileSizeKb": 429
+      "fileSizeKb": 429,
+      "hingeQuestion": "How did the 1963 March on Washington transform civil rights from a regional southern struggle into an urgent national moral priority?",
+      "modelAnswer": "Drawing a quarter of a million peaceful, multiracial citizens to the Lincoln Memorial, the March on Washington demonstrated broad coalition unity between civil rights groups, labor unions, and religious leaders. Broadcast live to millions, King's 'I Have a Dream' speech elevated civil rights into a defining test of American democratic values, applying immense moral pressure to break the southern congressional filibuster against civil rights legislation."
     },
     {
       "unit": "usa",
@@ -1633,7 +1811,9 @@
         "Backlash exposed depths of Southern defiance: 37 Black churches bombed, 80 workers beaten, 1,000 arrested."
       ],
       "image": "/images/infographics/usa/usa_kt2_2_freedom_summer_1964.webp",
-      "fileSizeKb": 449
+      "fileSizeKb": 449,
+      "hingeQuestion": "Why did the 1964 Mississippi Freedom Summer project cause growing ideological disillusionment among young Black civil rights workers?",
+      "modelAnswer": "Although Freedom Summer established Freedom Schools and registered voters, the project revealed institutional double standards: the murders of white volunteers Goodman and Schwerner alongside Black activist Chaney generated massive federal outrage that countless Black murders had never received. Furthermore, when the Democratic National Convention refused to seat the integrated Mississippi Freedom Democratic Party (MFDP), activists like Stokely Carmichael grew cynical of working within white political structures."
     },
     {
       "unit": "usa",
@@ -1651,7 +1831,9 @@
         "Cultural revolution: Promoted Black pride, Afro hairstyles, African heritage, and economic self-sufficiency."
       ],
       "image": "/images/infographics/usa/usa_kt2_3_black_power_movement_radical_shift.webp",
-      "fileSizeKb": 485
+      "fileSizeKb": 485,
+      "hingeQuestion": "Why did the Black Power movement gain widespread traction among young activists after 1965, diverging from Dr. King's non-violent integrationist philosophy?",
+      "modelAnswer": "While King's non-violence dismantled legal Jim Crow in the South, it failed to address entrenched economic poverty, police brutality, and housing discrimination in northern and western urban ghettos. Activists influenced by Malcolm X and Stokely Carmichael argued that integration into a white-dominated society was insufficient, advocating Black pride, self-determination, community control of institutions, and armed self-defense against racial violence."
     },
     {
       "unit": "usa",
@@ -1669,7 +1851,9 @@
         "February 21, 1965: Assassinated in Harlem by three NOI members; posthumous autobiography inspired Black Power."
       ],
       "image": "/images/infographics/usa/usa_kt2_3_malcolm_x_evolution.webp",
-      "fileSizeKb": 368
+      "fileSizeKb": 368,
+      "hingeQuestion": "How did Malcolm X's ideological philosophy evolve between his tenure in the Nation of Islam and his 1964 pilgrimage to Mecca?",
+      "modelAnswer": "Under Elijah Muhammad, Malcolm X championed strict Black nationalism, racial separatism, and denounced all white people as 'devils', rejecting non-violence in favor of achieving freedom 'by any means necessary'. Following his 1964 Hajj to Mecca, Malcolm adopted orthodox Sunni Islam, witnessed racial brotherhood among diverse worshippers, and founded the Organization of Afro-American Unity (OAAU), broadening his struggle to global human rights and anti-colonialism."
     },
     {
       "unit": "usa",
@@ -1687,7 +1871,9 @@
         "FBI COINTELPRO: Director J Edgar Hoover labeled Panthers greatest internal security threat, targeting leaders for disruption."
       ],
       "image": "/images/infographics/usa/usa_kt2_3_black_panther_party.webp",
-      "fileSizeKb": 767
+      "fileSizeKb": 767,
+      "hingeQuestion": "Why did J. Edgar Hoover's FBI consider the Black Panther Party for Self-Defense the single greatest internal security threat to the United States?",
+      "modelAnswer": "Founded by Huey Newton and Bobby Seale in Oakland (1966), the Panthers combined revolutionary socialist ideology with armed community patrols monitoring police brutality, carrying loaded shotguns under California open-carry law. However, Hoover feared their popular Free Breakfast for Children and health clinics would legitimize radical Black separatism, directing COINTELPRO to aggressively infiltrate, frame, and assassinate Panther leaders like Fred Hampton."
     },
     {
       "unit": "usa",
@@ -1705,7 +1891,9 @@
         "April 4, 1968: MLK assassinated in Memphis, triggering riots in over 100 American cities."
       ],
       "image": "/images/infographics/usa/usa_kt2_4_civil_rights_law_vs_reality.webp",
-      "fileSizeKb": 445
+      "fileSizeKb": 445,
+      "hingeQuestion": "Why did the 1968 Kerner Commission conclude that America was 'moving toward two societies, one black, one white—separate and unequal'?",
+      "modelAnswer": "Following catastrophic urban rebellions in Watts (1965), Newark, and Detroit (1967), the Kerner Commission identified deep-seated structural white racism as the root cause. It documented that de facto housing segregation, substandard ghetto schools, severe unemployment, and aggressive police profiling created a powder keg of despair that legal desegregation acts had failed to alleviate."
     },
     {
       "unit": "usa",
@@ -1723,7 +1911,9 @@
         "White backlash: \"Southern Strategy\" mobilized suburban and Southern white voters against busing and welfare reforms."
       ],
       "image": "/images/infographics/usa/usa_kt2_4_us_civil_rights_1965_1975_overview.webp",
-      "fileSizeKb": 470
+      "fileSizeKb": 470,
+      "hingeQuestion": "How did the Nixon administration balance conservative 'Southern Strategy' politics with pragmatic civil rights enforcement like the Philadelphia Plan?",
+      "modelAnswer": "Politically, Nixon appealed to white southern voters and working-class 'hard hats' by publicly opposing court-ordered busing for school desegregation and appointing conservative Supreme Court justices. However, pragmatically, Nixon's administration implemented the 1969 Philadelphia Plan, which established mandatory affirmative action hiring goals for federal construction contracts, and expanded the Equal Employment Opportunity Commission (EEOC)."
     },
     {
       "unit": "usa",
@@ -1741,7 +1931,9 @@
         "1960: National Liberation Front (NLF / Vietcong) formed to overthrow Diem and unify Vietnam under communist rule."
       ],
       "image": "/images/infographics/usa/usa_kt3_1_vietnam_roots_1954_1963.webp",
-      "fileSizeKb": 475
+      "fileSizeKb": 475,
+      "hingeQuestion": "Why did the 1954 Geneva Accords fail to achieve a permanent, peaceful settlement in Vietnam?",
+      "modelAnswer": "The Geneva Accords divided Vietnam temporarily along the 17th parallel and mandated nationwide democratic elections for reunification by July 1956. However, the United States refused to sign, fearing Ho Chi Minh would win over 80% of the vote. Supported by Washington under the 'Domino Theory', South Vietnamese leader Ngo Dinh Diem cancelled the elections and established a separate anti-communist regime."
     },
     {
       "unit": "usa",
@@ -1759,7 +1951,9 @@
         "November 2, 1963: South Vietnamese military coup backed by US ambassador Cabot Lodge overthrew and assassinated Diem."
       ],
       "image": "/images/infographics/usa/usa_kt3_1_history_ngo_dinh_diem.webp",
-      "fileSizeKb": 420
+      "fileSizeKb": 420,
+      "hingeQuestion": "Why did the United States tacitly endorse the military coup that overthrew Ngo Dinh Diem in November 1963?",
+      "modelAnswer": "Diem's regime was corrupt, nepotistic, and severely alienated South Vietnam's Buddhist majority by banning Buddhist flags, culminating in self-immolation protests like Thich Quang Duc's that horrified international television audiences. Recognizing that Diem's religious repression was fueling rapid recruitment for the communist National Liberation Front (Vietcong), the Kennedy administration signaled South Vietnamese generals that it would not oppose a coup."
     },
     {
       "unit": "usa",
@@ -1777,7 +1971,9 @@
         "Battle of Ap Bac (Jan 1963): Outnumbered VC forces routed 1,500 ARVN troops equipped with US helicopters and armor."
       ],
       "image": "/images/infographics/usa/usa_kt3_1_vietnam_escalation_timeline_1954_1963.webp",
-      "fileSizeKb": 435
+      "fileSizeKb": 435,
+      "hingeQuestion": "How did John F. Kennedy's doctrine of 'Flexible Response' dramatically deepen US involvement in South Vietnam between 1961 and 1963?",
+      "modelAnswer": "Rejecting Eisenhower's 'Massive Retaliation' reliance on nuclear weapons, Kennedy expanded conventional and counter-insurgency capabilities, dispatching the elite Green Berets. He escalated US military 'advisers' in Vietnam from 900 to over 16,000, authorized the use of defoliants (Agent Orange), and backed the Strategic Hamlet Program, transforming American presence from an advisory mission into active combat engagement."
     },
     {
       "unit": "usa",
@@ -1795,7 +1991,9 @@
         "March 8, 1965: 3,500 US Marines landed at Da Nang—the first official American combat troops deployed in Vietnam."
       ],
       "image": "/images/infographics/usa/usa_kt3_2_vietnam_escalation_1964_1965.webp",
-      "fileSizeKb": 405
+      "fileSizeKb": 405,
+      "hingeQuestion": "Why was the August 1964 Gulf of Tonkin Resolution described as a 'blank check' for presidential war-making in Southeast Asia?",
+      "modelAnswer": "Following reported North Vietnamese torpedo boat attacks against the USS Maddox (the second of which was highly questionable), President Lyndon Johnson secured congressional passage of the Resolution with only two dissenting votes. It authorized the president to take 'all necessary measures' to protect US forces without a formal declaration of war, allowing Johnson to launch sustained aerial bombing (Operation Rolling Thunder) and deploy 184,000 combat troops by 1965."
     },
     {
       "unit": "usa",
@@ -1813,7 +2011,9 @@
         "Chemical defoliants: 20 million gallons of Agent Orange and incendiary Napalm dropped, poisoning farmland and civilians."
       ],
       "image": "/images/infographics/usa/usa_kt3_3_asymmetric_warfare_vietnam.webp",
-      "fileSizeKb": 468
+      "fileSizeKb": 468,
+      "hingeQuestion": "Why did superior American industrial technology (Agent Orange, Napalm, Search and Destroy) prove counterproductive against Vietcong guerrilla tactics?",
+      "modelAnswer": "The Vietcong utilized 'hanging on the belts' of American units in close-quarter jungle combat, rendering high-tech US artillery and air strikes useless without hitting friendly troops. Furthermore, heavily reliant on a vast subterranean tunnel network (like Cu Chi) and civilian disguise, the VC remained elusive, while US search-and-destroy missions and napalm strikes incinerated peasant villages, alienating the rural population and driving thousands into joining the communist insurgency."
     },
     {
       "unit": "usa",
@@ -1831,7 +2031,9 @@
         "March 31, 1968: President Lyndon B Johnson announced a partial bombing halt and declared he would not seek re-election."
       ],
       "image": "/images/infographics/usa/usa_kt3_3_tet_offensive_1968.webp",
-      "fileSizeKb": 400
+      "fileSizeKb": 400,
+      "hingeQuestion": "Why was the January 1968 Tet Offensive considered a catastrophic psychological defeat for the United States despite being an overwhelming military victory?",
+      "modelAnswer": "Militarily, US and ARVN forces decimated the Vietcong, killing over 45,000 communist fighters and recapturing all occupied cities. However, because General Westmoreland had repeatedly assured the American public that victory was near and the enemy was broken, live television footage of Vietcong commandos fighting inside the US Embassy in Saigon created an unbridgeable 'credibility gap', convincing news anchor Walter Cronkite and millions of citizens that the war was unwinnable."
     },
     {
       "unit": "usa",
@@ -1849,7 +2051,9 @@
         "Linkage diplomacy: Henry Kissinger opened relations with China and USSR (Détente) to isolate North Vietnam diplomatically."
       ],
       "image": "/images/infographics/usa/usa_kt3_4_nixon_vietnam_strategy.webp",
-      "fileSizeKb": 338
+      "fileSizeKb": 338,
+      "hingeQuestion": "How did Richard Nixon's policy of 'Vietnamization' contradict his simultaneous secret escalation of the war into Cambodia and Laos?",
+      "modelAnswer": "Publicly, Nixon claimed Vietnamization would gradually withdraw 500,000 American ground troops while training the ARVN to assume full combat responsibility, satisfying anti-war voters at home. Secretly, however, Nixon expanded the conflict under Operation Menu, unleashing massive B-52 carpet bombing and a 1970 ground incursion into neutral Cambodia to sever the Ho Chi Minh Trail and force North Vietnam into diplomatic concessions under the 'Madman Theory'."
     },
     {
       "unit": "usa",
@@ -1867,7 +2071,9 @@
         "Vietnam Veterans Against the War (VVAW): Returning soldiers threw war medals over Capitol barricades in protest."
       ],
       "image": "/images/infographics/usa/usa_kt4_1_vietnam_war_support_collapse.webp",
-      "fileSizeKb": 539
+      "fileSizeKb": 539,
+      "hingeQuestion": "Why did the May 1970 shooting of four student protesters at Kent State University mark a climactic turning point in the domestic anti-war movement?",
+      "modelAnswer": "When Ohio National Guardsmen fired 67 live rounds into a crowd of student protesters demonstrating against Nixon's invasion of Cambodia, killing four unarmed students, it proved that the war's violence had turned inward onto American youth. The massacre triggered a nationwide student strike shutting down over 400 universities, radicalized mainstream suburban opposition, and prompted mass demonstrations in Washington that placed the White House under armed guard."
     },
     {
       "unit": "usa",
@@ -1885,7 +2091,9 @@
         "Fear of betrayal: Widespread belief that the US military was being \"stabbed in the back\" by politicians and biased liberal media."
       ],
       "image": "/images/infographics/usa/usa_kt4_2_american_support_for_war.webp",
-      "fileSizeKb": 571
+      "fileSizeKb": 571,
+      "hingeQuestion": "How did Richard Nixon successfully mobilize the 'Silent Majority' to politically neutralize the domestic anti-war movement?",
+      "modelAnswer": "In a November 1969 address, Nixon appealed directly to working-class, patriotic, suburban Americans who resented anti-war protesters, counter-culture hippies, and urban rioters. By framing protesters as an unpatriotic, privileged minority desecrating the flag, Nixon rallied support from labor unions (exemplified by the May 1970 New York 'Hard Hat Riot' where construction workers attacked student protesters), securing a 49-state landslide re-election in 1972."
     },
     {
       "unit": "usa",
@@ -1903,7 +2111,9 @@
         "Fall of Saigon (April 30, 1975): Iconic rooftop helicopter evacuations from US Embassy; Vietnam unified under communism."
       ],
       "image": "/images/infographics/usa/usa_kt4_3_vietnam_peace_process_and_end.webp",
-      "fileSizeKb": 386
+      "fileSizeKb": 386,
+      "hingeQuestion": "Why did the January 1973 Paris Peace Accords merely provide a 'decent interval' before the final communist conquest of South Vietnam in 1975?",
+      "modelAnswer": "The Accords secured the withdrawal of all US military forces and the return of American POWs, but critically permitted 150,000 North Vietnamese Army (NVA) troops to remain in place inside South Vietnam. Once Congress banned further US military action via the 1973 War Powers Act and cut financial aid to Saigon following Watergate, North Vietnam launched a massive conventional offensive in early 1975, capturing Saigon in just 55 days."
     },
     {
       "unit": "usa",
@@ -1921,7 +2131,9 @@
         "Inappropriate conventional military tactics: US forces prepared for European tank warfare, ill-equipped for jungle insurgency."
       ],
       "image": "/images/infographics/usa/usa_kt4_4_reasons_us_vietnam_defeat.webp",
-      "fileSizeKb": 455
+      "fileSizeKb": 455,
+      "hingeQuestion": "Which was the primary cause of American defeat in Vietnam: domestic political collapse or military tactical failure in the field?",
+      "modelAnswer": "While tactical limitations (inability to control the Ho Chi Minh Trail, unreliability of the corrupt ARVN regime, and guerrilla tunnel warfare) prevented the US military from securing rural South Vietnam, the primary cause was the collapse of domestic political will. As draft casualties mounted and television exposed the war's moral contradictions (such as the My Lai massacre and Pentagon Papers), sustained public protest made continuing the war politically impossible for any US administration."
     },
     {
       "unit": "usa",
@@ -1939,7 +2151,9 @@
         "Causal verdict: Superior determination and asymmetric logistics defeated the world's greatest superpower."
       ],
       "image": "/images/infographics/usa/usa_kt4_4_ho_chi_minh_independence.webp",
-      "fileSizeKb": 386
+      "fileSizeKb": 386,
+      "hingeQuestion": "Why did the Ho Chi Minh Trail prove invulnerable to the most intensive aerial bombardment campaign in world history?",
+      "modelAnswer": "The Trail was not a single paved road but an intricate, 12,000-mile network of camouflaged jungle paths, bridges, and underground supply depots running through Laos and Cambodia. Over 300,000 peasant workers and youth volunteers immediately repaired bomb craters overnight. Despite the US dropping more bomb tonnage on Laos than on Germany and Japan combined in WWII, supply trucks and bicycle porters maintained an unbroken flow of Soviet and Chinese weapons southward."
     }
   ],
   "generated_at": "2026-11-07T10:37:15.370Z"

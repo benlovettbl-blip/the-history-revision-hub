@@ -1160,90 +1160,79 @@ function renderDrawerTools(modal, item) {
     }
   }
 
-  // 2. HINGE QUESTION DATA
-  let questionText = '';
-  let modelAnswerText = '';
+  // 2. HINGE QUESTION & MODEL ANSWER DATA
+  let questionText = item.hingeQuestion || item.hinge_question || '';
+  let modelAnswerText = item.modelAnswer || item.model_answer || '';
 
-  if (lesson && lesson.teacher_notes) {
-    const sc = lesson.teacher_notes.source_context;
-    const extractHinge = (text) => {
-      if (typeof text !== 'string') return '';
-      const match = text.match(/\*{0,2}Hinge Question:\*{0,2}\s*(.*)/i);
-      return match && match[1] ? match[1].trim() : '';
-    };
+  const ghostRegex = /\b(this source|the source|Source [A-Z]|the photograph|the cartoon|the extract|the author|in the source|according to the source)\b/i;
 
-    if (typeof sc === 'string') {
-      questionText = extractHinge(sc);
-    } else if (sc && typeof sc === 'object') {
-      const values = Array.isArray(sc) ? sc : Object.values(sc);
-      for (const val of values) {
-        const found = extractHinge(val);
-        if (found) {
-          questionText = found;
-          break;
-        }
-      }
-    }
+  // Fallback only if not provided on the manifest item
+  if (!questionText || !modelAnswerText) {
+    if (lesson && lesson.teacher_notes) {
+      const sc = lesson.teacher_notes.source_context;
+      const extractHinge = (text) => {
+        if (typeof text !== 'string') return '';
+        const match = text.match(/\*{0,2}Hinge Question:\*{0,2}\s*(.*)/i);
+        const candidate = match && match[1] ? match[1].trim() : '';
+        return ghostRegex.test(candidate) ? '' : candidate;
+      };
 
-    if (
-      !questionText &&
-      Array.isArray(lesson.teacher_notes.objectives) &&
-      lesson.teacher_notes.objectives.length > 0
-    ) {
-      for (const obj of lesson.teacher_notes.objectives) {
-        if (obj && obj.question) {
-          questionText = obj.question.trim();
-          break;
-        }
-      }
-    }
-  }
-
-  // Also check lesson.sources if still not found
-  if (!questionText && lesson && Array.isArray(lesson.sources)) {
-    for (const s of lesson.sources) {
-      if (s && s.hinge_question) {
-        questionText = s.hinge_question.trim();
-        break;
-      }
-    }
-  }
-
-  if (!questionText && lesson && lesson.enquiry_question) {
-    questionText = lesson.enquiry_question.trim();
-  }
-
-  if (!questionText) {
-    questionText = `How did the turning points shown in this visual revision mat transform the trajectory of ${item.topic || 'the conflict'}?`;
-  }
-
-  // Find authentic model answer
-  if (lesson && Array.isArray(lesson.narrative_blocks)) {
-    for (const b of lesson.narrative_blocks) {
-      if (Array.isArray(b.sources)) {
-        for (const s of b.sources) {
-          if (s.model_answer) {
-            modelAnswerText = s.model_answer.replace(/<[^>]+>/g, '').trim();
+      if (typeof sc === 'string') {
+        questionText = extractHinge(sc);
+      } else if (sc && typeof sc === 'object') {
+        const values = Array.isArray(sc) ? sc : Object.values(sc);
+        for (const val of values) {
+          const found = extractHinge(val);
+          if (found) {
+            questionText = found;
             break;
           }
         }
       }
-      if (modelAnswerText) break;
+
+      if (
+        !questionText &&
+        Array.isArray(lesson.teacher_notes.objectives) &&
+        lesson.teacher_notes.objectives.length > 0
+      ) {
+        for (const obj of lesson.teacher_notes.objectives) {
+          if (obj && obj.question && !ghostRegex.test(obj.question)) {
+            questionText = obj.question.trim();
+            break;
+          }
+        }
+      }
     }
-  }
 
-  if (
-    !modelAnswerText &&
-    lesson &&
-    Array.isArray(lesson.sources) &&
-    lesson.sources[0]?.model_answer
-  ) {
-    modelAnswerText = lesson.sources[0].model_answer.replace(/<[^>]+>/g, '').trim();
-  }
+    if (!questionText && lesson && lesson.enquiry_question && !ghostRegex.test(lesson.enquiry_question)) {
+      questionText = lesson.enquiry_question.trim();
+    }
 
-  if (!modelAnswerText) {
-    modelAnswerText =
-      'A high-level response establishes that while immediate diplomatic or military events produced short-term tactical advantages, the decisive causal impact stemmed from underlying ideological, economic, and geopolitical shifts.';
+    if (!questionText) {
+      questionText = `How did the turning points shown in this visual revision mat transform the trajectory of ${item.topic || 'the topic'}?`;
+    }
+
+    // Fallback model answer (ensures no ghost source references)
+    if (!modelAnswerText) {
+      if (lesson && Array.isArray(lesson.narrative_blocks)) {
+        for (const b of lesson.narrative_blocks) {
+          if (Array.isArray(b.sources)) {
+            for (const s of b.sources) {
+              if (s.model_answer && !ghostRegex.test(s.model_answer)) {
+                modelAnswerText = s.model_answer.replace(/<[^>]+>/g, '').trim();
+                break;
+              }
+            }
+          }
+          if (modelAnswerText) break;
+        }
+      }
+
+      if (!modelAnswerText) {
+        modelAnswerText =
+          'A high-level response establishes that while immediate tactical or individual actions catalyzed events, the decisive causal transformation stemmed from underlying ideological, institutional, and geopolitical dynamics.';
+      }
+    }
   }
 
   if (hingeQuestion) hingeQuestion.textContent = `"${questionText}"`;
