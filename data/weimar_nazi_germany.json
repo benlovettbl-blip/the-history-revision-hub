@@ -7576,8 +7576,8 @@
           "text": "<p><span class=\"para-ref\">[3.1]</span> The economic catastrophe radicalized German politics, tearing society into polarized extremes. As desperate industrial workers abandoned the moderate SPD, electoral support for the <strong>German Communist Party (KPD)</strong> surged, reaching 100 seats and 17% of the vote by late 1932. Paramilitary street fighting between the Communist <em>Rotfrontkämpferbund</em> and the Nazi SA erupted into daily bloodshed across German industrial cities.</p>\n\n<p><span class=\"para-ref\">[3.2]</span> The prospect of a Bolshevik revolution terrified the German middle classes (<em>Mittelstand</em>), small business owners, and conservative landowners (Junkers). Haunted by memories of the 1917 Russian Revolution and hyperinflation in 1923, they feared communists would seize private property and abolish religion. Hitler skillfully exploited this terror, presenting the disciplined Nazi stormtroopers as Germany’s only reliable defense against communist anarchy, driving millions of terrified conservative voters into the Nazi camp.</p>",
           "content": "<p><span class=\"para-ref\">[3.1]</span> The economic catastrophe radicalized German politics, tearing society into polarized extremes. As desperate industrial workers abandoned the moderate SPD, electoral support for the <strong>German Communist Party (KPD)</strong> surged, reaching 100 seats and 17% of the vote by late 1932. Paramilitary street fighting between the Communist <em>Rotfrontkämpferbund</em> and the Nazi SA erupted into daily bloodshed across German industrial cities.</p>\n\n<p><span class=\"para-ref\">[3.2]</span> The prospect of a Bolshevik revolution terrified the German middle classes (<em>Mittelstand</em>), small business owners, and conservative landowners (Junkers). Haunted by memories of the 1917 Russian Revolution and hyperinflation in 1923, they feared communists would seize private property and abolish religion. Hitler skillfully exploited this terror, presenting the disciplined Nazi stormtroopers as Germany’s only reliable defense against communist anarchy, driving millions of terrified conservative voters into the Nazi camp.</p>",
           "image": "/images/weimar_unemployed_sa_men_1932.jpg",
-          "image_alt": "Unemployed SA stormtroopers in Berlin gathered at a party soup kitchen in 1932",
-          "caption": "The SA Welfare Engine (1932): The Nazi Party provided free dormitory beds, soup kitchens, and brown uniforms to young unemployed men, transforming joblessness into a disciplined paramilitary army of 400,000 stormtroopers.",
+          "image_alt": "Unemployed men in Berlin sitting on a park bench reading newspapers in 1931",
+          "caption": "Jobless Despair in Berlin (c. 1931): Unemployed men sit on a park bench scouring newspaper job notices. As unemployment soared past 6 million, the collapse of livelihoods and loss of personal dignity drove millions of desperate Germans toward radical extremist parties.",
           "isReversed": true,
           "sources": [
             {
@@ -7755,11 +7755,11 @@
         "tariff": "Section A & Section B (4 marks & 8 marks)",
         "stimulus": [
           {
-            "title": "Source A: Contemporary photograph of unemployed workers queuing outside the municipal labour exchange in Berlin, c. 1931.",
-            "content": "Large crowds of unemployed German workers queuing for relief payments outside the municipal labour exchange (Arbeitsamt) in Berlin as unemployment soared past six million following the Wall Street Crash.",
+            "title": "Source A: Contemporary photograph of unemployed men reading newspaper job advertisements in Berlin, c. 1931.",
+            "content": "Unemployed German men sitting on a public park bench in Berlin, scouring the classified advertisements of daily newspapers for job vacancies as unemployment climbed toward six million following the Wall Street Crash.",
             "image": "/images/weimar_unemployed_sa_men_1932.jpg",
-            "caption": "Unemployed German workers lining pavements outside a municipal welfare office in Berlin during the Great Depression, c. 1931.",
-            "provenance": "Contemporary photograph of unemployed workers queuing outside the municipal labour exchange in Berlin, c. 1931.",
+            "caption": "Unemployed German men sitting on a park bench in Berlin reading newspaper job listings during the Great Depression, c. 1931.",
+            "provenance": "Contemporary photograph of unemployed men reading newspaper classifieds in Berlin, c. 1931.",
             "shelfmark": "Bundesarchiv Bild 183-1987-0703-507"
           },
           {
@@ -7777,7 +7777,7 @@
             "type": "utility_comp_4m",
             "question": "Part 1: Content & Provenance (COP) Comparative Analysis for Sources A & B.",
             "prompt": "Compare what Sources A and B reveal about the crisis of 1929–1932, and evaluate how their contrasting provenances affect their usefulness for an enquiry into the growth of Nazi support.",
-            "model": "Source A reveals the direct human misery of the Great Depression, showing hundreds of unemployed men queuing outside a Berlin labour exchange, proving that economic destitution affected millions. In contrast, Source B reveals how the Nazi Party exploited this despair through targeted propaganda, presenting Hitler as a messianic figure with the slogan 'Our Last Hope'. While Source A is an authentic press photograph capturing genuine socio-economic reality, Source B is an official Nazi election poster designed to persuade voters. Together, they show how mass suffering created the fertile ground that Nazi propaganda ruthlessly exploited.",
+            "model": "Source A reveals the direct human reality of the Great Depression, showing unemployed men sitting on a Berlin park bench scouring newspapers for job advertisements, proving that economic paralysis forced millions into idle job searches. In contrast, Source B reveals how the Nazi Party exploited this despair through targeted propaganda, presenting Hitler as a messianic figure with the slogan 'Our Last Hope'. While Source A is an authentic press photograph capturing genuine socio-economic hardship, Source B is an official Nazi election poster designed to persuade voters. Together, they show how mass suffering created the fertile ground that Nazi propaganda ruthlessly exploited.",
             "scaffolding": {
               "acronym": "Comparative Analysis Framework",
               "acronym_title": "Content & Provenance Comparison [4 Marks • 6 Mins]",
