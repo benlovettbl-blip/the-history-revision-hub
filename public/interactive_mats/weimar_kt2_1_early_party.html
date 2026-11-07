@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weimar & Nazi Germany (KT 2.1): The Early Development of the Nazi Party, 1919–1922 | Visual Revision Mat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-dark: #070d18;
+      --bg-surface: #0f172a;
+      --bg-card: rgba(15, 23, 42, 0.92);
+      --bg-card-hover: rgba(30, 41, 59, 0.98);
+      --border-subtle: rgba(255, 255, 255, 0.1);
+      --border-gold: rgba(245, 158, 11, 0.5);
+      --gold-primary: #fbbf24;
+      --gold-dark: #b45309;
+      --crimson-accent: #f43f5e;
+      --cyan-accent: #38bdf8;
+      --emerald-accent: #34d399;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #050914 radial-gradient(ellipse 80% 50% at 50% -20%, rgba(180, 83, 9, 0.25), rgba(7, 13, 24, 0.95) 70%, #030712 100%);
+      color: var(--text-main);
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    .mat-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    /* Top Utility Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 8px 16px;
+      backdrop-filter: blur(10px);
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .badge-spec {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.2), rgba(14, 165, 233, 0.3));
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+    }
+
+    .badge-topic {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.3));
+      color: #fbbf24;
+      border: 1px solid var(--border-gold);
+    }
+
+    .btn-action {
+      background: #1e293b;
+      color: #f1f5f9;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action:hover {
+      background: #334155;
+      border-color: var(--gold-primary);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    /* Dramatic Magazine Header */
+    .mat-header {
+      background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 45%, #1e293b 100%);
+      border: 2px solid var(--border-gold);
+      border-radius: 16px;
+      padding: 24px 32px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), inset 0 0 50px rgba(245, 158, 11, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .mat-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background: linear-gradient(180deg, #f43f5e, #fbbf24, #38bdf8);
+    }
+
+    .header-text-col {
+      flex: 1;
+    }
+
+    .header-sub {
+      color: var(--gold-primary);
+      font-size: 0.85rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .header-enquiry {
+      color: #cbd5e1;
+      font-size: 1rem;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-portrait-badge {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      border: 3px solid var(--gold-primary);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5), 0 0 20px rgba(245, 158, 11, 0.3);
+      overflow: hidden;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+    }
+
+    .header-portrait-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    /* 4 High-Impact Quantitative Data Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+
+    .stat-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 70%);
+    }
+
+    .stat-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .stat-icon.rose { background: rgba(244, 63, 94, 0.2); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.4); }
+    .stat-icon.cyan { background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); }
+    .stat-icon.gold { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.5); }
+    .stat-icon.emerald { background: rgba(52, 211, 153, 0.2); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.4); }
+
+    .stat-val {
+      font-size: 1.65rem;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.05;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .stat-lbl {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* Photographic Visual Gallery / Causal Pillars */
+    .photo-pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .photo-pillars-grid { grid-template-columns: 1fr; }
+    }
+
+    .photo-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .photo-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    }
+
+    .photo-container {
+      position: relative;
+      height: 160px;
+      width: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-card:hover .photo-container img {
+      transform: scale(1.05);
+    }
+
+    .photo-badge {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      backdrop-filter: blur(4px);
+    }
+
+    .photo-card-body {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .photo-card-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .photo-card-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Main Multi-Column Split: Timeline & Disciplinary Check */
+    .mat-body-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.95fr;
+      gap: 18px;
+    }
+
+    @media (max-width: 992px) {
+      .mat-body-grid { grid-template-columns: 1fr; }
+    }
+
+    .panel-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    }
+
+    .panel-heading {
+      font-size: 0.88rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 8px;
+    }
+
+    /* Chronological Domino Chain */
+    .domino-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .domino-step {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 9px 12px;
+      background: rgba(30, 41, 59, 0.45);
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--cyan-accent);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .domino-step:hover {
+      background: rgba(30, 41, 59, 0.85);
+      border-left-color: var(--gold-primary);
+      transform: translateX(4px);
+    }
+
+    .domino-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--cyan-accent);
+      background: rgba(56, 189, 248, 0.12);
+      padding: 2px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .domino-content h4 {
+      font-size: 0.86rem;
+      font-weight: 800;
+      color: #f1f5f9;
+      margin-bottom: 2px;
+    }
+
+    .domino-content p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Disciplinary Hinge Check Box */
+    .hinge-box {
+      background: linear-gradient(135deg, rgba(180, 83, 9, 0.15) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1.5px solid var(--border-gold);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    }
+
+    .hinge-header {
+      font-size: 0.7rem;
+      font-weight: 900;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hinge-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #fef08a;
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
+    .btn-model-toggle {
+      background: #1e293b;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      padding: 7px 12px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-model-toggle:hover {
+      background: #334155;
+      border-color: var(--cyan-accent);
+    }
+
+    .model-answer-container {
+      display: none;
+      margin-top: 10px;
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      border-radius: 8px;
+      padding: 12px 14px;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    .model-badge {
+      font-size: 0.68rem;
+      font-weight: 900;
+      color: #4ade80;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .model-text {
+      font-size: 0.82rem;
+      color: #dcfce7;
+      line-height: 1.5;
+    }
+
+    /* Bottom Bar */
+    .footer-bar {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 800px) {
+      .footer-bar { grid-template-columns: 1fr; }
+    }
+
+    .vocab-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .vocab-chip {
+      background: rgba(30, 41, 59, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #e2e8f0;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .vocab-chip:hover {
+      border-color: var(--gold-primary);
+      color: var(--gold-primary);
+      background: #1e293b;
+    }
+
+    /* Popup Modal */
+    #detail-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-card {
+      background: #0f172a;
+      border: 2px solid var(--border-gold);
+      border-radius: 14px;
+      max-width: 550px;
+      width: 100%;
+      padding: 22px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+      animation: modalPop 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes modalPop { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
+  </style>
+</head>
+<body>
+
+  <div class="mat-container">
+
+    <!-- Top Status Bar -->
+    <div class="top-bar">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span class="badge-pill badge-spec"><i class="fa-solid fa-graduation-cap"></i> Edexcel GCSE History: Paper 3</span>
+        <span class="badge-pill badge-topic"><i class="fa-solid fa-image"></i> Archival Visual Edition</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button type="button" class="btn-action" onclick="window.print()"><i class="fa-solid fa-print"></i> Print A4 Handout</button>
+        <button type="button" class="btn-action" onclick="resetHighlights()"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+      </div>
+    </div>
+
+    <!-- Main Header Card with Anton Drexler Portrait -->
+    <header class="mat-header">
+      <div class="header-text-col">
+        <div class="header-sub">
+          <i class="fa-solid fa-landmark"></i> Weimar & Nazi Germany, 1918–1939 • Key Topic 2.1
+        </div>
+        <h1 class="header-title">The Early Development of the Nazi Party, 1919–1922</h1>
+        <div class="header-enquiry">
+          <i class="fa-solid fa-circle-question" style="color: var(--cyan-accent);"></i>
+          Enquiry: From the shadows: How did a tiny, obscure political group in a Munich beer hall transform into a violent, highly organised political machine under Adolf Hitler's early leadership?
+        </div>
+      </div>
+      <div class="header-portrait-badge" title="Anton Drexler (1884–1942), DAP Founder">
+        <img src="/images/anton_drexler.jpg" alt="Anton Drexler Portrait" />
+      </div>
+    </header>
+
+    <!-- 4 High-Yield Metric Counters -->
+    <div class="stats-grid">
+      <div class="stat-card" onclick="showDetail('55 Founding Members', 'When Corporal Adolf Hitler was dispatched by the Bavarian army (Reichswehr) in September 1919 to spy on Anton Drexler\'s German Workers\' Party (DAP) at the Sterneckerbräu beer hall, the group possessed only 55 members and less than 7 marks in funds. Hitler joined as member #555—the party numbering cards starting at 501 to falsely project substantial strength.')">
+        <div class="stat-icon rose"><i class="fa-solid fa-users"></i></div>
+        <div>
+          <div class="stat-val">55</div>
+          <div class="stat-lbl">DAP Founding Members (1919)</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('The 25-Point Programme', 'Co-authored by Adolf Hitler and Anton Drexler and proclaimed before 2,000 listeners at the Hofbräuhaus on 24 February 1920. The manifesto fused radical nationalism (scrapping Versailles, Lebensraum) with populist socialist pledges (profit-sharing, nationalising trusts, pensions) and vicious anti-Semitism, denying Jews German citizenship.')">
+        <div class="stat-icon gold"><i class="fa-solid fa-scroll"></i></div>
+        <div>
+          <div class="stat-val">25 Points</div>
+          <div class="stat-lbl">Party Manifesto (Feb 1920)</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('3,000 SA Stormtroopers', 'Founded formally in August 1921 under Captain Ernst Röhm, the Sturmabteilung (SA) grew rapidly to 3,000 disciplined paramilitaries by 1922. Armed with clubs and revolvers, the Brownshirts provided physical security for Nazi orators while violently smashing Communist (KPD) and Social Democrat (SPD) rallies.')">
+        <div class="stat-icon cyan"><i class="fa-solid fa-shield-halved"></i></div>
+        <div>
+          <div class="stat-val">3,000</div>
+          <div class="stat-lbl">SA Brownshirts by 1922</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('Völkischer Beobachter Newspaper', 'In December 1920, the NSDAP bought the failing Munich tabloid Völkischer Beobachter (People\'s Observer) for 60,000 marks, funded by secret army coffers arranged by Captain Ernst Röhm and wealthy nationalist patrons. Its circulation exploded from 17,000 to over 180,000, projecting Nazi propaganda across southern Germany.')">
+        <div class="stat-icon emerald"><i class="fa-solid fa-newspaper"></i></div>
+        <div>
+          <div class="stat-val">180k</div>
+          <div class="stat-lbl">Völkischer Beobachter Circulation</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Photographic Archival Primary Artifact Cards -->
+    <div class="photo-pillars-grid">
+
+      <!-- Photo Card 1: 25-Point Programme -->
+      <div class="photo-card" onclick="showDetail('Primary Artifact 1: The 25-Point Programme Broadsheet (Feb 1920)', 'Official broadsheet of the 25-Point Programme of the NSDAP, read by Adolf Hitler in the Festival Hall of the Hofbräuhaus in Munich on 24 February 1920. Point 1 demanded Greater Germany; Point 2 demanded the revocation of the Treaty of Versailles and Saint-Germain; Point 4 declared that no Jew could be a German citizen. This document rebranded the DAP into the National Socialist German Workers\' Party (NSDAP) and established the foundational ideology of the Nazi movement.')">
+        <div class="photo-container">
+          <img src="/images/nazi_25_point_programme_1920.jpg" alt="Official broadsheet of the 25-Point Programme of the NSDAP, 1920" />
+          <span class="photo-badge"><i class="fa-solid fa-file-invoice"></i> Primary Artifact 1</span>
+        </div>
+        <div class="photo-card-body">
+          <h3 class="photo-card-title"><i class="fa-solid fa-bullhorn" style="color: var(--gold-primary);"></i> 25-Point Programme</h3>
+          <p class="photo-card-desc">Hitler & Drexler's foundational manifesto (Feb 1920), combining Versailles revocation, anti-Semitism, and populist worker appeal.</p>
+        </div>
+      </div>
+
+      <!-- Photo Card 2: Völkischer Beobachter -->
+      <div class="photo-card" onclick="showDetail('Primary Artifact 2: Völkischer Beobachter Front Page (Dec 1920)', 'Front page of the Völkischer Beobachter from 25 December 1920 following its purchase by the NSDAP. Under Dietrich Eckart and Alfred Rosenberg, the newspaper gave the fringe Munich party a permanent media organ to attack the Weimar democracy, propagate the Dolchstoßlegende (stab-in-the-back myth), and spread vitriolic conspiracy theories blaming Jewish financiers for Germany\'s 1918 defeat.')">
+        <div class="photo-container">
+          <img src="/images/weimar_volkischer_beobachter_1920.jpg" alt="Front page of the Völkischer Beobachter, 25 December 1920" />
+          <span class="photo-badge"><i class="fa-solid fa-newspaper"></i> Primary Artifact 2</span>
+        </div>
+        <div class="photo-card-body">
+          <h3 class="photo-card-title"><i class="fa-solid fa-print" style="color: var(--cyan-accent);"></i> Völkischer Beobachter</h3>
+          <p class="photo-card-desc">The party's official daily newspaper acquired in 1920 with Reichswehr secret funds, broadcasting propaganda across Bavaria.</p>
+        </div>
+      </div>
+
+      <!-- Photo Card 3: Beer Hall Paramilitaries & Röhm -->
+      <div class="photo-card" onclick="showDetail('Primary Artifact 3: Munich Beer Hall Meetings & SA Paramilitaries', 'Adolf Hitler seated with early NSDAP leaders and armed stormtroopers in a Munich beer hall (c. 1923). Beer halls like the Hofbräuhaus and Bürgerbräukeller served as political arenas where Hitler perfected his hypnotic oratorical technique—starting slowly with quiet pauses before building to theatrical, screaming climaxes. Outside, Ernst Röhm\'s SA ensured violent domination of the streets.')">
+        <div class="photo-container">
+          <img src="/images/hitler_munich_1920s.jpg" alt="Adolf Hitler seated with NSDAP members and SA in a Munich beer hall" />
+          <span class="photo-badge"><i class="fa-solid fa-shield-halved"></i> Primary Artifact 3</span>
+        </div>
+        <div class="photo-card-body">
+          <h3 class="photo-card-title"><i class="fa-solid fa-users-viewfinder" style="color: var(--crimson-accent);"></i> Beer Hall Mobilisation</h3>
+          <p class="photo-card-desc">Hitler perfected his hypnotic public oratory in Munich beer halls, surrounded by uniformed SA fighters to intimidate opponents.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Main Two-Column Educational Grid -->
+    <div class="mat-body-grid">
+
+      <!-- Left Column: Chronological Domino Chain -->
+      <div class="panel-box">
+        <div class="panel-heading">
+          <i class="fa-solid fa-timeline"></i> Chronological Causal Domino Spine (1919–1922)
+        </div>
+        <div class="domino-timeline">
+
+          <div class="domino-step" onclick="showDetail('12 September 1919: Army Spy Joins DAP', 'Corporal Adolf Hitler, employed as an intelligence officer (Vertrauensmann) by the Reichswehr to monitor political agitators in Munich, attends a meeting of Anton Drexler\'s German Workers\' Party (DAP) at the Sterneckerbräu. Impressed by Hitler\'s impassioned speech defending Bavarian loyalty, Drexler recruits him as party member #555.')">
+            <span class="domino-date">12 Sep 1919</span>
+            <div class="domino-content">
+              <h4>Hitler Infiltrates and Joins Anton Drexler's DAP</h4>
+              <p>Army informant Hitler sent to spy on the 55-member Munich workers' group; impressed by Drexler, Hitler joins and takes charge of party propaganda.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('24 February 1920: The 25-Point Programme & NSDAP Rebrand', 'At a mass rally of 2,000 supporters in the Hofbräuhaus, Hitler announces the 25-Point Programme and renames the party the National Socialist German Workers\' Party (NSDAP). The addition of \'National Socialist\' was deliberately engineered to attract both nationalist middle-class conservatives and socialist-minded workers.')">
+            <span class="domino-date">24 Feb 1920</span>
+            <div class="domino-content">
+              <h4>25-Point Programme & Party Renamed to NSDAP</h4>
+              <p>Hofbräuhaus rally proclaims the 25 points; party adopts the hooked swastika flag (Hakenkreuz) and Roman salute to create distinctive visual branding.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('17 December 1920: Purchase of Völkischer Beobachter', 'Captain Ernst Röhm secures 60,000 marks from secret Reichswehr slush funds to purchase the bankrupt Völkischer Beobachter newspaper. Under party ownership, it transforms into an aggressive daily propaganda vehicle attacking the Weimar \'November Criminals\'.')">
+            <span class="domino-date">17 Dec 1920</span>
+            <div class="domino-content">
+              <h4>Purchase of the Völkischer Beobachter Newspaper</h4>
+              <p>Secret army funds provided by Ernst Röhm allow the NSDAP to buy its first newspaper, giving Hitler a mass media organ across Bavaria.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('29 July 1921: Hitler Seizes the Führerprinzip', 'When Drexler attempts an unauthorized merger with other right-wing parties, Hitler abruptly resigns. Recognizing Hitler\'s oratorical genius was the party\'s only revenue source, the committee surrenders: Hitler is elected party chairman with dictatorial authority (Führerprinzip); Drexler is ousted to honorary chairman.')">
+            <span class="domino-date">29 Jul 1921</span>
+            <div class="domino-content">
+              <h4>Hitler Ousts Drexler & Seizes Total Dictatorial Control</h4>
+              <p>Hitler establishes the Führerprinzip (Leader Principle), demanding absolute obedience and eliminating all internal democratic committee votes.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('August–November 1921: Formation of the SA (Brownshirts)', 'Ernst Röhm and ex-Freikorps officers organize the party\'s paramilitary security squad into the Sturmabteilung (SA). Dressed in surplus colonial brown shirts, they disrupt rival meetings, beat up political opponents, and project an image of orderly military power.')">
+            <span class="domino-date">Nov 1921</span>
+            <div class="domino-content">
+              <h4>The Sturmabteilung (SA) Formally Established</h4>
+              <p>Paramilitary squad under Ernst Röhm deployed as political muscle to guard Nazi meetings and violently attack SPD and Communist opponents.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Column: Disciplinary Check, Model Answer & Vocabulary -->
+      <div class="panel-box">
+        <div class="panel-heading">
+          <i class="fa-solid fa-graduation-cap"></i> Disciplinary Enquiry & Exam Mastery
+        </div>
+
+        <div class="hinge-box">
+          <div class="hinge-header">
+            <i class="fa-solid fa-key"></i> Key Topic 2.1 Hinge Question
+          </div>
+          <div class="hinge-question">
+            "Why was the combination of the 25-Point Programme and the SA uniquely dangerous compared to traditional right-wing fringe parties in Weimar Germany?"
+          </div>
+          <button type="button" class="btn-model-toggle" onclick="toggleModelAnswer()">
+            <i class="fa-solid fa-eye" id="toggle-icon"></i> <span id="toggle-text">Show Examiner Model Answer</span>
+          </button>
+          <div class="model-answer-container" id="model-answer">
+            <div class="model-badge">
+              <i class="fa-solid fa-award"></i> Grade 9 Disciplinary Benchmark (8/8 Marks)
+            </div>
+            <div class="model-text">
+              The early NSDAP proved uniquely dangerous because it synthesized two revolutionary ingredients that traditional German nationalist groups lacked: <strong>ideological cross-class appeal</strong> and <strong>institutionalised paramilitary violence</strong>. Traditional right-wing parties (like the DNVP) were aristocratic, monarchist, and elitist, alienating ordinary working-class Germans. In contrast, Hitler and Drexler’s <strong>25-Point Programme</strong> combined visceral anti-Versailles nationalism with populist socialist appeals (profit-sharing, land reform, abolition of unearned incomes) designed specifically to detach workers from the SPD and KPD.<br><br>
+              Simultaneously, Ernst Röhm’s <strong>Sturmabteilung (SA)</strong> transformed street violence from spontaneous brawling into a disciplined political weapon. By violently seizing control of public spaces, protecting Nazi meetings, and terrorising left-wing opponents, the SA projected an illusion of orderly paramilitary strength amidst Weimar’s post-war chaos. Supported by Hitler’s charismatic beer-hall oratory and media reach via the <em>Völkischer Beobachter</em>, this lethal fusion of radical populist rhetoric and organized street violence established the NSDAP as a dynamic, predatory force capable of rapid mobilization.
+            </div>
+          </div>
+        </div>
+
+        <!-- Examiner Strategy Alert -->
+        <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid var(--border-subtle); border-radius: 10px; padding: 12px 14px;">
+          <div style="font-size: 0.72rem; font-weight: 900; color: var(--gold-primary); text-transform: uppercase; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-lightbulb"></i> Paper 3 Disciplinary Tip: Oratory vs Organisation
+          </div>
+          <p style="font-size: 0.78rem; color: #cbd5e1; line-height: 1.45;">
+            In Edexcel 12-mark causation questions, avoid attributing early Nazi growth solely to Hitler’s speaking talent. Top candidates separate <strong>charismatic factors</strong> (beer-hall oratory, theatrical pauses, patriotic grievance) from <strong>structural factors</strong> (the 25-Point manifesto, the swastika symbol, the SA paramilitary wing, and the <em>Völkischer Beobachter</em> newspaper).
+          </p>
+        </div>
+
+        <!-- Vocabulary Explorer -->
+        <div>
+          <div style="font-size: 0.74rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+            <i class="fa-solid fa-book-bookmark"></i> Key Pedagogical Terms (Click to Inspect)
+          </div>
+          <div class="vocab-chips">
+            <span class="vocab-chip" onclick="showDetail('DAP (Deutsche Arbeiterpartei)', 'The German Workers\' Party, founded in Munich in January 1919 by railway mechanic Anton Drexler and sports journalist Karl Harrer. Advocated pan-German nationalism and anti-Semitism with working-class appeal.')">DAP</span>
+            <span class="vocab-chip" onclick="showDetail('NSDAP (Nationalsozialistische Deutsche Arbeiterpartei)', 'Rebranded name adopted in February 1920. The addition of \'National Socialist\' aimed to broaden appeal across both right-wing nationalists and socialist-leaning workers.')">NSDAP</span>
+            <span class="vocab-chip" onclick="showDetail('25-Point Programme', 'The core manifesto of the Nazi Party published in February 1920. Demanded the destruction of the Treaty of Versailles, Anschluss with Austria, creation of a Greater Germany, and denial of civil rights to Jews.')">25-Point Programme</span>
+            <span class="vocab-chip" onclick="showDetail('Führerprinzip (Leader Principle)', 'The autocratic command structure established by Hitler in July 1921. Demanded total, unquestioning obedience to the supreme leader from all party subordinates, extinguishing all democratic debate.')">Führerprinzip</span>
+            <span class="vocab-chip" onclick="showDetail('Sturmabteilung (SA / Brownshirts)', 'The NSDAP\'s paramilitary wing, organized under Captain Ernst Röhm in 1921. Uniformed in brown shirts, their duty was to protect Nazi rallies, disrupt opposition meetings, and physically beat political rivals.')">Sturmabteilung (SA)</span>
+            <span class="vocab-chip" onclick="showDetail('Völkischer Beobachter', 'The People\'s Observer: the official daily newspaper of the NSDAP, purchased in December 1920 with military secret funds to broadcast Nazi propaganda across Bavaria.')">Völkischer Beobachter</span>
+            <span class="vocab-chip" onclick="showDetail('Anton Drexler (1884–1942)', 'Munich locksmith and founder of the DAP in 1919. Co-authored the 25-Point Programme with Hitler, but was outmanoeuvred and ousted from the leadership by Hitler in July 1921.')">Anton Drexler</span>
+            <span class="vocab-chip" onclick="showDetail('Ernst Röhm (1887–1934)', 'Bavarian army officer, Freikorps veteran, and co-founder of the SA. Funnelled Reichswehr army funds and weapons to Hitler\'s party and commanded the growing brownshirt army.')">Ernst Röhm</span>
+            <span class="vocab-chip" onclick="showDetail('Swastika (Hakenkreuz)', 'The ancient hooked-cross symbol adopted by the Nazi Party in 1920 as its official emblem, designed by Hitler with a black tilted swastika inside a white circle on a crimson red field.')">Swastika Standard</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Interactive Detail Modal -->
+  <div id="detail-modal" onclick="closeModal(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; border-bottom: 1px solid var(--border-gold); padding-bottom: 8px;">
+        <h3 id="modal-title" style="color: var(--gold-primary); font-size: 1.15rem; font-weight: 900; display: flex; align-items: center; gap: 8px;">
+          <i class="fa-solid fa-circle-info"></i> Historical Specification Evidence
+        </h3>
+        <button type="button" onclick="closeModalDirect()" style="background: none; border: none; color: #94a3b8; font-size: 1.2rem; cursor: pointer; padding: 2px 6px;">&times;</button>
+      </div>
+      <p id="modal-desc" style="color: #f1f5f9; font-size: 0.9rem; line-height: 1.6;"></p>
+      <div style="margin-top: 16px; text-align: right;">
+        <button type="button" onclick="closeModalDirect()" class="btn-action" style="background: #1e293b; border-color: var(--border-gold); color: #fbbf24;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleModelAnswer() {
+      const container = document.getElementById('model-answer');
+      const icon = document.getElementById('toggle-icon');
+      const text = document.getElementById('toggle-text');
+      if (container.style.display === 'block') {
+        container.style.display = 'none';
+        icon.className = 'fa-solid fa-eye';
+        text.textContent = 'Show Examiner Model Answer';
+      } else {
+        container.style.display = 'block';
+        icon.className = 'fa-solid fa-eye-slash';
+        text.textContent = 'Hide Model Answer';
+      }
+    }
+
+    function showDetail(title, desc) {
+      document.getElementById('modal-title').innerHTML = '<i class="fa-solid fa-circle-info"></i> ' + title;
+      document.getElementById('modal-desc').innerText = desc;
+      const modal = document.getElementById('detail-modal');
+      modal.style.display = 'flex';
+    }
+
+    function closeModalDirect() {
+      document.getElementById('detail-modal').style.display = 'none';
+    }
+
+    function closeModal(e) {
+      if (e.target.id === 'detail-modal') {
+        closeModalDirect();
+      }
+    }
+
+    function resetHighlights() {
+      const container = document.getElementById('model-answer');
+      if (container) container.style.display = 'none';
+      const icon = document.getElementById('toggle-icon');
+      const text = document.getElementById('toggle-text');
+      if (icon) icon.className = 'fa-solid fa-eye';
+      if (text) text.textContent = 'Show Examiner Model Answer';
+    }
+
+    // Keyboard support for ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModalDirect();
+    });
+  </script>
+
+</body>
+</html>

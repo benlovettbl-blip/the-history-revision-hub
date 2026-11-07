@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weimar & Nazi Germany (KT 2.2): The Munich Putsch & the Lean Years, 1923–1929 | Visual Revision Mat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-dark: #070d18;
+      --bg-surface: #0f172a;
+      --bg-card: rgba(15, 23, 42, 0.92);
+      --bg-card-hover: rgba(30, 41, 59, 0.98);
+      --border-subtle: rgba(255, 255, 255, 0.1);
+      --border-gold: rgba(245, 158, 11, 0.5);
+      --gold-primary: #fbbf24;
+      --gold-dark: #b45309;
+      --crimson-accent: #f43f5e;
+      --cyan-accent: #38bdf8;
+      --emerald-accent: #34d399;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #050914 radial-gradient(ellipse 80% 50% at 50% -20%, rgba(180, 83, 9, 0.25), rgba(7, 13, 24, 0.95) 70%, #030712 100%);
+      color: var(--text-main);
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    .mat-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    /* Top Utility Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 8px 16px;
+      backdrop-filter: blur(10px);
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .badge-spec {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.2), rgba(14, 165, 233, 0.3));
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+    }
+
+    .badge-topic {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.3));
+      color: #fbbf24;
+      border: 1px solid var(--border-gold);
+    }
+
+    .btn-action {
+      background: #1e293b;
+      color: #f1f5f9;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action:hover {
+      background: #334155;
+      border-color: var(--gold-primary);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    /* Dramatic Magazine Header */
+    .mat-header {
+      background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 45%, #1e293b 100%);
+      border: 2px solid var(--border-gold);
+      border-radius: 16px;
+      padding: 24px 32px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), inset 0 0 50px rgba(245, 158, 11, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .mat-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background: linear-gradient(180deg, #f43f5e, #fbbf24, #38bdf8);
+    }
+
+    .header-text-col {
+      flex: 1;
+    }
+
+    .header-sub {
+      color: var(--gold-primary);
+      font-size: 0.85rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .header-enquiry {
+      color: #cbd5e1;
+      font-size: 1rem;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-portrait-badge {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      border: 3px solid var(--gold-primary);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5), 0 0 20px rgba(245, 158, 11, 0.3);
+      overflow: hidden;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+    }
+
+    .header-portrait-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    /* 4 High-Impact Quantitative Data Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+
+    .stat-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 70%);
+    }
+
+    .stat-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .stat-icon.rose { background: rgba(244, 63, 94, 0.2); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.4); }
+    .stat-icon.cyan { background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); }
+    .stat-icon.gold { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.5); }
+    .stat-icon.emerald { background: rgba(52, 211, 153, 0.2); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.4); }
+
+    .stat-val {
+      font-size: 1.65rem;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.05;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .stat-lbl {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* Photographic Visual Gallery / Causal Pillars */
+    .photo-pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .photo-pillars-grid { grid-template-columns: 1fr; }
+    }
+
+    .photo-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .photo-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    }
+
+    .photo-container {
+      position: relative;
+      height: 160px;
+      width: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-card:hover .photo-container img {
+      transform: scale(1.05);
+    }
+
+    .photo-badge {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      backdrop-filter: blur(4px);
+    }
+
+    .photo-card-body {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .photo-card-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .photo-card-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Main Multi-Column Split: Timeline & Disciplinary Check */
+    .mat-body-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.95fr;
+      gap: 18px;
+    }
+
+    @media (max-width: 992px) {
+      .mat-body-grid { grid-template-columns: 1fr; }
+    }
+
+    .panel-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    }
+
+    .panel-heading {
+      font-size: 0.88rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 8px;
+    }
+
+    /* Chronological Domino Chain */
+    .domino-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .domino-step {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 9px 12px;
+      background: rgba(30, 41, 59, 0.45);
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--cyan-accent);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .domino-step:hover {
+      background: rgba(30, 41, 59, 0.85);
+      border-left-color: var(--gold-primary);
+      transform: translateX(4px);
+    }
+
+    .domino-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--cyan-accent);
+      background: rgba(56, 189, 248, 0.12);
+      padding: 2px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .domino-content h4 {
+      font-size: 0.86rem;
+      font-weight: 800;
+      color: #f1f5f9;
+      margin-bottom: 2px;
+    }
+
+    .domino-content p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Disciplinary Hinge Check Box */
+    .hinge-box {
+      background: linear-gradient(135deg, rgba(180, 83, 9, 0.15) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1.5px solid var(--border-gold);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    }
+
+    .hinge-header {
+      font-size: 0.7rem;
+      font-weight: 900;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hinge-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #fef08a;
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
+    .btn-model-toggle {
+      background: #1e293b;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      padding: 7px 12px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-model-toggle:hover {
+      background: #334155;
+      border-color: var(--cyan-accent);
+    }
+
+    .model-answer-container {
+      display: none;
+      margin-top: 10px;
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      border-radius: 8px;
+      padding: 12px 14px;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    .model-badge {
+      font-size: 0.68rem;
+      font-weight: 900;
+      color: #4ade80;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .model-text {
+      font-size: 0.82rem;
+      color: #dcfce7;
+      line-height: 1.5;
+    }
+
+    /* Bottom Bar */
+    .footer-bar {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 800px) {
+      .footer-bar { grid-template-columns: 1fr; }
+    }
+
+    .vocab-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .vocab-chip {
+      background: rgba(30, 41, 59, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #e2e8f0;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .vocab-chip:hover {
+      border-color: var(--gold-primary);
+      color: var(--gold-primary);
+      background: #1e293b;
+    }
+
+    /* Popup Modal */
+    #detail-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-card {
+      background: #0f172a;
+      border: 2px solid var(--border-gold);
+      border-radius: 14px;
+      max-width: 550px;
+      width: 100%;
+      padding: 22px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+      animation: modalPop 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes modalPop { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
+  </style>
+</head>
+<body>
+
+  <div class="mat-container">
+
+    <!-- Top Status Bar -->
+    <div class="top-bar">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span class="badge-pill badge-spec"><i class="fa-solid fa-graduation-cap"></i> Edexcel GCSE History: Paper 3</span>
+        <span class="badge-pill badge-topic"><i class="fa-solid fa-image"></i> Archival Visual Edition</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button type="button" class="btn-action" onclick="window.print()"><i class="fa-solid fa-print"></i> Print A4 Handout</button>
+        <button type="button" class="btn-action" onclick="resetHighlights()"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+      </div>
+    </div>
+
+    <!-- Main Header Card with General Ludendorff Portrait -->
+    <header class="mat-header">
+      <div class="header-text-col">
+        <div class="header-sub">
+          <i class="fa-solid fa-landmark"></i> Weimar & Nazi Germany, 1918–1939 • Key Topic 2.2
+        </div>
+        <h1 class="header-title">The Munich Putsch & the Lean Years, 1923–1929</h1>
+        <div class="header-enquiry">
+          <i class="fa-solid fa-circle-question" style="color: var(--cyan-accent);"></i>
+          Enquiry: A spectacular failure or a political masterstroke: How did Hitler use the disaster of the Munich Putsch to rebuild the Nazi Party during its 'lean years'?
+        </div>
+      </div>
+      <div class="header-portrait-badge" title="General Erich Ludendorff (1865–1937), Putsch Figurehead">
+        <img src="/images/weimar_individuals/general_erich_ludendorff.jpg" alt="General Erich Ludendorff Portrait" />
+      </div>
+    </header>
+
+    <!-- 4 High-Yield Metric Counters -->
+    <div class="stats-grid">
+      <div class="stat-card" onclick="showDetail('16 Nazis & 4 Police Killed', 'On the morning of 9 November 1923, 2,000 marching Nazis led by Hitler and General Ludendorff were intercepted by a cordon of Bavarian state police at the Feldherrnhalle in Munich. A firefight erupted: 16 putschists and 4 police officers were killed. Hitler dislocated his shoulder, Göring was shot in the groin, and the coup collapsed instantly.')">
+        <div class="stat-icon rose"><i class="fa-solid fa-crosshairs"></i></div>
+        <div>
+          <div class="stat-val">16 vs 4</div>
+          <div class="stat-lbl">Feldherrnhalle Casualties (1923)</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('9 Months Served at Landsberg', 'Convicted of high treason, Hitler received the minimum statutory sentence of 5 years due to sympathetic right-wing judges led by Georg Neithardt. He served just 9 months in comfortable fortress detention (Ehrenhaft) at Landsberg, receiving visitors, gifts, and dictating Mein Kampf to Rudolf Hess.')">
+        <div class="stat-icon gold"><i class="fa-solid fa-hotel"></i></div>
+        <div>
+          <div class="stat-val">9 Months</div>
+          <div class="stat-lbl">Sentence Served (1924)</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('2.6% Reichstag Vote Share (12 Seats)', 'In the May 1928 \'Golden Twenties\' elections, the NSDAP won just 2.6% of the national vote and 12 Reichstag seats, down from 32 seats in May 1924. With Gustav Stresemann stabilizing the currency and securing US Dawes Plan loans, extremist parties were cast into the electoral wilderness.')">
+        <div class="stat-icon cyan"><i class="fa-solid fa-chart-line"></i></div>
+        <div>
+          <div class="stat-val">2.6%</div>
+          <div class="stat-lbl">May 1928 Vote Share (12 Seats)</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('100,000 Party Members by 1928', 'Despite electoral irrelevance, party membership surged from 27,000 in 1925 to over 100,000 by 1928. Hitler restructured the party into 35 regional districts (Gaue) headed by fanatically loyal Gauleiters, creating a national campaigning machine ready for the next economic crisis.')">
+        <div class="stat-icon emerald"><i class="fa-solid fa-address-card"></i></div>
+        <div>
+          <div class="stat-val">100k</div>
+          <div class="stat-lbl">Party Members by 1928</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Photographic Archival Primary Artifact Cards -->
+    <div class="photo-pillars-grid">
+
+      <!-- Photo Card 1: Marienplatz Putschists -->
+      <div class="photo-card" onclick="showDetail('Primary Artifact 1: Armed SA Stormtroopers in Marienplatz (Nov 1923)', 'Armed stormtroopers of the SA and Stoßtrupp-Hitler occupying the Marienplatz outside the Munich Rathaus on 9 November 1923. Armed with surplus Great War rifles, machine guns, and swastika standards, the putschists mistakenly assumed the police and army would join their \'March on Berlin\'. When Gustav von Kahr and the army renounced the putsch overnight, the armed marchers were marched directly into police rifle fire.')">
+        <div class="photo-container">
+          <img src="/images/weimar_munich_putsch_marienplatz_1923.jpg" alt="Armed SA Stormtroopers occupying Marienplatz during the Munich Putsch, 1923" />
+          <span class="photo-badge"><i class="fa-solid fa-camera"></i> Primary Artifact 1</span>
+        </div>
+        <div class="photo-card-body">
+          <h3 class="photo-card-title"><i class="fa-solid fa-gun" style="color: var(--crimson-accent);"></i> Marienplatz Occupation</h3>
+          <p class="photo-card-desc">Armed SA stormtroopers occupying central Munich on 9 Nov 1923 before their ill-fated march to the Feldherrnhalle.</p>
+        </div>
+      </div>
+
+      <!-- Photo Card 2: Munich Treason Trial -->
+      <div class="photo-card" onclick="showDetail('Primary Artifact 2: Hitler and Ludendorff Outside the Treason Court (Spring 1924)', 'Adolf Hitler, General Erich Ludendorff, and fellow putsch defendants outside the Munich People\'s Court during their treason trial in spring 1924. Hitler turned the dock into a nationwide propaganda platform, unabashedly admitting his intention to overthrow the Weimar Republic while portraying himself as a selfless patriot. Ludendorff was acquitted; Hitler emerged as a national martyr of the extreme right.')">
+        <div class="photo-container">
+          <img src="/images/munich_putsch_defendants.jpg" alt="Adolf Hitler, General Erich Ludendorff and co-defendants outside Munich People's Court, 1924" />
+          <span class="photo-badge"><i class="fa-solid fa-scale-balanced"></i> Primary Artifact 2</span>
+        </div>
+        <div class="photo-card-body">
+          <h3 class="photo-card-title"><i class="fa-solid fa-landmark" style="color: var(--gold-primary);"></i> Munich Treason Trial</h3>
+          <p class="photo-card-desc">Hitler used the 1924 treason trial to broadcast his nationalist message across Germany, transforming military defeat into political triumph.</p>
+        </div>
+      </div>
+
+      <!-- Photo Card 3: Landsberg Fortress -->
+      <div class="photo-card" onclick="showDetail('Primary Artifact 3: Hitler\'s Comfortable Room at Landsberg Fortress (1924)', 'Contemporary photograph of Adolf Hitler serving his sentence in a comfortable private room at Landsberg Fortress in 1924. Treated with immense deference by prison guards, Hitler was surrounded by books, received over 300 visitors, and dictated Mein Kampf (My Struggle) to Rudolf Hess. Here, Hitler formulated the decisive Legal Strategy: democracy had to be destroyed from within using the ballot box.')">
+        <div class="photo-container">
+          <img src="/images/hitler_landsberg_1924.jpg" alt="Adolf Hitler in his room at Landsberg Fortress, 1924" />
+          <span class="photo-badge"><i class="fa-solid fa-book-skull"></i> Primary Artifact 3</span>
+        </div>
+        <div class="photo-card-body">
+          <h3 class="photo-card-title"><i class="fa-solid fa-pen-nib" style="color: var(--cyan-accent);"></i> Landsberg & Mein Kampf</h3>
+          <p class="photo-card-desc">Hitler dictated Mein Kampf in comfortable fortress detention, adopting the legal path to power through democratic elections.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Main Two-Column Educational Grid -->
+    <div class="mat-body-grid">
+
+      <!-- Left Column: Chronological Domino Chain -->
+      <div class="panel-box">
+        <div class="panel-heading">
+          <i class="fa-solid fa-timeline"></i> Chronological Causal Domino Spine (1923–1929)
+        </div>
+        <div class="domino-timeline">
+
+          <div class="domino-step" onclick="showDetail('8 November 1923: The Bürgerbräukeller Ambush', 'Amidst hyperinflation and fury at Stresemann ending passive resistance in the Ruhr, Hitler and 600 SA men burst into a Munich beer hall. Firing a pistol into the ceiling, Hitler forces Bavarian leaders Gustav von Kahr, Otto von Lossow, and Hans von Seisser into a side room to demand support for an armed march on Berlin.')">
+            <span class="domino-date">8 Nov 1923</span>
+            <div class="domino-content">
+              <h4>Hitler Hijacks the Bürgerbräukeller Beer Hall</h4>
+              <p>Hitler fires into the ceiling and corners Bavarian leaders at gunpoint; General Ludendorff persuades them to swear loyalty to the national putsch.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('9 November 1923: Disaster at the Feldherrnhalle', 'Once released, Kahr and Lossow renege on their promises and order army and police reinforcements. Hitler and Ludendorff lead 2,000 Nazis into Munich to seize control. At the Feldherrnhalle, police fire volleys: 16 putschists die; Hitler flees and is arrested two days later at Uffing.')">
+            <span class="domino-date">9 Nov 1923</span>
+            <div class="domino-content">
+              <h4>Police Open Fire at the Feldherrnhalle</h4>
+              <p>Bavarian police crush the armed march; 16 Nazis and 4 police officers killed; Hitler flees the scene and the NSDAP is immediately banned.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('February–April 1924: The Munich Treason Trial', 'At his 24-day trial, Hitler exploits the press gallery to deliver uninterrupted speeches attacking Versailles and the Weimar \'traitors\'. Sympathetic judges grant him a lenient 5-year sentence with immediate parole eligibility, catapulting him to national fame.')">
+            <span class="domino-date">Spring 1924</span>
+            <div class="domino-content">
+              <h4>Treason Trial Elevates Hitler to National Prominence</h4>
+              <p>Sympathetic judiciary allows Hitler to turn the courtroom into a propaganda theatre, winning immense publicity across conservative Germany.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('1924–1925: Mein Kampf & Party Relaunch', 'Released in December 1924 after serving 9 months, Hitler relaunches the NSDAP at the Bürgerbräukeller in February 1925. He commits the party to the Legal Strategy (Legalitätsstrategie): power would not be seized by guns, but won through elections to dismantle the constitution.')">
+            <span class="domino-date">Feb 1925</span>
+            <div class="domino-content">
+              <h4>Party Relaunched: The Constitutional Path to Power</h4>
+              <p>Hitler publishes Mein Kampf and commits to winning power through the Reichstag ballot box rather than armed revolution.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('February 1926: The Bamberg Conference', 'Hitler convenes a party conference in Bamberg to defeat the socialist-leaning northern wing led by Gregor Strasser and Joseph Goebbels. Hitler ruthlessly reaffirms the Führerprinzip, eliminates socialist 25-point revisions, and wins Goebbels\' fanatical personal loyalty.')">
+            <span class="domino-date">14 Feb 1926</span>
+            <div class="domino-content">
+              <h4>Bamberg Conference: Hitler Defeats Party Rivals</h4>
+              <p>Hitler outmanoeuvres Gregor Strasser\'s socialist faction, establishes absolute Führerprinzip over northern branches, and wins over Joseph Goebbels.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Column: Disciplinary Check, Model Answer & Vocabulary -->
+      <div class="panel-box">
+        <div class="panel-heading">
+          <i class="fa-solid fa-graduation-cap"></i> Disciplinary Enquiry & Exam Mastery
+        </div>
+
+        <div class="hinge-box">
+          <div class="hinge-header">
+            <i class="fa-solid fa-key"></i> Key Topic 2.2 Hinge Question
+          </div>
+          <div class="hinge-question">
+            "Why was the Munich Putsch paradoxically the most beneficial catastrophe in the history of the Nazi Party?"
+          </div>
+          <button type="button" class="btn-model-toggle" onclick="toggleModelAnswer()">
+            <i class="fa-solid fa-eye" id="toggle-icon"></i> <span id="toggle-text">Show Examiner Model Answer</span>
+          </button>
+          <div class="model-answer-container" id="model-answer">
+            <div class="model-badge">
+              <i class="fa-solid fa-award"></i> Grade 9 Disciplinary Benchmark (8/8 Marks)
+            </div>
+            <div class="model-text">
+              Although the Munich Putsch was a complete tactical and military disaster—resulting in 16 dead Nazis, the total collapse of the coup, and the banning of the party—it paradoxically laid the indispensable foundations for Hitler’s eventual seizure of power through three structural transformations:<br><br>
+              1. <strong>National Platform and Martyrdom:</strong> Prior to November 1923, Hitler was merely a local Bavarian agitator. The 24-day treason trial provided him with a nationwide press megaphone to articulate his extreme nationalist ideology without judicial interruption. The lenient 9-month sentence proved that conservative elites and the judiciary sympathised with his anti-democratic aims.<br><br>
+              2. <strong>Strategic Realignment (The Legal Strategy):</strong> Imprisonment at Landsberg forced Hitler to recognize that armed rebellion against the German army and police was suicidal. He formulated the <em>Legalitätsstrategie</em>: the NSDAP would enter the Reichstag, exploit the democratic system, and dismantle Weimar from within.<br><br>
+              3. <strong>Total Internal Hegemony (Führerprinzip):</strong> Relaunching the party in 1925, Hitler used the setback to consolidate absolute personal dictatorship. At the <strong>1926 Bamberg Conference</strong>, he crushed Gregor Strasser’s left-wing socialist challenge, created the national <em>Gau</em> administrative network, and formed the SS. When the Wall Street Crash struck in 1929, the Nazis possessed a disciplined, nationwide electoral machine ready for mass exploitation.
+            </div>
+          </div>
+        </div>
+
+        <!-- Examiner Strategy Alert -->
+        <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid var(--border-subtle); border-radius: 10px; padding: 12px 14px;">
+          <div style="font-size: 0.72rem; font-weight: 900; color: var(--gold-primary); text-transform: uppercase; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-lightbulb"></i> Paper 3 Disciplinary Tip: The 'Lean Years' Context
+          </div>
+          <p style="font-size: 0.78rem; color: #cbd5e1; line-height: 1.45;">
+            When explaining why Nazi support collapsed to 2.6% in 1928, always link internal factors with the <strong>Stresemann Golden Twenties</strong> (Rentenmark stability, Dawes Plan loans, Locarno Pact, League of Nations entry). Moderate Germans saw no reason to vote for violent extremism when wages were rising and the republic was thriving.
+          </p>
+        </div>
+
+        <!-- Vocabulary Explorer -->
+        <div>
+          <div style="font-size: 0.74rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+            <i class="fa-solid fa-book-bookmark"></i> Key Pedagogical Terms (Click to Inspect)
+          </div>
+          <div class="vocab-chips">
+            <span class="vocab-chip" onclick="showDetail('Bürgerbräukeller', 'Large Munich beer hall where Hitler and 600 SA men launched the Munich Putsch on 8 November 1923, holding Bavarian State Commissioner Gustav von Kahr hostage.')">Bürgerbräukeller</span>
+            <span class="vocab-chip" onclick="showDetail('Feldherrnhalle', 'Monumental loggia in Munich where armed Bavarian state police fired upon the marching Nazi putschists on 9 November 1923, killing 16 Nazis and ending the coup.')">Feldherrnhalle</span>
+            <span class="vocab-chip" onclick="showDetail('Gustav von Kahr (1862–1934)', 'State Commissioner of Bavaria who plotted against Berlin, was forced to support Hitler at gunpoint in the beer hall, but betrayed the putsch overnight by ordering police resistance. Murdered in the Night of the Long Knives.')">Gustav von Kahr</span>
+            <span class="vocab-chip" onclick="showDetail('General Erich Ludendorff (1865–1937)', 'Revered German Quartermaster-General of World War I. Participated in the Munich Putsch to give the coup military prestige; acquitted at trial due to his wartime hero status.')">General Ludendorff</span>
+            <span class="vocab-chip" onclick="showDetail('Landsberg Fortress', 'Bavarian prison fortress where Hitler served 9 months of his treason sentence in comfortable conditions, holding court for visitors and dictating Mein Kampf.')">Landsberg Fortress</span>
+            <span class="vocab-chip" onclick="showDetail('Mein Kampf (My Struggle)', 'Hitler\'s autobiographical manifesto written at Landsberg in 1924, outlining core Nazi doctrines: Aryan racial supremacy, anti-Semitism, Lebensraum, and anti-Bolshevism.')">Mein Kampf</span>
+            <span class="vocab-chip" onclick="showDetail('Bamberg Conference (1926)', 'Party conference convened by Hitler in Bavaria to defeat the northern socialist faction led by Gregor Strasser, securing Hitler\'s total dictatorial control (Führerprinzip) over party ideology.')">Bamberg Conference</span>
+            <span class="vocab-chip" onclick="showDetail('Gregor Strasser (1892–1934)', 'Leader of the socialist-leaning northern wing of the NSDAP who championed the anti-capitalist points of the 25-Point Programme. Outmanoeuvred at Bamberg and murdered in 1934.')">Gregor Strasser</span>
+            <span class="vocab-chip" onclick="showDetail('Legal Strategy (Legalitätsstrategie)', 'The post-1924 Nazi policy of abandoning violent armed putsches in favour of contesting democratic elections to gain power and legally dismantle the Weimar constitution.')">Legal Strategy</span>
+            <span class="vocab-chip" onclick="showDetail('Gauleiter Network', 'Regional party bosses appointed directly by Hitler to run the 35 Gaue (districts) of Germany, transforming the NSDAP into a disciplined nationwide political apparatus.')">Gauleiter Network</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Interactive Detail Modal -->
+  <div id="detail-modal" onclick="closeModal(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; border-bottom: 1px solid var(--border-gold); padding-bottom: 8px;">
+        <h3 id="modal-title" style="color: var(--gold-primary); font-size: 1.15rem; font-weight: 900; display: flex; align-items: center; gap: 8px;">
+          <i class="fa-solid fa-circle-info"></i> Historical Specification Evidence
+        </h3>
+        <button type="button" onclick="closeModalDirect()" style="background: none; border: none; color: #94a3b8; font-size: 1.2rem; cursor: pointer; padding: 2px 6px;">&times;</button>
+      </div>
+      <p id="modal-desc" style="color: #f1f5f9; font-size: 0.9rem; line-height: 1.6;"></p>
+      <div style="margin-top: 16px; text-align: right;">
+        <button type="button" onclick="closeModalDirect()" class="btn-action" style="background: #1e293b; border-color: var(--border-gold); color: #fbbf24;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleModelAnswer() {
+      const container = document.getElementById('model-answer');
+      const icon = document.getElementById('toggle-icon');
+      const text = document.getElementById('toggle-text');
+      if (container.style.display === 'block') {
+        container.style.display = 'none';
+        icon.className = 'fa-solid fa-eye';
+        text.textContent = 'Show Examiner Model Answer';
+      } else {
+        container.style.display = 'block';
+        icon.className = 'fa-solid fa-eye-slash';
+        text.textContent = 'Hide Model Answer';
+      }
+    }
+
+    function showDetail(title, desc) {
+      document.getElementById('modal-title').innerHTML = '<i class="fa-solid fa-circle-info"></i> ' + title;
+      document.getElementById('modal-desc').innerText = desc;
+      const modal = document.getElementById('detail-modal');
+      modal.style.display = 'flex';
+    }
+
+    function closeModalDirect() {
+      document.getElementById('detail-modal').style.display = 'none';
+    }
+
+    function closeModal(e) {
+      if (e.target.id === 'detail-modal') {
+        closeModalDirect();
+      }
+    }
+
+    function resetHighlights() {
+      const container = document.getElementById('model-answer');
+      if (container) container.style.display = 'none';
+      const icon = document.getElementById('toggle-icon');
+      const text = document.getElementById('toggle-text');
+      if (icon) icon.className = 'fa-solid fa-eye';
+      if (text) text.textContent = 'Show Examiner Model Answer';
+    }
+
+    // Keyboard support for ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModalDirect();
+    });
+  </script>
+
+</body>
+</html>

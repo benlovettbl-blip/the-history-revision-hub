@@ -2160,6 +2160,48 @@
   "weimar_nazi_germany": [
     {
       "unit": "weimar_nazi_germany",
+      "lessonId": "lesson_2_1",
+      "slug": "weimar_kt2_1_early_party",
+      "title": "The Early Development of the Nazi Party, 1919–1922: DAP to the SA",
+      "topic": "Key Topic 2.1: The Early Development of the Nazi Party, 1919–1922",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Anton Drexler founds the German Workers' Party (DAP) in Munich (Jan 1919); army informant Adolf Hitler joins in Sept 1919.",
+        "25-Point Programme published (24 Feb 1920) fusing extreme nationalism, anti-Semitism, and populist economic pledges.",
+        "Party rebrands to NSDAP; adopts hooked swastika flag (Hakenkreuz) and buys the Völkischer Beobachter newspaper with army funds.",
+        "Hitler demands and seizes absolute dictatorial authority (Führerprinzip) in July 1921, ousting Drexler to honorary chairman.",
+        "Sturmabteilung (SA / Brownshirts) formally organized under Captain Ernst Röhm in 1921 to provide paramilitary muscle."
+      ],
+      "image": "/images/infographics/weimar/weimar_kt2_1_early_party.webp",
+      "interactiveUrl": "/interactive_mats/weimar_kt2_1_early_party.html",
+      "fileSizeKb": 258,
+      "hingeQuestion": "Why was the combination of the 25-Point Programme and the SA uniquely dangerous compared to traditional right-wing fringe parties in Weimar Germany?",
+      "modelAnswer": "The early NSDAP proved uniquely dangerous because it synthesized two revolutionary ingredients that traditional German nationalist groups lacked: ideological cross-class appeal and institutionalised paramilitary violence. Traditional right-wing parties (like the DNVP) were aristocratic, monarchist, and elitist, alienating ordinary working-class Germans. In contrast, Hitler and Drexler’s 25-Point Programme combined visceral anti-Versailles nationalism with populist socialist appeals designed specifically to detach workers from the SPD and KPD. Simultaneously, Ernst Röhm’s Sturmabteilung (SA) transformed street violence into a disciplined political weapon, projecting an illusion of orderly paramilitary strength amidst Weimar’s post-war chaos."
+    },
+    {
+      "unit": "weimar_nazi_germany",
+      "lessonId": "lesson_2_2",
+      "slug": "weimar_kt2_2_munich_putsch",
+      "title": "The Munich Putsch & the Lean Years, 1923–1929: From Armed Coup to Legal Strategy",
+      "topic": "Key Topic 2.2: The Munich Putsch and the Lean Years, 1923–1929",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "8 Nov 1923: Hitler and 600 SA hijack the Bürgerbräukeller beer hall, forcing Bavarian leaders Kahr, Lossow, and Seisser at gunpoint.",
+        "9 Nov 1923: Bavarian state police fire on marching putschists at the Feldherrnhalle; 16 Nazis and 4 police killed; coup collapses.",
+        "Spring 1924: Munich Treason Trial turns Hitler into a national martyr; sympathetic judges grant lenient 5-year sentence with early parole.",
+        "Landsberg Fortress: Hitler dictates Mein Kampf, abandoning violent putsches in favour of the constitutional 'Legal Strategy' (Legalitätsstrategie).",
+        "Bamberg Conference (1926): Hitler crushes Gregor Strasser's socialist faction, establishes absolute Führerprinzip, and reorganizes Germany into 35 Gaue."
+      ],
+      "image": "/images/infographics/weimar/weimar_kt2_2_munich_putsch.webp",
+      "interactiveUrl": "/interactive_mats/weimar_kt2_2_munich_putsch.html",
+      "fileSizeKb": 251,
+      "hingeQuestion": "Why was the Munich Putsch paradoxically the most beneficial catastrophe in the history of the Nazi Party?",
+      "modelAnswer": "Although a tactical and military disaster that left 16 Nazis dead and the party banned, the Munich Putsch provided three profound long-term advantages: First, the televised trial gave Hitler a nationwide platform, elevating him from a regional Munich agitator to the undisputed champion of the German extreme right. Second, imprisonment at Landsberg gave Hitler the strategic clarity to abandon armed putschism in favour of the 'Legal Path to Power' (Legalitätsstrategie), building an electoral infrastructure to destroy democracy legally. Third, it allowed Hitler to re-found the party in 1925 under total personal authority (Führerprinzip), purging rivals at the 1926 Bamberg Conference and creating the nationwide Gau network that swept to power after 1929."
+    },
+    {
+      "unit": "weimar_nazi_germany",
       "lessonId": "lesson_2_3",
       "slug": "weimar_kt2_3_nazi_support",
       "title": "The Growth of Nazi Support, 1929–1932: Wall Street Crash to 230 Seats",
@@ -2175,9 +2217,30 @@
       ],
       "image": "/images/infographics/weimar/weimar_kt2_3_nazi_support.webp",
       "interactiveUrl": "/interactive_mats/weimar_kt2_3_nazi_support.html",
-      "fileSizeKb": 149,
+      "fileSizeKb": 238,
       "hingeQuestion": "Why was the Great Depression necessary, but not sufficient on its own, to explain the surge in Nazi popularity between 1929 and 1932?",
       "modelAnswer": "The Great Depression was the indispensable catalyst: it shattered the economic stability of the Golden Twenties, drove unemployment to 6.1 million, and exposed Weimar's institutional weakness as Brüning governed via Article 48 emergency decrees. However, economic misery alone does not explain why voters chose the Nazis rather than the Communists or other extremist parties. The decisive factors were the NSDAP's superior propaganda machinery under Goebbels, the cross-class nationalist appeal of Hitler's messianic leadership, and the middle-class terror of a Bolshevik revolution, which transformed economic grievance into political conversion."
+    },
+    {
+      "unit": "weimar_nazi_germany",
+      "lessonId": "lesson_2_4",
+      "slug": "weimar_kt2_4_hitler_chancellor",
+      "title": "How Hitler Became Chancellor, 1932–1933: Political Intrigue & The Backstairs Deal",
+      "topic": "Key Topic 2.4: How Hitler Became Chancellor, 1932–1933",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Hindenburg sacks Chancellor Brüning (May 1932); Franz von Papen forms the aristocratic 'Cabinet of Barons'.",
+        "July 1932: Nazis win 230 seats (37.3%); Hitler demands Chancellorship but Hindenburg dismisses him as a 'Bohemian corporal'.",
+        "Nov 1932 elections: Nazi support declines to 196 seats (-2 million votes); party faces financial bankruptcy and fading momentum.",
+        "General Kurt von Schleicher replaces Papen (Dec 1932) but fails to split the Nazis with Gregor Strasser or secure a majority.",
+        "4–30 Jan 1933: Papen meets Hitler at banker Schröder's villa; convinces Hindenburg that Hitler can be 'boxed in' with only 3 Nazi ministers in cabinet."
+      ],
+      "image": "/images/infographics/weimar/weimar_kt2_4_hitler_chancellor.webp",
+      "interactiveUrl": "/interactive_mats/weimar_kt2_4_hitler_chancellor.html",
+      "fileSizeKb": 244,
+      "hingeQuestion": "Why did conservative elites like Franz von Papen believe they could 'tame' Hitler in January 1933, and why was their calculation fatally mistaken?",
+      "modelAnswer": "Conservative elites believed they held all the structural levers of state power: Hindenburg remained President with commander-in-chief authority over the army and Article 48 emergency powers; von Papen was Vice-Chancellor with the unique right to attend all meetings between Hitler and Hindenburg; and 8 of the 11 cabinet ministers were traditional conservatives. They viewed Hitler as an uneducated political upstart whom they could exploit for his mass following before discarding him. This calculation was fatally mistaken because it ignored Hitler's fanatical ruthlessness, the armed street power of 400,000 SA stormtroopers, and the crucial appointment of Hermann Göring as Prussian Minister of the Interior, which placed Germany's largest police force directly under Nazi control."
     }
   ]
 }

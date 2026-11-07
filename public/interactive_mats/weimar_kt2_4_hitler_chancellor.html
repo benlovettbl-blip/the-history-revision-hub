@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weimar & Nazi Germany (KT 2.4): How Hitler Became Chancellor, 1932–1933 | Visual Revision Mat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-dark: #070d18;
+      --bg-surface: #0f172a;
+      --bg-card: rgba(15, 23, 42, 0.92);
+      --bg-card-hover: rgba(30, 41, 59, 0.98);
+      --border-subtle: rgba(255, 255, 255, 0.1);
+      --border-gold: rgba(245, 158, 11, 0.5);
+      --gold-primary: #fbbf24;
+      --gold-dark: #b45309;
+      --crimson-accent: #f43f5e;
+      --cyan-accent: #38bdf8;
+      --emerald-accent: #34d399;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #050914 radial-gradient(ellipse 80% 50% at 50% -20%, rgba(180, 83, 9, 0.25), rgba(7, 13, 24, 0.95) 70%, #030712 100%);
+      color: var(--text-main);
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    .mat-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    /* Top Utility Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 8px 16px;
+      backdrop-filter: blur(10px);
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .badge-spec {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.2), rgba(14, 165, 233, 0.3));
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+    }
+
+    .badge-topic {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.3));
+      color: #fbbf24;
+      border: 1px solid var(--border-gold);
+    }
+
+    .btn-action {
+      background: #1e293b;
+      color: #f1f5f9;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action:hover {
+      background: #334155;
+      border-color: var(--gold-primary);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    /* Dramatic Magazine Header */
+    .mat-header {
+      background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 45%, #1e293b 100%);
+      border: 2px solid var(--border-gold);
+      border-radius: 16px;
+      padding: 24px 32px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), inset 0 0 50px rgba(245, 158, 11, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .mat-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background: linear-gradient(180deg, #f43f5e, #fbbf24, #38bdf8);
+    }
+
+    .header-text-col {
+      flex: 1;
+    }
+
+    .header-sub {
+      color: var(--gold-primary);
+      font-size: 0.85rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .header-enquiry {
+      color: #cbd5e1;
+      font-size: 1rem;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-portrait-badge {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      border: 3px solid var(--gold-primary);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5), 0 0 20px rgba(245, 158, 11, 0.3);
+      overflow: hidden;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+    }
+
+    .header-portrait-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    /* 4 High-Impact Quantitative Data Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+
+    .stat-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 70%);
+    }
+
+    .stat-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .stat-icon.rose { background: rgba(244, 63, 94, 0.2); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.4); }
+    .stat-icon.cyan { background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); }
+    .stat-icon.gold { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.5); }
+    .stat-icon.emerald { background: rgba(52, 211, 153, 0.2); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.4); }
+
+    .stat-val {
+      font-size: 1.65rem;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.05;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .stat-lbl {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* Photographic Visual Gallery / Causal Pillars */
+    .photo-pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .photo-pillars-grid { grid-template-columns: 1fr; }
+    }
+
+    .photo-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .photo-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    }
+
+    .photo-container {
+      position: relative;
+      height: 160px;
+      width: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-card:hover .photo-container img {
+      transform: scale(1.05);
+    }
+
+    .photo-badge {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      backdrop-filter: blur(4px);
+    }
+
+    .photo-card-body {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .photo-card-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .photo-card-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Main Multi-Column Split: Timeline & Disciplinary Check */
+    .mat-body-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.95fr;
+      gap: 18px;
+    }
+
+    @media (max-width: 992px) {
+      .mat-body-grid { grid-template-columns: 1fr; }
+    }
+
+    .panel-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    }
+
+    .panel-heading {
+      font-size: 0.88rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 8px;
+    }
+
+    /* Chronological Domino Chain */
+    .domino-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .domino-step {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 9px 12px;
+      background: rgba(30, 41, 59, 0.45);
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--cyan-accent);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .domino-step:hover {
+      background: rgba(30, 41, 59, 0.85);
+      border-left-color: var(--gold-primary);
+      transform: translateX(4px);
+    }
+
+    .domino-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--cyan-accent);
+      background: rgba(56, 189, 248, 0.12);
+      padding: 2px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .domino-content h4 {
+      font-size: 0.86rem;
+      font-weight: 800;
+      color: #f1f5f9;
+      margin-bottom: 2px;
+    }
+
+    .domino-content p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Disciplinary Hinge Check Box */
+    .hinge-box {
+      background: linear-gradient(135deg, rgba(180, 83, 9, 0.15) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1.5px solid var(--border-gold);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    }
+
+    .hinge-header {
+      font-size: 0.7rem;
+      font-weight: 900;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hinge-question {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #fef08a;
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
+    .btn-model-toggle {
+      background: #1e293b;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      padding: 7px 12px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-model-toggle:hover {
+      background: #334155;
+      border-color: var(--cyan-accent);
+    }
+
+    .model-answer-container {
+      display: none;
+      margin-top: 10px;
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      border-radius: 8px;
+      padding: 12px 14px;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    .model-badge {
+      font-size: 0.68rem;
+      font-weight: 900;
+      color: #4ade80;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .model-text {
+      font-size: 0.82rem;
+      color: #dcfce7;
+      line-height: 1.5;
+    }
+
+    /* Bottom Bar */
+    .footer-bar {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 800px) {
+      .footer-bar { grid-template-columns: 1fr; }
+    }
+
+    .vocab-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .vocab-chip {
+      background: rgba(30, 41, 59, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #e2e8f0;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .vocab-chip:hover {
+      border-color: var(--gold-primary);
+      color: var(--gold-primary);
+      background: #1e293b;
+    }
+
+    /* Popup Modal */
+    #detail-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-card {
+      background: #0f172a;
+      border: 2px solid var(--border-gold);
+      border-radius: 14px;
+      max-width: 550px;
+      width: 100%;
+      padding: 22px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+      animation: modalPop 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes modalPop { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
+  </style>
+</head>
+<body>
+
+  <div class="mat-container">
+
+    <!-- Top Status Bar -->
+    <div class="top-bar">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span class="badge-pill badge-spec"><i class="fa-solid fa-graduation-cap"></i> Edexcel GCSE History: Paper 3</span>
+        <span class="badge-pill badge-topic"><i class="fa-solid fa-image"></i> Archival Visual Edition</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button type="button" class="btn-action" onclick="window.print()"><i class="fa-solid fa-print"></i> Print A4 Handout</button>
+        <button type="button" class="btn-action" onclick="resetHighlights()"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+      </div>
+    </div>
+
+    <!-- Main Header Card with President Paul von Hindenburg Portrait -->
+    <header class="mat-header">
+      <div class="header-text-col">
+        <div class="header-sub">
+          <i class="fa-solid fa-landmark"></i> Weimar & Nazi Germany, 1918–1939 • Key Topic 2.4
+        </div>
+        <h1 class="header-title">How Hitler Became Chancellor, 1932–1933</h1>
+        <div class="header-enquiry">
+          <i class="fa-solid fa-circle-question" style="color: var(--cyan-accent);"></i>
+          Enquiry: The Backstairs Intrigue: How did secret political scheming, revenge, and a fatal underestimation rescue a struggling Adolf Hitler and hand him the Chancellorship?
+        </div>
+      </div>
+      <div class="header-portrait-badge" title="Field Marshal Paul von Hindenburg (1847–1934), President of Germany">
+        <img src="/images/weimar_individuals/paul_von_hindenburg.jpg" alt="President Paul von Hindenburg Portrait" />
+      </div>
+    </header>
+
+    <!-- 4 High-Yield Metric Counters -->
+    <div class="stats-grid">
+      <div class="stat-card" onclick="showDetail('-2 Million Votes (Nov 1932)', 'In the Reichstag elections of 6 November 1932, the Nazi Party suffered a severe setback, losing 34 seats (falling from 230 to 196) and over 2 million votes. The party was financially bankrupt from continuous campaigning, while the German public grew weary of violent street extremism as the worst of the Depression slightly eased.')">
+        <div class="stat-icon rose"><i class="fa-solid fa-arrow-trend-down"></i></div>
+        <div>
+          <div class="stat-val">-34 Seats</div>
+          <div class="stat-lbl">Nov 1932 Nazi Setback (196 Seats)</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('57 Days: Schleicher\'s Chancellorship', 'General Kurt von Schleicher served as Chancellor for just 57 days (December 1932–January 1933). His cynical attempt to split the Nazi Party by offering Gregor Strasser the Vice-Chancellorship collapsed when Hitler purged Strasser. Schleicher\'s land-resettlement plans terrified Prussian Junker landowners, prompting Hindenburg to withdraw confidence.')">
+        <div class="stat-icon gold"><i class="fa-solid fa-hourglass-half"></i></div>
+        <div>
+          <div class="stat-val">57 Days</div>
+          <div class="stat-lbl">Schleicher's Failed Tenure</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('Only 3 out of 11 Ministers', 'In Hitler\'s first cabinet appointed on 30 January 1933, only three ministers were Nazis: Adolf Hitler (Chancellor), Wilhelm Frick (Interior), and Hermann Göring (Minister without Portfolio and Prussian Interior Minister). The remaining 8 were aristocratic conservatives, leading Franz von Papen to boast: \'In two months, we will have pushed Hitler into a corner until he squeaks!\'')">
+        <div class="stat-icon cyan"><i class="fa-solid fa-user-group"></i></div>
+        <div>
+          <div class="stat-val">3 of 11</div>
+          <div class="stat-lbl">Nazi Ministers in Cabinet</div>
+        </div>
+      </div>
+
+      <div class="stat-card" onclick="showDetail('30 January 1933: Torchlight Parade', 'On the evening of 30 January 1933, following Hitler\'s official swearing-in by President Hindenburg, 25,000 uniformed SA stormtroopers and Stahlhelm veterans staged a four-hour nocturnal torchlight procession through the Brandenburg Gate past the Reich Chancellery, celebrating the death of the Weimar Republic.')">
+        <div class="stat-icon emerald"><i class="fa-solid fa-fire"></i></div>
+        <div>
+          <div class="stat-val">30 Jan '33</div>
+          <div class="stat-lbl">Hitler Sworn In as Chancellor</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Photographic Archival Primary Artifact Cards -->
+    <div class="photo-pillars-grid">
+
+      <!-- Photo Card 1: Kurt von Schleicher -->
+      <div class="photo-card" onclick="showDetail('Primary Artifact 1: General Kurt von Schleicher (1932)', 'Official portrait of General Kurt von Schleicher, Chancellor of Germany from December 1932 to January 1933. A master of backdoor political intrigue, Schleicher orchestrated the downfall of both Heinrich Brüning and Franz von Papen. However, his gamble to split the Nazi Party and form a \'Querfront\' (Cross-front) alliance with trade unions collapsed, leaving him friendless and isolated before being murdered in the 1934 purge.')">
+        <div class="photo-container">
+          <img src="/images/weimar_kurt_von_schleicher.jpg" alt="General Kurt von Schleicher, Chancellor of Germany" />
+          <span class="photo-badge"><i class="fa-solid fa-user-tie"></i> Primary Artifact 1</span>
+        </div>
+        <div class="photo-card-body">
+          <h3 class="photo-card-title"><i class="fa-solid fa-chess-knight" style="color: var(--cyan-accent);"></i> General von Schleicher</h3>
+          <p class="photo-card-desc">The master intriguer whose failure to split the Nazi Party or build a Reichstag majority doomed Weimar's final democratic chancellorship.</p>
+        </div>
+      </div>
+
+      <!-- Photo Card 2: Punch Cartoon The Temporary Triangle -->
+      <div class="photo-card" onclick="showDetail('Primary Artifact 2: Punch Cartoon: The Temporary Triangle (Feb 1933)', 'Famous political cartoon by Bernard Partridge published in Punch on 8 February 1933. It depicts President Hindenburg, Vice-Chancellor Franz von Papen, and Chancellor Adolf Hitler bound together in a fragile three-way political pact. Papen believed he had \'boxed Hitler in\', holding the reins of power while using Hitler\'s mass movement to provide popular legitimacy.')">
+        <div class="photo-container">
+          <img src="/images/papen_hitler_cartoon.jpg" alt="Punch Cartoon: The Temporary Triangle, 8 February 1933" />
+          <span class="photo-badge"><i class="fa-solid fa-newspaper"></i> Primary Artifact 2</span>
+        </div>
+        <div class="photo-card-body">
+          <h3 class="photo-card-title"><i class="fa-solid fa-masks-theater" style="color: var(--gold-primary);"></i> 'The Temporary Triangle'</h3>
+          <p class="photo-card-desc">Punch cartoon (Feb 1933) lampooning the cynical bargain between Hindenburg, Papen, and Hitler, satirizing the elite delusion that Hitler was tamed.</p>
+        </div>
+      </div>
+
+      <!-- Photo Card 3: Hitler's First Cabinet -->
+      <div class="photo-card" onclick="showDetail('Primary Artifact 3: The First Cabinet of Adolf Hitler (30 Jan 1933)', 'Official group photograph of Adolf Hitler\'s initial coalition cabinet on 30 January 1933. Flanked by Vice-Chancellor Franz von Papen, DNVP leader Alfred Hugenberg, and Foreign Minister von Neurath, Hitler was ostensibly \'surrounded\' by conservative gentlemen. However, giving Hermann Göring control of the Prussian police gave the Nazis the physical machinery of state terror.')">
+        <div class="photo-container">
+          <img src="/images/weimar_hitler_cabinet_1933.jpg" alt="The First Cabinet of Adolf Hitler, 30 January 1933" />
+          <span class="photo-badge"><i class="fa-solid fa-building-columns"></i> Primary Artifact 3</span>
+        </div>
+        <div class="photo-card-body">
+          <h3 class="photo-card-title"><i class="fa-solid fa-landmark-flag" style="color: var(--crimson-accent);"></i> Hitler's 1933 Cabinet</h3>
+          <p class="photo-card-desc">Hitler photographed among conservative aristocrats who believed they had boxed him in, unaware they had handed him the keys to the dictatorship.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Main Two-Column Educational Grid -->
+    <div class="mat-body-grid">
+
+      <!-- Left Column: Chronological Domino Chain -->
+      <div class="panel-box">
+        <div class="panel-heading">
+          <i class="fa-solid fa-timeline"></i> Chronological Causal Domino Spine (1932–1933)
+        </div>
+        <div class="domino-timeline">
+
+          <div class="domino-step" onclick="showDetail('30 May 1932: Fall of Brüning & The Cabinet of Barons', 'Chancellor Heinrich Brüning is forced to resign when President Hindenburg opposes his plan to divide bankrupt Junker estates in East Prussia for unemployed workers. Hindenburg appoints aristocrat Franz von Papen to head an unelected \'Cabinet of Barons\', lifting the ban on the SA to appease Hitler.')">
+            <span class="domino-date">30 May 1932</span>
+            <div class="domino-content">
+              <h4>Brüning Dismissed; Papen Forms 'Cabinet of Barons'</h4>
+              <p>Hindenburg sacks Brüning over Junker land reforms; Papen takes office without parliamentary support, governing entirely via Article 48 decrees.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('31 July 1932: Peak Nazi Electoral Triumph (230 Seats)', 'In the July elections, the Nazis win 37.3% of the vote (230 seats), becoming Germany\'s largest party. Hitler demands the Chancellorship from Hindenburg. The President firmly refuses, telling Hitler in August that he would never entrust executive power to a \'Bohemian corporal\'.')">
+            <span class="domino-date">31 Jul 1932</span>
+            <div class="domino-content">
+              <h4>Nazis Win 230 Seats; Hindenburg Refuses Hitler</h4>
+              <p>NSDAP becomes largest Reichstag party; Hitler demands total power but Hindenburg dismisses him, refusing to hand Germany to a radical upstart.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('6 November 1932: Nazi Electoral Decline (196 Seats)', 'Papen dissolves the Reichstag after a vote of no confidence passes 512 to 42. In the November elections, Nazi support drops to 196 seats (losing 2 million votes). The KPD surges to 100 seats, terrifying German industrialists and conservative elites with the spectre of communism.')">
+            <span class="domino-date">6 Nov 1932</span>
+            <div class="domino-content">
+              <h4>November Elections: Nazi Vote Drops by 2 Million</h4>
+              <p>Nazis lose 34 seats and face financial collapse; Communist KPD gains ground, raising elite terror of a Bolshevik revolution in Germany.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('2 December 1932: Schleicher Ousts Papen', 'General von Schleicher informs Hindenburg that the army has lost faith in Papen and cannot control a civil war. Papen resigns, and Schleicher is appointed Chancellor. Schleicher tries to split the NSDAP by offering Gregor Strasser the Vice-Chancellorship, but Hitler forces Strasser out.')">
+            <span class="domino-date">2 Dec 1932</span>
+            <div class="domino-content">
+              <h4>Schleicher Appointed Chancellor; Strasser Split Fails</h4>
+              <p>Schleicher replaces Papen as Chancellor; his plot to divide the Nazi party by recruiting Gregor Strasser is ruthlessly crushed by Hitler.</p>
+            </div>
+          </div>
+
+          <div class="domino-step" onclick="showDetail('4–30 January 1933: The Backstairs Conspiracy at Schröder\'s Villa', 'Seeking revenge on Schleicher, Papen meets Hitler at banker Kurt von Schröder\'s villa in Cologne on 4 January 1933. They agree to form a joint government financed by industrialists. Papen and Oskar von Hindenburg persuade the 85-year-old President that Hitler will be powerless as Chancellor surrounded by 8 conservative ministers. On 30 January 1933, Hitler is officially sworn in.')">
+            <span class="domino-date">30 Jan 1933</span>
+            <div class="domino-content">
+              <h4>The Backstairs Conspiracy: Hitler Appointed Chancellor</h4>
+              <p>Papen brokers a deal with Hitler at Schröder's villa; Hindenburg is convinced Hitler can be controlled, appointing him Chancellor on 30 January 1933.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Column: Disciplinary Check, Model Answer & Vocabulary -->
+      <div class="panel-box">
+        <div class="panel-heading">
+          <i class="fa-solid fa-graduation-cap"></i> Disciplinary Enquiry & Exam Mastery
+        </div>
+
+        <div class="hinge-box">
+          <div class="hinge-header">
+            <i class="fa-solid fa-key"></i> Key Topic 2.4 Hinge Question
+          </div>
+          <div class="hinge-question">
+            "Why did conservative elites like Franz von Papen believe they could 'tame' Hitler in January 1933, and why was their calculation fatally mistaken?"
+          </div>
+          <button type="button" class="btn-model-toggle" onclick="toggleModelAnswer()">
+            <i class="fa-solid fa-eye" id="toggle-icon"></i> <span id="toggle-text">Show Examiner Model Answer</span>
+          </button>
+          <div class="model-answer-container" id="model-answer">
+            <div class="model-badge">
+              <i class="fa-solid fa-award"></i> Grade 9 Disciplinary Benchmark (8/8 Marks)
+            </div>
+            <div class="model-text">
+              Conservative elites, led by Franz von Papen and President Hindenburg’s inner circle (the Camarilla), genuinely believed they could exploit Hitler as a charismatic figurehead while holding all the substantive levers of state power. Their calculation rested on three structural safeguards:<br><br>
+              1. <strong>Institutional Numerical Isolation:</strong> Only three of the eleven cabinet ministers were Nazis (Hitler, Frick, and Göring). The remaining eight portfolios—including the Foreign Office, Defence, and Finance—were held by aristocratic conservatives. As Vice-Chancellor and Minister-President of Prussia, Papen held the unique constitutional right to attend every private meeting between Hitler and Hindenburg, leading him to famously boast: <em>"We have hired him!"</em><br><br>
+              2. <strong>Presidential and Military Veto:</strong> Field Marshal von Hindenburg retained the supreme office of President, the sole authority to sign Article 48 emergency decrees, and supreme command over the regular German Army (Reichswehr). The elites assumed that if Hitler stepped out of line, Hindenburg could instantly dismiss him as he had done to Brüning, Papen, and Schleicher.<br><br>
+              <strong>Why their calculation was fatally mistaken:</strong> Papen completely underestimated Hitler’s fanaticism, revolutionary ruthlessness, and armed street muscle (400,000 SA stormtroopers). Crucially, the elites ceded the portfolio of <strong>Prussian Minister of the Interior to Hermann Göring</strong>. This gave the Nazis direct executive control over the Prussian state police—Germany’s largest police force of 50,000 armed men. Within weeks, Göring deputized the SA as auxiliary police, neutralising the state’s ability to resist and setting the stage for total dictatorial consolidation following the Reichstag Fire.
+            </div>
+          </div>
+        </div>
+
+        <!-- Examiner Strategy Alert -->
+        <div style="background: rgba(30, 41, 59, 0.6); border: 1px solid var(--border-subtle); border-radius: 10px; padding: 12px 14px;">
+          <div style="font-size: 0.72rem; font-weight: 900; color: var(--gold-primary); text-transform: uppercase; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-lightbulb"></i> Paper 3 Disciplinary Tip: Popularity vs Intrigue
+          </div>
+          <p style="font-size: 0.78rem; color: #cbd5e1; line-height: 1.45;">
+            In Edexcel 16-mark essays on Hitler’s appointment as Chancellor, never argue that Hitler won power purely through democratic election. Remember that in November 1932, <strong>Nazi votes fell from 230 to 196 seats</strong>! High-scoring answers prove that Hitler was rescued from political decline by the <strong>selfish backstairs intrigue</strong> and fatal underestimation of conservative elites.
+          </p>
+        </div>
+
+        <!-- Vocabulary Explorer -->
+        <div>
+          <div style="font-size: 0.74rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+            <i class="fa-solid fa-book-bookmark"></i> Key Pedagogical Terms (Click to Inspect)
+          </div>
+          <div class="vocab-chips">
+            <span class="vocab-chip" onclick="showDetail('Backstairs Intrigue', 'The secret political conspiring between Franz von Papen, Oskar von Hindenburg, Otto Meissner, and Adolf Hitler in January 1933 to unseat Chancellor Kurt von Schleicher and install Hitler.')">Backstairs Intrigue</span>
+            <span class="vocab-chip" onclick="showDetail('Franz von Papen (1879–1969)', 'Wealthy Catholic aristocrat and former Chancellor who orchestrated the secret pact with Hitler at banker Schröder\'s villa, mistakenly believing he could tame Hitler as Vice-Chancellor.')">Franz von Papen</span>
+            <span class="vocab-chip" onclick="showDetail('Kurt von Schleicher (1882–1934)', 'Influential army general and Weimar\'s last democratic Chancellor (Dec 1932–Jan 1933). Attempted to form a Cross-Front by splitting the Nazis, but was outmanoeuvred by Papen and murdered in 1934.')">Kurt von Schleicher</span>
+            <span class="vocab-chip" onclick="showDetail('Paul von Hindenburg (1847–1934)', 'Aging 85-year-old World War I Field Marshal and German President. Initially despised Hitler as a \'Bohemian corporal\', but was manipulated by his son and Papen into appointing him on 30 January 1933.')">Paul von Hindenburg</span>
+            <span class="vocab-chip" onclick="showDetail('Cabinet of Barons (Kabinett der Barone)', 'The unrepresentative, aristocratic cabinet formed by Franz von Papen in June 1932, composed almost entirely of noblemen with virtually no support in the elected Reichstag.')">Cabinet of Barons</span>
+            <span class="vocab-chip" onclick="showDetail('Kurt von Schröder Villa Deal (4 Jan 1933)', 'Secret meeting in Cologne at the home of banker Kurt von Schröder where Franz von Papen and Hitler agreed on the terms of their coalition and secured financial backing from German industrialists.')">Schröder Villa Deal</span>
+            <span class="vocab-chip" onclick="showDetail('November 1932 Election', 'Reichstag election where Nazi seats dropped from 230 to 196, losing 2 million votes, proving the party was losing electoral momentum before backstairs intrigue rescued Hitler.')">Nov 1932 Election</span>
+            <span class="vocab-chip" onclick="showDetail('Prussian Interior Ministry', 'The key government department given to Hermann Göring on 30 January 1933, placing Germany\'s largest police force under Nazi control and allowing the SA to act as auxiliary police.')">Prussian Police Control</span>
+            <span class="vocab-chip" onclick="showDetail('Torchlight Parade (30 Jan 1933)', 'The celebratory four-hour midnight march of 25,000 SA stormtroopers through the Brandenburg Gate, staged by Goebbels to mark Hitler\'s appointment and signal the end of democracy.')">Brandenburg Torchlight Parade</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Interactive Detail Modal -->
+  <div id="detail-modal" onclick="closeModal(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; border-bottom: 1px solid var(--border-gold); padding-bottom: 8px;">
+        <h3 id="modal-title" style="color: var(--gold-primary); font-size: 1.15rem; font-weight: 900; display: flex; align-items: center; gap: 8px;">
+          <i class="fa-solid fa-circle-info"></i> Historical Specification Evidence
+        </h3>
+        <button type="button" onclick="closeModalDirect()" style="background: none; border: none; color: #94a3b8; font-size: 1.2rem; cursor: pointer; padding: 2px 6px;">&times;</button>
+      </div>
+      <p id="modal-desc" style="color: #f1f5f9; font-size: 0.9rem; line-height: 1.6;"></p>
+      <div style="margin-top: 16px; text-align: right;">
+        <button type="button" onclick="closeModalDirect()" class="btn-action" style="background: #1e293b; border-color: var(--border-gold); color: #fbbf24;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleModelAnswer() {
+      const container = document.getElementById('model-answer');
+      const icon = document.getElementById('toggle-icon');
+      const text = document.getElementById('toggle-text');
+      if (container.style.display === 'block') {
+        container.style.display = 'none';
+        icon.className = 'fa-solid fa-eye';
+        text.textContent = 'Show Examiner Model Answer';
+      } else {
+        container.style.display = 'block';
+        icon.className = 'fa-solid fa-eye-slash';
+        text.textContent = 'Hide Model Answer';
+      }
+    }
+
+    function showDetail(title, desc) {
+      document.getElementById('modal-title').innerHTML = '<i class="fa-solid fa-circle-info"></i> ' + title;
+      document.getElementById('modal-desc').innerText = desc;
+      const modal = document.getElementById('detail-modal');
+      modal.style.display = 'flex';
+    }
+
+    function closeModalDirect() {
+      document.getElementById('detail-modal').style.display = 'none';
+    }
+
+    function closeModal(e) {
+      if (e.target.id === 'detail-modal') {
+        closeModalDirect();
+      }
+    }
+
+    function resetHighlights() {
+      const container = document.getElementById('model-answer');
+      if (container) container.style.display = 'none';
+      const icon = document.getElementById('toggle-icon');
+      const text = document.getElementById('toggle-text');
+      if (icon) icon.className = 'fa-solid fa-eye';
+      if (text) text.textContent = 'Show Examiner Model Answer';
+    }
+
+    // Keyboard support for ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModalDirect();
+    });
+  </script>
+
+</body>
+</html>
