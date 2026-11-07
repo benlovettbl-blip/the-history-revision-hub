@@ -165,8 +165,8 @@ export function renderLessonExamPracticeHTML(unitId, lesson) {
               Full Marks (${q.marks}/${q.marks})
             </span>
           </div>
-          <div style="font-size: 0.95rem; line-height: 1.65; color: #1e293b; white-space: pre-line;">
-            ${q.modelAnswer}
+          <div style="font-size: 0.95rem; line-height: 1.65; color: #1e293b; ${q.modelAnswer && q.modelAnswer.includes('<div') ? '' : 'white-space: pre-line;'}">
+            ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(q.modelAnswer) : q.modelAnswer}
           </div>
         </div>
       </div>

@@ -1711,7 +1711,7 @@ function buildTextbookHtml(unitData) {
     }
 
     .recto-page .prose-p {
-      font-size: 11.8pt;
+      font-size: 13.0pt;
       line-height: 1.62;
       margin-bottom: 9px;
     }
@@ -1722,7 +1722,7 @@ function buildTextbookHtml(unitData) {
       border: 1px solid #cbd5e1;
       border-left: 3.5px solid #0f172a;
       border-radius: 4px;
-      padding: 7px 11px;
+      padding: 8px 12px;
       margin-top: 6px;
     }
 
@@ -1753,8 +1753,8 @@ function buildTextbookHtml(unitData) {
 
     .nexus-text {
       font-family: 'Lora', Georgia, serif;
-      font-size: 8.2pt;
-      line-height: 1.40;
+      font-size: 8.8pt;
+      line-height: 1.48;
       color: #334155;
       font-style: italic;
       text-align: justify;
@@ -2203,31 +2203,45 @@ function buildTextbookHtml(unitData) {
     function autoFitSpreadTypography() {
       document.querySelectorAll('.spread-body').forEach(body => {
         const page = body.closest('.page');
-        const footer = page ? page.querySelector('.page-footer') : null;
         if (!page) return;
+        const pageNum = parseInt(page.getAttribute('data-page'), 10);
+        if (pageNum < 4 || pageNum > 27) return;
 
-        const pRect = page.getBoundingClientRect();
-        const paras = Array.from(body.querySelectorAll('.prose-p'));
-        const blocks = Array.from(body.querySelectorAll('.narrative-block'));
-        const qBoxes = Array.from(body.querySelectorAll('.block-workbook-question'));
+        const isRecto = page.classList.contains('recto-page');
+        const proseCols = body.querySelector('.prose-columns');
+        if (!proseCols) return;
+
+        const paras = Array.from(proseCols.querySelectorAll('.prose-p'));
+        const blocks = Array.from(proseCols.querySelectorAll('.narrative-block'));
+        const nexus = page.querySelector('.disciplinary-nexus-card');
+        const footer = page.querySelector('.page-footer');
         if (!paras.length) return;
 
-        let attempts = 0;
-        let pSize = page.classList.contains('recto-page') ? 11.8 : 11.5;
-        let pLine = page.classList.contains('recto-page') ? 1.62 : 1.58;
-        let mb = page.classList.contains('recto-page') ? 7.5 : 6.0;
-        let blockMb = 7.0;
+        const pRect = page.getBoundingClientRect();
+        const footerTop = footer ? footer.getBoundingClientRect().top : pRect.bottom - 24;
 
         const checkOverflow = () => {
           if (page.scrollHeight > page.clientHeight + 2) return true;
-          if (body.scrollHeight > body.clientHeight + 2) return true;
+          if (proseCols.scrollWidth > proseCols.clientWidth + 2) return true;
           if (footer) {
-            const bRect = body.getBoundingClientRect();
             const fRect = footer.getBoundingClientRect();
-            if (bRect.bottom > fRect.top - 2) return true;
+            if (fRect.bottom > pRect.bottom + 2) return true;
           }
-          const allChildren = Array.from(body.querySelectorAll('*'));
-          for (const el of allChildren) {
+          if (nexus) {
+            const nRect = nexus.getBoundingClientRect();
+            if (nRect.bottom > footerTop - 2) return true;
+          }
+
+          let maxTextBottom = 0;
+          const allText = Array.from(proseCols.querySelectorAll('.prose-p, .block-title, .block-header, .bwq-text'));
+          allText.forEach(el => {
+            const r = el.getBoundingClientRect();
+            if (r.bottom > maxTextBottom) maxTextBottom = r.bottom;
+          });
+          const target = nexus ? nexus.getBoundingClientRect().top - 4 : footerTop - 4;
+          if (maxTextBottom > target) return true;
+
+          for (const el of page.querySelectorAll('*')) {
             const r = el.getBoundingClientRect();
             if (r.right > pRect.right + 4) return true;
             if (r.bottom > pRect.bottom + 4) return true;
@@ -2235,25 +2249,69 @@ function buildTextbookHtml(unitData) {
           return false;
         };
 
-        while (checkOverflow() && attempts < 40 && pSize > 9.6) {
-          attempts++;
-          pSize -= 0.03;
-          pLine = Math.max(1.44, pLine - 0.004);
-          mb = Math.max(2.8, mb - 0.08);
-          blockMb = Math.max(3.5, blockMb - 0.1);
+        const getTextBottom = () => {
+          let maxBottom = 0;
+          const allText = Array.from(proseCols.querySelectorAll('.prose-p, .block-title, .block-header, .bwq-text'));
+          allText.forEach(el => {
+            const r = el.getBoundingClientRect();
+            if (r.bottom > maxBottom) maxBottom = r.bottom;
+          });
+          return maxBottom;
+        };
 
-          paras.forEach(p => {
-            p.style.fontSize = pSize.toFixed(2) + 'pt';
-            p.style.lineHeight = pLine.toFixed(3);
-            p.style.marginBottom = mb.toFixed(1) + 'px';
+        const apply = (fs, lh, mb, bmb) => {
+          paras.forEach(para => {
+            para.style.fontSize = fs.toFixed(2) + 'pt';
+            para.style.lineHeight = lh.toFixed(3);
+            para.style.marginBottom = mb.toFixed(1) + 'px';
           });
           blocks.forEach(b => {
-            b.style.marginBottom = blockMb.toFixed(1) + 'px';
+            b.style.marginBottom = bmb.toFixed(1) + 'px';
           });
-          qBoxes.forEach(q => {
-            q.style.margin = '1px 0 2px 0';
-            q.style.padding = '1px 4px';
-          });
+        };
+
+        let pSize = isRecto ? 13.0 : 11.5;
+        let pLine = isRecto ? 1.62 : 1.58;
+        let mb = isRecto ? 9.0 : 7.0;
+        let blockMb = isRecto ? 9.0 : 7.0;
+        apply(pSize, pLine, mb, blockMb);
+
+        // Step 1: Scale DOWN if overflowing
+        let downAttempts = 0;
+        while (checkOverflow() && downAttempts < 50 && pSize > 9.5) {
+          downAttempts++;
+          pSize -= 0.08;
+          pLine = Math.max(1.42, pLine - 0.008);
+          mb = Math.max(3.0, mb - 0.15);
+          blockMb = Math.max(3.0, blockMb - 0.15);
+          apply(pSize, pLine, mb, blockMb);
+        }
+
+        // Step 2: Scale UP if underflowing
+        const targetBottom = nexus ? nexus.getBoundingClientRect().top - 6 : footerTop - 6;
+        let upAttempts = 0;
+        const maxAllowedFs = isRecto ? 15.5 : 13.2;
+
+        while (!checkOverflow() && upAttempts < 80 && pSize < maxAllowedFs) {
+          const currentBottom = getTextBottom();
+          if (targetBottom - currentBottom <= 8) break;
+
+          upAttempts++;
+          const testSize = pSize + 0.04;
+          const testLine = pLine + 0.004;
+          const testMb = mb + 0.12;
+          const testBlockMb = blockMb + 0.10;
+
+          apply(testSize, testLine, testMb, testBlockMb);
+          if (checkOverflow()) {
+            apply(pSize, pLine, mb, blockMb);
+            break;
+          } else {
+            pSize = testSize;
+            pLine = testLine;
+            mb = testMb;
+            blockMb = testBlockMb;
+          }
         }
       });
     }

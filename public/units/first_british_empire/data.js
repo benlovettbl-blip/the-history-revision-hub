@@ -1,4 +1,12 @@
 export default {
+  "synopsis": "Armed merchantmen braving uncharted oceans, chartered monopolies extorting immense wealth from the Mughal Empire, and the catastrophic human horror of the Transatlantic Slave Trade. An isolated northern island built global dominion on ruthless commercial exploitation, sugar plantations drenched in blood, and forced labor across the Americas. Confront the reality of the Middle Passage, the fierce guerrilla defiance of Queen Nanny and Jamaican Maroons, and the explosive rebellion of the Thirteen Colonies—as tea was cast into Boston Harbor and George Washington shattered imperial rule to ignite the American Revolution.",
+  "synopsis_tags": [
+      "East India Company & Mughal Court",
+      "Transatlantic Slave Trade & Middle Passage",
+      "Plantation Slavery in the Caribbean",
+      "Queen Nanny & Maroon Resistance",
+      "American Revolution & Yorktown (1783)"
+  ],
   "id": "first_british_empire",
   "title": "The First British Empire (1600–1783)",
   "short_title": "The First British Empire",
@@ -404,7 +412,7 @@ export default {
           }
         ]
       },
-      "vocabulary": [
+      "vocab": [
         {
           "term": "Charter",
           "definition": "A formal royal document granting exclusive trading rights, legal powers, or land to a private corporation.",
@@ -480,7 +488,7 @@ export default {
         {
           "act": 1,
           "title": "The London Charter (1600–1615)",
-          "text": "<span class=\"para-ref\">[1.1]</span> On New Year’s Eve 1600, Queen Elizabeth I granted a royal <strong>charter</strong> to the Governor and Company of Merchants of London Trading into the East Indies. Seeking lucrative Asian spices, silk, and cotton textiles to rival Portuguese and Dutch traders, 218 wealthy London merchants pooled their capital. The Crown granted the East India Company an exclusive trade <strong>monopoly</strong> east of the Cape of Good Hope. Early voyages faced catastrophic shipwreck, scurvy, and Portuguese cannon fire, but the profits were astronomical: a single cargo of pepper or cloves could return over 300% on a merchant’s investment.",
+          "text": "<span class=\"para-ref\">[1.1]</span> On New Year’s Eve 1600, Queen Elizabeth I granted a royal **charter** to the Governor and Company of Merchants of London Trading into the East Indies. Seeking lucrative Asian spices, silk, and cotton textiles to rival Portuguese and Dutch traders, 218 London merchants pooled their capital. The Crown granted the East India Company an exclusive trade **monopoly** east of the Cape of Good Hope. Early voyages faced catastrophic shipwreck, scurvy, and Portuguese cannon fire, but the private trade profits were astronomical: a single pepper & cotton cargo could return over 300% on a merchant’s investment.",
           "image": "/images/east_india_house.jpg",
           "image_alt": "Contemporary oil painting of the East India House on Leadenhall Street, London",
           "caption": "The East India House on Leadenhall Street, London, administrative headquarters of the East India Company from where the Court of Directors governed Asian trade and imperial armies (Yale Center for British Art, B1977.14.17469).",
@@ -586,7 +594,7 @@ export default {
         {
           "act": 2,
           "title": "Coastal Fortresses & Mughal Factories (1615–1700)",
-          "text": "<span class=\"para-ref\">[1.2]</span> When English merchants arrived in India, they encountered the vast, glittering Mughal Empire, whose economy accounted for nearly a quarter of global manufacturing. In 1615, King James I dispatched Sir Thomas Roe to the court of Emperor Jahangir. Roe bowed low and secured permission to construct permanent trading posts called <strong>factories</strong> along the coastline at Surat, Madras, and Calcutta. Behind fortified walls, English company factors traded bullion for fine woven calicoes and raw silk, while training regiments of native Indian soldiers called <strong>sepoys</strong> to defend their warehouses from rival French garrisons.",
+          "text": "<span class=\"para-ref\">[1.2]</span> When English merchants arrived in India, they encountered the vast, glittering Mughal Empire, whose economy accounted for nearly a quarter of global manufacturing. In 1615, King James I dispatched Sir Thomas Roe to the court of Emperor Jahangir. Roe secured imperial permission to construct permanent trading posts called **factories** along the coastline at Surat, Madras, Calcutta. Behind fortified walls, English company factors traded bullion for fine textiles, while training armed sepoy garrisons to defend their warehouses from rival French forces.",
           "source": {
             "id": "fbe_l1_src_b",
             "letter": "B",
@@ -689,7 +697,7 @@ export default {
         {
           "act": 3,
           "title": "The Storm at Calcutta (1756)",
-          "text": "<span class=\"para-ref\">[1.3]</span> By the mid-18th century, the Mughal Empire was fracturing into warring regional kingdoms. Bengal was the wealthiest province in Asia, producing exquisite textiles and bountiful rice harvests. When the youthful, fiercely patriotic Nawab Siraj ud-Daulah inherited Bengal in 1756, he ordered the British to dismantle unauthorised fortifications at Fort William in Calcutta. When company officials insolently refused, Siraj marched 50,000 troops, stormed Calcutta, and captured the garrison. British propagandists seized upon the disputed \"Black Hole of Calcutta\"—claiming dozens of English captives suffocated in a cramped military cell—to whip up imperial vengeance in London.",
+          "text": "<span class=\"para-ref\">[1.3]</span> By the mid-18th century, the Mughal Empire was fracturing into warring regional kingdoms. Bengal was the wealthiest province in Asia, producing exquisite textiles and bountiful rice harvests. When the youthful, fiercely patriotic Nawab Siraj ud-Daulah inherited Bengal in 1756, he ordered the British to stop mounting heavy cannons and dismantle unauthorised fortifications at Fort William in Calcutta. When company officials refused, Siraj launched the siege of Fort William with 50,000 troops, stormed Calcutta, and captured the garrison. British propagandists seized upon the disputed \"Black Hole of Calcutta\"—claiming dozens of English captives suffocated in the cramped Black Hole dungeon—to whip up imperial vengeance in London.",
           "image": "/images/siraj_ud_daulah.jpg",
           "image_alt": "Contemporary 18th-century miniature portrait of Nawab Siraj ud-Daulah of Bengal",
           "caption": "Nawab Siraj ud-Daulah (1733–1757), the last independent Nawab of Bengal, whose capture of Calcutta and resistance to Company fortification provoked the decisive clash at Plassey (Victoria Memorial, Kolkata / GNM).",
@@ -795,7 +803,7 @@ export default {
         {
           "act": 4,
           "title": "Treachery at Plassey (June 1757)",
-          "text": "<span class=\"para-ref\">[1.4]</span> The Company dispatched Robert Clive from Madras with 3,000 troops (mostly Indian sepoys) to retake Bengal. Knowing he was vastly outnumbered by Siraj’s 50,000-strong army, Clive resorted to conspiracy. He secretly met Mir Jafar, Siraj’s disgruntled commander-in-chief, bribing him with the Bengali throne in exchange for battlefield betrayal. On 23 June 1757, the armies collided in a mango grove at Plassey. When a sudden monsoon torrential downpour soaked Siraj’s exposed gunpowder, Clive kept his own ammunition dry under canvas tarpaulins. Mir Jafar held back his regiments, Siraj’s lines collapsed, and Clive seized Bengal with fewer than 30 British casualties.",
+          "text": "<span class=\"para-ref\">[1.4]</span> The Company dispatched Robert Clive from Madras with 3,000 troops (mostly Indian sepoys) to retake Bengal. Knowing he was vastly outnumbered by Siraj’s 50,000-strong army, Clive resorted to conspiracy. Clive offered secret gold bribes to Mir Jafar, Siraj’s disgruntled commander-in-chief, promising him the Bengali throne in exchange for battlefield betrayal. On 23 June 1757, the armies collided in a mango grove at Plassey. When a heavy monsoon downpour soaked Siraj’s exposed gunpowder, Clive kept his own ammunition dry under canvas tarpaulins. Mir Jafar’s treason paralysed the Bengali regiments, Siraj’s lines collapsed, and Clive seized Bengal with fewer than 30 British casualties.",
           "source": {
             "id": "fbe_l1_src_d",
             "letter": "D",
@@ -898,7 +906,7 @@ export default {
         {
           "act": 5,
           "title": "The Treaty of Allahabad & Corporate Plunder (1765–1770)",
-          "text": "<span class=\"para-ref\">[1.5]</span> Following further military triumphs, Clive cornered the weakened Mughal Emperor Shah Alam II. In August 1765, under a silk canopy at Allahabad, the Emperor signed away the <strong>Diwani</strong>—the sovereign constitutional right to collect all land taxes across Bengal, Bihar, and Orissa. Overnight, a private commercial corporation became the absolute government of 20 million people. The Company pocketed £3 million annually in tax revenue, using Bengal’s own taxes to purchase Indian goods for export to Europe. When drought struck in 1769–1770, the Company maintained ruthless tax enforcement, resulting in the Great Bengal Famine, which killed an estimated 10 million people.",
+          "text": "<span class=\"para-ref\">[1.5]</span> Following further military triumphs, Clive cornered the weakened Mughal Emperor Shah Alam II. In August 1765, under a silk canopy at Allahabad, the Emperor signed away the **Diwani**—the sovereign constitutional right of collecting land revenue and taxes across Bengal, Bihar, and Orissa. Overnight, a private commercial corporation became the absolute government of 20 million people. The Company pocketed £3 million annually in tax revenue, using Bengal’s own taxes to purchase Indian goods for export. When drought struck in 1769–1770, ruthless tax enforcement exacerbated the catastrophic 1770 Bengal famine, killing an estimated 10 million people.",
           "source": {
             "id": "fbe_l1_src_e",
             "letter": "E",
@@ -1363,6 +1371,632 @@ export default {
           "model_answer": "A primary reason English settlers colonised North America was economic ambition and trade profits. Joint-stock companies, like the Virginia Company, financed voyages to discover gold and valuable commodities. When John Rolfe successfully cultivated tobacco in Jamestown (1612), it became a lucrative cash crop exported back to London, making colonial expansion highly profitable.<br><br>Furthermore, religious freedom drove thousands to emigrate. Puritans and Pilgrims, persecuted under the Stuart monarchs, sailed on the Mayflower (1620) to establish New England colonies where they could worship freely according to their strict Protestant beliefs.",
           "topic": "Question 2: Explain Why [12 marks • 15 mins]"
         }
+      ],
+      "quiz": [
+        {
+          "id": "lesson_1_q1",
+          "question": "On what date did Queen Elizabeth I grant a royal charter to the East India Company?",
+          "options": [
+            "On New Year’s Eve 1600",
+            "On 5 July 1605",
+            "On 4 July 1776",
+            "On 23 June 1757"
+          ],
+          "answer": "On New Year’s Eve 1600",
+          "q": "On what date did Queen Elizabeth I grant a royal charter to the East India Company?",
+          "a": "On New Year’s Eve 1600",
+          "explanation": "Queen Elizabeth I signed the company charter on 31 December 1600."
+        },
+        {
+          "id": "lesson_1_q2",
+          "question": "How many wealthy London merchants pooled their capital to form the East India Company in 1600?",
+          "options": [
+            "218 wealthy London merchants",
+            "50 merchants",
+            "500 merchants",
+            "12 merchants"
+          ],
+          "answer": "218 wealthy London merchants",
+          "q": "How many wealthy London merchants pooled their capital to form the East India Company in 1600?",
+          "a": "218 wealthy London merchants",
+          "explanation": "218 London merchants pooled capital to rival Portuguese and Dutch trade."
+        },
+        {
+          "id": "lesson_1_q3",
+          "question": "What exclusive privilege did the Crown grant the East India Company east of the Cape of Good Hope?",
+          "options": [
+            "An exclusive trade monopoly",
+            "Free land ownership",
+            "Military sovereignty",
+            "Tax exemption across Britain"
+          ],
+          "answer": "An exclusive trade monopoly",
+          "q": "What exclusive privilege did the Crown grant the East India Company east of the Cape of Good Hope?",
+          "a": "An exclusive trade monopoly",
+          "explanation": "The royal charter granted a commercial monopoly over all English trade east of Africa."
+        },
+        {
+          "id": "lesson_1_q4",
+          "question": "What profit return could a single successful East India Company cargo of pepper or cloves yield?",
+          "options": [
+            "Over 300% on a merchant’s investment",
+            "10%",
+            "50%",
+            "1,000%"
+          ],
+          "answer": "Over 300% on a merchant’s investment",
+          "q": "What profit return could a single successful East India Company cargo of pepper or cloves yield?",
+          "a": "Over 300% on a merchant’s investment",
+          "explanation": "Spice cargoes generated astronomical returns exceeding 300%."
+        },
+        {
+          "id": "lesson_1_q5",
+          "question": "Which English ambassador did King James I dispatch to the court of Mughal Emperor Jahangir in 1615?",
+          "options": [
+            "Sir Thomas Roe",
+            "Robert Clive",
+            "Warren Hastings",
+            "Lord Cornwallis"
+          ],
+          "answer": "Sir Thomas Roe",
+          "q": "Which English ambassador did King James I dispatch to the court of Mughal Emperor Jahangir in 1615?",
+          "a": "Sir Thomas Roe",
+          "explanation": "Sir Thomas Roe secured trading rights from Emperor Jahangir in 1615."
+        },
+        {
+          "id": "lesson_1_q6",
+          "question": "What were the permanent fortified English coastal trading posts in India called?",
+          "options": [
+            "Factories (at Surat, Madras, and Calcutta)",
+            "Plantations",
+            "Barracoons",
+            "Presidencies"
+          ],
+          "answer": "Factories (at Surat, Madras, and Calcutta)",
+          "q": "What were the permanent fortified English coastal trading posts in India called?",
+          "a": "Factories (at Surat, Madras, and Calcutta)",
+          "explanation": "Coastal trading settlements were known as \"factories\", headed by company factors."
+        },
+        {
+          "id": "lesson_1_q7",
+          "question": "What did English company factors trade bullion for in Mughal India?",
+          "options": [
+            "Fine woven calicoes and raw silk",
+            "Spices and coffee exclusively",
+            "Slaves and sugar",
+            "Wheat and timber"
+          ],
+          "answer": "Fine woven calicoes and raw silk",
+          "q": "What did English company factors trade bullion for in Mughal India?",
+          "a": "Fine woven calicoes and raw silk",
+          "explanation": "Indian cotton calicoes and raw silk were prized luxury imports in Europe."
+        },
+        {
+          "id": "lesson_1_q8",
+          "question": "What were native Indian soldiers trained by the East India Company called?",
+          "options": [
+            "Sepoys",
+            "Maroons",
+            "Redcoats",
+            "Janissaries"
+          ],
+          "answer": "Sepoys",
+          "q": "What were native Indian soldiers trained by the East India Company called?",
+          "a": "Sepoys",
+          "explanation": "Sepoys were Indian soldiers recruited and trained under European officers."
+        },
+        {
+          "id": "lesson_1_q9",
+          "question": "Who inherited the wealthy province of Bengal in 1756 and ordered the British to dismantle fortifications at Calcutta?",
+          "options": [
+            "Nawab Siraj ud-Daulah",
+            "Mir Jafar",
+            "Shah Alam II",
+            "Emperor Jahangir"
+          ],
+          "answer": "Nawab Siraj ud-Daulah",
+          "q": "Who inherited the wealthy province of Bengal in 1756 and ordered the British to dismantle fortifications at Calcutta?",
+          "a": "Nawab Siraj ud-Daulah",
+          "explanation": "Siraj ud-Daulah inherited Bengal and resisted unauthorized British militarization."
+        },
+        {
+          "id": "lesson_1_q10",
+          "question": "Which fortified company outpost in Calcutta did Siraj ud-Daulah storm with 50,000 troops in 1756?",
+          "options": [
+            "Fort William in Calcutta",
+            "Fort St George",
+            "Cape Coast Castle",
+            "Fort George"
+          ],
+          "answer": "Fort William in Calcutta",
+          "q": "Which fortified company outpost in Calcutta did Siraj ud-Daulah storm with 50,000 troops in 1756?",
+          "a": "Fort William in Calcutta",
+          "explanation": "Siraj marched 50,000 troops and captured Fort William."
+        },
+        {
+          "id": "lesson_1_q11",
+          "question": "What disputed incident did British propagandists seize upon to whip up imperial vengeance in London?",
+          "options": [
+            "The \"Black Hole of Calcutta\"",
+            "The Boston Massacre",
+            "The Zong Massacre",
+            "The Cawnpore Massacre"
+          ],
+          "answer": "The \"Black Hole of Calcutta\"",
+          "q": "What disputed incident did British propagandists seize upon to whip up imperial vengeance in London?",
+          "a": "The \"Black Hole of Calcutta\"",
+          "explanation": "Reports claimed dozens of English prisoners suffocated in a cramped military cell."
+        },
+        {
+          "id": "lesson_1_q12",
+          "question": "Which company military commander was dispatched from Madras with 3,000 troops to retake Bengal?",
+          "options": [
+            "Robert Clive",
+            "Sir Thomas Roe",
+            "General Cornwallis",
+            "General Burgoyne"
+          ],
+          "answer": "Robert Clive",
+          "q": "Which company military commander was dispatched from Madras with 3,000 troops to retake Bengal?",
+          "a": "Robert Clive",
+          "explanation": "Robert Clive led 3,000 troops, mostly sepoys, to confront Siraj."
+        },
+        {
+          "id": "lesson_1_q13",
+          "question": "Which disgruntled commander-in-chief did Robert Clive secretly bribe with the Bengali throne?",
+          "options": [
+            "Mir Jafar",
+            "Shah Alam II",
+            "Siraj ud-Daulah",
+            "Cudjoe"
+          ],
+          "answer": "Mir Jafar",
+          "q": "Which disgruntled commander-in-chief did Robert Clive secretly bribe with the Bengali throne?",
+          "a": "Mir Jafar",
+          "explanation": "Clive secretly bribed Mir Jafar to hold back his troops at Plassey."
+        },
+        {
+          "id": "lesson_1_q14",
+          "question": "On what date did the armies collide in a mango grove at the Battle of Plassey?",
+          "options": [
+            "23 June 1757",
+            "4 July 1776",
+            "16 December 1773",
+            "19 October 1781"
+          ],
+          "answer": "23 June 1757",
+          "q": "On what date did the armies collide in a mango grove at the Battle of Plassey?",
+          "a": "23 June 1757",
+          "explanation": "The decisive Battle of Plassey took place on 23 June 1757."
+        },
+        {
+          "id": "lesson_1_q15",
+          "question": "How did Robert Clive protect his gunpowder during the sudden monsoon torrential downpour at Plassey?",
+          "options": [
+            "Under canvas tarpaulins",
+            "Inside stone bunkers",
+            "In wooden barrels underground",
+            "Inside a temple"
+          ],
+          "answer": "Under canvas tarpaulins",
+          "q": "How did Robert Clive protect his gunpowder during the sudden monsoon torrential downpour at Plassey?",
+          "a": "Under canvas tarpaulins",
+          "explanation": "Clive kept his powder dry under tarpaulins while Siraj’s exposed ammunition was soaked."
+        },
+        {
+          "id": "lesson_1_q16",
+          "question": "Approximately how many British casualties were suffered during the Battle of Plassey?",
+          "options": [
+            "Fewer than 30 British casualties",
+            "500 casualties",
+            "5,000 casualties",
+            "Zero casualties"
+          ],
+          "answer": "Fewer than 30 British casualties",
+          "q": "Approximately how many British casualties were suffered during the Battle of Plassey?",
+          "a": "Fewer than 30 British casualties",
+          "explanation": "Thanks to Mir Jafar’s betrayal, Clive seized Bengal with minimal losses."
+        },
+        {
+          "id": "lesson_1_q17",
+          "question": "What sovereign constitutional right was granted to the East India Company under the 1765 Treaty of Allahabad?",
+          "options": [
+            "The Diwani (the right to collect all land taxes across Bengal, Bihar, and Orissa)",
+            "The right to build naval fleets",
+            "Direct ownership of the Mughal throne",
+            "Religious authority over temples"
+          ],
+          "answer": "The Diwani (the right to collect all land taxes across Bengal, Bihar, and Orissa)",
+          "q": "What sovereign constitutional right was granted to the East India Company under the 1765 Treaty of Allahabad?",
+          "a": "The Diwani (the right to collect all land taxes across Bengal, Bihar, and Orissa)",
+          "explanation": "The Diwani transformed a trading corporation into the tax-collecting ruler of 20 million people."
+        },
+        {
+          "id": "lesson_1_q18",
+          "question": "Which Mughal Emperor signed away the Diwani under a silk canopy at Allahabad in August 1765?",
+          "options": [
+            "Emperor Shah Alam II",
+            "Emperor Jahangir",
+            "Siraj ud-Daulah",
+            "Mir Jafar"
+          ],
+          "answer": "Emperor Shah Alam II",
+          "q": "Which Mughal Emperor signed away the Diwani under a silk canopy at Allahabad in August 1765?",
+          "a": "Emperor Shah Alam II",
+          "explanation": "Shah Alam II surrendered tax-collecting sovereignty following military defeat."
+        },
+        {
+          "id": "lesson_1_q19",
+          "question": "How much annual tax revenue did the East India Company pocket from the Diwani?",
+          "options": [
+            "£3 million annually in tax revenue",
+            "£100,000",
+            "£50 million",
+            "£500,000"
+          ],
+          "answer": "£3 million annually in tax revenue",
+          "q": "How much annual tax revenue did the East India Company pocket from the Diwani?",
+          "a": "£3 million annually in tax revenue",
+          "explanation": "The company collected £3 million annually, using Indian taxes to purchase Indian goods."
+        },
+        {
+          "id": "lesson_1_q20",
+          "question": "What catastrophic disaster resulted in 1769–1770 when the Company maintained ruthless tax collection during drought?",
+          "options": [
+            "The Great Bengal Famine, which killed an estimated 10 million people",
+            "The Indian Mutiny",
+            "The Seven Years War",
+            "The collapse of the Mughal army"
+          ],
+          "answer": "The Great Bengal Famine, which killed an estimated 10 million people",
+          "q": "What catastrophic disaster resulted in 1769–1770 when the Company maintained ruthless tax collection during drought?",
+          "a": "The Great Bengal Famine, which killed an estimated 10 million people",
+          "explanation": "Merciless tax extraction during drought caused a famine that decimated one-third of Bengal."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "id": "lesson_1_q1",
+          "question": "On what date did Queen Elizabeth I grant a royal charter to the East India Company?",
+          "options": [
+            "On New Year’s Eve 1600",
+            "On 5 July 1605",
+            "On 4 July 1776",
+            "On 23 June 1757"
+          ],
+          "answer": "On New Year’s Eve 1600",
+          "q": "On what date did Queen Elizabeth I grant a royal charter to the East India Company?",
+          "a": "On New Year’s Eve 1600",
+          "explanation": "Queen Elizabeth I signed the company charter on 31 December 1600."
+        },
+        {
+          "id": "lesson_1_q2",
+          "question": "How many wealthy London merchants pooled their capital to form the East India Company in 1600?",
+          "options": [
+            "218 wealthy London merchants",
+            "50 merchants",
+            "500 merchants",
+            "12 merchants"
+          ],
+          "answer": "218 wealthy London merchants",
+          "q": "How many wealthy London merchants pooled their capital to form the East India Company in 1600?",
+          "a": "218 wealthy London merchants",
+          "explanation": "218 London merchants pooled capital to rival Portuguese and Dutch trade."
+        },
+        {
+          "id": "lesson_1_q3",
+          "question": "What exclusive privilege did the Crown grant the East India Company east of the Cape of Good Hope?",
+          "options": [
+            "An exclusive trade monopoly",
+            "Free land ownership",
+            "Military sovereignty",
+            "Tax exemption across Britain"
+          ],
+          "answer": "An exclusive trade monopoly",
+          "q": "What exclusive privilege did the Crown grant the East India Company east of the Cape of Good Hope?",
+          "a": "An exclusive trade monopoly",
+          "explanation": "The royal charter granted a commercial monopoly over all English trade east of Africa."
+        },
+        {
+          "id": "lesson_1_q4",
+          "question": "What profit return could a single successful East India Company cargo of pepper or cloves yield?",
+          "options": [
+            "Over 300% on a merchant’s investment",
+            "10%",
+            "50%",
+            "1,000%"
+          ],
+          "answer": "Over 300% on a merchant’s investment",
+          "q": "What profit return could a single successful East India Company cargo of pepper or cloves yield?",
+          "a": "Over 300% on a merchant’s investment",
+          "explanation": "Spice cargoes generated astronomical returns exceeding 300%."
+        },
+        {
+          "id": "lesson_1_q5",
+          "question": "Which English ambassador did King James I dispatch to the court of Mughal Emperor Jahangir in 1615?",
+          "options": [
+            "Sir Thomas Roe",
+            "Robert Clive",
+            "Warren Hastings",
+            "Lord Cornwallis"
+          ],
+          "answer": "Sir Thomas Roe",
+          "q": "Which English ambassador did King James I dispatch to the court of Mughal Emperor Jahangir in 1615?",
+          "a": "Sir Thomas Roe",
+          "explanation": "Sir Thomas Roe secured trading rights from Emperor Jahangir in 1615."
+        },
+        {
+          "id": "lesson_1_q6",
+          "question": "What were the permanent fortified English coastal trading posts in India called?",
+          "options": [
+            "Factories (at Surat, Madras, and Calcutta)",
+            "Plantations",
+            "Barracoons",
+            "Presidencies"
+          ],
+          "answer": "Factories (at Surat, Madras, and Calcutta)",
+          "q": "What were the permanent fortified English coastal trading posts in India called?",
+          "a": "Factories (at Surat, Madras, and Calcutta)",
+          "explanation": "Coastal trading settlements were known as \"factories\", headed by company factors."
+        },
+        {
+          "id": "lesson_1_q7",
+          "question": "What did English company factors trade bullion for in Mughal India?",
+          "options": [
+            "Fine woven calicoes and raw silk",
+            "Spices and coffee exclusively",
+            "Slaves and sugar",
+            "Wheat and timber"
+          ],
+          "answer": "Fine woven calicoes and raw silk",
+          "q": "What did English company factors trade bullion for in Mughal India?",
+          "a": "Fine woven calicoes and raw silk",
+          "explanation": "Indian cotton calicoes and raw silk were prized luxury imports in Europe."
+        },
+        {
+          "id": "lesson_1_q8",
+          "question": "What were native Indian soldiers trained by the East India Company called?",
+          "options": [
+            "Sepoys",
+            "Maroons",
+            "Redcoats",
+            "Janissaries"
+          ],
+          "answer": "Sepoys",
+          "q": "What were native Indian soldiers trained by the East India Company called?",
+          "a": "Sepoys",
+          "explanation": "Sepoys were Indian soldiers recruited and trained under European officers."
+        },
+        {
+          "id": "lesson_1_q9",
+          "question": "Who inherited the wealthy province of Bengal in 1756 and ordered the British to dismantle fortifications at Calcutta?",
+          "options": [
+            "Nawab Siraj ud-Daulah",
+            "Mir Jafar",
+            "Shah Alam II",
+            "Emperor Jahangir"
+          ],
+          "answer": "Nawab Siraj ud-Daulah",
+          "q": "Who inherited the wealthy province of Bengal in 1756 and ordered the British to dismantle fortifications at Calcutta?",
+          "a": "Nawab Siraj ud-Daulah",
+          "explanation": "Siraj ud-Daulah inherited Bengal and resisted unauthorized British militarization."
+        },
+        {
+          "id": "lesson_1_q10",
+          "question": "Which fortified company outpost in Calcutta did Siraj ud-Daulah storm with 50,000 troops in 1756?",
+          "options": [
+            "Fort William in Calcutta",
+            "Fort St George",
+            "Cape Coast Castle",
+            "Fort George"
+          ],
+          "answer": "Fort William in Calcutta",
+          "q": "Which fortified company outpost in Calcutta did Siraj ud-Daulah storm with 50,000 troops in 1756?",
+          "a": "Fort William in Calcutta",
+          "explanation": "Siraj marched 50,000 troops and captured Fort William."
+        },
+        {
+          "id": "lesson_1_q11",
+          "question": "What disputed incident did British propagandists seize upon to whip up imperial vengeance in London?",
+          "options": [
+            "The \"Black Hole of Calcutta\"",
+            "The Boston Massacre",
+            "The Zong Massacre",
+            "The Cawnpore Massacre"
+          ],
+          "answer": "The \"Black Hole of Calcutta\"",
+          "q": "What disputed incident did British propagandists seize upon to whip up imperial vengeance in London?",
+          "a": "The \"Black Hole of Calcutta\"",
+          "explanation": "Reports claimed dozens of English prisoners suffocated in a cramped military cell."
+        },
+        {
+          "id": "lesson_1_q12",
+          "question": "Which company military commander was dispatched from Madras with 3,000 troops to retake Bengal?",
+          "options": [
+            "Robert Clive",
+            "Sir Thomas Roe",
+            "General Cornwallis",
+            "General Burgoyne"
+          ],
+          "answer": "Robert Clive",
+          "q": "Which company military commander was dispatched from Madras with 3,000 troops to retake Bengal?",
+          "a": "Robert Clive",
+          "explanation": "Robert Clive led 3,000 troops, mostly sepoys, to confront Siraj."
+        },
+        {
+          "id": "lesson_1_q13",
+          "question": "Which disgruntled commander-in-chief did Robert Clive secretly bribe with the Bengali throne?",
+          "options": [
+            "Mir Jafar",
+            "Shah Alam II",
+            "Siraj ud-Daulah",
+            "Cudjoe"
+          ],
+          "answer": "Mir Jafar",
+          "q": "Which disgruntled commander-in-chief did Robert Clive secretly bribe with the Bengali throne?",
+          "a": "Mir Jafar",
+          "explanation": "Clive secretly bribed Mir Jafar to hold back his troops at Plassey."
+        },
+        {
+          "id": "lesson_1_q14",
+          "question": "On what date did the armies collide in a mango grove at the Battle of Plassey?",
+          "options": [
+            "23 June 1757",
+            "4 July 1776",
+            "16 December 1773",
+            "19 October 1781"
+          ],
+          "answer": "23 June 1757",
+          "q": "On what date did the armies collide in a mango grove at the Battle of Plassey?",
+          "a": "23 June 1757",
+          "explanation": "The decisive Battle of Plassey took place on 23 June 1757."
+        },
+        {
+          "id": "lesson_1_q15",
+          "question": "How did Robert Clive protect his gunpowder during the sudden monsoon torrential downpour at Plassey?",
+          "options": [
+            "Under canvas tarpaulins",
+            "Inside stone bunkers",
+            "In wooden barrels underground",
+            "Inside a temple"
+          ],
+          "answer": "Under canvas tarpaulins",
+          "q": "How did Robert Clive protect his gunpowder during the sudden monsoon torrential downpour at Plassey?",
+          "a": "Under canvas tarpaulins",
+          "explanation": "Clive kept his powder dry under tarpaulins while Siraj’s exposed ammunition was soaked."
+        },
+        {
+          "id": "lesson_1_q16",
+          "question": "Approximately how many British casualties were suffered during the Battle of Plassey?",
+          "options": [
+            "Fewer than 30 British casualties",
+            "500 casualties",
+            "5,000 casualties",
+            "Zero casualties"
+          ],
+          "answer": "Fewer than 30 British casualties",
+          "q": "Approximately how many British casualties were suffered during the Battle of Plassey?",
+          "a": "Fewer than 30 British casualties",
+          "explanation": "Thanks to Mir Jafar’s betrayal, Clive seized Bengal with minimal losses."
+        },
+        {
+          "id": "lesson_1_q17",
+          "question": "What sovereign constitutional right was granted to the East India Company under the 1765 Treaty of Allahabad?",
+          "options": [
+            "The Diwani (the right to collect all land taxes across Bengal, Bihar, and Orissa)",
+            "The right to build naval fleets",
+            "Direct ownership of the Mughal throne",
+            "Religious authority over temples"
+          ],
+          "answer": "The Diwani (the right to collect all land taxes across Bengal, Bihar, and Orissa)",
+          "q": "What sovereign constitutional right was granted to the East India Company under the 1765 Treaty of Allahabad?",
+          "a": "The Diwani (the right to collect all land taxes across Bengal, Bihar, and Orissa)",
+          "explanation": "The Diwani transformed a trading corporation into the tax-collecting ruler of 20 million people."
+        },
+        {
+          "id": "lesson_1_q18",
+          "question": "Which Mughal Emperor signed away the Diwani under a silk canopy at Allahabad in August 1765?",
+          "options": [
+            "Emperor Shah Alam II",
+            "Emperor Jahangir",
+            "Siraj ud-Daulah",
+            "Mir Jafar"
+          ],
+          "answer": "Emperor Shah Alam II",
+          "q": "Which Mughal Emperor signed away the Diwani under a silk canopy at Allahabad in August 1765?",
+          "a": "Emperor Shah Alam II",
+          "explanation": "Shah Alam II surrendered tax-collecting sovereignty following military defeat."
+        },
+        {
+          "id": "lesson_1_q19",
+          "question": "How much annual tax revenue did the East India Company pocket from the Diwani?",
+          "options": [
+            "£3 million annually in tax revenue",
+            "£100,000",
+            "£50 million",
+            "£500,000"
+          ],
+          "answer": "£3 million annually in tax revenue",
+          "q": "How much annual tax revenue did the East India Company pocket from the Diwani?",
+          "a": "£3 million annually in tax revenue",
+          "explanation": "The company collected £3 million annually, using Indian taxes to purchase Indian goods."
+        },
+        {
+          "id": "lesson_1_q20",
+          "question": "What catastrophic disaster resulted in 1769–1770 when the Company maintained ruthless tax collection during drought?",
+          "options": [
+            "The Great Bengal Famine, which killed an estimated 10 million people",
+            "The Indian Mutiny",
+            "The Seven Years War",
+            "The collapse of the Mughal army"
+          ],
+          "answer": "The Great Bengal Famine, which killed an estimated 10 million people",
+          "q": "What catastrophic disaster resulted in 1769–1770 when the Company maintained ruthless tax collection during drought?",
+          "a": "The Great Bengal Famine, which killed an estimated 10 million people",
+          "explanation": "Merciless tax extraction during drought caused a famine that decimated one-third of Bengal."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "paraRef": "[1.1]",
+          "date": "1600–1615",
+          "questionHeading": "Why did Queen Elizabeth I grant a royal monopoly charter?",
+          "bullets": [
+            "218 London Merchants",
+            "Pepper & Cotton Cargo",
+            "Private Trade Profits"
+          ],
+          "focusClue": "How did private capital combine with royal prerogative to create a commercial monopoly?"
+        },
+        {
+          "step": 2,
+          "paraRef": "[1.2]",
+          "date": "1615–1700",
+          "questionHeading": "How did the Company establish fortified coastal factories in India?",
+          "bullets": [
+            "Emperor Jahangir",
+            "Surat, Madras, Calcutta",
+            "Armed Sepoy Garrisons"
+          ],
+          "focusClue": "Why did Mughal emperors permit foreign merchants to build armed trading warehouses?"
+        },
+        {
+          "step": 3,
+          "paraRef": "[1.3]",
+          "date": "1756",
+          "questionHeading": "Why did tensions erupt into crisis with Nawab Siraj ud-Daulah?",
+          "bullets": [
+            "Mounting Heavy Cannons",
+            "Siege of Fort William",
+            "The Black Hole Dungeon"
+          ],
+          "focusClue": "Why did the Company’s unauthorised military expansion provoke the ruler of Bengal?"
+        },
+        {
+          "step": 4,
+          "paraRef": "[1.4]",
+          "date": "June 1757",
+          "questionHeading": "How did Robert Clive achieve victory at the Battle of Plassey?",
+          "bullets": [
+            "Secret Gold Bribes",
+            "Heavy Monsoon Downpour",
+            "Mir Jafar’s Treason"
+          ],
+          "focusClue": "Was Plassey won by superior military power or political betrayal and dry powder?"
+        },
+        {
+          "step": 5,
+          "paraRef": "[1.5]",
+          "date": "1765–1770",
+          "questionHeading": "How did the 1765 Diwani transform a company into a sovereign ruler?",
+          "bullets": [
+            "Emperor Shah Alam II",
+            "Collecting Land Revenue",
+            "1770 Bengal Famine"
+          ],
+          "focusClue": "What happened when a profit-seeking corporation gained the power to tax 20 million people?"
+        }
       ]
     },
     {
@@ -1487,7 +2121,7 @@ export default {
           }
         ]
       },
-      "vocabulary": [
+      "vocab": [
         {
           "term": "Transatlantic Trade",
           "definition": "The three-legged commercial trade system connecting Britain, West Africa, and the American plantation colonies.",
@@ -1563,7 +2197,7 @@ export default {
         {
           "act": 1,
           "title": "The Triangular Engine (1619–1672)",
-          "text": "<span class=\"para-ref\">[2.1]</span> In 1619, a privateer vessel landed the first twenty captive Angolans in English Virginia, initiating a brutal economic nexus known as the Triangular <strong>Transatlantic Trade</strong>. On the first leg, British merchant ships departed Bristol and Liverpool loaded with manufactured guns, brass pans, alcohol, and woollen cloth. On the West African coast, these goods were bartered with local rulers and slave-raiders for captive men, women, and children. On the second leg—the dreaded <strong>Middle Passage</strong>—captives were shipped to the Caribbean and Americas. On the final leg, the ships returned to Britain packed with lucrative slave-grown raw commodities: sugar, tobacco, and cotton.",
+          "text": "<span class=\"para-ref\">[2.1]</span> In 1619, a privateer vessel landed the first twenty captive Angolans in English Virginia, initiating a brutal economic nexus known as the Triangular **Transatlantic Trade**. On the first leg, British merchant ships departed Bristol and Liverpool loaded with manufactured guns & brass pans, alcohol, and woollen cloth. On the West African coast, these goods were bartered with local rulers and slave-raiders for kidnapped African captives. On the second leg—the dreaded **Middle Passage**—captives were shipped to the Caribbean and Americas. On the final leg, the ships returned to Britain packed with lucrative raw plantation sugar, tobacco, and cotton.",
           "image": "/images/triangular_trade.png",
           "image_alt": "Cartographic diagram of the Transatlantic Triangular Trade routes connecting Britain, West Africa, and the Americas",
           "caption": "The Triangular Trade network, linking British manufactured export goods, captive African labour along the Middle Passage, and plantation commodities returning to European ports (The History Revision Hub Archival Cartography).",
@@ -1669,7 +2303,7 @@ export default {
         {
           "act": 2,
           "title": "Capture, Barracoons & The Royal African Company (1672–1713)",
-          "text": "<span class=\"para-ref\">[2.2]</span> In 1672, King Charles II granted a royal charter to the Royal African Company, headed by his brother, the Duke of York (later James II). The Company branded captive Africans on their chests with the letters \"DY\" using red-hot irons. Captives had typically been kidnapped in violent inland raids, marched hundreds of miles in wooden neck-yokes to the coast, and locked in suffocating underground stone dungeons called <strong>barracoons</strong> at coastal slave fortresses like Cape Coast Castle. By 1713, Britain secured the coveted <strong>Asiento</strong> monopoly from Spain, making British merchants the undisputed rulers of the global slave trade.",
+          "text": "<span class=\"para-ref\">[2.2]</span> In 1672, King Charles II granted a royal charter to the Royal African Company, headed by his brother, the Duke of York (later James II). The Company branded captive Africans on their chests with a branded hot iron RAC or DY emblem. Captives were marched in wooden neck-yokes to the coast and locked in suffocating underground stone dungeons called **barracoons** at coastal fortresses like Cape Coast Castle. Under the 1713 Treaty of Utrecht, Britain secured the coveted Spanish Asiento contract monopoly, making British merchants the undisputed rulers of the transatlantic human trade.",
           "image": "/images/elmina_castle.jpg",
           "image_alt": "Photograph of Elmina Castle on the Gold Coast of Ghana, fortified slave trade castle and barracoon",
           "caption": "Elmina Castle on the Gold Coast (modern Ghana), one of the major fortified coastal slave depots where captive Africans were imprisoned before embarkation onto Atlantic slave ships (UNESCO World Heritage Site / Archival Collection).",
@@ -1775,7 +2409,7 @@ export default {
         {
           "act": 3,
           "title": "The Agony of the Middle Passage (1713–1781)",
-          "text": "<span class=\"para-ref\">[2.3]</span> The Middle Passage took between six and twelve weeks across the Atlantic. Captains operated on \"tight packing,\" cramming up to 600 people into dark, unventilated holds with ceiling heights under three feet. Captives were chained in pairs by their wrists and ankles, forced to lie spoon-fashioned on bare wooden planks amidst vomit, blood, and dysentery. The stench was so overpowering that sailors reported smelling a slave ship miles before sighting it. Between 12% and 15% of captives died during the voyage from dehydration, smallpox, and grief, their bodies thrown to following sharks.",
+          "text": "<span class=\"para-ref\">[2.3]</span> The Middle Passage took between six and twelve weeks across the Atlantic. Captains operated on \"tight packing,\" cramming up to 600 people into dark, unventilated holds with ceiling heights under three feet. Captives were chained on wooden shelves in iron shackles & collars, forced to lie spoon-fashioned on bare planks amidst vomit, blood, and deadly dysentery & fevers. The stench was so overpowering that sailors reported smelling a slave ship miles before sighting it. Between 12% and 15% of captives died during the voyage, their bodies thrown to following sharks.",
           "source": {
             "id": "fbe_l2_src_c",
             "letter": "C",
@@ -1878,7 +2512,7 @@ export default {
         {
           "act": 4,
           "title": "The Zong Atrocity & Captive Resistance (1781)",
-          "text": "<span class=\"para-ref\">[2.4]</span> Enslaved Africans resisted their captors at every stage. Historians have documented armed <strong>insurrections</strong> aboard over 400 slave ships; many captives staged suicidal hunger strikes or hurled themselves overboard into the sea rather than submit to lifelong bondage. The ultimate horror of the trade was exposed in 1781 aboard the British slave ship <em>Zong</em>. Running low on fresh water due to navigational errors, Captain Luke Collingwood ordered 133 sick and living enslaved Africans thrown into the ocean so the ship owners could collect £30 per person from their maritime insurance company for \"lost cargo.\"",
+          "text": "<span class=\"para-ref\">[2.4]</span> Enslaved Africans resisted their captors at every stage through hunger strikes, insurrections, and hurling themselves overboard rather than submit to chattel slavery. The ultimate horror of the trade was exposed in 1781 aboard the British slave ship <em>Zong</em>. Running low on fresh water due to navigational errors, Captain Luke Collingwood ordered 133 thrown overboard into the ocean so the ship owners could file a fraudulent insurance claim for \"lost cargo\" at £30 per person.",
           "source": {
             "id": "fbe_l2_src_d",
             "letter": "D",
@@ -1981,7 +2615,7 @@ export default {
         {
           "act": 5,
           "title": "Olaudah Equiano & The Awakening Conscience (1788–1807)",
-          "text": "<span class=\"para-ref\">[2.5]</span> The legal aftermath of the <em>Zong</em> horrified British reformers like Granville Sharp and Thomas Clarkson. In 1788, the Abolition Society published the explosive <em>Brookes</em> diagram, visually demonstrating that human beings were stacked like books on shelves. In 1789, Olaudah Equiano, a formerly enslaved Igbo man who had purchased his freedom, published his bestselling autobiography. Equiano lectured across Britain, delivering harrowing first-person testimony about the shrieks of women and the suffocating pestilence of the hold. Equiano’s voice and the <em>Brookes</em> diagram ignited the mass abolition movement that culminated in the 1807 Abolition of the Slave Trade Act.",
+          "text": "<span class=\"para-ref\">[2.5]</span> The legal aftermath of the <em>Zong</em> horrified British reformers like Granville Sharp and Thomas Clarkson. In 1788, the Abolition Society published the explosive Brookes ship diagram, visually demonstrating that human beings were stacked like books on shelves. In 1789, Olaudah Equiano, a formerly enslaved Igbo man who had purchased his freedom, published Equiano’s bestselling book autobiography. Equiano lectured across Britain, delivering harrowing first-person testimony about the hold. Equiano’s voice and the Brookes diagram ignited the mass abolition movement that culminated in the landmark Abolition Act of 1807.",
           "source": {
             "id": "fbe_l2_src_e",
             "letter": "E",
@@ -2456,6 +3090,632 @@ export default {
           "model_answer": "One consequence of the Transatlantic Slave Trade was immense wealth for British port cities like Bristol and Liverpool. Specifically, merchants reinvested vast profits from sugar, tobacco, and enslaved human labor into British banks, docks, and factories, helping to fund the early Industrial Revolution.",
           "topic": "Question 2: Explain One Consequence [4 marks • 5 mins]"
         }
+      ],
+      "quiz": [
+        {
+          "id": "lesson_2_q1",
+          "question": "In what year did a privateer vessel land the first twenty captive Angolans in English Virginia?",
+          "options": [
+            "In 1619",
+            "In 1600",
+            "In 1672",
+            "In 1757"
+          ],
+          "answer": "In 1619",
+          "q": "In what year did a privateer vessel land the first twenty captive Angolans in English Virginia?",
+          "a": "In 1619",
+          "explanation": "The arrival of twenty captive Angolans in 1619 initiated slavery in British North America."
+        },
+        {
+          "id": "lesson_2_q2",
+          "question": "Which British ports grew rich as major hubs of the Triangular Transatlantic Trade?",
+          "options": [
+            "Bristol and Liverpool",
+            "Newcastle and Dover",
+            "Plymouth and Portsmouth",
+            "Hull and Southampton"
+          ],
+          "answer": "Bristol and Liverpool",
+          "q": "Which British ports grew rich as major hubs of the Triangular Transatlantic Trade?",
+          "a": "Bristol and Liverpool",
+          "explanation": "Bristol and Liverpool became the wealthiest slave-trading ports in the world."
+        },
+        {
+          "id": "lesson_2_q3",
+          "question": "What manufactured goods did British ships carry on the first leg of the triangular trade to West Africa?",
+          "options": [
+            "Manufactured guns, brass pans, alcohol, and woollen cloth",
+            "Raw sugar and tobacco",
+            "Fine Indian silks",
+            "Spices and tea"
+          ],
+          "answer": "Manufactured guns, brass pans, alcohol, and woollen cloth",
+          "q": "What manufactured goods did British ships carry on the first leg of the triangular trade to West Africa?",
+          "a": "Manufactured guns, brass pans, alcohol, and woollen cloth",
+          "explanation": "Manufactured goods were bartered for captive human beings on the African coast."
+        },
+        {
+          "id": "lesson_2_q4",
+          "question": "What was the second leg of the triangular trade across the Atlantic Ocean called?",
+          "options": [
+            "The Middle Passage",
+            "The Western Design",
+            "The Spice Route",
+            "The Great Trek"
+          ],
+          "answer": "The Middle Passage",
+          "q": "What was the second leg of the triangular trade across the Atlantic Ocean called?",
+          "a": "The Middle Passage",
+          "explanation": "The Middle Passage transported millions of chained captives to the Americas."
+        },
+        {
+          "id": "lesson_2_q5",
+          "question": "What raw commodities did merchant ships bring back to Britain on the final leg of the trade?",
+          "options": [
+            "Sugar, tobacco, and cotton",
+            "Guns and gunpowder",
+            "Silk and calicoes",
+            "Spices and cloves"
+          ],
+          "answer": "Sugar, tobacco, and cotton",
+          "q": "What raw commodities did merchant ships bring back to Britain on the final leg of the trade?",
+          "a": "Sugar, tobacco, and cotton",
+          "explanation": "Lucrative slave-produced commodities powered British industrial growth."
+        },
+        {
+          "id": "lesson_2_q6",
+          "question": "Which king granted a royal charter to the Royal African Company in 1672?",
+          "options": [
+            "King Charles II",
+            "King James I",
+            "King George III",
+            "Oliver Cromwell"
+          ],
+          "answer": "King Charles II",
+          "q": "Which king granted a royal charter to the Royal African Company in 1672?",
+          "a": "King Charles II",
+          "explanation": "Charles II chartered the Royal African Company to dominate the slave trade."
+        },
+        {
+          "id": "lesson_2_q7",
+          "question": "Who headed the Royal African Company, leading captives to be branded with his initials \"DY\"?",
+          "options": [
+            "The Duke of York (later James II)",
+            "Robert Clive",
+            "Lord Dunmore",
+            "Thomas Clarkson"
+          ],
+          "answer": "The Duke of York (later James II)",
+          "q": "Who headed the Royal African Company, leading captives to be branded with his initials \"DY\"?",
+          "a": "The Duke of York (later James II)",
+          "explanation": "Captives were branded with \"DY\" using red-hot irons before being loaded onto ships."
+        },
+        {
+          "id": "lesson_2_q8",
+          "question": "What fortified slave castle on the coastline of Ghana held thousands of captives in dark dungeons?",
+          "options": [
+            "Cape Coast Castle in Ghana",
+            "Fort William in Calcutta",
+            "Fort George in Jamaica",
+            "Morant Bay Fort"
+          ],
+          "answer": "Cape Coast Castle in Ghana",
+          "q": "What fortified slave castle on the coastline of Ghana held thousands of captives in dark dungeons?",
+          "a": "Cape Coast Castle in Ghana",
+          "explanation": "Cape Coast Castle was a principal British slave-holding fortress in West Africa."
+        },
+        {
+          "id": "lesson_2_q9",
+          "question": "What were the suffocating underground stone dungeons called at coastal slave fortresses like Cape Coast Castle?",
+          "options": [
+            "Barracoons",
+            "Factories",
+            "Mansions",
+            "Hulks"
+          ],
+          "answer": "Barracoons",
+          "q": "What were the suffocating underground stone dungeons called at coastal slave fortresses like Cape Coast Castle?",
+          "a": "Barracoons",
+          "explanation": "Barracoons were stone holding pens where enslaved people were locked before deportation."
+        },
+        {
+          "id": "lesson_2_q10",
+          "question": "What coveted monopoly did Britain secure from Spain in 1713 to supply enslaved Africans to Spanish America?",
+          "options": [
+            "The Asiento monopoly",
+            "The Navigation Treaty",
+            "The Diwani",
+            "The Sugar Compact"
+          ],
+          "answer": "The Asiento monopoly",
+          "q": "What coveted monopoly did Britain secure from Spain in 1713 to supply enslaved Africans to Spanish America?",
+          "a": "The Asiento monopoly",
+          "explanation": "The 1713 Asiento contract made Britain the dominant slave-trading power in the Atlantic."
+        },
+        {
+          "id": "lesson_2_q11",
+          "question": "What ceiling height did dark, unventilated holds have on slave ships operating on tight packing?",
+          "options": [
+            "Ceiling heights under three feet",
+            "Six feet clearance",
+            "Ten feet clearance",
+            "Five feet clearance"
+          ],
+          "answer": "Ceiling heights under three feet",
+          "q": "What ceiling height did dark, unventilated holds have on slave ships operating on tight packing?",
+          "a": "Ceiling heights under three feet",
+          "explanation": "Holds were under three feet high, forcing captives to lie flat in suffocating heat."
+        },
+        {
+          "id": "lesson_2_q12",
+          "question": "How were captives forced to lie on bare wooden planks amidst vomit, blood, and dysentery?",
+          "options": [
+            "Chained in pairs by their wrists and ankles, forced to lie spoon-fashioned",
+            "Resting on canvas hammocks",
+            "Sitting on wooden benches",
+            "Standing upright in iron cages"
+          ],
+          "answer": "Chained in pairs by their wrists and ankles, forced to lie spoon-fashioned",
+          "q": "How were captives forced to lie on bare wooden planks amidst vomit, blood, and dysentery?",
+          "a": "Chained in pairs by their wrists and ankles, forced to lie spoon-fashioned",
+          "explanation": "Captives were chained in pairs and forced to lie spoon-fashioned on bare planks."
+        },
+        {
+          "id": "lesson_2_q13",
+          "question": "What percentage of captives died during the Middle Passage from dehydration, smallpox, and grief?",
+          "options": [
+            "Between 12% and 15% of captives",
+            "Under 1%",
+            "Over 75%",
+            "50%"
+          ],
+          "answer": "Between 12% and 15% of captives",
+          "q": "What percentage of captives died during the Middle Passage from dehydration, smallpox, and grief?",
+          "a": "Between 12% and 15% of captives",
+          "explanation": "Between 12% and 15% died on every crossing, their bodies cast to following sharks."
+        },
+        {
+          "id": "lesson_2_q14",
+          "question": "Aboard how many slave ships have historians documented armed insurrections by captives?",
+          "options": [
+            "Aboard over 400 slave ships",
+            "Zero ships",
+            "Only five ships",
+            "Ten ships"
+          ],
+          "answer": "Aboard over 400 slave ships",
+          "q": "Aboard how many slave ships have historians documented armed insurrections by captives?",
+          "a": "Aboard over 400 slave ships",
+          "explanation": "Captives resisted violently, staging armed insurrections on more than 400 voyages."
+        },
+        {
+          "id": "lesson_2_q15",
+          "question": "How many sick and living enslaved Africans were thrown into the ocean during the 1781 Zong atrocity?",
+          "options": [
+            "133 sick and living enslaved Africans",
+            "20 captives",
+            "500 captives",
+            "1,000 captives"
+          ],
+          "answer": "133 sick and living enslaved Africans",
+          "q": "How many sick and living enslaved Africans were thrown into the ocean during the 1781 Zong atrocity?",
+          "a": "133 sick and living enslaved Africans",
+          "explanation": "Captain Luke Collingwood ordered 133 living human beings thrown overboard to claim insurance."
+        },
+        {
+          "id": "lesson_2_q16",
+          "question": "How much money per person did the owners of the slave ship Zong seek to collect from maritime insurance?",
+          "options": [
+            "£30 per person for \"lost cargo\"",
+            "£5 per person",
+            "£100 per person",
+            "£500 per person"
+          ],
+          "answer": "£30 per person for \"lost cargo\"",
+          "q": "How much money per person did the owners of the slave ship Zong seek to collect from maritime insurance?",
+          "a": "£30 per person for \"lost cargo\"",
+          "explanation": "The owners claimed £30 per person under maritime insurance for jettisoned cargo."
+        },
+        {
+          "id": "lesson_2_q17",
+          "question": "What organization was founded in London in 1787 by Thomas Clarkson and Granville Sharp?",
+          "options": [
+            "The Society for Effecting the Abolition of the Slave Trade",
+            "The Royal African Company",
+            "The Anti-Slavery League",
+            "The East India Company"
+          ],
+          "answer": "The Society for Effecting the Abolition of the Slave Trade",
+          "q": "What organization was founded in London in 1787 by Thomas Clarkson and Granville Sharp?",
+          "a": "The Society for Effecting the Abolition of the Slave Trade",
+          "explanation": "Clarkson and Sharp spearheaded the grassroots British abolitionist movement."
+        },
+        {
+          "id": "lesson_2_q18",
+          "question": "Which former enslaved African published a bestselling autobiography in London in 1789 detailing Middle Passage horrors?",
+          "options": [
+            "Olaudah Equiano",
+            "Crispus Attucks",
+            "Lord Kitchener",
+            "Ignatius Sancho"
+          ],
+          "answer": "Olaudah Equiano",
+          "q": "Which former enslaved African published a bestselling autobiography in London in 1789 detailing Middle Passage horrors?",
+          "a": "Olaudah Equiano",
+          "explanation": "Equiano’s autobiography converted hundreds of thousands of Britons to abolitionism."
+        },
+        {
+          "id": "lesson_2_q19",
+          "question": "What anti-slavery slogan was stamped on Josiah Wedgwood’s famous jasperware medallion?",
+          "options": [
+            "\"Am I Not a Man and a Brother?\"",
+            "\"Deeds, Not Words\"",
+            "\"Liberty to Slaves\"",
+            "\"No Taxation Without Representation\""
+          ],
+          "answer": "\"Am I Not a Man and a Brother?\"",
+          "q": "What anti-slavery slogan was stamped on Josiah Wedgwood’s famous jasperware medallion?",
+          "a": "\"Am I Not a Man and a Brother?\"",
+          "explanation": "Wedgwood distributed thousands of medallions showing a kneeling chained African."
+        },
+        {
+          "id": "lesson_2_q20",
+          "question": "What landmark legislation abolished the British slave trade throughout the British Empire in 1807?",
+          "options": [
+            "The Abolition of the Slave Trade Act 1807",
+            "The Slavery Abolition Act 1833",
+            "The Representation of the People Act",
+            "The Navigation Act"
+          ],
+          "answer": "The Abolition of the Slave Trade Act 1807",
+          "q": "What landmark legislation abolished the British slave trade throughout the British Empire in 1807?",
+          "a": "The Abolition of the Slave Trade Act 1807",
+          "explanation": "Championed by William Wilberforce, the 1807 Act outlawed the trade, backed by Royal Navy patrols."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "id": "lesson_2_q1",
+          "question": "In what year did a privateer vessel land the first twenty captive Angolans in English Virginia?",
+          "options": [
+            "In 1619",
+            "In 1600",
+            "In 1672",
+            "In 1757"
+          ],
+          "answer": "In 1619",
+          "q": "In what year did a privateer vessel land the first twenty captive Angolans in English Virginia?",
+          "a": "In 1619",
+          "explanation": "The arrival of twenty captive Angolans in 1619 initiated slavery in British North America."
+        },
+        {
+          "id": "lesson_2_q2",
+          "question": "Which British ports grew rich as major hubs of the Triangular Transatlantic Trade?",
+          "options": [
+            "Bristol and Liverpool",
+            "Newcastle and Dover",
+            "Plymouth and Portsmouth",
+            "Hull and Southampton"
+          ],
+          "answer": "Bristol and Liverpool",
+          "q": "Which British ports grew rich as major hubs of the Triangular Transatlantic Trade?",
+          "a": "Bristol and Liverpool",
+          "explanation": "Bristol and Liverpool became the wealthiest slave-trading ports in the world."
+        },
+        {
+          "id": "lesson_2_q3",
+          "question": "What manufactured goods did British ships carry on the first leg of the triangular trade to West Africa?",
+          "options": [
+            "Manufactured guns, brass pans, alcohol, and woollen cloth",
+            "Raw sugar and tobacco",
+            "Fine Indian silks",
+            "Spices and tea"
+          ],
+          "answer": "Manufactured guns, brass pans, alcohol, and woollen cloth",
+          "q": "What manufactured goods did British ships carry on the first leg of the triangular trade to West Africa?",
+          "a": "Manufactured guns, brass pans, alcohol, and woollen cloth",
+          "explanation": "Manufactured goods were bartered for captive human beings on the African coast."
+        },
+        {
+          "id": "lesson_2_q4",
+          "question": "What was the second leg of the triangular trade across the Atlantic Ocean called?",
+          "options": [
+            "The Middle Passage",
+            "The Western Design",
+            "The Spice Route",
+            "The Great Trek"
+          ],
+          "answer": "The Middle Passage",
+          "q": "What was the second leg of the triangular trade across the Atlantic Ocean called?",
+          "a": "The Middle Passage",
+          "explanation": "The Middle Passage transported millions of chained captives to the Americas."
+        },
+        {
+          "id": "lesson_2_q5",
+          "question": "What raw commodities did merchant ships bring back to Britain on the final leg of the trade?",
+          "options": [
+            "Sugar, tobacco, and cotton",
+            "Guns and gunpowder",
+            "Silk and calicoes",
+            "Spices and cloves"
+          ],
+          "answer": "Sugar, tobacco, and cotton",
+          "q": "What raw commodities did merchant ships bring back to Britain on the final leg of the trade?",
+          "a": "Sugar, tobacco, and cotton",
+          "explanation": "Lucrative slave-produced commodities powered British industrial growth."
+        },
+        {
+          "id": "lesson_2_q6",
+          "question": "Which king granted a royal charter to the Royal African Company in 1672?",
+          "options": [
+            "King Charles II",
+            "King James I",
+            "King George III",
+            "Oliver Cromwell"
+          ],
+          "answer": "King Charles II",
+          "q": "Which king granted a royal charter to the Royal African Company in 1672?",
+          "a": "King Charles II",
+          "explanation": "Charles II chartered the Royal African Company to dominate the slave trade."
+        },
+        {
+          "id": "lesson_2_q7",
+          "question": "Who headed the Royal African Company, leading captives to be branded with his initials \"DY\"?",
+          "options": [
+            "The Duke of York (later James II)",
+            "Robert Clive",
+            "Lord Dunmore",
+            "Thomas Clarkson"
+          ],
+          "answer": "The Duke of York (later James II)",
+          "q": "Who headed the Royal African Company, leading captives to be branded with his initials \"DY\"?",
+          "a": "The Duke of York (later James II)",
+          "explanation": "Captives were branded with \"DY\" using red-hot irons before being loaded onto ships."
+        },
+        {
+          "id": "lesson_2_q8",
+          "question": "What fortified slave castle on the coastline of Ghana held thousands of captives in dark dungeons?",
+          "options": [
+            "Cape Coast Castle in Ghana",
+            "Fort William in Calcutta",
+            "Fort George in Jamaica",
+            "Morant Bay Fort"
+          ],
+          "answer": "Cape Coast Castle in Ghana",
+          "q": "What fortified slave castle on the coastline of Ghana held thousands of captives in dark dungeons?",
+          "a": "Cape Coast Castle in Ghana",
+          "explanation": "Cape Coast Castle was a principal British slave-holding fortress in West Africa."
+        },
+        {
+          "id": "lesson_2_q9",
+          "question": "What were the suffocating underground stone dungeons called at coastal slave fortresses like Cape Coast Castle?",
+          "options": [
+            "Barracoons",
+            "Factories",
+            "Mansions",
+            "Hulks"
+          ],
+          "answer": "Barracoons",
+          "q": "What were the suffocating underground stone dungeons called at coastal slave fortresses like Cape Coast Castle?",
+          "a": "Barracoons",
+          "explanation": "Barracoons were stone holding pens where enslaved people were locked before deportation."
+        },
+        {
+          "id": "lesson_2_q10",
+          "question": "What coveted monopoly did Britain secure from Spain in 1713 to supply enslaved Africans to Spanish America?",
+          "options": [
+            "The Asiento monopoly",
+            "The Navigation Treaty",
+            "The Diwani",
+            "The Sugar Compact"
+          ],
+          "answer": "The Asiento monopoly",
+          "q": "What coveted monopoly did Britain secure from Spain in 1713 to supply enslaved Africans to Spanish America?",
+          "a": "The Asiento monopoly",
+          "explanation": "The 1713 Asiento contract made Britain the dominant slave-trading power in the Atlantic."
+        },
+        {
+          "id": "lesson_2_q11",
+          "question": "What ceiling height did dark, unventilated holds have on slave ships operating on tight packing?",
+          "options": [
+            "Ceiling heights under three feet",
+            "Six feet clearance",
+            "Ten feet clearance",
+            "Five feet clearance"
+          ],
+          "answer": "Ceiling heights under three feet",
+          "q": "What ceiling height did dark, unventilated holds have on slave ships operating on tight packing?",
+          "a": "Ceiling heights under three feet",
+          "explanation": "Holds were under three feet high, forcing captives to lie flat in suffocating heat."
+        },
+        {
+          "id": "lesson_2_q12",
+          "question": "How were captives forced to lie on bare wooden planks amidst vomit, blood, and dysentery?",
+          "options": [
+            "Chained in pairs by their wrists and ankles, forced to lie spoon-fashioned",
+            "Resting on canvas hammocks",
+            "Sitting on wooden benches",
+            "Standing upright in iron cages"
+          ],
+          "answer": "Chained in pairs by their wrists and ankles, forced to lie spoon-fashioned",
+          "q": "How were captives forced to lie on bare wooden planks amidst vomit, blood, and dysentery?",
+          "a": "Chained in pairs by their wrists and ankles, forced to lie spoon-fashioned",
+          "explanation": "Captives were chained in pairs and forced to lie spoon-fashioned on bare planks."
+        },
+        {
+          "id": "lesson_2_q13",
+          "question": "What percentage of captives died during the Middle Passage from dehydration, smallpox, and grief?",
+          "options": [
+            "Between 12% and 15% of captives",
+            "Under 1%",
+            "Over 75%",
+            "50%"
+          ],
+          "answer": "Between 12% and 15% of captives",
+          "q": "What percentage of captives died during the Middle Passage from dehydration, smallpox, and grief?",
+          "a": "Between 12% and 15% of captives",
+          "explanation": "Between 12% and 15% died on every crossing, their bodies cast to following sharks."
+        },
+        {
+          "id": "lesson_2_q14",
+          "question": "Aboard how many slave ships have historians documented armed insurrections by captives?",
+          "options": [
+            "Aboard over 400 slave ships",
+            "Zero ships",
+            "Only five ships",
+            "Ten ships"
+          ],
+          "answer": "Aboard over 400 slave ships",
+          "q": "Aboard how many slave ships have historians documented armed insurrections by captives?",
+          "a": "Aboard over 400 slave ships",
+          "explanation": "Captives resisted violently, staging armed insurrections on more than 400 voyages."
+        },
+        {
+          "id": "lesson_2_q15",
+          "question": "How many sick and living enslaved Africans were thrown into the ocean during the 1781 Zong atrocity?",
+          "options": [
+            "133 sick and living enslaved Africans",
+            "20 captives",
+            "500 captives",
+            "1,000 captives"
+          ],
+          "answer": "133 sick and living enslaved Africans",
+          "q": "How many sick and living enslaved Africans were thrown into the ocean during the 1781 Zong atrocity?",
+          "a": "133 sick and living enslaved Africans",
+          "explanation": "Captain Luke Collingwood ordered 133 living human beings thrown overboard to claim insurance."
+        },
+        {
+          "id": "lesson_2_q16",
+          "question": "How much money per person did the owners of the slave ship Zong seek to collect from maritime insurance?",
+          "options": [
+            "£30 per person for \"lost cargo\"",
+            "£5 per person",
+            "£100 per person",
+            "£500 per person"
+          ],
+          "answer": "£30 per person for \"lost cargo\"",
+          "q": "How much money per person did the owners of the slave ship Zong seek to collect from maritime insurance?",
+          "a": "£30 per person for \"lost cargo\"",
+          "explanation": "The owners claimed £30 per person under maritime insurance for jettisoned cargo."
+        },
+        {
+          "id": "lesson_2_q17",
+          "question": "What organization was founded in London in 1787 by Thomas Clarkson and Granville Sharp?",
+          "options": [
+            "The Society for Effecting the Abolition of the Slave Trade",
+            "The Royal African Company",
+            "The Anti-Slavery League",
+            "The East India Company"
+          ],
+          "answer": "The Society for Effecting the Abolition of the Slave Trade",
+          "q": "What organization was founded in London in 1787 by Thomas Clarkson and Granville Sharp?",
+          "a": "The Society for Effecting the Abolition of the Slave Trade",
+          "explanation": "Clarkson and Sharp spearheaded the grassroots British abolitionist movement."
+        },
+        {
+          "id": "lesson_2_q18",
+          "question": "Which former enslaved African published a bestselling autobiography in London in 1789 detailing Middle Passage horrors?",
+          "options": [
+            "Olaudah Equiano",
+            "Crispus Attucks",
+            "Lord Kitchener",
+            "Ignatius Sancho"
+          ],
+          "answer": "Olaudah Equiano",
+          "q": "Which former enslaved African published a bestselling autobiography in London in 1789 detailing Middle Passage horrors?",
+          "a": "Olaudah Equiano",
+          "explanation": "Equiano’s autobiography converted hundreds of thousands of Britons to abolitionism."
+        },
+        {
+          "id": "lesson_2_q19",
+          "question": "What anti-slavery slogan was stamped on Josiah Wedgwood’s famous jasperware medallion?",
+          "options": [
+            "\"Am I Not a Man and a Brother?\"",
+            "\"Deeds, Not Words\"",
+            "\"Liberty to Slaves\"",
+            "\"No Taxation Without Representation\""
+          ],
+          "answer": "\"Am I Not a Man and a Brother?\"",
+          "q": "What anti-slavery slogan was stamped on Josiah Wedgwood’s famous jasperware medallion?",
+          "a": "\"Am I Not a Man and a Brother?\"",
+          "explanation": "Wedgwood distributed thousands of medallions showing a kneeling chained African."
+        },
+        {
+          "id": "lesson_2_q20",
+          "question": "What landmark legislation abolished the British slave trade throughout the British Empire in 1807?",
+          "options": [
+            "The Abolition of the Slave Trade Act 1807",
+            "The Slavery Abolition Act 1833",
+            "The Representation of the People Act",
+            "The Navigation Act"
+          ],
+          "answer": "The Abolition of the Slave Trade Act 1807",
+          "q": "What landmark legislation abolished the British slave trade throughout the British Empire in 1807?",
+          "a": "The Abolition of the Slave Trade Act 1807",
+          "explanation": "Championed by William Wilberforce, the 1807 Act outlawed the trade, backed by Royal Navy patrols."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "paraRef": "[2.1]",
+          "date": "1619–1672",
+          "questionHeading": "How did the Triangular Trade connect Britain, Africa, and the Americas?",
+          "bullets": [
+            "Manufactured Guns & Brass",
+            "Kidnapped African Captives",
+            "Raw Plantation Sugar"
+          ],
+          "focusClue": "How did British ports like Bristol and Liverpool grow immensely wealthy from the slave trade?"
+        },
+        {
+          "step": 2,
+          "paraRef": "[2.2]",
+          "date": "1672–1713",
+          "questionHeading": "How did royal monopolies and the Asiento expand British slaving?",
+          "bullets": [
+            "Royal African Company",
+            "Branded Hot Iron RAC",
+            "Spanish Asiento Contract"
+          ],
+          "focusClue": "Why did the British Crown treat the trade in human beings as a core national economic asset?"
+        },
+        {
+          "step": 3,
+          "paraRef": "[2.3]",
+          "date": "1713–1781",
+          "questionHeading": "What forensic conditions characterised the horrors of the Middle Passage?",
+          "bullets": [
+            "Chained on Wooden Shelves",
+            "Iron Shackles & Collars",
+            "Deadly Dysentery & Fevers"
+          ],
+          "focusClue": "Why did slave ship captains treat enslaved human beings as literal inanimate cargo?"
+        },
+        {
+          "step": 4,
+          "paraRef": "[2.4]",
+          "date": "1781",
+          "questionHeading": "How did the Zong massacre expose the dehumanising logic of chattel slavery?",
+          "bullets": [
+            "Captain Luke Collingwood",
+            "133 Thrown Overboard",
+            "Fraudulent Insurance Claim"
+          ],
+          "focusClue": "Why was the Zong case fought in London courts as an insurance claim rather than a murder trial?"
+        },
+        {
+          "step": 5,
+          "paraRef": "[2.5]",
+          "date": "1788–1807",
+          "questionHeading": "How did the Brookes diagram and Equiano’s voice ignite abolitionism?",
+          "bullets": [
+            "Brookes Ship Diagram",
+            "Equiano’s Bestselling Book",
+            "Abolition Act of 1807"
+          ],
+          "focusClue": "How did forensic architectural evidence and first-person African testimony change public opinion?"
+        }
       ]
     },
     {
@@ -2580,7 +3840,7 @@ export default {
           }
         ]
       },
-      "vocabulary": [
+      "vocab": [
         {
           "term": "Maroon",
           "definition": "A self-liberated formerly enslaved African who established independent, fortified free settlements in remote wilderness.",
@@ -2656,7 +3916,7 @@ export default {
         {
           "act": 1,
           "title": "Cromwell’s Western Design (1655)",
-          "text": "<span class=\"para-ref\">[3.1]</span> In 1655, Oliver Cromwell launched his ambitious \"Western Design\" to wrest control of the Caribbean from Catholic Spain. An English naval expedition seized the mountainous island of Jamaica. As the Spanish defenders fled, their enslaved African servants slipped into the impenetrable interior of the Blue Mountains and Cockpit Country. Joining indigenous Taíno survivors, they formed independent, self-governing mountain communities known as <strong>Maroons</strong> (from the Spanish <em>cimarrón</em>, meaning wild or untamed). For over eighty years, these free African enclaves defied every British attempt to recapture them.",
+          "text": "<span class=\"para-ref\">[3.1]</span> In 1655, Oliver Cromwell launched his ambitious Western Design invasion to wrest control of the Caribbean from Catholic Spain. An English naval expedition seized the mountainous island of Jamaica. As the Spanish defenders fled, enslaved Africans secured freedom by escaping to rainforests and establishing Blue Mountain fortresses in Cockpit Country. Joining indigenous Taíno survivors, they formed independent, self-governing mountain communities known as **Maroons** (from the Spanish <em>cimarrón</em>, meaning wild or untamed), who defied every British attempt to recapture them for over eighty years.",
           "image": "/images/jamaica_maroons.jpg",
           "image_alt": "18th-century cartographic map of Jamaica by Thomas Jefferys showing the mountainous interior sanctuary of the Maroons",
           "caption": "Thomas Jefferys' 1775 map of Jamaica, illustrating the rugged, impenetrable Blue Mountains and Cockpit Country that enabled Maroon communities to establish autonomous defensive strongholds (British Library, Maps K.Top.123.47).",
@@ -2762,7 +4022,7 @@ export default {
         {
           "act": 2,
           "title": "The Sugar Industrial Complex (1670–1730)",
-          "text": "<span class=\"para-ref\">[3.2]</span> Along the fertile coastal plains of Jamaica, British planters constructed a brutal agro-industrial machine powered by \"White Gold\"—sugar. Enslaved Africans were organised into the rigid <strong>gang system</strong>: the Great Gang cleared rocky land and cut thick cane with machetes under blistering tropical sun, driven by overseers brandishing leather whips. In steaming boiling houses, workers laboured through the night near bubbling cauldrons of molten sugar, where a slip meant amputation or scalding death. The work was so exhausting and food rations so meagre that life expectancy after arriving from Africa was under seven years.",
+          "text": "<span class=\"para-ref\">[3.2]</span> Along the fertile coastal plains of Jamaica, British planters constructed a brutal agro-industrial machine powered by \"White Gold\"—sugar. Enslaved Africans were organised into the rigid **gang system**: clearing rocky land and cutting thick cane under blistering tropical sun, driven by overseer cowhide whips. In steaming boiling houses, workers laboured near iron crushing rollers and bubbling cauldrons of molten sugar, where a slip meant amputation or scalding death. Enslaved workers faced horrific exhaustion & brutality, with life expectancy after arriving from Africa under seven years.",
           "source": {
             "id": "fbe_l3_src_b",
             "letter": "B",
@@ -2865,7 +4125,7 @@ export default {
         {
           "act": 3,
           "title": "Daily Sabotage & Cultural Survival (1680–1720)",
-          "text": "<span class=\"para-ref\">[3.3]</span> Enslaved people did not passively endure bondage. While armed rebellion meant torture and execution, workers constantly engaged in subtle daily resistance: breaking heavy hoes, deliberately working slowly (\"playing the fool\"), faking illness, and secretly poisoning planter livestock. Enslaved communities fiercely guarded their African heritage: singing call-and-response work songs, passing down Anansi spider trickster folklore, practicing Obeah spiritual healing, and holding midnight funeral dances that celebrated the return of deceased spirits to their African homeland.",
+          "text": "<span class=\"para-ref\">[3.3]</span> Enslaved people constantly engaged in subtle daily resistance: breaking tool handles, deliberately working slowly (\"playing the fool\"), feigning sudden sickness, and secretly poisoning planter livestock. Enslaved communities fiercely guarded their African heritage: singing call-and-response work songs, recounting Anansi trickster tales folklore, practicing Obeah spiritual healing, and holding midnight funeral dances that celebrated the return of deceased spirits to their African homeland.",
           "image": "/images/sugar_boiling_house.jpg",
           "image_alt": "Aquatint of the boiling house on an Antigua sugar plantation by William Clark",
           "caption": "The Boiling House (Plate VI from William Clark's 'Ten Views in the Island of Antigua', 1823), depicting the hazardous, around-the-clock industrial boiling of sugar cane syrup by enslaved plantation workers (British Library, 1782.b.11).",
@@ -2971,7 +4231,7 @@ export default {
         {
           "act": 4,
           "title": "Queen Nanny & The Windward Guerrillas (1720–1734)",
-          "text": "<span class=\"para-ref\">[3.4]</span> In the eastern Blue Mountains, resistance escalated into full-scale war. The Windward Maroons were led by an extraordinary spiritual and military strategist: Queen Nanny, an Asante woman believed to possess powerful spiritual powers. Nanny established Nanny Town, a fortified mountain haven. When British redcoat regiments marched into the mountains, Nanny’s warriors used brilliant <strong>guerrilla warfare</strong>: covering themselves in palm fronds as camouflage, sounding coded tactical warnings with the <strong>abeng</strong> horn, and rolling massive boulders down narrow ravine passes to crush advancing soldiers.",
+          "text": "<span class=\"para-ref\">[3.4]</span> In the eastern Blue Mountains, resistance escalated into full-scale war. The Windward Maroons were led by an extraordinary spiritual and military strategist: Queen Nanny, an Asante woman believed to possess powerful obeah powers. Nanny established Nanny Town, a fortified mountain haven. When British redcoat regiments marched into the mountains, Nanny’s warriors used brilliant guerilla ambush tactics: covering themselves in living branch camouflage, sounding the abeng horn with coded tactical warnings, and rolling massive boulders down narrow ravines to crush advancing soldiers.",
           "source": {
             "id": "fbe_l3_src_d",
             "letter": "D",
@@ -3074,7 +4334,7 @@ export default {
         {
           "act": 5,
           "title": "The 1739 Peace Treaty: Triumph and Compromise (1739–1740)",
-          "text": "<span class=\"para-ref\">[3.5]</span> By 1738, the British colonial government was on the brink of bankruptcy, having spent over £250,000 trying and failing to subdue the Maroons. In March 1739, Governor Edward Trelawny sent emissaries carrying a white flag to negotiate a formal <strong>treaty</strong> with Leeward Maroon leader Cudjoe, followed by a separate treaty with Queen Nanny’s Windward Maroons. The British Crown granted the Maroons 1,500 acres of sovereign land, complete tax exemption, and total self-governing <strong>autonomy</strong>. However, the treaty contained a tragic compromise: to maintain their freedom, the Maroons were forced to agree to capture and return future runaway slaves to British plantations.",
+          "text": "<span class=\"para-ref\">[3.5]</span> By 1738, the British colonial government was on the brink of bankruptcy, having spent over £250,000 trying and failing to subdue the Maroons. In March 1739, Governor Edward Trelawny sent emissaries under a British truce white flag to negotiate a formal **treaty** with Leeward Maroon leader Cudjoe, followed by a separate treaty with Queen Nanny. The British Crown granted the Maroons 1,500 sovereign acres of land, complete tax exemption, and self-governing autonomy. However, the treaty contained a tragic compromise: to maintain their freedom, the Maroons were forced to agree to returning enslaved fugitives who escaped from British plantations.",
           "source": {
             "id": "fbe_l3_src_e",
             "letter": "E",
@@ -3511,6 +4771,632 @@ export default {
           "viewing_task": "[12:00] Recall: Why was Jamaican sugar referred to as 'White Gold' in 18th-century London?\n[18:30] Explain: How did British sugar consumption change from a luxury for monarchs into an everyday staple for industrial working families?\n[24:10] Challenge: How did the immense wealth generated by Caribbean sugar plantations directly finance the growth of British banks, stately homes, and the Industrial Revolution?",
           "model_answer": "Recall: Sugar cane was the most profitable agricultural commodity in the world, generating vast fortunes for absentee British plantation owners.\nExplain: As imports surged and prices fell, sweetened tea became an indispensable, cheap energy source that fuelled long factory shifts for British industrial labourers.\nChallenge: Profits from slavery were funneled into London financial houses (e.g. Barclays, Bank of England), railway networks, and civic infrastructure, cementing the direct causal link between colonial exploitation and Britain's domestic modernisation."
         }
+      ],
+      "quiz": [
+        {
+          "id": "lesson_3_q1",
+          "question": "Which English leader launched the \"Western Design\" in 1655 that seized Jamaica from Spain?",
+          "options": [
+            "Oliver Cromwell",
+            "King Charles II",
+            "Queen Elizabeth I",
+            "King George III"
+          ],
+          "answer": "Oliver Cromwell",
+          "q": "Which English leader launched the \"Western Design\" in 1655 that seized Jamaica from Spain?",
+          "a": "Oliver Cromwell",
+          "explanation": "Cromwell dispatched an expedition to seize Jamaica as part of his Caribbean strategy."
+        },
+        {
+          "id": "lesson_3_q2",
+          "question": "What name was given to the independent mountain communities formed by escaped enslaved Africans in Jamaica?",
+          "options": [
+            "The Maroons (from the Spanish cimarrón)",
+            "The Taíno",
+            "The Buccaneers",
+            "The Levellers"
+          ],
+          "answer": "The Maroons (from the Spanish cimarrón)",
+          "q": "What name was given to the independent mountain communities formed by escaped enslaved Africans in Jamaica?",
+          "a": "The Maroons (from the Spanish cimarrón)",
+          "explanation": "Maroons established sovereign mountain enclaves in the Blue Mountains and Cockpit Country."
+        },
+        {
+          "id": "lesson_3_q3",
+          "question": "Which indigenous survivors joined escaped Africans to form Maroon settlements in Jamaica’s interior?",
+          "options": [
+            "Indigenous Taíno survivors",
+            "Spanish colonists",
+            "Dutch privateers",
+            "French Huguenots"
+          ],
+          "answer": "Indigenous Taíno survivors",
+          "q": "Which indigenous survivors joined escaped Africans to form Maroon settlements in Jamaica’s interior?",
+          "a": "Indigenous Taíno survivors",
+          "explanation": "Surviving Taíno shared their knowledge of mountain terrain and edible plants."
+        },
+        {
+          "id": "lesson_3_q4",
+          "question": "What lucrative crop, known as \"White Gold\", powered the brutal Jamaican plantation economy?",
+          "options": [
+            "Sugar",
+            "Tobacco",
+            "Cotton",
+            "Coffee"
+          ],
+          "answer": "Sugar",
+          "q": "What lucrative crop, known as \"White Gold\", powered the brutal Jamaican plantation economy?",
+          "a": "Sugar",
+          "explanation": "Sugar was the most profitable agro-industrial crop in the 18th-century British Empire."
+        },
+        {
+          "id": "lesson_3_q5",
+          "question": "What rigid labour organization divided enslaved plantation workers by age and physical strength?",
+          "options": [
+            "The gang system (led by the Great Gang)",
+            "The guild system",
+            "The factory system",
+            "The indenture system"
+          ],
+          "answer": "The gang system (led by the Great Gang)",
+          "q": "What rigid labour organization divided enslaved plantation workers by age and physical strength?",
+          "a": "The gang system (led by the Great Gang)",
+          "explanation": "The Great Gang cut heavy cane under armed overseers brandishing leather whips."
+        },
+        {
+          "id": "lesson_3_q6",
+          "question": "Where did enslaved workers endure night shifts near bubbling cauldrons of molten sugar where a slip meant death?",
+          "options": [
+            "In steaming boiling houses",
+            "In wind mills",
+            "In distillery cellars",
+            "In curing houses"
+          ],
+          "answer": "In steaming boiling houses",
+          "q": "Where did enslaved workers endure night shifts near bubbling cauldrons of molten sugar where a slip meant death?",
+          "a": "In steaming boiling houses",
+          "explanation": "Boiling houses were hazardous industrial infernos where amputations and scaldings were common."
+        },
+        {
+          "id": "lesson_3_q7",
+          "question": "What was the grim life expectancy for enslaved Africans upon arriving on Jamaican sugar plantations?",
+          "options": [
+            "Under seven years",
+            "Twenty years",
+            "Thirty-five years",
+            "Fifty years"
+          ],
+          "answer": "Under seven years",
+          "q": "What was the grim life expectancy for enslaved Africans upon arriving on Jamaican sugar plantations?",
+          "a": "Under seven years",
+          "explanation": "Horrific labour and starvation diets meant average survival was less than seven years."
+        },
+        {
+          "id": "lesson_3_q8",
+          "question": "What subtle daily forms of sabotage did enslaved people use to resist planter exploitation?",
+          "options": [
+            "Breaking heavy hoes, deliberately working slowly (\"playing the fool\"), and faking illness",
+            "Writing petitions to Parliament",
+            "Holding trade union votes",
+            "Buying shares in plantations"
+          ],
+          "answer": "Breaking heavy hoes, deliberately working slowly (\"playing the fool\"), and faking illness",
+          "q": "What subtle daily forms of sabotage did enslaved people use to resist planter exploitation?",
+          "a": "Breaking heavy hoes, deliberately working slowly (\"playing the fool\"), and faking illness",
+          "explanation": "Enslaved people practiced everyday covert resistance to hinder planter profits."
+        },
+        {
+          "id": "lesson_3_q9",
+          "question": "Which West African folklore character was passed down through stories as a symbol of cunning resistance?",
+          "options": [
+            "Anansi the spider trickster",
+            "Oshun",
+            "Shango",
+            "Mami Wata"
+          ],
+          "answer": "Anansi the spider trickster",
+          "q": "Which West African folklore character was passed down through stories as a symbol of cunning resistance?",
+          "a": "Anansi the spider trickster",
+          "explanation": "Anansi stories celebrated smaller, clever creatures outwitting powerful oppressors."
+        },
+        {
+          "id": "lesson_3_q10",
+          "question": "What West African spiritual healing and religious tradition was preserved among enslaved communities in Jamaica?",
+          "options": [
+            "Obeah spiritual healing",
+            "Voodoo only",
+            "Santería",
+            "Candomblé"
+          ],
+          "answer": "Obeah spiritual healing",
+          "q": "What West African spiritual healing and religious tradition was preserved among enslaved communities in Jamaica?",
+          "a": "Obeah spiritual healing",
+          "explanation": "Obeah practitioners provided medicinal remedies, spiritual guidance, and resistance leadership."
+        },
+        {
+          "id": "lesson_3_q11",
+          "question": "What belief was celebrated during midnight funeral dances on Jamaican plantations?",
+          "options": [
+            "The return of deceased spirits to their African homeland",
+            "The reincarnation into British nobility",
+            "The permanent loss of the soul",
+            "A Christian purgatory journey"
+          ],
+          "answer": "The return of deceased spirits to their African homeland",
+          "q": "What belief was celebrated during midnight funeral dances on Jamaican plantations?",
+          "a": "The return of deceased spirits to their African homeland",
+          "explanation": "Death was viewed as a release allowing ancestral spirits to fly home across the ocean."
+        },
+        {
+          "id": "lesson_3_q12",
+          "question": "Who was the extraordinary Asante spiritual and military leader of the Windward Maroons in Jamaica?",
+          "options": [
+            "Queen Nanny",
+            "Claudia Jones",
+            "Helen MacRae",
+            "Harriet Tubman"
+          ],
+          "answer": "Queen Nanny",
+          "q": "Who was the extraordinary Asante spiritual and military leader of the Windward Maroons in Jamaica?",
+          "a": "Queen Nanny",
+          "explanation": "Queen Nanny led guerrilla resistance from the eastern Blue Mountains."
+        },
+        {
+          "id": "lesson_3_q13",
+          "question": "What was the name of the fortified mountain haven established by Queen Nanny in the Blue Mountains?",
+          "options": [
+            "Nanny Town",
+            "Port Royal",
+            "Spanish Town",
+            "Trelawny Town"
+          ],
+          "answer": "Nanny Town",
+          "q": "What was the name of the fortified mountain haven established by Queen Nanny in the Blue Mountains?",
+          "a": "Nanny Town",
+          "explanation": "Nanny Town was a self-sufficient, impregnable mountain redoubt."
+        },
+        {
+          "id": "lesson_3_q14",
+          "question": "How did Queen Nanny’s warriors disguise themselves when ambushing British redcoat regiments?",
+          "options": [
+            "Covering themselves in palm fronds as camouflage",
+            "Wearing captured British red coats",
+            "Dressing as Spanish priests",
+            "Hiding in wooden barrels"
+          ],
+          "answer": "Covering themselves in palm fronds as camouflage",
+          "q": "How did Queen Nanny’s warriors disguise themselves when ambushing British redcoat regiments?",
+          "a": "Covering themselves in palm fronds as camouflage",
+          "explanation": "Guerrillas blended into the tropical forest using living plant camouflage."
+        },
+        {
+          "id": "lesson_3_q15",
+          "question": "What tactical cow-horn instrument was sounded by Maroons to communicate coded warnings across ravines?",
+          "options": [
+            "The abeng horn",
+            "The bugle",
+            "The conch shell",
+            "The war drum"
+          ],
+          "answer": "The abeng horn",
+          "q": "What tactical cow-horn instrument was sounded by Maroons to communicate coded warnings across ravines?",
+          "a": "The abeng horn",
+          "explanation": "The abeng produced distinct acoustic frequencies that transmitted tactical commands miles away."
+        },
+        {
+          "id": "lesson_3_q16",
+          "question": "What lethal ambush tactic did Maroons use in narrow mountain ravines against advancing British columns?",
+          "options": [
+            "Rolling massive boulders down narrow ravine passes to crush advancing soldiers",
+            "Digging deep flooded moats",
+            "Deploying cavalry charges",
+            "Firing heavy naval cannon"
+          ],
+          "answer": "Rolling massive boulders down narrow ravine passes to crush advancing soldiers",
+          "q": "What lethal ambush tactic did Maroons use in narrow mountain ravines against advancing British columns?",
+          "a": "Rolling massive boulders down narrow ravine passes to crush advancing soldiers",
+          "explanation": "Boulders crushed soldiers trapped in single-file mountain defiles."
+        },
+        {
+          "id": "lesson_3_q17",
+          "question": "How much money had the British colonial government spent trying and failing to subdue the Maroons by 1738?",
+          "options": [
+            "Over £250,000",
+            "£10,000",
+            "£1 million",
+            "£50,000"
+          ],
+          "answer": "Over £250,000",
+          "q": "How much money had the British colonial government spent trying and failing to subdue the Maroons by 1738?",
+          "a": "Over £250,000",
+          "explanation": "Astronomical war expenses pushed the Jamaican colonial administration to near bankruptcy."
+        },
+        {
+          "id": "lesson_3_q18",
+          "question": "Which British Governor sent emissaries carrying a white flag to negotiate peace with Maroon leader Cudjoe in 1739?",
+          "options": [
+            "Governor Edward Trelawny",
+            "Thomas Hutchinson",
+            "Lord Dunmore",
+            "Robert Clive"
+          ],
+          "answer": "Governor Edward Trelawny",
+          "q": "Which British Governor sent emissaries carrying a white flag to negotiate peace with Maroon leader Cudjoe in 1739?",
+          "a": "Governor Edward Trelawny",
+          "explanation": "Governor Trelawny recognized that the Maroons could never be defeated militarily."
+        },
+        {
+          "id": "lesson_3_q19",
+          "question": "What rights were formally granted to the Maroons under the 1739 Peace Treaty?",
+          "options": [
+            "1,500 acres of sovereign land, complete tax exemption, and total self-governing autonomy",
+            "Free passage back to Africa",
+            "British parliamentary seats",
+            "Enslavement under lenient masters"
+          ],
+          "answer": "1,500 acres of sovereign land, complete tax exemption, and total self-governing autonomy",
+          "q": "What rights were formally granted to the Maroons under the 1739 Peace Treaty?",
+          "a": "1,500 acres of sovereign land, complete tax exemption, and total self-governing autonomy",
+          "explanation": "The treaty recognized Maroon sovereignty within British-claimed Jamaica."
+        },
+        {
+          "id": "lesson_3_q20",
+          "question": "What tragic compromise was forced upon the Maroons in the 1739 Treaty to preserve their freedom?",
+          "options": [
+            "They agreed to capture and return future runaway slaves to British plantations",
+            "They agreed to convert to Christianity",
+            "They surrendered all weapons",
+            "They paid annual tribute in gold"
+          ],
+          "answer": "They agreed to capture and return future runaway slaves to British plantations",
+          "q": "What tragic compromise was forced upon the Maroons in the 1739 Treaty to preserve their freedom?",
+          "a": "They agreed to capture and return future runaway slaves to British plantations",
+          "explanation": "The British weaponized Maroon autonomy by compelling them to police plantation escapes."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "id": "lesson_3_q1",
+          "question": "Which English leader launched the \"Western Design\" in 1655 that seized Jamaica from Spain?",
+          "options": [
+            "Oliver Cromwell",
+            "King Charles II",
+            "Queen Elizabeth I",
+            "King George III"
+          ],
+          "answer": "Oliver Cromwell",
+          "q": "Which English leader launched the \"Western Design\" in 1655 that seized Jamaica from Spain?",
+          "a": "Oliver Cromwell",
+          "explanation": "Cromwell dispatched an expedition to seize Jamaica as part of his Caribbean strategy."
+        },
+        {
+          "id": "lesson_3_q2",
+          "question": "What name was given to the independent mountain communities formed by escaped enslaved Africans in Jamaica?",
+          "options": [
+            "The Maroons (from the Spanish cimarrón)",
+            "The Taíno",
+            "The Buccaneers",
+            "The Levellers"
+          ],
+          "answer": "The Maroons (from the Spanish cimarrón)",
+          "q": "What name was given to the independent mountain communities formed by escaped enslaved Africans in Jamaica?",
+          "a": "The Maroons (from the Spanish cimarrón)",
+          "explanation": "Maroons established sovereign mountain enclaves in the Blue Mountains and Cockpit Country."
+        },
+        {
+          "id": "lesson_3_q3",
+          "question": "Which indigenous survivors joined escaped Africans to form Maroon settlements in Jamaica’s interior?",
+          "options": [
+            "Indigenous Taíno survivors",
+            "Spanish colonists",
+            "Dutch privateers",
+            "French Huguenots"
+          ],
+          "answer": "Indigenous Taíno survivors",
+          "q": "Which indigenous survivors joined escaped Africans to form Maroon settlements in Jamaica’s interior?",
+          "a": "Indigenous Taíno survivors",
+          "explanation": "Surviving Taíno shared their knowledge of mountain terrain and edible plants."
+        },
+        {
+          "id": "lesson_3_q4",
+          "question": "What lucrative crop, known as \"White Gold\", powered the brutal Jamaican plantation economy?",
+          "options": [
+            "Sugar",
+            "Tobacco",
+            "Cotton",
+            "Coffee"
+          ],
+          "answer": "Sugar",
+          "q": "What lucrative crop, known as \"White Gold\", powered the brutal Jamaican plantation economy?",
+          "a": "Sugar",
+          "explanation": "Sugar was the most profitable agro-industrial crop in the 18th-century British Empire."
+        },
+        {
+          "id": "lesson_3_q5",
+          "question": "What rigid labour organization divided enslaved plantation workers by age and physical strength?",
+          "options": [
+            "The gang system (led by the Great Gang)",
+            "The guild system",
+            "The factory system",
+            "The indenture system"
+          ],
+          "answer": "The gang system (led by the Great Gang)",
+          "q": "What rigid labour organization divided enslaved plantation workers by age and physical strength?",
+          "a": "The gang system (led by the Great Gang)",
+          "explanation": "The Great Gang cut heavy cane under armed overseers brandishing leather whips."
+        },
+        {
+          "id": "lesson_3_q6",
+          "question": "Where did enslaved workers endure night shifts near bubbling cauldrons of molten sugar where a slip meant death?",
+          "options": [
+            "In steaming boiling houses",
+            "In wind mills",
+            "In distillery cellars",
+            "In curing houses"
+          ],
+          "answer": "In steaming boiling houses",
+          "q": "Where did enslaved workers endure night shifts near bubbling cauldrons of molten sugar where a slip meant death?",
+          "a": "In steaming boiling houses",
+          "explanation": "Boiling houses were hazardous industrial infernos where amputations and scaldings were common."
+        },
+        {
+          "id": "lesson_3_q7",
+          "question": "What was the grim life expectancy for enslaved Africans upon arriving on Jamaican sugar plantations?",
+          "options": [
+            "Under seven years",
+            "Twenty years",
+            "Thirty-five years",
+            "Fifty years"
+          ],
+          "answer": "Under seven years",
+          "q": "What was the grim life expectancy for enslaved Africans upon arriving on Jamaican sugar plantations?",
+          "a": "Under seven years",
+          "explanation": "Horrific labour and starvation diets meant average survival was less than seven years."
+        },
+        {
+          "id": "lesson_3_q8",
+          "question": "What subtle daily forms of sabotage did enslaved people use to resist planter exploitation?",
+          "options": [
+            "Breaking heavy hoes, deliberately working slowly (\"playing the fool\"), and faking illness",
+            "Writing petitions to Parliament",
+            "Holding trade union votes",
+            "Buying shares in plantations"
+          ],
+          "answer": "Breaking heavy hoes, deliberately working slowly (\"playing the fool\"), and faking illness",
+          "q": "What subtle daily forms of sabotage did enslaved people use to resist planter exploitation?",
+          "a": "Breaking heavy hoes, deliberately working slowly (\"playing the fool\"), and faking illness",
+          "explanation": "Enslaved people practiced everyday covert resistance to hinder planter profits."
+        },
+        {
+          "id": "lesson_3_q9",
+          "question": "Which West African folklore character was passed down through stories as a symbol of cunning resistance?",
+          "options": [
+            "Anansi the spider trickster",
+            "Oshun",
+            "Shango",
+            "Mami Wata"
+          ],
+          "answer": "Anansi the spider trickster",
+          "q": "Which West African folklore character was passed down through stories as a symbol of cunning resistance?",
+          "a": "Anansi the spider trickster",
+          "explanation": "Anansi stories celebrated smaller, clever creatures outwitting powerful oppressors."
+        },
+        {
+          "id": "lesson_3_q10",
+          "question": "What West African spiritual healing and religious tradition was preserved among enslaved communities in Jamaica?",
+          "options": [
+            "Obeah spiritual healing",
+            "Voodoo only",
+            "Santería",
+            "Candomblé"
+          ],
+          "answer": "Obeah spiritual healing",
+          "q": "What West African spiritual healing and religious tradition was preserved among enslaved communities in Jamaica?",
+          "a": "Obeah spiritual healing",
+          "explanation": "Obeah practitioners provided medicinal remedies, spiritual guidance, and resistance leadership."
+        },
+        {
+          "id": "lesson_3_q11",
+          "question": "What belief was celebrated during midnight funeral dances on Jamaican plantations?",
+          "options": [
+            "The return of deceased spirits to their African homeland",
+            "The reincarnation into British nobility",
+            "The permanent loss of the soul",
+            "A Christian purgatory journey"
+          ],
+          "answer": "The return of deceased spirits to their African homeland",
+          "q": "What belief was celebrated during midnight funeral dances on Jamaican plantations?",
+          "a": "The return of deceased spirits to their African homeland",
+          "explanation": "Death was viewed as a release allowing ancestral spirits to fly home across the ocean."
+        },
+        {
+          "id": "lesson_3_q12",
+          "question": "Who was the extraordinary Asante spiritual and military leader of the Windward Maroons in Jamaica?",
+          "options": [
+            "Queen Nanny",
+            "Claudia Jones",
+            "Helen MacRae",
+            "Harriet Tubman"
+          ],
+          "answer": "Queen Nanny",
+          "q": "Who was the extraordinary Asante spiritual and military leader of the Windward Maroons in Jamaica?",
+          "a": "Queen Nanny",
+          "explanation": "Queen Nanny led guerrilla resistance from the eastern Blue Mountains."
+        },
+        {
+          "id": "lesson_3_q13",
+          "question": "What was the name of the fortified mountain haven established by Queen Nanny in the Blue Mountains?",
+          "options": [
+            "Nanny Town",
+            "Port Royal",
+            "Spanish Town",
+            "Trelawny Town"
+          ],
+          "answer": "Nanny Town",
+          "q": "What was the name of the fortified mountain haven established by Queen Nanny in the Blue Mountains?",
+          "a": "Nanny Town",
+          "explanation": "Nanny Town was a self-sufficient, impregnable mountain redoubt."
+        },
+        {
+          "id": "lesson_3_q14",
+          "question": "How did Queen Nanny’s warriors disguise themselves when ambushing British redcoat regiments?",
+          "options": [
+            "Covering themselves in palm fronds as camouflage",
+            "Wearing captured British red coats",
+            "Dressing as Spanish priests",
+            "Hiding in wooden barrels"
+          ],
+          "answer": "Covering themselves in palm fronds as camouflage",
+          "q": "How did Queen Nanny’s warriors disguise themselves when ambushing British redcoat regiments?",
+          "a": "Covering themselves in palm fronds as camouflage",
+          "explanation": "Guerrillas blended into the tropical forest using living plant camouflage."
+        },
+        {
+          "id": "lesson_3_q15",
+          "question": "What tactical cow-horn instrument was sounded by Maroons to communicate coded warnings across ravines?",
+          "options": [
+            "The abeng horn",
+            "The bugle",
+            "The conch shell",
+            "The war drum"
+          ],
+          "answer": "The abeng horn",
+          "q": "What tactical cow-horn instrument was sounded by Maroons to communicate coded warnings across ravines?",
+          "a": "The abeng horn",
+          "explanation": "The abeng produced distinct acoustic frequencies that transmitted tactical commands miles away."
+        },
+        {
+          "id": "lesson_3_q16",
+          "question": "What lethal ambush tactic did Maroons use in narrow mountain ravines against advancing British columns?",
+          "options": [
+            "Rolling massive boulders down narrow ravine passes to crush advancing soldiers",
+            "Digging deep flooded moats",
+            "Deploying cavalry charges",
+            "Firing heavy naval cannon"
+          ],
+          "answer": "Rolling massive boulders down narrow ravine passes to crush advancing soldiers",
+          "q": "What lethal ambush tactic did Maroons use in narrow mountain ravines against advancing British columns?",
+          "a": "Rolling massive boulders down narrow ravine passes to crush advancing soldiers",
+          "explanation": "Boulders crushed soldiers trapped in single-file mountain defiles."
+        },
+        {
+          "id": "lesson_3_q17",
+          "question": "How much money had the British colonial government spent trying and failing to subdue the Maroons by 1738?",
+          "options": [
+            "Over £250,000",
+            "£10,000",
+            "£1 million",
+            "£50,000"
+          ],
+          "answer": "Over £250,000",
+          "q": "How much money had the British colonial government spent trying and failing to subdue the Maroons by 1738?",
+          "a": "Over £250,000",
+          "explanation": "Astronomical war expenses pushed the Jamaican colonial administration to near bankruptcy."
+        },
+        {
+          "id": "lesson_3_q18",
+          "question": "Which British Governor sent emissaries carrying a white flag to negotiate peace with Maroon leader Cudjoe in 1739?",
+          "options": [
+            "Governor Edward Trelawny",
+            "Thomas Hutchinson",
+            "Lord Dunmore",
+            "Robert Clive"
+          ],
+          "answer": "Governor Edward Trelawny",
+          "q": "Which British Governor sent emissaries carrying a white flag to negotiate peace with Maroon leader Cudjoe in 1739?",
+          "a": "Governor Edward Trelawny",
+          "explanation": "Governor Trelawny recognized that the Maroons could never be defeated militarily."
+        },
+        {
+          "id": "lesson_3_q19",
+          "question": "What rights were formally granted to the Maroons under the 1739 Peace Treaty?",
+          "options": [
+            "1,500 acres of sovereign land, complete tax exemption, and total self-governing autonomy",
+            "Free passage back to Africa",
+            "British parliamentary seats",
+            "Enslavement under lenient masters"
+          ],
+          "answer": "1,500 acres of sovereign land, complete tax exemption, and total self-governing autonomy",
+          "q": "What rights were formally granted to the Maroons under the 1739 Peace Treaty?",
+          "a": "1,500 acres of sovereign land, complete tax exemption, and total self-governing autonomy",
+          "explanation": "The treaty recognized Maroon sovereignty within British-claimed Jamaica."
+        },
+        {
+          "id": "lesson_3_q20",
+          "question": "What tragic compromise was forced upon the Maroons in the 1739 Treaty to preserve their freedom?",
+          "options": [
+            "They agreed to capture and return future runaway slaves to British plantations",
+            "They agreed to convert to Christianity",
+            "They surrendered all weapons",
+            "They paid annual tribute in gold"
+          ],
+          "answer": "They agreed to capture and return future runaway slaves to British plantations",
+          "q": "What tragic compromise was forced upon the Maroons in the 1739 Treaty to preserve their freedom?",
+          "a": "They agreed to capture and return future runaway slaves to British plantations",
+          "explanation": "The British weaponized Maroon autonomy by compelling them to police plantation escapes."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "paraRef": "[3.1]",
+          "date": "1655",
+          "questionHeading": "How did Cromwell’s conquest of Jamaica birth the Maroon communities?",
+          "bullets": [
+            "Western Design Invasion",
+            "Escaping to Rainforests",
+            "Blue Mountain Fortresses"
+          ],
+          "focusClue": "How did the rugged geography of Jamaica allow self-liberated Africans to establish free societies?"
+        },
+        {
+          "step": 2,
+          "paraRef": "[3.2]",
+          "date": "1670–1730",
+          "questionHeading": "Why was sugar cultivation described as an agro-industrial death machine?",
+          "bullets": [
+            "Iron Crushing Rollers",
+            "Overseer Cowhide Whips",
+            "Exhaustion & Brutality"
+          ],
+          "focusClue": "Why did Caribbean sugar planters find it cheaper to work enslaved people to death than sustain them?"
+        },
+        {
+          "step": 3,
+          "paraRef": "[3.3]",
+          "date": "1680–1720",
+          "questionHeading": "How did enslaved labourers engage in daily sabotage and cultural survival?",
+          "bullets": [
+            "Breaking Tool Handles",
+            "Feigning Sudden Sickness",
+            "Anansi Trickster Tales"
+          ],
+          "focusClue": "Why were cultural practices and secret spiritual ceremonies powerful forms of resistance?"
+        },
+        {
+          "step": 4,
+          "paraRef": "[3.4]",
+          "date": "1720–1734",
+          "questionHeading": "How did Queen Nanny lead the Windward Maroons to military victory?",
+          "bullets": [
+            "Living Branch Camouflage",
+            "Sounding the Abeng Horn",
+            "Guerilla Ambush Tactics"
+          ],
+          "focusClue": "How did camouflage and knowledge of mountain terrain neutralise British regular army firepower?"
+        },
+        {
+          "step": 5,
+          "paraRef": "[3.5]",
+          "date": "1739–1740",
+          "questionHeading": "Why was the 1739 Peace Treaty both a triumph and a painful compromise?",
+          "bullets": [
+            "1,500 Sovereign Acres",
+            "British Truce White Flag",
+            "Returning Enslaved Fugitives"
+          ],
+          "focusClue": "Did the 1739 Treaty represent sovereign victory, or a tragic bargain with the colonial slave state?"
+        }
       ]
     },
     {
@@ -3635,7 +5521,7 @@ export default {
           }
         ]
       },
-      "vocabulary": [
+      "vocab": [
         {
           "term": "Boycott",
           "definition": "A concerted commercial protest refusing to purchase goods from a particular country or merchant.",
@@ -3711,7 +5597,7 @@ export default {
         {
           "act": 1,
           "title": "Victory & The Debt Trap (1763)",
-          "text": "<span class=\"para-ref\">[4.1]</span> In 1763, Britain celebrated complete victory over France in the Seven Years’ War, driving French armies out of Canada and expanding the British Empire to unprecedented heights. But imperial glory carried an astronomical financial price tag: Britain’s national debt had skyrocketed to £133 million. In London, Prime Minister George Grenville argued that since British soldiers had bled to defend the American colonists, the colonists should pay taxes toward their own military defence. To prevent expensive frontier wars with Native American confederacies, King George III issued the <strong>Proclamation Line of 1763</strong>, forbidding colonists from settling west of the Appalachian Mountains—infuriating land-hungry colonial frontiersmen.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In 1763, Britain celebrated complete victory over France in the Seven Years’ War, driving French armies out of Canada. But imperial glory carried an astronomical financial price tag: Britain had accumulated a £133m imperial war debt. In London, Prime Minister George Grenville argued that American colonists must pay taxes toward standing army quartering and frontier defense. To prevent expensive conflicts with Native Americans, King George III issued the **Proclamation Line of 1763**, forbidding colonists from settling west of the Appalachian Mountains—infuriating land-hungry colonial frontiersmen.",
           "image": "/images/king_george_iii.jpg",
           "image_alt": "Portrait of King George III in coronation robes by Allan Ramsay",
           "caption": "King George III in coronation robes (Allan Ramsay, 1762), monarch whose ministry sought to levy direct taxes upon the American colonies to repay British imperial debts incurred during the Seven Years' War (Royal Collection Trust, RCIN 405325 / NPG).",
@@ -3817,7 +5703,7 @@ export default {
         {
           "act": 2,
           "title": "The Stamp Act & \"No Taxation Without Representation\" (1765–1766)",
-          "text": "<span class=\"para-ref\">[4.2]</span> In March 1765, Parliament passed the fateful Stamp Act, imposing the first-ever direct internal tax on the Thirteen Colonies. Every legal contract, newspaper, almanac, pamphlet, and deck of playing cards required an official embossed tax stamp. Colonists erupted in outrage. Citing the 1689 English Bill of Rights, colonial assemblies declared that as British subjects, they could only be taxed by their own elected representatives: <em>\"No taxation without representation!\"</em> In Boston, a secretive resistance movement called the <strong>Sons of Liberty</strong> formed, hanging tax collectors in effigy, ransacking the royal governor’s mansion, and organizing a nationwide <strong>boycott</strong> of British imported goods. Stunned by the collapse in British exports, Parliament repealed the Stamp Act in 1766.",
+          "text": "<span class=\"para-ref\">[4.2]</span> In March 1765, Parliament passed the fateful Stamp Act, imposing the first direct internal tax on the Thirteen Colonies. By taxing legal documents, newspapers, almanacs, pamphlets, and playing cards with embossed stamps, Parliament sparked widespread fury. Citing the 1689 English Bill of Rights, colonists raised the cry <em>\"No taxation without representation!\"</em> The Sons of Liberty mobilised by attacking stamp collectors, burning effigies, and enforcing nationwide colonial import boycotts of British goods, forcing Parliament to repeal the Stamp Act in 1766.",
           "image": "/images/stamp_act_skull_1765.jpg",
           "image_alt": "Skull and crossbones woodcut emblem printed in colonial American newspapers protesting the Stamp Act 1765",
           "caption": "Colonial protest emblem published in the Pennsylvania Journal (October 1765), replacing the royal stamp with a skull and crossbones to denounce parliamentary taxation without colonial representation (Library of Congress, LC-USZ62-10658).",
@@ -3923,7 +5809,7 @@ export default {
         {
           "act": 3,
           "title": "Blood on King Street: The Boston Massacre (March 1770)",
-          "text": "<span class=\"para-ref\">[4.3]</span> Despite repealing the Stamp Act, Parliament insisted on its absolute right to bind the colonies \"in all cases whatsoever.\" In 1767, Chancellor Charles Townshend imposed new <strong>customs duties</strong> on imported glass, lead, paint, paper, and tea. When Bostonians violently intimidated customs officials, Britain dispatched four regiments of <strong>redcoats</strong> to occupy the city. Tensions exploded on 5 March 1770: an angry mob of dockworkers pelted a British sentry with snowballs, oyster shells, and clubs outside the Custom House. Surrounded and panicked, British soldiers fired into the crowd, killing five civilians, including Crispus Attucks, a sailor of mixed African and Native American descent. Silversmith Paul Revere engraved an explosive piece of political <strong>propaganda</strong> titled <em>The Bloody Massacre</em>, portraying the redcoats as cold-blooded murderers.",
+          "text": "<span class=\"para-ref\">[4.3]</span> In 1767, Chancellor Charles Townshend imposed new duties on imported glass, lead, paint, paper, and tea, prompting Britain to dispatch redcoats to occupy Boston. Tensions exploded on 5 March 1770: an angry mob pelted a British sentry with snowballs, ice & oysters and clubs outside the Custom House. Surrounded and panicked, British soldiers fired into the crowd, leaving five dead colonists, including Crispus Attucks. Silversmith Paul Revere’s engraving titled <em>The Bloody Massacre</em> portrayed the redcoats as cold-blooded murderers, becoming an explosive piece of revolutionary propaganda.",
           "source": {
             "id": "fbe_l4_src_c",
             "letter": "C",
@@ -4026,7 +5912,7 @@ export default {
         {
           "act": 4,
           "title": "The Tea Act & The Monopoly Threat (May 1773)",
-          "text": "<span class=\"para-ref\">[4.4]</span> Following the massacre, Parliament backed down and repealed all Townshend duties—except for a symbolic three-penny duty on tea to assert royal authority. For three years, uneasy peace held as colonists happily drank cheap Dutch smuggled tea. But in May 1773, Parliament made a disastrous blunder: the Tea Act. Seeking to bail out the bankrupt East India Company, which had 18 million pounds of unsold tea rotting in London warehouses, Parliament granted the Company a total <strong>monopoly</strong> to ship tea directly to America without paying British export tariffs. Even with the three-penny tax, Company tea was cheaper than smuggled Dutch tea. But colonial merchants and patriots saw a deadly precedent: if Parliament could grant a monopoly on tea, it could grant monopolies on bread, cloth, and iron, destroying colonial commerce.",
+          "text": "<span class=\"para-ref\">[4.4]</span> In May 1773, Parliament passed the Tea Act to bail out the East India Company, which had 18m pounds surplus tea rotting in London warehouses. Parliament granted an East India Company monopoly to ship tea directly to America without British export tariffs, bypassing local merchants. Even with the three-penny import tax, Company tea was cheaper than smuggled Dutch tea. But colonists saw a dangerous precedent: if Parliament could grant a monopoly on tea, it could control all colonial commerce without colonial consent.",
           "source": {
             "id": "fbe_l4_src_d",
             "letter": "D",
@@ -4129,7 +6015,7 @@ export default {
         {
           "act": 5,
           "title": "342 Chests in the Harbour: The Boston Tea Party (December 1773)",
-          "text": "<span class=\"para-ref\">[4.5]</span> In late autumn 1773, three East India Company ships—the <em>Dartmouth</em>, the <em>Eleanor</em>, and the <em>Beaver</em>—arrived in Boston Harbour carrying 342 chests of tea. Royal Governor Thomas Hutchinson refused to let the ships depart without paying the customs tax. On the freezing night of 16 December 1773, following an impassioned town meeting led by Samuel Adams at Old South Meeting House, over a hundred Sons of Liberty disguised themselves as Mohawk warriors. Brandishing tomahawks, they boarded the three vessels, split open all 342 wooden chests, and dumped 46 tons of East India Company tea into the ocean—worth over £1.5 million in modern money. Furious at what King George III called \"flagrant rebellion,\" Parliament retaliated in 1774 with the <strong>Coercive Acts</strong>, closing Boston Harbour and placing Massachusetts under military dictatorship, setting the stage for war.",
+          "text": "<span class=\"para-ref\">[4.5]</span> In late autumn 1773, three East India Company ships carrying 342 chests of tea arrived in Boston Harbour. On the freezing night of 16 December 1773, following a rally led by Samuel Adams, over a hundred Sons of Liberty Mohawks disguised in indigenous dress boarded the vessels. With 342 chests smashed open with tomahawks, they dumped 46 tons of tea into the harbor. Furious at what King George III called flagrant rebellion, Parliament retaliated in 1774 with the punitive Coercive Acts, closing Boston Harbour and placing Massachusetts under military rule.",
           "source": {
             "id": "fbe_l4_src_e",
             "letter": "E",
@@ -4586,6 +6472,632 @@ export default {
           "model_answer": "Initially, colonial anger erupted in December 1773 when the Sons of Liberty dumped 342 chests of British tea into Boston harbour to protest the Tea Act ('No taxation without representation').<br><br>In response, Britain passed the harsh 'Intolerable Acts' of 1774, closing Boston port and imposing military rule. The Thirteen Colonies formed the First Continental Congress to coordinate resistance, leading to the first military clashes at Lexington and Concord in April 1775.<br><br>Finally, seeing compromise was impossible, the Second Continental Congress adopted Thomas Jefferson’s Declaration of Independence on 4 July 1776, severing all political ties with the British Crown.",
           "topic": "Question 2: Narrative Account [8 marks • 10 mins]"
         }
+      ],
+      "quiz": [
+        {
+          "id": "lesson_4_q1",
+          "question": "How much national debt did Great Britain accumulate by winning the Seven Years’ War in 1763?",
+          "options": [
+            "£133 million",
+            "£10 million",
+            "£500 million",
+            "£50 million"
+          ],
+          "answer": "£133 million",
+          "q": "How much national debt did Great Britain accumulate by winning the Seven Years’ War in 1763?",
+          "a": "£133 million",
+          "explanation": "The war doubled Britain’s national debt to a staggering £133 million."
+        },
+        {
+          "id": "lesson_4_q2",
+          "question": "Which British Prime Minister argued that American colonists should pay taxes toward their military defence?",
+          "options": [
+            "Prime Minister George Grenville",
+            "William Pitt",
+            "Lord North",
+            "Charles Townshend"
+          ],
+          "answer": "Prime Minister George Grenville",
+          "q": "Which British Prime Minister argued that American colonists should pay taxes toward their military defence?",
+          "a": "Prime Minister George Grenville",
+          "explanation": "George Grenville sought to balance imperial books by taxing colonial commerce."
+        },
+        {
+          "id": "lesson_4_q3",
+          "question": "What 1763 decree by King George III forbade colonists from settling west of the Appalachian Mountains?",
+          "options": [
+            "The Proclamation Line of 1763",
+            "The Quebec Act",
+            "The Stamp Act",
+            "The Navigation Act"
+          ],
+          "answer": "The Proclamation Line of 1763",
+          "q": "What 1763 decree by King George III forbade colonists from settling west of the Appalachian Mountains?",
+          "a": "The Proclamation Line of 1763",
+          "explanation": "The Proclamation Line aimed to prevent expensive frontier warfare with Native American tribes."
+        },
+        {
+          "id": "lesson_4_q4",
+          "question": "What direct internal tax was imposed on paper, legal contracts, newspapers, and playing cards in March 1765?",
+          "options": [
+            "The Stamp Act",
+            "The Tea Act",
+            "The Sugar Act",
+            "The Townshend Duties"
+          ],
+          "answer": "The Stamp Act",
+          "q": "What direct internal tax was imposed on paper, legal contracts, newspapers, and playing cards in March 1765?",
+          "a": "The Stamp Act",
+          "explanation": "The Stamp Act required official embossed revenue stamps on paper goods."
+        },
+        {
+          "id": "lesson_4_q5",
+          "question": "What famous colonial rallying cry asserted that British subjects could only be taxed by elected representatives?",
+          "options": [
+            "\"No taxation without representation!\"",
+            "\"Deeds, Not Words\"",
+            "\"Liberty to Slaves\"",
+            "\"Give Me Liberty or Give Me Death\""
+          ],
+          "answer": "\"No taxation without representation!\"",
+          "q": "What famous colonial rallying cry asserted that British subjects could only be taxed by elected representatives?",
+          "a": "\"No taxation without representation!\"",
+          "explanation": "Colonists argued that taxation without parliamentary representation violated English constitutional law."
+        },
+        {
+          "id": "lesson_4_q6",
+          "question": "What secretive Boston resistance group was formed to resist the Stamp Act through direct action and boycotts?",
+          "options": [
+            "The Sons of Liberty",
+            "The Continental Army",
+            "The Black Loyalists",
+            "The Regulators"
+          ],
+          "answer": "The Sons of Liberty",
+          "q": "What secretive Boston resistance group was formed to resist the Stamp Act through direct action and boycotts?",
+          "a": "The Sons of Liberty",
+          "explanation": "Led by Samuel Adams, the Sons of Liberty spearheaded street resistance and intimidation."
+        },
+        {
+          "id": "lesson_4_q7",
+          "question": "Why did British Parliament repeal the Stamp Act in 1766?",
+          "options": [
+            "The collapse in British exports caused by colonial boycotts",
+            "The King ordered its cancellation",
+            "The Supreme Court ruled it illegal",
+            "Colonial governors paid the taxes themselves"
+          ],
+          "answer": "The collapse in British exports caused by colonial boycotts",
+          "q": "Why did British Parliament repeal the Stamp Act in 1766?",
+          "a": "The collapse in British exports caused by colonial boycotts",
+          "explanation": "British merchants pressured Parliament to repeal the tax after colonial boycotts hit trade."
+        },
+        {
+          "id": "lesson_4_q8",
+          "question": "Which Chancellor of the Exchequer imposed new customs duties on glass, lead, paint, paper, and tea in 1767?",
+          "options": [
+            "Charles Townshend",
+            "George Grenville",
+            "Lord North",
+            "Robert Clive"
+          ],
+          "answer": "Charles Townshend",
+          "q": "Which Chancellor of the Exchequer imposed new customs duties on glass, lead, paint, paper, and tea in 1767?",
+          "a": "Charles Townshend",
+          "explanation": "Charles Townshend introduced duties to fund colonial royal salaries."
+        },
+        {
+          "id": "lesson_4_q9",
+          "question": "How many regiments of British redcoats were dispatched to occupy Boston in 1768?",
+          "options": [
+            "Four regiments of redcoats",
+            "Ten divisions",
+            "One battalion",
+            "Twenty regiments"
+          ],
+          "answer": "Four regiments of redcoats",
+          "q": "How many regiments of British redcoats were dispatched to occupy Boston in 1768?",
+          "a": "Four regiments of redcoats",
+          "explanation": "Four British army regiments arrived in Boston to enforce customs collection."
+        },
+        {
+          "id": "lesson_4_q10",
+          "question": "On what date did the Boston Massacre occur outside the Custom House on King Street?",
+          "options": [
+            "5 March 1770",
+            "16 December 1773",
+            "4 July 1776",
+            "19 April 1775"
+          ],
+          "answer": "5 March 1770",
+          "q": "On what date did the Boston Massacre occur outside the Custom House on King Street?",
+          "a": "5 March 1770",
+          "explanation": "British soldiers fired into a crowd of dockworkers on 5 March 1770."
+        },
+        {
+          "id": "lesson_4_q11",
+          "question": "Which sailor of mixed African and Native American descent was among the five civilians killed in the Boston Massacre?",
+          "options": [
+            "Crispus Attucks",
+            "Olaudah Equiano",
+            "Guy Bailey",
+            "Paul Revere"
+          ],
+          "answer": "Crispus Attucks",
+          "q": "Which sailor of mixed African and Native American descent was among the five civilians killed in the Boston Massacre?",
+          "a": "Crispus Attucks",
+          "explanation": "Crispus Attucks is celebrated as the first martyr of the American Revolution."
+        },
+        {
+          "id": "lesson_4_q12",
+          "question": "Which Boston silversmith produced the famous propaganda engraving titled \"The Bloody Massacre\"?",
+          "options": [
+            "Paul Revere",
+            "Samuel Adams",
+            "Thomas Jefferson",
+            "John Adams"
+          ],
+          "answer": "Paul Revere",
+          "q": "Which Boston silversmith produced the famous propaganda engraving titled \"The Bloody Massacre\"?",
+          "a": "Paul Revere",
+          "explanation": "Paul Revere’s engraving inflamed anti-British sentiment throughout the colonies."
+        },
+        {
+          "id": "lesson_4_q13",
+          "question": "Which single tax duty was retained when Parliament repealed the Townshend duties in 1770 to maintain royal authority?",
+          "options": [
+            "A symbolic three-penny duty on tea",
+            "The tax on glass",
+            "The tax on lead",
+            "The stamp tax on newspapers"
+          ],
+          "answer": "A symbolic three-penny duty on tea",
+          "q": "Which single tax duty was retained when Parliament repealed the Townshend duties in 1770 to maintain royal authority?",
+          "a": "A symbolic three-penny duty on tea",
+          "explanation": "Parliament retained the tea duty as a principle asserting its right to tax the colonies."
+        },
+        {
+          "id": "lesson_4_q14",
+          "question": "How many pounds of unsold tea were rotting in East India Company warehouses in London before the Tea Act 1773?",
+          "options": [
+            "18 million pounds of unsold tea",
+            "1 million pounds",
+            "50 million pounds",
+            "500,000 pounds"
+          ],
+          "answer": "18 million pounds of unsold tea",
+          "q": "How many pounds of unsold tea were rotting in East India Company warehouses in London before the Tea Act 1773?",
+          "a": "18 million pounds of unsold tea",
+          "explanation": "Financial distress led Parliament to bail out the company via the Tea Act."
+        },
+        {
+          "id": "lesson_4_q15",
+          "question": "What commercial advantage did the Tea Act 1773 grant the East India Company in the American colonies?",
+          "options": [
+            "A total monopoly to ship tea directly to America without British export tariffs",
+            "The right to seize American shipping",
+            "Direct control over Boston customs",
+            "Exemption from all colonial port fees"
+          ],
+          "answer": "A total monopoly to ship tea directly to America without British export tariffs",
+          "q": "What commercial advantage did the Tea Act 1773 grant the East India Company in the American colonies?",
+          "a": "A total monopoly to ship tea directly to America without British export tariffs",
+          "explanation": "The Act undercut colonial smugglers and granted the EIC a commercial monopoly."
+        },
+        {
+          "id": "lesson_4_q16",
+          "question": "Which three East India Company ships arrived in Boston Harbour carrying 342 chests of tea in autumn 1773?",
+          "options": [
+            "The Dartmouth, the Eleanor, and the Beaver",
+            "The Mayflower, the Brookes, and the Zong",
+            "The Victory, the Sovereign, and the Endeavour",
+            "The Plym, the Windrush, and the Defiance"
+          ],
+          "answer": "The Dartmouth, the Eleanor, and the Beaver",
+          "q": "Which three East India Company ships arrived in Boston Harbour carrying 342 chests of tea in autumn 1773?",
+          "a": "The Dartmouth, the Eleanor, and the Beaver",
+          "explanation": "The three tea ships were moored in Boston Harbour under customs guard."
+        },
+        {
+          "id": "lesson_4_q17",
+          "question": "Which Royal Governor of Massachusetts refused to permit the tea ships to leave without paying the duty?",
+          "options": [
+            "Royal Governor Thomas Hutchinson",
+            "Lord Dunmore",
+            "General Gage",
+            "Governor Trelawny"
+          ],
+          "answer": "Royal Governor Thomas Hutchinson",
+          "q": "Which Royal Governor of Massachusetts refused to permit the tea ships to leave without paying the duty?",
+          "a": "Royal Governor Thomas Hutchinson",
+          "explanation": "Hutchinson insisted on landing the tea, precipitating the showdown."
+        },
+        {
+          "id": "lesson_4_q18",
+          "question": "How did over a hundred Sons of Liberty disguise themselves during the Boston Tea Party on 16 December 1773?",
+          "options": [
+            "Disguised themselves as Mohawk warriors",
+            "Dressed as British redcoats",
+            "Wore black pirate bandanas",
+            "Dressed as French sailors"
+          ],
+          "answer": "Disguised themselves as Mohawk warriors",
+          "q": "How did over a hundred Sons of Liberty disguise themselves during the Boston Tea Party on 16 December 1773?",
+          "a": "Disguised themselves as Mohawk warriors",
+          "explanation": "Disguised as Mohawks, protesters boarded the ships armed with tomahawks."
+        },
+        {
+          "id": "lesson_4_q19",
+          "question": "How much East India Company tea was destroyed during the Boston Tea Party?",
+          "options": [
+            "All 342 wooden chests containing 46 tons of tea (worth over £1.5 million in modern money)",
+            "50 chests of tea",
+            "1,000 chests of tea",
+            "10 tons of tea"
+          ],
+          "answer": "All 342 wooden chests containing 46 tons of tea (worth over £1.5 million in modern money)",
+          "q": "How much East India Company tea was destroyed during the Boston Tea Party?",
+          "a": "All 342 wooden chests containing 46 tons of tea (worth over £1.5 million in modern money)",
+          "explanation": "46 tons of tea were dumped into Boston Harbour in an act of open defiance."
+        },
+        {
+          "id": "lesson_4_q20",
+          "question": "What punitive legislation did Parliament pass in 1774 in retaliation for the Boston Tea Party?",
+          "options": [
+            "The Coercive Acts (closing Boston Harbour and placing Massachusetts under military rule)",
+            "The Stamp Act",
+            "The Navigation Acts",
+            "The Proclamation Line"
+          ],
+          "answer": "The Coercive Acts (closing Boston Harbour and placing Massachusetts under military rule)",
+          "q": "What punitive legislation did Parliament pass in 1774 in retaliation for the Boston Tea Party?",
+          "a": "The Coercive Acts (closing Boston Harbour and placing Massachusetts under military rule)",
+          "explanation": "Termed the \"Intolerable Acts\" in America, the Coercive Acts closed the port and mobilized troops."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "id": "lesson_4_q1",
+          "question": "How much national debt did Great Britain accumulate by winning the Seven Years’ War in 1763?",
+          "options": [
+            "£133 million",
+            "£10 million",
+            "£500 million",
+            "£50 million"
+          ],
+          "answer": "£133 million",
+          "q": "How much national debt did Great Britain accumulate by winning the Seven Years’ War in 1763?",
+          "a": "£133 million",
+          "explanation": "The war doubled Britain’s national debt to a staggering £133 million."
+        },
+        {
+          "id": "lesson_4_q2",
+          "question": "Which British Prime Minister argued that American colonists should pay taxes toward their military defence?",
+          "options": [
+            "Prime Minister George Grenville",
+            "William Pitt",
+            "Lord North",
+            "Charles Townshend"
+          ],
+          "answer": "Prime Minister George Grenville",
+          "q": "Which British Prime Minister argued that American colonists should pay taxes toward their military defence?",
+          "a": "Prime Minister George Grenville",
+          "explanation": "George Grenville sought to balance imperial books by taxing colonial commerce."
+        },
+        {
+          "id": "lesson_4_q3",
+          "question": "What 1763 decree by King George III forbade colonists from settling west of the Appalachian Mountains?",
+          "options": [
+            "The Proclamation Line of 1763",
+            "The Quebec Act",
+            "The Stamp Act",
+            "The Navigation Act"
+          ],
+          "answer": "The Proclamation Line of 1763",
+          "q": "What 1763 decree by King George III forbade colonists from settling west of the Appalachian Mountains?",
+          "a": "The Proclamation Line of 1763",
+          "explanation": "The Proclamation Line aimed to prevent expensive frontier warfare with Native American tribes."
+        },
+        {
+          "id": "lesson_4_q4",
+          "question": "What direct internal tax was imposed on paper, legal contracts, newspapers, and playing cards in March 1765?",
+          "options": [
+            "The Stamp Act",
+            "The Tea Act",
+            "The Sugar Act",
+            "The Townshend Duties"
+          ],
+          "answer": "The Stamp Act",
+          "q": "What direct internal tax was imposed on paper, legal contracts, newspapers, and playing cards in March 1765?",
+          "a": "The Stamp Act",
+          "explanation": "The Stamp Act required official embossed revenue stamps on paper goods."
+        },
+        {
+          "id": "lesson_4_q5",
+          "question": "What famous colonial rallying cry asserted that British subjects could only be taxed by elected representatives?",
+          "options": [
+            "\"No taxation without representation!\"",
+            "\"Deeds, Not Words\"",
+            "\"Liberty to Slaves\"",
+            "\"Give Me Liberty or Give Me Death\""
+          ],
+          "answer": "\"No taxation without representation!\"",
+          "q": "What famous colonial rallying cry asserted that British subjects could only be taxed by elected representatives?",
+          "a": "\"No taxation without representation!\"",
+          "explanation": "Colonists argued that taxation without parliamentary representation violated English constitutional law."
+        },
+        {
+          "id": "lesson_4_q6",
+          "question": "What secretive Boston resistance group was formed to resist the Stamp Act through direct action and boycotts?",
+          "options": [
+            "The Sons of Liberty",
+            "The Continental Army",
+            "The Black Loyalists",
+            "The Regulators"
+          ],
+          "answer": "The Sons of Liberty",
+          "q": "What secretive Boston resistance group was formed to resist the Stamp Act through direct action and boycotts?",
+          "a": "The Sons of Liberty",
+          "explanation": "Led by Samuel Adams, the Sons of Liberty spearheaded street resistance and intimidation."
+        },
+        {
+          "id": "lesson_4_q7",
+          "question": "Why did British Parliament repeal the Stamp Act in 1766?",
+          "options": [
+            "The collapse in British exports caused by colonial boycotts",
+            "The King ordered its cancellation",
+            "The Supreme Court ruled it illegal",
+            "Colonial governors paid the taxes themselves"
+          ],
+          "answer": "The collapse in British exports caused by colonial boycotts",
+          "q": "Why did British Parliament repeal the Stamp Act in 1766?",
+          "a": "The collapse in British exports caused by colonial boycotts",
+          "explanation": "British merchants pressured Parliament to repeal the tax after colonial boycotts hit trade."
+        },
+        {
+          "id": "lesson_4_q8",
+          "question": "Which Chancellor of the Exchequer imposed new customs duties on glass, lead, paint, paper, and tea in 1767?",
+          "options": [
+            "Charles Townshend",
+            "George Grenville",
+            "Lord North",
+            "Robert Clive"
+          ],
+          "answer": "Charles Townshend",
+          "q": "Which Chancellor of the Exchequer imposed new customs duties on glass, lead, paint, paper, and tea in 1767?",
+          "a": "Charles Townshend",
+          "explanation": "Charles Townshend introduced duties to fund colonial royal salaries."
+        },
+        {
+          "id": "lesson_4_q9",
+          "question": "How many regiments of British redcoats were dispatched to occupy Boston in 1768?",
+          "options": [
+            "Four regiments of redcoats",
+            "Ten divisions",
+            "One battalion",
+            "Twenty regiments"
+          ],
+          "answer": "Four regiments of redcoats",
+          "q": "How many regiments of British redcoats were dispatched to occupy Boston in 1768?",
+          "a": "Four regiments of redcoats",
+          "explanation": "Four British army regiments arrived in Boston to enforce customs collection."
+        },
+        {
+          "id": "lesson_4_q10",
+          "question": "On what date did the Boston Massacre occur outside the Custom House on King Street?",
+          "options": [
+            "5 March 1770",
+            "16 December 1773",
+            "4 July 1776",
+            "19 April 1775"
+          ],
+          "answer": "5 March 1770",
+          "q": "On what date did the Boston Massacre occur outside the Custom House on King Street?",
+          "a": "5 March 1770",
+          "explanation": "British soldiers fired into a crowd of dockworkers on 5 March 1770."
+        },
+        {
+          "id": "lesson_4_q11",
+          "question": "Which sailor of mixed African and Native American descent was among the five civilians killed in the Boston Massacre?",
+          "options": [
+            "Crispus Attucks",
+            "Olaudah Equiano",
+            "Guy Bailey",
+            "Paul Revere"
+          ],
+          "answer": "Crispus Attucks",
+          "q": "Which sailor of mixed African and Native American descent was among the five civilians killed in the Boston Massacre?",
+          "a": "Crispus Attucks",
+          "explanation": "Crispus Attucks is celebrated as the first martyr of the American Revolution."
+        },
+        {
+          "id": "lesson_4_q12",
+          "question": "Which Boston silversmith produced the famous propaganda engraving titled \"The Bloody Massacre\"?",
+          "options": [
+            "Paul Revere",
+            "Samuel Adams",
+            "Thomas Jefferson",
+            "John Adams"
+          ],
+          "answer": "Paul Revere",
+          "q": "Which Boston silversmith produced the famous propaganda engraving titled \"The Bloody Massacre\"?",
+          "a": "Paul Revere",
+          "explanation": "Paul Revere’s engraving inflamed anti-British sentiment throughout the colonies."
+        },
+        {
+          "id": "lesson_4_q13",
+          "question": "Which single tax duty was retained when Parliament repealed the Townshend duties in 1770 to maintain royal authority?",
+          "options": [
+            "A symbolic three-penny duty on tea",
+            "The tax on glass",
+            "The tax on lead",
+            "The stamp tax on newspapers"
+          ],
+          "answer": "A symbolic three-penny duty on tea",
+          "q": "Which single tax duty was retained when Parliament repealed the Townshend duties in 1770 to maintain royal authority?",
+          "a": "A symbolic three-penny duty on tea",
+          "explanation": "Parliament retained the tea duty as a principle asserting its right to tax the colonies."
+        },
+        {
+          "id": "lesson_4_q14",
+          "question": "How many pounds of unsold tea were rotting in East India Company warehouses in London before the Tea Act 1773?",
+          "options": [
+            "18 million pounds of unsold tea",
+            "1 million pounds",
+            "50 million pounds",
+            "500,000 pounds"
+          ],
+          "answer": "18 million pounds of unsold tea",
+          "q": "How many pounds of unsold tea were rotting in East India Company warehouses in London before the Tea Act 1773?",
+          "a": "18 million pounds of unsold tea",
+          "explanation": "Financial distress led Parliament to bail out the company via the Tea Act."
+        },
+        {
+          "id": "lesson_4_q15",
+          "question": "What commercial advantage did the Tea Act 1773 grant the East India Company in the American colonies?",
+          "options": [
+            "A total monopoly to ship tea directly to America without British export tariffs",
+            "The right to seize American shipping",
+            "Direct control over Boston customs",
+            "Exemption from all colonial port fees"
+          ],
+          "answer": "A total monopoly to ship tea directly to America without British export tariffs",
+          "q": "What commercial advantage did the Tea Act 1773 grant the East India Company in the American colonies?",
+          "a": "A total monopoly to ship tea directly to America without British export tariffs",
+          "explanation": "The Act undercut colonial smugglers and granted the EIC a commercial monopoly."
+        },
+        {
+          "id": "lesson_4_q16",
+          "question": "Which three East India Company ships arrived in Boston Harbour carrying 342 chests of tea in autumn 1773?",
+          "options": [
+            "The Dartmouth, the Eleanor, and the Beaver",
+            "The Mayflower, the Brookes, and the Zong",
+            "The Victory, the Sovereign, and the Endeavour",
+            "The Plym, the Windrush, and the Defiance"
+          ],
+          "answer": "The Dartmouth, the Eleanor, and the Beaver",
+          "q": "Which three East India Company ships arrived in Boston Harbour carrying 342 chests of tea in autumn 1773?",
+          "a": "The Dartmouth, the Eleanor, and the Beaver",
+          "explanation": "The three tea ships were moored in Boston Harbour under customs guard."
+        },
+        {
+          "id": "lesson_4_q17",
+          "question": "Which Royal Governor of Massachusetts refused to permit the tea ships to leave without paying the duty?",
+          "options": [
+            "Royal Governor Thomas Hutchinson",
+            "Lord Dunmore",
+            "General Gage",
+            "Governor Trelawny"
+          ],
+          "answer": "Royal Governor Thomas Hutchinson",
+          "q": "Which Royal Governor of Massachusetts refused to permit the tea ships to leave without paying the duty?",
+          "a": "Royal Governor Thomas Hutchinson",
+          "explanation": "Hutchinson insisted on landing the tea, precipitating the showdown."
+        },
+        {
+          "id": "lesson_4_q18",
+          "question": "How did over a hundred Sons of Liberty disguise themselves during the Boston Tea Party on 16 December 1773?",
+          "options": [
+            "Disguised themselves as Mohawk warriors",
+            "Dressed as British redcoats",
+            "Wore black pirate bandanas",
+            "Dressed as French sailors"
+          ],
+          "answer": "Disguised themselves as Mohawk warriors",
+          "q": "How did over a hundred Sons of Liberty disguise themselves during the Boston Tea Party on 16 December 1773?",
+          "a": "Disguised themselves as Mohawk warriors",
+          "explanation": "Disguised as Mohawks, protesters boarded the ships armed with tomahawks."
+        },
+        {
+          "id": "lesson_4_q19",
+          "question": "How much East India Company tea was destroyed during the Boston Tea Party?",
+          "options": [
+            "All 342 wooden chests containing 46 tons of tea (worth over £1.5 million in modern money)",
+            "50 chests of tea",
+            "1,000 chests of tea",
+            "10 tons of tea"
+          ],
+          "answer": "All 342 wooden chests containing 46 tons of tea (worth over £1.5 million in modern money)",
+          "q": "How much East India Company tea was destroyed during the Boston Tea Party?",
+          "a": "All 342 wooden chests containing 46 tons of tea (worth over £1.5 million in modern money)",
+          "explanation": "46 tons of tea were dumped into Boston Harbour in an act of open defiance."
+        },
+        {
+          "id": "lesson_4_q20",
+          "question": "What punitive legislation did Parliament pass in 1774 in retaliation for the Boston Tea Party?",
+          "options": [
+            "The Coercive Acts (closing Boston Harbour and placing Massachusetts under military rule)",
+            "The Stamp Act",
+            "The Navigation Acts",
+            "The Proclamation Line"
+          ],
+          "answer": "The Coercive Acts (closing Boston Harbour and placing Massachusetts under military rule)",
+          "q": "What punitive legislation did Parliament pass in 1774 in retaliation for the Boston Tea Party?",
+          "a": "The Coercive Acts (closing Boston Harbour and placing Massachusetts under military rule)",
+          "explanation": "Termed the \"Intolerable Acts\" in America, the Coercive Acts closed the port and mobilized troops."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "paraRef": "[4.1]",
+          "date": "1763",
+          "questionHeading": "Why did British victory in the Seven Years’ War create imperial conflict?",
+          "bullets": [
+            "£133m Imperial War Debt",
+            "Proclamation Line of 1763",
+            "Standing Army Quartering"
+          ],
+          "focusClue": "Why did banning westward settlement across the Appalachians outrage colonial frontiersmen?"
+        },
+        {
+          "step": 2,
+          "paraRef": "[4.2]",
+          "date": "1765–1766",
+          "questionHeading": "Why did the Stamp Act provoke the cry \"No taxation without representation\"?",
+          "bullets": [
+            "Taxing Legal Documents",
+            "Attacking Stamp Collectors",
+            "Colonial Import Boycotts"
+          ],
+          "focusClue": "How did colonists invoke the 1689 Bill of Rights to argue that Parliament had exceeded its authority?"
+        },
+        {
+          "step": 3,
+          "paraRef": "[4.3]",
+          "date": "March 1770",
+          "questionHeading": "How was the Boston Massacre transformed into revolutionary propaganda?",
+          "bullets": [
+            "Snowballs, Ice & Oysters",
+            "Five Dead Colonists",
+            "Paul Revere’s Engraving"
+          ],
+          "focusClue": "How did Paul Revere’s engraving turn a chaotic, violent mob brawl into an orderly execution?"
+        },
+        {
+          "step": 4,
+          "paraRef": "[4.4]",
+          "date": "May 1773",
+          "questionHeading": "Why did the 1773 Tea Act provoke outrage even though it lowered tea prices?",
+          "bullets": [
+            "18m Pounds Surplus Tea",
+            "East India Company Monopoly",
+            "Bypassing Local Merchants"
+          ],
+          "focusClue": "Why did colonial merchants fear that a monopoly on tea would lead to monopolies on all trade?"
+        },
+        {
+          "step": 5,
+          "paraRef": "[4.5]",
+          "date": "Dec 1773",
+          "questionHeading": "How did the Boston Tea Party shatter relations between Britain and America?",
+          "bullets": [
+            "Sons of Liberty Mohawks",
+            "342 Chests Smashed Open",
+            "Punitive Coercive Acts"
+          ],
+          "focusClue": "Why did King George III declare that \"the die is cast\" and the colonies must submit or face war?"
+        }
       ]
     },
     {
@@ -4710,7 +7222,7 @@ export default {
           }
         ]
       },
-      "vocabulary": [
+      "vocab": [
         {
           "term": "Declaration",
           "definition": "A formal, binding public announcement declaring a fundamental political decision or the birth of a nation.",
@@ -4786,7 +7298,7 @@ export default {
         {
           "act": 1,
           "title": "The Shot Heard ’Round the World (April–November 1775)",
-          "text": "<span class=\"para-ref\">[5.1]</span> In April 1775, British troops marched toward Concord, Massachusetts, to seize colonial weapons caches. At Lexington Green, an unknown gun fired \"the shot heard ’round the world,\" triggering open warfare. The Continental Congress named George Washington commander-in-chief of the newly formed Continental Army. In November 1775, desperate to suppress the rebellion in Virginia, Royal Governor Lord Dunmore issued a revolutionary proclamation: he offered immediate emancipation to any enslaved African owned by rebel masters who fled and enlisted in the King’s army. Dunmore formed the \"Ethiopian Regiment,\" where former slaves wore uniforms stitched with the motto <em>\"Liberty to Slaves.\"</em>",
+          "text": "<span class=\"para-ref\">[5.1]</span> In April 1775, following the Paul Revere midnight alarm, British troops marched toward Concord to seize colonial weapons caches. At Lexington Green, an unknown gun fired \"the shot heard round the world,\" triggering open war. The Continental Congress named George Washington commander-in-chief. In November 1775, Royal Governor Lord Dunmore announced Dunmore’s freedom offer in Virginia, granting immediate emancipation to any enslaved African owned by rebel masters who fled and enlisted in the King’s army, forming the \"Ethiopian Regiment\" with uniforms reading <em>\"Liberty to Slaves.\"</em>",
           "image": "/images/battle_of_lexington_1775.jpg",
           "image_alt": "Contemporary copper engraving of the Battle of Lexington (19 April 1775) by Amos Doolittle",
           "caption": "The Battle of Lexington (19 April 1775), contemporary copperplate engraving by Amos Doolittle depicting the opening military clash between British regular infantry and colonial Minutemen (New York Public Library / Concord Museum).",
@@ -4892,7 +7404,7 @@ export default {
         {
           "act": 2,
           "title": "The 1776 Declaration & The Paradox of Liberty (July 1776)",
-          "text": "<span class=\"para-ref\">[5.2]</span> On 4 July 1776 in Philadelphia, the Continental Congress ratified the <strong>Declaration</strong> of Independence. Authored by 33-year-old Virginian lawyer Thomas Jefferson, the document declared that \"all men are created equal\" with inalienable rights to \"Life, Liberty and the pursuit of Happiness.\" Yet this ringing Enlightenment rhetoric exposed profound imperial <strong>hypocrisy</strong>: Jefferson personally owned over 170 enslaved human beings, and 41 of the 56 signatories were slaveholders. In London, the famous writer Dr Samuel Johnson sarcastically asked: <em>\"How is it that we hear the loudest yelps for liberty among the drivers of negroes?\"</em>",
+          "text": "<span class=\"para-ref\">[5.2]</span> On 4 July 1776 in Philadelphia, the Continental Congress ratified the Declaration of Independence. Penned with Jefferson’s eagle quill, the document declared that all men created equal with inalienable rights to life, liberty, and the pursuit of happiness. Yet this Enlightenment rhetoric masked deep imperial hypocrisy: 41 of the 56 delegates were slaveholder signatories, and Jefferson personally owned over 170 enslaved human beings while writing that all men were created free.",
           "source": {
             "id": "fbe_l5_src_b",
             "letter": "B",
@@ -4995,7 +7507,7 @@ export default {
         {
           "act": 3,
           "title": "Global Conflict & The French Alliance (1777–1780)",
-          "text": "<span class=\"para-ref\">[5.3]</span> The British Army was professional, well-drilled, and backed by the Royal Navy, repeatedly driving Washington’s inexperienced forces across New York and New Jersey. However, in October 1777, British General John Burgoyne was surrounded and forced to surrender his entire 6,000-man army in the forests of Saratoga, New York. Sensing British weakness, King Louis XVI of France formed a military alliance with the American rebels, followed by Spain and the Dutch Republic. What had begun as a localized colonial rebellion expanded into a global naval war, forcing Britain to divert ships and troops to defend its wealthy sugar islands in the Caribbean and factories in India.",
+          "text": "<span class=\"para-ref\">[5.3]</span> The British Army repeatedly drove Washington’s forces across New York, but in October 1777, American forces achieved a stunning breakthrough by defeating General Burgoyne and forcing 6,000 soldiers to surrender at Saratoga. Sensing British vulnerability, King Louis XVI warships and regiments entered the war in a formal Franco-American alliance, soon joined by Spain. This triggered a sugar island divergence, forcing Britain to divert its naval fleets away from North America to protect its wealthy Caribbean sugar colonies.",
           "source": {
             "id": "fbe_l5_src_c",
             "letter": "C",
@@ -5098,7 +7610,7 @@ export default {
         {
           "act": 4,
           "title": "Siege of Yorktown & British Surrender (October 1781)",
-          "text": "<span class=\"para-ref\">[5.4]</span> Britain pivoted its military strategy to the American South, hoping loyalist sentiment among southern planters would restore royal authority. But British General Charles Cornwallis found himself harassed by colonial guerrilla fighters and overextended. In September 1781, Cornwallis marched his 8,000 troops onto the Yorktown peninsula in Virginia, expecting Royal Navy resupply. Instead, a French fleet under Admiral de Grasse blockaded Chesapeake Bay, while combined American and French armies under Washington besieged Yorktown by land. Cut off from food and ammunition, Cornwallis surrendered on 19 October 1781. As the British troops marched out to lay down their muskets, British military bands bitterly played the tune <em>The World Turned Upside Down</em>.",
+          "text": "<span class=\"para-ref\">[5.4]</span> British forces pivoted south, but General Charles Cornwallis walked into a Cornwallis peninsula trap at Yorktown, Virginia. In September 1781, the de Grasse Chesapeake blockade sealed off naval escape and resupply, while combined American and French armies besieged Yorktown by land. Cut off from food and ammunition, Cornwallis surrendered on 19 October 1781. As British troops marched out to lay down their arms, military bands bitterly played the tune <em>The World Turned Upside Down</em>.",
           "image": "/images/surrender_of_cornwallis_1781.jpg",
           "image_alt": "Painting of the Surrender of Lord Cornwallis at Yorktown by John Trumbull",
           "caption": "Surrender of Lord Cornwallis at Yorktown (John Trumbull, 1820), depicting the capitulation of General Charles O'Hara and the British army to combined American and French forces on 19 October 1781 (United States Capitol Rotunda, Washington D.C.).",
@@ -5204,7 +7716,7 @@ export default {
         {
           "act": 5,
           "title": "The Treaty of Paris & The Black Loyalists (1783)",
-          "text": "<span class=\"para-ref\">[5.5]</span> In the 1783 <strong>Treaty of Paris</strong>, Great Britain formally recognised the independence of the United States of America, ceding all imperial territory between the Atlantic Ocean and the Mississippi River. The First British Empire had suffered catastrophic fracture. Despite furious demands from American slaveholders (including George Washington) that escaped slaves be returned, British commanders honourably kept their pledge to the <strong>Black Loyalists</strong>. In the spring of 1783, British ships evacuated over 3,000 formerly enslaved men, women, and children from New York to Nova Scotia, recording their names in the historic <em>Book of Negroes</em>, while thousands more resettled in London and Sierra Leone.",
+          "text": "<span class=\"para-ref\">[5.5]</span> In the 1783 Treaty of Paris, the definitive American independence treaty, Great Britain recognised the sovereignty of the United States of America. The First British Empire was shattered. Despite angry demands from American slaveholders that escaped slaves be returned, British commanders honourably boarded Nova Scotia evacuation ships with over 3,000 freed Black Loyalists, carefully recording their names and certificates of freedom in the historic Book of Negroes ledgers.",
           "source": {
             "id": "fbe_l5_src_e",
             "letter": "E",
@@ -5667,6 +8179,632 @@ export default {
           },
           "model_answer": "A primary reason Britain lost the American War of Independence was the immense logistical challenge of fighting a war across 3,000 miles of the Atlantic Ocean. Supplying food, weapons, and troop reinforcements took months by sailing ship, leaving British generals isolated in a vast, hostile country with no single capital to capture.<br><br>Furthermore, foreign military intervention by France and Spain was decisive. Following the American victory at Saratoga (1777), France joined the war, providing the naval fleet that trapped Lord Cornwallis’s army at Yorktown in 1781, forcing Britain to accept American independence.",
           "topic": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "lesson_5_q1",
+          "question": "Where was \"the shot heard ’round the world\" fired in April 1775, triggering the Revolutionary War?",
+          "options": [
+            "At Lexington Green",
+            "At Bunker Hill",
+            "At Saratoga",
+            "At Yorktown"
+          ],
+          "answer": "At Lexington Green",
+          "q": "Where was \"the shot heard ’round the world\" fired in April 1775, triggering the Revolutionary War?",
+          "a": "At Lexington Green",
+          "explanation": "Fighting broke out between redcoats and colonial minutemen at Lexington Green."
+        },
+        {
+          "id": "lesson_5_q2",
+          "question": "Who was appointed commander-in-chief of the newly formed Continental Army by Congress in 1775?",
+          "options": [
+            "George Washington",
+            "Thomas Jefferson",
+            "Alexander Hamilton",
+            "Benjamin Franklin"
+          ],
+          "answer": "George Washington",
+          "q": "Who was appointed commander-in-chief of the newly formed Continental Army by Congress in 1775?",
+          "a": "George Washington",
+          "explanation": "Virginian planter George Washington was chosen to lead American military forces."
+        },
+        {
+          "id": "lesson_5_q3",
+          "question": "What historic proclamation was issued by Virginia Royal Governor Lord Dunmore in November 1775?",
+          "options": [
+            "Offered immediate emancipation to any enslaved African owned by rebel masters who joined the King’s army",
+            "Offered free land in Canada to all rebels",
+            "Ordered the hanging of all colonial leaders",
+            "Announced a complete naval blockade"
+          ],
+          "answer": "Offered immediate emancipation to any enslaved African owned by rebel masters who joined the King’s army",
+          "q": "What historic proclamation was issued by Virginia Royal Governor Lord Dunmore in November 1775?",
+          "a": "Offered immediate emancipation to any enslaved African owned by rebel masters who joined the King’s army",
+          "explanation": "Dunmore’s Proclamation promised freedom to slaves who fought for the British Crown."
+        },
+        {
+          "id": "lesson_5_q4",
+          "question": "What was the name of the British military unit formed by Lord Dunmore comprised of emancipated slaves?",
+          "options": [
+            "The \"Ethiopian Regiment\"",
+            "The Black Watch",
+            "The Royal African Legion",
+            "The King’s Rangers"
+          ],
+          "answer": "The \"Ethiopian Regiment\"",
+          "q": "What was the name of the British military unit formed by Lord Dunmore comprised of emancipated slaves?",
+          "a": "The \"Ethiopian Regiment\"",
+          "explanation": "Former slaves served in the Ethiopian Regiment, fighting against rebel masters."
+        },
+        {
+          "id": "lesson_5_q5",
+          "question": "What motto was stitched across the uniforms of the former enslaved men in the Ethiopian Regiment?",
+          "options": [
+            "\"Liberty to Slaves\"",
+            "\"God Save the King\"",
+            "\"Deeds, Not Words\"",
+            "\"Am I Not a Brother?\""
+          ],
+          "answer": "\"Liberty to Slaves\"",
+          "q": "What motto was stitched across the uniforms of the former enslaved men in the Ethiopian Regiment?",
+          "a": "\"Liberty to Slaves\"",
+          "explanation": "The uniform motto directly challenged American claims of fighting for liberty."
+        },
+        {
+          "id": "lesson_5_q6",
+          "question": "On what historic date was the Declaration of Independence ratified in Philadelphia?",
+          "options": [
+            "4 July 1776",
+            "19 October 1781",
+            "23 June 1757",
+            "16 December 1773"
+          ],
+          "answer": "4 July 1776",
+          "q": "On what historic date was the Declaration of Independence ratified in Philadelphia?",
+          "a": "4 July 1776",
+          "explanation": "The Continental Congress formally approved the Declaration on 4 July 1776."
+        },
+        {
+          "id": "lesson_5_q7",
+          "question": "Who was the 33-year-old Virginian lawyer who authored the Declaration of Independence?",
+          "options": [
+            "Thomas Jefferson",
+            "George Washington",
+            "John Adams",
+            "Alexander Hamilton"
+          ],
+          "answer": "Thomas Jefferson",
+          "q": "Who was the 33-year-old Virginian lawyer who authored the Declaration of Independence?",
+          "a": "Thomas Jefferson",
+          "explanation": "Thomas Jefferson drafted the Declaration in Philadelphia."
+        },
+        {
+          "id": "lesson_5_q8",
+          "question": "What famous Enlightenment statement did Thomas Jefferson write regarding human equality in the Declaration?",
+          "options": [
+            "\"All men are created equal\" with rights to \"Life, Liberty and the pursuit of Happiness\"",
+            "\"Workers of the world unite\"",
+            "\"Property is the foundation of freedom\"",
+            "\"Order, hierarchy and obedience\""
+          ],
+          "answer": "\"All men are created equal\" with rights to \"Life, Liberty and the pursuit of Happiness\"",
+          "q": "What famous Enlightenment statement did Thomas Jefferson write regarding human equality in the Declaration?",
+          "a": "\"All men are created equal\" with rights to \"Life, Liberty and the pursuit of Happiness\"",
+          "explanation": "The Declaration enshrined universal equality while coexisting with slavery."
+        },
+        {
+          "id": "lesson_5_q9",
+          "question": "What glaring hypocrisy existed regarding Thomas Jefferson and the signatories of the Declaration of Independence?",
+          "options": [
+            "Jefferson personally owned over 170 enslaved human beings, and 41 of the 56 signatories were slaveholders",
+            "None of the signatories were born in America",
+            "They were all British army officers",
+            "They had signed loyalty oaths to France"
+          ],
+          "answer": "Jefferson personally owned over 170 enslaved human beings, and 41 of the 56 signatories were slaveholders",
+          "q": "What glaring hypocrisy existed regarding Thomas Jefferson and the signatories of the Declaration of Independence?",
+          "a": "Jefferson personally owned over 170 enslaved human beings, and 41 of the 56 signatories were slaveholders",
+          "explanation": "Signatories proclaimed universal liberty while enslaving hundreds of human beings."
+        },
+        {
+          "id": "lesson_5_q10",
+          "question": "What sarcastic question did London writer Dr Samuel Johnson ask regarding American claims of liberty?",
+          "options": [
+            "\"How is it that we hear the loudest yelps for liberty among the drivers of negroes?\"",
+            "\"Why do colonists refuse to pay for their defence?\"",
+            "\"Can rebellion ever be justified by law?\"",
+            "\"Where is the honour of the American planter?\""
+          ],
+          "answer": "\"How is it that we hear the loudest yelps for liberty among the drivers of negroes?\"",
+          "q": "What sarcastic question did London writer Dr Samuel Johnson ask regarding American claims of liberty?",
+          "a": "\"How is it that we hear the loudest yelps for liberty among the drivers of negroes?\"",
+          "explanation": "Samuel Johnson highlighted the grotesque moral contradiction of slaveholders demanding liberty."
+        },
+        {
+          "id": "lesson_5_q11",
+          "question": "At which October 1777 battle in New York was British General John Burgoyne forced to surrender his 6,000-man army?",
+          "options": [
+            "The Battle of Saratoga",
+            "The Battle of Bunker Hill",
+            "The Battle of Yorktown",
+            "The Battle of Lexington"
+          ],
+          "answer": "The Battle of Saratoga",
+          "q": "At which October 1777 battle in New York was British General John Burgoyne forced to surrender his 6,000-man army?",
+          "a": "The Battle of Saratoga",
+          "explanation": "Saratoga was the decisive turning point of the Revolutionary War."
+        },
+        {
+          "id": "lesson_5_q12",
+          "question": "Which European monarch signed a military alliance with the American rebels following the victory at Saratoga?",
+          "options": [
+            "King Louis XVI of France",
+            "King Charles III of Spain",
+            "The King of Prussia",
+            "The Tsar of Russia"
+          ],
+          "answer": "King Louis XVI of France",
+          "q": "Which European monarch signed a military alliance with the American rebels following the victory at Saratoga?",
+          "a": "King Louis XVI of France",
+          "explanation": "France entered the war in 1778, providing vital naval and military support."
+        },
+        {
+          "id": "lesson_5_q13",
+          "question": "Which other European powers joined France in declaring war against Great Britain during the American Revolution?",
+          "options": [
+            "Spain and the Dutch Republic",
+            "Russia and Austria",
+            "Sweden and Denmark",
+            "Portugal and Italy"
+          ],
+          "answer": "Spain and the Dutch Republic",
+          "q": "Which other European powers joined France in declaring war against Great Britain during the American Revolution?",
+          "a": "Spain and the Dutch Republic",
+          "explanation": "Spain and the Netherlands joined the war, transforming it into a global naval conflict."
+        },
+        {
+          "id": "lesson_5_q14",
+          "question": "Which British General marched his 8,000 troops onto the Yorktown peninsula in Virginia in September 1781?",
+          "options": [
+            "General Charles Cornwallis",
+            "General John Burgoyne",
+            "General William Howe",
+            "General Thomas Gage"
+          ],
+          "answer": "General Charles Cornwallis",
+          "q": "Which British General marched his 8,000 troops onto the Yorktown peninsula in Virginia in September 1781?",
+          "a": "General Charles Cornwallis",
+          "explanation": "Cornwallis fortified Yorktown expecting resupply from the Royal Navy."
+        },
+        {
+          "id": "lesson_5_q15",
+          "question": "Which French admiral blockaded Chesapeake Bay, trapping Cornwallis’s army at Yorktown?",
+          "options": [
+            "Admiral de Grasse",
+            "Admiral Nelson",
+            "Admiral Rodney",
+            "Admiral Lafayette"
+          ],
+          "answer": "Admiral de Grasse",
+          "q": "Which French admiral blockaded Chesapeake Bay, trapping Cornwallis’s army at Yorktown?",
+          "a": "Admiral de Grasse",
+          "explanation": "Admiral de Grasse’s fleet repelled the British relief fleet at the Battle of the Capes."
+        },
+        {
+          "id": "lesson_5_q16",
+          "question": "On what date did General Cornwallis formally surrender his army at Yorktown, ending major combat?",
+          "options": [
+            "19 October 1781",
+            "4 July 1776",
+            "3 September 1783",
+            "16 December 1773"
+          ],
+          "answer": "19 October 1781",
+          "q": "On what date did General Cornwallis formally surrender his army at Yorktown, ending major combat?",
+          "a": "19 October 1781",
+          "explanation": "Cornwallis surrendered to combined American and French forces on 19 October 1781."
+        },
+        {
+          "id": "lesson_5_q17",
+          "question": "What tune did British military bands bitterly play as redcoats marched out to surrender their muskets at Yorktown?",
+          "options": [
+            "\"The World Turned Upside Down\"",
+            "\"Rule Britannia\"",
+            "\"God Save the King\"",
+            "\"Yankee Doodle\""
+          ],
+          "answer": "\"The World Turned Upside Down\"",
+          "q": "What tune did British military bands bitterly play as redcoats marched out to surrender their muskets at Yorktown?",
+          "a": "\"The World Turned Upside Down\"",
+          "explanation": "British musicians played the ballad reflecting the shocking loss of their American empire."
+        },
+        {
+          "id": "lesson_5_q18",
+          "question": "What treaty formally recognized the independence of the United States of America in 1783?",
+          "options": [
+            "The Treaty of Paris 1783",
+            "The Treaty of Versailles",
+            "The Treaty of Allahabad",
+            "The Treaty of Ghent"
+          ],
+          "answer": "The Treaty of Paris 1783",
+          "q": "What treaty formally recognized the independence of the United States of America in 1783?",
+          "a": "The Treaty of Paris 1783",
+          "explanation": "The 1783 Treaty of Paris ceded all British territory from the Atlantic to the Mississippi."
+        },
+        {
+          "id": "lesson_5_q19",
+          "question": "What were the formerly enslaved Africans who fought for the British Crown in exchange for freedom called?",
+          "options": [
+            "The Black Loyalists",
+            "The Patriots",
+            "The Maroons",
+            "The Sons of Liberty"
+          ],
+          "answer": "The Black Loyalists",
+          "q": "What were the formerly enslaved Africans who fought for the British Crown in exchange for freedom called?",
+          "a": "The Black Loyalists",
+          "explanation": "Thousands of escaped slaves fought for Britain under promise of emancipation."
+        },
+        {
+          "id": "lesson_5_q20",
+          "question": "What historic document recorded the names of over 3,000 formerly enslaved people evacuated by British ships from New York to Nova Scotia?",
+          "options": [
+            "The Book of Negroes",
+            "The Dunmore Ledger",
+            "The Brookes Manifest",
+            "The Freedom Register"
+          ],
+          "answer": "The Book of Negroes",
+          "q": "What historic document recorded the names of over 3,000 formerly enslaved people evacuated by British ships from New York to Nova Scotia?",
+          "a": "The Book of Negroes",
+          "explanation": "British authorities recorded 3,000 Black Loyalists in the Book of Negroes, granting them freedom in Nova Scotia."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "id": "lesson_5_q1",
+          "question": "Where was \"the shot heard ’round the world\" fired in April 1775, triggering the Revolutionary War?",
+          "options": [
+            "At Lexington Green",
+            "At Bunker Hill",
+            "At Saratoga",
+            "At Yorktown"
+          ],
+          "answer": "At Lexington Green",
+          "q": "Where was \"the shot heard ’round the world\" fired in April 1775, triggering the Revolutionary War?",
+          "a": "At Lexington Green",
+          "explanation": "Fighting broke out between redcoats and colonial minutemen at Lexington Green."
+        },
+        {
+          "id": "lesson_5_q2",
+          "question": "Who was appointed commander-in-chief of the newly formed Continental Army by Congress in 1775?",
+          "options": [
+            "George Washington",
+            "Thomas Jefferson",
+            "Alexander Hamilton",
+            "Benjamin Franklin"
+          ],
+          "answer": "George Washington",
+          "q": "Who was appointed commander-in-chief of the newly formed Continental Army by Congress in 1775?",
+          "a": "George Washington",
+          "explanation": "Virginian planter George Washington was chosen to lead American military forces."
+        },
+        {
+          "id": "lesson_5_q3",
+          "question": "What historic proclamation was issued by Virginia Royal Governor Lord Dunmore in November 1775?",
+          "options": [
+            "Offered immediate emancipation to any enslaved African owned by rebel masters who joined the King’s army",
+            "Offered free land in Canada to all rebels",
+            "Ordered the hanging of all colonial leaders",
+            "Announced a complete naval blockade"
+          ],
+          "answer": "Offered immediate emancipation to any enslaved African owned by rebel masters who joined the King’s army",
+          "q": "What historic proclamation was issued by Virginia Royal Governor Lord Dunmore in November 1775?",
+          "a": "Offered immediate emancipation to any enslaved African owned by rebel masters who joined the King’s army",
+          "explanation": "Dunmore’s Proclamation promised freedom to slaves who fought for the British Crown."
+        },
+        {
+          "id": "lesson_5_q4",
+          "question": "What was the name of the British military unit formed by Lord Dunmore comprised of emancipated slaves?",
+          "options": [
+            "The \"Ethiopian Regiment\"",
+            "The Black Watch",
+            "The Royal African Legion",
+            "The King’s Rangers"
+          ],
+          "answer": "The \"Ethiopian Regiment\"",
+          "q": "What was the name of the British military unit formed by Lord Dunmore comprised of emancipated slaves?",
+          "a": "The \"Ethiopian Regiment\"",
+          "explanation": "Former slaves served in the Ethiopian Regiment, fighting against rebel masters."
+        },
+        {
+          "id": "lesson_5_q5",
+          "question": "What motto was stitched across the uniforms of the former enslaved men in the Ethiopian Regiment?",
+          "options": [
+            "\"Liberty to Slaves\"",
+            "\"God Save the King\"",
+            "\"Deeds, Not Words\"",
+            "\"Am I Not a Brother?\""
+          ],
+          "answer": "\"Liberty to Slaves\"",
+          "q": "What motto was stitched across the uniforms of the former enslaved men in the Ethiopian Regiment?",
+          "a": "\"Liberty to Slaves\"",
+          "explanation": "The uniform motto directly challenged American claims of fighting for liberty."
+        },
+        {
+          "id": "lesson_5_q6",
+          "question": "On what historic date was the Declaration of Independence ratified in Philadelphia?",
+          "options": [
+            "4 July 1776",
+            "19 October 1781",
+            "23 June 1757",
+            "16 December 1773"
+          ],
+          "answer": "4 July 1776",
+          "q": "On what historic date was the Declaration of Independence ratified in Philadelphia?",
+          "a": "4 July 1776",
+          "explanation": "The Continental Congress formally approved the Declaration on 4 July 1776."
+        },
+        {
+          "id": "lesson_5_q7",
+          "question": "Who was the 33-year-old Virginian lawyer who authored the Declaration of Independence?",
+          "options": [
+            "Thomas Jefferson",
+            "George Washington",
+            "John Adams",
+            "Alexander Hamilton"
+          ],
+          "answer": "Thomas Jefferson",
+          "q": "Who was the 33-year-old Virginian lawyer who authored the Declaration of Independence?",
+          "a": "Thomas Jefferson",
+          "explanation": "Thomas Jefferson drafted the Declaration in Philadelphia."
+        },
+        {
+          "id": "lesson_5_q8",
+          "question": "What famous Enlightenment statement did Thomas Jefferson write regarding human equality in the Declaration?",
+          "options": [
+            "\"All men are created equal\" with rights to \"Life, Liberty and the pursuit of Happiness\"",
+            "\"Workers of the world unite\"",
+            "\"Property is the foundation of freedom\"",
+            "\"Order, hierarchy and obedience\""
+          ],
+          "answer": "\"All men are created equal\" with rights to \"Life, Liberty and the pursuit of Happiness\"",
+          "q": "What famous Enlightenment statement did Thomas Jefferson write regarding human equality in the Declaration?",
+          "a": "\"All men are created equal\" with rights to \"Life, Liberty and the pursuit of Happiness\"",
+          "explanation": "The Declaration enshrined universal equality while coexisting with slavery."
+        },
+        {
+          "id": "lesson_5_q9",
+          "question": "What glaring hypocrisy existed regarding Thomas Jefferson and the signatories of the Declaration of Independence?",
+          "options": [
+            "Jefferson personally owned over 170 enslaved human beings, and 41 of the 56 signatories were slaveholders",
+            "None of the signatories were born in America",
+            "They were all British army officers",
+            "They had signed loyalty oaths to France"
+          ],
+          "answer": "Jefferson personally owned over 170 enslaved human beings, and 41 of the 56 signatories were slaveholders",
+          "q": "What glaring hypocrisy existed regarding Thomas Jefferson and the signatories of the Declaration of Independence?",
+          "a": "Jefferson personally owned over 170 enslaved human beings, and 41 of the 56 signatories were slaveholders",
+          "explanation": "Signatories proclaimed universal liberty while enslaving hundreds of human beings."
+        },
+        {
+          "id": "lesson_5_q10",
+          "question": "What sarcastic question did London writer Dr Samuel Johnson ask regarding American claims of liberty?",
+          "options": [
+            "\"How is it that we hear the loudest yelps for liberty among the drivers of negroes?\"",
+            "\"Why do colonists refuse to pay for their defence?\"",
+            "\"Can rebellion ever be justified by law?\"",
+            "\"Where is the honour of the American planter?\""
+          ],
+          "answer": "\"How is it that we hear the loudest yelps for liberty among the drivers of negroes?\"",
+          "q": "What sarcastic question did London writer Dr Samuel Johnson ask regarding American claims of liberty?",
+          "a": "\"How is it that we hear the loudest yelps for liberty among the drivers of negroes?\"",
+          "explanation": "Samuel Johnson highlighted the grotesque moral contradiction of slaveholders demanding liberty."
+        },
+        {
+          "id": "lesson_5_q11",
+          "question": "At which October 1777 battle in New York was British General John Burgoyne forced to surrender his 6,000-man army?",
+          "options": [
+            "The Battle of Saratoga",
+            "The Battle of Bunker Hill",
+            "The Battle of Yorktown",
+            "The Battle of Lexington"
+          ],
+          "answer": "The Battle of Saratoga",
+          "q": "At which October 1777 battle in New York was British General John Burgoyne forced to surrender his 6,000-man army?",
+          "a": "The Battle of Saratoga",
+          "explanation": "Saratoga was the decisive turning point of the Revolutionary War."
+        },
+        {
+          "id": "lesson_5_q12",
+          "question": "Which European monarch signed a military alliance with the American rebels following the victory at Saratoga?",
+          "options": [
+            "King Louis XVI of France",
+            "King Charles III of Spain",
+            "The King of Prussia",
+            "The Tsar of Russia"
+          ],
+          "answer": "King Louis XVI of France",
+          "q": "Which European monarch signed a military alliance with the American rebels following the victory at Saratoga?",
+          "a": "King Louis XVI of France",
+          "explanation": "France entered the war in 1778, providing vital naval and military support."
+        },
+        {
+          "id": "lesson_5_q13",
+          "question": "Which other European powers joined France in declaring war against Great Britain during the American Revolution?",
+          "options": [
+            "Spain and the Dutch Republic",
+            "Russia and Austria",
+            "Sweden and Denmark",
+            "Portugal and Italy"
+          ],
+          "answer": "Spain and the Dutch Republic",
+          "q": "Which other European powers joined France in declaring war against Great Britain during the American Revolution?",
+          "a": "Spain and the Dutch Republic",
+          "explanation": "Spain and the Netherlands joined the war, transforming it into a global naval conflict."
+        },
+        {
+          "id": "lesson_5_q14",
+          "question": "Which British General marched his 8,000 troops onto the Yorktown peninsula in Virginia in September 1781?",
+          "options": [
+            "General Charles Cornwallis",
+            "General John Burgoyne",
+            "General William Howe",
+            "General Thomas Gage"
+          ],
+          "answer": "General Charles Cornwallis",
+          "q": "Which British General marched his 8,000 troops onto the Yorktown peninsula in Virginia in September 1781?",
+          "a": "General Charles Cornwallis",
+          "explanation": "Cornwallis fortified Yorktown expecting resupply from the Royal Navy."
+        },
+        {
+          "id": "lesson_5_q15",
+          "question": "Which French admiral blockaded Chesapeake Bay, trapping Cornwallis’s army at Yorktown?",
+          "options": [
+            "Admiral de Grasse",
+            "Admiral Nelson",
+            "Admiral Rodney",
+            "Admiral Lafayette"
+          ],
+          "answer": "Admiral de Grasse",
+          "q": "Which French admiral blockaded Chesapeake Bay, trapping Cornwallis’s army at Yorktown?",
+          "a": "Admiral de Grasse",
+          "explanation": "Admiral de Grasse’s fleet repelled the British relief fleet at the Battle of the Capes."
+        },
+        {
+          "id": "lesson_5_q16",
+          "question": "On what date did General Cornwallis formally surrender his army at Yorktown, ending major combat?",
+          "options": [
+            "19 October 1781",
+            "4 July 1776",
+            "3 September 1783",
+            "16 December 1773"
+          ],
+          "answer": "19 October 1781",
+          "q": "On what date did General Cornwallis formally surrender his army at Yorktown, ending major combat?",
+          "a": "19 October 1781",
+          "explanation": "Cornwallis surrendered to combined American and French forces on 19 October 1781."
+        },
+        {
+          "id": "lesson_5_q17",
+          "question": "What tune did British military bands bitterly play as redcoats marched out to surrender their muskets at Yorktown?",
+          "options": [
+            "\"The World Turned Upside Down\"",
+            "\"Rule Britannia\"",
+            "\"God Save the King\"",
+            "\"Yankee Doodle\""
+          ],
+          "answer": "\"The World Turned Upside Down\"",
+          "q": "What tune did British military bands bitterly play as redcoats marched out to surrender their muskets at Yorktown?",
+          "a": "\"The World Turned Upside Down\"",
+          "explanation": "British musicians played the ballad reflecting the shocking loss of their American empire."
+        },
+        {
+          "id": "lesson_5_q18",
+          "question": "What treaty formally recognized the independence of the United States of America in 1783?",
+          "options": [
+            "The Treaty of Paris 1783",
+            "The Treaty of Versailles",
+            "The Treaty of Allahabad",
+            "The Treaty of Ghent"
+          ],
+          "answer": "The Treaty of Paris 1783",
+          "q": "What treaty formally recognized the independence of the United States of America in 1783?",
+          "a": "The Treaty of Paris 1783",
+          "explanation": "The 1783 Treaty of Paris ceded all British territory from the Atlantic to the Mississippi."
+        },
+        {
+          "id": "lesson_5_q19",
+          "question": "What were the formerly enslaved Africans who fought for the British Crown in exchange for freedom called?",
+          "options": [
+            "The Black Loyalists",
+            "The Patriots",
+            "The Maroons",
+            "The Sons of Liberty"
+          ],
+          "answer": "The Black Loyalists",
+          "q": "What were the formerly enslaved Africans who fought for the British Crown in exchange for freedom called?",
+          "a": "The Black Loyalists",
+          "explanation": "Thousands of escaped slaves fought for Britain under promise of emancipation."
+        },
+        {
+          "id": "lesson_5_q20",
+          "question": "What historic document recorded the names of over 3,000 formerly enslaved people evacuated by British ships from New York to Nova Scotia?",
+          "options": [
+            "The Book of Negroes",
+            "The Dunmore Ledger",
+            "The Brookes Manifest",
+            "The Freedom Register"
+          ],
+          "answer": "The Book of Negroes",
+          "q": "What historic document recorded the names of over 3,000 formerly enslaved people evacuated by British ships from New York to Nova Scotia?",
+          "a": "The Book of Negroes",
+          "explanation": "British authorities recorded 3,000 Black Loyalists in the Book of Negroes, granting them freedom in Nova Scotia."
+        }
+      ],
+      "workbook_stages": [
+        {
+          "step": 1,
+          "paraRef": "[5.1]",
+          "date": "1775",
+          "questionHeading": "How did Lexington, Concord, and Dunmore’s Proclamation start the war?",
+          "bullets": [
+            "Paul Revere Midnight Alarm",
+            "The Shot Heard Round the World",
+            "Dunmore’s Freedom Offer"
+          ],
+          "focusClue": "Why did Lord Dunmore’s offer of freedom to enslaved people strike terror into American rebel slaveholders?"
+        },
+        {
+          "step": 2,
+          "paraRef": "[5.2]",
+          "date": "July 1776",
+          "questionHeading": "What central moral paradox lay at the heart of the 1776 Declaration?",
+          "bullets": [
+            "Jefferson’s Eagle Quill",
+            "All Men Created Equal",
+            "Slaveholder Signatories"
+          ],
+          "focusClue": "How did Dr Samuel Johnson expose the hypocrisy of slaveholders demanding liberty from King George?"
+        },
+        {
+          "step": 3,
+          "paraRef": "[5.3]",
+          "date": "1777–1780",
+          "questionHeading": "How did Saratoga and the French alliance turn the rebellion into a global war?",
+          "bullets": [
+            "Defeating General Burgoyne",
+            "King Louis XVI Warships",
+            "Sugar Island Divergence"
+          ],
+          "focusClue": "Why was Britain unable to concentrate its military forces solely in North America?"
+        },
+        {
+          "step": 4,
+          "paraRef": "[5.4]",
+          "date": "October 1781",
+          "questionHeading": "How did French naval power force General Cornwallis to surrender at Yorktown?",
+          "bullets": [
+            "Cornwallis Peninsula Trap",
+            "De Grasse Chesapeake Blockade",
+            "The World Turned Upside Down"
+          ],
+          "focusClue": "Why was Cornwallis trapped, and how did French battleships decide the siege?"
+        },
+        {
+          "step": 5,
+          "paraRef": "[5.5]",
+          "date": "1783",
+          "questionHeading": "How did the Treaty of Paris and the Black Loyalists conclude the First Empire?",
+          "bullets": [
+            "American Independence Treaty",
+            "Book of Negroes Ledgers",
+            "Nova Scotia Evacuation Ships"
+          ],
+          "focusClue": "Why did British commanders honour their promise to evacuate Black Loyalists despite Washington’s demands?"
         }
       ]
     }

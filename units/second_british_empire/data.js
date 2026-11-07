@@ -1,4 +1,12 @@
 export default {
+  "synopsis": "A vast maritime empire painted red across world maps, propelled by ironclad warships, industrial machinery, and the relentless extraction of colonial wealth. From the bustling slipways of Portsmouth Royal Dockyard to the brutal suppression of the 1857 Indian Rebellion, Britain governed a fifth of humanity under the banner of imperial civilising mission. Confront the stark realities of conquest and displacement: the expansion of penal colonies into Indigenous Australia, the violent partition of the African continent during the Scramble for Africa, and the pioneering economic critique of Dadabhai Naoroji exposing how Britain drained trillions from the Indian subcontinent.",
+  "synopsis_tags": [
+      "Portsmouth Royal Dockyard & Naval Supremacy",
+      "The 1857 Indian Rebellion",
+      "The Scramble for Africa & Berlin Conference",
+      "Dadabhai Naoroji & The Drain of Wealth",
+      "Imperial Propaganda & 'Civilising Mission'"
+  ],
   "id": "second_british_empire",
   "title": "KS3: The Second British Empire (1783–1914)",
   "short_title": "The Second British Empire",

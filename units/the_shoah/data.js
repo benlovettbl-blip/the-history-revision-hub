@@ -1,4 +1,14 @@
 export default {
+  "synopsis": "Before the catastrophic rupture of the Second World War, over nine million Jewish people inhabited every corner of Europe, speaking dozens of languages and enriching the intellectual, artistic, and political fabric of the continent. Trace how Adolf Hitler and the Nazi regime systematically weaponized racial antisemitism to strip German Jews of civil rights and legal personhood, before exploiting the smoke and chaos of total war to engineer the continent-wide annihilation of six million human beings. From the claustrophobic terror of the Warsaw Ghetto and the secret chronicle of the Ringelblum Archive to the mass shootings of the Einsatzgruppen in the killing fields of Ukraine, the industrial extermination machinery of Auschwitz-Birkenau, and the armed heroism of ghetto fighters and righteous rescuers—confront the deepest moral questions of complicity, indifference, human resistance, and the enduring obligation to remember.",
+  "synopsis_tags": [
+      "Pre-War Jewish Life & Culture",
+      "Nuremberg Laws & Kristallnacht (1935–38)",
+      "Warsaw Ghetto & The Ringelblum Archive",
+      "Einsatzgruppen & Holocaust by Bullets",
+      "Auschwitz-Birkenau & Extermination Camps",
+      "Armed Resistance & Righteous Rescuers",
+      "Liberation & The Nuremberg Trials"
+  ],
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
     "instructions": [
@@ -7569,7 +7579,7 @@ export default {
           "source": {
             "letter": "A",
             "type": "visual",
-            "title": "Source A (Archival Documentary Photograph): Concentration Camp Prisoners on a Winter Death March (January–April 1945)",
+            "title": "Source A (Eyewitness Testimony & Archival Plate): Elie Wiesel, Night (1958) & The Dachau Death March (1945)",
             "text": "Elie Wiesel (Night): \"An icy wind blew into our faces, freezing the blood in our veins. The SS yelled: 'Faster, you dogs, run!' Anyone who stopped for a single second was shot on the spot. Beside me, a young boy from Poland named Zalman had stomach cramps; he fell into the snow and the marchers trampled him. Pitch darkness, knee-deep snow. We were running without boots, our feet wrapped in rags. Hundreds fell into the frozen ditches along the road. It seemed as if we were not human beings, but automatons marching toward death.\"",
             "caption": "Exhausted and emaciated prisoners escorted by armed SS guards through Bavarian snow on the Dachau death march in late April 1945, secretly photographed from a roadside window.",
             "citation": "Elie Wiesel, Night (Les Éditions de Minuit / Hill & Wang) / USHMM Survivor Collection.",
@@ -7818,7 +7828,7 @@ export default {
         {
           "letter": "A",
           "type": "visual",
-          "title": "Source A (Archival Documentary Photograph): Concentration Camp Prisoners on a Winter Death March (January–April 1945)",
+          "title": "Source A (Eyewitness Testimony & Archival Plate): Elie Wiesel, Night (1958) & The Dachau Death March (1945)",
           "text": "Elie Wiesel (Night): \"An icy wind blew into our faces, freezing the blood in our veins. The SS yelled: 'Faster, you dogs, run!' Anyone who stopped for a single second was shot on the spot. Beside me, a young boy from Poland named Zalman had stomach cramps; he fell into the snow and the marchers trampled him. Pitch darkness, knee-deep snow. We were running without boots, our feet wrapped in rags. Hundreds fell into the frozen ditches along the road. It seemed as if we were not human beings, but automatons marching toward death.\"",
           "caption": "Exhausted and emaciated prisoners escorted by armed SS guards through Bavarian snow on the Dachau death march in late April 1945, secretly photographed from a roadside window.",
           "citation": "Elie Wiesel, Night (Les Éditions de Minuit / Hill & Wang) / USHMM Survivor Collection.",

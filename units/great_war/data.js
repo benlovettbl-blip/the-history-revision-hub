@@ -1,4 +1,12 @@
 export default {
+  "synopsis": "Decades of imperial vanity, naval rivalries, and rigid alliance treaties wound the clockwork of European catastrophe. From the blood and iron of German unification under Bismarck to the industrial race between British Dreadnoughts and Kaiser Wilhelm’s High Seas Fleet, Europe split into two heavily armed camps. When a teenage assassin fired two fatal shots in Sarajevo on 28 June 1914, thirty days of diplomatic brinkmanship sleepwalked an entire continent into total war.",
+  "synopsis_tags": [
+      "Bismarck & German Unification (1871)",
+      "Scramble for Africa & Imperial Friction",
+      "The Anglo-German Dreadnought Race",
+      "Triple Entente vs Triple Alliance",
+      "Assassination in Sarajevo & July Crisis (1914)"
+  ],
   "debatePrompts": [
     {
       "title": "Bismarck & Unification",

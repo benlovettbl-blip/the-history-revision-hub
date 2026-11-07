@@ -4171,7 +4171,7 @@
       "key_stage": "GCSE (Edexcel Paper 1)",
       "unit_title": "Medicine in Britain, c.1250–present & The Western Front",
       "total_lessons": 26,
-      "total_sources": 123,
+      "total_sources": 125,
       "sources": [
         {
           "lesson_num": 1,
@@ -5912,6 +5912,20 @@
           "asset_path": "/images/pre_nightingale_middlesex_hospital.jpg",
           "caption": "Middlesex Hospital Ward by Thomas Rowlandson and Augustus Pugin (1808), showing cramped beds, poor cross-ventilation, and unhygienic conditions in pre-modern voluntary hospitals.",
           "hinge_question": "Why did middle-class patients in the early nineteenth century refuse to be treated in hospitals, preferring to be operated on at home?"
+        },
+        {
+          "lesson_num": 24,
+          "lesson_title": "KT5.4 RAMC & Evacuation Chain on the Western Front",
+          "source_id": "Paper 1 (June 2026) Source B",
+          "artifact_title": "Soldiers Pushing a Motorised Ambulance Through Deep Mud During the Battle of the Somme",
+          "date": "July 1916",
+          "creator": "Official War Photograph / Daily Mail National Press Series",
+          "repository": "Imperial War Museum / Central Press Photos / Alamy",
+          "accession_id": "CBW/Alamy & IWM Official War Series",
+          "rights_status": "Crown Copyright Expired / Public Domain (Created 1916 — CDPA 1988)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.iwm.org.uk/collections/item/object/205193982",
+          "asset_path": "/images/med26/source_b_ambulance_somme_1916.jpg"
         }
       ],
       "exam_board": "Pearson Edexcel GCSE (9–1) Option 11",
@@ -7222,7 +7236,7 @@
       "key_stage": "GCSE (Edexcel Paper 3)",
       "unit_title": "The USA, 1954–1975: Conflict at Home and Abroad (Civil Rights and Vietnam)",
       "total_lessons": 16,
-      "total_sources": 125,
+      "total_sources": 130,
       "exam_board": "Pearson Edexcel GCSE (9–1) Option 33",
       "sources": [
         {
@@ -7377,7 +7391,7 @@
           "rights_status": "Public Domain (Official Work of the US Federal Government / Educational Fair Dealing)",
           "commercial_use_permitted": true,
           "source_url": "https://catalog.archives.gov/",
-          "asset_path": "/units/usa/assets/sources/mlk-boycott-speech-1955.jpg"
+          "asset_path": "/units/usa/assets/sources/mlk_boycott_mass_meeting_1956.jpg"
         },
         {
           "lesson_num": 3,
@@ -7886,12 +7900,12 @@
         {
           "lesson_num": 10,
           "lesson_title": "KT 3.2: Why did the US send combat troops to Vietnam after the Gulf of Tonkin incident?",
-          "source_id": "Source C",
-          "artifact_title": "Source C: Declassified Flash Precedence Cable from Captain John Herrick of the USS Maddox (4 August 1964)",
+          "source_id": "Source A",
+          "artifact_title": "Source A: Declassified Flash Precedence Cable from Captain John Herrick of the USS Maddox (4 August 1964) with Operational Track Chart",
           "date": "4 August 1964",
           "creator": "National Security Agency (NSA) Declassified Gulf of Tonkin Records, Document No. 6310",
           "repository": "National Archives and Records Administration (NARA) / Library of Congress",
-          "accession_id": "USA-L10-C-RELIABILITY___PROVENANCE",
+          "accession_id": "USA-L10-A-RELIABILITY___PROVENANCE",
           "rights_status": "Public Domain (Official Work of the US Federal Government / Educational Fair Dealing)",
           "commercial_use_permitted": true,
           "source_url": "https://catalog.archives.gov/",
@@ -8962,6 +8976,76 @@
           "commercial_use_permitted": true,
           "source_url": "https://www.archives.gov/milestone-documents/gulf-of-tonkin-resolution",
           "asset_path": "/units/usa/assets/sources/gulf_of_tonkin_resolution_statute_1964.png"
+        },
+        {
+          "lesson_num": 6,
+          "lesson_title": "KT2.2: The March on Washington & Passing the 1964–65 Acts",
+          "source_id": "Assessment Source A",
+          "artifact_title": "Dr. Martin Luther King Jr. Waving to Crowds at the Lincoln Memorial during the March on Washington",
+          "date": "28 August 1963",
+          "creator": "United States Information Agency (USIA) / National Archives and Records Administration",
+          "repository": "National Archives Still Picture Branch, College Park, MD",
+          "accession_id": "NARA 306-SSM-4D(83)12",
+          "rights_status": "Public Domain (Work of US Federal Government Employee — 17 U.S. Code § 105)",
+          "commercial_use_permitted": true,
+          "source_url": "https://catalog.archives.gov/id/542045",
+          "asset_path": "/units/usa/assets/sources/mlk-waving-washington-1963.jpg"
+        },
+        {
+          "lesson_num": 10,
+          "lesson_title": "KT3.2: The Escalation of US Involvement: Gulf of Tonkin to Ground Troops (1964–1965)",
+          "source_id": "Assessment Source A",
+          "artifact_title": "Destroyer USS Maddox (DD-731) Underway in the Gulf of Tonkin",
+          "date": "August 1964",
+          "creator": "Official US Navy Photographer",
+          "repository": "Naval History and Heritage Command / National Archives Still Picture Branch",
+          "accession_id": "NH 97893",
+          "rights_status": "Public Domain (Official US Navy Work — 17 U.S. Code § 105)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.history.navy.mil/our-collections/photography/numerical-list-of-images/nhhc-series/nh-series/NH-97000/NH-97893.html",
+          "asset_path": "/units/usa/assets/sources/uss_maddox_dd731_underway.jpg"
+        },
+        {
+          "lesson_num": 10,
+          "lesson_title": "KT3.2: The Escalation of US Involvement: Gulf of Tonkin to Ground Troops (1964–1965)",
+          "source_id": "Assessment Source B",
+          "artifact_title": "US Marines of the 9th Marine Expeditionary Brigade Landing on Red Beach 2, Da Nang",
+          "date": "8 March 1965",
+          "creator": "US Marine Corps / National Archives and Records Administration",
+          "repository": "National Archives Still Picture Branch, College Park, MD",
+          "accession_id": "NARA USMC 127-N-A370503",
+          "rights_status": "Public Domain (Official US Military Work — 17 U.S. Code § 105)",
+          "commercial_use_permitted": true,
+          "source_url": "https://commons.wikimedia.org/wiki/File:9th_MEB_landing_beach_Danang_March_1965.jpg",
+          "asset_path": "/units/usa/assets/sources/marines_landing_beach_danang_1965.jpg"
+        },
+        {
+          "lesson_num": 14,
+          "lesson_title": "KT4.2: The 'Silent Majority', the Hard Hat Riots & Polarization",
+          "source_id": "Assessment Source A",
+          "artifact_title": "President Richard Nixon at His Desk with Stacks of 'Silent Majority' Telegrams and Letters",
+          "date": "4 November 1969",
+          "creator": "Warren K. Leffler / U.S. News & World Report",
+          "repository": "Library of Congress Prints and Photographs Division, Washington, D.C.",
+          "accession_id": "LC-U9-21845-12",
+          "rights_status": "Public Domain (U.S. News & World Report Collection / No Copyright Restrictions)",
+          "commercial_use_permitted": true,
+          "source_url": "https://www.loc.gov/item/2016646548/",
+          "asset_path": "/units/usa/assets/sources/nixon_telegrams_silent_majority_1969.jpg"
+        },
+        {
+          "lesson_num": 15,
+          "lesson_title": "KT4.3: The Paris Peace Accords, the Fall of Saigon & the War's Legacy",
+          "source_id": "Assessment Source B",
+          "artifact_title": "Evacuees Boarding an Air America UH-1 Huey Helicopter from Rooftop During the Fall of Saigon",
+          "date": "29 April 1975",
+          "creator": "Hubert van Es / United Press International (UPI)",
+          "repository": "National Archives and Records Administration / Corbis Historic Archive",
+          "accession_id": "NARA RG 306 / UPI Van Es 1975",
+          "rights_status": "Educational Fair Dealing / CDPA 1988 (Section 30) & Classroom Review",
+          "commercial_use_permitted": true,
+          "source_url": "https://en.wikipedia.org/wiki/Fall_of_Saigon#/media/File:Saigon-hubert-van-es.jpg",
+          "asset_path": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg"
         }
       ]
     },
@@ -10103,17 +10187,17 @@
         },
         {
           "lesson_num": 1,
-          "lesson_title": "Ideological Clash",
+          "lesson_title": "Ideological Clash: Why could Capitalism and Communism never peacefully coexist?",
           "source_id": "Source C",
-          "artifact_title": "David Low, 'Someone is Watching' / The Iron Curtain (London Evening Standard, March 1946)",
+          "artifact_title": "Leslie Illingworth, 'A Peep under the Iron Curtain' (London Daily Mail, 6 March 1946)",
           "date": "6 March 1946",
-          "creator": "David Low / London Evening Standard",
-          "repository": "British Cartoon Archive, University of Kent, Canterbury, UK",
-          "accession_id": "BCA DL2416",
+          "creator": "Leslie Gilbert Illingworth / London Daily Mail",
+          "repository": "British Cartoon Archive, University of Kent / National Library of Wales",
+          "accession_id": "BCA IL0235",
           "rights_status": "Educational Fair Dealing (CDPA 1988) / British Cartoon Archive Collection",
           "commercial_use_permitted": true,
-          "source_url": "https://cartoons.ac.uk/record/DL2416",
-          "asset_path": "/images/cold_war/david_low_iron_curtain_1946.jpg"
+          "source_url": "https://cartoons.ac.uk/record/IL0235",
+          "asset_path": "/images/cold_war/illingworth_iron_curtain_1946.jpg"
         },
         {
           "lesson_num": 1,

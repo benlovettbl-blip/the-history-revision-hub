@@ -3216,16 +3216,45 @@ img::after {
     width: calc(100% + 2rem) !important;
     margin-left: -1rem !important;
     margin-right: -1rem !important;
-    margin-top: -1rem !important;
-    height: 120px !important;
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+    height: auto !important;
+    min-height: 120px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    position: relative !important;
+    overflow: hidden !important;
   }
 
+  .lesson-hero-content,
   .lesson-hero > div:last-child {
-    padding: 0.85rem 1rem !important;
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    padding: 0.75rem 1rem !important;
+    z-index: 2 !important;
+    box-sizing: border-box !important;
   }
 
   .lesson-hero h2 {
     font-size: 1.25rem !important;
+    line-height: 1.25 !important;
+    margin: 0.2rem 0 0 0 !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .lesson-hero-enquiry-sub {
+    font-size: 0.86rem !important;
+    line-height: 1.35 !important;
+    margin-top: 0.35rem !important;
+  }
+
+  .lesson-hero-subtitle {
+    font-size: 0.82rem !important;
+    line-height: 1.3 !important;
   }
 
   .content-container,
@@ -3460,7 +3489,8 @@ img::after {
   }
 
   .lesson-hero {
-    height: 105px !important;
+    height: auto !important;
+    min-height: 120px !important;
     margin-top: 0 !important;
     margin-bottom: 12px !important;
   }
@@ -6053,6 +6083,10 @@ body.sen-mode .read-aloud-playback-bar .read-aloud-btn.reading-paused {
 details.archival-drawer,
 details.cme-source-drawer,
 details.weimar-source-drawer,
+details.usa-source-drawer,
+details.cold-war-source-drawer,
+details.gcse-source-drawer,
+details.exam-stimulus-drawer,
 details.medicine-source-drawer,
 details.eee-source-drawer,
 details.key-individual-drawer,
@@ -6070,6 +6104,10 @@ details.spotlight-drawer {
 details.archival-drawer[open],
 details.cme-source-drawer[open],
 details.weimar-source-drawer[open],
+details.usa-source-drawer[open],
+details.cold-war-source-drawer[open],
+details.gcse-source-drawer[open],
+details.exam-stimulus-drawer[open],
 details.medicine-source-drawer[open],
 details.eee-source-drawer[open],
 details.key-individual-drawer[open],
@@ -6081,6 +6119,10 @@ details.spotlight-drawer[open] {
 details.archival-drawer > summary,
 details.cme-source-drawer > summary,
 details.weimar-source-drawer > summary,
+details.usa-source-drawer > summary,
+details.cold-war-source-drawer > summary,
+details.gcse-source-drawer > summary,
+details.exam-stimulus-drawer > summary,
 details.medicine-source-drawer > summary,
 details.eee-source-drawer > summary,
 details.key-individual-drawer > summary,
@@ -6102,6 +6144,10 @@ details.spotlight-drawer > summary {
 details.archival-drawer > summary:hover,
 details.cme-source-drawer > summary:hover,
 details.weimar-source-drawer > summary:hover,
+details.usa-source-drawer > summary:hover,
+details.cold-war-source-drawer > summary:hover,
+details.gcse-source-drawer > summary:hover,
+details.exam-stimulus-drawer > summary:hover,
 details.medicine-source-drawer > summary:hover,
 details.eee-source-drawer > summary:hover,
 details.key-individual-drawer > summary:hover,
@@ -6111,6 +6157,11 @@ details.spotlight-drawer > summary:hover {
 
 details.archival-drawer > summary::-webkit-details-marker,
 details.cme-source-drawer > summary::-webkit-details-marker,
+details.weimar-source-drawer > summary::-webkit-details-marker,
+details.usa-source-drawer > summary::-webkit-details-marker,
+details.cold-war-source-drawer > summary::-webkit-details-marker,
+details.gcse-source-drawer > summary::-webkit-details-marker,
+details.exam-stimulus-drawer > summary::-webkit-details-marker,
 details.key-individual-drawer > summary::-webkit-details-marker,
 details.spotlight-drawer > summary::-webkit-details-marker {
   display: none !important;
@@ -6119,6 +6170,10 @@ details.spotlight-drawer > summary::-webkit-details-marker {
 details.archival-drawer summary > div:first-child,
 details.cme-source-drawer summary > div:first-child,
 details.weimar-source-drawer summary > div:first-child,
+details.usa-source-drawer summary > div:first-child,
+details.cold-war-source-drawer summary > div:first-child,
+details.gcse-source-drawer summary > div:first-child,
+details.exam-stimulus-drawer summary > div:first-child,
 details.medicine-source-drawer summary > div:first-child,
 details.eee-source-drawer summary > div:first-child,
 details.key-individual-drawer summary > div:first-child,
@@ -6133,6 +6188,11 @@ details.spotlight-drawer summary > div:first-child {
 
 details.archival-drawer .archival-meta-tag,
 details.cme-source-drawer .archival-meta-tag,
+details.weimar-source-drawer .archival-meta-tag,
+details.usa-source-drawer .archival-meta-tag,
+details.cold-war-source-drawer .archival-meta-tag,
+details.gcse-source-drawer .archival-meta-tag,
+details.exam-stimulus-drawer .archival-meta-tag,
 details.key-individual-drawer .archival-meta-tag,
 details.spotlight-drawer .archival-meta-tag {
   padding: 2px 7px !important;
@@ -6147,6 +6207,11 @@ details.spotlight-drawer .archival-meta-tag {
 
 details.archival-drawer > summary .archival-drawer-title,
 details.cme-source-drawer > summary .archival-drawer-title,
+details.weimar-source-drawer > summary .archival-drawer-title,
+details.usa-source-drawer > summary .archival-drawer-title,
+details.cold-war-source-drawer > summary .archival-drawer-title,
+details.gcse-source-drawer > summary .archival-drawer-title,
+details.exam-stimulus-drawer > summary .archival-drawer-title,
 details.key-individual-drawer > summary .archival-drawer-title,
 details.spotlight-drawer > summary .archival-drawer-title {
   font-size: 0.85rem !important;
@@ -6164,6 +6229,11 @@ details.spotlight-drawer > summary .archival-drawer-title {
 
 details.archival-drawer .drawer-toggle-indicator,
 details.cme-source-drawer .drawer-toggle-indicator,
+details.weimar-source-drawer .drawer-toggle-indicator,
+details.usa-source-drawer .drawer-toggle-indicator,
+details.cold-war-source-drawer .drawer-toggle-indicator,
+details.gcse-source-drawer .drawer-toggle-indicator,
+details.exam-stimulus-drawer .drawer-toggle-indicator,
 details.key-individual-drawer .drawer-toggle-indicator,
 details.spotlight-drawer .drawer-toggle-indicator {
   display: inline-flex !important;
@@ -6182,6 +6252,11 @@ details.spotlight-drawer .drawer-toggle-indicator {
 
 details.archival-drawer:hover .drawer-toggle-indicator,
 details.cme-source-drawer:hover .drawer-toggle-indicator,
+details.weimar-source-drawer:hover .drawer-toggle-indicator,
+details.usa-source-drawer:hover .drawer-toggle-indicator,
+details.cold-war-source-drawer:hover .drawer-toggle-indicator,
+details.gcse-source-drawer:hover .drawer-toggle-indicator,
+details.exam-stimulus-drawer:hover .drawer-toggle-indicator,
 details.key-individual-drawer:hover .drawer-toggle-indicator,
 details.spotlight-drawer:hover .drawer-toggle-indicator {
   background: #c7d2fe !important;
@@ -6190,6 +6265,11 @@ details.spotlight-drawer:hover .drawer-toggle-indicator {
 
 details.archival-drawer .drawer-state-collapse,
 details.cme-source-drawer .drawer-state-collapse,
+details.weimar-source-drawer .drawer-state-collapse,
+details.usa-source-drawer .drawer-state-collapse,
+details.cold-war-source-drawer .drawer-state-collapse,
+details.gcse-source-drawer .drawer-state-collapse,
+details.exam-stimulus-drawer .drawer-state-collapse,
 details.key-individual-drawer .drawer-state-collapse,
 details.spotlight-drawer .drawer-state-collapse {
   display: none !important;
@@ -6197,6 +6277,11 @@ details.spotlight-drawer .drawer-state-collapse {
 
 details.archival-drawer[open] .drawer-state-expand,
 details.cme-source-drawer[open] .drawer-state-expand,
+details.weimar-source-drawer[open] .drawer-state-expand,
+details.usa-source-drawer[open] .drawer-state-expand,
+details.cold-war-source-drawer[open] .drawer-state-expand,
+details.gcse-source-drawer[open] .drawer-state-expand,
+details.exam-stimulus-drawer[open] .drawer-state-expand,
 details.key-individual-drawer[open] .drawer-state-expand,
 details.spotlight-drawer[open] .drawer-state-expand {
   display: none !important;
@@ -6204,26 +6289,66 @@ details.spotlight-drawer[open] .drawer-state-expand {
 
 details.archival-drawer[open] .drawer-state-collapse,
 details.cme-source-drawer[open] .drawer-state-collapse,
+details.weimar-source-drawer[open] .drawer-state-collapse,
+details.usa-source-drawer[open] .drawer-state-collapse,
+details.cold-war-source-drawer[open] .drawer-state-collapse,
+details.gcse-source-drawer[open] .drawer-state-collapse,
+details.exam-stimulus-drawer[open] .drawer-state-collapse,
 details.key-individual-drawer[open] .drawer-state-collapse,
 details.spotlight-drawer[open] .drawer-state-collapse {
   display: inline !important;
 }
 
 details.archival-drawer summary .source-to-narrative-jump-btn,
-details.cme-source-drawer summary .source-to-narrative-jump-btn {
+details.cme-source-drawer summary .source-to-narrative-jump-btn,
+details.weimar-source-drawer summary .source-to-narrative-jump-btn,
+details.usa-source-drawer summary .source-to-narrative-jump-btn,
+details.cold-war-source-drawer summary .source-to-narrative-jump-btn,
+details.gcse-source-drawer summary .source-to-narrative-jump-btn {
   display: none !important;
 }
 
 details.archival-drawer[open] summary .source-to-narrative-jump-btn,
-details.cme-source-drawer[open] summary .source-to-narrative-jump-btn {
+details.cme-source-drawer[open] summary .source-to-narrative-jump-btn,
+details.weimar-source-drawer[open] summary .source-to-narrative-jump-btn,
+details.usa-source-drawer[open] summary .source-to-narrative-jump-btn,
+details.cold-war-source-drawer[open] summary .source-to-narrative-jump-btn,
+details.gcse-source-drawer[open] summary .source-to-narrative-jump-btn {
   display: inline-flex !important;
 }
 
 details.archival-drawer .drawer-caret,
 details.cme-source-drawer .drawer-caret,
+details.weimar-source-drawer .drawer-caret,
+details.usa-source-drawer .drawer-caret,
+details.cold-war-source-drawer .drawer-caret,
+details.gcse-source-drawer .drawer-caret,
 details.key-individual-drawer .drawer-caret,
 details.spotlight-drawer .drawer-caret {
   font-size: 0.62rem !important;
+}
+
+/* ==========================================================================
+   SOURCE DRAWER HIGHLIGHT GLOW & INTERACTIVE HOVER ANIMATION
+   Universal across all GCSE and curriculum units
+   ========================================================================== */
+@keyframes sourceHighlightGlow {
+  0% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0.75); outline: 3px solid #0284c7; transform: translateY(-2px); }
+  50% { box-shadow: 0 0 0 10px rgba(2, 132, 199, 0.25); outline: 3px solid #0284c7; transform: translateY(-3px); }
+  100% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0); outline: 3px solid #0284c7; transform: translateY(-2px); }
+}
+.source-card-highlighted {
+  animation: sourceHighlightGlow 1.5s infinite ease-in-out !important;
+  border-color: #0284c7 !important;
+  transition: all 0.25s ease-in-out !important;
+}
+.source-inquiry-interactive {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.source-inquiry-interactive:hover {
+  filter: brightness(0.97);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;
 }
 
 .key-individual-lesson-section {
@@ -9115,6 +9240,23 @@ details.spotlight-drawer[open] summary i.fa-chevron-down {
   animation: modalScaleIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Focused 16:9 Cinema Modal */
+.video-cinema-modal {
+  max-width: 1060px !important;
+  width: 94vw !important;
+}
+
+.video-cinema-body {
+  background: #000000;
+  width: 100%;
+}
+
+.video-cinema-footer {
+  padding: 12px 18px;
+  background: #0f172a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 @keyframes modalScaleIn {
   from {
     opacity: 0;
@@ -10905,6 +11047,17 @@ body.search-modal-open {
   background: #0369a1 !important;
 }
 
+@media (max-width: 640px) {
+  .btn-donow-mode {
+    padding: 3px 8px !important;
+    font-size: 0.70rem !important;
+    gap: 4px !important;
+  }
+  .donow-mode-btn-group {
+    flex-wrap: wrap !important;
+  }
+}
+
 .donow-unit-chips-bar {
   display: flex;
   align-items: center;
@@ -11548,4 +11701,167 @@ details.source-enquiry-reveal .reveal-arrow {
     font-size: 0.82rem;
   }
 }
+
+/* ==========================================================================
+   LITERARY COMPANION & GUIDED READING RESPONSIVE STYLES
+   ========================================================================== */
+.literary-companion-studio {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.guided-reading-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.reading-hero-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.reading-hero-cover-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.reading-hero-meta-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.reading-book-title {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.reading-extract-section {
+  padding: 32px 36px;
+  background: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.reading-extract-body {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.22rem;
+  line-height: 1.95;
+  color: #1e293b;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.reading-base-banner {
+  margin-top: 36px;
+  padding: 18px 24px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+@media (max-width: 768px) {
+  .literary-companion-studio {
+    padding: 12px 10px 48px 10px !important;
+  }
+  .reading-masthead {
+    padding: 16px 14px !important;
+    gap: 12px !important;
+    border-radius: 10px !important;
+    margin-bottom: 16px !important;
+  }
+  .reading-masthead h1 {
+    font-size: 1.35rem !important;
+    line-height: 1.25 !important;
+  }
+  .reading-masthead p {
+    font-size: 0.84rem !important;
+    line-height: 1.45 !important;
+  }
+  .reading-masthead .btn {
+    padding: 6px 12px !important;
+    font-size: 0.8rem !important;
+  }
+  .reading-tab-bar {
+    gap: 6px !important;
+    margin-bottom: 16px !important;
+  }
+  .reading-tab-bar button {
+    padding: 7px 11px !important;
+    font-size: 0.78rem !important;
+    white-space: normal !important;
+    text-align: left !important;
+  }
+  .reading-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding: 16px 14px !important;
+  }
+  .reading-hero-cover-col {
+    max-width: 200px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+  .reading-hero-meta-col {
+    width: 100% !important;
+    gap: 14px !important;
+  }
+  .reading-book-title {
+    font-size: 1.45rem !important;
+    line-height: 1.25 !important;
+  }
+  .audio-read-aloud-studio {
+    padding: 14px 12px !important;
+    border-radius: 8px !important;
+  }
+  .audio-read-aloud-studio button {
+    padding: 7px 12px !important;
+    font-size: 0.82rem !important;
+  }
+  .reading-discussion-card {
+    padding: 14px 12px !important;
+    border-radius: 6px !important;
+  }
+  .reading-extract-section {
+    padding: 18px 14px !important;
+  }
+  .reading-extract-body {
+    font-size: 1.05rem !important;
+    line-height: 1.75 !important;
+  }
+  .reading-extract-body p {
+    margin-bottom: 1.2rem !important;
+  }
+  .reading-base-banner {
+    padding: 14px 12px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+
+  /* Marking Bank Mobile Refinements */
+  .marking-bank-portal {
+    padding: 12px 10px 48px 10px !important;
+  }
+  .marking-bank-portal h1 {
+    font-size: 1.4rem !important;
+  }
+  .marking-enquiry-section {
+    border-radius: 8px !important;
+  }
+  .marking-question-card {
+    padding: 12px 12px !important;
+  }
+}
+
 

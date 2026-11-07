@@ -1775,7 +1775,9 @@ export async function renderLessonsView() {
         const url = new URL(window.location);
         url.searchParams.set('view', 'lessons');
         url.searchParams.set('unit', unitId);
-        url.searchParams.set('lesson', index + 1);
+        const hasLessonZero = (lessonsList[0] && (lessonsList[0].id === 'lesson_0' || (lessonsList[0].title && lessonsList[0].title.includes('KT 1.0'))));
+        const lessonQueryVal = hasLessonZero ? (index === 0 ? '0' : index) : (index + 1);
+        url.searchParams.set('lesson', lessonQueryVal);
         window.history.pushState(
           {
             view: 'lessons',
@@ -1791,13 +1793,20 @@ export async function renderLessonsView() {
 
     // Update breadcrumbs to show Dashboard > Unit > Lesson Title
     if (typeof window.updateBreadcrumbs === 'function') {
-      const rawTitle = sub.title || `Lesson ${index + 1}`;
+      const hasLessonZero = (lessonsList[0] && (lessonsList[0].id === 'lesson_0' || (lessonsList[0].title && lessonsList[0].title.includes('KT 1.0'))));
+      const rawTitle = sub.title || (hasLessonZero && index === 0 ? 'Intro Lesson' : `Lesson ${hasLessonZero ? index : index + 1}`);
       let shortLabel = rawTitle;
-      const matchPrefix = rawTitle.match(/^(Enquiry\s+\d+|Lesson\s+\d+|Stage\s+\d+)/i);
+      const matchPrefix = rawTitle.match(/^(Enquiry\s+\d+|Lesson\s+\d+|Stage\s+\d+|KT\s*\d+\.\d+)/i);
       if (matchPrefix) {
-        shortLabel = matchPrefix[1];
+        if (hasLessonZero && index === 0) {
+          shortLabel = `${matchPrefix[1]} • Intro`;
+        } else if (hasLessonZero) {
+          shortLabel = `${matchPrefix[1]} • L${index}`;
+        } else {
+          shortLabel = matchPrefix[1];
+        }
       } else if (rawTitle.length > 25) {
-        shortLabel = `Lesson ${index + 1}`;
+        shortLabel = hasLessonZero && index === 0 ? 'Intro Lesson' : `Lesson ${hasLessonZero ? index : index + 1}`;
       }
       let unitTitle = data.title
         ? data.title.replace(/^(?:Paper \d+:?|KS3:?|GCSE[^:]*:?)\s*/i, '').trim()
@@ -1900,9 +1909,16 @@ export async function renderLessonsView() {
   const requestedLesson = urlParams.get('lesson');
   if (requestedLesson !== null && requestedLesson !== undefined && requestedLesson !== '') {
     let targetIndex = -1;
+    const hasLessonZero = (lessonsList[0] && (lessonsList[0].id === 'lesson_0' || (lessonsList[0].title && lessonsList[0].title.includes('KT 1.0'))));
     const parsed = parseInt(requestedLesson, 10);
     if (!isNaN(parsed) && String(parsed) === requestedLesson.trim()) {
-      targetIndex = parsed >= 1 ? parsed - 1 : parsed;
+      if (hasLessonZero) {
+        targetIndex = parsed >= 0 && parsed < lessonsList.length ? parsed : -1;
+      } else {
+        targetIndex = parsed >= 1 ? parsed - 1 : parsed;
+      }
+    } else if (requestedLesson.toLowerCase() === 'intro' && hasLessonZero) {
+      targetIndex = 0;
     } else {
       targetIndex = lessonsList.findIndex(
         (l) =>
@@ -2018,6 +2034,69 @@ export async function renderLessonsView() {
     `;
   }
 
+  function renderUnitRoadmapBar(uId) {
+    if (uId === 'cme_new') {
+      return `
+        <div class="unit-roadmap-strip" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1.5px solid #334155; border-radius: 12px; padding: 16px 20px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="background: #0284c7; color: #ffffff; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; box-shadow: 0 2px 8px rgba(2,132,199,0.4); flex-shrink: 0;">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 0.72rem; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.05em;">Visual Knowledge Architecture</span>
+                <span style="font-size: 0.68rem; font-weight: 600; color: #94a3b8; background: #334155; padding: 1px 6px; border-radius: 4px;">Edexcel Specification</span>
+              </div>
+              <h4 style="margin: 2px 0 0 0; color: #ffffff; font-size: 1.02rem; font-family: 'Playfair Display', Georgia, serif;">Conflict in the Middle East: Specification Roadmaps &amp; Visual Overviews</h4>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_edexcel_spec_roadmap');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #0284c7; color: #ffffff; border: 1px solid #38bdf8; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(2,132,199,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
+              <i class="fa-solid fa-route"></i>
+              <span>Specification Roadmap (1945–1995)</span>
+            </button>
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_narrative_chronology_roadmap');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#334155';" onmouseout="this.style.background='#1e293b';">
+              <i class="fa-solid fa-scroll"></i>
+              <span>Chronology Scroll</span>
+            </button>
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_paper2_exam_guide');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #3b82f6; color: #ffffff; border: 1px solid #60a5fa; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(59,130,246,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Paper 2 Exam Guide</span>
+            </button>
+          </div>
+        </div>
+      `;
+    } else if (uId === 'eee') {
+      return `
+        <div class="unit-roadmap-strip" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1.5px solid #334155; border-radius: 12px; padding: 16px 20px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="background: #854d0e; color: #ffffff; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; box-shadow: 0 2px 8px rgba(133,77,14,0.4); flex-shrink: 0;">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 0.72rem; font-weight: 700; color: #fde047; text-transform: uppercase; letter-spacing: 0.05em;">Visual Knowledge Architecture</span>
+                <span style="font-size: 0.68rem; font-weight: 600; color: #94a3b8; background: #334155; padding: 1px 6px; border-radius: 4px;">Edexcel Specification</span>
+              </div>
+              <h4 style="margin: 2px 0 0 0; color: #ffffff; font-size: 1.02rem; font-family: 'Playfair Display', Georgia, serif;">Early Elizabethan England: Visual Revision Mats &amp; Chronological Spines</h4>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('eee_kt2_1_catholic_plots_timeline');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #854d0e; color: #ffffff; border: 1px solid #ca8a04; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(133,77,14,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
+              <i class="fa-solid fa-timeline"></i>
+              <span>Catholic Plots Timeline</span>
+            </button>
+            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('eee_kt2_2_road_to_armada');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#334155';" onmouseout="this.style.background='#1e293b';">
+              <i class="fa-solid fa-ship"></i>
+              <span>Road to the Armada</span>
+            </button>
+          </div>
+        </div>
+      `;
+    }
+    return '';
+  }
+
   const isTrip = data && data.type === 'trip';
 
   container.innerHTML = `
@@ -2026,7 +2105,7 @@ export async function renderLessonsView() {
       
       <div class="lessons-view-body" style="padding: 30px; border-top: 1px solid #e2e8f0; max-width: 100%; box-sizing: border-box;">
         ${renderUnitSynopsis(data, unitId)}
-        
+        ${renderUnitRoadmapBar(unitId)}
         ${renderKeyTopicLessonsHTML(data, unitId, data)}
 
         ${
@@ -2309,7 +2388,7 @@ window.setHubExamClockMinutes = function (mins, label) {
 
 function getHubTimingStrategyRows(unitId) {
   let rows = [];
-  if (unitId === 'cme_new') {
+  if (unitId === 'cme_new' || unitId === 'cold_war') {
     rows = [
       {
         tariff: '4 Marks (×2)',
@@ -2711,6 +2790,13 @@ export async function renderMockExamsView() {
     defaultMarks = '32 Marks';
     pacingSummary =
       'Single Booklet Duration: 55 mins &bull; Q1(a)/(b) Consequence (12m total) &bull; Q2 Narrative (15m) &bull; Q3 Importance (28m)';
+  } else if (unitId === 'cold_war') {
+    specTitle = 'Paper 2: Superpower Relations and the Cold War, 1941–91';
+    specPaperRef = '1HI0/P4';
+    defaultTime = '55 Minutes';
+    defaultMarks = '32 Marks';
+    pacingSummary =
+      'Single Booklet Duration: 55 mins &bull; Q1(a)/(b) Consequence (12m total) &bull; Q2 Narrative (15m) &bull; Q3 Importance (28m)';
   } else if (unitId === 'weimar_nazi_germany') {
     specTitle = 'Paper 3: Weimar and Nazi Germany, 1918–1939';
     specPaperRef = '1HI0/31';
@@ -2914,6 +3000,7 @@ export async function renderMockExamsView() {
       unitId === 'weimar_nazi_germany' ||
       unitId === 'eee' ||
       unitId === 'usa' ||
+      unitId === 'cold_war' ||
       (unitId === 'edexcel_medicine' && mock.id !== 'mock_2025_clone'),
     );
     const msFileName =

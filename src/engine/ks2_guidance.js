@@ -978,7 +978,7 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
           <i class="fa-solid fa-triangle-exclamation"></i> <span>Misconceptions &amp; Hinge Discussion</span>
         </button>
         <button class="tg-tab" data-target="tg-answers" style="background: transparent; border: none; border-bottom: 3px solid transparent; color: #64748b; font-weight: 700; font-size: 0.85rem; padding: 12px 16px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-          <i class="fa-solid fa-check-double"></i> <span>Worksheet Answer Key &amp; WAGOLL</span>
+          <i class="fa-solid fa-key"></i> <span>Worksheet Answer Key &amp; WAGOLL</span>
         </button>
       </div>
 

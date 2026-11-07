@@ -834,7 +834,7 @@ const A5_BOOKLET_CSS = `
 // MAIN COMPILATION SCRIPT
 // --------------------------------------------------------------------------
 async function compileQuizBookletHtml() {
-  const qrUrl = 'https://the-history-revision-hub.netlify.app/?unit=great_war_part2&view=quizzes';
+  const qrUrl = 'https://the-history-revision-hub.netlify.app/?view=interactive&unit=great_war_part2';
   const qrDataUrl = await QRCode.toDataURL(qrUrl, {
     margin: 0,
     color: { dark: '#000000', light: '#ffffff' },
@@ -996,11 +996,11 @@ async function compileQuizBookletHtml() {
           <span class="q-prompt">${item.q}</span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl">Answer:</span>
+          <span class="q-line-lbl">Fact:</span>
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl">Detail:</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>`;

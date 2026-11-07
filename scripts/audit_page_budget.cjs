@@ -361,7 +361,7 @@ async function auditPageBudget(page, options = {}) {
           // 5. Internal Multi-Column Prose Void Audit
           let internalProseGap = 0;
           const prose = p.querySelector(
-            '.two-column-prose, .two-column-prose-grid, .prose-two-column',
+            '.two-column-prose, .two-column-prose-grid, .prose-two-column, .prose-columns',
           );
           if (prose) {
             const proseRect = prose.getBoundingClientRect();

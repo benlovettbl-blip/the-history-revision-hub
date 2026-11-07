@@ -1,4 +1,12 @@
 export default {
+  "synopsis": "Armed merchantmen braving uncharted oceans, chartered monopolies extorting immense wealth from the Mughal Empire, and the catastrophic human horror of the Transatlantic Slave Trade. An isolated northern island built global dominion on ruthless commercial exploitation, sugar plantations drenched in blood, and forced labor across the Americas. Confront the reality of the Middle Passage, the fierce guerrilla defiance of Queen Nanny and Jamaican Maroons, and the explosive rebellion of the Thirteen Colonies—as tea was cast into Boston Harbor and George Washington shattered imperial rule to ignite the American Revolution.",
+  "synopsis_tags": [
+      "East India Company & Mughal Court",
+      "Transatlantic Slave Trade & Middle Passage",
+      "Plantation Slavery in the Caribbean",
+      "Queen Nanny & Maroon Resistance",
+      "American Revolution & Yorktown (1783)"
+  ],
   "id": "first_british_empire",
   "title": "The First British Empire (1600–1783)",
   "short_title": "The First British Empire",

@@ -96,11 +96,11 @@ export function getStructureStrip(questionObj, marks, unitId = '') {
 </ul>`;
   }
 
-  // 7. Consequence (4 Marks in Paper 2 Conflict in the Middle East)
+  // 7. Consequence (4 Marks in Paper 2 Period Study: CME & Cold War)
   if (
     qType.includes('consequence') ||
     /explain (?:one|two) consequence/i.test(qText) ||
-    ((qNum.includes('1(A)') || qNum.includes('1(B)')) && unitId === 'cme_new')
+    ((qNum.includes('1(A)') || qNum.includes('1(B)')) && (unitId === 'cme_new' || unitId === 'cold_war'))
   ) {
     return `<strong>4-Mark Consequence PEE Structure Strip:</strong>
 <div style="font-size: 0.9rem; margin-top: 4px; color: #475569; font-style: italic;">Edexcel Paper 2 specification format: Single direct consequence with detailed historical causation.</div>
@@ -128,7 +128,7 @@ export function getStructureStrip(questionObj, marks, unitId = '') {
   if (
     qType.includes('narrative') ||
     /narrative account/i.test(qText) ||
-    (qNum === 'Q2' && unitId === 'cme_new')
+    (qNum === 'Q2' && (unitId === 'cme_new' || unitId === 'cold_war'))
   ) {
     return `<strong>8-Mark Narrative Account Structure Strip (Chronological &amp; Causal Flow):</strong>
 <div style="font-size: 0.9rem; margin-top: 4px; color: #475569; font-style: italic;">Edexcel Paper 2 Period Study question format.</div>
@@ -144,7 +144,7 @@ export function getStructureStrip(questionObj, marks, unitId = '') {
   if (
     qType.includes('importance') ||
     /importance of/i.test(qText) ||
-    ((qNum.includes('3(A)') || qNum.includes('3(B)')) && unitId === 'cme_new')
+    ((qNum.includes('3(A)') || qNum.includes('3(B)') || qNum === 'Q3') && (unitId === 'cme_new' || unitId === 'cold_war'))
   ) {
     return `<strong>8-Mark Importance Question Structure Strip:</strong>
 <div style="font-size: 0.9rem; margin-top: 4px; color: #475569; font-style: italic;">Edexcel Paper 2 Period Study question format.</div>
@@ -247,8 +247,8 @@ export function getPacingMinutes(marks, unitId = '', qType = '', qText = '') {
   const normText = (qText || '').toLowerCase();
   const normType = (qType || '').toLowerCase();
 
-  // Middle East (Paper 2)
-  if (normUnit.includes('cme')) {
+  // Period Study (Paper 2: CME & Cold War)
+  if (normUnit.includes('cme') || normUnit.includes('cold_war')) {
     if (marks === 4) return 6; // Q1(a)/(b) Consequence (6m: 1m plan + 5m write)
     if (marks === 8) return 14; // Q2 Narrative or Q3 Importance (14m: 2m plan + 12m write)
     if (marks === 16) return 28; // Q3 Both choices (28m: 4m plan + 24m write)
@@ -600,9 +600,14 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
               <div style="font-size: 0.82rem; color: #1d4ed8;">Explore real exam questions, mark schemes, examiner report warnings, and syllabus gaps.</div>
             </div>
           </div>
-          <button type="button" id="epz-btn-view-matrix" class="main-btn epz-btn" style="background: #1e40af; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-table-cells"></i> Open Question Matrix
-          </button>
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <button type="button" id="epz-btn-view-matrix" class="main-btn epz-btn" style="background: #1e40af; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-table-cells"></i> Open Question Matrix
+            </button>
+            <button type="button" class="main-btn epz-btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_paper2_exam_guide');}" style="background: #0284c7; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Open Visual Exam Technique Guide">
+              <i class="fa-solid fa-chart-pie" style="color: #fde047;"></i> Question Technique Guide
+            </button>
+          </div>
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 20px; background: #f8fafc; padding: 25px; border-radius: 16px; border: 1px solid #e2e8f0;">

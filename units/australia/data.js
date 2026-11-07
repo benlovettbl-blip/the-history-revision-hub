@@ -1,4 +1,12 @@
 export default {
+  "synopsis": "Sixty-five thousand years of the world's oldest continuous living culture collided in 1788 with eleven British convict ships casting anchor in Sydney Cove. Step beyond the colonial myth of terra nullius to discover the profound cosmology, complex diplomatic systems, and sophisticated fire-stick land management of First Nations peoples. Confront the brutal realities of convict transportation, the iron-fisted governance of penal colonies, and the fierce resistance of warriors like Pemulwuy during the Frontier Wars. From the blood-soaked Black War in Van Diemen's Land and the miners' democratic insurrection at the Eureka Stockade to the birth of a federated Commonwealth in 1901—explore the enduring story of invasion, resistance, and unbroken Indigenous survival.",
+  "synopsis_tags": [
+      "First Nations Custodianship & Songlines",
+      "First Fleet & Penal Colony (1788)",
+      "Pemulwuy & The Frontier Wars",
+      "Governor Arthur & The Black War",
+      "Eureka Stockade & Federation (1901)"
+  ],
   "homepage_background": "/images/francis_fowkes_sydney_cove_1788.jpg",
   "cover_image": "/images/prison_hulks.jpg",
   "id": "australia",

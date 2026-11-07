@@ -363,6 +363,24 @@ export function initEventDelegation() {
               if (icon) icon.className = 'fa-solid fa-eye-slash';
               btn.style.background = 'linear-gradient(135deg, #64748b 0%, #475569 100%)';
             }
+
+            const modelBtn =
+              target.closest('.btn-pedagogy-model') ||
+              (target.classList?.contains('btn-pedagogy-model') ? target : null);
+            if (modelBtn) {
+              const icon = modelBtn.querySelector('i');
+              if (icon && (icon.classList.contains('fa-eye') || icon.classList.contains('fa-eye-slash'))) {
+                icon.className = 'fa-solid fa-eye-slash';
+              }
+              if (modelBtn.title && modelBtn.title.includes('Reveal')) {
+                modelBtn.title = modelBtn.title.replace('Reveal', 'Hide');
+              }
+              Array.from(modelBtn.childNodes).forEach((node) => {
+                if (node.nodeType === 3 && node.textContent.includes('Reveal')) {
+                  node.textContent = node.textContent.replace('Reveal', 'Hide');
+                }
+              });
+            }
           } else {
             el.classList.remove('revealed');
             el.style.display = 'none';
@@ -377,6 +395,24 @@ export function initEventDelegation() {
               const icon = btn.querySelector('i');
               if (icon) icon.className = 'fa-solid fa-lightbulb';
               btn.style.background = '';
+            }
+
+            const modelBtn =
+              target.closest('.btn-pedagogy-model') ||
+              (target.classList?.contains('btn-pedagogy-model') ? target : null);
+            if (modelBtn) {
+              const icon = modelBtn.querySelector('i');
+              if (icon && (icon.classList.contains('fa-eye') || icon.classList.contains('fa-eye-slash'))) {
+                icon.className = 'fa-solid fa-eye';
+              }
+              if (modelBtn.title && modelBtn.title.includes('Hide')) {
+                modelBtn.title = modelBtn.title.replace('Hide', 'Reveal');
+              }
+              Array.from(modelBtn.childNodes).forEach((node) => {
+                if (node.nodeType === 3 && node.textContent.includes('Hide')) {
+                  node.textContent = node.textContent.replace('Hide', 'Reveal');
+                }
+              });
             }
           }
         } else if (window.toggleElement) {
@@ -529,6 +565,25 @@ export function initEventDelegation() {
         }
         break;
       }
+      case 'switch-model-tier': {
+        const tierTargetId = target.dataset.targetTier || target.getAttribute('data-target-tier');
+        const cardContainer = target.closest('.model-tier-container');
+        if (cardContainer && tierTargetId) {
+          cardContainer.querySelectorAll('.model-tier-tab-btn').forEach((btn) => {
+            const btnTarget = btn.dataset.targetTier || btn.getAttribute('data-target-tier');
+            const isActive = btnTarget === tierTargetId;
+            btn.style.background = isActive ? '#0f172a' : '#ffffff';
+            btn.style.color = isActive ? '#ffffff' : '#334155';
+            btn.style.borderColor = isActive ? '#0f172a' : '#cbd5e1';
+            btn.style.fontWeight = isActive ? '700' : '600';
+            btn.classList.toggle('active', isActive);
+          });
+          cardContainer.querySelectorAll('.model-tier-pane').forEach((pane) => {
+            pane.style.display = pane.id === tierTargetId ? 'block' : 'none';
+          });
+        }
+        break;
+      }
       case 'switch-poet-tab': {
         const poetTargetId = target.dataset.targetPoet;
         const cardContainer = target.closest('.poetry-dossier-card');
@@ -610,64 +665,11 @@ export function initEventDelegation() {
       case 'open-video-modal': {
         const youtubeId = target.dataset.youtube;
         const videoKey = target.dataset.videoKey;
-        const initialStart = parseInt(target.dataset.start || '0', 10) || 0;
         const videoData =
           (window.__videoStore && videoKey && window.__videoStore[videoKey]) || null;
         if (youtubeId) {
-          const formatBold = window.formatBold || ((s) => s);
           const overlay = document.createElement('div');
           overlay.className = 'modal-overlay video-theater-overlay no-print';
-
-          // Global seek handler for interactive timestamp buttons
-          window.seekTheaterVideo = function (seconds, ytId) {
-            const iframe = document.getElementById('theater-player-frame');
-            if (!iframe) return;
-            const videoId = ytId || iframe.dataset.youtubeId || youtubeId;
-
-            // 1. PostMessage to YouTube API for smooth seek
-            try {
-              iframe.contentWindow.postMessage(
-                JSON.stringify({
-                  event: 'command',
-                  func: 'seekTo',
-                  args: [seconds, true],
-                }),
-                '*',
-              );
-              iframe.contentWindow.postMessage(
-                JSON.stringify({
-                  event: 'command',
-                  func: 'playVideo',
-                  args: [],
-                }),
-                '*',
-              );
-            } catch (err) {}
-
-            // 2. Direct reload to guarantee playback from timestamp
-            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&start=${seconds}&rel=0`;
-
-            // 3. Visual confirmation toast
-            const m = Math.floor(seconds / 60);
-            const s = seconds % 60;
-            const timeLabel = `${m}:${s < 10 ? '0' : ''}${s}`;
-            let toast = document.getElementById('theater-seek-toast');
-            if (!toast) {
-              toast = document.createElement('div');
-              toast.id = 'theater-seek-toast';
-              toast.className = 'theater-seek-toast';
-              const playerCol = document.querySelector('.video-theater-player-col');
-              if (playerCol) playerCol.appendChild(toast);
-            }
-            if (toast) {
-              toast.innerHTML = `<i class="fa-solid fa-play" style="font-size: 0.7rem; color: #38bdf8;"></i> Jumped to ${timeLabel}`;
-              toast.classList.add('visible');
-              clearTimeout(window.__seekToastTimeout);
-              window.__seekToastTimeout = setTimeout(() => {
-                if (toast) toast.classList.remove('visible');
-              }, 1800);
-            }
-          };
 
           const removeModal = () => {
             document.removeEventListener('keydown', onEsc);
@@ -681,163 +683,70 @@ export function initEventDelegation() {
             if (e.target === overlay) removeModal();
           };
 
-          const hasPedagogy = Boolean(
-            videoData &&
-              (videoData.viewing_task ||
-                videoData.pathwayInfo?.guidance ||
-                videoData.teacher_guidance),
-          );
+          const title = videoData?.cleanTitle || videoData?.title || 'Historical Documentary Resource';
+          const duration = videoData?.prominentDur || videoData?.duration || '';
+          const pathway = videoData?.pathwayInfo?.pathway || videoData?.pathway || 'Documentary';
+          const icon = videoData?.pathwayInfo?.icon || 'fa-solid fa-film';
 
-          if (hasPedagogy) {
-            // DUAL-PANE CLASSROOM VIDEO THEATER
-            const title = videoData.cleanTitle || 'Archival Video Resource';
-            const duration = videoData.duration || videoData.prominentDur || '';
-            const pathway =
-              videoData.pathwayInfo?.pathway || videoData.pathway || 'Video Pathway';
-            const rawGuidance =
-              videoData.teacher_guidance || videoData.pathwayInfo?.guidance || '';
-            const rawTask = videoData.viewing_task || '';
-            const rawModelAnswer = videoData.model_answer || '';
-            const icon = videoData.pathwayInfo?.icon || 'fa-solid fa-route';
+          // Clean synopsis: strip out any Recommended Watch Window or Lesson Phase tags
+          let rawGuidance = videoData?.teacher_guidance || videoData?.description || '';
+          let synopsis = rawGuidance
+            .replace(/Recommended\s+(?:Class\s+|Starter\s+)?Watch\s+Window:?[^•\n\r]*[•\-]?/gi, '')
+            .replace(/Lesson\s+Phase:?[^•\n\r]*[•\-]?/gi, '')
+            .replace(/Tone\s+Alert:?[^•\n\r]*[•\-]?/gi, '')
+            .replace(/\[\d{1,2}:\d{2}\]/g, '')
+            .replace(/•\s*$/, '')
+            .trim();
 
-            // Convert all timestamps into clickable scrubbing pills
-            const guidance = formatInteractiveTimestamps(rawGuidance, youtubeId, true);
-            const task = formatInteractiveTimestamps(rawTask, youtubeId, true);
-            const modelAnswer = formatInteractiveTimestamps(rawModelAnswer, youtubeId, true);
-
-            // Extract recommended watch window timestamp if present
-            const windowMatch = rawGuidance.match(
-              /(?:Recommended\s+(?:Class\s+|Starter\s+)?Watch\s+Window|Recommended\s+Clip):\s*(\d{1,2}:\d{2})\s*[–\-]\s*(\d{1,2}:\d{2})/i,
-            );
-            let jumpButtonHtml = '';
-            if (windowMatch) {
-              const startStr = windowMatch[1];
-              const endStr = windowMatch[2];
-              const parts = startStr.split(':').map(Number);
-              const startSecs = parts.length === 2 ? parts[0] * 60 + parts[1] : 0;
-              jumpButtonHtml = `
-                <button type="button" class="btn-theater-timestamp" onclick="window.seekTheaterVideo(${startSecs}, '${youtubeId}')">
-                  <i class="fa-solid fa-play"></i> Jump to Watch Window (${startStr}&ndash;${endStr})
-                </button>
-              `;
-            }
-
-            overlay.innerHTML = `
-              <div class="video-theater-modal" role="dialog" aria-modal="true">
-                <!-- Header -->
-                <div class="video-theater-header">
-                  <div class="video-theater-title-group">
-                    <span class="video-shelf-pathway-pill">
-                      <i class="${icon}"></i> ${pathway}
-                    </span>
-                    <span class="video-theater-title">${title}</span>
-                    ${duration ? `<span class="video-shelf-duration-badge"><i class="fa-solid fa-clock"></i> ${duration}</span>` : ''}
-                  </div>
-                  <div class="video-theater-controls">
-                    <span class="video-theater-indicator">
-                      <i class="fa-solid fa-chalkboard-user"></i> Dual-Pane Classroom Theater
-                    </span>
-                    <button type="button" class="btn-close-theater" title="Press ESC to close">&times; Close (Esc)</button>
-                  </div>
+          overlay.innerHTML = `
+            <div class="video-theater-modal video-cinema-modal" role="dialog" aria-modal="true" style="max-width: 1060px; width: 94vw;">
+              <!-- Cinema Header -->
+              <div class="video-theater-header" style="padding: 12px 18px; background: #1e293b; border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+                <div class="video-theater-title-group" style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1;">
+                  <span class="video-shelf-pathway-pill" style="flex-shrink: 0; background: #dc2626; color: #ffffff; padding: 3px 9px; border-radius: 4px; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
+                    <i class="${icon}"></i> ${pathway}
+                  </span>
+                  <span class="video-theater-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 700; color: #f8fafc; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${title}</span>
+                  ${duration ? `<span class="video-shelf-duration-badge" style="flex-shrink: 0; font-size: 0.76rem; color: #94a3b8; background: rgba(255,255,255,0.08); padding: 2px 8px; border-radius: 12px;"><i class="fa-solid fa-clock"></i> ${duration}</span>` : ''}
                 </div>
-
-                <!-- Dual-Pane Body -->
-                <div class="video-theater-body">
-                  <!-- Left: Video Player Pane -->
-                  <div class="video-theater-player-col">
-                    <div class="video-theater-iframe-wrap">
-                      <iframe id="theater-player-frame" data-youtube-id="${youtubeId}" src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&enablejsapi=1${initialStart > 0 ? `&start=${initialStart}` : ''}&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-theater-navigator">
-                      <div style="display: flex; align-items: center; gap: 8px;">
-                        ${jumpButtonHtml}
-                        <button type="button" class="btn-theater-timestamp" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2);" onclick="window.seekTheaterVideo(0, '${youtubeId}')">
-                          <i class="fa-solid fa-rotate-left"></i> Restart (0:00)
-                        </button>
-                      </div>
-                      <div style="font-size: 0.68rem; color: #94a3b8; font-weight: 600;">
-                        <i class="fa-solid fa-shield-halved" style="color: #10b981; margin-right: 4px;"></i> The History Revision Hub
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Right: Pedagogical Companion Pane -->
-                  <div class="video-theater-task-col">
-                    ${
-                      guidance
-                        ? `
-                      <div class="theater-briefing-box">
-                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 5px; flex-wrap: wrap; gap: 4px;">
-                          <div style="font-size: 0.72rem; font-weight: 800; color: #4338ca; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 5px;">
-                            <i class="fa-solid fa-graduation-cap"></i> Teacher Pedagogical Briefing
-                          </div>
-                          <span style="font-size: 0.68rem; font-weight: 700; color: #4338ca; background: #e0e7ff; padding: 2px 7px; border-radius: 4px;">
-                            ${pathway}
-                          </span>
-                        </div>
-                        <div style="font-size: 0.85rem; color: #1e293b; line-height: 1.5;">
-                          ${formatBold(guidance)}
-                        </div>
-                      </div>
-                    `
-                        : ''
-                    }
-
-                    ${
-                      task
-                        ? `
-                      <div class="theater-task-box">
-                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-                          <div style="font-size: 0.72rem; font-weight: 800; color: #b45309; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 5px;">
-                            <i class="fa-solid fa-list-check"></i> Viewing Question Tasks
-                          </div>
-                          <span style="font-size: 0.68rem; font-weight: 700; color: #b45309; background: #fef3c7; padding: 2px 7px; border-radius: 4px;">
-                            Mixed-Ability Scaffold
-                          </span>
-                        </div>
-                        <div class="theater-task-content" style="font-size: 0.88rem; color: #78350f; line-height: 1.55;">
-                          ${formatBold(task)}
-                        </div>
-                      </div>
-                    `
-                        : ''
-                    }
-
-                    ${
-                      modelAnswer
-                        ? `
-                      <details class="theater-model-details">
-                        <summary>
-                          <span style="display: flex; align-items: center; gap: 6px;">
-                            <i class="fa-solid fa-circle-check" style="color: #16a34a;"></i> Reveal Model Answer &amp; Teacher Mark Scheme
-                          </span>
-                          <span style="font-size: 0.70rem; color: #15803d; font-weight: 600; text-transform: uppercase;">Click to expand</span>
-                        </summary>
-                        <div>
-                          ${formatBold(modelAnswer)}
-                        </div>
-                      </details>
-                    `
-                        : ''
-                    }
-                  </div>
+                <div class="video-theater-controls" style="display: flex; align-items: center; gap: 10px; flex-shrink: 0;">
+                  <a href="https://www.youtube.com/watch?v=${youtubeId}" target="_blank" rel="noopener noreferrer" style="color: #cbd5e1; font-size: 0.78rem; font-weight: 600; text-decoration: none; padding: 5px 12px; border-radius: 5px; background: rgba(255,255,255,0.08); display: inline-flex; align-items: center; gap: 6px; border: 1px solid rgba(255,255,255,0.12); transition: background 0.15s ease;" title="Open video directly on YouTube">
+                    <i class="fa-brands fa-youtube" style="color: #ef4444;"></i> Open on YouTube
+                  </a>
+                  <button type="button" class="btn-close-theater" style="background: none; border: 1px solid rgba(255,255,255,0.2); color: #cbd5e1; font-size: 0.82rem; font-weight: 700; cursor: pointer; padding: 5px 12px; border-radius: 5px;" title="Press ESC to close">&times; Close (Esc)</button>
                 </div>
               </div>
-            `;
-          } else {
-            // Standard Single Video Modal (Clean 16:9 Cinema)
-            overlay.innerHTML = `
-              <div class="modal-content" style="background: transparent; width: 92%; max-width: 960px; position: relative;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                  <span style="color: #94a3b8; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;"><i class="fa-solid fa-play" style="color: #ef4444; margin-right: 6px;"></i> Archival Documentary Player &bull; Press ESC to close</span>
-                  <button type="button" class="btn-close-theater">&times; Close</button>
-                </div>
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.7); border: 1px solid rgba(255,255,255,0.15); background: #000;">
-                  <iframe src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&enablejsapi=1${initialStart > 0 ? `&start=${initialStart}` : ''}&rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              <!-- Cinema Body (Clean 16:9 Player) -->
+              <div class="video-cinema-body" style="background: #000000; padding: 0; position: relative;">
+                <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 72vh; overflow: hidden; background: #000;">
+                  <iframe id="theater-player-frame" src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&enablejsapi=1&rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
               </div>
-            `;
-          }
+
+              <!-- Cinema Footer -->
+              ${
+                synopsis
+                  ? `
+                <div class="video-cinema-footer" style="padding: 12px 18px; background: #0f172a; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; gap: 16px;">
+                  <div style="font-size: 0.86rem; color: #94a3b8; line-height: 1.5; flex: 1;">
+                    <strong style="color: #cbd5e1; margin-right: 6px;"><i class="fa-solid fa-circle-info" style="color: #38bdf8;"></i> Overview:</strong> ${synopsis}
+                  </div>
+                  <div style="font-size: 0.72rem; color: #64748b; font-weight: 600; white-space: nowrap; display: flex; align-items: center; gap: 6px;">
+                    <i class="fa-solid fa-shield-halved" style="color: #10b981;"></i> The History Revision Hub
+                  </div>
+                </div>
+              `
+                  : `
+                <div class="video-cinema-footer" style="padding: 8px 18px; background: #0f172a; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: flex-end; align-items: center;">
+                  <div style="font-size: 0.72rem; color: #64748b; font-weight: 600; display: flex; align-items: center; gap: 6px;">
+                    <i class="fa-solid fa-shield-halved" style="color: #10b981;"></i> The History Revision Hub
+                  </div>
+                </div>
+              `
+              }
+            </div>
+          `;
 
           const closeBtn = overlay.querySelector('.btn-close-theater');
           if (closeBtn) closeBtn.onclick = removeModal;

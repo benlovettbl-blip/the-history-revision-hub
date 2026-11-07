@@ -22,7 +22,7 @@ const lesson4 = [
   ),
   makeQuestion(
     'In a narrative account analysing escalating tension between Israel, Syria and Jordan, what was the significance of the River Jordan water dispute in the mid-1960s?',
-    'Syria attempted to divert the Banias and Hasbani headwaters away from Israel’s National Water Carrier, prompting the IDF to use tank and airstrikes to destroy Syrian construction machinery.',
+    'Syria attempted to divert the River Jordan headwaters away from Israel’s National Water Carrier, prompting the IDF to use tank and airstrikes to destroy Syrian construction machinery.',
     'Israel attempted to dam the Suez Canal in Sinai to starve Egyptian agriculture in the Nile Delta.',
     'Jordan and Israel fought a naval battle in the Dead Sea over the rights to extract chemical potash fertilizers.',
     'The United Nations placed the entire Sea of Galilee under French colonial administration to prevent border clashes.',

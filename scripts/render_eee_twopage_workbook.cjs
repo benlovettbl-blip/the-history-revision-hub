@@ -524,7 +524,7 @@ function renderSpinePage(cfg, pageNum, quip, keyTopicNum) {
                 ${stageNum}
               </span>
               <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; color: #000000; white-space: nowrap; flex-shrink: 0;">
-                ${st.date ? `${st.date}` : ''}
+                ${st.date || st.dates || ''}
               </span>
               <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
               <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">

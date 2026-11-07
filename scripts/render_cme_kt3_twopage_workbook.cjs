@@ -1460,31 +1460,47 @@ function buildCmeKt3TwoPageWorkbook(unitData, period) {
           KEY TOPIC 3.${cfg.lessonNum} &bull; EDEXCEL EXAM PRACTICE
         </span>
         <span style="font-family: 'Inter', sans-serif; font-size: 7.5pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-          PAPER 2 (1HI0/2B) &bull; 12 MARKS TOTAL
+          PAPER 2 (1HI0/2B) &bull; 16 MARKS TOTAL
         </span>
       </div>
 
-      <!-- Section 1: Question 1 Consequence [4 marks] -->
-      <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 6px; margin-bottom: 4px; background: #ffffff;">
+      <!-- Section 1: Question 1 Consequences [8 marks total: Q1(a) & Q1(b)] -->
+      <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 2.5px 5px; margin-bottom: 2.5px; background: #ffffff;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.2pt; text-transform: uppercase; letter-spacing: 0.5px;">
-            &bull; Question 1: Explain One Consequence [4 marks]
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.5px;">
+            &bull; Question 1(a): Explain One Consequence [4 marks]
           </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; border: 1px solid #000000; padding: 0 4px; border-radius: 2px;">[4 MARKS &bull; 5 MINS]</span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; border: 1px solid #000000; padding: 0 4px; border-radius: 2px;">[4 MARKS &bull; 5 MINS]</span>
         </div>
-        <p style="font-family: 'Playfair Display', serif; font-size: 9.2pt; font-weight: 800; color: #000000; margin: 1px 0 2px 0; line-height: 1.2;">
+        <p style="font-family: 'Playfair Display', serif; font-size: 8.6pt; font-weight: 800; color: #000000; margin: 1px 0 1.5px 0; line-height: 1.15;">
           ${cfg.consequenceA.question}
         </p>
-        <div style="font-family: 'Inter', sans-serif; font-size: 7.3pt; font-style: italic; color: #222222; margin-bottom: 1.5px; line-height: 1.15;">
-          <strong>P-F-C Structure:</strong> <strong>Point</strong> (State one direct consequence) &bull; <strong>Fact</strong> (Support with precise historical evidence and dates) &bull; <strong>Consequence</strong> (Explain how this altered subsequent developments/relations).
+        <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 700; margin-bottom: 1px; color: #111111;">
+          <strong>P-F-C Stems:</strong> One major consequence was that... &bull; Specifically, this occurred when... &bull; Consequently, this directly led to...
         </div>
-        <div style="font-family: 'Inter', sans-serif; font-size: 7.3pt; font-weight: 700; margin-bottom: 2px;">
-          <strong>Sentence Stems:</strong> One major consequence was that... &bull; Specifically, this was evident when... &bull; Consequently, this directly resulted in... / altered relations because...
+        <div class="task-line" style="height: 7.6mm;"></div>
+        <div class="task-line" style="height: 7.6mm;"></div>
+        <div class="task-line" style="height: 7.6mm;"></div>
+        <div class="task-line" style="height: 7.6mm;"></div>
+      </div>
+
+      <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 2.5px 5px; margin-bottom: 2.5px; background: #ffffff;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1px;">
+          <strong style="font-family: 'Inter', sans-serif; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.5px;">
+            &bull; Question 1(b): Explain One Consequence [4 marks]
+          </strong>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 800; border: 1px solid #000000; padding: 0 4px; border-radius: 2px;">[4 MARKS &bull; 5 MINS]</span>
         </div>
-        <div class="task-line" style="height: 8.0mm;"></div>
-        <div class="task-line" style="height: 8.0mm;"></div>
-        <div class="task-line" style="height: 8.0mm;"></div>
-        <div class="task-line" style="height: 8.0mm;"></div>
+        <p style="font-family: 'Playfair Display', serif; font-size: 8.6pt; font-weight: 800; color: #000000; margin: 1px 0 1.5px 0; line-height: 1.15;">
+          ${cfg.consequenceB.question}
+        </p>
+        <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 700; margin-bottom: 1px; color: #111111;">
+          <strong>P-F-C Stems:</strong> Another key consequence was that... &bull; Specifically, this was evident because... &bull; Consequently, this altered relations...
+        </div>
+        <div class="task-line" style="height: 7.6mm;"></div>
+        <div class="task-line" style="height: 7.6mm;"></div>
+        <div class="task-line" style="height: 7.6mm;"></div>
+        <div class="task-line" style="height: 7.6mm;"></div>
       </div>
 
       <!-- Section 2: Extended Exam Practice (Q2 Narrative [8m] or Q3 Utility [8m]) -->
@@ -1544,7 +1560,7 @@ function buildCmeKt3TwoPageWorkbook(unitData, period) {
       <!-- Initial Response Lines (Ruled Grid with 8mm Margin • Calibrated 8.0mm Pitch) -->
       <div class="lined-page-grid" style="flex: 1; margin: 2px 0 2px 0;">
         ${Array.from(
-          { length: 19 },
+          { length: 10 },
           () => `
             <div class="lined-row">
               <div class="lined-margin-cell">&nbsp;</div>

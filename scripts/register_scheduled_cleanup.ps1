@@ -2,7 +2,7 @@
 # Reclaims disk space automatically whenever cache exceeds 5 GB.
 
 $TaskName = "HistoryHub-Cache-Cleaner"
-$ProjectDir = "C:\Projects\meoncross-history.netlify.app"
+$ProjectDir = (Resolve-Path "$PSScriptRoot\..").Path
 $ScriptPath = "$ProjectDir\scripts\clean_cache.cjs"
 $NodeExe = (Get-Command node).Source
 

@@ -222,7 +222,7 @@ async function applyFixes() {
       title: "Source A: Declassified Flash Precedence Cable from Captain John Herrick of the USS Maddox (4 August 1964)",
       image: "/units/usa/assets/sources/uss-maddox.jpg",
       image_url: "/units/usa/assets/sources/uss-maddox.jpg",
-      caption: "The destroyer USS Maddox (DD-731) underway in the Gulf of Tonkin, August 1964.",
+      caption: "Declassified US Navy operational track chart showing the reported naval maneuvers and torpedo contacts of the USS Maddox (DD-731) in the Gulf of Tonkin (4 August 1964).",
       text: "Review of action makes many reported contacts and torpedoes fired appear doubtful. Freak weather effects on radar and overeager sonarmen may have accounted for many reports. No actual visual sightings by Maddox. Suggest complete evaluation before any further action taken.",
       attribution: "Commander, Task Group 72.1 (USS Maddox) to Commander Seventh Fleet, Flash Precedence Cable (4 August 1964)"
     },

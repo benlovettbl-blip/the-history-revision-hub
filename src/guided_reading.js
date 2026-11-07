@@ -10,6 +10,151 @@ export function cancelReadingSpeech() {
   }
 }
 
+export function ensureGuidedReadingStyles() {
+  if (typeof document === 'undefined') return;
+  if (document.getElementById('guided-reading-layout-styles')) return;
+  const styleEl = document.createElement('style');
+  styleEl.id = 'guided-reading-layout-styles';
+  styleEl.textContent = `
+    .literary-companion-studio {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .literary-companion-studio * {
+      box-sizing: border-box;
+    }
+    .reading-hero-grid {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+    .reading-hero-cover-col {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+    .reading-hero-meta-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      min-width: 0;
+    }
+    .reading-book-title {
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+    .reading-extract-section {
+      padding: 32px 36px;
+      background: #ffffff;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .reading-extract-body {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.22rem;
+      line-height: 1.95;
+      color: #1e293b;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+    .reading-base-banner {
+      margin-top: 36px;
+      padding: 18px 24px;
+      background: #f1f5f9;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .literary-companion-studio {
+        padding: 12px 10px 48px 10px !important;
+      }
+      .reading-masthead {
+        padding: 16px 14px !important;
+        gap: 12px !important;
+        border-radius: 10px !important;
+        margin-bottom: 16px !important;
+      }
+      .reading-masthead h1 {
+        font-size: 1.35rem !important;
+        line-height: 1.25 !important;
+      }
+      .reading-masthead p {
+        font-size: 0.84rem !important;
+        line-height: 1.45 !important;
+      }
+      .reading-masthead .btn {
+        padding: 6px 12px !important;
+        font-size: 0.8rem !important;
+      }
+      .reading-tab-bar {
+        gap: 6px !important;
+        margin-bottom: 16px !important;
+      }
+      .reading-tab-bar button {
+        padding: 7px 11px !important;
+        font-size: 0.78rem !important;
+        white-space: normal !important;
+        text-align: left !important;
+      }
+      .reading-hero-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+        padding: 16px 14px !important;
+      }
+      .reading-hero-cover-col {
+        max-width: 200px !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+      }
+      .reading-hero-meta-col {
+        width: 100% !important;
+        gap: 14px !important;
+      }
+      .reading-book-title {
+        font-size: 1.45rem !important;
+        line-height: 1.25 !important;
+      }
+      .audio-read-aloud-studio {
+        padding: 14px 12px !important;
+        border-radius: 8px !important;
+      }
+      .audio-read-aloud-studio button {
+        padding: 7px 12px !important;
+        font-size: 0.82rem !important;
+      }
+      .reading-discussion-card {
+        padding: 14px 12px !important;
+        border-radius: 6px !important;
+      }
+      .reading-extract-section {
+        padding: 18px 14px !important;
+      }
+      .reading-extract-body {
+        font-size: 1.05rem !important;
+        line-height: 1.75 !important;
+      }
+      .reading-extract-body p {
+        margin-bottom: 1.2rem !important;
+      }
+      .reading-base-banner {
+        padding: 14px 12px !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+      }
+    }
+  `;
+  document.head.appendChild(styleEl);
+}
+
 export function initGuidedReadingTask(container, guidedReadingData, globalState = {}) {
   // Cancel any speech that was playing prior to re-render
   cancelReadingSpeech();
@@ -36,6 +181,9 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
   let activeIndex = guidedReadingData.findIndex((d) => d.lesson_index === currentLessonIndex);
   if (activeIndex === -1) activeIndex = 0;
   let activeReading = guidedReadingData[activeIndex];
+
+  // Ensure responsive styles are loaded
+  ensureGuidedReadingStyles();
 
   // Outer Wrapper
   const outerWrapper = document.createElement('div');
@@ -180,10 +328,10 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
       <div class="guided-reading-card" style="background: #ffffff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1.5px solid #e2e8f0; overflow: hidden;">
         
         <!-- Top Hero Section: Book Cover, Metadata, Author Context, and Audio Studio -->
-        <div style="padding: 28px; background: #f8fafc; border-bottom: 1.5px solid #e2e8f0; display: grid; grid-template-columns: 240px 1fr; gap: 28px; align-items: start;">
+        <div class="reading-hero-grid" style="padding: 28px; background: #f8fafc; border-bottom: 1.5px solid #e2e8f0; display: grid; grid-template-columns: 240px 1fr; gap: 28px; align-items: start;">
           
           <!-- Left Column: Front Cover Artwork Plate -->
-          <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div class="reading-hero-cover-col" style="display: flex; flex-direction: column; gap: 12px;">
             <div style="position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 2px solid #cbd5e1; background: #0f172a;">
               <img src="${getAssetUrl(readingData.cover_image)}" alt="${readingData.book_title}" style="width: 100%; height: auto; display: block; object-fit: cover;">
               <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(15,23,42,0.92) 0%, transparent 100%); padding: 12px 10px 8px 10px; color: #ffffff;">
@@ -213,7 +361,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
           </div>
 
           <!-- Right Column: Metadata, Author Bio, and Audio Read-Aloud Studio -->
-          <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div class="reading-hero-meta-col" style="display: flex; flex-direction: column; gap: 16px; min-width: 0;">
             <div>
               <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 6px;">
                 <span style="font-size: 0.76rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; background: #fef3c7; color: #92400e; padding: 3px 10px; border-radius: 4px; border: 1px solid #fde68a;">
@@ -223,7 +371,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
                   <i class="fa-solid fa-certificate"></i> Eyewitness Primary Source
                 </span>
               </div>
-              <h2 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 2.1rem; font-weight: 900; color: #0f172a; line-height: 1.2;">
+              <h2 class="reading-book-title" style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 2.1rem; font-weight: 900; color: #0f172a; line-height: 1.2;">
                 ${readingData.book_title}
               </h2>
               <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; color: #475569; font-size: 1.05rem;">
@@ -278,7 +426,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
             </div>
 
             <!-- Parent & Scholar Discussion Guide Card -->
-            <div style="background: #ffffff; border: 2px solid #bfdbfe; border-left: 5px solid #1e40af; border-radius: 8px; padding: 16px 20px;">
+            <div class="reading-discussion-card" style="background: #ffffff; border: 2px solid #bfdbfe; border-left: 5px solid #1e40af; border-radius: 8px; padding: 16px 20px;">
               <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; color: #1e3a8a;">
                 <i class="fa-solid fa-comments" style="font-size: 1.15rem; color: #2563eb;"></i>
                 <h3 style="margin: 0; font-size: 1.02rem; font-weight: 800; font-family: 'Playfair Display', Georgia, serif;">
@@ -303,7 +451,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
         </div>
 
         <!-- Extract Reading Body -->
-        <div style="padding: 32px 36px; background: #ffffff;">
+        <div class="reading-extract-section" style="padding: 32px 36px; background: #ffffff;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 12px; flex-wrap: wrap; gap: 12px;">
             <div style="font-size: 0.82rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #64748b; display: flex; align-items: center; gap: 8px;">
               <i class="fa-solid fa-align-left"></i> <span>Unabridged Wartime Reading Extract</span>
@@ -328,7 +476,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
           ${glossaryHtml}
 
           <!-- Homework Protocol Banner at Base -->
-          <div style="margin-top: 36px; padding: 18px 24px; background: #f1f5f9; border-radius: 8px; border: 1px solid #cbd5e1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+          <div class="reading-base-banner" style="margin-top: 36px; padding: 18px 24px; background: #f1f5f9; border-radius: 8px; border: 1px solid #cbd5e1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
             <div style="display: flex; align-items: center; gap: 14px;">
               <div style="width: 42px; height: 42px; border-radius: 50%; background: #1e3a8a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
                 <i class="fa-solid fa-pencil"></i>

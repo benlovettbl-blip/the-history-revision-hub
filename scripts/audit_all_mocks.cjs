@@ -17,6 +17,11 @@ const pdf = require('pdf-parse');
 const BASE_DIR = path.join(__dirname, '..', 'public', 'pdfs', 'mocks');
 
 const TARGETS = {
+  cold_war: {
+    mocks: ['cold_war_mock_a.pdf', 'cold_war_mock_b.pdf', 'cold_war_mock_c.pdf', 'cold_war_mock_radar.pdf'],
+    expected: 12,
+    type: 'Paper 2 Period Study (12p Booklet)'
+  },
   cme_new: {
     mocks: ['cme_mock_a.pdf', 'cme_mock_b.pdf', 'cme_mock_c.pdf', 'cme_mock_d.pdf', 'cme_mock_e.pdf', 'cme_mock_radar.pdf'],
     expected: 12,

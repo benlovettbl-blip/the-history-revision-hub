@@ -11319,3 +11319,166 @@ details.source-enquiry-reveal .reveal-arrow {
   }
 }
 
+/* ==========================================================================
+   LITERARY COMPANION & GUIDED READING RESPONSIVE STYLES
+   ========================================================================== */
+.literary-companion-studio {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.guided-reading-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.reading-hero-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.reading-hero-cover-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.reading-hero-meta-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.reading-book-title {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.reading-extract-section {
+  padding: 32px 36px;
+  background: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.reading-extract-body {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.22rem;
+  line-height: 1.95;
+  color: #1e293b;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.reading-base-banner {
+  margin-top: 36px;
+  padding: 18px 24px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+@media (max-width: 768px) {
+  .literary-companion-studio {
+    padding: 12px 10px 48px 10px !important;
+  }
+  .reading-masthead {
+    padding: 16px 14px !important;
+    gap: 12px !important;
+    border-radius: 10px !important;
+    margin-bottom: 16px !important;
+  }
+  .reading-masthead h1 {
+    font-size: 1.35rem !important;
+    line-height: 1.25 !important;
+  }
+  .reading-masthead p {
+    font-size: 0.84rem !important;
+    line-height: 1.45 !important;
+  }
+  .reading-masthead .btn {
+    padding: 6px 12px !important;
+    font-size: 0.8rem !important;
+  }
+  .reading-tab-bar {
+    gap: 6px !important;
+    margin-bottom: 16px !important;
+  }
+  .reading-tab-bar button {
+    padding: 7px 11px !important;
+    font-size: 0.78rem !important;
+    white-space: normal !important;
+    text-align: left !important;
+  }
+  .reading-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding: 16px 14px !important;
+  }
+  .reading-hero-cover-col {
+    max-width: 200px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+  .reading-hero-meta-col {
+    width: 100% !important;
+    gap: 14px !important;
+  }
+  .reading-book-title {
+    font-size: 1.45rem !important;
+    line-height: 1.25 !important;
+  }
+  .audio-read-aloud-studio {
+    padding: 14px 12px !important;
+    border-radius: 8px !important;
+  }
+  .audio-read-aloud-studio button {
+    padding: 7px 12px !important;
+    font-size: 0.82rem !important;
+  }
+  .reading-discussion-card {
+    padding: 14px 12px !important;
+    border-radius: 6px !important;
+  }
+  .reading-extract-section {
+    padding: 18px 14px !important;
+  }
+  .reading-extract-body {
+    font-size: 1.05rem !important;
+    line-height: 1.75 !important;
+  }
+  .reading-extract-body p {
+    margin-bottom: 1.2rem !important;
+  }
+  .reading-base-banner {
+    padding: 14px 12px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+
+  /* Marking Bank Mobile Refinements */
+  .marking-bank-portal {
+    padding: 12px 10px 48px 10px !important;
+  }
+  .marking-bank-portal h1 {
+    font-size: 1.4rem !important;
+  }
+  .marking-enquiry-section {
+    border-radius: 8px !important;
+  }
+  .marking-question-card {
+    padding: 12px 12px !important;
+  }
+}
+
+

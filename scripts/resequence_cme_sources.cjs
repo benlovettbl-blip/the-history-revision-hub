@@ -458,9 +458,9 @@ function formatSource(s, letter, lessonIndex) {
   });
 
   // Switch Block 2 narrative image to avoid duplicate with Source A (cme_madrid_conference_1991.jpg)
-  l12.narrative_blocks[1].image = '/units/cme_new/assets/oslo_cover.png';
+  l12.narrative_blocks[1].image = '/images/cme_nobel_peace_prize_oslo_1994.jpg';
   l12.narrative_blocks[1].caption =
-    'Archival document representing the confidential Norwegian-brokered bilateral channel conducted in suburban Oslo between Israeli academic Yair Hirschfeld and PLO negotiator Ahmed Qurei in 1993.';
+    'The 1994 Nobel Peace Prize Laureates in Oslo (10 December 1994): PLO Chairman Yasser Arafat, Israeli Foreign Minister Shimon Peres, and Prime Minister Yitzhak Rabin display their Nobel diplomas and gold medals in Oslo, Norway, honoring the historic compromise of the Oslo Accords.';
 
   console.log('✅ Lesson 12 re-sequenced');
 }

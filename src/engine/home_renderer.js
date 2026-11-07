@@ -286,7 +286,7 @@ export function renderHomepage() {
   contentArea.innerHTML = `
       <div>
         ${topSectionHTML}
-        ${renderUnitSynopsis(appStore.state.activeUnitData, window.currentUnitId)}
+        ${renderUnitSynopsis(appStore.state.activeUnitData, activeUnitId)}
         ${medicineVisualGuideBannerHTML}
         ${isTripUnit ? '' : `<h2 style="margin-top: 40px; text-align: left; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Key Topic Lessons</h2>`}
         ${lessonsHTML}

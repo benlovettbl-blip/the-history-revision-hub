@@ -55,6 +55,15 @@ const UNITS = [
     types: ['question_booklet', 'sources_booklet', 'complete_pack']
   },
   {
+    id: 'cold_war',
+    paper: 'Paper 2 (Option P4)',
+    pdfDir: path.join(BASE_DIR, 'public', 'pdfs', 'mocks', 'cold_war'),
+    htmlDir: path.join(BASE_DIR, 'public', 'units', 'cold_war'),
+    rawDir: null,
+    mocks: ['cold_war_mock_a', 'cold_war_mock_b', 'cold_war_mock_c', 'cold_war_mock_radar'],
+    types: ['paper2_qp']
+  },
+  {
     id: 'cme_new',
     paper: 'Paper 2 (Option P5)',
     pdfDir: path.join(BASE_DIR, 'public', 'pdfs', 'mocks', 'cme_new'),

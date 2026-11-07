@@ -581,9 +581,11 @@ function renderSpinePage(cfg, pageNum) {
         )
         .join('');
 
-      const rawQ = (st.questionHeading || st.question || '').replace(/^\[[\d\.]+\]\s*/, '');
+      const rawQ = (st.questionHeading || st.question || '').replace(/^\[[\d\.]+\]\s*/, '').trim();
       const stageNum = st.step || sIdx + 1;
-      const questionText = rawQ.length > 80 ? rawQ.slice(0, 77) + '...' : rawQ;
+      const questionText = rawQ;
+      const combinedLen = questionText.length + (st.date ? String(st.date).length : 0);
+      const qFontSize = combinedLen > 105 ? '7.8pt' : combinedLen > 95 ? '8.2pt' : combinedLen > 85 ? '8.5pt' : '8.8pt';
 
       return `
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
@@ -599,7 +601,7 @@ function renderSpinePage(cfg, pageNum) {
                 ${st.date ? `${st.date}` : ''}
               </span>
               <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span class="stage-question-text" data-base-size="${qFontSize}" style="font-family: 'Playfair Display', serif; font-size: ${qFontSize}; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 ${questionText}
               </span>
             </div>

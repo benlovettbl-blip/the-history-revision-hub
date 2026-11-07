@@ -1,4 +1,12 @@
 export default {
+  "synopsis": "Crowns shattered, royal heads rolling from the executioner's block, and an island kingdom consumed by religious fury and civil war. From the spark of Henry VIII’s seismic Break with Rome and the deadly religious pendulum of the Tudor monarchs to the gunpowder treason of 1605 and the fiery sea battle against the Spanish Armada. Witness Charles I claim absolute Divine Right, triggering a bloody clash between Royalist Cavaliers and Cromwell's New Model Army that culminated in public regicide, the puritan Republic, and the revolutionary birth of constitutional monarchy in the Glorious Revolution of 1689.",
+  "synopsis_tags": [
+      "Break with Rome & Dissolution",
+      "The Spanish Armada (1588)",
+      "Gunpowder Plot (1605)",
+      "English Civil War & Regicide",
+      "Glorious Revolution & Bill of Rights (1689)"
+  ],
   "id": "monarchy_religion_power",
   "title": "Crown, Church, or Parliament (1517–1689)",
   "short_title": "Crown, Church, or Parliament",
@@ -1311,7 +1319,7 @@ export default {
         {
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=7RjKG6gwmiE",
-          "title": "Henry VIII: Mind of a Tyrant – The Break with Rome | David Starkey",
+          "title": "Henry VIII: Mind of a Tyrant Part One with David Starkey",
           "duration": "47 mins 31 secs",
           "pathway": "Documentary",
           "teacher_guidance": "Dr. David Starkey analyzes the royal manuscript letters, parliamentary scrolls, and the psychological descent of Henry VIII from an idealistic Renaissance prince into a ruthless autocrat. Recommended Watch Window: 14:00–26:00 • Lesson Phase: In-Depth Documentary Investigation & Royal Psychology. Tone Alert: Rigorous documentary featuring primary Tudor state papers.",

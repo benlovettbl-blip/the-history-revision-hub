@@ -879,7 +879,7 @@ async function buildCompanionHtml(data) {
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">${starterPrompt}</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>`;

@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/menin_road_nash_opt.jpg',
   heroAlt: 'The Menin Road (1919) by Paul Nash',
   heroCaption: 'The Menin Road (1919) by Paul Nash • Imperial War Museums (ART 2242). Commissioned by the British War Memorials Committee, this iconic modernist masterpiece captures the apocalyptic devastation of the Ypres Salient, echoing the wartime memoirs of Siegfried Sassoon and Ernst Jünger.',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?unit=great_war_part2&view=quizzes',
+  qrUrl: 'https://the-history-revision-hub.netlify.app/?view=interactive&unit=great_war_part2',
   glossaryConcepts: [
     { term: 'Attrition', def: 'A military strategy of wearing down the enemy to the point of physical collapse through continuous losses of personnel and material (e.g. Verdun, The Somme).' },
     { term: 'Total War', def: 'A war that involves the complete mobilization of entire populations, industrial economies, and resources, erasing boundaries between soldiers and civilians.' },

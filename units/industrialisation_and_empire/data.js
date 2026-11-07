@@ -1,4 +1,12 @@
 export default {
+  "synopsis": "Steam engines shrieking in smoke-choked valleys, red-hot iron rolling through Henry Cort's puddling furnaces, and coal-fired textile mills driving the heartbeat of the modern world. Britain transformed from an agrarian island into the undisputed 'Workshop of the World', yet this unprecedented economic power was bought with human agony: child scavengers crawling beneath thunderous cotton looms, cholera epidemics stalking filthy back-to-back slums, and desperate handloom weavers smashing machinery. Follow the courageous struggle of millions of ordinary working people—from the bloodied field of Peterloo to the millions-strong petitions of the Chartists—who fought against the ruling elite to win the right to vote and forge modern British democracy.",
+  "synopsis_tags": [
+      "Steam Engines & Factory System",
+      "Child Labour & Factory Acts",
+      "Peterloo Massacre (1819)",
+      "Cholera & Urban Slums",
+      "The Chartist Movement & Democracy"
+  ],
   "title": "KS3: The Industrial Revolution (1750–1900)",
   "short_title": "The Industrial Revolution",
   "homepage_background": "/images/coalbrookdale_by_night.jpg",
@@ -5372,7 +5380,7 @@ export default {
           "explanation": "Working-class reformers denounced the Act as the 'Great Betrayal', realizing it enfranchised middle-class factory owners while completely excluding workers."
         },
         {
-          "question": "Which of the following was NOT one of the Six Points set out in the 1838 People's Charter?",
+          "question": "Name two of the core political demands set out in the 1838 People's Charter.",
           "q": "Which of the following was NOT one of the Six Points set out in the 1838 People's Charter?",
           "options": [
             "equal voting rights for women",

@@ -814,6 +814,195 @@ function classifyCmeQuestion(lessonId, q, idx) {
 
 
 // ====================================================
+// 3.5. Superpower Relations & Cold War (Option P4) Extraction
+// ====================================================
+
+const coldWarData = require(path.join(__dirname, '../units/cold_war/data.js')).default;
+
+function cleanColdWarQText(str) {
+  if (!str) return '';
+  let res = str.replace(/^[0-9]+(?:\([a-c]\))?\.\s*/, '').trim();
+  res = res.replace(/\s*[\(\[]\s*\d+\s*(?:marks?|SPaG)?\s*[\)\]]\s*$/i, '').trim();
+  res = res.replace(/\s*\[?\s*\d+\s*marks?\s*\]?\s*$/i, '').trim();
+  return res;
+}
+
+function classifyColdWarQuestion(lessonId, q, idx) {
+  const t = (q.type || '').toLowerCase();
+  const tariff = (q.tariff || '').toLowerCase();
+  const text = (q.question || '').toLowerCase();
+
+  let qCode = idx === 0 ? '1(a)' : (idx === 1 ? '1(b)' : '1(c)');
+  let type = '4-Mark Consequence';
+  let marks = 4;
+  let targetMins = 6;
+
+  if (t === 'narrative_8' || tariff.includes('narrative') || text.includes('narrative account')) {
+    qCode = '2';
+    type = '8-Mark Narrative Account';
+    marks = 8;
+    targetMins = 15;
+  } else if (t === 'importance_8' || tariff.includes('importance') || text.includes('importance of')) {
+    qCode = '3';
+    type = '8-Mark Importance';
+    marks = 8;
+    targetMins = 14;
+  } else if (tariff.includes('4') || t === '4-mark' || text.includes('consequence')) {
+    qCode = idx === 0 ? '1(a)' : (idx === 1 ? '1(b)' : '1(c)');
+    type = '4-Mark Consequence';
+    marks = 4;
+    targetMins = 6;
+  }
+
+  let stimulus = [];
+  if (q.stimulus && Array.isArray(q.stimulus)) {
+    stimulus = q.stimulus;
+  } else if (q.bullet_points && Array.isArray(q.bullet_points)) {
+    stimulus = q.bullet_points;
+  }
+
+  let modelAns = '';
+  if (typeof q.model === 'string') {
+    modelAns = q.model;
+  } else if (q.model && typeof q.model === 'object') {
+    modelAns = q.model.tier_4m?.content || q.model.tier_8m?.content || q.model.tier_10m?.content || '';
+  }
+
+  return {
+    id: `${lessonId}_cw_q${idx + 1}`,
+    mockId: 'cold_war_canonical_practice',
+    qCode,
+    mockTitle: 'Official Edexcel Syllabus Practice Station',
+    paperCode: 'Option P4 (1HI0/P4)',
+    type,
+    marks,
+    targetMins,
+    questionText: cleanColdWarQText(q.question),
+    stimulus,
+    sourceExtract: '',
+    modelAnswer: modelAns,
+    pdfUrl: '/units/cold_war/pupil_workbook.pdf',
+    mockUrl: '/units/cold_war/'
+  };
+}
+
+function loadColdWarMockQuestions(mockId) {
+  const msPath = path.join(__dirname, `../public/units/cold_war/${mockId}_mark_scheme.html`);
+  if (!fs.existsSync(msPath)) return {};
+  const html = fs.readFileSync(msPath, 'utf8');
+  const dom = new JSDOM(html);
+  const doc = dom.window.document;
+  const cards = doc.querySelectorAll('.q-card');
+
+  // Q1a
+  const q1aTitle = cards[0]?.querySelector('.q-title')?.textContent.trim() || '';
+  const q1aModel = cards[0]?.querySelector('.model-box')?.innerHTML.trim() || '';
+
+  // Q1b
+  const q1bTitle = cards[1]?.querySelector('.q-title')?.textContent.trim() || '';
+  const q1bModel = cards[1]?.querySelector('.model-box')?.innerHTML.trim() || '';
+
+  // Q2
+  const q2Title = cards[2]?.querySelector('.q-title')?.textContent.trim() || '';
+  const q2Model = cards[2]?.querySelector('.model-box')?.innerHTML.trim() || '';
+
+  // Q3
+  const q3Options = [];
+  if (cards[3]) {
+    const optContainers = cards[3].querySelectorAll('h3');
+    const optModels = cards[3].querySelectorAll('.model-box');
+    optContainers.forEach((h3, i) => {
+      q3Options.push({
+        title: h3.textContent.trim(),
+        model: optModels[i]?.innerHTML.trim() || ''
+      });
+    });
+  }
+
+  return {
+    q1a: {
+      id: `${mockId}_q1a`,
+      mockId,
+      qCode: '1(a)',
+      mockTitle: mockId.includes('radar') ? 'Predicted Radar Mock Paper (Unexamined Spec Gaps)' : 'Predicted Paper 2 Mock Examination',
+      paperCode: 'Option P4 (1HI0/P4)',
+      type: '4-Mark Consequence',
+      marks: 4,
+      targetMins: 6,
+      questionText: cleanColdWarQText(q1aTitle),
+      stimulus: [],
+      sourceExtract: '',
+      modelAnswer: q1aModel,
+      pdfUrl: `/pdfs/mocks/cold_war/${mockId}.pdf`,
+      mockUrl: `/units/cold_war/${mockId}.html`
+    },
+    q1b: {
+      id: `${mockId}_q1b`,
+      mockId,
+      qCode: '1(b)',
+      mockTitle: mockId.includes('radar') ? 'Predicted Radar Mock Paper (Unexamined Spec Gaps)' : 'Predicted Paper 2 Mock Examination',
+      paperCode: 'Option P4 (1HI0/P4)',
+      type: '4-Mark Consequence',
+      marks: 4,
+      targetMins: 6,
+      questionText: cleanColdWarQText(q1bTitle),
+      stimulus: [],
+      sourceExtract: '',
+      modelAnswer: q1bModel,
+      pdfUrl: `/pdfs/mocks/cold_war/${mockId}.pdf`,
+      mockUrl: `/units/cold_war/${mockId}.html`
+    },
+    q2: {
+      id: `${mockId}_q2`,
+      mockId,
+      qCode: '2',
+      mockTitle: mockId.includes('radar') ? 'Predicted Radar Mock Paper (Unexamined Spec Gaps)' : 'Predicted Paper 2 Mock Examination',
+      paperCode: 'Option P4 (1HI0/P4)',
+      type: '8-Mark Narrative Account',
+      marks: 8,
+      targetMins: 15,
+      questionText: cleanColdWarQText(q2Title),
+      stimulus: [],
+      sourceExtract: '',
+      modelAnswer: q2Model,
+      pdfUrl: `/pdfs/mocks/cold_war/${mockId}.pdf`,
+      mockUrl: `/units/cold_war/${mockId}.html`
+    },
+    q3: q3Options.map((opt, i) => ({
+      id: `${mockId}_q3_${String.fromCharCode(97 + i)}`,
+      mockId,
+      qCode: `3(${String.fromCharCode(97 + i)})`,
+      mockTitle: mockId.includes('radar') ? 'Predicted Radar Mock Paper (Unexamined Spec Gaps)' : 'Predicted Paper 2 Mock Examination',
+      paperCode: 'Option P4 (1HI0/P4)',
+      type: '8-Mark Importance',
+      marks: 8,
+      targetMins: 14,
+      questionText: cleanColdWarQText(opt.title),
+      stimulus: [],
+      sourceExtract: '',
+      modelAnswer: opt.model,
+      pdfUrl: `/pdfs/mocks/cold_war/${mockId}.pdf`,
+      mockUrl: `/units/cold_war/${mockId}.html`
+    }))
+  };
+}
+
+const cwMockA = loadColdWarMockQuestions('cold_war_mock_a');
+const cwMockB = loadColdWarMockQuestions('cold_war_mock_b');
+const cwMockC = loadColdWarMockQuestions('cold_war_mock_c');
+const cwMockRadar = loadColdWarMockQuestions('cold_war_mock_radar');
+
+const coldWarMockMapping = {
+  lesson_1: [cwMockA.q1a, cwMockB.q1a, cwMockB.q3?.[0], cwMockC.q3?.[0], cwMockRadar.q1a].filter(Boolean),
+  lesson_2: [cwMockA.q2, cwMockC.q1a, cwMockRadar.q3?.[0]].filter(Boolean),
+  lesson_3: [cwMockA.q1b, cwMockA.q3?.[0], cwMockB.q1b, cwMockB.q2, cwMockB.q3?.[1], cwMockRadar.q3?.[1]].filter(Boolean),
+  lesson_4: [cwMockA.q3?.[1], cwMockC.q2].filter(Boolean),
+  lesson_5: [cwMockA.q3?.[2], cwMockB.q3?.[2], cwMockRadar.q2].filter(Boolean),
+  lesson_6: [cwMockC.q1b, cwMockC.q3?.[1], cwMockC.q3?.[2], cwMockRadar.q3?.[2]].filter(Boolean),
+  lesson_7: [cwMockRadar.q1b].filter(Boolean)
+};
+
+// ====================================================
 // 4. Early Elizabethan England (Option B4) Extraction
 // ====================================================
 
@@ -1104,6 +1293,7 @@ const finalDatabase = {
   usa: {},
   weimar_nazi_germany: {},
   cme_new: {},
+  cold_war: {},
   eee: {},
   edexcel_medicine: {}
 };
@@ -1152,6 +1342,26 @@ for (const l of cmeData.lessons) {
   finalDatabase.cme_new[l.id] = lessonQuestions;
 }
 
+// Build Superpower Relations & Cold War (Option P4)
+for (const l of coldWarData.lessons) {
+  const lessonQuestions = [];
+
+  // Canonical in-lesson questions
+  if (l.exam_practice && l.exam_practice.questions) {
+    l.exam_practice.questions.forEach((q, idx) => {
+      lessonQuestions.push(classifyColdWarQuestion(l.id, q, idx));
+    });
+  }
+
+  // Mapped official predicted mock questions
+  const mockList = coldWarMockMapping[l.id] || [];
+  mockList.forEach(mq => {
+    lessonQuestions.push(mq);
+  });
+
+  finalDatabase.cold_war[l.id] = lessonQuestions;
+}
+
 // Build Early Elizabethan England (eee)
 for (const l of eeeData.lessons) {
   if (l.exam_practice && l.exam_practice.questions) {
@@ -1184,4 +1394,4 @@ export function getLessonMockQuestions(unitId, lessonId) {
 `;
 
 fs.writeFileSync(path.join(__dirname, '../src/engine/mock_exam_bank_data.js'), fileContent, 'utf8');
-console.log('✅ Generated src/engine/mock_exam_bank_data.js successfully with USA, Weimar & Nazi Germany, CME, Early Elizabethan England, and Medicine in Britain!');
+console.log('✅ Generated src/engine/mock_exam_bank_data.js successfully with USA, Weimar & Nazi Germany, CME, Cold War, Early Elizabethan England, and Medicine in Britain!');

@@ -75,6 +75,10 @@ for (const unitId of gcseUnits) {
 
   lessons.forEach((l, idx) => {
     totalLessonsAudited++;
+    // Introductory/overview orientation lessons are explicitly exempt from summative exam practice
+    if (l.id === 'lesson_0' || l.is_intro || l.is_overview) {
+      return;
+    }
     const hasExam = !!(l.exam_practice && (l.exam_practice.questions || l.exam_practice.question || l.exam_practice.part_a));
     if (!hasExam) {
       console.log(`  ❌ [${unitId}] Lesson ${idx + 1} (${l.id || 'no-id'}): Missing exam_practice companion!`);

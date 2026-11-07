@@ -1,4 +1,14 @@
 export default {
+  "synopsis": "Before the catastrophic rupture of the Second World War, over nine million Jewish people inhabited every corner of Europe, speaking dozens of languages and enriching the intellectual, artistic, and political fabric of the continent. Trace how Adolf Hitler and the Nazi regime systematically weaponized racial antisemitism to strip German Jews of civil rights and legal personhood, before exploiting the smoke and chaos of total war to engineer the continent-wide annihilation of six million human beings. From the claustrophobic terror of the Warsaw Ghetto and the secret chronicle of the Ringelblum Archive to the mass shootings of the Einsatzgruppen in the killing fields of Ukraine, the industrial extermination machinery of Auschwitz-Birkenau, and the armed heroism of ghetto fighters and righteous rescuers—confront the deepest moral questions of complicity, indifference, human resistance, and the enduring obligation to remember.",
+  "synopsis_tags": [
+      "Pre-War Jewish Life & Culture",
+      "Nuremberg Laws & Kristallnacht (1935–38)",
+      "Warsaw Ghetto & The Ringelblum Archive",
+      "Einsatzgruppen & Holocaust by Bullets",
+      "Auschwitz-Birkenau & Extermination Camps",
+      "Armed Resistance & Righteous Rescuers",
+      "Liberation & The Nuremberg Trials"
+  ],
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
     "instructions": [
@@ -263,30 +273,48 @@ export default {
       "vocab": [
         {
           "term": "Shtetl",
-          "definition": "A small Jewish town or village community in Central and Eastern Europe, characterised by Yiddish language, religious tradition, and close-knit family life."
+          "definition": "A small Jewish town or village community in Central and Eastern Europe, characterised by Yiddish language, religious tradition, and close-knit family life.",
+          "syllables": "Shtetl",
+          "phonetic": "shtetl",
+          "tier": "3"
         },
         {
           "term": "Yiddish",
-          "definition": "A historical language spoken by Ashkenazi Jews in Central and Eastern Europe, combining elements of German, Hebrew, and Slavic languages."
+          "definition": "A historical language spoken by Ashkenazi Jews in Central and Eastern Europe, combining elements of German, Hebrew, and Slavic languages.",
+          "syllables": "Yi-ddish",
+          "phonetic": "yiddish",
+          "tier": "3"
         },
         {
           "term": "Assimilation",
-          "definition": "The process whereby a minority group integrates into the wider society, adopting the dominant culture, language, and civic habits while retaining personal heritage."
+          "definition": "The process whereby a minority group integrates into the wider society, adopting the dominant culture, language, and civic habits while retaining personal heritage.",
+          "syllables": "A-ssi-mila-tion",
+          "phonetic": "assimilation",
+          "tier": "2"
         },
         {
           "term": "Sephardic Jews",
-          "definition": "Jewish communities with ancestral origins in the Iberian Peninsula (Spain and Portugal), who settled across the Mediterranean and spoke Ladino."
+          "definition": "Jewish communities with ancestral origins in the Iberian Peninsula (Spain and Portugal), who settled across the Mediterranean and spoke Ladino.",
+          "syllables": "Se-phardic Jews",
+          "phonetic": "sephardic jews",
+          "tier": "2"
         },
         {
           "term": "Racial Antisemitism",
-          "definition": "A 19th-century pseudo-scientific doctrine asserting that Jewish identity was a fixed biological race rather than a religious or cultural choice."
+          "definition": "A 19th-century pseudo-scientific doctrine asserting that Jewish identity was a fixed biological race rather than a religious or cultural choice.",
+          "syllables": "Ra-cial an-ti-sem-i-tism",
+          "phonetic": "racial ˌæntiˈsɛmɪtɪzəm",
+          "tier": "3"
         }
       ],
       "narrative_blocks": [
         {
           "act": 1,
           "title": "The European Mosaic: 9.5 Million Lives (c. 1930s)",
-          "text": "<span class=\"para-ref\">[1.1]</span> In the early 1930s, approximately <strong>9.5 million Jewish people</strong> lived in Europe, representing just under two percent of the continent’s total population. They did not live in a single country, nor did they share an identical way of life. Over sixty percent of European Jews lived in Central and Eastern Europe—predominantly within the borders of Poland, Romania, Lithuania, Hungary, and the western territories of the Soviet Union. In contrast, smaller communities lived in Western Europe: roughly 500,000 in Germany, 300,000 in Britain, and 250,000 in France. Depending on where they were born, a Jewish child in 1933 might grow up speaking Yiddish in a bustling Polish city, speaking German in an intellectual Berlin household, or speaking Ladino along the sunlit Mediterranean docks of Thessaloniki.",
+          "image": "/images/jewish_population_europe_1933_map.jpg",
+          "image_alt": "Archival map of Jewish population distribution across Europe in 1933",
+          "caption": "Demographic Map of European Jewish Life (1933, USHMM): Prior to the Holocaust, 9.5 million Jewish people lived across Europe, over half in Poland and the western Soviet Union.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In the early 1930s, approximately **9.5 million Jewish people** lived in Europe, representing just under two percent of the continent’s total population. They did not live in a single country, nor did they share an identical way of life. Over 60% of European Jews lived in Central and Eastern Europe—predominantly within the borders of Poland, Romania, Lithuania, Hungary, and the western territories of the Soviet Union. In contrast, smaller communities lived in Western Europe: roughly 500,000 in Germany, 300,000 in Britain, and 250,000 in France. Across each country, Jewish communities sustained a vibrant regional life with distinct traditions, occupations, and local institutions. Depending on where they were born, a Jewish child in 1933 might grow up speaking Yiddish in a bustling Polish city, speaking German in an intellectual Berlin household, or speaking Ladino along the sunlit Mediterranean docks of Thessaloniki.",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -322,7 +350,7 @@ export default {
         {
           "act": 2,
           "title": "Yiddishland: The Cultural Heartland of Eastern Europe",
-          "text": "<span class=\"para-ref\">[1.2]</span> Across the towns and countryside of Eastern Europe lay a distinct cultural world historians refer to as <em>Yiddishland</em>. In rural <strong>shtetls</strong> (small market towns) and expanding industrial centres like Warsaw, Łódź, and Kraków, millions of Jews spoke <strong>Yiddish</strong>—a language written in Hebrew characters combining medieval High German with Hebrew and Slavic vocabulary. In cities like <strong>Vilna</strong> (the capital of Lithuania), known affectionately as the <em>\"Jerusalem of the North\"</em>, Jewish life hummed with intellectual energy: world-renowned Talmudic academies existed alongside modern socialist political parties (such as the General Jewish Labour Bund), Zionist pioneering movements, Yiddish daily newspapers, and avant-garde art collectives. Jewish life in Eastern Europe was vibrant, fiercely debated, and deeply rooted.",
+          "text": "<span class=\"para-ref\">[1.2]</span> Across the towns and countryside of Eastern Europe lay a distinct cultural world historians refer to as <em>Yiddishland</em>. In rural **shtetls** (small market towns) and expanding big cities like Warsaw, Łódź, and Kraków, millions of Jews spoke **Yiddish**—a language written in Hebrew characters combining medieval High German with Hebrew and Slavic vocabulary. In cities like **Vilna** (the capital of Lithuania), known affectionately as the <em>\"Jerusalem of the North\"</em>, Jewish life hummed with intellectual energy: world-renowned Talmudic academies existed alongside modern socialist political parties (such as the General Jewish Labour Bund), Zionist pioneering movements, Yiddish daily papers and newspapers, and avant-garde art collectives. Jewish life in Eastern Europe was vibrant, fiercely debated, and deeply rooted.",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -354,14 +382,14 @@ export default {
             "image": "/images/warsaw_nalewki_street_bookstore_1930s.jpg",
             "src": "/images/warsaw_nalewki_street_bookstore_1930s.jpg"
           },
-          "image": "/images/jewish_population_europe_1933_map.jpg",
-          "image_alt": "Demographic distribution map of 9.5 million Jewish people across the nations of Europe in 1933",
-          "caption": "Pre-war demographic map illustrating the geographic distribution of over 9.5 million Jewish people across Europe in 1933, with the largest communities concentrated in Poland, the Soviet Union, and Romania."
+          "image": "/images/yiddishland_lodz_students_prewar.jpg",
+          "image_alt": "Jewish schoolboys studying in Łódź, Poland, before the Second World War",
+          "caption": "Young Jewish students studying in Łódź, Poland, before the Second World War, exemplifying the rich educational and communal traditions of Eastern European Yiddishland."
         },
         {
           "act": 3,
           "title": "Integration, Patriotism, and Civic Life in Central Europe",
-          "text": "<span class=\"para-ref\">[1.3]</span> The experience of Jewish communities in Western and Central Europe was markedly different. In the German Empire and the Weimar Republic, Jews had achieved full legal emancipation by 1871. Most German Jews were thoroughly <strong>assimilated</strong>: they spoke German as their mother tongue, attended state universities, celebrated German literature and music, and intermarried across faiths. During the First World War (1914–1918), over <strong>100,000 German Jews served in the German imperial armed forces</strong>; approximately 12,000 gave their lives for the Fatherland, and 18,000 were awarded the Iron Cross for battlefield bravery. German Jews saw themselves not as foreigners, but as loyal, patriotic Germans who made monumental contributions to science (such as Albert Einstein), medicine, philosophy, industry, and the arts.",
+          "text": "<span class=\"para-ref\">[1.3]</span> The experience of Jewish communities in Western and Central Europe was markedly different. In the German Empire and the Weimar Republic, Jews had achieved full civic emancipation and legal equality by 1871. Most German Jews were thoroughly **assimilated**: they spoke German as their mother tongue, attended state universities, celebrated German literature and music, and intermarried across faiths. During the First World War (WWI), over **100,000 German Jewish soldiers served in the imperial armed forces**; approximately 12,000 gave their lives for the Fatherland, and 18,000 were awarded Iron Crosses for battlefield bravery. German Jews saw themselves not as foreigners, but as loyal, patriotic Germans who made monumental contributions to science (such as Albert Einstein), medicine, philosophy, industry, and the arts.",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -397,13 +425,13 @@ export default {
         {
           "act": 4,
           "title": "The Sephardic World: Heritage of Southern Europe",
-          "text": "<span class=\"para-ref\">[1.4]</span> Further south, across Greece, the Balkans, and Turkey, lived Europe’s <strong>Sephardic Jewish communities</strong>, whose ancestors had been expelled from Spain and Portugal in the late fifteenth century. For centuries, the port city of <strong>Thessaloniki</strong> (Salonica) in northern Greece was known as the <em>\"Mother of Israel\"</em>, where over half the total population was Jewish. Sephardic Jews spoke <em>Ladino</em> (Judeo-Spanish), worked as dockers, merchants, customs officials, and academics, and observed the Sabbath so universally that the entire commercial port closed on Saturdays. Their heritage enriched the Mediterranean with centuries of distinctive music, philosophy, and culinary traditions that lived peacefully alongside Christian and Ottoman neighbours.",
+          "text": "<span class=\"para-ref\">[1.4]</span> Further south, across Greece, the Balkans, and Turkey, lived Europe’s **Sephardic Jewish communities**, whose ancestors had preserved their Spanish heritage after being expelled in 1492. For centuries, the port city of **Thessaloniki** (Salonica) in northern Greece was known as the <em>\"Mother of Israel\"</em>, where over half the total population was Jewish. Sephardic Jews had their own Ladino dialect spoken at home and in markets, worked as dockers, merchants, customs officials, and academics, and observed the Sabbath so universally that the entire commercial Thessaloniki port closes on Saturdays. Their heritage enriched the Mediterranean with centuries of distinctive music, philosophy, and culinary traditions that lived peacefully alongside Christian and Ottoman neighbours.",
           "source": {
             "letter": "D",
             "type": "visual",
-            "title": "Source D (Archival Record & Photograph): Sephardic Jewish Port Workers and Maritime Trade, Salonica (c. 1910–1930)",
-            "text": "For centuries, Thessaloniki was celebrated across the Mediterranean as \"La Madre de Israel\" (The Mother of Israel). It was the only major European commercial port where maritime shipping, customs houses, and downtown trade shut down completely every Friday evening for the Jewish Sabbath. From dockworkers and stevedores to doctors, bank directors, and philosophers, the community spoke Judeo-Spanish (Ladino), maintaining medieval Spanish ballads and traditions dating back to their expulsion from Spain in 1492.",
-            "caption": "Sephardic Jewish stevedores and dockworkers at the port of Salonica (Thessaloniki), Greece, where maritime trade stopped on the Jewish Sabbath.",
+            "title": "Source D (Archival Record & Photograph): Sephardic Jewish Trade Guild Marching in Salonica (c. 1908–1912)",
+            "text": "For centuries, Thessaloniki was celebrated across the Mediterranean as \"La Madre de Israel\" (The Mother of Israel). It was the only major European commercial port where maritime shipping, customs houses, and downtown trade shut down completely every Friday evening for the Jewish Sabbath. From dockworkers and trade guild members to doctors, bank directors, and philosophers, the community spoke Judeo-Spanish (Ladino), maintaining medieval Spanish ballads and traditions dating back to their expulsion from Spain in 1492.",
+            "caption": "Members of the Corporation des cordonniers israélites de Salonique marching through Salonica beneath their trade guild banner emblazoned in French and Hebrew with the Star of David.",
             "citation": "Jewish Museum of Thessaloniki / USHMM Document Collection (RG-68.046M).",
             "context": "The Sephardic Jewish community in Greece and the Mediterranean preserved a distinct linguistic, liturgical, and civic culture over four centuries under Ottoman and Greek rule. **Hinge Question:** In what ways did the Sephardic cultural world of Thessaloniki differ from the Ashkenazi world of Eastern Europe, and why is this distinction historically significant?",
             "hinge_question": "In what ways did the Sephardic cultural world of Thessaloniki differ from the Ashkenazi world of Eastern Europe, and why is this distinction historically significant?",
@@ -433,7 +461,7 @@ export default {
         {
           "act": 5,
           "title": "The Dark Shift: From Religious Anti-Judaism to Racial Antisemitism",
-          "text": "<span class=\"para-ref\">[1.5]</span> While European Jews built rich lives, they had long contended with prejudice. For centuries, Christian Europe had harboured <strong>religious anti-Judaism</strong>—blaming Jews for the crucifixion of Jesus, barring them from owning land or joining craft guilds, and subjecting them to periodic violent expulsions and pogroms. However, in the late nineteenth century, a fatal ideological mutation occurred. Influenced by pseudo-scientific misinterpretations of Darwinian biology, European theorists (such as Wilhelm Marr, who coined the term <em>antisemitism</em> in 1879) argued that Jews were not a religious community, but a distinct biological \"race\". Under traditional anti-Judaism, a Jewish person could escape discrimination through Christian baptism. Under modern <strong>racial antisemitism</strong>, Jewish identity was treated as an unchangeable genetic infection passed through the blood. It was this pseudo-scientific racial hatred that Adolf Hitler and the Nazi Party adopted as the core of their totalitarian worldview.",
+          "text": "<span class=\"para-ref\">[1.5]</span> While European Jews built rich lives, they had long contended with prejudice. For centuries, Christian Europe had harboured medieval Church hatred and **religious anti-Judaism**—blaming Jews for the crucifixion of Jesus, barring them from owning land or joining craft guilds, and subjecting them to periodic violent expulsions and pogroms. However, in the late nineteenth century, a fatal ideological mutation occurred. Influenced by pseudo-scientific misinterpretations of Darwinian biology, European theorists (such as Wilhelm Marr, who coined the term <em>antisemitism</em> in 1879) argued that Jews were not a religious community, but a distinct biological \"race\". Under traditional anti-Judaism, a Jewish person could escape discrimination through Christian baptism. Under modern **racial antisemitism**, framed around a pseudo-scientific biological blood theory, baptism was no escape because Jewish identity was treated as an unchangeable genetic infection passed through the blood. It was this pseudo-scientific racial hatred that Adolf Hitler and the Nazi Party adopted as the core of their totalitarian worldview.",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -639,9 +667,9 @@ export default {
         {
           "letter": "D",
           "type": "visual",
-          "title": "Source D (Archival Record & Photograph): Sephardic Jewish Port Workers and Maritime Trade, Salonica (c. 1910–1930)",
-          "text": "For centuries, Thessaloniki was celebrated across the Mediterranean as \"La Madre de Israel\" (The Mother of Israel). It was the only major European commercial port where maritime shipping, customs houses, and downtown trade shut down completely every Friday evening for the Jewish Sabbath. From dockworkers and stevedores to doctors, bank directors, and philosophers, the community spoke Judeo-Spanish (Ladino), maintaining medieval Spanish ballads and traditions dating back to their expulsion from Spain in 1492.",
-          "caption": "Sephardic Jewish stevedores and dockworkers at the port of Salonica (Thessaloniki), Greece, where maritime trade stopped on the Jewish Sabbath.",
+          "title": "Source D (Archival Record & Photograph): Sephardic Jewish Trade Guild Marching in Salonica (c. 1908–1912)",
+          "text": "For centuries, Thessaloniki was celebrated across the Mediterranean as \"La Madre de Israel\" (The Mother of Israel). It was the only major European commercial port where maritime shipping, customs houses, and downtown trade shut down completely every Friday evening for the Jewish Sabbath. From dockworkers and trade guild members to doctors, bank directors, and philosophers, the community spoke Judeo-Spanish (Ladino), maintaining medieval Spanish ballads and traditions dating back to their expulsion from Spain in 1492.",
+          "caption": "Members of the Corporation des cordonniers israélites de Salonique marching through Salonica beneath their trade guild banner emblazoned in French and Hebrew with the Star of David.",
           "citation": "Jewish Museum of Thessaloniki / USHMM Document Collection (RG-68.046M).",
           "context": "The Sephardic Jewish community in Greece and the Mediterranean preserved a distinct linguistic, liturgical, and civic culture over four centuries under Ottoman and Greek rule. **Hinge Question:** In what ways did the Sephardic cultural world of Thessaloniki differ from the Ashkenazi world of Eastern Europe, and why is this distinction historically significant?",
           "hinge_question": "In what ways did the Sephardic cultural world of Thessaloniki differ from the Ashkenazi world of Eastern Europe, and why is this distinction historically significant?",
@@ -771,6 +799,530 @@ export default {
           },
           "model_answer": "One consequence of the April 1933 Nazi anti-Jewish boycott was the legal and social exclusion of German Jews from public life. Specifically, SA stormtroopers stood outside Jewish shops and doctors' surgeries with placards, deterring customers and signaling to the German public that the Nazi state was systematically isolating Jews from the economy.",
           "topic": "Question 2: Explain One Consequence [4 marks • 5 mins]"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Approximately how many Jewish people lived in Europe in the early 1930s?",
+          "q": "Approximately how many Jewish people lived in Europe in the early 1930s?",
+          "options": [
+            "9.5 million",
+            "4.5 million",
+            "15 million",
+            "1.2 million"
+          ],
+          "answer": "9.5 million",
+          "a": "9.5 million",
+          "explanation": "In the early 1930s, approximately 9.5 million Jewish people lived in Europe, representing just under two percent of the continent's total population."
+        },
+        {
+          "question": "What proportion of Europe's total population was Jewish in the early 1930s?",
+          "q": "What proportion of Europe's total population was Jewish in the early 1930s?",
+          "options": [
+            "Just under two percent",
+            "Roughly ten percent",
+            "Around fifteen percent",
+            "Less than 0.1 percent"
+          ],
+          "answer": "Just under two percent",
+          "a": "Just under two percent",
+          "explanation": "Jewish people represented just under two percent of the entire European population in the early 1930s."
+        },
+        {
+          "question": "Where did over sixty percent of European Jews live prior to the Second World War?",
+          "q": "Where did over sixty percent of European Jews live prior to the Second World War?",
+          "options": [
+            "In Central and Eastern Europe",
+            "In Western Europe",
+            "In Southern Mediterranean ports",
+            "In Scandinavian countries"
+          ],
+          "answer": "In Central and Eastern Europe",
+          "a": "In Central and Eastern Europe",
+          "explanation": "Over sixty percent of European Jews lived in Central and Eastern Europe, predominantly within Poland, Romania, Lithuania, Hungary, and the western Soviet Union."
+        },
+        {
+          "question": "Approximately how many Jewish people lived in Germany in 1933?",
+          "q": "Approximately how many Jewish people lived in Germany in 1933?",
+          "options": [
+            "Roughly 500,000",
+            "Over 2,000,000",
+            "About 50,000",
+            "Nearly 3,000,000"
+          ],
+          "answer": "Roughly 500,000",
+          "a": "Roughly 500,000",
+          "explanation": "In contrast to large Eastern European populations, Germany's Jewish community numbered roughly 500,000 people in 1933."
+        },
+        {
+          "question": "Which three languages might a Jewish child grow up speaking depending on where they lived in 1930s Europe?",
+          "q": "Which three languages might a Jewish child grow up speaking depending on where they lived in 1930s Europe?",
+          "options": [
+            "Yiddish, German, or Ladino",
+            "Latin, Greek, or Italian",
+            "French, Spanish, or Arabic",
+            "Russian, Polish, or Hebrew exclusively"
+          ],
+          "answer": "Yiddish, German, or Ladino",
+          "a": "Yiddish, German, or Ladino",
+          "explanation": "A child might grow up speaking Yiddish in Poland, German in Berlin, or Ladino along the docks of Thessaloniki."
+        },
+        {
+          "question": "What term do historians use to describe the cultural heartland of Jewish life in Eastern Europe?",
+          "q": "What term do historians use to describe the cultural heartland of Jewish life in Eastern Europe?",
+          "options": [
+            "Yiddishland",
+            "The Pale",
+            "The Levant",
+            "New Judea"
+          ],
+          "answer": "Yiddishland",
+          "a": "Yiddishland",
+          "explanation": "Across towns and countryside in Eastern Europe lay a distinct cultural realm historians call Yiddishland."
+        },
+        {
+          "question": "What was a 'shtetl' in Eastern European Jewish history?",
+          "q": "What was a 'shtetl' in Eastern European Jewish history?",
+          "options": [
+            "A small rural market town",
+            "A fortified religious fortress",
+            "An industrial factory district",
+            "A monastic commune"
+          ],
+          "answer": "A small rural market town",
+          "a": "A small rural market town",
+          "explanation": "A shtetl was a small, predominantly Jewish market town in rural Eastern Europe."
+        },
+        {
+          "question": "Which linguistic elements were combined to form the Yiddish language?",
+          "q": "Which linguistic elements were combined to form the Yiddish language?",
+          "options": [
+            "Medieval High German with Hebrew and Slavic vocabulary",
+            "Classical Latin with ancient Greek grammar",
+            "Castilian Spanish with Hebrew syntax",
+            "Standard Russian with French loanwords"
+          ],
+          "answer": "Medieval High German with Hebrew and Slavic vocabulary",
+          "a": "Medieval High German with Hebrew and Slavic vocabulary",
+          "explanation": "Yiddish is written in Hebrew characters and combines medieval High German with Hebrew and Slavic vocabulary."
+        },
+        {
+          "question": "Which Lithuanian city was known affectionately as the 'Jerusalem of the North' for its intellectual energy?",
+          "q": "Which Lithuanian city was known affectionately as the 'Jerusalem of the North' for its intellectual energy?",
+          "options": [
+            "Vilna",
+            "Kaunas",
+            "Kraków",
+            "Minsk"
+          ],
+          "answer": "Vilna",
+          "a": "Vilna",
+          "explanation": "Vilna (the capital of Lithuania) was known as the 'Jerusalem of the North' for its rich intellectual and religious life."
+        },
+        {
+          "question": "Which major Jewish socialist political party operated alongside Zionists and religious academies in Eastern Europe?",
+          "q": "Which major Jewish socialist political party operated alongside Zionists and religious academies in Eastern Europe?",
+          "options": [
+            "The General Jewish Labour Bund",
+            "The Menshevik League",
+            "The Social Democratic Federation",
+            "The Popular Front"
+          ],
+          "answer": "The General Jewish Labour Bund",
+          "a": "The General Jewish Labour Bund",
+          "explanation": "Modern socialist political parties like the General Jewish Labour Bund flourished alongside traditional academies."
+        },
+        {
+          "question": "In what year did Jewish people in the German Empire achieve full legal emancipation?",
+          "q": "In what year did Jewish people in the German Empire achieve full legal emancipation?",
+          "options": [
+            "1871",
+            "1919",
+            "1848",
+            "1933"
+          ],
+          "answer": "1871",
+          "a": "1871",
+          "explanation": "In the German Empire, Jews achieved full legal emancipation upon national unification in 1871."
+        },
+        {
+          "question": "How many German Jews served in the German imperial armed forces during the First World War?",
+          "q": "How many German Jews served in the German imperial armed forces during the First World War?",
+          "options": [
+            "Over 100,000",
+            "Under 5,000",
+            "Roughly 25,000",
+            "Over 500,000"
+          ],
+          "answer": "Over 100,000",
+          "a": "Over 100,000",
+          "explanation": "Over 100,000 German Jews served in the German armed forces during the First World War (1914-1918)."
+        },
+        {
+          "question": "Approximately how many German Jewish soldiers died fighting for Germany in the First World War?",
+          "q": "Approximately how many German Jewish soldiers died fighting for Germany in the First World War?",
+          "options": [
+            "Approximately 12,000",
+            "Around 1,000",
+            "Nearly 50,000",
+            "Under 500"
+          ],
+          "answer": "Approximately 12,000",
+          "a": "Approximately 12,000",
+          "explanation": "Approximately 12,000 German Jewish soldiers gave their lives for the Fatherland during the First World War."
+        },
+        {
+          "question": "How many German Jewish soldiers were awarded the Iron Cross for battlefield bravery in WWI?",
+          "q": "How many German Jewish soldiers were awarded the Iron Cross for battlefield bravery in WWI?",
+          "options": [
+            "18,000",
+            "2,500",
+            "500",
+            "40,000"
+          ],
+          "answer": "18,000",
+          "a": "18,000",
+          "explanation": "18,000 German Jewish soldiers were decorated with the Iron Cross for battlefield bravery in WWI."
+        },
+        {
+          "question": "What historical event in the late 15th century created Sephardic communities in the Mediterranean?",
+          "q": "What historical event in the late 15th century created Sephardic communities in the Mediterranean?",
+          "options": [
+            "The expulsion of Jews from Spain and Portugal",
+            "The Crusader conquest of Jerusalem",
+            "The fall of the Roman Empire",
+            "The Napoleonic Wars"
+          ],
+          "answer": "The expulsion of Jews from Spain and Portugal",
+          "a": "The expulsion of Jews from Spain and Portugal",
+          "explanation": "Sephardic Jewish communities were established by descendants of Jews expelled from Spain and Portugal in the late 15th century."
+        },
+        {
+          "question": "Which Mediterranean port city was known as the 'Mother of Israel'?",
+          "q": "Which Mediterranean port city was known as the 'Mother of Israel'?",
+          "options": [
+            "Thessaloniki (Salonica)",
+            "Athens",
+            "Marseille",
+            "Dubrovnik"
+          ],
+          "answer": "Thessaloniki (Salonica)",
+          "a": "Thessaloniki (Salonica)",
+          "explanation": "The port of Thessaloniki in northern Greece was known as the 'Mother of Israel', where over half the total population was Jewish."
+        },
+        {
+          "question": "What language did Sephardic Jewish communities speak across the Mediterranean basin?",
+          "q": "What language did Sephardic Jewish communities speak across the Mediterranean basin?",
+          "options": [
+            "Ladino (Judeo-Spanish)",
+            "Yiddish",
+            "Esperanto",
+            "Aramaic exclusively"
+          ],
+          "answer": "Ladino (Judeo-Spanish)",
+          "a": "Ladino (Judeo-Spanish)",
+          "explanation": "Sephardic Jews spoke Ladino, a Judeo-Spanish language carrying medieval Castilian Spanish elements."
+        },
+        {
+          "question": "Why did the entire commercial port of Thessaloniki close on Saturdays before 1939?",
+          "q": "Why did the entire commercial port of Thessaloniki close on Saturdays before 1939?",
+          "options": [
+            "In universal observance of the Jewish Sabbath",
+            "Due to Greek municipal dock strikes",
+            "Because of Turkish maritime laws",
+            "To allow merchant naval repairs"
+          ],
+          "answer": "In universal observance of the Jewish Sabbath",
+          "a": "In universal observance of the Jewish Sabbath",
+          "explanation": "Jewish presence was so central in Thessaloniki that the entire commercial port closed on Saturdays for the Sabbath."
+        },
+        {
+          "question": "Under traditional European religious anti-Judaism, how could a Jewish person escape discrimination?",
+          "q": "Under traditional European religious anti-Judaism, how could a Jewish person escape discrimination?",
+          "options": [
+            "Through Christian baptism",
+            "By paying a special gold tax",
+            "By changing their family surname",
+            "By swearing an oath to the emperor"
+          ],
+          "answer": "Through Christian baptism",
+          "a": "Through Christian baptism",
+          "explanation": "Under religious anti-Judaism, a person could escape persecution through Christian baptism because prejudice was based on religion, not race."
+        },
+        {
+          "question": "Who coined the term 'antisemitism' in 1879, framing hostility toward Jews as biological racism?",
+          "q": "Who coined the term 'antisemitism' in 1879, framing hostility toward Jews as biological racism?",
+          "options": [
+            "Wilhelm Marr",
+            "Adolf Hitler",
+            "Karl Marx",
+            "Otto von Bismarck"
+          ],
+          "answer": "Wilhelm Marr",
+          "a": "Wilhelm Marr",
+          "explanation": "German theorist Wilhelm Marr coined the term antisemitism in 1879, defining Jewish identity as an unchangeable biological race."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "question": "Approximately how many Jewish people lived in Europe in the early 1930s?",
+          "q": "Approximately how many Jewish people lived in Europe in the early 1930s?",
+          "options": [
+            "9.5 million",
+            "4.5 million",
+            "15 million",
+            "1.2 million"
+          ],
+          "answer": "9.5 million",
+          "a": "9.5 million",
+          "explanation": "In the early 1930s, approximately 9.5 million Jewish people lived in Europe, representing just under two percent of the continent's total population."
+        },
+        {
+          "question": "What proportion of Europe's total population was Jewish in the early 1930s?",
+          "q": "What proportion of Europe's total population was Jewish in the early 1930s?",
+          "options": [
+            "Just under two percent",
+            "Roughly ten percent",
+            "Around fifteen percent",
+            "Less than 0.1 percent"
+          ],
+          "answer": "Just under two percent",
+          "a": "Just under two percent",
+          "explanation": "Jewish people represented just under two percent of the entire European population in the early 1930s."
+        },
+        {
+          "question": "Where did over sixty percent of European Jews live prior to the Second World War?",
+          "q": "Where did over sixty percent of European Jews live prior to the Second World War?",
+          "options": [
+            "In Central and Eastern Europe",
+            "In Western Europe",
+            "In Southern Mediterranean ports",
+            "In Scandinavian countries"
+          ],
+          "answer": "In Central and Eastern Europe",
+          "a": "In Central and Eastern Europe",
+          "explanation": "Over sixty percent of European Jews lived in Central and Eastern Europe, predominantly within Poland, Romania, Lithuania, Hungary, and the western Soviet Union."
+        },
+        {
+          "question": "Approximately how many Jewish people lived in Germany in 1933?",
+          "q": "Approximately how many Jewish people lived in Germany in 1933?",
+          "options": [
+            "Roughly 500,000",
+            "Over 2,000,000",
+            "About 50,000",
+            "Nearly 3,000,000"
+          ],
+          "answer": "Roughly 500,000",
+          "a": "Roughly 500,000",
+          "explanation": "In contrast to large Eastern European populations, Germany's Jewish community numbered roughly 500,000 people in 1933."
+        },
+        {
+          "question": "Which three languages might a Jewish child grow up speaking depending on where they lived in 1930s Europe?",
+          "q": "Which three languages might a Jewish child grow up speaking depending on where they lived in 1930s Europe?",
+          "options": [
+            "Yiddish, German, or Ladino",
+            "Latin, Greek, or Italian",
+            "French, Spanish, or Arabic",
+            "Russian, Polish, or Hebrew exclusively"
+          ],
+          "answer": "Yiddish, German, or Ladino",
+          "a": "Yiddish, German, or Ladino",
+          "explanation": "A child might grow up speaking Yiddish in Poland, German in Berlin, or Ladino along the docks of Thessaloniki."
+        },
+        {
+          "question": "What term do historians use to describe the cultural heartland of Jewish life in Eastern Europe?",
+          "q": "What term do historians use to describe the cultural heartland of Jewish life in Eastern Europe?",
+          "options": [
+            "Yiddishland",
+            "The Pale",
+            "The Levant",
+            "New Judea"
+          ],
+          "answer": "Yiddishland",
+          "a": "Yiddishland",
+          "explanation": "Across towns and countryside in Eastern Europe lay a distinct cultural realm historians call Yiddishland."
+        },
+        {
+          "question": "What was a 'shtetl' in Eastern European Jewish history?",
+          "q": "What was a 'shtetl' in Eastern European Jewish history?",
+          "options": [
+            "A small rural market town",
+            "A fortified religious fortress",
+            "An industrial factory district",
+            "A monastic commune"
+          ],
+          "answer": "A small rural market town",
+          "a": "A small rural market town",
+          "explanation": "A shtetl was a small, predominantly Jewish market town in rural Eastern Europe."
+        },
+        {
+          "question": "Which linguistic elements were combined to form the Yiddish language?",
+          "q": "Which linguistic elements were combined to form the Yiddish language?",
+          "options": [
+            "Medieval High German with Hebrew and Slavic vocabulary",
+            "Classical Latin with ancient Greek grammar",
+            "Castilian Spanish with Hebrew syntax",
+            "Standard Russian with French loanwords"
+          ],
+          "answer": "Medieval High German with Hebrew and Slavic vocabulary",
+          "a": "Medieval High German with Hebrew and Slavic vocabulary",
+          "explanation": "Yiddish is written in Hebrew characters and combines medieval High German with Hebrew and Slavic vocabulary."
+        },
+        {
+          "question": "Which Lithuanian city was known affectionately as the 'Jerusalem of the North' for its intellectual energy?",
+          "q": "Which Lithuanian city was known affectionately as the 'Jerusalem of the North' for its intellectual energy?",
+          "options": [
+            "Vilna",
+            "Kaunas",
+            "Kraków",
+            "Minsk"
+          ],
+          "answer": "Vilna",
+          "a": "Vilna",
+          "explanation": "Vilna (the capital of Lithuania) was known as the 'Jerusalem of the North' for its rich intellectual and religious life."
+        },
+        {
+          "question": "Which major Jewish socialist political party operated alongside Zionists and religious academies in Eastern Europe?",
+          "q": "Which major Jewish socialist political party operated alongside Zionists and religious academies in Eastern Europe?",
+          "options": [
+            "The General Jewish Labour Bund",
+            "The Menshevik League",
+            "The Social Democratic Federation",
+            "The Popular Front"
+          ],
+          "answer": "The General Jewish Labour Bund",
+          "a": "The General Jewish Labour Bund",
+          "explanation": "Modern socialist political parties like the General Jewish Labour Bund flourished alongside traditional academies."
+        },
+        {
+          "question": "In what year did Jewish people in the German Empire achieve full legal emancipation?",
+          "q": "In what year did Jewish people in the German Empire achieve full legal emancipation?",
+          "options": [
+            "1871",
+            "1919",
+            "1848",
+            "1933"
+          ],
+          "answer": "1871",
+          "a": "1871",
+          "explanation": "In the German Empire, Jews achieved full legal emancipation upon national unification in 1871."
+        },
+        {
+          "question": "How many German Jews served in the German imperial armed forces during the First World War?",
+          "q": "How many German Jews served in the German imperial armed forces during the First World War?",
+          "options": [
+            "Over 100,000",
+            "Under 5,000",
+            "Roughly 25,000",
+            "Over 500,000"
+          ],
+          "answer": "Over 100,000",
+          "a": "Over 100,000",
+          "explanation": "Over 100,000 German Jews served in the German armed forces during the First World War (1914-1918)."
+        },
+        {
+          "question": "Approximately how many German Jewish soldiers died fighting for Germany in the First World War?",
+          "q": "Approximately how many German Jewish soldiers died fighting for Germany in the First World War?",
+          "options": [
+            "Approximately 12,000",
+            "Around 1,000",
+            "Nearly 50,000",
+            "Under 500"
+          ],
+          "answer": "Approximately 12,000",
+          "a": "Approximately 12,000",
+          "explanation": "Approximately 12,000 German Jewish soldiers gave their lives for the Fatherland during the First World War."
+        },
+        {
+          "question": "How many German Jewish soldiers were awarded the Iron Cross for battlefield bravery in WWI?",
+          "q": "How many German Jewish soldiers were awarded the Iron Cross for battlefield bravery in WWI?",
+          "options": [
+            "18,000",
+            "2,500",
+            "500",
+            "40,000"
+          ],
+          "answer": "18,000",
+          "a": "18,000",
+          "explanation": "18,000 German Jewish soldiers were decorated with the Iron Cross for battlefield bravery in WWI."
+        },
+        {
+          "question": "What historical event in the late 15th century created Sephardic communities in the Mediterranean?",
+          "q": "What historical event in the late 15th century created Sephardic communities in the Mediterranean?",
+          "options": [
+            "The expulsion of Jews from Spain and Portugal",
+            "The Crusader conquest of Jerusalem",
+            "The fall of the Roman Empire",
+            "The Napoleonic Wars"
+          ],
+          "answer": "The expulsion of Jews from Spain and Portugal",
+          "a": "The expulsion of Jews from Spain and Portugal",
+          "explanation": "Sephardic Jewish communities were established by descendants of Jews expelled from Spain and Portugal in the late 15th century."
+        },
+        {
+          "question": "Which Mediterranean port city was known as the 'Mother of Israel'?",
+          "q": "Which Mediterranean port city was known as the 'Mother of Israel'?",
+          "options": [
+            "Thessaloniki (Salonica)",
+            "Athens",
+            "Marseille",
+            "Dubrovnik"
+          ],
+          "answer": "Thessaloniki (Salonica)",
+          "a": "Thessaloniki (Salonica)",
+          "explanation": "The port of Thessaloniki in northern Greece was known as the 'Mother of Israel', where over half the total population was Jewish."
+        },
+        {
+          "question": "What language did Sephardic Jewish communities speak across the Mediterranean basin?",
+          "q": "What language did Sephardic Jewish communities speak across the Mediterranean basin?",
+          "options": [
+            "Ladino (Judeo-Spanish)",
+            "Yiddish",
+            "Esperanto",
+            "Aramaic exclusively"
+          ],
+          "answer": "Ladino (Judeo-Spanish)",
+          "a": "Ladino (Judeo-Spanish)",
+          "explanation": "Sephardic Jews spoke Ladino, a Judeo-Spanish language carrying medieval Castilian Spanish elements."
+        },
+        {
+          "question": "Why did the entire commercial port of Thessaloniki close on Saturdays before 1939?",
+          "q": "Why did the entire commercial port of Thessaloniki close on Saturdays before 1939?",
+          "options": [
+            "In universal observance of the Jewish Sabbath",
+            "Due to Greek municipal dock strikes",
+            "Because of Turkish maritime laws",
+            "To allow merchant naval repairs"
+          ],
+          "answer": "In universal observance of the Jewish Sabbath",
+          "a": "In universal observance of the Jewish Sabbath",
+          "explanation": "Jewish presence was so central in Thessaloniki that the entire commercial port closed on Saturdays for the Sabbath."
+        },
+        {
+          "question": "Under traditional European religious anti-Judaism, how could a Jewish person escape discrimination?",
+          "q": "Under traditional European religious anti-Judaism, how could a Jewish person escape discrimination?",
+          "options": [
+            "Through Christian baptism",
+            "By paying a special gold tax",
+            "By changing their family surname",
+            "By swearing an oath to the emperor"
+          ],
+          "answer": "Through Christian baptism",
+          "a": "Through Christian baptism",
+          "explanation": "Under religious anti-Judaism, a person could escape persecution through Christian baptism because prejudice was based on religion, not race."
+        },
+        {
+          "question": "Who coined the term 'antisemitism' in 1879, framing hostility toward Jews as biological racism?",
+          "q": "Who coined the term 'antisemitism' in 1879, framing hostility toward Jews as biological racism?",
+          "options": [
+            "Wilhelm Marr",
+            "Adolf Hitler",
+            "Karl Marx",
+            "Otto von Bismarck"
+          ],
+          "answer": "Wilhelm Marr",
+          "a": "Wilhelm Marr",
+          "explanation": "German theorist Wilhelm Marr coined the term antisemitism in 1879, defining Jewish identity as an unchangeable biological race."
         }
       ]
     },
@@ -936,30 +1488,45 @@ export default {
       "vocab": [
         {
           "term": "Nuremberg Laws",
-          "definition": "Two antisemitic laws enacted in September 1935 (the Reich Citizenship Law and the Blood Protection Law) that stripped Jews of citizenship and prohibited intermarriage."
+          "definition": "Two antisemitic laws enacted in September 1935 (the Reich Citizenship Law and the Blood Protection Law) that stripped Jews of citizenship and prohibited intermarriage.",
+          "syllables": "Nu-rem-berg laws",
+          "phonetic": "ˈnjʊərəmbɜːɡ lɔːz",
+          "tier": "3"
         },
         {
           "term": "Kristallnacht (November Pogrom)",
-          "definition": "A violent, state-directed nationwide pogrom on 9–10 November 1938 targeting Jewish homes, businesses, and synagogues across Germany and Austria."
+          "definition": "A violent, state-directed nationwide pogrom on 9–10 November 1938 targeting Jewish homes, businesses, and synagogues across Germany and Austria.",
+          "syllables": "Kris-tall-nacht (No-ve-mber Po-grom)",
+          "phonetic": "krɪˈstɑːlnaxt (november pogrom)",
+          "tier": "2"
         },
         {
           "term": "Social Death",
-          "definition": "A sociological concept describing how a group is systematically ostracised, excluded from public life, and dehumanised by their fellow citizens."
+          "definition": "A sociological concept describing how a group is systematically ostracised, excluded from public life, and dehumanised by their fellow citizens.",
+          "syllables": "So-cial Death",
+          "phonetic": "social death",
+          "tier": "2"
         },
         {
           "term": "Evian Conference",
-          "definition": "A 1938 international meeting of 32 nations convened in France to address the Jewish refugee crisis, which failed because countries refused to open their doors."
+          "definition": "A 1938 international meeting of 32 nations convened in France to address the Jewish refugee crisis, which failed because countries refused to open their doors.",
+          "syllables": "E-vian Co-nfe-re-nce",
+          "phonetic": "evian conference",
+          "tier": "2"
         },
         {
           "term": "Kindertransport",
-          "definition": "An emergency rescue operation between November 1938 and September 1939 that brought approximately 10,000 unaccompanied Jewish children from Nazi territory to the UK."
+          "definition": "An emergency rescue operation between November 1938 and September 1939 that brought approximately 10,000 unaccompanied Jewish children from Nazi territory to the UK.",
+          "syllables": "Ki-ndertra-nsport",
+          "phonetic": "kindertransport",
+          "tier": "3"
         }
       ],
       "narrative_blocks": [
         {
           "act": 1,
           "title": "The Boycott and the Civil Service Purge (1933)",
-          "text": "<span class=\"para-ref\">[2.1]</span> When Adolf Hitler became Chancellor on 30 January 1933, the Nazi state wasted no time putting antisemitic ideology into practice. On <strong>1 April 1933</strong>, the regime launched its first nationwide campaign: a boycott of Jewish-owned shops, department stores, doctors, and lawyers. Uniformed SA stormtroopers stood outside storefronts holding placards warning Germans not to buy from Jews, while yellow Stars of David and the word <em>\"Jude\"</em> were smeared across display windows. One week later, on 7 April 1933, the government passed the <strong>Law for the Restoration of the Professional Civil Service</strong>. This law purged any civil servant of \"non-Aryan descent\", summarily firing thousands of Jewish judges, civil servants, university professors, and school teachers. The aim was unambiguous: to drive Jews out of public and economic life.",
+          "text": "<span class=\"para-ref\">[2.1]</span> When Adolf Hitler became Chancellor on 30 January 1933, the Nazi state wasted no time putting antisemitic ideology into practice. On **1 April 1933**, the regime launched its first nationwide campaign: a boycott of Jewish-owned shops, department stores, doctors, and lawyers. Uniformed SA picket windows outside storefronts, holding placards warning Germans not to buy from Jews, while the word \"Jude\" was smudged in paint across display glass. A week later, on **7 April 1933**, the regime enacted the *Law for the Restoration of the Professional Civil Service*, ensuring Jewish judges, civil servants, and teachers were fired from their state positions.",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -995,7 +1562,7 @@ export default {
         {
           "act": 2,
           "title": "The 1935 Nuremberg Laws: Redefining Citizenship",
-          "text": "<span class=\"para-ref\">[2.2]</span> In September 1935, during the annual Nazi Party rally, Hitler announced the <strong>Nuremberg Laws</strong>. These two decrees transformed racial ideology into binding German law. The first, the <strong>Reich Citizenship Law</strong>, decreed that only individuals of \"German or related blood\" could be citizens of the Reich; German Jews were stripped of their citizenship overnight and reclassified as second-class \"state subjects\" with no voting or civil rights. The second, the <strong>Law for the Protection of German Blood and German Honour</strong>, criminalised marriage and sexual relations between Jews and non-Jewish Germans. Crucially, the law defined a Jewish person not by their religious devotion, but by their lineage: anyone with three or four Jewish grandparents was legally classified as a full Jew, regardless of whether they were practicing Christians or atheists.",
+          "text": "<span class=\"para-ref\">[2.2]</span> In September 1935, during the annual Nazi Party rally, Hitler announced the **Nuremberg Laws**. These two decrees legally codified racial persecution into German law. The *Reich Citizenship Law* stripped German Jews of their citizenship, with citizenship revoked and Jews reduced to \"subjects of the state\". The *Law for the Protection of German Blood and German Honour* made intermarriage banned between Jews and German citizens, criminalising marriages and sexual relations. Officials used a formal grandparent blood chart to classify individuals based on ancestry: anyone with three or four Jewish grandparents was classified as a full Jew, regardless of whether they practised Judaism or had converted.",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -1034,7 +1601,7 @@ export default {
         {
           "act": 3,
           "title": "Daily Exclusion and \"Social Death\" (1935–1938)",
-          "text": "<span class=\"para-ref\">[2.3]</span> Between 1935 and 1938, the German state issued over <strong>400 individual anti-Jewish decrees</strong>. These laws invaded every sphere of everyday existence. Jewish children were expelled from state schools; Jewish doctors were forbidden from treating non-Jewish patients; Jewish veterinarians could not treat animals; Jews were banned from parks, municipal swimming pools, libraries, and public concerts. Yellow park benches painted with the words <em>\"Nur für Juden\"</em> (Only for Jews) were placed on pavements. In his secret diaries, <strong>Victor Klemperer</strong>, a decorated WWI veteran and professor of literature in Dresden, recorded the suffocating, gradual isolation: former colleagues crossed the street to avoid greeting him; tradesmen refused to serve him; his beloved cat and typewriter were eventually confiscated. Klemperer described this process as \"social death\"—being erased from human fellowship before a shot was fired.",
+          "text": "<span class=\"para-ref\">[2.3]</span> Between 1935 and 1938, the German state issued over **400 separate anti-Jewish decrees**. These laws invaded every aspect of daily existence, systematically humiliating Jewish citizens and cutting them off from public society. Jewish children were expelled from state schools; Jewish doctors and lawyers were barred from treating or representing non-Jewish clients; Jewish-owned businesses were subjected to forced \"Aryanisation\", meaning they were confiscated or sold at a fraction of their value. Jewish people were restricted to sitting on designated yellow park benches, barred from municipal swimming pools, public parks, and cinemas, and forbidden from owning pets, radios, or bicycles. Daily life became an agonizing ordeal as former neighbours and friends look away and cross the street to avoid greeting them.",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -1070,7 +1637,7 @@ export default {
         {
           "act": 4,
           "title": "The November Pogrom (\"Kristallnacht\", 9–10 November 1938)",
-          "text": "<span class=\"para-ref\">[2.4]</span> On the night of <strong>9–10 November 1938</strong>, the regime orchestrated a violent nationwide pogrom known as <strong>Kristallnacht</strong> (the \"Night of Broken Glass\", more accurately termed the <em>November Pogrom</em>). Following a speech by Propaganda Minister Joseph Goebbels, SA and SS men dressed in civilian clothes attacked Jewish communities across Germany, Austria, and the newly annexed Sudetenland. Over <strong>1,400 synagogues were torched</strong>, more than 7,500 Jewish businesses were vandalised, and at least 91 Jewish people were murdered in the streets. Police stood by with orders only to protect non-Jewish property, while fire brigades doused neighbouring German buildings and allowed historic synagogues to burn to the ground. In the immediate aftermath, the Gestapo arrested approximately <strong>30,000 Jewish men</strong> and interned them in Dachau, Buchenwald, and Sachsenhausen concentration camps. To compound the cruelty, the Nazi government blamed the Jews for the violence and imposed an extortionate <strong>one billion Reichsmark fine</strong> on the German Jewish community.",
+          "text": "<span class=\"para-ref\">[2.4]</span> On the night of **9–10 November 1938**, the regime orchestrated a violent nationwide pogrom known as **Kristallnacht** (Night of Broken Glass). Following the assassination of a German diplomat in Paris by a desperate Polish-Jewish teenager, Propaganda Minister Joseph Goebbels unleashed the SA, SS, and Hitler Youth to attack Jewish communities. Over forty-eight hours, mobs attacked Jewish communities: over **1,400 synagogues were burned** or destroyed, 7,500 businesses trashed, and at least ninety-one Jews murdered. In the aftermath, the Gestapo arrested over **30,000 Jewish men and sent them to concentration camps** at Dachau, Buchenwald, and Sachsenhausen. To compound the cruelty, the Nazi government imposed a punitive **1 billion mark fine** (one billion Reichsmarks) on the Jewish community to pay for the destruction.",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -1109,7 +1676,7 @@ export default {
         {
           "act": 5,
           "title": "The Refugee Crisis: Closed Doors and the Kindertransport",
-          "text": "<span class=\"para-ref\">[2.5]</span> Kristallnacht shattered any remaining illusion that Jews could survive under Nazi rule. Tens of thousands rushed to foreign consulates, desperately queuing for visas. However, the world’s doors were largely barred. In July 1938, delegates from thirty-two nations had gathered at the <strong>Evian Conference</strong> in France to discuss the Jewish refugee crisis; one by one, nations expressed sympathy but refused to alter their strict immigration quotas. In the wake of Kristallnacht, the British government agreed to a temporary humanitarian concession: the <strong>Kindertransport</strong>. Between December 1938 and September 1939, approximately <strong>10,000 unaccompanied Jewish children</strong> from Germany, Austria, and Czechoslovakia were brought to safety in Britain. While these children were saved, their parents remained trapped behind Nazi borders. When the Second World War broke out on 1 September 1939, hundreds of thousands of European Jews were trapped in a continent transformed into an inescapable prison.",
+          "text": "<span class=\"para-ref\">[2.5]</span> Kristallnacht shattered any remaining illusion that Jews could survive under Nazi rule. Tens of thousands rushed to foreign consulates seeking exit visas, but the world closed its doors. In July 1938, delegates from **32 nations meet at the Évian Conference** in France to address the refugee crisis, but country after country expressed verbal sympathy while maintaining closed global borders to Jewish immigration. One rare exception was the British **Kindertransport** programme, which allowed nearly **10,000 unaccompanied refugee children to be rescued** and brought to safety in Britain between December 1938 and August 1939. While their lives were saved, most would never see their parents again.",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -1430,6 +1997,530 @@ export default {
           "model_answer": "Initially, following the assassination of German diplomat Ernst vom Rath in Paris, Joseph Goebbels delivered an inflammatory speech on 9 November 1938 inciting antisemitic violence across Germany.<br><br>During the night, SA stormtroopers and SS men unleashed the 'Night of Broken Glass' (Kristallnacht). Over 1,000 synagogues were torched, thousands of Jewish businesses destroyed, and 91 Jews murdered, while police and fire brigades were ordered not to intervene.<br><br>Finally, the Nazi regime blamed Jews for the destruction, imposing a 1 billion Reichsmark collective fine on the Jewish community and sending 30,000 Jewish men to concentration camps like Dachau.",
           "topic": "Question 2: Narrative Account [8 marks • 12 mins]"
         }
+      ],
+      "quiz": [
+        {
+          "question": "On what date did the Nazi regime launch its first nationwide boycott of Jewish businesses and professionals?",
+          "q": "On what date did the Nazi regime launch its first nationwide boycott of Jewish businesses and professionals?",
+          "options": [
+            "1 April 1933",
+            "30 January 1933",
+            "15 September 1935",
+            "9 November 1938"
+          ],
+          "answer": "1 April 1933",
+          "a": "1 April 1933",
+          "explanation": "On 1 April 1933, the Nazi state initiated a nationwide boycott against Jewish shops, doctors, and lawyers."
+        },
+        {
+          "question": "Which Nazi paramilitary organization stood outside Jewish storefronts enforcing the 1933 boycott?",
+          "q": "Which Nazi paramilitary organization stood outside Jewish storefronts enforcing the 1933 boycott?",
+          "options": [
+            "SA stormtroopers",
+            "The Gestapo",
+            "The Hitler Youth",
+            "The Order Police"
+          ],
+          "answer": "SA stormtroopers",
+          "a": "SA stormtroopers",
+          "explanation": "Uniformed SA stormtroopers stood outside storefronts with placards warning Germans not to buy from Jews."
+        },
+        {
+          "question": "What was the purpose of the Law for the Restoration of the Professional Civil Service passed on 7 April 1933?",
+          "q": "What was the purpose of the Law for the Restoration of the Professional Civil Service passed on 7 April 1933?",
+          "options": [
+            "To fire any civil servants of 'non-Aryan descent'",
+            "To double pensions for German teachers",
+            "To establish a new federal postal service",
+            "To ban private trade unions"
+          ],
+          "answer": "To fire any civil servants of 'non-Aryan descent'",
+          "a": "To fire any civil servants of 'non-Aryan descent'",
+          "explanation": "The law purged civil servants of 'non-Aryan descent', firing thousands of Jewish judges, professors, and teachers."
+        },
+        {
+          "question": "When were the Nuremberg Laws announced by Adolf Hitler?",
+          "q": "When were the Nuremberg Laws announced by Adolf Hitler?",
+          "options": [
+            "September 1935",
+            "April 1933",
+            "November 1938",
+            "January 1939"
+          ],
+          "answer": "September 1935",
+          "a": "September 1935",
+          "explanation": "Hitler announced the Nuremberg Laws during the annual Nazi Party rally in Nuremberg in September 1935."
+        },
+        {
+          "question": "What was the primary effect of the Reich Citizenship Law passed in September 1935?",
+          "q": "What was the primary effect of the Reich Citizenship Law passed in September 1935?",
+          "options": [
+            "It stripped German Jews of citizenship and made them 'state subjects'",
+            "It ordered all Jews to leave Germany immediately",
+            "It nationalized all Jewish-owned factories",
+            "It required all Germans to carry military passports"
+          ],
+          "answer": "It stripped German Jews of citizenship and made them 'state subjects'",
+          "a": "It stripped German Jews of citizenship and made them 'state subjects'",
+          "explanation": "The Reich Citizenship Law decreed that only people of German or related blood were citizens, reducing Jews to second-class state subjects."
+        },
+        {
+          "question": "Which law criminalised marriage and sexual relations between Jews and non-Jewish Germans in 1935?",
+          "q": "Which law criminalised marriage and sexual relations between Jews and non-Jewish Germans in 1935?",
+          "options": [
+            "The Law for the Protection of German Blood and German Honour",
+            "The Civil Service Restoration Act",
+            "The Reichstag Fire Decree",
+            "The Enabling Act"
+          ],
+          "answer": "The Law for the Protection of German Blood and German Honour",
+          "a": "The Law for the Protection of German Blood and German Honour",
+          "explanation": "This second Nuremberg law outlawed marriage and sexual relations between Jews and non-Jewish Germans."
+        },
+        {
+          "question": "How did the Nuremberg Laws legally classify who was a 'full Jew'?",
+          "q": "How did the Nuremberg Laws legally classify who was a 'full Jew'?",
+          "options": [
+            "Anyone with three or four Jewish grandparents",
+            "Anyone who attended a synagogue regularly",
+            "Anyone who spoke Hebrew or Yiddish",
+            "Only individuals who held Jewish religious certificates"
+          ],
+          "answer": "Anyone with three or four Jewish grandparents",
+          "a": "Anyone with three or four Jewish grandparents",
+          "explanation": "The law defined Jewishness by ancestry: anyone with three or four Jewish grandparents was legally classified as a full Jew."
+        },
+        {
+          "question": "Approximately how many individual anti-Jewish decrees were issued by the German state between 1935 and 1938?",
+          "q": "Approximately how many individual anti-Jewish decrees were issued by the German state between 1935 and 1938?",
+          "options": [
+            "Over 400",
+            "Exactly 12",
+            "Around 50",
+            "Over 5,000"
+          ],
+          "answer": "Over 400",
+          "a": "Over 400",
+          "explanation": "Between 1935 and 1938, the German state issued over 400 individual anti-Jewish decrees invading every sphere of daily life."
+        },
+        {
+          "question": "What words were painted on designated yellow park benches under Nazi municipal segregation laws?",
+          "q": "What words were painted on designated yellow park benches under Nazi municipal segregation laws?",
+          "options": [
+            "\"Nur für Juden\" (Only for Jews)",
+            "\"Kein Zutritt\"",
+            "\"Achtung\"",
+            "\"Deutsche Volksgenossen\""
+          ],
+          "answer": "\"Nur für Juden\" (Only for Jews)",
+          "a": "\"Nur für Juden\" (Only for Jews)",
+          "explanation": "Yellow benches painted with the words 'Nur für Juden' (Only for Jews) segregated Jewish people in public parks."
+        },
+        {
+          "question": "Who was the Dresden literature professor whose meticulous secret diaries recorded the daily oppression of Jews?",
+          "q": "Who was the Dresden literature professor whose meticulous secret diaries recorded the daily oppression of Jews?",
+          "options": [
+            "Victor Klemperer",
+            "Albert Einstein",
+            "Walter Benjamin",
+            "Thomas Mann"
+          ],
+          "answer": "Victor Klemperer",
+          "a": "Victor Klemperer",
+          "explanation": "Professor Victor Klemperer in Dresden recorded the gradual, suffocating impact of Nazi decrees in his secret diaries."
+        },
+        {
+          "question": "What term did Victor Klemperer use to describe being gradually erased from human society before physical violence began?",
+          "q": "What term did Victor Klemperer use to describe being gradually erased from human society before physical violence began?",
+          "options": [
+            "\"Social death\"",
+            "\"Legal exile\"",
+            "\"Spiritual silence\"",
+            "\"Civic paralysis\""
+          ],
+          "answer": "\"Social death\"",
+          "a": "\"Social death\"",
+          "explanation": "Klemperer described this process of total ostracism and isolation as 'social death'."
+        },
+        {
+          "question": "Which personal possessions belonging to Victor Klemperer were confiscated under petty anti-Jewish decrees?",
+          "q": "Which personal possessions belonging to Victor Klemperer were confiscated under petty anti-Jewish decrees?",
+          "options": [
+            "His beloved cat and typewriter",
+            "His family motorcar and camera",
+            "His grand piano and book collection",
+            "His gold watch and bicycle"
+          ],
+          "answer": "His beloved cat and typewriter",
+          "a": "His beloved cat and typewriter",
+          "explanation": "Among hundreds of humiliating decrees, Klemperer's beloved cat and typewriter were confiscated by authorities."
+        },
+        {
+          "question": "On what nights did the violent nationwide pogrom known as Kristallnacht take place?",
+          "q": "On what nights did the violent nationwide pogrom known as Kristallnacht take place?",
+          "options": [
+            "9–10 November 1938",
+            "1–2 April 1933",
+            "15–16 September 1935",
+            "1–2 September 1939"
+          ],
+          "answer": "9–10 November 1938",
+          "a": "9–10 November 1938",
+          "explanation": "The November Pogrom (Kristallnacht) took place across Germany, Austria, and the Sudetenland on the night of 9–10 November 1938."
+        },
+        {
+          "question": "Whose inflammatory speech prompted SA and SS men to carry out the November Pogrom of 1938?",
+          "q": "Whose inflammatory speech prompted SA and SS men to carry out the November Pogrom of 1938?",
+          "options": [
+            "Propaganda Minister Joseph Goebbels",
+            "Heinrich Himmler",
+            "Hermann Göring",
+            "Reinhard Heydrich"
+          ],
+          "answer": "Propaganda Minister Joseph Goebbels",
+          "a": "Propaganda Minister Joseph Goebbels",
+          "explanation": "Following an inflammatory speech by Joseph Goebbels, SA and SS members launched the violent pogrom."
+        },
+        {
+          "question": "Approximately how many synagogues were torched during the November Pogrom of 1938?",
+          "q": "Approximately how many synagogues were torched during the November Pogrom of 1938?",
+          "options": [
+            "Over 1,400",
+            "Under 100",
+            "Around 250",
+            "Nearly 10,000"
+          ],
+          "answer": "Over 1,400",
+          "a": "Over 1,400",
+          "explanation": "Over 1,400 synagogues were torched and destroyed during Kristallnacht."
+        },
+        {
+          "question": "Approximately how many Jewish men were arrested and sent to concentration camps following Kristallnacht?",
+          "q": "Approximately how many Jewish men were arrested and sent to concentration camps following Kristallnacht?",
+          "options": [
+            "Approximately 30,000",
+            "Around 2,000",
+            "About 100,000",
+            "Under 500"
+          ],
+          "answer": "Approximately 30,000",
+          "a": "Approximately 30,000",
+          "explanation": "In the aftermath of the pogrom, the Gestapo arrested approximately 30,000 Jewish men and sent them to camps like Dachau and Buchenwald."
+        },
+        {
+          "question": "What financial fine did the Nazi government impose on the German Jewish community following Kristallnacht?",
+          "q": "What financial fine did the Nazi government impose on the German Jewish community following Kristallnacht?",
+          "options": [
+            "A one billion Reichsmark fine",
+            "A 50 million Reichsmark fine",
+            "A ten billion Reichsmark fine",
+            "Zero financial fines"
+          ],
+          "answer": "A one billion Reichsmark fine",
+          "a": "A one billion Reichsmark fine",
+          "explanation": "The Nazi regime blamed Jews for the destruction and extorted an arbitrary collective fine of one billion Reichsmarks."
+        },
+        {
+          "question": "What was the outcome of the Evian Conference held in France in July 1938?",
+          "q": "What was the outcome of the Evian Conference held in France in July 1938?",
+          "options": [
+            "Delegates expressed sympathy but refused to alter immigration quotas",
+            "Participating nations agreed to accept 500,000 refugees",
+            "A new international refugee fleet was established",
+            "Nazi Germany was placed under total naval blockade"
+          ],
+          "answer": "Delegates expressed sympathy but refused to alter immigration quotas",
+          "a": "Delegates expressed sympathy but refused to alter immigration quotas",
+          "explanation": "Thirty-two nations met at Evian and expressed verbal sympathy, but virtually all refused to raise their immigration quotas."
+        },
+        {
+          "question": "How many unaccompanied Jewish children were brought to Britain under the Kindertransport rescue programme?",
+          "q": "How many unaccompanied Jewish children were brought to Britain under the Kindertransport rescue programme?",
+          "options": [
+            "Approximately 10,000",
+            "About 1,000",
+            "Over 50,000",
+            "Roughly 2,500"
+          ],
+          "answer": "Approximately 10,000",
+          "a": "Approximately 10,000",
+          "explanation": "Between December 1938 and September 1939, approximately 10,000 unaccompanied children were brought to Britain."
+        },
+        {
+          "question": "Between which dates did the Kindertransport operate before being halted by the outbreak of war?",
+          "q": "Between which dates did the Kindertransport operate before being halted by the outbreak of war?",
+          "options": [
+            "December 1938 to September 1939",
+            "January 1933 to June 1934",
+            "September 1935 to July 1936",
+            "November 1938 to December 1941"
+          ],
+          "answer": "December 1938 to September 1939",
+          "a": "December 1938 to September 1939",
+          "explanation": "The Kindertransport operated between December 1938 and the outbreak of war on 1 September 1939."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "question": "On what date did the Nazi regime launch its first nationwide boycott of Jewish businesses and professionals?",
+          "q": "On what date did the Nazi regime launch its first nationwide boycott of Jewish businesses and professionals?",
+          "options": [
+            "1 April 1933",
+            "30 January 1933",
+            "15 September 1935",
+            "9 November 1938"
+          ],
+          "answer": "1 April 1933",
+          "a": "1 April 1933",
+          "explanation": "On 1 April 1933, the Nazi state initiated a nationwide boycott against Jewish shops, doctors, and lawyers."
+        },
+        {
+          "question": "Which Nazi paramilitary organization stood outside Jewish storefronts enforcing the 1933 boycott?",
+          "q": "Which Nazi paramilitary organization stood outside Jewish storefronts enforcing the 1933 boycott?",
+          "options": [
+            "SA stormtroopers",
+            "The Gestapo",
+            "The Hitler Youth",
+            "The Order Police"
+          ],
+          "answer": "SA stormtroopers",
+          "a": "SA stormtroopers",
+          "explanation": "Uniformed SA stormtroopers stood outside storefronts with placards warning Germans not to buy from Jews."
+        },
+        {
+          "question": "What was the purpose of the Law for the Restoration of the Professional Civil Service passed on 7 April 1933?",
+          "q": "What was the purpose of the Law for the Restoration of the Professional Civil Service passed on 7 April 1933?",
+          "options": [
+            "To fire any civil servants of 'non-Aryan descent'",
+            "To double pensions for German teachers",
+            "To establish a new federal postal service",
+            "To ban private trade unions"
+          ],
+          "answer": "To fire any civil servants of 'non-Aryan descent'",
+          "a": "To fire any civil servants of 'non-Aryan descent'",
+          "explanation": "The law purged civil servants of 'non-Aryan descent', firing thousands of Jewish judges, professors, and teachers."
+        },
+        {
+          "question": "When were the Nuremberg Laws announced by Adolf Hitler?",
+          "q": "When were the Nuremberg Laws announced by Adolf Hitler?",
+          "options": [
+            "September 1935",
+            "April 1933",
+            "November 1938",
+            "January 1939"
+          ],
+          "answer": "September 1935",
+          "a": "September 1935",
+          "explanation": "Hitler announced the Nuremberg Laws during the annual Nazi Party rally in Nuremberg in September 1935."
+        },
+        {
+          "question": "What was the primary effect of the Reich Citizenship Law passed in September 1935?",
+          "q": "What was the primary effect of the Reich Citizenship Law passed in September 1935?",
+          "options": [
+            "It stripped German Jews of citizenship and made them 'state subjects'",
+            "It ordered all Jews to leave Germany immediately",
+            "It nationalized all Jewish-owned factories",
+            "It required all Germans to carry military passports"
+          ],
+          "answer": "It stripped German Jews of citizenship and made them 'state subjects'",
+          "a": "It stripped German Jews of citizenship and made them 'state subjects'",
+          "explanation": "The Reich Citizenship Law decreed that only people of German or related blood were citizens, reducing Jews to second-class state subjects."
+        },
+        {
+          "question": "Which law criminalised marriage and sexual relations between Jews and non-Jewish Germans in 1935?",
+          "q": "Which law criminalised marriage and sexual relations between Jews and non-Jewish Germans in 1935?",
+          "options": [
+            "The Law for the Protection of German Blood and German Honour",
+            "The Civil Service Restoration Act",
+            "The Reichstag Fire Decree",
+            "The Enabling Act"
+          ],
+          "answer": "The Law for the Protection of German Blood and German Honour",
+          "a": "The Law for the Protection of German Blood and German Honour",
+          "explanation": "This second Nuremberg law outlawed marriage and sexual relations between Jews and non-Jewish Germans."
+        },
+        {
+          "question": "How did the Nuremberg Laws legally classify who was a 'full Jew'?",
+          "q": "How did the Nuremberg Laws legally classify who was a 'full Jew'?",
+          "options": [
+            "Anyone with three or four Jewish grandparents",
+            "Anyone who attended a synagogue regularly",
+            "Anyone who spoke Hebrew or Yiddish",
+            "Only individuals who held Jewish religious certificates"
+          ],
+          "answer": "Anyone with three or four Jewish grandparents",
+          "a": "Anyone with three or four Jewish grandparents",
+          "explanation": "The law defined Jewishness by ancestry: anyone with three or four Jewish grandparents was legally classified as a full Jew."
+        },
+        {
+          "question": "Approximately how many individual anti-Jewish decrees were issued by the German state between 1935 and 1938?",
+          "q": "Approximately how many individual anti-Jewish decrees were issued by the German state between 1935 and 1938?",
+          "options": [
+            "Over 400",
+            "Exactly 12",
+            "Around 50",
+            "Over 5,000"
+          ],
+          "answer": "Over 400",
+          "a": "Over 400",
+          "explanation": "Between 1935 and 1938, the German state issued over 400 individual anti-Jewish decrees invading every sphere of daily life."
+        },
+        {
+          "question": "What words were painted on designated yellow park benches under Nazi municipal segregation laws?",
+          "q": "What words were painted on designated yellow park benches under Nazi municipal segregation laws?",
+          "options": [
+            "\"Nur für Juden\" (Only for Jews)",
+            "\"Kein Zutritt\"",
+            "\"Achtung\"",
+            "\"Deutsche Volksgenossen\""
+          ],
+          "answer": "\"Nur für Juden\" (Only for Jews)",
+          "a": "\"Nur für Juden\" (Only for Jews)",
+          "explanation": "Yellow benches painted with the words 'Nur für Juden' (Only for Jews) segregated Jewish people in public parks."
+        },
+        {
+          "question": "Who was the Dresden literature professor whose meticulous secret diaries recorded the daily oppression of Jews?",
+          "q": "Who was the Dresden literature professor whose meticulous secret diaries recorded the daily oppression of Jews?",
+          "options": [
+            "Victor Klemperer",
+            "Albert Einstein",
+            "Walter Benjamin",
+            "Thomas Mann"
+          ],
+          "answer": "Victor Klemperer",
+          "a": "Victor Klemperer",
+          "explanation": "Professor Victor Klemperer in Dresden recorded the gradual, suffocating impact of Nazi decrees in his secret diaries."
+        },
+        {
+          "question": "What term did Victor Klemperer use to describe being gradually erased from human society before physical violence began?",
+          "q": "What term did Victor Klemperer use to describe being gradually erased from human society before physical violence began?",
+          "options": [
+            "\"Social death\"",
+            "\"Legal exile\"",
+            "\"Spiritual silence\"",
+            "\"Civic paralysis\""
+          ],
+          "answer": "\"Social death\"",
+          "a": "\"Social death\"",
+          "explanation": "Klemperer described this process of total ostracism and isolation as 'social death'."
+        },
+        {
+          "question": "Which personal possessions belonging to Victor Klemperer were confiscated under petty anti-Jewish decrees?",
+          "q": "Which personal possessions belonging to Victor Klemperer were confiscated under petty anti-Jewish decrees?",
+          "options": [
+            "His beloved cat and typewriter",
+            "His family motorcar and camera",
+            "His grand piano and book collection",
+            "His gold watch and bicycle"
+          ],
+          "answer": "His beloved cat and typewriter",
+          "a": "His beloved cat and typewriter",
+          "explanation": "Among hundreds of humiliating decrees, Klemperer's beloved cat and typewriter were confiscated by authorities."
+        },
+        {
+          "question": "On what nights did the violent nationwide pogrom known as Kristallnacht take place?",
+          "q": "On what nights did the violent nationwide pogrom known as Kristallnacht take place?",
+          "options": [
+            "9–10 November 1938",
+            "1–2 April 1933",
+            "15–16 September 1935",
+            "1–2 September 1939"
+          ],
+          "answer": "9–10 November 1938",
+          "a": "9–10 November 1938",
+          "explanation": "The November Pogrom (Kristallnacht) took place across Germany, Austria, and the Sudetenland on the night of 9–10 November 1938."
+        },
+        {
+          "question": "Whose inflammatory speech prompted SA and SS men to carry out the November Pogrom of 1938?",
+          "q": "Whose inflammatory speech prompted SA and SS men to carry out the November Pogrom of 1938?",
+          "options": [
+            "Propaganda Minister Joseph Goebbels",
+            "Heinrich Himmler",
+            "Hermann Göring",
+            "Reinhard Heydrich"
+          ],
+          "answer": "Propaganda Minister Joseph Goebbels",
+          "a": "Propaganda Minister Joseph Goebbels",
+          "explanation": "Following an inflammatory speech by Joseph Goebbels, SA and SS members launched the violent pogrom."
+        },
+        {
+          "question": "Approximately how many synagogues were torched during the November Pogrom of 1938?",
+          "q": "Approximately how many synagogues were torched during the November Pogrom of 1938?",
+          "options": [
+            "Over 1,400",
+            "Under 100",
+            "Around 250",
+            "Nearly 10,000"
+          ],
+          "answer": "Over 1,400",
+          "a": "Over 1,400",
+          "explanation": "Over 1,400 synagogues were torched and destroyed during Kristallnacht."
+        },
+        {
+          "question": "Approximately how many Jewish men were arrested and sent to concentration camps following Kristallnacht?",
+          "q": "Approximately how many Jewish men were arrested and sent to concentration camps following Kristallnacht?",
+          "options": [
+            "Approximately 30,000",
+            "Around 2,000",
+            "About 100,000",
+            "Under 500"
+          ],
+          "answer": "Approximately 30,000",
+          "a": "Approximately 30,000",
+          "explanation": "In the aftermath of the pogrom, the Gestapo arrested approximately 30,000 Jewish men and sent them to camps like Dachau and Buchenwald."
+        },
+        {
+          "question": "What financial fine did the Nazi government impose on the German Jewish community following Kristallnacht?",
+          "q": "What financial fine did the Nazi government impose on the German Jewish community following Kristallnacht?",
+          "options": [
+            "A one billion Reichsmark fine",
+            "A 50 million Reichsmark fine",
+            "A ten billion Reichsmark fine",
+            "Zero financial fines"
+          ],
+          "answer": "A one billion Reichsmark fine",
+          "a": "A one billion Reichsmark fine",
+          "explanation": "The Nazi regime blamed Jews for the destruction and extorted an arbitrary collective fine of one billion Reichsmarks."
+        },
+        {
+          "question": "What was the outcome of the Evian Conference held in France in July 1938?",
+          "q": "What was the outcome of the Evian Conference held in France in July 1938?",
+          "options": [
+            "Delegates expressed sympathy but refused to alter immigration quotas",
+            "Participating nations agreed to accept 500,000 refugees",
+            "A new international refugee fleet was established",
+            "Nazi Germany was placed under total naval blockade"
+          ],
+          "answer": "Delegates expressed sympathy but refused to alter immigration quotas",
+          "a": "Delegates expressed sympathy but refused to alter immigration quotas",
+          "explanation": "Thirty-two nations met at Evian and expressed verbal sympathy, but virtually all refused to raise their immigration quotas."
+        },
+        {
+          "question": "How many unaccompanied Jewish children were brought to Britain under the Kindertransport rescue programme?",
+          "q": "How many unaccompanied Jewish children were brought to Britain under the Kindertransport rescue programme?",
+          "options": [
+            "Approximately 10,000",
+            "About 1,000",
+            "Over 50,000",
+            "Roughly 2,500"
+          ],
+          "answer": "Approximately 10,000",
+          "a": "Approximately 10,000",
+          "explanation": "Between December 1938 and September 1939, approximately 10,000 unaccompanied children were brought to Britain."
+        },
+        {
+          "question": "Between which dates did the Kindertransport operate before being halted by the outbreak of war?",
+          "q": "Between which dates did the Kindertransport operate before being halted by the outbreak of war?",
+          "options": [
+            "December 1938 to September 1939",
+            "January 1933 to June 1934",
+            "September 1935 to July 1936",
+            "November 1938 to December 1941"
+          ],
+          "answer": "December 1938 to September 1939",
+          "a": "December 1938 to September 1939",
+          "explanation": "The Kindertransport operated between December 1938 and the outbreak of war on 1 September 1939."
+        }
       ]
     },
     {
@@ -1594,30 +2685,48 @@ export default {
       "vocab": [
         {
           "term": "Ghetto",
-          "definition": "A walled, segregated section of an occupied city where Jewish families were forcibly concentrated under inhumanly crowded and unsanitary conditions."
+          "definition": "A walled, segregated section of an occupied city where Jewish families were forcibly concentrated under inhumanly crowded and unsanitary conditions.",
+          "syllables": "ghet-to",
+          "phonetic": "ˈɡɛtəʊ",
+          "tier": "3"
         },
         {
           "term": "Schnellbrief",
-          "definition": "A confidential directive issued by Reinhard Heydrich on 21 September 1939 ordering Jews in Poland concentrated into larger cities near railway lines."
+          "definition": "A confidential directive issued by Reinhard Heydrich on 21 September 1939 ordering Jews in Poland concentrated into larger cities near railway lines.",
+          "syllables": "Schne-llbrief",
+          "phonetic": "schnellbrief",
+          "tier": "2"
         },
         {
           "term": "Judenrat",
-          "definition": "A Jewish Council established by Nazi authorities in each ghetto, coerced into administering German orders and managing everyday ghetto logistics under impossible moral strain."
+          "definition": "A Jewish Council established by Nazi authorities in each ghetto, coerced into administering German orders and managing everyday ghetto logistics under impossible moral strain.",
+          "syllables": "Ju-de-nrat",
+          "phonetic": "judenrat",
+          "tier": "3"
         },
         {
           "term": "Oneg Shabbat",
-          "definition": "The clandestine code name (meaning \"Sabbath Delight\") for the secret archive founded by historian Emanuel Ringelblum to document ghetto life and Nazi atrocities."
+          "definition": "The clandestine code name (meaning \"Sabbath Delight\") for the secret archive founded by historian Emanuel Ringelblum to document ghetto life and Nazi atrocities.",
+          "syllables": "Oneg Sha-bbat",
+          "phonetic": "oneg shabbat",
+          "tier": "3"
         },
         {
           "term": "Spiritual Resistance",
-          "definition": "Non-violent acts of defiance aimed at preserving human dignity, cultural identity, religious faith, and historical truth under extreme oppression."
+          "definition": "Non-violent acts of defiance aimed at preserving human dignity, cultural identity, religious faith, and historical truth under extreme oppression.",
+          "syllables": "Spi-ritual re-sist-ance",
+          "phonetic": "spiritual rɪˈzɪstəns",
+          "tier": "3"
         }
       ],
       "narrative_blocks": [
         {
           "act": 1,
           "title": "The Conquest of Poland and Heydrich’s Plan (1939)",
-          "text": "<span class=\"para-ref\">[3.1]</span> On <strong>1 September 1939</strong>, German Panzer divisions and Luftwaffe bombers invaded Poland, triggering the outbreak of the Second World War. Poland fell within five weeks, partitioned between Nazi Germany and the Soviet Union under the terms of the secret Nazi-Soviet Pact. This military triumph fundamentally altered the demographic scale of Nazi persecution: while the regime had spent six years harassing 500,000 German Jews, it now held more than <strong>two million Polish Jews</strong> under brutal military occupation. On 21 September 1939, SS security chief Reinhard Heydrich issued a top-secret directive known as the <strong>Schnellbrief</strong> (\"Express Letter\"). Heydrich ordered that rural Jewish communities across Poland be dissolved immediately and their populations concentrated into the largest cities situated along major railway lines. This concentration was the indispensable prelude to ghettoisation.",
+          "image": "/images/weimar_individuals/reinhard_heydrich.jpg",
+          "image_alt": "Official uniform portrait of SS-Obergruppenführer Reinhard Heydrich, Chief of the RSHA",
+          "caption": "Reinhard Heydrich (1904–1942). Chief of the Reich Security Main Office (RSHA) whose 21 September 1939 Schnellbrief ordered the mass concentration of Polish Jews into urban ghettos.",
+          "text": "<span class=\"para-ref\">[3.1]</span> On **1 September 1939**, German Panzer divisions and Luftwaffe bombers invaded Poland, triggering the outbreak of the Second World War. Within weeks, the Nazi state found itself in control of over **two million Polish Jews**—a population ten times larger than Germany's remaining Jewish community. On **21 September 1939**, Reinhard Heydrich, head of the SS Reich Security Main Office (RSHA), issued a secret directive known as the *Schnellbrief* (express letter). It ordered that all Jewish communities in rural areas and small towns be rapidly deported and subjected to rail hub concentration in major cities with direct railway junctions.",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -1653,7 +2762,7 @@ export default {
         {
           "act": 2,
           "title": "Stigmatisation, Forced Labour, and the Yellow Star",
-          "text": "<span class=\"para-ref\">[3.2]</span> Long before physical walls were constructed, the occupation authorities set about stripping Polish Jews of their legal standing and human identity. In November 1939, Governor-General Hans Frank ordered all Jews aged ten and older in the General Government to wear a white armband bearing a blue <strong>Star of David</strong> (later standardized to a yellow Star of David). Jews were barred from public transport, parks, and restaurants; their bank accounts were frozen; their businesses were confiscated without compensation; and thousands of men were seized directly from the streets for forced labour clearing bomb rubble, digging drainage ditches, and building military fortifications. Anyone caught without their Star of David faced instant execution.",
+          "text": "<span class=\"para-ref\">[3.2]</span> Long before physical walls were constructed, the occupation authorities set about stripping Polish Jews of their livelihood and dignity. In November 1939, all Jewish people aged ten and older were ordered to wear a white armband bearing a blue Star of David, marked for humiliation and abuse. Tens of thousands of Jewish men were rounded up into brutal forced labour gangs to clear war rubble and dig ditches. Jewish bank accounts were frozen, businesses and factories were confiscated without compensation, and community leaders were arrested or shot.",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -1689,7 +2798,7 @@ export default {
         {
           "act": 3,
           "title": "The Walls Go Up: The Warsaw and Łódź Ghettos (1940)",
-          "text": "<span class=\"para-ref\">[3.3]</span> In 1940, the Nazi regime began enclosing Jewish populations into sealed <strong>ghettos</strong> across occupied Poland, including Łódź, Kraków, Lublin, and Warsaw. In October 1940, the German authorities ordered the establishment of the <strong>Warsaw Ghetto</strong>—the largest in occupied Europe. More than 100,000 Christian Poles were evicted from the designated district, while over 140,000 Jews from across Warsaw and surrounding towns were driven inside. In November 1940, a three-metre-high brick wall topped with barbed wire and shattered glass was officially sealed. Within a squalid district measuring barely 1.3 square miles, approximately <strong>450,000 human beings</strong> were imprisoned—accounting for nearly thirty percent of Warsaw’s population crammed into just 2.4 percent of its urban land, with an average of seven to nine people per room.",
+          "text": "<span class=\"para-ref\">[3.3]</span> In 1940, the Nazi regime began enclosing Jewish populations into sealed **ghettos** across occupied Poland, including Łódź, Kraków, and Lublin. In the capital, the **Warsaw Ghetto** became the largest in Europe. Enclosed behind a **3-metre brick wall topped with barbed wire**, over **450,000 Jewish people were imprisoned** inside just 1.3 square miles—an average density of seven to nine people per room (7–9 people per room). The ghetto was completely cut off from the outside world: phone lines were disconnected, postal deliveries stopped, and German police and armed guards patrolled every gate with shoot-to-kill orders.",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -1728,7 +2837,7 @@ export default {
         {
           "act": 4,
           "title": "Starvation, Typhus, and the Child Smugglers",
-          "text": "<span class=\"para-ref\">[3.4]</span> The Nazi administration weaponised disease and starvation to decimate the ghetto population. Official food rations provided to Jews were deliberately restricted to an average of just <strong>180 to 220 calories per day</strong>—roughly ten percent of the caloric energy needed to sustain a human life. Contaminated water and uncollected refuse sparked rampant epidemics of <strong>typhus</strong> and dysentery; between 1940 and mid-1942, more than <strong>80,000 people died of hunger and disease</strong> in the Warsaw Ghetto alone. What prevented the entire ghetto from perishing immediately was a heroic underground smuggling economy. Small Jewish children, exploiting their slight stature, wriggled through narrow drainage pipes and holes knocked into the brick wall, smuggling sacks of potatoes, bread, and medicine into the ghetto under threat of being shot on sight by German snipers.",
+          "text": "<span class=\"para-ref\">[3.4]</span> The Nazi administration weaponised disease and starvation to decimate the ghetto population. Official food rations allotted to Jews provided barely **180 to 220 calories a day**—roughly eight percent of what an adult body needs to survive. Between 1940 and 1942, more than **80,000 people were dead of hunger** and rampant disease in Warsaw alone, their bodies placed on pavements overnight covered with newspapers. The ghetto survived only through clandestine smuggling: brave child smugglers climbed through drainage grates or squeezed between wall bricks to bring flour, potatoes, and medicines into the ghetto, risking instant execution if caught by German police.",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -1764,7 +2873,7 @@ export default {
         {
           "act": 5,
           "title": "Spiritual Resistance: The Secret Oneg Shabbat Archive",
-          "text": "<span class=\"para-ref\">[3.5]</span> Imprisoned within the ghetto, Jewish people refused to surrender their humanity. They organized clandestine kitchens feeding tens of thousands daily, secret schools held in basements, underground theatrical performances, and religious study groups. The most extraordinary act of spiritual resistance was led by historian <strong>Emanuel Ringelblum</strong>. In 1940, Ringelblum founded a secret organization code-named <strong>Oneg Shabbat</strong> (\"Sabbath Delight\"), consisting of writers, doctors, rabbis, and economists. They documented every aspect of ghetto existence: collecting personal diaries, underground newspapers, poetry, Nazi rationing decrees, and scientific reports on starvation. When deportations began in 1942, Ringelblum’s team sealed thousands of documents into ten metal boxes and two heavy aluminium <strong>milk cans</strong>, burying them deep beneath Warsaw basements. Unearthed after the war in 1946 and 1950, Ringelblum’s archive remains one of the most powerful, defiant testimonies of human truth ever preserved against tyranny.",
+          "text": "<span class=\"para-ref\">[3.5]</span> Imprisoned within the ghetto, Jewish people refused to surrender their humanity. They organized clandestine soup kitchens, secret schools for children, underground religious services, and cultural concerts. A remarkable group of underground historians and intellectuals led by **Emanuel Ringelblum** founded a secret archive codenamed **Oyneg Shabes** ('Joy of the Sabbath'). They methodically gathered diaries, official notices, and eyewitness reports to document the reality of persecution. Before the final destruction of the ghetto, the archive was buried in milk cans deep beneath Warsaw basements. Unearthed after the war, these buried milk cans ensured the truth outliving terror, preserving the voices of the victims forever.",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -2084,6 +3193,530 @@ export default {
           "model_answer": "Source A is useful because it records the extreme starvation, overcrowding, and typhus epidemics inside the Warsaw Ghetto, where over 400,000 Jews were trapped behind brick walls on starvation rations. Source B is useful because it provides evidence of Jewish spiritual resistance and underground education. Together, both sources are highly valuable for showing how ghetto inhabitants fought for physical and cultural survival.",
           "topic": "Question 3: Source Utility [8 marks • 12 mins]"
         }
+      ],
+      "quiz": [
+        {
+          "question": "On what date did German forces invade Poland, precipitating the Second World War?",
+          "q": "On what date did German forces invade Poland, precipitating the Second World War?",
+          "options": [
+            "1 September 1939",
+            "30 January 1933",
+            "22 June 1941",
+            "10 May 1940"
+          ],
+          "answer": "1 September 1939",
+          "a": "1 September 1939",
+          "explanation": "German forces invaded Poland on 1 September 1939, triggering Britain and France to declare war."
+        },
+        {
+          "question": "Approximately how many Polish Jews came under Nazi occupation after Poland's defeat?",
+          "q": "Approximately how many Polish Jews came under Nazi occupation after Poland's defeat?",
+          "options": [
+            "More than two million",
+            "Roughly 500,000",
+            "Under 100,000",
+            "Ten million"
+          ],
+          "answer": "More than two million",
+          "a": "More than two million",
+          "explanation": "The rapid conquest of Poland brought more than two million Polish Jews under brutal German occupation."
+        },
+        {
+          "question": "What was the name of the directive issued by Reinhard Heydrich on 21 September 1939 ordering ghettoisation?",
+          "q": "What was the name of the directive issued by Reinhard Heydrich on 21 September 1939 ordering ghettoisation?",
+          "options": [
+            "The Schnellbrief (\"Express Letter\")",
+            "The Commissar Order",
+            "The Barbarossa Decree",
+            "The Generalplan Ost"
+          ],
+          "answer": "The Schnellbrief (\"Express Letter\")",
+          "a": "The Schnellbrief (\"Express Letter\")",
+          "explanation": "Heydrich's Schnellbrief ordered rural communities dissolved and concentrated into large cities near railways."
+        },
+        {
+          "question": "What did Reinhard Heydrich's Schnellbrief specify about the relocation of Polish Jewish populations?",
+          "q": "What did Reinhard Heydrich's Schnellbrief specify about the relocation of Polish Jewish populations?",
+          "options": [
+            "They were to be concentrated into major cities along main railway lines",
+            "They were to be deported immediately to Madagascar",
+            "They were to be interned in coastal transit camps",
+            "They were to be conscripted into the German army"
+          ],
+          "answer": "They were to be concentrated into major cities along main railway lines",
+          "a": "They were to be concentrated into major cities along main railway lines",
+          "explanation": "The Schnellbrief ordered Jews concentrated in cities near railway lines, creating the basis for enclosed ghettos."
+        },
+        {
+          "question": "Who was the Nazi Governor-General of occupied Poland who mandated the Star of David in November 1939?",
+          "q": "Who was the Nazi Governor-General of occupied Poland who mandated the Star of David in November 1939?",
+          "options": [
+            "Hans Frank",
+            "Reinhard Heydrich",
+            "Arthur Seyss-Inquart",
+            "Heinrich Himmler"
+          ],
+          "answer": "Hans Frank",
+          "a": "Hans Frank",
+          "explanation": "Governor-General Hans Frank ordered all Jews aged ten and older in the General Government to wear the Star of David."
+        },
+        {
+          "question": "At what age were Jewish individuals in occupied Poland required to wear the Star of David?",
+          "q": "At what age were Jewish individuals in occupied Poland required to wear the Star of David?",
+          "options": [
+            "Aged ten and older",
+            "Aged eighteen and older",
+            "Aged six and older",
+            "Only working adults"
+          ],
+          "answer": "Aged ten and older",
+          "a": "Aged ten and older",
+          "explanation": "Hans Frank's decree applied to all Jewish people aged ten and older."
+        },
+        {
+          "question": "What immediate penalty did Polish Jews face if caught without their Star of David armband?",
+          "q": "What immediate penalty did Polish Jews face if caught without their Star of David armband?",
+          "options": [
+            "Instant execution",
+            "A modest cash fine",
+            "Loss of their ration card",
+            "One week in jail"
+          ],
+          "answer": "Instant execution",
+          "a": "Instant execution",
+          "explanation": "Anyone caught outside without their identifying Star of David faced immediate execution by German forces."
+        },
+        {
+          "question": "In what month and year was the Warsaw Ghetto officially established by German decree?",
+          "q": "In what month and year was the Warsaw Ghetto officially established by German decree?",
+          "options": [
+            "October 1940",
+            "September 1939",
+            "April 1943",
+            "January 1942"
+          ],
+          "answer": "October 1940",
+          "a": "October 1940",
+          "explanation": "In October 1940, German authorities ordered the establishment of the Warsaw Ghetto, sealing it in November."
+        },
+        {
+          "question": "Approximately how many Christian Poles were evicted from their homes to create the Warsaw Ghetto?",
+          "q": "Approximately how many Christian Poles were evicted from their homes to create the Warsaw Ghetto?",
+          "options": [
+            "More than 100,000",
+            "Under 5,000",
+            "Nearly 500,000",
+            "Zero"
+          ],
+          "answer": "More than 100,000",
+          "a": "More than 100,000",
+          "explanation": "Over 100,000 Christian Poles were evicted from the district to make way for the enclosed ghetto."
+        },
+        {
+          "question": "What was the approximate peak population crammed into the Warsaw Ghetto?",
+          "q": "What was the approximate peak population crammed into the Warsaw Ghetto?",
+          "options": [
+            "Approximately 450,000",
+            "Roughly 50,000",
+            "Over 1.5 million",
+            "About 120,000"
+          ],
+          "answer": "Approximately 450,000",
+          "a": "Approximately 450,000",
+          "explanation": "Approximately 450,000 human beings were imprisoned within the walled Warsaw Ghetto."
+        },
+        {
+          "question": "What percentage of Warsaw's total population was forced into just 2.4% of its urban space?",
+          "q": "What percentage of Warsaw's total population was forced into just 2.4% of its urban space?",
+          "options": [
+            "Nearly thirty percent",
+            "Fifty percent",
+            "Five percent",
+            "Ten percent"
+          ],
+          "answer": "Nearly thirty percent",
+          "a": "Nearly thirty percent",
+          "explanation": "Nearly thirty percent of Warsaw's entire population was confined into just 2.4 percent of the city's land area."
+        },
+        {
+          "question": "How many people on average lived in a single room within the Warsaw Ghetto?",
+          "q": "How many people on average lived in a single room within the Warsaw Ghetto?",
+          "options": [
+            "Seven to nine people",
+            "Two to three people",
+            "Fifteen to twenty people",
+            "One person"
+          ],
+          "answer": "Seven to nine people",
+          "a": "Seven to nine people",
+          "explanation": "In the extreme overcrowding of the ghetto, an average of seven to nine people shared every single room."
+        },
+        {
+          "question": "To what daily caloric level did German authorities restrict official food rations for Jews in the Warsaw Ghetto?",
+          "q": "To what daily caloric level did German authorities restrict official food rations for Jews in the Warsaw Ghetto?",
+          "options": [
+            "180 to 220 calories per day",
+            "800 to 1,000 calories per day",
+            "1,500 calories per day",
+            "2,500 calories per day"
+          ],
+          "answer": "180 to 220 calories per day",
+          "a": "180 to 220 calories per day",
+          "explanation": "Official daily rations were restricted to 180 to 220 calories, deliberately calculated to starve the population."
+        },
+        {
+          "question": "What proportion of the calories needed to sustain human life did official ghetto rations provide?",
+          "q": "What proportion of the calories needed to sustain human life did official ghetto rations provide?",
+          "options": [
+            "Roughly ten percent",
+            "Fifty percent",
+            "Seventy-five percent",
+            "Twenty-five percent"
+          ],
+          "answer": "Roughly ten percent",
+          "a": "Roughly ten percent",
+          "explanation": "180 to 220 calories provided roughly ten percent of the caloric energy required to sustain life."
+        },
+        {
+          "question": "Which two contagious diseases caused rampant epidemics in the Warsaw Ghetto due to filth and starvation?",
+          "q": "Which two contagious diseases caused rampant epidemics in the Warsaw Ghetto due to filth and starvation?",
+          "options": [
+            "Typhus and dysentery",
+            "Malaria and yellow fever",
+            "Smallpox and cholera",
+            "Polio and influenza"
+          ],
+          "answer": "Typhus and dysentery",
+          "a": "Typhus and dysentery",
+          "explanation": "Contaminated water and lack of sanitation triggered massive epidemics of typhus and dysentery."
+        },
+        {
+          "question": "Approximately how many people died of starvation and disease in the Warsaw Ghetto between 1940 and mid-1942?",
+          "q": "Approximately how many people died of starvation and disease in the Warsaw Ghetto between 1940 and mid-1942?",
+          "options": [
+            "More than 80,000",
+            "Under 2,000",
+            "About 25,000",
+            "Over 300,000"
+          ],
+          "answer": "More than 80,000",
+          "a": "More than 80,000",
+          "explanation": "Between 1940 and mid-1942, over 80,000 people died of hunger and disease in the Warsaw Ghetto alone."
+        },
+        {
+          "question": "Who carried out the essential underground smuggling of food and medicine through ghetto walls and pipes?",
+          "q": "Who carried out the essential underground smuggling of food and medicine through ghetto walls and pipes?",
+          "options": [
+            "Small Jewish children",
+            "German sympathetic soldiers",
+            "Red Cross inspectors",
+            "Foreign diplomats"
+          ],
+          "answer": "Small Jewish children",
+          "a": "Small Jewish children",
+          "explanation": "Small children wriggled through narrow drain pipes and wall holes to smuggle food at constant risk of being shot."
+        },
+        {
+          "question": "Who founded the secret underground archive known as Oneg Shabbat in the Warsaw Ghetto?",
+          "q": "Who founded the secret underground archive known as Oneg Shabbat in the Warsaw Ghetto?",
+          "options": [
+            "Emanuel Ringelblum",
+            "Mordechai Anielewicz",
+            "Janusz Korczak",
+            "Adam Czerniaków"
+          ],
+          "answer": "Emanuel Ringelblum",
+          "a": "Emanuel Ringelblum",
+          "explanation": "Historian Emanuel Ringelblum founded the clandestine Oneg Shabbat archive in 1940 to chronicle ghetto life."
+        },
+        {
+          "question": "What does the code name 'Oneg Shabbat' mean in Hebrew?",
+          "q": "What does the code name 'Oneg Shabbat' mean in Hebrew?",
+          "options": [
+            "\"Sabbath Delight\"",
+            "\"Day of Judgment\"",
+            "\"Sacred Memory\"",
+            "\"Eternal Resistance\""
+          ],
+          "answer": "\"Sabbath Delight\"",
+          "a": "\"Sabbath Delight\"",
+          "explanation": "Oneg Shabbat translates to 'Sabbath Delight', chosen because the secret group held meetings on Saturdays."
+        },
+        {
+          "question": "In what containers were the secret Oneg Shabbat archives buried beneath Warsaw basements?",
+          "q": "In what containers were the secret Oneg Shabbat archives buried beneath Warsaw basements?",
+          "options": [
+            "Ten metal boxes and two aluminium milk cans",
+            "Wooden wine barrels and iron safes",
+            "Glass jars and leather suitcases",
+            "Concrete vaults and ammunition crates"
+          ],
+          "answer": "Ten metal boxes and two aluminium milk cans",
+          "a": "Ten metal boxes and two aluminium milk cans",
+          "explanation": "The documents were sealed into ten metal boxes and two heavy aluminium milk cans, discovered in 1946 and 1950."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "question": "On what date did German forces invade Poland, precipitating the Second World War?",
+          "q": "On what date did German forces invade Poland, precipitating the Second World War?",
+          "options": [
+            "1 September 1939",
+            "30 January 1933",
+            "22 June 1941",
+            "10 May 1940"
+          ],
+          "answer": "1 September 1939",
+          "a": "1 September 1939",
+          "explanation": "German forces invaded Poland on 1 September 1939, triggering Britain and France to declare war."
+        },
+        {
+          "question": "Approximately how many Polish Jews came under Nazi occupation after Poland's defeat?",
+          "q": "Approximately how many Polish Jews came under Nazi occupation after Poland's defeat?",
+          "options": [
+            "More than two million",
+            "Roughly 500,000",
+            "Under 100,000",
+            "Ten million"
+          ],
+          "answer": "More than two million",
+          "a": "More than two million",
+          "explanation": "The rapid conquest of Poland brought more than two million Polish Jews under brutal German occupation."
+        },
+        {
+          "question": "What was the name of the directive issued by Reinhard Heydrich on 21 September 1939 ordering ghettoisation?",
+          "q": "What was the name of the directive issued by Reinhard Heydrich on 21 September 1939 ordering ghettoisation?",
+          "options": [
+            "The Schnellbrief (\"Express Letter\")",
+            "The Commissar Order",
+            "The Barbarossa Decree",
+            "The Generalplan Ost"
+          ],
+          "answer": "The Schnellbrief (\"Express Letter\")",
+          "a": "The Schnellbrief (\"Express Letter\")",
+          "explanation": "Heydrich's Schnellbrief ordered rural communities dissolved and concentrated into large cities near railways."
+        },
+        {
+          "question": "What did Reinhard Heydrich's Schnellbrief specify about the relocation of Polish Jewish populations?",
+          "q": "What did Reinhard Heydrich's Schnellbrief specify about the relocation of Polish Jewish populations?",
+          "options": [
+            "They were to be concentrated into major cities along main railway lines",
+            "They were to be deported immediately to Madagascar",
+            "They were to be interned in coastal transit camps",
+            "They were to be conscripted into the German army"
+          ],
+          "answer": "They were to be concentrated into major cities along main railway lines",
+          "a": "They were to be concentrated into major cities along main railway lines",
+          "explanation": "The Schnellbrief ordered Jews concentrated in cities near railway lines, creating the basis for enclosed ghettos."
+        },
+        {
+          "question": "Who was the Nazi Governor-General of occupied Poland who mandated the Star of David in November 1939?",
+          "q": "Who was the Nazi Governor-General of occupied Poland who mandated the Star of David in November 1939?",
+          "options": [
+            "Hans Frank",
+            "Reinhard Heydrich",
+            "Arthur Seyss-Inquart",
+            "Heinrich Himmler"
+          ],
+          "answer": "Hans Frank",
+          "a": "Hans Frank",
+          "explanation": "Governor-General Hans Frank ordered all Jews aged ten and older in the General Government to wear the Star of David."
+        },
+        {
+          "question": "At what age were Jewish individuals in occupied Poland required to wear the Star of David?",
+          "q": "At what age were Jewish individuals in occupied Poland required to wear the Star of David?",
+          "options": [
+            "Aged ten and older",
+            "Aged eighteen and older",
+            "Aged six and older",
+            "Only working adults"
+          ],
+          "answer": "Aged ten and older",
+          "a": "Aged ten and older",
+          "explanation": "Hans Frank's decree applied to all Jewish people aged ten and older."
+        },
+        {
+          "question": "What immediate penalty did Polish Jews face if caught without their Star of David armband?",
+          "q": "What immediate penalty did Polish Jews face if caught without their Star of David armband?",
+          "options": [
+            "Instant execution",
+            "A modest cash fine",
+            "Loss of their ration card",
+            "One week in jail"
+          ],
+          "answer": "Instant execution",
+          "a": "Instant execution",
+          "explanation": "Anyone caught outside without their identifying Star of David faced immediate execution by German forces."
+        },
+        {
+          "question": "In what month and year was the Warsaw Ghetto officially established by German decree?",
+          "q": "In what month and year was the Warsaw Ghetto officially established by German decree?",
+          "options": [
+            "October 1940",
+            "September 1939",
+            "April 1943",
+            "January 1942"
+          ],
+          "answer": "October 1940",
+          "a": "October 1940",
+          "explanation": "In October 1940, German authorities ordered the establishment of the Warsaw Ghetto, sealing it in November."
+        },
+        {
+          "question": "Approximately how many Christian Poles were evicted from their homes to create the Warsaw Ghetto?",
+          "q": "Approximately how many Christian Poles were evicted from their homes to create the Warsaw Ghetto?",
+          "options": [
+            "More than 100,000",
+            "Under 5,000",
+            "Nearly 500,000",
+            "Zero"
+          ],
+          "answer": "More than 100,000",
+          "a": "More than 100,000",
+          "explanation": "Over 100,000 Christian Poles were evicted from the district to make way for the enclosed ghetto."
+        },
+        {
+          "question": "What was the approximate peak population crammed into the Warsaw Ghetto?",
+          "q": "What was the approximate peak population crammed into the Warsaw Ghetto?",
+          "options": [
+            "Approximately 450,000",
+            "Roughly 50,000",
+            "Over 1.5 million",
+            "About 120,000"
+          ],
+          "answer": "Approximately 450,000",
+          "a": "Approximately 450,000",
+          "explanation": "Approximately 450,000 human beings were imprisoned within the walled Warsaw Ghetto."
+        },
+        {
+          "question": "What percentage of Warsaw's total population was forced into just 2.4% of its urban space?",
+          "q": "What percentage of Warsaw's total population was forced into just 2.4% of its urban space?",
+          "options": [
+            "Nearly thirty percent",
+            "Fifty percent",
+            "Five percent",
+            "Ten percent"
+          ],
+          "answer": "Nearly thirty percent",
+          "a": "Nearly thirty percent",
+          "explanation": "Nearly thirty percent of Warsaw's entire population was confined into just 2.4 percent of the city's land area."
+        },
+        {
+          "question": "How many people on average lived in a single room within the Warsaw Ghetto?",
+          "q": "How many people on average lived in a single room within the Warsaw Ghetto?",
+          "options": [
+            "Seven to nine people",
+            "Two to three people",
+            "Fifteen to twenty people",
+            "One person"
+          ],
+          "answer": "Seven to nine people",
+          "a": "Seven to nine people",
+          "explanation": "In the extreme overcrowding of the ghetto, an average of seven to nine people shared every single room."
+        },
+        {
+          "question": "To what daily caloric level did German authorities restrict official food rations for Jews in the Warsaw Ghetto?",
+          "q": "To what daily caloric level did German authorities restrict official food rations for Jews in the Warsaw Ghetto?",
+          "options": [
+            "180 to 220 calories per day",
+            "800 to 1,000 calories per day",
+            "1,500 calories per day",
+            "2,500 calories per day"
+          ],
+          "answer": "180 to 220 calories per day",
+          "a": "180 to 220 calories per day",
+          "explanation": "Official daily rations were restricted to 180 to 220 calories, deliberately calculated to starve the population."
+        },
+        {
+          "question": "What proportion of the calories needed to sustain human life did official ghetto rations provide?",
+          "q": "What proportion of the calories needed to sustain human life did official ghetto rations provide?",
+          "options": [
+            "Roughly ten percent",
+            "Fifty percent",
+            "Seventy-five percent",
+            "Twenty-five percent"
+          ],
+          "answer": "Roughly ten percent",
+          "a": "Roughly ten percent",
+          "explanation": "180 to 220 calories provided roughly ten percent of the caloric energy required to sustain life."
+        },
+        {
+          "question": "Which two contagious diseases caused rampant epidemics in the Warsaw Ghetto due to filth and starvation?",
+          "q": "Which two contagious diseases caused rampant epidemics in the Warsaw Ghetto due to filth and starvation?",
+          "options": [
+            "Typhus and dysentery",
+            "Malaria and yellow fever",
+            "Smallpox and cholera",
+            "Polio and influenza"
+          ],
+          "answer": "Typhus and dysentery",
+          "a": "Typhus and dysentery",
+          "explanation": "Contaminated water and lack of sanitation triggered massive epidemics of typhus and dysentery."
+        },
+        {
+          "question": "Approximately how many people died of starvation and disease in the Warsaw Ghetto between 1940 and mid-1942?",
+          "q": "Approximately how many people died of starvation and disease in the Warsaw Ghetto between 1940 and mid-1942?",
+          "options": [
+            "More than 80,000",
+            "Under 2,000",
+            "About 25,000",
+            "Over 300,000"
+          ],
+          "answer": "More than 80,000",
+          "a": "More than 80,000",
+          "explanation": "Between 1940 and mid-1942, over 80,000 people died of hunger and disease in the Warsaw Ghetto alone."
+        },
+        {
+          "question": "Who carried out the essential underground smuggling of food and medicine through ghetto walls and pipes?",
+          "q": "Who carried out the essential underground smuggling of food and medicine through ghetto walls and pipes?",
+          "options": [
+            "Small Jewish children",
+            "German sympathetic soldiers",
+            "Red Cross inspectors",
+            "Foreign diplomats"
+          ],
+          "answer": "Small Jewish children",
+          "a": "Small Jewish children",
+          "explanation": "Small children wriggled through narrow drain pipes and wall holes to smuggle food at constant risk of being shot."
+        },
+        {
+          "question": "Who founded the secret underground archive known as Oneg Shabbat in the Warsaw Ghetto?",
+          "q": "Who founded the secret underground archive known as Oneg Shabbat in the Warsaw Ghetto?",
+          "options": [
+            "Emanuel Ringelblum",
+            "Mordechai Anielewicz",
+            "Janusz Korczak",
+            "Adam Czerniaków"
+          ],
+          "answer": "Emanuel Ringelblum",
+          "a": "Emanuel Ringelblum",
+          "explanation": "Historian Emanuel Ringelblum founded the clandestine Oneg Shabbat archive in 1940 to chronicle ghetto life."
+        },
+        {
+          "question": "What does the code name 'Oneg Shabbat' mean in Hebrew?",
+          "q": "What does the code name 'Oneg Shabbat' mean in Hebrew?",
+          "options": [
+            "\"Sabbath Delight\"",
+            "\"Day of Judgment\"",
+            "\"Sacred Memory\"",
+            "\"Eternal Resistance\""
+          ],
+          "answer": "\"Sabbath Delight\"",
+          "a": "\"Sabbath Delight\"",
+          "explanation": "Oneg Shabbat translates to 'Sabbath Delight', chosen because the secret group held meetings on Saturdays."
+        },
+        {
+          "question": "In what containers were the secret Oneg Shabbat archives buried beneath Warsaw basements?",
+          "q": "In what containers were the secret Oneg Shabbat archives buried beneath Warsaw basements?",
+          "options": [
+            "Ten metal boxes and two aluminium milk cans",
+            "Wooden wine barrels and iron safes",
+            "Glass jars and leather suitcases",
+            "Concrete vaults and ammunition crates"
+          ],
+          "answer": "Ten metal boxes and two aluminium milk cans",
+          "a": "Ten metal boxes and two aluminium milk cans",
+          "explanation": "The documents were sealed into ten metal boxes and two heavy aluminium milk cans, discovered in 1946 and 1950."
+        }
       ]
     },
     {
@@ -2248,30 +3881,45 @@ export default {
       "vocab": [
         {
           "term": "Operation Barbarossa",
-          "definition": "The code name for Nazi Germany’s massive military invasion of the Soviet Union on 22 June 1941, launching a war of ideological annihilation."
+          "definition": "The code name for Nazi Germany’s massive military invasion of the Soviet Union on 22 June 1941, launching a war of ideological annihilation.",
+          "syllables": "O-pera-tion Ba-rba-ro-ssa",
+          "phonetic": "operation barbarossa",
+          "tier": "3"
         },
         {
           "term": "Einsatzgruppen",
-          "definition": "Four mobile paramilitary killing squads (A, B, C, D) organized by the SS and police to murder Jews, communists, and Roma in occupied Soviet territory."
+          "definition": "Four mobile paramilitary killing squads (A, B, C, D) organized by the SS and police to murder Jews, communists, and Roma in occupied Soviet territory.",
+          "syllables": "Ein-satz-grup-pen",
+          "phonetic": "ˈaɪnzatsˌɡrʊpən",
+          "tier": "3"
         },
         {
           "term": "Holocaust by Bullets",
-          "definition": "A historical term referring to the systematic murder of approximately 1.5 to 2 million Jewish people through mass shooting pits and ravines across Eastern Europe."
+          "definition": "A historical term referring to the systematic murder of approximately 1.5 to 2 million Jewish people through mass shooting pits and ravines across Eastern Europe.",
+          "syllables": "hol-o-caust by Bu-llets",
+          "phonetic": "ˈhɒləkɔːst by bullets",
+          "tier": "2"
         },
         {
           "term": "Babi Yar",
-          "definition": "A ravine outside Kyiv, Ukraine, where SS Sonderkommando 4a, German police, and local auxiliaries murdered 33,771 Jewish people on 29–30 September 1941."
+          "definition": "A ravine outside Kyiv, Ukraine, where SS Sonderkommando 4a, German police, and local auxiliaries murdered 33,771 Jewish people on 29–30 September 1941.",
+          "syllables": "Babi Yar",
+          "phonetic": "babi yar",
+          "tier": "2"
         },
         {
           "term": "Reserve Police Battalion 101",
-          "definition": "A unit of middle-aged German civilian conscripts studied by historian Christopher Browning, who became mass executioners despite having the option to decline."
+          "definition": "A unit of middle-aged German civilian conscripts studied by historian Christopher Browning, who became mass executioners despite having the option to decline.",
+          "syllables": "Re-se-rve Po-lice Ba-tta-lion 101",
+          "phonetic": "reserve police battalion 101",
+          "tier": "2"
         }
       ],
       "narrative_blocks": [
         {
           "act": 1,
           "title": "Operation Barbarossa: Ideological Annihilation (June 1941)",
-          "text": "<span class=\"para-ref\">[4.1]</span> On <strong>22 June 1941</strong>, Adolf Hitler launched <strong>Operation Barbarossa</strong>, sending over three million German and Axis troops across the Soviet border in the largest land invasion in human history. This invasion marked a radical and catastrophic rupture in European warfare. Hitler instructed his generals that this conflict was not a conventional war between nations, but an ideological and racial war of extermination (<em>Vernichtungskrieg</em>). Through the infamous <strong>Commissar Order</strong>, German soldiers were instructed to execute captured Soviet political commissars immediately without trial. In Hitler’s worldview, Soviet communism and European Jewry were inextricably fused into a single existential enemy he labelled <em>\"Judeo-Bolshevism\"</em>. The invasion of the Soviet Union was designed from its inception to eliminate entire populations to clear <em>Lebensraum</em> (living space) for German colonization.",
+          "text": "<span class=\"para-ref\">[4.1]</span> On **22 June 1941**, Adolf Hitler launched **Operation Barbarossa**, sending over three million German and Axis troops in a surprise invasion of the Soviet Union. This invasion was conceived not merely as a conventional military campaign, but as a racial war of extermination (*Vernichtungskrieg*). Hitler and his generals had the notorious Commissar Order issued, instructing troops to execute captured Soviet political officers without trial, grounded in the virulent Judeo-Bolshevism myth—the absurd lie that Jews were the hidden puppet-masters behind Soviet communism.",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -2307,7 +3955,7 @@ export default {
         {
           "act": 2,
           "title": "The Einsatzgruppen and Order Police Battalions",
-          "text": "<span class=\"para-ref\">[4.2]</span> Marching directly behind the front-line Wehrmacht combat divisions were four specialized, motorized SS death squads designated <strong>Einsatzgruppen</strong> (A, B, C, and D), numbering approximately 3,000 men in total, commanded by university-educated officers, lawyers, and civil servants. They were reinforced by thousands of regular German policemen organized into <strong>Order Police battalions</strong> (such as Reserve Police Battalion 101, famously analyzed by historian Christopher Browning in <em>Ordinary Men</em>). Initially, in June and July 1941, these units targeted adult Jewish men who held positions in government or the Communist Party. However, in late July and August 1941, following inspection visits by SS chief Heinrich Himmler, the mandate was radicalised into total extermination: the killing squads began murdering all Jewish men, women, children, and infants without exception.",
+          "text": "<span class=\"para-ref\">[4.2]</span> Marching directly behind the front-line Wehrmacht combat divisions were 4 SS killing squads known as the **Einsatzgruppen** (A, B, C, and D), supplemented by Order Police battalions. While the Einsatzgruppen initially targeted adult Jewish men in leadership roles, by August 1941 their orders expanded to total annihilation: entire communities, with women & children shot alongside men into massive trenches.",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -2346,7 +3994,7 @@ export default {
         {
           "act": 3,
           "title": "The Massacre at Babi Yar (Kyiv, September 1941)",
-          "text": "<span class=\"para-ref\">[4.3]</span> The most notorious massacre of this \"Holocaust by Bullets\" occurred on the outskirts of Kyiv, the capital of Soviet Ukraine. On 28 September 1941, notices were posted across the city ordering all Jews of Kyiv to assemble at a designated street corner the following morning, carrying warm clothes, money, and documents under the deceptive pretext of \"resettlement\". Over 30,000 people complied. They were marched in columns to the <strong>Babi Yar</strong> ravine outside the city, where German SS Sonderkommando 4a, Waffen-SS soldiers, and German police forced them to surrender their luggage, undress completely, and walk in small groups down into the deep ravine. There, victims were forced to lie face-down upon the bodies of those already shot before being executed by machine-gun fire to the back of the neck. Over just thirty-six hours on <strong>29–30 September 1941, exactly 33,771 Jewish people were murdered</strong> at Babi Yar.",
+          "text": "<span class=\"para-ref\">[4.3]</span> The most notorious massacre of this \"Holocaust by Bullets\" occurred on the outskirts of Kyiv at **Babyn Yar** (Babi Yar), a deep ravine outside Kyiv. On 28 September 1941, notices were posted across Kyiv ordering all Jewish residents to report with documents and warm clothing. Believing they were being resettled, over 30,000 men, women, and children arrived at the designated cemetery. They were marched in small groups to the ravine, forced to strip naked, surrender valuables, and lie face down atop the bodies of those already killed. Over two days (29–30 September 1941), a total of **33,771 shot in 36 hours** into the ravine. The killers sent clinical Berlin reports back to headquarters detailing the exact numbers.",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -2382,7 +4030,7 @@ export default {
         {
           "act": 4,
           "title": "Massacres Across the Baltics and Local Collaboration",
-          "text": "<span class=\"para-ref\">[4.4]</span> The slaughter was repeated across hundreds of towns in Lithuania, Latvia, Belarus, and Ukraine. In the wooded forest of <strong>Ponary</strong> outside Vilna, over 70,000 Jews were murdered in vast circular pits originally dug by the Soviet army for fuel storage tanks. At the Ninth Fort in Kaunas and the Rumbula forest outside Riga, entire communities were erased in days. Crucially, the small numbers of German SS personnel could never have achieved this catastrophic scale alone: they actively recruited, armed, and encouraged <strong>local auxiliary police</strong>—nationalist volunteers in Lithuania, Latvia, and Ukraine who harboured deep antisemitism and erroneously blamed Jews for Soviet occupation. In Lithuania, over ninety percent of the country’s 220,000 Jews were murdered before the end of 1941, predominantly through the active participation of local auxiliary execution squads.",
+          "text": "<span class=\"para-ref\">[4.4]</span> The slaughter was repeated across hundreds of towns in Lithuania, Latvia, Belarus, and Ukraine. In the wooded Ponary Forest pits near Vilna, over 70,000 Jews were shot. By the end of 1941, over 90% of Lithuanians and local Jewish communities were dead. In these mass killings, German units relied extensively on local auxiliary collaboration—Lithuanian, Latvian, and Ukrainian auxiliary police battalions who volunteered to round up, guard, and shoot their Jewish neighbours.",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -2418,13 +4066,17 @@ export default {
         {
           "act": 5,
           "title": "Perpetrator Strain and the Shift toward Industrial Murder",
-          "text": "<span class=\"para-ref\">[4.5]</span> By the winter of 1941, the Einsatzgruppen and police battalions had shot over <strong>500,000 people</strong>. However, Nazi commanders confronted a logistical and psychological dilemma. Mass shooting required intimate, face-to-face murder of screaming mothers and infants in broad daylight. In August 1941, Heinrich Himmler visited Minsk and personally observed a mass shooting; visibly distressed as soil splattered his coat, Himmler worried about the severe psychological toll on his German troops, noting increased rates of alcoholism, nervous breakdowns, and suicides among executioners. SS technicians set to work finding an impersonal, mechanized method that would spare the executioners’ feelings while increasing the speed of extermination. This search led directly to the development of sealed <strong>gas vans</strong> using carbon monoxide exhaust fumes at <strong>Chełmno</strong> in December 1941—the lethal bridge leading directly to the industrial death camps.",
+          "image": "/images/wannsee_heydrich_endlosung_directive_1941.jpg",
+          "image_alt": "Facsimile of Hermann Göring’s 31 July 1941 directive authorizing Reinhard Heydrich to prepare a total solution of the Jewish question",
+          "caption": "Göring's Endlösung Directive (31 July 1941): Document authorizing the RSHA to coordinate organizational, technical, and material preparations for a continent-wide 'total solution'.",
+          "isReversed": true,
+          "text": "<span class=\"para-ref\">[4.5]</span> By the winter of 1941, the Einsatzgruppen and police battalions had shot over **500,000 people**. However, Nazi commanders recognized practical limits to mass shooting. When SS chief Heinrich Himmler became physically sick at Minsk witnessing a shooting in August 1941, he grew alarmed by shooter nervous breakdowns and heavy drinking among execution squads. Himmler ordered the development of a more industrialized method of killing—humane only from the perspective of the executioners. This led directly to the use of Chełmno exhaust vans in occupied Poland, where carbon monoxide exhaust was pumped into sealed truck compartments to asphyxiate victims, paving the way for the extermination camps.",
           "source": {
             "letter": "E",
             "type": "visual",
-            "title": "Source E (Forensic Archival Plate): Ruins and Memorial of the Chełmno Gas Van Extermination Camp (Kulmhof)",
+            "title": "Source E (Forensic Archival Photograph): Magirus-Deutz Gas Van Recovered at Chełmno Extermination Camp (1945)",
             "text": "SS-Obersturmbannführer Willy Just to Reich Criminal Police Office, Berlin: Subject: Technical modifications to special vehicles (Saurer gas vans). Since December 1941, ninety-seven thousand have been processed through three vehicles in service, without defect. The application of carbon monoxide exhaust gas must be made more uniform... The connecting hose from the exhaust to the van interior often tears. Furthermore, shortening the freight cargo bed by one metre prevents the shifting of the load towards the rear door, which otherwise creates extreme difficulty for the unloading commandos.",
-            "caption": "Forensic site of Chełmno (Kulmhof), the first extermination camp established in December 1941, utilizing specially modified Saurer vans pumping carbon monoxide exhaust.",
+            "caption": "Forensic investigators examining a Magirus-Deutz gas van at Koło near Chełmno (Kulmhof) in 1945, showing the sealed rear compartment used by the SS to pump lethal carbon monoxide exhaust into victims.",
             "citation": "Nuremberg Trial Documents (Document PS-501) / German Federal Archives.",
             "context": "Face-to-face shooting created severe psychological stress and drunkenness among German firing squads. To ease the burden on perpetrators and maximize slaughter, the Nazi leadership developed sealed gas vans at Chełmno (operational December 1941), initiating the transition to industrial gas chambers. **Hinge Question:** How does the technical language of this engineering report demonstrate the dehumanization of both victims and perpetrators?",
             "hinge_question": "How does the technical language of this engineering report demonstrate the dehumanization of both victims and perpetrators?",
@@ -2659,9 +4311,9 @@ export default {
         {
           "letter": "E",
           "type": "visual",
-          "title": "Source E (Forensic Archival Plate): Ruins and Memorial of the Chełmno Gas Van Extermination Camp (Kulmhof)",
+          "title": "Source E (Forensic Archival Photograph): Magirus-Deutz Gas Van Recovered at Chełmno Extermination Camp (1945)",
           "text": "SS-Obersturmbannführer Willy Just to Reich Criminal Police Office, Berlin: Subject: Technical modifications to special vehicles (Saurer gas vans). Since December 1941, ninety-seven thousand have been processed through three vehicles in service, without defect. The application of carbon monoxide exhaust gas must be made more uniform... The connecting hose from the exhaust to the van interior often tears. Furthermore, shortening the freight cargo bed by one metre prevents the shifting of the load towards the rear door, which otherwise creates extreme difficulty for the unloading commandos.",
-          "caption": "Forensic site of Chełmno (Kulmhof), the first extermination camp established in December 1941, utilizing specially modified Saurer vans pumping carbon monoxide exhaust.",
+          "caption": "Forensic investigators examining a Magirus-Deutz gas van at Koło near Chełmno (Kulmhof) in 1945, showing the sealed rear compartment used by the SS to pump lethal carbon monoxide exhaust into victims.",
           "citation": "Nuremberg Trial Documents (Document PS-501) / German Federal Archives.",
           "context": "Face-to-face shooting created severe psychological stress and drunkenness among German firing squads. To ease the burden on perpetrators and maximize slaughter, the Nazi leadership developed sealed gas vans at Chełmno (operational December 1941), initiating the transition to industrial gas chambers. **Hinge Question:** How does the technical language of this engineering report demonstrate the dehumanization of both victims and perpetrators?",
           "hinge_question": "How does the technical language of this engineering report demonstrate the dehumanization of both victims and perpetrators?",
@@ -2746,6 +4398,530 @@ export default {
           },
           "model_answer": "On the one hand, the January 1942 Wannsee Conference was a decisive turning point because it coordinated the bureaucratic logistics of the 'Final Solution'. Chaired by Reinhard Heydrich, top Nazi officials and civil servants agreed to systematically deport 11 million European Jews to industrial death camps in occupied Poland, using poison gas (Zyklon B) for mass extermination.<br><br>On the other hand, systematic mass murder had already begun in June 1941 following the invasion of the Soviet Union. Mobile killing squads (Einsatzgruppen) had already shot over one million Jewish men, women, and children. Therefore, Wannsee did not initiate mass murder, but transformed it into a continent-wide, factory-style industrial genocide.",
           "topic": "Question 4: Evaluative Statement Essay [12 marks • 15 mins]"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "On what date did Adolf Hitler launch Operation Barbarossa, the invasion of the Soviet Union?",
+          "q": "On what date did Adolf Hitler launch Operation Barbarossa, the invasion of the Soviet Union?",
+          "options": [
+            "22 June 1941",
+            "1 September 1939",
+            "10 May 1940",
+            "20 January 1942"
+          ],
+          "answer": "22 June 1941",
+          "a": "22 June 1941",
+          "explanation": "Adolf Hitler launched Operation Barbarossa against the Soviet Union on 22 June 1941."
+        },
+        {
+          "question": "What German term did Nazi leadership use to define the invasion as a total war of extermination?",
+          "q": "What German term did Nazi leadership use to define the invasion as a total war of extermination?",
+          "options": [
+            "Vernichtungskrieg",
+            "Blitzkrieg",
+            "Sitzkrieg",
+            "Totaler Krieg"
+          ],
+          "answer": "Vernichtungskrieg",
+          "a": "Vernichtungskrieg",
+          "explanation": "Hitler described the campaign as a Vernichtungskrieg—an ideological and racial war of extermination."
+        },
+        {
+          "question": "What did the Commissar Order instruct German soldiers to do upon capturing Soviet political commissars?",
+          "q": "What did the Commissar Order instruct German soldiers to do upon capturing Soviet political commissars?",
+          "options": [
+            "Execute them immediately without trial",
+            "Send them to prisoner-of-war camps in Germany",
+            "Interrogate them under military law",
+            "Hand them over to the Red Cross"
+          ],
+          "answer": "Execute them immediately without trial",
+          "a": "Execute them immediately without trial",
+          "explanation": "The Commissar Order commanded German forces to execute captured Soviet political commissars on the spot."
+        },
+        {
+          "question": "What ideological term did Adolf Hitler use to link Soviet communism with European Jewish people?",
+          "q": "What ideological term did Adolf Hitler use to link Soviet communism with European Jewish people?",
+          "options": [
+            "\"Judeo-Bolshevism\"",
+            "\"Slavic Hegemony\"",
+            "\"Cosmopolitan Marxists\"",
+            "\"Socialist Plutocracy\""
+          ],
+          "answer": "\"Judeo-Bolshevism\"",
+          "a": "\"Judeo-Bolshevism\"",
+          "explanation": "Hitler fused communism and Judaism into a single ideological enemy he labeled 'Judeo-Bolshevism'."
+        },
+        {
+          "question": "What was the Nazi geopolitical goal of securing 'living space' in the East for German settlers called?",
+          "q": "What was the Nazi geopolitical goal of securing 'living space' in the East for German settlers called?",
+          "options": [
+            "Lebensraum",
+            "Anschluss",
+            "Gleichschaltung",
+            "Autarky"
+          ],
+          "answer": "Lebensraum",
+          "a": "Lebensraum",
+          "explanation": "The invasion aimed to conquer Lebensraum (living space) by eliminating indigenous populations."
+        },
+        {
+          "question": "What were the four motorized SS mobile killing squads operating behind front lines called?",
+          "q": "What were the four motorized SS mobile killing squads operating behind front lines called?",
+          "options": [
+            "Einsatzgruppen (A, B, C, and D)",
+            "Wehrmacht Field Brigades",
+            "Sturmabteilung Garrisons",
+            "Freikorps Units"
+          ],
+          "answer": "Einsatzgruppen (A, B, C, and D)",
+          "a": "Einsatzgruppen (A, B, C, and D)",
+          "explanation": "Four motorized SS death squads designated Einsatzgruppen A, B, C, and D conducted mass shootings."
+        },
+        {
+          "question": "Approximately how many men served across the four Einsatzgruppen death squads combined?",
+          "q": "Approximately how many men served across the four Einsatzgruppen death squads combined?",
+          "options": [
+            "Approximately 3,000 men",
+            "Roughly 50,000 men",
+            "Over 100,000 men",
+            "Under 500 men"
+          ],
+          "answer": "Approximately 3,000 men",
+          "a": "Approximately 3,000 men",
+          "explanation": "The Einsatzgruppen numbered approximately 3,000 men in total, commanded by educated professionals and SS officers."
+        },
+        {
+          "question": "Which historian documented the role of regular German police in mass shootings in the book 'Ordinary Men'?",
+          "q": "Which historian documented the role of regular German police in mass shootings in the book 'Ordinary Men'?",
+          "options": [
+            "Christopher Browning",
+            "Ian Kershaw",
+            "Richard Evans",
+            "Hugh Trevor-Roper"
+          ],
+          "answer": "Christopher Browning",
+          "a": "Christopher Browning",
+          "explanation": "Historian Christopher Browning analysed Reserve Police Battalion 101 in his famous study Ordinary Men."
+        },
+        {
+          "question": "In which months of 1941 did the killing squads expand their mandate to murder all Jewish women and children?",
+          "q": "In which months of 1941 did the killing squads expand their mandate to murder all Jewish women and children?",
+          "options": [
+            "Late July and August 1941",
+            "January 1941",
+            "November 1942",
+            "May 1943"
+          ],
+          "answer": "Late July and August 1941",
+          "a": "Late July and August 1941",
+          "explanation": "Following Himmler's inspection tours in late July and August 1941, the squads began killing all women, children, and infants."
+        },
+        {
+          "question": "Where did the most notorious mass shooting of over 33,000 Jewish people take place in September 1941?",
+          "q": "Where did the most notorious mass shooting of over 33,000 Jewish people take place in September 1941?",
+          "options": [
+            "Babi Yar (outside Kyiv)",
+            "Ponary Forest",
+            "The Ninth Fort",
+            "Rumbula Forest"
+          ],
+          "answer": "Babi Yar (outside Kyiv)",
+          "a": "Babi Yar (outside Kyiv)",
+          "explanation": "The massacre at the Babi Yar ravine outside Kyiv was the largest single mass shooting of the Holocaust by Bullets."
+        },
+        {
+          "question": "Under what deceptive pretext were the Jewish citizens of Kyiv ordered to assemble on 29 September 1941?",
+          "q": "Under what deceptive pretext were the Jewish citizens of Kyiv ordered to assemble on 29 September 1941?",
+          "options": [
+            "Under the pretext of \"resettlement\"",
+            "To register for food rationing",
+            "To undergo medical vaccination",
+            "To vote in a local election"
+          ],
+          "answer": "Under the pretext of \"resettlement\"",
+          "a": "Under the pretext of \"resettlement\"",
+          "explanation": "Notices ordered Jews to assemble with warm clothes and money under the deceptive claim of 'resettlement'."
+        },
+        {
+          "question": "Which specialized SS unit spearheaded the executions at the Babi Yar ravine?",
+          "q": "Which specialized SS unit spearheaded the executions at the Babi Yar ravine?",
+          "options": [
+            "SS Sonderkommando 4a",
+            "SS Totenkopf Brigade",
+            "Gestapo Section IV-B",
+            "The Brandenburg Regiment"
+          ],
+          "answer": "SS Sonderkommando 4a",
+          "a": "SS Sonderkommando 4a",
+          "explanation": "SS Sonderkommando 4a, supported by Waffen-SS soldiers and German police, carried out the executions."
+        },
+        {
+          "question": "Exactly how many Jewish people were murdered at Babi Yar over thirty-six hours on 29–30 September 1941?",
+          "q": "Exactly how many Jewish people were murdered at Babi Yar over thirty-six hours on 29–30 September 1941?",
+          "options": [
+            "33,771 people",
+            "10,500 people",
+            "75,000 people",
+            "18,200 people"
+          ],
+          "answer": "33,771 people",
+          "a": "33,771 people",
+          "explanation": "Over thirty-six hours on 29–30 September 1941, exactly 33,771 Jewish people were murdered at Babi Yar."
+        },
+        {
+          "question": "How many Jewish victims were murdered in circular pits in the Ponary forest outside Vilna?",
+          "q": "How many Jewish victims were murdered in circular pits in the Ponary forest outside Vilna?",
+          "options": [
+            "Over 70,000",
+            "About 5,000",
+            "Under 1,000",
+            "Roughly 15,000"
+          ],
+          "answer": "Over 70,000",
+          "a": "Over 70,000",
+          "explanation": "Over 70,000 Jews were shot in the Ponary forest in pits originally excavated for Soviet fuel storage tanks."
+        },
+        {
+          "question": "Which local groups were armed by the SS to assist in mass murder across Lithuania, Latvia, and Ukraine?",
+          "q": "Which local groups were armed by the SS to assist in mass murder across Lithuania, Latvia, and Ukraine?",
+          "options": [
+            "Local auxiliary police battalions",
+            "Soviet Red Army defectors",
+            "Neutral Swedish volunteers",
+            "Disbanded Polish cavalrymen"
+          ],
+          "answer": "Local auxiliary police battalions",
+          "a": "Local auxiliary police battalions",
+          "explanation": "The SS recruited and armed nationalist local auxiliary police squads who actively participated in executions."
+        },
+        {
+          "question": "What percentage of Lithuania's 220,000 Jewish inhabitants were murdered before the end of 1941?",
+          "q": "What percentage of Lithuania's 220,000 Jewish inhabitants were murdered before the end of 1941?",
+          "options": [
+            "Over ninety percent",
+            "About twenty percent",
+            "Less than ten percent",
+            "Exactly fifty percent"
+          ],
+          "answer": "Over ninety percent",
+          "a": "Over ninety percent",
+          "explanation": "Over ninety percent of Lithuania's Jews were murdered before the close of 1941 with heavy local auxiliary collaboration."
+        },
+        {
+          "question": "Approximately how many people had been shot by the Einsatzgruppen and police battalions by the winter of 1941?",
+          "q": "Approximately how many people had been shot by the Einsatzgruppen and police battalions by the winter of 1941?",
+          "options": [
+            "Over 500,000 people",
+            "About 50,000 people",
+            "Two million people",
+            "Under 10,000 people"
+          ],
+          "answer": "Over 500,000 people",
+          "a": "Over 500,000 people",
+          "explanation": "By the winter of 1941, Einsatzgruppen and police battalions had shot over 500,000 Jewish people."
+        },
+        {
+          "question": "Which Nazi leader became visibly shaken while witnessing a mass shooting in Minsk in August 1941?",
+          "q": "Which Nazi leader became visibly shaken while witnessing a mass shooting in Minsk in August 1941?",
+          "options": [
+            "Heinrich Himmler",
+            "Joseph Goebbels",
+            "Adolf Eichmann",
+            "Reinhard Heydrich"
+          ],
+          "answer": "Heinrich Himmler",
+          "a": "Heinrich Himmler",
+          "explanation": "Himmler was visibly distressed when splashed with soil during a Minsk execution, prompting concerns about troop morale."
+        },
+        {
+          "question": "What psychological consequences did SS leaders observe among executioners conducting face-to-face shootings?",
+          "q": "What psychological consequences did SS leaders observe among executioners conducting face-to-face shootings?",
+          "options": [
+            "Increased rates of alcoholism, nervous breakdowns, and suicides",
+            "Requests for early retirement and transfer to the navy",
+            "Widespread open mutinies against SS officers",
+            "Spontaneous mass resignations from the Nazi party"
+          ],
+          "answer": "Increased rates of alcoholism, nervous breakdowns, and suicides",
+          "a": "Increased rates of alcoholism, nervous breakdowns, and suicides",
+          "explanation": "Executioners suffered severe psychological strain, leading to alcoholism, breakdowns, and suicides."
+        },
+        {
+          "question": "Which early killing site began using mobile gas vans utilizing exhaust fumes in December 1941?",
+          "q": "Which early killing site began using mobile gas vans utilizing exhaust fumes in December 1941?",
+          "options": [
+            "Chełmno",
+            "Treblinka",
+            "Auschwitz",
+            "Dachau"
+          ],
+          "answer": "Chełmno",
+          "a": "Chełmno",
+          "explanation": "At Chełmno in December 1941, the SS began using sealed gas vans powered by carbon monoxide exhaust fumes."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "question": "On what date did Adolf Hitler launch Operation Barbarossa, the invasion of the Soviet Union?",
+          "q": "On what date did Adolf Hitler launch Operation Barbarossa, the invasion of the Soviet Union?",
+          "options": [
+            "22 June 1941",
+            "1 September 1939",
+            "10 May 1940",
+            "20 January 1942"
+          ],
+          "answer": "22 June 1941",
+          "a": "22 June 1941",
+          "explanation": "Adolf Hitler launched Operation Barbarossa against the Soviet Union on 22 June 1941."
+        },
+        {
+          "question": "What German term did Nazi leadership use to define the invasion as a total war of extermination?",
+          "q": "What German term did Nazi leadership use to define the invasion as a total war of extermination?",
+          "options": [
+            "Vernichtungskrieg",
+            "Blitzkrieg",
+            "Sitzkrieg",
+            "Totaler Krieg"
+          ],
+          "answer": "Vernichtungskrieg",
+          "a": "Vernichtungskrieg",
+          "explanation": "Hitler described the campaign as a Vernichtungskrieg—an ideological and racial war of extermination."
+        },
+        {
+          "question": "What did the Commissar Order instruct German soldiers to do upon capturing Soviet political commissars?",
+          "q": "What did the Commissar Order instruct German soldiers to do upon capturing Soviet political commissars?",
+          "options": [
+            "Execute them immediately without trial",
+            "Send them to prisoner-of-war camps in Germany",
+            "Interrogate them under military law",
+            "Hand them over to the Red Cross"
+          ],
+          "answer": "Execute them immediately without trial",
+          "a": "Execute them immediately without trial",
+          "explanation": "The Commissar Order commanded German forces to execute captured Soviet political commissars on the spot."
+        },
+        {
+          "question": "What ideological term did Adolf Hitler use to link Soviet communism with European Jewish people?",
+          "q": "What ideological term did Adolf Hitler use to link Soviet communism with European Jewish people?",
+          "options": [
+            "\"Judeo-Bolshevism\"",
+            "\"Slavic Hegemony\"",
+            "\"Cosmopolitan Marxists\"",
+            "\"Socialist Plutocracy\""
+          ],
+          "answer": "\"Judeo-Bolshevism\"",
+          "a": "\"Judeo-Bolshevism\"",
+          "explanation": "Hitler fused communism and Judaism into a single ideological enemy he labeled 'Judeo-Bolshevism'."
+        },
+        {
+          "question": "What was the Nazi geopolitical goal of securing 'living space' in the East for German settlers called?",
+          "q": "What was the Nazi geopolitical goal of securing 'living space' in the East for German settlers called?",
+          "options": [
+            "Lebensraum",
+            "Anschluss",
+            "Gleichschaltung",
+            "Autarky"
+          ],
+          "answer": "Lebensraum",
+          "a": "Lebensraum",
+          "explanation": "The invasion aimed to conquer Lebensraum (living space) by eliminating indigenous populations."
+        },
+        {
+          "question": "What were the four motorized SS mobile killing squads operating behind front lines called?",
+          "q": "What were the four motorized SS mobile killing squads operating behind front lines called?",
+          "options": [
+            "Einsatzgruppen (A, B, C, and D)",
+            "Wehrmacht Field Brigades",
+            "Sturmabteilung Garrisons",
+            "Freikorps Units"
+          ],
+          "answer": "Einsatzgruppen (A, B, C, and D)",
+          "a": "Einsatzgruppen (A, B, C, and D)",
+          "explanation": "Four motorized SS death squads designated Einsatzgruppen A, B, C, and D conducted mass shootings."
+        },
+        {
+          "question": "Approximately how many men served across the four Einsatzgruppen death squads combined?",
+          "q": "Approximately how many men served across the four Einsatzgruppen death squads combined?",
+          "options": [
+            "Approximately 3,000 men",
+            "Roughly 50,000 men",
+            "Over 100,000 men",
+            "Under 500 men"
+          ],
+          "answer": "Approximately 3,000 men",
+          "a": "Approximately 3,000 men",
+          "explanation": "The Einsatzgruppen numbered approximately 3,000 men in total, commanded by educated professionals and SS officers."
+        },
+        {
+          "question": "Which historian documented the role of regular German police in mass shootings in the book 'Ordinary Men'?",
+          "q": "Which historian documented the role of regular German police in mass shootings in the book 'Ordinary Men'?",
+          "options": [
+            "Christopher Browning",
+            "Ian Kershaw",
+            "Richard Evans",
+            "Hugh Trevor-Roper"
+          ],
+          "answer": "Christopher Browning",
+          "a": "Christopher Browning",
+          "explanation": "Historian Christopher Browning analysed Reserve Police Battalion 101 in his famous study Ordinary Men."
+        },
+        {
+          "question": "In which months of 1941 did the killing squads expand their mandate to murder all Jewish women and children?",
+          "q": "In which months of 1941 did the killing squads expand their mandate to murder all Jewish women and children?",
+          "options": [
+            "Late July and August 1941",
+            "January 1941",
+            "November 1942",
+            "May 1943"
+          ],
+          "answer": "Late July and August 1941",
+          "a": "Late July and August 1941",
+          "explanation": "Following Himmler's inspection tours in late July and August 1941, the squads began killing all women, children, and infants."
+        },
+        {
+          "question": "Where did the most notorious mass shooting of over 33,000 Jewish people take place in September 1941?",
+          "q": "Where did the most notorious mass shooting of over 33,000 Jewish people take place in September 1941?",
+          "options": [
+            "Babi Yar (outside Kyiv)",
+            "Ponary Forest",
+            "The Ninth Fort",
+            "Rumbula Forest"
+          ],
+          "answer": "Babi Yar (outside Kyiv)",
+          "a": "Babi Yar (outside Kyiv)",
+          "explanation": "The massacre at the Babi Yar ravine outside Kyiv was the largest single mass shooting of the Holocaust by Bullets."
+        },
+        {
+          "question": "Under what deceptive pretext were the Jewish citizens of Kyiv ordered to assemble on 29 September 1941?",
+          "q": "Under what deceptive pretext were the Jewish citizens of Kyiv ordered to assemble on 29 September 1941?",
+          "options": [
+            "Under the pretext of \"resettlement\"",
+            "To register for food rationing",
+            "To undergo medical vaccination",
+            "To vote in a local election"
+          ],
+          "answer": "Under the pretext of \"resettlement\"",
+          "a": "Under the pretext of \"resettlement\"",
+          "explanation": "Notices ordered Jews to assemble with warm clothes and money under the deceptive claim of 'resettlement'."
+        },
+        {
+          "question": "Which specialized SS unit spearheaded the executions at the Babi Yar ravine?",
+          "q": "Which specialized SS unit spearheaded the executions at the Babi Yar ravine?",
+          "options": [
+            "SS Sonderkommando 4a",
+            "SS Totenkopf Brigade",
+            "Gestapo Section IV-B",
+            "The Brandenburg Regiment"
+          ],
+          "answer": "SS Sonderkommando 4a",
+          "a": "SS Sonderkommando 4a",
+          "explanation": "SS Sonderkommando 4a, supported by Waffen-SS soldiers and German police, carried out the executions."
+        },
+        {
+          "question": "Exactly how many Jewish people were murdered at Babi Yar over thirty-six hours on 29–30 September 1941?",
+          "q": "Exactly how many Jewish people were murdered at Babi Yar over thirty-six hours on 29–30 September 1941?",
+          "options": [
+            "33,771 people",
+            "10,500 people",
+            "75,000 people",
+            "18,200 people"
+          ],
+          "answer": "33,771 people",
+          "a": "33,771 people",
+          "explanation": "Over thirty-six hours on 29–30 September 1941, exactly 33,771 Jewish people were murdered at Babi Yar."
+        },
+        {
+          "question": "How many Jewish victims were murdered in circular pits in the Ponary forest outside Vilna?",
+          "q": "How many Jewish victims were murdered in circular pits in the Ponary forest outside Vilna?",
+          "options": [
+            "Over 70,000",
+            "About 5,000",
+            "Under 1,000",
+            "Roughly 15,000"
+          ],
+          "answer": "Over 70,000",
+          "a": "Over 70,000",
+          "explanation": "Over 70,000 Jews were shot in the Ponary forest in pits originally excavated for Soviet fuel storage tanks."
+        },
+        {
+          "question": "Which local groups were armed by the SS to assist in mass murder across Lithuania, Latvia, and Ukraine?",
+          "q": "Which local groups were armed by the SS to assist in mass murder across Lithuania, Latvia, and Ukraine?",
+          "options": [
+            "Local auxiliary police battalions",
+            "Soviet Red Army defectors",
+            "Neutral Swedish volunteers",
+            "Disbanded Polish cavalrymen"
+          ],
+          "answer": "Local auxiliary police battalions",
+          "a": "Local auxiliary police battalions",
+          "explanation": "The SS recruited and armed nationalist local auxiliary police squads who actively participated in executions."
+        },
+        {
+          "question": "What percentage of Lithuania's 220,000 Jewish inhabitants were murdered before the end of 1941?",
+          "q": "What percentage of Lithuania's 220,000 Jewish inhabitants were murdered before the end of 1941?",
+          "options": [
+            "Over ninety percent",
+            "About twenty percent",
+            "Less than ten percent",
+            "Exactly fifty percent"
+          ],
+          "answer": "Over ninety percent",
+          "a": "Over ninety percent",
+          "explanation": "Over ninety percent of Lithuania's Jews were murdered before the close of 1941 with heavy local auxiliary collaboration."
+        },
+        {
+          "question": "Approximately how many people had been shot by the Einsatzgruppen and police battalions by the winter of 1941?",
+          "q": "Approximately how many people had been shot by the Einsatzgruppen and police battalions by the winter of 1941?",
+          "options": [
+            "Over 500,000 people",
+            "About 50,000 people",
+            "Two million people",
+            "Under 10,000 people"
+          ],
+          "answer": "Over 500,000 people",
+          "a": "Over 500,000 people",
+          "explanation": "By the winter of 1941, Einsatzgruppen and police battalions had shot over 500,000 Jewish people."
+        },
+        {
+          "question": "Which Nazi leader became visibly shaken while witnessing a mass shooting in Minsk in August 1941?",
+          "q": "Which Nazi leader became visibly shaken while witnessing a mass shooting in Minsk in August 1941?",
+          "options": [
+            "Heinrich Himmler",
+            "Joseph Goebbels",
+            "Adolf Eichmann",
+            "Reinhard Heydrich"
+          ],
+          "answer": "Heinrich Himmler",
+          "a": "Heinrich Himmler",
+          "explanation": "Himmler was visibly distressed when splashed with soil during a Minsk execution, prompting concerns about troop morale."
+        },
+        {
+          "question": "What psychological consequences did SS leaders observe among executioners conducting face-to-face shootings?",
+          "q": "What psychological consequences did SS leaders observe among executioners conducting face-to-face shootings?",
+          "options": [
+            "Increased rates of alcoholism, nervous breakdowns, and suicides",
+            "Requests for early retirement and transfer to the navy",
+            "Widespread open mutinies against SS officers",
+            "Spontaneous mass resignations from the Nazi party"
+          ],
+          "answer": "Increased rates of alcoholism, nervous breakdowns, and suicides",
+          "a": "Increased rates of alcoholism, nervous breakdowns, and suicides",
+          "explanation": "Executioners suffered severe psychological strain, leading to alcoholism, breakdowns, and suicides."
+        },
+        {
+          "question": "Which early killing site began using mobile gas vans utilizing exhaust fumes in December 1941?",
+          "q": "Which early killing site began using mobile gas vans utilizing exhaust fumes in December 1941?",
+          "options": [
+            "Chełmno",
+            "Treblinka",
+            "Auschwitz",
+            "Dachau"
+          ],
+          "answer": "Chełmno",
+          "a": "Chełmno",
+          "explanation": "At Chełmno in December 1941, the SS began using sealed gas vans powered by carbon monoxide exhaust fumes."
         }
       ]
     },
@@ -2911,30 +5087,48 @@ export default {
       "vocab": [
         {
           "term": "Wannsee Conference",
-          "definition": "A meeting on 20 January 1942 in a Berlin villa where 15 senior Nazi officials coordinated the bureaucratic execution of the \"Final Solution\"."
+          "definition": "A meeting on 20 January 1942 in a Berlin villa where 15 senior Nazi officials coordinated the bureaucratic execution of the \"Final Solution\".",
+          "syllables": "Wann-see con-fer-ence",
+          "phonetic": "ˈvɑːnzeɪ ˈkɒnfərəns",
+          "tier": "3"
         },
         {
           "term": "Operation Reinhard",
-          "definition": "The secret code name for the plan to murder all Polish Jews, resulting in the creation of three dedicated death camps: Bełżec, Sobibór, and Treblinka."
+          "definition": "The secret code name for the plan to murder all Polish Jews, resulting in the creation of three dedicated death camps: Bełżec, Sobibór, and Treblinka.",
+          "syllables": "O-pera-tion Rei-nhard",
+          "phonetic": "operation reinhard",
+          "tier": "2"
         },
         {
           "term": "Extermination Camp",
-          "definition": "A purpose-built facility designed specifically for the industrial-scale murder of human beings using poison gas, with no selection for long-term labour."
+          "definition": "A purpose-built facility designed specifically for the industrial-scale murder of human beings using poison gas, with no selection for long-term labour.",
+          "syllables": "ex-ter-mi-na-tion camp",
+          "phonetic": "ɪkˌstɜːmɪˈneɪʃən kæmp",
+          "tier": "3"
         },
         {
           "term": "ŻOB (Jewish Combat Organization)",
-          "definition": "The underground armed resistance group in the Warsaw Ghetto, commanded by 23-year-old Mordechai Anielewicz during the 1943 uprising."
+          "definition": "The underground armed resistance group in the Warsaw Ghetto, commanded by 23-year-old Mordechai Anielewicz during the 1943 uprising.",
+          "syllables": "ŻOB (Je-wish Co-mbat O-rga-niza-tion)",
+          "phonetic": "żob (jewish combat organization)",
+          "tier": "3"
         },
         {
           "term": "Sonderkommando",
-          "definition": "Groups of Jewish prisoners forced under threat of instant death to dispose of gas chamber victims and operate crematoria before being murdered themselves."
+          "definition": "Groups of Jewish prisoners forced under threat of instant death to dispose of gas chamber victims and operate crematoria before being murdered themselves.",
+          "syllables": "So-nderko-mmando",
+          "phonetic": "sonderkommando",
+          "tier": "2"
         }
       ],
       "narrative_blocks": [
         {
           "act": 1,
           "title": "The Wannsee Conference: The Bureaucracy of Murder (1942)",
-          "text": "<span class=\"para-ref\">[5.1]</span> On <strong>20 January 1942</strong>, fifteen senior Nazi officials, SS generals, and government ministry directors gathered at a lakeside villa in the Berlin suburb of <strong>Wannsee</strong>. Convened by Reinhard Heydrich and recorded by Adolf Eichmann, the meeting lasted barely ninety minutes. Wannsee was not the moment when the decision to murder Europe’s Jews was made; that decision had already been taken by Hitler and Himmler in 1941. Instead, Wannsee was a logistical conference designed to secure the total coordination of the civilian state bureaucracy: the Foreign Office, the Ministry of Justice, the Interior Ministry, and the state railway (<em>Deutsche Reichsbahn</em>). Eichmann prepared a statistical chart detailing <strong>eleven million Jews across Europe</strong>—including those in neutral nations like Switzerland and Ireland, and unconquered Britain—who were to be combed from west to east and systematically eliminated.",
+          "image": "/images/holocaust_railway_deportation_europe_map.png",
+          "image_alt": "Map showing the continental Deutsche Reichsbahn railway network used for deportations to extermination camps across occupied Europe",
+          "caption": "The Continental Deportation Railway Network (1942–1944): Map illustrating how the German state railway coordinated deportations from across conquered Europe to the death camps.",
+          "text": "<span class=\"para-ref\">[5.1]</span> On **20 January 1942**, 15 senior civil servants, Nazi officials, SS generals, and government ministry directors gathered at a lakeside villa in Wannsee, a wealthy suburb of Berlin. Chaired by Reinhard Heydrich and recorded by Adolf Eichmann, the **Wannsee Conference** lasted barely ninety minutes. Its purpose was to coordinate logistics and secure full railway cooperation to execute the \"Final Solution\". Eichmann presented Eichmann’s 11 million list calculating that eleven million Jews across Europe were marked for eradication.",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -2970,7 +5164,7 @@ export default {
         {
           "act": 2,
           "title": "Operation Reinhard: The Pure Death Camps (1942–1943)",
-          "text": "<span class=\"para-ref\">[5.2]</span> Following Wannsee, the SS launched <strong>Operation Reinhard</strong>—the top-secret code name for the extermination of all 2.2 million Jews living in the General Government of occupied Poland. Under the command of Odilo Globocnik, the SS constructed three dedicated death camps near railway lines deep in the eastern forests: <strong>Bełżec, Sobibór, and Treblinka</strong>. These were not concentration or labour camps; they had no factories, barracks for long-term prisoners, or work details. They were pure extermination centres. Victims arrived packed into suffocating, windowless cattle wagons without water or sanitation. Upon arrival, men, women, and children were forced to strip, surrender their valuables, and run through a camouflaged pathway dubbed \"the Tube\" straight into gas chambers powered by large tank diesel engines pumping lethal carbon monoxide. Within two hours of a train’s arrival, an entire transport of 5,000 human beings was dead. Between March 1942 and late 1943, <strong>over 1.7 million people were murdered</strong> in these three camps alone.",
+          "text": "<span class=\"para-ref\">[5.2]</span> Following Wannsee, the SS launched **Operation Reinhard**—the top-secret code name for the extermination of all 2.2 million Jews in the General Government of occupied Poland. Three specialized extermination centres were constructed: **Bełżec, Sobibór, and Treblinka**. These sites had zero selection for labour; their sole purpose was immediate murder. Arriving trains were unloaded onto ramps disguised as transit stations, victims were told they were entering a shower, forced to undress, and directed into gas chambers. Dead within 2 hours of arrival, almost every man, woman, and child was murdered with carbon monoxide. Between them, these three camps murdered approximately **1.7 million Jewish people** before being dismantled in 1943.",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -3009,7 +5203,7 @@ export default {
         {
           "act": 3,
           "title": "Auschwitz-Birkenau: The Factory of Industrial Death",
-          "text": "<span class=\"para-ref\">[5.3]</span> The largest and most lethal centre was <strong>Auschwitz-Birkenau</strong> in southern Poland. Unlike Operation Reinhard, Auschwitz functioned as a dual-purpose complex: a brutal slave labour camp (Auschwitz I and III-Monowitz) combined with a vast extermination centre (Auschwitz II-Birkenau). Train transports arrived from across conquered Europe—France, the Netherlands, Greece, Italy, and Hungary. On the arrival ramp, SS doctors (such as Josef Mengele) conducted the <strong>\"selection\"</strong> with a flick of a thumb: roughly twenty percent of young, healthy adults were selected for slave labour, their arms tattooed with numbers; the remaining eighty percent—pregnant mothers, children, the elderly, and the sick—were sent immediately to the gas chambers disguised as disinfection showers. Technicians dropped pellets of <strong>Zyklon B</strong> (a cyanide-based pesticide) through roof vents, murdering up to 2,000 people in twenty minutes. Over <strong>1.1 million people</strong> were murdered at Auschwitz, including 960,000 Jewish men, women, and children.",
+          "text": "<span class=\"para-ref\">[5.3]</span> The largest and most lethal centre was **Auschwitz-Birkenau** in southern Poland. Unlike Operation Reinhard, Auschwitz functioned as both a massive slave-labour concentration camp and an extermination centre. Cattle trains from across Europe arrived at the railway ramp selection platform, where SS doctors conducted the selection. Those deemed fit for slave labour were tattooed and worked to exhaustion. The elderly, sick, and young children were sent directly to underground gas chambers, where pellets of **Zyklon B** were dropped through ceiling vents. At least **1.1 million murdered** at Auschwitz, of whom approximately one million were Jews.",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -3064,7 +5258,7 @@ export default {
         {
           "act": 4,
           "title": "The Warsaw Ghetto Uprising (April–May 1943)",
-          "text": "<span class=\"para-ref\">[5.4]</span> Contrary to the offensive myth that victims went passively to their deaths, Jewish people mounted desperate armed resistance across Europe. In the summer of 1942, the SS deported 300,000 Jews from the Warsaw Ghetto to Treblinka. The remaining 60,000 residents formed the <strong>Jewish Combat Organization (ŻOB)</strong>, led by 23-year-old <strong>Mordechai Anielewicz</strong>. When SS troops marched in on 19 April 1943 to liquidate the ghetto, young Jewish men and women ambushed them with smuggled pistols, homemade Molotov cocktails, and a handful of rifles. For twenty-seven days, starving fighters held off heavily armed German forces equipped with artillery, tanks, and flamethrowers. General Jürgen Stroop was forced to burn the ghetto block by block to flush out defenders from underground bunkers. In his final letter, Anielewicz wrote: <em>\"My life’s dream has come true; I have lived to see Jewish self-defence in the Warsaw Ghetto in all its greatness and glory.\"</em>",
+          "text": "<span class=\"para-ref\">[5.4]</span> Contrary to the offensive myth that victims went passively to their deaths, Jewish people mounted desperate armed resistance. When the SS entered the Warsaw Ghetto in April 1943 to deport the remaining 60,000 residents, they were ambushed. The Jewish Combat Organisation (**ŻOB**), led by 24-year-old **Mordechai Anielewicz**, and the Jewish Military Union (**ŻZW**) fought back. Using smuggled pistols vs German tanks, grenades, and petrol bombs, a few hundred young fighters held out for **27 days of defiance**. The uprising was finally crushed only when General Jürgen Stroop burned the ghetto block by block.",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -3100,13 +5294,13 @@ export default {
         {
           "act": 5,
           "title": "Revolts in the Death Camps and the Partisans",
-          "text": "<span class=\"para-ref\">[5.5]</span> Resistance did not end in Warsaw. In the very heart of the death camps, where survival was measured in hours, prisoners staged daring armed insurrections. On <strong>2 August 1943</strong>, prisoners at <strong>Treblinka</strong> stole grenades from the camp armoury, set storage barracks ablaze, and enabled 300 inmates to breach the perimeter wire. On <strong>14 October 1943</strong>, Jewish prisoners at <strong>Sobibór</strong>, led by Red Army prisoner-of-war Alexander Pechersky, killed eleven SS guards and staged a mass breakout, forcing the SS to dismantle and plough over the camp. On <strong>7 October 1944</strong>, the Jewish <strong>Sonderkommando at Auschwitz-Birkenau</strong>, utilizing gunpowder secretly smuggled in small matchboxes by young Jewish women working in a munitions factory (including Roza Robota), blew up Crematorium IV and killed three SS guards. Across the forests of Eastern Europe, thousands of Jewish fighters joined partisan detachments—such as the famous <strong>Bielski partisans</strong> in the Naliboki forest, who fought German forces while simultaneously safeguarding over 1,200 civilian women, children, and elderly.",
+          "text": "<span class=\"para-ref\">[5.5]</span> Resistance did not end in Warsaw. In the very heart of the death camps, prisoners mounted heroic revolts. At **Treblinka** in August 1943, prisoners conducted a daring Treblinka armoury raid, seizing rifles and grenades, setting the camp ablaze, and enabling 300 to escape. At **Sobibór** in October 1943, an underground committee led a Sobibór mass breakout of 300 inmates. In October 1944 at **Auschwitz-Birkenau**, members of the Jewish *Sonderkommando* staged an armed revolt using smuggled explosives, having Crematorium IV blown up before being killed.",
           "source": {
             "letter": "E",
             "type": "visual",
-            "title": "Source E (Forensic Archival Photograph): Blown-Up Ruins of Crematorium IV at Auschwitz-Birkenau (Sonderkommando Revolt, October 1944)",
+            "title": "Source E (Primary Archival Portrait & Testimony): Roza Robota and the Sonderkommando Revolt at Crematorium IV (Auschwitz-Birkenau, October 1944)",
             "text": "Survivor Noah Zabludowicz: \"Four young Jewish women working in the Weichsel-Union munitions factory—Roza Robota, Ala Gertner, Ester Wajcblum, and Regina Safirsztajn—smuggled tiny parcels of gunpowder inside their clothes to the Sonderkommando in Birkenau. On 7 October 1944, the Sonderkommando attacked the SS guards with axes and crowbars, set fire to Crematorium IV, and blew the building apart. The four young women were betrayed, tortured by the Gestapo for weeks, and hanged before the assembled camp. Just before the trapdoor fell, Roza shouted: 'Hazak V'ematz!' (Be strong and courageous!)\"",
-            "caption": "The collapsed brick ruins of Crematorium IV at Birkenau, dynamited on 7 October 1944 by Jewish Sonderkommando prisoners using gunpowder smuggled into the camp by young Jewish women workers including Roza Robota.",
+            "caption": "Roza Robota (1921–1945), one of the four heroic young Jewish women in the Auschwitz underground resistance who smuggled gunpowder out of the Weichsel-Union munitions factory to arm the Sonderkommando revolt that destroyed Crematorium IV.",
             "citation": "Yad Vashem Survivor Testimony Collection (M.11) / Ghetto Fighters' House Archives.",
             "context": "Armed uprisings occurred not only in ghettos but also inside the death camps of Treblinka (August 1943), Sobibór (October 1943), and Auschwitz-Birkenau (October 1944), alongside tens of thousands of Jewish partisans fighting in the forests of Poland and Belarus. **Hinge Question:** How does the history of camp revolts and forest partisans dismantle the persistent, harmful myth of Jewish passivity during the Holocaust?",
             "hinge_question": "How does the history of camp revolts and forest partisans dismantle the persistent, harmful myth of Jewish passivity during the Holocaust?",
@@ -3360,9 +5554,9 @@ export default {
         {
           "letter": "E",
           "type": "visual",
-          "title": "Source E (Forensic Archival Photograph): Blown-Up Ruins of Crematorium IV at Auschwitz-Birkenau (Sonderkommando Revolt, October 1944)",
+          "title": "Source E (Primary Archival Portrait & Testimony): Roza Robota and the Sonderkommando Revolt at Crematorium IV (Auschwitz-Birkenau, October 1944)",
           "text": "Survivor Noah Zabludowicz: \"Four young Jewish women working in the Weichsel-Union munitions factory—Roza Robota, Ala Gertner, Ester Wajcblum, and Regina Safirsztajn—smuggled tiny parcels of gunpowder inside their clothes to the Sonderkommando in Birkenau. On 7 October 1944, the Sonderkommando attacked the SS guards with axes and crowbars, set fire to Crematorium IV, and blew the building apart. The four young women were betrayed, tortured by the Gestapo for weeks, and hanged before the assembled camp. Just before the trapdoor fell, Roza shouted: 'Hazak V'ematz!' (Be strong and courageous!)\"",
-          "caption": "The collapsed brick ruins of Crematorium IV at Birkenau, dynamited on 7 October 1944 by Jewish Sonderkommando prisoners using gunpowder smuggled into the camp by young Jewish women workers including Roza Robota.",
+          "caption": "Roza Robota (1921–1945), one of the four heroic young Jewish women in the Auschwitz underground resistance who smuggled gunpowder out of the Weichsel-Union munitions factory to arm the Sonderkommando revolt that destroyed Crematorium IV.",
           "citation": "Yad Vashem Survivor Testimony Collection (M.11) / Ghetto Fighters' House Archives.",
           "context": "Armed uprisings occurred not only in ghettos but also inside the death camps of Treblinka (August 1943), Sobibór (October 1943), and Auschwitz-Birkenau (October 1944), alongside tens of thousands of Jewish partisans fighting in the forests of Poland and Belarus. **Hinge Question:** How does the history of camp revolts and forest partisans dismantle the persistent, harmful myth of Jewish passivity during the Holocaust?",
           "hinge_question": "How does the history of camp revolts and forest partisans dismantle the persistent, harmful myth of Jewish passivity during the Holocaust?",
@@ -3458,6 +5652,530 @@ export default {
           },
           "model_answer": "A primary reason prisoners resisted in extermination camps like Treblinka and Sobibor was the desperate realization that total extermination was imminent. When members of the Sonderkommando realized they were destined to be murdered to conceal Nazi crimes, they organized armed uprisings, blowing up crematoria and helping dozens escape to expose the death camps to the world.",
           "topic": "Question 2: Explain Why [8 marks • 12 mins]"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "On what date was the Wannsee Conference held in a lakeside Berlin villa?",
+          "q": "On what date was the Wannsee Conference held in a lakeside Berlin villa?",
+          "options": [
+            "20 January 1942",
+            "1 September 1939",
+            "22 June 1941",
+            "19 April 1943"
+          ],
+          "answer": "20 January 1942",
+          "a": "20 January 1942",
+          "explanation": "The Wannsee Conference met on 20 January 1942 in a villa in the Berlin suburb of Wannsee."
+        },
+        {
+          "question": "Who convened and chaired the ninety-minute Wannsee Conference?",
+          "q": "Who convened and chaired the ninety-minute Wannsee Conference?",
+          "options": [
+            "Reinhard Heydrich",
+            "Heinrich Himmler",
+            "Adolf Hitler",
+            "Hermann Göring"
+          ],
+          "answer": "Reinhard Heydrich",
+          "a": "Reinhard Heydrich",
+          "explanation": "SS security chief Reinhard Heydrich convened the conference to coordinate civilian state ministries."
+        },
+        {
+          "question": "Who prepared the statistics and recorded the official minutes of the Wannsee Conference?",
+          "q": "Who prepared the statistics and recorded the official minutes of the Wannsee Conference?",
+          "options": [
+            "Adolf Eichmann",
+            "Rudolf Höss",
+            "Odilo Globocnik",
+            "Hans Frank"
+          ],
+          "answer": "Adolf Eichmann",
+          "a": "Adolf Eichmann",
+          "explanation": "Adolf Eichmann prepared the statistical rosters and compiled the official Wannsee Protocol."
+        },
+        {
+          "question": "How many European Jews were listed on the statistical roster presented by Adolf Eichmann at Wannsee?",
+          "q": "How many European Jews were listed on the statistical roster presented by Adolf Eichmann at Wannsee?",
+          "options": [
+            "Eleven million",
+            "Six million",
+            "Two million",
+            "Twenty million"
+          ],
+          "answer": "Eleven million",
+          "a": "Eleven million",
+          "explanation": "Eichmann's chart calculated eleven million Jews across Europe, including in Britain and neutral nations."
+        },
+        {
+          "question": "Which German state entity was indispensable for coordinating the complex logistics of death trains?",
+          "q": "Which German state entity was indispensable for coordinating the complex logistics of death trains?",
+          "options": [
+            "The Deutsche Reichsbahn (German State Railway)",
+            "The Reichsbank",
+            "The Ministry of Agriculture",
+            "The Postal Administration"
+          ],
+          "answer": "The Deutsche Reichsbahn (German State Railway)",
+          "a": "The Deutsche Reichsbahn (German State Railway)",
+          "explanation": "The Deutsche Reichsbahn scheduled and operated the extensive network of special deportation trains across Europe."
+        },
+        {
+          "question": "What was the secret code name for the extermination of 2.2 million Jews in occupied Poland?",
+          "q": "What was the secret code name for the extermination of 2.2 million Jews in occupied Poland?",
+          "options": [
+            "Operation Reinhard",
+            "Operation Barbarossa",
+            "Operation Bagration",
+            "Operation Typhoon"
+          ],
+          "answer": "Operation Reinhard",
+          "a": "Operation Reinhard",
+          "explanation": "Operation Reinhard was the top-secret SS code name for murdering the Jewish population of the General Government."
+        },
+        {
+          "question": "Which SS officer commanded Operation Reinhard and supervised the construction of its death camps?",
+          "q": "Which SS officer commanded Operation Reinhard and supervised the construction of its death camps?",
+          "options": [
+            "Odilo Globocnik",
+            "Josef Mengele",
+            "Jürgen Stroop",
+            "Ernst Kaltenbrunner"
+          ],
+          "answer": "Odilo Globocnik",
+          "a": "Odilo Globocnik",
+          "explanation": "SS and Police Leader Odilo Globocnik directed Operation Reinhard from Lublin."
+        },
+        {
+          "question": "Which three camps were constructed purely as extermination centres with no slave labour facilities?",
+          "q": "Which three camps were constructed purely as extermination centres with no slave labour facilities?",
+          "options": [
+            "Bełżec, Sobibór, and Treblinka",
+            "Dachau, Buchenwald, and Sachsenhausen",
+            "Auschwitz, Majdanek, and Ravensbrück",
+            "Bergen-Belsen, Mauthausen, and Flossenbürg"
+          ],
+          "answer": "Bełżec, Sobibór, and Treblinka",
+          "a": "Bełżec, Sobibór, and Treblinka",
+          "explanation": "Bełżec, Sobibór, and Treblinka were pure extermination factories with zero long-term prisoner barracks."
+        },
+        {
+          "question": "What lethal substance was pumped into the gas chambers of the Operation Reinhard death camps?",
+          "q": "What lethal substance was pumped into the gas chambers of the Operation Reinhard death camps?",
+          "options": [
+            "Carbon monoxide from tank diesel engines",
+            "Zyklon B pesticide pellets",
+            "Mustard gas",
+            "Chlorine gas"
+          ],
+          "answer": "Carbon monoxide from tank diesel engines",
+          "a": "Carbon monoxide from tank diesel engines",
+          "explanation": "Operation Reinhard camps used carbon monoxide pumped into sealed chambers from large tank diesel engines."
+        },
+        {
+          "question": "Approximately how many victims were murdered in the three Operation Reinhard camps between 1942 and 1943?",
+          "q": "Approximately how many victims were murdered in the three Operation Reinhard camps between 1942 and 1943?",
+          "options": [
+            "Over 1.7 million people",
+            "Roughly 200,000 people",
+            "About 500,000 people",
+            "Under 50,000 people"
+          ],
+          "answer": "Over 1.7 million people",
+          "a": "Over 1.7 million people",
+          "explanation": "Over 1.7 million human beings were murdered at Bełżec, Sobibór, and Treblinka in barely twenty months."
+        },
+        {
+          "question": "In what key way did Auschwitz-Birkenau differ from the Operation Reinhard camps?",
+          "q": "In what key way did Auschwitz-Birkenau differ from the Operation Reinhard camps?",
+          "options": [
+            "It combined a vast slave labour complex with dedicated extermination facilities",
+            "It was located inside the borders of Germany itself",
+            "It was run entirely by civilian police rather than the SS",
+            "It held only political prisoners, not Jewish families"
+          ],
+          "answer": "It combined a vast slave labour complex with dedicated extermination facilities",
+          "a": "It combined a vast slave labour complex with dedicated extermination facilities",
+          "explanation": "Auschwitz was a hybrid complex combining slave labour factories (Monowitz) with mass gas chambers (Birkenau)."
+        },
+        {
+          "question": "What percentage of newly arrived prisoners at Auschwitz-Birkenau were sent immediately to the gas chambers?",
+          "q": "What percentage of newly arrived prisoners at Auschwitz-Birkenau were sent immediately to the gas chambers?",
+          "options": [
+            "The remaining eighty percent",
+            "Fifty percent",
+            "Ten percent",
+            "One hundred percent"
+          ],
+          "answer": "The remaining eighty percent",
+          "a": "The remaining eighty percent",
+          "explanation": "Roughly eighty percent of arriving prisoners were selected for immediate extermination upon the ramp."
+        },
+        {
+          "question": "Which chemical substance was dropped into the gas chambers of Auschwitz-Birkenau?",
+          "q": "Which chemical substance was dropped into the gas chambers of Auschwitz-Birkenau?",
+          "options": [
+            "Zyklon B (cyanide pesticide)",
+            "Carbon monoxide gas",
+            "Phosgene",
+            "Sarin gas"
+          ],
+          "answer": "Zyklon B (cyanide pesticide)",
+          "a": "Zyklon B (cyanide pesticide)",
+          "explanation": "Auschwitz technicians used pellets of Zyklon B, a commercial cyanide-based pesticide."
+        },
+        {
+          "question": "Approximately how many total people were murdered at the Auschwitz concentration camp complex?",
+          "q": "Approximately how many total people were murdered at the Auschwitz concentration camp complex?",
+          "options": [
+            "Over 1.1 million people",
+            "Roughly 300,000 people",
+            "About 2.5 million people",
+            "Under 100,000 people"
+          ],
+          "answer": "Over 1.1 million people",
+          "a": "Over 1.1 million people",
+          "explanation": "Over 1.1 million people were murdered at Auschwitz, including 960,000 Jewish men, women, and children."
+        },
+        {
+          "question": "Who was the 23-year-old commander of the Jewish Combat Organization (ŻOB) in the Warsaw Ghetto?",
+          "q": "Who was the 23-year-old commander of the Jewish Combat Organization (ŻOB) in the Warsaw Ghetto?",
+          "options": [
+            "Mordechai Anielewicz",
+            "Emanuel Ringelblum",
+            "Alexander Pechersky",
+            "Jan Karski"
+          ],
+          "answer": "Mordechai Anielewicz",
+          "a": "Mordechai Anielewicz",
+          "explanation": "Mordechai Anielewicz led the ŻOB in their heroic armed resistance against SS forces in April–May 1943."
+        },
+        {
+          "question": "For how many days did Jewish fighters hold off heavily armed German forces in the Warsaw Ghetto Uprising?",
+          "q": "For how many days did Jewish fighters hold off heavily armed German forces in the Warsaw Ghetto Uprising?",
+          "options": [
+            "Twenty-seven days",
+            "Three days",
+            "Six months",
+            "Two weeks"
+          ],
+          "answer": "Twenty-seven days",
+          "a": "Twenty-seven days",
+          "explanation": "Ghetto fighters held out for twenty-seven days against tanks, artillery, and flamethrowers."
+        },
+        {
+          "question": "Which SS general suppressed the Warsaw Ghetto Uprising by burning the ghetto block by block?",
+          "q": "Which SS general suppressed the Warsaw Ghetto Uprising by burning the ghetto block by block?",
+          "options": [
+            "General Jürgen Stroop",
+            "General Heinz Guderian",
+            "Odilo Globocnik",
+            "Reinhard Heydrich"
+          ],
+          "answer": "General Jürgen Stroop",
+          "a": "General Jürgen Stroop",
+          "explanation": "SS General Jürgen Stroop ordered the ghetto systematically burned to the ground to destroy underground bunkers."
+        },
+        {
+          "question": "What occurred at the Treblinka extermination camp on 2 August 1943?",
+          "q": "What occurred at the Treblinka extermination camp on 2 August 1943?",
+          "options": [
+            "Inmates stole weapons from the armoury, burned barracks, and staged a mass escape",
+            "The camp was liberated by Soviet paratroopers",
+            "The camp was destroyed by an accidental fire",
+            "Guards abandoned the camp following an air raid"
+          ],
+          "answer": "Inmates stole weapons from the armoury, burned barracks, and staged a mass escape",
+          "a": "Inmates stole weapons from the armoury, burned barracks, and staged a mass escape",
+          "explanation": "Prisoners staged an armed uprising on 2 August 1943, enabling roughly 300 inmates to breach the fence."
+        },
+        {
+          "question": "Who led the armed revolt and mass breakout at the Sobibór death camp on 14 October 1943?",
+          "q": "Who led the armed revolt and mass breakout at the Sobibór death camp on 14 October 1943?",
+          "options": [
+            "Alexander Pechersky",
+            "Mordechai Anielewicz",
+            "Emanuel Ringelblum",
+            "Josef Mengele"
+          ],
+          "answer": "Alexander Pechersky",
+          "a": "Alexander Pechersky",
+          "explanation": "Red Army prisoner of war Alexander Pechersky led the coordinated revolt and mass breakout at Sobibór."
+        },
+        {
+          "question": "How did the Auschwitz Sonderkommando obtain the gunpowder used to destroy Crematorium IV in October 1944?",
+          "q": "How did the Auschwitz Sonderkommando obtain the gunpowder used to destroy Crematorium IV in October 1944?",
+          "options": [
+            "Jewish women smuggled it out in matchboxes from a munitions factory",
+            "Partisans dropped it inside the camp via parachute",
+            "It was stolen from the SS headquarters armoury",
+            "British aircraft dropped it during a bombing run"
+          ],
+          "answer": "Jewish women smuggled it out in matchboxes from a munitions factory",
+          "a": "Jewish women smuggled it out in matchboxes from a munitions factory",
+          "explanation": "Young women working in the Weichsel-Union-Metallwerke factory, including Roza Robota, smuggled gunpowder in matchboxes."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "question": "On what date was the Wannsee Conference held in a lakeside Berlin villa?",
+          "q": "On what date was the Wannsee Conference held in a lakeside Berlin villa?",
+          "options": [
+            "20 January 1942",
+            "1 September 1939",
+            "22 June 1941",
+            "19 April 1943"
+          ],
+          "answer": "20 January 1942",
+          "a": "20 January 1942",
+          "explanation": "The Wannsee Conference met on 20 January 1942 in a villa in the Berlin suburb of Wannsee."
+        },
+        {
+          "question": "Who convened and chaired the ninety-minute Wannsee Conference?",
+          "q": "Who convened and chaired the ninety-minute Wannsee Conference?",
+          "options": [
+            "Reinhard Heydrich",
+            "Heinrich Himmler",
+            "Adolf Hitler",
+            "Hermann Göring"
+          ],
+          "answer": "Reinhard Heydrich",
+          "a": "Reinhard Heydrich",
+          "explanation": "SS security chief Reinhard Heydrich convened the conference to coordinate civilian state ministries."
+        },
+        {
+          "question": "Who prepared the statistics and recorded the official minutes of the Wannsee Conference?",
+          "q": "Who prepared the statistics and recorded the official minutes of the Wannsee Conference?",
+          "options": [
+            "Adolf Eichmann",
+            "Rudolf Höss",
+            "Odilo Globocnik",
+            "Hans Frank"
+          ],
+          "answer": "Adolf Eichmann",
+          "a": "Adolf Eichmann",
+          "explanation": "Adolf Eichmann prepared the statistical rosters and compiled the official Wannsee Protocol."
+        },
+        {
+          "question": "How many European Jews were listed on the statistical roster presented by Adolf Eichmann at Wannsee?",
+          "q": "How many European Jews were listed on the statistical roster presented by Adolf Eichmann at Wannsee?",
+          "options": [
+            "Eleven million",
+            "Six million",
+            "Two million",
+            "Twenty million"
+          ],
+          "answer": "Eleven million",
+          "a": "Eleven million",
+          "explanation": "Eichmann's chart calculated eleven million Jews across Europe, including in Britain and neutral nations."
+        },
+        {
+          "question": "Which German state entity was indispensable for coordinating the complex logistics of death trains?",
+          "q": "Which German state entity was indispensable for coordinating the complex logistics of death trains?",
+          "options": [
+            "The Deutsche Reichsbahn (German State Railway)",
+            "The Reichsbank",
+            "The Ministry of Agriculture",
+            "The Postal Administration"
+          ],
+          "answer": "The Deutsche Reichsbahn (German State Railway)",
+          "a": "The Deutsche Reichsbahn (German State Railway)",
+          "explanation": "The Deutsche Reichsbahn scheduled and operated the extensive network of special deportation trains across Europe."
+        },
+        {
+          "question": "What was the secret code name for the extermination of 2.2 million Jews in occupied Poland?",
+          "q": "What was the secret code name for the extermination of 2.2 million Jews in occupied Poland?",
+          "options": [
+            "Operation Reinhard",
+            "Operation Barbarossa",
+            "Operation Bagration",
+            "Operation Typhoon"
+          ],
+          "answer": "Operation Reinhard",
+          "a": "Operation Reinhard",
+          "explanation": "Operation Reinhard was the top-secret SS code name for murdering the Jewish population of the General Government."
+        },
+        {
+          "question": "Which SS officer commanded Operation Reinhard and supervised the construction of its death camps?",
+          "q": "Which SS officer commanded Operation Reinhard and supervised the construction of its death camps?",
+          "options": [
+            "Odilo Globocnik",
+            "Josef Mengele",
+            "Jürgen Stroop",
+            "Ernst Kaltenbrunner"
+          ],
+          "answer": "Odilo Globocnik",
+          "a": "Odilo Globocnik",
+          "explanation": "SS and Police Leader Odilo Globocnik directed Operation Reinhard from Lublin."
+        },
+        {
+          "question": "Which three camps were constructed purely as extermination centres with no slave labour facilities?",
+          "q": "Which three camps were constructed purely as extermination centres with no slave labour facilities?",
+          "options": [
+            "Bełżec, Sobibór, and Treblinka",
+            "Dachau, Buchenwald, and Sachsenhausen",
+            "Auschwitz, Majdanek, and Ravensbrück",
+            "Bergen-Belsen, Mauthausen, and Flossenbürg"
+          ],
+          "answer": "Bełżec, Sobibór, and Treblinka",
+          "a": "Bełżec, Sobibór, and Treblinka",
+          "explanation": "Bełżec, Sobibór, and Treblinka were pure extermination factories with zero long-term prisoner barracks."
+        },
+        {
+          "question": "What lethal substance was pumped into the gas chambers of the Operation Reinhard death camps?",
+          "q": "What lethal substance was pumped into the gas chambers of the Operation Reinhard death camps?",
+          "options": [
+            "Carbon monoxide from tank diesel engines",
+            "Zyklon B pesticide pellets",
+            "Mustard gas",
+            "Chlorine gas"
+          ],
+          "answer": "Carbon monoxide from tank diesel engines",
+          "a": "Carbon monoxide from tank diesel engines",
+          "explanation": "Operation Reinhard camps used carbon monoxide pumped into sealed chambers from large tank diesel engines."
+        },
+        {
+          "question": "Approximately how many victims were murdered in the three Operation Reinhard camps between 1942 and 1943?",
+          "q": "Approximately how many victims were murdered in the three Operation Reinhard camps between 1942 and 1943?",
+          "options": [
+            "Over 1.7 million people",
+            "Roughly 200,000 people",
+            "About 500,000 people",
+            "Under 50,000 people"
+          ],
+          "answer": "Over 1.7 million people",
+          "a": "Over 1.7 million people",
+          "explanation": "Over 1.7 million human beings were murdered at Bełżec, Sobibór, and Treblinka in barely twenty months."
+        },
+        {
+          "question": "In what key way did Auschwitz-Birkenau differ from the Operation Reinhard camps?",
+          "q": "In what key way did Auschwitz-Birkenau differ from the Operation Reinhard camps?",
+          "options": [
+            "It combined a vast slave labour complex with dedicated extermination facilities",
+            "It was located inside the borders of Germany itself",
+            "It was run entirely by civilian police rather than the SS",
+            "It held only political prisoners, not Jewish families"
+          ],
+          "answer": "It combined a vast slave labour complex with dedicated extermination facilities",
+          "a": "It combined a vast slave labour complex with dedicated extermination facilities",
+          "explanation": "Auschwitz was a hybrid complex combining slave labour factories (Monowitz) with mass gas chambers (Birkenau)."
+        },
+        {
+          "question": "What percentage of newly arrived prisoners at Auschwitz-Birkenau were sent immediately to the gas chambers?",
+          "q": "What percentage of newly arrived prisoners at Auschwitz-Birkenau were sent immediately to the gas chambers?",
+          "options": [
+            "The remaining eighty percent",
+            "Fifty percent",
+            "Ten percent",
+            "One hundred percent"
+          ],
+          "answer": "The remaining eighty percent",
+          "a": "The remaining eighty percent",
+          "explanation": "Roughly eighty percent of arriving prisoners were selected for immediate extermination upon the ramp."
+        },
+        {
+          "question": "Which chemical substance was dropped into the gas chambers of Auschwitz-Birkenau?",
+          "q": "Which chemical substance was dropped into the gas chambers of Auschwitz-Birkenau?",
+          "options": [
+            "Zyklon B (cyanide pesticide)",
+            "Carbon monoxide gas",
+            "Phosgene",
+            "Sarin gas"
+          ],
+          "answer": "Zyklon B (cyanide pesticide)",
+          "a": "Zyklon B (cyanide pesticide)",
+          "explanation": "Auschwitz technicians used pellets of Zyklon B, a commercial cyanide-based pesticide."
+        },
+        {
+          "question": "Approximately how many total people were murdered at the Auschwitz concentration camp complex?",
+          "q": "Approximately how many total people were murdered at the Auschwitz concentration camp complex?",
+          "options": [
+            "Over 1.1 million people",
+            "Roughly 300,000 people",
+            "About 2.5 million people",
+            "Under 100,000 people"
+          ],
+          "answer": "Over 1.1 million people",
+          "a": "Over 1.1 million people",
+          "explanation": "Over 1.1 million people were murdered at Auschwitz, including 960,000 Jewish men, women, and children."
+        },
+        {
+          "question": "Who was the 23-year-old commander of the Jewish Combat Organization (ŻOB) in the Warsaw Ghetto?",
+          "q": "Who was the 23-year-old commander of the Jewish Combat Organization (ŻOB) in the Warsaw Ghetto?",
+          "options": [
+            "Mordechai Anielewicz",
+            "Emanuel Ringelblum",
+            "Alexander Pechersky",
+            "Jan Karski"
+          ],
+          "answer": "Mordechai Anielewicz",
+          "a": "Mordechai Anielewicz",
+          "explanation": "Mordechai Anielewicz led the ŻOB in their heroic armed resistance against SS forces in April–May 1943."
+        },
+        {
+          "question": "For how many days did Jewish fighters hold off heavily armed German forces in the Warsaw Ghetto Uprising?",
+          "q": "For how many days did Jewish fighters hold off heavily armed German forces in the Warsaw Ghetto Uprising?",
+          "options": [
+            "Twenty-seven days",
+            "Three days",
+            "Six months",
+            "Two weeks"
+          ],
+          "answer": "Twenty-seven days",
+          "a": "Twenty-seven days",
+          "explanation": "Ghetto fighters held out for twenty-seven days against tanks, artillery, and flamethrowers."
+        },
+        {
+          "question": "Which SS general suppressed the Warsaw Ghetto Uprising by burning the ghetto block by block?",
+          "q": "Which SS general suppressed the Warsaw Ghetto Uprising by burning the ghetto block by block?",
+          "options": [
+            "General Jürgen Stroop",
+            "General Heinz Guderian",
+            "Odilo Globocnik",
+            "Reinhard Heydrich"
+          ],
+          "answer": "General Jürgen Stroop",
+          "a": "General Jürgen Stroop",
+          "explanation": "SS General Jürgen Stroop ordered the ghetto systematically burned to the ground to destroy underground bunkers."
+        },
+        {
+          "question": "What occurred at the Treblinka extermination camp on 2 August 1943?",
+          "q": "What occurred at the Treblinka extermination camp on 2 August 1943?",
+          "options": [
+            "Inmates stole weapons from the armoury, burned barracks, and staged a mass escape",
+            "The camp was liberated by Soviet paratroopers",
+            "The camp was destroyed by an accidental fire",
+            "Guards abandoned the camp following an air raid"
+          ],
+          "answer": "Inmates stole weapons from the armoury, burned barracks, and staged a mass escape",
+          "a": "Inmates stole weapons from the armoury, burned barracks, and staged a mass escape",
+          "explanation": "Prisoners staged an armed uprising on 2 August 1943, enabling roughly 300 inmates to breach the fence."
+        },
+        {
+          "question": "Who led the armed revolt and mass breakout at the Sobibór death camp on 14 October 1943?",
+          "q": "Who led the armed revolt and mass breakout at the Sobibór death camp on 14 October 1943?",
+          "options": [
+            "Alexander Pechersky",
+            "Mordechai Anielewicz",
+            "Emanuel Ringelblum",
+            "Josef Mengele"
+          ],
+          "answer": "Alexander Pechersky",
+          "a": "Alexander Pechersky",
+          "explanation": "Red Army prisoner of war Alexander Pechersky led the coordinated revolt and mass breakout at Sobibór."
+        },
+        {
+          "question": "How did the Auschwitz Sonderkommando obtain the gunpowder used to destroy Crematorium IV in October 1944?",
+          "q": "How did the Auschwitz Sonderkommando obtain the gunpowder used to destroy Crematorium IV in October 1944?",
+          "options": [
+            "Jewish women smuggled it out in matchboxes from a munitions factory",
+            "Partisans dropped it inside the camp via parachute",
+            "It was stolen from the SS headquarters armoury",
+            "British aircraft dropped it during a bombing run"
+          ],
+          "answer": "Jewish women smuggled it out in matchboxes from a munitions factory",
+          "a": "Jewish women smuggled it out in matchboxes from a munitions factory",
+          "explanation": "Young women working in the Weichsel-Union-Metallwerke factory, including Roza Robota, smuggled gunpowder in matchboxes."
         }
       ]
     },
@@ -3623,30 +6341,48 @@ export default {
       "vocab": [
         {
           "term": "Complicity",
-          "definition": "Involvement with or participation in a wrongful act, crime, or state policy, either through direct action, bureaucratic assistance, or passive silence."
+          "definition": "Involvement with or participation in a wrongful act, crime, or state policy, either through direct action, bureaucratic assistance, or passive silence.",
+          "syllables": "Co-mpli-city",
+          "phonetic": "complicity",
+          "tier": "3"
         },
         {
           "term": "Collaboration",
-          "definition": "Active cooperation with an enemy occupying power against the interests of one’s own citizens or persecuted minorities."
+          "definition": "Active cooperation with an enemy occupying power against the interests of one’s own citizens or persecuted minorities.",
+          "syllables": "Co-lla-bora-tion",
+          "phonetic": "collaboration",
+          "tier": "3"
         },
         {
           "term": "Vel’ d’Hiv Roundup",
-          "definition": "A mass arrest in Paris on 16–17 July 1942 where 13,000 Jewish men, women, and children were rounded up by French police and deported to Auschwitz."
+          "definition": "A mass arrest in Paris on 16–17 July 1942 where 13,000 Jewish men, women, and children were rounded up by French police and deported to Auschwitz.",
+          "syllables": "Vel’ d’Hiv Rou-ndup",
+          "phonetic": "vel’ d’hiv roundup",
+          "tier": "2"
         },
         {
           "term": "Righteous Among the Nations",
-          "definition": "An official honour bestowed by Yad Vashem on non-Jews who risked their lives to rescue Jews during the Holocaust without seeking financial gain."
+          "definition": "An official honour bestowed by Yad Vashem on non-Jews who risked their lives to rescue Jews during the Holocaust without seeking financial gain.",
+          "syllables": "Ri-ghteous A-mong the Na-tions",
+          "phonetic": "righteous among the nations",
+          "tier": "3"
         },
         {
           "term": "Jan Karski",
-          "definition": "A Polish underground courier who was smuggled into the Warsaw Ghetto and transit camps to deliver firsthand eyewitness testimony of the genocide to Allied leaders."
+          "definition": "A Polish underground courier who was smuggled into the Warsaw Ghetto and transit camps to deliver firsthand eyewitness testimony of the genocide to Allied leaders.",
+          "syllables": "Jan Ka-rski",
+          "phonetic": "jan karski",
+          "tier": "3"
         }
       ],
       "narrative_blocks": [
         {
           "act": 1,
           "title": "The Bureaucracy of Destruction: Ordinary Professionals",
-          "text": "<span class=\"para-ref\">[6.1]</span> In his monumental study <em>The Destruction of the European Jews</em>, historian <strong>Raul Hilberg</strong> demonstrated that the Holocaust was not carried out solely by ideological fanatics or SS guards in death camps. It was organized and executed by the entire modern state machinery. Mass murder required <strong>university-educated civil servants</strong> to draft anti-Jewish decrees; tax officials to confiscate bank accounts; lawyers to strip citizenship; architects to blueprint high-capacity crematoria; and engineers to supply poison gas. Crucially, the transport of millions of human beings across Europe was managed by the <strong>Deutsche Reichsbahn</strong> (German State Railway). Ordinary railway clerks, switch operators, and train drivers scheduled hundreds of \"special deportation trains\", calculating billing tariffs per passenger kilometer and ensuring that death trains ran on time while German troops fought on the Eastern Front. Most of these professionals never shot an individual; yet their paperwork was lethal.",
+          "image": "/images/nuremberg_trial_defendants_dock_1945.jpg",
+          "image_alt": "The defendants dock at the International Military Tribunal in Nuremberg, 1945–1946",
+          "caption": "The Dock at the Nuremberg Trials (November 1945): Leading Nazi perpetrators, ministers, and military commanders on trial before the International Military Tribunal.",
+          "text": "<span class=\"para-ref\">[6.1]</span> In his monumental study <em>The Destruction of the European Jews</em>, historian **Raul Hilberg** demonstrated that the Holocaust relied on the entire modern state machinery. It depended upon desk murderers (Schreibtischtäter)—civil servants who drafted decrees, lawyers who stripped citizenship, and clerks who organized Reichsbahn train schedules. Crucially, the transport of millions of people was managed by the **Deutsche Reichsbahn**, with railway clerks calculating billing per passenger km tariffs to transport victims to death camps on time while German troops fought on the front lines.",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -3682,7 +6418,7 @@ export default {
         {
           "act": 2,
           "title": "European Collaboration: An All-European Catastrophe",
-          "text": "<span class=\"para-ref\">[6.2]</span> The Holocaust was not merely a German crime; it was an <strong>all-European catastrophe</strong> that relied heavily on foreign collaboration. In France, the collaborationist <strong>Vichy government</strong> led by Marshal Philippe Pétain enacted its own anti-Jewish laws without German compulsion. On <strong>16–17 July 1942</strong>, French police officers carried out the notorious <strong>Vel’ d’Hiv Roundup</strong> (<em>Rafle du Vélodrome d’Hiver</em>) in Paris, arresting over 13,000 Jewish men, women, and 4,000 children, confining them in a cycling stadium under suffocating heat before deporting them to Auschwitz. In Hungary, following the German occupation in March 1944, Hungarian gendarmerie and civil servants coordinated with Adolf Eichmann to deport <strong>437,000 Hungarian Jews in just fifty-six days</strong>. In Slovakia, Romania, and the Baltic States, local fascist movements and police auxiliaries actively assisted or initiated mass slaughter, motivated by rabid antisemitism, political opportunism, and greed for stolen Jewish property.",
+          "text": "<span class=\"para-ref\">[6.2]</span> The Holocaust was an all-European crime that relied heavily on foreign collaborators. In France, the collaborationist Vichy regime enacted anti-Jewish laws and deployed French police to carry out the notorious Vichy Vel’ d’Hiv arrests in Paris in July 1942, arresting over 13,000 Jews. In Hungary in 1944, Hungarian authorities worked with Adolf Eichmann to ensure **437,000 Hungarians deported** to Auschwitz in just 54 days. Without foreign police and railway staff, the SS could never have murdered across an entire continent.",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -3718,7 +6454,7 @@ export default {
         {
           "act": 3,
           "title": "The Bystanders: Silence, Fear, and Complicity",
-          "text": "<span class=\"para-ref\">[6.3]</span> The vast majority of people across Nazi-occupied Europe were neither active perpetrators nor heroic rescuers; they were <strong>bystanders</strong>. Millions of ordinary Europeans watched their Jewish neighbours being publicly humiliated, arrested, and marched through streets to railway stations. Many profited directly: purchasing furniture, clothing, and homes at state auctions of \"abandoned\" Jewish property for pennies on the pound. While fear of brutal Nazi retribution was real, widespread indifference, casual antisemitism, and the desire to protect one’s own family created a wall of silence. As historian Ian Kershaw observed, <em>\"The road to Auschwitz was built by hatred, but paved with indifference.\"</em> By failing to protest or speak out, passive bystanders allowed the machinery of destruction to function unhindered.",
+          "text": "<span class=\"para-ref\">[6.3]</span> The vast majority of people across Nazi-occupied Europe were neither active perpetrators nor heroic rescuers; they were **bystanders**. Millions stood watching neighbours taken away, publicly humiliated and marched to train stations. While many were intimidated by severe Nazi terror, others actively profited from persecution, attending municipal public auctions of stolen furniture and household goods, or moving into apartments stripped from deported families. As British historian Ian Kershaw famously observed, the \"road to Auschwitz was built by hatred, but paved with indifference.\"",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -3754,7 +6490,7 @@ export default {
         {
           "act": 4,
           "title": "Righteous Among the Nations: Courage Defying Death",
-          "text": "<span class=\"para-ref\">[6.4]</span> In the face of overwhelming terror, a courageous minority chose to act. Today, the state of Israel’s Holocaust memorial, Yad Vashem, honours non-Jews who risked their lives to rescue Jewish people as <strong>\"Righteous Among the Nations\"</strong>. In occupied Poland, sheltering a Jewish person carried an automatic death penalty not only for the rescuer, but for their entire family. Despite this, rescuers hid children in secret cellars, false walls, and barns. In some rare cases, rescue was collective: in October 1943, when the German occupation authorities ordered the deportation of Danish Jews, ordinary <strong>Danish citizens</strong> spontaneously organized a flotilla of fishing boats, successfully smuggling over <strong>7,200 Jews across the sound to neutral Sweden</strong>, saving over ninety-five percent of Denmark’s Jewish community. In the French mountain village of <strong>Le Chambon-sur-Lignon</strong>, Protestant pastor André Trocmé led his entire community in providing safe haven, forged papers, and food to roughly 3,500 refugees. These examples proved that rescue was always possible when human beings chose moral courage over passive compliance.",
+          "text": "<span class=\"para-ref\">[6.4]</span> In the face of terror, a courageous minority chose to act. In occupied Denmark in October 1943, when word leaked that the Gestapo planned to round up the country's 7,800 Jews, Danish citizens mobilized a spontaneous nationwide effort. Ordinary Danish fishermen and citizens hid their Jewish neighbours in hospitals and coastal villages, using small fishing boats to ferry over **7,200 Jews across the Øresund strait to neutral Sweden safe** from deportation. Over 99% of the Danish community was saved. In southern France, the Protestant village of **Le Chambon-sur-Lignon**, led by pastor André Trocmé, sheltered an estimated 3,500 Jewish refugees.",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -3793,7 +6529,7 @@ export default {
         {
           "act": 5,
           "title": "Allied Knowledge, Dilemmas, and the Question of Action",
-          "text": "<span class=\"para-ref\">[6.5]</span> What did the Allied powers know, and when did they know it? By mid-1942, detailed reports of mass shootings and gassings were reaching London and Washington through Polish underground couriers like <strong>Jan Karski</strong>. On <strong>17 December 1942</strong>, the British, American, and Soviet governments issued a formal Joint Declaration condemning Nazi Germany’s <em>\"bestial policy of cold-blooded extermination\"</em> and promising post-war retribution. However, military policy did not change. In 1943, delegates met at the Bermuda Conference but took no meaningful action to loosen immigration quotas. In 1944, Jewish leaders pleaded with the British and US air forces to bomb the railway lines leading to Auschwitz or the gas chambers themselves. Allied commanders repeatedly refused, arguing that diverted air resources would dilute the strategic bombing campaign and that the fastest way to rescue surviving prisoners was to achieve the complete military defeat of Nazi Germany as quickly as possible.",
+          "text": "<span class=\"para-ref\">[6.5]</span> What did the Allied powers know, and when did they know it? In late 1942, Polish underground courier **Jan Karski** was smuggled into the Warsaw Ghetto and a transit camp, travelling secretly to London and Washington as a Jan Karski eyewitness to deliver testimony to Anthony Eden and President Roosevelt. In December 1942, the Allied governments issued a Dec 1942 Allied warning publicly condemning Germany's \"bestial policy of cold-blooded extermination\". However, Britain and the United States took virtually no military action to disrupt the death camps, prioritising total war victory over rescue missions and declining requests to bomb the railway lines to Auschwitz.",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -4113,6 +6849,530 @@ export default {
           "model_answer": "Initially, Soviet troops liberated Majdanek in July 1944 and Auschwitz in January 1945, discovering gas chambers, mass graves, and mountains of victims' shoes and hair left behind by retreating SS guards.<br><br>Following this, British and American forces advancing into Germany liberated camps like Bergen-Belsen and Dachau in April 1945, finding thousands of unburied corpses and starving survivors dying of typhus.<br><br>Finally, Allied liberation provided undeniable photographic and film evidence of Nazi atrocities, which was used to prosecute Nazi war criminals at the 1945–46 Nuremberg Trials.",
           "topic": "Question 2: Narrative Account [8 marks • 12 mins]"
         }
+      ],
+      "quiz": [
+        {
+          "question": "Which historian wrote 'The Destruction of the European Jews', demonstrating the role of state bureaucracy?",
+          "q": "Which historian wrote 'The Destruction of the European Jews', demonstrating the role of state bureaucracy?",
+          "options": [
+            "Raul Hilberg",
+            "Ian Kershaw",
+            "Christopher Browning",
+            "Hugh Trevor-Roper"
+          ],
+          "answer": "Raul Hilberg",
+          "a": "Raul Hilberg",
+          "explanation": "Raul Hilberg proved that the Holocaust relied on the participation of the entire modern German state machinery."
+        },
+        {
+          "question": "What crucial logistical role did the Deutsche Reichsbahn play in executing the Holocaust?",
+          "q": "What crucial logistical role did the Deutsche Reichsbahn play in executing the Holocaust?",
+          "options": [
+            "It scheduled and operated deportation trains, calculating billing tariffs per passenger",
+            "It manufactured poison gas canisters in railway workshops",
+            "It supplied armed guards for concentration camp watchtowers",
+            "It managed the financial accounts of confiscated property"
+          ],
+          "answer": "It scheduled and operated deportation trains, calculating billing tariffs per passenger",
+          "a": "It scheduled and operated deportation trains, calculating billing tariffs per passenger",
+          "explanation": "Ordinary railway clerks and train drivers scheduled hundreds of death trains, calculating billing tariffs per kilometer."
+        },
+        {
+          "question": "Who was the leader of the French Vichy government that collaborated actively in anti-Jewish measures?",
+          "q": "Who was the leader of the French Vichy government that collaborated actively in anti-Jewish measures?",
+          "options": [
+            "Marshal Philippe Pétain",
+            "Charles de Gaulle",
+            "Pierre Laval",
+            "Jean Moulin"
+          ],
+          "answer": "Marshal Philippe Pétain",
+          "a": "Marshal Philippe Pétain",
+          "explanation": "Marshal Philippe Pétain headed the collaborationist Vichy regime, which enacted anti-Jewish laws voluntarily."
+        },
+        {
+          "question": "What was the name of the July 1942 mass arrest carried out by French police in Paris?",
+          "q": "What was the name of the July 1942 mass arrest carried out by French police in Paris?",
+          "options": [
+            "The Vel’ d’Hiv Roundup (Rafle du Vélodrome d’Hiver)",
+            "The Bastille Decree",
+            "The Drancy Sweep",
+            "The Lyon Operation"
+          ],
+          "answer": "The Vel’ d’Hiv Roundup (Rafle du Vélodrome d’Hiver)",
+          "a": "The Vel’ d’Hiv Roundup (Rafle du Vélodrome d’Hiver)",
+          "explanation": "French police rounded up over 13,000 Jews in Paris and confined them in the Vélodrome d'Hiver cycling stadium."
+        },
+        {
+          "question": "Approximately how many children were among those arrested during the Vel' d'Hiv Roundup in Paris?",
+          "q": "Approximately how many children were among those arrested during the Vel' d'Hiv Roundup in Paris?",
+          "options": [
+            "4,000 children",
+            "Under 100",
+            "10,000 children",
+            "Zero children"
+          ],
+          "answer": "4,000 children",
+          "a": "4,000 children",
+          "explanation": "More than 4,000 young children were arrested alongside their parents and eventually deported to Auschwitz."
+        },
+        {
+          "question": "How many Hungarian Jews were deported to Auschwitz by Hungarian authorities within fifty-six days in 1944?",
+          "q": "How many Hungarian Jews were deported to Auschwitz by Hungarian authorities within fifty-six days in 1944?",
+          "options": [
+            "437,000 people",
+            "50,000 people",
+            "Over 1.2 million",
+            "10,000 people"
+          ],
+          "answer": "437,000 people",
+          "a": "437,000 people",
+          "explanation": "Hungarian gendarmerie collaborated with Adolf Eichmann to deport 437,000 Hungarian Jews in just fifty-six days."
+        },
+        {
+          "question": "How did many ordinary European bystanders profit directly from the persecution of their Jewish neighbours?",
+          "q": "How did many ordinary European bystanders profit directly from the persecution of their Jewish neighbours?",
+          "options": [
+            "By purchasing furniture, clothes, and homes at cheap state auctions",
+            "By receiving cash bonuses from the SS",
+            "By gaining employment as camp guards",
+            "By inheriting foreign bank accounts"
+          ],
+          "answer": "By purchasing furniture, clothes, and homes at cheap state auctions",
+          "a": "By purchasing furniture, clothes, and homes at cheap state auctions",
+          "explanation": "Many bystanders bought household goods and property at state auctions of confiscated Jewish belongings."
+        },
+        {
+          "question": "Which historian wrote that 'The road to Auschwitz was built by hatred, but paved with indifference'?",
+          "q": "Which historian wrote that 'The road to Auschwitz was built by hatred, but paved with indifference'?",
+          "options": [
+            "Ian Kershaw",
+            "Raul Hilberg",
+            "Richard Evans",
+            "Hannah Arendt"
+          ],
+          "answer": "Ian Kershaw",
+          "a": "Ian Kershaw",
+          "explanation": "Sir Ian Kershaw coined this famous observation highlighting the moral complicity of passive bystanders."
+        },
+        {
+          "question": "What title is awarded by Yad Vashem to non-Jewish individuals who risked their lives to rescue Jews?",
+          "q": "What title is awarded by Yad Vashem to non-Jewish individuals who risked their lives to rescue Jews?",
+          "options": [
+            "\"Righteous Among the Nations\"",
+            "\"Defenders of the Faith\"",
+            "\"Heroes of the Resistance\"",
+            "\"Keepers of the Flame\""
+          ],
+          "answer": "\"Righteous Among the Nations\"",
+          "a": "\"Righteous Among the Nations\"",
+          "explanation": "Yad Vashem honours non-Jewish rescuers who risked their lives without financial reward as 'Righteous Among the Nations'."
+        },
+        {
+          "question": "What was the official Nazi punishment for anyone caught sheltering a Jewish person in occupied Poland?",
+          "q": "What was the official Nazi punishment for anyone caught sheltering a Jewish person in occupied Poland?",
+          "options": [
+            "The automatic death penalty for the rescuer and their entire family",
+            "A heavy financial fine and confiscation of land",
+            "One year of forced labour",
+            "Expulsion to another district"
+          ],
+          "answer": "The automatic death penalty for the rescuer and their entire family",
+          "a": "The automatic death penalty for the rescuer and their entire family",
+          "explanation": "In Poland, the Nazi regime imposed an automatic death sentence on anyone sheltering Jews, including their family."
+        },
+        {
+          "question": "To which neutral country were over 7,200 Danish Jews successfully evacuated by boat in October 1943?",
+          "q": "To which neutral country were over 7,200 Danish Jews successfully evacuated by boat in October 1943?",
+          "options": [
+            "Sweden",
+            "Switzerland",
+            "Spain",
+            "Britain"
+          ],
+          "answer": "Sweden",
+          "a": "Sweden",
+          "explanation": "Danish citizens organized a spontaneous rescue flotilla, smuggling over 7,200 Jews to safety across the sound to Sweden."
+        },
+        {
+          "question": "What percentage of Denmark's Jewish population survived the Holocaust thanks to collective national rescue?",
+          "q": "What percentage of Denmark's Jewish population survived the Holocaust thanks to collective national rescue?",
+          "options": [
+            "Over ninety-five percent",
+            "Roughly fifty percent",
+            "Ten percent",
+            "Twenty-five percent"
+          ],
+          "answer": "Over ninety-five percent",
+          "a": "Over ninety-five percent",
+          "explanation": "Over ninety-five percent of Denmark's Jewish community was saved through this nationwide rescue effort."
+        },
+        {
+          "question": "Which French mountain village sheltered approximately 3,500 Jewish refugees under the leadership of Pastor Trocmé?",
+          "q": "Which French mountain village sheltered approximately 3,500 Jewish refugees under the leadership of Pastor Trocmé?",
+          "options": [
+            "Le Chambon-sur-Lignon",
+            "Vichy",
+            "Oradour-sur-Glane",
+            "Chamonix"
+          ],
+          "answer": "Le Chambon-sur-Lignon",
+          "a": "Le Chambon-sur-Lignon",
+          "explanation": "The Protestant village of Le Chambon-sur-Lignon, led by Pastor André Trocmé, sheltered around 3,500 refugees."
+        },
+        {
+          "question": "Who was the Polish underground officer who delivered direct eyewitness reports of the death camps to Allied leaders?",
+          "q": "Who was the Polish underground officer who delivered direct eyewitness reports of the death camps to Allied leaders?",
+          "options": [
+            "Jan Karski",
+            "Witold Pilecki",
+            "Władysław Sikorski",
+            "Emanuel Ringelblum"
+          ],
+          "answer": "Jan Karski",
+          "a": "Jan Karski",
+          "explanation": "Jan Karski was smuggled into the Warsaw Ghetto and a transit camp, then travelled to London and Washington with eyewitness testimony."
+        },
+        {
+          "question": "On what date did Allied governments issue a joint declaration condemning Nazi extermination of European Jews?",
+          "q": "On what date did Allied governments issue a joint declaration condemning Nazi extermination of European Jews?",
+          "options": [
+            "17 December 1942",
+            "1 September 1939",
+            "20 January 1942",
+            "6 June 1944"
+          ],
+          "answer": "17 December 1942",
+          "a": "17 December 1942",
+          "explanation": "On 17 December 1942, Britain, the US, and the Soviet Union issued a joint declaration condemning Nazi extermination."
+        },
+        {
+          "question": "What did the Allied Joint Declaration of December 1942 explicitly vow regarding those responsible for mass murder?",
+          "q": "What did the Allied Joint Declaration of December 1942 explicitly vow regarding those responsible for mass murder?",
+          "options": [
+            "Post-war retribution and punishment for perpetrators",
+            "An immediate ceasefire in Eastern Europe",
+            "The exchange of prisoners of war",
+            "Economic compensation for displaced civilians"
+          ],
+          "answer": "Post-war retribution and punishment for perpetrators",
+          "a": "Post-war retribution and punishment for perpetrators",
+          "explanation": "The declaration promised that perpetrators of these barbaric crimes would not escape retribution after the war."
+        },
+        {
+          "question": "Which 1943 conference saw Allied delegates fail to loosen immigration quotas for European Jewish refugees?",
+          "q": "Which 1943 conference saw Allied delegates fail to loosen immigration quotas for European Jewish refugees?",
+          "options": [
+            "The Bermuda Conference",
+            "The Yalta Conference",
+            "The Potsdam Conference",
+            "The Casablanca Conference"
+          ],
+          "answer": "The Bermuda Conference",
+          "a": "The Bermuda Conference",
+          "explanation": "The Bermuda Conference of April 1943 produced no concrete measures or quota relaxations to assist refugees."
+        },
+        {
+          "question": "What military action did Jewish organizations repeatedly request Allied air forces to undertake in 1944?",
+          "q": "What military action did Jewish organizations repeatedly request Allied air forces to undertake in 1944?",
+          "options": [
+            "To bomb the railway tracks and gas chambers at Auschwitz-Birkenau",
+            "To drop weapons into the Warsaw Ghetto",
+            "To parachute commandos into Treblinka",
+            "To bomb the German Ministry of Propaganda in Berlin"
+          ],
+          "answer": "To bomb the railway tracks and gas chambers at Auschwitz-Birkenau",
+          "a": "To bomb the railway tracks and gas chambers at Auschwitz-Birkenau",
+          "explanation": "Allied air forces were repeatedly asked to bomb railway lines leading to Auschwitz or the gas chambers themselves."
+        },
+        {
+          "question": "What main operational justification did Allied military leaders offer for refusing to bomb Auschwitz?",
+          "q": "What main operational justification did Allied military leaders offer for refusing to bomb Auschwitz?",
+          "options": [
+            "That diverting aircraft would dilute the strategic bombing campaign against German war industry",
+            "That Auschwitz was outside the flight range of Allied bombers",
+            "That aerial photographs of the camp were inconclusive",
+            "That camp survivors were protected by international conventions"
+          ],
+          "answer": "That diverting aircraft would dilute the strategic bombing campaign against German war industry",
+          "a": "That diverting aircraft would dilute the strategic bombing campaign against German war industry",
+          "explanation": "Commanders argued that diverting bomber resources from industrial targets would prolong the war."
+        },
+        {
+          "question": "According to Allied commanders, what was the most effective way to rescue surviving concentration camp prisoners?",
+          "q": "According to Allied commanders, what was the most effective way to rescue surviving concentration camp prisoners?",
+          "options": [
+            "To achieve the complete military defeat of Nazi Germany as fast as possible",
+            "To negotiate prisoner exchanges through the Red Cross",
+            "To conduct selective commando raids across Poland",
+            "To pay monetary ransoms to SS leaders"
+          ],
+          "answer": "To achieve the complete military defeat of Nazi Germany as fast as possible",
+          "a": "To achieve the complete military defeat of Nazi Germany as fast as possible",
+          "explanation": "Allied commanders maintained that total military victory as rapidly as possible was the only viable salvation."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "question": "Which historian wrote 'The Destruction of the European Jews', demonstrating the role of state bureaucracy?",
+          "q": "Which historian wrote 'The Destruction of the European Jews', demonstrating the role of state bureaucracy?",
+          "options": [
+            "Raul Hilberg",
+            "Ian Kershaw",
+            "Christopher Browning",
+            "Hugh Trevor-Roper"
+          ],
+          "answer": "Raul Hilberg",
+          "a": "Raul Hilberg",
+          "explanation": "Raul Hilberg proved that the Holocaust relied on the participation of the entire modern German state machinery."
+        },
+        {
+          "question": "What crucial logistical role did the Deutsche Reichsbahn play in executing the Holocaust?",
+          "q": "What crucial logistical role did the Deutsche Reichsbahn play in executing the Holocaust?",
+          "options": [
+            "It scheduled and operated deportation trains, calculating billing tariffs per passenger",
+            "It manufactured poison gas canisters in railway workshops",
+            "It supplied armed guards for concentration camp watchtowers",
+            "It managed the financial accounts of confiscated property"
+          ],
+          "answer": "It scheduled and operated deportation trains, calculating billing tariffs per passenger",
+          "a": "It scheduled and operated deportation trains, calculating billing tariffs per passenger",
+          "explanation": "Ordinary railway clerks and train drivers scheduled hundreds of death trains, calculating billing tariffs per kilometer."
+        },
+        {
+          "question": "Who was the leader of the French Vichy government that collaborated actively in anti-Jewish measures?",
+          "q": "Who was the leader of the French Vichy government that collaborated actively in anti-Jewish measures?",
+          "options": [
+            "Marshal Philippe Pétain",
+            "Charles de Gaulle",
+            "Pierre Laval",
+            "Jean Moulin"
+          ],
+          "answer": "Marshal Philippe Pétain",
+          "a": "Marshal Philippe Pétain",
+          "explanation": "Marshal Philippe Pétain headed the collaborationist Vichy regime, which enacted anti-Jewish laws voluntarily."
+        },
+        {
+          "question": "What was the name of the July 1942 mass arrest carried out by French police in Paris?",
+          "q": "What was the name of the July 1942 mass arrest carried out by French police in Paris?",
+          "options": [
+            "The Vel’ d’Hiv Roundup (Rafle du Vélodrome d’Hiver)",
+            "The Bastille Decree",
+            "The Drancy Sweep",
+            "The Lyon Operation"
+          ],
+          "answer": "The Vel’ d’Hiv Roundup (Rafle du Vélodrome d’Hiver)",
+          "a": "The Vel’ d’Hiv Roundup (Rafle du Vélodrome d’Hiver)",
+          "explanation": "French police rounded up over 13,000 Jews in Paris and confined them in the Vélodrome d'Hiver cycling stadium."
+        },
+        {
+          "question": "Approximately how many children were among those arrested during the Vel' d'Hiv Roundup in Paris?",
+          "q": "Approximately how many children were among those arrested during the Vel' d'Hiv Roundup in Paris?",
+          "options": [
+            "4,000 children",
+            "Under 100",
+            "10,000 children",
+            "Zero children"
+          ],
+          "answer": "4,000 children",
+          "a": "4,000 children",
+          "explanation": "More than 4,000 young children were arrested alongside their parents and eventually deported to Auschwitz."
+        },
+        {
+          "question": "How many Hungarian Jews were deported to Auschwitz by Hungarian authorities within fifty-six days in 1944?",
+          "q": "How many Hungarian Jews were deported to Auschwitz by Hungarian authorities within fifty-six days in 1944?",
+          "options": [
+            "437,000 people",
+            "50,000 people",
+            "Over 1.2 million",
+            "10,000 people"
+          ],
+          "answer": "437,000 people",
+          "a": "437,000 people",
+          "explanation": "Hungarian gendarmerie collaborated with Adolf Eichmann to deport 437,000 Hungarian Jews in just fifty-six days."
+        },
+        {
+          "question": "How did many ordinary European bystanders profit directly from the persecution of their Jewish neighbours?",
+          "q": "How did many ordinary European bystanders profit directly from the persecution of their Jewish neighbours?",
+          "options": [
+            "By purchasing furniture, clothes, and homes at cheap state auctions",
+            "By receiving cash bonuses from the SS",
+            "By gaining employment as camp guards",
+            "By inheriting foreign bank accounts"
+          ],
+          "answer": "By purchasing furniture, clothes, and homes at cheap state auctions",
+          "a": "By purchasing furniture, clothes, and homes at cheap state auctions",
+          "explanation": "Many bystanders bought household goods and property at state auctions of confiscated Jewish belongings."
+        },
+        {
+          "question": "Which historian wrote that 'The road to Auschwitz was built by hatred, but paved with indifference'?",
+          "q": "Which historian wrote that 'The road to Auschwitz was built by hatred, but paved with indifference'?",
+          "options": [
+            "Ian Kershaw",
+            "Raul Hilberg",
+            "Richard Evans",
+            "Hannah Arendt"
+          ],
+          "answer": "Ian Kershaw",
+          "a": "Ian Kershaw",
+          "explanation": "Sir Ian Kershaw coined this famous observation highlighting the moral complicity of passive bystanders."
+        },
+        {
+          "question": "What title is awarded by Yad Vashem to non-Jewish individuals who risked their lives to rescue Jews?",
+          "q": "What title is awarded by Yad Vashem to non-Jewish individuals who risked their lives to rescue Jews?",
+          "options": [
+            "\"Righteous Among the Nations\"",
+            "\"Defenders of the Faith\"",
+            "\"Heroes of the Resistance\"",
+            "\"Keepers of the Flame\""
+          ],
+          "answer": "\"Righteous Among the Nations\"",
+          "a": "\"Righteous Among the Nations\"",
+          "explanation": "Yad Vashem honours non-Jewish rescuers who risked their lives without financial reward as 'Righteous Among the Nations'."
+        },
+        {
+          "question": "What was the official Nazi punishment for anyone caught sheltering a Jewish person in occupied Poland?",
+          "q": "What was the official Nazi punishment for anyone caught sheltering a Jewish person in occupied Poland?",
+          "options": [
+            "The automatic death penalty for the rescuer and their entire family",
+            "A heavy financial fine and confiscation of land",
+            "One year of forced labour",
+            "Expulsion to another district"
+          ],
+          "answer": "The automatic death penalty for the rescuer and their entire family",
+          "a": "The automatic death penalty for the rescuer and their entire family",
+          "explanation": "In Poland, the Nazi regime imposed an automatic death sentence on anyone sheltering Jews, including their family."
+        },
+        {
+          "question": "To which neutral country were over 7,200 Danish Jews successfully evacuated by boat in October 1943?",
+          "q": "To which neutral country were over 7,200 Danish Jews successfully evacuated by boat in October 1943?",
+          "options": [
+            "Sweden",
+            "Switzerland",
+            "Spain",
+            "Britain"
+          ],
+          "answer": "Sweden",
+          "a": "Sweden",
+          "explanation": "Danish citizens organized a spontaneous rescue flotilla, smuggling over 7,200 Jews to safety across the sound to Sweden."
+        },
+        {
+          "question": "What percentage of Denmark's Jewish population survived the Holocaust thanks to collective national rescue?",
+          "q": "What percentage of Denmark's Jewish population survived the Holocaust thanks to collective national rescue?",
+          "options": [
+            "Over ninety-five percent",
+            "Roughly fifty percent",
+            "Ten percent",
+            "Twenty-five percent"
+          ],
+          "answer": "Over ninety-five percent",
+          "a": "Over ninety-five percent",
+          "explanation": "Over ninety-five percent of Denmark's Jewish community was saved through this nationwide rescue effort."
+        },
+        {
+          "question": "Which French mountain village sheltered approximately 3,500 Jewish refugees under the leadership of Pastor Trocmé?",
+          "q": "Which French mountain village sheltered approximately 3,500 Jewish refugees under the leadership of Pastor Trocmé?",
+          "options": [
+            "Le Chambon-sur-Lignon",
+            "Vichy",
+            "Oradour-sur-Glane",
+            "Chamonix"
+          ],
+          "answer": "Le Chambon-sur-Lignon",
+          "a": "Le Chambon-sur-Lignon",
+          "explanation": "The Protestant village of Le Chambon-sur-Lignon, led by Pastor André Trocmé, sheltered around 3,500 refugees."
+        },
+        {
+          "question": "Who was the Polish underground officer who delivered direct eyewitness reports of the death camps to Allied leaders?",
+          "q": "Who was the Polish underground officer who delivered direct eyewitness reports of the death camps to Allied leaders?",
+          "options": [
+            "Jan Karski",
+            "Witold Pilecki",
+            "Władysław Sikorski",
+            "Emanuel Ringelblum"
+          ],
+          "answer": "Jan Karski",
+          "a": "Jan Karski",
+          "explanation": "Jan Karski was smuggled into the Warsaw Ghetto and a transit camp, then travelled to London and Washington with eyewitness testimony."
+        },
+        {
+          "question": "On what date did Allied governments issue a joint declaration condemning Nazi extermination of European Jews?",
+          "q": "On what date did Allied governments issue a joint declaration condemning Nazi extermination of European Jews?",
+          "options": [
+            "17 December 1942",
+            "1 September 1939",
+            "20 January 1942",
+            "6 June 1944"
+          ],
+          "answer": "17 December 1942",
+          "a": "17 December 1942",
+          "explanation": "On 17 December 1942, Britain, the US, and the Soviet Union issued a joint declaration condemning Nazi extermination."
+        },
+        {
+          "question": "What did the Allied Joint Declaration of December 1942 explicitly vow regarding those responsible for mass murder?",
+          "q": "What did the Allied Joint Declaration of December 1942 explicitly vow regarding those responsible for mass murder?",
+          "options": [
+            "Post-war retribution and punishment for perpetrators",
+            "An immediate ceasefire in Eastern Europe",
+            "The exchange of prisoners of war",
+            "Economic compensation for displaced civilians"
+          ],
+          "answer": "Post-war retribution and punishment for perpetrators",
+          "a": "Post-war retribution and punishment for perpetrators",
+          "explanation": "The declaration promised that perpetrators of these barbaric crimes would not escape retribution after the war."
+        },
+        {
+          "question": "Which 1943 conference saw Allied delegates fail to loosen immigration quotas for European Jewish refugees?",
+          "q": "Which 1943 conference saw Allied delegates fail to loosen immigration quotas for European Jewish refugees?",
+          "options": [
+            "The Bermuda Conference",
+            "The Yalta Conference",
+            "The Potsdam Conference",
+            "The Casablanca Conference"
+          ],
+          "answer": "The Bermuda Conference",
+          "a": "The Bermuda Conference",
+          "explanation": "The Bermuda Conference of April 1943 produced no concrete measures or quota relaxations to assist refugees."
+        },
+        {
+          "question": "What military action did Jewish organizations repeatedly request Allied air forces to undertake in 1944?",
+          "q": "What military action did Jewish organizations repeatedly request Allied air forces to undertake in 1944?",
+          "options": [
+            "To bomb the railway tracks and gas chambers at Auschwitz-Birkenau",
+            "To drop weapons into the Warsaw Ghetto",
+            "To parachute commandos into Treblinka",
+            "To bomb the German Ministry of Propaganda in Berlin"
+          ],
+          "answer": "To bomb the railway tracks and gas chambers at Auschwitz-Birkenau",
+          "a": "To bomb the railway tracks and gas chambers at Auschwitz-Birkenau",
+          "explanation": "Allied air forces were repeatedly asked to bomb railway lines leading to Auschwitz or the gas chambers themselves."
+        },
+        {
+          "question": "What main operational justification did Allied military leaders offer for refusing to bomb Auschwitz?",
+          "q": "What main operational justification did Allied military leaders offer for refusing to bomb Auschwitz?",
+          "options": [
+            "That diverting aircraft would dilute the strategic bombing campaign against German war industry",
+            "That Auschwitz was outside the flight range of Allied bombers",
+            "That aerial photographs of the camp were inconclusive",
+            "That camp survivors were protected by international conventions"
+          ],
+          "answer": "That diverting aircraft would dilute the strategic bombing campaign against German war industry",
+          "a": "That diverting aircraft would dilute the strategic bombing campaign against German war industry",
+          "explanation": "Commanders argued that diverting bomber resources from industrial targets would prolong the war."
+        },
+        {
+          "question": "According to Allied commanders, what was the most effective way to rescue surviving concentration camp prisoners?",
+          "q": "According to Allied commanders, what was the most effective way to rescue surviving concentration camp prisoners?",
+          "options": [
+            "To achieve the complete military defeat of Nazi Germany as fast as possible",
+            "To negotiate prisoner exchanges through the Red Cross",
+            "To conduct selective commando raids across Poland",
+            "To pay monetary ransoms to SS leaders"
+          ],
+          "answer": "To achieve the complete military defeat of Nazi Germany as fast as possible",
+          "a": "To achieve the complete military defeat of Nazi Germany as fast as possible",
+          "explanation": "Allied commanders maintained that total military victory as rapidly as possible was the only viable salvation."
+        }
       ]
     },
     {
@@ -4277,34 +7537,49 @@ export default {
       "vocab": [
         {
           "term": "Death Marches",
-          "definition": "Forced, guarded evacuations of emaciated camp prisoners on foot over vast distances in freezing winter conditions in 1944–1945 as Soviet forces advanced."
+          "definition": "Forced, guarded evacuations of emaciated camp prisoners on foot over vast distances in freezing winter conditions in 1944–1945 as Soviet forces advanced.",
+          "syllables": "Death Ma-rches",
+          "phonetic": "death marches",
+          "tier": "3"
         },
         {
           "term": "Displaced Persons (DP) Camps",
-          "definition": "Temporary refugee camps established by the Allied armies in Germany, Austria, and Italy to house hundreds of thousands of homeless survivors after 1945."
+          "definition": "Temporary refugee camps established by the Allied armies in Germany, Austria, and Italy to house hundreds of thousands of homeless survivors after 1945.",
+          "syllables": "Di-spla-ced Pe-rsons (DP) Camps",
+          "phonetic": "displaced persons (dp) camps",
+          "tier": "2"
         },
         {
           "term": "Nuremberg Trials",
-          "definition": "A series of military tribunals held between 1945 and 1946 by the Allied powers in Nuremberg, Germany, prosecuting top Nazi leaders for war crimes and crimes against humanity."
+          "definition": "A series of military tribunals held between 1945 and 1946 by the Allied powers in Nuremberg, Germany, prosecuting top Nazi leaders for war crimes and crimes against humanity.",
+          "syllables": "Nu-re-mberg Trials",
+          "phonetic": "nuremberg trials",
+          "tier": "3"
         },
         {
           "term": "Genocide",
-          "definition": "A legal term coined in 1944 by Raphael Lemkin, defined as acts committed with intent to destroy, in whole or in part, a national, ethnical, racial, or religious group."
+          "definition": "A legal term coined in 1944 by Raphael Lemkin, defined as acts committed with intent to destroy, in whole or in part, a national, ethnical, racial, or religious group.",
+          "syllables": "Ge-noci-de",
+          "phonetic": "genocide",
+          "tier": "3"
         },
         {
           "term": "Windermere Children",
-          "definition": "A group of approximately 300 orphaned child Holocaust survivors brought to the Lake District in Britain in August 1945 for physical recuperation and psychological recovery."
+          "definition": "A group of approximately 300 orphaned child Holocaust survivors brought to the Lake District in Britain in August 1945 for physical recuperation and psychological recovery.",
+          "syllables": "Wi-nderme-re Chi-ldren",
+          "phonetic": "windermere children",
+          "tier": "2"
         }
       ],
       "narrative_blocks": [
         {
           "act": 1,
           "title": "The Death Marches: The Final Spasm of Terror (1944–1945)",
-          "text": "<span class=\"para-ref\">[7.1]</span> In the autumn and winter of 1944–1945, as the Soviet Red Army broke through German lines in the east and Western Allied armies crossed the Rhine, the Nazi leadership realized defeat was imminent. Rather than allowing camp inmates to be liberated, Heinrich Himmler ordered the desperate evacuation of camps. In freezing sub-zero temperatures, the SS forced hundreds of thousands of starving, skeletal prisoners onto brutal <strong>death marches</strong> toward the interior of Germany. Wearing thin cotton prisoner uniforms and wooden clogs, inmates marched for days across frozen roads without food or water. Anyone who collapsed from exhaustion, lagged behind, or stopped to relieve themselves was instantly shot by SS guards and left in roadside ditches. Between <strong>200,000 and 250,000 people died or were murdered</strong> on these death marches in the final five months of the war.",
+          "text": "<span class=\"para-ref\">[7.1]</span> In the autumn and winter of 1944–1945, as the Soviet Red Army closes in from the east and Western Allied armies crossed the Rhine, the Nazi leadership realized defeat was imminent. Rather than allowing camp inmates to be liberated, Heinrich Himmler ordered the desperate evacuation of camps. In freezing temperatures, the SS forced hundreds of thousands of starving, skeletal prisoners onto brutal **death marches** toward the interior of Germany. Wearing thin cotton prisoner uniforms and wooden clogs, inmates marched for days across sub-zero freezing roads without food or water. Over 70,000 shot or frozen in roadside ditches, with 200,000 to 250,000 dying overall in the final months of the war.",
           "source": {
             "letter": "A",
             "type": "visual",
-            "title": "Source A (Archival Documentary Photograph): Concentration Camp Prisoners on a Winter Death March (January–April 1945)",
+            "title": "Source A (Eyewitness Testimony & Archival Plate): Elie Wiesel, Night (1958) & The Dachau Death March (1945)",
             "text": "Elie Wiesel (Night): \"An icy wind blew into our faces, freezing the blood in our veins. The SS yelled: 'Faster, you dogs, run!' Anyone who stopped for a single second was shot on the spot. Beside me, a young boy from Poland named Zalman had stomach cramps; he fell into the snow and the marchers trampled him. Pitch darkness, knee-deep snow. We were running without boots, our feet wrapped in rags. Hundreds fell into the frozen ditches along the road. It seemed as if we were not human beings, but automatons marching toward death.\"",
             "caption": "Exhausted and emaciated prisoners escorted by armed SS guards through Bavarian snow on the Dachau death march in late April 1945, secretly photographed from a roadside window.",
             "citation": "Elie Wiesel, Night (Les Éditions de Minuit / Hill & Wang) / USHMM Survivor Collection.",
@@ -4336,7 +7611,11 @@ export default {
         {
           "act": 2,
           "title": "Liberation: The World Confronts the Unimaginable",
-          "text": "<span class=\"para-ref\">[7.2]</span> Allied soldiers were completely unprepared for what they discovered. Soviet troops liberated Majdanek in July 1944 and Auschwitz on <strong>27 January 1945</strong> (a date now commemorated worldwide as <em>Holocaust Memorial Day</em>). In the west, American forces entered Buchenwald and Dachau in April 1945. On <strong>15 April 1945</strong>, the British 11th Armoured Division entered <strong>Bergen-Belsen</strong> in northern Germany. Expecting a prisoner-of-war camp, British soldiers found 60,000 starving, typhus-infected human beings living alongside 13,000 unburied corpses decaying in the open air. The BBC correspondent <strong>Richard Dimbleby</strong> entered with the troops and wept openly as he broadcast back to London: <em>\"I passed through the barrier and found myself in a world of a nightmare... Here over an acre of ground lay dead and dying people. You could not see which was which.\"</em> British army bulldozers had to be used to bury thousands of bodies in mass graves to prevent a catastrophic outbreak of typhus.",
+          "image": "/images/buchenwald_liberation_1945.jpg",
+          "image_alt": "US Army Signal Corps photograph of emaciated survivors in wooden barracks bunks at Buchenwald camp",
+          "caption": "US Army Signal Corps / Private Harry Miller (16 April 1945). Emaciated survivors in wooden bunk tiers at Buchenwald, including 16-year-old Elie Wiesel (second row, seventh from left), author of Night.",
+          "isReversed": false,
+          "text": "<span class=\"para-ref\">[7.2]</span> Allied soldiers were completely unprepared for what they discovered. Soviet troops liberated Majdanek in July 1944 and Auschwitz on **27 January 1945** (Holocaust Memorial Day). In the west, American forces entered Buchenwald and Dachau. On **15 April 1945**, the British 11th Armoured enters **Bergen-Belsen** in northern Germany. Expecting a prisoner-of-war camp, British soldiers found 60,000 starving prisoners living alongside 13,000 unburied corpses decaying in the open air. The BBC correspondent **Richard Dimbleby** entered with the troops and as Dimbleby weeps on BBC radio, he broadcast: <em>\"I passed through the barrier and found myself in a world of a nightmare...\"</em> British army bulldozers had to be used to bury thousands of bodies in mass graves.",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -4372,7 +7651,7 @@ export default {
         {
           "act": 3,
           "title": "The Painful Aftermath: Displaced Persons and Windermere",
-          "text": "<span class=\"para-ref\">[7.3]</span> For the survivors, liberation did not bring sudden joy; it brought the agonizing reality of total loss. Many returned to their hometowns in Poland only to find their family homes occupied by neighbours who greeted them with hostility. In July 1946, a violent antisemitic pogrom erupted in <strong>Kielce, Poland</strong>, where forty-two Jewish survivors were murdered by local residents. Realising they had nowhere to go, over <strong>250,000 Jewish survivors</strong> were forced to live for years in <strong>Displaced Persons (DP) camps</strong> in Germany and Austria, often guarded by the very Allied soldiers who had defeated Germany. In August 1945, the British government permitted 300 orphaned child survivors—known as the <strong>Windermere Children</strong>—to travel to the Lake District in northern England. There, surrounded by clean air, lakes, and compassionate care, these traumatised young people began the painful, courageous process of healing and rebuilding their lives.",
+          "text": "<span class=\"para-ref\">[7.3]</span> For the survivors, liberation did not bring sudden joy; it brought the agonizing reality of total loss. Many returned home to find their houses occupied by hostile neighbours. Over **250,000 in DP camps** (Displaced Persons camps) in Germany and Austria waited for years. In 1947, the drama of the SS Exodus 1947 crisis—carrying Holocaust survivors turned away from Palestine by British warships—galvanized world opinion. This intensified the Zionist statehood demand for an independent homeland, leading directly to the founding of Israel in 1948. In August 1945, Britain also permitted 300 child survivors (the Windermere Children) to heal in the Lake District.",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -4408,7 +7687,7 @@ export default {
         {
           "act": 4,
           "title": "Justice and International Law: Nuremberg and Lemkin",
-          "text": "<span class=\"para-ref\">[7.4]</span> In November 1945, the Allied powers convened the <strong>International Military Tribunal (IMT) at Nuremberg</strong>. In the very city where Hitler had enacted the 1935 racial laws, twenty-one senior Nazi leaders—including Hermann Göring and Rudolf Hess—sat in the dock. The tribunal established the revolutionary legal principle that \"following orders\" from a superior officer was no defence for committing state crimes. Twelve defendants were sentenced to death by hanging for war crimes and <strong>crimes against humanity</strong>. Meanwhile, a Polish-Jewish legal scholar named <strong>Raphael Lemkin</strong>, who had lost forty-nine members of his family in the Holocaust, campaigned tirelessly for the creation of a new international law. Lemkin coined the word <strong>\"genocide\"</strong> (combining the Greek <em>genos</em>, meaning race or tribe, with the Latin <em>cide</em>, meaning killing). In December 1948, the United Nations adopted the <strong>Genocide Convention</strong>, officially making the intentional destruction of a people a universal crime under international law.",
+          "text": "<span class=\"para-ref\">[7.4]</span> In November 1945, the Allied powers convened the **International Military Tribunal (IMT) at Nuremberg**. In the very city where Hitler had enacted the 1935 racial laws, twenty-one senior Nazi leaders—including Hermann Göring and Rudolf Hess—sat in the dock. The tribunal established the revolutionary legal principle that \"following orders\" from a superior officer was no defence for committing state crimes. Twelve defendants were sentenced to death by hanging for war crimes and **crimes against humanity**. Meanwhile, a Polish-Jewish legal scholar named **Raphael Lemkin**, who had lost forty-nine members of his family in the Holocaust, campaigned tirelessly for the creation of a new international law. Lemkin coined the word **\"genocide\"** (combining the Greek <em>genos</em>, meaning race or tribe, with the Latin <em>cide</em>, meaning killing). In December 1948, the United Nations adopted the **Genocide Convention**, officially making the intentional destruction of a people a universal crime under international law.",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -4444,13 +7723,17 @@ export default {
         {
           "act": 5,
           "title": "What Was Lost? The Imperative of Memory",
-          "text": "<span class=\"para-ref\">[7.5]</span> What was lost in the Shoah? <strong>Approximately six million Jewish people</strong>—two out of every three European Jews, including 1.5 million children—were murdered. Yet the loss cannot be measured in numbers alone. With them vanished an entire civilization: a millennium of Yiddish language, poetry, theatre, religious debate, and communal memory across Central and Eastern Europe. Entire family branches, centuries-old synagogues, and irreplaceable archives were erased from human existence. As the generation of eyewitness survivors passes away, the duty of bearing witness shifts to us. To remember the Shoah is not merely to mourn the dead; it is to understand how easily civilized societies can slide into barbarism, to challenge antisemitism and racism in our own communities, and to uphold the solemn promise inscribed on memorials across the globe: <em>Never Again</em>.",
+          "image": "/images/shoah_memorial_berlin.jpg",
+          "image_alt": "Peter Eisenman Memorial to the Murdered Jews of Europe in Berlin showing grid of concrete stelae",
+          "caption": "Peter Eisenman, Memorial to the Murdered Jews of Europe (Berlin, 2005). Field of 2,711 concrete stelae commemorating the six million Jewish victims of Nazi extermination.",
+          "isReversed": true,
+          "text": "<span class=\"para-ref\">[7.5]</span> What was lost in the Shoah? Approximately **6 million souls extinguished**—two out of every three European Jews, including 1.5 million children. Yet the loss cannot be measured in numbers alone. With them vanished an entire civilization: a millennium of Yiddishland annihilated across Central and Eastern Europe. Entire family branches, centuries-old synagogues, and irreplaceable archives were erased from human existence. As the generation of eyewitness survivors passes away, the duty of bearing witness shifts to us. To remember the Shoah is not merely to mourn the dead; it is to understand how easily civilized societies can slide into barbarism, to challenge antisemitism and racism in our own communities, and to uphold the solemn Never Again pledge inscribed on memorials across the globe.",
           "source": {
             "letter": "E",
             "type": "visual",
-            "title": "Source E (Primary Archival Plate): Primo Levi and the First Edition of 'Se questo è un uomo' (1947)",
+            "title": "Source E (Primary Archival Photograph & Testimony): Primo Levi and the Testament of 'Se questo è un uomo' (1947)",
             "text": "Primo Levi (Auschwitz Survivor No. 174517): \"You who live safe in your warm houses, you who find on returning in the evening hot food and friendly faces: Consider if this is a man who works in the mud, who knows no peace, who fights for half a crust of bread, who dies because of a yes or a no. Consider if this is a woman, without hair and without name, with no more strength to remember, her eyes empty and her womb cold like a frog in winter. Meditate that what has been was; I commend these words to you. Carve them in your hearts... Or may your house crumble, disease afflict you, and your children turn their faces from you.\"",
-            "caption": "Primo Levi, Italian Jewish survivor of Auschwitz-Monowitz, whose 1947 masterpiece 'If This Is a Man' demanded that humanity remember the systematic destruction of human dignity.",
+            "caption": "Primo Levi (1919–1987), Italian Jewish chemist and survivor of Auschwitz-Monowitz (Camp No. 174517), whose 1947 memoir 'If This Is a Man' stands as one of literature's most profound examinations of human dignity.",
             "citation": "Primo Levi, Se questo è un uomo (1947) / Centro di Documentazione Ebraica Contemporanea (CDEC), Milan.",
             "context": "Approximately six million Jewish people—two-thirds of Europe’s Jewish population, including 1.5 million children—were murdered. Whole worlds of language, literature, scholarship, and community were permanently erased from the European continent. **Hinge Question:** Why does Primo Levi demand that future generations actively \"carve\" the memory of the Shoah into their hearts rather than passively acknowledging it as past history?",
             "hinge_question": "Why does Primo Levi demand that future generations actively \"carve\" the memory of the Shoah into their hearts rather than passively acknowledging it as past history?",
@@ -4545,7 +7828,7 @@ export default {
         {
           "letter": "A",
           "type": "visual",
-          "title": "Source A (Archival Documentary Photograph): Concentration Camp Prisoners on a Winter Death March (January–April 1945)",
+          "title": "Source A (Eyewitness Testimony & Archival Plate): Elie Wiesel, Night (1958) & The Dachau Death March (1945)",
           "text": "Elie Wiesel (Night): \"An icy wind blew into our faces, freezing the blood in our veins. The SS yelled: 'Faster, you dogs, run!' Anyone who stopped for a single second was shot on the spot. Beside me, a young boy from Poland named Zalman had stomach cramps; he fell into the snow and the marchers trampled him. Pitch darkness, knee-deep snow. We were running without boots, our feet wrapped in rags. Hundreds fell into the frozen ditches along the road. It seemed as if we were not human beings, but automatons marching toward death.\"",
           "caption": "Exhausted and emaciated prisoners escorted by armed SS guards through Bavarian snow on the Dachau death march in late April 1945, secretly photographed from a roadside window.",
           "citation": "Elie Wiesel, Night (Les Éditions de Minuit / Hill & Wang) / USHMM Survivor Collection.",
@@ -4685,9 +7968,9 @@ export default {
         {
           "letter": "E",
           "type": "visual",
-          "title": "Source E (Primary Archival Plate): Primo Levi and the First Edition of 'Se questo è un uomo' (1947)",
+          "title": "Source E (Primary Archival Photograph & Testimony): Primo Levi and the Testament of 'Se questo è un uomo' (1947)",
           "text": "Primo Levi (Auschwitz Survivor No. 174517): \"You who live safe in your warm houses, you who find on returning in the evening hot food and friendly faces: Consider if this is a man who works in the mud, who knows no peace, who fights for half a crust of bread, who dies because of a yes or a no. Consider if this is a woman, without hair and without name, with no more strength to remember, her eyes empty and her womb cold like a frog in winter. Meditate that what has been was; I commend these words to you. Carve them in your hearts... Or may your house crumble, disease afflict you, and your children turn their faces from you.\"",
-          "caption": "Primo Levi, Italian Jewish survivor of Auschwitz-Monowitz, whose 1947 masterpiece 'If This Is a Man' demanded that humanity remember the systematic destruction of human dignity.",
+          "caption": "Primo Levi (1919–1987), Italian Jewish chemist and survivor of Auschwitz-Monowitz (Camp No. 174517), whose 1947 memoir 'If This Is a Man' stands as one of literature's most profound examinations of human dignity.",
           "citation": "Primo Levi, Se questo è un uomo (1947) / Centro di Documentazione Ebraica Contemporanea (CDEC), Milan.",
           "context": "Approximately six million Jewish people—two-thirds of Europe’s Jewish population, including 1.5 million children—were murdered. Whole worlds of language, literature, scholarship, and community were permanently erased from the European continent. **Hinge Question:** Why does Primo Levi demand that future generations actively \"carve\" the memory of the Shoah into their hearts rather than passively acknowledging it as past history?",
           "hinge_question": "Why does Primo Levi demand that future generations actively \"carve\" the memory of the Shoah into their hearts rather than passively acknowledging it as past history?",
@@ -4774,6 +8057,530 @@ export default {
           },
           "model_answer": "On the one hand, international Holocaust remembrance is vital because it honours the six million Jewish victims and counters dangerous Holocaust denial. Educational memorials, survivor testimonies, and Holocaust Memorial Day teach future generations about the perils of state-sponsored racism and prejudice.<br><br>On the other hand, memory must be matched by active prevention of modern genocide. Since 1945, the world has witnessed mass atrocities in Cambodia, Rwanda, and Srebrenica. Therefore, remembering the Shoah is profoundly important, but its ultimate value lies in educating society to challenge hatred and human rights abuses wherever they occur.",
           "topic": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What term describes the brutal forced marches of prisoners evacuated from front-line camps in 1944–1945?",
+          "q": "What term describes the brutal forced marches of prisoners evacuated from front-line camps in 1944–1945?",
+          "options": [
+            "Death marches",
+            "Evacuation columns",
+            "Retreat corridors",
+            "Winter transfers"
+          ],
+          "answer": "Death marches",
+          "a": "Death marches",
+          "explanation": "Starving prisoners were forced on brutal 'death marches' across sub-zero roads toward the interior of Germany."
+        },
+        {
+          "question": "Approximately how many prisoners died or were murdered on the death marches during the final five months of the war?",
+          "q": "Approximately how many prisoners died or were murdered on the death marches during the final five months of the war?",
+          "options": [
+            "Between 200,000 and 250,000",
+            "Under 10,000",
+            "Over 500,000",
+            "Roughly 50,000"
+          ],
+          "answer": "Between 200,000 and 250,000",
+          "a": "Between 200,000 and 250,000",
+          "explanation": "Between 200,000 and 250,000 human beings perished or were shot on death marches in the war's final five months."
+        },
+        {
+          "question": "On what date was the Auschwitz-Birkenau camp complex liberated by the Soviet Red Army?",
+          "q": "On what date was the Auschwitz-Birkenau camp complex liberated by the Soviet Red Army?",
+          "options": [
+            "27 January 1945",
+            "15 April 1945",
+            "8 May 1945",
+            "20 July 1944"
+          ],
+          "answer": "27 January 1945",
+          "a": "27 January 1945",
+          "explanation": "Soviet soldiers entered Auschwitz on 27 January 1945, liberating several thousand remaining survivors."
+        },
+        {
+          "question": "What annual international day of remembrance is observed on the anniversary of the liberation of Auschwitz?",
+          "q": "What annual international day of remembrance is observed on the anniversary of the liberation of Auschwitz?",
+          "options": [
+            "Holocaust Memorial Day",
+            "United Nations Peace Day",
+            "Armistice Day",
+            "Human Rights Day"
+          ],
+          "answer": "Holocaust Memorial Day",
+          "a": "Holocaust Memorial Day",
+          "explanation": "27 January is commemorated globally as Holocaust Memorial Day to remember victims of the Holocaust and genocides."
+        },
+        {
+          "question": "Which British Army formation liberated the Bergen-Belsen concentration camp on 15 April 1945?",
+          "q": "Which British Army formation liberated the Bergen-Belsen concentration camp on 15 April 1945?",
+          "options": [
+            "The British 11th Armoured Division",
+            "The Desert Rats",
+            "The 1st Airborne Division",
+            "The Guards Armoured Division"
+          ],
+          "answer": "The British 11th Armoured Division",
+          "a": "The British 11th Armoured Division",
+          "explanation": "The British 11th Armoured Division entered Bergen-Belsen on 15 April 1945."
+        },
+        {
+          "question": "Approximately how many unburied corpses were discovered by British troops upon entering Bergen-Belsen?",
+          "q": "Approximately how many unburied corpses were discovered by British troops upon entering Bergen-Belsen?",
+          "options": [
+            "13,000 corpses",
+            "500 corpses",
+            "Over 50,000 corpses",
+            "2,000 corpses"
+          ],
+          "answer": "13,000 corpses",
+          "a": "13,000 corpses",
+          "explanation": "British forces discovered 13,000 unburied corpses decaying in the open alongside 60,000 starving, sick prisoners."
+        },
+        {
+          "question": "Which famous BBC radio journalist wept while broadcasting his eyewitness dispatch from Bergen-Belsen?",
+          "q": "Which famous BBC radio journalist wept while broadcasting his eyewitness dispatch from Bergen-Belsen?",
+          "options": [
+            "Richard Dimbleby",
+            "Edward R. Murrow",
+            "George Orwell",
+            "Alistair Cooke"
+          ],
+          "answer": "Richard Dimbleby",
+          "a": "Richard Dimbleby",
+          "explanation": "Richard Dimbleby wept on air as he described entering 'a world of a nightmare' at Bergen-Belsen."
+        },
+        {
+          "question": "What military engineering vehicles did British soldiers have to use to bury corpses and stop typhus at Belsen?",
+          "q": "What military engineering vehicles did British soldiers have to use to bury corpses and stop typhus at Belsen?",
+          "options": [
+            "Army bulldozers",
+            "Steam shovels",
+            "Dump trucks",
+            "Crane lifters"
+          ],
+          "answer": "Army bulldozers",
+          "a": "Army bulldozers",
+          "explanation": "British forces had to employ army bulldozers to create mass graves and halt the catastrophic spread of typhus."
+        },
+        {
+          "question": "In which Polish town did a violent pogrom murder forty-two Jewish survivors in July 1946?",
+          "q": "In which Polish town did a violent pogrom murder forty-two Jewish survivors in July 1946?",
+          "options": [
+            "Kielce",
+            "Warsaw",
+            "Kraków",
+            "Łódź"
+          ],
+          "answer": "Kielce",
+          "a": "Kielce",
+          "explanation": "In July 1946, a pogrom in Kielce resulted in the murder of forty-two Jewish survivors returning home."
+        },
+        {
+          "question": "Where were more than 250,000 homeless Jewish survivors forced to live for years following the end of WWII?",
+          "q": "Where were more than 250,000 homeless Jewish survivors forced to live for years following the end of WWII?",
+          "options": [
+            "In Displaced Persons (DP) camps in Germany and Austria",
+            "In temporary tent cities in France",
+            "In military barracks in Britain",
+            "On passenger ships anchored in the Mediterranean"
+          ],
+          "answer": "In Displaced Persons (DP) camps in Germany and Austria",
+          "a": "In Displaced Persons (DP) camps in Germany and Austria",
+          "explanation": "Over 250,000 survivors lived for years in Displaced Persons camps across occupied Germany and Austria."
+        },
+        {
+          "question": "What group of 300 orphaned child survivors was brought to the English Lake District in August 1945 to heal?",
+          "q": "What group of 300 orphaned child survivors was brought to the English Lake District in August 1945 to heal?",
+          "options": [
+            "The Windermere Children",
+            "The Kindertransport Pioneers",
+            "The Calgarth Scholars",
+            "The Ambleside Wardens"
+          ],
+          "answer": "The Windermere Children",
+          "a": "The Windermere Children",
+          "explanation": "The 'Windermere Children' were 300 orphaned child survivors brought to the Lake District for care and rehabilitation."
+        },
+        {
+          "question": "In which German city did the Allied powers hold the International Military Tribunal beginning in November 1945?",
+          "q": "In which German city did the Allied powers hold the International Military Tribunal beginning in November 1945?",
+          "options": [
+            "Nuremberg",
+            "Berlin",
+            "Munich",
+            "Frankfurt"
+          ],
+          "answer": "Nuremberg",
+          "a": "Nuremberg",
+          "explanation": "The trials were held in Nuremberg, the symbolic city where the Nazi racial laws had originally been proclaimed in 1935."
+        },
+        {
+          "question": "Which prominent Nazi leaders sat in the dock during the major Nuremberg War Crimes Trial?",
+          "q": "Which prominent Nazi leaders sat in the dock during the major Nuremberg War Crimes Trial?",
+          "options": [
+            "Hermann Göring and Rudolf Hess",
+            "Adolf Hitler and Heinrich Himmler",
+            "Joseph Goebbels and Reinhard Heydrich",
+            "Martin Bormann and Heinrich Müller"
+          ],
+          "answer": "Hermann Göring and Rudolf Hess",
+          "a": "Hermann Göring and Rudolf Hess",
+          "explanation": "Twenty-one major leaders, including Hermann Göring and Rudolf Hess, were tried before the International Military Tribunal."
+        },
+        {
+          "question": "What customary legal argument was explicitly rejected by the Nuremberg tribunal as a defence for state crimes?",
+          "q": "What customary legal argument was explicitly rejected by the Nuremberg tribunal as a defence for state crimes?",
+          "options": [
+            "The defence of 'following superior orders'",
+            "The plea of national economic necessity",
+            "The claim of ignorance of the law",
+            "The right to diplomatic immunity"
+          ],
+          "answer": "The defence of 'following superior orders'",
+          "a": "The defence of 'following superior orders'",
+          "explanation": "The tribunal established the landmark principle that obeying orders from a superior officer does not exempt one from moral and legal guilt."
+        },
+        {
+          "question": "How many defendants were sentenced to death by hanging at the main Nuremberg trial?",
+          "q": "How many defendants were sentenced to death by hanging at the main Nuremberg trial?",
+          "options": [
+            "Twelve defendants",
+            "All twenty-one",
+            "Three defendants",
+            "Twenty-five defendants"
+          ],
+          "answer": "Twelve defendants",
+          "a": "Twelve defendants",
+          "explanation": "Twelve defendants were sentenced to death by hanging for war crimes and crimes against humanity."
+        },
+        {
+          "question": "Who was the Polish-Jewish legal scholar who created and campaigned for the international legal concept of 'genocide'?",
+          "q": "Who was the Polish-Jewish legal scholar who created and campaigned for the international legal concept of 'genocide'?",
+          "options": [
+            "Raphael Lemkin",
+            "Hersch Lauterpacht",
+            "Emanuel Ringelblum",
+            "Jan Karski"
+          ],
+          "answer": "Raphael Lemkin",
+          "a": "Raphael Lemkin",
+          "explanation": "Raphael Lemkin coined the word 'genocide' and lobbied the United Nations to adopt the 1948 Genocide Convention."
+        },
+        {
+          "question": "From which two ancient linguistic roots did Raphael Lemkin derive the word 'genocide'?",
+          "q": "From which two ancient linguistic roots did Raphael Lemkin derive the word 'genocide'?",
+          "options": [
+            "Greek 'genos' (race or tribe) and Latin 'cide' (killing)",
+            "Hebrew 'shoah' and Greek 'logos'",
+            "Latin 'gens' and Germanic 'krieg'",
+            "Old English 'kin' and French 'mort'"
+          ],
+          "answer": "Greek 'genos' (race or tribe) and Latin 'cide' (killing)",
+          "a": "Greek 'genos' (race or tribe) and Latin 'cide' (killing)",
+          "explanation": "Lemkin fused the Greek word genos (race or tribe) with the Latin suffix cide (killing)."
+        },
+        {
+          "question": "In what year did the United Nations General Assembly officially adopt the Genocide Convention?",
+          "q": "In what year did the United Nations General Assembly officially adopt the Genocide Convention?",
+          "options": [
+            "1948",
+            "1945",
+            "1953",
+            "1960"
+          ],
+          "answer": "1948",
+          "a": "1948",
+          "explanation": "In December 1948, the United Nations adopted the Convention on the Prevention and Punishment of the Crime of Genocide."
+        },
+        {
+          "question": "Approximately how many Jewish people were murdered by Nazi Germany and its collaborators in the Shoah?",
+          "q": "Approximately how many Jewish people were murdered by Nazi Germany and its collaborators in the Shoah?",
+          "options": [
+            "Approximately six million",
+            "About two million",
+            "Ten million",
+            "Roughly 500,000"
+          ],
+          "answer": "Approximately six million",
+          "a": "Approximately six million",
+          "explanation": "Approximately six million Jewish people—two out of every three European Jews—were murdered."
+        },
+        {
+          "question": "Approximately how many Jewish children were among the six million victims murdered in the Holocaust?",
+          "q": "Approximately how many Jewish children were among the six million victims murdered in the Holocaust?",
+          "options": [
+            "1.5 million children",
+            "500,000 children",
+            "3 million children",
+            "100,000 children"
+          ],
+          "answer": "1.5 million children",
+          "a": "1.5 million children",
+          "explanation": "Approximately 1.5 million innocent Jewish children were murdered during the Holocaust."
+        }
+      ],
+      "quick_quiz": [
+        {
+          "question": "What term describes the brutal forced marches of prisoners evacuated from front-line camps in 1944–1945?",
+          "q": "What term describes the brutal forced marches of prisoners evacuated from front-line camps in 1944–1945?",
+          "options": [
+            "Death marches",
+            "Evacuation columns",
+            "Retreat corridors",
+            "Winter transfers"
+          ],
+          "answer": "Death marches",
+          "a": "Death marches",
+          "explanation": "Starving prisoners were forced on brutal 'death marches' across sub-zero roads toward the interior of Germany."
+        },
+        {
+          "question": "Approximately how many prisoners died or were murdered on the death marches during the final five months of the war?",
+          "q": "Approximately how many prisoners died or were murdered on the death marches during the final five months of the war?",
+          "options": [
+            "Between 200,000 and 250,000",
+            "Under 10,000",
+            "Over 500,000",
+            "Roughly 50,000"
+          ],
+          "answer": "Between 200,000 and 250,000",
+          "a": "Between 200,000 and 250,000",
+          "explanation": "Between 200,000 and 250,000 human beings perished or were shot on death marches in the war's final five months."
+        },
+        {
+          "question": "On what date was the Auschwitz-Birkenau camp complex liberated by the Soviet Red Army?",
+          "q": "On what date was the Auschwitz-Birkenau camp complex liberated by the Soviet Red Army?",
+          "options": [
+            "27 January 1945",
+            "15 April 1945",
+            "8 May 1945",
+            "20 July 1944"
+          ],
+          "answer": "27 January 1945",
+          "a": "27 January 1945",
+          "explanation": "Soviet soldiers entered Auschwitz on 27 January 1945, liberating several thousand remaining survivors."
+        },
+        {
+          "question": "What annual international day of remembrance is observed on the anniversary of the liberation of Auschwitz?",
+          "q": "What annual international day of remembrance is observed on the anniversary of the liberation of Auschwitz?",
+          "options": [
+            "Holocaust Memorial Day",
+            "United Nations Peace Day",
+            "Armistice Day",
+            "Human Rights Day"
+          ],
+          "answer": "Holocaust Memorial Day",
+          "a": "Holocaust Memorial Day",
+          "explanation": "27 January is commemorated globally as Holocaust Memorial Day to remember victims of the Holocaust and genocides."
+        },
+        {
+          "question": "Which British Army formation liberated the Bergen-Belsen concentration camp on 15 April 1945?",
+          "q": "Which British Army formation liberated the Bergen-Belsen concentration camp on 15 April 1945?",
+          "options": [
+            "The British 11th Armoured Division",
+            "The Desert Rats",
+            "The 1st Airborne Division",
+            "The Guards Armoured Division"
+          ],
+          "answer": "The British 11th Armoured Division",
+          "a": "The British 11th Armoured Division",
+          "explanation": "The British 11th Armoured Division entered Bergen-Belsen on 15 April 1945."
+        },
+        {
+          "question": "Approximately how many unburied corpses were discovered by British troops upon entering Bergen-Belsen?",
+          "q": "Approximately how many unburied corpses were discovered by British troops upon entering Bergen-Belsen?",
+          "options": [
+            "13,000 corpses",
+            "500 corpses",
+            "Over 50,000 corpses",
+            "2,000 corpses"
+          ],
+          "answer": "13,000 corpses",
+          "a": "13,000 corpses",
+          "explanation": "British forces discovered 13,000 unburied corpses decaying in the open alongside 60,000 starving, sick prisoners."
+        },
+        {
+          "question": "Which famous BBC radio journalist wept while broadcasting his eyewitness dispatch from Bergen-Belsen?",
+          "q": "Which famous BBC radio journalist wept while broadcasting his eyewitness dispatch from Bergen-Belsen?",
+          "options": [
+            "Richard Dimbleby",
+            "Edward R. Murrow",
+            "George Orwell",
+            "Alistair Cooke"
+          ],
+          "answer": "Richard Dimbleby",
+          "a": "Richard Dimbleby",
+          "explanation": "Richard Dimbleby wept on air as he described entering 'a world of a nightmare' at Bergen-Belsen."
+        },
+        {
+          "question": "What military engineering vehicles did British soldiers have to use to bury corpses and stop typhus at Belsen?",
+          "q": "What military engineering vehicles did British soldiers have to use to bury corpses and stop typhus at Belsen?",
+          "options": [
+            "Army bulldozers",
+            "Steam shovels",
+            "Dump trucks",
+            "Crane lifters"
+          ],
+          "answer": "Army bulldozers",
+          "a": "Army bulldozers",
+          "explanation": "British forces had to employ army bulldozers to create mass graves and halt the catastrophic spread of typhus."
+        },
+        {
+          "question": "In which Polish town did a violent pogrom murder forty-two Jewish survivors in July 1946?",
+          "q": "In which Polish town did a violent pogrom murder forty-two Jewish survivors in July 1946?",
+          "options": [
+            "Kielce",
+            "Warsaw",
+            "Kraków",
+            "Łódź"
+          ],
+          "answer": "Kielce",
+          "a": "Kielce",
+          "explanation": "In July 1946, a pogrom in Kielce resulted in the murder of forty-two Jewish survivors returning home."
+        },
+        {
+          "question": "Where were more than 250,000 homeless Jewish survivors forced to live for years following the end of WWII?",
+          "q": "Where were more than 250,000 homeless Jewish survivors forced to live for years following the end of WWII?",
+          "options": [
+            "In Displaced Persons (DP) camps in Germany and Austria",
+            "In temporary tent cities in France",
+            "In military barracks in Britain",
+            "On passenger ships anchored in the Mediterranean"
+          ],
+          "answer": "In Displaced Persons (DP) camps in Germany and Austria",
+          "a": "In Displaced Persons (DP) camps in Germany and Austria",
+          "explanation": "Over 250,000 survivors lived for years in Displaced Persons camps across occupied Germany and Austria."
+        },
+        {
+          "question": "What group of 300 orphaned child survivors was brought to the English Lake District in August 1945 to heal?",
+          "q": "What group of 300 orphaned child survivors was brought to the English Lake District in August 1945 to heal?",
+          "options": [
+            "The Windermere Children",
+            "The Kindertransport Pioneers",
+            "The Calgarth Scholars",
+            "The Ambleside Wardens"
+          ],
+          "answer": "The Windermere Children",
+          "a": "The Windermere Children",
+          "explanation": "The 'Windermere Children' were 300 orphaned child survivors brought to the Lake District for care and rehabilitation."
+        },
+        {
+          "question": "In which German city did the Allied powers hold the International Military Tribunal beginning in November 1945?",
+          "q": "In which German city did the Allied powers hold the International Military Tribunal beginning in November 1945?",
+          "options": [
+            "Nuremberg",
+            "Berlin",
+            "Munich",
+            "Frankfurt"
+          ],
+          "answer": "Nuremberg",
+          "a": "Nuremberg",
+          "explanation": "The trials were held in Nuremberg, the symbolic city where the Nazi racial laws had originally been proclaimed in 1935."
+        },
+        {
+          "question": "Which prominent Nazi leaders sat in the dock during the major Nuremberg War Crimes Trial?",
+          "q": "Which prominent Nazi leaders sat in the dock during the major Nuremberg War Crimes Trial?",
+          "options": [
+            "Hermann Göring and Rudolf Hess",
+            "Adolf Hitler and Heinrich Himmler",
+            "Joseph Goebbels and Reinhard Heydrich",
+            "Martin Bormann and Heinrich Müller"
+          ],
+          "answer": "Hermann Göring and Rudolf Hess",
+          "a": "Hermann Göring and Rudolf Hess",
+          "explanation": "Twenty-one major leaders, including Hermann Göring and Rudolf Hess, were tried before the International Military Tribunal."
+        },
+        {
+          "question": "What customary legal argument was explicitly rejected by the Nuremberg tribunal as a defence for state crimes?",
+          "q": "What customary legal argument was explicitly rejected by the Nuremberg tribunal as a defence for state crimes?",
+          "options": [
+            "The defence of 'following superior orders'",
+            "The plea of national economic necessity",
+            "The claim of ignorance of the law",
+            "The right to diplomatic immunity"
+          ],
+          "answer": "The defence of 'following superior orders'",
+          "a": "The defence of 'following superior orders'",
+          "explanation": "The tribunal established the landmark principle that obeying orders from a superior officer does not exempt one from moral and legal guilt."
+        },
+        {
+          "question": "How many defendants were sentenced to death by hanging at the main Nuremberg trial?",
+          "q": "How many defendants were sentenced to death by hanging at the main Nuremberg trial?",
+          "options": [
+            "Twelve defendants",
+            "All twenty-one",
+            "Three defendants",
+            "Twenty-five defendants"
+          ],
+          "answer": "Twelve defendants",
+          "a": "Twelve defendants",
+          "explanation": "Twelve defendants were sentenced to death by hanging for war crimes and crimes against humanity."
+        },
+        {
+          "question": "Who was the Polish-Jewish legal scholar who created and campaigned for the international legal concept of 'genocide'?",
+          "q": "Who was the Polish-Jewish legal scholar who created and campaigned for the international legal concept of 'genocide'?",
+          "options": [
+            "Raphael Lemkin",
+            "Hersch Lauterpacht",
+            "Emanuel Ringelblum",
+            "Jan Karski"
+          ],
+          "answer": "Raphael Lemkin",
+          "a": "Raphael Lemkin",
+          "explanation": "Raphael Lemkin coined the word 'genocide' and lobbied the United Nations to adopt the 1948 Genocide Convention."
+        },
+        {
+          "question": "From which two ancient linguistic roots did Raphael Lemkin derive the word 'genocide'?",
+          "q": "From which two ancient linguistic roots did Raphael Lemkin derive the word 'genocide'?",
+          "options": [
+            "Greek 'genos' (race or tribe) and Latin 'cide' (killing)",
+            "Hebrew 'shoah' and Greek 'logos'",
+            "Latin 'gens' and Germanic 'krieg'",
+            "Old English 'kin' and French 'mort'"
+          ],
+          "answer": "Greek 'genos' (race or tribe) and Latin 'cide' (killing)",
+          "a": "Greek 'genos' (race or tribe) and Latin 'cide' (killing)",
+          "explanation": "Lemkin fused the Greek word genos (race or tribe) with the Latin suffix cide (killing)."
+        },
+        {
+          "question": "In what year did the United Nations General Assembly officially adopt the Genocide Convention?",
+          "q": "In what year did the United Nations General Assembly officially adopt the Genocide Convention?",
+          "options": [
+            "1948",
+            "1945",
+            "1953",
+            "1960"
+          ],
+          "answer": "1948",
+          "a": "1948",
+          "explanation": "In December 1948, the United Nations adopted the Convention on the Prevention and Punishment of the Crime of Genocide."
+        },
+        {
+          "question": "Approximately how many Jewish people were murdered by Nazi Germany and its collaborators in the Shoah?",
+          "q": "Approximately how many Jewish people were murdered by Nazi Germany and its collaborators in the Shoah?",
+          "options": [
+            "Approximately six million",
+            "About two million",
+            "Ten million",
+            "Roughly 500,000"
+          ],
+          "answer": "Approximately six million",
+          "a": "Approximately six million",
+          "explanation": "Approximately six million Jewish people—two out of every three European Jews—were murdered."
+        },
+        {
+          "question": "Approximately how many Jewish children were among the six million victims murdered in the Holocaust?",
+          "q": "Approximately how many Jewish children were among the six million victims murdered in the Holocaust?",
+          "options": [
+            "1.5 million children",
+            "500,000 children",
+            "3 million children",
+            "100,000 children"
+          ],
+          "answer": "1.5 million children",
+          "a": "1.5 million children",
+          "explanation": "Approximately 1.5 million innocent Jewish children were murdered during the Holocaust."
         }
       ]
     }

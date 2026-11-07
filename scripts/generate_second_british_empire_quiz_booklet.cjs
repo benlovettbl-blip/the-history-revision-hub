@@ -1003,11 +1003,11 @@ async function compileQuizBookletHtml() {
           <span class="q-prompt">${item.q}</span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl">Answer:</span>
+          <span class="q-line-lbl">Fact:</span>
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl">Detail:</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>`;

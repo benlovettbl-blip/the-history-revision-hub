@@ -5,7 +5,7 @@
   <title>The Course of the Great War (1914–1918) • Master Knowledge Retrieval Companion</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
   <style>
     
   @page {
@@ -17,7 +17,7 @@
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
-  body {
+  html, body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -29,6 +29,8 @@
   .a4-page {
     width: 210mm;
     height: 297mm;
+    min-height: 297mm;
+    max-height: 297mm;
     padding: 9.5mm 14mm 7.5mm 14mm;
     margin: 0 auto;
     page-break-after: always;
@@ -59,10 +61,17 @@
   @media print {
     body { background: transparent; }
     .a4-page {
-      margin: 0;
-      box-shadow: none;
-      page-break-after: always;
-      break-after: page;
+      width: 210mm !important;
+      height: 297mm !important;
+      min-height: 297mm !important;
+      max-height: 297mm !important;
+      box-sizing: border-box !important;
+      margin: 0 !important;
+      box-shadow: none !important;
+      page-break-inside: avoid !important;
+      break-inside: avoid !important;
+      page-break-after: always !important;
+      break-after: page !important;
     }
     .a4-page:last-child,
     .a4-page:last-of-type {
@@ -76,6 +85,9 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
   }
 
   /* Headers and Footers */
@@ -195,7 +207,7 @@
 
   /* Cover Archival Plate */
   .cover-map-container {
-    margin: 3px 0;
+    margin: 5px 0;
     text-align: center;
     background: #ffffff;
     border: 1.5px solid #000000;
@@ -207,7 +219,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 55mm;
+    height: 98mm;
     border: 1.2px solid #000000;
     border-radius: 2px;
   }
@@ -231,16 +243,16 @@
   .tracking-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 7.8pt;
+    font-size: 8.0pt;
     background: #ffffff;
     color: #000000;
-    margin-top: 3px;
+    margin-top: 4px;
   }
   .tracking-table th {
     background: #000000;
     color: #ffffff;
     font-weight: 800;
-    padding: 4px 4px;
+    padding: 5px 4px;
     border: 1.2px solid #000000;
     text-transform: uppercase;
     letter-spacing: 0.2px;
@@ -249,7 +261,7 @@
   }
   .tracking-table td {
     border: 1.2px solid #000000;
-    padding: 6.5px 5px;
+    padding: 10px 5px;
     text-align: center;
     vertical-align: middle;
     color: #000000;
@@ -276,15 +288,15 @@
     display: grid;
     grid-template-columns: 1fr 42mm;
     gap: 8px;
-    margin-top: 4px;
+    margin-top: 5px;
     align-items: stretch;
   }
   .protocol-box {
     border: 1.2px solid #000000;
     border-radius: 4px;
-    padding: 6px 8px;
-    font-size: 7.2pt;
-    line-height: 1.35;
+    padding: 7px 10px;
+    font-size: 7.4pt;
+    line-height: 1.4;
     background: #f8fafc;
   }
   .protocol-box strong {
@@ -350,11 +362,11 @@
 
   .reading-meta-strip {
     display: grid;
-    grid-template-columns: 36mm 1fr 34mm;
-    gap: 8px;
+    grid-template-columns: 40mm 1fr 36mm;
+    gap: 10px;
     border: 1.2px solid #000000;
     border-top: none;
-    padding: 6px 8px;
+    padding: 7px 10px;
     background: #f8fafc;
     align-items: center;
   }
@@ -365,8 +377,8 @@
     text-align: center;
   }
   .reading-cover-img {
-    max-height: 38mm;
-    max-width: 34mm;
+    max-height: 50mm;
+    max-width: 42mm;
     border: 1.2px solid #000000;
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.15);
@@ -381,13 +393,13 @@
     line-height: 1.15;
   }
   .reading-author-context {
-    font-size: 7.4pt;
-    line-height: 1.35;
+    font-size: 7.8pt;
+    line-height: 1.40;
     color: #000000;
   }
   .reading-author-context strong.sec-lbl {
     display: block;
-    font-size: 7.6pt;
+    font-size: 7.8pt;
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: 2px;
@@ -404,8 +416,8 @@
     justify-content: center;
   }
   .reading-qr-img {
-    width: 24mm;
-    height: 24mm;
+    width: 28mm;
+    height: 28mm;
     display: block;
   }
   .reading-qr-lbl {
@@ -421,19 +433,20 @@
     flex: 1;
     border: 1.2px solid #000000;
     border-radius: 4px;
-    margin: 4px 0;
-    padding: 7px 11px;
+    margin: 6px 0;
+    padding: 13px 15px;
     background: #ffffff;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 9.3pt;
-    line-height: 1.46;
+    font-family: 'Lora', 'Playfair Display', Georgia, serif;
+    font-size: 11.2pt;
+    line-height: 1.66;
     color: #000000;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 14px;
   }
   .extract-body-box p {
-    margin: 0 0 5px 0;
+    margin: 0;
     text-indent: 0;
   }
   .extract-body-box p:last-child {
@@ -444,19 +457,19 @@
   .verso-support-grid {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
-    gap: 8px;
-    margin-bottom: 4px;
+    gap: 10px;
+    margin-bottom: 5px;
   }
   .verso-vault-box {
     border: 1.2px solid #000000;
     border-radius: 4px;
-    padding: 4px 7px;
+    padding: 6px 9px;
     background: #f8fafc;
-    font-size: 7.0pt;
-    line-height: 1.3;
+    font-size: 7.4pt;
+    line-height: 1.35;
   }
   .verso-vault-title {
-    font-size: 7.2pt;
+    font-size: 7.4pt;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 2px;
@@ -466,13 +479,13 @@
   .verso-hinge-box {
     border: 1.2px solid #000000;
     border-radius: 4px;
-    padding: 4px 7px;
+    padding: 6px 9px;
     background: #f8fafc;
-    font-size: 7.0pt;
-    line-height: 1.3;
+    font-size: 7.4pt;
+    line-height: 1.35;
   }
   .verso-hinge-title {
-    font-size: 7.2pt;
+    font-size: 7.4pt;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 2px;
@@ -484,13 +497,14 @@
   .oral-signoff-strip {
     border: 1.4px solid #000000;
     border-radius: 4px;
-    padding: 4px 8px;
+    padding: 6px 12px;
     background: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 7.6pt;
+    font-size: 7.8pt;
     font-weight: 700;
+    min-height: 34px;
   }
   .oral-signoff-strip .box-label {
     display: flex;
@@ -501,7 +515,7 @@
     border-bottom: 1.2px solid #000000;
     width: 32mm;
     display: inline-block;
-    min-height: 11px;
+    min-height: 15px;
     margin-left: 4px;
   }
 
@@ -525,18 +539,19 @@
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    margin: 3px 0;
-    gap: 4px;
+    margin: 4px 0;
+    gap: 6px;
   }
   .q-block {
     background: #ffffff;
     border: 1.3px solid #000000;
     border-radius: 4px;
-    padding: 4.5px 8px;
+    padding: 6.5px 9px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 25.5mm;
+    flex: 1;
+    min-height: 33mm;
   }
   .q-header {
     display: flex;
@@ -570,15 +585,15 @@
   .q-line-row {
     display: flex;
     align-items: flex-end;
-    margin-top: 1.5px;
-    gap: 6px;
+    margin-top: 3px;
+    gap: 8px;
   }
   .q-line-lbl {
     font-weight: 800;
     font-size: 8.0pt;
     color: #000000;
     white-space: nowrap;
-    min-width: 44px;
+    min-width: 48px;
   }
   .q-line-lbl.cue {
     font-style: italic;
@@ -587,20 +602,20 @@
   }
   .q-solid-line {
     flex: 1;
-    border-bottom: 1.4px solid #000000;
-    min-height: 14px;
+    border-bottom: 1.3px solid #000000;
+    min-height: 19px;
   }
 
   /* Support Term Vault at Base of Recto Page */
   .term-vault-box {
     border: 1.2px solid #000000;
     border-radius: 4px;
-    padding: 3.5px 7px;
+    padding: 4.5px 8px;
     background: #ffffff;
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 2px;
+    margin-top: 4px;
   }
   .term-vault-lbl {
     font-weight: 900;
@@ -618,8 +633,8 @@
   .term-pill {
     border: 1.2px solid #000000;
     border-radius: 3px;
-    padding: 1px 6px;
-    font-size: 7.2pt;
+    padding: 2px 7px;
+    font-size: 7.4pt;
     font-weight: 800;
     background: #f8fafc;
     color: #000000;
@@ -651,7 +666,7 @@
   .back-marking-hero {
     border: 1.5px solid #000000;
     border-top: none;
-    padding: 10px 14px;
+    padding: 12px 14px;
     background: #f8fafc;
     display: grid;
     grid-template-columns: 44mm 1fr;
@@ -669,8 +684,8 @@
     align-items: center;
   }
   .marking-qr-img {
-    width: 34mm;
-    height: 34mm;
+    width: 36mm;
+    height: 36mm;
     display: block;
   }
   .marking-qr-lbl {
@@ -691,7 +706,7 @@
   .marking-info-content p {
     margin: 0 0 6px 0;
     font-size: 8.0pt;
-    line-height: 1.35;
+    line-height: 1.38;
     color: #000000;
   }
   .rationale-callout {
@@ -707,8 +722,8 @@
   .back-pathways-container {
     border: 1.4px solid #000000;
     border-radius: 4px;
-    padding: 8px 10px;
-    margin: 5px 0;
+    padding: 9px 12px;
+    margin: 6px 0;
     background: #ffffff;
   }
   .pathway-grid {
@@ -720,10 +735,10 @@
   .pathway-card {
     border: 1.2px solid #000000;
     border-radius: 3px;
-    padding: 5px;
+    padding: 6px;
     background: #f8fafc;
-    font-size: 6.8pt;
-    line-height: 1.25;
+    font-size: 7.0pt;
+    line-height: 1.3;
   }
   .pathway-card strong {
     display: block;
@@ -738,9 +753,9 @@
   .unit-summary-ledger {
     border: 1.4px solid #000000;
     border-radius: 4px;
-    padding: 8px 10px;
+    padding: 9px 12px;
     background: #ffffff;
-    margin: 4px 0;
+    margin: 6px 0;
   }
   .summary-table {
     width: 100%;
@@ -759,28 +774,29 @@
   }
   .summary-table td {
     border: 1.2px solid #000000;
-    padding: 5px 4px;
+    padding: 6.5px 5px;
+    font-size: 8.0pt;
     font-weight: 700;
   }
 
   .teacher-feedback-box {
     border: 1.4px solid #000000;
     border-radius: 4px;
-    padding: 7px 10px;
+    padding: 10px 14px;
     background: #f8fafc;
-    margin-top: 4px;
-    font-size: 7.4pt;
+    margin-top: 6px;
+    font-size: 7.6pt;
     line-height: 1.4;
   }
   .teacher-feedback-lines {
-    margin-top: 4px;
+    margin-top: 6px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
   }
   .feedback-line {
     border-bottom: 1.2px solid #000000;
-    height: 12px;
+    height: 16px;
   }
 
   </style>
@@ -878,7 +894,7 @@
         <strong>4. Self-Checking:</strong> Scan the back cover QR code to self-check answers, record score out of 6, and obtain parent sign-off.
       </div>
       <div class="cover-qr-card">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAAAklEQVR4AewaftIAAAq9SURBVO3BUU4gSxIEwfAS97+yL98oR6I03Q9mM8zwU6pqpZOqWuukqtY6qaq1TqpqrZOqWusjfwDkX6DmTUAmaiZAJmomQJ6g5gaQ71IzATJRMwFyQ80EyETNBMgT1EyA/AvUfHVSVWudVNVaJ1W11klVrXVSVWt95JKanwDkCUAmam4AuQHkN1HzFZAbat4EZKLmCWomQJ6g5icA+a6TqlrrpKrWOqmqtU6qaq2TqlrrIw8B8gQ1TwByA8gNNRMgN9TcADIBMlEzAfJdQCZqnqDmBpCJmomaG2reBOQJav7WSVWtdVJVa51U1VonVbXWSVWt9ZFl1EyA3AAyUfMEIBM1/zU1EyATNRM1EyA31NwAMlEzATJR8//mpKrWOqmqtU6qaq2TqlrrpKrW+sgyQCZqJkAmaiZAJmqeAOQJar4LyA0gN9S8Sc0EyHYnVbXWSVWtdVJVa51U1VonVbXWRx6i5l8GZKJmAuQJQCZqbgCZqJkA+S41PwHIDTU31EyAvEnNb3FSVWudVNVaJ1W11klVrXVSVWt95BKQf5maCZAnqJkAmaiZAJmoeYuaCZCJmgmQiZoJkImaCZAbQCZq3gTktzupqrVOqmqtk6pa66Sq1jqpqrXwU/4PAbmh5glA3qTmBpD/mpobQG6ouQFkomYCZKLm/81JVa11UlVrnVTVWidVtdZJVa31kT8AMlEzAfIT1EzUTIBMgPwENRMgEyATNRM1bwFyA8gNNTeATNS8CchPUPO3TqpqrZOqWuukqtY6qaq1TqpqrY88RM0EyBPUPEHNBMgNNU8A8iYg36XmXwBkomYC5AlAbqiZAJmomQB5y0lVrXVSVWudVNVaJ1W11klVrYWfMgByQ80EyJvUTIBM1EyATNS8CcgNNf81IBM1EyBvUvMmIDfUTIBM1PwWJ1W11klVrXVSVWudVNVaJ1W1Fn7KBSA31NwAMlEzATJRMwEyUTMBMlEzAXJDzQTIRM0NIL+FmhtAJmpuAPkJaiZAbqiZALmh5quTqlrrpKrWOqmqtU6qaq2TqloLP2UAZKJmAmSiZgJkomYCZKLmBpA3qZkAmaiZALmh5gaQr9RMgEzUTIA8Qc0EyA01EyATNT8ByBPUfNdJVa11UlVrnVTVWidVtdZJVa2Fn3IByE9QMwHyE9TcAHJDzQTIDTXfBeSGmjcBmai5AWSiZgJkomYC5CeomQCZqPnqpKrWOqmqtU6qaq2TqlrrpKrW+sjL1EyATNRMgEzUTIBM1EyAPAHIRM2b1NwA8pWaCZAJkBtqJkBuALmhZgJkomYCZKJmAuSGmgmQG2q+66Sq1jqpqrVOqmqtk6pa66Sq1vrIHwCZqJkAmQB5gprfBMgTgEzUTNQ8Qc1XQJ6g5k1q3gRkomYC5E1qbgCZqPnqpKrWOqmqtU6qaq2TqlrrpKrW+sgfqJkAmaiZAHkCkCcAmai5AWSi5oaaG0Amam4A+UrNBMgTgLwJyETNDTUTIBM1EyATNTeA3FDzXSdVtdZJVa11UlVrnVTVWidVtRZ+youAPEHNBMhEzQTIDTUTIE9QMwEyUXMDyHepmQB5gpo3AXmTmgmQJ6i5AeSGmq9Oqmqtk6pa66Sq1jqpqrVOqmqtj/wQNRMgEyATNTfUTIBMgPwLgEzUTID8LTUTIE8A8gQ1TwAyUXMDyATIDTV/66Sq1jqpqrVOqmqtk6pa66Sq1sJPGQB5gpoJkBtqbgCZqHkTkImaCZCJmi2ATNTcAHJDzQTIE9RMgNxQcwPIRM1XJ1W11klVrXVSVWudVNVaJ1W1Fn7KBSA31EyA/CZqJkAman4TIBM1EyB/S80EyETNDSA31LwJyETNBMhEzQ0gEzUTIBM1X51U1VonVbXWSVWtdVJVa+GnXAAyUTMB8gQ1EyATNRMgN9TcAPIENU8A8l1qbgC5oWYCZKJmAqTuqfnqpKrWOqmqtU6qaq2TqlrrpKrWwk8ZAHmTmgmQG2reBOSGmgmQn6BmAuRvqZkAuaFmAmSi5gaQiZo3AXmTmr91UlVrnVTVWidVtdZJVa11UlVrfeSSmhtAnqBmAuSGmieouaFmAuSGmn+VmgmQiZoJkImaG0DepGYC5IaaG0Amar46qaq1TqpqrZOqWuukqtY6qaq18FNeBOSGmgmQiZobQJ6g5gaQG2omQCZqbgD5Ss0EyETNDSBPUDMBMlEzATJR8wQgEzUTIDfU/K2TqlrrpKrWOqmqtU6qaq2TqloLP+UCkJ+gZgJkouYGkImaCZCJmgmQLdTcADJRMwHyJjU3gLxJzQ0gEzVfnVTVWidVtdZJVa11UlVrnVTVWh/5AyA31EyA3FAzAXIDyETNT1BzA8hEzROAfKVmAmSi5glqJkBuqHkCkImaiZrfRM13nVTVWidVtdZJVa11UlVrnVTVWh+5pGYCZKJmAmQCZKJmAmSi5glAJmomQCZqbqi5AWSi5ruATNRMgEzU3ADyJiBPADJRMwEyUTMBMlHzlpOqWuukqtY6qaq1TqpqrZOqWusjf6DmhpoJkBtqJkB+gponAJmouQFkouaGmu8C8gQgN9TcADJRMwEyUTMB8hOA3FDzXSdVtdZJVa11UlVrnVTVWidVtRZ+ygDIRM0EyETNDSATNRMgN9TcADJR85sAmaiZAPkuNTeA/AQ1EyATNU8A8hPUTIBM1Hx1UlVrnVTVWidVtdZJVa11UlVrfeQham4AuQFkomYC5AaQnwBkomYCZKJmAmSi5i1qJkBuqHmCmicAuaFmAuSGmhtqvuukqtY6qaq1TqpqrZOqWuukqtb6yMuATNQ8AcgNIBM1N4BM1EyA3AAyUfMEIN+l5gaQiZonAJmouQFkouZNaiZA/msnVbXWSVWtdVJVa51U1VonVbUWfsoAyETNm4DcUDMB8puoeQKQiZoJkIma7wIyUXMDyA01EyBPUDMB8hPUTIBM1Pytk6pa66Sq1jqpqrVOqmqtk6paCz/l/xCQiZoJkImaG0Amam4A+S3UTIBM1EyATNT8BCA31DwByE9Q89VJVa11UlVrnVTVWidVtdZJVa31kT8A8i9QM1EzAfITgLxJzQ0gf0vNE4A8Qc0EyJuATNS8Sc3fOqmqtU6qaq2TqlrrpKrWOqmqtT5ySc1PAHIDyBOAPEHNE4BMgEzU/C0gEzUTIDfUTIA8Qc0EyBPUvEnNW06qaq2TqlrrpKrWOqmqtU6qaq2PPATIE9S8Sc0EyETNDSA3gNxQ8wQ1XwGZqJkAmai5AWSi5glAJmomQCZA3qRmAuQJar46qaq1TqpqrZOqWuukqtY6qaq1PrIMkCcAmaiZAJmomQCZAPmvAXmTmhtAJmomaiZAnqBmAmSi5oaat5xU1VonVbXWSVWtdVJVa51U1VofWUbNBMgEyETNDTU31NwAMlEzAfKVmicAmaiZAPkJam4AmQC5AWSi5r92UlVrnVTVWidVtdZJVa11UlVrfeQhan4TNU9QMwEyUTMBMlEzAfImNV8Bmah5k5oJkImaNwGZqJkAmaiZAJkAmaiZAJmo+a6TqlrrpKrWOqmqtU6qaq2TqloLP2UA5F+gZgLkCWpuAHmCmicAmaj5LiATNRMgT1BzA8gT1EyAvEnNBMhEzd86qaq1TqpqrZOqWuukqtY6qaq18FOqaqWTqlrrpKrWOqmqtU6qaq3/ASTL/RI7g90oAAAAAElFTkSuQmCC" alt="Unit Portal QR" class="cover-qr-img">
+        <img src="data:image/png;base64,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" alt="Unit Portal QR" class="cover-qr-img">
         <span class="cover-qr-lbl">Unit Digital Hub<br>Quizzes &amp; Lessons</span>
       </div>
     </div>
@@ -990,7 +1006,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">This meant that...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1007,7 +1023,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Known as...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1024,7 +1040,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Because...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1041,7 +1057,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Known as...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1058,7 +1074,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Because...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1075,7 +1091,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">As a result...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1201,7 +1217,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">This was because...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1218,7 +1234,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Known as...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1235,7 +1251,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">To prevent...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1252,7 +1268,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Because...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1269,7 +1285,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Because...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1286,7 +1302,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Consequently...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1412,7 +1428,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">This meant that...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1429,7 +1445,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Known as...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1446,7 +1462,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">To...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1463,7 +1479,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Because...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1480,7 +1496,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Because...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1497,7 +1513,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">As a result...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1623,7 +1639,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">This meant that...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1640,7 +1656,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Known as...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1657,7 +1673,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Because...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1674,7 +1690,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Because...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1691,7 +1707,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">By proving that...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1708,7 +1724,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Consequently...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1834,7 +1850,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Signed in...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1851,7 +1867,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Known as...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1868,7 +1884,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Set at...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1885,7 +1901,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Because...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1902,7 +1918,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">By restricting...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -1919,7 +1935,7 @@
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">Because...</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>
@@ -2030,6 +2046,8 @@
         <span>Effort Grade: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</span>
       </div>
       <div class="teacher-feedback-lines">
+        <span class="feedback-line"></span>
+        <span class="feedback-line"></span>
         <span class="feedback-line"></span>
         <span class="feedback-line"></span>
         <span class="feedback-line"></span>

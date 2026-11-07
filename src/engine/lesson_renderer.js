@@ -43,6 +43,9 @@ export const GCSE_CANONICAL_UNITS = [
   'usa',
 ];
 
+export const isGCSEInteractiveUnit = (uId) =>
+  GCSE_CANONICAL_UNITS.includes(uId);
+
 export function checkIsKs2(unitId, unitObj) {
   if (unitId === 'ks2_ww2' || (typeof unitId === 'string' && unitId.startsWith('ks2_')))
     return true;
@@ -193,6 +196,13 @@ window.formatBold = function (text) {
 
   return parsed;
 };
+
+export function formatBold(text) {
+  if (typeof window !== 'undefined' && window.formatBold) {
+    return window.formatBold(text);
+  }
+  return text;
+}
 
 /**
  * Detects if a source text and metadata represent poetry, verse, or lyrics.
@@ -482,10 +492,16 @@ export function jumpToSpineCard(stageNum) {
 }
 
 export function jumpToSourceDrawer(letter) {
-  const card = document.getElementById(`source-card-${letter}`);
+  const normLetter = (letter || '').toUpperCase();
+  const card =
+    document.getElementById(`source-card-${normLetter}`) ||
+    document.querySelector(`[data-source-letter="${normLetter}"]`);
   if (card) {
     if (card.tagName && card.tagName.toLowerCase() === 'details') {
       card.open = true;
+    } else {
+      const innerDetails = card.querySelector('details');
+      if (innerDetails) innerDetails.open = true;
     }
     card.scrollIntoView({ behavior: 'smooth', block: 'center' });
     card.classList.add('source-card-highlighted');
@@ -843,15 +859,45 @@ function getRetrievalStarterActions(lesson, currentUnitId) {
   `;
 }
 
+export function renderDoNowInlineTimerHTML(timerId = 'donow-timer') {
+  return `
+    <div class="donow-inline-timer-bar" id="${timerId}-bar" style="display: inline-flex; align-items: center; gap: 5px; background: #ffffff; border: 1.2px solid #cbd5e1; border-radius: 20px; padding: 2.5px 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
+      <i class="fa-solid fa-stopwatch" style="color: #0284c7; font-size: 0.85rem; margin-left: 2px;"></i>
+      <span id="${timerId}-display" style="font-size: 0.95rem; font-weight: 800; font-family: 'Courier New', monospace; color: #0f172a; min-width: 44px; text-align: center;">05:00</span>
+      <span id="${timerId}-summary-badge" style="display: none;">05:00</span>
+      <span id="${timerId}-mode-pill" style="display: none;">5 Mins</span>
+      
+      <div id="${timerId}-presets" style="display: inline-flex; align-items: center; gap: 3px;">
+        <button type="button" class="btn-timer-pill" data-sec="180" onclick="event.stopPropagation(); window.setDoNowTimerPreset('${timerId}', 180);" style="padding: 1px 6px; font-size: 0.7rem; font-weight: 700; border-radius: 10px; border: 1px solid #cbd5e1; background: #ffffff; color: #475569; cursor: pointer;" title="3 minutes">3m</button>
+        <button type="button" class="btn-timer-pill active-preset" data-sec="300" onclick="event.stopPropagation(); window.setDoNowTimerPreset('${timerId}', 300);" style="padding: 1px 6px; font-size: 0.7rem; font-weight: 700; border-radius: 10px; border: 1.2px solid #0284c7; background: #e0f2fe; color: #0284c7; cursor: pointer;" title="5 minutes">5m</button>
+      </div>
+
+      <button type="button" class="btn-timer-ctl" id="${timerId}-start-btn" onclick="event.stopPropagation(); window.toggleDoNowTimer('${timerId}', 'start');" style="padding: 2px 8px; font-weight: 700; font-size: 0.73rem; border-radius: 12px; cursor: pointer; background: #0284c7; color: #ffffff; border: none; display: inline-flex; align-items: center; gap: 3px;" title="Start countdown">
+        <i class="fa-solid fa-play" style="font-size: 0.6rem;"></i> Start
+      </button>
+      <button type="button" class="btn-timer-ctl" id="${timerId}-pause-btn" onclick="event.stopPropagation(); window.toggleDoNowTimer('${timerId}', 'pause');" style="padding: 2px 8px; font-weight: 700; font-size: 0.73rem; border-radius: 12px; cursor: pointer; background: #f59e0b; color: #ffffff; border: none; display: none; align-items: center; gap: 3px;" title="Pause countdown">
+        <i class="fa-solid fa-pause" style="font-size: 0.6rem;"></i> Pause
+      </button>
+      <button type="button" id="${timerId}-reset-btn" onclick="event.stopPropagation(); window.toggleDoNowTimer('${timerId}', 'reset');" style="padding: 2px 5px; font-size: 0.72rem; color: #64748b; background: transparent; border: none; cursor: pointer;" title="Reset timer">
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
+      <button type="button" id="${timerId}-sound-btn" onclick="event.stopPropagation(); window.toggleDoNowTimerSound('${timerId}');" style="padding: 2px 5px; font-size: 0.72rem; color: #64748b; background: transparent; border: none; cursor: pointer;" title="Toggle audio chime">
+        <i class="fa-solid fa-bell-slash" id="${timerId}-sound-icon"></i>
+      </button>
+    </div>
+  `;
+}
+
 function renderDoNowHeaderWithTimerHTML({
   timerId = 'donow-timer',
   title = 'Do Now Tasks',
   badgeText = 'Prior Knowledge',
   icon = 'fa-solid fa-list-check',
   showRevealAll = true,
+  includeTimer = true,
 }) {
   return `
-    <div class="donow-streamlined-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 10px;">
+    <div class="donow-streamlined-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 10px;">
       <!-- Title & Pedagogical Badge -->
       <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
         <span style="font-weight: 800; font-size: 0.94rem; color: #0f172a; display: flex; align-items: center; gap: 7px;">
@@ -861,35 +907,12 @@ function renderDoNowHeaderWithTimerHTML({
       </div>
 
       <!-- Discreet Inline Stopwatch Timer -->
-      <div class="donow-inline-timer-bar" id="${timerId}-bar" style="display: inline-flex; align-items: center; gap: 5px; background: #f8fafc; border: 1.2px solid #cbd5e1; border-radius: 20px; padding: 2.5px 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
-        <i class="fa-solid fa-stopwatch" style="color: #0284c7; font-size: 0.85rem; margin-left: 2px;"></i>
-        <span id="${timerId}-display" style="font-size: 0.95rem; font-weight: 800; font-family: 'Courier New', monospace; color: #0f172a; min-width: 44px; text-align: center;">05:00</span>
-        <span id="${timerId}-summary-badge" style="display: none;">05:00</span>
-        <span id="${timerId}-mode-pill" style="display: none;">5 Mins</span>
-        
-        <div id="${timerId}-presets" style="display: inline-flex; align-items: center; gap: 3px;">
-          <button type="button" class="btn-timer-pill" data-sec="180" onclick="event.stopPropagation(); window.setDoNowTimerPreset('${timerId}', 180);" style="padding: 1px 6px; font-size: 0.7rem; font-weight: 700; border-radius: 10px; border: 1px solid #cbd5e1; background: #ffffff; color: #475569; cursor: pointer;" title="3 minutes">3m</button>
-          <button type="button" class="btn-timer-pill active-preset" data-sec="300" onclick="event.stopPropagation(); window.setDoNowTimerPreset('${timerId}', 300);" style="padding: 1px 6px; font-size: 0.7rem; font-weight: 700; border-radius: 10px; border: 1.2px solid #0284c7; background: #e0f2fe; color: #0284c7; cursor: pointer;" title="5 minutes">5m</button>
-        </div>
-
-        <button type="button" class="btn-timer-ctl" id="${timerId}-start-btn" onclick="event.stopPropagation(); window.toggleDoNowTimer('${timerId}', 'start');" style="padding: 2px 8px; font-weight: 700; font-size: 0.73rem; border-radius: 12px; cursor: pointer; background: #0284c7; color: #ffffff; border: none; display: inline-flex; align-items: center; gap: 3px;" title="Start countdown">
-          <i class="fa-solid fa-play" style="font-size: 0.6rem;"></i> Start
-        </button>
-        <button type="button" class="btn-timer-ctl" id="${timerId}-pause-btn" onclick="event.stopPropagation(); window.toggleDoNowTimer('${timerId}', 'pause');" style="padding: 2px 8px; font-weight: 700; font-size: 0.73rem; border-radius: 12px; cursor: pointer; background: #f59e0b; color: #ffffff; border: none; display: none; align-items: center; gap: 3px;" title="Pause countdown">
-          <i class="fa-solid fa-pause" style="font-size: 0.6rem;"></i> Pause
-        </button>
-        <button type="button" id="${timerId}-reset-btn" onclick="event.stopPropagation(); window.toggleDoNowTimer('${timerId}', 'reset');" style="padding: 2px 5px; font-size: 0.72rem; color: #64748b; background: transparent; border: none; cursor: pointer;" title="Reset timer">
-          <i class="fa-solid fa-rotate-right"></i>
-        </button>
-        <button type="button" id="${timerId}-sound-btn" onclick="event.stopPropagation(); window.toggleDoNowTimerSound('${timerId}');" style="padding: 2px 5px; font-size: 0.72rem; color: #64748b; background: transparent; border: none; cursor: pointer;" title="Toggle audio chime">
-          <i class="fa-solid fa-bell-slash" id="${timerId}-sound-icon"></i>
-        </button>
-      </div>
+      ${includeTimer ? renderDoNowInlineTimerHTML(timerId) : ''}
 
       <!-- Action (Reveal All) -->
       ${showRevealAll
       ? `
-        <div style="display: flex; align-items: center; gap: 6px;">
+        <div style="display: flex; align-items: center; gap: 6px; margin-left: auto;">
           <button class="btn btn-secondary btn-sm" data-action="toggle-all-answers" onclick="if(window.toggleAllAnswers){window.toggleAllAnswers(this);}event.stopPropagation();" style="font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #ffffff; color: #334155; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
             <i class="fa-solid fa-eye" style="color: #0284c7; font-size: 0.72rem;"></i>
             <span>Reveal All Answers</span>
@@ -1385,9 +1408,14 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
       );
     }
 
-    if (window.scrollToTop) window.scrollToTop(true);
-    else
-      (document.getElementById('content-area') || window).scrollTo({ top: 0, behavior: 'smooth' });
+    const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+    const hasStageJump = (urlParams && urlParams.get('stage')) || (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('hh_pending_narrative_jump'));
+
+    if (!hasStageJump) {
+      if (window.scrollToTop) window.scrollToTop(true);
+      else
+        (document.getElementById('content-area') || window).scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 };
 
@@ -2570,36 +2598,25 @@ function renderLessonVideos(videos, lesson, unitId) {
       `;
     }
 
-    // Task and Action buttons
+    // Action buttons: Clean Cinema launch
     let actionButtonsHtml = '';
-    const hasTask = Boolean(vid.viewing_task || pathwayInfo.guidance || vid.model_answer);
-    if (hasTask) hasAnyTasks = true;
-
     if (ytId) {
       actionButtonsHtml += `
-        <button type="button" class="btn-video-shelf-action watch" data-action="open-video-modal" data-youtube="${ytId}" data-video-key="${videoKey}" title="Watch in Dual-Pane Theater">
+        <button type="button" class="btn-video-shelf-action watch" data-action="open-video-modal" data-youtube="${ytId}" data-video-key="${videoKey}" title="Watch in Cinema Player: ${cleanTitle}">
           <i class="fa-solid fa-play"></i> Watch
         </button>
       `;
     } else if (isEra) {
       actionButtonsHtml += `
-        <a href="${vid.url}" target="_blank" rel="noopener noreferrer" class="btn-video-shelf-action era">
+        <a href="${vid.url}" target="_blank" rel="noopener noreferrer" class="btn-video-shelf-action era" title="Stream on Educational Recording Agency">
           <i class="fa-solid fa-arrow-up-right-from-square"></i> Stream
         </a>
       `;
     } else {
       actionButtonsHtml += `
-        <a href="${vid.url}" target="_blank" rel="noopener noreferrer" class="btn-video-shelf-action generic">
+        <a href="${vid.url}" target="_blank" rel="noopener noreferrer" class="btn-video-shelf-action generic" title="Open Video Resource">
           <i class="fa-solid fa-arrow-up-right-from-square"></i> Open
         </a>
-      `;
-    }
-
-    if (hasTask) {
-      actionButtonsHtml += `
-        <button type="button" class="btn-video-shelf-action task" onclick="window.toggleVideoTaskDrawer('${safeLessonId}', ${idx}, event)" title="View Task &amp; Guidance">
-          <i class="fa-solid fa-list-check"></i> Task
-        </button>
       `;
     }
 
@@ -2609,14 +2626,15 @@ function renderLessonVideos(videos, lesson, unitId) {
         ${thumbHtml}
         <div class="video-shelf-card-info">
           <div class="video-shelf-card-tags">
-            ${prominentDur
-        ? `
+            ${
+              prominentDur
+                ? `
               <span class="video-shelf-duration-badge" title="Exact Runtime: ${vid.duration || prominentDur}">
                 <i class="fa-solid fa-clock"></i> ${prominentDur}
               </span>
             `
-        : ''
-      }
+                : ''
+            }
             <span class="video-shelf-pathway-pill" title="${(pathwayInfo.guidance || '').replace(/"/g, '&quot;')}">
               <i class="${pathwayInfo.icon || 'fa-solid fa-route'}"></i> ${pathwayInfo.pathway}
             </span>
@@ -2630,93 +2648,6 @@ function renderLessonVideos(videos, lesson, unitId) {
         </div>
       </div>
     `;
-
-    // Collapsible Task Content (if any)
-    if (hasTask) {
-      taskPanelsHtml += `
-        <div id="video-task-content-${safeLessonId}-${idx}" class="video-task-item-content" style="display: none;">
-          <div class="video-drawer-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; flex-wrap: wrap; gap: 8px;">
-            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-              <span class="video-shelf-pathway-pill" title="${(pathwayInfo.guidance || '').replace(/"/g, '&quot;')}">
-                <i class="${pathwayInfo.icon || 'fa-solid fa-route'}"></i> ${pathwayInfo.pathway}
-              </span>
-              <span style="font-size: 0.92rem; font-weight: 800; color: #0f172a;">${cleanTitle}</span>
-              ${vid.duration ? `<span class="video-shelf-duration-badge"><i class="fa-solid fa-clock"></i> ${vid.duration}</span>` : ''}
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px;">
-              ${ytId
-          ? `
-                <button type="button" class="btn-theater-launch-banner" data-action="open-video-modal" data-youtube="${ytId}" data-video-key="${videoKey}" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: #ffffff; border: none; font-size: 0.76rem; font-weight: 700; padding: 5px 12px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 3px rgba(37,99,235,0.3);">
-                  <i class="fa-solid fa-expand"></i> Launch Theater Mode
-                </button>
-              `
-          : ''
-        }
-              <button type="button" style="background: none; border: 1px solid #cbd5e1; font-size: 0.78rem; color: #64748b; cursor: pointer; padding: 4px 8px; border-radius: 5px;" onclick="window.toggleVideoTaskDrawer('${safeLessonId}', ${idx}, event)">
-                <i class="fa-solid fa-xmark"></i> Close
-              </button>
-            </div>
-          </div>
-
-          <div class="video-drawer-body" style="display: flex; flex-direction: column; gap: 10px;">
-            ${pathwayInfo.guidance
-          ? `
-              <div class="video-teacher-guidance-box" style="background: #f8faff; border-left: 4px solid #6366f1; padding: 10px 14px; border-radius: 0 8px 8px 0; border: 1px solid #e0e7ff; border-left-width: 4px;">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; flex-wrap: wrap; gap: 6px;">
-                  <div style="font-size: 0.72rem; font-weight: 800; color: #4338ca; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 5px;">
-                    <i class="fa-solid fa-graduation-cap"></i> Teacher Pedagogical Briefing
-                  </div>
-                  <span style="font-size: 0.68rem; font-weight: 700; color: #4338ca; background: #e0e7ff; padding: 2px 7px; border-radius: 4px;">
-                    ${pathwayInfo.pathway} Pathway
-                  </span>
-                </div>
-                <div style="font-size: 0.86rem; color: #1e293b; line-height: 1.5;">
-                  ${formatBold(formatInteractiveTimestamps(pathwayInfo.guidance, ytId, false, videoKey))}
-                </div>
-              </div>
-            `
-          : ''
-        }
-
-            ${vid.viewing_task
-          ? `
-              <div class="video-viewing-task-box" style="background: #ffffff; border-left: 4px solid #f59e0b; padding: 12px 14px; border-radius: 0 8px 8px 0; border: 1px solid #fed7aa; border-left-width: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-                  <div style="font-size: 0.72rem; font-weight: 800; color: #b45309; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 5px;">
-                    <i class="fa-solid fa-list-check"></i> Viewing Question Tasks
-                  </div>
-                  <span style="font-size: 0.68rem; font-weight: 700; color: #b45309; background: #fef3c7; padding: 2px 7px; border-radius: 4px;">
-                    Mixed-Ability Scaffold
-                  </span>
-                </div>
-                <div class="video-task-content-rendered" style="font-size: 0.88rem; color: #78350f; line-height: 1.55;">
-                  ${formatBold(formatInteractiveTimestamps(vid.viewing_task, ytId, false, videoKey))}
-                </div>
-              </div>
-            `
-          : ''
-        }
-
-            ${vid.model_answer
-          ? `
-              <details class="video-model-details" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; overflow: hidden; margin-top: 2px;">
-                <summary style="cursor: pointer; padding: 8px 14px; font-size: 0.82rem; color: #166534; font-weight: 700; user-select: none; display: flex; align-items: center; justify-content: space-between;">
-                  <span style="display: flex; align-items: center; gap: 6px;">
-                    <i class="fa-solid fa-circle-check" style="color: #16a34a;"></i> Reveal Model Answer &amp; Teacher Mark Scheme
-                  </span>
-                  <span style="font-size: 0.70rem; color: #15803d; font-weight: 600; text-transform: uppercase;">Click to expand</span>
-                </summary>
-                <div style="padding: 12px 16px; font-size: 0.86rem; color: #14532d; line-height: 1.55; border-top: 1px solid #bbf7d0; background: #ffffff;">
-                  ${formatBold(formatInteractiveTimestamps(vid.model_answer, ytId, false, videoKey))}
-                </div>
-              </details>
-            `
-          : ''
-        }
-          </div>
-        </div>
-      `;
-    }
   });
 
   return `
@@ -2724,11 +2655,11 @@ function renderLessonVideos(videos, lesson, unitId) {
       <div class="lesson-video-shelf-header">
         <div class="video-shelf-title">
           <i class="fa-solid fa-film"></i>
-          <span>Classroom Video Pathways</span>
+          <span>Classroom Video Library</span>
           <span class="video-shelf-count-pill">${countPillText}</span>
         </div>
         <div class="video-shelf-hint">
-          ${sortedVideos.length > 1 ? '<i class="fa-solid fa-arrow-left-long"></i> <span>Scroll horizontal</span> <i class="fa-solid fa-arrow-right-long"></i>' : '<span class="video-shelf-instant-badge"><i class="fa-solid fa-bolt"></i> One-Click Launch</span>'}
+          ${sortedVideos.length > 1 ? '<i class="fa-solid fa-arrow-left-long"></i> <span>Scroll horizontal</span> <i class="fa-solid fa-arrow-right-long"></i>' : '<span class="video-shelf-instant-badge"><i class="fa-solid fa-bolt"></i> One-Click Cinema Playback</span>'}
         </div>
       </div>
 
@@ -2736,16 +2667,6 @@ function renderLessonVideos(videos, lesson, unitId) {
       <div class="lesson-video-shelf-row">
         ${videoCardsHtml}
       </div>
-
-      <!-- Expandable Task Drawer if triggered -->
-      ${hasAnyTasks
-      ? `
-        <div id="${drawerId}" class="video-task-drawer" style="display: none;">
-          ${taskPanelsHtml}
-        </div>
-      `
-      : ''
-    }
     </div>
   `;
 }
@@ -2853,7 +2774,7 @@ export function renderLearningObjectivesPanelHTML(objectivesData, lesson) {
           </div>
         </div>
         <span style="font-size: 0.75rem; font-weight: 700; color: #059669; background: #ecfdf5; border: 1px solid #a7f3d0; padding: 4px 11px; border-radius: 12px; display: inline-flex; align-items: center; gap: 5px;">
-          <i class="fa-solid fa-check-double"></i> ${scaffolded.length} Target Milestones
+          <i class="fa-solid fa-list-check"></i> ${scaffolded.length} Target Milestones
         </span>
       </div>
       ${enquiryPrompt ? `
@@ -3110,16 +3031,16 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId) {
   const matrix = task.matrix ||
     task.structureStrip || [
       {
-        col: '1. CONTENT & DETAIL',
-        text: 'Analyse what each source reveals about the enquiry topic.',
+        col: '1. SOURCE 1 DUAL-ANCHOR (~90 words)',
+        text: 'Quote 1 (Content) &rarr; Contextual Validation &rarr; Quote 2 + 1-Aspect NOP (Author/Purpose).',
       },
       {
-        col: '2. PROVENANCE & MOTIVE',
-        text: 'Evaluate how origin and purpose affect historical reliability.',
+        col: '2. SOURCE 2 DUAL-ANCHOR (~90 words)',
+        text: 'Quote 1 (Content) &rarr; Contextual Validation &rarr; Quote 2 + 1-Aspect NOP (Author/Purpose).',
       },
       {
-        col: '3. HISTORICAL JUDGEMENT',
-        text: 'Reach a reasoned conclusion on which source is more useful.',
+        col: '3. TIMING BUDGET (10–12 Mins)',
+        text: 'Weave 3 strands together. Zero intro, zero comparison between sources, zero conclusion.',
       },
     ];
   let connectives = [];
@@ -3132,11 +3053,12 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId) {
       .filter(Boolean);
   } else {
     connectives = [
-      'Source A is useful for showing...',
-      'However, its utility is limited because...',
-      'In contrast, Source B reveals...',
-      'Cross-referencing both sources proves...',
-      'On balance, Source A/B is more valuable because...',
+      'Source B is useful for investigating [enquiry] because it demonstrates that...',
+      'This claim is corroborated by historical evidence, such as...',
+      'The source\'s utility is enhanced/shaped by its provenance, as...',
+      'Source C is equally useful because it reveals that...',
+      'This confirms that...',
+      'As an authentic [speech/report/circular] produced by [author], its purpose was...',
     ];
   }
   const modelAnswer = task.model_answer || task.model || '';
@@ -4036,12 +3958,22 @@ export function renderLesson(lesson) {
     typeof document !== 'undefined' && document.body.classList.contains('whiteboard-mode-active');
   const hasActiveTool = isTeacherActive || isWbActive;
 
+  const hasLessonZero = allUnitLessons.length > 0 && (allUnitLessons[0].id === 'lesson_0' || (allUnitLessons[0].title && allUnitLessons[0].title.includes('KT 1.0')));
+  const isLessonZero = hasLessonZero && (currentIndex === 0 || lesson.id === 'lesson_0' || (lesson.title && lesson.title.includes('KT 1.0')));
   const isGCSEUnit = isGCSE;
   let stickyCountLabel = '';
   if (allUnitLessons.length > 0) {
-    stickyCountLabel = isGCSEUnit
-      ? `Lesson ${currentIndex + 1} of ${allUnitLessons.length}`
-      : `Enquiry ${currentIndex + 1} of ${allUnitLessons.length}`;
+    if (isLessonZero) {
+      stickyCountLabel = 'Introductory Context Lesson';
+    } else if (hasLessonZero) {
+      stickyCountLabel = isGCSEUnit
+        ? `Lesson ${currentIndex} of ${allUnitLessons.length - 1}`
+        : `Enquiry ${currentIndex} of ${allUnitLessons.length - 1}`;
+    } else {
+      stickyCountLabel = isGCSEUnit
+        ? `Lesson ${currentIndex + 1} of ${allUnitLessons.length}`
+        : `Enquiry ${currentIndex + 1} of ${allUnitLessons.length}`;
+    }
   } else {
     stickyCountLabel = lesson.title || '';
   }
@@ -4050,7 +3982,13 @@ export function renderLesson(lesson) {
   if (isTrip) {
     stickyAnchorText = `${lessonPrefix}: ${lesson.title.split('(')[0].trim()}`;
   } else if (isGCSEUnit && ktMatch) {
-    stickyAnchorText = `<span class="sticky-lesson-prefix" style="color: #1e3a8a; font-weight: 800; font-family: 'Inter', sans-serif; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">${lessonPrefix}</span> <span style="color: #94a3b8; margin: 0 4px;">&bull;</span> <span class="sticky-lesson-enquiry-count" style="color: #475569; font-weight: 600; font-family: 'Inter', sans-serif; font-size: 0.92rem;">Lesson ${currentIndex + 1} of ${allUnitLessons.length}</span>`;
+    if (isLessonZero) {
+      stickyAnchorText = `<span class="sticky-lesson-prefix" style="color: #1e3a8a; font-weight: 800; font-family: 'Inter', sans-serif; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">${lessonPrefix}</span> <span style="color: #94a3b8; margin: 0 4px;">&bull;</span> <span class="sticky-lesson-enquiry-count" style="color: #475569; font-weight: 600; font-family: 'Inter', sans-serif; font-size: 0.92rem;">Introductory Context Lesson</span>`;
+    } else {
+      const lessonNum = hasLessonZero ? currentIndex : currentIndex + 1;
+      const totalCount = hasLessonZero ? allUnitLessons.length - 1 : allUnitLessons.length;
+      stickyAnchorText = `<span class="sticky-lesson-prefix" style="color: #1e3a8a; font-weight: 800; font-family: 'Inter', sans-serif; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">${lessonPrefix}</span> <span style="color: #94a3b8; margin: 0 4px;">&bull;</span> <span class="sticky-lesson-enquiry-count" style="color: #475569; font-weight: 600; font-family: 'Inter', sans-serif; font-size: 0.92rem;">Lesson ${lessonNum} of ${totalCount}</span>`;
+    }
   } else {
     stickyAnchorText = `<span class="sticky-lesson-enquiry-count" style="color: #1e3a8a; font-weight: 800; font-family: 'Inter', sans-serif; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">${stickyCountLabel}</span>`;
   }
@@ -4088,6 +4026,12 @@ export function renderLesson(lesson) {
         ? `<button type="button" class="btn btn-cme-theater-map" onclick="window.openCmeTheaterMapModal()" style="padding: 6px 12px; font-size: 0.88rem; background: #0284c7; color: #ffffff; border: 1.5px solid #0369a1; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(2,132,199,0.3); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Open High-Resolution Regional Map (Israel & Surrounding Neighbours) [Shortcut: M]"><i class="fa-solid fa-map" style="color: #ffffff;"></i> Regional Map</button>`
         : ''
       }
+              ${(() => {
+                const cnt = typeof window !== 'undefined' && window.getLessonInfographicCount ? window.getLessonInfographicCount(unitId, lesson.id || currentIndex) : (lesson.infographic ? 1 : 0);
+                if (!cnt || cnt === 0) return '';
+                const label = cnt > 1 ? `Visual Revision Mats (${cnt})` : 'Visual Revision Mat';
+                return `<button type="button" class="btn btn-lesson-infographic" onclick="if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="padding: 6px 12px; font-size: 0.88rem; background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: 1.5px solid #38bdf8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 4px rgba(2,132,199,0.35); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';" title="Open high-resolution visual revision mat / infographic"><i class="fa-solid fa-chart-pie" style="color: #fde047;"></i> <span>${label}</span></button>`;
+              })()}
               ${lesson.note_scaffold
         ? `<button class="btn btn-note-scaffold-jump" onclick="const sc = document.getElementById('lesson-note-scaffold'); if(sc) { sc.open = true; sc.scrollIntoView({ behavior: 'smooth' }); }" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Jump directly to the Active Lesson Task"><i class="fa-solid fa-pen-to-square" style="color: #16a34a;"></i> Core Lesson Task</button>`
         : ''
@@ -4196,15 +4140,17 @@ export function renderLesson(lesson) {
           ? 'Edexcel Paper 2'
           : unitId === 'eee'
             ? 'Edexcel Paper 2'
-            : unitId === 'weimar_nazi_germany'
-              ? 'Edexcel Paper 3'
-              : unitId === 'usa'
+            : unitId === 'cold_war'
+              ? 'Edexcel Paper 2'
+              : unitId === 'weimar_nazi_germany'
                 ? 'Edexcel Paper 3'
-                : isKs3
-                  ? 'Key Stage 3'
-                  : isKs2
-                    ? 'Key Stage 2'
-                    : 'Edexcel GCSE';
+                : unitId === 'usa'
+                  ? 'Edexcel Paper 3'
+                  : isKs3
+                    ? 'Key Stage 3'
+                    : isKs2
+                      ? 'Key Stage 2'
+                      : 'Edexcel GCSE';
 
     const safeSpec = encodeURIComponent(lesson.specification_anchor);
     const safeTitle = encodeURIComponent(cleanLessonHeading);
@@ -4227,7 +4173,7 @@ export function renderLesson(lesson) {
   html += `
       <div class="lesson-hero${heroExtraClass}" style="position: relative; width: calc(100% + 8rem); margin-left: -4rem; margin-top: 0; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border-glass); box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
         <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.85) 45%, rgba(15,23,42,0.96) 100%); backdrop-filter: blur(1px);"></div>
-        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1rem 4rem;">
+        <div class="lesson-hero-content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1rem 4rem;">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 2px;">
             <span style="color: #cbd5e1; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.78rem;">${heroEyebrow}</span>
             ${specPillHtml}
@@ -4276,11 +4222,7 @@ export function renderLesson(lesson) {
       const sLetterMatch = (source.title || '').match(/(?:Source|Map|Diagram)\s+([A-Z0-9]+)/i);
       const sLetter = sLetterMatch ? sLetterMatch[1].toUpperCase() : '';
       const isInteractiveSourceUnit =
-        window.currentUnitId === 'cme_new' ||
-        window.currentUnitId === 'edexcel_medicine' ||
-        unitId === 'edexcel_medicine' ||
-        window.currentUnitId === 'eee' ||
-        unitId === 'eee' ||
+        isGCSEInteractiveUnit(window.currentUnitId || unitId) ||
         window.currentUnitId === 'monarchy_religion_power' ||
         unitId === 'monarchy_religion_power' ||
         window.currentUnitId === 'first_british_empire' ||
@@ -4305,10 +4247,7 @@ export function renderLesson(lesson) {
           : '';
 
       if (
-        unitId === 'edexcel_medicine' ||
-        window.currentUnitId === 'edexcel_medicine' ||
-        unitId === 'eee' ||
-        window.currentUnitId === 'eee' ||
+        isGCSEInteractiveUnit(window.currentUnitId || unitId) ||
         unitId === 'monarchy_religion_power' ||
         window.currentUnitId === 'monarchy_religion_power' ||
         unitId === 'first_british_empire' ||
@@ -4463,10 +4402,10 @@ export function renderLesson(lesson) {
                   </div>
                   <div class="archival-source-details-col" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
                     <div>
-                      ${source.caption
-                  ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 12px; font-style: italic;">${source.caption}</div>`
-                  : ''
-                }
+                      ${(() => {
+                        const cap = source.caption || (source.title ? source.title.replace(/^Source\s+[A-Z0-9]+[:\s-]*/i, '').trim() : '') || source.attribution || '';
+                        return cap ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 12px; font-style: italic; line-height: 1.5;">${cap}</div>` : '';
+                      })()}
                       ${sourceText
                   ? renderArchivalSourceBody(sourceText, source, { maxHeight: '250px', fontSize: '0.95rem', lineHeight: '1.6', padding: '10px 14px', marginBottom: '12px', accentColor: '#1e3a8a' })
                   : ''
@@ -4974,7 +4913,9 @@ export function renderLesson(lesson) {
         badgeText: '📖 Workbook Task 1 &bull; Prior Knowledge Retrieval',
         icon: 'fa-solid fa-list-check',
         showRevealAll: true,
+        includeTimer: false,
       });
+      const timerHtml = renderDoNowInlineTimerHTML('donow-timer');
       const currentDb =
         typeof window !== 'undefined'
           ? window.db || (appStore && appStore.state && appStore.state.db)
@@ -4985,6 +4926,7 @@ export function renderLesson(lesson) {
         unitId,
         db: currentDb,
         headerHtml,
+        timerHtml,
       });
       window.postRenderHooks.push(() => {
         initGcseDoNowEngine(
@@ -6426,6 +6368,8 @@ export function renderLesson(lesson) {
       }
 
       let stageDateVal = (matchedStage && matchedStage.date) || '';
+      const stageObj = matchedStage;
+      const stageNum = stageObj ? (stageObj.step || index + 1) : index + 1;
       let cleanHeadingTitle = '';
 
       if (rawHeading) {
@@ -6648,21 +6592,14 @@ export function renderLesson(lesson) {
         const isWrittenSource =
           rawSource.type === 'written' || (!hasImage && Boolean(sourceText)) || !hasImage;
 
-        const bLetterMatch = (rawSource.title || '').match(/Source\s+([A-Z0-9]+)/i);
-        const bLetter = bLetterMatch ? bLetterMatch[1].toUpperCase() : rawSource.letter || '';
+        const bLetterMatch = (rawSource.title || '').match(/(?:Source|Map|Diagram)\s+([A-Z0-9]+)/i);
+        const bLetter = bLetterMatch
+          ? bLetterMatch[1].toUpperCase()
+          : rawSource.letter
+            ? String(rawSource.letter).toUpperCase()
+            : (['A', 'B', 'C', 'D', 'E'][index] || '');
         const isInteractiveSourceUnit =
-          window.currentUnitId === 'cme_new' ||
-          unitId === 'cme_new' ||
-          window.currentUnitId === 'edexcel_medicine' ||
-          unitId === 'edexcel_medicine' ||
-          window.currentUnitId === 'eee' ||
-          unitId === 'eee' ||
-          window.currentUnitId === 'weimar_nazi_germany' ||
-          unitId === 'weimar_nazi_germany' ||
-          window.currentUnitId === 'usa' ||
-          unitId === 'usa' ||
-          window.currentUnitId === 'cold_war' ||
-          unitId === 'cold_war';
+          isGCSEInteractiveUnit(window.currentUnitId || unitId) || isKs3 || isKs2;
         const bCardIdAttr =
           bLetter && isInteractiveSourceUnit
             ? `id="source-card-${bLetter}" data-source-letter="${bLetter}"`
@@ -6750,18 +6687,31 @@ export function renderLesson(lesson) {
               const isMedicineWesternFront =
                 (unitId === 'edexcel_medicine' || window.currentUnitId === 'edexcel_medicine') &&
                 (lesson.historic_environment || (lesson.title && lesson.title.includes('KT5')));
+              const isPaper3 =
+                unitId === 'weimar_nazi_germany' ||
+                window.currentUnitId === 'weimar_nazi_germany' ||
+                unitId === 'usa' ||
+                window.currentUnitId === 'usa';
+              const isPaper2 =
+                unitId === 'cold_war' ||
+                window.currentUnitId === 'cold_war' ||
+                unitId === 'cme_new' ||
+                window.currentUnitId === 'cme_new' ||
+                unitId === 'eee' ||
+                window.currentUnitId === 'eee';
               const examBadgeTitle =
                 utilityObj.exam_label ||
                 (isMedicineWesternFront
                   ? 'Edexcel Paper 1 &bull; Q2(a) Source Utility Enquiry [8 Marks]'
-                  : unitId === 'weimar_nazi_germany' ||
-                    window.currentUnitId === 'weimar_nazi_germany'
+                  : isPaper3
                     ? 'Edexcel Paper 3 &bull; Q3(a) Source Utility Enquiry [8 Marks]'
-                    : isKs3
-                      ? 'KS3 Primary Source Enquiry'
-                      : isKs2
-                        ? 'Key Stage 2 Historian Enquiry'
-                        : 'GCSE Source Utility Enquiry [8 Marks]');
+                    : isPaper2
+                      ? 'Edexcel Paper 2 &bull; Primary Disciplinary Evidence Enquiry'
+                      : isKs3
+                        ? 'KS3 Primary Source Enquiry'
+                        : isKs2
+                          ? 'Key Stage 2 Historian Enquiry'
+                          : 'GCSE Source Utility Enquiry [8 Marks]');
 
               return `
                 <details class="source-enquiry-reveal edexcel-paper3-utility-card">
@@ -7052,30 +7002,22 @@ export function renderLesson(lesson) {
             '10px',
           );
 
-          const visualEnquiryHtml = utilityCardHtml
-            ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 14px;">${utilityCardHtml}</div>`
+          const inlineEnquiryHtml = utilityCardHtml
+            ? `<div class="archival-source-inline-enquiry" style="width: 100%; margin-top: 6px;">${utilityCardHtml}</div>`
             : !hasUtilityCard && (primaryDisc.promptHtml || primaryDisc.panelHtml)
-              ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 14px;">${primaryDisc.promptHtml || ''}${primaryDisc.panelHtml || ''}</div>`
+              ? `<div class="archival-source-inline-enquiry" style="width: 100%; margin-top: 6px;">${primaryDisc.promptHtml || ''}${primaryDisc.panelHtml || ''}</div>`
               : '';
 
           sourceBodyHtml = `
-            <div class="archival-source-split-layout" style="margin-bottom: ${visualEnquiryHtml ? '12px' : '0'};">
+            <div class="archival-source-split-layout" style="margin-bottom: 0;">
               ${mediaColHtml}
-              <div class="archival-source-details-col" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
-                ${rawSource.caption
-              ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 2px; font-style: italic;">${rawSource.caption}</div>`
-              : ''
-            }
+              <div class="archival-source-details-col" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 8px;">
+                ${(() => {
+                  const cap = rawSource.caption || (rawSource.title ? rawSource.title.replace(/^Source\s+[A-Z0-9]+[:\s-]*/i, '').trim() : '') || rawSource.attribution || '';
+                  return cap ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 2px; font-style: italic; line-height: 1.5;">${cap}</div>` : '';
+                })()}
                 ${sourceText
               ? renderArchivalSourceBody(sourceText, rawSource, { maxHeight: '250px', fontSize: '0.95rem', lineHeight: '1.6', padding: '10px 14px', marginBottom: '4px', accentColor: '#1e3a8a' })
-              : ''
-            }
-                ${!visualEnquiryHtml && cleanContextVal
-              ? `
-                  <div style="background: #f8fafc; border-left: 4px solid #64748b; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 4px; color: #334155; font-size: 0.95rem; line-height: 1.55;">
-                    <strong>${isKs2 ? 'What this tells us:' : 'Historical Context:'}</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(cleanContextVal) : cleanContextVal}
-                  </div>
-                `
               : ''
             }
                 ${rawSource.provenance_clue
@@ -7087,29 +7029,31 @@ export function renderLesson(lesson) {
                 `
               : ''
             }
+                ${inlineEnquiryHtml}
               </div>
             </div>
-            ${visualEnquiryHtml}
           `;
         }
 
         const isAccordionUnit = true;
 
         if (isAccordionUnit) {
-          const sLetterMatch = (rawSource.title || '').match(/Source\s+([A-Z0-9]+)/i);
-          const sLetter = sLetterMatch ? sLetterMatch[1].toUpperCase() : '';
+          const sLetter = bLetter;
           const displayTitle = rawSource.title
-            ? rawSource.title.replace(/^Source\s+[A-Z0-9]+[:\s-]*/i, '').trim()
+            ? rawSource.title.replace(/^(?:Source|Map|Diagram)\s+[A-Z0-9]+[:\s-]*/i, '').trim()
             : rawSource.caption || 'Archival Primary Record';
 
           return `
-            <details class="cme-source-drawer medicine-source-drawer eee-source-drawer weimar-source-drawer archival-drawer gcse-source-container archival-source-box" ${bCardIdAttr} style="margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
+            <details class="cme-source-drawer medicine-source-drawer eee-source-drawer weimar-source-drawer usa-source-drawer cold-war-source-drawer gcse-source-drawer archival-drawer gcse-source-container archival-source-box" ${bCardIdAttr} style="margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
               <summary style="padding: 6px 12px; min-height: 38px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
                 <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; margin-right: 12px;">
                   <span class="archival-meta-tag" style="background: #1e40af; color: #ffffff; padding: 2px 7px; border-radius: 4px; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">${sLetter ? `SOURCE ${sLetter}` : 'ARCHIVAL EVIDENCE'}</span>
                   <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.85rem; color: #1e293b; font-weight: 700; line-height: 1.35;">${displayTitle}</span>
                 </div>
                 <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+                  <button type="button" class="source-to-narrative-jump-btn" onclick="event.stopPropagation(); if(window.jumpToNarrativeBlock){window.jumpToNarrativeBlock(${stageNum});}" title="Jump back to Stage ${stageNum} Narrative" style="background: rgba(2, 132, 199, 0.12); border: 1px solid rgba(56, 189, 248, 0.4); color: #0284c7; font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 800; padding: 2px 7px; border-radius: 4px; cursor: pointer; align-items: center; gap: 4px; transition: all 0.15s ease;">
+                    <i class="fa-solid fa-arrow-turn-up"></i> Stage ${stageNum} Narrative
+                  </button>
                   <span class="drawer-toggle-indicator" style="cursor: pointer;">
                     <span class="drawer-state-expand">View Source</span><span class="drawer-state-collapse">Close</span> <span class="drawer-caret">&#9660;</span>
                   </span>
@@ -7117,6 +7061,11 @@ export function renderLesson(lesson) {
               </summary>
               <div class="cme-source-content" style="padding: 18px; background: #ffffff; border-top: 1px solid #e2e8f0;">
                 ${sourceBodyHtml}
+                <div class="source-drawer-bottom-bar" style="display: flex; justify-content: flex-end; margin-top: 14px; padding-top: 10px; border-top: 1px solid #f1f5f9;">
+                  <button type="button" class="source-return-btn" onclick="if(window.jumpToNarrativeBlock){window.jumpToNarrativeBlock(${stageNum});}" title="Return to Stage ${stageNum} Narrative" style="background: #f8fafc; border: 1px solid #cbd5e1; color: #0284c7; font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease;">
+                    <i class="fa-solid fa-arrow-turn-up"></i> Return to Stage ${stageNum} Narrative
+                  </button>
+                </div>
               </div>
             </details>
           `;
@@ -7131,12 +7080,30 @@ export function renderLesson(lesson) {
       };
 
       const rawSourcesList = [];
+      const mergeWithLessonSource = (src) => {
+        if (!src || !lesson || !Array.isArray(lesson.sources)) return src;
+        const matched = lesson.sources.find(
+          (ls) => (src.id && ls.id === src.id) || (src.letter && ls.letter === src.letter)
+        );
+        if (!matched) return src;
+        return {
+          ...matched,
+          ...src,
+          text: src.text || matched.text || '',
+          content: src.content || matched.content || '',
+          caption: src.caption || matched.caption || '',
+          attribution: src.attribution || matched.attribution || '',
+          citation: src.citation || matched.citation || '',
+          source_context: src.source_context || matched.source_context || '',
+        };
+      };
+
       if (Array.isArray(block.sources)) {
-        rawSourcesList.push(...block.sources);
+        rawSourcesList.push(...block.sources.map(mergeWithLessonSource));
       } else if (Array.isArray(block.source)) {
-        rawSourcesList.push(...block.source);
+        rawSourcesList.push(...block.source.map(mergeWithLessonSource));
       } else if (block.source) {
-        rawSourcesList.push(block.source);
+        rawSourcesList.push(mergeWithLessonSource(block.source));
       } else if (block.archival_source) {
         rawSourcesList.push({
           type: 'written',
@@ -7191,8 +7158,6 @@ export function renderLesson(lesson) {
       const hasPureVisual = Boolean(block.image && !block.image_context);
       const isReversed = hasPureVisual ? visualPlateCounter++ % 2 === 1 : index % 2 === 1;
 
-      const stageObj = matchedStage;
-      const stageNum = stageObj ? (stageObj.step || index + 1) : index + 1;
       const stageQ = stageObj ? (stageObj.question || '') : '';
       const matchingLetter = ['A', 'B', 'C', 'D', 'E'][index];
       const isFiveBlockUnit = [
@@ -9072,7 +9037,7 @@ export function renderLesson(lesson) {
                   ${clueBtn}
                   ${task.starter ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-starter" title="Sentence Starter" data-action="toggle-element" data-target-id="starter-${tIdx}"><i class="fa-solid fa-pen"></i></button>` : ''}
                   ${task.clue ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-clue" title="Clue" data-action="toggle-element" data-target-id="clue-${tIdx}"><i class="fa-solid fa-lightbulb"></i></button>` : ''}
-                  ${task.model || task.model_answer || task.answer ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="model-${tIdx}"><i class="fa-solid fa-check-double"></i></button>` : ''}
+                  ${task.model || task.model_answer || task.answer ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="model-${tIdx}"><i class="fa-solid fa-eye"></i></button>` : ''}
                 </span>
               </div>
               <textarea class="student-answer-input" placeholder="Write your response here..." oninput="window.updateProgress()"></textarea>
@@ -9397,6 +9362,9 @@ export function renderLesson(lesson) {
           return `Question 1: Feature Drills [4 marks]<br><div style="font-size: 0.98rem; font-weight: 600; color: #1e293b; margin-top: 8px;">${typeof formatBold !== 'undefined' ? formatBold(cleanStr) : cleanStr}</div>`;
         }
 
+        // Clean redundant trailing mark tags (e.g. ". [4 marks]. (4 marks)")
+        str = str.replace(/(?:\s*[\.\,]?\s*(?:\[\s*\d+\s*marks?\s*\]|\(\s*\d+\s*marks?\s*\)))+\s*$/gi, '');
+
         if (/^(?:Q?\d+[\.:\s]+)*3\s*\(([a-d])\)[\.:\s]*/i.test(str)) {
           str = str.replace(/^(?:Q?\d+[\.:\s]+)*3\s*\(([a-d])\)[\.:\s]*/i, 'Q3($1). ');
         } else if (/^(?:Q?\d+[\.:\s]+)*1\s*\(([a-b])\)[\.:\s]*/i.test(str)) {
@@ -9407,6 +9375,12 @@ export function renderLesson(lesson) {
           });
         } else if (!/^(Q\d|Question\s+\d)/i.test(str)) {
           str = `Q${fallbackIdx + 1}. ${str}`;
+        }
+
+        // Append clean standardized mark tag if not present
+        if (!/\[\s*\d+\s*marks?\s*\]/i.test(str) && !/\(\s*\d+\s*marks?\s*\)/i.test(str)) {
+          const marksVal = qObj?.marks || (qTariff.includes('4 mark') ? 4 : (qTariff.includes('8 mark') ? 8 : (qTariff.includes('12') ? 12 : (qTariff.includes('16') ? 16 : null))));
+          if (marksVal) str = `${str} [${marksVal} marks]`;
         }
         str = str.replace(/\n/g, '<br>');
         return typeof formatBold !== 'undefined' ? formatBold(str) : str;
@@ -9641,6 +9615,33 @@ export function renderLesson(lesson) {
       };
 
       const renderQuestion = (q, qIdx) => {
+        const qText = (q.question || '').toLowerCase();
+        const qTariff = (q.tariff || '').toLowerCase();
+        const qType = (q.type || '').toLowerCase();
+
+        const isConsequence =
+          !isPaper3Weimar &&
+          !qTariff.includes('8 mark') &&
+          !qTariff.includes('12 mark') &&
+          !qTariff.includes('16 mark') &&
+          !qType.includes('utility') &&
+          !qType.includes('causation') &&
+          !qType.includes('verdict') &&
+          !qText.includes('how useful') &&
+          !qText.includes('infer') &&
+          !qText.includes('3(a)') &&
+          !qText.includes('3(b)') &&
+          !qText.includes('3(c)') &&
+          !qText.includes('3(d)') &&
+          (qType.includes('consequence') ||
+            qType === 'consequence_4m' ||
+            /explain\s+(?:one\s+|two\s+)?consequences?/i.test(qText));
+
+        const isSpoilerPrompt =
+          (q.prompt || '').includes('Point (') ||
+          (q.prompt || '').includes('Fact (') ||
+          isConsequence;
+
         let scaffoldHtml = '';
         if (q.scaffolding) {
           const sc = q.scaffolding;
@@ -9707,6 +9708,7 @@ export function renderLesson(lesson) {
 
           const hasDetailedScaffold = !!(
             sc.guidance ||
+            (isSpoilerPrompt && q.prompt) ||
             (sc.steps && sc.steps.length > 0) ||
             (sc.sentence_starters && sc.sentence_starters.length > 0) ||
             (sc.connectives_bank && sc.connectives_bank.length > 0) ||
@@ -9717,9 +9719,14 @@ export function renderLesson(lesson) {
           scaffoldHtml = `
             <div style="margin: 12px 0 16px 0;">
               <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+                ${isConsequence
+                  ? ''
+                  : `
                 <span style="background: #eff6ff; border: 1px solid #93c5fd; color: #1e40af; font-size: 0.85rem; font-weight: 700; padding: 4px 10px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 0.5px;">
                   <i class="fa-solid fa-layer-group" style="margin-right: 6px;"></i> ${sc.acronym || 'PEE/PEEL Structure Strip'}
                 </span>
+                `
+                }
                 ${hasDetailedScaffold
               ? `
                 <button class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ep-scaffold-${qIdx}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600;">
@@ -9736,6 +9743,7 @@ export function renderLesson(lesson) {
                   <i class="fa-solid fa-sitemap" style="color: #3b82f6;"></i> ${sc.acronym_title || 'Exam Technique Formula'}
                 </div>
                 ${sc.guidance ? `<p style="font-size: 0.9rem; color: #475569; margin: 0 0 12px 0; font-style: italic;">${sc.guidance}</p>` : ''}
+                ${isSpoilerPrompt && q.prompt ? `<div style="font-size: 0.88rem; color: #334155; margin: 0 0 12px 0; background: #ffffff; border: 1px solid #cbd5e1; border-left: 3px solid #64748b; padding: 8px 12px; border-radius: 4px;"><strong><i class="fa-solid fa-circle-info" style="color: #3b82f6;"></i> Guidance:</strong> ${q.prompt}</div>` : ''}
                 ${stepsHtml}
                 ${startersHtml}
                 ${connectivesHtml}
@@ -9748,28 +9756,6 @@ export function renderLesson(lesson) {
             </div>
           `;
         }
-
-        const qText = (q.question || '').toLowerCase();
-        const qTariff = (q.tariff || '').toLowerCase();
-        const qType = (q.type || '').toLowerCase();
-
-        const isConsequence =
-          !isPaper3Weimar &&
-          !qTariff.includes('8 mark') &&
-          !qTariff.includes('12 mark') &&
-          !qTariff.includes('16 mark') &&
-          !qType.includes('utility') &&
-          !qType.includes('causation') &&
-          !qType.includes('verdict') &&
-          !qText.includes('how useful') &&
-          !qText.includes('infer') &&
-          !qText.includes('3(a)') &&
-          !qText.includes('3(b)') &&
-          !qText.includes('3(c)') &&
-          !qText.includes('3(d)') &&
-          (qType.includes('consequence') ||
-            qType === 'consequence_4m' ||
-            /explain\s+(?:one\s+|two\s+)?consequences?/i.test(qText));
 
         const isInference =
           qText.includes('infer') ||
@@ -9804,6 +9790,22 @@ export function renderLesson(lesson) {
             qText.includes('narrative account') ||
             /\bnarrative account\b/i.test(qText));
 
+        const isCausation12 =
+          !isConsequence &&
+          !isImportance &&
+          !isNarrative &&
+          (qType.includes('causation') ||
+            qType.includes('explain_why') ||
+            qTariff.includes('12 mark') ||
+            qType.includes('12m') ||
+            /explain why/i.test(q.question || ''));
+
+        const isVerdict16 =
+          qType.includes('verdict') ||
+          qTariff.includes('16 mark') ||
+          qType.includes('16m') ||
+          /how far do you agree with interpretation/i.test(q.question || '');
+
         const isUtility =
           !isConsequence &&
           !isFeatures &&
@@ -9813,6 +9815,8 @@ export function renderLesson(lesson) {
           !isFollowUp &&
           !isImportance &&
           !isNarrative &&
+          !isCausation12 &&
+          !isVerdict16 &&
           (qType.includes('utility') ||
             qText.includes('how useful') ||
             qText.includes('source utility') ||
@@ -9833,6 +9837,18 @@ export function renderLesson(lesson) {
                 <div><strong>Evidence (Historical Detail):</strong> <em>"Specifically, [names, dates, treaties, or figures]..."</em> (Deploy precise factual proof)</div>
                 <span style="background: #0284c7; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">E</span>
                 <div><strong>Explanation (Causal Impact):</strong> <em>"This resulted in... / Consequently, this led to..."</em> (Explain the ongoing historical effect)</div>
+                <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #e0f2fe; border-left: 3px solid #0284c7; border-radius: 4px; font-size: 0.8rem; color: #0369a1; font-weight: 600;">
+                  <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip:</strong> Only write ONE consequence. Explaining two separate consequences wastes time and gains zero extra marks.
+                </div>
+                ${
+                  q.examiner_tip
+                    ? `
+                  <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
+                    <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                  </div>
+                `
+                    : ''
+                }
               </div>
             </div>
           `;
@@ -9848,6 +9864,18 @@ export function renderLesson(lesson) {
                 <div><strong>Aspect 1 (Direct Impact &amp; Cause) [4m]:</strong> <em>"One key reason [Event] was important for [Outcome] was that..."</em> (Deploy precise factual evidence and explain the direct mechanism of change)</div>
                 <span style="background: #059669; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">A2</span>
                 <div><strong>Aspect 2 (Long-Term / Broader Impact) [4m]:</strong> <em>"Furthermore, [Event] was decisive for [Outcome] because..."</em> (Explain a second distinct causal development or long-term consequence)</div>
+                <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #d1fae5; border-left: 3px solid #059669; border-radius: 4px; font-size: 0.8rem; color: #065f46; font-weight: 600;">
+                  <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip:</strong> Zero marks are awarded for introductions or conclusions. Dive straight into 2 distinct paragraphs explaining what difference X made to Y.
+                </div>
+                ${
+                  q.examiner_tip
+                    ? `
+                  <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
+                    <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                  </div>
+                `
+                    : ''
+                }
               </div>
             </div>
           `;
@@ -9865,6 +9893,81 @@ export function renderLesson(lesson) {
                 <div><strong>Development / Causal Link [3–4m]:</strong> <em>"This directly led to..."</em> (Use chronological connectives to bridge to the next turning point)</div>
                 <span style="background: #b45309; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">N3</span>
                 <div><strong>Outcome / Consequence [2–3m]:</strong> <em>"Consequently, the decisive result was..."</em> (Explain the final outcome and its immediate consequence)</div>
+                <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #fef3c7; border-left: 3px solid #b45309; border-radius: 4px; font-size: 0.8rem; color: #92400e; font-weight: 600;">
+                  <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip:</strong> Do not just tell a descriptive story. You must cover at least 3 chronological phases and use explicit causal bridges to link them.
+                </div>
+                ${
+                  q.examiner_tip
+                    ? `
+                  <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
+                    <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                  </div>
+                `
+                    : ''
+                }
+              </div>
+            </div>
+          `;
+        } else if (isCausation12) {
+          const causationPaperLabel = unitId === 'edexcel_medicine' ? 'Paper 1 Q4' : unitId === 'eee' ? 'Paper 2 Q2' : 'Paper 3 Q2';
+          stampHtml = `
+            <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #0369a1; border-radius: 8px; background: #f0f9ff; padding: 12px 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1.5px solid #bae6fd; padding-bottom: 6px;">
+                <span style="font-weight: 800; font-size: 0.92rem; color: #075985; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-sitemap" style="margin-right: 6px;"></i> Edexcel 12-Mark Causation PEEL Structure Strip (${causationPaperLabel})</span>
+                <span style="background: #0284c7; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[12 marks &bull; 15 mins]</span>
+              </div>
+              <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
+                <span style="background: #0284c7; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">P1</span>
+                <div><strong>Aspect 1 (Content &amp; Cause 1) [PEEL]:</strong> Point stating cause &bull; Specific historical evidence (names, dates, data) &bull; Explanation of mechanism &bull; Link directly back to question stem.</div>
+                <span style="background: #0284c7; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">P2</span>
+                <div><strong>Aspect 2 (Content &amp; Cause 2) [PEEL]:</strong> Second distinct historical cause with precise own knowledge, analysing how it generated change.</div>
+                <span style="background: #0284c7; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">P3</span>
+                <div><strong>Aspect 3 (Content &amp; Cause 3) [PEEL]:</strong> Third distinct historical aspect (crucial ceiling requirement to access Level 4!).</div>
+                <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #e0f2fe; border-left: 3px solid #0284c7; border-radius: 4px; font-size: 0.8rem; color: #0369a1; font-weight: 600;">
+                  <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip (The 3 Aspects Rule):</strong> You MUST cover at least 3 distinct aspects of content to access Level 4 (10–12 marks). Answers with only 2 aspects are capped at 8 marks. Causes do NOT need to be prioritized or linked together, and zero marks are awarded for intros/conclusions!
+                </div>
+                ${
+                  q.examiner_tip
+                    ? `
+                  <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
+                    <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                  </div>
+                `
+                    : ''
+                }
+              </div>
+            </div>
+          `;
+        } else if (isVerdict16) {
+          const isThematicEssay = unitId === 'edexcel_medicine' || unitId === 'eee';
+          const verdictPaperLabel = unitId === 'edexcel_medicine' ? 'Paper 1 Q5/Q6' : unitId === 'eee' ? 'Paper 2 Q3/Q4' : 'Paper 3 Q3d';
+          stampHtml = `
+            <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #7c3aed; border-radius: 8px; background: #faf5ff; padding: 12px 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1.5px solid #e9d5ff; padding-bottom: 6px;">
+                <span style="font-weight: 800; font-size: 0.92rem; color: #6b21a8; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-scale-unbalanced-flip" style="margin-right: 6px;"></i> Edexcel 16-Mark Evaluative Verdict Structure Strip (${verdictPaperLabel})</span>
+                <span style="background: #7c3aed; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[${unitId === 'eee' ? '16 marks' : '16+4 SPaG'} &bull; 25 mins]</span>
+              </div>
+              <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
+                <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V1</span>
+                <div><strong>Interpretation 2 (Core Focus):</strong> Evaluate the named interpretation’s claim, citing specific details from the extract and deploying precise contextual knowledge to test its validity.</div>
+                <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V2</span>
+                <div><strong>Interpretation 1 (Counter-Perspective):</strong> Evaluate the alternative interpretation, deploying supporting evidence from the text and precise contextual knowledge to provide balance.</div>
+                <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V3</span>
+                <div><strong>How Views Are Conveyed (Level 4 Key):</strong> Analyse <em>how</em> the authors convey different views through tone, emphasis, or selection of historical evidence.</div>
+                <span style="background: #7c3aed; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">V4</span>
+                <div><strong>Substantiated Historical Verdict:</strong> Provide a sustained overall judgement based on reasoned criteria (e.g. short-term vs long-term, scale of impact). Deploy specialist terminology for the full 4 marks SPaG.</div>
+                <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #f3e8ff; border-left: 3px solid #7c3aed; border-radius: 4px; font-size: 0.8rem; color: #6b21a8; font-weight: 600;">
+                  <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip (Level 4 Discriminator):</strong> Top marks require explicitly showing <em>how</em> the different views are conveyed (tone/language/selection). Use specialist vocabulary (e.g. <em>hyperinflation, putsch, Reichstag, segregation</em>) to secure 4/4 SPaG.
+                </div>
+                ${
+                  q.examiner_tip
+                    ? `
+                  <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
+                    <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                  </div>
+                `
+                    : ''
+                }
               </div>
             </div>
           `;
@@ -9877,11 +9980,23 @@ export function renderLesson(lesson) {
               </div>
               <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
                 <span style="background: #8b5cf6; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">D</span>
-                <div><strong>Identify Main Difference [1–2m]:</strong> <em>"The main difference between Interpretation 1 and Interpretation 2 is that Interpretation 1 suggests [View X], whereas Interpretation 2 suggests [View Y]..."</em></div>
+                <div><strong>Identify Main Difference [1–2m]:</strong> <em>"The main difference between Interpretation 1 and Interpretation 2 is that Interpretation 1 suggests [Overall Focus/View X], whereas Interpretation 2 emphasizes [Overall Focus/View Y]..."</em></div>
                 <span style="background: #8b5cf6; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">I1</span>
                 <div><strong>Evidence from Interpretation 1 [1m]:</strong> <em>"Interpretation 1 supports this by stating that '[Quote or detail 1]'..."</em></div>
                 <span style="background: #8b5cf6; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">I2</span>
                 <div><strong>Evidence from Interpretation 2 [1m]:</strong> <em>"In contrast, Interpretation 2 states that '[Quote or detail 2]'..."</em></div>
+                <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #ede9fe; border-left: 3px solid #8b5cf6; border-radius: 4px; font-size: 0.8rem; color: #6d28d9; font-weight: 600;">
+                  <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip:</strong> Marked by Level of Response, not points. Identify the overall difference of view/attitude/focus, not just surface factual quotes.
+                </div>
+                ${
+                  q.examiner_tip
+                    ? `
+                  <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
+                    <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                  </div>
+                `
+                    : ''
+                }
               </div>
             </div>
           `;
@@ -9897,6 +10012,18 @@ export function renderLesson(lesson) {
                 <div><strong>Identify Valid Reason [1–2m]:</strong> <em>"One reason why Interpretations 1 and 2 give different views is that the historians have used different sources / focused on different aspects [such as X vs Y]..."</em></div>
                 <span style="background: #8b5cf6; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">E</span>
                 <div><strong>Explain with Context &amp; Sources [3–4m]:</strong> <em>"Interpretation 1 draws upon [Source/Context] showing that..., whereas Interpretation 2 emphasizes [Source/Context] because..."</em></div>
+                <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #ede9fe; border-left: 3px solid #8b5cf6; border-radius: 4px; font-size: 0.8rem; color: #6d28d9; font-weight: 600;">
+                  <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip (Level 2 Key):</strong> Suggest ONE reason based on the historians' research process (e.g. author of Interp 1 gave weight to Source B, while author of Interp 2 gave weight to Source C). To score Level 2 (3–4 marks), you MUST show which specific details from the sources support each interpretation. Do NOT repeat 3(b) and do NOT evaluate the reliability or dates of the historians!
+                </div>
+                ${
+                  q.examiner_tip
+                    ? `
+                  <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
+                    <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                  </div>
+                `
+                    : ''
+                }
               </div>
             </div>
           `;
@@ -9909,9 +10036,21 @@ export function renderLesson(lesson) {
               </div>
               <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
                 <span style="background: #059669; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">I1</span>
-                <div><strong>Inference 1 [2 Marks]:</strong> <em>"What I can infer from Source A is [clear deduction]..."</em> [1m] + <em>"Details in the source that tell me this are '[Quote or specific detail]'..."</em> [1m]</div>
+                <div><strong>Inference 1 [2 Marks]:</strong> <em>"What I can infer from Source A is [clear active deduction]..."</em> [1m] + <em>"Details in the source that tell me this are '[Quote or specific detail]'..."</em> [1m]</div>
                 <span style="background: #059669; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">I2</span>
-                <div><strong>Inference 2 [2 Marks]:</strong> <em>"Another thing I can infer from Source A is [second deduction]..."</em> [1m] + <em>"Details in the source that tell me this are '[Different quote or detail]'..."</em> [1m]</div>
+                <div><strong>Inference 2 [2 Marks]:</strong> <em>"Another thing I can infer from Source A is [second distinct deduction]..."</em> [1m] + <em>"Details in the source that tell me this are '[Different quote or detail]'..."</em> [1m]</div>
+                <div style="grid-column: 1 / -1; margin-top: 6px; padding: 6px 10px; background: #d1fae5; border-left: 3px solid #059669; border-radius: 4px; font-size: 0.8rem; color: #065f46; font-weight: 600;">
+                  <i class="fa-solid fa-lightbulb"></i> <strong>Examiner Tip (Avoid the 'Dealt vs. Felt' Trap):</strong> Answers stating how opponents <em>felt</em> (e.g. scared, intimidated) score 0. Focus strictly on what authorities <em>did</em> to deal with opposition. Avoid literal lifts (e.g. 'came for'); use active analytical words ('targeted', 'eliminated', 'suppressed').
+                </div>
+                ${
+                  q.examiner_tip
+                    ? `
+                  <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
+                    <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                  </div>
+                `
+                    : ''
+                }
               </div>
             </div>
           `;
@@ -9953,30 +10092,211 @@ export function renderLesson(lesson) {
           stampHtml = `
             <div class="edexcel-peel-stamp" style="margin: 10px 0 16px 0; border: 2px solid #2563eb; border-radius: 8px; background: #eff6ff; padding: 12px 16px;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; border-bottom: 1.5px solid #bfdbfe; padding-bottom: 6px;">
-                <span style="font-weight: 800; font-size: 0.92rem; color: #1e40af; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-magnifying-glass-chart" style="margin-right: 6px;"></i> Edexcel 8-Mark Source Utility Structure Strip (Paper 1 Q2a)</span>
-                <span style="background: #2563eb; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[8 marks &bull; 12 mins]</span>
+                <span style="font-weight: 800; font-size: 0.92rem; color: #1e40af; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-magnifying-glass-chart" style="margin-right: 6px;"></i> Edexcel 8-Mark Source Utility Structure Strip (Paper 1 Q2a &amp; Paper 3 Q3a)</span>
+                <span style="background: #2563eb; color: white; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 12px;">[8 marks &bull; 10–12 mins &bull; ~180–195 words]</span>
               </div>
               <div style="display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 0.88rem; line-height: 1.4; color: #0f172a;">
                 <span style="background: #2563eb; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">U1</span>
-                <div><strong>Content &amp; Utility:</strong> <em>"Source A is useful for investigating [topic] because it reveals that..."</em> (Quote specific details and corroborate with factual knowledge)</div>
+                <div><strong>Paragraph 1: Source B Dual-Anchor Evaluation (~90 words):</strong><br>
+                  &bull; <strong>Quote 1 (Content):</strong> <em>"Source B is useful for investigating [enquiry] because it highlights/shows that '[Quote 1]'..."</em><br>
+                  &bull; <strong>Contextual Knowledge Validation:</strong> Deploy precise factual evidence to validate or substantiate the claim.<br>
+                  &bull; <strong>Quote 2 + 1-Aspect NOP:</strong> Bridge using <em>"'[Quote 2]' demonstrates the author's purpose/perspective, as it was produced by..."</em> (Evaluate ONE aspect of author or purpose and show <em>how</em> it affects usefulness).
+                </div>
                 <span style="background: #2563eb; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">U2</span>
-                <div><strong>Provenance &amp; Motive:</strong> <em>"The utility of Source A is influenced by its provenance, as it was produced by..."</em> (Evaluate author, date, purpose, and contemporary audience)</div>
-                <span style="background: #2563eb; color: white; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-family: monospace; text-align: center; height: fit-content;">U3</span>
-                <div><strong>Contextual Limitation:</strong> <em>"However, Source A is limited because it omits..."</em> (Deploy precise own knowledge to explain what key developments are missing)</div>
+                <div><strong>Paragraph 2: Source C Dual-Anchor Evaluation (~90 words):</strong><br>
+                  &bull; <strong>Quote 1 (Content):</strong> <em>"Source C is equally useful because it reveals that '[Quote 1]'..."</em><br>
+                  &bull; <strong>Contextual Knowledge Validation:</strong> Substantiate with precise historical facts.<br>
+                  &bull; <strong>Quote 2 + 1-Aspect NOP:</strong> Bridge using <em>"'[Quote 2]' reflects the author's perspective/aim, as it was..."</em> (Evaluate ONE aspect of author or purpose).
+                </div>
+                <div style="grid-column: 1 / -1; margin-top: 6px; padding: 8px 12px; background: #dbeafe; border-left: 3px solid #2563eb; border-radius: 4px; font-size: 0.82rem; color: #1e40af; font-weight: 600; line-height: 1.45;">
+                  <i class="fa-solid fa-stopwatch"></i> <strong>The '2-Quote Dual Anchor' Rule (10–12 Mins Budget):</strong> Write exactly TWO short paragraphs (Source B, then Source C). Each paragraph weaves 2 direct quotes: Quote 1 anchors what the source literally says; Quote 2 bridges into your historical validation and ONE aspect of provenance (author or purpose). <strong>Zero marks for introductions, comparisons between sources, or conclusions!</strong>
+                </div>
+                ${
+                  q.examiner_tip
+                    ? `
+                  <div style="grid-column: 1 / -1; margin-top: 4px; padding: 6px 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px; font-size: 0.8rem; color: #9f1239; font-weight: 600;">
+                    <i class="fa-solid fa-triangle-exclamation"></i> <strong>Topic Trap Alert:</strong> ${q.examiner_tip}
+                  </div>
+                `
+                    : ''
+                }
               </div>
             </div>
           `;
         }
 
-        const promptHtml = q.prompt
-          ? `
+        const promptHtml =
+          q.prompt && !isSpoilerPrompt
+            ? `
           <div style="font-size: 0.95rem; color: #334155; margin-bottom: 12px; line-height: 1.5; background: #f8fafc; padding: 10px 14px; border-left: 3px solid #64748b; border-radius: 4px;">
             <strong><i class="fa-solid fa-circle-info" style="color: #3b82f6; margin-right: 6px;"></i> Guidance:</strong> ${q.prompt}
           </div>
         `
-          : '';
+            : '';
 
-        const modelAns = q.model || q.model_answer || '';
+        const modelAns =
+          q.model ||
+          q.model_answer ||
+          q.model_tiers?.tier_16m?.text ||
+          q.model_tiers?.tier_12m?.text ||
+          q.model_tiers?.tier_8m?.text ||
+          q.model_tiers?.tier_4m?.text ||
+          '';
+        let modelBoxHtml = '';
+
+        if (q.model_tiers) {
+          const tiers = q.model_tiers;
+          const tierKeys = Object.keys(tiers);
+          const defaultKey = tiers.tier_16m
+            ? 'tier_16m'
+            : tiers.tier_12m
+            ? 'tier_12m'
+            : tiers.tier_8m
+            ? 'tier_8m'
+            : tiers.tier_4m
+            ? 'tier_4m'
+            : tierKeys[0];
+
+          const tabButtonsHtml = tierKeys
+            .map((key) => {
+              const t = tiers[key];
+              const isActive = key === defaultKey;
+              const btnBg = isActive ? '#0f172a' : '#ffffff';
+              const btnColor = isActive ? '#ffffff' : '#334155';
+              const btnBorder = isActive ? '#0f172a' : '#cbd5e1';
+              const btnWeight = isActive ? '700' : '600';
+              const badgeIcon =
+                key === 'tier_4m' || key === 'tier_8m' || key === 'tier_12m' || key === 'tier_16m'
+                  ? 'fa-star'
+                  : key === 'tier_10m' || key === 'tier_20m'
+                  ? 'fa-rocket'
+                  : key === 'tier_5m' || key === 'tier_6m' || key === 'tier_9m'
+                  ? 'fa-list-check'
+                  : key === 'tier_2m' || key === 'tier_3m'
+                  ? 'fa-pen-to-square'
+                  : 'fa-lightbulb';
+              return `
+              <button type="button" class="btn model-tier-tab-btn ${isActive ? 'active' : ''}" data-action="switch-model-tier" data-target-tier="tier-${key}-${qIdx}" style="padding: 6px 12px; font-size: 0.8rem; font-weight: ${btnWeight}; border-radius: 6px; border: 1.5px solid ${btnBorder}; background: ${btnBg}; color: ${btnColor}; cursor: pointer; transition: all 0.15s ease; display: inline-flex; align-items: center; gap: 5px;">
+                <i class="fa-solid ${badgeIcon}"></i> ${t.title || key}
+              </button>
+            `;
+            })
+            .join('');
+
+          const panesHtml = tierKeys
+            .map((key) => {
+              const t = tiers[key];
+              const isActive = key === defaultKey;
+              const wordCount = (t.text || '').trim().split(/\s+/).filter(Boolean).length;
+
+              let themeBorder = '#cbd5e1';
+              let themeBadgeBg = '#e2e8f0';
+              let themeBadgeColor = '#334155';
+              let verdictBorder = '#94a3b8';
+              let verdictBg = '#f1f5f9';
+              let verdictColor = '#1e293b';
+
+              if (key === 'tier_1m') {
+                themeBorder = '#fed7aa';
+                themeBadgeBg = '#ffedd5';
+                themeBadgeColor = '#c2410c';
+                verdictBorder = '#f97316';
+                verdictBg = '#fffaf5';
+                verdictColor = '#9a3412';
+              } else if (key === 'tier_2m' || key === 'tier_3m') {
+                themeBorder = '#fef08a';
+                themeBadgeBg = '#fef9c3';
+                themeBadgeColor = '#854d0e';
+                verdictBorder = '#eab308';
+                verdictBg = '#fefce8';
+                verdictColor = '#713f12';
+              } else if (key === 'tier_5m' || key === 'tier_6m' || key === 'tier_9m') {
+                themeBorder = '#bae6fd';
+                themeBadgeBg = '#e0f2fe';
+                themeBadgeColor = '#0369a1';
+                verdictBorder = '#0284c7';
+                verdictBg = '#f0f9ff';
+                verdictColor = '#075985';
+              } else if (
+                key === 'tier_4m' ||
+                key === 'tier_8m' ||
+                key === 'tier_12m' ||
+                key === 'tier_16m'
+              ) {
+                themeBorder = '#bbf7d0';
+                themeBadgeBg = '#dcfce7';
+                themeBadgeColor = '#15803d';
+                verdictBorder = '#10b981';
+                verdictBg = '#f0fdf4';
+                verdictColor = '#065f46';
+              } else if (key === 'tier_10m' || key === 'tier_20m') {
+                themeBorder = '#e9d5ff';
+                themeBadgeBg = '#f3e8ff';
+                themeBadgeColor = '#7e22ce';
+                verdictBorder = '#a855f7';
+                verdictBg = '#faf5ff';
+                verdictColor = '#581c87';
+              }
+
+              return `
+              <div id="tier-${key}-${qIdx}" class="model-tier-pane" style="display: ${isActive ? 'block' : 'none'};">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid ${themeBorder};">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="background: ${themeBadgeBg}; color: ${themeBadgeColor}; font-weight: 800; font-size: 0.78rem; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.5px; text-transform: uppercase;">
+                      ${t.score || t.level}
+                    </span>
+                    <span style="font-size: 0.8rem; font-weight: 600; color: #64748b;">
+                      ${t.level || ''}
+                    </span>
+                  </div>
+                  <span style="font-size: 0.78rem; font-weight: 700; color: #64748b; background: #ffffff; padding: 2px 8px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                    ${wordCount} words
+                  </span>
+                </div>
+                <div style="font-size: 0.98rem; line-height: 1.6; color: #0f172a; margin-bottom: 12px;">
+                  ${typeof formatBold !== 'undefined' ? formatBold(t.text) : t.text}
+                </div>
+                ${
+                  t.verdict
+                    ? `
+                  <div style="background: ${verdictBg}; border-left: 3.5px solid ${verdictBorder}; padding: 10px 14px; border-radius: 0 6px 6px 0; font-size: 0.86rem; line-height: 1.5; color: ${verdictColor};">
+                    <strong style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.4px;">
+                      <i class="fa-solid fa-clipboard-check"></i> 2026 Pearson Examiner Verdict:
+                    </strong>
+                    <div>${typeof formatBold !== 'undefined' ? formatBold(t.verdict) : t.verdict}</div>
+                  </div>
+                `
+                    : ''
+                }
+              </div>
+            `;
+            })
+            .join('');
+
+          modelBoxHtml = `
+            <div id="ep-model-${qIdx}" class="scaffold-box model-box model-tier-container" style="display:none; margin-top: 15px; background: #ffffff; border: 1.5px solid #10b981; border-radius: 10px; padding: 16px; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.08);">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+                <span style="font-weight: 800; font-size: 0.82rem; color: #065f46; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
+                  <i class="fa-solid fa-scale-balanced" style="color: #10b981;"></i> Pearson Edexcel 4-Tier Examiner Ladder
+                </span>
+                <span style="font-size: 0.74rem; font-weight: 600; color: #64748b;">
+                  Toggle rungs to analyze mark boundaries
+                </span>
+              </div>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 5px; border-radius: 8px;">
+                ${tabButtonsHtml}
+              </div>
+              ${panesHtml}
+            </div>
+          `;
+        } else if (modelAns) {
+          modelBoxHtml = `
+            <div id="ep-model-${qIdx}" class="scaffold-box model-box" style="display:none; margin-top: 15px;">
+              ${typeof formatBold !== 'undefined' ? formatBold(modelAns) : modelAns}
+            </div>
+          `;
+        }
+
         const wbMeta = getWorkbookTaskMeta(unitId, lesson?.id, q, q.question, qIdx, lesson);
         let wbBadgeHtml = '';
         let wbNoticeHtml = '';
@@ -10028,7 +10348,7 @@ export function renderLesson(lesson) {
             <div style="font-weight: 700; margin-bottom: 12px; font-size: 1.1rem; color: #0f172a; line-height: 1.5;">
               ${formatExamQuestionTitle(q.question, qIdx, q)}
               <span style="display: inline-flex; vertical-align: middle; margin-left: 8px;">
-                ${modelAns ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="ep-model-${qIdx}"><i class="fa-solid fa-check-double"></i></button>` : ''}
+                ${modelAns ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="ep-model-${qIdx}"><i class="fa-solid fa-eye"></i></button>` : ''}
               </span>
             </div>
             ${wbNoticeHtml}
@@ -10037,7 +10357,7 @@ export function renderLesson(lesson) {
             ${promptHtml}
             ${scaffoldHtml}
             <textarea class="student-answer-input" placeholder="Write your response here..." oninput="window.updateProgress()"></textarea>
-            ${modelAns ? `<div id="ep-model-${qIdx}" class="scaffold-box model-box" style="display:none; margin-top: 15px;">${typeof formatBold !== 'undefined' ? formatBold(modelAns) : modelAns}</div>` : ''}
+            ${modelBoxHtml}
           </div>
         `;
       };
@@ -10074,14 +10394,14 @@ export function renderLesson(lesson) {
           const interpCardId = `interpretation-card-${interpNum}`;
 
           return `
-            <details class="cme-source-drawer weimar-source-drawer weimar-interpretation-drawer archival-drawer gcse-source-container archival-source-box" id="${interpCardId}" data-interpretation-num="${interpNum}" style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
+            <details class="cme-source-drawer weimar-source-drawer weimar-interpretation-drawer archival-drawer gcse-source-container archival-source-box" id="${interpCardId}" data-interpretation-num="${interpNum}" open style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
               <summary style="padding: 5px 12px; min-height: 40px; padding: 7px 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
                 <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                   <span class="archival-meta-tag" style="background: #9a3412; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2;">INTERPRETATION ${interpNum}</span>
                   <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.2;">${cleanInterpTitle || 'Historical View'}</span>
                 </div>
                 <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0;">
-                  Historiographical View &bull; Expand <span class="drawer-caret">&#9660;</span>
+                  Historiographical View &bull; Collapse/Expand <span class="drawer-caret">&#9660;</span>
                 </span>
               </summary>
               <div class="weimar-interpretation-content" style="padding: 18px; background: #ffffff; border-top: 1px solid #e2e8f0;">
@@ -10097,7 +10417,7 @@ export function renderLesson(lesson) {
           `;
         } else {
           const cleanSourceTitle = stimTitle.replace(/^Source\s+[A-Z0-9]+[:\s-]*/i, '').trim();
-          const sourceCardId = `source-card-${srcLetter}`;
+          const sourceCardId = `exam-source-card-${srcLetter}`;
           const stimImg =
             typeof stim === 'object' && stim !== null
               ? stim.image || stim.src || stim.image_url || stim.asset_path || ''
@@ -10113,14 +10433,14 @@ export function renderLesson(lesson) {
               : cleanSourceTitle || 'Contemporary Written Record';
 
           return `
-            <details class="cme-source-drawer weimar-source-drawer archival-drawer gcse-source-container archival-source-box" id="${sourceCardId}" data-source-letter="${srcLetter}" style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
+            <details class="cme-source-drawer weimar-source-drawer usa-source-drawer gcse-source-drawer exam-stimulus-drawer archival-drawer gcse-source-container archival-source-box" id="${sourceCardId}" data-source-letter="${srcLetter}" open style="margin: 6px 0; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
               <summary style="padding: 5px 12px; min-height: 40px; padding: 7px 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
                 <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                   <span class="archival-meta-tag" style="background: #1e40af; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2;">SOURCE ${srcLetter}</span>
                   <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.2;">${cleanSourceTitle || 'Archival Primary Record'}</span>
                 </div>
                 <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0;">
-                  Archival Evidence &bull; Expand <span class="drawer-caret">&#9660;</span>
+                  Archival Evidence &bull; Collapse/Expand <span class="drawer-caret">&#9660;</span>
                 </span>
               </summary>
               <div class="weimar-source-content" style="padding: 18px; background: #ffffff; border-top: 1px solid #e2e8f0;">
@@ -10366,7 +10686,7 @@ export function renderLesson(lesson) {
         <div class="phase-card">
           <div style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 20px;">
             <div class="phase-title" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">Extended Scholarship</div>
-            ${lesson.extended && (lesson.extended.model || lesson.extended.model_answer || lesson.extended.answer) ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="extended-model-${lesson.id}"><i class="fa-solid fa-check-double"></i> Reveal Model Answer</button>` : ''}
+            ${lesson.extended && (lesson.extended.model || lesson.extended.model_answer || lesson.extended.answer) ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="extended-model-${lesson.id}"><i class="fa-solid fa-eye"></i> Reveal Model Answer</button>` : ''}
           </div>
       `;
 
@@ -10735,7 +11055,7 @@ export function renderLesson(lesson) {
             <div style="font-weight: 700; margin-bottom: 12px; font-size: 1.1rem; color: #0f172a;">
               ${lesson.extended.qNum ? `Q${lesson.extended.qNum}. ` : ''}${formatQuestion(lesson.extended.question, !lesson.extended.qNum)}
               <span style="display: inline-flex; vertical-align: middle; gap: 6px;">
-                ${lesson.extended.model || lesson.extended.model_answer || lesson.extended.answer ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="extended-model-${lesson.id}"><i class="fa-solid fa-check-double"></i></button>` : ''}
+                ${lesson.extended.model || lesson.extended.model_answer || lesson.extended.answer ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="extended-model-${lesson.id}"><i class="fa-solid fa-eye"></i></button>` : ''}
                 ${lesson.extended.answer_image ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" title="Reveal Reference Map" data-action="toggle-element" data-target-id="extended-map-answer-${lesson.id}"><i class="fa-solid fa-map-location-dot"></i> Reveal Reference Map</button>` : ''}
                 ${lesson.extended.title && lesson.extended.title.toLowerCase().includes('map task') ? `<button class="btn btn-pedagogy btn-pedagogy-sm" style="background: #0284c7; color: #ffffff; border: 1px solid #0369a1;" title="Interactive Classroom Map" data-action="toggle-element" data-target-id="extended-map-interactive-${lesson.id}"><i class="fa-solid fa-earth-americas"></i> Interactive Classroom Map</button>` : ''}
               </span>
@@ -10924,7 +11244,7 @@ export function renderLesson(lesson) {
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
                   ${task.tariff ? `<span style="background: #1e3a8a; color: #ffffff; font-size: 0.76rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">${task.tariff}</span>` : ''}
                   <span style="display: inline-flex; vertical-align: middle;">
-                    ${taskModel ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="gcse-model-${tIdx}"><i class="fa-solid fa-check-double"></i></button>` : ''}
+                    ${taskModel ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="gcse-model-${tIdx}"><i class="fa-solid fa-eye"></i></button>` : ''}
                   </span>
                 </div>
                 <div style="font-weight: 700; margin-bottom: 10px; font-size: 1.05rem; color: #0f172a; line-height: 1.45;">
@@ -11009,7 +11329,7 @@ export function renderLesson(lesson) {
 
         const gcseModel = lesson.gcse_task.model || lesson.gcse_task.model_answer;
         if (gcseModel) {
-          gcseHtml += `<div style="margin-top: 15px;"><button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="gcse-model-src"><i class="fa-solid fa-check-double"></i> Reveal Model Answer</button></div>`;
+          gcseHtml += `<div style="margin-top: 15px;"><button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="gcse-model-src"><i class="fa-solid fa-eye"></i> Reveal Model Answer</button></div>`;
           gcseHtml += `<div id="gcse-model-src" class="scaffold-box model-box" style="display:none; margin-top: 15px;">${formatBold(gcseModel)}</div>`;
         }
       } else if (lesson.gcse_task.question || lesson.gcse_task.prompt) {
@@ -11190,7 +11510,7 @@ export function renderLesson(lesson) {
               ? `
               <div style="margin-top: 14px;">
                 <button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="${cardId}">
-                  <i class="fa-solid fa-check-double"></i> Reveal Examiner Model Answer
+                  <i class="fa-solid fa-eye"></i> Reveal Examiner Model Answer
                 </button>
                 <div id="${cardId}" class="scaffold-box model-box" style="display:none; margin-top: 14px; background: #f8fafc; border: 1.5px solid #94a3b8; border-radius: 8px; padding: 16px; font-size: 0.95rem; line-height: 1.6; color: #0f172a;">
                   <div style="font-weight: 800; color: #1e3a8a; margin-bottom: 8px; text-transform: uppercase; font-size: 0.82rem; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
@@ -11220,7 +11540,7 @@ export function renderLesson(lesson) {
               <div style="font-weight: 700; margin-bottom: 12px; font-size: 1.1rem; color: #0f172a;">
                 ${formatQuestion(task.text || task.question)}
                 <span style="display: inline-flex; vertical-align: middle;">
-                  ${task.model ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="extracted-model-${tIdx}"><i class="fa-solid fa-check-double"></i></button>` : ''}
+                  ${task.model ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-icon-only btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="extracted-model-${tIdx}"><i class="fa-solid fa-eye"></i></button>` : ''}
                 </span>
               </div>
               <textarea class="student-answer-input" style="min-height: 200px;" placeholder="Write your response here..." oninput="window.updateProgress()"></textarea>
@@ -11399,19 +11719,30 @@ export function renderLesson(lesson) {
       window.postRenderHooks = [];
     }
 
-    // Execute pending narrative block jump if set (e.g. from GCSE Do Now)
+    // Execute pending narrative block jump if set (e.g. from GCSE Do Now or URL param)
     try {
-      const pendingJump = sessionStorage.getItem('hh_pending_narrative_jump');
-      if (pendingJump) {
-        sessionStorage.removeItem('hh_pending_narrative_jump');
-        const parsed = JSON.parse(pendingJump);
-        if (parsed && parsed.stageNum) {
-          setTimeout(() => {
-            if (typeof window.jumpToNarrativeBlock === 'function') {
-              window.jumpToNarrativeBlock(parsed.stageNum);
-            }
-          }, 80);
+      let stageToJump = null;
+      if (typeof window !== 'undefined') {
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlStage = urlParams.get('stage');
+        if (urlStage) {
+          stageToJump = parseInt(urlStage, 10);
         }
+        const pendingJump = sessionStorage.getItem('hh_pending_narrative_jump');
+        if (pendingJump) {
+          sessionStorage.removeItem('hh_pending_narrative_jump');
+          const parsed = JSON.parse(pendingJump);
+          if (parsed && parsed.stageNum) {
+            stageToJump = parsed.stageNum;
+          }
+        }
+      }
+      if (stageToJump) {
+        setTimeout(() => {
+          if (typeof window.jumpToNarrativeBlock === 'function') {
+            window.jumpToNarrativeBlock(stageToJump);
+          }
+        }, 150);
       }
     } catch (e) {}
 
@@ -11980,9 +12311,7 @@ export function assignQuestionNumbers(lesson, targetUnitId) {
       : null);
 
   let globalQNum = 1;
-  const isGCSE = ['cme_new', 'edexcel_medicine', 'eee', 'weimar_nazi_germany', 'usa'].includes(
-    unit,
-  );
+  const isGCSE = isGCSEInteractiveUnit(unit);
   const isGreatWar = unit === 'great_war' || unit === 'great_war_part2';
   const hasNarrativeBlocks = Boolean(lesson.narrative_blocks && lesson.narrative_blocks.length > 0);
 
@@ -12220,7 +12549,7 @@ ${poem.poem_text}
     html += `</div>`;
   });
 
-  if (window.currentUnitId === 'cme_new') {
+  if (isGCSEInteractiveUnit(window.currentUnitId || (typeof unitId !== 'undefined' ? unitId : null))) {
     html += `
       <style>
         @keyframes sourceHighlightGlow {
@@ -12251,9 +12580,6 @@ ${poem.poem_text}
   `;
   return html;
 }
-
-const isGCSEInteractiveUnit = (uId) =>
-  ['cme_new', 'edexcel_medicine', 'eee', 'weimar_nazi_germany', 'usa', 'cold_war'].includes(uId);
 
 if (typeof window !== 'undefined' && !window._cmeSourceHighlightBound) {
   window._cmeSourceHighlightBound = true;

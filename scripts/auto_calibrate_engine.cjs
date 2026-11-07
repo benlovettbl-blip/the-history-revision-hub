@@ -79,6 +79,30 @@ async function autoCalibrateTextbook(page, options = {}) {
         });
       });
 
+      // 2b. Auto-Fit Stage Banner Narrative Questions (ensure 100% text visibility with zero truncation)
+      const stageBanners = Array.from(p.querySelectorAll('.stage-banner'));
+      stageBanners.forEach((b) => {
+        const flexInner = b.firstElementChild;
+        if (!flexInner) return;
+        const qSpan = flexInner.querySelector('.stage-question-text') || flexInner.lastElementChild;
+        if (!qSpan) return;
+        let sizePt = parseFloat(window.getComputedStyle(qSpan).fontSize);
+        let step = 0;
+        while (flexInner.scrollWidth > flexInner.clientWidth && sizePt > 7.0 && step < 25) {
+          step++;
+          sizePt -= 0.2;
+          qSpan.style.fontSize = sizePt.toFixed(2) + 'px';
+        }
+        if (step > 0) {
+          log.push({
+            page: pageNum,
+            type: 'STAGE_QUESTION_AUTOFIT_APPLIED',
+            stepsTaken: step,
+            finalFontSize: qSpan.style.fontSize,
+          });
+        }
+      });
+
       // 3. Resolve Page Overflow / Footer Collision
       const pRect = p.getBoundingClientRect();
       const allEls = Array.from(p.querySelectorAll('*'));

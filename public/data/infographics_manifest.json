@@ -1,0 +1,1950 @@
+{
+  "cme_new": [
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_1",
+      "slug": "cme_kt1_1_withdrawal_statehood",
+      "title": "The Road to Statehood: British Withdrawal & Creation of Israel (1945–1948)",
+      "topic": "Key Topic 1.1: British Withdrawal and the Creation of Israel",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Conflicting post-war demands: Jewish state for Holocaust survivors vs Arab majority rule.",
+        "Jewish insurgency: 1946 King David Hotel bombing by Irgun against British headquarters.",
+        "February 1947: British decision to surrender the Mandate to the United Nations.",
+        "UN Resolution 181 (November 1947): 55% Jewish state, 45% Arab state, international Jerusalem.",
+        "May 14, 1948: Ben-Gurion proclaims the State of Israel, triggering immediate Arab invasion."
+      ],
+      "image": "/images/infographics/cme/cme_kt1_1_withdrawal_statehood.webp",
+      "fileSizeKb": 477,
+      "legacyLessonId": "lesson_2"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_2",
+      "slug": "cme_kt1_2_aftermath_refugees",
+      "title": "The Aftermath of the 1948–49 War & The Palestinian Refugee Crisis",
+      "topic": "Key Topic 1.2: Aftermath of the 1948–49 War",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Territorial expansion: Israel secures 78% of former Mandate territory (21% more than UN plan).",
+        "The Nakba: ~700,000 Palestinian Arabs displaced into refugee camps in West Bank, Gaza, and Arab states.",
+        "1950 Law of Return grants every Jewish person worldwide the right to Israeli citizenship.",
+        "Formation of the IDF as a unified national military force replacing irregular militias.",
+        "Armistice demarcation (Green Line) without permanent peace treaties or recognized borders."
+      ],
+      "image": "/images/infographics/cme/cme_kt1_2_aftermath_refugees.webp",
+      "fileSizeKb": 314,
+      "legacyLessonId": "lesson_3"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_3",
+      "slug": "cme_kt1_3_increased_tension",
+      "title": "Increased Tension, Nasser, and the Cold War (1955–1963)",
+      "topic": "Key Topic 1.3: Increased Tension, 1955–1963",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Rise of Gamal Abdel Nasser: Champion of Pan-Arab nationalism and non-aligned movement.",
+        "1955 Czech Arms Deal brings Soviet weaponry into Egypt, shifting the regional balance.",
+        "Fediyun border raids into Israel from Gaza and heavy Israeli cross-border reprisals.",
+        "July 1956: Nasser nationalises the Suez Canal following withdrawal of Western Aswan Dam financing.",
+        "1958: Creation of the United Arab Republic (Egypt & Syria) deepening Israeli encirclement fears."
+      ],
+      "image": "/images/infographics/cme/cme_kt1_3_increased_tension.webp",
+      "fileSizeKb": 579,
+      "legacyLessonId": "lesson_4"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_3",
+      "slug": "cme_kt1_3_suez_security_impact",
+      "title": "The 1956 Suez Crisis: Military Victory & Political Humiliation",
+      "topic": "Key Topic 1.3: The 1956 Suez Crisis & Regional Impact",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The Protocol of Sèvres: Secret collusion between Britain, France, and Israel.",
+        "Israeli sweep through Sinai to the Suez Canal; Anglo-French paratroop drop.",
+        "US President Eisenhower forces immediate Anglo-French-Israeli withdrawal via financial pressure.",
+        "Nasser emerges as a triumphant Arab hero despite suffering military defeat.",
+        "Stationing of UNEF peacekeepers in Sinai and reopening of the Straits of Tiran to Israeli shipping."
+      ],
+      "image": "/images/infographics/cme/cme_kt1_3_suez_security_impact.webp",
+      "fileSizeKb": 364,
+      "legacyLessonId": "lesson_4"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_4",
+      "slug": "cme_kt2_1_arab_world_tensions",
+      "title": "The Road to the Six-Day War: Water Wars, Syrian Skirmishes & Escalation (1964–1967)",
+      "topic": "Key Topic 2.1: Israel and the Arab World, 1964–1967",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Water Wars: Syrian attempts to divert headwaters of the River Jordan countered by Israeli air strikes.",
+        "Formation of the PLO in 1964 under Arab League auspices; Fatah launches guerilla attacks.",
+        "May 1967: False Soviet intelligence reports of Israeli troop concentrations on the Syrian border.",
+        "Nasser expels UNEF peacekeepers from Sinai and concentrates 100,000 Egyptian troops.",
+        "Closure of the Straits of Tiran on 22 May 1967 viewed by Israel as an explicit casus belli."
+      ],
+      "image": "/images/infographics/cme/cme_kt2_1_arab_world_tensions.webp",
+      "fileSizeKb": 595,
+      "legacyLessonId": "lesson_6"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_5",
+      "slug": "cme_kt2_2_six_day_war",
+      "title": "The Six-Day War (June 1967): Operation Focus & Territorial Transformation",
+      "topic": "Key Topic 2.2: The Six Day War (1967)",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "5 June 1967: Operation Focus destroys ~400 Arab aircraft on the ground in three hours.",
+        "Complete Israeli air superiority allows rapid ground advances across three fronts.",
+        "Israel captures Sinai Peninsula and Gaza Strip from Egypt; West Bank and East Jerusalem from Jordan; Golan Heights from Syria.",
+        "UN Resolution 242 (November 1967) establishes the foundational \"Land for Peace\" formula.",
+        "Khartoum Summit (September 1967): Arab League adopts the \"Three No's\" (no peace, no recognition, no negotiations)."
+      ],
+      "image": "/images/infographics/cme/cme_kt2_2_six_day_war.webp",
+      "fileSizeKb": 461,
+      "legacyLessonId": "lesson_7"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_7",
+      "slug": "cme_kt2_4_international_terrorism",
+      "title": "The Rise of Palestinian Resistance: Black September & International Terrorism (1970–1972)",
+      "topic": "Key Topic 2.4: Palestinian Resistance & Munich Olympics",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Disillusionment with Arab state armies prompts independent Palestinian fedayeen action under Yasser Arafat.",
+        "PFLP aircraft hijackings to Dawson's Field, Jordan (September 1970).",
+        "Black September: King Hussein of Jordan expels the PLO after fierce fighting; PLO relocates to Lebanon.",
+        "September 1972 Munich Olympics Massacre: Black September murders 11 Israeli Olympic team members.",
+        "Israel launches Operation Wrath of God to assassinate individuals linked to Munich."
+      ],
+      "image": "/images/infographics/cme/cme_kt2_4_international_terrorism.webp",
+      "fileSizeKb": 347,
+      "legacyLessonId": "lesson_9"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_8",
+      "slug": "cme_kt2_5_yom_kippur_status_quo",
+      "title": "1973: The War that Shattered the Status Quo",
+      "topic": "Key Topic 2.5: The Yom Kippur War (1973)",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "October 6, 1973: Coordinated surprise attack by Egypt (Operation Badr crossing Suez) and Syria (Golan Heights).",
+        "Breaching of the Bar Lev Line shatters the myth of Israeli military invincibility.",
+        "Superpower involvement: $2.2 billion US Operation Nickel Grass airlift restores Israeli munitions.",
+        "OPEC oil embargo quadruples global petroleum prices, exerting massive economic pressure on the West.",
+        "Proved military dominance alone could not ensure security, forcing both sides toward diplomacy."
+      ],
+      "image": "/images/infographics/cme/cme_kt2_5_yom_kippur_status_quo.webp",
+      "fileSizeKb": 443,
+      "legacyLessonId": "lesson_10"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_8",
+      "slug": "cme_kt2_5_yom_kippur_turning_point",
+      "title": "The Yom Kippur War 1973: Turning Point in the Middle East",
+      "topic": "Key Topic 2.5: Causes, Phases & Consequences of Yom Kippur",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Sadat's objective: Limited military offensive to unfreeze diplomacy rather than total destruction of Israel.",
+        "Heavy initial Israeli casualties: ~2,600 killed, leading to profound domestic political crisis.",
+        "General Sharon leads Israeli counter-crossing of the Suez Canal, encircling Egypt's Third Army.",
+        "Superpower brinkmanship: US moves to DEFCON 3 after Soviet threat of unilateral intervention.",
+        "Lays the direct foundation for Henry Kissinger's shuttle diplomacy and the 1979 Camp David treaty."
+      ],
+      "image": "/images/infographics/cme/cme_kt2_5_yom_kippur_turning_point.webp",
+      "fileSizeKb": 330,
+      "legacyLessonId": "lesson_10"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_9",
+      "slug": "cme_kt3_1_diplomatic_negotiations",
+      "title": "Diplomatic Negotiations: Kissinger's Shuttle Diplomacy & Disengagement (1974–1979)",
+      "topic": "Key Topic 3.1: Diplomatic Negotiations",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "US Secretary of State Henry Kissinger flies between capitals to broker step-by-step military disengagement.",
+        "Sinai I (1974) and Sinai II (1975) accords: Israeli withdrawal from Suez Canal and oilfields.",
+        "Reopening of the Suez Canal in June 1975 restores international shipping.",
+        "November 1977: Egyptian President Anwar Sadat makes historic, unprecedented speech to the Israeli Knesset.",
+        "Menachem Begin and Sadat invited to Camp David summit by US President Jimmy Carter in 1978."
+      ],
+      "image": "/images/infographics/cme/cme_kt3_1_diplomatic_negotiations.webp",
+      "fileSizeKb": 353,
+      "legacyLessonId": "lesson_11"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_9",
+      "slug": "cme_kt3_1_camp_david_timeline",
+      "title": "Historic Israel-Egypt Peace Treaty Timeline (1973–1979)",
+      "topic": "Key Topic 3.1: Camp David Accords and Treaty of Washington",
+      "type": "thematic_timeline",
+      "aspect": "landscape",
+      "keyPoints": [
+        "September 1978: Camp David Accords signed after 13 days of intensive secret negotiations.",
+        "March 1979: Treaty of Washington formally ends 30-year state of war between Egypt and Israel.",
+        "Israel returns entire Sinai Peninsula in phases in exchange for demilitarized zones and full diplomatic ties.",
+        "Egypt expelled from the Arab League and viewed as a traitor by radical Arab states.",
+        "October 1981: Anwar Sadat assassinated by Islamist extremists during a military parade in Cairo."
+      ],
+      "image": "/images/infographics/cme/cme_kt3_1_camp_david_timeline.webp",
+      "fileSizeKb": 404,
+      "legacyLessonId": "lesson_11"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_10",
+      "slug": "cme_kt3_2_lebanon_conflict",
+      "title": "The Palestinian Issue: The Lebanon War & Sabra-Shatila (1978–1982)",
+      "topic": "Key Topic 3.2: The Palestinian Issue & Lebanon",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Operation Litani (1978) and Operation Peace for Galilee (June 1982) launched into southern Lebanon.",
+        "Israeli Defense Minister Ariel Sharon pushes past the 40km zone to besiege Beirut.",
+        "Evacuation of Yasser Arafat and ~14,000 PLO fighters to Tunisia under multinational protection.",
+        "September 1982: Lebanese Christian Phalangist militia massacres hundreds of Palestinian refugees at Sabra and Shatila.",
+        "Kahan Commission holds Sharon indirectly responsible; massive anti-war protests in Tel Aviv (400,000 march)."
+      ],
+      "image": "/images/infographics/cme/cme_kt3_2_lebanon_conflict.webp",
+      "fileSizeKb": 170,
+      "legacyLessonId": "lesson_12"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_10",
+      "slug": "cme_kt3_2_first_intifada_overview",
+      "title": "The First Palestinian Intifada (1987–1993): Grassroots Uprising",
+      "topic": "Key Topic 3.2: The First Intifada",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "December 1987: Spontaneous uprising sparks in Jabalia refugee camp, Gaza, following fatal road accident.",
+        "Characterized by youth stone-throwing, commercial strikes, civil disobedience, and tyre-burning.",
+        "Unified National Leadership of the Uprising (UNLU) coordinates resistance from inside the territories.",
+        "Rise of Hamas (Islamic Resistance Movement) challenging the secular PLO.",
+        "Israeli policy of \"Iron Fist\" draws intense international media criticism; proves military force cannot suppress political demands."
+      ],
+      "image": "/images/infographics/cme/cme_kt3_2_first_intifada_overview.webp",
+      "fileSizeKb": 534,
+      "legacyLessonId": "lesson_12"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_10",
+      "slug": "cme_kt3_2_plo_israel_timeline",
+      "title": "The PLO and Israel: Conflict, Recognition & Milestones Timeline",
+      "topic": "Key Topic 3.2: Evolution of the PLO and Israeli Policy",
+      "type": "thematic_timeline",
+      "aspect": "portrait",
+      "keyPoints": [
+        "1974: Arafat addresses UN General Assembly carrying \"an olive branch and a freedom fighter's gun\".",
+        "Arab League recognizes PLO as the \"sole legitimate representative of the Palestinian people\".",
+        "November 1988: Palestine National Council proclaims independence, renounces terrorism, and implicitly recognizes Israel.",
+        "1991 Madrid Peace Conference initiates direct bilateral talks under joint US-Soviet sponsorship.",
+        "Shifts focus from cross-border military conflict to internal territorial sovereignty."
+      ],
+      "image": "/images/infographics/cme/cme_kt3_2_plo_israel_timeline.webp",
+      "fileSizeKb": 355,
+      "legacyLessonId": "lesson_12"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "lesson_11",
+      "slug": "cme_kt3_3_oslo_accords",
+      "title": "Attempts at a Solution: The Oslo Accords & Peace Process (1993–1995)",
+      "topic": "Key Topic 3.3: Attempts at a Solution, 1988–1995",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Secret Norwegian backchannel talks between Israeli academics and PLO representatives.",
+        "Mutual Recognition Letters: PLO recognizes Israel's right to exist; Israel recognizes PLO as representative.",
+        "September 13, 1993: Historic handshake between Yitzhak Rabin and Yasser Arafat on White House lawn.",
+        "Declaration of Principles (Oslo I): 5-year interim Palestinian self-government in Gaza and Jericho.",
+        "Oslo II (1995) divides West Bank into Areas A (Palestinian), B (joint), and C (Israeli control).",
+        "November 1995: Prime Minister Yitzhak Rabin assassinated by Jewish extremist Yigal Amir at Tel Aviv peace rally."
+      ],
+      "image": "/images/infographics/cme/cme_kt3_3_oslo_accords.webp",
+      "fileSizeKb": 350,
+      "legacyLessonId": "lesson_13"
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "unit_overview",
+      "slug": "cme_edexcel_spec_roadmap",
+      "title": "Edexcel GCSE (9–1) Conflict in the Middle East Specification Roadmap",
+      "topic": "Specification Architecture & Examiner's Toolkit",
+      "type": "unit_roadmap",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Complete 50-year chronological highway spanning 1945 to 1995.",
+        "Key Topic 1: Birth of Israel, 1948 War, Palestinian Refugees, Suez Crisis.",
+        "Key Topic 2: Six-Day War (1967), Conquered Territories, Black September, Yom Kippur War (1973).",
+        "Key Topic 3: Kissinger Diplomacy, Camp David, Lebanon War, First Intifada, Oslo Accords.",
+        "Examiner's Toolkit: Question 1 (8 marks consequences), Question 2 (8 marks narrative), Question 3 (16 marks importance)."
+      ],
+      "image": "/images/infographics/cme/cme_edexcel_spec_roadmap.webp",
+      "fileSizeKb": 601
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "unit_overview",
+      "slug": "cme_narrative_chronology_roadmap",
+      "title": "Roadmap to History: Conflict in the Middle East Chronology (1945–1995)",
+      "topic": "Chronological Turning Points & Causal Evolution",
+      "type": "unit_roadmap",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Parchment chronological scroll tracking all 12 key syllabus stages.",
+        "Military forces data: 1967 air and armor statistics comparison.",
+        "Diplomatic turning points: Camp David, Madrid Conference, and Oslo Peace Accords.",
+        "Visual iconography for all major peace treaties and military confrontations."
+      ],
+      "image": "/images/infographics/cme/cme_narrative_chronology_roadmap.webp",
+      "fileSizeKb": 507
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "unit_overview",
+      "slug": "cme_visual_course_overview",
+      "title": "Conflict in the Middle East 1945–1995: Visual Historical Overview",
+      "topic": "Core Course Overview & Diplomatic Documents",
+      "type": "unit_overview",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Authentic archival documents collage: UN Resolution 242, Suez headlines, Camp David Treaty.",
+        "Cartographic overview: Mediterranean theatre, Sinai Peninsula, and Levant borders.",
+        "Dual eras: 1945–1967 Statehood & Regional Escalation vs 1973–1995 Global Impact & Peace Search."
+      ],
+      "image": "/images/infographics/cme/cme_visual_course_overview.webp",
+      "fileSizeKb": 633
+    },
+    {
+      "unit": "cme_new",
+      "lessonId": "exam_practice",
+      "slug": "cme_paper2_exam_guide",
+      "title": "Mastering the History Period Study: Guide to Question Types",
+      "topic": "Edexcel Paper 2 Exam Strategy & Technique",
+      "type": "exam_technique",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Question 1 (Consequences, 8 Marks): Explain two distinct, well-evidenced consequences with clear cause-effect links.",
+        "Question 2 (Narrative Account, 8 Marks): Chronological 3-stage sequence (Begin, Develop, End) using analytical connectives.",
+        "Question 3 (Importance, 16 Marks): Explain why two events/developments were significant for a specific outcome.",
+        "AO1 (Accurate Knowledge) vs AO2 (Analytical Explanation of Impact).",
+        "Examiner Golden Rule: Always go beyond the two provided stimulus points to access Level 4 top marks."
+      ],
+      "image": "/images/infographics/cme/cme_paper2_exam_guide.webp",
+      "fileSizeKb": 370
+    }
+  ],
+  "eee": [
+    {
+      "unit": "eee",
+      "lessonId": "lesson_1_1",
+      "slug": "eee_kt1_1_accession_crisis",
+      "title": "1558: A Kingdom in Crisis – The Accession of Elizabeth I",
+      "topic": "Key Topic 1.1: The Situation on Elizabeth's Accession, 1558",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Crisis of legitimacy & gender: Catholics questioned her parents' marriage; 16th-century prejudice against female rule.",
+        "Financial crisis: Crown debt stood at £300,000 (with 14% interest on Antwerp exchange) against annual income of only £286,667.",
+        "Foreign threats: Alliance between France and Scotland (Auld Alliance) and recent loss of Calais (January 1558).",
+        "Rigid social hierarchy governed by the \"Great Chain of Being\".",
+        "Elizabeth's personal strengths: Highly educated, fluent in four languages, adept at political patronage."
+      ],
+      "image": "/images/infographics/eee/eee_kt1_1_accession_crisis.webp",
+      "fileSizeKb": 421
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_1_2",
+      "slug": "eee_kt1_2_religious_settlement",
+      "title": "The Religious Settlement of 1559: The Elizabethan \"Middle Way\"",
+      "topic": "Key Topic 1.2: The Settlement of Religion, 1559",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Act of Supremacy (1559): Elizabeth declared \"Supreme Governor\" rather than \"Supreme Head\" of the Church.",
+        "Act of Uniformity (1559): Enforced the Book of Common Prayer and mandatory Sunday church attendance.",
+        "Royal Injunctions: Instructions issued to clergy enforcing the settlement, vestments, and reporting recusants.",
+        "Recusancy fines: One shilling fine for failing to attend Protestant church services.",
+        "Deliberate compromise: Retained moderate Catholic ceremony while establishing Protestant doctrine."
+      ],
+      "image": "/images/infographics/eee/eee_kt1_2_religious_settlement.webp",
+      "fileSizeKb": 434
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_1_3",
+      "slug": "eee_kt1_3_religious_challenges",
+      "title": "Challenges to the Religious Settlement: Puritans and Papacy",
+      "topic": "Key Topic 1.3: Challenge to the Religious Settlement",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Puritan challenge: Vestments Controversy (1566) resisting crucifixes and surplices as \"popish rags\".",
+        "Catholic challenge: Papacy, English Catholic nobility, and European superpowers (Spain and France).",
+        "1570: Pope Pius V issues Papal Bull (Regnans in Excelsis) excommunicating Elizabeth and ordering Catholics to depose her.",
+        "Treason Act of 1571: Makes declaring Elizabeth a heretic or denying her supremacy punishable by death.",
+        "Arrival of trained Jesuit and Seminary priests from Douai to sustain underground Catholicism."
+      ],
+      "image": "/images/infographics/eee/eee_kt1_3_religious_challenges.webp",
+      "fileSizeKb": 439
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_1_4",
+      "slug": "eee_kt1_4_mary_scots_overview",
+      "title": "Mary, Queen of Scots: Royal Pedigree, Legitimacy & Threat",
+      "topic": "Key Topic 1.4: The Problem of Mary, Queen of Scots",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Direct royal lineage: Great-granddaughter of Henry VII; legitimate Catholic heir to the English throne.",
+        "Murder of Lord Darnley (1567) and marriage to Earl of Bothwell triggers Scottish rebellion.",
+        "May 1568: Mary escapes to England seeking Elizabeth's protection but is placed under house arrest for 19 years.",
+        "Focal point for domestic Catholic revolt and Spanish assassination conspiracies.",
+        "Elizabeth's political dilemma: Reluctant to execute an anointed fellow monarch."
+      ],
+      "image": "/images/infographics/eee/eee_kt1_4_mary_scots_overview.webp",
+      "fileSizeKb": 458
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_1_4",
+      "slug": "eee_kt1_4_mary_stuart_problem",
+      "title": "The Problem of Mary Stuart: The Casket Letters & Captivity",
+      "topic": "Key Topic 1.4: Mary Stuart's Captivity & Legal Enquiries",
+      "type": "thematic_deep_dive",
+      "aspect": "portrait",
+      "keyPoints": [
+        "The York Conference (1568–69): Investigation into the \"Casket Letters\" to determine complicity in Darnley's murder.",
+        "Elizabeth reaches a non-verdict, ensuring Mary remains safely imprisoned without formal conviction.",
+        "Constant surveillance by Sir Amyas Paulet at Tutbury Castle and Chartley.",
+        "Permanent diplomatic friction with France and Scotland during her captivity."
+      ],
+      "image": "/images/infographics/eee/eee_kt1_4_mary_stuart_problem.webp",
+      "fileSizeKb": 682
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_2_1",
+      "slug": "eee_kt2_1_walsingham_spies",
+      "title": "Sir Francis Walsingham & The Elizabethan Spy Network",
+      "topic": "Key Topic 2.1: Walsingham's Intelligence Network & Spies",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Walsingham appointed Principal Secretary and Elizabeth's \"Spymaster General\" in 1573.",
+        "Network of agents, codebreakers (Thomas Phelippes), and double agents across England and Europe.",
+        "Ciphers and forgeries: Phelippes cracked coded letters and forged postscripts to uncover conspirators.",
+        "Surveillance of Catholic safe houses, ports, and foreign embassies.",
+        "1584 Bond of Association: Oath pledging to execute anyone attempting to assassinate the Queen or benefiting from her death."
+      ],
+      "image": "/images/infographics/eee/eee_kt2_1_walsingham_spies.webp",
+      "fileSizeKb": 474
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_2_1",
+      "slug": "eee_kt2_1_catholic_plots_timeline",
+      "title": "Catholic Plots Against Elizabeth: 1569 to 1586 Timeline",
+      "topic": "Key Topic 2.1: Plots and Revolts at Home (1569–1587)",
+      "type": "thematic_timeline",
+      "aspect": "landscape",
+      "keyPoints": [
+        "1569 Northern Rebellion: Earls of Northumberland and Westmorland seize Durham Cathedral; ruthlessly crushed (450 executed).",
+        "1571 Ridolfi Plot: Italian banker Roberto Ridolfi plans Spanish invasion; leads to Duke of Norfolk's execution (1572).",
+        "1583 Throckmorton Plot: French Catholic force funded by Spain and the Pope; leads to 1585 Act against Jesuits.",
+        "1586 Babington Plot: Anthony Babington communicates with Mary Stuart via beer barrels; intercepted by Walsingham.",
+        "February 1587: Execution of Mary, Queen of Scots at Fotheringhay Castle."
+      ],
+      "image": "/images/infographics/eee/eee_kt2_1_catholic_plots_timeline.webp",
+      "fileSizeKb": 516
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_2_2",
+      "slug": "eee_kt2_2_spanish_rivalry",
+      "title": "Anglo-Spanish Rivalry: Commercial, Religious & Geo-Political Friction",
+      "topic": "Key Topic 2.2: Relations with Spain, 1569–1585",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Religious divide: Catholic Spain under Philip II viewed Protestant England as a heretical enemy.",
+        "Commercial conflict: Spanish trade monopoly in the New World challenged by English privateers like Francis Drake and John Hawkins.",
+        "The Netherlands revolt: Dutch Protestants rebel against Spanish rule under the Duke of Alba; Elizabeth secretly aids rebels.",
+        "Genoese Loan (1568): Elizabeth seizes gold ships bound for Spanish troops in Antwerp.",
+        "1584 Treaty of Joinville: France and Spain form Catholic alliance against Protestantism."
+      ],
+      "image": "/images/infographics/eee/eee_kt2_2_spanish_rivalry.webp",
+      "fileSizeKb": 636
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_2_2",
+      "slug": "eee_kt2_2_road_to_armada",
+      "title": "The Road to the Armada: 1585 to 1588 Escalation",
+      "topic": "Key Topic 2.2: The Road to the Armada",
+      "type": "thematic_timeline",
+      "aspect": "landscape",
+      "keyPoints": [
+        "August 1585: Treaty of Nonsuch puts England into direct, formal war with Spain.",
+        "Earl of Leicester leads 7,400 English troops to the Netherlands but clashes with Dutch states.",
+        "April 1587: Drake's raid on Cadiz (\"singeing the King of Spain's beard\") delays the Armada by a year.",
+        "Philip II secures papal blessing and builds the \"Invincible Enterprise of England\".",
+        "Execution of Mary, Queen of Scots (1587) provides Philip with religious justification to claim the English crown."
+      ],
+      "image": "/images/infographics/eee/eee_kt2_2_road_to_armada.webp",
+      "fileSizeKb": 552
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_2_3",
+      "slug": "eee_kt2_3_war_outbreak",
+      "title": "The Outbreak of War with Spain (1585–1588): Nonsuch & The Netherlands",
+      "topic": "Key Topic 2.3: Outbreak of War with Spain, 1585–1588",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Assassination of William of Orange (1584) leaves Dutch rebellion on the brink of collapse.",
+        "Elizabeth forced to abandon covert diplomacy and commit troops openly under Treaty of Nonsuch.",
+        "Leicester's campaign hampered by poor funding, indiscipline, and betrayal by English officers (Stanley and Yorke).",
+        "English privateers inflict heavy losses on Spanish bullion fleets in the Caribbean.",
+        "Formal state of war declared, setting stage for full-scale Spanish invasion."
+      ],
+      "image": "/images/infographics/eee/eee_kt2_3_war_outbreak.webp",
+      "fileSizeKb": 583
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_2_3",
+      "slug": "eee_kt2_3_england_war_spain",
+      "title": "England at War: Drake at Cadiz & Military Mobilization",
+      "topic": "Key Topic 2.3: The Raid on Cadiz & English Defences",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Drake enters Cadiz harbour in April 1587, destroying over 30 Spanish warships and supply vessels.",
+        "Destruction of seasoned barrel staves compromised Armada food and water supplies in 1588.",
+        "English coastal beacons and county militia mobilised along the English Channel.",
+        "Tilbury army camp established under Earl of Leicester to protect London."
+      ],
+      "image": "/images/infographics/eee/eee_kt2_3_england_war_spain.webp",
+      "fileSizeKb": 560
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_2_4",
+      "slug": "eee_kt2_4_armada_defeat",
+      "title": "The Defeat of the Spanish Armada (1588): Tactics, Ships & Weather",
+      "topic": "Key Topic 2.4: The Spanish Armada, 1588",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Philip II's flawed plan: 130 ships under Duke of Medina Sidonia required to link with Duke of Parma's army in Flanders.",
+        "Communication breakdown: No deep-water port available; Parma was delayed and unready.",
+        "English ship design: Faster, longer-range galleons designed by John Hawkins with culverin long guns.",
+        "Hellburners (Fireships) at Calais (7 August) scatter Spanish crescent formation into panic.",
+        "Battle of Gravelines (8 August): English gunnery batters Spanish ships; Protestant winds blow Armada north around Scotland and Ireland."
+      ],
+      "image": "/images/infographics/eee/eee_kt2_4_armada_defeat.webp",
+      "fileSizeKb": 532
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_3_1",
+      "slug": "eee_kt3_1_leisure_theatre",
+      "title": "Elizabethan Leisure: Sport, Pastimes & The Rise of the Theatre",
+      "topic": "Key Topic 3.1: Education and Leisure in Elizabethan England",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Nobility sports: Hunting, hawking, fencing, real tennis, and archery.",
+        "Lower-class sports: Football (violent and unregulated), bear-baiting, and cock-fighting at Paris Garden.",
+        "The Theatre boom: Purpose-built playhouses (The Theatre 1576, The Curtain, The Rose, The Globe).",
+        "Social melting pot: Groundlings paid 1 penny to stand in the pit; nobles paid for cushioned tiered balconies.",
+        "Puritan opposition: Preachers condemned theatres as sinful houses of plague, crime, and temptation."
+      ],
+      "image": "/images/infographics/eee/eee_kt3_1_leisure_theatre.webp",
+      "fileSizeKb": 588
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_3_1",
+      "slug": "eee_kt3_1_education_learning",
+      "title": "Education in Elizabethan England: Grammar Schools & Humanism",
+      "topic": "Key Topic 3.1: Elizabethan Education & Literacy",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Rise of Humanist philosophy: Belief in education for practical civic life and intellectual development.",
+        "Grammar schools: 72 new grammar schools established teaching Latin, Greek, rhetoric, and debate to boys from the middling sort.",
+        "Petty schools for basic literacy and numeracy; dame schools for wealthy girls.",
+        "University expansion: Oxford and Cambridge colleges train future statesmen and clergy.",
+        "Literacy rates increased (30% of men, 10% of women), but education remained sharply divided by gender and wealth."
+      ],
+      "image": "/images/infographics/eee/eee_kt3_1_education_learning.webp",
+      "fileSizeKb": 686
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_3_2",
+      "slug": "eee_kt3_2_poverty_causes",
+      "title": "Poverty in Elizabethan England: Population Growth, Enclosure & Inflation",
+      "topic": "Key Topic 3.2: The Problem of the Poor and Vagrancy",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Population explosion: England's population grew 35% from 2.8 million to over 4 million, outstripping food supplies.",
+        "Bad harvests (1570s and 1590s) caused catastrophic food shortages and rampant price inflation.",
+        "Agricultural enclosure: Arable land converted to sheep pastures, requiring far fewer rural labourers and evicting tenant farmers.",
+        "Cloth trade collapse: European wool export crisis caused widespread urban unemployment.",
+        "Dissolution of the Monasteries under Henry VIII removed the traditional Catholic charity safety net."
+      ],
+      "image": "/images/infographics/eee/eee_kt3_2_poverty_causes.webp",
+      "fileSizeKb": 493
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_3_2",
+      "slug": "eee_kt3_2_poor_laws",
+      "title": "The Elizabethan Poor Laws: Deserving vs Undeserving Poor",
+      "topic": "Key Topic 3.2: Government Legislation & The 1601 Poor Relief Act",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Social fear: Vagabonds and \"sturdy beggars\" feared as threats to law, order, and public health.",
+        "Classification of the poor: Impotent/Deserving poor (ill, elderly, orphans) vs Idle/Sturdy beggars (able-bodied who refused work).",
+        "1572 Vagabonds Act: Severe whipping and hole burned through right ear for persistent vagrancy.",
+        "1576 Act for the Relief of the Poor: Justices of the Peace ordered to provide raw materials (wool, hemp) to put the poor to work.",
+        "1601 Poor Relief Act (Elizabethan Poor Law): Established compulsory Poor Rate tax, Overseers of the Poor, and parish workhouses."
+      ],
+      "image": "/images/infographics/eee/eee_kt3_2_poor_laws.webp",
+      "fileSizeKb": 530
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_3_3",
+      "slug": "eee_kt3_3_drake_circumnavigation",
+      "title": "Francis Drake: The Great Circumnavigation (1577–1580)",
+      "topic": "Key Topic 3.3: Francis Drake and Voyages of Discovery",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "First Englishman to circumnavigate the globe (1577–1580) aboard the Golden Hind.",
+        "Secret mission backed by Elizabeth to disrupt Spanish monopoly along the Pacific coast of South America.",
+        "Massive plunder: Captured Spanish treasure ship Cacafuego laden with 26 tons of silver and 80 pounds of gold.",
+        "Claimed \"New Albion\" (California) for Queen Elizabeth.",
+        "Knighted on the deck of the Golden Hind by Elizabeth in 1581, enraging King Philip II."
+      ],
+      "image": "/images/infographics/eee/eee_kt3_3_drake_circumnavigation.webp",
+      "fileSizeKb": 436
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_3_3",
+      "slug": "eee_kt3_3_exploration_discovery",
+      "title": "The Age of Discovery: Navigation, Shipbuilding & Global Trade",
+      "topic": "Key Topic 3.3: Factors Driving Elizabethan Exploration",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "New navigational technology: Astrolabes, magnetic compasses, cross-staffs, and accurate marine charts.",
+        "Shipbuilding advances: Clinker-built hulls, lanteen sails, and more maneuverable galleons capable of ocean voyages.",
+        "Quest for trade routes: Search for Northwest and Northeast Passages to China and the Spice Islands.",
+        "Chartered trading companies: Muscovy Company, Levant Company, and East India Company (1600).",
+        "Laid the foundations for British maritime supremacy and commercial empire."
+      ],
+      "image": "/images/infographics/eee/eee_kt3_3_exploration_discovery.webp",
+      "fileSizeKb": 713
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_3_4",
+      "slug": "eee_kt3_4_roanoke_failure",
+      "title": "Why England's First Colony Failed: The Lost Colony of Roanoke",
+      "topic": "Key Topic 3.4: The Failure of the Virginia Colonisation",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Poor timing & voyage: Left too late in the year to plant crops; flagship Tiger ran aground destroying food supplies.",
+        "Unsuitable colonists: Wealthy gentlemen refused physical manual labour; lack of skilled farmers.",
+        "Deteriorating native relations: Chief Wingina turned hostile after English accused natives of stealing a silver cup.",
+        "1587 Second Colony under John White: White returned to England for supplies; delayed 3 years by the Spanish Armada.",
+        "1590 return: Roanoke settlement found completely abandoned with only the word \"CROATOAN\" carved on a post."
+      ],
+      "image": "/images/infographics/eee/eee_kt3_4_roanoke_failure.webp",
+      "fileSizeKb": 515
+    },
+    {
+      "unit": "eee",
+      "lessonId": "lesson_3_4",
+      "slug": "eee_kt3_4_raleigh_virginia",
+      "title": "Sir Walter Raleigh & The Colonisation of Virginia (1584–1590)",
+      "topic": "Key Topic 3.4: Raleigh and the Colonisation of Virginia",
+      "type": "thematic_deep_dive",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Royal patent: Elizabeth granted Raleigh permission to explore and settle any lands not possessed by Christian prince.",
+        "Named \"Virginia\" in honour of Elizabeth, the Virgin Queen.",
+        "Strategic aims: Establish privateering base against Spanish treasure ships, find silver/gold, and trade for timber and tobacco.",
+        "Organiser rather than sailor: Raleigh financed and promoted the expeditions but never sailed to Virginia himself.",
+        "Paved the way for subsequent successful permanent English colonisation at Jamestown (1607)."
+      ],
+      "image": "/images/infographics/eee/eee_kt3_4_raleigh_virginia.webp",
+      "fileSizeKb": 557
+    }
+  ],
+  "edexcel_medicine": [
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "unit_overview",
+      "slug": "med_course_overview_c1250_present",
+      "title": "Medicine in Britain: c1250–Present Master Course Overview",
+      "topic": "Paper 1 Thematic Study: 750 Years of Medical Change & Continuity",
+      "type": "unit_overview",
+      "aspect": "portrait",
+      "keyPoints": [
+        "4 Core Eras: Medieval (c1250–1500), Renaissance (c1500–1700), Industrial (c1700–1900), Modern (c1900–present).",
+        "Factors influencing medicine: The Church, Science & Technology, Individuals, Government, War, and Communication.",
+        "Changing ideas on causes: From Divine punishment & Four Humours to Germ Theory (1861) and Genetics/DNA (1953).",
+        "Advances in prevention: Flagellation and pomanders to Cowpox vaccine (1796), Clean Water Acts, and NHS mass screening.",
+        "Western Front Historic Environment (1914–1918): Trench trauma, Gas gangrene, Mobile X-rays, and Blood banks."
+      ],
+      "image": "/images/infographics/medicine/med_course_overview_c1250_present.webp",
+      "fileSizeKb": 522
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_5",
+      "slug": "med_ladder_of_progress_synoptic",
+      "title": "The Ladder of Progress: Government Intervention in Public Health (1800–1948)",
+      "topic": "Key Topic 3.5: Public Health Legislation & The Welfare State (1848–1948)",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "1848 Public Health Act (The Permissive Start): Created General Board of Health, but local town improvements remained optional.",
+        "1875 Public Health Act (Compulsory Action): Ended laissez-faire; forced all local councils to provide clean water, sewers, and street lighting.",
+        "1911 National Insurance Act (The Safety Net): Lloyd George provided sick pay and free medical care for low-income workers.",
+        "1948 The NHS (Cradle to Grave Care): Aneurin Bevan launched free universal healthcare funded entirely through general taxation.",
+        "Decisive shift: Government evolved from complete non-interference (laissez-faire) into a proactive protector of national health."
+      ],
+      "image": "/images/infographics/medicine/med_ladder_of_progress_synoptic.webp",
+      "fileSizeKb": 438
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_1_4",
+      "slug": "med_medieval_era_overview",
+      "title": "Medieval Medicine: Religion, Care Not Cure & The Healers (c1250–c1500)",
+      "topic": "Key Topic 1.4: Medical Care Providers & Monastic Hospitals",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The Spiritual Pillar: The Church dictated disease understanding and governed hospitals, focusing on prayer and spiritual salvation.",
+        "Hospitals: Care, Not Cure: Monastic hospitals provided shelter, warmth, and food for the poor and dying, not medical surgery.",
+        "The Practical Pillar: Ordinary sick people treated at home by women using garden herbs like marigolds.",
+        "Comparison of Healers: University-trained Physicians diagnosed via urine/astrology; Apothecaries mixed herbs; Barber-Surgeons performed bloodletting.",
+        "Control of Medical Knowledge: Monasteries and universities strictly preserved and taught Galen because his Creator theology aligned with Genesis."
+      ],
+      "image": "/images/infographics/medicine/med_medieval_era_overview.webp",
+      "fileSizeKb": 585
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_1_1",
+      "slug": "med_kt1_1_causes_of_illness_chart",
+      "title": "Medieval Causes of Illness: God, Planets & The Four Humours",
+      "topic": "Key Topic 1.1: Supernatural & Rational Explanations",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Divine retribution: Illness sent by God to cleanse sins or test religious faith; treated with prayer and pilgrimage.",
+        "Astrological influences: Physicians checked planetary charts before bleeding patients or performing surgery.",
+        "The Four Humours balance: Illness caused by an excess or deficiency of humours; linked to seasons and temperaments.",
+        "Miasma theory: Bad air from decaying matter, stagnant water, or unburied corpses believed to corrupt the blood.",
+        "Total stagnation: Medical knowledge remained unchanged for centuries because the Church forbade dissection of human bodies."
+      ],
+      "image": "/images/infographics/medicine/med_kt1_1_causes_of_illness_chart.webp",
+      "fileSizeKb": 834
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_1_3",
+      "slug": "med_kt1_3_medieval_prevention_treatment",
+      "title": "Medieval Approaches to Prevention & Treatment: Bleeding, Purging & Herbal Lore",
+      "topic": "Key Topic 1.3: Approaches to Prevention and Treatment",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Phlebotomy (bloodletting): Cupping, leeching, and vein incisions used to restore humours; overseen by barber-surgeons.",
+        "Purging and laxatives: Herbal emetics prescribed to empty the stomach and bowels according to Galen's Theory of Opposites.",
+        "Regimen Sanitatis: Set of health rules advising exercise, moderate eating, fresh air, and regular bathing.",
+        "Apothecaries and wise women: Prepared herbal remedies (e.g. theriac, garlic, rose hips) based on local herbal lore.",
+        "Religious prevention: Chanting litanies, wearing amulets, fasting, and making monetary donations to monasteries."
+      ],
+      "image": "/images/infographics/medicine/med_kt1_3_medieval_prevention_treatment.webp",
+      "fileSizeKb": 770
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_1_5",
+      "slug": "med_kt1_5_black_death_revision_guide",
+      "title": "The Black Death (1348–1349): Symptoms, Causes & Societal Impact",
+      "topic": "Key Topic 1.5: Case Study: The Black Death, 1348–1349",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Arrival in England (summer 1348): Bubonic and pneumonic plague killed between 30% and 45% of the English population.",
+        "Gruesome symptoms: Painful buboes in groins and armpits, black necrotic skin blotches, high fever, and spitting blood.",
+        "Flawed contemporary explanations: Alignment of Saturn and Jupiter (1345), God's wrath, miasma, and poisonous fumes.",
+        "Futile medical responses: Lance buboes, burn sweet-smelling herbs, ring church bells, and drink crushed emeralds.",
+        "Social consequences: Severe agricultural labour shortages led to peasants demanding higher wages, weakening feudalism."
+      ],
+      "image": "/images/infographics/medicine/med_kt1_5_black_death_revision_guide.webp",
+      "fileSizeKb": 812
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_1_5",
+      "slug": "med_kt1_5_black_death_overview",
+      "title": "The Black Death (1348): Medieval Quarantine & The Flagellants",
+      "topic": "Key Topic 1.5: Case Study: The Black Death, 1348–1349",
+      "type": "thematic_deep_dive",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Complete medical helplessness: Doctors had no understanding of Yersinia pestis or flea transmission on black rats.",
+        "Religious extremism: The Brotherhood of Flagellants whipped themselves publicly in town squares to appease God's anger.",
+        "Government failure: King Edward III ordered streets cleaned of human excrement, believing foul smells spread the pestilence.",
+        "Quarantine measures: Gloucester attempted to shut its town gates to outsiders, but infection spread regardless.",
+        "Breakdown of religious authority: So many parish priests died administering last rites that uneducated clergy were hastily ordained."
+      ],
+      "image": "/images/infographics/medicine/med_kt1_5_black_death_overview.webp",
+      "fileSizeKb": 875
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_2_1",
+      "slug": "med_renaissance_era_overview",
+      "title": "The Medical Renaissance: Humanism, Dissection & Scientific Enquiry (c1500–c1700)",
+      "topic": "Key Topic 2: Medical Renaissance in Britain, c1500–c1700",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Renaissance \"rebirth\": Decline of Church control over medical teaching; revival of direct observation and humanism.",
+        "Johannes Gutenberg's printing press (c1440): Enabled rapid, accurate mass dissemination of medical textbooks without copying errors.",
+        "The Royal Society (1660): Founded under King Charles II with motto \"Nullius in Verba\" (Take nobody's word for it); published Philosophical Transactions.",
+        "Gradual change: Anatomy and physiology advanced dramatically, but patient treatments and everyday cures showed heavy continuity.",
+        "Royal patronage: Monarchs granted anatomical charters allowing lawful dissection of executed criminals."
+      ],
+      "image": "/images/infographics/medicine/med_renaissance_era_overview.webp",
+      "fileSizeKb": 525
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_2_1",
+      "slug": "med_kt2_1_medical_renaissance_evolution",
+      "title": "The Medical Renaissance: Challenging Ancient Authority",
+      "topic": "Key Topic 2.1: The New Spirit of Enquiry",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Humanist doctors retranslated original Greek texts of Hippocrates and Galen, discovering centuries of medieval distortions.",
+        "Shift from scholastic theory to empirical dissection: Physicians began to verify anatomical claims with their own eyes.",
+        "Foundation of Royal College of Physicians (1518): Began licensing doctors and prosecuting quack medicine practitioners.",
+        "Microscopic discovery: Robert Hooke and Antonie van Leeuwenhoek observed microorganisms, though connection to disease was unknown.",
+        "The Renaissance paradox: Medical theory transformed, but ordinary patients still purged, bled, and bought Galenic herbs."
+      ],
+      "image": "/images/infographics/medicine/med_kt2_1_medical_renaissance_evolution.webp",
+      "fileSizeKb": 442
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_2_2",
+      "slug": "med_kt2_2_thomas_sydenham",
+      "title": "Thomas Sydenham: \"The English Hippocrates\" & Bedside Observation (1676)",
+      "topic": "Key Topic 2.2: Thomas Sydenham and Bedside Observation",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Observationes Medicae (1676): Argued diseases had distinct species and life cycles, like plants in botany.",
+        "Revolution in methodology: Urged doctors to sit at patient bedsides, record exact symptoms, and observe disease progression.",
+        "Refusal of traditional theory: Rejected theoretical book learning and astrology; refused to bleed patients routinely.",
+        "Pioneered cinchona bark (quinine) for malaria and cool air/rest treatments for smallpox rather than sweat rooms.",
+        "Causal impact: Shifted medicine away from unique individual humeral imbalances toward diagnosing specific classified illnesses."
+      ],
+      "image": "/images/infographics/medicine/med_kt2_2_thomas_sydenham.webp",
+      "fileSizeKb": 684
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_2_3",
+      "slug": "med_kt2_3_andreas_vesalius_fabrica",
+      "title": "Andreas Vesalius & The Anatomical Revolution (1543)",
+      "topic": "Key Topic 2.3: Andreas Vesalius and the Anatomical Revolution",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "De Humani Corporis Fabrica (\"On the Fabric of the Human Body\", 1543): Groundbreaking textbook with detailed anatomical woodcuts.",
+        "Direct human dissection: Vesalius dissected human corpses personally at University of Padua, urging students to verify evidence.",
+        "Disproved Galen's 300 errors: Proved human jawbone is one single bone (not two), and septum of heart has no invisible holes.",
+        "Explained Galen's mistakes: Revealed Galen had dissected apes, pigs, and dogs because human dissection was forbidden in ancient Rome.",
+        "Lasting legacy: Inspired generations of anatomists to question ancient medical dogma and rely on direct empirical evidence."
+      ],
+      "image": "/images/infographics/medicine/med_kt2_3_andreas_vesalius_fabrica.webp",
+      "fileSizeKb": 504
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_2_4",
+      "slug": "med_kt2_4_william_harvey_circulation",
+      "title": "William Harvey & The Circulation of the Blood (1628)",
+      "topic": "Key Topic 2.4: William Harvey and Circulation of Blood",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "De Motu Cordis (\"On the Motion of the Heart and Blood\", 1628): Proved blood circulates continuously in one direction around the body.",
+        "Overturned Galen's orthodoxy: Disproved Galen's claim that liver manufactures new blood constantly from digested food.",
+        "Mechanical understanding: Compared the heart to a mechanical fire-fighting water pump with valves preventing backflow.",
+        "Mathematical evidence: Calculated that the heart pumps out 540 pints of blood per hour—impossible to produce from food.",
+        "Limited immediate impact: Many contemporary physicians rejected his findings; bloodletting continued for another 200 years."
+      ],
+      "image": "/images/infographics/medicine/med_kt2_4_william_harvey_circulation.webp",
+      "fileSizeKb": 525
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_2_4",
+      "slug": "med_kt2_4_renaissance_harvey_plague_mat",
+      "title": "Renaissance Milestones: Harvey's Discovery & The Great Plague",
+      "topic": "Key Topics 2.4 & 2.5: Circulation & The Great Plague",
+      "type": "thematic_deep_dive",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Scientific breakthrough: William Harvey proves one-way systemic circulation of blood powered by heart contraction.",
+        "The 1665 Great Plague struck London: Killed approximately 100,000 people (20% of London's population).",
+        "Government public health action: Mayor of London ordered \"Searchers\" to identify infected houses marked with red crosses.",
+        "Watchmen posted outside boarded-up homes with inscription: \"Lord Have Mercy Upon Us\".",
+        "Mass burial pits: Thousands buried in communal plague pits at night to prevent panic and contagion."
+      ],
+      "image": "/images/infographics/medicine/med_kt2_4_renaissance_harvey_plague_mat.webp",
+      "fileSizeKb": 947
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_2_5",
+      "slug": "med_kt2_5_renaissance_harvey_and_plague_breakthrough",
+      "title": "Harvey's Mechanical Heart & The 1665 Plague Quarantine",
+      "topic": "Key Topics 2.4 & 2.5: Circulation and The Great Plague",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The heart as a mechanical pump: Blood flows through arteries from the heart and returns through veins.",
+        "The 1665 Plague response: Systematic slaughter of ~40,000 dogs and ~200,000 cats (which worsened the rat infestation).",
+        "Miasma prevention: Streets fumigated with burning barrels of pitch; plague doctors wore bird-beak masks filled with herbs.",
+        "Plague orders: Theatres, taverns, and public gatherings banned; curfew strictly enforced across London wards.",
+        "End of the epidemic: Cold winter of 1665 and the Great Fire of London (September 1666) helped destroy rat habitats."
+      ],
+      "image": "/images/infographics/medicine/med_kt2_5_renaissance_harvey_and_plague_breakthrough.webp",
+      "fileSizeKb": 495
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_2_5",
+      "slug": "med_kt2_5_spot_difference_1348_vs_1665",
+      "title": "Spot the Difference: The Black Death (1348) vs The Great Plague (1665)",
+      "topic": "Key Topic 2.5: Comparison of Black Death and Great Plague",
+      "type": "comparative_analysis",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Causes: In both 1348 and 1665, people still blamed God, bad planetary alignment, and miasma (300 years of continuity).",
+        "Medical knowledge: Germ Theory was still 200 years away; physicians still had zero understanding of flea or bacterial contagion.",
+        "Treatment continuity: Patients in both eras were bled, purged, and given herbal concoctions like Venice Treacle.",
+        "Key change in government action: In 1665, local authorities were far more organized, enforcing house quarantines and searchers.",
+        "Pest houses: Purpose-built isolation wards established outside city boundaries in 1665 to isolate the sick."
+      ],
+      "image": "/images/infographics/medicine/med_kt2_5_spot_difference_1348_vs_1665.webp",
+      "fileSizeKb": 666
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_2_5",
+      "slug": "med_kt2_5_renaissance_prevention_treatment",
+      "title": "Renaissance Prevention & Treatment: Chemical Cures & Transference",
+      "topic": "Key Topic 2.5: Continuity in Treatment",
+      "type": "lesson_summary",
+      "aspect": "portrait",
+      "keyPoints": [
+        "Transference theory: Belief that an illness could be transferred from a patient to an animal or object (e.g. strapping a plucked chicken to buboes).",
+        "Iatrochemistry (chemical medicine): Paracelsus pioneered using mineral treatments like antimony and mercury rather than herbs.",
+        "New World remedies: Exploration brought tobacco (heralded as universal cure), cinchona bark, and sarsaparilla to Britain.",
+        "Persistent quackery: Charlatans sold patent medicines and \"sovereign remedies\" at fairs without any regulation.",
+        "Royal Touch: Believed that monarchs possessed divine healing power to cure scrofula (\"the King's Evil\") with their touch."
+      ],
+      "image": "/images/infographics/medicine/med_kt2_5_renaissance_prevention_treatment.webp",
+      "fileSizeKb": 895
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_1",
+      "slug": "med_industrial_era_overview",
+      "title": "Industrial Medicine: The Scientific Revolution & Germs (c1700–c1900)",
+      "topic": "Key Topic 3: Medicine in Eighteenth & Nineteenth Century Britain",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Rapid urbanization: Industrial cities (Manchester, Leeds, London) suffered catastrophic overcrowding, filth, and low life expectancy.",
+        "Louis Pasteur's Germ Theory (1861): Destroyed spontaneous generation and proved microscopic bacteria cause decay and disease.",
+        "Robert Koch's bacteriology: Identified specific microbes causing anthrax, tuberculosis, and cholera; used agar jelly and dyes.",
+        "Surgical transformation: James Simpson introduced chloroform anaesthetic (1847); Joseph Lister introduced carbolic antiseptic (1867).",
+        "Public health reform: John Snow proved cholera is waterborne (1854); 1875 Public Health Act mandated sewers and clean water."
+      ],
+      "image": "/images/infographics/medicine/med_industrial_era_overview.webp",
+      "fileSizeKb": 517
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_1",
+      "slug": "med_kt3_1_germ_revolution_timeline",
+      "title": "The Germ Theory Revolution: Spontaneous Generation to Microbes (1861–1883)",
+      "topic": "Key Topic 3.1: Pasteur and Koch",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Pre-1861 orthodoxy: Spontaneous generation claimed microbes appeared out of decaying matter automatically.",
+        "Swan-neck flask experiments: Pasteur proved sterilized broth only decayed when exposed to airborne dust particles carrying germs.",
+        "1861 publication: Pasteur publishes Germ Theory, though initially rejected by British doctors (e.g. Dr Henry Bastian).",
+        "Anthrax and rabies vaccines: Pasteur developed attenuated (weakened) pathogen vaccines for animals and humans (1885).",
+        "Decisive shift: Proved specific microscopic living organisms cause specific infections, establishing modern bacteriology."
+      ],
+      "image": "/images/infographics/medicine/med_kt3_1_germ_revolution_timeline.webp",
+      "fileSizeKb": 425
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_1",
+      "slug": "med_kt3_1_louis_pasteur",
+      "title": "Louis Pasteur: Architect of Germ Theory & Immunology (1822–1895)",
+      "topic": "Key Topic 3.1: Ideas on Causes: Pasteur’s Germ Theory",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "French chemist hired by Lille brewing industry (1857) to explain why beer and wine soured into vinegar.",
+        "Invented \"Pasteurization\": Gentle heating to 60°C killed harmful bacteria without ruining beverage taste.",
+        "1865 Silkworm investigation: Proved pébrine disease in silkworms was caused by a living microscopic parasite.",
+        "Chicken cholera breakthrough (1879): Charles Chamberland accidentally injected old cholera culture; chickens survived and gained immunity.",
+        "Global triumph: In 1885, Pasteur successfully cured 9-year-old Joseph Meister of fatal rabies using attenuated spinal cord vaccine."
+      ],
+      "image": "/images/infographics/medicine/med_kt3_1_louis_pasteur.webp",
+      "fileSizeKb": 409
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_1",
+      "slug": "med_kt3_1_robert_koch",
+      "title": "Robert Koch: \"Father of Modern Bacteriology\" & Microbe Hunter (1843–1910)",
+      "topic": "Key Topic 3.1: Koch's Microbe Hunters",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "German doctor who developed groundbreaking laboratory techniques: Solid agar jelly medium and industrial methyl violet dyes.",
+        "High-magnification photography: Took photomicrographs of bacteria so scientists worldwide could identify specific species.",
+        "Breakthrough discoveries: Identified anthrax bacillus (1876), Mycobacterium tuberculosis (1882), and Vibrio cholerae (1883).",
+        "Koch's Postulates: Rigorous 4-step scientific protocol required to prove a specific microbe causes a specific disease.",
+        "National rivalry: Franco-Prussian War intensified competition between Koch and Pasteur, accelerating government medical funding."
+      ],
+      "image": "/images/infographics/medicine/med_kt3_1_robert_koch.webp",
+      "fileSizeKb": 547
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_1",
+      "slug": "med_kt3_1_germ_theory_revolution_infographic",
+      "title": "From Miasma to Microbes: The 19th Century Germ Revolution",
+      "topic": "Key Topic 3.1: Ideas on Causes",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Overturned 2,000 years of miasma theory: Proved that disease is not caused by bad air or poisonous smells.",
+        "Transformed hospital hygiene: Provided scientific justification for antiseptic surgery, clean water supply, and sterilization.",
+        "Inspired Joseph Lister: Realized carbolic acid destroyed aerial bacteria in surgical compound fractures.",
+        "Government public health justification: Forced British Parliament to abandon laissez-faire policy and mandate clean sewers.",
+        "Modern vaccine manufacturing: Opened the door to laboratory-developed vaccines for diphtheria, tetanus, and typhoid."
+      ],
+      "image": "/images/infographics/medicine/med_kt3_1_germ_theory_revolution_infographic.webp",
+      "fileSizeKb": 640
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_2",
+      "slug": "med_kt3_2_edward_jenner",
+      "title": "Edward Jenner & The Smallpox Vaccine Breakthrough (1796)",
+      "topic": "Key Topic 3.2: Approaches to Prevention: Edward Jenner",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Gloucestershire country doctor observed that dairy milkmaids never contracted deadly smallpox after having mild cowpox.",
+        "May 1796 experiment: Inoculated 8-year-old James Phipps with pus from milkmaid Sarah Nelmes's cowpox lesion.",
+        "Proof of immunity: Later inoculated Phipps with real smallpox multiple times; the boy showed zero symptoms of illness.",
+        "Published findings (1798): Named procedure \"vaccination\" (from Latin vacca for cow); faced fierce initial opposition from inoculators.",
+        "Government backing: Parliament awarded Jenner £30,000; smallpox vaccination made compulsory in Britain in 1853."
+      ],
+      "image": "/images/infographics/medicine/med_kt3_2_edward_jenner.webp",
+      "fileSizeKb": 550
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_5",
+      "slug": "med_kt3_2_medical_revolutions_1700_1900",
+      "title": "Medical Revolutions: Jenner, Snow & The 1854 Broad Street Pump (1700–1900)",
+      "topic": "Key Topic 3.5: Public Health, Snow & Cholera",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Inoculation danger: Lady Mary Wortley Montagu brought variolation from Turkey in 1721, but it killed 2–3% of patients.",
+        "Jenner's cowpox vaccine eliminated the risk of triggering active smallpox epidemics.",
+        "John Snow and the Blue Death (1854): Mapped cholera deaths to the Broad Street pump, proving water transmission before Germ Theory.",
+        "The Great Stink (1858) and 1875 Public Health Act: Ended laissez-faire; forced councils to fund Bazalgette sewers and clean water.",
+        "World Health Organization (WHO) declared smallpox totally eradicated worldwide in 1980 thanks to Jenner's technique."
+      ],
+      "image": "/images/infographics/medicine/med_kt3_2_medical_revolutions_1700_1900.webp",
+      "fileSizeKb": 811
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_4",
+      "slug": "med_kt3_3_florence_nightingale",
+      "title": "The Knife's Edge: How Surgery Evolved from Horror to High-Tech (1840–Present)",
+      "topic": "Key Topic 3.4: The Surgical Revolution: Pain, Sepsis & High-Tech Precision",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Triple surgical threats: For centuries, surgery was blocked by extreme pain, fatal wound infection, and uncontrollable blood loss.",
+        "1840–1900 Breakthroughs: James Simpson discovered Chloroform (1847); Joseph Lister introduced carbolic acid spray (1865), reducing surgical death rates from 46% to 15%.",
+        "Shift to Aseptic Surgery: By the 1890s, operating theatres moved from killing germs to keeping germs out using steam-sterilized instruments and gowns/gloves.",
+        "War and Technology: WWI accelerated the Thomas Splint (cutting femur mortality 80% to 20%), mobile X-ray vans, and sodium citrate blood depots.",
+        "Modern Robotic Precision: 20th and 21st-century micro-surgery and robotic laparoscopy allow complex internal operations through tiny incisions."
+      ],
+      "image": "/images/infographics/medicine/med_kt3_3_florence_nightingale.webp",
+      "fileSizeKb": 474
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_4",
+      "slug": "med_kt3_4_surgery_revolution_overview",
+      "title": "The Surgical Revolution: Conquering Pain, Sepsis & Shock (1840–1890)",
+      "topic": "Key Topic 3.4: The Surgical Revolution",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The three surgical barriers: Extreme pain, massive blood loss (shock), and post-operative fatal infection (sepsis).",
+        "Humphrey Davy (nitrous oxide) and Robert Liston (ether, 1846) attempted early anaesthetics with dangerous side effects.",
+        "James Simpson (1847): Discovered chloroform properties during dinner party experiments; used by Queen Victoria in childbirth (1853).",
+        "The \"Black Period\" of surgery (1870s): Anaesthetics led surgeons to operate deeper inside the body, increasing infection deaths.",
+        "Joseph Lister (1867): Used carbolic acid spray and dressings, slashing surgical amputation mortality from 46% to 15%."
+      ],
+      "image": "/images/infographics/medicine/med_kt3_4_surgery_revolution_overview.webp",
+      "fileSizeKb": 421
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_4",
+      "slug": "med_kt3_4_conquering_operating_theatre",
+      "title": "Conquering the Operating Theatre: From Antiseptic to Aseptic Surgery",
+      "topic": "Key Topic 3.4: Simpson, Lister and Sepsis",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Carbolic acid spray: Joseph Lister soaked surgical catgut, dressings, and sprayed air over wounds to kill airborne microbes.",
+        "Unpopular carbolic drawbacks: Irritated surgeons' lungs, dried skin, and cracked nurses' hands; slowed operations down.",
+        "Transition to aseptic surgery (1890s): Moving from killing germs in the wound (antiseptic) to keeping germs out entirely (aseptic).",
+        "Autoclave steam sterilizers: Ernst von Bergmann introduced pressurized steam to sterilize surgical instruments in 1886.",
+        "Sterile apparel: William Halsted introduced sterilized rubber surgical gloves (1890); face masks and sterilized gowns followed."
+      ],
+      "image": "/images/infographics/medicine/med_kt3_4_conquering_operating_theatre.webp",
+      "fileSizeKb": 363
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_3",
+      "slug": "med_kt3_4_breakthroughs_1700_1900",
+      "title": "19th-Century Medical & Hospital Revolutions: Nightingale, Jenner & Lister (1700–1900)",
+      "topic": "Key Topic 3.3: Improvements in Hospital Care & Nursing",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Foundations of Prevention: Edward Jenner developed the smallpox vaccine in 1796 using cowpox, establishing global scientific immunization.",
+        "Florence Nightingale at Scutari (1854): Transformed military hospital hygiene and ventilation, slashing death rates from 42% to just 2%.",
+        "Professionalization of Nursing (1860): Nightingale established the first professional training school for nurses at St Thomas' Hospital.",
+        "Scientific Breakthroughs: Louis Pasteur proved Germ Theory (1861); Joseph Lister created antiseptic carbolic spray (1865–1867).",
+        "Compulsory Public Health: The 1875 Second Public Health Act forced local councils to provide clean water, sewers, and sanitary inspectors."
+      ],
+      "image": "/images/infographics/medicine/med_kt3_4_breakthroughs_1700_1900.webp",
+      "fileSizeKb": 849
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_3_5",
+      "slug": "med_kt3_5_public_health_timeline",
+      "title": "The Public Health Evolution: Edwin Chadwick to the 1875 Act (1842–1875)",
+      "topic": "Key Topic 3.5: Public Health and Cholera",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Edwin Chadwick's 1842 Report: Proved filthy living conditions caused rampant disease and premature death among workers.",
+        "1848 Public Health Act: Set up Central Board of Health; non-compulsory (permissive), so most town councils did nothing.",
+        "Dr John Snow & Cholera (1854): Removed handle from Broad Street pump, proving cholera was waterborne before Germ Theory.",
+        "The Great Stink (1858): Hot summer caused River Thames sewage smell to overwhelm Parliament, forcing MPs to fund sewers.",
+        "Joseph Bazalgette's London sewer network (1865): 1,100 miles of brick sewers carried sewage east of London.",
+        "1875 Public Health Act: Ended laissez-faire; mandated town councils provide clean water, sewers, street paving, and health inspectors."
+      ],
+      "image": "/images/infographics/medicine/med_kt3_5_public_health_timeline.webp",
+      "fileSizeKb": 504
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_4_1",
+      "slug": "med_modern_era_overview",
+      "title": "Modern Medicine: The High-Tech, Genetic & Pharmaceutical Era (c1900–Present)",
+      "topic": "Key Topic 4: Medicine in Modern Britain, c1900–present",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Genetic breakthrough: Watson, Crick, Franklin & Wilkins discover the double helix structure of DNA in 1953.",
+        "The Human Genome Project (1990–2003): Mapped all 3 billion chemical base pairs in human DNA to diagnose genetic diseases.",
+        "High-tech diagnosis: X-rays, blood tests, CT scans, MRI scanners, endoscopes, and ultrasound revolutionized clinical accuracy.",
+        "Magic bullets and antibiotics: Paul Ehrlich (Salvarsan 606, 1909), Alexander Fleming (Penicillin, 1928), Domagk (Prontosil, 1932).",
+        "Welfare state and NHS: Aneurin Bevan launches National Health Service on July 5, 1948—free care at the point of delivery."
+      ],
+      "image": "/images/infographics/medicine/med_modern_era_overview.webp",
+      "fileSizeKb": 355
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_4_2",
+      "slug": "med_kt4_1_evolution_modern_medical_science",
+      "title": "Evolution of Modern Medical Science: Lifestyle Factors & Diagnosis (c1900–Present)",
+      "topic": "Key Topic 4.2: Lifestyle Factors & Technological Revolution in Diagnosis",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Discovery of hereditary mechanisms: Shifted focus from fighting external bacteria to understanding inherited chromosomal traits.",
+        "Lifestyle disease links: Sir Richard Doll and Austin Bradford Hill proved smoking directly causes lung cancer in 1950.",
+        "Blood pressure and blood sugar monitors: Enabled early diagnosis of chronic conditions before fatal strokes or organ failure.",
+        "Shift toward preventive healthcare: Screening programs, breast cancer mammograms, and genetic testing for BRCA mutations.",
+        "Government public health legislation: Banning tobacco advertising (1965), seatbelt laws (1983), and indoor smoking bans (2007)."
+      ],
+      "image": "/images/infographics/medicine/med_kt4_1_evolution_modern_medical_science.webp",
+      "fileSizeKb": 719
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_4_1",
+      "slug": "med_kt4_1_genomic_revolution_timeline",
+      "title": "The Genomic Revolution: DNA, Genetic Engineering & Gene Therapy (1953–2003)",
+      "topic": "Key Topic 4.1: Genetics, DNA and Human Genome",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "April 1953: James Watson and Francis Crick published double-helix model, building on Rosalind Franklin's Photo 51 X-ray crystallography.",
+        "Understanding hereditary code: Revealed how genetic instructions determine human growth, cellular function, and hereditary faults.",
+        "The Human Genome Project (launched 1990): Global scientific collaboration led by scientists across 6 nations to map all human DNA.",
+        "Completion in 2003: Unlocked customized medical treatments, targeted chemotherapy drugs, and pre-natal genetic disorder screening.",
+        "Modern ethical dilemmas: Controversies over stem-cell cloning, gene editing (CRISPR), and genetic discrimination by insurers."
+      ],
+      "image": "/images/infographics/medicine/med_kt4_1_genomic_revolution_timeline.webp",
+      "fileSizeKb": 349
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_4_3",
+      "slug": "med_kt4_2_history_modern_medicine_timeline",
+      "title": "From Magic Bullets to the NHS: Modern Medical Breakthroughs (1900–1948)",
+      "topic": "Key Topic 4.3: Magic Bullets and the Birth of the NHS",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Paul Ehrlich & Chemical Therapy: Searched for antibodies called \"magic bullets\" that destroyed specific microbes without harming the body.",
+        "1909: Discovery of Salvarsan 606 to cure syphilis; Gerhard Domagk discovered Prontosil (first sulphonamide) for blood poisoning (1932).",
+        "Alexander Fleming discovered Penicillin mould (1928); Howard Florey and Ernst Chain mass-produced it during WWII (1941–1944).",
+        "William Beveridge Report (1942): Proposed government war on the \"Five Giant Evils\" (Want, Disease, Ignorance, Squalor, Idleness).",
+        "Launch of the NHS (July 5, 1948): Replaced uneven voluntary/private medical care with universal free healthcare for all citizens."
+      ],
+      "image": "/images/infographics/medicine/med_kt4_2_history_modern_medicine_timeline.webp",
+      "fileSizeKb": 744
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_4_4",
+      "slug": "med_kt4_4_history_penicillin_guide",
+      "title": "Penicillin: The World's First True Miracle Antibiotic (1928–1945)",
+      "topic": "Key Topic 4.4: The Antibiotic Revolution: Fleming, Florey & Chain",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "September 1928: Alexander Fleming noticed Penicillium notatum mould dissolved Staphylococcus bacteria on an untidy petri dish.",
+        "Fleming published findings (1929) but could not purify the unstable mould and lacked chemical engineering expertise.",
+        "Oxford team breakthrough (1938–1940): Howard Florey and Ernst Chain purified penicillin liquid and tested it on mice.",
+        "1941 Albert Alexander trial: Policeman with severe septic scratch dramatically improved, but died when drug supply ran out.",
+        "US industrial mass production: Pearl Harbor spurred US War Production Board to mass produce penicillin in deep-fermentation corn steep vats.",
+        "D-Day (June 1944): 2.3 million doses available; saved an estimated 15% of wounded Allied soldiers from fatal infection."
+      ],
+      "image": "/images/infographics/medicine/med_kt4_4_history_penicillin_guide.webp",
+      "fileSizeKb": 795
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_4_4",
+      "slug": "med_kt4_4_penicillin_breakthrough_deepdive",
+      "title": "The Penicillin Trio: Fleming, Florey, Chain & Industrial Mass Production",
+      "topic": "Key Topic 4.4: Antibiotics and War",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Factor collaboration: Chance (Fleming's open window), Individual genius (Florey & Chain), Government & War (US funding).",
+        "In 1945, Fleming, Florey, and Chain were jointly awarded the Nobel Prize in Physiology or Medicine.",
+        "Transformed global health: Penicillin cured syphilis, gonorrhea, pneumonia, gangrene, and common bacterial infections.",
+        "Inspired antibiotic explosion: Spurred discovery of streptomycin (1943) for tuberculosis and tetracyclines.",
+        "Modern crisis: Over-prescription and animal feed misuse created \"superbugs\" like MRSA resistant to common antibiotics."
+      ],
+      "image": "/images/infographics/medicine/med_kt4_4_penicillin_breakthrough_deepdive.webp",
+      "fileSizeKb": 424
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_4_5",
+      "slug": "med_kt4_5_lung_cancer_case_study",
+      "title": "Case Study: The Battle Against Lung Cancer (1950–Present)",
+      "topic": "Key Topic 4.5: Public Health and Lung Cancer",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Epidemiological evidence: In 1950, Richard Doll and Austin Bradford Hill demonstrated that 90% of lung cancer cases link to smoking.",
+        "Lethal statistics: Lung cancer is the leading cause of cancer death in Britain, killing over 35,000 people annually.",
+        "Advanced diagnosis: CT scans, bronchoscopies with miniature biopsy cameras, and PET scans pinpoint tumor stages.",
+        "Modern treatment: Targeted radiotherapy, chemotherapy cocktails, lobectomy robotic surgery, and genetic immunotherapy.",
+        "Prevention focus: Government intervention proved far more effective than treatment in reducing disease rates."
+      ],
+      "image": "/images/infographics/medicine/med_kt4_5_lung_cancer_case_study.webp",
+      "fileSizeKb": 875
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_4_5",
+      "slug": "med_kt4_5_modern_lung_cancer_campaigns",
+      "title": "Government Intervention & Anti-Smoking Campaigns (1962–2020)",
+      "topic": "Key Topic 4.5: Public Health Legislation and Cancer",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "1962 Royal College of Physicians report: Formally warned that cigarette smoking was causing a national health catastrophe.",
+        "1965: British government banned cigarette advertising on television.",
+        "2007: Legal smoking age raised from 16 to 18; public smoking ban introduced across all enclosed workplaces and pubs.",
+        "2016: Plain standardized cigarette packaging mandated by law with graphic pictorial health warnings.",
+        "Heavy taxation: Cigarette duties steadily increased to discourage youth uptake and fund NHS healthcare."
+      ],
+      "image": "/images/infographics/medicine/med_kt4_5_modern_lung_cancer_campaigns.webp",
+      "fileSizeKb": 431
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_5_4",
+      "slug": "med_kt5_4_evacuation_chain_map",
+      "title": "The Western Front Chain of Evacuation (1914–1918)",
+      "topic": "Key Topic 5.4: The Chain of Evacuation",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Regimental Aid Post (RAP): 200m behind front lines; Regimental Medical Officer (RMO) administered basic first aid and bandages.",
+        "Dressing Stations (Advanced & Main): 1,000m back; run by Field Ambulances (RAMC); sorted casualties into walking, wounded, and dying (Triage).",
+        "Casualty Clearing Station (CCS): 10 miles back; near railway lines; performed emergency surgery, amputations, and blood transfusions.",
+        "Base Hospitals: At French coast ports (Calais, Boulogne); large general hospitals with operating theatres and recovery beds.",
+        "Medical transport: Motor ambulances, horse-drawn carts, hospital canal barges, and dedicated hospital trains with surgical wards."
+      ],
+      "image": "/images/infographics/medicine/med_kt5_4_evacuation_chain_map.webp",
+      "fileSizeKb": 462
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_5_5",
+      "slug": "med_kt5_5_wwi_medical_innovations",
+      "title": "WWI Battlefield Trauma: Gas Gangrene, Splints & Transfusions",
+      "topic": "Key Topic 5.5 & 5.6: Surgical Breakthroughs and Innovations",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Soil contamination: Heavily manured Belgian and French farmland harboured lethal anaerobic bacteria causing gas gangrene.",
+        "Wound debridement: Surgical cutting away of all dead, infected tissue to starve bacteria of oxygen before suturing.",
+        "Carrel-Dakin method: Continuous irrigation of deep wounds with sterile sodium hypochlorite antiseptic solution.",
+        "The Thomas Splint (1916): Reduced compound femur fracture mortality from 80% to just 20% by immobilizing the broken bone.",
+        "Mobile X-ray vans: Marie Curie and British army deployed mobile X-ray units to locate shrapnel and bullets before surgery."
+      ],
+      "image": "/images/infographics/medicine/med_kt5_5_wwi_medical_innovations.webp",
+      "fileSizeKb": 451
+    },
+    {
+      "unit": "edexcel_medicine",
+      "lessonId": "lesson_5_3",
+      "slug": "med_kt5_5_fighting_wwi_wound_infections",
+      "title": "The Invisible Foe: Fighting Wound Infection on the Western Front (1914–1918)",
+      "topic": "Key Topic 5.3: Battlefield Trauma: Shrapnel, Soil Bacteria & Gas Gangrene",
+      "type": "thematic_deep_dive",
+      "aspect": "portrait",
+      "keyPoints": [
+        "High-explosive shrapnel shells caused 58% of all battlefield wounds, driving muddy uniform fabric deep into shattered bones.",
+        "Trench foot and trench fever: Caused by standing in cold water and body lice; treated with whale oil, dry socks, and delousing stations.",
+        "Soil contamination: Heavily manured farmland harboured lethal anaerobic tetanus and gas gangrene spores.",
+        "Wound excision (debridement): Cutting away dead/damaged tissue and flushing with Carrel-Dakin antiseptic solution.",
+        "Amputation as last resort: Over 240,000 British limbs amputated by 1918 to stop fatal gangrene spreading."
+      ],
+      "image": "/images/infographics/medicine/med_kt5_5_fighting_wwi_wound_infections.webp",
+      "fileSizeKb": 566
+    }
+  ],
+  "usa": [
+    {
+      "unit": "usa",
+      "lessonId": "exam_practice",
+      "slug": "usa_paper3_exam_strategy_guide",
+      "title": "Edexcel GCSE Paper 3: Examination Strategy (Q1–Q3d)",
+      "topic": "Paper 3 Section A & B Skills: Inferences, Causation & Interpretations",
+      "type": "exam_technique",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Q1 Inference [4m]: Give two inferences supported by explicit quotes/details from Source A.",
+        "Q2 Explain Why [12m]: Three structured PEEL paragraphs explaining causes using 2 stimulus points + 1 own knowledge.",
+        "Q3(a) Utility [8m]: Content and provenance (COP) of Sources B & C for a specified line of enquiry.",
+        "Q3(b/c) Interpretations [4m each]: Explain how and why Interpretations 1 & 2 differ in emphasis or evidence.",
+        "Q3(d) Agree with Interpretation [16m + 4m SPaG]: Substantiated criteria-led judgement evaluating Interpretation 1 against Interpretation 2."
+      ],
+      "image": "/images/infographics/usa/usa_paper3_exam_strategy_guide.webp",
+      "fileSizeKb": 282
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_1_1",
+      "slug": "usa_kt1_1_black_equality_struggle_1950s",
+      "title": "The Position of Black Americans in the Early 1950s",
+      "topic": "Key Topic 1.1: Position of Black Americans in the Early 1950s",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Jim Crow laws enforced rigid legal segregation across Southern public facilities, schools, and transport.",
+        "Disenfranchisement: Poll taxes, literacy tests, and violent intimidation blocked Black voter registration.",
+        "The Great Migration: Millions of African Americans moved to northern cities, facing de facto segregation and ghettoization.",
+        "Early activism: The NAACP pursued targeted legal challenges against the \"separate but equal\" doctrine.",
+        "Plessy v Ferguson (1896) remained the constitutional foundation underpinning Southern white supremacy."
+      ],
+      "image": "/images/infographics/usa/usa_kt1_1_black_equality_struggle_1950s.webp",
+      "fileSizeKb": 383
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_1_2",
+      "slug": "usa_kt1_2_fight_for_equal_education",
+      "title": "Brown v Board of Education & The Little Rock Nine (1954–1957)",
+      "topic": "Key Topic 1.2: Developments in Education",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Brown v Board of Education (May 1954): Supreme Court ruled school segregation unconstitutional, overturning Plessy.",
+        "Chief Justice Earl Warren declared that \"separate educational facilities are inherently unequal\".",
+        "Southern \"Massive Resistance\": Southern Manifesto signed by 101 congressmen; closure of public schools.",
+        "Little Rock Central High (1957): Governor Orval Faubus deployed National Guard to block nine Black students.",
+        "President Eisenhower sent the 101st Airborne Division to enforce federal court orders and protect the students."
+      ],
+      "image": "/images/infographics/usa/usa_kt1_2_fight_for_equal_education.webp",
+      "fileSizeKb": 410
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_1_3",
+      "slug": "usa_kt1_3_montgomery_bus_boycott",
+      "title": "The Montgomery Bus Boycott & The Rise of MLK (1955–1960)",
+      "topic": "Key Topic 1.3: The Montgomery Bus Boycott",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "December 1, 1955: Rosa Parks arrested for refusing to surrender her seat to a white passenger in Montgomery, Alabama.",
+        "Montgomery Improvement Association (MIA) formed, electing 26-year-old Dr Martin Luther King Jr as leader.",
+        "381-day sustained boycott: ~40,000 Black residents organized carpools and walked, costing bus companies massive revenue.",
+        "Browder v Gayle (November 1956): Supreme Court declared bus segregation laws unconstitutional under the 14th Amendment.",
+        "Foundation of SCLC (1957): Cemented non-violent direct action and Christian pacifism as central civil rights strategy."
+      ],
+      "image": "/images/infographics/usa/usa_kt1_3_montgomery_bus_boycott.webp",
+      "fileSizeKb": 374
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_1_4",
+      "slug": "usa_kt1_4_resistance_to_civil_rights",
+      "title": "White Supremacy & Opposition to Civil Rights (1950s–1960s)",
+      "topic": "Key Topic 1.4: Opposition to the Civil Rights Movement",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Ku Klux Klan (KKK) resurgence: Terror campaigns, cross burnings, firebombings, and targeted murders.",
+        "White Citizens' Councils (WCC): Middle-class economic boycotts, sacking Black workers and evicting tenants.",
+        "Emmett Till murder (August 1955): 14-year-old lynched in Mississippi; all-white jury acquitted killers in 67 minutes.",
+        "Southern political resistance: Police forces (e.g. Bull Connor in Birmingham) colluded with violent vigilantes.",
+        "Dixiecrats in Congress used filibusters to dilute and delay federal civil rights legislation."
+      ],
+      "image": "/images/infographics/usa/usa_kt1_4_resistance_to_civil_rights.webp",
+      "fileSizeKb": 488
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_1",
+      "slug": "usa_kt2_1_civil_rights_struggle_1960_1962",
+      "title": "Direct Action & Student Activism: Sit-Ins & Freedom Rides (1960–1962)",
+      "topic": "Key Topic 2.1: Progress and Developments, 1960–1962",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Greensboro sit-ins (Feb 1960): 4 Black students at Woolworth's lunch counter sparked nationwide sit-in movement.",
+        "Formation of SNCC (Student Nonviolent Coordinating Committee) to mobilize grassroots student protests.",
+        "Freedom Rides (May 1961): CORE activists rode interstate buses to test Supreme Court desegregation rulings.",
+        "Anniston and Birmingham attacks: Buses firebombed and riders brutally beaten while police held back.",
+        "Federal enforcement: Attorney General Robert Kennedy ordered Interstate Commerce Commission to desegregate transit."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_1_civil_rights_struggle_1960_1962.webp",
+      "fileSizeKb": 410
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_1",
+      "slug": "usa_kt2_1_greensboro_sit_ins",
+      "title": "The Greensboro Lunch Counter Sit-Ins (1960)",
+      "topic": "Key Topic 2.1: Progress and Developments, 1960–1962",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "February 1, 1960: Ezell Blair Jr, David Richmond, Franklin McCain, and Joseph McNeil staged sit-in at Woolworth's.",
+        "Rapid escalation: Within a week, 54 students joined; within months, 70,000 students participated across 55 cities.",
+        "Economic pressure: Boycotts of downtown stores cost retailers substantial revenue, forcing integration.",
+        "July 1960: Greensboro Woolworth's officially served its first Black employees at the counter.",
+        "Catalyzed formation of SNCC under Ella Baker, creating student-led direct-action vanguard."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_1_greensboro_sit_ins.webp",
+      "fileSizeKb": 348
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_1",
+      "slug": "usa_kt2_1_freedom_rides_1961",
+      "title": "The Freedom Rides & Interstate Desegregation (1961)",
+      "topic": "Key Topic 2.1: Progress and Developments, 1960–1962",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "May 4, 1961: 13 CORE riders (7 Black, 6 white) departed Washington DC bound for New Orleans.",
+        "Boynton v Virginia (1960) integration mandate systematically ignored across Deep South states.",
+        "May 14 (Mother's Day): Greyhound bus ambushed, firebombed, and passengers assaulted outside Anniston, Alabama.",
+        "Over 400 riders arrested in Jackson, Mississippi and sent to notorious Parchman Penitentiary.",
+        "November 1, 1961: ICC issued strict regulations enforcing total desegregation of all interstate transit terminals."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_1_freedom_rides_1961.webp",
+      "fileSizeKb": 499
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_2",
+      "slug": "usa_kt2_2_birmingham_campaign_1963",
+      "title": "Project C & The Birmingham Campaign (1963)",
+      "topic": "Key Topic 2.2: Peaceful Protests and Their Impact, 1963–1965",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "April 1963: SCLC launched Project C (\"Confrontation\") targeting Birmingham, the most segregated city in America.",
+        "MLK arrested on Good Friday; penned his famous \"Letter from Birmingham Jail\" defending non-violent lawbreaking.",
+        "Children's Crusade (May 2–3): Police Chief Eugene \"Bull\" Connor deployed high-pressure fire hoses and attack dogs.",
+        "Media impact: Televised images of police brutality shocked international audiences and embarrassed President Kennedy.",
+        "Kennedy announced comprehensive civil rights legislation on national television in June 1963."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_2_birmingham_campaign_1963.webp",
+      "fileSizeKb": 461
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_2",
+      "slug": "usa_kt2_2_civil_rights_milestones_1964_1965",
+      "title": "Civil Rights Act 1964 & Voting Rights Act 1965",
+      "topic": "Key Topic 2.2: Peaceful Protests and Their Impact, 1963–1965",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Civil Rights Act (July 1964): Banned discrimination in public accommodations, schools, and federally funded programs.",
+        "Equal Employment Opportunity Commission (EEOC) established to prevent employment discrimination.",
+        "Selma to Montgomery marches (March 1965): \"Bloody Sunday\" at Edmund Pettus Bridge televised state trooper violence.",
+        "Voting Rights Act (August 1965): Suspended literacy tests and authorized federal examiners to register Black voters.",
+        "African American voter registration in the South soared: Mississippi jumped from 6.7% in 1964 to 59.8% in 1967."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_2_civil_rights_milestones_1964_1965.webp",
+      "fileSizeKb": 419
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_2",
+      "slug": "usa_kt2_2_civil_rights_successes_1963_1965",
+      "title": "The Turning Point: March on Washington to Voting Rights (1963–1965)",
+      "topic": "Key Topic 2.2: Peaceful Protests and Their Impact, 1963–1965",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "March on Washington (August 28, 1963): 250,000 marchers gathered at Lincoln Memorial; MLK delivered \"I Have a Dream\".",
+        "16th Street Baptist Church bombing (Sept 1963): 4 young Black girls killed by KKK dynamite in Birmingham.",
+        "President Lyndon B Johnson leveraged national grief after JFK's assassination to pass the 1964 Civil Rights Act.",
+        "Selma Marches (1965) mobilized moral outrage that directly forced the passage of the Voting Rights Act.",
+        "24th Amendment (1964) outlawed poll taxes in federal elections, eliminating a key barrier to Black suffrage."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_2_civil_rights_successes_1963_1965.webp",
+      "fileSizeKb": 429
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_2",
+      "slug": "usa_kt2_2_freedom_summer_1964",
+      "title": "Mississippi Freedom Summer & The Murders of Chaney, Goodman & Schwerner (1964)",
+      "topic": "Key Topic 2.2: Peaceful Protests and Their Impact, 1963–1965",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Summer 1964: ~1,000 mostly white northern college volunteers went to Mississippi to register Black voters.",
+        "Freedom Schools established: 41 schools taught 3,000 Black children reading, math, and Black history.",
+        "June 21, 1964: Civil rights workers James Chaney, Andrew Goodman, and Michael Schwerner abducted and murdered by KKK.",
+        "Mississippi Freedom Democratic Party (MFDP) organized under Fannie Lou Hamer to challenge all-white state delegation.",
+        "Backlash exposed depths of Southern defiance: 37 Black churches bombed, 80 workers beaten, 1,000 arrested."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_2_freedom_summer_1964.webp",
+      "fileSizeKb": 449
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_3",
+      "slug": "usa_kt2_3_black_power_movement_radical_shift",
+      "title": "The Black Power Movement & Radical Shift (1965–1970)",
+      "topic": "Key Topic 2.3: Malcolm X and Black Power, 1963–1970",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Growing disillusionment: Legal civil rights did not solve Northern urban poverty, police brutality, or slum housing.",
+        "Stokely Carmichael popularized \"Black Power\" slogan during the 1966 March Against Fear in Mississippi.",
+        "Shift in SNCC & CORE: Expelled white members and abandoned non-violence in favour of armed self-defence.",
+        "1968 Mexico City Olympics: Tommie Smith and John Carlos gave Black Power salute on the medal podium.",
+        "Cultural revolution: Promoted Black pride, Afro hairstyles, African heritage, and economic self-sufficiency."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_3_black_power_movement_radical_shift.webp",
+      "fileSizeKb": 485
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_3",
+      "slug": "usa_kt2_3_malcolm_x_evolution",
+      "title": "Malcolm X: Nation of Islam to Pan-African Unity (1952–1965)",
+      "topic": "Key Topic 2.3: Malcolm X and Black Power, 1963–1970",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Nation of Islam (NOI) spokesman: Preached Black separatism, self-reliance, and rejected non-violent integration.",
+        "Advocated self-defence: Defended Black Americans' right to protect themselves \"by any means necessary\".",
+        "March 1964 split: Broke with Elijah Muhammad over moral scandals and strict political inactivity rules.",
+        "1964 Hajj to Mecca: Transformed his views, embracing orthodox Sunni Islam and multiracial brotherhood.",
+        "February 21, 1965: Assassinated in Harlem by three NOI members; posthumous autobiography inspired Black Power."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_3_malcolm_x_evolution.webp",
+      "fileSizeKb": 368
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_3",
+      "slug": "usa_kt2_3_black_panther_party",
+      "title": "The Black Panther Party for Self-Defense (1966–1972)",
+      "topic": "Key Topic 2.3: Malcolm X and Black Power, 1963–1970",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "October 1966: Founded in Oakland, California by Huey P Newton and Bobby Seale.",
+        "Ten-Point Program demanded full employment, decent housing, education, and exemption of Black men from military draft.",
+        "Armed cop-watching: Exercised 2nd Amendment rights to openly carry firearms while monitoring police arrests.",
+        "Community Survival Programs: Free Breakfast for School Children fed 10,000+ daily; free health clinics and sickle-cell testing.",
+        "FBI COINTELPRO: Director J Edgar Hoover labeled Panthers greatest internal security threat, targeting leaders for disruption."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_3_black_panther_party.webp",
+      "fileSizeKb": 767
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_4",
+      "slug": "usa_kt2_4_civil_rights_law_vs_reality",
+      "title": "Urban Riots, The Kerner Report & De Facto Segregation (1965–1968)",
+      "topic": "Key Topic 2.4: The Civil Rights Movement, 1965–1975",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Watts Riot, Los Angeles (August 1965): 6 days of violence; 34 dead, 1,000 injured, $40 million in property damage.",
+        "\"Long Hot Summers\" (1966–1967): Over 150 race riots in northern/midwestern cities, including Detroit (43 dead) and Newark.",
+        "Kerner Commission (1968): Concluded America was \"moving toward two societies, one black, one white—separate and unequal\".",
+        "MLK's Chicago Campaign (1966): Highlighted northern housing discrimination and entrenched economic deprivation.",
+        "April 4, 1968: MLK assassinated in Memphis, triggering riots in over 100 American cities."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_4_civil_rights_law_vs_reality.webp",
+      "fileSizeKb": 445
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_2_4",
+      "slug": "usa_kt2_4_us_civil_rights_1965_1975_overview",
+      "title": "Civil Rights in the Nixon Era: Fair Housing & Affirmative Action (1968–1975)",
+      "topic": "Key Topic 2.4: The Civil Rights Movement, 1965–1975",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Civil Rights Act 1968 (Fair Housing Act): Banned discrimination in sale, rental, and financing of housing.",
+        "Swann v Charlotte-Mecklenburg (1971): Supreme Court approved busing students to achieve racial balance in schools.",
+        "Affirmative Action: Philadelphia Plan required federal contractors to set specific minority hiring goals.",
+        "Political progress: Rapid growth of Black elected officials, mayors in major cities, and Congressional Black Caucus (1971).",
+        "White backlash: \"Southern Strategy\" mobilized suburban and Southern white voters against busing and welfare reforms."
+      ],
+      "image": "/images/infographics/usa/usa_kt2_4_us_civil_rights_1965_1975_overview.webp",
+      "fileSizeKb": 470
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_3_1",
+      "slug": "usa_kt3_1_vietnam_roots_1954_1963",
+      "title": "The Cold War Roots of Vietnam: Geneva to Diem's Fall (1954–1963)",
+      "topic": "Key Topic 3.1: US Involvement in Vietnam, 1954–1963",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Domino Theory: Eisenhower warned that if South Vietnam fell to communism, neighbouring Asian nations would topple.",
+        "Geneva Accords (1954): French departure; Vietnam temporarily divided at 17th parallel with nationwide elections promised for 1956.",
+        "US backs Ngo Dinh Diem in South Vietnam; Diem refused to hold 1956 elections, knowing Ho Chi Minh would win.",
+        "Diem's oppressive regime: Favoured Catholic elite, repressed Buddhist majority, and alienated peasants through Strategic Hamlets.",
+        "1960: National Liberation Front (NLF / Vietcong) formed to overthrow Diem and unify Vietnam under communist rule."
+      ],
+      "image": "/images/infographics/usa/usa_kt3_1_vietnam_roots_1954_1963.webp",
+      "fileSizeKb": 475
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_3_1",
+      "slug": "usa_kt3_1_history_ngo_dinh_diem",
+      "title": "Ngo Dinh Diem: Repression, Buddhist Crisis & The 1963 Coup",
+      "topic": "Key Topic 3.1: US Involvement in Vietnam, 1954–1963",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Anti-communist dictator: Appointed family members to key posts and used secret police under brother Ngo Dinh Nhu.",
+        "Strategic Hamlets Program (1962): Forcibly relocated peasants behind barbed-wire fences, breeding hatred and VC sympathies.",
+        "Buddhist Crisis (May 1963): Diem banned Buddhist flags on the Buddha's birthday; troops fired into peaceful crowds.",
+        "Self-immolation of Thich Quang Duc (June 1963): Photograph shocked world; Madame Nhu dismissed it as a \"barbecue\".",
+        "November 2, 1963: South Vietnamese military coup backed by US ambassador Cabot Lodge overthrew and assassinated Diem."
+      ],
+      "image": "/images/infographics/usa/usa_kt3_1_history_ngo_dinh_diem.webp",
+      "fileSizeKb": 420
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_3_1",
+      "slug": "usa_kt3_1_vietnam_escalation_timeline_1954_1963",
+      "title": "Kennedy's \"Flexible Response\" & The Escalation of US Advisers (1961–1963)",
+      "topic": "Key Topic 3.1: US Involvement in Vietnam, 1954–1963",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Kennedy doctrine: Shifted from massive nuclear retaliation to counter-insurgency (\"Flexible Response\").",
+        "Expansion of military advisers (MACV): US troop presence surged from ~700 in 1961 to over 16,000 by late 1963.",
+        "Green Berets (Special Forces) trained South Vietnamese army (ARVN) in counter-guerrilla tactics.",
+        "Operation Ranch Hand (1961): Initial defoliation spraying of Agent Orange to strip jungle canopy and destroy food crops.",
+        "Battle of Ap Bac (Jan 1963): Outnumbered VC forces routed 1,500 ARVN troops equipped with US helicopters and armor."
+      ],
+      "image": "/images/infographics/usa/usa_kt3_1_vietnam_escalation_timeline_1954_1963.webp",
+      "fileSizeKb": 435
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_3_2",
+      "slug": "usa_kt3_2_vietnam_escalation_1964_1965",
+      "title": "The Gulf of Tonkin Incident & Operation Rolling Thunder (1964–1965)",
+      "topic": "Key Topic 3.2: Escalation Under Johnson",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Gulf of Tonkin Incident (August 1964): USS Maddox reported North Vietnamese torpedo boat attack; second attack disputed.",
+        "Gulf of Tonkin Resolution (August 1964): Congress gave Johnson authority to \"take all necessary measures to repel armed attack\".",
+        "February 1965: Vietcong mortar attack on US base at Pleiku killed 8 Americans, triggering aerial retaliation.",
+        "Operation Rolling Thunder (March 1965): Sustained bombing campaign of North Vietnam lasting over 3 years (864,000 tons of bombs).",
+        "March 8, 1965: 3,500 US Marines landed at Da Nang—the first official American combat troops deployed in Vietnam."
+      ],
+      "image": "/images/infographics/usa/usa_kt3_2_vietnam_escalation_1964_1965.webp",
+      "fileSizeKb": 405
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_3_3",
+      "slug": "usa_kt3_3_asymmetric_warfare_vietnam",
+      "title": "Guerrilla Warfare vs Modern Technology: Vietcong vs US Military Tactics (1965–1968)",
+      "topic": "Key Topic 3.3: Nature of the Conflict in Vietnam, 1964–1968",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Vietcong guerrilla tactics: \"Hanging onto the belts\" of American troops to negate US air support and artillery.",
+        "Cu Chi tunnel network: Hundreds of miles of underground bunkers, hospitals, and command posts safe from B-52 strikes.",
+        "Booby traps: Punji stick pits smeared with excrement, tripwires, and unexploded US ordnance recycled into landmines.",
+        "US Search and Destroy missions: Helicopters dropped troops into \"Zippo raids\" burning suspected VC hamlets.",
+        "Chemical defoliants: 20 million gallons of Agent Orange and incendiary Napalm dropped, poisoning farmland and civilians."
+      ],
+      "image": "/images/infographics/usa/usa_kt3_3_asymmetric_warfare_vietnam.webp",
+      "fileSizeKb": 468
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_3_3",
+      "slug": "usa_kt3_3_tet_offensive_1968",
+      "title": "The Tet Offensive: Military Victory, Psychological Defeat (1968)",
+      "topic": "Key Topic 3.3: Nature of the Conflict in Vietnam, 1964–1968",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "January 31, 1968: 84,000 VC and North Vietnamese troops launched surprise attacks during the Tet lunar new year truce.",
+        "Over 100 cities and military installations struck simultaneously, including the US Embassy in Saigon and ancient city of Hue.",
+        "Military outcome: Decisive tactical defeat for communists; ~45,000 VC killed, virtually wiping out VC guerrilla cadre.",
+        "Psychological turning point: General Westmoreland had claimed \"light at the end of the tunnel\"; Tet exposed the credibility gap.",
+        "March 31, 1968: President Lyndon B Johnson announced a partial bombing halt and declared he would not seek re-election."
+      ],
+      "image": "/images/infographics/usa/usa_kt3_3_tet_offensive_1968.webp",
+      "fileSizeKb": 400
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_3_4",
+      "slug": "usa_kt3_4_nixon_vietnam_strategy",
+      "title": "Vietnamization, The Madman Theory & Cambodia Incursion (1969–1973)",
+      "topic": "Key Topic 3.4: Changes Under Nixon, 1969–1973",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Nixon Doctrine & Vietnamization: Gradual withdrawal of US ground troops while heavily arming ARVN to fight the war.",
+        "Secret bombing of Cambodia (Operation Menu, 1969): Target Ho Chi Minh Trail sanctuaries without congressional approval.",
+        "April 1970 Cambodia Incursion: 30,000 US and ARVN troops invaded Cambodia, sparking massive campus protests at home.",
+        "Operation Linebacker (1972): Massive B-52 Christmas Bombing of Hanoi and Haiphong to force North Vietnam back to Paris talks.",
+        "Linkage diplomacy: Henry Kissinger opened relations with China and USSR (Détente) to isolate North Vietnam diplomatically."
+      ],
+      "image": "/images/infographics/usa/usa_kt3_4_nixon_vietnam_strategy.webp",
+      "fileSizeKb": 338
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_4_1",
+      "slug": "usa_kt4_1_vietnam_war_support_collapse",
+      "title": "The Anti-War Movement, The Draft & Kent State (1965–1971)",
+      "topic": "Key Topic 4.1: Opposition to the War",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "The \"Living Room War\": First televised conflict brought graphic footage of body bags, burning villages, and casualties daily.",
+        "The Draft lottery: Deeply unpopular; disproportionately drafted working-class youth; draft-card burning and Canada exile.",
+        "My Lai Massacre revealed (Nov 1969): 504 unarmed Vietnamese villagers murdered by Charlie Company under Lt William Calley.",
+        "Kent State shootings (May 4, 1970): Ohio National Guardsmen opened fire on student anti-war protest, killing 4 students.",
+        "Vietnam Veterans Against the War (VVAW): Returning soldiers threw war medals over Capitol barricades in protest."
+      ],
+      "image": "/images/infographics/usa/usa_kt4_1_vietnam_war_support_collapse.webp",
+      "fileSizeKb": 539
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_4_2",
+      "slug": "usa_kt4_2_american_support_for_war",
+      "title": "The \"Silent Majority\", Hawks & Hard Hat Riots (1965–1972)",
+      "topic": "Key Topic 4.2: Support for the War",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Hawks vs Doves: Hawks argued US military withdrawal would dishonour fallen soldiers and trigger global communist takeover.",
+        "Nixon's \"Silent Majority\" speech (Nov 3, 1969): Appealed to patriotic, law-abiding working-class Americans against radical protesters.",
+        "Hard Hat Riot (May 8, 1970): 200 construction workers attacked anti-war student demonstrators in Manhattan.",
+        "Patriotism and anti-communism: Strong support in southern states, military families, and conservative church communities.",
+        "Fear of betrayal: Widespread belief that the US military was being \"stabbed in the back\" by politicians and biased liberal media."
+      ],
+      "image": "/images/infographics/usa/usa_kt4_2_american_support_for_war.webp",
+      "fileSizeKb": 571
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_4_3",
+      "slug": "usa_kt4_3_vietnam_peace_process_and_end",
+      "title": "Paris Peace Accords & The Fall of Saigon (1973–1975)",
+      "topic": "Key Topic 4.3: The Peace Process and End of the War",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Paris Peace Accords (Jan 27, 1973): Immediate ceasefire, total withdrawal of US forces within 60 days, return of all POWs.",
+        "North Vietnamese Army (PAVN) permitted to remain in South Vietnam; Nguyen Van Thieu's regime felt abandoned.",
+        "War Powers Act (Nov 1973): Congress restricted presidential war-making powers, preventing Nixon from intervening again.",
+        "April 1975 Spring Offensive: North Vietnamese forces rapidly overran South Vietnam in just 55 days.",
+        "Fall of Saigon (April 30, 1975): Iconic rooftop helicopter evacuations from US Embassy; Vietnam unified under communism."
+      ],
+      "image": "/images/infographics/usa/usa_kt4_3_vietnam_peace_process_and_end.webp",
+      "fileSizeKb": 386
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_4_4",
+      "slug": "usa_kt4_4_reasons_us_vietnam_defeat",
+      "title": "Why Did America Lose? Causal Analysis of US Defeat in Vietnam",
+      "topic": "Key Topic 4.4: Reasons for the Failure of the USA in Vietnam",
+      "type": "lesson_summary",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Vietcong tenacity and knowledge of terrain: Commitment to nationalist independence outweighed US technological superiority.",
+        "Failure of \"Hearts and Minds\": Bombing, Napalm, and Search & Destroy pushed rural peasants into supporting the VC.",
+        "Weakness and corruption of South Vietnam: ARVN lacked morale; Saigon government seen as US puppet regime.",
+        "Loss of the domestic home front: Anti-war protests, media scrutiny, and draft resistance destroyed political will to continue.",
+        "Inappropriate conventional military tactics: US forces prepared for European tank warfare, ill-equipped for jungle insurgency."
+      ],
+      "image": "/images/infographics/usa/usa_kt4_4_reasons_us_vietnam_defeat.webp",
+      "fileSizeKb": 455
+    },
+    {
+      "unit": "usa",
+      "lessonId": "lesson_4_4",
+      "slug": "usa_kt4_4_ho_chi_minh_independence",
+      "title": "Ho Chi Minh & The Trail: Nationalism, Logistics & Victory",
+      "topic": "Key Topic 4.4: Reasons for the Failure of the USA in Vietnam",
+      "type": "thematic_deep_dive",
+      "aspect": "landscape",
+      "keyPoints": [
+        "Nationalist visionary: Ho Chi Minh blended Marxist-Leninist ideology with Vietnamese anti-colonial struggle.",
+        "The Ho Chi Minh Trail: 10,000-mile labyrinth of supply roads through Laos and Cambodia delivering 400 tons of supplies daily.",
+        "Sustained despite relentless US bombing: Hundreds of thousands of youth and women rebuilt roads overnight by hand.",
+        "Soviet and Chinese military aid: North Vietnam received modern surface-to-air missiles (SAMs), MiGs, and artillery.",
+        "Causal verdict: Superior determination and asymmetric logistics defeated the world's greatest superpower."
+      ],
+      "image": "/images/infographics/usa/usa_kt4_4_ho_chi_minh_independence.webp",
+      "fileSizeKb": 386
+    }
+  ],
+  "generated_at": "2026-11-07T10:37:15.370Z"
+}

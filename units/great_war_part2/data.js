@@ -1,4 +1,14 @@
 export default {
+  "synopsis": "When Europe plunged into the abyss in August 1914, millions of young men rushed to enlist in an adventure they believed would be over by Christmas. Instead, industrial machinery transformed warfare into unprecedented slaughter. Confront the muddy hell of trench warfare and the controversial decisions of British generals at the Somme, uncover the forgotten global sacrifice of colonial soldiers from across the Empire, examine how total war gripped the Home Front under DORA, and discover how the bitter compromises of the Treaty of Versailles in 1919 sowed the seeds of future catastrophe.",
+  "synopsis_tags": [
+      "Voluntary Enlistment & Pals Battalions",
+      "Trench Warfare",
+      "Gas & The Somme",
+      "Indian & Commonwealth Troops' Global Sacrifice",
+      "The Home Front",
+      "Rationing & DORA",
+      "Treaty of Versailles & The League of Nations (1919)"
+  ],
   "title": "KS3: The Great War — Apocalypse & Aftermath (1914–1919)",
   "homepage_background": "/images/sargent_gassed_1919.jpg",
   "enquiry": "How did total industrialised war (1914–1919) shatter societies and transform the modern world?",

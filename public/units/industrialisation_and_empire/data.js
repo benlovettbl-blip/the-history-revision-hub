@@ -1,4 +1,12 @@
 export default {
+  "synopsis": "Steam engines shrieking in smoke-choked valleys, red-hot iron rolling through Henry Cort's puddling furnaces, and coal-fired textile mills driving the heartbeat of the modern world. Britain transformed from an agrarian island into the undisputed 'Workshop of the World', yet this unprecedented economic power was bought with human agony: child scavengers crawling beneath thunderous cotton looms, cholera epidemics stalking filthy back-to-back slums, and desperate handloom weavers smashing machinery. Follow the courageous struggle of millions of ordinary working people—from the bloodied field of Peterloo to the millions-strong petitions of the Chartists—who fought against the ruling elite to win the right to vote and forge modern British democracy.",
+  "synopsis_tags": [
+      "Steam Engines & Factory System",
+      "Child Labour & Factory Acts",
+      "Peterloo Massacre (1819)",
+      "Cholera & Urban Slums",
+      "The Chartist Movement & Democracy"
+  ],
   "title": "KS3: The Industrial Revolution (1750–1900)",
   "short_title": "The Industrial Revolution",
   "homepage_background": "/images/coalbrookdale_by_night.jpg",
@@ -333,10 +341,10 @@ export default {
           "act": 1,
           "title": "The Charcoal Bottleneck & Pig Iron Crisis (1750–1770)",
           "theme_heading": "The Charcoal Bottleneck & Pig Iron Crisis (1750–1770)",
-          "text": "<span class=\"para-ref\">[1.1]</span> Before the mid-eighteenth century, British industry was held hostage by an acute energy crisis. For generations, ironmasters used timber to smelt iron ore in blast furnaces. However, centuries of deforestation had exhausted England's ancient oak forests. When ironmasters turned to abundant pit coal, they struck a chemical disaster: British coal was choked with yellow sulphur, which contaminated the molten metal. The resulting <strong class=\"vocab-highlight\">pig iron</strong> <small class=\"vocab-gloss\">(crude, brittle iron poured into sand moulds)</small> was as brittle as glass. Strike a bar of British pig iron with a hammer, and it shattered into lethal shards. To build tough anchors and ship bolts for the Royal Navy, Britain was forced to import over 50,000 tons of premium wrought iron every year from Sweden and Russia across the vulnerable Baltic Sea.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Before the mid-eighteenth century, British industry was held hostage by an acute energy crisis. For generations, ironmasters used timber to **smelt** iron ore in **blast furnaces**. However, centuries of deforestation of English oaks had exhausted England's ancient woodlands. When ironmasters turned to abundant pit coal, they struck a chemical disaster: British coal was choked with yellow sulphur, which contaminated the molten metal. The resulting brittle impure pig iron was as brittle as glass: strike a bar with a hammer, and it shattered into lethal shards. To build tough anchors and ship bolts for the Royal Navy, Britain suffered a dependence on Swedish imports, importing over 50,000 tons of premium **wrought iron** every year from Sweden and Russia across the vulnerable Baltic Sea.",
           "source": {
             "letter": "A",
-            "title": "Source A: Coalbrookdale by Night (1801)",
+            "title": "Source A (Visual Record): Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801)",
             "context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
             "hinge_question": "Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
             "image": "/images/coalbrookdale_by_night.jpg",
@@ -344,68 +352,138 @@ export default {
             "question_badge": "Source Inference",
             "question": "What does this dramatic night painting suggest about how industrial furnaces changed the English countryside?",
             "enquiry_question": "What does this dramatic night painting suggest about how industrial furnaces changed the English countryside?",
-            "model_answer": "The painting suggests industrial furnaces turned quiet rural valleys into a blazing, fiery world of constant noise and heavy machinery, replacing nature with intense industrial power."
-          }
+            "model_answer": "The painting suggests industrial furnaces turned quiet rural valleys into a blazing, fiery world of constant noise and heavy machinery, replacing nature with intense industrial power.",
+            "source_context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
+            "teacher_notes": {
+              "source_context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?"
+            },
+            "id": "iae_l1_src_a",
+            "type": "visual",
+            "src": "/images/coalbrookdale_by_night.jpg"
+          },
+          "sources": [
+            {
+              "letter": "A",
+              "title": "Source A (Visual Record): Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801)",
+              "context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
+              "hinge_question": "Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
+              "image": "/images/coalbrookdale_by_night.jpg",
+              "caption": "Source A: Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801, Science Museum London). The blast furnaces of Shropshire illuminating the dark landscape, symbolising the dawn of Britain’s coal and steam revolution.",
+              "question_badge": "Source Inference",
+              "question": "What does this dramatic night painting suggest about how industrial furnaces changed the English countryside?",
+              "enquiry_question": "What does this dramatic night painting suggest about how industrial furnaces changed the English countryside?",
+              "model_answer": "The painting suggests industrial furnaces turned quiet rural valleys into a blazing, fiery world of constant noise and heavy machinery, replacing nature with intense industrial power.",
+              "source_context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
+              "teacher_notes": {
+                "source_context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?"
+              },
+              "id": "iae_l1_src_a",
+              "type": "visual",
+              "src": "/images/coalbrookdale_by_night.jpg"
+            }
+          ]
         },
         {
           "act": 2,
           "title": "James Watt & The Rotary Steam Revolution (1769–1781)",
           "theme_heading": "James Watt & The Rotary Steam Revolution (1769–1781)",
-          "text": "<span class=\"para-ref\">[1.2]</span> While iron production floundered, a revolutionary power source erupted. In cramped cottages under the <strong class=\"vocab-highlight\">domestic system</strong> <small class=\"vocab-gloss\">(craft goods produced by hand in workers' homes)</small>, spinning and weaving were limited by human muscle and waterwheels that froze in winter or dried up in summer. In 1769, Scottish instrument maker <strong class=\"vocab-highlight\">James Watt</strong> patented his separate condenser, vastly improving early steam engines. Partnering with industrialist Matthew Boulton in Birmingham, Watt adapted his engine to produce continuous rotary motion. By converting the thermal energy of coal into mechanical power, Watt liberated factories from remote river valleys. Massive textile mills, deep mine pumps, and heavy iron hammers could now operate relentlessly anywhere coal was shipped.",
+          "text": "<span class=\"para-ref\">[1.2]</span> While iron production floundered, a revolutionary power source erupted. In cramped cottages under the **domestic system**, spinning and weaving were limited by muscle and waterwheels that froze in winter. In 1769, Scottish instrument maker **James Watt** patented his separate condenser efficiency breakthrough, vastly improving steam engines. Partnering with industrialist Matthew Boulton in Birmingham, Watt adapted his engine to produce continuous rotary shaft motion. By converting coal's thermal energy into mechanical power, Watt achieved liberation from river valleys, allowing massive textile mills, deep mine pumps, and heavy iron hammers to operate relentlessly anywhere coal was shipped.",
           "source": {
             "letter": "B",
-            "title": "Source B: Cort’s Reverberatory Puddling Furnace (1783)",
-            "context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
-            "hinge_question": "How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
-            "image": "/images/funtley_ironworks.jpg",
-            "caption": "Source B: Technical cross-section diagram of Henry Cort’s reverberatory puddling furnace and grooved rolling mill at Funtley Ironworks in Hampshire (Patent No. 1420, 1784).",
-            "question_badge": "Technology & Change",
-            "question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
-            "enquiry_question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
-            "model_answer": "By curving the flame over a low roof to heat the metal without letting the dirty coal touch it, Cort kept the iron pure and tough enough for Royal Navy ships."
+            "id": "iae_l1_src_b",
+            "type": "visual",
+            "title": "Source B (Visual Record): Carl Frederik von Breda, Portrait of James Watt with Steam Engine Drafting Plans (1792)",
+            "context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
+            "hinge_question": "Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
+            "image": "/images/james_watt.jpg",
+            "src": "/images/james_watt.jpg",
+            "caption": "Source B: Carl Frederik von Breda, Portrait of James Watt (1792, National Portrait Gallery, NPG 186a). Watt is shown contemplating his separate condenser steam engine, the mechanical breakthrough that powered the Industrial Revolution.",
+            "question_badge": "Technological Transformation",
+            "question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
+            "enquiry_question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
+            "model_answer": "The portrait shows Watt seated thoughtfully beside his steam engine blueprints, highlighting how scientific engineering and rotary steam power replaced natural waterwheels to drive factories anywhere coal could be transported.",
+            "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
+            "teacher_notes": {
+              "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?"
+            }
           },
-          "image": "/images/james_watt.jpg",
-          "image_alt": "Portrait of Scottish inventor and mechanical engineer James Watt",
-          "caption": "James Watt (1736–1819), Scottish engineer whose separate condenser (1769) and rotary motion steam engine (1781) transformed steam power into the universal prime mover of the Industrial Revolution (Carl Frederik von Breda, 1792 / National Portrait Gallery, NPG 186a)."
+          "image": "/images/spinning_mule.jpg",
+          "image_alt": "Samuel Crompton spinning mule mechanized textile spinning",
+          "caption": "Samuel Crompton’s spinning mule (1779), combining the moving carriage of the spinning jenny with the rollers of the water frame to mass-produce fine cotton yarn for British factories.",
+          "sources": [
+            {
+              "letter": "B",
+              "id": "iae_l1_src_b",
+              "type": "visual",
+              "title": "Source B (Visual Record): Carl Frederik von Breda, Portrait of James Watt with Steam Engine Drafting Plans (1792)",
+              "context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
+              "hinge_question": "Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
+              "image": "/images/james_watt.jpg",
+              "src": "/images/james_watt.jpg",
+              "caption": "Source B: Carl Frederik von Breda, Portrait of James Watt (1792, National Portrait Gallery, NPG 186a). Watt is shown contemplating his separate condenser steam engine, the mechanical breakthrough that powered the Industrial Revolution.",
+              "question_badge": "Technological Transformation",
+              "question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
+              "enquiry_question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
+              "model_answer": "The portrait shows Watt seated thoughtfully beside his steam engine blueprints, highlighting how scientific engineering and rotary steam power replaced natural waterwheels to drive factories anywhere coal could be transported.",
+              "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
+              "teacher_notes": {
+                "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?"
+              }
+            }
+          ]
         },
         {
           "act": 3,
           "title": "Henry Cort’s Puddling Breakthrough at Funtley (1775–1784)",
           "theme_heading": "Henry Cort’s Puddling Breakthrough at Funtley (1775–1784)",
-          "text": "<span class=\"para-ref\">[1.3]</span> Yet steam engines required durable metal. In 1775, former naval agent <strong class=\"vocab-highlight\">Henry Cort</strong> leased an old corn mill at Funtley on the River Meon near Fareham, just fifteen miles from Portsmouth Dockyard. In 1783, Cort patented the <strong class=\"vocab-highlight\">reverberatory puddling furnace</strong> <small class=\"vocab-gloss\">(a furnace deflecting heat from an arched roof without fuel touching the metal)</small>. Cort separated the coal firebox from the molten metal hearth with a brick bridge wall. The curved masonry roof deflected clean, blistering 1,200°C radiant heat down onto the iron, burning away impurities while keeping destructive coal sulphur away. Skilled \"puddlers\" stirred the boiling metal through a porthole with long iron paddles, burning off carbon until pure wrought iron thickened into glowing spongy balls.",
+          "text": "<span class=\"para-ref\">[1.3]</span> Yet steam engines required durable metal. In 1775, former naval agent **Henry Cort** leased an old corn mill at Funtley on the River Meon near Fareham, just fifteen miles from Portsmouth Dockyard. In 1783, Cort patented the reverberatory furnace chamber (reverberatory puddling furnace). Cort separated the coal firebox from the molten metal hearth with a brick bridge wall, eliminating harmful sulphur while deflecting clean 1,200°C radiant heat onto the iron. Skilled puddlers stirred the boiling metal through a porthole with long iron paddles during stirring molten decarburisation, burning off carbon until pure wrought iron thickened into glowing balls.",
           "source": {
             "letter": "C",
-            "title": "Source C: Admiralty Navy Board Portsmouth Dockyard Trial Minutes (1787)",
-            "context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
-            "hinge_question": "How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
-            "text": "“Pursuant to your directions, we have caused trials to be made of Mr Henry Cort’s iron manufactured at Fontley. We find it to exceed in strength and toughness any iron manufactured in this kingdom, and fully equal to the best Swedish Orgrounds iron for ship bolts, mast hoops, and anchors for His Majesty’s Fleet.”",
-            "caption": "Source C: Official Navy Board trials conducted at Portsmouth Royal Navy Dockyard in March 1787, testing Funtley wrought iron against imported Swedish Orgrounds iron.",
-            "question_badge": "Reliability & Provenance",
-            "question": "Why can historians trust this official Navy report when studying the strength of Henry Cort's new iron?",
-            "enquiry_question": "Why can historians trust this official Navy report when studying the strength of Henry Cort's new iron?",
-            "model_answer": "Historians can trust this report because Navy inspectors strictly tested the iron against top-quality Swedish metal to make sure British warships would not break apart at sea."
-          }
-        },
-        {
-          "type": "photo_slider",
-          "title": "Cartographic Forensic Slider: 1890s Ordnance Survey vs. Modern Funtley",
-          "description": "Slide back and forth to compare the late Victorian Ordnance Survey 25-inch (1:2,500) map against modern Funtley. Observe how the 1890s survey preserves the exact anatomy of Henry Cort’s industrial ironworks: the extensive Mill Pond (complete with marsh reeds and sluice gates), the mill race aqueduct, the forge workshops (plot 316), and Samuel Jellicoe’s Georgian residence at Fontley House.",
-          "before_image": "/images/funtley/funtley_historic_os_map_1890s.jpg",
-          "before_label": "1890s OS 25-Inch Map (Forge Mill & Sluices)",
-          "after_image": "/images/funtley/funtley_modern_map.jpg",
-          "after_label": "Modern Street Map (Iron Mill Lane & Meon)",
-          "satellite_image": "/images/funtley/funtley_modern_satellite.jpg",
-          "satellite_label": "Modern Satellite Aerial View",
-          "links": [
-            {
-              "label": "NLS Side-by-Side Map Viewer (Full Screen)",
-              "url": "https://maps.nls.uk/geo/explore/side-by-side/#zoom=17.0&lat=50.8708&lon=-1.2205&layers=168&right=osm",
-              "icon": "fa-solid fa-table-columns"
+            "title": "Source C (Technical Cross-Section): Cort’s Reverberatory Puddling Furnace at Funtley (1783)",
+            "context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
+            "hinge_question": "How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
+            "image": "/images/funtley_ironworks.jpg",
+            "caption": "Source C: Technical cross-section diagram of Henry Cort’s reverberatory puddling furnace and grooved rolling mill at Funtley Ironworks in Hampshire (Patent No. 1420, 1784).",
+            "question_badge": "Technology & Change",
+            "question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
+            "enquiry_question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
+            "model_answer": "By curving the flame over a low roof to heat the metal without letting the dirty coal touch it, Cort kept the iron pure and tough enough for Royal Navy ships.",
+            "source_context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
+            "teacher_notes": {
+              "source_context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?"
             },
+            "id": "iae_l1_src_c",
+            "type": "visual",
+            "src": "/images/funtley_ironworks.jpg"
+          },
+          "photo_slider": {
+            "type": "photo_slider",
+            "title": "Cartographic Forensic Slider: 1890s Ordnance Survey vs. Modern Funtley",
+            "description": "Slide back and forth to compare the late Victorian Ordnance Survey 25-inch (1:2,500) map against modern Funtley. Observe how the 1890s survey preserves the exact anatomy of Henry Cort’s industrial ironworks: the extensive Mill Pond (complete with marsh reeds and sluice gates), the mill race aqueduct, the forge workshops (plot 316), and Samuel Jellicoe’s Georgian residence at Fontley House.",
+            "before_image": "/images/funtley/funtley_historic_os_map_1890s.jpg",
+            "after_image": "/images/funtley/funtley_modern_map.jpg",
+            "before_label": "1890s OS 25-Inch Map (Forge Mill & Sluices)",
+            "after_label": "Modern Street Map (Iron Mill Lane & Meon)"
+          },
+          "sources": [
             {
-              "label": "NLS Interactive Spyglass Lens",
-              "url": "https://maps.nls.uk/geo/explore/spy/#zoom=17.0&lat=50.8708&lon=-1.2205&layers=168&b=1",
-              "icon": "fa-solid fa-circle-dot"
+              "letter": "C",
+              "title": "Source C (Technical Cross-Section): Cort’s Reverberatory Puddling Furnace at Funtley (1783)",
+              "context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
+              "hinge_question": "How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
+              "image": "/images/funtley_ironworks.jpg",
+              "caption": "Source C: Technical cross-section diagram of Henry Cort’s reverberatory puddling furnace and grooved rolling mill at Funtley Ironworks in Hampshire (Patent No. 1420, 1784).",
+              "question_badge": "Technology & Change",
+              "question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
+              "enquiry_question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
+              "model_answer": "By curving the flame over a low roof to heat the metal without letting the dirty coal touch it, Cort kept the iron pure and tough enough for Royal Navy ships.",
+              "source_context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
+              "teacher_notes": {
+                "source_context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?"
+              },
+              "id": "iae_l1_src_c",
+              "type": "visual",
+              "src": "/images/funtley_ironworks.jpg"
             }
           ]
         },
@@ -413,46 +491,110 @@ export default {
           "act": 4,
           "title": "Grooved Rollers & The Hampshire Archaeology (1783–1784)",
           "theme_heading": "Grooved Rollers & The Hampshire Archaeology (1783–1784)",
-          "text": "<span class=\"para-ref\">[1.4]</span> Instead of having teams of exhausted blacksmiths slowly hammer hot iron blooms by hand, Cort patented water-powered <strong class=\"vocab-highlight\">grooved rollers</strong> in 1784. Driven by the surging River Meon waterwheel, these grooved cylinders squeezed out trapped slag impurities and compressed the metal into uniform naval bars at fifteen times the speed of traditional forge hammers. The physical archaeology of this triumph remains etched in the Hampshire landscape today. At Funtley, the original stone weir and circular waterwheel housing survive beside the river. Nearby stands Fontley House, with its Georgian red-brick Fareham \"Tallboy\" chimneys, and an intact dry-stone wall constructed entirely from tons of dark, glassy puddling slag excavated from Cort's ironworks.",
+          "text": "<span class=\"para-ref\">[1.4]</span> Instead of having teams of exhausted blacksmiths slowly hammer hot iron blooms by hand, Cort patented mechanical grooved cylinders in 1784. Driven by the River Meon waterwheel, these grooved rollers accomplished squeezing out slag impurities and compressed the metal into uniform naval bar production at fifteen times traditional speed. The physical archaeology of this triumph remains etched in the Hampshire landscape today at Funtley Ironworks, where Cort's stone weir, waterwheel housing, and dry-stone walls made of glassy puddling slag survive.",
           "image": "/images/isambard_kingdom_brunel.jpg",
           "image_alt": "Iconic photograph of engineer Isambard Kingdom Brunel standing before the launching chains of the SS Great Eastern",
           "caption": "Isambard Kingdom Brunel (1806–1859), master Victorian engineer whose iron bridges, railways, and steamships relied directly upon the mass-produced rolled iron techniques pioneered by Henry Cort (Robert Howlett, 1857 / National Portrait Gallery, NPG P110).",
           "source": {
-            "letter": "E",
-            "title": "Source E: Henry Cort, Patent Specification No. 1420 for Grooved Rollers (1784)",
+            "letter": "D",
+            "title": "Source D (Patent Specification): Henry Cort, Patent Specification No. 1420 for Grooved Rollers (1784)",
             "context": "In February 1784, Henry Cort registered Patent No. 1420 at the Court of Chancery. While his earlier 1783 patent introduced the reverberatory puddling furnace, this second breakthrough automated the shaping of red-hot iron using water-powered grooved rollers at Funtley Ironworks, accelerating production from slow manual blacksmith hammering to rapid continuous mechanical rolling. **Hinge Question:** Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?",
             "hinge_question": "Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?",
             "text": "“I, the said Henry Cort, have discovered a new and peculiar method of preparing, welding, and working various sorts of iron... by passing the blooms through rollers having collars and grooves of different forms and dimensions. By this operation, the fibrous texture of the iron is preserved, the liquid slag and impurities are squeezed out, and the heated iron is manufactured into bars, bolts, and plates with a speed fifteen times greater than can be performed by the heaviest forge hammer. The iron so produced possesses the highest degree of malleability and toughness, capable of supplying the Royal Navy with bolts, stays, and anchors of unyielding strength.”",
-            "caption": "Source E: Extract from Henry Cort’s Patent Specification No. 1420, enrolled in the Court of Chancery in February 1784, detailing the mechanisation of iron rolling.",
+            "caption": "Source D: Extract from Henry Cort’s Patent Specification No. 1420, enrolled in the Court of Chancery in February 1784, detailing the mechanisation of iron rolling.",
             "discussion_ideas": [
               "A Fifteen-Fold Leap in Industrial Velocity: Cort's grooved rolling cylinders bypassed the ancient human bottleneck of blacksmithing: where teams of hammermen could only produce a single iron bar through hours of punishing manual labour, Cort's water-powered rollers spat out finished, uniform naval bars in minutes.",
               "Naval Self-Sufficiency and Imperial Security: By compressing the decarburized wrought iron blooms while expelling brittle slag, grooved rolling created ductile, high-tensile iron bolts and hoops that met the rigorous Admiralty standards tested at Portsmouth Dockyard, freeing Britain from reliance on Swedish and Russian iron on the eve of the Napoleonic Wars."
             ],
-            "id": "iae_l1_source_e_cort_rollers_patent",
+            "id": "iae_l1_src_d",
             "question": "How did Henry Cort’s grooved rollers revolutionize the speed and quality of iron production according to this patent?",
             "question_badge": "Technological Innovation & Economy",
             "question_type": "Technological Innovation & Economy",
             "model_answer": "Cort explains that grooved rollers squeezed out impurities and shaped hot iron into tough, durable naval bars fifteen times faster than traditional hand hammering.",
-            "citation": "Henry Cort, Patent Specification No. 1420, Enrolled 21 February 1784, Court of Chancery / The National Archives, Kew (C 210/37)."
-          }
+            "citation": "Henry Cort, Patent Specification No. 1420, Enrolled 21 February 1784, Court of Chancery / The National Archives, Kew (C 210/37).",
+            "source_context": "In February 1784, Henry Cort registered Patent No. 1420 at the Court of Chancery. While his earlier 1783 patent introduced the reverberatory puddling furnace, this second breakthrough automated the shaping of red-hot iron using water-powered grooved rollers at Funtley Ironworks, accelerating production from slow manual blacksmith hammering to rapid continuous mechanical rolling. **Hinge Question:** Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?",
+            "teacher_notes": {
+              "source_context": "In February 1784, Henry Cort registered Patent No. 1420 at the Court of Chancery. While his earlier 1783 patent introduced the reverberatory puddling furnace, this second breakthrough automated the shaping of red-hot iron using water-powered grooved rollers at Funtley Ironworks, accelerating production from slow manual blacksmith hammering to rapid continuous mechanical rolling. **Hinge Question:** Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?"
+            },
+            "type": "written",
+            "src": "",
+            "image": ""
+          },
+          "sources": [
+            {
+              "letter": "D",
+              "title": "Source D (Patent Specification): Henry Cort, Patent Specification No. 1420 for Grooved Rollers (1784)",
+              "context": "In February 1784, Henry Cort registered Patent No. 1420 at the Court of Chancery. While his earlier 1783 patent introduced the reverberatory puddling furnace, this second breakthrough automated the shaping of red-hot iron using water-powered grooved rollers at Funtley Ironworks, accelerating production from slow manual blacksmith hammering to rapid continuous mechanical rolling. **Hinge Question:** Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?",
+              "hinge_question": "Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?",
+              "text": "“I, the said Henry Cort, have discovered a new and peculiar method of preparing, welding, and working various sorts of iron... by passing the blooms through rollers having collars and grooves of different forms and dimensions. By this operation, the fibrous texture of the iron is preserved, the liquid slag and impurities are squeezed out, and the heated iron is manufactured into bars, bolts, and plates with a speed fifteen times greater than can be performed by the heaviest forge hammer. The iron so produced possesses the highest degree of malleability and toughness, capable of supplying the Royal Navy with bolts, stays, and anchors of unyielding strength.”",
+              "caption": "Source D: Extract from Henry Cort’s Patent Specification No. 1420, enrolled in the Court of Chancery in February 1784, detailing the mechanisation of iron rolling.",
+              "discussion_ideas": [
+                "A Fifteen-Fold Leap in Industrial Velocity: Cort's grooved rolling cylinders bypassed the ancient human bottleneck of blacksmithing: where teams of hammermen could only produce a single iron bar through hours of punishing manual labour, Cort's water-powered rollers spat out finished, uniform naval bars in minutes.",
+                "Naval Self-Sufficiency and Imperial Security: By compressing the decarburized wrought iron blooms while expelling brittle slag, grooved rolling created ductile, high-tensile iron bolts and hoops that met the rigorous Admiralty standards tested at Portsmouth Dockyard, freeing Britain from reliance on Swedish and Russian iron on the eve of the Napoleonic Wars."
+              ],
+              "id": "iae_l1_src_d",
+              "question": "How did Henry Cort’s grooved rollers revolutionize the speed and quality of iron production according to this patent?",
+              "question_badge": "Technological Innovation & Economy",
+              "question_type": "Technological Innovation & Economy",
+              "model_answer": "Cort explains that grooved rollers squeezed out impurities and shaped hot iron into tough, durable naval bars fifteen times faster than traditional hand hammering.",
+              "citation": "Henry Cort, Patent Specification No. 1420, Enrolled 21 February 1784, Court of Chancery / The National Archives, Kew (C 210/37).",
+              "source_context": "In February 1784, Henry Cort registered Patent No. 1420 at the Court of Chancery. While his earlier 1783 patent introduced the reverberatory puddling furnace, this second breakthrough automated the shaping of red-hot iron using water-powered grooved rollers at Funtley Ironworks, accelerating production from slow manual blacksmith hammering to rapid continuous mechanical rolling. **Hinge Question:** Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?",
+              "teacher_notes": {
+                "source_context": "In February 1784, Henry Cort registered Patent No. 1420 at the Court of Chancery. While his earlier 1783 patent introduced the reverberatory puddling furnace, this second breakthrough automated the shaping of red-hot iron using water-powered grooved rollers at Funtley Ironworks, accelerating production from slow manual blacksmith hammering to rapid continuous mechanical rolling. **Hinge Question:** Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?"
+              },
+              "type": "written",
+              "src": "",
+              "image": ""
+            }
+          ]
         },
         {
           "act": 5,
           "title": "The Portsmouth Dockyard Trials & Naval Supremacy (1787–1800)",
           "theme_heading": "The Portsmouth Dockyard Trials & Naval Supremacy (1787–1800)",
-          "text": "<span class=\"para-ref\">[1.5]</span> In March 1787, Cort invited the Navy Board to Portsmouth Royal Dockyard for decisive stress tests. In front of skeptical Admiralty commissioners, master smiths bent Funtley iron double, twisted bars into cold corkscrews, and pounded anchor rings with twenty-pound sledgehammers. The iron did not crack. The official Admiralty minutes declared Funtley iron superior to any British metal and fully equal to top-grade Swedish Orgrounds iron. Domestic iron production surged 400%, armoring the Royal Navy on the eve of the Napoleonic Wars and forging the anchors of <em>HMS Victory</em>. Cort was hailed as the \"father of the iron trade,\" though the embezzlement of naval funds by his financial partner Adam Jellicoe tragically stripped Cort of his patents, plunging him into bankruptcy before his death in 1800.",
+          "text": "<span class=\"para-ref\">[1.5]</span> In March 1787, Cort invited the **Navy Board** to **Portsmouth Royal Dockyard** for decisive Admiralty smith forge tests. In front of skeptical Admiralty commissioners, master smiths bent Funtley iron double, twisted bars into cold corkscrews, and pounded shatter-resistant anchors with twenty-pound sledgehammers without cracking. The official minutes declared Funtley iron superior to any British metal and fully equal to Swedish Orgrounds iron. Domestic iron production surged 400%, granting Britain complete naval independence on the eve of the Napoleonic Wars and forging the anchors of <em>HMS Victory</em>.",
           "source": {
-            "letter": "D",
-            "title": "Source D: Contemporary Dedication Portrait of Henry Cort (c. 1780s)",
-            "context": "An authentic 18th-century dedication engraving commemorating Henry Cort as \"The Tubal Cain of our Century and of our Country, Dedicated to the Iron Trade of Great Britain\". **Hinge Question:** Why would contemporaries compare an 18th-century Hampshire ironmaster to an ancient heroic metalworker, and what does this reveal about Britain’s growing industrial pride?",
-            "hinge_question": "Why would contemporaries compare an 18th-century Hampshire ironmaster to an ancient heroic metalworker, and what does this reveal about Britain’s growing industrial pride?",
-            "image": "/images/henry_cort.jpg",
-            "caption": "Source D: An authentic 18th-century dedication engraving commemorating Henry Cort as “The Tubal Cain of our Century and of our Country, Dedicated to the Iron Trade of Great Britain” (British Museum).",
-            "question_badge": "Historical Significance",
-            "question": "Why did admirers call Henry Cort the 'Tubal Cain of our Century' on this portrait?",
-            "enquiry_question": "Why did admirers call Henry Cort the 'Tubal Cain of our Century' on this portrait?",
-            "model_answer": "They compared him to the legendary biblical blacksmith Tubal Cain to celebrate Cort as a national hero whose invention gave Britain industrial supremacy."
-          }
+            "letter": "E",
+            "title": "Source E (Official Admiralty Minutes): Admiralty Navy Board Portsmouth Dockyard Trial Minutes (1787)",
+            "context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
+            "hinge_question": "How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
+            "text": "“Pursuant to your directions, we have caused trials to be made of Mr Henry Cort’s iron manufactured at Fontley. We find it to exceed in strength and toughness any iron manufactured in this kingdom, and fully equal to the best Swedish Orgrounds iron for ship bolts, mast hoops, and anchors for His Majesty’s Fleet.”",
+            "caption": "Source E: Official Navy Board trials conducted at Portsmouth Royal Navy Dockyard in March 1787, testing Funtley wrought iron against imported Swedish Orgrounds iron.",
+            "question_badge": "Reliability & Provenance",
+            "question": "Why can historians trust this official Navy report when studying the strength of Henry Cort's new iron?",
+            "enquiry_question": "Why can historians trust this official Navy report when studying the strength of Henry Cort's new iron?",
+            "model_answer": "Historians can trust this report because Navy inspectors strictly tested the iron against top-quality Swedish metal to make sure British warships would not break apart at sea.",
+            "source_context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
+            "teacher_notes": {
+              "source_context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?"
+            },
+            "id": "iae_l1_src_e",
+            "type": "written",
+            "src": "",
+            "image": ""
+          },
+          "sources": [
+            {
+              "letter": "E",
+              "title": "Source E (Official Admiralty Minutes): Admiralty Navy Board Portsmouth Dockyard Trial Minutes (1787)",
+              "context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
+              "hinge_question": "How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
+              "text": "“Pursuant to your directions, we have caused trials to be made of Mr Henry Cort’s iron manufactured at Fontley. We find it to exceed in strength and toughness any iron manufactured in this kingdom, and fully equal to the best Swedish Orgrounds iron for ship bolts, mast hoops, and anchors for His Majesty’s Fleet.”",
+              "caption": "Source E: Official Navy Board trials conducted at Portsmouth Royal Navy Dockyard in March 1787, testing Funtley wrought iron against imported Swedish Orgrounds iron.",
+              "question_badge": "Reliability & Provenance",
+              "question": "Why can historians trust this official Navy report when studying the strength of Henry Cort's new iron?",
+              "enquiry_question": "Why can historians trust this official Navy report when studying the strength of Henry Cort's new iron?",
+              "model_answer": "Historians can trust this report because Navy inspectors strictly tested the iron against top-quality Swedish metal to make sure British warships would not break apart at sea.",
+              "source_context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
+              "teacher_notes": {
+                "source_context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?"
+              },
+              "id": "iae_l1_src_e",
+              "type": "written",
+              "src": "",
+              "image": ""
+            }
+          ]
         }
       ],
       "video": [
@@ -504,261 +646,363 @@ export default {
       "vocab": [
         {
           "term": "Industrial Revolution",
-          "definition": "The rapid transformation of manufacturing, transportation, and daily life driven by coal, steam, and iron from 1750."
+          "definition": "The rapid transformation of manufacturing, transportation, and daily life driven by coal, steam, and iron from 1750.",
+          "syllables": "I-ndustrial Re-volu-tion",
+          "phonetic": "industrial revolution",
+          "tier": "3"
         },
         {
           "term": "Domestic System",
-          "definition": "The traditional method of handcrafting textiles and goods at home using muscle, wind, or seasonal water power."
+          "definition": "The traditional method of handcrafting textiles and goods at home using muscle, wind, or seasonal water power.",
+          "syllables": "Do-me-stic Sy-stem",
+          "phonetic": "domestic system",
+          "tier": "2"
         },
         {
           "term": "Henry Cort",
-          "definition": "The Hampshire naval agent and ironmaster from Fareham whose patented inventions at Funtley revolutionized world metallurgy."
+          "definition": "The Hampshire naval agent and ironmaster from Fareham whose patented inventions at Funtley revolutionized world metallurgy.",
+          "syllables": "He-nry Cort",
+          "phonetic": "henry cort",
+          "tier": "2"
         },
         {
           "term": "Pig Iron",
-          "definition": "Crude, brittle iron straight from a blast furnace containing excessive carbon and sulphur impurities that snapped under pressure."
+          "definition": "Crude, brittle iron straight from a blast furnace containing excessive carbon and sulphur impurities that snapped under pressure.",
+          "syllables": "Pig Iron",
+          "phonetic": "pig iron",
+          "tier": "2"
         },
         {
           "term": "Wrought Iron",
-          "definition": "Tough, malleable iron with low carbon content that could bend, stretch, and endure heavy shock without shattering."
+          "definition": "Tough, malleable iron with low carbon content that could bend, stretch, and endure heavy shock without shattering.",
+          "syllables": "Wrought Iron",
+          "phonetic": "wrought iron",
+          "tier": "2"
         },
         {
           "term": "Puddling Process",
-          "definition": "Cort's 1783 method of melting pig iron in a reverberatory furnace and stirring it to burn away carbon impurities without coal contact."
+          "definition": "Cort's 1783 method of melting pig iron in a reverberatory furnace and stirring it to burn away carbon impurities without coal contact.",
+          "syllables": "Pu-ddling Pro-cess",
+          "phonetic": "puddling process",
+          "tier": "3"
         },
         {
           "term": "Grooved Rolling Mill",
-          "definition": "Cort's 1784 mechanized grooved rollers that squeezed out slag and formed iron bars fifteen times faster than forge hammers."
+          "definition": "Cort's 1784 mechanized grooved rollers that squeezed out slag and formed iron bars fifteen times faster than forge hammers.",
+          "syllables": "Groo-ved Ro-lling Mill",
+          "phonetic": "grooved rolling mill",
+          "tier": "2"
         },
         {
           "term": "Portsmouth Dockyard",
-          "definition": "The royal naval complex on the Solent that served as the world's largest industrial site and primary customer for Cort's iron."
+          "definition": "The royal naval complex on the Solent that served as the world's largest industrial site and primary customer for Cort's iron.",
+          "syllables": "Po-rtsmouth Do-ckyard",
+          "phonetic": "portsmouth dockyard",
+          "tier": "2"
         },
         {
           "term": "Iron Slag",
-          "definition": "The heavy, glassy silicate waste residue squeezed out of molten iron during puddling and rolling."
+          "definition": "The heavy, glassy silicate waste residue squeezed out of molten iron during puddling and rolling.",
+          "syllables": "Iron Slag",
+          "phonetic": "iron slag",
+          "tier": "2"
         },
         {
           "term": "Mill Race & Weir",
-          "definition": "A channel and masonry barrier designed to direct fast-flowing river water onto a waterwheel to generate mechanical horsepower."
+          "definition": "A channel and masonry barrier designed to direct fast-flowing river water onto a waterwheel to generate mechanical horsepower.",
+          "syllables": "Mill Race & Weir",
+          "phonetic": "mill race & weir",
+          "tier": "2"
         },
         {
           "term": "Fareham Tallboys",
-          "definition": "Distinctive tall terracotta chimney pots crafted from local Fareham Red clay featuring a crimped white slip collar."
+          "definition": "Distinctive tall terracotta chimney pots crafted from local Fareham Red clay featuring a crimped white slip collar.",
+          "syllables": "Fa-reham Ta-llboys",
+          "phonetic": "fareham tallboys",
+          "tier": "2"
         },
         {
           "term": "Reverberatory Furnace",
-          "definition": "A specialised furnace where burning coal is kept separate from molten metal, deflecting heat downward from an arched brick ceiling to prevent chemical contamination."
+          "definition": "A specialised furnace where burning coal is kept separate from molten metal, deflecting heat downward from an arched brick ceiling to prevent chemical contamination.",
+          "syllables": "Re-ve-rbe-rato-ry Fu-rna-ce",
+          "phonetic": "reverberatory furnace",
+          "tier": "3"
         },
         {
           "term": "Orgrounds Iron",
-          "definition": "The highest quality Swedish charcoal-smelted wrought iron, long regarded as the global gold standard for Royal Navy warship construction."
+          "definition": "The highest quality Swedish charcoal-smelted wrought iron, long regarded as the global gold standard for Royal Navy warship construction.",
+          "syllables": "O-rgrounds Iron",
+          "phonetic": "orgrounds iron",
+          "tier": "3"
         },
         {
           "term": "Baltic Bottleneck",
-          "definition": "Britain’s dangerous wartime dependence on importing over 50,000 tons of malleable iron annually from Sweden and Russia across vulnerable sea lanes."
+          "definition": "Britain’s dangerous wartime dependence on importing over 50,000 tons of malleable iron annually from Sweden and Russia across vulnerable sea lanes.",
+          "syllables": "Ba-ltic Bo-ttle-neck",
+          "phonetic": "baltic bottleneck",
+          "tier": "3"
         }
       ],
       "quiz": [
         {
-          "question": "Who was the Fareham ironmaster who patented the 'puddling and rolling' process in 1783-1784?",
+          "question": "Who was hailed as the 'father of the iron trade' for patenting puddling and grooved rollers in 1783–1784?",
+          "q": "Who was hailed as the 'father of the iron trade' for patenting puddling and grooved rollers in 1783–1784?",
           "options": [
-            "Isambard Kingdom Brunel",
             "Henry Cort",
             "James Watt",
-            "Abraham Darby"
+            "Matthew Boulton",
+            "Thomas Newcomen"
           ],
-          "answer": "Henry Cort"
+          "answer": "Henry Cort",
+          "a": "Henry Cort",
+          "explanation": "Former naval agent Henry Cort leased an old corn mill at Funtley near Fareham, patenting puddling in 1783 and grooved rollers in 1784."
         },
         {
-          "question": "Where did Henry Cort establish his revolutionary iron mill in Hampshire?",
+          "question": "Where did Henry Cort establish his revolutionary iron mill along the River Meon in Hampshire?",
+          "q": "Where did Henry Cort establish his revolutionary iron mill along the River Meon in Hampshire?",
           "options": [
-            "Fontley (near Fareham)",
-            "Winchester High Street",
-            "Portsmouth Dockyard",
-            "Southampton Common"
+            "Funtley Ironworks",
+            "Portsmouth Naval Barracks",
+            "Winchester Castle",
+            "Southampton Docks"
           ],
-          "answer": "Fontley (near Fareham)"
+          "answer": "Funtley Ironworks",
+          "a": "Funtley Ironworks",
+          "explanation": "Cort established the Funtley Ironworks on the River Meon, utilizing water power and coal-fired reverberatory furnaces."
         },
         {
-          "question": "What major fuel replaced wood and charcoal to power blast furnaces during the Industrial Revolution?",
+          "question": "What abundant British mineral fuel replaced scarce timber to smelt iron ore in blast furnaces?",
+          "q": "What abundant British mineral fuel replaced scarce timber to smelt iron ore in blast furnaces?",
           "options": [
-            "Natural gas",
-            "Peat",
-            "Coal (coke)",
-            "Petroleum"
+            "pit coal",
+            "charcoal",
+            "peat",
+            "natural gas"
           ],
-          "answer": "Coal (coke)"
+          "answer": "pit coal",
+          "a": "pit coal",
+          "explanation": "Britain's rich seams of pit coal liberated ironworks and blast furnaces from reliance on depleted timber forests."
         },
         {
-          "question": "How did Henry Cort's 'puddling' process revolutionize British iron production?",
+          "question": "In Cort's reverberatory puddling furnace, how did puddlers burn off impurities from the boiling metal?",
+          "q": "In Cort's reverberatory puddling furnace, how did puddlers burn off impurities from the boiling metal?",
           "options": [
-            "It replaced human ironworkers entirely with steam-powered robots",
-            "It completely eliminated the need for coal in smelting iron",
-            "It imported all iron ore directly from Swedish mines",
-            "It allowed pig iron to be converted into high-grade wrought iron rapidly and cheaply using grooved rollers"
+            "long iron paddles",
+            "steam-powered fans",
+            "chemical acid baths",
+            "high-pressure water hoses"
           ],
-          "answer": "It allowed pig iron to be converted into high-grade wrought iron rapidly and cheaply using grooved rollers"
+          "answer": "long iron paddles",
+          "a": "long iron paddles",
+          "explanation": "Skilled puddlers stirred the boiling metal through a porthole with long iron paddles, burning off carbon until pure wrought iron formed."
         },
         {
-          "question": "Which Scottish engineer dramatically improved the efficiency of the Newcomen steam engine by adding a separate condenser?",
+          "question": "Which Scottish instrument maker patented the separate condenser in 1769 to improve steam engines?",
+          "q": "Which Scottish instrument maker patented the separate condenser in 1769 to improve steam engines?",
           "options": [
             "James Watt",
             "Thomas Newcomen",
             "George Stephenson",
             "Richard Trevithick"
           ],
-          "answer": "James Watt"
+          "answer": "James Watt",
+          "a": "James Watt",
+          "explanation": "In 1769, Scottish instrument maker James Watt patented his separate condenser, vastly improving early steam engines."
         },
         {
-          "question": "Who was the Birmingham entrepreneur who partnered with James Watt to manufacture commercial steam engines?",
+          "question": "Which Birmingham industrialist partnered with James Watt to adapt steam engines for rotary motion?",
+          "q": "Which Birmingham industrialist partnered with James Watt to adapt steam engines for rotary motion?",
           "options": [
+            "Matthew Boulton",
             "Josiah Wedgwood",
             "John Wilkinson",
-            "Matthew Boulton",
             "Robert Owen"
           ],
-          "answer": "Matthew Boulton"
+          "answer": "Matthew Boulton",
+          "a": "Matthew Boulton",
+          "explanation": "Partnering with industrialist Matthew Boulton in Birmingham, Watt adapted his engine to produce continuous rotary motion."
         },
         {
-          "question": "Before the widespread adoption of steam power, what was the primary natural power source used to drive early textile factories?",
+          "question": "What term describes the pre-industrial method of producing craft goods by hand in workers' homes?",
+          "q": "What term describes the pre-industrial method of producing craft goods by hand in workers' homes?",
           "options": [
-            "Windmills",
-            "Solar reflectors",
-            "Horse-drawn capstans",
-            "Waterwheels placed on fast-flowing rivers"
+            "domestic system",
+            "factory system",
+            "assembly line",
+            "manorial estate"
           ],
-          "answer": "Waterwheels placed on fast-flowing rivers"
+          "answer": "domestic system",
+          "a": "domestic system",
+          "explanation": "In cramped cottages under the domestic system, spinning and weaving were limited by human muscle and seasonal waterwheels."
         },
         {
-          "question": "Why was iron production so vital to the growth of the British Empire and navy?",
+          "question": "What brittle, crude metal produced by early coal blast furnaces shattered into lethal shards under a hammer?",
+          "q": "What brittle, crude metal produced by early coal blast furnaces shattered into lethal shards under a hammer?",
           "options": [
-            "It was used exclusively for decorative coins and royal statues",
-            "It was required to build cannons, anchors, steam boilers, and later ironclad naval warships",
-            "It was used to pave all major roads across Britain",
-            "It was exported exclusively to rival nations like France and Spain"
+            "pig iron",
+            "wrought iron",
+            "cast bronze",
+            "rolled steel"
           ],
-          "answer": "It was required to build cannons, anchors, steam boilers, and later ironclad naval warships"
+          "answer": "pig iron",
+          "a": "pig iron",
+          "explanation": "Crude blast furnace iron contaminated with sulphur was known as pig iron, which was as brittle as glass."
         },
         {
-          "question": "What happened to Britain's iron industry by 1800 as a direct result of Henry Cort's innovations?",
+          "question": "Before Cort's innovations, which two foreign countries did Britain import over 50,000 tons of wrought iron from each year?",
+          "q": "Before Cort's innovations, which two foreign countries did Britain import over 50,000 tons of wrought iron from each year?",
           "options": [
-            "Britain transformed from an iron importer into the world's leading exporter of wrought iron",
-            "The British government banned all private manufacture of iron",
-            "Iron was completely replaced by aluminium in all construction",
-            "The British iron industry collapsed due to foreign competition"
+            "Sweden and Russia",
+            "France and Spain",
+            "America and Canada",
+            "Germany and Italy"
           ],
-          "answer": "Britain transformed from an iron importer into the world's leading exporter of wrought iron"
+          "answer": "Sweden and Russia",
+          "a": "Sweden and Russia",
+          "explanation": "Britain was forced to import over 50,000 tons of premium wrought iron every year from Sweden and Russia across the Baltic Sea."
         },
         {
-          "question": "Which transport innovation allowed heavy raw materials like coal and iron ore to be moved cheaply before railways?",
+          "question": "In Cort's reverberatory puddling furnace, what separated the coal firebox from the molten metal hearth?",
+          "q": "In Cort's reverberatory puddling furnace, what separated the coal firebox from the molten metal hearth?",
           "options": [
-            "Horse-drawn carriages",
-            "Toll highways",
-            "Steam tractors",
-            "Canal networks"
+            "brick bridge wall",
+            "cast-iron grate",
+            "sheet of glass",
+            "wooden partition"
           ],
-          "answer": "Canal networks"
+          "answer": "brick bridge wall",
+          "a": "brick bridge wall",
+          "explanation": "Cort separated the coal firebox from the molten metal hearth with a brick bridge wall to keep sulphur away from the iron."
         },
         {
-          "question": "What tragic scandal ruined Henry Cort financially despite the immense national success of his iron patents?",
+          "question": "What water-powered invention patented by Cort in 1784 compressed iron fifteen times faster than forge hammers?",
+          "q": "What water-powered invention patented by Cort in 1784 compressed iron fifteen times faster than forge hammers?",
           "options": [
-            "He was accused of high treason by King George III",
-            "The French navy captured him during a trade voyage to Paris",
-            "His partner Adam Jellicoe embezzled Royal Navy funds, causing the government to confiscate Cort's patents",
-            "His Fontley iron mill was destroyed by a volcanic eruption"
+            "grooved rollers",
+            "steam hammers",
+            "hydraulic presses",
+            "blast fans"
           ],
-          "answer": "His partner Adam Jellicoe embezzled Royal Navy funds, causing the government to confiscate Cort's patents"
+          "answer": "grooved rollers",
+          "a": "grooved rollers",
+          "explanation": "Cort patented water-powered grooved rollers in 1784 to squeeze out slag and compress metal into uniform naval bars."
         },
         {
-          "question": "What phrase was commonly used to describe Britain's dominant global manufacturing status in the 19th century?",
+          "question": "What surviving Hampshire architectural feature near Fontley House was constructed from Cort's ironworks waste?",
+          "q": "What surviving Hampshire architectural feature near Fontley House was constructed from Cort's ironworks waste?",
           "options": [
-            "The Island of Inventors",
-            "The Workshop of the World",
-            "The Breadbasket of Europe",
-            "The Golden Empire"
+            "puddling slag",
+            "red clay bricks",
+            "granite boulders",
+            "carved marble"
           ],
-          "answer": "The Workshop of the World"
+          "answer": "puddling slag",
+          "a": "puddling slag",
+          "explanation": "An intact dry-stone wall constructed entirely from tons of dark, glassy puddling slag excavated from Cort's ironworks survives today."
         },
         {
-          "question": "What was the name of the famous locomotive built by George and Robert Stephenson that won the 1829 Rainhill Trials?",
+          "question": "Where did Cort invite the Navy Board in March 1787 to carry out decisive stress tests on his iron?",
+          "q": "Where did Cort invite the Navy Board in March 1787 to carry out decisive stress tests on his iron?",
           "options": [
-            "The Flying Scotsman",
-            "The Rocket",
-            "The Puffing Billy",
-            "The Iron Duke"
+            "Portsmouth Royal Dockyard",
+            "Chatham Naval Yard",
+            "Plymouth Sound",
+            "Deptford Wharves"
           ],
-          "answer": "The Rocket"
+          "answer": "Portsmouth Royal Dockyard",
+          "a": "Portsmouth Royal Dockyard",
+          "explanation": "In March 1787, Cort invited the Navy Board to Portsmouth Royal Dockyard for decisive stress tests in front of Admiralty commissioners."
         },
         {
-          "question": "Which British city was dubbed 'Cottonopolis' due to its vast concentration of steam-powered cotton textile mills?",
+          "question": "Which famous Royal Navy flagship on the eve of the Napoleonic Wars had its anchors forged from Funtley iron?",
+          "q": "Which famous Royal Navy flagship on the eve of the Napoleonic Wars had its anchors forged from Funtley iron?",
           "options": [
-            "Birmingham",
-            "Newcastle",
-            "Bristol",
-            "Manchester"
+            "HMS Victory",
+            "HMS Warrior",
+            "HMS Dreadnought",
+            "The Mary Rose"
           ],
-          "answer": "Manchester"
+          "answer": "HMS Victory",
+          "a": "HMS Victory",
+          "explanation": "Domestic iron production surged 400%, armoring the Royal Navy on the eve of the Napoleonic Wars and forging the anchors of HMS Victory."
         },
         {
-          "question": "Why was steam power superior to water power for factory owners?",
+          "question": "What financial partner of Henry Cort embezzled naval funds, resulting in the Crown seizing Cort's patents?",
+          "q": "What financial partner of Henry Cort embezzled naval funds, resulting in the Crown seizing Cort's patents?",
           "options": [
-            "Factories could be built anywhere near coal fields and transport links, not just next to swift rivers",
-            "Steam engines did not require coal or water to operate",
-            "Steam engines were completely silent and produced zero smoke",
-            "Steam power was legally mandated by Parliament for all industries"
+            "Adam Jellicoe",
+            "Matthew Boulton",
+            "James Frampton",
+            "Michael Sadler"
           ],
-          "answer": "Factories could be built anywhere near coal fields and transport links, not just next to swift rivers"
+          "answer": "Adam Jellicoe",
+          "a": "Adam Jellicoe",
+          "explanation": "The embezzlement of naval funds by his financial partner Adam Jellicoe tragically stripped Cort of his patents, plunging him into bankruptcy."
         },
         {
-          "question": "Which safety lamp, invented in 1815, reduced fatal explosions caused by firedamp gas in coal mines?",
+          "question": "Which 1801 painting by Philip James de Loutherbourg depicted the fiery night-time blast furnaces of the Industrial Revolution?",
+          "q": "Which 1801 painting by Philip James de Loutherbourg depicted the fiery night-time blast furnaces of the Industrial Revolution?",
           "options": [
-            "The Faraday Lantern",
-            "The Edison Bulb",
-            "The Davy Lamp",
-            "The Cort Burner"
+            "Coalbrookdale by Night",
+            "Over London by Rail",
+            "A Court for King Cholera",
+            "The Peterloo Massacre"
           ],
-          "answer": "The Davy Lamp"
+          "answer": "Coalbrookdale by Night",
+          "a": "Coalbrookdale by Night",
+          "explanation": "Philip James de Loutherbourg's 1801 masterpiece Coalbrookdale by Night captured the dramatic, sublime glow of industrial blast furnaces."
         },
         {
-          "question": "What was the initial source of iron ore used in early British blast furnaces?",
+          "question": "What top grade of Swedish imported iron did Admiralty commissioners declare Funtley metal fully equal to?",
+          "q": "What top grade of Swedish imported iron did Admiralty commissioners declare Funtley metal fully equal to?",
           "options": [
-            "Deep-sea mineral nodules",
-            "Locally mined ironstone found near coal seams",
-            "Imported Australian red clay",
-            "Melted Roman coins found in ruins"
+            "Swedish Orgrounds iron",
+            "Prussian Krupp steel",
+            "Russian Baltic alloy",
+            "Toledo iron"
           ],
-          "answer": "Locally mined ironstone found near coal seams"
+          "answer": "Swedish Orgrounds iron",
+          "a": "Swedish Orgrounds iron",
+          "explanation": "The official Admiralty minutes declared Funtley iron superior to any British metal and fully equal to top-grade Swedish Orgrounds iron."
         },
         {
-          "question": "What did Henry Cort's grooved rolling process achieve compared to traditional blacksmith hammering?",
+          "question": "What natural watercourse supplied the waterwheel power for Henry Cort's ironworks at Funtley?",
+          "q": "What natural watercourse supplied the waterwheel power for Henry Cort's ironworks at Funtley?",
           "options": [
-            "It painted the iron red to protect it from rust",
-            "It made the iron brittle so it could be easily shattered",
-            "It rolled malleable iron into standard bars and plates fifteen times faster than manual hammers",
-            "It reduced the weight of iron by over 90%"
+            "River Meon",
+            "River Thames",
+            "River Avon",
+            "River Itchen"
           ],
-          "answer": "It rolled malleable iron into standard bars and plates fifteen times faster than manual hammers"
+          "answer": "River Meon",
+          "a": "River Meon",
+          "explanation": "Driven by the surging River Meon waterwheel, Cort's grooved rollers squeezed out trapped slag impurities."
         },
         {
-          "question": "Which Shropshire town is home to the world's first cast-iron bridge, built by Abraham Darby III in 1779?",
+          "question": "By what percentage did British domestic iron production surge following the adoption of Cort's processes?",
+          "q": "By what percentage did British domestic iron production surge following the adoption of Cort's processes?",
           "options": [
-            "Ironbridge (Coalbrookdale)",
-            "Wolverhampton",
-            "Telford",
-            "Shrewsbury"
+            "400%",
+            "50%",
+            "20%",
+            "1,000%"
           ],
-          "answer": "Ironbridge (Coalbrookdale)"
+          "answer": "400%",
+          "a": "400%",
+          "explanation": "Domestic iron production surged 400%, armoring the Royal Navy on the eve of the Napoleonic Wars."
         },
         {
-          "question": "How did the expansion of British coal mining and iron manufacturing directly drive 19th-century railway construction?",
+          "question": "What continuous mechanical movement did James Watt adapt his steam engine to produce in 1781?",
+          "q": "What continuous mechanical movement did James Watt adapt his steam engine to produce in 1781?",
           "options": [
-            "The government banned horse transport entirely across the country",
-            "Iron production declined so heavily that railways were used to store surplus tracks",
-            "Railways were built purely for royal pleasure journeys",
-            "Railways were needed to move massive tonnages of coal and iron, while tracks and locomotives themselves required thousands of tons of iron"
+            "rotary motion",
+            "pumping motion",
+            "vibrating motion",
+            "hand-cranked motion"
           ],
-          "answer": "Railways were needed to move massive tonnages of coal and iron, while tracks and locomotives themselves required thousands of tons of iron"
+          "answer": "rotary motion",
+          "a": "rotary motion",
+          "explanation": "Partnering with industrialist Matthew Boulton in Birmingham, Watt adapted his engine to produce continuous rotary motion."
         }
       ],
       "hook_text": "In the late 1700s, Britain stood on the brink of an industrial transformation. Colossal Royal Navy warships and new factories demanded thousands of tons of tough wrought iron, but British blast furnaces produced only brittle pig iron. By mastering chemistry and steam power, inventors unlocked modern industry. How did iron reshape Britain’s global power?",
@@ -825,7 +1069,7 @@ export default {
       "sources": [
         {
           "letter": "A",
-          "title": "Source A: Coalbrookdale by Night (1801)",
+          "title": "Source A (Visual Record): Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801)",
           "context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
           "hinge_question": "Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
           "image": "/images/coalbrookdale_by_night.jpg",
@@ -837,15 +1081,37 @@ export default {
           "source_context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
           "teacher_notes": {
             "source_context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?"
-          }
+          },
+          "id": "iae_l1_src_a",
+          "type": "visual",
+          "src": "/images/coalbrookdale_by_night.jpg"
         },
         {
           "letter": "B",
-          "title": "Source B: Cort’s Reverberatory Puddling Furnace (1783)",
+          "id": "iae_l1_src_b",
+          "type": "visual",
+          "title": "Source B (Visual Record): Carl Frederik von Breda, Portrait of James Watt with Steam Engine Drafting Plans (1792)",
+          "context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
+          "hinge_question": "Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
+          "image": "/images/james_watt.jpg",
+          "src": "/images/james_watt.jpg",
+          "caption": "Source B: Carl Frederik von Breda, Portrait of James Watt (1792, National Portrait Gallery, NPG 186a). Watt is shown contemplating his separate condenser steam engine, the mechanical breakthrough that powered the Industrial Revolution.",
+          "question_badge": "Technological Transformation",
+          "question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
+          "enquiry_question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
+          "model_answer": "The portrait shows Watt seated thoughtfully beside his steam engine blueprints, highlighting how scientific engineering and rotary steam power replaced natural waterwheels to drive factories anywhere coal could be transported.",
+          "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
+          "teacher_notes": {
+            "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?"
+          }
+        },
+        {
+          "letter": "C",
+          "title": "Source C (Technical Cross-Section): Cort’s Reverberatory Puddling Furnace at Funtley (1783)",
           "context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
           "hinge_question": "How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
           "image": "/images/funtley_ironworks.jpg",
-          "caption": "Source B: Technical cross-section diagram of Henry Cort’s reverberatory puddling furnace and grooved rolling mill at Funtley Ironworks in Hampshire (Patent No. 1420, 1784).",
+          "caption": "Source C: Technical cross-section diagram of Henry Cort’s reverberatory puddling furnace and grooved rolling mill at Funtley Ironworks in Hampshire (Patent No. 1420, 1784).",
           "question_badge": "Technology & Change",
           "question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
           "enquiry_question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
@@ -853,52 +1119,23 @@ export default {
           "source_context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
           "teacher_notes": {
             "source_context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?"
-          }
-        },
-        {
-          "letter": "C",
-          "title": "Source C: Admiralty Navy Board Portsmouth Dockyard Trial Minutes (1787)",
-          "context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
-          "hinge_question": "How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
-          "text": "“Pursuant to your directions, we have caused trials to be made of Mr Henry Cort’s iron manufactured at Fontley. We find it to exceed in strength and toughness any iron manufactured in this kingdom, and fully equal to the best Swedish Orgrounds iron for ship bolts, mast hoops, and anchors for His Majesty’s Fleet.”",
-          "caption": "Source C: Official Navy Board trials conducted at Portsmouth Royal Navy Dockyard in March 1787, testing Funtley wrought iron against imported Swedish Orgrounds iron.",
-          "question_badge": "Reliability & Provenance",
-          "question": "Why can historians trust this official Navy report when studying the strength of Henry Cort's new iron?",
-          "enquiry_question": "Why can historians trust this official Navy report when studying the strength of Henry Cort's new iron?",
-          "model_answer": "Historians can trust this report because Navy inspectors strictly tested the iron against top-quality Swedish metal to make sure British warships would not break apart at sea.",
-          "source_context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
-          "teacher_notes": {
-            "source_context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?"
-          }
+          },
+          "id": "iae_l1_src_c",
+          "type": "visual",
+          "src": "/images/funtley_ironworks.jpg"
         },
         {
           "letter": "D",
-          "title": "Source D: Contemporary Dedication Portrait of Henry Cort (c. 1780s)",
-          "context": "An authentic 18th-century dedication engraving commemorating Henry Cort as \"The Tubal Cain of our Century and of our Country, Dedicated to the Iron Trade of Great Britain\". **Hinge Question:** Why would contemporaries compare an 18th-century Hampshire ironmaster to an ancient heroic metalworker, and what does this reveal about Britain’s growing industrial pride?",
-          "hinge_question": "Why would contemporaries compare an 18th-century Hampshire ironmaster to an ancient heroic metalworker, and what does this reveal about Britain’s growing industrial pride?",
-          "image": "/images/henry_cort.jpg",
-          "caption": "Source D: An authentic 18th-century dedication engraving commemorating Henry Cort as “The Tubal Cain of our Century and of our Country, Dedicated to the Iron Trade of Great Britain” (British Museum).",
-          "question_badge": "Historical Significance",
-          "question": "Why did admirers call Henry Cort the 'Tubal Cain of our Century' on this portrait?",
-          "enquiry_question": "Why did admirers call Henry Cort the 'Tubal Cain of our Century' on this portrait?",
-          "model_answer": "They compared him to the legendary biblical blacksmith Tubal Cain to celebrate Cort as a national hero whose invention gave Britain industrial supremacy.",
-          "source_context": "An authentic 18th-century dedication engraving commemorating Henry Cort as \"The Tubal Cain of our Century and of our Country, Dedicated to the Iron Trade of Great Britain\". **Hinge Question:** Why would contemporaries compare an 18th-century Hampshire ironmaster to an ancient heroic metalworker, and what does this reveal about Britain’s growing industrial pride?",
-          "teacher_notes": {
-            "source_context": "An authentic 18th-century dedication engraving commemorating Henry Cort as \"The Tubal Cain of our Century and of our Country, Dedicated to the Iron Trade of Great Britain\". **Hinge Question:** Why would contemporaries compare an 18th-century Hampshire ironmaster to an ancient heroic metalworker, and what does this reveal about Britain’s growing industrial pride?"
-          }
-        },
-        {
-          "letter": "E",
-          "title": "Source E: Henry Cort, Patent Specification No. 1420 for Grooved Rollers (1784)",
+          "title": "Source D (Patent Specification): Henry Cort, Patent Specification No. 1420 for Grooved Rollers (1784)",
           "context": "In February 1784, Henry Cort registered Patent No. 1420 at the Court of Chancery. While his earlier 1783 patent introduced the reverberatory puddling furnace, this second breakthrough automated the shaping of red-hot iron using water-powered grooved rollers at Funtley Ironworks, accelerating production from slow manual blacksmith hammering to rapid continuous mechanical rolling. **Hinge Question:** Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?",
           "hinge_question": "Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?",
           "text": "“I, the said Henry Cort, have discovered a new and peculiar method of preparing, welding, and working various sorts of iron... by passing the blooms through rollers having collars and grooves of different forms and dimensions. By this operation, the fibrous texture of the iron is preserved, the liquid slag and impurities are squeezed out, and the heated iron is manufactured into bars, bolts, and plates with a speed fifteen times greater than can be performed by the heaviest forge hammer. The iron so produced possesses the highest degree of malleability and toughness, capable of supplying the Royal Navy with bolts, stays, and anchors of unyielding strength.”",
-          "caption": "Source E: Extract from Henry Cort’s Patent Specification No. 1420, enrolled in the Court of Chancery in February 1784, detailing the mechanisation of iron rolling.",
+          "caption": "Source D: Extract from Henry Cort’s Patent Specification No. 1420, enrolled in the Court of Chancery in February 1784, detailing the mechanisation of iron rolling.",
           "discussion_ideas": [
             "A Fifteen-Fold Leap in Industrial Velocity: Cort's grooved rolling cylinders bypassed the ancient human bottleneck of blacksmithing: where teams of hammermen could only produce a single iron bar through hours of punishing manual labour, Cort's water-powered rollers spat out finished, uniform naval bars in minutes.",
             "Naval Self-Sufficiency and Imperial Security: By compressing the decarburized wrought iron blooms while expelling brittle slag, grooved rolling created ductile, high-tensile iron bolts and hoops that met the rigorous Admiralty standards tested at Portsmouth Dockyard, freeing Britain from reliance on Swedish and Russian iron on the eve of the Napoleonic Wars."
           ],
-          "id": "iae_l1_source_e_cort_rollers_patent",
+          "id": "iae_l1_src_d",
           "question": "How did Henry Cort’s grooved rollers revolutionize the speed and quality of iron production according to this patent?",
           "question_badge": "Technological Innovation & Economy",
           "question_type": "Technological Innovation & Economy",
@@ -907,7 +1144,30 @@ export default {
           "source_context": "In February 1784, Henry Cort registered Patent No. 1420 at the Court of Chancery. While his earlier 1783 patent introduced the reverberatory puddling furnace, this second breakthrough automated the shaping of red-hot iron using water-powered grooved rollers at Funtley Ironworks, accelerating production from slow manual blacksmith hammering to rapid continuous mechanical rolling. **Hinge Question:** Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?",
           "teacher_notes": {
             "source_context": "In February 1784, Henry Cort registered Patent No. 1420 at the Court of Chancery. While his earlier 1783 patent introduced the reverberatory puddling furnace, this second breakthrough automated the shaping of red-hot iron using water-powered grooved rollers at Funtley Ironworks, accelerating production from slow manual blacksmith hammering to rapid continuous mechanical rolling. **Hinge Question:** Why was the invention of grooved rollers just as important as the puddling furnace in enabling Britain to mass-produce wrought iron for the Royal Navy?"
-          }
+          },
+          "type": "written",
+          "src": "",
+          "image": ""
+        },
+        {
+          "letter": "E",
+          "title": "Source E (Official Admiralty Minutes): Admiralty Navy Board Portsmouth Dockyard Trial Minutes (1787)",
+          "context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
+          "hinge_question": "How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
+          "text": "“Pursuant to your directions, we have caused trials to be made of Mr Henry Cort’s iron manufactured at Fontley. We find it to exceed in strength and toughness any iron manufactured in this kingdom, and fully equal to the best Swedish Orgrounds iron for ship bolts, mast hoops, and anchors for His Majesty’s Fleet.”",
+          "caption": "Source E: Official Navy Board trials conducted at Portsmouth Royal Navy Dockyard in March 1787, testing Funtley wrought iron against imported Swedish Orgrounds iron.",
+          "question_badge": "Reliability & Provenance",
+          "question": "Why can historians trust this official Navy report when studying the strength of Henry Cort's new iron?",
+          "enquiry_question": "Why can historians trust this official Navy report when studying the strength of Henry Cort's new iron?",
+          "model_answer": "Historians can trust this report because Navy inspectors strictly tested the iron against top-quality Swedish metal to make sure British warships would not break apart at sea.",
+          "source_context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?",
+          "teacher_notes": {
+            "source_context": "Official Navy Board trials conducted at Portsmouth Dockyard in March 1787 testing Funtley wrought iron against imported Swedish Orgrounds iron (ADM 106/2347). Proving that domestic iron equaled Swedish ore secured Royal Navy self-sufficiency before the French Revolutionary Wars. **Hinge Question:** How does this trial report demonstrate that the Industrial Revolution was driven as much by naval military necessity as commercial profit?"
+          },
+          "id": "iae_l1_src_e",
+          "type": "written",
+          "src": "",
+          "image": ""
         }
       ],
       "exam_practice": {
@@ -1224,10 +1484,10 @@ export default {
           "act": 1,
           "title": "The Death of Domestic Crafts & Rise of the Mill (1780–1820)",
           "theme_heading": "The Death of Domestic Crafts & Rise of the Mill (1780–1820)",
-          "text": "<span class=\"para-ref\">[2.1]</span> Before industrialisation, most British goods were crafted under the <strong class=\"vocab-highlight\">domestic system</strong> in family cottages. Weavers worked on handlooms, pacing their labour to seasonal daylight and resting on \"Saint Monday.\" The invention of mechanized spinning mules and steam powerlooms obliterated this ancient autonomy. Capitalist mill owners built colossal multi-storey brick factories housing hundreds of machines. Handloom weavers could not compete against the torrent of cheap, uniform cloth pouring from steam mills. Driven by destitution, thousands of rural families abandoned their cottages to seek wage labour in booming northern textile hubs like Manchester and Leeds.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Before industrialisation, most British goods were crafted under the domestic system on domestic home handlooms in family cottages. Weavers paced their labour to seasonal daylight and rested on 'Saint Monday'. The invention of mechanized spinning mules and steam powerlooms obliterated this ancient autonomy. Capitalist mill owners built colossal multi-storey centralised steam factories housing hundreds of machines. Handloom weavers could not compete against the torrent of cheap cloth pouring from steam mills at relentless machine speed, forcing thousands of rural families to seek factory wage labour in booming hubs like Manchester and Leeds.",
           "source": {
             "letter": "A",
-            "title": "Source A: Powerloom Weaving in 1835",
+            "title": "Source A (Visual Record): Powerloom Weaving in a Lancashire Cotton Mill (1835)",
             "context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
             "hinge_question": "How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
             "image": "/images/19th_century_mill.jpg",
@@ -1235,17 +1495,45 @@ export default {
             "question_badge": "Source Inference",
             "question": "What can you learn from this engraving about the dangers faced by children working in steam-powered mills?",
             "enquiry_question": "What can you learn from this engraving about the dangers faced by children working in steam-powered mills?",
-            "model_answer": "Children had to crawl underneath clattering, unguarded machinery and moving leather belts where a single slip could cause severe injury or death."
-          }
+            "model_answer": "Children had to crawl underneath clattering, unguarded machinery and moving leather belts where a single slip could cause severe injury or death.",
+            "source_context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
+            "teacher_notes": {
+              "source_context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?"
+            },
+            "id": "iae_l2_src_a",
+            "type": "visual",
+            "src": "/images/19th_century_mill.jpg"
+          },
+          "sources": [
+            {
+              "letter": "A",
+              "title": "Source A (Visual Record): Powerloom Weaving in a Lancashire Cotton Mill (1835)",
+              "context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
+              "hinge_question": "How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
+              "image": "/images/19th_century_mill.jpg",
+              "caption": "Source A: Thomas Allom, Powerloom Weaving (1835, Science Museum). A steam-driven Lancashire textile mill showing children working as scavengers beneath clattering powerlooms under the supervision of an overseer.",
+              "question_badge": "Source Inference",
+              "question": "What can you learn from this engraving about the dangers faced by children working in steam-powered mills?",
+              "enquiry_question": "What can you learn from this engraving about the dangers faced by children working in steam-powered mills?",
+              "model_answer": "Children had to crawl underneath clattering, unguarded machinery and moving leather belts where a single slip could cause severe injury or death.",
+              "source_context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
+              "teacher_notes": {
+                "source_context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?"
+              },
+              "id": "iae_l2_src_a",
+              "type": "visual",
+              "src": "/images/19th_century_mill.jpg"
+            }
+          ]
         },
         {
           "act": 2,
           "title": "The Tyranny of the Factory Clock & Draconian Fines (1800–1830)",
           "theme_heading": "The Tyranny of the Factory Clock & Draconian Fines (1800–1830)",
-          "text": "<span class=\"para-ref\">[2.2]</span> Inside the mills, natural rhythms were replaced by the tyranny of the <strong class=\"vocab-highlight\">factory clock</strong>. Operatives worked grueling fourteen- to sixteen-hour shifts, six days a week, surrounded by whirling unguarded iron belts and deafening machinery. Mill masters enforced military-style obedience through draconian rulebooks. Workers were fined two pence—a large fraction of daily wages—for arriving minutes late, opening a window to breathe amidst choking cotton lint, or speaking to a workmate. Mill gates were locked from the outside; anyone pausing from exhaustion faced immediate dismissal or corporal punishment.",
+          "text": "<span class=\"para-ref\">[2.2]</span> Inside the mills, natural rhythms were replaced by the tyranny of the factory clock. Operatives worked rigid fourteen-hour shifts from 5:30 am to 8:00 pm, six days a week. Mill managers imposed harsh pence-deduction lateness fines for being just minutes late or opening a window. Workers laboured in suffocating temperatures up to 32°C amidst choking dust & locked doors, with cotton fibers coating their lungs and causing chronic bronchitis.",
           "source": {
             "letter": "B",
-            "title": "Source B: Tyldesley Cotton Mill Factory Rulebook & Fines Ledger (1823)",
+            "title": "Source B (Factory Rulebook): Tyldesley Cotton Mill Factory Rulebook & Fines Ledger (1823)",
             "context": "Official workplace regulations posted at the entrance of a Lancashire cotton mill in 1823. Mill masters enforced absolute obedience through monetary wage deductions and locked gates. **Hinge Question:** Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?",
             "hinge_question": "Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?",
             "text": "“1. The door of the lodge will be closed 5 minutes after the bell rings in the morning, and no person admitted till breakfast; any person absent after that time will forfeit 3d.\n2. Any person opening a window without permission of the overlooker will forfeit 1s.\n3. Any spinner found dirty at work will forfeit 1s.\n4. Any person whistling or singing at work will forfeit 1s.\n5. Any person found five minutes after the last bell rings in the evening will forfeit 1s.”",
@@ -1253,38 +1541,144 @@ export default {
             "question_badge": "Author's Purpose",
             "question": "Why did factory bosses write such harsh rules and fine workers a whole shilling for opening a window or whistling?",
             "enquiry_question": "Why did factory bosses write such harsh rules and fine workers a whole shilling for opening a window or whistling?",
-            "model_answer": "Factory owners used strict monetary fines to turn farmworkers into obedient, clock-watching workers who never wasted a single second of factory time."
+            "model_answer": "Factory owners used strict monetary fines to turn farmworkers into obedient, clock-watching workers who never wasted a single second of factory time.",
+            "source_context": "Official workplace regulations posted at the entrance of a Lancashire cotton mill in 1823. Mill masters enforced absolute obedience through monetary wage deductions and locked gates. **Hinge Question:** Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?",
+            "teacher_notes": {
+              "source_context": "Official workplace regulations posted at the entrance of a Lancashire cotton mill in 1823. Mill masters enforced absolute obedience through monetary wage deductions and locked gates. **Hinge Question:** Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?"
+            },
+            "id": "iae_l2_src_b",
+            "type": "written",
+            "src": "",
+            "image": ""
           },
           "image": "/images/spinning_mule.jpg",
           "image_alt": "Portrait of Samuel Crompton with his revolutionary spinning mule machine",
-          "caption": "Samuel Crompton (1753–1827) and his 1779 Spinning Mule, the revolutionary hybrid machine that combined the roller drafting of Arkwright with the carriage action of Hargreaves to produce unprecedented quantities of yarn (Library of Congress, LC-USZ62-96488)."
+          "caption": "Samuel Crompton (1753–1827) and his 1779 Spinning Mule, the revolutionary hybrid machine that combined the roller drafting of Arkwright with the carriage action of Hargreaves to produce unprecedented quantities of yarn (Library of Congress, LC-USZ62-96488).",
+          "sources": [
+            {
+              "letter": "B",
+              "title": "Source B (Factory Rulebook): Tyldesley Cotton Mill Factory Rulebook & Fines Ledger (1823)",
+              "context": "Official workplace regulations posted at the entrance of a Lancashire cotton mill in 1823. Mill masters enforced absolute obedience through monetary wage deductions and locked gates. **Hinge Question:** Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?",
+              "hinge_question": "Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?",
+              "text": "“1. The door of the lodge will be closed 5 minutes after the bell rings in the morning, and no person admitted till breakfast; any person absent after that time will forfeit 3d.\n2. Any person opening a window without permission of the overlooker will forfeit 1s.\n3. Any spinner found dirty at work will forfeit 1s.\n4. Any person whistling or singing at work will forfeit 1s.\n5. Any person found five minutes after the last bell rings in the evening will forfeit 1s.”",
+              "caption": "Source B: Extracts from the 1823 Rulebook posted inside Tyldesley Cotton Mill, illustrating the rigid clockwork discipline and severe monetary penalties imposed upon mill operatives.",
+              "question_badge": "Author's Purpose",
+              "question": "Why did factory bosses write such harsh rules and fine workers a whole shilling for opening a window or whistling?",
+              "enquiry_question": "Why did factory bosses write such harsh rules and fine workers a whole shilling for opening a window or whistling?",
+              "model_answer": "Factory owners used strict monetary fines to turn farmworkers into obedient, clock-watching workers who never wasted a single second of factory time.",
+              "source_context": "Official workplace regulations posted at the entrance of a Lancashire cotton mill in 1823. Mill masters enforced absolute obedience through monetary wage deductions and locked gates. **Hinge Question:** Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?",
+              "teacher_notes": {
+                "source_context": "Official workplace regulations posted at the entrance of a Lancashire cotton mill in 1823. Mill masters enforced absolute obedience through monetary wage deductions and locked gates. **Hinge Question:** Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?"
+              },
+              "id": "iae_l2_src_b",
+              "type": "written",
+              "src": "",
+              "image": ""
+            }
+          ]
         },
         {
           "act": 3,
           "title": "Pauper Apprentices & Northern Textile Exploitation (1810–1832)",
           "theme_heading": "Pauper Apprentices & Northern Textile Exploitation (1810–1832)",
-          "text": "<span class=\"para-ref\">[2.3]</span> Mill owners discovered that children made the cheapest, most compliant workforce. Thousands of orphan <strong class=\"vocab-highlight\">pauper apprentices</strong> <small class=\"vocab-gloss\">(destitute children legally bound by workhouses to factory owners)</small> were carted from London workhouses to remote northern mills. Employed as \"scavengers\" and \"piecers,\" children crawled underneath moving spinning mules to sweep flyaway cotton while machinery roared inches above their heads. Horrific accidents were routine: fingers were crushed in gears, and girls were scalped when long hair caught in whirling drive shafts. Children slept in shifts in crowded apprentice dormitories, surviving on thin oatmeal porridge.",
+          "text": "<span class=\"para-ref\">[2.3]</span> Mill owners discovered that children made the cheapest workforce, engaging in workhouse apprentice trafficking from London parishes to northern mills. Small children aged six to ten worked as 'piecers' and 'scavengers', crawling under spinning mules while machinery operated at full speed to sweep loose cotton and tie broken threads. Exhausted children suffered crushed fingers & hair scalpings when loose clothes caught in exposed spinning gears.",
           "source": {
             "letter": "C",
-            "title": "Source C: Parliamentary Sadler Committee Report (1832)",
-            "context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
-            "hinge_question": "Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
-            "text": "“I began work at eight years old... our common hours of labour were from six in the morning till half-past eight at night... fourteen hours and a half of actual labour. We had no time allowed for breakfast or afternoon refreshment; we had to eat our meals before the machines. If we were a minute too late, we were beaten with a leather strap; I have been severely strapped myself... my limbs are deformed from standing so long.”",
-            "caption": "Source C: Minutes of Evidence before the Parliamentary Select Committee on the Labour of Factory Children, 15 March 1832 (Testimony of 22-year-old former child worker Matthew Crabtree).",
-            "question_badge": "Cross-Referencing & Motive",
-            "question": "How does Matthew Crabtree’s eyewitness testimony support the claim that factory hours ruined children's health?",
-            "enquiry_question": "How does Matthew Crabtree’s eyewitness testimony support the claim that factory hours ruined children's health?",
-            "model_answer": "Crabtree explains under oath that working fourteen-hour days without breaks left children physically deformed and beaten with straps if fatigue made them late."
-          }
+            "title": "Source C (Visual Record): Contemporary Engraving of Factory Child Labour (1840)",
+            "context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
+            "hinge_question": "Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
+            "image": "/images/child_labour.jpg",
+            "caption": "Source C: Contemporary 1840 illustration from Frances Trollope’s novel The Life and Adventures of Michael Armstrong, depicting child scavengers crawling under spinning machinery as an overseer looks on.",
+            "question_badge": "Propaganda & Persuasion",
+            "question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
+            "enquiry_question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
+            "model_answer": "By showing small, exhausted children crouching dangerously under looming iron wheels while an overseer watches, the picture stirred up deep public sympathy and outrage.",
+            "source_context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
+            "teacher_notes": {
+              "source_context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?"
+            },
+            "id": "iae_l2_src_c",
+            "type": "visual",
+            "src": "/images/child_labour.jpg"
+          },
+          "sources": [
+            {
+              "letter": "C",
+              "title": "Source C (Visual Record): Contemporary Engraving of Factory Child Labour (1840)",
+              "context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
+              "hinge_question": "Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
+              "image": "/images/child_labour.jpg",
+              "caption": "Source C: Contemporary 1840 illustration from Frances Trollope’s novel The Life and Adventures of Michael Armstrong, depicting child scavengers crawling under spinning machinery as an overseer looks on.",
+              "question_badge": "Propaganda & Persuasion",
+              "question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
+              "enquiry_question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
+              "model_answer": "By showing small, exhausted children crouching dangerously under looming iron wheels while an overseer watches, the picture stirred up deep public sympathy and outrage.",
+              "source_context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
+              "teacher_notes": {
+                "source_context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?"
+              },
+              "id": "iae_l2_src_c",
+              "type": "visual",
+              "src": "/images/child_labour.jpg"
+            }
+          ]
         },
         {
           "act": 4,
           "title": "The Sadler Committee & Matthew Crabtree’s Testimony (1832)",
           "theme_heading": "The Sadler Committee & Matthew Crabtree’s Testimony (1832)",
-          "text": "<span class=\"para-ref\">[2.4]</span> Outrage over factory conditions culminated in the landmark 1832 Parliamentary <strong class=\"vocab-highlight\">Sadler Committee</strong> investigation. Twenty-two-year-old former child worker Matthew Crabtree gave harrowing evidence. He recounted starting in a blanket factory at age eight, working from 6:00 AM to 9:00 PM with only forty minutes for dinner. Overlookers patrolled the aisles with heavy leather straps, brutally beating exhausted children who lagged behind. Crabtree testified that extreme fatigue caused him to drop asleep on the floor without eating, leaving his legs permanently bowed and his spine stunted by unceasing toil.",
+          "text": "<span class=\"para-ref\">[2.4]</span> Outrage over conditions culminated in the 1832 Parliamentary Sadler Committee investigation. Witnesses testified that sixteen-hour daily fatigue caused children to collapse asleep into running machinery. Overlookers kept sleepy children awake with overlooker leather strap beatings. Decades of working twelve-hour days caused permanent spinal stunting, deformed knee joints, and stunted growth among factory populations.",
+          "source": {
+            "letter": "D",
+            "title": "Source D (Parliamentary Inquiry): Parliamentary Sadler Committee Report (1832)",
+            "context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
+            "hinge_question": "Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
+            "text": "“I began work at eight years old... our common hours of labour were from six in the morning till half-past eight at night... fourteen hours and a half of actual labour. We had no time allowed for breakfast or afternoon refreshment; we had to eat our meals before the machines. If we were a minute too late, we were beaten with a leather strap; I have been severely strapped myself... my limbs are deformed from standing so long.”",
+            "caption": "Source D: Minutes of Evidence before the Parliamentary Select Committee on the Labour of Factory Children, 15 March 1832 (Testimony of 22-year-old former child worker Matthew Crabtree).",
+            "question_badge": "Cross-Referencing & Motive",
+            "question": "How does Matthew Crabtree’s eyewitness testimony support the claim that factory hours ruined children's health?",
+            "enquiry_question": "How does Matthew Crabtree’s eyewitness testimony support the claim that factory hours ruined children's health?",
+            "model_answer": "Crabtree explains under oath that working fourteen-hour days without breaks left children physically deformed and beaten with straps if fatigue made them late.",
+            "source_context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
+            "teacher_notes": {
+              "source_context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?"
+            },
+            "id": "iae_l2_src_d",
+            "type": "written",
+            "src": "",
+            "image": ""
+          },
+          "sources": [
+            {
+              "letter": "D",
+              "title": "Source D (Parliamentary Inquiry): Parliamentary Sadler Committee Report (1832)",
+              "context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
+              "hinge_question": "Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
+              "text": "“I began work at eight years old... our common hours of labour were from six in the morning till half-past eight at night... fourteen hours and a half of actual labour. We had no time allowed for breakfast or afternoon refreshment; we had to eat our meals before the machines. If we were a minute too late, we were beaten with a leather strap; I have been severely strapped myself... my limbs are deformed from standing so long.”",
+              "caption": "Source D: Minutes of Evidence before the Parliamentary Select Committee on the Labour of Factory Children, 15 March 1832 (Testimony of 22-year-old former child worker Matthew Crabtree).",
+              "question_badge": "Cross-Referencing & Motive",
+              "question": "How does Matthew Crabtree’s eyewitness testimony support the claim that factory hours ruined children's health?",
+              "enquiry_question": "How does Matthew Crabtree’s eyewitness testimony support the claim that factory hours ruined children's health?",
+              "model_answer": "Crabtree explains under oath that working fourteen-hour days without breaks left children physically deformed and beaten with straps if fatigue made them late.",
+              "source_context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
+              "teacher_notes": {
+                "source_context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?"
+              },
+              "id": "iae_l2_src_d",
+              "type": "written",
+              "src": "",
+              "image": ""
+            }
+          ]
+        },
+        {
+          "act": 5,
+          "title": "Lord Shaftesbury & The 1833 Factory Act (1833)",
+          "theme_heading": "Lord Shaftesbury & The 1833 Factory Act (1833)",
+          "text": "<span class=\"para-ref\">[2.5]</span> Shocked by Sadler's revelations, humanitarian reformers led by Lord Shaftesbury pressured Parliament to pass the landmark **Factory Act 1833**. The Act banned child labour under nine in textile mills and enforced eight-hour workday limits for children aged nine to thirteen, alongside two hours of compulsory schooling. Crucially, the Act created four full-time inspectors to enter mills unannounced, establishing the principle of statutory state intervention in private industry.",
           "source": {
             "letter": "E",
-            "title": "Source E: The Factory Act 1833 (3 & 4 Will. IV, c. 103)",
+            "title": "Source E (Statute Law): The Factory Act 1833 (3 & 4 Will. IV, c. 103)",
             "context": "Passed by Parliament in August 1833 after intense public campaigning by Lord Ashley (later Lord Shaftesbury), the Factory Act 1833 marked the first time the British state intervened directly in private capitalist enterprise to protect child workers. Crucially, the Act created four salaried Crown Factory Inspectors empowered to enter any mill unannounced. **Hinge Question:** Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?",
             "hinge_question": "Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?",
             "text": "“Be it enacted that from and after the First Day of January 1834, no Person under Eighteen Years of Age shall be allowed to work in the Night in any Cotton, Woollen, or Flax Mill... And be it enacted that no Child who shall not have completed his or her Ninth Year of Age shall be employed in any such Mill or Factory... And no Child between Nine and Thirteen Years shall work more than Forty-eight Hours in any One Week, nor more than Nine Hours in any One Day... And be it enacted that it shall be lawful for His Majesty to appoint Four Persons to be Inspectors of Factories, empowered to enter any Factory or Mill by Day or by Night, to examine the Persons employed, and to enforce the Provisions of this Act.”",
@@ -1293,262 +1687,356 @@ export default {
               "The Collapse of Unregulated Laissez-Faire: Prior to 1833, British factory owners operated under absolute laissez-faire, treating child labour as a private contract between employer and parent with zero government interference; the 1833 Act established the revolutionary constitutional principle that the state possessed the duty to regulate capitalist industry and protect vulnerable human life.",
               "Enforcement via Independent Crown Inspectors: Previous child labour acts (such as the 1802 and 1819 Acts) were completely ignored because local magistrates were often mill owners themselves; by appointing four professional, salaried inspectors (such as Leonard Horner) with legal authority to enter mills unannounced, Parliament created real, enforceable state accountability."
             ],
-            "id": "iae_l2_source_e_factory_act_1833",
+            "id": "iae_l2_src_e",
             "question": "What two major protections did the Factory Act 1833 establish for children working in British textile mills?",
             "question_badge": "Legislation & State Intervention",
             "question_type": "Legislation & State Intervention",
             "model_answer": "The Act banned the employment of children under the age of nine and restricted children aged nine to thirteen to a maximum of nine hours of work per day.",
-            "citation": "Statutes of the United Kingdom, 3 & 4 William IV, c. 103 (29 August 1833) / Parliamentary Archives, London."
-          }
-        },
-        {
-          "act": 5,
-          "title": "Lord Shaftesbury & The 1833 Factory Act (1833)",
-          "theme_heading": "Lord Shaftesbury & The 1833 Factory Act (1833)",
-          "text": "<span class=\"para-ref\">[2.5]</span> Shocked by Sadler’s revelations, humanitarian reformers led by <strong class=\"vocab-highlight\">Lord Shaftesbury</strong> pressured Parliament into passing the historic <strong>1833 Factory Act</strong>. Defying capitalist owners who warned that state interference would ruin Britain’s economy, the Act banned textile work for children under nine, capped working hours at eight hours daily for children aged 9–13, and required two hours of compulsory schooling. Crucially, Parliament appointed the first four statutory factory inspectors to enforce the law. While mill masters often forged birth certificates, the Act set a vital constitutional precedent: the state possessed the legal right to protect vulnerable workers from unbridled industrial exploitation.",
-          "source": {
-            "letter": "D",
-            "title": "Source D: Contemporary Engraving of Factory Child Labour (1840)",
-            "context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
-            "hinge_question": "Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
-            "image": "/images/child_labour.jpg",
-            "caption": "Source D: Contemporary 1840 illustration from Frances Trollope’s novel The Life and Adventures of Michael Armstrong, depicting child scavengers crawling under spinning machinery as an overseer looks on.",
-            "question_badge": "Propaganda & Persuasion",
-            "question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
-            "enquiry_question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
-            "model_answer": "By showing small, exhausted children crouching dangerously under looming iron wheels while an overseer watches, the picture stirred up deep public sympathy and outrage."
+            "citation": "Statutes of the United Kingdom, 3 & 4 William IV, c. 103 (29 August 1833) / Parliamentary Archives, London.",
+            "source_context": "Passed by Parliament in August 1833 after intense public campaigning by Lord Ashley (later Lord Shaftesbury), the Factory Act 1833 marked the first time the British state intervened directly in private capitalist enterprise to protect child workers. Crucially, the Act created four salaried Crown Factory Inspectors empowered to enter any mill unannounced. **Hinge Question:** Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?",
+            "teacher_notes": {
+              "source_context": "Passed by Parliament in August 1833 after intense public campaigning by Lord Ashley (later Lord Shaftesbury), the Factory Act 1833 marked the first time the British state intervened directly in private capitalist enterprise to protect child workers. Crucially, the Act created four salaried Crown Factory Inspectors empowered to enter any mill unannounced. **Hinge Question:** Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?"
+            },
+            "type": "written",
+            "src": "",
+            "image": ""
           },
           "image": "/images/lord_shaftesbury.jpg",
           "image_alt": "Portrait of Anthony Ashley-Cooper, 7th Earl of Shaftesbury, factory reformer",
-          "caption": "Anthony Ashley-Cooper, 7th Earl of Shaftesbury (Lord Ashley, 1801–1885), reform politician who championed the Ten Hours Movement and led the parliamentary crusade against child factory labour (George Frederic Watts, 1862 / National Portrait Gallery, NPG 1012)."
+          "caption": "Anthony Ashley-Cooper, 7th Earl of Shaftesbury (Lord Ashley, 1801–1885), reform politician who championed the Ten Hours Movement and led the parliamentary crusade against child factory labour (George Frederic Watts, 1862 / National Portrait Gallery, NPG 1012).",
+          "sources": [
+            {
+              "letter": "E",
+              "title": "Source E (Statute Law): The Factory Act 1833 (3 & 4 Will. IV, c. 103)",
+              "context": "Passed by Parliament in August 1833 after intense public campaigning by Lord Ashley (later Lord Shaftesbury), the Factory Act 1833 marked the first time the British state intervened directly in private capitalist enterprise to protect child workers. Crucially, the Act created four salaried Crown Factory Inspectors empowered to enter any mill unannounced. **Hinge Question:** Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?",
+              "hinge_question": "Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?",
+              "text": "“Be it enacted that from and after the First Day of January 1834, no Person under Eighteen Years of Age shall be allowed to work in the Night in any Cotton, Woollen, or Flax Mill... And be it enacted that no Child who shall not have completed his or her Ninth Year of Age shall be employed in any such Mill or Factory... And no Child between Nine and Thirteen Years shall work more than Forty-eight Hours in any One Week, nor more than Nine Hours in any One Day... And be it enacted that it shall be lawful for His Majesty to appoint Four Persons to be Inspectors of Factories, empowered to enter any Factory or Mill by Day or by Night, to examine the Persons employed, and to enforce the Provisions of this Act.”",
+              "caption": "Source E: Key statutory clauses of the Factory Act 1833, which banned textile factory labour for children under nine and established Britain's first four factory inspectors.",
+              "discussion_ideas": [
+                "The Collapse of Unregulated Laissez-Faire: Prior to 1833, British factory owners operated under absolute laissez-faire, treating child labour as a private contract between employer and parent with zero government interference; the 1833 Act established the revolutionary constitutional principle that the state possessed the duty to regulate capitalist industry and protect vulnerable human life.",
+                "Enforcement via Independent Crown Inspectors: Previous child labour acts (such as the 1802 and 1819 Acts) were completely ignored because local magistrates were often mill owners themselves; by appointing four professional, salaried inspectors (such as Leonard Horner) with legal authority to enter mills unannounced, Parliament created real, enforceable state accountability."
+              ],
+              "id": "iae_l2_src_e",
+              "question": "What two major protections did the Factory Act 1833 establish for children working in British textile mills?",
+              "question_badge": "Legislation & State Intervention",
+              "question_type": "Legislation & State Intervention",
+              "model_answer": "The Act banned the employment of children under the age of nine and restricted children aged nine to thirteen to a maximum of nine hours of work per day.",
+              "citation": "Statutes of the United Kingdom, 3 & 4 William IV, c. 103 (29 August 1833) / Parliamentary Archives, London.",
+              "source_context": "Passed by Parliament in August 1833 after intense public campaigning by Lord Ashley (later Lord Shaftesbury), the Factory Act 1833 marked the first time the British state intervened directly in private capitalist enterprise to protect child workers. Crucially, the Act created four salaried Crown Factory Inspectors empowered to enter any mill unannounced. **Hinge Question:** Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?",
+              "teacher_notes": {
+                "source_context": "Passed by Parliament in August 1833 after intense public campaigning by Lord Ashley (later Lord Shaftesbury), the Factory Act 1833 marked the first time the British state intervened directly in private capitalist enterprise to protect child workers. Crucially, the Act created four salaried Crown Factory Inspectors empowered to enter any mill unannounced. **Hinge Question:** Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?"
+              },
+              "type": "written",
+              "src": "",
+              "image": ""
+            }
+          ]
         }
       ],
       "quiz": [
         {
-          "question": "Who invented the water frame in 1769, establishing the modern factory system at Cromford Mill?",
+          "question": "What pre-industrial system of home-based spinning and weaving was obliterated by powerlooms and steam mills?",
+          "q": "What pre-industrial system of home-based spinning and weaving was obliterated by powerlooms and steam mills?",
           "options": [
-            "Richard Arkwright",
-            "Samuel Crompton",
-            "Edmund Cartwright",
-            "James Hargreaves"
+            "domestic system",
+            "manorial estate",
+            "assembly line",
+            "guild system"
           ],
-          "answer": "Richard Arkwright"
+          "answer": "domestic system",
+          "a": "domestic system",
+          "explanation": "Before industrialisation, most British goods were crafted under the domestic system in family cottages."
         },
         {
-          "question": "What hazardous job in textile mills required young children to crawl under operating machinery to sweep up loose cotton fibres?",
+          "question": "What strict device regulated the grueling fourteen- to sixteen-hour shifts of Victorian factory workers?",
+          "q": "What strict device regulated the grueling fourteen- to sixteen-hour shifts of Victorian factory workers?",
           "options": [
-            "Hurrier",
-            "Piecer",
-            "Trapper",
-            "Scavenger"
+            "factory clock",
+            "church bell",
+            "sundial",
+            "town crier"
           ],
-          "answer": "Scavenger"
+          "answer": "factory clock",
+          "a": "factory clock",
+          "explanation": "Inside the mills, natural rhythms were replaced by the tyranny of the factory clock, governing shifts of fourteen to sixteen hours."
         },
         {
-          "question": "What was the task of a 'piecer' in a 19th-century cotton spinning factory?",
+          "question": "What term described destitute workhouse children legally bound to factory owners to work as unpaid mill hands?",
+          "q": "What term described destitute workhouse children legally bound to factory owners to work as unpaid mill hands?",
           "options": [
-            "To sew finished clothing for export",
-            "To lean over moving spinning frames and tie together broken threads without stopping the machines",
-            "To lubricate the main steam engine flywheel",
-            "To shovel coal into the furnace boilers"
+            "pauper apprentices",
+            "skilled artisans",
+            "free yeomen",
+            "navvies"
           ],
-          "answer": "To lean over moving spinning frames and tie together broken threads without stopping the machines"
+          "answer": "pauper apprentices",
+          "a": "pauper apprentices",
+          "explanation": "Thousands of orphan pauper apprentices were carted from London workhouses to remote northern mills."
         },
         {
-          "question": "Why did factory owners prefer to employ children and women over adult men in early textile mills?",
+          "question": "Which 1832 parliamentary investigation gathered harrowing eyewitness testimony from former child factory workers?",
+          "q": "Which 1832 parliamentary investigation gathered harrowing eyewitness testimony from former child factory workers?",
           "options": [
-            "Adult men were legally forbidden from entering factory buildings",
-            "Children were legally required to work by the British Monarchy",
-            "They could pay them significantly lower wages and they were perceived as easier to discipline",
-            "Women and children possessed supernatural weaving abilities"
+            "Sadler Committee",
+            "Chadwick Commission",
+            "Privy Council",
+            "Board of Trade"
           ],
-          "answer": "They could pay them significantly lower wages and they were perceived as easier to discipline"
+          "answer": "Sadler Committee",
+          "a": "Sadler Committee",
+          "explanation": "Outrage over factory conditions culminated in the landmark 1832 Parliamentary Sadler Committee investigation."
         },
         {
-          "question": "What was the standard working day for most factory workers and child apprentices during the early Industrial Revolution?",
+          "question": "What historic statute banned textile factory labour for children under nine and created the first four factory inspectors?",
+          "q": "What historic statute banned textile factory labour for children under nine and created the first four factory inspectors?",
           "options": [
-            "12 to 16 hours per day, six days a week",
-            "8 hours per day, Monday to Friday",
-            "4 hours in the morning only",
-            "6 hours per day with paid holidays"
+            "1833 Factory Act",
+            "Great Reform Act",
+            "Poor Law Amendment Act",
+            "Ten Hours Act"
           ],
-          "answer": "12 to 16 hours per day, six days a week"
+          "answer": "1833 Factory Act",
+          "a": "1833 Factory Act",
+          "explanation": "Lord Shaftesbury pressured Parliament into passing the historic 1833 Factory Act, banning textile work for children under nine."
         },
         {
-          "question": "What common physical deformity frequently afflicted young children who stood on hard factory floors for up to 14 hours a day?",
+          "question": "What dangerous job required children to crawl underneath moving spinning mules to sweep flyaway cotton?",
+          "q": "What dangerous job required children to crawl underneath moving spinning mules to sweep flyaway cotton?",
           "options": [
-            "Permanent blindness from sunlight",
-            "Rickets and bent/bowed legs from bone softening and constant pressure",
-            "Loss of hearing from loud church bells",
-            "Scurvy from lack of fruit"
+            "scavengers",
+            "piecers",
+            "overlookers",
+            "puddlers"
           ],
-          "answer": "Rickets and bent/bowed legs from bone softening and constant pressure"
+          "answer": "scavengers",
+          "a": "scavengers",
+          "explanation": "Employed as scavengers and piecers, children crawled underneath moving spinning mules to sweep flyaway cotton."
         },
         {
-          "question": "How did factory overseers enforce strict discipline and punctuality among workers?",
+          "question": "What factory task required children to stand for hours splicing snapped cotton threads on moving frames?",
+          "q": "What factory task required children to stand for hours splicing snapped cotton threads on moving frames?",
           "options": [
-            "By sending workers on university training courses",
-            "By offering generous bonuses and extra days off",
-            "By reducing the working hours of tired employees",
-            "Through harsh financial fines, beatings ('strapping'), and locking factory gates"
+            "piecers",
+            "scavengers",
+            "stokers",
+            "doffers"
           ],
-          "answer": "Through harsh financial fines, beatings ('strapping'), and locking factory gates"
+          "answer": "piecers",
+          "a": "piecers",
+          "explanation": "Child piecers leaned over moving spinning frames to swiftly splice broken threads without halting machinery."
         },
         {
-          "question": "What key restriction did the landmark 1833 Factory Act introduce regarding child labour in textile mills?",
+          "question": "What brutal weapon did strict overlookers use to beat fatigued children who lagged behind at their machines?",
+          "q": "What brutal weapon did strict overlookers use to beat fatigued children who lagged behind at their machines?",
           "options": [
-            "It forced all children to work until age twenty-one",
-            "It doubled the wages of all child workers",
-            "It banned all work for children under nine years old and limited 9-13 year-olds to eight hours per day",
-            "It completely abolished child labour across all British industries"
+            "leather straps",
+            "iron rods",
+            "wooden rulers",
+            "rope ends"
           ],
-          "answer": "It banned all work for children under nine years old and limited 9-13 year-olds to eight hours per day"
+          "answer": "leather straps",
+          "a": "leather straps",
+          "explanation": "Overlookers patrolled the aisles with heavy leather straps, brutally beating exhausted children who lagged behind."
         },
         {
-          "question": "What famous building in London was constructed using over 6 million Fareham Red bricks?",
+          "question": "Which twenty-two-year-old former child worker gave harrowing evidence of bone deformities to the Sadler Committee?",
+          "q": "Which twenty-two-year-old former child worker gave harrowing evidence of bone deformities to the Sadler Committee?",
           "options": [
-            "The Royal Albert Hall",
-            "The Tower of London",
-            "Buckingham Palace",
-            "The Houses of Parliament"
+            "Matthew Crabtree",
+            "Henry Cook",
+            "George Loveless",
+            "Francis Place"
           ],
-          "answer": "The Royal Albert Hall"
+          "answer": "Matthew Crabtree",
+          "a": "Matthew Crabtree",
+          "explanation": "Twenty-two-year-old former child worker Matthew Crabtree testified that unceasing labour left his legs permanently bowed."
         },
         {
-          "question": "What machine was used in Hampshire brickfields to crush and mix raw clay with water?",
+          "question": "What minor action inside the mill was penalized with a two-pence fine under the Tyldesley Cotton Mill rulebook?",
+          "q": "What minor action inside the mill was penalized with a two-pence fine under the Tyldesley Cotton Mill rulebook?",
           "options": [
-            "A blast furnace",
-            "A spinning jenny",
-            "A pug mill",
-            "A puddling hearth"
+            "opening a window",
+            "drinking cold water",
+            "wearing woollen socks",
+            "sitting on a bench"
           ],
-          "answer": "A pug mill"
+          "answer": "opening a window",
+          "a": "opening a window",
+          "explanation": "Workers were fined two pence by strict overlookers for arriving minutes late or opening a window to breathe amidst cotton lint."
         },
         {
-          "question": "What was the role of a \"pug boy\" in the Funtley and Fareham clay pits?",
+          "question": "What humanitarian reformer led the campaign in Parliament for factory legislation and the protection of child workers?",
+          "q": "What humanitarian reformer led the campaign in Parliament for factory legislation and the protection of child workers?",
           "options": [
-            "To deliver hot tea to the managers",
-            "To dig coal from deep underground mines",
-            "To load finished bricks onto railway freight wagons",
-            "To drive horses in circles to turn the pug mill and mix heavy clay"
+            "Lord Shaftesbury",
+            "Robert Peel",
+            "William Lovett",
+            "The Duke of Wellington"
           ],
-          "answer": "To drive horses in circles to turn the pug mill and mix heavy clay"
+          "answer": "Lord Shaftesbury",
+          "a": "Lord Shaftesbury",
+          "explanation": "Humanitarian reformers led by Lord Shaftesbury (Lord Ashley) pressured Parliament into passing the historic 1833 Factory Act."
         },
         {
-          "question": "Why were \"Fareham Reds\" so highly prized by Victorian architects across the British Empire?",
+          "question": "Under the 1833 Factory Act, how many hours of compulsory daily schooling were children aged 9 to 13 guaranteed?",
+          "q": "Under the 1833 Factory Act, how many hours of compulsory daily schooling were children aged 9 to 13 guaranteed?",
           "options": [
-            "They were painted with gold leaf",
-            "They were exceptionally dense, durable, and weather-resistant with a vibrant crimson color",
-            "They were the only bricks legally permitted by Parliament",
-            "They were made entirely of lightweight dried straw"
+            "two hours",
+            "four hours",
+            "six hours",
+            "zero hours"
           ],
-          "answer": "They were exceptionally dense, durable, and weather-resistant with a vibrant crimson color"
+          "answer": "two hours",
+          "a": "two hours",
+          "explanation": "The 1833 Act capped working hours at eight hours daily for children aged 9–13, and required two hours of compulsory schooling."
         },
         {
-          "question": "What transport network allowed millions of Fareham bricks to be moved cheaply to London after 1841?",
+          "question": "How many statutory factory inspectors did Parliament appoint in 1833 to enforce the new child labour regulations nationwide?",
+          "q": "How many statutory factory inspectors did Parliament appoint in 1833 to enforce the new child labour regulations nationwide?",
           "options": [
-            "Motorway highways",
-            "The London & South Western Railway",
-            "Supersonic air transport",
-            "Horse trails through the New Forest"
+            "four",
+            "forty",
+            "one hundred",
+            "twelve"
           ],
-          "answer": "The London & South Western Railway"
+          "answer": "four",
+          "a": "four",
+          "explanation": "Parliament appointed the first four statutory factory inspectors to enforce the law across all British textile mills."
         },
         {
-          "question": "Which parliamentary committee gathered harrowing eyewitness testimony about child labour in 1832?",
+          "question": "What traditional artisan rest day was taken by handloom weavers on Mondays before the factory clock was introduced?",
+          "q": "What traditional artisan rest day was taken by handloom weavers on Mondays before the factory clock was introduced?",
           "options": [
-            "The Beveridge Commission",
-            "The Cort Inquiry",
-            "The Gladstone Report",
-            "The Sadler Committee"
+            "Saint Monday",
+            "Weavers Sabbath",
+            "Harvest Holiday",
+            "Guild Monday"
           ],
-          "answer": "The Sadler Committee"
+          "answer": "Saint Monday",
+          "a": "Saint Monday",
+          "explanation": "Weavers worked on handlooms, pacing their labour to seasonal daylight and resting on 'Saint Monday'."
         },
         {
-          "question": "What historical document from 1881 proves that young children were working in the Fareham clay pits?",
+          "question": "What food was fed to pauper apprentices in crowded factory dormitories?",
+          "q": "What food was fed to pauper apprentices in crowded factory dormitories?",
           "options": [
-            "The 1881 Fareham Census return",
-            "The Magna Carta",
-            "The Treaty of Versailles",
-            "The Domesday Book"
+            "thin oatmeal porridge",
+            "roast beef and potatoes",
+            "bread and cheese",
+            "salted herring"
           ],
-          "answer": "The 1881 Fareham Census return"
+          "answer": "thin oatmeal porridge",
+          "a": "thin oatmeal porridge",
+          "explanation": "Children slept in shifts in crowded apprentice dormitories, surviving on thin oatmeal porridge."
         },
         {
-          "question": "What do \"Pessimist\" historians (like E.P. Thompson) argue about the Industrial Revolution?",
+          "question": "What northern manufacturing cities experienced a massive influx of destitute families seeking textile wage labour?",
+          "q": "What northern manufacturing cities experienced a massive influx of destitute families seeking textile wage labour?",
           "options": [
-            "That it was a golden age of peace and relaxation for workers",
-            "That machines had zero impact on British society",
-            "That it was a social catastrophe that punished workers and exploited children for profit",
-            "That the domestic system was worse than modern factories in every way"
+            "Manchester and Leeds",
+            "Bristol and Bath",
+            "Oxford and Cambridge",
+            "Southampton and Portsmouth"
           ],
-          "answer": "That it was a social catastrophe that punished workers and exploited children for profit"
+          "answer": "Manchester and Leeds",
+          "a": "Manchester and Leeds",
+          "explanation": "Thousands of rural families abandoned their cottages to seek wage labour in booming northern textile hubs like Manchester and Leeds."
         },
         {
-          "question": "What do \"Optimist\" historians (like R.M. Hartwell) argue about the long-term impact of industrialisation?",
+          "question": "What severe injury was caused when girls' long hair was caught in unshielded factory drive shafts?",
+          "q": "What severe injury was caused when girls' long hair was caught in unshielded factory drive shafts?",
           "options": [
-            "That Britain should have remained entirely agricultural",
-            "That the factory system created modern wealth, higher living standards, and medical advances",
-            "That child labour should never have been abolished",
-            "That steam power was an economic failure"
+            "girls were scalped",
+            "broken ribs",
+            "loss of hearing",
+            "shattered kneecaps"
           ],
-          "answer": "That the factory system created modern wealth, higher living standards, and medical advances"
+          "answer": "girls were scalped",
+          "a": "girls were scalped",
+          "explanation": "Fingers were crushed in gears, and girls were scalped when long hair caught in whirling drive shafts."
         },
         {
-          "question": "What practice did domestic handloom weavers celebrate on Mondays before the factory clock was introduced?",
+          "question": "What was the daily maximum shift permitted for children aged 9 to 13 under the 1833 Factory Act?",
+          "q": "What was the daily maximum shift permitted for children aged 9 to 13 under the 1833 Factory Act?",
           "options": [
-            "The Monday Shift",
-            "The Clock Bell",
-            "The Steam Festival",
-            "Saint Monday (taking the day off)"
+            "eight hours daily",
+            "twelve hours daily",
+            "six hours daily",
+            "fourteen hours daily"
           ],
-          "answer": "Saint Monday (taking the day off)"
+          "answer": "eight hours daily",
+          "a": "eight hours daily",
+          "explanation": "The Act capped working hours at eight hours daily for children aged 9–13."
         },
         {
-          "question": "What lung disease commonly afflicted cotton textile mill workers due to inhaling airborne fibres?",
+          "question": "At what early age did witness Matthew Crabtree begin working in a Yorkshire blanket factory?",
+          "q": "At what early age did witness Matthew Crabtree begin working in a Yorkshire blanket factory?",
           "options": [
-            "Scurvy",
-            "Rickets",
-            "Byssinosis (brown lung)",
-            "Cholera"
+            "eight",
+            "fourteen",
+            "ten",
+            "twelve"
           ],
-          "answer": "Byssinosis (brown lung)"
+          "answer": "eight",
+          "a": "eight",
+          "explanation": "Crabtree recounted starting in a blanket factory at age eight, working from 6:00 AM to 9:00 PM."
         },
         {
-          "question": "What was the age limit below which children were legally banned from working in textile mills by the 1833 Factory Act?",
+          "question": "What supervisors enforced military-style obedience and levied fines inside 19th-century textile mills?",
+          "q": "What supervisors enforced military-style obedience and levied fines inside 19th-century textile mills?",
           "options": [
-            "Under nine years old",
-            "Under six years old",
-            "Under twenty-one years old",
-            "Under sixteen years old"
+            "overlookers",
+            "magistrates",
+            "constables",
+            "beadles"
           ],
-          "answer": "Under nine years old"
+          "answer": "overlookers",
+          "a": "overlookers",
+          "explanation": "Workers were fined two pence by strict overlookers for arriving minutes late or opening a window."
         }
       ],
       "vocab": [
         {
           "term": "Fareham Reds",
-          "definition": "Famous, durable red clay bricks manufactured in Fareham and used in buildings across the Victorian Empire, including the Royal Albert Hall."
+          "definition": "Famous, durable red clay bricks manufactured in Fareham and used in buildings across the Victorian Empire, including the Royal Albert Hall.",
+          "syllables": "Fa-reham Reds",
+          "phonetic": "fareham reds",
+          "tier": "3"
         },
         {
           "term": "Pug Mill",
-          "definition": "A horse- or steam-driven machine with rotating blades used to grind and mix raw clay with water."
+          "definition": "A horse- or steam-driven machine with rotating blades used to grind and mix raw clay with water.",
+          "syllables": "Pug Mill",
+          "phonetic": "pug mill",
+          "tier": "2"
         },
         {
           "term": "Child Labour",
-          "definition": "The widespread employment of young children in hazardous mines, brickfields, and textile mills."
+          "definition": "The widespread employment of young children in hazardous mines, brickfields, and textile mills.",
+          "syllables": "Child La-bour",
+          "phonetic": "child labour",
+          "tier": "2"
         },
         {
           "term": "Factory Acts",
-          "definition": "A series of parliamentary laws passed from 1833 onwards to regulate working hours and age limits for child workers."
+          "definition": "A series of parliamentary laws passed from 1833 onwards to regulate working hours and age limits for child workers.",
+          "syllables": "Fa-cto-ry Acts",
+          "phonetic": "factory acts",
+          "tier": "3"
         },
         {
           "term": "Textile Mill",
-          "definition": "Large steam-powered factories where cotton and wool were spun and woven into cloth by industrial machines."
+          "definition": "Large steam-powered factories where cotton and wool were spun and woven into cloth by industrial machines.",
+          "syllables": "Te-xti-le Mill",
+          "phonetic": "textile mill",
+          "tier": "3"
         },
         {
           "term": "Workhouse",
-          "definition": "Grim institutions established under the Poor Law where the destitute endured harsh labor in exchange for food."
+          "definition": "Grim institutions established under the Poor Law where the destitute endured harsh labor in exchange for food.",
+          "syllables": "Wo-rkhou-se",
+          "phonetic": "workhouse",
+          "tier": "2"
         }
       ],
       "hook_text": "Dawn breaks over Leeds in 1830 as factory horns pierce the darkness. In cold attics, eight-year-old children hurry awake, terrified of arriving late and facing the overseer's leather strap. Once, families spun wool peacefully at home; now, deafening steam powerlooms rule their lives. How did the factory system transform everyday working life?",
@@ -1668,7 +2156,7 @@ export default {
       "sources": [
         {
           "letter": "A",
-          "title": "Source A: Powerloom Weaving in 1835",
+          "title": "Source A (Visual Record): Powerloom Weaving in a Lancashire Cotton Mill (1835)",
           "context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
           "hinge_question": "How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
           "image": "/images/19th_century_mill.jpg",
@@ -1680,11 +2168,14 @@ export default {
           "source_context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
           "teacher_notes": {
             "source_context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?"
-          }
+          },
+          "id": "iae_l2_src_a",
+          "type": "visual",
+          "src": "/images/19th_century_mill.jpg"
         },
         {
           "letter": "B",
-          "title": "Source B: Tyldesley Cotton Mill Factory Rulebook & Fines Ledger (1823)",
+          "title": "Source B (Factory Rulebook): Tyldesley Cotton Mill Factory Rulebook & Fines Ledger (1823)",
           "context": "Official workplace regulations posted at the entrance of a Lancashire cotton mill in 1823. Mill masters enforced absolute obedience through monetary wage deductions and locked gates. **Hinge Question:** Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?",
           "hinge_question": "Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?",
           "text": "“1. The door of the lodge will be closed 5 minutes after the bell rings in the morning, and no person admitted till breakfast; any person absent after that time will forfeit 3d.\n2. Any person opening a window without permission of the overlooker will forfeit 1s.\n3. Any spinner found dirty at work will forfeit 1s.\n4. Any person whistling or singing at work will forfeit 1s.\n5. Any person found five minutes after the last bell rings in the evening will forfeit 1s.”",
@@ -1696,31 +2187,19 @@ export default {
           "source_context": "Official workplace regulations posted at the entrance of a Lancashire cotton mill in 1823. Mill masters enforced absolute obedience through monetary wage deductions and locked gates. **Hinge Question:** Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?",
           "teacher_notes": {
             "source_context": "Official workplace regulations posted at the entrance of a Lancashire cotton mill in 1823. Mill masters enforced absolute obedience through monetary wage deductions and locked gates. **Hinge Question:** Why did factory owners choose monetary wage fines rather than dismissals to discipline industrial workers?"
-          }
+          },
+          "id": "iae_l2_src_b",
+          "type": "written",
+          "src": "",
+          "image": ""
         },
         {
           "letter": "C",
-          "title": "Source C: Parliamentary Sadler Committee Report (1832)",
-          "context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
-          "hinge_question": "Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
-          "text": "“I began work at eight years old... our common hours of labour were from six in the morning till half-past eight at night... fourteen hours and a half of actual labour. We had no time allowed for breakfast or afternoon refreshment; we had to eat our meals before the machines. If we were a minute too late, we were beaten with a leather strap; I have been severely strapped myself... my limbs are deformed from standing so long.”",
-          "caption": "Source C: Minutes of Evidence before the Parliamentary Select Committee on the Labour of Factory Children, 15 March 1832 (Testimony of 22-year-old former child worker Matthew Crabtree).",
-          "question_badge": "Cross-Referencing & Motive",
-          "question": "How does Matthew Crabtree’s eyewitness testimony support the claim that factory hours ruined children's health?",
-          "enquiry_question": "How does Matthew Crabtree’s eyewitness testimony support the claim that factory hours ruined children's health?",
-          "model_answer": "Crabtree explains under oath that working fourteen-hour days without breaks left children physically deformed and beaten with straps if fatigue made them late.",
-          "source_context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
-          "teacher_notes": {
-            "source_context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?"
-          }
-        },
-        {
-          "letter": "D",
-          "title": "Source D: Contemporary Engraving of Factory Child Labour (1840)",
+          "title": "Source C (Visual Record): Contemporary Engraving of Factory Child Labour (1840)",
           "context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
           "hinge_question": "Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
           "image": "/images/child_labour.jpg",
-          "caption": "Source D: Contemporary 1840 illustration from Frances Trollope’s novel The Life and Adventures of Michael Armstrong, depicting child scavengers crawling under spinning machinery as an overseer looks on.",
+          "caption": "Source C: Contemporary 1840 illustration from Frances Trollope’s novel The Life and Adventures of Michael Armstrong, depicting child scavengers crawling under spinning machinery as an overseer looks on.",
           "question_badge": "Propaganda & Persuasion",
           "question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
           "enquiry_question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
@@ -1728,11 +2207,34 @@ export default {
           "source_context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
           "teacher_notes": {
             "source_context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?"
-          }
+          },
+          "id": "iae_l2_src_c",
+          "type": "visual",
+          "src": "/images/child_labour.jpg"
+        },
+        {
+          "letter": "D",
+          "title": "Source D (Parliamentary Inquiry): Parliamentary Sadler Committee Report (1832)",
+          "context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
+          "hinge_question": "Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
+          "text": "“I began work at eight years old... our common hours of labour were from six in the morning till half-past eight at night... fourteen hours and a half of actual labour. We had no time allowed for breakfast or afternoon refreshment; we had to eat our meals before the machines. If we were a minute too late, we were beaten with a leather strap; I have been severely strapped myself... my limbs are deformed from standing so long.”",
+          "caption": "Source D: Minutes of Evidence before the Parliamentary Select Committee on the Labour of Factory Children, 15 March 1832 (Testimony of 22-year-old former child worker Matthew Crabtree).",
+          "question_badge": "Cross-Referencing & Motive",
+          "question": "How does Matthew Crabtree’s eyewitness testimony support the claim that factory hours ruined children's health?",
+          "enquiry_question": "How does Matthew Crabtree’s eyewitness testimony support the claim that factory hours ruined children's health?",
+          "model_answer": "Crabtree explains under oath that working fourteen-hour days without breaks left children physically deformed and beaten with straps if fatigue made them late.",
+          "source_context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?",
+          "teacher_notes": {
+            "source_context": "Minutes of Evidence before Michael Sadler’s 1832 Parliamentary Committee on child labour. Matthew Crabtree testified under oath regarding fourteen-hour shifts, lack of meal breaks, corporal punishment with leather straps, and physical limb deformities. **Hinge Question:** Why did firsthand testimonies before the Sadler Committee shock the British public into demanding parliamentary factory legislation?"
+          },
+          "id": "iae_l2_src_d",
+          "type": "written",
+          "src": "",
+          "image": ""
         },
         {
           "letter": "E",
-          "title": "Source E: The Factory Act 1833 (3 & 4 Will. IV, c. 103)",
+          "title": "Source E (Statute Law): The Factory Act 1833 (3 & 4 Will. IV, c. 103)",
           "context": "Passed by Parliament in August 1833 after intense public campaigning by Lord Ashley (later Lord Shaftesbury), the Factory Act 1833 marked the first time the British state intervened directly in private capitalist enterprise to protect child workers. Crucially, the Act created four salaried Crown Factory Inspectors empowered to enter any mill unannounced. **Hinge Question:** Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?",
           "hinge_question": "Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?",
           "text": "“Be it enacted that from and after the First Day of January 1834, no Person under Eighteen Years of Age shall be allowed to work in the Night in any Cotton, Woollen, or Flax Mill... And be it enacted that no Child who shall not have completed his or her Ninth Year of Age shall be employed in any such Mill or Factory... And no Child between Nine and Thirteen Years shall work more than Forty-eight Hours in any One Week, nor more than Nine Hours in any One Day... And be it enacted that it shall be lawful for His Majesty to appoint Four Persons to be Inspectors of Factories, empowered to enter any Factory or Mill by Day or by Night, to examine the Persons employed, and to enforce the Provisions of this Act.”",
@@ -1741,7 +2243,7 @@ export default {
             "The Collapse of Unregulated Laissez-Faire: Prior to 1833, British factory owners operated under absolute laissez-faire, treating child labour as a private contract between employer and parent with zero government interference; the 1833 Act established the revolutionary constitutional principle that the state possessed the duty to regulate capitalist industry and protect vulnerable human life.",
             "Enforcement via Independent Crown Inspectors: Previous child labour acts (such as the 1802 and 1819 Acts) were completely ignored because local magistrates were often mill owners themselves; by appointing four professional, salaried inspectors (such as Leonard Horner) with legal authority to enter mills unannounced, Parliament created real, enforceable state accountability."
           ],
-          "id": "iae_l2_source_e_factory_act_1833",
+          "id": "iae_l2_src_e",
           "question": "What two major protections did the Factory Act 1833 establish for children working in British textile mills?",
           "question_badge": "Legislation & State Intervention",
           "question_type": "Legislation & State Intervention",
@@ -1750,7 +2252,10 @@ export default {
           "source_context": "Passed by Parliament in August 1833 after intense public campaigning by Lord Ashley (later Lord Shaftesbury), the Factory Act 1833 marked the first time the British state intervened directly in private capitalist enterprise to protect child workers. Crucially, the Act created four salaried Crown Factory Inspectors empowered to enter any mill unannounced. **Hinge Question:** Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?",
           "teacher_notes": {
             "source_context": "Passed by Parliament in August 1833 after intense public campaigning by Lord Ashley (later Lord Shaftesbury), the Factory Act 1833 marked the first time the British state intervened directly in private capitalist enterprise to protect child workers. Crucially, the Act created four salaried Crown Factory Inspectors empowered to enter any mill unannounced. **Hinge Question:** Why was the creation of independent factory inspectors more important than merely passing laws restricting child labour?"
-          }
+          },
+          "type": "written",
+          "src": "",
+          "image": ""
         }
       ],
       "exam_practice": {
@@ -2110,27 +2615,45 @@ export default {
       "vocab": [
         {
           "term": "Urbanisation",
-          "definition": "The rapid migration of rural populations into towns and cities, creating vast, overcrowded industrial metropolitan centers."
+          "definition": "The rapid migration of rural populations into towns and cities, creating vast, overcrowded industrial metropolitan centers.",
+          "syllables": "U-rba-nisa-tion",
+          "phonetic": "urbanisation",
+          "tier": "2"
         },
         {
           "term": "Laissez-faire",
-          "definition": "The political and economic doctrine that governments should not interfere in business, private housing, or municipal sanitation."
+          "definition": "The political and economic doctrine that governments should not interfere in business, private housing, or municipal sanitation.",
+          "syllables": "Lai-ssez-fai-re",
+          "phonetic": "laissez-faire",
+          "tier": "3"
         },
         {
           "term": "Miasma Theory",
-          "definition": "The mistaken medical belief that epidemic diseases like cholera and typhus were caused by breathing poisonous stenches rising from rotting waste."
+          "definition": "The mistaken medical belief that epidemic diseases like cholera and typhus were caused by breathing poisonous stenches rising from rotting waste.",
+          "syllables": "mi-as-ma Theo-ry",
+          "phonetic": "maɪˈæzmə theory",
+          "tier": "2"
         },
         {
           "term": "Cholera",
-          "definition": "A deadly, waterborne bacterial disease causing catastrophic dehydration, which swept through crowded Victorian slums in repeated epidemics."
+          "definition": "A deadly, waterborne bacterial disease causing catastrophic dehydration, which swept through crowded Victorian slums in repeated epidemics.",
+          "syllables": "Cho-lera",
+          "phonetic": "cholera",
+          "tier": "3"
         },
         {
           "term": "Cesspool",
-          "definition": "An underground, unlined pit beneath tenements used to collect human sewage, which frequently seeped into shallow communal drinking wells."
+          "definition": "An underground, unlined pit beneath tenements used to collect human sewage, which frequently seeped into shallow communal drinking wells.",
+          "syllables": "Ce-sspool",
+          "phonetic": "cesspool",
+          "tier": "3"
         },
         {
           "term": "Public Health",
-          "definition": "Government measures, legislation, and civil engineering infrastructure aimed at providing clean water, sewage removal, and disease control."
+          "definition": "Government measures, legislation, and civil engineering infrastructure aimed at providing clean water, sewage removal, and disease control.",
+          "syllables": "Pu-blic Health",
+          "phonetic": "public health",
+          "tier": "2"
         }
       ],
       "narrative_blocks": [
@@ -2138,10 +2661,10 @@ export default {
           "act": 1,
           "title": "The Slum Explosion: Back-to-Back Courts & Cellars (1800–1830)",
           "theme_heading": "The Slum Explosion: Back-to-Back Courts & Cellars (1800–1830)",
-          "text": "<span class=\"para-ref\">[3.1]</span> Between 1801 and 1851, the population of industrial cities like Manchester, Birmingham, and Leeds quadrupled. Speculative builders threw up thousands of cramped <strong class=\"vocab-highlight\">back-to-back houses</strong> <small class=\"vocab-gloss\">(terraced brick slums sharing rear and side party walls)</small> with zero municipal building regulations. These houses had no through-ventilation, no indoor plumbing, and shared thin walls that seeped dampness. In damp, unpaved courts, entire families crowded into single windowless earthen cellars beneath street level. In cities like Liverpool, up to 20,000 destitute Irish immigrants and mill hands lived packed twelve to a cellar, where stagnant sewage pooled on earthen floors.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Between 1801 and 1851, populations quadrupled in industrial hubs. Driven by unregulated speculative building, landlords constructed dense back-to-back courtyard housing with windowless shared party walls and zero drainage. Entire streets shared a single water standpipe that ran for only an hour a week. Thousands of impoverished working-class families lived in damp, flooded earthen cellars beneath street level, where raw sewage seeped through porous walls during heavy rain.",
           "source": {
             "letter": "A",
-            "title": "Source A: Gustave Doré, Over London by Rail (1872)",
+            "title": "Source A (Visual Record): Gustave Doré, Over London by Rail (1872)",
             "context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
             "hinge_question": "Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
             "image": "/images/victorian_slum.jpg",
@@ -2149,17 +2672,45 @@ export default {
             "question_badge": "Source Inference",
             "question": "What does Doré's engraving suggest about the living conditions of working-class families in industrial London?",
             "enquiry_question": "What does Doré's engraving suggest about the living conditions of working-class families in industrial London?",
-            "model_answer": "It shows that families were crammed into bleak back-to-back brick houses with tiny fenced yards, living in choking smoke underneath roaring train lines."
-          }
+            "model_answer": "It shows that families were crammed into bleak back-to-back brick houses with tiny fenced yards, living in choking smoke underneath roaring train lines.",
+            "source_context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
+            "teacher_notes": {
+              "source_context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?"
+            },
+            "id": "iae_l3_src_a",
+            "type": "visual",
+            "src": "/images/victorian_slum.jpg"
+          },
+          "sources": [
+            {
+              "letter": "A",
+              "title": "Source A (Visual Record): Gustave Doré, Over London by Rail (1872)",
+              "context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
+              "hinge_question": "Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
+              "image": "/images/victorian_slum.jpg",
+              "caption": "Source A: Gustave Doré, Over London by Rail (1872). A wood engraving illustrating the suffocating density of back-to-back tenements in industrial London under railway viaducts.",
+              "question_badge": "Source Inference",
+              "question": "What does Doré's engraving suggest about the living conditions of working-class families in industrial London?",
+              "enquiry_question": "What does Doré's engraving suggest about the living conditions of working-class families in industrial London?",
+              "model_answer": "It shows that families were crammed into bleak back-to-back brick houses with tiny fenced yards, living in choking smoke underneath roaring train lines.",
+              "source_context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
+              "teacher_notes": {
+                "source_context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?"
+              },
+              "id": "iae_l3_src_a",
+              "type": "visual",
+              "src": "/images/victorian_slum.jpg"
+            }
+          ]
         },
         {
           "act": 2,
           "title": "Cesspools, Privies & Contaminated Pumps (1830–1840)",
           "theme_heading": "Cesspools, Privies & Contaminated Pumps (1830–1840)",
-          "text": "<span class=\"para-ref\">[3.2]</span> Urban sanitation was almost medieval. A single wooden outdoor privy often served forty or more families in a crowded courtyard. Without municipal sewer pipes, human waste drained into porous underground cesspools that overflowed into gutters and streets. Towering mounds of decaying nightsoil accumulated in alleyways for months until sold to rural farmers as manure. Worse still, private water companies supplied water only two or three times a week for a few hours through shared public standpipes. Cesspool liquids seeped directly through the porous soil into shallow groundwater wells, contaminating the drinking water of entire neighbourhoods.",
+          "text": "<span class=\"para-ref\">[3.2]</span> Urban sanitation was non-existent. A single shared forty-family privy often served an entire street over overflowing cesspools that accumulated into towering nightsoil dunghills in courtyards. In Leeds and Manchester, private water companies drew supplies from downstream rivers contaminated by upstream sewers and seeping groundwater wells, creating lethal breeding grounds for waterborne epidemics.",
           "source": {
             "letter": "B",
-            "title": "Source B: John Leech, A Court for King Cholera (Punch, 1852)",
+            "title": "Source B (Political Cartoon): John Leech, A Court for King Cholera (Punch, 1852)",
             "context": "Published in Punch in 1852 during Britain's second cholera pandemic, John Leech's cartoon attacked municipal apathy. The image depicts children playing on an open dunghill and an unlined cesspool pump surrounded by dilapidated tenements. **Hinge Question:** How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?",
             "hinge_question": "How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?",
             "image": "/images/court_for_king_cholera.png",
@@ -2167,17 +2718,45 @@ export default {
             "question_badge": "Symbolism & Social Satire",
             "question": "How does John Leech use the character of 'King Cholera' to attack town leaders for neglecting filthy slums?",
             "enquiry_question": "How does John Leech use the character of 'King Cholera' to attack town leaders for neglecting filthy slums?",
-            "model_answer": "Leech draws cholera as a skeletal king ruling over rubbish heaps and dirty cesspools to warn town leaders that their neglect is killing thousands of poor citizens."
-          }
+            "model_answer": "Leech draws cholera as a skeletal king ruling over rubbish heaps and dirty cesspools to warn town leaders that their neglect is killing thousands of poor citizens.",
+            "source_context": "Published in Punch in 1852 during Britain's second cholera pandemic, John Leech's cartoon attacked municipal apathy. The image depicts children playing on an open dunghill and an unlined cesspool pump surrounded by dilapidated tenements. **Hinge Question:** How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?",
+            "teacher_notes": {
+              "source_context": "Published in Punch in 1852 during Britain's second cholera pandemic, John Leech's cartoon attacked municipal apathy. The image depicts children playing on an open dunghill and an unlined cesspool pump surrounded by dilapidated tenements. **Hinge Question:** How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?"
+            },
+            "id": "iae_l3_src_b",
+            "type": "visual",
+            "src": "/images/court_for_king_cholera.png"
+          },
+          "sources": [
+            {
+              "letter": "B",
+              "title": "Source B (Political Cartoon): John Leech, A Court for King Cholera (Punch, 1852)",
+              "context": "Published in Punch in 1852 during Britain's second cholera pandemic, John Leech's cartoon attacked municipal apathy. The image depicts children playing on an open dunghill and an unlined cesspool pump surrounded by dilapidated tenements. **Hinge Question:** How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?",
+              "hinge_question": "How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?",
+              "image": "/images/court_for_king_cholera.png",
+              "caption": "Source B: John Leech, \"A Court for King Cholera\", Punch magazine (September 1852). A satirical cartoon depicting cholera presiding over a filthy, neglected London slum court.",
+              "question_badge": "Symbolism & Social Satire",
+              "question": "How does John Leech use the character of 'King Cholera' to attack town leaders for neglecting filthy slums?",
+              "enquiry_question": "How does John Leech use the character of 'King Cholera' to attack town leaders for neglecting filthy slums?",
+              "model_answer": "Leech draws cholera as a skeletal king ruling over rubbish heaps and dirty cesspools to warn town leaders that their neglect is killing thousands of poor citizens.",
+              "source_context": "Published in Punch in 1852 during Britain's second cholera pandemic, John Leech's cartoon attacked municipal apathy. The image depicts children playing on an open dunghill and an unlined cesspool pump surrounded by dilapidated tenements. **Hinge Question:** How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?",
+              "teacher_notes": {
+                "source_context": "Published in Punch in 1852 during Britain's second cholera pandemic, John Leech's cartoon attacked municipal apathy. The image depicts children playing on an open dunghill and an unlined cesspool pump surrounded by dilapidated tenements. **Hinge Question:** How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?"
+              },
+              "id": "iae_l3_src_b",
+              "type": "visual",
+              "src": "/images/court_for_king_cholera.png"
+            }
+          ]
         },
         {
           "act": 3,
           "title": "The Blue Terror: Cholera & The Collapse of Laissez-Faire (1831–1848)",
           "theme_heading": "The Blue Terror: Cholera & The Collapse of Laissez-Faire (1831–1848)",
-          "text": "<span class=\"para-ref\">[3.3]</span> In 1831, a terrifying new global pandemic landed on British shores: Asiatic <strong class=\"vocab-highlight\">cholera</strong>. Spread through water contaminated with fecal bacteria, cholera struck victims with violent vomiting and diarrhea, causing extreme dehydration that turned skin a ghostly blue and killed healthy adults within twelve hours. Victorians, mistakenly believing in the <strong class=\"vocab-highlight\">miasma theory</strong> <small class=\"vocab-gloss\">(the false belief that epidemic disease was caused by breathing foul smells and toxic air)</small>, burned barrels of pitch in the streets. When cholera killed over 50,000 people in 1848, the terror of wealthy elites shattered their devotion to <strong class=\"vocab-highlight\">laissez-faire</strong> <small class=\"vocab-gloss\">(the political philosophy that government should never interfere in economic or civic life)</small>.",
+          "text": "<span class=\"para-ref\">[3.3]</span> In 1831, Asiatic cholera landed in Britain. Spread through water contaminated with human feces, cholera inflicted waterborne bacterial agony on its victims. Patients suffered violent vomiting and diarrhea, leading to dehydration, thick blue blood, and a blue-skinned twelve-hour collapse into death. The epidemic killed across class lines, terrorising terrified wealthy elites into recognizing that slum squalor could kill rich landowners in wealthy suburbs.",
           "source": {
             "letter": "C",
-            "title": "Source C: Edwin Chadwick, Report on the Sanitary Condition of the Labouring Population (1842)",
+            "title": "Source C (Sanitary Report): Edwin Chadwick, Report on the Sanitary Condition of the Labouring Population (1842)",
             "context": "Edwin Chadwick's landmark 1842 investigation used statistical medical returns to prove that epidemic disease was directly generated by unhygienic living conditions rather than moral failing. **Hinge Question:** Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?",
             "hinge_question": "Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?",
             "text": "“The charcoal-burners, the brick-makers, and the miners are all exposed to severe atmospheric changes and filth. In the town districts, the crowded back-to-back dwellings are built with no ventilation, and the refuse of the houses is thrown into open streets. The annual loss of life from filth and bad ventilation is greater than the loss from death or wounds in any wars in which the country has been engaged in modern times.”",
@@ -2185,258 +2764,408 @@ export default {
             "question_badge": "Author's Purpose",
             "question": "Why did Edwin Chadwick compare slum deaths to battlefield casualties in his official report?",
             "enquiry_question": "Why did Edwin Chadwick compare slum deaths to battlefield casualties in his official report?",
-            "model_answer": "Chadwick compared slum deaths to war casualties to shock politicians into realizing that filthy living conditions killed far more Britons than foreign armies."
+            "model_answer": "Chadwick compared slum deaths to war casualties to shock politicians into realizing that filthy living conditions killed far more Britons than foreign armies.",
+            "source_context": "Edwin Chadwick's landmark 1842 investigation used statistical medical returns to prove that epidemic disease was directly generated by unhygienic living conditions rather than moral failing. **Hinge Question:** Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?",
+            "teacher_notes": {
+              "source_context": "Edwin Chadwick's landmark 1842 investigation used statistical medical returns to prove that epidemic disease was directly generated by unhygienic living conditions rather than moral failing. **Hinge Question:** Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?"
+            },
+            "id": "iae_l3_src_c",
+            "type": "written",
+            "src": "",
+            "image": ""
           },
           "image": "/images/snow_cholera_map.jpg",
           "image_alt": "Dr. John Snow's famous 1854 epidemiological dot map of the Broad Street cholera outbreak in Soho, London",
-          "caption": "Dr. John Snow's 1854 dot-map of Soho, London, pinpointing cholera deaths clustered around the contaminated Broad Street water pump, disproving the miasma theory and establishing modern epidemiology (Wellcome Collection, L0063431)."
+          "caption": "Dr. John Snow's 1854 dot-map of Soho, London, pinpointing cholera deaths clustered around the contaminated Broad Street water pump, disproving the miasma theory and establishing modern epidemiology (Wellcome Collection, L0063431).",
+          "sources": [
+            {
+              "letter": "C",
+              "title": "Source C (Sanitary Report): Edwin Chadwick, Report on the Sanitary Condition of the Labouring Population (1842)",
+              "context": "Edwin Chadwick's landmark 1842 investigation used statistical medical returns to prove that epidemic disease was directly generated by unhygienic living conditions rather than moral failing. **Hinge Question:** Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?",
+              "hinge_question": "Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?",
+              "text": "“The charcoal-burners, the brick-makers, and the miners are all exposed to severe atmospheric changes and filth. In the town districts, the crowded back-to-back dwellings are built with no ventilation, and the refuse of the houses is thrown into open streets. The annual loss of life from filth and bad ventilation is greater than the loss from death or wounds in any wars in which the country has been engaged in modern times.”",
+              "caption": "Source C: Edwin Chadwick, official parliamentary report on urban sanitation, published by the Poor Law Commission in July 1842.",
+              "question_badge": "Author's Purpose",
+              "question": "Why did Edwin Chadwick compare slum deaths to battlefield casualties in his official report?",
+              "enquiry_question": "Why did Edwin Chadwick compare slum deaths to battlefield casualties in his official report?",
+              "model_answer": "Chadwick compared slum deaths to war casualties to shock politicians into realizing that filthy living conditions killed far more Britons than foreign armies.",
+              "source_context": "Edwin Chadwick's landmark 1842 investigation used statistical medical returns to prove that epidemic disease was directly generated by unhygienic living conditions rather than moral failing. **Hinge Question:** Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?",
+              "teacher_notes": {
+                "source_context": "Edwin Chadwick's landmark 1842 investigation used statistical medical returns to prove that epidemic disease was directly generated by unhygienic living conditions rather than moral failing. **Hinge Question:** Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?"
+              },
+              "id": "iae_l3_src_c",
+              "type": "written",
+              "src": "",
+              "image": ""
+            }
+          ]
         },
         {
           "act": 4,
           "title": "Edwin Chadwick & The 1842 Sanitary Report (1842)",
           "theme_heading": "Edwin Chadwick & The 1842 Sanitary Report (1842)",
-          "text": "<span class=\"para-ref\">[3.4]</span> In 1842, reformer <strong class=\"vocab-highlight\">Edwin Chadwick</strong> published his revolutionary <em>Report on the Sanitary Condition of the Labouring Population</em>. Using groundbreaking statistical data, Chadwick proved that epidemic typhus and cholera were directly bred by environmental filth and lack of clean water. His findings were horrifying: in industrial Manchester, average working-class life expectancy had plummeted to just 17–19 years, compared to 38 years in rural Rutlandshire. Chadwick argued that building clean arterial water mains and self-flushing glazed sewers would save taxpayers money by reducing orphanhood and Poor Law relief, inspiring the landmark Public Health Act of 1848.",
+          "text": "<span class=\"para-ref\">[3.4]</span> In 1842, reformer **Edwin Chadwick** published his *Report on the Sanitary Condition of the Labouring Population*. Chadwick used pioneering statistical lifespan comparison data to reveal a shocking nineteen-year Manchester average life expectancy for working-class labourers, compared to forty years in rural Rutland. Chadwick demonstrated the enormous economic cost of epidemics on poor law tax rates, proving that investing in clean water and covered sewers would save money and lives.",
           "image": "/images/chadwick.jpg",
           "image_alt": "Portrait of social reformer Sir Edwin Chadwick",
           "caption": "Sir Edwin Chadwick (1800–1890), social reformer and Secretary to the Poor Law Commission, whose 1842 Report exposed the link between filth, disease, and poverty, laying the groundwork for the 1848 Public Health Act (National Portrait Gallery, NPG 1271).",
           "source": {
-            "letter": "E",
-            "title": "Source E: Father Thames Introducing his Offspring to the Fair City of London (Punch, July 1858)",
+            "letter": "D",
+            "title": "Source D (Political Cartoon): Father Thames Introducing his Offspring to the Fair City of London (Punch, 1858)",
             "context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
             "hinge_question": "How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
             "image": "/images/father_thames_punch_1858.jpg",
-            "caption": "Source E: John Leech's celebrated cartoon in Punch (3 July 1858) personifying Father Thames introducing his diseased children—Diphtheria, Scrofula, and Cholera—to London during the Great Stink.",
+            "caption": "Source D: John Leech's celebrated cartoon in Punch (3 July 1858) personifying Father Thames introducing his diseased children—Diphtheria, Scrofula, and Cholera—to London during the Great Stink.",
             "discussion_ideas": [
               "Personification of Lethal Waterborne Epidemics: Leech personifies the Thames not as the romantic, bountiful river god of British folklore, but as a filthy, bedraggled monster crawling from the slime to present his skeletal, diseased children—Diphtheria, Scrofula, and Cholera—to a refined, classical Britannia representing the city of London, graphically connecting environmental filth to childhood mortality.",
               "Political Pressure Shaming Parliament into Action: The subtitle mocks Parliament ('A Design for a Fresco in the New Houses of Parliament'), highlighting the hypocrisy of Victorian politicians who spent millions gilding the Palace of Westminster while refusing to spend public money on municipal sewers; within eighteen days of this cartoon appearing, Parliament passed emergency legislation authorizing Bazalgette's £3 million interceptor sewer system."
             ],
-            "id": "iae_l3_source_e_father_thames_1858",
+            "id": "iae_l3_src_d",
             "question": "What point was the cartoonist making about London's living conditions by calling diseases like cholera the 'offspring' of Father Thames?",
             "question_badge": "Symbolism & Social Satire",
             "question_type": "Symbolism & Social Satire",
             "model_answer": "The cartoon was warning that the filthy, sewage-polluted Thames was the direct parent and cause of deadly diseases like cholera, which were poisoning London's population.",
-            "citation": "Punch, or the London Charivari, Vol. XXXV, 3 July 1858, p. 5 / British Library."
-          }
+            "citation": "Punch, or the London Charivari, Vol. XXXV, 3 July 1858, p. 5 / British Library.",
+            "source_context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
+            "teacher_notes": {
+              "source_context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?"
+            },
+            "type": "visual",
+            "src": "/images/father_thames_punch_1858.jpg"
+          },
+          "sources": [
+            {
+              "letter": "D",
+              "title": "Source D (Political Cartoon): Father Thames Introducing his Offspring to the Fair City of London (Punch, 1858)",
+              "context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
+              "hinge_question": "How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
+              "image": "/images/father_thames_punch_1858.jpg",
+              "caption": "Source D: John Leech's celebrated cartoon in Punch (3 July 1858) personifying Father Thames introducing his diseased children—Diphtheria, Scrofula, and Cholera—to London during the Great Stink.",
+              "discussion_ideas": [
+                "Personification of Lethal Waterborne Epidemics: Leech personifies the Thames not as the romantic, bountiful river god of British folklore, but as a filthy, bedraggled monster crawling from the slime to present his skeletal, diseased children—Diphtheria, Scrofula, and Cholera—to a refined, classical Britannia representing the city of London, graphically connecting environmental filth to childhood mortality.",
+                "Political Pressure Shaming Parliament into Action: The subtitle mocks Parliament ('A Design for a Fresco in the New Houses of Parliament'), highlighting the hypocrisy of Victorian politicians who spent millions gilding the Palace of Westminster while refusing to spend public money on municipal sewers; within eighteen days of this cartoon appearing, Parliament passed emergency legislation authorizing Bazalgette's £3 million interceptor sewer system."
+              ],
+              "id": "iae_l3_src_d",
+              "question": "What point was the cartoonist making about London's living conditions by calling diseases like cholera the 'offspring' of Father Thames?",
+              "question_badge": "Symbolism & Social Satire",
+              "question_type": "Symbolism & Social Satire",
+              "model_answer": "The cartoon was warning that the filthy, sewage-polluted Thames was the direct parent and cause of deadly diseases like cholera, which were poisoning London's population.",
+              "citation": "Punch, or the London Charivari, Vol. XXXV, 3 July 1858, p. 5 / British Library.",
+              "source_context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
+              "teacher_notes": {
+                "source_context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?"
+              },
+              "type": "visual",
+              "src": "/images/father_thames_punch_1858.jpg"
+            }
+          ]
         },
         {
           "act": 5,
           "title": "The Great Stink & Bazalgette’s Sewer Triumph (1858–1865)",
           "theme_heading": "The Great Stink & Bazalgette’s Sewer Triumph (1858–1865)",
-          "text": "<span class=\"para-ref\">[3.5]</span> The turning point arrived in the stifling midsummer of 1858 with the <strong>\"Great Stink\"</strong>. The untreated sewage of three million Londoners fermenting in the Thames produced a reek so toxic that Parliament could barely function. Terrified MPs passed emergency legislation in eighteen days, granting civil engineer <strong class=\"vocab-highlight\">Joseph Bazalgette</strong> £3 million to rebuild the capital’s sanitation. Between 1859 and 1865, Bazalgette constructed 1,100 miles of street sewers and 82 miles of colossal underground brick interceptor tunnels, using 318 million bricks and waterproof Portland cement. Bazalgette’s subterranean cathedrals permanently diverted 420 million gallons of sewage away from London, ending epidemic cholera forever and establishing the blueprint for the modern livable city.",
+          "text": "<span class=\"para-ref\">[3.5]</span> The turning point arrived in the stifling heat of 1858 with the Great Stink. Unusually high temperatures caused midsummer Thames fermentation of 200,000 gallons of untreated raw sewage in the river. The stench became so suffocating that MPs soaked Commons chloride curtains in lime to absorb the smell. Terrified for their lives, Parliament voted a £3m grant allowing Joseph Bazalgette to build 82 miles of brick-lined Bazalgette interceptor tunnels, modernizing London's sanitation.",
           "source": {
-            "letter": "D",
-            "title": "Source D: Sir Joseph Bazalgette’s London Interceptor Sewer Network Under Construction (1862)",
+            "letter": "E",
+            "title": "Source E (Visual Record): Sir Joseph Bazalgette’s London Interceptor Sewer Network Under Construction (1862)",
             "context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink.",
             "hinge_question": "How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?",
             "image": "/images/bazalgette_sewer.jpg",
-            "caption": "Source D: Construction of Sir Joseph Bazalgette’s subterranean interceptor sewer system beneath London (c. 1862). Over 318 million bricks and 82 miles of enclosed interceptor tunnels diverted London’s sewage away from the Thames, permanently eliminating waterborne cholera epidemics.",
+            "caption": "Source E: Construction of Sir Joseph Bazalgette’s subterranean interceptor sewer system beneath London (c. 1862). Over 318 million bricks and 82 miles of enclosed interceptor tunnels diverted London’s sewage away from the Thames, permanently eliminating waterborne cholera epidemics.",
             "question_badge": "Technology & Power",
             "question": "What does this photograph reveal about how Victorian engineering solved London's deadly sewage crisis?",
             "enquiry_question": "What does this photograph reveal about how Victorian engineering solved London's deadly sewage crisis?",
-            "model_answer": "It reveals the massive scale of Bazalgette's underground brick tunnels, built to divert millions of gallons of sewage away from the Thames and halt cholera epidemics."
-          }
+            "model_answer": "It reveals the massive scale of Bazalgette's underground brick tunnels, built to divert millions of gallons of sewage away from the Thames and halt cholera epidemics.",
+            "source_context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink. **Hinge Question:** How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?",
+            "teacher_notes": {
+              "source_context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink. **Hinge Question:** How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?"
+            },
+            "id": "iae_l3_src_e",
+            "type": "visual",
+            "src": "/images/bazalgette_sewer.jpg"
+          },
+          "sources": [
+            {
+              "letter": "E",
+              "title": "Source E (Visual Record): Sir Joseph Bazalgette’s London Interceptor Sewer Network Under Construction (1862)",
+              "context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink.",
+              "hinge_question": "How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?",
+              "image": "/images/bazalgette_sewer.jpg",
+              "caption": "Source E: Construction of Sir Joseph Bazalgette’s subterranean interceptor sewer system beneath London (c. 1862). Over 318 million bricks and 82 miles of enclosed interceptor tunnels diverted London’s sewage away from the Thames, permanently eliminating waterborne cholera epidemics.",
+              "question_badge": "Technology & Power",
+              "question": "What does this photograph reveal about how Victorian engineering solved London's deadly sewage crisis?",
+              "enquiry_question": "What does this photograph reveal about how Victorian engineering solved London's deadly sewage crisis?",
+              "model_answer": "It reveals the massive scale of Bazalgette's underground brick tunnels, built to divert millions of gallons of sewage away from the Thames and halt cholera epidemics.",
+              "source_context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink. **Hinge Question:** How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?",
+              "teacher_notes": {
+                "source_context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink. **Hinge Question:** How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?"
+              },
+              "id": "iae_l3_src_e",
+              "type": "visual",
+              "src": "/images/bazalgette_sewer.jpg"
+            }
+          ]
         }
       ],
       "quiz": [
         {
-          "question": "What term describes the massive migration of millions of people from rural villages to industrial cities during the 19th century?",
+          "question": "What rapid demographic process saw city populations like Manchester, Birmingham, and Leeds quadruple?",
+          "q": "What rapid demographic process saw city populations like Manchester, Birmingham, and Leeds quadruple?",
           "options": [
-            "Urbanisation",
-            "Enclosure",
-            "Colonisation",
-            "Emancipation"
+            "urbanisation",
+            "colonisation",
+            "suburbanisation",
+            "transportation"
           ],
-          "answer": "Urbanisation"
+          "answer": "urbanisation",
+          "a": "urbanisation",
+          "explanation": "Between 1801 and 1851, the population of industrial cities like Manchester, Birmingham, and Leeds quadrupled in rapid urbanisation."
         },
         {
-          "question": "What cheaply constructed, overcrowded housing style was built in industrial cities to pack the maximum number of families into minimal land?",
+          "question": "What cramped, unventilated terraced slums sharing rear and side party walls housed factory workers?",
+          "q": "What cramped, unventilated terraced slums sharing rear and side party walls housed factory workers?",
           "options": [
-            "Country cottages",
-            "Detached Victorian villas",
-            "Back-to-back terraced houses",
-            "Baroque garden estates"
+            "back-to-back houses",
+            "detached suburban villas",
+            "council flats",
+            "thatched cottages"
           ],
-          "answer": "Back-to-back terraced houses"
+          "answer": "back-to-back houses",
+          "a": "back-to-back houses",
+          "explanation": "Speculative builders threw up thousands of cramped back-to-back houses sharing rear and side party walls with zero building regulations."
         },
         {
-          "question": "Why were cellar dwellings in 19th-century industrial slums particularly dangerous for human health?",
+          "question": "What terrifying waterborne bacterial disease first struck Britain in October 1831, killing victims within hours?",
+          "q": "What terrifying waterborne bacterial disease first struck Britain in October 1831, killing victims within hours?",
           "options": [
-            "They had excessively high heating bills",
-            "They were located too far away from the factory gates",
-            "They were built entirely out of inflammable timber",
-            "They were damp, unventilated, perpetually dark, and frequently flooded with raw sewage from nearby cesspools"
+            "Asiatic cholera",
+            "smallpox",
+            "bubonic plague",
+            "influenza"
           ],
-          "answer": "They were damp, unventilated, perpetually dark, and frequently flooded with raw sewage from nearby cesspools"
+          "answer": "Asiatic cholera",
+          "a": "Asiatic cholera",
+          "explanation": "In October 1831, Asiatic cholera first struck Britain; known as the 'Blue Terror', it killed healthy victims within hours."
         },
         {
-          "question": "In what year did Asiatic cholera first strike Great Britain, causing widespread terror due to its rapid and gruesome mortality?",
+          "question": "Which public health reformer published the landmark 1842 report proving that disease was directly caused by filth and damp?",
+          "q": "Which public health reformer published the landmark 1842 report proving that disease was directly caused by filth and damp?",
           "options": [
-            "1914",
-            "1831",
-            "1805",
-            "1789"
-          ],
-          "answer": "1831"
-        },
-        {
-          "question": "What waterborne bacterial disease caused victims to dehydrate rapidly through violent diarrhea and vomiting, turning their skin blue?",
-          "options": [
-            "Influenza",
-            "Cholera",
-            "Scurvy",
-            "Tuberculosis"
-          ],
-          "answer": "Cholera"
-        },
-        {
-          "question": "What dominant medical theory before the 1860s falsely claimed that epidemic diseases were spread by foul-smelling airborne vapours?",
-          "options": [
-            "The Miasma theory",
-            "The Spontaneous Generation theory",
-            "The Four Humours theory",
-            "The Germ theory"
-          ],
-          "answer": "The Miasma theory"
-        },
-        {
-          "question": "Who was the social reformer whose 1842 'Report on the Sanitary Conditions of the Labouring Population' proved that disease was caused by filth and poverty?",
-          "options": [
-            "Robert Peel",
-            "Charles Dickens",
             "Edwin Chadwick",
-            "Lord Shaftesbury"
-          ],
-          "answer": "Edwin Chadwick"
-        },
-        {
-          "question": "What landmark legislation was passed in 1848 establishing Britain's first General Board of Health?",
-          "options": [
-            "The Factory Act 1848",
-            "The Reform Act 1848",
-            "The Poor Law Amendment Act 1848",
-            "The Public Health Act 1848"
-          ],
-          "answer": "The Public Health Act 1848"
-        },
-        {
-          "question": "What political philosophy held by wealthy taxpayers and town councils ('laissez-faire') delayed public health improvements in the early 19th century?",
-          "options": [
-            "The policy of forcing all citizens to move into rural farm communes",
-            "The belief that government should not interfere in the economy or spend taxpayers' money on clean water and sewers",
-            "The belief that disease could only be cured by royal prayer",
-            "The demand that all private property should be taken over by the State"
-          ],
-          "answer": "The belief that government should not interfere in the economy or spend taxpayers' money on clean water and sewers"
-        },
-        {
-          "question": "Which doctor investigated the 1854 cholera outbreak in Soho, London, proving the disease was spread through contaminated water?",
-          "options": [
-            "Dr Joseph Lister",
-            "Dr William Harvey",
+            "Lord Shaftesbury",
             "Dr John Snow",
-            "Dr Edward Jenner"
+            "Michael Sadler"
           ],
-          "answer": "Dr John Snow"
+          "answer": "Edwin Chadwick",
+          "a": "Edwin Chadwick",
+          "explanation": "Edwin Chadwick published his landmark 1842 Report on the Sanitary Condition of the Labouring Population, proving filth caused disease."
         },
         {
-          "question": "What physical action did Dr John Snow take in September 1854 to halt the Soho cholera epidemic?",
+          "question": "What crisis in the hot midsummer of 1858 forced Parliament to fund Joseph Bazalgette's London sewer network?",
+          "q": "What crisis in the hot midsummer of 1858 forced Parliament to fund Joseph Bazalgette's London sewer network?",
           "options": [
-            "He burned down the entire Soho neighbourhood",
-            "He sprayed carbolic acid into the Soho drinking water",
-            "He vaccinated every citizen in London against smallpox",
-            "He removed the handle of the Broad Street water pump, forcing residents to fetch clean water elsewhere"
+            "Great Stink",
+            "Great Plague",
+            "Great Fire",
+            "Peterloo Outbreak"
           ],
-          "answer": "He removed the handle of the Broad Street water pump, forcing residents to fetch clean water elsewhere"
+          "answer": "Great Stink",
+          "a": "Great Stink",
+          "explanation": "The turning point arrived in the stifling midsummer of 1858 with the Great Stink, when the Thames produced a reek so toxic Parliament could barely function."
         },
         {
-          "question": "What environmental crisis in the hot summer of 1858 finally forced Parliament to fund a comprehensive sewer system for London?",
+          "question": "What mistaken medical theory claimed that epidemic diseases were spread by foul airborne vapours from rotting filth?",
+          "q": "What mistaken medical theory claimed that epidemic diseases were spread by foul airborne vapours from rotting filth?",
           "options": [
-            "The Great Stink (the overwhelming stench from the polluted River Thames outside the Houses of Parliament)",
-            "A tidal wave hitting the Tower of London",
-            "The Great Fire of London",
-            "A massive frost fair on the frozen Thames"
+            "miasma theory",
+            "germ theory",
+            "humoral theory",
+            "cell theory"
           ],
-          "answer": "The Great Stink (the overwhelming stench from the polluted River Thames outside the Houses of Parliament)"
+          "answer": "miasma theory",
+          "a": "miasma theory",
+          "explanation": "Doctors and health officials clung to the miasma theory, believing that pestilence was generated by foul airborne vapours from rotting filth."
         },
         {
-          "question": "Who was the chief civil engineer of the Metropolitan Board of Works who designed London's vast underground intercepting sewer network?",
+          "question": "Where did human waste drain in crowded industrial slum courts before municipal sewers were constructed?",
+          "q": "Where did human waste drain in crowded industrial slum courts before municipal sewers were constructed?",
+          "options": [
+            "cesspools",
+            "flush toilets",
+            "water tanks",
+            "sealed metal vaults"
+          ],
+          "answer": "cesspools",
+          "a": "cesspools",
+          "explanation": "Without municipal sewer pipes, human waste drained into porous underground cesspools that overflowed into gutters and streets."
+        },
+        {
+          "question": "What political doctrine of non-interference made town councils and wealthy ratepayers resist spending money on sanitation?",
+          "q": "What political doctrine of non-interference made town councils and wealthy ratepayers resist spending money on sanitation?",
+          "options": [
+            "laissez-faire",
+            "socialism",
+            "chartism",
+            "mercantilism"
+          ],
+          "answer": "laissez-faire",
+          "a": "laissez-faire",
+          "explanation": "Town councils dominated by ratepayer property owners clung to laissez-faire, fiercely resisting tax expenditures on clean water or sewers."
+        },
+        {
+          "question": "What chief civil engineer designed London's vast underground intercepting sewer network between 1859 and 1865?",
+          "q": "What chief civil engineer designed London's vast underground intercepting sewer network between 1859 and 1865?",
           "options": [
             "Joseph Bazalgette",
             "Isambard Kingdom Brunel",
-            "George Stephenson",
-            "Thomas Telford"
+            "Thomas Telford",
+            "Robert Stephenson"
           ],
-          "answer": "Joseph Bazalgette"
+          "answer": "Joseph Bazalgette",
+          "a": "Joseph Bazalgette",
+          "explanation": "Parliament granted civil engineer Joseph Bazalgette £3 million to rebuild the capital’s sanitation with 82 miles of interceptor sewers."
         },
         {
-          "question": "How did Joseph Bazalgette's sewer system solve London's contamination crisis?",
+          "question": "What was the shocking average age at death for a working-class labourer in squalid 1840s Liverpool cellars?",
+          "q": "What was the shocking average age at death for a working-class labourer in squalid 1840s Liverpool cellars?",
           "options": [
-            "It stored all sewage in massive open vats in central London parks",
-            "It boiled all Thames river water before pumping it to homes",
-            "It intercepted raw sewage before it could flow into the Thames and transported it downstream to the Thames estuary",
-            "It dumped all sewage into the London Underground tunnels"
+            "just 17 years",
+            "around 45 years",
+            "over 60 years",
+            "around 35 years"
           ],
-          "answer": "It intercepted raw sewage before it could flow into the Thames and transported it downstream to the Thames estuary"
+          "answer": "just 17 years",
+          "a": "just 17 years",
+          "explanation": "Chadwick revealed that in squalid Liverpool cellars, the average age at death for a working-class labourer had plunged to just 17 years."
         },
         {
-          "question": "What was the average life expectancy of a working-class labourer in industrial cities like Manchester and Liverpool during the 1840s?",
+          "question": "What 1852 political cartoon in Punch by John Leech depicted children playing in filthy slum cesspools?",
+          "q": "What 1852 political cartoon in Punch by John Leech depicted children playing in filthy slum cesspools?",
           "options": [
-            "Over 75 years old",
-            "Around 45 years old",
-            "Around 65 years old",
-            "Under 20 years old"
+            "A Court for King Cholera",
+            "The Great Stink",
+            "Over London by Rail",
+            "The School of Reform"
           ],
-          "answer": "Under 20 years old"
+          "answer": "A Court for King Cholera",
+          "a": "A Court for King Cholera",
+          "explanation": "John Leech's celebrated cartoon A Court for King Cholera illustrated squalid slum courts, overflowing dung heaps, and diseased children."
         },
         {
-          "question": "Why was clean drinking water so scarce for working-class families in 1840s industrial slums?",
+          "question": "What 1848 statute established Britain's first General Board of Health?",
+          "q": "What 1848 statute established Britain's first General Board of Health?",
           "options": [
-            "Water was banned by local magistrates to stop drunken riots",
-            "Water was supplied by private commercial companies through street standpipes for only a few hours a week, often drawn directly from contaminated rivers",
-            "Families only drank beer and refused to consume water under any circumstances",
-            "All rainfall in Britain ceased completely between 1840 and 1850"
+            "Public Health Act of 1848",
+            "Poor Law of 1834",
+            "Factory Act of 1833",
+            "Municipal Act of 1835"
           ],
-          "answer": "Water was supplied by private commercial companies through street standpipes for only a few hours a week, often drawn directly from contaminated rivers"
+          "answer": "Public Health Act of 1848",
+          "a": "Public Health Act of 1848",
+          "explanation": "Alarmed by Chadwick's report and cholera, Parliament passed the Public Health Act of 1848, creating the General Board of Health."
         },
         {
-          "question": "What was a 'cesspool' in an early 19th-century town?",
+          "question": "What French illustrator created the dark 1872 engraving 'Over London by Rail', depicting cramped tenements and rail viaducts?",
+          "q": "What French illustrator created the dark 1872 engraving 'Over London by Rail', depicting cramped tenements and rail viaducts?",
           "options": [
-            "A storage reservoir for clean distilled water",
-            "An underground pit or chamber for collecting household waste and sewage, which frequently seeped into nearby groundwater and drinking wells",
-            "A public swimming bath for factory workers",
-            "A holding pen for farm animals before market"
+            "Gustave Doré",
+            "Philip de Loutherbourg",
+            "Thomas Allom",
+            "George Cruikshank"
           ],
-          "answer": "An underground pit or chamber for collecting household waste and sewage, which frequently seeped into nearby groundwater and drinking wells"
+          "answer": "Gustave Doré",
+          "a": "Gustave Doré",
+          "explanation": "French illustrator Gustave Doré's Over London by Rail depicted the bleak, soot-blackened back-to-backs framed by railway arches."
         },
         {
-          "question": "What compulsory requirement was introduced in the Public Health Act of 1875 under Prime Minister Benjamin Disraeli?",
+          "question": "What was the endemic 'White Plague' of industrial Britain that thrived in damp, sunless back-to-backs?",
+          "q": "What was the endemic 'White Plague' of industrial Britain that thrived in damp, sunless back-to-backs?",
           "options": [
-            "Local town councils were legally required to provide clean water, build proper sewers, collect rubbish, and appoint medical officers of health",
-            "All citizens were forced to bathe twice daily in public rivers",
-            "All industrial factories had to be demolished and moved to Scotland",
-            "Doctors were banned from charging fees to wealthy patients"
+            "tuberculosis",
+            "cholera",
+            "typhoid",
+            "malaria"
           ],
-          "answer": "Local town councils were legally required to provide clean water, build proper sewers, collect rubbish, and appoint medical officers of health"
+          "answer": "tuberculosis",
+          "a": "tuberculosis",
+          "explanation": "Tuberculosis (consumption) was the endemic White Plague of industrial Britain, thriving in sunless, unventilated back-to-backs."
         },
         {
-          "question": "What devastating chronic pulmonary disease, nicknamed 'the White Plague', was the single biggest killer in 19th-century British slums?",
+          "question": "How was drinking water supplied to working-class families before clean municipal waterworks?",
+          "q": "How was drinking water supplied to working-class families before clean municipal waterworks?",
           "options": [
-            "Polio",
-            "Yellow fever",
-            "Measles",
-            "Tuberculosis (consumption)"
+            "shared public standpipes",
+            "individual kitchen taps",
+            "clean glass bottles",
+            "rooftop rainwater pipes"
           ],
-          "answer": "Tuberculosis (consumption)"
+          "answer": "shared public standpipes",
+          "a": "shared public standpipes",
+          "explanation": "Private water companies supplied water only two or three times a week for a few hours through shared public standpipes."
         },
         {
-          "question": "How did the 1854 Broad Street investigation challenge traditional medical understanding of disease transmission?",
+          "question": "What chemical did parliamentary officials soak window curtains in during the Great Stink of 1858?",
+          "q": "What chemical did parliamentary officials soak window curtains in during the Great Stink of 1858?",
           "options": [
-            "It proved that diseases were caused by planetary alignments",
-            "It showed that boiling water made it poisonous",
-            "It provided empirical, mapped epidemiological evidence that disease spread via contaminated water ingested into the digestive tract, not through airborne miasma",
-            "It proved that poor people were biologically immune to cholera"
+            "chloride of lime",
+            "sulfuric acid",
+            "vinegar",
+            "ammonia"
           ],
-          "answer": "It provided empirical, mapped epidemiological evidence that disease spread via contaminated water ingested into the digestive tract, not through airborne miasma"
+          "answer": "chloride of lime",
+          "a": "chloride of lime",
+          "explanation": "Parliamentary staff soaked curtains in chloride of lime to neutralize the overpowering stench rising from the Thames."
+        },
+        {
+          "question": "How many miles of colossal underground brick interceptor sewers did Joseph Bazalgette construct across London?",
+          "q": "How many miles of colossal underground brick interceptor sewers did Joseph Bazalgette construct across London?",
+          "options": [
+            "82 miles",
+            "500 miles",
+            "10 miles",
+            "250 miles"
+          ],
+          "answer": "82 miles",
+          "a": "82 miles",
+          "explanation": "Bazalgette constructed 1,100 miles of street sewers and 82 miles of colossal underground brick interceptor sewers."
+        },
+        {
+          "question": "What waterproof building material did Bazalgette use to ensure London's interceptor sewers would endure for centuries?",
+          "q": "What waterproof building material did Bazalgette use to ensure London's interceptor sewers would endure for centuries?",
+          "options": [
+            "Portland cement",
+            "tar paper",
+            "cast-iron sheets",
+            "soft lime mortar"
+          ],
+          "answer": "Portland cement",
+          "a": "Portland cement",
+          "explanation": "Bazalgette constructed sewers using 318 million bricks and waterproof Portland cement to create durable subterranean cathedrals."
+        },
+        {
+          "question": "What dark, windowless homes beneath street level housed up to 20,000 destitute people in Liverpool?",
+          "q": "What dark, windowless homes beneath street level housed up to 20,000 destitute people in Liverpool?",
+          "options": [
+            "cellar dwellings",
+            "attic garrets",
+            "barn lofts",
+            "suburban cottages"
+          ],
+          "answer": "cellar dwellings",
+          "a": "cellar dwellings",
+          "explanation": "In damp, unpaved courts, entire families crowded into single windowless earthen cellar dwellings beneath street level."
+        },
+        {
+          "question": "How many gallons of sewage did Bazalgette's system permanently divert away from central London each day?",
+          "q": "How many gallons of sewage did Bazalgette's system permanently divert away from central London each day?",
+          "options": [
+            "420 million gallons",
+            "50 million gallons",
+            "10 million gallons",
+            "1 billion gallons"
+          ],
+          "answer": "420 million gallons",
+          "a": "420 million gallons",
+          "explanation": "Bazalgette’s subterranean cathedrals permanently diverted 420 million gallons of sewage away from London, ending epidemic cholera forever."
         }
       ],
       "hook_text": "In July 1858, a suffocating heatwave struck London. The River Thames, choked with raw sewage from three million residents, turned into a bubbling cesspool. The stench inside Parliament became so unbearable that MPs soaked curtains in lime to breathe. How did this environmental catastrophe force the greatest sewer engineering project in history?",
@@ -2556,7 +3285,7 @@ export default {
       "sources": [
         {
           "letter": "A",
-          "title": "Source A: Gustave Doré, Over London by Rail (1872)",
+          "title": "Source A (Visual Record): Gustave Doré, Over London by Rail (1872)",
           "context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
           "hinge_question": "Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
           "image": "/images/victorian_slum.jpg",
@@ -2568,11 +3297,14 @@ export default {
           "source_context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
           "teacher_notes": {
             "source_context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?"
-          }
+          },
+          "id": "iae_l3_src_a",
+          "type": "visual",
+          "src": "/images/victorian_slum.jpg"
         },
         {
           "letter": "B",
-          "title": "Source B: John Leech, A Court for King Cholera (Punch, 1852)",
+          "title": "Source B (Political Cartoon): John Leech, A Court for King Cholera (Punch, 1852)",
           "context": "Published in Punch in 1852 during Britain's second cholera pandemic, John Leech's cartoon attacked municipal apathy. The image depicts children playing on an open dunghill and an unlined cesspool pump surrounded by dilapidated tenements. **Hinge Question:** How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?",
           "hinge_question": "How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?",
           "image": "/images/court_for_king_cholera.png",
@@ -2584,11 +3316,14 @@ export default {
           "source_context": "Published in Punch in 1852 during Britain's second cholera pandemic, John Leech's cartoon attacked municipal apathy. The image depicts children playing on an open dunghill and an unlined cesspool pump surrounded by dilapidated tenements. **Hinge Question:** How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?",
           "teacher_notes": {
             "source_context": "Published in Punch in 1852 during Britain's second cholera pandemic, John Leech's cartoon attacked municipal apathy. The image depicts children playing on an open dunghill and an unlined cesspool pump surrounded by dilapidated tenements. **Hinge Question:** How did satirical magazines like Punch use dark visual humor to pressure politicians into taking public health reform seriously?"
-          }
+          },
+          "id": "iae_l3_src_b",
+          "type": "visual",
+          "src": "/images/court_for_king_cholera.png"
         },
         {
           "letter": "C",
-          "title": "Source C: Edwin Chadwick, Report on the Sanitary Condition of the Labouring Population (1842)",
+          "title": "Source C (Sanitary Report): Edwin Chadwick, Report on the Sanitary Condition of the Labouring Population (1842)",
           "context": "Edwin Chadwick's landmark 1842 investigation used statistical medical returns to prove that epidemic disease was directly generated by unhygienic living conditions rather than moral failing. **Hinge Question:** Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?",
           "hinge_question": "Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?",
           "text": "“The charcoal-burners, the brick-makers, and the miners are all exposed to severe atmospheric changes and filth. In the town districts, the crowded back-to-back dwellings are built with no ventilation, and the refuse of the houses is thrown into open streets. The annual loss of life from filth and bad ventilation is greater than the loss from death or wounds in any wars in which the country has been engaged in modern times.”",
@@ -2600,36 +3335,24 @@ export default {
           "source_context": "Edwin Chadwick's landmark 1842 investigation used statistical medical returns to prove that epidemic disease was directly generated by unhygienic living conditions rather than moral failing. **Hinge Question:** Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?",
           "teacher_notes": {
             "source_context": "Edwin Chadwick's landmark 1842 investigation used statistical medical returns to prove that epidemic disease was directly generated by unhygienic living conditions rather than moral failing. **Hinge Question:** Why did Chadwick use a direct comparison to wartime casualties to shock Victorian MPs out of their laissez-faire complacency?"
-          }
+          },
+          "id": "iae_l3_src_c",
+          "type": "written",
+          "src": "",
+          "image": ""
         },
         {
           "letter": "D",
-          "title": "Source D: Sir Joseph Bazalgette’s London Interceptor Sewer Network Under Construction (1862)",
-          "context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink.",
-          "hinge_question": "How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?",
-          "image": "/images/bazalgette_sewer.jpg",
-          "caption": "Source D: Construction of Sir Joseph Bazalgette’s subterranean interceptor sewer system beneath London (c. 1862). Over 318 million bricks and 82 miles of enclosed interceptor tunnels diverted London’s sewage away from the Thames, permanently eliminating waterborne cholera epidemics.",
-          "question_badge": "Technology & Power",
-          "question": "What does this photograph reveal about how Victorian engineering solved London's deadly sewage crisis?",
-          "enquiry_question": "What does this photograph reveal about how Victorian engineering solved London's deadly sewage crisis?",
-          "model_answer": "It reveals the massive scale of Bazalgette's underground brick tunnels, built to divert millions of gallons of sewage away from the Thames and halt cholera epidemics.",
-          "source_context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink. **Hinge Question:** How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?",
-          "teacher_notes": {
-            "source_context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink. **Hinge Question:** How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?"
-          }
-        },
-        {
-          "letter": "E",
-          "title": "Source E: Father Thames Introducing his Offspring to the Fair City of London (Punch, July 1858)",
+          "title": "Source D (Political Cartoon): Father Thames Introducing his Offspring to the Fair City of London (Punch, 1858)",
           "context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
           "hinge_question": "How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
           "image": "/images/father_thames_punch_1858.jpg",
-          "caption": "Source E: John Leech's celebrated cartoon in Punch (3 July 1858) personifying Father Thames introducing his diseased children—Diphtheria, Scrofula, and Cholera—to London during the Great Stink.",
+          "caption": "Source D: John Leech's celebrated cartoon in Punch (3 July 1858) personifying Father Thames introducing his diseased children—Diphtheria, Scrofula, and Cholera—to London during the Great Stink.",
           "discussion_ideas": [
             "Personification of Lethal Waterborne Epidemics: Leech personifies the Thames not as the romantic, bountiful river god of British folklore, but as a filthy, bedraggled monster crawling from the slime to present his skeletal, diseased children—Diphtheria, Scrofula, and Cholera—to a refined, classical Britannia representing the city of London, graphically connecting environmental filth to childhood mortality.",
             "Political Pressure Shaming Parliament into Action: The subtitle mocks Parliament ('A Design for a Fresco in the New Houses of Parliament'), highlighting the hypocrisy of Victorian politicians who spent millions gilding the Palace of Westminster while refusing to spend public money on municipal sewers; within eighteen days of this cartoon appearing, Parliament passed emergency legislation authorizing Bazalgette's £3 million interceptor sewer system."
           ],
-          "id": "iae_l3_source_e_father_thames_1858",
+          "id": "iae_l3_src_d",
           "question": "What point was the cartoonist making about London's living conditions by calling diseases like cholera the 'offspring' of Father Thames?",
           "question_badge": "Symbolism & Social Satire",
           "question_type": "Symbolism & Social Satire",
@@ -2638,7 +3361,28 @@ export default {
           "source_context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
           "teacher_notes": {
             "source_context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?"
-          }
+          },
+          "type": "visual",
+          "src": "/images/father_thames_punch_1858.jpg"
+        },
+        {
+          "letter": "E",
+          "title": "Source E (Visual Record): Sir Joseph Bazalgette’s London Interceptor Sewer Network Under Construction (1862)",
+          "context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink.",
+          "hinge_question": "How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?",
+          "image": "/images/bazalgette_sewer.jpg",
+          "caption": "Source E: Construction of Sir Joseph Bazalgette’s subterranean interceptor sewer system beneath London (c. 1862). Over 318 million bricks and 82 miles of enclosed interceptor tunnels diverted London’s sewage away from the Thames, permanently eliminating waterborne cholera epidemics.",
+          "question_badge": "Technology & Power",
+          "question": "What does this photograph reveal about how Victorian engineering solved London's deadly sewage crisis?",
+          "enquiry_question": "What does this photograph reveal about how Victorian engineering solved London's deadly sewage crisis?",
+          "model_answer": "It reveals the massive scale of Bazalgette's underground brick tunnels, built to divert millions of gallons of sewage away from the Thames and halt cholera epidemics.",
+          "source_context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink. **Hinge Question:** How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?",
+          "teacher_notes": {
+            "source_context": "Contemporary photograph of the cavernous Abbey Mills pumping station and underground brick interceptor sewers engineered by Sir Joseph Bazalgette following the 1858 Great Stink. **Hinge Question:** How did the construction of underground interceptor sewers demonstrate a decisive shift from individual laissez-faire to collective state public health engineering?"
+          },
+          "id": "iae_l3_src_e",
+          "type": "visual",
+          "src": "/images/bazalgette_sewer.jpg"
         }
       ],
       "exam_practice": {
@@ -2998,27 +3742,45 @@ export default {
       "vocab": [
         {
           "term": "Franchise",
-          "definition": "The constitutional right to cast a vote in parliamentary or municipal elections."
+          "definition": "The constitutional right to cast a vote in parliamentary or municipal elections.",
+          "syllables": "Fra-nchi-se",
+          "phonetic": "franchise",
+          "tier": "3"
         },
         {
           "term": "Peterloo Massacre",
-          "definition": "The violent cavalry charge into a peaceful crowd of 60,000 reform demonstrators at St Peter’s Field, Manchester, on 16 August 1819."
+          "definition": "The violent cavalry charge into a peaceful crowd of 60,000 reform demonstrators at St Peter’s Field, Manchester, on 16 August 1819.",
+          "syllables": "Pe-te-rloo Ma-ssacre",
+          "phonetic": "peterloo massacre",
+          "tier": "2"
         },
         {
           "term": "Swing Riots",
-          "definition": "A widespread wave of rural agricultural rebellion across southern England in 1830 involving the smashing of threshing machines and burning of hayricks."
+          "definition": "A widespread wave of rural agricultural rebellion across southern England in 1830 involving the smashing of threshing machines and burning of hayricks.",
+          "syllables": "Swing Riots",
+          "phonetic": "swing riots",
+          "tier": "3"
         },
         {
           "term": "Tolpuddle Martyrs",
-          "definition": "Six Dorset agricultural labourers sentenced to seven years’ penal transportation to Australia in 1834 for swearing a secret trade union oath."
+          "definition": "Six Dorset agricultural labourers sentenced to seven years’ penal transportation to Australia in 1834 for swearing a secret trade union oath.",
+          "syllables": "To-lpuddle Ma-rtyrs",
+          "phonetic": "tolpuddle martyrs",
+          "tier": "2"
         },
         {
           "term": "Chartism",
-          "definition": "A nationwide working-class political movement between 1838 and 1848 demanding the six points of the People’s Charter, including universal male suffrage."
+          "definition": "A nationwide working-class political movement between 1838 and 1848 demanding the six points of the People’s Charter, including universal male suffrage.",
+          "syllables": "Cha-rtism",
+          "phonetic": "chartism",
+          "tier": "3"
         },
         {
           "term": "Moral vs Physical Force",
-          "definition": "The strategic divide within Chartism between those advocating peaceful petitions (William Lovett) and those advocating armed uprising (Feargus O’Connor)."
+          "definition": "The strategic divide within Chartism between those advocating peaceful petitions (William Lovett) and those advocating armed uprising (Feargus O’Connor).",
+          "syllables": "Mo-ral vs Phy-sical Fo-rce",
+          "phonetic": "moral vs physical force",
+          "tier": "2"
         }
       ],
       "narrative_blocks": [
@@ -3026,10 +3788,10 @@ export default {
           "act": 1,
           "title": "The Sledgehammer of General Ludd (1811–1816)",
           "theme_heading": "The Sledgehammer of General Ludd (1811–1816)",
-          "text": "<span class=\"para-ref\">[4.1]</span> In the manufacturing valleys of Nottinghamshire, Yorkshire, and Lancashire, industrialisation threatened skilled artisan workers with wage collapse and deskilling. In 1811, textile hand-workers organized a clandestine guerilla campaign under the mythical figurehead <strong class=\"vocab-highlight\">General Ned Ludd</strong>. Armed with heavy sledgehammers nicknamed \"Great Enoch\", nocturnal raiding parties blackened their faces, marched across moors, and broke into mills to smash the newly introduced wide-frame stocking looms and steam shearing frames that undercut artisan craft wages. The British ruling class reacted with existential panic: in 1812, Parliament passed the Frame Breaking Act, making machine destruction a capital crime punishable by public hanging, and deployed over 12,000 regular troops to the industrial North—a military force larger than the army the Duke of Wellington commanded against Napoleon in Spain.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In the manufacturing valleys of northern England, industrialisation threatened skilled textile artisans with extinction. Powerloom wage collapses from twenty-five shillings to five shillings a week drove handloom weavers to desperation. In 1811, organized underground groups called **Luddites**, invoking mythical leader 'General Ned Ludd', began sledgehammer midnight raids to smash shearing frames. In response, Parliament passed the capital Frame-Breaking Act 1812, making machine-breaking a hanging offense and deploying 12,000 soldiers to northern counties.",
           "source": {
             "letter": "A",
-            "title": "Source A: Declaration of General Ned Ludd to the Framework Knitters (Nottinghamshire, 1811)",
+            "title": "Source A (Rebel Declaration): Declaration of General Ned Ludd to the Framework Knitters (1811)",
             "context": "Contemporary warning handbill delivered to stocking manufacturers in Nottinghamshire during the height of the 1811 machine-breaking raids. **Hinge Question:** Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?",
             "hinge_question": "Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?",
             "text": "“Whereas it hath been represented to General Ludd that certain masters have introduced wide frames for making stockings, reducing prices and manufacturing deceitful goods to the ruin of the trade: We do hereby give notice to all such masters, that if they do not immediately take down such frames, General Ludd and his army will break and destroy the same without mercy. By order of the Well-Wisher to the Industrious Poor, General Ned Ludd.”",
@@ -3037,20 +3799,50 @@ export default {
             "question_badge": "Author's Purpose",
             "question": "Why did the Luddites threaten to smash machines rather than just asking factory bosses for higher pay?",
             "enquiry_question": "Why did the Luddites threaten to smash machines rather than just asking factory bosses for higher pay?",
-            "model_answer": "They broke machines because new frames produced shoddy goods and undercut their wages, and wrecking them was the only way to stop factory owners replacing skilled craftsmen."
+            "model_answer": "They broke machines because new frames produced shoddy goods and undercut their wages, and wrecking them was the only way to stop factory owners replacing skilled craftsmen.",
+            "source_context": "Contemporary warning handbill delivered to stocking manufacturers in Nottinghamshire during the height of the 1811 machine-breaking raids. **Hinge Question:** Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?",
+            "teacher_notes": {
+              "source_context": "Contemporary warning handbill delivered to stocking manufacturers in Nottinghamshire during the height of the 1811 machine-breaking raids. **Hinge Question:** Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?"
+            },
+            "id": "iae_l4_src_a",
+            "type": "written",
+            "src": "",
+            "image": ""
           },
           "image": "/images/leader_of_the_luddites.jpg",
           "image_alt": "Contemporary 1812 satirical handbill showing The Leader of the Luddites in woman's dress",
-          "caption": "The Leader of the Luddites (May 1812), contemporary hand-coloured etching depicting the folkloric 'General Ned Ludd' dressed in women's clothing leading night-time machine-breaking raids in the textile districts (British Museum, 1873,0712.809)."
+          "caption": "The Leader of the Luddites (May 1812), contemporary hand-coloured etching depicting the folkloric 'General Ned Ludd' dressed in women's clothing leading night-time machine-breaking raids in the textile districts (British Museum, 1873,0712.809).",
+          "sources": [
+            {
+              "letter": "A",
+              "title": "Source A (Rebel Declaration): Declaration of General Ned Ludd to the Framework Knitters (1811)",
+              "context": "Contemporary warning handbill delivered to stocking manufacturers in Nottinghamshire during the height of the 1811 machine-breaking raids. **Hinge Question:** Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?",
+              "hinge_question": "Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?",
+              "text": "“Whereas it hath been represented to General Ludd that certain masters have introduced wide frames for making stockings, reducing prices and manufacturing deceitful goods to the ruin of the trade: We do hereby give notice to all such masters, that if they do not immediately take down such frames, General Ludd and his army will break and destroy the same without mercy. By order of the Well-Wisher to the Industrious Poor, General Ned Ludd.”",
+              "caption": "Source A: Contemporary 1811 warning broadside circulated in Nottinghamshire, threatening machine-owning mill masters with nocturnal destruction.",
+              "question_badge": "Author's Purpose",
+              "question": "Why did the Luddites threaten to smash machines rather than just asking factory bosses for higher pay?",
+              "enquiry_question": "Why did the Luddites threaten to smash machines rather than just asking factory bosses for higher pay?",
+              "model_answer": "They broke machines because new frames produced shoddy goods and undercut their wages, and wrecking them was the only way to stop factory owners replacing skilled craftsmen.",
+              "source_context": "Contemporary warning handbill delivered to stocking manufacturers in Nottinghamshire during the height of the 1811 machine-breaking raids. **Hinge Question:** Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?",
+              "teacher_notes": {
+                "source_context": "Contemporary warning handbill delivered to stocking manufacturers in Nottinghamshire during the height of the 1811 machine-breaking raids. **Hinge Question:** Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?"
+              },
+              "id": "iae_l4_src_a",
+              "type": "written",
+              "src": "",
+              "image": ""
+            }
+          ]
         },
         {
           "act": 2,
           "title": "The Peterloo Massacre: Sabres at St Peter’s Field (August 1819)",
           "theme_heading": "The Peterloo Massacre: Sabres at St Peter’s Field (August 1819)",
-          "text": "<span class=\"para-ref\">[4.2]</span> With direct industrial sabotage brutally suppressed by military force, working people turned toward constitutional political reform to demand parliamentary representation. On 16 August 1819, over 60,000 unarmed men, women, and children assembled peacefully in Sunday clothes at St Peter’s Field in Manchester. Led by the celebrated orator Henry \"Orator\" Hunt, the disciplined crowd carried banners demanding \"Universal Suffrage\" and \"Vote by Ballot\". Panicked local magistrates, watching from a nearby window, branded the peaceful assembly treasonous and ordered the Manchester and Salford Yeomanry—an untrained volunteer cavalry composed of wealthy cotton merchants and publicans—to charge the hustings. With drawn sabres, the mounted cavalry hacked through the densely packed throng, killing eighteen peaceful citizens and wounding over 650. The government of Lord Liverpool congratulated the magistrates and passed the draconian <strong class=\"vocab-highlight\">Six Acts</strong>, banning unauthorized political meetings and heavily taxing radical newspapers.",
+          "text": "<span class=\"para-ref\">[4.2]</span> With industrial sabotage suppressed, workers turned to political reform. On 16 August 1819, a peaceful crowd of 60,000 gathered at St Peter's Field in Manchester to demand parliamentary representation. Local magistrates panicked and ordered the Manchester Yeomanry sabre charge into the defenceless crowd, killing eighteen and injuring over 650 in the infamous **Peterloo Massacre**. The government suppressed protest with the repressive Tory Six Acts, outlawing unauthorized public meetings and taxing political publications.",
           "source": {
             "letter": "B",
-            "title": "Source B: George Cruikshank, The Massacre of Peterloo or Britains in Search of Liberty (1819)",
+            "title": "Source B (Satirical Print): George Cruikshank, The Massacre of Peterloo (1819)",
             "context": "George Cruikshank’s scathing satirical print attacked the Manchester magistrates and Yeomanry cavalry who charged 60,000 peaceful protesters listening to Henry Hunt. **Hinge Question:** How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?",
             "hinge_question": "How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?",
             "text": "“Down with ’em! Chop ’em down, my brave boys! Give them no quarter! Remember, the more you kill, the less poor rates you will have to pay!”\n— Caption to Cruikshank’s satirical engraving, capturing the public outrage over the cavalry assault at St Peter’s Field.",
@@ -3058,21 +3850,49 @@ export default {
             "image": "/images/peterloo_massacre_cruikshank.jpg",
             "src": "/images/peterloo_massacre_cruikshank.jpg",
             "source": "/images/peterloo_massacre_cruikshank.jpg",
-            "id": "source_b_peterloo_massacre",
+            "id": "iae_l4_src_b",
             "question_badge": "Historical Significance",
             "question": "Why did George Cruikshank portray the Manchester Yeomanry cavalry as bloodthirsty murderers attacking innocent families?",
             "enquiry_question": "Why did George Cruikshank portray the Manchester Yeomanry cavalry as bloodthirsty murderers attacking innocent families?",
-            "model_answer": "He wanted to show the shocking brutality of the magistrates who sent armed soldiers to slice down peaceful men, women, and children asking for the right to vote."
-          }
+            "model_answer": "He wanted to show the shocking brutality of the magistrates who sent armed soldiers to slice down peaceful men, women, and children asking for the right to vote.",
+            "source_context": "George Cruikshank’s scathing satirical print attacked the Manchester magistrates and Yeomanry cavalry who charged 60,000 peaceful protesters listening to Henry Hunt. **Hinge Question:** How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?",
+            "teacher_notes": {
+              "source_context": "George Cruikshank’s scathing satirical print attacked the Manchester magistrates and Yeomanry cavalry who charged 60,000 peaceful protesters listening to Henry Hunt. **Hinge Question:** How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?"
+            },
+            "type": "visual"
+          },
+          "sources": [
+            {
+              "letter": "B",
+              "title": "Source B (Satirical Print): George Cruikshank, The Massacre of Peterloo (1819)",
+              "context": "George Cruikshank’s scathing satirical print attacked the Manchester magistrates and Yeomanry cavalry who charged 60,000 peaceful protesters listening to Henry Hunt. **Hinge Question:** How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?",
+              "hinge_question": "How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?",
+              "text": "“Down with ’em! Chop ’em down, my brave boys! Give them no quarter! Remember, the more you kill, the less poor rates you will have to pay!”\n— Caption to Cruikshank’s satirical engraving, capturing the public outrage over the cavalry assault at St Peter’s Field.",
+              "caption": "Source B: George Cruikshank, satirical print published in London in September 1819, depicting the Manchester Yeomanry charging unarmed reform demonstrators.",
+              "image": "/images/peterloo_massacre_cruikshank.jpg",
+              "src": "/images/peterloo_massacre_cruikshank.jpg",
+              "source": "/images/peterloo_massacre_cruikshank.jpg",
+              "id": "iae_l4_src_b",
+              "question_badge": "Historical Significance",
+              "question": "Why did George Cruikshank portray the Manchester Yeomanry cavalry as bloodthirsty murderers attacking innocent families?",
+              "enquiry_question": "Why did George Cruikshank portray the Manchester Yeomanry cavalry as bloodthirsty murderers attacking innocent families?",
+              "model_answer": "He wanted to show the shocking brutality of the magistrates who sent armed soldiers to slice down peaceful men, women, and children asking for the right to vote.",
+              "source_context": "George Cruikshank’s scathing satirical print attacked the Manchester magistrates and Yeomanry cavalry who charged 60,000 peaceful protesters listening to Henry Hunt. **Hinge Question:** How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?",
+              "teacher_notes": {
+                "source_context": "George Cruikshank’s scathing satirical print attacked the Manchester magistrates and Yeomanry cavalry who charged 60,000 peaceful protesters listening to Henry Hunt. **Hinge Question:** How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?"
+              },
+              "type": "visual"
+            }
+          ]
         },
         {
           "act": 3,
           "title": "Captain Swing & The Hampshire Harvest Riots (November 1830)",
           "theme_heading": "Captain Swing & The Hampshire Harvest Riots (November 1830)",
-          "text": "<span class=\"para-ref\">[4.3]</span> A decade after Peterloo, agrarian rebellion exploded across southern England under the mysterious signature of <strong class=\"vocab-highlight\">Captain Swing</strong>. In Hampshire and the Meon Valley, rural farm labourers faced winter starvation as newly invented horse-powered threshing machines stole their only winter wage. Desperate farm workers marched from farm to farm across downland parishes, smashing cast-iron threshing drums with sledgehammers, burning hayricks and wheat ricks under cover of night, and demanding a living wage of two shillings a day. At Selborne and Headley, mobilised crowds of over 200 labourers sacked the hated parish workhouses, dismantling punitive iron cages and burning parish pauper registers. In Fordingbridge, workers attacked the machinery at East Mills. Landowners and magistrates slept with loaded pistols, terrified that agricultural revolution was engulfing the kingdom.",
+          "text": "<span class=\"para-ref\">[4.3]</span> A decade after Peterloo, agrarian rebellion exploded across southern England under the name **Captain Swing**. Starvation winter destitution drove agricultural labourers to resist wage cuts and steam-powered threshing machines. Disguised farmhands carried out sledgehammer threshing destruction by night and nocturnal hayrick arson on landlords' estates, sending warning letters demanding living wages.",
           "source": {
             "letter": "C",
-            "title": "Source C: The Threat of Captain Swing (National Archives HO 52/6, November 1830)",
+            "title": "Source C (Archival Document): The Threat of Captain Swing (National Archives HO 52/6, 1830)",
             "context": "Authentic threatening letter preserved in the Home Office records at The National Archives, Kew (HO 52/6). Between October and December 1830, anonymous handwritten notices signed \"Captain Swing\" were delivered to Hampshire squires, parsons, and magistrates, warning that barns and hayricks would be burned if wages were not raised and threshing machines destroyed.",
             "hinge_question": "Why did agricultural labourers invoke a mythical military commander (\"Captain Swing\") rather than naming real village leaders?",
             "image": "/images/captain_swing_letter.jpg",
@@ -3081,78 +3901,106 @@ export default {
             "question_badge": "Source Inference",
             "question": "What does this anonymous letter reveal about why farm labourers felt driven to burn down barns and threshing machines?",
             "enquiry_question": "What does this anonymous letter reveal about why farm labourers felt driven to burn down barns and threshing machines?",
-            "model_answer": "It reveals that farmworkers were facing literal starvation on poverty wages, and saw smashing threshing machines as their only way to survive the winter."
+            "model_answer": "It reveals that farmworkers were facing literal starvation on poverty wages, and saw smashing threshing machines as their only way to survive the winter.",
+            "source_context": "Authentic threatening letter preserved in the Home Office records at The National Archives, Kew (HO 52/6). Between October and December 1830, anonymous handwritten notices signed \"Captain Swing\" were delivered to Hampshire squires, parsons, and magistrates, warning that barns and hayricks would be burned if wages were not raised and threshing machines destroyed. **Hinge Question:** Why did agricultural labourers invoke a mythical military commander (\"Captain Swing\") rather than naming real village leaders?",
+            "teacher_notes": {
+              "source_context": "Authentic threatening letter preserved in the Home Office records at The National Archives, Kew (HO 52/6). Between October and December 1830, anonymous handwritten notices signed \"Captain Swing\" were delivered to Hampshire squires, parsons, and magistrates, warning that barns and hayricks would be burned if wages were not raised and threshing machines destroyed. **Hinge Question:** Why did agricultural labourers invoke a mythical military commander (\"Captain Swing\") rather than naming real village leaders?"
+            },
+            "id": "iae_l4_src_c",
+            "type": "visual",
+            "src": "/images/captain_swing_letter.jpg"
           },
           "image": "/images/captain_swing_portrait.jpg",
           "image_alt": "Satirical print 'An original portrait of Captain Swing' (December 1830)",
-          "caption": "An original portrait of Captain Swing (December 1830), contemporary hand-coloured satirical lithograph personifying the mythical rural protest leader as a demonic creature formed of pitch-barrels, firebrands, and farming implements (British Museum, 1948,0214.941)."
-        },
-        {
-          "type": "interactive_hotspot_map",
-          "title": "Interactive Primary Map: The Hampshire Swing Riots & Rural Rebellion (1830)",
-          "subtitle": "Click the glowing pins to investigate key incident sites, workhouse riots, and the Winchester Special Assizes",
-          "shelfmark": "Hampshire Record Office & The National Archives HO 52/6",
-          "image": "/images/hampshire_antique_map_1825.jpg",
-          "hotspots": [
+          "caption": "An original portrait of Captain Swing (December 1830), contemporary hand-coloured satirical lithograph personifying the mythical rural protest leader as a demonic creature formed of pitch-barrels, firebrands, and farming implements (British Museum, 1948,0214.941).",
+          "interactive_hotspot_map": {
+            "type": "interactive_hotspot_map",
+            "title": "Interactive Primary Map: The Hampshire Swing Riots & Rural Rebellion (1830)",
+            "subtitle": "Click the glowing pins to investigate key incident sites, workhouse riots, and the Winchester Special Assizes",
+            "shelfmark": "Hampshire Record Office & The National Archives HO 52/6",
+            "hotspots": [
+              {
+                "id": "micheldever",
+                "label": "Micheldever",
+                "title": "Micheldever: Execution of Henry Cook",
+                "x": 58,
+                "y": 24,
+                "date": "November 1830",
+                "badge": "Martyr Execution",
+                "color": "#dc2626",
+                "details": "Nineteen-year-old ploughboy Henry Cook joined crowds demanding a living wage of 2s a day. During a confrontation, he struck the hat of magistrate William Bingham Baring. Despite causing no physical injury and Baring pleading for mercy, the Crown executed Cook at Winchester on 24 January 1831 to terrify the rural working class.",
+                "hinge": "Hinge Question: Why did the Crown insist on executing a teenage ploughboy for merely knocking off a magistrate’s hat?"
+              },
+              {
+                "id": "winchester_assizes",
+                "label": "Winchester",
+                "title": "Winchester Castle: Special Assizes Trials",
+                "x": 48,
+                "y": 29.5,
+                "date": "December 1830",
+                "badge": "Judicial Retribution",
+                "color": "#b91c1c",
+                "details": "A Special Commission of three judges sat in the Great Hall beneath the Arthurian Round Table. Over 300 Hampshire agricultural labourers were tried in a fortnight. Six were condemned to the gallows, and 101 men and boys were sentenced to 7 to 14 years’ penal transportation to Van Diemen’s Land (Tasmania), tearing families apart.",
+                "hinge": "Hinge Question: How did the state use the spectacle of trials in the ancient Norman Great Hall to reassert aristocratic authority?"
+              },
+              {
+                "id": "selborne_headley",
+                "label": "Selborne & Headley",
+                "title": "Selborne & Headley: Workhouse Demolition",
+                "x": 82,
+                "y": 27.5,
+                "date": "22–23 Nov 1830",
+                "badge": "Workhouse Riot",
+                "color": "#ea580c",
+                "details": "A mobilised crowd of over 200 labourers marched on the parish workhouses at Selborne and Headley. They ransacked the buildings, dismantled the punitive iron cages where pauper inmates were locked, smashed the furniture, burned the parish pauper registers, and forced the local vicar to reduce tithes by half.",
+                "hinge": "Hinge Question: Why did the rioters target parish registers and iron workhouse cages rather than stealing valuables?"
+              },
+              {
+                "id": "fordingbridge",
+                "label": "Fordingbridge",
+                "title": "Fordingbridge: East Mills Machine Breaking",
+                "x": 16.5,
+                "y": 36,
+                "date": "23 Nov 1830",
+                "badge": "Machine Sabotage",
+                "color": "#d97706",
+                "details": "Hundreds of farmworkers and textile artisans converged on East Mills in Fordingbridge, smashing iron threshing machines and spinning machinery with heavy sledgehammers. Local magistrates panicked, enrolling 200 special constables and calling in the 3rd Dragoon Guards and local yeomanry cavalry to disperse the crowd with drawn swords.",
+                "hinge": "Hinge Question: What does the alliance between agricultural labourers and factory artisans reveal about the shared impact of mechanisation?"
+              },
+              {
+                "id": "meon_valley",
+                "label": "Meon Valley",
+                "title": "Meon Valley & Fareham: Nocturnal Rick-Burning",
+                "x": 64,
+                "y": 34.5,
+                "date": "October–Dec 1830",
+                "badge": "Arson & Terror",
+                "color": "#e11d48",
+                "details": "Across the downlands and farms of the Meon Valley, mysterious nighttime fires incinerated hayricks, wheat ricks, and barns. Threatening letters signed by \"Captain Swing\" warned magistrates and tenant farmers that any property harbouring threshing machines would burn. Terrified landowners mounted armed night patrols and slept with pistols.",
+                "hinge": "Hinge Question: Why was arson (\"the fire-fiend\") such an effective weapon of intimidation for impoverished labourers?"
+              }
+            ]
+          },
+          "sources": [
             {
-              "id": "micheldever",
-              "label": "Micheldever",
-              "title": "Micheldever: Execution of Henry Cook",
-              "x": 58,
-              "y": 24,
-              "date": "November 1830",
-              "badge": "Martyr Execution",
-              "color": "#dc2626",
-              "details": "Nineteen-year-old ploughboy Henry Cook joined crowds demanding a living wage of 2s a day. During a confrontation, he struck the hat of magistrate William Bingham Baring. Despite causing no physical injury and Baring pleading for mercy, the Crown executed Cook at Winchester on 24 January 1831 to terrify the rural working class.",
-              "hinge": "Hinge Question: Why did the Crown insist on executing a teenage ploughboy for merely knocking off a magistrate’s hat?"
-            },
-            {
-              "id": "winchester_assizes",
-              "label": "Winchester",
-              "title": "Winchester Castle: Special Assizes Trials",
-              "x": 48,
-              "y": 29.5,
-              "date": "December 1830",
-              "badge": "Judicial Retribution",
-              "color": "#b91c1c",
-              "details": "A Special Commission of three judges sat in the Great Hall beneath the Arthurian Round Table. Over 300 Hampshire agricultural labourers were tried in a fortnight. Six were condemned to the gallows, and 101 men and boys were sentenced to 7 to 14 years’ penal transportation to Van Diemen’s Land (Tasmania), tearing families apart.",
-              "hinge": "Hinge Question: How did the state use the spectacle of trials in the ancient Norman Great Hall to reassert aristocratic authority?"
-            },
-            {
-              "id": "selborne_headley",
-              "label": "Selborne & Headley",
-              "title": "Selborne & Headley: Workhouse Demolition",
-              "x": 82,
-              "y": 27.5,
-              "date": "22–23 Nov 1830",
-              "badge": "Workhouse Riot",
-              "color": "#ea580c",
-              "details": "A mobilised crowd of over 200 labourers marched on the parish workhouses at Selborne and Headley. They ransacked the buildings, dismantled the punitive iron cages where pauper inmates were locked, smashed the furniture, burned the parish pauper registers, and forced the local vicar to reduce tithes by half.",
-              "hinge": "Hinge Question: Why did the rioters target parish registers and iron workhouse cages rather than stealing valuables?"
-            },
-            {
-              "id": "fordingbridge",
-              "label": "Fordingbridge",
-              "title": "Fordingbridge: East Mills Machine Breaking",
-              "x": 16.5,
-              "y": 36,
-              "date": "23 Nov 1830",
-              "badge": "Machine Sabotage",
-              "color": "#d97706",
-              "details": "Hundreds of farmworkers and textile artisans converged on East Mills in Fordingbridge, smashing iron threshing machines and spinning machinery with heavy sledgehammers. Local magistrates panicked, enrolling 200 special constables and calling in the 3rd Dragoon Guards and local yeomanry cavalry to disperse the crowd with drawn swords.",
-              "hinge": "Hinge Question: What does the alliance between agricultural labourers and factory artisans reveal about the shared impact of mechanisation?"
-            },
-            {
-              "id": "meon_valley",
-              "label": "Meon Valley",
-              "title": "Meon Valley & Fareham: Nocturnal Rick-Burning",
-              "x": 64,
-              "y": 34.5,
-              "date": "October–Dec 1830",
-              "badge": "Arson & Terror",
-              "color": "#e11d48",
-              "details": "Across the downlands and farms of the Meon Valley, mysterious nighttime fires incinerated hayricks, wheat ricks, and barns. Threatening letters signed by \"Captain Swing\" warned magistrates and tenant farmers that any property harbouring threshing machines would burn. Terrified landowners mounted armed night patrols and slept with pistols.",
-              "hinge": "Hinge Question: Why was arson (\"the fire-fiend\") such an effective weapon of intimidation for impoverished labourers?"
+              "letter": "C",
+              "title": "Source C (Archival Document): The Threat of Captain Swing (National Archives HO 52/6, 1830)",
+              "context": "Authentic threatening letter preserved in the Home Office records at The National Archives, Kew (HO 52/6). Between October and December 1830, anonymous handwritten notices signed \"Captain Swing\" were delivered to Hampshire squires, parsons, and magistrates, warning that barns and hayricks would be burned if wages were not raised and threshing machines destroyed.",
+              "hinge_question": "Why did agricultural labourers invoke a mythical military commander (\"Captain Swing\") rather than naming real village leaders?",
+              "image": "/images/captain_swing_letter.jpg",
+              "text": "“Sir, This is to inform you what will happen to you if you do not instantly destroy your threshing machines and raise the wages of your poor labourers to two shillings a day. We have sworn to endure this starvation no longer. If you do not break your machines yourself, we will come by night and burn them down, along with your barns and hayricks. Your injured servant, Captain Swing.”",
+              "caption": "Source C: Authentic 1830 \"Captain Swing\" threatening letter from Home Office file HO 52/6 (The National Archives, Kew). Chilling warnings delivered to Hampshire landlords demanded living wages of 2s a day under threat of nocturnal arson.",
+              "question_badge": "Source Inference",
+              "question": "What does this anonymous letter reveal about why farm labourers felt driven to burn down barns and threshing machines?",
+              "enquiry_question": "What does this anonymous letter reveal about why farm labourers felt driven to burn down barns and threshing machines?",
+              "model_answer": "It reveals that farmworkers were facing literal starvation on poverty wages, and saw smashing threshing machines as their only way to survive the winter.",
+              "source_context": "Authentic threatening letter preserved in the Home Office records at The National Archives, Kew (HO 52/6). Between October and December 1830, anonymous handwritten notices signed \"Captain Swing\" were delivered to Hampshire squires, parsons, and magistrates, warning that barns and hayricks would be burned if wages were not raised and threshing machines destroyed. **Hinge Question:** Why did agricultural labourers invoke a mythical military commander (\"Captain Swing\") rather than naming real village leaders?",
+              "teacher_notes": {
+                "source_context": "Authentic threatening letter preserved in the Home Office records at The National Archives, Kew (HO 52/6). Between October and December 1830, anonymous handwritten notices signed \"Captain Swing\" were delivered to Hampshire squires, parsons, and magistrates, warning that barns and hayricks would be burned if wages were not raised and threshing machines destroyed. **Hinge Question:** Why did agricultural labourers invoke a mythical military commander (\"Captain Swing\") rather than naming real village leaders?"
+              },
+              "id": "iae_l4_src_c",
+              "type": "visual",
+              "src": "/images/captain_swing_letter.jpg"
             }
           ]
         },
@@ -3160,10 +4008,10 @@ export default {
           "act": 4,
           "title": "The Winchester Special Assizes & State Vengeance (December 1830)",
           "theme_heading": "The Winchester Special Assizes & State Vengeance (December 1830)",
-          "text": "<span class=\"para-ref\">[4.4]</span> The ruling aristocracy reacted to the Swing Riots with pitiless vengeance. In December 1830, Home Secretary Lord Melbourne dispatched a Special Commission of judges to hold extraordinary trials in the Great Hall of Winchester Castle. Over 300 Hampshire agricultural labourers—many illiterate young men—were dragged from village lock-ups before the judges. Six men were sentenced to death; among them was nineteen-year-old ploughboy <strong class=\"vocab-highlight\">Henry Cook</strong> of Micheldever, convicted of knocking off the hat of magistrate William Bingham Baring. Despite Baring himself begging the judges for mercy, the Crown hanged Cook at Winchester Prison on 24 January 1831 to intimidate rural labourers. A further 101 Hampshire men and boys were sentenced to transportation, torn from their families, and shipped in disease-ridden convict hulks to penal servitude in Van Diemen’s Land (Tasmania).",
+          "text": "<span class=\"para-ref\">[4.4]</span> The ruling elite reacted with vengeance. In December 1830, the Winchester Special Commission convened for the Winchester Great Hall trials of over 300 Hampshire agricultural workers. The court sentenced nineteen-year-old ploughboy Henry Cook to a Micheldever youth execution for knocking off a magistrate's hat, while 250 Hampshire men were sentenced to Australian penal transportation to Van Diemen's Land (Tasmania).",
           "source": {
             "letter": "D",
-            "title": "Source D: Contemporary Report of the Winchester Special Assizes (Hampshire Chronicle, December 1830)",
+            "title": "Source D (Newspaper Record): Contemporary Report of the Winchester Special Assizes (Hampshire Chronicle, 1830)",
             "context": "Newspaper report published in the Hampshire Chronicle during the Special Commission trials in Winchester Castle’s Great Hall.",
             "hinge_question": "Why did the British state choose transportation to Australia rather than imprisonment inside local English county gaols?",
             "text": "“The Special Assizes at Winchester concluded this week. The sentences passed upon the rioters who have disturbed the peace of this county demonstrate that His Majesty’s government will tolerate no acts of insubordination or destruction of property. Six prisoners have received sentence of death, and upwards of one hundred are to be transported beyond the seas for life or for fourteen years. It is hoped that this severe example will restore tranquility to our agricultural districts.”",
@@ -3171,17 +4019,47 @@ export default {
             "question_badge": "Reliability & Provenance",
             "question": "How does this local newspaper report show the government's determination to crush rural unrest?",
             "enquiry_question": "How does this local newspaper report show the government's determination to crush rural unrest?",
-            "model_answer": "The report shows government determination by praising death sentences and mass transportations to Australia as a severe warning to keep farmworkers obedient."
-          }
+            "model_answer": "The report shows government determination by praising death sentences and mass transportations to Australia as a severe warning to keep farmworkers obedient.",
+            "source_context": "Newspaper report published in the Hampshire Chronicle during the Special Commission trials in Winchester Castle’s Great Hall. **Hinge Question:** Why did the British state choose transportation to Australia rather than imprisonment inside local English county gaols?",
+            "teacher_notes": {
+              "source_context": "Newspaper report published in the Hampshire Chronicle during the Special Commission trials in Winchester Castle’s Great Hall. **Hinge Question:** Why did the British state choose transportation to Australia rather than imprisonment inside local English county gaols?"
+            },
+            "id": "iae_l4_src_d",
+            "type": "written",
+            "src": "",
+            "image": ""
+          },
+          "sources": [
+            {
+              "letter": "D",
+              "title": "Source D (Newspaper Record): Contemporary Report of the Winchester Special Assizes (Hampshire Chronicle, 1830)",
+              "context": "Newspaper report published in the Hampshire Chronicle during the Special Commission trials in Winchester Castle’s Great Hall.",
+              "hinge_question": "Why did the British state choose transportation to Australia rather than imprisonment inside local English county gaols?",
+              "text": "“The Special Assizes at Winchester concluded this week. The sentences passed upon the rioters who have disturbed the peace of this county demonstrate that His Majesty’s government will tolerate no acts of insubordination or destruction of property. Six prisoners have received sentence of death, and upwards of one hundred are to be transported beyond the seas for life or for fourteen years. It is hoped that this severe example will restore tranquility to our agricultural districts.”",
+              "caption": "Source D: Report from the Hampshire Chronicle (December 1830), detailing the mass sentencing and penal transportation of over one hundred Hampshire farmworkers.",
+              "question_badge": "Reliability & Provenance",
+              "question": "How does this local newspaper report show the government's determination to crush rural unrest?",
+              "enquiry_question": "How does this local newspaper report show the government's determination to crush rural unrest?",
+              "model_answer": "The report shows government determination by praising death sentences and mass transportations to Australia as a severe warning to keep farmworkers obedient.",
+              "source_context": "Newspaper report published in the Hampshire Chronicle during the Special Commission trials in Winchester Castle’s Great Hall. **Hinge Question:** Why did the British state choose transportation to Australia rather than imprisonment inside local English county gaols?",
+              "teacher_notes": {
+                "source_context": "Newspaper report published in the Hampshire Chronicle during the Special Commission trials in Winchester Castle’s Great Hall. **Hinge Question:** Why did the British state choose transportation to Australia rather than imprisonment inside local English county gaols?"
+              },
+              "id": "iae_l4_src_d",
+              "type": "written",
+              "src": "",
+              "image": ""
+            }
+          ]
         },
         {
           "act": 5,
           "title": "The Tolpuddle Martyrs & The Right to Combine (1834)",
           "theme_heading": "The Tolpuddle Martyrs & The Right to Combine (1834)",
-          "text": "<span class=\"para-ref\">[4.5]</span> Terrified by the memory of the Swing Riots, landowners and the state treated any working-class solidarity as treason. In 1833, six agricultural labourers in the Dorset village of Tolpuddle, led by Methodist lay preacher <strong class=\"vocab-highlight\">George Loveless</strong>, founded the Friendly Society of Agricultural Labourers to resist wage cuts from nine shillings to six shillings a week. Although trade unions had been decriminalized in 1824, local magistrate James Frampton conspired with Home Secretary Melbourne to prosecute the men under an obscure 1797 statute designed to suppress naval mutinies: administering \"unlawful secret oaths\". At Dorchester Assizes in March 1834, the judge sentenced all six labourers to seven years’ penal transportation to Australia. Rather than crushing unionism, the injustice ignited national fury: over 100,000 trade unionists marched peacefully across London to present a mammoth petition of 250,000 signatures, compelling the government to grant full royal pardons within two years.",
+          "text": "<span class=\"para-ref\">[4.5]</span> Landowners and the state treated working-class solidarity as treason. In 1833, six Dorset farmworkers led by George Loveless formed a Friendly Society mutual aid group in Tolpuddle to resist wage cuts. Local magistrates used an obscure secret oaths law to sentence the **Tolpuddle Martyrs** to seven years' transportation. The injustice ignited national outrage: over 100,000 trade unionists staged massive London protest marches, successfully forcing the government to grant full royal pardons in 1836.",
           "source": {
             "letter": "E",
-            "title": "Source E: George Loveless, Statement upon Sentencing at Dorchester Assizes (March 1834)",
+            "title": "Source E (Trial Speech): George Loveless, Statement upon Sentencing at Dorchester Assizes (1834)",
             "context": "George Loveless was the leader of the Tolpuddle Martyrs—six Dorset agricultural labourers prosecuted under an obscure 1797 naval mutiny statute against unlawful oaths. **Hinge Question:** Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?",
             "hinge_question": "Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?",
             "text": "“We have injured no man’s reputation, character, person, or property. We were uniting together to preserve ourselves, our wives, and our children from utter starvation, having had our wages reduced from nine shillings to six shillings a week. We have violated no just law, and if we are to be transported for seeking an honest living, we submit to our fate in the firm belief that justice will one day prevail.”",
@@ -3189,219 +4067,300 @@ export default {
             "question_badge": "Cross-Referencing & Motive",
             "question": "Why did George Loveless insist that he and his fellow labourers had done nothing wrong when forming their union?",
             "enquiry_question": "Why did George Loveless insist that he and his fellow labourers had done nothing wrong when forming their union?",
-            "model_answer": "Loveless maintained they harmed no one's property and only banded together peacefully to stop their families starving after employers cut their wages."
-          }
+            "model_answer": "Loveless maintained they harmed no one's property and only banded together peacefully to stop their families starving after employers cut their wages.",
+            "source_context": "George Loveless was the leader of the Tolpuddle Martyrs—six Dorset agricultural labourers prosecuted under an obscure 1797 naval mutiny statute against unlawful oaths. **Hinge Question:** Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?",
+            "teacher_notes": {
+              "source_context": "George Loveless was the leader of the Tolpuddle Martyrs—six Dorset agricultural labourers prosecuted under an obscure 1797 naval mutiny statute against unlawful oaths. **Hinge Question:** Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?"
+            },
+            "id": "iae_l4_src_e",
+            "type": "written",
+            "src": "",
+            "image": ""
+          },
+          "sources": [
+            {
+              "letter": "E",
+              "title": "Source E (Trial Speech): George Loveless, Statement upon Sentencing at Dorchester Assizes (1834)",
+              "context": "George Loveless was the leader of the Tolpuddle Martyrs—six Dorset agricultural labourers prosecuted under an obscure 1797 naval mutiny statute against unlawful oaths. **Hinge Question:** Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?",
+              "hinge_question": "Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?",
+              "text": "“We have injured no man’s reputation, character, person, or property. We were uniting together to preserve ourselves, our wives, and our children from utter starvation, having had our wages reduced from nine shillings to six shillings a week. We have violated no just law, and if we are to be transported for seeking an honest living, we submit to our fate in the firm belief that justice will one day prevail.”",
+              "caption": "Source E: Statement written by Methodist lay preacher George Loveless on a scrap of paper before being shipped to an Australian penal colony.",
+              "question_badge": "Cross-Referencing & Motive",
+              "question": "Why did George Loveless insist that he and his fellow labourers had done nothing wrong when forming their union?",
+              "enquiry_question": "Why did George Loveless insist that he and his fellow labourers had done nothing wrong when forming their union?",
+              "model_answer": "Loveless maintained they harmed no one's property and only banded together peacefully to stop their families starving after employers cut their wages.",
+              "source_context": "George Loveless was the leader of the Tolpuddle Martyrs—six Dorset agricultural labourers prosecuted under an obscure 1797 naval mutiny statute against unlawful oaths. **Hinge Question:** Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?",
+              "teacher_notes": {
+                "source_context": "George Loveless was the leader of the Tolpuddle Martyrs—six Dorset agricultural labourers prosecuted under an obscure 1797 naval mutiny statute against unlawful oaths. **Hinge Question:** Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?"
+              },
+              "id": "iae_l4_src_e",
+              "type": "written",
+              "src": "",
+              "image": ""
+            }
+          ]
         }
       ],
       "quiz": [
         {
-          "question": "What repressive legislation, known as the 'Six Acts', did Parliament pass in response to the 1819 Peterloo Massacre?",
-          "q": "What repressive legislation, known as the 'Six Acts', did Parliament pass in response to the 1819 Peterloo Massacre?",
+          "question": "What mythical folklore leader was invoked by 1811–1816 textile craftsmen who smashed industrial shearing frames?",
+          "q": "What mythical folklore leader was invoked by 1811–1816 textile craftsmen who smashed industrial shearing frames?",
           "options": [
-            "A statute legalizing trade unions across northern manufacturing towns.",
-            "Laws banning unauthorized military drilling, taxing radical pamphlets, and prohibiting large meetings.",
-            "A law extending the right to vote to all urban factory workers.",
-            "An act abolishing the traditional property tax for rural peasants."
+            "General Ned Ludd",
+            "Captain Swing",
+            "John Bull",
+            "Oliver Cromwell"
           ],
-          "answer": "Laws banning unauthorized military drilling, taxing radical pamphlets, and prohibiting large meetings.",
-          "a": "Laws banning unauthorized military drilling, taxing radical pamphlets, and prohibiting large meetings.",
-          "explanation": "Fearing a French-style revolution, Lord Liverpool's government enacted the Six Acts (1819) to suppress political dissent, criminalize mass assemblies, and censor radical newspapers."
+          "answer": "General Ned Ludd",
+          "a": "General Ned Ludd",
+          "explanation": "Textile artisans broke into factories at night, smashing wide knitting frames in the name of mythical folk hero 'General Ned Ludd'."
         },
         {
-          "question": "Who was the radical orator whose speech on parliamentary reform at St Peter's Field in 1819 was interrupted by the Manchester Yeomanry charge?",
-          "q": "Who was the radical orator whose speech on parliamentary reform at St Peter's Field in 1819 was interrupted by the Manchester Yeomanry charge?",
+          "question": "What August 1819 atrocity in Manchester saw cavalry charge a peaceful crowd of 60,000 citizens demanding reform?",
+          "q": "What August 1819 atrocity in Manchester saw cavalry charge a peaceful crowd of 60,000 citizens demanding reform?",
           "options": [
-            "Robert Owen",
+            "Peterloo Massacre",
+            "Newport Rising",
+            "Swing Riots",
+            "Pentrich Rebellion"
+          ],
+          "answer": "Peterloo Massacre",
+          "a": "Peterloo Massacre",
+          "explanation": "At St Peter's Field in Manchester, magistrates unleashed the cavalry on peaceful reform protesters, killing 18 and injuring over 650."
+        },
+        {
+          "question": "What pseudonym was signed on threatening letters sent to Hampshire farmers during the 1830 agricultural riots?",
+          "q": "What pseudonym was signed on threatening letters sent to Hampshire farmers during the 1830 agricultural riots?",
+          "options": [
+            "Captain Swing",
+            "General Ludd",
+            "The Black Hand",
+            "Robin Hood"
+          ],
+          "answer": "Captain Swing",
+          "a": "Captain Swing",
+          "explanation": "Desperate farm labourers smashed threshing machines and torched hayricks, signing their warning letters with the alias 'Captain Swing'."
+        },
+        {
+          "question": "Where were over 300 Hampshire Swing Rioters tried in December 1830, resulting in executions and mass transportation?",
+          "q": "Where were over 300 Hampshire Swing Rioters tried in December 1830, resulting in executions and mass transportation?",
+          "options": [
+            "Winchester Special Assizes",
+            "Old Bailey",
+            "Portsmouth Guildhall",
+            "Southampton Castle"
+          ],
+          "answer": "Winchester Special Assizes",
+          "a": "Winchester Special Assizes",
+          "explanation": "A Special Commission of judges sat at Winchester Great Hall, sentencing six men to hang and transporting over 100 agricultural labourers to Australia."
+        },
+        {
+          "question": "What group of six Dorset farm labourers led by George Loveless was sentenced to seven years' transportation in 1834?",
+          "q": "What group of six Dorset farm labourers led by George Loveless was sentenced to seven years' transportation in 1834?",
+          "options": [
+            "Tolpuddle Martyrs",
+            "Hampshire Rebels",
+            "Luddite Six",
+            "Manchester Martyrs"
+          ],
+          "answer": "Tolpuddle Martyrs",
+          "a": "Tolpuddle Martyrs",
+          "explanation": "Led by Methodist preacher George Loveless, the six labourers formed a friendly society to resist wage cuts and were convicted under an obscure oath law."
+        },
+        {
+          "question": "Why did 19th-century Luddites break into factories at night to smash wide knitting frames?",
+          "q": "Why did 19th-century Luddites break into factories at night to smash wide knitting frames?",
+          "options": [
+            "wide knitting frames",
+            "steam locomotive boilers",
+            "cast-iron anchor chains",
+            "stone grinding wheels"
+          ],
+          "answer": "wide knitting frames",
+          "a": "wide knitting frames",
+          "explanation": "Skilled hand framework knitters smashed wide knitting frames that flooded the market with cheap, shoddy hosiery."
+        },
+        {
+          "question": "What 1812 capital statute made the destruction of industrial textile machinery punishable by hanging?",
+          "q": "What 1812 capital statute made the destruction of industrial textile machinery punishable by hanging?",
+          "options": [
+            "Frame Breaking Act",
+            "Riot Act",
+            "Six Acts",
+            "Combinations Act"
+          ],
+          "answer": "Frame Breaking Act",
+          "a": "Frame Breaking Act",
+          "explanation": "Parliament enacted the 1812 Frame Breaking Act, making machine breaking a capital offence punishable by public hanging."
+        },
+        {
+          "question": "What radical orator wearing a white top hat was addressing the crowd at St Peter's Field when the cavalry attacked?",
+          "q": "What radical orator wearing a white top hat was addressing the crowd at St Peter's Field when the cavalry attacked?",
+          "options": [
+            "Henry Hunt",
             "William Lovett",
             "Feargus O'Connor",
-            "Henry 'Orator' Hunt"
+            "Thomas Paine"
           ],
-          "answer": "Henry 'Orator' Hunt",
-          "a": "Henry 'Orator' Hunt",
-          "explanation": "Henry Hunt was Britain's most famous radical speaker, known for his signature white top hat and fiery speeches demanding universal suffrage and the repeal of the Corn Laws."
+          "answer": "Henry Hunt",
+          "a": "Henry Hunt",
+          "explanation": "Radical orator Henry Hunt was addressing the orderly crowd on parliamentary reform when yeomanry cavalry charged."
         },
         {
-          "question": "Which London cabinet-maker and radical activist drafted the six points of the 'People's Charter' in 1838?",
-          "q": "Which London cabinet-maker and radical activist drafted the six points of the 'People's Charter' in 1838?",
+          "question": "What repressive legislation did Lord Liverpool's government pass immediately following the Peterloo Massacre in 1819?",
+          "q": "What repressive legislation did Lord Liverpool's government pass immediately following the Peterloo Massacre in 1819?",
           "options": [
-            "William Lovett",
+            "Six Acts",
+            "Ten Hours Act",
+            "Great Reform Act",
+            "Factory Act"
+          ],
+          "answer": "Six Acts",
+          "a": "Six Acts",
+          "explanation": "The government cracked down with the repressive Six Acts, banning unauthorised gatherings of over fifty people and taxing radical journals."
+        },
+        {
+          "question": "What farm machinery deprived agricultural labourers of winter threshing wages, sparking the Captain Swing riots?",
+          "q": "What farm machinery deprived agricultural labourers of winter threshing wages, sparking the Captain Swing riots?",
+          "options": [
+            "threshing machines",
+            "seed drills",
+            "steam tractors",
+            "iron ploughs"
+          ],
+          "answer": "threshing machines",
+          "a": "threshing machines",
+          "explanation": "The introduction of horse- and water-powered mechanical threshing machines eliminated vital winter work for labourers."
+        },
+        {
+          "question": "In which Hampshire rural parish did a crowd of 300 agricultural labourers dismantle a parish workhouse in November 1830?",
+          "q": "In which Hampshire rural parish did a crowd of 300 agricultural labourers dismantle a parish workhouse in November 1830?",
+          "options": [
+            "Headley",
+            "Fareham",
+            "Winchester",
+            "Portsmouth"
+          ],
+          "answer": "Headley",
+          "a": "Headley",
+          "explanation": "At Headley, a crowd of 300 labourers systematically dismantled the harsh parish workhouse, demanding a living wage."
+        },
+        {
+          "question": "What nineteen-year-old Micheldever ploughboy was executed at Winchester in 1831 for striking Bingham Baring?",
+          "q": "What nineteen-year-old Micheldever ploughboy was executed at Winchester in 1831 for striking Bingham Baring?",
+          "options": [
+            "Henry Cook",
             "George Loveless",
-            "Edwin Chadwick",
-            "Arthur Wellesley"
+            "Matthew Crabtree",
+            "Ned Ludd"
           ],
-          "answer": "William Lovett",
-          "a": "William Lovett",
-          "explanation": "William Lovett co-founded the London Working Men's Association and authored the 1838 People's Charter, advocating moral force and peaceful constitutional petitions to secure working-class voting rights."
+          "answer": "Henry Cook",
+          "a": "Henry Cook",
+          "explanation": "Nineteen-year-old Micheldever ploughboy Henry Cook was hanged at Winchester Gaol for striking wealthy magistrate Bingham Baring."
         },
         {
-          "question": "In the early 19th century, who completely controlled the British Parliament?",
+          "question": "Under what obscure 1797 statute were the Tolpuddle Martyrs convicted for forming their friendly society?",
+          "q": "Under what obscure 1797 statute were the Tolpuddle Martyrs convicted for forming their friendly society?",
           "options": [
-            "The working class",
-            "Trade Union leaders",
-            "Wealthy landowners",
-            "The middle-class factory workers"
+            "unlawful secret oaths",
+            "armed treason",
+            "industrial sabotage",
+            "vagrancy and trespass"
           ],
-          "answer": "Wealthy landowners"
+          "answer": "unlawful secret oaths",
+          "a": "unlawful secret oaths",
+          "explanation": "Magistrates prosecuted the men under an obscure 1797 statute designed to suppress naval mutinies: administering 'unlawful secret oaths'."
         },
         {
-          "question": "What did the 60,000 peaceful protestors at St Peter's Field in Manchester demand in August 1819?",
+          "question": "Where were the six Tolpuddle Martyrs sentenced to serve seven years' hard penal labour?",
+          "q": "Where were the six Tolpuddle Martyrs sentenced to serve seven years' hard penal labour?",
           "options": [
-            "Parliamentary reform and affordable food.",
-            "Higher wages and shorter working hours.",
-            "The destruction of all mechanical threshing machines.",
-            "The abolition of the East India Company."
+            "Australia",
+            "Canada",
+            "Bermuda",
+            "Gibraltar"
           ],
-          "answer": "Parliamentary reform and affordable food."
+          "answer": "Australia",
+          "a": "Australia",
+          "explanation": "At Dorchester Assizes in March 1834, the judge sentenced all six Tolpuddle Martyrs to seven years’ penal transportation to Australia."
         },
         {
-          "question": "How did the state respond to the peaceful gathering at St Peter's Field in 1819?",
+          "question": "What was the name of the agricultural trade union established by George Loveless in Dorset in 1833?",
+          "q": "What was the name of the agricultural trade union established by George Loveless in Dorset in 1833?",
           "options": [
-            "They agreed to pass a new Reform Act immediately.",
-            "They ignored the protestors until they went home.",
-            "Local magistrates panicked and ordered cavalry to charge into the crowd with sabers.",
-            "They arrested the leaders but allowed the crowd to continue protesting."
+            "Friendly Society of Agricultural Labourers",
+            "Grand National Trade Union",
+            "National Union of Miners",
+            "Chartist Association"
           ],
-          "answer": "Local magistrates panicked and ordered cavalry to charge into the crowd with sabers."
+          "answer": "Friendly Society of Agricultural Labourers",
+          "a": "Friendly Society of Agricultural Labourers",
+          "explanation": "Six agricultural labourers in Tolpuddle founded the Friendly Society of Agricultural Labourers to resist wage cuts."
         },
         {
-          "question": "Why did radicals ironically name the tragic 1819 event the 'Peterloo Massacre'?",
+          "question": "How many trade unionists marched peacefully across London to present a 250,000-signature petition for the Tolpuddle Martyrs?",
+          "q": "How many trade unionists marched peacefully across London to present a 250,000-signature petition for the Tolpuddle Martyrs?",
           "options": [
-            "Because it took place near a famous waterloo station in Manchester.",
-            "To compare the violent slaughter of citizens to the famous military victory at Waterloo.",
-            "Because the leader of the protest was named Peter.",
-            "Because it occurred on St Peter's Day during a heavy rainstorm."
+            "over 100,000",
+            "5,000",
+            "20,000",
+            "500"
           ],
-          "answer": "To compare the violent slaughter of citizens to the famous military victory at Waterloo."
+          "answer": "over 100,000",
+          "a": "over 100,000",
+          "explanation": "Over 100,000 trade unionists marched peacefully across London to present a mammoth petition of 250,000 signatures, securing royal pardons."
         },
         {
-          "question": "What technological change caused winter unemployment and starvation for agricultural laborers in 1830?",
+          "question": "What weapon did magistrates unleash against unarmed men, women, and children at St Peter's Field in Manchester?",
+          "q": "What weapon did magistrates unleash against unarmed men, women, and children at St Peter's Field in Manchester?",
           "options": [
-            "The invention of the steam train.",
-            "The widespread use of chemical fertilizers.",
-            "The shift from farming to factory work in the cities.",
-            "The introduction of mechanical threshing machines."
+            "cavalry sabres",
+            "musket volleys",
+            "water cannons",
+            "tear gas"
           ],
-          "answer": "The introduction of mechanical threshing machines."
+          "answer": "cavalry sabres",
+          "a": "cavalry sabres",
+          "explanation": "The Manchester Yeomanry cavalry drew sabres and charged galloping into the dense gathering, cutting down peaceful citizens."
         },
         {
-          "question": "What was the name of the violent agrarian uprising in southern England in 1830?",
+          "question": "How many peaceful demonstrators were killed during the Peterloo Massacre in August 1819?",
+          "q": "How many peaceful demonstrators were killed during the Peterloo Massacre in August 1819?",
           "options": [
-            "The Swing Riots",
-            "The Luddite Rebellion",
-            "The Peterloo Riots",
-            "The Tolpuddle Uprising"
+            "eighteen",
+            "two",
+            "five hundred",
+            "fifty"
           ],
-          "answer": "The Swing Riots"
+          "answer": "eighteen",
+          "a": "eighteen",
+          "explanation": "Eighteen peaceful reformers were slaughtered and over 650 sustained horrific sabre wounds and trampling injuries."
         },
         {
-          "question": "Who was 'Captain Swing'?",
+          "question": "What wage cut provoked George Loveless and the Tolpuddle labourers to form their friendly society?",
+          "q": "What wage cut provoked George Loveless and the Tolpuddle labourers to form their friendly society?",
           "options": [
-            "A real military officer who led the agricultural rebellion.",
-            "The wealthy landowner who invented the threshing machine.",
-            "A mythical, pseudonymous leader used by rioters to send anonymous threats.",
-            "The judge who sentenced the rioters at Winchester Castle."
+            "wage cuts from nine shillings to six shillings",
+            "a reduction of fifty percent in food rations",
+            "the loss of free cottage housing",
+            "refusal of overtime pay on Sundays"
           ],
-          "answer": "A mythical, pseudonymous leader used by rioters to send anonymous threats."
+          "answer": "wage cuts from nine shillings to six shillings",
+          "a": "wage cuts from nine shillings to six shillings",
+          "explanation": "The labourers founded the Friendly Society of Agricultural Labourers to resist wage cuts from nine shillings to six shillings a week."
         },
         {
-          "question": "How did the government punish the Hampshire workers involved in the 1830 riots?",
+          "question": "What local Dorset magistrate conspired with the Home Secretary to arrest and prosecute the Tolpuddle labourers?",
+          "q": "What local Dorset magistrate conspired with the Home Secretary to arrest and prosecute the Tolpuddle labourers?",
           "options": [
-            "They were all given a small fine and warned not to do it again.",
-            "They were forced to rebuild the threshing machines.",
-            "They were sent to work in the factories of northern England.",
-            "Over 100 were tried at Winchester, 6 were executed, and hundreds were transported to Australia."
+            "James Frampton",
+            "Bingham Baring",
+            "Michael Sadler",
+            "Francis Place"
           ],
-          "answer": "Over 100 were tried at Winchester, 6 were executed, and hundreds were transported to Australia."
-        },
-        {
-          "question": "What strategy did working-class men explore after realizing violent property destruction resulted in execution or exile?",
-          "options": [
-            "They decided to stop protesting entirely and accept low wages.",
-            "They began exploring collective bargaining through Trade Unions.",
-            "They started breaking machines exclusively during the daytime.",
-            "They all moved to America to find better farming jobs."
-          ],
-          "answer": "They began exploring collective bargaining through Trade Unions."
-        },
-        {
-          "question": "Why did the six agricultural laborers in Tolpuddle form a friendly society in 1834?",
-          "options": [
-            "To overthrow the King.",
-            "To protest a wage cut and force employers to pay fair wages.",
-            "To build their own threshing machines.",
-            "To raise money to travel to London."
-          ],
-          "answer": "To protest a wage cut and force employers to pay fair wages."
-        },
-        {
-          "question": "What obscure 1797 law did the government use to arrest the Tolpuddle Martyrs?",
-          "options": [
-            "A law banning unlawful secret oaths.",
-            "A law banning the destruction of farm equipment.",
-            "A law banning all forms of public gatherings.",
-            "A law banning workers from leaving their village without permission."
-          ],
-          "answer": "A law banning unlawful secret oaths."
-        },
-        {
-          "question": "What was the initial sentence given to the Tolpuddle Martyrs?",
-          "options": [
-            "Execution by hanging.",
-            "Life in a British prison.",
-            "A large financial fine.",
-            "Seven years' transportation to Australia."
-          ],
-          "answer": "Seven years' transportation to Australia."
-        },
-        {
-          "question": "By 1838, what did working-class leaders realize was the only way to permanently change factory conditions and low wages?",
-          "options": [
-            "Continuing to burn down hayricks and break machines.",
-            "Asking the King to personally intervene on their behalf.",
-            "Achieving structural constitutional reform so working-class men could sit in Parliament.",
-            "Moving out of the cities and back to the countryside."
-          ],
-          "answer": "Achieving structural constitutional reform so working-class men could sit in Parliament."
-        },
-        {
-          "question": "What was the name of the first mass working-class democratic movement in British history launched in 1838?",
-          "options": [
-            "The Suffragettes",
-            "The Luddites",
-            "Chartism",
-            "The Trade Union Congress"
-          ],
-          "answer": "Chartism"
-        },
-        {
-          "question": "Which of the following was NOT one of the six core demands of the People's Charter?",
-          "options": [
-            "Universal male suffrage (the right to vote).",
-            "Secret ballots to stop voter intimidation.",
-            "Salaries for MPs so poor men could run for office.",
-            "Equal pay for men and women."
-          ],
-          "answer": "Equal pay for men and women."
-        },
-        {
-          "question": "What action did the Chartists take to pressure Parliament into accepting their demands?",
-          "options": [
-            "They gathered millions of signatures on three mammoth petitions in 1839, 1842, and 1848.",
-            "They kidnapped several wealthy Members of Parliament.",
-            "They set fire to the Houses of Parliament.",
-            "They bought all the threshing machines in England and destroyed them."
-          ],
-          "answer": "They gathered millions of signatures on three mammoth petitions in 1839, 1842, and 1848."
-        },
-        {
-          "question": "Although Parliament rejected all the Chartist petitions at the time, what was the movement's long-term legacy?",
-          "options": [
-            "It proved that working-class people could never organize effectively.",
-            "By 1928, five of its six democratic demands had slowly become the law of the land.",
-            "It caused the government to ban all political parties permanently.",
-            "It forced the British establishment to immediately hand over power in 1848."
-          ],
-          "answer": "By 1928, five of its six democratic demands had slowly become the law of the land."
+          "answer": "James Frampton",
+          "a": "James Frampton",
+          "explanation": "Local magistrate James Frampton conspired with Home Secretary Melbourne to prosecute the men under the 1797 statute."
         }
       ],
       "hook_text": "In 1830, threatening letters signed by the mysterious 'Captain Swing' arrived at manor houses across southern England. Starving farm labourers, displaced by mechanical threshing machines, assembled at midnight with hammers and firebrands. As burning hayricks lit the night sky, landowners panicked. Why did rural workers risk the gallows to smash farm machinery?",
@@ -3532,7 +4491,7 @@ export default {
       "sources": [
         {
           "letter": "A",
-          "title": "Source A: Declaration of General Ned Ludd to the Framework Knitters (Nottinghamshire, 1811)",
+          "title": "Source A (Rebel Declaration): Declaration of General Ned Ludd to the Framework Knitters (1811)",
           "context": "Contemporary warning handbill delivered to stocking manufacturers in Nottinghamshire during the height of the 1811 machine-breaking raids. **Hinge Question:** Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?",
           "hinge_question": "Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?",
           "text": "“Whereas it hath been represented to General Ludd that certain masters have introduced wide frames for making stockings, reducing prices and manufacturing deceitful goods to the ruin of the trade: We do hereby give notice to all such masters, that if they do not immediately take down such frames, General Ludd and his army will break and destroy the same without mercy. By order of the Well-Wisher to the Industrious Poor, General Ned Ludd.”",
@@ -3544,11 +4503,15 @@ export default {
           "source_context": "Contemporary warning handbill delivered to stocking manufacturers in Nottinghamshire during the height of the 1811 machine-breaking raids. **Hinge Question:** Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?",
           "teacher_notes": {
             "source_context": "Contemporary warning handbill delivered to stocking manufacturers in Nottinghamshire during the height of the 1811 machine-breaking raids. **Hinge Question:** Why did skilled handloom weavers direct their rage at the machinery rather than solely demanding higher wages from factory owners?"
-          }
+          },
+          "id": "iae_l4_src_a",
+          "type": "written",
+          "src": "",
+          "image": ""
         },
         {
           "letter": "B",
-          "title": "Source B: George Cruikshank, The Massacre of Peterloo or Britains in Search of Liberty (1819)",
+          "title": "Source B (Satirical Print): George Cruikshank, The Massacre of Peterloo (1819)",
           "context": "George Cruikshank’s scathing satirical print attacked the Manchester magistrates and Yeomanry cavalry who charged 60,000 peaceful protesters listening to Henry Hunt. **Hinge Question:** How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?",
           "hinge_question": "How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?",
           "text": "“Down with ’em! Chop ’em down, my brave boys! Give them no quarter! Remember, the more you kill, the less poor rates you will have to pay!”\n— Caption to Cruikshank’s satirical engraving, capturing the public outrage over the cavalry assault at St Peter’s Field.",
@@ -3556,7 +4519,7 @@ export default {
           "image": "/images/peterloo_massacre_cruikshank.jpg",
           "src": "/images/peterloo_massacre_cruikshank.jpg",
           "source": "/images/peterloo_massacre_cruikshank.jpg",
-          "id": "source_b_peterloo_massacre",
+          "id": "iae_l4_src_b",
           "question_badge": "Historical Significance",
           "question": "Why did George Cruikshank portray the Manchester Yeomanry cavalry as bloodthirsty murderers attacking innocent families?",
           "enquiry_question": "Why did George Cruikshank portray the Manchester Yeomanry cavalry as bloodthirsty murderers attacking innocent families?",
@@ -3564,11 +4527,12 @@ export default {
           "source_context": "George Cruikshank’s scathing satirical print attacked the Manchester magistrates and Yeomanry cavalry who charged 60,000 peaceful protesters listening to Henry Hunt. **Hinge Question:** How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?",
           "teacher_notes": {
             "source_context": "George Cruikshank’s scathing satirical print attacked the Manchester magistrates and Yeomanry cavalry who charged 60,000 peaceful protesters listening to Henry Hunt. **Hinge Question:** How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?"
-          }
+          },
+          "type": "visual"
         },
         {
           "letter": "C",
-          "title": "Source C: The Threat of Captain Swing (National Archives HO 52/6, November 1830)",
+          "title": "Source C (Archival Document): The Threat of Captain Swing (National Archives HO 52/6, 1830)",
           "context": "Authentic threatening letter preserved in the Home Office records at The National Archives, Kew (HO 52/6). Between October and December 1830, anonymous handwritten notices signed \"Captain Swing\" were delivered to Hampshire squires, parsons, and magistrates, warning that barns and hayricks would be burned if wages were not raised and threshing machines destroyed.",
           "hinge_question": "Why did agricultural labourers invoke a mythical military commander (\"Captain Swing\") rather than naming real village leaders?",
           "image": "/images/captain_swing_letter.jpg",
@@ -3581,11 +4545,14 @@ export default {
           "source_context": "Authentic threatening letter preserved in the Home Office records at The National Archives, Kew (HO 52/6). Between October and December 1830, anonymous handwritten notices signed \"Captain Swing\" were delivered to Hampshire squires, parsons, and magistrates, warning that barns and hayricks would be burned if wages were not raised and threshing machines destroyed. **Hinge Question:** Why did agricultural labourers invoke a mythical military commander (\"Captain Swing\") rather than naming real village leaders?",
           "teacher_notes": {
             "source_context": "Authentic threatening letter preserved in the Home Office records at The National Archives, Kew (HO 52/6). Between October and December 1830, anonymous handwritten notices signed \"Captain Swing\" were delivered to Hampshire squires, parsons, and magistrates, warning that barns and hayricks would be burned if wages were not raised and threshing machines destroyed. **Hinge Question:** Why did agricultural labourers invoke a mythical military commander (\"Captain Swing\") rather than naming real village leaders?"
-          }
+          },
+          "id": "iae_l4_src_c",
+          "type": "visual",
+          "src": "/images/captain_swing_letter.jpg"
         },
         {
           "letter": "D",
-          "title": "Source D: Contemporary Report of the Winchester Special Assizes (Hampshire Chronicle, December 1830)",
+          "title": "Source D (Newspaper Record): Contemporary Report of the Winchester Special Assizes (Hampshire Chronicle, 1830)",
           "context": "Newspaper report published in the Hampshire Chronicle during the Special Commission trials in Winchester Castle’s Great Hall.",
           "hinge_question": "Why did the British state choose transportation to Australia rather than imprisonment inside local English county gaols?",
           "text": "“The Special Assizes at Winchester concluded this week. The sentences passed upon the rioters who have disturbed the peace of this county demonstrate that His Majesty’s government will tolerate no acts of insubordination or destruction of property. Six prisoners have received sentence of death, and upwards of one hundred are to be transported beyond the seas for life or for fourteen years. It is hoped that this severe example will restore tranquility to our agricultural districts.”",
@@ -3597,11 +4564,15 @@ export default {
           "source_context": "Newspaper report published in the Hampshire Chronicle during the Special Commission trials in Winchester Castle’s Great Hall. **Hinge Question:** Why did the British state choose transportation to Australia rather than imprisonment inside local English county gaols?",
           "teacher_notes": {
             "source_context": "Newspaper report published in the Hampshire Chronicle during the Special Commission trials in Winchester Castle’s Great Hall. **Hinge Question:** Why did the British state choose transportation to Australia rather than imprisonment inside local English county gaols?"
-          }
+          },
+          "id": "iae_l4_src_d",
+          "type": "written",
+          "src": "",
+          "image": ""
         },
         {
           "letter": "E",
-          "title": "Source E: George Loveless, Statement upon Sentencing at Dorchester Assizes (March 1834)",
+          "title": "Source E (Trial Speech): George Loveless, Statement upon Sentencing at Dorchester Assizes (1834)",
           "context": "George Loveless was the leader of the Tolpuddle Martyrs—six Dorset agricultural labourers prosecuted under an obscure 1797 naval mutiny statute against unlawful oaths. **Hinge Question:** Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?",
           "hinge_question": "Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?",
           "text": "“We have injured no man’s reputation, character, person, or property. We were uniting together to preserve ourselves, our wives, and our children from utter starvation, having had our wages reduced from nine shillings to six shillings a week. We have violated no just law, and if we are to be transported for seeking an honest living, we submit to our fate in the firm belief that justice will one day prevail.”",
@@ -3613,7 +4584,11 @@ export default {
           "source_context": "George Loveless was the leader of the Tolpuddle Martyrs—six Dorset agricultural labourers prosecuted under an obscure 1797 naval mutiny statute against unlawful oaths. **Hinge Question:** Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?",
           "teacher_notes": {
             "source_context": "George Loveless was the leader of the Tolpuddle Martyrs—six Dorset agricultural labourers prosecuted under an obscure 1797 naval mutiny statute against unlawful oaths. **Hinge Question:** Why did the British government treat the formation of a peaceful agricultural trade union as an act of treason?"
-          }
+          },
+          "id": "iae_l4_src_e",
+          "type": "written",
+          "src": "",
+          "image": ""
         }
       ],
       "exam_practice": {
@@ -3979,27 +4954,45 @@ export default {
       "vocab": [
         {
           "term": "Rotten Borough",
-          "definition": "An ancient electoral constituency with a tiny handful of voters (or none at all) that still returned two Members of Parliament to the House of Commons."
+          "definition": "An ancient electoral constituency with a tiny handful of voters (or none at all) that still returned two Members of Parliament to the House of Commons.",
+          "syllables": "Ro-tten Bo-rough",
+          "phonetic": "rotten borough",
+          "tier": "3"
         },
         {
           "term": "Pocket Borough",
-          "definition": "A parliamentary seat completely controlled (\"in the pocket of\") a single aristocratic patron who dictated who won the election."
+          "definition": "A parliamentary seat completely controlled (\"in the pocket of\") a single aristocratic patron who dictated who won the election.",
+          "syllables": "Po-cket Bo-rough",
+          "phonetic": "pocket borough",
+          "tier": "3"
         },
         {
           "term": "1832 Great Reform Act",
-          "definition": "The landmark legislation that abolished 56 rotten boroughs, redistributed seats to industrial cities, and lowered property voting qualifications."
+          "definition": "The landmark legislation that abolished 56 rotten boroughs, redistributed seats to industrial cities, and lowered property voting qualifications.",
+          "syllables": "1832 Great Re-form Act",
+          "phonetic": "1832 great reform act",
+          "tier": "3"
         },
         {
           "term": "Secret Ballot Act 1872",
-          "definition": "The law requiring all parliamentary votes to be cast privately in voting booths on printed ballot papers, eliminating open-air bribery and coercion."
+          "definition": "The law requiring all parliamentary votes to be cast privately in voting booths on printed ballot papers, eliminating open-air bribery and coercion.",
+          "syllables": "Se-cret Ba-llot Act 1872",
+          "phonetic": "secret ballot act 1872",
+          "tier": "3"
         },
         {
           "term": "Hustings",
-          "definition": "The open-air wooden platforms where parliamentary candidates were nominated and voters declared their votes publicly before cheering or jeering crowds."
+          "definition": "The open-air wooden platforms where parliamentary candidates were nominated and voters declared their votes publicly before cheering or jeering crowds.",
+          "syllables": "Hu-stings",
+          "phonetic": "hustings",
+          "tier": "3"
         },
         {
           "term": "Franchise Expansion",
-          "definition": "The gradual parliamentary extension of voting rights from wealthy landowners (pre-1832) to urban workers (1867) and agricultural laborers (1884)."
+          "definition": "The gradual parliamentary extension of voting rights from wealthy landowners (pre-1832) to urban workers (1867) and agricultural laborers (1884).",
+          "syllables": "Fra-nchi-se E-xpansion",
+          "phonetic": "franchise expansion",
+          "tier": "3"
         }
       ],
       "narrative_blocks": [
@@ -4007,10 +5000,10 @@ export default {
           "act": 1,
           "title": "The Rotten Oligarchy: Old Sarum & The Unrepresented Cities (1800–1830)",
           "theme_heading": "The Rotten Oligarchy: Old Sarum & The Unrepresented Cities (1800–1830)",
-          "text": "<span class=\"para-ref\">[5.1]</span> In 1830, Britain claimed to be the cradle of parliamentary liberty, but less than 5% of adult males could vote. Parliamentary seats were frozen in a medieval time warp. Dozens of <strong class=\"vocab-highlight\">rotten boroughs</strong> <small class=\"vocab-gloss\">(depopulated boroughs controlled by wealthy aristocratic patrons)</small> sent two MPs to Westminster: Old Sarum in Wiltshire was a deserted grass mound with three houses and seven voters, while Dunwich had eroded into the North Sea. In contrast, colossal industrial powerhouses like Manchester, Birmingham, and Leeds, home to over a million combined factory workers and merchants, did not have a single Member of Parliament.",
+          "text": "<span class=\"para-ref\">[5.1]</span> In 1830, an under-five-percent electorate of wealthy landowners controlled British parliamentary politics. Parliamentary seats were frozen in a medieval pattern: depopulated Old Sarum & Newtown rotten boroughs with virtually no residents returned two MPs each, while unrepresented industrial cities like Manchester, Birmingham, and Leeds, home to over a million factory workers and merchants, had zero Members of Parliament.",
           "source": {
             "letter": "A",
-            "title": "Source A: Parliamentary Representation Map of England & Wales & Unreformed Boroughs (1832)",
+            "title": "Source A (Cartographic Record): Parliamentary Representation Map of Rotten Boroughs (1832)",
             "context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
             "hinge_question": "Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
             "image": "/images/map_rotten_boroughs.jpg",
@@ -4018,17 +5011,45 @@ export default {
             "question_badge": "Source Inference",
             "question": "What does this map suggest about how unfair the British voting system was before the 1832 Reform Act?",
             "enquiry_question": "What does this map suggest about how unfair the British voting system was before the 1832 Reform Act?",
-            "model_answer": "The map shows that tiny southern villages with few residents had dozens of MPs, while huge new industrial cities like Manchester and Birmingham had none at all."
-          }
+            "model_answer": "The map shows that tiny southern villages with few residents had dozens of MPs, while huge new industrial cities like Manchester and Birmingham had none at all.",
+            "source_context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
+            "teacher_notes": {
+              "source_context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?"
+            },
+            "id": "iae_l5_src_a",
+            "type": "visual",
+            "src": "/images/map_rotten_boroughs.jpg"
+          },
+          "sources": [
+            {
+              "letter": "A",
+              "title": "Source A (Cartographic Record): Parliamentary Representation Map of Rotten Boroughs (1832)",
+              "context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
+              "hinge_question": "Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
+              "image": "/images/map_rotten_boroughs.jpg",
+              "caption": "Source A: Historical map illustrating the distribution of parliamentary seats before 1832, showing the heavy concentration of rotten boroughs in southern coastal counties.",
+              "question_badge": "Source Inference",
+              "question": "What does this map suggest about how unfair the British voting system was before the 1832 Reform Act?",
+              "enquiry_question": "What does this map suggest about how unfair the British voting system was before the 1832 Reform Act?",
+              "model_answer": "The map shows that tiny southern villages with few residents had dozens of MPs, while huge new industrial cities like Manchester and Birmingham had none at all.",
+              "source_context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
+              "teacher_notes": {
+                "source_context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?"
+              },
+              "id": "iae_l5_src_a",
+              "type": "visual",
+              "src": "/images/map_rotten_boroughs.jpg"
+            }
+          ]
         },
         {
           "act": 2,
           "title": "Bristol in Flames & The Days of May (1831–1832)",
           "theme_heading": "Bristol in Flames & The Days of May (1831–1832)",
-          "text": "<span class=\"para-ref\">[5.2]</span> When the unelected House of Lords rejected the Whig government's Reform Bill in October 1831, revolutionary rioting engulfed the country. In Bristol, a furious crowd burned the Bishop's Palace, the Mansion House, and three gaols to ashes. During the tense <strong>\"Days of May\"</strong> in 1832, radical reformer Francis Place coordinated a financial strike, distributing posters reading <em>\"To stop the Duke, go for gold!\"</em> Panic-stricken citizens withdrew £1.6 million in gold sovereigns from the Bank of England in days. Faced with imminent economic paralysis and armed uprising, King William IV agreed to flood the House of Lords with pro-reform peers, forcing the Tories to surrender and pass the Bill.",
+          "text": "<span class=\"para-ref\">[5.2]</span> When the House of Lords rejected the 1831 Reform Bill, the Bristol Reform riots & fires destroyed the Bishop's Palace and Queen Square. In May 1832, radical Francis Place coordinated a financial protest with the slogan 'To stop the Duke, go for gold!', triggering a bank run gold panic that drained £1.6m from the Bank of England in days. Faced with revolution, the King agreed to create pro-reform peers, forcing Tory House of Lords surrender.",
           "source": {
             "letter": "B",
-            "title": "Source B: The School of Reform (Satirical Lithograph on the 1832 Reform Bill)",
+            "title": "Source B (Satirical Print): The School of Reform (Satirical Lithograph on the 1832 Reform Bill)",
             "context": "Contemporary satirical print published by S. Gans (May 1831) during the national debate over the Great Reform Act. Prime Minister Earl Grey stands at the classroom lectern drilling anti-reform Tory politicians to conjugate \"the verb to reform\", while Lord Chancellor Brougham brandishes a giant birch rod and the Duke of Wellington weeps in a dunce’s cap (\"I cant Reform\"). **Hinge Question:** How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?",
             "hinge_question": "How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?",
             "image": "/images/school_of_reform.jpg",
@@ -4036,38 +5057,96 @@ export default {
             "question_badge": "Symbolism & Social Satire",
             "question": "Why did the cartoonist draw the Duke of Wellington wearing a dunce's cap inside a classroom?",
             "enquiry_question": "Why did the cartoonist draw the Duke of Wellington wearing a dunce's cap inside a classroom?",
-            "model_answer": "The cartoonist made Wellington wear a dunce's cap to mock him for foolishly refusing to accept that Britain desperately needed political reform."
-          }
+            "model_answer": "The cartoonist made Wellington wear a dunce's cap to mock him for foolishly refusing to accept that Britain desperately needed political reform.",
+            "source_context": "Contemporary satirical print published by S. Gans (May 1831) during the national debate over the Great Reform Act. Prime Minister Earl Grey stands at the classroom lectern drilling anti-reform Tory politicians to conjugate \"the verb to reform\", while Lord Chancellor Brougham brandishes a giant birch rod and the Duke of Wellington weeps in a dunce’s cap (\"I cant Reform\"). **Hinge Question:** How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?",
+            "teacher_notes": {
+              "source_context": "Contemporary satirical print published by S. Gans (May 1831) during the national debate over the Great Reform Act. Prime Minister Earl Grey stands at the classroom lectern drilling anti-reform Tory politicians to conjugate \"the verb to reform\", while Lord Chancellor Brougham brandishes a giant birch rod and the Duke of Wellington weeps in a dunce’s cap (\"I cant Reform\"). **Hinge Question:** How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?"
+            },
+            "id": "iae_l5_src_b",
+            "type": "visual",
+            "src": "/images/school_of_reform.jpg"
+          },
+          "sources": [
+            {
+              "letter": "B",
+              "title": "Source B (Satirical Print): The School of Reform (Satirical Lithograph on the 1832 Reform Bill)",
+              "context": "Contemporary satirical print published by S. Gans (May 1831) during the national debate over the Great Reform Act. Prime Minister Earl Grey stands at the classroom lectern drilling anti-reform Tory politicians to conjugate \"the verb to reform\", while Lord Chancellor Brougham brandishes a giant birch rod and the Duke of Wellington weeps in a dunce’s cap (\"I cant Reform\"). **Hinge Question:** How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?",
+              "hinge_question": "How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?",
+              "image": "/images/school_of_reform.jpg",
+              "caption": "Source B: S. Gans (May 1831): \"The School of Reform: Conjugation of the Verb to Reform\", depicting Earl Grey forcing Tory opponents of the Reform Bill into submission (British Museum).",
+              "question_badge": "Symbolism & Social Satire",
+              "question": "Why did the cartoonist draw the Duke of Wellington wearing a dunce's cap inside a classroom?",
+              "enquiry_question": "Why did the cartoonist draw the Duke of Wellington wearing a dunce's cap inside a classroom?",
+              "model_answer": "The cartoonist made Wellington wear a dunce's cap to mock him for foolishly refusing to accept that Britain desperately needed political reform.",
+              "source_context": "Contemporary satirical print published by S. Gans (May 1831) during the national debate over the Great Reform Act. Prime Minister Earl Grey stands at the classroom lectern drilling anti-reform Tory politicians to conjugate \"the verb to reform\", while Lord Chancellor Brougham brandishes a giant birch rod and the Duke of Wellington weeps in a dunce’s cap (\"I cant Reform\"). **Hinge Question:** How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?",
+              "teacher_notes": {
+                "source_context": "Contemporary satirical print published by S. Gans (May 1831) during the national debate over the Great Reform Act. Prime Minister Earl Grey stands at the classroom lectern drilling anti-reform Tory politicians to conjugate \"the verb to reform\", while Lord Chancellor Brougham brandishes a giant birch rod and the Duke of Wellington weeps in a dunce’s cap (\"I cant Reform\"). **Hinge Question:** How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?"
+              },
+              "id": "iae_l5_src_b",
+              "type": "visual",
+              "src": "/images/school_of_reform.jpg"
+            }
+          ]
         },
         {
           "act": 3,
           "title": "The 1832 Great Reform Act: Triumph or\"Great Betrayal\"? (1832)",
           "theme_heading": "The 1832 Great Reform Act: Triumph or\"Great Betrayal\"? (1832)",
-          "text": "<span class=\"para-ref\">[5.3]</span> The landmark <strong>1832 Great Reform Act</strong> disenfranchised 56 rotten boroughs and redistributed 143 parliamentary seats to booming industrial cities like Manchester, Sheffield, and Newcastle. It expanded the electorate by 50% to roughly 800,000 men. However, the vote was strictly restricted to men occupying property worth £10 or more in rent annually. This deliberately enfranchised the prosperous middle-class factory owners while completely excluding the working class whose street protests had secured the victory. Bitterly betrayed, mill workers and handloom weavers denounced the Act as the \"Great Betrayal,\" realizing that power had merely shifted from feudal landowners to capitalist mill owners.",
+          "text": "<span class=\"para-ref\">[5.3]</span> The **1832 Great Reform Act** disenfranchised 56 rotten boroughs and created Manchester, Birmingham & Leeds MPs, expanding the electorate by 50% to roughly 800,000 men. However, the vote required a strict ten-pound property qualification, ensuring deliberate working-class exclusion. Mill workers and handloom weavers denounced the Act as the 'Great Betrayal', recognizing power had shifted from landowners to factory bosses.",
           "source": {
             "letter": "C",
-            "title": "Source C: Minutes of Evidence taken before the Select Committee on Corrupt Practices (1869)",
-            "context": "Official parliamentary testimony from 1869 documenting how the lack of a secret ballot allowed wealthy landlords and factory owners to intimidate working voters at the open hustings. **Hinge Question:** How does Source C prove that expanding the right to vote was meaningless without the protection of a secret ballot?",
-            "hinge_question": "How does Source C prove that expanding the right to vote was meaningless without the protection of a secret ballot?",
-            "text": "“At the last election, the landlord’s land agent rode with all forty tenant farmers to the hustings in a body. Each man had to declare his vote aloud before the crowd and before the agent, who held a notebook checking off their names. Many tenants wished to vote for the Liberal reformer, but they were openly told that any man who voted contrary to his landlord’s orders would receive a notice to quit his farm at Michaelmas. In open voting, the tenant’s vote belongs entirely to his landlord.”",
-            "caption": "Source C: Eyewitness testimony of tenant farmer intimidation and open hustings bribery in county elections (Parliamentary Papers, 1869).",
-            "question_badge": "Author's Purpose",
-            "question": "Why did witnesses tell Parliament that open voting made elections unfair for ordinary workers?",
-            "enquiry_question": "Why did witnesses tell Parliament that open voting made elections unfair for ordinary workers?",
-            "model_answer": "Witnesses explained that voting out loud allowed rich landlords and bosses to watch who workers voted for and evict or sack anyone who disobeyed them."
+            "id": "iae_l5_src_c",
+            "type": "written",
+            "title": "Source C (Statute Law): The Representation of the People Act 1832 (The Great Reform Act, 2 & 3 Will. IV, c. 45)",
+            "context": "Enacted in June 1832, the Great Reform Act disenfranchised 56 rotten boroughs and created 143 new parliamentary seats for industrial towns. However, it introduced a strict £10 annual property threshold, granting the vote to middle-class factory owners while excluding working-class wage earners. **Hinge Question:** Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?",
+            "hinge_question": "Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?",
+            "text": "“Be it enacted that each of the boroughs enumerated in Schedule (A) shall cease to return any member to serve in Parliament... and each of the cities and towns enumerated in Schedule (C) [including Manchester, Birmingham, Leeds, and Sheffield] shall return two members... And be it enacted that every male person of full age, who shall occupy as owner or tenant any house, warehouse, or counting-house of the clear yearly value of not less than ten pounds, shall be entitled to vote.”",
+            "caption": "Source C: Key clauses of the Representation of the People Act 1832 (The Great Reform Act), showing the disenfranchisement of rotten boroughs and the £10 property requirement.",
+            "question_badge": "Political Power & Reform",
+            "question": "How did the terms of the 1832 Great Reform Act expand representation while still keeping working-class workers disenfranchised?",
+            "enquiry_question": "How did the terms of the 1832 Great Reform Act expand representation while still keeping working-class workers disenfranchised?",
+            "model_answer": "The Act granted seats to large industrial cities like Manchester and Birmingham, but restricted voting to men owning or renting property worth £10 a year, excluding working-class wage earners.",
+            "source_context": "Enacted in June 1832, the Great Reform Act disenfranchised 56 rotten boroughs and created 143 new parliamentary seats for industrial towns. However, it introduced a strict £10 annual property threshold, granting the vote to middle-class factory owners while excluding working-class wage earners. **Hinge Question:** Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?",
+            "teacher_notes": {
+              "source_context": "Enacted in June 1832, the Great Reform Act disenfranchised 56 rotten boroughs and created 143 new parliamentary seats for industrial towns. However, it introduced a strict £10 annual property threshold, granting the vote to middle-class factory owners while excluding working-class wage earners. **Hinge Question:** Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?"
+            },
+            "src": "",
+            "image": ""
           },
           "image": "/images/earl_grey.jpg",
           "image_alt": "Portrait of Prime Minister Charles Grey, 2nd Earl Grey",
-          "caption": "Charles Grey, 2nd Earl Grey (1764–1845), Whig Prime Minister whose administration overcame fierce aristocratic opposition to pass the landmark Great Reform Act of 1832 (Sir Thomas Lawrence, c. 1828 / National Portrait Gallery, NPG 51)."
+          "caption": "Charles Grey, 2nd Earl Grey (1764–1845), Whig Prime Minister whose administration overcame fierce aristocratic opposition to pass the landmark Great Reform Act of 1832 (Sir Thomas Lawrence, c. 1828 / National Portrait Gallery, NPG 51).",
+          "sources": [
+            {
+              "letter": "C",
+              "id": "iae_l5_src_c",
+              "type": "written",
+              "title": "Source C (Statute Law): The Representation of the People Act 1832 (The Great Reform Act, 2 & 3 Will. IV, c. 45)",
+              "context": "Enacted in June 1832, the Great Reform Act disenfranchised 56 rotten boroughs and created 143 new parliamentary seats for industrial towns. However, it introduced a strict £10 annual property threshold, granting the vote to middle-class factory owners while excluding working-class wage earners. **Hinge Question:** Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?",
+              "hinge_question": "Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?",
+              "text": "“Be it enacted that each of the boroughs enumerated in Schedule (A) shall cease to return any member to serve in Parliament... and each of the cities and towns enumerated in Schedule (C) [including Manchester, Birmingham, Leeds, and Sheffield] shall return two members... And be it enacted that every male person of full age, who shall occupy as owner or tenant any house, warehouse, or counting-house of the clear yearly value of not less than ten pounds, shall be entitled to vote.”",
+              "caption": "Source C: Key clauses of the Representation of the People Act 1832 (The Great Reform Act), showing the disenfranchisement of rotten boroughs and the £10 property requirement.",
+              "question_badge": "Political Power & Reform",
+              "question": "How did the terms of the 1832 Great Reform Act expand representation while still keeping working-class workers disenfranchised?",
+              "enquiry_question": "How did the terms of the 1832 Great Reform Act expand representation while still keeping working-class workers disenfranchised?",
+              "model_answer": "The Act granted seats to large industrial cities like Manchester and Birmingham, but restricted voting to men owning or renting property worth £10 a year, excluding working-class wage earners.",
+              "source_context": "Enacted in June 1832, the Great Reform Act disenfranchised 56 rotten boroughs and created 143 new parliamentary seats for industrial towns. However, it introduced a strict £10 annual property threshold, granting the vote to middle-class factory owners while excluding working-class wage earners. **Hinge Question:** Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?",
+              "teacher_notes": {
+                "source_context": "Enacted in June 1832, the Great Reform Act disenfranchised 56 rotten boroughs and created 143 new parliamentary seats for industrial towns. However, it introduced a strict £10 annual property threshold, granting the vote to middle-class factory owners while excluding working-class wage earners. **Hinge Question:** Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?"
+              },
+              "src": "",
+              "image": ""
+            }
+          ]
         },
         {
           "act": 4,
           "title": "The People’s Charter: Six Points for Working-Class Power (1838–1848)",
           "theme_heading": "The People’s Charter: Six Points for Working-Class Power (1838–1848)",
-          "text": "<span class=\"para-ref\">[5.4]</span> Outraged by exclusion, cabinetmaker William Lovett and radical reformers drafted the <strong>People’s Charter of 1838</strong>, igniting the massive <strong class=\"vocab-highlight\">Chartist movement</strong>. Chartists demanded the famous <strong>Six Points</strong>: universal male suffrage, the secret ballot, no property qualifications for MPs, salaries for MPs, equal constituencies, and annual parliaments. In 1839, 1842, and 1848, Chartists presented colossal monster petitions to Parliament, culminating in the historic 1848 Kennington Common mass demonstration (<span class=\"archival-meta-tag\">Source D</span>). Although Parliament contemptuously rejected every petition and arrested leaders, Chartism created Britain’s first unified mass working-class political identity.",
+          "text": "<span class=\"para-ref\">[5.4]</span> Outraged by exclusion, William Lovett drafted the People’s Charter of 1838, demanding the Six Points, including universal male suffrage & secret ballot and the abolition of property requirements for MPs. Chartists presented three mammoth rejected petitions to Parliament in 1839, 1842, and 1848 with millions of signatures, forging Britain's first mass working-class democratic movement.",
           "source": {
             "letter": "D",
-            "title": "Source D: The Chartist Mass Demonstration at Kennington Common (10 April 1848)",
+            "title": "Source D (Visual Record): The Chartist Mass Demonstration at Kennington Common (1848)",
             "context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament.",
             "hinge_question": "Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?",
             "image": "/images/chartist_demo.jpg",
@@ -4075,20 +5154,48 @@ export default {
             "question_badge": "Historical Significance",
             "question": "Why was this photograph of the Chartist rally at Kennington Common so historic?",
             "enquiry_question": "Why was this photograph of the Chartist rally at Kennington Common so historic?",
-            "model_answer": "It was one of the earliest photographs ever taken of a working-class political rally, capturing thousands of ordinary people uniting peacefully to demand the vote."
+            "model_answer": "It was one of the earliest photographs ever taken of a working-class political rally, capturing thousands of ordinary people uniting peacefully to demand the vote.",
+            "source_context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament. **Hinge Question:** Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?",
+            "teacher_notes": {
+              "source_context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament. **Hinge Question:** Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?"
+            },
+            "id": "iae_l5_src_d",
+            "type": "visual",
+            "src": "/images/chartist_demo.jpg"
           },
           "image": "/images/william_lovett.jpg",
           "image_alt": "Portrait of Chartist leader William Lovett",
-          "caption": "William Lovett (1800–1877), leader of the London Working Men's Association and principal author of the 1838 People's Charter demanding universal manhood suffrage and the secret ballot (National Portrait Gallery, NPG 2977)."
+          "caption": "William Lovett (1800–1877), leader of the London Working Men's Association and principal author of the 1838 People's Charter demanding universal manhood suffrage and the secret ballot (National Portrait Gallery, NPG 2977).",
+          "sources": [
+            {
+              "letter": "D",
+              "title": "Source D (Visual Record): The Chartist Mass Demonstration at Kennington Common (1848)",
+              "context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament.",
+              "hinge_question": "Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?",
+              "image": "/images/chartist_demo.jpg",
+              "caption": "Source D: Daguerreotype photograph of the historic Chartist rally at Kennington Common on 10 April 1848. Over 25,000 working-class supporters assembled under the leadership of Feargus O’Connor to present the six million signatures of the third People’s Charter to the House of Commons.",
+              "question_badge": "Historical Significance",
+              "question": "Why was this photograph of the Chartist rally at Kennington Common so historic?",
+              "enquiry_question": "Why was this photograph of the Chartist rally at Kennington Common so historic?",
+              "model_answer": "It was one of the earliest photographs ever taken of a working-class political rally, capturing thousands of ordinary people uniting peacefully to demand the vote.",
+              "source_context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament. **Hinge Question:** Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?",
+              "teacher_notes": {
+                "source_context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament. **Hinge Question:** Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?"
+              },
+              "id": "iae_l5_src_d",
+              "type": "visual",
+              "src": "/images/chartist_demo.jpg"
+            }
+          ]
         },
         {
           "act": 5,
           "title": "The Secret Ballot Act: The Death of Landlord Coercion (1872)",
           "theme_heading": "The Secret Ballot Act: The Death of Landlord Coercion (1872)",
-          "text": "<span class=\"para-ref\">[5.5]</span> Under the unreformed system, voting took place on open wooden platforms called \"hustings.\" Voters stood before shouting crowds, publicly declaring their choice to election clerks. Landlords and factory bosses routinely evicted tenants or fired workers who voted against the master's favoured candidate, while drunken mobs were paid in gin to intimidate rivals. In 1872, Gladstone's Liberal government passed the historic <strong>Secret Ballot Act</strong>. Tested at the Pontefract by-election in August 1872, voters cast confidential paper ballots stamped in private wooden booths and sealed with liquorice wax (<span class=\"archival-meta-tag\">Source E</span>). By liberating electors from employer intimidation, the secret ballot laid the true foundation of modern British democracy.",
+          "text": "<span class=\"para-ref\">[5.5]</span> Under the old system, voting took place on open platforms with public declarations. The Secret Ballot Act 1872 completed the abolition of public hustings. At the 1872 Pontefract by-election, voters cast confidential ballots in private booths & liquorice wax seals, guaranteeing freedom from landlord eviction and bribery, establishing modern electoral democracy.",
           "source": {
             "letter": "E",
-            "title": "Source E: The First Secret Ballot in the United Kingdom, Pontefract By-Election (1872)",
+            "title": "Source E (Visual Record): The First Secret Ballot in the United Kingdom, Pontefract By-Election (1872)",
             "context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
             "hinge_question": "Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
             "image": "/images/secret_ballot.jpg",
@@ -4096,219 +5203,298 @@ export default {
             "question_badge": "Technology & Democracy",
             "question": "Why was this simple tin box with wax seals such an important turning point for British democracy?",
             "enquiry_question": "Why was this simple tin box with wax seals such an important turning point for British democracy?",
-            "model_answer": "The locked tin box allowed working-class men to vote in total privacy for the first time without fearing that their landlord or employer would punish them."
-          }
+            "model_answer": "The locked tin box allowed working-class men to vote in total privacy for the first time without fearing that their landlord or employer would punish them.",
+            "source_context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
+            "teacher_notes": {
+              "source_context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?"
+            },
+            "id": "iae_l5_src_e",
+            "type": "visual",
+            "src": "/images/secret_ballot.jpg"
+          },
+          "sources": [
+            {
+              "letter": "E",
+              "title": "Source E (Visual Record): The First Secret Ballot in the United Kingdom, Pontefract By-Election (1872)",
+              "context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
+              "hinge_question": "Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
+              "image": "/images/secret_ballot.jpg",
+              "caption": "Source E: The historic tin ballot box and wax seals used at the Pontefract municipal by-election on 15 August 1872, the first election conducted under the Ballot Act.",
+              "question_badge": "Technology & Democracy",
+              "question": "Why was this simple tin box with wax seals such an important turning point for British democracy?",
+              "enquiry_question": "Why was this simple tin box with wax seals such an important turning point for British democracy?",
+              "model_answer": "The locked tin box allowed working-class men to vote in total privacy for the first time without fearing that their landlord or employer would punish them.",
+              "source_context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
+              "teacher_notes": {
+                "source_context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?"
+              },
+              "id": "iae_l5_src_e",
+              "type": "visual",
+              "src": "/images/secret_ballot.jpg"
+            }
+          ]
         }
       ],
       "quiz": [
         {
-          "question": "Which Whig Prime Minister led the parliamentary battle to pass the landmark 1832 Great Reform Act?",
-          "q": "Which Whig Prime Minister led the parliamentary battle to pass the landmark 1832 Great Reform Act?",
+          "question": "What percentage of adult men possessed the parliamentary franchise in Britain before the 1832 Great Reform Act?",
+          "q": "What percentage of adult men possessed the parliamentary franchise in Britain before the 1832 Great Reform Act?",
           "options": [
-            "Benjamin Disraeli",
-            "Robert Peel",
+            "less than 5%",
+            "roughly 50%",
+            "over 80%",
+            "exactly 25%"
+          ],
+          "answer": "less than 5%",
+          "a": "less than 5%",
+          "explanation": "In 1830, Britain claimed to be the cradle of parliamentary liberty, but less than 5% of adult males possessed the parliamentary franchise."
+        },
+        {
+          "question": "What notorious rotten borough in Wiltshire was an uninhabited grass mound with three houses that returned two MPs?",
+          "q": "What notorious rotten borough in Wiltshire was an uninhabited grass mound with three houses that returned two MPs?",
+          "options": [
+            "Old Sarum",
+            "Manchester",
+            "Birmingham",
+            "Pontefract"
+          ],
+          "answer": "Old Sarum",
+          "a": "Old Sarum",
+          "explanation": "Old Sarum in Wiltshire was a deserted grass mound with three houses and seven voters, while returning two MPs to Westminster."
+        },
+        {
+          "question": "Which Whig Prime Minister led the parliamentary struggle to pass the historic 1832 Great Reform Act?",
+          "q": "Which Whig Prime Minister led the parliamentary struggle to pass the historic 1832 Great Reform Act?",
+          "options": [
             "Earl Grey",
-            "The Duke of Wellington"
+            "The Duke of Wellington",
+            "Benjamin Disraeli",
+            "William Gladstone"
           ],
           "answer": "Earl Grey",
           "a": "Earl Grey",
-          "explanation": "Charles Grey, 2nd Earl Grey, recognized that the aristocracy had to reform parliament or face violent revolution, pushing the 1832 Reform Act through intense House of Lords opposition."
+          "explanation": "Prime Minister Earl Grey led the Whig government through violent civil unrest to pass the landmark 1832 Great Reform Act."
         },
         {
-          "question": "Which major industrial cities, completely unrepresented before 1832, were finally granted parliamentary MPs under the Great Reform Act?",
-          "q": "Which major industrial cities, completely unrepresented before 1832, were finally granted parliamentary MPs under the Great Reform Act?",
+          "question": "What foundational 1838 document drafted by William Lovett set out six democratic demands for the working class?",
+          "q": "What foundational 1838 document drafted by William Lovett set out six democratic demands for the working class?",
           "options": [
-            "Oxford and Cambridge",
-            "Old Sarum and Dunwich",
-            "Portsmouth and Southampton",
-            "Manchester, Birmingham, and Leeds"
+            "People’s Charter",
+            "Magna Carta",
+            "Bill of Rights",
+            "Declaration of Rights"
+          ],
+          "answer": "People’s Charter",
+          "a": "People’s Charter",
+          "explanation": "Cabinetmaker William Lovett and radical reformers drafted the People’s Charter of 1838, igniting the massive Chartist movement."
+        },
+        {
+          "question": "What 1872 statute abolished open public voting on the hustings, introducing private booths to stop landlord coercion?",
+          "q": "What 1872 statute abolished open public voting on the hustings, introducing private booths to stop landlord coercion?",
+          "options": [
+            "Secret Ballot Act",
+            "Great Reform Act",
+            "Representation of the People Act",
+            "Municipal Act"
+          ],
+          "answer": "Secret Ballot Act",
+          "a": "Secret Ballot Act",
+          "explanation": "In 1872, Gladstone's Liberal government passed the historic Secret Ballot Act, introducing confidential paper voting in private booths."
+        },
+        {
+          "question": "Which colossal industrial manufacturing powerhouses had zero dedicated MPs in Parliament before 1832?",
+          "q": "Which colossal industrial manufacturing powerhouses had zero dedicated MPs in Parliament before 1832?",
+          "options": [
+            "Manchester, Birmingham, and Leeds",
+            "London and Bristol",
+            "Winchester and Salisbury",
+            "Oxford and Cambridge"
           ],
           "answer": "Manchester, Birmingham, and Leeds",
           "a": "Manchester, Birmingham, and Leeds",
-          "explanation": "The 1832 Reform Act disenfranchised corrupt 'rotten boroughs' and transferred their parliamentary seats to rapidly growing industrial powerhouses like Manchester and Birmingham."
+          "explanation": "Colossal industrial powerhouses like Manchester, Birmingham, and Leeds, home to over a million people, had zero MPs."
         },
         {
-          "question": "Which 1872 statute finally eliminated public bribery and landlord intimidation during elections by introducing private voting booths?",
-          "q": "Which 1872 statute finally eliminated public bribery and landlord intimidation during elections by introducing private voting booths?",
+          "question": "What term described depopulated boroughs controlled by wealthy aristocratic patrons who sent MPs to Westminster?",
+          "q": "What term described depopulated boroughs controlled by wealthy aristocratic patrons who sent MPs to Westminster?",
           "options": [
-            "The Secret Ballot Act",
-            "The Representation of the People Act",
-            "The Great Reform Act",
-            "The Public Health Act"
+            "rotten boroughs",
+            "county shires",
+            "freeholder seats",
+            "royal burgages"
           ],
-          "answer": "The Secret Ballot Act",
-          "a": "The Secret Ballot Act",
-          "explanation": "The Ballot Act of 1872 ended the tradition of public voting on open hustings, enabling working men and tenants to vote without fear of being evicted by their landlords or fired by factory bosses."
+          "answer": "rotten boroughs",
+          "a": "rotten boroughs",
+          "explanation": "Dozens of rotten boroughs (depopulated boroughs controlled by wealthy aristocratic patrons) sent two MPs to Westminster."
         },
         {
-          "question": "Before 1832, who was allowed to vote in British elections?",
+          "question": "What radical reformer coordinated a financial strike in May 1832 with posters reading 'To stop the Duke, go for gold!'?",
+          "q": "What radical reformer coordinated a financial strike in May 1832 with posters reading 'To stop the Duke, go for gold!'?",
           "options": [
-            "All adult men.",
-            "Only a tiny minority of wealthy male property owners.",
-            "Both men and women over the age of 21.",
-            "Anyone who could prove they could read and write."
+            "Francis Place",
+            "William Lovett",
+            "Henry Hunt",
+            "Feargus O'Connor"
           ],
-          "answer": "Only a tiny minority of wealthy male property owners."
+          "answer": "Francis Place",
+          "a": "Francis Place",
+          "explanation": "During the tense 'Days of May' in 1832, radical reformer Francis Place coordinated a run of £1.6 million in gold sovereigns on the Bank of England."
         },
         {
-          "question": "What was a 'Rotten Borough' before 1832?",
+          "question": "How many corrupt rotten boroughs were completely disenfranchised by the landmark 1832 Great Reform Act?",
+          "q": "How many corrupt rotten boroughs were completely disenfranchised by the landmark 1832 Great Reform Act?",
           "options": [
-            "An abandoned medieval village that had almost no people but still sent two MPs to Parliament.",
-            "A massive industrial city like Manchester with no MPs.",
-            "A district where all the voters were secretly corrupt and took bribes from the King.",
-            "A poor slum area in a major city that was not allowed to vote."
+            "56 rotten boroughs",
+            "12 rotten boroughs",
+            "200 rotten boroughs",
+            "zero rotten boroughs"
           ],
-          "answer": "An abandoned medieval village that had almost no people but still sent two MPs to Parliament."
+          "answer": "56 rotten boroughs",
+          "a": "56 rotten boroughs",
+          "explanation": "The landmark 1832 Great Reform Act disenfranchised 56 rotten boroughs and redistributed 143 parliamentary seats to booming industrial cities."
         },
         {
-          "question": "What was Newtown on the Isle of Wight a famous example of before 1832?",
+          "question": "What property requirement restricted voting rights to middle-class men under the 1832 Great Reform Act?",
+          "q": "What property requirement restricted voting rights to middle-class men under the 1832 Great Reform Act?",
           "options": [
-            "A massive industrial city.",
-            "A Rotten Borough with only 14 houses that still sent two MPs to London.",
-            "The first town in Britain to give working-class men the vote.",
-            "The site of a violent Chartist uprising."
+            "£10 property qualification",
+            "£100 land title",
+            "ownership of a factory",
+            "freehold estate only"
           ],
-          "answer": "A Rotten Borough with only 14 houses that still sent two MPs to London."
+          "answer": "£10 property qualification",
+          "a": "£10 property qualification",
+          "explanation": "The vote was strictly restricted by a £10 property qualification to men occupying property worth £10 or more in rent annually."
         },
         {
-          "question": "What was a 'Pocket Borough'?",
+          "question": "Why did working-class reformers bitterly denounce the 1832 Great Reform Act as the 'Great Betrayal'?",
+          "q": "Why did working-class reformers bitterly denounce the 1832 Great Reform Act as the 'Great Betrayal'?",
           "options": [
-            "A voting district where people could vote secretly in a small box or 'pocket'.",
-            "A borough small enough to fit inside a single town hall.",
-            "A constituency set up especially for poor working men.",
-            "A seat in Parliament completely controlled by a wealthy local landowner."
+            "completely excluding the working class",
+            "raising taxes on textile mills",
+            "dissolving the House of Commons",
+            "outlawing all friendly societies"
           ],
-          "answer": "A seat in Parliament completely controlled by a wealthy local landowner."
+          "answer": "completely excluding the working class",
+          "a": "completely excluding the working class",
+          "explanation": "Working-class reformers denounced the Act as the 'Great Betrayal', realizing it enfranchised middle-class factory owners while completely excluding workers."
         },
         {
-          "question": "Why did the government finally pass the Great Reform Act in 1832?",
+          "question": "Name two of the core political demands set out in the 1838 People's Charter.",
+          "q": "Which of the following was NOT one of the Six Points set out in the 1838 People's Charter?",
           "options": [
-            "Because they believed that democracy was the only fair system of government.",
-            "Because Queen Victoria ordered them to change the law.",
-            "Because they feared a violent revolution similar to the Swing Riots and the French Revolution.",
-            "Because the working classes had peacefully asked for it in the People's Charter."
+            "equal voting rights for women",
+            "universal male suffrage",
+            "the secret ballot",
+            "salaries for MPs"
           ],
-          "answer": "Because they feared a violent revolution similar to the Swing Riots and the French Revolution."
+          "answer": "equal voting rights for women",
+          "a": "equal voting rights for women",
+          "explanation": "The Charter demanded universal male suffrage, the secret ballot, no property qualifications, MP salaries, equal constituencies, and annual parliaments."
         },
         {
-          "question": "Which of the following was a key change made by the 1832 Great Reform Act?",
+          "question": "Where was the massive Chartist demonstration held on 10 April 1848 to present the Third National Petition?",
+          "q": "Where was the massive Chartist demonstration held on 10 April 1848 to present the Third National Petition?",
           "options": [
-            "It gave the vote to all working-class men.",
-            "It abolished 56 Rotten Boroughs and created new constituencies for industrial cities.",
-            "It introduced the secret ballot.",
-            "It gave women the right to vote for the first time."
+            "Kennington Common",
+            "Hyde Park",
+            "Trafalgar Square",
+            "St Peter's Field"
           ],
-          "answer": "It abolished 56 Rotten Boroughs and created new constituencies for industrial cities."
+          "answer": "Kennington Common",
+          "a": "Kennington Common",
+          "explanation": "In 1848, Chartists presented colossal monster petitions to Parliament, culminating in the historic 1848 Kennington Common mass demonstration."
         },
         {
-          "question": "Who was granted the right to vote by the 1832 Great Reform Act?",
+          "question": "On what open wooden platforms did voters declare their choice before screaming crowds prior to 1872?",
+          "q": "On what open wooden platforms did voters declare their choice before screaming crowds prior to 1872?",
           "options": [
-            "Middle-class men who owned property worth £10 a year.",
-            "All men over the age of 21.",
-            "Only the nobility and the wealthiest landowners.",
-            "Everyone who worked in an industrial factory."
+            "hustings",
+            "pulpits",
+            "scaffolds",
+            "daises"
           ],
-          "answer": "Middle-class men who owned property worth £10 a year."
+          "answer": "hustings",
+          "a": "hustings",
+          "explanation": "Under the unreformed system, voting took place on open wooden platforms called hustings, exposing voters to landlord intimidation."
         },
         {
-          "question": "How did the working classes react to the 1832 Great Reform Act?",
+          "question": "Where was the United Kingdom's first secret ballot election tested in August 1872 using liquorice wax seals?",
+          "q": "Where was the United Kingdom's first secret ballot election tested in August 1872 using liquorice wax seals?",
           "options": [
-            "They celebrated because they finally had a voice in Parliament.",
-            "They ignored it because they did not care about politics.",
-            "They felt bitterly betrayed because they were deliberately excluded from voting.",
-            "They started a war with France to unite the country."
+            "Pontefract by-election",
+            "Manchester Central",
+            "Westminster",
+            "Portsmouth Borough"
           ],
-          "answer": "They felt bitterly betrayed because they were deliberately excluded from voting."
+          "answer": "Pontefract by-election",
+          "a": "Pontefract by-election",
+          "explanation": "Tested at the Pontefract by-election in August 1872, voters cast confidential paper ballots stamped in private wooden booths."
         },
         {
-          "question": "Before 1872, how did a man cast his vote in an election?",
+          "question": "What public buildings were burned to ashes by furious crowds in Bristol in October 1831 after peers rejected the Reform Bill?",
+          "q": "What public buildings were burned to ashes by furious crowds in Bristol in October 1831 after peers rejected the Reform Bill?",
           "options": [
-            "By placing a piece of paper in a locked ballot box.",
-            "By sending a letter through the Royal Mail.",
-            "By raising his hand in a silent, private room.",
-            "By standing on a public platform (the 'hustings') and shouting out the name of the candidate."
+            "the Bishop's Palace, the Mansion House, and three gaols",
+            "the royal naval dockyards",
+            "the Bank of England",
+            "the university colleges"
           ],
-          "answer": "By standing on a public platform (the 'hustings') and shouting out the name of the candidate."
+          "answer": "the Bishop's Palace, the Mansion House, and three gaols",
+          "a": "the Bishop's Palace, the Mansion House, and three gaols",
+          "explanation": "In Bristol, a furious crowd burned the Bishop's Palace, the Mansion House, and three gaols to ashes."
         },
         {
-          "question": "Why was the system of public voting before 1872 so unfair to working-class men?",
+          "question": "What amount of gold sovereigns did citizens withdraw from the Bank of England in days during the 'Days of May'?",
+          "q": "What amount of gold sovereigns did citizens withdraw from the Bank of England in days during the 'Days of May'?",
           "options": [
-            "Because they were often too shy to speak in public.",
-            "Because they had to pay a large fee every time they shouted their vote.",
-            "Because only the rich were allowed to stand on the 'hustings'.",
-            "Because landlords and factory owners could intimidate them into voting a certain way under threat of being fired or evicted."
+            "£1.6 million",
+            "£50,000",
+            "£10 million",
+            "£500,000"
           ],
-          "answer": "Because landlords and factory owners could intimidate them into voting a certain way under threat of being fired or evicted."
+          "answer": "£1.6 million",
+          "a": "£1.6 million",
+          "explanation": "Panic-stricken citizens withdrew £1.6 million in gold sovereigns from the Bank of England in days, forcing the Tories to pass the bill."
         },
         {
-          "question": "What did the 1872 Secret Ballot Act require voters to do?",
+          "question": "What London cabinetmaker drafted the People's Charter of 1838 alongside radical reformers?",
+          "q": "What London cabinetmaker drafted the People's Charter of 1838 alongside radical reformers?",
           "options": [
-            "Swear a secret oath to the King before voting.",
-            "Hide their faces with masks while standing on the public platform.",
-            "Vote in a private wooden booth using a printed paper dropped into a locked box.",
-            "Vote for only one candidate in complete silence."
+            "William Lovett",
+            "Francis Place",
+            "Henry Hunt",
+            "George Loveless"
           ],
-          "answer": "Vote in a private wooden booth using a printed paper dropped into a locked box."
+          "answer": "William Lovett",
+          "a": "William Lovett",
+          "explanation": "Cabinetmaker William Lovett and radical reformers drafted the People’s Charter of 1838, igniting the massive Chartist movement."
         },
         {
-          "question": "What was the immediate consequence of the 1872 Secret Ballot Act?",
+          "question": "Why did Chartists demand annual parliaments and salaries for MPs?",
+          "q": "Why did Chartists demand annual parliaments and salaries for MPs?",
           "options": [
-            "The power of elite bribery and intimidation collapsed almost overnight.",
-            "Voter turnout dropped dramatically because people found the paper confusing.",
-            "The working classes rioted because they wanted to vote in public.",
-            "The King cancelled all future elections."
+            "salaries for MPs",
+            "state pensions for aristocrats",
+            "free houses for mayors",
+            "tax exemptions for landlords"
           ],
-          "answer": "The power of elite bribery and intimidation collapsed almost overnight."
+          "answer": "salaries for MPs",
+          "a": "salaries for MPs",
+          "explanation": "Chartists demanded salaries for MPs so that working men without private wealth could afford to serve in Parliament."
         },
         {
-          "question": "Which group of people was given the vote by the 1867 Second Reform Act?",
+          "question": "What monarch agreed to flood the House of Lords with pro-reform peers in 1832 to force through the Reform Bill?",
+          "q": "What monarch agreed to flood the House of Lords with pro-reform peers in 1832 to force through the Reform Bill?",
           "options": [
-            "All women over the age of 30.",
-            "Skilled working-class men in urban towns and cities.",
-            "Agricultural laborers and miners in the countryside.",
-            "Only the wealthiest merchants in London."
+            "King William IV",
+            "King George III",
+            "King George IV",
+            "Queen Victoria"
           ],
-          "answer": "Skilled working-class men in urban towns and cities."
-        },
-        {
-          "question": "What did the 1884 Third Reform Act achieve?",
-          "options": [
-            "It gave the vote to women for the first time.",
-            "It extended the vote to agricultural laborers and miners in the countryside.",
-            "It took the vote away from the working classes.",
-            "It introduced the secret ballot across the entire British Empire."
-          ],
-          "answer": "It extended the vote to agricultural laborers and miners in the countryside."
-        },
-        {
-          "question": "Why did Conservative politicians like Benjamin Disraeli eventually expand the vote to the working classes in 1867?",
-          "options": [
-            "Because they genuinely believed every man deserved an equal voice.",
-            "Because they were forced to by the French government.",
-            "Because they hoped the newly enfranchised workers would be grateful and vote for the Conservative party.",
-            "Because they had run out of wealthy landowners to vote for them."
-          ],
-          "answer": "Because they hoped the newly enfranchised workers would be grateful and vote for the Conservative party."
-        },
-        {
-          "question": "Based on MP Robert Lowe's 1866 speech, what was the underlying fear that wealthy elites had about expanding democracy?",
-          "options": [
-            "They feared the 'ignorant and violent' working classes would vote to tax the wealthy and destroy their privileged institutions.",
-            "They feared that elections would become too expensive to run.",
-            "They feared that foreign spies would infiltrate the voting booths.",
-            "They feared that giving men the vote would lead to women demanding the vote too."
-          ],
-          "answer": "They feared the 'ignorant and violent' working classes would vote to tax the wealthy and destroy their privileged institutions."
-        },
-        {
-          "question": "By 1884, approximately what percentage of adult men in Britain had a secure, private vote?",
-          "options": [
-            "10%",
-            "30%",
-            "100%",
-            "60%"
-          ],
-          "answer": "60%"
+          "answer": "King William IV",
+          "a": "King William IV",
+          "explanation": "King William IV agreed to flood the House of Lords with pro-reform peers, forcing the Tories to surrender and pass the Bill."
         }
       ],
       "hook_text": "In May 1832, posters appeared across London: 'To stop the Duke, go for gold!' Middle-class reformers and working-class crowds united, demanding the vote and threatening financial ruin if Parliament refused reform. Staring into the abyss of revolution, King and peers surrendered. How did popular protest finally break the medieval electoral system?",
@@ -4421,7 +5607,7 @@ export default {
       "sources": [
         {
           "letter": "A",
-          "title": "Source A: Parliamentary Representation Map of England & Wales & Unreformed Boroughs (1832)",
+          "title": "Source A (Cartographic Record): Parliamentary Representation Map of Rotten Boroughs (1832)",
           "context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
           "hinge_question": "Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
           "image": "/images/map_rotten_boroughs.jpg",
@@ -4433,11 +5619,14 @@ export default {
           "source_context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
           "teacher_notes": {
             "source_context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?"
-          }
+          },
+          "id": "iae_l5_src_a",
+          "type": "visual",
+          "src": "/images/map_rotten_boroughs.jpg"
         },
         {
           "letter": "B",
-          "title": "Source B: The School of Reform (Satirical Lithograph on the 1832 Reform Bill)",
+          "title": "Source B (Satirical Print): The School of Reform (Satirical Lithograph on the 1832 Reform Bill)",
           "context": "Contemporary satirical print published by S. Gans (May 1831) during the national debate over the Great Reform Act. Prime Minister Earl Grey stands at the classroom lectern drilling anti-reform Tory politicians to conjugate \"the verb to reform\", while Lord Chancellor Brougham brandishes a giant birch rod and the Duke of Wellington weeps in a dunce’s cap (\"I cant Reform\"). **Hinge Question:** How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?",
           "hinge_question": "How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?",
           "image": "/images/school_of_reform.jpg",
@@ -4449,27 +5638,34 @@ export default {
           "source_context": "Contemporary satirical print published by S. Gans (May 1831) during the national debate over the Great Reform Act. Prime Minister Earl Grey stands at the classroom lectern drilling anti-reform Tory politicians to conjugate \"the verb to reform\", while Lord Chancellor Brougham brandishes a giant birch rod and the Duke of Wellington weeps in a dunce’s cap (\"I cant Reform\"). **Hinge Question:** How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?",
           "teacher_notes": {
             "source_context": "Contemporary satirical print published by S. Gans (May 1831) during the national debate over the Great Reform Act. Prime Minister Earl Grey stands at the classroom lectern drilling anti-reform Tory politicians to conjugate \"the verb to reform\", while Lord Chancellor Brougham brandishes a giant birch rod and the Duke of Wellington weeps in a dunce’s cap (\"I cant Reform\"). **Hinge Question:** How does Source B illustrate that parliamentary reform was viewed as a strict national discipline imposed on reluctant defenders of rotten boroughs?"
-          }
+          },
+          "id": "iae_l5_src_b",
+          "type": "visual",
+          "src": "/images/school_of_reform.jpg"
         },
         {
           "letter": "C",
-          "title": "Source C: Minutes of Evidence taken before the Select Committee on Corrupt Practices (1869)",
-          "context": "Official parliamentary testimony from 1869 documenting how the lack of a secret ballot allowed wealthy landlords and factory owners to intimidate working voters at the open hustings. **Hinge Question:** How does Source C prove that expanding the right to vote was meaningless without the protection of a secret ballot?",
-          "hinge_question": "How does Source C prove that expanding the right to vote was meaningless without the protection of a secret ballot?",
-          "text": "“At the last election, the landlord’s land agent rode with all forty tenant farmers to the hustings in a body. Each man had to declare his vote aloud before the crowd and before the agent, who held a notebook checking off their names. Many tenants wished to vote for the Liberal reformer, but they were openly told that any man who voted contrary to his landlord’s orders would receive a notice to quit his farm at Michaelmas. In open voting, the tenant’s vote belongs entirely to his landlord.”",
-          "caption": "Source C: Eyewitness testimony of tenant farmer intimidation and open hustings bribery in county elections (Parliamentary Papers, 1869).",
-          "question_badge": "Author's Purpose",
-          "question": "Why did witnesses tell Parliament that open voting made elections unfair for ordinary workers?",
-          "enquiry_question": "Why did witnesses tell Parliament that open voting made elections unfair for ordinary workers?",
-          "model_answer": "Witnesses explained that voting out loud allowed rich landlords and bosses to watch who workers voted for and evict or sack anyone who disobeyed them.",
-          "source_context": "Official parliamentary testimony from 1869 documenting how the lack of a secret ballot allowed wealthy landlords and factory owners to intimidate working voters at the open hustings. **Hinge Question:** How does Source C prove that expanding the right to vote was meaningless without the protection of a secret ballot?",
+          "id": "iae_l5_src_c",
+          "type": "written",
+          "title": "Source C (Statute Law): The Representation of the People Act 1832 (The Great Reform Act, 2 & 3 Will. IV, c. 45)",
+          "context": "Enacted in June 1832, the Great Reform Act disenfranchised 56 rotten boroughs and created 143 new parliamentary seats for industrial towns. However, it introduced a strict £10 annual property threshold, granting the vote to middle-class factory owners while excluding working-class wage earners. **Hinge Question:** Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?",
+          "hinge_question": "Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?",
+          "text": "“Be it enacted that each of the boroughs enumerated in Schedule (A) shall cease to return any member to serve in Parliament... and each of the cities and towns enumerated in Schedule (C) [including Manchester, Birmingham, Leeds, and Sheffield] shall return two members... And be it enacted that every male person of full age, who shall occupy as owner or tenant any house, warehouse, or counting-house of the clear yearly value of not less than ten pounds, shall be entitled to vote.”",
+          "caption": "Source C: Key clauses of the Representation of the People Act 1832 (The Great Reform Act), showing the disenfranchisement of rotten boroughs and the £10 property requirement.",
+          "question_badge": "Political Power & Reform",
+          "question": "How did the terms of the 1832 Great Reform Act expand representation while still keeping working-class workers disenfranchised?",
+          "enquiry_question": "How did the terms of the 1832 Great Reform Act expand representation while still keeping working-class workers disenfranchised?",
+          "model_answer": "The Act granted seats to large industrial cities like Manchester and Birmingham, but restricted voting to men owning or renting property worth £10 a year, excluding working-class wage earners.",
+          "source_context": "Enacted in June 1832, the Great Reform Act disenfranchised 56 rotten boroughs and created 143 new parliamentary seats for industrial towns. However, it introduced a strict £10 annual property threshold, granting the vote to middle-class factory owners while excluding working-class wage earners. **Hinge Question:** Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?",
           "teacher_notes": {
-            "source_context": "Official parliamentary testimony from 1869 documenting how the lack of a secret ballot allowed wealthy landlords and factory owners to intimidate working voters at the open hustings. **Hinge Question:** How does Source C prove that expanding the right to vote was meaningless without the protection of a secret ballot?"
-          }
+            "source_context": "Enacted in June 1832, the Great Reform Act disenfranchised 56 rotten boroughs and created 143 new parliamentary seats for industrial towns. However, it introduced a strict £10 annual property threshold, granting the vote to middle-class factory owners while excluding working-class wage earners. **Hinge Question:** Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?"
+          },
+          "src": "",
+          "image": ""
         },
         {
           "letter": "D",
-          "title": "Source D: The Chartist Mass Demonstration at Kennington Common (10 April 1848)",
+          "title": "Source D (Visual Record): The Chartist Mass Demonstration at Kennington Common (1848)",
           "context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament.",
           "hinge_question": "Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?",
           "image": "/images/chartist_demo.jpg",
@@ -4481,11 +5677,14 @@ export default {
           "source_context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament. **Hinge Question:** Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?",
           "teacher_notes": {
             "source_context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament. **Hinge Question:** Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?"
-          }
+          },
+          "id": "iae_l5_src_d",
+          "type": "visual",
+          "src": "/images/chartist_demo.jpg"
         },
         {
           "letter": "E",
-          "title": "Source E: The First Secret Ballot in the United Kingdom, Pontefract By-Election (1872)",
+          "title": "Source E (Visual Record): The First Secret Ballot in the United Kingdom, Pontefract By-Election (1872)",
           "context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
           "hinge_question": "Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
           "image": "/images/secret_ballot.jpg",
@@ -4497,7 +5696,10 @@ export default {
           "source_context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
           "teacher_notes": {
             "source_context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?"
-          }
+          },
+          "id": "iae_l5_src_e",
+          "type": "visual",
+          "src": "/images/secret_ballot.jpg"
         }
       ],
       "exam_practice": {

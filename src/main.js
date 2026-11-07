@@ -19,6 +19,7 @@ import {
 import './langemarck_myth.js';
 import('./digital_textbook_reader.js');
 import { initCmeMapHotkeys, renderFloatingCmeMapButton } from './cme_theater_map.js';
+import './infographic_viewer.js';
 import './engine/ks2_guidance.js';
 
 function purgeGDPRHistoricalCache() {
@@ -202,50 +203,90 @@ window.addEventListener('DOMContentLoaded', async () => {
   let unit = urlParams.get('unit');
   const initialLesson = urlParams.get('lesson');
 
-  if (view === 'usa' || view === 'gcse_usa' || view === 'gcse_usa_1954_1975') {
-    view = 'lessons';
-    unit = 'usa';
-  } else if (view === 'quiz' || view === 'interactive_quiz' || view === 'retrieval') {
-    view = 'interactive';
-    unit = unit || 'edexcel_medicine';
-  } else if (view === 'reading' || view === 'guided-reading' || view === 'literary') {
-    view = 'reading';
-    unit = unit || 'great_war_part2';
-  } else if (view === 'marking' || view === 'answers' || view === 'marking-bank') {
-    view = 'marking';
-    unit = unit || 'great_war_part2';
-  } else if (
-    view === 'booklets' ||
-    view === 'workbooks' ||
-    view === 'workbook' ||
-    view === 'pdf' ||
-    view === 'pdfs' ||
-    view === 'textbook' ||
-    view === 'textbooks'
-  ) {
-    view = 'booklet';
-  } else if (view === 'lessons' && !unit) {
-    unit = 'edexcel_medicine';
-  } else if (view === 'trend-radar' || view === 'matrix' || view === 'exam-matrix') {
-    view = 'mock-exams';
-  } else if (view === 'department' || view === 'department_portal' || view === 'portal') {
-    view = 'department-portal';
-  } else if (view === 'curriculum_map') {
-    view = 'curriculum';
-  } else if (view === 'arena' || view === 'competitions_zone') {
-    view = 'competitions';
-  } else if (
-    view === 'revision_guides' ||
-    view === 'revision-guides' ||
-    view === 'exam_technique' ||
-    view === 'exam-technique'
-  ) {
-    view = 'curriculum';
-  } else if (!view && unit) {
-    view = 'lessons';
-  } else if (!view) {
-    view = 'dashboard';
-  }
+  // Comprehensive view alias normalization for QR codes, links, and direct URLs
+  const normalizeViewAndUnit = (v, u) => {
+    let normView = (v || '').toLowerCase().trim();
+    let normUnit = u;
+
+    if (normView === 'usa' || normView === 'gcse_usa' || normView === 'gcse_usa_1954_1975') {
+      normView = 'lessons';
+      normUnit = 'usa';
+    } else if (
+      normView === 'quiz' ||
+      normView === 'quizzes' ||
+      normView === 'quizzing' ||
+      normView === 'interactive_quiz' ||
+      normView === 'interactive-quiz' ||
+      normView === 'interactive' ||
+      normView === 'retrieval' ||
+      normView === 'practice-quizzes' ||
+      normView === 'practice_quizzes'
+    ) {
+      normView = 'interactive';
+      normUnit = normUnit || 'great_war_part2';
+    } else if (
+      normView === 'reading' ||
+      normView === 'guided-reading' ||
+      normView === 'guided_reading' ||
+      normView === 'literary' ||
+      normView === 'audio'
+    ) {
+      normView = 'reading';
+      normUnit = normUnit || 'great_war_part2';
+    } else if (
+      normView === 'marking' ||
+      normView === 'answers' ||
+      normView === 'marking-bank' ||
+      normView === 'marking_bank' ||
+      normView === 'self-check' ||
+      normView === 'self_check'
+    ) {
+      normView = 'marking';
+      normUnit = normUnit || 'great_war_part2';
+    } else if (
+      normView === 'booklets' ||
+      normView === 'workbooks' ||
+      normView === 'workbook' ||
+      normView === 'pdf' ||
+      normView === 'pdfs' ||
+      normView === 'textbook' ||
+      normView === 'textbooks'
+    ) {
+      normView = 'booklet';
+    } else if (normView === 'lesson' || normView === 'lessons' || normView === 'unit') {
+      normView = 'lessons';
+      normUnit = normUnit || 'great_war_part2';
+    } else if (normView === 'trend-radar' || normView === 'matrix' || normView === 'exam-matrix') {
+      normView = 'mock-exams';
+    } else if (normView === 'department' || normView === 'department_portal' || normView === 'portal') {
+      normView = 'department-portal';
+    } else if (normView === 'curriculum_map' || normView === 'curriculum') {
+      normView = 'curriculum';
+    } else if (normView === 'arena' || normView === 'competitions' || normView === 'competitions_zone') {
+      normView = 'competitions';
+    } else if (
+      normView === 'revision_guides' ||
+      normView === 'revision-guides' ||
+      normView === 'exam_technique' ||
+      normView === 'exam-technique'
+    ) {
+      normView = 'curriculum';
+    } else if (normView === 'gallery') {
+      normView = 'masterpiece';
+    } else if (normView === 'textbook-reader') {
+      normView = 'reader';
+    } else if (!normView && normUnit) {
+      normView = 'lessons';
+    } else if (!normView) {
+      normView = 'dashboard';
+    }
+
+    return { view: normView, unit: normUnit };
+  };
+
+  const initialNorm = normalizeViewAndUnit(view, unit);
+  view = initialNorm.view;
+  unit = initialNorm.unit;
 
   // Seed the initial history state so e.state is never null on popstate back to initial landing
   if (typeof window !== 'undefined' && window.history && window.history.replaceState) {
@@ -289,7 +330,14 @@ window.addEventListener('DOMContentLoaded', async () => {
     flushDraftState();
   });
 
-  switchView(view, unit, true).then(() => {
+  const targetInitialLessonIndex =
+    initialLesson !== null && !isNaN(parseInt(initialLesson, 10))
+      ? parseInt(initialLesson, 10) > 0
+        ? parseInt(initialLesson, 10) - 1
+        : 0
+      : undefined;
+
+  switchView(view, unit, true, { lessonIndex: targetInitialLessonIndex }).then(() => {
     const resolveLessonTarget = (paramLesson, unitData) => {
       if (!unitData || !Array.isArray(unitData.lessons) || unitData.lessons.length === 0) {
         return { index: -1, lesson: null, id: null };
@@ -298,31 +346,57 @@ window.addEventListener('DOMContentLoaded', async () => {
         const rawStr = String(paramLesson).trim();
         // 1. Pure numeric index handling (supports 1-indexed e.g. 1 -> 0, or 0-indexed 0)
         // High priority: sequential lesson number parameter (e.g. ?lesson=10) represents the 10th lesson
+        const hasLessonZero = (unitData.lessons[0] && (unitData.lessons[0].id === 'lesson_0' || (unitData.lessons[0].title && unitData.lessons[0].title.includes('KT 1.0'))));
+        if (rawStr.toLowerCase() === 'intro' && hasLessonZero) {
+          return { index: 0, lesson: unitData.lessons[0], id: unitData.lessons[0].id };
+        }
         if (/^\d+$/.test(rawStr)) {
           const num = parseInt(rawStr, 10);
-          const idx = num >= 1 && num <= unitData.lessons.length ? num - 1 : num === 0 ? 0 : -1;
+          const idx = hasLessonZero
+            ? (num >= 0 && num < unitData.lessons.length ? num : -1)
+            : (num >= 1 && num <= unitData.lessons.length ? num - 1 : num === 0 ? 0 : -1);
           if (idx !== -1 && unitData.lessons[idx]) {
             return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
           }
         }
-        // 2. Direct ID match (e.g. 'lesson_3_1', 'lesson_1_1', 'lesson_5_1')
+        // 2. Direct exact ID match (e.g. 'lesson_3_1', 'lesson_1_1', 'lesson_5_1')
         let idx = unitData.lessons.findIndex(
           (l) => l.id && l.id.toLowerCase() === rawStr.toLowerCase(),
         );
         if (idx !== -1) {
           return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
         }
-        // 3. ID prefix match or partial match (e.g. '3_1' -> 'lesson_3_1')
+        // 3. Match by lesson number in ID prefix: e.g. 'lesson_2_trenches' or 'lesson_2' -> match 'lesson_2_trenches_haig'
+        const numMatch = rawStr.match(/lesson[_-]?(\d+)/i) || rawStr.match(/^enquiry[_-]?(\d+)/i);
+        if (numMatch) {
+          const targetNum = parseInt(numMatch[1], 10);
+          if (targetNum >= 1 && targetNum <= unitData.lessons.length) {
+            const candidate = unitData.lessons[targetNum - 1];
+            if (candidate) {
+              return { index: targetNum - 1, lesson: candidate, id: candidate.id };
+            }
+          }
+          idx = unitData.lessons.findIndex(
+            (l) =>
+              l.id &&
+              (l.id.toLowerCase().startsWith(`lesson_${targetNum}_`) ||
+                l.id.toLowerCase() === `lesson_${targetNum}`),
+          );
+          if (idx !== -1) {
+            return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
+          }
+        }
+        // 4. Substring / partial match on ID
         idx = unitData.lessons.findIndex(
           (l) =>
             l.id &&
-            (l.id.toLowerCase() === `lesson_${rawStr.toLowerCase()}` ||
-              l.id.toLowerCase().endsWith(`_${rawStr.toLowerCase()}`)),
+            (l.id.toLowerCase().includes(rawStr.toLowerCase()) ||
+              rawStr.toLowerCase().includes(l.id.toLowerCase())),
         );
         if (idx !== -1) {
           return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
         }
-        // 4. Title match
+        // 5. Title match
         idx = unitData.lessons.findIndex(
           (l) => l.title && l.title.toLowerCase().includes(rawStr.toLowerCase()),
         );
@@ -340,6 +414,12 @@ window.addEventListener('DOMContentLoaded', async () => {
       const resolved = resolveLessonTarget(initialLesson, unitDataObj);
       if (resolved.index !== -1 && typeof window.renderLessonByIndex === 'function') {
         window.renderLessonByIndex(resolved.index, true);
+        const stageParam = urlParams.get('stage');
+        if (stageParam && typeof window.jumpToNarrativeBlock === 'function') {
+          setTimeout(() => {
+            window.jumpToNarrativeBlock(stageParam);
+          }, 220);
+        }
       }
     }
 
@@ -351,7 +431,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       quizParam === 'kt1' ||
       quizParam === 'kt2' ||
       quizParam === 'kt3' ||
-      urlParams.get('view') === 'quiz';
+      quizParam.startsWith('lesson');
 
     if (isQuizRequested && typeof window.startQuiz === 'function') {
       const unitData =
@@ -424,52 +504,9 @@ window.addEventListener('DOMContentLoaded', async () => {
     let targetView = (e.state && e.state.view) || urlView;
     let targetUnit = e.state && e.state.unit !== undefined ? e.state.unit : urlUnit;
 
-    if (targetView === 'usa' || targetView === 'gcse_usa' || targetView === 'gcse_usa_1954_1975') {
-      targetView = 'lessons';
-      targetUnit = 'usa';
-    } else if (targetView === 'quiz' || targetView === 'interactive_quiz' || targetView === 'retrieval') {
-      targetView = 'interactive';
-      targetUnit = targetUnit || 'edexcel_medicine';
-    } else if (targetView === 'reading' || targetView === 'guided-reading' || targetView === 'literary') {
-      targetView = 'reading';
-      targetUnit = targetUnit || 'great_war_part2';
-    } else if (targetView === 'marking' || targetView === 'answers' || targetView === 'marking-bank') {
-      targetView = 'marking';
-      targetUnit = targetUnit || 'great_war_part2';
-    } else if (
-      targetView === 'booklets' ||
-      targetView === 'workbooks' ||
-      targetView === 'workbook' ||
-      targetView === 'pdf' ||
-      targetView === 'pdfs' ||
-      targetView === 'textbook' ||
-      targetView === 'textbooks'
-    ) {
-      targetView = 'booklet';
-    } else if (
-      targetView === 'trend-radar' ||
-      targetView === 'matrix' ||
-      targetView === 'exam-matrix'
-    ) {
-      targetView = 'mock-exams';
-    } else if (targetView === 'department' || targetView === 'department_portal' || targetView === 'portal') {
-      targetView = 'department-portal';
-    } else if (targetView === 'curriculum_map') {
-      targetView = 'curriculum';
-    } else if (targetView === 'arena' || targetView === 'competitions_zone') {
-      targetView = 'competitions';
-    } else if (
-      targetView === 'revision_guides' ||
-      targetView === 'revision-guides' ||
-      targetView === 'exam_technique' ||
-      targetView === 'exam-technique'
-    ) {
-      targetView = 'curriculum';
-    } else if (!targetView && targetUnit) {
-      targetView = 'lessons';
-    } else if (!targetView) {
-      targetView = 'dashboard';
-    }
+    const norm = normalizeViewAndUnit(targetView, targetUnit);
+    targetView = norm.view;
+    targetUnit = norm.unit;
 
     switchView(targetView, targetUnit, true, { skipScrollToTop: targetScrollY > 0 }).then(() => {
       // Restore lesson view if requested

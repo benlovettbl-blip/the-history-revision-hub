@@ -27,6 +27,128 @@ export function getLessonEnquiryQuestion(lesson) {
   return '';
 }
 
+/**
+ * Evaluates whether an image candidate is an authentic historical photographic/documentary asset
+ * suitable for display on a lesson card banner (strictly rejecting SVGs, diagrams, flowcharts,
+ * and legacy AI/synthetic cover artwork).
+ */
+export function isValidCardPhoto(url) {
+  if (!url || typeof url !== 'string') return false;
+  const clean = url.trim().toLowerCase();
+  if (clean.length === 0) return false;
+  // Disallow SVGs and generic vector flowcharts
+  if (clean.endsWith('.svg') || clean.includes('.svg?')) return false;
+  // Disallow synthetic / AI parchment cover illustrations
+  if (
+    clean.includes('oslo_cover') ||
+    clean.includes('cover_placeholder') ||
+    clean.includes('placeholder_cover')
+  ) {
+    return false;
+  }
+  // Disallow flowcharts, schematics, and diagrams
+  if (
+    clean.includes('flowchart') ||
+    clean.includes('diagram') ||
+    clean.includes('schematic') ||
+    clean.includes('infographic')
+  ) {
+    return false;
+  }
+  return true;
+}
+
+export function resolveLessonCardImage(lesson) {
+  if (!lesson) return null;
+
+  // 1. Mandatory hardcoded historical protections for high-stakes GCSE turning points
+  if (
+    lesson.id === 'lesson_11' ||
+    lesson.id === 'lesson_13' ||
+    (lesson.title && lesson.title.includes('Oslo') && lesson.title.includes('Attempts at a Solution'))
+  ) {
+    return '/images/cme_oslo_handshake_1993.jpg';
+  }
+  if (
+    lesson.id === 'lesson_9' &&
+    lesson.title &&
+    (lesson.title.includes('Black September') || lesson.title.includes('Munich'))
+  ) {
+    return '/images/cme_munich_1972_balcony.jpg';
+  }
+
+  // 2. Explicitly configured card image or banner
+  const directCandidates = [
+    lesson.card_image,
+    lesson.banner,
+    lesson.hero_image,
+    lesson.cover_image,
+  ];
+
+  for (let cand of directCandidates) {
+    if (cand && typeof cand === 'object') {
+      cand = cand.image || cand.src || cand.image_url || cand.url || null;
+    }
+    if (cand && isValidCardPhoto(cand)) {
+      return cand;
+    }
+  }
+
+  // 3. Scan narrative blocks for authentic photographic plates
+  if (lesson.narrative_blocks && lesson.narrative_blocks.length > 0) {
+    for (const b of lesson.narrative_blocks) {
+      if (b.image && isValidCardPhoto(b.image)) {
+        return b.image;
+      }
+      if (b.source) {
+        const sImg = b.source.image || b.source.src || b.source.image_url;
+        if (sImg && isValidCardPhoto(sImg)) {
+          return sImg;
+        }
+      }
+    }
+  }
+
+  // 4. Scan primary sources for authentic archival photographs
+  if (lesson.sources && lesson.sources.length > 0) {
+    for (const s of lesson.sources) {
+      const sImg = s.image || s.src || s.image_url;
+      if (sImg && isValidCardPhoto(sImg)) {
+        return sImg;
+      }
+    }
+  }
+
+  // 5. Scan acts if present
+  if (lesson.acts && lesson.acts.length > 0) {
+    for (const a of lesson.acts) {
+      if (a.source) {
+        const aImg = a.source.image || a.source.src || a.source.image_url;
+        if (aImg && isValidCardPhoto(aImg)) {
+          return aImg;
+        }
+      }
+    }
+  }
+
+  // 6. Safe fallback (anything except SVGs and oslo_cover)
+  for (let cand of directCandidates) {
+    if (cand && typeof cand === 'object') {
+      cand = cand.image || cand.src || cand.image_url || cand.url || null;
+    }
+    if (
+      cand &&
+      typeof cand === 'string' &&
+      !cand.endsWith('.svg') &&
+      !cand.includes('oslo_cover')
+    ) {
+      return cand;
+    }
+  }
+
+  return null;
+}
+
 export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitData) {
   let lessonsHTML = `
       <style>
@@ -362,7 +484,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               (lesson.title && /KT\s*1\b/i.test(lesson.title)) ||
               (lesson.id &&
                 (lesson.id.startsWith('lesson_1_') ||
-                  ['lesson_1', 'lesson_2', 'lesson_3', 'lesson_4'].includes(lesson.id))) ||
+                  ['lesson_0', 'lesson_1', 'lesson_2', 'lesson_3'].includes(lesson.id))) ||
               index < 4;
           } else if (p.id === 'KT2') {
             isMatch =
@@ -370,12 +492,11 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               (lesson.id &&
                 (lesson.id.startsWith('lesson_2_') ||
                   [
+                    'lesson_4',
                     'lesson_5',
                     'lesson_6',
                     'lesson_7',
                     'lesson_8',
-                    'lesson_9',
-                    'lesson_10',
                   ].includes(lesson.id))) ||
               (index >= 4 && index < 9);
           } else if (p.id === 'KT3') {
@@ -383,7 +504,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               (lesson.title && /KT\s*3\b/i.test(lesson.title)) ||
               (lesson.id &&
                 (lesson.id.startsWith('lesson_3_') ||
-                  ['lesson_11', 'lesson_12', 'lesson_13'].includes(lesson.id))) ||
+                  ['lesson_9', 'lesson_10', 'lesson_11'].includes(lesson.id))) ||
               index >= 9;
           }
         }
@@ -392,32 +513,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           foundAny = true;
           const cardBadge = renderSidebarVideoBadgeHTML(lesson, { isCard: true });
 
-          let candidateImg =
-            lesson.card_image || lesson.banner || lesson.hero_image || lesson.cover_image;
-          if (!candidateImg && lesson.narrative_blocks && lesson.narrative_blocks.length > 0) {
-            for (const b of lesson.narrative_blocks) {
-              if (b.image) {
-                candidateImg = b.image;
-                break;
-              }
-              if (b.source && (b.source.image || b.source.src || b.source.image_url)) {
-                candidateImg = b.source.image || b.source.src || b.source.image_url;
-                break;
-              }
-            }
-          }
-          if (!candidateImg && lesson.sources && lesson.sources.length > 0) {
-            candidateImg =
-              lesson.sources[0].src || lesson.sources[0].image_url || lesson.sources[0].image;
-          }
-          if (candidateImg && typeof candidateImg === 'object') {
-            candidateImg =
-              candidateImg.image ||
-              candidateImg.src ||
-              candidateImg.image_url ||
-              candidateImg.url ||
-              null;
-          }
+          let candidateImg = resolveLessonCardImage(lesson);
 
           let topMediaHTML = '';
           if (candidateImg) {
@@ -434,6 +530,8 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
 
             if (imgUrl.includes('edward_jenner') || lesson.id === 'lesson_3_2') {
               cardPos = 'center 15%';
+            } else if (imgUrl.includes('oslo_handshake') || lesson.id === 'lesson_11' || lesson.id === 'lesson_13') {
+              cardPos = 'center 20%';
             }
 
             topMediaHTML = `
@@ -442,10 +540,14 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               </div>
             `;
           } else {
+            const hasL0 = currentUnitId === 'cme_new' || lesson.id === 'lesson_0';
+            const badgeLabel = unitData.type === 'trip'
+              ? `Day ${index + 1}`
+              : (hasL0 && index === 0 ? 'Intro Lesson' : (hasL0 ? `Lesson ${index}` : `Lesson ${index + 1}`));
             topMediaHTML = `
               <div style="position: relative; width: 100%; height: 50px; background: linear-gradient(135deg, ${p.border || '#1e3a8a'} 0%, #3b82f6 100%); display: flex; align-items: center; padding: 0 16px; flex-shrink: 0;">
                 <span style="background: rgba(255,255,255,0.22); color: #ffffff; font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 14px; text-transform: uppercase; letter-spacing: 0.04em;">
-                  ${unitData.type === 'trip' ? 'Day' : 'Lesson'} ${index + 1}
+                  ${badgeLabel}
                 </span>
               </div>
             `;
@@ -457,8 +559,18 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           let shortCode = `Lesson ${index + 1}`;
           const ktMatch = displayTitle.match(/^(KT\s*\d+\.\d+)\s*(?:Enquiry)?:\s*(.*)$/i);
           if (ktMatch) {
-            shortCode = `${ktMatch[1]} • Lesson ${index + 1}`;
+            if (currentUnitId === 'cme_new' || lesson.id === 'lesson_0' || ktMatch[1] === 'KT 1.0') {
+              if (index === 0 || lesson.id === 'lesson_0' || ktMatch[1] === 'KT 1.0') {
+                shortCode = `${ktMatch[1]} • Intro Lesson`;
+              } else {
+                shortCode = `${ktMatch[1]} • Lesson ${index}`;
+              }
+            } else {
+              shortCode = `${ktMatch[1]} • Lesson ${index + 1}`;
+            }
             displayTitle = ktMatch[2].trim();
+          } else if (currentUnitId === 'cme_new' && (index === 0 || lesson.id === 'lesson_0')) {
+            shortCode = `Intro Lesson`;
           }
 
           const displayEnquiry = getLessonEnquiryQuestion(lesson);
@@ -472,6 +584,12 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
                     <span style="font-size: 0.75rem; font-weight: 700; color: ${p.border || '#2563eb'}; text-transform: uppercase; letter-spacing: 0.05em;">
                       ${shortCode}
                     </span>
+                    ${(() => {
+                      const cnt = typeof window !== 'undefined' && window.getLessonInfographicCount ? window.getLessonInfographicCount(currentUnitId, lesson.id || index) : 0;
+                      if (!cnt || cnt === 0) return '';
+                      const label = cnt > 1 ? `Infographics (${cnt})` : 'Infographic';
+                      return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}');}" title="Open Visual Revision Mat" style="padding: 2.5px 8px; font-size: 0.72rem; font-weight: 700; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#0284c7'; this.style.color='#ffffff';" onmouseout="this.style.background='#e0f2fe'; this.style.color='#0284c7';"><i class="fa-solid fa-chart-pie" style="font-size: 0.7rem;"></i> <span>${label}</span></button>`;
+                    })()}
                   </div>
                   <h3 style="margin: 0 0 8px 0; color: #0f172a; font-size: 1.02rem; font-weight: 700; line-height: 1.35; font-family: 'Playfair Display', Georgia, serif;">
                     ${displayTitle}
@@ -1019,37 +1137,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           cardBadge = `Day ${lesson.id.split('_')[1]}`;
         }
 
-        let candidateImg =
-          lesson.card_image || lesson.banner || lesson.hero_image || lesson.cover_image;
-        if (!candidateImg && lesson.sources && lesson.sources.length > 0) {
-          candidateImg =
-            lesson.sources[0].src || lesson.sources[0].image_url || lesson.sources[0].image;
-        }
-        if (!candidateImg && lesson.narrative_blocks && lesson.narrative_blocks.length > 0) {
-          for (const b of lesson.narrative_blocks) {
-            if (b.source && (b.source.image || b.source.src || b.source.image_url)) {
-              candidateImg = b.source.image || b.source.src || b.source.image_url;
-              break;
-            }
-          }
-        }
-        if (!candidateImg && lesson.acts && lesson.acts.length > 0) {
-          for (const a of lesson.acts) {
-            if (a.source && (a.source.image || a.source.src || a.source.image_url)) {
-              candidateImg = a.source.image || a.source.src || a.source.image_url;
-              break;
-            }
-          }
-        }
-
-        if (candidateImg && typeof candidateImg === 'object') {
-          candidateImg =
-            candidateImg.image ||
-            candidateImg.src ||
-            candidateImg.image_url ||
-            candidateImg.url ||
-            null;
-        }
+        let candidateImg = resolveLessonCardImage(lesson);
 
         let topMediaHTML = '';
         if (candidateImg) {
@@ -1065,6 +1153,8 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
 
           if (imgUrl.includes('edward_jenner') || lesson.id === 'lesson_3_2') {
             cardPos = 'center 15%';
+          } else if (imgUrl.includes('oslo_handshake') || lesson.id === 'lesson_13') {
+            cardPos = 'center 20%';
           }
 
           if (

@@ -1,4 +1,12 @@
 export default {
+  "synopsis": "Two thousand years of human filth, deadly waterborne pestilence, and the desperate struggle for pure water. From Roman military engineers carving mountain aqueducts and baths to medieval monks engineering lead conduits against the Black Death, Britain's crowded cities were recurring death-traps. Follow the fearless visionaries—from John Snow mapping the Broad Street pump to Joseph Bazalgette blasting three hundred million bricks into the London subsoil to defeat the Great Stink—who conquered miasma theory and rebuilt public health from the sewers up.",
+  "synopsis_tags": [
+      "Roman Aqueducts & Baths",
+      "Medieval Lead Conduits",
+      "The Great Stink (1858)",
+      "John Snow & Cholera",
+      "Bazalgette's Underground Sewers"
+  ],
   "id": "water_and_sanitation",
   "edition": "2026.1",
   "title": "KS3: Water and Sanitation Through Time",
@@ -4351,7 +4359,10 @@ export default {
           "letter": "Source C",
           "type": "visual",
           "title": "Edwin Chadwick's 'Report on the Sanitary Condition of the Labouring Population' (1842)",
-          "caption": "Title page of Chadwick's pioneering 1842 Parliamentary Blue Book presenting the first nationwide statistical analysis of poverty and disease.",
+          "type": "written",
+              "text": "The primary and most important condition of health in any large town is the prompt and systematic removal of all decomposing refuse, night-soil, and stagnant matter by a complete system of underground drainage... The pestilential diseases which ravage the labouring classes are caused by atmospheric impurities produced by decomposing matter, by damp and filth, and close and overcrowded dwellings. The expense of public drainage works would be far less than the financial burden of widowhood and orphanhood created by preventable pestilence.",
+              "content": "The primary and most important condition of health in any large town is the prompt and systematic removal of all decomposing refuse, night-soil, and stagnant matter by a complete system of underground drainage... The pestilential diseases which ravage the labouring classes are caused by atmospheric impurities produced by decomposing matter, by damp and filth, and close and overcrowded dwellings. The expense of public drainage works would be far less than the financial burden of widowhood and orphanhood created by preventable pestilence.",
+              "caption": "Title page of Chadwick's pioneering 1842 Parliamentary Blue Book presenting the first nationwide statistical analysis of poverty and disease.",
           "image": "/images/chadwick_sanitary_report_1842.jpg",
           "source_context": "Written by barrister and Poor Law commissioner Edwin Chadwick in 1842 after surveying over 2,000 local doctors across England, Wales, and Scotland. Chadwick compiled death rates, wage levels, and drainage conditions to show that filth caused premature death and cost taxpayers millions in poor relief. **Hinge Question:** Why did Chadwick believe that spending public taxes on sewers would actually make Britain richer rather than poorer?",
           "prompt": "How did Edwin Chadwick use evidence in Source C to challenge traditional Victorian beliefs about poverty and public health?",

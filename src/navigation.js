@@ -76,6 +76,7 @@ export function initNavigationUI() {
       viewName === 'timeline' ||
       viewName === 'booklet' ||
       viewName === 'mock-exams' ||
+      viewName === 'exam-practice' ||
       viewName === 'individuals' ||
       viewName === 'reading' ||
       viewName === 'guided-reading' ||
@@ -394,6 +395,77 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     skipHistory = false;
   }
 
+  // Comprehensive view alias normalization for QR codes, links, and direct URLs
+  let rawView = (viewName || '').toLowerCase().trim();
+  if (rawView === 'usa' || rawView === 'gcse_usa' || rawView === 'gcse_usa_1954_1975') {
+    viewName = 'lessons';
+    param = 'usa';
+  } else if (
+    rawView === 'quiz' ||
+    rawView === 'quizzes' ||
+    rawView === 'quizzing' ||
+    rawView === 'interactive_quiz' ||
+    rawView === 'interactive-quiz' ||
+    rawView === 'interactive' ||
+    rawView === 'retrieval' ||
+    rawView === 'practice-quizzes' ||
+    rawView === 'practice_quizzes'
+  ) {
+    viewName = 'interactive';
+    param = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
+  } else if (
+    rawView === 'reading' ||
+    rawView === 'guided-reading' ||
+    rawView === 'guided_reading' ||
+    rawView === 'literary' ||
+    rawView === 'audio'
+  ) {
+    viewName = 'reading';
+    param = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
+  } else if (
+    rawView === 'marking' ||
+    rawView === 'answers' ||
+    rawView === 'marking-bank' ||
+    rawView === 'marking_bank' ||
+    rawView === 'self-check' ||
+    rawView === 'self_check'
+  ) {
+    viewName = 'marking';
+    param = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
+  } else if (
+    rawView === 'booklets' ||
+    rawView === 'workbooks' ||
+    rawView === 'workbook' ||
+    rawView === 'pdf' ||
+    rawView === 'pdfs' ||
+    rawView === 'textbook' ||
+    rawView === 'textbooks'
+  ) {
+    viewName = 'booklet';
+  } else if (rawView === 'lesson' || rawView === 'lessons' || rawView === 'unit') {
+    viewName = 'lessons';
+    param = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
+  } else if (rawView === 'trend-radar' || rawView === 'matrix' || rawView === 'exam-matrix') {
+    viewName = 'mock-exams';
+  } else if (rawView === 'department' || rawView === 'department_portal' || rawView === 'portal') {
+    viewName = 'department-portal';
+  } else if (rawView === 'curriculum_map' || rawView === 'curriculum') {
+    viewName = 'curriculum';
+  } else if (rawView === 'arena' || rawView === 'competitions' || rawView === 'competitions_zone') {
+    viewName = 'competitions';
+  } else if (
+    rawView === 'revision_guides' ||
+    rawView === 'revision-guides' ||
+    rawView === 'exam_technique' ||
+    rawView === 'exam-technique'
+  ) {
+    viewName = 'curriculum';
+  } else if (rawView === 'gallery') {
+    viewName = 'masterpiece';
+  } else if (rawView === 'textbook-reader') {
+    viewName = 'reader';
+  }
+
   // Safeguard lockdown mode enforcement
   const urlParams =
     typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
@@ -528,44 +600,13 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     }
   }
 
-  // Map direct unit view aliases
-  if (viewName === 'usa' || viewName === 'gcse_usa' || viewName === 'gcse_usa_1954_1975') {
-    viewName = 'lessons';
-    param = 'usa';
-  } else if (viewName === 'quiz' || viewName === 'interactive_quiz' || viewName === 'retrieval') {
-    viewName = 'interactive';
-    param = param || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
-  } else if (
-    viewName === 'booklets' ||
-    viewName === 'workbooks' ||
-    viewName === 'workbook' ||
-    viewName === 'pdf' ||
-    viewName === 'pdfs' ||
-    viewName === 'textbook' ||
-    viewName === 'textbooks'
-  ) {
-    viewName = 'booklet';
-  } else if (viewName === 'department' || viewName === 'department_portal' || viewName === 'portal') {
-    viewName = 'department-portal';
-  } else if (viewName === 'arena' || viewName === 'competitions_zone') {
-    viewName = 'competitions';
-  } else if (
-    viewName === 'curriculum_map' ||
-    viewName === 'revision_guides' ||
-    viewName === 'revision-guides' ||
-    viewName === 'exam_technique' ||
-    viewName === 'exam-technique'
-  ) {
-    viewName = 'curriculum';
-  }
-
   // Handle view rendering
   if (viewName === 'dashboard') {
     renderDashboard();
   } else if (viewName === 'profile') {
     renderProfileView();
   } else if (viewName === 'interactive' || viewName === 'quiz') {
-    const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
+    const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
     await loadUnit(targetUnit);
     renderInteractiveQuiz();
   } else if (viewName === 'timeline') {
@@ -580,7 +621,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
         : state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
     await switchView('lessons', targetUnit);
     return;
-  } else if (viewName === 'mock-exams') {
+  } else if (viewName === 'mock-exams' || viewName === 'exam-practice') {
     if (param) await loadUnit(param);
     renderMockExamsView();
   } else if (viewName === 'lessons') {
@@ -1012,14 +1053,16 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     const lessonsList = unitData.lessons || unitData.subtopics || [];
     if (topTree && lessonsList.length > 0) {
       topTree.innerHTML = '';
+      const hasLessonZero = (lessonsList[0] && (lessonsList[0].id === 'lesson_0' || (lessonsList[0].title && lessonsList[0].title.includes('KT 1.0'))));
       lessonsList.forEach((sub, idx) => {
         const item = document.createElement('div');
         item.className = 'sidebar-lesson-item';
         item.setAttribute('data-lesson-index', idx);
-        const rawTitle = sub.title || `Lesson ${idx + 1}`;
+        const rawTitle = sub.title || (hasLessonZero && idx === 0 ? 'Intro Lesson' : `Lesson ${hasLessonZero ? idx : idx + 1}`);
         const cleanTitle = rawTitle.replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '').trim();
+        const badgeText = hasLessonZero ? (idx === 0 ? '0' : idx) : (idx + 1);
         item.innerHTML = `
-          <span class="sidebar-lesson-badge">${idx + 1}</span>
+          <span class="sidebar-lesson-badge">${badgeText}</span>
           <span class="sidebar-lesson-title-text" title="${cleanTitle.replace(/"/g, '&quot;')}">${cleanTitle}</span>
         `;
         item.addEventListener('click', (e) => {

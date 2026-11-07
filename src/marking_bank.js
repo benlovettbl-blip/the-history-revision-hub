@@ -303,7 +303,7 @@ export function renderDepartmentMarkingBank(container, unitId, unitData = {}) {
 
       <!-- Cognitive Guidance Strip -->
       <div style="background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 0 8px 8px 0; padding: 14px 18px; margin-bottom: 24px; font-size: 0.9rem; color: #1e3a8a; line-height: 1.5;">
-        <strong><i class="fa-solid fa-lightbulb"></i> How to use this Self-Checking Marking Bank:</strong> Compare what you wrote in black ink on your printed retrieval pages against the model answers below. For full marks, ensure your answer contains both the <strong>Core Historical Fact</strong> and the <strong>Causal Mechanism / Detail</strong>. Record your final score out of 6 on your booklet front cover!
+        <strong><i class="fa-solid fa-lightbulb"></i> How to use this Self-Checking Marking Bank:</strong> Compare what you wrote in black ink on your printed retrieval pages against the model answers below. For full marks, ensure your answer contains both the <strong>Key Fact</strong> and the <strong>Historical Explanation</strong>. Record your final score out of 6 on your booklet front cover!
       </div>
 
       <!-- Enquiries Filter Tabs -->
@@ -369,11 +369,11 @@ export function renderDepartmentMarkingBank(container, unitId, unitData = {}) {
                       </summary>
                       <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1; font-size: 0.92rem; line-height: 1.55;">
                         <div style="margin-bottom: 6px;">
-                          <strong style="color: #15803d; text-transform: uppercase; font-size: 0.78rem; letter-spacing: 0.5px; display: block;">Approved Core Fact:</strong>
+                          <strong style="color: #15803d; text-transform: uppercase; font-size: 0.78rem; letter-spacing: 0.5px; display: block;">Key Fact:</strong>
                           <span style="font-weight: 700; color: #0f172a;">${q.a}</span>
                         </div>
                         <div>
-                          <strong style="color: #475569; text-transform: uppercase; font-size: 0.78rem; letter-spacing: 0.5px; display: block;">Historical Mechanism & Context:</strong>
+                          <strong style="color: #475569; text-transform: uppercase; font-size: 0.78rem; letter-spacing: 0.5px; display: block;">Historical Explanation:</strong>
                           <span style="color: #334155;">${q.exp}</span>
                         </div>
                       </div>

@@ -4405,7 +4405,7 @@
           "explanation": "Hospitals provided shelter, basic nursing, and religious services; medical treatments were not attempted."
         },
         {
-          "question": "Which of the following patient groups was strictly EXCLUDED from medieval monastic hospitals?",
+          "question": "Which patient groups were strictly excluded from medieval monastic hospitals to prevent contamination and disorder?",
           "options": [
             "The elderly and infirm poor.",
             "Traveling religious pilgrims.",
@@ -4413,7 +4413,8 @@
             "Impoverished church clerics."
           ],
           "answer": "Infectious patients (lepers, plague victims) and pregnant women.",
-          "explanation": "Hospitals barred infectious patients to preserve peace, avoid contamination, and protect prayers."
+          "explanation": "Hospitals barred infectious patients to preserve peace, avoid contamination, and protect prayers.",
+          "q": "Which patient groups were strictly excluded from medieval monastic hospitals to prevent contamination and disorder?"
         },
         {
           "question": "What famous London hospital was founded in 1123 by Rahere to care for the poor?",
@@ -15873,7 +15874,7 @@
           "explanation": "Giving working-class town workers the vote meant politicians like Benjamin Disraeli had to champion public health (\"Sanitas sanitatum\") to secure election victories."
         },
         {
-          "question": "Which of the following was a mandatory requirement imposed on local councils by the compulsory 1875 Public Health Act?",
+          "question": "What was a mandatory requirement imposed on local councils by the compulsory 1875 Public Health Act?",
           "options": [
             "Appointing a qualified Medical Officer of Health and providing clean water, paving, lighting, and sewage disposal.",
             "Building free sanatoria in every rural parish.",
@@ -15881,7 +15882,8 @@
             "Compulsory quarantine for all arriving maritime sailors."
           ],
           "answer": "Appointing a qualified Medical Officer of Health and providing clean water, paving, lighting, and sewage disposal.",
-          "explanation": "The 1875 Act legally compelled local authorities to inspect food, pave and light streets, manage sewers, and appoint Medical Officers of Health."
+          "explanation": "The 1875 Act legally compelled local authorities to inspect food, pave and light streets, manage sewers, and appoint Medical Officers of Health.",
+          "q": "What was a mandatory requirement imposed on local councils by the compulsory 1875 Public Health Act?"
         }
       ],
       "extra_videos": [],
@@ -17840,7 +17842,7 @@
           "explanation": "Endoscopes are inserted into the body to inspect digestive tracts and internal cavities."
         },
         {
-          "question": "Which of the following is a primary lifestyle cause of cardiovascular disease and lung cancer?",
+          "question": "What is a primary lifestyle cause of cardiovascular disease and lung cancer targeted by modern public health campaigns?",
           "options": [
             "Tobacco smoking",
             "Drinking clean tap water",
@@ -17848,7 +17850,8 @@
             "Penicillin injections"
           ],
           "answer": "Tobacco smoking",
-          "explanation": "Tobacco smoking introduces carcinogens and carbon monoxide, driving cancer and heart disease."
+          "explanation": "Tobacco smoking introduces carcinogens and carbon monoxide, driving cancer and heart disease.",
+          "q": "What is a primary lifestyle cause of cardiovascular disease and lung cancer targeted by modern public health campaigns?"
         },
         {
           "question": "What medical term describes cutting open a patient’s abdomen purely to see what is wrong inside?",

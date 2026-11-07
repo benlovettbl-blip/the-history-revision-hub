@@ -1045,7 +1045,7 @@ function renderQuizPage(enq, pageNum, totalPages) {
             <span class="q-solid-line"></span>
           </div>
           <div class="q-line-row">
-            <span class="q-line-lbl cue">${starterPrompt}</span>
+            <span class="q-line-lbl">Explanation:</span>
             <span class="q-solid-line"></span>
           </div>
         </div>`;
@@ -1079,7 +1079,7 @@ async function compileCombinedWorkbook() {
 
   // Generate QR codes
   const coverQrDataUrl = await QRCode.toDataURL(
-    'https://the-history-revision-hub.netlify.app/?view=lessons&stage=3&unit=great_war_part2',
+    'https://the-history-revision-hub.netlify.app/?unit=great_war_part2&view=lessons',
     { margin: 1, width: 256, color: { dark: '#000000', light: '#ffffff' } }
   );
 

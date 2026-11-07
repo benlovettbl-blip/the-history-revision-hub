@@ -92,7 +92,7 @@ const A4_BOOKLET_CSS = `
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
-  body {
+  html, body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -104,6 +104,8 @@ const A4_BOOKLET_CSS = `
   .a4-page {
     width: 210mm;
     height: 297mm;
+    min-height: 297mm;
+    max-height: 297mm;
     padding: 9.5mm 14mm 7.5mm 14mm;
     margin: 0 auto;
     page-break-after: always;
@@ -134,10 +136,17 @@ const A4_BOOKLET_CSS = `
   @media print {
     body { background: transparent; }
     .a4-page {
-      margin: 0;
-      box-shadow: none;
-      page-break-after: always;
-      break-after: page;
+      width: 210mm !important;
+      height: 297mm !important;
+      min-height: 297mm !important;
+      max-height: 297mm !important;
+      box-sizing: border-box !important;
+      margin: 0 !important;
+      box-shadow: none !important;
+      page-break-inside: avoid !important;
+      break-inside: avoid !important;
+      page-break-after: always !important;
+      break-after: page !important;
     }
     .a4-page:last-child,
     .a4-page:last-of-type {
@@ -151,6 +160,9 @@ const A4_BOOKLET_CSS = `
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
   }
 
   /* Headers and Footers */
@@ -270,7 +282,7 @@ const A4_BOOKLET_CSS = `
 
   /* Cover Archival Plate */
   .cover-map-container {
-    margin: 3px 0;
+    margin: 5px 0;
     text-align: center;
     background: #ffffff;
     border: 1.5px solid #000000;
@@ -282,7 +294,7 @@ const A4_BOOKLET_CSS = `
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 55mm;
+    height: 98mm;
     border: 1.2px solid #000000;
     border-radius: 2px;
   }
@@ -306,16 +318,16 @@ const A4_BOOKLET_CSS = `
   .tracking-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 7.8pt;
+    font-size: 8.0pt;
     background: #ffffff;
     color: #000000;
-    margin-top: 3px;
+    margin-top: 4px;
   }
   .tracking-table th {
     background: #000000;
     color: #ffffff;
     font-weight: 800;
-    padding: 4px 4px;
+    padding: 5px 4px;
     border: 1.2px solid #000000;
     text-transform: uppercase;
     letter-spacing: 0.2px;
@@ -324,7 +336,7 @@ const A4_BOOKLET_CSS = `
   }
   .tracking-table td {
     border: 1.2px solid #000000;
-    padding: 6.5px 5px;
+    padding: 10px 5px;
     text-align: center;
     vertical-align: middle;
     color: #000000;
@@ -351,15 +363,15 @@ const A4_BOOKLET_CSS = `
     display: grid;
     grid-template-columns: 1fr 42mm;
     gap: 8px;
-    margin-top: 4px;
+    margin-top: 5px;
     align-items: stretch;
   }
   .protocol-box {
     border: 1.2px solid #000000;
     border-radius: 4px;
-    padding: 6px 8px;
-    font-size: 7.2pt;
-    line-height: 1.35;
+    padding: 7px 10px;
+    font-size: 7.4pt;
+    line-height: 1.4;
     background: #f8fafc;
   }
   .protocol-box strong {
@@ -425,11 +437,11 @@ const A4_BOOKLET_CSS = `
 
   .reading-meta-strip {
     display: grid;
-    grid-template-columns: 36mm 1fr 34mm;
-    gap: 8px;
+    grid-template-columns: 40mm 1fr 36mm;
+    gap: 10px;
     border: 1.2px solid #000000;
     border-top: none;
-    padding: 6px 8px;
+    padding: 7px 10px;
     background: #f8fafc;
     align-items: center;
   }
@@ -440,8 +452,8 @@ const A4_BOOKLET_CSS = `
     text-align: center;
   }
   .reading-cover-img {
-    max-height: 38mm;
-    max-width: 34mm;
+    max-height: 50mm;
+    max-width: 42mm;
     border: 1.2px solid #000000;
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.15);
@@ -456,13 +468,13 @@ const A4_BOOKLET_CSS = `
     line-height: 1.15;
   }
   .reading-author-context {
-    font-size: 7.4pt;
-    line-height: 1.35;
+    font-size: 7.8pt;
+    line-height: 1.40;
     color: #000000;
   }
   .reading-author-context strong.sec-lbl {
     display: block;
-    font-size: 7.6pt;
+    font-size: 7.8pt;
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: 2px;
@@ -479,8 +491,8 @@ const A4_BOOKLET_CSS = `
     justify-content: center;
   }
   .reading-qr-img {
-    width: 24mm;
-    height: 24mm;
+    width: 28mm;
+    height: 28mm;
     display: block;
   }
   .reading-qr-lbl {
@@ -496,19 +508,20 @@ const A4_BOOKLET_CSS = `
     flex: 1;
     border: 1.2px solid #000000;
     border-radius: 4px;
-    margin: 4px 0;
-    padding: 7px 11px;
+    margin: 6px 0;
+    padding: 13px 15px;
     background: #ffffff;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 9.3pt;
-    line-height: 1.46;
+    font-family: 'Lora', 'Playfair Display', Georgia, serif;
+    font-size: 11.2pt;
+    line-height: 1.66;
     color: #000000;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 14px;
   }
   .extract-body-box p {
-    margin: 0 0 5px 0;
+    margin: 0;
     text-indent: 0;
   }
   .extract-body-box p:last-child {
@@ -519,19 +532,19 @@ const A4_BOOKLET_CSS = `
   .verso-support-grid {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
-    gap: 8px;
-    margin-bottom: 4px;
+    gap: 10px;
+    margin-bottom: 5px;
   }
   .verso-vault-box {
     border: 1.2px solid #000000;
     border-radius: 4px;
-    padding: 4px 7px;
+    padding: 6px 9px;
     background: #f8fafc;
-    font-size: 7.0pt;
-    line-height: 1.3;
+    font-size: 7.4pt;
+    line-height: 1.35;
   }
   .verso-vault-title {
-    font-size: 7.2pt;
+    font-size: 7.4pt;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 2px;
@@ -541,13 +554,13 @@ const A4_BOOKLET_CSS = `
   .verso-hinge-box {
     border: 1.2px solid #000000;
     border-radius: 4px;
-    padding: 4px 7px;
+    padding: 6px 9px;
     background: #f8fafc;
-    font-size: 7.0pt;
-    line-height: 1.3;
+    font-size: 7.4pt;
+    line-height: 1.35;
   }
   .verso-hinge-title {
-    font-size: 7.2pt;
+    font-size: 7.4pt;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 2px;
@@ -559,13 +572,14 @@ const A4_BOOKLET_CSS = `
   .oral-signoff-strip {
     border: 1.4px solid #000000;
     border-radius: 4px;
-    padding: 4px 8px;
+    padding: 6px 12px;
     background: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 7.6pt;
+    font-size: 7.8pt;
     font-weight: 700;
+    min-height: 34px;
   }
   .oral-signoff-strip .box-label {
     display: flex;
@@ -576,7 +590,7 @@ const A4_BOOKLET_CSS = `
     border-bottom: 1.2px solid #000000;
     width: 32mm;
     display: inline-block;
-    min-height: 11px;
+    min-height: 15px;
     margin-left: 4px;
   }
 
@@ -600,18 +614,19 @@ const A4_BOOKLET_CSS = `
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    margin: 3px 0;
-    gap: 4px;
+    margin: 4px 0;
+    gap: 6px;
   }
   .q-block {
     background: #ffffff;
     border: 1.3px solid #000000;
     border-radius: 4px;
-    padding: 4.5px 8px;
+    padding: 6.5px 9px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 25.5mm;
+    flex: 1;
+    min-height: 33mm;
   }
   .q-header {
     display: flex;
@@ -645,15 +660,15 @@ const A4_BOOKLET_CSS = `
   .q-line-row {
     display: flex;
     align-items: flex-end;
-    margin-top: 1.5px;
-    gap: 6px;
+    margin-top: 3px;
+    gap: 8px;
   }
   .q-line-lbl {
     font-weight: 800;
     font-size: 8.0pt;
     color: #000000;
     white-space: nowrap;
-    min-width: 44px;
+    min-width: 48px;
   }
   .q-line-lbl.cue {
     font-style: italic;
@@ -662,20 +677,20 @@ const A4_BOOKLET_CSS = `
   }
   .q-solid-line {
     flex: 1;
-    border-bottom: 1.4px solid #000000;
-    min-height: 14px;
+    border-bottom: 1.3px solid #000000;
+    min-height: 19px;
   }
 
   /* Support Term Vault at Base of Recto Page */
   .term-vault-box {
     border: 1.2px solid #000000;
     border-radius: 4px;
-    padding: 3.5px 7px;
+    padding: 4.5px 8px;
     background: #ffffff;
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 2px;
+    margin-top: 4px;
   }
   .term-vault-lbl {
     font-weight: 900;
@@ -693,8 +708,8 @@ const A4_BOOKLET_CSS = `
   .term-pill {
     border: 1.2px solid #000000;
     border-radius: 3px;
-    padding: 1px 6px;
-    font-size: 7.2pt;
+    padding: 2px 7px;
+    font-size: 7.4pt;
     font-weight: 800;
     background: #f8fafc;
     color: #000000;
@@ -726,7 +741,7 @@ const A4_BOOKLET_CSS = `
   .back-marking-hero {
     border: 1.5px solid #000000;
     border-top: none;
-    padding: 10px 14px;
+    padding: 12px 14px;
     background: #f8fafc;
     display: grid;
     grid-template-columns: 44mm 1fr;
@@ -744,8 +759,8 @@ const A4_BOOKLET_CSS = `
     align-items: center;
   }
   .marking-qr-img {
-    width: 34mm;
-    height: 34mm;
+    width: 36mm;
+    height: 36mm;
     display: block;
   }
   .marking-qr-lbl {
@@ -766,7 +781,7 @@ const A4_BOOKLET_CSS = `
   .marking-info-content p {
     margin: 0 0 6px 0;
     font-size: 8.0pt;
-    line-height: 1.35;
+    line-height: 1.38;
     color: #000000;
   }
   .rationale-callout {
@@ -782,8 +797,8 @@ const A4_BOOKLET_CSS = `
   .back-pathways-container {
     border: 1.4px solid #000000;
     border-radius: 4px;
-    padding: 8px 10px;
-    margin: 5px 0;
+    padding: 9px 12px;
+    margin: 6px 0;
     background: #ffffff;
   }
   .pathway-grid {
@@ -795,10 +810,10 @@ const A4_BOOKLET_CSS = `
   .pathway-card {
     border: 1.2px solid #000000;
     border-radius: 3px;
-    padding: 5px;
+    padding: 6px;
     background: #f8fafc;
-    font-size: 6.8pt;
-    line-height: 1.25;
+    font-size: 7.0pt;
+    line-height: 1.3;
   }
   .pathway-card strong {
     display: block;
@@ -813,9 +828,9 @@ const A4_BOOKLET_CSS = `
   .unit-summary-ledger {
     border: 1.4px solid #000000;
     border-radius: 4px;
-    padding: 8px 10px;
+    padding: 9px 12px;
     background: #ffffff;
-    margin: 4px 0;
+    margin: 6px 0;
   }
   .summary-table {
     width: 100%;
@@ -834,28 +849,29 @@ const A4_BOOKLET_CSS = `
   }
   .summary-table td {
     border: 1.2px solid #000000;
-    padding: 5px 4px;
+    padding: 6.5px 5px;
+    font-size: 8.0pt;
     font-weight: 700;
   }
 
   .teacher-feedback-box {
     border: 1.4px solid #000000;
     border-radius: 4px;
-    padding: 7px 10px;
+    padding: 10px 14px;
     background: #f8fafc;
-    margin-top: 4px;
-    font-size: 7.4pt;
+    margin-top: 6px;
+    font-size: 7.6pt;
     line-height: 1.4;
   }
   .teacher-feedback-lines {
-    margin-top: 4px;
+    margin-top: 6px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
   }
   .feedback-line {
     border-bottom: 1.2px solid #000000;
-    height: 12px;
+    height: 16px;
   }
 `;
 
@@ -869,7 +885,7 @@ async function compile12PageCompanion() {
 
   // Generate QR Codes
   const coverQrDataUrl = await QRCode.toDataURL(
-    'https://the-history-revision-hub.netlify.app/?view=lessons&stage=3&unit=great_war_part2',
+    'https://the-history-revision-hub.netlify.app/?unit=great_war_part2&view=lessons',
     { margin: 1, width: 256, color: { dark: '#000000', light: '#ffffff' } },
   );
 
@@ -902,7 +918,7 @@ async function compile12PageCompanion() {
   <title>${data.title} • Master Knowledge Retrieval Companion</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
   <style>
     ${A4_BOOKLET_CSS}
   </style>
@@ -1123,7 +1139,7 @@ async function compile12PageCompanion() {
           <span class="q-solid-line"></span>
         </div>
         <div class="q-line-row">
-          <span class="q-line-lbl cue">${starterPrompt}</span>
+          <span class="q-line-lbl">Explanation:</span>
           <span class="q-solid-line"></span>
         </div>
       </div>`;
@@ -1242,6 +1258,8 @@ async function compile12PageCompanion() {
         <span>Effort Grade: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</span>
       </div>
       <div class="teacher-feedback-lines">
+        <span class="feedback-line"></span>
+        <span class="feedback-line"></span>
         <span class="feedback-line"></span>
         <span class="feedback-line"></span>
         <span class="feedback-line"></span>

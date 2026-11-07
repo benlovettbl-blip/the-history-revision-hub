@@ -112,7 +112,7 @@ const lesson0 = [
   ),
   makeQuestion(
     'Explain the importance of the Sea of Galilee (Lake Tiberias) for regional tension in the 1950s and 1960s.',
-    'It provided the freshwater reservoir for Israel’s National Water Carrier, sparking military clashes when Syria attempted to divert its headwaters (Banias and Hasbani rivers).',
+    'It provided the freshwater reservoir for Israel’s National Water Carrier, sparking military clashes when Syria attempted to divert its headwaters (the River Jordan headwaters).',
     'It was the disputed maritime sea lane linking the Red Sea directly to the Indian Ocean.',
     'It served as the primary boundary line dividing Egyptian and British military garrisons in Sinai.',
     'It was an uninhabited saltwater depression used exclusively for underground chemical testing by the United Nations.',

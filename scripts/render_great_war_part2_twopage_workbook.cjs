@@ -140,7 +140,7 @@ const enquiryConfigs = [
   },
   {
     lessonNum: 2,
-    id: 'lesson_2_trenches',
+    id: 'lesson_2_trenches_haig',
     title: 'Enquiry 2: Trench Warfare & The Haig Controversy (1915–1916)',
     enquiryQuestion:
       'Did British military generals make trench slaughter worse, or was Haig trapped in an industrial learning curve?',
@@ -233,7 +233,7 @@ const enquiryConfigs = [
   },
   {
     lessonNum: 3,
-    id: 'lesson_3_empire',
+    id: 'lesson_3_empire_troops',
     title: 'Enquiry 3: Global Empire & The Forgotten Fronts (1914–1918)',
     enquiryQuestion:
       'Why were the military contributions of 4 million colonial troops and labourers marginalized in postwar British memory?',
@@ -329,7 +329,7 @@ const enquiryConfigs = [
   },
   {
     lessonNum: 4,
-    id: 'lesson_4_home_front',
+    id: 'lesson_4_home_front_dora',
     title: 'Enquiry 4: The Home Front & Women’s Total War (1914–1918)',
     enquiryQuestion:
       'How far did the First World War transform the British state and daily life on the Home Front?',
@@ -584,9 +584,11 @@ function renderSpinePage(cfg, pageNum) {
         )
         .join('');
 
-      const rawQ = (st.questionHeading || st.question || '').replace(/^\[[\d\.]+\]\s*/, '');
+      const rawQ = (st.questionHeading || st.question || '').replace(/^\[[\d\.]+\]\s*/, '').trim();
       const stageNum = st.step || sIdx + 1;
-      const questionText = rawQ.length > 80 ? rawQ.slice(0, 77) + '...' : rawQ;
+      const questionText = rawQ;
+      const combinedLen = questionText.length + (st.date ? String(st.date).length : 0);
+      const qFontSize = combinedLen > 105 ? '7.0pt' : combinedLen > 95 ? '7.3pt' : combinedLen > 85 ? '7.7pt' : combinedLen > 75 ? '8.1pt' : '8.6pt';
 
       return `
         <div class="spine-stage-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-bottom: 2.5px; border: 1.2px solid #000000; border-radius: 2px; overflow: hidden; background: #ffffff;">
@@ -602,7 +604,7 @@ function renderSpinePage(cfg, pageNum) {
                 ${st.date ? `${st.date}` : ''}
               </span>
               <span style="color: #000000; font-size: 8.5pt; font-weight: 900; flex-shrink: 0;">&bull;</span>
-              <span style="font-family: 'Playfair Display', serif; font-size: 8.8pt; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              <span class="stage-question-text" data-base-size="${qFontSize}" style="font-family: 'Playfair Display', serif; font-size: ${qFontSize}; font-weight: 900; color: #000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                 ${questionText}
               </span>
             </div>
@@ -2057,7 +2059,7 @@ function compileGreatWarPart2Workbook() {
             .map((cfg, idx) => {
               const quizUrl =
                 'https://the-history-revision-hub.netlify.app/?unit=great_war_part2&lesson=' +
-                idx +
+                cfg.id +
                 '&quiz=true';
               const qrSvg = generateQrSvg(quizUrl);
               const shortLabels = [
@@ -2093,6 +2095,21 @@ function compileGreatWarPart2Workbook() {
 `;
 
   html += `
+<script>
+  function autoFitStageQuestions() {
+    document.querySelectorAll('.stage-question-text').forEach((el) => {
+      let sizePt = parseFloat(window.getComputedStyle(el).fontSize);
+      let step = 0;
+      while (el.scrollWidth > el.clientWidth && sizePt > 8.0 && step < 40) {
+        sizePt -= 0.2;
+        el.style.fontSize = sizePt.toFixed(2) + 'px';
+        step++;
+      }
+    });
+  }
+  window.addEventListener('DOMContentLoaded', autoFitStageQuestions);
+  window.addEventListener('load', autoFitStageQuestions);
+</script>
 </body>
 </html>
 `;
@@ -2150,6 +2167,19 @@ async function main() {
 
   // Wait for web fonts to load
   await page.evaluateHandle('document.fonts.ready');
+
+  // Auto-fit stage question headings to guarantee 0px clipping or ellipsis truncation
+  await page.evaluate(() => {
+    document.querySelectorAll('.stage-question-text').forEach((el) => {
+      let sizePt = parseFloat(window.getComputedStyle(el).fontSize);
+      let step = 0;
+      while (el.scrollWidth > el.clientWidth && sizePt > 8.0 && step < 40) {
+        sizePt -= 0.2;
+        el.style.fontSize = sizePt.toFixed(2) + 'px';
+        step++;
+      }
+    });
+  });
 
   await page.pdf({
     path: outPdfPath,
